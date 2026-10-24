@@ -1,0 +1,835 @@
+{
+ "topic": "digital_detox",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "App time limits",
+     "g": "Set gentle daily limits on the apps you overuse.",
+     "p": [
+      "A time limit is a friendly nudge that says: that is enough for today.",
+      "Start with your top app and set a limit a little below your average.",
+      "You can always extend it, but the pause makes you think."
+     ],
+     "q": "Which app would benefit most from a gentle daily limit?",
+     "c": "Set a daily limit on one app today and see how you react when it appears."
+    },
+    "de": {
+     "t": "App-Zeitlimits",
+     "g": "Sanfte Tageslimits für Apps setzen, die du zu viel nutzt.",
+     "p": [
+      "Ein Zeitlimit ist ein freundlicher Stups: Für heute reicht es.",
+      "Beginne mit deiner meistgenutzten App und setze das Limit etwas unter deinem Durchschnitt.",
+      "Du kannst es verlängern, aber die Pause lässt dich nachdenken."
+     ],
+     "q": "Welche App würde von einem sanften Tageslimit am meisten profitieren?",
+     "c": "Setze heute ein Tageslimit für eine App und beobachte deine Reaktion, wenn es erscheint."
+    },
+    "es": {
+     "t": "Límites de tiempo en apps",
+     "g": "Fijar límites diarios suaves en las apps que más usas.",
+     "p": [
+      "Un límite de tiempo es un empujón amable que dice: por hoy basta.",
+      "Empieza con tu app principal y fija un límite algo por debajo de tu promedio.",
+      "Siempre puedes ampliarlo, pero la pausa te hace pensar."
+     ],
+     "q": "¿Qué app se beneficiaría más de un límite diario suave?",
+     "c": "Fija hoy un límite diario en una app y observa cómo reaccionas cuando aparezca."
+    },
+    "fr": {
+     "t": "Limites de temps par appli",
+     "g": "Fixer des limites quotidiennes douces sur les applis que tu utilises trop.",
+     "p": [
+      "Une limite de temps est un coup de pouce amical qui dit : cela suffit pour aujourd'hui.",
+      "Commence par ton appli principale et fixe une limite un peu sous ta moyenne.",
+      "Tu peux toujours la prolonger, mais la pause te fait réfléchir."
+     ],
+     "q": "Quelle appli profiterait le plus d'une limite quotidienne douce ?",
+     "c": "Fixe aujourd'hui une limite quotidienne sur une appli et observe ta réaction quand elle apparaît."
+    },
+    "it": {
+     "t": "Limiti di tempo per le app",
+     "g": "Impostare limiti giornalieri gentili sulle app che usi troppo.",
+     "p": [
+      "Un limite di tempo è una spinta amichevole che dice: per oggi basta.",
+      "Parti dalla tua app principale e imposta un limite un po' sotto la tua media.",
+      "Puoi sempre estenderlo, ma la pausa ti fa riflettere."
+     ],
+     "q": "Quale app trarrebbe più vantaggio da un limite giornaliero gentile?",
+     "c": "Imposta oggi un limite giornaliero su un'app e osserva come reagisci quando compare."
+    },
+    "pt": {
+     "t": "Limites de tempo nas apps",
+     "g": "Definir limites diários suaves nas apps que usas demais.",
+     "p": [
+      "Um limite de tempo é um empurrão amigo que diz: por hoje chega.",
+      "Começa pela tua app principal e define um limite um pouco abaixo da tua média.",
+      "Podes sempre prolongá-lo, mas a pausa faz-te pensar."
+     ],
+     "q": "Que app mais beneficiaria de um limite diário suave?",
+     "c": "Define hoje um limite diário numa app e vê como reages quando aparecer."
+    },
+    "pt_BR": {
+     "t": "Limites de tempo nos apps",
+     "g": "Definir limites diários suaves nos apps que você usa demais.",
+     "p": [
+      "Um limite de tempo é um empurrãozinho amigo que diz: por hoje chega.",
+      "Comece pelo seu app principal e defina um limite um pouco abaixo da sua média.",
+      "Você sempre pode estendê-lo, mas a pausa faz você pensar."
+     ],
+     "q": "Que app mais se beneficiaria de um limite diário suave?",
+     "c": "Defina hoje um limite diário em um app e veja como reage quando ele aparecer."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Logging out",
+     "g": "Sign out of apps so each visit needs a moment of thought.",
+     "p": [
+      "Being signed out adds a tiny pause before you start scrolling.",
+      "That moment is often enough to ask: do I really want this?",
+      "Keep signed in only to the apps you use with purpose."
+     ],
+     "q": "Which app would you sign out of first?",
+     "c": "Sign out of one tempting app today and notice what you do next."
+    },
+    "de": {
+     "t": "Abmelden",
+     "g": "Dich aus Apps abmelden, damit jeder Besuch einen Moment des Nachdenkens braucht.",
+     "p": [
+      "Abgemeldet zu sein fügt eine winzige Pause vor dem Scrollen ein.",
+      "Dieser Moment reicht oft, um zu fragen: Will ich das wirklich?",
+      "Bleib nur in Apps angemeldet, die du mit Absicht nutzt."
+     ],
+     "q": "Aus welcher App würdest du dich zuerst abmelden?",
+     "c": "Melde dich heute aus einer verlockenden App ab und beobachte, was du als Nächstes tust."
+    },
+    "es": {
+     "t": "Cerrar sesión",
+     "g": "Cerrar sesión en apps para que cada visita requiera un momento de reflexión.",
+     "p": [
+      "Estar desconectado añade una pequeña pausa antes de empezar a deslizar.",
+      "Ese momento suele bastar para preguntar: ¿de verdad quiero esto?",
+      "Mantén la sesión solo en las apps que usas con intención."
+     ],
+     "q": "¿De qué app cerrarías sesión primero?",
+     "c": "Cierra sesión hoy en una app tentadora y observa qué haces después."
+    },
+    "fr": {
+     "t": "Se déconnecter",
+     "g": "Se déconnecter des applis pour que chaque visite demande un instant de réflexion.",
+     "p": [
+      "Être déconnecté ajoute une petite pause avant de défiler.",
+      "Cet instant suffit souvent pour se demander : en ai-je vraiment envie ?",
+      "Reste connecté seulement aux applis que tu utilises volontairement."
+     ],
+     "q": "De quelle appli te déconnecterais-tu en premier ?",
+     "c": "Déconnecte-toi aujourd'hui d'une appli tentante et observe ce que tu fais ensuite."
+    },
+    "it": {
+     "t": "Disconnettersi",
+     "g": "Uscire dalle app così ogni visita richiede un attimo di riflessione.",
+     "p": [
+      "Essere disconnessi aggiunge una piccola pausa prima di iniziare a scorrere.",
+      "Quell'attimo spesso basta per chiedersi: lo voglio davvero?",
+      "Resta connesso solo alle app che usi con uno scopo."
+     ],
+     "q": "Da quale app ti disconnetteresti per prima?",
+     "c": "Disconnettiti oggi da un'app tentatrice e osserva cosa fai dopo."
+    },
+    "pt": {
+     "t": "Terminar sessão",
+     "g": "Terminar sessão nas apps para cada visita exigir um momento de reflexão.",
+     "p": [
+      "Estar desligado acrescenta uma pequena pausa antes de começares a deslizar.",
+      "Esse momento costuma bastar para perguntar: quero mesmo isto?",
+      "Mantém a sessão iniciada só nas apps que usas com propósito."
+     ],
+     "q": "De que app terminarias sessão primeiro?",
+     "c": "Termina hoje a sessão numa app tentadora e repara no que fazes a seguir."
+    },
+    "pt_BR": {
+     "t": "Saindo da conta",
+     "g": "Sair da conta nos apps para cada visita exigir um momento de reflexão.",
+     "p": [
+      "Estar desconectado acrescenta uma pequena pausa antes de começar a rolar.",
+      "Esse momento costuma bastar para perguntar: eu quero mesmo isso?",
+      "Mantenha a conta conectada só nos apps que você usa com propósito."
+     ],
+     "q": "De qual app você sairia primeiro?",
+     "c": "Saia hoje da conta de um app tentador e repare no que faz depois."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Deleting apps you do not need",
+     "g": "Remove unused or draining apps and keep only what serves you.",
+     "p": [
+      "Scroll through your apps and spot ones you have not used in months.",
+      "Delete the ones that drain you; you can always reinstall later.",
+      "A lighter phone feels calmer and has more space."
+     ],
+     "q": "Which app will you feel lighter without?",
+     "c": "Delete at least three apps you do not need today."
+    },
+    "de": {
+     "t": "Nicht benötigte Apps löschen",
+     "g": "Ungenutzte oder auslaugende Apps entfernen und nur behalten, was dir dient.",
+     "p": [
+      "Geh deine Apps durch und finde solche, die du seit Monaten nicht genutzt hast.",
+      "Lösche die, die dich auslaugen; du kannst sie jederzeit neu installieren.",
+      "Ein leichteres Handy wirkt ruhiger und hat mehr Platz."
+     ],
+     "q": "Ohne welche App fühlst du dich leichter?",
+     "c": "Lösche heute mindestens drei Apps, die du nicht brauchst."
+    },
+    "es": {
+     "t": "Borrar apps que no necesitas",
+     "g": "Eliminar apps sin uso o que te agotan y quedarte solo con lo que te sirve.",
+     "p": [
+      "Recorre tus apps y detecta las que no usas desde hace meses.",
+      "Borra las que te agotan; siempre puedes reinstalarlas luego.",
+      "Un móvil más ligero se siente más tranquilo y tiene más espacio."
+     ],
+     "q": "¿Sin qué app te sentirás más ligero?",
+     "c": "Borra hoy al menos tres apps que no necesitas."
+    },
+    "fr": {
+     "t": "Supprimer les applis inutiles",
+     "g": "Retirer les applis inutilisées ou épuisantes et ne garder que ce qui te sert.",
+     "p": [
+      "Parcours tes applis et repère celles que tu n'as pas ouvertes depuis des mois.",
+      "Supprime celles qui t'épuisent ; tu pourras toujours les réinstaller.",
+      "Un téléphone plus léger paraît plus calme et a plus de place."
+     ],
+     "q": "Sans quelle appli te sentiras-tu plus léger ?",
+     "c": "Supprime aujourd'hui au moins trois applis dont tu n'as pas besoin."
+    },
+    "it": {
+     "t": "Eliminare le app che non servono",
+     "g": "Rimuovere le app inutilizzate o che ti stancano e tenere solo ciò che ti serve.",
+     "p": [
+      "Scorri le app e individua quelle che non usi da mesi.",
+      "Elimina quelle che ti stancano; puoi sempre reinstallarle dopo.",
+      "Un telefono più leggero sembra più calmo e ha più spazio."
+     ],
+     "q": "Senza quale app ti sentirai più leggero?",
+     "c": "Elimina oggi almeno tre app di cui non hai bisogno."
+    },
+    "pt": {
+     "t": "Apagar apps de que não precisas",
+     "g": "Remover apps sem uso ou que te cansam e ficar só com o que te serve.",
+     "p": [
+      "Percorre as tuas apps e identifica as que não usas há meses.",
+      "Apaga as que te cansam; podes sempre reinstalá-las depois.",
+      "Um telemóvel mais leve parece mais calmo e tem mais espaço."
+     ],
+     "q": "Sem que app te vais sentir mais leve?",
+     "c": "Apaga hoje pelo menos três apps de que não precisas."
+    },
+    "pt_BR": {
+     "t": "Apagando apps de que você não precisa",
+     "g": "Remover apps sem uso ou que esgotam e ficar só com o que serve a você.",
+     "p": [
+      "Percorra seus apps e identifique os que você não usa há meses.",
+      "Apague os que esgotam; você sempre pode reinstalar depois.",
+      "Um celular mais leve parece mais calmo e tem mais espaço."
+     ],
+     "q": "Sem qual app você vai se sentir mais leve?",
+     "c": "Apague hoje pelo menos três apps de que você não precisa."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Using the browser instead of the app",
+     "g": "Visit some services in a browser to make use more deliberate.",
+     "p": [
+      "A browser visit takes a few more taps than an app icon.",
+      "It also usually has fewer alerts and tempting shortcuts.",
+      "Use it for services you want to check, not live inside."
+     ],
+     "q": "Which service could you check in a browser instead of an app?",
+     "c": "Delete one app today and use its website instead for the week."
+    },
+    "de": {
+     "t": "Browser statt App nutzen",
+     "g": "Manche Dienste im Browser besuchen, um die Nutzung bewusster zu machen.",
+     "p": [
+      "Ein Browserbesuch braucht ein paar Tipper mehr als ein App-Symbol.",
+      "Meist gibt es dort auch weniger Meldungen und verlockende Abkürzungen.",
+      "Nutze ihn für Dienste, die du nur ansehen willst, nicht um darin zu leben."
+     ],
+     "q": "Welchen Dienst könntest du statt per App im Browser prüfen?",
+     "c": "Lösche heute eine App und nutze eine Woche lang stattdessen die Webseite."
+    },
+    "es": {
+     "t": "Usar el navegador en vez de la app",
+     "g": "Visitar algunos servicios en el navegador para un uso más deliberado.",
+     "p": [
+      "Entrar por el navegador requiere unos toques más que un icono de app.",
+      "Además suele tener menos avisos y atajos tentadores.",
+      "Úsalo para servicios que quieres consultar, no para vivir en ellos."
+     ],
+     "q": "¿Qué servicio podrías consultar en el navegador en lugar de una app?",
+     "c": "Borra hoy una app y usa su web durante la semana."
+    },
+    "fr": {
+     "t": "Utiliser le navigateur plutôt que l'appli",
+     "g": "Visiter certains services dans un navigateur pour un usage plus réfléchi.",
+     "p": [
+      "Une visite par navigateur demande quelques touches de plus qu'une icône d'appli.",
+      "Il y a aussi en général moins d'alertes et de raccourcis tentants.",
+      "Utilise-le pour consulter un service, pas pour y vivre."
+     ],
+     "q": "Quel service pourrais-tu consulter dans un navigateur plutôt que par une appli ?",
+     "c": "Supprime aujourd'hui une appli et utilise son site web pendant la semaine."
+    },
+    "it": {
+     "t": "Usare il browser invece dell'app",
+     "g": "Visitare alcuni servizi dal browser per un uso più consapevole.",
+     "p": [
+      "Una visita dal browser richiede qualche tocco in più rispetto all'icona di un'app.",
+      "Di solito ha anche meno avvisi e scorciatoie tentatrici.",
+      "Usalo per servizi da consultare, non in cui vivere."
+     ],
+     "q": "Quale servizio potresti consultare dal browser invece che da un'app?",
+     "c": "Elimina oggi un'app e usa il suo sito web per tutta la settimana."
+    },
+    "pt": {
+     "t": "Usar o navegador em vez da app",
+     "g": "Visitar alguns serviços no navegador para um uso mais deliberado.",
+     "p": [
+      "Visitar pelo navegador exige alguns toques a mais do que o ícone de uma app.",
+      "Normalmente tem também menos avisos e atalhos tentadores.",
+      "Usa-o para serviços que queres consultar, não para viver neles."
+     ],
+     "q": "Que serviço podias consultar no navegador em vez de numa app?",
+     "c": "Apaga hoje uma app e usa o respetivo site durante a semana."
+    },
+    "pt_BR": {
+     "t": "Usando o navegador em vez do app",
+     "g": "Visitar alguns serviços no navegador para um uso mais deliberado.",
+     "p": [
+      "Entrar pelo navegador exige alguns toques a mais do que o ícone de um app.",
+      "Normalmente tem também menos avisos e atalhos tentadores.",
+      "Use para serviços que você quer consultar, não para morar neles."
+     ],
+     "q": "Que serviço você poderia consultar no navegador em vez de um app?",
+     "c": "Apague hoje um app e use o site dele durante a semana."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A real alarm clock",
+     "g": "Use a simple alarm clock so the phone can sleep outside the bedroom.",
+     "p": [
+      "A cheap alarm clock removes the main reason to keep the phone by your bed.",
+      "Without the phone nearby, the first and last minutes of the day are calmer.",
+      "If you need the phone for safety, keep it across the room."
+     ],
+     "q": "What would your mornings feel like with a simple alarm clock?",
+     "c": "Find an alarm clock or old watch today and plan to try it tonight."
+    },
+    "de": {
+     "t": "Ein echter Wecker",
+     "g": "Einen einfachen Wecker nutzen, damit das Handy außerhalb des Schlafzimmers schlafen kann.",
+     "p": [
+      "Ein einfacher Wecker nimmt den Hauptgrund weg, das Handy am Bett zu haben.",
+      "Ohne Handy in der Nähe sind die ersten und letzten Minuten des Tages ruhiger.",
+      "Brauchst du das Handy zur Sicherheit, lege es quer durch den Raum."
+     ],
+     "q": "Wie würden sich deine Morgen mit einem einfachen Wecker anfühlen?",
+     "c": "Finde heute einen Wecker oder alte Uhr und plane, es heute Nacht zu testen."
+    },
+    "es": {
+     "t": "Un despertador de verdad",
+     "g": "Usar un despertador sencillo para que el móvil duerma fuera del dormitorio.",
+     "p": [
+      "Un despertador barato quita el motivo principal para tener el móvil junto a la cama.",
+      "Sin el móvil cerca, los primeros y últimos minutos del día son más tranquilos.",
+      "Si lo necesitas por seguridad, déjalo al otro lado de la habitación."
+     ],
+     "q": "¿Cómo se sentirían tus mañanas con un despertador sencillo?",
+     "c": "Busca hoy un despertador o reloj viejo y planea probarlo esta noche."
+    },
+    "fr": {
+     "t": "Un vrai réveil",
+     "g": "Utiliser un simple réveil pour que le téléphone dorme hors de la chambre.",
+     "p": [
+      "Un réveil bon marché supprime la principale raison de garder le téléphone près du lit.",
+      "Sans téléphone à portée, les premières et dernières minutes du jour sont plus calmes.",
+      "Si tu en as besoin par sécurité, garde-le à l'autre bout de la pièce."
+     ],
+     "q": "Comment seraient tes matins avec un simple réveil ?",
+     "c": "Trouve aujourd'hui un réveil ou une vieille montre et prévois de l'essayer ce soir."
+    },
+    "it": {
+     "t": "Una vera sveglia",
+     "g": "Usare una semplice sveglia così il telefono può dormire fuori dalla camera.",
+     "p": [
+      "Una sveglia economica toglie il motivo principale per tenere il telefono vicino al letto.",
+      "Senza telefono vicino, i primi e gli ultimi minuti del giorno sono più calmi.",
+      "Se ti serve per sicurezza, tienilo dall'altra parte della stanza."
+     ],
+     "q": "Come sarebbero le tue mattine con una semplice sveglia?",
+     "c": "Trova oggi una sveglia o un vecchio orologio e pianifica di provarla stanotte."
+    },
+    "pt": {
+     "t": "Um despertador a sério",
+     "g": "Usar um despertador simples para o telemóvel dormir fora do quarto.",
+     "p": [
+      "Um despertador barato tira o motivo principal para teres o telemóvel junto à cama.",
+      "Sem o telemóvel perto, os primeiros e últimos minutos do dia são mais calmos.",
+      "Se precisares dele por segurança, deixa-o do outro lado do quarto."
+     ],
+     "q": "Como seriam as tuas manhãs com um despertador simples?",
+     "c": "Encontra hoje um despertador ou relógio velho e planeia experimentá-lo esta noite."
+    },
+    "pt_BR": {
+     "t": "Um despertador de verdade",
+     "g": "Usar um despertador simples para o celular dormir fora do quarto.",
+     "p": [
+      "Um despertador barato tira o principal motivo para ter o celular perto da cama.",
+      "Sem o celular por perto, os primeiros e últimos minutos do dia são mais calmos.",
+      "Se precisar dele por segurança, deixe do outro lado do quarto."
+     ],
+     "q": "Como seriam suas manhãs com um despertador simples?",
+     "c": "Encontre hoje um despertador ou relógio velho e planeje testar hoje à noite."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Charging station outside the bedroom",
+     "g": "Choose a charging spot away from where you sleep.",
+     "p": [
+      "Pick a place like the hallway or kitchen as the phone's night home.",
+      "Charging there makes bedtime a clean break from screens.",
+      "Add a small basket or shelf so it feels like a ritual."
+     ],
+     "q": "Where in your home could the phone sleep overnight?",
+     "c": "Set up a charging spot outside the bedroom and use it tonight."
+    },
+    "de": {
+     "t": "Ladestation außerhalb des Schlafzimmers",
+     "g": "Einen Ladeplatz abseits deines Schlafplatzes wählen.",
+     "p": [
+      "Wähle einen Ort wie Flur oder Küche als nächtliches Zuhause fürs Handy.",
+      "Dort zu laden macht die Schlafenszeit zu einer klaren Bildschirmpause.",
+      "Ein kleiner Korb oder ein Regal macht daraus ein Ritual."
+     ],
+     "q": "Wo in deiner Wohnung könnte das Handy über Nacht schlafen?",
+     "c": "Richte heute einen Ladeplatz außerhalb des Schlafzimmers ein und nutze ihn heute Nacht."
+    },
+    "es": {
+     "t": "Cargador fuera del dormitorio",
+     "g": "Elegir un lugar de carga lejos de donde duermes.",
+     "p": [
+      "Escoge un sitio como el pasillo o la cocina para que el móvil pase la noche.",
+      "Cargar allí hace de la hora de dormir una pausa limpia de pantallas.",
+      "Añade una cesta o balda pequeña para que se sienta como un ritual."
+     ],
+     "q": "¿Dónde de tu casa podría dormir el móvil por la noche?",
+     "c": "Prepara hoy un lugar de carga fuera del dormitorio y úsalo esta noche."
+    },
+    "fr": {
+     "t": "Un coin de charge hors de la chambre",
+     "g": "Choisir un endroit de charge loin de là où tu dors.",
+     "p": [
+      "Choisis un lieu comme le couloir ou la cuisine pour la nuit du téléphone.",
+      "Le charger là fait du coucher une vraie coupure avec les écrans.",
+      "Ajoute un petit panier ou une étagère pour en faire un rituel."
+     ],
+     "q": "Où chez toi le téléphone pourrait-il dormir la nuit ?",
+     "c": "Installe aujourd'hui un coin de charge hors de la chambre et utilise-le ce soir."
+    },
+    "it": {
+     "t": "Postazione di ricarica fuori dalla camera",
+     "g": "Scegliere un posto per la ricarica lontano da dove dormi.",
+     "p": [
+      "Scegli un posto come il corridoio o la cucina come casa notturna del telefono.",
+      "Ricaricarlo lì rende il momento di andare a letto una pausa netta dagli schermi.",
+      "Aggiungi un cestino o una mensola per farne un rituale."
+     ],
+     "q": "Dove in casa potrebbe dormire il telefono di notte?",
+     "c": "Prepara oggi una postazione di ricarica fuori dalla camera e usala stanotte."
+    },
+    "pt": {
+     "t": "Carregador fora do quarto",
+     "g": "Escolher um local de carregamento longe de onde dormes.",
+     "p": [
+      "Escolhe um sítio como o corredor ou a cozinha para a noite do telemóvel.",
+      "Carregar lá faz da hora de deitar uma pausa limpa dos ecrãs.",
+      "Junta um cesto ou prateleira pequena para parecer um ritual."
+     ],
+     "q": "Onde em casa podia o telemóvel dormir durante a noite?",
+     "c": "Prepara hoje um local de carregamento fora do quarto e usa-o esta noite."
+    },
+    "pt_BR": {
+     "t": "Carregador fora do quarto",
+     "g": "Escolher um local de carregamento longe de onde você dorme.",
+     "p": [
+      "Escolha um lugar como o corredor ou a cozinha para a noite do celular.",
+      "Carregar lá faz da hora de dormir uma pausa limpa das telas.",
+      "Acrescente uma cesta ou prateleira pequena para parecer um ritual."
+     ],
+     "q": "Onde em casa o celular poderia dormir durante a noite?",
+     "c": "Prepare hoje um local de carregamento fora do quarto e use hoje à noite."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Wallpaper with a reminder",
+     "g": "Set a wallpaper that reminds you of your intention.",
+     "p": [
+      "Your lock screen is seen dozens of times a day, so use it well.",
+      "Choose a photo of someone you love or a short phrase like 'Why now?'",
+      "A gentle reminder can turn a reflex into a thought."
+     ],
+     "q": "What image or words would help you pause?",
+     "c": "Set a lock screen photo or phrase that reflects your why."
+    },
+    "de": {
+     "t": "Hintergrundbild als Erinnerung",
+     "g": "Ein Hintergrundbild einrichten, das dich an deine Absicht erinnert.",
+     "p": [
+      "Dein Sperrbildschirm wird dutzende Male am Tag gesehen, nutze ihn gut.",
+      "Wähle ein Foto eines geliebten Menschen oder einen kurzen Satz wie „Warum jetzt?“",
+      "Eine sanfte Erinnerung kann einen Reflex in einen Gedanken verwandeln."
+     ],
+     "q": "Welches Bild oder welche Worte würden dir beim Innehalten helfen?",
+     "c": "Stell ein Sperrbildschirm-Foto oder einen Satz ein, der dein Warum zeigt."
+    },
+    "es": {
+     "t": "Fondo de pantalla recordatorio",
+     "g": "Poner un fondo que te recuerde tu intención.",
+     "p": [
+      "Tu pantalla de bloqueo se ve decenas de veces al día, así que aprovéchala.",
+      "Elige una foto de alguien que quieres o una frase breve como «¿Por qué ahora?».",
+      "Un recordatorio suave puede convertir un reflejo en un pensamiento."
+     ],
+     "q": "¿Qué imagen o palabras te ayudarían a hacer una pausa?",
+     "c": "Pon hoy una foto o frase en el bloqueo que refleje tu porqué."
+    },
+    "fr": {
+     "t": "Un fond d'écran rappel",
+     "g": "Choisir un fond d'écran qui te rappelle ton intention.",
+     "p": [
+      "Ton écran de verrouillage est vu des dizaines de fois par jour, alors utilise-le bien.",
+      "Choisis la photo de quelqu'un que tu aimes ou une courte phrase comme « Pourquoi maintenant ? »",
+      "Un rappel doux peut transformer un réflexe en pensée."
+     ],
+     "q": "Quelle image ou quels mots t'aideraient à faire une pause ?",
+     "c": "Mets aujourd'hui sur ton écran de verrouillage une photo ou phrase qui reflète ton pourquoi."
+    },
+    "it": {
+     "t": "Sfondo con promemoria",
+     "g": "Impostare uno sfondo che ti ricorda la tua intenzione.",
+     "p": [
+      "La schermata di blocco si vede decine di volte al giorno, quindi usala bene.",
+      "Scegli una foto di qualcuno che ami o una breve frase come «Perché adesso?».",
+      "Un promemoria gentile può trasformare un riflesso in un pensiero."
+     ],
+     "q": "Quale immagine o parole ti aiuterebbero a fare una pausa?",
+     "c": "Imposta oggi una foto o frase sul blocco schermo che rifletta il tuo perché."
+    },
+    "pt": {
+     "t": "Fundo de ecrã com lembrete",
+     "g": "Definir um fundo que te lembre a tua intenção.",
+     "p": [
+      "O ecrã de bloqueio é visto dezenas de vezes por dia, por isso aproveita-o.",
+      "Escolhe uma foto de alguém de quem gostas ou uma frase curta como «Porquê agora?».",
+      "Um lembrete suave pode transformar um reflexo num pensamento."
+     ],
+     "q": "Que imagem ou palavras te ajudariam a fazer uma pausa?",
+     "c": "Põe hoje no ecrã de bloqueio uma foto ou frase que reflita o teu porquê."
+    },
+    "pt_BR": {
+     "t": "Papel de parede com lembrete",
+     "g": "Definir um papel de parede que lembre sua intenção.",
+     "p": [
+      "A tela de bloqueio é vista dezenas de vezes por dia, então aproveite.",
+      "Escolha uma foto de alguém que você ama ou uma frase curta como «Por que agora?».",
+      "Um lembrete suave pode transformar um reflexo em um pensamento."
+     ],
+     "q": "Que imagem ou palavras ajudariam você a fazer uma pausa?",
+     "c": "Coloque hoje na tela de bloqueio uma foto ou frase que reflita seu porquê."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Turning off autoplay",
+     "g": "Stop videos from starting automatically on streaming and social apps.",
+     "p": [
+      "Autoplay removes the natural stopping point between videos.",
+      "Switching it off means each next video is a choice.",
+      "Look in the settings of the apps you use most."
+     ],
+     "q": "How often does autoplay keep you watching longer than planned?",
+     "c": "Turn off autoplay in at least two apps today."
+    },
+    "de": {
+     "t": "Autoplay ausschalten",
+     "g": "Verhindern, dass Videos in Streaming- und Social-Apps automatisch starten.",
+     "p": [
+      "Autoplay nimmt den natürlichen Haltepunkt zwischen Videos weg.",
+      "Ist es aus, ist jedes nächste Video eine Entscheidung.",
+      "Sieh in den Einstellungen der Apps nach, die du am meisten nutzt."
+     ],
+     "q": "Wie oft hält dich Autoplay länger beim Schauen als geplant?",
+     "c": "Schalte heute Autoplay in mindestens zwei Apps aus."
+    },
+    "es": {
+     "t": "Desactivar la reproducción automática",
+     "g": "Evitar que los vídeos empiecen solos en apps de streaming y sociales.",
+     "p": [
+      "La reproducción automática elimina el punto natural de parada entre vídeos.",
+      "Al desactivarla, cada vídeo siguiente es una elección.",
+      "Mira los ajustes de las apps que más usas."
+     ],
+     "q": "¿Con qué frecuencia te mantiene viendo más de lo previsto?",
+     "c": "Desactiva hoy la reproducción automática en al menos dos apps."
+    },
+    "fr": {
+     "t": "Désactiver la lecture automatique",
+     "g": "Empêcher les vidéos de démarrer seules dans les applis de streaming et sociales.",
+     "p": [
+      "La lecture automatique supprime le point d'arrêt naturel entre deux vidéos.",
+      "La désactiver fait de chaque vidéo suivante un choix.",
+      "Regarde dans les réglages des applis que tu utilises le plus."
+     ],
+     "q": "À quelle fréquence te fait-elle regarder plus longtemps que prévu ?",
+     "c": "Désactive aujourd'hui la lecture automatique dans au moins deux applis."
+    },
+    "it": {
+     "t": "Disattivare la riproduzione automatica",
+     "g": "Evitare che i video partano da soli nelle app di streaming e social.",
+     "p": [
+      "La riproduzione automatica toglie il punto di stop naturale tra un video e l'altro.",
+      "Disattivarla rende ogni video successivo una scelta.",
+      "Guarda nelle impostazioni delle app che usi di più."
+     ],
+     "q": "Quanto spesso ti fa guardare più a lungo del previsto?",
+     "c": "Disattiva oggi la riproduzione automatica in almeno due app."
+    },
+    "pt": {
+     "t": "Desligar a reprodução automática",
+     "g": "Evitar que os vídeos comecem sozinhos em apps de streaming e sociais.",
+     "p": [
+      "A reprodução automática retira o ponto natural de paragem entre vídeos.",
+      "Desligá-la faz de cada vídeo seguinte uma escolha.",
+      "Vê as definições das apps que mais usas."
+     ],
+     "q": "Com que frequência te faz ver mais do que o previsto?",
+     "c": "Desliga hoje a reprodução automática em pelo menos duas apps."
+    },
+    "pt_BR": {
+     "t": "Desligando a reprodução automática",
+     "g": "Evitar que os vídeos comecem sozinhos em apps de streaming e sociais.",
+     "p": [
+      "A reprodução automática tira o ponto natural de parada entre vídeos.",
+      "Desligá-la faz de cada vídeo seguinte uma escolha.",
+      "Veja as configurações dos apps que você mais usa."
+     ],
+     "q": "Com que frequência ela faz você assistir mais do que o previsto?",
+     "c": "Desligue hoje a reprodução automática em pelo menos dois apps."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Infinite scroll awareness",
+     "g": "Learn how endless feeds work and set your own stopping points.",
+     "p": [
+      "Endless feeds have no natural end, so you must create one.",
+      "Decide in advance: ten minutes, or until you have seen a few posts.",
+      "Set a timer or stop at the end of a song."
+     ],
+     "q": "Where do you think a good stopping point would be for you?",
+     "c": "Before opening a feed today, set a timer for ten minutes and stop when it rings."
+    },
+    "de": {
+     "t": "Bewusstsein für endloses Scrollen",
+     "g": "Verstehen, wie endlose Feeds funktionieren, und eigene Haltepunkte setzen.",
+     "p": [
+      "Endlose Feeds haben kein natürliches Ende, also musst du eines setzen.",
+      "Entscheide vorher: zehn Minuten oder bis du ein paar Beiträge gesehen hast.",
+      "Stell einen Timer oder hör am Ende eines Liedes auf."
+     ],
+     "q": "Wo wäre für dich ein guter Haltepunkt?",
+     "c": "Stell heute vor dem Öffnen eines Feeds einen Zehn-Minuten-Timer und hör beim Klingeln auf."
+    },
+    "es": {
+     "t": "Conciencia del scroll infinito",
+     "g": "Entender cómo funcionan los feeds sin fin y fijar tus propios puntos de parada.",
+     "p": [
+      "Los feeds infinitos no tienen final natural, así que debes crear uno.",
+      "Decide antes: diez minutos, o hasta ver unas cuantas publicaciones.",
+      "Pon un temporizador o para al acabar una canción."
+     ],
+     "q": "¿Dónde crees que estaría un buen punto de parada para ti?",
+     "c": "Antes de abrir un feed hoy, pon un temporizador de diez minutos y para cuando suene."
+    },
+    "fr": {
+     "t": "Conscience du défilement infini",
+     "g": "Comprendre le fonctionnement des fils sans fin et fixer tes propres points d'arrêt.",
+     "p": [
+      "Les fils infinis n'ont pas de fin naturelle, donc tu dois en créer une.",
+      "Décide à l'avance : dix minutes, ou jusqu'à avoir vu quelques publications.",
+      "Mets un minuteur ou arrête-toi à la fin d'une chanson."
+     ],
+     "q": "Où placerais-tu un bon point d'arrêt pour toi ?",
+     "c": "Avant d'ouvrir un fil aujourd'hui, règle un minuteur de dix minutes et arrête-toi à la sonnerie."
+    },
+    "it": {
+     "t": "Consapevolezza dello scroll infinito",
+     "g": "Capire come funzionano i feed senza fine e fissare i tuoi punti di stop.",
+     "p": [
+      "I feed infiniti non hanno una fine naturale, quindi devi crearne una.",
+      "Decidi prima: dieci minuti, o finché non hai visto qualche post.",
+      "Imposta un timer o fermati alla fine di una canzone."
+     ],
+     "q": "Dove pensi che sarebbe un buon punto di stop per te?",
+     "c": "Prima di aprire un feed oggi, imposta un timer di dieci minuti e fermati quando suona."
+    },
+    "pt": {
+     "t": "Consciência do scroll infinito",
+     "g": "Perceber como funcionam os feeds sem fim e definir os teus pontos de paragem.",
+     "p": [
+      "Os feeds infinitos não têm fim natural, por isso tens de criar um.",
+      "Decide antes: dez minutos, ou até veres algumas publicações.",
+      "Põe um temporizador ou pára no fim de uma música."
+     ],
+     "q": "Onde achas que seria um bom ponto de paragem para ti?",
+     "c": "Antes de abrires um feed hoje, põe um temporizador de dez minutos e pára quando tocar."
+    },
+    "pt_BR": {
+     "t": "Consciência da rolagem infinita",
+     "g": "Entender como funcionam os feeds sem fim e definir seus pontos de parada.",
+     "p": [
+      "Os feeds infinitos não têm fim natural, então você precisa criar um.",
+      "Decida antes: dez minutos, ou até ver algumas publicações.",
+      "Programe um temporizador ou pare no fim de uma música."
+     ],
+     "q": "Onde você acha que seria um bom ponto de parada para você?",
+     "c": "Antes de abrir um feed hoje, programe um temporizador de dez minutos e pare quando tocar."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Unsubscribing from emails",
+     "g": "Clear promotional emails so your inbox feels lighter.",
+     "p": [
+      "Every promotional email is a small tug on your attention.",
+      "Unsubscribe from a few each day when they arrive.",
+      "A lighter inbox makes checking mail less of a chore."
+     ],
+     "q": "Which newsletters do you never read but still receive?",
+     "c": "Unsubscribe from five emails you never read today."
+    },
+    "de": {
+     "t": "E-Mails abbestellen",
+     "g": "Werbe-E-Mails abbestellen, damit sich dein Postfach leichter anfühlt.",
+     "p": [
+      "Jede Werbemail ist ein kleiner Zug an deiner Aufmerksamkeit.",
+      "Bestelle jeden Tag ein paar ab, sobald sie eintreffen.",
+      "Ein leichteres Postfach macht das Nachsehen weniger lästig."
+     ],
+     "q": "Welche Newsletter bekommst du, ohne sie je zu lesen?",
+     "c": "Bestelle heute fünf E-Mails ab, die du nie liest."
+    },
+    "es": {
+     "t": "Darte de baja de correos",
+     "g": "Limpiar correos promocionales para que tu bandeja se sienta más ligera.",
+     "p": [
+      "Cada correo promocional es un pequeño tirón a tu atención.",
+      "Date de baja de unos cuantos cada día cuando lleguen.",
+      "Una bandeja más ligera hace que mirar el correo cueste menos."
+     ],
+     "q": "¿Qué boletines recibes sin leerlos nunca?",
+     "c": "Date de baja hoy de cinco correos que nunca lees."
+    },
+    "fr": {
+     "t": "Se désabonner des e-mails",
+     "g": "Faire le tri dans les e-mails promotionnels pour alléger ta boîte de réception.",
+     "p": [
+      "Chaque e-mail promotionnel tire un peu sur ton attention.",
+      "Désabonne-toi de quelques-uns chaque jour à leur arrivée.",
+      "Une boîte plus légère rend la consultation moins pénible."
+     ],
+     "q": "Quelles lettres d'information reçois-tu sans jamais les lire ?",
+     "c": "Désabonne-toi aujourd'hui de cinq e-mails que tu ne lis jamais."
+    },
+    "it": {
+     "t": "Annullare l'iscrizione alle email",
+     "g": "Ripulire le email promozionali per alleggerire la posta in arrivo.",
+     "p": [
+      "Ogni email promozionale è un piccolo strappo alla tua attenzione.",
+      "Annulla l'iscrizione ad alcune ogni giorno quando arrivano.",
+      "Una casella più leggera rende meno pesante controllare la posta."
+     ],
+     "q": "Quali newsletter ricevi senza leggerle mai?",
+     "c": "Annulla oggi l'iscrizione a cinque email che non leggi mai."
+    },
+    "pt": {
+     "t": "Cancelar subscrições de emails",
+     "g": "Limpar emails promocionais para a caixa de entrada ficar mais leve.",
+     "p": [
+      "Cada email promocional é um pequeno puxão à tua atenção.",
+      "Cancela algumas subscrições por dia quando chegarem.",
+      "Uma caixa mais leve torna ver o correio menos penoso."
+     ],
+     "q": "Que newsletters recebes sem nunca as ler?",
+     "c": "Cancela hoje cinco subscrições de emails que nunca lês."
+    },
+    "pt_BR": {
+     "t": "Cancelando inscrições de e-mails",
+     "g": "Limpar e-mails promocionais para a caixa de entrada ficar mais leve.",
+     "p": [
+      "Cada e-mail promocional é um pequeno puxão na sua atenção.",
+      "Cancele algumas inscrições por dia quando chegarem.",
+      "Uma caixa mais leve torna conferir o e-mail menos cansativo."
+     ],
+     "q": "Que newsletters você recebe sem nunca ler?",
+     "c": "Cancele hoje cinco inscrições de e-mails que você nunca lê."
+    }
+   }
+  }
+ ]
+}

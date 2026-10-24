@@ -1,0 +1,835 @@
+{
+ "topic": "motivation",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A success journal",
+     "g": "Write one thing you did well each day to build a positive picture of yourself.",
+     "p": [
+      "A success journal collects evidence of what you can do.",
+      "One line a day is enough: something you did well or learned.",
+      "Over time, it balances the habit of noticing only what went wrong."
+     ],
+     "q": "What is one thing you did well today, however small?",
+     "c": "Start your success journal with one line tonight and keep it by your bed."
+    },
+    "de": {
+     "t": "Ein Erfolgstagebuch",
+     "g": "Jeden Tag eine gelungene Sache aufschreiben, um ein positives Selbstbild aufzubauen.",
+     "p": [
+      "Ein Erfolgstagebuch sammelt Belege dafür, was du kannst.",
+      "Eine Zeile am Tag genügt: etwas, das du gut gemacht oder gelernt hast.",
+      "Mit der Zeit gleicht es die Gewohnheit aus, nur auf Misslungenes zu achten."
+     ],
+     "q": "Was hast du heute gut gemacht, auch wenn es klein ist?",
+     "c": "Beginne heute Abend dein Erfolgstagebuch mit einer Zeile und leg es neben dein Bett."
+    },
+    "es": {
+     "t": "Un diario de logros",
+     "g": "Escribir cada día algo que hiciste bien para construir una imagen positiva de ti.",
+     "p": [
+      "Un diario de logros reúne pruebas de lo que sabes hacer.",
+      "Una línea al día basta: algo que hiciste bien o aprendiste.",
+      "Con el tiempo, equilibra el hábito de fijarte solo en lo que salió mal."
+     ],
+     "q": "¿Qué hiciste bien hoy, por pequeño que sea?",
+     "c": "Empieza esta noche tu diario de logros con una línea y déjalo junto a la cama."
+    },
+    "fr": {
+     "t": "Un journal des réussites",
+     "g": "Noter chaque jour une chose bien faite pour bâtir une image positive de toi.",
+     "p": [
+      "Un journal des réussites rassemble des preuves de ce que tu sais faire.",
+      "Une ligne par jour suffit : quelque chose de bien fait ou appris.",
+      "Avec le temps, il équilibre l'habitude de ne remarquer que ce qui a mal tourné."
+     ],
+     "q": "Qu'as-tu bien fait aujourd'hui, même petit ?",
+     "c": "Commence ce soir ton journal avec une ligne et garde-le près de ton lit."
+    },
+    "it": {
+     "t": "Un diario dei successi",
+     "g": "Scrivere ogni giorno una cosa fatta bene per costruire un'immagine positiva di te.",
+     "p": [
+      "Un diario dei successi raccoglie prove di ciò che sai fare.",
+      "Basta una riga al giorno: qualcosa che hai fatto bene o imparato.",
+      "Col tempo bilancia l'abitudine di notare solo ciò che è andato storto."
+     ],
+     "q": "Cosa hai fatto bene oggi, per quanto piccolo?",
+     "c": "Inizia stasera il tuo diario con una riga e tienilo vicino al letto."
+    },
+    "pt": {
+     "t": "Um diário de conquistas",
+     "g": "Escrever todos os dias algo que fizeste bem para construir uma imagem positiva de ti.",
+     "p": [
+      "Um diário de conquistas reúne provas do que sabes fazer.",
+      "Uma linha por dia chega: algo que fizeste bem ou aprendeste.",
+      "Com o tempo, equilibra o hábito de reparar só no que correu mal."
+     ],
+     "q": "O que fizeste bem hoje, por pequeno que seja?",
+     "c": "Começa esta noite o teu diário com uma linha e deixa-o junto à cama."
+    },
+    "pt_BR": {
+     "t": "Um diário de conquistas",
+     "g": "Escrever todo dia algo que você fez bem para construir uma imagem positiva de si.",
+     "p": [
+      "Um diário de conquistas reúne provas do que você sabe fazer.",
+      "Uma linha por dia basta: algo que você fez bem ou aprendeu.",
+      "Com o tempo, equilibra o hábito de reparar só no que deu errado."
+     ],
+     "q": "O que você fez bem hoje, por menor que seja?",
+     "c": "Comece esta noite seu diário com uma linha e deixe-o ao lado da cama."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Comparing less",
+     "g": "Focus on your own path instead of measuring yourself against others.",
+     "p": [
+      "Comparisons often show someone's highlights next to your behind-the-scenes.",
+      "Other people's paths have different starts, resources and goals.",
+      "A better question is: am I further along than I was before?"
+     ],
+     "q": "When do you tend to compare yourself, and how does it make you feel?",
+     "c": "Compare yourself only with yourself from a month ago and write one improvement."
+    },
+    "de": {
+     "t": "Weniger vergleichen",
+     "g": "Auf deinen eigenen Weg schauen, statt dich an anderen zu messen.",
+     "p": [
+      "Vergleiche zeigen oft die Highlights anderer neben deinem Hinter-den-Kulissen.",
+      "Andere haben andere Startpunkte, Mittel und Ziele.",
+      "Eine bessere Frage lautet: Bin ich weiter als vorher?"
+     ],
+     "q": "Wann vergleichst du dich gern, und wie fühlt sich das an?",
+     "c": "Vergleiche dich heute nur mit dir vor einem Monat und schreib eine Verbesserung auf."
+    },
+    "es": {
+     "t": "Compararse menos",
+     "g": "Centrarte en tu propio camino en lugar de medirte con otros.",
+     "p": [
+      "Las comparaciones suelen mostrar lo mejor de otros junto a tu trastienda.",
+      "Otros tienen puntos de partida, recursos y metas distintos.",
+      "Una mejor pregunta es: ¿estoy más adelante que antes?"
+     ],
+     "q": "¿Cuándo tiendes a compararte y cómo te hace sentir?",
+     "c": "Compárate hoy solo contigo de hace un mes y anota una mejora."
+    },
+    "fr": {
+     "t": "Se comparer moins",
+     "g": "Te concentrer sur ton propre chemin plutôt que de te mesurer aux autres.",
+     "p": [
+      "Les comparaisons montrent souvent les meilleurs moments des autres face à tes coulisses.",
+      "Les autres ont des départs, des ressources et des objectifs différents.",
+      "Une meilleure question : suis-je plus avancé qu'avant ?"
+     ],
+     "q": "Quand as-tu tendance à te comparer, et comment cela te fait-il sentir ?",
+     "c": "Compare-toi aujourd'hui seulement à toi d'il y a un mois et note une amélioration."
+    },
+    "it": {
+     "t": "Confrontarsi meno",
+     "g": "Concentrarti sul tuo percorso invece di misurarti con gli altri.",
+     "p": [
+      "I confronti spesso mostrano i momenti migliori degli altri accanto al tuo dietro le quinte.",
+      "Gli altri hanno partenze, risorse e obiettivi diversi.",
+      "Una domanda migliore è: sono più avanti di prima?"
+     ],
+     "q": "Quando tendi a confrontarti e come ti fa sentire?",
+     "c": "Confrontati oggi solo con te di un mese fa e annota un miglioramento."
+    },
+    "pt": {
+     "t": "Comparar-te menos",
+     "g": "Concentrares-te no teu caminho em vez de te medires com os outros.",
+     "p": [
+      "As comparações costumam mostrar o melhor dos outros ao lado dos teus bastidores.",
+      "Os outros têm pontos de partida, recursos e metas diferentes.",
+      "Uma pergunta melhor é: estou mais à frente do que estava?"
+     ],
+     "q": "Quando tendes a comparar-te e como te faz sentir?",
+     "c": "Compara-te hoje só contigo de há um mês e anota uma melhoria."
+    },
+    "pt_BR": {
+     "t": "Se comparar menos",
+     "g": "Concentrar-se no seu próprio caminho em vez de se medir com os outros.",
+     "p": [
+      "As comparações costumam mostrar o melhor dos outros ao lado dos seus bastidores.",
+      "Os outros têm pontos de partida, recursos e metas diferentes.",
+      "Uma pergunta melhor é: estou mais adiante do que estava?"
+     ],
+     "q": "Quando você costuma se comparar e como isso faz você se sentir?",
+     "c": "Compare-se hoje só com você de um mês atrás e anote uma melhora."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your progress, your pace",
+     "g": "Accept that everyone grows at a different speed, and that is perfectly fine.",
+     "p": [
+      "Progress is rarely a straight line; it has fast and slow stretches.",
+      "A slow pace still moves you forward.",
+      "Rushing can drain you, while steady effort lasts."
+     ],
+     "q": "What pace feels sustainable for you right now?",
+     "c": "Choose a pace you can keep for a week and write it down in one sentence."
+    },
+    "de": {
+     "t": "Dein Fortschritt, dein Tempo",
+     "g": "Annehmen, dass jeder in eigenem Tempo wächst, und das ist völlig in Ordnung.",
+     "p": [
+      "Fortschritt ist selten eine Gerade; es gibt schnelle und langsame Strecken.",
+      "Ein langsames Tempo bringt dich trotzdem voran.",
+      "Hetze kann dich auslaugen, stetiger Einsatz hält länger."
+     ],
+     "q": "Welches Tempo fühlt sich gerade für dich tragbar an?",
+     "c": "Wähle ein Tempo, das du eine Woche halten kannst, und schreib es in einem Satz auf."
+    },
+    "es": {
+     "t": "Tu progreso, tu ritmo",
+     "g": "Aceptar que cada uno crece a su velocidad, y que eso está perfectamente bien.",
+     "p": [
+      "El progreso rara vez es una línea recta; tiene tramos rápidos y lentos.",
+      "Un ritmo lento también te hace avanzar.",
+      "La prisa puede agotarte, mientras que el esfuerzo constante dura."
+     ],
+     "q": "¿Qué ritmo te resulta sostenible ahora mismo?",
+     "c": "Elige un ritmo que puedas mantener una semana y anótalo en una frase."
+    },
+    "fr": {
+     "t": "Ton progrès, ton rythme",
+     "g": "Accepter que chacun grandit à sa vitesse, et que c'est tout à fait normal.",
+     "p": [
+      "Le progrès est rarement une ligne droite ; il a des tronçons rapides et lents.",
+      "Un rythme lent te fait quand même avancer.",
+      "La précipitation peut t'épuiser, alors qu'un effort régulier dure."
+     ],
+     "q": "Quel rythme te semble tenable en ce moment ?",
+     "c": "Choisis un rythme tenable une semaine et note-le en une phrase."
+    },
+    "it": {
+     "t": "I tuoi progressi, il tuo ritmo",
+     "g": "Accettare che ognuno cresce a velocità diversa, e va benissimo così.",
+     "p": [
+      "Il progresso raramente è una linea retta; ha tratti veloci e lenti.",
+      "Un ritmo lento ti porta comunque avanti.",
+      "La fretta può esaurirti, mentre lo sforzo costante dura."
+     ],
+     "q": "Quale ritmo ti sembra sostenibile in questo momento?",
+     "c": "Scegli un ritmo che puoi mantenere una settimana e scrivilo in una frase."
+    },
+    "pt": {
+     "t": "O teu progresso, o teu ritmo",
+     "g": "Aceitar que cada um cresce ao seu ritmo, e isso está perfeitamente bem.",
+     "p": [
+      "O progresso raramente é uma linha reta; tem trechos rápidos e lentos.",
+      "Um ritmo lento também te faz avançar.",
+      "A pressa pode esgotar-te, enquanto o esforço constante dura."
+     ],
+     "q": "Que ritmo te parece sustentável neste momento?",
+     "c": "Escolhe um ritmo que consigas manter uma semana e escreve-o numa frase."
+    },
+    "pt_BR": {
+     "t": "Seu progresso, seu ritmo",
+     "g": "Aceitar que cada um cresce no seu ritmo, e isso está perfeitamente bem.",
+     "p": [
+      "O progresso raramente é uma linha reta; tem trechos rápidos e lentos.",
+      "Um ritmo lento também faz você avançar.",
+      "A pressa pode esgotar você, enquanto o esforço constante dura."
+     ],
+     "q": "Que ritmo parece sustentável para você neste momento?",
+     "c": "Escolha um ritmo que você consiga manter por uma semana e escreva em uma frase."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Courage in small doses",
+     "g": "Do one slightly brave thing a day to grow your comfort zone.",
+     "p": [
+      "Courage is a muscle that grows with small, repeated stretches.",
+      "Choose something a little scary, not overwhelming.",
+      "Each brave step makes the next one feel more possible."
+     ],
+     "q": "What is one slightly brave thing you would like to try?",
+     "c": "Do one small brave thing today, like starting a conversation or sharing an idea."
+    },
+    "de": {
+     "t": "Mut in kleinen Dosen",
+     "g": "Täglich eine leicht mutige Sache tun, um deine Komfortzone zu erweitern.",
+     "p": [
+      "Mut ist ein Muskel, der durch kleine, wiederholte Dehnungen wächst.",
+      "Wähle etwas ein bisschen Beängstigendes, nicht Überwältigendes.",
+      "Jeder mutige Schritt macht den nächsten möglicher."
+     ],
+     "q": "Was ist eine leicht mutige Sache, die du gern ausprobieren würdest?",
+     "c": "Tu heute eine kleine mutige Sache, etwa ein Gespräch beginnen oder eine Idee teilen."
+    },
+    "es": {
+     "t": "Valentía en dosis pequeñas",
+     "g": "Hacer cada día una cosa un poco valiente para ampliar tu zona de confort.",
+     "p": [
+      "La valentía es un músculo que crece con pequeños estiramientos repetidos.",
+      "Elige algo que dé un poco de miedo, no que abrume.",
+      "Cada paso valiente hace más posible el siguiente."
+     ],
+     "q": "¿Qué cosa un poco valiente te gustaría probar?",
+     "c": "Haz hoy una pequeña cosa valiente, como iniciar una charla o compartir una idea."
+    },
+    "fr": {
+     "t": "Le courage à petites doses",
+     "g": "Faire chaque jour une chose un peu courageuse pour élargir ta zone de confort.",
+     "p": [
+      "Le courage est un muscle qui grandit par de petits étirements répétés.",
+      "Choisis quelque chose d'un peu effrayant, pas d'écrasant.",
+      "Chaque pas courageux rend le suivant plus possible."
+     ],
+     "q": "Quelle chose un peu courageuse aimerais-tu essayer ?",
+     "c": "Fais aujourd'hui une petite chose courageuse, comme lancer une conversation ou partager une idée."
+    },
+    "it": {
+     "t": "Coraggio a piccole dosi",
+     "g": "Fare ogni giorno una cosa un po' coraggiosa per ampliare la tua zona di comfort.",
+     "p": [
+      "Il coraggio è un muscolo che cresce con piccoli stiramenti ripetuti.",
+      "Scegli qualcosa che spaventa un po', non che travolge.",
+      "Ogni passo coraggioso rende più possibile il successivo."
+     ],
+     "q": "Quale cosa un po' coraggiosa ti piacerebbe provare?",
+     "c": "Fai oggi una piccola cosa coraggiosa, come iniziare una conversazione o condividere un'idea."
+    },
+    "pt": {
+     "t": "Coragem em pequenas doses",
+     "g": "Fazer todos os dias uma coisa um pouco corajosa para alargar a tua zona de conforto.",
+     "p": [
+      "A coragem é um músculo que cresce com pequenos alongamentos repetidos.",
+      "Escolhe algo que assuste um pouco, não que esmague.",
+      "Cada passo corajoso torna o seguinte mais possível."
+     ],
+     "q": "Que coisa um pouco corajosa gostarias de experimentar?",
+     "c": "Faz hoje uma pequena coisa corajosa, como iniciar uma conversa ou partilhar uma ideia."
+    },
+    "pt_BR": {
+     "t": "Coragem em pequenas doses",
+     "g": "Fazer todo dia uma coisa um pouco corajosa para ampliar sua zona de conforto.",
+     "p": [
+      "A coragem é um músculo que cresce com pequenos alongamentos repetidos.",
+      "Escolha algo que assuste um pouco, não que esmague.",
+      "Cada passo corajoso torna o seguinte mais possível."
+     ],
+     "q": "Que coisa um pouco corajosa você gostaria de experimentar?",
+     "c": "Faça hoje uma pequena coisa corajosa, como iniciar uma conversa ou compartilhar uma ideia."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Asking for help",
+     "g": "Learn why asking friends, mentors or professionals is a strength, not a weakness.",
+     "p": [
+      "Nobody reaches goals completely alone; help speeds things up.",
+      "Asking clearly and specifically makes it easier for others to say yes.",
+      "If you feel low for a long time, a doctor or counsellor is a good person to ask."
+     ],
+     "q": "Who in your life could help you with your current goal?",
+     "c": "Ask one person for one small piece of help or advice today."
+    },
+    "de": {
+     "t": "Um Hilfe bitten",
+     "g": "Lernen, warum Freunde, Mentoren oder Fachleute zu fragen eine Stärke ist.",
+     "p": [
+      "Niemand erreicht Ziele völlig allein; Hilfe beschleunigt vieles.",
+      "Klar und konkret zu fragen macht es anderen leichter, Ja zu sagen.",
+      "Fühlst du dich lange niedergeschlagen, sind Arzt oder Berater gute Ansprechpartner."
+     ],
+     "q": "Wer in deinem Leben könnte dir bei deinem aktuellen Ziel helfen?",
+     "c": "Bitte heute eine Person um ein kleines Stück Hilfe oder einen Rat."
+    },
+    "es": {
+     "t": "Pedir ayuda",
+     "g": "Aprender por qué pedir ayuda a amigos, mentores o profesionales es una fortaleza.",
+     "p": [
+      "Nadie alcanza metas completamente solo; la ayuda acelera las cosas.",
+      "Pedir con claridad y concreción facilita que otros digan que sí.",
+      "Si te sientes decaído mucho tiempo, un médico o terapeuta es buena persona a quien acudir."
+     ],
+     "q": "¿Quién en tu vida podría ayudarte con tu meta actual?",
+     "c": "Pide hoy a una persona un pequeño apoyo o consejo."
+    },
+    "fr": {
+     "t": "Demander de l'aide",
+     "g": "Comprendre pourquoi demander à des amis, mentors ou professionnels est une force.",
+     "p": [
+      "Personne n'atteint ses objectifs complètement seul ; l'aide accélère les choses.",
+      "Demander clairement et précisément facilite le oui des autres.",
+      "Si tu te sens mal longtemps, un médecin ou un conseiller est une bonne personne à consulter."
+     ],
+     "q": "Qui dans ta vie pourrait t'aider pour ton objectif actuel ?",
+     "c": "Demande aujourd'hui à une personne un petit coup de main ou un conseil."
+    },
+    "it": {
+     "t": "Chiedere aiuto",
+     "g": "Capire perché chiedere ad amici, mentori o professionisti è una forza.",
+     "p": [
+      "Nessuno raggiunge gli obiettivi del tutto da solo; l'aiuto accelera le cose.",
+      "Chiedere in modo chiaro e preciso rende più facile dire sì.",
+      "Se ti senti giù a lungo, un medico o un consulente è una buona persona a cui rivolgersi."
+     ],
+     "q": "Chi nella tua vita potrebbe aiutarti con il tuo obiettivo attuale?",
+     "c": "Chiedi oggi a una persona un piccolo aiuto o consiglio."
+    },
+    "pt": {
+     "t": "Pedir ajuda",
+     "g": "Perceber porque pedir ajuda a amigos, mentores ou profissionais é uma força.",
+     "p": [
+      "Ninguém alcança metas completamente sozinho; a ajuda acelera as coisas.",
+      "Pedir com clareza e de forma concreta facilita que os outros digam que sim.",
+      "Se te sentires em baixo durante muito tempo, um médico ou terapeuta é uma boa pessoa a quem recorrer."
+     ],
+     "q": "Quem na tua vida te podia ajudar com a tua meta atual?",
+     "c": "Pede hoje a uma pessoa um pequeno apoio ou conselho."
+    },
+    "pt_BR": {
+     "t": "Pedir ajuda",
+     "g": "Entender por que pedir ajuda a amigos, mentores ou profissionais é uma força.",
+     "p": [
+      "Ninguém alcança metas completamente sozinho; a ajuda acelera as coisas.",
+      "Pedir com clareza e de forma concreta facilita que os outros digam sim.",
+      "Se você se sentir para baixo por muito tempo, um médico ou terapeuta é uma boa pessoa a quem recorrer."
+     ],
+     "q": "Quem na sua vida poderia ajudar você com a sua meta atual?",
+     "c": "Peça hoje a uma pessoa um pequeno apoio ou conselho."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mini review: confidence",
+     "g": "Recap action, success journals and comparing less.",
+     "p": [
+      "Confidence grows from doing, even imperfectly.",
+      "Past successes and a daily journal show what you are capable of.",
+      "Comparing less and moving at your pace keeps you steady."
+     ],
+     "q": "Which of these confidence tools has helped you most so far?",
+     "c": "Read your success journal and underline the line that makes you proudest."
+    },
+    "de": {
+     "t": "Mini-Wiederholung: Selbstvertrauen",
+     "g": "Handeln, Erfolgstagebuch und weniger Vergleichen wiederholen.",
+     "p": [
+      "Selbstvertrauen wächst durch Tun, auch unperfektes.",
+      "Frühere Erfolge und ein tägliches Tagebuch zeigen, was du kannst.",
+      "Weniger vergleichen und in deinem Tempo gehen hält dich stabil."
+     ],
+     "q": "Welches dieser Werkzeuge hat dir bisher am meisten geholfen?",
+     "c": "Lies dein Erfolgstagebuch und unterstreiche die Zeile, auf die du am stolzesten bist."
+    },
+    "es": {
+     "t": "Mini repaso: confianza",
+     "g": "Repasar la acción, el diario de logros y comparar menos.",
+     "p": [
+      "La confianza crece al hacer, aun imperfectamente.",
+      "Los éxitos pasados y un diario diario muestran de qué eres capaz.",
+      "Compararte menos y avanzar a tu ritmo te mantiene firme."
+     ],
+     "q": "¿Cuál de estas herramientas de confianza te ha ayudado más hasta ahora?",
+     "c": "Lee tu diario de logros y subraya la línea que más orgullo te da."
+    },
+    "fr": {
+     "t": "Mini bilan : confiance",
+     "g": "Revoir l'action, le journal des réussites et se comparer moins.",
+     "p": [
+      "La confiance grandit en agissant, même imparfaitement.",
+      "Les réussites passées et un journal quotidien montrent ce dont tu es capable.",
+      "Te comparer moins et avancer à ton rythme te garde stable."
+     ],
+     "q": "Lequel de ces outils de confiance t'a le plus aidé jusqu'ici ?",
+     "c": "Relis ton journal des réussites et souligne la ligne dont tu es le plus fier."
+    },
+    "it": {
+     "t": "Mini ripasso: fiducia",
+     "g": "Ripassare azione, diario dei successi e confrontarsi meno.",
+     "p": [
+      "La fiducia cresce facendo, anche in modo imperfetto.",
+      "I successi passati e un diario quotidiano mostrano di cosa sei capace.",
+      "Confrontarti meno e andare al tuo ritmo ti tiene saldo."
+     ],
+     "q": "Quale di questi strumenti di fiducia ti ha aiutato di più finora?",
+     "c": "Rileggi il tuo diario dei successi e sottolinea la riga di cui sei più orgoglioso."
+    },
+    "pt": {
+     "t": "Mini revisão: confiança",
+     "g": "Rever a ação, o diário de conquistas e comparar-te menos.",
+     "p": [
+      "A confiança cresce com a prática, mesmo imperfeita.",
+      "Sucessos passados e um diário diário mostram do que és capaz.",
+      "Comparares-te menos e andares ao teu ritmo mantém-te firme."
+     ],
+     "q": "Qual destas ferramentas de confiança te ajudou mais até agora?",
+     "c": "Lê o teu diário de conquistas e sublinha a linha de que mais te orgulhas."
+    },
+    "pt_BR": {
+     "t": "Mini revisão: confiança",
+     "g": "Rever a ação, o diário de conquistas e se comparar menos.",
+     "p": [
+      "A confiança cresce com a prática, mesmo imperfeita.",
+      "Sucessos passados e um diário diário mostram do que você é capaz.",
+      "Se comparar menos e andar no seu ritmo mantém você firme."
+     ],
+     "q": "Qual dessas ferramentas de confiança mais ajudou você até agora?",
+     "c": "Leia seu diário de conquistas e sublinhe a linha da qual você mais se orgulha."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gratitude basics",
+     "g": "Notice the good things in your day and how it can brighten your outlook.",
+     "p": [
+      "Gratitude is noticing what is already good, even on ordinary days.",
+      "It does not deny problems; it adds balance to the picture.",
+      "Specific details work better than general thanks."
+     ],
+     "q": "What is something small today that you are quietly grateful for?",
+     "c": "Name three things you appreciate right now, each with one detail."
+    },
+    "de": {
+     "t": "Dankbarkeit: die Grundlagen",
+     "g": "Die guten Dinge deines Tages bemerken und wie das den Blick aufhellen kann.",
+     "p": [
+      "Dankbarkeit heißt, das schon Gute zu bemerken, auch an normalen Tagen.",
+      "Sie leugnet keine Probleme; sie bringt Balance ins Bild.",
+      "Konkrete Details wirken besser als allgemeines Danke."
+     ],
+     "q": "Wofür bist du heute im Kleinen leise dankbar?",
+     "c": "Nenne drei Dinge, die du gerade schätzt, jeweils mit einem Detail."
+    },
+    "es": {
+     "t": "Gratitud: lo básico",
+     "g": "Notar las cosas buenas de tu día y cómo puede alegrar tu perspectiva.",
+     "p": [
+      "Gratitud es notar lo que ya está bien, incluso en días normales.",
+      "No niega los problemas; añade equilibrio a la imagen.",
+      "Los detalles concretos funcionan mejor que un gracias general."
+     ],
+     "q": "¿Qué cosa pequeña de hoy te produce una gratitud tranquila?",
+     "c": "Nombra tres cosas que aprecias ahora, cada una con un detalle."
+    },
+    "fr": {
+     "t": "Les bases de la gratitude",
+     "g": "Remarquer les bonnes choses de ta journée et comment cela peut éclaircir ta perspective.",
+     "p": [
+      "La gratitude, c'est remarquer ce qui va déjà bien, même les jours ordinaires.",
+      "Elle ne nie pas les problèmes ; elle équilibre le tableau.",
+      "Les détails précis marchent mieux qu'un merci général."
+     ],
+     "q": "Quelle petite chose d'aujourd'hui t'inspire une discrète gratitude ?",
+     "c": "Nomme trois choses que tu apprécies maintenant, chacune avec un détail."
+    },
+    "it": {
+     "t": "Le basi della gratitudine",
+     "g": "Notare le cose belle della tua giornata e come possono rischiarare la tua prospettiva.",
+     "p": [
+      "Gratitudine è notare ciò che va già bene, anche nei giorni normali.",
+      "Non nega i problemi; porta equilibrio al quadro.",
+      "I dettagli concreti funzionano meglio di un grazie generico."
+     ],
+     "q": "Quale piccola cosa di oggi ti fa provare una quieta gratitudine?",
+     "c": "Nomina tre cose che apprezzi ora, ciascuna con un dettaglio."
+    },
+    "pt": {
+     "t": "Gratidão: o básico",
+     "g": "Notar as coisas boas do teu dia e como isso pode alegrar a tua perspetiva.",
+     "p": [
+      "Gratidão é reparar no que já está bem, mesmo em dias normais.",
+      "Não nega os problemas; dá equilíbrio ao quadro.",
+      "Detalhes concretos funcionam melhor do que um obrigado geral."
+     ],
+     "q": "Que pequena coisa de hoje te desperta uma gratidão tranquila?",
+     "c": "Nomeia três coisas que aprecias agora, cada uma com um detalhe."
+    },
+    "pt_BR": {
+     "t": "Gratidão: o básico",
+     "g": "Notar as coisas boas do seu dia e como isso pode alegrar sua perspectiva.",
+     "p": [
+      "Gratidão é reparar no que já está bom, mesmo em dias normais.",
+      "Ela não nega os problemas; dá equilíbrio ao quadro.",
+      "Detalhes concretos funcionam melhor do que um obrigado geral."
+     ],
+     "q": "Que pequena coisa de hoje desperta em você uma gratidão tranquila?",
+     "c": "Nomeie três coisas que você aprecia agora, cada uma com um detalhe."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Three good things",
+     "g": "Try an evening habit of writing three things that went well.",
+     "p": [
+      "Three good things trains your attention to notice the positives.",
+      "Add a short note on why each one happened.",
+      "It takes two minutes and fits nicely with your evening routine."
+     ],
+     "q": "What went well for you today, even something simple?",
+     "c": "Tonight, write three good things and one reason for each."
+    },
+    "de": {
+     "t": "Drei gute Dinge",
+     "g": "Eine Abendgewohnheit ausprobieren: drei Dinge aufschreiben, die gut liefen.",
+     "p": [
+      "Drei gute Dinge schult deine Aufmerksamkeit für das Positive.",
+      "Ergänze eine kurze Notiz, warum jedes passiert ist.",
+      "Es dauert zwei Minuten und passt gut zu deiner Abendroutine."
+     ],
+     "q": "Was ist dir heute gut gelungen, auch etwas Einfaches?",
+     "c": "Schreib heute Abend drei gute Dinge und je einen Grund dazu auf."
+    },
+    "es": {
+     "t": "Tres cosas buenas",
+     "g": "Probar un hábito nocturno: escribir tres cosas que salieron bien.",
+     "p": [
+      "Tres cosas buenas entrena tu atención para notar lo positivo.",
+      "Añade una nota breve sobre por qué ocurrió cada una.",
+      "Lleva dos minutos y encaja bien con tu rutina de noche."
+     ],
+     "q": "¿Qué te salió bien hoy, aunque sea algo sencillo?",
+     "c": "Esta noche escribe tres cosas buenas y una razón para cada una."
+    },
+    "fr": {
+     "t": "Trois bonnes choses",
+     "g": "Essayer une habitude du soir : noter trois choses qui ont bien marché.",
+     "p": [
+      "Trois bonnes choses entraîne ton attention à remarquer le positif.",
+      "Ajoute une courte note sur la raison de chacune.",
+      "Cela prend deux minutes et s'intègre bien à ta routine du soir."
+     ],
+     "q": "Qu'est-ce qui s'est bien passé pour toi aujourd'hui, même quelque chose de simple ?",
+     "c": "Ce soir, écris trois bonnes choses et une raison pour chacune."
+    },
+    "it": {
+     "t": "Tre cose belle",
+     "g": "Provare un'abitudine serale: scrivere tre cose andate bene.",
+     "p": [
+      "Tre cose belle allena la tua attenzione a notare il positivo.",
+      "Aggiungi una breve nota sul perché è successa ciascuna.",
+      "Richiede due minuti e si inserisce bene nella tua routine serale."
+     ],
+     "q": "Cosa è andato bene oggi per te, anche qualcosa di semplice?",
+     "c": "Stasera scrivi tre cose belle e una ragione per ciascuna."
+    },
+    "pt": {
+     "t": "Três coisas boas",
+     "g": "Experimentar um hábito noturno: escrever três coisas que correram bem.",
+     "p": [
+      "Três coisas boas treina a tua atenção para reparar no positivo.",
+      "Acrescenta uma nota breve sobre porque aconteceu cada uma.",
+      "Leva dois minutos e encaixa bem na tua rotina da noite."
+     ],
+     "q": "O que correu bem hoje, mesmo algo simples?",
+     "c": "Esta noite escreve três coisas boas e uma razão para cada uma."
+    },
+    "pt_BR": {
+     "t": "Três coisas boas",
+     "g": "Experimentar um hábito noturno: escrever três coisas que deram certo.",
+     "p": [
+      "Três coisas boas treina sua atenção para reparar no positivo.",
+      "Acrescente uma nota breve sobre por que cada uma aconteceu.",
+      "Leva dois minutos e combina bem com a sua rotina da noite."
+     ],
+     "q": "O que deu certo hoje, mesmo algo simples?",
+     "c": "Esta noite escreva três coisas boas e uma razão para cada uma."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Optimism in practice",
+     "g": "Look for what could go right and what you can learn.",
+     "p": [
+      "Realistic optimism means expecting some good while preparing for bumps.",
+      "It asks: what could go right, and what can I learn if it does not?",
+      "Hope is a skill you can practise, not just a mood."
+     ],
+     "q": "Think of something coming up. What could go right?",
+     "c": "Pick one worry today and write one thing that could go right and one thing you could learn."
+    },
+    "de": {
+     "t": "Optimismus in der Praxis",
+     "g": "Schauen, was gut laufen könnte und was du lernen kannst.",
+     "p": [
+      "Realistischer Optimismus heißt, Gutes zu erwarten und sich auf Holpriges vorzubereiten.",
+      "Er fragt: Was könnte gut laufen, und was lerne ich, wenn nicht?",
+      "Hoffnung ist eine Fähigkeit, die du üben kannst, nicht nur eine Stimmung."
+     ],
+     "q": "Denk an etwas, das bevorsteht. Was könnte gut laufen?",
+     "c": "Wähle heute eine Sorge und schreib auf, was gut laufen könnte und was du lernen könntest."
+    },
+    "es": {
+     "t": "Optimismo en la práctica",
+     "g": "Buscar qué podría salir bien y qué puedes aprender.",
+     "p": [
+      "El optimismo realista espera algo bueno y se prepara para los baches.",
+      "Pregunta: ¿qué podría salir bien y qué aprendo si no sale?",
+      "La esperanza es una habilidad que puedes practicar, no solo un ánimo."
+     ],
+     "q": "Piensa en algo que se acerca. ¿Qué podría salir bien?",
+     "c": "Elige hoy una preocupación y escribe qué podría salir bien y qué podrías aprender."
+    },
+    "fr": {
+     "t": "L'optimisme en pratique",
+     "g": "Chercher ce qui pourrait bien se passer et ce que tu peux apprendre.",
+     "p": [
+      "L'optimisme réaliste attend du bon tout en se préparant aux accrocs.",
+      "Il demande : qu'est-ce qui pourrait bien se passer, et que puis-je apprendre sinon ?",
+      "L'espoir est une compétence qui s'entraîne, pas seulement une humeur."
+     ],
+     "q": "Pense à quelque chose qui approche. Qu'est-ce qui pourrait bien se passer ?",
+     "c": "Choisis aujourd'hui une inquiétude et note ce qui pourrait bien aller et ce que tu pourrais apprendre."
+    },
+    "it": {
+     "t": "L'ottimismo in pratica",
+     "g": "Cercare cosa potrebbe andare bene e cosa puoi imparare.",
+     "p": [
+      "L'ottimismo realistico si aspetta del bene preparandosi agli imprevisti.",
+      "Chiede: cosa potrebbe andare bene e cosa imparo se non va?",
+      "La speranza è un'abilità che puoi allenare, non solo un umore."
+     ],
+     "q": "Pensa a qualcosa in arrivo. Cosa potrebbe andare bene?",
+     "c": "Scegli oggi una preoccupazione e scrivi cosa potrebbe andare bene e cosa potresti imparare."
+    },
+    "pt": {
+     "t": "O otimismo na prática",
+     "g": "Procurar o que pode correr bem e o que podes aprender.",
+     "p": [
+      "O otimismo realista espera algo de bom e prepara-se para os percalços.",
+      "Pergunta: o que pode correr bem e o que aprendo se não correr?",
+      "A esperança é uma competência que podes treinar, não só um estado de espírito."
+     ],
+     "q": "Pensa em algo que se aproxima. O que pode correr bem?",
+     "c": "Escolhe hoje uma preocupação e escreve o que pode correr bem e o que podias aprender."
+    },
+    "pt_BR": {
+     "t": "O otimismo na prática",
+     "g": "Procurar o que pode dar certo e o que você pode aprender.",
+     "p": [
+      "O otimismo realista espera algo de bom e se prepara para os imprevistos.",
+      "Pergunta: o que pode dar certo e o que aprendo se não der?",
+      "A esperança é uma habilidade que você pode treinar, não só um estado de espírito."
+     ],
+     "q": "Pense em algo que se aproxima. O que pode dar certo?",
+     "c": "Escolha hoje uma preocupação e escreva o que pode dar certo e o que você poderia aprender."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Finding joy in the process",
+     "g": "Enjoy the journey itself, not only the finish line.",
+     "p": [
+      "If joy only comes at the finish, the long middle feels heavy.",
+      "Look for small satisfying moments along the way.",
+      "Enjoying the process makes it easier to keep going over time."
+     ],
+     "q": "What do you enjoy about the work toward your goal, even a little?",
+     "c": "Today, pause once during your task and notice one thing you enjoy about it."
+    },
+    "de": {
+     "t": "Freude am Prozess finden",
+     "g": "Den Weg selbst genießen, nicht nur die Ziellinie.",
+     "p": [
+      "Kommt Freude erst im Ziel, fühlt sich die lange Mitte schwer an.",
+      "Such unterwegs nach kleinen befriedigenden Momenten.",
+      "Freude am Prozess erleichtert das Durchhalten über längere Zeit."
+     ],
+     "q": "Was gefällt dir an der Arbeit auf dein Ziel hin, auch nur ein bisschen?",
+     "c": "Halte heute einmal bei deiner Aufgabe inne und bemerke etwas, das dir daran gefällt."
+    },
+    "es": {
+     "t": "Encontrar alegría en el proceso",
+     "g": "Disfrutar del camino en sí, no solo de la meta.",
+     "p": [
+      "Si la alegría solo llega al final, el largo tramo medio pesa.",
+      "Busca pequeños momentos satisfactorios por el camino.",
+      "Disfrutar del proceso facilita seguir adelante con el tiempo."
+     ],
+     "q": "¿Qué disfrutas del trabajo hacia tu meta, aunque sea un poco?",
+     "c": "Hoy haz una pausa durante tu tarea y nota algo que disfrutes de ella."
+    },
+    "fr": {
+     "t": "Trouver de la joie dans le processus",
+     "g": "Savourer le chemin lui-même, pas seulement la ligne d'arrivée.",
+     "p": [
+      "Si la joie n'arrive qu'à la fin, le long milieu paraît lourd.",
+      "Cherche de petits moments satisfaisants en chemin.",
+      "Aimer le processus aide à continuer sur la durée."
+     ],
+     "q": "Qu'aimes-tu dans le travail vers ton objectif, même un peu ?",
+     "c": "Aujourd'hui, fais une pause pendant ta tâche et remarque une chose que tu y apprécies."
+    },
+    "it": {
+     "t": "Trovare gioia nel processo",
+     "g": "Godersi il percorso in sé, non solo il traguardo.",
+     "p": [
+      "Se la gioia arriva solo alla fine, il lungo tratto centrale pesa.",
+      "Cerca piccoli momenti soddisfacenti lungo la strada.",
+      "Godersi il processo rende più facile andare avanti nel tempo."
+     ],
+     "q": "Cosa ti piace del lavoro verso il tuo obiettivo, anche solo un po'?",
+     "c": "Oggi fermati una volta durante il compito e nota una cosa che ti piace."
+    },
+    "pt": {
+     "t": "Encontrar alegria no processo",
+     "g": "Saborear o caminho em si, não só a meta.",
+     "p": [
+      "Se a alegria só chega ao fim, o longo meio do caminho pesa.",
+      "Procura pequenos momentos satisfatórios pelo caminho.",
+      "Gostar do processo facilita continuar ao longo do tempo."
+     ],
+     "q": "O que gostas no trabalho em direção à tua meta, mesmo que só um pouco?",
+     "c": "Hoje faz uma pausa durante a tarefa e repara numa coisa de que gostas nela."
+    },
+    "pt_BR": {
+     "t": "Encontrar alegria no processo",
+     "g": "Aproveitar o caminho em si, não só a meta.",
+     "p": [
+      "Se a alegria só chega ao fim, o longo meio do caminho pesa.",
+      "Procure pequenos momentos satisfatórios pelo caminho.",
+      "Gostar do processo facilita continuar ao longo do tempo."
+     ],
+     "q": "O que você gosta no trabalho rumo à sua meta, mesmo que só um pouco?",
+     "c": "Hoje faça uma pausa durante a tarefa e perceba uma coisa de que você gosta nela."
+    }
+   }
+  }
+ ]
+}

@@ -18,7 +18,9 @@ import validate as V
 
 HERE = pathlib.Path(__file__).parent
 STATE = HERE / 'wave_state.json'
-CHUNKS = [(1, 60), (61, 120), (121, 180), (181, 240), (241, 300), (301, 365)]
+# Owner decision 2026-10-24: 30 days per topic for now (existing longer courses stay).
+TARGET_DAYS = 30
+CHUNKS = [(1, TARGET_DAYS)]
 
 
 def load_state():

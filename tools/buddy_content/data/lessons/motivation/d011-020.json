@@ -1,0 +1,835 @@
+{
+ "topic": "motivation",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Intrinsic and extrinsic motivation",
+     "g": "Tell apart doing things for joy and meaning from doing them for rewards.",
+     "p": [
+      "Intrinsic motivation comes from inside: enjoyment, curiosity, meaning.",
+      "Extrinsic motivation comes from outside: rewards, praise, deadlines.",
+      "Both can help; try to connect outside rewards to something you truly value."
+     ],
+     "q": "Think of an activity you do just because you enjoy it. What do you love about it?",
+     "c": "Pick one task today and find one reason to do it that is just for you."
+    },
+    "de": {
+     "t": "Intrinsische und extrinsische Motivation",
+     "g": "Tun aus Freude und Sinn vom Tun für Belohnungen unterscheiden.",
+     "p": [
+      "Intrinsische Motivation kommt von innen: Freude, Neugier, Sinn.",
+      "Extrinsische Motivation kommt von außen: Belohnungen, Lob, Fristen.",
+      "Beides kann helfen; verbinde äußere Belohnungen mit etwas, das dir wirklich wichtig ist."
+     ],
+     "q": "Welche Tätigkeit machst du nur, weil sie dir Freude macht? Was liebst du daran?",
+     "c": "Such dir heute eine Aufgabe und finde einen Grund dafür, der nur dir gehört."
+    },
+    "es": {
+     "t": "Motivación intrínseca y extrínseca",
+     "g": "Distinguir hacer cosas por gusto y sentido de hacerlas por recompensas.",
+     "p": [
+      "La motivación intrínseca viene de dentro: disfrute, curiosidad, sentido.",
+      "La extrínseca viene de fuera: premios, elogios, plazos.",
+      "Ambas ayudan; intenta unir las recompensas externas a algo que valoras de verdad."
+     ],
+     "q": "Piensa en una actividad que haces solo porque te gusta. ¿Qué te encanta de ella?",
+     "c": "Elige hoy una tarea y busca una razón para hacerla que sea solo tuya."
+    },
+    "fr": {
+     "t": "Motivation intrinsèque et extrinsèque",
+     "g": "Distinguer agir par plaisir et sens de agir pour des récompenses.",
+     "p": [
+      "La motivation intrinsèque vient de l'intérieur : plaisir, curiosité, sens.",
+      "L'extrinsèque vient de l'extérieur : récompenses, éloges, échéances.",
+      "Les deux aident ; relie les récompenses externes à quelque chose qui compte vraiment pour toi."
+     ],
+     "q": "Pense à une activité que tu fais juste parce qu'elle te plaît. Qu'y aimes-tu ?",
+     "c": "Choisis une tâche aujourd'hui et trouve une raison de la faire qui soit rien qu'à toi."
+    },
+    "it": {
+     "t": "Motivazione intrinseca ed estrinseca",
+     "g": "Distinguere il fare per piacere e senso dal fare per ricompense.",
+     "p": [
+      "La motivazione intrinseca nasce dentro: piacere, curiosità, significato.",
+      "Quella estrinseca viene da fuori: premi, elogi, scadenze.",
+      "Entrambe aiutano; prova a legare i premi esterni a qualcosa che ti sta davvero a cuore."
+     ],
+     "q": "Pensa a un'attività che fai solo perché ti piace. Cosa ami di essa?",
+     "c": "Scegli oggi un compito e trova una ragione per farlo che sia solo tua."
+    },
+    "pt": {
+     "t": "Motivação intrínseca e extrínseca",
+     "g": "Distinguir fazer coisas por gosto e sentido de as fazer por recompensas.",
+     "p": [
+      "A motivação intrínseca vem de dentro: prazer, curiosidade, sentido.",
+      "A extrínseca vem de fora: prémios, elogios, prazos.",
+      "Ambas ajudam; tenta ligar as recompensas externas a algo que valorizas a sério."
+     ],
+     "q": "Pensa numa atividade que fazes só porque gostas. O que adoras nela?",
+     "c": "Escolhe hoje uma tarefa e encontra uma razão para a fazer que seja só tua."
+    },
+    "pt_BR": {
+     "t": "Motivação intrínseca e extrínseca",
+     "g": "Distinguir fazer coisas por gosto e sentido de fazê-las por recompensas.",
+     "p": [
+      "A motivação intrínseca vem de dentro: prazer, curiosidade, sentido.",
+      "A extrínseca vem de fora: prêmios, elogios, prazos.",
+      "Ambas ajudam; tente ligar as recompensas externas a algo que você valoriza de verdade."
+     ],
+     "q": "Pense em uma atividade que você faz só porque gosta. O que você ama nela?",
+     "c": "Escolha hoje uma tarefa e encontre uma razão para fazê-la que seja só sua."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Curiosity as fuel",
+     "g": "See how asking 'I wonder what happens if...' makes effort feel like exploring.",
+     "p": [
+      "Curiosity turns a chore into a small experiment.",
+      "Questions like 'what if I try it this way?' make starting easier.",
+      "You do not need to be an expert; being curious is enough."
+     ],
+     "q": "What is something you are curious about that you have not tried yet?",
+     "c": "Take one task and ask yourself three 'I wonder...' questions about it."
+    },
+    "de": {
+     "t": "Neugier als Treibstoff",
+     "g": "Sehen, wie die Frage 'Was passiert, wenn...?' Mühe wie Entdecken wirken lässt.",
+     "p": [
+      "Neugier macht aus einer Pflicht ein kleines Experiment.",
+      "Fragen wie 'Was, wenn ich es so versuche?' erleichtern den Anfang.",
+      "Du musst kein Experte sein; neugierig zu sein reicht."
+     ],
+     "q": "Worauf bist du neugierig, das du noch nicht ausprobiert hast?",
+     "c": "Nimm eine Aufgabe und stelle dir dazu drei 'Ich frage mich...'-Fragen."
+    },
+    "es": {
+     "t": "La curiosidad como combustible",
+     "g": "Ver cómo preguntarte '¿qué pasaría si...?' hace que el esfuerzo sea explorar.",
+     "p": [
+      "La curiosidad convierte una obligación en un pequeño experimento.",
+      "Preguntas como '¿y si lo pruebo así?' facilitan empezar.",
+      "No necesitas ser experto; con ser curioso basta."
+     ],
+     "q": "¿Qué cosa te da curiosidad y todavía no has probado?",
+     "c": "Toma una tarea y hazte tres preguntas del tipo 'me pregunto si...' sobre ella."
+    },
+    "fr": {
+     "t": "La curiosité comme carburant",
+     "g": "Voir comment demander 'je me demande ce qui se passe si...' fait de l'effort une exploration.",
+     "p": [
+      "La curiosité transforme une corvée en petite expérience.",
+      "Des questions comme 'et si j'essayais comme ça ?' facilitent le début.",
+      "Pas besoin d'être expert ; être curieux suffit."
+     ],
+     "q": "De quoi es-tu curieux sans l'avoir encore essayé ?",
+     "c": "Prends une tâche et pose-toi trois questions 'je me demande...' à son sujet."
+    },
+    "it": {
+     "t": "La curiosità come carburante",
+     "g": "Vedere come chiederti 'mi chiedo cosa succede se...' rende lo sforzo un'esplorazione.",
+     "p": [
+      "La curiosità trasforma un dovere in un piccolo esperimento.",
+      "Domande come 'e se provassi così?' rendono più facile iniziare.",
+      "Non serve essere esperti; essere curiosi basta."
+     ],
+     "q": "Di cosa sei curioso e non hai ancora provato?",
+     "c": "Prendi un compito e fatti tre domande 'mi chiedo se...' su di esso."
+    },
+    "pt": {
+     "t": "A curiosidade como combustível",
+     "g": "Ver como perguntar 'e se...?' faz do esforço uma exploração.",
+     "p": [
+      "A curiosidade transforma uma obrigação numa pequena experiência.",
+      "Perguntas como 'e se eu tentar assim?' tornam o começo mais fácil.",
+      "Não precisas de ser especialista; ser curioso chega."
+     ],
+     "q": "Do que tens curiosidade e ainda não experimentaste?",
+     "c": "Pega numa tarefa e faz a ti próprio três perguntas do tipo 'e se...?' sobre ela."
+    },
+    "pt_BR": {
+     "t": "A curiosidade como combustível",
+     "g": "Ver como perguntar 'e se...?' faz do esforço uma exploração.",
+     "p": [
+      "A curiosidade transforma uma obrigação em um pequeno experimento.",
+      "Perguntas como 'e se eu tentar assim?' facilitam o começo.",
+      "Você não precisa ser especialista; ser curioso basta."
+     ],
+     "q": "Do que você tem curiosidade e ainda não experimentou?",
+     "c": "Pegue uma tarefa e faça a si mesmo três perguntas do tipo 'e se...?' sobre ela."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fun as a strategy",
+     "g": "Add music, play or a friend to make a task more enjoyable.",
+     "p": [
+      "Enjoyment is not a reward at the end; it can be part of the task.",
+      "Music, a timer game or a friend nearby can lighten a boring job.",
+      "If a task feels heavy, ask how it could be a little more fun."
+     ],
+     "q": "What is the most boring task on your list, and how could you make it more fun?",
+     "c": "Do one boring task today with a favourite song or in a playful way."
+    },
+    "de": {
+     "t": "Spaß als Strategie",
+     "g": "Mit Musik, Spiel oder Freunden eine Aufgabe angenehmer machen.",
+     "p": [
+      "Freude ist nicht nur eine Belohnung am Ende; sie kann Teil der Aufgabe sein.",
+      "Musik, ein Zeitspiel oder ein Freund in der Nähe machen Langweiliges leichter.",
+      "Fühlt sich etwas schwer an, frag, wie es ein bisschen lustiger werden könnte."
+     ],
+     "q": "Welche Aufgabe auf deiner Liste ist am langweiligsten, und wie könnte sie mehr Spaß machen?",
+     "c": "Erledige heute eine langweilige Aufgabe mit deinem Lieblingslied oder spielerisch."
+    },
+    "es": {
+     "t": "La diversión como estrategia",
+     "g": "Añadir música, juego o un amigo para hacer una tarea más agradable.",
+     "p": [
+      "El disfrute no es solo un premio al final; puede ser parte de la tarea.",
+      "Música, un juego con el reloj o un amigo cerca aligeran un trabajo aburrido.",
+      "Si una tarea pesa, pregúntate cómo hacerla un poco más divertida."
+     ],
+     "q": "¿Cuál es la tarea más aburrida de tu lista y cómo podrías hacerla más divertida?",
+     "c": "Haz hoy una tarea aburrida con tu canción favorita o de forma lúdica."
+    },
+    "fr": {
+     "t": "Le plaisir comme stratégie",
+     "g": "Ajouter musique, jeu ou ami pour rendre une tâche plus agréable.",
+     "p": [
+      "Le plaisir n'est pas qu'une récompense à la fin ; il peut faire partie de la tâche.",
+      "Musique, jeu avec le minuteur ou ami à côté allègent une corvée ennuyeuse.",
+      "Si une tâche pèse, demande-toi comment la rendre un peu plus amusante."
+     ],
+     "q": "Quelle est la tâche la plus ennuyeuse de ta liste, et comment la rendre plus amusante ?",
+     "c": "Fais aujourd'hui une tâche ennuyeuse avec ta chanson préférée ou de façon ludique."
+    },
+    "it": {
+     "t": "Il divertimento come strategia",
+     "g": "Aggiungere musica, gioco o un amico per rendere un compito più piacevole.",
+     "p": [
+      "Il piacere non è solo un premio finale; può far parte del compito.",
+      "Musica, un gioco con il timer o un amico vicino alleggeriscono un lavoro noioso.",
+      "Se un compito pesa, chiediti come renderlo un po' più divertente."
+     ],
+     "q": "Qual è il compito più noioso della tua lista e come potresti renderlo più divertente?",
+     "c": "Fai oggi un compito noioso con la tua canzone preferita o in modo giocoso."
+    },
+    "pt": {
+     "t": "A diversão como estratégia",
+     "g": "Juntar música, jogo ou um amigo para tornar uma tarefa mais agradável.",
+     "p": [
+      "O prazer não é só um prémio no fim; pode fazer parte da tarefa.",
+      "Música, um jogo com o cronómetro ou um amigo por perto aliviam um trabalho aborrecido.",
+      "Se uma tarefa pesa, pergunta como a tornar um pouco mais divertida."
+     ],
+     "q": "Qual é a tarefa mais aborrecida da tua lista e como a podias tornar mais divertida?",
+     "c": "Faz hoje uma tarefa aborrecida com a tua canção favorita ou de forma lúdica."
+    },
+    "pt_BR": {
+     "t": "A diversão como estratégia",
+     "g": "Juntar música, jogo ou um amigo para tornar uma tarefa mais agradável.",
+     "p": [
+      "O prazer não é só um prêmio no fim; pode fazer parte da tarefa.",
+      "Música, um jogo com o cronômetro ou um amigo por perto aliviam um trabalho chato.",
+      "Se uma tarefa pesa, pergunte como torná-la um pouco mais divertida."
+     ],
+     "q": "Qual é a tarefa mais chata da sua lista e como você poderia torná-la mais divertida?",
+     "c": "Faça hoje uma tarefa chata com sua música favorita ou de forma lúdica."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The power of small wins",
+     "g": "See how finishing little tasks builds momentum and a feeling of progress.",
+     "p": [
+      "Each small win gives your mind a signal: I can do this.",
+      "Small wins add up and make bigger goals feel closer.",
+      "Choose tasks small enough to finish today."
+     ],
+     "q": "What is a small win from this week that you are proud of?",
+     "c": "Complete three tiny tasks today and enjoy a moment after each one."
+    },
+    "de": {
+     "t": "Die Kraft kleiner Erfolge",
+     "g": "Sehen, wie kleine erledigte Aufgaben Schwung und Fortschrittsgefühl aufbauen.",
+     "p": [
+      "Jeder kleine Erfolg sagt deinem Kopf: Ich kann das.",
+      "Kleine Erfolge summieren sich und rücken größere Ziele näher.",
+      "Wähle Aufgaben, die klein genug sind, um heute fertig zu werden."
+     ],
+     "q": "Welcher kleine Erfolg dieser Woche macht dich stolz?",
+     "c": "Erledige heute drei winzige Aufgaben und genieße nach jeder einen Moment."
+    },
+    "es": {
+     "t": "El poder de las pequeñas victorias",
+     "g": "Ver cómo terminar tareas pequeñas crea impulso y sensación de avance.",
+     "p": [
+      "Cada pequeña victoria le dice a tu mente: puedo hacerlo.",
+      "Las pequeñas victorias se acumulan y acercan las metas grandes.",
+      "Elige tareas lo bastante pequeñas para terminarlas hoy."
+     ],
+     "q": "¿Qué pequeña victoria de esta semana te hace sentir orgullo?",
+     "c": "Completa hoy tres tareas diminutas y disfruta un momento tras cada una."
+    },
+    "fr": {
+     "t": "Le pouvoir des petites victoires",
+     "g": "Voir comment finir de petites tâches crée de l'élan et une impression de progrès.",
+     "p": [
+      "Chaque petite victoire dit à ton esprit : je peux le faire.",
+      "Les petites victoires s'additionnent et rapprochent les grands objectifs.",
+      "Choisis des tâches assez petites pour être finies aujourd'hui."
+     ],
+     "q": "Quelle petite victoire de cette semaine te rend fier ?",
+     "c": "Termine trois toutes petites tâches aujourd'hui et savoure un instant après chacune."
+    },
+    "it": {
+     "t": "Il potere delle piccole vittorie",
+     "g": "Vedere come finire piccoli compiti crea slancio e senso di progresso.",
+     "p": [
+      "Ogni piccola vittoria dice alla tua mente: posso farcela.",
+      "Le piccole vittorie si sommano e avvicinano gli obiettivi grandi.",
+      "Scegli compiti abbastanza piccoli da finire oggi."
+     ],
+     "q": "Quale piccola vittoria di questa settimana ti rende orgoglioso?",
+     "c": "Completa oggi tre compiti minuscoli e goditi un momento dopo ciascuno."
+    },
+    "pt": {
+     "t": "O poder das pequenas vitórias",
+     "g": "Ver como terminar pequenas tarefas cria impulso e sensação de avanço.",
+     "p": [
+      "Cada pequena vitória diz à tua mente: consigo fazer isto.",
+      "As pequenas vitórias somam-se e aproximam as metas grandes.",
+      "Escolhe tarefas pequenas o suficiente para acabar hoje."
+     ],
+     "q": "Que pequena vitória desta semana te deixa orgulhoso?",
+     "c": "Conclui hoje três tarefas minúsculas e aproveita um momento depois de cada uma."
+    },
+    "pt_BR": {
+     "t": "O poder das pequenas vitórias",
+     "g": "Ver como terminar pequenas tarefas cria impulso e sensação de avanço.",
+     "p": [
+      "Cada pequena vitória diz à sua mente: eu consigo fazer isso.",
+      "As pequenas vitórias se somam e aproximam as metas grandes.",
+      "Escolha tarefas pequenas o suficiente para terminar hoje."
+     ],
+     "q": "Qual pequena vitória desta semana deixa você orgulhoso?",
+     "c": "Conclua hoje três tarefas minúsculas e aproveite um momento depois de cada uma."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Celebrating progress",
+     "g": "Learn simple ways to notice and enjoy each step forward, however small.",
+     "p": [
+      "Noticing progress is what keeps effort from feeling endless.",
+      "Celebrating can be tiny: a smile, a stretch, a moment of thanks.",
+      "You can celebrate the effort, not only the result."
+     ],
+     "q": "How do you like to celebrate when something goes well?",
+     "c": "After your next task, pause for ten seconds and say 'well done' to yourself."
+    },
+    "de": {
+     "t": "Fortschritt feiern",
+     "g": "Einfache Wege lernen, jeden kleinen Schritt zu bemerken und zu genießen.",
+     "p": [
+      "Fortschritt zu bemerken verhindert, dass Mühe endlos wirkt.",
+      "Feiern kann winzig sein: ein Lächeln, ein Strecken, ein Moment Dankbarkeit.",
+      "Du kannst die Mühe feiern, nicht nur das Ergebnis."
+     ],
+     "q": "Wie feierst du gern, wenn etwas gut läuft?",
+     "c": "Halte nach deiner nächsten Aufgabe zehn Sekunden inne und sag dir: gut gemacht."
+    },
+    "es": {
+     "t": "Celebrar el progreso",
+     "g": "Aprender formas sencillas de notar y disfrutar cada paso, por pequeño que sea.",
+     "p": [
+      "Notar el progreso evita que el esfuerzo parezca interminable.",
+      "Celebrar puede ser diminuto: una sonrisa, un estiramiento, un momento de gratitud.",
+      "Puedes celebrar el esfuerzo, no solo el resultado."
+     ],
+     "q": "¿Cómo te gusta celebrar cuando algo sale bien?",
+     "c": "Tras tu próxima tarea, haz una pausa de diez segundos y di 'bien hecho'."
+    },
+    "fr": {
+     "t": "Célébrer ses progrès",
+     "g": "Apprendre des façons simples de remarquer et savourer chaque pas, même petit.",
+     "p": [
+      "Remarquer ses progrès évite que l'effort paraisse sans fin.",
+      "Célébrer peut être minuscule : un sourire, un étirement, un instant de gratitude.",
+      "Tu peux célébrer l'effort, pas seulement le résultat."
+     ],
+     "q": "Comment aimes-tu fêter quand quelque chose se passe bien ?",
+     "c": "Après ta prochaine tâche, fais une pause de dix secondes et dis-toi 'bien joué'."
+    },
+    "it": {
+     "t": "Celebrare i progressi",
+     "g": "Imparare modi semplici per notare e godere ogni passo avanti, anche piccolo.",
+     "p": [
+      "Notare i progressi evita che lo sforzo sembri infinito.",
+      "Celebrare può essere minuscolo: un sorriso, uno stiramento, un momento di gratitudine.",
+      "Puoi celebrare l'impegno, non solo il risultato."
+     ],
+     "q": "Come ti piace festeggiare quando qualcosa va bene?",
+     "c": "Dopo il prossimo compito, fermati dieci secondi e dì a te stesso 'ben fatto'."
+    },
+    "pt": {
+     "t": "Celebrar o progresso",
+     "g": "Aprender formas simples de notar e saborear cada passo, por pequeno que seja.",
+     "p": [
+      "Notar o progresso evita que o esforço pareça interminável.",
+      "Celebrar pode ser minúsculo: um sorriso, um alongamento, um momento de gratidão.",
+      "Podes celebrar o esforço, não só o resultado."
+     ],
+     "q": "Como gostas de celebrar quando algo corre bem?",
+     "c": "Depois da tua próxima tarefa, faz dez segundos de pausa e diz 'bem feito'."
+    },
+    "pt_BR": {
+     "t": "Celebrar o progresso",
+     "g": "Aprender formas simples de notar e saborear cada passo, por menor que seja.",
+     "p": [
+      "Notar o progresso evita que o esforço pareça interminável.",
+      "Celebrar pode ser mínimo: um sorriso, um alongamento, um momento de gratidão.",
+      "Você pode celebrar o esforço, não só o resultado."
+     ],
+     "q": "Como você gosta de comemorar quando algo dá certo?",
+     "c": "Depois da sua próxima tarefa, faça dez segundos de pausa e diga 'muito bem'."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A done list",
+     "g": "Write down what you completed today instead of only what is left to do.",
+     "p": [
+      "A to-do list shows what is missing; a done list shows what you did.",
+      "Writing finished things, even tiny ones, shows real progress.",
+      "Looking at it in the evening can lift your mood about the day."
+     ],
+     "q": "What is one thing you did today that you did not put on any list?",
+     "c": "Tonight, write at least five things you did today, including small ones."
+    },
+    "de": {
+     "t": "Eine Erledigt-Liste",
+     "g": "Aufschreiben, was du heute geschafft hast, nicht nur, was noch offen ist.",
+     "p": [
+      "Eine To-do-Liste zeigt, was fehlt; eine Erledigt-Liste zeigt, was du getan hast.",
+      "Erledigtes aufzuschreiben, auch Winziges, macht echten Fortschritt sichtbar.",
+      "Am Abend angeschaut, kann sie deine Stimmung über den Tag heben."
+     ],
+     "q": "Was hast du heute getan, das auf keiner Liste stand?",
+     "c": "Schreib heute Abend mindestens fünf Dinge auf, die du geschafft hast, auch kleine."
+    },
+    "es": {
+     "t": "Una lista de hecho",
+     "g": "Escribir lo que completaste hoy en vez de solo lo que queda por hacer.",
+     "p": [
+      "Una lista de pendientes muestra lo que falta; una de hecho muestra lo que lograste.",
+      "Anotar lo terminado, aun lo diminuto, muestra progreso real.",
+      "Mirarla por la noche puede mejorar cómo ves tu día."
+     ],
+     "q": "¿Qué hiciste hoy que no estaba en ninguna lista?",
+     "c": "Esta noche escribe al menos cinco cosas que hiciste hoy, también las pequeñas."
+    },
+    "fr": {
+     "t": "Une liste de ce qui est fait",
+     "g": "Noter ce que tu as accompli aujourd'hui, pas seulement ce qui reste à faire.",
+     "p": [
+      "Une liste de choses à faire montre ce qui manque ; la liste du fait montre ce que tu as fait.",
+      "Noter ce qui est terminé, même minuscule, montre de vrais progrès.",
+      "La relire le soir peut améliorer ton regard sur la journée."
+     ],
+     "q": "Qu'as-tu fait aujourd'hui qui n'était sur aucune liste ?",
+     "c": "Ce soir, note au moins cinq choses faites aujourd'hui, petites comprises."
+    },
+    "it": {
+     "t": "Una lista del fatto",
+     "g": "Scrivere ciò che hai completato oggi, non solo ciò che resta da fare.",
+     "p": [
+      "Una lista di cose da fare mostra cosa manca; quella del fatto mostra cosa hai fatto.",
+      "Annotare ciò che è finito, anche minuscolo, mostra progressi reali.",
+      "Rileggerla la sera può migliorare come vedi la giornata."
+     ],
+     "q": "Cosa hai fatto oggi che non era su nessuna lista?",
+     "c": "Stasera scrivi almeno cinque cose fatte oggi, anche piccole."
+    },
+    "pt": {
+     "t": "Uma lista do que já fizeste",
+     "g": "Escrever o que concluíste hoje em vez de só o que falta fazer.",
+     "p": [
+      "Uma lista de tarefas mostra o que falta; a do que fizeste mostra o que conseguiste.",
+      "Anotar o que está feito, mesmo minúsculo, mostra progresso real.",
+      "Vê-la ao fim do dia pode melhorar a forma como olhas para ele."
+     ],
+     "q": "O que fizeste hoje que não estava em nenhuma lista?",
+     "c": "Esta noite escreve pelo menos cinco coisas que fizeste hoje, também as pequenas."
+    },
+    "pt_BR": {
+     "t": "Uma lista do que já foi feito",
+     "g": "Escrever o que você concluiu hoje em vez de só o que falta fazer.",
+     "p": [
+      "Uma lista de tarefas mostra o que falta; a do feito mostra o que você conseguiu.",
+      "Anotar o que está pronto, mesmo minúsculo, mostra progresso real.",
+      "Olhar para ela à noite pode melhorar como você vê o dia."
+     ],
+     "q": "O que você fez hoje que não estava em nenhuma lista?",
+     "c": "Esta noite escreva pelo menos cinco coisas que você fez hoje, também as pequenas."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Positive self-talk",
+     "g": "Speak to yourself like a kind friend, with words that help you keep going.",
+     "p": [
+      "The way you talk to yourself shapes how you feel about trying.",
+      "Imagine what you would say to a friend in your situation.",
+      "Realistic and kind beats harsh or fake cheerful."
+     ],
+     "q": "What would you say to a friend who is struggling with your goal?",
+     "c": "Replace one harsh thought today with something a kind friend would say."
+    },
+    "de": {
+     "t": "Positive Selbstgespräche",
+     "g": "Mit dir sprechen wie ein freundlicher Freund, mit Worten, die dich weitertragen.",
+     "p": [
+      "Wie du mit dir sprichst, prägt, wie du dich beim Versuchen fühlst.",
+      "Stell dir vor, was du einem Freund in deiner Lage sagen würdest.",
+      "Realistisch und freundlich ist besser als hart oder aufgesetzt fröhlich."
+     ],
+     "q": "Was würdest du einem Freund sagen, der mit deinem Ziel kämpft?",
+     "c": "Ersetze heute einen harten Gedanken durch etwas, das ein guter Freund sagen würde."
+    },
+    "es": {
+     "t": "Diálogo interno positivo",
+     "g": "Hablarte como lo haría un buen amigo, con palabras que te ayuden a seguir.",
+     "p": [
+      "Cómo te hablas influye en cómo te sientes al intentar algo.",
+      "Imagina qué le dirías a un amigo en tu situación.",
+      "Lo realista y amable supera a lo duro o a la alegría fingida."
+     ],
+     "q": "¿Qué le dirías a un amigo que lucha con tu misma meta?",
+     "c": "Hoy cambia un pensamiento duro por algo que diría un buen amigo."
+    },
+    "fr": {
+     "t": "Le dialogue intérieur positif",
+     "g": "Te parler comme un ami bienveillant, avec des mots qui aident à continuer.",
+     "p": [
+      "La façon dont tu te parles influence ce que tu ressens en essayant.",
+      "Imagine ce que tu dirais à un ami dans ta situation.",
+      "Réaliste et bienveillant vaut mieux que dur ou joyeux de façade."
+     ],
+     "q": "Que dirais-tu à un ami qui peine sur ton objectif ?",
+     "c": "Aujourd'hui, remplace une pensée dure par ce que dirait un ami bienveillant."
+    },
+    "it": {
+     "t": "Dialogo interiore positivo",
+     "g": "Parlarti come farebbe un buon amico, con parole che aiutano ad andare avanti.",
+     "p": [
+      "Come ti parli influenza come ti senti quando provi.",
+      "Immagina cosa diresti a un amico nella tua situazione.",
+      "Realistico e gentile batte duro o allegro di facciata."
+     ],
+     "q": "Cosa diresti a un amico che fatica con il tuo stesso obiettivo?",
+     "c": "Oggi sostituisci un pensiero duro con ciò che direbbe un buon amico."
+    },
+    "pt": {
+     "t": "Diálogo interior positivo",
+     "g": "Falares contigo como um bom amigo, com palavras que ajudam a continuar.",
+     "p": [
+      "A forma como falas contigo influencia como te sentes ao tentar.",
+      "Imagina o que dirias a um amigo na tua situação.",
+      "Realista e gentil vale mais do que duro ou alegre de fachada."
+     ],
+     "q": "O que dirias a um amigo que luta com a tua meta?",
+     "c": "Hoje troca um pensamento duro por algo que diria um bom amigo."
+    },
+    "pt_BR": {
+     "t": "Diálogo interno positivo",
+     "g": "Falar com você como um bom amigo, com palavras que ajudam a continuar.",
+     "p": [
+      "A forma como você fala consigo influencia como se sente ao tentar.",
+      "Imagine o que você diria a um amigo na sua situação.",
+      "Realista e gentil vale mais do que duro ou alegre de fachada."
+     ],
+     "q": "O que você diria a um amigo que luta com a sua meta?",
+     "c": "Hoje troque um pensamento duro por algo que um bom amigo diria."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reframing 'I have to' as 'I get to'",
+     "g": "Try a small language shift that can turn chores into choices.",
+     "p": [
+      "'I have to' feels like pressure; 'I get to' reminds you of the chance.",
+      "Not every task becomes joyful, but you can often find a real reason.",
+      "Choosing your words helps you feel more in control."
+     ],
+     "q": "Which 'I have to' on your list could honestly become 'I get to'?",
+     "c": "Say 'I get to...' about three tasks today and notice how it feels."
+    },
+    "de": {
+     "t": "Aus 'Ich muss' wird 'Ich darf'",
+     "g": "Eine kleine Sprachänderung probieren, die Pflichten zu Entscheidungen macht.",
+     "p": [
+      "'Ich muss' fühlt sich nach Druck an; 'Ich darf' erinnert dich an die Chance.",
+      "Nicht jede Aufgabe wird zur Freude, aber oft findest du einen echten Grund.",
+      "Deine Worte zu wählen gibt dir mehr Gefühl von Kontrolle."
+     ],
+     "q": "Welches 'Ich muss' deiner Liste könnte ehrlich zu 'Ich darf' werden?",
+     "c": "Sag heute bei drei Aufgaben 'Ich darf...' und achte darauf, wie es sich anfühlt."
+    },
+    "es": {
+     "t": "De 'tengo que' a 'puedo'",
+     "g": "Probar un pequeño cambio de lenguaje que convierte obligaciones en elecciones.",
+     "p": [
+      "'Tengo que' suena a presión; 'puedo' te recuerda la oportunidad.",
+      "No toda tarea se vuelve alegre, pero a menudo hay una razón real.",
+      "Elegir tus palabras te da más sensación de control."
+     ],
+     "q": "¿Qué 'tengo que' de tu lista podría pasar con honestidad a 'puedo'?",
+     "c": "Hoy di 'puedo...' sobre tres tareas y nota cómo se siente."
+    },
+    "fr": {
+     "t": "De 'je dois' à 'j'ai la chance de'",
+     "g": "Essayer un petit changement de langage qui transforme les corvées en choix.",
+     "p": [
+      "'Je dois' sonne comme une pression ; 'j'ai la chance de' rappelle l'opportunité.",
+      "Toute tâche ne devient pas joyeuse, mais on trouve souvent une vraie raison.",
+      "Choisir tes mots te donne plus de sentiment de contrôle."
+     ],
+     "q": "Quel 'je dois' de ta liste pourrait honnêtement devenir 'j'ai la chance de' ?",
+     "c": "Aujourd'hui, dis 'j'ai la chance de...' pour trois tâches et note l'effet."
+    },
+    "it": {
+     "t": "Da 'devo' a 'posso'",
+     "g": "Provare un piccolo cambio di linguaggio che trasforma i doveri in scelte.",
+     "p": [
+      "'Devo' suona come pressione; 'posso' ti ricorda l'opportunità.",
+      "Non ogni compito diventa gioioso, ma spesso trovi una ragione vera.",
+      "Scegliere le parole ti dà più senso di controllo."
+     ],
+     "q": "Quale 'devo' della tua lista potrebbe onestamente diventare 'posso'?",
+     "c": "Oggi di' 'posso...' per tre compiti e nota come ti senti."
+    },
+    "pt": {
+     "t": "De 'tenho de' a 'posso'",
+     "g": "Experimentar uma pequena mudança de linguagem que transforma obrigações em escolhas.",
+     "p": [
+      "'Tenho de' soa a pressão; 'posso' lembra-te da oportunidade.",
+      "Nem toda a tarefa se torna alegre, mas muitas vezes há uma razão real.",
+      "Escolher as palavras dá-te mais sensação de controlo."
+     ],
+     "q": "Que 'tenho de' da tua lista podia honestamente passar a 'posso'?",
+     "c": "Hoje diz 'posso...' sobre três tarefas e repara como te sentes."
+    },
+    "pt_BR": {
+     "t": "De 'tenho que' a 'posso'",
+     "g": "Experimentar uma pequena mudança de linguagem que transforma obrigações em escolhas.",
+     "p": [
+      "'Tenho que' soa como pressão; 'posso' lembra a oportunidade.",
+      "Nem toda tarefa vira alegria, mas muitas vezes há uma razão real.",
+      "Escolher as palavras dá mais sensação de controle."
+     ],
+     "q": "Qual 'tenho que' da sua lista poderia honestamente virar 'posso'?",
+     "c": "Hoje diga 'posso...' sobre três tarefas e perceba como se sente."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Believing you can improve",
+     "g": "Learn the growth mindset idea: skills grow with practice and effort.",
+     "p": [
+      "Many abilities develop through practice, not only talent.",
+      "Mistakes are information about what to adjust, not proof you cannot.",
+      "Believing you can improve makes you more willing to keep trying."
+     ],
+     "q": "What is a skill you have today that you did not have five years ago?",
+     "c": "Choose one skill you want to grow and spend ten minutes practising it."
+    },
+    "de": {
+     "t": "Glauben, dass du dich verbessern kannst",
+     "g": "Die Wachstumsdenkweise kennenlernen: Fähigkeiten wachsen durch Üben und Einsatz.",
+     "p": [
+      "Viele Fähigkeiten entstehen durch Übung, nicht nur durch Talent.",
+      "Fehler sind Hinweise, was du anpassen kannst, kein Beweis, dass du es nicht kannst.",
+      "Wer an Verbesserung glaubt, probiert eher weiter."
+     ],
+     "q": "Welche Fähigkeit hast du heute, die du vor fünf Jahren noch nicht hattest?",
+     "c": "Wähle eine Fähigkeit, die du ausbauen willst, und übe zehn Minuten."
+    },
+    "es": {
+     "t": "Creer que puedes mejorar",
+     "g": "Conocer la idea de mentalidad de crecimiento: las habilidades crecen con práctica y esfuerzo.",
+     "p": [
+      "Muchas capacidades se desarrollan con práctica, no solo con talento.",
+      "Los errores informan de qué ajustar; no prueban que no puedas.",
+      "Creer que puedes mejorar te hace más dispuesto a seguir intentando."
+     ],
+     "q": "¿Qué habilidad tienes hoy que no tenías hace cinco años?",
+     "c": "Elige una habilidad que quieras crecer y practícala diez minutos."
+    },
+    "fr": {
+     "t": "Croire qu'on peut progresser",
+     "g": "Découvrir l'état d'esprit de croissance : les compétences grandissent avec la pratique.",
+     "p": [
+      "Beaucoup de capacités se développent par la pratique, pas seulement par le talent.",
+      "Les erreurs indiquent quoi ajuster ; elles ne prouvent pas que tu ne peux pas.",
+      "Croire qu'on peut progresser donne envie de continuer à essayer."
+     ],
+     "q": "Quelle compétence as-tu aujourd'hui que tu n'avais pas il y a cinq ans ?",
+     "c": "Choisis une compétence à développer et pratique-la dix minutes."
+    },
+    "it": {
+     "t": "Credere di poter migliorare",
+     "g": "Conoscere la mentalità di crescita: le abilità crescono con pratica e impegno.",
+     "p": [
+      "Molte capacità si sviluppano con la pratica, non solo con il talento.",
+      "Gli errori dicono cosa regolare; non provano che non puoi.",
+      "Credere di poter migliorare rende più disposti a continuare a provare."
+     ],
+     "q": "Quale abilità hai oggi che cinque anni fa non avevi?",
+     "c": "Scegli un'abilità che vuoi far crescere e allenala dieci minuti."
+    },
+    "pt": {
+     "t": "Acreditar que podes melhorar",
+     "g": "Conhecer a ideia de mentalidade de crescimento: as competências crescem com prática e esforço.",
+     "p": [
+      "Muitas capacidades desenvolvem-se com prática, não só com talento.",
+      "Os erros informam o que ajustar; não provam que não consegues.",
+      "Acreditar que podes melhorar torna-te mais disposto a continuar a tentar."
+     ],
+     "q": "Que competência tens hoje que não tinhas há cinco anos?",
+     "c": "Escolhe uma competência que queres desenvolver e pratica dez minutos."
+    },
+    "pt_BR": {
+     "t": "Acreditar que você pode melhorar",
+     "g": "Conhecer a ideia de mentalidade de crescimento: habilidades crescem com prática e esforço.",
+     "p": [
+      "Muitas capacidades se desenvolvem com prática, não só com talento.",
+      "Erros informam o que ajustar; não provam que você não consegue.",
+      "Acreditar que pode melhorar deixa você mais disposto a continuar tentando."
+     ],
+     "q": "Que habilidade você tem hoje que não tinha há cinco anos?",
+     "c": "Escolha uma habilidade que quer desenvolver e pratique dez minutos."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The word 'yet'",
+     "g": "Say 'I can't do this yet' to leave the door open to progress.",
+     "p": [
+      "Adding 'yet' turns a final verdict into a step on the road.",
+      "It reminds you that you are still learning.",
+      "Pair 'yet' with a next small action to make it real."
+     ],
+     "q": "What is something you cannot do yet but would like to?",
+     "c": "Finish this sentence aloud: 'I can't ... yet, and my next step is ...'."
+    },
+    "de": {
+     "t": "Das Wort 'noch'",
+     "g": "'Das kann ich noch nicht' sagen, um die Tür für Fortschritt offen zu halten.",
+     "p": [
+      "Mit 'noch' wird aus einem Urteil ein Schritt auf dem Weg.",
+      "Es erinnert dich daran, dass du noch lernst.",
+      "Verbinde 'noch' mit einem nächsten kleinen Schritt, damit es echt wird."
+     ],
+     "q": "Was kannst du noch nicht, würdest es aber gern können?",
+     "c": "Sprich laut aus: 'Ich kann ... noch nicht, und mein nächster Schritt ist ...'."
+    },
+    "es": {
+     "t": "La palabra 'todavía'",
+     "g": "Decir 'todavía no puedo hacerlo' para dejar la puerta abierta al progreso.",
+     "p": [
+      "Añadir 'todavía' convierte un veredicto en un paso del camino.",
+      "Te recuerda que sigues aprendiendo.",
+      "Une 'todavía' a una próxima acción pequeña para hacerlo real."
+     ],
+     "q": "¿Qué cosa no puedes hacer todavía pero te gustaría?",
+     "c": "Termina en voz alta: 'Todavía no puedo ..., y mi próximo paso es ...'."
+    },
+    "fr": {
+     "t": "Le mot 'encore'",
+     "g": "Dire 'je n'y arrive pas encore' pour laisser la porte ouverte au progrès.",
+     "p": [
+      "Ajouter 'encore' transforme un verdict en étape du chemin.",
+      "Cela rappelle que tu es encore en train d'apprendre.",
+      "Associe 'encore' à une prochaine petite action pour que ce soit concret."
+     ],
+     "q": "Que ne sais-tu pas encore faire mais aimerais savoir ?",
+     "c": "Complète à voix haute : 'Je ne sais pas encore ..., et mon prochain pas est ...'."
+    },
+    "it": {
+     "t": "La parola 'ancora'",
+     "g": "Dire 'non ci riesco ancora' per lasciare la porta aperta al progresso.",
+     "p": [
+      "Aggiungere 'ancora' trasforma un verdetto in un passo del cammino.",
+      "Ti ricorda che stai ancora imparando.",
+      "Unisci 'ancora' a una prossima piccola azione per renderlo concreto."
+     ],
+     "q": "Cosa non sai fare ancora ma vorresti?",
+     "c": "Completa ad alta voce: 'Non so ancora ..., e il mio prossimo passo è ...'."
+    },
+    "pt": {
+     "t": "A palavra 'ainda'",
+     "g": "Dizer 'ainda não consigo' para deixar a porta aberta ao progresso.",
+     "p": [
+      "Juntar 'ainda' transforma um veredicto num passo do caminho.",
+      "Lembra-te de que ainda estás a aprender.",
+      "Une 'ainda' a uma próxima pequena ação para o tornar real."
+     ],
+     "q": "O que ainda não consegues fazer mas gostavas?",
+     "c": "Completa em voz alta: 'Ainda não consigo ..., e o meu próximo passo é ...'."
+    },
+    "pt_BR": {
+     "t": "A palavra 'ainda'",
+     "g": "Dizer 'ainda não consigo' para deixar a porta aberta ao progresso.",
+     "p": [
+      "Acrescentar 'ainda' transforma um veredito em um passo do caminho.",
+      "Lembra você de que ainda está aprendendo.",
+      "Una 'ainda' a uma próxima pequena ação para torná-lo real."
+     ],
+     "q": "O que você ainda não consegue fazer, mas gostaria?",
+     "c": "Complete em voz alta: 'Ainda não consigo ..., e meu próximo passo é ...'."
+    }
+   }
+  }
+ ]
+}

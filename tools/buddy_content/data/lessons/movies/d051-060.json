@@ -1,0 +1,835 @@
+{
+ "topic": "movies",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Black and white cinematography",
+     "g": "Learn why black and white images can look so expressive.",
+     "p": [
+      "Without colour, shape, texture, light and shadow take centre stage.",
+      "Black and white was the norm for decades, and some filmmakers still choose it today.",
+      "Contrast between bright and dark can guide the eye and set a mood."
+     ],
+     "q": "Do you enjoy black and white films, or do they feel distant?",
+     "c": "Take a photo, turn it black and white, and note what you now notice most."
+    },
+    "de": {
+     "t": "Schwarzweiß-Kamerakunst",
+     "g": "Lerne, warum Schwarzweißbilder so ausdrucksstark wirken können.",
+     "p": [
+      "Ohne Farbe rücken Form, Textur, Licht und Schatten in den Vordergrund.",
+      "Schwarzweiß war jahrzehntelang die Norm, und manche wählen es bis heute.",
+      "Kontrast zwischen Hell und Dunkel kann den Blick lenken und Stimmung schaffen."
+     ],
+     "q": "Magst du Schwarzweißfilme, oder wirken sie fern?",
+     "c": "Mach ein Foto, wandle es in Schwarzweiß um und achte, was dir nun am meisten auffällt."
+    },
+    "es": {
+     "t": "Fotografía en blanco y negro",
+     "g": "Descubre por qué las imágenes en blanco y negro pueden ser tan expresivas.",
+     "p": [
+      "Sin color, la forma, la textura, la luz y la sombra pasan al primer plano.",
+      "El blanco y negro fue la norma durante décadas y algunos cineastas aún lo eligen.",
+      "El contraste entre claro y oscuro guía la vista y crea ambiente."
+     ],
+     "q": "¿Te gusta el cine en blanco y negro o te resulta lejano?",
+     "c": "Haz una foto, pásala a blanco y negro y anota qué notas más ahora."
+    },
+    "fr": {
+     "t": "La photographie en noir et blanc",
+     "g": "Apprends pourquoi le noir et blanc peut être si expressif.",
+     "p": [
+      "Sans couleur, formes, textures, lumière et ombre passent au premier plan.",
+      "Le noir et blanc fut la norme pendant des décennies et certains le choisissent encore.",
+      "Le contraste entre clair et sombre guide l'œil et crée l'ambiance."
+     ],
+     "q": "Aimes-tu les films en noir et blanc, ou te paraissent-ils lointains ?",
+     "c": "Prends une photo, passe-la en noir et blanc et note ce que tu remarques le plus."
+    },
+    "it": {
+     "t": "La fotografia in bianco e nero",
+     "g": "Scopri perché le immagini in bianco e nero possono essere così espressive.",
+     "p": [
+      "Senza colore, forma, texture, luce e ombra passano in primo piano.",
+      "Il bianco e nero fu la norma per decenni e alcuni registi lo scelgono ancora.",
+      "Il contrasto tra chiaro e scuro guida l'occhio e crea atmosfera."
+     ],
+     "q": "Ti piacciono i film in bianco e nero o li senti lontani?",
+     "c": "Scatta una foto, trasformala in bianco e nero e nota cosa ti colpisce di più ora."
+    },
+    "pt": {
+     "t": "A fotografia a preto e branco",
+     "g": "Descobre porque as imagens a preto e branco podem ser tão expressivas.",
+     "p": [
+      "Sem cor, forma, textura, luz e sombra passam para primeiro plano.",
+      "O preto e branco foi a norma durante décadas e alguns cineastas ainda o escolhem.",
+      "O contraste entre claro e escuro guia o olhar e cria ambiente."
+     ],
+     "q": "Gostas de filmes a preto e branco ou parecem-te distantes?",
+     "c": "Tira uma fotografia, passa-a a preto e branco e anota o que notas mais agora."
+    },
+    "pt_BR": {
+     "t": "A fotografia em preto e branco",
+     "g": "Descubra por que imagens em preto e branco podem ser tão expressivas.",
+     "p": [
+      "Sem cor, forma, textura, luz e sombra passam para o primeiro plano.",
+      "O preto e branco foi a norma por décadas e alguns cineastas ainda o escolhem.",
+      "O contraste entre claro e escuro guia o olhar e cria clima."
+     ],
+     "q": "Você gosta de filmes em preto e branco ou eles parecem distantes?",
+     "c": "Tire uma foto, passe para preto e branco e anote o que você nota mais agora."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The first colour films",
+     "g": "Trace hand-colouring, early processes and the arrival of Technicolor.",
+     "p": [
+      "Early films were sometimes tinted or painted by hand, frame by frame.",
+      "Stencil systems such as Pathécolor coloured films more efficiently.",
+      "Technicolor's three-colour process, from the 1930s, brought rich, full colour to Hollywood."
+     ],
+     "q": "What film would you most like to have seen in its first colour glory?",
+     "c": "Paint a black and white photo or drawing with just three colours."
+    },
+    "de": {
+     "t": "Die ersten Farbfilme",
+     "g": "Verfolge Handkolorierung, frühe Verfahren und die Ankunft von Technicolor.",
+     "p": [
+      "Frühe Filme wurden manchmal eingefärbt oder Bild für Bild von Hand bemalt.",
+      "Schablonenverfahren wie Pathécolor kolorierten Filme effizienter.",
+      "Technicolors Dreifarbenverfahren brachte ab den 1930ern satte, volle Farbe nach Hollywood."
+     ],
+     "q": "Welchen Film hättest du gern in seiner ersten Farbenpracht gesehen?",
+     "c": "Male ein Schwarzweißfoto oder eine Zeichnung mit nur drei Farben aus."
+    },
+    "es": {
+     "t": "Las primeras películas en color",
+     "g": "Sigue el coloreado a mano, los primeros procesos y la llegada del Technicolor.",
+     "p": [
+      "Las primeras películas a veces se teñían o pintaban a mano, fotograma a fotograma.",
+      "Sistemas de plantillas como Pathécolor coloreaban películas con más eficacia.",
+      "El proceso de tres colores del Technicolor, desde los años treinta, llevó color pleno a Hollywood."
+     ],
+     "q": "¿Qué película te gustaría haber visto en su primer esplendor en color?",
+     "c": "Pinta una foto o dibujo en blanco y negro con solo tres colores."
+    },
+    "fr": {
+     "t": "Les premiers films en couleur",
+     "g": "Suis le coloriage à la main, les premiers procédés et l'arrivée du Technicolor.",
+     "p": [
+      "Les premiers films étaient parfois teintés ou peints à la main, image par image.",
+      "Des procédés au pochoir comme Pathécolor coloraient les films plus efficacement.",
+      "Le procédé trichrome du Technicolor, dès les années 1930, apporta à Hollywood une couleur riche et complète."
+     ],
+     "q": "Quel film aimerais-tu avoir vu dans sa première splendeur en couleurs ?",
+     "c": "Colorie une photo ou un dessin en noir et blanc avec seulement trois couleurs."
+    },
+    "it": {
+     "t": "I primi film a colori",
+     "g": "Ripercorri la colorazione a mano, i primi processi e l'arrivo del Technicolor.",
+     "p": [
+      "I primi film erano a volte virati o dipinti a mano, fotogramma per fotogramma.",
+      "Sistemi a mascherina come Pathécolor coloravano i film in modo più efficiente.",
+      "Il processo a tre colori del Technicolor, dagli anni Trenta, portò a Hollywood un colore ricco e pieno."
+     ],
+     "q": "Quale film vorresti aver visto nel suo primo splendore a colori?",
+     "c": "Colora una foto o un disegno in bianco e nero con soli tre colori."
+    },
+    "pt": {
+     "t": "Os primeiros filmes a cores",
+     "g": "Segue a coloração à mão, os primeiros processos e a chegada do Technicolor.",
+     "p": [
+      "Os primeiros filmes eram por vezes tingidos ou pintados à mão, fotograma a fotograma.",
+      "Sistemas de estêncil como o Pathécolor coloriam os filmes com mais eficiência.",
+      "O processo de três cores do Technicolor, a partir dos anos 1930, trouxe cor rica e plena a Hollywood."
+     ],
+     "q": "Que filme gostarias de ter visto no seu primeiro esplendor a cores?",
+     "c": "Pinta uma fotografia ou desenho a preto e branco com apenas três cores."
+    },
+    "pt_BR": {
+     "t": "Os primeiros filmes coloridos",
+     "g": "Acompanhe a coloração à mão, os primeiros processos e a chegada do Technicolor.",
+     "p": [
+      "Os primeiros filmes às vezes eram tingidos ou pintados à mão, quadro a quadro.",
+      "Sistemas de estêncil como o Pathécolor coloriam os filmes com mais eficiência.",
+      "O processo de três cores do Technicolor, a partir dos anos 1930, trouxe cor rica e plena a Hollywood."
+     ],
+     "q": "Que filme você gostaria de ter visto no seu primeiro esplendor colorido?",
+     "c": "Pinte uma foto ou desenho em preto e branco com apenas três cores."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Movie palaces",
+     "g": "Step inside the grand cinemas of the 1920s and 1930s.",
+     "p": [
+      "Movie palaces were lavish theatres with chandeliers, velvet curtains and ornate ceilings.",
+      "Many had organs or orchestras and held thousands of seats.",
+      "Going to the pictures was an occasion, almost like a night at the theatre."
+     ],
+     "q": "What makes a cinema feel special to you?",
+     "c": "Visit or look up an old cinema in your area and note one beautiful detail."
+    },
+    "de": {
+     "t": "Filmpaläste",
+     "g": "Betritt die prachtvollen Kinos der 1920er und 1930er Jahre.",
+     "p": [
+      "Filmpaläste waren üppige Häuser mit Kronleuchtern, Samtvorhängen und verzierten Decken.",
+      "Viele hatten Orgeln oder Orchester und boten Tausende Plätze.",
+      "Ins Kino zu gehen war ein Ereignis, fast wie ein Theaterabend."
+     ],
+     "q": "Was macht ein Kino für dich besonders?",
+     "c": "Besuche ein altes Kino in deiner Gegend oder such eines heraus und notier ein schönes Detail."
+    },
+    "es": {
+     "t": "Los palacios del cine",
+     "g": "Entra en los grandes cines de los años veinte y treinta.",
+     "p": [
+      "Los palacios del cine eran teatros fastuosos con lámparas de araña, cortinas de terciopelo y techos ornamentados.",
+      "Muchos tenían órganos u orquestas y miles de butacas.",
+      "Ir al cine era un acontecimiento, casi como una noche de teatro."
+     ],
+     "q": "¿Qué hace especial a un cine para ti?",
+     "c": "Visita o busca un cine antiguo de tu zona y anota un detalle bello."
+    },
+    "fr": {
+     "t": "Les palaces du cinéma",
+     "g": "Entre dans les grandes salles des années 1920 et 1930.",
+     "p": [
+      "Les palaces du cinéma étaient des salles fastueuses aux lustres, rideaux de velours et plafonds ornés.",
+      "Beaucoup avaient orgue ou orchestre et des milliers de places.",
+      "Aller au cinéma était un événement, presque une soirée au théâtre."
+     ],
+     "q": "Qu'est-ce qui rend une salle de cinéma spéciale pour toi ?",
+     "c": "Visite ou cherche un vieux cinéma près de chez toi et note un beau détail."
+    },
+    "it": {
+     "t": "I palazzi del cinema",
+     "g": "Entra nelle grandi sale degli anni Venti e Trenta.",
+     "p": [
+      "I palazzi del cinema erano teatri sontuosi con lampadari, tendaggi di velluto e soffitti decorati.",
+      "Molti avevano organi o orchestre e migliaia di posti.",
+      "Andare al cinema era un evento, quasi una serata a teatro."
+     ],
+     "q": "Cosa rende speciale una sala per te?",
+     "c": "Visita o cerca un vecchio cinema della tua zona e annota un bel dettaglio."
+    },
+    "pt": {
+     "t": "Os palácios do cinema",
+     "g": "Entra nas grandes salas dos anos 1920 e 1930.",
+     "p": [
+      "Os palácios do cinema eram teatros sumptuosos com lustres, cortinas de veludo e tetos ornamentados.",
+      "Muitos tinham órgãos ou orquestras e milhares de lugares.",
+      "Ir ao cinema era um acontecimento, quase uma noite de teatro."
+     ],
+     "q": "O que torna uma sala de cinema especial para ti?",
+     "c": "Visita ou procura um cinema antigo da tua zona e anota um detalhe bonito."
+    },
+    "pt_BR": {
+     "t": "Os palácios do cinema",
+     "g": "Entre nos grandes cinemas dos anos 1920 e 1930.",
+     "p": [
+      "Os palácios do cinema eram teatros suntuosos com lustres, cortinas de veludo e tetos ornamentados.",
+      "Muitos tinham órgãos ou orquestras e milhares de lugares.",
+      "Ir ao cinema era um acontecimento, quase uma noite de teatro."
+     ],
+     "q": "O que torna uma sala de cinema especial para você?",
+     "c": "Visite ou pesquise um cinema antigo da sua cidade e anote um detalhe bonito."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The first Academy Awards",
+     "g": "Find out how the Oscars began in 1929 and what they celebrate.",
+     "p": [
+      "The first ceremony took place on 16 May 1929 at a private dinner in Hollywood.",
+      "Winners had been announced months earlier, and the event was short.",
+      "Wings, a silent aviation film, won the first top prize for outstanding picture."
+     ],
+     "q": "If you handed out an award, which film or craft would you honour?",
+     "c": "Create your own award category and pick a winner from your watchlist."
+    },
+    "de": {
+     "t": "Die ersten Academy Awards",
+     "g": "Erfahre, wie die Oscars 1929 begannen und was sie würdigen.",
+     "p": [
+      "Die erste Zeremonie fand am 16. Mai 1929 bei einem privaten Dinner in Hollywood statt.",
+      "Die Gewinner waren Monate vorher bekannt, und die Feier war kurz.",
+      "Wings, ein stummer Fliegerfilm, gewann den ersten Hauptpreis als herausragender Film."
+     ],
+     "q": "Wenn du einen Preis vergäbest, welchen Film oder welches Handwerk würdest du ehren?",
+     "c": "Erfinde eine eigene Preiskategorie und wähle einen Gewinner von deiner Filmliste."
+    },
+    "es": {
+     "t": "Los primeros premios de la Academia",
+     "g": "Descubre cómo empezaron los Óscar en 1929 y qué celebran.",
+     "p": [
+      "La primera ceremonia fue el 16 de mayo de 1929, en una cena privada en Hollywood.",
+      "Los ganadores se habían anunciado meses antes y el acto fue breve.",
+      "Alas, una película muda de aviación, ganó el primer gran premio a la mejor producción."
+     ],
+     "q": "Si entregaras un premio, ¿qué película u oficio honrarías?",
+     "c": "Crea tu propia categoría de premio y elige a un ganador de tu lista."
+    },
+    "fr": {
+     "t": "Les premiers Academy Awards",
+     "g": "Découvre comment les Oscars ont débuté en 1929 et ce qu'ils célèbrent.",
+     "p": [
+      "La première cérémonie eut lieu le 16 mai 1929, lors d'un dîner privé à Hollywood.",
+      "Les lauréats avaient été annoncés des mois plus tôt et la soirée fut brève.",
+      "Wings, film muet d'aviation, reçut le premier grand prix du meilleur film."
+     ],
+     "q": "Si tu remettais un prix, quel film ou quel métier honorerais-tu ?",
+     "c": "Invente ta propre catégorie de prix et choisis un lauréat dans ta liste."
+    },
+    "it": {
+     "t": "I primi Academy Awards",
+     "g": "Scopri come nacquero gli Oscar nel 1929 e cosa celebrano.",
+     "p": [
+      "La prima cerimonia si tenne il 16 maggio 1929 durante una cena privata a Hollywood.",
+      "I vincitori erano stati annunciati mesi prima e la serata fu breve.",
+      "Wings, film muto sull'aviazione, vinse il primo premio principale come miglior film."
+     ],
+     "q": "Se assegnassi un premio, quale film o mestiere onoreresti?",
+     "c": "Inventa una tua categoria di premio e scegli un vincitore dalla tua lista."
+    },
+    "pt": {
+     "t": "Os primeiros prémios da Academia",
+     "g": "Descobre como os Óscares começaram em 1929 e o que celebram.",
+     "p": [
+      "A primeira cerimónia foi a 16 de maio de 1929, num jantar privado em Hollywood.",
+      "Os vencedores tinham sido anunciados meses antes e o evento foi curto.",
+      "Wings, um filme mudo de aviação, ganhou o primeiro grande prémio de melhor filme."
+     ],
+     "q": "Se entregasses um prémio, que filme ou ofício homenagearias?",
+     "c": "Cria a tua própria categoria de prémio e escolhe um vencedor da tua lista."
+    },
+    "pt_BR": {
+     "t": "Os primeiros prêmios da Academia",
+     "g": "Descubra como o Oscar começou em 1929 e o que ele celebra.",
+     "p": [
+      "A primeira cerimônia foi em 16 de maio de 1929, num jantar privado em Hollywood.",
+      "Os vencedores tinham sido anunciados meses antes e o evento foi curto.",
+      "Wings, um filme mudo de aviação, ganhou o primeiro grande prêmio de melhor filme."
+     ],
+     "q": "Se você entregasse um prêmio, que filme ou ofício homenagearia?",
+     "c": "Crie sua própria categoria de prêmio e escolha um vencedor da sua lista."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Early cinema around the world",
+     "g": "Visit film beginnings in France, India, Japan and beyond.",
+     "p": [
+      "In India, Dadasaheb Phalke made Raja Harishchandra in 1913, often called the first Indian feature.",
+      "In Japan, live narrators called benshi told and voiced silent films for audiences.",
+      "Filmmakers in Brazil, Argentina, China and many other countries soon made their own films."
+     ],
+     "q": "Which country's cinema would you like to explore first?",
+     "c": "Pick one country from today and find the title of one of its classic films."
+    },
+    "de": {
+     "t": "Frühes Kino weltweit",
+     "g": "Besuche die Anfänge des Films in Frankreich, Indien, Japan und darüber hinaus.",
+     "p": [
+      "In Indien drehte Dadasaheb Phalke 1913 Raja Harishchandra, oft als erster indischer Spielfilm bezeichnet.",
+      "In Japan erzählten Live-Sprecher, Benshi genannt, Stummfilme und liehen ihnen Stimme.",
+      "Filmemacher in Brasilien, Argentinien, China und vielen Ländern drehten bald eigene Filme."
+     ],
+     "q": "Das Kino welchen Landes möchtest du zuerst erkunden?",
+     "c": "Wähl ein Land von heute und finde den Titel eines seiner klassischen Filme."
+    },
+    "es": {
+     "t": "El cine temprano en el mundo",
+     "g": "Visita los inicios del cine en Francia, India, Japón y más allá.",
+     "p": [
+      "En la India, Dadasaheb Phalke hizo Raja Harishchandra en 1913, a menudo llamada el primer largometraje indio.",
+      "En Japón, narradores en vivo llamados benshi contaban y doblaban las películas mudas.",
+      "Cineastas de Brasil, Argentina, China y muchos países pronto hicieron sus propias películas."
+     ],
+     "q": "¿El cine de qué país te gustaría explorar primero?",
+     "c": "Elige un país de hoy y busca el título de una de sus películas clásicas."
+    },
+    "fr": {
+     "t": "Les débuts du cinéma dans le monde",
+     "g": "Visite les débuts du cinéma en France, en Inde, au Japon et ailleurs.",
+     "p": [
+      "En Inde, Dadasaheb Phalke réalisa Raja Harishchandra en 1913, souvent citée comme le premier long métrage indien.",
+      "Au Japon, des narrateurs en direct, les benshi, racontaient et doublaient les films muets.",
+      "Des cinéastes au Brésil, en Argentine, en Chine et ailleurs firent vite leurs propres films."
+     ],
+     "q": "Le cinéma de quel pays aimerais-tu explorer d'abord ?",
+     "c": "Choisis un pays du jour et trouve le titre d'un de ses films classiques."
+    },
+    "it": {
+     "t": "Il primo cinema nel mondo",
+     "g": "Visita gli inizi del cinema in Francia, India, Giappone e oltre.",
+     "p": [
+      "In India Dadasaheb Phalke girò Raja Harishchandra nel 1913, spesso detto il primo lungometraggio indiano.",
+      "In Giappone narratori dal vivo, i benshi, raccontavano e doppiavano i film muti.",
+      "Registi in Brasile, Argentina, Cina e molti altri paesi fecero presto i propri film."
+     ],
+     "q": "Il cinema di quale paese vorresti esplorare per primo?",
+     "c": "Scegli un paese di oggi e trova il titolo di un suo film classico."
+    },
+    "pt": {
+     "t": "O cinema inicial pelo mundo",
+     "g": "Visita os inícios do cinema em França, Índia, Japão e além.",
+     "p": [
+      "Na Índia, Dadasaheb Phalke fez Raja Harishchandra em 1913, muitas vezes chamado o primeiro longa-metragem indiano.",
+      "No Japão, narradores ao vivo, os benshi, contavam e davam voz aos filmes mudos.",
+      "Cineastas no Brasil, na Argentina, na China e em muitos países fizeram depressa os seus filmes."
+     ],
+     "q": "O cinema de que país gostarias de explorar primeiro?",
+     "c": "Escolhe um país de hoje e descobre o título de um dos seus filmes clássicos."
+    },
+    "pt_BR": {
+     "t": "O cinema inicial pelo mundo",
+     "g": "Visite os começos do cinema na França, Índia, Japão e além.",
+     "p": [
+      "Na Índia, Dadasaheb Phalke fez Raja Harishchandra em 1913, muitas vezes chamado de primeiro longa indiano.",
+      "No Japão, narradores ao vivo, os benshi, contavam e davam voz aos filmes mudos.",
+      "Cineastas no Brasil, na Argentina, na China e em muitos países logo fizeram seus filmes."
+     ],
+     "q": "O cinema de que país você gostaria de explorar primeiro?",
+     "c": "Escolha um país de hoje e descubra o título de um de seus filmes clássicos."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Silent classics worth watching",
+     "g": "Get a beginner-friendly list of silent films to explore.",
+     "p": [
+      "Try Chaplin's The Kid and Keaton's Sherlock Jr. for comedy with heart.",
+      "Harold Lloyd's Safety Last! and Méliès's A Trip to the Moon are short and thrilling.",
+      "Murnau's Sunrise and Vertov's Man with a Movie Camera show how daring silent art could be."
+     ],
+     "q": "Which silent title will you try first?",
+     "c": "Pick one silent film from the list and schedule when you will watch it."
+    },
+    "de": {
+     "t": "Stummfilmklassiker zum Entdecken",
+     "g": "Erhalte eine einsteigerfreundliche Liste von Stummfilmen.",
+     "p": [
+      "Probier Chaplins The Kid und Keatons Sherlock Jr. für Komik mit Herz.",
+      "Harold Lloyds Safety Last! und Méliès' Die Reise zum Mond sind kurz und mitreißend.",
+      "Murnaus Sunrise und Vertovs Der Mann mit der Kamera zeigen, wie kühn Stummfilmkunst sein konnte."
+     ],
+     "q": "Welchen Stummfilmtitel probierst du zuerst?",
+     "c": "Wähl einen Stummfilm aus der Liste und plane, wann du ihn siehst."
+    },
+    "es": {
+     "t": "Clásicos mudos que merece la pena ver",
+     "g": "Consigue una lista para principiantes de películas mudas.",
+     "p": [
+      "Prueba El chico de Chaplin y El moderno Sherlock Holmes de Keaton para reír con ternura.",
+      "El hombre mosca de Lloyd y Viaje a la Luna de Méliès son breves y emocionantes.",
+      "Amanecer de Murnau y El hombre de la cámara de Vertov muestran lo audaz que fue el arte mudo."
+     ],
+     "q": "¿Qué título mudo probarás primero?",
+     "c": "Elige una película muda de la lista y fija cuándo la verás."
+    },
+    "fr": {
+     "t": "Classiques du muet à voir",
+     "g": "Obtiens une liste de films muets pour débuter.",
+     "p": [
+      "Essaie Le Kid de Chaplin et Sherlock Junior de Keaton pour rire avec tendresse.",
+      "Monte là-dessus de Lloyd et Le Voyage dans la Lune de Méliès sont courts et palpitants.",
+      "L'Aurore de Murnau et L'Homme à la caméra de Vertov montrent l'audace de l'art muet."
+     ],
+     "q": "Quel titre muet essaieras-tu d'abord ?",
+     "c": "Choisis un film muet de la liste et planifie quand le voir."
+    },
+    "it": {
+     "t": "Classici del muto da vedere",
+     "g": "Ricevi una lista adatta ai principianti di film muti.",
+     "p": [
+      "Prova Il monello di Chaplin e Sherlock Jr. di Keaton per ridere con il cuore.",
+      "Preferisco l'ascensore di Lloyd e Viaggio nella Luna di Méliès sono brevi ed emozionanti.",
+      "Aurora di Murnau e L'uomo con la macchina da presa di Vertov mostrano quanto fosse audace l'arte muta."
+     ],
+     "q": "Quale titolo muto proverai per primo?",
+     "c": "Scegli un film muto dalla lista e fissa quando lo vedrai."
+    },
+    "pt": {
+     "t": "Clássicos mudos que vale a pena ver",
+     "g": "Recebe uma lista para principiantes de filmes mudos.",
+     "p": [
+      "Experimenta O Miúdo de Chaplin e Sherlock Jr. de Keaton para rir com ternura.",
+      "Safety Last! de Lloyd e Viagem à Lua de Méliès são curtos e vibrantes.",
+      "Aurora de Murnau e O Homem da Câmara de Filmar de Vertov mostram quão ousada era a arte muda."
+     ],
+     "q": "Que título mudo vais experimentar primeiro?",
+     "c": "Escolhe um filme mudo da lista e marca quando o vais ver."
+    },
+    "pt_BR": {
+     "t": "Clássicos mudos que valem a pena",
+     "g": "Receba uma lista para iniciantes de filmes mudos.",
+     "p": [
+      "Experimente O Garoto de Chaplin e Sherlock Jr. de Keaton para rir com ternura.",
+      "Safety Last! de Lloyd e Viagem à Lua de Méliès são curtos e vibrantes.",
+      "Aurora de Murnau e Um Homem com uma Câmera de Vertov mostram como a arte muda era ousada."
+     ],
+     "q": "Que título mudo você vai experimentar primeiro?",
+     "c": "Escolha um filme mudo da lista e marque quando vai assistir."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Restoring old films",
+     "g": "Learn how archives save and restore fragile early films.",
+     "p": [
+      "Early film stock was fragile, and many films were lost over time.",
+      "Archivists clean, repair and store film in cool, controlled conditions.",
+      "Today old films are often scanned digitally to preserve and share them."
+     ],
+     "q": "Why do you think saving old films matters?",
+     "c": "Look up one restored film and read what was repaired."
+    },
+    "de": {
+     "t": "Alte Filme restaurieren",
+     "g": "Lerne, wie Archive zerbrechliche frühe Filme retten und restaurieren.",
+     "p": [
+      "Frühes Filmmaterial war empfindlich, und viele Filme gingen mit der Zeit verloren.",
+      "Archivare reinigen, reparieren und lagern Film unter kühlen, kontrollierten Bedingungen.",
+      "Heute werden alte Filme oft digital gescannt, um sie zu bewahren und zu teilen."
+     ],
+     "q": "Warum, glaubst du, ist es wichtig, alte Filme zu retten?",
+     "c": "Such einen restaurierten Film heraus und lies nach, was repariert wurde."
+    },
+    "es": {
+     "t": "Restaurar películas antiguas",
+     "g": "Aprende cómo los archivos salvan y restauran películas tempranas frágiles.",
+     "p": [
+      "El soporte de las primeras películas era frágil y muchas se perdieron con el tiempo.",
+      "Los archiveros limpian, reparan y guardan las películas en condiciones frescas y controladas.",
+      "Hoy las películas antiguas suelen digitalizarse para conservarlas y compartirlas."
+     ],
+     "q": "¿Por qué crees que importa salvar películas antiguas?",
+     "c": "Busca una película restaurada y lee qué se reparó."
+    },
+    "fr": {
+     "t": "Restaurer les vieux films",
+     "g": "Apprends comment les archives sauvent et restaurent les films fragiles des débuts.",
+     "p": [
+      "La pellicule ancienne était fragile et beaucoup de films ont disparu avec le temps.",
+      "Les archivistes nettoient, réparent et conservent les films dans des conditions fraîches et contrôlées.",
+      "Aujourd'hui, on numérise souvent les vieux films pour les préserver et les partager."
+     ],
+     "q": "Pourquoi sauver les vieux films compte-t-il, selon toi ?",
+     "c": "Cherche un film restauré et lis ce qui a été réparé."
+    },
+    "it": {
+     "t": "Restaurare i vecchi film",
+     "g": "Scopri come gli archivi salvano e restaurano film fragili delle origini.",
+     "p": [
+      "La pellicola dei primi tempi era fragile e molti film andarono perduti.",
+      "Gli archivisti puliscono, riparano e conservano i film in condizioni fresche e controllate.",
+      "Oggi i vecchi film vengono spesso scansionati in digitale per conservarli e condividerli."
+     ],
+     "q": "Perché secondo te salvare i vecchi film è importante?",
+     "c": "Cerca un film restaurato e leggi cosa è stato riparato."
+    },
+    "pt": {
+     "t": "Restaurar filmes antigos",
+     "g": "Aprende como os arquivos salvam e restauram filmes frágeis dos primórdios.",
+     "p": [
+      "O suporte dos primeiros filmes era frágil e muitos perderam-se com o tempo.",
+      "Os arquivistas limpam, reparam e guardam os filmes em condições frescas e controladas.",
+      "Hoje os filmes antigos são muitas vezes digitalizados para os preservar e partilhar."
+     ],
+     "q": "Porque achas que salvar filmes antigos importa?",
+     "c": "Procura um filme restaurado e lê o que foi reparado."
+    },
+    "pt_BR": {
+     "t": "Restaurando filmes antigos",
+     "g": "Aprenda como os arquivos salvam e restauram filmes frágeis dos primórdios.",
+     "p": [
+      "O suporte dos primeiros filmes era frágil e muitos se perderam com o tempo.",
+      "Arquivistas limpam, reparam e guardam os filmes em condições frescas e controladas.",
+      "Hoje os filmes antigos costumam ser digitalizados para preservar e compartilhar."
+     ],
+     "q": "Por que você acha que salvar filmes antigos importa?",
+     "c": "Procure um filme restaurado e leia o que foi consertado."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How film stock works",
+     "g": "Understand celluloid, frames per second and the basics of projection.",
+     "p": [
+      "Film is a long strip of flexible plastic coated with light-sensitive material.",
+      "It runs through a camera and projector as a series of still frames, 24 per second in sound cinema.",
+      "A shutter blocks the light while each new frame moves into place."
+     ],
+     "q": "Have you ever seen a strip of real film up close?",
+     "c": "Hold a photo slide or negative strip to the light and look at its frames."
+    },
+    "de": {
+     "t": "Wie Filmmaterial funktioniert",
+     "g": "Verstehe Zelluloid, Bilder pro Sekunde und die Grundlagen der Projektion.",
+     "p": [
+      "Film ist ein langer Streifen flexiblen Kunststoffs mit lichtempfindlicher Beschichtung.",
+      "Er läuft als Folge von Einzelbildern durch Kamera und Projektor, im Tonfilm 24 pro Sekunde.",
+      "Eine Blende sperrt das Licht, während jedes neue Bild in Position rückt."
+     ],
+     "q": "Hast du je einen echten Filmstreifen aus der Nähe gesehen?",
+     "c": "Halte ein Dia oder einen Negativstreifen gegen das Licht und betrachte die Einzelbilder."
+    },
+    "es": {
+     "t": "Cómo funciona la película fotográfica",
+     "g": "Entiende el celuloide, los fotogramas por segundo y lo básico de la proyección.",
+     "p": [
+      "La película es una larga tira de plástico flexible con una capa sensible a la luz.",
+      "Pasa por la cámara y el proyector como una serie de imágenes fijas, 24 por segundo en el cine sonoro.",
+      "Un obturador bloquea la luz mientras cada nuevo fotograma se coloca en su sitio."
+     ],
+     "q": "¿Has visto alguna vez de cerca una tira de película real?",
+     "c": "Sostén una diapositiva o tira de negativos a la luz y mira sus fotogramas."
+    },
+    "fr": {
+     "t": "Comment fonctionne la pellicule",
+     "g": "Comprends le celluloïd, les images par seconde et les bases de la projection.",
+     "p": [
+      "Le film est une longue bande de plastique souple recouverte d'une couche sensible à la lumière.",
+      "Il défile dans la caméra et le projecteur en images fixes, 24 par seconde au cinéma parlant.",
+      "Un obturateur coupe la lumière pendant que chaque nouvelle image se met en place."
+     ],
+     "q": "As-tu déjà vu de près une bande de vrai film ?",
+     "c": "Tiens une diapositive ou une bande de négatifs à la lumière et regarde ses images."
+    },
+    "it": {
+     "t": "Come funziona la pellicola",
+     "g": "Capisci il celluloide, i fotogrammi al secondo e le basi della proiezione.",
+     "p": [
+      "La pellicola è una lunga striscia di plastica flessibile con uno strato sensibile alla luce.",
+      "Scorre in macchina da presa e proiettore come serie di fotogrammi fissi, 24 al secondo nel sonoro.",
+      "Un otturatore blocca la luce mentre ogni nuovo fotogramma va in posizione."
+     ],
+     "q": "Hai mai visto da vicino una striscia di vera pellicola?",
+     "c": "Tieni una diapositiva o una striscia di negativi controluce e guarda i fotogrammi."
+    },
+    "pt": {
+     "t": "Como funciona a película",
+     "g": "Percebe o celuloide, os fotogramas por segundo e o básico da projeção.",
+     "p": [
+      "A película é uma longa tira de plástico flexível com uma camada sensível à luz.",
+      "Passa pela câmara e pelo projetor como uma série de imagens fixas, 24 por segundo no cinema sonoro.",
+      "Um obturador bloqueia a luz enquanto cada novo fotograma se posiciona."
+     ],
+     "q": "Já viste de perto uma tira de película verdadeira?",
+     "c": "Segura um diapositivo ou tira de negativos contra a luz e olha para os fotogramas."
+    },
+    "pt_BR": {
+     "t": "Como funciona o filme fotográfico",
+     "g": "Entenda o celuloide, os quadros por segundo e o básico da projeção.",
+     "p": [
+      "O filme é uma longa tira de plástico flexível com uma camada sensível à luz.",
+      "Passa pela câmera e pelo projetor como uma série de imagens paradas, 24 por segundo no cinema sonoro.",
+      "Um obturador bloqueia a luz enquanto cada novo quadro se posiciona."
+     ],
+     "q": "Você já viu de perto uma tira de filme de verdade?",
+     "c": "Segure um slide ou tira de negativos contra a luz e olhe os quadros."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Watching a silent film today",
+     "g": "Get tips to enjoy silent films with a modern eye.",
+     "p": [
+      "Choose a restored version with a good musical score and watch without distractions.",
+      "Give yourself ten minutes to adjust to the pace and the expressive acting.",
+      "Watch faces, hands and objects: that is where the story lives."
+     ],
+     "q": "What would help you settle into an older film?",
+     "c": "Watch ten minutes of a silent film without your phone and note what you noticed."
+    },
+    "de": {
+     "t": "Heute einen Stummfilm sehen",
+     "g": "Erhalte Tipps, Stummfilme mit heutigem Blick zu genießen.",
+     "p": [
+      "Wähl eine restaurierte Fassung mit guter Musik und sieh ohne Ablenkung.",
+      "Gib dir zehn Minuten, dich an Tempo und ausdrucksstarkes Spiel zu gewöhnen.",
+      "Achte auf Gesichter, Hände und Gegenstände: Dort lebt die Geschichte."
+     ],
+     "q": "Was würde dir helfen, in einen älteren Film hineinzufinden?",
+     "c": "Sieh zehn Minuten eines Stummfilms ohne Handy und notier, was dir auffiel."
+    },
+    "es": {
+     "t": "Ver cine mudo hoy",
+     "g": "Recibe consejos para disfrutar del cine mudo con mirada actual.",
+     "p": [
+      "Elige una versión restaurada con buena música y mira sin distracciones.",
+      "Date diez minutos para adaptarte al ritmo y a la actuación expresiva.",
+      "Fíjate en rostros, manos y objetos: ahí vive la historia."
+     ],
+     "q": "¿Qué te ayudaría a meterte en una película antigua?",
+     "c": "Mira diez minutos de cine mudo sin móvil y anota qué notaste."
+    },
+    "fr": {
+     "t": "Regarder un film muet aujourd'hui",
+     "g": "Reçois des conseils pour savourer le muet avec un regard moderne.",
+     "p": [
+      "Choisis une version restaurée avec une bonne partition et regarde sans distraction.",
+      "Accorde-toi dix minutes pour t'adapter au rythme et au jeu expressif.",
+      "Observe visages, mains et objets : c'est là que vit l'histoire."
+     ],
+     "q": "Qu'est-ce qui t'aiderait à entrer dans un film ancien ?",
+     "c": "Regarde dix minutes de muet sans téléphone et note ce que tu as remarqué."
+    },
+    "it": {
+     "t": "Guardare un film muto oggi",
+     "g": "Ricevi consigli per godere del muto con uno sguardo moderno.",
+     "p": [
+      "Scegli una versione restaurata con una buona colonna sonora e guarda senza distrazioni.",
+      "Concediti dieci minuti per abituarti al ritmo e alla recitazione espressiva.",
+      "Osserva volti, mani e oggetti: è lì che vive la storia."
+     ],
+     "q": "Cosa ti aiuterebbe a entrare in un film d'epoca?",
+     "c": "Guarda dieci minuti di muto senza telefono e annota cosa hai notato."
+    },
+    "pt": {
+     "t": "Ver um filme mudo hoje",
+     "g": "Recebe dicas para apreciar o cinema mudo com um olhar atual.",
+     "p": [
+      "Escolhe uma versão restaurada com boa música e vê sem distrações.",
+      "Dá-te dez minutos para te adaptares ao ritmo e à representação expressiva.",
+      "Observa rostos, mãos e objetos: é aí que vive a história."
+     ],
+     "q": "O que te ajudaria a entrar num filme antigo?",
+     "c": "Vê dez minutos de um filme mudo sem telemóvel e anota o que notaste."
+    },
+    "pt_BR": {
+     "t": "Assistindo a um filme mudo hoje",
+     "g": "Receba dicas para curtir o cinema mudo com um olhar atual.",
+     "p": [
+      "Escolha uma versão restaurada com boa música e assista sem distrações.",
+      "Dê a si dez minutos para se adaptar ao ritmo e à atuação expressiva.",
+      "Observe rostos, mãos e objetos: é ali que vive a história."
+     ],
+     "q": "O que ajudaria você a entrar num filme antigo?",
+     "c": "Assista a dez minutos de um filme mudo sem celular e anote o que notou."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: early cinema",
+     "g": "Recap cinema's first decades from Lumière to sound.",
+     "p": [
+      "The Lumières and Méliès showed cinema as record and as magic.",
+      "Chaplin, Keaton and Lloyd made silent comedy an art; Expressionism and montage showed film language.",
+      "Hollywood grew, sound arrived in 1927, and colour and animation developed soon after."
+     ],
+     "q": "Which early film or filmmaker will you explore next?",
+     "c": "Choose one early film from this month and watch ten minutes this week."
+    },
+    "de": {
+     "t": "Rückblick: Das frühe Kino",
+     "g": "Wiederhole die ersten Jahrzehnte des Kinos von Lumière bis zum Ton.",
+     "p": [
+      "Die Lumières und Méliès zeigten Kino als Aufzeichnung und als Zauber.",
+      "Chaplin, Keaton und Lloyd machten Stummfilmkomik zur Kunst; Expressionismus und Montage zeigten Filmsprache.",
+      "Hollywood wuchs, 1927 kam der Ton, Farbe und Animation entwickelten sich bald danach."
+     ],
+     "q": "Welchen frühen Film oder Filmemacher erkundest du als Nächstes?",
+     "c": "Wähl einen frühen Film aus diesem Monat und sieh diese Woche zehn Minuten davon."
+    },
+    "es": {
+     "t": "Repaso: el cine primitivo",
+     "g": "Repasa las primeras décadas del cine, de los Lumière al sonoro.",
+     "p": [
+      "Los Lumière y Méliès mostraron el cine como registro y como magia.",
+      "Chaplin, Keaton y Lloyd hicieron arte de la comedia muda; el expresionismo y el montaje revelaron el lenguaje del cine.",
+      "Hollywood creció, en 1927 llegó el sonido y poco después se desarrollaron el color y la animación."
+     ],
+     "q": "¿Qué película o cineasta temprano explorarás ahora?",
+     "c": "Elige una película temprana de este mes y mira diez minutos esta semana."
+    },
+    "fr": {
+     "t": "Révision : les débuts du cinéma",
+     "g": "Reprends les premières décennies du cinéma, des Lumière au parlant.",
+     "p": [
+      "Les Lumière et Méliès ont montré le cinéma comme témoignage et comme magie.",
+      "Chaplin, Keaton et Lloyd firent du burlesque muet un art ; expressionnisme et montage révélèrent le langage du film.",
+      "Hollywood a grandi, le son est arrivé en 1927, puis couleur et animation se sont développées."
+     ],
+     "q": "Quel film ou cinéaste des origines vas-tu explorer ensuite ?",
+     "c": "Choisis un film ancien de ce mois et regardes-en dix minutes cette semaine."
+    },
+    "it": {
+     "t": "Ripasso: il cinema delle origini",
+     "g": "Ripassa i primi decenni del cinema, dai Lumière al sonoro.",
+     "p": [
+      "I Lumière e Méliès mostrarono il cinema come documento e come magia.",
+      "Chaplin, Keaton e Lloyd fecero del muto comico un'arte; espressionismo e montaggio rivelarono il linguaggio del film.",
+      "Hollywood crebbe, nel 1927 arrivò il sonoro e presto si svilupparono colore e animazione."
+     ],
+     "q": "Quale film o regista delle origini esplorerai ora?",
+     "c": "Scegli un film d'epoca di questo mese e guardane dieci minuti questa settimana."
+    },
+    "pt": {
+     "t": "Revisão: o cinema dos primórdios",
+     "g": "Revê as primeiras décadas do cinema, dos Lumière ao sonoro.",
+     "p": [
+      "Os Lumière e Méliès mostraram o cinema como registo e como magia.",
+      "Chaplin, Keaton e Lloyd fizeram da comédia muda uma arte; expressionismo e montagem revelaram a linguagem do filme.",
+      "Hollywood cresceu, em 1927 chegou o som e pouco depois desenvolveram-se a cor e a animação."
+     ],
+     "q": "Que filme ou cineasta dos primórdios vais explorar a seguir?",
+     "c": "Escolhe um filme antigo deste mês e vê dez minutos esta semana."
+    },
+    "pt_BR": {
+     "t": "Revisão: o cinema dos primórdios",
+     "g": "Revise as primeiras décadas do cinema, dos Lumière ao sonoro.",
+     "p": [
+      "Os Lumière e Méliès mostraram o cinema como registro e como magia.",
+      "Chaplin, Keaton e Lloyd fizeram da comédia muda uma arte; expressionismo e montagem revelaram a linguagem do cinema.",
+      "Hollywood cresceu, em 1927 chegou o som e logo depois se desenvolveram a cor e a animação."
+     ],
+     "q": "Que filme ou cineasta dos primórdios você vai explorar agora?",
+     "c": "Escolha um filme antigo deste mês e assista a dez minutos nesta semana."
+    }
+   }
+  }
+ ]
+}

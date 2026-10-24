@@ -1,0 +1,835 @@
+{
+ "topic": "podcasts",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Live podcast recordings",
+     "g": "Find out what happens when a show records on stage.",
+     "p": [
+      "A live audience adds laughter, energy and surprises you can hear.",
+      "Hosts adapt to the room, so no two live shows are the same.",
+      "Recordings let people who were not there enjoy the moment later."
+     ],
+     "q": "Would you like to sit in an audience for a live recording?",
+     "c": "Listen to a live recording and notice how the audience changes the mood."
+    },
+    "de": {
+     "t": "Live-Aufnahmen von Podcasts",
+     "g": "Erfahren, was passiert, wenn eine Sendung auf der Bühne aufgenommen wird.",
+     "p": [
+      "Live-Publikum bringt hörbares Lachen, Energie und Überraschungen.",
+      "Moderierende passen sich dem Saal an, daher gleicht keine Live-Show der anderen.",
+      "Mitschnitte lassen auch Abwesende den Moment später genießen."
+     ],
+     "q": "Würdest du gern im Publikum einer Live-Aufnahme sitzen?",
+     "c": "Höre eine Live-Aufnahme und achte darauf, wie das Publikum die Stimmung verändert."
+    },
+    "es": {
+     "t": "Grabaciones de pódcast en directo",
+     "g": "Descubrir qué pasa cuando un programa se graba sobre un escenario.",
+     "p": [
+      "El público añade risas, energía y sorpresas que se oyen.",
+      "Los presentadores se adaptan a la sala, así que ningún directo es igual.",
+      "Las grabaciones dejan que quien no estuvo disfrute el momento después."
+     ],
+     "q": "¿Te gustaría estar entre el público de una grabación en directo?",
+     "c": "Escucha una grabación en directo y fíjate en cómo el público cambia el ambiente."
+    },
+    "fr": {
+     "t": "Les enregistrements de podcasts en public",
+     "g": "Découvrir ce qui se passe quand une émission s'enregistre sur scène.",
+     "p": [
+      "Le public ajoute rires, énergie et surprises que l'on entend.",
+      "Les animateurs s'adaptent à la salle : aucun direct ne ressemble à un autre.",
+      "Les enregistrements permettent à ceux qui n'y étaient pas d'en profiter plus tard."
+     ],
+     "q": "Aimerais-tu faire partie du public d'un enregistrement en direct ?",
+     "c": "Écoute un enregistrement public et remarque comment le public change l'ambiance."
+    },
+    "it": {
+     "t": "Registrazioni dal vivo dei podcast",
+     "g": "Scoprire cosa succede quando un programma si registra sul palco.",
+     "p": [
+      "Il pubblico aggiunge risate, energia e sorprese che si sentono.",
+      "I conduttori si adattano alla sala, quindi nessuna serata è uguale a un'altra.",
+      "Le registrazioni permettono a chi non c'era di godersi il momento dopo."
+     ],
+     "q": "Ti piacerebbe stare nel pubblico di una registrazione dal vivo?",
+     "c": "Ascolta una registrazione dal vivo e nota come il pubblico cambia l'atmosfera."
+    },
+    "pt": {
+     "t": "Gravações de podcasts ao vivo",
+     "g": "Descobrir o que acontece quando um programa é gravado num palco.",
+     "p": [
+      "O público acrescenta risos, energia e surpresas que se ouvem.",
+      "Os apresentadores adaptam-se à sala, por isso nenhum espetáculo é igual.",
+      "As gravações deixam quem não esteve lá apreciar o momento mais tarde."
+     ],
+     "q": "Gostarias de estar na plateia de uma gravação ao vivo?",
+     "c": "Ouve uma gravação ao vivo e repara como o público muda o ambiente."
+    },
+    "pt_BR": {
+     "t": "Gravações de podcasts ao vivo",
+     "g": "Descobrir o que acontece quando um programa é gravado num palco.",
+     "p": [
+      "O público acrescenta risos, energia e surpresas que dá para ouvir.",
+      "Os apresentadores se adaptam à sala, então nenhuma apresentação é igual.",
+      "As gravações deixam quem não esteve lá curtir o momento depois."
+     ],
+     "q": "Você gostaria de estar na plateia de uma gravação ao vivo?",
+     "c": "Ouça uma gravação ao vivo e repare como o público muda o clima."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Podcast trailers",
+     "g": "See how a short trailer sells a show in under two minutes.",
+     "p": [
+      "A trailer states the topic, the voices and the promise of the show.",
+      "It uses the best moments, music and a clear invitation to listen.",
+      "Short and honest beats long and vague."
+     ],
+     "q": "What would you put in a one-minute trailer for a show you love?",
+     "c": "Listen to a trailer and note what it promises in one line."
+    },
+    "de": {
+     "t": "Podcast-Trailer",
+     "g": "Sehen, wie ein kurzer Trailer eine Sendung in unter zwei Minuten verkauft.",
+     "p": [
+      "Ein Trailer nennt Thema, Stimmen und das Versprechen der Sendung.",
+      "Er nutzt die besten Momente, Musik und eine klare Einladung zum Hören.",
+      "Kurz und ehrlich schlägt lang und vage."
+     ],
+     "q": "Was gehörte in einen Ein-Minuten-Trailer zu einer Sendung, die du liebst?",
+     "c": "Höre einen Trailer und notiere sein Versprechen in einem Satz."
+    },
+    "es": {
+     "t": "Tráileres de pódcast",
+     "g": "Ver cómo un tráiler corto vende un programa en menos de dos minutos.",
+     "p": [
+      "Un tráiler dice el tema, las voces y la promesa del programa.",
+      "Usa los mejores momentos, música y una invitación clara a escuchar.",
+      "Breve y sincero gana a largo y vago."
+     ],
+     "q": "¿Qué pondrías en un tráiler de un minuto de un programa que amas?",
+     "c": "Escucha un tráiler y anota en una línea qué promete."
+    },
+    "fr": {
+     "t": "Les bandes-annonces de podcasts",
+     "g": "Voir comment une courte bande-annonce vend une émission en moins de deux minutes.",
+     "p": [
+      "Une bande-annonce énonce le sujet, les voix et la promesse de l'émission.",
+      "Elle utilise les meilleurs moments, de la musique et une invitation claire à écouter.",
+      "Court et honnête vaut mieux que long et vague."
+     ],
+     "q": "Que mettrais-tu dans une bande-annonce d'une minute pour une émission que tu aimes ?",
+     "c": "Écoute une bande-annonce et note en une ligne ce qu'elle promet."
+    },
+    "it": {
+     "t": "I trailer dei podcast",
+     "g": "Vedere come un breve trailer vende un programma in meno di due minuti.",
+     "p": [
+      "Un trailer dice il tema, le voci e la promessa del programma.",
+      "Usa i momenti migliori, musica e un invito chiaro ad ascoltare.",
+      "Breve e sincero batte lungo e vago."
+     ],
+     "q": "Cosa metteresti in un trailer di un minuto per un programma che ami?",
+     "c": "Ascolta un trailer e annota in una riga cosa promette."
+    },
+    "pt": {
+     "t": "Trailers de podcasts",
+     "g": "Ver como um trailer curto vende um programa em menos de dois minutos.",
+     "p": [
+      "Um trailer diz o tema, as vozes e a promessa do programa.",
+      "Usa os melhores momentos, música e um convite claro para ouvir.",
+      "Curto e sincero vence longo e vago."
+     ],
+     "q": "O que porias num trailer de um minuto de um programa de que gostes?",
+     "c": "Ouve um trailer e anota numa linha o que ele promete."
+    },
+    "pt_BR": {
+     "t": "Trailers de podcasts",
+     "g": "Ver como um trailer curto vende um programa em menos de dois minutos.",
+     "p": [
+      "Um trailer diz o tema, as vozes e a promessa do programa.",
+      "Usa os melhores momentos, música e um convite claro para ouvir.",
+      "Curto e sincero vence longo e vago."
+     ],
+     "q": "O que você poria num trailer de um minuto de um programa que ama?",
+     "c": "Ouça um trailer e anote em uma linha o que ele promete."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cold opens",
+     "g": "Learn how starting with a gripping moment hooks listeners.",
+     "p": [
+      "A cold open begins with a striking scene, quote or question.",
+      "It is followed by the intro, so listeners already care.",
+      "Keep it short: ten to forty seconds is plenty."
+     ],
+     "q": "What moment from your day would make a gripping first line?",
+     "c": "Listen to the first minute of three episodes and spot any cold open."
+    },
+    "de": {
+     "t": "Cold Opens",
+     "g": "Lernen, wie ein packender Einstieg die Hörer fesselt.",
+     "p": [
+      "Ein Cold Open beginnt mit einer starken Szene, einem Zitat oder einer Frage.",
+      "Danach folgt das Intro, und die Hörer sind schon interessiert.",
+      "Halte es kurz: zehn bis vierzig Sekunden genügen."
+     ],
+     "q": "Welcher Moment deines Tages wäre ein packender erster Satz?",
+     "c": "Höre die erste Minute von drei Folgen und finde ein Cold Open."
+    },
+    "es": {
+     "t": "Aperturas en frío",
+     "g": "Aprender cómo empezar con un momento intrigante engancha al oyente.",
+     "p": [
+      "Una apertura en frío empieza con una escena, cita o pregunta llamativa.",
+      "Después viene la presentación y el oyente ya está interesado.",
+      "Que sea corta: de diez a cuarenta segundos basta."
+     ],
+     "q": "¿Qué momento de tu día sería una primera frase atrapante?",
+     "c": "Escucha el primer minuto de tres episodios y detecta alguna apertura en frío."
+    },
+    "fr": {
+     "t": "Les débuts en immersion",
+     "g": "Apprendre comment un début saisissant accroche l'auditeur.",
+     "p": [
+      "Une ouverture directe commence par une scène, une citation ou une question forte.",
+      "Le générique vient ensuite, et l'auditeur est déjà intéressé.",
+      "Reste bref : dix à quarante secondes suffisent."
+     ],
+     "q": "Quel moment de ta journée ferait une première phrase captivante ?",
+     "c": "Écoute la première minute de trois épisodes et repère une ouverture directe."
+    },
+    "it": {
+     "t": "Gli attacchi a freddo",
+     "g": "Imparare come iniziare con un momento avvincente cattura chi ascolta.",
+     "p": [
+      "Un attacco a freddo parte con una scena, una citazione o una domanda forte.",
+      "Segue la sigla e chi ascolta è già interessato.",
+      "Resta breve: da dieci a quaranta secondi bastano."
+     ],
+     "q": "Quale momento della tua giornata sarebbe una prima frase avvincente?",
+     "c": "Ascolta il primo minuto di tre episodi e individua un attacco a freddo."
+    },
+    "pt": {
+     "t": "Aberturas a frio",
+     "g": "Aprender como começar com um momento intrigante prende o ouvinte.",
+     "p": [
+      "Uma abertura a frio começa com uma cena, citação ou pergunta marcante.",
+      "Depois vem a apresentação e o ouvinte já está interessado.",
+      "Mantém-na curta: dez a quarenta segundos chegam."
+     ],
+     "q": "Que momento do teu dia daria uma primeira frase cativante?",
+     "c": "Ouve o primeiro minuto de três episódios e deteta uma abertura a frio."
+    },
+    "pt_BR": {
+     "t": "Aberturas a frio",
+     "g": "Aprender como começar com um momento intrigante prende o ouvinte.",
+     "p": [
+      "Uma abertura a frio começa com uma cena, citação ou pergunta marcante.",
+      "Depois vem a vinheta e o ouvinte já está interessado.",
+      "Mantenha curta: de dez a quarenta segundos bastam."
+     ],
+     "q": "Que momento do seu dia daria uma primeira frase cativante?",
+     "c": "Ouça o primeiro minuto de três episódios e ache uma abertura a frio."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Intros and theme music",
+     "g": "See how the first thirty seconds set the tone of a show.",
+     "p": [
+      "A short theme tune becomes the sound of the show's identity.",
+      "Tone, tempo and words in the intro tell you what to expect.",
+      "A good intro is brief, so regulars never feel they must skip it."
+     ],
+     "q": "What kind of music would be the theme for your own show?",
+     "c": "Listen to three intros and describe each one's mood in one word."
+    },
+    "de": {
+     "t": "Intros und Titelmusik",
+     "g": "Sehen, wie die ersten dreißig Sekunden den Ton einer Sendung setzen.",
+     "p": [
+      "Eine kurze Erkennungsmelodie wird zum Klang der Identität der Sendung.",
+      "Ton, Tempo und Worte im Intro verraten, was dich erwartet.",
+      "Ein gutes Intro ist kurz, damit Stammhörer es nie überspringen wollen."
+     ],
+     "q": "Welche Musik wäre das Thema deiner eigenen Sendung?",
+     "c": "Höre drei Intros und beschreibe die Stimmung jedes mit einem Wort."
+    },
+    "es": {
+     "t": "Cabeceras y música de presentación",
+     "g": "Ver cómo los primeros treinta segundos marcan el tono de un programa.",
+     "p": [
+      "Una melodía corta se convierte en el sonido de la identidad del programa.",
+      "El tono, el ritmo y las palabras de la cabecera dicen qué esperar.",
+      "Una buena cabecera es breve, para que los habituales no sientan que deben saltarla."
+     ],
+     "q": "¿Qué música sería la sintonía de tu propio programa?",
+     "c": "Escucha tres cabeceras y describe el ambiente de cada una con una palabra."
+    },
+    "fr": {
+     "t": "Génériques et musique d'ouverture",
+     "g": "Voir comment les trente premières secondes donnent le ton d'une émission.",
+     "p": [
+      "Un court thème musical devient le son de l'identité de l'émission.",
+      "Le ton, le tempo et les mots du générique disent à quoi s'attendre.",
+      "Un bon générique est bref, pour que les habitués ne veuillent jamais le passer."
+     ],
+     "q": "Quelle musique serait le thème de ta propre émission ?",
+     "c": "Écoute trois génériques et décris l'ambiance de chacun en un mot."
+    },
+    "it": {
+     "t": "Sigle e musica d'apertura",
+     "g": "Vedere come i primi trenta secondi danno il tono a un programma.",
+     "p": [
+      "Un breve tema musicale diventa il suono dell'identità del programma.",
+      "Tono, tempo e parole della sigla dicono cosa aspettarsi.",
+      "Una buona sigla è breve, così chi ascolta sempre non vuole saltarla."
+     ],
+     "q": "Che musica sarebbe la sigla del tuo programma?",
+     "c": "Ascolta tre sigle e descrivi l'atmosfera di ciascuna con una parola."
+    },
+    "pt": {
+     "t": "Genéricos e música de abertura",
+     "g": "Ver como os primeiros trinta segundos dão o tom a um programa.",
+     "p": [
+      "Um tema curto torna-se o som da identidade do programa.",
+      "O tom, o ritmo e as palavras do genérico dizem o que esperar.",
+      "Um bom genérico é breve, para os habituais nunca quererem saltá-lo."
+     ],
+     "q": "Que música seria o tema do teu próprio programa?",
+     "c": "Ouve três genéricos e descreve o ambiente de cada um numa palavra."
+    },
+    "pt_BR": {
+     "t": "Vinhetas e música de abertura",
+     "g": "Ver como os primeiros trinta segundos dão o tom de um programa.",
+     "p": [
+      "Um tema curto vira o som da identidade do programa.",
+      "Tom, ritmo e palavras da vinheta dizem o que esperar.",
+      "Uma boa vinheta é breve, para os fiéis nunca quererem pular."
+     ],
+     "q": "Que música seria o tema do seu próprio programa?",
+     "c": "Ouça três vinhetas e descreva o clima de cada uma em uma palavra."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Segments and recurring features",
+     "g": "Notice the regular sections that give a show its rhythm.",
+     "p": [
+      "Segments are repeating parts, like a quiz, a tip or a listener question.",
+      "They give the show a shape, so listeners know what comes next.",
+      "Inside jokes grow from recurring features and make fans feel included."
+     ],
+     "q": "Which recurring section would you add to a show of your own?",
+     "c": "Listen to one episode and list its segments in order."
+    },
+    "de": {
+     "t": "Rubriken und wiederkehrende Elemente",
+     "g": "Die festen Rubriken bemerken, die einer Sendung ihren Rhythmus geben.",
+     "p": [
+      "Rubriken sind wiederkehrende Teile, etwa ein Quiz, ein Tipp oder eine Hörerfrage.",
+      "Sie geben der Sendung Form, sodass Hörer wissen, was kommt.",
+      "Insider-Witze wachsen aus Rubriken und lassen Fans dazugehören."
+     ],
+     "q": "Welche feste Rubrik würdest du in eine eigene Sendung aufnehmen?",
+     "c": "Höre eine Folge und liste ihre Rubriken der Reihe nach auf."
+    },
+    "es": {
+     "t": "Secciones y espacios fijos",
+     "g": "Notar las secciones regulares que dan ritmo a un programa.",
+     "p": [
+      "Las secciones son partes que se repiten, como un concurso, un consejo o una pregunta de oyente.",
+      "Dan forma al programa, así que el oyente sabe qué viene.",
+      "Los chistes internos nacen de las secciones fijas y hacen sentir incluidos a los fans."
+     ],
+     "q": "¿Qué sección fija añadirías a un programa propio?",
+     "c": "Escucha un episodio y enumera sus secciones en orden."
+    },
+    "fr": {
+     "t": "Rubriques et rendez-vous récurrents",
+     "g": "Repérer les rubriques régulières qui donnent son rythme à une émission.",
+     "p": [
+      "Les rubriques sont des parties qui reviennent : un quiz, une astuce, une question d'auditeur.",
+      "Elles donnent une forme à l'émission : l'auditeur sait ce qui vient.",
+      "Les blagues d'initiés naissent des rubriques et font sentir les fans inclus."
+     ],
+     "q": "Quelle rubrique régulière ajouterais-tu à ta propre émission ?",
+     "c": "Écoute un épisode et liste ses rubriques dans l'ordre."
+    },
+    "it": {
+     "t": "Rubriche e appuntamenti fissi",
+     "g": "Notare le rubriche regolari che danno ritmo a un programma.",
+     "p": [
+      "Le rubriche sono parti che tornano, come un quiz, un consiglio o una domanda di un ascoltatore.",
+      "Danno forma al programma, così chi ascolta sa cosa arriva.",
+      "Le battute interne nascono dalle rubriche e fanno sentire inclusi i fan."
+     ],
+     "q": "Quale rubrica fissa aggiungeresti a un programma tuo?",
+     "c": "Ascolta un episodio ed elenca le sue rubriche in ordine."
+    },
+    "pt": {
+     "t": "Rubricas e momentos fixos",
+     "g": "Reparar nas rubricas regulares que dão ritmo a um programa.",
+     "p": [
+      "As rubricas são partes que se repetem, como um concurso, uma dica ou uma pergunta de ouvinte.",
+      "Dão forma ao programa, para o ouvinte saber o que vem a seguir.",
+      "As piadas internas nascem das rubricas e fazem os fãs sentir-se incluídos."
+     ],
+     "q": "Que rubrica fixa acrescentarias a um programa teu?",
+     "c": "Ouve um episódio e enumera as suas rubricas por ordem."
+    },
+    "pt_BR": {
+     "t": "Quadros e seções fixas",
+     "g": "Reparar nos quadros regulares que dão ritmo a um programa.",
+     "p": [
+      "Os quadros são partes que se repetem, como um quiz, uma dica ou uma pergunta de ouvinte.",
+      "Eles dão forma ao programa, e o ouvinte sabe o que vem depois.",
+      "As piadas internas nascem dos quadros fixos e fazem os fãs se sentirem incluídos."
+     ],
+     "q": "Que quadro fixo você adicionaria a um programa seu?",
+     "c": "Ouça um episódio e liste os quadros em ordem."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Episode titles that work",
+     "g": "Learn why clear, curious titles tell listeners what they will get.",
+     "p": [
+      "A good title names the topic or promise in plain words.",
+      "A little curiosity helps, but tricks and vague hints disappoint.",
+      "Short titles read well in small lists and on busy screens."
+     ],
+     "q": "Which episode title made you click, and why?",
+     "c": "Rewrite the title of one episode you heard in two better versions."
+    },
+    "de": {
+     "t": "Folgentitel, die funktionieren",
+     "g": "Lernen, warum klare, neugierig machende Titel zeigen, was Hörer erwartet.",
+     "p": [
+      "Ein guter Titel nennt Thema oder Versprechen in einfachen Worten.",
+      "Etwas Neugier hilft, aber Tricks und vage Andeutungen enttäuschen.",
+      "Kurze Titel lesen sich gut in kleinen Listen und auf vollen Bildschirmen."
+     ],
+     "q": "Welcher Folgentitel hat dich zum Klicken gebracht, und warum?",
+     "c": "Formuliere den Titel einer gehörten Folge in zwei besseren Varianten um."
+    },
+    "es": {
+     "t": "Títulos de episodio que funcionan",
+     "g": "Aprender por qué los títulos claros y curiosos dicen qué recibirá el oyente.",
+     "p": [
+      "Un buen título nombra el tema o la promesa con palabras sencillas.",
+      "Un poco de curiosidad ayuda, pero los trucos y las pistas vagas decepcionan.",
+      "Los títulos cortos se leen bien en listas pequeñas y pantallas llenas."
+     ],
+     "q": "¿Qué título de episodio te hizo pulsar, y por qué?",
+     "c": "Reescribe el título de un episodio que oíste en dos versiones mejores."
+    },
+    "fr": {
+     "t": "Des titres d'épisode qui marchent",
+     "g": "Apprendre pourquoi des titres clairs et curieux disent ce qu'on va recevoir.",
+     "p": [
+      "Un bon titre nomme le sujet ou la promesse avec des mots simples.",
+      "Un peu de curiosité aide, mais les astuces et les indices vagues déçoivent.",
+      "Les titres courts se lisent bien dans de petites listes et sur des écrans chargés."
+     ],
+     "q": "Quel titre d'épisode t'a fait cliquer, et pourquoi ?",
+     "c": "Réécris le titre d'un épisode entendu en deux versions meilleures."
+    },
+    "it": {
+     "t": "Titoli di episodio che funzionano",
+     "g": "Imparare perché titoli chiari e curiosi dicono cosa riceverà chi ascolta.",
+     "p": [
+      "Un buon titolo nomina il tema o la promessa con parole semplici.",
+      "Un po' di curiosità aiuta, ma trucchi e accenni vaghi deludono.",
+      "I titoli brevi si leggono bene in piccole liste e su schermi affollati."
+     ],
+     "q": "Quale titolo di episodio ti ha fatto cliccare, e perché?",
+     "c": "Riscrivi il titolo di un episodio che hai ascoltato in due versioni migliori."
+    },
+    "pt": {
+     "t": "Títulos de episódio que funcionam",
+     "g": "Aprender porque é que títulos claros e curiosos dizem o que o ouvinte vai receber.",
+     "p": [
+      "Um bom título nomeia o tema ou a promessa em palavras simples.",
+      "Um pouco de curiosidade ajuda, mas truques e pistas vagas desiludem.",
+      "Títulos curtos leem-se bem em listas pequenas e ecrãs cheios."
+     ],
+     "q": "Que título de episódio te fez clicar, e porquê?",
+     "c": "Reescreve o título de um episódio que ouviste em duas versões melhores."
+    },
+    "pt_BR": {
+     "t": "Títulos de episódio que funcionam",
+     "g": "Aprender por que títulos claros e curiosos dizem o que o ouvinte vai receber.",
+     "p": [
+      "Um bom título nomeia o tema ou a promessa em palavras simples.",
+      "Um pouco de curiosidade ajuda, mas truques e pistas vagas decepcionam.",
+      "Títulos curtos se leem bem em listas pequenas e telas cheias."
+     ],
+     "q": "Que título de episódio fez você clicar, e por quê?",
+     "c": "Reescreva o título de um episódio que ouviu em duas versões melhores."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How great endings work",
+     "g": "Learn how wrap-ups, cliffhangers and calls to action work.",
+     "p": [
+      "A good ending sums up the main idea in a sentence or two.",
+      "A cliffhanger or teaser for the next episode invites you back.",
+      "A call to action should be one small, friendly request."
+     ],
+     "q": "How do you like an episode to end: warm, funny or surprising?",
+     "c": "Listen to the last minute of three episodes and compare their endings."
+    },
+    "de": {
+     "t": "Wie starke Schlüsse funktionieren",
+     "g": "Lernen, wie Zusammenfassung, Cliffhanger und Handlungsaufforderung wirken.",
+     "p": [
+      "Ein guter Schluss fasst die Hauptidee in ein bis zwei Sätzen zusammen.",
+      "Ein Cliffhanger oder Ausblick auf die nächste Folge lädt zum Wiederkommen ein.",
+      "Eine Handlungsaufforderung sollte eine kleine, freundliche Bitte sein."
+     ],
+     "q": "Wie soll eine Folge für dich enden: herzlich, witzig oder überraschend?",
+     "c": "Höre die letzte Minute von drei Folgen und vergleiche die Schlüsse."
+    },
+    "es": {
+     "t": "Cómo funcionan los buenos finales",
+     "g": "Aprender cómo funcionan el resumen, el cliffhanger y la llamada a la acción.",
+     "p": [
+      "Un buen final resume la idea principal en una o dos frases.",
+      "Un cliffhanger o un adelanto del próximo episodio invita a volver.",
+      "La llamada a la acción debe ser una petición pequeña y amable."
+     ],
+     "q": "¿Cómo te gusta que acabe un episodio: cálido, divertido o sorprendente?",
+     "c": "Escucha el último minuto de tres episodios y compara sus finales."
+    },
+    "fr": {
+     "t": "Comment fonctionnent les belles fins",
+     "g": "Apprendre comment marchent le résumé, le suspense final et l'appel à l'action.",
+     "p": [
+      "Une bonne fin résume l'idée principale en une ou deux phrases.",
+      "Un suspense ou un avant-goût du prochain épisode invite à revenir.",
+      "Un appel à l'action doit être une petite demande aimable."
+     ],
+     "q": "Comment aimes-tu qu'un épisode se termine : chaleureux, drôle ou surprenant ?",
+     "c": "Écoute la dernière minute de trois épisodes et compare leurs fins."
+    },
+    "it": {
+     "t": "Come funzionano i bei finali",
+     "g": "Imparare come funzionano riepilogo, cliffhanger e invito all'azione.",
+     "p": [
+      "Un buon finale riassume l'idea principale in una o due frasi.",
+      "Un cliffhanger o un'anticipazione del prossimo episodio invita a tornare.",
+      "Un invito all'azione dovrebbe essere una richiesta piccola e gentile."
+     ],
+     "q": "Come ti piace che finisca un episodio: caldo, divertente o sorprendente?",
+     "c": "Ascolta l'ultimo minuto di tre episodi e confronta i finali."
+    },
+    "pt": {
+     "t": "Como funcionam os bons finais",
+     "g": "Aprender como funcionam o resumo, o suspense final e o apelo à ação.",
+     "p": [
+      "Um bom final resume a ideia principal numa ou duas frases.",
+      "Um suspense ou um avanço do próximo episódio convida a voltar.",
+      "O apelo à ação deve ser um pedido pequeno e simpático."
+     ],
+     "q": "Como gostas que um episódio acabe: caloroso, divertido ou surpreendente?",
+     "c": "Ouve o último minuto de três episódios e compara os finais."
+    },
+    "pt_BR": {
+     "t": "Como funcionam os bons finais",
+     "g": "Aprender como funcionam o resumo, o gancho final e o convite à ação.",
+     "p": [
+      "Um bom final resume a ideia principal em uma ou duas frases.",
+      "Um gancho ou uma prévia do próximo episódio convida a voltar.",
+      "O convite à ação deve ser um pedido pequeno e simpático."
+     ],
+     "q": "Como você gosta que um episódio termine: caloroso, divertido ou surpreendente?",
+     "c": "Ouça o último minuto de três episódios e compare os finais."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Seasons versus ongoing shows",
+     "g": "Compare limited series with an arc to weekly ongoing shows.",
+     "p": [
+      "A season has a start, middle and end, like a short book.",
+      "An ongoing show can run for years with no fixed finish.",
+      "Seasons suit big stories; ongoing shows suit regular chats and news."
+     ],
+     "q": "Do you prefer a story with an ending or a show that never ends?",
+     "c": "Pick one seasonal show and one ongoing show and note how each feels to follow."
+    },
+    "de": {
+     "t": "Staffeln gegen laufende Sendungen",
+     "g": "Begrenzte Serien mit Handlungsbogen mit wöchentlichen Dauersendungen vergleichen.",
+     "p": [
+      "Eine Staffel hat Anfang, Mitte und Ende, wie ein kurzes Buch.",
+      "Eine laufende Sendung kann Jahre laufen, ohne festes Ende.",
+      "Staffeln passen zu großen Geschichten, laufende Sendungen zu Plaudereien und Nachrichten."
+     ],
+     "q": "Magst du lieber eine Geschichte mit Ende oder eine Sendung ohne Ende?",
+     "c": "Wähle eine Staffel-Sendung und eine laufende und notiere, wie sich beide anfühlen."
+    },
+    "es": {
+     "t": "Temporadas frente a programas continuos",
+     "g": "Comparar series limitadas con arco narrativo y programas semanales continuos.",
+     "p": [
+      "Una temporada tiene principio, nudo y desenlace, como un libro corto.",
+      "Un programa continuo puede durar años sin un final fijo.",
+      "Las temporadas encajan con grandes historias; los continuos, con charlas y noticias."
+     ],
+     "q": "¿Prefieres una historia con final o un programa que no acaba?",
+     "c": "Elige un programa por temporadas y uno continuo y anota cómo se siente seguir cada uno."
+    },
+    "fr": {
+     "t": "Saisons ou émissions continues",
+     "g": "Comparer les séries limitées à arc narratif et les émissions hebdomadaires continues.",
+     "p": [
+      "Une saison a un début, un milieu et une fin, comme un petit livre.",
+      "Une émission continue peut durer des années sans fin prévue.",
+      "Les saisons conviennent aux grandes histoires ; les émissions continues aux discussions et à l'actualité."
+     ],
+     "q": "Préfères-tu une histoire avec une fin ou une émission qui ne finit pas ?",
+     "c": "Choisis une émission à saisons et une continue et note ce que l'on ressent en les suivant."
+    },
+    "it": {
+     "t": "Stagioni e programmi continui",
+     "g": "Confrontare serie limitate con un arco narrativo e programmi settimanali continui.",
+     "p": [
+      "Una stagione ha inizio, svolgimento e fine, come un libro breve.",
+      "Un programma continuo può durare anni senza una fine fissata.",
+      "Le stagioni si adattano alle grandi storie; i programmi continui a chiacchiere e notizie."
+     ],
+     "q": "Preferisci una storia con un finale o un programma che non finisce mai?",
+     "c": "Scegli un programma a stagioni e uno continuo e annota come ci si sente a seguirli."
+    },
+    "pt": {
+     "t": "Temporadas versus programas contínuos",
+     "g": "Comparar séries limitadas com arco narrativo e programas semanais contínuos.",
+     "p": [
+      "Uma temporada tem início, meio e fim, como um livro curto.",
+      "Um programa contínuo pode durar anos sem fim marcado.",
+      "As temporadas servem grandes histórias; os contínuos servem conversas e notícias."
+     ],
+     "q": "Preferes uma história com final ou um programa que nunca acaba?",
+     "c": "Escolhe um programa por temporadas e um contínuo e anota como é acompanhar cada um."
+    },
+    "pt_BR": {
+     "t": "Temporadas versus programas contínuos",
+     "g": "Comparar séries limitadas com arco narrativo e programas semanais contínuos.",
+     "p": [
+      "Uma temporada tem começo, meio e fim, como um livro curto.",
+      "Um programa contínuo pode durar anos sem fim marcado.",
+      "Temporadas servem a grandes histórias; programas contínuos servem a conversas e notícias."
+     ],
+     "q": "Você prefere uma história com final ou um programa que nunca acaba?",
+     "c": "Escolha um programa por temporadas e um contínuo e anote como é acompanhar cada um."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Bonus episodes and extras",
+     "g": "Discover mini-episodes, behind-the-scenes and listener Q and A shows.",
+     "p": [
+      "Bonus episodes add extra stories, outtakes or deeper dives.",
+      "Listener question episodes make the audience part of the show.",
+      "Extras are a treat, never a must; the main episodes stand alone."
+     ],
+     "q": "What would you love to hear behind the scenes of a favourite show?",
+     "c": "Look for a bonus or Q and A episode of a show you follow and listen to it."
+    },
+    "de": {
+     "t": "Bonusfolgen und Extras",
+     "g": "Mini-Folgen, Blicke hinter die Kulissen und Hörerfragen-Sendungen entdecken.",
+     "p": [
+      "Bonusfolgen bieten zusätzliche Geschichten, Pannen oder tiefere Einblicke.",
+      "Folgen mit Hörerfragen machen das Publikum zum Teil der Sendung.",
+      "Extras sind ein Geschenk, kein Muss; die Hauptfolgen stehen für sich."
+     ],
+     "q": "Was würdest du gern hinter den Kulissen einer Lieblingssendung hören?",
+     "c": "Suche eine Bonus- oder Fragefolge einer Sendung, der du folgst, und höre sie."
+    },
+    "es": {
+     "t": "Episodios extra y bonus",
+     "g": "Descubrir minipisodios, trastienda y programas de preguntas de oyentes.",
+     "p": [
+      "Los episodios extra añaden historias, tomas falsas o análisis más profundos.",
+      "Los episodios de preguntas hacen al público parte del programa.",
+      "Los extras son un regalo, nunca una obligación; los episodios principales se bastan."
+     ],
+     "q": "¿Qué te encantaría oír entre bastidores de un programa favorito?",
+     "c": "Busca un episodio extra o de preguntas de un programa que sigues y escúchalo."
+    },
+    "fr": {
+     "t": "Épisodes bonus et extras",
+     "g": "Découvrir mini-épisodes, coulisses et émissions de questions d'auditeurs.",
+     "p": [
+      "Les épisodes bonus ajoutent des histoires, des ratés ou des approfondissements.",
+      "Les épisodes de questions font du public une partie de l'émission.",
+      "Les extras sont un cadeau, jamais une obligation ; les épisodes principaux se suffisent."
+     ],
+     "q": "Que voudrais-tu entendre dans les coulisses d'une émission préférée ?",
+     "c": "Cherche un épisode bonus ou de questions d'une émission que tu suis et écoute-le."
+    },
+    "it": {
+     "t": "Episodi bonus ed extra",
+     "g": "Scoprire mini-episodi, dietro le quinte e programmi con domande degli ascoltatori.",
+     "p": [
+      "Gli episodi bonus aggiungono storie extra, fuori onda o approfondimenti.",
+      "Gli episodi con domande rendono il pubblico parte del programma.",
+      "Gli extra sono un regalo, mai un obbligo; gli episodi principali bastano da soli."
+     ],
+     "q": "Cosa ameresti sentire dietro le quinte di un programma preferito?",
+     "c": "Cerca un episodio bonus o di domande di un programma che segui e ascoltalo."
+    },
+    "pt": {
+     "t": "Episódios extra e bónus",
+     "g": "Descobrir mini-episódios, bastidores e programas de perguntas dos ouvintes.",
+     "p": [
+      "Os episódios bónus acrescentam histórias, erros de gravação ou análises mais profundas.",
+      "Os episódios de perguntas tornam o público parte do programa.",
+      "Os extras são um mimo, nunca uma obrigação; os episódios principais bastam."
+     ],
+     "q": "O que gostarias de ouvir nos bastidores de um programa favorito?",
+     "c": "Procura um episódio bónus ou de perguntas de um programa que segues e ouve-o."
+    },
+    "pt_BR": {
+     "t": "Episódios extras e bônus",
+     "g": "Descobrir mini-episódios, bastidores e programas de perguntas dos ouvintes.",
+     "p": [
+      "Os episódios bônus acrescentam histórias, erros de gravação ou análises mais profundas.",
+      "Episódios de perguntas tornam o público parte do programa.",
+      "Extras são um mimo, nunca uma obrigação; os episódios principais bastam."
+     ],
+     "q": "O que você gostaria de ouvir nos bastidores de um programa favorito?",
+     "c": "Procure um episódio bônus ou de perguntas de um programa que segue e ouça."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What makes you hit play?",
+     "g": "Analyse why you chose your last three episodes.",
+     "p": [
+      "Think about title, topic, host, length or a friend's tip.",
+      "Seeing your pattern helps you find more shows you will enjoy.",
+      "Notice also what made you skip, so you learn your taste."
+     ],
+     "q": "What made you choose the last episode you played?",
+     "c": "List your last three plays and the reason you chose each one."
+    },
+    "de": {
+     "t": "Was bringt dich zum Abspielen?",
+     "g": "Analysieren, warum du deine letzten drei Folgen gewählt hast.",
+     "p": [
+      "Denk an Titel, Thema, Moderation, Länge oder den Tipp eines Freundes.",
+      "Dein Muster zu sehen hilft, mehr Sendungen zu finden, die dir gefallen.",
+      "Achte auch darauf, was dich zum Überspringen brachte, so lernst du deinen Geschmack."
+     ],
+     "q": "Was hat dich bei der zuletzt gespielten Folge überzeugt?",
+     "c": "Liste deine letzten drei Folgen und jeweils den Grund deiner Wahl auf."
+    },
+    "es": {
+     "t": "¿Qué te hace pulsar play?",
+     "g": "Analizar por qué elegiste tus tres últimos episodios.",
+     "p": [
+      "Piensa en título, tema, presentador, duración o la recomendación de un amigo.",
+      "Ver tu patrón ayuda a encontrar más programas que disfrutarás.",
+      "Fíjate también en lo que te hizo saltar, así aprendes tu gusto."
+     ],
+     "q": "¿Qué te hizo elegir el último episodio que pusiste?",
+     "c": "Lista tus tres últimas reproducciones y el motivo de cada elección."
+    },
+    "fr": {
+     "t": "Qu'est-ce qui te fait appuyer sur lecture ?",
+     "g": "Analyser pourquoi tu as choisi tes trois derniers épisodes.",
+     "p": [
+      "Pense au titre, au sujet, à l'animateur, à la durée ou au conseil d'un ami.",
+      "Voir ton schéma t'aide à trouver d'autres émissions que tu aimeras.",
+      "Note aussi ce qui t'a fait passer, pour apprendre tes goûts."
+     ],
+     "q": "Qu'est-ce qui t'a fait choisir le dernier épisode lancé ?",
+     "c": "Liste tes trois dernières écoutes et la raison de chaque choix."
+    },
+    "it": {
+     "t": "Cosa ti fa premere play?",
+     "g": "Analizzare perché hai scelto i tuoi ultimi tre episodi.",
+     "p": [
+      "Pensa a titolo, tema, conduttore, durata o al consiglio di un amico.",
+      "Vedere il tuo schema aiuta a trovare altri programmi che ti piaceranno.",
+      "Nota anche cosa ti ha fatto saltare, così impari i tuoi gusti."
+     ],
+     "q": "Cosa ti ha fatto scegliere l'ultimo episodio che hai avviato?",
+     "c": "Elenca le tue ultime tre riproduzioni e il motivo di ogni scelta."
+    },
+    "pt": {
+     "t": "O que te faz carregar em play?",
+     "g": "Analisar porque escolheste os teus três últimos episódios.",
+     "p": [
+      "Pensa no título, no tema, no apresentador, na duração ou na dica de um amigo.",
+      "Ver o teu padrão ajuda a encontrar mais programas de que vais gostar.",
+      "Repara também no que te fez saltar, para aprenderes o teu gosto."
+     ],
+     "q": "O que te fez escolher o último episódio que puseste?",
+     "c": "Lista as tuas últimas três reproduções e o motivo de cada escolha."
+    },
+    "pt_BR": {
+     "t": "O que faz você apertar o play?",
+     "g": "Analisar por que você escolheu seus três últimos episódios.",
+     "p": [
+      "Pense no título, no tema, no apresentador, na duração ou na dica de um amigo.",
+      "Ver o seu padrão ajuda a achar mais programas de que você vai gostar.",
+      "Repare também no que fez você pular, para aprender o seu gosto."
+     ],
+     "q": "O que fez você escolher o último episódio que tocou?",
+     "c": "Liste suas três últimas reproduções e o motivo de cada escolha."
+    }
+   }
+  }
+ ]
+}

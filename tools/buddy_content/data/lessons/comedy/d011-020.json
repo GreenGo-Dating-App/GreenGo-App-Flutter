@@ -1,0 +1,835 @@
+{
+ "topic": "comedy",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Comic timing: the pause",
+     "g": "Use a short silence before the punchline to build joy.",
+     "p": [
+      "A pause lets the listener expect something, and expecting is half the fun.",
+      "Pause just before the key word, not in the middle of the setup.",
+      "One or two seconds feels long to you but perfect to the audience."
+     ],
+     "q": "Try telling a joke with a pause before the last word. Did it change the effect?",
+     "c": "Tell one short joke today and count silently to two before the punchline."
+    },
+    "de": {
+     "t": "Comedy-Timing: die Pause",
+     "g": "Eine kurze Stille vor der Pointe nutzen, um die Freude zu steigern.",
+     "p": [
+      "Eine Pause lässt das Publikum etwas erwarten, und Erwartung ist der halbe Spaß.",
+      "Mach die Pause direkt vor dem Schlüsselwort, nicht mitten im Aufbau.",
+      "Ein bis zwei Sekunden fühlen sich für dich lang an, für andere genau richtig."
+     ],
+     "q": "Erzähl einen Witz mit einer Pause vor dem letzten Wort. Hat sich die Wirkung verändert?",
+     "c": "Erzähl heute einen kurzen Witz und zähl vor der Pointe still bis zwei."
+    },
+    "es": {
+     "t": "El tiempo cómico: la pausa",
+     "g": "Usar un breve silencio antes del remate para aumentar la gracia.",
+     "p": [
+      "Una pausa deja que el oyente espere algo, y esperar es la mitad de la diversión.",
+      "Haz la pausa justo antes de la palabra clave, no en medio de la preparación.",
+      "Uno o dos segundos te parecen largos a ti, pero perfectos para el público."
+     ],
+     "q": "Prueba a contar un chiste con una pausa antes de la última palabra. ¿Cambió el efecto?",
+     "c": "Cuenta hoy un chiste corto y cuenta en silencio hasta dos antes del remate."
+    },
+    "fr": {
+     "t": "Le timing comique : la pause",
+     "g": "Utiliser un court silence avant la chute pour amplifier le plaisir.",
+     "p": [
+      "Une pause laisse l'auditeur attendre quelque chose, et l'attente fait la moitié du plaisir.",
+      "Place la pause juste avant le mot clé, pas au milieu de la mise en place.",
+      "Une ou deux secondes te semblent longues, mais elles sont parfaites pour le public."
+     ],
+     "q": "Essaie de raconter une blague avec une pause avant le dernier mot. L'effet a-t-il changé ?",
+     "c": "Raconte aujourd'hui une blague courte et compte mentalement jusqu'à deux avant la chute."
+    },
+    "it": {
+     "t": "Il tempo comico: la pausa",
+     "g": "Usare un breve silenzio prima della battuta finale per aumentare il divertimento.",
+     "p": [
+      "Una pausa fa aspettare qualcosa a chi ascolta, e l'attesa è metà del piacere.",
+      "Fai la pausa subito prima della parola chiave, non a metà della premessa.",
+      "Uno o due secondi a te sembrano lunghi, ma per il pubblico sono perfetti."
+     ],
+     "q": "Prova a raccontare una barzelletta con una pausa prima dell'ultima parola. L'effetto è cambiato?",
+     "c": "Oggi racconta una barzelletta breve e conta in silenzio fino a due prima della battuta."
+    },
+    "pt": {
+     "t": "O tempo cómico: a pausa",
+     "g": "Usar um breve silêncio antes do remate para aumentar a graça.",
+     "p": [
+      "Uma pausa faz o ouvinte esperar algo, e esperar é metade da diversão.",
+      "Faz a pausa mesmo antes da palavra-chave, não a meio da preparação.",
+      "Um ou dois segundos parecem-te longos, mas são perfeitos para o público."
+     ],
+     "q": "Experimenta contar uma piada com uma pausa antes da última palavra. O efeito mudou?",
+     "c": "Hoje conta uma piada curta e conta em silêncio até dois antes do remate."
+    },
+    "pt_BR": {
+     "t": "O tempo cômico: a pausa",
+     "g": "Usar um breve silêncio antes do final para aumentar a graça.",
+     "p": [
+      "Uma pausa faz quem ouve esperar algo, e esperar é metade da diversão.",
+      "Faça a pausa logo antes da palavra-chave, não no meio da preparação.",
+      "Um ou dois segundos parecem longos para você, mas são perfeitos para o público."
+     ],
+     "q": "Tente contar uma piada com uma pausa antes da última palavra. O efeito mudou?",
+     "c": "Hoje conte uma piada curta e conte em silêncio até dois antes do final."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Speaking clearly and slowly",
+     "g": "Learn why a calm pace lets every word of a joke land.",
+     "p": [
+      "Rushing blurs the punchline; a calm pace makes each word count.",
+      "Breathe before you start, and the first sentence will come out smoother.",
+      "Clear sounds matter most in wordplay, where one syllable carries the joke."
+     ],
+     "q": "Do you tend to speak fast when you are excited? What helps you slow down?",
+     "c": "Say your favourite joke at half your normal speed and notice how it sounds."
+    },
+    "de": {
+     "t": "Klar und langsam sprechen",
+     "g": "Verstehen, warum ein ruhiges Tempo jedes Wort eines Witzes wirken lässt.",
+     "p": [
+      "Hetzen verwischt die Pointe; ein ruhiges Tempo lässt jedes Wort zählen.",
+      "Atme vor dem Start durch, dann kommt der erste Satz runder heraus.",
+      "Klare Laute sind bei Wortspielen am wichtigsten, denn eine Silbe trägt den Witz."
+     ],
+     "q": "Sprichst du schnell, wenn du aufgeregt bist? Was hilft dir, langsamer zu werden?",
+     "c": "Sag deinen Lieblingswitz heute mit halbem Tempo und achte darauf, wie er klingt."
+    },
+    "es": {
+     "t": "Hablar claro y despacio",
+     "g": "Entender por qué un ritmo tranquilo hace que cada palabra de un chiste llegue.",
+     "p": [
+      "La prisa difumina el remate; un ritmo tranquilo hace que cada palabra cuente.",
+      "Respira antes de empezar y la primera frase saldrá más suave.",
+      "Los sonidos claros importan mucho en los juegos de palabras, donde una sílaba lleva el chiste."
+     ],
+     "q": "¿Hablas rápido cuando estás emocionado? ¿Qué te ayuda a frenar?",
+     "c": "Di tu chiste favorito a la mitad de tu velocidad y fíjate en cómo suena."
+    },
+    "fr": {
+     "t": "Parler clairement et lentement",
+     "g": "Comprendre pourquoi un rythme calme fait porter chaque mot d'une blague.",
+     "p": [
+      "La précipitation brouille la chute ; un rythme calme donne du poids à chaque mot.",
+      "Respire avant de commencer, et la première phrase sortira plus fluide.",
+      "Les sons clairs comptent surtout dans les jeux de mots, où une syllabe porte la blague."
+     ],
+     "q": "Parles-tu vite quand tu es enthousiaste ? Qu'est-ce qui t'aide à ralentir ?",
+     "c": "Dis aujourd'hui ta blague préférée à moitié moins vite et écoute comment elle sonne."
+    },
+    "it": {
+     "t": "Parlare in modo chiaro e lento",
+     "g": "Capire perché un ritmo calmo fa arrivare ogni parola di una battuta.",
+     "p": [
+      "La fretta confonde la battuta finale; un ritmo calmo dà peso a ogni parola.",
+      "Respira prima di cominciare e la prima frase uscirà più morbida.",
+      "I suoni chiari contano soprattutto nei giochi di parole, dove una sillaba regge la battuta."
+     ],
+     "q": "Parli veloce quando sei emozionato? Cosa ti aiuta a rallentare?",
+     "c": "Oggi di' la tua barzelletta preferita a metà velocità e nota come suona."
+    },
+    "pt": {
+     "t": "Falar com clareza e devagar",
+     "g": "Perceber porque um ritmo calmo faz cada palavra da piada chegar.",
+     "p": [
+      "A pressa esbate o remate; um ritmo calmo dá peso a cada palavra.",
+      "Respira antes de começar e a primeira frase sai mais suave.",
+      "Os sons claros importam sobretudo nos trocadilhos, onde uma sílaba carrega a piada."
+     ],
+     "q": "Falas depressa quando estás entusiasmado? O que te ajuda a abrandar?",
+     "c": "Hoje diz a tua piada favorita a metade da velocidade e repara como soa."
+    },
+    "pt_BR": {
+     "t": "Falar com clareza e devagar",
+     "g": "Entender por que um ritmo calmo faz cada palavra da piada chegar.",
+     "p": [
+      "A pressa embaralha o final; um ritmo calmo dá peso a cada palavra.",
+      "Respire antes de começar e a primeira frase sai mais suave.",
+      "Sons claros importam muito nos trocadilhos, onde uma sílaba carrega a piada."
+     ],
+     "q": "Você fala rápido quando está empolgado? O que ajuda você a desacelerar?",
+     "c": "Hoje diga sua piada favorita na metade da velocidade e perceba como soa."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The rule of three",
+     "g": "Use the classic pattern: two normal things and a surprising third.",
+     "p": [
+      "Two items set a pattern; the third breaks it with a surprise.",
+      "Example: I love hiking, reading and sleeping through my alarm.",
+      "Make the third item the shortest or the silliest for the best bounce."
+     ],
+     "q": "Complete this: my perfect weekend is coffee, a walk and...?",
+     "c": "Write one list of three where the last item is a funny surprise."
+    },
+    "de": {
+     "t": "Die Dreierregel",
+     "g": "Das klassische Muster nutzen: zwei normale Dinge und ein überraschendes drittes.",
+     "p": [
+      "Zwei Punkte bilden ein Muster; der dritte bricht es mit einer Überraschung.",
+      "Beispiel: Ich liebe Wandern, Lesen und Weiterschlafen, wenn der Wecker klingelt.",
+      "Mach den dritten Punkt zum kürzesten oder verrücktesten für den besten Effekt."
+     ],
+     "q": "Ergänze: Mein perfektes Wochenende ist Kaffee, ein Spaziergang und...?",
+     "c": "Schreib eine Dreierliste, deren letzter Punkt eine lustige Überraschung ist."
+    },
+    "es": {
+     "t": "La regla de tres",
+     "g": "Usar el patrón clásico: dos cosas normales y una tercera sorprendente.",
+     "p": [
+      "Dos elementos crean un patrón; el tercero lo rompe con una sorpresa.",
+      "Ejemplo: Me encanta el senderismo, la lectura y seguir durmiendo cuando suena el despertador.",
+      "Haz que el tercer elemento sea el más corto o el más absurdo para mayor efecto."
+     ],
+     "q": "Completa: mi fin de semana perfecto es café, un paseo y...?",
+     "c": "Escribe una lista de tres cuyo último elemento sea una sorpresa graciosa."
+    },
+    "fr": {
+     "t": "La règle de trois",
+     "g": "Utiliser le schéma classique : deux choses normales et une troisième surprenante.",
+     "p": [
+      "Deux éléments créent un schéma ; le troisième le brise par surprise.",
+      "Exemple : j'adore la randonnée, la lecture et ignorer mon réveil.",
+      "Fais du troisième élément le plus court ou le plus fou pour un meilleur effet."
+     ],
+     "q": "Complète : mon week-end idéal, c'est un café, une balade et...?",
+     "c": "Écris une liste de trois dont le dernier élément est une surprise drôle."
+    },
+    "it": {
+     "t": "La regola del tre",
+     "g": "Usare lo schema classico: due cose normali e una terza sorprendente.",
+     "p": [
+      "Due elementi creano uno schema; il terzo lo spezza con una sorpresa.",
+      "Esempio: amo l'escursionismo, la lettura e continuare a dormire quando suona la sveglia.",
+      "Fai del terzo elemento il più breve o il più buffo per un effetto migliore."
+     ],
+     "q": "Completa: il mio fine settimana perfetto è caffè, una passeggiata e...?",
+     "c": "Scrivi una lista di tre in cui l'ultimo elemento è una sorpresa divertente."
+    },
+    "pt": {
+     "t": "A regra de três",
+     "g": "Usar o padrão clássico: duas coisas normais e uma terceira surpreendente.",
+     "p": [
+      "Dois elementos criam um padrão; o terceiro quebra-o com uma surpresa.",
+      "Exemplo: adoro caminhadas, leitura e continuar a dormir quando o despertador toca.",
+      "Faz do terceiro elemento o mais curto ou o mais tolo para um efeito melhor."
+     ],
+     "q": "Completa: o meu fim de semana perfeito é café, um passeio e...?",
+     "c": "Escreve uma lista de três em que o último elemento seja uma surpresa engraçada."
+    },
+    "pt_BR": {
+     "t": "A regra de três",
+     "g": "Usar o padrão clássico: duas coisas normais e uma terceira surpreendente.",
+     "p": [
+      "Dois elementos criam um padrão; o terceiro quebra com uma surpresa.",
+      "Exemplo: adoro trilhas, leitura e continuar dormindo quando o despertador toca.",
+      "Faça do terceiro elemento o mais curto ou o mais bobo para um efeito melhor."
+     ],
+     "q": "Complete: meu fim de semana perfeito é café, uma caminhada e...?",
+     "c": "Escreva uma lista de três em que o último item seja uma surpresa engraçada."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Exaggeration",
+     "g": "Make things bigger or smaller than life for a playful effect.",
+     "p": [
+      "Exaggeration stretches a true feeling until it becomes funny.",
+      "Example: it was so hot that my ice cream arrived as soup.",
+      "Keep it clearly impossible, so nobody thinks you are being serious."
+     ],
+     "q": "How would you describe a very long queue using exaggeration?",
+     "c": "Describe today's weather or traffic with one big, silly exaggeration."
+    },
+    "de": {
+     "t": "Übertreibung",
+     "g": "Dinge größer oder kleiner als im Leben machen, für einen spielerischen Effekt.",
+     "p": [
+      "Übertreibung dehnt ein echtes Gefühl, bis es komisch wird.",
+      "Beispiel: Es war so heiß, dass mein Eis als Suppe ankam.",
+      "Mach es eindeutig unmöglich, damit niemand denkt, du meinst es ernst."
+     ],
+     "q": "Wie würdest du eine sehr lange Schlange mit einer Übertreibung beschreiben?",
+     "c": "Beschreib heute Wetter oder Verkehr mit einer großen, albernen Übertreibung."
+    },
+    "es": {
+     "t": "La exageración",
+     "g": "Hacer las cosas más grandes o más pequeñas que la vida para lograr un efecto divertido.",
+     "p": [
+      "La exageración estira un sentimiento real hasta que se vuelve gracioso.",
+      "Ejemplo: hacía tanto calor que mi helado llegó convertido en sopa.",
+      "Hazla claramente imposible, para que nadie piense que hablas en serio."
+     ],
+     "q": "¿Cómo describirías una cola larguísima usando la exageración?",
+     "c": "Describe hoy el tiempo o el tráfico con una gran exageración tonta."
+    },
+    "fr": {
+     "t": "L'exagération",
+     "g": "Rendre les choses plus grandes ou plus petites que nature pour un effet amusant.",
+     "p": [
+      "L'exagération étire un vrai sentiment jusqu'à ce qu'il devienne drôle.",
+      "Exemple : il faisait si chaud que ma glace est arrivée en soupe.",
+      "Rends-la clairement impossible, pour que personne ne croie que tu es sérieux."
+     ],
+     "q": "Comment décrirais-tu une file d'attente interminable avec une exagération ?",
+     "c": "Décris aujourd'hui la météo ou la circulation avec une grosse exagération rigolote."
+    },
+    "it": {
+     "t": "L'esagerazione",
+     "g": "Rendere le cose più grandi o più piccole della realtà per un effetto giocoso.",
+     "p": [
+      "L'esagerazione tira un sentimento vero finché diventa divertente.",
+      "Esempio: faceva così caldo che il mio gelato è arrivato sotto forma di zuppa.",
+      "Rendila chiaramente impossibile, così nessuno pensa che tu stia parlando sul serio."
+     ],
+     "q": "Come descriveresti una fila lunghissima usando l'esagerazione?",
+     "c": "Descrivi oggi il tempo o il traffico con una grande esagerazione buffa."
+    },
+    "pt": {
+     "t": "O exagero",
+     "g": "Tornar as coisas maiores ou menores do que na vida para um efeito divertido.",
+     "p": [
+      "O exagero estica um sentimento verdadeiro até ficar engraçado.",
+      "Exemplo: estava tanto calor que o meu gelado chegou em forma de sopa.",
+      "Torna-o claramente impossível, para ninguém achar que falas a sério."
+     ],
+     "q": "Como descreverias uma fila enorme usando o exagero?",
+     "c": "Hoje descreve o tempo ou o trânsito com um grande exagero parvo."
+    },
+    "pt_BR": {
+     "t": "O exagero",
+     "g": "Tornar as coisas maiores ou menores do que na vida para um efeito divertido.",
+     "p": [
+      "O exagero estica um sentimento verdadeiro até ficar engraçado.",
+      "Exemplo: estava tanto calor que meu sorvete chegou em forma de sopa.",
+      "Deixe claramente impossível, para ninguém achar que você fala sério."
+     ],
+     "q": "Como você descreveria uma fila enorme usando o exagero?",
+     "c": "Hoje descreva o tempo ou o trânsito com um grande exagero bobo."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Understatement",
+     "g": "Say much less than the situation deserves, a gentle humour loved in Britain.",
+     "p": [
+      "Understatement is calm words for a big situation.",
+      "Example: standing in a downpour, you say: a bit damp today.",
+      "It works best with a straight face and a relaxed voice."
+     ],
+     "q": "How would you understate a very late train?",
+     "c": "Describe something huge in today's life with a tiny, calm sentence."
+    },
+    "de": {
+     "t": "Untertreibung",
+     "g": "Viel weniger sagen, als die Lage verdient, ein sanfter Humor, den Briten lieben.",
+     "p": [
+      "Untertreibung bedeutet ruhige Worte für eine große Situation.",
+      "Beispiel: Im Platzregen sagst du: Etwas feucht heute.",
+      "Sie wirkt am besten mit ernstem Gesicht und entspannter Stimme."
+     ],
+     "q": "Wie würdest du einen Zug mit riesiger Verspätung untertrieben beschreiben?",
+     "c": "Beschreib etwas Riesiges aus deinem Tag mit einem winzigen, ruhigen Satz."
+    },
+    "es": {
+     "t": "El eufemismo humorístico",
+     "g": "Decir mucho menos de lo que merece la situación, un humor suave muy querido en Gran Bretaña.",
+     "p": [
+      "La atenuación son palabras tranquilas para una situación enorme.",
+      "Ejemplo: bajo un chaparrón dices: hoy hay un poquito de humedad.",
+      "Funciona mejor con cara seria y voz relajada."
+     ],
+     "q": "¿Cómo describirías con poca importancia un tren que llega muy tarde?",
+     "c": "Describe algo enorme de tu día con una frase pequeña y tranquila."
+    },
+    "fr": {
+     "t": "L'understatement",
+     "g": "Dire bien moins que ce que la situation mérite, un humour doux cher aux Britanniques.",
+     "p": [
+      "L'understatement, c'est des mots calmes pour une grande situation.",
+      "Exemple : sous une averse battante, tu dis : un peu humide aujourd'hui.",
+      "Il marche mieux avec un visage sérieux et une voix détendue."
+     ],
+     "q": "Comment minimiserais-tu un train avec un énorme retard ?",
+     "c": "Décris quelque chose d'énorme de ta journée avec une petite phrase calme."
+    },
+    "it": {
+     "t": "L'understatement",
+     "g": "Dire molto meno di quanto la situazione meriti, un umorismo gentile caro ai britannici.",
+     "p": [
+      "L'understatement sono parole calme per una situazione grande.",
+      "Esempio: sotto un acquazzone dici: oggi è un po' umido.",
+      "Funziona meglio con la faccia seria e la voce rilassata."
+     ],
+     "q": "Come sdrammatizzeresti un treno in grandissimo ritardo?",
+     "c": "Descrivi qualcosa di enorme della tua giornata con una frase piccola e calma."
+    },
+    "pt": {
+     "t": "O eufemismo cómico",
+     "g": "Dizer muito menos do que a situação merece, um humor suave muito amado na Grã-Bretanha.",
+     "p": [
+      "O eufemismo são palavras calmas para uma situação enorme.",
+      "Exemplo: debaixo de um aguaceiro dizes: hoje está um bocadinho húmido.",
+      "Funciona melhor com cara séria e voz descontraída."
+     ],
+     "q": "Como descreverias com leveza um comboio muito atrasado?",
+     "c": "Descreve algo enorme do teu dia com uma frase pequena e calma."
+    },
+    "pt_BR": {
+     "t": "O eufemismo cômico",
+     "g": "Dizer muito menos do que a situação merece, um humor suave muito amado na Grã-Bretanha.",
+     "p": [
+      "O eufemismo são palavras calmas para uma situação enorme.",
+      "Exemplo: debaixo de um toró você diz: hoje tá um pouquinho úmido.",
+      "Funciona melhor com cara séria e voz descontraída."
+     ],
+     "q": "Como você descreveria com leveza um trem muito atrasado?",
+     "c": "Descreva algo enorme do seu dia com uma frase pequena e calma."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Observational humour",
+     "g": "Find the funny side of everyday things everyone notices but rarely mentions.",
+     "p": [
+      "Start with a small, true detail from daily life.",
+      "Add your honest reaction: the funny part is often how you feel about it.",
+      "Everyone nods because they have lived it too, and that nod is the laugh."
+     ],
+     "q": "What small everyday thing makes you smile or sigh? Tell me about it.",
+     "c": "Notice one tiny funny thing today, like a mismatched sock, and describe it in two sentences."
+    },
+    "de": {
+     "t": "Beobachtungshumor",
+     "g": "Die komische Seite alltäglicher Dinge finden, die jeder bemerkt und kaum einer erwähnt.",
+     "p": [
+      "Beginne mit einem kleinen, wahren Detail aus dem Alltag.",
+      "Füge deine ehrliche Reaktion hinzu: Das Komische liegt oft in deinem Gefühl dazu.",
+      "Alle nicken, weil sie es auch kennen, und dieses Nicken ist das Lachen."
+     ],
+     "q": "Welche kleine Alltagssache bringt dich zum Schmunzeln oder Seufzen? Erzähl!",
+     "c": "Bemerke heute eine winzige komische Sache, etwa zwei verschiedene Socken, und beschreibe sie in zwei Sätzen."
+    },
+    "es": {
+     "t": "El humor de observación",
+     "g": "Encontrar el lado gracioso de cosas cotidianas que todos notan y pocos mencionan.",
+     "p": [
+      "Empieza con un detalle pequeño y verdadero de la vida diaria.",
+      "Añade tu reacción sincera: lo gracioso suele ser cómo te sientes al respecto.",
+      "Todos asienten porque también lo han vivido, y ese asentir es la risa."
+     ],
+     "q": "¿Qué pequeña cosa cotidiana te hace sonreír o suspirar? Cuéntame.",
+     "c": "Fíjate hoy en algo diminuto y gracioso, como unos calcetines distintos, y descríbelo en dos frases."
+    },
+    "fr": {
+     "t": "L'humour d'observation",
+     "g": "Trouver le côté drôle des choses quotidiennes que tout le monde remarque sans en parler.",
+     "p": [
+      "Pars d'un petit détail vrai de la vie de tous les jours.",
+      "Ajoute ta réaction sincère : le drôle vient souvent de ce que tu en ressens.",
+      "Tout le monde acquiesce parce que chacun l'a vécu, et cet acquiescement est le rire."
+     ],
+     "q": "Quelle petite chose du quotidien te fait sourire ou soupirer ? Raconte-moi.",
+     "c": "Repère aujourd'hui un détail drôle, comme deux chaussettes dépareillées, et décris-le en deux phrases."
+    },
+    "it": {
+     "t": "L'umorismo osservativo",
+     "g": "Trovare il lato divertente di cose quotidiane che tutti notano e pochi dicono.",
+     "p": [
+      "Parti da un piccolo dettaglio vero della vita di ogni giorno.",
+      "Aggiungi la tua reazione sincera: il divertente sta spesso in ciò che provi.",
+      "Tutti annuiscono perché l'hanno vissuto, e quel cenno è la risata."
+     ],
+     "q": "Quale piccola cosa quotidiana ti fa sorridere o sospirare? Raccontamela.",
+     "c": "Nota oggi un dettaglio buffo, come due calzini spaiati, e descrivilo in due frasi."
+    },
+    "pt": {
+     "t": "O humor de observação",
+     "g": "Encontrar o lado engraçado de coisas do dia a dia que todos notam e poucos referem.",
+     "p": [
+      "Começa com um pequeno detalhe verdadeiro da vida diária.",
+      "Junta a tua reação sincera: o engraçado está muitas vezes no que sentes.",
+      "Todos acenam que sim porque também já viveram isso, e esse aceno é o riso."
+     ],
+     "q": "Que pequena coisa do dia a dia te faz sorrir ou suspirar? Conta-me.",
+     "c": "Repara hoje numa coisa minúscula e engraçada, como meias diferentes, e descreve-a em duas frases."
+    },
+    "pt_BR": {
+     "t": "O humor de observação",
+     "g": "Encontrar o lado engraçado de coisas do dia a dia que todo mundo nota e poucos comentam.",
+     "p": [
+      "Comece com um pequeno detalhe verdadeiro da vida diária.",
+      "Acrescente sua reação sincera: o engraçado muitas vezes está no que você sente.",
+      "Todo mundo concorda com a cabeça porque também já viveu isso, e esse aceno é a risada."
+     ],
+     "q": "Que coisinha do dia a dia faz você sorrir ou suspirar? Conta pra mim.",
+     "c": "Repare hoje em algo minúsculo e engraçado, como meias diferentes, e descreva em duas frases."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Laughing at yourself kindly",
+     "g": "Use light self-mockery to show confidence without putting yourself down.",
+     "p": [
+      "Joking about small quirks, like always losing keys, makes you relatable.",
+      "Choose harmless funny habits, never real insecurities.",
+      "People relax when they see you can smile at your own little mistakes."
+     ],
+     "q": "What is your funniest harmless habit?",
+     "c": "Share one small, funny quirk of yours with someone and let them smile."
+    },
+    "de": {
+     "t": "Freundlich über sich selbst lachen",
+     "g": "Leichte Selbstironie zeigt Selbstvertrauen, ohne dich kleinzumachen.",
+     "p": [
+      "Scherze über kleine Macken, etwa dass du ständig Schlüssel verlierst, das macht dich nahbar.",
+      "Wähle harmlose komische Gewohnheiten, niemals echte Unsicherheiten.",
+      "Menschen entspannen sich, wenn sie sehen, dass du über eigene Patzer lächeln kannst."
+     ],
+     "q": "Was ist deine lustigste harmlose Angewohnheit?",
+     "c": "Teile heute eine kleine komische Macke von dir mit jemandem und lass ihn schmunzeln."
+    },
+    "es": {
+     "t": "Reírte de ti con cariño",
+     "g": "La autoironía suave muestra confianza sin menospreciarte.",
+     "p": [
+      "Bromear sobre pequeñas manías, como perder siempre las llaves, te hace cercano.",
+      "Elige costumbres graciosas e inofensivas, nunca inseguridades reales.",
+      "La gente se relaja cuando ve que sonríes ante tus pequeños errores."
+     ],
+     "q": "¿Cuál es tu costumbre graciosa e inofensiva más rara?",
+     "c": "Comparte hoy con alguien una pequeña manía graciosa tuya y deja que sonría."
+    },
+    "fr": {
+     "t": "Rire de soi avec bienveillance",
+     "g": "Une légère autodérision montre ta confiance sans te rabaisser.",
+     "p": [
+      "Plaisanter sur de petites manies, comme perdre toujours ses clés, te rend proche des autres.",
+      "Choisis des habitudes drôles et inoffensives, jamais de vraies insécurités.",
+      "Les gens se détendent quand ils voient que tu souris de tes petites erreurs."
+     ],
+     "q": "Quelle est ton habitude amusante et inoffensive la plus drôle ?",
+     "c": "Partage aujourd'hui avec quelqu'un une petite manie drôle de toi et laisse-le sourire."
+    },
+    "it": {
+     "t": "Ridere di sé con gentilezza",
+     "g": "Una leggera autoironia mostra sicurezza senza sminuirti.",
+     "p": [
+      "Scherzare su piccole manie, come perdere sempre le chiavi, ti rende vicino agli altri.",
+      "Scegli abitudini buffe e innocue, mai insicurezze vere.",
+      "Le persone si rilassano quando vedono che sai sorridere dei tuoi piccoli errori."
+     ],
+     "q": "Qual è la tua abitudine buffa e innocua più strana?",
+     "c": "Condividi oggi con qualcuno una piccola mania buffa tua e lascia che sorrida."
+    },
+    "pt": {
+     "t": "Rir de ti com carinho",
+     "g": "Uma autoironia leve mostra confiança sem te menosprezar.",
+     "p": [
+      "Brincar com pequenas manias, como perder sempre as chaves, torna-te próximo.",
+      "Escolhe hábitos engraçados e inofensivos, nunca inseguranças verdadeiras.",
+      "As pessoas relaxam quando veem que sabes sorrir dos teus pequenos erros."
+     ],
+     "q": "Qual é o teu hábito engraçado e inofensivo mais esquisito?",
+     "c": "Partilha hoje com alguém uma pequena mania engraçada tua e deixa-o sorrir."
+    },
+    "pt_BR": {
+     "t": "Rir de si com carinho",
+     "g": "Uma autoironia leve mostra confiança sem diminuir você.",
+     "p": [
+      "Brincar com pequenas manias, como perder sempre as chaves, deixa você mais próximo.",
+      "Escolha hábitos engraçados e inofensivos, nunca inseguranças de verdade.",
+      "As pessoas relaxam quando veem que você sabe sorrir dos próprios errinhos."
+     ],
+     "q": "Qual é o seu hábito engraçado e inofensivo mais esquisito?",
+     "c": "Compartilhe hoje com alguém uma pequena mania engraçada sua e deixe a pessoa sorrir."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Funny faces and gestures",
+     "g": "See how expressions and small movements can double a story's fun.",
+     "p": [
+      "Raised eyebrows, wide eyes or a slow head tilt can say more than words.",
+      "A gesture should match the words, or contrast with them on purpose.",
+      "Silent comedy, like Charlie Chaplin's films, made the whole world laugh without speech."
+     ],
+     "q": "Which funny face do you pull most often?",
+     "c": "Tell a short story today and add exactly two expressive gestures."
+    },
+    "de": {
+     "t": "Grimassen und Gesten",
+     "g": "Sehen, wie Mimik und kleine Bewegungen den Spaß einer Geschichte verdoppeln.",
+     "p": [
+      "Hochgezogene Brauen, große Augen oder ein langsames Kopfneigen sagen mehr als Worte.",
+      "Eine Geste sollte zu den Worten passen oder bewusst dazu im Kontrast stehen.",
+      "Stummfilm-Komik, etwa die Filme von Charlie Chaplin, brachte die ganze Welt ohne Worte zum Lachen."
+     ],
+     "q": "Welche lustige Grimasse machst du am häufigsten?",
+     "c": "Erzähl heute eine kurze Geschichte und füge genau zwei ausdrucksstarke Gesten hinzu."
+    },
+    "es": {
+     "t": "Muecas y gestos",
+     "g": "Ver cómo la expresión y los pequeños movimientos duplican la diversión de una historia.",
+     "p": [
+      "Unas cejas levantadas, ojos muy abiertos o una lenta inclinación de cabeza dicen más que las palabras.",
+      "Un gesto debe encajar con las palabras o contrastar con ellas a propósito.",
+      "La comedia muda, como las películas de Charlie Chaplin, hizo reír al mundo sin hablar."
+     ],
+     "q": "¿Qué mueca graciosa haces con más frecuencia?",
+     "c": "Cuenta hoy una historia corta y añade exactamente dos gestos expresivos."
+    },
+    "fr": {
+     "t": "Grimaces et gestes",
+     "g": "Voir comment les expressions et les petits mouvements doublent le plaisir d'une histoire.",
+     "p": [
+      "Des sourcils levés, de grands yeux ou une lente inclinaison de la tête en disent plus que des mots.",
+      "Un geste doit accompagner les mots, ou les contredire exprès.",
+      "Le cinéma muet, comme les films de Charlie Chaplin, a fait rire le monde sans parole."
+     ],
+     "q": "Quelle grimace amusante fais-tu le plus souvent ?",
+     "c": "Raconte aujourd'hui une histoire courte et ajoute exactement deux gestes expressifs."
+    },
+    "it": {
+     "t": "Smorfie e gesti",
+     "g": "Vedere come espressioni e piccoli movimenti raddoppiano il divertimento di una storia.",
+     "p": [
+      "Sopracciglia alzate, occhi spalancati o una lenta inclinazione della testa dicono più delle parole.",
+      "Un gesto deve accompagnare le parole, o contrastarle di proposito.",
+      "La comicità muta, come i film di Charlie Chaplin, ha fatto ridere il mondo senza parole."
+     ],
+     "q": "Quale smorfia buffa fai più spesso?",
+     "c": "Oggi racconta una storia breve e aggiungi esattamente due gesti espressivi."
+    },
+    "pt": {
+     "t": "Caretas e gestos",
+     "g": "Ver como a expressão e pequenos movimentos duplicam a diversão de uma história.",
+     "p": [
+      "Sobrancelhas levantadas, olhos muito abertos ou uma inclinação lenta da cabeça dizem mais do que palavras.",
+      "Um gesto deve combinar com as palavras ou contrastar de propósito.",
+      "A comédia muda, como os filmes de Charlie Chaplin, fez o mundo rir sem falar."
+     ],
+     "q": "Que careta engraçada fazes com mais frequência?",
+     "c": "Hoje conta uma história curta e acrescenta exatamente dois gestos expressivos."
+    },
+    "pt_BR": {
+     "t": "Caretas e gestos",
+     "g": "Ver como a expressão e pequenos movimentos dobram a diversão de uma história.",
+     "p": [
+      "Sobrancelhas levantadas, olhos arregalados ou uma inclinação lenta da cabeça dizem mais que palavras.",
+      "Um gesto deve combinar com as palavras ou contrastar de propósito.",
+      "A comédia muda, como os filmes de Charlie Chaplin, fez o mundo rir sem falar."
+     ],
+     "q": "Que careta engraçada você faz com mais frequência?",
+     "c": "Hoje conte uma história curta e acrescente exatamente dois gestos expressivos."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Silly words",
+     "g": "Find out why some words are funny just by their sound.",
+     "p": [
+      "Words like wobble, kerfuffle or bamboozle make us smile.",
+      "Bouncy sounds like b, p, k and wobbly vowels often feel playful.",
+      "Dropping one silly word into a serious sentence creates instant fun."
+     ],
+     "q": "What is the funniest word in your language to say aloud?",
+     "c": "Use one silly word naturally in a sentence today and see who notices."
+    },
+    "de": {
+     "t": "Alberne Wörter",
+     "g": "Entdecken, warum manche Wörter allein durch ihren Klang komisch sind.",
+     "p": [
+      "Wörter wie Quatschkopf, Schnickschnack oder Kuddelmuddel bringen uns zum Lächeln.",
+      "Hüpfende Laute wie b, p, k und wackelige Vokale wirken oft verspielt.",
+      "Ein albernes Wort in einem ernsten Satz erzeugt sofort Spaß."
+     ],
+     "q": "Welches ist das lustigste Wort in deiner Sprache, wenn man es laut sagt?",
+     "c": "Benutze heute ein albernes Wort ganz natürlich in einem Satz und schau, wer es bemerkt."
+    },
+    "es": {
+     "t": "Palabras tontas",
+     "g": "Descubrir por qué algunas palabras son graciosas solo por su sonido.",
+     "p": [
+      "Palabras como cachivache, zambomba o chisgarabís nos hacen sonreír.",
+      "Los sonidos saltarines como b, p, k y las vocales rebotantes suenan juguetones.",
+      "Meter una palabra tonta en una frase seria crea diversión al instante."
+     ],
+     "q": "¿Cuál es la palabra más graciosa de tu idioma al decirla en voz alta?",
+     "c": "Usa hoy una palabra tonta con naturalidad en una frase y mira quién se da cuenta."
+    },
+    "fr": {
+     "t": "Les mots rigolos",
+     "g": "Découvrir pourquoi certains mots sont drôles rien que par leur son.",
+     "p": [
+      "Des mots comme zigouiller, bidule ou saperlipopette nous font sourire.",
+      "Les sons sautillants comme b, p, k et les voyelles rebondissantes sonnent joueurs.",
+      "Glisser un mot rigolo dans une phrase sérieuse crée de la gaieté tout de suite."
+     ],
+     "q": "Quel est le mot le plus drôle de ta langue à dire à voix haute ?",
+     "c": "Utilise aujourd'hui un mot rigolo naturellement dans une phrase et regarde qui le remarque."
+    },
+    "it": {
+     "t": "Parole buffe",
+     "g": "Scoprire perché alcune parole fanno ridere già solo per il suono.",
+     "p": [
+      "Parole come cianfrusaglia, bizzarro o parapiglia ci fanno sorridere.",
+      "I suoni rimbalzanti come b, p, c e le vocali saltellanti suonano giocosi.",
+      "Inserire una parola buffa in una frase seria crea subito allegria."
+     ],
+     "q": "Qual è la parola più buffa della tua lingua da dire ad alta voce?",
+     "c": "Usa oggi una parola buffa con naturalezza in una frase e guarda chi se ne accorge."
+    },
+    "pt": {
+     "t": "Palavras tolas",
+     "g": "Descobrir porque algumas palavras são engraçadas só pelo som.",
+     "p": [
+      "Palavras como bugiganga, zumbido ou espalhafato fazem-nos sorrir.",
+      "Os sons saltitões como b, p, c e as vogais ressaltantes soam brincalhões.",
+      "Pôr uma palavra tola numa frase séria cria diversão logo."
+     ],
+     "q": "Qual é a palavra mais engraçada da tua língua quando dita em voz alta?",
+     "c": "Usa hoje uma palavra tola com naturalidade numa frase e vê quem repara."
+    },
+    "pt_BR": {
+     "t": "Palavras bobas",
+     "g": "Descobrir por que algumas palavras são engraçadas só pelo som.",
+     "p": [
+      "Palavras como bugiganga, zoeira ou fuzuê fazem a gente sorrir.",
+      "Sons saltitantes como b, p, c e vogais ressaltadas soam brincalhões.",
+      "Pôr uma palavra boba numa frase séria cria diversão na hora."
+     ],
+     "q": "Qual é a palavra mais engraçada da sua língua quando dita em voz alta?",
+     "c": "Use hoje uma palavra boba com naturalidade numa frase e veja quem percebe."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Animal jokes",
+     "g": "Enjoy a safe, universal favourite: jokes about penguins, cows and chickens.",
+     "p": [
+      "Animals are funny everywhere because they act a bit like us.",
+      "Example: what do you call a bear with no teeth? A gummy bear.",
+      "Animal jokes are clean, kind and good for every age."
+     ],
+     "q": "What animal do you find funniest, and why?",
+     "c": "Make up one short animal joke today, even a silly one, and tell it."
+    },
+    "de": {
+     "t": "Tierwitze",
+     "g": "Einen sicheren, weltweiten Favoriten genießen: Witze über Pinguine, Kühe und Hühner.",
+     "p": [
+      "Tiere sind überall komisch, weil sie sich ein bisschen wie wir verhalten.",
+      "Beispiel: Wie nennt man einen Bären ohne Zähne? Gummibär.",
+      "Tierwitze sind sauber, freundlich und für jedes Alter geeignet."
+     ],
+     "q": "Welches Tier findest du am lustigsten, und warum?",
+     "c": "Denk dir heute einen kurzen Tierwitz aus, auch einen albernen, und erzähl ihn."
+    },
+    "es": {
+     "t": "Chistes de animales",
+     "g": "Disfrutar de un favorito seguro y universal: chistes de pingüinos, vacas y gallinas.",
+     "p": [
+      "Los animales son graciosos en todas partes porque se parecen un poco a nosotros.",
+      "Ejemplo: ¿Qué hace una vaca en el bosque? ¡Muuu-sica!",
+      "Los chistes de animales son limpios, amables y aptos para todas las edades."
+     ],
+     "q": "¿Qué animal te parece más gracioso y por qué?",
+     "c": "Inventa hoy un chiste corto de animales, aunque sea tonto, y cuéntalo."
+    },
+    "fr": {
+     "t": "Blagues d'animaux",
+     "g": "Savourer un favori sûr et universel : blagues de pingouins, de vaches et de poules.",
+     "p": [
+      "Les animaux sont drôles partout parce qu'ils nous ressemblent un peu.",
+      "Exemple : que dit une poule qui a pondu un œuf carré ? Aïe !",
+      "Les blagues d'animaux sont propres, gentilles et pour tous les âges."
+     ],
+     "q": "Quel animal trouves-tu le plus drôle, et pourquoi ?",
+     "c": "Invente aujourd'hui une courte blague d'animaux, même bête, et raconte-la."
+    },
+    "it": {
+     "t": "Barzellette sugli animali",
+     "g": "Godersi un preferito sicuro e universale: barzellette su pinguini, mucche e galline.",
+     "p": [
+      "Gli animali fanno ridere ovunque perché si comportano un po' come noi.",
+      "Esempio: cosa dice una mucca a un'altra mucca? Muuu-ovi un po' più in là!",
+      "Le barzellette sugli animali sono pulite, gentili e per ogni età."
+     ],
+     "q": "Quale animale trovi più buffo, e perché?",
+     "c": "Inventa oggi una barzelletta breve sugli animali, anche sciocca, e raccontala."
+    },
+    "pt": {
+     "t": "Piadas de animais",
+     "g": "Desfrutar de um favorito seguro e universal: piadas sobre pinguins, vacas e galinhas.",
+     "p": [
+      "Os animais são engraçados em todo o lado porque se parecem um pouco connosco.",
+      "Exemplo: o que é que a vaca disse ao touro? Estou muuuito contente por te ver!",
+      "As piadas de animais são limpas, simpáticas e para todas as idades."
+     ],
+     "q": "Que animal achas mais engraçado e porquê?",
+     "c": "Inventa hoje uma piada curta de animais, mesmo parva, e conta-a."
+    },
+    "pt_BR": {
+     "t": "Piadas de animais",
+     "g": "Curtir um favorito seguro e universal: piadas sobre pinguins, vacas e galinhas.",
+     "p": [
+      "Os animais são engraçados em todo lugar porque se parecem um pouco com a gente.",
+      "Exemplo: o que a vaca disse para o touro? Estou muuuito feliz de te ver!",
+      "Piadas de animais são limpas, gentis e para todas as idades."
+     ],
+     "q": "Que animal você acha mais engraçado e por quê?",
+     "c": "Invente hoje uma piada curta de animais, mesmo boba, e conte."
+    }
+   }
+  }
+ ]
+}

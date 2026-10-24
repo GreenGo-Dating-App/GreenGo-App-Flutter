@@ -1,0 +1,835 @@
+{
+ "topic": "casual_chat",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Saying hello",
+     "g": "Learn friendly ways to greet someone and open a relaxed chat.",
+     "p": [
+      "A smile in your words helps: Hi, hello or hey all work well.",
+      "Add a tiny question after the greeting, like How are you today?",
+      "Match the other person's energy: calm with calm, cheerful with cheerful."
+     ],
+     "q": "How do people usually greet each other where you live?",
+     "c": "Say hello to your Buddy in a way that feels like you, then ask one question."
+    },
+    "de": {
+     "t": "Hallo sagen",
+     "g": "Lerne freundliche Begrüßungen kennen und wie du ein entspanntes Gespräch beginnst.",
+     "p": [
+      "Ein Lächeln in der Stimme hilft: Hallo, Hi oder Servus passen immer.",
+      "Häng nach der Begrüßung eine kleine Frage an, etwa Wie geht's dir heute?",
+      "Pass dich der Stimmung an: ruhig auf ruhig, fröhlich auf fröhlich."
+     ],
+     "q": "Wie begrüßt man sich bei dir zu Hause normalerweise?",
+     "c": "Begrüße deinen Buddy so, wie es zu dir passt, und stelle eine Frage."
+    },
+    "es": {
+     "t": "Saludar",
+     "g": "Aprende formas amables de saludar y de empezar una charla relajada.",
+     "p": [
+      "Una sonrisa en tus palabras ayuda: hola, buenas o qué tal funcionan siempre.",
+      "Añade una preguntita tras el saludo, como ¿Cómo va tu día?",
+      "Adáptate al ánimo del otro: tranquilo con tranquilo, alegre con alegre."
+     ],
+     "q": "¿Cómo se saluda la gente normalmente en el lugar donde vives?",
+     "c": "Saluda a tu Buddy a tu manera y hazle una pregunta."
+    },
+    "fr": {
+     "t": "Dire bonjour",
+     "g": "Apprends des façons chaleureuses de saluer et d'entamer une discussion détendue.",
+     "p": [
+      "Un sourire dans la voix aide : salut, bonjour ou coucou font très bien l'affaire.",
+      "Ajoute une petite question après le salut, comme Comment se passe ta journée ?",
+      "Suis l'humeur de l'autre : calme avec calme, joyeux avec joyeux."
+     ],
+     "q": "Comment les gens se saluent-ils d'habitude là où tu vis ?",
+     "c": "Salue ton Buddy à ta façon, puis pose-lui une question."
+    },
+    "it": {
+     "t": "Dire ciao",
+     "g": "Impara modi cordiali per salutare e iniziare una chiacchierata rilassata.",
+     "p": [
+      "Un sorriso nelle parole aiuta: ciao, salve o ehi vanno sempre bene.",
+      "Aggiungi una piccola domanda dopo il saluto, come Come va oggi?",
+      "Segui l'umore dell'altro: calmo con chi è calmo, allegro con chi è allegro."
+     ],
+     "q": "Come si salutano di solito le persone dove vivi?",
+     "c": "Saluta il tuo Buddy a modo tuo e fagli una domanda."
+    },
+    "pt": {
+     "t": "Dizer olá",
+     "g": "Aprende formas simpáticas de cumprimentar e de começar uma conversa descontraída.",
+     "p": [
+      "Um sorriso nas palavras ajuda: olá, bom dia ou viva servem sempre.",
+      "Junta uma perguntinha ao cumprimento, como Como está a correr o teu dia?",
+      "Acompanha o ânimo do outro: calmo com calmo, alegre com alegre."
+     ],
+     "q": "Como é que as pessoas costumam cumprimentar-se onde vives?",
+     "c": "Cumprimenta o teu Buddy à tua maneira e faz-lhe uma pergunta."
+    },
+    "pt_BR": {
+     "t": "Dizer oi",
+     "g": "Aprenda jeitos simpáticos de cumprimentar e de começar uma conversa leve.",
+     "p": [
+      "Um sorriso nas palavras ajuda: oi, olá ou e aí funcionam sempre.",
+      "Coloque uma perguntinha depois do oi, tipo Como está sendo o seu dia?",
+      "Acompanhe o astral do outro: calmo com calmo, animado com animado."
+     ],
+     "q": "Como as pessoas costumam se cumprimentar onde você mora?",
+     "c": "Cumprimente seu Buddy do seu jeito e faça uma pergunta."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How was your day",
+     "g": "Share the small moments that made your day and invite the other person to do the same.",
+     "p": [
+      "Skip just fine: name one small thing, like a good coffee or a funny moment.",
+      "Describe a feeling in a few words, such as busy, calm or pleasantly tired.",
+      "Return the question with And how was yours?"
+     ],
+     "q": "What was the nicest small moment of your day so far?",
+     "c": "Tell your Buddy one tiny good moment from today, then ask about theirs."
+    },
+    "de": {
+     "t": "Wie war dein Tag",
+     "g": "Erzähle von kleinen Momenten deines Tages und lade dein Gegenüber ein, es auch zu tun.",
+     "p": [
+      "Statt nur gut nenne eine Kleinigkeit, etwa einen guten Kaffee oder einen Lacher.",
+      "Beschreibe ein Gefühl mit wenigen Worten: stressig, ruhig oder angenehm müde.",
+      "Gib die Frage zurück: Und wie war deiner?"
+     ],
+     "q": "Was war der schönste kleine Moment deines Tages bisher?",
+     "c": "Erzähle deinem Buddy einen kleinen schönen Moment von heute und frag nach seinem."
+    },
+    "es": {
+     "t": "¿Qué tal tu día?",
+     "g": "Cuenta los pequeños momentos de tu día e invita al otro a hacer lo mismo.",
+     "p": [
+      "En vez de solo bien, menciona algo pequeño: un buen café o un momento gracioso.",
+      "Describe cómo te sientes en pocas palabras: ocupado, tranquilo o cansado pero contento.",
+      "Devuelve la pregunta con ¿Y el tuyo qué tal?"
+     ],
+     "q": "¿Cuál fue el momento más agradable de tu día hasta ahora?",
+     "c": "Cuéntale a tu Buddy un momento bonito de hoy y pregúntale por el suyo."
+    },
+    "fr": {
+     "t": "Ta journée",
+     "g": "Partage les petits moments de ta journée et invite l'autre à faire pareil.",
+     "p": [
+      "Au lieu de bien tout court, cite un détail : un bon café ou un fou rire.",
+      "Décris ton état en quelques mots : occupé, calme ou agréablement fatigué.",
+      "Renvoie la question avec Et toi, ta journée ?"
+     ],
+     "q": "Quel a été le plus joli petit moment de ta journée jusqu'ici ?",
+     "c": "Raconte à ton Buddy un petit moment sympa d'aujourd'hui, puis demande le sien."
+    },
+    "it": {
+     "t": "Com'è andata la giornata",
+     "g": "Racconta i piccoli momenti della tua giornata e invita l'altro a fare lo stesso.",
+     "p": [
+      "Invece di solo bene, nomina una piccola cosa: un buon caffè o un momento buffo.",
+      "Descrivi come ti senti in poche parole: impegnato, tranquillo o stanco ma contento.",
+      "Rimanda la domanda con E la tua com'è andata?"
+     ],
+     "q": "Qual è stato il momento più bello della tua giornata finora?",
+     "c": "Racconta al tuo Buddy un piccolo momento bello di oggi e chiedi del suo."
+    },
+    "pt": {
+     "t": "Como foi o teu dia",
+     "g": "Partilha os pequenos momentos do teu dia e convida o outro a fazer o mesmo.",
+     "p": [
+      "Em vez de só bem, diz uma coisa pequena: um bom café ou um momento engraçado.",
+      "Descreve como te sentes em poucas palavras: ocupado, calmo ou cansado mas contente.",
+      "Devolve a pergunta com E o teu, como foi?"
+     ],
+     "q": "Qual foi o momento mais agradável do teu dia até agora?",
+     "c": "Conta ao teu Buddy um momento bom de hoje e pergunta pelo dele."
+    },
+    "pt_BR": {
+     "t": "Como foi o seu dia",
+     "g": "Compartilhe os pequenos momentos do seu dia e convide o outro a fazer o mesmo.",
+     "p": [
+      "Em vez de só bem, cite uma coisa pequena: um café gostoso ou um momento engraçado.",
+      "Descreva como você está em poucas palavras: corrido, tranquilo ou cansado mas feliz.",
+      "Devolva a pergunta com E o seu, como foi?"
+     ],
+     "q": "Qual foi o momento mais gostoso do seu dia até agora?",
+     "c": "Conte ao seu Buddy um momento bom de hoje e pergunte pelo dele."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Introducing yourself",
+     "g": "Introduce yourself with your name, where you're from and one fun fact.",
+     "p": [
+      "Start simple: your name, then where you are from or live.",
+      "Add one fun fact that is easy to talk about, like a hobby or a favourite food.",
+      "Share only what you are comfortable with; no need for full details like your address."
+     ],
+     "q": "What is one fun fact about you that people usually enjoy hearing?",
+     "c": "Write a three-line intro: name, place, one fun fact. Keep it private-friendly."
+    },
+    "de": {
+     "t": "Sich vorstellen",
+     "g": "Stelle dich mit Namen, Herkunft und einer netten Besonderheit vor.",
+     "p": [
+      "Fang einfach an: dein Name, dann woher du kommst oder wo du wohnst.",
+      "Füge einen leichten Fun Fact hinzu, etwa ein Hobby oder ein Lieblingsessen.",
+      "Teile nur, was dir angenehm ist; deine Adresse gehört nicht dazu."
+     ],
+     "q": "Welchen Fun Fact über dich hören Leute meistens gern?",
+     "c": "Schreibe eine Vorstellung in drei Zeilen: Name, Ort, ein Fun Fact. Bleib privat."
+    },
+    "es": {
+     "t": "Presentarte",
+     "g": "Preséntate con tu nombre, de dónde eres y un dato curioso.",
+     "p": [
+      "Empieza fácil: tu nombre y luego de dónde eres o dónde vives.",
+      "Añade un dato curioso fácil de comentar, como una afición o una comida favorita.",
+      "Comparte solo lo que te resulte cómodo; no hace falta dar datos como tu dirección."
+     ],
+     "q": "¿Qué dato curioso sobre ti suele gustarle a la gente?",
+     "c": "Escribe una presentación de tres líneas: nombre, lugar y un dato curioso. Sin datos privados."
+    },
+    "fr": {
+     "t": "Se présenter",
+     "g": "Présente-toi avec ton prénom, ton origine et une anecdote sympa.",
+     "p": [
+      "Commence simplement : ton prénom, puis d'où tu viens ou où tu habites.",
+      "Ajoute une anecdote facile à raconter, comme un loisir ou un plat préféré.",
+      "Ne partage que ce qui te met à l'aise ; pas besoin de donner ton adresse."
+     ],
+     "q": "Quelle anecdote sur toi plaît généralement aux gens ?",
+     "c": "Écris une présentation en trois lignes : prénom, lieu, une anecdote. Reste discret."
+    },
+    "it": {
+     "t": "Presentarsi",
+     "g": "Presentati con il tuo nome, da dove vieni e una curiosità su di te.",
+     "p": [
+      "Parti semplice: il tuo nome, poi da dove vieni o dove vivi.",
+      "Aggiungi una curiosità facile da raccontare, come un hobby o un cibo preferito.",
+      "Condividi solo ciò che ti fa stare a tuo agio; l'indirizzo di casa non serve."
+     ],
+     "q": "Quale curiosità su di te piace di solito alle persone?",
+     "c": "Scrivi una presentazione in tre righe: nome, luogo, una curiosità. Senza dati privati."
+    },
+    "pt": {
+     "t": "Apresentar-te",
+     "g": "Apresenta-te com o teu nome, de onde és e uma curiosidade sobre ti.",
+     "p": [
+      "Começa simples: o teu nome e depois de onde és ou onde vives.",
+      "Junta uma curiosidade fácil de comentar, como um passatempo ou um prato favorito.",
+      "Partilha só o que te for confortável; não é preciso dar a tua morada."
+     ],
+     "q": "Que curiosidade sobre ti costuma agradar às pessoas?",
+     "c": "Escreve uma apresentação em três linhas: nome, local, uma curiosidade. Sem dados privados."
+    },
+    "pt_BR": {
+     "t": "Se apresentar",
+     "g": "Apresente-se com seu nome, de onde você é e uma curiosidade sobre você.",
+     "p": [
+      "Comece simples: seu nome e depois de onde você é ou onde mora.",
+      "Acrescente uma curiosidade fácil de comentar, como um hobby ou comida favorita.",
+      "Compartilhe só o que for confortável; não precisa dar seu endereço."
+     ],
+     "q": "Que curiosidade sobre você as pessoas costumam gostar?",
+     "c": "Escreva uma apresentação em três linhas: nome, lugar, uma curiosidade. Sem dados privados."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Where you live",
+     "g": "Describe your town, neighbourhood or city in a way that makes others curious.",
+     "p": [
+      "Name the place and one thing you like about it, such as a park or a view.",
+      "Use simple descriptions: quiet, busy, green, near the sea, full of cafés.",
+      "Talk about the area in general; there is no need to share your exact address."
+     ],
+     "q": "What do you like most about the place where you live?",
+     "c": "Describe your area to your Buddy in two sentences without giving a street name."
+    },
+    "de": {
+     "t": "Wo du wohnst",
+     "g": "Beschreibe deinen Ort, dein Viertel oder deine Stadt so, dass andere neugierig werden.",
+     "p": [
+      "Nenne den Ort und etwas, das du daran magst, etwa einen Park oder eine Aussicht.",
+      "Nutze einfache Wörter: ruhig, lebhaft, grün, am Meer, voller Cafés.",
+      "Sprich über die Gegend allgemein; deine genaue Adresse brauchst du nicht zu nennen."
+     ],
+     "q": "Was gefällt dir an deinem Wohnort am meisten?",
+     "c": "Beschreibe deine Gegend in zwei Sätzen, ohne einen Straßennamen zu nennen."
+    },
+    "es": {
+     "t": "Dónde vives",
+     "g": "Describe tu pueblo, barrio o ciudad de forma que despierte curiosidad.",
+     "p": [
+      "Nombra el lugar y algo que te guste de él, como un parque o una vista.",
+      "Usa descripciones sencillas: tranquilo, animado, verde, junto al mar, lleno de cafés.",
+      "Habla de la zona en general; no hace falta dar tu dirección exacta."
+     ],
+     "q": "¿Qué es lo que más te gusta del lugar donde vives?",
+     "c": "Describe tu zona a tu Buddy en dos frases sin decir el nombre de tu calle."
+    },
+    "fr": {
+     "t": "Où tu habites",
+     "g": "Décris ta ville, ton quartier ou ton village de façon à donner envie d'en savoir plus.",
+     "p": [
+      "Cite le lieu et une chose que tu y aimes, comme un parc ou une vue.",
+      "Utilise des mots simples : calme, animé, vert, près de la mer, plein de cafés.",
+      "Parle du coin en général ; inutile de donner ton adresse exacte."
+     ],
+     "q": "Qu'est-ce que tu préfères dans l'endroit où tu habites ?",
+     "c": "Décris ton quartier à ton Buddy en deux phrases, sans nommer ta rue."
+    },
+    "it": {
+     "t": "Dove vivi",
+     "g": "Descrivi il tuo paese, quartiere o città in modo da incuriosire gli altri.",
+     "p": [
+      "Nomina il posto e una cosa che ti piace, come un parco o un panorama.",
+      "Usa descrizioni semplici: tranquillo, vivace, verde, vicino al mare, pieno di bar.",
+      "Parla della zona in generale; non serve dare il tuo indirizzo preciso."
+     ],
+     "q": "Cosa ti piace di più del posto in cui vivi?",
+     "c": "Descrivi la tua zona al tuo Buddy in due frasi, senza dire il nome della via."
+    },
+    "pt": {
+     "t": "Onde vives",
+     "g": "Descreve a tua terra, bairro ou cidade de forma a despertar curiosidade.",
+     "p": [
+      "Diz o nome do local e algo de que gostes, como um jardim ou uma vista.",
+      "Usa descrições simples: calmo, animado, verde, junto ao mar, cheio de cafés.",
+      "Fala da zona em geral; não é preciso dar a tua morada exata."
+     ],
+     "q": "De que é que gostas mais no sítio onde vives?",
+     "c": "Descreve a tua zona ao teu Buddy em duas frases, sem dizeres o nome da rua."
+    },
+    "pt_BR": {
+     "t": "Onde você mora",
+     "g": "Descreva sua cidade ou bairro de um jeito que desperte a curiosidade dos outros.",
+     "p": [
+      "Diga o lugar e algo de que você gosta nele, como uma praça ou uma vista.",
+      "Use descrições simples: tranquilo, movimentado, verde, perto do mar, cheio de cafés.",
+      "Fale da região em geral; não precisa dar seu endereço exato."
+     ],
+     "q": "Do que você mais gosta no lugar onde mora?",
+     "c": "Descreva sua região ao seu Buddy em duas frases, sem dizer o nome da rua."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The weather chat",
+     "g": "See why weather is a classic opener and how to take the chat further.",
+     "p": [
+      "Weather is neutral and shared, so it is an easy way to start talking.",
+      "Follow it with a personal link: Perfect weather for a walk, do you like walking?",
+      "If the chat stalls, move from weather to plans, food or favourite seasons."
+     ],
+     "q": "What kind of weather makes you happiest?",
+     "c": "Start a chat with a weather comment, then steer it to something you enjoy."
+    },
+    "de": {
+     "t": "Das Wettergespräch",
+     "g": "Erfahre, warum das Wetter ein klassischer Einstieg ist und wie das Gespräch weitergeht.",
+     "p": [
+      "Das Wetter ist neutral und betrifft alle, darum ist es ein leichter Einstieg.",
+      "Knüpfe etwas Persönliches an: Schönes Spazierwetter, gehst du gern spazieren?",
+      "Wenn es stockt, wechsle vom Wetter zu Plänen, Essen oder Lieblingsjahreszeiten."
+     ],
+     "q": "Bei welchem Wetter bist du am glücklichsten?",
+     "c": "Beginne mit einem Wetterkommentar und lenke dann auf etwas, das du magst."
+    },
+    "es": {
+     "t": "Hablar del tiempo",
+     "g": "Descubre por qué el tiempo es un clásico para empezar y cómo seguir la charla.",
+     "p": [
+      "El tiempo es neutro y nos afecta a todos, así que es una entrada fácil.",
+      "Enlázalo con algo personal: Buen día para pasear, ¿te gusta caminar?",
+      "Si la charla se atasca, pasa del tiempo a planes, comida o estaciones favoritas."
+     ],
+     "q": "¿Qué tipo de tiempo te hace más feliz?",
+     "c": "Empieza una charla con un comentario del tiempo y llévala a algo que te guste."
+    },
+    "fr": {
+     "t": "Parler de la météo",
+     "g": "Découvre pourquoi la météo est un classique pour démarrer et comment aller plus loin.",
+     "p": [
+      "La météo est neutre et concerne tout le monde : une entrée en matière facile.",
+      "Enchaîne avec une touche perso : Beau temps pour marcher, tu aimes ça ?",
+      "Si la discussion s'essouffle, passe de la météo aux projets, à la cuisine ou aux saisons."
+     ],
+     "q": "Quel temps te rend le plus heureux ?",
+     "c": "Lance une discussion avec un mot sur la météo, puis oriente vers un sujet que tu aimes."
+    },
+    "it": {
+     "t": "Parlare del tempo",
+     "g": "Scopri perché il meteo è un classico per iniziare e come proseguire la chiacchierata.",
+     "p": [
+      "Il meteo è neutro e riguarda tutti, quindi è un modo facile per cominciare.",
+      "Aggiungi un tocco personale: Bella giornata per camminare, ti piace?",
+      "Se la conversazione si ferma, passa dal meteo a progetti, cibo o stagioni preferite."
+     ],
+     "q": "Che tempo ti rende più felice?",
+     "c": "Inizia con un commento sul meteo, poi porta il discorso su qualcosa che ti piace."
+    },
+    "pt": {
+     "t": "Conversa sobre o tempo",
+     "g": "Descobre porque é que o tempo é um clássico para começar e como continuar a conversa.",
+     "p": [
+      "O tempo é neutro e afeta todos, por isso é uma entrada fácil.",
+      "Liga-o a algo pessoal: Bom dia para passear, gostas de caminhar?",
+      "Se a conversa parar, passa do tempo para planos, comida ou estações favoritas."
+     ],
+     "q": "Que tipo de tempo te deixa mais feliz?",
+     "c": "Começa uma conversa com um comentário sobre o tempo e leva-a para algo de que gostes."
+    },
+    "pt_BR": {
+     "t": "Papo sobre o clima",
+     "g": "Descubra por que o clima é um clássico para começar e como esticar a conversa.",
+     "p": [
+      "O clima é neutro e vale para todo mundo, então é uma entrada fácil.",
+      "Ligue a algo pessoal: Dia bom para passear, você gosta de caminhar?",
+      "Se a conversa travar, passe do clima para planos, comida ou estações favoritas."
+     ],
+     "q": "Que tipo de clima deixa você mais feliz?",
+     "c": "Comece um papo com um comentário sobre o clima e leve para algo de que você gosta."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Favourite foods",
+     "g": "Chat about dishes you love and ones you would rather skip.",
+     "p": [
+      "Name a dish and say why you love it: the taste, a memory or who cooks it.",
+      "It is fine to say what you don't like; keep it light, like not my favourite.",
+      "Ask about their favourite dish; food stories open friendly chats."
+     ],
+     "q": "What dish makes you instantly happy?",
+     "c": "Describe your favourite dish in two sentences and ask for your Buddy's."
+    },
+    "de": {
+     "t": "Lieblingsessen",
+     "g": "Sprich über Gerichte, die du liebst, und solche, die du lieber auslässt.",
+     "p": [
+      "Nenne ein Gericht und sage, warum du es magst: der Geschmack, eine Erinnerung oder wer es kocht.",
+      "Du darfst sagen, was du nicht magst; bleib locker, etwa nicht mein Favorit.",
+      "Frag nach dem Lieblingsgericht des anderen; Essensgeschichten öffnen Gespräche."
+     ],
+     "q": "Welches Gericht macht dich sofort glücklich?",
+     "c": "Beschreibe dein Lieblingsgericht in zwei Sätzen und frag nach dem deines Buddys."
+    },
+    "es": {
+     "t": "Comidas favoritas",
+     "g": "Charla sobre platos que te encantan y otros que prefieres evitar.",
+     "p": [
+      "Nombra un plato y di por qué te gusta: el sabor, un recuerdo o quién lo cocina.",
+      "Está bien decir lo que no te gusta; hazlo con ligereza, como no es mi favorito.",
+      "Pregunta por su plato favorito; las historias de comida abren conversaciones."
+     ],
+     "q": "¿Qué plato te alegra al instante?",
+     "c": "Describe tu plato favorito en dos frases y pregunta por el de tu Buddy."
+    },
+    "fr": {
+     "t": "Plats préférés",
+     "g": "Parle des plats que tu adores et de ceux que tu laisses volontiers.",
+     "p": [
+      "Cite un plat et dis pourquoi tu l'aimes : le goût, un souvenir ou qui le prépare.",
+      "Tu peux dire ce que tu n'aimes pas ; reste léger, par exemple pas mon préféré.",
+      "Demande son plat préféré ; les histoires de cuisine ouvrent les discussions."
+     ],
+     "q": "Quel plat te rend instantanément heureux ?",
+     "c": "Décris ton plat préféré en deux phrases et demande celui de ton Buddy."
+    },
+    "it": {
+     "t": "Cibi preferiti",
+     "g": "Chiacchiera dei piatti che ami e di quelli che salteresti volentieri.",
+     "p": [
+      "Nomina un piatto e dì perché ti piace: il sapore, un ricordo o chi lo cucina.",
+      "Puoi dire cosa non ti piace; resta leggero, ad esempio non è il mio preferito.",
+      "Chiedi il piatto preferito dell'altro; le storie di cibo aprono le conversazioni."
+     ],
+     "q": "Quale piatto ti rende subito felice?",
+     "c": "Descrivi il tuo piatto preferito in due frasi e chiedi quello del tuo Buddy."
+    },
+    "pt": {
+     "t": "Comidas favoritas",
+     "g": "Conversa sobre pratos que adoras e outros que preferes evitar.",
+     "p": [
+      "Diz o nome de um prato e porque gostas dele: o sabor, uma memória ou quem o cozinha.",
+      "Podes dizer o que não gostas; fá-lo com leveza, como não é o meu favorito.",
+      "Pergunta pelo prato favorito do outro; as histórias de comida abrem conversas."
+     ],
+     "q": "Que prato te deixa logo feliz?",
+     "c": "Descreve o teu prato favorito em duas frases e pergunta pelo do teu Buddy."
+    },
+    "pt_BR": {
+     "t": "Comidas favoritas",
+     "g": "Converse sobre pratos que você ama e outros que prefere evitar.",
+     "p": [
+      "Diga o nome de um prato e por que gosta dele: o sabor, uma lembrança ou quem faz.",
+      "Pode dizer o que não curte; fale com leveza, tipo não é o meu favorito.",
+      "Pergunte pelo prato favorito do outro; histórias de comida abrem conversas."
+     ],
+     "q": "Que prato deixa você feliz na hora?",
+     "c": "Descreva seu prato favorito em duas frases e pergunte pelo do seu Buddy."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Breakfast habits",
+     "g": "Talk about how people start the day, from sweet to savoury, early to late.",
+     "p": [
+      "Say what you usually eat and when; even skipping breakfast is a fine answer.",
+      "Breakfast differs by culture: toast, rice, eggs, pastries, porridge or fruit.",
+      "Ask what a typical breakfast looks like for the other person."
+     ],
+     "q": "What does your ideal breakfast look like?",
+     "c": "Describe your breakfast today, then ask your Buddy about theirs."
+    },
+    "de": {
+     "t": "Frühstücksgewohnheiten",
+     "g": "Sprich darüber, wie Menschen in den Tag starten, süß oder herzhaft, früh oder spät.",
+     "p": [
+      "Sage, was du meist isst und wann; auch kein Frühstück ist eine gute Antwort.",
+      "Frühstück ist je nach Kultur anders: Toast, Reis, Eier, Gebäck, Haferbrei oder Obst.",
+      "Frag, wie ein typisches Frühstück beim anderen aussieht."
+     ],
+     "q": "Wie sieht dein ideales Frühstück aus?",
+     "c": "Beschreibe dein heutiges Frühstück und frag deinen Buddy nach seinem."
+    },
+    "es": {
+     "t": "Hábitos de desayuno",
+     "g": "Habla de cómo empieza el día la gente, dulce o salado, temprano o tarde.",
+     "p": [
+      "Di qué sueles comer y cuándo; incluso saltarte el desayuno es una buena respuesta.",
+      "El desayuno cambia según la cultura: tostadas, arroz, huevos, bollería, gachas o fruta.",
+      "Pregunta cómo es un desayuno típico para la otra persona."
+     ],
+     "q": "¿Cómo sería tu desayuno ideal?",
+     "c": "Describe tu desayuno de hoy y pregunta por el de tu Buddy."
+    },
+    "fr": {
+     "t": "Habitudes de petit-déjeuner",
+     "g": "Parle de la façon dont on commence la journée, sucré ou salé, tôt ou tard.",
+     "p": [
+      "Dis ce que tu manges d'habitude et quand ; sauter le petit-déjeuner est une réponse valable.",
+      "Le petit-déjeuner varie selon les cultures : tartines, riz, œufs, viennoiseries, porridge, fruits.",
+      "Demande à quoi ressemble un petit-déjeuner typique pour l'autre."
+     ],
+     "q": "À quoi ressemble ton petit-déjeuner idéal ?",
+     "c": "Décris ton petit-déjeuner d'aujourd'hui, puis demande celui de ton Buddy."
+    },
+    "it": {
+     "t": "Abitudini a colazione",
+     "g": "Parla di come si comincia la giornata, dolce o salato, presto o tardi.",
+     "p": [
+      "Dì cosa mangi di solito e quando; anche saltare la colazione è una risposta valida.",
+      "La colazione cambia da cultura a cultura: toast, riso, uova, cornetti, porridge o frutta.",
+      "Chiedi com'è una colazione tipica per l'altra persona."
+     ],
+     "q": "Com'è la tua colazione ideale?",
+     "c": "Descrivi la tua colazione di oggi e chiedi quella del tuo Buddy."
+    },
+    "pt": {
+     "t": "Hábitos ao pequeno-almoço",
+     "g": "Fala sobre como as pessoas começam o dia, doce ou salgado, cedo ou tarde.",
+     "p": [
+      "Diz o que costumas comer e quando; até saltar o pequeno-almoço é uma boa resposta.",
+      "O pequeno-almoço muda com a cultura: torradas, arroz, ovos, pastelaria, papas ou fruta.",
+      "Pergunta como é um pequeno-almoço típico para o outro."
+     ],
+     "q": "Como seria o teu pequeno-almoço ideal?",
+     "c": "Descreve o teu pequeno-almoço de hoje e pergunta pelo do teu Buddy."
+    },
+    "pt_BR": {
+     "t": "Hábitos de café da manhã",
+     "g": "Fale sobre como as pessoas começam o dia, doce ou salgado, cedo ou tarde.",
+     "p": [
+      "Diga o que costuma comer e quando; até pular o café da manhã é uma boa resposta.",
+      "O café da manhã muda com a cultura: pão, arroz, ovos, doces, mingau ou fruta.",
+      "Pergunte como é um café da manhã típico para o outro."
+     ],
+     "q": "Como seria o seu café da manhã ideal?",
+     "c": "Descreva seu café da manhã de hoje e pergunte pelo do seu Buddy."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Coffee or tea",
+     "g": "Compare favourite drinks, little rituals and the places you enjoy them.",
+     "p": [
+      "Say which you prefer and why: the taste, the warmth or the ritual.",
+      "Small rituals make great stories: a first cup, a tea break, a favourite mug.",
+      "Many people drink neither; water or juice are great topics too."
+     ],
+     "q": "Coffee, tea or something else: what is your go-to drink?",
+     "c": "Share your favourite drink ritual and ask your Buddy about theirs."
+    },
+    "de": {
+     "t": "Kaffee oder Tee",
+     "g": "Vergleiche Lieblingsgetränke, kleine Rituale und die Orte, an denen du sie genießt.",
+     "p": [
+      "Sage, was du bevorzugst und warum: Geschmack, Wärme oder das Ritual.",
+      "Kleine Rituale ergeben gute Geschichten: die erste Tasse, die Teepause, die Lieblingstasse.",
+      "Viele trinken keins von beiden; Wasser oder Saft sind auch tolle Themen."
+     ],
+     "q": "Kaffee, Tee oder etwas anderes: Was ist dein Lieblingsgetränk?",
+     "c": "Teile dein liebstes Getränkeritual und frag deinen Buddy nach seinem."
+    },
+    "es": {
+     "t": "¿Café o té?",
+     "g": "Compara bebidas favoritas, pequeños rituales y los lugares donde las disfrutas.",
+     "p": [
+      "Di cuál prefieres y por qué: el sabor, el calor o el ritual.",
+      "Los pequeños rituales dan buenas historias: la primera taza, la pausa del té, la taza favorita.",
+      "Mucha gente no toma ninguno; el agua o el zumo también son buenos temas."
+     ],
+     "q": "Café, té u otra cosa: ¿cuál es tu bebida de siempre?",
+     "c": "Comparte tu ritual favorito con una bebida y pregunta por el de tu Buddy."
+    },
+    "fr": {
+     "t": "Café ou thé",
+     "g": "Compare les boissons préférées, les petits rituels et les endroits où tu les savoures.",
+     "p": [
+      "Dis ce que tu préfères et pourquoi : le goût, la chaleur ou le rituel.",
+      "Les petits rituels font de belles histoires : la première tasse, la pause thé, le mug préféré.",
+      "Beaucoup ne boivent ni l'un ni l'autre ; l'eau ou le jus sont aussi de bons sujets."
+     ],
+     "q": "Café, thé ou autre chose : quelle est ta boisson de prédilection ?",
+     "c": "Partage ton rituel de boisson préféré et demande celui de ton Buddy."
+    },
+    "it": {
+     "t": "Caffè o tè",
+     "g": "Confronta le bevande preferite, i piccoli rituali e i posti dove le gusti.",
+     "p": [
+      "Dì quale preferisci e perché: il sapore, il calore o il rituale.",
+      "I piccoli rituali fanno belle storie: la prima tazza, la pausa tè, la tazza preferita.",
+      "Molti non bevono né l'uno né l'altro; anche acqua o succo sono ottimi argomenti."
+     ],
+     "q": "Caffè, tè o altro: qual è la tua bevanda di sempre?",
+     "c": "Condividi il tuo rituale preferito con una bevanda e chiedi quello del tuo Buddy."
+    },
+    "pt": {
+     "t": "Café ou chá",
+     "g": "Compara bebidas favoritas, pequenos rituais e os sítios onde as apreciaste.",
+     "p": [
+      "Diz qual preferes e porquê: o sabor, o calor ou o ritual.",
+      "Os pequenos rituais dão boas histórias: a primeira chávena, a pausa do chá, a caneca favorita.",
+      "Muita gente não bebe nenhum; água ou sumo também são bons temas."
+     ],
+     "q": "Café, chá ou outra coisa: qual é a tua bebida de sempre?",
+     "c": "Partilha o teu ritual favorito com uma bebida e pergunta pelo do teu Buddy."
+    },
+    "pt_BR": {
+     "t": "Café ou chá",
+     "g": "Compare bebidas favoritas, pequenos rituais e os lugares onde você curte cada uma.",
+     "p": [
+      "Diga qual prefere e por quê: o sabor, o calorzinho ou o ritual.",
+      "Pequenos rituais rendem boas histórias: a primeira xícara, a pausa do chá, a caneca favorita.",
+      "Muita gente não toma nenhum dos dois; água ou suco também são ótimos temas."
+     ],
+     "q": "Café, chá ou outra coisa: qual é a sua bebida de sempre?",
+     "c": "Compartilhe seu ritual favorito com uma bebida e pergunte pelo do seu Buddy."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Weekend plans",
+     "g": "Talk about your weekend plans, big or tiny, and ask about theirs.",
+     "p": [
+      "Use simple future phrases: I'm going to, I'd like to, maybe I'll.",
+      "Small plans count: a long nap, a walk, cooking something new.",
+      "Ask What are you up to this weekend? and listen for something to follow up on."
+     ],
+     "q": "What would make this weekend feel great for you?",
+     "c": "Tell your Buddy one plan for the weekend and ask about theirs."
+    },
+    "de": {
+     "t": "Wochenendpläne",
+     "g": "Sprich über deine Wochenendpläne, große oder kleine, und frag nach den Plänen des anderen.",
+     "p": [
+      "Nutze einfache Zukunftsformen: Ich will, ich möchte, vielleicht werde ich.",
+      "Auch kleine Pläne zählen: ein langer Mittagsschlaf, ein Spaziergang, ein neues Rezept.",
+      "Frag Was machst du am Wochenende? und höre auf etwas zum Nachhaken."
+     ],
+     "q": "Was würde dieses Wochenende für dich richtig schön machen?",
+     "c": "Erzähle deinem Buddy einen Plan fürs Wochenende und frag nach seinem."
+    },
+    "es": {
+     "t": "Planes de fin de semana",
+     "g": "Habla de tus planes para el fin de semana, grandes o pequeños, y pregunta por los suyos.",
+     "p": [
+      "Usa frases sencillas de futuro: voy a, me gustaría, quizá haga.",
+      "Los planes pequeños cuentan: una buena siesta, un paseo, cocinar algo nuevo.",
+      "Pregunta ¿Qué haces este finde? y escucha algo sobre lo que seguir preguntando."
+     ],
+     "q": "¿Qué haría que este fin de semana fuera genial para ti?",
+     "c": "Cuéntale a tu Buddy un plan para el finde y pregunta por el suyo."
+    },
+    "fr": {
+     "t": "Projets de week-end",
+     "g": "Parle de tes projets de week-end, grands ou petits, et demande les siens.",
+     "p": [
+      "Utilise des tournures simples : je vais, j'aimerais, peut-être que je.",
+      "Les petits projets comptent : une longue sieste, une balade, une nouvelle recette.",
+      "Demande Tu fais quoi ce week-end ? et repère un détail sur lequel rebondir."
+     ],
+     "q": "Qu'est-ce qui rendrait ce week-end super pour toi ?",
+     "c": "Raconte à ton Buddy un projet pour le week-end et demande le sien."
+    },
+    "it": {
+     "t": "Piani per il weekend",
+     "g": "Parla dei tuoi piani per il weekend, grandi o piccoli, e chiedi dei suoi.",
+     "p": [
+      "Usa semplici forme di futuro: vado a, mi piacerebbe, forse farò.",
+      "Anche i piani piccoli contano: un riposino, una passeggiata, una ricetta nuova.",
+      "Chiedi Che fai nel weekend? e ascolta qualcosa su cui fare un'altra domanda."
+     ],
+     "q": "Cosa renderebbe questo weekend bellissimo per te?",
+     "c": "Racconta al tuo Buddy un piano per il weekend e chiedi il suo."
+    },
+    "pt": {
+     "t": "Planos para o fim de semana",
+     "g": "Fala dos teus planos para o fim de semana, grandes ou pequenos, e pergunta pelos dele.",
+     "p": [
+      "Usa frases simples de futuro: vou, gostava de, talvez faça.",
+      "Planos pequenos contam: uma boa sesta, um passeio, cozinhar algo novo.",
+      "Pergunta O que vais fazer este fim de semana? e ouve algo para continuar a conversa."
+     ],
+     "q": "O que tornaria este fim de semana ótimo para ti?",
+     "c": "Conta ao teu Buddy um plano para o fim de semana e pergunta pelo dele."
+    },
+    "pt_BR": {
+     "t": "Planos para o fim de semana",
+     "g": "Fale dos seus planos para o fim de semana, grandes ou pequenos, e pergunte pelos dele.",
+     "p": [
+      "Use frases simples de futuro: vou, queria, talvez eu faça.",
+      "Planos pequenos contam: uma boa soneca, um passeio, cozinhar algo novo.",
+      "Pergunte O que você vai fazer no fim de semana? e ouça algo para puxar assunto."
+     ],
+     "q": "O que deixaria este fim de semana ótimo para você?",
+     "c": "Conte ao seu Buddy um plano para o fim de semana e pergunte pelo dele."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Asking follow-up questions",
+     "g": "Keep a chat going by asking one more question about what you just heard.",
+     "p": [
+      "Pick one detail from the answer and ask about it: Which one was your favourite?",
+      "Open questions starting with what, how or why invite longer answers.",
+      "Be curious, not nosy: if someone seems unsure, move to a lighter topic."
+     ],
+     "q": "What detail do you like being asked about when you share a story?",
+     "c": "Ask your Buddy three follow-up questions about one thing it tells you."
+    },
+    "de": {
+     "t": "Nachfragen stellen",
+     "g": "Halte ein Gespräch am Laufen, indem du zu dem Gehörten noch eine Frage stellst.",
+     "p": [
+      "Greife ein Detail aus der Antwort auf: Welches war dein Liebling?",
+      "Offene Fragen mit was, wie oder warum laden zu längeren Antworten ein.",
+      "Sei neugierig, nicht aufdringlich: Wirkt jemand unsicher, wechsle zu etwas Leichterem."
+     ],
+     "q": "Nach welchem Detail wirst du gern gefragt, wenn du etwas erzählst?",
+     "c": "Stelle deinem Buddy drei Nachfragen zu einer Sache, die er dir erzählt."
+    },
+    "es": {
+     "t": "Hacer preguntas de seguimiento",
+     "g": "Mantén la charla viva con una pregunta más sobre lo que acabas de oír.",
+     "p": [
+      "Elige un detalle de la respuesta y pregunta por él: ¿Cuál fue tu favorito?",
+      "Las preguntas abiertas con qué, cómo o por qué invitan a respuestas más largas.",
+      "Sé curioso, no entrometido: si alguien duda, pasa a un tema más ligero."
+     ],
+     "q": "¿Por qué detalle te gusta que te pregunten cuando cuentas algo?",
+     "c": "Hazle a tu Buddy tres preguntas de seguimiento sobre algo que te cuente."
+    },
+    "fr": {
+     "t": "Poser des questions de relance",
+     "g": "Fais vivre la discussion en posant une question de plus sur ce que tu viens d'entendre.",
+     "p": [
+      "Prends un détail de la réponse et creuse-le : Lequel était ton préféré ?",
+      "Les questions ouvertes avec quoi, comment ou pourquoi donnent des réponses plus riches.",
+      "Sois curieux sans être indiscret : si l'autre hésite, passe à un sujet plus léger."
+     ],
+     "q": "Sur quel détail aimes-tu qu'on te questionne quand tu racontes quelque chose ?",
+     "c": "Pose à ton Buddy trois questions de relance sur un point qu'il te raconte."
+    },
+    "it": {
+     "t": "Fare domande di approfondimento",
+     "g": "Tieni viva la conversazione con una domanda in più su ciò che hai appena sentito.",
+     "p": [
+      "Scegli un dettaglio della risposta e chiedi di quello: Qual era il tuo preferito?",
+      "Le domande aperte con cosa, come o perché invitano a risposte più lunghe.",
+      "Sii curioso, non invadente: se l'altro sembra incerto, passa a un tema più leggero."
+     ],
+     "q": "Su quale dettaglio ti piace essere interpellato quando racconti qualcosa?",
+     "c": "Fai al tuo Buddy tre domande di approfondimento su una cosa che ti racconta."
+    },
+    "pt": {
+     "t": "Fazer perguntas de seguimento",
+     "g": "Mantém a conversa viva com mais uma pergunta sobre o que acabaste de ouvir.",
+     "p": [
+      "Escolhe um detalhe da resposta e pergunta sobre ele: Qual foi o teu favorito?",
+      "Perguntas abertas com o quê, como ou porquê convidam a respostas mais longas.",
+      "Sê curioso, não intrometido: se alguém hesitar, passa a um tema mais leve."
+     ],
+     "q": "Sobre que detalhe gostas que te perguntem quando contas algo?",
+     "c": "Faz ao teu Buddy três perguntas de seguimento sobre algo que ele te conte."
+    },
+    "pt_BR": {
+     "t": "Fazer perguntas de continuação",
+     "g": "Mantenha a conversa viva com mais uma pergunta sobre o que acabou de ouvir.",
+     "p": [
+      "Escolha um detalhe da resposta e pergunte sobre ele: Qual foi o seu favorito?",
+      "Perguntas abertas com o quê, como ou por quê convidam a respostas mais longas.",
+      "Seja curioso, não intrometido: se alguém hesitar, mude para um tema mais leve."
+     ],
+     "q": "Sobre qual detalhe você gosta de ser perguntado quando conta algo?",
+     "c": "Faça ao seu Buddy três perguntas de continuação sobre algo que ele contar."
+    }
+   }
+  }
+ ]
+}

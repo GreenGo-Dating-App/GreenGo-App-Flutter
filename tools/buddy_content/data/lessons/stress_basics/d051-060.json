@@ -1,0 +1,835 @@
+{
+ "topic": "stress_basics",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Humming and singing",
+     "g": "See how singing along can relax breathing and lift mood.",
+     "p": [
+      "Singing and humming slow the exhale, which tends to relax the body.",
+      "The gentle vibration of humming can feel soothing in the chest and face.",
+      "You do not need a great voice; the benefit is in the doing, not the sound."
+     ],
+     "q": "Where do you feel free to sing, in the shower, car or kitchen?",
+     "c": "Hum or sing one song you like, and enjoy a long, slow breath out."
+    },
+    "de": {
+     "t": "Summen und Singen",
+     "g": "Sieh, wie Mitsingen die Atmung entspannen und die Stimmung heben kann.",
+     "p": [
+      "Singen und Summen verlängern die Ausatmung, was den Körper meist entspannt.",
+      "Die sanfte Vibration beim Summen kann sich in Brust und Gesicht wohltuend anfühlen.",
+      "Du brauchst keine tolle Stimme; der Nutzen liegt im Tun, nicht im Klang."
+     ],
+     "q": "Wo traust du dich zu singen: unter der Dusche, im Auto oder in der Küche?",
+     "c": "Summe oder singe ein Lied, das du magst, und genieße eine lange, langsame Ausatmung."
+    },
+    "es": {
+     "t": "Tararear y cantar",
+     "g": "Descubre cómo cantar puede relajar la respiración y mejorar el ánimo.",
+     "p": [
+      "Cantar y tararear alargan la espiración, lo que suele relajar el cuerpo.",
+      "La suave vibración del tarareo puede resultar calmante en el pecho y la cara.",
+      "No necesitas una gran voz; el beneficio está en hacerlo, no en el sonido."
+     ],
+     "q": "¿Dónde te sientes libre para cantar: en la ducha, el coche o la cocina?",
+     "c": "Tararea o canta una canción que te guste y disfruta una espiración larga y lenta."
+    },
+    "fr": {
+     "t": "Fredonner et chanter",
+     "g": "Vois comment chanter peut détendre la respiration et remonter le moral.",
+     "p": [
+      "Chanter et fredonner allongent l'expiration, ce qui détend généralement le corps.",
+      "La douce vibration du fredonnement peut apaiser la poitrine et le visage.",
+      "Pas besoin d'une belle voix; le bénéfice est dans le geste, pas dans le son."
+     ],
+     "q": "Où te sens-tu libre de chanter : sous la douche, en voiture ou dans la cuisine ?",
+     "c": "Fredonne ou chante une chanson que tu aimes et savoure une longue expiration lente."
+    },
+    "it": {
+     "t": "Canticchiare e cantare",
+     "g": "Scopri come cantare possa rilassare il respiro e sollevare l'umore.",
+     "p": [
+      "Cantare e canticchiare allungano l'espirazione, che di solito rilassa il corpo.",
+      "La dolce vibrazione del canticchiare può calmare petto e viso.",
+      "Non serve una bella voce; il beneficio sta nel farlo, non nel suono."
+     ],
+     "q": "Dove ti senti libero di cantare: sotto la doccia, in auto o in cucina?",
+     "c": "Canticchia o canta una canzone che ti piace e goditi un'espirazione lunga e lenta."
+    },
+    "pt": {
+     "t": "Trautear e cantar",
+     "g": "Descobre como cantar pode relaxar a respiração e melhorar o humor.",
+     "p": [
+      "Cantar e trautear alongam a expiração, o que costuma relaxar o corpo.",
+      "A suave vibração do trautear pode acalmar o peito e o rosto.",
+      "Não precisas de uma voz bonita; o benefício está em fazê-lo, não no som."
+     ],
+     "q": "Onde te sentes à vontade para cantar: no duche, no carro ou na cozinha?",
+     "c": "Cantarola ou canta uma música de que gostes e aproveita uma expiração longa e lenta."
+    },
+    "pt_BR": {
+     "t": "Cantarolar e cantar",
+     "g": "Descubra como cantar pode relaxar a respiração e melhorar o humor.",
+     "p": [
+      "Cantar e cantarolar alongam a expiração, o que costuma relaxar o corpo.",
+      "A suave vibração do cantarolar pode acalmar o peito e o rosto.",
+      "Você não precisa de uma voz bonita; o benefício está em fazer, não no som."
+     ],
+     "q": "Onde você se sente à vontade para cantar: no chuveiro, no carro ou na cozinha?",
+     "c": "Cantarole ou cante uma música de que goste e aproveite uma expiração longa e lenta."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Posture and stress",
+     "g": "See how sitting up and opening the chest can make you feel more confident.",
+     "p": [
+      "Slumping can feel heavy, while an easy upright posture can feel lighter and steadier.",
+      "Check your seat: feet on the floor, shoulders loose, chest open, chin level.",
+      "Do not force a stiff pose; small, relaxed changes are enough."
+     ],
+     "q": "How is your posture right now, and how does it feel?",
+     "c": "Adjust your posture three times today and take one slow breath each time."
+    },
+    "de": {
+     "t": "Haltung und Stress",
+     "g": "Sieh, wie aufrechtes Sitzen und eine offene Brust dich selbstsicherer fühlen lassen können.",
+     "p": [
+      "Zusammensacken fühlt sich schwer an, eine entspannte aufrechte Haltung dagegen leichter und stabiler.",
+      "Prüfe deinen Sitz: Füße am Boden, Schultern locker, Brust offen, Kinn waagerecht.",
+      "Erzwinge keine steife Pose; kleine, entspannte Veränderungen genügen."
+     ],
+     "q": "Wie ist deine Haltung gerade, und wie fühlt sie sich an?",
+     "c": "Korrigiere heute dreimal deine Haltung und atme dabei jedes Mal einmal langsam."
+    },
+    "es": {
+     "t": "Postura y estrés",
+     "g": "Descubre cómo sentarte erguido y abrir el pecho puede darte más confianza.",
+     "p": [
+      "Encorvarse se siente pesado, mientras que una postura erguida y relajada se siente más ligera y firme.",
+      "Revisa tu asiento: pies en el suelo, hombros sueltos, pecho abierto, barbilla recta.",
+      "No fuerces una pose rígida; bastan cambios pequeños y relajados."
+     ],
+     "q": "¿Cómo está tu postura ahora y cómo se siente?",
+     "c": "Ajusta tu postura tres veces hoy y haz una respiración lenta cada vez."
+    },
+    "fr": {
+     "t": "Posture et stress",
+     "g": "Vois comment se tenir droit et ouvrir la poitrine peut donner plus de confiance.",
+     "p": [
+      "Se voûter paraît lourd, alors qu'une posture droite et détendue paraît plus légère et plus stable.",
+      "Vérifie ton assise : pieds au sol, épaules relâchées, poitrine ouverte, menton à l'horizontale.",
+      "Ne force pas une pose raide; de petits changements détendus suffisent."
+     ],
+     "q": "Comment est ta posture en ce moment, et comment la ressens-tu ?",
+     "c": "Ajuste ta posture trois fois aujourd'hui et fais une respiration lente à chaque fois."
+    },
+    "it": {
+     "t": "Postura e stress",
+     "g": "Scopri come stare seduti dritti e aprire il petto possa darti più sicurezza.",
+     "p": [
+      "Curvarsi pesa, mentre una postura eretta e rilassata sembra più leggera e salda.",
+      "Controlla la seduta: piedi a terra, spalle sciolte, petto aperto, mento dritto.",
+      "Non forzare una posa rigida; bastano piccoli cambiamenti rilassati."
+     ],
+     "q": "Com'è la tua postura adesso e come la senti?",
+     "c": "Correggi oggi la postura tre volte e fai ogni volta un respiro lento."
+    },
+    "pt": {
+     "t": "Postura e stress",
+     "g": "Percebe como sentar direito e abrir o peito pode dar-te mais confiança.",
+     "p": [
+      "Curvar-se parece pesado, enquanto uma postura direita e relaxada parece mais leve e firme.",
+      "Verifica o teu assento: pés no chão, ombros soltos, peito aberto, queixo direito.",
+      "Não forces uma pose rígida; bastam pequenas mudanças relaxadas."
+     ],
+     "q": "Como está a tua postura agora e como se sente?",
+     "c": "Ajusta a postura três vezes hoje e faz uma respiração lenta de cada vez."
+    },
+    "pt_BR": {
+     "t": "Postura e estresse",
+     "g": "Veja como sentar ereto e abrir o peito pode dar mais confiança.",
+     "p": [
+      "Curvar-se parece pesado, enquanto uma postura ereta e relaxada parece mais leve e firme.",
+      "Confira seu assento: pés no chão, ombros soltos, peito aberto, queixo reto.",
+      "Não force uma pose rígida; pequenas mudanças relaxadas bastam."
+     ],
+     "q": "Como está sua postura agora e como ela se sente?",
+     "c": "Ajuste a postura três vezes hoje e faça uma respiração lenta a cada vez."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hands and jaw",
+     "g": "Notice hidden tension in clenched hands and jaw and release it.",
+     "p": [
+      "Many people clench their jaw or fists without realising, especially at screens.",
+      "Let your teeth part slightly, your tongue rest and your hands open palms up.",
+      "A quick check a few times a day stops the tension building up."
+     ],
+     "q": "Do you notice yourself clenching your jaw or hands under pressure?",
+     "c": "Check your jaw and hands now and release them, then again at lunchtime."
+    },
+    "de": {
+     "t": "Hände und Kiefer",
+     "g": "Bemerke versteckte Anspannung in geballten Händen und im Kiefer und löse sie.",
+     "p": [
+      "Viele pressen unbemerkt die Kiefer oder Fäuste zusammen, besonders am Bildschirm.",
+      "Lass die Zähne leicht auseinander, die Zunge ruhen und die Hände offen mit den Handflächen nach oben.",
+      "Ein kurzer Check mehrmals am Tag verhindert, dass sich Spannung aufstaut."
+     ],
+     "q": "Merkst du, dass du unter Druck Kiefer oder Hände zusammenpresst?",
+     "c": "Prüfe jetzt Kiefer und Hände und löse sie, und noch einmal zur Mittagszeit."
+    },
+    "es": {
+     "t": "Manos y mandíbula",
+     "g": "Nota la tensión oculta en manos y mandíbula apretadas y suéltala.",
+     "p": [
+      "Mucha gente aprieta la mandíbula o los puños sin darse cuenta, sobre todo ante pantallas.",
+      "Separa un poco los dientes, deja la lengua en reposo y abre las manos con las palmas hacia arriba.",
+      "Un chequeo rápido varias veces al día evita que la tensión se acumule."
+     ],
+     "q": "¿Notas que aprietas la mandíbula o las manos bajo presión?",
+     "c": "Revisa ahora tu mandíbula y tus manos y suéltalas, y otra vez a mediodía."
+    },
+    "fr": {
+     "t": "Mains et mâchoire",
+     "g": "Remarque la tension cachée dans les mains et la mâchoire serrées et relâche-la.",
+     "p": [
+      "Beaucoup serrent la mâchoire ou les poings sans s'en rendre compte, surtout devant un écran.",
+      "Écarte légèrement les dents, laisse la langue au repos et ouvre les mains, paumes vers le haut.",
+      "Un petit contrôle plusieurs fois par jour évite que la tension ne s'accumule."
+     ],
+     "q": "Remarques-tu que tu serres la mâchoire ou les mains sous pression ?",
+     "c": "Vérifie maintenant ta mâchoire et tes mains et relâche-les, puis à nouveau à midi."
+    },
+    "it": {
+     "t": "Mani e mascella",
+     "g": "Nota la tensione nascosta in mani e mascella serrate e rilasciala.",
+     "p": [
+      "Molti serrano la mascella o i pugni senza accorgersene, soprattutto davanti agli schermi.",
+      "Separa leggermente i denti, lascia riposare la lingua e apri le mani con i palmi verso l'alto.",
+      "Un rapido controllo più volte al giorno evita che la tensione si accumuli."
+     ],
+     "q": "Noti di serrare la mascella o le mani sotto pressione?",
+     "c": "Controlla ora mascella e mani e rilasciale, poi di nuovo a mezzogiorno."
+    },
+    "pt": {
+     "t": "Mãos e maxilar",
+     "g": "Repara na tensão escondida em mãos e maxilar cerrados e liberta-a.",
+     "p": [
+      "Muitas pessoas cerram o maxilar ou os punhos sem dar por isso, sobretudo diante de ecrãs.",
+      "Afasta um pouco os dentes, deixa a língua em repouso e abre as mãos com as palmas para cima.",
+      "Uma verificação rápida várias vezes ao dia evita que a tensão se acumule."
+     ],
+     "q": "Reparas que cerras o maxilar ou as mãos sob pressão?",
+     "c": "Verifica agora o maxilar e as mãos e solta-os, e outra vez à hora do almoço."
+    },
+    "pt_BR": {
+     "t": "Mãos e mandíbula",
+     "g": "Note a tensão escondida em mãos e mandíbula travadas e solte-a.",
+     "p": [
+      "Muita gente trava a mandíbula ou fecha os punhos sem perceber, sobretudo diante de telas.",
+      "Afaste um pouco os dentes, deixe a língua em repouso e abra as mãos com as palmas para cima.",
+      "Uma checagem rápida várias vezes ao dia evita que a tensão se acumule."
+     ],
+     "q": "Você percebe que trava a mandíbula ou as mãos sob pressão?",
+     "c": "Confira agora a mandíbula e as mãos e solte-as, e de novo na hora do almoço."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Self-massage basics",
+     "g": "Use gentle massage of hands, neck and temples to unwind.",
+     "p": [
+      "Press and circle slowly with your thumbs into the palm of the opposite hand.",
+      "Use your fingertips in small circles on your temples and the base of your skull.",
+      "Keep the pressure light and comfortable, and stop if anything hurts."
+     ],
+     "q": "Which area of your body would love a little attention right now?",
+     "c": "Give each hand a slow one-minute massage, with gentle pressure only."
+    },
+    "de": {
+     "t": "Selbstmassage-Grundlagen",
+     "g": "Entspanne dich mit sanfter Massage von Händen, Nacken und Schläfen.",
+     "p": [
+      "Drücke und kreise langsam mit den Daumen in die Handfläche der anderen Hand.",
+      "Kreise mit den Fingerspitzen sanft an Schläfen und am Schädelansatz.",
+      "Halte den Druck leicht und angenehm und höre auf, wenn etwas wehtut."
+     ],
+     "q": "Welche Stelle deines Körpers würde sich jetzt über etwas Zuwendung freuen?",
+     "c": "Gib jeder Hand eine langsame Minute Massage, nur mit sanftem Druck."
+    },
+    "es": {
+     "t": "Automasaje básico",
+     "g": "Usa un masaje suave de manos, cuello y sienes para soltarte.",
+     "p": [
+      "Presiona y haz círculos lentos con los pulgares en la palma de la otra mano.",
+      "Usa las yemas de los dedos en pequeños círculos en las sienes y la base del cráneo.",
+      "Mantén la presión ligera y cómoda y para si algo duele."
+     ],
+     "q": "¿Qué zona de tu cuerpo agradecería un poco de atención ahora mismo?",
+     "c": "Date a cada mano un masaje lento de un minuto, solo con presión suave."
+    },
+    "fr": {
+     "t": "Bases de l'automassage",
+     "g": "Utilise un massage doux des mains, de la nuque et des tempes pour te détendre.",
+     "p": [
+      "Appuie et fais des cercles lents avec les pouces dans la paume de l'autre main.",
+      "Utilise le bout des doigts en petits cercles sur les tempes et la base du crâne.",
+      "Garde une pression légère et confortable et arrête si quelque chose fait mal."
+     ],
+     "q": "Quelle zone de ton corps apprécierait un peu d'attention en ce moment ?",
+     "c": "Offre à chaque main une minute de massage lent, avec une pression douce seulement."
+    },
+    "it": {
+     "t": "Basi dell'automassaggio",
+     "g": "Usa un massaggio dolce di mani, collo e tempie per rilassarti.",
+     "p": [
+      "Premi e fai cerchi lenti con i pollici nel palmo dell'altra mano.",
+      "Usa i polpastrelli in piccoli cerchi sulle tempie e alla base del cranio.",
+      "Mantieni una pressione leggera e comoda e fermati se qualcosa fa male."
+     ],
+     "q": "Quale parte del corpo gradirebbe un po' di attenzione adesso?",
+     "c": "Dedica a ogni mano un minuto di massaggio lento, solo con pressione dolce."
+    },
+    "pt": {
+     "t": "Noções de automassagem",
+     "g": "Usa uma massagem suave de mãos, pescoço e têmporas para relaxar.",
+     "p": [
+      "Pressiona e faz círculos lentos com os polegares na palma da outra mão.",
+      "Usa as pontas dos dedos em pequenos círculos nas têmporas e na base do crânio.",
+      "Mantém a pressão leve e confortável e pára se algo doer."
+     ],
+     "q": "Que zona do teu corpo agradeceria um pouco de atenção agora?",
+     "c": "Dá a cada mão uma massagem lenta de um minuto, só com pressão suave."
+    },
+    "pt_BR": {
+     "t": "Noções de automassagem",
+     "g": "Use uma massagem suave nas mãos, no pescoço e nas têmporas para relaxar.",
+     "p": [
+      "Pressione e faça círculos lentos com os polegares na palma da outra mão.",
+      "Use as pontas dos dedos em pequenos círculos nas têmporas e na base do crânio.",
+      "Mantenha a pressão leve e confortável e pare se algo doer."
+     ],
+     "q": "Que parte do seu corpo agradeceria um pouco de atenção agora?",
+     "c": "Dê a cada mão uma massagem lenta de um minuto, só com pressão suave."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Grounding with the senses",
+     "g": "Try the 5-4-3-2-1 exercise: notice things you see, hear, feel, smell and taste.",
+     "p": [
+      "Name five things you see, four you can touch, three you hear, two you smell, one you taste.",
+      "Take your time with each sense and describe it in a few quiet words.",
+      "This brings attention to the present and away from racing thoughts."
+     ],
+     "q": "Which sense helps you feel most connected to the present moment?",
+     "c": "Do the 5-4-3-2-1 exercise once today, slowly, wherever you are."
+    },
+    "de": {
+     "t": "Erden mit den Sinnen",
+     "g": "Probiere die 5-4-3-2-1-Übung: Bemerke, was du siehst, hörst, fühlst, riechst und schmeckst.",
+     "p": [
+      "Nenne fünf Dinge, die du siehst, vier, die du berühren kannst, drei, die du hörst, zwei Gerüche, einen Geschmack.",
+      "Nimm dir bei jedem Sinn Zeit und beschreibe ihn mit ein paar ruhigen Worten.",
+      "Das lenkt die Aufmerksamkeit in die Gegenwart und weg von rasenden Gedanken."
+     ],
+     "q": "Welcher Sinn verbindet dich am meisten mit dem gegenwärtigen Moment?",
+     "c": "Mache die 5-4-3-2-1-Übung heute einmal langsam, wo immer du bist."
+    },
+    "es": {
+     "t": "Anclaje con los sentidos",
+     "g": "Prueba el ejercicio 5-4-3-2-1: nota lo que ves, oyes, sientes, hueles y saboreas.",
+     "p": [
+      "Nombra cinco cosas que ves, cuatro que puedes tocar, tres que oyes, dos que hueles y una que saboreas.",
+      "Tómate tu tiempo con cada sentido y descríbelo con unas pocas palabras tranquilas.",
+      "Esto lleva la atención al presente y la aleja de los pensamientos acelerados."
+     ],
+     "q": "¿Qué sentido te ayuda más a conectar con el momento presente?",
+     "c": "Haz hoy el ejercicio 5-4-3-2-1 una vez, despacio, donde estés."
+    },
+    "fr": {
+     "t": "S'ancrer avec les sens",
+     "g": "Essaie l'exercice 5-4-3-2-1 : remarque ce que tu vois, entends, touches, sens et goûtes.",
+     "p": [
+      "Nomme cinq choses que tu vois, quatre que tu peux toucher, trois que tu entends, deux odeurs, un goût.",
+      "Prends ton temps pour chaque sens et décris-le en quelques mots calmes.",
+      "Cela ramène l'attention au présent et l'éloigne des pensées qui s'emballent."
+     ],
+     "q": "Quel sens t'aide le plus à te connecter au moment présent ?",
+     "c": "Fais aujourd'hui l'exercice 5-4-3-2-1 une fois, lentement, où que tu sois."
+    },
+    "it": {
+     "t": "Radicarsi con i sensi",
+     "g": "Prova l'esercizio 5-4-3-2-1: nota ciò che vedi, senti, tocchi, annusi e assaggi.",
+     "p": [
+      "Nomina cinque cose che vedi, quattro che puoi toccare, tre che senti, due odori, un sapore.",
+      "Prenditi tempo con ogni senso e descrivilo con poche parole tranquille.",
+      "Questo porta l'attenzione al presente e la allontana dai pensieri che corrono."
+     ],
+     "q": "Quale senso ti aiuta di più a sentirti nel momento presente?",
+     "c": "Fai oggi l'esercizio 5-4-3-2-1 una volta, lentamente, ovunque tu sia."
+    },
+    "pt": {
+     "t": "Ancorar com os sentidos",
+     "g": "Experimenta o exercício 5-4-3-2-1: repara no que vês, ouves, tocas, cheiras e provas.",
+     "p": [
+      "Nomeia cinco coisas que vês, quatro que podes tocar, três que ouves, dois cheiros e um sabor.",
+      "Dá-te tempo com cada sentido e descreve-o com poucas palavras calmas.",
+      "Isto leva a atenção para o presente e afasta-a dos pensamentos acelerados."
+     ],
+     "q": "Que sentido mais te ajuda a ligar ao momento presente?",
+     "c": "Faz hoje o exercício 5-4-3-2-1 uma vez, devagar, onde estiveres."
+    },
+    "pt_BR": {
+     "t": "Ancorar com os sentidos",
+     "g": "Experimente o exercício 5-4-3-2-1: note o que você vê, ouve, toca, cheira e prova.",
+     "p": [
+      "Cite cinco coisas que você vê, quatro que pode tocar, três que ouve, dois cheiros e um sabor.",
+      "Dê tempo a cada sentido e descreva-o com poucas palavras calmas.",
+      "Isso leva a atenção para o presente e a afasta dos pensamentos acelerados."
+     ],
+     "q": "Que sentido mais ajuda você a se conectar ao momento presente?",
+     "c": "Faça hoje o exercício 5-4-3-2-1 uma vez, devagar, onde estiver."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your body-calming toolkit",
+     "g": "Choose your three favourite physical relief tools.",
+     "p": [
+      "Look back at breathing, stretching, walking, warmth and music and pick your top three.",
+      "A short, personal toolkit is easier to use than a long list you never remember.",
+      "Write your three tools where you can see them at a glance."
+     ],
+     "q": "Which three tools felt best for you over the past weeks?",
+     "c": "Write your top three body tools on a card and keep it in your pocket or phone."
+    },
+    "de": {
+     "t": "Dein Körper-Werkzeugkasten",
+     "g": "Wähle deine drei liebsten körperlichen Entlastungswerkzeuge.",
+     "p": [
+      "Blicke auf Atmen, Dehnen, Gehen, Wärme und Musik zurück und wähle deine Top drei.",
+      "Ein kurzer, persönlicher Werkzeugkasten ist leichter zu nutzen als eine lange Liste, die du vergisst.",
+      "Schreibe deine drei Werkzeuge dorthin, wo du sie auf einen Blick siehst."
+     ],
+     "q": "Welche drei Werkzeuge haben sich in den letzten Wochen für dich am besten angefühlt?",
+     "c": "Schreibe deine drei Körper-Werkzeuge auf eine Karte und trage sie bei dir oder im Handy."
+    },
+    "es": {
+     "t": "Tu kit para calmar el cuerpo",
+     "g": "Elige tus tres herramientas físicas de alivio favoritas.",
+     "p": [
+      "Repasa respiración, estiramientos, paseos, calor y música y elige tus tres mejores.",
+      "Un kit corto y personal es más fácil de usar que una lista larga que no recuerdas.",
+      "Escribe tus tres herramientas donde puedas verlas de un vistazo."
+     ],
+     "q": "¿Qué tres herramientas te sentaron mejor en las últimas semanas?",
+     "c": "Escribe tus tres herramientas corporales en una tarjeta y llévala en el bolsillo o el móvil."
+    },
+    "fr": {
+     "t": "Ta boîte à outils corporelle",
+     "g": "Choisis tes trois outils physiques de détente préférés.",
+     "p": [
+      "Reviens sur la respiration, les étirements, la marche, la chaleur et la musique et choisis tes trois meilleurs.",
+      "Une boîte à outils courte et personnelle est plus facile à utiliser qu'une longue liste oubliée.",
+      "Écris tes trois outils là où tu peux les voir d'un coup d'œil."
+     ],
+     "q": "Quels trois outils t'ont fait le plus de bien ces dernières semaines ?",
+     "c": "Écris tes trois outils corporels sur une carte et garde-la dans ta poche ou ton téléphone."
+    },
+    "it": {
+     "t": "Il tuo kit per calmare il corpo",
+     "g": "Scegli i tuoi tre strumenti fisici di sollievo preferiti.",
+     "p": [
+      "Ripensa a respiro, stretching, camminate, calore e musica e scegli i tuoi tre migliori.",
+      "Un kit breve e personale è più facile da usare di una lunga lista che dimentichi.",
+      "Scrivi i tuoi tre strumenti dove puoi vederli a colpo d'occhio."
+     ],
+     "q": "Quali tre strumenti ti hanno fatto stare meglio nelle ultime settimane?",
+     "c": "Scrivi i tuoi tre strumenti per il corpo su un biglietto e tienilo in tasca o sul telefono."
+    },
+    "pt": {
+     "t": "O teu kit para acalmar o corpo",
+     "g": "Escolhe as tuas três ferramentas físicas de alívio preferidas.",
+     "p": [
+      "Revê respiração, alongamentos, passeios, calor e música e escolhe as tuas três melhores.",
+      "Um kit curto e pessoal é mais fácil de usar do que uma lista longa de que te esqueces.",
+      "Escreve as tuas três ferramentas onde as vejas num relance."
+     ],
+     "q": "Que três ferramentas te souberam melhor nas últimas semanas?",
+     "c": "Escreve as tuas três ferramentas do corpo num cartão e leva-o no bolso ou no telemóvel."
+    },
+    "pt_BR": {
+     "t": "Seu kit para acalmar o corpo",
+     "g": "Escolha suas três ferramentas físicas de alívio preferidas.",
+     "p": [
+      "Reveja respiração, alongamento, caminhada, calor e música e escolha suas três melhores.",
+      "Um kit curto e pessoal é mais fácil de usar do que uma lista longa da qual você esquece.",
+      "Escreva suas três ferramentas onde você as veja num relance."
+     ],
+     "q": "Que três ferramentas fizeram mais bem a você nas últimas semanas?",
+     "c": "Escreva suas três ferramentas do corpo num cartão e leve no bolso ou no celular."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Practise when calm",
+     "g": "Learn why rehearsing techniques on easy days makes them work on hard days.",
+     "p": [
+      "A skill practised in calm moments becomes familiar and easy to reach under pressure.",
+      "Think of it like a fire drill: you learn the steps before you need them.",
+      "Two minutes of practice on a quiet day beats trying to learn mid-stress."
+     ],
+     "q": "When in your day could you practise a tool while calm?",
+     "c": "Practise one of your three tools for two minutes right now, while calm."
+    },
+    "de": {
+     "t": "Üben, wenn du ruhig bist",
+     "g": "Lerne, warum Üben an leichten Tagen die Techniken an schweren Tagen wirksam macht.",
+     "p": [
+      "Eine in ruhigen Momenten geübte Fähigkeit wird vertraut und ist unter Druck leichter erreichbar.",
+      "Denk an eine Feuerwehrübung: Du lernst die Schritte, bevor du sie brauchst.",
+      "Zwei Minuten Übung an einem ruhigen Tag schlagen den Versuch, mitten im Stress zu lernen."
+     ],
+     "q": "Wann in deinem Tag könntest du ein Werkzeug in Ruhe üben?",
+     "c": "Übe jetzt, in Ruhe, zwei Minuten lang eines deiner drei Werkzeuge."
+    },
+    "es": {
+     "t": "Practica cuando estés en calma",
+     "g": "Descubre por qué ensayar técnicas en días fáciles las hace funcionar en días difíciles.",
+     "p": [
+      "Una habilidad practicada en momentos de calma se vuelve familiar y fácil de usar bajo presión.",
+      "Piensa en un simulacro de incendio: aprendes los pasos antes de necesitarlos.",
+      "Dos minutos de práctica un día tranquilo valen más que intentar aprender en pleno estrés."
+     ],
+     "q": "¿En qué momento de tu día podrías practicar una herramienta con calma?",
+     "c": "Practica ahora, en calma, una de tus tres herramientas durante dos minutos."
+    },
+    "fr": {
+     "t": "S'entraîner quand tout va bien",
+     "g": "Comprends pourquoi s'exercer les jours faciles fait marcher les techniques les jours difficiles.",
+     "p": [
+      "Une compétence pratiquée dans le calme devient familière et facile à utiliser sous pression.",
+      "Pense à un exercice d'évacuation : tu apprends les étapes avant d'en avoir besoin.",
+      "Deux minutes d'entraînement un jour tranquille valent mieux qu'apprendre en plein stress."
+     ],
+     "q": "À quel moment de ta journée pourrais-tu t'exercer à un outil dans le calme ?",
+     "c": "Exerce-toi maintenant, au calme, à l'un de tes trois outils pendant deux minutes."
+    },
+    "it": {
+     "t": "Esercitarsi quando si è calmi",
+     "g": "Scopri perché esercitare le tecniche nei giorni facili le fa funzionare in quelli difficili.",
+     "p": [
+      "Un'abilità praticata nella calma diventa familiare e facile da usare sotto pressione.",
+      "Pensa a una prova antincendio: impari i passaggi prima di averne bisogno.",
+      "Due minuti di esercizio in un giorno tranquillo valgono più che imparare in pieno stress."
+     ],
+     "q": "In quale momento della giornata potresti esercitare uno strumento con calma?",
+     "c": "Esercita ora, con calma, uno dei tuoi tre strumenti per due minuti."
+    },
+    "pt": {
+     "t": "Praticar quando estás calmo",
+     "g": "Percebe porque ensaiar técnicas em dias fáceis as faz funcionar em dias difíceis.",
+     "p": [
+      "Uma competência praticada em momentos calmos torna-se familiar e fácil de usar sob pressão.",
+      "Pensa num simulacro de incêndio: aprendes os passos antes de precisares deles.",
+      "Dois minutos de prática num dia tranquilo valem mais do que tentar aprender em pleno stress."
+     ],
+     "q": "Em que altura do teu dia poderias praticar uma ferramenta com calma?",
+     "c": "Pratica agora, com calma, uma das tuas três ferramentas durante dois minutos."
+    },
+    "pt_BR": {
+     "t": "Praticar quando você está calmo",
+     "g": "Entenda por que ensaiar técnicas em dias fáceis as faz funcionar em dias difíceis.",
+     "p": [
+      "Uma habilidade praticada em momentos calmos fica familiar e fácil de usar sob pressão.",
+      "Pense num simulado de incêndio: você aprende os passos antes de precisar deles.",
+      "Dois minutos de prática num dia tranquilo valem mais do que tentar aprender em pleno estresse."
+     ],
+     "q": "Em que momento do seu dia você poderia praticar uma ferramenta com calma?",
+     "c": "Pratique agora, com calma, uma das suas três ferramentas por dois minutos."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A five-minute reset",
+     "g": "Combine breath, stretch and a sip of water into a quick routine.",
+     "p": [
+      "Try one minute of slow breathing, two minutes of stretching and a mindful glass of water.",
+      "Finish with one minute of looking out of a window or at something green.",
+      "Five minutes is short enough to fit between tasks, even on a busy day."
+     ],
+     "q": "Where in your day would a five-minute reset fit best?",
+     "c": "Do your five-minute reset once today and note how you feel afterwards."
+    },
+    "de": {
+     "t": "Ein Fünf-Minuten-Reset",
+     "g": "Verbinde Atmen, Dehnen und einen Schluck Wasser zu einer kurzen Routine.",
+     "p": [
+      "Probiere eine Minute langsames Atmen, zwei Minuten Dehnen und ein bewusstes Glas Wasser.",
+      "Schließe mit einer Minute Blick aus dem Fenster oder auf etwas Grünes ab.",
+      "Fünf Minuten sind kurz genug, um selbst an vollen Tagen zwischen Aufgaben zu passen."
+     ],
+     "q": "Wo in deinem Tag würde ein Fünf-Minuten-Reset am besten passen?",
+     "c": "Mache heute einmal deinen Fünf-Minuten-Reset und spüre danach nach, wie du dich fühlst."
+    },
+    "es": {
+     "t": "Un reinicio de cinco minutos",
+     "g": "Combina respiración, estiramiento y un sorbo de agua en una rutina rápida.",
+     "p": [
+      "Prueba un minuto de respiración lenta, dos de estiramientos y un vaso de agua con atención.",
+      "Termina con un minuto mirando por la ventana o algo verde.",
+      "Cinco minutos son pocos y caben entre tareas, incluso en un día ocupado."
+     ],
+     "q": "¿En qué momento de tu día encajaría mejor un reinicio de cinco minutos?",
+     "c": "Haz hoy tu reinicio de cinco minutos una vez y nota cómo te sientes después."
+    },
+    "fr": {
+     "t": "Une remise à zéro de cinq minutes",
+     "g": "Combine respiration, étirements et une gorgée d'eau en une routine rapide.",
+     "p": [
+      "Essaie une minute de respiration lente, deux minutes d'étirements et un verre d'eau pris en conscience.",
+      "Termine par une minute à regarder par la fenêtre ou quelque chose de vert.",
+      "Cinq minutes, c'est assez court pour s'insérer entre deux tâches, même un jour chargé."
+     ],
+     "q": "À quel moment de ta journée une remise à zéro de cinq minutes irait-elle le mieux ?",
+     "c": "Fais aujourd'hui ta remise à zéro de cinq minutes une fois et note comment tu te sens après."
+    },
+    "it": {
+     "t": "Un reset di cinque minuti",
+     "g": "Unisci respiro, stretching e un sorso d'acqua in una routine rapida.",
+     "p": [
+      "Prova un minuto di respiro lento, due di stretching e un bicchiere d'acqua bevuto con attenzione.",
+      "Concludi con un minuto a guardare fuori dalla finestra o qualcosa di verde.",
+      "Cinque minuti sono pochi e stanno tra un compito e l'altro, anche in un giorno pieno."
+     ],
+     "q": "In quale momento della giornata starebbe meglio un reset di cinque minuti?",
+     "c": "Fai oggi una volta il tuo reset di cinque minuti e nota come ti senti dopo."
+    },
+    "pt": {
+     "t": "Um reinício de cinco minutos",
+     "g": "Junta respiração, alongamento e um gole de água numa rotina rápida.",
+     "p": [
+      "Experimenta um minuto de respiração lenta, dois de alongamentos e um copo de água com atenção.",
+      "Termina com um minuto a olhar pela janela ou para algo verde.",
+      "Cinco minutos são poucos e cabem entre tarefas, mesmo num dia cheio."
+     ],
+     "q": "Em que altura do teu dia encaixaria melhor um reinício de cinco minutos?",
+     "c": "Faz hoje o teu reinício de cinco minutos uma vez e repara como te sentes depois."
+    },
+    "pt_BR": {
+     "t": "Um reinício de cinco minutos",
+     "g": "Junte respiração, alongamento e um gole de água numa rotina rápida.",
+     "p": [
+      "Experimente um minuto de respiração lenta, dois de alongamento e um copo de água com atenção.",
+      "Termine com um minuto olhando pela janela ou para algo verde.",
+      "Cinco minutos são poucos e cabem entre tarefas, mesmo num dia cheio."
+     ],
+     "q": "Em que momento do seu dia um reinício de cinco minutos encaixaria melhor?",
+     "c": "Faça hoje o seu reinício de cinco minutos uma vez e note como se sente depois."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Body relief week",
+     "g": "Try one physical relief tool every day and note the effect.",
+     "p": [
+      "This week, use a different tool each day, like breathing, a walk or a stretch.",
+      "After each one, rate your stress from 1 to 10 and jot down how the body feels.",
+      "By the end you will see which tools work best for you."
+     ],
+     "q": "Which tool have you used this week, and what did you notice?",
+     "c": "Use one tool today and write down the before and after stress number."
+    },
+    "de": {
+     "t": "Körper-Entlastungswoche",
+     "g": "Probiere jeden Tag ein körperliches Entlastungswerkzeug und notiere die Wirkung.",
+     "p": [
+      "Nutze diese Woche jeden Tag ein anderes Werkzeug, etwa Atmen, einen Spaziergang oder eine Dehnung.",
+      "Bewerte danach deinen Stress von 1 bis 10 und notiere, wie sich der Körper anfühlt.",
+      "Am Ende siehst du, welche Werkzeuge für dich am besten wirken."
+     ],
+     "q": "Welches Werkzeug hast du diese Woche genutzt, und was ist dir aufgefallen?",
+     "c": "Nutze heute ein Werkzeug und notiere den Stresswert davor und danach."
+    },
+    "es": {
+     "t": "Semana de alivio corporal",
+     "g": "Prueba una herramienta física de alivio cada día y anota el efecto.",
+     "p": [
+      "Esta semana usa una herramienta distinta cada día, como respirar, pasear o estirarte.",
+      "Después de cada una, puntúa tu estrés del 1 al 10 y anota cómo se siente el cuerpo.",
+      "Al final verás qué herramientas te funcionan mejor."
+     ],
+     "q": "¿Qué herramienta has usado esta semana y qué notaste?",
+     "c": "Usa hoy una herramienta y anota el número de estrés antes y después."
+    },
+    "fr": {
+     "t": "Semaine de détente corporelle",
+     "g": "Essaie chaque jour un outil physique de détente et note l'effet.",
+     "p": [
+      "Cette semaine, utilise chaque jour un outil différent : respiration, marche ou étirement.",
+      "Après chacun, note ton stress de 1 à 10 et écris ce que ressent ton corps.",
+      "À la fin, tu verras quels outils marchent le mieux pour toi."
+     ],
+     "q": "Quel outil as-tu utilisé cette semaine, et qu'as-tu remarqué ?",
+     "c": "Utilise un outil aujourd'hui et note le chiffre de stress avant et après."
+    },
+    "it": {
+     "t": "Settimana di sollievo per il corpo",
+     "g": "Prova ogni giorno uno strumento fisico di sollievo e annota l'effetto.",
+     "p": [
+      "Questa settimana usa ogni giorno uno strumento diverso, come respiro, camminata o stretching.",
+      "Dopo ciascuno, valuta lo stress da 1 a 10 e annota come si sente il corpo.",
+      "Alla fine vedrai quali strumenti funzionano meglio per te."
+     ],
+     "q": "Quale strumento hai usato questa settimana e che cosa hai notato?",
+     "c": "Usa oggi uno strumento e annota il numero di stress prima e dopo."
+    },
+    "pt": {
+     "t": "Semana de alívio corporal",
+     "g": "Experimenta uma ferramenta física de alívio por dia e regista o efeito.",
+     "p": [
+      "Esta semana usa uma ferramenta diferente por dia, como respirar, passear ou alongar.",
+      "Depois de cada uma, avalia o stress de 1 a 10 e anota como se sente o corpo.",
+      "No fim verás quais as ferramentas que melhor funcionam para ti."
+     ],
+     "q": "Que ferramenta usaste esta semana e o que reparaste?",
+     "c": "Usa hoje uma ferramenta e regista o número de stress antes e depois."
+    },
+    "pt_BR": {
+     "t": "Semana de alívio corporal",
+     "g": "Experimente uma ferramenta física de alívio por dia e anote o efeito.",
+     "p": [
+      "Nesta semana use uma ferramenta diferente por dia, como respirar, caminhar ou alongar.",
+      "Depois de cada uma, avalie o estresse de 1 a 10 e anote como o corpo se sente.",
+      "No fim você verá quais ferramentas funcionam melhor para você."
+     ],
+     "q": "Que ferramenta você usou nesta semana e o que percebeu?",
+     "c": "Use hoje uma ferramenta e anote o número de estresse antes e depois."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Month two review",
+     "g": "Recap breathing, movement, nature and your body toolkit.",
+     "p": [
+      "You explored breathing, stretching, walking, dancing, nature, warmth, music and grounding.",
+      "You built a toolkit of three favourites and learned to practise when calm.",
+      "Small, regular body-based habits are what make everyday stress lighter over time."
+     ],
+     "q": "Which body tool from this month would you keep for life?",
+     "c": "Pick the one you liked best and do it once today, slowly and kindly."
+    },
+    "de": {
+     "t": "Rückblick auf Monat zwei",
+     "g": "Wiederhole Atmen, Bewegung, Natur und deinen Körper-Werkzeugkasten.",
+     "p": [
+      "Du hast Atmen, Dehnen, Gehen, Tanzen, Natur, Wärme, Musik und Erdung erkundet.",
+      "Du hast einen Werkzeugkasten mit drei Favoriten gebaut und gelernt, in Ruhe zu üben.",
+      "Kleine, regelmäßige körperliche Gewohnheiten machen Alltagsstress mit der Zeit leichter."
+     ],
+     "q": "Welches Körperwerkzeug dieses Monats würdest du fürs Leben behalten?",
+     "c": "Wähle dein liebstes und mache es heute einmal, langsam und freundlich."
+    },
+    "es": {
+     "t": "Repaso del segundo mes",
+     "g": "Repasa la respiración, el movimiento, la naturaleza y tu kit corporal.",
+     "p": [
+      "Exploraste respiración, estiramientos, paseos, baile, naturaleza, calor, música y anclaje.",
+      "Creaste un kit con tres favoritos y aprendiste a practicar en calma.",
+      "Los hábitos corporales pequeños y regulares hacen más ligero el estrés diario con el tiempo."
+     ],
+     "q": "¿Qué herramienta corporal de este mes conservarías para siempre?",
+     "c": "Elige la que más te gustó y hazla hoy una vez, despacio y con cariño."
+    },
+    "fr": {
+     "t": "Bilan du deuxième mois",
+     "g": "Récapitule la respiration, le mouvement, la nature et ta boîte à outils corporelle.",
+     "p": [
+      "Tu as exploré la respiration, les étirements, la marche, la danse, la nature, la chaleur, la musique et l'ancrage.",
+      "Tu as constitué une boîte à outils de trois favoris et appris à t'exercer dans le calme.",
+      "De petites habitudes corporelles régulières allègent le stress quotidien avec le temps."
+     ],
+     "q": "Quel outil corporel de ce mois garderais-tu pour la vie ?",
+     "c": "Choisis celui que tu as préféré et fais-le une fois aujourd'hui, lentement et avec douceur."
+    },
+    "it": {
+     "t": "Ripasso del secondo mese",
+     "g": "Ripercorri respiro, movimento, natura e il tuo kit per il corpo.",
+     "p": [
+      "Hai esplorato respiro, stretching, camminate, danza, natura, calore, musica e radicamento.",
+      "Hai costruito un kit di tre preferiti e imparato a esercitarti nella calma.",
+      "Piccole abitudini corporee regolari alleggeriscono nel tempo lo stress quotidiano."
+     ],
+     "q": "Quale strumento per il corpo di questo mese terresti per sempre?",
+     "c": "Scegli quello che ti è piaciuto di più e fallo oggi una volta, lentamente e con gentilezza."
+    },
+    "pt": {
+     "t": "Revisão do segundo mês",
+     "g": "Revê respiração, movimento, natureza e o teu kit do corpo.",
+     "p": [
+      "Exploraste respiração, alongamentos, passeios, dança, natureza, calor, música e ancoragem.",
+      "Criaste um kit com três favoritos e aprendeste a praticar com calma.",
+      "Pequenos hábitos corporais regulares aliviam o stress diário com o tempo."
+     ],
+     "q": "Que ferramenta do corpo deste mês manterias para sempre?",
+     "c": "Escolhe a de que mais gostaste e faz uma vez hoje, devagar e com carinho."
+    },
+    "pt_BR": {
+     "t": "Revisão do segundo mês",
+     "g": "Reveja respiração, movimento, natureza e o seu kit do corpo.",
+     "p": [
+      "Você explorou respiração, alongamento, caminhada, dança, natureza, calor, música e ancoragem.",
+      "Você montou um kit com três favoritos e aprendeu a praticar com calma.",
+      "Pequenos hábitos corporais regulares aliviam o estresse diário com o tempo."
+     ],
+     "q": "Que ferramenta do corpo deste mês você manteria para sempre?",
+     "c": "Escolha a de que mais gostou e faça uma vez hoje, devagar e com carinho."
+    }
+   }
+  }
+ ]
+}

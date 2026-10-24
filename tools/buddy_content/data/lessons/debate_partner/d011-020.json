@@ -1,0 +1,835 @@
+{
+ "topic": "debate_partner",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Asking clarifying questions",
+     "g": "Ask what do you mean by... to understand before you argue.",
+     "p": [
+      "Many clashes start because two people mean different things.",
+      "Ask a short question first: What do you mean by cheap?",
+      "Clear questions show interest and save time."
+     ],
+     "q": "Think of a word people use loosely. What do you take it to mean?",
+     "c": "Ask me one clarifying question about this: Weekends are too short."
+    },
+    "de": {
+     "t": "Klärende Fragen stellen",
+     "g": "Frage was meinst du mit..., um zu verstehen, bevor du argumentierst.",
+     "p": [
+      "Viele Streitereien entstehen, weil zwei Menschen Verschiedenes meinen.",
+      "Stelle erst eine kurze Frage: Was meinst du mit billig?",
+      "Klare Fragen zeigen Interesse und sparen Zeit."
+     ],
+     "q": "Denk an ein Wort, das oft ungenau benutzt wird. Was bedeutet es für dich?",
+     "c": "Stelle mir eine klärende Frage zu: Wochenenden sind zu kurz."
+    },
+    "es": {
+     "t": "Hacer preguntas aclaratorias",
+     "g": "Pregunta qué quieres decir con... para entender antes de discutir.",
+     "p": [
+      "Muchos choques empiezan porque dos personas se refieren a cosas distintas.",
+      "Haz primero una pregunta corta: ¿Qué entiendes por barato?",
+      "Las preguntas claras muestran interés y ahorran tiempo."
+     ],
+     "q": "Piensa en una palabra que se usa sin precisión. ¿Qué significa para ti?",
+     "c": "Hazme una pregunta aclaratoria sobre esto: Los fines de semana son muy cortos."
+    },
+    "fr": {
+     "t": "Poser des questions de clarification",
+     "g": "Demande qu'entends-tu par... pour comprendre avant de débattre.",
+     "p": [
+      "Beaucoup de disputes naissent parce que deux personnes n'entendent pas la même chose.",
+      "Pose d'abord une question courte : Qu'entends-tu par pas cher ?",
+      "Des questions claires montrent de l'intérêt et font gagner du temps."
+     ],
+     "q": "Pense à un mot employé de façon floue. Que signifie-t-il pour toi ?",
+     "c": "Pose-moi une question de clarification sur : Les week-ends sont trop courts."
+    },
+    "it": {
+     "t": "Fare domande di chiarimento",
+     "g": "Chiedi cosa intendi con... per capire prima di discutere.",
+     "p": [
+      "Molti scontri nascono perché due persone intendono cose diverse.",
+      "Fai prima una domanda breve: Cosa intendi per economico?",
+      "Domande chiare mostrano interesse e fanno risparmiare tempo."
+     ],
+     "q": "Pensa a una parola usata alla leggera. Cosa significa per te?",
+     "c": "Fammi una domanda di chiarimento su: I weekend sono troppo corti."
+    },
+    "pt": {
+     "t": "Fazer perguntas de esclarecimento",
+     "g": "Pergunta o que queres dizer com... para compreender antes de argumentar.",
+     "p": [
+      "Muitos choques começam porque duas pessoas entendem coisas diferentes.",
+      "Faz primeiro uma pergunta curta: O que entendes por barato?",
+      "Perguntas claras mostram interesse e poupam tempo."
+     ],
+     "q": "Pensa numa palavra usada sem rigor. O que significa para ti?",
+     "c": "Faz-me uma pergunta de esclarecimento sobre isto: Os fins de semana são curtos demais."
+    },
+    "pt_BR": {
+     "t": "Fazer perguntas de esclarecimento",
+     "g": "Pergunte o que você quer dizer com... para entender antes de argumentar.",
+     "p": [
+      "Muitos choques começam porque duas pessoas entendem coisas diferentes.",
+      "Faça primeiro uma pergunta curta: O que você entende por barato?",
+      "Perguntas claras mostram interesse e economizam tempo."
+     ],
+     "q": "Pense numa palavra usada sem rigor. O que ela significa para você?",
+     "c": "Me faça uma pergunta de esclarecimento sobre isto: Fim de semana é curto demais."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Beach or mountains?",
+     "g": "Debate the perfect holiday spot using reasons and personal examples.",
+     "p": [
+      "Pick beach or mountains and state your claim in one sentence.",
+      "Give two reasons, then one personal example for the strongest.",
+      "Admit what the other option does well; it makes you credible."
+     ],
+     "q": "Beach or mountains for your dream break, and why?",
+     "c": "Write a three-sentence pitch for the place you did not choose."
+    },
+    "de": {
+     "t": "Strand oder Berge?",
+     "g": "Debattiere den perfekten Urlaubsort mit Gründen und persönlichen Beispielen.",
+     "p": [
+      "Wähle Strand oder Berge und sage deine Behauptung in einem Satz.",
+      "Nenne zwei Gründe, dann ein persönliches Beispiel zum stärksten.",
+      "Gib zu, was die andere Option gut kann; das macht dich glaubwürdig."
+     ],
+     "q": "Strand oder Berge für deinen Traumurlaub, und warum?",
+     "c": "Schreibe einen Drei-Satz-Werbetext für den Ort, den du nicht gewählt hast."
+    },
+    "es": {
+     "t": "¿Playa o montaña?",
+     "g": "Debate el lugar perfecto de vacaciones con razones y ejemplos personales.",
+     "p": [
+      "Elige playa o montaña y di tu afirmación en una frase.",
+      "Da dos razones y luego un ejemplo personal para la más fuerte.",
+      "Reconoce lo que hace bien la otra opción; te da credibilidad."
+     ],
+     "q": "¿Playa o montaña para tus vacaciones soñadas, y por qué?",
+     "c": "Escribe un anuncio de tres frases para el lugar que no elegiste."
+    },
+    "fr": {
+     "t": "Plage ou montagne ?",
+     "g": "Débats du lieu de vacances idéal avec des raisons et des exemples personnels.",
+     "p": [
+      "Choisis plage ou montagne et énonce ton affirmation en une phrase.",
+      "Donne deux raisons, puis un exemple personnel pour la plus forte.",
+      "Reconnais ce que l'autre option fait bien ; cela te rend crédible."
+     ],
+     "q": "Plage ou montagne pour tes vacances de rêve, et pourquoi ?",
+     "c": "Écris une pub de trois phrases pour le lieu que tu n'as pas choisi."
+    },
+    "it": {
+     "t": "Mare o montagna?",
+     "g": "Discuti il luogo di vacanza perfetto con ragioni ed esempi personali.",
+     "p": [
+      "Scegli mare o montagna e dì la tua tesi in una frase.",
+      "Dai due ragioni, poi un esempio personale per la più forte.",
+      "Ammetti ciò che l'altra opzione fa bene; ti rende credibile."
+     ],
+     "q": "Mare o montagna per la vacanza dei sogni, e perché?",
+     "c": "Scrivi uno spot di tre frasi per il posto che non hai scelto."
+    },
+    "pt": {
+     "t": "Praia ou montanha?",
+     "g": "Debate o local de férias perfeito com razões e exemplos pessoais.",
+     "p": [
+      "Escolhe praia ou montanha e diz a tua afirmação numa frase.",
+      "Dá duas razões e depois um exemplo pessoal para a mais forte.",
+      "Reconhece o que a outra opção faz bem; dá-te credibilidade."
+     ],
+     "q": "Praia ou montanha para as férias de sonho, e porquê?",
+     "c": "Escreve um anúncio de três frases para o sítio que não escolheste."
+    },
+    "pt_BR": {
+     "t": "Praia ou montanha?",
+     "g": "Debata o lugar perfeito de férias com razões e exemplos pessoais.",
+     "p": [
+      "Escolha praia ou montanha e diga a sua afirmação numa frase.",
+      "Dê duas razões e depois um exemplo pessoal para a mais forte.",
+      "Reconheça o que a outra opção faz bem; isso dá credibilidade."
+     ],
+     "q": "Praia ou montanha para as férias dos sonhos, e por quê?",
+     "c": "Escreva um anúncio de três frases para o lugar que você não escolheu."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Arguing the other side",
+     "g": "Defend an opinion you do not hold, just for practice.",
+     "p": [
+      "Arguing the other side trains your mind and builds empathy.",
+      "Look for the best reasons a thoughtful person would give.",
+      "It is a game, not a lie: you can say it is only practice."
+     ],
+     "q": "Take a light opinion you disagree with. What is its best reason?",
+     "c": "Defend for three sentences: Homework should be a pizza night."
+    },
+    "de": {
+     "t": "Die Gegenseite vertreten",
+     "g": "Verteidige zur Übung eine Meinung, die du nicht teilst.",
+     "p": [
+      "Die Gegenseite zu vertreten trainiert den Kopf und stärkt Einfühlung.",
+      "Suche die besten Gründe, die eine kluge Person nennen würde.",
+      "Es ist ein Spiel, keine Lüge: Du kannst sagen, dass es nur Übung ist."
+     ],
+     "q": "Nimm eine leichte Meinung, die du ablehnst. Was ist ihr bester Grund?",
+     "c": "Verteidige in drei Sätzen: Hausaufgaben sollten ein Pizzaabend sein."
+    },
+    "es": {
+     "t": "Defender la otra postura",
+     "g": "Defiende una opinión que no tienes, solo como práctica.",
+     "p": [
+      "Defender la otra postura entrena la mente y crea empatía.",
+      "Busca las mejores razones que daría una persona sensata.",
+      "Es un juego, no una mentira: puedes decir que es solo práctica."
+     ],
+     "q": "Toma una opinión ligera que no compartes. ¿Cuál es su mejor razón?",
+     "c": "Defiende en tres frases: Los deberes deberían ser una noche de pizza."
+    },
+    "fr": {
+     "t": "Défendre l'autre camp",
+     "g": "Défends une opinion que tu n'as pas, juste pour t'entraîner.",
+     "p": [
+      "Défendre l'autre camp entraîne l'esprit et développe l'empathie.",
+      "Cherche les meilleures raisons qu'une personne réfléchie donnerait.",
+      "C'est un jeu, pas un mensonge : tu peux dire que c'est un exercice."
+     ],
+     "q": "Prends une opinion légère que tu ne partages pas. Quelle est sa meilleure raison ?",
+     "c": "Défends en trois phrases : Les devoirs devraient être une soirée pizza."
+    },
+    "it": {
+     "t": "Difendere l'altra parte",
+     "g": "Difendi un'opinione che non hai, solo per esercizio.",
+     "p": [
+      "Difendere l'altra parte allena la mente e crea empatia.",
+      "Cerca le migliori ragioni che darebbe una persona riflessiva.",
+      "È un gioco, non una bugia: puoi dire che è solo esercizio."
+     ],
+     "q": "Prendi un'opinione leggera che non condividi. Qual è la sua ragione migliore?",
+     "c": "Difendi in tre frasi: I compiti dovrebbero essere una serata pizza."
+    },
+    "pt": {
+     "t": "Defender o outro lado",
+     "g": "Defende uma opinião que não tens, só como treino.",
+     "p": [
+      "Defender o outro lado treina a mente e cria empatia.",
+      "Procura as melhores razões que uma pessoa ponderada daria.",
+      "É um jogo, não uma mentira: podes dizer que é só treino."
+     ],
+     "q": "Pega numa opinião leve de que discordas. Qual é a sua melhor razão?",
+     "c": "Defende em três frases: Os trabalhos de casa deviam ser uma noite de pizza."
+    },
+    "pt_BR": {
+     "t": "Defender o outro lado",
+     "g": "Defenda uma opinião que você não tem, só como treino.",
+     "p": [
+      "Defender o outro lado treina a mente e cria empatia.",
+      "Procure as melhores razões que uma pessoa ponderada daria.",
+      "É um jogo, não uma mentira: você pode dizer que é só treino."
+     ],
+     "q": "Pegue uma opinião leve de que você discorda. Qual é a melhor razão dela?",
+     "c": "Defenda em três frases: Lição de casa devia ser uma noite de pizza."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Keeping your cool",
+     "g": "Stay calm and curious when someone disagrees with you strongly.",
+     "p": [
+      "Strong disagreement is not an attack; it is information.",
+      "Breathe, slow down and answer the idea, not the mood.",
+      "Curiosity is a calming tool: ask what led them to that view."
+     ],
+     "q": "What helps you stay calm when a talk heats up?",
+     "c": "Try this line today: Tell me more, I want to understand."
+    },
+    "de": {
+     "t": "Ruhe bewahren",
+     "g": "Bleibe ruhig und neugierig, wenn dir jemand stark widerspricht.",
+     "p": [
+      "Starker Widerspruch ist kein Angriff, sondern eine Information.",
+      "Atme durch, werde langsamer und antworte auf die Idee, nicht auf die Stimmung.",
+      "Neugier beruhigt: Frage, was zu dieser Sicht geführt hat."
+     ],
+     "q": "Was hilft dir, ruhig zu bleiben, wenn ein Gespräch hitzig wird?",
+     "c": "Probiere heute den Satz: Erzähl mehr, ich möchte es verstehen."
+    },
+    "es": {
+     "t": "Mantener la calma",
+     "g": "Mantén la calma y la curiosidad cuando alguien te contradice con fuerza.",
+     "p": [
+      "Un desacuerdo fuerte no es un ataque; es información.",
+      "Respira, ve más despacio y responde a la idea, no al tono.",
+      "La curiosidad calma: pregunta qué le llevó a esa postura."
+     ],
+     "q": "¿Qué te ayuda a mantener la calma cuando una charla se calienta?",
+     "c": "Prueba hoy esta frase: Cuéntame más, quiero entenderlo."
+    },
+    "fr": {
+     "t": "Garder son calme",
+     "g": "Reste calme et curieux quand quelqu'un te contredit fortement.",
+     "p": [
+      "Un fort désaccord n'est pas une attaque ; c'est une information.",
+      "Respire, ralentis et réponds à l'idée, pas à l'humeur.",
+      "La curiosité apaise : demande ce qui l'a mené à ce point de vue."
+     ],
+     "q": "Qu'est-ce qui t'aide à rester calme quand la discussion s'échauffe ?",
+     "c": "Essaie cette phrase aujourd'hui : Dis-m'en plus, je veux comprendre."
+    },
+    "it": {
+     "t": "Mantenere la calma",
+     "g": "Resta calmo e curioso quando qualcuno ti contraddice con forza.",
+     "p": [
+      "Un forte disaccordo non è un attacco; è un'informazione.",
+      "Respira, rallenta e rispondi all'idea, non al tono.",
+      "La curiosità calma: chiedi cosa l'ha portato a quel punto di vista."
+     ],
+     "q": "Cosa ti aiuta a restare calmo quando una discussione si accende?",
+     "c": "Prova oggi questa frase: Dimmi di più, voglio capire."
+    },
+    "pt": {
+     "t": "Manter a calma",
+     "g": "Mantém a calma e a curiosidade quando alguém te contraria com força.",
+     "p": [
+      "Um desacordo forte não é um ataque; é informação.",
+      "Respira, abranda e responde à ideia, não ao tom.",
+      "A curiosidade acalma: pergunta o que o levou a essa visão."
+     ],
+     "q": "O que te ajuda a manter a calma quando uma conversa aquece?",
+     "c": "Experimenta hoje esta frase: Conta-me mais, quero perceber."
+    },
+    "pt_BR": {
+     "t": "Manter a calma",
+     "g": "Mantenha a calma e a curiosidade quando alguém te contraria com força.",
+     "p": [
+      "Um desacordo forte não é um ataque; é informação.",
+      "Respire, desacelere e responda à ideia, não ao tom.",
+      "A curiosidade acalma: pergunte o que levou a pessoa a essa visão."
+     ],
+     "q": "O que ajuda você a manter a calma quando a conversa esquenta?",
+     "c": "Experimente hoje esta frase: Me conte mais, quero entender."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Books vs films",
+     "g": "Compare stories told on the page and on screen, and ask if the book is always better.",
+     "p": [
+      "The claim the book is always better needs reasons, not just habit.",
+      "Books give inner thoughts; films give image, sound and pace.",
+      "Use a real example of a story you know in both forms."
+     ],
+     "q": "Book or film: which tells your favourite story best?",
+     "c": "Name one thing a film did better than its book, or the reverse."
+    },
+    "de": {
+     "t": "Bücher gegen Filme",
+     "g": "Vergleiche Geschichten auf Papier und Leinwand und frage, ob das Buch immer besser ist.",
+     "p": [
+      "Die Behauptung Das Buch ist immer besser braucht Gründe, nicht nur Gewohnheit.",
+      "Bücher zeigen Gedanken; Filme bieten Bild, Ton und Tempo.",
+      "Nutze ein echtes Beispiel einer Geschichte, die du in beiden Formen kennst."
+     ],
+     "q": "Buch oder Film: Was erzählt deine Lieblingsgeschichte besser?",
+     "c": "Nenne etwas, das ein Film besser machte als sein Buch, oder umgekehrt."
+    },
+    "es": {
+     "t": "Libros contra películas",
+     "g": "Compara historias en papel y en pantalla y pregunta si el libro siempre es mejor.",
+     "p": [
+      "Decir que el libro siempre es mejor necesita razones, no solo costumbre.",
+      "Los libros dan pensamientos internos; las películas dan imagen, sonido y ritmo.",
+      "Usa un ejemplo real de una historia que conozcas en ambas formas."
+     ],
+     "q": "¿Libro o película: cuál cuenta mejor tu historia favorita?",
+     "c": "Nombra algo que una película hizo mejor que su libro, o al revés."
+    },
+    "fr": {
+     "t": "Livres contre films",
+     "g": "Compare les histoires sur papier et à l'écran : le livre est-il toujours meilleur ?",
+     "p": [
+      "Dire que le livre est toujours meilleur demande des raisons, pas une habitude.",
+      "Les livres donnent les pensées intérieures ; les films, l'image, le son et le rythme.",
+      "Utilise un vrai exemple d'une histoire que tu connais sous les deux formes."
+     ],
+     "q": "Livre ou film : lequel raconte le mieux ton histoire préférée ?",
+     "c": "Cite une chose qu'un film a mieux faite que son livre, ou l'inverse."
+    },
+    "it": {
+     "t": "Libri contro film",
+     "g": "Confronta storie su carta e sullo schermo e chiediti se il libro è sempre meglio.",
+     "p": [
+      "Dire che il libro è sempre meglio richiede ragioni, non solo abitudine.",
+      "I libri danno i pensieri interiori; i film immagine, suono e ritmo.",
+      "Usa un esempio reale di una storia che conosci in entrambe le forme."
+     ],
+     "q": "Libro o film: quale racconta meglio la tua storia preferita?",
+     "c": "Nomina una cosa che un film ha fatto meglio del suo libro, o il contrario."
+    },
+    "pt": {
+     "t": "Livros contra filmes",
+     "g": "Compara histórias no papel e no ecrã e pergunta se o livro é sempre melhor.",
+     "p": [
+      "Dizer que o livro é sempre melhor precisa de razões, não só de hábito.",
+      "Os livros dão pensamentos interiores; os filmes dão imagem, som e ritmo.",
+      "Usa um exemplo real de uma história que conheças nas duas formas."
+     ],
+     "q": "Livro ou filme: qual conta melhor a tua história favorita?",
+     "c": "Indica algo que um filme fez melhor do que o livro, ou o contrário."
+    },
+    "pt_BR": {
+     "t": "Livros contra filmes",
+     "g": "Compare histórias no papel e na tela e pergunte se o livro é sempre melhor.",
+     "p": [
+      "Dizer que o livro é sempre melhor precisa de razões, não só de hábito.",
+      "Os livros dão pensamentos internos; os filmes dão imagem, som e ritmo.",
+      "Use um exemplo real de uma história que você conheça nas duas formas."
+     ],
+     "q": "Livro ou filme: qual conta melhor a sua história favorita?",
+     "c": "Cite algo que um filme fez melhor que o livro, ou o contrário."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Agreeing on definitions",
+     "g": "See why many disagreements disappear once you agree what a word means.",
+     "p": [
+      "Before arguing, check that you use the key word in the same way.",
+      "Two people can say yes and no to the same question and both be right.",
+      "Offer a working definition: Let us say a snack is under 200 calories."
+     ],
+     "q": "Which word do people often argue about without defining it?",
+     "c": "Define the word rich in one sentence, then see how it changes things."
+    },
+    "de": {
+     "t": "Sich auf Definitionen einigen",
+     "g": "Sieh, warum viele Meinungsverschiedenheiten verschwinden, wenn man ein Wort gleich versteht.",
+     "p": [
+      "Prüfe vor dem Streit, ob ihr das Schlüsselwort gleich verwendet.",
+      "Zwei Personen können Ja und Nein sagen und beide recht haben.",
+      "Biete eine Arbeitsdefinition an: Sagen wir, ein Snack ist klein und leicht."
+     ],
+     "q": "Über welches Wort streiten Leute oft, ohne es zu definieren?",
+     "c": "Definiere das Wort reich in einem Satz und sieh, was sich ändert."
+    },
+    "es": {
+     "t": "Acordar las definiciones",
+     "g": "Descubre por qué muchos desacuerdos desaparecen al acordar qué significa una palabra.",
+     "p": [
+      "Antes de discutir, comprueba que usáis la palabra clave igual.",
+      "Dos personas pueden decir sí y no a lo mismo y tener razón ambas.",
+      "Ofrece una definición de trabajo: Digamos que un snack es algo pequeño y ligero."
+     ],
+     "q": "¿Sobre qué palabra se discute a menudo sin definirla?",
+     "c": "Define la palabra rico en una frase y observa qué cambia."
+    },
+    "fr": {
+     "t": "Se mettre d'accord sur les définitions",
+     "g": "Vois pourquoi bien des désaccords disparaissent quand on s'entend sur un mot.",
+     "p": [
+      "Avant de débattre, vérifie que vous employez le mot clé de la même façon.",
+      "Deux personnes peuvent dire oui et non à la même question et avoir raison.",
+      "Propose une définition de travail : Disons qu'un en-cas est petit et léger."
+     ],
+     "q": "Sur quel mot se dispute-t-on souvent sans le définir ?",
+     "c": "Définis le mot riche en une phrase et vois ce que cela change."
+    },
+    "it": {
+     "t": "Accordarsi sulle definizioni",
+     "g": "Scopri perché molti disaccordi svaniscono quando ci si intende su una parola.",
+     "p": [
+      "Prima di discutere, verifica di usare la parola chiave allo stesso modo.",
+      "Due persone possono dire sì e no alla stessa domanda e avere entrambe ragione.",
+      "Proponi una definizione di lavoro: Diciamo che uno spuntino è piccolo e leggero."
+     ],
+     "q": "Su quale parola si discute spesso senza definirla?",
+     "c": "Definisci la parola ricco in una frase e guarda cosa cambia."
+    },
+    "pt": {
+     "t": "Combinar as definições",
+     "g": "Descobre porque muitos desacordos desaparecem quando se combina o que uma palavra significa.",
+     "p": [
+      "Antes de discutir, confirma que usam a palavra-chave da mesma forma.",
+      "Duas pessoas podem dizer sim e não à mesma pergunta e ter ambas razão.",
+      "Propõe uma definição de trabalho: Digamos que um lanche é pequeno e leve."
+     ],
+     "q": "Sobre que palavra se discute muitas vezes sem a definir?",
+     "c": "Define a palavra rico numa frase e vê o que muda."
+    },
+    "pt_BR": {
+     "t": "Combinar as definições",
+     "g": "Descubra por que muitos desacordos somem quando se combina o que uma palavra significa.",
+     "p": [
+      "Antes de discutir, confirme que vocês usam a palavra-chave do mesmo jeito.",
+      "Duas pessoas podem dizer sim e não à mesma pergunta e ambas ter razão.",
+      "Proponha uma definição de trabalho: Digamos que um lanche é pequeno e leve."
+     ],
+     "q": "Sobre que palavra se discute muito sem defini-la?",
+     "c": "Defina a palavra rico em uma frase e veja o que muda."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Summer vs winter",
+     "g": "Defend your favourite season with sensory details and solid reasons.",
+     "p": [
+      "Open with your claim, then add a reason about weather or activities.",
+      "Sensory details make reasons vivid: warm sand, crackling fire.",
+      "Remember that preferences differ, so aim to be interesting, not final."
+     ],
+     "q": "Summer or winter: which season wins for you?",
+     "c": "Describe your season in three senses, then give one clear reason."
+    },
+    "de": {
+     "t": "Sommer gegen Winter",
+     "g": "Verteidige deine Lieblingsjahreszeit mit Sinneseindrücken und guten Gründen.",
+     "p": [
+      "Beginne mit der Behauptung, dann ein Grund zu Wetter oder Aktivitäten.",
+      "Sinneseindrücke machen Gründe lebendig: warmer Sand, knisterndes Feuer.",
+      "Denke daran, dass Vorlieben verschieden sind: sei interessant, nicht endgültig."
+     ],
+     "q": "Sommer oder Winter: Welche Jahreszeit gewinnt bei dir?",
+     "c": "Beschreibe deine Jahreszeit mit drei Sinnen und nenne einen klaren Grund."
+    },
+    "es": {
+     "t": "Verano contra invierno",
+     "g": "Defiende tu estación favorita con detalles sensoriales y buenas razones.",
+     "p": [
+      "Empieza con tu afirmación y añade una razón sobre clima o actividades.",
+      "Los detalles sensoriales avivan las razones: arena cálida, fuego crepitante.",
+      "Recuerda que los gustos varían: busca ser interesante, no definitivo."
+     ],
+     "q": "¿Verano o invierno: qué estación gana para ti?",
+     "c": "Describe tu estación con tres sentidos y da una razón clara."
+    },
+    "fr": {
+     "t": "Été contre hiver",
+     "g": "Défends ta saison préférée avec des détails sensoriels et de bonnes raisons.",
+     "p": [
+      "Ouvre avec ton affirmation, puis une raison sur la météo ou les activités.",
+      "Les détails sensoriels rendent les raisons vivantes : sable chaud, feu qui crépite.",
+      "Les goûts diffèrent : cherche à être intéressant, pas définitif."
+     ],
+     "q": "Été ou hiver : quelle saison gagne pour toi ?",
+     "c": "Décris ta saison avec trois sens, puis donne une raison claire."
+    },
+    "it": {
+     "t": "Estate contro inverno",
+     "g": "Difendi la tua stagione preferita con dettagli sensoriali e buone ragioni.",
+     "p": [
+      "Apri con la tesi, poi una ragione su clima o attività.",
+      "I dettagli sensoriali rendono vive le ragioni: sabbia calda, fuoco scoppiettante.",
+      "I gusti cambiano: punta a essere interessante, non definitivo."
+     ],
+     "q": "Estate o inverno: quale stagione vince per te?",
+     "c": "Descrivi la tua stagione con tre sensi, poi dai una ragione chiara."
+    },
+    "pt": {
+     "t": "Verão contra inverno",
+     "g": "Defende a tua estação favorita com detalhes sensoriais e boas razões.",
+     "p": [
+      "Começa com a tua afirmação e junta uma razão sobre clima ou atividades.",
+      "Detalhes sensoriais avivam as razões: areia quente, lareira a crepitar.",
+      "Lembra-te de que os gostos variam: procura ser interessante, não definitivo."
+     ],
+     "q": "Verão ou inverno: que estação ganha para ti?",
+     "c": "Descreve a tua estação com três sentidos e dá uma razão clara."
+    },
+    "pt_BR": {
+     "t": "Verão contra inverno",
+     "g": "Defenda sua estação favorita com detalhes sensoriais e boas razões.",
+     "p": [
+      "Comece com a sua afirmação e junte uma razão sobre clima ou atividades.",
+      "Detalhes sensoriais avivam as razões: areia quente, lareira estalando.",
+      "Lembre que os gostos variam: procure ser interessante, não definitivo."
+     ],
+     "q": "Verão ou inverno: qual estação vence para você?",
+     "c": "Descreva sua estação com três sentidos e dê uma razão clara."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The three reasons rule",
+     "g": "Build a short argument with three different reasons.",
+     "p": [
+      "Three reasons feel complete: one is thin, ten is a blur.",
+      "Make each reason different, not the same idea reworded.",
+      "Order them: start strong, end with your best."
+     ],
+     "q": "Pick a claim you like and tell me three different reasons for it.",
+     "c": "Check your three reasons: are any of them secretly the same?"
+    },
+    "de": {
+     "t": "Die Drei-Gründe-Regel",
+     "g": "Baue ein kurzes Argument mit drei verschiedenen Gründen.",
+     "p": [
+      "Drei Gründe wirken vollständig: einer ist dünn, zehn sind ein Brei.",
+      "Mache jeden Grund anders, nicht dieselbe Idee in neuen Worten.",
+      "Ordne sie: stark beginnen, mit dem besten enden."
+     ],
+     "q": "Wähle eine Behauptung, die du magst, und nenne mir drei verschiedene Gründe.",
+     "c": "Prüfe deine drei Gründe: Sind zwei heimlich dasselbe?"
+    },
+    "es": {
+     "t": "La regla de las tres razones",
+     "g": "Construye un argumento corto con tres razones distintas.",
+     "p": [
+      "Tres razones se sienten completas: una es poco, diez son un borrón.",
+      "Haz que cada razón sea distinta, no la misma idea con otras palabras.",
+      "Ordénalas: empieza fuerte y termina con la mejor."
+     ],
+     "q": "Elige una afirmación que te guste y dame tres razones distintas.",
+     "c": "Revisa tus tres razones: ¿alguna es en secreto la misma?"
+    },
+    "fr": {
+     "t": "La règle des trois raisons",
+     "g": "Construis un court argument avec trois raisons différentes.",
+     "p": [
+      "Trois raisons semblent complètes : une seule est maigre, dix, c'est le flou.",
+      "Rends chaque raison différente, pas la même idée reformulée.",
+      "Ordonne-les : commence fort et termine par la meilleure."
+     ],
+     "q": "Choisis une affirmation que tu aimes et donne-moi trois raisons différentes.",
+     "c": "Vérifie tes trois raisons : deux sont-elles en secret la même ?"
+    },
+    "it": {
+     "t": "La regola delle tre ragioni",
+     "g": "Costruisci un breve argomento con tre ragioni diverse.",
+     "p": [
+      "Tre ragioni sembrano complete: una è poco, dieci sono confusione.",
+      "Rendi ogni ragione diversa, non la stessa idea con altre parole.",
+      "Ordinale: parti forte e chiudi con la migliore."
+     ],
+     "q": "Scegli una tesi che ti piace e dammi tre ragioni diverse.",
+     "c": "Controlla le tue tre ragioni: due sono in segreto la stessa?"
+    },
+    "pt": {
+     "t": "A regra das três razões",
+     "g": "Constrói um argumento curto com três razões diferentes.",
+     "p": [
+      "Três razões parecem completas: uma é pouco, dez é confusão.",
+      "Faz cada razão diferente, não a mesma ideia com outras palavras.",
+      "Ordena-as: começa forte e termina com a melhor."
+     ],
+     "q": "Escolhe uma afirmação de que gostes e dá-me três razões diferentes.",
+     "c": "Verifica as tuas três razões: alguma é secretamente a mesma?"
+    },
+    "pt_BR": {
+     "t": "A regra das três razões",
+     "g": "Construa um argumento curto com três razões diferentes.",
+     "p": [
+      "Três razões parecem completas: uma é pouco, dez é confusão.",
+      "Faça cada razão diferente, não a mesma ideia com outras palavras.",
+      "Ordene: comece forte e termine com a melhor."
+     ],
+     "q": "Escolha uma afirmação de que você goste e me dê três razões diferentes.",
+     "c": "Confira suas três razões: alguma é secretamente a mesma?"
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tea or coffee?",
+     "g": "A cosy debate about the best warm drink: taste, ritual and energy.",
+     "p": [
+      "Choose tea, coffee or neither, and name your top reason.",
+      "Rituals count: the pause, the smell and the cup all matter.",
+      "Compare fairly: what does the other drink do better?"
+     ],
+     "q": "Tea or coffee, and what is your favourite moment with it?",
+     "c": "Give one fair compliment to the drink you did not pick."
+    },
+    "de": {
+     "t": "Tee oder Kaffee?",
+     "g": "Eine gemütliche Debatte über das beste warme Getränk: Geschmack, Ritual und Energie.",
+     "p": [
+      "Wähle Tee, Kaffee oder keins von beiden und nenne deinen Hauptgrund.",
+      "Rituale zählen: die Pause, der Duft und die Tasse sind wichtig.",
+      "Vergleiche fair: Was kann das andere Getränk besser?"
+     ],
+     "q": "Tee oder Kaffee, und was ist dein liebster Moment damit?",
+     "c": "Mache dem Getränk, das du nicht gewählt hast, ein faires Kompliment."
+    },
+    "es": {
+     "t": "¿Té o café?",
+     "g": "Un debate acogedor sobre la mejor bebida caliente: sabor, ritual y energía.",
+     "p": [
+      "Elige té, café o ninguno y di tu razón principal.",
+      "Los rituales cuentan: la pausa, el aroma y la taza importan.",
+      "Compara con justicia: ¿qué hace mejor la otra bebida?"
+     ],
+     "q": "¿Té o café, y cuál es tu momento favorito con él?",
+     "c": "Hazle un cumplido justo a la bebida que no elegiste."
+    },
+    "fr": {
+     "t": "Thé ou café ?",
+     "g": "Un débat douillet sur la meilleure boisson chaude : goût, rituel et énergie.",
+     "p": [
+      "Choisis thé, café ou aucun des deux et donne ta raison principale.",
+      "Les rituels comptent : la pause, l'odeur et la tasse ont leur importance.",
+      "Compare équitablement : que fait mieux l'autre boisson ?"
+     ],
+     "q": "Thé ou café, et quel est ton moment préféré avec lui ?",
+     "c": "Fais un compliment sincère à la boisson que tu n'as pas choisie."
+    },
+    "it": {
+     "t": "Tè o caffè?",
+     "g": "Un dibattito accogliente sulla miglior bevanda calda: gusto, rito ed energia.",
+     "p": [
+      "Scegli tè, caffè o nessuno dei due e dì la ragione principale.",
+      "I riti contano: la pausa, il profumo e la tazza hanno importanza.",
+      "Confronta con equità: cosa fa meglio l'altra bevanda?"
+     ],
+     "q": "Tè o caffè, e qual è il tuo momento preferito con esso?",
+     "c": "Fai un complimento sincero alla bevanda che non hai scelto."
+    },
+    "pt": {
+     "t": "Chá ou café?",
+     "g": "Um debate aconchegante sobre a melhor bebida quente: sabor, ritual e energia.",
+     "p": [
+      "Escolhe chá, café ou nenhum e diz a tua razão principal.",
+      "Os rituais contam: a pausa, o aroma e a chávena importam.",
+      "Compara com justiça: o que faz melhor a outra bebida?"
+     ],
+     "q": "Chá ou café, e qual é o teu momento favorito com ele?",
+     "c": "Faz um elogio justo à bebida que não escolheste."
+    },
+    "pt_BR": {
+     "t": "Chá ou café?",
+     "g": "Um debate aconchegante sobre a melhor bebida quente: sabor, ritual e energia.",
+     "p": [
+      "Escolha chá, café ou nenhum e diga a sua razão principal.",
+      "Rituais contam: a pausa, o aroma e a xícara importam.",
+      "Compare com justiça: o que a outra bebida faz melhor?"
+     ],
+     "q": "Chá ou café, e qual é o seu momento favorito com ele?",
+     "c": "Faça um elogio justo à bebida que você não escolheu."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Saying you might be right",
+     "g": "See how admitting a good point makes you more convincing.",
+     "p": [
+      "Say You might be right about that when the other side scores.",
+      "Conceding a small point shows honesty and builds trust.",
+      "Then add: and here is why I still think... to keep your view."
+     ],
+     "q": "When did admitting a point help you in a conversation?",
+     "c": "Find one point I make today and say you might be right about it."
+    },
+    "de": {
+     "t": "Du könntest recht haben sagen",
+     "g": "Sieh, wie das Zugeben eines guten Punkts dich überzeugender macht.",
+     "p": [
+      "Sage Da könntest du recht haben, wenn die Gegenseite punktet.",
+      "Einen kleinen Punkt zuzugeben zeigt Ehrlichkeit und schafft Vertrauen.",
+      "Ergänze dann: und deshalb denke ich trotzdem..., um deine Sicht zu halten."
+     ],
+     "q": "Wann hat dir das Zugeben eines Punkts im Gespräch geholfen?",
+     "c": "Finde heute einen Punkt von mir und sage, dass ich da recht haben könnte."
+    },
+    "es": {
+     "t": "Decir quizá tengas razón",
+     "g": "Descubre cómo admitir un buen punto te hace más convincente.",
+     "p": [
+      "Di Puede que tengas razón en eso cuando la otra parte acierta.",
+      "Conceder un punto pequeño muestra honestidad y crea confianza.",
+      "Luego añade: y por eso sigo pensando... para mantener tu postura."
+     ],
+     "q": "¿Cuándo te ayudó admitir un punto en una conversación?",
+     "c": "Encuentra un punto mío hoy y di que quizá tenga razón en él."
+    },
+    "fr": {
+     "t": "Dire tu as peut-être raison",
+     "g": "Vois comment admettre un bon point te rend plus convaincant.",
+     "p": [
+      "Dis Tu as peut-être raison là-dessus quand l'autre marque un point.",
+      "Concéder un petit point montre de l'honnêteté et crée la confiance.",
+      "Ajoute ensuite : et voici pourquoi je pense quand même... pour garder ton avis."
+     ],
+     "q": "Quand le fait d'admettre un point t'a-t-il aidé dans une conversation ?",
+     "c": "Trouve aujourd'hui un point que je fais et dis que j'ai peut-être raison."
+    },
+    "it": {
+     "t": "Dire forse hai ragione",
+     "g": "Scopri come ammettere un buon punto ti rende più convincente.",
+     "p": [
+      "Dì Forse hai ragione su questo quando l'altro fa centro.",
+      "Concedere un punto piccolo mostra onestà e crea fiducia.",
+      "Poi aggiungi: ed ecco perché penso ancora... per mantenere la tua idea."
+     ],
+     "q": "Quando ammettere un punto ti ha aiutato in una conversazione?",
+     "c": "Trova oggi un punto che faccio e di' che forse ho ragione."
+    },
+    "pt": {
+     "t": "Dizer podes ter razão",
+     "g": "Descobre como admitir um bom ponto te torna mais convincente.",
+     "p": [
+      "Diz Podes ter razão nisso quando o outro lado acerta.",
+      "Conceder um ponto pequeno mostra honestidade e cria confiança.",
+      "Depois acrescenta: e é por isso que continuo a pensar... para manteres a tua visão."
+     ],
+     "q": "Quando é que admitir um ponto te ajudou numa conversa?",
+     "c": "Encontra hoje um ponto meu e diz que posso ter razão nele."
+    },
+    "pt_BR": {
+     "t": "Dizer você pode ter razão",
+     "g": "Descubra como admitir um bom ponto deixa você mais convincente.",
+     "p": [
+      "Diga Você pode ter razão nisso quando o outro lado acerta.",
+      "Conceder um ponto pequeno mostra honestidade e cria confiança.",
+      "Depois acrescente: e é por isso que ainda penso... para manter a sua visão."
+     ],
+     "q": "Quando admitir um ponto ajudou você numa conversa?",
+     "c": "Ache hoje um ponto meu e diga que posso ter razão nele."
+    }
+   }
+  }
+ ]
+}

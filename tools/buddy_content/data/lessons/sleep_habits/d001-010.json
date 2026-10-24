@@ -1,0 +1,835 @@
+{
+ "topic": "sleep_habits",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to your sleep journey",
+     "g": "Learn how one tiny sleep step a day can add up over 365 days.",
+     "p": [
+      "This path covers sleep basics, bedroom, evenings, mornings and more.",
+      "Small habits repeated daily beat big overhauls that fade.",
+      "This is general sleep-hygiene info, not medical advice."
+     ],
+     "q": "What would you most like to change about your sleep?",
+     "c": "Tonight, notice what time you switch off the light."
+    },
+    "de": {
+     "t": "Willkommen auf deiner Schlafreise",
+     "g": "Lerne, wie ein kleiner Schlafschritt pro Tag sich über 365 Tage summiert.",
+     "p": [
+      "Der Weg umfasst Schlafgrundlagen, Schlafzimmer, Abende, Morgen und mehr.",
+      "Kleine tägliche Gewohnheiten schlagen große Umstellungen, die verpuffen.",
+      "Das sind allgemeine Schlaf-Tipps, keine medizinische Beratung."
+     ],
+     "q": "Was würdest du an deinem Schlaf am liebsten verbessern?",
+     "c": "Achte heute Abend darauf, wann du das Licht ausmachst."
+    },
+    "es": {
+     "t": "Bienvenido a tu viaje del sueño",
+     "g": "Descubre cómo un pequeño paso diario puede sumar a lo largo de 365 días.",
+     "p": [
+      "Este camino abarca lo básico del sueño, el dormitorio, las noches y las mañanas.",
+      "Los hábitos pequeños y constantes superan a los grandes cambios que se abandonan.",
+      "Es información general de higiene del sueño, no consejo médico."
+     ],
+     "q": "¿Qué es lo que más te gustaría mejorar de tu sueño?",
+     "c": "Esta noche fíjate a qué hora apagas la luz."
+    },
+    "fr": {
+     "t": "Bienvenue dans ton voyage du sommeil",
+     "g": "Découvre comment un petit pas par jour s'additionne sur 365 jours.",
+     "p": [
+      "Ce parcours couvre les bases du sommeil, la chambre, les soirées et les matins.",
+      "De petites habitudes répétées valent mieux que de grands changements abandonnés.",
+      "Ce sont des conseils généraux d'hygiène du sommeil, pas un avis médical."
+     ],
+     "q": "Qu'aimerais-tu le plus améliorer dans ton sommeil ?",
+     "c": "Ce soir, remarque à quelle heure tu éteins la lumière."
+    },
+    "it": {
+     "t": "Benvenuto nel tuo viaggio del sonno",
+     "g": "Scopri come un piccolo passo al giorno si somma nell'arco di 365 giorni.",
+     "p": [
+      "Questo percorso copre le basi del sonno, la camera, le sere e le mattine.",
+      "Piccole abitudini ripetute battono i grandi cambiamenti che si abbandonano.",
+      "Sono informazioni generali di igiene del sonno, non consigli medici."
+     ],
+     "q": "Cosa vorresti migliorare di più nel tuo sonno?",
+     "c": "Stasera nota a che ora spegni la luce."
+    },
+    "pt": {
+     "t": "Bem-vindo à tua viagem do sono",
+     "g": "Descobre como um pequeno passo por dia se soma ao longo de 365 dias.",
+     "p": [
+      "Este percurso abrange o essencial do sono, o quarto, as noites e as manhãs.",
+      "Pequenos hábitos repetidos valem mais do que grandes mudanças abandonadas.",
+      "São informações gerais de higiene do sono, não aconselhamento médico."
+     ],
+     "q": "O que gostarias de melhorar mais no teu sono?",
+     "c": "Esta noite, repara a que horas apagas a luz."
+    },
+    "pt_BR": {
+     "t": "Boas-vindas à sua jornada do sono",
+     "g": "Descubra como um pequeno passo por dia se soma ao longo de 365 dias.",
+     "p": [
+      "Este caminho cobre o básico do sono, o quarto, as noites e as manhãs.",
+      "Pequenos hábitos repetidos valem mais que grandes mudanças abandonadas.",
+      "São informações gerais de higiene do sono, não orientação médica."
+     ],
+     "q": "O que você mais gostaria de melhorar no seu sono?",
+     "c": "Hoje à noite, perceba a que horas você apaga a luz."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your sleep snapshot",
+     "g": "Take a calm, judgment-free look at your current sleep.",
+     "p": [
+      "Note roughly when you go to bed and when you wake up.",
+      "Note how rested you feel in the morning, from 1 to 5.",
+      "There is no good or bad score, only information to start from."
+     ],
+     "q": "What time do you usually go to bed and wake up?",
+     "c": "Tomorrow morning, rate how rested you feel from 1 to 5."
+    },
+    "de": {
+     "t": "Dein Schlaf-Schnappschuss",
+     "g": "Wirf einen ruhigen, wertfreien Blick auf deinen aktuellen Schlaf.",
+     "p": [
+      "Notiere grob, wann du ins Bett gehst und wann du aufwachst.",
+      "Notiere morgens, wie ausgeruht du dich fühlst, von 1 bis 5.",
+      "Es gibt keine gute oder schlechte Note, nur Ausgangsinformationen."
+     ],
+     "q": "Wann gehst du meist ins Bett und wann stehst du auf?",
+     "c": "Bewerte morgen früh deine Erholung von 1 bis 5."
+    },
+    "es": {
+     "t": "Una foto de tu sueño",
+     "g": "Echa una mirada tranquila y sin juicios a tu sueño actual.",
+     "p": [
+      "Anota más o menos a qué hora te acuestas y a qué hora despiertas.",
+      "Anota cómo de descansado te sientes por la mañana, del 1 al 5.",
+      "No hay nota buena ni mala, solo información para empezar."
+     ],
+     "q": "¿A qué hora sueles acostarte y levantarte?",
+     "c": "Mañana al despertar, puntúa del 1 al 5 cómo de descansado estás."
+    },
+    "fr": {
+     "t": "Un instantané de ton sommeil",
+     "g": "Jette un regard calme, sans jugement, sur ton sommeil actuel.",
+     "p": [
+      "Note à peu près l'heure à laquelle tu te couches et te lèves.",
+      "Note ton niveau de repos le matin, de 1 à 5.",
+      "Il n'y a pas de bonne ou mauvaise note, seulement un point de départ."
+     ],
+     "q": "À quelle heure te couches-tu et te lèves-tu d'habitude ?",
+     "c": "Demain matin, note de 1 à 5 à quel point tu te sens reposé."
+    },
+    "it": {
+     "t": "La foto del tuo sonno",
+     "g": "Dai uno sguardo calmo e senza giudizio al tuo sonno attuale.",
+     "p": [
+      "Annota più o meno a che ora vai a letto e a che ora ti svegli.",
+      "Annota quanto ti senti riposato al mattino, da 1 a 5.",
+      "Non c'è un voto buono o cattivo, solo informazioni da cui partire."
+     ],
+     "q": "A che ora di solito vai a letto e ti alzi?",
+     "c": "Domani mattina dai un voto da 1 a 5 al tuo riposo."
+    },
+    "pt": {
+     "t": "O retrato do teu sono",
+     "g": "Olha com calma e sem julgamentos para o teu sono atual.",
+     "p": [
+      "Anota mais ou menos a que horas te deitas e acordas.",
+      "Anota o quão descansado te sentes de manhã, de 1 a 5.",
+      "Não há nota boa nem má, apenas informação para começar."
+     ],
+     "q": "A que horas costumas deitar-te e levantar-te?",
+     "c": "Amanhã de manhã, dá uma nota de 1 a 5 ao teu descanso."
+    },
+    "pt_BR": {
+     "t": "O retrato do seu sono",
+     "g": "Dê uma olhada calma e sem julgamentos para o seu sono atual.",
+     "p": [
+      "Anote mais ou menos a que horas você deita e acorda.",
+      "Anote o quanto você se sente descansado de manhã, de 1 a 5.",
+      "Não existe nota boa ou ruim, só informação para começar."
+     ],
+     "q": "A que horas você costuma deitar e levantar?",
+     "c": "Amanhã cedo, dê uma nota de 1 a 5 para o seu descanso."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why sleep matters",
+     "g": "See how rest supports energy, mood, focus and wellbeing.",
+     "p": [
+      "Sleep is when the body and brain reset and recover.",
+      "Good rest tends to bring steadier energy and mood.",
+      "Sleep is a basic need, like food and water."
+     ],
+     "q": "Which part of your day feels best after a good night?",
+     "c": "Tonight, tell yourself one reason you deserve good rest."
+    },
+    "de": {
+     "t": "Warum Schlaf wichtig ist",
+     "g": "Verstehe, wie Ruhe Energie, Stimmung, Fokus und Wohlbefinden stützt.",
+     "p": [
+      "Im Schlaf erholen und ordnen sich Körper und Gehirn.",
+      "Guter Schlaf bringt meist stabilere Energie und Laune.",
+      "Schlaf ist ein Grundbedürfnis, wie Essen und Trinken."
+     ],
+     "q": "Welcher Teil deines Tages läuft nach einer guten Nacht am besten?",
+     "c": "Nenne dir heute Abend einen Grund, warum du guten Schlaf verdienst."
+    },
+    "es": {
+     "t": "Por qué importa dormir",
+     "g": "Mira cómo el descanso apoya la energía, el ánimo, la atención y el bienestar.",
+     "p": [
+      "Dormir es cuando el cuerpo y el cerebro se recuperan y se reajustan.",
+      "Un buen descanso suele traer energía y ánimo más estables.",
+      "Dormir es una necesidad básica, como comer y beber."
+     ],
+     "q": "¿Qué parte de tu día va mejor tras una buena noche?",
+     "c": "Esta noche dite una razón por la que mereces descansar bien."
+    },
+    "fr": {
+     "t": "Pourquoi le sommeil compte",
+     "g": "Vois comment le repos soutient l'énergie, l'humeur, la concentration et le bien-être.",
+     "p": [
+      "Pendant le sommeil, le corps et le cerveau récupèrent et se remettent à zéro.",
+      "Un bon repos apporte souvent une énergie et une humeur plus stables.",
+      "Dormir est un besoin de base, comme manger et boire."
+     ],
+     "q": "Quelle partie de ta journée va le mieux après une bonne nuit ?",
+     "c": "Ce soir, donne-toi une raison de mériter un bon repos."
+    },
+    "it": {
+     "t": "Perché il sonno conta",
+     "g": "Scopri come il riposo sostiene energia, umore, concentrazione e benessere.",
+     "p": [
+      "Durante il sonno corpo e cervello si ricaricano e si riordinano.",
+      "Un buon riposo porta di solito energia e umore più stabili.",
+      "Dormire è un bisogno di base, come mangiare e bere."
+     ],
+     "q": "Quale parte della tua giornata va meglio dopo una buona notte?",
+     "c": "Stasera dì a te stesso un motivo per cui meriti un buon riposo."
+    },
+    "pt": {
+     "t": "Porque o sono importa",
+     "g": "Vê como o descanso apoia a energia, o humor, a atenção e o bem-estar.",
+     "p": [
+      "É durante o sono que o corpo e o cérebro recuperam e se reorganizam.",
+      "Um bom descanso costuma trazer energia e humor mais estáveis.",
+      "Dormir é uma necessidade básica, como comer e beber."
+     ],
+     "q": "Que parte do teu dia corre melhor depois de uma boa noite?",
+     "c": "Esta noite, diz a ti próprio uma razão pela qual mereces descansar bem."
+    },
+    "pt_BR": {
+     "t": "Por que o sono importa",
+     "g": "Veja como o descanso apoia a energia, o humor, o foco e o bem-estar.",
+     "p": [
+      "É durante o sono que o corpo e o cérebro se recuperam e se reorganizam.",
+      "Um bom descanso costuma trazer energia e humor mais estáveis.",
+      "Dormir é uma necessidade básica, como comer e beber."
+     ],
+     "q": "Que parte do seu dia vai melhor depois de uma boa noite?",
+     "c": "Hoje à noite, diga a si mesmo um motivo pelo qual merece descansar bem."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How much sleep adults need",
+     "g": "Learn the commonly cited range and why needs differ.",
+     "p": [
+      "Most adults are commonly advised to aim for 7 to 9 hours.",
+      "Needs vary by person, so your own sweet spot matters.",
+      "Feeling alert in the day is a useful hint about enough rest."
+     ],
+     "q": "How many hours feel right for you on a good day?",
+     "c": "Count the hours between your bedtime and wake time tonight."
+    },
+    "de": {
+     "t": "Wie viel Schlaf Erwachsene brauchen",
+     "g": "Lerne den üblichen Richtwert kennen und warum Bedürfnisse verschieden sind.",
+     "p": [
+      "Meist werden Erwachsenen 7 bis 9 Stunden empfohlen.",
+      "Der Bedarf ist individuell, dein eigener Wohlfühlwert zählt.",
+      "Tagsüber wach zu sein ist ein guter Hinweis auf genug Ruhe."
+     ],
+     "q": "Wie viele Stunden fühlen sich an guten Tagen richtig an?",
+     "c": "Zähle heute die Stunden zwischen Schlafenszeit und Aufstehen."
+    },
+    "es": {
+     "t": "Cuánto sueño necesitan los adultos",
+     "g": "Conoce el rango habitual y por qué las necesidades varían.",
+     "p": [
+      "Suele recomendarse a los adultos apuntar a entre 7 y 9 horas.",
+      "Las necesidades varían, así que tu punto ideal cuenta.",
+      "Sentirte despierto de día es una pista de que descansas lo suficiente."
+     ],
+     "q": "¿Cuántas horas te sientan bien en un buen día?",
+     "c": "Esta noche cuenta las horas entre acostarte y levantarte."
+    },
+    "fr": {
+     "t": "Combien de sommeil faut-il aux adultes",
+     "g": "Découvre la fourchette habituelle et pourquoi les besoins varient.",
+     "p": [
+      "On conseille souvent aux adultes de viser 7 à 9 heures.",
+      "Les besoins varient, ton propre équilibre compte donc.",
+      "Être alerte en journée est un indice d'un repos suffisant."
+     ],
+     "q": "Combien d'heures te conviennent un bon jour ?",
+     "c": "Ce soir, compte les heures entre ton coucher et ton lever."
+    },
+    "it": {
+     "t": "Quanto sonno serve agli adulti",
+     "g": "Scopri l'intervallo più citato e perché i bisogni cambiano.",
+     "p": [
+      "Agli adulti si consiglia di solito di puntare a 7-9 ore.",
+      "I bisogni variano, quindi conta il tuo punto ideale.",
+      "Sentirti vigile di giorno è un indizio di riposo sufficiente."
+     ],
+     "q": "Quante ore ti sembrano giuste in una buona giornata?",
+     "c": "Stanotte conta le ore tra quando vai a letto e quando ti alzi."
+    },
+    "pt": {
+     "t": "De quanto sono precisam os adultos",
+     "g": "Conhece o intervalo habitual e porque as necessidades variam.",
+     "p": [
+      "Costuma aconselhar-se aos adultos entre 7 e 9 horas.",
+      "As necessidades variam, por isso o teu ponto ideal conta.",
+      "Sentires-te desperto de dia é uma pista de descanso suficiente."
+     ],
+     "q": "Quantas horas te sabem bem num bom dia?",
+     "c": "Esta noite, conta as horas entre deitares e levantares."
+    },
+    "pt_BR": {
+     "t": "Quanto sono os adultos precisam",
+     "g": "Conheça a faixa mais citada e por que as necessidades variam.",
+     "p": [
+      "Costuma-se recomendar aos adultos de 7 a 9 horas.",
+      "As necessidades variam, então o seu ponto ideal importa.",
+      "Sentir-se alerta de dia é uma pista de descanso suficiente."
+     ],
+     "q": "Quantas horas parecem certas para você num bom dia?",
+     "c": "Hoje à noite, conte as horas entre deitar e levantar."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What happens when we sleep",
+     "g": "Take a friendly tour of the stages of a night.",
+     "p": [
+      "You drift off, then move through light sleep.",
+      "Deep sleep follows, a heavy, restful stage.",
+      "Dreaming sleep comes in too, with an active brain."
+     ],
+     "q": "Do you remember any dream from this week?",
+     "c": "Before bed, picture your night as a journey with stages."
+    },
+    "de": {
+     "t": "Was im Schlaf passiert",
+     "g": "Mach eine freundliche Tour durch die Phasen einer Nacht.",
+     "p": [
+      "Du dämmerst weg und durchläufst den Leichtschlaf.",
+      "Danach folgt der Tiefschlaf, eine schwere, erholsame Phase.",
+      "Dazu kommt der Traumschlaf mit aktivem Gehirn."
+     ],
+     "q": "Erinnerst du dich an einen Traum aus dieser Woche?",
+     "c": "Stell dir vor dem Schlafen die Nacht als Reise mit Etappen vor."
+    },
+    "es": {
+     "t": "Qué pasa cuando dormimos",
+     "g": "Haz un recorrido amable por las fases de una noche.",
+     "p": [
+      "Te vas durmiendo y pasas por el sueño ligero.",
+      "Luego llega el sueño profundo, una fase pesada y reparadora.",
+      "También aparece el sueño con sueños, con el cerebro activo."
+     ],
+     "q": "¿Recuerdas algún sueño de esta semana?",
+     "c": "Antes de dormir, imagina tu noche como un viaje con etapas."
+    },
+    "fr": {
+     "t": "Que se passe-t-il quand on dort",
+     "g": "Fais un tour sympa des étapes d'une nuit.",
+     "p": [
+      "Tu t'endors, puis tu traverses le sommeil léger.",
+      "Vient ensuite le sommeil profond, une phase lourde et réparatrice.",
+      "Il y a aussi le sommeil paradoxal, où le cerveau est actif."
+     ],
+     "q": "Te souviens-tu d'un rêve de cette semaine ?",
+     "c": "Avant de dormir, imagine ta nuit comme un voyage par étapes."
+    },
+    "it": {
+     "t": "Cosa succede quando dormiamo",
+     "g": "Fai un giro amichevole tra le fasi di una notte.",
+     "p": [
+      "Ti addormenti e poi attraversi il sonno leggero.",
+      "Segue il sonno profondo, una fase pesante e rigenerante.",
+      "Arriva anche il sonno dei sogni, con il cervello attivo."
+     ],
+     "q": "Ricordi qualche sogno di questa settimana?",
+     "c": "Prima di dormire, immagina la notte come un viaggio a tappe."
+    },
+    "pt": {
+     "t": "O que acontece quando dormimos",
+     "g": "Faz uma visita simpática às fases de uma noite.",
+     "p": [
+      "Adormeces e depois passas pelo sono leve.",
+      "Segue-se o sono profundo, uma fase pesada e reparadora.",
+      "Há também o sono dos sonhos, com o cérebro ativo."
+     ],
+     "q": "Lembras-te de algum sonho desta semana?",
+     "c": "Antes de dormir, imagina a noite como uma viagem por etapas."
+    },
+    "pt_BR": {
+     "t": "O que acontece quando dormimos",
+     "g": "Faça um passeio amigável pelas fases de uma noite.",
+     "p": [
+      "Você pega no sono e passa pelo sono leve.",
+      "Em seguida vem o sono profundo, uma fase pesada e reparadora.",
+      "Há também o sono dos sonhos, com o cérebro ativo."
+     ],
+     "q": "Você lembra de algum sonho desta semana?",
+     "c": "Antes de dormir, imagine a noite como uma viagem em etapas."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sleep cycles explained",
+     "g": "Understand how the night repeats cycles of about 90 minutes.",
+     "p": [
+      "Each cycle moves through light, deep and dreaming sleep.",
+      "You pass through several cycles in a night.",
+      "Waking between cycles often feels easier than mid-deep sleep."
+     ],
+     "q": "Do you wake up groggy on some days and fresh on others?",
+     "c": "Notice how you feel on waking tomorrow and jot one word."
+    },
+    "de": {
+     "t": "Schlafzyklen erklärt",
+     "g": "Verstehe, wie sich die Nacht in Zyklen von etwa 90 Minuten wiederholt.",
+     "p": [
+      "Jeder Zyklus durchläuft Leicht-, Tief- und Traumschlaf.",
+      "In einer Nacht durchläufst du mehrere Zyklen.",
+      "Zwischen den Zyklen aufzuwachen fühlt sich oft leichter an."
+     ],
+     "q": "Wachst du an manchen Tagen benommen und an anderen frisch auf?",
+     "c": "Notiere morgen beim Aufwachen ein Wort dafür, wie du dich fühlst."
+    },
+    "es": {
+     "t": "Los ciclos del sueño",
+     "g": "Entiende cómo la noche repite ciclos de unos 90 minutos.",
+     "p": [
+      "Cada ciclo pasa por sueño ligero, profundo y de sueños.",
+      "En una noche pasas por varios ciclos.",
+      "Despertar entre ciclos suele sentirse más fácil que en pleno sueño profundo."
+     ],
+     "q": "¿Algunos días despiertas aturdido y otros fresco?",
+     "c": "Mañana, al despertar, anota una palabra sobre cómo te sientes."
+    },
+    "fr": {
+     "t": "Les cycles du sommeil",
+     "g": "Comprends comment la nuit répète des cycles d'environ 90 minutes.",
+     "p": [
+      "Chaque cycle traverse sommeil léger, profond et paradoxal.",
+      "Tu traverses plusieurs cycles par nuit.",
+      "Se réveiller entre deux cycles est souvent plus facile qu'en plein sommeil profond."
+     ],
+     "q": "Te réveilles-tu parfois groggy et parfois en forme ?",
+     "c": "Demain au réveil, note un mot sur ce que tu ressens."
+    },
+    "it": {
+     "t": "I cicli del sonno",
+     "g": "Capisci come la notte ripete cicli di circa 90 minuti.",
+     "p": [
+      "Ogni ciclo attraversa sonno leggero, profondo e dei sogni.",
+      "In una notte passi per diversi cicli.",
+      "Svegliarsi tra un ciclo e l'altro è spesso più facile che nel sonno profondo."
+     ],
+     "q": "Ti svegli a volte intontito e altre volte fresco?",
+     "c": "Domani al risveglio annota una parola su come ti senti."
+    },
+    "pt": {
+     "t": "Os ciclos do sono",
+     "g": "Percebe como a noite repete ciclos de cerca de 90 minutos.",
+     "p": [
+      "Cada ciclo passa por sono leve, profundo e de sonhos.",
+      "Numa noite passas por vários ciclos.",
+      "Acordar entre ciclos costuma ser mais fácil do que em pleno sono profundo."
+     ],
+     "q": "Há dias em que acordas atordoado e outros em que acordas fresco?",
+     "c": "Amanhã, ao acordar, anota uma palavra sobre como te sentes."
+    },
+    "pt_BR": {
+     "t": "Os ciclos do sono",
+     "g": "Entenda como a noite repete ciclos de cerca de 90 minutos.",
+     "p": [
+      "Cada ciclo passa por sono leve, profundo e de sonhos.",
+      "Numa noite você passa por vários ciclos.",
+      "Acordar entre ciclos costuma ser mais fácil do que no meio do sono profundo."
+     ],
+     "q": "Tem dias que você acorda grogue e outros que acorda bem?",
+     "c": "Amanhã, ao acordar, anote uma palavra sobre como você se sente."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Deep sleep in plain words",
+     "g": "Meet the slow, heavy stage that helps the body rest.",
+     "p": [
+      "Deep sleep often comes in the first half of the night.",
+      "Breathing and heartbeat slow, and waking up is harder.",
+      "Protecting early bedtime hours helps protect deep sleep."
+     ],
+     "q": "Do you ever fall asleep so heavily that waking is tough?",
+     "c": "Tonight, aim to start winding down a little earlier."
+    },
+    "de": {
+     "t": "Tiefschlaf in einfachen Worten",
+     "g": "Lerne die langsame, schwere Phase kennen, die dem Körper Ruhe schenkt.",
+     "p": [
+      "Tiefschlaf kommt oft in der ersten Nachthälfte.",
+      "Atmung und Herzschlag werden langsamer, Aufwachen fällt schwerer.",
+      "Frühe Schlafstunden zu schützen schützt den Tiefschlaf."
+     ],
+     "q": "Schläfst du manchmal so tief, dass Aufwachen schwerfällt?",
+     "c": "Beginne heute Abend etwas früher mit dem Runterfahren."
+    },
+    "es": {
+     "t": "El sueño profundo en palabras sencillas",
+     "g": "Conoce la fase lenta y pesada que ayuda al cuerpo a descansar.",
+     "p": [
+      "El sueño profundo suele llegar en la primera mitad de la noche.",
+      "La respiración y el pulso se ralentizan y cuesta más despertar.",
+      "Proteger las primeras horas de cama ayuda a proteger el sueño profundo."
+     ],
+     "q": "¿Te duermes a veces tan hondo que despertar cuesta?",
+     "c": "Esta noche empieza a relajarte un poquito antes."
+    },
+    "fr": {
+     "t": "Le sommeil profond en mots simples",
+     "g": "Découvre la phase lente et lourde qui aide le corps à se reposer.",
+     "p": [
+      "Le sommeil profond arrive souvent dans la première moitié de la nuit.",
+      "Respiration et pouls ralentissent, et se réveiller est plus dur.",
+      "Protéger les premières heures de lit protège le sommeil profond."
+     ],
+     "q": "T'arrive-t-il de dormir si lourdement que le réveil est difficile ?",
+     "c": "Ce soir, commence à ralentir un peu plus tôt."
+    },
+    "it": {
+     "t": "Il sonno profondo in parole semplici",
+     "g": "Conosci la fase lenta e pesante che aiuta il corpo a riposare.",
+     "p": [
+      "Il sonno profondo arriva spesso nella prima metà della notte.",
+      "Respiro e battito rallentano e svegliarsi è più difficile.",
+      "Proteggere le prime ore a letto aiuta a proteggere il sonno profondo."
+     ],
+     "q": "Ti capita di dormire così pesantemente che svegliarsi è dura?",
+     "c": "Stasera comincia a rilassarti un po' prima."
+    },
+    "pt": {
+     "t": "O sono profundo em palavras simples",
+     "g": "Conhece a fase lenta e pesada que ajuda o corpo a descansar.",
+     "p": [
+      "O sono profundo surge muitas vezes na primeira metade da noite.",
+      "A respiração e o pulso abrandam e acordar custa mais.",
+      "Proteger as primeiras horas de cama ajuda a proteger o sono profundo."
+     ],
+     "q": "Já te aconteceu adormecer tão profundamente que acordar custa?",
+     "c": "Esta noite, começa a descontrair um pouco mais cedo."
+    },
+    "pt_BR": {
+     "t": "O sono profundo em palavras simples",
+     "g": "Conheça a fase lenta e pesada que ajuda o corpo a descansar.",
+     "p": [
+      "O sono profundo costuma surgir na primeira metade da noite.",
+      "A respiração e o pulso desaceleram e acordar fica mais difícil.",
+      "Proteger as primeiras horas de cama ajuda a proteger o sono profundo."
+     ],
+     "q": "Você já pegou num sono tão pesado que acordar foi difícil?",
+     "c": "Hoje à noite, comece a desacelerar um pouco mais cedo."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dreaming sleep",
+     "g": "Learn what REM sleep is and why dreams feel vivid.",
+     "p": [
+      "REM stands for rapid eye movement, when dreams are most vivid.",
+      "The brain is very active while most muscles rest.",
+      "REM periods grow longer towards the morning."
+     ],
+     "q": "What is the most memorable dream you have had?",
+     "c": "Keep a notebook by the bed and note any dream tomorrow."
+    },
+    "de": {
+     "t": "Der Traumschlaf",
+     "g": "Erfahre, was REM-Schlaf ist und warum Träume so lebhaft sind.",
+     "p": [
+      "REM steht für schnelle Augenbewegungen, die Phase mit lebhaften Träumen.",
+      "Das Gehirn ist sehr aktiv, während die meisten Muskeln ruhen.",
+      "REM-Phasen werden zum Morgen hin länger."
+     ],
+     "q": "Welcher Traum ist dir am stärksten in Erinnerung geblieben?",
+     "c": "Leg ein Notizbuch neben das Bett und halte morgen einen Traum fest."
+    },
+    "es": {
+     "t": "El sueño de los sueños",
+     "g": "Descubre qué es el sueño REM y por qué los sueños se sienten tan vívidos.",
+     "p": [
+      "REM significa movimiento ocular rápido, cuando los sueños son más vívidos.",
+      "El cerebro está muy activo mientras la mayoría de los músculos descansa.",
+      "Las fases REM se alargan hacia la mañana."
+     ],
+     "q": "¿Cuál es el sueño más memorable que has tenido?",
+     "c": "Deja una libreta junto a la cama y anota mañana algún sueño."
+    },
+    "fr": {
+     "t": "Le sommeil paradoxal",
+     "g": "Découvre ce qu'est le sommeil paradoxal et pourquoi les rêves semblent si vifs.",
+     "p": [
+      "Le sommeil paradoxal est la phase des mouvements oculaires rapides, aux rêves vifs.",
+      "Le cerveau est très actif tandis que la plupart des muscles se reposent.",
+      "Ces phases s'allongent vers le matin."
+     ],
+     "q": "Quel est le rêve le plus mémorable que tu aies fait ?",
+     "c": "Garde un carnet près du lit et note un rêve demain."
+    },
+    "it": {
+     "t": "Il sonno dei sogni",
+     "g": "Scopri cos'è il sonno REM e perché i sogni sembrano così vividi.",
+     "p": [
+      "REM significa movimento rapido degli occhi, quando i sogni sono più vividi.",
+      "Il cervello è molto attivo mentre quasi tutti i muscoli riposano.",
+      "Le fasi REM si allungano verso il mattino."
+     ],
+     "q": "Qual è il sogno più memorabile che hai fatto?",
+     "c": "Tieni un taccuino vicino al letto e annota un sogno domani."
+    },
+    "pt": {
+     "t": "O sono dos sonhos",
+     "g": "Descobre o que é o sono REM e porque os sonhos parecem tão vívidos.",
+     "p": [
+      "REM significa movimento rápido dos olhos, quando os sonhos são mais vívidos.",
+      "O cérebro está muito ativo enquanto a maioria dos músculos descansa.",
+      "As fases REM ficam mais longas perto da manhã."
+     ],
+     "q": "Qual foi o sonho mais memorável que já tiveste?",
+     "c": "Deixa um caderno junto à cama e anota amanhã algum sonho."
+    },
+    "pt_BR": {
+     "t": "O sono dos sonhos",
+     "g": "Descubra o que é o sono REM e por que os sonhos parecem tão vívidos.",
+     "p": [
+      "REM significa movimento rápido dos olhos, quando os sonhos são mais vívidos.",
+      "O cérebro fica muito ativo enquanto a maioria dos músculos descansa.",
+      "As fases REM ficam mais longas perto da manhã."
+     ],
+     "q": "Qual foi o sonho mais marcante que você já teve?",
+     "c": "Deixe um caderno ao lado da cama e anote amanhã algum sonho."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your body clock",
+     "g": "Meet your circadian rhythm, an inner 24-hour clock.",
+     "p": [
+      "It nudges you to feel alert in the day and sleepy at night.",
+      "It likes regular timing, so steady routines help.",
+      "Light, meals and activity all give it hints."
+     ],
+     "q": "When in the day do you feel most alert?",
+     "c": "Note today the hours when you feel sharpest and sleepiest."
+    },
+    "de": {
+     "t": "Deine innere Uhr",
+     "g": "Lerne deinen zirkadianen Rhythmus kennen, eine innere 24-Stunden-Uhr.",
+     "p": [
+      "Sie macht dich tagsüber wach und abends müde.",
+      "Sie mag feste Zeiten, daher helfen gleichmäßige Routinen.",
+      "Licht, Mahlzeiten und Bewegung geben ihr Hinweise."
+     ],
+     "q": "Wann am Tag bist du am wachsten?",
+     "c": "Notiere heute, wann du am fittesten und am müdesten bist."
+    },
+    "es": {
+     "t": "Tu reloj biológico",
+     "g": "Conoce tu ritmo circadiano, un reloj interno de 24 horas.",
+     "p": [
+      "Te empuja a estar alerta de día y con sueño de noche.",
+      "Le gustan los horarios regulares, así que las rutinas estables ayudan.",
+      "La luz, las comidas y la actividad le dan pistas."
+     ],
+     "q": "¿A qué hora del día te sientes más despierto?",
+     "c": "Anota hoy las horas en que estás más lúcido y más somnoliento."
+    },
+    "fr": {
+     "t": "Ton horloge biologique",
+     "g": "Fais connaissance avec ton rythme circadien, une horloge interne de 24 heures.",
+     "p": [
+      "Elle te rend alerte le jour et somnolent le soir.",
+      "Elle aime la régularité, donc des routines stables aident.",
+      "La lumière, les repas et l'activité lui donnent des repères."
+     ],
+     "q": "À quel moment de la journée es-tu le plus alerte ?",
+     "c": "Note aujourd'hui tes heures de pleine forme et de plus grande somnolence."
+    },
+    "it": {
+     "t": "Il tuo orologio biologico",
+     "g": "Conosci il tuo ritmo circadiano, un orologio interno di 24 ore.",
+     "p": [
+      "Ti spinge a essere vigile di giorno e assonnato di notte.",
+      "Ama orari regolari, quindi le routine stabili aiutano.",
+      "Luce, pasti e attività gli danno degli indizi."
+     ],
+     "q": "In che momento della giornata ti senti più vigile?",
+     "c": "Annota oggi le ore in cui sei più sveglio e più assonnato."
+    },
+    "pt": {
+     "t": "O teu relógio biológico",
+     "g": "Conhece o teu ritmo circadiano, um relógio interno de 24 horas.",
+     "p": [
+      "Ele empurra-te a estar alerta de dia e com sono de noite.",
+      "Gosta de horários regulares, por isso rotinas estáveis ajudam.",
+      "A luz, as refeições e a atividade dão-lhe pistas."
+     ],
+     "q": "Em que altura do dia te sentes mais desperto?",
+     "c": "Anota hoje as horas em que estás mais lúcido e mais sonolento."
+    },
+    "pt_BR": {
+     "t": "O seu relógio biológico",
+     "g": "Conheça o seu ritmo circadiano, um relógio interno de 24 horas.",
+     "p": [
+      "Ele empurra você a ficar alerta de dia e com sono à noite.",
+      "Ele gosta de horários regulares, então rotinas estáveis ajudam.",
+      "A luz, as refeições e a atividade dão pistas a ele."
+     ],
+     "q": "Em que hora do dia você se sente mais desperto?",
+     "c": "Anote hoje as horas em que você está mais lúcido e mais sonolento."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sleep pressure",
+     "g": "Learn how the urge to sleep builds while you are awake.",
+     "p": [
+      "The longer you stay awake, the stronger sleepiness grows.",
+      "Sleep resets that pressure, like emptying a tank.",
+      "Long late naps can drain the tank and delay bedtime tiredness."
+     ],
+     "q": "Have you ever been so tired that you fell asleep instantly?",
+     "c": "Today, notice when your sleepiness starts to build in the evening."
+    },
+    "de": {
+     "t": "Schlafdruck",
+     "g": "Verstehe, wie der Drang zu schlafen im Wachsein wächst.",
+     "p": [
+      "Je länger du wach bist, desto stärker wird die Müdigkeit.",
+      "Schlaf setzt diesen Druck zurück, wie einen Tank, der geleert wird.",
+      "Lange späte Nickerchen leeren den Tank und verzögern die Abendmüdigkeit."
+     ],
+     "q": "Warst du schon mal so müde, dass du sofort eingeschlafen bist?",
+     "c": "Achte heute darauf, wann abends die Müdigkeit zu wachsen beginnt."
+    },
+    "es": {
+     "t": "La presión de sueño",
+     "g": "Aprende cómo las ganas de dormir crecen mientras estás despierto.",
+     "p": [
+      "Cuanto más tiempo despierto, más fuerte es el sueño.",
+      "Dormir reinicia esa presión, como vaciar un depósito.",
+      "Las siestas largas y tardías vacían el depósito y retrasan el sueño nocturno."
+     ],
+     "q": "¿Alguna vez has tenido tanto sueño que te dormiste al instante?",
+     "c": "Hoy fíjate en cuándo empieza a crecer tu sueño por la tarde."
+    },
+    "fr": {
+     "t": "La pression de sommeil",
+     "g": "Apprends comment l'envie de dormir grandit pendant l'éveil.",
+     "p": [
+      "Plus tu restes éveillé, plus la somnolence augmente.",
+      "Le sommeil remet cette pression à zéro, comme on vide un réservoir.",
+      "Les longues siestes tardives vident le réservoir et retardent la fatigue du soir."
+     ],
+     "q": "As-tu déjà été si fatigué que tu t'es endormi aussitôt ?",
+     "c": "Aujourd'hui, remarque quand la somnolence commence à monter le soir."
+    },
+    "it": {
+     "t": "La pressione del sonno",
+     "g": "Scopri come la voglia di dormire cresce mentre sei sveglio.",
+     "p": [
+      "Più a lungo resti sveglio, più cresce la sonnolenza.",
+      "Il sonno azzera questa pressione, come svuotare un serbatoio.",
+      "I lunghi sonnellini tardivi svuotano il serbatoio e ritardano la stanchezza serale."
+     ],
+     "q": "Ti è mai capitato di essere così stanco da addormentarti subito?",
+     "c": "Oggi nota quando la sonnolenza inizia a salire la sera."
+    },
+    "pt": {
+     "t": "A pressão do sono",
+     "g": "Aprende como a vontade de dormir cresce enquanto estás acordado.",
+     "p": [
+      "Quanto mais tempo acordado, mais forte fica o sono.",
+      "Dormir repõe essa pressão, como esvaziar um depósito.",
+      "Sestas longas e tardias esvaziam o depósito e adiam o cansaço da noite."
+     ],
+     "q": "Já estiveste com tanto sono que adormeceste logo?",
+     "c": "Hoje repara em que altura o sono começa a crescer ao fim do dia."
+    },
+    "pt_BR": {
+     "t": "A pressão do sono",
+     "g": "Aprenda como a vontade de dormir cresce enquanto você está acordado.",
+     "p": [
+      "Quanto mais tempo acordado, mais forte fica o sono.",
+      "Dormir zera essa pressão, como esvaziar um tanque.",
+      "Cochilos longos e tardios esvaziam o tanque e adiam o cansaço da noite."
+     ],
+     "q": "Você já teve tanto sono que apagou na hora?",
+     "c": "Hoje perceba em que hora o sono começa a crescer no fim do dia."
+    }
+   }
+  }
+ ]
+}

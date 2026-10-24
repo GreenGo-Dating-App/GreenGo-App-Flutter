@@ -1,0 +1,835 @@
+{
+ "topic": "sleep_habits",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fresh air and airflow",
+     "g": "See why a well-aired room often feels nicer for sleep.",
+     "p": [
+      "Stale, stuffy air can make a room feel heavy.",
+      "A few minutes of open window during the day refreshes it.",
+      "Gentle airflow, like a slightly open window or a fan, can feel pleasant."
+     ],
+     "q": "Does your bedroom feel fresh or stuffy at bedtime?",
+     "c": "This evening, air out your bedroom for ten minutes before bed."
+    },
+    "de": {
+     "t": "Frische Luft und Luftzirkulation",
+     "g": "Sieh, warum ein gut gelüfteter Raum sich oft besser zum Schlafen anfühlt.",
+     "p": [
+      "Abgestandene, stickige Luft lässt einen Raum schwer wirken.",
+      "Ein paar Minuten offenes Fenster tagsüber frischen ihn auf.",
+      "Sanfter Luftzug, etwa ein gekipptes Fenster oder ein Ventilator, kann angenehm sein."
+     ],
+     "q": "Fühlt sich dein Schlafzimmer zur Schlafenszeit frisch oder stickig an?",
+     "c": "Lüfte dein Schlafzimmer heute Abend zehn Minuten vor dem Zubettgehen."
+    },
+    "es": {
+     "t": "Aire fresco y ventilación",
+     "g": "Mira por qué una habitación bien ventilada suele sentirse mejor para dormir.",
+     "p": [
+      "El aire viciado y cargado hace que un cuarto se sienta pesado.",
+      "Unos minutos de ventana abierta durante el día lo refrescan.",
+      "Una brisa suave, como una ventana entreabierta o un ventilador, puede resultar agradable."
+     ],
+     "q": "¿Tu dormitorio se siente fresco o cargado al acostarte?",
+     "c": "Esta tarde ventila el dormitorio diez minutos antes de acostarte."
+    },
+    "fr": {
+     "t": "Air frais et aération",
+     "g": "Vois pourquoi une pièce bien aérée est souvent plus agréable pour dormir.",
+     "p": [
+      "Un air vicié et lourd rend la pièce pesante.",
+      "Quelques minutes de fenêtre ouverte dans la journée la rafraîchissent.",
+      "Un léger courant d'air, fenêtre entrouverte ou ventilateur, peut être agréable."
+     ],
+     "q": "Ta chambre te semble-t-elle fraîche ou étouffante au coucher ?",
+     "c": "Ce soir, aère ta chambre dix minutes avant d'aller au lit."
+    },
+    "it": {
+     "t": "Aria fresca e ricambio d'aria",
+     "g": "Scopri perché una stanza ben arieggiata è spesso più piacevole per dormire.",
+     "p": [
+      "L'aria viziata e pesante rende la stanza opprimente.",
+      "Qualche minuto di finestra aperta durante il giorno la rinfresca.",
+      "Una leggera corrente, come una finestra socchiusa o un ventilatore, può essere piacevole."
+     ],
+     "q": "La tua camera ti sembra fresca o soffocante all'ora di dormire?",
+     "c": "Stasera arieggia la camera dieci minuti prima di andare a letto."
+    },
+    "pt": {
+     "t": "Ar fresco e ventilação",
+     "g": "Vê porque um quarto bem arejado costuma ser mais agradável para dormir.",
+     "p": [
+      "Ar abafado e carregado torna o quarto pesado.",
+      "Uns minutos de janela aberta durante o dia refrescam-no.",
+      "Uma brisa suave, como uma janela entreaberta ou ventoinha, pode ser agradável."
+     ],
+     "q": "O teu quarto parece fresco ou abafado à hora de deitar?",
+     "c": "Esta noite, arejar o quarto dez minutos antes de te deitares."
+    },
+    "pt_BR": {
+     "t": "Ar fresco e ventilação",
+     "g": "Veja por que um quarto bem arejado costuma ser mais agradável para dormir.",
+     "p": [
+      "Ar abafado e carregado deixa o quarto pesado.",
+      "Uns minutos de janela aberta durante o dia refrescam o ambiente.",
+      "Uma brisa suave, como uma janela entreaberta ou ventilador, pode ser agradável."
+     ],
+     "q": "O seu quarto parece fresco ou abafado na hora de deitar?",
+     "c": "Hoje à noite, areje o quarto dez minutos antes de deitar."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Humidity and comfort",
+     "g": "See how very dry or damp air can affect comfort at night.",
+     "p": [
+      "Very dry air can make the nose and throat feel dry.",
+      "Very damp air can feel clammy and stuffy.",
+      "A comfortable middle is easier to sleep in."
+     ],
+     "q": "Does the air in your bedroom feel dry, damp or fine?",
+     "c": "Tonight, notice how the air feels when you get into bed."
+    },
+    "de": {
+     "t": "Luftfeuchtigkeit und Komfort",
+     "g": "Sieh, wie sehr trockene oder feuchte Luft den Komfort nachts beeinflussen kann.",
+     "p": [
+      "Sehr trockene Luft lässt Nase und Hals trocken wirken.",
+      "Sehr feuchte Luft kann klamm und stickig wirken.",
+      "In einer angenehmen Mitte schläft es sich leichter."
+     ],
+     "q": "Fühlt sich die Luft in deinem Schlafzimmer trocken, feucht oder gut an?",
+     "c": "Achte heute Abend darauf, wie sich die Luft anfühlt, wenn du ins Bett gehst."
+    },
+    "es": {
+     "t": "Humedad y comodidad",
+     "g": "Mira cómo el aire muy seco o muy húmedo puede afectar la comodidad nocturna.",
+     "p": [
+      "El aire muy seco puede resecar la nariz y la garganta.",
+      "El aire muy húmedo puede sentirse pegajoso y cargado.",
+      "Un punto medio cómodo facilita dormir."
+     ],
+     "q": "¿El aire de tu dormitorio se siente seco, húmedo o bien?",
+     "c": "Esta noche fíjate en cómo se siente el aire al meterte en la cama."
+    },
+    "fr": {
+     "t": "Humidité et confort",
+     "g": "Vois comment un air très sec ou très humide peut affecter le confort la nuit.",
+     "p": [
+      "Un air très sec peut assécher le nez et la gorge.",
+      "Un air très humide peut sembler moite et lourd.",
+      "Un juste milieu confortable aide à mieux dormir."
+     ],
+     "q": "L'air de ta chambre te semble-t-il sec, humide ou correct ?",
+     "c": "Ce soir, remarque comment l'air te paraît en te glissant dans le lit."
+    },
+    "it": {
+     "t": "Umidità e comfort",
+     "g": "Scopri come l'aria molto secca o molto umida può influire sul comfort notturno.",
+     "p": [
+      "L'aria molto secca può seccare naso e gola.",
+      "L'aria molto umida può risultare appiccicosa e pesante.",
+      "Un giusto mezzo confortevole rende più facile dormire."
+     ],
+     "q": "L'aria della tua camera ti sembra secca, umida o a posto?",
+     "c": "Stasera nota come ti sembra l'aria quando entri nel letto."
+    },
+    "pt": {
+     "t": "Humidade e conforto",
+     "g": "Vê como o ar muito seco ou muito húmido pode afetar o conforto à noite.",
+     "p": [
+      "O ar muito seco pode secar o nariz e a garganta.",
+      "O ar muito húmido pode parecer pegajoso e abafado.",
+      "Um meio-termo confortável facilita o sono."
+     ],
+     "q": "O ar do teu quarto parece seco, húmido ou bom?",
+     "c": "Esta noite, repara como o ar se sente quando te metes na cama."
+    },
+    "pt_BR": {
+     "t": "Umidade e conforto",
+     "g": "Veja como o ar muito seco ou muito úmido pode afetar o conforto à noite.",
+     "p": [
+      "O ar muito seco pode ressecar o nariz e a garganta.",
+      "O ar muito úmido pode parecer pegajoso e abafado.",
+      "Um meio-termo confortável facilita o sono."
+     ],
+     "q": "O ar do seu quarto parece seco, úmido ou bom?",
+     "c": "Hoje à noite, perceba como o ar se sente quando você entra na cama."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Clutter and calm",
+     "g": "See how a tidy, simple bedroom can feel more restful.",
+     "p": [
+      "Visible piles can quietly remind you of unfinished tasks.",
+      "A clear surface near the bed feels calmer.",
+      "You do not need perfection, just one tidy spot."
+     ],
+     "q": "What is the busiest corner of your bedroom?",
+     "c": "Tonight, tidy your bedside table for two minutes."
+    },
+    "de": {
+     "t": "Ordnung und Ruhe",
+     "g": "Sieh, wie ein aufgeräumtes, schlichtes Schlafzimmer erholsamer wirken kann.",
+     "p": [
+      "Sichtbare Stapel erinnern leise an unerledigte Aufgaben.",
+      "Eine freie Fläche am Bett wirkt ruhiger.",
+      "Du brauchst keine Perfektion, nur eine aufgeräumte Ecke."
+     ],
+     "q": "Welche Ecke deines Schlafzimmers ist am vollsten?",
+     "c": "Räum heute Abend zwei Minuten deinen Nachttisch auf."
+    },
+    "es": {
+     "t": "Orden y calma",
+     "g": "Mira cómo un dormitorio ordenado y sencillo puede resultar más descansado.",
+     "p": [
+      "Las pilas a la vista recuerdan en silencio tareas pendientes.",
+      "Una superficie despejada junto a la cama se siente más tranquila.",
+      "No necesitas perfección, solo un rincón ordenado."
+     ],
+     "q": "¿Cuál es el rincón más cargado de tu dormitorio?",
+     "c": "Esta noche ordena tu mesilla durante dos minutos."
+    },
+    "fr": {
+     "t": "Rangement et calme",
+     "g": "Vois comment une chambre rangée et simple peut paraître plus reposante.",
+     "p": [
+      "Des piles visibles rappellent discrètement les tâches inachevées.",
+      "Une surface dégagée près du lit paraît plus calme.",
+      "Pas besoin de perfection, juste d'un coin rangé."
+     ],
+     "q": "Quel est le coin le plus chargé de ta chambre ?",
+     "c": "Ce soir, range ta table de chevet pendant deux minutes."
+    },
+    "it": {
+     "t": "Ordine e calma",
+     "g": "Scopri come una camera ordinata e semplice può sembrare più riposante.",
+     "p": [
+      "Le pile in vista ricordano in silenzio i compiti non finiti.",
+      "Una superficie libera vicino al letto sembra più calma.",
+      "Non serve la perfezione, basta un angolo in ordine."
+     ],
+     "q": "Qual è l'angolo più affollato della tua camera?",
+     "c": "Stasera riordina il comodino per due minuti."
+    },
+    "pt": {
+     "t": "Arrumação e calma",
+     "g": "Vê como um quarto arrumado e simples pode parecer mais repousante.",
+     "p": [
+      "Pilhas à vista lembram em silêncio tarefas por fazer.",
+      "Uma superfície livre junto à cama parece mais calma.",
+      "Não precisas de perfeição, só de um cantinho arrumado."
+     ],
+     "q": "Qual é o canto mais cheio do teu quarto?",
+     "c": "Esta noite, arruma a mesa de cabeceira durante dois minutos."
+    },
+    "pt_BR": {
+     "t": "Organização e calma",
+     "g": "Veja como um quarto organizado e simples pode parecer mais repousante.",
+     "p": [
+      "Pilhas à vista lembram em silêncio tarefas por fazer.",
+      "Uma superfície livre ao lado da cama parece mais calma.",
+      "Você não precisa de perfeição, só de um cantinho arrumado."
+     ],
+     "q": "Qual é o canto mais cheio do seu quarto?",
+     "c": "Hoje à noite, arrume a mesa de cabeceira por dois minutos."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Colours and atmosphere",
+     "g": "Explore soft colours, warm lighting and cosy textures.",
+     "p": [
+      "Muted, soft colours often feel calm in a bedroom.",
+      "Warm, low lamps feel gentler than harsh overhead light.",
+      "Soft blankets and textures add a cosy cue to relax."
+     ],
+     "q": "Which colours make you feel calm?",
+     "c": "This evening, switch to a warm, low lamp instead of the main light."
+    },
+    "de": {
+     "t": "Farben und Atmosphäre",
+     "g": "Entdecke sanfte Farben, warmes Licht und gemütliche Texturen.",
+     "p": [
+      "Gedeckte, weiche Farben wirken im Schlafzimmer oft ruhig.",
+      "Warme, niedrige Lampen wirken sanfter als grelles Deckenlicht.",
+      "Weiche Decken und Stoffe geben ein gemütliches Entspannungssignal."
+     ],
+     "q": "Welche Farben beruhigen dich?",
+     "c": "Schalte heute Abend statt des Deckenlichts eine warme, niedrige Lampe ein."
+    },
+    "es": {
+     "t": "Colores y ambiente",
+     "g": "Explora colores suaves, luz cálida y texturas acogedoras.",
+     "p": [
+      "Los colores suaves y apagados suelen transmitir calma en un dormitorio.",
+      "Las lámparas cálidas y bajas son más suaves que la luz fuerte del techo.",
+      "Mantas y texturas suaves añaden una señal acogedora para relajarte."
+     ],
+     "q": "¿Qué colores te hacen sentir calma?",
+     "c": "Esta tarde enciende una lámpara cálida y baja en vez de la luz principal."
+    },
+    "fr": {
+     "t": "Couleurs et ambiance",
+     "g": "Explore des couleurs douces, une lumière chaude et des textures cosy.",
+     "p": [
+      "Des couleurs douces et atténuées paraissent souvent calmes dans une chambre.",
+      "Des lampes chaudes et basses sont plus douces qu'un plafonnier cru.",
+      "Plaids et textures douces ajoutent un signal cosy pour se détendre."
+     ],
+     "q": "Quelles couleurs t'apaisent ?",
+     "c": "Ce soir, allume une lampe chaude et basse plutôt que le plafonnier."
+    },
+    "it": {
+     "t": "Colori e atmosfera",
+     "g": "Esplora colori tenui, luce calda e tessuti accoglienti.",
+     "p": [
+      "I colori tenui e morbidi spesso trasmettono calma in camera.",
+      "Le lampade calde e basse sono più dolci della luce dura del soffitto.",
+      "Coperte e tessuti morbidi aggiungono un segnale accogliente per rilassarsi."
+     ],
+     "q": "Quali colori ti fanno sentire calma?",
+     "c": "Stasera accendi una lampada calda e bassa invece della luce centrale."
+    },
+    "pt": {
+     "t": "Cores e ambiente",
+     "g": "Explora cores suaves, luz quente e texturas aconchegantes.",
+     "p": [
+      "Cores suaves e discretas costumam transmitir calma num quarto.",
+      "Candeeiros quentes e baixos são mais suaves do que a luz forte do teto.",
+      "Mantas e texturas macias acrescentam um sinal aconchegante para relaxar."
+     ],
+     "q": "Que cores te dão calma?",
+     "c": "Esta noite, acende um candeeiro quente e baixo em vez da luz principal."
+    },
+    "pt_BR": {
+     "t": "Cores e ambiente",
+     "g": "Explore cores suaves, luz quente e texturas aconchegantes.",
+     "p": [
+      "Cores suaves e discretas costumam transmitir calma num quarto.",
+      "Abajures quentes e baixos são mais suaves que a luz forte do teto.",
+      "Mantas e texturas macias acrescentam um sinal aconchegante para relaxar."
+     ],
+     "q": "Que cores deixam você calmo?",
+     "c": "Hoje à noite, acenda um abajur quente e baixo em vez da luz principal."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Scents for relaxation",
+     "g": "Meet gentle, pleasant scents many people find calming.",
+     "p": [
+      "Lavender is a popular, soothing scent for evenings.",
+      "Keep scents light; strong smells can bother some people.",
+      "Smell is personal, so pick what you simply enjoy."
+     ],
+     "q": "Is there a scent that makes you feel calm?",
+     "c": "Tonight, add a light, pleasant scent, like a lavender pillow spray."
+    },
+    "de": {
+     "t": "Düfte zur Entspannung",
+     "g": "Lerne sanfte, angenehme Düfte kennen, die viele als beruhigend empfinden.",
+     "p": [
+      "Lavendel ist ein beliebter, wohltuender Abenddurft.",
+      "Halte Düfte dezent; starke Gerüche stören manche Menschen.",
+      "Geruch ist persönlich, wähle also, was dir einfach gefällt."
+     ],
+     "q": "Gibt es einen Duft, der dich ruhig macht?",
+     "c": "Füge heute Abend einen leichten, angenehmen Duft hinzu, etwa Lavendel-Kissenspray."
+    },
+    "es": {
+     "t": "Aromas para relajarse",
+     "g": "Conoce aromas suaves y agradables que mucha gente encuentra calmantes.",
+     "p": [
+      "La lavanda es un aroma popular y relajante para las noches.",
+      "Mantén los aromas suaves; los olores fuertes molestan a algunas personas.",
+      "El olfato es personal, así que elige lo que simplemente disfrutes."
+     ],
+     "q": "¿Hay un aroma que te haga sentir calma?",
+     "c": "Esta noche añade un aroma suave y agradable, como un spray de lavanda para la almohada."
+    },
+    "fr": {
+     "t": "Parfums pour se détendre",
+     "g": "Découvre des senteurs douces et agréables que beaucoup trouvent apaisantes.",
+     "p": [
+      "La lavande est une senteur populaire et apaisante pour le soir.",
+      "Reste léger ; les odeurs fortes gênent certaines personnes.",
+      "L'odorat est personnel, choisis donc ce qui te plaît simplement."
+     ],
+     "q": "Y a-t-il une senteur qui t'apaise ?",
+     "c": "Ce soir, ajoute une senteur légère et agréable, comme un spray de lavande pour l'oreiller."
+    },
+    "it": {
+     "t": "Profumi per rilassarsi",
+     "g": "Scopri profumi delicati e piacevoli che molti trovano calmanti.",
+     "p": [
+      "La lavanda è un profumo popolare e rilassante per la sera.",
+      "Tieni i profumi leggeri; gli odori forti disturbano alcune persone.",
+      "L'olfatto è personale, quindi scegli ciò che semplicemente ti piace."
+     ],
+     "q": "C'è un profumo che ti fa sentire calma?",
+     "c": "Stasera aggiungi un profumo leggero e piacevole, come uno spray alla lavanda per il cuscino."
+    },
+    "pt": {
+     "t": "Aromas para relaxar",
+     "g": "Conhece aromas suaves e agradáveis que muita gente acha calmantes.",
+     "p": [
+      "A lavanda é um aroma popular e relaxante para as noites.",
+      "Mantém os aromas leves; cheiros fortes incomodam algumas pessoas.",
+      "O olfato é pessoal, por isso escolhe o que simplesmente gostas."
+     ],
+     "q": "Há um aroma que te deixe calmo?",
+     "c": "Esta noite, junta um aroma leve e agradável, como um spray de lavanda para a almofada."
+    },
+    "pt_BR": {
+     "t": "Aromas para relaxar",
+     "g": "Conheça aromas suaves e agradáveis que muita gente acha calmantes.",
+     "p": [
+      "A lavanda é um aroma popular e relaxante para as noites.",
+      "Mantenha os aromas leves; cheiros fortes incomodam algumas pessoas.",
+      "O olfato é pessoal, então escolha o que você simplesmente gosta."
+     ],
+     "q": "Existe um aroma que deixa você calmo?",
+     "c": "Hoje à noite, acrescente um aroma leve e agradável, como um spray de lavanda para o travesseiro."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Screens in the bedroom",
+     "g": "See why phones, tablets and TVs in bed can keep the mind switched on.",
+     "p": [
+      "Screens offer endless content that is hard to stop.",
+      "Bright light late in the evening can delay sleepiness.",
+      "Exciting or stressful content keeps the mind busy."
+     ],
+     "q": "How often do you use a screen in bed?",
+     "c": "Tonight, put screens away 15 minutes before lights out."
+    },
+    "de": {
+     "t": "Bildschirme im Schlafzimmer",
+     "g": "Sieh, warum Handy, Tablet und Fernseher im Bett den Kopf wach halten.",
+     "p": [
+      "Bildschirme bieten endlose Inhalte, bei denen man schwer aufhört.",
+      "Helles Licht spät am Abend kann die Müdigkeit verzögern.",
+      "Aufregende oder stressige Inhalte halten den Kopf beschäftigt."
+     ],
+     "q": "Wie oft nutzt du im Bett einen Bildschirm?",
+     "c": "Leg heute Abend die Bildschirme 15 Minuten vor dem Lichtausmachen weg."
+    },
+    "es": {
+     "t": "Pantallas en el dormitorio",
+     "g": "Mira por qué móviles, tabletas y tele en la cama mantienen la mente encendida.",
+     "p": [
+      "Las pantallas ofrecen contenido infinito que cuesta dejar.",
+      "La luz intensa a última hora puede retrasar el sueño.",
+      "El contenido emocionante o estresante mantiene la mente ocupada."
+     ],
+     "q": "¿Con qué frecuencia usas una pantalla en la cama?",
+     "c": "Esta noche guarda las pantallas 15 minutos antes de apagar la luz."
+    },
+    "fr": {
+     "t": "Écrans dans la chambre",
+     "g": "Vois pourquoi téléphone, tablette et télé au lit gardent l'esprit éveillé.",
+     "p": [
+      "Les écrans offrent un contenu sans fin difficile à arrêter.",
+      "Une lumière vive tard le soir peut retarder la somnolence.",
+      "Un contenu excitant ou stressant garde l'esprit occupé."
+     ],
+     "q": "À quelle fréquence utilises-tu un écran au lit ?",
+     "c": "Ce soir, range les écrans 15 minutes avant d'éteindre la lumière."
+    },
+    "it": {
+     "t": "Schermi in camera",
+     "g": "Scopri perché telefono, tablet e tv a letto tengono la mente accesa.",
+     "p": [
+      "Gli schermi offrono contenuti infiniti difficili da interrompere.",
+      "La luce intensa a tarda sera può ritardare la sonnolenza.",
+      "Contenuti eccitanti o stressanti tengono la mente occupata."
+     ],
+     "q": "Con che frequenza usi uno schermo a letto?",
+     "c": "Stasera metti via gli schermi 15 minuti prima di spegnere la luce."
+    },
+    "pt": {
+     "t": "Ecrãs no quarto",
+     "g": "Vê porque telemóvel, tablet e TV na cama mantêm a mente ligada.",
+     "p": [
+      "Os ecrãs oferecem conteúdo infinito difícil de largar.",
+      "A luz forte a altas horas pode atrasar o sono.",
+      "Conteúdo emocionante ou stressante mantém a mente ocupada."
+     ],
+     "q": "Com que frequência usas um ecrã na cama?",
+     "c": "Esta noite, guarda os ecrãs 15 minutos antes de apagares a luz."
+    },
+    "pt_BR": {
+     "t": "Telas no quarto",
+     "g": "Veja por que celular, tablet e TV na cama mantêm a mente ligada.",
+     "p": [
+      "As telas oferecem conteúdo infinito difícil de largar.",
+      "A luz forte tarde da noite pode atrasar o sono.",
+      "Conteúdo emocionante ou estressante mantém a mente ocupada."
+     ],
+     "q": "Com que frequência você usa uma tela na cama?",
+     "c": "Hoje à noite, guarde as telas 15 minutos antes de apagar a luz."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Charging outside the bedroom",
+     "g": "Try parking your phone in another room overnight.",
+     "p": [
+      "Out of reach means fewer late-night checks.",
+      "Buzzes and glows stop interrupting your rest.",
+      "Start with one night and see how it feels."
+     ],
+     "q": "What would be hardest about leaving your phone elsewhere?",
+     "c": "Tonight, charge your phone outside the bedroom if you can."
+    },
+    "de": {
+     "t": "Laden außerhalb des Schlafzimmers",
+     "g": "Probiere, dein Handy nachts in einem anderen Raum zu parken.",
+     "p": [
+      "Außer Reichweite heißt weniger Kontrollblicke spät nachts.",
+      "Brummen und Leuchten stören deine Ruhe nicht mehr.",
+      "Beginne mit einer Nacht und schau, wie es sich anfühlt."
+     ],
+     "q": "Was wäre am schwersten daran, das Handy woanders zu lassen?",
+     "c": "Lade dein Handy heute Abend außerhalb des Schlafzimmers, wenn möglich."
+    },
+    "es": {
+     "t": "Cargar fuera del dormitorio",
+     "g": "Prueba a dejar el móvil en otra habitación por la noche.",
+     "p": [
+      "Fuera de alcance significa menos vistazos de madrugada.",
+      "Los zumbidos y destellos dejan de interrumpir tu descanso.",
+      "Empieza con una noche y mira cómo se siente."
+     ],
+     "q": "¿Qué sería lo más difícil de dejar el móvil en otro sitio?",
+     "c": "Esta noche carga el móvil fuera del dormitorio si puedes."
+    },
+    "fr": {
+     "t": "Recharger hors de la chambre",
+     "g": "Essaie de laisser ton téléphone dans une autre pièce la nuit.",
+     "p": [
+      "Hors de portée, il y a moins de coups d'œil tardifs.",
+      "Vibrations et lueurs n'interrompent plus ton repos.",
+      "Commence par une nuit et vois ce que tu ressens."
+     ],
+     "q": "Qu'est-ce qui serait le plus dur à l'idée de laisser ton téléphone ailleurs ?",
+     "c": "Ce soir, recharge ton téléphone hors de la chambre si tu peux."
+    },
+    "it": {
+     "t": "Ricaricare fuori dalla camera",
+     "g": "Prova a lasciare il telefono in un'altra stanza di notte.",
+     "p": [
+      "Fuori portata significa meno controlli a tarda notte.",
+      "Vibrazioni e bagliori non interrompono più il tuo riposo.",
+      "Comincia con una notte e osserva come ti senti."
+     ],
+     "q": "Cosa sarebbe più difficile nel lasciare il telefono altrove?",
+     "c": "Stasera ricarica il telefono fuori dalla camera, se puoi."
+    },
+    "pt": {
+     "t": "Carregar fora do quarto",
+     "g": "Experimenta deixar o telemóvel noutra divisão durante a noite.",
+     "p": [
+      "Fora de alcance significa menos espreitadelas de madrugada.",
+      "Vibrações e brilhos deixam de interromper o teu descanso.",
+      "Começa com uma noite e vê como te sentes."
+     ],
+     "q": "O que seria mais difícil em deixar o telemóvel noutro sítio?",
+     "c": "Esta noite, carrega o telemóvel fora do quarto, se puderes."
+    },
+    "pt_BR": {
+     "t": "Carregar fora do quarto",
+     "g": "Experimente deixar o celular em outro cômodo durante a noite.",
+     "p": [
+      "Fora de alcance significa menos olhadinhas de madrugada.",
+      "Vibrações e brilhos deixam de interromper o seu descanso.",
+      "Comece com uma noite e veja como se sente."
+     ],
+     "q": "O que seria mais difícil em deixar o celular em outro lugar?",
+     "c": "Hoje à noite, carregue o celular fora do quarto, se puder."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The alarm clock question",
+     "g": "Choose a wake-up method that does not invite late-night scrolling.",
+     "p": [
+      "A simple alarm clock keeps your phone out of the bedroom.",
+      "A sunrise-style light or a gentle tone can feel kinder.",
+      "Place it where you can hear it but not scroll."
+     ],
+     "q": "How do you wake up now, and do you like it?",
+     "c": "Tonight, choose and set your wake-up method before getting into bed."
+    },
+    "de": {
+     "t": "Die Wecker-Frage",
+     "g": "Wähle eine Weckmethode, die nicht zum nächtlichen Scrollen einlädt.",
+     "p": [
+      "Ein einfacher Wecker hält das Handy aus dem Schlafzimmer.",
+      "Ein Licht-Wecker oder ein sanfter Ton kann freundlicher sein.",
+      "Stell ihn so hin, dass du ihn hörst, aber nicht scrollen kannst."
+     ],
+     "q": "Wie wachst du jetzt auf, und gefällt es dir?",
+     "c": "Wähle und stelle heute Abend deine Weckmethode ein, bevor du ins Bett gehst."
+    },
+    "es": {
+     "t": "La cuestión del despertador",
+     "g": "Elige una forma de despertar que no invite a navegar de madrugada.",
+     "p": [
+      "Un despertador sencillo mantiene el móvil fuera del dormitorio.",
+      "Una luz de amanecer o un tono suave puede resultar más amable.",
+      "Colócalo donde lo oigas pero no puedas desplazar la pantalla."
+     ],
+     "q": "¿Cómo despiertas ahora y te gusta?",
+     "c": "Esta noche elige y programa tu forma de despertar antes de meterte en la cama."
+    },
+    "fr": {
+     "t": "La question du réveil",
+     "g": "Choisis une façon de te réveiller qui n'invite pas à faire défiler l'écran la nuit.",
+     "p": [
+      "Un simple réveil garde ton téléphone hors de la chambre.",
+      "Une lumière d'aube ou une sonnerie douce peut être plus agréable.",
+      "Place-le où tu l'entends sans pouvoir faire défiler."
+     ],
+     "q": "Comment te réveilles-tu aujourd'hui, et cela te plaît-il ?",
+     "c": "Ce soir, choisis et règle ton réveil avant de te mettre au lit."
+    },
+    "it": {
+     "t": "La questione della sveglia",
+     "g": "Scegli un modo di svegliarti che non inviti a scorrere lo schermo di notte.",
+     "p": [
+      "Una semplice sveglia tiene il telefono fuori dalla camera.",
+      "Una luce tipo alba o un suono dolce può essere più gentile.",
+      "Mettila dove la senti ma non puoi scorrere."
+     ],
+     "q": "Come ti svegli adesso e ti piace?",
+     "c": "Stasera scegli e imposta il tuo modo di svegliarti prima di metterti a letto."
+    },
+    "pt": {
+     "t": "A questão do despertador",
+     "g": "Escolhe uma forma de acordar que não convide a deslizar no ecrã à noite.",
+     "p": [
+      "Um despertador simples mantém o telemóvel fora do quarto.",
+      "Uma luz de amanhecer ou um tom suave pode ser mais amável.",
+      "Coloca-o onde o ouças mas não possas deslizar."
+     ],
+     "q": "Como acordas agora e gostas?",
+     "c": "Esta noite, escolhe e programa a tua forma de acordar antes de te deitares."
+    },
+    "pt_BR": {
+     "t": "A questão do despertador",
+     "g": "Escolha uma forma de acordar que não convide a rolar a tela à noite.",
+     "p": [
+      "Um despertador simples mantém o celular fora do quarto.",
+      "Uma luz de amanhecer ou um tom suave pode ser mais gentil.",
+      "Coloque onde você ouça mas não possa rolar a tela."
+     ],
+     "q": "Como você acorda hoje e gosta?",
+     "c": "Hoje à noite, escolha e programe a sua forma de acordar antes de deitar."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pets and sleep",
+     "g": "Think about sharing a room with pets: cosy for some, disruptive for others.",
+     "p": [
+      "Pets can bring comfort and a sense of calm.",
+      "They may also move, snore or wake you early.",
+      "A pet bed nearby can be a friendly compromise."
+     ],
+     "q": "Where does your pet sleep, and how does it affect you?",
+     "c": "Tonight, notice how pets affect your sleep, with kindness."
+    },
+    "de": {
+     "t": "Haustiere und Schlaf",
+     "g": "Überlege, wie das Zimmer mit Haustieren ist: gemütlich für manche, störend für andere.",
+     "p": [
+      "Haustiere können Trost und Ruhe schenken.",
+      "Sie können sich aber auch bewegen, schnarchen oder dich früh wecken.",
+      "Ein Tierbett in der Nähe kann ein freundlicher Kompromiss sein."
+     ],
+     "q": "Wo schläft dein Haustier, und wie wirkt sich das auf dich aus?",
+     "c": "Achte heute Abend liebevoll darauf, wie Haustiere deinen Schlaf beeinflussen."
+    },
+    "es": {
+     "t": "Mascotas y sueño",
+     "g": "Piensa en compartir habitación con mascotas: acogedor para unos, molesto para otros.",
+     "p": [
+      "Las mascotas pueden aportar consuelo y calma.",
+      "También pueden moverse, roncar o despertarte temprano.",
+      "Una cama para la mascota cerca puede ser un compromiso amable."
+     ],
+     "q": "¿Dónde duerme tu mascota y cómo te afecta?",
+     "c": "Esta noche observa con cariño cómo las mascotas afectan tu sueño."
+    },
+    "fr": {
+     "t": "Animaux et sommeil",
+     "g": "Réfléchis au fait de partager la chambre avec des animaux : cosy pour certains, gênant pour d'autres.",
+     "p": [
+      "Les animaux peuvent apporter réconfort et calme.",
+      "Ils peuvent aussi bouger, ronfler ou te réveiller tôt.",
+      "Un panier à proximité peut être un compromis sympa."
+     ],
+     "q": "Où dort ton animal et comment cela t'affecte-t-il ?",
+     "c": "Ce soir, observe avec bienveillance comment les animaux influencent ton sommeil."
+    },
+    "it": {
+     "t": "Animali e sonno",
+     "g": "Pensa a condividere la camera con gli animali: accogliente per alcuni, fastidioso per altri.",
+     "p": [
+      "Gli animali possono portare conforto e calma.",
+      "Possono anche muoversi, russare o svegliarti presto.",
+      "Una cuccia vicina può essere un gentile compromesso."
+     ],
+     "q": "Dove dorme il tuo animale e come ti influenza?",
+     "c": "Stasera osserva con affetto come gli animali influenzano il tuo sonno."
+    },
+    "pt": {
+     "t": "Animais e sono",
+     "g": "Pensa em partilhar o quarto com animais: aconchegante para uns, perturbador para outros.",
+     "p": [
+      "Os animais podem trazer conforto e calma.",
+      "Também podem mexer-se, ressonar ou acordar-te cedo.",
+      "Uma caminha por perto pode ser um compromisso simpático."
+     ],
+     "q": "Onde dorme o teu animal e como te afeta?",
+     "c": "Esta noite, observa com carinho como os animais afetam o teu sono."
+    },
+    "pt_BR": {
+     "t": "Animais e sono",
+     "g": "Pense em dividir o quarto com animais: aconchegante para uns, perturbador para outros.",
+     "p": [
+      "Os animais podem trazer conforto e calma.",
+      "Também podem se mexer, roncar ou acordar você cedo.",
+      "Uma caminha por perto pode ser um acordo simpático."
+     ],
+     "q": "Onde o seu animal dorme e como isso afeta você?",
+     "c": "Hoje à noite, observe com carinho como os animais afetam o seu sono."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sharing a bed",
+     "g": "Find friendly tips for couples and siblings with different schedules.",
+     "p": [
+      "Separate blankets can end blanket battles.",
+      "A bigger bed or a quiet bedtime routine helps differing schedules.",
+      "Talk kindly about snoring, and see a doctor if it is loud or constant."
+     ],
+     "q": "What is the trickiest part of sharing sleep space?",
+     "c": "Tonight, share one kind sleep wish with whoever you sleep beside."
+    },
+    "de": {
+     "t": "Ein Bett teilen",
+     "g": "Finde freundliche Tipps für Paare und Geschwister mit unterschiedlichen Zeiten.",
+     "p": [
+      "Getrennte Decken beenden Deckenkämpfe.",
+      "Ein größeres Bett oder eine leise Abendroutine hilft bei unterschiedlichen Zeiten.",
+      "Sprich freundlich über Schnarchen und geh zum Arzt, wenn es laut oder ständig ist."
+     ],
+     "q": "Was ist am kniffligsten am gemeinsamen Schlafplatz?",
+     "c": "Teile heute Abend einen freundlichen Schlafwunsch mit deinem Bettnachbarn."
+    },
+    "es": {
+     "t": "Compartir cama",
+     "g": "Encuentra consejos amables para parejas y hermanos con horarios distintos.",
+     "p": [
+      "Mantas separadas acaban con las batallas por la manta.",
+      "Una cama más grande o una rutina nocturna silenciosa ayuda con horarios distintos.",
+      "Habla con cariño de los ronquidos y consulta a un médico si son fuertes o constantes."
+     ],
+     "q": "¿Qué es lo más difícil de compartir el espacio para dormir?",
+     "c": "Esta noche comparte un deseo amable de sueño con quien duerme a tu lado."
+    },
+    "fr": {
+     "t": "Partager un lit",
+     "g": "Trouve des conseils bienveillants pour couples et frères et sœurs aux horaires différents.",
+     "p": [
+      "Des couettes séparées mettent fin aux batailles de couverture.",
+      "Un lit plus grand ou une routine du soir silencieuse aide quand les horaires diffèrent.",
+      "Parle avec gentillesse des ronflements, et consulte si c'est fort ou constant."
+     ],
+     "q": "Qu'est-ce qui est le plus délicat dans le partage du lit ?",
+     "c": "Ce soir, partage un souhait de sommeil bienveillant avec la personne à tes côtés."
+    },
+    "it": {
+     "t": "Condividere il letto",
+     "g": "Trova consigli gentili per coppie e fratelli con orari diversi.",
+     "p": [
+      "Coperte separate mettono fine alle battaglie per la coperta.",
+      "Un letto più grande o una routine serale silenziosa aiuta con orari diversi.",
+      "Parla con gentilezza del russare e vai da un medico se è forte o continuo."
+     ],
+     "q": "Qual è la parte più difficile del condividere lo spazio per dormire?",
+     "c": "Stasera condividi un desiderio gentile sul sonno con chi dorme accanto a te."
+    },
+    "pt": {
+     "t": "Partilhar a cama",
+     "g": "Encontra dicas simpáticas para casais e irmãos com horários diferentes.",
+     "p": [
+      "Cobertores separados acabam com as lutas pela manta.",
+      "Uma cama maior ou uma rotina noturna silenciosa ajuda com horários diferentes.",
+      "Fala com carinho sobre o ressono e consulta um médico se for alto ou constante."
+     ],
+     "q": "Qual é a parte mais complicada de partilhar o espaço de dormir?",
+     "c": "Esta noite, partilha um desejo simpático sobre o sono com quem dorme ao teu lado."
+    },
+    "pt_BR": {
+     "t": "Dividir a cama",
+     "g": "Encontre dicas gentis para casais e irmãos com horários diferentes.",
+     "p": [
+      "Cobertores separados acabam com as brigas pela coberta.",
+      "Uma cama maior ou uma rotina noturna silenciosa ajuda com horários diferentes.",
+      "Fale com carinho sobre o ronco e consulte um médico se for alto ou constante."
+     ],
+     "q": "Qual é a parte mais complicada de dividir o espaço de dormir?",
+     "c": "Hoje à noite, compartilhe um desejo gentil sobre o sono com quem dorme ao seu lado."
+    }
+   }
+  }
+ ]
+}

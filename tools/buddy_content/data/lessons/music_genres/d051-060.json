@@ -1,0 +1,835 @@
+{
+ "topic": "music_genres",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tango from the Río de la Plata",
+     "g": "Explore tango, born around Buenos Aires and Montevideo.",
+     "p": [
+      "Tango emerged in the late 1800s in the port cities of Buenos Aires and Montevideo, mixing European and African-rooted influences.",
+      "The bandoneón, a small button accordion, gives tango its breathing, melancholic sound.",
+      "Carlos Gardel made tango famous worldwide with his voice, and Astor Piazzolla later created nuevo tango."
+     ],
+     "q": "Does a dramatic, passionate sound appeal to you, or do you prefer calm?",
+     "c": "Listen to a Gardel tango and then a Piazzolla piece and compare the moods."
+    },
+    "de": {
+     "t": "Tango vom Río de la Plata",
+     "g": "Den Tango erkunden, der um Buenos Aires und Montevideo entstand.",
+     "p": [
+      "Der Tango entstand Ende des 19. Jahrhunderts in den Hafenstädten Buenos Aires und Montevideo aus europäischen und afrikanischen Einflüssen.",
+      "Das Bandoneon, ein kleines Knopfakkordeon, gibt dem Tango seinen atmenden, wehmütigen Klang.",
+      "Carlos Gardel machte den Tango mit seiner Stimme weltberühmt, Astor Piazzolla schuf später den Nuevo Tango."
+     ],
+     "q": "Spricht dich ein dramatischer, leidenschaftlicher Klang an, oder magst du lieber Ruhe?",
+     "c": "Hör einen Gardel-Tango und dann ein Stück von Piazzolla und vergleiche die Stimmung."
+    },
+    "es": {
+     "t": "Tango del Río de la Plata",
+     "g": "Explorar el tango, nacido en torno a Buenos Aires y Montevideo.",
+     "p": [
+      "El tango surgió a finales del siglo XIX en los puertos de Buenos Aires y Montevideo, mezclando influencias europeas y de raíz africana.",
+      "El bandoneón, un pequeño acordeón de botones, da al tango su sonido respirado y melancólico.",
+      "Carlos Gardel hizo famoso el tango en el mundo con su voz, y Astor Piazzolla creó más tarde el tango nuevo."
+     ],
+     "q": "¿Te atrae un sonido dramático y apasionado o prefieres la calma?",
+     "c": "Escucha un tango de Gardel y luego una pieza de Piazzolla y compara los ambientes."
+    },
+    "fr": {
+     "t": "Le tango du Río de la Plata",
+     "g": "Explorer le tango, né autour de Buenos Aires et de Montevideo.",
+     "p": [
+      "Le tango naît à la fin du XIXe siècle dans les ports de Buenos Aires et de Montevideo, mêlant influences européennes et africaines.",
+      "Le bandonéon, petit accordéon à boutons, donne au tango son souffle mélancolique.",
+      "Carlos Gardel rend le tango célèbre dans le monde par sa voix, puis Astor Piazzolla crée le nuevo tango."
+     ],
+     "q": "Un son dramatique et passionné vous attire-t-il, ou préférez-vous le calme ?",
+     "c": "Écoutez un tango de Gardel puis une pièce de Piazzolla et comparez les ambiances."
+    },
+    "it": {
+     "t": "Il tango del Río de la Plata",
+     "g": "Esplorare il tango, nato tra Buenos Aires e Montevideo.",
+     "p": [
+      "Il tango nacque a fine Ottocento nelle città portuali di Buenos Aires e Montevideo, mescolando influenze europee e di radice africana.",
+      "Il bandoneón, piccola fisarmonica a bottoni, dà al tango il suo suono respirante e malinconico.",
+      "Carlos Gardel rese famoso il tango nel mondo con la sua voce, e Astor Piazzolla creò poi il nuevo tango."
+     ],
+     "q": "Ti attira un suono drammatico e appassionato o preferisci la calma?",
+     "c": "Ascolta un tango di Gardel e poi un pezzo di Piazzolla e confronta le atmosfere."
+    },
+    "pt": {
+     "t": "O tango do Rio da Prata",
+     "g": "Explorar o tango, nascido em torno de Buenos Aires e Montevideu.",
+     "p": [
+      "O tango surgiu no final do século XIX nos portos de Buenos Aires e Montevideu, misturando influências europeias e de raiz africana.",
+      "O bandoneon, um pequeno acordeão de botões, dá ao tango o seu som respirado e melancólico.",
+      "Carlos Gardel tornou o tango famoso no mundo com a sua voz, e Astor Piazzolla criou mais tarde o tango novo."
+     ],
+     "q": "Atrai-te um som dramático e apaixonado ou preferes a calma?",
+     "c": "Ouve um tango de Gardel e depois uma peça de Piazzolla e compara os ambientes."
+    },
+    "pt_BR": {
+     "t": "Tango do Rio da Prata",
+     "g": "Explorar o tango, nascido em torno de Buenos Aires e Montevidéu.",
+     "p": [
+      "O tango surgiu no fim do século XIX nos portos de Buenos Aires e Montevidéu, misturando influências europeias e de raiz africana.",
+      "O bandoneon, um pequeno acordeão de botões, dá ao tango seu som respirado e melancólico.",
+      "Carlos Gardel tornou o tango famoso no mundo com sua voz, e Astor Piazzolla criou depois o tango novo."
+     ],
+     "q": "Um som dramático e apaixonado te atrai ou você prefere calma?",
+     "c": "Escute um tango de Gardel e depois uma peça de Piazzolla e compare os climas."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cumbia across Latin America",
+     "g": "Follow one rhythm, cumbia, as it takes local flavours across the continent.",
+     "p": [
+      "Cumbia began on Colombia's Caribbean coast, blending Indigenous flutes, African drums and Spanish influence.",
+      "Its gentle, swaying rhythm spread to Mexico, Peru, Argentina and beyond, each place adding its own style.",
+      "Accordions, guitars, synths and percussion all appear, depending on the local version."
+     ],
+     "q": "Is there a rhythm from your own region that everyone dances to?",
+     "c": "Listen to Colombian cumbia and then a Mexican or Argentine version and spot the differences."
+    },
+    "de": {
+     "t": "Cumbia in ganz Lateinamerika",
+     "g": "Einem Rhythmus, der Cumbia, folgen, wie er lokale Färbungen über den Kontinent trägt.",
+     "p": [
+      "Die Cumbia begann an Kolumbiens Karibikküste und verband indigene Flöten, afrikanische Trommeln und spanische Einflüsse.",
+      "Ihr sanfter, wiegender Rhythmus verbreitete sich nach Mexiko, Peru, Argentinien und weiter, überall mit eigenem Stil.",
+      "Akkordeon, Gitarren, Synthesizer und Percussion tauchen auf, je nach lokaler Version."
+     ],
+     "q": "Gibt es einen Rhythmus aus deiner Region, zu dem alle tanzen?",
+     "c": "Hör kolumbianische Cumbia und dann eine mexikanische oder argentinische Version und finde die Unterschiede."
+    },
+    "es": {
+     "t": "La cumbia por América Latina",
+     "g": "Seguir un ritmo, la cumbia, que toma sabores locales por todo el continente.",
+     "p": [
+      "La cumbia nació en la costa caribeña de Colombia, mezclando flautas indígenas, tambores africanos e influencia española.",
+      "Su ritmo suave y ondulante se extendió a México, Perú, Argentina y más allá, y cada lugar añadió su estilo.",
+      "Aparecen acordeones, guitarras, sintetizadores y percusión según la versión local."
+     ],
+     "q": "¿Hay un ritmo de tu región que baila todo el mundo?",
+     "c": "Escucha cumbia colombiana y luego una versión mexicana o argentina y detecta las diferencias."
+    },
+    "fr": {
+     "t": "La cumbia à travers l'Amérique latine",
+     "g": "Suivre un rythme, la cumbia, qui prend des saveurs locales sur tout le continent.",
+     "p": [
+      "La cumbia naît sur la côte caraïbe de la Colombie, mêlant flûtes indigènes, tambours africains et influence espagnole.",
+      "Son rythme doux et chaloupé gagne le Mexique, le Pérou, l'Argentine et au-delà, chaque lieu ajoutant son style.",
+      "Accordéons, guitares, synthés et percussions apparaissent selon la version locale."
+     ],
+     "q": "Existe-t-il dans votre région un rythme sur lequel tout le monde danse ?",
+     "c": "Écoutez une cumbia colombienne puis une version mexicaine ou argentine et repérez les différences."
+    },
+    "it": {
+     "t": "La cumbia in America Latina",
+     "g": "Seguire un ritmo, la cumbia, che prende sapori locali in tutto il continente.",
+     "p": [
+      "La cumbia nacque sulla costa caraibica della Colombia, unendo flauti indigeni, tamburi africani e influenza spagnola.",
+      "Il suo ritmo dolce e ondeggiante si diffuse in Messico, Perù, Argentina e oltre, ogni luogo aggiungendo il proprio stile.",
+      "Compaiono fisarmoniche, chitarre, sintetizzatori e percussioni a seconda della versione locale."
+     ],
+     "q": "C'è un ritmo della tua zona che tutti ballano?",
+     "c": "Ascolta una cumbia colombiana e poi una versione messicana o argentina e nota le differenze."
+    },
+    "pt": {
+     "t": "A cumbia pela América Latina",
+     "g": "Seguir um ritmo, a cumbia, que ganha sabores locais por todo o continente.",
+     "p": [
+      "A cumbia nasceu na costa caribenha da Colômbia, misturando flautas indígenas, tambores africanos e influência espanhola.",
+      "O seu ritmo suave e ondulante espalhou-se pelo México, Peru, Argentina e além, cada lugar juntando o seu estilo.",
+      "Aparecem acordeões, guitarras, sintetizadores e percussão conforme a versão local."
+     ],
+     "q": "Há um ritmo da tua região que toda a gente dança?",
+     "c": "Ouve cumbia colombiana e depois uma versão mexicana ou argentina e repara nas diferenças."
+    },
+    "pt_BR": {
+     "t": "A cumbia pela América Latina",
+     "g": "Seguir um ritmo, a cumbia, que ganha sabores locais por todo o continente.",
+     "p": [
+      "A cumbia nasceu na costa caribenha da Colômbia, misturando flautas indígenas, tambores africanos e influência espanhola.",
+      "Seu ritmo suave e ondulante se espalhou pelo México, Peru, Argentina e além, cada lugar juntando seu estilo.",
+      "Aparecem acordeões, guitarras, sintetizadores e percussão conforme a versão local."
+     ],
+     "q": "Existe um ritmo da sua região que todo mundo dança?",
+     "c": "Escute cumbia colombiana e depois uma versão mexicana ou argentina e note as diferenças."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mariachi and Mexican music",
+     "g": "Meet mariachi and other Mexican traditions like ranchera and son jarocho.",
+     "p": [
+      "Mariachi bands use trumpets, violins, vihuela and a deep guitarrón, and come from western Mexico, notably Jalisco.",
+      "Ranchera songs, sung with passion, speak of pride, home and love, often with a dramatic voice.",
+      "Son jarocho, from Veracruz, is lively folk music with jarana guitars and fast zapateado footwork."
+     ],
+     "q": "Have you heard live mariachi, and how did it feel to hear that many instruments?",
+     "c": "Listen to a mariachi song and spot the trumpets, violins and guitarrón."
+    },
+    "de": {
+     "t": "Mariachi und mexikanische Musik",
+     "g": "Mariachi und andere mexikanische Traditionen wie Ranchera und Son Jarocho kennenlernen.",
+     "p": [
+      "Mariachi-Bands nutzen Trompeten, Geigen, Vihuela und ein tiefes Guitarrón und stammen aus dem Westen Mexikos, besonders aus Jalisco.",
+      "Ranchera-Lieder werden mit Leidenschaft gesungen und handeln von Stolz, Heimat und Liebe, oft mit dramatischer Stimme.",
+      "Der Son Jarocho aus Veracruz ist lebhafte Volksmusik mit Jarana-Gitarren und schnellem Zapateado."
+     ],
+     "q": "Hast du Mariachi live gehört, und wie war es, so viele Instrumente zu hören?",
+     "c": "Hör ein Mariachi-Lied und finde Trompeten, Geigen und Guitarrón heraus."
+    },
+    "es": {
+     "t": "Mariachi y música mexicana",
+     "g": "Conocer el mariachi y otras tradiciones mexicanas como la ranchera y el son jarocho.",
+     "p": [
+      "Los mariachis usan trompetas, violines, vihuela y un guitarrón grave, y vienen del occidente de México, sobre todo de Jalisco.",
+      "Las rancheras se cantan con pasión y hablan de orgullo, hogar y amor, a menudo con voz dramática.",
+      "El son jarocho, de Veracruz, es música popular animada con jaranas y zapateado veloz."
+     ],
+     "q": "¿Has oído mariachi en vivo y qué se siente al oír tantos instrumentos?",
+     "c": "Escucha una canción de mariachi y localiza las trompetas, los violines y el guitarrón."
+    },
+    "fr": {
+     "t": "Mariachi et musique mexicaine",
+     "g": "Découvrir le mariachi et d'autres traditions mexicaines comme la ranchera et le son jarocho.",
+     "p": [
+      "Les mariachis emploient trompettes, violons, vihuela et un guitarrón grave, et viennent de l'ouest du Mexique, notamment du Jalisco.",
+      "Les rancheras se chantent avec passion et parlent de fierté, de foyer et d'amour, souvent d'une voix dramatique.",
+      "Le son jarocho, du Veracruz, est une musique populaire vive avec jaranas et zapateado rapide."
+     ],
+     "q": "Avez-vous entendu un mariachi en direct, et que ressent-on devant autant d'instruments ?",
+     "c": "Écoutez un morceau de mariachi et repérez trompettes, violons et guitarrón."
+    },
+    "it": {
+     "t": "Mariachi e musica messicana",
+     "g": "Conoscere il mariachi e altre tradizioni messicane come la ranchera e il son jarocho.",
+     "p": [
+      "I mariachi usano trombe, violini, vihuela e un grave guitarrón, e vengono dal Messico occidentale, in particolare dal Jalisco.",
+      "Le rancheras si cantano con passione e parlano di orgoglio, casa e amore, spesso con voce drammatica.",
+      "Il son jarocho, di Veracruz, è musica popolare vivace con jarana e rapido zapateado."
+     ],
+     "q": "Hai mai sentito un mariachi dal vivo e com'è sentire così tanti strumenti?",
+     "c": "Ascolta un brano mariachi e individua trombe, violini e guitarrón."
+    },
+    "pt": {
+     "t": "Mariachi e música mexicana",
+     "g": "Conhecer o mariachi e outras tradições mexicanas como a ranchera e o son jarocho.",
+     "p": [
+      "Os mariachis usam trompetes, violinos, vihuela e um guitarrón grave, e vêm do ocidente do México, sobretudo de Jalisco.",
+      "As rancheras cantam-se com paixão e falam de orgulho, lar e amor, muitas vezes com voz dramática.",
+      "O son jarocho, de Veracruz, é música popular animada com jaranas e sapateado veloz."
+     ],
+     "q": "Já ouviste mariachi ao vivo e como é ouvir tantos instrumentos?",
+     "c": "Ouve uma canção de mariachi e identifica os trompetes, os violinos e o guitarrón."
+    },
+    "pt_BR": {
+     "t": "Mariachi e música mexicana",
+     "g": "Conhecer o mariachi e outras tradições mexicanas como a ranchera e o son jarocho.",
+     "p": [
+      "Os mariachis usam trompetes, violinos, vihuela e um guitarrón grave, e vêm do ocidente do México, sobretudo de Jalisco.",
+      "As rancheiras são cantadas com paixão e falam de orgulho, lar e amor, muitas vezes com voz dramática.",
+      "O son jarocho, de Veracruz, é música popular animada com jaranas e sapateado veloz."
+     ],
+     "q": "Você já ouviu mariachi ao vivo e como é ouvir tantos instrumentos?",
+     "c": "Escute uma música de mariachi e identifique os trompetes, os violinos e o guitarrón."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reggaeton",
+     "g": "See how the dembow rhythm became a global pop force.",
+     "p": [
+      "Reggaeton grew in Puerto Rico in the 1990s, building on Panamanian Spanish reggae and Jamaican dancehall.",
+      "Its core is the dembow beat, a steady pattern with accents that invites dancing.",
+      "Rapped and sung vocals in Spanish, plus electronic production, helped it spread worldwide."
+     ],
+     "q": "What do you think makes a rhythm irresistible to dance to?",
+     "c": "Listen to a reggaeton track and clap the dembow pattern."
+    },
+    "de": {
+     "t": "Reggaeton",
+     "g": "Sehen, wie der Dembow-Rhythmus zur globalen Popkraft wurde.",
+     "p": [
+      "Reggaeton wuchs in den 1990ern in Puerto Rico, aufbauend auf panamaischem spanischem Reggae und jamaikanischem Dancehall.",
+      "Sein Kern ist der Dembow-Beat, ein gleichmäßiges Muster mit Akzenten, das zum Tanzen einlädt.",
+      "Gerappter und gesungener spanischer Gesang plus elektronische Produktion halfen bei der weltweiten Verbreitung."
+     ],
+     "q": "Was macht für dich einen Rhythmus unwiderstehlich zum Tanzen?",
+     "c": "Hör einen Reggaeton-Track und klatsche das Dembow-Muster mit."
+    },
+    "es": {
+     "t": "Reguetón",
+     "g": "Ver cómo el ritmo dembow se convirtió en una fuerza global del pop.",
+     "p": [
+      "El reguetón creció en Puerto Rico en los noventa, sobre el reggae en español de Panamá y el dancehall jamaicano.",
+      "Su núcleo es el ritmo dembow, un patrón constante con acentos que invita a bailar.",
+      "Las voces rapeadas y cantadas en español, junto a la producción electrónica, ayudaron a su expansión mundial."
+     ],
+     "q": "¿Qué crees que hace irresistible bailar un ritmo?",
+     "c": "Escucha un tema de reguetón y marca el patrón dembow con palmas."
+    },
+    "fr": {
+     "t": "Le reggaeton",
+     "g": "Voir comment le rythme dembow est devenu une force pop mondiale.",
+     "p": [
+      "Le reggaeton grandit à Porto Rico dans les années 1990, sur le reggae espagnol panaméen et le dancehall jamaïcain.",
+      "Son cœur est le beat dembow, un motif régulier à accents qui invite à danser.",
+      "Voix rappées et chantées en espagnol et production électronique ont favorisé sa diffusion mondiale."
+     ],
+     "q": "Qu'est-ce qui rend selon vous un rythme irrésistible pour danser ?",
+     "c": "Écoutez un titre de reggaeton et frappez des mains le motif dembow."
+    },
+    "it": {
+     "t": "Reggaeton",
+     "g": "Vedere come il ritmo dembow è diventato una forza pop globale.",
+     "p": [
+      "Il reggaeton crebbe a Porto Rico negli anni Novanta, sul reggae in spagnolo panamense e sulla dancehall giamaicana.",
+      "Il suo cuore è il beat dembow, uno schema costante con accenti che invita a ballare.",
+      "Voci rappate e cantate in spagnolo e produzione elettronica ne favorirono la diffusione mondiale."
+     ],
+     "q": "Cosa rende secondo te un ritmo irresistibile da ballare?",
+     "c": "Ascolta un brano reggaeton e batti le mani lo schema dembow."
+    },
+    "pt": {
+     "t": "Reggaeton",
+     "g": "Ver como o ritmo dembow se tornou uma força global da pop.",
+     "p": [
+      "O reggaeton cresceu em Porto Rico nos anos 1990, a partir do reggae em espanhol do Panamá e do dancehall jamaicano.",
+      "O seu núcleo é a batida dembow, um padrão constante com acentos que convida a dançar.",
+      "Vozes rapadas e cantadas em espanhol e produção eletrónica ajudaram à sua expansão mundial."
+     ],
+     "q": "O que achas que torna um ritmo irresistível para dançar?",
+     "c": "Ouve um tema de reggaeton e bate palmas o padrão dembow."
+    },
+    "pt_BR": {
+     "t": "Reggaeton",
+     "g": "Ver como o ritmo dembow se tornou uma força global do pop.",
+     "p": [
+      "O reggaeton cresceu em Porto Rico nos anos 1990, a partir do reggae em espanhol do Panamá e do dancehall jamaicano.",
+      "Seu núcleo é a batida dembow, um padrão constante com acentos que convida a dançar.",
+      "Vozes rapeadas e cantadas em espanhol e produção eletrônica ajudaram na expansão mundial."
+     ],
+     "q": "O que você acha que torna um ritmo irresistível para dançar?",
+     "c": "Escute uma faixa de reggaeton e bata palmas o padrão dembow."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Flamenco",
+     "g": "Discover flamenco guitar, cante and palmas from Andalusia.",
+     "p": [
+      "Flamenco grew in Andalusia, southern Spain, shaped by Romani, Moorish, Jewish and Andalusian traditions.",
+      "Its three pillars are cante (song), toque (guitar) and baile (dance), with palmas and jaleo adding rhythm.",
+      "Duende is the intense emotion a great performance can bring, felt by performers and audience together."
+     ],
+     "q": "Have you ever felt shivers from a live performance?",
+     "c": "Listen to a flamenco guitar piece and clap along with the compás if you can feel it."
+    },
+    "de": {
+     "t": "Flamenco",
+     "g": "Flamenco-Gitarre, Cante und Palmas aus Andalusien entdecken.",
+     "p": [
+      "Flamenco entstand in Andalusien, Südspanien, geprägt von romani, maurischen, jüdischen und andalusischen Traditionen.",
+      "Seine drei Säulen sind Cante (Gesang), Toque (Gitarre) und Baile (Tanz), mit Palmas und Jaleo als Rhythmus.",
+      "Duende ist die intensive Emotion, die eine große Darbietung auslösen kann, gemeinsam von Künstlern und Publikum gespürt."
+     ],
+     "q": "Hast du bei einem Live-Auftritt schon einmal Gänsehaut gespürt?",
+     "c": "Hör ein Flamenco-Gitarrenstück und klatsche den Compás mit, wenn du ihn spürst."
+    },
+    "es": {
+     "t": "Flamenco",
+     "g": "Descubrir la guitarra, el cante y las palmas del flamenco andaluz.",
+     "p": [
+      "El flamenco creció en Andalucía, en el sur de España, moldeado por tradiciones gitanas, moriscas, judías y andaluzas.",
+      "Sus tres pilares son el cante, el toque y el baile, con palmas y jaleo que aportan ritmo.",
+      "El duende es la emoción intensa que puede traer una gran actuación, sentida a la vez por artistas y público."
+     ],
+     "q": "¿Has sentido escalofríos en una actuación en directo?",
+     "c": "Escucha una pieza de guitarra flamenca y marca el compás con palmas si lo sientes."
+    },
+    "fr": {
+     "t": "Le flamenco",
+     "g": "Découvrir la guitare, le cante et les palmas du flamenco andalou.",
+     "p": [
+      "Le flamenco naît en Andalousie, dans le sud de l'Espagne, façonné par des traditions gitanes, mauresques, juives et andalouses.",
+      "Ses trois piliers sont le cante (chant), le toque (guitare) et le baile (danse), avec palmas et jaleo pour le rythme.",
+      "Le duende est l'émotion intense qu'une grande prestation peut apporter, ressentie ensemble par artistes et public."
+     ],
+     "q": "Avez-vous déjà eu des frissons lors d'un concert en direct ?",
+     "c": "Écoutez une pièce de guitare flamenca et frappez le compás si vous le sentez."
+    },
+    "it": {
+     "t": "Il flamenco",
+     "g": "Scoprire chitarra, cante e palmas del flamenco andaluso.",
+     "p": [
+      "Il flamenco crebbe in Andalusia, nel sud della Spagna, plasmato da tradizioni gitane, moresche, ebraiche e andaluse.",
+      "I suoi tre pilastri sono il cante (canto), il toque (chitarra) e il baile (danza), con palmas e jaleo come ritmo.",
+      "Il duende è l'emozione intensa che una grande esibizione può portare, sentita insieme da artisti e pubblico."
+     ],
+     "q": "Hai mai sentito i brividi durante un'esibizione dal vivo?",
+     "c": "Ascolta un pezzo di chitarra flamenca e batti il compás se lo senti."
+    },
+    "pt": {
+     "t": "O flamenco",
+     "g": "Descobrir a guitarra, o cante e as palmas do flamenco andaluz.",
+     "p": [
+      "O flamenco cresceu na Andaluzia, no sul de Espanha, moldado por tradições ciganas, mouriscas, judaicas e andaluzas.",
+      "Os seus três pilares são o cante, o toque (guitarra) e o baile, com palmas e jaleo a dar ritmo.",
+      "O duende é a emoção intensa que uma grande atuação pode trazer, sentida por artistas e público em conjunto."
+     ],
+     "q": "Já sentiste arrepios numa atuação ao vivo?",
+     "c": "Ouve uma peça de guitarra flamenca e bate palmas o compás se o sentires."
+    },
+    "pt_BR": {
+     "t": "O flamenco",
+     "g": "Descobrir o violão, o cante e as palmas do flamenco andaluz.",
+     "p": [
+      "O flamenco cresceu na Andaluzia, no sul da Espanha, moldado por tradições ciganas, mouriscas, judaicas e andaluzas.",
+      "Seus três pilares são o cante, o toque (violão) e o baile, com palmas e jaleo dando ritmo.",
+      "O duende é a emoção intensa que uma grande apresentação pode trazer, sentida por artistas e plateia juntos."
+     ],
+     "q": "Você já sentiu arrepios numa apresentação ao vivo?",
+     "c": "Escute uma peça de violão flamenco e bata palmas o compás se você sentir."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fado from Portugal",
+     "g": "Hear fado, the Portuguese guitar and songs of saudade.",
+     "p": [
+      "Fado grew in the working-class neighbourhoods of Lisbon in the 19th century, later also in Coimbra.",
+      "The Portuguese guitar, a twelve-string instrument, plays bright, ringing lines beside the voice.",
+      "Amália Rodrigues was fado's most celebrated voice, carrying its feeling of saudade, a tender longing."
+     ],
+     "q": "Is there a word in your language that describes a feeling hard to translate?",
+     "c": "Listen to a fado song and try to feel the emotion even without knowing the words."
+    },
+    "de": {
+     "t": "Fado aus Portugal",
+     "g": "Fado hören, die portugiesische Gitarre und Lieder der Saudade.",
+     "p": [
+      "Der Fado entstand im 19. Jahrhundert in den Arbeitervierteln Lissabons und später auch in Coimbra.",
+      "Die Portugiesische Gitarre, ein zwölfsaitiges Instrument, spielt helle, klingende Linien neben der Stimme.",
+      "Amália Rodrigues war die berühmteste Stimme des Fado und trug sein Gefühl der Saudade, einer zarten Sehnsucht."
+     ],
+     "q": "Gibt es in deiner Sprache ein Wort für ein schwer übersetzbares Gefühl?",
+     "c": "Hör einen Fado und versuche, die Emotion auch ohne die Worte zu verstehen."
+    },
+    "es": {
+     "t": "Fado de Portugal",
+     "g": "Oír el fado, la guitarra portuguesa y las canciones de la saudade.",
+     "p": [
+      "El fado creció en los barrios populares de Lisboa en el siglo XIX y más tarde también en Coímbra.",
+      "La guitarra portuguesa, de doce cuerdas, toca líneas brillantes y sonoras junto a la voz.",
+      "Amália Rodrigues fue la voz más célebre del fado y llevó su sentimiento de saudade, una añoranza tierna."
+     ],
+     "q": "¿Hay una palabra en tu idioma que describa un sentimiento difícil de traducir?",
+     "c": "Escucha un fado e intenta sentir la emoción aunque no entiendas la letra."
+    },
+    "fr": {
+     "t": "Le fado du Portugal",
+     "g": "Entendre le fado, la guitare portugaise et les chansons de la saudade.",
+     "p": [
+      "Le fado naît dans les quartiers populaires de Lisbonne au XIXe siècle, puis aussi à Coimbra.",
+      "La guitare portugaise, à douze cordes, joue des lignes claires et sonores aux côtés de la voix.",
+      "Amália Rodrigues fut la voix la plus célèbre du fado et porta son sentiment de saudade, une tendre nostalgie."
+     ],
+     "q": "Existe-t-il dans votre langue un mot pour un sentiment difficile à traduire ?",
+     "c": "Écoutez un fado et essayez de ressentir l'émotion même sans comprendre les paroles."
+    },
+    "it": {
+     "t": "Il fado del Portogallo",
+     "g": "Sentire il fado, la chitarra portoghese e le canzoni della saudade.",
+     "p": [
+      "Il fado nacque nei quartieri popolari di Lisbona nell'Ottocento e poi anche a Coimbra.",
+      "La chitarra portoghese, a dodici corde, suona linee chiare e squillanti accanto alla voce.",
+      "Amália Rodrigues fu la voce più celebre del fado e portò il suo sentimento di saudade, una tenera nostalgia."
+     ],
+     "q": "C'è una parola nella tua lingua che descrive un sentimento difficile da tradurre?",
+     "c": "Ascolta un fado e prova a sentire l'emozione anche senza capire le parole."
+    },
+    "pt": {
+     "t": "O fado de Portugal",
+     "g": "Ouvir o fado, a guitarra portuguesa e as canções da saudade.",
+     "p": [
+      "O fado cresceu nos bairros populares de Lisboa no século XIX e mais tarde também em Coimbra.",
+      "A guitarra portuguesa, de doze cordas, toca linhas brilhantes e sonoras ao lado da voz.",
+      "Amália Rodrigues foi a voz mais celebrada do fado e levou o seu sentimento de saudade, uma terna nostalgia."
+     ],
+     "q": "Há uma palavra na tua língua que descreva um sentimento difícil de traduzir?",
+     "c": "Ouve um fado e tenta sentir a emoção mesmo sem perceber todas as palavras."
+    },
+    "pt_BR": {
+     "t": "O fado de Portugal",
+     "g": "Ouvir o fado, a guitarra portuguesa e as canções da saudade.",
+     "p": [
+      "O fado cresceu nos bairros populares de Lisboa no século XIX e mais tarde também em Coimbra.",
+      "A guitarra portuguesa, de doze cordas, toca linhas brilhantes e sonoras ao lado da voz.",
+      "Amália Rodrigues foi a voz mais celebrada do fado e levou seu sentimento de saudade, uma terna nostalgia."
+     ],
+     "q": "Existe uma palavra no seu idioma que descreva um sentimento difícil de traduzir?",
+     "c": "Escute um fado e tente sentir a emoção mesmo sem entender todas as palavras."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "French chanson",
+     "g": "Appreciate songs where the words come first.",
+     "p": [
+      "Chanson is the French tradition of song, where lyrics and storytelling matter as much as the tune.",
+      "Édith Piaf sang with deep emotion, Jacques Brel with theatrical intensity and Charles Aznavour with warm poetry.",
+      "Accompaniment is often simple, piano, accordion or small orchestra, to keep attention on the voice."
+     ],
+     "q": "Do you like to follow lyrics, even in a language you are still learning?",
+     "c": "Read the words of a chanson in translation first, then listen to the original."
+    },
+    "de": {
+     "t": "Das französische Chanson",
+     "g": "Lieder schätzen, bei denen der Text an erster Stelle steht.",
+     "p": [
+      "Chanson ist die französische Liedtradition, in der Text und Erzählung so wichtig sind wie die Melodie.",
+      "Édith Piaf sang mit tiefem Gefühl, Jacques Brel mit theatralischer Intensität und Charles Aznavour mit warmer Poesie.",
+      "Die Begleitung ist oft schlicht, Klavier, Akkordeon oder kleines Orchester, damit die Stimme im Mittelpunkt bleibt."
+     ],
+     "q": "Verfolgst du gern Texte, auch in einer Sprache, die du noch lernst?",
+     "c": "Lies den Text eines Chansons zuerst in Übersetzung und hör dann das Original."
+    },
+    "es": {
+     "t": "La chanson francesa",
+     "g": "Apreciar canciones en las que las palabras van primero.",
+     "p": [
+      "La chanson es la tradición francesa de la canción, donde la letra y la narración importan tanto como la melodía.",
+      "Édith Piaf cantaba con emoción profunda, Jacques Brel con intensidad teatral y Charles Aznavour con poesía cálida.",
+      "El acompañamiento suele ser sencillo, piano, acordeón o pequeña orquesta, para mantener la atención en la voz."
+     ],
+     "q": "¿Te gusta seguir las letras, incluso en un idioma que aún estás aprendiendo?",
+     "c": "Lee primero la letra de una chanson traducida y luego escucha el original."
+    },
+    "fr": {
+     "t": "La chanson française",
+     "g": "Apprécier les chansons où les mots passent d'abord.",
+     "p": [
+      "La chanson est la tradition française du chant, où les paroles et le récit comptent autant que la mélodie.",
+      "Édith Piaf chantait avec une émotion profonde, Jacques Brel avec une intensité théâtrale et Charles Aznavour avec une poésie chaleureuse.",
+      "L'accompagnement est souvent simple, piano, accordéon ou petit orchestre, pour garder l'attention sur la voix."
+     ],
+     "q": "Aimez-vous suivre les paroles, même dans une langue que vous apprenez encore ?",
+     "c": "Lisez d'abord les paroles d'une chanson en traduction, puis écoutez l'original."
+    },
+    "it": {
+     "t": "La chanson francese",
+     "g": "Apprezzare canzoni in cui le parole vengono prima.",
+     "p": [
+      "La chanson è la tradizione francese della canzone, dove testo e racconto contano quanto la melodia.",
+      "Édith Piaf cantava con emozione profonda, Jacques Brel con intensità teatrale e Charles Aznavour con calda poesia.",
+      "L'accompagnamento è spesso semplice, pianoforte, fisarmonica o piccola orchestra, per tenere l'attenzione sulla voce."
+     ],
+     "q": "Ti piace seguire i testi, anche in una lingua che stai ancora imparando?",
+     "c": "Leggi prima il testo di una chanson tradotto, poi ascolta l'originale."
+    },
+    "pt": {
+     "t": "A chanson francesa",
+     "g": "Apreciar canções em que as palavras vêm primeiro.",
+     "p": [
+      "A chanson é a tradição francesa da canção, em que a letra e a narrativa contam tanto como a melodia.",
+      "Édith Piaf cantava com emoção profunda, Jacques Brel com intensidade teatral e Charles Aznavour com poesia calorosa.",
+      "O acompanhamento é muitas vezes simples, piano, acordeão ou pequena orquestra, para manter a atenção na voz."
+     ],
+     "q": "Gostas de acompanhar as letras, mesmo numa língua que ainda estás a aprender?",
+     "c": "Lê primeiro a letra de uma chanson traduzida e depois ouve o original."
+    },
+    "pt_BR": {
+     "t": "A chanson francesa",
+     "g": "Apreciar canções em que as palavras vêm primeiro.",
+     "p": [
+      "A chanson é a tradição francesa da canção, em que a letra e a narrativa contam tanto quanto a melodia.",
+      "Édith Piaf cantava com emoção profunda, Jacques Brel com intensidade teatral e Charles Aznavour com poesia calorosa.",
+      "O acompanhamento costuma ser simples, piano, acordeão ou pequena orquestra, para manter a atenção na voz."
+     ],
+     "q": "Você gosta de acompanhar as letras, mesmo num idioma que ainda está aprendendo?",
+     "c": "Leia primeiro a letra de uma chanson traduzida e depois escute o original."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Italian canzone and cantautori",
+     "g": "Explore Italian song from Neapolitan classics to cantautori.",
+     "p": [
+      "Neapolitan song, with classics like O sole mio, carried Italian melody to the world.",
+      "The Sanremo Festival, started in 1951, has long shown off new Italian songs every year.",
+      "Cantautori like Lucio Battisti and Fabrizio De André wrote personal, poetic songs, each in a very different style."
+     ],
+     "q": "Do you know a famous Italian song, even if only the chorus?",
+     "c": "Listen to a Battisti song and a De André song and compare how each tells a story."
+    },
+    "de": {
+     "t": "Italienische Canzone und Cantautori",
+     "g": "Das italienische Lied von neapolitanischen Klassikern bis zu den Cantautori erkunden.",
+     "p": [
+      "Das neapolitanische Lied mit Klassikern wie O sole mio trug italienische Melodien in die Welt.",
+      "Das Sanremo-Festival, 1951 gegründet, zeigt seit Langem jedes Jahr neue italienische Lieder.",
+      "Cantautori wie Lucio Battisti und Fabrizio De André schrieben persönliche, poetische Lieder in sehr verschiedenen Stilen."
+     ],
+     "q": "Kennst du ein berühmtes italienisches Lied, und sei es nur der Refrain?",
+     "c": "Hör einen Battisti- und einen De-André-Song und vergleiche, wie jeder eine Geschichte erzählt."
+    },
+    "es": {
+     "t": "Canción italiana y cantautori",
+     "g": "Explorar la canción italiana, de los clásicos napolitanos a los cantautori.",
+     "p": [
+      "La canción napolitana, con clásicos como O sole mio, llevó la melodía italiana al mundo.",
+      "El Festival de San Remo, nacido en 1951, muestra desde hace mucho nuevas canciones italianas cada año.",
+      "Cantautori como Lucio Battisti y Fabrizio De André escribieron canciones personales y poéticas, cada uno en un estilo muy distinto."
+     ],
+     "q": "¿Conoces una canción italiana famosa, aunque sea solo el estribillo?",
+     "c": "Escucha una canción de Battisti y una de De André y compara cómo cuenta cada una su historia."
+    },
+    "fr": {
+     "t": "Chanson italienne et cantautori",
+     "g": "Explorer la chanson italienne, des classiques napolitains aux cantautori.",
+     "p": [
+      "La chanson napolitaine, avec des classiques comme O sole mio, a porté la mélodie italienne dans le monde.",
+      "Le Festival de Sanremo, créé en 1951, présente depuis longtemps chaque année de nouvelles chansons italiennes.",
+      "Des cantautori comme Lucio Battisti et Fabrizio De André ont écrit des chansons personnelles et poétiques, aux styles très différents."
+     ],
+     "q": "Connaissez-vous une chanson italienne célèbre, même seulement le refrain ?",
+     "c": "Écoutez une chanson de Battisti et une de De André et comparez la façon dont chacune raconte une histoire."
+    },
+    "it": {
+     "t": "Canzone italiana e cantautori",
+     "g": "Esplorare la canzone italiana dai classici napoletani ai cantautori.",
+     "p": [
+      "La canzone napoletana, con classici come O sole mio, portò la melodia italiana nel mondo.",
+      "Il Festival di Sanremo, nato nel 1951, mostra da tempo ogni anno nuove canzoni italiane.",
+      "Cantautori come Lucio Battisti e Fabrizio De André scrissero canzoni personali e poetiche, ciascuno in uno stile molto diverso."
+     ],
+     "q": "Conosci una famosa canzone italiana, anche solo il ritornello?",
+     "c": "Ascolta un brano di Battisti e uno di De André e confronta come ciascuno racconta una storia."
+    },
+    "pt": {
+     "t": "Canção italiana e cantautori",
+     "g": "Explorar a canção italiana, dos clássicos napolitanos aos cantautori.",
+     "p": [
+      "A canção napolitana, com clássicos como O sole mio, levou a melodia italiana ao mundo.",
+      "O Festival de Sanremo, nascido em 1951, mostra há muito tempo novas canções italianas todos os anos.",
+      "Cantautori como Lucio Battisti e Fabrizio De André escreveram canções pessoais e poéticas, cada um num estilo muito diferente."
+     ],
+     "q": "Conheces uma canção italiana famosa, mesmo que só o refrão?",
+     "c": "Ouve uma canção de Battisti e uma de De André e compara como cada uma conta uma história."
+    },
+    "pt_BR": {
+     "t": "Canção italiana e cantautori",
+     "g": "Explorar a canção italiana, dos clássicos napolitanos aos cantautori.",
+     "p": [
+      "A canção napolitana, com clássicos como O sole mio, levou a melodia italiana ao mundo.",
+      "O Festival de Sanremo, criado em 1951, mostra há muito tempo novas canções italianas todos os anos.",
+      "Cantautori como Lucio Battisti e Fabrizio De André escreveram canções pessoais e poéticas, cada um num estilo bem diferente."
+     ],
+     "q": "Você conhece uma canção italiana famosa, mesmo que só o refrão?",
+     "c": "Escute uma música de Battisti e uma de De André e compare como cada uma conta uma história."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "German Schlager and Krautrock",
+     "g": "Compare cheerful Schlager with the hypnotic experiments of Krautrock.",
+     "p": [
+      "Schlager is light, melodic German-language pop with simple lyrics about love, travel and sunny days.",
+      "Krautrock, from West Germany around 1968 to the mid 1970s, was experimental, with long, repetitive grooves.",
+      "Bands such as Can and Neu! used the motorik beat, a steady driving rhythm that influenced later electronic and indie music."
+     ],
+     "q": "Do you like repetition in music, or do you want constant surprises?",
+     "c": "Listen to Neu! Hallogallo and tap the steady motorik beat for a few minutes."
+    },
+    "de": {
+     "t": "Deutscher Schlager und Krautrock",
+     "g": "Den heiteren Schlager mit den hypnotischen Experimenten des Krautrock vergleichen.",
+     "p": [
+      "Schlager ist leichter, melodischer deutschsprachiger Pop mit schlichten Texten über Liebe, Reisen und sonnige Tage.",
+      "Krautrock aus Westdeutschland, etwa 1968 bis Mitte der 1970er, war experimentell, mit langen, sich wiederholenden Grooves.",
+      "Bands wie Can und Neu! nutzten den Motorik-Beat, einen gleichmäßig treibenden Rhythmus, der späteren elektronischen und Indie-Musik prägte."
+     ],
+     "q": "Magst du Wiederholung in der Musik, oder willst du ständig Überraschungen?",
+     "c": "Hör Hallogallo von Neu! und klopfe einige Minuten den gleichmäßigen Motorik-Beat mit."
+    },
+    "es": {
+     "t": "Schlager alemán y krautrock",
+     "g": "Comparar el alegre schlager con los experimentos hipnóticos del krautrock.",
+     "p": [
+      "El schlager es pop ligero y melódico en alemán, con letras sencillas sobre amor, viajes y días soleados.",
+      "El krautrock, de Alemania Occidental entre 1968 y mediados de los setenta, fue experimental, con grooves largos y repetitivos.",
+      "Bandas como Can y Neu! usaron el ritmo motorik, un pulso constante e impulsor que influyó en la música electrónica e indie posterior."
+     ],
+     "q": "¿Te gusta la repetición en la música o quieres sorpresas constantes?",
+     "c": "Escucha Hallogallo de Neu! y marca varios minutos el ritmo motorik constante."
+    },
+    "fr": {
+     "t": "Schlager allemand et krautrock",
+     "g": "Comparer le schlager joyeux et les expériences hypnotiques du krautrock.",
+     "p": [
+      "Le schlager est une pop légère et mélodique en allemand, aux paroles simples sur l'amour, les voyages et les jours de soleil.",
+      "Le krautrock, d'Allemagne de l'Ouest de 1968 au milieu des années 1970, était expérimental, avec de longs grooves répétitifs.",
+      "Des groupes comme Can et Neu! employaient le rythme motorik, un battement régulier et propulsif qui a influencé l'électro et l'indie."
+     ],
+     "q": "Aimez-vous la répétition en musique, ou voulez-vous des surprises constantes ?",
+     "c": "Écoutez Hallogallo de Neu! et frappez quelques minutes le rythme motorik régulier."
+    },
+    "it": {
+     "t": "Schlager tedesco e krautrock",
+     "g": "Confrontare l'allegro schlager con gli esperimenti ipnotici del krautrock.",
+     "p": [
+      "Lo schlager è pop leggero e melodico in tedesco, con testi semplici su amore, viaggi e giornate di sole.",
+      "Il krautrock, dalla Germania Ovest dal 1968 a metà anni Settanta, era sperimentale, con groove lunghi e ripetitivi.",
+      "Band come Can e Neu! usarono il ritmo motorik, un battito costante e incalzante che influenzò l'elettronica e l'indie successivi."
+     ],
+     "q": "Ti piace la ripetizione in musica o vuoi sorprese continue?",
+     "c": "Ascolta Hallogallo dei Neu! e batti per qualche minuto il ritmo motorik costante."
+    },
+    "pt": {
+     "t": "Schlager alemão e krautrock",
+     "g": "Comparar o alegre schlager com as experiências hipnóticas do krautrock.",
+     "p": [
+      "O schlager é pop leve e melódico em alemão, com letras simples sobre amor, viagens e dias de sol.",
+      "O krautrock, da Alemanha Ocidental entre 1968 e meados dos anos 1970, era experimental, com grooves longos e repetitivos.",
+      "Bandas como Can e Neu! usaram o ritmo motorik, uma pulsação constante e impulsionadora que influenciou a música eletrónica e o indie."
+     ],
+     "q": "Gostas de repetição na música ou queres surpresas constantes?",
+     "c": "Ouve Hallogallo de Neu! e marca durante alguns minutos o ritmo motorik constante."
+    },
+    "pt_BR": {
+     "t": "Schlager alemão e krautrock",
+     "g": "Comparar o alegre schlager com os experimentos hipnóticos do krautrock.",
+     "p": [
+      "O schlager é pop leve e melódico em alemão, com letras simples sobre amor, viagens e dias de sol.",
+      "O krautrock, da Alemanha Ocidental entre 1968 e meados dos anos 1970, era experimental, com grooves longos e repetitivos.",
+      "Bandas como Can e Neu! usaram o ritmo motorik, uma pulsação constante e impulsionadora que influenciou a música eletrônica e o indie."
+     ],
+     "q": "Você gosta de repetição na música ou quer surpresas constantes?",
+     "c": "Escute Hallogallo, do Neu!, e marque por alguns minutos o ritmo motorik constante."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: a world tour so far",
+     "g": "Revisit the styles from Kingston to Lisbon and pick three to explore further.",
+     "p": [
+      "Jamaica gave us reggae, ska and dub; Cuba, Brazil and Argentina gave salsa, samba, bossa nova and tango.",
+      "Mexico, Colombia and Puerto Rico offered mariachi, cumbia and reggaeton, and Europe gave flamenco, fado, chanson and canzone.",
+      "Hip hop and krautrock show how new technology and creativity can grow from community and experiment."
+     ],
+     "q": "Which three styles from this tour do you want to explore next, and why?",
+     "c": "Make a playlist of one song from each of ten styles from days 39 to 59 and rank your top three."
+    },
+    "de": {
+     "t": "Rückblick: eine Weltreise bis hierher",
+     "g": "Die Stile von Kingston bis Lissabon wiederholen und drei zum Weiterforschen wählen.",
+     "p": [
+      "Jamaika schenkte uns Reggae, Ska und Dub; Kuba, Brasilien und Argentinien Salsa, Samba, Bossa Nova und Tango.",
+      "Mexiko, Kolumbien und Puerto Rico boten Mariachi, Cumbia und Reggaeton, Europa Flamenco, Fado, Chanson und Canzone.",
+      "Hip-Hop und Krautrock zeigen, wie neue Technik und Kreativität aus Gemeinschaft und Experiment wachsen."
+     ],
+     "q": "Welche drei Stile dieser Reise willst du als Nächstes erkunden, und warum?",
+     "c": "Stell eine Playlist aus je einem Lied von zehn Stilen der Tage 39 bis 59 zusammen und wähle deine Top drei."
+    },
+    "es": {
+     "t": "Repaso: una vuelta al mundo hasta ahora",
+     "g": "Repasar los estilos de Kingston a Lisboa y elegir tres para explorar más.",
+     "p": [
+      "Jamaica nos dio reggae, ska y dub; Cuba, Brasil y Argentina, salsa, samba, bossa nova y tango.",
+      "México, Colombia y Puerto Rico ofrecieron mariachi, cumbia y reguetón, y Europa dio flamenco, fado, chanson y canzone.",
+      "El hip hop y el krautrock muestran cómo la tecnología nueva y la creatividad crecen desde la comunidad y el experimento."
+     ],
+     "q": "¿Qué tres estilos de este viaje quieres explorar después y por qué?",
+     "c": "Haz una lista con una canción de cada uno de diez estilos de los días 39 al 59 y elige tu top tres."
+    },
+    "fr": {
+     "t": "Révision : un tour du monde jusqu'ici",
+     "g": "Revoir les styles de Kingston à Lisbonne et en choisir trois à approfondir.",
+     "p": [
+      "La Jamaïque a donné reggae, ska et dub ; Cuba, le Brésil et l'Argentine, salsa, samba, bossa nova et tango.",
+      "Le Mexique, la Colombie et Porto Rico ont offert mariachi, cumbia et reggaeton, et l'Europe flamenco, fado, chanson et canzone.",
+      "Hip-hop et krautrock montrent comment technologie nouvelle et créativité naissent de la communauté et de l'expérience."
+     ],
+     "q": "Quels trois styles de ce voyage voulez-vous explorer ensuite, et pourquoi ?",
+     "c": "Faites une playlist d'un titre pour chacun de dix styles des jours 39 à 59 et classez votre top trois."
+    },
+    "it": {
+     "t": "Ripasso: un giro del mondo fin qui",
+     "g": "Rivedere gli stili da Kingston a Lisbona e sceglierne tre da approfondire.",
+     "p": [
+      "La Giamaica ci ha dato reggae, ska e dub; Cuba, Brasile e Argentina salsa, samba, bossa nova e tango.",
+      "Messico, Colombia e Porto Rico hanno offerto mariachi, cumbia e reggaeton, e l'Europa flamenco, fado, chanson e canzone.",
+      "Hip hop e krautrock mostrano come nuova tecnologia e creatività crescano da comunità e sperimentazione."
+     ],
+     "q": "Quali tre stili di questo viaggio vuoi esplorare dopo e perché?",
+     "c": "Crea una playlist con un brano per ciascuno di dieci stili dei giorni 39-59 e scegli la tua top tre."
+    },
+    "pt": {
+     "t": "Revisão: uma volta ao mundo até agora",
+     "g": "Rever os estilos de Kingston a Lisboa e escolher três para explorar mais.",
+     "p": [
+      "A Jamaica deu-nos reggae, ska e dub; Cuba, Brasil e Argentina, salsa, samba, bossa nova e tango.",
+      "México, Colômbia e Porto Rico ofereceram mariachi, cumbia e reggaeton, e a Europa deu flamenco, fado, chanson e canzone.",
+      "O hip hop e o krautrock mostram como a tecnologia nova e a criatividade crescem da comunidade e da experiência."
+     ],
+     "q": "Que três estilos desta viagem queres explorar a seguir e porquê?",
+     "c": "Faz uma playlist com uma canção de cada um de dez estilos dos dias 39 a 59 e escolhe o teu top três."
+    },
+    "pt_BR": {
+     "t": "Revisão: uma volta ao mundo até agora",
+     "g": "Rever os estilos de Kingston a Lisboa e escolher três para explorar mais.",
+     "p": [
+      "A Jamaica nos deu reggae, ska e dub; Cuba, Brasil e Argentina, salsa, samba, bossa nova e tango.",
+      "México, Colômbia e Porto Rico ofereceram mariachi, cumbia e reggaeton, e a Europa deu flamenco, fado, chanson e canzone.",
+      "O hip hop e o krautrock mostram como a tecnologia nova e a criatividade crescem da comunidade e do experimento."
+     ],
+     "q": "Quais três estilos desta viagem você quer explorar a seguir e por quê?",
+     "c": "Monte uma playlist com uma música de cada um de dez estilos dos dias 39 a 59 e escolha seu top três."
+    }
+   }
+  }
+ ]
+}

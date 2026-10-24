@@ -1,0 +1,835 @@
+{
+ "topic": "self_confidence",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Eye contact basics",
+     "g": "Practise comfortable, friendly eye contact in everyday conversations.",
+     "p": [
+      "Eye contact shows you are listening and open; it does not have to be a staring contest.",
+      "Look at the person for a few seconds, glance away naturally, then come back.",
+      "If it feels hard, look at the space between the eyes or at one eye. Nobody can tell."
+     ],
+     "q": "In which situations is eye contact easy for you, and in which does it feel harder?",
+     "c": "Today, make friendly eye contact for a few seconds with a cashier, neighbour or colleague."
+    },
+    "de": {
+     "t": "Grundlagen des Blickkontakts",
+     "g": "Übe angenehmen, freundlichen Blickkontakt im Alltag.",
+     "p": [
+      "Blickkontakt zeigt, dass du zuhörst und offen bist; er muss kein Anstarrwettbewerb sein.",
+      "Schau die Person ein paar Sekunden an, blick natürlich weg und komm wieder zurück.",
+      "Wenn es schwerfällt, schau auf die Stelle zwischen den Augen oder auf ein Auge. Das merkt niemand."
+     ],
+     "q": "In welchen Situationen fällt dir Blickkontakt leicht, in welchen schwerer?",
+     "c": "Halte heute ein paar Sekunden freundlichen Blickkontakt mit einer Kassiererin, einem Nachbarn oder einer Kollegin."
+    },
+    "es": {
+     "t": "Lo básico del contacto visual",
+     "g": "Practica un contacto visual cómodo y amable en conversaciones cotidianas.",
+     "p": [
+      "El contacto visual muestra que escuchas y estás abierto; no tiene que ser un concurso de miradas.",
+      "Mira a la persona unos segundos, desvía la vista con naturalidad y vuelve.",
+      "Si cuesta, mira el espacio entre los ojos o un solo ojo. Nadie lo nota."
+     ],
+     "q": "¿En qué situaciones te resulta fácil mirar a los ojos y en cuáles te cuesta más?",
+     "c": "Hoy mantén unos segundos de contacto visual amable con un cajero, un vecino o un compañero."
+    },
+    "fr": {
+     "t": "Les bases du contact visuel",
+     "g": "Exerce-toi à un contact visuel confortable et amical dans les conversations du quotidien.",
+     "p": [
+      "Le regard montre que tu écoutes et que tu es ouvert; ce n'est pas un concours de fixité.",
+      "Regarde la personne quelques secondes, détourne les yeux naturellement, puis reviens.",
+      "Si c'est difficile, regarde entre les yeux ou un seul œil. Personne ne le remarque."
+     ],
+     "q": "Dans quelles situations le contact visuel est-il facile pour toi, et dans lesquelles plus difficile ?",
+     "c": "Aujourd'hui, échange un regard amical de quelques secondes avec un caissier, un voisin ou un collègue."
+    },
+    "it": {
+     "t": "Le basi del contatto visivo",
+     "g": "Esercitati in un contatto visivo comodo e cordiale nelle conversazioni di tutti i giorni.",
+     "p": [
+      "Il contatto visivo mostra che ascolti e sei aperto; non deve essere una gara a chi sbatte le ciglia.",
+      "Guarda la persona per qualche secondo, distogli lo sguardo con naturalezza e poi torna.",
+      "Se è difficile, guarda lo spazio tra gli occhi o un occhio solo. Nessuno se ne accorge."
+     ],
+     "q": "In quali situazioni il contatto visivo ti viene facile e in quali è più difficile?",
+     "c": "Oggi scambia qualche secondo di sguardo cordiale con un cassiere, un vicino o un collega."
+    },
+    "pt": {
+     "t": "O básico do contacto visual",
+     "g": "Pratica um contacto visual confortável e simpático nas conversas do dia a dia.",
+     "p": [
+      "O contacto visual mostra que estás a ouvir e que estás aberto; não tem de ser um concurso de olhares.",
+      "Olha para a pessoa alguns segundos, desvia o olhar com naturalidade e volta.",
+      "Se for difícil, olha para o espaço entre os olhos ou para um só olho. Ninguém repara."
+     ],
+     "q": "Em que situações o contacto visual te é fácil e em quais é mais difícil?",
+     "c": "Hoje mantém uns segundos de contacto visual simpático com um funcionário, um vizinho ou um colega."
+    },
+    "pt_BR": {
+     "t": "O básico do contato visual",
+     "g": "Pratique um contato visual confortável e simpático nas conversas do dia a dia.",
+     "p": [
+      "O contato visual mostra que você está ouvindo e aberto; não precisa ser um concurso de encarar.",
+      "Olhe para a pessoa por alguns segundos, desvie o olhar com naturalidade e volte.",
+      "Se for difícil, olhe para o espaço entre os olhos ou para um olho só. Ninguém percebe."
+     ],
+     "q": "Em que situações o contato visual é fácil para você e em quais é mais difícil?",
+     "c": "Hoje mantenha alguns segundos de contato visual simpático com um atendente, um vizinho ou um colega."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A calm breath before you start",
+     "g": "Learn a simple slow breath to steady yourself before something new.",
+     "p": [
+      "A slow, long exhale tells your body it is safe to settle down.",
+      "Try this: breathe in through your nose for four counts, then out slowly for six.",
+      "One or two breaths are enough. You can do it unnoticed before a call or a meeting."
+     ],
+     "q": "What situation tomorrow would be easier with one calm breath beforehand?",
+     "c": "Before one thing today, breathe in for four and out for six, twice, then begin."
+    },
+    "de": {
+     "t": "Ein ruhiger Atemzug vor dem Start",
+     "g": "Lerne einen einfachen, langsamen Atemzug, der dich vor etwas Neuem beruhigt.",
+     "p": [
+      "Ein langes, langsames Ausatmen signalisiert deinem Körper, dass er zur Ruhe kommen darf.",
+      "Probier es so: durch die Nase vier Zähler einatmen, dann langsam sechs Zähler ausatmen.",
+      "Ein bis zwei Atemzüge reichen. Du kannst das unbemerkt vor einem Anruf oder Termin tun."
+     ],
+     "q": "Welche Situation morgen wäre mit einem ruhigen Atemzug vorab leichter?",
+     "c": "Atme heute vor einer Sache zweimal vier Zähler ein und sechs aus, dann fang an."
+    },
+    "es": {
+     "t": "Una respiración calmada antes de empezar",
+     "g": "Aprende una respiración lenta y sencilla para serenarte antes de algo nuevo.",
+     "p": [
+      "Una espiración larga y lenta le dice a tu cuerpo que puede calmarse.",
+      "Prueba así: inhala por la nariz contando cuatro y exhala despacio contando seis.",
+      "Una o dos respiraciones bastan. Puedes hacerlo sin que se note antes de una llamada o reunión."
+     ],
+     "q": "¿Qué situación de mañana sería más fácil con una respiración calmada antes?",
+     "c": "Antes de algo hoy, inhala en cuatro y exhala en seis, dos veces, y empieza."
+    },
+    "fr": {
+     "t": "Une respiration calme avant de commencer",
+     "g": "Apprends une respiration lente et simple pour te poser avant quelque chose de nouveau.",
+     "p": [
+      "Une expiration longue et lente dit à ton corps qu'il peut se calmer.",
+      "Essaie : inspire par le nez sur quatre temps, puis expire lentement sur six.",
+      "Une ou deux respirations suffisent. Tu peux le faire discrètement avant un appel ou une réunion."
+     ],
+     "q": "Quelle situation de demain serait plus facile avec une respiration calme avant ?",
+     "c": "Avant une chose aujourd'hui, inspire sur quatre et expire sur six, deux fois, puis lance-toi."
+    },
+    "it": {
+     "t": "Un respiro calmo prima di iniziare",
+     "g": "Impara un respiro lento e semplice per darti stabilità prima di qualcosa di nuovo.",
+     "p": [
+      "Un'espirazione lunga e lenta dice al corpo che può rilassarsi.",
+      "Prova così: inspira dal naso contando fino a quattro, poi espira lentamente contando fino a sei.",
+      "Bastano uno o due respiri. Puoi farlo senza farti notare prima di una chiamata o di una riunione."
+     ],
+     "q": "Quale situazione di domani sarebbe più facile con un respiro calmo prima?",
+     "c": "Prima di una cosa oggi inspira in quattro ed espira in sei, due volte, poi inizia."
+    },
+    "pt": {
+     "t": "Uma respiração calma antes de começar",
+     "g": "Aprende uma respiração lenta e simples para te acalmares antes de algo novo.",
+     "p": [
+      "Uma expiração longa e lenta diz ao teu corpo que pode acalmar.",
+      "Experimenta: inspira pelo nariz contando quatro e expira devagar contando seis.",
+      "Uma ou duas respirações chegam. Podes fazê-lo sem se notar antes de uma chamada ou reunião."
+     ],
+     "q": "Que situação de amanhã seria mais fácil com uma respiração calma antes?",
+     "c": "Antes de uma coisa hoje, inspira em quatro e expira em seis, duas vezes, e começa."
+    },
+    "pt_BR": {
+     "t": "Uma respiração calma antes de começar",
+     "g": "Aprenda uma respiração lenta e simples para se firmar antes de algo novo.",
+     "p": [
+      "Uma expiração longa e lenta avisa ao corpo que ele pode se acalmar.",
+      "Tente assim: inspire pelo nariz contando quatro e solte devagar contando seis.",
+      "Uma ou duas respirações bastam. Dá para fazer sem ninguém notar antes de uma ligação ou reunião."
+     ],
+     "q": "Que situação de amanhã ficaria mais fácil com uma respiração calma antes?",
+     "c": "Antes de uma coisa hoje, inspire em quatro e solte em seis, duas vezes, e comece."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Smiling and warmth",
+     "g": "See how a genuine smile helps you and others feel relaxed.",
+     "p": [
+      "A real smile is contagious: people often smile back, and the mood lightens for both of you.",
+      "It does not need to be big or constant. A small, warm look at the right moment is plenty.",
+      "Do not force it. Think of something pleasant and let the smile follow naturally."
+     ],
+     "q": "Who in your life makes you smile easily, and what do they do?",
+     "c": "Offer a genuine smile to three people today and notice how they respond."
+    },
+    "de": {
+     "t": "Lächeln und Wärme",
+     "g": "Erlebe, wie ein echtes Lächeln dir und anderen hilft, sich zu entspannen.",
+     "p": [
+      "Ein echtes Lächeln steckt an: Oft lächeln Menschen zurück, und die Stimmung wird für beide leichter.",
+      "Es muss nicht groß oder ständig sein. Ein kleiner, warmer Blick im richtigen Moment reicht.",
+      "Erzwinge es nicht. Denk an etwas Schönes und lass das Lächeln von selbst kommen."
+     ],
+     "q": "Wer bringt dich im Leben leicht zum Lächeln, und was tut diese Person?",
+     "c": "Schenke heute drei Menschen ein echtes Lächeln und beobachte, wie sie reagieren."
+    },
+    "es": {
+     "t": "Sonrisa y calidez",
+     "g": "Descubre cómo una sonrisa sincera te ayuda a ti y a los demás a relajaros.",
+     "p": [
+      "Una sonrisa real es contagiosa: la gente suele devolverla y el ambiente se aligera para ambos.",
+      "No tiene que ser grande ni constante. Una mirada pequeña y cálida en el momento justo basta.",
+      "No la fuerces. Piensa en algo agradable y deja que la sonrisa salga sola."
+     ],
+     "q": "¿Quién te saca una sonrisa con facilidad y qué hace esa persona?",
+     "c": "Regala hoy una sonrisa sincera a tres personas y fíjate en cómo responden."
+    },
+    "fr": {
+     "t": "Sourire et chaleur",
+     "g": "Vois comment un sourire sincère vous détend, toi et les autres.",
+     "p": [
+      "Un vrai sourire est contagieux : on te sourit souvent en retour, et l'ambiance s'allège pour vous deux.",
+      "Il n'a pas besoin d'être grand ni constant. Un petit regard chaleureux au bon moment suffit.",
+      "Ne le force pas. Pense à quelque chose d'agréable et laisse le sourire venir tout seul."
+     ],
+     "q": "Qui te fait sourire facilement dans ta vie, et que fait cette personne ?",
+     "c": "Offre aujourd'hui un sourire sincère à trois personnes et observe leur réaction."
+    },
+    "it": {
+     "t": "Sorriso e calore",
+     "g": "Scopri come un sorriso sincero aiuta te e gli altri a rilassarvi.",
+     "p": [
+      "Un sorriso vero è contagioso: spesso gli altri rispondono e il clima si alleggerisce per entrambi.",
+      "Non deve essere grande né continuo. Un piccolo sguardo caloroso al momento giusto basta.",
+      "Non forzarlo. Pensa a qualcosa di piacevole e lascia che il sorriso arrivi da solo."
+     ],
+     "q": "Chi nella tua vita ti fa sorridere facilmente e cosa fa?",
+     "c": "Oggi regala un sorriso sincero a tre persone e osserva come reagiscono."
+    },
+    "pt": {
+     "t": "Sorriso e simpatia",
+     "g": "Vê como um sorriso sincero ajuda a ti e aos outros a descontraírem.",
+     "p": [
+      "Um sorriso verdadeiro é contagioso: as pessoas costumam retribuir e o ambiente fica mais leve para os dois.",
+      "Não precisa de ser grande nem constante. Um pequeno olhar caloroso no momento certo chega.",
+      "Não o forces. Pensa em algo agradável e deixa o sorriso surgir sozinho."
+     ],
+     "q": "Quem na tua vida te faz sorrir com facilidade e o que faz essa pessoa?",
+     "c": "Hoje oferece um sorriso sincero a três pessoas e repara como respondem."
+    },
+    "pt_BR": {
+     "t": "Sorriso e acolhimento",
+     "g": "Veja como um sorriso sincero ajuda você e os outros a relaxar.",
+     "p": [
+      "Um sorriso de verdade é contagiante: as pessoas costumam retribuir e o clima fica mais leve para os dois.",
+      "Não precisa ser grande nem constante. Um olhar pequeno e caloroso na hora certa já basta.",
+      "Não force. Pense em algo agradável e deixe o sorriso vir sozinho."
+     ],
+     "q": "Quem na sua vida te faz sorrir com facilidade e o que essa pessoa faz?",
+     "c": "Hoje ofereça um sorriso sincero a três pessoas e repare como elas respondem."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Speaking a little slower",
+     "g": "Discover why a slower pace makes you sound and feel more sure.",
+     "p": [
+      "When we are nervous we speed up, which makes us feel even more rushed.",
+      "A slower pace gives your words weight and gives you time to think.",
+      "Pauses are your friend. A short silence sounds thoughtful, not awkward."
+     ],
+     "q": "Do you tend to speak fast when you are nervous? What do you notice afterwards?",
+     "c": "In one conversation today, speak at 80 percent speed and let yourself pause between ideas."
+    },
+    "de": {
+     "t": "Ein bisschen langsamer sprechen",
+     "g": "Entdecke, warum ein langsameres Tempo dich sicherer klingen und fühlen lässt.",
+     "p": [
+      "Wenn wir nervös sind, werden wir schneller, und das lässt uns noch gehetzter fühlen.",
+      "Ein langsameres Tempo gibt deinen Worten Gewicht und dir Zeit zum Denken.",
+      "Pausen sind deine Freunde. Eine kurze Stille klingt überlegt, nicht peinlich."
+     ],
+     "q": "Sprichst du schnell, wenn du nervös bist? Was fällt dir danach auf?",
+     "c": "Sprich heute in einem Gespräch mit 80 Prozent Tempo und gönn dir Pausen zwischen den Gedanken."
+    },
+    "es": {
+     "t": "Hablar un poco más despacio",
+     "g": "Descubre por qué un ritmo más lento te hace sonar y sentirte más seguro.",
+     "p": [
+      "Cuando estamos nerviosos aceleramos, y eso nos hace sentir todavía más apurados.",
+      "Un ritmo más lento da peso a tus palabras y tiempo para pensar.",
+      "Las pausas son tus aliadas. Un silencio breve suena reflexivo, no incómodo."
+     ],
+     "q": "¿Sueles hablar rápido cuando estás nervioso? ¿Qué notas después?",
+     "c": "En una conversación de hoy, habla al 80 por ciento de velocidad y date pausas entre ideas."
+    },
+    "fr": {
+     "t": "Parler un peu plus lentement",
+     "g": "Découvre pourquoi un rythme plus lent te donne l'air et le sentiment d'être plus sûr de toi.",
+     "p": [
+      "Quand on est nerveux, on accélère, et cela nous donne encore plus l'impression d'être pressé.",
+      "Un rythme plus lent donne du poids à tes mots et du temps pour réfléchir.",
+      "Les pauses sont tes alliées. Un court silence paraît réfléchi, pas gênant."
+     ],
+     "q": "Parles-tu vite quand tu es nerveux ? Que remarques-tu ensuite ?",
+     "c": "Dans une conversation aujourd'hui, parle à 80 pour cent de ta vitesse et laisse des pauses entre les idées."
+    },
+    "it": {
+     "t": "Parlare un po' più lentamente",
+     "g": "Scopri perché un ritmo più lento ti fa suonare e sentire più sicuro.",
+     "p": [
+      "Quando siamo nervosi acceleriamo, e questo ci fa sentire ancora più di fretta.",
+      "Un ritmo più lento dà peso alle tue parole e tempo per pensare.",
+      "Le pause sono tue amiche. Un breve silenzio suona riflessivo, non imbarazzante."
+     ],
+     "q": "Tendi a parlare in fretta quando sei nervoso? Cosa noti dopo?",
+     "c": "In una conversazione di oggi parla all'80 per cento della velocità e concediti pause tra le idee."
+    },
+    "pt": {
+     "t": "Falar um pouco mais devagar",
+     "g": "Descobre porque um ritmo mais lento te faz soar e sentir mais seguro.",
+     "p": [
+      "Quando estamos nervosos aceleramos, e isso faz-nos sentir ainda mais apressados.",
+      "Um ritmo mais lento dá peso às tuas palavras e tempo para pensares.",
+      "As pausas são tuas amigas. Um silêncio curto soa a reflexão, não a constrangimento."
+     ],
+     "q": "Costumas falar depressa quando estás nervoso? O que reparas depois?",
+     "c": "Numa conversa de hoje, fala a 80 por cento da velocidade e dá-te pausas entre ideias."
+    },
+    "pt_BR": {
+     "t": "Falando um pouco mais devagar",
+     "g": "Descubra por que um ritmo mais lento faz você soar e se sentir mais seguro.",
+     "p": [
+      "Quando estamos nervosos aceleramos, e isso nos deixa ainda mais apressados.",
+      "Um ritmo mais lento dá peso às suas palavras e tempo para pensar.",
+      "As pausas são suas amigas. Um silêncio curto soa como reflexão, não como constrangimento."
+     ],
+     "q": "Você costuma falar rápido quando está nervoso? O que percebe depois?",
+     "c": "Numa conversa de hoje, fale a 80 por cento da velocidade e se permita pausas entre as ideias."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Listing your strengths",
+     "g": "Find five strengths, from practical skills to personal qualities.",
+     "p": [
+      "Strengths are not only big talents. Being patient, curious or reliable all count.",
+      "Think of what friends thank you for, or tasks that make time fly for you.",
+      "Write them as facts, not boasts: I am good at calming tense moments."
+     ],
+     "q": "Which strength of yours do you use so naturally that you barely notice it?",
+     "c": "Write down five strengths, and next to each, one moment when you used it."
+    },
+    "de": {
+     "t": "Deine Stärken auflisten",
+     "g": "Finde fünf Stärken, von praktischen Fähigkeiten bis zu persönlichen Eigenschaften.",
+     "p": [
+      "Stärken sind nicht nur große Talente. Geduld, Neugier oder Verlässlichkeit zählen genauso.",
+      "Denk daran, wofür Freunde dir danken oder bei welchen Aufgaben die Zeit wie im Flug vergeht.",
+      "Schreib sie als Tatsachen, nicht als Angeberei: Ich kann angespannte Momente beruhigen."
+     ],
+     "q": "Welche deiner Stärken nutzt du so selbstverständlich, dass du sie kaum bemerkst?",
+     "c": "Schreib fünf Stärken auf und neben jede einen Moment, in dem du sie genutzt hast."
+    },
+    "es": {
+     "t": "Haz una lista de tus fortalezas",
+     "g": "Encuentra cinco fortalezas, desde habilidades prácticas hasta cualidades personales.",
+     "p": [
+      "Las fortalezas no son solo grandes talentos. Ser paciente, curioso o fiable también cuenta.",
+      "Piensa en qué te agradecen tus amigos o en qué tareas el tiempo vuela para ti.",
+      "Escríbelas como hechos, no como presunción: se me da bien calmar momentos tensos."
+     ],
+     "q": "¿Qué fortaleza tuya usas con tanta naturalidad que casi no la notas?",
+     "c": "Anota cinco fortalezas y, junto a cada una, un momento en que la usaste."
+    },
+    "fr": {
+     "t": "Lister tes forces",
+     "g": "Trouve cinq forces, des compétences pratiques aux qualités personnelles.",
+     "p": [
+      "Les forces ne sont pas que de grands talents. Être patient, curieux ou fiable compte aussi.",
+      "Pense à ce dont tes amis te remercient ou aux tâches pendant lesquelles le temps file.",
+      "Écris-les comme des faits, pas comme de la vantardise : je sais apaiser les moments tendus."
+     ],
+     "q": "Quelle force utilises-tu si naturellement que tu la remarques à peine ?",
+     "c": "Note cinq forces et, à côté de chacune, un moment où tu l'as utilisée."
+    },
+    "it": {
+     "t": "Elencare i tuoi punti di forza",
+     "g": "Trova cinque punti di forza, dalle abilità pratiche alle qualità personali.",
+     "p": [
+      "I punti di forza non sono solo grandi talenti. Essere paziente, curioso o affidabile conta altrettanto.",
+      "Pensa a ciò per cui gli amici ti ringraziano o ai compiti in cui il tempo vola.",
+      "Scrivili come fatti, non come vanto: so calmare i momenti di tensione."
+     ],
+     "q": "Quale tuo punto di forza usi così naturalmente da notarlo appena?",
+     "c": "Scrivi cinque punti di forza e accanto a ciascuno un momento in cui l'hai usato."
+    },
+    "pt": {
+     "t": "Lista das tuas forças",
+     "g": "Encontra cinco forças, desde competências práticas a qualidades pessoais.",
+     "p": [
+      "As forças não são só grandes talentos. Ser paciente, curioso ou fiável também conta.",
+      "Pensa no que os amigos te agradecem ou em tarefas em que o tempo voa.",
+      "Escreve-as como factos, não como gabarolice: sei acalmar momentos de tensão."
+     ],
+     "q": "Que força tua usas com tanta naturalidade que quase não reparas?",
+     "c": "Escreve cinco forças e, ao lado de cada uma, um momento em que a usaste."
+    },
+    "pt_BR": {
+     "t": "Listando seus pontos fortes",
+     "g": "Encontre cinco pontos fortes, de habilidades práticas a qualidades pessoais.",
+     "p": [
+      "Pontos fortes não são só grandes talentos. Ser paciente, curioso ou confiável também conta.",
+      "Pense no que os amigos agradecem em você ou em tarefas em que o tempo voa.",
+      "Escreva como fatos, não como gabação: eu sei acalmar momentos de tensão."
+     ],
+     "q": "Qual ponto forte seu você usa com tanta naturalidade que quase nem percebe?",
+     "c": "Escreva cinco pontos fortes e, ao lado de cada um, um momento em que você o usou."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Asking others what they value in you",
+     "g": "Gather kind feedback from people who know you well.",
+     "p": [
+      "Others often see strengths in us that we overlook, because those strengths feel ordinary to us.",
+      "Ask two or three trusted people: what do you appreciate about me, or what am I good at?",
+      "Listen, say thank you, and write down what you hear without arguing with it."
+     ],
+     "q": "Who is one person you trust enough to ask, and what do you think they might say?",
+     "c": "Send one trusted person a message asking what they appreciate in you, then save the answer."
+    },
+    "de": {
+     "t": "Andere fragen, was sie an dir schätzen",
+     "g": "Sammle freundliches Feedback von Menschen, die dich gut kennen.",
+     "p": [
+      "Andere sehen oft Stärken an uns, die wir übersehen, weil sie uns selbstverständlich vorkommen.",
+      "Frag zwei, drei vertraute Menschen: Was schätzt du an mir, oder worin bin ich gut?",
+      "Hör zu, bedanke dich und schreib auf, was du hörst, ohne zu widersprechen."
+     ],
+     "q": "Wen kennst du, dem du genug vertraust, um zu fragen, und was könnte er oder sie sagen?",
+     "c": "Schick einem vertrauten Menschen eine Nachricht, was er an dir schätzt, und heb die Antwort auf."
+    },
+    "es": {
+     "t": "Preguntar qué valoran de ti",
+     "g": "Reúne opiniones amables de personas que te conocen bien.",
+     "p": [
+      "Los demás suelen ver fortalezas que pasamos por alto, porque a nosotros nos parecen normales.",
+      "Pregunta a dos o tres personas de confianza: ¿qué aprecias de mí? o ¿en qué soy bueno?",
+      "Escucha, da las gracias y anota lo que oyes sin discutirlo."
+     ],
+     "q": "¿A quién de confianza podrías preguntar y qué crees que te diría?",
+     "c": "Envía a una persona de confianza un mensaje preguntando qué aprecia de ti y guarda la respuesta."
+    },
+    "fr": {
+     "t": "Demander ce que les autres apprécient en toi",
+     "g": "Recueille des retours bienveillants de personnes qui te connaissent bien.",
+     "p": [
+      "Les autres voient souvent en nous des forces que nous négligeons, car elles nous semblent ordinaires.",
+      "Demande à deux ou trois proches de confiance : qu'apprécies-tu chez moi, ou en quoi suis-je bon ?",
+      "Écoute, dis merci et note ce que tu entends sans le discuter."
+     ],
+     "q": "À qui fais-tu assez confiance pour poser la question, et que pourrait-il ou elle répondre ?",
+     "c": "Envoie à une personne de confiance un message demandant ce qu'elle apprécie en toi et garde la réponse."
+    },
+    "it": {
+     "t": "Chiedere cosa apprezzano in te",
+     "g": "Raccogli feedback gentili da persone che ti conoscono bene.",
+     "p": [
+      "Gli altri spesso vedono in noi punti di forza che trascuriamo, perché a noi sembrano normali.",
+      "Chiedi a due o tre persone fidate: cosa apprezzi di me, o in cosa sono bravo?",
+      "Ascolta, ringrazia e annota ciò che senti senza discuterlo."
+     ],
+     "q": "A chi ti fidi abbastanza da chiederlo e cosa pensi potrebbe risponderti?",
+     "c": "Manda a una persona fidata un messaggio per chiedere cosa apprezza di te e conserva la risposta."
+    },
+    "pt": {
+     "t": "Perguntar o que valorizam em ti",
+     "g": "Reúne opiniões gentis de pessoas que te conhecem bem.",
+     "p": [
+      "Os outros veem muitas vezes forças que ignoramos, porque a nós nos parecem normais.",
+      "Pergunta a duas ou três pessoas de confiança: o que aprecias em mim, ou em que sou bom?",
+      "Ouve, agradece e anota o que ouves sem discutir."
+     ],
+     "q": "A quem de confiança podias perguntar e o que achas que te diria?",
+     "c": "Envia a uma pessoa de confiança uma mensagem a perguntar o que aprecia em ti e guarda a resposta."
+    },
+    "pt_BR": {
+     "t": "Perguntando o que valorizam em você",
+     "g": "Reúna opiniões gentis de pessoas que conhecem você bem.",
+     "p": [
+      "Os outros costumam ver pontos fortes que passam batido, porque para nós parecem normais.",
+      "Pergunte a duas ou três pessoas de confiança: o que você valoriza em mim, ou no que sou bom?",
+      "Ouça, agradeça e anote o que ouviu sem discutir."
+     ],
+     "q": "A quem de confiança você poderia perguntar e o que acha que ouviria?",
+     "c": "Mande para uma pessoa de confiança uma mensagem perguntando o que ela valoriza em você e guarde a resposta."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Strengths in action",
+     "g": "Choose one strength and use it on purpose today.",
+     "p": [
+      "A strength grows when you use it deliberately instead of by accident.",
+      "Pick one from your list and ask: where could I use this today, in a small way?",
+      "Notice how it feels while you do it. Competence is the root of confidence."
+     ],
+     "q": "Which strength would you most like to use more often, and where?",
+     "c": "Choose one strength, use it on purpose today, and note what happened in your wins journal."
+    },
+    "de": {
+     "t": "Stärken in Aktion",
+     "g": "Wähle eine Stärke und setze sie heute bewusst ein.",
+     "p": [
+      "Eine Stärke wächst, wenn du sie gezielt statt zufällig einsetzt.",
+      "Nimm eine aus deiner Liste und frag dich: Wo kann ich sie heute im Kleinen nutzen?",
+      "Achte darauf, wie es sich anfühlt. Können ist die Wurzel von Selbstvertrauen."
+     ],
+     "q": "Welche Stärke würdest du gern öfter nutzen, und wo?",
+     "c": "Wähle eine Stärke, setze sie heute bewusst ein und notiere im Erfolgstagebuch, was passiert ist."
+    },
+    "es": {
+     "t": "Fortalezas en acción",
+     "g": "Elige una fortaleza y úsala a propósito hoy.",
+     "p": [
+      "Una fortaleza crece cuando la usas con intención y no por casualidad.",
+      "Elige una de tu lista y pregúntate: ¿dónde podría usarla hoy, aunque sea poco?",
+      "Fíjate en cómo te sientes al hacerlo. La competencia es la raíz de la confianza."
+     ],
+     "q": "¿Qué fortaleza te gustaría usar más a menudo y dónde?",
+     "c": "Elige una fortaleza, úsala a propósito hoy y anota lo ocurrido en tu diario de logros."
+    },
+    "fr": {
+     "t": "Tes forces en action",
+     "g": "Choisis une force et utilise-la volontairement aujourd'hui.",
+     "p": [
+      "Une force grandit quand on l'emploie délibérément plutôt que par hasard.",
+      "Prends-en une dans ta liste et demande-toi : où puis-je l'utiliser aujourd'hui, même un peu ?",
+      "Observe ce que tu ressens. La compétence est la racine de la confiance."
+     ],
+     "q": "Quelle force aimerais-tu utiliser plus souvent, et où ?",
+     "c": "Choisis une force, utilise-la exprès aujourd'hui et note le résultat dans ton journal de réussites."
+    },
+    "it": {
+     "t": "Punti di forza in azione",
+     "g": "Scegli un punto di forza e usalo di proposito oggi.",
+     "p": [
+      "Un punto di forza cresce quando lo usi deliberatamente invece che per caso.",
+      "Scegline uno dalla lista e chiediti: dove potrei usarlo oggi, anche in piccolo?",
+      "Nota come ti senti mentre lo fai. La competenza è la radice della fiducia."
+     ],
+     "q": "Quale punto di forza vorresti usare più spesso e dove?",
+     "c": "Scegli un punto di forza, usalo di proposito oggi e annota com'è andata nel diario dei successi."
+    },
+    "pt": {
+     "t": "Forças em ação",
+     "g": "Escolhe uma força e usa-a de propósito hoje.",
+     "p": [
+      "Uma força cresce quando a usas de forma deliberada e não por acaso.",
+      "Escolhe uma da tua lista e pergunta: onde posso usá-la hoje, mesmo que seja pouco?",
+      "Repara como te sentes ao fazê-lo. A competência é a raiz da confiança."
+     ],
+     "q": "Que força gostarias de usar mais vezes e onde?",
+     "c": "Escolhe uma força, usa-a de propósito hoje e anota o que aconteceu no teu diário de vitórias."
+    },
+    "pt_BR": {
+     "t": "Pontos fortes em ação",
+     "g": "Escolha um ponto forte e use de propósito hoje.",
+     "p": [
+      "Um ponto forte cresce quando você usa de forma deliberada e não por acaso.",
+      "Escolha um da sua lista e pergunte: onde posso usar isso hoje, mesmo que pouco?",
+      "Perceba como se sente ao fazer. A competência é a raiz da confiança."
+     ],
+     "q": "Que ponto forte você gostaria de usar com mais frequência e onde?",
+     "c": "Escolha um ponto forte, use de propósito hoje e anote o que aconteceu no seu diário de conquistas."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your values compass",
+     "g": "Name three values that matter most to you.",
+     "p": [
+      "Values such as honesty, family, learning or kindness are like a compass for your choices.",
+      "When you know your values, decisions feel clearer and you worry less about pleasing everyone.",
+      "Choose three words and a sentence for each about how it shows up in your life."
+     ],
+     "q": "Which three values would you like your life to be built on, and why those?",
+     "c": "Write your top three values, each with one example of living it recently."
+    },
+    "de": {
+     "t": "Dein Wertekompass",
+     "g": "Benenne drei Werte, die dir am wichtigsten sind.",
+     "p": [
+      "Werte wie Ehrlichkeit, Familie, Lernen oder Freundlichkeit sind wie ein Kompass für deine Entscheidungen.",
+      "Wenn du deine Werte kennst, werden Entscheidungen klarer und du sorgst dich weniger darum, allen zu gefallen.",
+      "Wähle drei Wörter und schreib zu jedem einen Satz, wie es in deinem Leben vorkommt."
+     ],
+     "q": "Welche drei Werte sollen dein Leben tragen, und warum gerade diese?",
+     "c": "Schreib deine drei wichtigsten Werte auf, jeweils mit einem Beispiel, wie du sie zuletzt gelebt hast."
+    },
+    "es": {
+     "t": "Tu brújula de valores",
+     "g": "Nombra tres valores que más te importan.",
+     "p": [
+      "Valores como la honestidad, la familia, aprender o la amabilidad son una brújula para tus decisiones.",
+      "Cuando conoces tus valores, decidir es más claro y te preocupas menos por agradar a todos.",
+      "Elige tres palabras y una frase para cada una sobre cómo aparece en tu vida."
+     ],
+     "q": "¿Sobre qué tres valores te gustaría construir tu vida y por qué esos?",
+     "c": "Anota tus tres valores principales, cada uno con un ejemplo de cómo lo viviste hace poco."
+    },
+    "fr": {
+     "t": "Ta boussole de valeurs",
+     "g": "Nomme trois valeurs qui comptent le plus pour toi.",
+     "p": [
+      "Des valeurs comme l'honnêteté, la famille, l'apprentissage ou la gentillesse sont une boussole pour tes choix.",
+      "Quand tu connais tes valeurs, décider devient plus clair et tu te soucies moins de plaire à tout le monde.",
+      "Choisis trois mots et une phrase pour chacun sur la manière dont il se manifeste dans ta vie."
+     ],
+     "q": "Sur quelles trois valeurs aimerais-tu bâtir ta vie, et pourquoi celles-ci ?",
+     "c": "Note tes trois valeurs principales, chacune avec un exemple récent où tu l'as vécue."
+    },
+    "it": {
+     "t": "La tua bussola dei valori",
+     "g": "Individua tre valori che contano di più per te.",
+     "p": [
+      "Valori come onestà, famiglia, apprendimento o gentilezza sono una bussola per le tue scelte.",
+      "Quando conosci i tuoi valori, decidere è più chiaro e ti preoccupi meno di piacere a tutti.",
+      "Scegli tre parole e una frase per ciascuna su come compare nella tua vita."
+     ],
+     "q": "Su quali tre valori vorresti costruire la tua vita e perché proprio quelli?",
+     "c": "Scrivi i tuoi tre valori principali, ciascuno con un esempio recente di come l'hai vissuto."
+    },
+    "pt": {
+     "t": "A tua bússola de valores",
+     "g": "Nomeia três valores que mais importam para ti.",
+     "p": [
+      "Valores como honestidade, família, aprender ou gentileza são uma bússola para as tuas escolhas.",
+      "Quando conheces os teus valores, decidir é mais claro e preocupas-te menos em agradar a todos.",
+      "Escolhe três palavras e uma frase para cada uma sobre como surge na tua vida."
+     ],
+     "q": "Em que três valores gostarias de construir a tua vida e porquê esses?",
+     "c": "Escreve os teus três valores principais, cada um com um exemplo recente de como o viveste."
+    },
+    "pt_BR": {
+     "t": "Sua bússola de valores",
+     "g": "Nomeie três valores que mais importam para você.",
+     "p": [
+      "Valores como honestidade, família, aprender ou gentileza são uma bússola para suas escolhas.",
+      "Quando você conhece seus valores, decidir fica mais claro e você se preocupa menos em agradar todo mundo.",
+      "Escolha três palavras e uma frase para cada uma sobre como ela aparece na sua vida."
+     ],
+     "q": "Em quais três valores você gostaria de construir sua vida e por que esses?",
+     "c": "Escreva seus três valores principais, cada um com um exemplo recente de como você o viveu."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Acting in line with your values",
+     "g": "See how choices that match your values feel steadier and more confident.",
+     "p": [
+      "When actions and values match, you feel at peace, even if the choice is not the easy one.",
+      "Ask before a decision: which option fits what I care about most?",
+      "Small choices count, such as being on time, telling the truth kindly or helping a neighbour."
+     ],
+     "q": "When did you last act in line with your values, and how did it feel?",
+     "c": "Make one small choice today because of a value, and note how steady it felt."
+    },
+    "de": {
+     "t": "Im Einklang mit deinen Werten handeln",
+     "g": "Erlebe, wie Entscheidungen, die zu deinen Werten passen, sich stabiler und selbstsicherer anfühlen.",
+     "p": [
+      "Wenn Handeln und Werte zusammenpassen, fühlst du dich im Reinen, auch wenn die Wahl nicht die bequeme ist.",
+      "Frag vor einer Entscheidung: Welche Option passt zu dem, was mir am wichtigsten ist?",
+      "Auch kleine Entscheidungen zählen, etwa pünktlich sein, freundlich die Wahrheit sagen oder dem Nachbarn helfen."
+     ],
+     "q": "Wann hast du zuletzt im Einklang mit deinen Werten gehandelt, und wie hat sich das angefühlt?",
+     "c": "Triff heute eine kleine Entscheidung wegen eines Werts und achte darauf, wie stabil sie sich anfühlt."
+    },
+    "es": {
+     "t": "Actuar según tus valores",
+     "g": "Comprueba cómo las decisiones acordes con tus valores se sienten más firmes y seguras.",
+     "p": [
+      "Cuando acciones y valores coinciden, sientes paz, aunque la elección no sea la fácil.",
+      "Antes de decidir pregúntate: ¿qué opción encaja con lo que más me importa?",
+      "Las pequeñas decisiones cuentan, como ser puntual, decir la verdad con amabilidad o ayudar a un vecino."
+     ],
+     "q": "¿Cuándo actuaste por última vez según tus valores y cómo te sentiste?",
+     "c": "Toma hoy una decisión pequeña por un valor y anota lo firme que te sentiste."
+    },
+    "fr": {
+     "t": "Agir en accord avec tes valeurs",
+     "g": "Vois comment les choix alignés sur tes valeurs donnent plus de stabilité et d'assurance.",
+     "p": [
+      "Quand tes actes et tes valeurs concordent, tu te sens en paix, même si le choix n'est pas le plus facile.",
+      "Avant de décider, demande-toi : quelle option correspond à ce qui compte le plus pour moi ?",
+      "Les petits choix comptent : être ponctuel, dire la vérité avec gentillesse ou aider un voisin."
+     ],
+     "q": "Quand as-tu agi en accord avec tes valeurs pour la dernière fois, et comment l'as-tu vécu ?",
+     "c": "Fais aujourd'hui un petit choix au nom d'une valeur et note à quel point il t'a semblé solide."
+    },
+    "it": {
+     "t": "Agire secondo i tuoi valori",
+     "g": "Scopri come le scelte in linea con i tuoi valori danno più stabilità e sicurezza.",
+     "p": [
+      "Quando azioni e valori coincidono ti senti in pace, anche se la scelta non è la più facile.",
+      "Prima di decidere chiediti: quale opzione si accorda con ciò che mi sta più a cuore?",
+      "Contano anche le piccole scelte, come essere puntuale, dire la verità con gentilezza o aiutare un vicino."
+     ],
+     "q": "Quando hai agito l'ultima volta secondo i tuoi valori e come ti sei sentito?",
+     "c": "Oggi fai una piccola scelta in nome di un valore e nota quanto ti è sembrata salda."
+    },
+    "pt": {
+     "t": "Agir de acordo com os teus valores",
+     "g": "Vê como as escolhas alinhadas com os teus valores te dão mais firmeza e segurança.",
+     "p": [
+      "Quando ações e valores coincidem, sentes paz, mesmo que a escolha não seja a mais fácil.",
+      "Antes de decidir pergunta: que opção combina com o que mais me importa?",
+      "As pequenas escolhas contam, como ser pontual, dizer a verdade com gentileza ou ajudar um vizinho."
+     ],
+     "q": "Quando foi a última vez que agiste de acordo com os teus valores e como te sentiste?",
+     "c": "Hoje faz uma pequena escolha por causa de um valor e repara quão firme foi."
+    },
+    "pt_BR": {
+     "t": "Agindo de acordo com seus valores",
+     "g": "Veja como escolhas alinhadas com seus valores dão mais firmeza e segurança.",
+     "p": [
+      "Quando ações e valores combinam, você sente paz, mesmo que a escolha não seja a mais fácil.",
+      "Antes de decidir, pergunte: qual opção combina com o que mais importa para mim?",
+      "As pequenas escolhas contam, como ser pontual, dizer a verdade com gentileza ou ajudar um vizinho."
+     ],
+     "q": "Quando foi a última vez que você agiu de acordo com seus valores e como se sentiu?",
+     "c": "Hoje faça uma pequena escolha por causa de um valor e repare como foi firme."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Keeping small promises to yourself",
+     "g": "Build self-trust by doing what you said you would do.",
+     "p": [
+      "Each promise you keep to yourself, however small, teaches you that your word is reliable.",
+      "Broken promises are costly: they teach you to ignore your own plans.",
+      "Promise less and deliver: a five-minute walk you do beats a daily run you skip."
+     ],
+     "q": "What is one small promise to yourself that you would like to keep this week?",
+     "c": "Make one tiny promise to yourself today, such as drinking a glass of water, and keep it."
+    },
+    "de": {
+     "t": "Kleine Versprechen an dich halten",
+     "g": "Baue Selbstvertrauen auf, indem du tust, was du dir vorgenommen hast.",
+     "p": [
+      "Jedes Versprechen an dich selbst, wie klein auch immer, lehrt dich, dass auf dein Wort Verlass ist.",
+      "Gebrochene Versprechen kosten etwas: Sie bringen dir bei, deine eigenen Pläne zu ignorieren.",
+      "Versprich weniger und halte es: Ein fünfminütiger Spaziergang schlägt einen täglichen Lauf, den du ausfallen lässt."
+     ],
+     "q": "Welches kleine Versprechen an dich möchtest du diese Woche halten?",
+     "c": "Gib dir heute ein winziges Versprechen, etwa ein Glas Wasser zu trinken, und halte es."
+    },
+    "es": {
+     "t": "Cumplir pequeñas promesas contigo",
+     "g": "Construye confianza en ti cumpliendo lo que dijiste que harías.",
+     "p": [
+      "Cada promesa que te cumples, por pequeña que sea, te enseña que tu palabra es fiable.",
+      "Las promesas rotas cuestan: te enseñan a ignorar tus propios planes.",
+      "Promete menos y cumple: un paseo de cinco minutos que haces vale más que una carrera diaria que saltas."
+     ],
+     "q": "¿Qué pequeña promesa a ti mismo te gustaría cumplir esta semana?",
+     "c": "Hazte hoy una promesa diminuta, como beber un vaso de agua, y cúmplela."
+    },
+    "fr": {
+     "t": "Tenir de petites promesses envers toi",
+     "g": "Construis la confiance en toi en faisant ce que tu as dit que tu ferais.",
+     "p": [
+      "Chaque promesse que tu te tiens, même petite, t'apprend que ta parole est fiable.",
+      "Les promesses rompues ont un coût : elles t'apprennent à ignorer tes propres projets.",
+      "Promets moins et tiens : une marche de cinq minutes faite vaut mieux qu'une course quotidienne sautée."
+     ],
+     "q": "Quelle petite promesse à toi-même aimerais-tu tenir cette semaine ?",
+     "c": "Fais-toi aujourd'hui une toute petite promesse, comme boire un verre d'eau, et tiens-la."
+    },
+    "it": {
+     "t": "Mantenere piccole promesse a te stesso",
+     "g": "Costruisci fiducia in te facendo ciò che hai detto che avresti fatto.",
+     "p": [
+      "Ogni promessa che mantieni con te stesso, anche piccola, ti insegna che la tua parola è affidabile.",
+      "Le promesse infrante costano: ti insegnano a ignorare i tuoi stessi piani.",
+      "Prometti meno e mantieni: una passeggiata di cinque minuti fatta vale più di una corsa quotidiana saltata."
+     ],
+     "q": "Quale piccola promessa a te stesso vorresti mantenere questa settimana?",
+     "c": "Fatti oggi una promessa minuscola, come bere un bicchiere d'acqua, e mantienila."
+    },
+    "pt": {
+     "t": "Cumprir pequenas promessas a ti",
+     "g": "Constrói confiança em ti cumprindo o que disseste que farias.",
+     "p": [
+      "Cada promessa que cumpres a ti próprio, por pequena que seja, ensina-te que a tua palavra é fiável.",
+      "As promessas quebradas custam: ensinam-te a ignorar os teus próprios planos.",
+      "Promete menos e cumpre: uma caminhada de cinco minutos feita vale mais do que uma corrida diária que falhas."
+     ],
+     "q": "Que pequena promessa a ti próprio gostarias de cumprir esta semana?",
+     "c": "Hoje faz uma promessa minúscula a ti próprio, como beber um copo de água, e cumpre-a."
+    },
+    "pt_BR": {
+     "t": "Cumprindo pequenas promessas a si mesmo",
+     "g": "Construa confiança em si fazendo o que disse que faria.",
+     "p": [
+      "Cada promessa que você cumpre a si mesmo, por menor que seja, ensina que sua palavra é confiável.",
+      "Promessas quebradas custam caro: ensinam você a ignorar seus próprios planos.",
+      "Prometa menos e cumpra: uma caminhada de cinco minutos feita vale mais que uma corrida diária que você pula."
+     ],
+     "q": "Que pequena promessa a si mesmo você gostaria de cumprir esta semana?",
+     "c": "Hoje faça uma promessa minúscula a si mesmo, como beber um copo de água, e cumpra."
+    }
+   }
+  }
+ ]
+}

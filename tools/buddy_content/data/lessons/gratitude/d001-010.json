@@ -1,0 +1,835 @@
+{
+ "topic": "gratitude",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to your gratitude path",
+     "g": "Understand what gratitude is and how a daily moment of noticing grows over a year.",
+     "p": [
+      "Gratitude means noticing and appreciating what is good, even when life is not perfect.",
+      "One small moment a day is enough; consistency matters more than length.",
+      "Over 365 days, tiny daily noticing can slowly change what you pay attention to."
+     ],
+     "q": "What made you curious about gratitude, and what would you like from this path?",
+     "c": "Notice one thing today that you are glad exists, and say it quietly to yourself."
+    },
+    "de": {
+     "t": "Willkommen auf deinem Dankbarkeitsweg",
+     "g": "Verstehe, was Dankbarkeit ist und wie ein täglicher Moment des Bemerkens über ein Jahr wächst.",
+     "p": [
+      "Dankbarkeit heißt, das Gute wahrzunehmen und wertzuschätzen, auch wenn das Leben nicht perfekt ist.",
+      "Ein kleiner Moment pro Tag genügt; Regelmäßigkeit zählt mehr als Länge.",
+      "Über 365 Tage kann winziges tägliches Bemerken verändern, worauf du achtest."
+     ],
+     "q": "Was hat dich an Dankbarkeit neugierig gemacht, und was wünschst du dir von diesem Weg?",
+     "c": "Bemerke heute eine Sache, die es gibt und über die du froh bist, und sage sie dir leise."
+    },
+    "es": {
+     "t": "Bienvenido a tu camino de gratitud",
+     "g": "Entiende qué es la gratitud y cómo un momento diario de atención crece a lo largo de un año.",
+     "p": [
+      "Gratitud es notar y valorar lo bueno, incluso cuando la vida no es perfecta.",
+      "Un pequeño momento al día basta; la constancia importa más que la duración.",
+      "En 365 días, notar cosas pequeñas puede cambiar poco a poco en qué te fijas."
+     ],
+     "q": "¿Qué te despertó curiosidad por la gratitud y qué te gustaría sacar de este camino?",
+     "c": "Fíjate hoy en algo que te alegra que exista y díselo en voz baja."
+    },
+    "fr": {
+     "t": "Bienvenue sur ton chemin de gratitude",
+     "g": "Comprends ce qu'est la gratitude et comment un moment d'attention quotidien grandit en un an.",
+     "p": [
+      "La gratitude, c'est remarquer et apprécier ce qui est bon, même quand la vie n'est pas parfaite.",
+      "Un petit moment par jour suffit ; la régularité compte plus que la durée.",
+      "Sur 365 jours, remarquer de petites choses peut changer peu à peu ce qui retient ton attention."
+     ],
+     "q": "Qu'est-ce qui t'a donné envie de découvrir la gratitude, et qu'attends-tu de ce chemin ?",
+     "c": "Repère aujourd'hui une chose dont tu es content qu'elle existe, et dis-le-toi tout bas."
+    },
+    "it": {
+     "t": "Benvenuto nel tuo percorso di gratitudine",
+     "g": "Capisci cos'è la gratitudine e come un momento quotidiano di attenzione cresce in un anno.",
+     "p": [
+      "Gratitudine significa notare e apprezzare ciò che è buono, anche quando la vita non è perfetta.",
+      "Basta un piccolo momento al giorno; la costanza conta più della durata.",
+      "In 365 giorni, notare piccole cose può cambiare piano piano ciò a cui fai caso."
+     ],
+     "q": "Cosa ti ha incuriosito della gratitudine e cosa vorresti da questo percorso?",
+     "c": "Oggi nota una cosa che sei contento che esista e dillo a bassa voce a te stesso."
+    },
+    "pt": {
+     "t": "Bem-vindo ao teu caminho de gratidão",
+     "g": "Percebe o que é a gratidão e como um momento diário de atenção cresce ao longo de um ano.",
+     "p": [
+      "Gratidão é reparar e valorizar o que é bom, mesmo quando a vida não é perfeita.",
+      "Basta um pequeno momento por dia; a regularidade conta mais do que a duração.",
+      "Ao longo de 365 dias, reparar em coisas pequenas pode mudar aos poucos aquilo a que dás atenção."
+     ],
+     "q": "O que despertou a tua curiosidade sobre a gratidão e o que gostarias deste caminho?",
+     "c": "Repara hoje numa coisa que ficas contente por existir e diz isso baixinho a ti próprio."
+    },
+    "pt_BR": {
+     "t": "Boas-vindas ao seu caminho de gratidão",
+     "g": "Entenda o que é gratidão e como um momento diário de atenção cresce ao longo de um ano.",
+     "p": [
+      "Gratidão é perceber e valorizar o que é bom, mesmo quando a vida não é perfeita.",
+      "Um pequeno momento por dia basta; constância importa mais do que duração.",
+      "Em 365 dias, notar coisas pequenas pode mudar aos poucos aquilo a que você presta atenção."
+     ],
+     "q": "O que despertou sua curiosidade sobre gratidão e o que você gostaria deste caminho?",
+     "c": "Perceba hoje uma coisa que você fica feliz por existir e diga isso baixinho para si."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What gratitude really means",
+     "g": "See gratitude as appreciating good things, people and moments, big or small.",
+     "p": [
+      "Gratitude can point to people, objects, places, moments or even your own efforts.",
+      "It is not about pretending everything is fine; it is about also seeing what is good.",
+      "Small things count as much as big ones, such as a warm cup or a kind word."
+     ],
+     "q": "Which small thing in your life do you think rarely gets appreciated?",
+     "c": "Name three things around you right now that you appreciate, big or small."
+    },
+    "de": {
+     "t": "Was Dankbarkeit wirklich bedeutet",
+     "g": "Sieh Dankbarkeit als Wertschätzung für gute Dinge, Menschen und Momente, groß oder klein.",
+     "p": [
+      "Dankbarkeit kann Menschen, Dinge, Orte, Momente oder sogar deine eigenen Bemühungen meinen.",
+      "Es geht nicht darum, so zu tun, als wäre alles gut, sondern auch das Gute zu sehen.",
+      "Kleine Dinge zählen so viel wie große, etwa eine warme Tasse oder ein freundliches Wort."
+     ],
+     "q": "Welche Kleinigkeit in deinem Leben wird deiner Meinung nach selten wertgeschätzt?",
+     "c": "Nenne drei Dinge um dich herum, die du gerade schätzt, groß oder klein."
+    },
+    "es": {
+     "t": "Qué significa realmente la gratitud",
+     "g": "Ve la gratitud como valorar cosas, personas y momentos buenos, grandes o pequeños.",
+     "p": [
+      "La gratitud puede dirigirse a personas, objetos, lugares, momentos o a tu propio esfuerzo.",
+      "No se trata de fingir que todo va bien, sino de ver también lo bueno.",
+      "Lo pequeño cuenta tanto como lo grande: una taza caliente o una palabra amable."
+     ],
+     "q": "¿Qué pequeña cosa de tu vida crees que casi nunca se valora?",
+     "c": "Nombra tres cosas a tu alrededor que valoras ahora mismo, grandes o pequeñas."
+    },
+    "fr": {
+     "t": "Ce que la gratitude signifie vraiment",
+     "g": "Vois la gratitude comme l'appréciation de choses, de personnes et de moments, grands ou petits.",
+     "p": [
+      "La gratitude peut viser des personnes, des objets, des lieux, des moments ou tes propres efforts.",
+      "Il ne s'agit pas de faire semblant que tout va bien, mais de voir aussi ce qui est bon.",
+      "Les petites choses comptent autant que les grandes : une tasse chaude, un mot gentil."
+     ],
+     "q": "Quelle petite chose de ta vie est rarement appréciée, selon toi ?",
+     "c": "Nomme trois choses autour de toi que tu apprécies maintenant, grandes ou petites."
+    },
+    "it": {
+     "t": "Cosa significa davvero gratitudine",
+     "g": "Vedi la gratitudine come apprezzamento di cose, persone e momenti belli, grandi o piccoli.",
+     "p": [
+      "La gratitudine può rivolgersi a persone, oggetti, luoghi, momenti o ai tuoi stessi sforzi.",
+      "Non significa fingere che vada tutto bene, ma vedere anche ciò che c'è di buono.",
+      "Le piccole cose contano quanto le grandi: una tazza calda o una parola gentile."
+     ],
+     "q": "Quale piccola cosa della tua vita pensi venga apprezzata di rado?",
+     "c": "Nomina tre cose intorno a te che apprezzi adesso, grandi o piccole."
+    },
+    "pt": {
+     "t": "O que a gratidão realmente significa",
+     "g": "Vê a gratidão como valorizar coisas, pessoas e momentos bons, grandes ou pequenos.",
+     "p": [
+      "A gratidão pode dirigir-se a pessoas, objetos, lugares, momentos ou ao teu próprio esforço.",
+      "Não se trata de fingir que está tudo bem, mas de ver também o que é bom.",
+      "As coisas pequenas contam tanto como as grandes: uma chávena quente ou uma palavra gentil."
+     ],
+     "q": "Que pequena coisa da tua vida achas que raramente é valorizada?",
+     "c": "Diz três coisas à tua volta que valorizas agora, grandes ou pequenas."
+    },
+    "pt_BR": {
+     "t": "O que gratidão realmente significa",
+     "g": "Veja a gratidão como valorizar coisas, pessoas e momentos bons, grandes ou pequenos.",
+     "p": [
+      "A gratidão pode se dirigir a pessoas, objetos, lugares, momentos ou ao seu próprio esforço.",
+      "Não se trata de fingir que está tudo bem, mas de enxergar também o que é bom.",
+      "Coisas pequenas contam tanto quanto as grandes: uma xícara quente ou uma palavra gentil."
+     ],
+     "q": "Que pequena coisa da sua vida você acha que quase nunca é valorizada?",
+     "c": "Diga três coisas ao seu redor que você valoriza agora, grandes ou pequenas."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your gratitude starting point",
+     "g": "Reflect honestly on how often you currently notice the good things in your day.",
+     "p": [
+      "There is no right answer; this is simply a friendly look at where you begin.",
+      "Many of us notice good things only when they are big or unusual.",
+      "Knowing your starting point lets you see your own change later on."
+     ],
+     "q": "How often in a normal day do you stop and notice something good?",
+     "c": "Count how many good things you notice today, even without writing them down."
+    },
+    "de": {
+     "t": "Dein Ausgangspunkt für Dankbarkeit",
+     "g": "Überlege ehrlich, wie oft du die guten Dinge deines Tages derzeit bemerkst.",
+     "p": [
+      "Es gibt keine richtige Antwort; es ist nur ein freundlicher Blick auf deinen Start.",
+      "Viele von uns bemerken Gutes nur, wenn es groß oder ungewöhnlich ist.",
+      "Wenn du deinen Ausgangspunkt kennst, siehst du später deine eigene Veränderung."
+     ],
+     "q": "Wie oft hältst du an einem normalen Tag inne und bemerkst etwas Gutes?",
+     "c": "Zähle heute, wie viele gute Dinge du bemerkst, auch ohne sie aufzuschreiben."
+    },
+    "es": {
+     "t": "Tu punto de partida en gratitud",
+     "g": "Reflexiona con sinceridad sobre cuánto notas ahora las cosas buenas de tu día.",
+     "p": [
+      "No hay respuesta correcta; es solo una mirada amable a dónde empiezas.",
+      "Muchos solo notamos lo bueno cuando es grande o inusual.",
+      "Conocer tu punto de partida te permitirá ver tu cambio más adelante."
+     ],
+     "q": "¿Con qué frecuencia en un día normal te detienes a notar algo bueno?",
+     "c": "Cuenta cuántas cosas buenas notas hoy, aunque no las apuntes."
+    },
+    "fr": {
+     "t": "Ton point de départ en gratitude",
+     "g": "Réfléchis honnêtement à la fréquence à laquelle tu remarques les bonnes choses de ta journée.",
+     "p": [
+      "Il n'y a pas de bonne réponse ; c'est juste un regard bienveillant sur ton départ.",
+      "Beaucoup d'entre nous ne remarquent le bien que lorsqu'il est grand ou inhabituel.",
+      "Connaître ton point de départ te permettra de voir ton évolution plus tard."
+     ],
+     "q": "À quelle fréquence, un jour ordinaire, t'arrêtes-tu pour remarquer quelque chose de bien ?",
+     "c": "Compte combien de bonnes choses tu remarques aujourd'hui, même sans les écrire."
+    },
+    "it": {
+     "t": "Il tuo punto di partenza",
+     "g": "Rifletti con sincerità su quanto spesso noti oggi le cose belle della tua giornata.",
+     "p": [
+      "Non esiste una risposta giusta; è solo uno sguardo gentile su da dove parti.",
+      "Molti di noi notano il bello solo quando è grande o insolito.",
+      "Conoscere il tuo punto di partenza ti farà vedere il cambiamento più avanti."
+     ],
+     "q": "Quanto spesso in una giornata normale ti fermi a notare qualcosa di bello?",
+     "c": "Conta quante cose belle noti oggi, anche senza scriverle."
+    },
+    "pt": {
+     "t": "O teu ponto de partida na gratidão",
+     "g": "Reflete com sinceridade sobre quantas vezes reparas hoje nas coisas boas do teu dia.",
+     "p": [
+      "Não há resposta certa; é só um olhar simpático sobre onde começas.",
+      "Muitos de nós só reparamos no que é bom quando é grande ou invulgar.",
+      "Conhecer o teu ponto de partida permite ver a tua mudança mais tarde."
+     ],
+     "q": "Com que frequência, num dia normal, paras para reparar em algo bom?",
+     "c": "Conta quantas coisas boas notas hoje, mesmo sem as escrever."
+    },
+    "pt_BR": {
+     "t": "Seu ponto de partida na gratidão",
+     "g": "Reflita com sinceridade sobre quantas vezes você percebe hoje as coisas boas do seu dia.",
+     "p": [
+      "Não há resposta certa; é só um olhar gentil sobre onde você começa.",
+      "Muitos de nós só notamos o que é bom quando é grande ou incomum.",
+      "Conhecer seu ponto de partida permite ver sua mudança mais adiante."
+     ],
+     "q": "Com que frequência, num dia normal, você para e percebe algo bom?",
+     "c": "Conte quantas coisas boas você percebe hoje, mesmo sem anotar."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "One good thing today",
+     "g": "Name one good thing that happened today, however small it was.",
+     "p": [
+      "A good thing can be tiny: a green light, a warm drink, a friendly nod.",
+      "Saying it out loud or writing it makes it more real than just thinking it.",
+      "You do not need a perfect day to find one good thing in it."
+     ],
+     "q": "What is one good thing that happened to you today?",
+     "c": "Before bed tonight, say or write one good thing from today in a full sentence."
+    },
+    "de": {
+     "t": "Eine gute Sache heute",
+     "g": "Nenne eine gute Sache, die heute passiert ist, so klein sie auch war.",
+     "p": [
+      "Etwas Gutes kann winzig sein: eine grüne Ampel, ein warmes Getränk, ein freundliches Nicken.",
+      "Es auszusprechen oder aufzuschreiben macht es echter, als es nur zu denken.",
+      "Du brauchst keinen perfekten Tag, um darin eine gute Sache zu finden."
+     ],
+     "q": "Was ist eine gute Sache, die dir heute passiert ist?",
+     "c": "Sage oder schreibe heute Abend vor dem Schlafen eine gute Sache des Tages in einem ganzen Satz."
+    },
+    "es": {
+     "t": "Una cosa buena hoy",
+     "g": "Nombra una cosa buena que pasó hoy, por pequeña que sea.",
+     "p": [
+      "Algo bueno puede ser diminuto: un semáforo en verde, una bebida caliente, un saludo amable.",
+      "Decirlo en voz alta o escribirlo lo hace más real que solo pensarlo.",
+      "No necesitas un día perfecto para encontrar una cosa buena en él."
+     ],
+     "q": "¿Qué cosa buena te ha pasado hoy?",
+     "c": "Antes de dormir, di o escribe una cosa buena de hoy en una frase completa."
+    },
+    "fr": {
+     "t": "Une bonne chose aujourd'hui",
+     "g": "Nomme une bonne chose arrivée aujourd'hui, même toute petite.",
+     "p": [
+      "Une bonne chose peut être minuscule : un feu vert, une boisson chaude, un signe amical.",
+      "La dire à voix haute ou l'écrire la rend plus réelle que la simple pensée.",
+      "Pas besoin d'une journée parfaite pour y trouver une bonne chose."
+     ],
+     "q": "Quelle bonne chose t'est arrivée aujourd'hui ?",
+     "c": "Ce soir avant de dormir, dis ou écris une bonne chose du jour en une phrase complète."
+    },
+    "it": {
+     "t": "Una cosa bella oggi",
+     "g": "Nomina una cosa bella successa oggi, per quanto piccola.",
+     "p": [
+      "Una cosa bella può essere minuscola: un semaforo verde, una bevanda calda, un cenno gentile.",
+      "Dirla ad alta voce o scriverla la rende più reale che solo pensarla.",
+      "Non serve una giornata perfetta per trovarci una cosa bella."
+     ],
+     "q": "Qual è una cosa bella che ti è successa oggi?",
+     "c": "Stasera prima di dormire, di' o scrivi una cosa bella di oggi in una frase completa."
+    },
+    "pt": {
+     "t": "Uma coisa boa hoje",
+     "g": "Diz uma coisa boa que aconteceu hoje, por mais pequena que seja.",
+     "p": [
+      "Algo bom pode ser minúsculo: um semáforo verde, uma bebida quente, um aceno simpático.",
+      "Dizê-lo em voz alta ou escrevê-lo torna-o mais real do que apenas pensá-lo.",
+      "Não precisas de um dia perfeito para encontrar uma coisa boa nele."
+     ],
+     "q": "Que coisa boa te aconteceu hoje?",
+     "c": "Esta noite, antes de dormir, diz ou escreve uma coisa boa de hoje numa frase completa."
+    },
+    "pt_BR": {
+     "t": "Uma coisa boa hoje",
+     "g": "Diga uma coisa boa que aconteceu hoje, por menor que seja.",
+     "p": [
+      "Algo bom pode ser minúsculo: um sinal verde, uma bebida quente, um aceno simpático.",
+      "Dizer em voz alta ou escrever torna mais real do que apenas pensar.",
+      "Você não precisa de um dia perfeito para encontrar uma coisa boa nele."
+     ],
+     "q": "Que coisa boa aconteceu com você hoje?",
+     "c": "Hoje à noite, antes de dormir, diga ou escreva uma coisa boa do dia em uma frase completa."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Three good things",
+     "g": "Write down three good things from your day and think about why they happened.",
+     "p": [
+      "Three is a manageable number that stretches your noticing without feeling like homework.",
+      "Adding a short why, like because a friend called, links good things to causes.",
+      "Do this for a few days and your attention starts to look for good things on its own."
+     ],
+     "q": "What are three good things from your day, and why do you think they happened?",
+     "c": "Write three good things from today, each with a few words about why it happened."
+    },
+    "de": {
+     "t": "Drei gute Dinge",
+     "g": "Schreibe drei gute Dinge deines Tages auf und überlege, warum sie passiert sind.",
+     "p": [
+      "Drei ist eine machbare Zahl, die dein Bemerken dehnt, ohne nach Hausaufgabe zu klingen.",
+      "Ein kurzes Warum, etwa weil ein Freund anrief, verbindet Gutes mit Ursachen.",
+      "Wenn du das einige Tage machst, sucht deine Aufmerksamkeit von selbst nach Gutem."
+     ],
+     "q": "Welche drei guten Dinge gab es heute, und warum, glaubst du, sind sie passiert?",
+     "c": "Schreibe drei gute Dinge von heute auf, jeweils mit ein paar Worten dazu, warum sie passiert sind."
+    },
+    "es": {
+     "t": "Tres cosas buenas",
+     "g": "Escribe tres cosas buenas de tu día y piensa por qué ocurrieron.",
+     "p": [
+      "Tres es un número manejable que amplía tu atención sin parecer una tarea escolar.",
+      "Añadir un breve porqué, como porque llamó un amigo, une lo bueno con sus causas.",
+      "Si lo haces unos días, tu atención empieza a buscar lo bueno por sí sola."
+     ],
+     "q": "¿Cuáles son tres cosas buenas de tu día y por qué crees que ocurrieron?",
+     "c": "Escribe tres cosas buenas de hoy, cada una con unas palabras sobre por qué ocurrió."
+    },
+    "fr": {
+     "t": "Trois bonnes choses",
+     "g": "Note trois bonnes choses de ta journée et demande-toi pourquoi elles sont arrivées.",
+     "p": [
+      "Trois est un nombre facile qui élargit ton attention sans ressembler à des devoirs.",
+      "Ajouter un court pourquoi, comme parce qu'un ami a appelé, relie le bien à ses causes.",
+      "En le faisant quelques jours, ton attention se met à chercher le bon toute seule."
+     ],
+     "q": "Quelles sont trois bonnes choses de ta journée, et pourquoi sont-elles arrivées ?",
+     "c": "Écris trois bonnes choses d'aujourd'hui, chacune avec quelques mots sur pourquoi elle est arrivée."
+    },
+    "it": {
+     "t": "Tre cose belle",
+     "g": "Scrivi tre cose belle della tua giornata e pensa al perché sono successe.",
+     "p": [
+      "Tre è un numero gestibile che allena l'attenzione senza sembrare un compito.",
+      "Aggiungere un breve perché, come perché ha chiamato un amico, collega il bello alle sue cause.",
+      "Se lo fai per qualche giorno, la tua attenzione inizia a cercare il bello da sola."
+     ],
+     "q": "Quali sono tre cose belle della tua giornata e perché pensi siano successe?",
+     "c": "Scrivi tre cose belle di oggi, ognuna con poche parole sul perché è successa."
+    },
+    "pt": {
+     "t": "Três coisas boas",
+     "g": "Escreve três coisas boas do teu dia e pensa porque aconteceram.",
+     "p": [
+      "Três é um número fácil que alarga a tua atenção sem parecer trabalho de casa.",
+      "Juntar um breve porquê, como porque um amigo ligou, liga o que é bom às suas causas.",
+      "Se o fizeres alguns dias, a tua atenção começa a procurar o que é bom sozinha."
+     ],
+     "q": "Quais são três coisas boas do teu dia e porque achas que aconteceram?",
+     "c": "Escreve três coisas boas de hoje, cada uma com umas palavras sobre porque aconteceu."
+    },
+    "pt_BR": {
+     "t": "Três coisas boas",
+     "g": "Escreva três coisas boas do seu dia e pense por que elas aconteceram.",
+     "p": [
+      "Três é um número fácil que amplia sua atenção sem parecer lição de casa.",
+      "Acrescentar um breve porquê, como porque um amigo ligou, liga o que é bom às suas causas.",
+      "Se você fizer isso por alguns dias, sua atenção passa a procurar o que é bom sozinha."
+     ],
+     "q": "Quais são três coisas boas do seu dia e por que você acha que aconteceram?",
+     "c": "Escreva três coisas boas de hoje, cada uma com algumas palavras sobre por que aconteceu."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Starting a gratitude journal",
+     "g": "Choose a notebook or an app and a regular moment for writing.",
+     "p": [
+      "Any format works: a pretty notebook, a notes app or even voice memos.",
+      "Pick a cue you already have, like after dinner or with your morning coffee.",
+      "Keep it light; two or three lines are plenty, and missed days are fine."
+     ],
+     "q": "Where and when would writing a few lines feel easiest for you?",
+     "c": "Choose your journal format and a time of day, then write today's first entry."
+    },
+    "de": {
+     "t": "Ein Dankbarkeitstagebuch beginnen",
+     "g": "Wähle ein Heft oder eine App und einen festen Moment zum Schreiben.",
+     "p": [
+      "Jedes Format geht: ein schönes Heft, eine Notiz-App oder Sprachmemos.",
+      "Wähle einen Anlass, den du schon hast, etwa nach dem Abendessen oder beim Morgenkaffee.",
+      "Halte es leicht; zwei, drei Zeilen reichen, und verpasste Tage sind in Ordnung."
+     ],
+     "q": "Wo und wann fiele es dir am leichtesten, ein paar Zeilen zu schreiben?",
+     "c": "Wähle dein Tagebuchformat und eine Tageszeit und schreibe heute den ersten Eintrag."
+    },
+    "es": {
+     "t": "Empezar un diario de gratitud",
+     "g": "Elige un cuaderno o una app y un momento fijo para escribir.",
+     "p": [
+      "Vale cualquier formato: un cuaderno bonito, una app de notas o notas de voz.",
+      "Elige una señal que ya tengas, como después de cenar o con el café de la mañana.",
+      "Hazlo ligero; dos o tres líneas bastan y no pasa nada si un día falta."
+     ],
+     "q": "¿Dónde y cuándo te resultaría más fácil escribir unas líneas?",
+     "c": "Elige el formato de tu diario y una hora del día, y escribe hoy la primera entrada."
+    },
+    "fr": {
+     "t": "Commencer un journal de gratitude",
+     "g": "Choisis un carnet ou une appli et un moment régulier pour écrire.",
+     "p": [
+      "Tout format convient : un joli carnet, une appli de notes ou des mémos vocaux.",
+      "Choisis un repère que tu as déjà, comme après le dîner ou avec ton café du matin.",
+      "Reste léger ; deux ou trois lignes suffisent, et un jour manqué n'est pas grave."
+     ],
+     "q": "Où et quand écrire quelques lignes serait le plus facile pour toi ?",
+     "c": "Choisis ton format de journal et une heure de la journée, puis écris la première entrée aujourd'hui."
+    },
+    "it": {
+     "t": "Iniziare un diario della gratitudine",
+     "g": "Scegli un quaderno o un'app e un momento fisso per scrivere.",
+     "p": [
+      "Va bene qualsiasi formato: un bel quaderno, un'app di note o messaggi vocali.",
+      "Scegli un'abitudine che hai già, come dopo cena o con il caffè del mattino.",
+      "Mantieni leggerezza; bastano due o tre righe e saltare un giorno non è un problema."
+     ],
+     "q": "Dove e quando ti sarebbe più facile scrivere qualche riga?",
+     "c": "Scegli il formato del diario e un'ora del giorno, poi scrivi oggi la prima voce."
+    },
+    "pt": {
+     "t": "Começar um diário de gratidão",
+     "g": "Escolhe um caderno ou uma app e um momento regular para escrever.",
+     "p": [
+      "Qualquer formato serve: um caderno bonito, uma app de notas ou notas de voz.",
+      "Escolhe um sinal que já tens, como depois do jantar ou com o café da manhã.",
+      "Mantém leve; duas ou três linhas chegam, e falhar um dia não faz mal."
+     ],
+     "q": "Onde e quando te seria mais fácil escrever algumas linhas?",
+     "c": "Escolhe o formato do diário e uma hora do dia e escreve hoje a primeira entrada."
+    },
+    "pt_BR": {
+     "t": "Começando um diário de gratidão",
+     "g": "Escolha um caderno ou um app e um momento regular para escrever.",
+     "p": [
+      "Qualquer formato serve: um caderno bonito, um app de notas ou áudios.",
+      "Escolha um gatilho que você já tem, como depois do jantar ou com o café da manhã.",
+      "Mantenha leve; duas ou três linhas bastam, e faltar um dia não tem problema."
+     ],
+     "q": "Onde e quando seria mais fácil para você escrever algumas linhas?",
+     "c": "Escolha o formato do diário e um horário do dia e escreva hoje a primeira entrada."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Specific beats general",
+     "g": "Learn why a specific detail feels richer than a general word.",
+     "p": [
+      "The warm bread at breakfast feels richer than simply food.",
+      "Specific details make your brain relive the moment instead of ticking a box.",
+      "Try adding one sensory or personal detail to each thing you note."
+     ],
+     "q": "Think of one thing you appreciate; what is its most specific detail?",
+     "c": "Rewrite one general gratitude, like my family, with a specific detail added."
+    },
+    "de": {
+     "t": "Konkret schlägt allgemein",
+     "g": "Lerne, warum ein konkretes Detail reicher wirkt als ein allgemeines Wort.",
+     "p": [
+      "Das warme Brot zum Frühstück wirkt reicher als einfach nur Essen.",
+      "Konkrete Details lassen dich den Moment neu erleben, statt nur etwas abzuhaken.",
+      "Füge jeder Sache, die du notierst, ein Sinnes- oder persönliches Detail hinzu."
+     ],
+     "q": "Denk an etwas, das du schätzt; was ist sein konkretestes Detail?",
+     "c": "Schreibe eine allgemeine Dankbarkeit, etwa meine Familie, mit einem konkreten Detail um."
+    },
+    "es": {
+     "t": "Lo concreto gana a lo general",
+     "g": "Aprende por qué un detalle concreto se siente más rico que una palabra general.",
+     "p": [
+      "El pan caliente del desayuno se siente más rico que simplemente comida.",
+      "Los detalles concretos hacen que revivas el momento en vez de marcar una casilla.",
+      "Prueba a añadir un detalle sensorial o personal a cada cosa que anotes."
+     ],
+     "q": "Piensa en algo que valoras; ¿cuál es su detalle más concreto?",
+     "c": "Reescribe una gratitud general, como mi familia, añadiendo un detalle concreto."
+    },
+    "fr": {
+     "t": "Le précis vaut mieux que le général",
+     "g": "Découvre pourquoi un détail précis paraît plus riche qu'un mot général.",
+     "p": [
+      "Le pain chaud du petit-déjeuner paraît plus riche que simplement la nourriture.",
+      "Les détails précis te font revivre le moment au lieu de cocher une case.",
+      "Essaie d'ajouter un détail sensoriel ou personnel à chaque chose notée."
+     ],
+     "q": "Pense à quelque chose que tu apprécies ; quel en est le détail le plus précis ?",
+     "c": "Réécris une gratitude générale, comme ma famille, en ajoutant un détail précis."
+    },
+    "it": {
+     "t": "Il concreto batte il generico",
+     "g": "Scopri perché un dettaglio concreto sembra più ricco di una parola generica.",
+     "p": [
+      "Il pane caldo a colazione sembra più ricco di semplicemente cibo.",
+      "I dettagli concreti ti fanno rivivere il momento invece di spuntare una casella.",
+      "Prova ad aggiungere un dettaglio sensoriale o personale a ogni cosa che annoti."
+     ],
+     "q": "Pensa a qualcosa che apprezzi; qual è il suo dettaglio più concreto?",
+     "c": "Riscrivi una gratitudine generica, come la mia famiglia, aggiungendo un dettaglio concreto."
+    },
+    "pt": {
+     "t": "O concreto vence o geral",
+     "g": "Descobre porque um detalhe concreto parece mais rico do que uma palavra geral.",
+     "p": [
+      "O pão quente ao pequeno-almoço parece mais rico do que simplesmente comida.",
+      "Detalhes concretos fazem-te reviver o momento em vez de apenas riscar uma caixa.",
+      "Experimenta juntar um detalhe sensorial ou pessoal a cada coisa que anotas."
+     ],
+     "q": "Pensa em algo que valorizas; qual é o seu detalhe mais concreto?",
+     "c": "Reescreve uma gratidão geral, como a minha família, juntando um detalhe concreto."
+    },
+    "pt_BR": {
+     "t": "O concreto vence o geral",
+     "g": "Descubra por que um detalhe concreto parece mais rico do que uma palavra geral.",
+     "p": [
+      "O pão quente do café da manhã parece mais rico do que simplesmente comida.",
+      "Detalhes concretos fazem você reviver o momento em vez de só marcar uma caixinha.",
+      "Experimente acrescentar um detalhe sensorial ou pessoal a cada coisa que anotar."
+     ],
+     "q": "Pense em algo que você valoriza; qual é o detalhe mais concreto dele?",
+     "c": "Reescreva uma gratidão geral, como minha família, acrescentando um detalhe concreto."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The why behind the good",
+     "g": "Deepen your appreciation by adding why something good happened.",
+     "p": [
+      "Asking why shows the people, choices and luck behind a good moment.",
+      "Sometimes the answer is your own effort, which is worth appreciating too.",
+      "You do not need a grand reason; because it was sunny is a fine why."
+     ],
+     "q": "Pick a good thing from today: what made it happen?",
+     "c": "Write one good thing from today and finish the sentence: it happened because..."
+    },
+    "de": {
+     "t": "Das Warum hinter dem Guten",
+     "g": "Vertiefe deine Wertschätzung, indem du ergänzt, warum etwas Gutes passiert ist.",
+     "p": [
+      "Das Fragen nach dem Warum zeigt Menschen, Entscheidungen und Glück hinter einem guten Moment.",
+      "Manchmal ist die Antwort dein eigener Einsatz, auch den darfst du schätzen.",
+      "Du brauchst keinen großen Grund; weil die Sonne schien, ist ein gutes Warum."
+     ],
+     "q": "Such dir etwas Gutes von heute aus: Was hat es möglich gemacht?",
+     "c": "Schreibe eine gute Sache von heute und vollende den Satz: Es geschah, weil ..."
+    },
+    "es": {
+     "t": "El porqué de lo bueno",
+     "g": "Profundiza tu aprecio añadiendo por qué ocurrió algo bueno.",
+     "p": [
+      "Preguntar por qué muestra las personas, decisiones y suerte detrás de un buen momento.",
+      "A veces la respuesta es tu propio esfuerzo, que también merece aprecio.",
+      "No hace falta un gran motivo; porque hacía sol es un buen porqué."
+     ],
+     "q": "Elige algo bueno de hoy: ¿qué lo hizo posible?",
+     "c": "Escribe una cosa buena de hoy y termina la frase: ocurrió porque..."
+    },
+    "fr": {
+     "t": "Le pourquoi derrière le bien",
+     "g": "Approfondis ton appréciation en ajoutant pourquoi quelque chose de bon est arrivé.",
+     "p": [
+      "Demander pourquoi révèle les personnes, les choix et la chance derrière un bon moment.",
+      "Parfois la réponse, c'est ton propre effort, qui mérite aussi d'être apprécié.",
+      "Pas besoin de grande raison ; parce qu'il y avait du soleil est un bon pourquoi."
+     ],
+     "q": "Choisis une bonne chose d'aujourd'hui : qu'est-ce qui l'a rendue possible ?",
+     "c": "Écris une bonne chose d'aujourd'hui et complète : c'est arrivé parce que..."
+    },
+    "it": {
+     "t": "Il perché dietro il bello",
+     "g": "Approfondisci l'apprezzamento aggiungendo perché è successa una cosa bella.",
+     "p": [
+      "Chiedersi perché mostra le persone, le scelte e la fortuna dietro un bel momento.",
+      "A volte la risposta è il tuo impegno, che merita apprezzamento anch'esso.",
+      "Non serve un grande motivo; perché c'era il sole è un buon perché."
+     ],
+     "q": "Scegli una cosa bella di oggi: cosa l'ha resa possibile?",
+     "c": "Scrivi una cosa bella di oggi e completa la frase: è successo perché..."
+    },
+    "pt": {
+     "t": "O porquê por trás do bom",
+     "g": "Aprofunda o teu apreço juntando porque aconteceu algo bom.",
+     "p": [
+      "Perguntar porquê mostra as pessoas, escolhas e sorte por trás de um bom momento.",
+      "Às vezes a resposta é o teu próprio esforço, que também merece apreço.",
+      "Não precisas de um grande motivo; porque estava sol é um bom porquê."
+     ],
+     "q": "Escolhe algo bom de hoje: o que o tornou possível?",
+     "c": "Escreve uma coisa boa de hoje e completa a frase: aconteceu porque..."
+    },
+    "pt_BR": {
+     "t": "O porquê por trás do bom",
+     "g": "Aprofunde sua valorização acrescentando por que algo bom aconteceu.",
+     "p": [
+      "Perguntar por quê mostra as pessoas, escolhas e sorte por trás de um bom momento.",
+      "Às vezes a resposta é o seu próprio esforço, que também merece valorização.",
+      "Você não precisa de um grande motivo; porque estava sol é um bom porquê."
+     ],
+     "q": "Escolha algo bom de hoje: o que tornou isso possível?",
+     "c": "Escreva uma coisa boa de hoje e complete a frase: aconteceu porque..."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Small comforts",
+     "g": "Notice everyday comforts like a soft pillow or a hot shower.",
+     "p": [
+      "Comforts are easy to overlook because they are always there.",
+      "Pausing on them for a breath turns a habit into a small pleasure.",
+      "Comfort is valid gratitude, even if your day was hard."
+     ],
+     "q": "Which small comfort do you enjoy most at home?",
+     "c": "Pause and fully enjoy one comfort today, such as a warm drink or soft blanket."
+    },
+    "de": {
+     "t": "Kleine Annehmlichkeiten",
+     "g": "Bemerke Alltagsfreuden wie ein weiches Kissen oder eine heiße Dusche.",
+     "p": [
+      "Annehmlichkeiten übersieht man leicht, weil sie immer da sind.",
+      "Einen Atemzug lang dabei zu verweilen, macht aus Gewohnheit ein kleines Vergnügen.",
+      "Wohlbehagen ist gültige Dankbarkeit, auch wenn dein Tag schwer war."
+     ],
+     "q": "Welche kleine Annehmlichkeit genießt du zu Hause am meisten?",
+     "c": "Halte inne und genieße heute eine Annehmlichkeit ganz, etwa ein warmes Getränk oder eine weiche Decke."
+    },
+    "es": {
+     "t": "Pequeños consuelos",
+     "g": "Fíjate en comodidades cotidianas como una almohada suave o una ducha caliente.",
+     "p": [
+      "Las comodidades se pasan por alto porque siempre están ahí.",
+      "Detenerte un respiro en ellas convierte la costumbre en un pequeño placer.",
+      "El confort es una gratitud válida, aunque tu día haya sido duro."
+     ],
+     "q": "¿Qué pequeña comodidad disfrutas más en casa?",
+     "c": "Haz una pausa y disfruta del todo una comodidad hoy, como una bebida caliente o una manta suave."
+    },
+    "fr": {
+     "t": "Petits conforts",
+     "g": "Remarque les conforts du quotidien, comme un oreiller moelleux ou une douche chaude.",
+     "p": [
+      "Les conforts passent inaperçus parce qu'ils sont toujours là.",
+      "S'y arrêter le temps d'une respiration transforme l'habitude en petit plaisir.",
+      "Le confort est une gratitude légitime, même si ta journée a été dure."
+     ],
+     "q": "Quel petit confort apprécies-tu le plus chez toi ?",
+     "c": "Fais une pause et savoure pleinement un confort aujourd'hui, comme une boisson chaude ou un plaid doux."
+    },
+    "it": {
+     "t": "Piccoli conforti",
+     "g": "Nota i comfort di ogni giorno, come un cuscino morbido o una doccia calda.",
+     "p": [
+      "I comfort sfuggono perché sono sempre lì.",
+      "Soffermarti un respiro su di essi trasforma l'abitudine in un piccolo piacere.",
+      "Il comfort è gratitudine valida, anche se la giornata è stata dura."
+     ],
+     "q": "Quale piccolo comfort ti piace di più a casa?",
+     "c": "Fermati e goditi appieno un comfort oggi, come una bevanda calda o una coperta morbida."
+    },
+    "pt": {
+     "t": "Pequenos confortos",
+     "g": "Repara em confortos do dia a dia, como uma almofada macia ou um duche quente.",
+     "p": [
+      "Os confortos passam despercebidos porque estão sempre lá.",
+      "Parar um respiro neles transforma o hábito num pequeno prazer.",
+      "O conforto é gratidão válida, mesmo que o teu dia tenha sido duro."
+     ],
+     "q": "Que pequeno conforto mais aprecias em casa?",
+     "c": "Faz uma pausa e desfruta por inteiro de um conforto hoje, como uma bebida quente ou uma manta macia."
+    },
+    "pt_BR": {
+     "t": "Pequenos confortos",
+     "g": "Perceba confortos do dia a dia, como um travesseiro macio ou um banho quente.",
+     "p": [
+      "Os confortos passam despercebidos porque estão sempre ali.",
+      "Parar um respiro neles transforma o hábito em um pequeno prazer.",
+      "Conforto é gratidão válida, mesmo que seu dia tenha sido difícil."
+     ],
+     "q": "Que pequeno conforto você mais aprecia em casa?",
+     "c": "Faça uma pausa e aproveite por inteiro um conforto hoje, como uma bebida quente ou uma coberta macia."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Thanks to your senses",
+     "g": "Appreciate something you saw, heard, tasted, smelled and touched today.",
+     "p": [
+      "Your five senses are a quick doorway into the present moment.",
+      "Each sense usually holds at least one small pleasure you can spot.",
+      "Naming sensations is a calm way to step out of racing thoughts."
+     ],
+     "q": "Which of your senses gave you the most pleasure today?",
+     "c": "Find one thing for each sense today and note them in a short list."
+    },
+    "de": {
+     "t": "Dank an deine Sinne",
+     "g": "Schätze etwas, das du heute gesehen, gehört, geschmeckt, gerochen und ertastet hast.",
+     "p": [
+      "Deine fünf Sinne sind ein schneller Zugang zum gegenwärtigen Moment.",
+      "Jeder Sinn birgt meist mindestens ein kleines Vergnügen, das du entdecken kannst.",
+      "Empfindungen zu benennen hilft ruhig aus rasenden Gedanken heraus."
+     ],
+     "q": "Welcher deiner Sinne hat dir heute am meisten Freude gemacht?",
+     "c": "Finde heute für jeden Sinn eine Sache und notiere sie in einer kurzen Liste."
+    },
+    "es": {
+     "t": "Gracias a tus sentidos",
+     "g": "Valora algo que hoy viste, oíste, probaste, oliste y tocaste.",
+     "p": [
+      "Tus cinco sentidos son una puerta rápida al momento presente.",
+      "Cada sentido suele guardar al menos un pequeño placer que puedes descubrir.",
+      "Nombrar sensaciones es una forma tranquila de salir de pensamientos acelerados."
+     ],
+     "q": "¿Cuál de tus sentidos te dio más placer hoy?",
+     "c": "Encuentra hoy una cosa para cada sentido y anótalas en una lista corta."
+    },
+    "fr": {
+     "t": "Merci à tes sens",
+     "g": "Apprécie quelque chose que tu as vu, entendu, goûté, senti et touché aujourd'hui.",
+     "p": [
+      "Tes cinq sens sont une porte rapide vers l'instant présent.",
+      "Chaque sens recèle en général au moins un petit plaisir à repérer.",
+      "Nommer les sensations aide calmement à sortir des pensées qui s'emballent."
+     ],
+     "q": "Lequel de tes sens t'a donné le plus de plaisir aujourd'hui ?",
+     "c": "Trouve aujourd'hui une chose pour chaque sens et note-les dans une courte liste."
+    },
+    "it": {
+     "t": "Grazie ai tuoi sensi",
+     "g": "Apprezza qualcosa che oggi hai visto, sentito, assaggiato, annusato e toccato.",
+     "p": [
+      "I tuoi cinque sensi sono una porta rapida verso il momento presente.",
+      "Ogni senso di solito nasconde almeno un piccolo piacere da scoprire.",
+      "Dare un nome alle sensazioni è un modo calmo per uscire dai pensieri che corrono."
+     ],
+     "q": "Quale dei tuoi sensi ti ha dato più piacere oggi?",
+     "c": "Trova oggi una cosa per ogni senso e annotale in un breve elenco."
+    },
+    "pt": {
+     "t": "Graças aos teus sentidos",
+     "g": "Valoriza algo que hoje viste, ouviste, provaste, cheiraste e tocaste.",
+     "p": [
+      "Os teus cinco sentidos são uma porta rápida para o momento presente.",
+      "Cada sentido costuma guardar pelo menos um pequeno prazer que podes descobrir.",
+      "Dar nome às sensações é uma forma calma de sair de pensamentos acelerados."
+     ],
+     "q": "Qual dos teus sentidos te deu mais prazer hoje?",
+     "c": "Encontra hoje uma coisa para cada sentido e anota-as numa lista curta."
+    },
+    "pt_BR": {
+     "t": "Graças aos seus sentidos",
+     "g": "Valorize algo que hoje você viu, ouviu, provou, cheirou e tocou.",
+     "p": [
+      "Seus cinco sentidos são uma porta rápida para o momento presente.",
+      "Cada sentido costuma guardar pelo menos um pequeno prazer que você pode descobrir.",
+      "Dar nome às sensações é uma forma calma de sair de pensamentos acelerados."
+     ],
+     "q": "Qual dos seus sentidos lhe deu mais prazer hoje?",
+     "c": "Encontre hoje uma coisa para cada sentido e anote em uma lista curta."
+    }
+   }
+  }
+ ]
+}

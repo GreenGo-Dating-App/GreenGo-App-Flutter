@@ -1,0 +1,835 @@
+{
+ "topic": "good_listener",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Evening wind-down chat",
+     "g": "Share how you like to relax at the end of the day.",
+     "p": [
+      "Evenings are a calm time for slow, easy conversation.",
+      "Asking 'how do you unwind?' invites a peaceful, personal answer.",
+      "Notice the tone: relaxed talk calls for a relaxed listener."
+     ],
+     "q": "How do you like to wind down in the evening?",
+     "c": "Ask someone how they unwind and listen without hurrying."
+    },
+    "de": {
+     "t": "Gespräch zum Feierabend",
+     "g": "Erzähle, wie du dich am Ende des Tages gern entspannst.",
+     "p": [
+      "Der Abend ist eine ruhige Zeit für langsame, leichte Gespräche.",
+      "'Wie kommst du zur Ruhe?' lädt zu einer friedlichen, persönlichen Antwort ein.",
+      "Achte auf den Ton: entspanntes Reden braucht entspanntes Zuhören."
+     ],
+     "q": "Wie entspannst du dich abends am liebsten?",
+     "c": "Frag jemanden, wie er abschaltet, und hör ohne Eile zu."
+    },
+    "es": {
+     "t": "Charla para relajarse al anochecer",
+     "g": "Cuenta cómo te gusta relajarte al final del día.",
+     "p": [
+      "La tarde-noche es un momento tranquilo para charlas lentas y fáciles.",
+      "Preguntar '¿cómo desconectas?' invita a una respuesta serena y personal.",
+      "Fíjate en el tono: hablar relajado pide un oyente relajado."
+     ],
+     "q": "¿Cómo te gusta relajarte por la noche?",
+     "c": "Pregunta a alguien cómo desconecta y escucha sin prisa."
+    },
+    "fr": {
+     "t": "Discussion de fin de journée",
+     "g": "Raconte comment tu aimes te détendre en fin de journée.",
+     "p": [
+      "Le soir est un moment calme pour des échanges lents et légers.",
+      "Demander 'comment tu décompresses ?' invite à une réponse paisible et personnelle.",
+      "Remarque le ton : une parole détendue appelle une écoute détendue."
+     ],
+     "q": "Comment aimes-tu te détendre le soir ?",
+     "c": "Demande à quelqu'un comment il décompresse et écoute sans te presser."
+    },
+    "it": {
+     "t": "Chiacchierata serale di relax",
+     "g": "Racconta come ti piace rilassarti a fine giornata.",
+     "p": [
+      "La sera è un momento calmo per conversazioni lente e leggere.",
+      "Chiedere 'come ti rilassi?' invita a una risposta serena e personale.",
+      "Nota il tono: un discorso rilassato chiede un ascoltatore rilassato."
+     ],
+     "q": "Come ti piace rilassarti la sera?",
+     "c": "Chiedi a qualcuno come si rilassa e ascolta senza fretta."
+    },
+    "pt": {
+     "t": "Conversa de fim de dia",
+     "g": "Conta como gostas de relaxar no fim do dia.",
+     "p": [
+      "O fim do dia é um momento calmo para conversas lentas e leves.",
+      "Perguntar 'como relaxas?' convida a uma resposta serena e pessoal.",
+      "Repara no tom: falar descontraído pede um ouvinte descontraído."
+     ],
+     "q": "Como gostas de relaxar à noite?",
+     "c": "Pergunta a alguém como relaxa e ouve sem pressa."
+    },
+    "pt_BR": {
+     "t": "Conversa de fim de dia",
+     "g": "Conte como você gosta de relaxar no fim do dia.",
+     "p": [
+      "O fim do dia é um momento calmo para conversas lentas e leves.",
+      "Perguntar 'como você relaxa?' convida a uma resposta serena e pessoal.",
+      "Perceba o tom: falar relaxado pede um ouvinte relaxado."
+     ],
+     "q": "Como você gosta de relaxar à noite?",
+     "c": "Pergunte a alguém como a pessoa relaxa e ouça sem pressa."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Asking how, not why",
+     "g": "See why 'how' questions often feel gentler and more inviting than 'why' questions.",
+     "p": [
+      "'Why did you do that?' can sound like blame.",
+      "'How did that happen?' invites a story instead of a defence.",
+      "Try swapping why for what or how."
+     ],
+     "q": "How could you reword 'Why were you late?' more gently?",
+     "c": "Turn one 'why' question into a 'how' or 'what' question today."
+    },
+    "de": {
+     "t": "Wie fragen, nicht warum",
+     "g": "Erkenne, warum 'Wie'-Fragen oft sanfter und einladender wirken als 'Warum'-Fragen.",
+     "p": [
+      "'Warum hast du das getan?' kann nach Vorwurf klingen.",
+      "'Wie kam es dazu?' lädt zu einer Geschichte statt zur Verteidigung ein.",
+      "Tausche warum gegen was oder wie."
+     ],
+     "q": "Wie könntest du 'Warum bist du zu spät?' sanfter formulieren?",
+     "c": "Verwandle heute eine Warum-Frage in eine Wie- oder Was-Frage."
+    },
+    "es": {
+     "t": "Preguntar cómo, no por qué",
+     "g": "Ve por qué las preguntas con 'cómo' suelen ser más suaves y acogedoras que las de 'por qué'.",
+     "p": [
+      "'¿Por qué hiciste eso?' puede sonar a reproche.",
+      "'¿Cómo pasó eso?' invita a un relato en vez de una defensa.",
+      "Prueba a cambiar por qué por qué o cómo."
+     ],
+     "q": "¿Cómo reformularías con más suavidad '¿Por qué llegaste tarde?'?",
+     "c": "Convierte hoy una pregunta con 'por qué' en una con 'cómo' o 'qué'."
+    },
+    "fr": {
+     "t": "Demander comment, pas pourquoi",
+     "g": "Vois pourquoi les questions en 'comment' semblent souvent plus douces que celles en 'pourquoi'.",
+     "p": [
+      "'Pourquoi as-tu fait ça ?' peut sonner comme un reproche.",
+      "'Comment ça s'est passé ?' invite à raconter plutôt qu'à se défendre.",
+      "Essaie de remplacer pourquoi par quoi ou comment."
+     ],
+     "q": "Comment reformulerais-tu plus doucement 'Pourquoi es-tu en retard ?'",
+     "c": "Transforme aujourd'hui une question en 'pourquoi' en question en 'comment' ou 'quoi'."
+    },
+    "it": {
+     "t": "Chiedere come, non perché",
+     "g": "Scopri perché le domande con 'come' sembrano spesso più gentili di quelle con 'perché'.",
+     "p": [
+      "'Perché l'hai fatto?' può suonare come un rimprovero.",
+      "'Com'è successo?' invita a un racconto invece che a una difesa.",
+      "Prova a sostituire perché con cosa o come."
+     ],
+     "q": "Come riformuleresti con più dolcezza 'Perché sei in ritardo?'",
+     "c": "Trasforma oggi una domanda con 'perché' in una con 'come' o 'cosa'."
+    },
+    "pt": {
+     "t": "Perguntar como, não porquê",
+     "g": "Percebe porque as perguntas com 'como' parecem muitas vezes mais suaves do que as de 'porquê'.",
+     "p": [
+      "'Porque fizeste isso?' pode soar a censura.",
+      "'Como aconteceu?' convida a uma história em vez de uma defesa.",
+      "Experimenta trocar porquê por o quê ou como."
+     ],
+     "q": "Como reformularias com mais suavidade 'Porque chegaste atrasado?'",
+     "c": "Transforma hoje uma pergunta com 'porquê' numa com 'como' ou 'o quê'."
+    },
+    "pt_BR": {
+     "t": "Perguntar como, não por quê",
+     "g": "Entenda por que as perguntas com 'como' parecem muitas vezes mais suaves que as de 'por quê'.",
+     "p": [
+      "'Por que você fez isso?' pode soar como acusação.",
+      "'Como isso aconteceu?' convida a uma história em vez de uma defesa.",
+      "Experimente trocar por quê por o quê ou como."
+     ],
+     "q": "Como você reformularia com mais suavidade 'Por que você chegou atrasado?'",
+     "c": "Transforme hoje uma pergunta com 'por quê' em uma com 'como' ou 'o quê'."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "People who brighten your day",
+     "g": "Talk about the neighbours, colleagues or friends who make days better.",
+     "p": [
+      "Everyday people, like a cheerful cashier, can lift our mood.",
+      "Naming them helps you notice and appreciate them.",
+      "Listeners can ask what exactly makes that person special."
+     ],
+     "q": "Who brightens your day, and how?",
+     "c": "Greet someone who brightens your day and tell them so."
+    },
+    "de": {
+     "t": "Menschen, die deinen Tag erhellen",
+     "g": "Sprich über Nachbarn, Kollegen oder Freunde, die Tage schöner machen.",
+     "p": [
+      "Alltägliche Menschen, wie eine fröhliche Kassiererin, heben die Stimmung.",
+      "Sie zu benennen hilft, sie zu bemerken und zu schätzen.",
+      "Zuhörer können fragen, was diesen Menschen besonders macht."
+     ],
+     "q": "Wer erhellt deinen Tag, und wie?",
+     "c": "Begrüße heute jemanden, der deinen Tag erhellt, und sag es ihm."
+    },
+    "es": {
+     "t": "Personas que alegran tu día",
+     "g": "Habla de los vecinos, compañeros o amigos que mejoran los días.",
+     "p": [
+      "Personas cotidianas, como un cajero alegre, pueden subir el ánimo.",
+      "Nombrarlas ayuda a notarlas y valorarlas.",
+      "Quien escucha puede preguntar qué hace especial a esa persona."
+     ],
+     "q": "¿Quién alegra tu día y cómo?",
+     "c": "Saluda a alguien que alegra tu día y díselo."
+    },
+    "fr": {
+     "t": "Les gens qui égayent ta journée",
+     "g": "Parle des voisins, collègues ou amis qui rendent les jours meilleurs.",
+     "p": [
+      "Des gens du quotidien, comme un caissier souriant, remontent le moral.",
+      "Les nommer aide à les remarquer et à les apprécier.",
+      "Celui qui écoute peut demander ce qui rend cette personne spéciale."
+     ],
+     "q": "Qui égaye ta journée, et comment ?",
+     "c": "Salue quelqu'un qui égaye ta journée et dis-le-lui."
+    },
+    "it": {
+     "t": "Persone che ti rallegrano la giornata",
+     "g": "Parla dei vicini, colleghi o amici che rendono migliori le giornate.",
+     "p": [
+      "Persone di ogni giorno, come un cassiere allegro, sollevano l'umore.",
+      "Nominarle aiuta a notarle e ad apprezzarle.",
+      "Chi ascolta può chiedere cosa rende speciale quella persona."
+     ],
+     "q": "Chi ti rallegra la giornata, e come?",
+     "c": "Saluta qualcuno che ti rallegra la giornata e diglielo."
+    },
+    "pt": {
+     "t": "Pessoas que alegram o teu dia",
+     "g": "Fala dos vizinhos, colegas ou amigos que tornam os dias melhores.",
+     "p": [
+      "Pessoas do dia a dia, como um caixa bem-disposto, animam o humor.",
+      "Nomeá-las ajuda a reparar nelas e a valorizá-las.",
+      "Quem ouve pode perguntar o que torna essa pessoa especial."
+     ],
+     "q": "Quem alegra o teu dia e como?",
+     "c": "Cumprimenta alguém que alegra o teu dia e di-lo."
+    },
+    "pt_BR": {
+     "t": "Pessoas que alegram o seu dia",
+     "g": "Fale dos vizinhos, colegas ou amigos que deixam os dias melhores.",
+     "p": [
+      "Pessoas do dia a dia, como um caixa bem-humorado, melhoram o humor.",
+      "Nomeá-las ajuda a perceber e valorizar essas pessoas.",
+      "Quem ouve pode perguntar o que torna essa pessoa especial."
+     ],
+     "q": "Quem alegra o seu dia e como?",
+     "c": "Cumprimente alguém que alegra o seu dia e diga isso a ela."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Summarising a story",
+     "g": "Give a short summary of what you heard to check you got it right.",
+     "p": [
+      "A summary shows you followed the whole story, not just the end.",
+      "Keep it brief: two or three sentences.",
+      "End with 'Did I get that right?' to invite correction."
+     ],
+     "q": "How would you summarise a friend's story about a busy day in two sentences?",
+     "c": "Summarise something you heard today and ask 'Did I get that right?'"
+    },
+    "de": {
+     "t": "Eine Geschichte zusammenfassen",
+     "g": "Fasse kurz zusammen, was du gehört hast, um zu prüfen, ob du es richtig verstanden hast.",
+     "p": [
+      "Eine Zusammenfassung zeigt, dass du der ganzen Geschichte gefolgt bist.",
+      "Fasse dich kurz: zwei oder drei Sätze.",
+      "Schließe mit 'Habe ich das richtig verstanden?', um Korrektur zu erlauben."
+     ],
+     "q": "Wie würdest du die Geschichte eines Freundes über einen vollen Tag in zwei Sätzen zusammenfassen?",
+     "c": "Fasse heute etwas Gehörtes zusammen und frag: 'Habe ich das richtig verstanden?'"
+    },
+    "es": {
+     "t": "Resumir una historia",
+     "g": "Haz un breve resumen de lo que oíste para comprobar que lo entendiste bien.",
+     "p": [
+      "Un resumen muestra que seguiste toda la historia, no solo el final.",
+      "Sé breve: dos o tres frases.",
+      "Termina con '¿Lo entendí bien?' para invitar a corregir."
+     ],
+     "q": "¿Cómo resumirías en dos frases el relato de un amigo sobre un día ajetreado?",
+     "c": "Resume hoy algo que oíste y pregunta '¿Lo entendí bien?'"
+    },
+    "fr": {
+     "t": "Résumer une histoire",
+     "g": "Fais un court résumé de ce que tu as entendu pour vérifier que tu as bien compris.",
+     "p": [
+      "Un résumé montre que tu as suivi toute l'histoire, pas seulement la fin.",
+      "Sois bref : deux ou trois phrases.",
+      "Termine par 'J'ai bien compris ?' pour permettre une correction."
+     ],
+     "q": "Comment résumerais-tu en deux phrases le récit d'un ami sur une journée chargée ?",
+     "c": "Résume aujourd'hui quelque chose entendu et demande 'J'ai bien compris ?'"
+    },
+    "it": {
+     "t": "Riassumere una storia",
+     "g": "Fai un breve riassunto di ciò che hai sentito per verificare di aver capito bene.",
+     "p": [
+      "Un riassunto mostra che hai seguito tutta la storia, non solo la fine.",
+      "Sii breve: due o tre frasi.",
+      "Concludi con 'Ho capito bene?' per invitare a correggere."
+     ],
+     "q": "Come riassumeresti in due frasi il racconto di un amico su una giornata piena?",
+     "c": "Riassumi oggi qualcosa che hai sentito e chiedi 'Ho capito bene?'"
+    },
+    "pt": {
+     "t": "Resumir uma história",
+     "g": "Faz um breve resumo do que ouviste para confirmar que percebeste bem.",
+     "p": [
+      "Um resumo mostra que seguiste a história toda, não só o fim.",
+      "Sê breve: duas ou três frases.",
+      "Termina com 'Percebi bem?' para convidar a corrigir."
+     ],
+     "q": "Como resumirias em duas frases o relato de um amigo sobre um dia cheio?",
+     "c": "Resume hoje algo que ouviste e pergunta 'Percebi bem?'"
+    },
+    "pt_BR": {
+     "t": "Resumir uma história",
+     "g": "Faça um breve resumo do que ouviu para conferir se entendeu bem.",
+     "p": [
+      "Um resumo mostra que você seguiu a história toda, não só o fim.",
+      "Seja breve: duas ou três frases.",
+      "Termine com 'Entendi direito?' para convidar a corrigir."
+     ],
+     "q": "Como você resumiria em duas frases o relato de um amigo sobre um dia cheio?",
+     "c": "Resuma hoje algo que ouviu e pergunte 'Entendi direito?'"
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your favourite season",
+     "g": "Describe a season you love with its sights, smells and activities.",
+     "p": [
+      "Seasons bring memories, foods and traditions.",
+      "Sensory details make descriptions come alive.",
+      "Listeners can ask what a perfect day in that season looks like."
+     ],
+     "q": "Which season do you love most, and what makes it special?",
+     "c": "Ask someone about their favourite season and one memory from it."
+    },
+    "de": {
+     "t": "Deine Lieblingsjahreszeit",
+     "g": "Beschreibe eine Jahreszeit, die du liebst, mit Anblicken, Düften und Aktivitäten.",
+     "p": [
+      "Jahreszeiten bringen Erinnerungen, Speisen und Traditionen.",
+      "Sinnliche Details lassen Beschreibungen lebendig werden.",
+      "Zuhörer können fragen, wie ein perfekter Tag in dieser Jahreszeit aussieht."
+     ],
+     "q": "Welche Jahreszeit liebst du am meisten, und was macht sie besonders?",
+     "c": "Frag jemanden nach der Lieblingsjahreszeit und einer Erinnerung daran."
+    },
+    "es": {
+     "t": "Tu estación favorita",
+     "g": "Describe una estación que te gusta con sus vistas, olores y actividades.",
+     "p": [
+      "Las estaciones traen recuerdos, comidas y tradiciones.",
+      "Los detalles de los sentidos dan vida a las descripciones.",
+      "Quien escucha puede preguntar cómo es un día perfecto en esa estación."
+     ],
+     "q": "¿Qué estación te gusta más y qué la hace especial?",
+     "c": "Pregunta a alguien por su estación favorita y un recuerdo de ella."
+    },
+    "fr": {
+     "t": "Ta saison préférée",
+     "g": "Décris une saison que tu aimes avec ses images, ses odeurs et ses activités.",
+     "p": [
+      "Les saisons apportent souvenirs, plats et traditions.",
+      "Les détails sensoriels rendent une description vivante.",
+      "Celui qui écoute peut demander à quoi ressemble une journée parfaite dans cette saison."
+     ],
+     "q": "Quelle saison préfères-tu, et qu'est-ce qui la rend spéciale ?",
+     "c": "Demande à quelqu'un sa saison préférée et un souvenir qui s'y rattache."
+    },
+    "it": {
+     "t": "La tua stagione preferita",
+     "g": "Descrivi una stagione che ami con i suoi panorami, profumi e attività.",
+     "p": [
+      "Le stagioni portano ricordi, cibi e tradizioni.",
+      "I dettagli sensoriali rendono viva una descrizione.",
+      "Chi ascolta può chiedere com'è una giornata perfetta in quella stagione."
+     ],
+     "q": "Quale stagione ami di più, e cosa la rende speciale?",
+     "c": "Chiedi a qualcuno la sua stagione preferita e un ricordo legato ad essa."
+    },
+    "pt": {
+     "t": "A tua estação preferida",
+     "g": "Descreve uma estação de que gostas, com as suas vistas, cheiros e atividades.",
+     "p": [
+      "As estações trazem memórias, comidas e tradições.",
+      "Os detalhes dos sentidos dão vida às descrições.",
+      "Quem ouve pode perguntar como é um dia perfeito nessa estação."
+     ],
+     "q": "Que estação mais adoras e o que a torna especial?",
+     "c": "Pergunta a alguém pela estação preferida e uma memória dela."
+    },
+    "pt_BR": {
+     "t": "Sua estação favorita",
+     "g": "Descreva uma estação de que você gosta, com suas vistas, cheiros e atividades.",
+     "p": [
+      "As estações trazem memórias, comidas e tradições.",
+      "Detalhes dos sentidos dão vida às descrições.",
+      "Quem ouve pode perguntar como é um dia perfeito nessa estação."
+     ],
+     "q": "Que estação você mais ama e o que a torna especial?",
+     "c": "Pergunte a alguém pela estação favorita e uma memória dela."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Patience in conversation",
+     "g": "Let people tell stories at their own pace without rushing them.",
+     "p": [
+      "Some people take a long road to the point, and that is fine.",
+      "Rushing can make a speaker feel unimportant.",
+      "Relax your shoulders and enjoy the story, not just the ending."
+     ],
+     "q": "When has someone's patience with you made a difference?",
+     "c": "Let one slow storyteller take all the time they need today."
+    },
+    "de": {
+     "t": "Geduld im Gespräch",
+     "g": "Lass Menschen ihre Geschichten in ihrem Tempo erzählen, ohne sie zu hetzen.",
+     "p": [
+      "Manche brauchen einen langen Weg zum Punkt, und das ist in Ordnung.",
+      "Hetzen kann dem Sprecher das Gefühl geben, unwichtig zu sein.",
+      "Entspanne die Schultern und genieße die Geschichte, nicht nur das Ende."
+     ],
+     "q": "Wann hat dir jemandes Geduld etwas bedeutet?",
+     "c": "Gib heute einem langsamen Erzähler alle Zeit, die er braucht."
+    },
+    "es": {
+     "t": "Paciencia en la conversación",
+     "g": "Deja que la gente cuente sus historias a su ritmo, sin meterles prisa.",
+     "p": [
+      "Algunas personas dan un largo rodeo hasta el punto, y está bien.",
+      "Meter prisa puede hacer sentir poco importante a quien habla.",
+      "Relaja los hombros y disfruta del relato, no solo del final."
+     ],
+     "q": "¿Cuándo marcó la diferencia la paciencia de alguien contigo?",
+     "c": "Deja hoy que un narrador lento tome todo el tiempo que necesite."
+    },
+    "fr": {
+     "t": "Patience dans la conversation",
+     "g": "Laisse les gens raconter à leur rythme sans les presser.",
+     "p": [
+      "Certains prennent un long chemin avant d'arriver au but, et c'est très bien.",
+      "Presser peut faire sentir à l'autre qu'il n'est pas important.",
+      "Détends tes épaules et savoure le récit, pas seulement la fin."
+     ],
+     "q": "Quand la patience de quelqu'un a-t-elle compté pour toi ?",
+     "c": "Laisse aujourd'hui un conteur lent prendre tout le temps dont il a besoin."
+    },
+    "it": {
+     "t": "Pazienza nella conversazione",
+     "g": "Lascia che le persone raccontino al proprio ritmo senza metterle fretta.",
+     "p": [
+      "Alcuni fanno un lungo giro prima del punto, e va bene così.",
+      "Mettere fretta può far sentire poco importante chi parla.",
+      "Rilassa le spalle e goditi il racconto, non solo il finale."
+     ],
+     "q": "Quando la pazienza di qualcuno ha fatto la differenza per te?",
+     "c": "Lascia oggi che un narratore lento si prenda tutto il tempo necessario."
+    },
+    "pt": {
+     "t": "Paciência na conversa",
+     "g": "Deixa as pessoas contar histórias ao seu ritmo, sem as apressar.",
+     "p": [
+      "Algumas pessoas dão uma grande volta até ao ponto, e está tudo bem.",
+      "Apressar pode fazer quem fala sentir-se pouco importante.",
+      "Relaxa os ombros e goza a história, não só o fim."
+     ],
+     "q": "Quando é que a paciência de alguém contigo fez diferença?",
+     "c": "Deixa hoje um contador lento levar todo o tempo de que precisa."
+    },
+    "pt_BR": {
+     "t": "Paciência na conversa",
+     "g": "Deixe as pessoas contarem histórias no seu ritmo, sem apressá-las.",
+     "p": [
+      "Algumas pessoas dão uma grande volta até o ponto, e tudo bem.",
+      "Apressar pode fazer quem fala se sentir pouco importante.",
+      "Relaxe os ombros e curta a história, não só o fim."
+     ],
+     "q": "Quando a paciência de alguém com você fez diferença?",
+     "c": "Deixe hoje um contador lento levar todo o tempo de que precisa."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Learning something new today",
+     "g": "Share a fact or skill you picked up recently and how you found it.",
+     "p": [
+      "Everyone learns something new each week, often without noticing.",
+      "Telling how you learned it makes the story personal.",
+      "Listeners can ask what surprised you most."
+     ],
+     "q": "What is something new you learned recently?",
+     "c": "Ask someone what they learned this week and ask one follow-up."
+    },
+    "de": {
+     "t": "Heute etwas Neues gelernt",
+     "g": "Teile ein Fakt oder eine Fähigkeit, die du kürzlich gelernt hast, und wie du darauf kamst.",
+     "p": [
+      "Jeder lernt jede Woche etwas Neues, oft ohne es zu merken.",
+      "Zu erzählen, wie du es gelernt hast, macht die Geschichte persönlich.",
+      "Zuhörer können fragen, was dich am meisten überrascht hat."
+     ],
+     "q": "Was hast du kürzlich Neues gelernt?",
+     "c": "Frag jemanden, was er diese Woche gelernt hat, und stelle eine Nachfrage."
+    },
+    "es": {
+     "t": "Aprender algo nuevo hoy",
+     "g": "Comparte un dato o habilidad que aprendiste hace poco y cómo lo descubriste.",
+     "p": [
+      "Todos aprendemos algo nuevo cada semana, a menudo sin darnos cuenta.",
+      "Contar cómo lo aprendiste hace el relato personal.",
+      "Quien escucha puede preguntar qué te sorprendió más."
+     ],
+     "q": "¿Qué cosa nueva aprendiste hace poco?",
+     "c": "Pregunta a alguien qué aprendió esta semana y haz una pregunta de seguimiento."
+    },
+    "fr": {
+     "t": "Apprendre quelque chose de nouveau",
+     "g": "Partage un fait ou une compétence appris récemment et comment tu l'as découvert.",
+     "p": [
+      "Chacun apprend du nouveau chaque semaine, souvent sans s'en rendre compte.",
+      "Raconter comment tu l'as appris rend l'histoire personnelle.",
+      "Celui qui écoute peut demander ce qui t'a le plus surpris."
+     ],
+     "q": "Qu'as-tu appris de nouveau récemment ?",
+     "c": "Demande à quelqu'un ce qu'il a appris cette semaine et pose une relance."
+    },
+    "it": {
+     "t": "Imparare qualcosa di nuovo oggi",
+     "g": "Condividi un fatto o un'abilità appresi di recente e come li hai scoperti.",
+     "p": [
+      "Tutti impariamo qualcosa di nuovo ogni settimana, spesso senza accorgercene.",
+      "Raccontare come l'hai imparato rende la storia personale.",
+      "Chi ascolta può chiedere cosa ti ha sorpreso di più."
+     ],
+     "q": "Cosa hai imparato di nuovo di recente?",
+     "c": "Chiedi a qualcuno cosa ha imparato questa settimana e fai una domanda di approfondimento."
+    },
+    "pt": {
+     "t": "Aprender algo novo hoje",
+     "g": "Partilha um facto ou competência que aprendeste há pouco e como descobriste.",
+     "p": [
+      "Todos aprendemos algo novo cada semana, muitas vezes sem darmos por isso.",
+      "Contar como aprendeste torna a história pessoal.",
+      "Quem ouve pode perguntar o que mais te surpreendeu."
+     ],
+     "q": "O que de novo aprendeste recentemente?",
+     "c": "Pergunta a alguém o que aprendeu esta semana e faz uma pergunta de seguimento."
+    },
+    "pt_BR": {
+     "t": "Aprender algo novo hoje",
+     "g": "Compartilhe um fato ou habilidade que aprendeu há pouco e como descobriu.",
+     "p": [
+      "Todos aprendemos algo novo toda semana, muitas vezes sem perceber.",
+      "Contar como você aprendeu torna a história pessoal.",
+      "Quem ouve pode perguntar o que mais surpreendeu você."
+     ],
+     "q": "O que de novo você aprendeu recentemente?",
+     "c": "Pergunte a alguém o que aprendeu esta semana e faça uma pergunta de acompanhamento."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Avoiding advice too quickly",
+     "g": "See why people often want to be heard before they want solutions.",
+     "p": [
+      "Jumping to advice can feel like 'stop talking about it'.",
+      "First listen, then ask 'Do you want ideas or just an ear?'",
+      "Often people already know their answer and need space to find it."
+     ],
+     "q": "When someone gave you advice too soon, how did it feel?",
+     "c": "Before giving advice today, ask 'Would you like ideas, or just to talk?'"
+    },
+    "de": {
+     "t": "Nicht zu schnell Ratschläge geben",
+     "g": "Erkenne, warum Menschen oft erst gehört werden wollen, bevor sie Lösungen möchten.",
+     "p": [
+      "Schnelle Ratschläge können klingen wie 'hör auf, davon zu reden'.",
+      "Erst zuhören, dann fragen: 'Willst du Ideen oder nur ein offenes Ohr?'",
+      "Oft kennen Menschen ihre Antwort schon und brauchen Raum, sie zu finden."
+     ],
+     "q": "Wie fühlte es sich an, als dir jemand zu früh einen Rat gab?",
+     "c": "Frag heute vor einem Rat: 'Möchtest du Ideen oder einfach reden?'"
+    },
+    "es": {
+     "t": "Evitar dar consejos demasiado pronto",
+     "g": "Ve por qué la gente suele querer ser escuchada antes que recibir soluciones.",
+     "p": [
+      "Saltar al consejo puede sonar a 'deja de hablar de eso'.",
+      "Primero escucha, luego pregunta '¿Quieres ideas o solo que te escuche?'",
+      "A menudo ya saben su respuesta y necesitan espacio para hallarla."
+     ],
+     "q": "¿Cómo te sentó cuando alguien te dio un consejo demasiado pronto?",
+     "c": "Antes de aconsejar hoy, pregunta '¿Quieres ideas o solo hablar?'"
+    },
+    "fr": {
+     "t": "Éviter les conseils trop vite",
+     "g": "Vois pourquoi les gens veulent souvent être entendus avant d'avoir des solutions.",
+     "p": [
+      "Donner un conseil trop vite peut sonner comme 'arrête d'en parler'.",
+      "D'abord écouter, puis demander 'Tu veux des idées ou juste une oreille ?'",
+      "Souvent, on connaît déjà sa réponse et on a besoin d'espace pour la trouver."
+     ],
+     "q": "Comment t'es-tu senti quand on t'a conseillé trop tôt ?",
+     "c": "Avant de conseiller aujourd'hui, demande 'Tu veux des idées ou juste parler ?'"
+    },
+    "it": {
+     "t": "Evitare consigli troppo in fretta",
+     "g": "Scopri perché spesso le persone vogliono essere ascoltate prima di volere soluzioni.",
+     "p": [
+      "Dare subito un consiglio può suonare come 'smetti di parlarne'.",
+      "Prima ascolta, poi chiedi 'Vuoi idee o solo qualcuno che ascolti?'",
+      "Spesso conosciamo già la risposta e serve spazio per trovarla."
+     ],
+     "q": "Come ti sei sentito quando qualcuno ti ha dato un consiglio troppo presto?",
+     "c": "Prima di consigliare oggi, chiedi 'Vuoi idee o solo parlare?'"
+    },
+    "pt": {
+     "t": "Evitar conselhos cedo demais",
+     "g": "Percebe porque as pessoas querem muitas vezes ser ouvidas antes de quererem soluções.",
+     "p": [
+      "Saltar logo para o conselho pode soar a 'pára de falar disso'.",
+      "Primeiro ouve, depois pergunta 'Queres ideias ou só alguém que oiça?'",
+      "Muitas vezes já sabem a resposta e precisam de espaço para a encontrar."
+     ],
+     "q": "Como te sentiste quando alguém te deu um conselho cedo demais?",
+     "c": "Antes de aconselhares hoje, pergunta 'Queres ideias ou só falar?'"
+    },
+    "pt_BR": {
+     "t": "Evitar conselhos cedo demais",
+     "g": "Entenda por que as pessoas muitas vezes querem ser ouvidas antes de querer soluções.",
+     "p": [
+      "Pular direto para o conselho pode soar como 'pare de falar disso'.",
+      "Primeiro ouça, depois pergunte 'Você quer ideias ou só alguém que ouça?'",
+      "Muitas vezes a pessoa já sabe a resposta e precisa de espaço para achar."
+     ],
+     "q": "Como você se sentiu quando alguém deu um conselho cedo demais?",
+     "c": "Antes de aconselhar hoje, pergunte 'Você quer ideias ou só conversar?'"
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A good book or film lately",
+     "g": "Talk about a story you enjoyed and what stayed with you.",
+     "p": [
+      "Stories we love reveal our values and tastes.",
+      "Describing a scene or character makes it memorable for the listener.",
+      "Listeners can ask who they would recommend it to."
+     ],
+     "q": "What book or film did you enjoy lately, and what stayed with you?",
+     "c": "Ask someone for a story they loved and what moment stuck with them."
+    },
+    "de": {
+     "t": "Ein gutes Buch oder ein Film",
+     "g": "Sprich über eine Geschichte, die dir gefiel und was dir im Gedächtnis blieb.",
+     "p": [
+      "Geschichten, die wir lieben, zeigen unsere Werte und unseren Geschmack.",
+      "Eine Szene oder Figur zu beschreiben macht sie für Zuhörer einprägsam.",
+      "Zuhörer können fragen, wem du sie empfehlen würdest."
+     ],
+     "q": "Welches Buch oder welchen Film mochtest du zuletzt, und was blieb hängen?",
+     "c": "Frag jemanden nach einer geliebten Geschichte und welcher Moment haften blieb."
+    },
+    "es": {
+     "t": "Un buen libro o película",
+     "g": "Habla de una historia que disfrutaste y lo que te quedó.",
+     "p": [
+      "Las historias que amamos revelan nuestros valores y gustos.",
+      "Describir una escena o personaje lo hace memorable para quien escucha.",
+      "Quien escucha puede preguntar a quién se la recomendarías."
+     ],
+     "q": "¿Qué libro o película disfrutaste últimamente y qué te quedó?",
+     "c": "Pregunta a alguien por una historia que amó y qué momento se le quedó."
+    },
+    "fr": {
+     "t": "Un bon livre ou film récent",
+     "g": "Parle d'une histoire que tu as aimée et de ce qui t'est resté.",
+     "p": [
+      "Les histoires que l'on aime révèlent nos valeurs et nos goûts.",
+      "Décrire une scène ou un personnage la rend mémorable pour l'auditeur.",
+      "Celui qui écoute peut demander à qui tu la recommanderais."
+     ],
+     "q": "Quel livre ou film as-tu aimé récemment, et qu'en as-tu retenu ?",
+     "c": "Demande à quelqu'un une histoire qu'il a adorée et quel moment l'a marqué."
+    },
+    "it": {
+     "t": "Un bel libro o film di recente",
+     "g": "Parla di una storia che ti è piaciuta e di cosa ti è rimasto.",
+     "p": [
+      "Le storie che amiamo rivelano i nostri valori e gusti.",
+      "Descrivere una scena o un personaggio lo rende memorabile per chi ascolta.",
+      "Chi ascolta può chiedere a chi la consiglieresti."
+     ],
+     "q": "Quale libro o film ti è piaciuto di recente, e cosa ti è rimasto?",
+     "c": "Chiedi a qualcuno una storia che ha amato e quale momento gli è rimasto."
+    },
+    "pt": {
+     "t": "Um bom livro ou filme recente",
+     "g": "Fala de uma história de que gostaste e do que ficou contigo.",
+     "p": [
+      "As histórias que amamos revelam os nossos valores e gostos.",
+      "Descrever uma cena ou personagem torna-a memorável para quem ouve.",
+      "Quem ouve pode perguntar a quem a recomendarias."
+     ],
+     "q": "Que livro ou filme apreciaste ultimamente e o que ficou contigo?",
+     "c": "Pergunta a alguém por uma história que adorou e que momento ficou."
+    },
+    "pt_BR": {
+     "t": "Um bom livro ou filme recente",
+     "g": "Fale de uma história de que gostou e do que ficou com você.",
+     "p": [
+      "As histórias que amamos revelam nossos valores e gostos.",
+      "Descrever uma cena ou personagem a torna memorável para quem ouve.",
+      "Quem ouve pode perguntar a quem você recomendaria."
+     ],
+     "q": "Que livro ou filme você curtiu ultimamente e o que ficou com você?",
+     "c": "Pergunte a alguém por uma história que amou e que momento ficou."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Asking before sharing ideas",
+     "g": "Use phrases like 'May I share a thought?' before offering suggestions.",
+     "p": [
+      "Asking permission makes advice welcome instead of pushy.",
+      "The other person stays in charge of the conversation.",
+      "A simple 'no thanks' is also a fine answer."
+     ],
+     "q": "How would you ask permission before giving a friend a suggestion?",
+     "c": "Try 'May I share a thought?' once today before you offer an idea."
+    },
+    "de": {
+     "t": "Fragen, bevor du Ideen teilst",
+     "g": "Nutze Sätze wie 'Darf ich einen Gedanken teilen?', bevor du Vorschläge machst.",
+     "p": [
+      "Um Erlaubnis zu fragen macht Rat willkommen statt aufdringlich.",
+      "Der andere behält die Führung im Gespräch.",
+      "Ein einfaches 'nein danke' ist auch eine gute Antwort."
+     ],
+     "q": "Wie würdest du einen Freund um Erlaubnis für einen Vorschlag bitten?",
+     "c": "Probiere heute einmal 'Darf ich einen Gedanken teilen?', bevor du eine Idee nennst."
+    },
+    "es": {
+     "t": "Preguntar antes de compartir ideas",
+     "g": "Usa frases como '¿Puedo compartir una idea?' antes de dar sugerencias.",
+     "p": [
+      "Pedir permiso hace que el consejo sea bienvenido y no insistente.",
+      "La otra persona sigue al mando de la conversación.",
+      "Un simple 'no, gracias' también es una buena respuesta."
+     ],
+     "q": "¿Cómo pedirías permiso antes de dar una sugerencia a un amigo?",
+     "c": "Prueba hoy una vez '¿Puedo compartir una idea?' antes de ofrecer una."
+    },
+    "fr": {
+     "t": "Demander avant de proposer des idées",
+     "g": "Utilise des phrases comme 'Je peux partager une idée ?' avant de suggérer.",
+     "p": [
+      "Demander la permission rend le conseil bienvenu plutôt qu'insistant.",
+      "L'autre personne garde la main sur la conversation.",
+      "Un simple 'non merci' est aussi une bonne réponse."
+     ],
+     "q": "Comment demanderais-tu la permission avant de suggérer quelque chose à un ami ?",
+     "c": "Essaie une fois aujourd'hui 'Je peux partager une idée ?' avant de proposer."
+    },
+    "it": {
+     "t": "Chiedere prima di condividere idee",
+     "g": "Usa frasi come 'Posso condividere un pensiero?' prima di dare suggerimenti.",
+     "p": [
+      "Chiedere il permesso rende il consiglio gradito invece che invadente.",
+      "L'altra persona resta al comando della conversazione.",
+      "Un semplice 'no grazie' è una risposta valida."
+     ],
+     "q": "Come chiederesti il permesso prima di dare un suggerimento a un amico?",
+     "c": "Prova oggi una volta 'Posso condividere un pensiero?' prima di offrire un'idea."
+    },
+    "pt": {
+     "t": "Perguntar antes de partilhar ideias",
+     "g": "Usa frases como 'Posso partilhar uma ideia?' antes de dar sugestões.",
+     "p": [
+      "Pedir licença torna o conselho bem-vindo em vez de insistente.",
+      "A outra pessoa continua no comando da conversa.",
+      "Um simples 'não, obrigado' também é uma boa resposta."
+     ],
+     "q": "Como pedirias licença antes de dar uma sugestão a um amigo?",
+     "c": "Experimenta hoje uma vez 'Posso partilhar uma ideia?' antes de ofereceres uma."
+    },
+    "pt_BR": {
+     "t": "Perguntar antes de compartilhar ideias",
+     "g": "Use frases como 'Posso compartilhar uma ideia?' antes de dar sugestões.",
+     "p": [
+      "Pedir licença torna o conselho bem-vindo em vez de insistente.",
+      "A outra pessoa continua no comando da conversa.",
+      "Um simples 'não, obrigado' também é uma boa resposta."
+     ],
+     "q": "Como você pediria licença antes de dar uma sugestão a um amigo?",
+     "c": "Experimente hoje uma vez 'Posso compartilhar uma ideia?' antes de oferecer uma."
+    }
+   }
+  }
+ ]
+}

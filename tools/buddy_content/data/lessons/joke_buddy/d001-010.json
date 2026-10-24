@@ -1,0 +1,835 @@
+{
+ "topic": "joke_buddy",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to joke time",
+     "g": "Discover why light, kind humour brightens a day and what makes a joke friendly.",
+     "p": [
+      "Laughter relaxes us and makes every conversation a little warmer.",
+      "A clean joke is one that everybody can enjoy, from kids to grandparents.",
+      "Kind humour surprises us without hurting anyone."
+     ],
+     "q": "What kind of jokes make you smile the most?",
+     "c": "Challenge: notice one small funny thing today and tell me about it."
+    },
+    "de": {
+     "t": "Willkommen zur Witzezeit",
+     "g": "Entdecke, warum leichter, freundlicher Humor den Tag heller macht und was einen Witz sympathisch macht.",
+     "p": [
+      "Lachen entspannt uns und macht jedes Gespräch ein bisschen wärmer.",
+      "Ein sauberer Witz ist einer, über den alle lachen können, vom Kind bis zur Oma.",
+      "Freundlicher Humor überrascht uns, ohne jemandem wehzutun."
+     ],
+     "q": "Welche Art von Witzen bringt dich am meisten zum Schmunzeln?",
+     "c": "Aufgabe: Entdecke heute eine kleine lustige Sache und erzähl sie mir."
+    },
+    "es": {
+     "t": "Bienvenido a la hora de los chistes",
+     "g": "Descubre por qué el humor ligero y amable alegra el día y qué hace que un chiste sea simpático.",
+     "p": [
+      "La risa nos relaja y hace cada conversación un poco más cálida.",
+      "Un chiste limpio es el que todos pueden disfrutar, de niños a abuelos.",
+      "El humor amable nos sorprende sin herir a nadie."
+     ],
+     "q": "¿Qué tipo de chistes te hacen sonreír más?",
+     "c": "Reto: fíjate hoy en algo pequeño y gracioso y cuéntamelo."
+    },
+    "fr": {
+     "t": "Bienvenue à l'heure des blagues",
+     "g": "Découvre pourquoi l'humour léger et bienveillant égaie la journée et ce qui rend une blague sympa.",
+     "p": [
+      "Le rire nous détend et rend chaque conversation un peu plus chaleureuse.",
+      "Une blague propre est une blague dont tout le monde peut rire, des enfants aux grands-parents.",
+      "L'humour bienveillant nous surprend sans blesser personne."
+     ],
+     "q": "Quel genre de blagues te fait le plus sourire ?",
+     "c": "Défi : repère aujourd'hui un petit détail drôle et raconte-le-moi."
+    },
+    "it": {
+     "t": "Benvenuto all'ora delle barzellette",
+     "g": "Scopri perché l'umorismo leggero e gentile rallegra la giornata e cosa rende una barzelletta simpatica.",
+     "p": [
+      "La risata ci rilassa e rende ogni conversazione un po' più calda.",
+      "Una barzelletta pulita è una che tutti possono apprezzare, dai bimbi ai nonni.",
+      "L'umorismo gentile ci sorprende senza ferire nessuno."
+     ],
+     "q": "Che tipo di barzellette ti fanno sorridere di più?",
+     "c": "Sfida: nota oggi una piccola cosa buffa e raccontamela."
+    },
+    "pt": {
+     "t": "Bem-vindo à hora das piadas",
+     "g": "Descobre porque é que o humor leve e simpático alegra o dia e o que torna uma piada simpática.",
+     "p": [
+      "O riso relaxa-nos e torna cada conversa um pouco mais calorosa.",
+      "Uma piada limpa é aquela de que todos podem rir, de crianças a avós.",
+      "O humor simpático surpreende-nos sem magoar ninguém."
+     ],
+     "q": "Que tipo de piadas te fazem sorrir mais?",
+     "c": "Desafio: repara hoje numa coisa pequena e engraçada e conta-ma."
+    },
+    "pt_BR": {
+     "t": "Bem-vindo à hora das piadas",
+     "g": "Descubra por que o humor leve e gentil alegra o dia e o que faz uma piada ser simpática.",
+     "p": [
+      "O riso nos relaxa e deixa cada conversa um pouco mais calorosa.",
+      "Uma piada limpa é aquela que todo mundo pode curtir, de crianças a avós.",
+      "O humor gentil nos surpreende sem magoar ninguém."
+     ],
+     "q": "Que tipo de piada mais faz você sorrir?",
+     "c": "Desafio: repare hoje em uma coisinha engraçada e me conte."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your favourite joke",
+     "g": "Share a joke you love and discover what makes it work for you.",
+     "p": [
+      "Pick a joke you remember easily; that is often the sign of a great one.",
+      "Ask yourself: is it the surprise, the wordplay or the silly picture?",
+      "A favourite joke can be retold many times and still make us smile."
+     ],
+     "q": "What is your favourite joke, and who first told it to you?",
+     "c": "Challenge: tell your favourite joke to someone today, or write it down for me."
+    },
+    "de": {
+     "t": "Dein Lieblingswitz",
+     "g": "Teile einen Witz, den du liebst, und finde heraus, warum er für dich funktioniert.",
+     "p": [
+      "Wähle einen Witz, den du dir leicht merkst; das ist oft ein gutes Zeichen.",
+      "Frag dich: Ist es die Überraschung, das Wortspiel oder das alberne Bild?",
+      "Ein Lieblingswitz lässt sich oft erzählen und bringt uns trotzdem zum Lächeln."
+     ],
+     "q": "Was ist dein Lieblingswitz und wer hat ihn dir zuerst erzählt?",
+     "c": "Aufgabe: Erzähl heute jemandem deinen Lieblingswitz oder schreib ihn mir auf."
+    },
+    "es": {
+     "t": "Tu chiste favorito",
+     "g": "Comparte un chiste que te encante y descubre por qué funciona para ti.",
+     "p": [
+      "Elige un chiste que recuerdes con facilidad; suele ser señal de uno bueno.",
+      "Pregúntate: ¿es la sorpresa, el juego de palabras o la imagen tonta?",
+      "Un chiste favorito se puede repetir mil veces y aun así nos hace sonreír."
+     ],
+     "q": "¿Cuál es tu chiste favorito y quién te lo contó por primera vez?",
+     "c": "Reto: cuéntale hoy tu chiste favorito a alguien o escríbemelo."
+    },
+    "fr": {
+     "t": "Ta blague préférée",
+     "g": "Partage une blague que tu adores et découvre pourquoi elle marche pour toi.",
+     "p": [
+      "Choisis une blague dont tu te souviens facilement : c'est souvent bon signe.",
+      "Demande-toi : est-ce la surprise, le jeu de mots ou l'image rigolote ?",
+      "Une blague préférée se raconte cent fois et nous fait toujours sourire."
+     ],
+     "q": "Quelle est ta blague préférée et qui te l'a racontée la première fois ?",
+     "c": "Défi : raconte ta blague préférée à quelqu'un aujourd'hui ou écris-la-moi."
+    },
+    "it": {
+     "t": "La tua barzelletta preferita",
+     "g": "Condividi una barzelletta che ami e scopri perché funziona per te.",
+     "p": [
+      "Scegli una barzelletta che ricordi facilmente: spesso è segno di una buona.",
+      "Chiediti: è la sorpresa, il gioco di parole o l'immagine buffa?",
+      "Una barzelletta preferita si può raccontare mille volte e far sorridere ancora."
+     ],
+     "q": "Qual è la tua barzelletta preferita e chi te l'ha raccontata per primo?",
+     "c": "Sfida: racconta oggi la tua barzelletta preferita a qualcuno o scrivimela."
+    },
+    "pt": {
+     "t": "A tua piada preferida",
+     "g": "Partilha uma piada de que gostas e descobre porque é que funciona para ti.",
+     "p": [
+      "Escolhe uma piada de que te lembres bem; costuma ser sinal de uma boa.",
+      "Pergunta-te: é a surpresa, o jogo de palavras ou a imagem tola?",
+      "Uma piada preferida conta-se mil vezes e continua a fazer sorrir."
+     ],
+     "q": "Qual é a tua piada preferida e quem ta contou pela primeira vez?",
+     "c": "Desafio: conta hoje a tua piada preferida a alguém ou escreve-ma."
+    },
+    "pt_BR": {
+     "t": "Sua piada favorita",
+     "g": "Compartilhe uma piada que você ama e descubra por que ela funciona para você.",
+     "p": [
+      "Escolha uma piada que você lembra fácil; isso costuma ser sinal de uma boa.",
+      "Pergunte-se: é a surpresa, o jogo de palavras ou a imagem boba?",
+      "Uma piada favorita pode ser contada mil vezes e ainda fazer sorrir."
+     ],
+     "q": "Qual é a sua piada favorita e quem contou ela para você pela primeira vez?",
+     "c": "Desafio: conte hoje sua piada favorita para alguém ou escreva para mim."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is a pun?",
+     "g": "Learn how a word with two meanings creates a playful surprise.",
+     "p": [
+      "A pun plays with words that sound alike or have two meanings.",
+      "Example: I used to be a banker, but I lost interest. Interest has two meanings.",
+      "Puns often earn a groan first and a smile second, and both are good."
+     ],
+     "q": "Can you think of a word that has two meanings?",
+     "c": "Challenge: find one pun in a song, a sign or a headline today."
+    },
+    "de": {
+     "t": "Was ist ein Wortspiel?",
+     "g": "Lerne, wie ein Wort mit zwei Bedeutungen eine spielerische Überraschung schafft.",
+     "p": [
+      "Ein Wortspiel spielt mit Wörtern, die ähnlich klingen oder zwei Bedeutungen haben.",
+      "Beispiel: Was ist grün und klopft an die Tür? Ein Klopfsalat! (Kopfsalat)",
+      "Wortspiele ernten erst ein Stöhnen und dann ein Lächeln, beides ist gut."
+     ],
+     "q": "Fällt dir ein Wort mit zwei Bedeutungen ein?",
+     "c": "Aufgabe: Finde heute ein Wortspiel in einem Lied, auf einem Schild oder in einer Schlagzeile."
+    },
+    "es": {
+     "t": "¿Qué es un juego de palabras?",
+     "g": "Aprende cómo una palabra con dos sentidos crea una sorpresa divertida.",
+     "p": [
+      "Un juego de palabras usa términos que suenan igual o tienen dos significados.",
+      "Ejemplo: ¿Cómo se despiden los químicos? Ácido un placer. (Hasta un placer)",
+      "Los juegos de palabras ganan primero un suspiro y luego una sonrisa; ambos valen."
+     ],
+     "q": "¿Se te ocurre una palabra con dos significados?",
+     "c": "Reto: encuentra hoy un juego de palabras en una canción, un cartel o un titular."
+    },
+    "fr": {
+     "t": "C'est quoi un jeu de mots ?",
+     "g": "Apprends comment un mot à deux sens crée une surprise amusante.",
+     "p": [
+      "Un jeu de mots joue avec des mots qui se ressemblent ou qui ont deux sens.",
+      "Exemple : quel est le comble pour un électricien ? De ne pas être au courant !",
+      "Un jeu de mots fait d'abord soupirer, puis sourire : les deux sont très bien."
+     ],
+     "q": "Connais-tu un mot qui a deux sens ?",
+     "c": "Défi : trouve aujourd'hui un jeu de mots dans une chanson, une pancarte ou un titre."
+    },
+    "it": {
+     "t": "Che cos'è un gioco di parole?",
+     "g": "Impara come una parola con due significati crea una sorpresa giocosa.",
+     "p": [
+      "Un gioco di parole usa termini che suonano simili o hanno due significati.",
+      "Esempio: qual è il colmo per un elettricista? Avere un figlio poco brillante!",
+      "I giochi di parole fanno prima sospirare e poi sorridere: vanno bene entrambi."
+     ],
+     "q": "Ti viene in mente una parola con due significati?",
+     "c": "Sfida: trova oggi un gioco di parole in una canzone, un cartello o un titolo."
+    },
+    "pt": {
+     "t": "O que é um trocadilho?",
+     "g": "Aprende como uma palavra com dois sentidos cria uma surpresa divertida.",
+     "p": [
+      "Um trocadilho brinca com palavras que soam parecido ou têm dois significados.",
+      "Exemplo: porque é que o livro de matemática anda triste? Tem demasiados problemas!",
+      "Os trocadilhos arrancam primeiro um suspiro e depois um sorriso; ambos servem."
+     ],
+     "q": "Lembras-te de uma palavra com dois significados?",
+     "c": "Desafio: encontra hoje um trocadilho numa canção, num cartaz ou numa manchete."
+    },
+    "pt_BR": {
+     "t": "O que é um trocadilho?",
+     "g": "Aprenda como uma palavra com dois sentidos cria uma surpresa divertida.",
+     "p": [
+      "Um trocadilho brinca com palavras que soam parecido ou têm dois significados.",
+      "Exemplo: por que o livro de matemática vive triste? Porque tem muitos problemas!",
+      "Trocadilhos rendem primeiro um suspiro e depois um sorriso; os dois valem."
+     ],
+     "q": "Você lembra de uma palavra com dois significados?",
+     "c": "Desafio: ache hoje um trocadilho em uma música, uma placa ou uma manchete."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Knock-knock jokes",
+     "g": "Learn the classic call-and-response format and how to deliver it.",
+     "p": [
+      "The pattern: Knock knock. Who's there? A name. Name who? Then the punchline.",
+      "Example: Lettuce. Lettuce who? Lettuce in, it is cold out here!",
+      "Say the first lines slowly, then deliver the last line with a grin."
+     ],
+     "q": "Do you know a knock-knock joke, or shall we invent one together?",
+     "c": "Challenge: invent a knock-knock joke using your own name."
+    },
+    "de": {
+     "t": "Klopf-klopf-Witze",
+     "g": "Lerne das klassische Frage-Antwort-Spiel und wie man es vorträgt.",
+     "p": [
+      "Das Muster: Klopf, klopf! Wer ist da? Ein Name. Name wer? Dann die Pointe.",
+      "Beispiel: Eis. Eis wer? Eiskalt ist es hier draußen, lass mich rein!",
+      "Sprich die ersten Zeilen langsam und bring die letzte mit einem Grinsen."
+     ],
+     "q": "Kennst du einen Klopf-klopf-Witz oder erfinden wir zusammen einen?",
+     "c": "Aufgabe: Erfinde einen Klopf-klopf-Witz mit deinem eigenen Namen."
+    },
+    "es": {
+     "t": "Chistes de toc, toc",
+     "g": "Aprende el clásico formato de pregunta y respuesta y cómo contarlo.",
+     "p": [
+      "El patrón: Toc, toc. ¿Quién es? Una palabra. ¿Quién? Y luego el remate.",
+      "Ejemplo: Hay. ¿Hay quién? ¡Hay que abrir la puerta, que hace frío!",
+      "Di las primeras líneas despacio y suelta la última con una sonrisa."
+     ],
+     "q": "¿Conoces algún chiste de toc, toc o inventamos uno juntos?",
+     "c": "Reto: inventa un chiste de toc, toc con tu propio nombre."
+    },
+    "fr": {
+     "t": "Les blagues toc toc",
+     "g": "Apprends le format classique questions-réponses et comment le raconter.",
+     "p": [
+      "Le schéma : toc toc. Qui est là ? Un prénom. Quel prénom ? Puis la chute.",
+      "Exemple : Jean. Jean qui ? Jean-ai marre d'attendre dehors !",
+      "Dis les premières lignes lentement, puis lance la dernière avec un sourire."
+     ],
+     "q": "Connais-tu une blague toc toc ou on en invente une ensemble ?",
+     "c": "Défi : invente une blague toc toc avec ton propre prénom."
+    },
+    "it": {
+     "t": "Le barzellette toc toc",
+     "g": "Impara il classico schema domanda e risposta e come raccontarlo.",
+     "p": [
+      "Lo schema: toc toc. Chi è? Un nome. Chi? E poi la battuta finale.",
+      "Esempio: Ape. Ape chi? Ape-ri la porta, fa freddo!",
+      "Di' le prime battute lentamente e lancia l'ultima con un sorriso."
+     ],
+     "q": "Conosci una barzelletta toc toc o ne inventiamo una insieme?",
+     "c": "Sfida: inventa una barzelletta toc toc con il tuo nome."
+    },
+    "pt": {
+     "t": "Piadas toc toc",
+     "g": "Aprende o clássico formato de pergunta e resposta e como o contar.",
+     "p": [
+      "O padrão: toc toc. Quem é? Um nome. Quem? E depois a graça final.",
+      "Exemplo: Ana. Ana quem? Ana-nás que tu me ias dar!",
+      "Diz as primeiras linhas devagar e solta a última com um sorriso."
+     ],
+     "q": "Conheces alguma piada toc toc ou inventamos uma juntos?",
+     "c": "Desafio: inventa uma piada toc toc com o teu próprio nome."
+    },
+    "pt_BR": {
+     "t": "Piadas de toc toc",
+     "g": "Aprenda o clássico formato de pergunta e resposta e como contar.",
+     "p": [
+      "O padrão: toc toc. Quem é? Um nome. Quem? E depois a tirada final.",
+      "Exemplo: Uva. Uva quem? Uva-mos abrir esta porta, está frio aqui!",
+      "Diga as primeiras falas devagar e solte a última com um sorriso."
+     ],
+     "q": "Você conhece alguma piada de toc toc ou vamos inventar uma juntos?",
+     "c": "Desafio: invente uma piada de toc toc com o seu próprio nome."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Simple riddles",
+     "g": "Find out what makes a riddle: a clue, a twist and a satisfying answer.",
+     "p": [
+      "A riddle describes something without naming it.",
+      "The clues point toward the answer but hide it just enough.",
+      "The best moment is the 'aha!' when the answer finally clicks."
+     ],
+     "q": "Riddle: what has hands but cannot clap? Any guess?",
+     "c": "Challenge: ask someone a riddle today and watch the 'aha!' moment."
+    },
+    "de": {
+     "t": "Einfache Rätsel",
+     "g": "Finde heraus, was ein Rätsel ausmacht: Hinweis, Dreh und eine schöne Auflösung.",
+     "p": [
+      "Ein Rätsel beschreibt etwas, ohne es beim Namen zu nennen.",
+      "Die Hinweise führen zur Lösung, verstecken sie aber gerade genug.",
+      "Der schönste Moment ist das Aha-Erlebnis, wenn die Lösung klickt."
+     ],
+     "q": "Rätsel: Was hat Zeiger, aber keine Finger? Eine Idee?",
+     "c": "Aufgabe: Stell heute jemandem ein Rätsel und genieß das Aha-Erlebnis."
+    },
+    "es": {
+     "t": "Adivinanzas sencillas",
+     "g": "Descubre qué hace una adivinanza: una pista, un giro y una respuesta satisfactoria.",
+     "p": [
+      "Una adivinanza describe algo sin decir su nombre.",
+      "Las pistas apuntan a la respuesta, pero la esconden lo justo.",
+      "El mejor momento es el '¡ajá!' cuando por fin encaja la respuesta."
+     ],
+     "q": "Adivinanza: tiene manecillas pero no manos. ¿Qué es?",
+     "c": "Reto: plantea hoy una adivinanza a alguien y disfruta de su '¡ajá!'."
+    },
+    "fr": {
+     "t": "Devinettes simples",
+     "g": "Découvre ce qui fait une devinette : un indice, un détour et une réponse satisfaisante.",
+     "p": [
+      "Une devinette décrit quelque chose sans le nommer.",
+      "Les indices mènent à la réponse mais la cachent juste assez.",
+      "Le meilleur moment est le « ah ! » quand la réponse devient claire."
+     ],
+     "q": "Devinette : j'ai des aiguilles mais je ne couds pas. Qui suis-je ?",
+     "c": "Défi : pose une devinette à quelqu'un aujourd'hui et savoure son « ah ! »."
+    },
+    "it": {
+     "t": "Indovinelli semplici",
+     "g": "Scopri cosa rende un indovinello: un indizio, una svolta e una risposta soddisfacente.",
+     "p": [
+      "Un indovinello descrive qualcosa senza nominarlo.",
+      "Gli indizi portano alla risposta ma la nascondono il giusto.",
+      "Il momento più bello è l'«ah!» quando la risposta finalmente scatta."
+     ],
+     "q": "Indovinello: ho le lancette ma non ho mani. Chi sono?",
+     "c": "Sfida: fai oggi un indovinello a qualcuno e goditi il suo «ah!»."
+    },
+    "pt": {
+     "t": "Adivinhas simples",
+     "g": "Descobre o que faz uma adivinha: uma pista, uma reviravolta e uma resposta satisfatória.",
+     "p": [
+      "Uma adivinha descreve algo sem dizer o nome.",
+      "As pistas apontam para a resposta, mas escondem-na quanto baste.",
+      "O melhor momento é o 'ah!' quando a resposta finalmente encaixa."
+     ],
+     "q": "Adivinha: tenho ponteiros mas não tenho mãos. O que sou?",
+     "c": "Desafio: faz hoje uma adivinha a alguém e aproveita o seu 'ah!'."
+    },
+    "pt_BR": {
+     "t": "Adivinhas simples",
+     "g": "Descubra o que faz uma adivinha: uma pista, uma virada e uma resposta satisfatória.",
+     "p": [
+      "Uma adivinha descreve algo sem dizer o nome.",
+      "As pistas apontam para a resposta, mas escondem ela só o bastante.",
+      "O melhor momento é o 'ah!' quando a resposta finalmente encaixa."
+     ],
+     "q": "Adivinha: tenho ponteiros mas não tenho mãos. O que sou?",
+     "c": "Desafio: faça hoje uma adivinha para alguém e curta o 'ah!' dele."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Laughing with, not at",
+     "g": "Learn the golden rule of kind humour: everyone should be able to laugh along.",
+     "p": [
+      "Good jokes invite people in; they never push anyone out.",
+      "Choose targets that are safe: objects, animals, silly situations or yourself, gently.",
+      "If someone does not smile, shift gently; kindness always beats the joke."
+     ],
+     "q": "Which kinds of jokes have made you feel included?",
+     "c": "Challenge: tell one joke today that everyone present could enjoy."
+    },
+    "de": {
+     "t": "Mit anderen lachen, nicht über sie",
+     "g": "Lerne die goldene Regel freundlichen Humors: Alle sollen mitlachen können.",
+     "p": [
+      "Gute Witze laden ein; sie schließen niemanden aus.",
+      "Wähle sichere Themen: Dinge, Tiere, alberne Situationen oder dich selbst, liebevoll.",
+      "Wenn jemand nicht lächelt, wechsle freundlich das Thema; Freundlichkeit schlägt jeden Witz."
+     ],
+     "q": "Welche Witze haben dir das Gefühl gegeben, dazuzugehören?",
+     "c": "Aufgabe: Erzähl heute einen Witz, den alle Anwesenden genießen könnten."
+    },
+    "es": {
+     "t": "Reír con, no de",
+     "g": "Aprende la regla de oro del humor amable: todos deben poder reír juntos.",
+     "p": [
+      "Los buenos chistes invitan; nunca dejan a nadie fuera.",
+      "Elige temas seguros: objetos, animales, situaciones tontas o tú mismo, con cariño.",
+      "Si alguien no sonríe, cambia con suavidad; la amabilidad vale más que el chiste."
+     ],
+     "q": "¿Qué tipo de chistes te han hecho sentir parte del grupo?",
+     "c": "Reto: cuenta hoy un chiste que todos los presentes puedan disfrutar."
+    },
+    "fr": {
+     "t": "Rire avec, pas contre",
+     "g": "Apprends la règle d'or de l'humour bienveillant : tout le monde doit pouvoir rire avec toi.",
+     "p": [
+      "Les bonnes blagues invitent ; elles n'excluent jamais personne.",
+      "Choisis des cibles sûres : objets, animaux, situations cocasses ou toi-même, avec douceur.",
+      "Si quelqu'un ne sourit pas, change de sujet gentiment ; la gentillesse l'emporte sur la blague."
+     ],
+     "q": "Quelles blagues t'ont fait te sentir inclus ?",
+     "c": "Défi : raconte aujourd'hui une blague dont tous les présents peuvent profiter."
+    },
+    "it": {
+     "t": "Ridere con, non di",
+     "g": "Impara la regola d'oro dell'umorismo gentile: tutti devono poter ridere insieme.",
+     "p": [
+      "Le buone battute invitano; non lasciano mai nessuno fuori.",
+      "Scegli bersagli sicuri: oggetti, animali, situazioni buffe o te stesso, con dolcezza.",
+      "Se qualcuno non sorride, cambia con garbo; la gentilezza vale più della battuta."
+     ],
+     "q": "Quali barzellette ti hanno fatto sentire parte del gruppo?",
+     "c": "Sfida: racconta oggi una barzelletta che tutti i presenti possano apprezzare."
+    },
+    "pt": {
+     "t": "Rir com, não de",
+     "g": "Aprende a regra de ouro do humor simpático: todos devem poder rir juntos.",
+     "p": [
+      "As boas piadas convidam; nunca deixam ninguém de fora.",
+      "Escolhe alvos seguros: objetos, animais, situações tolas ou tu próprio, com carinho.",
+      "Se alguém não sorrir, muda com delicadeza; a simpatia vale mais do que a piada."
+     ],
+     "q": "Que piadas te fizeram sentir parte do grupo?",
+     "c": "Desafio: conta hoje uma piada de que todos os presentes possam gostar."
+    },
+    "pt_BR": {
+     "t": "Rir com, não de",
+     "g": "Aprenda a regra de ouro do humor gentil: todo mundo deve poder rir junto.",
+     "p": [
+      "Boas piadas convidam; nunca deixam ninguém de fora.",
+      "Escolha alvos seguros: objetos, animais, situações bobas ou você mesmo, com carinho.",
+      "Se alguém não sorrir, mude com jeitinho; a gentileza vale mais que a piada."
+     ],
+     "q": "Que piadas fizeram você se sentir parte do grupo?",
+     "c": "Desafio: conte hoje uma piada que todos os presentes possam curtir."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Animal jokes",
+     "g": "Enjoy gentle jokes about animals, from cows that moo to fish that swim in schools.",
+     "p": [
+      "Animals make perfect joke heroes because they are funny and harmless.",
+      "Example: Why do fish live in salt water? Because pepper makes them sneeze!",
+      "Give the animal a human habit and you have a joke ready."
+     ],
+     "q": "Which animal do you find the funniest?",
+     "c": "Challenge: invent a joke where an animal does something very human."
+    },
+    "de": {
+     "t": "Tierwitze",
+     "g": "Genieße freundliche Witze über Tiere, von muhenden Kühen bis zu Fischen im Schwarm.",
+     "p": [
+      "Tiere sind perfekte Witzfiguren, denn sie sind lustig und harmlos.",
+      "Beispiel: Warum leben Fische im Salzwasser? Weil Pfeffer sie zum Niesen bringt!",
+      "Gib dem Tier eine menschliche Angewohnheit und der Witz ist fast fertig."
+     ],
+     "q": "Welches Tier findest du am lustigsten?",
+     "c": "Aufgabe: Erfinde einen Witz, in dem ein Tier etwas sehr Menschliches tut."
+    },
+    "es": {
+     "t": "Chistes de animales",
+     "g": "Disfruta de chistes amables sobre animales, desde vacas que mugen hasta peces en cardumen.",
+     "p": [
+      "Los animales son héroes perfectos de chiste: graciosos e inofensivos.",
+      "Ejemplo: ¿Por qué los peces viven en agua salada? ¡Porque la pimienta les da estornudos!",
+      "Dale al animal una costumbre humana y el chiste está casi listo."
+     ],
+     "q": "¿Qué animal te parece el más gracioso?",
+     "c": "Reto: inventa un chiste en el que un animal haga algo muy humano."
+    },
+    "fr": {
+     "t": "Blagues d'animaux",
+     "g": "Savoure des blagues douces sur les animaux, des vaches qui meuglent aux poissons en banc.",
+     "p": [
+      "Les animaux sont des héros de blague parfaits : drôles et inoffensifs.",
+      "Exemple : pourquoi les poissons vivent-ils dans l'eau salée ? Parce que le poivre les fait éternuer !",
+      "Donne à l'animal une habitude humaine et la blague est presque prête."
+     ],
+     "q": "Quel animal trouves-tu le plus drôle ?",
+     "c": "Défi : invente une blague où un animal fait quelque chose de très humain."
+    },
+    "it": {
+     "t": "Barzellette sugli animali",
+     "g": "Goditi barzellette gentili sugli animali, dalle mucche che muggiscono ai pesci in branco.",
+     "p": [
+      "Gli animali sono protagonisti perfetti: buffi e innocui.",
+      "Esempio: perché i pesci vivono nell'acqua salata? Perché il pepe li fa starnutire!",
+      "Dai all'animale un'abitudine umana e la barzelletta è quasi pronta."
+     ],
+     "q": "Quale animale trovi più divertente?",
+     "c": "Sfida: inventa una barzelletta in cui un animale fa qualcosa di molto umano."
+    },
+    "pt": {
+     "t": "Piadas de animais",
+     "g": "Diverte-te com piadas simpáticas sobre animais, das vacas que mugem aos peixes em cardume.",
+     "p": [
+      "Os animais são heróis perfeitos de piada: engraçados e inofensivos.",
+      "Exemplo: porque é que os peixes vivem na água salgada? Porque a pimenta os faz espirrar!",
+      "Dá ao animal um hábito humano e a piada fica quase pronta."
+     ],
+     "q": "Que animal achas mais engraçado?",
+     "c": "Desafio: inventa uma piada em que um animal faz algo muito humano."
+    },
+    "pt_BR": {
+     "t": "Piadas de animais",
+     "g": "Divirta-se com piadas gentis sobre animais, das vacas que mugem aos peixes em cardume.",
+     "p": [
+      "Animais são heróis perfeitos de piada: engraçados e inofensivos.",
+      "Exemplo: por que os peixes vivem na água salgada? Porque a pimenta faz eles espirrarem!",
+      "Dê ao animal um hábito humano e a piada fica quase pronta."
+     ],
+     "q": "Que animal você acha mais engraçado?",
+     "c": "Desafio: invente uma piada em que um animal faz algo bem humano."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The setup and the punchline",
+     "g": "Understand the two basic parts of a joke and how they work together.",
+     "p": [
+      "The setup paints a picture and builds a small expectation.",
+      "The punchline breaks that expectation with a surprise.",
+      "Short setups work best: every extra word delays the laugh."
+     ],
+     "q": "In this joke, which part is the setup: Why was the math book sad? It had too many problems.",
+     "c": "Challenge: take a joke you know and say its setup and punchline separately."
+    },
+    "de": {
+     "t": "Aufbau und Pointe",
+     "g": "Verstehe die zwei Grundteile eines Witzes und wie sie zusammenspielen.",
+     "p": [
+      "Der Aufbau malt ein Bild und weckt eine kleine Erwartung.",
+      "Die Pointe bricht diese Erwartung mit einer Überraschung.",
+      "Kurze Einleitungen wirken am besten: Jedes Extrawort verzögert das Lachen."
+     ],
+     "q": "Welcher Teil ist der Aufbau: Warum war das Mathebuch traurig? Es hatte zu viele Probleme.",
+     "c": "Aufgabe: Nimm einen bekannten Witz und sag Aufbau und Pointe getrennt."
+    },
+    "es": {
+     "t": "La preparación y el remate",
+     "g": "Entiende las dos partes básicas de un chiste y cómo trabajan juntas.",
+     "p": [
+      "La preparación pinta una imagen y crea una pequeña expectativa.",
+      "El remate rompe esa expectativa con una sorpresa.",
+      "Las preparaciones cortas funcionan mejor: cada palabra extra retrasa la risa."
+     ],
+     "q": "Si el libro de mates estaba triste porque tenía muchos problemas, ¿cuál es la preparación?",
+     "c": "Reto: toma un chiste que conozcas y di su preparación y su remate por separado."
+    },
+    "fr": {
+     "t": "La mise en place et la chute",
+     "g": "Comprends les deux parties de base d'une blague et comment elles travaillent ensemble.",
+     "p": [
+      "La mise en place dessine une image et crée une petite attente.",
+      "La chute casse cette attente avec une surprise.",
+      "Les débuts courts marchent le mieux : chaque mot en plus retarde le rire."
+     ],
+     "q": "Livre de maths triste car trop de problèmes : où est la mise en place, où est la chute ?",
+     "c": "Défi : prends une blague connue et dis sa mise en place et sa chute séparément."
+    },
+    "it": {
+     "t": "La preparazione e la battuta finale",
+     "g": "Capisci le due parti base di una barzelletta e come lavorano insieme.",
+     "p": [
+      "La preparazione dipinge un'immagine e crea una piccola attesa.",
+      "La battuta finale rompe quell'attesa con una sorpresa.",
+      "Le preparazioni brevi funzionano meglio: ogni parola in più ritarda la risata."
+     ],
+     "q": "Il libro di matematica era triste perché aveva troppi problemi: qual è la preparazione?",
+     "c": "Sfida: prendi una barzelletta che conosci e dì preparazione e finale separate."
+    },
+    "pt": {
+     "t": "A preparação e a graça final",
+     "g": "Percebe as duas partes básicas de uma piada e como trabalham em conjunto.",
+     "p": [
+      "A preparação pinta uma imagem e cria uma pequena expectativa.",
+      "A graça final quebra essa expectativa com uma surpresa.",
+      "As preparações curtas funcionam melhor: cada palavra a mais atrasa o riso."
+     ],
+     "q": "O livro de matemática anda triste por ter demasiados problemas: qual é a preparação?",
+     "c": "Desafio: pega numa piada que conheças e diz a preparação e a graça final em separado."
+    },
+    "pt_BR": {
+     "t": "A preparação e o final da piada",
+     "g": "Entenda as duas partes básicas de uma piada e como elas trabalham juntas.",
+     "p": [
+      "A preparação pinta uma imagem e cria uma pequena expectativa.",
+      "O final quebra essa expectativa com uma surpresa.",
+      "Preparações curtas funcionam melhor: cada palavra a mais atrasa a risada."
+     ],
+     "q": "O livro de matemática vive triste por ter muitos problemas: qual é a preparação?",
+     "c": "Desafio: pegue uma piada que você conhece e diga a preparação e o final separados."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Food puns",
+     "g": "Play with jokes about bread, cheese, fruit and vegetables.",
+     "p": [
+      "Food words are full of double meanings, which makes them easy to play with.",
+      "Example: Why did the cookie go to the doctor? It felt crummy!",
+      "Example: What do you call cheese that is not yours? Nacho cheese!"
+     ],
+     "q": "What is your favourite food, and can you make a pun about it?",
+     "c": "Challenge: make up one pun about the next meal you eat."
+    },
+    "de": {
+     "t": "Essens-Wortspiele",
+     "g": "Spiele mit Witzen über Brot, Käse, Obst und Gemüse.",
+     "p": [
+      "Essenswörter haben oft doppelte Bedeutungen und sind leicht zu verdrehen.",
+      "Beispiel: Was ist gelb und schießt durch den Wald? Banana Joe!",
+      "Beispiel: Was sagt die Wurst zum Brot? Wir sind ein gutes Paar, wir haben Biss!"
+     ],
+     "q": "Was ist dein Lieblingsessen und fällt dir ein Wortspiel dazu ein?",
+     "c": "Aufgabe: Erfinde ein Wortspiel zu deiner nächsten Mahlzeit."
+    },
+    "es": {
+     "t": "Juegos de palabras con comida",
+     "g": "Juega con chistes sobre pan, queso, fruta y verdura.",
+     "p": [
+      "Las palabras de comida tienen muchos dobles sentidos y se prestan al juego.",
+      "Ejemplo: ¿Qué le dice un huevo a una sartén? ¡Me tienes frito!",
+      "Ejemplo: ¿Por qué los espaguetis no juegan al escondite? ¡Porque siempre se enredan!"
+     ],
+     "q": "¿Cuál es tu comida favorita y se te ocurre un juego de palabras con ella?",
+     "c": "Reto: inventa un juego de palabras sobre tu próxima comida."
+    },
+    "fr": {
+     "t": "Jeux de mots gourmands",
+     "g": "Amuse-toi avec des blagues sur le pain, le fromage, les fruits et les légumes.",
+     "p": [
+      "Les mots de la cuisine ont plein de doubles sens, faciles à détourner.",
+      "Exemple : que dit un fromage devant un miroir ? Hal-loumi !",
+      "Exemple : quel est le comble pour un boulanger ? Se faire rouler dans la farine !"
+     ],
+     "q": "Quel est ton plat préféré et peux-tu faire un jeu de mots avec ?",
+     "c": "Défi : invente un jeu de mots sur ton prochain repas."
+    },
+    "it": {
+     "t": "Giochi di parole sul cibo",
+     "g": "Divertiti con barzellette su pane, formaggio, frutta e verdura.",
+     "p": [
+      "Le parole del cibo hanno tanti doppi sensi e si prestano al gioco.",
+      "Esempio: cosa dice un uovo a una padella? Mi hai fritto!",
+      "Esempio: perché gli spaghetti non giocano a nascondino? Perché si aggrovigliano sempre!"
+     ],
+     "q": "Qual è il tuo cibo preferito e riesci a fare un gioco di parole?",
+     "c": "Sfida: inventa un gioco di parole sul tuo prossimo pasto."
+    },
+    "pt": {
+     "t": "Trocadilhos de comida",
+     "g": "Brinca com piadas sobre pão, queijo, fruta e legumes.",
+     "p": [
+      "As palavras da comida têm muitos duplos sentidos e prestam-se ao jogo.",
+      "Exemplo: o que diz um ovo a uma frigideira? Estou frito contigo!",
+      "Exemplo: porque é que o esparguete não joga às escondidas? Porque se enrola sempre!"
+     ],
+     "q": "Qual é a tua comida preferida e consegues fazer um trocadilho com ela?",
+     "c": "Desafio: inventa um trocadilho sobre a tua próxima refeição."
+    },
+    "pt_BR": {
+     "t": "Trocadilhos de comida",
+     "g": "Brinque com piadas sobre pão, queijo, frutas e legumes.",
+     "p": [
+      "Palavras de comida têm muitos duplos sentidos e se prestam à brincadeira.",
+      "Exemplo: o que o tomate foi fazer no banco? Tirar extrato!",
+      "Exemplo: por que o macarrão não joga esconde-esconde? Porque sempre se enrola!"
+     ],
+     "q": "Qual é a sua comida favorita e você consegue fazer um trocadilho com ela?",
+     "c": "Desafio: invente um trocadilho sobre a sua próxima refeição."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Riddles about everyday objects",
+     "g": "Guess riddles about keys, clocks, candles and umbrellas.",
+     "p": [
+      "Everyday objects hide in riddles by their shape and job.",
+      "Example: I have teeth but cannot bite. What am I? A comb!",
+      "Example: I get shorter as I am used. What am I? A candle!"
+     ],
+     "q": "Which everyday object would make a good riddle?",
+     "c": "Challenge: write a two-line riddle about an object near you."
+    },
+    "de": {
+     "t": "Rätsel über Alltagsgegenstände",
+     "g": "Errate Rätsel über Schlüssel, Uhren, Kerzen und Regenschirme.",
+     "p": [
+      "Alltagsgegenstände verstecken sich in Rätseln hinter Form und Aufgabe.",
+      "Beispiel: Ich habe Zähne, aber kann nicht beißen. Was bin ich? Ein Kamm!",
+      "Beispiel: Je länger ich brenne, desto kürzer werde ich. Was bin ich? Eine Kerze!"
+     ],
+     "q": "Welcher Alltagsgegenstand wäre ein gutes Rätsel?",
+     "c": "Aufgabe: Schreib ein zweizeiliges Rätsel über einen Gegenstand in deiner Nähe."
+    },
+    "es": {
+     "t": "Adivinanzas de objetos cotidianos",
+     "g": "Adivina acertijos sobre llaves, relojes, velas y paraguas.",
+     "p": [
+      "Los objetos cotidianos se esconden en las adivinanzas por su forma y su función.",
+      "Ejemplo: tengo dientes pero no muerdo. ¿Qué soy? ¡Un peine!",
+      "Ejemplo: cuanto más me usan, más pequeña me hago. ¿Qué soy? ¡Una vela!"
+     ],
+     "q": "¿Qué objeto cotidiano sería una buena adivinanza?",
+     "c": "Reto: escribe una adivinanza de dos líneas sobre un objeto que tengas cerca."
+    },
+    "fr": {
+     "t": "Devinettes sur les objets du quotidien",
+     "g": "Devine des énigmes sur les clés, les horloges, les bougies et les parapluies.",
+     "p": [
+      "Les objets du quotidien se cachent dans les devinettes par leur forme et leur rôle.",
+      "Exemple : j'ai des dents mais je ne mords pas. Qui suis-je ? Un peigne !",
+      "Exemple : plus je brûle, plus je raccourcis. Qui suis-je ? Une bougie !"
+     ],
+     "q": "Quel objet du quotidien ferait une bonne devinette ?",
+     "c": "Défi : écris une devinette de deux lignes sur un objet près de toi."
+    },
+    "it": {
+     "t": "Indovinelli sugli oggetti quotidiani",
+     "g": "Indovina enigmi su chiavi, orologi, candele e ombrelli.",
+     "p": [
+      "Gli oggetti quotidiani si nascondono negli indovinelli con forma e funzione.",
+      "Esempio: ho i denti ma non mordo. Cosa sono? Un pettine!",
+      "Esempio: più vivo, più mi accorcio. Cosa sono? Una candela!"
+     ],
+     "q": "Quale oggetto quotidiano farebbe un bell'indovinello?",
+     "c": "Sfida: scrivi un indovinello di due righe su un oggetto vicino a te."
+    },
+    "pt": {
+     "t": "Adivinhas sobre objetos do dia a dia",
+     "g": "Adivinha enigmas sobre chaves, relógios, velas e guarda-chuvas.",
+     "p": [
+      "Os objetos do dia a dia escondem-se nas adivinhas pela forma e função.",
+      "Exemplo: tenho dentes mas não mordo. O que sou? Um pente!",
+      "Exemplo: quanto mais uso me fazem, mais pequena fico. O que sou? Uma vela!"
+     ],
+     "q": "Que objeto do dia a dia daria uma boa adivinha?",
+     "c": "Desafio: escreve uma adivinha de duas linhas sobre um objeto perto de ti."
+    },
+    "pt_BR": {
+     "t": "Adivinhas sobre objetos do dia a dia",
+     "g": "Adivinhe enigmas sobre chaves, relógios, velas e guarda-chuvas.",
+     "p": [
+      "Objetos do dia a dia se escondem nas adivinhas pela forma e função.",
+      "Exemplo: tenho dentes mas não mordo. O que sou? Um pente!",
+      "Exemplo: quanto mais me usam, menor eu fico. O que sou? Uma vela!"
+     ],
+     "q": "Que objeto do dia a dia daria uma boa adivinha?",
+     "c": "Desafio: escreva uma adivinha de duas linhas sobre um objeto perto de você."
+    }
+   }
+  }
+ ]
+}

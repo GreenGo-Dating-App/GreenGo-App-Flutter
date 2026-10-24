@@ -1,0 +1,835 @@
+{
+ "topic": "theatre",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing a mini review",
+     "g": "Write a three-line review: what the show was, one thing that worked, one thing you would change.",
+     "p": [
+      "Line one names the show and says in a few words what it is about.",
+      "Line two praises one thing that worked, such as a performance, a song or the lighting.",
+      "Line three kindly suggests one change; good reviews are specific and fair, never cruel."
+     ],
+     "q": "Which show, film or concert would you like to review first?",
+     "c": "Today, write a three-line review of something you saw or heard recently and read it aloud."
+    },
+    "de": {
+     "t": "Eine Mini-Kritik schreiben",
+     "g": "Schreibe eine dreizeilige Kritik: was die Show war, was gut funktionierte und was du ändern würdest.",
+     "p": [
+      "Zeile eins nennt die Show und sagt in wenigen Worten, worum es geht.",
+      "Zeile zwei lobt etwas, das gut funktionierte, etwa eine Leistung, ein Lied oder das Licht.",
+      "Zeile drei schlägt freundlich eine Änderung vor; gute Kritiken sind konkret und fair, nie grausam."
+     ],
+     "q": "Welche Show, welchen Film oder welches Konzert würdest du gern zuerst besprechen?",
+     "c": "Schreibe heute eine dreizeilige Kritik zu etwas, das du kürzlich gesehen oder gehört hast, und lies sie laut."
+    },
+    "es": {
+     "t": "Escribir una mini reseña",
+     "g": "Escribe una reseña de tres líneas: qué fue el espectáculo, qué funcionó y qué cambiarías.",
+     "p": [
+      "La primera línea nombra el espectáculo y dice en pocas palabras de qué trata.",
+      "La segunda alaba algo que funcionó, como una interpretación, una canción o la iluminación.",
+      "La tercera sugiere con amabilidad un cambio; las buenas reseñas son concretas y justas, nunca crueles."
+     ],
+     "q": "¿Qué espectáculo, película o concierto te gustaría reseñar primero?",
+     "c": "Hoy escribe una reseña de tres líneas de algo que viste u oíste hace poco y léela en voz alta."
+    },
+    "fr": {
+     "t": "Écrire une mini critique",
+     "g": "Écris une critique en trois lignes : ce qu'était le spectacle, ce qui a marché, ce que tu changerais.",
+     "p": [
+      "La première ligne nomme le spectacle et dit en quelques mots de quoi il parle.",
+      "La deuxième loue ce qui a marché, comme un jeu, une chanson ou l'éclairage.",
+      "La troisième suggère gentiment un changement; les bonnes critiques sont précises et justes, jamais cruelles."
+     ],
+     "q": "Quel spectacle, film ou concert aimerais-tu critiquer en premier ?",
+     "c": "Aujourd'hui, écris une critique en trois lignes de quelque chose vu ou entendu récemment et lis-la à voix haute."
+    },
+    "it": {
+     "t": "Scrivere una mini recensione",
+     "g": "Scrivi una recensione di tre righe: cos'era lo spettacolo, cosa ha funzionato, cosa cambieresti.",
+     "p": [
+      "La prima riga nomina lo spettacolo e dice in poche parole di cosa parla.",
+      "La seconda elogia ciò che ha funzionato, come un'interpretazione, una canzone o le luci.",
+      "La terza suggerisce con gentilezza un cambiamento; le buone recensioni sono precise ed eque, mai crudeli."
+     ],
+     "q": "Quale spettacolo, film o concerto vorresti recensire per primo?",
+     "c": "Oggi scrivi una recensione di tre righe su qualcosa che hai visto o sentito di recente e leggila ad alta voce."
+    },
+    "pt": {
+     "t": "Escrever uma mini crítica",
+     "g": "Escreve uma crítica de três linhas: o que foi o espetáculo, o que resultou e o que mudarias.",
+     "p": [
+      "A primeira linha nomeia o espetáculo e diz em poucas palavras do que trata.",
+      "A segunda elogia algo que resultou, como uma interpretação, uma canção ou a iluminação.",
+      "A terceira sugere com simpatia uma mudança; as boas críticas são concretas e justas, nunca cruéis."
+     ],
+     "q": "Que espetáculo, filme ou concerto gostarias de criticar primeiro?",
+     "c": "Hoje escreve uma crítica de três linhas de algo que viste ou ouviste há pouco e lê-a em voz alta."
+    },
+    "pt_BR": {
+     "t": "Escrever uma mini resenha",
+     "g": "Escreva uma resenha de três linhas: o que foi o espetáculo, o que funcionou e o que você mudaria.",
+     "p": [
+      "A primeira linha nomeia o espetáculo e diz em poucas palavras do que trata.",
+      "A segunda elogia algo que funcionou, como uma interpretação, uma canção ou a iluminação.",
+      "A terceira sugere com gentileza uma mudança; as boas resenhas são concretas e justas, nunca cruéis."
+     ],
+     "q": "Que espetáculo, filme ou show você gostaria de resenhar primeiro?",
+     "c": "Hoje escreva uma resenha de três linhas de algo que você viu ou ouviu há pouco e leia em voz alta."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your voice as an instrument",
+     "g": "Meet breath, pitch, volume and pace, the four simple controls every performer works with.",
+     "p": [
+      "Breath powers the voice, so steady air gives steady, relaxed sound.",
+      "Pitch is how high or low you speak, volume is how loud, and pace is how fast.",
+      "Changing any of the four changes the meaning: a slow low voice feels calm, a fast high one excited."
+     ],
+     "q": "Which of the four controls do you think you use most naturally?",
+     "c": "Today, say the same sentence four times, changing only pitch, then volume, then pace, then breath."
+    },
+    "de": {
+     "t": "Deine Stimme als Instrument",
+     "g": "Lerne Atem, Tonhöhe, Lautstärke und Tempo kennen, die vier einfachen Regler jedes Darstellers.",
+     "p": [
+      "Der Atem treibt die Stimme an, und ruhige Luft ergibt einen ruhigen, entspannten Klang.",
+      "Tonhöhe ist, wie hoch oder tief du sprichst, Lautstärke, wie laut, und Tempo, wie schnell.",
+      "Wer einen der vier ändert, ändert die Bedeutung: Eine langsame tiefe Stimme wirkt ruhig, eine schnelle hohe aufgeregt."
+     ],
+     "q": "Welchen der vier Regler nutzt du deiner Meinung nach am natürlichsten?",
+     "c": "Sage heute denselben Satz viermal und ändere nur Tonhöhe, dann Lautstärke, dann Tempo, dann Atem."
+    },
+    "es": {
+     "t": "Tu voz como instrumento",
+     "g": "Conoce el aliento, el tono, el volumen y el ritmo, los cuatro controles sencillos de todo intérprete.",
+     "p": [
+      "El aliento impulsa la voz, así que un aire constante da un sonido firme y relajado.",
+      "El tono es lo agudo o grave que hablas, el volumen lo fuerte, y el ritmo la rapidez.",
+      "Cambiar cualquiera de los cuatro cambia el sentido: una voz lenta y grave resulta calmada, una rápida y aguda, emocionada."
+     ],
+     "q": "¿Cuál de los cuatro controles crees que usas con más naturalidad?",
+     "c": "Hoy di la misma frase cuatro veces cambiando solo el tono, luego el volumen, el ritmo y el aliento."
+    },
+    "fr": {
+     "t": "Ta voix comme instrument",
+     "g": "Découvre le souffle, la hauteur, le volume et le débit, les quatre réglages simples de tout interprète.",
+     "p": [
+      "Le souffle porte la voix, donc un air régulier donne un son régulier et détendu.",
+      "La hauteur, c'est à quel point tu parles aigu ou grave, le volume à quel point fort, et le débit à quelle vitesse.",
+      "Changer l'un des quatre change le sens : une voix lente et grave paraît calme, une voix rapide et aiguë excitée."
+     ],
+     "q": "Lequel des quatre réglages utilises-tu le plus naturellement, selon toi ?",
+     "c": "Aujourd'hui, dis la même phrase quatre fois en changeant seulement la hauteur, puis le volume, le débit, puis le souffle."
+    },
+    "it": {
+     "t": "La tua voce come strumento",
+     "g": "Conosci respiro, altezza, volume e ritmo, i quattro semplici comandi di ogni interprete.",
+     "p": [
+      "Il respiro alimenta la voce, quindi un'aria costante dà un suono fermo e rilassato.",
+      "L'altezza è quanto parli acuto o grave, il volume quanto forte, e il ritmo quanto veloce.",
+      "Cambiare uno dei quattro cambia il senso: una voce lenta e grave sembra calma, una veloce e acuta emozionata."
+     ],
+     "q": "Quale dei quattro comandi pensi di usare più naturalmente?",
+     "c": "Oggi di' la stessa frase quattro volte cambiando solo altezza, poi volume, ritmo e respiro."
+    },
+    "pt": {
+     "t": "A tua voz como instrumento",
+     "g": "Conhece a respiração, o tom, o volume e o ritmo, os quatro controlos simples de qualquer intérprete.",
+     "p": [
+      "A respiração impulsiona a voz, por isso um ar constante dá um som firme e descontraído.",
+      "O tom é o quão agudo ou grave falas, o volume o quão alto, e o ritmo o quão depressa.",
+      "Mudar qualquer um dos quatro muda o sentido: uma voz lenta e grave parece calma, uma rápida e aguda, entusiasmada."
+     ],
+     "q": "Qual dos quatro controlos achas que usas com mais naturalidade?",
+     "c": "Hoje diz a mesma frase quatro vezes mudando só o tom, depois o volume, o ritmo e a respiração."
+    },
+    "pt_BR": {
+     "t": "Sua voz como instrumento",
+     "g": "Conheça a respiração, o tom, o volume e o ritmo, os quatro controles simples de qualquer intérprete.",
+     "p": [
+      "A respiração impulsiona a voz, então um ar constante dá um som firme e relaxado.",
+      "O tom é o quanto você fala agudo ou grave, o volume o quanto alto, e o ritmo o quanto rápido.",
+      "Mudar qualquer um dos quatro muda o sentido: uma voz lenta e grave parece calma, uma rápida e aguda, empolgada."
+     ],
+     "q": "Qual dos quatro controles você acha que usa com mais naturalidade?",
+     "c": "Hoje diga a mesma frase quatro vezes mudando só o tom, depois o volume, o ritmo e a respiração."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Breathing like a performer",
+     "g": "Learn belly breathing for calm and power, with an easy exercise to try at home.",
+     "p": [
+      "Belly breathing means air flows low into the body, so your tummy gently expands as you inhale.",
+      "It calms nerves and gives the voice steady support instead of a tight, high chest sound.",
+      "Try it: breathe in for four counts, out for six, and keep your shoulders relaxed."
+     ],
+     "q": "When do you feel your breathing is shallow, and when is it deep and easy?",
+     "c": "Today, do five slow belly breaths, hand on your tummy, breathing in for four and out for six."
+    },
+    "de": {
+     "t": "Atmen wie ein Darsteller",
+     "g": "Lerne die Bauchatmung für Ruhe und Kraft, mit einer einfachen Übung für zu Hause.",
+     "p": [
+      "Bauchatmung heißt, dass die Luft tief in den Körper strömt und sich der Bauch beim Einatmen sanft weitet.",
+      "Sie beruhigt die Nerven und gibt der Stimme stabile Stütze statt eines engen, hohen Brustklangs.",
+      "Probiere es: vier Zähler einatmen, sechs ausatmen und die Schultern locker lassen."
+     ],
+     "q": "Wann fühlt sich dein Atem flach an, und wann tief und leicht?",
+     "c": "Mache heute fünf langsame Bauchatemzüge, Hand auf dem Bauch, vier Zähler ein und sechs aus."
+    },
+    "es": {
+     "t": "Respirar como un intérprete",
+     "g": "Aprende la respiración abdominal para calma y fuerza, con un ejercicio fácil para hacer en casa.",
+     "p": [
+      "Respirar con el abdomen significa que el aire fluye hacia abajo y la barriga se expande suavemente al inspirar.",
+      "Calma los nervios y da apoyo firme a la voz en lugar de un sonido agudo y tenso de pecho.",
+      "Pruébalo: inspira contando cuatro, espira contando seis y mantén los hombros relajados."
+     ],
+     "q": "¿Cuándo sientes tu respiración superficial y cuándo profunda y fácil?",
+     "c": "Hoy haz cinco respiraciones abdominales lentas, con la mano en la barriga, cuatro para inspirar y seis para espirar."
+    },
+    "fr": {
+     "t": "Respirer comme un artiste",
+     "g": "Apprends la respiration ventrale pour le calme et la puissance, avec un exercice facile à faire chez toi.",
+     "p": [
+      "Respirer par le ventre, c'est laisser l'air descendre bas et le ventre se gonfler doucement à l'inspiration.",
+      "Cela apaise les nerfs et soutient la voix de façon stable plutôt qu'un son aigu et serré de poitrine.",
+      "Essaie : inspire sur quatre temps, expire sur six et garde les épaules détendues."
+     ],
+     "q": "Quand sens-tu ta respiration courte, et quand est-elle profonde et facile ?",
+     "c": "Aujourd'hui, fais cinq respirations ventrales lentes, la main sur le ventre, quatre temps pour inspirer et six pour expirer."
+    },
+    "it": {
+     "t": "Respirare come un artista",
+     "g": "Impara la respirazione diaframmatica per calma e forza, con un esercizio facile da fare a casa.",
+     "p": [
+      "Respirare con la pancia significa che l'aria scende in basso e il ventre si espande dolcemente nell'inspirazione.",
+      "Calma i nervi e dà alla voce un sostegno stabile invece di un suono acuto e stretto di petto.",
+      "Provalo: inspira contando quattro, espira contando sei e tieni le spalle rilassate."
+     ],
+     "q": "Quando senti il respiro corto, e quando profondo e facile?",
+     "c": "Oggi fai cinque respiri lenti con la pancia, mano sul ventre, quattro tempi per inspirare e sei per espirare."
+    },
+    "pt": {
+     "t": "Respirar como um artista",
+     "g": "Aprende a respiração abdominal para calma e força, com um exercício fácil para fazer em casa.",
+     "p": [
+      "Respirar com a barriga significa que o ar desce e a barriga se expande suavemente ao inspirar.",
+      "Acalma os nervos e dá apoio firme à voz em vez de um som agudo e tenso de peito.",
+      "Experimenta: inspira contando quatro, expira contando seis e mantém os ombros relaxados."
+     ],
+     "q": "Quando sentes a respiração curta e quando é profunda e fácil?",
+     "c": "Hoje faz cinco respirações abdominais lentas, com a mão na barriga, quatro para inspirar e seis para expirar."
+    },
+    "pt_BR": {
+     "t": "Respirar como um artista",
+     "g": "Aprenda a respiração abdominal para calma e força, com um exercício fácil de fazer em casa.",
+     "p": [
+      "Respirar com a barriga significa que o ar desce e a barriga se expande suavemente ao inspirar.",
+      "Acalma os nervos e dá apoio firme à voz em vez de um som agudo e tenso de peito.",
+      "Experimente: inspire contando quatro, expire contando seis e mantenha os ombros relaxados."
+     ],
+     "q": "Quando você sente a respiração curta e quando ela é profunda e fácil?",
+     "c": "Hoje faça cinco respirações abdominais lentas, com a mão na barriga, quatro para inspirar e seis para expirar."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Warming up the body",
+     "g": "Shake out, stretch and roll the shoulders to see why actors warm up before every show.",
+     "p": [
+      "Warming up wakes the muscles and calms the mind, lowering the risk of strain.",
+      "Shake out hands, arms and legs, roll your shoulders and gently turn your neck from side to side.",
+      "Finish by stretching tall and standing relaxed, ready to move with energy and ease."
+     ],
+     "q": "What does your body usually need first in the morning: stretching, walking or water?",
+     "c": "Today, do a two-minute warm-up: shake, shoulder rolls, gentle neck turns and a big stretch."
+    },
+    "de": {
+     "t": "Den Körper aufwärmen",
+     "g": "Schüttle, dehne und kreise die Schultern und sieh, warum Schauspieler sich vor jeder Show aufwärmen.",
+     "p": [
+      "Aufwärmen weckt die Muskeln und beruhigt den Geist und senkt das Risiko von Zerrungen.",
+      "Schüttle Hände, Arme und Beine aus, kreise die Schultern und drehe den Nacken sanft von Seite zu Seite.",
+      "Schließe mit einer langen Streckung und entspanntem Stand, bereit für Bewegung mit Energie und Leichtigkeit."
+     ],
+     "q": "Was braucht dein Körper morgens zuerst: Dehnen, Gehen oder Wasser?",
+     "c": "Mache heute zwei Minuten Aufwärmen: Schütteln, Schulterkreisen, sanfte Nackendrehungen und eine große Streckung."
+    },
+    "es": {
+     "t": "Calentar el cuerpo",
+     "g": "Sacude, estira y gira los hombros para ver por qué los actores calientan antes de cada función.",
+     "p": [
+      "Calentar despierta los músculos y calma la mente, y reduce el riesgo de tensiones.",
+      "Sacude manos, brazos y piernas, gira los hombros y mueve el cuello con suavidad de lado a lado.",
+      "Termina estirándote bien alto y quedándote relajado, listo para moverte con energía y soltura."
+     ],
+     "q": "¿Qué necesita tu cuerpo primero por la mañana: estirarse, caminar o agua?",
+     "c": "Hoy haz un calentamiento de dos minutos: sacudidas, giros de hombros, giros suaves de cuello y un gran estiramiento."
+    },
+    "fr": {
+     "t": "Échauffer le corps",
+     "g": "Secoue, étire et fais rouler les épaules pour voir pourquoi les acteurs s'échauffent avant chaque spectacle.",
+     "p": [
+      "S'échauffer réveille les muscles et calme l'esprit, et réduit le risque de tensions.",
+      "Secoue mains, bras et jambes, fais rouler les épaules et tourne doucement la nuque d'un côté à l'autre.",
+      "Termine en t'étirant bien haut et en restant détendu, prêt à bouger avec énergie et aisance."
+     ],
+     "q": "De quoi ton corps a-t-il besoin en premier le matin : s'étirer, marcher ou boire de l'eau ?",
+     "c": "Aujourd'hui, fais deux minutes d'échauffement : secousses, rotations d'épaules, rotations douces de nuque et grand étirement."
+    },
+    "it": {
+     "t": "Riscaldare il corpo",
+     "g": "Scuoti, allunga e ruota le spalle per vedere perché gli attori si riscaldano prima di ogni spettacolo.",
+     "p": [
+      "Riscaldarsi sveglia i muscoli e calma la mente, e riduce il rischio di strappi.",
+      "Scuoti mani, braccia e gambe, ruota le spalle e gira dolcemente il collo da un lato all'altro.",
+      "Finisci allungandoti ben in alto e restando rilassato, pronto a muoverti con energia e leggerezza."
+     ],
+     "q": "Di cosa ha bisogno prima il tuo corpo al mattino: stirarsi, camminare o acqua?",
+     "c": "Oggi fai due minuti di riscaldamento: scosse, rotazioni delle spalle, giri dolci del collo e un grande allungamento."
+    },
+    "pt": {
+     "t": "Aquecer o corpo",
+     "g": "Sacode, estica e roda os ombros para veres porque os atores aquecem antes de cada espetáculo.",
+     "p": [
+      "Aquecer acorda os músculos e acalma a mente, e reduz o risco de distensões.",
+      "Sacode mãos, braços e pernas, roda os ombros e vira o pescoço com suavidade de um lado para o outro.",
+      "Termina esticando-te bem alto e ficando descontraído, pronto para te moveres com energia e à vontade."
+     ],
+     "q": "De que precisa o teu corpo primeiro de manhã: esticar-se, caminhar ou água?",
+     "c": "Hoje faz dois minutos de aquecimento: sacudidelas, rotação de ombros, voltas suaves do pescoço e um grande alongamento."
+    },
+    "pt_BR": {
+     "t": "Aquecer o corpo",
+     "g": "Sacuda, alongue e gire os ombros para ver por que os atores aquecem antes de cada espetáculo.",
+     "p": [
+      "Aquecer acorda os músculos e acalma a mente, e reduz o risco de distensões.",
+      "Sacuda mãos, braços e pernas, gire os ombros e vire o pescoço com suavidade de um lado para o outro.",
+      "Termine se alongando bem alto e ficando relaxado, pronto para se mover com energia e leveza."
+     ],
+     "q": "De que o seu corpo precisa primeiro de manhã: se alongar, caminhar ou água?",
+     "c": "Hoje faça dois minutos de aquecimento: sacudidas, giro de ombros, voltas suaves do pescoço e um grande alongamento."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tongue twisters for clarity",
+     "g": "Train clear speech with fun phrases, in your language and others.",
+     "p": [
+      "Tongue twisters make the lips, tongue and jaw work, which sharpens clear speech.",
+      "Start slowly, say each sound crisply, and speed up only when every word stays clear.",
+      "Every language has its own, such as she sells seashells, so try some from other countries."
+     ],
+     "q": "What is the trickiest tongue twister you know in any language?",
+     "c": "Today, say a tongue twister slowly three times, then faster, keeping every sound clear."
+    },
+    "de": {
+     "t": "Zungenbrecher für klare Aussprache",
+     "g": "Trainiere deutliche Sprache mit lustigen Sätzen, in deiner Sprache und in anderen.",
+     "p": [
+      "Zungenbrecher fordern Lippen, Zunge und Kiefer und schärfen die deutliche Aussprache.",
+      "Beginne langsam, sprich jeden Laut knackig und werde erst schneller, wenn jedes Wort klar bleibt.",
+      "Jede Sprache hat ihre eigenen, wie Fischers Fritz fischt frische Fische, also probiere welche aus anderen Ländern."
+     ],
+     "q": "Was ist der kniffligste Zungenbrecher, den du in irgendeiner Sprache kennst?",
+     "c": "Sprich heute einen Zungenbrecher dreimal langsam, dann schneller, und halte jeden Laut klar."
+    },
+    "es": {
+     "t": "Trabalenguas para hablar claro",
+     "g": "Entrena un habla clara con frases divertidas, en tu idioma y en otros.",
+     "p": [
+      "Los trabalenguas hacen trabajar labios, lengua y mandíbula, lo que afina la dicción.",
+      "Empieza despacio, pronuncia cada sonido con nitidez y acelera solo cuando cada palabra se mantiene clara.",
+      "Cada idioma tiene los suyos, como tres tristes tigres, así que prueba algunos de otros países."
+     ],
+     "q": "¿Cuál es el trabalenguas más difícil que conoces en cualquier idioma?",
+     "c": "Hoy di un trabalenguas despacio tres veces, luego más rápido, manteniendo cada sonido claro."
+    },
+    "fr": {
+     "t": "Virelangues pour bien articuler",
+     "g": "Entraîne une élocution claire avec des phrases amusantes, dans ta langue et d'autres.",
+     "p": [
+      "Les virelangues font travailler lèvres, langue et mâchoire, ce qui affine l'articulation.",
+      "Commence lentement, prononce chaque son nettement et accélère seulement quand chaque mot reste clair.",
+      "Chaque langue a les siens, comme les chaussettes de l'archiduchesse, alors essaie-en d'autres pays."
+     ],
+     "q": "Quel est le virelangue le plus difficile que tu connaisses, en n'importe quelle langue ?",
+     "c": "Aujourd'hui, dis un virelangue lentement trois fois, puis plus vite, en gardant chaque son net."
+    },
+    "it": {
+     "t": "Scioglilingua per parlare chiaro",
+     "g": "Allena una dizione chiara con frasi divertenti, nella tua lingua e in altre.",
+     "p": [
+      "Gli scioglilingua fanno lavorare labbra, lingua e mandibola, e affinano la dizione.",
+      "Inizia lentamente, pronuncia ogni suono con nitidezza e accelera solo quando ogni parola resta chiara.",
+      "Ogni lingua ha i suoi, come trentatré trentini, quindi prova quelli di altri paesi."
+     ],
+     "q": "Qual è lo scioglilingua più difficile che conosci, in qualsiasi lingua?",
+     "c": "Oggi di' uno scioglilingua lentamente tre volte, poi più veloce, mantenendo chiaro ogni suono."
+    },
+    "pt": {
+     "t": "Trava-línguas para falar claro",
+     "g": "Treina uma fala clara com frases divertidas, na tua língua e noutras.",
+     "p": [
+      "Os trava-línguas fazem trabalhar lábios, língua e maxilar, o que apura a dicção.",
+      "Começa devagar, pronuncia cada som com nitidez e acelera só quando cada palavra se mantém clara.",
+      "Cada língua tem os seus, como o rato roeu a roupa do rei de Roma, por isso experimenta alguns de outros países."
+     ],
+     "q": "Qual é o trava-línguas mais difícil que conheces, em qualquer língua?",
+     "c": "Hoje diz um trava-línguas devagar três vezes, depois mais depressa, mantendo cada som claro."
+    },
+    "pt_BR": {
+     "t": "Trava-línguas para falar claro",
+     "g": "Treine uma fala clara com frases divertidas, na sua língua e em outras.",
+     "p": [
+      "Os trava-línguas fazem trabalhar lábios, língua e mandíbula, o que apura a dicção.",
+      "Comece devagar, pronuncie cada som com nitidez e acelere só quando cada palavra continua clara.",
+      "Cada língua tem os seus, como o tigre, o trigo e o tigre, então experimente alguns de outros países."
+     ],
+     "q": "Qual é o trava-línguas mais difícil que você conhece, em qualquer língua?",
+     "c": "Hoje diga um trava-línguas devagar três vezes, depois mais rápido, mantendo cada som claro."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Projection without shouting",
+     "g": "Learn how actors reach the back row with breath and resonance instead of strain.",
+     "p": [
+      "Projection is sending your voice out, not pushing it hard from the throat.",
+      "Support the sound with belly breath, open your mouth and speak toward the far wall.",
+      "Clear consonants carry farther than loud vowels, so crisp words are heard at the back."
+     ],
+     "q": "When have you had to make your voice reach across a big room or outdoors?",
+     "c": "Today, speak a sentence to a spot at the far end of a room, with steady breath and no strain."
+    },
+    "de": {
+     "t": "Projektion ohne Schreien",
+     "g": "Lerne, wie Schauspieler mit Atem und Resonanz statt Anstrengung die letzte Reihe erreichen.",
+     "p": [
+      "Projektion heißt, die Stimme hinauszusenden, nicht sie hart aus dem Hals zu pressen.",
+      "Stütze den Klang mit Bauchatmung, öffne den Mund und sprich zur fernen Wand.",
+      "Klare Konsonanten tragen weiter als laute Vokale, deshalb hört man knackige Worte hinten."
+     ],
+     "q": "Wann musstest du deine Stimme durch einen großen Raum oder im Freien tragen lassen?",
+     "c": "Sprich heute einen Satz zu einem Punkt am anderen Ende eines Raumes, mit ruhigem Atem und ohne Anstrengung."
+    },
+    "es": {
+     "t": "Proyección sin gritar",
+     "g": "Aprende cómo los actores llegan a la última fila con aliento y resonancia en vez de esfuerzo.",
+     "p": [
+      "Proyectar es enviar la voz hacia fuera, no empujarla con fuerza desde la garganta.",
+      "Apoya el sonido en la respiración abdominal, abre la boca y habla hacia la pared del fondo.",
+      "Las consonantes claras llegan más lejos que las vocales fuertes, así que las palabras nítidas se oyen atrás."
+     ],
+     "q": "¿Cuándo has tenido que hacer llegar tu voz a través de una sala grande o al aire libre?",
+     "c": "Hoy di una frase hacia un punto del extremo de una sala, con aliento firme y sin forzar."
+    },
+    "fr": {
+     "t": "Projeter sa voix sans crier",
+     "g": "Apprends comment les acteurs atteignent le dernier rang avec le souffle et la résonance plutôt que l'effort.",
+     "p": [
+      "Projeter, c'est envoyer la voix au loin, pas la pousser fort depuis la gorge.",
+      "Soutiens le son avec le souffle ventral, ouvre la bouche et parle vers le mur du fond.",
+      "Des consonnes nettes portent plus loin que de fortes voyelles, donc les mots précis s'entendent au fond."
+     ],
+     "q": "Quand as-tu dû faire porter ta voix à travers une grande salle ou en plein air ?",
+     "c": "Aujourd'hui, dis une phrase vers un point au bout d'une pièce, avec un souffle régulier et sans forcer."
+    },
+    "it": {
+     "t": "Proiezione senza gridare",
+     "g": "Impara come gli attori raggiungono l'ultima fila con respiro e risonanza invece di sforzo.",
+     "p": [
+      "Proiettare significa mandare la voce lontano, non spingerla forte dalla gola.",
+      "Sostieni il suono con il respiro diaframmatico, apri la bocca e parla verso la parete in fondo.",
+      "Le consonanti nitide arrivano più lontano delle vocali forti, perciò le parole precise si sentono in fondo."
+     ],
+     "q": "Quando hai dovuto far arrivare la voce attraverso una grande sala o all'aperto?",
+     "c": "Oggi di' una frase verso un punto in fondo a una stanza, con respiro costante e senza forzare."
+    },
+    "pt": {
+     "t": "Projeção sem gritar",
+     "g": "Aprende como os atores chegam à última fila com respiração e ressonância em vez de esforço.",
+     "p": [
+      "Projetar é enviar a voz para longe, não empurrá-la com força da garganta.",
+      "Apoia o som na respiração abdominal, abre a boca e fala para a parede do fundo.",
+      "Consoantes nítidas chegam mais longe do que vogais fortes, por isso as palavras precisas ouvem-se ao fundo."
+     ],
+     "q": "Quando tiveste de fazer a tua voz chegar através de uma sala grande ou ao ar livre?",
+     "c": "Hoje diz uma frase para um ponto no fundo de uma sala, com respiração firme e sem forçar."
+    },
+    "pt_BR": {
+     "t": "Projeção sem gritar",
+     "g": "Aprenda como os atores chegam à última fila com respiração e ressonância em vez de esforço.",
+     "p": [
+      "Projetar é enviar a voz para longe, não empurrá-la com força da garganta.",
+      "Apoie o som na respiração abdominal, abra a boca e fale para a parede do fundo.",
+      "Consoantes nítidas chegam mais longe do que vogais fortes, por isso as palavras precisas se ouvem ao fundo."
+     ],
+     "q": "Quando você precisou fazer a voz chegar através de uma sala grande ou ao ar livre?",
+     "c": "Hoje diga uma frase para um ponto no fundo de uma sala, com respiração firme e sem forçar."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Facial expression",
+     "g": "Show joy, surprise and curiosity with the face, and learn how much is enough for a big room.",
+     "p": [
+      "The face is an actor's canvas: eyebrows, eyes and mouth tell feelings before words arrive.",
+      "On a big stage, expressions need to be clearer and a little bigger so the back rows can read them.",
+      "On camera or in a small room, smaller expressions feel truthful, so match the size to the space."
+     ],
+     "q": "Which expression do you find easiest to show, and which is hardest?",
+     "c": "Today, show joy, surprise and curiosity in a mirror at three sizes: small, medium and theatre-big."
+    },
+    "de": {
+     "t": "Mimik",
+     "g": "Zeige Freude, Überraschung und Neugier mit dem Gesicht und lerne, wie viel für einen großen Saal genug ist.",
+     "p": [
+      "Das Gesicht ist die Leinwand des Schauspielers: Brauen, Augen und Mund erzählen Gefühle, bevor Worte kommen.",
+      "Auf einer großen Bühne müssen Ausdrücke klarer und etwas größer sein, damit die hinteren Reihen sie lesen können.",
+      "Vor der Kamera oder in einem kleinen Raum wirken kleinere Ausdrücke wahrhaftig, passe also die Größe dem Raum an."
+     ],
+     "q": "Welchen Ausdruck zeigst du am leichtesten, und welchen am schwersten?",
+     "c": "Zeige heute im Spiegel Freude, Überraschung und Neugier in drei Größen: klein, mittel und theatergroß."
+    },
+    "es": {
+     "t": "La expresión facial",
+     "g": "Muestra alegría, sorpresa y curiosidad con el rostro y aprende cuánto basta para una sala grande.",
+     "p": [
+      "El rostro es el lienzo del actor: cejas, ojos y boca cuentan sentimientos antes de que lleguen las palabras.",
+      "En un escenario grande las expresiones deben ser más claras y algo mayores para que las últimas filas las lean.",
+      "Ante la cámara o en una sala pequeña, las expresiones menores resultan veraces, así que ajusta el tamaño al espacio."
+     ],
+     "q": "¿Qué expresión te resulta más fácil de mostrar y cuál más difícil?",
+     "c": "Hoy muestra ante un espejo alegría, sorpresa y curiosidad en tres tamaños: pequeño, mediano y grande de teatro."
+    },
+    "fr": {
+     "t": "L'expression du visage",
+     "g": "Montre la joie, la surprise et la curiosité avec le visage et apprends ce qui suffit pour une grande salle.",
+     "p": [
+      "Le visage est la toile de l'acteur : sourcils, yeux et bouche disent les émotions avant les mots.",
+      "Sur une grande scène, les expressions doivent être plus nettes et un peu plus grandes pour que les derniers rangs les lisent.",
+      "À la caméra ou dans une petite salle, des expressions plus petites sonnent juste, alors adapte la taille à l'espace."
+     ],
+     "q": "Quelle expression te semble la plus facile à montrer, et laquelle la plus difficile ?",
+     "c": "Aujourd'hui, montre devant un miroir joie, surprise et curiosité en trois tailles : petite, moyenne et grande comme au théâtre."
+    },
+    "it": {
+     "t": "L'espressione del viso",
+     "g": "Mostra gioia, sorpresa e curiosità con il viso e scopri quanto basta per una grande sala.",
+     "p": [
+      "Il viso è la tela dell'attore: sopracciglia, occhi e bocca raccontano emozioni prima delle parole.",
+      "Su un grande palco le espressioni devono essere più chiare e un po' più grandi perché le ultime file le leggano.",
+      "In camera o in una piccola sala le espressioni più piccole sembrano vere, quindi adatta la misura allo spazio."
+     ],
+     "q": "Quale espressione ti è più facile mostrare, e quale più difficile?",
+     "c": "Oggi mostra davanti a uno specchio gioia, sorpresa e curiosità in tre misure: piccola, media e grande da teatro."
+    },
+    "pt": {
+     "t": "A expressão facial",
+     "g": "Mostra alegria, surpresa e curiosidade com o rosto e aprende quanto basta para uma sala grande.",
+     "p": [
+      "O rosto é a tela do ator: sobrancelhas, olhos e boca contam sentimentos antes de chegarem as palavras.",
+      "Num palco grande as expressões têm de ser mais claras e um pouco maiores para que as últimas filas as leiam.",
+      "Diante da câmara ou numa sala pequena, expressões menores parecem verdadeiras, por isso ajusta o tamanho ao espaço."
+     ],
+     "q": "Que expressão te é mais fácil de mostrar e qual a mais difícil?",
+     "c": "Hoje mostra diante de um espelho alegria, surpresa e curiosidade em três tamanhos: pequeno, médio e grande de teatro."
+    },
+    "pt_BR": {
+     "t": "A expressão facial",
+     "g": "Mostre alegria, surpresa e curiosidade com o rosto e aprenda quanto basta para uma sala grande.",
+     "p": [
+      "O rosto é a tela do ator: sobrancelhas, olhos e boca contam sentimentos antes de chegarem as palavras.",
+      "Num palco grande as expressões precisam ser mais claras e um pouco maiores para que as últimas fileiras as leiam.",
+      "Diante da câmera ou numa sala pequena, expressões menores parecem verdadeiras, então ajuste o tamanho ao espaço."
+     ],
+     "q": "Que expressão é mais fácil para você mostrar e qual é a mais difícil?",
+     "c": "Hoje mostre diante de um espelho alegria, surpresa e curiosidade em três tamanhos: pequeno, médio e grande de teatro."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Body language on stage",
+     "g": "Use posture, gestures and stillness to show what a character feels.",
+     "p": [
+      "Posture speaks: a lifted chest suggests confidence, rounded shoulders suggest shyness or tiredness.",
+      "Gestures should have a reason; fidgeting distracts, while a clear, chosen movement shines.",
+      "Stillness is powerful too: freezing at the right moment pulls every eye to you."
+     ],
+     "q": "How can you tell what a person feels just from how they stand or walk?",
+     "c": "Today, walk across a room as a confident, then a shy, then a joyful character, using only the body."
+    },
+    "de": {
+     "t": "Körpersprache auf der Bühne",
+     "g": "Nutze Haltung, Gesten und Stille, um zu zeigen, was eine Figur fühlt.",
+     "p": [
+      "Haltung spricht: Eine gehobene Brust deutet Selbstvertrauen an, runde Schultern Schüchternheit oder Müdigkeit.",
+      "Gesten sollten einen Grund haben; Zappeln lenkt ab, eine klare gewählte Bewegung strahlt.",
+      "Auch Stille ist kraftvoll: Im richtigen Moment innezuhalten zieht alle Blicke auf dich."
+     ],
+     "q": "Woran erkennst du, was ein Mensch fühlt, allein an Haltung oder Gang?",
+     "c": "Gehe heute als selbstbewusste, dann schüchterne, dann fröhliche Figur durch einen Raum, nur mit dem Körper."
+    },
+    "es": {
+     "t": "Lenguaje corporal en escena",
+     "g": "Usa la postura, los gestos y la quietud para mostrar lo que siente un personaje.",
+     "p": [
+      "La postura habla: un pecho erguido sugiere confianza, unos hombros caídos, timidez o cansancio.",
+      "Los gestos deben tener un motivo; moverse sin sentido distrae, mientras que un movimiento claro y elegido brilla.",
+      "La quietud también es poderosa: quedarte inmóvil en el momento justo atrae todas las miradas."
+     ],
+     "q": "¿Cómo sabes lo que siente una persona solo por cómo está de pie o camina?",
+     "c": "Hoy cruza una sala como un personaje seguro, luego tímido y luego alegre, usando solo el cuerpo."
+    },
+    "fr": {
+     "t": "Le langage du corps sur scène",
+     "g": "Utilise la posture, les gestes et l'immobilité pour montrer ce que ressent un personnage.",
+     "p": [
+      "La posture parle : un torse relevé suggère la confiance, des épaules rentrées la timidité ou la fatigue.",
+      "Les gestes doivent avoir une raison; s'agiter distrait, alors qu'un mouvement clair et choisi rayonne.",
+      "L'immobilité est puissante aussi : se figer au bon moment attire tous les regards."
+     ],
+     "q": "Comment devines-tu ce que ressent quelqu'un rien qu'à sa façon de se tenir ou de marcher ?",
+     "c": "Aujourd'hui, traverse une pièce en personnage sûr de lui, puis timide, puis joyeux, avec le seul corps."
+    },
+    "it": {
+     "t": "Il linguaggio del corpo in scena",
+     "g": "Usa postura, gesti e immobilità per mostrare ciò che prova un personaggio.",
+     "p": [
+      "La postura parla: un petto alto suggerisce sicurezza, spalle curve timidezza o stanchezza.",
+      "I gesti devono avere un motivo; agitarsi distrae, mentre un movimento chiaro e scelto brilla.",
+      "Anche l'immobilità è potente: fermarsi al momento giusto attira ogni sguardo."
+     ],
+     "q": "Come capisci cosa prova una persona solo da come sta in piedi o cammina?",
+     "c": "Oggi attraversa una stanza come un personaggio sicuro, poi timido e poi gioioso, usando solo il corpo."
+    },
+    "pt": {
+     "t": "A linguagem corporal em palco",
+     "g": "Usa a postura, os gestos e a quietude para mostrar o que sente uma personagem.",
+     "p": [
+      "A postura fala: um peito erguido sugere confiança, ombros curvados, timidez ou cansaço.",
+      "Os gestos devem ter um motivo; mexer-se sem sentido distrai, enquanto um movimento claro e escolhido brilha.",
+      "A quietude também é poderosa: ficar imóvel no momento certo atrai todos os olhares."
+     ],
+     "q": "Como sabes o que uma pessoa sente só pela forma como está de pé ou caminha?",
+     "c": "Hoje atravessa uma sala como uma personagem confiante, depois tímida e depois alegre, usando só o corpo."
+    },
+    "pt_BR": {
+     "t": "A linguagem corporal no palco",
+     "g": "Use a postura, os gestos e a quietude para mostrar o que sente um personagem.",
+     "p": [
+      "A postura fala: um peito erguido sugere confiança, ombros curvados, timidez ou cansaço.",
+      "Os gestos precisam ter um motivo; se mexer sem sentido distrai, enquanto um movimento claro e escolhido brilha.",
+      "A quietude também é poderosa: ficar imóvel no momento certo atrai todos os olhares."
+     ],
+     "q": "Como você sabe o que uma pessoa sente só pelo jeito como fica em pé ou anda?",
+     "c": "Hoje atravesse uma sala como um personagem confiante, depois tímido e depois alegre, usando só o corpo."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Using the space",
+     "g": "Move with purpose, using levels and distance between characters to tell the story.",
+     "p": [
+      "Every step should have a reason: crossing toward someone shows interest, backing away shows doubt.",
+      "Levels matter: standing, sitting or kneeling changes who seems strong or friendly in a scene.",
+      "Distance tells a story: characters close together feel bonded, far apart they feel distant."
+     ],
+     "q": "If you staged a scene of two friends meeting, where would you place them?",
+     "c": "Today, act a short meeting with a friend, changing the distance between you three times."
+    },
+    "de": {
+     "t": "Den Raum nutzen",
+     "g": "Bewege dich mit Absicht und nutze Ebenen und Abstände zwischen Figuren, um die Geschichte zu erzählen.",
+     "p": [
+      "Jeder Schritt braucht einen Grund: Auf jemanden zuzugehen zeigt Interesse, zurückzuweichen zeigt Zweifel.",
+      "Ebenen zählen: Stehen, Sitzen oder Knien verändert, wer in einer Szene stark oder freundlich wirkt.",
+      "Abstand erzählt: Nahe Figuren wirken verbunden, weit entfernte distanziert."
+     ],
+     "q": "Wo würdest du in einer Szene zwei sich treffende Freunde platzieren?",
+     "c": "Spiele heute ein kurzes Treffen mit einem Freund und ändere dreimal den Abstand zwischen euch."
+    },
+    "es": {
+     "t": "Usar el espacio",
+     "g": "Muévete con intención, usando niveles y distancia entre personajes para contar la historia.",
+     "p": [
+      "Cada paso debe tener un motivo: avanzar hacia alguien muestra interés, retroceder muestra duda.",
+      "Los niveles importan: estar de pie, sentado o de rodillas cambia quién parece fuerte o amable en una escena.",
+      "La distancia cuenta una historia: los personajes cercanos parecen unidos, los lejanos, distantes."
+     ],
+     "q": "Si montaras una escena de dos amigos que se encuentran, ¿dónde los colocarías?",
+     "c": "Hoy actúa un breve encuentro con un amigo, cambiando tres veces la distancia entre vosotros."
+    },
+    "fr": {
+     "t": "Utiliser l'espace",
+     "g": "Bouge avec intention, en jouant des niveaux et des distances entre personnages pour raconter l'histoire.",
+     "p": [
+      "Chaque pas doit avoir une raison : avancer vers quelqu'un montre de l'intérêt, reculer montre du doute.",
+      "Les niveaux comptent : debout, assis ou à genoux change qui paraît fort ou amical dans une scène.",
+      "La distance raconte : des personnages proches semblent liés, éloignés ils semblent distants."
+     ],
+     "q": "Si tu mettais en scène deux amis qui se retrouvent, où les placerais-tu ?",
+     "c": "Aujourd'hui, joue une courte rencontre avec un ami en changeant trois fois la distance entre vous."
+    },
+    "it": {
+     "t": "Usare lo spazio",
+     "g": "Muoviti con intenzione, usando livelli e distanze tra i personaggi per raccontare la storia.",
+     "p": [
+      "Ogni passo deve avere un motivo: avanzare verso qualcuno mostra interesse, indietreggiare mostra dubbio.",
+      "I livelli contano: in piedi, seduti o in ginocchio cambia chi sembra forte o amichevole in una scena.",
+      "La distanza racconta: personaggi vicini sembrano legati, lontani sembrano distanti."
+     ],
+     "q": "Se mettessi in scena due amici che si incontrano, dove li collocheresti?",
+     "c": "Oggi recita un breve incontro con un amico, cambiando tre volte la distanza tra voi."
+    },
+    "pt": {
+     "t": "Usar o espaço",
+     "g": "Move-te com intenção, usando níveis e distância entre personagens para contar a história.",
+     "p": [
+      "Cada passo deve ter um motivo: avançar para alguém mostra interesse, recuar mostra dúvida.",
+      "Os níveis importam: de pé, sentado ou de joelhos muda quem parece forte ou simpático numa cena.",
+      "A distância conta uma história: personagens próximas parecem unidas, afastadas parecem distantes."
+     ],
+     "q": "Se encenasses dois amigos que se encontram, onde os colocarias?",
+     "c": "Hoje representa um breve encontro com um amigo, mudando três vezes a distância entre vós."
+    },
+    "pt_BR": {
+     "t": "Usar o espaço",
+     "g": "Mova-se com intenção, usando níveis e distância entre personagens para contar a história.",
+     "p": [
+      "Cada passo precisa ter um motivo: avançar para alguém mostra interesse, recuar mostra dúvida.",
+      "Os níveis importam: em pé, sentado ou de joelhos muda quem parece forte ou simpático numa cena.",
+      "A distância conta uma história: personagens próximos parecem unidos, afastados parecem distantes."
+     ],
+     "q": "Se você encenasse dois amigos que se encontram, onde os colocaria?",
+     "c": "Hoje represente um breve encontro com um amigo, mudando três vezes a distância entre vocês."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mini review: voice and body",
+     "g": "Recap breathing, voice and movement with a gentle two-minute warm-up routine.",
+     "p": [
+      "You have four voice controls: breath, pitch, volume and pace, powered by belly breathing.",
+      "You can warm up, speak clearly with tongue twisters and project without shouting.",
+      "Your face, posture and use of space all tell the story, big on a stage and smaller on camera."
+     ],
+     "q": "Which exercise from this stretch would you keep in your daily routine?",
+     "c": "Today, run a two-minute routine: belly breaths, shake-out, tongue twister and a confident walk."
+    },
+    "de": {
+     "t": "Mini-Rückblick: Stimme und Körper",
+     "g": "Wiederhole Atmung, Stimme und Bewegung mit einer sanften Zwei-Minuten-Aufwärmroutine.",
+     "p": [
+      "Du hast vier Stimmregler: Atem, Tonhöhe, Lautstärke und Tempo, getragen von der Bauchatmung.",
+      "Du kannst dich aufwärmen, mit Zungenbrechern deutlich sprechen und ohne Schreien projizieren.",
+      "Gesicht, Haltung und Raumnutzung erzählen die Geschichte, groß auf der Bühne und kleiner vor der Kamera."
+     ],
+     "q": "Welche Übung dieser Etappe würdest du in deine tägliche Routine übernehmen?",
+     "c": "Mache heute eine Zwei-Minuten-Routine: Bauchatmung, Ausschütteln, Zungenbrecher und ein selbstbewusster Gang."
+    },
+    "es": {
+     "t": "Mini repaso: voz y cuerpo",
+     "g": "Repasa respiración, voz y movimiento con una suave rutina de calentamiento de dos minutos.",
+     "p": [
+      "Tienes cuatro controles de voz: aliento, tono, volumen y ritmo, impulsados por la respiración abdominal.",
+      "Sabes calentar, hablar con claridad con trabalenguas y proyectar sin gritar.",
+      "Tu rostro, tu postura y el uso del espacio cuentan la historia, grandes en escena y más pequeños ante la cámara."
+     ],
+     "q": "¿Qué ejercicio de este tramo conservarías en tu rutina diaria?",
+     "c": "Hoy haz una rutina de dos minutos: respiraciones abdominales, sacudida, trabalenguas y un paseo seguro."
+    },
+    "fr": {
+     "t": "Mini bilan : voix et corps",
+     "g": "Reprends respiration, voix et mouvement avec une douce routine d'échauffement de deux minutes.",
+     "p": [
+      "Tu as quatre réglages de voix : souffle, hauteur, volume et débit, portés par la respiration ventrale.",
+      "Tu sais t'échauffer, parler clairement avec des virelangues et projeter sans crier.",
+      "Ton visage, ta posture et ton usage de l'espace racontent l'histoire, grands sur scène et plus petits à la caméra."
+     ],
+     "q": "Quel exercice de cette étape garderais-tu dans ta routine quotidienne ?",
+     "c": "Aujourd'hui, fais une routine de deux minutes : respirations ventrales, secousses, virelangue et marche assurée."
+    },
+    "it": {
+     "t": "Mini ripasso: voce e corpo",
+     "g": "Ripassa respiro, voce e movimento con una dolce routine di riscaldamento di due minuti.",
+     "p": [
+      "Hai quattro comandi della voce: respiro, altezza, volume e ritmo, sostenuti dalla respirazione diaframmatica.",
+      "Sai riscaldarti, parlare chiaro con gli scioglilingua e proiettare senza gridare.",
+      "Viso, postura e uso dello spazio raccontano la storia, grandi sul palco e più piccoli in camera."
+     ],
+     "q": "Quale esercizio di questa tappa terresti nella tua routine quotidiana?",
+     "c": "Oggi fai una routine di due minuti: respiri con la pancia, scosse, scioglilingua e una camminata sicura."
+    },
+    "pt": {
+     "t": "Mini revisão: voz e corpo",
+     "g": "Revê respiração, voz e movimento com uma suave rotina de aquecimento de dois minutos.",
+     "p": [
+      "Tens quatro controlos da voz: respiração, tom, volume e ritmo, impulsionados pela respiração abdominal.",
+      "Sabes aquecer, falar com clareza com trava-línguas e projetar sem gritar.",
+      "O teu rosto, postura e uso do espaço contam a história, grandes em palco e menores diante da câmara."
+     ],
+     "q": "Que exercício desta etapa manterias na tua rotina diária?",
+     "c": "Hoje faz uma rotina de dois minutos: respirações abdominais, sacudidelas, trava-línguas e uma caminhada confiante."
+    },
+    "pt_BR": {
+     "t": "Mini revisão: voz e corpo",
+     "g": "Revise respiração, voz e movimento com uma suave rotina de aquecimento de dois minutos.",
+     "p": [
+      "Você tem quatro controles da voz: respiração, tom, volume e ritmo, impulsionados pela respiração abdominal.",
+      "Você sabe aquecer, falar com clareza com trava-línguas e projetar sem gritar.",
+      "Seu rosto, postura e uso do espaço contam a história, grandes no palco e menores diante da câmera."
+     ],
+     "q": "Que exercício desta etapa você manteria na sua rotina diária?",
+     "c": "Hoje faça uma rotina de dois minutos: respirações abdominais, sacudidas, trava-línguas e uma caminhada confiante."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "healthy_eating",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What healthy eating really means",
+     "g": "Understand that eating well is about variety, balance and enjoyment, not strict rules.",
+     "p": [
+      "Healthy eating means a wide variety of foods over days and weeks, not one perfect meal.",
+      "Balance and enjoyment go together: food should taste good and feel good.",
+      "There are no banned foods here, just gentle habits that you build step by step."
+     ],
+     "q": "What is one meal you really enjoy that makes you feel good afterwards?",
+     "c": "Today, add one more colour or one more fresh food to a meal you already like."
+    },
+    "de": {
+     "t": "Was gesunde Ernährung wirklich bedeutet",
+     "g": "Verstehe, dass gutes Essen vor allem Vielfalt, Balance und Genuss heißt, nicht strenge Regeln.",
+     "p": [
+      "Gesund essen heißt, über Tage und Wochen viele verschiedene Lebensmittel zu genießen, nicht eine perfekte Mahlzeit.",
+      "Balance und Genuss gehören zusammen: Essen darf schmecken und guttun.",
+      "Hier ist nichts verboten, es geht um sanfte Gewohnheiten, die du Schritt für Schritt aufbaust."
+     ],
+     "q": "Welche Mahlzeit magst du richtig gern und fühlst dich danach wohl?",
+     "c": "Füge heute einer Mahlzeit, die du magst, eine Farbe oder ein frisches Lebensmittel hinzu."
+    },
+    "es": {
+     "t": "Qué significa de verdad comer sano",
+     "g": "Entiende que comer bien es variedad, equilibrio y disfrute, no reglas estrictas.",
+     "p": [
+      "Comer sano es tomar muchos alimentos distintos a lo largo de días y semanas, no una comida perfecta.",
+      "Equilibrio y disfrute van juntos: la comida debe saber bien y sentar bien.",
+      "Aquí no hay alimentos prohibidos, solo hábitos suaves que construyes paso a paso."
+     ],
+     "q": "¿Qué comida disfrutas de verdad y te hace sentir bien después?",
+     "c": "Hoy añade un color más o un alimento fresco más a una comida que ya te guste."
+    },
+    "fr": {
+     "t": "Ce que manger sainement veut vraiment dire",
+     "g": "Comprends que bien manger, c'est de la variété, de l'équilibre et du plaisir, pas des règles strictes.",
+     "p": [
+      "Manger sainement, c'est varier les aliments sur des jours et des semaines, pas réussir un repas parfait.",
+      "Équilibre et plaisir vont ensemble : un repas doit être bon au goût et bon à vivre.",
+      "Ici, aucun aliment n'est interdit : ce sont de petites habitudes qu'on construit pas à pas."
+     ],
+     "q": "Quel repas aimes-tu vraiment et te fait du bien ensuite ?",
+     "c": "Aujourd'hui, ajoute une couleur ou un aliment frais à un repas que tu aimes déjà."
+    },
+    "it": {
+     "t": "Cosa significa davvero mangiare sano",
+     "g": "Capisci che mangiare bene è varietà, equilibrio e piacere, non regole rigide.",
+     "p": [
+      "Mangiare sano vuol dire alimenti molto vari nell'arco di giorni e settimane, non un pasto perfetto.",
+      "Equilibrio e piacere vanno insieme: il cibo deve essere buono e farti stare bene.",
+      "Qui nessun cibo è vietato: sono piccole abitudini da costruire passo dopo passo."
+     ],
+     "q": "Qual è un pasto che ami davvero e che ti fa sentire bene dopo?",
+     "c": "Oggi aggiungi un colore o un alimento fresco in più a un pasto che già ti piace."
+    },
+    "pt": {
+     "t": "O que significa mesmo comer bem",
+     "g": "Percebe que comer bem é variedade, equilíbrio e prazer, não regras rígidas.",
+     "p": [
+      "Comer bem é ter muitos alimentos diferentes ao longo de dias e semanas, não uma refeição perfeita.",
+      "Equilíbrio e prazer andam juntos: a comida deve saber bem e fazer bem.",
+      "Aqui não há alimentos proibidos, só hábitos suaves que constróis passo a passo."
+     ],
+     "q": "Que refeição aprecias mesmo e te faz sentir bem depois?",
+     "c": "Hoje junta mais uma cor ou um alimento fresco a uma refeição de que já gostas."
+    },
+    "pt_BR": {
+     "t": "O que significa mesmo comer bem",
+     "g": "Entenda que comer bem é variedade, equilíbrio e prazer, não regras rígidas.",
+     "p": [
+      "Comer bem é ter muitos alimentos diferentes ao longo de dias e semanas, não uma refeição perfeita.",
+      "Equilíbrio e prazer andam juntos: a comida deve ser gostosa e fazer bem.",
+      "Aqui não há alimentos proibidos, só hábitos leves que você constrói passo a passo."
+     ],
+     "q": "Que refeição você adora e que faz você se sentir bem depois?",
+     "c": "Hoje acrescente mais uma cor ou um alimento fresco a uma refeição de que você já gosta."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your food story",
+     "g": "Notice the flavours and family meals that shaped the way you eat today.",
+     "p": [
+      "Many of our tastes come from childhood meals, family traditions and the place we grew up.",
+      "Your food story is personal, and nothing in it needs judging.",
+      "Knowing where your habits come from makes it easier to keep what you love."
+     ],
+     "q": "What dish reminds you most of home or of someone you love?",
+     "c": "Today, cook or enjoy one food from your past and notice how it feels."
+    },
+    "de": {
+     "t": "Deine Esskultur",
+     "g": "Erkenne die Geschmäcker und Familienmahlzeiten, die dein heutiges Essen geprägt haben.",
+     "p": [
+      "Viele Vorlieben stammen aus Kindheitsgerichten, Familientraditionen und der Gegend, in der wir aufwuchsen.",
+      "Deine Esskultur ist persönlich, und nichts daran muss bewertet werden.",
+      "Wer weiß, woher seine Gewohnheiten kommen, kann leichter behalten, was er liebt."
+     ],
+     "q": "Welches Gericht erinnert dich am meisten an Zuhause oder an einen lieben Menschen?",
+     "c": "Koche oder genieße heute ein Essen aus deiner Vergangenheit und spüre, wie es sich anfühlt."
+    },
+    "es": {
+     "t": "Tu historia con la comida",
+     "g": "Fíjate en los sabores y las comidas familiares que han moldeado tu forma de comer.",
+     "p": [
+      "Muchos gustos vienen de las comidas de la infancia, las tradiciones familiares y el lugar donde crecimos.",
+      "Tu historia con la comida es personal y nada en ella necesita juicio.",
+      "Saber de dónde vienen tus hábitos te ayuda a conservar lo que te gusta."
+     ],
+     "q": "¿Qué plato te recuerda más a casa o a alguien que quieres?",
+     "c": "Hoy cocina o disfruta un alimento de tu pasado y observa cómo te hace sentir."
+    },
+    "fr": {
+     "t": "Ton histoire avec la nourriture",
+     "g": "Remarque les saveurs et les repas de famille qui ont façonné ta façon de manger.",
+     "p": [
+      "Beaucoup de nos goûts viennent des repas d'enfance, des traditions familiales et du lieu où l'on a grandi.",
+      "Ton histoire alimentaire est personnelle et n'a pas à être jugée.",
+      "Savoir d'où viennent tes habitudes aide à garder ce que tu aimes."
+     ],
+     "q": "Quel plat te rappelle le plus la maison ou une personne chère ?",
+     "c": "Aujourd'hui, cuisine ou savoure un aliment de ton passé et observe ce que tu ressens."
+    },
+    "it": {
+     "t": "La tua storia con il cibo",
+     "g": "Nota i sapori e i pasti di famiglia che hanno plasmato il tuo modo di mangiare.",
+     "p": [
+      "Molti gusti nascono dai pasti dell'infanzia, dalle tradizioni di famiglia e dal luogo in cui siamo cresciuti.",
+      "La tua storia con il cibo è personale e non va giudicata.",
+      "Sapere da dove vengono le tue abitudini aiuta a tenere ciò che ami."
+     ],
+     "q": "Quale piatto ti ricorda di più casa o una persona cara?",
+     "c": "Oggi cucina o gusta un cibo del tuo passato e osserva cosa senti."
+    },
+    "pt": {
+     "t": "A tua história com a comida",
+     "g": "Repara nos sabores e nas refeições de família que moldaram a tua forma de comer.",
+     "p": [
+      "Muitos gostos vêm das refeições da infância, das tradições de família e do sítio onde crescemos.",
+      "A tua história com a comida é pessoal e não precisa de ser julgada.",
+      "Saber de onde vêm os teus hábitos ajuda-te a manter o que gostas."
+     ],
+     "q": "Que prato te lembra mais a casa ou alguém de quem gostas?",
+     "c": "Hoje cozinha ou saboreia um alimento do teu passado e repara como te sentes."
+    },
+    "pt_BR": {
+     "t": "Sua história com a comida",
+     "g": "Perceba os sabores e as refeições em família que moldaram seu jeito de comer.",
+     "p": [
+      "Muitos gostos vêm das refeições da infância, das tradições da família e do lugar onde crescemos.",
+      "Sua história com a comida é pessoal e não precisa ser julgada.",
+      "Saber de onde vêm seus hábitos ajuda a manter o que você ama."
+     ],
+     "q": "Que prato lembra mais a sua casa ou alguém que você ama?",
+     "c": "Hoje cozinhe ou saboreie um alimento do seu passado e perceba como você se sente."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The idea of a balanced plate",
+     "g": "Picture a plate where vegetables, fruit, whole grains and protein foods share the space.",
+     "p": [
+      "Fill about half the plate with vegetables and fruit for colour and fibre.",
+      "Share the rest between whole grains and protein foods such as beans, eggs or fish.",
+      "It is a picture to guide you, not a rule: real meals are rarely exact."
+     ],
+     "q": "What would your favourite dinner look like on a balanced plate?",
+     "c": "At one meal today, look at your plate and see which of the four parts you could add."
+    },
+    "de": {
+     "t": "Die Idee vom ausgewogenen Teller",
+     "g": "Stell dir einen Teller vor, auf dem Gemüse, Obst, Vollkorn und Eiweißlieferanten Platz teilen.",
+     "p": [
+      "Fülle etwa die Hälfte des Tellers mit Gemüse und Obst für Farbe und Ballaststoffe.",
+      "Teile den Rest zwischen Vollkorn und Eiweißquellen wie Hülsenfrüchten, Eiern oder Fisch.",
+      "Es ist ein Leitbild, keine Regel: echte Mahlzeiten sind selten exakt."
+     ],
+     "q": "Wie sähe dein Lieblingsessen auf einem ausgewogenen Teller aus?",
+     "c": "Schau bei einer Mahlzeit heute auf deinen Teller und überlege, welchen Teil du ergänzen könntest."
+    },
+    "es": {
+     "t": "La idea del plato equilibrado",
+     "g": "Imagina un plato donde verduras, fruta, cereales integrales y alimentos proteicos comparten espacio.",
+     "p": [
+      "Llena cerca de la mitad del plato con verduras y fruta para tener color y fibra.",
+      "Reparte el resto entre cereales integrales y proteínas como legumbres, huevos o pescado.",
+      "Es una imagen que guía, no una regla: las comidas reales rara vez son exactas."
+     ],
+     "q": "¿Cómo se vería tu cena favorita en un plato equilibrado?",
+     "c": "En una comida de hoy, mira tu plato y piensa qué parte de las cuatro podrías añadir."
+    },
+    "fr": {
+     "t": "L'idée de l'assiette équilibrée",
+     "g": "Imagine une assiette où légumes, fruits, céréales complètes et aliments protéinés se partagent la place.",
+     "p": [
+      "Remplis environ la moitié de l'assiette de légumes et de fruits pour la couleur et les fibres.",
+      "Partage le reste entre céréales complètes et protéines comme légumineuses, œufs ou poisson.",
+      "C'est une image qui guide, pas une règle : les vrais repas sont rarement exacts."
+     ],
+     "q": "À quoi ressemblerait ton dîner préféré dans une assiette équilibrée ?",
+     "c": "À un repas aujourd'hui, regarde ton assiette et vois quelle partie tu pourrais ajouter."
+    },
+    "it": {
+     "t": "L'idea del piatto equilibrato",
+     "g": "Immagina un piatto dove verdure, frutta, cereali integrali e alimenti proteici condividono lo spazio.",
+     "p": [
+      "Riempi circa metà piatto con verdura e frutta per colore e fibre.",
+      "Dividi il resto tra cereali integrali e proteine come legumi, uova o pesce.",
+      "È un'immagine guida, non una regola: i pasti reali raramente sono esatti."
+     ],
+     "q": "Come sarebbe la tua cena preferita in un piatto equilibrato?",
+     "c": "A un pasto di oggi guarda il piatto e vedi quale delle quattro parti potresti aggiungere."
+    },
+    "pt": {
+     "t": "A ideia do prato equilibrado",
+     "g": "Imagina um prato onde legumes, fruta, cereais integrais e alimentos proteicos partilham o espaço.",
+     "p": [
+      "Enche cerca de metade do prato com legumes e fruta para teres cor e fibra.",
+      "Reparte o resto entre cereais integrais e proteínas como leguminosas, ovos ou peixe.",
+      "É uma imagem que orienta, não uma regra: as refeições reais raramente são exatas."
+     ],
+     "q": "Como seria o teu jantar preferido num prato equilibrado?",
+     "c": "Numa refeição de hoje, olha para o prato e vê qual das quatro partes podes juntar."
+    },
+    "pt_BR": {
+     "t": "A ideia do prato equilibrado",
+     "g": "Imagine um prato onde legumes, frutas, grãos integrais e alimentos proteicos dividem o espaço.",
+     "p": [
+      "Encha cerca de metade do prato com legumes e frutas para ter cor e fibras.",
+      "Divida o resto entre grãos integrais e proteínas como feijão, ovos ou peixe.",
+      "É uma imagem que orienta, não uma regra: refeições reais raramente são exatas."
+     ],
+     "q": "Como seria o seu jantar favorito em um prato equilibrado?",
+     "c": "Em uma refeição de hoje, olhe o prato e veja qual das quatro partes você pode incluir."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Meet the food groups",
+     "g": "Get to know the main food groups and what each one brings to your meals.",
+     "p": [
+      "Vegetables and fruit bring vitamins, minerals and fibre; whole grains bring steady energy.",
+      "Protein foods like beans, eggs, fish and dairy help the body build and repair.",
+      "Each group does something different, which is why variety matters more than any single food."
+     ],
+     "q": "Which food group do you eat most, and which would you like to enjoy more?",
+     "c": "Today, try to include foods from at least three groups in one meal."
+    },
+    "de": {
+     "t": "Die Lebensmittelgruppen kennenlernen",
+     "g": "Lerne die wichtigsten Lebensmittelgruppen kennen und was jede zu deinen Mahlzeiten beiträgt.",
+     "p": [
+      "Gemüse und Obst liefern Vitamine, Mineralstoffe und Ballaststoffe; Vollkorn gibt gleichmäßige Energie.",
+      "Eiweißlieferanten wie Hülsenfrüchte, Eier, Fisch und Milchprodukte helfen dem Körper beim Aufbau.",
+      "Jede Gruppe leistet etwas anderes, darum zählt Vielfalt mehr als ein einzelnes Lebensmittel."
+     ],
+     "q": "Welche Gruppe isst du am häufigsten, und welche möchtest du öfter genießen?",
+     "c": "Bring heute in eine Mahlzeit Lebensmittel aus mindestens drei Gruppen."
+    },
+    "es": {
+     "t": "Conoce los grupos de alimentos",
+     "g": "Conoce los grupos de alimentos principales y lo que cada uno aporta a tus comidas.",
+     "p": [
+      "Verduras y fruta aportan vitaminas, minerales y fibra; los cereales integrales, energía constante.",
+      "Los alimentos proteicos como legumbres, huevos, pescado y lácteos ayudan al cuerpo a construir y reparar.",
+      "Cada grupo hace algo distinto, por eso la variedad importa más que un solo alimento."
+     ],
+     "q": "¿Qué grupo comes más y cuál te gustaría disfrutar más?",
+     "c": "Hoy intenta incluir alimentos de al menos tres grupos en una comida."
+    },
+    "fr": {
+     "t": "À la rencontre des groupes d'aliments",
+     "g": "Découvre les grands groupes d'aliments et ce que chacun apporte à tes repas.",
+     "p": [
+      "Légumes et fruits apportent vitamines, minéraux et fibres ; les céréales complètes, une énergie stable.",
+      "Les aliments protéinés comme légumineuses, œufs, poisson et laitages aident le corps à se construire.",
+      "Chaque groupe a son rôle, c'est pourquoi la variété compte plus qu'un aliment isolé."
+     ],
+     "q": "Quel groupe manges-tu le plus, et lequel aimerais-tu savourer davantage ?",
+     "c": "Aujourd'hui, essaie d'avoir des aliments d'au moins trois groupes dans un repas."
+    },
+    "it": {
+     "t": "Conosci i gruppi alimentari",
+     "g": "Conosci i principali gruppi alimentari e ciò che ognuno porta ai tuoi pasti.",
+     "p": [
+      "Verdura e frutta portano vitamine, minerali e fibre; i cereali integrali, energia costante.",
+      "Gli alimenti proteici come legumi, uova, pesce e latticini aiutano il corpo a costruire e riparare.",
+      "Ogni gruppo fa qualcosa di diverso, per questo la varietà conta più di un singolo cibo."
+     ],
+     "q": "Quale gruppo mangi di più e quale vorresti gustare più spesso?",
+     "c": "Oggi prova a mettere in un pasto alimenti di almeno tre gruppi."
+    },
+    "pt": {
+     "t": "Conhece os grupos de alimentos",
+     "g": "Conhece os principais grupos de alimentos e o que cada um traz às tuas refeições.",
+     "p": [
+      "Legumes e fruta dão vitaminas, minerais e fibra; os cereais integrais dão energia constante.",
+      "Alimentos proteicos como leguminosas, ovos, peixe e laticínios ajudam o corpo a construir e reparar.",
+      "Cada grupo faz algo diferente, por isso a variedade vale mais do que um só alimento."
+     ],
+     "q": "Que grupo comes mais e qual gostarias de apreciar mais vezes?",
+     "c": "Hoje tenta incluir alimentos de pelo menos três grupos numa refeição."
+    },
+    "pt_BR": {
+     "t": "Conheça os grupos de alimentos",
+     "g": "Conheça os principais grupos de alimentos e o que cada um traz às suas refeições.",
+     "p": [
+      "Legumes e frutas dão vitaminas, minerais e fibras; os grãos integrais dão energia constante.",
+      "Alimentos proteicos como feijão, ovos, peixe e laticínios ajudam o corpo a construir e reparar.",
+      "Cada grupo faz algo diferente, por isso a variedade vale mais do que um só alimento."
+     ],
+     "q": "Qual grupo você come mais e qual gostaria de aproveitar mais?",
+     "c": "Hoje tente incluir alimentos de pelo menos três grupos em uma refeição."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Eating the rainbow",
+     "g": "See why different colours of vegetables and fruit offer different nutrients.",
+     "p": [
+      "Red tomatoes, orange carrots, green spinach and purple cabbage each bring their own nutrients.",
+      "Colour is a simple clue: the more colours you enjoy, the more variety you get.",
+      "You do not need all colours every day; aim for a nice mix across the week."
+     ],
+     "q": "Which colour of vegetable or fruit do you eat least often?",
+     "c": "Today, add one colour to your plate that is missing from your usual meals."
+    },
+    "de": {
+     "t": "Iss den Regenbogen",
+     "g": "Sieh, warum verschiedene Farben bei Gemüse und Obst verschiedene Nährstoffe bedeuten.",
+     "p": [
+      "Rote Tomaten, orange Karotten, grüner Spinat und lila Kohl bringen jeweils eigene Nährstoffe mit.",
+      "Farbe ist ein einfacher Hinweis: Je mehr Farben du genießt, desto mehr Vielfalt bekommst du.",
+      "Du brauchst nicht jeden Tag alle Farben; eine schöne Mischung über die Woche genügt."
+     ],
+     "q": "Welche Farbe bei Gemüse oder Obst isst du am seltensten?",
+     "c": "Füge heute eine Farbe auf deinem Teller hinzu, die sonst fehlt."
+    },
+    "es": {
+     "t": "Come el arcoíris",
+     "g": "Descubre por qué los distintos colores de verduras y frutas ofrecen distintos nutrientes.",
+     "p": [
+      "Tomates rojos, zanahorias naranjas, espinacas verdes y col morada aportan cada uno sus nutrientes.",
+      "El color es una pista sencilla: cuantos más colores disfrutes, más variedad tendrás.",
+      "No necesitas todos los colores cada día; busca una buena mezcla a lo largo de la semana."
+     ],
+     "q": "¿Qué color de verdura o fruta comes con menos frecuencia?",
+     "c": "Hoy añade a tu plato un color que suele faltar en tus comidas."
+    },
+    "fr": {
+     "t": "Mange l'arc-en-ciel",
+     "g": "Vois pourquoi les différentes couleurs de légumes et fruits offrent des nutriments différents.",
+     "p": [
+      "Tomates rouges, carottes orange, épinards verts et chou violet apportent chacun leurs nutriments.",
+      "La couleur est un indice simple : plus tu savoures de couleurs, plus tu varies.",
+      "Pas besoin de toutes les couleurs chaque jour ; vise un beau mélange sur la semaine."
+     ],
+     "q": "Quelle couleur de légume ou de fruit manges-tu le moins souvent ?",
+     "c": "Aujourd'hui, ajoute à ton assiette une couleur qui manque d'habitude."
+    },
+    "it": {
+     "t": "Mangia l'arcobaleno",
+     "g": "Scopri perché i diversi colori di verdura e frutta offrono nutrienti diversi.",
+     "p": [
+      "Pomodori rossi, carote arancioni, spinaci verdi e cavolo viola portano ciascuno i propri nutrienti.",
+      "Il colore è un indizio semplice: più colori gusti, più varietà ottieni.",
+      "Non servono tutti i colori ogni giorno; punta a un bel mix nell'arco della settimana."
+     ],
+     "q": "Quale colore di verdura o frutta mangi meno spesso?",
+     "c": "Oggi aggiungi al piatto un colore che di solito manca."
+    },
+    "pt": {
+     "t": "Come o arco-íris",
+     "g": "Descobre porque é que as diferentes cores de legumes e fruta dão nutrientes diferentes.",
+     "p": [
+      "Tomates vermelhos, cenouras laranja, espinafres verdes e couve roxa trazem cada um os seus nutrientes.",
+      "A cor é uma pista simples: quantas mais cores apreciares, mais variedade tens.",
+      "Não precisas de todas as cores todos os dias; procura uma boa mistura ao longo da semana."
+     ],
+     "q": "Que cor de legume ou fruta comes com menos frequência?",
+     "c": "Hoje junta ao prato uma cor que costuma faltar nas tuas refeições."
+    },
+    "pt_BR": {
+     "t": "Coma o arco-íris",
+     "g": "Descubra por que as diferentes cores de legumes e frutas oferecem nutrientes diferentes.",
+     "p": [
+      "Tomates vermelhos, cenouras laranja, espinafre verde e repolho roxo trazem cada um os seus nutrientes.",
+      "A cor é uma pista simples: quanto mais cores você aproveita, mais variedade você tem.",
+      "Você não precisa de todas as cores todo dia; busque uma boa mistura ao longo da semana."
+     ],
+     "q": "Que cor de legume ou fruta você come com menos frequência?",
+     "c": "Hoje inclua no prato uma cor que costuma faltar nas suas refeições."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Water as your everyday drink",
+     "g": "Find simple ways to keep water within reach through the day.",
+     "p": [
+      "Water is a simple, refreshing drink that supports the body all day long.",
+      "Keeping a bottle or glass in sight makes sipping a natural habit.",
+      "Pair water with routines you already have, such as every meal or every break."
+     ],
+     "q": "Where do you spend most of your day, and where could a glass of water sit?",
+     "c": "Fill a bottle or glass this morning and keep it near you today."
+    },
+    "de": {
+     "t": "Wasser als Alltagsgetränk",
+     "g": "Finde einfache Wege, Wasser den ganzen Tag griffbereit zu haben.",
+     "p": [
+      "Wasser ist ein einfaches, erfrischendes Getränk, das den Körper den ganzen Tag unterstützt.",
+      "Eine Flasche oder ein Glas in Sichtweite macht das Trinken zur selbstverständlichen Gewohnheit.",
+      "Verknüpfe Wasser mit vorhandenen Routinen, etwa zu jeder Mahlzeit oder jeder Pause."
+     ],
+     "q": "Wo verbringst du die meiste Zeit des Tages, und wo könnte ein Glas Wasser stehen?",
+     "c": "Fülle heute Morgen eine Flasche oder ein Glas und behalte es in deiner Nähe."
+    },
+    "es": {
+     "t": "El agua como bebida de cada día",
+     "g": "Encuentra formas sencillas de tener agua a mano durante el día.",
+     "p": [
+      "El agua es una bebida sencilla y refrescante que acompaña al cuerpo todo el día.",
+      "Tener una botella o un vaso a la vista hace que beber sea un hábito natural.",
+      "Une el agua a rutinas que ya tienes, como cada comida o cada pausa."
+     ],
+     "q": "¿Dónde pasas la mayor parte del día y dónde podría estar un vaso de agua?",
+     "c": "Llena una botella o un vaso esta mañana y tenlo cerca todo el día."
+    },
+    "fr": {
+     "t": "L'eau, ta boisson de tous les jours",
+     "g": "Trouve des façons simples d'avoir de l'eau à portée de main toute la journée.",
+     "p": [
+      "L'eau est une boisson simple et rafraîchissante qui accompagne le corps toute la journée.",
+      "Une bouteille ou un verre sous les yeux rend le geste de boire naturel.",
+      "Associe l'eau à des routines que tu as déjà, comme chaque repas ou chaque pause."
+     ],
+     "q": "Où passes-tu le plus clair de ta journée, et où pourrait se trouver un verre d'eau ?",
+     "c": "Remplis une bouteille ou un verre ce matin et garde-le près de toi aujourd'hui."
+    },
+    "it": {
+     "t": "L'acqua, la bevanda di ogni giorno",
+     "g": "Trova modi semplici per avere l'acqua a portata di mano durante la giornata.",
+     "p": [
+      "L'acqua è una bevanda semplice e rinfrescante che accompagna il corpo tutto il giorno.",
+      "Una bottiglia o un bicchiere in vista rende naturale bere a piccoli sorsi.",
+      "Abbina l'acqua a routine che hai già, come ogni pasto o ogni pausa."
+     ],
+     "q": "Dove passi la maggior parte della giornata e dove potrebbe stare un bicchiere d'acqua?",
+     "c": "Riempi stamattina una bottiglia o un bicchiere e tienilo vicino per tutto il giorno."
+    },
+    "pt": {
+     "t": "A água como bebida de todos os dias",
+     "g": "Encontra formas simples de ter água à mão durante o dia.",
+     "p": [
+      "A água é uma bebida simples e refrescante que acompanha o corpo o dia todo.",
+      "Ter uma garrafa ou um copo à vista torna o beber um hábito natural.",
+      "Liga a água a rotinas que já tens, como cada refeição ou cada pausa."
+     ],
+     "q": "Onde passas a maior parte do dia e onde podia estar um copo de água?",
+     "c": "Enche hoje de manhã uma garrafa ou um copo e mantém-no perto de ti."
+    },
+    "pt_BR": {
+     "t": "A água como bebida de todo dia",
+     "g": "Encontre formas simples de ter água à mão ao longo do dia.",
+     "p": [
+      "A água é uma bebida simples e refrescante que acompanha o corpo o dia todo.",
+      "Ter uma garrafa ou um copo à vista faz do beber um hábito natural.",
+      "Ligue a água a rotinas que você já tem, como cada refeição ou cada pausa."
+     ],
+     "q": "Onde você passa a maior parte do dia e onde poderia ficar um copo de água?",
+     "c": "Encha uma garrafa ou um copo hoje de manhã e deixe por perto o dia todo."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tasty ways to drink more water",
+     "g": "Make water more inviting with fruit, herbs and warm herbal teas.",
+     "p": [
+      "Slices of lemon, orange or cucumber and a few mint leaves add gentle flavour with no fuss.",
+      "Herbal teas count as a drink too, and a warm cup can feel cosy.",
+      "Sparkling water is another fun option if you like bubbles."
+     ],
+     "q": "Which flavour would you most like to try in your water?",
+     "c": "Make one jug or glass of infused water today and notice how it tastes."
+    },
+    "de": {
+     "t": "Leckere Wege, mehr Wasser zu trinken",
+     "g": "Mach Wasser mit Obst, Kräutern und warmen Kräutertees einladender.",
+     "p": [
+      "Zitronen-, Orangen- oder Gurkenscheiben und ein paar Minzblätter geben mühelos sanften Geschmack.",
+      "Kräutertee zählt auch als Getränk, und eine warme Tasse kann richtig gemütlich sein.",
+      "Sprudelwasser ist eine weitere schöne Option, wenn du Bläschen magst."
+     ],
+     "q": "Welchen Geschmack möchtest du am liebsten in deinem Wasser probieren?",
+     "c": "Mach heute einen Krug oder ein Glas Aromawasser und achte auf den Geschmack."
+    },
+    "es": {
+     "t": "Formas ricas de beber más agua",
+     "g": "Haz el agua más apetecible con fruta, hierbas e infusiones calientes.",
+     "p": [
+      "Rodajas de limón, naranja o pepino y unas hojas de menta dan un sabor suave sin complicaciones.",
+      "Las infusiones de hierbas también cuentan como bebida y una taza caliente resulta acogedora.",
+      "El agua con gas es otra opción divertida si te gustan las burbujas."
+     ],
+     "q": "¿Qué sabor te gustaría probar más en tu agua?",
+     "c": "Prepara hoy una jarra o un vaso de agua aromatizada y fíjate en su sabor."
+    },
+    "fr": {
+     "t": "De bonnes idées pour boire plus d'eau",
+     "g": "Rends l'eau plus attirante avec des fruits, des herbes et des tisanes chaudes.",
+     "p": [
+      "Des rondelles de citron, d'orange ou de concombre et quelques feuilles de menthe parfument l'eau en douceur.",
+      "Les tisanes comptent aussi comme boisson, et une tasse chaude est réconfortante.",
+      "L'eau pétillante est une autre option sympa si tu aimes les bulles."
+     ],
+     "q": "Quel parfum aimerais-tu le plus essayer dans ton eau ?",
+     "c": "Prépare aujourd'hui une carafe ou un verre d'eau infusée et observe son goût."
+    },
+    "it": {
+     "t": "Modi gustosi per bere più acqua",
+     "g": "Rendi l'acqua più invitante con frutta, erbe e tisane calde.",
+     "p": [
+      "Fette di limone, arancia o cetriolo e qualche foglia di menta danno un sapore delicato senza fatica.",
+      "Anche le tisane contano come bevanda e una tazza calda è accogliente.",
+      "L'acqua frizzante è un'altra opzione divertente se ti piacciono le bollicine."
+     ],
+     "q": "Quale gusto proveresti più volentieri nella tua acqua?",
+     "c": "Prepara oggi una caraffa o un bicchiere di acqua aromatizzata e senti il sapore."
+    },
+    "pt": {
+     "t": "Formas saborosas de beber mais água",
+     "g": "Torna a água mais apetecível com fruta, ervas e chás quentes.",
+     "p": [
+      "Rodelas de limão, laranja ou pepino e umas folhas de hortelã dão um sabor suave sem complicações.",
+      "Os chás de ervas também contam como bebida e uma chávena quente é reconfortante.",
+      "A água com gás é outra opção divertida se gostas de bolhinhas."
+     ],
+     "q": "Que sabor gostarias mais de provar na tua água?",
+     "c": "Hoje prepara um jarro ou um copo de água aromatizada e repara no sabor."
+    },
+    "pt_BR": {
+     "t": "Jeitos gostosos de beber mais água",
+     "g": "Deixe a água mais convidativa com frutas, ervas e chás quentes.",
+     "p": [
+      "Fatias de limão, laranja ou pepino e algumas folhas de hortelã dão um sabor leve sem complicação.",
+      "Chás de ervas também contam como bebida e uma xícara quente é aconchegante.",
+      "Água com gás é outra opção divertida se você gosta de bolhinhas."
+     ],
+     "q": "Que sabor você mais gostaria de experimentar na sua água?",
+     "c": "Hoje prepare uma jarra ou um copo de água aromatizada e sinta o sabor."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Regular meal rhythms",
+     "g": "See how a steady rhythm of meals and snacks can help energy feel more even.",
+     "p": [
+      "Eating at fairly regular times can help you avoid becoming overly hungry.",
+      "Rhythms are personal: some people prefer three meals, others smaller, more frequent ones.",
+      "A gentle routine makes it easier to choose what you feel like eating."
+     ],
+     "q": "What does a normal day of meals look like for you right now?",
+     "c": "Today, notice the times you eat and see whether a long gap leaves you very hungry."
+    },
+    "de": {
+     "t": "Regelmäßige Mahlzeiten-Rhythmen",
+     "g": "Sieh, wie ein gleichmäßiger Rhythmus aus Mahlzeiten und Snacks die Energie ausgeglichener machen kann.",
+     "p": [
+      "Zu ziemlich regelmäßigen Zeiten zu essen kann helfen, nicht übermäßig hungrig zu werden.",
+      "Rhythmen sind persönlich: Manche mögen drei Mahlzeiten, andere kleinere und häufigere.",
+      "Eine sanfte Routine erleichtert es, das zu wählen, worauf du Lust hast."
+     ],
+     "q": "Wie sieht ein normaler Tag an Mahlzeiten für dich im Moment aus?",
+     "c": "Achte heute auf deine Essenszeiten und schau, ob eine lange Pause dich sehr hungrig macht."
+    },
+    "es": {
+     "t": "Ritmos regulares de comidas",
+     "g": "Descubre cómo un ritmo constante de comidas y tentempiés puede hacer que la energía sea más pareja.",
+     "p": [
+      "Comer a horas bastante regulares puede ayudarte a no llegar con demasiada hambre.",
+      "El ritmo es personal: a unos les van tres comidas, a otros comidas más pequeñas y frecuentes.",
+      "Una rutina suave facilita elegir lo que de verdad te apetece."
+     ],
+     "q": "¿Cómo es hoy un día normal de comidas para ti?",
+     "c": "Hoy fíjate en tus horarios de comida y mira si una pausa larga te deja con mucha hambre."
+    },
+    "fr": {
+     "t": "Un rythme régulier de repas",
+     "g": "Vois comment un rythme régulier de repas et de collations peut rendre l'énergie plus stable.",
+     "p": [
+      "Manger à des heures assez régulières peut éviter d'arriver trop affamé.",
+      "Le rythme est personnel : certains préfèrent trois repas, d'autres des repas plus petits et plus fréquents.",
+      "Une routine douce aide à choisir ce dont on a vraiment envie."
+     ],
+     "q": "À quoi ressemble une journée normale de repas pour toi en ce moment ?",
+     "c": "Aujourd'hui, note tes heures de repas et vois si une longue pause te rend très affamé."
+    },
+    "it": {
+     "t": "Ritmi regolari dei pasti",
+     "g": "Scopri come un ritmo costante di pasti e spuntini può rendere l'energia più uniforme.",
+     "p": [
+      "Mangiare a orari abbastanza regolari può aiutare a non arrivare troppo affamati.",
+      "Il ritmo è personale: c'è chi preferisce tre pasti e chi pasti più piccoli e frequenti.",
+      "Una routine dolce rende più facile scegliere ciò che hai davvero voglia di mangiare."
+     ],
+     "q": "Com'è oggi una tua giornata tipo di pasti?",
+     "c": "Oggi nota gli orari in cui mangi e vedi se una lunga pausa ti lascia molto affamato."
+    },
+    "pt": {
+     "t": "Ritmos regulares de refeições",
+     "g": "Percebe como um ritmo constante de refeições e lanches pode tornar a energia mais estável.",
+     "p": [
+      "Comer a horas razoavelmente regulares pode ajudar a não chegar com demasiada fome.",
+      "O ritmo é pessoal: uns preferem três refeições, outros refeições mais pequenas e frequentes.",
+      "Uma rotina suave facilita escolher o que realmente te apetece."
+     ],
+     "q": "Como é hoje um dia normal de refeições para ti?",
+     "c": "Hoje repara nas horas a que comes e vê se uma pausa longa te deixa com muita fome."
+    },
+    "pt_BR": {
+     "t": "Ritmos regulares de refeições",
+     "g": "Entenda como um ritmo constante de refeições e lanches pode deixar a energia mais estável.",
+     "p": [
+      "Comer em horários razoavelmente regulares pode ajudar a não chegar com fome demais.",
+      "O ritmo é pessoal: uns preferem três refeições, outros refeições menores e mais frequentes.",
+      "Uma rotina leve facilita escolher o que você realmente tem vontade de comer."
+     ],
+     "q": "Como é hoje um dia normal de refeições para você?",
+     "c": "Hoje observe os horários em que você come e veja se um intervalo longo deixa muita fome."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Listening to hunger and fullness",
+     "g": "Notice gentle hunger signals and the feeling of being comfortably satisfied.",
+     "p": [
+      "Hunger can feel like a rumbling tummy, low energy or trouble focusing.",
+      "Comfortable fullness usually arrives quietly, so a short pause mid-meal helps you notice it.",
+      "There is no right or wrong here; you are simply getting curious about your body."
+     ],
+     "q": "How does hunger usually feel for you, and where do you notice it?",
+     "c": "Before one meal today, pause and rate your hunger from low to high, then check again halfway."
+    },
+    "de": {
+     "t": "Auf Hunger und Sättigung hören",
+     "g": "Nimm sanfte Hungersignale und das Gefühl angenehmer Sättigung wahr.",
+     "p": [
+      "Hunger kann sich wie ein Magenknurren, wenig Energie oder Konzentrationsprobleme anfühlen.",
+      "Angenehme Sättigung kommt meist leise, eine kurze Pause mitten im Essen hilft sie zu bemerken.",
+      "Hier gibt es kein Richtig oder Falsch; du wirst einfach neugierig auf deinen Körper."
+     ],
+     "q": "Wie fühlt sich Hunger für dich meistens an, und wo spürst du ihn?",
+     "c": "Halte heute vor einer Mahlzeit inne, schätze deinen Hunger von niedrig bis hoch ein und prüfe in der Mitte erneut."
+    },
+    "es": {
+     "t": "Escuchar el hambre y la saciedad",
+     "g": "Fíjate en las señales suaves del hambre y en la sensación de estar cómodamente satisfecho.",
+     "p": [
+      "El hambre puede sentirse como ruidos en la tripa, poca energía o dificultad para concentrarse.",
+      "La saciedad cómoda suele llegar en silencio, así que una pausa breve a mitad de la comida ayuda a notarla.",
+      "No hay bien ni mal: simplemente te vuelves curioso sobre tu cuerpo."
+     ],
+     "q": "¿Cómo suele sentirse el hambre para ti y dónde la notas?",
+     "c": "Antes de una comida hoy, haz una pausa y valora tu hambre de baja a alta; revísala a la mitad."
+    },
+    "fr": {
+     "t": "Écouter la faim et la satiété",
+     "g": "Remarque les signaux doux de la faim et la sensation d'être agréablement rassasié.",
+     "p": [
+      "La faim peut se sentir comme un gargouillis, un manque d'énergie ou une difficulté à se concentrer.",
+      "La satiété confortable arrive discrètement : une courte pause en milieu de repas aide à la remarquer.",
+      "Il n'y a ni bien ni mal : tu deviens simplement curieux de ton corps."
+     ],
+     "q": "Comment la faim se manifeste-t-elle chez toi, et où la sens-tu ?",
+     "c": "Avant un repas aujourd'hui, fais une pause, note ta faim de faible à forte, puis revérifie à mi-repas."
+    },
+    "it": {
+     "t": "Ascoltare fame e sazietà",
+     "g": "Nota i segnali gentili della fame e la sensazione di essere comodamente sazi.",
+     "p": [
+      "La fame può sentirsi come un brontolio, poca energia o difficoltà a concentrarsi.",
+      "La sazietà confortevole arriva piano, quindi una breve pausa a metà pasto aiuta a notarla.",
+      "Non c'è giusto o sbagliato: diventi semplicemente curioso del tuo corpo."
+     ],
+     "q": "Come si fa sentire di solito la fame per te e dove la noti?",
+     "c": "Prima di un pasto oggi fai una pausa e valuta la fame da bassa ad alta; ricontrolla a metà."
+    },
+    "pt": {
+     "t": "Ouvir a fome e a saciedade",
+     "g": "Repara nos sinais suaves da fome e na sensação de estar confortavelmente satisfeito.",
+     "p": [
+      "A fome pode sentir-se como barulhos na barriga, pouca energia ou dificuldade em concentrar-te.",
+      "A saciedade confortável costuma chegar em silêncio, por isso uma pausa breve a meio da refeição ajuda a notá-la.",
+      "Não há certo nem errado: ficas apenas curioso sobre o teu corpo."
+     ],
+     "q": "Como costuma sentir-se a fome para ti e onde a notas?",
+     "c": "Antes de uma refeição hoje, faz uma pausa e avalia a fome de baixa a alta; volta a ver a meio."
+    },
+    "pt_BR": {
+     "t": "Ouvir a fome e a saciedade",
+     "g": "Perceba os sinais suaves da fome e a sensação de estar confortavelmente satisfeito.",
+     "p": [
+      "A fome pode parecer um ronco na barriga, pouca energia ou dificuldade de concentração.",
+      "A saciedade confortável costuma chegar em silêncio, então uma pausa breve no meio da refeição ajuda a notar.",
+      "Não há certo nem errado: você só fica curioso sobre o seu corpo."
+     ],
+     "q": "Como a fome costuma ser para você e onde você sente?",
+     "c": "Antes de uma refeição hoje, faça uma pausa e avalie a fome de baixa a alta; confira de novo no meio."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Slowing down at the table",
+     "g": "Chew well, put the fork down and really taste your food.",
+     "p": [
+      "Eating a little slower gives you time to enjoy flavours and textures.",
+      "Putting your fork down between bites is a simple way to find a calmer pace.",
+      "Even five relaxed minutes at the table can change how a meal feels."
+     ],
+     "q": "What is the best-tasting bite you have had this week?",
+     "c": "Take the first three bites of one meal slowly and name the flavours you notice."
+    },
+    "de": {
+     "t": "Am Tisch langsamer werden",
+     "g": "Kaue gut, leg die Gabel ab und schmecke dein Essen wirklich.",
+     "p": [
+      "Etwas langsamer zu essen gibt dir Zeit, Aromen und Texturen zu genießen.",
+      "Die Gabel zwischen den Bissen abzulegen ist ein einfacher Weg zu einem ruhigeren Tempo.",
+      "Schon fünf entspannte Minuten am Tisch können verändern, wie sich eine Mahlzeit anfühlt."
+     ],
+     "q": "Welcher Bissen hat dir diese Woche am besten geschmeckt?",
+     "c": "Iss die ersten drei Bissen einer Mahlzeit langsam und benenne, was du schmeckst."
+    },
+    "es": {
+     "t": "Ir más despacio en la mesa",
+     "g": "Mastica bien, deja el tenedor y saborea de verdad tu comida.",
+     "p": [
+      "Comer un poco más despacio te da tiempo para disfrutar sabores y texturas.",
+      "Dejar el tenedor entre bocado y bocado es una forma sencilla de encontrar un ritmo más calmado.",
+      "Incluso cinco minutos tranquilos en la mesa pueden cambiar cómo se siente una comida."
+     ],
+     "q": "¿Cuál ha sido el bocado más rico que has probado esta semana?",
+     "c": "Toma los tres primeros bocados de una comida despacio y nombra los sabores que notes."
+    },
+    "fr": {
+     "t": "Ralentir à table",
+     "g": "Mâche bien, pose la fourchette et goûte vraiment ton repas.",
+     "p": [
+      "Manger un peu plus lentement laisse le temps d'apprécier saveurs et textures.",
+      "Poser sa fourchette entre deux bouchées est une façon simple de trouver un rythme plus calme.",
+      "Même cinq minutes détendues à table peuvent changer la façon dont un repas se vit."
+     ],
+     "q": "Quelle est la meilleure bouchée que tu aies goûtée cette semaine ?",
+     "c": "Prends lentement les trois premières bouchées d'un repas et nomme les saveurs que tu remarques."
+    },
+    "it": {
+     "t": "Rallentare a tavola",
+     "g": "Mastica bene, posa la forchetta e assapora davvero il tuo cibo.",
+     "p": [
+      "Mangiare un po' più lentamente dà tempo di gustare sapori e consistenze.",
+      "Posare la forchetta tra un boccone e l'altro è un modo semplice per trovare un ritmo più calmo.",
+      "Anche solo cinque minuti rilassati a tavola possono cambiare il modo in cui vivi un pasto."
+     ],
+     "q": "Qual è stato il boccone più buono che hai mangiato questa settimana?",
+     "c": "Mangia lentamente i primi tre bocconi di un pasto e nomina i sapori che senti."
+    },
+    "pt": {
+     "t": "Abrandar à mesa",
+     "g": "Mastiga bem, pousa o garfo e saboreia mesmo a comida.",
+     "p": [
+      "Comer um pouco mais devagar dá tempo para apreciar sabores e texturas.",
+      "Pousar o garfo entre garfadas é uma forma simples de encontrar um ritmo mais calmo.",
+      "Mesmo cinco minutos tranquilos à mesa podem mudar a forma como uma refeição se vive."
+     ],
+     "q": "Qual foi a garfada mais saborosa que provaste esta semana?",
+     "c": "Come devagar as primeiras três garfadas de uma refeição e nomeia os sabores que notas."
+    },
+    "pt_BR": {
+     "t": "Desacelerar à mesa",
+     "g": "Mastigue bem, largue o garfo e saboreie de verdade a comida.",
+     "p": [
+      "Comer um pouco mais devagar dá tempo de aproveitar sabores e texturas.",
+      "Largar o garfo entre as garfadas é um jeito simples de achar um ritmo mais calmo.",
+      "Mesmo cinco minutos tranquilos à mesa podem mudar como a refeição é vivida."
+     ],
+     "q": "Qual foi a garfada mais gostosa que você provou esta semana?",
+     "c": "Coma devagar as três primeiras garfadas de uma refeição e diga os sabores que perceber."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "gratitude",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The gratitude jar",
+     "g": "Write good moments on slips of paper and collect them in a jar.",
+     "p": [
+      "A jar turns passing good moments into something you can see and hold.",
+      "Write one short line and the date on each slip, then drop it in.",
+      "On a tough day, reading a few slips can remind you that good things happen."
+     ],
+     "q": "What would be the first slip you put into your jar?",
+     "c": "Find a jar or box and add your first slip with one good moment from today."
+    },
+    "de": {
+     "t": "Das Dankbarkeitsglas",
+     "g": "Schreibe gute Momente auf Zettel und sammle sie in einem Glas.",
+     "p": [
+      "Ein Glas macht vorbeiziehende gute Momente sichtbar und greifbar.",
+      "Schreibe auf jeden Zettel eine kurze Zeile und das Datum, dann wirf ihn hinein.",
+      "An einem schweren Tag können ein paar Zettel dich daran erinnern, dass Gutes geschieht."
+     ],
+     "q": "Was wäre der erste Zettel in deinem Glas?",
+     "c": "Suche ein Glas oder eine Schachtel und lege deinen ersten Zettel mit einem guten Moment von heute hinein."
+    },
+    "es": {
+     "t": "El frasco de gratitud",
+     "g": "Escribe buenos momentos en papelitos y guárdalos en un frasco.",
+     "p": [
+      "Un frasco convierte buenos momentos pasajeros en algo que puedes ver y sostener.",
+      "Escribe una línea corta y la fecha en cada papel y échalo dentro.",
+      "En un día duro, leer unos papelitos puede recordarte que pasan cosas buenas."
+     ],
+     "q": "¿Cuál sería el primer papelito que meterías en tu frasco?",
+     "c": "Busca un frasco o caja y añade tu primer papelito con un buen momento de hoy."
+    },
+    "fr": {
+     "t": "Le bocal de gratitude",
+     "g": "Écris de bons moments sur des petits papiers et range-les dans un bocal.",
+     "p": [
+      "Un bocal rend visibles et tangibles de bons moments qui passent.",
+      "Écris une courte ligne et la date sur chaque papier, puis glisse-le dedans.",
+      "Un jour difficile, relire quelques papiers peut te rappeler que de bonnes choses arrivent."
+     ],
+     "q": "Quel serait le premier papier que tu mettrais dans ton bocal ?",
+     "c": "Trouve un bocal ou une boîte et ajoute ton premier papier avec un bon moment d'aujourd'hui."
+    },
+    "it": {
+     "t": "Il barattolo della gratitudine",
+     "g": "Scrivi bei momenti su foglietti e raccoglili in un barattolo.",
+     "p": [
+      "Un barattolo rende visibili e tangibili i bei momenti che passano.",
+      "Scrivi una riga breve e la data su ogni foglietto, poi mettilo dentro.",
+      "In un giorno duro, leggere qualche foglietto può ricordarti che succedono cose belle."
+     ],
+     "q": "Quale sarebbe il primo foglietto che metteresti nel barattolo?",
+     "c": "Trova un barattolo o una scatola e aggiungi il primo foglietto con un bel momento di oggi."
+    },
+    "pt": {
+     "t": "O frasco da gratidão",
+     "g": "Escreve bons momentos em papelinhos e guarda-os num frasco.",
+     "p": [
+      "Um frasco torna visíveis e palpáveis bons momentos que passam.",
+      "Escreve uma linha curta e a data em cada papel e deita-o lá dentro.",
+      "Num dia difícil, ler alguns papelinhos pode lembrar-te de que acontecem coisas boas."
+     ],
+     "q": "Qual seria o primeiro papelinho que meterias no frasco?",
+     "c": "Procura um frasco ou caixa e junta o teu primeiro papelinho com um bom momento de hoje."
+    },
+    "pt_BR": {
+     "t": "O pote da gratidão",
+     "g": "Escreva bons momentos em papeizinhos e guarde em um pote.",
+     "p": [
+      "Um pote torna visíveis e palpáveis bons momentos que passam.",
+      "Escreva uma linha curta e a data em cada papel e jogue lá dentro.",
+      "Num dia difícil, ler alguns papeizinhos pode lembrar você de que coisas boas acontecem."
+     ],
+     "q": "Qual seria o primeiro papelzinho que você colocaria no pote?",
+     "c": "Procure um pote ou caixa e coloque seu primeiro papelzinho com um bom momento de hoje."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gratitude photos",
+     "g": "Take one photo a day of something you appreciate.",
+     "p": [
+      "A camera trains your eyes to look for good things during the day.",
+      "Photograph an object, a view or a small scene, not just big moments.",
+      "Looking back through your photos later brings the feelings back."
+     ],
+     "q": "Which photo from your phone makes you feel grateful when you see it?",
+     "c": "Take one photo today of something you appreciate and add a caption of three words."
+    },
+    "de": {
+     "t": "Dankbarkeitsfotos",
+     "g": "Mache jeden Tag ein Foto von etwas, das du schätzt.",
+     "p": [
+      "Eine Kamera schult deine Augen, tagsüber nach Gutem zu suchen.",
+      "Fotografiere einen Gegenstand, eine Aussicht oder eine kleine Szene, nicht nur große Momente.",
+      "Später durch die Fotos zu blättern bringt die Gefühle zurück."
+     ],
+     "q": "Welches Foto auf deinem Handy macht dich dankbar, wenn du es siehst?",
+     "c": "Mache heute ein Foto von etwas, das du schätzt, und gib ihm eine Bildunterschrift aus drei Wörtern."
+    },
+    "es": {
+     "t": "Fotos de gratitud",
+     "g": "Haz una foto al día de algo que valoras.",
+     "p": [
+      "Una cámara entrena tus ojos para buscar cosas buenas durante el día.",
+      "Fotografía un objeto, una vista o una escena pequeña, no solo grandes momentos.",
+      "Mirar tus fotos más tarde devuelve las sensaciones."
+     ],
+     "q": "¿Qué foto de tu móvil te hace sentir agradecimiento al verla?",
+     "c": "Haz hoy una foto de algo que valoras y ponle un título de tres palabras."
+    },
+    "fr": {
+     "t": "Photos de gratitude",
+     "g": "Prends une photo par jour de quelque chose que tu apprécies.",
+     "p": [
+      "Un appareil photo entraîne tes yeux à chercher le beau pendant la journée.",
+      "Photographie un objet, une vue ou une petite scène, pas seulement les grands moments.",
+      "Revoir tes photos plus tard fait revenir les sensations."
+     ],
+     "q": "Quelle photo de ton téléphone te rend reconnaissant quand tu la vois ?",
+     "c": "Prends aujourd'hui une photo de quelque chose que tu apprécies et ajoute une légende de trois mots."
+    },
+    "it": {
+     "t": "Foto di gratitudine",
+     "g": "Scatta una foto al giorno di qualcosa che apprezzi.",
+     "p": [
+      "Una fotocamera allena gli occhi a cercare cose belle durante il giorno.",
+      "Fotografa un oggetto, una vista o una piccola scena, non solo grandi momenti.",
+      "Riguardare le foto più tardi riporta le sensazioni."
+     ],
+     "q": "Quale foto sul tuo telefono ti fa sentire grato quando la vedi?",
+     "c": "Scatta oggi una foto di qualcosa che apprezzi e aggiungi una didascalia di tre parole."
+    },
+    "pt": {
+     "t": "Fotos de gratidão",
+     "g": "Tira uma foto por dia de algo que valorizas.",
+     "p": [
+      "Uma câmara treina os teus olhos para procurarem coisas boas durante o dia.",
+      "Fotografa um objeto, uma vista ou uma cena pequena, não só grandes momentos.",
+      "Ver as fotos mais tarde traz as sensações de volta."
+     ],
+     "q": "Que foto no teu telemóvel te faz sentir gratidão quando a vês?",
+     "c": "Tira hoje uma foto de algo que valorizas e junta uma legenda de três palavras."
+    },
+    "pt_BR": {
+     "t": "Fotos de gratidão",
+     "g": "Tire uma foto por dia de algo que você valoriza.",
+     "p": [
+      "Uma câmera treina seus olhos a procurar coisas boas durante o dia.",
+      "Fotografe um objeto, uma vista ou uma cena pequena, não só grandes momentos.",
+      "Ver as fotos mais tarde traz as sensações de volta."
+     ],
+     "q": "Que foto no seu celular faz você sentir gratidão quando a vê?",
+     "c": "Tire hoje uma foto de algo que você valoriza e acrescente uma legenda de três palavras."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Savouring a good moment",
+     "g": "Stay with a pleasant moment for a few extra breaths.",
+     "p": [
+      "Savouring means deliberately lingering in something pleasant instead of rushing on.",
+      "Give the moment your full attention and notice how it feels in your body.",
+      "Even ten extra seconds makes a good moment last longer in memory."
+     ],
+     "q": "What moment today would you have liked to stay in a bit longer?",
+     "c": "When something pleasant happens today, pause for five slow breaths and just enjoy it."
+    },
+    "de": {
+     "t": "Einen guten Moment auskosten",
+     "g": "Bleibe bei einem angenehmen Moment ein paar Atemzüge länger.",
+     "p": [
+      "Auskosten heißt, bewusst in etwas Angenehmem zu verweilen, statt weiterzueilen.",
+      "Schenke dem Moment deine volle Aufmerksamkeit und spüre, wie er sich im Körper anfühlt.",
+      "Schon zehn Sekunden mehr lassen einen guten Moment länger in Erinnerung bleiben."
+     ],
+     "q": "In welchem Moment heute wärst du gern etwas länger geblieben?",
+     "c": "Wenn heute etwas Angenehmes geschieht, halte fünf langsame Atemzüge inne und genieße es einfach."
+    },
+    "es": {
+     "t": "Saborear un buen momento",
+     "g": "Quédate con un momento agradable unas respiraciones más.",
+     "p": [
+      "Saborear es detenerse a propósito en algo agradable en vez de seguir con prisa.",
+      "Dale al momento toda tu atención y nota cómo se siente en el cuerpo.",
+      "Incluso diez segundos extra hacen que un buen momento dure más en la memoria."
+     ],
+     "q": "¿En qué momento de hoy te habría gustado quedarte un poco más?",
+     "c": "Cuando hoy pase algo agradable, haz una pausa de cinco respiraciones lentas y disfrútalo."
+    },
+    "fr": {
+     "t": "Savourer un bon moment",
+     "g": "Reste dans un moment agréable quelques respirations de plus.",
+     "p": [
+      "Savourer, c'est s'attarder volontairement dans quelque chose d'agréable au lieu de se hâter.",
+      "Donne au moment toute ton attention et remarque ce que tu ressens dans le corps.",
+      "Même dix secondes de plus font durer un bon moment dans la mémoire."
+     ],
+     "q": "Quel moment d'aujourd'hui aurais-tu aimé prolonger un peu ?",
+     "c": "Quand quelque chose d'agréable arrive aujourd'hui, fais une pause de cinq respirations lentes et savoure."
+    },
+    "it": {
+     "t": "Assaporare un bel momento",
+     "g": "Resta in un momento piacevole per qualche respiro in più.",
+     "p": [
+      "Assaporare significa soffermarsi di proposito su qualcosa di piacevole invece di correre oltre.",
+      "Dai al momento tutta la tua attenzione e nota come lo senti nel corpo.",
+      "Anche dieci secondi in più fanno durare un bel momento nella memoria."
+     ],
+     "q": "In quale momento di oggi saresti rimasto volentieri un po' più a lungo?",
+     "c": "Quando oggi succede qualcosa di piacevole, fermati per cinque respiri lenti e goditelo."
+    },
+    "pt": {
+     "t": "Saborear um bom momento",
+     "g": "Fica num momento agradável mais algumas respirações.",
+     "p": [
+      "Saborear é demorar-se de propósito em algo agradável em vez de seguir com pressa.",
+      "Dá ao momento toda a tua atenção e repara como o sentes no corpo.",
+      "Mesmo dez segundos a mais fazem um bom momento durar mais na memória."
+     ],
+     "q": "Em que momento de hoje gostarias de ter ficado um pouco mais?",
+     "c": "Quando hoje acontecer algo agradável, pára cinco respirações lentas e desfruta."
+    },
+    "pt_BR": {
+     "t": "Saboreando um bom momento",
+     "g": "Fique em um momento agradável por mais algumas respirações.",
+     "p": [
+      "Saborear é se demorar de propósito em algo agradável em vez de seguir com pressa.",
+      "Dê ao momento toda a sua atenção e perceba como ele se sente no corpo.",
+      "Mesmo dez segundos a mais fazem um bom momento durar mais na memória."
+     ],
+     "q": "Em que momento de hoje você gostaria de ter ficado um pouco mais?",
+     "c": "Quando algo agradável acontecer hoje, pare por cinco respirações lentas e aproveite."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The negativity bias",
+     "g": "Understand why the mind remembers problems more easily than good things.",
+     "p": [
+      "Our minds evolved to watch for problems, so worries get extra attention.",
+      "It is a normal habit of the mind, not a personal flaw.",
+      "Gratitude practice simply gives good moments an equal chance to be noticed."
+     ],
+     "q": "Do you tend to replay problems or good moments more after a day?",
+     "c": "Tonight, recall one good moment right after you think about a worry."
+    },
+    "de": {
+     "t": "Die Negativitätsneigung",
+     "g": "Verstehe, warum sich der Geist Probleme leichter merkt als Gutes.",
+     "p": [
+      "Unser Geist hat sich entwickelt, um nach Problemen Ausschau zu halten, daher bekommen Sorgen extra Aufmerksamkeit.",
+      "Das ist eine normale Gewohnheit des Geistes, kein persönlicher Mangel.",
+      "Dankbarkeitspraxis gibt guten Momenten einfach die gleiche Chance, bemerkt zu werden."
+     ],
+     "q": "Spielst du nach einem Tag eher Probleme oder gute Momente im Kopf ab?",
+     "c": "Erinnere dich heute Abend direkt nach einer Sorge an einen guten Moment."
+    },
+    "es": {
+     "t": "El sesgo de negatividad",
+     "g": "Entiende por qué la mente recuerda los problemas más fácilmente que lo bueno.",
+     "p": [
+      "Nuestra mente evolucionó para vigilar problemas, así que las preocupaciones reciben más atención.",
+      "Es un hábito normal de la mente, no un defecto personal.",
+      "La práctica de gratitud solo da a los buenos momentos la misma oportunidad de ser notados."
+     ],
+     "q": "¿Sueles repasar más los problemas o los buenos momentos después de un día?",
+     "c": "Esta noche, recuerda un buen momento justo después de pensar en una preocupación."
+    },
+    "fr": {
+     "t": "Le biais de négativité",
+     "g": "Comprends pourquoi l'esprit retient plus facilement les problèmes que le bon.",
+     "p": [
+      "Notre esprit a évolué pour guetter les problèmes, donc les soucis reçoivent plus d'attention.",
+      "C'est une habitude normale de l'esprit, pas un défaut personnel.",
+      "La pratique de la gratitude donne simplement aux bons moments la même chance d'être remarqués."
+     ],
+     "q": "Après une journée, repasses-tu plus souvent les problèmes ou les bons moments ?",
+     "c": "Ce soir, rappelle-toi un bon moment juste après avoir pensé à un souci."
+    },
+    "it": {
+     "t": "La distorsione verso il negativo",
+     "g": "Capisci perché la mente ricorda i problemi più facilmente delle cose belle.",
+     "p": [
+      "La nostra mente si è evoluta per cercare i problemi, quindi le preoccupazioni ricevono più attenzione.",
+      "È un'abitudine normale della mente, non un difetto personale.",
+      "La pratica della gratitudine dà ai bei momenti la stessa possibilità di essere notati."
+     ],
+     "q": "Dopo una giornata, tendi a rivivere più i problemi o i bei momenti?",
+     "c": "Stasera, ricorda un bel momento subito dopo aver pensato a una preoccupazione."
+    },
+    "pt": {
+     "t": "O viés da negatividade",
+     "g": "Percebe porque a mente recorda os problemas mais facilmente do que o que é bom.",
+     "p": [
+      "A nossa mente evoluiu para vigiar problemas, por isso as preocupações recebem mais atenção.",
+      "É um hábito normal da mente, não um defeito pessoal.",
+      "A prática da gratidão só dá aos bons momentos a mesma hipótese de serem notados."
+     ],
+     "q": "Depois de um dia, tendes a repassar mais os problemas ou os bons momentos?",
+     "c": "Esta noite, recorda um bom momento logo depois de pensares numa preocupação."
+    },
+    "pt_BR": {
+     "t": "O viés da negatividade",
+     "g": "Entenda por que a mente lembra dos problemas mais facilmente do que do que é bom.",
+     "p": [
+      "Nossa mente evoluiu para vigiar problemas, por isso as preocupações recebem mais atenção.",
+      "É um hábito normal da mente, não um defeito pessoal.",
+      "A prática da gratidão só dá aos bons momentos a mesma chance de serem notados."
+     ],
+     "q": "Depois de um dia, você costuma reviver mais os problemas ou os bons momentos?",
+     "c": "Hoje à noite, lembre de um bom momento logo depois de pensar em uma preocupação."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Balancing the mental scale",
+     "g": "Gently add good moments to balance a day's worries.",
+     "p": [
+      "Think of a scale: worries on one side, good moments on the other.",
+      "You are not removing worries; you are adding what is also true.",
+      "A few honest good moments can make a heavy day feel less one-sided."
+     ],
+     "q": "Which good moment would you put on the scale after a tiring day?",
+     "c": "Notice one worry today, then name two good things that were also true."
+    },
+    "de": {
+     "t": "Die mentale Waage ausgleichen",
+     "g": "Füge sanft gute Momente hinzu, um die Sorgen eines Tages auszubalancieren.",
+     "p": [
+      "Denke an eine Waage: Sorgen auf der einen Seite, gute Momente auf der anderen.",
+      "Du entfernst keine Sorgen; du fügst hinzu, was auch wahr ist.",
+      "Ein paar ehrliche gute Momente können einen schweren Tag weniger einseitig wirken lassen."
+     ],
+     "q": "Welchen guten Moment würdest du nach einem anstrengenden Tag auf die Waage legen?",
+     "c": "Bemerke heute eine Sorge und nenne dann zwei gute Dinge, die auch wahr waren."
+    },
+    "es": {
+     "t": "Equilibrar la balanza mental",
+     "g": "Añade con suavidad buenos momentos para equilibrar las preocupaciones del día.",
+     "p": [
+      "Piensa en una balanza: preocupaciones en un lado, buenos momentos en el otro.",
+      "No quitas las preocupaciones; añades lo que también es cierto.",
+      "Unos pocos buenos momentos sinceros pueden hacer que un día pesado sea menos unilateral."
+     ],
+     "q": "¿Qué buen momento pondrías en la balanza tras un día agotador?",
+     "c": "Nota hoy una preocupación y nombra luego dos cosas buenas que también eran ciertas."
+    },
+    "fr": {
+     "t": "Équilibrer la balance mentale",
+     "g": "Ajoute doucement de bons moments pour équilibrer les soucis d'une journée.",
+     "p": [
+      "Imagine une balance : les soucis d'un côté, les bons moments de l'autre.",
+      "Tu ne retires pas les soucis ; tu ajoutes ce qui est vrai aussi.",
+      "Quelques bons moments sincères peuvent rendre une journée lourde moins unilatérale."
+     ],
+     "q": "Quel bon moment mettrais-tu sur la balance après une journée fatigante ?",
+     "c": "Remarque aujourd'hui un souci, puis nomme deux bonnes choses qui étaient vraies aussi."
+    },
+    "it": {
+     "t": "Riequilibrare la bilancia mentale",
+     "g": "Aggiungi con dolcezza bei momenti per bilanciare le preoccupazioni della giornata.",
+     "p": [
+      "Pensa a una bilancia: le preoccupazioni da un lato, i bei momenti dall'altro.",
+      "Non togli le preoccupazioni; aggiungi ciò che è altrettanto vero.",
+      "Qualche bel momento sincero può rendere una giornata pesante meno unilaterale."
+     ],
+     "q": "Quale bel momento metteresti sulla bilancia dopo una giornata faticosa?",
+     "c": "Nota oggi una preoccupazione, poi nomina due cose belle che erano ugualmente vere."
+    },
+    "pt": {
+     "t": "Equilibrar a balança mental",
+     "g": "Junta com suavidade bons momentos para equilibrar as preocupações do dia.",
+     "p": [
+      "Pensa numa balança: preocupações de um lado, bons momentos do outro.",
+      "Não tiras as preocupações; juntas o que também é verdade.",
+      "Alguns bons momentos sinceros podem tornar um dia pesado menos unilateral."
+     ],
+     "q": "Que bom momento porias na balança depois de um dia cansativo?",
+     "c": "Repara hoje numa preocupação e diz depois duas coisas boas que também eram verdade."
+    },
+    "pt_BR": {
+     "t": "Equilibrando a balança mental",
+     "g": "Acrescente com suavidade bons momentos para equilibrar as preocupações do dia.",
+     "p": [
+      "Pense numa balança: preocupações de um lado, bons momentos do outro.",
+      "Você não tira as preocupações; acrescenta o que também é verdade.",
+      "Alguns bons momentos sinceros podem deixar um dia pesado menos unilateral."
+     ],
+     "q": "Que bom momento você colocaria na balança depois de um dia cansativo?",
+     "c": "Perceba hoje uma preocupação e diga depois duas coisas boas que também eram verdade."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gratitude on busy days",
+     "g": "Use a one-sentence gratitude practice for days with no free time.",
+     "p": [
+      "On busy days even a tiny practice keeps the habit alive.",
+      "Try one sentence: Right now I appreciate...",
+      "Say it while waiting, walking or standing in a queue."
+     ],
+     "q": "What one sentence of thanks fits your busiest moment today?",
+     "c": "Complete this once today: Right now I appreciate..."
+    },
+    "de": {
+     "t": "Dankbarkeit an vollen Tagen",
+     "g": "Nutze eine Ein-Satz-Dankbarkeitspraxis für Tage ohne freie Zeit.",
+     "p": [
+      "An vollen Tagen hält selbst eine winzige Übung die Gewohnheit am Leben.",
+      "Probiere einen Satz: Gerade schätze ich ...",
+      "Sage ihn beim Warten, Gehen oder in der Schlange."
+     ],
+     "q": "Welcher eine Dank-Satz passt zu deinem vollsten Moment heute?",
+     "c": "Vervollständige heute einmal: Gerade schätze ich ..."
+    },
+    "es": {
+     "t": "Gratitud en días ocupados",
+     "g": "Usa una práctica de gratitud de una frase para días sin tiempo libre.",
+     "p": [
+      "En días ocupados, incluso una práctica diminuta mantiene vivo el hábito.",
+      "Prueba una frase: Ahora mismo valoro...",
+      "Dila mientras esperas, caminas o haces cola."
+     ],
+     "q": "¿Qué frase de agradecimiento encaja con tu momento más ajetreado de hoy?",
+     "c": "Completa una vez hoy: Ahora mismo valoro..."
+    },
+    "fr": {
+     "t": "Gratitude les jours chargés",
+     "g": "Utilise une pratique de gratitude d'une phrase pour les jours sans temps libre.",
+     "p": [
+      "Les jours chargés, même une minuscule pratique garde l'habitude en vie.",
+      "Essaie une phrase : En ce moment, j'apprécie...",
+      "Dis-la en attendant, en marchant ou dans une file."
+     ],
+     "q": "Quelle phrase de remerciement conviendrait à ton moment le plus chargé aujourd'hui ?",
+     "c": "Complète une fois aujourd'hui : En ce moment, j'apprécie..."
+    },
+    "it": {
+     "t": "Gratitudine nei giorni pieni",
+     "g": "Usa una pratica di gratitudine di una frase per i giorni senza tempo libero.",
+     "p": [
+      "Nei giorni pieni anche una pratica minuscola tiene viva l'abitudine.",
+      "Prova una frase: In questo momento apprezzo...",
+      "Dilla mentre aspetti, cammini o sei in fila."
+     ],
+     "q": "Quale frase di ringraziamento si adatta al tuo momento più frenetico di oggi?",
+     "c": "Completa una volta oggi: In questo momento apprezzo..."
+    },
+    "pt": {
+     "t": "Gratidão em dias ocupados",
+     "g": "Usa uma prática de gratidão de uma frase para dias sem tempo livre.",
+     "p": [
+      "Em dias ocupados, até uma prática minúscula mantém o hábito vivo.",
+      "Experimenta uma frase: Neste momento valorizo...",
+      "Di-la enquanto esperas, caminhas ou estás numa fila."
+     ],
+     "q": "Que frase de agradecimento se ajusta ao teu momento mais atarefado de hoje?",
+     "c": "Completa uma vez hoje: Neste momento valorizo..."
+    },
+    "pt_BR": {
+     "t": "Gratidão em dias corridos",
+     "g": "Use uma prática de gratidão de uma frase para dias sem tempo livre.",
+     "p": [
+      "Em dias corridos, até uma prática minúscula mantém o hábito vivo.",
+      "Experimente uma frase: Neste momento eu valorizo...",
+      "Diga enquanto espera, caminha ou está numa fila."
+     ],
+     "q": "Que frase de agradecimento combina com seu momento mais corrido de hoje?",
+     "c": "Complete uma vez hoje: Neste momento eu valorizo..."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Simple pleasures",
+     "g": "Celebrate a favourite song, a good joke or a patch of sunshine.",
+     "p": [
+      "Simple pleasures are free, quick and always within reach.",
+      "Naming them out loud makes them count more.",
+      "Make a tiny list of five pleasures that always cheer you up."
+     ],
+     "q": "Which simple pleasure never fails to cheer you up?",
+     "c": "Treat yourself to one simple pleasure today and notice it fully while it lasts."
+    },
+    "de": {
+     "t": "Einfache Freuden",
+     "g": "Feiere ein Lieblingslied, einen guten Witz oder einen Fleck Sonnenschein.",
+     "p": [
+      "Einfache Freuden sind kostenlos, schnell und immer in Reichweite.",
+      "Sie laut zu benennen lässt sie mehr zählen.",
+      "Mache eine kleine Liste mit fünf Freuden, die dich immer aufheitern."
+     ],
+     "q": "Welche einfache Freude heitert dich immer auf?",
+     "c": "Gönne dir heute eine einfache Freude und nimm sie ganz wahr, solange sie dauert."
+    },
+    "es": {
+     "t": "Placeres sencillos",
+     "g": "Celebra una canción favorita, un buen chiste o un rayo de sol.",
+     "p": [
+      "Los placeres sencillos son gratis, rápidos y siempre están a mano.",
+      "Nombrarlos en voz alta hace que cuenten más.",
+      "Haz una lista pequeña de cinco placeres que siempre te animan."
+     ],
+     "q": "¿Qué placer sencillo nunca falla en animarte?",
+     "c": "Regálate hoy un placer sencillo y fíjate en él por completo mientras dure."
+    },
+    "fr": {
+     "t": "Plaisirs simples",
+     "g": "Célèbre une chanson préférée, une bonne blague ou un rayon de soleil.",
+     "p": [
+      "Les plaisirs simples sont gratuits, rapides et toujours à portée.",
+      "Les nommer à voix haute les fait compter davantage.",
+      "Fais une petite liste de cinq plaisirs qui te remontent toujours le moral."
+     ],
+     "q": "Quel plaisir simple te remonte toujours le moral ?",
+     "c": "Offre-toi un plaisir simple aujourd'hui et remarque-le pleinement tant qu'il dure."
+    },
+    "it": {
+     "t": "Piaceri semplici",
+     "g": "Celebra una canzone preferita, una buona battuta o un raggio di sole.",
+     "p": [
+      "I piaceri semplici sono gratuiti, rapidi e sempre a portata di mano.",
+      "Nominarli ad alta voce li fa contare di più.",
+      "Fai una piccola lista di cinque piaceri che ti tirano sempre su."
+     ],
+     "q": "Quale piacere semplice ti tira sempre su?",
+     "c": "Concediti oggi un piacere semplice e notalo pienamente finché dura."
+    },
+    "pt": {
+     "t": "Prazeres simples",
+     "g": "Celebra uma canção preferida, uma boa piada ou um raio de sol.",
+     "p": [
+      "Os prazeres simples são grátis, rápidos e estão sempre ao alcance.",
+      "Dizê-los em voz alta faz com que contem mais.",
+      "Faz uma pequena lista de cinco prazeres que te animam sempre."
+     ],
+     "q": "Que prazer simples nunca falha em animar-te?",
+     "c": "Oferece-te hoje um prazer simples e repara nele por inteiro enquanto durar."
+    },
+    "pt_BR": {
+     "t": "Prazeres simples",
+     "g": "Celebre uma música favorita, uma boa piada ou um raio de sol.",
+     "p": [
+      "Prazeres simples são grátis, rápidos e estão sempre ao alcance.",
+      "Dizê-los em voz alta faz com que contem mais.",
+      "Faça uma pequena lista de cinco prazeres que sempre animam você."
+     ],
+     "q": "Que prazer simples nunca falha em animar você?",
+     "c": "Dê a si mesmo hoje um prazer simples e aproveite por inteiro enquanto durar."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Something new you learned",
+     "g": "Appreciate something new you learned today.",
+     "p": [
+      "Learning something, even a tiny fact, is a gift worth noticing.",
+      "Think of who or what taught you: a person, a video, a mistake.",
+      "Curiosity grows when we pause to appreciate what we picked up."
+     ],
+     "q": "What is the most interesting thing you learned recently?",
+     "c": "Write down one new thing you learned today and who or what helped you learn it."
+    },
+    "de": {
+     "t": "Etwas Neues, das du gelernt hast",
+     "g": "Schätze etwas Neues, das du heute gelernt hast.",
+     "p": [
+      "Etwas zu lernen, selbst eine winzige Tatsache, ist ein Geschenk, das Beachtung verdient.",
+      "Denke daran, wer oder was dich gelehrt hat: ein Mensch, ein Video, ein Fehler.",
+      "Neugier wächst, wenn wir innehalten und schätzen, was wir mitgenommen haben."
+     ],
+     "q": "Was ist das Interessanteste, das du kürzlich gelernt hast?",
+     "c": "Schreibe eine neue Sache auf, die du heute gelernt hast, und wer oder was dir dabei geholfen hat."
+    },
+    "es": {
+     "t": "Algo nuevo que aprendiste",
+     "g": "Valora algo nuevo que aprendiste hoy.",
+     "p": [
+      "Aprender algo, aunque sea un dato diminuto, es un regalo que merece atención.",
+      "Piensa en quién o qué te enseñó: una persona, un vídeo, un error.",
+      "La curiosidad crece cuando nos detenemos a valorar lo que hemos aprendido."
+     ],
+     "q": "¿Qué es lo más interesante que aprendiste últimamente?",
+     "c": "Anota una cosa nueva que aprendiste hoy y quién o qué te ayudó a aprenderla."
+    },
+    "fr": {
+     "t": "Quelque chose de nouveau appris",
+     "g": "Apprécie quelque chose de nouveau que tu as appris aujourd'hui.",
+     "p": [
+      "Apprendre quelque chose, même un petit fait, est un cadeau qui mérite l'attention.",
+      "Pense à qui ou quoi t'a enseigné : une personne, une vidéo, une erreur.",
+      "La curiosité grandit quand on s'arrête pour apprécier ce qu'on a appris."
+     ],
+     "q": "Quelle est la chose la plus intéressante que tu as apprise récemment ?",
+     "c": "Note une chose nouvelle apprise aujourd'hui et qui ou quoi t'a aidé à l'apprendre."
+    },
+    "it": {
+     "t": "Qualcosa di nuovo che hai imparato",
+     "g": "Apprezza qualcosa di nuovo che hai imparato oggi.",
+     "p": [
+      "Imparare qualcosa, anche un piccolo fatto, è un dono che merita attenzione.",
+      "Pensa a chi o cosa ti ha insegnato: una persona, un video, un errore.",
+      "La curiosità cresce quando ci fermiamo ad apprezzare ciò che abbiamo imparato."
+     ],
+     "q": "Qual è la cosa più interessante che hai imparato di recente?",
+     "c": "Annota una cosa nuova imparata oggi e chi o cosa ti ha aiutato a impararla."
+    },
+    "pt": {
+     "t": "Algo novo que aprendeste",
+     "g": "Valoriza algo novo que aprendeste hoje.",
+     "p": [
+      "Aprender algo, mesmo um facto minúsculo, é uma dádiva que merece atenção.",
+      "Pensa em quem ou o quê te ensinou: uma pessoa, um vídeo, um erro.",
+      "A curiosidade cresce quando paramos para valorizar o que aprendemos."
+     ],
+     "q": "Qual é a coisa mais interessante que aprendeste recentemente?",
+     "c": "Anota uma coisa nova que aprendeste hoje e quem ou o quê te ajudou a aprendê-la."
+    },
+    "pt_BR": {
+     "t": "Algo novo que você aprendeu",
+     "g": "Valorize algo novo que você aprendeu hoje.",
+     "p": [
+      "Aprender algo, mesmo um fato minúsculo, é um presente que merece atenção.",
+      "Pense em quem ou o que ensinou você: uma pessoa, um vídeo, um erro.",
+      "A curiosidade cresce quando paramos para valorizar o que aprendemos."
+     ],
+     "q": "Qual é a coisa mais interessante que você aprendeu recentemente?",
+     "c": "Anote uma coisa nova que você aprendeu hoje e quem ou o que ajudou você a aprender."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kindness you received",
+     "g": "Recall a kind act someone did for you recently.",
+     "p": [
+      "Kindness is easy to forget because it often comes quietly.",
+      "Remember what they did, how you felt and what it meant to you.",
+      "Recalling it is a way of thanking them, even in your thoughts."
+     ],
+     "q": "What is a kind thing someone did for you recently?",
+     "c": "Write two lines about a recent kindness, then think of how you might say thanks."
+    },
+    "de": {
+     "t": "Freundlichkeit, die du erfahren hast",
+     "g": "Erinnere dich an eine freundliche Tat, die jemand kürzlich für dich getan hat.",
+     "p": [
+      "Freundlichkeit vergisst man leicht, weil sie oft leise kommt.",
+      "Erinnere dich, was die Person tat, wie du dich fühltest und was es dir bedeutete.",
+      "Sich zu erinnern ist eine Art zu danken, auch nur in Gedanken."
+     ],
+     "q": "Welche freundliche Tat hat jemand kürzlich für dich getan?",
+     "c": "Schreibe zwei Zeilen über eine kürzliche Freundlichkeit und überlege, wie du Danke sagen könntest."
+    },
+    "es": {
+     "t": "Amabilidad que recibiste",
+     "g": "Recuerda un gesto amable que alguien tuvo contigo hace poco.",
+     "p": [
+      "La amabilidad se olvida fácilmente porque suele llegar en silencio.",
+      "Recuerda qué hizo, cómo te sentiste y qué significó para ti.",
+      "Recordarlo es una forma de agradecer, aunque sea en tus pensamientos."
+     ],
+     "q": "¿Qué gesto amable tuvo alguien contigo últimamente?",
+     "c": "Escribe dos líneas sobre una amabilidad reciente y piensa cómo podrías dar las gracias."
+    },
+    "fr": {
+     "t": "Une gentillesse reçue",
+     "g": "Rappelle-toi un geste gentil que quelqu'un a eu pour toi récemment.",
+     "p": [
+      "La gentillesse s'oublie facilement parce qu'elle arrive souvent en silence.",
+      "Souviens-toi de ce que la personne a fait, de ce que tu as ressenti et de ce que cela a signifié.",
+      "Se le rappeler est une façon de remercier, même en pensée."
+     ],
+     "q": "Quel geste gentil quelqu'un a-t-il eu pour toi récemment ?",
+     "c": "Écris deux lignes sur une gentillesse récente et pense à comment tu pourrais dire merci."
+    },
+    "it": {
+     "t": "Una gentilezza ricevuta",
+     "g": "Ricorda un gesto gentile che qualcuno ha avuto per te di recente.",
+     "p": [
+      "La gentilezza si dimentica facilmente perché spesso arriva in silenzio.",
+      "Ricorda cosa ha fatto, come ti sei sentito e cosa ha significato per te.",
+      "Ricordarlo è un modo di ringraziare, anche solo col pensiero."
+     ],
+     "q": "Quale gesto gentile ha avuto qualcuno per te di recente?",
+     "c": "Scrivi due righe su una gentilezza recente e pensa a come potresti dire grazie."
+    },
+    "pt": {
+     "t": "Uma gentileza que recebeste",
+     "g": "Recorda um gesto simpático que alguém teve contigo recentemente.",
+     "p": [
+      "A gentileza esquece-se facilmente porque costuma chegar em silêncio.",
+      "Lembra-te do que a pessoa fez, de como te sentiste e do que significou para ti.",
+      "Recordá-lo é uma forma de agradecer, mesmo só em pensamento."
+     ],
+     "q": "Que gesto simpático alguém teve contigo recentemente?",
+     "c": "Escreve duas linhas sobre uma gentileza recente e pensa em como poderias dizer obrigado."
+    },
+    "pt_BR": {
+     "t": "Uma gentileza que você recebeu",
+     "g": "Lembre de um gesto gentil que alguém teve com você recentemente.",
+     "p": [
+      "A gentileza é fácil de esquecer porque costuma chegar em silêncio.",
+      "Lembre o que a pessoa fez, como você se sentiu e o que isso significou para você.",
+      "Lembrar é uma forma de agradecer, mesmo só em pensamento."
+     ],
+     "q": "Que gesto gentil alguém teve com você recentemente?",
+     "c": "Escreva duas linhas sobre uma gentileza recente e pense em como poderia dizer obrigado."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your first month",
+     "g": "Read back your journal and notice patterns in your good things.",
+     "p": [
+      "After a month you have a small collection of good moments to explore.",
+      "Look for repeats: people, places, activities or times of day.",
+      "Patterns show what nourishes you, which helps you plan more of it."
+     ],
+     "q": "What patterns did you notice in your good things this month?",
+     "c": "Reread your entries and circle the three themes that appear most often."
+    },
+    "de": {
+     "t": "Rückblick: dein erster Monat",
+     "g": "Lies dein Tagebuch noch einmal und erkenne Muster in deinen guten Dingen.",
+     "p": [
+      "Nach einem Monat hast du eine kleine Sammlung guter Momente zum Erkunden.",
+      "Suche Wiederholungen: Menschen, Orte, Tätigkeiten oder Tageszeiten.",
+      "Muster zeigen, was dich nährt, und helfen dir, mehr davon einzuplanen."
+     ],
+     "q": "Welche Muster hast du in deinen guten Dingen diesen Monat bemerkt?",
+     "c": "Lies deine Einträge noch einmal und kreise die drei Themen ein, die am häufigsten vorkommen."
+    },
+    "es": {
+     "t": "Repaso: tu primer mes",
+     "g": "Relee tu diario y fíjate en patrones en tus cosas buenas.",
+     "p": [
+      "Tras un mes tienes una pequeña colección de buenos momentos para explorar.",
+      "Busca repeticiones: personas, lugares, actividades u horas del día.",
+      "Los patrones muestran qué te nutre, lo que ayuda a planear más de eso."
+     ],
+     "q": "¿Qué patrones notaste en tus cosas buenas este mes?",
+     "c": "Relee tus entradas y rodea los tres temas que aparecen con más frecuencia."
+    },
+    "fr": {
+     "t": "Bilan : ton premier mois",
+     "g": "Relis ton journal et repère des motifs dans tes bonnes choses.",
+     "p": [
+      "Après un mois, tu as une petite collection de bons moments à explorer.",
+      "Cherche les répétitions : personnes, lieux, activités ou moments de la journée.",
+      "Les motifs montrent ce qui te nourrit, ce qui aide à en prévoir davantage."
+     ],
+     "q": "Quels motifs as-tu remarqués dans tes bonnes choses ce mois-ci ?",
+     "c": "Relis tes entrées et entoure les trois thèmes qui reviennent le plus souvent."
+    },
+    "it": {
+     "t": "Ripasso: il tuo primo mese",
+     "g": "Rileggi il diario e nota gli schemi nelle tue cose belle.",
+     "p": [
+      "Dopo un mese hai una piccola raccolta di bei momenti da esplorare.",
+      "Cerca le ripetizioni: persone, luoghi, attività o momenti della giornata.",
+      "Gli schemi mostrano cosa ti nutre, e ti aiutano a pianificarne di più."
+     ],
+     "q": "Quali schemi hai notato nelle tue cose belle questo mese?",
+     "c": "Rileggi le voci e cerchia i tre temi che compaiono più spesso."
+    },
+    "pt": {
+     "t": "Revisão: o teu primeiro mês",
+     "g": "Relê o teu diário e repara em padrões nas tuas coisas boas.",
+     "p": [
+      "Passado um mês tens uma pequena coleção de bons momentos para explorar.",
+      "Procura repetições: pessoas, lugares, atividades ou horas do dia.",
+      "Os padrões mostram o que te nutre, o que ajuda a planear mais disso."
+     ],
+     "q": "Que padrões notaste nas tuas coisas boas este mês?",
+     "c": "Relê as tuas entradas e rodeia os três temas que aparecem com mais frequência."
+    },
+    "pt_BR": {
+     "t": "Revisão: seu primeiro mês",
+     "g": "Releia seu diário e perceba padrões nas suas coisas boas.",
+     "p": [
+      "Depois de um mês você tem uma pequena coleção de bons momentos para explorar.",
+      "Procure repetições: pessoas, lugares, atividades ou horários do dia.",
+      "Os padrões mostram o que nutre você, o que ajuda a planejar mais disso."
+     ],
+     "q": "Que padrões você percebeu nas suas coisas boas este mês?",
+     "c": "Releia suas entradas e circule os três temas que aparecem com mais frequência."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "movies",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "German Expressionism",
+     "g": "Explore bold shadows and stylised sets in 1920s German cinema.",
+     "p": [
+      "Expressionist films used distorted sets and painted shadows to show inner feelings.",
+      "The Cabinet of Dr. Caligari from 1920 is the famous early example.",
+      "Its look influenced later film lighting and design around the world."
+     ],
+     "q": "Do you prefer realistic or highly stylised images in films?",
+     "c": "Draw a room with slanted walls and sharp shadows to show a mood."
+    },
+    "de": {
+     "t": "Deutscher Expressionismus",
+     "g": "Entdecke kühne Schatten und stilisierte Kulissen im deutschen Kino der 1920er.",
+     "p": [
+      "Expressionistische Filme nutzten verzerrte Bauten und gemalte Schatten für innere Gefühle.",
+      "Das Cabinet des Dr. Caligari von 1920 ist das berühmte frühe Beispiel.",
+      "Sein Look prägte später Filmlicht und Design weltweit."
+     ],
+     "q": "Magst du lieber realistische oder stark stilisierte Bilder?",
+     "c": "Zeichne einen Raum mit schiefen Wänden und scharfen Schatten, um eine Stimmung zu zeigen."
+    },
+    "es": {
+     "t": "El expresionismo alemán",
+     "g": "Explora sombras audaces y decorados estilizados en el cine alemán de los años veinte.",
+     "p": [
+      "Las películas expresionistas usaban decorados deformados y sombras pintadas para mostrar emociones internas.",
+      "El gabinete del doctor Caligari, de 1920, es el famoso ejemplo temprano.",
+      "Su aspecto influyó después en la iluminación y el diseño del cine mundial."
+     ],
+     "q": "¿Prefieres imágenes realistas o muy estilizadas en el cine?",
+     "c": "Dibuja una habitación con paredes inclinadas y sombras marcadas para mostrar un ánimo."
+    },
+    "fr": {
+     "t": "L'expressionnisme allemand",
+     "g": "Explore ombres marquées et décors stylisés du cinéma allemand des années 1920.",
+     "p": [
+      "Les films expressionnistes usaient de décors déformés et d'ombres peintes pour dire les émotions intérieures.",
+      "Le Cabinet du docteur Caligari, de 1920, en est l'exemple célèbre.",
+      "Son style a influencé l'éclairage et le décor au cinéma dans le monde entier."
+     ],
+     "q": "Préfères-tu des images réalistes ou très stylisées au cinéma ?",
+     "c": "Dessine une pièce aux murs penchés et aux ombres vives pour exprimer une humeur."
+    },
+    "it": {
+     "t": "L'espressionismo tedesco",
+     "g": "Esplora ombre audaci e scenografie stilizzate nel cinema tedesco degli anni Venti.",
+     "p": [
+      "I film espressionisti usavano scenari distorti e ombre dipinte per mostrare emozioni interiori.",
+      "Il gabinetto del dottor Caligari, del 1920, è il celebre esempio precoce.",
+      "Il suo aspetto influenzò poi illuminazione e design del cinema nel mondo."
+     ],
+     "q": "Preferisci immagini realistiche o molto stilizzate nei film?",
+     "c": "Disegna una stanza con pareti inclinate e ombre nette per mostrare uno stato d'animo."
+    },
+    "pt": {
+     "t": "O expressionismo alemão",
+     "g": "Explora sombras ousadas e cenários estilizados no cinema alemão dos anos 1920.",
+     "p": [
+      "Os filmes expressionistas usavam cenários distorcidos e sombras pintadas para mostrar emoções interiores.",
+      "O Gabinete do Dr. Caligari, de 1920, é o famoso exemplo inicial.",
+      "O seu aspeto influenciou depois a iluminação e o design do cinema mundial."
+     ],
+     "q": "Preferes imagens realistas ou muito estilizadas no cinema?",
+     "c": "Desenha uma sala com paredes inclinadas e sombras fortes para mostrar um estado de espírito."
+    },
+    "pt_BR": {
+     "t": "O expressionismo alemão",
+     "g": "Explore sombras ousadas e cenários estilizados no cinema alemão dos anos 1920.",
+     "p": [
+      "Filmes expressionistas usavam cenários distorcidos e sombras pintadas para mostrar emoções internas.",
+      "O Gabinete do Dr. Caligari, de 1920, é o famoso exemplo inicial.",
+      "Seu visual influenciou depois a iluminação e o design do cinema mundial."
+     ],
+     "q": "Você prefere imagens realistas ou muito estilizadas no cinema?",
+     "c": "Desenhe uma sala com paredes inclinadas e sombras fortes para mostrar um clima."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Metropolis and early sci-fi",
+     "g": "Discover Fritz Lang's 1927 vision of a futuristic city.",
+     "p": [
+      "Metropolis, directed by Fritz Lang, imagined a towering city split between thinkers and workers.",
+      "Its huge sets, miniatures and trick photography were groundbreaking for the time.",
+      "The robot Maria became one of cinema's most influential designs."
+     ],
+     "q": "What would a city of the future look like in your film?",
+     "c": "Sketch a future city in one drawing, with at least three layers."
+    },
+    "de": {
+     "t": "Metropolis und frühe Science-Fiction",
+     "g": "Entdecke Fritz Langs Vision einer Zukunftsstadt von 1927.",
+     "p": [
+      "Metropolis unter Fritz Lang erträumte eine Hochhausstadt, geteilt zwischen Denkern und Arbeitern.",
+      "Riesige Bauten, Miniaturen und Trickaufnahmen waren damals bahnbrechend.",
+      "Die Roboterfigur Maria wurde zu einem der einflussreichsten Designs des Kinos."
+     ],
+     "q": "Wie sähe die Stadt der Zukunft in deinem Film aus?",
+     "c": "Skizziere in einer Zeichnung eine Zukunftsstadt mit mindestens drei Ebenen."
+    },
+    "es": {
+     "t": "Metrópolis y la ciencia ficción temprana",
+     "g": "Descubre la visión de ciudad futurista de Fritz Lang en 1927.",
+     "p": [
+      "Metrópolis, de Fritz Lang, imaginó una ciudad gigantesca dividida entre pensadores y obreros.",
+      "Sus enormes decorados, maquetas y trucos fotográficos fueron pioneros para la época.",
+      "La robot María se volvió uno de los diseños más influyentes del cine."
+     ],
+     "q": "¿Cómo sería la ciudad del futuro en tu película?",
+     "c": "Dibuja una ciudad futura en un solo dibujo, con al menos tres niveles."
+    },
+    "fr": {
+     "t": "Metropolis et la science-fiction naissante",
+     "g": "Découvre la vision d'une ville futuriste par Fritz Lang en 1927.",
+     "p": [
+      "Metropolis, de Fritz Lang, imaginait une cité de gratte-ciel partagée entre penseurs et ouvriers.",
+      "Ses décors géants, maquettes et trucages étaient novateurs pour l'époque.",
+      "Le robot Maria est devenu l'un des designs les plus influents du cinéma."
+     ],
+     "q": "À quoi ressemblerait la ville du futur dans ton film ?",
+     "c": "Dessine une ville du futur sur une seule image, avec au moins trois niveaux."
+    },
+    "it": {
+     "t": "Metropolis e la prima fantascienza",
+     "g": "Scopri la visione di Fritz Lang di una città futuristica nel 1927.",
+     "p": [
+      "Metropolis, di Fritz Lang, immaginava una città immensa divisa tra pensatori e lavoratori.",
+      "Enormi scenografie, miniature e trucchi fotografici erano rivoluzionari per l'epoca.",
+      "Il robot Maria divenne uno dei design più influenti del cinema."
+     ],
+     "q": "Come sarebbe la città del futuro nel tuo film?",
+     "c": "Schizza una città futura in un solo disegno, con almeno tre livelli."
+    },
+    "pt": {
+     "t": "Metrópolis e a primeira ficção científica",
+     "g": "Descobre a visão de Fritz Lang de uma cidade futurista em 1927.",
+     "p": [
+      "Metrópolis, de Fritz Lang, imaginou uma cidade gigantesca dividida entre pensadores e operários.",
+      "Os cenários enormes, maquetas e truques fotográficos foram pioneiros para a época.",
+      "A robô Maria tornou-se um dos designs mais influentes do cinema."
+     ],
+     "q": "Como seria a cidade do futuro no teu filme?",
+     "c": "Esboça uma cidade futura num só desenho, com pelo menos três níveis."
+    },
+    "pt_BR": {
+     "t": "Metrópolis e a primeira ficção científica",
+     "g": "Descubra a visão de Fritz Lang de uma cidade futurista em 1927.",
+     "p": [
+      "Metrópolis, de Fritz Lang, imaginou uma cidade gigantesca dividida entre pensadores e operários.",
+      "Os cenários enormes, maquetes e truques fotográficos foram pioneiros para a época.",
+      "A robô Maria virou um dos designs mais influentes do cinema."
+     ],
+     "q": "Como seria a cidade do futuro no seu filme?",
+     "c": "Esboce uma cidade futura num só desenho, com pelo menos três níveis."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Soviet montage",
+     "g": "See how editing pioneers like Eisenstein used cuts to create meaning.",
+     "p": [
+      "In the 1920s, Soviet filmmakers believed meaning comes from joining shots together.",
+      "Sergei Eisenstein's Battleship Potemkin from 1925 is the best-known example.",
+      "Colliding two images can create a third idea in the viewer's mind."
+     ],
+     "q": "Can two unrelated pictures together suggest a new idea to you?",
+     "c": "Place two photos side by side and write what idea they create together."
+    },
+    "de": {
+     "t": "Sowjetische Montage",
+     "g": "Sieh, wie Schnittpioniere wie Eisenstein mit Schnitten Bedeutung erzeugten.",
+     "p": [
+      "In den 1920ern glaubten sowjetische Filmemacher, Bedeutung entstehe durch das Verbinden von Einstellungen.",
+      "Sergei Eisensteins Panzerkreuzer Potemkin von 1925 ist das bekannteste Beispiel.",
+      "Zwei aufeinanderprallende Bilder können im Kopf des Zuschauers eine dritte Idee erzeugen."
+     ],
+     "q": "Können zwei unverbundene Bilder für dich zusammen eine neue Idee ergeben?",
+     "c": "Leg zwei Fotos nebeneinander und schreib, welche Idee sie zusammen erzeugen."
+    },
+    "es": {
+     "t": "El montaje soviético",
+     "g": "Mira cómo pioneros del montaje como Eisenstein crearon significado con los cortes.",
+     "p": [
+      "En los años veinte, los cineastas soviéticos creían que el significado nace de unir planos.",
+      "El acorazado Potemkin, de Serguéi Eisenstein (1925), es el ejemplo más conocido.",
+      "Chocar dos imágenes puede crear una tercera idea en la mente del espectador."
+     ],
+     "q": "¿Pueden dos imágenes sin relación sugerirte una idea nueva?",
+     "c": "Pon dos fotos juntas y escribe qué idea crean al combinarse."
+    },
+    "fr": {
+     "t": "Le montage soviétique",
+     "g": "Vois comment des pionniers comme Eisenstein créaient du sens par les coupes.",
+     "p": [
+      "Dans les années 1920, les cinéastes soviétiques pensaient que le sens naît de l'union des plans.",
+      "Le Cuirassé Potemkine de Sergueï Eisenstein (1925) en est l'exemple le plus connu.",
+      "Faire se heurter deux images peut créer une troisième idée dans l'esprit du spectateur."
+     ],
+     "q": "Deux images sans lien peuvent-elles te suggérer une idée nouvelle ?",
+     "c": "Place deux photos côte à côte et écris l'idée qu'elles créent ensemble."
+    },
+    "it": {
+     "t": "Il montaggio sovietico",
+     "g": "Scopri come pionieri come Ejzenštejn creavano significato con gli stacchi.",
+     "p": [
+      "Negli anni Venti i registi sovietici credevano che il significato nasca dall'unione delle inquadrature.",
+      "La corazzata Potëmkin di Sergej Ejzenštejn (1925) è l'esempio più noto.",
+      "Scontrare due immagini può creare una terza idea nella mente dello spettatore."
+     ],
+     "q": "Due immagini senza legame possono suggerirti un'idea nuova?",
+     "c": "Metti due foto accanto e scrivi quale idea creano insieme."
+    },
+    "pt": {
+     "t": "A montagem soviética",
+     "g": "Vê como pioneiros como Eisenstein criavam sentido com os cortes.",
+     "p": [
+      "Nos anos 1920, os cineastas soviéticos acreditavam que o sentido nasce da junção de planos.",
+      "O Couraçado Potemkin, de Serguei Eisenstein (1925), é o exemplo mais conhecido.",
+      "Chocar duas imagens pode criar uma terceira ideia na mente do espectador."
+     ],
+     "q": "Duas imagens sem relação podem sugerir-te uma ideia nova?",
+     "c": "Põe duas fotografias lado a lado e escreve que ideia criam juntas."
+    },
+    "pt_BR": {
+     "t": "A montagem soviética",
+     "g": "Veja como pioneiros como Eisenstein criavam sentido com os cortes.",
+     "p": [
+      "Nos anos 1920, os cineastas soviéticos acreditavam que o sentido nasce da junção de planos.",
+      "O Encouraçado Potemkin, de Sergei Eisenstein (1925), é o exemplo mais conhecido.",
+      "Chocar duas imagens pode criar uma terceira ideia na mente do espectador."
+     ],
+     "q": "Duas imagens sem relação podem sugerir uma ideia nova a você?",
+     "c": "Coloque duas fotos lado a lado e escreva que ideia elas criam juntas."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Kuleshov effect",
+     "g": "Learn an experiment showing how editing changes our reading of faces.",
+     "p": [
+      "Lev Kuleshov, a Soviet filmmaker, explored this idea in the 1910s and 1920s.",
+      "The same neutral face is shown next to different images, like a meal or a toy.",
+      "Viewers read different feelings in the face, though it never changed."
+     ],
+     "q": "Have you ever read a character's feelings from what came before or after?",
+     "c": "Pair one neutral face photo with two different pictures and compare your reactions."
+    },
+    "de": {
+     "t": "Der Kuleschow-Effekt",
+     "g": "Lerne ein Experiment kennen, das zeigt, wie Schnitt unsere Deutung von Gesichtern verändert.",
+     "p": [
+      "Lew Kuleschow, ein sowjetischer Filmemacher, erforschte die Idee in den 1910er und 1920er Jahren.",
+      "Dasselbe neutrale Gesicht wird neben verschiedene Bilder gestellt, etwa Mahlzeit oder Spielzeug.",
+      "Zuschauer lasen unterschiedliche Gefühle aus dem Gesicht, obwohl es gleich blieb."
+     ],
+     "q": "Hast du schon einmal Gefühle einer Figur aus dem Davor oder Danach gelesen?",
+     "c": "Kombiniere ein neutrales Gesichtsfoto mit zwei verschiedenen Bildern und vergleiche deine Reaktion."
+    },
+    "es": {
+     "t": "El efecto Kuleshov",
+     "g": "Conoce un experimento que muestra cómo el montaje cambia nuestra lectura de los rostros.",
+     "p": [
+      "Lev Kuleshov, cineasta soviético, exploró esta idea en las décadas de 1910 y 1920.",
+      "El mismo rostro neutro se muestra junto a imágenes distintas, como una comida o un juguete.",
+      "Los espectadores leían emociones distintas en el rostro, aunque nunca cambiaba."
+     ],
+     "q": "¿Has leído alguna vez los sentimientos de un personaje por lo que ocurre antes o después?",
+     "c": "Une una foto de rostro neutro con dos imágenes distintas y compara tus reacciones."
+    },
+    "fr": {
+     "t": "L'effet Koulechov",
+     "g": "Découvre une expérience montrant comment le montage change notre lecture des visages.",
+     "p": [
+      "Lev Koulechov, cinéaste soviétique, a exploré cette idée dans les années 1910 et 1920.",
+      "Un même visage neutre est montré à côté d'images différentes, comme un repas ou un jouet.",
+      "Les spectateurs lisaient des émotions différentes sur le visage, qui n'avait pas changé."
+     ],
+     "q": "As-tu déjà lu les sentiments d'un personnage grâce à ce qui précède ou suit ?",
+     "c": "Associe une photo de visage neutre à deux images différentes et compare tes réactions."
+    },
+    "it": {
+     "t": "L'effetto Kulešov",
+     "g": "Scopri un esperimento che mostra come il montaggio cambi la lettura dei volti.",
+     "p": [
+      "Lev Kulešov, regista sovietico, esplorò questa idea negli anni Dieci e Venti.",
+      "Lo stesso volto neutro viene mostrato accanto a immagini diverse, come un pasto o un giocattolo.",
+      "Gli spettatori leggevano emozioni diverse nel volto, che non era mai cambiato."
+     ],
+     "q": "Hai mai letto i sentimenti di un personaggio da ciò che veniva prima o dopo?",
+     "c": "Abbina la foto di un volto neutro a due immagini diverse e confronta le reazioni."
+    },
+    "pt": {
+     "t": "O efeito Kuleshov",
+     "g": "Conhece uma experiência que mostra como a montagem muda a nossa leitura dos rostos.",
+     "p": [
+      "Lev Kuleshov, cineasta soviético, explorou esta ideia nos anos 1910 e 1920.",
+      "O mesmo rosto neutro surge ao lado de imagens diferentes, como uma refeição ou um brinquedo.",
+      "Os espectadores liam emoções diferentes no rosto, embora nunca mudasse."
+     ],
+     "q": "Já leste os sentimentos de uma personagem pelo que veio antes ou depois?",
+     "c": "Junta uma foto de rosto neutro a duas imagens diferentes e compara as reações."
+    },
+    "pt_BR": {
+     "t": "O efeito Kuleshov",
+     "g": "Conheça um experimento que mostra como a montagem muda a nossa leitura dos rostos.",
+     "p": [
+      "Lev Kuleshov, cineasta soviético, explorou essa ideia nos anos 1910 e 1920.",
+      "O mesmo rosto neutro aparece ao lado de imagens diferentes, como uma refeição ou um brinquedo.",
+      "Os espectadores liam emoções diferentes no rosto, embora ele nunca mudasse."
+     ],
+     "q": "Você já leu os sentimentos de um personagem pelo que veio antes ou depois?",
+     "c": "Junte uma foto de rosto neutro a duas imagens diferentes e compare as reações."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The birth of Hollywood",
+     "g": "Find out why American film studios settled in Los Angeles.",
+     "p": [
+      "Early American film grew around New York and New Jersey.",
+      "From about 1910, filmmakers moved west for sunshine, varied scenery and lower costs.",
+      "By the 1920s, Hollywood had become the centre of the American film industry."
+     ],
+     "q": "Where would you build a film studio, and why?",
+     "c": "List three landscapes near you that could be film backdrops."
+    },
+    "de": {
+     "t": "Die Geburt Hollywoods",
+     "g": "Erfahre, warum amerikanische Filmstudios sich in Los Angeles ansiedelten.",
+     "p": [
+      "Der frühe US-Film entstand rund um New York und New Jersey.",
+      "Ab etwa 1910 zogen Filmemacher wegen Sonne, vielfältiger Landschaft und niedrigerer Kosten nach Westen.",
+      "In den 1920ern war Hollywood das Zentrum der amerikanischen Filmindustrie."
+     ],
+     "q": "Wo würdest du ein Filmstudio bauen, und warum?",
+     "c": "Nenne drei Landschaften in deiner Nähe, die Filmkulissen sein könnten."
+    },
+    "es": {
+     "t": "El nacimiento de Hollywood",
+     "g": "Descubre por qué los estudios estadounidenses se instalaron en Los Ángeles.",
+     "p": [
+      "El cine estadounidense temprano creció en torno a Nueva York y Nueva Jersey.",
+      "Desde hacia 1910, los cineastas se mudaron al oeste por el sol, los paisajes variados y los costes menores.",
+      "En los años veinte, Hollywood era el centro de la industria cinematográfica de EE. UU."
+     ],
+     "q": "¿Dónde construirías un estudio de cine y por qué?",
+     "c": "Enumera tres paisajes cercanos que servirían de fondo para una película."
+    },
+    "fr": {
+     "t": "La naissance d'Hollywood",
+     "g": "Découvre pourquoi les studios américains se sont installés à Los Angeles.",
+     "p": [
+      "Le cinéma américain des débuts s'est développé autour de New York et du New Jersey.",
+      "Vers 1910, les cinéastes sont partis vers l'ouest pour le soleil, les paysages variés et les coûts réduits.",
+      "Dans les années 1920, Hollywood était devenu le centre de l'industrie américaine du cinéma."
+     ],
+     "q": "Où construirais-tu un studio de cinéma, et pourquoi ?",
+     "c": "Liste trois paysages près de chez toi qui pourraient servir de décor."
+    },
+    "it": {
+     "t": "La nascita di Hollywood",
+     "g": "Scopri perché gli studi americani si stabilirono a Los Angeles.",
+     "p": [
+      "Il primo cinema americano nacque attorno a New York e al New Jersey.",
+      "Dal 1910 circa i cineasti si spostarono a ovest per sole, paesaggi vari e costi minori.",
+      "Negli anni Venti Hollywood era diventata il centro dell'industria cinematografica americana."
+     ],
+     "q": "Dove costruiresti uno studio cinematografico e perché?",
+     "c": "Elenca tre paesaggi vicino a te che potrebbero fare da sfondo a un film."
+    },
+    "pt": {
+     "t": "O nascimento de Hollywood",
+     "g": "Descobre porque os estúdios americanos se fixaram em Los Angeles.",
+     "p": [
+      "O cinema americano inicial cresceu à volta de Nova Iorque e Nova Jérsia.",
+      "A partir de cerca de 1910, os cineastas foram para oeste pelo sol, paisagens variadas e custos menores.",
+      "Nos anos 1920, Hollywood era o centro da indústria cinematográfica americana."
+     ],
+     "q": "Onde construirias um estúdio de cinema, e porquê?",
+     "c": "Lista três paisagens perto de ti que serviriam de cenário a um filme."
+    },
+    "pt_BR": {
+     "t": "O nascimento de Hollywood",
+     "g": "Descubra por que os estúdios americanos se fixaram em Los Angeles.",
+     "p": [
+      "O cinema americano inicial cresceu em torno de Nova York e Nova Jersey.",
+      "A partir de cerca de 1910, cineastas foram para o oeste atrás de sol, paisagens variadas e custos menores.",
+      "Nos anos 1920, Hollywood era o centro da indústria cinematográfica americana."
+     ],
+     "q": "Onde você construiria um estúdio de cinema, e por quê?",
+     "c": "Liste três paisagens perto de você que serviriam de cenário para um filme."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Early movie stars",
+     "g": "See how audiences began following favourite actors.",
+     "p": [
+      "At first, actors were rarely named on screen or in advertising.",
+      "Audiences asked for their favourites, and studios soon promoted names like Mary Pickford.",
+      "Fan magazines and publicity turned actors into stars."
+     ],
+     "q": "Which actor would you follow in any film?",
+     "c": "Pick an actor you like and list three very different roles they played."
+    },
+    "de": {
+     "t": "Frühe Filmstars",
+     "g": "Sieh, wie das Publikum begann, Lieblingsschauspielern zu folgen.",
+     "p": [
+      "Anfangs wurden Darsteller selten auf der Leinwand oder in der Werbung genannt.",
+      "Das Publikum fragte nach Lieblingen, und Studios bewarben bald Namen wie Mary Pickford.",
+      "Fanzeitschriften und Werbung machten aus Schauspielern Stars."
+     ],
+     "q": "Welchem Schauspieler würdest du in jeden Film folgen?",
+     "c": "Wähl einen Schauspieler, den du magst, und nenne drei sehr verschiedene Rollen von ihm."
+    },
+    "es": {
+     "t": "Las primeras estrellas del cine",
+     "g": "Mira cómo el público empezó a seguir a sus actores favoritos.",
+     "p": [
+      "Al principio los actores casi nunca aparecían con nombre en pantalla ni en la publicidad.",
+      "El público pidió a sus favoritos y pronto los estudios promocionaron nombres como Mary Pickford.",
+      "Las revistas de fans y la publicidad convirtieron a los actores en estrellas."
+     ],
+     "q": "¿A qué actor seguirías en cualquier película?",
+     "c": "Elige un actor que te guste y enumera tres papeles muy distintos suyos."
+    },
+    "fr": {
+     "t": "Les premières stars de cinéma",
+     "g": "Vois comment le public a commencé à suivre ses acteurs préférés.",
+     "p": [
+      "Au début, les acteurs étaient rarement nommés à l'écran ou dans la publicité.",
+      "Le public réclamait ses favoris et les studios ont vite promu des noms comme Mary Pickford.",
+      "Magazines de fans et publicité ont fait des acteurs des stars."
+     ],
+     "q": "Quel acteur suivrais-tu dans n'importe quel film ?",
+     "c": "Choisis un acteur que tu aimes et liste trois rôles très différents qu'il a tenus."
+    },
+    "it": {
+     "t": "I primi divi del cinema",
+     "g": "Scopri come il pubblico iniziò a seguire gli attori preferiti.",
+     "p": [
+      "All'inizio gli attori erano raramente nominati sullo schermo o nella pubblicità.",
+      "Il pubblico chiese i suoi preferiti e gli studi presto promossero nomi come Mary Pickford.",
+      "Riviste per fan e pubblicità trasformarono gli attori in divi."
+     ],
+     "q": "Quale attore seguiresti in qualsiasi film?",
+     "c": "Scegli un attore che ami ed elenca tre ruoli molto diversi che ha interpretato."
+    },
+    "pt": {
+     "t": "As primeiras estrelas de cinema",
+     "g": "Vê como o público começou a seguir os atores preferidos.",
+     "p": [
+      "No início, os atores raramente eram nomeados no ecrã ou na publicidade.",
+      "O público pediu os seus favoritos e os estúdios depressa promoveram nomes como Mary Pickford.",
+      "Revistas de fãs e publicidade transformaram atores em estrelas."
+     ],
+     "q": "Que ator seguirias em qualquer filme?",
+     "c": "Escolhe um ator de que gostes e lista três papéis muito diferentes que fez."
+    },
+    "pt_BR": {
+     "t": "As primeiras estrelas do cinema",
+     "g": "Veja como o público começou a seguir os atores favoritos.",
+     "p": [
+      "No início, os atores raramente eram nomeados na tela ou na publicidade.",
+      "O público pediu seus favoritos e os estúdios logo promoveram nomes como Mary Pickford.",
+      "Revistas de fãs e publicidade transformaram atores em estrelas."
+     ],
+     "q": "Que ator você seguiria em qualquer filme?",
+     "c": "Escolha um ator de quem você gosta e liste três papéis bem diferentes que ele fez."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The arrival of sound",
+     "g": "Learn how The Jazz Singer and talking pictures arrived in 1927.",
+     "p": [
+      "Experiments with recorded sound existed for years before 1927.",
+      "Warner Bros released The Jazz Singer in 1927, with synchronised songs and some speech.",
+      "Audiences loved it, and within a few years most studios switched to sound."
+     ],
+     "q": "How do you think audiences felt hearing actors speak on screen?",
+     "c": "Watch a minute of any film and imagine it exactly as it would sound without voices."
+    },
+    "de": {
+     "t": "Die Ankunft des Tons",
+     "g": "Erfahre, wie Der Jazzsänger und der Tonfilm 1927 kamen.",
+     "p": [
+      "Experimente mit aufgezeichnetem Ton gab es schon Jahre vor 1927.",
+      "Warner Bros brachte 1927 Der Jazzsänger heraus, mit synchronen Liedern und etwas Sprache.",
+      "Das Publikum liebte es, und binnen weniger Jahre stellten die meisten Studios auf Ton um."
+     ],
+     "q": "Wie, glaubst du, fühlte sich das Publikum, als Schauspieler auf der Leinwand sprachen?",
+     "c": "Sieh eine Filmminute und stell dir vor, wie sie ganz ohne Stimmen klänge."
+    },
+    "es": {
+     "t": "La llegada del sonido",
+     "g": "Aprende cómo El cantor de jazz y el cine sonoro llegaron en 1927.",
+     "p": [
+      "Los experimentos con sonido grabado existían años antes de 1927.",
+      "Warner Bros estrenó El cantor de jazz en 1927, con canciones sincronizadas y algo de diálogo.",
+      "El público lo adoró y en pocos años casi todos los estudios pasaron al sonoro."
+     ],
+     "q": "¿Cómo crees que se sintió el público al oír hablar a los actores en pantalla?",
+     "c": "Mira un minuto de cualquier película e imagínala exactamente sin voces."
+    },
+    "fr": {
+     "t": "L'arrivée du son",
+     "g": "Apprends comment Le Chanteur de jazz et le cinéma parlant sont arrivés en 1927.",
+     "p": [
+      "Les expériences de son enregistré existaient des années avant 1927.",
+      "Warner Bros sortit Le Chanteur de jazz en 1927, avec chansons synchronisées et quelques paroles.",
+      "Le public l'adora et en quelques années la plupart des studios passèrent au parlant."
+     ],
+     "q": "Que ressentait le public en entendant parler les acteurs à l'écran, selon toi ?",
+     "c": "Regarde une minute de film et imagine-la sans les voix."
+    },
+    "it": {
+     "t": "L'arrivo del sonoro",
+     "g": "Scopri come Il cantante di jazz e il cinema parlato arrivarono nel 1927.",
+     "p": [
+      "Esperimenti con il suono registrato esistevano da anni prima del 1927.",
+      "La Warner Bros presentò Il cantante di jazz nel 1927, con canzoni sincronizzate e qualche battuta.",
+      "Il pubblico lo adorò e in pochi anni quasi tutti gli studi passarono al sonoro."
+     ],
+     "q": "Come pensi si sia sentito il pubblico sentendo parlare gli attori sullo schermo?",
+     "c": "Guarda un minuto di un film e immaginalo esattamente senza voci."
+    },
+    "pt": {
+     "t": "A chegada do som",
+     "g": "Aprende como O Cantor de Jazz e o cinema sonoro chegaram em 1927.",
+     "p": [
+      "Experiências com som gravado existiam anos antes de 1927.",
+      "A Warner Bros estreou O Cantor de Jazz em 1927, com canções sincronizadas e alguma fala.",
+      "O público adorou e em poucos anos a maioria dos estúdios passou ao sonoro."
+     ],
+     "q": "Como achas que o público se sentiu ao ouvir os atores falar no ecrã?",
+     "c": "Vê um minuto de qualquer filme e imagina-o exatamente sem vozes."
+    },
+    "pt_BR": {
+     "t": "A chegada do som",
+     "g": "Aprenda como O Cantor de Jazz e o cinema falado chegaram em 1927.",
+     "p": [
+      "Experimentos com som gravado existiam anos antes de 1927.",
+      "A Warner Bros lançou O Cantor de Jazz em 1927, com canções sincronizadas e alguma fala.",
+      "O público adorou e em poucos anos a maioria dos estúdios passou ao sonoro."
+     ],
+     "q": "Como você acha que o público se sentiu ao ouvir os atores falarem na tela?",
+     "c": "Assista a um minuto de qualquer filme e imagine ele exatamente sem vozes."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Challenges of early sound",
+     "g": "See how microphones changed acting, sets and camera work.",
+     "p": [
+      "Early microphones were fixed, so actors had to stay near hidden mics.",
+      "Cameras were put in soundproof booths, which limited their movement for a time.",
+      "Soon engineers solved this, and cameras became mobile again."
+     ],
+     "q": "How would you hide a microphone on a set?",
+     "c": "Try recording dialogue in a noisy room and then a quiet one; compare clarity."
+    },
+    "de": {
+     "t": "Probleme des frühen Tonfilms",
+     "g": "Sieh, wie Mikrofone Schauspiel, Kulissen und Kamera veränderten.",
+     "p": [
+      "Frühe Mikrofone waren fest, also mussten Darsteller nahe bei versteckten Mikros bleiben.",
+      "Kameras kamen in schalldichte Kabinen, was ihre Beweglichkeit eine Zeit lang einschränkte.",
+      "Bald lösten Ingenieure das, und Kameras wurden wieder beweglich."
+     ],
+     "q": "Wie würdest du ein Mikrofon am Set verstecken?",
+     "c": "Nimm Dialog in einem lauten und einem leisen Raum auf und vergleiche die Verständlichkeit."
+    },
+    "es": {
+     "t": "Los retos del primer cine sonoro",
+     "g": "Mira cómo los micrófonos cambiaron la actuación, los decorados y la cámara.",
+     "p": [
+      "Los primeros micrófonos eran fijos, así que los actores debían quedarse cerca de los micros ocultos.",
+      "Las cámaras se metían en cabinas insonorizadas, lo que limitó su movimiento un tiempo.",
+      "Pronto los ingenieros lo resolvieron y las cámaras volvieron a moverse."
+     ],
+     "q": "¿Cómo esconderías un micrófono en un decorado?",
+     "c": "Graba un diálogo en una sala ruidosa y en otra tranquila y compara la claridad."
+    },
+    "fr": {
+     "t": "Les défis du premier parlant",
+     "g": "Vois comment les micros ont changé jeu, décors et caméra.",
+     "p": [
+      "Les premiers micros étaient fixes : les acteurs devaient rester près de micros cachés.",
+      "Les caméras furent enfermées dans des cabines insonorisées, ce qui limita un temps leurs mouvements.",
+      "Les ingénieurs ont vite résolu cela et les caméras sont redevenues mobiles."
+     ],
+     "q": "Comment cacherais-tu un micro dans un décor ?",
+     "c": "Enregistre un dialogue dans une pièce bruyante puis dans une pièce calme et compare."
+    },
+    "it": {
+     "t": "Le sfide del primo sonoro",
+     "g": "Scopri come i microfoni cambiarono recitazione, scenografie e camera.",
+     "p": [
+      "I primi microfoni erano fissi, così gli attori dovevano restare vicino ai microfoni nascosti.",
+      "Le camere finirono in cabine insonorizzate, il che limitò per un po' i movimenti.",
+      "Presto gli ingegneri risolsero il problema e le camere tornarono mobili."
+     ],
+     "q": "Come nasconderesti un microfono su un set?",
+     "c": "Registra un dialogo in una stanza rumorosa e in una silenziosa e confronta la chiarezza."
+    },
+    "pt": {
+     "t": "Os desafios do primeiro cinema sonoro",
+     "g": "Vê como os microfones mudaram a representação, os cenários e a câmara.",
+     "p": [
+      "Os primeiros microfones eram fixos, por isso os atores tinham de ficar perto de microfones escondidos.",
+      "As câmaras foram postas em cabines à prova de som, o que limitou o seu movimento por algum tempo.",
+      "Depressa os engenheiros resolveram isso e as câmaras voltaram a mover-se."
+     ],
+     "q": "Como esconderias um microfone num cenário?",
+     "c": "Grava um diálogo numa sala barulhenta e noutra calma e compara a clareza."
+    },
+    "pt_BR": {
+     "t": "Os desafios do primeiro cinema sonoro",
+     "g": "Veja como os microfones mudaram a atuação, os cenários e a câmera.",
+     "p": [
+      "Os primeiros microfones eram fixos, então os atores precisavam ficar perto de microfones escondidos.",
+      "As câmeras foram postas em cabines à prova de som, o que limitou seu movimento por um tempo.",
+      "Logo os engenheiros resolveram isso e as câmeras voltaram a se mover."
+     ],
+     "q": "Como você esconderia um microfone num cenário?",
+     "c": "Grave um diálogo numa sala barulhenta e noutra calma e compare a clareza."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Early animation pioneers",
+     "g": "Follow animation from Winsor McCay to early cartoons.",
+     "p": [
+      "Émile Cohl made Fantasmagorie in 1908, a drawn film of flowing stick-figure shapes.",
+      "Winsor McCay's Gertie the Dinosaur from 1914 gave a drawn creature real personality.",
+      "Felix the Cat became a star of silent cartoons in the 1920s."
+     ],
+     "q": "If you could animate anything, what would it be?",
+     "c": "Make a mini flipbook of a bouncing ball in the corner of a notebook."
+    },
+    "de": {
+     "t": "Frühe Animationspioniere",
+     "g": "Folge der Animation von Winsor McCay bis zu frühen Zeichentrickfilmen.",
+     "p": [
+      "Émile Cohl schuf 1908 Fantasmagorie, einen gezeichneten Film aus fließenden Strichfiguren.",
+      "Winsor McCays Gertie the Dinosaur von 1914 gab einem gezeichneten Wesen echte Persönlichkeit.",
+      "Felix the Cat wurde in den 1920ern zum Star der Stummfilm-Cartoons."
+     ],
+     "q": "Was würdest du animieren, wenn du alles könntest?",
+     "c": "Zeichne ein Mini-Daumenkino eines hüpfenden Balls in die Ecke eines Heftes."
+    },
+    "es": {
+     "t": "Pioneros de la animación",
+     "g": "Sigue la animación desde Winsor McCay hasta los primeros dibujos animados.",
+     "p": [
+      "Émile Cohl hizo Fantasmagorie en 1908, un filme dibujado de formas fluidas de monigotes.",
+      "Gertie the Dinosaur, de Winsor McCay (1914), dio personalidad real a una criatura dibujada.",
+      "El gato Félix fue una estrella de los dibujos animados mudos en los años veinte."
+     ],
+     "q": "Si pudieras animar cualquier cosa, ¿qué sería?",
+     "c": "Haz un mini flipbook de una pelota que rebota en la esquina de un cuaderno."
+    },
+    "fr": {
+     "t": "Les pionniers de l'animation",
+     "g": "Suis l'animation de Winsor McCay aux premiers dessins animés.",
+     "p": [
+      "Émile Cohl réalisa Fantasmagorie en 1908, un film dessiné de silhouettes fluides.",
+      "Gertie the Dinosaur de Winsor McCay (1914) donna une vraie personnalité à une créature dessinée.",
+      "Félix le Chat devint une vedette des dessins animés muets dans les années 1920."
+     ],
+     "q": "Si tu pouvais animer n'importe quoi, que choisirais-tu ?",
+     "c": "Fais un mini folioscope d'une balle qui rebondit dans le coin d'un carnet."
+    },
+    "it": {
+     "t": "I pionieri dell'animazione",
+     "g": "Segui l'animazione da Winsor McCay ai primi cartoni.",
+     "p": [
+      "Émile Cohl realizzò Fantasmagorie nel 1908, un film disegnato di figure fluide.",
+      "Gertie the Dinosaur di Winsor McCay (1914) diede personalità vera a una creatura disegnata.",
+      "Felix il gatto divenne una star dei cartoni muti negli anni Venti."
+     ],
+     "q": "Se potessi animare qualsiasi cosa, cosa sarebbe?",
+     "c": "Fai un mini flipbook di una palla che rimbalza nell'angolo di un quaderno."
+    },
+    "pt": {
+     "t": "Os pioneiros da animação",
+     "g": "Segue a animação de Winsor McCay aos primeiros desenhos animados.",
+     "p": [
+      "Émile Cohl fez Fantasmagorie em 1908, um filme desenhado de figuras fluidas.",
+      "Gertie the Dinosaur, de Winsor McCay (1914), deu personalidade real a uma criatura desenhada.",
+      "O Gato Félix tornou-se uma estrela dos desenhos animados mudos nos anos 1920."
+     ],
+     "q": "Se pudesses animar qualquer coisa, o que seria?",
+     "c": "Faz um mini flipbook de uma bola a saltar no canto de um caderno."
+    },
+    "pt_BR": {
+     "t": "Os pioneiros da animação",
+     "g": "Acompanhe a animação de Winsor McCay aos primeiros desenhos animados.",
+     "p": [
+      "Émile Cohl fez Fantasmagorie em 1908, um filme desenhado de figuras fluidas.",
+      "Gertie the Dinosaur, de Winsor McCay (1914), deu personalidade real a uma criatura desenhada.",
+      "O Gato Félix virou uma estrela dos desenhos mudos nos anos 1920."
+     ],
+     "q": "Se você pudesse animar qualquer coisa, o que seria?",
+     "c": "Faça um mini flipbook de uma bola quicando no canto de um caderno."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Walt Disney and Mickey Mouse",
+     "g": "Learn how Steamboat Willie used synchronised sound in animation.",
+     "p": [
+      "Walt Disney and Ub Iwerks created Mickey Mouse in 1928.",
+      "Steamboat Willie, released in November 1928, matched music and sound effects tightly to action.",
+      "Its success helped make the studio and its characters world famous."
+     ],
+     "q": "Which cartoon character made you laugh as a child?",
+     "c": "Tap a rhythm and move a pencil to it, matching sound to motion."
+    },
+    "de": {
+     "t": "Walt Disney und Micky Maus",
+     "g": "Erfahre, wie Steamboat Willie synchronen Ton in der Animation nutzte.",
+     "p": [
+      "Walt Disney und Ub Iwerks schufen 1928 Micky Maus.",
+      "Steamboat Willie, im November 1928 erschienen, passte Musik und Geräusche eng an die Handlung an.",
+      "Der Erfolg machte das Studio und seine Figuren weltberühmt."
+     ],
+     "q": "Welche Zeichentrickfigur brachte dich als Kind zum Lachen?",
+     "c": "Klopfe einen Rhythmus und bewege einen Stift dazu, Ton und Bewegung abgestimmt."
+    },
+    "es": {
+     "t": "Walt Disney y Mickey Mouse",
+     "g": "Aprende cómo Steamboat Willie usó sonido sincronizado en la animación.",
+     "p": [
+      "Walt Disney y Ub Iwerks crearon a Mickey Mouse en 1928.",
+      "Steamboat Willie, estrenada en noviembre de 1928, ajustaba música y efectos a la acción.",
+      "Su éxito ayudó a que el estudio y sus personajes se hicieran famosos en todo el mundo."
+     ],
+     "q": "¿Qué personaje de dibujos animados te hacía reír de niño?",
+     "c": "Marca un ritmo con golpecitos y mueve un lápiz al compás, igualando sonido y movimiento."
+    },
+    "fr": {
+     "t": "Walt Disney et Mickey Mouse",
+     "g": "Apprends comment Steamboat Willie utilisa le son synchronisé en animation.",
+     "p": [
+      "Walt Disney et Ub Iwerks créèrent Mickey Mouse en 1928.",
+      "Steamboat Willie, sorti en novembre 1928, collait musique et bruitages à l'action.",
+      "Son succès aida le studio et ses personnages à devenir célèbres dans le monde entier."
+     ],
+     "q": "Quel personnage de dessin animé te faisait rire enfant ?",
+     "c": "Tape un rythme et bouge un crayon en cadence, en accordant son et mouvement."
+    },
+    "it": {
+     "t": "Walt Disney e Topolino",
+     "g": "Scopri come Steamboat Willie usò il suono sincronizzato nell'animazione.",
+     "p": [
+      "Walt Disney e Ub Iwerks crearono Topolino nel 1928.",
+      "Steamboat Willie, uscito nel novembre 1928, univa strettamente musica ed effetti all'azione.",
+      "Il successo aiutò lo studio e i suoi personaggi a diventare famosi nel mondo."
+     ],
+     "q": "Quale personaggio dei cartoni ti faceva ridere da bambino?",
+     "c": "Batti un ritmo e muovi una matita a tempo, abbinando suono e movimento."
+    },
+    "pt": {
+     "t": "Walt Disney e o Rato Mickey",
+     "g": "Aprende como Steamboat Willie usou som sincronizado na animação.",
+     "p": [
+      "Walt Disney e Ub Iwerks criaram o Rato Mickey em 1928.",
+      "Steamboat Willie, estreado em novembro de 1928, ajustava música e efeitos à ação.",
+      "O sucesso ajudou o estúdio e as suas personagens a tornarem-se famosos no mundo inteiro."
+     ],
+     "q": "Que personagem de desenhos animados te fazia rir em criança?",
+     "c": "Marca um ritmo com batidas e mexe um lápis a compasso, ligando som e movimento."
+    },
+    "pt_BR": {
+     "t": "Walt Disney e o Mickey Mouse",
+     "g": "Aprenda como Steamboat Willie usou som sincronizado na animação.",
+     "p": [
+      "Walt Disney e Ub Iwerks criaram o Mickey Mouse em 1928.",
+      "Steamboat Willie, lançado em novembro de 1928, ajustava música e efeitos à ação.",
+      "O sucesso ajudou o estúdio e seus personagens a ficarem famosos no mundo todo."
+     ],
+     "q": "Que personagem de desenho animado fazia você rir quando criança?",
+     "c": "Marque um ritmo batendo e mexa um lápis no compasso, ligando som e movimento."
+    }
+   }
+  }
+ ]
+}

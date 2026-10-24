@@ -1,0 +1,835 @@
+{
+ "topic": "parenting_tips",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Keep books at child height in several rooms so reading is always close.",
+      "A regular library visit gives kids choice and a love of borrowing stories.",
+      "Read at breakfast, in the car or while waiting; short moments count."
+     ],
+     "t": "Reading together beyond bedtime",
+     "g": "Make library visits and picture books a natural part of the day.",
+     "q": "Where in your home could you place a basket of books within easy reach?",
+     "c": "Read together for ten minutes at a time other than bedtime today."
+    },
+    "de": {
+     "p": [
+      "Stell Bücher in mehreren Zimmern in Kinderhöhe auf, damit Lesen immer nah ist.",
+      "Ein regelmäßiger Bibliotheksbesuch lässt Kinder wählen und Geschichten ausleihen lieben.",
+      "Lies beim Frühstück, im Auto oder beim Warten; kurze Momente zählen."
+     ],
+     "t": "Gemeinsam lesen, nicht nur abends",
+     "g": "Mach Bibliotheksbesuche und Bilderbücher zu einem selbstverständlichen Teil des Tages.",
+     "q": "Wo in eurer Wohnung könntest du einen Bücherkorb in Reichweite stellen?",
+     "c": "Lest heute zehn Minuten zu einer anderen Zeit als abends."
+    },
+    "es": {
+     "p": [
+      "Pon libros a la altura de los niños en varias habitaciones para que leer esté siempre cerca.",
+      "Una visita regular a la biblioteca les da elección y gusto por tomar prestadas historias.",
+      "Lee en el desayuno, en el coche o mientras esperas; los momentos cortos cuentan."
+     ],
+     "t": "Leer juntos más allá de la hora de dormir",
+     "g": "Haz de las visitas a la biblioteca y los libros ilustrados una parte natural del día.",
+     "q": "¿Dónde de tu casa podrías poner una cesta de libros al alcance?",
+     "c": "Leed hoy juntos diez minutos en un momento distinto a la hora de dormir."
+    },
+    "fr": {
+     "p": [
+      "Mets des livres à hauteur d'enfant dans plusieurs pièces pour que la lecture soit toujours proche.",
+      "Une visite régulière à la bibliothèque donne le choix et le goût d'emprunter des histoires.",
+      "Lis au petit-déjeuner, en voiture ou en attendant ; les moments courts comptent."
+     ],
+     "t": "Lire ensemble au-delà du coucher",
+     "g": "Fais des visites à la bibliothèque et des albums illustrés une partie naturelle de la journée.",
+     "q": "Où chez toi pourrais-tu placer un panier de livres à portée de main ?",
+     "c": "Lisez aujourd'hui dix minutes ensemble à un autre moment qu'au coucher."
+    },
+    "it": {
+     "p": [
+      "Metti libri all'altezza dei bambini in più stanze così la lettura è sempre vicina.",
+      "Una visita regolare in biblioteca dà scelta e il gusto di prendere in prestito storie.",
+      "Leggi a colazione, in auto o mentre aspetti; i momenti brevi contano."
+     ],
+     "t": "Leggere insieme oltre la nanna",
+     "g": "Rendi le visite in biblioteca e i libri illustrati una parte naturale della giornata.",
+     "q": "Dove in casa potresti mettere un cestino di libri a portata di mano?",
+     "c": "Oggi leggete insieme dieci minuti in un momento diverso dalla nanna."
+    },
+    "pt": {
+     "p": [
+      "Põe livros à altura das crianças em várias divisões para a leitura estar sempre perto.",
+      "Uma visita regular à biblioteca dá escolha e o gosto de requisitar histórias.",
+      "Lê ao pequeno-almoço, no carro ou à espera; os momentos curtos contam."
+     ],
+     "t": "Ler juntos para além da hora de deitar",
+     "g": "Faz das visitas à biblioteca e dos livros ilustrados uma parte natural do dia.",
+     "q": "Onde em casa poderias pôr um cesto de livros ao alcance?",
+     "c": "Leiam hoje juntos dez minutos noutro momento que não a hora de deitar."
+    },
+    "pt_BR": {
+     "p": [
+      "Deixe livros na altura das crianças em vários cômodos para a leitura estar sempre por perto.",
+      "Uma visita regular à biblioteca dá escolha e o gosto de pegar histórias emprestadas.",
+      "Leia no café da manhã, no carro ou esperando; momentos curtos contam."
+     ],
+     "t": "Ler juntos além da hora de dormir",
+     "g": "Faça das visitas à biblioteca e dos livros ilustrados uma parte natural do dia.",
+     "q": "Onde na sua casa você poderia deixar uma cesta de livros ao alcance?",
+     "c": "Leiam hoje juntos dez minutos num momento diferente da hora de dormir."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Try: What do you think happens next? How does the character feel?",
+      "Point to pictures and ask what they notice; there is no wrong answer.",
+      "Connect the story to life: Has that ever happened to you?"
+     ],
+     "t": "Asking open questions while reading",
+     "g": "Use prompts that turn a story into a conversation.",
+     "q": "Which book does your child ask for again and again, and what do they love in it?",
+     "c": "Ask three open questions during one story today and listen to the answers."
+    },
+    "de": {
+     "p": [
+      "Probiere: Was passiert wohl als Nächstes? Wie fühlt sich die Figur?",
+      "Zeig auf Bilder und frag, was dem Kind auffällt; es gibt keine falsche Antwort.",
+      "Verbinde die Geschichte mit dem Leben: Ist dir das auch schon passiert?"
+     ],
+     "t": "Offene Fragen beim Vorlesen",
+     "g": "Nutze Fragen, die aus einer Geschichte ein Gespräch machen.",
+     "q": "Welches Buch wünscht sich dein Kind immer wieder, und was liebt es daran?",
+     "c": "Stelle heute bei einer Geschichte drei offene Fragen und hör den Antworten zu."
+    },
+    "es": {
+     "p": [
+      "Prueba: ¿Qué crees que pasará después? ¿Cómo se siente el personaje?",
+      "Señala dibujos y pregunta qué notan; no hay respuesta incorrecta.",
+      "Conecta el cuento con la vida: ¿Te ha pasado alguna vez algo así?"
+     ],
+     "t": "Preguntas abiertas al leer",
+     "g": "Usa preguntas que conviertan un cuento en una conversación.",
+     "q": "¿Qué libro pide tu hijo una y otra vez y qué le encanta de él?",
+     "c": "Haz hoy tres preguntas abiertas durante un cuento y escucha las respuestas."
+    },
+    "fr": {
+     "p": [
+      "Essaie : Que crois-tu qu'il va se passer ? Comment se sent le personnage ?",
+      "Montre les images et demande ce qu'ils remarquent ; il n'y a pas de mauvaise réponse.",
+      "Relie l'histoire à la vie : Ça t'est déjà arrivé ?"
+     ],
+     "t": "Poser des questions ouvertes en lisant",
+     "g": "Utilise des questions qui transforment une histoire en conversation.",
+     "q": "Quel livre ton enfant redemande-t-il sans cesse, et qu'y adore-t-il ?",
+     "c": "Pose aujourd'hui trois questions ouvertes pendant une histoire et écoute les réponses."
+    },
+    "it": {
+     "p": [
+      "Prova: Cosa pensi che succeda dopo? Come si sente il personaggio?",
+      "Indica le immagini e chiedi cosa notano; non esistono risposte sbagliate.",
+      "Collega la storia alla vita: Ti è mai successo?"
+     ],
+     "t": "Domande aperte mentre si legge",
+     "g": "Usa domande che trasformano una storia in una conversazione.",
+     "q": "Quale libro chiede sempre tuo figlio e cosa ama in esso?",
+     "c": "Oggi fai tre domande aperte durante una storia e ascolta le risposte."
+    },
+    "pt": {
+     "p": [
+      "Experimenta: O que achas que acontece a seguir? Como se sente a personagem?",
+      "Aponta para as imagens e pergunta o que notam; não há resposta errada.",
+      "Liga a história à vida: Já te aconteceu isto?"
+     ],
+     "t": "Perguntas abertas ao ler",
+     "g": "Usa perguntas que transformam uma história numa conversa.",
+     "q": "Que livro o teu filho pede vezes sem conta e o que adora nele?",
+     "c": "Faz hoje três perguntas abertas durante uma história e ouve as respostas."
+    },
+    "pt_BR": {
+     "p": [
+      "Experimente: O que você acha que acontece depois? Como o personagem se sente?",
+      "Aponte as figuras e pergunte o que eles notam; não existe resposta errada.",
+      "Ligue a história à vida: Já aconteceu isso com você?"
+     ],
+     "t": "Perguntas abertas ao ler",
+     "g": "Use perguntas que transformam uma história em conversa.",
+     "q": "Que livro seu filho pede sempre e o que ele adora nele?",
+     "c": "Faça hoje três perguntas abertas durante uma história e escute as respostas."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Count steps, spoons and apples; numbers are everywhere.",
+      "Ask: How many plates do we need? Which pile has more?",
+      "Playful maths without worksheets builds ease and confidence with numbers."
+     ],
+     "t": "Counting and maths in daily life",
+     "g": "Spot numbers while cooking, shopping and setting the table.",
+     "q": "Where do you and your child already use numbers during an ordinary day?",
+     "c": "Turn one task into a counting game, like setting the table for everyone."
+    },
+    "de": {
+     "p": [
+      "Zähle Stufen, Löffel und Äpfel; Zahlen sind überall.",
+      "Frag: Wie viele Teller brauchen wir? Welcher Stapel hat mehr?",
+      "Spielerische Mathematik ohne Arbeitsblätter stärkt Leichtigkeit und Selbstvertrauen mit Zahlen."
+     ],
+     "t": "Zählen und Mathe im Alltag",
+     "g": "Entdecke Zahlen beim Kochen, Einkaufen und Tischdecken.",
+     "q": "Wo benutzt ihr, du und dein Kind, im normalen Tag schon Zahlen?",
+     "c": "Verwandle heute eine Aufgabe in ein Zählspiel, etwa den Tisch für alle zu decken."
+    },
+    "es": {
+     "p": [
+      "Cuenta escalones, cucharas y manzanas; los números están en todas partes.",
+      "Pregunta: ¿Cuántos platos necesitamos? ¿Qué montón tiene más?",
+      "Las matemáticas jugando, sin fichas, dan soltura y confianza con los números."
+     ],
+     "t": "Contar y matemáticas en el día a día",
+     "g": "Descubre números al cocinar, comprar y poner la mesa.",
+     "q": "¿Dónde usáis ya tú y tu hijo los números en un día normal?",
+     "c": "Convierte hoy una tarea en un juego de contar, como poner la mesa para todos."
+    },
+    "fr": {
+     "p": [
+      "Compte les marches, les cuillères et les pommes ; les nombres sont partout.",
+      "Demande : Combien d'assiettes faut-il ? Quel tas en a le plus ?",
+      "Les maths en jouant, sans fiches, donnent aisance et confiance avec les nombres."
+     ],
+     "t": "Compter et faire des maths au quotidien",
+     "g": "Repère les nombres en cuisinant, en faisant les courses et en mettant la table.",
+     "q": "Où utilisez-vous déjà les nombres, toi et ton enfant, dans une journée ordinaire ?",
+     "c": "Transforme aujourd'hui une tâche en jeu de comptage, comme mettre la table pour tous."
+    },
+    "it": {
+     "p": [
+      "Conta gradini, cucchiai e mele; i numeri sono ovunque.",
+      "Chiedi: Quanti piatti ci servono? Quale mucchio ne ha di più?",
+      "La matematica giocosa, senza schede, dà scioltezza e fiducia con i numeri."
+     ],
+     "t": "Contare e fare matematica ogni giorno",
+     "g": "Individua i numeri mentre cucini, fai la spesa e apparecchi.",
+     "q": "Dove usate già i numeri, tu e tuo figlio, in una giornata normale?",
+     "c": "Oggi trasforma un compito in un gioco di conteggio, come apparecchiare per tutti."
+    },
+    "pt": {
+     "p": [
+      "Conta degraus, colheres e maçãs; os números estão em todo o lado.",
+      "Pergunta: Quantos pratos precisamos? Que monte tem mais?",
+      "A matemática a brincar, sem fichas, dá à-vontade e confiança com os números."
+     ],
+     "t": "Contar e matemática no dia a dia",
+     "g": "Descobre números ao cozinhar, fazer compras e pôr a mesa.",
+     "q": "Onde é que tu e o teu filho já usam números num dia normal?",
+     "c": "Transforma hoje uma tarefa num jogo de contar, como pôr a mesa para todos."
+    },
+    "pt_BR": {
+     "p": [
+      "Conte degraus, colheres e maçãs; os números estão em todo lugar.",
+      "Pergunte: Quantos pratos a gente precisa? Qual pilha tem mais?",
+      "Matemática brincando, sem folhinhas, dá desenvoltura e confiança com os números."
+     ],
+     "t": "Contar e matemática no dia a dia",
+     "g": "Descubra números ao cozinhar, fazer compras e pôr a mesa.",
+     "q": "Onde você e seu filho já usam números num dia comum?",
+     "c": "Transforme hoje uma tarefa em jogo de contar, como pôr a mesa para todos."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Mix baking soda and vinegar, or watch what floats and sinks in the sink.",
+      "Ask: What do you think will happen? Then test it together.",
+      "Wrong guesses are welcome; they are how scientists learn."
+     ],
+     "t": "Exploring science at home",
+     "g": "Try simple kitchen experiments that build curiosity.",
+     "q": "What is something your child asks Why about all the time?",
+     "c": "Do one safe kitchen experiment, such as sink or float, with your child."
+    },
+    "de": {
+     "p": [
+      "Mische Natron und Essig oder beobachte im Waschbecken, was schwimmt und sinkt.",
+      "Frag: Was glaubst du, passiert? Dann testet es gemeinsam.",
+      "Falsche Vermutungen sind willkommen; so lernen Forscher."
+     ],
+     "t": "Wissenschaft zu Hause entdecken",
+     "g": "Probiere einfache Küchenexperimente, die Neugier wecken.",
+     "q": "Wonach fragt dein Kind ständig Warum?",
+     "c": "Macht heute ein sicheres Küchenexperiment, etwa Schwimmen oder Sinken."
+    },
+    "es": {
+     "p": [
+      "Mezcla bicarbonato y vinagre, o mira qué flota y qué se hunde en el fregadero.",
+      "Pregunta: ¿Qué crees que pasará? Luego probadlo juntos.",
+      "Las hipótesis equivocadas son bienvenidas; así aprenden los científicos."
+     ],
+     "t": "Explorar la ciencia en casa",
+     "g": "Prueba experimentos sencillos de cocina que despierten la curiosidad.",
+     "q": "¿Sobre qué pregunta tu hijo siempre Por qué?",
+     "c": "Haced hoy un experimento seguro de cocina, como flotar o hundirse."
+    },
+    "fr": {
+     "p": [
+      "Mélange bicarbonate et vinaigre, ou regarde ce qui flotte et coule dans l'évier.",
+      "Demande : Que crois-tu qu'il va se passer ? Puis testez ensemble.",
+      "Les mauvaises hypothèses sont bienvenues ; c'est ainsi que les scientifiques apprennent."
+     ],
+     "t": "Explorer la science à la maison",
+     "g": "Essaie de simples expériences de cuisine qui éveillent la curiosité.",
+     "q": "Sur quoi ton enfant demande-t-il sans cesse Pourquoi ?",
+     "c": "Faites aujourd'hui une expérience de cuisine sans danger, comme flotte ou coule."
+    },
+    "it": {
+     "p": [
+      "Mescola bicarbonato e aceto, o guarda cosa galleggia e cosa affonda nel lavandino.",
+      "Chiedi: Cosa pensi che succederà? Poi provatelo insieme.",
+      "Le ipotesi sbagliate sono benvenute; è così che imparano gli scienziati."
+     ],
+     "t": "Esplorare la scienza in casa",
+     "g": "Prova semplici esperimenti in cucina che alimentano la curiosità.",
+     "q": "Su cosa tuo figlio chiede sempre Perché?",
+     "c": "Fate oggi un esperimento sicuro in cucina, come galleggia o affonda."
+    },
+    "pt": {
+     "p": [
+      "Mistura bicarbonato e vinagre, ou vê o que flutua e o que afunda no lava-loiça.",
+      "Pergunta: O que achas que vai acontecer? Depois testem juntos.",
+      "Hipóteses erradas são bem-vindas; é assim que os cientistas aprendem."
+     ],
+     "t": "Explorar a ciência em casa",
+     "g": "Experimenta experiências simples de cozinha que despertam a curiosidade.",
+     "q": "Sobre o que é que o teu filho pergunta sempre Porquê?",
+     "c": "Façam hoje uma experiência segura de cozinha, como flutua ou afunda."
+    },
+    "pt_BR": {
+     "p": [
+      "Misture bicarbonato e vinagre, ou veja o que flutua e o que afunda na pia.",
+      "Pergunte: O que você acha que vai acontecer? Depois testem juntos.",
+      "Hipóteses erradas são bem-vindas; é assim que cientistas aprendem."
+     ],
+     "t": "Explorar a ciência em casa",
+     "g": "Experimente experiências simples de cozinha que despertam a curiosidade.",
+     "q": "Sobre o que seu filho pergunta sempre Por quê?",
+     "c": "Façam hoje uma experiência segura de cozinha, como flutua ou afunda."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "A small bag for treasures, like leaves, pebbles and feathers, makes any walk an adventure.",
+      "Look closely: How many colours of green can you find?",
+      "Observe with respect and leave living creatures where you found them."
+     ],
+     "t": "Nature exploration with kids",
+     "g": "Collect leaves, watch insects and learn about the seasons.",
+     "q": "What is your family's favourite spot to notice nature?",
+     "c": "Go on a ten-minute nature hunt and find five different leaves or stones."
+    },
+    "de": {
+     "p": [
+      "Ein kleiner Beutel für Schätze wie Blätter, Kiesel und Federn macht jeden Spaziergang zum Abenteuer.",
+      "Schaut genau hin: Wie viele Grüntöne könnt ihr finden?",
+      "Beobachte respektvoll und lass Lebewesen dort, wo du sie gefunden hast."
+     ],
+     "t": "Natur entdecken mit Kindern",
+     "g": "Sammle Blätter, beobachte Insekten und lerne die Jahreszeiten kennen.",
+     "q": "Wo beobachtet deine Familie am liebsten die Natur?",
+     "c": "Macht eine zehnminütige Naturjagd und findet fünf verschiedene Blätter oder Steine."
+    },
+    "es": {
+     "p": [
+      "Una bolsita para tesoros, como hojas, piedras y plumas, convierte cualquier paseo en aventura.",
+      "Mirad de cerca: ¿Cuántos tonos de verde podéis encontrar?",
+      "Observa con respeto y deja a los seres vivos donde los encontraste."
+     ],
+     "t": "Explorar la naturaleza con los niños",
+     "g": "Recoge hojas, observa insectos y aprende sobre las estaciones.",
+     "q": "¿Cuál es el lugar favorito de tu familia para fijarse en la naturaleza?",
+     "c": "Haced una búsqueda de naturaleza de diez minutos y encontrad cinco hojas o piedras distintas."
+    },
+    "fr": {
+     "p": [
+      "Un petit sac pour les trésors, comme feuilles, cailloux et plumes, transforme toute balade en aventure.",
+      "Regardez de près : combien de verts différents pouvez-vous trouver ?",
+      "Observe avec respect et laisse les êtres vivants là où tu les as trouvés."
+     ],
+     "t": "Explorer la nature avec les enfants",
+     "g": "Ramasse des feuilles, observe les insectes et découvre les saisons.",
+     "q": "Quel est l'endroit préféré de ta famille pour observer la nature ?",
+     "c": "Partez dix minutes en chasse à la nature et trouvez cinq feuilles ou cailloux différents."
+    },
+    "it": {
+     "p": [
+      "Un sacchetto per i tesori, come foglie, sassolini e piume, trasforma ogni passeggiata in avventura.",
+      "Guardate da vicino: quante tonalità di verde riuscite a trovare?",
+      "Osserva con rispetto e lascia gli esseri viventi dove li hai trovati."
+     ],
+     "t": "Esplorare la natura con i bambini",
+     "g": "Raccogli foglie, osserva gli insetti e scopri le stagioni.",
+     "q": "Qual è il posto preferito della tua famiglia per osservare la natura?",
+     "c": "Fate una caccia alla natura di dieci minuti e trovate cinque foglie o sassi diversi."
+    },
+    "pt": {
+     "p": [
+      "Um saquinho para tesouros, como folhas, seixos e penas, transforma qualquer passeio em aventura.",
+      "Olhem de perto: quantos tons de verde conseguem encontrar?",
+      "Observa com respeito e deixa os seres vivos onde os encontraste."
+     ],
+     "t": "Explorar a natureza com as crianças",
+     "g": "Recolhe folhas, observa insetos e aprende sobre as estações.",
+     "q": "Qual é o sítio preferido da tua família para reparar na natureza?",
+     "c": "Façam uma caça à natureza de dez minutos e encontrem cinco folhas ou pedras diferentes."
+    },
+    "pt_BR": {
+     "p": [
+      "Uma sacolinha para tesouros, como folhas, pedrinhas e penas, transforma qualquer passeio em aventura.",
+      "Olhem de perto: quantos tons de verde vocês conseguem encontrar?",
+      "Observe com respeito e deixe os seres vivos onde os encontrou."
+     ],
+     "t": "Explorar a natureza com as crianças",
+     "g": "Colete folhas, observe insetos e aprenda sobre as estações.",
+     "q": "Qual é o lugar favorito da sua família para observar a natureza?",
+     "c": "Façam uma caça à natureza de dez minutos e encontrem cinco folhas ou pedras diferentes."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Little ones can wash vegetables or stir; older kids can measure and chop with supervision.",
+      "Cooking mixes reading, counting and patience with a tasty reward.",
+      "Expect some mess and imperfect results; the joy is in doing it together."
+     ],
+     "t": "Cooking together",
+     "g": "Give children age-appropriate kitchen tasks that build skills and confidence.",
+     "q": "What simple dish could you and your child make together this week?",
+     "c": "Cook or prepare one simple dish together, with a job for every child."
+    },
+    "de": {
+     "p": [
+      "Kleine können Gemüse waschen oder rühren; Ältere messen und schneiden unter Aufsicht.",
+      "Kochen verbindet Lesen, Zählen und Geduld mit einer leckeren Belohnung.",
+      "Rechne mit etwas Chaos und unperfekten Ergebnissen; die Freude liegt im gemeinsamen Tun."
+     ],
+     "t": "Gemeinsam kochen",
+     "g": "Gib Kindern altersgerechte Küchenaufgaben, die Fähigkeiten und Selbstvertrauen stärken.",
+     "q": "Welches einfache Gericht könntet ihr diese Woche zusammen zubereiten?",
+     "c": "Kocht oder bereitet heute ein einfaches Gericht gemeinsam zu, mit einer Aufgabe für jedes Kind."
+    },
+    "es": {
+     "p": [
+      "Los pequeños pueden lavar verduras o remover; los mayores medir y cortar con supervisión.",
+      "Cocinar mezcla lectura, cuentas y paciencia con un rico premio.",
+      "Espera algo de desorden y resultados imperfectos; la alegría está en hacerlo juntos."
+     ],
+     "t": "Cocinar juntos",
+     "g": "Da a los niños tareas de cocina adecuadas a su edad que den habilidades y confianza.",
+     "q": "¿Qué plato sencillo podríais preparar juntos esta semana?",
+     "c": "Cocinad o preparad hoy un plato sencillo juntos, con una tarea para cada niño."
+    },
+    "fr": {
+     "p": [
+      "Les petits lavent les légumes ou remuent ; les plus grands mesurent et coupent sous surveillance.",
+      "Cuisiner mêle lecture, comptage et patience avec une récompense délicieuse.",
+      "Attends-toi à du désordre et à des résultats imparfaits ; la joie est de le faire ensemble."
+     ],
+     "t": "Cuisiner ensemble",
+     "g": "Confie aux enfants des tâches de cuisine adaptées à leur âge qui développent compétences et confiance.",
+     "q": "Quel plat simple pourriez-vous préparer ensemble cette semaine ?",
+     "c": "Cuisinez ou préparez aujourd'hui un plat simple ensemble, avec une tâche pour chaque enfant."
+    },
+    "it": {
+     "p": [
+      "I piccoli lavano le verdure o mescolano; i più grandi misurano e tagliano con supervisione.",
+      "Cucinare unisce lettura, conteggio e pazienza con un premio gustoso.",
+      "Aspettati un po' di disordine e risultati imperfetti; la gioia sta nel farlo insieme."
+     ],
+     "t": "Cucinare insieme",
+     "g": "Dai ai bambini compiti in cucina adatti all'età che costruiscono abilità e fiducia.",
+     "q": "Quale piatto semplice potreste preparare insieme questa settimana?",
+     "c": "Cucinate o preparate oggi un piatto semplice insieme, con un compito per ogni bambino."
+    },
+    "pt": {
+     "p": [
+      "Os pequenos lavam legumes ou mexem; os maiores medem e cortam com supervisão.",
+      "Cozinhar junta leitura, contas e paciência com um prémio saboroso.",
+      "Conta com alguma confusão e resultados imperfeitos; a alegria está em fazê-lo juntos."
+     ],
+     "t": "Cozinhar juntos",
+     "g": "Dá às crianças tarefas de cozinha adequadas à idade que criam competências e confiança.",
+     "q": "Que prato simples poderiam preparar juntos esta semana?",
+     "c": "Cozinhem ou preparem hoje um prato simples juntos, com uma tarefa para cada criança."
+    },
+    "pt_BR": {
+     "p": [
+      "Os pequenos lavam legumes ou mexem; os maiores medem e cortam com supervisão.",
+      "Cozinhar junta leitura, contas e paciência com um prêmio saboroso.",
+      "Conte com alguma bagunça e resultados imperfeitos; a alegria está em fazer juntos."
+     ],
+     "t": "Cozinhar juntos",
+     "g": "Dê às crianças tarefas de cozinha adequadas à idade que criam habilidades e confiança.",
+     "q": "Que prato simples vocês poderiam preparar juntos esta semana?",
+     "c": "Cozinhem ou preparem hoje um prato simples juntos, com uma tarefa para cada criança."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "A pot of basil or cress on a windowsill is a perfect first garden.",
+      "Children learn patience by watching daily changes and caring for a plant.",
+      "Eating something you grew feels like magic and invites trying new foods."
+     ],
+     "t": "Gardening with children",
+     "g": "Grow herbs or vegetables to teach patience and care.",
+     "q": "What would your child most love to grow and watch?",
+     "c": "Plant a seed or herb in a pot and let your child water it each day."
+    },
+    "de": {
+     "p": [
+      "Ein Topf Basilikum oder Kresse auf der Fensterbank ist ein perfekter erster Garten.",
+      "Kinder lernen Geduld, wenn sie täglich Veränderungen beobachten und eine Pflanze pflegen.",
+      "Etwas Selbstangebautes zu essen fühlt sich wie Magie an und lädt zum Probieren ein."
+     ],
+     "t": "Gärtnern mit Kindern",
+     "g": "Ziehe Kräuter oder Gemüse an, um Geduld und Fürsorge zu lehren.",
+     "q": "Was würde dein Kind am liebsten anbauen und beobachten?",
+     "c": "Pflanze einen Samen oder ein Kraut in einen Topf und lass dein Kind täglich gießen."
+    },
+    "es": {
+     "p": [
+      "Una maceta de albahaca o berros en la ventana es un primer huerto perfecto.",
+      "Los niños aprenden paciencia viendo cambios diarios y cuidando una planta.",
+      "Comer algo que has cultivado parece magia e invita a probar alimentos nuevos."
+     ],
+     "t": "Jardinería con niños",
+     "g": "Cultiva hierbas u hortalizas para enseñar paciencia y cuidado.",
+     "q": "¿Qué le gustaría más cultivar y observar a tu hijo?",
+     "c": "Planta una semilla o hierba en una maceta y deja que tu hijo la riegue cada día."
+    },
+    "fr": {
+     "p": [
+      "Un pot de basilic ou de cresson sur le rebord de la fenêtre est un premier jardin parfait.",
+      "Les enfants apprennent la patience en observant les changements et en s'occupant d'une plante.",
+      "Manger ce qu'on a fait pousser tient de la magie et donne envie de goûter de nouveaux aliments."
+     ],
+     "t": "Jardiner avec les enfants",
+     "g": "Fais pousser des herbes ou des légumes pour enseigner patience et soin.",
+     "q": "Qu'est-ce que ton enfant aimerait le plus faire pousser et observer ?",
+     "c": "Plante une graine ou une herbe dans un pot et laisse ton enfant l'arroser chaque jour."
+    },
+    "it": {
+     "p": [
+      "Un vaso di basilico o di crescione sul davanzale è un primo orto perfetto.",
+      "I bambini imparano la pazienza osservando i cambiamenti quotidiani e curando una pianta.",
+      "Mangiare ciò che si è coltivato sembra magia e invita ad assaggiare cibi nuovi."
+     ],
+     "t": "Giardinaggio con i bambini",
+     "g": "Coltiva erbe o ortaggi per insegnare pazienza e cura.",
+     "q": "Cosa vorrebbe più di tutto coltivare e osservare tuo figlio?",
+     "c": "Pianta un seme o un'erba in un vaso e lascia che tuo figlio la innaffi ogni giorno."
+    },
+    "pt": {
+     "p": [
+      "Um vaso de manjericão ou agrião na janela é uma primeira horta perfeita.",
+      "As crianças aprendem paciência ao ver mudanças diárias e cuidar de uma planta.",
+      "Comer algo que se cultivou parece magia e convida a provar alimentos novos."
+     ],
+     "t": "Jardinagem com crianças",
+     "g": "Cultiva ervas ou legumes para ensinar paciência e cuidado.",
+     "q": "O que o teu filho mais gostaria de cultivar e observar?",
+     "c": "Planta uma semente ou erva num vaso e deixa o teu filho regá-la todos os dias."
+    },
+    "pt_BR": {
+     "p": [
+      "Um vasinho de manjericão ou agrião na janela é uma primeira horta perfeita.",
+      "As crianças aprendem paciência vendo mudanças diárias e cuidando de uma planta.",
+      "Comer algo que se cultivou parece mágica e convida a provar alimentos novos."
+     ],
+     "t": "Jardinagem com crianças",
+     "g": "Cultive ervas ou legumes para ensinar paciência e cuidado.",
+     "q": "O que seu filho mais gostaria de cultivar e observar?",
+     "c": "Plante uma semente ou erva num vasinho e deixe seu filho regar todo dia."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Building teaches balance, shapes, planning and trying again after a tower falls.",
+      "Offer simple challenges: Can you build a bridge for this car?",
+      "Take a photo of a creation and keep it to celebrate their work."
+     ],
+     "t": "Building with blocks and LEGO",
+     "g": "See how construction play develops planning and spatial thinking.",
+     "q": "What is the proudest thing your child ever built?",
+     "c": "Build something together with blocks and let your child be the architect."
+    },
+    "de": {
+     "p": [
+      "Bauen lehrt Gleichgewicht, Formen, Planen und Neuversuche, wenn ein Turm fällt.",
+      "Biete einfache Herausforderungen: Kannst du eine Brücke für dieses Auto bauen?",
+      "Mach ein Foto vom Bauwerk und feiere damit die Arbeit deines Kindes."
+     ],
+     "t": "Bauen mit Klötzen und LEGO",
+     "g": "Erlebe, wie Bauspiel Planen und räumliches Denken fördert.",
+     "q": "Was ist das Stolzeste, das dein Kind je gebaut hat?",
+     "c": "Baut heute zusammen etwas aus Klötzen und lass dein Kind der Architekt sein."
+    },
+    "es": {
+     "p": [
+      "Construir enseña equilibrio, formas, planificación y volver a intentarlo cuando cae una torre.",
+      "Propón retos sencillos: ¿Puedes construir un puente para este coche?",
+      "Haz una foto de la creación y guárdala para celebrar su trabajo."
+     ],
+     "t": "Construir con bloques y LEGO",
+     "g": "Descubre cómo el juego de construcción desarrolla planificación y pensamiento espacial.",
+     "q": "¿Qué es lo que más orgullo ha dado a tu hijo haber construido?",
+     "c": "Construid hoy algo juntos con bloques y deja que tu hijo sea el arquitecto."
+    },
+    "fr": {
+     "p": [
+      "Construire enseigne l'équilibre, les formes, la planification et le courage de recommencer quand une tour tombe.",
+      "Propose de petits défis : Peux-tu construire un pont pour cette voiture ?",
+      "Prends une photo de la création et garde-la pour célébrer son travail."
+     ],
+     "t": "Construire avec des cubes et des LEGO",
+     "g": "Vois comment le jeu de construction développe planification et pensée spatiale.",
+     "q": "Quelle est la construction dont ton enfant a été le plus fier ?",
+     "c": "Construisez aujourd'hui quelque chose ensemble avec des cubes et laisse ton enfant être l'architecte."
+    },
+    "it": {
+     "p": [
+      "Costruire insegna equilibrio, forme, pianificazione e a riprovare quando una torre cade.",
+      "Proponi sfide semplici: Riesci a costruire un ponte per questa macchinina?",
+      "Fai una foto alla creazione e conservala per celebrare il suo lavoro."
+     ],
+     "t": "Costruire con mattoncini e LEGO",
+     "g": "Scopri come il gioco di costruzione sviluppa pianificazione e pensiero spaziale.",
+     "q": "Qual è la cosa di cui tuo figlio è stato più orgoglioso di aver costruito?",
+     "c": "Costruite oggi qualcosa insieme con i mattoncini e lascia che tuo figlio sia l'architetto."
+    },
+    "pt": {
+     "p": [
+      "Construir ensina equilíbrio, formas, planeamento e a tentar de novo quando uma torre cai.",
+      "Propõe desafios simples: Consegues construir uma ponte para este carro?",
+      "Tira uma fotografia da criação e guarda-a para celebrar o trabalho dele."
+     ],
+     "t": "Construir com blocos e LEGO",
+     "g": "Vê como o jogo de construção desenvolve planeamento e pensamento espacial.",
+     "q": "Qual foi a construção de que o teu filho mais se orgulhou?",
+     "c": "Construam hoje algo juntos com blocos e deixa o teu filho ser o arquiteto."
+    },
+    "pt_BR": {
+     "p": [
+      "Construir ensina equilíbrio, formas, planejamento e tentar de novo quando uma torre cai.",
+      "Proponha desafios simples: Você consegue construir uma ponte para este carrinho?",
+      "Tire uma foto da criação e guarde para comemorar o trabalho dele."
+     ],
+     "t": "Construir com blocos e LEGO",
+     "g": "Veja como o jogo de construção desenvolve planejamento e pensamento espacial.",
+     "q": "Qual foi a construção da qual seu filho mais se orgulhou?",
+     "c": "Construam hoje algo juntos com blocos e deixe seu filho ser o arquiteto."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Pick puzzles slightly above your child's current level, not far above.",
+      "Start with edge pieces or the picture on the box, and offer a hint, not the answer.",
+      "Celebrate patience and trying, not just a finished puzzle."
+     ],
+     "t": "Puzzles and brain games",
+     "g": "Choose puzzles that challenge without frustrating.",
+     "q": "What kind of puzzle or brain game does your child enjoy most?",
+     "c": "Do a puzzle together and offer only a hint when your child gets stuck."
+    },
+    "de": {
+     "p": [
+      "Nimm Puzzles, die etwas über dem aktuellen Niveau liegen, nicht weit darüber.",
+      "Beginne mit Randteilen oder dem Bild auf der Schachtel und gib einen Tipp, nicht die Lösung.",
+      "Feiere Geduld und Ausprobieren, nicht nur das fertige Puzzle."
+     ],
+     "t": "Puzzles und Denkspiele",
+     "g": "Wähle Puzzles, die herausfordern, ohne zu frustrieren.",
+     "q": "Welche Art Puzzle oder Denkspiel mag dein Kind am liebsten?",
+     "c": "Löst heute zusammen ein Puzzle und gib bei Hängern nur einen Tipp."
+    },
+    "es": {
+     "p": [
+      "Elige puzles un poco por encima del nivel actual, no muy por encima.",
+      "Empieza por las piezas de borde o la imagen de la caja y ofrece una pista, no la respuesta.",
+      "Celebra la paciencia y el intento, no solo el puzle terminado."
+     ],
+     "t": "Puzles y juegos mentales",
+     "g": "Elige puzles que desafíen sin frustrar.",
+     "q": "¿Qué tipo de puzle o juego mental disfruta más tu hijo?",
+     "c": "Haced hoy un puzle juntos y da solo una pista cuando tu hijo se atasque."
+    },
+    "fr": {
+     "p": [
+      "Prends des puzzles un peu au-dessus du niveau actuel, pas très au-dessus.",
+      "Commence par les bords ou l'image de la boîte et donne un indice, pas la réponse.",
+      "Célèbre la patience et l'essai, pas seulement le puzzle terminé."
+     ],
+     "t": "Puzzles et jeux de réflexion",
+     "g": "Choisis des puzzles qui défient sans frustrer.",
+     "q": "Quel type de puzzle ou de jeu de réflexion ton enfant préfère-t-il ?",
+     "c": "Faites aujourd'hui un puzzle ensemble et ne donne qu'un indice quand ton enfant bloque."
+    },
+    "it": {
+     "p": [
+      "Scegli puzzle un po' sopra il livello attuale, non molto sopra.",
+      "Inizia dai pezzi del bordo o dall'immagine sulla scatola e dai un indizio, non la soluzione.",
+      "Festeggia pazienza e tentativi, non solo il puzzle finito."
+     ],
+     "t": "Puzzle e giochi di logica",
+     "g": "Scegli puzzle che sfidano senza frustrare.",
+     "q": "Che tipo di puzzle o gioco di logica preferisce tuo figlio?",
+     "c": "Fate oggi un puzzle insieme e dai solo un indizio quando tuo figlio si blocca."
+    },
+    "pt": {
+     "p": [
+      "Escolhe puzzles um pouco acima do nível atual, não muito acima.",
+      "Começa pelas peças das bordas ou pela imagem da caixa e dá uma pista, não a resposta.",
+      "Celebra a paciência e a tentativa, não só o puzzle terminado."
+     ],
+     "t": "Puzzles e jogos de raciocínio",
+     "g": "Escolhe puzzles que desafiam sem frustrar.",
+     "q": "Que tipo de puzzle ou jogo de raciocínio o teu filho mais gosta?",
+     "c": "Façam hoje um puzzle juntos e dá só uma pista quando o teu filho ficar preso."
+    },
+    "pt_BR": {
+     "p": [
+      "Escolha quebra-cabeças um pouco acima do nível atual, não muito acima.",
+      "Comece pelas peças das bordas ou pela imagem da caixa e dê uma dica, não a resposta.",
+      "Comemore a paciência e a tentativa, não só o quebra-cabeça pronto."
+     ],
+     "t": "Quebra-cabeças e jogos de raciocínio",
+     "g": "Escolha quebra-cabeças que desafiam sem frustrar.",
+     "q": "Que tipo de quebra-cabeça ou jogo de raciocínio seu filho mais gosta?",
+     "c": "Montem hoje um quebra-cabeça juntos e dê só uma dica quando seu filho travar."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Sensory play with dough, water or sand calms and builds fine motor skills.",
+      "Set up on a tray, a tablecloth or outdoors to contain the mess.",
+      "Make clean-up part of the game, with a towel and a quick race."
+     ],
+     "t": "Messy play and sensory fun",
+     "g": "Try sand, water and dough play, and keep clean-up simple.",
+     "q": "What texture does your child love to touch and squish?",
+     "c": "Offer a tray with dough, sand or water and let your child explore freely."
+    },
+    "de": {
+     "p": [
+      "Sinnesspiel mit Knete, Wasser oder Sand beruhigt und fördert die Feinmotorik.",
+      "Richte alles auf einem Tablett, einer Tischdecke oder draußen ein, um das Chaos zu begrenzen.",
+      "Mach das Aufräumen zum Teil des Spiels, mit einem Handtuch und einem kleinen Wettlauf."
+     ],
+     "t": "Matschen und Sinnesspiel",
+     "g": "Probiere Spiele mit Sand, Wasser und Knete aus und halte das Aufräumen einfach.",
+     "q": "Welche Oberfläche berührt und quetscht dein Kind am liebsten?",
+     "c": "Biete ein Tablett mit Knete, Sand oder Wasser an und lass dein Kind frei erkunden."
+    },
+    "es": {
+     "p": [
+      "El juego sensorial con plastilina, agua o arena calma y desarrolla la motricidad fina.",
+      "Prepáralo sobre una bandeja, un mantel o al aire libre para contener el desorden.",
+      "Haz de la limpieza parte del juego, con una toalla y una carrera rápida."
+     ],
+     "t": "Juego sensorial y de manchas",
+     "g": "Prueba juegos con arena, agua y plastilina y simplifica la limpieza.",
+     "q": "¿Qué textura le encanta tocar y apretar a tu hijo?",
+     "c": "Ofrece una bandeja con plastilina, arena o agua y deja que tu hijo explore libremente."
+    },
+    "fr": {
+     "p": [
+      "Le jeu sensoriel avec pâte, eau ou sable apaise et développe la motricité fine.",
+      "Installe-le sur un plateau, une nappe ou dehors pour contenir le désordre.",
+      "Fais du rangement une partie du jeu, avec une serviette et une petite course."
+     ],
+     "t": "Jeux salissants et sensoriels",
+     "g": "Essaie les jeux de sable, d'eau et de pâte à modeler et simplifie le nettoyage.",
+     "q": "Quelle texture ton enfant adore-t-il toucher et malaxer ?",
+     "c": "Propose un plateau avec pâte, sable ou eau et laisse ton enfant explorer librement."
+    },
+    "it": {
+     "p": [
+      "Il gioco sensoriale con pasta, acqua o sabbia calma e sviluppa la motricità fine.",
+      "Allestiscilo su un vassoio, una tovaglia o all'aperto per contenere il disordine.",
+      "Fai del riordino parte del gioco, con un asciugamano e una piccola gara."
+     ],
+     "t": "Gioco sensoriale e pasticci",
+     "g": "Prova giochi con sabbia, acqua e pasta da modellare e semplifica il riordino.",
+     "q": "Che consistenza ama toccare e schiacciare tuo figlio?",
+     "c": "Offri un vassoio con pasta, sabbia o acqua e lascia che tuo figlio esplori liberamente."
+    },
+    "pt": {
+     "p": [
+      "A brincadeira sensorial com plasticina, água ou areia acalma e desenvolve a motricidade fina.",
+      "Prepara-a num tabuleiro, numa toalha de mesa ou ao ar livre para conter a confusão.",
+      "Faz da limpeza parte do jogo, com uma toalha e uma corrida rápida."
+     ],
+     "t": "Brincadeira sensorial e com sujidade",
+     "g": "Experimenta jogos com areia, água e plasticina e simplifica a limpeza.",
+     "q": "Que textura o teu filho adora tocar e apertar?",
+     "c": "Oferece um tabuleiro com plasticina, areia ou água e deixa o teu filho explorar à vontade."
+    },
+    "pt_BR": {
+     "p": [
+      "A brincadeira sensorial com massinha, água ou areia acalma e desenvolve a coordenação fina.",
+      "Monte numa bandeja, numa toalha de mesa ou ao ar livre para conter a bagunça.",
+      "Faça da limpeza parte da brincadeira, com uma toalha e uma corrida rápida."
+     ],
+     "t": "Brincadeira sensorial e bagunça",
+     "g": "Experimente brincadeiras com areia, água e massinha e simplifique a limpeza.",
+     "q": "Que textura seu filho adora tocar e apertar?",
+     "c": "Ofereça uma bandeja com massinha, areia ou água e deixe seu filho explorar à vontade."
+    }
+   }
+  }
+ ]
+}

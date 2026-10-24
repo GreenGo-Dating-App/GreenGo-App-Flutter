@@ -1,0 +1,835 @@
+{
+ "topic": "books",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Genres: a map of the bookshop",
+     "g": "Learn how genres help readers find books.",
+     "p": [
+      "Genres group books by type: mystery, fantasy, romance, history, science and more.",
+      "Shops and libraries use them like a map, so you can head to your zone.",
+      "Many books mix genres, such as a historical mystery or funny science fiction."
+     ],
+     "q": "Which two genres would you love to see mixed in one book?",
+     "c": "Walk through a shop or library catalogue and list five genres you spot."
+    },
+    "de": {
+     "t": "Genres: eine Landkarte der Buchhandlung",
+     "g": "Lerne, wie Genres Lesern helfen, Bücher zu finden.",
+     "p": [
+      "Genres ordnen Bücher nach Art: Krimi, Fantasy, Geschichte, Wissenschaft und mehr.",
+      "Läden und Bibliotheken nutzen sie wie eine Karte, damit du direkt zu deinem Bereich gehst.",
+      "Viele Bücher mischen Genres, etwa ein historischer Krimi oder lustige Science-Fiction."
+     ],
+     "q": "Welche zwei Genres würdest du gern in einem Buch vereint sehen?",
+     "c": "Geh durch einen Laden oder Bibliothekskatalog und notiere fünf Genres, die du siehst."
+    },
+    "es": {
+     "t": "Géneros: un mapa de la librería",
+     "g": "Aprende cómo los géneros ayudan a encontrar libros.",
+     "p": [
+      "Los géneros agrupan los libros por tipo: misterio, fantasía, historia, ciencia y más.",
+      "Tiendas y bibliotecas los usan como un mapa para que vayas a tu zona.",
+      "Muchos libros mezclan géneros, como un misterio histórico o una ciencia ficción cómica."
+     ],
+     "q": "¿Qué dos géneros te gustaría ver mezclados en un libro?",
+     "c": "Recorre una librería o un catálogo y anota cinco géneros que veas."
+    },
+    "fr": {
+     "t": "Les genres : une carte de la librairie",
+     "g": "Apprends comment les genres aident à trouver des livres.",
+     "p": [
+      "Les genres classent les livres par type : polar, fantasy, histoire, science et plus.",
+      "Librairies et bibliothèques s'en servent comme d'une carte pour aller à ton rayon.",
+      "Beaucoup de livres mêlent les genres, comme un polar historique ou une science-fiction drôle."
+     ],
+     "q": "Quels deux genres aimerais-tu voir mêlés dans un livre ?",
+     "c": "Parcours une librairie ou un catalogue et note cinq genres que tu repères."
+    },
+    "it": {
+     "t": "I generi: una mappa della libreria",
+     "g": "Impara come i generi aiutano a trovare i libri.",
+     "p": [
+      "I generi raggruppano i libri per tipo: giallo, fantasy, storia, scienza e altro.",
+      "Librerie e biblioteche li usano come una mappa per andare nel tuo reparto.",
+      "Molti libri mescolano i generi, come un giallo storico o una fantascienza comica."
+     ],
+     "q": "Quali due generi vorresti vedere mescolati in un libro?",
+     "c": "Gira in una libreria o in un catalogo e annota cinque generi che noti."
+    },
+    "pt": {
+     "t": "Géneros: um mapa da livraria",
+     "g": "Aprende como os géneros ajudam a encontrar livros.",
+     "p": [
+      "Os géneros agrupam os livros por tipo: policial, fantasia, história, ciência e mais.",
+      "Livrarias e bibliotecas usam-nos como um mapa para ires à tua zona.",
+      "Muitos livros misturam géneros, como um policial histórico ou ficção científica cómica."
+     ],
+     "q": "Que dois géneros gostarias de ver misturados num livro?",
+     "c": "Percorre uma livraria ou catálogo e anota cinco géneros que encontres."
+    },
+    "pt_BR": {
+     "t": "Gêneros: um mapa da livraria",
+     "g": "Aprenda como os gêneros ajudam a encontrar livros.",
+     "p": [
+      "Os gêneros agrupam os livros por tipo: policial, fantasia, história, ciência e mais.",
+      "Livrarias e bibliotecas usam como um mapa para você ir à sua seção.",
+      "Muitos livros misturam gêneros, como um policial histórico ou ficção científica cômica."
+     ],
+     "q": "Que dois gêneros você gostaria de ver misturados num livro?",
+     "c": "Passeie por uma livraria ou catálogo e anote cinco gêneros que encontrar."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mystery: the joy of the puzzle",
+     "g": "Enjoy how a good mystery plays fair with the reader.",
+     "p": [
+      "A mystery starts with a question, such as who took it, how, and why.",
+      "Clues are scattered through the story; red herrings lead you astray.",
+      "The best reveals make you think: it was there all along."
+     ],
+     "q": "Do you enjoy guessing the answer before the detective?",
+     "c": "Pick a short mystery and note every clue you spot before the reveal."
+    },
+    "de": {
+     "t": "Krimi: die Freude am Rätsel",
+     "g": "Genieße, wie ein guter Krimi fair mit dem Leser spielt.",
+     "p": [
+      "Ein Krimi beginnt mit einer Frage: wer, wie und warum?",
+      "Hinweise sind in der Geschichte verstreut; falsche Fährten führen dich in die Irre.",
+      "Die besten Auflösungen lassen dich denken: Das war die ganze Zeit da."
+     ],
+     "q": "Rätst du gern die Lösung vor dem Detektiv?",
+     "c": "Wähle einen kurzen Krimi und notiere jeden Hinweis vor der Auflösung."
+    },
+    "es": {
+     "t": "Misterio: el placer del enigma",
+     "g": "Disfruta de cómo un buen misterio juega limpio con el lector.",
+     "p": [
+      "Un misterio empieza con una pregunta: quién, cómo y por qué.",
+      "Las pistas se reparten por la historia; las falsas pistas te despistan.",
+      "Los mejores finales te hacen pensar: estaba ahí desde el principio."
+     ],
+     "q": "¿Te gusta adivinar la solución antes que el detective?",
+     "c": "Elige un misterio corto y anota cada pista antes del desenlace."
+    },
+    "fr": {
+     "t": "Le mystère : le plaisir de l'énigme",
+     "g": "Savoure la façon dont un bon polar joue franc jeu avec le lecteur.",
+     "p": [
+      "Un mystère commence par une question : qui, comment et pourquoi.",
+      "Les indices sont semés dans l'histoire ; les fausses pistes t'égarent.",
+      "Les meilleures révélations font penser : tout était là depuis le début."
+     ],
+     "q": "Aimes-tu deviner la solution avant le détective ?",
+     "c": "Choisis un court polar et note chaque indice avant la révélation."
+    },
+    "it": {
+     "t": "Il giallo: il piacere dell'enigma",
+     "g": "Goditi come un buon giallo gioca pulito col lettore.",
+     "p": [
+      "Un giallo parte da una domanda: chi, come e perché.",
+      "Gli indizi sono sparsi nella storia; le false piste ti portano fuori strada.",
+      "Le rivelazioni migliori fanno pensare: era lì fin dall'inizio."
+     ],
+     "q": "Ti piace indovinare la soluzione prima dell'investigatore?",
+     "c": "Scegli un giallo breve e annota ogni indizio prima della rivelazione."
+    },
+    "pt": {
+     "t": "O policial: o prazer do enigma",
+     "g": "Goza como um bom policial joga limpo com o leitor.",
+     "p": [
+      "Um policial começa com uma pergunta: quem, como e porquê.",
+      "As pistas estão espalhadas pela história; as pistas falsas desviam-te.",
+      "As melhores revelações fazem pensar: estava lá desde o início."
+     ],
+     "q": "Gostas de adivinhar a solução antes do detetive?",
+     "c": "Escolhe um policial curto e anota cada pista antes da revelação."
+    },
+    "pt_BR": {
+     "t": "O policial: o prazer do enigma",
+     "g": "Curta como um bom policial joga limpo com o leitor.",
+     "p": [
+      "Um policial começa com uma pergunta: quem, como e por quê.",
+      "As pistas estão espalhadas pela história; as falsas pistas despistam você.",
+      "As melhores revelações fazem pensar: estava lá desde o início."
+     ],
+     "q": "Você gosta de adivinhar a solução antes do detetive?",
+     "c": "Escolha um policial curto e anote cada pista antes da revelação."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Agatha Christie's clever plots",
+     "g": "Meet the queen of mystery and her famous sleuths.",
+     "p": [
+      "Agatha Christie, born in England in 1890, is among the best-selling authors ever.",
+      "Hercule Poirot, a Belgian detective, solves puzzles with his little grey cells.",
+      "Miss Marple, an elderly village lady, spots clues in everyday gossip."
+     ],
+     "q": "Poirot or Miss Marple: whose style would you prefer?",
+     "c": "Read the first chapter of a Christie novel and guess one clue."
+    },
+    "de": {
+     "t": "Agatha Christies kluge Plots",
+     "g": "Lerne die Königin des Krimis und ihre berühmten Ermittler kennen.",
+     "p": [
+      "Agatha Christie, 1890 in England geboren, gehört zu den meistverkauften Autorinnen aller Zeiten.",
+      "Hercule Poirot, ein belgischer Detektiv, löst Rätsel mit seinen kleinen grauen Zellen.",
+      "Miss Marple, eine ältere Dorfdame, erkennt Hinweise im alltäglichen Klatsch."
+     ],
+     "q": "Poirot oder Miss Marple: Wessen Stil gefällt dir mehr?",
+     "c": "Lies das erste Kapitel eines Christie-Romans und rate einen Hinweis."
+    },
+    "es": {
+     "t": "Las tramas ingeniosas de Agatha Christie",
+     "g": "Conoce a la reina del misterio y a sus famosos detectives.",
+     "p": [
+      "Agatha Christie, nacida en Inglaterra en 1890, es de las autoras más vendidas de la historia.",
+      "Hércules Poirot, un detective belga, resuelve enigmas con sus pequeñas células grises.",
+      "Miss Marple, una señora mayor de pueblo, descubre pistas en los chismes cotidianos."
+     ],
+     "q": "¿Poirot o Miss Marple: qué estilo prefieres?",
+     "c": "Lee el primer capítulo de una novela de Christie y adivina una pista."
+    },
+    "fr": {
+     "t": "Les intrigues astucieuses d'Agatha Christie",
+     "g": "Fais connaissance avec la reine du mystère et ses détectives célèbres.",
+     "p": [
+      "Agatha Christie, née en Angleterre en 1890, est l'une des autrices les plus vendues.",
+      "Hercule Poirot, détective belge, résout les énigmes avec ses petites cellules grises.",
+      "Miss Marple, dame âgée d'un village, repère des indices dans les bavardages."
+     ],
+     "q": "Poirot ou Miss Marple : quel style préfères-tu ?",
+     "c": "Lis le premier chapitre d'un roman de Christie et devine un indice."
+    },
+    "it": {
+     "t": "Le trame ingegnose di Agatha Christie",
+     "g": "Incontra la regina del giallo e i suoi celebri investigatori.",
+     "p": [
+      "Agatha Christie, nata in Inghilterra nel 1890, è tra le autrici più vendute di sempre.",
+      "Hercule Poirot, detective belga, risolve enigmi con le sue celluline grigie.",
+      "Miss Marple, anziana signora di paese, coglie indizi nei pettegolezzi quotidiani."
+     ],
+     "q": "Poirot o Miss Marple: quale stile preferisci?",
+     "c": "Leggi il primo capitolo di un romanzo di Christie e indovina un indizio."
+    },
+    "pt": {
+     "t": "As tramas engenhosas de Agatha Christie",
+     "g": "Conhece a rainha do mistério e os seus detetives famosos.",
+     "p": [
+      "Agatha Christie, nascida em Inglaterra em 1890, é das autoras mais vendidas de sempre.",
+      "Hercule Poirot, detetive belga, resolve enigmas com as suas pequenas células cinzentas.",
+      "Miss Marple, uma senhora idosa de aldeia, descobre pistas em mexericos do dia a dia."
+     ],
+     "q": "Poirot ou Miss Marple: que estilo preferes?",
+     "c": "Lê o primeiro capítulo de um romance de Christie e adivinha uma pista."
+    },
+    "pt_BR": {
+     "t": "As tramas engenhosas de Agatha Christie",
+     "g": "Conheça a rainha do mistério e seus detetives famosos.",
+     "p": [
+      "Agatha Christie, nascida na Inglaterra em 1890, é das autoras mais vendidas de todos os tempos.",
+      "Hercule Poirot, detetive belga, resolve enigmas com suas pequenas células cinzentas.",
+      "Miss Marple, uma senhora idosa de vilarejo, percebe pistas em fofocas do dia a dia."
+     ],
+     "q": "Poirot ou Miss Marple: qual estilo você prefere?",
+     "c": "Leia o primeiro capítulo de um romance de Christie e adivinhe uma pista."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sherlock Holmes and deduction",
+     "g": "Learn how Holmes made observation an art.",
+     "p": [
+      "Sir Arthur Conan Doyle created Sherlock Holmes, who first appeared in 1887.",
+      "Holmes notices small details others miss and reasons from them.",
+      "His friend Dr Watson tells the tales, so we marvel along with him."
+     ],
+     "q": "What small detail did you notice today that others might miss?",
+     "c": "Spend two minutes observing a room and list five details you had missed."
+    },
+    "de": {
+     "t": "Sherlock Holmes und die Kunst der Deduktion",
+     "g": "Lerne, wie Holmes das Beobachten zur Kunst machte.",
+     "p": [
+      "Sir Arthur Conan Doyle erschuf Sherlock Holmes, der 1887 erstmals erschien.",
+      "Holmes bemerkt kleine Details, die andere übersehen, und schließt daraus.",
+      "Sein Freund Dr. Watson erzählt die Fälle, und wir staunen mit ihm."
+     ],
+     "q": "Welches kleine Detail hast du heute bemerkt, das andere übersehen könnten?",
+     "c": "Beobachte zwei Minuten einen Raum und liste fünf zuvor übersehene Details auf."
+    },
+    "es": {
+     "t": "Sherlock Holmes y la deducción",
+     "g": "Aprende cómo Holmes convirtió la observación en un arte.",
+     "p": [
+      "Sir Arthur Conan Doyle creó a Sherlock Holmes, que apareció por primera vez en 1887.",
+      "Holmes nota pequeños detalles que otros pasan por alto y razona a partir de ellos.",
+      "Su amigo el doctor Watson cuenta los casos y nos asombramos con él."
+     ],
+     "q": "¿Qué pequeño detalle notaste hoy que otros podrían pasar por alto?",
+     "c": "Observa una habitación dos minutos y anota cinco detalles que no habías visto."
+    },
+    "fr": {
+     "t": "Sherlock Holmes et la déduction",
+     "g": "Apprends comment Holmes a fait de l'observation un art.",
+     "p": [
+      "Sir Arthur Conan Doyle a créé Sherlock Holmes, apparu pour la première fois en 1887.",
+      "Holmes remarque de petits détails que d'autres manquent et en tire des conclusions.",
+      "Son ami le docteur Watson raconte les affaires, et nous nous émerveillons avec lui."
+     ],
+     "q": "Quel petit détail as-tu remarqué aujourd'hui que d'autres auraient manqué ?",
+     "c": "Observe une pièce deux minutes et note cinq détails que tu n'avais pas vus."
+    },
+    "it": {
+     "t": "Sherlock Holmes e la deduzione",
+     "g": "Impara come Holmes fece dell'osservazione un'arte.",
+     "p": [
+      "Sir Arthur Conan Doyle creò Sherlock Holmes, apparso per la prima volta nel 1887.",
+      "Holmes nota piccoli dettagli che altri perdono e ragiona partendo da essi.",
+      "Il suo amico dottor Watson racconta i casi e noi ci stupiamo con lui."
+     ],
+     "q": "Quale piccolo dettaglio hai notato oggi che altri avrebbero perso?",
+     "c": "Osserva una stanza per due minuti e annota cinque dettagli che non avevi visto."
+    },
+    "pt": {
+     "t": "Sherlock Holmes e a dedução",
+     "g": "Aprende como Holmes fez da observação uma arte.",
+     "p": [
+      "Sir Arthur Conan Doyle criou Sherlock Holmes, que apareceu pela primeira vez em 1887.",
+      "Holmes repara em pequenos detalhes que outros não veem e raciocina a partir deles.",
+      "O seu amigo Dr. Watson narra os casos e nós espantamo-nos com ele."
+     ],
+     "q": "Que pequeno detalhe notaste hoje que outros poderiam não ver?",
+     "c": "Observa uma divisão durante dois minutos e anota cinco detalhes que não tinhas visto."
+    },
+    "pt_BR": {
+     "t": "Sherlock Holmes e a dedução",
+     "g": "Aprenda como Holmes fez da observação uma arte.",
+     "p": [
+      "Sir Arthur Conan Doyle criou Sherlock Holmes, que apareceu pela primeira vez em 1887.",
+      "Holmes percebe pequenos detalhes que outros não veem e raciocina a partir deles.",
+      "Seu amigo Dr. Watson narra os casos e nós nos espantamos com ele."
+     ],
+     "q": "Que pequeno detalhe você notou hoje que outros poderiam não ver?",
+     "c": "Observe um cômodo por dois minutos e anote cinco detalhes que não tinha visto."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Science fiction: asking what if",
+     "g": "See how science fiction explores today through tomorrow.",
+     "p": [
+      "Science fiction starts with a question: what if robots, aliens or new worlds existed?",
+      "H. G. Wells, Isaac Asimov, Ursula K. Le Guin and Stanislaw Lem shaped the genre.",
+      "Good sci-fi is less about gadgets and more about people and society."
+     ],
+     "q": "If you could invent one future technology for a story, what would it be?",
+     "c": "Write one what if question that could start your own science fiction tale."
+    },
+    "de": {
+     "t": "Science-Fiction: die Frage Was wäre, wenn",
+     "g": "Sieh, wie Science-Fiction das Heute durch das Morgen erkundet.",
+     "p": [
+      "Science-Fiction beginnt mit einer Frage: Was wäre, wenn es Roboter, Aliens oder neue Welten gäbe?",
+      "H. G. Wells, Isaac Asimov, Ursula K. Le Guin und Stanisław Lem prägten das Genre.",
+      "Gute Science-Fiction handelt weniger von Geräten als von Menschen und Gesellschaft."
+     ],
+     "q": "Welche Zukunftstechnik würdest du für eine Geschichte erfinden?",
+     "c": "Schreibe eine Was-wäre-wenn-Frage auf, die deine eigene Geschichte starten könnte."
+    },
+    "es": {
+     "t": "Ciencia ficción: la pregunta qué pasaría si",
+     "g": "Mira cómo la ciencia ficción explora el hoy a través del mañana.",
+     "p": [
+      "La ciencia ficción parte de una pregunta: ¿y si existieran robots, alienígenas o mundos nuevos?",
+      "H. G. Wells, Isaac Asimov, Ursula K. Le Guin y Stanisław Lem dieron forma al género.",
+      "La buena ciencia ficción trata menos de aparatos y más de personas y sociedad."
+     ],
+     "q": "Si inventaras una tecnología futura para un relato, ¿cuál sería?",
+     "c": "Escribe una pregunta qué pasaría si que podría iniciar tu propio relato."
+    },
+    "fr": {
+     "t": "La science-fiction : poser la question et si",
+     "g": "Vois comment la science-fiction explore aujourd'hui par demain.",
+     "p": [
+      "La science-fiction part d'une question : et si des robots, des extraterrestres ou des mondes nouveaux existaient ?",
+      "H. G. Wells, Isaac Asimov, Ursula K. Le Guin et Stanisław Lem ont façonné le genre.",
+      "La bonne SF parle moins de gadgets que des gens et de la société."
+     ],
+     "q": "Si tu pouvais inventer une technologie du futur pour un récit, laquelle ?",
+     "c": "Écris une question et si qui pourrait lancer ton propre récit de SF."
+    },
+    "it": {
+     "t": "Fantascienza: la domanda e se",
+     "g": "Vedi come la fantascienza esplora l'oggi attraverso il domani.",
+     "p": [
+      "La fantascienza parte da una domanda: e se esistessero robot, alieni o nuovi mondi?",
+      "H. G. Wells, Isaac Asimov, Ursula K. Le Guin e Stanisław Lem hanno plasmato il genere.",
+      "La buona fantascienza parla meno di aggeggi e più di persone e società."
+     ],
+     "q": "Se potessi inventare una tecnologia futura per un racconto, quale sarebbe?",
+     "c": "Scrivi una domanda e se che potrebbe dare inizio a un tuo racconto."
+    },
+    "pt": {
+     "t": "Ficção científica: a pergunta e se",
+     "g": "Vê como a ficção científica explora o hoje através do amanhã.",
+     "p": [
+      "A ficção científica parte de uma pergunta: e se existissem robôs, extraterrestres ou novos mundos?",
+      "H. G. Wells, Isaac Asimov, Ursula K. Le Guin e Stanisław Lem moldaram o género.",
+      "A boa ficção científica fala menos de aparelhos e mais de pessoas e sociedade."
+     ],
+     "q": "Se pudesses inventar uma tecnologia futura para uma história, qual seria?",
+     "c": "Escreve uma pergunta e se que poderia iniciar uma história tua."
+    },
+    "pt_BR": {
+     "t": "Ficção científica: a pergunta e se",
+     "g": "Veja como a ficção científica explora o hoje pelo amanhã.",
+     "p": [
+      "A ficção científica parte de uma pergunta: e se existissem robôs, alienígenas ou novos mundos?",
+      "H. G. Wells, Isaac Asimov, Ursula K. Le Guin e Stanisław Lem moldaram o gênero.",
+      "A boa ficção científica fala menos de aparelhos e mais de pessoas e sociedade."
+     ],
+     "q": "Se você pudesse inventar uma tecnologia futura para uma história, qual seria?",
+     "c": "Escreva uma pergunta e se que poderia iniciar uma história sua."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Jules Verne's voyages",
+     "g": "Travel with the French author who imagined journeys before they happened.",
+     "p": [
+      "Jules Verne wrote Twenty Thousand Leagues Under the Sea, with Captain Nemo and his submarine.",
+      "Around the World in Eighty Days follows Phileas Fogg on a race across the globe.",
+      "From the Earth to the Moon imagined a lunar trip a century before Apollo."
+     ],
+     "q": "Which Verne journey would you most like to take?",
+     "c": "Trace Phileas Fogg's route on a map and pick one stop to look up."
+    },
+    "de": {
+     "t": "Jules Vernes Reisen",
+     "g": "Reise mit dem französischen Autor, der Reisen erfand, bevor sie möglich waren.",
+     "p": [
+      "Jules Verne schrieb 20.000 Meilen unter dem Meer mit Kapitän Nemo und seinem U-Boot.",
+      "In 80 Tagen um die Welt begleitet Phileas Fogg bei einem Wettlauf um den Globus.",
+      "Von der Erde zum Mond erdachte eine Mondreise ein Jahrhundert vor Apollo."
+     ],
+     "q": "Welche Verne-Reise würdest du am liebsten antreten?",
+     "c": "Verfolge Phileas Foggs Route auf einer Karte und schau eine Station nach."
+    },
+    "es": {
+     "t": "Los viajes de Julio Verne",
+     "g": "Viaja con el autor francés que imaginó travesías antes de que existieran.",
+     "p": [
+      "Julio Verne escribió Veinte mil leguas de viaje submarino, con el capitán Nemo y su submarino.",
+      "La vuelta al mundo en ochenta días sigue a Phileas Fogg en una carrera por el globo.",
+      "De la Tierra a la Luna imaginó un viaje lunar un siglo antes del Apolo."
+     ],
+     "q": "¿Qué viaje de Verne te gustaría hacer más?",
+     "c": "Traza en un mapa la ruta de Phileas Fogg y busca información de una parada."
+    },
+    "fr": {
+     "t": "Les voyages de Jules Verne",
+     "g": "Voyage avec l'auteur français qui imaginait des périples avant l'heure.",
+     "p": [
+      "Jules Verne a écrit Vingt mille lieues sous les mers, avec le capitaine Nemo et son sous-marin.",
+      "Le Tour du monde en quatre-vingts jours suit Phileas Fogg dans une course autour du globe.",
+      "De la Terre à la Lune imaginait un voyage lunaire un siècle avant Apollo."
+     ],
+     "q": "Quel voyage de Verne aimerais-tu le plus faire ?",
+     "c": "Trace la route de Phileas Fogg sur une carte et renseigne-toi sur une étape."
+    },
+    "it": {
+     "t": "I viaggi di Jules Verne",
+     "g": "Viaggia con l'autore francese che immaginò imprese prima che esistessero.",
+     "p": [
+      "Jules Verne scrisse Ventimila leghe sotto i mari, con il capitano Nemo e il suo sottomarino.",
+      "Il giro del mondo in ottanta giorni segue Phileas Fogg in una corsa attorno al globo.",
+      "Dalla Terra alla Luna immaginò un viaggio lunare un secolo prima dell'Apollo."
+     ],
+     "q": "Quale viaggio di Verne vorresti fare di più?",
+     "c": "Traccia su una mappa il percorso di Phileas Fogg e cerca informazioni su una tappa."
+    },
+    "pt": {
+     "t": "As viagens de Júlio Verne",
+     "g": "Viaja com o autor francês que imaginou jornadas antes de existirem.",
+     "p": [
+      "Júlio Verne escreveu Vinte Mil Léguas Submarinas, com o capitão Nemo e o seu submarino.",
+      "A Volta ao Mundo em Oitenta Dias segue Phileas Fogg numa corrida pelo globo.",
+      "Da Terra à Lua imaginou uma viagem lunar um século antes do Apollo."
+     ],
+     "q": "Que viagem de Verne gostarias mais de fazer?",
+     "c": "Traça num mapa a rota de Phileas Fogg e pesquisa uma das paragens."
+    },
+    "pt_BR": {
+     "t": "As viagens de Júlio Verne",
+     "g": "Viaje com o autor francês que imaginou jornadas antes de existirem.",
+     "p": [
+      "Júlio Verne escreveu Vinte Mil Léguas Submarinas, com o capitão Nemo e seu submarino.",
+      "A Volta ao Mundo em Oitenta Dias segue Phileas Fogg numa corrida pelo globo.",
+      "Da Terra à Lua imaginou uma viagem lunar um século antes da Apollo."
+     ],
+     "q": "Que viagem de Verne você mais gostaria de fazer?",
+     "c": "Trace no mapa a rota de Phileas Fogg e pesquise uma das paradas."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fantasy: worlds of wonder",
+     "g": "Step into magic, invented maps and quests.",
+     "p": [
+      "Fantasy builds imaginary worlds with their own rules, creatures and histories.",
+      "Quests, magic and maps are classic ingredients, from Narnia to Earthsea.",
+      "Michael Ende's The Neverending Story shows how fantasy can celebrate reading itself."
+     ],
+     "q": "If you could visit one fantasy world, which would you choose?",
+     "c": "Sketch a tiny map of an imaginary land with three named places."
+    },
+    "de": {
+     "t": "Fantasy: Welten voller Wunder",
+     "g": "Tritt ein in Magie, erfundene Karten und Abenteuerreisen.",
+     "p": [
+      "Fantasy baut erfundene Welten mit eigenen Regeln, Wesen und Geschichten.",
+      "Queste, Magie und Karten sind klassische Zutaten, von Narnia bis Erdsee.",
+      "Michael Endes Die unendliche Geschichte feiert das Lesen selbst."
+     ],
+     "q": "Welche Fantasywelt würdest du gern besuchen?",
+     "c": "Skizziere eine kleine Karte eines erfundenen Landes mit drei benannten Orten."
+    },
+    "es": {
+     "t": "Fantasía: mundos de maravilla",
+     "g": "Entra en la magia, los mapas inventados y las búsquedas.",
+     "p": [
+      "La fantasía crea mundos imaginarios con sus propias reglas, criaturas e historias.",
+      "Las búsquedas, la magia y los mapas son ingredientes clásicos, de Narnia a Terramar.",
+      "La historia interminable de Michael Ende celebra la propia lectura."
+     ],
+     "q": "Si pudieras visitar un mundo fantástico, ¿cuál elegirías?",
+     "c": "Dibuja un pequeño mapa de una tierra imaginaria con tres lugares con nombre."
+    },
+    "fr": {
+     "t": "La fantasy : des mondes de merveilles",
+     "g": "Entre dans la magie, les cartes inventées et les quêtes.",
+     "p": [
+      "La fantasy bâtit des mondes imaginaires avec leurs règles, créatures et histoires.",
+      "Quêtes, magie et cartes sont des ingrédients classiques, de Narnia à Terremer.",
+      "L'Histoire sans fin de Michael Ende célèbre la lecture elle-même."
+     ],
+     "q": "Si tu pouvais visiter un monde de fantasy, lequel choisirais-tu ?",
+     "c": "Dessine une petite carte d'une terre imaginaire avec trois lieux nommés."
+    },
+    "it": {
+     "t": "Fantasy: mondi di meraviglia",
+     "g": "Entra nella magia, nelle mappe inventate e nelle ricerche.",
+     "p": [
+      "Il fantasy costruisce mondi immaginari con regole, creature e storie proprie.",
+      "Imprese, magia e mappe sono ingredienti classici, da Narnia a Earthsea.",
+      "La storia infinita di Michael Ende celebra la lettura stessa."
+     ],
+     "q": "Se potessi visitare un mondo fantasy, quale sceglieresti?",
+     "c": "Disegna una piccola mappa di una terra immaginaria con tre luoghi con nome."
+    },
+    "pt": {
+     "t": "Fantasia: mundos de maravilha",
+     "g": "Entra na magia, nos mapas inventados e nas demandas.",
+     "p": [
+      "A fantasia cria mundos imaginários com regras, criaturas e histórias próprias.",
+      "Demandas, magia e mapas são ingredientes clássicos, de Nárnia a Terramar.",
+      "A História Interminável, de Michael Ende, celebra a própria leitura."
+     ],
+     "q": "Se pudesses visitar um mundo de fantasia, qual escolherias?",
+     "c": "Esboça um pequeno mapa de uma terra imaginária com três lugares com nome."
+    },
+    "pt_BR": {
+     "t": "Fantasia: mundos de maravilha",
+     "g": "Entre na magia, nos mapas inventados e nas buscas.",
+     "p": [
+      "A fantasia cria mundos imaginários com regras, criaturas e histórias próprias.",
+      "Buscas, magia e mapas são ingredientes clássicos, de Nárnia a Terramar.",
+      "A História Sem Fim, de Michael Ende, celebra a própria leitura."
+     ],
+     "q": "Se você pudesse visitar um mundo de fantasia, qual escolheria?",
+     "c": "Esboce um pequeno mapa de uma terra imaginária com três lugares com nome."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tolkien and Middle-earth",
+     "g": "Meet the author who shaped modern fantasy.",
+     "p": [
+      "J. R. R. Tolkien, an Oxford professor of languages, published The Hobbit in 1937.",
+      "The Lord of the Rings followed in 1954 and 1955 with a great journey of friendship.",
+      "Tolkien invented languages first, then built Middle-earth around them."
+     ],
+     "q": "Would you rather start with The Hobbit or jump into The Lord of the Rings?",
+     "c": "Read the opening page of The Hobbit and notice the cosy, funny tone."
+    },
+    "de": {
+     "t": "Tolkien und Mittelerde",
+     "g": "Lerne den Autor kennen, der die moderne Fantasy prägte.",
+     "p": [
+      "J. R. R. Tolkien, Sprachprofessor in Oxford, veröffentlichte 1937 Der Hobbit.",
+      "Der Herr der Ringe folgte 1954 und 1955 mit einer großen Reise voller Freundschaft.",
+      "Tolkien erfand zuerst Sprachen und baute dann Mittelerde um sie herum."
+     ],
+     "q": "Beginnst du lieber mit dem Hobbit oder springst du gleich in Den Herrn der Ringe?",
+     "c": "Lies die erste Seite des Hobbits und achte auf den gemütlichen, witzigen Ton."
+    },
+    "es": {
+     "t": "Tolkien y la Tierra Media",
+     "g": "Conoce al autor que dio forma a la fantasía moderna.",
+     "p": [
+      "J. R. R. Tolkien, profesor de lenguas en Oxford, publicó El hobbit en 1937.",
+      "El señor de los anillos llegó en 1954 y 1955 con un gran viaje de amistad.",
+      "Tolkien inventó primero lenguas y luego construyó la Tierra Media a su alrededor."
+     ],
+     "q": "¿Empezarías por El hobbit o te lanzarías a El señor de los anillos?",
+     "c": "Lee la primera página de El hobbit y fíjate en su tono acogedor y divertido."
+    },
+    "fr": {
+     "t": "Tolkien et la Terre du Milieu",
+     "g": "Fais connaissance avec l'auteur qui a façonné la fantasy moderne.",
+     "p": [
+      "J. R. R. Tolkien, professeur de langues à Oxford, a publié Bilbo le Hobbit en 1937.",
+      "Le Seigneur des anneaux a suivi en 1954 et 1955, avec un grand voyage d'amitié.",
+      "Tolkien a inventé des langues d'abord, puis bâti la Terre du Milieu autour."
+     ],
+     "q": "Commencerais-tu par Bilbo le Hobbit ou plongerais-tu dans Le Seigneur des anneaux ?",
+     "c": "Lis la première page de Bilbo le Hobbit et sens son ton douillet et drôle."
+    },
+    "it": {
+     "t": "Tolkien e la Terra di Mezzo",
+     "g": "Incontra l'autore che ha plasmato il fantasy moderno.",
+     "p": [
+      "J. R. R. Tolkien, professore di lingue a Oxford, pubblicò Lo Hobbit nel 1937.",
+      "Il Signore degli Anelli seguì nel 1954 e 1955 con un grande viaggio di amicizia.",
+      "Tolkien inventò prima le lingue e poi costruì la Terra di Mezzo attorno a esse."
+     ],
+     "q": "Inizieresti da Lo Hobbit o ti tufferesti nel Signore degli Anelli?",
+     "c": "Leggi la prima pagina de Lo Hobbit e nota il tono accogliente e divertente."
+    },
+    "pt": {
+     "t": "Tolkien e a Terra Média",
+     "g": "Conhece o autor que moldou a fantasia moderna.",
+     "p": [
+      "J. R. R. Tolkien, professor de línguas em Oxford, publicou O Hobbit em 1937.",
+      "O Senhor dos Anéis veio em 1954 e 1955, com uma grande viagem de amizade.",
+      "Tolkien inventou primeiro línguas e depois construiu a Terra Média à volta delas."
+     ],
+     "q": "Começarias por O Hobbit ou mergulharias em O Senhor dos Anéis?",
+     "c": "Lê a primeira página de O Hobbit e repara no tom aconchegante e divertido."
+    },
+    "pt_BR": {
+     "t": "Tolkien e a Terra-média",
+     "g": "Conheça o autor que moldou a fantasia moderna.",
+     "p": [
+      "J. R. R. Tolkien, professor de línguas em Oxford, publicou O Hobbit em 1937.",
+      "O Senhor dos Anéis veio em 1954 e 1955, com uma grande jornada de amizade.",
+      "Tolkien inventou primeiro línguas e depois construiu a Terra-média em torno delas."
+     ],
+     "q": "Você começaria por O Hobbit ou mergulharia em O Senhor dos Anéis?",
+     "c": "Leia a primeira página de O Hobbit e note o tom aconchegante e divertido."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Historical fiction",
+     "g": "Discover novels that bring past eras alive.",
+     "p": [
+      "Historical fiction invents characters but places them in a real past.",
+      "Sir Walter Scott's Ivanhoe helped launch the genre in the early 1800s.",
+      "Good authors research details: food, clothes, speech and daily life."
+     ],
+     "q": "Which period of history would you love to visit through a novel?",
+     "c": "Pick one era and look up one daily-life detail a novel could use."
+    },
+    "de": {
+     "t": "Historische Romane",
+     "g": "Entdecke Romane, die vergangene Zeiten lebendig machen.",
+     "p": [
+      "Historische Romane erfinden Figuren, setzen sie aber in eine reale Vergangenheit.",
+      "Sir Walter Scotts Ivanhoe half Anfang des 19. Jahrhunderts, das Genre zu begründen.",
+      "Gute Autoren recherchieren Details: Essen, Kleidung, Sprache und Alltag."
+     ],
+     "q": "In welche Epoche der Geschichte würdest du dich gern durch einen Roman versetzen?",
+     "c": "Wähle eine Epoche und schlage ein Alltagsdetail nach, das ein Roman nutzen könnte."
+    },
+    "es": {
+     "t": "Novela histórica",
+     "g": "Descubre novelas que dan vida a épocas pasadas.",
+     "p": [
+      "La novela histórica inventa personajes pero los sitúa en un pasado real.",
+      "Ivanhoe, de Sir Walter Scott, ayudó a lanzar el género a principios del siglo XIX.",
+      "Los buenos autores investigan detalles: comida, ropa, habla y vida diaria."
+     ],
+     "q": "¿A qué época de la historia te gustaría viajar mediante una novela?",
+     "c": "Elige una época y busca un detalle de vida cotidiana que una novela podría usar."
+    },
+    "fr": {
+     "t": "Le roman historique",
+     "g": "Découvre des romans qui font revivre les époques passées.",
+     "p": [
+      "Le roman historique invente des personnages mais les place dans un passé réel.",
+      "Ivanhoé de Sir Walter Scott a aidé à lancer le genre au début du XIXe siècle.",
+      "Les bons auteurs se documentent : nourriture, vêtements, langage et vie quotidienne."
+     ],
+     "q": "Quelle époque de l'histoire aimerais-tu visiter par un roman ?",
+     "c": "Choisis une époque et cherche un détail de vie quotidienne qu'un roman pourrait utiliser."
+    },
+    "it": {
+     "t": "Il romanzo storico",
+     "g": "Scopri romanzi che fanno rivivere epoche passate.",
+     "p": [
+      "Il romanzo storico inventa personaggi ma li colloca in un passato reale.",
+      "Ivanhoe di Sir Walter Scott contribuì a lanciare il genere nel primo Ottocento.",
+      "I buoni autori ricercano i dettagli: cibo, abiti, linguaggio e vita quotidiana."
+     ],
+     "q": "Quale periodo storico ti piacerebbe visitare attraverso un romanzo?",
+     "c": "Scegli un'epoca e cerca un dettaglio di vita quotidiana che un romanzo potrebbe usare."
+    },
+    "pt": {
+     "t": "O romance histórico",
+     "g": "Descobre romances que dão vida a épocas passadas.",
+     "p": [
+      "O romance histórico inventa personagens mas coloca-as num passado real.",
+      "Ivanhoe, de Sir Walter Scott, ajudou a lançar o género no início do século XIX.",
+      "Os bons autores pesquisam detalhes: comida, roupa, fala e vida quotidiana."
+     ],
+     "q": "Que período da história gostarias de visitar através de um romance?",
+     "c": "Escolhe uma época e pesquisa um detalhe de vida quotidiana que um romance poderia usar."
+    },
+    "pt_BR": {
+     "t": "O romance histórico",
+     "g": "Descubra romances que dão vida a épocas passadas.",
+     "p": [
+      "O romance histórico inventa personagens mas os coloca num passado real.",
+      "Ivanhoé, de Sir Walter Scott, ajudou a lançar o gênero no início do século XIX.",
+      "Bons autores pesquisam detalhes: comida, roupas, fala e vida cotidiana."
+     ],
+     "q": "Que período da história você gostaria de visitar por meio de um romance?",
+     "c": "Escolha uma época e pesquise um detalhe de vida cotidiana que um romance poderia usar."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Adventure classics",
+     "g": "Sail into stories of travel and survival.",
+     "p": [
+      "Robinson Crusoe by Daniel Defoe, from 1719, imagines life alone on an island.",
+      "Robert Louis Stevenson's Treasure Island, from 1883, gave us maps, parrots and pirates.",
+      "Adventure books are about resourcefulness, courage and curiosity."
+     ],
+     "q": "If you had to survive on an island, which three items would you bring?",
+     "c": "Write your three island items and one reason for each."
+    },
+    "de": {
+     "t": "Abenteuerklassiker",
+     "g": "Segle hinein in Geschichten von Reise und Überleben.",
+     "p": [
+      "Robinson Crusoe von Daniel Defoe, 1719, stellt sich ein Leben allein auf einer Insel vor.",
+      "Robert Louis Stevensons Die Schatzinsel von 1883 schenkte uns Karten, Papageien und Piraten.",
+      "Abenteuerbücher handeln von Einfallsreichtum, Mut und Neugier."
+     ],
+     "q": "Welche drei Dinge würdest du auf eine Insel mitnehmen, um zu überleben?",
+     "c": "Schreibe deine drei Inselgegenstände auf, mit je einem Grund."
+    },
+    "es": {
+     "t": "Clásicos de aventuras",
+     "g": "Navega hacia historias de viajes y supervivencia.",
+     "p": [
+      "Robinson Crusoe, de Daniel Defoe, de 1719, imagina la vida solo en una isla.",
+      "La isla del tesoro, de Robert Louis Stevenson, de 1883, nos dio mapas, loros y piratas.",
+      "Los libros de aventuras tratan de ingenio, valor y curiosidad."
+     ],
+     "q": "Si tuvieras que sobrevivir en una isla, ¿qué tres objetos llevarías?",
+     "c": "Escribe tus tres objetos de isla y una razón para cada uno."
+    },
+    "fr": {
+     "t": "Classiques d'aventure",
+     "g": "Embarque dans des histoires de voyage et de survie.",
+     "p": [
+      "Robinson Crusoé de Daniel Defoe, de 1719, imagine la vie seul sur une île.",
+      "L'Île au trésor de Robert Louis Stevenson, de 1883, nous a donné cartes, perroquets et pirates.",
+      "Les livres d'aventure parlent de débrouillardise, de courage et de curiosité."
+     ],
+     "q": "Si tu devais survivre sur une île, quels trois objets emporterais-tu ?",
+     "c": "Écris tes trois objets d'île avec une raison pour chacun."
+    },
+    "it": {
+     "t": "Classici d'avventura",
+     "g": "Salpa verso storie di viaggio e sopravvivenza.",
+     "p": [
+      "Robinson Crusoe di Daniel Defoe, del 1719, immagina la vita da soli su un'isola.",
+      "L'isola del tesoro di Robert Louis Stevenson, del 1883, ci ha dato mappe, pappagalli e pirati.",
+      "I libri d'avventura parlano di ingegno, coraggio e curiosità."
+     ],
+     "q": "Se dovessi sopravvivere su un'isola, quali tre oggetti porteresti?",
+     "c": "Scrivi i tuoi tre oggetti da isola con un motivo per ciascuno."
+    },
+    "pt": {
+     "t": "Clássicos de aventuras",
+     "g": "Embarca em histórias de viagem e sobrevivência.",
+     "p": [
+      "Robinson Crusoé, de Daniel Defoe, de 1719, imagina a vida sozinho numa ilha.",
+      "A Ilha do Tesouro, de Robert Louis Stevenson, de 1883, deu-nos mapas, papagaios e piratas.",
+      "Os livros de aventuras tratam de engenho, coragem e curiosidade."
+     ],
+     "q": "Se tivesses de sobreviver numa ilha, que três objetos levarias?",
+     "c": "Escreve os teus três objetos de ilha e uma razão para cada um."
+    },
+    "pt_BR": {
+     "t": "Clássicos de aventura",
+     "g": "Embarque em histórias de viagem e sobrevivência.",
+     "p": [
+      "Robinson Crusoé, de Daniel Defoe, de 1719, imagina a vida sozinho numa ilha.",
+      "A Ilha do Tesouro, de Robert Louis Stevenson, de 1883, nos deu mapas, papagaios e piratas.",
+      "Livros de aventura tratam de engenho, coragem e curiosidade."
+     ],
+     "q": "Se você tivesse de sobreviver numa ilha, que três objetos levaria?",
+     "c": "Escreva seus três objetos de ilha e uma razão para cada um."
+    }
+   }
+  }
+ ]
+}

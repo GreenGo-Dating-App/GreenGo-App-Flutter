@@ -1,0 +1,835 @@
+{
+ "topic": "casual_chat",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Travel dreams",
+     "g": "Share places you would love to visit someday and why.",
+     "p": [
+      "Name a place and say what draws you: food, nature, history or people.",
+      "Dreams do not need a plan or a budget; just imagine.",
+      "Ask Where would you go if you could leave tomorrow? for fun answers."
+     ],
+     "q": "If you could visit anywhere next month, where would it be?",
+     "c": "Tell your Buddy your top dream destination and one thing you would do there."
+    },
+    "de": {
+     "t": "Reiseträume",
+     "g": "Erzähle, welche Orte du eines Tages besuchen möchtest und warum.",
+     "p": [
+      "Nenne einen Ort und sage, was dich reizt: Essen, Natur, Geschichte oder Menschen.",
+      "Träume brauchen keinen Plan und kein Budget; stell es dir einfach vor.",
+      "Frag Wohin würdest du morgen reisen? für schöne Antworten."
+     ],
+     "q": "Wenn du nächsten Monat irgendwohin könntest, wohin ginge es?",
+     "c": "Erzähle deinem Buddy dein Traumziel und was du dort tun würdest."
+    },
+    "es": {
+     "t": "Sueños de viaje",
+     "g": "Cuenta qué lugares te gustaría visitar algún día y por qué.",
+     "p": [
+      "Nombra un lugar y di qué te atrae: la comida, la naturaleza, la historia o la gente.",
+      "Los sueños no necesitan plan ni presupuesto; solo imagina.",
+      "Pregunta ¿Adónde irías si pudieras salir mañana? para respuestas divertidas."
+     ],
+     "q": "Si pudieras ir a cualquier sitio el mes que viene, ¿adónde irías?",
+     "c": "Cuéntale a tu Buddy tu destino soñado y algo que harías allí."
+    },
+    "fr": {
+     "t": "Rêves de voyage",
+     "g": "Parle des endroits que tu aimerais visiter un jour et pourquoi.",
+     "p": [
+      "Cite un lieu et dis ce qui t'attire : la cuisine, la nature, l'histoire ou les gens.",
+      "Les rêves n'ont pas besoin de plan ni de budget ; imagine simplement.",
+      "Demande Où irais-tu si tu pouvais partir demain ? pour des réponses amusantes."
+     ],
+     "q": "Si tu pouvais aller où tu veux le mois prochain, ce serait où ?",
+     "c": "Dis à ton Buddy ta destination de rêve et une chose que tu y ferais."
+    },
+    "it": {
+     "t": "Sogni di viaggio",
+     "g": "Racconta quali posti vorresti visitare un giorno e perché.",
+     "p": [
+      "Nomina un posto e dì cosa ti attira: il cibo, la natura, la storia o la gente.",
+      "I sogni non hanno bisogno di piani o budget; immagina e basta.",
+      "Chiedi Dove andresti se potessi partire domani? per risposte divertenti."
+     ],
+     "q": "Se potessi andare ovunque il mese prossimo, dove andresti?",
+     "c": "Racconta al tuo Buddy la tua meta da sogno e cosa faresti lì."
+    },
+    "pt": {
+     "t": "Sonhos de viagem",
+     "g": "Conta que lugares gostavas de visitar um dia e porquê.",
+     "p": [
+      "Diz um lugar e o que te atrai: a comida, a natureza, a história ou as pessoas.",
+      "Os sonhos não precisam de plano nem de orçamento; imagina apenas.",
+      "Pergunta Para onde irias se pudesses partir amanhã? para respostas divertidas."
+     ],
+     "q": "Se pudesses ir a qualquer lado no próximo mês, para onde irias?",
+     "c": "Conta ao teu Buddy o teu destino de sonho e algo que farias lá."
+    },
+    "pt_BR": {
+     "t": "Sonhos de viagem",
+     "g": "Conte quais lugares você gostaria de visitar um dia e por quê.",
+     "p": [
+      "Diga um lugar e o que atrai você: a comida, a natureza, a história ou as pessoas.",
+      "Sonhos não precisam de plano nem de orçamento; só imagine.",
+      "Pergunte Para onde você iria se pudesse partir amanhã? para respostas divertidas."
+     ],
+     "q": "Se pudesse ir a qualquer lugar no mês que vem, para onde iria?",
+     "c": "Conte ao seu Buddy seu destino dos sonhos e algo que você faria lá."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Trips you remember",
+     "g": "Talk about a favourite trip and what made it special.",
+     "p": [
+      "Tell the story in order: where, who with, and one moment you remember.",
+      "Small details bring a trip to life: a smell, a sound, a surprise meal.",
+      "Share the memory, but skip details like dates or exact hotels."
+     ],
+     "q": "What is the best surprise you have had while travelling?",
+     "c": "Tell your Buddy about a favourite trip in three sentences."
+    },
+    "de": {
+     "t": "Reisen, an die du dich erinnerst",
+     "g": "Sprich über eine Lieblingsreise und was sie besonders machte.",
+     "p": [
+      "Erzähle der Reihe nach: wohin, mit wem und ein Moment, der dir im Kopf blieb.",
+      "Kleine Details beleben eine Reise: ein Geruch, ein Klang, ein überraschendes Essen.",
+      "Teile die Erinnerung, aber lass Daten oder genaue Unterkünfte weg."
+     ],
+     "q": "Was war die schönste Überraschung auf einer Reise?",
+     "c": "Erzähle deinem Buddy in drei Sätzen von einer Lieblingsreise."
+    },
+    "es": {
+     "t": "Viajes que recuerdas",
+     "g": "Habla de un viaje favorito y de qué lo hizo especial.",
+     "p": [
+      "Cuenta la historia en orden: dónde, con quién y un momento que recuerdes.",
+      "Los pequeños detalles dan vida a un viaje: un olor, un sonido, una comida sorpresa.",
+      "Comparte el recuerdo, pero omite datos como fechas o hoteles exactos."
+     ],
+     "q": "¿Cuál es la mejor sorpresa que has tenido viajando?",
+     "c": "Cuéntale a tu Buddy un viaje favorito en tres frases."
+    },
+    "fr": {
+     "t": "Des voyages dont tu te souviens",
+     "g": "Parle d'un voyage préféré et de ce qui l'a rendu spécial.",
+     "p": [
+      "Raconte dans l'ordre : où, avec qui et un moment qui t'a marqué.",
+      "Les petits détails font vivre un voyage : une odeur, un son, un repas surprise.",
+      "Partage le souvenir, mais évite les dates ou les hôtels exacts."
+     ],
+     "q": "Quelle est la plus belle surprise que tu aies eue en voyage ?",
+     "c": "Raconte à ton Buddy un voyage préféré en trois phrases."
+    },
+    "it": {
+     "t": "Viaggi che ricordi",
+     "g": "Parla di un viaggio preferito e di cosa l'ha reso speciale.",
+     "p": [
+      "Racconta in ordine: dove, con chi e un momento che ricordi.",
+      "I piccoli dettagli danno vita a un viaggio: un profumo, un suono, un pasto a sorpresa.",
+      "Condividi il ricordo, ma salta dettagli come date o hotel precisi."
+     ],
+     "q": "Qual è la sorpresa più bella che hai avuto viaggiando?",
+     "c": "Racconta al tuo Buddy un viaggio preferito in tre frasi."
+    },
+    "pt": {
+     "t": "Viagens de que te lembras",
+     "g": "Fala de uma viagem favorita e do que a tornou especial.",
+     "p": [
+      "Conta a história por ordem: onde, com quem e um momento de que te lembres.",
+      "Pequenos detalhes dão vida a uma viagem: um cheiro, um som, uma refeição surpresa.",
+      "Partilha a memória, mas omite detalhes como datas ou hotéis exatos."
+     ],
+     "q": "Qual foi a melhor surpresa que tiveste a viajar?",
+     "c": "Conta ao teu Buddy uma viagem favorita em três frases."
+    },
+    "pt_BR": {
+     "t": "Viagens de que você lembra",
+     "g": "Fale de uma viagem favorita e do que a tornou especial.",
+     "p": [
+      "Conte a história em ordem: onde, com quem e um momento de que você lembra.",
+      "Pequenos detalhes dão vida a uma viagem: um cheiro, um som, uma refeição surpresa.",
+      "Compartilhe a lembrança, mas omita detalhes como datas ou hotéis exatos."
+     ],
+     "q": "Qual foi a melhor surpresa que você teve viajando?",
+     "c": "Conte ao seu Buddy uma viagem favorita em três frases."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Holidays and celebrations",
+     "g": "Chat about how you like to celebrate special days.",
+     "p": [
+      "Describe a celebration you enjoy: who is there, what you eat, what you do.",
+      "Traditions differ, so ask with curiosity: How do you celebrate that?",
+      "Respect different ways of celebrating, including quiet or none at all."
+     ],
+     "q": "Which celebration do you look forward to the most?",
+     "c": "Tell your Buddy about one celebration you love and ask about theirs."
+    },
+    "de": {
+     "t": "Feiertage und Feiern",
+     "g": "Sprich darüber, wie du besondere Tage gern feierst.",
+     "p": [
+      "Beschreibe eine Feier, die du magst: wer dabei ist, was es zu essen gibt, was ihr tut.",
+      "Traditionen sind verschieden; frag neugierig: Wie feiert ihr das?",
+      "Respektiere verschiedene Arten zu feiern, auch ruhig oder gar nicht."
+     ],
+     "q": "Auf welche Feier freust du dich am meisten?",
+     "c": "Erzähle deinem Buddy von einer Feier, die du liebst, und frag nach seiner."
+    },
+    "es": {
+     "t": "Fiestas y celebraciones",
+     "g": "Charla sobre cómo te gusta celebrar los días especiales.",
+     "p": [
+      "Describe una celebración que disfrutas: quién está, qué se come, qué se hace.",
+      "Las tradiciones varían, así que pregunta con curiosidad: ¿Cómo lo celebráis?",
+      "Respeta las distintas formas de celebrar, incluso las tranquilas o ninguna."
+     ],
+     "q": "¿Qué celebración esperas con más ganas?",
+     "c": "Cuéntale a tu Buddy una celebración que te encanta y pregunta por la suya."
+    },
+    "fr": {
+     "t": "Fêtes et célébrations",
+     "g": "Parle de ta façon de célébrer les jours spéciaux.",
+     "p": [
+      "Décris une fête que tu aimes : qui est là, ce qu'on mange, ce qu'on fait.",
+      "Les traditions diffèrent, alors demande avec curiosité : Comment fêtez-vous ça ?",
+      "Respecte les différentes façons de fêter, y compris au calme ou pas du tout."
+     ],
+     "q": "Quelle fête attends-tu avec le plus d'impatience ?",
+     "c": "Parle à ton Buddy d'une fête que tu adores et demande la sienne."
+    },
+    "it": {
+     "t": "Feste e celebrazioni",
+     "g": "Chiacchiera di come ti piace celebrare i giorni speciali.",
+     "p": [
+      "Descrivi una festa che ti piace: chi c'è, cosa si mangia, cosa si fa.",
+      "Le tradizioni cambiano, quindi chiedi con curiosità: Come la festeggiate?",
+      "Rispetta i diversi modi di festeggiare, anche in tranquillità o per niente."
+     ],
+     "q": "Quale festa aspetti di più?",
+     "c": "Racconta al tuo Buddy una festa che ami e chiedi la sua."
+    },
+    "pt": {
+     "t": "Feriados e celebrações",
+     "g": "Conversa sobre como gostas de celebrar os dias especiais.",
+     "p": [
+      "Descreve uma celebração de que gostes: quem está, o que se come, o que se faz.",
+      "As tradições variam, por isso pergunta com curiosidade: Como celebram isso?",
+      "Respeita as diferentes formas de celebrar, mesmo as calmas ou nenhuma."
+     ],
+     "q": "Que celebração esperas com mais vontade?",
+     "c": "Conta ao teu Buddy uma celebração de que gostes e pergunta pela dele."
+    },
+    "pt_BR": {
+     "t": "Feriados e celebrações",
+     "g": "Converse sobre como você gosta de celebrar os dias especiais.",
+     "p": [
+      "Descreva uma celebração de que gosta: quem está, o que se come, o que se faz.",
+      "As tradições variam, então pergunte com curiosidade: Como vocês celebram isso?",
+      "Respeite as diferentes formas de celebrar, até as tranquilas ou nenhuma."
+     ],
+     "q": "Que celebração você mais espera?",
+     "c": "Conte ao seu Buddy uma celebração que você ama e pergunte pela dele."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Festivals around the world",
+     "g": "Share fun festivals you know or would love to see.",
+     "p": [
+      "Name a festival and what happens: lights, colours, music, food or parades.",
+      "Examples: Holi in India, Carnival in Brazil, Oktoberfest in Germany, Lantern Festival in China.",
+      "Ask Is there a festival where you live? to learn local flavour."
+     ],
+     "q": "Which festival would you most like to experience?",
+     "c": "Pick a festival from anywhere and describe it to your Buddy in two sentences."
+    },
+    "de": {
+     "t": "Feste rund um die Welt",
+     "g": "Erzähle von tollen Festen, die du kennst oder gern sehen würdest.",
+     "p": [
+      "Nenne ein Fest und was dort passiert: Lichter, Farben, Musik, Essen oder Umzüge.",
+      "Beispiele: Holi in Indien, Karneval in Brasilien, Oktoberfest in Deutschland, Laternenfest in China.",
+      "Frag Gibt es bei dir ein Fest? und lerne lokales Flair kennen."
+     ],
+     "q": "Welches Fest würdest du am liebsten erleben?",
+     "c": "Wähle ein Fest von irgendwo und beschreibe es deinem Buddy in zwei Sätzen."
+    },
+    "es": {
+     "t": "Festivales del mundo",
+     "g": "Cuenta festivales divertidos que conoces o te gustaría ver.",
+     "p": [
+      "Nombra un festival y qué ocurre: luces, colores, música, comida o desfiles.",
+      "Ejemplos: Holi en la India, el Carnaval en Brasil, la Oktoberfest en Alemania, el Festival de los Faroles en China.",
+      "Pregunta ¿Hay algún festival donde vives? para conocer el sabor local."
+     ],
+     "q": "¿Qué festival te gustaría vivir más?",
+     "c": "Elige un festival de cualquier lugar y descríbelo a tu Buddy en dos frases."
+    },
+    "fr": {
+     "t": "Festivals du monde entier",
+     "g": "Parle de fêtes amusantes que tu connais ou aimerais voir.",
+     "p": [
+      "Cite une fête et ce qui s'y passe : lumières, couleurs, musique, cuisine ou défilés.",
+      "Exemples : Holi en Inde, le Carnaval au Brésil, l'Oktoberfest en Allemagne, la fête des lanternes en Chine.",
+      "Demande Y a-t-il une fête chez toi ? pour goûter à la couleur locale."
+     ],
+     "q": "Quelle fête aimerais-tu le plus vivre ?",
+     "c": "Choisis une fête n'importe où et décris-la à ton Buddy en deux phrases."
+    },
+    "it": {
+     "t": "Festival nel mondo",
+     "g": "Racconta feste divertenti che conosci o che vorresti vedere.",
+     "p": [
+      "Nomina una festa e cosa succede: luci, colori, musica, cibo o sfilate.",
+      "Esempi: Holi in India, il Carnevale in Brasile, l'Oktoberfest in Germania, la Festa delle Lanterne in Cina.",
+      "Chiedi C'è una festa dove vivi? per conoscere il sapore locale."
+     ],
+     "q": "Quale festa vorresti vivere di più?",
+     "c": "Scegli una festa da qualunque posto e descrivila al tuo Buddy in due frasi."
+    },
+    "pt": {
+     "t": "Festivais pelo mundo",
+     "g": "Conta festas divertidas que conheces ou gostavas de ver.",
+     "p": [
+      "Diz o nome de uma festa e o que acontece: luzes, cores, música, comida ou desfiles.",
+      "Exemplos: Holi na Índia, o Carnaval no Brasil, a Oktoberfest na Alemanha, a Festa das Lanternas na China.",
+      "Pergunta Há alguma festa onde vives? para conheceres o sabor local."
+     ],
+     "q": "Que festa gostavas mais de viver?",
+     "c": "Escolhe uma festa de qualquer lado e descreve-a ao teu Buddy em duas frases."
+    },
+    "pt_BR": {
+     "t": "Festivais pelo mundo",
+     "g": "Conte festas divertidas que você conhece ou gostaria de ver.",
+     "p": [
+      "Diga o nome de uma festa e o que acontece: luzes, cores, música, comida ou desfiles.",
+      "Exemplos: Holi na Índia, o Carnaval no Brasil, a Oktoberfest na Alemanha, a Festa das Lanternas na China.",
+      "Pergunte Tem alguma festa onde você mora? para conhecer o sabor local."
+     ],
+     "q": "Que festa você mais gostaria de viver?",
+     "c": "Escolha uma festa de qualquer lugar e descreva ao seu Buddy em duas frases."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your hometown's specialities",
+     "g": "Share food, places and traditions from where you grew up.",
+     "p": [
+      "Name a local dish, a place and a tradition; three small proud details.",
+      "Explain simply so a newcomer can picture it.",
+      "Ask What is your area known for? to hear someone else's pride."
+     ],
+     "q": "What is the one thing every visitor to your hometown should try?",
+     "c": "Present your hometown to your Buddy in three highlights."
+    },
+    "de": {
+     "t": "Spezialitäten deiner Heimatstadt",
+     "g": "Erzähle von Essen, Orten und Bräuchen dort, wo du aufgewachsen bist.",
+     "p": [
+      "Nenne ein lokales Gericht, einen Ort und einen Brauch: drei kleine Stolzmomente.",
+      "Erkläre es einfach, damit sich ein Neuling alles vorstellen kann.",
+      "Frag Wofür ist deine Gegend bekannt? und höre den Stolz des anderen."
+     ],
+     "q": "Was sollte jeder Besucher deiner Heimatstadt unbedingt probieren?",
+     "c": "Stelle deinem Buddy deine Heimatstadt in drei Highlights vor."
+    },
+    "es": {
+     "t": "Especialidades de tu ciudad natal",
+     "g": "Cuenta qué comida, lugares y tradiciones hay donde creciste.",
+     "p": [
+      "Nombra un plato local, un lugar y una tradición: tres pequeños orgullos.",
+      "Explica con sencillez para que un recién llegado pueda imaginarlo.",
+      "Pregunta ¿Por qué es conocida tu zona? para escuchar el orgullo del otro."
+     ],
+     "q": "¿Qué es lo único que todo visitante de tu ciudad debería probar?",
+     "c": "Presenta a tu Buddy tu ciudad natal en tres puntos destacados."
+    },
+    "fr": {
+     "t": "Les spécialités de ta ville natale",
+     "g": "Parle de cuisine, de lieux et de traditions de l'endroit où tu as grandi.",
+     "p": [
+      "Cite un plat local, un lieu et une tradition : trois petites fiertés.",
+      "Explique simplement pour qu'un nouveau venu puisse l'imaginer.",
+      "Demande Pour quoi ta région est-elle connue ? pour entendre la fierté de l'autre."
+     ],
+     "q": "Quelle chose chaque visiteur de ta ville natale devrait-il goûter ?",
+     "c": "Présente ta ville natale à ton Buddy en trois points forts."
+    },
+    "it": {
+     "t": "Le specialità della tua città natale",
+     "g": "Racconta cibo, luoghi e tradizioni del posto in cui sei cresciuto.",
+     "p": [
+      "Nomina un piatto locale, un luogo e una tradizione: tre piccoli orgogli.",
+      "Spiega in modo semplice perché un nuovo arrivato possa immaginarlo.",
+      "Chiedi Per cosa è nota la tua zona? per sentire l'orgoglio dell'altro."
+     ],
+     "q": "Qual è la cosa che ogni visitatore della tua città dovrebbe provare?",
+     "c": "Presenta al tuo Buddy la tua città natale in tre punti forti."
+    },
+    "pt": {
+     "t": "As especialidades da tua terra",
+     "g": "Conta que comida, lugares e tradições há onde cresceste.",
+     "p": [
+      "Diz um prato local, um lugar e uma tradição: três pequenos orgulhos.",
+      "Explica de forma simples para que um recém-chegado consiga imaginar.",
+      "Pergunta Pelo que é conhecida a tua zona? para ouvires o orgulho do outro."
+     ],
+     "q": "O que é que todo o visitante da tua terra devia experimentar?",
+     "c": "Apresenta ao teu Buddy a tua terra em três destaques."
+    },
+    "pt_BR": {
+     "t": "As especialidades da sua terra",
+     "g": "Conte que comida, lugares e tradições existem onde você cresceu.",
+     "p": [
+      "Diga um prato local, um lugar e uma tradição: três pequenos orgulhos.",
+      "Explique de forma simples para que um recém-chegado consiga imaginar.",
+      "Pergunte Pelo que a sua região é conhecida? para ouvir o orgulho do outro."
+     ],
+     "q": "O que todo visitante da sua cidade deveria experimentar?",
+     "c": "Apresente ao seu Buddy sua cidade natal em três destaques."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Learning languages",
+     "g": "Chat about words you love and funny language mix-ups.",
+     "p": [
+      "Say which languages you speak or want to learn and why.",
+      "Funny mix-ups are normal: even native speakers mispronounce words sometimes.",
+      "Ask What is your favourite word in another language? to swap treasures."
+     ],
+     "q": "Which language would you love to speak fluently?",
+     "c": "Teach your Buddy one word from your language and ask for one back."
+    },
+    "de": {
+     "t": "Sprachen lernen",
+     "g": "Sprich über Wörter, die du liebst, und lustige Sprachpannen.",
+     "p": [
+      "Sage, welche Sprachen du sprichst oder lernen möchtest und warum.",
+      "Lustige Pannen sind normal: Selbst Muttersprachler sprechen manches falsch aus.",
+      "Frag Was ist dein Lieblingswort in einer anderen Sprache? und tauscht Schätze."
+     ],
+     "q": "Welche Sprache würdest du gern fließend sprechen?",
+     "c": "Bring deinem Buddy ein Wort aus deiner Sprache bei und frag nach einem zurück."
+    },
+    "es": {
+     "t": "Aprender idiomas",
+     "g": "Charla sobre palabras que te gustan y confusiones graciosas entre idiomas.",
+     "p": [
+      "Di qué idiomas hablas o quieres aprender y por qué.",
+      "Las confusiones graciosas son normales: hasta los nativos pronuncian mal a veces.",
+      "Pregunta ¿Cuál es tu palabra favorita en otro idioma? para intercambiar tesoros."
+     ],
+     "q": "¿Qué idioma te encantaría hablar con fluidez?",
+     "c": "Enseña a tu Buddy una palabra de tu idioma y pide una a cambio."
+    },
+    "fr": {
+     "t": "Apprendre des langues",
+     "g": "Parle de mots que tu aimes et de quiproquos linguistiques amusants.",
+     "p": [
+      "Dis quelles langues tu parles ou veux apprendre et pourquoi.",
+      "Les petits quiproquos sont normaux : même les natifs prononcent parfois mal.",
+      "Demande Quel est ton mot préféré dans une autre langue ? pour échanger des trésors."
+     ],
+     "q": "Quelle langue aimerais-tu parler couramment ?",
+     "c": "Apprends à ton Buddy un mot de ta langue et demande-lui-en un en retour."
+    },
+    "it": {
+     "t": "Imparare le lingue",
+     "g": "Parla di parole che ami e di buffi malintesi linguistici.",
+     "p": [
+      "Dì quali lingue parli o vuoi imparare e perché.",
+      "I buffi malintesi sono normali: anche i madrelingua sbagliano a volte la pronuncia.",
+      "Chiedi Qual è la tua parola preferita in un'altra lingua? per scambiarvi tesori."
+     ],
+     "q": "Quale lingua ameresti parlare fluentemente?",
+     "c": "Insegna al tuo Buddy una parola della tua lingua e chiedine una in cambio."
+    },
+    "pt": {
+     "t": "Aprender línguas",
+     "g": "Conversa sobre palavras que adoras e confusões engraçadas entre línguas.",
+     "p": [
+      "Diz que línguas falas ou queres aprender e porquê.",
+      "As confusões engraçadas são normais: até os nativos pronunciam mal às vezes.",
+      "Pergunta Qual é a tua palavra favorita noutra língua? para trocarem tesouros."
+     ],
+     "q": "Que língua adoravas falar com fluência?",
+     "c": "Ensina ao teu Buddy uma palavra da tua língua e pede uma em troca."
+    },
+    "pt_BR": {
+     "t": "Aprender idiomas",
+     "g": "Converse sobre palavras que você ama e confusões engraçadas entre idiomas.",
+     "p": [
+      "Diga quais idiomas você fala ou quer aprender e por quê.",
+      "Confusões engraçadas são normais: até os nativos pronunciam errado às vezes.",
+      "Pergunte Qual é a sua palavra favorita em outro idioma? para trocarem tesouros."
+     ],
+     "q": "Que idioma você adoraria falar com fluência?",
+     "c": "Ensine ao seu Buddy uma palavra do seu idioma e peça uma em troca."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Favourite words",
+     "g": "Share words that sound beautiful or funny to you.",
+     "p": [
+      "Pick a word and say why you like it: its sound, its meaning or a memory.",
+      "Sound and meaning can be playful: some words just feel good to say.",
+      "Ask Do you have a word you love? to open a charming chat."
+     ],
+     "q": "Which word makes you smile every time you say it?",
+     "c": "Share three favourite words with your Buddy and the reason for each."
+    },
+    "de": {
+     "t": "Lieblingswörter",
+     "g": "Teile Wörter, die für dich schön oder lustig klingen.",
+     "p": [
+      "Wähle ein Wort und sage, warum du es magst: Klang, Bedeutung oder eine Erinnerung.",
+      "Klang und Bedeutung dürfen verspielt sein: Manche Wörter sind einfach schön zu sagen.",
+      "Frag Hast du ein Lieblingswort? und starte ein charmantes Gespräch."
+     ],
+     "q": "Bei welchem Wort musst du jedes Mal lächeln?",
+     "c": "Teile drei Lieblingswörter mit deinem Buddy und den Grund für jedes."
+    },
+    "es": {
+     "t": "Palabras favoritas",
+     "g": "Comparte palabras que te suenan bonitas o graciosas.",
+     "p": [
+      "Elige una palabra y di por qué te gusta: su sonido, su significado o un recuerdo.",
+      "El sonido y el significado pueden ser juguetones: algunas palabras dan gusto decirlas.",
+      "Pregunta ¿Tienes una palabra favorita? para abrir una charla encantadora."
+     ],
+     "q": "¿Qué palabra te hace sonreír cada vez que la dices?",
+     "c": "Comparte tres palabras favoritas con tu Buddy y el motivo de cada una."
+    },
+    "fr": {
+     "t": "Mots préférés",
+     "g": "Partage des mots qui te semblent beaux ou drôles à entendre.",
+     "p": [
+      "Choisis un mot et dis pourquoi tu l'aimes : son son, son sens ou un souvenir.",
+      "Le son et le sens peuvent être ludiques : certains mots sont juste agréables à dire.",
+      "Demande As-tu un mot que tu adores ? pour ouvrir une discussion charmante."
+     ],
+     "q": "Quel mot te fait sourire à chaque fois que tu le dis ?",
+     "c": "Partage trois mots préférés avec ton Buddy et la raison de chacun."
+    },
+    "it": {
+     "t": "Parole preferite",
+     "g": "Condividi parole che ti suonano belle o buffe.",
+     "p": [
+      "Scegli una parola e dì perché ti piace: il suono, il significato o un ricordo.",
+      "Suono e significato possono essere giocosi: alcune parole è bello dirle.",
+      "Chiedi Hai una parola che ami? per aprire una chiacchierata incantevole."
+     ],
+     "q": "Quale parola ti fa sorridere ogni volta che la dici?",
+     "c": "Condividi tre parole preferite con il tuo Buddy e il motivo di ciascuna."
+    },
+    "pt": {
+     "t": "Palavras favoritas",
+     "g": "Partilha palavras que te soam bonitas ou engraçadas.",
+     "p": [
+      "Escolhe uma palavra e diz porque gostas dela: o som, o significado ou uma memória.",
+      "O som e o significado podem ser brincalhões: há palavras que sabe bem dizer.",
+      "Pergunta Tens uma palavra de que gostes? para abrir uma conversa encantadora."
+     ],
+     "q": "Que palavra te faz sorrir sempre que a dizes?",
+     "c": "Partilha três palavras favoritas com o teu Buddy e o motivo de cada uma."
+    },
+    "pt_BR": {
+     "t": "Palavras favoritas",
+     "g": "Compartilhe palavras que soam bonitas ou engraçadas para você.",
+     "p": [
+      "Escolha uma palavra e diga por que gosta dela: o som, o significado ou uma lembrança.",
+      "Som e significado podem ser brincalhões: algumas palavras são gostosas de dizer.",
+      "Pergunte Você tem uma palavra que ama? para abrir um papo encantador."
+     ],
+     "q": "Que palavra faz você sorrir toda vez que a diz?",
+     "c": "Compartilhe três palavras favoritas com seu Buddy e o motivo de cada uma."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Small talk at a café",
+     "g": "Learn easy phrases for chatting with people around you.",
+     "p": [
+      "Try light lines: Busy today, isn't it? or That looks delicious.",
+      "Keep it short and read the signals; some people want quiet, and that is fine.",
+      "End kindly: Nice chatting with you, enjoy your day."
+     ],
+     "q": "What small talk line feels easiest for you to say?",
+     "c": "Write two friendly lines you could say in a café and one polite way to end."
+    },
+    "de": {
+     "t": "Smalltalk im Café",
+     "g": "Lerne einfache Sätze, um mit Menschen um dich herum zu plaudern.",
+     "p": [
+      "Probiere leichte Sätze: Heute ist viel los, oder? oder Das sieht lecker aus.",
+      "Halte es kurz und achte auf Signale; manche wollen Ruhe, und das ist völlig in Ordnung.",
+      "Beende freundlich: Nett, mit dir zu plaudern, schönen Tag noch."
+     ],
+     "q": "Welcher Smalltalk-Satz fällt dir am leichtesten?",
+     "c": "Schreibe zwei freundliche Sätze für ein Café und eine höfliche Art, aufzuhören."
+    },
+    "es": {
+     "t": "Charla ligera en una cafetería",
+     "g": "Aprende frases fáciles para charlar con la gente que te rodea.",
+     "p": [
+      "Prueba frases ligeras: Hoy hay mucha gente, ¿verdad? o Eso tiene buena pinta.",
+      "Sé breve y capta las señales; algunos quieren tranquilidad y está bien.",
+      "Termina con amabilidad: Un gusto charlar contigo, que tengas buen día."
+     ],
+     "q": "¿Qué frase de charla ligera te resulta más fácil de decir?",
+     "c": "Escribe dos frases amables para una cafetería y una forma educada de terminar."
+    },
+    "fr": {
+     "t": "Bavarder dans un café",
+     "g": "Apprends des phrases simples pour discuter avec les gens autour de toi.",
+     "p": [
+      "Essaie des phrases légères : Il y a du monde aujourd'hui, non ? ou Ça a l'air délicieux.",
+      "Reste bref et lis les signaux ; certains veulent le calme, et c'est très bien.",
+      "Termine aimablement : Ravi d'avoir discuté, bonne journée."
+     ],
+     "q": "Quelle phrase de conversation légère te semble la plus facile ?",
+     "c": "Écris deux phrases sympas pour un café et une façon polie de conclure."
+    },
+    "it": {
+     "t": "Due chiacchiere al bar",
+     "g": "Impara frasi semplici per chiacchierare con le persone intorno a te.",
+     "p": [
+      "Prova frasi leggere: Oggi c'è gente, vero? oppure Sembra squisito.",
+      "Sii breve e leggi i segnali; alcuni vogliono silenzio, e va benissimo.",
+      "Chiudi con gentilezza: È stato un piacere chiacchierare, buona giornata."
+     ],
+     "q": "Quale frase di conversazione leggera ti viene più facile?",
+     "c": "Scrivi due frasi cordiali per un bar e un modo educato per concludere."
+    },
+    "pt": {
+     "t": "Conversa de café",
+     "g": "Aprende frases simples para conversar com as pessoas à tua volta.",
+     "p": [
+      "Experimenta frases leves: Hoje está cheio, não está? ou Isso tem muito bom aspeto.",
+      "Sê breve e lê os sinais; alguns querem sossego, e está tudo bem.",
+      "Termina com simpatia: Foi um prazer conversar, tenha um bom dia."
+     ],
+     "q": "Que frase de conversa leve te sai mais facilmente?",
+     "c": "Escreve duas frases simpáticas para um café e uma forma educada de terminar."
+    },
+    "pt_BR": {
+     "t": "Papo de café",
+     "g": "Aprenda frases simples para conversar com as pessoas ao seu redor.",
+     "p": [
+      "Experimente frases leves: Hoje está cheio, né? ou Isso parece uma delícia.",
+      "Seja breve e leia os sinais; alguns querem sossego, e tudo bem.",
+      "Termine com gentileza: Foi um prazer conversar, tenha um ótimo dia."
+     ],
+     "q": "Qual frase de papo leve é mais fácil para você?",
+     "c": "Escreva duas frases simpáticas para um café e um jeito educado de encerrar."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Talking with neighbours",
+     "g": "Have friendly chats in the hallway or on the street.",
+     "p": [
+      "A simple hello and a smile builds a friendly neighbourhood over time.",
+      "Talk about shared things: the weather, the building, the neighbourhood.",
+      "Keep it light and respect privacy; no need to ask personal questions."
+     ],
+     "q": "What would make you feel comfortable greeting a neighbour?",
+     "c": "Write a short, friendly greeting you could say to a neighbour today."
+    },
+    "de": {
+     "t": "Gespräche mit Nachbarn",
+     "g": "Führe freundliche Gespräche im Flur oder auf der Straße.",
+     "p": [
+      "Ein einfaches Hallo und ein Lächeln schaffen mit der Zeit eine freundliche Nachbarschaft.",
+      "Sprich über Gemeinsames: das Wetter, das Haus, die Gegend.",
+      "Halte es leicht und achte die Privatsphäre; persönliche Fragen sind nicht nötig."
+     ],
+     "q": "Was würde dir helfen, einen Nachbarn entspannt zu grüßen?",
+     "c": "Schreibe einen kurzen, freundlichen Gruß, den du heute einem Nachbarn sagen könntest."
+    },
+    "es": {
+     "t": "Hablar con los vecinos",
+     "g": "Ten charlas amables en el portal o en la calle.",
+     "p": [
+      "Un simple hola y una sonrisa crean con el tiempo un vecindario amable.",
+      "Habla de lo compartido: el tiempo, el edificio, el barrio.",
+      "Mantén la ligereza y respeta la privacidad; no hace falta hacer preguntas personales."
+     ],
+     "q": "¿Qué te haría sentir cómodo saludando a un vecino?",
+     "c": "Escribe un saludo breve y amable que podrías decirle hoy a un vecino."
+    },
+    "fr": {
+     "t": "Discuter avec les voisins",
+     "g": "Aie des échanges sympas dans le couloir ou dans la rue.",
+     "p": [
+      "Un simple bonjour et un sourire créent avec le temps un voisinage agréable.",
+      "Parle de ce que vous partagez : la météo, l'immeuble, le quartier.",
+      "Reste léger et respecte l'intimité ; inutile de poser des questions personnelles."
+     ],
+     "q": "Qu'est-ce qui te mettrait à l'aise pour saluer un voisin ?",
+     "c": "Écris un salut bref et aimable que tu pourrais dire à un voisin aujourd'hui."
+    },
+    "it": {
+     "t": "Parlare con i vicini",
+     "g": "Fai chiacchiere cordiali sul pianerottolo o per strada.",
+     "p": [
+      "Un semplice ciao e un sorriso costruiscono col tempo un vicinato amichevole.",
+      "Parla di ciò che condividete: il tempo, il palazzo, il quartiere.",
+      "Resta leggero e rispetta la privacy; non servono domande personali."
+     ],
+     "q": "Cosa ti farebbe sentire a tuo agio nel salutare un vicino?",
+     "c": "Scrivi un saluto breve e cordiale che potresti dire oggi a un vicino."
+    },
+    "pt": {
+     "t": "Falar com os vizinhos",
+     "g": "Tem conversas simpáticas no corredor ou na rua.",
+     "p": [
+      "Um simples olá e um sorriso criam com o tempo uma vizinhança simpática.",
+      "Fala do que é comum: o tempo, o prédio, o bairro.",
+      "Mantém a leveza e respeita a privacidade; não é preciso fazer perguntas pessoais."
+     ],
+     "q": "O que te faria sentir à vontade a cumprimentar um vizinho?",
+     "c": "Escreve um cumprimento curto e simpático que poderias dizer hoje a um vizinho."
+    },
+    "pt_BR": {
+     "t": "Conversar com os vizinhos",
+     "g": "Tenha conversas simpáticas no corredor ou na rua.",
+     "p": [
+      "Um simples oi e um sorriso criam com o tempo uma vizinhança amigável.",
+      "Fale do que é comum: o clima, o prédio, o bairro.",
+      "Mantenha a leveza e respeite a privacidade; não precisa fazer perguntas pessoais."
+     ],
+     "q": "O que faria você se sentir à vontade para cumprimentar um vizinho?",
+     "c": "Escreva um cumprimento curto e simpático que você poderia dizer hoje a um vizinho."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Remembering details",
+     "g": "Use what someone told you before to make a new chat feel personal.",
+     "p": [
+      "Bring back a detail: How did your hike go last week?",
+      "Remembering small things shows you care and builds trust.",
+      "Note names and interests, but never ask for private data to remember them."
+     ],
+     "q": "What detail do you love it when a friend remembers about you?",
+     "c": "Ask your Buddy about something it told you earlier, as a friendly follow-up."
+    },
+    "de": {
+     "t": "Details merken",
+     "g": "Nutze, was dir jemand früher erzählt hat, damit ein neues Gespräch persönlich wirkt.",
+     "p": [
+      "Greife ein Detail wieder auf: Wie war deine Wanderung letzte Woche?",
+      "Kleinigkeiten zu merken zeigt Interesse und schafft Vertrauen.",
+      "Merke dir Namen und Interessen, frage aber nie nach privaten Daten dafür."
+     ],
+     "q": "An welches Detail über dich freust du dich, wenn ein Freund sich erinnert?",
+     "c": "Frag deinen Buddy zu etwas, das er früher erzählt hat, als freundliches Nachhaken."
+    },
+    "es": {
+     "t": "Recordar detalles",
+     "g": "Usa lo que alguien te contó antes para que una charla nueva sea más personal.",
+     "p": [
+      "Retoma un detalle: ¿Cómo te fue la excursión de la semana pasada?",
+      "Recordar cosas pequeñas muestra interés y crea confianza.",
+      "Anota nombres e intereses, pero nunca pidas datos privados para recordarlos."
+     ],
+     "q": "¿Qué detalle te encanta que un amigo recuerde de ti?",
+     "c": "Pregunta a tu Buddy por algo que te contó antes, como un seguimiento amable."
+    },
+    "fr": {
+     "t": "Se souvenir des détails",
+     "g": "Reprends ce qu'on t'a dit avant pour rendre une nouvelle discussion plus personnelle.",
+     "p": [
+      "Reprends un détail : Comment s'est passée ta randonnée de la semaine dernière ?",
+      "Se souvenir des petites choses montre ton intérêt et crée la confiance.",
+      "Retiens prénoms et centres d'intérêt, mais ne demande jamais de données privées pour cela."
+     ],
+     "q": "Quel détail adores-tu qu'un ami se rappelle à ton sujet ?",
+     "c": "Interroge ton Buddy sur quelque chose qu'il t'a dit plus tôt, en relance amicale."
+    },
+    "it": {
+     "t": "Ricordare i dettagli",
+     "g": "Usa ciò che qualcuno ti ha detto prima per rendere personale una nuova chiacchierata.",
+     "p": [
+      "Riprendi un dettaglio: Com'è andata l'escursione della settimana scorsa?",
+      "Ricordare le piccole cose mostra interesse e crea fiducia.",
+      "Annota nomi e interessi, ma non chiedere mai dati privati per ricordarli."
+     ],
+     "q": "Quale dettaglio adori che un amico ricordi di te?",
+     "c": "Chiedi al tuo Buddy qualcosa che ti ha detto prima, come domanda di approfondimento."
+    },
+    "pt": {
+     "t": "Lembrar detalhes",
+     "g": "Usa o que alguém te contou antes para tornar uma nova conversa mais pessoal.",
+     "p": [
+      "Retoma um detalhe: Como correu a caminhada da semana passada?",
+      "Lembrar pequenas coisas mostra interesse e cria confiança.",
+      "Anota nomes e interesses, mas nunca peças dados privados para os lembrares."
+     ],
+     "q": "Que detalhe gostas que um amigo recorde sobre ti?",
+     "c": "Pergunta ao teu Buddy sobre algo que ele te contou antes, como seguimento simpático."
+    },
+    "pt_BR": {
+     "t": "Lembrar detalhes",
+     "g": "Use o que alguém contou antes para deixar uma nova conversa mais pessoal.",
+     "p": [
+      "Retome um detalhe: Como foi a trilha da semana passada?",
+      "Lembrar pequenas coisas mostra interesse e cria confiança.",
+      "Anote nomes e interesses, mas nunca peça dados privados para lembrar deles."
+     ],
+     "q": "Que detalhe você adora que um amigo lembre sobre você?",
+     "c": "Pergunte ao seu Buddy sobre algo que ele contou antes, como continuação simpática."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "mindfulness",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The natural breath",
+     "g": "Observe the breath without changing it, like watching waves on a shore.",
+     "p": [
+      "Let the breath breathe itself; your job is only to watch.",
+      "Notice its rhythm, depth and tiny pauses as they are.",
+      "If you catch yourself controlling it, relax and let it go back to normal."
+     ],
+     "q": "What was it like to watch your breath without steering it?",
+     "c": "Watch your natural breath for two minutes today, like waves on a shore."
+    },
+    "de": {
+     "t": "Der natürliche Atem",
+     "g": "Beobachte den Atem, ohne ihn zu verändern, wie Wellen am Strand.",
+     "p": [
+      "Lass den Atem sich selbst atmen; du schaust nur zu.",
+      "Bemerke Rhythmus, Tiefe und kleine Pausen, wie sie sind.",
+      "Merkst du, dass du ihn steuerst, entspanne dich und lass ihn normal werden."
+     ],
+     "q": "Wie war es, deinen Atem zu beobachten, ohne ihn zu lenken?",
+     "c": "Beobachte heute zwei Minuten deinen natürlichen Atem, wie Wellen am Strand."
+    },
+    "es": {
+     "t": "La respiración natural",
+     "g": "Observa la respiración sin cambiarla, como quien mira las olas en la orilla.",
+     "p": [
+      "Deja que la respiración se respire sola; tu tarea es solo mirar.",
+      "Nota su ritmo, profundidad y pequeñas pausas tal como son.",
+      "Si te pillas controlándola, relájate y deja que vuelva a la normalidad."
+     ],
+     "q": "¿Cómo fue observar tu respiración sin dirigirla?",
+     "c": "Observa hoy tu respiración natural dos minutos, como olas en la orilla."
+    },
+    "fr": {
+     "t": "Le souffle naturel",
+     "g": "Observe la respiration sans la changer, comme on regarde les vagues sur le rivage.",
+     "p": [
+      "Laisse le souffle se respirer tout seul; ton rôle est seulement de regarder.",
+      "Remarque son rythme, sa profondeur et ses petites pauses tels qu'ils sont.",
+      "Si tu te surprends à la contrôler, détends-toi et laisse-la redevenir normale."
+     ],
+     "q": "Qu'as-tu ressenti en observant ton souffle sans le diriger ?",
+     "c": "Observe aujourd'hui ton souffle naturel deux minutes, comme des vagues sur le rivage."
+    },
+    "it": {
+     "t": "Il respiro naturale",
+     "g": "Osserva il respiro senza cambiarlo, come si guardano le onde sulla riva.",
+     "p": [
+      "Lascia che il respiro si respiri da solo; il tuo compito è solo guardare.",
+      "Nota ritmo, profondità e piccole pause così come sono.",
+      "Se ti accorgi di controllarlo, rilassati e lascialo tornare normale."
+     ],
+     "q": "Com'è stato osservare il respiro senza guidarlo?",
+     "c": "Oggi osserva il respiro naturale per due minuti, come onde sulla riva."
+    },
+    "pt": {
+     "t": "A respiração natural",
+     "g": "Observa a respiração sem a mudar, como quem vê as ondas na praia.",
+     "p": [
+      "Deixa a respiração respirar-se sozinha; a tua tarefa é só observar.",
+      "Repara no ritmo, profundidade e pequenas pausas tal como são.",
+      "Se te apanhares a controlá-la, relaxa e deixa-a voltar ao normal."
+     ],
+     "q": "Como foi observar a tua respiração sem a dirigir?",
+     "c": "Observa hoje a tua respiração natural dois minutos, como ondas na praia."
+    },
+    "pt_BR": {
+     "t": "A respiração natural",
+     "g": "Observe a respiração sem mudá-la, como quem vê as ondas na praia.",
+     "p": [
+      "Deixe a respiração se respirar sozinha; sua tarefa é só observar.",
+      "Perceba o ritmo, a profundidade e as pequenas pausas como são.",
+      "Se pegar você controlando, relaxe e deixe voltar ao normal."
+     ],
+     "q": "Como foi observar sua respiração sem dirigi-la?",
+     "c": "Observe hoje sua respiração natural por dois minutos, como ondas na praia."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A longer exhale for calm",
+     "g": "Breathe out a little longer than you breathe in to help the body settle.",
+     "p": [
+      "Breathe in gently for a count of three or four.",
+      "Breathe out slowly for a count of five or six, with no strain.",
+      "Stop and breathe normally if you feel dizzy or uneasy; comfort comes first."
+     ],
+     "q": "Did a longer exhale change how your body felt?",
+     "c": "Use five longer exhales when you feel rushed today."
+    },
+    "de": {
+     "t": "Längeres Ausatmen für Ruhe",
+     "g": "Atme etwas länger aus als ein, damit sich der Körper beruhigt.",
+     "p": [
+      "Atme sanft ein, etwa auf drei oder vier Zähler.",
+      "Atme langsam auf fünf oder sechs Zähler aus, ohne Anstrengung.",
+      "Atme bei Schwindel oder Unbehagen normal weiter; Wohlbefinden geht vor."
+     ],
+     "q": "Hat ein längeres Ausatmen verändert, wie sich dein Körper anfühlte?",
+     "c": "Nutze heute bei Eile fünf längere Ausatmungen."
+    },
+    "es": {
+     "t": "Una exhalación más larga para calmarte",
+     "g": "Exhala un poco más largo de lo que inhalas para ayudar al cuerpo a asentarse.",
+     "p": [
+      "Inhala con suavidad contando tres o cuatro.",
+      "Exhala despacio contando cinco o seis, sin esfuerzo.",
+      "Para y respira normal si te mareas o te sientes incómodo; primero el bienestar."
+     ],
+     "q": "¿Una exhalación más larga cambió cómo se sentía tu cuerpo?",
+     "c": "Usa cinco exhalaciones largas cuando te sientas con prisa hoy."
+    },
+    "fr": {
+     "t": "Une expiration plus longue pour le calme",
+     "g": "Expire un peu plus longtemps que tu n'inspires pour aider le corps à s'apaiser.",
+     "p": [
+      "Inspire doucement sur trois ou quatre temps.",
+      "Expire lentement sur cinq ou six temps, sans effort.",
+      "Arrête et respire normalement en cas de vertige ou de malaise; le confort d'abord."
+     ],
+     "q": "Une expiration plus longue a-t-elle changé ce que ressentait ton corps ?",
+     "c": "Utilise cinq expirations longues quand tu te sens pressé aujourd'hui."
+    },
+    "it": {
+     "t": "Un'espirazione più lunga per la calma",
+     "g": "Espira un po' più a lungo di quanto inspiri per aiutare il corpo a calmarsi.",
+     "p": [
+      "Inspira dolcemente contando tre o quattro.",
+      "Espira lentamente contando cinque o sei, senza sforzo.",
+      "Fermati e respira normalmente se hai vertigini o disagio; prima il comfort."
+     ],
+     "q": "Un'espirazione più lunga ha cambiato come si sentiva il tuo corpo?",
+     "c": "Usa cinque espirazioni lunghe quando ti senti di fretta oggi."
+    },
+    "pt": {
+     "t": "Uma expiração mais longa para acalmar",
+     "g": "Expira um pouco mais do que inspiras para ajudar o corpo a assentar.",
+     "p": [
+      "Inspira com suavidade contando três ou quatro.",
+      "Expira devagar contando cinco ou seis, sem esforço.",
+      "Pára e respira normalmente se tiveres tonturas ou desconforto; o conforto primeiro."
+     ],
+     "q": "Uma expiração mais longa mudou a forma como o teu corpo se sentia?",
+     "c": "Usa cinco expirações longas quando te sentires apressado hoje."
+    },
+    "pt_BR": {
+     "t": "Uma expiração mais longa para acalmar",
+     "g": "Expire um pouco mais do que inspira para ajudar o corpo a assentar.",
+     "p": [
+      "Inspire com suavidade contando três ou quatro.",
+      "Expire devagar contando cinco ou seis, sem esforço.",
+      "Pare e respire normalmente se sentir tontura ou desconforto; conforto primeiro."
+     ],
+     "q": "Uma expiração mais longa mudou como seu corpo se sentia?",
+     "c": "Use cinco expirações longas quando se sentir apressado hoje."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Box breathing",
+     "g": "Breathe in, hold, breathe out and hold again for equal gentle counts of four.",
+     "p": [
+      "Breathe in for four, hold softly for four, out for four, hold for four.",
+      "Keep the holds gentle and the count comfortable; shorten to three if needed.",
+      "Skip the holds or stop if you feel dizzy, and check with a doctor if you have breathing or heart concerns."
+     ],
+     "q": "How did the steady rhythm of the four counts feel for you?",
+     "c": "Try three rounds of box breathing today, keeping everything gentle."
+    },
+    "de": {
+     "t": "Boxatmung",
+     "g": "Atme ein, halte, atme aus und halte erneut, je in sanften Viererzählern.",
+     "p": [
+      "Ein auf vier, sanft halten auf vier, aus auf vier, halten auf vier.",
+      "Halte die Pausen sanft und den Zähler angenehm; kürze bei Bedarf auf drei.",
+      "Lass die Pausen weg oder stoppe bei Schwindel; bei Atem- oder Herzproblemen frage ärztlichen Rat."
+     ],
+     "q": "Wie fühlte sich der gleichmäßige Rhythmus der vier Zähler an?",
+     "c": "Probiere heute drei Runden Boxatmung, alles ganz sanft."
+    },
+    "es": {
+     "t": "Respiración en caja",
+     "g": "Inhala, sostén, exhala y sostén de nuevo, con cuentas iguales y suaves de cuatro.",
+     "p": [
+      "Inhala cuatro, sostén suave cuatro, exhala cuatro, sostén cuatro.",
+      "Mantén las pausas suaves y la cuenta cómoda; acórtala a tres si hace falta.",
+      "Omite las pausas o para si te mareas; consulta a un médico si tienes problemas respiratorios o cardíacos."
+     ],
+     "q": "¿Cómo se sintió el ritmo constante de las cuatro cuentas?",
+     "c": "Prueba hoy tres rondas de respiración en caja, todo con suavidad."
+    },
+    "fr": {
+     "t": "La respiration carrée",
+     "g": "Inspire, retiens, expire et retiens encore, sur des temps égaux et doux de quatre.",
+     "p": [
+      "Inspire sur quatre, retiens doucement quatre, expire quatre, retiens quatre.",
+      "Garde les pauses douces et le compte confortable; passe à trois si besoin.",
+      "Supprime les pauses ou arrête en cas de vertige; demande conseil à un médecin en cas de souci respiratoire ou cardiaque."
+     ],
+     "q": "Comment as-tu vécu le rythme régulier des quatre temps ?",
+     "c": "Essaie aujourd'hui trois tours de respiration carrée, tout en douceur."
+    },
+    "it": {
+     "t": "Respirazione a scatola",
+     "g": "Inspira, trattieni, espira e trattieni ancora, con conteggi uguali e dolci di quattro.",
+     "p": [
+      "Inspira per quattro, trattieni piano per quattro, espira quattro, trattieni quattro.",
+      "Tieni le pause dolci e il conteggio comodo; scendi a tre se serve.",
+      "Salta le pause o fermati se hai vertigini; chiedi al medico se hai problemi respiratori o cardiaci."
+     ],
+     "q": "Come ti è sembrato il ritmo costante dei quattro tempi?",
+     "c": "Oggi prova tre giri di respirazione a scatola, tutto con dolcezza."
+    },
+    "pt": {
+     "t": "Respiração em caixa",
+     "g": "Inspira, retém, expira e retém de novo, com contagens iguais e suaves de quatro.",
+     "p": [
+      "Inspira quatro, retém suavemente quatro, expira quatro, retém quatro.",
+      "Mantém as pausas suaves e a contagem confortável; reduz para três se precisares.",
+      "Omite as pausas ou pára se sentires tonturas; consulta um médico se tiveres problemas respiratórios ou cardíacos."
+     ],
+     "q": "Como te soou o ritmo constante dos quatro tempos?",
+     "c": "Experimenta hoje três rondas de respiração em caixa, tudo com suavidade."
+    },
+    "pt_BR": {
+     "t": "Respiração em caixa",
+     "g": "Inspire, segure, expire e segure de novo, com contagens iguais e suaves de quatro.",
+     "p": [
+      "Inspire quatro, segure suavemente quatro, expire quatro, segure quatro.",
+      "Mantenha as pausas suaves e a contagem confortável; reduza para três se precisar.",
+      "Pule as pausas ou pare se sentir tontura; consulte um médico se tiver problemas respiratórios ou cardíacos."
+     ],
+     "q": "Como foi sentir o ritmo constante dos quatro tempos?",
+     "c": "Experimente hoje três rodadas de respiração em caixa, tudo com suavidade."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Breath at the nostrils",
+     "g": "Feel the cool air coming in and the slightly warmer air going out.",
+     "p": [
+      "Rest attention on the tip of the nose or the upper lip.",
+      "Notice the coolness of the in-breath and the warmth of the out-breath.",
+      "If the sensation is faint, just stay curious; it often becomes clearer."
+     ],
+     "q": "Could you feel a difference in temperature between in and out?",
+     "c": "Spend two minutes with attention at your nostrils today."
+    },
+    "de": {
+     "t": "Atem an den Nasenlöchern",
+     "g": "Spüre die kühle einströmende und die etwas wärmere ausströmende Luft.",
+     "p": [
+      "Lege die Aufmerksamkeit auf die Nasenspitze oder die Oberlippe.",
+      "Bemerke die Kühle beim Einatmen und die Wärme beim Ausatmen.",
+      "Ist die Empfindung schwach, bleib neugierig; oft wird sie klarer."
+     ],
+     "q": "Konntest du einen Temperaturunterschied zwischen Ein- und Ausatmen spüren?",
+     "c": "Verweile heute zwei Minuten mit der Aufmerksamkeit an den Nasenlöchern."
+    },
+    "es": {
+     "t": "La respiración en las fosas nasales",
+     "g": "Siente el aire fresco al entrar y el aire algo más cálido al salir.",
+     "p": [
+      "Apoya la atención en la punta de la nariz o el labio superior.",
+      "Nota la frescura de la inhalación y el calor de la exhalación.",
+      "Si la sensación es tenue, mantén la curiosidad; suele volverse más clara."
+     ],
+     "q": "¿Pudiste notar diferencia de temperatura entre entrada y salida?",
+     "c": "Dedica hoy dos minutos con la atención en las fosas nasales."
+    },
+    "fr": {
+     "t": "Le souffle aux narines",
+     "g": "Sens l'air frais qui entre et l'air un peu plus chaud qui sort.",
+     "p": [
+      "Pose l'attention sur le bout du nez ou la lèvre supérieure.",
+      "Remarque la fraîcheur de l'inspiration et la chaleur de l'expiration.",
+      "Si la sensation est faible, reste curieux; elle devient souvent plus claire."
+     ],
+     "q": "As-tu perçu une différence de température entre l'entrée et la sortie ?",
+     "c": "Passe aujourd'hui deux minutes avec l'attention aux narines."
+    },
+    "it": {
+     "t": "Il respiro alle narici",
+     "g": "Senti l'aria fresca che entra e l'aria un po' più calda che esce.",
+     "p": [
+      "Posa l'attenzione sulla punta del naso o sul labbro superiore.",
+      "Nota la freschezza dell'inspirazione e il calore dell'espirazione.",
+      "Se la sensazione è debole, resta curioso; spesso diventa più chiara."
+     ],
+     "q": "Hai sentito una differenza di temperatura tra entrata e uscita?",
+     "c": "Oggi trascorri due minuti con l'attenzione alle narici."
+    },
+    "pt": {
+     "t": "A respiração nas narinas",
+     "g": "Sente o ar fresco a entrar e o ar um pouco mais quente a sair.",
+     "p": [
+      "Pousa a atenção na ponta do nariz ou no lábio superior.",
+      "Repara na frescura da inspiração e no calor da expiração.",
+      "Se a sensação for ténue, mantém a curiosidade; costuma tornar-se mais clara."
+     ],
+     "q": "Conseguiste sentir diferença de temperatura entre a entrada e a saída?",
+     "c": "Passa hoje dois minutos com a atenção nas narinas."
+    },
+    "pt_BR": {
+     "t": "A respiração nas narinas",
+     "g": "Sinta o ar fresco entrando e o ar um pouco mais quente saindo.",
+     "p": [
+      "Pouse a atenção na ponta do nariz ou no lábio superior.",
+      "Perceba o frescor da inspiração e o calor da expiração.",
+      "Se a sensação for sutil, mantenha a curiosidade; costuma ficar mais clara."
+     ],
+     "q": "Você conseguiu sentir diferença de temperatura entre entrada e saída?",
+     "c": "Passe hoje dois minutos com a atenção nas narinas."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Breath in the chest",
+     "g": "Notice the gentle expansion and release of the ribs with each breath.",
+     "p": [
+      "Rest a hand lightly on the chest and feel it rise and fall.",
+      "Feel the ribs widening on the in-breath and settling on the out-breath.",
+      "No need to breathe deeper; simply feel what is already there."
+     ],
+     "q": "Did your chest move more or less than you expected?",
+     "c": "Feel your chest breathing for two minutes, once in the morning and once at night."
+    },
+    "de": {
+     "t": "Atem in der Brust",
+     "g": "Bemerke das sanfte Weiten und Loslassen der Rippen bei jedem Atemzug.",
+     "p": [
+      "Lege eine Hand leicht auf die Brust und spüre Heben und Senken.",
+      "Spüre, wie sich die Rippen beim Einatmen weiten und beim Ausatmen setzen.",
+      "Du musst nicht tiefer atmen; spüre, was ohnehin da ist."
+     ],
+     "q": "Hat sich deine Brust mehr oder weniger bewegt als erwartet?",
+     "c": "Spüre heute zwei Minuten deine Brustatmung, einmal morgens und einmal abends."
+    },
+    "es": {
+     "t": "La respiración en el pecho",
+     "g": "Nota la suave expansión y el descanso de las costillas con cada respiración.",
+     "p": [
+      "Apoya una mano ligera en el pecho y siente cómo sube y baja.",
+      "Siente las costillas ensancharse al inhalar y asentarse al exhalar.",
+      "No hace falta respirar más hondo; solo siente lo que ya está."
+     ],
+     "q": "¿Tu pecho se movió más o menos de lo que esperabas?",
+     "c": "Siente hoy dos minutos la respiración en el pecho, por la mañana y por la noche."
+    },
+    "fr": {
+     "t": "Le souffle dans la poitrine",
+     "g": "Remarque la douce expansion et le relâchement des côtes à chaque respiration.",
+     "p": [
+      "Pose une main légère sur la poitrine et sens-la monter et descendre.",
+      "Sens les côtes s'élargir à l'inspiration et se poser à l'expiration.",
+      "Inutile de respirer plus profondément; sens simplement ce qui est déjà là."
+     ],
+     "q": "Ta poitrine a-t-elle bougé plus ou moins que prévu ?",
+     "c": "Sens aujourd'hui deux minutes la respiration dans ta poitrine, matin et soir."
+    },
+    "it": {
+     "t": "Il respiro nel petto",
+     "g": "Nota la dolce espansione e il rilascio delle costole a ogni respiro.",
+     "p": [
+      "Appoggia una mano leggera sul petto e senti che sale e scende.",
+      "Senti le costole allargarsi all'inspirazione e posarsi all'espirazione.",
+      "Non serve respirare più a fondo; senti solo ciò che già c'è."
+     ],
+     "q": "Il tuo petto si è mosso più o meno di quanto pensavi?",
+     "c": "Oggi senti il respiro nel petto per due minuti, mattina e sera."
+    },
+    "pt": {
+     "t": "A respiração no peito",
+     "g": "Repara na suave expansão e descanso das costelas a cada respiração.",
+     "p": [
+      "Pousa uma mão leve no peito e sente-o subir e descer.",
+      "Sente as costelas alargarem na inspiração e assentarem na expiração.",
+      "Não é preciso respirar mais fundo; sente apenas o que já lá está."
+     ],
+     "q": "O teu peito mexeu-se mais ou menos do que esperavas?",
+     "c": "Sente hoje dois minutos a respiração no peito, de manhã e à noite."
+    },
+    "pt_BR": {
+     "t": "A respiração no peito",
+     "g": "Perceba a suave expansão e o descanso das costelas a cada respiração.",
+     "p": [
+      "Apoie uma mão leve no peito e sinta subir e descer.",
+      "Sinta as costelas se alargarem na inspiração e assentarem na expiração.",
+      "Não precisa respirar mais fundo; apenas sinta o que já está ali."
+     ],
+     "q": "Seu peito se mexeu mais ou menos do que você esperava?",
+     "c": "Sinta hoje por dois minutos a respiração no peito, de manhã e à noite."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "When breathing feels awkward",
+     "g": "Know what to do if focusing on the breath feels uncomfortable: use sounds or the feet instead.",
+     "p": [
+      "Some people feel tense or self-conscious when watching the breath; that is common.",
+      "Switch to sounds, your feet on the floor or your hands as an anchor.",
+      "If anything feels distressing, stop; talking to a health professional can help."
+     ],
+     "q": "Which anchor feels most comfortable for you: breath, sounds, feet or hands?",
+     "c": "Practise two minutes with an anchor that feels easy and comfortable."
+    },
+    "de": {
+     "t": "Wenn Atmen sich seltsam anfühlt",
+     "g": "Wisse, was du tun kannst, wenn der Atem unangenehm ist: nutze Geräusche oder die Füße.",
+     "p": [
+      "Manche fühlen sich beim Beobachten des Atems angespannt oder befangen; das ist häufig.",
+      "Wechsle zu Geräuschen, den Füßen am Boden oder den Händen als Anker.",
+      "Ist etwas belastend, höre auf; ein Gespräch mit Fachleuten kann helfen."
+     ],
+     "q": "Welcher Anker fühlt sich für dich am angenehmsten an: Atem, Geräusche, Füße oder Hände?",
+     "c": "Übe zwei Minuten mit einem Anker, der sich leicht und angenehm anfühlt."
+    },
+    "es": {
+     "t": "Cuando respirar resulta incómodo",
+     "g": "Sabe qué hacer si centrarte en la respiración incomoda: usa sonidos o los pies.",
+     "p": [
+      "Algunas personas se tensan o se sienten cohibidas al observar la respiración; es común.",
+      "Cambia a sonidos, tus pies en el suelo o tus manos como ancla.",
+      "Si algo resulta angustioso, para; hablar con un profesional de la salud puede ayudar."
+     ],
+     "q": "¿Qué ancla te resulta más cómoda: respiración, sonidos, pies o manos?",
+     "c": "Practica dos minutos con un ancla que te resulte fácil y cómoda."
+    },
+    "fr": {
+     "t": "Quand respirer devient inconfortable",
+     "g": "Sache quoi faire si te concentrer sur le souffle gêne : utilise les sons ou les pieds.",
+     "p": [
+      "Certaines personnes se sentent tendues ou gênées en observant leur souffle; c'est courant.",
+      "Passe aux sons, aux pieds au sol ou aux mains comme ancre.",
+      "Si quelque chose est pénible, arrête; parler à un professionnel de santé peut aider."
+     ],
+     "q": "Quelle ancre te convient le mieux : souffle, sons, pieds ou mains ?",
+     "c": "Pratique deux minutes avec une ancre qui te semble facile et confortable."
+    },
+    "it": {
+     "t": "Quando il respiro sembra scomodo",
+     "g": "Sappi cosa fare se concentrarti sul respiro mette a disagio: usa i suoni o i piedi.",
+     "p": [
+      "Alcune persone si sentono tese o imbarazzate osservando il respiro; è comune.",
+      "Passa ai suoni, ai piedi a terra o alle mani come ancora.",
+      "Se qualcosa ti angustia, fermati; parlare con un professionista della salute può aiutare."
+     ],
+     "q": "Quale ancora ti è più comoda: respiro, suoni, piedi o mani?",
+     "c": "Pratica due minuti con un'ancora che ti sembra facile e comoda."
+    },
+    "pt": {
+     "t": "Quando respirar parece desconfortável",
+     "g": "Sabe o que fazer se focar na respiração incomodar: usa sons ou os pés.",
+     "p": [
+      "Algumas pessoas sentem-se tensas ou constrangidas a observar a respiração; é comum.",
+      "Muda para sons, os pés no chão ou as mãos como âncora.",
+      "Se algo for perturbador, pára; falar com um profissional de saúde pode ajudar."
+     ],
+     "q": "Que âncora te é mais confortável: respiração, sons, pés ou mãos?",
+     "c": "Pratica dois minutos com uma âncora que te pareça fácil e confortável."
+    },
+    "pt_BR": {
+     "t": "Quando respirar parece desconfortável",
+     "g": "Saiba o que fazer se focar na respiração incomodar: use sons ou os pés.",
+     "p": [
+      "Algumas pessoas se sentem tensas ou constrangidas ao observar a respiração; é comum.",
+      "Mude para sons, os pés no chão ou as mãos como âncora.",
+      "Se algo for perturbador, pare; conversar com um profissional de saúde pode ajudar."
+     ],
+     "q": "Que âncora é mais confortável para você: respiração, sons, pés ou mãos?",
+     "c": "Pratique dois minutos com uma âncora que pareça fácil e confortável."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Anchors beyond the breath",
+     "g": "Use sounds, hands or feet as a steady point of attention.",
+     "p": [
+      "An anchor is a place your attention can return to when it drifts.",
+      "Try sounds, the feeling of your hands, or your feet on the floor.",
+      "Different days may call for different anchors, and that is normal."
+     ],
+     "q": "Which anchor helped you feel steadiest today?",
+     "c": "Try a different anchor than the breath for two minutes today."
+    },
+    "de": {
+     "t": "Anker jenseits des Atems",
+     "g": "Nutze Geräusche, Hände oder Füße als festen Punkt für deine Aufmerksamkeit.",
+     "p": [
+      "Ein Anker ist ein Ort, zu dem deine Aufmerksamkeit beim Abschweifen zurückkehren kann.",
+      "Probiere Geräusche, das Gefühl der Hände oder die Füße am Boden.",
+      "An verschiedenen Tagen passen verschiedene Anker, und das ist normal."
+     ],
+     "q": "Welcher Anker hat dir heute am meisten Halt gegeben?",
+     "c": "Probiere heute zwei Minuten einen anderen Anker als den Atem."
+    },
+    "es": {
+     "t": "Anclas más allá de la respiración",
+     "g": "Usa sonidos, manos o pies como punto estable de atención.",
+     "p": [
+      "Un ancla es un lugar al que tu atención puede volver cuando se aleja.",
+      "Prueba los sonidos, la sensación de las manos o los pies en el suelo.",
+      "Distintos días piden distintas anclas, y es normal."
+     ],
+     "q": "¿Qué ancla te hizo sentir más firme hoy?",
+     "c": "Prueba hoy durante dos minutos un ancla distinta de la respiración."
+    },
+    "fr": {
+     "t": "Des ancres au-delà du souffle",
+     "g": "Utilise les sons, les mains ou les pieds comme point d'attention stable.",
+     "p": [
+      "Une ancre est un endroit où ton attention peut revenir quand elle s'éloigne.",
+      "Essaie les sons, la sensation des mains ou les pieds au sol.",
+      "Selon les jours, des ancres différentes conviennent, et c'est normal."
+     ],
+     "q": "Quelle ancre t'a donné le plus de stabilité aujourd'hui ?",
+     "c": "Essaie aujourd'hui pendant deux minutes une autre ancre que le souffle."
+    },
+    "it": {
+     "t": "Ancore oltre il respiro",
+     "g": "Usa suoni, mani o piedi come punto stabile di attenzione.",
+     "p": [
+      "Un'ancora è un posto a cui l'attenzione può tornare quando si allontana.",
+      "Prova i suoni, la sensazione delle mani o i piedi a terra.",
+      "Giorni diversi richiedono ancore diverse, ed è normale."
+     ],
+     "q": "Quale ancora ti ha fatto sentire più saldo oggi?",
+     "c": "Oggi prova per due minuti un'ancora diversa dal respiro."
+    },
+    "pt": {
+     "t": "Âncoras para além da respiração",
+     "g": "Usa sons, mãos ou pés como ponto estável de atenção.",
+     "p": [
+      "Uma âncora é um lugar a que a atenção pode voltar quando se afasta.",
+      "Experimenta os sons, a sensação das mãos ou os pés no chão.",
+      "Dias diferentes pedem âncoras diferentes, e isso é normal."
+     ],
+     "q": "Que âncora te fez sentir mais firme hoje?",
+     "c": "Experimenta hoje durante dois minutos uma âncora diferente da respiração."
+    },
+    "pt_BR": {
+     "t": "Âncoras além da respiração",
+     "g": "Use sons, mãos ou pés como ponto estável de atenção.",
+     "p": [
+      "Uma âncora é um lugar a que a atenção pode voltar quando se afasta.",
+      "Experimente os sons, a sensação das mãos ou os pés no chão.",
+      "Dias diferentes pedem âncoras diferentes, e isso é normal."
+     ],
+     "q": "Que âncora fez você se sentir mais firme hoje?",
+     "c": "Experimente hoje por dois minutos uma âncora diferente da respiração."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Feet on the floor",
+     "g": "Feel contact with the ground as a quick way to feel steady.",
+     "p": [
+      "Press your feet gently into the floor and feel the contact.",
+      "Notice pressure, warmth and the texture of socks or shoes.",
+      "This works standing, sitting or even in a meeting, without anyone noticing."
+     ],
+     "q": "When did feeling your feet help you feel steadier today?",
+     "c": "Feel your feet on the floor three times today, for three breaths each."
+    },
+    "de": {
+     "t": "Füße auf dem Boden",
+     "g": "Spüre den Bodenkontakt als schnellen Weg zu innerer Festigkeit.",
+     "p": [
+      "Drücke die Füße sanft in den Boden und spüre den Kontakt.",
+      "Bemerke Druck, Wärme und die Beschaffenheit von Socken oder Schuhen.",
+      "Das geht im Stehen, Sitzen oder sogar im Meeting, ohne dass es jemand merkt."
+     ],
+     "q": "Wann hat dir das Spüren deiner Füße heute mehr Halt gegeben?",
+     "c": "Spüre heute dreimal deine Füße am Boden, je drei Atemzüge lang."
+    },
+    "es": {
+     "t": "Pies en el suelo",
+     "g": "Siente el contacto con el suelo como forma rápida de sentirte firme.",
+     "p": [
+      "Presiona suavemente los pies contra el suelo y siente el contacto.",
+      "Nota presión, calor y la textura de calcetines o zapatos.",
+      "Funciona de pie, sentado o incluso en una reunión, sin que nadie lo note."
+     ],
+     "q": "¿Cuándo te ayudó hoy sentir los pies a sentirte más firme?",
+     "c": "Siente tus pies en el suelo tres veces hoy, tres respiraciones cada vez."
+    },
+    "fr": {
+     "t": "Les pieds sur le sol",
+     "g": "Sens le contact avec le sol comme moyen rapide de te sentir stable.",
+     "p": [
+      "Appuie doucement tes pieds dans le sol et sens le contact.",
+      "Remarque pression, chaleur et texture des chaussettes ou chaussures.",
+      "Ça marche debout, assis ou même en réunion, sans que personne ne le remarque."
+     ],
+     "q": "Quand sentir tes pieds t'a-t-il aidé à te sentir plus stable aujourd'hui ?",
+     "c": "Sens tes pieds au sol trois fois aujourd'hui, trois respirations à chaque fois."
+    },
+    "it": {
+     "t": "I piedi sul pavimento",
+     "g": "Senti il contatto con il suolo come modo rapido per sentirti saldo.",
+     "p": [
+      "Premi dolcemente i piedi sul pavimento e senti il contatto.",
+      "Nota pressione, calore e la consistenza di calzini o scarpe.",
+      "Funziona in piedi, seduto o persino in riunione, senza che nessuno se ne accorga."
+     ],
+     "q": "Quando sentire i piedi ti ha aiutato oggi a sentirti più saldo?",
+     "c": "Oggi senti i piedi sul pavimento tre volte, per tre respiri ogni volta."
+    },
+    "pt": {
+     "t": "Os pés no chão",
+     "g": "Sente o contacto com o chão como forma rápida de te sentires firme.",
+     "p": [
+      "Pressiona suavemente os pés contra o chão e sente o contacto.",
+      "Repara na pressão, no calor e na textura das meias ou sapatos.",
+      "Funciona de pé, sentado ou até numa reunião, sem ninguém notar."
+     ],
+     "q": "Quando é que sentir os pés te ajudou hoje a sentir-te mais firme?",
+     "c": "Sente os pés no chão três vezes hoje, três respirações de cada vez."
+    },
+    "pt_BR": {
+     "t": "Os pés no chão",
+     "g": "Sinta o contato com o chão como forma rápida de se sentir firme.",
+     "p": [
+      "Pressione suavemente os pés contra o chão e sinta o contato.",
+      "Perceba a pressão, o calor e a textura das meias ou sapatos.",
+      "Funciona em pé, sentado ou até numa reunião, sem ninguém notar."
+     ],
+     "q": "Quando sentir os pés ajudou você hoje a se sentir mais firme?",
+     "c": "Sinta os pés no chão três vezes hoje, três respirações de cada vez."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A full body scan",
+     "g": "Do a longer, slower scan from the toes to the top of the head with curiosity.",
+     "p": [
+      "Lie down or sit and move attention slowly from the toes upward.",
+      "Spend a few breaths on each region: feet, calves, thighs, hips, belly and so on.",
+      "Falling asleep is common; if a region feels uncomfortable, skip it or stop."
+     ],
+     "q": "Which region surprised you most during the longer scan?",
+     "c": "Do a ten-minute body scan today, or the length that feels right to you."
+    },
+    "de": {
+     "t": "Ein vollständiger Körperscan",
+     "g": "Mache einen längeren, langsameren Scan von den Zehen bis zum Scheitel mit Neugier.",
+     "p": [
+      "Lege oder setze dich und wandere mit der Aufmerksamkeit langsam von den Zehen aufwärts.",
+      "Verweile einige Atemzüge bei jeder Region: Füße, Waden, Oberschenkel, Hüfte, Bauch und so weiter.",
+      "Einschlafen ist häufig; ist eine Region unangenehm, überspringe sie oder höre auf."
+     ],
+     "q": "Welche Region hat dich beim längeren Scan am meisten überrascht?",
+     "c": "Mache heute einen zehnminütigen Körperscan oder so lang, wie es dir passt."
+    },
+    "es": {
+     "t": "Un escáner corporal completo",
+     "g": "Haz un escáner más largo y lento, de los dedos de los pies a la coronilla, con curiosidad.",
+     "p": [
+      "Túmbate o siéntate y mueve la atención despacio desde los dedos de los pies hacia arriba.",
+      "Dedica unas respiraciones a cada zona: pies, pantorrillas, muslos, caderas, vientre y así.",
+      "Quedarse dormido es común; si una zona incomoda, sáltala o para."
+     ],
+     "q": "¿Qué zona te sorprendió más durante el escáner largo?",
+     "c": "Haz hoy un escáner corporal de diez minutos, o de la duración que te convenga."
+    },
+    "fr": {
+     "t": "Un scan corporel complet",
+     "g": "Fais un scan plus long et plus lent, des orteils au sommet du crâne, avec curiosité.",
+     "p": [
+      "Allonge-toi ou assieds-toi et déplace l'attention lentement des orteils vers le haut.",
+      "Reste quelques respirations sur chaque zone : pieds, mollets, cuisses, hanches, ventre, etc.",
+      "S'endormir est courant; si une zone gêne, saute-la ou arrête."
+     ],
+     "q": "Quelle zone t'a le plus surpris pendant le scan long ?",
+     "c": "Fais aujourd'hui un scan corporel de dix minutes, ou de la durée qui te convient."
+    },
+    "it": {
+     "t": "Un body scan completo",
+     "g": "Fai uno scan più lungo e lento, dalle dita dei piedi alla sommità del capo, con curiosità.",
+     "p": [
+      "Sdraiati o siediti e sposta l'attenzione lentamente dai piedi verso l'alto.",
+      "Dedica qualche respiro a ogni zona: piedi, polpacci, cosce, fianchi, pancia e così via.",
+      "Addormentarsi è comune; se una zona dà fastidio, saltala o fermati."
+     ],
+     "q": "Quale zona ti ha sorpreso di più durante lo scan lungo?",
+     "c": "Oggi fai un body scan di dieci minuti, o della durata che ti va."
+    },
+    "pt": {
+     "t": "Um body scan completo",
+     "g": "Faz um scan mais longo e lento, dos dedos dos pés ao topo da cabeça, com curiosidade.",
+     "p": [
+      "Deita-te ou senta-te e move a atenção devagar dos dedos dos pés para cima.",
+      "Dedica algumas respirações a cada zona: pés, gémeos, coxas, ancas, barriga e assim por diante.",
+      "Adormecer é comum; se uma zona incomodar, salta-a ou pára."
+     ],
+     "q": "Que zona mais te surpreendeu durante o scan longo?",
+     "c": "Faz hoje um body scan de dez minutos, ou da duração que te servir."
+    },
+    "pt_BR": {
+     "t": "Um body scan completo",
+     "g": "Faça um scan mais longo e lento, dos dedos dos pés ao topo da cabeça, com curiosidade.",
+     "p": [
+      "Deite-se ou sente-se e mova a atenção devagar dos dedos dos pés para cima.",
+      "Dedique algumas respirações a cada região: pés, panturrilhas, coxas, quadris, barriga e assim por diante.",
+      "Adormecer é comum; se uma região incomodar, pule-a ou pare."
+     ],
+     "q": "Que região mais surpreendeu você durante o scan longo?",
+     "c": "Faça hoje um body scan de dez minutos, ou da duração que servir para você."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Scanning for comfort",
+     "g": "Look for areas of ease and comfort in the body, not only tension.",
+     "p": [
+      "Scan slowly and ask: where does my body feel at ease right now?",
+      "It might be warm hands, relaxed legs or a soft belly.",
+      "Resting attention on comfort can balance our natural habit of noticing what is wrong."
+     ],
+     "q": "Where in your body did you find the most comfort today?",
+     "c": "Three times today, find one comfortable spot in your body and stay for two breaths."
+    },
+    "de": {
+     "t": "Nach Wohlgefühl scannen",
+     "g": "Suche im Körper nach Bereichen von Leichtigkeit und Wohlgefühl, nicht nur nach Anspannung.",
+     "p": [
+      "Scanne langsam und frage: Wo fühlt sich mein Körper gerade wohl?",
+      "Das können warme Hände, entspannte Beine oder ein weicher Bauch sein.",
+      "Aufmerksamkeit auf Wohlgefühl gleicht unsere Neigung aus, vor allem Störendes zu bemerken."
+     ],
+     "q": "Wo in deinem Körper hast du heute das meiste Wohlgefühl gefunden?",
+     "c": "Finde heute dreimal eine angenehme Stelle im Körper und bleibe zwei Atemzüge dort."
+    },
+    "es": {
+     "t": "Escanear en busca de comodidad",
+     "g": "Busca en el cuerpo zonas de calma y comodidad, no solo tensión.",
+     "p": [
+      "Escanea despacio y pregunta: ¿dónde está a gusto mi cuerpo ahora mismo?",
+      "Pueden ser manos cálidas, piernas relajadas o un vientre blando.",
+      "Apoyar la atención en lo cómodo equilibra nuestro hábito natural de notar lo que va mal."
+     ],
+     "q": "¿En qué parte de tu cuerpo encontraste hoy más comodidad?",
+     "c": "Tres veces hoy, encuentra un punto cómodo del cuerpo y quédate dos respiraciones."
+    },
+    "fr": {
+     "t": "Scanner à la recherche du confort",
+     "g": "Cherche dans le corps des zones d'aisance et de confort, pas seulement la tension.",
+     "p": [
+      "Scanne lentement et demande : où mon corps est-il à l'aise en ce moment ?",
+      "Cela peut être des mains chaudes, des jambes détendues ou un ventre doux.",
+      "Poser l'attention sur le confort équilibre notre habitude de remarquer ce qui ne va pas."
+     ],
+     "q": "Où as-tu trouvé le plus de confort dans ton corps aujourd'hui ?",
+     "c": "Trois fois aujourd'hui, trouve un endroit confortable dans ton corps et reste deux respirations."
+    },
+    "it": {
+     "t": "Scansione alla ricerca del comfort",
+     "g": "Cerca nel corpo zone di agio e comfort, non solo tensione.",
+     "p": [
+      "Scansiona lentamente e chiedi: dove sta bene il mio corpo adesso?",
+      "Possono essere mani calde, gambe rilassate o una pancia morbida.",
+      "Posare l'attenzione sul comfort bilancia la nostra abitudine a notare ciò che non va."
+     ],
+     "q": "In quale parte del corpo hai trovato più comfort oggi?",
+     "c": "Tre volte oggi trova un punto comodo nel corpo e restaci per due respiri."
+    },
+    "pt": {
+     "t": "Percorrer o corpo à procura de conforto",
+     "g": "Procura no corpo zonas de calma e conforto, não só tensão.",
+     "p": [
+      "Percorre devagar e pergunta: onde está o meu corpo à vontade agora?",
+      "Podem ser mãos quentes, pernas relaxadas ou uma barriga macia.",
+      "Pousar a atenção no conforto equilibra o nosso hábito de reparar no que está mal."
+     ],
+     "q": "Em que parte do corpo encontraste hoje mais conforto?",
+     "c": "Três vezes hoje, encontra um ponto confortável no corpo e fica duas respirações."
+    },
+    "pt_BR": {
+     "t": "Percorrendo o corpo em busca de conforto",
+     "g": "Procure no corpo regiões de calma e conforto, não só tensão.",
+     "p": [
+      "Percorra devagar e pergunte: onde meu corpo está à vontade agora?",
+      "Podem ser mãos quentes, pernas relaxadas ou uma barriga macia.",
+      "Pousar a atenção no conforto equilibra nosso hábito de perceber o que está ruim."
+     ],
+     "q": "Em que parte do corpo você encontrou mais conforto hoje?",
+     "c": "Três vezes hoje, encontre um ponto confortável no corpo e fique duas respirações."
+    }
+   }
+  }
+ ]
+}

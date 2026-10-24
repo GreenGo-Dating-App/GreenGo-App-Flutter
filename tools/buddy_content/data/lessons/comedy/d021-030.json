@@ -1,0 +1,835 @@
+{
+ "topic": "comedy",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Food jokes",
+     "g": "Try puns and gags about cheese, bread and vegetables for any family table.",
+     "p": [
+      "Food is a shared topic, so food jokes are understood almost everywhere.",
+      "Example: why did the tomato turn red? It saw the salad dressing.",
+      "Pick a food you love and look for a second meaning or a funny sound in its name."
+     ],
+     "q": "What food would make the best comedian, and why?",
+     "c": "Invent a one-line joke about a food in your kitchen right now."
+    },
+    "de": {
+     "t": "Essenswitze",
+     "g": "Wortspiele und Gags über Käse, Brot und Gemüse für jeden Familientisch ausprobieren.",
+     "p": [
+      "Essen verbindet, deshalb versteht man Essenswitze fast überall.",
+      "Beispiel: Warum wurde die Tomate rot? Sie sah das Salatdressing.",
+      "Such dir ein Lieblingsessen und suche nach einer zweiten Bedeutung oder einem lustigen Klang im Namen."
+     ],
+     "q": "Welches Essen wäre der beste Comedian, und warum?",
+     "c": "Erfinde einen Einzeiler über ein Lebensmittel in deiner Küche."
+    },
+    "es": {
+     "t": "Chistes de comida",
+     "g": "Probar juegos de palabras y gracias sobre queso, pan y verduras para cualquier mesa familiar.",
+     "p": [
+      "La comida es un tema compartido, así que sus chistes se entienden casi en todas partes.",
+      "Ejemplo: ¿Por qué se puso rojo el tomate? Porque vio el aderezo de la ensalada.",
+      "Elige una comida que te guste y busca un segundo significado o un sonido gracioso en su nombre."
+     ],
+     "q": "¿Qué comida sería el mejor humorista, y por qué?",
+     "c": "Inventa un chiste de una línea sobre un alimento de tu cocina."
+    },
+    "fr": {
+     "t": "Blagues de cuisine",
+     "g": "Essayer des jeux de mots et des gags sur le fromage, le pain et les légumes pour toute table familiale.",
+     "p": [
+      "La nourriture est un sujet partagé, donc ses blagues se comprennent presque partout.",
+      "Exemple : pourquoi la tomate a-t-elle rougi ? Elle a vu la vinaigrette de la salade.",
+      "Choisis un aliment que tu aimes et cherche un deuxième sens ou un son drôle dans son nom."
+     ],
+     "q": "Quel aliment ferait le meilleur humoriste, et pourquoi ?",
+     "c": "Invente une blague d'une ligne sur un aliment de ta cuisine."
+    },
+    "it": {
+     "t": "Barzellette sul cibo",
+     "g": "Provare giochi di parole e gag su formaggio, pane e verdure per ogni tavola di famiglia.",
+     "p": [
+      "Il cibo è un tema condiviso, quindi le sue barzellette si capiscono quasi ovunque.",
+      "Esempio: perché il pomodoro è diventato rosso? Ha visto il condimento dell'insalata.",
+      "Scegli un cibo che ami e cerca un secondo significato o un suono buffo nel nome."
+     ],
+     "q": "Quale cibo sarebbe il miglior comico, e perché?",
+     "c": "Inventa una battuta di una riga su un alimento della tua cucina."
+    },
+    "pt": {
+     "t": "Piadas de comida",
+     "g": "Experimentar trocadilhos e graças sobre queijo, pão e legumes para qualquer mesa de família.",
+     "p": [
+      "A comida é um tema partilhado, por isso as suas piadas percebem-se quase em todo o lado.",
+      "Exemplo: porque ficou vermelho o tomate? Viu o molho da salada.",
+      "Escolhe uma comida de que gostes e procura um segundo sentido ou um som engraçado no nome."
+     ],
+     "q": "Que comida seria o melhor humorista, e porquê?",
+     "c": "Inventa uma piada de uma linha sobre um alimento da tua cozinha."
+    },
+    "pt_BR": {
+     "t": "Piadas de comida",
+     "g": "Experimentar trocadilhos e brincadeiras com queijo, pão e legumes para qualquer mesa de família.",
+     "p": [
+      "Comida é um assunto compartilhado, então as piadas se entendem quase em todo lugar.",
+      "Exemplo: por que o tomate ficou vermelho? Viu o molho da salada.",
+      "Escolha uma comida de que você gosta e procure um segundo sentido ou um som engraçado no nome."
+     ],
+     "q": "Que comida seria o melhor humorista, e por quê?",
+     "c": "Invente uma piada de uma linha sobre um alimento da sua cozinha."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why did the chicken cross the road?",
+     "g": "Meet the famous anti-joke whose plain answer is funny by being unfunny.",
+     "p": [
+      "The answer is simply: to get to the other side.",
+      "It is funny because we expect a clever twist and get the obvious.",
+      "The joke dates back to the 1800s and is still told today."
+     ],
+     "q": "What silly answer would you give to the chicken question?",
+     "c": "Invent your own plain answer to the chicken question and ask a friend to guess."
+    },
+    "de": {
+     "t": "Warum überquerte das Huhn die Straße?",
+     "g": "Den berühmten Anti-Witz kennenlernen, dessen schlichte Antwort komisch ist, weil sie unkomisch ist.",
+     "p": [
+      "Die Antwort lautet einfach: um auf die andere Seite zu kommen.",
+      "Er ist lustig, weil wir eine clevere Wendung erwarten und das Offensichtliche bekommen.",
+      "Der Witz stammt aus dem 19. Jahrhundert und wird bis heute erzählt."
+     ],
+     "q": "Welche alberne Antwort würdest du auf die Hühnerfrage geben?",
+     "c": "Erfinde deine eigene schlichte Antwort auf die Hühnerfrage und lass einen Freund raten."
+    },
+    "es": {
+     "t": "¿Por qué cruzó la gallina la carretera?",
+     "g": "Conocer el famoso antichiste cuya respuesta sencilla es graciosa por no tener gracia.",
+     "p": [
+      "La respuesta es simplemente: para llegar al otro lado.",
+      "Es gracioso porque esperamos un giro ingenioso y recibimos lo obvio.",
+      "El chiste data del siglo XIX y se sigue contando hoy."
+     ],
+     "q": "¿Qué respuesta tonta darías a la pregunta de la gallina?",
+     "c": "Inventa tu propia respuesta sencilla a la pregunta de la gallina y deja que un amigo adivine."
+    },
+    "fr": {
+     "t": "Pourquoi la poule a-t-elle traversé la route ?",
+     "g": "Découvrir le célèbre anti-blague dont la réponse simple est drôle parce qu'elle ne l'est pas.",
+     "p": [
+      "La réponse est simplement : pour aller de l'autre côté.",
+      "C'est drôle parce qu'on attend un retournement malin et qu'on reçoit l'évidence.",
+      "La blague date du XIXe siècle et se raconte encore aujourd'hui."
+     ],
+     "q": "Quelle réponse absurde donnerais-tu à la question de la poule ?",
+     "c": "Invente ta propre réponse simple à la question de la poule et laisse un ami deviner."
+    },
+    "it": {
+     "t": "Perché la gallina ha attraversato la strada?",
+     "g": "Scoprire la famosa anti-barzelletta la cui risposta semplice fa ridere perché non fa ridere.",
+     "p": [
+      "La risposta è semplicemente: per andare dall'altra parte.",
+      "Fa ridere perché ci aspettiamo un colpo di scena furbo e riceviamo l'ovvio.",
+      "La battuta risale all'Ottocento e si racconta ancora oggi."
+     ],
+     "q": "Quale risposta sciocca daresti alla domanda sulla gallina?",
+     "c": "Inventa la tua risposta semplice alla domanda sulla gallina e lascia indovinare a un amico."
+    },
+    "pt": {
+     "t": "Porque atravessou a galinha a estrada?",
+     "g": "Conhecer a famosa anti-piada cuja resposta simples é engraçada por não ter graça.",
+     "p": [
+      "A resposta é simplesmente: para chegar ao outro lado.",
+      "É engraçada porque esperamos uma reviravolta esperta e recebemos o óbvio.",
+      "A piada data do século XIX e ainda hoje se conta."
+     ],
+     "q": "Que resposta parva darias à pergunta da galinha?",
+     "c": "Inventa a tua própria resposta simples à pergunta da galinha e deixa um amigo adivinhar."
+    },
+    "pt_BR": {
+     "t": "Por que a galinha atravessou a rua?",
+     "g": "Conhecer a famosa anti-piada cuja resposta simples é engraçada por não ter graça.",
+     "p": [
+      "A resposta é simplesmente: para chegar ao outro lado.",
+      "É engraçada porque a gente espera uma virada esperta e recebe o óbvio.",
+      "A piada vem do século XIX e ainda hoje é contada."
+     ],
+     "q": "Que resposta boba você daria para a pergunta da galinha?",
+     "c": "Invente sua própria resposta simples para a pergunta da galinha e deixe um amigo adivinhar."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Anti-jokes",
+     "g": "Learn jokes that break the pattern by refusing to have a twist.",
+     "p": [
+      "An anti-joke builds a setup, then delivers a flat, literal answer.",
+      "Example: what is brown and sticky? A stick.",
+      "The humour comes from the listener's expectation being politely ignored."
+     ],
+     "q": "Can you think of an anti-joke about a cat or a chair?",
+     "c": "Tell one anti-joke with a very serious face and wait for the smile."
+    },
+    "de": {
+     "t": "Anti-Witze",
+     "g": "Witze kennenlernen, die das Muster brechen, indem sie keine Wendung haben.",
+     "p": [
+      "Ein Anti-Witz baut einen Aufbau auf und liefert dann eine flache, wörtliche Antwort.",
+      "Beispiel: Was hat vier Beine und dient zum Sitzen? Ein Stuhl.",
+      "Der Humor entsteht, weil die Erwartung des Hörers höflich ignoriert wird."
+     ],
+     "q": "Fällt dir ein Anti-Witz über eine Katze oder einen Stuhl ein?",
+     "c": "Erzähl heute einen Anti-Witz mit ganz ernstem Gesicht und warte aufs Lächeln."
+    },
+    "es": {
+     "t": "Antichistes",
+     "g": "Aprender chistes que rompen el patrón al negarse a tener un giro.",
+     "p": [
+      "Un antichiste crea una preparación y luego da una respuesta plana y literal.",
+      "Ejemplo: ¿Qué tiene cuatro patas y sirve para sentarse? Una silla.",
+      "La gracia surge porque se ignora con educación lo que esperaba el oyente."
+     ],
+     "q": "¿Se te ocurre un antichiste sobre un gato o una silla?",
+     "c": "Cuenta hoy un antichiste con cara muy seria y espera la sonrisa."
+    },
+    "fr": {
+     "t": "Les anti-blagues",
+     "g": "Découvrir des blagues qui brisent le schéma en refusant d'avoir une chute.",
+     "p": [
+      "Une anti-blague pose une mise en place, puis livre une réponse plate et littérale.",
+      "Exemple : qu'est-ce qui a quatre pieds et sert à s'asseoir ? Une chaise.",
+      "L'humour vient du fait que l'attente de l'auditeur est poliment ignorée."
+     ],
+     "q": "Peux-tu imaginer une anti-blague sur un chat ou une chaise ?",
+     "c": "Raconte aujourd'hui une anti-blague avec un visage très sérieux et attends le sourire."
+    },
+    "it": {
+     "t": "Le anti-barzellette",
+     "g": "Imparare barzellette che rompono lo schema rifiutandosi di avere un colpo di scena.",
+     "p": [
+      "Un'anti-barzelletta costruisce una premessa e poi dà una risposta piatta e letterale.",
+      "Esempio: cosa ha quattro gambe e serve per sedersi? Una sedia.",
+      "L'umorismo nasce perché l'aspettativa di chi ascolta viene ignorata con garbo."
+     ],
+     "q": "Riesci a inventare un'anti-barzelletta su un gatto o una sedia?",
+     "c": "Oggi racconta un'anti-barzelletta con la faccia serissima e aspetta il sorriso."
+    },
+    "pt": {
+     "t": "As anti-piadas",
+     "g": "Aprender piadas que quebram o padrão ao recusarem ter reviravolta.",
+     "p": [
+      "Uma anti-piada cria uma preparação e depois dá uma resposta plana e literal.",
+      "Exemplo: o que tem quatro pernas e serve para sentar? Uma cadeira.",
+      "A graça nasce de a expectativa de quem ouve ser educadamente ignorada."
+     ],
+     "q": "Consegues inventar uma anti-piada sobre um gato ou uma cadeira?",
+     "c": "Hoje conta uma anti-piada com cara muito séria e espera pelo sorriso."
+    },
+    "pt_BR": {
+     "t": "As anti-piadas",
+     "g": "Aprender piadas que quebram o padrão por se recusarem a ter virada.",
+     "p": [
+      "Uma anti-piada cria uma preparação e depois dá uma resposta seca e literal.",
+      "Exemplo: o que tem quatro pernas e serve para sentar? Uma cadeira.",
+      "A graça vem de a expectativa de quem ouve ser educadamente ignorada."
+     ],
+     "q": "Você consegue inventar uma anti-piada sobre um gato ou uma cadeira?",
+     "c": "Hoje conte uma anti-piada com a cara bem séria e espere o sorriso."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "One-liners",
+     "g": "Write complete jokes in a single sentence and see why brevity sharpens humour.",
+     "p": [
+      "A one-liner packs setup and punchline into one breath.",
+      "Example: I told my suitcase there will be no vacation this year. Now I am dealing with emotional baggage.",
+      "Cut every word that is not needed; the last word should carry the surprise."
+     ],
+     "q": "Can you shorten one of your jokes into a single sentence?",
+     "c": "Write one one-liner today and read it aloud, checking that the best word is last."
+    },
+    "de": {
+     "t": "Einzeiler",
+     "g": "Vollständige Witze in einem Satz schreiben und sehen, warum Kürze Humor schärft.",
+     "p": [
+      "Ein Einzeiler packt Aufbau und Pointe in einen Atemzug.",
+      "Beispiel: Ich habe meinen Koffer gewarnt, dass es dieses Jahr keinen Urlaub gibt. Jetzt trägt er schwer daran.",
+      "Streich jedes unnötige Wort; das letzte Wort sollte die Überraschung tragen."
+     ],
+     "q": "Kannst du einen deiner Witze auf einen einzigen Satz kürzen?",
+     "c": "Schreib heute einen Einzeiler und lies ihn laut, mit dem besten Wort am Ende."
+    },
+    "es": {
+     "t": "Chistes de una línea",
+     "g": "Escribir chistes completos en una sola frase y ver por qué la brevedad afila el humor.",
+     "p": [
+      "Un chiste de una línea mete preparación y remate en un solo aliento.",
+      "Ejemplo: Le dije a mi maleta que este año no hay vacaciones. Ahora tengo que cargar con su mal humor.",
+      "Quita cada palabra innecesaria; la última debe llevar la sorpresa."
+     ],
+     "q": "¿Puedes acortar uno de tus chistes a una sola frase?",
+     "c": "Escribe hoy un chiste de una línea y léelo en voz alta, con la mejor palabra al final."
+    },
+    "fr": {
+     "t": "Les blagues en une ligne",
+     "g": "Écrire des blagues complètes en une seule phrase et voir pourquoi la brièveté aiguise l'humour.",
+     "p": [
+      "Une blague en une ligne met mise en place et chute dans un seul souffle.",
+      "Exemple : j'ai dit à ma valise qu'il n'y aurait pas de vacances cette année. Elle a fait la tête.",
+      "Supprime chaque mot inutile ; le dernier mot doit porter la surprise."
+     ],
+     "q": "Peux-tu raccourcir une de tes blagues en une seule phrase ?",
+     "c": "Écris aujourd'hui une blague en une ligne et lis-la à voix haute, meilleur mot en dernier."
+    },
+    "it": {
+     "t": "Le battute in una riga",
+     "g": "Scrivere barzellette complete in una sola frase e capire perché la brevità affila l'umorismo.",
+     "p": [
+      "Una battuta in una riga mette premessa e finale in un solo respiro.",
+      "Esempio: ho detto alla mia valigia che quest'anno niente vacanze. Ora ha il muso lungo.",
+      "Togli ogni parola inutile; l'ultima parola deve portare la sorpresa."
+     ],
+     "q": "Riesci ad accorciare una tua barzelletta in una sola frase?",
+     "c": "Scrivi oggi una battuta in una riga e leggila ad alta voce, con la parola migliore alla fine."
+    },
+    "pt": {
+     "t": "Piadas de uma linha",
+     "g": "Escrever piadas completas numa só frase e ver porque a brevidade afia o humor.",
+     "p": [
+      "Uma piada de uma linha põe preparação e remate num só fôlego.",
+      "Exemplo: disse à minha mala que este ano não há férias. Agora ela anda de cara fechada.",
+      "Corta todas as palavras desnecessárias; a última deve levar a surpresa."
+     ],
+     "q": "Consegues encurtar uma das tuas piadas numa só frase?",
+     "c": "Escreve hoje uma piada de uma linha e lê-a em voz alta, com a melhor palavra no fim."
+    },
+    "pt_BR": {
+     "t": "Piadas de uma linha",
+     "g": "Escrever piadas completas numa só frase e ver por que a brevidade afia o humor.",
+     "p": [
+      "Uma piada de uma linha põe preparação e final num só fôlego.",
+      "Exemplo: avisei minha mala que este ano não tem férias. Agora ela tá de cara fechada.",
+      "Corte todas as palavras desnecessárias; a última deve levar a surpresa."
+     ],
+     "q": "Você consegue encurtar uma das suas piadas numa só frase?",
+     "c": "Escreva hoje uma piada de uma linha e leia em voz alta, com a melhor palavra no fim."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Funny stories from daily life",
+     "g": "Turn a small mishap, like a lost umbrella, into a short amusing anecdote.",
+     "p": [
+      "A funny story needs a beginning, a small trouble and a light ending.",
+      "Add one detail that makes the picture vivid, like the colour of the umbrella.",
+      "Tell it as if it happened to a friend you adore, with warmth."
+     ],
+     "q": "What small mishap of yours turned out funny afterwards?",
+     "c": "Tell a friend one tiny mishap from this week in under thirty seconds."
+    },
+    "de": {
+     "t": "Lustige Geschichten aus dem Alltag",
+     "g": "Ein kleines Missgeschick, etwa einen verlorenen Regenschirm, zu einer kurzen Anekdote machen.",
+     "p": [
+      "Eine lustige Geschichte braucht Anfang, ein kleines Problem und ein leichtes Ende.",
+      "Füge ein Detail hinzu, das das Bild lebendig macht, etwa die Farbe des Schirms.",
+      "Erzähl es so, als wäre es einem Freund passiert, den du magst, mit Wärme."
+     ],
+     "q": "Welches kleine Missgeschick von dir wurde im Nachhinein komisch?",
+     "c": "Erzähl einem Freund heute ein winziges Missgeschick dieser Woche in unter dreißig Sekunden."
+    },
+    "es": {
+     "t": "Historias graciosas de la vida diaria",
+     "g": "Convertir un pequeño percance, como perder un paraguas, en una anécdota divertida.",
+     "p": [
+      "Una historia graciosa necesita un inicio, un pequeño problema y un final ligero.",
+      "Añade un detalle que dé vida a la imagen, como el color del paraguas.",
+      "Cuéntala como si le hubiera pasado a un amigo al que quieres, con cariño."
+     ],
+     "q": "¿Qué pequeño percance tuyo resultó gracioso después?",
+     "c": "Cuéntale hoy a un amigo un pequeño percance de esta semana en menos de treinta segundos."
+    },
+    "fr": {
+     "t": "Histoires drôles du quotidien",
+     "g": "Transformer un petit contretemps, comme un parapluie perdu, en une courte anecdote amusante.",
+     "p": [
+      "Une histoire drôle a besoin d'un début, d'un petit souci et d'une fin légère.",
+      "Ajoute un détail qui rend l'image vivante, comme la couleur du parapluie.",
+      "Raconte-la comme si elle était arrivée à un ami que tu adores, avec chaleur."
+     ],
+     "q": "Quel petit contretemps t'est arrivé et s'est révélé drôle après coup ?",
+     "c": "Raconte aujourd'hui à un ami un petit contretemps de la semaine en moins de trente secondes."
+    },
+    "it": {
+     "t": "Storie buffe di vita quotidiana",
+     "g": "Trasformare un piccolo imprevisto, come un ombrello perso, in un breve aneddoto divertente.",
+     "p": [
+      "Una storia buffa ha bisogno di un inizio, un piccolo guaio e un finale leggero.",
+      "Aggiungi un dettaglio che renda vivida l'immagine, come il colore dell'ombrello.",
+      "Raccontala come se fosse capitata a un amico che adori, con calore."
+     ],
+     "q": "Quale tuo piccolo imprevisto si è rivelato buffo col senno di poi?",
+     "c": "Racconta oggi a un amico un piccolo imprevisto della settimana in meno di trenta secondi."
+    },
+    "pt": {
+     "t": "Histórias engraçadas do dia a dia",
+     "g": "Transformar um pequeno contratempo, como perder um guarda-chuva, numa curta anedota divertida.",
+     "p": [
+      "Uma história engraçada precisa de um início, um pequeno problema e um final leve.",
+      "Junta um detalhe que dê vida à imagem, como a cor do guarda-chuva.",
+      "Conta-a como se tivesse acontecido a um amigo de quem gostas, com carinho."
+     ],
+     "q": "Que pequeno contratempo teu acabou por ser engraçado depois?",
+     "c": "Conta hoje a um amigo um pequeno contratempo desta semana em menos de trinta segundos."
+    },
+    "pt_BR": {
+     "t": "Histórias engraçadas do dia a dia",
+     "g": "Transformar um pequeno contratempo, como perder um guarda-chuva, numa curta história divertida.",
+     "p": [
+      "Uma história engraçada precisa de começo, um pequeno problema e um final leve.",
+      "Acrescente um detalhe que dê vida à imagem, como a cor do guarda-chuva.",
+      "Conte como se tivesse acontecido com um amigo que você adora, com carinho."
+     ],
+     "q": "Que pequeno contratempo seu acabou sendo engraçado depois?",
+     "c": "Conte hoje para um amigo um pequeno contratempo da semana em menos de trinta segundos."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Smiling while speaking",
+     "g": "See how a warm smile changes your voice and invites others to laugh.",
+     "p": [
+      "A smile lifts your voice slightly, and listeners can hear it even on the phone.",
+      "A relaxed face tells people it is safe to laugh with you.",
+      "Smile before the punchline; it signals that fun is coming."
+     ],
+     "q": "Do you notice a difference in your voice when you smile?",
+     "c": "Make one phone call or voice message today while smiling and notice the tone."
+    },
+    "de": {
+     "t": "Beim Sprechen lächeln",
+     "g": "Sehen, wie ein warmes Lächeln deine Stimme verändert und andere zum Lachen einlädt.",
+     "p": [
+      "Ein Lächeln hebt die Stimme leicht an, man hört es sogar am Telefon.",
+      "Ein entspanntes Gesicht zeigt: Mit dir darf man lachen.",
+      "Lächle vor der Pointe; das signalisiert, dass Spaß kommt."
+     ],
+     "q": "Merkst du einen Unterschied in deiner Stimme, wenn du lächelst?",
+     "c": "Führe heute ein Telefonat oder eine Sprachnachricht lächelnd und achte auf den Ton."
+    },
+    "es": {
+     "t": "Sonreír al hablar",
+     "g": "Ver cómo una sonrisa cálida cambia tu voz e invita a los demás a reír.",
+     "p": [
+      "Una sonrisa eleva un poco tu voz, y se nota incluso por teléfono.",
+      "Un rostro relajado dice a la gente que es seguro reír contigo.",
+      "Sonríe antes del remate; indica que llega la diversión."
+     ],
+     "q": "¿Notas diferencia en tu voz cuando sonríes?",
+     "c": "Haz hoy una llamada o un mensaje de voz sonriendo y fíjate en el tono."
+    },
+    "fr": {
+     "t": "Sourire en parlant",
+     "g": "Voir comment un sourire chaleureux change ta voix et invite les autres à rire.",
+     "p": [
+      "Un sourire élève légèrement la voix, et on l'entend même au téléphone.",
+      "Un visage détendu dit aux gens qu'ils peuvent rire avec toi.",
+      "Souris avant la chute ; cela annonce que le plaisir arrive."
+     ],
+     "q": "Remarques-tu une différence dans ta voix quand tu souris ?",
+     "c": "Passe aujourd'hui un appel ou envoie un message vocal en souriant et écoute le ton."
+    },
+    "it": {
+     "t": "Sorridere mentre si parla",
+     "g": "Vedere come un sorriso caldo cambia la voce e invita gli altri a ridere.",
+     "p": [
+      "Un sorriso alza leggermente la voce, e si sente anche al telefono.",
+      "Un viso rilassato dice alle persone che è sicuro ridere con te.",
+      "Sorridi prima della battuta finale; segnala che arriva il divertimento."
+     ],
+     "q": "Noti una differenza nella tua voce quando sorridi?",
+     "c": "Fai oggi una telefonata o un vocale sorridendo e fai caso al tono."
+    },
+    "pt": {
+     "t": "Sorrir ao falar",
+     "g": "Ver como um sorriso caloroso muda a tua voz e convida os outros a rir.",
+     "p": [
+      "Um sorriso eleva ligeiramente a voz, e ouve-se até ao telefone.",
+      "Um rosto descontraído diz às pessoas que é seguro rir contigo.",
+      "Sorri antes do remate; sinaliza que vem aí diversão."
+     ],
+     "q": "Notas diferença na tua voz quando sorris?",
+     "c": "Faz hoje uma chamada ou uma mensagem de voz a sorrir e repara no tom."
+    },
+    "pt_BR": {
+     "t": "Sorrir ao falar",
+     "g": "Ver como um sorriso caloroso muda sua voz e convida os outros a rir.",
+     "p": [
+      "Um sorriso eleva levemente a voz, e dá para ouvir até no telefone.",
+      "Um rosto descontraído diz às pessoas que é seguro rir com você.",
+      "Sorria antes do final da piada; isso sinaliza que a diversão vem aí."
+     ],
+     "q": "Você percebe diferença na sua voz quando sorri?",
+     "c": "Faça hoje uma ligação ou um áudio sorrindo e perceba o tom."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading the room",
+     "g": "Notice the mood and the people around you before telling a joke.",
+     "p": [
+      "Look at faces and energy first: are people relaxed, tired or busy?",
+      "Choose a joke that fits the group, the place and the moment.",
+      "If a joke does not land, smile and move on; no harm done."
+     ],
+     "q": "When have you felt the room was perfect for a joke?",
+     "c": "Before your next joke, take three seconds to look around and decide."
+    },
+    "de": {
+     "t": "Die Stimmung lesen",
+     "g": "Stimmung und Menschen um dich wahrnehmen, bevor du einen Witz erzählst.",
+     "p": [
+      "Schau zuerst auf Gesichter und Energie: Sind alle entspannt, müde oder beschäftigt?",
+      "Wähle einen Witz, der zur Gruppe, zum Ort und zum Moment passt.",
+      "Zündet ein Witz nicht, lächle und mach weiter; kein Schaden entstanden."
+     ],
+     "q": "Wann hattest du das Gefühl, der Raum sei perfekt für einen Witz?",
+     "c": "Nimm dir vor deinem nächsten Witz drei Sekunden, um dich umzusehen und zu entscheiden."
+    },
+    "es": {
+     "t": "Leer el ambiente",
+     "g": "Fijarse en el ánimo y en las personas antes de contar un chiste.",
+     "p": [
+      "Mira primero las caras y la energía: ¿están relajados, cansados u ocupados?",
+      "Elige un chiste que encaje con el grupo, el lugar y el momento.",
+      "Si un chiste no cuaja, sonríe y sigue; no pasa nada."
+     ],
+     "q": "¿Cuándo sentiste que el ambiente era perfecto para un chiste?",
+     "c": "Antes de tu próximo chiste, tómate tres segundos para mirar alrededor y decidir."
+    },
+    "fr": {
+     "t": "Sentir l'ambiance",
+     "g": "Percevoir l'humeur et les personnes autour de toi avant de raconter une blague.",
+     "p": [
+      "Regarde d'abord les visages et l'énergie : les gens sont-ils détendus, fatigués ou occupés ?",
+      "Choisis une blague adaptée au groupe, au lieu et au moment.",
+      "Si une blague ne prend pas, souris et passe à autre chose ; aucun mal."
+     ],
+     "q": "Quand as-tu senti que l'ambiance était parfaite pour une blague ?",
+     "c": "Avant ta prochaine blague, prends trois secondes pour regarder autour de toi et décider."
+    },
+    "it": {
+     "t": "Capire l'atmosfera",
+     "g": "Cogliere l'umore e le persone intorno a te prima di raccontare una barzelletta.",
+     "p": [
+      "Guarda prima i volti e l'energia: le persone sono rilassate, stanche o occupate?",
+      "Scegli una barzelletta adatta al gruppo, al luogo e al momento.",
+      "Se una battuta non funziona, sorridi e vai avanti; nessun danno."
+     ],
+     "q": "Quando hai sentito che l'atmosfera era perfetta per una barzelletta?",
+     "c": "Prima della prossima barzelletta, prenditi tre secondi per guardarti intorno e decidere."
+    },
+    "pt": {
+     "t": "Perceber o ambiente",
+     "g": "Reparar no estado de espírito e nas pessoas à tua volta antes de contar uma piada.",
+     "p": [
+      "Olha primeiro para os rostos e a energia: estão descontraídos, cansados ou ocupados?",
+      "Escolhe uma piada que combine com o grupo, o local e o momento.",
+      "Se uma piada não pega, sorri e segue em frente; não faz mal."
+     ],
+     "q": "Quando sentiste que o ambiente era perfeito para uma piada?",
+     "c": "Antes da tua próxima piada, dá três segundos para olhar em volta e decidir."
+    },
+    "pt_BR": {
+     "t": "Perceber o clima",
+     "g": "Reparar no humor e nas pessoas ao seu redor antes de contar uma piada.",
+     "p": [
+      "Olhe primeiro para os rostos e a energia: estão relaxados, cansados ou ocupados?",
+      "Escolha uma piada que combine com o grupo, o lugar e o momento.",
+      "Se uma piada não pega, sorria e siga em frente; não tem problema."
+     ],
+     "q": "Quando você sentiu que o clima estava perfeito para uma piada?",
+     "c": "Antes da sua próxima piada, dê três segundos para olhar em volta e decidir."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "When not to joke",
+     "g": "Know the moments that call for kindness and calm instead of humour.",
+     "p": [
+      "When someone is upset, worried or grieving, listening matters more than jokes.",
+      "Serious announcements, formal meetings and sensitive topics usually need a gentle tone.",
+      "If unsure, offer warmth first; humour can return when the mood lifts."
+     ],
+     "q": "How do you like to be treated when you are having a hard day?",
+     "c": "Today, notice one moment where quiet support would be better than a joke."
+    },
+    "de": {
+     "t": "Wann man nicht scherzt",
+     "g": "Die Momente erkennen, die Freundlichkeit und Ruhe statt Humor verlangen.",
+     "p": [
+      "Wenn jemand aufgebracht, besorgt oder traurig ist, zählt Zuhören mehr als Witze.",
+      "Ernste Mitteilungen, formelle Besprechungen und heikle Themen brauchen meist einen sanften Ton.",
+      "Im Zweifel zuerst Wärme zeigen; der Humor kann zurückkehren, wenn sich die Stimmung hebt."
+     ],
+     "q": "Wie möchtest du an einem schweren Tag behandelt werden?",
+     "c": "Bemerke heute einen Moment, in dem stille Unterstützung besser wäre als ein Witz."
+    },
+    "es": {
+     "t": "Cuándo no bromear",
+     "g": "Reconocer los momentos que piden amabilidad y calma en lugar de humor.",
+     "p": [
+      "Cuando alguien está disgustado o preocupado, escuchar importa más que bromear.",
+      "Los anuncios serios, las reuniones formales y los temas delicados suelen pedir un tono suave.",
+      "Si dudas, ofrece primero calidez; el humor puede volver cuando mejore el ánimo."
+     ],
+     "q": "¿Cómo te gusta que te traten cuando tienes un día difícil?",
+     "c": "Hoy fíjate en un momento en que el apoyo en silencio sería mejor que un chiste."
+    },
+    "fr": {
+     "t": "Quand ne pas plaisanter",
+     "g": "Reconnaître les moments qui demandent de la gentillesse et du calme plutôt que de l'humour.",
+     "p": [
+      "Quand quelqu'un est contrarié ou inquiet, écouter compte plus que plaisanter.",
+      "Les annonces sérieuses, les réunions formelles et les sujets délicats demandent souvent un ton doux.",
+      "Dans le doute, offre d'abord de la chaleur ; l'humour reviendra quand l'ambiance s'allégera."
+     ],
+     "q": "Comment aimes-tu qu'on te traite lors d'une journée difficile ?",
+     "c": "Repère aujourd'hui un moment où un soutien silencieux vaudrait mieux qu'une blague."
+    },
+    "it": {
+     "t": "Quando non scherzare",
+     "g": "Riconoscere i momenti che chiedono gentilezza e calma invece di umorismo.",
+     "p": [
+      "Quando qualcuno è turbato o preoccupato, ascoltare conta più che scherzare.",
+      "Annunci seri, riunioni formali e argomenti delicati di solito richiedono un tono gentile.",
+      "Nel dubbio, offri prima calore; l'umorismo può tornare quando l'umore si alza."
+     ],
+     "q": "Come ti piace essere trattato in una giornata difficile?",
+     "c": "Oggi nota un momento in cui un sostegno silenzioso sarebbe meglio di una battuta."
+    },
+    "pt": {
+     "t": "Quando não brincar",
+     "g": "Reconhecer os momentos que pedem simpatia e calma em vez de humor.",
+     "p": [
+      "Quando alguém está chateado ou preocupado, ouvir importa mais do que brincar.",
+      "Anúncios sérios, reuniões formais e temas delicados costumam pedir um tom suave.",
+      "Na dúvida, oferece primeiro calor humano; o humor pode voltar quando o ambiente aliviar."
+     ],
+     "q": "Como gostas de ser tratado num dia difícil?",
+     "c": "Hoje repara num momento em que apoio silencioso seria melhor do que uma piada."
+    },
+    "pt_BR": {
+     "t": "Quando não brincar",
+     "g": "Reconhecer os momentos que pedem gentileza e calma em vez de humor.",
+     "p": [
+      "Quando alguém está chateado ou preocupado, ouvir importa mais do que brincar.",
+      "Avisos sérios, reuniões formais e assuntos delicados costumam pedir um tom suave.",
+      "Na dúvida, ofereça primeiro acolhimento; o humor pode voltar quando o clima aliviar."
+     ],
+     "q": "Como você gosta de ser tratado num dia difícil?",
+     "c": "Hoje repare num momento em que apoio silencioso seria melhor que uma piada."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Humour and friendship",
+     "g": "See how shared jokes and laughter build trust between new friends.",
+     "p": [
+      "Inside jokes are little treasures only your friends understand.",
+      "Laughing together shows you are comfortable in each other's company.",
+      "Start light and kind; trust grows with every shared smile."
+     ],
+     "q": "Do you have an inside joke with a friend? What is its story?",
+     "c": "Create a small inside joke with someone today, such as a funny nickname for a mug."
+    },
+    "de": {
+     "t": "Humor und Freundschaft",
+     "g": "Sehen, wie gemeinsame Witze und Lachen Vertrauen zwischen neuen Freunden aufbauen.",
+     "p": [
+      "Insiderwitze sind kleine Schätze, die nur deine Freunde verstehen.",
+      "Gemeinsam zu lachen zeigt, dass ihr euch miteinander wohlfühlt.",
+      "Beginne leicht und freundlich; Vertrauen wächst mit jedem gemeinsamen Lächeln."
+     ],
+     "q": "Hast du einen Insiderwitz mit einem Freund? Wie ist seine Geschichte?",
+     "c": "Erfinde heute mit jemandem einen kleinen Insiderwitz, etwa einen lustigen Spitznamen für eine Tasse."
+    },
+    "es": {
+     "t": "Humor y amistad",
+     "g": "Ver cómo los chistes compartidos y la risa crean confianza entre nuevos amigos.",
+     "p": [
+      "Las bromas privadas son pequeños tesoros que solo entienden tus amigos.",
+      "Reír juntos demuestra que os sentís cómodos en compañía del otro.",
+      "Empieza con algo ligero y amable; la confianza crece con cada sonrisa compartida."
+     ],
+     "q": "¿Tienes una broma privada con un amigo? ¿Cuál es su historia?",
+     "c": "Crea hoy una pequeña broma privada con alguien, como un apodo gracioso para una taza."
+    },
+    "fr": {
+     "t": "Humour et amitié",
+     "g": "Voir comment les blagues partagées et le rire créent la confiance entre nouveaux amis.",
+     "p": [
+      "Les private jokes sont de petits trésors que seuls tes amis comprennent.",
+      "Rire ensemble montre que vous vous sentez bien l'un avec l'autre.",
+      "Commence léger et gentil ; la confiance grandit à chaque sourire partagé."
+     ],
+     "q": "As-tu une private joke avec un ami ? Quelle est son histoire ?",
+     "c": "Crée aujourd'hui une petite private joke avec quelqu'un, comme un surnom drôle pour une tasse."
+    },
+    "it": {
+     "t": "Umorismo e amicizia",
+     "g": "Vedere come battute condivise e risate creano fiducia tra nuovi amici.",
+     "p": [
+      "Le battute private sono piccoli tesori che capiscono solo i tuoi amici.",
+      "Ridere insieme mostra che state bene l'uno in compagnia dell'altro.",
+      "Comincia con leggerezza e gentilezza; la fiducia cresce a ogni sorriso condiviso."
+     ],
+     "q": "Hai una battuta privata con un amico? Qual è la sua storia?",
+     "c": "Crea oggi una piccola battuta privata con qualcuno, come un soprannome buffo per una tazza."
+    },
+    "pt": {
+     "t": "Humor e amizade",
+     "g": "Ver como as piadas partilhadas e o riso criam confiança entre novos amigos.",
+     "p": [
+      "As piadas internas são pequenos tesouros que só os teus amigos entendem.",
+      "Rir juntos mostra que se sentem bem na companhia um do outro.",
+      "Começa com leveza e simpatia; a confiança cresce a cada sorriso partilhado."
+     ],
+     "q": "Tens uma piada interna com um amigo? Qual é a história dela?",
+     "c": "Cria hoje uma pequena piada interna com alguém, como uma alcunha engraçada para uma caneca."
+    },
+    "pt_BR": {
+     "t": "Humor e amizade",
+     "g": "Ver como as piadas compartilhadas e a risada criam confiança entre novos amigos.",
+     "p": [
+      "Piadas internas são pequenos tesouros que só os seus amigos entendem.",
+      "Rir junto mostra que vocês se sentem bem na companhia um do outro.",
+      "Comece com leveza e gentileza; a confiança cresce a cada sorriso compartilhado."
+     ],
+     "q": "Você tem uma piada interna com um amigo? Qual é a história dela?",
+     "c": "Crie hoje uma pequena piada interna com alguém, como um apelido engraçado para uma caneca."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your joke toolkit",
+     "g": "Look back at puns, timing, surprise and the rule of three with a mini quiz.",
+     "p": [
+      "Puns play with sounds, the rule of three ends with a surprise.",
+      "Timing means a pause before the punchline and a calm pace.",
+      "Kind humour includes everyone and fits the mood of the room."
+     ],
+     "q": "Quiz: which tool would you use for a list of three? Which for a word with two meanings?",
+     "c": "Combine two tools today, for example a pun in a rule-of-three list, and share it."
+    },
+    "de": {
+     "t": "Wiederholung: dein Witz-Werkzeugkasten",
+     "g": "Rückblick auf Wortspiele, Timing, Überraschung und Dreierregel mit einem Mini-Quiz.",
+     "p": [
+      "Wortspiele spielen mit Klängen, die Dreierregel endet mit einer Überraschung.",
+      "Timing heißt: Pause vor der Pointe und ruhiges Tempo.",
+      "Freundlicher Humor schließt alle ein und passt zur Stimmung im Raum."
+     ],
+     "q": "Quiz: Welches Werkzeug nutzt du für eine Dreierliste? Welches für ein Wort mit zwei Bedeutungen?",
+     "c": "Kombiniere heute zwei Werkzeuge, etwa ein Wortspiel in einer Dreierliste, und teile es."
+    },
+    "es": {
+     "t": "Repaso: tu caja de herramientas de chistes",
+     "g": "Repasar juegos de palabras, tiempo, sorpresa y regla de tres con un mini cuestionario.",
+     "p": [
+      "Los juegos de palabras juegan con sonidos, la regla de tres termina con una sorpresa.",
+      "El tiempo cómico es una pausa antes del remate y un ritmo tranquilo.",
+      "El humor amable incluye a todos y encaja con el ambiente."
+     ],
+     "q": "Cuestionario: ¿qué herramienta usarías para una lista de tres? ¿Y para una palabra con dos sentidos?",
+     "c": "Combina hoy dos herramientas, por ejemplo un juego de palabras en una lista de tres, y compártelo."
+    },
+    "fr": {
+     "t": "Révision : ta boîte à outils de blagues",
+     "g": "Revenir sur les calembours, le timing, la surprise et la règle de trois avec un mini quiz.",
+     "p": [
+      "Les calembours jouent avec les sons, la règle de trois finit par une surprise.",
+      "Le timing, c'est une pause avant la chute et un rythme calme.",
+      "L'humour bienveillant inclut tout le monde et s'accorde à l'ambiance."
+     ],
+     "q": "Quiz : quel outil pour une liste de trois ? Lequel pour un mot à double sens ?",
+     "c": "Combine aujourd'hui deux outils, par exemple un calembour dans une liste de trois, et partage-le."
+    },
+    "it": {
+     "t": "Ripasso: la tua cassetta degli attrezzi",
+     "g": "Ripassare giochi di parole, tempi, sorpresa e regola del tre con un mini quiz.",
+     "p": [
+      "I giochi di parole giocano coi suoni, la regola del tre finisce con una sorpresa.",
+      "Il tempo comico è una pausa prima della battuta e un ritmo calmo.",
+      "L'umorismo gentile include tutti e si adatta all'atmosfera."
+     ],
+     "q": "Quiz: quale strumento useresti per una lista di tre? E per una parola con due significati?",
+     "c": "Combina oggi due strumenti, per esempio un gioco di parole in una lista di tre, e condividilo."
+    },
+    "pt": {
+     "t": "Revisão: a tua caixa de ferramentas de piadas",
+     "g": "Rever trocadilhos, tempo, surpresa e regra de três com um mini questionário.",
+     "p": [
+      "Os trocadilhos brincam com os sons, a regra de três termina com uma surpresa.",
+      "O tempo cómico é uma pausa antes do remate e um ritmo calmo.",
+      "O humor simpático inclui todos e combina com o ambiente."
+     ],
+     "q": "Questionário: que ferramenta usarias para uma lista de três? E para uma palavra com dois sentidos?",
+     "c": "Combina hoje duas ferramentas, por exemplo um trocadilho numa lista de três, e partilha."
+    },
+    "pt_BR": {
+     "t": "Revisão: sua caixa de ferramentas de piadas",
+     "g": "Rever trocadilhos, tempo, surpresa e regra de três com um mini quiz.",
+     "p": [
+      "Trocadilhos brincam com os sons, a regra de três termina com uma surpresa.",
+      "O tempo cômico é uma pausa antes do final e um ritmo calmo.",
+      "O humor gentil inclui todos e combina com o clima."
+     ],
+     "q": "Quiz: que ferramenta você usaria para uma lista de três? E para uma palavra com dois sentidos?",
+     "c": "Combine hoje duas ferramentas, por exemplo um trocadilho numa lista de três, e compartilhe."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "podcasts",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Finding podcasts beyond the charts",
+     "g": "Discover hidden gems through people and personal sources.",
+     "p": [
+      "Friends, newsletters and guest appearances often point to great shows.",
+      "If you love one episode, check who the guest or host recommends.",
+      "Charts show what is popular, not always what fits you."
+     ],
+     "q": "Who do you know with great taste in audio?",
+     "c": "Ask someone for one podcast they love and listen to its first episode."
+    },
+    "de": {
+     "t": "Podcasts jenseits der Charts finden",
+     "g": "Verborgene Perlen durch Menschen und persönliche Quellen entdecken.",
+     "p": [
+      "Freunde, Newsletter und Gastauftritte führen oft zu tollen Sendungen.",
+      "Gefällt dir eine Folge, schau, wen Gast oder Moderation empfiehlt.",
+      "Charts zeigen, was beliebt ist, nicht immer, was zu dir passt."
+     ],
+     "q": "Wen kennst du mit gutem Audio-Geschmack?",
+     "c": "Frag jemanden nach einem Lieblingspodcast und höre dessen erste Folge."
+    },
+    "es": {
+     "t": "Descubrir pódcast más allá de las listas",
+     "g": "Descubrir joyas ocultas a través de personas y fuentes personales.",
+     "p": [
+      "Amigos, boletines e invitaciones en otros programas suelen llevar a grandes programas.",
+      "Si te gusta un episodio, mira a quién recomienda el invitado o el presentador.",
+      "Las listas muestran lo popular, no siempre lo que te encaja."
+     ],
+     "q": "¿Quién de tu entorno tiene buen gusto para el audio?",
+     "c": "Pide a alguien un pódcast que le encante y escucha su primer episodio."
+    },
+    "fr": {
+     "t": "Trouver des podcasts hors des classements",
+     "g": "Découvrir des pépites grâce aux gens et aux sources personnelles.",
+     "p": [
+      "Amis, lettres d'information et invitations dans d'autres émissions mènent souvent à de belles découvertes.",
+      "Si un épisode te plaît, regarde qui l'invité ou l'animateur recommande.",
+      "Les classements montrent ce qui est populaire, pas toujours ce qui te convient."
+     ],
+     "q": "Qui connais-tu qui a bon goût en audio ?",
+     "c": "Demande à quelqu'un un podcast qu'il adore et écoute son premier épisode."
+    },
+    "it": {
+     "t": "Trovare podcast oltre le classifiche",
+     "g": "Scoprire gemme nascoste grazie alle persone e alle fonti personali.",
+     "p": [
+      "Amici, newsletter e ospitate in altri programmi portano spesso a ottimi programmi.",
+      "Se ami un episodio, guarda chi consiglia l'ospite o il conduttore.",
+      "Le classifiche mostrano ciò che è popolare, non sempre ciò che fa per te."
+     ],
+     "q": "Chi conosci con buon gusto per l'audio?",
+     "c": "Chiedi a qualcuno un podcast che ama e ascolta il suo primo episodio."
+    },
+    "pt": {
+     "t": "Encontrar podcasts além dos rankings",
+     "g": "Descobrir pérolas escondidas através de pessoas e fontes pessoais.",
+     "p": [
+      "Amigos, newsletters e participações noutros programas levam muitas vezes a ótimos programas.",
+      "Se gostas de um episódio, vê quem o convidado ou o apresentador recomenda.",
+      "Os rankings mostram o que é popular, nem sempre o que te serve."
+     ],
+     "q": "Quem conheces com bom gosto para áudio?",
+     "c": "Pede a alguém um podcast de que goste e ouve o primeiro episódio."
+    },
+    "pt_BR": {
+     "t": "Achar podcasts além dos rankings",
+     "g": "Descobrir pérolas escondidas por meio de pessoas e fontes pessoais.",
+     "p": [
+      "Amigos, newsletters e participações em outros programas levam muitas vezes a ótimos programas.",
+      "Se você gosta de um episódio, veja quem o convidado ou o apresentador recomenda.",
+      "Rankings mostram o que é popular, nem sempre o que combina com você."
+     ],
+     "q": "Quem você conhece que tem bom gosto para áudio?",
+     "c": "Peça a alguém um podcast de que goste e ouça o primeiro episódio."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Podcasts in other languages",
+     "g": "Listen to the world in its own voice.",
+     "p": [
+      "Shows from other countries let you hear real, everyday speech.",
+      "You can start with topics you know, so the words are easier to guess.",
+      "Even a few minutes train your ear for new sounds and rhythms."
+     ],
+     "q": "Which language would you like to hear on your headphones?",
+     "c": "Play two minutes of a show in a foreign language and catch any word you know."
+    },
+    "de": {
+     "t": "Podcasts in anderen Sprachen",
+     "g": "Die Welt in ihrer eigenen Stimme hören.",
+     "p": [
+      "Sendungen aus anderen Ländern lassen dich echte Alltagssprache hören.",
+      "Fang mit Themen an, die du kennst, dann sind Wörter leichter zu erraten.",
+      "Schon wenige Minuten schulen das Ohr für neue Laute und Rhythmen."
+     ],
+     "q": "Welche Sprache möchtest du in deinen Kopfhörern hören?",
+     "c": "Spiele zwei Minuten einer fremdsprachigen Sendung ab und finde ein bekanntes Wort."
+    },
+    "es": {
+     "t": "Pódcast en otros idiomas",
+     "g": "Escuchar el mundo con su propia voz.",
+     "p": [
+      "Los programas de otros países te dejan oír el habla real del día a día.",
+      "Empieza por temas que conozcas y las palabras serán más fáciles de adivinar.",
+      "Incluso unos minutos entrenan el oído para sonidos y ritmos nuevos."
+     ],
+     "q": "¿Qué idioma te gustaría oír en tus auriculares?",
+     "c": "Escucha dos minutos de un programa en otro idioma y caza una palabra conocida."
+    },
+    "fr": {
+     "t": "Podcasts dans d'autres langues",
+     "g": "Écouter le monde avec sa propre voix.",
+     "p": [
+      "Les émissions d'autres pays te font entendre la vraie langue du quotidien.",
+      "Commence par des sujets que tu connais : les mots seront plus faciles à deviner.",
+      "Même quelques minutes entraînent l'oreille à de nouveaux sons et rythmes."
+     ],
+     "q": "Quelle langue aimerais-tu entendre dans ton casque ?",
+     "c": "Écoute deux minutes d'une émission en langue étrangère et repère un mot connu."
+    },
+    "it": {
+     "t": "Podcast in altre lingue",
+     "g": "Ascoltare il mondo con la sua voce.",
+     "p": [
+      "I programmi di altri paesi ti fanno sentire il parlato reale di ogni giorno.",
+      "Parti da temi che conosci, così le parole sono più facili da intuire.",
+      "Anche pochi minuti allenano l'orecchio a suoni e ritmi nuovi."
+     ],
+     "q": "Quale lingua ti piacerebbe sentire nelle cuffie?",
+     "c": "Ascolta due minuti di un programma in lingua straniera e riconosci una parola nota."
+    },
+    "pt": {
+     "t": "Podcasts noutras línguas",
+     "g": "Ouvir o mundo com a sua própria voz.",
+     "p": [
+      "Programas de outros países deixam-te ouvir a fala real do dia a dia.",
+      "Começa por temas que conheças e as palavras serão mais fáceis de adivinhar.",
+      "Mesmo uns minutos treinam o ouvido para sons e ritmos novos."
+     ],
+     "q": "Que língua gostarias de ouvir nos auscultadores?",
+     "c": "Ouve dois minutos de um programa noutra língua e apanha uma palavra conhecida."
+    },
+    "pt_BR": {
+     "t": "Podcasts em outros idiomas",
+     "g": "Ouvir o mundo com a sua própria voz.",
+     "p": [
+      "Programas de outros países deixam você ouvir a fala real do dia a dia.",
+      "Comece por temas que conhece e as palavras ficam mais fáceis de adivinhar.",
+      "Mesmo uns minutos treinam o ouvido para sons e ritmos novos."
+     ],
+     "q": "Que idioma você gostaria de ouvir nos fones?",
+     "c": "Ouça dois minutos de um programa em outro idioma e pegue uma palavra conhecida."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Listening actively",
+     "g": "Remember more by listening with attention and reflection.",
+     "p": [
+      "Take a few notes on ideas that surprise you or that you want to keep.",
+      "Pause now and then to say the main point in your own words.",
+      "Active listening turns an episode into something you really own."
+     ],
+     "q": "What do you usually remember best after an episode?",
+     "c": "Listen to ten minutes with one note-taking pause and write a one-line summary."
+    },
+    "de": {
+     "t": "Aktiv zuhören",
+     "g": "Mehr behalten durch aufmerksames, nachdenkliches Hören.",
+     "p": [
+      "Notiere ein paar Ideen, die dich überraschen oder die du behalten willst.",
+      "Pausiere ab und zu und sage den Kernpunkt in eigenen Worten.",
+      "Aktives Hören macht aus einer Folge etwas, das wirklich dir gehört."
+     ],
+     "q": "Woran erinnerst du dich nach einer Folge meist am besten?",
+     "c": "Höre zehn Minuten mit einer Notizpause und schreibe eine Ein-Satz-Zusammenfassung."
+    },
+    "es": {
+     "t": "Escuchar con atención activa",
+     "g": "Recordar más escuchando con atención y reflexión.",
+     "p": [
+      "Toma algunas notas de ideas que te sorprendan o quieras conservar.",
+      "Haz pausas para decir con tus palabras el punto principal.",
+      "Escuchar activamente convierte un episodio en algo realmente tuyo."
+     ],
+     "q": "¿Qué sueles recordar mejor después de un episodio?",
+     "c": "Escucha diez minutos con una pausa para notas y escribe un resumen de una línea."
+    },
+    "fr": {
+     "t": "Écouter activement",
+     "g": "Mieux retenir en écoutant avec attention et réflexion.",
+     "p": [
+      "Note quelques idées qui te surprennent ou que tu veux garder.",
+      "Fais une pause de temps en temps et redis l'essentiel avec tes mots.",
+      "L'écoute active fait d'un épisode quelque chose qui t'appartient vraiment."
+     ],
+     "q": "Que retiens-tu le mieux après un épisode, en général ?",
+     "c": "Écoute dix minutes avec une pause de notes et écris un résumé en une ligne."
+    },
+    "it": {
+     "t": "Ascoltare attivamente",
+     "g": "Ricordare di più ascoltando con attenzione e riflessione.",
+     "p": [
+      "Prendi qualche appunto sulle idee che ti sorprendono o che vuoi conservare.",
+      "Fai ogni tanto una pausa e dì il punto principale con parole tue.",
+      "L'ascolto attivo trasforma un episodio in qualcosa che è davvero tuo."
+     ],
+     "q": "Cosa ricordi meglio di solito dopo un episodio?",
+     "c": "Ascolta dieci minuti con una pausa per gli appunti e scrivi un riassunto di una riga."
+    },
+    "pt": {
+     "t": "Ouvir ativamente",
+     "g": "Lembrar mais ouvindo com atenção e reflexão.",
+     "p": [
+      "Toma notas de ideias que te surpreendam ou que queiras guardar.",
+      "Faz pausas de vez em quando para dizer o ponto principal por palavras tuas.",
+      "Ouvir ativamente faz de um episódio algo que é mesmo teu."
+     ],
+     "q": "De que te lembras melhor depois de um episódio?",
+     "c": "Ouve dez minutos com uma pausa para notas e escreve um resumo de uma linha."
+    },
+    "pt_BR": {
+     "t": "Ouvir ativamente",
+     "g": "Lembrar mais ouvindo com atenção e reflexão.",
+     "p": [
+      "Anote ideias que surpreendam você ou que queira guardar.",
+      "Faça pausas de vez em quando para dizer o ponto principal com suas palavras.",
+      "Ouvir ativamente faz de um episódio algo que é realmente seu."
+     ],
+     "q": "Do que você costuma lembrar melhor depois de um episódio?",
+     "c": "Ouça dez minutos com uma pausa para anotações e escreva um resumo de uma linha."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Building a weekly listening menu",
+     "g": "Mix long and short, deep and light shows for a balanced week.",
+     "p": [
+      "Plan a few light shows for busy days and a deeper one for weekends.",
+      "Short episodes fit small gaps; long ones suit road trips and quiet evenings.",
+      "A menu with variety keeps listening fresh and stops it feeling like a chore."
+     ],
+     "q": "What would your perfect week of listening look like?",
+     "c": "Write a seven-day menu with one show per day and a time for each."
+    },
+    "de": {
+     "t": "Einen wöchentlichen Hörplan bauen",
+     "g": "Lange und kurze, tiefe und leichte Sendungen für eine runde Woche mischen.",
+     "p": [
+      "Plane leichte Sendungen für volle Tage und eine tiefere fürs Wochenende.",
+      "Kurze Folgen passen in kleine Lücken, lange zu Fahrten und ruhigen Abenden.",
+      "Ein abwechslungsreicher Plan hält das Hören frisch und nimmt ihm den Pflichtcharakter."
+     ],
+     "q": "Wie sähe deine perfekte Hörwoche aus?",
+     "c": "Schreibe einen Sieben-Tage-Plan mit einer Sendung pro Tag und einer Uhrzeit."
+    },
+    "es": {
+     "t": "Crear un menú semanal de escucha",
+     "g": "Mezclar programas largos y cortos, profundos y ligeros para una semana equilibrada.",
+     "p": [
+      "Planea algunos programas ligeros para días ocupados y uno más profundo para el fin de semana.",
+      "Los episodios cortos caben en huecos; los largos van bien en viajes y tardes tranquilas.",
+      "Un menú variado mantiene fresca la escucha y evita que parezca una obligación."
+     ],
+     "q": "¿Cómo sería tu semana perfecta de escucha?",
+     "c": "Escribe un menú de siete días con un programa por día y una hora para cada uno."
+    },
+    "fr": {
+     "t": "Composer un menu d'écoute hebdomadaire",
+     "g": "Mélanger émissions longues et courtes, profondes et légères pour une semaine équilibrée.",
+     "p": [
+      "Prévois des émissions légères pour les jours chargés et une plus profonde pour le week-end.",
+      "Les épisodes courts se glissent dans les creux ; les longs vont aux voyages et soirées calmes.",
+      "Un menu varié garde l'écoute fraîche et évite qu'elle devienne une corvée."
+     ],
+     "q": "À quoi ressemblerait ta semaine d'écoute idéale ?",
+     "c": "Écris un menu de sept jours avec une émission par jour et une heure pour chacune."
+    },
+    "it": {
+     "t": "Costruire un menu di ascolto settimanale",
+     "g": "Mescolare programmi lunghi e brevi, profondi e leggeri per una settimana equilibrata.",
+     "p": [
+      "Pianifica alcuni programmi leggeri per i giorni pieni e uno più profondo per il weekend.",
+      "Gli episodi brevi stanno nei piccoli spazi; quelli lunghi vanno bene per viaggi e serate calme.",
+      "Un menu vario mantiene fresco l'ascolto e non lo fa sembrare un dovere."
+     ],
+     "q": "Come sarebbe la tua settimana perfetta di ascolto?",
+     "c": "Scrivi un menu di sette giorni con un programma al giorno e un orario per ciascuno."
+    },
+    "pt": {
+     "t": "Montar uma ementa semanal de escuta",
+     "g": "Misturar programas longos e curtos, profundos e leves para uma semana equilibrada.",
+     "p": [
+      "Planeia alguns programas leves para dias cheios e um mais profundo para o fim de semana.",
+      "Episódios curtos cabem em pequenos intervalos; os longos servem para viagens e noites calmas.",
+      "Uma ementa variada mantém a escuta fresca e evita que pareça uma obrigação."
+     ],
+     "q": "Como seria a tua semana perfeita de escuta?",
+     "c": "Escreve uma ementa de sete dias com um programa por dia e uma hora para cada."
+    },
+    "pt_BR": {
+     "t": "Montar um cardápio semanal de escuta",
+     "g": "Misturar programas longos e curtos, profundos e leves para uma semana equilibrada.",
+     "p": [
+      "Planeje alguns programas leves para dias cheios e um mais profundo para o fim de semana.",
+      "Episódios curtos cabem em pequenos intervalos; os longos servem para viagens e noites calmas.",
+      "Um cardápio variado mantém a escuta fresca e evita que vire obrigação."
+     ],
+     "q": "Como seria a sua semana perfeita de escuta?",
+     "c": "Escreva um cardápio de sete dias com um programa por dia e um horário para cada."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Episode length and pacing",
+     "g": "Understand why shows run ten minutes or two hours, and what suits you.",
+     "p": [
+      "Short episodes are focused and easy to fit in; long ones allow depth.",
+      "Pacing is the rhythm: quick banter, slow stories, pauses and changes.",
+      "The right length is the one that serves the topic and your day."
+     ],
+     "q": "How long is your ideal podcast episode?",
+     "c": "Compare a short and a long episode and note which pacing you prefer."
+    },
+    "de": {
+     "t": "Folgenlänge und Tempo",
+     "g": "Verstehen, warum Sendungen zehn Minuten oder zwei Stunden dauern, und was zu dir passt.",
+     "p": [
+      "Kurze Folgen sind fokussiert und leicht einzuplanen; lange erlauben Tiefe.",
+      "Tempo ist der Rhythmus: flotte Wortwechsel, ruhige Geschichten, Pausen und Wechsel.",
+      "Die richtige Länge dient dem Thema und deinem Tag."
+     ],
+     "q": "Wie lang ist deine ideale Podcast-Folge?",
+     "c": "Vergleiche eine kurze und eine lange Folge und notiere, welches Tempo dir liegt."
+    },
+    "es": {
+     "t": "Duración y ritmo de los episodios",
+     "g": "Entender por qué hay programas de diez minutos o de dos horas, y qué te conviene.",
+     "p": [
+      "Los episodios cortos son concretos y fáciles de encajar; los largos permiten profundidad.",
+      "El ritmo es la cadencia: bromas rápidas, relatos lentos, pausas y cambios.",
+      "La duración correcta es la que sirve al tema y a tu día."
+     ],
+     "q": "¿Cuánto dura tu episodio de pódcast ideal?",
+     "c": "Compara un episodio corto y uno largo y anota qué ritmo prefieres."
+    },
+    "fr": {
+     "t": "Durée et rythme des épisodes",
+     "g": "Comprendre pourquoi certaines émissions durent dix minutes et d'autres deux heures.",
+     "p": [
+      "Les épisodes courts sont ciblés et faciles à caser ; les longs permettent la profondeur.",
+      "Le rythme, c'est la cadence : répliques vives, récits lents, pauses et changements.",
+      "La bonne durée est celle qui sert le sujet et ta journée."
+     ],
+     "q": "Quelle est la durée de ton épisode de podcast idéal ?",
+     "c": "Compare un épisode court et un long et note le rythme que tu préfères."
+    },
+    "it": {
+     "t": "Durata e ritmo degli episodi",
+     "g": "Capire perché alcuni programmi durano dieci minuti e altri due ore.",
+     "p": [
+      "Gli episodi brevi sono mirati e facili da inserire; quelli lunghi permettono profondità.",
+      "Il ritmo è la cadenza: battute rapide, racconti lenti, pause e cambi.",
+      "La durata giusta è quella che serve all'argomento e alla tua giornata."
+     ],
+     "q": "Quanto dura il tuo episodio di podcast ideale?",
+     "c": "Confronta un episodio breve e uno lungo e annota quale ritmo preferisci."
+    },
+    "pt": {
+     "t": "Duração e ritmo dos episódios",
+     "g": "Perceber porque é que há programas de dez minutos e de duas horas.",
+     "p": [
+      "Episódios curtos são focados e fáceis de encaixar; os longos permitem profundidade.",
+      "O ritmo é a cadência: conversa rápida, relatos lentos, pausas e mudanças.",
+      "A duração certa é a que serve o tema e o teu dia."
+     ],
+     "q": "Quanto dura o teu episódio de podcast ideal?",
+     "c": "Compara um episódio curto e um longo e anota que ritmo preferes."
+    },
+    "pt_BR": {
+     "t": "Duração e ritmo dos episódios",
+     "g": "Entender por que há programas de dez minutos e de duas horas.",
+     "p": [
+      "Episódios curtos são focados e fáceis de encaixar; os longos permitem profundidade.",
+      "Ritmo é a cadência: papo rápido, relatos lentos, pausas e mudanças.",
+      "A duração certa é a que serve ao tema e ao seu dia."
+     ],
+     "q": "Quanto dura o seu episódio de podcast ideal?",
+     "c": "Compare um episódio curto e um longo e anote qual ritmo você prefere."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sharing episodes with friends",
+     "g": "Recommend an episode so it sparks a good conversation.",
+     "p": [
+      "Pick an episode that matches your friend's taste and time.",
+      "Say in one line why you think they will like it.",
+      "Ask afterwards what they thought; listening becomes a shared moment."
+     ],
+     "q": "Which episode would you share with a friend today?",
+     "c": "Send one friend an episode with a one-sentence reason and ask for feedback."
+    },
+    "de": {
+     "t": "Folgen mit Freunden teilen",
+     "g": "Eine Folge so empfehlen, dass ein gutes Gespräch entsteht.",
+     "p": [
+      "Wähle eine Folge, die zu Geschmack und Zeit deines Freundes passt.",
+      "Sag in einem Satz, warum sie ihm gefallen könnte.",
+      "Frag danach nach seiner Meinung; Hören wird zum gemeinsamen Moment."
+     ],
+     "q": "Welche Folge würdest du heute mit einem Freund teilen?",
+     "c": "Schicke einem Freund eine Folge mit einem Satz Begründung und bitte um Feedback."
+    },
+    "es": {
+     "t": "Compartir episodios con amigos",
+     "g": "Recomendar un episodio para que dé pie a una buena conversación.",
+     "p": [
+      "Elige un episodio que encaje con el gusto y el tiempo de tu amigo.",
+      "Di en una línea por qué crees que le gustará.",
+      "Pregunta después qué le pareció; escuchar se vuelve un momento compartido."
+     ],
+     "q": "¿Qué episodio compartirías hoy con un amigo?",
+     "c": "Envía a un amigo un episodio con una frase de motivo y pide su opinión."
+    },
+    "fr": {
+     "t": "Partager des épisodes avec des amis",
+     "g": "Recommander un épisode de façon à lancer une belle conversation.",
+     "p": [
+      "Choisis un épisode qui correspond aux goûts et au temps de ton ami.",
+      "Dis en une ligne pourquoi tu penses qu'il va l'aimer.",
+      "Demande ensuite son avis ; l'écoute devient un moment partagé."
+     ],
+     "q": "Quel épisode partagerais-tu aujourd'hui avec un ami ?",
+     "c": "Envoie un épisode à un ami avec une phrase de motif et demande son avis."
+    },
+    "it": {
+     "t": "Condividere episodi con gli amici",
+     "g": "Consigliare un episodio in modo da avviare una bella conversazione.",
+     "p": [
+      "Scegli un episodio adatto ai gusti e al tempo del tuo amico.",
+      "Di' in una riga perché pensi che gli piacerà.",
+      "Chiedi dopo cosa ne pensa; l'ascolto diventa un momento condiviso."
+     ],
+     "q": "Quale episodio condivideresti oggi con un amico?",
+     "c": "Manda a un amico un episodio con una frase di motivo e chiedi un parere."
+    },
+    "pt": {
+     "t": "Partilhar episódios com amigos",
+     "g": "Recomendar um episódio de modo a puxar uma boa conversa.",
+     "p": [
+      "Escolhe um episódio que combine com o gosto e o tempo do teu amigo.",
+      "Diz numa linha porque achas que ele vai gostar.",
+      "Pergunta depois o que achou; ouvir torna-se um momento partilhado."
+     ],
+     "q": "Que episódio partilharias hoje com um amigo?",
+     "c": "Envia a um amigo um episódio com uma frase de motivo e pede a opinião dele."
+    },
+    "pt_BR": {
+     "t": "Compartilhar episódios com amigos",
+     "g": "Recomendar um episódio de um jeito que puxe uma boa conversa.",
+     "p": [
+      "Escolha um episódio que combine com o gosto e o tempo do seu amigo.",
+      "Diga em uma linha por que acha que ele vai gostar.",
+      "Pergunte depois o que ele achou; ouvir vira um momento compartilhado."
+     ],
+     "q": "Que episódio você compartilharia hoje com um amigo?",
+     "c": "Mande a um amigo um episódio com uma frase de motivo e peça a opinião dele."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Podcast etiquette for listeners",
+     "g": "Help creators grow with kind ratings, reviews and feedback.",
+     "p": [
+      "A short, honest review helps others decide and encourages the makers.",
+      "Constructive feedback names what worked and what could be clearer.",
+      "Kindness matters: creators are real people who read what you write."
+     ],
+     "q": "What would you tell a creator whose show you enjoy?",
+     "c": "Write a kind two-sentence review or message for a show you like."
+    },
+    "de": {
+     "t": "Podcast-Etikette für Hörer",
+     "g": "Machern mit freundlichen Bewertungen, Rezensionen und Feedback helfen.",
+     "p": [
+      "Eine kurze, ehrliche Rezension hilft anderen bei der Wahl und ermutigt die Macher.",
+      "Konstruktives Feedback nennt, was gut war und was klarer sein könnte.",
+      "Freundlichkeit zählt: Macher sind echte Menschen, die lesen, was du schreibst."
+     ],
+     "q": "Was würdest du einem Macher sagen, dessen Sendung du magst?",
+     "c": "Schreibe eine freundliche Rezension oder Nachricht in zwei Sätzen für eine Sendung."
+    },
+    "es": {
+     "t": "Etiqueta del oyente de pódcast",
+     "g": "Ayudar a los creadores con valoraciones, reseñas y comentarios amables.",
+     "p": [
+      "Una reseña breve y sincera ayuda a otros a decidir y anima a los creadores.",
+      "Un comentario constructivo dice qué funcionó y qué podría ser más claro.",
+      "La amabilidad importa: los creadores son personas reales que leen lo que escribes."
+     ],
+     "q": "¿Qué le dirías a un creador cuyo programa disfrutas?",
+     "c": "Escribe una reseña o mensaje amable de dos frases para un programa que te guste."
+    },
+    "fr": {
+     "t": "Savoir-vivre de l'auditeur de podcasts",
+     "g": "Aider les créateurs grâce à des notes, avis et retours bienveillants.",
+     "p": [
+      "Un avis court et honnête aide les autres à choisir et encourage les créateurs.",
+      "Un retour constructif dit ce qui a marché et ce qui pourrait être plus clair.",
+      "La gentillesse compte : les créateurs sont de vraies personnes qui te lisent."
+     ],
+     "q": "Que dirais-tu à un créateur dont tu aimes l'émission ?",
+     "c": "Écris un avis ou message bienveillant de deux phrases pour une émission que tu aimes."
+    },
+    "it": {
+     "t": "Galateo dell'ascoltatore di podcast",
+     "g": "Aiutare chi crea con valutazioni, recensioni e commenti gentili.",
+     "p": [
+      "Una recensione breve e sincera aiuta gli altri a scegliere e incoraggia chi crea.",
+      "Un commento costruttivo dice cosa ha funzionato e cosa potrebbe essere più chiaro.",
+      "La gentilezza conta: chi crea è fatto di persone vere che leggono ciò che scrivi."
+     ],
+     "q": "Cosa diresti a chi crea un programma che ti piace?",
+     "c": "Scrivi una recensione o un messaggio gentile di due frasi per un programma che ami."
+    },
+    "pt": {
+     "t": "Etiqueta do ouvinte de podcasts",
+     "g": "Ajudar os criadores com avaliações, críticas e comentários simpáticos.",
+     "p": [
+      "Uma crítica curta e sincera ajuda os outros a decidir e anima os criadores.",
+      "Um comentário construtivo diz o que funcionou e o que podia ser mais claro.",
+      "A simpatia conta: os criadores são pessoas reais que leem o que escreves."
+     ],
+     "q": "O que dirias a um criador cujo programa apreciaste?",
+     "c": "Escreve uma crítica ou mensagem simpática de duas frases para um programa de que gostes."
+    },
+    "pt_BR": {
+     "t": "Etiqueta do ouvinte de podcasts",
+     "g": "Ajudar os criadores com avaliações, resenhas e comentários gentis.",
+     "p": [
+      "Uma resenha curta e sincera ajuda os outros a decidir e anima os criadores.",
+      "Um comentário construtivo diz o que funcionou e o que poderia ser mais claro.",
+      "Gentileza importa: criadores são pessoas reais que leem o que você escreve."
+     ],
+     "q": "O que você diria a um criador cujo programa você curte?",
+     "c": "Escreva uma resenha ou mensagem gentil de duas frases para um programa que você ama."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Podcast communities",
+     "g": "Find listener groups, live shows and spaces around favourite podcasts.",
+     "p": [
+      "Fans gather to talk about episodes, share theories and recommend more.",
+      "Some shows hold live events where listeners meet hosts and each other.",
+      "Joining a community can turn solitary listening into friendship."
+     ],
+     "q": "Would you rather chat about a show or just listen quietly?",
+     "c": "Find a place where fans of one of your shows talk and read one thread."
+    },
+    "de": {
+     "t": "Podcast-Communitys",
+     "g": "Hörergruppen, Live-Shows und Treffpunkte rund um Lieblingspodcasts finden.",
+     "p": [
+      "Fans treffen sich, um Folgen zu besprechen, Theorien zu teilen und mehr zu empfehlen.",
+      "Manche Sendungen halten Live-Events, bei denen sich Hörer und Moderierende treffen.",
+      "Eine Community kann einsames Hören zu Freundschaft machen."
+     ],
+     "q": "Sprichst du lieber über eine Sendung oder hörst du lieber still zu?",
+     "c": "Finde einen Ort, an dem Fans einer deiner Sendungen reden, und lies einen Beitrag."
+    },
+    "es": {
+     "t": "Comunidades de pódcast",
+     "g": "Encontrar grupos de oyentes, directos y espacios en torno a tus pódcast favoritos.",
+     "p": [
+      "Los fans se reúnen para comentar episodios, compartir teorías y recomendar más.",
+      "Algunos programas hacen eventos en vivo donde se encuentran oyentes y presentadores.",
+      "Unirse a una comunidad puede convertir la escucha solitaria en amistad."
+     ],
+     "q": "¿Prefieres charlar sobre un programa o solo escuchar en silencio?",
+     "c": "Encuentra un lugar donde hablen los fans de uno de tus programas y lee una conversación."
+    },
+    "fr": {
+     "t": "Les communautés de podcasts",
+     "g": "Trouver groupes d'auditeurs, émissions en direct et espaces autour de tes podcasts préférés.",
+     "p": [
+      "Les fans se retrouvent pour parler des épisodes, partager des théories et recommander d'autres émissions.",
+      "Certaines émissions organisent des événements où auditeurs et animateurs se rencontrent.",
+      "Rejoindre une communauté peut transformer l'écoute solitaire en amitié."
+     ],
+     "q": "Préfères-tu discuter d'une émission ou simplement écouter en silence ?",
+     "c": "Trouve un lieu où les fans d'une de tes émissions discutent et lis un fil."
+    },
+    "it": {
+     "t": "Le comunità dei podcast",
+     "g": "Trovare gruppi di ascoltatori, eventi dal vivo e spazi attorno ai podcast preferiti.",
+     "p": [
+      "I fan si ritrovano per parlare degli episodi, condividere teorie e consigliarne altri.",
+      "Alcuni programmi fanno eventi dal vivo dove ascoltatori e conduttori si incontrano.",
+      "Entrare in una comunità può trasformare l'ascolto solitario in amicizia."
+     ],
+     "q": "Preferisci chiacchierare di un programma o solo ascoltare in silenzio?",
+     "c": "Trova un posto dove i fan di un tuo programma parlano e leggi una discussione."
+    },
+    "pt": {
+     "t": "Comunidades de podcasts",
+     "g": "Encontrar grupos de ouvintes, diretos e espaços em torno dos podcasts favoritos.",
+     "p": [
+      "Os fãs reúnem-se para falar dos episódios, partilhar teorias e recomendar mais.",
+      "Alguns programas fazem eventos ao vivo onde ouvintes e apresentadores se encontram.",
+      "Juntar-te a uma comunidade pode transformar a escuta solitária em amizade."
+     ],
+     "q": "Preferes conversar sobre um programa ou só ouvir em silêncio?",
+     "c": "Encontra um sítio onde os fãs de um dos teus programas falem e lê uma conversa."
+    },
+    "pt_BR": {
+     "t": "Comunidades de podcasts",
+     "g": "Encontrar grupos de ouvintes, transmissões ao vivo e espaços em torno dos podcasts favoritos.",
+     "p": [
+      "Os fãs se reúnem para falar dos episódios, compartilhar teorias e recomendar mais.",
+      "Alguns programas fazem eventos ao vivo onde ouvintes e apresentadores se encontram.",
+      "Entrar numa comunidade pode transformar a escuta solitária em amizade."
+     ],
+     "q": "Você prefere bater papo sobre um programa ou só ouvir em silêncio?",
+     "c": "Ache um lugar onde fãs de um dos seus programas conversam e leia uma discussão."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hosts as companions",
+     "g": "Learn why familiar voices feel like friends and what makes a host likeable.",
+     "p": [
+      "Hearing the same voice often creates a warm, one-sided closeness.",
+      "Likeable hosts are curious, honest and comfortable being themselves.",
+      "Enjoy the company, and remember real friends are worth your time too."
+     ],
+     "q": "Which host's voice makes you feel at ease?",
+     "c": "Name a host you like and write down three traits that make them pleasant."
+    },
+    "de": {
+     "t": "Moderierende als Begleiter",
+     "g": "Verstehen, warum vertraute Stimmen wie Freunde wirken und was Moderation sympathisch macht.",
+     "p": [
+      "Dieselbe Stimme immer wieder zu hören schafft oft eine warme, einseitige Nähe.",
+      "Sympathische Moderierende sind neugierig, ehrlich und gern sie selbst.",
+      "Genieße die Gesellschaft, und denk daran, dass echte Freunde deine Zeit ebenfalls verdienen."
+     ],
+     "q": "Bei wessen Stimme fühlst du dich wohl?",
+     "c": "Nenne einen Moderator, den du magst, und schreibe drei angenehme Eigenschaften auf."
+    },
+    "es": {
+     "t": "Presentadores como compañía",
+     "g": "Entender por qué las voces conocidas parecen amigas y qué hace agradable a un presentador.",
+     "p": [
+      "Oír la misma voz a menudo crea una cercanía cálida, aunque sea de un solo lado.",
+      "Los presentadores agradables son curiosos, sinceros y cómodos siendo ellos mismos.",
+      "Disfruta de la compañía y recuerda que los amigos reales también merecen tu tiempo."
+     ],
+     "q": "¿La voz de qué presentador te hace sentir a gusto?",
+     "c": "Nombra a un presentador que te guste y anota tres rasgos que lo hacen agradable."
+    },
+    "fr": {
+     "t": "Les animateurs comme compagnons",
+     "g": "Comprendre pourquoi les voix familières ressemblent à des amis et ce qui rend un animateur sympathique.",
+     "p": [
+      "Entendre la même voix crée souvent une proximité chaleureuse, même à sens unique.",
+      "Les animateurs sympathiques sont curieux, sincères et à l'aise d'être eux-mêmes.",
+      "Profite de cette compagnie, et rappelle-toi que les vrais amis méritent aussi ton temps."
+     ],
+     "q": "La voix de quel animateur te met à l'aise ?",
+     "c": "Nomme un animateur que tu aimes et note trois traits qui le rendent agréable."
+    },
+    "it": {
+     "t": "I conduttori come compagni",
+     "g": "Capire perché le voci familiari sembrano amiche e cosa rende simpatico un conduttore.",
+     "p": [
+      "Sentire sempre la stessa voce crea spesso una vicinanza calda, anche se a senso unico.",
+      "I conduttori simpatici sono curiosi, sinceri e a loro agio nell'essere se stessi.",
+      "Goditi la compagnia e ricorda che anche gli amici veri meritano il tuo tempo."
+     ],
+     "q": "La voce di quale conduttore ti mette a tuo agio?",
+     "c": "Nomina un conduttore che ti piace e annota tre tratti che lo rendono piacevole."
+    },
+    "pt": {
+     "t": "Apresentadores como companhia",
+     "g": "Perceber porque é que vozes familiares parecem amigas e o que torna um apresentador simpático.",
+     "p": [
+      "Ouvir sempre a mesma voz cria muitas vezes uma proximidade calorosa, ainda que de um só lado.",
+      "Apresentadores simpáticos são curiosos, sinceros e à vontade a ser quem são.",
+      "Aproveita a companhia e lembra-te de que os amigos reais também merecem o teu tempo."
+     ],
+     "q": "A voz de que apresentador te deixa à vontade?",
+     "c": "Nomeia um apresentador de que gostes e anota três traços que o tornam agradável."
+    },
+    "pt_BR": {
+     "t": "Apresentadores como companhia",
+     "g": "Entender por que vozes familiares parecem amigas e o que torna um apresentador simpático.",
+     "p": [
+      "Ouvir sempre a mesma voz cria muitas vezes uma proximidade calorosa, ainda que de um lado só.",
+      "Apresentadores simpáticos são curiosos, sinceros e à vontade sendo quem são.",
+      "Aproveite a companhia e lembre que os amigos reais também merecem o seu tempo."
+     ],
+     "q": "A voz de qual apresentador deixa você à vontade?",
+     "c": "Cite um apresentador de que você gosta e anote três traços que o tornam agradável."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Video podcasts",
+     "g": "See what changes when podcasts add cameras.",
+     "p": [
+      "Video lets you see expressions, guests and any objects being discussed.",
+      "Many people still listen only to the audio while doing other things.",
+      "A good video show still works as sound alone when the host explains what is shown."
+     ],
+     "q": "Do you prefer to watch or only listen?",
+     "c": "Try the same episode once as video and once as audio and compare."
+    },
+    "de": {
+     "t": "Video-Podcasts",
+     "g": "Sehen, was sich ändert, wenn Podcasts Kameras dazunehmen.",
+     "p": [
+      "Video zeigt Mimik, Gäste und besprochene Gegenstände.",
+      "Viele hören trotzdem nur den Ton, während sie anderes tun.",
+      "Eine gute Videosendung funktioniert auch nur als Ton, wenn die Moderation Gezeigtes erklärt."
+     ],
+     "q": "Schaust du lieber zu oder hörst du nur zu?",
+     "c": "Probiere dieselbe Folge einmal als Video und einmal als Audio und vergleiche."
+    },
+    "es": {
+     "t": "Pódcast en vídeo",
+     "g": "Ver qué cambia cuando los pódcast añaden cámaras.",
+     "p": [
+      "El vídeo deja ver gestos, invitados y los objetos de los que se habla.",
+      "Mucha gente aun así escucha solo el audio mientras hace otras cosas.",
+      "Un buen programa en vídeo funciona también solo con sonido si el presentador explica lo que se ve."
+     ],
+     "q": "¿Prefieres ver o solo escuchar?",
+     "c": "Prueba el mismo episodio una vez en vídeo y otra en audio y compara."
+    },
+    "fr": {
+     "t": "Les podcasts vidéo",
+     "g": "Voir ce qui change quand les podcasts ajoutent des caméras.",
+     "p": [
+      "La vidéo montre les expressions, les invités et les objets dont on parle.",
+      "Beaucoup de gens n'écoutent que le son en faisant autre chose.",
+      "Une bonne émission vidéo fonctionne aussi en son seul si l'animateur décrit ce qu'on voit."
+     ],
+     "q": "Préfères-tu regarder ou seulement écouter ?",
+     "c": "Essaie le même épisode une fois en vidéo et une fois en audio et compare."
+    },
+    "it": {
+     "t": "Podcast video",
+     "g": "Vedere cosa cambia quando i podcast aggiungono le telecamere.",
+     "p": [
+      "Il video mostra espressioni, ospiti e gli oggetti di cui si parla.",
+      "Molti comunque ascoltano solo l'audio mentre fanno altro.",
+      "Un buon programma video funziona anche solo con il suono se il conduttore spiega ciò che si vede."
+     ],
+     "q": "Preferisci guardare o solo ascoltare?",
+     "c": "Prova lo stesso episodio una volta in video e una in audio e confronta."
+    },
+    "pt": {
+     "t": "Podcasts em vídeo",
+     "g": "Ver o que muda quando os podcasts acrescentam câmaras.",
+     "p": [
+      "O vídeo mostra expressões, convidados e os objetos de que se fala.",
+      "Muita gente continua a ouvir só o áudio enquanto faz outras coisas.",
+      "Um bom programa em vídeo funciona também só com som se o apresentador explicar o que se vê."
+     ],
+     "q": "Preferes ver ou só ouvir?",
+     "c": "Experimenta o mesmo episódio uma vez em vídeo e outra em áudio e compara."
+    },
+    "pt_BR": {
+     "t": "Podcasts em vídeo",
+     "g": "Ver o que muda quando os podcasts acrescentam câmeras.",
+     "p": [
+      "O vídeo mostra expressões, convidados e os objetos de que se fala.",
+      "Muita gente ainda ouve só o áudio enquanto faz outras coisas.",
+      "Um bom programa em vídeo funciona também só com som se o apresentador explicar o que se vê."
+     ],
+     "q": "Você prefere assistir ou só ouvir?",
+     "c": "Teste o mesmo episódio uma vez em vídeo e outra em áudio e compare."
+    }
+   }
+  }
+ ]
+}

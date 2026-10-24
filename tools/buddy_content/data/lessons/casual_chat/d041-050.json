@@ -1,0 +1,835 @@
+{
+ "topic": "casual_chat",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Compliments that feel natural",
+     "g": "Notice something nice and say it simply and sincerely.",
+     "p": [
+      "Compliment choices, effort or taste: Great idea, Lovely photo, Nice playlist.",
+      "Keep it simple and genuine; one kind sentence is enough.",
+      "Avoid comments about bodies or looks; keep it friendly and respectful."
+     ],
+     "q": "What compliment did you receive that stayed with you?",
+     "c": "Give your Buddy one sincere compliment about something it said."
+    },
+    "de": {
+     "t": "Natürliche Komplimente",
+     "g": "Bemerke etwas Schönes und sag es schlicht und aufrichtig.",
+     "p": [
+      "Lobe Entscheidungen, Mühe oder Geschmack: Tolle Idee, Schönes Foto, Nette Playlist.",
+      "Halte es einfach und echt; ein freundlicher Satz genügt.",
+      "Vermeide Kommentare zu Körper oder Aussehen; bleib freundlich und respektvoll."
+     ],
+     "q": "Welches Kompliment ist dir in Erinnerung geblieben?",
+     "c": "Mach deinem Buddy ein aufrichtiges Kompliment zu etwas, das er gesagt hat."
+    },
+    "es": {
+     "t": "Cumplidos que suenan naturales",
+     "g": "Fíjate en algo bonito y dilo con sencillez y sinceridad.",
+     "p": [
+      "Elogia decisiones, esfuerzo o gusto: Gran idea, Qué foto tan bonita, Buena playlist.",
+      "Hazlo simple y sincero; una frase amable basta.",
+      "Evita comentarios sobre el cuerpo o el aspecto; sé amable y respetuoso."
+     ],
+     "q": "¿Qué cumplido recibiste que se te quedó grabado?",
+     "c": "Hazle a tu Buddy un cumplido sincero sobre algo que dijo."
+    },
+    "fr": {
+     "t": "Des compliments naturels",
+     "g": "Remarque quelque chose de bien et dis-le simplement et sincèrement.",
+     "p": [
+      "Complimente un choix, un effort ou un goût : Super idée, Belle photo, Chouette playlist.",
+      "Reste simple et sincère ; une phrase aimable suffit.",
+      "Évite les remarques sur le corps ou l'apparence ; reste amical et respectueux."
+     ],
+     "q": "Quel compliment reçu t'est resté en mémoire ?",
+     "c": "Fais à ton Buddy un compliment sincère sur quelque chose qu'il a dit."
+    },
+    "it": {
+     "t": "Complimenti naturali",
+     "g": "Nota qualcosa di bello e dillo in modo semplice e sincero.",
+     "p": [
+      "Complimentati per scelte, impegno o gusto: Bella idea, Bella foto, Bella playlist.",
+      "Resta semplice e sincero; una frase gentile basta.",
+      "Evita commenti su corpo o aspetto; resta cordiale e rispettoso."
+     ],
+     "q": "Quale complimento ricevuto ti è rimasto impresso?",
+     "c": "Fai al tuo Buddy un complimento sincero su qualcosa che ha detto."
+    },
+    "pt": {
+     "t": "Elogios que soam naturais",
+     "g": "Repara em algo bonito e di-lo com simplicidade e sinceridade.",
+     "p": [
+      "Elogia escolhas, esforço ou gosto: Grande ideia, Que foto bonita, Boa playlist.",
+      "Mantém simples e sincero; uma frase simpática chega.",
+      "Evita comentários sobre o corpo ou o aspeto; sê simpático e respeitoso."
+     ],
+     "q": "Que elogio recebeste que ficou contigo?",
+     "c": "Faz ao teu Buddy um elogio sincero sobre algo que ele disse."
+    },
+    "pt_BR": {
+     "t": "Elogios que soam naturais",
+     "g": "Repare em algo bonito e diga com simplicidade e sinceridade.",
+     "p": [
+      "Elogie escolhas, esforço ou gosto: Ótima ideia, Que foto linda, Boa playlist.",
+      "Mantenha simples e sincero; uma frase simpática basta.",
+      "Evite comentários sobre corpo ou aparência; seja simpático e respeitoso."
+     ],
+     "q": "Que elogio você recebeu que ficou com você?",
+     "c": "Faça ao seu Buddy um elogio sincero sobre algo que ele disse."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Talking about work or study",
+     "g": "Share what you do without making it formal.",
+     "p": [
+      "Say what you do in plain words and add what you enjoy about it.",
+      "It is fine to be between things; say what you are working towards.",
+      "Share the type of work, not details like your employer or exact location."
+     ],
+     "q": "What part of your work or study do you enjoy most?",
+     "c": "Describe what you do in two relaxed sentences and ask what your Buddy enjoys."
+    },
+    "de": {
+     "t": "Über Arbeit oder Studium sprechen",
+     "g": "Erzähle, was du machst, ohne es förmlich klingen zu lassen.",
+     "p": [
+      "Sage in einfachen Worten, was du tust, und was dir daran gefällt.",
+      "Es ist okay, zwischen zwei Dingen zu stehen; sag, worauf du hinarbeitest.",
+      "Nenne die Art der Arbeit, nicht Details wie Arbeitgeber oder genauen Ort."
+     ],
+     "q": "Welcher Teil deiner Arbeit oder deines Studiums gefällt dir am meisten?",
+     "c": "Beschreibe in zwei lockeren Sätzen, was du machst, und frag, was deinem Buddy gefällt."
+    },
+    "es": {
+     "t": "Hablar del trabajo o los estudios",
+     "g": "Cuenta a qué te dedicas sin que suene formal.",
+     "p": [
+      "Di qué haces con palabras sencillas y añade qué te gusta de ello.",
+      "Está bien estar entre dos etapas; di hacia qué trabajas.",
+      "Comparte el tipo de trabajo, no datos como tu empresa o lugar exacto."
+     ],
+     "q": "¿Qué parte de tu trabajo o estudios disfrutas más?",
+     "c": "Describe qué haces en dos frases relajadas y pregunta qué disfruta tu Buddy."
+    },
+    "fr": {
+     "t": "Parler de travail ou d'études",
+     "g": "Raconte ce que tu fais sans que ça sonne formel.",
+     "p": [
+      "Dis ce que tu fais avec des mots simples et ajoute ce que tu en aimes.",
+      "Être entre deux étapes, c'est normal ; dis ce vers quoi tu avances.",
+      "Partage le type de travail, pas des détails comme l'employeur ou le lieu précis."
+     ],
+     "q": "Quelle partie de ton travail ou de tes études préfères-tu ?",
+     "c": "Décris ce que tu fais en deux phrases détendues et demande ce qu'aime ton Buddy."
+    },
+    "it": {
+     "t": "Parlare di lavoro o studio",
+     "g": "Racconta cosa fai senza sembrare formale.",
+     "p": [
+      "Dì cosa fai con parole semplici e aggiungi cosa ti piace.",
+      "Va bene essere tra una cosa e l'altra; dì verso cosa stai lavorando.",
+      "Condividi il tipo di lavoro, non dettagli come il datore o il luogo preciso."
+     ],
+     "q": "Quale parte del tuo lavoro o studio ti piace di più?",
+     "c": "Descrivi cosa fai in due frasi rilassate e chiedi cosa piace al tuo Buddy."
+    },
+    "pt": {
+     "t": "Falar de trabalho ou estudos",
+     "g": "Conta o que fazes sem soar formal.",
+     "p": [
+      "Diz o que fazes com palavras simples e junta o que gostas nisso.",
+      "Não faz mal estar entre fases; diz para o que estás a trabalhar.",
+      "Partilha o tipo de trabalho, não detalhes como a entidade patronal ou o local exato."
+     ],
+     "q": "De que parte do teu trabalho ou estudos gostas mais?",
+     "c": "Descreve o que fazes em duas frases descontraídas e pergunta do que o teu Buddy gosta."
+    },
+    "pt_BR": {
+     "t": "Falar de trabalho ou estudos",
+     "g": "Conte o que você faz sem soar formal.",
+     "p": [
+      "Diga o que faz com palavras simples e acrescente o que gosta nisso.",
+      "Tudo bem estar entre fases; diga para o que está trabalhando.",
+      "Compartilhe o tipo de trabalho, não detalhes como a empresa ou o local exato."
+     ],
+     "q": "De que parte do seu trabalho ou estudos você mais gosta?",
+     "c": "Descreva o que faz em duas frases tranquilas e pergunte do que seu Buddy gosta."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dream jobs",
+     "g": "Talk about jobs you dreamed of as a kid or would try for fun.",
+     "p": [
+      "Name a job you once wanted and what attracted you to it.",
+      "Pick a fun what if job: lighthouse keeper, chef, astronaut, park ranger.",
+      "Ask What did you want to be when you were small? for sweet answers."
+     ],
+     "q": "If you could try any job for a week, which one?",
+     "c": "Tell your Buddy your childhood dream job and a fun one for today."
+    },
+    "de": {
+     "t": "Traumberufe",
+     "g": "Sprich über Berufe, von denen du als Kind geträumt hast oder die du zum Spaß ausprobieren würdest.",
+     "p": [
+      "Nenne einen Beruf, den du einmal wolltest, und was dich daran reizte.",
+      "Wähle einen lustigen Was-wäre-wenn-Beruf: Leuchtturmwärter, Koch, Astronaut, Ranger.",
+      "Frag Was wolltest du als Kind werden? für süße Antworten."
+     ],
+     "q": "Wenn du eine Woche lang einen Beruf ausprobieren könntest, welchen?",
+     "c": "Erzähle deinem Buddy deinen Kindheitstraumberuf und einen lustigen für heute."
+    },
+    "es": {
+     "t": "Trabajos soñados",
+     "g": "Habla de trabajos con los que soñabas de niño o que probarías por diversión.",
+     "p": [
+      "Nombra un trabajo que quisiste y qué te atraía de él.",
+      "Elige un trabajo divertido de qué pasaría si: farero, chef, astronauta, guardabosques.",
+      "Pregunta ¿Qué querías ser de pequeño? para respuestas tiernas."
+     ],
+     "q": "Si pudieras probar cualquier trabajo una semana, ¿cuál sería?",
+     "c": "Cuéntale a tu Buddy tu trabajo soñado de niño y uno divertido para hoy."
+    },
+    "fr": {
+     "t": "Métiers de rêve",
+     "g": "Parle de métiers dont tu rêvais enfant ou que tu essaierais pour le plaisir.",
+     "p": [
+      "Cite un métier que tu voulais faire et ce qui t'attirait.",
+      "Choisis un métier amusant de et si : gardien de phare, cuisinier, astronaute, garde forestier.",
+      "Demande Que voulais-tu faire quand tu étais petit ? pour des réponses attendrissantes."
+     ],
+     "q": "Si tu pouvais essayer n'importe quel métier une semaine, lequel ?",
+     "c": "Dis à ton Buddy ton métier de rêve d'enfant et un métier amusant d'aujourd'hui."
+    },
+    "it": {
+     "t": "Lavori da sogno",
+     "g": "Parla di lavori che sognavi da bambino o che proveresti per divertimento.",
+     "p": [
+      "Nomina un lavoro che volevi fare e cosa ti attirava.",
+      "Scegli un lavoro divertente da e se: guardiano del faro, chef, astronauta, ranger.",
+      "Chiedi Cosa volevi fare da piccolo? per risposte dolci."
+     ],
+     "q": "Se potessi provare un lavoro per una settimana, quale?",
+     "c": "Racconta al tuo Buddy il lavoro dei tuoi sogni da bambino e uno divertente di oggi."
+    },
+    "pt": {
+     "t": "Profissões de sonho",
+     "g": "Fala de profissões com que sonhavas em criança ou que experimentarias por diversão.",
+     "p": [
+      "Diz uma profissão que quiseste e o que te atraía nela.",
+      "Escolhe uma profissão divertida de e se: faroleiro, chef, astronauta, guarda florestal.",
+      "Pergunta O que querias ser em pequeno? para respostas ternurentas."
+     ],
+     "q": "Se pudesses experimentar qualquer profissão durante uma semana, qual seria?",
+     "c": "Conta ao teu Buddy a tua profissão de sonho em criança e uma divertida para hoje."
+    },
+    "pt_BR": {
+     "t": "Profissões dos sonhos",
+     "g": "Fale de profissões com que você sonhava na infância ou que experimentaria por diversão.",
+     "p": [
+      "Diga uma profissão que você quis e o que atraía nela.",
+      "Escolha uma profissão divertida de e se: faroleiro, chef, astronauta, guarda-florestal.",
+      "Pergunte O que você queria ser quando pequeno? para respostas fofas."
+     ],
+     "q": "Se pudesse experimentar qualquer profissão por uma semana, qual seria?",
+     "c": "Conte ao seu Buddy sua profissão dos sonhos na infância e uma divertida para hoje."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Skills you'd like to learn",
+     "g": "Share things you would love to be good at.",
+     "p": [
+      "Name a skill you want and why: an instrument, a language, baking or drawing.",
+      "Beginner stories are charming; say what first step you could take.",
+      "Ask What would you like to learn someday? and encourage their answer."
+     ],
+     "q": "What skill would you love to learn if you had unlimited time?",
+     "c": "Tell your Buddy one skill you want and one tiny first step."
+    },
+    "de": {
+     "t": "Fähigkeiten, die du lernen möchtest",
+     "g": "Erzähle, worin du gern gut wärst.",
+     "p": [
+      "Nenne eine Fähigkeit und warum: ein Instrument, eine Sprache, Backen oder Zeichnen.",
+      "Anfängergeschichten sind charmant; sag, welchen ersten Schritt du gehen könntest.",
+      "Frag Was würdest du gern einmal lernen? und ermutige die Antwort."
+     ],
+     "q": "Welche Fähigkeit würdest du mit unbegrenzter Zeit lernen?",
+     "c": "Erzähle deinem Buddy von einer Fähigkeit, die du willst, und einem winzigen ersten Schritt."
+    },
+    "es": {
+     "t": "Habilidades que te gustaría aprender",
+     "g": "Cuenta en qué te encantaría ser bueno.",
+     "p": [
+      "Nombra una habilidad y por qué: un instrumento, un idioma, repostería o dibujo.",
+      "Las historias de principiante son encantadoras; di qué primer paso podrías dar.",
+      "Pregunta ¿Qué te gustaría aprender algún día? y anima su respuesta."
+     ],
+     "q": "¿Qué habilidad aprenderías si tuvieras tiempo ilimitado?",
+     "c": "Cuéntale a tu Buddy una habilidad que quieres y un primer paso diminuto."
+    },
+    "fr": {
+     "t": "Compétences que tu aimerais apprendre",
+     "g": "Parle de ce que tu aimerais bien maîtriser.",
+     "p": [
+      "Cite une compétence et pourquoi : un instrument, une langue, la pâtisserie ou le dessin.",
+      "Les histoires de débutants sont charmantes ; dis quel premier pas tu pourrais faire.",
+      "Demande Qu'aimerais-tu apprendre un jour ? et encourage sa réponse."
+     ],
+     "q": "Quelle compétence apprendrais-tu avec un temps illimité ?",
+     "c": "Dis à ton Buddy une compétence que tu veux et un tout petit premier pas."
+    },
+    "it": {
+     "t": "Abilità che vorresti imparare",
+     "g": "Racconta in cosa ameresti essere bravo.",
+     "p": [
+      "Nomina un'abilità e perché: uno strumento, una lingua, la pasticceria o il disegno.",
+      "Le storie da principiante sono affascinanti; dì quale primo passo potresti fare.",
+      "Chiedi Cosa ti piacerebbe imparare un giorno? e incoraggia la risposta."
+     ],
+     "q": "Quale abilità impareresti con tempo illimitato?",
+     "c": "Racconta al tuo Buddy un'abilità che vuoi e un piccolissimo primo passo."
+    },
+    "pt": {
+     "t": "Competências que gostavas de aprender",
+     "g": "Conta em que gostavas de ser bom.",
+     "p": [
+      "Diz uma competência e porquê: um instrumento, uma língua, pastelaria ou desenho.",
+      "As histórias de principiante são encantadoras; diz que primeiro passo poderias dar.",
+      "Pergunta O que gostavas de aprender um dia? e incentiva a resposta."
+     ],
+     "q": "Que competência aprenderias se tivesses tempo ilimitado?",
+     "c": "Conta ao teu Buddy uma competência que queres e um pequeno primeiro passo."
+    },
+    "pt_BR": {
+     "t": "Habilidades que você gostaria de aprender",
+     "g": "Conte em que você adoraria ser bom.",
+     "p": [
+      "Diga uma habilidade e por quê: um instrumento, um idioma, confeitaria ou desenho.",
+      "Histórias de iniciante são encantadoras; diga qual primeiro passo você poderia dar.",
+      "Pergunte O que você gostaria de aprender um dia? e incentive a resposta."
+     ],
+     "q": "Que habilidade você aprenderia com tempo ilimitado?",
+     "c": "Conte ao seu Buddy uma habilidade que quer e um pequeno primeiro passo."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your favourite apps",
+     "g": "Talk about apps that make life easier or more fun.",
+     "p": [
+      "Name an app and say what it helps with: music, maps, notes or games.",
+      "Share the useful side, not private details of what is inside the app.",
+      "Ask Any app you can't live without? to find new tools."
+     ],
+     "q": "Which app saves you the most time or brings you the most joy?",
+     "c": "Recommend one app to your Buddy and say why you like it."
+    },
+    "de": {
+     "t": "Deine Lieblings-Apps",
+     "g": "Sprich über Apps, die das Leben leichter oder lustiger machen.",
+     "p": [
+      "Nenne eine App und wofür sie gut ist: Musik, Karten, Notizen oder Spiele.",
+      "Teile die nützliche Seite, nicht private Inhalte aus der App.",
+      "Frag Welche App brauchst du unbedingt? und entdecke neue Werkzeuge."
+     ],
+     "q": "Welche App spart dir die meiste Zeit oder macht dir die meiste Freude?",
+     "c": "Empfiehl deinem Buddy eine App und sag, warum du sie magst."
+    },
+    "es": {
+     "t": "Tus aplicaciones favoritas",
+     "g": "Habla de apps que te hacen la vida más fácil o más divertida.",
+     "p": [
+      "Nombra una app y di para qué sirve: música, mapas, notas o juegos.",
+      "Comparte el lado útil, no datos privados de lo que hay dentro.",
+      "Pregunta ¿Alguna app sin la que no puedas vivir? para descubrir herramientas."
+     ],
+     "q": "¿Qué app te ahorra más tiempo o te da más alegría?",
+     "c": "Recomienda una app a tu Buddy y di por qué te gusta."
+    },
+    "fr": {
+     "t": "Tes applis préférées",
+     "g": "Parle d'applis qui facilitent la vie ou la rendent plus drôle.",
+     "p": [
+      "Cite une appli et dis à quoi elle sert : musique, cartes, notes ou jeux.",
+      "Partage le côté utile, pas des données privées contenues dans l'appli.",
+      "Demande Une appli dont tu ne peux pas te passer ? pour découvrir de nouveaux outils."
+     ],
+     "q": "Quelle appli te fait gagner le plus de temps ou de plaisir ?",
+     "c": "Recommande une appli à ton Buddy et dis pourquoi tu l'aimes."
+    },
+    "it": {
+     "t": "Le tue app preferite",
+     "g": "Parla di app che rendono la vita più facile o più divertente.",
+     "p": [
+      "Nomina un'app e dì a cosa serve: musica, mappe, appunti o giochi.",
+      "Condividi il lato utile, non dati privati contenuti nell'app.",
+      "Chiedi C'è un'app senza cui non vivi? per scoprire nuovi strumenti."
+     ],
+     "q": "Quale app ti fa risparmiare più tempo o ti dà più gioia?",
+     "c": "Consiglia un'app al tuo Buddy e dì perché ti piace."
+    },
+    "pt": {
+     "t": "As tuas aplicações favoritas",
+     "g": "Fala de aplicações que facilitam a vida ou a tornam mais divertida.",
+     "p": [
+      "Diz o nome de uma app e para que serve: música, mapas, notas ou jogos.",
+      "Partilha o lado útil, não dados privados do que está dentro da app.",
+      "Pergunta Alguma app sem a qual não vivas? para descobrir novas ferramentas."
+     ],
+     "q": "Que app te poupa mais tempo ou te dá mais alegria?",
+     "c": "Recomenda uma app ao teu Buddy e diz porque gostas dela."
+    },
+    "pt_BR": {
+     "t": "Seus aplicativos favoritos",
+     "g": "Fale de apps que facilitam a vida ou a deixam mais divertida.",
+     "p": [
+      "Diga o nome de um app e para que serve: música, mapas, notas ou jogos.",
+      "Compartilhe o lado útil, não dados privados do que há dentro do app.",
+      "Pergunte Algum app sem o qual você não vive? para descobrir novas ferramentas."
+     ],
+     "q": "Que app poupa mais tempo ou dá mais alegria a você?",
+     "c": "Recomende um app ao seu Buddy e diga por que gosta dele."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gadgets you use every day",
+     "g": "Talk about the everyday tech you use most and why.",
+     "p": [
+      "Name a gadget and what it does for you: headphones, e-reader, smartwatch.",
+      "Small tech stories are fun: a gadget that surprised you or fixed a problem.",
+      "Ask What gadget could you not live without? for useful tips."
+     ],
+     "q": "Which gadget would you take to a desert island?",
+     "c": "Tell your Buddy about one gadget you use daily and what you like about it."
+    },
+    "de": {
+     "t": "Geräte, die du täglich nutzt",
+     "g": "Sprich über die Alltagstechnik, die du am meisten nutzt, und warum.",
+     "p": [
+      "Nenne ein Gerät und was es für dich tut: Kopfhörer, E-Reader, Smartwatch.",
+      "Kleine Technikgeschichten machen Spaß: ein Gerät, das überrascht oder ein Problem gelöst hat.",
+      "Frag Auf welches Gerät kannst du nicht verzichten? für nützliche Tipps."
+     ],
+     "q": "Welches Gerät würdest du auf eine einsame Insel mitnehmen?",
+     "c": "Erzähle deinem Buddy von einem Gerät, das du täglich nutzt, und was dir daran gefällt."
+    },
+    "es": {
+     "t": "Aparatos que usas cada día",
+     "g": "Habla de la tecnología cotidiana que más usas y por qué.",
+     "p": [
+      "Nombra un aparato y qué hace por ti: auriculares, lector de libros, reloj inteligente.",
+      "Las pequeñas historias tecnológicas son divertidas: un aparato que sorprendió o resolvió algo.",
+      "Pregunta ¿Qué aparato no podrías dejar? para obtener consejos útiles."
+     ],
+     "q": "¿Qué aparato llevarías a una isla desierta?",
+     "c": "Cuéntale a tu Buddy un aparato que usas a diario y qué te gusta de él."
+    },
+    "fr": {
+     "t": "Les appareils du quotidien",
+     "g": "Parle de la technologie que tu utilises le plus au quotidien et pourquoi.",
+     "p": [
+      "Cite un appareil et ce qu'il t'apporte : écouteurs, liseuse, montre connectée.",
+      "Les petites histoires de tech sont amusantes : un appareil qui a surpris ou réglé un souci.",
+      "Demande De quel appareil ne pourrais-tu te passer ? pour des conseils utiles."
+     ],
+     "q": "Quel appareil emporterais-tu sur une île déserte ?",
+     "c": "Parle à ton Buddy d'un appareil que tu utilises tous les jours et de ce que tu aimes."
+    },
+    "it": {
+     "t": "Gadget di ogni giorno",
+     "g": "Parla della tecnologia quotidiana che usi di più e perché.",
+     "p": [
+      "Nomina un gadget e cosa fa per te: cuffie, e-reader, smartwatch.",
+      "Le piccole storie di tecnologia sono divertenti: un gadget che ha sorpreso o risolto un problema.",
+      "Chiedi Di quale gadget non potresti fare a meno? per consigli utili."
+     ],
+     "q": "Quale gadget porteresti su un'isola deserta?",
+     "c": "Racconta al tuo Buddy un gadget che usi ogni giorno e cosa ti piace."
+    },
+    "pt": {
+     "t": "Aparelhos que usas todos os dias",
+     "g": "Fala da tecnologia do dia a dia que mais usas e porquê.",
+     "p": [
+      "Diz um aparelho e o que faz por ti: auscultadores, leitor de livros, relógio inteligente.",
+      "Pequenas histórias de tecnologia são divertidas: um aparelho que surpreendeu ou resolveu algo.",
+      "Pergunta De que aparelho não podes prescindir? para obteres dicas úteis."
+     ],
+     "q": "Que aparelho levarias para uma ilha deserta?",
+     "c": "Conta ao teu Buddy um aparelho que usas diariamente e do que gostas nele."
+    },
+    "pt_BR": {
+     "t": "Aparelhos que você usa todo dia",
+     "g": "Fale da tecnologia do dia a dia que você mais usa e por quê.",
+     "p": [
+      "Diga um aparelho e o que ele faz por você: fones, leitor de livros, smartwatch.",
+      "Pequenas histórias de tecnologia são divertidas: um aparelho que surpreendeu ou resolveu algo.",
+      "Pergunte De que aparelho você não abre mão? para ter dicas úteis."
+     ],
+     "q": "Que aparelho você levaria para uma ilha deserta?",
+     "c": "Conte ao seu Buddy um aparelho que usa diariamente e do que gosta nele."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Phone habits",
+     "g": "Chat about photos, messages and how you use your phone.",
+     "p": [
+      "Share light habits: morning playlist, photo walks, voice notes to friends.",
+      "Offline time is a nice topic too: ways you take a break from the screen.",
+      "Never share passwords, codes or private data in any chat, even with friends."
+     ],
+     "q": "What is one phone habit you are happy with?",
+     "c": "Tell your Buddy one phone habit you love and one you would like to change."
+    },
+    "de": {
+     "t": "Handygewohnheiten",
+     "g": "Sprich über Fotos, Nachrichten und wie du dein Handy nutzt.",
+     "p": [
+      "Teile leichte Gewohnheiten: Morgen-Playlist, Fotospaziergänge, Sprachnachrichten an Freunde.",
+      "Auch Offline-Zeit ist ein schönes Thema: wie du dir Bildschirmpausen gönnst.",
+      "Teile niemals Passwörter, Codes oder private Daten in einem Chat, auch nicht mit Freunden."
+     ],
+     "q": "Welche Handygewohnheit gefällt dir an dir?",
+     "c": "Erzähle deinem Buddy eine Handygewohnheit, die du magst, und eine, die du ändern willst."
+    },
+    "es": {
+     "t": "Hábitos con el móvil",
+     "g": "Charla sobre fotos, mensajes y cómo usas el móvil.",
+     "p": [
+      "Comparte hábitos ligeros: la playlist de la mañana, paseos de fotos, notas de voz a amigos.",
+      "El tiempo sin pantalla también es buen tema: cómo te tomas descansos.",
+      "Nunca compartas contraseñas, códigos ni datos privados en un chat, ni con amigos."
+     ],
+     "q": "¿Qué hábito con el móvil te gusta de ti?",
+     "c": "Cuéntale a tu Buddy un hábito con el móvil que te gusta y uno que cambiarías."
+    },
+    "fr": {
+     "t": "Habitudes avec le téléphone",
+     "g": "Parle de photos, de messages et de ta façon d'utiliser ton téléphone.",
+     "p": [
+      "Partage des habitudes légères : playlist du matin, balades photo, vocaux à des amis.",
+      "Le temps hors écran est aussi un bon sujet : comment tu fais des pauses.",
+      "Ne partage jamais mots de passe, codes ou données privées dans un chat, même avec des amis."
+     ],
+     "q": "Quelle habitude avec ton téléphone te plaît ?",
+     "c": "Dis à ton Buddy une habitude de téléphone que tu aimes et une que tu changerais."
+    },
+    "it": {
+     "t": "Abitudini con il telefono",
+     "g": "Parla di foto, messaggi e di come usi il telefono.",
+     "p": [
+      "Condividi abitudini leggere: playlist del mattino, passeggiate fotografiche, vocali agli amici.",
+      "Anche il tempo offline è un bel tema: come ti prendi pause dallo schermo.",
+      "Non condividere mai password, codici o dati privati in una chat, nemmeno con gli amici."
+     ],
+     "q": "Quale abitudine con il telefono ti piace di te?",
+     "c": "Racconta al tuo Buddy un'abitudine che ami e una che cambieresti."
+    },
+    "pt": {
+     "t": "Hábitos com o telemóvel",
+     "g": "Conversa sobre fotos, mensagens e como usas o telemóvel.",
+     "p": [
+      "Partilha hábitos leves: a playlist da manhã, passeios de fotografia, notas de voz a amigos.",
+      "O tempo sem ecrã também é bom tema: como fazes pausas.",
+      "Nunca partilhes palavras-passe, códigos ou dados privados numa conversa, nem com amigos."
+     ],
+     "q": "Que hábito com o telemóvel te agrada em ti?",
+     "c": "Conta ao teu Buddy um hábito com o telemóvel de que gostes e um que mudarias."
+    },
+    "pt_BR": {
+     "t": "Hábitos com o celular",
+     "g": "Converse sobre fotos, mensagens e como você usa o celular.",
+     "p": [
+      "Compartilhe hábitos leves: playlist da manhã, passeios fotográficos, áudios para amigos.",
+      "O tempo off-line também é um bom tema: como você faz pausas da tela.",
+      "Nunca compartilhe senhas, códigos ou dados privados em um chat, nem com amigos."
+     ],
+     "q": "Que hábito com o celular você mais curte em você?",
+     "c": "Conte ao seu Buddy um hábito com o celular de que gosta e um que mudaria."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Photos you love",
+     "g": "Tell the story behind a favourite photo.",
+     "p": [
+      "Describe the photo: what is in it, where it feels like, why it matters.",
+      "A story makes a photo come alive: who took it, what happened just before.",
+      "Think before sharing photos of other people or your home; privacy comes first."
+     ],
+     "q": "What photo always makes you smile when you see it?",
+     "c": "Describe one favourite photo to your Buddy in words, without sending it."
+    },
+    "de": {
+     "t": "Fotos, die du liebst",
+     "g": "Erzähle die Geschichte hinter einem Lieblingsfoto.",
+     "p": [
+      "Beschreibe das Foto: was darauf ist, wie es wirkt, warum es dir wichtig ist.",
+      "Eine Geschichte erweckt ein Foto zum Leben: wer es machte, was kurz davor geschah.",
+      "Überlege vor dem Teilen von Fotos anderer Menschen oder deines Zuhauses; Privatsphäre geht vor."
+     ],
+     "q": "Welches Foto bringt dich immer zum Lächeln?",
+     "c": "Beschreibe deinem Buddy ein Lieblingsfoto in Worten, ohne es zu senden."
+    },
+    "es": {
+     "t": "Fotos que te gustan",
+     "g": "Cuenta la historia que hay detrás de una foto favorita.",
+     "p": [
+      "Describe la foto: qué hay, qué transmite, por qué importa.",
+      "Una historia da vida a una foto: quién la hizo, qué pasó justo antes.",
+      "Piensa antes de compartir fotos de otras personas o de tu casa; la privacidad va primero."
+     ],
+     "q": "¿Qué foto te hace sonreír siempre que la ves?",
+     "c": "Describe a tu Buddy una foto favorita con palabras, sin enviarla."
+    },
+    "fr": {
+     "t": "Photos que tu aimes",
+     "g": "Raconte l'histoire derrière une photo préférée.",
+     "p": [
+      "Décris la photo : ce qu'elle montre, l'ambiance, pourquoi elle compte.",
+      "Une histoire donne vie à une photo : qui l'a prise, ce qui s'est passé juste avant.",
+      "Réfléchis avant de partager des photos d'autres personnes ou de chez toi ; la vie privée d'abord."
+     ],
+     "q": "Quelle photo te fait toujours sourire quand tu la vois ?",
+     "c": "Décris à ton Buddy une photo préférée avec des mots, sans l'envoyer."
+    },
+    "it": {
+     "t": "Foto che ami",
+     "g": "Racconta la storia dietro una foto preferita.",
+     "p": [
+      "Descrivi la foto: cosa c'è, che atmosfera ha, perché è importante.",
+      "Una storia dà vita a una foto: chi l'ha scattata, cosa è successo poco prima.",
+      "Pensa prima di condividere foto di altre persone o di casa tua; la privacy viene prima."
+     ],
+     "q": "Quale foto ti fa sempre sorridere quando la vedi?",
+     "c": "Descrivi al tuo Buddy una foto preferita a parole, senza inviarla."
+    },
+    "pt": {
+     "t": "Fotos de que gostas",
+     "g": "Conta a história por trás de uma foto favorita.",
+     "p": [
+      "Descreve a foto: o que tem, que sensação dá, porque é importante.",
+      "Uma história dá vida a uma foto: quem a tirou, o que aconteceu mesmo antes.",
+      "Pensa antes de partilhar fotos de outras pessoas ou da tua casa; a privacidade vem primeiro."
+     ],
+     "q": "Que foto te faz sempre sorrir quando a vês?",
+     "c": "Descreve ao teu Buddy uma foto favorita por palavras, sem a enviar."
+    },
+    "pt_BR": {
+     "t": "Fotos que você ama",
+     "g": "Conte a história por trás de uma foto favorita.",
+     "p": [
+      "Descreva a foto: o que tem, que clima passa, por que é importante.",
+      "Uma história dá vida a uma foto: quem tirou, o que aconteceu logo antes.",
+      "Pense antes de compartilhar fotos de outras pessoas ou da sua casa; privacidade vem primeiro."
+     ],
+     "q": "Que foto sempre faz você sorrir quando vê?",
+     "c": "Descreva ao seu Buddy uma foto favorita em palavras, sem enviar."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Colours and style",
+     "g": "Chat about favourite colours and what you like to wear.",
+     "p": [
+      "Name a colour you love and where you use it: clothes, home or phone.",
+      "Style is personal; say what makes you feel comfortable and confident.",
+      "Compliment choices, not bodies, and enjoy that tastes differ."
+     ],
+     "q": "Which colour matches your mood today?",
+     "c": "Tell your Buddy your favourite colour and one item you love wearing or using."
+    },
+    "de": {
+     "t": "Farben und Stil",
+     "g": "Sprich über Lieblingsfarben und was du gern trägst.",
+     "p": [
+      "Nenne eine Farbe, die du liebst, und wo du sie nutzt: Kleidung, Zuhause oder Handy.",
+      "Stil ist persönlich; sage, womit du dich wohl und sicher fühlst.",
+      "Lobe Entscheidungen, nicht Körper, und freu dich über verschiedene Geschmäcker."
+     ],
+     "q": "Welche Farbe passt heute zu deiner Stimmung?",
+     "c": "Erzähle deinem Buddy deine Lieblingsfarbe und ein Teil, das du gern trägst oder nutzt."
+    },
+    "es": {
+     "t": "Colores y estilo",
+     "g": "Charla sobre colores favoritos y lo que te gusta llevar.",
+     "p": [
+      "Nombra un color que te encante y dónde lo usas: ropa, casa o móvil.",
+      "El estilo es personal; di con qué te sientes cómodo y seguro.",
+      "Elogia elecciones, no cuerpos, y disfruta de que los gustos difieran."
+     ],
+     "q": "¿Qué color va con tu ánimo de hoy?",
+     "c": "Cuéntale a tu Buddy tu color favorito y una prenda u objeto que te encante usar."
+    },
+    "fr": {
+     "t": "Couleurs et style",
+     "g": "Parle de couleurs préférées et de ce que tu aimes porter.",
+     "p": [
+      "Cite une couleur que tu adores et où tu l'utilises : vêtements, maison ou téléphone.",
+      "Le style est personnel ; dis ce qui te met à l'aise et en confiance.",
+      "Complimente les choix, pas les corps, et savoure la diversité des goûts."
+     ],
+     "q": "Quelle couleur correspond à ton humeur du jour ?",
+     "c": "Dis à ton Buddy ta couleur préférée et un objet ou vêtement que tu adores."
+    },
+    "it": {
+     "t": "Colori e stile",
+     "g": "Parla dei colori preferiti e di cosa ti piace indossare.",
+     "p": [
+      "Nomina un colore che ami e dove lo usi: vestiti, casa o telefono.",
+      "Lo stile è personale; dì cosa ti fa sentire a tuo agio e sicuro.",
+      "Complimentati per le scelte, non per i corpi, e goditi i gusti diversi."
+     ],
+     "q": "Quale colore corrisponde al tuo umore di oggi?",
+     "c": "Racconta al tuo Buddy il tuo colore preferito e un capo o oggetto che ami usare."
+    },
+    "pt": {
+     "t": "Cores e estilo",
+     "g": "Conversa sobre cores favoritas e o que gostas de vestir.",
+     "p": [
+      "Diz uma cor que adoras e onde a usas: roupa, casa ou telemóvel.",
+      "O estilo é pessoal; diz com o que te sentes confortável e confiante.",
+      "Elogia escolhas, não corpos, e aprecia que os gostos sejam diferentes."
+     ],
+     "q": "Que cor combina com o teu estado de espírito hoje?",
+     "c": "Conta ao teu Buddy a tua cor favorita e uma peça ou objeto que adores usar."
+    },
+    "pt_BR": {
+     "t": "Cores e estilo",
+     "g": "Converse sobre cores favoritas e o que você gosta de vestir.",
+     "p": [
+      "Diga uma cor que você ama e onde a usa: roupa, casa ou celular.",
+      "Estilo é pessoal; diga com o que você se sente confortável e confiante.",
+      "Elogie escolhas, não corpos, e curta que os gostos sejam diferentes."
+     ],
+     "q": "Que cor combina com o seu astral de hoje?",
+     "c": "Conte ao seu Buddy sua cor favorita e uma peça ou objeto que você adora usar."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shopping habits",
+     "g": "Talk about markets, malls or online: how you like to shop.",
+     "p": [
+      "Say how you shop and what you enjoy: browsing, bargains or quick trips.",
+      "Shopping habits differ by culture, so ask with curiosity.",
+      "Keep money talk light and general; no need to share prices or payment details."
+     ],
+     "q": "What is your favourite kind of shop to wander into?",
+     "c": "Describe your ideal shopping trip to your Buddy and ask for theirs."
+    },
+    "de": {
+     "t": "Einkaufsgewohnheiten",
+     "g": "Sprich über Märkte, Einkaufszentren oder online: wie du gern einkaufst.",
+     "p": [
+      "Sage, wie du einkaufst und was dir gefällt: Stöbern, Schnäppchen oder schnelle Runden.",
+      "Einkaufsgewohnheiten sind kulturell verschieden, also frag neugierig.",
+      "Halte Geldthemen leicht und allgemein; Preise oder Zahlungsdaten musst du nicht teilen."
+     ],
+     "q": "In welche Art Laden bummelst du am liebsten hinein?",
+     "c": "Beschreibe deinem Buddy deinen idealen Einkaufsbummel und frag nach seinem."
+    },
+    "es": {
+     "t": "Hábitos de compra",
+     "g": "Habla de mercados, centros comerciales u online: cómo te gusta comprar.",
+     "p": [
+      "Di cómo compras y qué disfrutas: curiosear, gangas o ir rápido.",
+      "Los hábitos de compra cambian con la cultura, así que pregunta con curiosidad.",
+      "Mantén el tema del dinero ligero y general; no hace falta dar precios ni datos de pago."
+     ],
+     "q": "¿Qué tipo de tienda te gusta visitar sin prisa?",
+     "c": "Describe a tu Buddy tu salida de compras ideal y pregunta por la suya."
+    },
+    "fr": {
+     "t": "Habitudes d'achat",
+     "g": "Parle de marchés, centres commerciaux ou en ligne : comment tu aimes faire tes courses.",
+     "p": [
+      "Dis comment tu achètes et ce que tu aimes : flâner, bonnes affaires ou courses rapides.",
+      "Les habitudes d'achat varient selon les cultures, alors demande avec curiosité.",
+      "Reste léger et général sur l'argent ; inutile de donner des prix ou des données de paiement."
+     ],
+     "q": "Quel type de boutique aimes-tu pousser la porte ?",
+     "c": "Décris ta sortie shopping idéale à ton Buddy et demande la sienne."
+    },
+    "it": {
+     "t": "Abitudini di acquisto",
+     "g": "Parla di mercati, centri commerciali o online: come ti piace fare acquisti.",
+     "p": [
+      "Dì come compri e cosa ti piace: curiosare, occasioni o fare in fretta.",
+      "Le abitudini di acquisto cambiano da cultura a cultura, quindi chiedi con curiosità.",
+      "Resta leggero e generico sul denaro; non serve dire prezzi o dati di pagamento."
+     ],
+     "q": "In che tipo di negozio ti piace entrare a curiosare?",
+     "c": "Descrivi al tuo Buddy la tua uscita di shopping ideale e chiedi la sua."
+    },
+    "pt": {
+     "t": "Hábitos de compras",
+     "g": "Fala de mercados, centros comerciais ou online: como gostas de fazer compras.",
+     "p": [
+      "Diz como compras e o que gostas: ver montras, pechinchas ou ir depressa.",
+      "Os hábitos de compras mudam com a cultura, por isso pergunta com curiosidade.",
+      "Mantém o tema do dinheiro leve e geral; não é preciso dar preços nem dados de pagamento."
+     ],
+     "q": "Em que tipo de loja gostas de entrar a espreitar?",
+     "c": "Descreve ao teu Buddy o teu passeio de compras ideal e pergunta pelo dele."
+    },
+    "pt_BR": {
+     "t": "Hábitos de compras",
+     "g": "Fale de mercados, shoppings ou online: como você gosta de comprar.",
+     "p": [
+      "Diga como compra e o que curte: olhar vitrines, pechinchas ou ir rápido.",
+      "Hábitos de compra mudam com a cultura, então pergunte com curiosidade.",
+      "Mantenha o assunto dinheiro leve e geral; não precisa dar preços nem dados de pagamento."
+     ],
+     "q": "Em que tipo de loja você gosta de entrar para dar uma olhada?",
+     "c": "Descreva ao seu Buddy seu passeio de compras ideal e pergunte pelo dele."
+    }
+   }
+  }
+ ]
+}

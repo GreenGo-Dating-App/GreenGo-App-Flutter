@@ -1,0 +1,835 @@
+{
+ "topic": "good_listener",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your daily walk or commute",
+     "g": "Describe your journey and the things you notice along the way.",
+     "p": [
+      "Daily routes are full of small details we stop seeing.",
+      "Describing them trains you to notice more.",
+      "Listeners can ask what you see, hear or enjoy most on the way."
+     ],
+     "q": "What do you notice on your daily walk or commute?",
+     "c": "Notice three new details on your route today and tell someone."
+    },
+    "de": {
+     "t": "Dein täglicher Weg",
+     "g": "Beschreibe deinen Weg und was du unterwegs bemerkst.",
+     "p": [
+      "Alltägliche Wege sind voller Details, die wir nicht mehr sehen.",
+      "Sie zu beschreiben schult den Blick für mehr.",
+      "Zuhörer können fragen, was du unterwegs siehst, hörst oder magst."
+     ],
+     "q": "Was bemerkst du auf deinem täglichen Weg?",
+     "c": "Bemerke heute drei neue Details auf deinem Weg und erzähle jemandem davon."
+    },
+    "es": {
+     "t": "Tu paseo o trayecto diario",
+     "g": "Describe tu recorrido y lo que notas por el camino.",
+     "p": [
+      "Las rutas diarias están llenas de detalles que dejamos de ver.",
+      "Describirlos entrena a notar más.",
+      "Quien escucha puede preguntar qué ves, oyes o disfrutas más."
+     ],
+     "q": "¿Qué notas en tu paseo o trayecto diario?",
+     "c": "Fíjate hoy en tres detalles nuevos de tu ruta y cuéntaselos a alguien."
+    },
+    "fr": {
+     "t": "Ta marche ou ton trajet quotidien",
+     "g": "Décris ton trajet et ce que tu remarques en chemin.",
+     "p": [
+      "Les trajets quotidiens regorgent de détails que l'on ne voit plus.",
+      "Les décrire t'apprend à remarquer davantage.",
+      "Celui qui écoute peut demander ce que tu vois, entends ou aimes le plus."
+     ],
+     "q": "Que remarques-tu sur ton trajet quotidien ?",
+     "c": "Remarque trois nouveaux détails sur ton trajet aujourd'hui et raconte-les à quelqu'un."
+    },
+    "it": {
+     "t": "La tua passeggiata o il tragitto quotidiano",
+     "g": "Descrivi il tuo percorso e ciò che noti lungo la strada.",
+     "p": [
+      "I percorsi quotidiani sono pieni di dettagli che non vediamo più.",
+      "Descriverli allena a notare di più.",
+      "Chi ascolta può chiedere cosa vedi, senti o apprezzi di più."
+     ],
+     "q": "Cosa noti nella tua passeggiata o nel tragitto quotidiano?",
+     "c": "Nota oggi tre nuovi dettagli del tuo percorso e raccontali a qualcuno."
+    },
+    "pt": {
+     "t": "O teu passeio ou trajeto diário",
+     "g": "Descreve o teu percurso e o que reparas pelo caminho.",
+     "p": [
+      "Os percursos diários estão cheios de detalhes que deixámos de ver.",
+      "Descrevê-los treina a reparar mais.",
+      "Quem ouve pode perguntar o que vês, ouves ou gostas mais."
+     ],
+     "q": "O que reparas no teu passeio ou trajeto diário?",
+     "c": "Repara hoje em três detalhes novos do teu percurso e conta a alguém."
+    },
+    "pt_BR": {
+     "t": "Sua caminhada ou trajeto diário",
+     "g": "Descreva seu percurso e o que você percebe pelo caminho.",
+     "p": [
+      "Trajetos diários estão cheios de detalhes que deixamos de ver.",
+      "Descrevê-los treina a perceber mais.",
+      "Quem ouve pode perguntar o que você vê, ouve ou curte mais."
+     ],
+     "q": "O que você percebe na sua caminhada ou trajeto diário?",
+     "c": "Perceba hoje três detalhes novos do seu trajeto e conte a alguém."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mirroring energy kindly",
+     "g": "Match the tone of someone's excitement or calm to connect better.",
+     "p": [
+      "If a friend is excited, a flat reply can deflate them.",
+      "If someone is quiet, a softer voice feels kinder.",
+      "Match the mood without copying it exactly or faking it."
+     ],
+     "q": "How does your voice change when you talk to an excited friend?",
+     "c": "Match someone's energy, lively or calm, in one chat today."
+    },
+    "de": {
+     "t": "Energie freundlich spiegeln",
+     "g": "Passe dich dem Ton von Begeisterung oder Ruhe an, um dich besser zu verbinden.",
+     "p": [
+      "Ist ein Freund begeistert, kann eine flache Antwort ihn bremsen.",
+      "Ist jemand still, wirkt eine leisere Stimme freundlicher.",
+      "Passe dich der Stimmung an, ohne sie genau zu kopieren oder zu spielen."
+     ],
+     "q": "Wie verändert sich deine Stimme bei einem begeisterten Freund?",
+     "c": "Passe dich heute in einem Gespräch der Energie des anderen an, lebhaft oder ruhig."
+    },
+    "es": {
+     "t": "Reflejar la energía con amabilidad",
+     "g": "Acompaña el tono de entusiasmo o calma de alguien para conectar mejor.",
+     "p": [
+      "Si un amigo está emocionado, una respuesta plana puede desinflarlo.",
+      "Si alguien está callado, una voz más suave resulta amable.",
+      "Acompaña el ánimo sin copiarlo del todo ni fingirlo."
+     ],
+     "q": "¿Cómo cambia tu voz cuando hablas con un amigo emocionado?",
+     "c": "Acompaña hoy la energía de alguien, animada o tranquila, en una charla."
+    },
+    "fr": {
+     "t": "Refléter l'énergie avec bienveillance",
+     "g": "Accorde-toi au ton d'enthousiasme ou de calme de l'autre pour mieux te connecter.",
+     "p": [
+      "Si un ami est enthousiaste, une réponse plate peut le décourager.",
+      "Si quelqu'un est calme, une voix plus douce paraît bienveillante.",
+      "Accorde-toi à l'humeur sans la copier exactement ni la simuler."
+     ],
+     "q": "Comment ta voix change-t-elle avec un ami enthousiaste ?",
+     "c": "Accorde-toi aujourd'hui à l'énergie de quelqu'un, vive ou calme, dans une discussion."
+    },
+    "it": {
+     "t": "Rispecchiare l'energia con gentilezza",
+     "g": "Accordati al tono di entusiasmo o calma di qualcuno per connetterti meglio.",
+     "p": [
+      "Se un amico è entusiasta, una risposta piatta può smorzarlo.",
+      "Se qualcuno è silenzioso, una voce più dolce è più gentile.",
+      "Accordati all'umore senza copiarlo esattamente né fingerlo."
+     ],
+     "q": "Come cambia la tua voce con un amico entusiasta?",
+     "c": "Accordati oggi all'energia di qualcuno, vivace o calma, in una chiacchierata."
+    },
+    "pt": {
+     "t": "Espelhar a energia com gentileza",
+     "g": "Acompanha o tom de entusiasmo ou calma de alguém para te ligares melhor.",
+     "p": [
+      "Se um amigo está entusiasmado, uma resposta seca pode desanimá-lo.",
+      "Se alguém está calado, uma voz mais suave parece mais gentil.",
+      "Acompanha o humor sem o copiar exatamente nem fingir."
+     ],
+     "q": "Como muda a tua voz com um amigo entusiasmado?",
+     "c": "Acompanha hoje a energia de alguém, animada ou calma, numa conversa."
+    },
+    "pt_BR": {
+     "t": "Espelhar a energia com gentileza",
+     "g": "Acompanhe o tom de entusiasmo ou calma de alguém para se conectar melhor.",
+     "p": [
+      "Se um amigo está animado, uma resposta seca pode desanimá-lo.",
+      "Se alguém está quieto, uma voz mais suave parece mais gentil.",
+      "Acompanhe o humor sem copiar exatamente nem fingir."
+     ],
+     "q": "Como a sua voz muda com um amigo animado?",
+     "c": "Acompanhe hoje a energia de alguém, animada ou calma, numa conversa."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Childhood games",
+     "g": "Remember games you played as a child and who you played with.",
+     "p": [
+      "Childhood games bring up happy, vivid memories.",
+      "Telling the rules of a game is a fun way to share culture.",
+      "Listeners can ask about the best game day ever."
+     ],
+     "q": "What game did you love as a child, and who played it with you?",
+     "c": "Ask someone about a childhood game and how it was played."
+    },
+    "de": {
+     "t": "Kinderspiele",
+     "g": "Erinnere dich an Spiele deiner Kindheit und an deine Mitspieler.",
+     "p": [
+      "Kinderspiele wecken fröhliche, lebendige Erinnerungen.",
+      "Die Regeln eines Spiels zu erzählen ist eine lustige Art, Kultur zu teilen.",
+      "Zuhörer können nach dem schönsten Spieltag fragen."
+     ],
+     "q": "Welches Spiel liebtest du als Kind, und wer spielte mit dir?",
+     "c": "Frag jemanden nach einem Kinderspiel und wie es gespielt wurde."
+    },
+    "es": {
+     "t": "Juegos de la infancia",
+     "g": "Recuerda juegos de tu infancia y con quién jugabas.",
+     "p": [
+      "Los juegos de la infancia traen recuerdos felices y vivos.",
+      "Contar las reglas de un juego es una forma divertida de compartir cultura.",
+      "Quien escucha puede preguntar por el mejor día de juego."
+     ],
+     "q": "¿Qué juego te encantaba de niño y quién jugaba contigo?",
+     "c": "Pregunta a alguien por un juego de su infancia y cómo se jugaba."
+    },
+    "fr": {
+     "t": "Jeux d'enfance",
+     "g": "Souviens-toi des jeux de ton enfance et de tes camarades de jeu.",
+     "p": [
+      "Les jeux d'enfance font revenir des souvenirs joyeux et vifs.",
+      "Raconter les règles d'un jeu est une façon amusante de partager sa culture.",
+      "Celui qui écoute peut demander quelle fut la meilleure partie."
+     ],
+     "q": "Quel jeu aimais-tu enfant, et qui y jouait avec toi ?",
+     "c": "Demande à quelqu'un un jeu de son enfance et comment on y jouait."
+    },
+    "it": {
+     "t": "Giochi d'infanzia",
+     "g": "Ricorda i giochi della tua infanzia e con chi giocavi.",
+     "p": [
+      "I giochi d'infanzia fanno riaffiorare ricordi felici e vividi.",
+      "Raccontare le regole di un gioco è un modo divertente di condividere cultura.",
+      "Chi ascolta può chiedere del giorno di gioco più bello."
+     ],
+     "q": "Quale gioco amavi da bambino, e chi giocava con te?",
+     "c": "Chiedi a qualcuno un gioco della sua infanzia e come si giocava."
+    },
+    "pt": {
+     "t": "Jogos de infância",
+     "g": "Recorda jogos da tua infância e com quem jogavas.",
+     "p": [
+      "Os jogos de infância trazem memórias felizes e vivas.",
+      "Contar as regras de um jogo é uma forma divertida de partilhar cultura.",
+      "Quem ouve pode perguntar pelo melhor dia de brincadeira."
+     ],
+     "q": "Que jogo adoravas em criança e quem jogava contigo?",
+     "c": "Pergunta a alguém por um jogo da infância e como se jogava."
+    },
+    "pt_BR": {
+     "t": "Brincadeiras de infância",
+     "g": "Lembre de brincadeiras da sua infância e de com quem brincava.",
+     "p": [
+      "As brincadeiras de infância trazem memórias felizes e vivas.",
+      "Contar as regras de uma brincadeira é um jeito divertido de compartilhar cultura.",
+      "Quem ouve pode perguntar pelo melhor dia de brincadeira."
+     ],
+     "q": "De que brincadeira você gostava quando criança e quem brincava com você?",
+     "c": "Pergunte a alguém por uma brincadeira de infância e como era."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Questions that open doors",
+     "g": "Build a personal list of favourite conversation-starting questions.",
+     "p": [
+      "A few go-to questions save you in any social moment.",
+      "Good ones are open, kind and about the person's world.",
+      "Examples: 'What are you looking forward to?' or 'What's keeping you busy?'"
+     ],
+     "q": "Which question would you add to your own list?",
+     "c": "Write down three favourite questions and use one today."
+    },
+    "de": {
+     "t": "Fragen, die Türen öffnen",
+     "g": "Erstelle eine persönliche Liste deiner liebsten Gesprächsanfänge.",
+     "p": [
+      "Ein paar Lieblingsfragen retten dich in jeder sozialen Situation.",
+      "Gute Fragen sind offen, freundlich und drehen sich um die Welt des anderen.",
+      "Beispiele: 'Worauf freust du dich?' oder 'Was beschäftigt dich gerade?'"
+     ],
+     "q": "Welche Frage würdest du in deine Liste aufnehmen?",
+     "c": "Schreibe drei Lieblingsfragen auf und nutze heute eine davon."
+    },
+    "es": {
+     "t": "Preguntas que abren puertas",
+     "g": "Crea tu lista personal de preguntas favoritas para iniciar conversación.",
+     "p": [
+      "Unas pocas preguntas de confianza te salvan en cualquier momento social.",
+      "Las buenas son abiertas, amables y sobre el mundo de la persona.",
+      "Ejemplos: '¿Qué te hace ilusión?' o '¿Qué te tiene ocupado?'"
+     ],
+     "q": "¿Qué pregunta añadirías a tu propia lista?",
+     "c": "Anota tres preguntas favoritas y usa una hoy."
+    },
+    "fr": {
+     "t": "Des questions qui ouvrent des portes",
+     "g": "Construis ta liste personnelle de questions pour lancer la conversation.",
+     "p": [
+      "Quelques questions fétiches te sauvent dans toute situation sociale.",
+      "Les bonnes sont ouvertes, bienveillantes et centrées sur le monde de l'autre.",
+      "Exemples : 'Qu'est-ce qui te réjouit ?' ou 'Qu'est-ce qui t'occupe en ce moment ?'"
+     ],
+     "q": "Quelle question ajouterais-tu à ta liste ?",
+     "c": "Note trois questions préférées et utilises-en une aujourd'hui."
+    },
+    "it": {
+     "t": "Domande che aprono porte",
+     "g": "Costruisci la tua lista personale di domande per iniziare una conversazione.",
+     "p": [
+      "Poche domande fidate ti salvano in ogni momento sociale.",
+      "Le buone sono aperte, gentili e sul mondo della persona.",
+      "Esempi: 'Cosa ti fa piacere aspettare?' o 'Cosa ti tiene occupato?'"
+     ],
+     "q": "Quale domanda aggiungeresti alla tua lista?",
+     "c": "Scrivi tre domande preferite e usane una oggi."
+    },
+    "pt": {
+     "t": "Perguntas que abrem portas",
+     "g": "Cria a tua lista pessoal de perguntas favoritas para começar conversas.",
+     "p": [
+      "Algumas perguntas de confiança salvam-te em qualquer momento social.",
+      "As boas são abertas, simpáticas e sobre o mundo da pessoa.",
+      "Exemplos: 'Pelo que esperas com ansiedade?' ou 'O que te tem ocupado?'"
+     ],
+     "q": "Que pergunta acrescentarias à tua lista?",
+     "c": "Escreve três perguntas favoritas e usa uma hoje."
+    },
+    "pt_BR": {
+     "t": "Perguntas que abrem portas",
+     "g": "Crie sua lista pessoal de perguntas favoritas para começar conversas.",
+     "p": [
+      "Algumas perguntas de confiança salvam você em qualquer momento social.",
+      "As boas são abertas, simpáticas e sobre o mundo da pessoa.",
+      "Exemplos: 'O que você está esperando com ansiedade?' ou 'O que tem ocupado você?'"
+     ],
+     "q": "Que pergunta você acrescentaria à sua lista?",
+     "c": "Escreva três perguntas favoritas e use uma hoje."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kindness you noticed",
+     "g": "Share an act of kindness you saw or received recently.",
+     "p": [
+      "Kind acts are everywhere once we start looking.",
+      "Retelling them spreads the warmth a little further.",
+      "Listeners can ask how the moment felt."
+     ],
+     "q": "What act of kindness did you notice or receive recently?",
+     "c": "Notice one kind act today and tell someone about it."
+    },
+    "de": {
+     "t": "Freundlichkeit, die dir auffiel",
+     "g": "Teile eine freundliche Tat, die du kürzlich gesehen oder erlebt hast.",
+     "p": [
+      "Freundliche Taten sind überall, sobald wir hinsehen.",
+      "Sie weiterzuerzählen trägt die Wärme ein Stück weiter.",
+      "Zuhörer können fragen, wie sich der Moment anfühlte."
+     ],
+     "q": "Welche freundliche Tat hast du kürzlich bemerkt oder erlebt?",
+     "c": "Bemerke heute eine freundliche Tat und erzähle jemandem davon."
+    },
+    "es": {
+     "t": "Amabilidad que notaste",
+     "g": "Comparte un gesto amable que viste o recibiste hace poco.",
+     "p": [
+      "Los gestos amables están por todas partes cuando empezamos a mirar.",
+      "Contarlos extiende un poco más la calidez.",
+      "Quien escucha puede preguntar cómo se sintió ese momento."
+     ],
+     "q": "¿Qué gesto amable notaste o recibiste últimamente?",
+     "c": "Fíjate hoy en un gesto amable y cuéntaselo a alguien."
+    },
+    "fr": {
+     "t": "Une gentillesse remarquée",
+     "g": "Partage un geste de gentillesse vu ou reçu récemment.",
+     "p": [
+      "Les gestes gentils sont partout dès qu'on regarde.",
+      "Les raconter diffuse la chaleur un peu plus loin.",
+      "Celui qui écoute peut demander ce que ce moment a fait ressentir."
+     ],
+     "q": "Quel geste de gentillesse as-tu remarqué ou reçu récemment ?",
+     "c": "Remarque un geste gentil aujourd'hui et raconte-le à quelqu'un."
+    },
+    "it": {
+     "t": "Una gentilezza che hai notato",
+     "g": "Condividi un gesto gentile visto o ricevuto di recente.",
+     "p": [
+      "I gesti gentili sono ovunque, quando iniziamo a guardare.",
+      "Raccontarli porta il calore un po' più lontano.",
+      "Chi ascolta può chiedere come ci si è sentiti."
+     ],
+     "q": "Quale gesto gentile hai notato o ricevuto di recente?",
+     "c": "Nota oggi un gesto gentile e raccontalo a qualcuno."
+    },
+    "pt": {
+     "t": "Uma gentileza que notaste",
+     "g": "Partilha um gesto gentil que viste ou recebeste há pouco.",
+     "p": [
+      "Os gestos gentis estão por todo o lado quando começamos a olhar.",
+      "Contá-los espalha o calor um pouco mais longe.",
+      "Quem ouve pode perguntar como foi esse momento."
+     ],
+     "q": "Que gesto gentil notaste ou recebeste recentemente?",
+     "c": "Repara hoje num gesto gentil e conta a alguém."
+    },
+    "pt_BR": {
+     "t": "Uma gentileza que você notou",
+     "g": "Compartilhe um gesto gentil que viu ou recebeu há pouco.",
+     "p": [
+      "Os gestos gentis estão por toda parte quando começamos a olhar.",
+      "Contá-los espalha o calor um pouco mais longe.",
+      "Quem ouve pode perguntar como foi esse momento."
+     ],
+     "q": "Que gesto gentil você notou ou recebeu recentemente?",
+     "c": "Perceba hoje um gesto gentil e conte a alguém."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Listening to different accents",
+     "g": "Be patient and curious when people speak with accents different from yours.",
+     "p": [
+      "Accents are part of a person's story, not a problem.",
+      "If you miss a word, say 'Could you say that again?' kindly.",
+      "Focus on meaning and tone, not on perfect pronunciation."
+     ],
+     "q": "How do you feel when someone is patient with your accent?",
+     "c": "Be extra patient with an accent or a language mix today."
+    },
+    "de": {
+     "t": "Verschiedene Akzente hören",
+     "g": "Sei geduldig und neugierig, wenn Menschen mit anderem Akzent sprechen.",
+     "p": [
+      "Akzente gehören zur Geschichte eines Menschen, sie sind kein Problem.",
+      "Hast du ein Wort verpasst, sag freundlich: 'Kannst du das wiederholen?'",
+      "Achte auf Sinn und Ton, nicht auf perfekte Aussprache."
+     ],
+     "q": "Wie fühlt es sich an, wenn jemand mit deinem Akzent geduldig ist?",
+     "c": "Sei heute besonders geduldig mit einem Akzent oder einer Sprachmischung."
+    },
+    "es": {
+     "t": "Escuchar acentos distintos",
+     "g": "Ten paciencia y curiosidad cuando alguien habla con un acento distinto al tuyo.",
+     "p": [
+      "Los acentos son parte de la historia de una persona, no un problema.",
+      "Si pierdes una palabra, di con amabilidad '¿Puedes repetirlo?'",
+      "Fíjate en el sentido y el tono, no en la pronunciación perfecta."
+     ],
+     "q": "¿Cómo te sientes cuando alguien tiene paciencia con tu acento?",
+     "c": "Ten hoy paciencia extra con un acento o una mezcla de idiomas."
+    },
+    "fr": {
+     "t": "Écouter des accents différents",
+     "g": "Sois patient et curieux quand on parle avec un accent différent du tien.",
+     "p": [
+      "Les accents font partie de l'histoire d'une personne, pas d'un problème.",
+      "Si tu rates un mot, dis gentiment 'Peux-tu répéter ?'",
+      "Concentre-toi sur le sens et le ton, pas sur la prononciation parfaite."
+     ],
+     "q": "Que ressens-tu quand quelqu'un est patient avec ton accent ?",
+     "c": "Sois aujourd'hui extra patient avec un accent ou un mélange de langues."
+    },
+    "it": {
+     "t": "Ascoltare accenti diversi",
+     "g": "Sii paziente e curioso quando qualcuno parla con un accento diverso dal tuo.",
+     "p": [
+      "Gli accenti fanno parte della storia di una persona, non sono un problema.",
+      "Se perdi una parola, di' con gentilezza 'Puoi ripetere?'",
+      "Concentrati su senso e tono, non sulla pronuncia perfetta."
+     ],
+     "q": "Come ti senti quando qualcuno è paziente con il tuo accento?",
+     "c": "Sii oggi extra paziente con un accento o un mix di lingue."
+    },
+    "pt": {
+     "t": "Ouvir sotaques diferentes",
+     "g": "Tem paciência e curiosidade quando alguém fala com um sotaque diferente do teu.",
+     "p": [
+      "Os sotaques fazem parte da história de uma pessoa, não são um problema.",
+      "Se perderes uma palavra, diz com gentileza 'Podes repetir?'",
+      "Foca-te no sentido e no tom, não na pronúncia perfeita."
+     ],
+     "q": "Como te sentes quando alguém tem paciência com o teu sotaque?",
+     "c": "Tem hoje paciência extra com um sotaque ou uma mistura de línguas."
+    },
+    "pt_BR": {
+     "t": "Ouvir sotaques diferentes",
+     "g": "Tenha paciência e curiosidade quando alguém fala com um sotaque diferente do seu.",
+     "p": [
+      "Os sotaques fazem parte da história de uma pessoa, não são um problema.",
+      "Se perder uma palavra, diga com gentileza 'Pode repetir?'",
+      "Foque no sentido e no tom, não na pronúncia perfeita."
+     ],
+     "q": "Como você se sente quando alguém tem paciência com o seu sotaque?",
+     "c": "Tenha hoje paciência extra com um sotaque ou uma mistura de línguas."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Weekend plans",
+     "g": "Talk about plans, big or small, and what you look forward to.",
+     "p": [
+      "Weekend plans are an easy, happy topic.",
+      "Small plans, like a nap or a walk, count too.",
+      "Listeners can ask what part they are most excited about."
+     ],
+     "q": "What are you looking forward to this weekend?",
+     "c": "Ask someone about their weekend plans and remember one detail."
+    },
+    "de": {
+     "t": "Wochenendpläne",
+     "g": "Sprich über Pläne, große oder kleine, und worauf du dich freust.",
+     "p": [
+      "Wochenendpläne sind ein leichtes, frohes Thema.",
+      "Kleine Pläne, wie ein Nickerchen oder ein Spaziergang, zählen auch.",
+      "Zuhörer können fragen, worauf du dich am meisten freust."
+     ],
+     "q": "Worauf freust du dich an diesem Wochenende?",
+     "c": "Frag jemanden nach seinen Wochenendplänen und merke dir ein Detail."
+    },
+    "es": {
+     "t": "Planes para el fin de semana",
+     "g": "Habla de planes, grandes o pequeños, y de lo que te hace ilusión.",
+     "p": [
+      "Los planes de fin de semana son un tema fácil y alegre.",
+      "Los planes pequeños, como una siesta o un paseo, también cuentan.",
+      "Quien escucha puede preguntar con qué parte está más ilusionado."
+     ],
+     "q": "¿Qué te hace ilusión este fin de semana?",
+     "c": "Pregunta a alguien por sus planes de fin de semana y recuerda un detalle."
+    },
+    "fr": {
+     "t": "Projets pour le week-end",
+     "g": "Parle de projets, grands ou petits, et de ce que tu attends avec plaisir.",
+     "p": [
+      "Les projets de week-end sont un sujet facile et joyeux.",
+      "De petits projets, comme une sieste ou une balade, comptent aussi.",
+      "Celui qui écoute peut demander ce qui l'enthousiasme le plus."
+     ],
+     "q": "Qu'attends-tu avec impatience ce week-end ?",
+     "c": "Demande à quelqu'un ses projets de week-end et retiens un détail."
+    },
+    "it": {
+     "t": "Piani per il weekend",
+     "g": "Parla di piani, grandi o piccoli, e di ciò che aspetti con piacere.",
+     "p": [
+      "I piani per il weekend sono un tema facile e allegro.",
+      "Anche i piccoli piani, come un riposino o una passeggiata, contano.",
+      "Chi ascolta può chiedere quale parte lo entusiasma di più."
+     ],
+     "q": "Cosa aspetti con piacere questo weekend?",
+     "c": "Chiedi a qualcuno dei suoi piani per il weekend e ricorda un dettaglio."
+    },
+    "pt": {
+     "t": "Planos para o fim de semana",
+     "g": "Fala de planos, grandes ou pequenos, e do que esperas com entusiasmo.",
+     "p": [
+      "Os planos de fim de semana são um tema fácil e alegre.",
+      "Planos pequenos, como uma sesta ou um passeio, também contam.",
+      "Quem ouve pode perguntar com que parte está mais entusiasmado."
+     ],
+     "q": "O que esperas com entusiasmo neste fim de semana?",
+     "c": "Pergunta a alguém pelos planos de fim de semana e recorda um detalhe."
+    },
+    "pt_BR": {
+     "t": "Planos para o fim de semana",
+     "g": "Fale sobre planos, grandes ou pequenos, e o que você espera com entusiasmo.",
+     "p": [
+      "Planos de fim de semana são um assunto fácil e alegre.",
+      "Planos pequenos, como uma soneca ou uma caminhada, também contam.",
+      "Quem ouve pode perguntar com que parte está mais animado."
+     ],
+     "q": "O que você espera com entusiasmo neste fim de semana?",
+     "c": "Pergunte a alguém sobre os planos de fim de semana e lembre um detalhe."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The gift of attention",
+     "g": "See how full attention can be one of the kindest things we give others.",
+     "p": [
+      "In a busy world, attention is rare and precious.",
+      "You do not need to fix anything; being present is already a gift.",
+      "Even five focused minutes can mean a lot to someone."
+     ],
+     "q": "When did someone's full attention make your day better?",
+     "c": "Give one person five minutes of undivided attention today."
+    },
+    "de": {
+     "t": "Das Geschenk der Aufmerksamkeit",
+     "g": "Erkenne, dass volle Aufmerksamkeit zu den freundlichsten Geschenken zählt.",
+     "p": [
+      "In einer hektischen Welt ist Aufmerksamkeit selten und kostbar.",
+      "Du musst nichts reparieren; Dasein ist schon ein Geschenk.",
+      "Schon fünf konzentrierte Minuten können viel bedeuten."
+     ],
+     "q": "Wann hat dir jemandes volle Aufmerksamkeit den Tag verbessert?",
+     "c": "Schenke heute einer Person fünf Minuten ungeteilte Aufmerksamkeit."
+    },
+    "es": {
+     "t": "El regalo de la atención",
+     "g": "Ve cómo la atención plena puede ser de lo más amable que damos a otros.",
+     "p": [
+      "En un mundo ajetreado, la atención es rara y valiosa.",
+      "No tienes que arreglar nada; estar presente ya es un regalo.",
+      "Incluso cinco minutos atentos pueden significar mucho."
+     ],
+     "q": "¿Cuándo la atención plena de alguien mejoró tu día?",
+     "c": "Da hoy a una persona cinco minutos de atención total."
+    },
+    "fr": {
+     "t": "Le cadeau de l'attention",
+     "g": "Vois comment une attention entière est l'un des plus beaux gestes pour les autres.",
+     "p": [
+      "Dans un monde pressé, l'attention est rare et précieuse.",
+      "Tu n'as rien à réparer ; être présent est déjà un cadeau.",
+      "Même cinq minutes d'attention peuvent compter beaucoup."
+     ],
+     "q": "Quand l'attention entière de quelqu'un a-t-elle embelli ta journée ?",
+     "c": "Offre aujourd'hui cinq minutes d'attention totale à une personne."
+    },
+    "it": {
+     "t": "Il dono dell'attenzione",
+     "g": "Scopri come la piena attenzione sia una delle cose più gentili che diamo agli altri.",
+     "p": [
+      "In un mondo frenetico l'attenzione è rara e preziosa.",
+      "Non devi aggiustare nulla; esserci è già un dono.",
+      "Anche cinque minuti attenti possono significare molto."
+     ],
+     "q": "Quando l'attenzione piena di qualcuno ha migliorato la tua giornata?",
+     "c": "Dai oggi a una persona cinque minuti di attenzione totale."
+    },
+    "pt": {
+     "t": "O dom da atenção",
+     "g": "Vê como a atenção plena pode ser das coisas mais gentis que damos aos outros.",
+     "p": [
+      "Num mundo agitado, a atenção é rara e preciosa.",
+      "Não tens de resolver nada; estar presente já é um presente.",
+      "Até cinco minutos atentos podem significar muito."
+     ],
+     "q": "Quando é que a atenção plena de alguém melhorou o teu dia?",
+     "c": "Dá hoje a uma pessoa cinco minutos de atenção total."
+    },
+    "pt_BR": {
+     "t": "O dom da atenção",
+     "g": "Veja como a atenção plena pode ser uma das coisas mais gentis que damos aos outros.",
+     "p": [
+      "Num mundo agitado, a atenção é rara e preciosa.",
+      "Você não precisa resolver nada; estar presente já é um presente.",
+      "Até cinco minutos atentos podem significar muito."
+     ],
+     "q": "Quando a atenção plena de alguém melhorou o seu dia?",
+     "c": "Dê hoje a uma pessoa cinco minutos de atenção total."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your favourite drink ritual",
+     "g": "Share a small daily ritual with tea, coffee, juice or water.",
+     "p": [
+      "Little rituals ground our day and tell who we are.",
+      "Details like the cup, the time and the company make it vivid.",
+      "Listeners can ask about the first sip of the day."
+     ],
+     "q": "What is your favourite drink ritual, and when do you enjoy it?",
+     "c": "Ask someone about their daily drink ritual and one detail of it."
+    },
+    "de": {
+     "t": "Dein liebstes Getränkeritual",
+     "g": "Teile ein kleines tägliches Ritual mit Tee, Kaffee, Saft oder Wasser.",
+     "p": [
+      "Kleine Rituale halten den Tag zusammen und zeigen, wer wir sind.",
+      "Details wie Tasse, Uhrzeit und Gesellschaft machen es lebendig.",
+      "Zuhörer können nach dem ersten Schluck des Tages fragen."
+     ],
+     "q": "Was ist dein liebstes Getränkeritual, und wann genießt du es?",
+     "c": "Frag jemanden nach seinem täglichen Getränkeritual und einem Detail davon."
+    },
+    "es": {
+     "t": "Tu ritual favorito con una bebida",
+     "g": "Comparte un pequeño ritual diario con té, café, zumo o agua.",
+     "p": [
+      "Los pequeños rituales anclan el día y dicen quiénes somos.",
+      "Detalles como la taza, la hora y la compañía lo hacen vivo.",
+      "Quien escucha puede preguntar por el primer sorbo del día."
+     ],
+     "q": "¿Cuál es tu ritual favorito con una bebida y cuándo lo disfrutas?",
+     "c": "Pregunta a alguien por su ritual diario con una bebida y un detalle."
+    },
+    "fr": {
+     "t": "Ton rituel de boisson préféré",
+     "g": "Partage un petit rituel quotidien avec du thé, du café, du jus ou de l'eau.",
+     "p": [
+      "Les petits rituels ancrent la journée et disent qui nous sommes.",
+      "Des détails comme la tasse, l'heure et la compagnie le rendent vivant.",
+      "Celui qui écoute peut demander la première gorgée de la journée."
+     ],
+     "q": "Quel est ton rituel de boisson préféré, et quand en profites-tu ?",
+     "c": "Demande à quelqu'un son rituel quotidien de boisson et un détail."
+    },
+    "it": {
+     "t": "Il tuo rito preferito con una bevanda",
+     "g": "Condividi un piccolo rito quotidiano con tè, caffè, succo o acqua.",
+     "p": [
+      "I piccoli riti ancorano la giornata e dicono chi siamo.",
+      "Dettagli come la tazza, l'ora e la compagnia lo rendono vivo.",
+      "Chi ascolta può chiedere del primo sorso della giornata."
+     ],
+     "q": "Qual è il tuo rito preferito con una bevanda, e quando lo godi?",
+     "c": "Chiedi a qualcuno del suo rito quotidiano con una bevanda e un dettaglio."
+    },
+    "pt": {
+     "t": "O teu ritual preferido de bebida",
+     "g": "Partilha um pequeno ritual diário com chá, café, sumo ou água.",
+     "p": [
+      "Os pequenos rituais ancoram o dia e dizem quem somos.",
+      "Detalhes como a chávena, a hora e a companhia tornam-no vivo.",
+      "Quem ouve pode perguntar pelo primeiro gole do dia."
+     ],
+     "q": "Qual é o teu ritual preferido de bebida e quando o desfrutas?",
+     "c": "Pergunta a alguém pelo ritual diário de bebida e um detalhe dele."
+    },
+    "pt_BR": {
+     "t": "Seu ritual favorito de bebida",
+     "g": "Compartilhe um pequeno ritual diário com chá, café, suco ou água.",
+     "p": [
+      "Pequenos rituais ancoram o dia e dizem quem somos.",
+      "Detalhes como a xícara, a hora e a companhia o deixam vivo.",
+      "Quem ouve pode perguntar pelo primeiro gole do dia."
+     ],
+     "q": "Qual é o seu ritual favorito de bebida e quando você o curte?",
+     "c": "Pergunte a alguém pelo ritual diário de bebida e um detalhe dele."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Validating feelings",
+     "g": "Say 'That makes sense' to show a feeling is understandable.",
+     "p": [
+      "Validation says 'your feeling is real', not 'I agree'.",
+      "Phrases like 'I can see why' calm and connect.",
+      "You can validate a feeling without fixing the problem."
+     ],
+     "q": "How would you validate: 'I'm nervous about tomorrow's meeting'?",
+     "c": "Use 'That makes sense' once today when someone shares a feeling."
+    },
+    "de": {
+     "t": "Gefühle anerkennen",
+     "g": "Sag 'Das ergibt Sinn', um zu zeigen, dass ein Gefühl nachvollziehbar ist.",
+     "p": [
+      "Anerkennen sagt 'dein Gefühl ist echt', nicht 'ich stimme zu'.",
+      "Sätze wie 'Ich verstehe, warum' beruhigen und verbinden.",
+      "Du kannst ein Gefühl anerkennen, ohne das Problem zu lösen."
+     ],
+     "q": "Wie würdest du anerkennen: 'Ich bin nervös wegen des Meetings morgen'?",
+     "c": "Sag heute einmal 'Das ergibt Sinn', wenn jemand ein Gefühl teilt."
+    },
+    "es": {
+     "t": "Validar sentimientos",
+     "g": "Di 'Tiene sentido' para mostrar que un sentimiento es comprensible.",
+     "p": [
+      "Validar dice 'tu sentimiento es real', no 'estoy de acuerdo'.",
+      "Frases como 'entiendo por qué' calman y conectan.",
+      "Puedes validar un sentimiento sin resolver el problema."
+     ],
+     "q": "¿Cómo validarías: 'Estoy nervioso por la reunión de mañana'?",
+     "c": "Usa hoy una vez 'Tiene sentido' cuando alguien comparta un sentimiento."
+    },
+    "fr": {
+     "t": "Valider les émotions",
+     "g": "Dis 'C'est normal' pour montrer qu'un ressenti est compréhensible.",
+     "p": [
+      "Valider dit 'ton ressenti est réel', pas 'je suis d'accord'.",
+      "Des phrases comme 'je comprends pourquoi' apaisent et rapprochent.",
+      "Tu peux valider un ressenti sans régler le problème."
+     ],
+     "q": "Comment validerais-tu : 'Je suis nerveux pour la réunion de demain' ?",
+     "c": "Dis une fois aujourd'hui 'C'est normal' quand quelqu'un partage un ressenti."
+    },
+    "it": {
+     "t": "Riconoscere i sentimenti",
+     "g": "Di' 'Ha senso' per mostrare che un sentimento è comprensibile.",
+     "p": [
+      "Riconoscere dice 'il tuo sentimento è reale', non 'sono d'accordo'.",
+      "Frasi come 'capisco perché' calmano e collegano.",
+      "Puoi riconoscere un sentimento senza risolvere il problema."
+     ],
+     "q": "Come riconosceresti: 'Sono nervoso per la riunione di domani'?",
+     "c": "Di' oggi una volta 'Ha senso' quando qualcuno condivide un sentimento."
+    },
+    "pt": {
+     "t": "Validar sentimentos",
+     "g": "Diz 'Faz sentido' para mostrar que um sentimento é compreensível.",
+     "p": [
+      "Validar diz 'o teu sentimento é real', não 'concordo'.",
+      "Frases como 'percebo porquê' acalmam e ligam.",
+      "Podes validar um sentimento sem resolver o problema."
+     ],
+     "q": "Como validarias: 'Estou nervoso com a reunião de amanhã'?",
+     "c": "Diz hoje uma vez 'Faz sentido' quando alguém partilhar um sentimento."
+    },
+    "pt_BR": {
+     "t": "Validar sentimentos",
+     "g": "Diga 'Faz sentido' para mostrar que um sentimento é compreensível.",
+     "p": [
+      "Validar diz 'o seu sentimento é real', não 'eu concordo'.",
+      "Frases como 'entendo por quê' acalmam e conectam.",
+      "Você pode validar um sentimento sem resolver o problema."
+     ],
+     "q": "Como você validaria: 'Estou nervoso com a reunião de amanhã'?",
+     "c": "Diga hoje uma vez 'Faz sentido' quando alguém compartilhar um sentimento."
+    }
+   }
+  }
+ ]
+}

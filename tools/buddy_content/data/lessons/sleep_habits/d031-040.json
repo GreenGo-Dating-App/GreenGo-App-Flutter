@@ -1,0 +1,835 @@
+{
+ "topic": "sleep_habits",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The bedroom as a sleep space",
+     "g": "See why a bedroom works best when it signals rest and calm.",
+     "p": [
+      "Your brain links places with activities.",
+      "A room that mostly means sleep makes drifting off easier.",
+      "Small tweaks can turn it into a calmer space."
+     ],
+     "q": "What does your bedroom say to you right now?",
+     "c": "Tonight, remove one non-sleep item from your bed area."
+    },
+    "de": {
+     "t": "Das Schlafzimmer als Schlafraum",
+     "g": "Sieh, warum ein Schlafzimmer am besten Ruhe und Gelassenheit ausstrahlt.",
+     "p": [
+      "Dein Gehirn verknüpft Orte mit Tätigkeiten.",
+      "Ein Raum, der vor allem Schlaf bedeutet, erleichtert das Einschlafen.",
+      "Kleine Anpassungen machen ihn zu einem ruhigeren Ort."
+     ],
+     "q": "Was sagt dir dein Schlafzimmer gerade?",
+     "c": "Räum heute Abend einen schlaffremden Gegenstand aus deinem Bettbereich."
+    },
+    "es": {
+     "t": "El dormitorio como espacio para dormir",
+     "g": "Mira por qué el dormitorio funciona mejor cuando transmite calma y descanso.",
+     "p": [
+      "Tu cerebro asocia lugares con actividades.",
+      "Una habitación que significa sobre todo sueño facilita dormirse.",
+      "Pequeños ajustes pueden volverla más tranquila."
+     ],
+     "q": "¿Qué te dice ahora mismo tu dormitorio?",
+     "c": "Esta noche retira de la cama un objeto que no tenga que ver con dormir."
+    },
+    "fr": {
+     "t": "La chambre, un espace pour dormir",
+     "g": "Vois pourquoi une chambre fonctionne mieux quand elle évoque repos et calme.",
+     "p": [
+      "Ton cerveau associe les lieux à des activités.",
+      "Une pièce qui signifie surtout sommeil facilite l'endormissement.",
+      "De petits ajustements peuvent la rendre plus paisible."
+     ],
+     "q": "Que te dit ta chambre en ce moment ?",
+     "c": "Ce soir, retire de ton lit un objet qui n'a rien à voir avec le sommeil."
+    },
+    "it": {
+     "t": "La camera come spazio per dormire",
+     "g": "Scopri perché la camera funziona meglio quando comunica calma e riposo.",
+     "p": [
+      "Il cervello associa i luoghi alle attività.",
+      "Una stanza che significa soprattutto sonno facilita l'addormentamento.",
+      "Piccoli ritocchi possono renderla più tranquilla."
+     ],
+     "q": "Cosa ti dice la tua camera in questo momento?",
+     "c": "Stasera togli dall'area del letto un oggetto che non c'entra col sonno."
+    },
+    "pt": {
+     "t": "O quarto como espaço para dormir",
+     "g": "Vê porque um quarto funciona melhor quando transmite calma e descanso.",
+     "p": [
+      "O teu cérebro associa lugares a atividades.",
+      "Um quarto que significa sobretudo sono facilita adormecer.",
+      "Pequenos ajustes podem torná-lo mais tranquilo."
+     ],
+     "q": "O que te diz o teu quarto neste momento?",
+     "c": "Esta noite, tira da zona da cama um objeto que nada tenha a ver com dormir."
+    },
+    "pt_BR": {
+     "t": "O quarto como espaço para dormir",
+     "g": "Veja por que um quarto funciona melhor quando transmite calma e descanso.",
+     "p": [
+      "O seu cérebro associa lugares a atividades.",
+      "Um quarto que significa principalmente sono facilita pegar no sono.",
+      "Pequenos ajustes podem torná-lo mais tranquilo."
+     ],
+     "q": "O que o seu quarto diz para você agora?",
+     "c": "Hoje à noite, tire da área da cama um objeto que nada tenha a ver com dormir."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Darkness matters",
+     "g": "See how even small amounts of light can lighten sleep.",
+     "p": [
+      "Light reaches the brain even through closed eyelids.",
+      "Streetlight, standby LEDs and hallway glow can add up.",
+      "Darker rooms usually mean deeper, steadier rest."
+     ],
+     "q": "Where does light sneak into your bedroom at night?",
+     "c": "Tonight, switch off the light, then look for any glow."
+    },
+    "de": {
+     "t": "Dunkelheit zählt",
+     "g": "Sieh, wie schon wenig Licht den Schlaf leichter machen kann.",
+     "p": [
+      "Licht erreicht das Gehirn selbst durch geschlossene Lider.",
+      "Straßenlaternen, Standby-LEDs und Flurlicht können sich summieren.",
+      "Dunklere Räume bedeuten meist tieferen, ruhigeren Schlaf."
+     ],
+     "q": "Wo schleicht sich nachts Licht in dein Schlafzimmer?",
+     "c": "Mach heute Abend das Licht aus und such dann nach Restlicht."
+    },
+    "es": {
+     "t": "La oscuridad importa",
+     "g": "Mira cómo incluso un poco de luz puede aligerar el sueño.",
+     "p": [
+      "La luz llega al cerebro incluso a través de los párpados.",
+      "Las farolas, los LED de espera y la luz del pasillo se suman.",
+      "Habitaciones más oscuras suelen significar un descanso más profundo y estable."
+     ],
+     "q": "¿Por dónde se cuela la luz en tu dormitorio de noche?",
+     "c": "Esta noche apaga la luz y busca cualquier resplandor."
+    },
+    "fr": {
+     "t": "L'obscurité compte",
+     "g": "Vois comment même un peu de lumière peut alléger le sommeil.",
+     "p": [
+      "La lumière atteint le cerveau même à travers les paupières.",
+      "Réverbères, voyants de veille et lueur du couloir peuvent s'additionner.",
+      "Une chambre plus sombre favorise souvent un repos plus profond et régulier."
+     ],
+     "q": "D'où vient la lumière qui s'invite dans ta chambre la nuit ?",
+     "c": "Ce soir, éteins la lumière puis cherche la moindre lueur."
+    },
+    "it": {
+     "t": "Il buio conta",
+     "g": "Scopri come anche poca luce può rendere il sonno più leggero.",
+     "p": [
+      "La luce raggiunge il cervello anche attraverso le palpebre.",
+      "Lampioni, led di standby e luce del corridoio possono sommarsi.",
+      "Camere più buie di solito significano un riposo più profondo e stabile."
+     ],
+     "q": "Da dove entra la luce nella tua camera di notte?",
+     "c": "Stasera spegni la luce e cerca ogni bagliore."
+    },
+    "pt": {
+     "t": "A escuridão importa",
+     "g": "Vê como mesmo pouca luz pode tornar o sono mais leve.",
+     "p": [
+      "A luz chega ao cérebro mesmo através das pálpebras.",
+      "Candeeiros de rua, LEDs de espera e luz do corredor podem somar-se.",
+      "Quartos mais escuros costumam significar descanso mais profundo e estável."
+     ],
+     "q": "Por onde entra a luz no teu quarto à noite?",
+     "c": "Esta noite, apaga a luz e procura qualquer brilho."
+    },
+    "pt_BR": {
+     "t": "A escuridão importa",
+     "g": "Veja como até pouca luz pode deixar o sono mais leve.",
+     "p": [
+      "A luz chega ao cérebro mesmo através das pálpebras.",
+      "Postes de rua, LEDs de espera e luz do corredor podem se somar.",
+      "Quartos mais escuros costumam significar descanso mais profundo e estável."
+     ],
+     "q": "Por onde a luz entra no seu quarto à noite?",
+     "c": "Hoje à noite, apague a luz e procure qualquer brilho."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Blackout tricks",
+     "g": "Try simple ways to darken your room.",
+     "p": [
+      "Thick curtains, blinds or a blackout liner block street light.",
+      "An eye mask is a cheap, portable option.",
+      "Cover tiny standby lights with a bit of tape."
+     ],
+     "q": "Which trick would be easiest for you to try?",
+     "c": "Tonight, cover one small light or close the curtains fully."
+    },
+    "de": {
+     "t": "Verdunkelungstricks",
+     "g": "Probiere einfache Wege, dein Zimmer abzudunkeln.",
+     "p": [
+      "Dicke Vorhänge, Jalousien oder Verdunkelungsfutter halten Straßenlicht ab.",
+      "Eine Schlafmaske ist eine günstige, mobile Lösung.",
+      "Überklebe kleine Standby-Lichter mit etwas Klebeband."
+     ],
+     "q": "Welcher Trick wäre für dich am einfachsten?",
+     "c": "Deck heute Abend ein kleines Licht ab oder zieh die Vorhänge ganz zu."
+    },
+    "es": {
+     "t": "Trucos para oscurecer",
+     "g": "Prueba formas sencillas de oscurecer tu habitación.",
+     "p": [
+      "Cortinas gruesas, persianas o un forro opaco frenan la luz de la calle.",
+      "Un antifaz es una opción barata y portátil.",
+      "Tapa las lucecitas de espera con un poco de cinta."
+     ],
+     "q": "¿Qué truco te resultaría más fácil probar?",
+     "c": "Esta noche tapa una lucecita o cierra bien las cortinas."
+    },
+    "fr": {
+     "t": "Astuces pour l'obscurité",
+     "g": "Essaie des moyens simples d'assombrir ta chambre.",
+     "p": [
+      "Rideaux épais, stores ou doublure occultante bloquent la lumière de la rue.",
+      "Un masque de nuit est une option économique et portable.",
+      "Cache les petits voyants de veille avec un bout de ruban adhésif."
+     ],
+     "q": "Quelle astuce serait la plus simple à tester pour toi ?",
+     "c": "Ce soir, masque un petit voyant ou ferme bien les rideaux."
+    },
+    "it": {
+     "t": "Trucchi per oscurare",
+     "g": "Prova modi semplici per oscurare la camera.",
+     "p": [
+      "Tende pesanti, tapparelle o una fodera oscurante bloccano la luce della strada.",
+      "Una mascherina per gli occhi è un'opzione economica e portatile.",
+      "Copri le piccole lucine di standby con un po' di nastro."
+     ],
+     "q": "Quale trucco ti sarebbe più facile provare?",
+     "c": "Stasera copri una lucina o chiudi bene le tende."
+    },
+    "pt": {
+     "t": "Truques para escurecer",
+     "g": "Experimenta formas simples de escurecer o quarto.",
+     "p": [
+      "Cortinas grossas, estores ou forro opaco travam a luz da rua.",
+      "Uma máscara de dormir é uma opção barata e portátil.",
+      "Tapa as luzinhas de espera com um pouco de fita."
+     ],
+     "q": "Que truque te seria mais fácil experimentar?",
+     "c": "Esta noite, tapa uma luzinha ou fecha bem as cortinas."
+    },
+    "pt_BR": {
+     "t": "Truques para escurecer",
+     "g": "Experimente formas simples de escurecer o quarto.",
+     "p": [
+      "Cortinas grossas, persianas ou forro blackout seguram a luz da rua.",
+      "Uma máscara de dormir é uma opção barata e portátil.",
+      "Cubra as luzinhas de espera com um pouco de fita."
+     ],
+     "q": "Que truque seria mais fácil para você testar?",
+     "c": "Hoje à noite, cubra uma luzinha ou feche bem as cortinas."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The right temperature",
+     "g": "See why a cool room often helps sleep.",
+     "p": [
+      "Many people sleep best around 16 to 19 C.",
+      "The body cools slightly as it falls asleep.",
+      "Too warm or too cold makes waking more likely."
+     ],
+     "q": "What temperature is your bedroom at night?",
+     "c": "Tonight, make the room a little cooler before bed."
+    },
+    "de": {
+     "t": "Die richtige Temperatur",
+     "g": "Sieh, warum ein kühles Zimmer oft beim Schlafen hilft.",
+     "p": [
+      "Viele schlafen am besten bei etwa 16 bis 19 °C.",
+      "Der Körper kühlt beim Einschlafen leicht ab.",
+      "Zu warm oder zu kalt macht Aufwachen wahrscheinlicher."
+     ],
+     "q": "Welche Temperatur hat dein Schlafzimmer nachts?",
+     "c": "Mach das Zimmer heute Abend vor dem Schlafen etwas kühler."
+    },
+    "es": {
+     "t": "La temperatura adecuada",
+     "g": "Mira por qué una habitación fresca suele ayudar a dormir.",
+     "p": [
+      "Mucha gente duerme mejor entre 16 y 19 grados.",
+      "El cuerpo se enfría un poco al dormirse.",
+      "Demasiado calor o frío hace más probable despertarse."
+     ],
+     "q": "¿Qué temperatura tiene tu dormitorio de noche?",
+     "c": "Esta noche refresca un poco la habitación antes de acostarte."
+    },
+    "fr": {
+     "t": "La bonne température",
+     "g": "Vois pourquoi une pièce fraîche aide souvent à dormir.",
+     "p": [
+      "Beaucoup dorment mieux autour de 16 à 19 degrés.",
+      "Le corps se refroidit légèrement en s'endormant.",
+      "Trop chaud ou trop froid rend les réveils plus probables."
+     ],
+     "q": "Quelle température fait-il dans ta chambre la nuit ?",
+     "c": "Ce soir, rafraîchis un peu la pièce avant de te coucher."
+    },
+    "it": {
+     "t": "La temperatura giusta",
+     "g": "Scopri perché una stanza fresca spesso aiuta a dormire.",
+     "p": [
+      "Molte persone dormono meglio intorno ai 16-19 gradi.",
+      "Il corpo si raffredda leggermente mentre ci si addormenta.",
+      "Troppo caldo o troppo freddo rende più probabili i risvegli."
+     ],
+     "q": "Che temperatura c'è nella tua camera di notte?",
+     "c": "Stasera rinfresca un po' la stanza prima di coricarti."
+    },
+    "pt": {
+     "t": "A temperatura certa",
+     "g": "Vê porque um quarto fresco costuma ajudar a dormir.",
+     "p": [
+      "Muita gente dorme melhor entre os 16 e os 19 graus.",
+      "O corpo arrefece ligeiramente ao adormecer.",
+      "Demasiado calor ou frio torna mais provável acordar."
+     ],
+     "q": "Que temperatura tem o teu quarto à noite?",
+     "c": "Esta noite, refresca um pouco o quarto antes de te deitares."
+    },
+    "pt_BR": {
+     "t": "A temperatura certa",
+     "g": "Veja por que um quarto fresco costuma ajudar a dormir.",
+     "p": [
+      "Muita gente dorme melhor entre 16 e 19 graus.",
+      "O corpo esfria um pouco ao pegar no sono.",
+      "Calor ou frio demais torna mais provável acordar."
+     ],
+     "q": "Que temperatura tem o seu quarto à noite?",
+     "c": "Hoje à noite, refresque um pouco o quarto antes de deitar."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Bedding that suits you",
+     "g": "Choose covers and layers that keep you comfortable all night.",
+     "p": [
+      "Layers let you add or remove warmth easily.",
+      "Breathable fabrics like cotton or linen suit many sleepers.",
+      "Your comfort matters more than any rule."
+     ],
+     "q": "Do you tend to wake too hot or too cold?",
+     "c": "Tonight, arrange your covers in easy-to-adjust layers."
+    },
+    "de": {
+     "t": "Bettwäsche, die zu dir passt",
+     "g": "Wähle Decken und Schichten, die dich die ganze Nacht angenehm wärmen.",
+     "p": [
+      "Schichten lassen sich leicht zu- oder abdecken.",
+      "Atmungsaktive Stoffe wie Baumwolle oder Leinen passen vielen.",
+      "Dein Wohlbefinden zählt mehr als jede Regel."
+     ],
+     "q": "Wachst du eher zu warm oder zu kalt auf?",
+     "c": "Leg heute Abend deine Decken in leicht anpassbaren Schichten bereit."
+    },
+    "es": {
+     "t": "Ropa de cama a tu medida",
+     "g": "Elige mantas y capas que te mantengan cómodo toda la noche.",
+     "p": [
+      "Las capas permiten quitar o poner abrigo con facilidad.",
+      "Los tejidos transpirables como algodón o lino sientan bien a muchos.",
+      "Tu comodidad importa más que cualquier regla."
+     ],
+     "q": "¿Sueles despertarte con demasiado calor o demasiado frío?",
+     "c": "Esta noche coloca tus mantas en capas fáciles de ajustar."
+    },
+    "fr": {
+     "t": "Une literie qui te convient",
+     "g": "Choisis couvertures et couches qui te gardent à l'aise toute la nuit.",
+     "p": [
+      "Les couches permettent d'ajouter ou d'enlever de la chaleur facilement.",
+      "Les tissus respirants comme le coton ou le lin conviennent à beaucoup.",
+      "Ton confort compte plus que n'importe quelle règle."
+     ],
+     "q": "Te réveilles-tu plutôt avec trop chaud ou trop froid ?",
+     "c": "Ce soir, dispose tes couvertures en couches faciles à ajuster."
+    },
+    "it": {
+     "t": "Biancheria adatta a te",
+     "g": "Scegli coperte e strati che ti tengano a tuo agio tutta la notte.",
+     "p": [
+      "Gli strati permettono di aggiungere o togliere calore con facilità.",
+      "Tessuti traspiranti come cotone o lino vanno bene a molti.",
+      "Il tuo comfort conta più di qualsiasi regola."
+     ],
+     "q": "Tendi a svegliarti con troppo caldo o troppo freddo?",
+     "c": "Stasera sistema le coperte in strati facili da regolare."
+    },
+    "pt": {
+     "t": "Roupa de cama à tua medida",
+     "g": "Escolhe cobertores e camadas que te mantenham confortável a noite toda.",
+     "p": [
+      "As camadas permitem juntar ou tirar calor facilmente.",
+      "Tecidos respiráveis como algodão ou linho servem a muitos.",
+      "O teu conforto importa mais do que qualquer regra."
+     ],
+     "q": "Costumas acordar com demasiado calor ou demasiado frio?",
+     "c": "Esta noite, organiza os cobertores em camadas fáceis de ajustar."
+    },
+    "pt_BR": {
+     "t": "Roupa de cama sob medida",
+     "g": "Escolha cobertores e camadas que deixem você confortável a noite toda.",
+     "p": [
+      "As camadas permitem acrescentar ou tirar calor com facilidade.",
+      "Tecidos respiráveis como algodão ou linho servem para muita gente.",
+      "O seu conforto importa mais que qualquer regra."
+     ],
+     "q": "Você costuma acordar com muito calor ou muito frio?",
+     "c": "Hoje à noite, organize os cobertores em camadas fáceis de ajustar."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your pillow and your posture",
+     "g": "See how pillow height and firmness relate to comfort.",
+     "p": [
+      "Side sleepers often like a fuller pillow to fill the gap at the neck.",
+      "Back sleepers often prefer something slimmer.",
+      "Waking with a stiff neck can hint that a pillow does not suit you."
+     ],
+     "q": "How does your pillow feel when you wake?",
+     "c": "Tonight, try adjusting your pillow so your neck feels relaxed."
+    },
+    "de": {
+     "t": "Dein Kissen und deine Haltung",
+     "g": "Sieh, wie Kissenhöhe und Festigkeit mit Komfort zusammenhängen.",
+     "p": [
+      "Seitenschläfer mögen oft ein höheres Kissen, das die Lücke am Hals füllt.",
+      "Rückenschläfer bevorzugen oft etwas Flacheres.",
+      "Ein steifer Nacken am Morgen kann zeigen, dass das Kissen nicht passt."
+     ],
+     "q": "Wie fühlt sich dein Kissen beim Aufwachen an?",
+     "c": "Probiere heute Abend, dein Kissen so zu richten, dass der Nacken entspannt ist."
+    },
+    "es": {
+     "t": "Tu almohada y tu postura",
+     "g": "Mira cómo la altura y firmeza de la almohada se relacionan con la comodidad.",
+     "p": [
+      "Quien duerme de lado suele preferir una almohada más alta que llene el hueco del cuello.",
+      "Quien duerme boca arriba suele preferir una más fina.",
+      "Despertar con el cuello rígido puede indicar que la almohada no te va."
+     ],
+     "q": "¿Cómo se siente tu almohada al despertar?",
+     "c": "Esta noche ajusta la almohada hasta que el cuello se sienta relajado."
+    },
+    "fr": {
+     "t": "Ton oreiller et ta posture",
+     "g": "Vois comment hauteur et fermeté de l'oreiller touchent au confort.",
+     "p": [
+      "Qui dort sur le côté aime souvent un oreiller plus haut pour combler l'espace du cou.",
+      "Qui dort sur le dos préfère souvent plus plat.",
+      "Un cou raide au réveil peut indiquer qu'un oreiller ne convient pas."
+     ],
+     "q": "Comment ton oreiller te semble-t-il au réveil ?",
+     "c": "Ce soir, ajuste ton oreiller pour que ta nuque se sente détendue."
+    },
+    "it": {
+     "t": "Il tuo cuscino e la tua postura",
+     "g": "Scopri come altezza e consistenza del cuscino si legano al comfort.",
+     "p": [
+      "Chi dorme di lato spesso ama un cuscino più alto che riempia lo spazio del collo.",
+      "Chi dorme sulla schiena spesso preferisce uno più basso.",
+      "Svegliarsi con il collo rigido può indicare che il cuscino non fa per te."
+     ],
+     "q": "Come ti sembra il cuscino al risveglio?",
+     "c": "Stasera regola il cuscino in modo che il collo sia rilassato."
+    },
+    "pt": {
+     "t": "A tua almofada e a tua postura",
+     "g": "Vê como a altura e a firmeza da almofada se relacionam com o conforto.",
+     "p": [
+      "Quem dorme de lado costuma gostar de uma almofada mais alta que preencha o espaço do pescoço.",
+      "Quem dorme de costas costuma preferir uma mais baixa.",
+      "Acordar com o pescoço rígido pode indicar que a almofada não te serve."
+     ],
+     "q": "Como sentes a almofada quando acordas?",
+     "c": "Esta noite, ajusta a almofada para o pescoço ficar relaxado."
+    },
+    "pt_BR": {
+     "t": "O seu travesseiro e a sua postura",
+     "g": "Veja como a altura e a firmeza do travesseiro se relacionam com o conforto.",
+     "p": [
+      "Quem dorme de lado costuma gostar de um travesseiro mais alto que preencha o espaço do pescoço.",
+      "Quem dorme de barriga para cima costuma preferir um mais baixo.",
+      "Acordar com o pescoço rígido pode indicar que o travesseiro não serve para você."
+     ],
+     "q": "Como você sente o travesseiro ao acordar?",
+     "c": "Hoje à noite, ajuste o travesseiro para o pescoço ficar relaxado."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mattress comfort basics",
+     "g": "Notice what support and comfort mean in a mattress.",
+     "p": [
+      "A good mattress feels supportive yet comfortable to you.",
+      "Lying down in your usual position tells you more than a quick sit.",
+      "Even good mattresses wear out over the years."
+     ],
+     "q": "How does your bed feel compared with a hotel or friend's bed?",
+     "c": "Tonight, notice whether any part of your mattress feels uneven."
+    },
+    "de": {
+     "t": "Matratzen-Komfort-Grundlagen",
+     "g": "Achte darauf, was Halt und Komfort bei einer Matratze bedeuten.",
+     "p": [
+      "Eine gute Matratze fühlt sich für dich stützend und bequem an.",
+      "In deiner gewohnten Position zu liegen verrät mehr als kurzes Sitzen.",
+      "Auch gute Matratzen nutzen sich über die Jahre ab."
+     ],
+     "q": "Wie fühlt sich dein Bett im Vergleich zu einem Hotel- oder Freundesbett an?",
+     "c": "Achte heute Abend darauf, ob sich eine Stelle deiner Matratze ungleichmäßig anfühlt."
+    },
+    "es": {
+     "t": "Lo básico de la comodidad del colchón",
+     "g": "Fíjate en qué significan apoyo y comodidad en un colchón.",
+     "p": [
+      "Un buen colchón te resulta firme y cómodo a la vez.",
+      "Tumbarte en tu postura habitual dice más que sentarte un momento.",
+      "Hasta los buenos colchones se desgastan con los años."
+     ],
+     "q": "¿Cómo se siente tu cama frente a la de un hotel o un amigo?",
+     "c": "Esta noche fíjate si alguna zona de tu colchón se siente irregular."
+    },
+    "fr": {
+     "t": "Les bases du confort d'un matelas",
+     "g": "Observe ce que soutien et confort signifient pour un matelas.",
+     "p": [
+      "Un bon matelas te paraît à la fois soutenant et confortable.",
+      "S'allonger dans ta position habituelle en dit plus qu'un bref essai assis.",
+      "Même les bons matelas s'usent au fil des années."
+     ],
+     "q": "Comment ton lit se compare-t-il à celui d'un hôtel ou d'un ami ?",
+     "c": "Ce soir, repère si une zone de ton matelas te semble inégale."
+    },
+    "it": {
+     "t": "Le basi del comfort del materasso",
+     "g": "Nota cosa significano sostegno e comfort in un materasso.",
+     "p": [
+      "Un buon materasso ti sembra al tempo stesso di sostegno e comodo.",
+      "Sdraiarti nella tua posizione abituale dice più di una breve seduta.",
+      "Anche i buoni materassi si consumano con gli anni."
+     ],
+     "q": "Come ti sembra il tuo letto rispetto a quello di un hotel o di un amico?",
+     "c": "Stasera nota se una zona del materasso ti sembra irregolare."
+    },
+    "pt": {
+     "t": "O essencial do conforto do colchão",
+     "g": "Repara no que significam apoio e conforto num colchão.",
+     "p": [
+      "Um bom colchão parece-te firme e confortável ao mesmo tempo.",
+      "Deitares-te na tua posição habitual diz mais do que sentares-te um instante.",
+      "Até os bons colchões se desgastam com os anos."
+     ],
+     "q": "Como se compara a tua cama com a de um hotel ou de um amigo?",
+     "c": "Esta noite, repara se alguma zona do colchão parece irregular."
+    },
+    "pt_BR": {
+     "t": "O básico do conforto do colchão",
+     "g": "Perceba o que significam apoio e conforto num colchão.",
+     "p": [
+      "Um bom colchão parece firme e confortável ao mesmo tempo.",
+      "Deitar na sua posição habitual diz mais do que sentar um instante.",
+      "Até os bons colchões se desgastam com os anos."
+     ],
+     "q": "Como a sua cama se compara com a de um hotel ou de um amigo?",
+     "c": "Hoje à noite, perceba se alguma parte do colchão parece irregular."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sleeping positions",
+     "g": "Learn general comfort tips for back, side and front sleeping.",
+     "p": [
+      "Back sleeping can feel comfy with a pillow under the knees.",
+      "Side sleeping often feels good with a pillow between the knees.",
+      "Front sleeping is easier with a thin pillow or none."
+     ],
+     "q": "Which position do you naturally fall asleep in?",
+     "c": "Tonight, try one small pillow tweak for your usual position."
+    },
+    "de": {
+     "t": "Schlafpositionen",
+     "g": "Lerne allgemeine Komforttipps für Rücken-, Seiten- und Bauchlage.",
+     "p": [
+      "Die Rückenlage fühlt sich mit einem Kissen unter den Knien oft bequem an.",
+      "Die Seitenlage fühlt sich oft mit einem Kissen zwischen den Knien gut an.",
+      "Die Bauchlage geht leichter mit einem flachen oder keinem Kissen."
+     ],
+     "q": "In welcher Position schläfst du von selbst ein?",
+     "c": "Probiere heute Abend eine kleine Kissenänderung für deine übliche Position."
+    },
+    "es": {
+     "t": "Posturas para dormir",
+     "g": "Aprende consejos generales de comodidad para dormir boca arriba, de lado o boca abajo.",
+     "p": [
+      "Boca arriba suele ser cómodo con una almohada bajo las rodillas.",
+      "De lado suele sentar bien con una almohada entre las rodillas.",
+      "Boca abajo resulta más fácil con una almohada fina o sin ella."
+     ],
+     "q": "¿En qué postura te duermes de forma natural?",
+     "c": "Esta noche prueba un pequeño ajuste de almohada para tu postura habitual."
+    },
+    "fr": {
+     "t": "Positions de sommeil",
+     "g": "Apprends des conseils généraux de confort pour dormir sur le dos, le côté ou le ventre.",
+     "p": [
+      "Sur le dos, c'est souvent confortable avec un coussin sous les genoux.",
+      "Sur le côté, c'est souvent agréable avec un coussin entre les genoux.",
+      "Sur le ventre, c'est plus facile avec un oreiller fin ou sans oreiller."
+     ],
+     "q": "Dans quelle position t'endors-tu naturellement ?",
+     "c": "Ce soir, essaie un petit ajustement de coussin pour ta position habituelle."
+    },
+    "it": {
+     "t": "Posizioni per dormire",
+     "g": "Impara consigli generali di comfort per dormire supino, su un fianco o prono.",
+     "p": [
+      "Supino spesso è comodo con un cuscino sotto le ginocchia.",
+      "Su un fianco spesso va bene con un cuscino tra le ginocchia.",
+      "A pancia in giù è più facile con un cuscino basso o senza."
+     ],
+     "q": "In quale posizione ti addormenti naturalmente?",
+     "c": "Stasera prova un piccolo ritocco del cuscino per la tua posizione abituale."
+    },
+    "pt": {
+     "t": "Posições para dormir",
+     "g": "Aprende dicas gerais de conforto para dormir de costas, de lado ou de barriga para baixo.",
+     "p": [
+      "De costas costuma ser confortável com uma almofada sob os joelhos.",
+      "De lado costuma saber bem com uma almofada entre os joelhos.",
+      "De barriga para baixo é mais fácil com uma almofada fina ou sem ela."
+     ],
+     "q": "Em que posição adormeces naturalmente?",
+     "c": "Esta noite, experimenta um pequeno ajuste de almofada para a tua posição habitual."
+    },
+    "pt_BR": {
+     "t": "Posições para dormir",
+     "g": "Aprenda dicas gerais de conforto para dormir de barriga para cima, de lado ou de bruços.",
+     "p": [
+      "De barriga para cima costuma ser confortável com um travesseiro sob os joelhos.",
+      "De lado costuma ser bom com um travesseiro entre os joelhos.",
+      "De bruços fica mais fácil com um travesseiro fino ou sem ele."
+     ],
+     "q": "Em que posição você pega no sono naturalmente?",
+     "c": "Hoje à noite, teste um pequeno ajuste de travesseiro para a sua posição habitual."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Quiet please",
+     "g": "See how noise disturbs sleep, and why sudden sounds bother us most.",
+     "p": [
+      "The brain keeps listening a little even while asleep.",
+      "Sudden sounds, like a door slam, disturb more than steady hum.",
+      "You may not remember waking but still sleep lighter."
+     ],
+     "q": "What sounds do you hear from your bed at night?",
+     "c": "Tonight, listen for two minutes and name every sound you hear."
+    },
+    "de": {
+     "t": "Ruhe bitte",
+     "g": "Sieh, wie Lärm den Schlaf stört und warum plötzliche Geräusche am meisten nerven.",
+     "p": [
+      "Das Gehirn hört auch im Schlaf ein wenig weiter zu.",
+      "Plötzliche Geräusche wie ein Türknall stören mehr als gleichmäßiges Summen.",
+      "Du erinnerst dich vielleicht nicht ans Aufwachen und schläfst trotzdem leichter."
+     ],
+     "q": "Welche Geräusche hörst du nachts von deinem Bett aus?",
+     "c": "Lausche heute Abend zwei Minuten und benenne jedes Geräusch."
+    },
+    "es": {
+     "t": "Silencio, por favor",
+     "g": "Mira cómo el ruido perturba el sueño y por qué molestan más los sonidos repentinos.",
+     "p": [
+      "El cerebro sigue escuchando un poco incluso dormido.",
+      "Los sonidos repentinos, como un portazo, molestan más que un zumbido constante.",
+      "Puede que no recuerdes despertar y aun así duermas más ligero."
+     ],
+     "q": "¿Qué sonidos oyes desde tu cama por la noche?",
+     "c": "Esta noche escucha dos minutos y nombra cada sonido que oigas."
+    },
+    "fr": {
+     "t": "Silence, s'il te plaît",
+     "g": "Vois comment le bruit perturbe le sommeil, et pourquoi les sons soudains gênent le plus.",
+     "p": [
+      "Le cerveau continue d'écouter un peu même endormi.",
+      "Les bruits soudains, comme une porte qui claque, gênent plus qu'un bourdonnement constant.",
+      "Tu peux ne pas te souvenir de t'être réveillé et dormir pourtant plus léger."
+     ],
+     "q": "Quels bruits entends-tu depuis ton lit la nuit ?",
+     "c": "Ce soir, écoute pendant deux minutes et nomme chaque bruit."
+    },
+    "it": {
+     "t": "Silenzio, per favore",
+     "g": "Scopri come il rumore disturba il sonno e perché i suoni improvvisi infastidiscono di più.",
+     "p": [
+      "Il cervello continua ad ascoltare un po' anche nel sonno.",
+      "I suoni improvvisi, come una porta che sbatte, disturbano più di un ronzio costante.",
+      "Puoi non ricordare il risveglio e dormire comunque più leggero."
+     ],
+     "q": "Quali suoni senti dal letto di notte?",
+     "c": "Stasera ascolta per due minuti e nomina ogni suono che senti."
+    },
+    "pt": {
+     "t": "Silêncio, por favor",
+     "g": "Vê como o ruído perturba o sono e porque os sons repentinos incomodam mais.",
+     "p": [
+      "O cérebro continua a ouvir um pouco mesmo a dormir.",
+      "Sons repentinos, como uma porta a bater, incomodam mais do que um zumbido constante.",
+      "Podes não te lembrar de acordar e ainda assim dormir mais leve."
+     ],
+     "q": "Que sons ouves da tua cama à noite?",
+     "c": "Esta noite, escuta durante dois minutos e nomeia cada som que ouvires."
+    },
+    "pt_BR": {
+     "t": "Silêncio, por favor",
+     "g": "Veja como o ruído perturba o sono e por que os sons repentinos incomodam mais.",
+     "p": [
+      "O cérebro continua ouvindo um pouco mesmo dormindo.",
+      "Sons repentinos, como uma porta batendo, incomodam mais que um zumbido constante.",
+      "Você pode não lembrar de acordar e ainda assim dormir mais leve."
+     ],
+     "q": "Que sons você ouve da sua cama à noite?",
+     "c": "Hoje à noite, escute por dois minutos e nomeie cada som que ouvir."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Earplugs and white noise",
+     "g": "Try simple tools that soften or mask background noise.",
+     "p": [
+      "Soft earplugs reduce sound; choose a comfortable fit.",
+      "White noise or a fan gives a steady blanket of sound.",
+      "Keep volume low and place any device a little away from your bed."
+     ],
+     "q": "Would you prefer silence, earplugs or gentle steady sound?",
+     "c": "Tonight, try one noise tool, like a fan or soft earplugs."
+    },
+    "de": {
+     "t": "Ohrstöpsel und weißes Rauschen",
+     "g": "Probiere einfache Hilfen, die Hintergrundlärm dämpfen oder überdecken.",
+     "p": [
+      "Weiche Ohrstöpsel mindern Geräusche; achte auf bequemen Sitz.",
+      "Weißes Rauschen oder ein Ventilator liefert eine gleichmäßige Geräuschdecke.",
+      "Halte die Lautstärke niedrig und stell Geräte etwas vom Bett entfernt auf."
+     ],
+     "q": "Würdest du Stille, Ohrstöpsel oder sanftes Dauergeräusch bevorzugen?",
+     "c": "Probiere heute Abend eine Lärmhilfe aus, etwa Ventilator oder weiche Ohrstöpsel."
+    },
+    "es": {
+     "t": "Tapones y ruido blanco",
+     "g": "Prueba herramientas sencillas que suavizan o tapan el ruido de fondo.",
+     "p": [
+      "Los tapones blandos reducen el sonido; elige un ajuste cómodo.",
+      "El ruido blanco o un ventilador da una manta constante de sonido.",
+      "Mantén el volumen bajo y coloca cualquier aparato algo lejos de la cama."
+     ],
+     "q": "¿Preferirías silencio, tapones o un sonido suave y constante?",
+     "c": "Esta noche prueba una herramienta contra el ruido, como un ventilador o tapones blandos."
+    },
+    "fr": {
+     "t": "Bouchons d'oreilles et bruit blanc",
+     "g": "Essaie des outils simples qui atténuent ou masquent le bruit de fond.",
+     "p": [
+      "Des bouchons souples réduisent le son ; choisis un ajustement confortable.",
+      "Un bruit blanc ou un ventilateur offre un voile sonore régulier.",
+      "Garde le volume bas et place l'appareil un peu loin du lit."
+     ],
+     "q": "Préférerais-tu le silence, des bouchons ou un son doux et régulier ?",
+     "c": "Ce soir, essaie un outil anti-bruit, comme un ventilateur ou des bouchons souples."
+    },
+    "it": {
+     "t": "Tappi e rumore bianco",
+     "g": "Prova strumenti semplici che attutiscono o coprono il rumore di fondo.",
+     "p": [
+      "I tappi morbidi riducono il suono; scegli una misura comoda.",
+      "Il rumore bianco o un ventilatore dà una coltre di suono costante.",
+      "Tieni il volume basso e metti l'apparecchio un po' lontano dal letto."
+     ],
+     "q": "Preferiresti silenzio, tappi o un suono dolce e costante?",
+     "c": "Stasera prova uno strumento contro il rumore, come un ventilatore o tappi morbidi."
+    },
+    "pt": {
+     "t": "Tampões e ruído branco",
+     "g": "Experimenta ferramentas simples que suavizam ou disfarçam o ruído de fundo.",
+     "p": [
+      "Tampões macios reduzem o som; escolhe um ajuste confortável.",
+      "Ruído branco ou uma ventoinha dá um manto de som constante.",
+      "Mantém o volume baixo e coloca o aparelho um pouco longe da cama."
+     ],
+     "q": "Preferias silêncio, tampões ou um som suave e constante?",
+     "c": "Esta noite, experimenta uma ferramenta contra o ruído, como ventoinha ou tampões macios."
+    },
+    "pt_BR": {
+     "t": "Protetores e ruído branco",
+     "g": "Experimente ferramentas simples que suavizam ou disfarçam o ruído de fundo.",
+     "p": [
+      "Protetores de ouvido macios reduzem o som; escolha um ajuste confortável.",
+      "Ruído branco ou um ventilador dá um manto de som constante.",
+      "Mantenha o volume baixo e deixe o aparelho um pouco longe da cama."
+     ],
+     "q": "Você preferiria silêncio, protetores ou um som suave e constante?",
+     "c": "Hoje à noite, teste uma ferramenta contra o ruído, como ventilador ou protetores macios."
+    }
+   }
+  }
+ ]
+}

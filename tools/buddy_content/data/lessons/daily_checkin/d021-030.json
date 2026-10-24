@@ -1,0 +1,835 @@
+{
+ "topic": "daily_checkin",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Three good things",
+     "g": "List three good things from today, big or small.",
+     "p": [
+      "Three good things is a classic, simple way to end the day on a high note.",
+      "They can be tiny: a tasty snack, a text from a friend, a free seat.",
+      "Doing this regularly helps your mind notice more of the positive."
+     ],
+     "q": "What are your three good things today?",
+     "c": "Write your three good things on paper or in your phone."
+    },
+    "de": {
+     "t": "Drei gute Dinge",
+     "g": "Nenne drei gute Dinge von heute, große oder kleine.",
+     "p": [
+      "Drei gute Dinge sind ein einfacher Klassiker, um den Tag positiv zu beenden.",
+      "Sie dürfen winzig sein: ein Snack, eine Nachricht von Freunden, ein freier Sitzplatz.",
+      "Regelmäßig geübt, bemerkt dein Kopf mit der Zeit mehr Positives."
+     ],
+     "q": "Was sind heute deine drei guten Dinge?",
+     "c": "Schreib deine drei guten Dinge auf Papier oder ins Handy."
+    },
+    "es": {
+     "t": "Tres cosas buenas",
+     "g": "Enumera tres cosas buenas de hoy, grandes o pequeñas.",
+     "p": [
+      "Tres cosas buenas es un clásico sencillo para cerrar el día con buen pie.",
+      "Pueden ser diminutas: un tentempié rico, un mensaje de un amigo, un asiento libre.",
+      "Hacerlo con frecuencia ayuda a tu mente a notar más lo positivo."
+     ],
+     "q": "¿Cuáles son tus tres cosas buenas de hoy?",
+     "c": "Escribe tus tres cosas buenas en papel o en el móvil."
+    },
+    "fr": {
+     "t": "Trois bonnes choses",
+     "g": "Cite trois bonnes choses d'aujourd'hui, grandes ou petites.",
+     "p": [
+      "Trois bonnes choses, c'est un classique simple pour finir la journée sur une note positive.",
+      "Elles peuvent être minuscules : un en-cas, un message d'un ami, une place assise.",
+      "Le faire régulièrement aide ton esprit à remarquer plus de positif."
+     ],
+     "q": "Quelles sont tes trois bonnes choses aujourd'hui ?",
+     "c": "Note tes trois bonnes choses sur papier ou dans ton téléphone."
+    },
+    "it": {
+     "t": "Tre cose belle",
+     "g": "Elenca tre cose belle di oggi, grandi o piccole.",
+     "p": [
+      "Tre cose belle è un classico semplice per chiudere la giornata col sorriso.",
+      "Possono essere minuscole: uno spuntino, un messaggio di un amico, un posto libero.",
+      "Farlo con regolarità aiuta la mente a notare più cose positive."
+     ],
+     "q": "Quali sono le tue tre cose belle di oggi?",
+     "c": "Scrivi le tue tre cose belle su carta o nel telefono."
+    },
+    "pt": {
+     "t": "Três coisas boas",
+     "g": "Enumera três coisas boas de hoje, grandes ou pequenas.",
+     "p": [
+      "Três coisas boas é um clássico simples para acabar o dia em alta.",
+      "Podem ser minúsculas: um lanche, uma mensagem de um amigo, um lugar sentado.",
+      "Fazer isto com regularidade ajuda a mente a notar mais o positivo."
+     ],
+     "q": "Quais são as tuas três coisas boas de hoje?",
+     "c": "Escreve as tuas três coisas boas em papel ou no telemóvel."
+    },
+    "pt_BR": {
+     "t": "Três coisas boas",
+     "g": "Liste três coisas boas de hoje, grandes ou pequenas.",
+     "p": [
+      "Três coisas boas é um clássico simples para terminar o dia em alta.",
+      "Podem ser pequenas: um lanche, uma mensagem de um amigo, um lugar para sentar.",
+      "Fazer isso com frequência ajuda a mente a notar mais o positivo."
+     ],
+     "q": "Quais são as suas três coisas boas de hoje?",
+     "c": "Escreva as suas três coisas boas no papel ou no celular."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your evening plans",
+     "g": "Tell me how you like to spend the end of your day.",
+     "p": [
+      "Evenings are your time to slow down and recharge.",
+      "Some people cook, walk or watch something; others call a friend.",
+      "A tiny evening ritual can mark the line between work and rest."
+     ],
+     "q": "How do you plan to spend your evening?",
+     "c": "Create one little evening ritual, like tea and a stretch."
+    },
+    "de": {
+     "t": "Deine Abendpläne",
+     "g": "Erzähl, wie du den Tagesausklang am liebsten verbringst.",
+     "p": [
+      "Der Abend ist deine Zeit zum Runterkommen und Auftanken.",
+      "Manche kochen, gehen spazieren oder schauen etwas; andere rufen Freunde an.",
+      "Ein kleines Abendritual kann die Grenze zwischen Arbeit und Erholung markieren."
+     ],
+     "q": "Wie willst du heute Abend verbringen?",
+     "c": "Erfinde ein kleines Abendritual, etwa Tee und etwas Dehnen."
+    },
+    "es": {
+     "t": "Tus planes de la tarde-noche",
+     "g": "Cuéntame cómo te gusta pasar el final del día.",
+     "p": [
+      "La noche es tu momento para bajar el ritmo y recargar pilas.",
+      "Hay quien cocina, pasea o ve algo; otros llaman a un amigo.",
+      "Un pequeño ritual nocturno puede marcar la frontera entre trabajo y descanso."
+     ],
+     "q": "¿Cómo piensas pasar la noche?",
+     "c": "Crea un pequeño ritual nocturno, como un té y estirarte."
+    },
+    "fr": {
+     "t": "Tes projets de soirée",
+     "g": "Dis-moi comment tu aimes terminer ta journée.",
+     "p": [
+      "La soirée est ton moment pour ralentir et te ressourcer.",
+      "Certains cuisinent, marchent ou regardent quelque chose ; d'autres appellent un ami.",
+      "Un petit rituel du soir peut marquer la frontière entre travail et repos."
+     ],
+     "q": "Comment comptes-tu passer ta soirée ?",
+     "c": "Crée un petit rituel du soir, comme une tisane et un étirement."
+    },
+    "it": {
+     "t": "I tuoi programmi per la sera",
+     "g": "Raccontami come ti piace passare la fine della giornata.",
+     "p": [
+      "La sera è il tuo momento per rallentare e ricaricarti.",
+      "C'è chi cucina, passeggia o guarda qualcosa; altri chiamano un amico.",
+      "Un piccolo rituale serale può segnare il confine tra lavoro e riposo."
+     ],
+     "q": "Come pensi di passare la serata?",
+     "c": "Crea un piccolo rituale serale, come una tisana e un po' di stretching."
+    },
+    "pt": {
+     "t": "Os teus planos para a noite",
+     "g": "Conta-me como gostas de passar o fim do dia.",
+     "p": [
+      "A noite é o teu momento para abrandar e recarregar energias.",
+      "Há quem cozinhe, passeie ou veja algo; outros ligam a um amigo.",
+      "Um pequeno ritual noturno pode marcar a fronteira entre trabalho e descanso."
+     ],
+     "q": "Como pensas passar a noite?",
+     "c": "Cria um pequeno ritual noturno, como um chá e alongamentos."
+    },
+    "pt_BR": {
+     "t": "Seus planos para a noite",
+     "g": "Conte como você gosta de passar o fim do dia.",
+     "p": [
+      "A noite é o seu momento de desacelerar e recarregar as energias.",
+      "Tem quem cozinhe, caminhe ou assista algo; outros ligam para um amigo.",
+      "Um pequeno ritual noturno pode marcar a fronteira entre trabalho e descanso."
+     ],
+     "q": "Como você pensa em passar a noite?",
+     "c": "Crie um pequeno ritual noturno, como um chá e um alongamento."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Something you learned today",
+     "g": "Share a fact, skill or idea you picked up today.",
+     "p": [
+      "Every day teaches us something, even if we do not notice.",
+      "It might be a new word, a shortcut, a recipe tip or a bit of news.",
+      "Saying it out loud helps you remember it better."
+     ],
+     "q": "What did you learn today?",
+     "c": "Teach today's new thing to someone in one sentence."
+    },
+    "de": {
+     "t": "Etwas, das du heute gelernt hast",
+     "g": "Teile eine Tatsache, Fähigkeit oder Idee, die du heute aufgeschnappt hast.",
+     "p": [
+      "Jeder Tag lehrt uns etwas, auch wenn wir es nicht merken.",
+      "Es kann ein neues Wort, ein Trick, ein Kochtipp oder eine Neuigkeit sein.",
+      "Es laut auszusprechen hilft dir, es besser zu behalten."
+     ],
+     "q": "Was hast du heute gelernt?",
+     "c": "Erkläre das heutige Neue jemandem in einem Satz."
+    },
+    "es": {
+     "t": "Algo que aprendiste hoy",
+     "g": "Comparte un dato, habilidad o idea que aprendiste hoy.",
+     "p": [
+      "Cada día nos enseña algo, aunque no nos demos cuenta.",
+      "Puede ser una palabra nueva, un atajo, un truco de cocina o una noticia.",
+      "Decirlo en voz alta te ayuda a recordarlo mejor."
+     ],
+     "q": "¿Qué aprendiste hoy?",
+     "c": "Explícale lo nuevo de hoy a alguien en una frase."
+    },
+    "fr": {
+     "t": "Ce que tu as appris aujourd'hui",
+     "g": "Partage un fait, une compétence ou une idée appris aujourd'hui.",
+     "p": [
+      "Chaque jour nous apprend quelque chose, même sans qu'on s'en rende compte.",
+      "Ça peut être un mot nouveau, un raccourci, une astuce de cuisine ou une info.",
+      "Le dire à voix haute t'aide à mieux le retenir."
+     ],
+     "q": "Qu'as-tu appris aujourd'hui ?",
+     "c": "Explique la nouveauté du jour à quelqu'un en une phrase."
+    },
+    "it": {
+     "t": "Qualcosa che hai imparato oggi",
+     "g": "Condividi un fatto, un'abilità o un'idea appresa oggi.",
+     "p": [
+      "Ogni giorno ci insegna qualcosa, anche se non ce ne accorgiamo.",
+      "Può essere una parola nuova, una scorciatoia, un trucco in cucina o una notizia.",
+      "Dirlo ad alta voce ti aiuta a ricordarlo meglio."
+     ],
+     "q": "Cosa hai imparato oggi?",
+     "c": "Spiega la novità di oggi a qualcuno in una frase."
+    },
+    "pt": {
+     "t": "Algo que aprendeste hoje",
+     "g": "Partilha um facto, competência ou ideia que apanhaste hoje.",
+     "p": [
+      "Cada dia ensina-nos algo, mesmo sem darmos por isso.",
+      "Pode ser uma palavra nova, um atalho, uma dica de cozinha ou uma notícia.",
+      "Dizê-lo em voz alta ajuda-te a lembrar melhor."
+     ],
+     "q": "O que aprendeste hoje?",
+     "c": "Explica a novidade de hoje a alguém numa frase."
+    },
+    "pt_BR": {
+     "t": "Algo que você aprendeu hoje",
+     "g": "Compartilhe um fato, habilidade ou ideia que você aprendeu hoje.",
+     "p": [
+      "Cada dia nos ensina algo, mesmo sem a gente perceber.",
+      "Pode ser uma palavra nova, um atalho, uma dica de cozinha ou uma notícia.",
+      "Dizer em voz alta ajuda você a lembrar melhor."
+     ],
+     "q": "O que você aprendeu hoje?",
+     "c": "Explique a novidade de hoje para alguém em uma frase."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "On the way",
+     "g": "Tell me what happened on your commute, walk or trip today.",
+     "p": [
+      "Journeys are full of tiny stories: faces, sounds and shortcuts.",
+      "Even a short trip to the shop can include something worth noting.",
+      "Stay aware of your surroundings and keep safe while you travel."
+     ],
+     "q": "What was your journey like today?",
+     "c": "On your next trip, notice three things around you."
+    },
+    "de": {
+     "t": "Unterwegs",
+     "g": "Erzähl, was auf deinem Arbeitsweg, Spaziergang oder Ausflug passiert ist.",
+     "p": [
+      "Wege sind voller kleiner Geschichten: Gesichter, Geräusche und Abkürzungen.",
+      "Selbst ein kurzer Weg zum Laden kann etwas Erwähnenswertes enthalten.",
+      "Achte unterwegs auf deine Umgebung und bleib sicher."
+     ],
+     "q": "Wie war dein Weg heute?",
+     "c": "Nimm auf deinem nächsten Weg drei Dinge um dich herum bewusst wahr."
+    },
+    "es": {
+     "t": "De camino",
+     "g": "Cuéntame qué pasó en tu trayecto, paseo o viaje de hoy.",
+     "p": [
+      "Los trayectos están llenos de pequeñas historias: caras, sonidos y atajos.",
+      "Hasta un viaje corto a la tienda puede tener algo digno de contar.",
+      "Mantente atento a tu entorno y cuídate al desplazarte."
+     ],
+     "q": "¿Cómo fue tu trayecto hoy?",
+     "c": "En tu próximo trayecto, fíjate en tres cosas a tu alrededor."
+    },
+    "fr": {
+     "t": "En chemin",
+     "g": "Raconte ce qui s'est passé pendant ton trajet, ta balade ou ton déplacement.",
+     "p": [
+      "Les trajets sont pleins de petites histoires : visages, sons et raccourcis.",
+      "Même un court trajet jusqu'au magasin peut offrir quelque chose à raconter.",
+      "Reste attentif à ton environnement et sois prudent en te déplaçant."
+     ],
+     "q": "Comment s'est passé ton trajet aujourd'hui ?",
+     "c": "Lors de ton prochain trajet, remarque trois choses autour de toi."
+    },
+    "it": {
+     "t": "Per strada",
+     "g": "Raccontami cosa è successo nel tragitto, nella passeggiata o nel viaggio di oggi.",
+     "p": [
+      "I tragitti sono pieni di piccole storie: volti, suoni e scorciatoie.",
+      "Anche una breve uscita al negozio può avere qualcosa da raccontare.",
+      "Resta attento a ciò che ti circonda e viaggia in sicurezza."
+     ],
+     "q": "Com'è stato il tuo tragitto oggi?",
+     "c": "Al prossimo tragitto, nota tre cose intorno a te."
+    },
+    "pt": {
+     "t": "A caminho",
+     "g": "Conta-me o que aconteceu no teu trajeto, passeio ou viagem de hoje.",
+     "p": [
+      "Os trajetos estão cheios de pequenas histórias: rostos, sons e atalhos.",
+      "Até uma ida rápida à loja pode ter algo digno de nota.",
+      "Mantém-te atento ao que te rodeia e viaja em segurança."
+     ],
+     "q": "Como foi o teu trajeto hoje?",
+     "c": "No próximo trajeto, repara em três coisas à tua volta."
+    },
+    "pt_BR": {
+     "t": "No caminho",
+     "g": "Conte o que aconteceu no seu trajeto, caminhada ou viagem de hoje.",
+     "p": [
+      "Os trajetos estão cheios de pequenas histórias: rostos, sons e atalhos.",
+      "Até uma ida rápida à loja pode ter algo que vale contar.",
+      "Fique atento ao que está à sua volta e viaje em segurança."
+     ],
+     "q": "Como foi o seu trajeto hoje?",
+     "c": "No próximo trajeto, repare em três coisas ao seu redor."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Today's colour",
+     "g": "If today were a colour, which one would it be and why?",
+     "p": [
+      "Colours are a playful way to describe feelings without long words.",
+      "Yellow might feel sunny, blue calm, grey quiet, red busy.",
+      "There is no wrong colour; it is your personal picture of today."
+     ],
+     "q": "What colour was your day, and why?",
+     "c": "Find something in your room that matches today's colour."
+    },
+    "de": {
+     "t": "Die Farbe des Tages",
+     "g": "Wenn der heutige Tag eine Farbe wäre, welche wäre es und warum?",
+     "p": [
+      "Farben beschreiben Gefühle spielerisch, ohne lange Worte.",
+      "Gelb wirkt vielleicht sonnig, Blau ruhig, Grau still, Rot geschäftig.",
+      "Es gibt keine falsche Farbe; es ist dein persönliches Bild des Tages."
+     ],
+     "q": "Welche Farbe hatte dein Tag, und warum?",
+     "c": "Finde in deinem Zimmer etwas, das zur heutigen Tagesfarbe passt."
+    },
+    "es": {
+     "t": "El color de hoy",
+     "g": "Si hoy fuera un color, ¿cuál sería y por qué?",
+     "p": [
+      "Los colores son una forma lúdica de describir emociones sin muchas palabras.",
+      "El amarillo puede sentirse soleado, el azul tranquilo, el gris callado, el rojo agitado.",
+      "No hay colores equivocados; es tu imagen personal del día."
+     ],
+     "q": "¿De qué color fue tu día y por qué?",
+     "c": "Busca algo en tu cuarto que coincida con el color de hoy."
+    },
+    "fr": {
+     "t": "La couleur du jour",
+     "g": "Si aujourd'hui était une couleur, laquelle serait-ce et pourquoi ?",
+     "p": [
+      "Les couleurs décrivent les émotions de façon ludique, sans longs mots.",
+      "Le jaune évoque le soleil, le bleu le calme, le gris le silence, le rouge l'agitation.",
+      "Il n'y a pas de mauvaise couleur ; c'est ton image personnelle du jour."
+     ],
+     "q": "De quelle couleur était ta journée, et pourquoi ?",
+     "c": "Trouve dans ta pièce quelque chose de la couleur d'aujourd'hui."
+    },
+    "it": {
+     "t": "Il colore di oggi",
+     "g": "Se oggi fosse un colore, quale sarebbe e perché?",
+     "p": [
+      "I colori sono un modo giocoso per descrivere le emozioni senza molte parole.",
+      "Il giallo può sembrare solare, il blu calmo, il grigio silenzioso, il rosso frenetico.",
+      "Non esistono colori sbagliati; è la tua immagine personale della giornata."
+     ],
+     "q": "Di che colore è stata la tua giornata e perché?",
+     "c": "Trova nella tua stanza qualcosa del colore di oggi."
+    },
+    "pt": {
+     "t": "A cor de hoje",
+     "g": "Se hoje fosse uma cor, qual seria e porquê?",
+     "p": [
+      "As cores são uma forma lúdica de descrever sentimentos sem muitas palavras.",
+      "O amarelo pode parecer solar, o azul calmo, o cinzento silencioso, o vermelho agitado.",
+      "Não há cores erradas; é a tua imagem pessoal do dia."
+     ],
+     "q": "De que cor foi o teu dia e porquê?",
+     "c": "Encontra algo no teu quarto da cor de hoje."
+    },
+    "pt_BR": {
+     "t": "A cor de hoje",
+     "g": "Se hoje fosse uma cor, qual seria e por quê?",
+     "p": [
+      "As cores são um jeito divertido de descrever sentimentos sem muitas palavras.",
+      "O amarelo pode parecer ensolarado, o azul calmo, o cinza quieto, o vermelho agitado.",
+      "Não existe cor errada; é a sua imagem pessoal do dia."
+     ],
+     "q": "De que cor foi o seu dia e por quê?",
+     "c": "Encontre algo no seu quarto da cor de hoje."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Time for yourself",
+     "g": "Think of a moment today that was just for you.",
+     "p": [
+      "Time for yourself is not selfish; it helps you feel balanced.",
+      "It can be five minutes: a hobby, a book, a quiet cup of tea.",
+      "If you never find any time for yourself, it is worth rethinking your week."
+     ],
+     "q": "When did you have a moment just for you today?",
+     "c": "Block five minutes tomorrow that belong only to you."
+    },
+    "de": {
+     "t": "Zeit für dich",
+     "g": "Denk an einen Moment heute, der nur dir gehörte.",
+     "p": [
+      "Zeit für dich ist nicht egoistisch; sie hilft dir, im Gleichgewicht zu bleiben.",
+      "Fünf Minuten genügen: ein Hobby, ein Buch, eine stille Tasse Tee.",
+      "Findest du nie Zeit für dich, lohnt es sich, die Woche neu zu ordnen."
+     ],
+     "q": "Wann hattest du heute einen Moment nur für dich?",
+     "c": "Reserviere morgen fünf Minuten, die nur dir gehören."
+    },
+    "es": {
+     "t": "Tiempo para ti",
+     "g": "Piensa en un momento de hoy que fue solo para ti.",
+     "p": [
+      "El tiempo para ti no es egoísta; te ayuda a sentirte en equilibrio.",
+      "Pueden ser cinco minutos: una afición, un libro, un té tranquilo.",
+      "Si nunca encuentras tiempo para ti, vale la pena replantear tu semana."
+     ],
+     "q": "¿Cuándo tuviste hoy un momento solo para ti?",
+     "c": "Reserva mañana cinco minutos que sean solo tuyos."
+    },
+    "fr": {
+     "t": "Du temps pour toi",
+     "g": "Pense à un moment d'aujourd'hui qui n'appartenait qu'à toi.",
+     "p": [
+      "Du temps pour soi n'est pas égoïste ; ça aide à rester équilibré.",
+      "Cinq minutes suffisent : un loisir, un livre, une tasse de thé au calme.",
+      "Si tu ne trouves jamais de temps pour toi, repenser ta semaine peut aider."
+     ],
+     "q": "Quand as-tu eu un moment rien que pour toi aujourd'hui ?",
+     "c": "Réserve demain cinq minutes qui n'appartiennent qu'à toi."
+    },
+    "it": {
+     "t": "Tempo per te",
+     "g": "Pensa a un momento di oggi che era solo per te.",
+     "p": [
+      "Il tempo per sé non è egoismo; ti aiuta a sentirti in equilibrio.",
+      "Bastano cinque minuti: un hobby, un libro, una tazza di tè in pace.",
+      "Se non trovi mai tempo per te, vale la pena ripensare la tua settimana."
+     ],
+     "q": "Quando hai avuto oggi un momento tutto per te?",
+     "c": "Riserva domani cinque minuti che siano solo tuoi."
+    },
+    "pt": {
+     "t": "Tempo para ti",
+     "g": "Pensa num momento de hoje que foi só para ti.",
+     "p": [
+      "Tempo para ti não é egoísmo; ajuda-te a sentir equilíbrio.",
+      "Podem ser cinco minutos: um passatempo, um livro, um chá tranquilo.",
+      "Se nunca encontras tempo para ti, vale a pena repensar a tua semana."
+     ],
+     "q": "Quando tiveste hoje um momento só para ti?",
+     "c": "Reserva amanhã cinco minutos que sejam só teus."
+    },
+    "pt_BR": {
+     "t": "Tempo para você",
+     "g": "Pense em um momento de hoje que foi só seu.",
+     "p": [
+      "Tempo para si não é egoísmo; ajuda você a se sentir em equilíbrio.",
+      "Podem ser cinco minutos: um hobby, um livro, um chá tranquilo.",
+      "Se você nunca acha tempo para si, vale repensar a sua semana."
+     ],
+     "q": "Quando você teve hoje um momento só seu?",
+     "c": "Reserve amanhã cinco minutos que sejam só seus."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Something you're proud of",
+     "g": "Share a recent thing you did that you feel good about.",
+     "p": [
+      "Pride is not boasting; it is honest appreciation of your effort.",
+      "Proud moments can be small: finishing a book or being patient.",
+      "Remembering them on tough days gives you a boost."
+     ],
+     "q": "What are you proud of lately?",
+     "c": "Tell one trusted person about something you are proud of."
+    },
+    "de": {
+     "t": "Worauf du stolz bist",
+     "g": "Erzähl von etwas Kürzlichem, bei dem du dich gut fühlst.",
+     "p": [
+      "Stolz ist keine Angeberei, sondern ehrliche Wertschätzung deiner Mühe.",
+      "Stolze Momente dürfen klein sein: ein Buch beenden oder geduldig bleiben.",
+      "An sie zu denken gibt dir an schweren Tagen Rückenwind."
+     ],
+     "q": "Worauf bist du in letzter Zeit stolz?",
+     "c": "Erzähl einer vertrauten Person von etwas, worauf du stolz bist."
+    },
+    "es": {
+     "t": "Algo de lo que estás orgulloso",
+     "g": "Comparte algo reciente que hiciste y que te hace sentir bien.",
+     "p": [
+      "El orgullo no es presumir; es valorar con honestidad tu esfuerzo.",
+      "Los momentos de orgullo pueden ser pequeños: terminar un libro o tener paciencia.",
+      "Recordarlos en días difíciles te da un empujón."
+     ],
+     "q": "¿De qué te sientes orgulloso últimamente?",
+     "c": "Cuéntale a alguien de confianza algo de lo que estés orgulloso."
+    },
+    "fr": {
+     "t": "Quelque chose dont tu es fier",
+     "g": "Partage une chose récente que tu as faite et dont tu es content.",
+     "p": [
+      "La fierté n'est pas de la vantardise ; c'est reconnaître honnêtement ses efforts.",
+      "Les moments de fierté peuvent être petits : finir un livre ou rester patient.",
+      "Y repenser les jours difficiles te redonne un coup de pouce."
+     ],
+     "q": "De quoi es-tu fier ces derniers temps ?",
+     "c": "Raconte à une personne de confiance quelque chose dont tu es fier."
+    },
+    "it": {
+     "t": "Qualcosa di cui sei orgoglioso",
+     "g": "Condividi una cosa recente che hai fatto e di cui sei contento.",
+     "p": [
+      "L'orgoglio non è vanto; è un onesto riconoscimento del tuo impegno.",
+      "I momenti di orgoglio possono essere piccoli: finire un libro o restare paziente.",
+      "Ricordarli nei giorni difficili ti dà una spinta."
+     ],
+     "q": "Di cosa sei orgoglioso ultimamente?",
+     "c": "Racconta a una persona fidata qualcosa di cui sei orgoglioso."
+    },
+    "pt": {
+     "t": "Algo de que te orgulhas",
+     "g": "Partilha algo recente que fizeste e que te faz sentir bem.",
+     "p": [
+      "O orgulho não é vaidade; é reconhecer com honestidade o teu esforço.",
+      "Os momentos de orgulho podem ser pequenos: acabar um livro ou ter paciência.",
+      "Lembrá-los em dias difíceis dá-te um impulso."
+     ],
+     "q": "De que te orgulhas ultimamente?",
+     "c": "Conta a alguém de confiança algo de que te orgulhes."
+    },
+    "pt_BR": {
+     "t": "Algo de que você se orgulha",
+     "g": "Compartilhe algo recente que você fez e que te faz sentir bem.",
+     "p": [
+      "Orgulho não é se gabar; é reconhecer com honestidade o seu esforço.",
+      "Momentos de orgulho podem ser pequenos: terminar um livro ou ter paciência.",
+      "Lembrar deles em dias difíceis dá um empurrão."
+     ],
+     "q": "Do que você se orgulha ultimamente?",
+     "c": "Conte para alguém de confiança algo de que você se orgulha."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Moving your body",
+     "g": "Remember a walk, stretch or dance that was part of your day.",
+     "p": [
+      "Gentle movement often lifts mood and energy.",
+      "Any movement counts: stairs, a stretch, dancing in the kitchen.",
+      "Move in ways that feel good and safe for your own body."
+     ],
+     "q": "How did you move your body today?",
+     "c": "Do a two-minute stretch or dance to one favourite song."
+    },
+    "de": {
+     "t": "Beweg dich",
+     "g": "Erinnere dich an einen Spaziergang, eine Dehnung oder einen Tanz heute.",
+     "p": [
+      "Sanfte Bewegung hebt oft Stimmung und Energie.",
+      "Jede Bewegung zählt: Treppen, Dehnen, in der Küche tanzen.",
+      "Beweg dich so, wie es sich für deinen Körper gut und sicher anfühlt."
+     ],
+     "q": "Wie hast du dich heute bewegt?",
+     "c": "Dehne dich zwei Minuten oder tanze zu einem Lieblingslied."
+    },
+    "es": {
+     "t": "Mueve el cuerpo",
+     "g": "Recuerda un paseo, estiramiento o baile que formó parte de tu día.",
+     "p": [
+      "El movimiento suave suele levantar el ánimo y la energía.",
+      "Cualquier movimiento cuenta: escaleras, estirarte, bailar en la cocina.",
+      "Muévete de formas que se sientan bien y seguras para tu cuerpo."
+     ],
+     "q": "¿Cómo moviste tu cuerpo hoy?",
+     "c": "Estírate o baila dos minutos con una canción favorita."
+    },
+    "fr": {
+     "t": "Bouger son corps",
+     "g": "Rappelle-toi une marche, un étirement ou une danse de ta journée.",
+     "p": [
+      "Un mouvement doux remonte souvent l'humeur et l'énergie.",
+      "Tout mouvement compte : escaliers, étirements, danser dans la cuisine.",
+      "Bouge de façon agréable et sûre pour ton propre corps."
+     ],
+     "q": "Comment as-tu bougé aujourd'hui ?",
+     "c": "Étire-toi ou danse deux minutes sur une chanson préférée."
+    },
+    "it": {
+     "t": "Muovi il corpo",
+     "g": "Ricorda una camminata, uno stretching o un ballo della tua giornata.",
+     "p": [
+      "Un movimento dolce spesso solleva umore ed energia.",
+      "Ogni movimento conta: scale, stretching, ballare in cucina.",
+      "Muoviti in modi piacevoli e sicuri per il tuo corpo."
+     ],
+     "q": "Come hai mosso il corpo oggi?",
+     "c": "Fai due minuti di stretching o balla una canzone preferita."
+    },
+    "pt": {
+     "t": "Mexe o corpo",
+     "g": "Lembra-te de uma caminhada, alongamento ou dança do teu dia.",
+     "p": [
+      "O movimento suave costuma elevar o humor e a energia.",
+      "Qualquer movimento conta: escadas, alongar, dançar na cozinha.",
+      "Mexe-te de formas que sejam boas e seguras para o teu corpo."
+     ],
+     "q": "Como mexeste o corpo hoje?",
+     "c": "Alonga-te ou dança dois minutos ao som de uma canção preferida."
+    },
+    "pt_BR": {
+     "t": "Mexa o corpo",
+     "g": "Lembre de uma caminhada, alongamento ou dança do seu dia.",
+     "p": [
+      "O movimento suave costuma elevar o humor e a energia.",
+      "Qualquer movimento conta: escadas, alongar, dançar na cozinha.",
+      "Mexa-se de formas que sejam boas e seguras para o seu corpo."
+     ],
+     "q": "Como você mexeu o corpo hoje?",
+     "c": "Alongue-se ou dance dois minutos com uma música favorita."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A message that made your day",
+     "g": "Recall a text, call or note that brightened things up.",
+     "p": [
+      "A warm message can change the whole feel of a day.",
+      "Think of who sent it and why it meant something to you.",
+      "You can pass it on by brightening someone else's day too."
+     ],
+     "q": "What message made you happy lately?",
+     "c": "Send a warm message to someone who might need one today."
+    },
+    "de": {
+     "t": "Eine Nachricht, die deinen Tag besser machte",
+     "g": "Erinnere dich an eine Nachricht, einen Anruf oder Zettel, der es heller machte.",
+     "p": [
+      "Eine herzliche Nachricht kann den ganzen Tag verändern.",
+      "Denk daran, wer sie geschickt hat und warum sie dir etwas bedeutete.",
+      "Du kannst es weitergeben und auch jemand anderem den Tag erhellen."
+     ],
+     "q": "Welche Nachricht hat dich zuletzt gefreut?",
+     "c": "Schick jemandem, der es brauchen könnte, heute eine warme Nachricht."
+    },
+    "es": {
+     "t": "Un mensaje que alegró tu día",
+     "g": "Recuerda un mensaje, llamada o nota que iluminó el día.",
+     "p": [
+      "Un mensaje cálido puede cambiar el ambiente de todo un día.",
+      "Piensa en quién lo envió y por qué significó algo para ti.",
+      "Puedes devolver el gesto alegrándole el día a otra persona."
+     ],
+     "q": "¿Qué mensaje te ha alegrado últimamente?",
+     "c": "Envía un mensaje cálido a alguien que quizá lo necesite hoy."
+    },
+    "fr": {
+     "t": "Un message qui a égayé ta journée",
+     "g": "Rappelle-toi un texto, un appel ou un mot qui a illuminé les choses.",
+     "p": [
+      "Un message chaleureux peut changer toute l'ambiance d'une journée.",
+      "Pense à qui l'a envoyé et pourquoi il a compté pour toi.",
+      "Tu peux le transmettre en égayant à ton tour la journée de quelqu'un."
+     ],
+     "q": "Quel message t'a fait plaisir récemment ?",
+     "c": "Envoie un message chaleureux à quelqu'un qui en a peut-être besoin."
+    },
+    "it": {
+     "t": "Un messaggio che ti ha migliorato la giornata",
+     "g": "Ricorda un messaggio, una chiamata o un biglietto che ha illuminato le cose.",
+     "p": [
+      "Un messaggio caloroso può cambiare l'atmosfera di un'intera giornata.",
+      "Pensa a chi lo ha mandato e perché ha significato qualcosa per te.",
+      "Puoi ricambiare rallegrando la giornata di qualcun altro."
+     ],
+     "q": "Quale messaggio ti ha reso felice di recente?",
+     "c": "Manda un messaggio caloroso a qualcuno che oggi ne ha forse bisogno."
+    },
+    "pt": {
+     "t": "Uma mensagem que alegrou o teu dia",
+     "g": "Lembra-te de uma mensagem, chamada ou nota que iluminou as coisas.",
+     "p": [
+      "Uma mensagem calorosa pode mudar o ambiente de um dia inteiro.",
+      "Pensa em quem a enviou e porque significou algo para ti.",
+      "Podes retribuir alegrando também o dia de outra pessoa."
+     ],
+     "q": "Que mensagem te deixou feliz ultimamente?",
+     "c": "Envia uma mensagem calorosa a alguém que possa precisar hoje."
+    },
+    "pt_BR": {
+     "t": "Uma mensagem que alegrou seu dia",
+     "g": "Lembre de uma mensagem, ligação ou bilhete que iluminou as coisas.",
+     "p": [
+      "Uma mensagem calorosa pode mudar o clima de um dia inteiro.",
+      "Pense em quem enviou e por que significou algo para você.",
+      "Você pode retribuir alegrando também o dia de outra pessoa."
+     ],
+     "q": "Que mensagem deixou você feliz ultimamente?",
+     "c": "Envie uma mensagem calorosa para alguém que talvez precise hoje."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: one month of check-ins",
+     "g": "Look back at a month of days, wins and highlights.",
+     "p": [
+      "A month of check-ins is a real achievement; well done for showing up.",
+      "Scroll back through your highlights and notice the patterns.",
+      "Which moods, places or people appear most often in your days?"
+     ],
+     "q": "Looking back, what stands out most from this month?",
+     "c": "Pick your favourite check-in from the month and re-read it."
+    },
+    "de": {
+     "t": "Rückblick: ein Monat Check-ins",
+     "g": "Blick auf einen Monat voller Tage, Erfolge und Highlights zurück.",
+     "p": [
+      "Ein Monat Check-ins ist eine echte Leistung; schön, dass du dabei bist.",
+      "Blättere durch deine Highlights und achte auf Muster.",
+      "Welche Stimmungen, Orte oder Menschen tauchen am häufigsten auf?"
+     ],
+     "q": "Was sticht beim Rückblick auf diesen Monat am meisten heraus?",
+     "c": "Such dir deinen liebsten Check-in des Monats aus und lies ihn noch einmal."
+    },
+    "es": {
+     "t": "Repaso: un mes de check-ins",
+     "g": "Mira atrás: un mes de días, logros y momentos destacados.",
+     "p": [
+      "Un mes de check-ins es un logro de verdad; bien hecho por seguir aquí.",
+      "Repasa tus momentos destacados y fíjate en los patrones.",
+      "¿Qué ánimos, lugares o personas aparecen más en tus días?"
+     ],
+     "q": "Mirando atrás, ¿qué es lo que más destaca de este mes?",
+     "c": "Elige tu check-in favorito del mes y vuelve a leerlo."
+    },
+    "fr": {
+     "t": "Bilan : un mois de check-ins",
+     "g": "Regarde en arrière : un mois de jours, de victoires et de moments forts.",
+     "p": [
+      "Un mois de check-ins est une vraie réussite ; bravo d'être là.",
+      "Relis tes moments forts et repère les habitudes qui reviennent.",
+      "Quelles humeurs, quels lieux ou quelles personnes reviennent le plus ?"
+     ],
+     "q": "En regardant en arrière, qu'est-ce qui ressort le plus de ce mois ?",
+     "c": "Choisis ton check-in préféré du mois et relis-le."
+    },
+    "it": {
+     "t": "Riepilogo: un mese di check-in",
+     "g": "Guarda indietro a un mese di giorni, successi e momenti speciali.",
+     "p": [
+      "Un mese di check-in è un vero traguardo; bravo per esserci stato.",
+      "Ripercorri i tuoi momenti speciali e nota gli schemi che ritornano.",
+      "Quali stati d'animo, luoghi o persone compaiono più spesso nei tuoi giorni?"
+     ],
+     "q": "Guardando indietro, cosa spicca di più di questo mese?",
+     "c": "Scegli il tuo check-in preferito del mese e rileggilo."
+    },
+    "pt": {
+     "t": "Revisão: um mês de check-ins",
+     "g": "Olha para trás: um mês de dias, vitórias e destaques.",
+     "p": [
+      "Um mês de check-ins é uma verdadeira conquista; parabéns por estares presente.",
+      "Revê os teus destaques e repara nos padrões que se repetem.",
+      "Que humores, lugares ou pessoas aparecem mais nos teus dias?"
+     ],
+     "q": "Olhando para trás, o que mais se destaca neste mês?",
+     "c": "Escolhe o teu check-in preferido do mês e volta a lê-lo."
+    },
+    "pt_BR": {
+     "t": "Revisão: um mês de check-ins",
+     "g": "Olhe para trás: um mês de dias, vitórias e destaques.",
+     "p": [
+      "Um mês de check-ins é uma conquista de verdade; parabéns por estar presente.",
+      "Reveja seus destaques e repare nos padrões que se repetem.",
+      "Que humores, lugares ou pessoas aparecem mais nos seus dias?"
+     ],
+     "q": "Olhando para trás, o que mais se destaca neste mês?",
+     "c": "Escolha o seu check-in favorito do mês e leia de novo."
+    }
+   }
+  }
+ ]
+}

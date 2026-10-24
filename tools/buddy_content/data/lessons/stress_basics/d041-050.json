@@ -1,0 +1,835 @@
+{
+ "topic": "stress_basics",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Movement you enjoy",
+     "g": "Find exercise that feels like fun rather than another task.",
+     "p": [
+      "The best movement for stress is the one you actually like and will repeat.",
+      "It can be swimming, cycling, gardening, playing with kids or a pickup game.",
+      "Start gently and follow your body; enjoyment matters more than performance."
+     ],
+     "q": "What kind of movement made you smile most in the past?",
+     "c": "Do one activity you enjoy for ten minutes, just for fun."
+    },
+    "de": {
+     "t": "Bewegung, die dir Freude macht",
+     "g": "Finde Bewegung, die sich nach Spaß anfühlt statt nach einer weiteren Aufgabe.",
+     "p": [
+      "Die beste Bewegung gegen Stress ist die, die du wirklich magst und wiederholst.",
+      "Das kann Schwimmen, Radfahren, Gärtnern, Spielen mit Kindern oder ein lockeres Spiel sein.",
+      "Beginne sanft und höre auf deinen Körper; Freude zählt mehr als Leistung."
+     ],
+     "q": "Welche Art von Bewegung hat dich früher am meisten zum Lächeln gebracht?",
+     "c": "Mache zehn Minuten eine Aktivität, die dir Freude macht, nur zum Spaß."
+    },
+    "es": {
+     "t": "Movimiento que disfrutas",
+     "g": "Encuentra ejercicio que se sienta como diversión y no como otra tarea.",
+     "p": [
+      "El mejor movimiento contra el estrés es el que de verdad te gusta y repites.",
+      "Puede ser nadar, ir en bici, hacer jardinería, jugar con niños o un partido informal.",
+      "Empieza con suavidad y sigue a tu cuerpo; disfrutar importa más que rendir."
+     ],
+     "q": "¿Qué tipo de movimiento te hizo sonreír más en el pasado?",
+     "c": "Haz diez minutos de una actividad que disfrutes, solo por diversión."
+    },
+    "fr": {
+     "t": "Un mouvement qui te plaît",
+     "g": "Trouve une activité physique qui ressemble à un plaisir plutôt qu'à une tâche de plus.",
+     "p": [
+      "Le meilleur mouvement contre le stress est celui que tu aimes vraiment et répètes.",
+      "Cela peut être nager, pédaler, jardiner, jouer avec des enfants ou un match entre amis.",
+      "Commence doucement et écoute ton corps; le plaisir compte plus que la performance."
+     ],
+     "q": "Quel type de mouvement t'a le plus fait sourire par le passé ?",
+     "c": "Pratique dix minutes une activité qui te plaît, juste pour le plaisir."
+    },
+    "it": {
+     "t": "Un movimento che ti piace",
+     "g": "Trova un'attività fisica che sembri divertimento invece di un altro compito.",
+     "p": [
+      "Il miglior movimento contro lo stress è quello che ti piace davvero e che ripeti.",
+      "Può essere nuotare, andare in bici, fare giardinaggio, giocare con i bambini o una partita tra amici.",
+      "Inizia con dolcezza e ascolta il corpo; il piacere conta più della prestazione."
+     ],
+     "q": "Quale tipo di movimento ti ha fatto sorridere di più in passato?",
+     "c": "Fai dieci minuti di un'attività che ti piace, solo per divertimento."
+    },
+    "pt": {
+     "t": "Movimento de que gostas",
+     "g": "Encontra exercício que pareça diversão em vez de mais uma tarefa.",
+     "p": [
+      "O melhor movimento contra o stress é aquele de que realmente gostas e repetes.",
+      "Pode ser nadar, andar de bicicleta, fazer jardinagem, brincar com crianças ou um jogo informal.",
+      "Começa com suavidade e segue o teu corpo; o prazer importa mais do que o desempenho."
+     ],
+     "q": "Que tipo de movimento mais te fez sorrir no passado?",
+     "c": "Faz dez minutos de uma atividade de que gostes, só por diversão."
+    },
+    "pt_BR": {
+     "t": "Movimento de que você gosta",
+     "g": "Encontre exercício que pareça diversão em vez de mais uma tarefa.",
+     "p": [
+      "O melhor movimento contra o estresse é aquele de que você realmente gosta e repete.",
+      "Pode ser nadar, pedalar, cuidar do jardim, brincar com crianças ou um jogo entre amigos.",
+      "Comece com suavidade e siga o seu corpo; o prazer importa mais que o desempenho."
+     ],
+     "q": "Que tipo de movimento mais fez você sorrir no passado?",
+     "c": "Faça dez minutos de uma atividade de que você goste, só por diversão."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dancing for calm",
+     "g": "Put on a favourite song and move freely.",
+     "p": [
+      "Dancing mixes movement, music and play, three things that ease tension.",
+      "Nobody is watching: move however your body wants, big or small.",
+      "Even one song can shift your mood and shake off a heavy day."
+     ],
+     "q": "Which song always makes you want to move?",
+     "c": "Play one favourite song and dance through it, even if just in the kitchen."
+    },
+    "de": {
+     "t": "Tanzen für die Ruhe",
+     "g": "Leg ein Lieblingslied auf und bewege dich frei.",
+     "p": [
+      "Tanzen verbindet Bewegung, Musik und Spiel, drei Dinge, die Spannung lösen.",
+      "Niemand schaut zu: Beweg dich, wie dein Körper will, groß oder klein.",
+      "Schon ein Lied kann die Stimmung drehen und einen schweren Tag abschütteln."
+     ],
+     "q": "Welches Lied bringt dich immer in Bewegung?",
+     "c": "Spiele ein Lieblingslied und tanze es durch, und sei es nur in der Küche."
+    },
+    "es": {
+     "t": "Bailar para calmarte",
+     "g": "Pon tu canción favorita y muévete con libertad.",
+     "p": [
+      "Bailar une movimiento, música y juego, tres cosas que alivian la tensión.",
+      "Nadie mira: muévete como tu cuerpo quiera, en grande o en pequeño.",
+      "Una sola canción puede cambiar tu ánimo y sacudir un día pesado."
+     ],
+     "q": "¿Qué canción siempre te dan ganas de bailar?",
+     "c": "Pon una canción favorita y báilala entera, aunque sea en la cocina."
+    },
+    "fr": {
+     "t": "Danser pour se calmer",
+     "g": "Mets une chanson préférée et bouge librement.",
+     "p": [
+      "La danse mêle mouvement, musique et jeu, trois choses qui apaisent la tension.",
+      "Personne ne regarde : bouge comme ton corps le veut, en grand ou en petit.",
+      "Une seule chanson peut changer ton humeur et chasser une journée lourde."
+     ],
+     "q": "Quelle chanson te donne toujours envie de bouger ?",
+     "c": "Mets une chanson préférée et danse-la en entier, même juste dans la cuisine."
+    },
+    "it": {
+     "t": "Ballare per calmarsi",
+     "g": "Metti la tua canzone preferita e muoviti liberamente.",
+     "p": [
+      "Ballare unisce movimento, musica e gioco, tre cose che sciolgono la tensione.",
+      "Nessuno guarda: muoviti come vuole il tuo corpo, in grande o in piccolo.",
+      "Anche una sola canzone può cambiare l'umore e scrollare via una giornata pesante."
+     ],
+     "q": "Quale canzone ti fa sempre venire voglia di muoverti?",
+     "c": "Metti una canzone preferita e ballala tutta, anche solo in cucina."
+    },
+    "pt": {
+     "t": "Dançar para acalmar",
+     "g": "Põe a tua música preferida e mexe-te à vontade.",
+     "p": [
+      "Dançar junta movimento, música e brincadeira, três coisas que aliviam a tensão.",
+      "Ninguém está a ver: mexe-te como o teu corpo quiser, em grande ou em pequeno.",
+      "Uma só música pode mudar o teu humor e sacudir um dia pesado."
+     ],
+     "q": "Que música te dá sempre vontade de te mexer?",
+     "c": "Põe uma música preferida e dança-a toda, mesmo que seja na cozinha."
+    },
+    "pt_BR": {
+     "t": "Dançar para acalmar",
+     "g": "Coloque a sua música preferida e se mexa à vontade.",
+     "p": [
+      "Dançar junta movimento, música e brincadeira, três coisas que aliviam a tensão.",
+      "Ninguém está olhando: mexa-se como o corpo quiser, em grande ou em pequeno.",
+      "Uma única música pode mudar o seu humor e sacudir um dia pesado."
+     ],
+     "q": "Que música sempre dá a você vontade de se mexer?",
+     "c": "Coloque uma música preferida e dance até o fim, mesmo que seja na cozinha."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Yoga basics for relaxation",
+     "g": "Try gentle, general yoga poses many people find calming.",
+     "p": [
+      "Simple poses like child's pose, cat-cow and a seated forward fold are easy and gentle.",
+      "Move slowly, breathe deeply and hold each pose for a few calm breaths.",
+      "Listen to your body, skip anything uncomfortable and ask a qualified teacher if unsure."
+     ],
+     "q": "Have you tried yoga before, and how did it feel for you?",
+     "c": "Try cat-cow on hands and knees for five slow breaths, gently and without strain."
+    },
+    "de": {
+     "t": "Yoga-Grundlagen zur Entspannung",
+     "g": "Probiere sanfte, allgemeine Yoga-Haltungen, die viele Menschen als beruhigend empfinden.",
+     "p": [
+      "Einfache Haltungen wie Kindhaltung, Katze-Kuh und eine sitzende Vorbeuge sind leicht und sanft.",
+      "Bewege dich langsam, atme tief und halte jede Haltung für ein paar ruhige Atemzüge.",
+      "Höre auf deinen Körper, lass Unbequemes aus und frag bei Unsicherheit eine geprüfte Lehrkraft."
+     ],
+     "q": "Hast du schon Yoga probiert, und wie hat es sich für dich angefühlt?",
+     "c": "Probiere Katze-Kuh im Vierfüßlerstand für fünf langsame Atemzüge, sanft und ohne Anstrengung."
+    },
+    "es": {
+     "t": "Yoga básico para relajarte",
+     "g": "Prueba posturas de yoga suaves y generales que a muchos les resultan calmantes.",
+     "p": [
+      "Posturas simples como la del niño, gato-vaca y una flexión sentada hacia delante son fáciles y suaves.",
+      "Muévete despacio, respira hondo y mantén cada postura unas respiraciones tranquilas.",
+      "Escucha a tu cuerpo, omite lo incómodo y consulta a un profesor cualificado si dudas."
+     ],
+     "q": "¿Has probado yoga antes y cómo lo sentiste?",
+     "c": "Prueba gato-vaca a cuatro patas durante cinco respiraciones lentas, con suavidad y sin esfuerzo."
+    },
+    "fr": {
+     "t": "Bases du yoga pour se détendre",
+     "g": "Essaie des postures de yoga douces et générales que beaucoup trouvent apaisantes.",
+     "p": [
+      "Des postures simples comme l'enfant, chat-vache et une flexion avant assise sont faciles et douces.",
+      "Bouge lentement, respire profondément et tiens chaque posture quelques respirations calmes.",
+      "Écoute ton corps, évite tout inconfort et demande à un professeur qualifié en cas de doute."
+     ],
+     "q": "As-tu déjà essayé le yoga et qu'as-tu ressenti ?",
+     "c": "Essaie chat-vache à quatre pattes pendant cinq respirations lentes, doucement et sans forcer."
+    },
+    "it": {
+     "t": "Basi di yoga per rilassarsi",
+     "g": "Prova posizioni di yoga dolci e generali che molte persone trovano calmanti.",
+     "p": [
+      "Posizioni semplici come il bambino, gatto-mucca e una flessione in avanti da seduti sono facili e dolci.",
+      "Muoviti lentamente, respira a fondo e mantieni ogni posizione per qualche respiro calmo.",
+      "Ascolta il corpo, salta ciò che è scomodo e chiedi a un insegnante qualificato se hai dubbi."
+     ],
+     "q": "Hai già provato lo yoga e come lo hai vissuto?",
+     "c": "Prova gatto-mucca a quattro zampe per cinque respiri lenti, con dolcezza e senza sforzo."
+    },
+    "pt": {
+     "t": "Noções de ioga para relaxar",
+     "g": "Experimenta posições de ioga suaves e gerais que muitas pessoas acham calmantes.",
+     "p": [
+      "Posições simples como a da criança, gato-vaca e uma flexão sentada para a frente são fáceis e suaves.",
+      "Move-te devagar, respira fundo e mantém cada posição durante algumas respirações calmas.",
+      "Ouve o teu corpo, salta o que for desconfortável e pergunta a um professor qualificado se tiveres dúvidas."
+     ],
+     "q": "Já experimentaste ioga e como te sentiste?",
+     "c": "Experimenta gato-vaca de gatas durante cinco respirações lentas, com suavidade e sem esforço."
+    },
+    "pt_BR": {
+     "t": "Noções de ioga para relaxar",
+     "g": "Experimente posições de ioga suaves e gerais que muita gente acha calmantes.",
+     "p": [
+      "Posições simples como a da criança, gato-vaca e uma flexão sentada para a frente são fáceis e suaves.",
+      "Mova-se devagar, respire fundo e segure cada posição por algumas respirações calmas.",
+      "Escute o seu corpo, pule o que for desconfortável e pergunte a um professor qualificado se tiver dúvida."
+     ],
+     "q": "Você já experimentou ioga e como se sentiu?",
+     "c": "Experimente gato-vaca de quatro apoios por cinco respirações lentas, com suavidade e sem esforço."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Time in nature",
+     "g": "See how green spaces, parks and water can help us feel calmer.",
+     "p": [
+      "Many people feel calmer after time among trees, plants or near water.",
+      "You do not need a forest: a park, a garden or even a tree on your street counts.",
+      "Notice colours, sounds and smells, which gently draw attention away from worries."
+     ],
+     "q": "What natural place makes you feel most at ease?",
+     "c": "Spend ten minutes today near something green or watery and just look around."
+    },
+    "de": {
+     "t": "Zeit in der Natur",
+     "g": "Sieh, wie Grünflächen, Parks und Wasser uns ruhiger machen können.",
+     "p": [
+      "Viele Menschen fühlen sich nach Zeit unter Bäumen, bei Pflanzen oder am Wasser ruhiger.",
+      "Du brauchst keinen Wald: Ein Park, ein Garten oder ein Baum in deiner Straße zählt.",
+      "Achte auf Farben, Geräusche und Gerüche, die die Aufmerksamkeit sanft von Sorgen weglenken."
+     ],
+     "q": "Welcher Naturort lässt dich am meisten zur Ruhe kommen?",
+     "c": "Verbringe heute zehn Minuten bei etwas Grünem oder Wasser und schau dich einfach um."
+    },
+    "es": {
+     "t": "Tiempo en la naturaleza",
+     "g": "Descubre cómo los espacios verdes, parques y el agua pueden ayudarnos a sentir calma.",
+     "p": [
+      "Mucha gente se siente más tranquila tras pasar un rato entre árboles, plantas o junto al agua.",
+      "No hace falta un bosque: un parque, un jardín o un árbol de tu calle cuentan.",
+      "Fíjate en colores, sonidos y olores, que alejan suavemente la atención de las preocupaciones."
+     ],
+     "q": "¿Qué lugar natural te hace sentir más a gusto?",
+     "c": "Pasa hoy diez minutos cerca de algo verde o de agua y solo mira a tu alrededor."
+    },
+    "fr": {
+     "t": "Du temps dans la nature",
+     "g": "Vois comment les espaces verts, les parcs et l'eau peuvent nous apaiser.",
+     "p": [
+      "Beaucoup de gens se sentent plus calmes après un moment parmi les arbres, les plantes ou près de l'eau.",
+      "Pas besoin d'une forêt : un parc, un jardin ou un arbre dans ta rue comptent.",
+      "Remarque les couleurs, les sons et les odeurs, qui éloignent doucement l'attention des soucis."
+     ],
+     "q": "Quel lieu naturel te met le plus à l'aise ?",
+     "c": "Passe aujourd'hui dix minutes près de quelque chose de vert ou d'aquatique et regarde simplement autour de toi."
+    },
+    "it": {
+     "t": "Tempo nella natura",
+     "g": "Scopri come spazi verdi, parchi e acqua possano aiutarci a sentirci più calmi.",
+     "p": [
+      "Molte persone si sentono più calme dopo del tempo tra alberi, piante o vicino all'acqua.",
+      "Non serve una foresta: un parco, un giardino o un albero nella tua strada contano.",
+      "Nota colori, suoni e profumi, che distolgono dolcemente l'attenzione dalle preoccupazioni."
+     ],
+     "q": "Quale luogo naturale ti fa sentire più a tuo agio?",
+     "c": "Passa oggi dieci minuti vicino a qualcosa di verde o d'acqua e guardati intorno."
+    },
+    "pt": {
+     "t": "Tempo na natureza",
+     "g": "Descobre como espaços verdes, parques e água nos podem ajudar a sentir mais calma.",
+     "p": [
+      "Muita gente sente-se mais calma depois de um tempo entre árvores, plantas ou junto à água.",
+      "Não precisas de uma floresta: um parque, um jardim ou uma árvore na tua rua contam.",
+      "Repara em cores, sons e cheiros, que afastam suavemente a atenção das preocupações."
+     ],
+     "q": "Que lugar natural te faz sentir mais à vontade?",
+     "c": "Passa hoje dez minutos junto de algo verde ou de água e olha só à tua volta."
+    },
+    "pt_BR": {
+     "t": "Tempo na natureza",
+     "g": "Descubra como espaços verdes, parques e água podem nos ajudar a sentir mais calma.",
+     "p": [
+      "Muita gente se sente mais calma depois de um tempo entre árvores, plantas ou perto da água.",
+      "Você não precisa de uma floresta: um parque, um jardim ou uma árvore na sua rua contam.",
+      "Perceba cores, sons e cheiros, que afastam suavemente a atenção das preocupações."
+     ],
+     "q": "Que lugar natural faz você se sentir mais à vontade?",
+     "c": "Passe hoje dez minutos perto de algo verde ou de água e apenas olhe ao redor."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fresh air breaks",
+     "g": "Step outside for a few minutes to reset.",
+     "p": [
+      "A short trip outdoors changes your surroundings and often your mood too.",
+      "Breathe in the air, look into the distance and let your eyes rest from screens.",
+      "Two or three minutes at a window or doorstep still counts on busy days."
+     ],
+     "q": "When in your day could a short outdoor break fit best?",
+     "c": "Step outside for three minutes at a stressful moment and breathe slowly."
+    },
+    "de": {
+     "t": "Frischluftpausen",
+     "g": "Geh für ein paar Minuten nach draußen, um neu anzusetzen.",
+     "p": [
+      "Ein kurzer Gang nach draußen verändert die Umgebung und oft auch die Stimmung.",
+      "Atme die Luft ein, blicke in die Ferne und gönne den Augen eine Pause vom Bildschirm.",
+      "Zwei oder drei Minuten am Fenster oder an der Tür zählen auch an vollen Tagen."
+     ],
+     "q": "Wann in deinem Tag würde eine kurze Pause im Freien am besten passen?",
+     "c": "Geh in einem stressigen Moment drei Minuten nach draußen und atme langsam."
+    },
+    "es": {
+     "t": "Pausas de aire fresco",
+     "g": "Sal unos minutos al exterior para reiniciar.",
+     "p": [
+      "Una breve salida al aire libre cambia tu entorno y a menudo también tu ánimo.",
+      "Respira el aire, mira a lo lejos y deja descansar los ojos de las pantallas.",
+      "Dos o tres minutos junto a una ventana o puerta cuentan también en días ocupados."
+     ],
+     "q": "¿En qué momento de tu día encajaría mejor una pausa corta al aire libre?",
+     "c": "Sal tres minutos en un momento estresante y respira despacio."
+    },
+    "fr": {
+     "t": "Pauses au grand air",
+     "g": "Sors quelques minutes pour te remettre à zéro.",
+     "p": [
+      "Une courte sortie change ton environnement et souvent aussi ton humeur.",
+      "Respire l'air, regarde au loin et laisse reposer tes yeux des écrans.",
+      "Deux ou trois minutes à une fenêtre ou sur le pas de la porte comptent aussi les jours chargés."
+     ],
+     "q": "À quel moment de ta journée une courte pause dehors conviendrait-elle le mieux ?",
+     "c": "Sors trois minutes à un moment stressant et respire lentement."
+    },
+    "it": {
+     "t": "Pause all'aria aperta",
+     "g": "Esci per qualche minuto per ripartire.",
+     "p": [
+      "Una breve uscita cambia l'ambiente e spesso anche l'umore.",
+      "Respira l'aria, guarda lontano e lascia riposare gli occhi dagli schermi.",
+      "Due o tre minuti a una finestra o sulla soglia contano anche nei giorni pieni."
+     ],
+     "q": "In quale momento della giornata starebbe meglio una breve pausa all'aperto?",
+     "c": "Esci per tre minuti in un momento di stress e respira lentamente."
+    },
+    "pt": {
+     "t": "Pausas de ar fresco",
+     "g": "Sai uns minutos para reiniciar.",
+     "p": [
+      "Uma breve saída ao ar livre muda o ambiente e muitas vezes também o humor.",
+      "Respira o ar, olha ao longe e deixa os olhos descansar dos ecrãs.",
+      "Dois ou três minutos à janela ou à porta contam também em dias cheios."
+     ],
+     "q": "Em que altura do teu dia encaixaria melhor uma pausa curta ao ar livre?",
+     "c": "Sai três minutos num momento de stress e respira devagar."
+    },
+    "pt_BR": {
+     "t": "Pausas de ar fresco",
+     "g": "Saia por alguns minutos para recomeçar.",
+     "p": [
+      "Uma breve saída ao ar livre muda o ambiente e muitas vezes também o humor.",
+      "Respire o ar, olhe ao longe e deixe os olhos descansarem das telas.",
+      "Dois ou três minutos na janela ou na porta contam também em dias cheios."
+     ],
+     "q": "Em que momento do seu dia uma pausa curta ao ar livre encaixaria melhor?",
+     "c": "Saia por três minutos num momento de estresse e respire devagar."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sunlight and mood",
+     "g": "Learn how daylight can lift energy and mood.",
+     "p": [
+      "Morning daylight helps your body clock know when to be awake and when to rest.",
+      "A few minutes of natural light can make you feel more alert and cheerful.",
+      "On grey days, sit near a window; never look directly at the sun."
+     ],
+     "q": "How does bright weather change the way you feel?",
+     "c": "Get ten minutes of daylight early today, by a window or outside."
+    },
+    "de": {
+     "t": "Sonnenlicht und Stimmung",
+     "g": "Lerne, wie Tageslicht Energie und Stimmung heben kann.",
+     "p": [
+      "Morgenlicht hilft deiner inneren Uhr zu wissen, wann Wachsein und wann Ruhe dran ist.",
+      "Ein paar Minuten natürliches Licht machen oft wacher und heiterer.",
+      "An grauen Tagen setze dich ans Fenster; schau nie direkt in die Sonne."
+     ],
+     "q": "Wie verändert helles Wetter, wie du dich fühlst?",
+     "c": "Hole dir heute früh zehn Minuten Tageslicht, am Fenster oder draußen."
+    },
+    "es": {
+     "t": "La luz del sol y el ánimo",
+     "g": "Descubre cómo la luz del día puede mejorar la energía y el ánimo.",
+     "p": [
+      "La luz de la mañana ayuda a tu reloj interno a saber cuándo estar despierto y cuándo descansar.",
+      "Unos minutos de luz natural pueden hacerte sentir más despierto y alegre.",
+      "En días grises, siéntate junto a una ventana; nunca mires directamente al sol."
+     ],
+     "q": "¿Cómo cambia tu ánimo el tiempo soleado?",
+     "c": "Toma hoy diez minutos de luz natural temprano, junto a una ventana o fuera."
+    },
+    "fr": {
+     "t": "Lumière du jour et humeur",
+     "g": "Découvre comment la lumière du jour peut remonter l'énergie et l'humeur.",
+     "p": [
+      "La lumière du matin aide ton horloge interne à savoir quand être éveillé et quand se reposer.",
+      "Quelques minutes de lumière naturelle peuvent te rendre plus alerte et joyeux.",
+      "Les jours gris, assieds-toi près d'une fenêtre; ne regarde jamais directement le soleil."
+     ],
+     "q": "Comment le beau temps change-t-il ta façon de te sentir ?",
+     "c": "Prends dix minutes de lumière du jour tôt aujourd'hui, près d'une fenêtre ou dehors."
+    },
+    "it": {
+     "t": "Luce del sole e umore",
+     "g": "Scopri come la luce del giorno possa sollevare energia e umore.",
+     "p": [
+      "La luce del mattino aiuta il tuo orologio interno a sapere quando stare svegli e quando riposare.",
+      "Pochi minuti di luce naturale possono renderti più vigile e allegro.",
+      "Nei giorni grigi siediti vicino a una finestra; non guardare mai direttamente il sole."
+     ],
+     "q": "Come cambia il modo in cui ti senti il tempo luminoso?",
+     "c": "Prendi oggi dieci minuti di luce del giorno presto, vicino a una finestra o fuori."
+    },
+    "pt": {
+     "t": "Luz do sol e humor",
+     "g": "Descobre como a luz do dia pode melhorar a energia e o humor.",
+     "p": [
+      "A luz da manhã ajuda o teu relógio interno a saber quando estar acordado e quando descansar.",
+      "Alguns minutos de luz natural podem deixar-te mais desperto e animado.",
+      "Em dias cinzentos, senta-te junto a uma janela; nunca olhes diretamente para o sol."
+     ],
+     "q": "Como é que o tempo luminoso muda a forma como te sentes?",
+     "c": "Apanha hoje dez minutos de luz natural cedo, junto a uma janela ou lá fora."
+    },
+    "pt_BR": {
+     "t": "Luz do sol e humor",
+     "g": "Descubra como a luz do dia pode melhorar a energia e o humor.",
+     "p": [
+      "A luz da manhã ajuda o seu relógio interno a saber quando ficar acordado e quando descansar.",
+      "Alguns minutos de luz natural podem deixar você mais desperto e animado.",
+      "Em dias nublados, sente-se perto de uma janela; nunca olhe diretamente para o sol."
+     ],
+     "q": "Como o tempo ensolarado muda o jeito que você se sente?",
+     "c": "Pegue hoje dez minutos de luz natural cedo, perto de uma janela ou do lado de fora."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Warmth and comfort",
+     "g": "Use a warm drink, a warm shower or a blanket to soothe the body.",
+     "p": [
+      "Gentle warmth tells the body it is safe to soften and let go of tension.",
+      "A cup of tea, a warm shower or a soft blanket can be a small ritual of care.",
+      "Take your time and notice the warmth spreading through your hands or back."
+     ],
+     "q": "What warm comfort do you enjoy most when you are tired or tense?",
+     "c": "Make a warm drink and drink it slowly, with no screen, noticing the warmth."
+    },
+    "de": {
+     "t": "Wärme und Geborgenheit",
+     "g": "Beruhige den Körper mit einem warmen Getränk, einer warmen Dusche oder einer Decke.",
+     "p": [
+      "Sanfte Wärme sagt dem Körper, dass er weich werden und Spannung loslassen darf.",
+      "Eine Tasse Tee, eine warme Dusche oder eine weiche Decke können ein kleines Fürsorge-Ritual sein.",
+      "Nimm dir Zeit und spüre, wie sich die Wärme in Händen oder Rücken ausbreitet."
+     ],
+     "q": "Welche warme Wohltat genießt du am meisten, wenn du müde oder angespannt bist?",
+     "c": "Mache dir ein warmes Getränk und trinke es langsam, ohne Bildschirm, mit Blick auf die Wärme."
+    },
+    "es": {
+     "t": "Calidez y confort",
+     "g": "Usa una bebida caliente, una ducha templada o una manta para calmar el cuerpo.",
+     "p": [
+      "El calor suave dice al cuerpo que es seguro ablandarse y soltar la tensión.",
+      "Una taza de té, una ducha caliente o una manta suave pueden ser un pequeño ritual de cuidado.",
+      "Tómate tu tiempo y nota cómo se extiende el calor por tus manos o tu espalda."
+     ],
+     "q": "¿Qué comodidad cálida disfrutas más cuando estás cansado o tenso?",
+     "c": "Prepara una bebida caliente y bébela despacio, sin pantalla, notando el calor."
+    },
+    "fr": {
+     "t": "Chaleur et réconfort",
+     "g": "Apaise ton corps avec une boisson chaude, une douche chaude ou une couverture.",
+     "p": [
+      "Une douce chaleur dit au corps qu'il peut s'assouplir et lâcher la tension.",
+      "Une tasse de thé, une douche chaude ou un plaid peuvent être un petit rituel de soin.",
+      "Prends ton temps et remarque la chaleur qui se répand dans tes mains ou ton dos."
+     ],
+     "q": "Quel réconfort chaud apprécies-tu le plus quand tu es fatigué ou tendu ?",
+     "c": "Prépare une boisson chaude et bois-la lentement, sans écran, en sentant la chaleur."
+    },
+    "it": {
+     "t": "Calore e comfort",
+     "g": "Usa una bevanda calda, una doccia calda o una coperta per rilassare il corpo.",
+     "p": [
+      "Un calore dolce dice al corpo che può ammorbidirsi e lasciare andare la tensione.",
+      "Una tazza di tè, una doccia calda o una coperta morbida possono essere un piccolo rito di cura.",
+      "Prenditi il tempo e nota il calore che si diffonde nelle mani o nella schiena."
+     ],
+     "q": "Quale conforto caldo apprezzi di più quando sei stanco o teso?",
+     "c": "Prepara una bevanda calda e bevila lentamente, senza schermo, sentendo il calore."
+    },
+    "pt": {
+     "t": "Calor e conforto",
+     "g": "Usa uma bebida quente, um duche morno ou uma manta para acalmar o corpo.",
+     "p": [
+      "O calor suave diz ao corpo que é seguro amolecer e largar a tensão.",
+      "Uma chávena de chá, um duche quente ou uma manta macia podem ser um pequeno ritual de cuidado.",
+      "Dá-te tempo e repara no calor a espalhar-se pelas mãos ou pelas costas."
+     ],
+     "q": "Que conforto quente aprecias mais quando estás cansado ou tenso?",
+     "c": "Prepara uma bebida quente e bebe-a devagar, sem ecrã, a sentir o calor."
+    },
+    "pt_BR": {
+     "t": "Calor e conforto",
+     "g": "Use uma bebida quente, um banho morno ou um cobertor para acalmar o corpo.",
+     "p": [
+      "O calor suave diz ao corpo que é seguro amolecer e soltar a tensão.",
+      "Uma xícara de chá, um banho quente ou um cobertor macio podem ser um pequeno ritual de cuidado.",
+      "Tome seu tempo e perceba o calor se espalhando pelas mãos ou pelas costas."
+     ],
+     "q": "Que conforto quentinho você mais aprecia quando está cansado ou tenso?",
+     "c": "Prepare uma bebida quente e tome devagar, sem tela, sentindo o calor."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cold water splash",
+     "g": "Discover how a splash of cool water on the face can feel refreshing and grounding.",
+     "p": [
+      "A little cool water on your face or wrists can feel like a quick reset.",
+      "The sudden sensation brings your attention back to the present moment.",
+      "Keep it comfortable: cool, not icy, and skip it if it does not suit you."
+     ],
+     "q": "Do you like cool water on your face when you feel tired or tense?",
+     "c": "Splash cool water on your face or wrists once today and breathe slowly."
+    },
+    "de": {
+     "t": "Kaltes Wasser im Gesicht",
+     "g": "Entdecke, wie ein Spritzer kühles Wasser im Gesicht erfrischend und erdend wirken kann.",
+     "p": [
+      "Etwas kühles Wasser auf Gesicht oder Handgelenken kann sich wie ein schneller Neustart anfühlen.",
+      "Die plötzliche Empfindung holt deine Aufmerksamkeit in den Augenblick zurück.",
+      "Bleib im angenehmen Bereich: kühl, nicht eiskalt, und lass es weg, wenn es nicht passt."
+     ],
+     "q": "Magst du kühles Wasser im Gesicht, wenn du müde oder angespannt bist?",
+     "c": "Spritze dir heute einmal kühles Wasser ins Gesicht oder auf die Handgelenke und atme langsam."
+    },
+    "es": {
+     "t": "Un chorro de agua fría",
+     "g": "Descubre cómo un chorro de agua fresca en la cara puede refrescar y centrar.",
+     "p": [
+      "Un poco de agua fresca en la cara o las muñecas puede sentirse como un reinicio rápido.",
+      "La sensación repentina devuelve tu atención al momento presente.",
+      "Hazlo cómodo: fresca, no helada, y omítelo si no te sienta bien."
+     ],
+     "q": "¿Te gusta el agua fresca en la cara cuando estás cansado o tenso?",
+     "c": "Échate hoy una vez agua fresca en la cara o las muñecas y respira despacio."
+    },
+    "fr": {
+     "t": "Une éclaboussure d'eau fraîche",
+     "g": "Découvre comment un peu d'eau fraîche sur le visage peut rafraîchir et recentrer.",
+     "p": [
+      "Un peu d'eau fraîche sur le visage ou les poignets peut ressembler à une remise à zéro rapide.",
+      "La sensation soudaine ramène ton attention au moment présent.",
+      "Reste confortable : fraîche, pas glacée, et laisse tomber si cela ne te convient pas."
+     ],
+     "q": "Aimes-tu l'eau fraîche sur le visage quand tu es fatigué ou tendu ?",
+     "c": "Passe aujourd'hui une fois de l'eau fraîche sur ton visage ou tes poignets et respire lentement."
+    },
+    "it": {
+     "t": "Uno spruzzo d'acqua fresca",
+     "g": "Scopri come uno spruzzo d'acqua fresca sul viso possa rinfrescare e radicare.",
+     "p": [
+      "Un po' d'acqua fresca su viso o polsi può sembrare un rapido riavvio.",
+      "La sensazione improvvisa riporta l'attenzione al momento presente.",
+      "Resta nel comfort: fresca, non gelata, e salta se non fa per te."
+     ],
+     "q": "Ti piace l'acqua fresca sul viso quando sei stanco o teso?",
+     "c": "Spruzzati oggi una volta acqua fresca su viso o polsi e respira lentamente."
+    },
+    "pt": {
+     "t": "Um salpico de água fresca",
+     "g": "Descobre como um salpico de água fresca no rosto pode refrescar e centrar.",
+     "p": [
+      "Um pouco de água fresca no rosto ou nos pulsos pode parecer um reinício rápido.",
+      "A sensação súbita traz a tua atenção de volta ao momento presente.",
+      "Mantém o conforto: fresca, não gelada, e salta se não te servir."
+     ],
+     "q": "Gostas de água fresca no rosto quando estás cansado ou tenso?",
+     "c": "Molha hoje uma vez o rosto ou os pulsos com água fresca e respira devagar."
+    },
+    "pt_BR": {
+     "t": "Um respingo de água fresca",
+     "g": "Descubra como um respingo de água fresca no rosto pode refrescar e centrar.",
+     "p": [
+      "Um pouco de água fresca no rosto ou nos pulsos pode parecer um reinício rápido.",
+      "A sensação súbita traz a sua atenção de volta ao momento presente.",
+      "Mantenha o conforto: fresca, não gelada, e pule se não combinar com você."
+     ],
+     "q": "Você gosta de água fresca no rosto quando está cansado ou tenso?",
+     "c": "Molhe hoje uma vez o rosto ou os pulsos com água fresca e respire devagar."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Laughter as relief",
+     "g": "Learn why laughing with friends or at something funny can ease tension.",
+     "p": [
+      "Laughing relaxes muscles, deepens breathing and lifts mood for a while.",
+      "Shared laughter also builds closeness, which helps us handle pressure.",
+      "A funny video, an old joke or a silly game all count."
+     ],
+     "q": "What reliably makes you laugh out loud?",
+     "c": "Share one funny thing with someone today, or watch something that makes you laugh."
+    },
+    "de": {
+     "t": "Lachen als Entlastung",
+     "g": "Lerne, warum Lachen mit Freunden oder über Lustiges Spannung lösen kann.",
+     "p": [
+      "Lachen entspannt Muskeln, vertieft die Atmung und hebt für eine Weile die Stimmung.",
+      "Gemeinsames Lachen schafft auch Nähe, die uns hilft, Druck besser zu tragen.",
+      "Ein lustiges Video, ein alter Witz oder ein alberes Spiel zählen alle."
+     ],
+     "q": "Was bringt dich zuverlässig zum Lachen?",
+     "c": "Teile heute etwas Lustiges mit jemandem oder sieh dir etwas an, das dich zum Lachen bringt."
+    },
+    "es": {
+     "t": "La risa como alivio",
+     "g": "Descubre por qué reír con amigos o con algo gracioso puede aliviar la tensión.",
+     "p": [
+      "Reír relaja los músculos, profundiza la respiración y levanta el ánimo por un rato.",
+      "La risa compartida también crea cercanía, que nos ayuda a sobrellevar la presión.",
+      "Un vídeo gracioso, un chiste viejo o un juego tonto valen todos."
+     ],
+     "q": "¿Qué te hace reír a carcajadas con seguridad?",
+     "c": "Comparte hoy algo gracioso con alguien o mira algo que te haga reír."
+    },
+    "fr": {
+     "t": "Le rire comme détente",
+     "g": "Découvre pourquoi rire avec des amis ou de quelque chose de drôle peut apaiser la tension.",
+     "p": [
+      "Rire détend les muscles, approfondit la respiration et remonte le moral un moment.",
+      "Le rire partagé crée aussi de la proximité, qui nous aide à supporter la pression.",
+      "Une vidéo drôle, une vieille blague ou un jeu bête comptent tous."
+     ],
+     "q": "Qu'est-ce qui te fait rire aux éclats à coup sûr ?",
+     "c": "Partage aujourd'hui quelque chose de drôle avec quelqu'un ou regarde ce qui te fait rire."
+    },
+    "it": {
+     "t": "La risata come sollievo",
+     "g": "Scopri perché ridere con amici o per qualcosa di divertente può sciogliere la tensione.",
+     "p": [
+      "Ridere rilassa i muscoli, approfondisce il respiro e solleva l'umore per un po'.",
+      "La risata condivisa crea anche vicinanza, che ci aiuta a sopportare la pressione.",
+      "Un video divertente, una vecchia battuta o un gioco sciocco valgono tutti."
+     ],
+     "q": "Che cosa ti fa ridere di gusto con certezza?",
+     "c": "Condividi oggi qualcosa di divertente con qualcuno o guarda qualcosa che ti fa ridere."
+    },
+    "pt": {
+     "t": "O riso como alívio",
+     "g": "Descobre porque rir com amigos ou de algo engraçado pode aliviar a tensão.",
+     "p": [
+      "Rir relaxa os músculos, aprofunda a respiração e levanta o humor por um tempo.",
+      "O riso partilhado também cria proximidade, que nos ajuda a aguentar a pressão.",
+      "Um vídeo engraçado, uma piada antiga ou um jogo parvo contam todos."
+     ],
+     "q": "O que te faz rir às gargalhadas com certeza?",
+     "c": "Partilha hoje algo engraçado com alguém ou vê algo que te faça rir."
+    },
+    "pt_BR": {
+     "t": "O riso como alívio",
+     "g": "Descubra por que rir com amigos ou de algo engraçado pode aliviar a tensão.",
+     "p": [
+      "Rir relaxa os músculos, aprofunda a respiração e levanta o humor por um tempo.",
+      "O riso compartilhado também cria proximidade, que nos ajuda a aguentar a pressão.",
+      "Um vídeo engraçado, uma piada antiga ou um jogo bobo valem todos."
+     ],
+     "q": "O que faz você rir alto com certeza?",
+     "c": "Compartilhe hoje algo engraçado com alguém ou assista a algo que faça você rir."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Music that calms",
+     "g": "Build a playlist of songs that help you slow down.",
+     "p": [
+      "Slow, gentle music can ease breathing and lower the pace of your thoughts.",
+      "Choose songs that feel soothing to you, whatever the style or language.",
+      "Keep a ready-made playlist so you can press play the moment stress rises."
+     ],
+     "q": "Which song or kind of music slows you down the most?",
+     "c": "Add five calming songs to a playlist and listen to one fully."
+    },
+    "de": {
+     "t": "Musik, die beruhigt",
+     "g": "Stelle eine Playlist mit Liedern zusammen, die dir helfen, runterzukommen.",
+     "p": [
+      "Langsame, sanfte Musik kann die Atmung beruhigen und das Tempo der Gedanken senken.",
+      "Wähle Lieder, die sich für dich wohltuend anfühlen, egal welcher Stil oder welche Sprache.",
+      "Halte eine fertige Playlist bereit, damit du bei steigendem Stress sofort starten kannst."
+     ],
+     "q": "Welches Lied oder welche Musik bremst dich am meisten herunter?",
+     "c": "Füge fünf beruhigende Lieder zu einer Playlist hinzu und höre eines ganz."
+    },
+    "es": {
+     "t": "Música que calma",
+     "g": "Crea una lista de canciones que te ayuden a bajar el ritmo.",
+     "p": [
+      "La música lenta y suave puede aliviar la respiración y bajar el ritmo de tus pensamientos.",
+      "Elige canciones que te resulten tranquilizadoras, sea cual sea el estilo o el idioma.",
+      "Ten una lista lista para pulsar play en cuanto suba el estrés."
+     ],
+     "q": "¿Qué canción o tipo de música te hace ir más despacio?",
+     "c": "Añade cinco canciones calmantes a una lista y escucha una entera."
+    },
+    "fr": {
+     "t": "Une musique qui apaise",
+     "g": "Compose une playlist de chansons qui t'aident à ralentir.",
+     "p": [
+      "Une musique lente et douce peut apaiser la respiration et ralentir le rythme des pensées.",
+      "Choisis des chansons qui te semblent apaisantes, quel que soit le style ou la langue.",
+      "Garde une playlist prête pour lancer la lecture dès que le stress monte."
+     ],
+     "q": "Quelle chanson ou quel genre de musique te ralentit le plus ?",
+     "c": "Ajoute cinq chansons apaisantes à une playlist et écoute-en une en entier."
+    },
+    "it": {
+     "t": "Musica che calma",
+     "g": "Crea una playlist di canzoni che ti aiutano a rallentare.",
+     "p": [
+      "Una musica lenta e dolce può rilassare il respiro e abbassare il ritmo dei pensieri.",
+      "Scegli canzoni che ti sembrano rilassanti, qualunque sia lo stile o la lingua.",
+      "Tieni pronta una playlist per premere play appena lo stress sale."
+     ],
+     "q": "Quale canzone o genere di musica ti fa rallentare di più?",
+     "c": "Aggiungi cinque canzoni calme a una playlist e ascoltane una per intero."
+    },
+    "pt": {
+     "t": "Música que acalma",
+     "g": "Cria uma playlist de canções que te ajudem a abrandar.",
+     "p": [
+      "A música lenta e suave pode acalmar a respiração e baixar o ritmo dos pensamentos.",
+      "Escolhe canções que te pareçam tranquilizadoras, seja qual for o estilo ou a língua.",
+      "Tem uma playlist pronta para carregar em play assim que o stress subir."
+     ],
+     "q": "Que canção ou tipo de música mais te faz abrandar?",
+     "c": "Junta cinco canções calmas a uma playlist e ouve uma por inteiro."
+    },
+    "pt_BR": {
+     "t": "Música que acalma",
+     "g": "Crie uma playlist de músicas que ajudem você a desacelerar.",
+     "p": [
+      "Música lenta e suave pode acalmar a respiração e baixar o ritmo dos pensamentos.",
+      "Escolha músicas que pareçam tranquilizadoras para você, seja qual for o estilo ou o idioma.",
+      "Mantenha uma playlist pronta para dar play assim que o estresse subir."
+     ],
+     "q": "Que música ou tipo de música mais faz você desacelerar?",
+     "c": "Adicione cinco músicas calmas a uma playlist e ouça uma inteira."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "budgeting_basics",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Snacks and coffee on the go",
+     "g": "See the real monthly cost of small daily treats.",
+     "p": [
+      "Small treats feel cheap one at a time, but their monthly total can surprise you.",
+      "You do not have to give them up; decide which ones you truly love and keep those.",
+      "Try a homemade version on some days, like coffee in a flask or a snack from home."
+     ],
+     "q": "Which small daily treat would you never want to give up?",
+     "c": "Add up what you spent on snacks and drinks this week and multiply by four."
+    },
+    "de": {
+     "t": "Snacks und Kaffee unterwegs",
+     "g": "Die echten Monatskosten kleiner täglicher Leckereien sehen.",
+     "p": [
+      "Kleine Leckereien wirken einzeln billig, aber ihre Monatssumme kann überraschen.",
+      "Du musst sie nicht aufgeben; entscheide, welche du wirklich liebst, und behalte diese.",
+      "Probiere an manchen Tagen eine Hausversion, etwa Kaffee aus der Thermoskanne oder einen Snack von zu Hause."
+     ],
+     "q": "Auf welche kleine tägliche Leckerei würdest du nie verzichten wollen?",
+     "c": "Addiere, was du diese Woche für Snacks und Getränke ausgegeben hast, und multipliziere mit vier."
+    },
+    "es": {
+     "t": "Snacks y café sobre la marcha",
+     "g": "Ver el coste mensual real de los pequeños caprichos diarios.",
+     "p": [
+      "Los caprichos pequeños parecen baratos uno a uno, pero su total mensual puede sorprenderte.",
+      "No tienes que dejarlos; decide cuáles amas de verdad y quédate con esos.",
+      "Prueba una versión casera algunos días, como café en un termo o un snack de casa."
+     ],
+     "q": "¿A qué pequeño capricho diario no renunciarías nunca?",
+     "c": "Suma lo que gastaste esta semana en snacks y bebidas y multiplícalo por cuatro."
+    },
+    "fr": {
+     "t": "Snacks et café sur le pouce",
+     "g": "Voir le vrai coût mensuel des petites gourmandises quotidiennes.",
+     "p": [
+      "Les petites gourmandises semblent peu chères une à une, mais leur total mensuel peut surprendre.",
+      "Tu n'as pas à y renoncer ; décide lesquelles tu aimes vraiment et garde-les.",
+      "Essaie une version maison certains jours, comme du café en thermos ou un en-cas de chez toi."
+     ],
+     "q": "À quelle petite gourmandise quotidienne ne renoncerais-tu jamais ?",
+     "c": "Additionne ce que tu as dépensé cette semaine en snacks et boissons et multiplie par quatre."
+    },
+    "it": {
+     "t": "Spuntini e caffè al volo",
+     "g": "Vedere il vero costo mensile dei piccoli sfizi quotidiani.",
+     "p": [
+      "I piccoli sfizi sembrano economici uno a uno, ma il totale mensile può sorprendere.",
+      "Non devi rinunciarci; decidi quali ami davvero e tieni quelli.",
+      "Prova una versione casalinga alcuni giorni, come caffè nel thermos o uno spuntino da casa."
+     ],
+     "q": "A quale piccolo sfizio quotidiano non rinunceresti mai?",
+     "c": "Somma quanto hai speso questa settimana in spuntini e bevande e moltiplica per quattro."
+    },
+    "pt": {
+     "t": "Snacks e café em movimento",
+     "g": "Ver o custo mensal real dos pequenos miminhos diários.",
+     "p": [
+      "Os miminhos parecem baratos um a um, mas o total mensal pode surpreender.",
+      "Não tens de os abandonar; decide quais adoras de verdade e fica com esses.",
+      "Experimenta uma versão caseira alguns dias, como café numa garrafa térmica ou um lanche de casa."
+     ],
+     "q": "De que pequeno miminho diário nunca abririas mão?",
+     "c": "Soma o que gastaste esta semana em snacks e bebidas e multiplica por quatro."
+    },
+    "pt_BR": {
+     "t": "Lanches e café na correria",
+     "g": "Ver o custo mensal real dos pequenos mimos diários.",
+     "p": [
+      "Os mimos parecem baratos um a um, mas o total mensal pode surpreender.",
+      "Você não precisa abrir mão deles; decida quais ama de verdade e fique com esses.",
+      "Teste uma versão caseira em alguns dias, como café na garrafa térmica ou um lanche de casa."
+     ],
+     "q": "De que pequeno mimo diário você nunca abriria mão?",
+     "c": "Some o que você gastou esta semana com lanches e bebidas e multiplique por quatro."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Eating out mindfully",
+     "g": "Enjoy restaurants while keeping them inside your plan.",
+     "p": [
+      "Eating out is a pleasure, and a plan lets you enjoy it without worry afterwards.",
+      "Give it its own category and decide how many times a month fits your plan.",
+      "Choose the occasions that matter most, like time with friends, over routine meals."
+     ],
+     "q": "What makes a meal out feel truly worth it to you?",
+     "c": "Decide your eating-out amount for the month and pick your next special meal."
+    },
+    "de": {
+     "t": "Bewusst auswärts essen",
+     "g": "Restaurants genießen und sie dabei im Plan halten.",
+     "p": [
+      "Auswärts essen ist ein Vergnügen, und ein Plan lässt dich es ohne Sorgen danach genießen.",
+      "Gib ihm eine eigene Kategorie und entscheide, wie oft im Monat zu deinem Plan passt.",
+      "Wähle die Anlässe, die am meisten zählen, wie Zeit mit Freunden, statt Routinemahlzeiten."
+     ],
+     "q": "Was macht ein Essen auswärts für dich wirklich lohnenswert?",
+     "c": "Lege deinen Betrag fürs Auswärtsessen im Monat fest und wähle dein nächstes besonderes Essen."
+    },
+    "es": {
+     "t": "Comer fuera con atención",
+     "g": "Disfrutar de los restaurantes manteniéndolos dentro de tu plan.",
+     "p": [
+      "Comer fuera es un placer, y un plan te deja disfrutarlo sin preocupaciones después.",
+      "Dale su propia categoría y decide cuántas veces al mes encajan en tu plan.",
+      "Elige las ocasiones que más importan, como estar con amigos, antes que las comidas de rutina."
+     ],
+     "q": "¿Qué hace que una comida fuera valga de verdad la pena para ti?",
+     "c": "Decide tu cantidad para comer fuera este mes y elige tu próxima comida especial."
+    },
+    "fr": {
+     "t": "Manger dehors en conscience",
+     "g": "Profiter des restaurants tout en les gardant dans ton plan.",
+     "p": [
+      "Manger dehors est un plaisir, et un plan te laisse en profiter sans souci ensuite.",
+      "Donne-lui sa propre catégorie et décide combien de fois par mois cadre avec ton plan.",
+      "Choisis les occasions qui comptent le plus, comme un moment entre amis, plutôt que les repas de routine."
+     ],
+     "q": "Qu'est-ce qui rend un repas au restaurant vraiment valable pour toi ?",
+     "c": "Fixe ton montant sorties resto du mois et choisis ton prochain repas spécial."
+    },
+    "it": {
+     "t": "Mangiare fuori con consapevolezza",
+     "g": "Godersi i ristoranti tenendoli dentro il piano.",
+     "p": [
+      "Mangiare fuori è un piacere, e un piano ti lascia goderlo senza pensieri dopo.",
+      "Dagli una categoria sua e decidi quante volte al mese stanno nel tuo piano.",
+      "Scegli le occasioni che contano di più, come stare con gli amici, rispetto ai pasti di routine."
+     ],
+     "q": "Cosa fa valere davvero la pena un pasto fuori per te?",
+     "c": "Decidi il tuo importo per mangiare fuori questo mese e scegli il prossimo pasto speciale."
+    },
+    "pt": {
+     "t": "Comer fora com atenção",
+     "g": "Desfrutar dos restaurantes mantendo-os dentro do plano.",
+     "p": [
+      "Comer fora é um prazer, e um plano deixa-te desfrutar sem preocupações depois.",
+      "Dá-lhe uma categoria própria e decide quantas vezes por mês cabem no teu plano.",
+      "Escolhe as ocasiões que mais contam, como estar com amigos, em vez das refeições de rotina."
+     ],
+     "q": "O que faz uma refeição fora valer mesmo a pena para ti?",
+     "c": "Decide o teu valor para comer fora este mês e escolhe a tua próxima refeição especial."
+    },
+    "pt_BR": {
+     "t": "Comer fora com atenção",
+     "g": "Aproveitar os restaurantes mantendo-os dentro do plano.",
+     "p": [
+      "Comer fora é um prazer, e um plano deixa você aproveitar sem preocupação depois.",
+      "Dê a isso uma categoria própria e decida quantas vezes por mês cabem no seu plano.",
+      "Escolha as ocasiões que mais contam, como estar com amigos, em vez das refeições de rotina."
+     ],
+     "q": "O que faz uma refeição fora valer mesmo a pena para você?",
+     "c": "Decida seu valor para comer fora neste mês e escolha sua próxima refeição especial."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lunch from home",
+     "g": "Find simple, tasty lunches that make carrying food from home easy.",
+     "p": [
+      "Lunch from home is often one of the easiest habits to save on, and it can taste great.",
+      "Use leftovers or a simple formula: grain, protein, vegetable, a little sauce.",
+      "Make it easy: a good container and prepping the night before remove most excuses."
+     ],
+     "q": "What lunch would you actually look forward to eating at midday?",
+     "c": "Pack a lunch from home tomorrow and note how it felt compared with buying one."
+    },
+    "de": {
+     "t": "Mittagessen von zu Hause",
+     "g": "Einfache, leckere Mittagessen finden, die das Mitbringen leicht machen.",
+     "p": [
+      "Mittagessen von zu Hause ist oft eine der leichtesten Spargewohnheiten, und es kann toll schmecken.",
+      "Nutze Reste oder eine einfache Formel: Getreide, Eiweiß, Gemüse, etwas Soße.",
+      "Mach es leicht: eine gute Dose und Vorbereiten am Vorabend nehmen die meisten Ausreden."
+     ],
+     "q": "Auf welches Mittagessen würdest du dich mittags wirklich freuen?",
+     "c": "Pack morgen ein Mittagessen von zu Hause ein und notiere, wie es sich im Vergleich zum Kaufen anfühlte."
+    },
+    "es": {
+     "t": "Almuerzo desde casa",
+     "g": "Encontrar almuerzos simples y ricos que hagan fácil llevar comida de casa.",
+     "p": [
+      "El almuerzo de casa suele ser uno de los hábitos más fáciles para ahorrar, y puede estar buenísimo.",
+      "Usa sobras o una fórmula simple: cereal, proteína, verdura, un poco de salsa.",
+      "Hazlo fácil: un buen táper y prepararlo la noche anterior quitan casi todas las excusas."
+     ],
+     "q": "¿Qué almuerzo te haría ilusión comer a mediodía?",
+     "c": "Lleva mañana un almuerzo de casa y anota cómo te sentiste comparado con comprarlo."
+    },
+    "fr": {
+     "t": "Déjeuner fait maison",
+     "g": "Trouver des déjeuners simples et bons qui facilitent d'apporter son repas.",
+     "p": [
+      "Le déjeuner maison est souvent l'une des habitudes les plus faciles pour économiser, et il peut être délicieux.",
+      "Utilise des restes ou une formule simple : céréale, protéine, légume, un peu de sauce.",
+      "Rends-le facile : une bonne boîte et préparer la veille enlèvent la plupart des excuses."
+     ],
+     "q": "Quel déjeuner te ferait vraiment plaisir à midi ?",
+     "c": "Emporte demain un déjeuner maison et note ce que tu ressens par rapport à en acheter un."
+    },
+    "it": {
+     "t": "Pranzo da casa",
+     "g": "Trovare pranzi semplici e gustosi che rendano facile portare il cibo da casa.",
+     "p": [
+      "Il pranzo da casa è spesso una delle abitudini più facili per risparmiare, e può essere ottimo.",
+      "Usa avanzi o una formula semplice: cereale, proteina, verdura, un po' di salsa.",
+      "Rendilo facile: un buon contenitore e preparare la sera prima tolgono quasi tutte le scuse."
+     ],
+     "q": "Quale pranzo ti farebbe davvero piacere mangiare a mezzogiorno?",
+     "c": "Porta domani un pranzo da casa e annota come ti sei sentito rispetto a comprarlo."
+    },
+    "pt": {
+     "t": "Almoço de casa",
+     "g": "Encontrar almoços simples e saborosos que facilitem levar comida de casa.",
+     "p": [
+      "O almoço de casa é muitas vezes um dos hábitos mais fáceis para poupar, e pode saber lindamente.",
+      "Usa sobras ou uma fórmula simples: cereal, proteína, legume, um pouco de molho.",
+      "Torna fácil: uma boa marmita e preparar na véspera tiram quase todas as desculpas."
+     ],
+     "q": "Que almoço te daria mesmo gosto comer ao meio-dia?",
+     "c": "Leva amanhã um almoço de casa e anota como te sentiste em comparação com comprar um."
+    },
+    "pt_BR": {
+     "t": "Almoço de casa",
+     "g": "Encontrar almoços simples e gostosos que facilitem levar comida de casa.",
+     "p": [
+      "O almoço de casa é muitas vezes um dos hábitos mais fáceis para economizar, e pode ficar delicioso.",
+      "Use sobras ou uma fórmula simples: grão, proteína, legume, um pouco de molho.",
+      "Facilite: uma boa marmita e preparar na véspera tiram quase todas as desculpas."
+     ],
+     "q": "Que almoço você realmente teria prazer em comer ao meio-dia?",
+     "c": "Leve amanhã um almoço de casa e anote como se sentiu em comparação a comprar um."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hosting friends for less",
+     "g": "Use potlucks and simple menus to make gatherings affordable.",
+     "p": [
+      "Good gatherings are about company, not about expensive menus.",
+      "Try a potluck where everyone brings one dish, or a simple theme like pasta night.",
+      "Plan the menu first, then shop once, so hosting stays inside your fun budget."
+     ],
+     "q": "What is the best gathering you have been to, and was it fancy or simple?",
+     "c": "Plan a simple get-together with a menu costing less than a restaurant meal."
+    },
+    "de": {
+     "t": "Freunde günstig bewirten",
+     "g": "Mit Mitbring-Buffets und einfachen Menüs Treffen erschwinglich machen.",
+     "p": [
+      "Gute Treffen leben von Gesellschaft, nicht von teuren Menüs.",
+      "Probiere ein Buffet, zu dem jeder ein Gericht mitbringt, oder ein einfaches Motto wie Nudelabend.",
+      "Plane erst das Menü, kaufe dann einmal ein, damit Gastgeben im Spaßbudget bleibt."
+     ],
+     "q": "Was war das schönste Treffen, auf dem du warst, und war es edel oder einfach?",
+     "c": "Plane ein einfaches Treffen mit einem Menü, das weniger kostet als ein Restaurantessen."
+    },
+    "es": {
+     "t": "Recibir amigos gastando menos",
+     "g": "Usar comidas compartidas y menús simples para que las reuniones sean asequibles.",
+     "p": [
+      "Las buenas reuniones se tratan de la compañía, no de menús caros.",
+      "Prueba una comida donde cada uno trae un plato, o un tema simple como noche de pasta.",
+      "Planifica primero el menú y compra una sola vez, para que recibir quede dentro de tu presupuesto de ocio."
+     ],
+     "q": "¿Cuál ha sido la mejor reunión en la que has estado, y fue elegante o sencilla?",
+     "c": "Planifica una reunión sencilla con un menú que cueste menos que comer en un restaurante."
+    },
+    "fr": {
+     "t": "Recevoir des amis pour moins cher",
+     "g": "Utiliser repas partagés et menus simples pour rendre les rencontres abordables.",
+     "p": [
+      "Les bonnes rencontres tiennent à la compagnie, pas à des menus chers.",
+      "Essaie un repas où chacun apporte un plat, ou un thème simple comme une soirée pâtes.",
+      "Planifie d'abord le menu, puis fais les courses une fois, pour que recevoir reste dans ton budget plaisir."
+     ],
+     "q": "Quelle est la meilleure soirée entre amis à laquelle tu aies assisté, chic ou simple ?",
+     "c": "Planifie une rencontre simple avec un menu qui coûte moins qu'un repas au restaurant."
+    },
+    "it": {
+     "t": "Ospitare gli amici spendendo meno",
+     "g": "Usare cene condivise e menu semplici per rendere accessibili gli incontri.",
+     "p": [
+      "I bei ritrovi dipendono dalla compagnia, non da menu costosi.",
+      "Prova una cena dove ognuno porta un piatto, o un tema semplice come serata pasta.",
+      "Pianifica prima il menu, poi fai la spesa una volta, così ospitare resta nel budget svago."
+     ],
+     "q": "Qual è il miglior ritrovo a cui sei stato, elegante o semplice?",
+     "c": "Pianifica un incontro semplice con un menu che costi meno di un pasto al ristorante."
+    },
+    "pt": {
+     "t": "Receber amigos gastando menos",
+     "g": "Usar refeições partilhadas e menus simples para tornar os encontros acessíveis.",
+     "p": [
+      "Os bons encontros dependem da companhia, não de menus caros.",
+      "Experimenta um jantar em que cada um traz um prato, ou um tema simples como noite de massa.",
+      "Planeia primeiro o menu e depois compra uma só vez, para receber ficar dentro do orçamento de lazer."
+     ],
+     "q": "Qual foi o melhor encontro a que foste, e foi sofisticado ou simples?",
+     "c": "Planeia um encontro simples com um menu que custe menos do que uma refeição no restaurante."
+    },
+    "pt_BR": {
+     "t": "Receber amigos gastando menos",
+     "g": "Usar refeições compartilhadas e cardápios simples para tornar os encontros acessíveis.",
+     "p": [
+      "Bons encontros dependem da companhia, não de cardápios caros.",
+      "Teste um encontro em que cada um traz um prato, ou um tema simples como noite de massa.",
+      "Planeje primeiro o cardápio e compre uma vez só, para receber ficar dentro do orçamento de lazer."
+     ],
+     "q": "Qual foi o melhor encontro a que você foi, e foi sofisticado ou simples?",
+     "c": "Planeje um encontro simples com um cardápio que custe menos do que uma refeição no restaurante."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Drinks and bottled water",
+     "g": "Make small swaps like a reusable bottle that save money every week.",
+     "p": [
+      "Drinks are an easy place to save: a reusable bottle beats buying bottled water again and again.",
+      "Tap water, where it is safe to drink, costs a tiny fraction of bottled water.",
+      "Keep your favourite drink as a treat, and make the rest simple and cheap."
+     ],
+     "q": "How many drinks do you buy in a typical week, and which do you truly enjoy?",
+     "c": "Carry a refillable bottle for three days and count the drinks you did not buy."
+    },
+    "de": {
+     "t": "Getränke und Flaschenwasser",
+     "g": "Kleine Tausche wie eine Mehrwegflasche, die jede Woche Geld sparen.",
+     "p": [
+      "Getränke sind ein leichter Sparbereich: Eine Mehrwegflasche schlägt wiederholtes Flaschenwasserkaufen.",
+      "Leitungswasser kostet, wo es trinkbar ist, nur einen winzigen Bruchteil von Flaschenwasser.",
+      "Behalte dein Lieblingsgetränk als Genuss und halte den Rest einfach und günstig."
+     ],
+     "q": "Wie viele Getränke kaufst du in einer typischen Woche und welche magst du wirklich?",
+     "c": "Trage drei Tage lang eine nachfüllbare Flasche und zähle die Getränke, die du nicht gekauft hast."
+    },
+    "es": {
+     "t": "Bebidas y agua embotellada",
+     "g": "Hacer pequeños cambios como una botella reutilizable que ahorran dinero cada semana.",
+     "p": [
+      "Las bebidas son un lugar fácil para ahorrar: una botella reutilizable vence a comprar agua embotellada una y otra vez.",
+      "El agua del grifo, donde es segura para beber, cuesta una fracción mínima del agua embotellada.",
+      "Conserva tu bebida favorita como capricho y haz el resto simple y barato."
+     ],
+     "q": "¿Cuántas bebidas compras en una semana típica y cuáles disfrutas de verdad?",
+     "c": "Lleva una botella rellenable tres días y cuenta las bebidas que no compraste."
+    },
+    "fr": {
+     "t": "Boissons et eau en bouteille",
+     "g": "Faire de petits échanges comme une gourde réutilisable qui font économiser chaque semaine.",
+     "p": [
+      "Les boissons sont un endroit facile pour économiser : une gourde bat l'achat répété d'eau en bouteille.",
+      "L'eau du robinet, là où elle est potable, coûte une infime fraction de l'eau en bouteille.",
+      "Garde ta boisson préférée comme plaisir, et rends le reste simple et peu cher."
+     ],
+     "q": "Combien de boissons achètes-tu en semaine type, et lesquelles aimes-tu vraiment ?",
+     "c": "Emporte une gourde rechargeable trois jours et compte les boissons que tu n'as pas achetées."
+    },
+    "it": {
+     "t": "Bevande e acqua in bottiglia",
+     "g": "Fare piccoli scambi come una borraccia riutilizzabile che fanno risparmiare ogni settimana.",
+     "p": [
+      "Le bevande sono un posto facile per risparmiare: una borraccia batte il comprare acqua in bottiglia di continuo.",
+      "L'acqua del rubinetto, dove è potabile, costa una minima frazione dell'acqua in bottiglia.",
+      "Tieni la bevanda preferita come sfizio e rendi il resto semplice ed economico."
+     ],
+     "q": "Quante bevande compri in una settimana tipo e quali ti piacciono davvero?",
+     "c": "Porta una borraccia ricaricabile per tre giorni e conta le bevande che non hai comprato."
+    },
+    "pt": {
+     "t": "Bebidas e água engarrafada",
+     "g": "Fazer pequenas trocas como uma garrafa reutilizável que poupam dinheiro todas as semanas.",
+     "p": [
+      "As bebidas são um sítio fácil para poupar: uma garrafa reutilizável vence comprar água engarrafada vezes sem conta.",
+      "A água da torneira, onde é segura para beber, custa uma fração mínima da água engarrafada.",
+      "Mantém a tua bebida preferida como miminho e torna o resto simples e barato."
+     ],
+     "q": "Quantas bebidas compras numa semana típica e de quais gostas mesmo?",
+     "c": "Leva uma garrafa reutilizável durante três dias e conta as bebidas que não compraste."
+    },
+    "pt_BR": {
+     "t": "Bebidas e água engarrafada",
+     "g": "Fazer pequenas trocas como uma garrafinha reutilizável que economizam toda semana.",
+     "p": [
+      "Bebidas são um lugar fácil para economizar: uma garrafinha reutilizável vence comprar água engarrafada toda hora.",
+      "A água da torneira, onde é segura para beber, custa uma fração mínima da água engarrafada.",
+      "Mantenha sua bebida preferida como mimo e deixe o resto simples e barato."
+     ],
+     "q": "Quantas bebidas você compra numa semana típica e de quais gosta de verdade?",
+     "c": "Leve uma garrafinha reutilizável por três dias e conte as bebidas que você não comprou."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Using loyalty cards wisely",
+     "g": "Collect points without letting them push extra spending.",
+     "p": [
+      "Loyalty cards can give real value on things you were going to buy anyway.",
+      "The trap is buying extra just to earn points, which often costs more than the reward.",
+      "Use cards only in shops you already visit, and check your points once a month."
+     ],
+     "q": "Which loyalty cards do you have, and do you actually use the rewards?",
+     "c": "List your loyalty cards and keep only the ones for shops you really use."
+    },
+    "de": {
+     "t": "Kundenkarten klug nutzen",
+     "g": "Punkte sammeln, ohne dass sie dich zu Mehrausgaben treiben.",
+     "p": [
+      "Kundenkarten können echten Wert bringen bei Dingen, die du ohnehin kaufen wolltest.",
+      "Die Falle ist, extra zu kaufen, nur um Punkte zu bekommen, was oft mehr kostet als die Prämie.",
+      "Nutze Karten nur in Läden, die du ohnehin besuchst, und prüfe deine Punkte einmal im Monat."
+     ],
+     "q": "Welche Kundenkarten hast du und löst du die Prämien wirklich ein?",
+     "c": "Liste deine Kundenkarten auf und behalte nur die für Läden, die du wirklich nutzt."
+    },
+    "es": {
+     "t": "Usar con cabeza las tarjetas de fidelidad",
+     "g": "Acumular puntos sin que te empujen a gastar de más.",
+     "p": [
+      "Las tarjetas de fidelidad pueden dar valor real en cosas que ibas a comprar de todos modos.",
+      "La trampa es comprar de más solo para ganar puntos, lo que suele costar más que el premio.",
+      "Usa las tarjetas solo en tiendas que ya visitas y revisa tus puntos una vez al mes."
+     ],
+     "q": "¿Qué tarjetas de fidelidad tienes y usas de verdad las recompensas?",
+     "c": "Haz una lista de tus tarjetas y conserva solo las de tiendas que de verdad usas."
+    },
+    "fr": {
+     "t": "Utiliser les cartes de fidélité avec sagesse",
+     "g": "Cumuler des points sans qu'ils te poussent à dépenser plus.",
+     "p": [
+      "Les cartes de fidélité peuvent apporter une vraie valeur sur ce que tu allais acheter de toute façon.",
+      "Le piège est d'acheter en plus juste pour gagner des points, ce qui coûte souvent plus que la récompense.",
+      "Utilise les cartes seulement dans les magasins que tu fréquentes déjà et vérifie tes points une fois par mois."
+     ],
+     "q": "Quelles cartes de fidélité as-tu, et utilises-tu vraiment les récompenses ?",
+     "c": "Liste tes cartes de fidélité et ne garde que celles des magasins que tu utilises vraiment."
+    },
+    "it": {
+     "t": "Usare con intelligenza le carte fedeltà",
+     "g": "Raccogliere punti senza farti spingere a spendere di più.",
+     "p": [
+      "Le carte fedeltà possono dare valore reale su ciò che avresti comprato comunque.",
+      "La trappola è comprare di più solo per ottenere punti, il che spesso costa più del premio.",
+      "Usa le carte solo nei negozi che già frequenti e controlla i punti una volta al mese."
+     ],
+     "q": "Quali carte fedeltà hai e usi davvero i premi?",
+     "c": "Elenca le tue carte fedeltà e tieni solo quelle dei negozi che usi davvero."
+    },
+    "pt": {
+     "t": "Usar os cartões de fidelização com cabeça",
+     "g": "Acumular pontos sem que te levem a gastar a mais.",
+     "p": [
+      "Os cartões de fidelização podem dar valor real em coisas que ias comprar de qualquer forma.",
+      "A armadilha é comprar a mais só para ganhar pontos, o que muitas vezes custa mais do que o prémio.",
+      "Usa os cartões só em lojas que já visitas e verifica os pontos uma vez por mês."
+     ],
+     "q": "Que cartões de fidelização tens e usas mesmo as recompensas?",
+     "c": "Lista os teus cartões e guarda só os de lojas que realmente usas."
+    },
+    "pt_BR": {
+     "t": "Usar os cartões de fidelidade com cabeça",
+     "g": "Acumular pontos sem que eles levem você a gastar a mais.",
+     "p": [
+      "Os cartões de fidelidade podem dar valor real em coisas que você ia comprar de qualquer forma.",
+      "A armadilha é comprar a mais só para ganhar pontos, o que muitas vezes custa mais do que o prêmio.",
+      "Use os cartões só em lojas que você já frequenta e confira os pontos uma vez por mês."
+     ],
+     "q": "Que cartões de fidelidade você tem e usa mesmo as recompensas?",
+     "c": "Liste seus cartões e fique só com os de lojas que você realmente usa."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Discounts that are not deals",
+     "g": "Recognise when a sale makes you spend more, not less.",
+     "p": [
+      "A discount only saves money if you needed the item in the first place.",
+      "Watch for tricks: only today, buy two, crossed-out prices that make everything look cheap.",
+      "Ask: would I buy this at the normal price? If not, the deal is not a deal."
+     ],
+     "q": "Have you ever bought something on sale that you never really used?",
+     "c": "Before the next sale purchase, wait one day and ask if you still want it."
+    },
+    "de": {
+     "t": "Rabatte, die keine Schnäppchen sind",
+     "g": "Erkennen, wann ein Angebot dich mehr statt weniger ausgeben lässt.",
+     "p": [
+      "Ein Rabatt spart nur Geld, wenn du den Artikel ohnehin gebraucht hast.",
+      "Achte auf Tricks: nur heute, zwei kaufen, durchgestrichene Preise, die alles billig wirken lassen.",
+      "Frage: Würde ich das zum normalen Preis kaufen? Wenn nicht, ist das Angebot keins."
+     ],
+     "q": "Hast du schon mal im Angebot etwas gekauft, das du nie wirklich benutzt hast?",
+     "c": "Warte vor dem nächsten Angebotskauf einen Tag und frage, ob du es noch willst."
+    },
+    "es": {
+     "t": "Descuentos que no son ofertas",
+     "g": "Reconocer cuándo una rebaja te hace gastar más y no menos.",
+     "p": [
+      "Un descuento solo ahorra dinero si necesitabas el artículo desde el principio.",
+      "Cuidado con los trucos: solo hoy, compra dos, precios tachados que hacen que todo parezca barato.",
+      "Pregunta: ¿lo compraría al precio normal? Si no, la oferta no es oferta."
+     ],
+     "q": "¿Alguna vez compraste algo rebajado que nunca llegaste a usar?",
+     "c": "Antes de tu próxima compra en rebajas, espera un día y pregúntate si aún lo quieres."
+    },
+    "fr": {
+     "t": "Les remises qui ne sont pas des bonnes affaires",
+     "g": "Reconnaître quand des soldes te font dépenser plus et non moins.",
+     "p": [
+      "Une remise n'économise de l'argent que si tu avais besoin de l'article au départ.",
+      "Méfie-toi des astuces : aujourd'hui seulement, deux achetés, prix barrés qui font tout paraître bon marché.",
+      "Demande-toi : l'achèterais-je au prix normal ? Sinon, ce n'est pas une affaire."
+     ],
+     "q": "As-tu déjà acheté en promotion quelque chose que tu n'as jamais vraiment utilisé ?",
+     "c": "Avant ton prochain achat en promo, attends un jour et demande-toi si tu le veux encore."
+    },
+    "it": {
+     "t": "Sconti che non sono affari",
+     "g": "Riconoscere quando un saldo ti fa spendere di più, non di meno.",
+     "p": [
+      "Uno sconto fa risparmiare solo se l'articolo ti serviva fin dall'inizio.",
+      "Attento ai trucchi: solo oggi, prendi due, prezzi barrati che fanno sembrare tutto economico.",
+      "Chiediti: lo comprerei a prezzo pieno? Se no, l'affare non è un affare."
+     ],
+     "q": "Hai mai comprato in saldo qualcosa che poi non hai mai usato davvero?",
+     "c": "Prima del prossimo acquisto in saldo aspetta un giorno e chiediti se lo vuoi ancora."
+    },
+    "pt": {
+     "t": "Descontos que não são bons negócios",
+     "g": "Reconhecer quando uma promoção te faz gastar mais e não menos.",
+     "p": [
+      "Um desconto só poupa dinheiro se precisavas mesmo do artigo à partida.",
+      "Atenção aos truques: só hoje, leve dois, preços riscados que fazem tudo parecer barato.",
+      "Pergunta: compraria ao preço normal? Se não, o negócio não é negócio."
+     ],
+     "q": "Já compraste algo em promoção que nunca chegaste a usar?",
+     "c": "Antes da próxima compra em promoção, espera um dia e pergunta se ainda queres."
+    },
+    "pt_BR": {
+     "t": "Descontos que não são boas ofertas",
+     "g": "Reconhecer quando uma promoção faz você gastar mais e não menos.",
+     "p": [
+      "Um desconto só economiza dinheiro se você precisava mesmo do item desde o início.",
+      "Cuidado com os truques: só hoje, leve dois, preços riscados que fazem tudo parecer barato.",
+      "Pergunte: eu compraria pelo preço normal? Se não, a oferta não é oferta."
+     ],
+     "q": "Você já comprou algo em promoção que nunca chegou a usar?",
+     "c": "Antes da próxima compra em promoção, espere um dia e pergunte se ainda quer."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Bulk buying, pros and cons",
+     "g": "Learn when buying in bulk saves money and when it leads to waste.",
+     "p": [
+      "Bulk can save money on things you use steadily, like rice, toilet paper or cleaning supplies.",
+      "It backfires with items that spoil, or when you buy more than you will use in time.",
+      "Check the unit price, your storage space and how long the item lasts first."
+     ],
+     "q": "What do you use so often that buying more at once would make sense?",
+     "c": "Pick one item you use steadily and compare its bulk price with the normal pack."
+    },
+    "de": {
+     "t": "Großpackungen: Vor- und Nachteile",
+     "g": "Lernen, wann Großeinkauf Geld spart und wann er zu Verschwendung führt.",
+     "p": [
+      "Großpackungen können bei Dingen sparen, die du stetig nutzt, wie Reis, Toilettenpapier oder Putzmittel.",
+      "Sie gehen nach hinten los bei verderblichen Dingen oder wenn du mehr kaufst, als du rechtzeitig brauchst.",
+      "Prüfe vorher Grundpreis, Stauraum und Haltbarkeit."
+     ],
+     "q": "Was nutzt du so oft, dass größere Mengen auf einmal sinnvoll wären?",
+     "c": "Wähle einen Artikel, den du stetig nutzt, und vergleiche Großpackungs- und Normalpreis."
+    },
+    "es": {
+     "t": "Comprar al por mayor: pros y contras",
+     "g": "Aprender cuándo comprar al por mayor ahorra dinero y cuándo lleva al desperdicio.",
+     "p": [
+      "Comprar en cantidad puede ahorrar en cosas que usas con regularidad, como arroz, papel higiénico o limpieza.",
+      "Sale mal con artículos que se estropean o si compras más de lo que usarás a tiempo.",
+      "Mira antes el precio por unidad, tu espacio de almacenaje y cuánto dura el artículo."
+     ],
+     "q": "¿Qué usas tan a menudo que comprar más de una vez tendría sentido?",
+     "c": "Elige un artículo que uses con regularidad y compara su precio en cantidad con el envase normal."
+    },
+    "fr": {
+     "t": "Acheter en gros : pour et contre",
+     "g": "Apprendre quand acheter en gros fait économiser et quand cela mène au gaspillage.",
+     "p": [
+      "Acheter en gros peut économiser sur ce que tu utilises régulièrement, comme riz, papier toilette ou produits ménagers.",
+      "Cela se retourne contre toi avec les produits périssables, ou si tu achètes plus que tu n'utiliseras à temps.",
+      "Vérifie d'abord le prix à l'unité, ta place de rangement et la durée de vie du produit."
+     ],
+     "q": "Qu'utilises-tu si souvent qu'acheter plus d'un coup aurait du sens ?",
+     "c": "Choisis un article que tu utilises régulièrement et compare son prix en gros avec le format normal."
+    },
+    "it": {
+     "t": "Comprare all'ingrosso: pro e contro",
+     "g": "Capire quando comprare in grandi quantità fa risparmiare e quando porta allo spreco.",
+     "p": [
+      "Comprare in quantità può far risparmiare su ciò che usi con regolarità, come riso, carta igienica o detersivi.",
+      "Si ritorce contro con prodotti che si deteriorano, o se compri più di quanto userai in tempo.",
+      "Controlla prima il prezzo unitario, lo spazio che hai e quanto dura il prodotto."
+     ],
+     "q": "Cosa usi così spesso che comprarne di più in una volta avrebbe senso?",
+     "c": "Scegli un articolo che usi con regolarità e confronta il prezzo in quantità con la confezione normale."
+    },
+    "pt": {
+     "t": "Comprar em grandes quantidades: prós e contras",
+     "g": "Aprender quando comprar em quantidade poupa dinheiro e quando leva a desperdício.",
+     "p": [
+      "Comprar em quantidade pode poupar em coisas que usas com regularidade, como arroz, papel higiénico ou produtos de limpeza.",
+      "Sai caro com artigos que se estragam ou se compras mais do que usarás a tempo.",
+      "Vê primeiro o preço por unidade, o teu espaço de arrumação e quanto dura o artigo."
+     ],
+     "q": "O que usas tantas vezes que comprar mais de uma vez fazia sentido?",
+     "c": "Escolhe um artigo que uses com regularidade e compara o preço em quantidade com a embalagem normal."
+    },
+    "pt_BR": {
+     "t": "Comprar no atacado: prós e contras",
+     "g": "Aprender quando comprar em quantidade economiza dinheiro e quando leva ao desperdício.",
+     "p": [
+      "Comprar em quantidade pode economizar em coisas que você usa com regularidade, como arroz, papel higiênico ou produtos de limpeza.",
+      "Sai caro com itens que estragam ou se você compra mais do que vai usar a tempo.",
+      "Veja antes o preço por unidade, seu espaço de armazenamento e quanto dura o item."
+     ],
+     "q": "O que você usa com tanta frequência que comprar mais de uma vez faria sentido?",
+     "c": "Escolha um item que você usa com regularidade e compare o preço em quantidade com a embalagem normal."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your food spending check",
+     "g": "Compare your grocery plan with real spending after a few weeks.",
+     "p": [
+      "After a few weeks of food habits, compare your planned amount with what you really spent.",
+      "Look for which habit helped most: the list, meal plan, unit prices or leftovers.",
+      "If you overspent, adjust the plan or the habit; if you underspent, celebrate."
+     ],
+     "q": "Which food habit from the last weeks has helped you the most?",
+     "c": "Compare your food plan with real spending and write one adjustment to make."
+    },
+    "de": {
+     "t": "Dein Essensausgaben-Check",
+     "g": "Deinen Lebensmittelplan nach einigen Wochen mit den echten Ausgaben vergleichen.",
+     "p": [
+      "Vergleiche nach einigen Wochen mit neuen Essgewohnheiten den geplanten Betrag mit dem echt ausgegebenen.",
+      "Suche, welche Gewohnheit am meisten half: Liste, Essensplan, Grundpreise oder Reste.",
+      "Hast du zu viel ausgegeben, passe Plan oder Gewohnheit an; hast du weniger ausgegeben, feiere."
+     ],
+     "q": "Welche Essgewohnheit der letzten Wochen hat dir am meisten geholfen?",
+     "c": "Vergleiche deinen Essensplan mit den echten Ausgaben und schreibe eine Anpassung auf."
+    },
+    "es": {
+     "t": "Tu chequeo de gasto en comida",
+     "g": "Comparar tu plan de compra con el gasto real tras unas semanas.",
+     "p": [
+      "Tras unas semanas con nuevos hábitos, compara la cantidad prevista con lo que realmente gastaste.",
+      "Busca qué hábito ayudó más: la lista, el menú semanal, el precio por unidad o las sobras.",
+      "Si gastaste de más, ajusta el plan o el hábito; si gastaste menos, celébralo."
+     ],
+     "q": "¿Qué hábito de comida de las últimas semanas te ha ayudado más?",
+     "c": "Compara tu plan de comida con el gasto real y escribe un ajuste que hacer."
+    },
+    "fr": {
+     "t": "Ton bilan de dépenses alimentaires",
+     "g": "Comparer ton plan de courses avec les dépenses réelles après quelques semaines.",
+     "p": [
+      "Après quelques semaines de nouvelles habitudes, compare le montant prévu avec ce que tu as réellement dépensé.",
+      "Cherche quelle habitude a le plus aidé : la liste, le menu, les prix au kilo ou les restes.",
+      "Si tu as dépassé, ajuste le plan ou l'habitude ; si tu as dépensé moins, fête-le."
+     ],
+     "q": "Quelle habitude alimentaire des dernières semaines t'a le plus aidé ?",
+     "c": "Compare ton plan alimentaire avec les dépenses réelles et écris un ajustement à faire."
+    },
+    "it": {
+     "t": "Il tuo controllo della spesa alimentare",
+     "g": "Confrontare il piano della spesa con quanto hai speso davvero dopo qualche settimana.",
+     "p": [
+      "Dopo qualche settimana di nuove abitudini, confronta l'importo previsto con quello realmente speso.",
+      "Cerca quale abitudine ha aiutato di più: la lista, il menu, i prezzi unitari o gli avanzi.",
+      "Se hai speso troppo, aggiusta piano o abitudine; se hai speso meno, festeggia."
+     ],
+     "q": "Quale abitudine alimentare delle ultime settimane ti ha aiutato di più?",
+     "c": "Confronta il piano alimentare con la spesa reale e scrivi un aggiustamento da fare."
+    },
+    "pt": {
+     "t": "O teu ponto de situação nos gastos com comida",
+     "g": "Comparar o teu plano de compras com os gastos reais após algumas semanas.",
+     "p": [
+      "Depois de algumas semanas de novos hábitos, compara o valor previsto com o que realmente gastaste.",
+      "Procura que hábito ajudou mais: a lista, o plano de refeições, os preços por unidade ou as sobras.",
+      "Se gastaste a mais, ajusta o plano ou o hábito; se gastaste menos, celebra."
+     ],
+     "q": "Que hábito de comida das últimas semanas mais te ajudou?",
+     "c": "Compara o teu plano de comida com o gasto real e escreve um ajuste a fazer."
+    },
+    "pt_BR": {
+     "t": "Sua conferida nos gastos com comida",
+     "g": "Comparar o seu plano de compras com os gastos reais depois de algumas semanas.",
+     "p": [
+      "Depois de algumas semanas de novos hábitos, compare o valor previsto com o que você realmente gastou.",
+      "Procure qual hábito ajudou mais: a lista, o cardápio semanal, os preços por unidade ou as sobras.",
+      "Se gastou a mais, ajuste o plano ou o hábito; se gastou menos, comemore."
+     ],
+     "q": "Que hábito de comida das últimas semanas mais ajudou você?",
+     "c": "Compare seu plano de comida com o gasto real e escreva um ajuste a fazer."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: food and methods",
+     "g": "Review budgeting methods and food-saving habits.",
+     "p": [
+      "You explored 50/30/20, zero-based, envelopes and paying yourself first, then used them with food.",
+      "Food habits that work: a list, a meal plan, unit prices, leftovers and less waste.",
+      "The best system is the one you keep using, so keep what helps and drop what does not."
+     ],
+     "q": "Which two ideas from the last thirty days will you keep using?",
+     "c": "Write your top two methods or habits and put them where you will see them."
+    },
+    "de": {
+     "t": "Rückblick: Essen und Methoden",
+     "g": "Budgetmethoden und Spargewohnheiten beim Essen wiederholen.",
+     "p": [
+      "Du hast 50/30/20, Zero-Based, Umschläge und Zuerst-an-dich-zahlen erkundet und beim Essen genutzt.",
+      "Essgewohnheiten, die funktionieren: Liste, Essensplan, Grundpreise, Reste und weniger Verschwendung.",
+      "Das beste System ist das, das du weiter nutzt; behalte, was hilft, und lass los, was nicht."
+     ],
+     "q": "Welche zwei Ideen der letzten dreißig Tage nutzt du weiter?",
+     "c": "Schreibe deine zwei besten Methoden oder Gewohnheiten auf und platziere sie dort, wo du sie siehst."
+    },
+    "es": {
+     "t": "Repaso: comida y métodos",
+     "g": "Repasar métodos de presupuesto y hábitos para ahorrar en comida.",
+     "p": [
+      "Exploraste el 50/30/20, base cero, sobres y pagarte primero, y los usaste con la comida.",
+      "Hábitos de comida que funcionan: lista, menú semanal, precios por unidad, sobras y menos desperdicio.",
+      "El mejor sistema es el que sigues usando, así que quédate con lo que ayuda y suelta lo que no."
+     ],
+     "q": "¿Qué dos ideas de los últimos treinta días seguirás usando?",
+     "c": "Escribe tus dos mejores métodos o hábitos y ponlos donde los veas."
+    },
+    "fr": {
+     "t": "Révision : alimentation et méthodes",
+     "g": "Revoir les méthodes de budget et les habitudes pour économiser sur la nourriture.",
+     "p": [
+      "Tu as exploré le 50/30/20, la base zéro, les enveloppes et te payer en premier, puis tu les as appliqués à la nourriture.",
+      "Habitudes alimentaires qui marchent : liste, menu, prix au kilo, restes et moins de gaspillage.",
+      "Le meilleur système est celui que tu continues d'utiliser : garde ce qui aide et laisse le reste."
+     ],
+     "q": "Quelles deux idées des trente derniers jours vas-tu continuer à utiliser ?",
+     "c": "Écris tes deux meilleures méthodes ou habitudes et mets-les là où tu les verras."
+    },
+    "it": {
+     "t": "Ripasso: cibo e metodi",
+     "g": "Ripassare i metodi di budget e le abitudini per risparmiare sul cibo.",
+     "p": [
+      "Hai esplorato il 50/30/20, la base zero, le buste e paga prima te stesso, poi li hai usati con il cibo.",
+      "Abitudini alimentari che funzionano: lista, menu, prezzi unitari, avanzi e meno spreco.",
+      "Il miglior sistema è quello che continui a usare, quindi tieni ciò che aiuta e lascia il resto."
+     ],
+     "q": "Quali due idee degli ultimi trenta giorni continuerai a usare?",
+     "c": "Scrivi i tuoi due metodi o abitudini migliori e mettili dove li vedrai."
+    },
+    "pt": {
+     "t": "Revisão: comida e métodos",
+     "g": "Rever métodos de orçamento e hábitos para poupar na comida.",
+     "p": [
+      "Exploraste o 50/30/20, a base zero, os envelopes e pagares-te primeiro, e usaste-os com a comida.",
+      "Hábitos de comida que funcionam: lista, plano de refeições, preços por unidade, sobras e menos desperdício.",
+      "O melhor sistema é o que continuas a usar, por isso fica com o que ajuda e larga o que não."
+     ],
+     "q": "Que duas ideias dos últimos trinta dias vais continuar a usar?",
+     "c": "Escreve os teus dois melhores métodos ou hábitos e põe-nos onde os vejas."
+    },
+    "pt_BR": {
+     "t": "Revisão: comida e métodos",
+     "g": "Rever métodos de orçamento e hábitos para economizar na comida.",
+     "p": [
+      "Você explorou o 50/30/20, a base zero, os envelopes e pagar a si primeiro, e usou tudo isso com a comida.",
+      "Hábitos de comida que funcionam: lista, cardápio semanal, preços por unidade, sobras e menos desperdício.",
+      "O melhor sistema é o que você continua usando, então fique com o que ajuda e largue o que não."
+     ],
+     "q": "Quais duas ideias dos últimos trinta dias você vai continuar usando?",
+     "c": "Escreva seus dois melhores métodos ou hábitos e coloque onde você vai ver."
+    }
+   }
+  }
+ ]
+}

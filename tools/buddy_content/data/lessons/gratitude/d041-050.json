@@ -1,0 +1,835 @@
+{
+ "topic": "gratitude",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sharing your letter",
+     "g": "Decide whether to send it, read it aloud or simply keep it.",
+     "p": [
+      "There is no wrong choice: sending, reading aloud and keeping all have value.",
+      "Sending can surprise and touch the person; keeping it can be just for you.",
+      "If you share it, choose a calm moment and expect nothing in return."
+     ],
+     "q": "What feels right for your letter: send it, read it or keep it?",
+     "c": "Decide what to do with your letter and take one small step toward that today."
+    },
+    "de": {
+     "t": "Deinen Brief teilen",
+     "g": "Entscheide, ob du ihn abschickst, vorliest oder einfach behältst.",
+     "p": [
+      "Es gibt keine falsche Wahl: Abschicken, Vorlesen und Behalten haben alle Wert.",
+      "Abschicken kann die Person überraschen und berühren; Behalten kann nur für dich sein.",
+      "Wenn du ihn teilst, wähle einen ruhigen Moment und erwarte nichts zurück."
+     ],
+     "q": "Was fühlt sich für deinen Brief richtig an: abschicken, vorlesen oder behalten?",
+     "c": "Entscheide, was du mit deinem Brief tust, und mache heute einen kleinen Schritt dahin."
+    },
+    "es": {
+     "t": "Compartir tu carta",
+     "g": "Decide si la enviarás, la leerás en voz alta o simplemente la guardarás.",
+     "p": [
+      "No hay opción equivocada: enviar, leer en voz alta y guardar tienen valor.",
+      "Enviarla puede sorprender y emocionar; guardarla puede ser solo para ti.",
+      "Si la compartes, elige un momento tranquilo y no esperes nada a cambio."
+     ],
+     "q": "¿Qué te parece mejor para tu carta: enviarla, leerla o guardarla?",
+     "c": "Decide qué hacer con tu carta y da hoy un pequeño paso en esa dirección."
+    },
+    "fr": {
+     "t": "Partager ta lettre",
+     "g": "Décide si tu l'envoies, la lis à voix haute ou la gardes simplement.",
+     "p": [
+      "Il n'y a pas de mauvais choix : envoyer, lire à voix haute et garder ont tous de la valeur.",
+      "L'envoyer peut surprendre et toucher ; la garder peut être juste pour toi.",
+      "Si tu la partages, choisis un moment calme et n'attends rien en retour."
+     ],
+     "q": "Qu'est-ce qui te semble juste pour ta lettre : l'envoyer, la lire ou la garder ?",
+     "c": "Décide ce que tu fais de ta lettre et fais aujourd'hui un petit pas dans ce sens."
+    },
+    "it": {
+     "t": "Condividere la tua lettera",
+     "g": "Decidi se spedirla, leggerla ad alta voce o semplicemente tenerla.",
+     "p": [
+      "Non c'è una scelta sbagliata: spedire, leggere ad alta voce e tenere hanno tutti valore.",
+      "Spedirla può sorprendere e toccare; tenerla può essere solo per te.",
+      "Se la condividi, scegli un momento calmo e non aspettarti nulla in cambio."
+     ],
+     "q": "Cosa ti sembra giusto per la tua lettera: spedirla, leggerla o tenerla?",
+     "c": "Decidi cosa fare della lettera e fai oggi un piccolo passo in quella direzione."
+    },
+    "pt": {
+     "t": "Partilhar a tua carta",
+     "g": "Decide se a envias, lês em voz alta ou simplesmente guardas.",
+     "p": [
+      "Não há escolha errada: enviar, ler em voz alta e guardar têm todos valor.",
+      "Enviá-la pode surpreender e tocar; guardá-la pode ser só para ti.",
+      "Se a partilhares, escolhe um momento calmo e não esperes nada em troca."
+     ],
+     "q": "O que te parece certo para a tua carta: enviá-la, lê-la ou guardá-la?",
+     "c": "Decide o que fazer à carta e dá hoje um pequeno passo nessa direção."
+    },
+    "pt_BR": {
+     "t": "Compartilhando sua carta",
+     "g": "Decida se vai enviá-la, lê-la em voz alta ou simplesmente guardá-la.",
+     "p": [
+      "Não há escolha errada: enviar, ler em voz alta e guardar têm todos valor.",
+      "Enviá-la pode surpreender e tocar; guardá-la pode ser só para você.",
+      "Se compartilhar, escolha um momento calmo e não espere nada em troca."
+     ],
+     "q": "O que parece certo para sua carta: enviá-la, lê-la ou guardá-la?",
+     "c": "Decida o que fazer com a carta e dê hoje um pequeno passo nessa direção."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kind strangers",
+     "g": "Appreciate a smile or a helping hand from someone you do not know.",
+     "p": [
+      "Strangers help more often than we notice: directions, a held door, a seat offered.",
+      "Recalling these moments reminds us that most people are decent.",
+      "You can silently wish them well, even if you never meet again."
+     ],
+     "q": "Which stranger's kindness do you still remember?",
+     "c": "Notice one small kindness from a stranger today and silently wish them a good day."
+    },
+    "de": {
+     "t": "Freundliche Fremde",
+     "g": "Schätze ein Lächeln oder eine helfende Hand von jemandem, den du nicht kennst.",
+     "p": [
+      "Fremde helfen öfter, als wir bemerken: Wegbeschreibung, aufgehaltene Tür, angebotener Sitzplatz.",
+      "Sich daran zu erinnern zeigt uns, dass die meisten Menschen anständig sind.",
+      "Du kannst ihnen still alles Gute wünschen, auch wenn ihr euch nie wiederseht."
+     ],
+     "q": "An die Freundlichkeit welches Fremden erinnerst du dich noch?",
+     "c": "Bemerke heute eine kleine Freundlichkeit eines Fremden und wünsche ihm still einen guten Tag."
+    },
+    "es": {
+     "t": "Desconocidos amables",
+     "g": "Valora una sonrisa o una mano amiga de alguien que no conoces.",
+     "p": [
+      "Los desconocidos ayudan más de lo que notamos: indicaciones, una puerta sujeta, un asiento cedido.",
+      "Recordar estos momentos nos recuerda que la mayoría de las personas son buenas.",
+      "Puedes desearles lo mejor en silencio, aunque no os volváis a ver."
+     ],
+     "q": "¿La amabilidad de qué desconocido recuerdas todavía?",
+     "c": "Fíjate hoy en una pequeña amabilidad de un desconocido y deséale en silencio un buen día."
+    },
+    "fr": {
+     "t": "Inconnus bienveillants",
+     "g": "Apprécie un sourire ou un coup de main d'une personne que tu ne connais pas.",
+     "p": [
+      "Les inconnus aident plus souvent qu'on ne le remarque : un itinéraire, une porte tenue, une place offerte.",
+      "Se rappeler ces moments nous rappelle que la plupart des gens sont bienveillants.",
+      "Tu peux leur souhaiter du bien en silence, même si vous ne vous revoyez jamais."
+     ],
+     "q": "La gentillesse de quel inconnu te reste-t-elle en mémoire ?",
+     "c": "Remarque aujourd'hui une petite gentillesse d'un inconnu et souhaite-lui en silence une bonne journée."
+    },
+    "it": {
+     "t": "Sconosciuti gentili",
+     "g": "Apprezza un sorriso o una mano tesa da qualcuno che non conosci.",
+     "p": [
+      "Gli sconosciuti aiutano più spesso di quanto notiamo: indicazioni, una porta tenuta, un posto ceduto.",
+      "Ricordare questi momenti ci ricorda che la maggior parte delle persone è per bene.",
+      "Puoi augurare loro il meglio in silenzio, anche se non vi rivedrete."
+     ],
+     "q": "La gentilezza di quale sconosciuto ricordi ancora?",
+     "c": "Nota oggi una piccola gentilezza di uno sconosciuto e auguragli in silenzio una buona giornata."
+    },
+    "pt": {
+     "t": "Desconhecidos simpáticos",
+     "g": "Valoriza um sorriso ou uma ajuda de alguém que não conheces.",
+     "p": [
+      "Os desconhecidos ajudam mais vezes do que reparamos: indicações, uma porta aberta, um lugar cedido.",
+      "Recordar estes momentos lembra-nos de que a maioria das pessoas é boa.",
+      "Podes desejar-lhes o melhor em silêncio, mesmo que nunca mais se vejam."
+     ],
+     "q": "A gentileza de que desconhecido ainda recordas?",
+     "c": "Repara hoje numa pequena gentileza de um desconhecido e deseja-lhe em silêncio um bom dia."
+    },
+    "pt_BR": {
+     "t": "Desconhecidos gentis",
+     "g": "Valorize um sorriso ou uma ajuda de alguém que você não conhece.",
+     "p": [
+      "Desconhecidos ajudam mais vezes do que percebemos: informações, uma porta segurada, um lugar cedido.",
+      "Lembrar desses momentos nos lembra de que a maioria das pessoas é boa.",
+      "Você pode desejar o melhor a eles em silêncio, mesmo que nunca mais se encontrem."
+     ],
+     "q": "A gentileza de que desconhecido você ainda lembra?",
+     "c": "Perceba hoje uma pequena gentileza de um desconhecido e deseje a ele em silêncio um bom dia."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pets and animals",
+     "g": "Notice the joy animals bring into your life.",
+     "p": [
+      "Pets, birds or even a neighbour's cat can lift the mood in seconds.",
+      "If you have no pets, watching birds or squirrels works too.",
+      "Animals live in the moment, which is a nice reminder for us."
+     ],
+     "q": "Which animal moment made you smile recently?",
+     "c": "Spend two minutes watching or petting an animal and notice how it makes you feel."
+    },
+    "de": {
+     "t": "Haustiere und Tiere",
+     "g": "Bemerke die Freude, die Tiere in dein Leben bringen.",
+     "p": [
+      "Haustiere, Vögel oder die Katze des Nachbarn können in Sekunden die Stimmung heben.",
+      "Wenn du kein Haustier hast, geht auch das Beobachten von Vögeln oder Eichhörnchen.",
+      "Tiere leben im Moment, eine schöne Erinnerung für uns."
+     ],
+     "q": "Welcher Tiermoment brachte dich zuletzt zum Lächeln?",
+     "c": "Verbringe zwei Minuten damit, ein Tier zu beobachten oder zu streicheln, und spüre, wie es dir tut."
+    },
+    "es": {
+     "t": "Mascotas y animales",
+     "g": "Fíjate en la alegría que los animales traen a tu vida.",
+     "p": [
+      "Mascotas, pájaros o incluso el gato del vecino pueden animar en segundos.",
+      "Si no tienes mascota, mirar pájaros o ardillas también sirve.",
+      "Los animales viven el momento, un buen recordatorio para nosotros."
+     ],
+     "q": "¿Qué momento con un animal te hizo sonreír últimamente?",
+     "c": "Dedica dos minutos a mirar o acariciar a un animal y nota cómo te sientes."
+    },
+    "fr": {
+     "t": "Animaux de compagnie et animaux",
+     "g": "Remarque la joie que les animaux apportent dans ta vie.",
+     "p": [
+      "Un animal de compagnie, un oiseau ou le chat du voisin peuvent remonter le moral en quelques secondes.",
+      "Si tu n'as pas d'animal, regarder les oiseaux ou les écureuils fonctionne aussi.",
+      "Les animaux vivent l'instant présent, un joli rappel pour nous."
+     ],
+     "q": "Quel moment avec un animal t'a fait sourire récemment ?",
+     "c": "Passe deux minutes à observer ou caresser un animal et remarque ce que tu ressens."
+    },
+    "it": {
+     "t": "Animali domestici e non",
+     "g": "Nota la gioia che gli animali portano nella tua vita.",
+     "p": [
+      "Animali domestici, uccelli o anche il gatto del vicino possono tirare su il morale in pochi secondi.",
+      "Se non hai animali, vanno bene anche gli uccelli o gli scoiattoli.",
+      "Gli animali vivono il momento, un bel promemoria per noi."
+     ],
+     "q": "Quale momento con un animale ti ha fatto sorridere di recente?",
+     "c": "Dedica due minuti a osservare o accarezzare un animale e nota come ti senti."
+    },
+    "pt": {
+     "t": "Animais de estimação e outros",
+     "g": "Repara na alegria que os animais trazem à tua vida.",
+     "p": [
+      "Animais de estimação, aves ou até o gato do vizinho podem animar em segundos.",
+      "Se não tens animais, observar pássaros ou esquilos também serve.",
+      "Os animais vivem o momento, um bom lembrete para nós."
+     ],
+     "q": "Que momento com um animal te fez sorrir recentemente?",
+     "c": "Passa dois minutos a observar ou a fazer festas a um animal e repara como te sentes."
+    },
+    "pt_BR": {
+     "t": "Pets e animais",
+     "g": "Perceba a alegria que os animais trazem à sua vida.",
+     "p": [
+      "Pets, pássaros ou até o gato do vizinho podem animar em segundos.",
+      "Se você não tem pet, observar pássaros ou esquilos também serve.",
+      "Os animais vivem o momento, um bom lembrete para nós."
+     ],
+     "q": "Que momento com um animal fez você sorrir recentemente?",
+     "c": "Passe dois minutos observando ou fazendo carinho em um animal e perceba como você se sente."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Happy childhood memories",
+     "g": "Recall a happy memory from when you were young.",
+     "p": [
+      "Happy memories are a treasure you carry with you at all times.",
+      "Think of a smell, a place or a game from childhood and let the scene return.",
+      "Thank the people who made that moment possible, if you can."
+     ],
+     "q": "What is a happy memory from your childhood that you love?",
+     "c": "Write a few sentences about a happy childhood memory with as many details as you can."
+    },
+    "de": {
+     "t": "Glückliche Kindheitserinnerungen",
+     "g": "Erinnere dich an eine glückliche Erinnerung aus deiner Kindheit.",
+     "p": [
+      "Glückliche Erinnerungen sind ein Schatz, den du immer bei dir trägst.",
+      "Denke an einen Geruch, einen Ort oder ein Spiel aus der Kindheit und lass die Szene zurückkehren.",
+      "Danke den Menschen, die diesen Moment möglich machten, wenn du kannst."
+     ],
+     "q": "Welche glückliche Erinnerung aus deiner Kindheit liebst du?",
+     "c": "Schreibe einige Sätze über eine glückliche Kindheitserinnerung mit möglichst vielen Details."
+    },
+    "es": {
+     "t": "Recuerdos felices de la infancia",
+     "g": "Recuerda un recuerdo feliz de cuando eras pequeño.",
+     "p": [
+      "Los recuerdos felices son un tesoro que llevas contigo siempre.",
+      "Piensa en un olor, un lugar o un juego de la infancia y deja que vuelva la escena.",
+      "Da las gracias a quienes hicieron posible ese momento, si puedes."
+     ],
+     "q": "¿Qué recuerdo feliz de tu infancia te encanta?",
+     "c": "Escribe unas frases sobre un recuerdo feliz de la infancia con todos los detalles que puedas."
+    },
+    "fr": {
+     "t": "Heureux souvenirs d'enfance",
+     "g": "Rappelle-toi un souvenir heureux de ton enfance.",
+     "p": [
+      "Les souvenirs heureux sont un trésor que tu portes toujours avec toi.",
+      "Pense à une odeur, un lieu ou un jeu d'enfance et laisse la scène revenir.",
+      "Remercie les personnes qui ont rendu ce moment possible, si tu le peux."
+     ],
+     "q": "Quel souvenir heureux de ton enfance aimes-tu ?",
+     "c": "Écris quelques phrases sur un souvenir d'enfance heureux avec autant de détails que possible."
+    },
+    "it": {
+     "t": "Felici ricordi d'infanzia",
+     "g": "Ricorda un ricordo felice di quando eri piccolo.",
+     "p": [
+      "I ricordi felici sono un tesoro che porti sempre con te.",
+      "Pensa a un odore, un luogo o un gioco dell'infanzia e lascia tornare la scena.",
+      "Ringrazia chi ha reso possibile quel momento, se puoi."
+     ],
+     "q": "Qual è un ricordo felice della tua infanzia che ami?",
+     "c": "Scrivi alcune frasi su un ricordo felice d'infanzia con quanti più dettagli possibile."
+    },
+    "pt": {
+     "t": "Memórias felizes de infância",
+     "g": "Recorda uma memória feliz de quando eras pequeno.",
+     "p": [
+      "As memórias felizes são um tesouro que levas sempre contigo.",
+      "Pensa num cheiro, num lugar ou num jogo da infância e deixa a cena regressar.",
+      "Agradece a quem tornou esse momento possível, se puderes."
+     ],
+     "q": "Que memória feliz da tua infância adoras?",
+     "c": "Escreve algumas frases sobre uma memória feliz de infância com o máximo de detalhes."
+    },
+    "pt_BR": {
+     "t": "Memórias felizes de infância",
+     "g": "Lembre de uma memória feliz de quando você era pequeno.",
+     "p": [
+      "Memórias felizes são um tesouro que você leva sempre com você.",
+      "Pense num cheiro, num lugar ou numa brincadeira da infância e deixe a cena voltar.",
+      "Agradeça a quem tornou esse momento possível, se puder."
+     ],
+     "q": "Que memória feliz da sua infância você adora?",
+     "c": "Escreva algumas frases sobre uma memória feliz de infância com o máximo de detalhes."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Role models",
+     "g": "Appreciate people whose example inspires you.",
+     "p": [
+      "A role model can be a public figure, a relative or someone you simply observe.",
+      "Notice the quality you admire: honesty, courage, kindness, humour.",
+      "Admiring a quality shows you what you value and want to grow."
+     ],
+     "q": "Whose example inspires you, and which quality do you admire most?",
+     "c": "Name one role model and write one quality of theirs you would like to practise."
+    },
+    "de": {
+     "t": "Vorbilder",
+     "g": "Schätze Menschen, deren Beispiel dich inspiriert.",
+     "p": [
+      "Ein Vorbild kann eine bekannte Person, ein Verwandter oder jemand sein, den du einfach beobachtest.",
+      "Achte auf die Eigenschaft, die du bewunderst: Ehrlichkeit, Mut, Güte, Humor.",
+      "Eine Eigenschaft zu bewundern zeigt dir, was du schätzt und entwickeln willst."
+     ],
+     "q": "Wessen Beispiel inspiriert dich, und welche Eigenschaft bewunderst du am meisten?",
+     "c": "Nenne ein Vorbild und schreibe eine Eigenschaft auf, die du üben möchtest."
+    },
+    "es": {
+     "t": "Modelos a seguir",
+     "g": "Valora a personas cuyo ejemplo te inspira.",
+     "p": [
+      "Un modelo puede ser una figura pública, un familiar o alguien a quien simplemente observas.",
+      "Fíjate en la cualidad que admiras: honestidad, valentía, bondad, humor.",
+      "Admirar una cualidad muestra lo que valoras y quieres desarrollar."
+     ],
+     "q": "¿El ejemplo de quién te inspira y qué cualidad admiras más?",
+     "c": "Nombra un modelo y escribe una cualidad suya que te gustaría practicar."
+    },
+    "fr": {
+     "t": "Modèles inspirants",
+     "g": "Apprécie les personnes dont l'exemple t'inspire.",
+     "p": [
+      "Un modèle peut être une personnalité publique, un proche ou quelqu'un que tu observes simplement.",
+      "Repère la qualité que tu admires : honnêteté, courage, gentillesse, humour.",
+      "Admirer une qualité montre ce que tu valorises et veux développer."
+     ],
+     "q": "L'exemple de qui t'inspire, et quelle qualité admires-tu le plus ?",
+     "c": "Nomme un modèle et écris une de ses qualités que tu aimerais pratiquer."
+    },
+    "it": {
+     "t": "Modelli da seguire",
+     "g": "Apprezza le persone il cui esempio ti ispira.",
+     "p": [
+      "Un modello può essere una figura pubblica, un parente o qualcuno che osservi e basta.",
+      "Nota la qualità che ammiri: onestà, coraggio, gentilezza, umorismo.",
+      "Ammirare una qualità mostra cosa apprezzi e vuoi coltivare."
+     ],
+     "q": "L'esempio di chi ti ispira, e quale qualità ammiri di più?",
+     "c": "Nomina un modello e scrivi una sua qualità che vorresti praticare."
+    },
+    "pt": {
+     "t": "Modelos a seguir",
+     "g": "Valoriza as pessoas cujo exemplo te inspira.",
+     "p": [
+      "Um modelo pode ser uma figura pública, um familiar ou alguém que simplesmente observas.",
+      "Repara na qualidade que admiras: honestidade, coragem, bondade, humor.",
+      "Admirar uma qualidade mostra o que valorizas e queres desenvolver."
+     ],
+     "q": "O exemplo de quem te inspira e que qualidade admiras mais?",
+     "c": "Diz um modelo e escreve uma qualidade dele que gostarias de praticar."
+    },
+    "pt_BR": {
+     "t": "Referências que inspiram",
+     "g": "Valorize as pessoas cujo exemplo inspira você.",
+     "p": [
+      "Uma referência pode ser uma figura pública, um familiar ou alguém que você simplesmente observa.",
+      "Perceba a qualidade que você admira: honestidade, coragem, bondade, humor.",
+      "Admirar uma qualidade mostra o que você valoriza e quer desenvolver."
+     ],
+     "q": "O exemplo de quem inspira você e que qualidade você mais admira?",
+     "c": "Cite uma referência e escreva uma qualidade dela que você gostaria de praticar."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Good advice",
+     "g": "Remember helpful advice you received and how it helped.",
+     "p": [
+      "Good advice often arrives quietly, in a short sentence from someone who cared.",
+      "Think of how acting on it changed something, even slightly.",
+      "Thanking the giver closes a lovely little circle."
+     ],
+     "q": "What piece of advice has helped you most?",
+     "c": "Write down one piece of advice that helped you and who gave it."
+    },
+    "de": {
+     "t": "Guter Rat",
+     "g": "Erinnere dich an einen hilfreichen Rat, den du bekommen hast, und wie er half.",
+     "p": [
+      "Guter Rat kommt oft leise, in einem kurzen Satz von jemandem, dem du wichtig warst.",
+      "Denke daran, wie das Befolgen etwas verändert hat, und sei es nur leicht.",
+      "Dem Geber zu danken schließt einen schönen kleinen Kreis."
+     ],
+     "q": "Welcher Rat hat dir am meisten geholfen?",
+     "c": "Schreibe einen Rat auf, der dir geholfen hat, und wer ihn gab."
+    },
+    "es": {
+     "t": "Buenos consejos",
+     "g": "Recuerda un consejo útil que recibiste y cómo te ayudó.",
+     "p": [
+      "Un buen consejo suele llegar en silencio, en una frase corta de alguien que se preocupaba.",
+      "Piensa cómo seguirlo cambió algo, aunque fuera un poco.",
+      "Dar las gracias a quien lo dio cierra un bonito círculo."
+     ],
+     "q": "¿Qué consejo te ha ayudado más?",
+     "c": "Anota un consejo que te ayudó y quién te lo dio."
+    },
+    "fr": {
+     "t": "Les bons conseils",
+     "g": "Rappelle-toi un conseil utile reçu et en quoi il t'a aidé.",
+     "p": [
+      "Un bon conseil arrive souvent discrètement, en une phrase courte de quelqu'un qui tenait à toi.",
+      "Pense à ce que le suivre a changé, même un peu.",
+      "Remercier la personne referme joliment le cercle."
+     ],
+     "q": "Quel conseil t'a le plus aidé ?",
+     "c": "Note un conseil qui t'a aidé et qui te l'a donné."
+    },
+    "it": {
+     "t": "I buoni consigli",
+     "g": "Ricorda un consiglio utile che hai ricevuto e come ti ha aiutato.",
+     "p": [
+      "Un buon consiglio arriva spesso in silenzio, in una frase breve di qualcuno che ci teneva.",
+      "Pensa a come seguirlo ha cambiato qualcosa, anche poco.",
+      "Ringraziare chi l'ha dato chiude un bel piccolo cerchio."
+     ],
+     "q": "Quale consiglio ti è stato più utile?",
+     "c": "Annota un consiglio che ti ha aiutato e chi te l'ha dato."
+    },
+    "pt": {
+     "t": "Bons conselhos",
+     "g": "Recorda um conselho útil que recebeste e como te ajudou.",
+     "p": [
+      "Um bom conselho costuma chegar em silêncio, numa frase curta de alguém que se importava.",
+      "Pensa em como segui-lo mudou algo, mesmo que pouco.",
+      "Agradecer a quem o deu fecha um bonito círculo."
+     ],
+     "q": "Que conselho mais te ajudou?",
+     "c": "Anota um conselho que te ajudou e quem to deu."
+    },
+    "pt_BR": {
+     "t": "Bons conselhos",
+     "g": "Lembre de um conselho útil que você recebeu e como ele ajudou.",
+     "p": [
+      "Um bom conselho costuma chegar em silêncio, numa frase curta de alguém que se importava.",
+      "Pense em como seguir o conselho mudou algo, mesmo que pouco.",
+      "Agradecer a quem deu fecha um lindo círculo."
+     ],
+     "q": "Que conselho mais ajudou você?",
+     "c": "Anote um conselho que ajudou você e quem deu."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kindness around you",
+     "g": "Spot acts of kindness between other people.",
+     "p": [
+      "Kindness is everywhere once you start looking: a shared umbrella, a patient answer.",
+      "Watching it warms the heart, even when you are not involved.",
+      "Noticing kindness makes it easier to offer it yourself."
+     ],
+     "q": "What act of kindness between others did you notice lately?",
+     "c": "Spot three small acts of kindness between people today and note them."
+    },
+    "de": {
+     "t": "Freundlichkeit um dich herum",
+     "g": "Entdecke freundliche Taten zwischen anderen Menschen.",
+     "p": [
+      "Freundlichkeit ist überall, wenn man anfängt zu schauen: ein geteilter Schirm, eine geduldige Antwort.",
+      "Sie zu beobachten wärmt das Herz, auch wenn du nicht beteiligt bist.",
+      "Freundlichkeit zu bemerken macht es leichter, sie selbst zu schenken."
+     ],
+     "q": "Welche freundliche Tat zwischen anderen ist dir zuletzt aufgefallen?",
+     "c": "Entdecke heute drei kleine freundliche Taten zwischen Menschen und notiere sie."
+    },
+    "es": {
+     "t": "Amabilidad a tu alrededor",
+     "g": "Descubre gestos de amabilidad entre otras personas.",
+     "p": [
+      "La amabilidad está en todas partes cuando empiezas a buscarla: un paraguas compartido, una respuesta paciente.",
+      "Verla calienta el corazón, aunque no participes.",
+      "Notar la amabilidad facilita ofrecerla tú mismo."
+     ],
+     "q": "¿Qué gesto de amabilidad entre otros notaste últimamente?",
+     "c": "Descubre hoy tres pequeños gestos de amabilidad entre personas y anótalos."
+    },
+    "fr": {
+     "t": "La gentillesse autour de toi",
+     "g": "Repère des gestes de gentillesse entre d'autres personnes.",
+     "p": [
+      "La gentillesse est partout quand on commence à regarder : un parapluie partagé, une réponse patiente.",
+      "La voir réchauffe le cœur, même sans y participer.",
+      "Remarquer la gentillesse aide à en offrir soi-même."
+     ],
+     "q": "Quel geste de gentillesse entre d'autres as-tu remarqué récemment ?",
+     "c": "Repère aujourd'hui trois petits gestes de gentillesse entre personnes et note-les."
+    },
+    "it": {
+     "t": "La gentilezza intorno a te",
+     "g": "Individua gesti di gentilezza tra altre persone.",
+     "p": [
+      "La gentilezza è ovunque quando inizi a cercarla: un ombrello condiviso, una risposta paziente.",
+      "Vederla scalda il cuore, anche se non sei coinvolto.",
+      "Notare la gentilezza rende più facile offrirla tu stesso."
+     ],
+     "q": "Quale gesto di gentilezza tra altri hai notato di recente?",
+     "c": "Individua oggi tre piccoli gesti di gentilezza tra persone e annotali."
+    },
+    "pt": {
+     "t": "A gentileza à tua volta",
+     "g": "Descobre gestos de gentileza entre outras pessoas.",
+     "p": [
+      "A gentileza está por todo o lado quando começas a procurar: um guarda-chuva partilhado, uma resposta paciente.",
+      "Vê-la aquece o coração, mesmo sem participares.",
+      "Reparar na gentileza facilita oferecê-la tu próprio."
+     ],
+     "q": "Que gesto de gentileza entre outros notaste ultimamente?",
+     "c": "Descobre hoje três pequenos gestos de gentileza entre pessoas e anota-os."
+    },
+    "pt_BR": {
+     "t": "A gentileza ao seu redor",
+     "g": "Descubra gestos de gentileza entre outras pessoas.",
+     "p": [
+      "A gentileza está por toda parte quando você começa a procurar: um guarda-chuva dividido, uma resposta paciente.",
+      "Ver isso aquece o coração, mesmo sem você participar.",
+      "Perceber a gentileza facilita oferecê-la você mesmo."
+     ],
+     "q": "Que gesto de gentileza entre outras pessoas você percebeu ultimamente?",
+     "c": "Descubra hoje três pequenos gestos de gentileza entre pessoas e anote."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gratitude in conversation",
+     "g": "Ask others what went well in their day.",
+     "p": [
+      "A simple question like what was good today invites warm conversations.",
+      "Listen with curiosity and let them tell the whole story.",
+      "Sharing good moments strengthens bonds on both sides."
+     ],
+     "q": "What is a question you could ask someone to hear about their good moments?",
+     "c": "Ask one person today: what is one good thing that happened to you today?"
+    },
+    "de": {
+     "t": "Dankbarkeit im Gespräch",
+     "g": "Frage andere, was an ihrem Tag gut lief.",
+     "p": [
+      "Eine einfache Frage wie Was war heute schön lädt zu herzlichen Gesprächen ein.",
+      "Höre neugierig zu und lass die Person die ganze Geschichte erzählen.",
+      "Gute Momente zu teilen stärkt die Bindung auf beiden Seiten."
+     ],
+     "q": "Welche Frage könntest du jemandem stellen, um von seinen guten Momenten zu hören?",
+     "c": "Frage heute einen Menschen: Was Gutes ist dir heute passiert?"
+    },
+    "es": {
+     "t": "Gratitud en la conversación",
+     "g": "Pregunta a otros qué salió bien en su día.",
+     "p": [
+      "Una pregunta simple como qué fue bueno hoy invita a conversaciones cálidas.",
+      "Escucha con curiosidad y deja que cuenten la historia entera.",
+      "Compartir buenos momentos fortalece los lazos de ambos lados."
+     ],
+     "q": "¿Qué pregunta podrías hacer para oír los buenos momentos de alguien?",
+     "c": "Pregunta hoy a una persona: ¿qué cosa buena te pasó hoy?"
+    },
+    "fr": {
+     "t": "La gratitude dans la conversation",
+     "g": "Demande aux autres ce qui s'est bien passé dans leur journée.",
+     "p": [
+      "Une question simple comme qu'est-ce qui était bien aujourd'hui invite à des conversations chaleureuses.",
+      "Écoute avec curiosité et laisse la personne raconter toute l'histoire.",
+      "Partager de bons moments renforce les liens des deux côtés."
+     ],
+     "q": "Quelle question pourrais-tu poser pour entendre les bons moments de quelqu'un ?",
+     "c": "Demande aujourd'hui à une personne : qu'est-ce qui t'est arrivé de bien aujourd'hui ?"
+    },
+    "it": {
+     "t": "La gratitudine nella conversazione",
+     "g": "Chiedi agli altri cosa è andato bene nella loro giornata.",
+     "p": [
+      "Una domanda semplice come cosa c'è stato di bello oggi invita a conversazioni calde.",
+      "Ascolta con curiosità e lascia che raccontino tutta la storia.",
+      "Condividere bei momenti rafforza i legami da entrambe le parti."
+     ],
+     "q": "Quale domanda potresti fare per ascoltare i bei momenti di qualcuno?",
+     "c": "Chiedi oggi a una persona: cosa di bello ti è successo oggi?"
+    },
+    "pt": {
+     "t": "Gratidão na conversa",
+     "g": "Pergunta aos outros o que correu bem no dia deles.",
+     "p": [
+      "Uma pergunta simples como o que correu bem hoje convida a conversas calorosas.",
+      "Ouve com curiosidade e deixa a pessoa contar a história toda.",
+      "Partilhar bons momentos reforça os laços dos dois lados."
+     ],
+     "q": "Que pergunta poderias fazer para ouvir os bons momentos de alguém?",
+     "c": "Pergunta hoje a uma pessoa: o que de bom te aconteceu hoje?"
+    },
+    "pt_BR": {
+     "t": "Gratidão na conversa",
+     "g": "Pergunte aos outros o que deu certo no dia deles.",
+     "p": [
+      "Uma pergunta simples como o que foi bom hoje convida a conversas calorosas.",
+      "Escute com curiosidade e deixe a pessoa contar a história toda.",
+      "Compartilhar bons momentos fortalece os laços dos dois lados."
+     ],
+     "q": "Que pergunta você poderia fazer para ouvir os bons momentos de alguém?",
+     "c": "Pergunte hoje a uma pessoa: o que de bom aconteceu com você hoje?"
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Appreciating differences",
+     "g": "Be grateful for people who see the world differently.",
+     "p": [
+      "People with other views, habits and backgrounds widen what we know.",
+      "You do not need to agree to appreciate what you can learn.",
+      "Curiosity turns difference into a gift rather than a threat."
+     ],
+     "q": "What did someone with a different viewpoint teach you?",
+     "c": "Ask someone different from you about their favourite tradition or hobby and listen."
+    },
+    "de": {
+     "t": "Unterschiede schätzen",
+     "g": "Sei dankbar für Menschen, die die Welt anders sehen.",
+     "p": [
+      "Menschen mit anderen Ansichten, Gewohnheiten und Hintergründen erweitern unser Wissen.",
+      "Du musst nicht zustimmen, um zu schätzen, was du lernen kannst.",
+      "Neugier macht aus Unterschied ein Geschenk statt einer Bedrohung."
+     ],
+     "q": "Was hat dir jemand mit anderer Sichtweise beigebracht?",
+     "c": "Frage heute jemanden, der anders ist als du, nach seiner Lieblingstradition oder seinem Hobby und höre zu."
+    },
+    "es": {
+     "t": "Valorar las diferencias",
+     "g": "Agradece a las personas que ven el mundo de otra manera.",
+     "p": [
+      "Quienes tienen otras ideas, costumbres y orígenes amplían lo que sabemos.",
+      "No hace falta estar de acuerdo para valorar lo que puedes aprender.",
+      "La curiosidad convierte la diferencia en un regalo y no en una amenaza."
+     ],
+     "q": "¿Qué te enseñó alguien con un punto de vista distinto?",
+     "c": "Pregunta hoy a alguien distinto a ti por su tradición o afición favorita y escucha."
+    },
+    "fr": {
+     "t": "Apprécier les différences",
+     "g": "Sois reconnaissant envers ceux qui voient le monde autrement.",
+     "p": [
+      "Les personnes aux idées, habitudes et origines différentes élargissent ce que nous savons.",
+      "Pas besoin d'être d'accord pour apprécier ce que tu peux apprendre.",
+      "La curiosité fait de la différence un cadeau plutôt qu'une menace."
+     ],
+     "q": "Qu'est-ce que quelqu'un avec un autre point de vue t'a appris ?",
+     "c": "Demande aujourd'hui à quelqu'un de différent de toi sa tradition ou son loisir préféré, et écoute."
+    },
+    "it": {
+     "t": "Apprezzare le differenze",
+     "g": "Sii grato verso chi vede il mondo in modo diverso.",
+     "p": [
+      "Persone con altre idee, abitudini e origini ampliano ciò che sappiamo.",
+      "Non serve essere d'accordo per apprezzare ciò che puoi imparare.",
+      "La curiosità trasforma la differenza in un dono invece che in una minaccia."
+     ],
+     "q": "Cosa ti ha insegnato qualcuno con un punto di vista diverso?",
+     "c": "Chiedi oggi a qualcuno diverso da te la sua tradizione o passione preferita e ascolta."
+    },
+    "pt": {
+     "t": "Valorizar as diferenças",
+     "g": "Sê grato a quem vê o mundo de outra forma.",
+     "p": [
+      "Pessoas com outras ideias, hábitos e origens alargam o que sabemos.",
+      "Não precisas de concordar para valorizar o que podes aprender.",
+      "A curiosidade transforma a diferença num presente e não numa ameaça."
+     ],
+     "q": "O que te ensinou alguém com um ponto de vista diferente?",
+     "c": "Pergunta hoje a alguém diferente de ti pela sua tradição ou passatempo preferido e ouve."
+    },
+    "pt_BR": {
+     "t": "Valorizando as diferenças",
+     "g": "Seja grato a quem vê o mundo de outro jeito.",
+     "p": [
+      "Pessoas com outras ideias, hábitos e origens ampliam o que sabemos.",
+      "Você não precisa concordar para valorizar o que pode aprender.",
+      "A curiosidade transforma a diferença em presente e não em ameaça."
+     ],
+     "q": "O que alguém com um ponto de vista diferente ensinou a você?",
+     "c": "Pergunte hoje a alguém diferente de você sobre a tradição ou hobby favorito e escute."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Thanks across cultures",
+     "g": "Learn how different cultures express thanks in words and gestures.",
+     "p": [
+      "Many cultures bow, place a hand on the chest or share food as thanks.",
+      "Some cultures thank less with words and more with actions.",
+      "Knowing this helps you feel and show gratitude respectfully with everyone."
+     ],
+     "q": "What gesture of thanks have you seen in another culture?",
+     "c": "Find out how to say thanks in one culture's gesture or custom and try to remember it."
+    },
+    "de": {
+     "t": "Dank in verschiedenen Kulturen",
+     "g": "Lerne, wie Kulturen Dank in Worten und Gesten ausdrücken.",
+     "p": [
+      "Viele Kulturen verbeugen sich, legen die Hand aufs Herz oder teilen Essen als Dank.",
+      "Manche Kulturen danken weniger mit Worten und mehr mit Taten.",
+      "Das zu wissen hilft dir, mit allen respektvoll Dankbarkeit zu fühlen und zu zeigen."
+     ],
+     "q": "Welche Geste des Dankes hast du in einer anderen Kultur gesehen?",
+     "c": "Finde heraus, wie eine Kultur mit einer Geste oder einem Brauch Dank ausdrückt, und merke es dir."
+    },
+    "es": {
+     "t": "Gracias entre culturas",
+     "g": "Descubre cómo distintas culturas expresan agradecimiento con palabras y gestos.",
+     "p": [
+      "Muchas culturas se inclinan, ponen la mano en el pecho o comparten comida como agradecimiento.",
+      "Algunas culturas agradecen menos con palabras y más con acciones.",
+      "Saberlo te ayuda a sentir y mostrar gratitud con respeto hacia todos."
+     ],
+     "q": "¿Qué gesto de agradecimiento has visto en otra cultura?",
+     "c": "Averigua cómo una cultura agradece con un gesto o costumbre e intenta recordarlo."
+    },
+    "fr": {
+     "t": "Merci à travers les cultures",
+     "g": "Découvre comment différentes cultures expriment leur gratitude en mots et en gestes.",
+     "p": [
+      "Beaucoup de cultures s'inclinent, posent la main sur le cœur ou partagent un repas pour remercier.",
+      "Certaines cultures remercient moins en paroles et plus par des actes.",
+      "Le savoir t'aide à ressentir et montrer ta gratitude avec respect envers tous."
+     ],
+     "q": "Quel geste de remerciement as-tu vu dans une autre culture ?",
+     "c": "Découvre comment une culture remercie avec un geste ou une coutume et essaie de le retenir."
+    },
+    "it": {
+     "t": "Grazie tra le culture",
+     "g": "Scopri come culture diverse esprimono gratitudine a parole e con gesti.",
+     "p": [
+      "Molte culture si inchinano, portano la mano al petto o condividono il cibo per ringraziare.",
+      "Alcune culture ringraziano meno a parole e più con i fatti.",
+      "Saperlo ti aiuta a sentire e mostrare gratitudine con rispetto verso tutti."
+     ],
+     "q": "Quale gesto di ringraziamento hai visto in un'altra cultura?",
+     "c": "Scopri come una cultura ringrazia con un gesto o un'usanza e prova a ricordarlo."
+    },
+    "pt": {
+     "t": "Obrigado entre culturas",
+     "g": "Descobre como diferentes culturas expressam gratidão em palavras e gestos.",
+     "p": [
+      "Muitas culturas fazem uma vénia, põem a mão no peito ou partilham comida como agradecimento.",
+      "Algumas culturas agradecem menos com palavras e mais com ações.",
+      "Saber isto ajuda-te a sentir e mostrar gratidão com respeito por todos."
+     ],
+     "q": "Que gesto de agradecimento viste noutra cultura?",
+     "c": "Descobre como uma cultura agradece com um gesto ou costume e tenta recordá-lo."
+    },
+    "pt_BR": {
+     "t": "Obrigado entre culturas",
+     "g": "Descubra como diferentes culturas expressam gratidão em palavras e gestos.",
+     "p": [
+      "Muitas culturas fazem uma reverência, põem a mão no peito ou dividem comida como agradecimento.",
+      "Algumas culturas agradecem menos com palavras e mais com ações.",
+      "Saber disso ajuda você a sentir e mostrar gratidão com respeito por todos."
+     ],
+     "q": "Que gesto de agradecimento você viu em outra cultura?",
+     "c": "Descubra como uma cultura agradece com um gesto ou costume e tente lembrar."
+    }
+   }
+  }
+ ]
+}

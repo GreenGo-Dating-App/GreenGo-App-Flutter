@@ -1,0 +1,835 @@
+{
+ "topic": "would_you_rather",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to Would You Rather",
+     "g": "Learn how the game works: two options, one pick, and a reason.",
+     "p": [
+      "You get two options and must choose one, even if both feel tricky.",
+      "The fun part is the reason: why did you pick it?",
+      "There are no wrong answers, only interesting ones."
+     ],
+     "q": "Would you rather have a pet dragon the size of a cat or a cat the size of a dragon?",
+     "c": "Ask a friend one Would You Rather today and listen to their reason."
+    },
+    "de": {
+     "t": "Willkommen bei Würdest du lieber",
+     "g": "So funktioniert das Spiel: zwei Optionen, eine Wahl und ein Grund.",
+     "p": [
+      "Du bekommst zwei Optionen und musst dich für eine entscheiden.",
+      "Das Beste ist die Begründung: Warum hast du so gewählt?",
+      "Es gibt keine falschen Antworten, nur spannende."
+     ],
+     "q": "Würdest du lieber einen katzengroßen Drachen oder eine drachengroße Katze haben?",
+     "c": "Stell heute einem Freund eine Frage und hör dir seine Begründung an."
+    },
+    "es": {
+     "t": "Bienvenido a ¿Qué prefieres?",
+     "g": "Aprende cómo funciona el juego: dos opciones, una elección y un motivo.",
+     "p": [
+      "Te dan dos opciones y tienes que elegir una, aunque ambas cuesten.",
+      "Lo divertido es el motivo: ¿por qué elegiste esa?",
+      "No hay respuestas malas, solo respuestas interesantes."
+     ],
+     "q": "¿Qué prefieres: un dragón del tamaño de un gato o un gato del tamaño de un dragón?",
+     "c": "Hazle hoy una pregunta a un amigo y escucha su motivo."
+    },
+    "fr": {
+     "t": "Bienvenue dans Tu préfères",
+     "g": "Découvre le jeu : deux options, un choix et une raison.",
+     "p": [
+      "On te propose deux options et tu dois en choisir une, même si c'est dur.",
+      "Le plus drôle, c'est la raison : pourquoi as-tu choisi ça ?",
+      "Il n'y a pas de mauvaise réponse, seulement des réponses intéressantes."
+     ],
+     "q": "Tu préfères un dragon de la taille d'un chat ou un chat de la taille d'un dragon ?",
+     "c": "Pose aujourd'hui une question à un ami et écoute bien sa raison."
+    },
+    "it": {
+     "t": "Benvenuto a Preferisci...?",
+     "g": "Scopri come funziona il gioco: due opzioni, una scelta e un motivo.",
+     "p": [
+      "Hai due opzioni e devi sceglierne una, anche se sono entrambe difficili.",
+      "Il bello è il motivo: perché hai scelto proprio quella?",
+      "Non ci sono risposte sbagliate, solo risposte interessanti."
+     ],
+     "q": "Preferisci un drago grande come un gatto o un gatto grande come un drago?",
+     "c": "Fai oggi una domanda a un amico e ascolta il suo motivo."
+    },
+    "pt": {
+     "t": "Bem-vindo ao Preferias?",
+     "g": "Aprende como o jogo funciona: duas opções, uma escolha e um motivo.",
+     "p": [
+      "Recebes duas opções e tens de escolher uma, mesmo que ambas custem.",
+      "A parte divertida é o motivo: porque escolheste essa?",
+      "Não há respostas erradas, só respostas interessantes."
+     ],
+     "q": "Preferias um dragão do tamanho de um gato ou um gato do tamanho de um dragão?",
+     "c": "Faz hoje uma pergunta a um amigo e ouve o motivo dele."
+    },
+    "pt_BR": {
+     "t": "Bem-vindo ao Você prefere?",
+     "g": "Aprenda como o jogo funciona: duas opções, uma escolha e um motivo.",
+     "p": [
+      "Você recebe duas opções e precisa escolher uma, mesmo que as duas sejam difíceis.",
+      "A parte divertida é o motivo: por que você escolheu essa?",
+      "Não existem respostas erradas, só respostas interessantes."
+     ],
+     "q": "Você prefere um dragão do tamanho de um gato ou um gato do tamanho de um dragão?",
+     "c": "Faça hoje uma pergunta a um amigo e escute o motivo dele."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sunny beach or snowy mountain",
+     "g": "Pick a dream holiday setting and describe what you would do there.",
+     "p": [
+      "Beach days mean swimming, sandcastles and warm evenings.",
+      "Mountain days mean sledding, hot chocolate and cosy fires.",
+      "Picture the details: sounds, smells and who you would bring."
+     ],
+     "q": "Would you rather spend a week on a sunny beach or on a snowy mountain? What would you do first?",
+     "c": "Describe your ideal holiday morning in three short sentences."
+    },
+    "de": {
+     "t": "Sonniger Strand oder verschneiter Berg",
+     "g": "Wähle dein Traumurlaubsziel und erzähl, was du dort tun würdest.",
+     "p": [
+      "Strandtage bedeuten Schwimmen, Sandburgen und warme Abende.",
+      "Bergtage bedeuten Schlittenfahren, heiße Schokolade und ein knisterndes Feuer.",
+      "Stell dir Details vor: Geräusche, Gerüche und wen du mitnehmen würdest."
+     ],
+     "q": "Würdest du lieber eine Woche am sonnigen Strand oder im verschneiten Gebirge verbringen? Was würdest du zuerst tun?",
+     "c": "Beschreibe deinen idealen Urlaubsmorgen in drei kurzen Sätzen."
+    },
+    "es": {
+     "t": "Playa soleada o montaña nevada",
+     "g": "Elige tu lugar de vacaciones soñado y cuenta qué harías allí.",
+     "p": [
+      "Los días de playa son de baño, castillos de arena y noches cálidas.",
+      "Los días de montaña son de trineo, chocolate caliente y chimenea.",
+      "Imagina los detalles: sonidos, olores y con quién irías."
+     ],
+     "q": "¿Prefieres pasar una semana en una playa soleada o en una montaña nevada? ¿Qué harías primero?",
+     "c": "Describe tu mañana de vacaciones ideal en tres frases cortas."
+    },
+    "fr": {
+     "t": "Plage ensoleillée ou montagne enneigée",
+     "g": "Choisis ton lieu de vacances de rêve et dis ce que tu y ferais.",
+     "p": [
+      "Les jours de plage riment avec baignade, châteaux de sable et soirées douces.",
+      "Les jours de montagne riment avec luge, chocolat chaud et feu de cheminée.",
+      "Imagine les détails : les bruits, les odeurs et la personne qui t'accompagne."
+     ],
+     "q": "Tu préfères une semaine sur une plage ensoleillée ou à la montagne sous la neige ? Que ferais-tu en premier ?",
+     "c": "Décris ta matinée de vacances idéale en trois phrases courtes."
+    },
+    "it": {
+     "t": "Spiaggia al sole o montagna innevata",
+     "g": "Scegli la vacanza dei tuoi sogni e racconta cosa faresti lì.",
+     "p": [
+      "I giorni di mare sono fatti di nuotate, castelli di sabbia e sere calde.",
+      "I giorni in montagna sono fatti di slitta, cioccolata calda e camino.",
+      "Immagina i dettagli: suoni, profumi e chi porteresti con te."
+     ],
+     "q": "Preferisci una settimana su una spiaggia soleggiata o su una montagna innevata? Cosa faresti per prima cosa?",
+     "c": "Descrivi la mattina di vacanza ideale in tre frasi brevi."
+    },
+    "pt": {
+     "t": "Praia ao sol ou montanha com neve",
+     "g": "Escolhe o teu destino de férias de sonho e conta o que farias lá.",
+     "p": [
+      "Os dias de praia trazem mergulhos, castelos de areia e noites quentes.",
+      "Os dias de montanha trazem trenó, chocolate quente e lareira.",
+      "Imagina os pormenores: sons, cheiros e quem levarias contigo."
+     ],
+     "q": "Preferias passar uma semana numa praia ao sol ou numa montanha com neve? O que farias primeiro?",
+     "c": "Descreve a tua manhã de férias ideal em três frases curtas."
+    },
+    "pt_BR": {
+     "t": "Praia ensolarada ou montanha nevada",
+     "g": "Escolha seu destino de férias dos sonhos e conte o que faria lá.",
+     "p": [
+      "Dias de praia têm mergulho, castelo de areia e noites quentinhas.",
+      "Dias de montanha têm trenó, chocolate quente e lareira.",
+      "Imagine os detalhes: sons, cheiros e quem você levaria junto."
+     ],
+     "q": "Você prefere passar uma semana numa praia ensolarada ou numa montanha nevada? O que faria primeiro?",
+     "c": "Descreva sua manhã de férias ideal em três frases curtas."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pizza or pasta forever",
+     "g": "Choose a comfort food and explain what makes it special to you.",
+     "p": [
+      "Comfort food is tied to memories, not only to taste.",
+      "Think about toppings, sauces and who you usually share it with.",
+      "A good reason can be a smell, a place or a family moment."
+     ],
+     "q": "Would you rather eat only pizza or only pasta for a whole year? Which one and why?",
+     "c": "Tell your Buddy the story behind one dish you love."
+    },
+    "de": {
+     "t": "Pizza oder Pasta für immer",
+     "g": "Wähle dein Lieblingsessen und erkläre, was es besonders macht.",
+     "p": [
+      "Wohlfühlessen hängt mit Erinnerungen zusammen, nicht nur mit Geschmack.",
+      "Denk an Beläge, Soßen und an die Menschen, mit denen du isst.",
+      "Ein guter Grund kann ein Duft, ein Ort oder ein Familienmoment sein."
+     ],
+     "q": "Würdest du lieber ein Jahr lang nur Pizza oder nur Pasta essen? Was und warum?",
+     "c": "Erzähl deinem Buddy die Geschichte hinter einem Gericht, das du liebst."
+    },
+    "es": {
+     "t": "Pizza o pasta para siempre",
+     "g": "Elige tu comida reconfortante y explica qué la hace especial.",
+     "p": [
+      "La comida reconfortante se une a recuerdos, no solo al sabor.",
+      "Piensa en ingredientes, salsas y con quién la compartes.",
+      "Un buen motivo puede ser un olor, un lugar o un momento en familia."
+     ],
+     "q": "¿Prefieres comer solo pizza o solo pasta durante un año entero? ¿Cuál y por qué?",
+     "c": "Cuéntale a tu Buddy la historia de un plato que te encanta."
+    },
+    "fr": {
+     "t": "Pizza ou pâtes pour toujours",
+     "g": "Choisis un plat réconfortant et explique pourquoi il compte pour toi.",
+     "p": [
+      "Un plat réconfortant est lié à des souvenirs, pas seulement au goût.",
+      "Pense aux garnitures, aux sauces et à ceux avec qui tu le partages.",
+      "Une bonne raison peut être une odeur, un lieu ou un moment en famille."
+     ],
+     "q": "Tu préfères manger seulement des pizzas ou seulement des pâtes pendant un an ? Lequel et pourquoi ?",
+     "c": "Raconte à ton Buddy l'histoire d'un plat que tu adores."
+    },
+    "it": {
+     "t": "Pizza o pasta per sempre",
+     "g": "Scegli il tuo comfort food e spiega cosa lo rende speciale.",
+     "p": [
+      "Il comfort food è legato ai ricordi, non solo al sapore.",
+      "Pensa ai condimenti, ai sughi e a chi lo mangia con te.",
+      "Un buon motivo può essere un profumo, un posto o un momento in famiglia."
+     ],
+     "q": "Preferisci mangiare solo pizza o solo pasta per un anno intero? Quale e perché?",
+     "c": "Racconta al tuo Buddy la storia di un piatto che ami."
+    },
+    "pt": {
+     "t": "Pizza ou massa para sempre",
+     "g": "Escolhe a tua comida de conforto e explica o que a torna especial.",
+     "p": [
+      "A comida de conforto está ligada a memórias, não só ao sabor.",
+      "Pensa nos ingredientes, nos molhos e em quem partilha a mesa contigo.",
+      "Um bom motivo pode ser um cheiro, um sítio ou um momento em família."
+     ],
+     "q": "Preferias comer só pizza ou só massa durante um ano inteiro? Qual e porquê?",
+     "c": "Conta ao teu Buddy a história de um prato de que gostas."
+    },
+    "pt_BR": {
+     "t": "Pizza ou macarrão para sempre",
+     "g": "Escolha sua comida afetiva e explique o que a torna especial.",
+     "p": [
+      "Comida afetiva está ligada a memórias, não só ao sabor.",
+      "Pense nas coberturas, nos molhos e em quem come com você.",
+      "Um bom motivo pode ser um cheiro, um lugar ou um momento em família."
+     ],
+     "q": "Você prefere comer só pizza ou só macarrão por um ano inteiro? Qual e por quê?",
+     "c": "Conte ao seu Buddy a história de um prato de que você gosta."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cats or dogs as a companion",
+     "g": "Compare two classic pets and the daily life each one brings.",
+     "p": [
+      "Dogs love walks, games and greeting you at the door.",
+      "Cats enjoy calm homes, naps in sunny spots and quiet company.",
+      "Think about time, space and energy when you choose a companion."
+     ],
+     "q": "Would you rather have a cat or a dog as your best friend? What would your days look like?",
+     "c": "Give an imaginary pet a name and one funny habit."
+    },
+    "de": {
+     "t": "Katzen oder Hunde als Begleiter",
+     "g": "Vergleiche zwei klassische Haustiere und den Alltag mit ihnen.",
+     "p": [
+      "Hunde lieben Spaziergänge, Spiele und begrüßen dich an der Tür.",
+      "Katzen mögen ruhige Wohnungen, Nickerchen in der Sonne und stille Gesellschaft.",
+      "Denk an Zeit, Platz und Energie, wenn du einen Begleiter wählst."
+     ],
+     "q": "Hättest du lieber eine Katze oder einen Hund als besten Freund? Wie sähen deine Tage aus?",
+     "c": "Gib einem erfundenen Haustier einen Namen und eine lustige Angewohnheit."
+    },
+    "es": {
+     "t": "Gatos o perros de compañía",
+     "g": "Compara dos mascotas clásicas y el día a día con cada una.",
+     "p": [
+      "A los perros les encantan los paseos, los juegos y recibirte en la puerta.",
+      "A los gatos les gustan los hogares tranquilos, las siestas al sol y la compañía callada.",
+      "Piensa en tiempo, espacio y energía al elegir compañero."
+     ],
+     "q": "¿Prefieres un gato o un perro como mejor amigo? ¿Cómo serían tus días?",
+     "c": "Ponle nombre a una mascota imaginaria y una costumbre graciosa."
+    },
+    "fr": {
+     "t": "Chats ou chiens comme compagnons",
+     "g": "Compare deux animaux classiques et le quotidien avec chacun.",
+     "p": [
+      "Les chiens aiment les balades, les jeux et t'accueillir à la porte.",
+      "Les chats aiment les maisons calmes, les siestes au soleil et la compagnie discrète.",
+      "Pense au temps, à la place et à l'énergie avant de choisir un compagnon."
+     ],
+     "q": "Tu préfères un chat ou un chien comme meilleur ami ? À quoi ressembleraient tes journées ?",
+     "c": "Donne un nom à un animal imaginaire et une manie amusante."
+    },
+    "it": {
+     "t": "Gatti o cani come compagni",
+     "g": "Confronta due animali classici e la vita di ogni giorno con loro.",
+     "p": [
+      "I cani amano le passeggiate, i giochi e accoglierti alla porta.",
+      "I gatti amano le case tranquille, i sonnellini al sole e la compagnia silenziosa.",
+      "Pensa a tempo, spazio ed energia quando scegli un compagno."
+     ],
+     "q": "Preferisci un gatto o un cane come migliore amico? Come sarebbero le tue giornate?",
+     "c": "Dai un nome a un animale immaginario e una buffa abitudine."
+    },
+    "pt": {
+     "t": "Gatos ou cães como companhia",
+     "g": "Compara dois animais clássicos e o dia a dia com cada um.",
+     "p": [
+      "Os cães adoram passeios, brincadeiras e receber-te à porta.",
+      "Os gatos gostam de casas calmas, sestas ao sol e companhia silenciosa.",
+      "Pensa em tempo, espaço e energia quando escolhes um companheiro."
+     ],
+     "q": "Preferias um gato ou um cão como melhor amigo? Como seriam os teus dias?",
+     "c": "Dá um nome a um animal imaginário e uma mania engraçada."
+    },
+    "pt_BR": {
+     "t": "Gatos ou cachorros como companhia",
+     "g": "Compare dois bichinhos clássicos e o dia a dia com cada um.",
+     "p": [
+      "Cachorros adoram passeios, brincadeiras e receber você na porta.",
+      "Gatos curtem casas calmas, sonecas ao sol e companhia silenciosa.",
+      "Pense em tempo, espaço e energia ao escolher um companheiro."
+     ],
+     "q": "Você prefere um gato ou um cachorro como melhor amigo? Como seriam seus dias?",
+     "c": "Dê um nome a um bichinho imaginário e um hábito engraçado."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Morning person or night owl",
+     "g": "Talk about the time of day when you feel most awake and happy.",
+     "p": [
+      "Some people spring up at sunrise, others shine after dark.",
+      "Your best hours are good for hard tasks or favourite hobbies.",
+      "Neither type is better; each has its own quiet magic."
+     ],
+     "q": "Would you rather wake up at dawn feeling great or stay up late feeling great? Why?",
+     "c": "Notice when you feel most energetic today and tell your Buddy."
+    },
+    "de": {
+     "t": "Morgenmensch oder Nachteule",
+     "g": "Sprich über die Tageszeit, in der du am wachsten und glücklichsten bist.",
+     "p": [
+      "Manche springen bei Sonnenaufgang aus dem Bett, andere blühen nachts auf.",
+      "Deine besten Stunden eignen sich für schwere Aufgaben oder Lieblingshobbys.",
+      "Kein Typ ist besser; jeder hat seinen eigenen stillen Zauber."
+     ],
+     "q": "Würdest du lieber im Morgengrauen fit aufwachen oder abends lange fit bleiben? Warum?",
+     "c": "Achte heute darauf, wann du am meisten Energie hast, und erzähl es deinem Buddy."
+    },
+    "es": {
+     "t": "Persona madrugadora o búho nocturno",
+     "g": "Habla de la hora del día en que te sientes más despierto y feliz.",
+     "p": [
+      "Algunos se levantan con el sol, otros brillan cuando oscurece.",
+      "Tus mejores horas sirven para tareas difíciles o para tus aficiones.",
+      "Ningún tipo es mejor; cada uno tiene su magia tranquila."
+     ],
+     "q": "¿Prefieres despertarte al amanecer lleno de energía o trasnochar lleno de energía? ¿Por qué?",
+     "c": "Fíjate hoy en cuándo tienes más energía y cuéntaselo a tu Buddy."
+    },
+    "fr": {
+     "t": "Lève-tôt ou oiseau de nuit",
+     "g": "Parle du moment de la journée où tu te sens le plus éveillé et heureux.",
+     "p": [
+      "Certains bondissent à l'aube, d'autres brillent la nuit tombée.",
+      "Tes meilleures heures servent aux tâches difficiles ou à tes passions.",
+      "Aucun profil n'est meilleur ; chacun a sa magie tranquille."
+     ],
+     "q": "Tu préfères te réveiller à l'aube en pleine forme ou veiller tard en pleine forme ? Pourquoi ?",
+     "c": "Repère aujourd'hui quand tu as le plus d'énergie et dis-le à ton Buddy."
+    },
+    "it": {
+     "t": "Mattiniero o nottambulo",
+     "g": "Parla del momento della giornata in cui ti senti più sveglio e felice.",
+     "p": [
+      "Alcuni scattano all'alba, altri si accendono dopo il tramonto.",
+      "Le tue ore migliori vanno bene per i compiti difficili o i tuoi hobby.",
+      "Nessun tipo è migliore; ognuno ha la sua magia tranquilla."
+     ],
+     "q": "Preferisci svegliarti all'alba in forma o stare alzato fino a tardi in forma? Perché?",
+     "c": "Nota oggi quando hai più energia e raccontalo al tuo Buddy."
+    },
+    "pt": {
+     "t": "Madrugador ou noctívago",
+     "g": "Fala da altura do dia em que te sentes mais desperto e feliz.",
+     "p": [
+      "Há quem salte da cama ao nascer do sol e quem brilhe depois de escurecer.",
+      "As tuas melhores horas servem para tarefas difíceis ou passatempos.",
+      "Nenhum tipo é melhor; cada um tem a sua magia tranquila."
+     ],
+     "q": "Preferias acordar ao amanhecer cheio de energia ou ficar acordado até tarde cheio de energia? Porquê?",
+     "c": "Repara hoje quando tens mais energia e conta ao teu Buddy."
+    },
+    "pt_BR": {
+     "t": "Pessoa matutina ou coruja noturna",
+     "g": "Fale sobre o horário do dia em que você se sente mais desperto e feliz.",
+     "p": [
+      "Tem gente que levanta com o sol e tem quem brilhe depois que escurece.",
+      "Suas melhores horas servem para tarefas difíceis ou hobbies favoritos.",
+      "Nenhum tipo é melhor; cada um tem sua magia tranquila."
+     ],
+     "q": "Você prefere acordar ao amanhecer cheio de energia ou ficar acordado até tarde cheio de energia? Por quê?",
+     "c": "Repare hoje quando você tem mais energia e conte ao seu Buddy."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fly or be invisible",
+     "g": "The classic superpower choice and the first thing you would do with it.",
+     "p": [
+      "Flying gives you views, speed and freedom from traffic.",
+      "Invisibility lets you watch the world without being seen.",
+      "Choose kind and playful uses, like surprising a friend."
+     ],
+     "q": "Would you rather be able to fly or be invisible? What is the first thing you would do?",
+     "c": "Describe your first five minutes with your new superpower."
+    },
+    "de": {
+     "t": "Fliegen oder unsichtbar sein",
+     "g": "Die klassische Superkraft-Wahl und das Erste, was du damit tun würdest.",
+     "p": [
+      "Fliegen schenkt dir Aussichten, Tempo und Freiheit vom Stau.",
+      "Unsichtbarkeit lässt dich die Welt beobachten, ohne gesehen zu werden.",
+      "Wähle freundliche, spielerische Einsätze, etwa einen Freund zu überraschen."
+     ],
+     "q": "Wärst du lieber fähig zu fliegen oder unsichtbar? Was würdest du als Erstes tun?",
+     "c": "Beschreibe deine ersten fünf Minuten mit der neuen Superkraft."
+    },
+    "es": {
+     "t": "Volar o ser invisible",
+     "g": "La elección clásica de superpoder y lo primero que harías con él.",
+     "p": [
+      "Volar da vistas, velocidad y libertad frente al tráfico.",
+      "La invisibilidad te deja mirar el mundo sin que te vean.",
+      "Elige usos amables y divertidos, como sorprender a un amigo."
+     ],
+     "q": "¿Prefieres poder volar o ser invisible? ¿Qué es lo primero que harías?",
+     "c": "Describe tus primeros cinco minutos con tu nuevo superpoder."
+    },
+    "fr": {
+     "t": "Voler ou être invisible",
+     "g": "Le choix classique de super-pouvoir et ce que tu ferais en premier.",
+     "p": [
+      "Voler offre des vues, de la vitesse et la liberté de fuir les embouteillages.",
+      "L'invisibilité te laisse observer le monde sans être vu.",
+      "Choisis des usages gentils et joueurs, comme surprendre un ami."
+     ],
+     "q": "Tu préfères pouvoir voler ou être invisible ? Que ferais-tu en premier ?",
+     "c": "Décris tes cinq premières minutes avec ton nouveau super-pouvoir."
+    },
+    "it": {
+     "t": "Volare o essere invisibile",
+     "g": "La classica scelta di superpotere e la prima cosa che faresti.",
+     "p": [
+      "Volare dà panorami, velocità e libertà dal traffico.",
+      "L'invisibilità ti lascia osservare il mondo senza essere visto.",
+      "Scegli usi gentili e giocosi, come sorprendere un amico."
+     ],
+     "q": "Preferisci saper volare o essere invisibile? Qual è la prima cosa che faresti?",
+     "c": "Descrivi i tuoi primi cinque minuti con il nuovo superpotere."
+    },
+    "pt": {
+     "t": "Voar ou ser invisível",
+     "g": "A escolha clássica de superpoder e a primeira coisa que farias com ele.",
+     "p": [
+      "Voar dá vistas, velocidade e liberdade do trânsito.",
+      "A invisibilidade deixa-te observar o mundo sem seres visto.",
+      "Escolhe usos simpáticos e divertidos, como surpreender um amigo."
+     ],
+     "q": "Preferias poder voar ou ser invisível? O que farias primeiro?",
+     "c": "Descreve os teus primeiros cinco minutos com o novo superpoder."
+    },
+    "pt_BR": {
+     "t": "Voar ou ser invisível",
+     "g": "A escolha clássica de superpoder e a primeira coisa que você faria com ele.",
+     "p": [
+      "Voar dá vistas, velocidade e liberdade do trânsito.",
+      "A invisibilidade deixa você observar o mundo sem ser visto.",
+      "Escolha usos gentis e divertidos, como surpreender um amigo."
+     ],
+     "q": "Você prefere poder voar ou ser invisível? O que faria primeiro?",
+     "c": "Descreva seus primeiros cinco minutos com o novo superpoder."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Read the book or watch the film",
+     "g": "Share how you prefer to enjoy a good story and why.",
+     "p": [
+      "Books let your imagination draw every face and place.",
+      "Films bring music, colour and shared moments on the sofa.",
+      "Many stories feel different in each form, which is fun to compare."
+     ],
+     "q": "Would you rather read a great book or watch its film version? Which story comes to mind?",
+     "c": "Name a story you know in both forms and say which one you liked more."
+    },
+    "de": {
+     "t": "Das Buch lesen oder den Film sehen",
+     "g": "Erzähl, wie du eine gute Geschichte am liebsten erlebst und warum.",
+     "p": [
+      "Bücher lassen deine Fantasie jedes Gesicht und jeden Ort malen.",
+      "Filme bringen Musik, Farben und gemeinsame Momente auf dem Sofa.",
+      "Viele Geschichten wirken in jeder Form anders, das zu vergleichen macht Spaß."
+     ],
+     "q": "Würdest du lieber ein tolles Buch lesen oder die Verfilmung sehen? An welche Geschichte denkst du?",
+     "c": "Nenne eine Geschichte, die du als Buch und Film kennst, und sag, welche dir besser gefiel."
+    },
+    "es": {
+     "t": "Leer el libro o ver la película",
+     "g": "Cuenta cómo prefieres disfrutar de una buena historia y por qué.",
+     "p": [
+      "Los libros dejan que tu imaginación dibuje cada rostro y lugar.",
+      "Las películas traen música, color y ratos compartidos en el sofá.",
+      "Muchas historias cambian según el formato, y compararlas es divertido."
+     ],
+     "q": "¿Prefieres leer un gran libro o ver su película? ¿Qué historia se te ocurre?",
+     "c": "Nombra una historia que conozcas en ambos formatos y di cuál te gustó más."
+    },
+    "fr": {
+     "t": "Lire le livre ou voir le film",
+     "g": "Dis comment tu aimes profiter d'une bonne histoire et pourquoi.",
+     "p": [
+      "Les livres laissent ton imagination dessiner chaque visage et chaque lieu.",
+      "Les films apportent musique, couleurs et moments partagés sur le canapé.",
+      "Beaucoup d'histoires changent selon le format, et c'est amusant de comparer."
+     ],
+     "q": "Tu préfères lire un super livre ou voir son adaptation ? À quelle histoire penses-tu ?",
+     "c": "Cite une histoire que tu connais en livre et en film et dis laquelle tu préfères."
+    },
+    "it": {
+     "t": "Leggere il libro o guardare il film",
+     "g": "Racconta come preferisci goderti una bella storia e perché.",
+     "p": [
+      "I libri lasciano che la tua fantasia disegni ogni volto e ogni luogo.",
+      "I film portano musica, colori e momenti condivisi sul divano.",
+      "Molte storie cambiano da un formato all'altro, ed è divertente confrontarle."
+     ],
+     "q": "Preferisci leggere un bel libro o guardare il suo film? A quale storia pensi?",
+     "c": "Nomina una storia che conosci in entrambe le forme e dì quale ti è piaciuta di più."
+    },
+    "pt": {
+     "t": "Ler o livro ou ver o filme",
+     "g": "Conta como preferes viver uma boa história e porquê.",
+     "p": [
+      "Os livros deixam a imaginação desenhar cada rosto e cada lugar.",
+      "Os filmes trazem música, cor e momentos partilhados no sofá.",
+      "Muitas histórias mudam de formato para formato, e compará-las é divertido."
+     ],
+     "q": "Preferias ler um grande livro ou ver o filme? Em que história pensas?",
+     "c": "Nomeia uma história que conheças nos dois formatos e diz qual preferiste."
+    },
+    "pt_BR": {
+     "t": "Ler o livro ou assistir ao filme",
+     "g": "Conte como você prefere curtir uma boa história e por quê.",
+     "p": [
+      "Livros deixam a imaginação desenhar cada rosto e cada lugar.",
+      "Filmes trazem música, cor e momentos compartilhados no sofá.",
+      "Muitas histórias mudam de formato para formato, e compará-las é divertido."
+     ],
+     "q": "Você prefere ler um ótimo livro ou assistir ao filme? Em qual história você pensa?",
+     "c": "Cite uma história que você conhece nos dois formatos e diga de qual gostou mais."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tea or coffee to start the day",
+     "g": "Share morning drink habits and little rituals from around the world.",
+     "p": [
+      "Some start with strong coffee, others with a calm cup of tea.",
+      "Many cultures have morning rituals, from mate to hot chocolate.",
+      "A small ritual can make the day feel friendlier."
+     ],
+     "q": "Would you rather start every day with tea or coffee? Is there a ritual that goes with it?",
+     "c": "Describe your perfect morning drink, or invent a new one."
+    },
+    "de": {
+     "t": "Tee oder Kaffee zum Tagesstart",
+     "g": "Teile deine Morgengetränke und kleine Rituale aus aller Welt.",
+     "p": [
+      "Manche starten mit starkem Kaffee, andere mit einer ruhigen Tasse Tee.",
+      "Viele Kulturen haben Morgenrituale, von Mate bis heißer Schokolade.",
+      "Ein kleines Ritual macht den Tag freundlicher."
+     ],
+     "q": "Würdest du lieber jeden Tag mit Tee oder mit Kaffee beginnen? Gibt es ein Ritual dazu?",
+     "c": "Beschreibe dein perfektes Morgengetränk oder erfinde ein neues."
+    },
+    "es": {
+     "t": "Té o café para empezar el día",
+     "g": "Comparte hábitos de bebidas matutinas y pequeños rituales del mundo.",
+     "p": [
+      "Algunos empiezan con un café fuerte, otros con una taza de té tranquila.",
+      "Muchas culturas tienen rituales matinales, del mate al chocolate caliente.",
+      "Un pequeño ritual hace el día más amable."
+     ],
+     "q": "¿Prefieres empezar cada día con té o con café? ¿Hay algún ritual que lo acompañe?",
+     "c": "Describe tu bebida de mañana perfecta o inventa una nueva."
+    },
+    "fr": {
+     "t": "Thé ou café pour bien commencer",
+     "g": "Partage tes habitudes du matin et de petits rituels du monde entier.",
+     "p": [
+      "Certains démarrent avec un café fort, d'autres avec une tasse de thé tranquille.",
+      "Beaucoup de cultures ont des rituels matinaux, du maté au chocolat chaud.",
+      "Un petit rituel rend la journée plus douce."
+     ],
+     "q": "Tu préfères commencer chaque jour avec du thé ou du café ? Y a-t-il un rituel qui l'accompagne ?",
+     "c": "Décris ta boisson du matin parfaite ou invente-en une nouvelle."
+    },
+    "it": {
+     "t": "Tè o caffè per iniziare la giornata",
+     "g": "Condividi le abitudini del mattino e i piccoli rituali dal mondo.",
+     "p": [
+      "Alcuni iniziano con un caffè forte, altri con una tazza di tè tranquilla.",
+      "Molte culture hanno rituali mattutini, dal mate alla cioccolata calda.",
+      "Un piccolo rituale rende la giornata più gentile."
+     ],
+     "q": "Preferisci iniziare ogni giorno con il tè o con il caffè? C'è un rituale che lo accompagna?",
+     "c": "Descrivi la tua bevanda mattutina perfetta o inventane una nuova."
+    },
+    "pt": {
+     "t": "Chá ou café para começar o dia",
+     "g": "Partilha hábitos de bebidas da manhã e pequenos rituais pelo mundo.",
+     "p": [
+      "Uns começam com um café forte, outros com uma chávena de chá calma.",
+      "Muitas culturas têm rituais matinais, do mate ao chocolate quente.",
+      "Um pequeno ritual deixa o dia mais simpático."
+     ],
+     "q": "Preferias começar todos os dias com chá ou com café? Há algum ritual associado?",
+     "c": "Descreve a tua bebida de manhã perfeita ou inventa uma nova."
+    },
+    "pt_BR": {
+     "t": "Chá ou café para começar o dia",
+     "g": "Compartilhe hábitos de bebidas da manhã e pequenos rituais pelo mundo.",
+     "p": [
+      "Alguns começam com um café forte, outros com uma xícara de chá tranquila.",
+      "Muitas culturas têm rituais matinais, do mate ao chocolate quente.",
+      "Um pequeno ritual deixa o dia mais gostoso."
+     ],
+     "q": "Você prefere começar todo dia com chá ou com café? Existe algum ritual que acompanha?",
+     "c": "Descreva sua bebida de manhã perfeita ou invente uma nova."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Summer or winter all year",
+     "g": "Pick a forever season and the activities that come with it.",
+     "p": [
+      "Summer brings long days, swimming and ice cream.",
+      "Winter brings snowmen, warm sweaters and festive lights.",
+      "Think about what you would miss from the other seasons."
+     ],
+     "q": "Would you rather live in endless summer or endless winter? What would you do every day?",
+     "c": "Name three things you would do in your forever season."
+    },
+    "de": {
+     "t": "Sommer oder Winter das ganze Jahr",
+     "g": "Wähle eine ewige Jahreszeit und die Aktivitäten dazu.",
+     "p": [
+      "Der Sommer bringt lange Tage, Schwimmen und Eis.",
+      "Der Winter bringt Schneemänner, warme Pullover und festliche Lichter.",
+      "Überlege, was du von den anderen Jahreszeiten vermissen würdest."
+     ],
+     "q": "Würdest du lieber in ewigem Sommer oder ewigem Winter leben? Was würdest du jeden Tag tun?",
+     "c": "Nenne drei Dinge, die du in deiner ewigen Jahreszeit tun würdest."
+    },
+    "es": {
+     "t": "Verano o invierno todo el año",
+     "g": "Elige una estación para siempre y las actividades que trae.",
+     "p": [
+      "El verano trae días largos, baños y helados.",
+      "El invierno trae muñecos de nieve, jerséis y luces de fiesta.",
+      "Piensa en lo que echarías de menos de las otras estaciones."
+     ],
+     "q": "¿Prefieres vivir en un verano eterno o en un invierno eterno? ¿Qué harías cada día?",
+     "c": "Nombra tres cosas que harías en tu estación para siempre."
+    },
+    "fr": {
+     "t": "Été ou hiver toute l'année",
+     "g": "Choisis une saison pour toujours et les activités qui vont avec.",
+     "p": [
+      "L'été apporte de longues journées, la baignade et les glaces.",
+      "L'hiver apporte bonhommes de neige, gros pulls et lumières de fête.",
+      "Pense à ce qui te manquerait des autres saisons."
+     ],
+     "q": "Tu préfères vivre dans un été sans fin ou un hiver sans fin ? Que ferais-tu chaque jour ?",
+     "c": "Cite trois choses que tu ferais dans ta saison éternelle."
+    },
+    "it": {
+     "t": "Estate o inverno tutto l'anno",
+     "g": "Scegli una stagione per sempre e le attività che porta con sé.",
+     "p": [
+      "L'estate porta giornate lunghe, nuotate e gelati.",
+      "L'inverno porta pupazzi di neve, maglioni caldi e luci di festa.",
+      "Pensa a cosa ti mancherebbe delle altre stagioni."
+     ],
+     "q": "Preferisci vivere in un'estate infinita o in un inverno infinito? Cosa faresti ogni giorno?",
+     "c": "Nomina tre cose che faresti nella tua stagione per sempre."
+    },
+    "pt": {
+     "t": "Verão ou inverno o ano todo",
+     "g": "Escolhe uma estação para sempre e as atividades que traz.",
+     "p": [
+      "O verão traz dias longos, mergulhos e gelados.",
+      "O inverno traz bonecos de neve, camisolas quentes e luzes de festa.",
+      "Pensa no que terias saudades das outras estações."
+     ],
+     "q": "Preferias viver num verão sem fim ou num inverno sem fim? O que farias todos os dias?",
+     "c": "Nomeia três coisas que farias na tua estação para sempre."
+    },
+    "pt_BR": {
+     "t": "Verão ou inverno o ano todo",
+     "g": "Escolha uma estação para sempre e as atividades que ela traz.",
+     "p": [
+      "O verão traz dias longos, mergulhos e sorvete.",
+      "O inverno traz bonecos de neve, blusas quentinhas e luzes de festa.",
+      "Pense no que você sentiria falta das outras estações."
+     ],
+     "q": "Você prefere viver num verão sem fim ou num inverno sem fim? O que faria todo dia?",
+     "c": "Cite três coisas que você faria na sua estação para sempre."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "City lights or quiet countryside",
+     "g": "Imagine where you would live and what a normal day would look like.",
+     "p": [
+      "Cities offer cafes, museums and people everywhere.",
+      "The countryside offers fresh air, stars and slow mornings.",
+      "Both can feel like home depending on what you value."
+     ],
+     "q": "Would you rather live in a busy city or a quiet village? Describe a normal day there.",
+     "c": "Write a three-line postcard from your imaginary home."
+    },
+    "de": {
+     "t": "Stadtlichter oder ruhiges Land",
+     "g": "Stell dir vor, wo du leben würdest und wie ein normaler Tag aussähe.",
+     "p": [
+      "Städte bieten Cafés, Museen und Menschen überall.",
+      "Das Land bietet frische Luft, Sterne und langsame Morgen.",
+      "Beides kann sich wie Zuhause anfühlen, je nachdem, was dir wichtig ist."
+     ],
+     "q": "Würdest du lieber in einer lebhaften Stadt oder einem ruhigen Dorf leben? Beschreibe einen normalen Tag dort.",
+     "c": "Schreibe eine dreizeilige Postkarte aus deinem Traumzuhause."
+    },
+    "es": {
+     "t": "Luces de ciudad o campo tranquilo",
+     "g": "Imagina dónde vivirías y cómo sería un día normal.",
+     "p": [
+      "Las ciudades ofrecen cafés, museos y gente por todas partes.",
+      "El campo ofrece aire fresco, estrellas y mañanas lentas.",
+      "Ambos pueden sentirse como un hogar según lo que valores."
+     ],
+     "q": "¿Prefieres vivir en una ciudad animada o en un pueblo tranquilo? Describe un día normal allí.",
+     "c": "Escribe una postal de tres líneas desde tu hogar imaginario."
+    },
+    "fr": {
+     "t": "Lumières de la ville ou campagne calme",
+     "g": "Imagine où tu vivrais et à quoi ressemblerait une journée ordinaire.",
+     "p": [
+      "Les villes offrent des cafés, des musées et du monde partout.",
+      "La campagne offre l'air pur, les étoiles et des matins lents.",
+      "Les deux peuvent devenir un chez-soi selon ce qui compte pour toi."
+     ],
+     "q": "Tu préfères vivre dans une ville animée ou un village calme ? Décris une journée type là-bas.",
+     "c": "Écris une carte postale de trois lignes depuis ton chez-toi imaginaire."
+    },
+    "it": {
+     "t": "Luci della città o campagna tranquilla",
+     "g": "Immagina dove vivresti e come sarebbe una giornata normale.",
+     "p": [
+      "Le città offrono caffè, musei e gente ovunque.",
+      "La campagna offre aria pulita, stelle e mattine lente.",
+      "Entrambe possono sembrare casa, secondo ciò che per te conta."
+     ],
+     "q": "Preferisci vivere in una città vivace o in un paesino tranquillo? Descrivi una giornata normale lì.",
+     "c": "Scrivi una cartolina di tre righe dalla tua casa immaginaria."
+    },
+    "pt": {
+     "t": "Luzes da cidade ou campo sossegado",
+     "g": "Imagina onde viverias e como seria um dia normal.",
+     "p": [
+      "As cidades oferecem cafés, museus e gente por todo o lado.",
+      "O campo oferece ar puro, estrelas e manhãs lentas.",
+      "Ambos podem sentir-se como casa, conforme o que valorizas."
+     ],
+     "q": "Preferias viver numa cidade animada ou numa aldeia sossegada? Descreve um dia normal lá.",
+     "c": "Escreve um postal de três linhas da tua casa imaginária."
+    },
+    "pt_BR": {
+     "t": "Luzes da cidade ou campo tranquilo",
+     "g": "Imagine onde você moraria e como seria um dia normal.",
+     "p": [
+      "As cidades oferecem cafés, museus e gente por toda parte.",
+      "O campo oferece ar puro, estrelas e manhãs lentas.",
+      "Os dois podem parecer um lar, conforme o que você valoriza."
+     ],
+     "q": "Você prefere morar numa cidade agitada ou numa vila tranquila? Descreva um dia normal lá.",
+     "c": "Escreva um cartão-postal de três linhas da sua casa imaginária."
+    }
+   }
+  }
+ ]
+}

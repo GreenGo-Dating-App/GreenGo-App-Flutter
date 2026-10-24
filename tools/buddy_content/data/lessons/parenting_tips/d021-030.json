@@ -1,0 +1,835 @@
+{
+ "topic": "parenting_tips",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Children watch how we handle feelings, screens, food and kindness.",
+      "Showing the habit you want works better than explaining it again and again.",
+      "You do not need to be perfect; just let them see you trying."
+     ],
+     "t": "Children copy what we do",
+     "g": "See how kids learn more from our actions than from our instructions.",
+     "q": "Which habit of yours would you be happy for your child to copy?",
+     "c": "Model one habit you want your child to build, such as reading or tidying up."
+    },
+    "de": {
+     "p": [
+      "Kinder beobachten, wie wir mit Gefühlen, Bildschirmen, Essen und Freundlichkeit umgehen.",
+      "Die gewünschte Gewohnheit vorzuleben wirkt besser, als sie immer wieder zu erklären.",
+      "Du musst nicht perfekt sein; sie sollen nur sehen, dass du es versuchst."
+     ],
+     "t": "Kinder ahmen nach, was wir tun",
+     "g": "Erkenne, dass Kinder mehr aus unserem Handeln lernen als aus unseren Anweisungen.",
+     "q": "Welche deiner Gewohnheiten würdest du gern von deinem Kind übernommen sehen?",
+     "c": "Lebe heute eine Gewohnheit vor, die dein Kind entwickeln soll, etwa Lesen oder Aufräumen."
+    },
+    "es": {
+     "p": [
+      "Los niños observan cómo manejamos las emociones, las pantallas, la comida y la amabilidad.",
+      "Mostrar el hábito que quieres funciona mejor que explicarlo una y otra vez.",
+      "No hace falta ser perfecto; basta con que te vean intentándolo."
+     ],
+     "t": "Los niños copian lo que hacemos",
+     "g": "Descubre que los niños aprenden más de nuestros actos que de nuestras instrucciones.",
+     "q": "¿Qué hábito tuyo te gustaría que copiara tu hijo?",
+     "c": "Practica hoy un hábito que quieras que tu hijo cree, como leer o recoger."
+    },
+    "fr": {
+     "p": [
+      "Les enfants observent comment nous gérons émotions, écrans, repas et gentillesse.",
+      "Montrer l'habitude voulue marche mieux que l'expliquer sans cesse.",
+      "Pas besoin d'être parfait ; qu'ils te voient essayer suffit."
+     ],
+     "t": "Les enfants imitent ce que nous faisons",
+     "g": "Vois comment les enfants apprennent plus de nos actes que de nos consignes.",
+     "q": "Quelle habitude de la tienne serais-tu heureux de voir ton enfant copier ?",
+     "c": "Montre aujourd'hui une habitude que tu veux transmettre, comme lire ou ranger."
+    },
+    "it": {
+     "p": [
+      "I bambini osservano come gestiamo emozioni, schermi, cibo e gentilezza.",
+      "Mostrare l'abitudine desiderata funziona meglio che spiegarla all'infinito.",
+      "Non serve essere perfetti; basta che ti vedano provare."
+     ],
+     "t": "I bambini copiano ciò che facciamo",
+     "g": "Scopri come i bambini imparano più dalle nostre azioni che dalle nostre istruzioni.",
+     "q": "Quale tua abitudine saresti felice che tuo figlio copiasse?",
+     "c": "Oggi mostra un'abitudine che vuoi trasmettere, come leggere o riordinare."
+    },
+    "pt": {
+     "p": [
+      "As crianças observam como lidamos com emoções, ecrãs, comida e gentileza.",
+      "Mostrar o hábito que queres funciona melhor do que explicá-lo vezes sem conta.",
+      "Não precisas de ser perfeito; basta que te vejam a tentar."
+     ],
+     "t": "As crianças copiam o que fazemos",
+     "g": "Percebe que as crianças aprendem mais com as nossas ações do que com as nossas instruções.",
+     "q": "Que hábito teu ficarias feliz por ver o teu filho copiar?",
+     "c": "Hoje mostra um hábito que queres que o teu filho crie, como ler ou arrumar."
+    },
+    "pt_BR": {
+     "p": [
+      "As crianças observam como lidamos com emoções, telas, comida e gentileza.",
+      "Mostrar o hábito que você quer funciona melhor que explicar várias vezes.",
+      "Não precisa ser perfeito; basta que vejam você tentando."
+     ],
+     "t": "As crianças copiam o que fazemos",
+     "g": "Perceba que as crianças aprendem mais com nossas ações do que com nossas instruções.",
+     "q": "Que hábito seu você ficaria feliz de ver seu filho copiar?",
+     "c": "Hoje mostre um hábito que quer que seu filho crie, como ler ou arrumar."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Take one slow breath before you answer; it gives your mind a head start.",
+      "Lower your voice instead of raising it; kids often mirror the volume.",
+      "It is fine to say: I need a minute to calm down, then we'll talk."
+     ],
+     "t": "Staying calm in small moments",
+     "g": "Pause and breathe before reacting to everyday frustrations.",
+     "q": "What small daily moment tests your patience most, and what helps you?",
+     "c": "Take one slow breath before responding the next time something goes wrong."
+    },
+    "de": {
+     "p": [
+      "Atme einmal langsam durch, bevor du antwortest; das verschafft deinem Kopf einen Vorsprung.",
+      "Sprich leiser statt lauter; Kinder spiegeln oft die Lautstärke.",
+      "Es ist in Ordnung zu sagen: Ich brauche eine Minute zum Beruhigen, dann reden wir."
+     ],
+     "t": "Ruhig bleiben bei kleinen Anlässen",
+     "g": "Halte inne und atme, bevor du auf alltägliche Frustrationen reagierst.",
+     "q": "Welcher kleine Alltagsmoment fordert deine Geduld am meisten, und was hilft dir?",
+     "c": "Atme beim nächsten Missgeschick heute einmal langsam durch, bevor du reagierst."
+    },
+    "es": {
+     "p": [
+      "Respira hondo una vez antes de responder; le da ventaja a tu mente.",
+      "Baja la voz en lugar de subirla; los niños suelen imitar el volumen.",
+      "Está bien decir: Necesito un minuto para calmarme y luego hablamos."
+     ],
+     "t": "Mantener la calma en lo pequeño",
+     "g": "Haz una pausa y respira antes de reaccionar a las frustraciones del día a día.",
+     "q": "¿Qué momento pequeño del día pone más a prueba tu paciencia y qué te ayuda?",
+     "c": "Respira despacio una vez antes de responder la próxima vez que algo salga mal."
+    },
+    "fr": {
+     "p": [
+      "Prends une inspiration lente avant de répondre ; ton esprit prend de l'avance.",
+      "Baisse la voix au lieu de la hausser ; les enfants imitent souvent le volume.",
+      "Tu peux dire : J'ai besoin d'une minute pour me calmer, puis on en parle."
+     ],
+     "t": "Rester calme dans les petits moments",
+     "g": "Fais une pause et respire avant de réagir aux frustrations du quotidien.",
+     "q": "Quel petit moment de la journée met le plus ta patience à l'épreuve, et qu'est-ce qui t'aide ?",
+     "c": "Respire lentement une fois avant de répondre la prochaine fois que quelque chose tourne mal."
+    },
+    "it": {
+     "p": [
+      "Fai un respiro lento prima di rispondere; dà alla mente un po' di vantaggio.",
+      "Abbassa la voce invece di alzarla; i bambini spesso imitano il volume.",
+      "Va bene dire: Ho bisogno di un minuto per calmarmi, poi ne parliamo."
+     ],
+     "t": "Restare calmi nei piccoli momenti",
+     "g": "Fai una pausa e respira prima di reagire alle frustrazioni quotidiane.",
+     "q": "Quale piccolo momento della giornata mette più alla prova la tua pazienza e cosa ti aiuta?",
+     "c": "Fai un respiro lento prima di rispondere la prossima volta che qualcosa va storto."
+    },
+    "pt": {
+     "p": [
+      "Respira fundo uma vez antes de responder; dá à tua mente uma vantagem.",
+      "Baixa a voz em vez de a subir; as crianças costumam imitar o volume.",
+      "Não faz mal dizer: Preciso de um minuto para me acalmar e depois falamos."
+     ],
+     "t": "Manter a calma nas pequenas coisas",
+     "g": "Faz uma pausa e respira antes de reagir às frustrações do dia a dia.",
+     "q": "Que pequeno momento do dia põe mais à prova a tua paciência e o que te ajuda?",
+     "c": "Respira devagar uma vez antes de responder da próxima vez que algo correr mal."
+    },
+    "pt_BR": {
+     "p": [
+      "Respire fundo uma vez antes de responder; dá à sua mente uma vantagem.",
+      "Abaixe a voz em vez de subir; as crianças costumam imitar o volume.",
+      "Tudo bem dizer: Preciso de um minuto para me acalmar e depois a gente conversa."
+     ],
+     "t": "Manter a calma nas pequenas coisas",
+     "g": "Faça uma pausa e respire antes de reagir às frustrações do dia a dia.",
+     "q": "Que pequeno momento do dia mais testa sua paciência e o que ajuda você?",
+     "c": "Respire devagar uma vez antes de responder da próxima vez que algo der errado."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "A silly voice or a funny walk can turn a tense moment into a giggle.",
+      "Play helps kids cooperate: Can you hop to the bath like a frog?",
+      "Laugh with your child, never at them, so humour stays safe."
+     ],
+     "t": "Laughter as a parenting tool",
+     "g": "Use playfulness and silliness to defuse tension and build bonds.",
+     "q": "What silly thing makes your whole family laugh every time?",
+     "c": "Turn one everyday task into a game with a funny voice or a challenge today."
+    },
+    "de": {
+     "p": [
+      "Eine alberne Stimme oder ein lustiger Gang kann Anspannung in Kichern verwandeln.",
+      "Spiel hilft beim Kooperieren: Kannst du wie ein Frosch zum Bad hüpfen?",
+      "Lach mit deinem Kind, nie über es, damit Humor sicher bleibt."
+     ],
+     "t": "Lachen als Erziehungshelfer",
+     "g": "Nutze Spielfreude und Albernheit, um Spannung zu lösen und Bindung zu stärken.",
+     "q": "Was Albernes bringt deine ganze Familie jedes Mal zum Lachen?",
+     "c": "Verwandle heute eine Alltagsaufgabe mit lustiger Stimme oder Herausforderung in ein Spiel."
+    },
+    "es": {
+     "p": [
+      "Una voz tonta o un andar gracioso pueden convertir un momento tenso en risas.",
+      "El juego ayuda a colaborar: ¿Puedes saltar al baño como una rana?",
+      "Ríete con tu hijo, nunca de él, para que el humor siga siendo seguro."
+     ],
+     "t": "La risa como herramienta de crianza",
+     "g": "Usa el juego y las tonterías para aliviar la tensión y crear vínculos.",
+     "q": "¿Qué tontería hace reír a toda tu familia cada vez?",
+     "c": "Convierte hoy una tarea cotidiana en un juego con voz graciosa o un reto."
+    },
+    "fr": {
+     "p": [
+      "Une voix rigolote ou une démarche drôle peut transformer un moment tendu en fou rire.",
+      "Le jeu aide à coopérer : Tu peux sauter jusqu'au bain comme une grenouille ?",
+      "Ris avec ton enfant, jamais de lui, pour que l'humour reste sûr."
+     ],
+     "t": "Le rire, un allié du quotidien",
+     "g": "Utilise le jeu et la fantaisie pour désamorcer la tension et renforcer les liens.",
+     "q": "Quelle bêtise fait rire toute ta famille à chaque fois ?",
+     "c": "Transforme aujourd'hui une tâche quotidienne en jeu avec une voix drôle ou un défi."
+    },
+    "it": {
+     "p": [
+      "Una vocina buffa o un'andatura divertente può trasformare un momento teso in una risata.",
+      "Il gioco aiuta a collaborare: Riesci a saltare fino al bagno come una rana?",
+      "Ridi con tuo figlio, mai di lui, così l'umorismo resta sicuro."
+     ],
+     "t": "La risata come strumento educativo",
+     "g": "Usa il gioco e la goliardia per sciogliere la tensione e creare legami.",
+     "q": "Quale sciocchezza fa ridere tutta la tua famiglia ogni volta?",
+     "c": "Oggi trasforma un compito quotidiano in un gioco con una voce buffa o una sfida."
+    },
+    "pt": {
+     "p": [
+      "Uma voz tola ou um andar engraçado podem transformar um momento tenso em gargalhadas.",
+      "A brincadeira ajuda a colaborar: Consegues saltar até ao banho como uma rã?",
+      "Ri com o teu filho, nunca dele, para o humor continuar seguro."
+     ],
+     "t": "O riso como ferramenta de educação",
+     "g": "Usa a brincadeira e a palhaçada para aliviar a tensão e criar laços.",
+     "q": "Que tolice faz rir toda a tua família sempre?",
+     "c": "Hoje transforma uma tarefa do dia a dia num jogo com voz engraçada ou um desafio."
+    },
+    "pt_BR": {
+     "p": [
+      "Uma voz boba ou um andar engraçado podem transformar um momento tenso em risada.",
+      "A brincadeira ajuda a colaborar: Você consegue pular até o banho como um sapo?",
+      "Ria com seu filho, nunca dele, para o humor continuar seguro."
+     ],
+     "t": "O riso como ferramenta de educação",
+     "g": "Use a brincadeira e a bobeira para aliviar a tensão e criar laços.",
+     "q": "Que bobeira faz toda a sua família rir sempre?",
+     "c": "Hoje transforme uma tarefa do dia a dia em brincadeira com voz engraçada ou desafio."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Rituals can be tiny and cheap: a song, a special mug, a Sunday walk.",
+      "Children treasure repetition; it says: this is who we are together.",
+      "Invite kids to invent a ritual so it truly belongs to everyone."
+     ],
+     "t": "Special family rituals",
+     "g": "Create little traditions like Friday pancakes that make lasting memories.",
+     "q": "Which tradition from your childhood would you love to keep alive or reinvent?",
+     "c": "Invent a new tiny family ritual with your child and try it this week."
+    },
+    "de": {
+     "p": [
+      "Rituale können winzig und günstig sein: ein Lied, eine besondere Tasse, ein Sonntagsspaziergang.",
+      "Kinder lieben Wiederholung; sie sagt: So sind wir zusammen.",
+      "Lade Kinder ein, ein Ritual zu erfinden, damit es allen gehört."
+     ],
+     "t": "Besondere Familienrituale",
+     "g": "Schaffe kleine Traditionen wie Freitagspfannkuchen, die bleibende Erinnerungen machen.",
+     "q": "Welche Tradition aus deiner Kindheit würdest du gern bewahren oder neu erfinden?",
+     "c": "Erfinde mit deinem Kind ein neues kleines Familienritual und probiere es diese Woche aus."
+    },
+    "es": {
+     "p": [
+      "Los rituales pueden ser mínimos y baratos: una canción, una taza especial, un paseo del domingo.",
+      "A los niños les encanta la repetición; dice: así somos juntos.",
+      "Invita a los niños a inventar un ritual para que sea de todos."
+     ],
+     "t": "Rituales familiares especiales",
+     "g": "Crea pequeñas tradiciones, como las tortitas del viernes, que dejan recuerdos duraderos.",
+     "q": "¿Qué tradición de tu infancia te gustaría conservar o reinventar?",
+     "c": "Inventa con tu hijo un nuevo ritual familiar pequeño y pruébalo esta semana."
+    },
+    "fr": {
+     "p": [
+      "Un rituel peut être minuscule et peu coûteux : une chanson, une tasse spéciale, une balade du dimanche.",
+      "Les enfants adorent la répétition ; elle dit : voilà qui nous sommes ensemble.",
+      "Invite les enfants à inventer un rituel pour qu'il appartienne à tous."
+     ],
+     "t": "Des rituels familiaux spéciaux",
+     "g": "Crée de petites traditions, comme les crêpes du vendredi, qui laissent des souvenirs durables.",
+     "q": "Quelle tradition de ton enfance aimerais-tu garder ou réinventer ?",
+     "c": "Invente avec ton enfant un nouveau petit rituel familial et essaie-le cette semaine."
+    },
+    "it": {
+     "p": [
+      "I rituali possono essere minuscoli ed economici: una canzone, una tazza speciale, una passeggiata la domenica.",
+      "I bambini adorano la ripetizione; dice: ecco chi siamo insieme.",
+      "Invita i bambini a inventare un rituale perché appartenga a tutti."
+     ],
+     "t": "Rituali di famiglia speciali",
+     "g": "Crea piccole tradizioni, come le frittelle del venerdì, che lasciano ricordi duraturi.",
+     "q": "Quale tradizione della tua infanzia vorresti mantenere o reinventare?",
+     "c": "Inventa con tuo figlio un nuovo piccolo rituale di famiglia e provalo questa settimana."
+    },
+    "pt": {
+     "p": [
+      "Os rituais podem ser pequenos e baratos: uma canção, uma caneca especial, um passeio de domingo.",
+      "As crianças adoram a repetição; diz: é assim que somos juntos.",
+      "Convida as crianças a inventar um ritual para que seja de todos."
+     ],
+     "t": "Rituais familiares especiais",
+     "g": "Cria pequenas tradições, como as panquecas de sexta, que deixam memórias duradouras.",
+     "q": "Que tradição da tua infância gostarias de manter ou reinventar?",
+     "c": "Inventa com o teu filho um novo pequeno ritual familiar e experimenta-o esta semana."
+    },
+    "pt_BR": {
+     "p": [
+      "Rituais podem ser pequenos e baratos: uma música, uma caneca especial, um passeio de domingo.",
+      "As crianças adoram repetição; ela diz: é assim que somos juntos.",
+      "Convide as crianças a inventar um ritual para que seja de todos."
+     ],
+     "t": "Rituais de família especiais",
+     "g": "Crie pequenas tradições, como as panquecas de sexta, que deixam memórias duradouras.",
+     "q": "Que tradição da sua infância você gostaria de manter ou reinventar?",
+     "c": "Invente com seu filho um novo pequeno ritual de família e experimente esta semana."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Some kids love big hugs, others prefer a high five or sitting close; both are fine.",
+      "Offer affection often, and respect it when a child needs space.",
+      "Warm words, smiles and shared laughter are affection too."
+     ],
+     "t": "Hugs, cuddles and affection",
+     "g": "Learn how children of different ages like to receive everyday warmth.",
+     "q": "How does each of your children like to be shown love?",
+     "c": "Offer each child their favourite kind of warmth at least once today."
+    },
+    "de": {
+     "p": [
+      "Manche Kinder lieben feste Umarmungen, andere ein High Five oder Nähe; beides ist in Ordnung.",
+      "Biete oft Zuneigung an und respektiere es, wenn ein Kind Raum braucht.",
+      "Warme Worte, Lächeln und gemeinsames Lachen sind auch Zuneigung."
+     ],
+     "t": "Umarmungen, Kuscheln und Zuneigung",
+     "g": "Erfahre, wie Kinder verschiedener Altersstufen alltägliche Wärme gern empfangen.",
+     "q": "Wie zeigst du jedem deiner Kinder am liebsten, dass du es liebst?",
+     "c": "Schenke heute jedem Kind mindestens einmal seine Lieblingsart von Wärme."
+    },
+    "es": {
+     "p": [
+      "A unos niños les encantan los abrazos grandes, a otros un choque de manos o estar cerca; ambos están bien.",
+      "Ofrece cariño a menudo y respeta cuando un niño necesita espacio.",
+      "Las palabras cálidas, las sonrisas y las risas compartidas también son cariño."
+     ],
+     "t": "Abrazos, mimos y cariño",
+     "g": "Aprende cómo a niños de distintas edades les gusta recibir el cariño de cada día.",
+     "q": "¿Cómo le gusta a cada uno de tus hijos que le demuestres amor?",
+     "c": "Dale hoy a cada hijo su forma favorita de cariño al menos una vez."
+    },
+    "fr": {
+     "p": [
+      "Certains enfants adorent les gros câlins, d'autres préfèrent un high five ou être tout près ; les deux sont bien.",
+      "Offre de l'affection souvent et respecte l'enfant quand il a besoin d'espace.",
+      "Les mots chaleureux, les sourires et les rires partagés sont aussi de l'affection."
+     ],
+     "t": "Câlins, tendresse et affection",
+     "g": "Découvre comment les enfants de différents âges aiment recevoir la chaleur du quotidien.",
+     "q": "Comment chacun de tes enfants aime-t-il qu'on lui montre de l'amour ?",
+     "c": "Offre aujourd'hui à chaque enfant sa façon préférée de tendresse au moins une fois."
+    },
+    "it": {
+     "p": [
+      "Ad alcuni bambini piacciono gli abbracci forti, ad altri un cinque o stare vicini; vanno bene entrambi.",
+      "Offri affetto spesso e rispetta il bambino quando ha bisogno di spazio.",
+      "Parole calde, sorrisi e risate condivise sono affetto anch'essi."
+     ],
+     "t": "Abbracci, coccole e affetto",
+     "g": "Scopri come i bambini di età diverse amano ricevere il calore di ogni giorno.",
+     "q": "In che modo ognuno dei tuoi figli ama che gli si mostri amore?",
+     "c": "Oggi offri a ogni figlio il suo tipo preferito di calore almeno una volta."
+    },
+    "pt": {
+     "p": [
+      "Algumas crianças adoram abraços grandes, outras preferem um toca-aqui ou ficar perto; ambos estão bem.",
+      "Oferece carinho muitas vezes e respeita quando a criança precisa de espaço.",
+      "Palavras calorosas, sorrisos e risos partilhados também são carinho."
+     ],
+     "t": "Abraços, miminhos e carinho",
+     "g": "Aprende como crianças de várias idades gostam de receber o carinho do dia a dia.",
+     "q": "De que forma cada um dos teus filhos gosta que lhe mostrem amor?",
+     "c": "Dá hoje a cada filho a sua forma preferida de carinho pelo menos uma vez."
+    },
+    "pt_BR": {
+     "p": [
+      "Algumas crianças adoram abraços apertados, outras preferem um toca aqui ou ficar perto; ambos estão certos.",
+      "Ofereça carinho com frequência e respeite quando a criança precisa de espaço.",
+      "Palavras carinhosas, sorrisos e risadas compartilhadas também são afeto."
+     ],
+     "t": "Abraços, carinhos e afeto",
+     "g": "Aprenda como crianças de várias idades gostam de receber o carinho do dia a dia.",
+     "q": "De que jeito cada um dos seus filhos gosta que demonstrem amor?",
+     "c": "Dê hoje a cada filho o jeito preferido de carinho pelo menos uma vez."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Every parent loses patience sometimes; what matters is the repair afterwards.",
+      "Keep it simple: I raised my voice and I'm sorry; that wasn't fair.",
+      "Children learn that mistakes can be admitted and mended with love."
+     ],
+     "t": "Saying sorry to your child",
+     "g": "See why repairing after a mistake teaches honesty and respect.",
+     "q": "How did the adults you grew up with handle their own mistakes?",
+     "c": "If you slip today, repair it with one short, kind sentence to your child."
+    },
+    "de": {
+     "p": [
+      "Jedes Elternteil verliert mal die Geduld; wichtig ist die Wiedergutmachung danach.",
+      "Halte es einfach: Ich war laut und es tut mir leid; das war nicht fair.",
+      "Kinder lernen, dass man Fehler zugeben und mit Liebe beheben kann."
+     ],
+     "t": "Sich beim Kind entschuldigen",
+     "g": "Erkenne, warum Wiedergutmachen nach einem Fehler Ehrlichkeit und Respekt lehrt.",
+     "q": "Wie sind die Erwachsenen, mit denen du aufgewachsen bist, mit eigenen Fehlern umgegangen?",
+     "c": "Wenn dir heute etwas danebengeht, mach es mit einem kurzen, freundlichen Satz wieder gut."
+    },
+    "es": {
+     "p": [
+      "Todo padre o madre pierde la paciencia a veces; lo importante es la reparación después.",
+      "Que sea sencillo: Alcé la voz y lo siento; no fue justo.",
+      "Los niños aprenden que los errores se pueden admitir y arreglar con cariño."
+     ],
+     "t": "Pedir perdón a tu hijo",
+     "g": "Descubre por qué reparar tras un error enseña honestidad y respeto.",
+     "q": "¿Cómo manejaban sus errores los adultos con los que creciste?",
+     "c": "Si hoy te equivocas, repáralo con una frase corta y amable a tu hijo."
+    },
+    "fr": {
+     "p": [
+      "Tout parent perd patience parfois ; ce qui compte, c'est la réparation ensuite.",
+      "Reste simple : J'ai haussé le ton et je suis désolé ; ce n'était pas juste.",
+      "Les enfants apprennent qu'on peut reconnaître ses erreurs et les réparer avec amour."
+     ],
+     "t": "S'excuser auprès de son enfant",
+     "g": "Comprends pourquoi réparer après une erreur enseigne l'honnêteté et le respect.",
+     "q": "Comment les adultes qui t'ont élevé géraient-ils leurs propres erreurs ?",
+     "c": "Si tu dérapes aujourd'hui, répare avec une phrase courte et bienveillante à ton enfant."
+    },
+    "it": {
+     "p": [
+      "Ogni genitore perde la pazienza a volte; conta la riparazione dopo.",
+      "Fai semplice: Ho alzato la voce e mi dispiace; non è stato giusto.",
+      "I bambini imparano che gli errori si ammettono e si sistemano con amore."
+     ],
+     "t": "Chiedere scusa a tuo figlio",
+     "g": "Scopri perché riparare dopo un errore insegna onestà e rispetto.",
+     "q": "Come gestivano i propri errori gli adulti con cui sei cresciuto?",
+     "c": "Se oggi scivoli, ripara con una frase breve e gentile a tuo figlio."
+    },
+    "pt": {
+     "p": [
+      "Todos os pais perdem a paciência às vezes; o que importa é a reparação depois.",
+      "Mantém simples: Levantei a voz e peço desculpa; não foi justo.",
+      "As crianças aprendem que os erros se admitem e se resolvem com carinho."
+     ],
+     "t": "Pedir desculpa ao teu filho",
+     "g": "Percebe porque é que reparar depois de um erro ensina honestidade e respeito.",
+     "q": "Como lidavam com os próprios erros os adultos com quem cresceste?",
+     "c": "Se hoje escorregares, repara com uma frase curta e gentil ao teu filho."
+    },
+    "pt_BR": {
+     "p": [
+      "Todo pai e mãe perde a paciência às vezes; o que importa é a reparação depois.",
+      "Seja simples: Levantei a voz e peço desculpas; não foi justo.",
+      "As crianças aprendem que erros podem ser admitidos e resolvidos com carinho."
+     ],
+     "t": "Pedir desculpas ao seu filho",
+     "g": "Entenda por que reparar depois de um erro ensina honestidade e respeito.",
+     "q": "Como os adultos com quem você cresceu lidavam com os próprios erros?",
+     "c": "Se hoje você escorregar, repare com uma frase curta e gentil ao seu filho."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "A corner with cushions, a blanket and a few books invites calm.",
+      "Let your child help decorate it so it feels like their own place.",
+      "Use it as a no-pressure spot to rest, never as a punishment."
+     ],
+     "t": "Creating a cosy home corner",
+     "g": "Set up a quiet space with books and cushions where kids can relax.",
+     "q": "Where in your home could a small cosy corner fit?",
+     "c": "Make a mini cosy corner today with a blanket, cushions and three books."
+    },
+    "de": {
+     "p": [
+      "Eine Ecke mit Kissen, Decke und ein paar Büchern lädt zur Ruhe ein.",
+      "Lass dein Kind beim Dekorieren helfen, damit es sich wie sein eigener Platz anfühlt.",
+      "Nutze sie als druckfreien Ruheort, niemals als Strafe."
+     ],
+     "t": "Eine gemütliche Ecke einrichten",
+     "g": "Richte einen ruhigen Platz mit Büchern und Kissen ein, an dem Kinder entspannen können.",
+     "q": "Wo in eurer Wohnung hätte eine kleine gemütliche Ecke Platz?",
+     "c": "Bau heute eine Mini-Kuschelecke mit Decke, Kissen und drei Büchern."
+    },
+    "es": {
+     "p": [
+      "Un rincón con cojines, una manta y unos libros invita a la calma.",
+      "Deja que tu hijo ayude a decorarlo para que lo sienta suyo.",
+      "Úsalo como sitio de descanso sin presión, nunca como castigo."
+     ],
+     "t": "Crear un rincón acogedor",
+     "g": "Prepara un espacio tranquilo con libros y cojines donde los niños puedan relajarse.",
+     "q": "¿Dónde cabría un pequeño rincón acogedor en tu casa?",
+     "c": "Haz hoy un mini rincón acogedor con una manta, cojines y tres libros."
+    },
+    "fr": {
+     "p": [
+      "Un coin avec coussins, plaid et quelques livres invite au calme.",
+      "Laisse ton enfant aider à le décorer pour qu'il le sente à lui.",
+      "Utilise-le comme lieu de repos sans pression, jamais comme punition."
+     ],
+     "t": "Créer un coin douillet",
+     "g": "Aménage un espace calme avec des livres et des coussins où les enfants peuvent se détendre.",
+     "q": "Où pourrait se glisser un petit coin douillet chez vous ?",
+     "c": "Aujourd'hui, installe un mini coin douillet avec un plaid, des coussins et trois livres."
+    },
+    "it": {
+     "p": [
+      "Un angolo con cuscini, una coperta e qualche libro invita alla calma.",
+      "Lascia che tuo figlio aiuti a decorarlo, così lo sente suo.",
+      "Usalo come posto di riposo senza pressione, mai come punizione."
+     ],
+     "t": "Creare un angolo accogliente",
+     "g": "Allestisci uno spazio tranquillo con libri e cuscini dove i bambini possano rilassarsi.",
+     "q": "Dove nella vostra casa potrebbe starci un piccolo angolo accogliente?",
+     "c": "Oggi crea un mini angolo accogliente con una coperta, cuscini e tre libri."
+    },
+    "pt": {
+     "p": [
+      "Um canto com almofadas, uma manta e alguns livros convida à calma.",
+      "Deixa o teu filho ajudar a decorar para sentir que é dele.",
+      "Usa-o como sítio de descanso sem pressão, nunca como castigo."
+     ],
+     "t": "Criar um cantinho aconchegante",
+     "g": "Monta um espaço sossegado com livros e almofadas onde as crianças possam relaxar.",
+     "q": "Onde na vossa casa caberia um pequeno cantinho aconchegante?",
+     "c": "Faz hoje um mini cantinho com uma manta, almofadas e três livros."
+    },
+    "pt_BR": {
+     "p": [
+      "Um canto com almofadas, uma manta e alguns livros convida à calma.",
+      "Deixe seu filho ajudar a decorar para sentir que é dele.",
+      "Use como lugar de descanso sem pressão, nunca como castigo."
+     ],
+     "t": "Criar um cantinho aconchegante",
+     "g": "Monte um espaço tranquilo com livros e almofadas onde as crianças possam relaxar.",
+     "q": "Onde na sua casa caberia um cantinho aconchegante?",
+     "c": "Faça hoje um mini cantinho com uma manta, almofadas e três livros."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "A young child's brain is still learning to wait, share and manage big feelings.",
+      "Ask yourself: is this misbehaviour or just a skill still growing?",
+      "Adjust tasks to the age; small wins build confidence for next steps."
+     ],
+     "t": "Parenting with patience",
+     "g": "Build realistic expectations about what children can do at each age.",
+     "q": "What did your child recently learn to do that once felt impossible?",
+     "c": "Think of one expectation you could soften today and adjust it kindly."
+    },
+    "de": {
+     "p": [
+      "Das Gehirn eines kleinen Kindes lernt noch, zu warten, zu teilen und große Gefühle zu regulieren.",
+      "Frag dich: Ist das Fehlverhalten oder nur eine Fähigkeit, die noch wächst?",
+      "Passe Aufgaben dem Alter an; kleine Erfolge stärken das Selbstvertrauen."
+     ],
+     "t": "Erziehen mit Geduld",
+     "g": "Entwickle realistische Erwartungen daran, was Kinder in jedem Alter können.",
+     "q": "Was hat dein Kind kürzlich gelernt, das früher unmöglich schien?",
+     "c": "Überlege dir eine Erwartung, die du heute sanfter fassen kannst, und passe sie freundlich an."
+    },
+    "es": {
+     "p": [
+      "El cerebro de un niño pequeño aún está aprendiendo a esperar, compartir y manejar emociones grandes.",
+      "Pregúntate: ¿es mala conducta o una habilidad que aún está creciendo?",
+      "Ajusta las tareas a la edad; los pequeños logros dan confianza para seguir."
+     ],
+     "t": "Criar con paciencia",
+     "g": "Construye expectativas realistas sobre lo que los niños pueden hacer en cada edad.",
+     "q": "¿Qué aprendió a hacer tu hijo recientemente que antes parecía imposible?",
+     "c": "Piensa en una expectativa que puedas suavizar hoy y ajústala con cariño."
+    },
+    "fr": {
+     "p": [
+      "Le cerveau d'un jeune enfant apprend encore à attendre, partager et gérer les grandes émotions.",
+      "Demande-toi : est-ce un mauvais comportement ou une compétence encore en croissance ?",
+      "Adapte les tâches à l'âge ; les petites victoires donnent confiance pour la suite."
+     ],
+     "t": "Éduquer avec patience",
+     "g": "Construis des attentes réalistes sur ce que les enfants peuvent faire à chaque âge.",
+     "q": "Qu'est-ce que ton enfant a appris récemment qui semblait impossible avant ?",
+     "c": "Pense à une attente que tu peux assouplir aujourd'hui et ajuste-la avec bienveillance."
+    },
+    "it": {
+     "p": [
+      "Il cervello di un bambino piccolo sta ancora imparando ad aspettare, condividere e gestire grandi emozioni.",
+      "Chiediti: è un cattivo comportamento o un'abilità ancora in crescita?",
+      "Adatta i compiti all'età; piccoli successi danno fiducia per i passi successivi."
+     ],
+     "t": "Educare con pazienza",
+     "g": "Costruisci aspettative realistiche su ciò che i bambini sanno fare a ogni età.",
+     "q": "Cosa ha imparato a fare di recente tuo figlio che prima sembrava impossibile?",
+     "c": "Pensa a un'aspettativa che oggi puoi ammorbidire e adattala con gentilezza."
+    },
+    "pt": {
+     "p": [
+      "O cérebro de uma criança pequena ainda está a aprender a esperar, partilhar e gerir emoções grandes.",
+      "Pergunta-te: é mau comportamento ou uma competência que ainda está a crescer?",
+      "Ajusta as tarefas à idade; pequenas vitórias dão confiança para os passos seguintes."
+     ],
+     "t": "Educar com paciência",
+     "g": "Constrói expectativas realistas sobre o que as crianças conseguem fazer em cada idade.",
+     "q": "O que aprendeu o teu filho a fazer recentemente que antes parecia impossível?",
+     "c": "Pensa numa expectativa que possas suavizar hoje e ajusta-a com carinho."
+    },
+    "pt_BR": {
+     "p": [
+      "O cérebro de uma criança pequena ainda está aprendendo a esperar, dividir e lidar com emoções grandes.",
+      "Pergunte-se: é mau comportamento ou uma habilidade que ainda está crescendo?",
+      "Ajuste as tarefas à idade; pequenas vitórias dão confiança para os próximos passos."
+     ],
+     "t": "Educar com paciência",
+     "g": "Construa expectativas realistas sobre o que as crianças conseguem fazer em cada idade.",
+     "q": "O que seu filho aprendeu a fazer recentemente que antes parecia impossível?",
+     "c": "Pense em uma expectativa que você pode suavizar hoje e ajuste com carinho."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Raising children has always been a shared task; nobody does it alone.",
+      "Ask specifically: Could you take the kids for an hour on Saturday?",
+      "Offering help back builds a circle of support for everyone."
+     ],
+     "t": "Asking for help as a parent",
+     "g": "See why leaning on family, friends and community is healthy and normal.",
+     "q": "Who in your life could you ask for a small favour this week?",
+     "c": "Ask one person for a small, specific bit of help or offer some to someone."
+    },
+    "de": {
+     "p": [
+      "Kinder großzuziehen war schon immer eine gemeinsame Aufgabe; niemand schafft es allein.",
+      "Frag konkret: Könntest du am Samstag eine Stunde auf die Kinder aufpassen?",
+      "Selbst Hilfe anzubieten baut einen Kreis der Unterstützung für alle auf."
+     ],
+     "t": "Als Elternteil um Hilfe bitten",
+     "g": "Erkenne, warum es gesund und normal ist, sich auf Familie, Freunde und Gemeinschaft zu stützen.",
+     "q": "Wen in deinem Leben könntest du diese Woche um einen kleinen Gefallen bitten?",
+     "c": "Bitte eine Person um eine kleine, konkrete Hilfe oder biete jemandem welche an."
+    },
+    "es": {
+     "p": [
+      "Criar siempre ha sido una tarea compartida; nadie lo hace solo.",
+      "Pide con concreción: ¿Podrías quedarte con los niños una hora el sábado?",
+      "Ofrecer ayuda a cambio crea una red de apoyo para todos."
+     ],
+     "t": "Pedir ayuda como madre o padre",
+     "g": "Descubre por qué apoyarse en la familia, los amigos y la comunidad es sano y normal.",
+     "q": "¿A quién de tu vida podrías pedir un pequeño favor esta semana?",
+     "c": "Pide a una persona una ayuda pequeña y concreta u ofrécela a alguien."
+    },
+    "fr": {
+     "p": [
+      "Élever des enfants a toujours été une tâche partagée ; personne ne le fait seul.",
+      "Demande précisément : Pourrais-tu garder les enfants une heure samedi ?",
+      "Offrir de l'aide en retour tisse un cercle de soutien pour tous."
+     ],
+     "t": "Demander de l'aide en tant que parent",
+     "g": "Comprends pourquoi s'appuyer sur la famille, les amis et la communauté est sain et normal.",
+     "q": "À qui pourrais-tu demander un petit service cette semaine ?",
+     "c": "Demande à une personne une petite aide précise ou propose-en à quelqu'un."
+    },
+    "it": {
+     "p": [
+      "Crescere i figli è sempre stato un compito condiviso; nessuno lo fa da solo.",
+      "Chiedi in modo preciso: Potresti tenere i bambini un'ora sabato?",
+      "Offrire aiuto a tua volta crea una rete di sostegno per tutti."
+     ],
+     "t": "Chiedere aiuto come genitore",
+     "g": "Scopri perché appoggiarsi a famiglia, amici e comunità è sano e normale.",
+     "q": "A chi nella tua vita potresti chiedere un piccolo favore questa settimana?",
+     "c": "Chiedi a una persona un piccolo aiuto preciso oppure offrilo a qualcuno."
+    },
+    "pt": {
+     "p": [
+      "Criar filhos sempre foi uma tarefa partilhada; ninguém o faz sozinho.",
+      "Pede de forma concreta: Podias ficar com as crianças uma hora no sábado?",
+      "Oferecer ajuda em troca cria uma rede de apoio para todos."
+     ],
+     "t": "Pedir ajuda como pai ou mãe",
+     "g": "Percebe porque é que apoiar-se na família, nos amigos e na comunidade é saudável e normal.",
+     "q": "A quem na tua vida podias pedir um pequeno favor esta semana?",
+     "c": "Pede a uma pessoa uma ajuda pequena e concreta ou oferece-a a alguém."
+    },
+    "pt_BR": {
+     "p": [
+      "Criar filhos sempre foi uma tarefa compartilhada; ninguém faz isso sozinho.",
+      "Peça de forma concreta: Você poderia ficar com as crianças uma hora no sábado?",
+      "Oferecer ajuda em troca cria uma rede de apoio para todos."
+     ],
+     "t": "Pedir ajuda como pai ou mãe",
+     "g": "Entenda por que se apoiar na família, nos amigos e na comunidade é saudável e normal.",
+     "q": "A quem na sua vida você poderia pedir um pequeno favor esta semana?",
+     "c": "Peça a uma pessoa uma ajuda pequena e concreta ou ofereça a alguém."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Connection, eye level and listening make children feel safe and heard.",
+      "Routines, calendars and warnings create predictable, calmer days.",
+      "Praise for effort, kind words and repair after mistakes grow trust."
+     ],
+     "t": "Review: your parenting foundations",
+     "g": "Look back at connection, routines and communication from the first month.",
+     "q": "Which idea from this month felt the most natural for your family?",
+     "c": "Choose your top two favourite ideas and plan to keep using them next week."
+    },
+    "de": {
+     "p": [
+      "Verbindung, Augenhöhe und Zuhören lassen Kinder sich sicher und gehört fühlen.",
+      "Routinen, Kalender und Vorwarnungen schaffen vorhersehbare, ruhigere Tage.",
+      "Lob für Einsatz, freundliche Worte und Wiedergutmachung stärken das Vertrauen."
+     ],
+     "t": "Rückblick: Deine Erziehungsgrundlagen",
+     "g": "Blicke zurück auf Verbindung, Routinen und Kommunikation aus dem ersten Monat.",
+     "q": "Welche Idee aus diesem Monat hat sich für deine Familie am natürlichsten angefühlt?",
+     "c": "Wähle deine zwei Lieblingsideen und plane, sie nächste Woche weiter zu nutzen."
+    },
+    "es": {
+     "p": [
+      "La conexión, la altura de los ojos y la escucha hacen que los niños se sientan seguros y oídos.",
+      "Las rutinas, los calendarios y los avisos crean días predecibles y más tranquilos.",
+      "El elogio al esfuerzo, las palabras amables y la reparación tras los errores aumentan la confianza."
+     ],
+     "t": "Repaso: tus bases de crianza",
+     "g": "Mira atrás a la conexión, las rutinas y la comunicación del primer mes.",
+     "q": "¿Qué idea de este mes te resultó más natural para tu familia?",
+     "c": "Elige tus dos ideas favoritas y planea seguir usándolas la semana próxima."
+    },
+    "fr": {
+     "p": [
+      "Le lien, la hauteur d'yeux et l'écoute font que l'enfant se sent en sécurité et entendu.",
+      "Routines, calendriers et préavis créent des journées prévisibles et plus calmes.",
+      "Compliments sur l'effort, mots gentils et réparation après les erreurs renforcent la confiance."
+     ],
+     "t": "Bilan : tes bases de parentalité",
+     "g": "Reviens sur le lien, les routines et la communication du premier mois.",
+     "q": "Quelle idée de ce mois t'a paru la plus naturelle pour ta famille ?",
+     "c": "Choisis tes deux idées préférées et prévois de continuer à les utiliser la semaine prochaine."
+    },
+    "it": {
+     "p": [
+      "Legame, altezza degli occhi e ascolto fanno sentire i bambini al sicuro e ascoltati.",
+      "Routine, calendari e avvisi creano giornate prevedibili e più calme.",
+      "Elogi all'impegno, parole gentili e riparazione dopo gli errori fanno crescere la fiducia."
+     ],
+     "t": "Ripasso: le basi della tua genitorialità",
+     "g": "Guarda indietro a legame, routine e comunicazione del primo mese.",
+     "q": "Quale idea di questo mese è stata più naturale per la tua famiglia?",
+     "c": "Scegli le tue due idee preferite e pianifica di continuare a usarle la prossima settimana."
+    },
+    "pt": {
+     "p": [
+      "Ligação, altura dos olhos e escuta fazem as crianças sentirem-se seguras e ouvidas.",
+      "Rotinas, calendários e avisos criam dias previsíveis e mais calmos.",
+      "Elogio ao esforço, palavras gentis e reparação depois dos erros aumentam a confiança."
+     ],
+     "t": "Revisão: as tuas bases de parentalidade",
+     "g": "Olha para trás para a ligação, as rotinas e a comunicação do primeiro mês.",
+     "q": "Que ideia deste mês foi mais natural para a tua família?",
+     "c": "Escolhe as tuas duas ideias favoritas e planeia continuar a usá-las na próxima semana."
+    },
+    "pt_BR": {
+     "p": [
+      "Conexão, altura dos olhos e escuta fazem as crianças se sentirem seguras e ouvidas.",
+      "Rotinas, calendários e avisos criam dias previsíveis e mais calmos.",
+      "Elogio ao esforço, palavras gentis e reparação depois dos erros aumentam a confiança."
+     ],
+     "t": "Revisão: suas bases de parentalidade",
+     "g": "Olhe para trás para a conexão, as rotinas e a comunicação do primeiro mês.",
+     "q": "Que ideia deste mês foi mais natural para a sua família?",
+     "c": "Escolha suas duas ideias favoritas e planeje continuar usando na próxima semana."
+    }
+   }
+  }
+ ]
+}

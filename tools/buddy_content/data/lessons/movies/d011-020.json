@@ -1,0 +1,835 @@
+{
+ "topic": "movies",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Light and mood",
+     "g": "See how bright or shadowy lighting sets the tone of a scene.",
+     "p": [
+      "Soft, bright light often feels warm, safe or cheerful.",
+      "Strong shadows and contrast create mystery, drama or tension.",
+      "Light can come from windows, lamps, fires or the sun, and shape a face."
+     ],
+     "q": "Which films do you remember for their lighting?",
+     "c": "Notice where the light comes from in one scene tonight."
+    },
+    "de": {
+     "t": "Licht und Stimmung",
+     "g": "Sieh, wie helles oder schattiges Licht den Ton einer Szene setzt.",
+     "p": [
+      "Weiches, helles Licht wirkt oft warm, sicher oder heiter.",
+      "Starke Schatten und Kontraste erzeugen Geheimnis, Drama oder Spannung.",
+      "Licht kann von Fenstern, Lampen, Feuer oder Sonne kommen und ein Gesicht formen."
+     ],
+     "q": "An welche Filme erinnerst du dich wegen ihres Lichts?",
+     "c": "Achte heute Abend darauf, woher das Licht in einer Szene kommt."
+    },
+    "es": {
+     "t": "La luz y el ambiente",
+     "g": "Mira cómo la luz clara u oscura marca el tono de una escena.",
+     "p": [
+      "La luz suave y brillante suele sentirse cálida, segura o alegre.",
+      "Las sombras fuertes y el contraste crean misterio, drama o tensión.",
+      "La luz puede venir de ventanas, lámparas, fuego o sol, y moldea un rostro."
+     ],
+     "q": "¿De qué películas recuerdas la iluminación?",
+     "c": "Fíjate de dónde viene la luz en una escena esta noche."
+    },
+    "fr": {
+     "t": "La lumière et l'ambiance",
+     "g": "Vois comment une lumière vive ou ombrée donne le ton d'une scène.",
+     "p": [
+      "Une lumière douce et claire paraît souvent chaleureuse, rassurante ou joyeuse.",
+      "Ombres marquées et contrastes créent mystère, drame ou tension.",
+      "La lumière peut venir d'une fenêtre, d'une lampe, d'un feu ou du soleil et sculpte un visage."
+     ],
+     "q": "Quels films te restent en mémoire pour leur lumière ?",
+     "c": "Repère d'où vient la lumière dans une scène ce soir."
+    },
+    "it": {
+     "t": "Luce e atmosfera",
+     "g": "Scopri come una luce chiara o in ombra dà il tono a una scena.",
+     "p": [
+      "Una luce morbida e chiara sembra spesso calda, sicura o allegra.",
+      "Ombre forti e contrasto creano mistero, dramma o tensione.",
+      "La luce può venire da finestre, lampade, fuoco o sole e modella un volto."
+     ],
+     "q": "Di quali film ricordi l'illuminazione?",
+     "c": "Nota da dove arriva la luce in una scena stasera."
+    },
+    "pt": {
+     "t": "A luz e a atmosfera",
+     "g": "Vê como a luz clara ou sombria define o tom de uma cena.",
+     "p": [
+      "A luz suave e brilhante costuma parecer quente, segura ou alegre.",
+      "Sombras fortes e contraste criam mistério, drama ou tensão.",
+      "A luz pode vir de janelas, candeeiros, fogo ou sol e modela um rosto."
+     ],
+     "q": "De que filmes te lembras pela iluminação?",
+     "c": "Repara de onde vem a luz numa cena esta noite."
+    },
+    "pt_BR": {
+     "t": "A luz e o clima",
+     "g": "Veja como a luz clara ou sombria define o tom de uma cena.",
+     "p": [
+      "A luz suave e brilhante costuma parecer quente, segura ou alegre.",
+      "Sombras fortes e contraste criam mistério, drama ou tensão.",
+      "A luz pode vir de janelas, abajures, fogo ou sol e modela um rosto."
+     ],
+     "q": "De que filmes você lembra pela iluminação?",
+     "c": "Perceba de onde vem a luz numa cena hoje à noite."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Colour on screen",
+     "g": "See how colour palettes create atmosphere and guide the eye.",
+     "p": [
+      "Warm colours such as red and orange feel energetic; cool blues feel calm or distant.",
+      "Filmmakers often limit a film to a few chosen colours.",
+      "One bright colour in a muted scene instantly draws attention."
+     ],
+     "q": "What colour do you associate with your favourite film?",
+     "c": "Name the three main colours in one scene tonight."
+    },
+    "de": {
+     "t": "Farbe auf der Leinwand",
+     "g": "Sieh, wie Farbpaletten Atmosphäre schaffen und den Blick lenken.",
+     "p": [
+      "Warme Farben wie Rot und Orange wirken energisch; kühles Blau ruhig oder distanziert.",
+      "Filmemacher beschränken einen Film oft auf wenige gewählte Farben.",
+      "Eine leuchtende Farbe in gedämpfter Umgebung zieht sofort den Blick an."
+     ],
+     "q": "Welche Farbe verbindest du mit deinem Lieblingsfilm?",
+     "c": "Nenne heute Abend die drei Hauptfarben einer Szene."
+    },
+    "es": {
+     "t": "El color en pantalla",
+     "g": "Mira cómo las paletas de color crean atmósfera y guían la vista.",
+     "p": [
+      "Los colores cálidos, como el rojo y el naranja, dan energía; los azules fríos, calma o distancia.",
+      "Los cineastas suelen limitar una película a pocos colores elegidos.",
+      "Un color vivo en una escena apagada atrae la atención al instante."
+     ],
+     "q": "¿Qué color asocias con tu película favorita?",
+     "c": "Nombra los tres colores principales de una escena esta noche."
+    },
+    "fr": {
+     "t": "La couleur à l'écran",
+     "g": "Vois comment les palettes de couleurs créent l'ambiance et guident le regard.",
+     "p": [
+      "Les couleurs chaudes, rouge et orange, sont énergiques ; les bleus froids, calmes ou distants.",
+      "Les cinéastes limitent souvent un film à quelques couleurs choisies.",
+      "Une couleur vive dans une scène sobre attire aussitôt l'œil."
+     ],
+     "q": "Quelle couleur associes-tu à ton film préféré ?",
+     "c": "Nomme les trois couleurs principales d'une scène ce soir."
+    },
+    "it": {
+     "t": "Il colore sullo schermo",
+     "g": "Scopri come le palette di colori creano atmosfera e guidano lo sguardo.",
+     "p": [
+      "I colori caldi, rosso e arancione, danno energia; i blu freddi, calma o distanza.",
+      "I registi spesso limitano un film a pochi colori scelti.",
+      "Un colore vivo in una scena spenta attira subito l'attenzione."
+     ],
+     "q": "Quale colore associ al tuo film preferito?",
+     "c": "Nomina i tre colori principali di una scena stasera."
+    },
+    "pt": {
+     "t": "A cor no ecrã",
+     "g": "Vê como as paletas de cores criam atmosfera e guiam o olhar.",
+     "p": [
+      "As cores quentes, como o vermelho e o laranja, dão energia; os azuis frios, calma ou distância.",
+      "Os cineastas limitam muitas vezes um filme a poucas cores escolhidas.",
+      "Uma cor viva numa cena discreta atrai logo a atenção."
+     ],
+     "q": "Que cor associas ao teu filme preferido?",
+     "c": "Nomeia as três cores principais de uma cena esta noite."
+    },
+    "pt_BR": {
+     "t": "A cor na tela",
+     "g": "Veja como as paletas de cores criam atmosfera e guiam o olhar.",
+     "p": [
+      "As cores quentes, como vermelho e laranja, dão energia; os azuis frios, calma ou distância.",
+      "Cineastas costumam limitar um filme a poucas cores escolhidas.",
+      "Uma cor viva numa cena discreta chama a atenção na hora."
+     ],
+     "q": "Que cor você associa ao seu filme favorito?",
+     "c": "Diga as três cores principais de uma cena hoje à noite."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sound in film",
+     "g": "Hear dialogue, sound effects and music as storytelling tools.",
+     "p": [
+      "Dialogue tells us what characters say; effects make the world feel real.",
+      "Many everyday film sounds, like footsteps, are recorded separately and added later.",
+      "Silence can be a powerful choice too."
+     ],
+     "q": "Which film sound could you recognise with your eyes closed?",
+     "c": "Close your eyes for one scene and list every sound you hear."
+    },
+    "de": {
+     "t": "Ton im Film",
+     "g": "Höre Dialog, Geräusche und Musik als Mittel des Erzählens.",
+     "p": [
+      "Dialoge zeigen, was Figuren sagen; Geräusche machen die Welt glaubhaft.",
+      "Viele Alltagsgeräusche im Film, etwa Schritte, werden separat aufgenommen und später ergänzt.",
+      "Auch Stille kann eine starke Wahl sein."
+     ],
+     "q": "Welches Filmgeräusch würdest du mit geschlossenen Augen erkennen?",
+     "c": "Schließ bei einer Szene die Augen und zähle alle Geräusche auf."
+    },
+    "es": {
+     "t": "El sonido en el cine",
+     "g": "Escucha diálogos, efectos y música como herramientas narrativas.",
+     "p": [
+      "El diálogo cuenta lo que dicen los personajes; los efectos hacen creíble el mundo.",
+      "Muchos sonidos cotidianos, como los pasos, se graban aparte y se añaden después.",
+      "El silencio también puede ser una elección poderosa."
+     ],
+     "q": "¿Qué sonido de película reconocerías con los ojos cerrados?",
+     "c": "Cierra los ojos durante una escena y enumera todos los sonidos."
+    },
+    "fr": {
+     "t": "Le son au cinéma",
+     "g": "Écoute dialogues, bruitages et musique comme outils de narration.",
+     "p": [
+      "Le dialogue dit ce que racontent les personnages ; les effets rendent le monde crédible.",
+      "Beaucoup de sons du quotidien, comme les pas, sont enregistrés à part et ajoutés ensuite.",
+      "Le silence peut aussi être un choix puissant."
+     ],
+     "q": "Quel son de film reconnaîtrais-tu les yeux fermés ?",
+     "c": "Ferme les yeux pendant une scène et liste tous les sons entendus."
+    },
+    "it": {
+     "t": "Il suono nel cinema",
+     "g": "Ascolta dialoghi, effetti e musica come strumenti narrativi.",
+     "p": [
+      "Il dialogo dice ciò che pensano i personaggi; gli effetti rendono credibile il mondo.",
+      "Molti suoni quotidiani, come i passi, si registrano a parte e si aggiungono dopo.",
+      "Anche il silenzio può essere una scelta potente."
+     ],
+     "q": "Quale suono di un film riconosceresti a occhi chiusi?",
+     "c": "Chiudi gli occhi durante una scena ed elenca tutti i suoni."
+    },
+    "pt": {
+     "t": "O som no cinema",
+     "g": "Ouve diálogos, efeitos e música como ferramentas narrativas.",
+     "p": [
+      "O diálogo diz o que as personagens falam; os efeitos tornam o mundo credível.",
+      "Muitos sons do dia a dia, como passos, são gravados à parte e juntados depois.",
+      "O silêncio também pode ser uma escolha poderosa."
+     ],
+     "q": "Que som de um filme reconhecerias de olhos fechados?",
+     "c": "Fecha os olhos durante uma cena e lista todos os sons."
+    },
+    "pt_BR": {
+     "t": "O som no cinema",
+     "g": "Ouça diálogos, efeitos e música como ferramentas de narrativa.",
+     "p": [
+      "O diálogo diz o que os personagens falam; os efeitos tornam o mundo crível.",
+      "Muitos sons do dia a dia, como passos, são gravados à parte e colocados depois.",
+      "O silêncio também pode ser uma escolha poderosa."
+     ],
+     "q": "Que som de filme você reconheceria de olhos fechados?",
+     "c": "Feche os olhos durante uma cena e liste todos os sons."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The magic of a film score",
+     "g": "See how music shapes emotion and memory in movies.",
+     "p": [
+      "A score is original music composed to fit a film's story.",
+      "Recurring themes can link a character or place to a melody.",
+      "Music can lift a scene, calm it, or tell us what a character cannot say."
+     ],
+     "q": "Which film melody can you hum right now?",
+     "c": "Hear one scene with the music in mind: what would change without it?"
+    },
+    "de": {
+     "t": "Die Magie der Filmmusik",
+     "g": "Sieh, wie Musik Gefühl und Erinnerung im Film prägt.",
+     "p": [
+      "Ein Score ist Originalmusik, die für die Geschichte eines Films komponiert wird.",
+      "Wiederkehrende Themen verbinden eine Figur oder einen Ort mit einer Melodie.",
+      "Musik kann eine Szene heben, beruhigen oder sagen, was eine Figur nicht kann."
+     ],
+     "q": "Welche Filmmelodie kannst du gerade summen?",
+     "c": "Hör eine Szene bewusst auf die Musik: Was änderte sich ohne sie?"
+    },
+    "es": {
+     "t": "La magia de la banda sonora",
+     "g": "Mira cómo la música moldea la emoción y el recuerdo en el cine.",
+     "p": [
+      "La banda sonora original se compone para encajar con la historia de la película.",
+      "Los temas recurrentes unen a un personaje o lugar con una melodía.",
+      "La música puede elevar una escena, calmarla o decir lo que un personaje no puede."
+     ],
+     "q": "¿Qué melodía de película puedes tararear ahora mismo?",
+     "c": "Escucha una escena pensando en la música: ¿qué cambiaría sin ella?"
+    },
+    "fr": {
+     "t": "La magie de la musique de film",
+     "g": "Vois comment la musique façonne l'émotion et la mémoire au cinéma.",
+     "p": [
+      "Une partition originale est composée pour servir l'histoire d'un film.",
+      "Des thèmes récurrents associent un personnage ou un lieu à une mélodie.",
+      "La musique peut porter une scène, l'apaiser ou dire ce qu'un personnage ne peut pas dire."
+     ],
+     "q": "Quelle mélodie de film peux-tu fredonner maintenant ?",
+     "c": "Écoute une scène en pensant à la musique : que changerait son absence ?"
+    },
+    "it": {
+     "t": "La magia della colonna sonora",
+     "g": "Scopri come la musica plasma emozione e memoria nel cinema.",
+     "p": [
+      "Una colonna sonora originale è composta per adattarsi alla storia del film.",
+      "Temi ricorrenti legano un personaggio o un luogo a una melodia.",
+      "La musica può sollevare una scena, calmarla o dire ciò che un personaggio non sa dire."
+     ],
+     "q": "Quale melodia di un film riesci a canticchiare adesso?",
+     "c": "Ascolta una scena pensando alla musica: cosa cambierebbe senza?"
+    },
+    "pt": {
+     "t": "A magia da banda sonora",
+     "g": "Vê como a música molda a emoção e a memória no cinema.",
+     "p": [
+      "Uma banda sonora original é composta para servir a história do filme.",
+      "Temas recorrentes ligam uma personagem ou um lugar a uma melodia.",
+      "A música pode elevar uma cena, acalmá-la ou dizer o que uma personagem não consegue."
+     ],
+     "q": "Que melodia de um filme consegues trautear agora?",
+     "c": "Ouve uma cena a pensar na música: o que mudaria sem ela?"
+    },
+    "pt_BR": {
+     "t": "A magia da trilha sonora",
+     "g": "Veja como a música molda a emoção e a memória no cinema.",
+     "p": [
+      "Uma trilha original é composta para servir à história do filme.",
+      "Temas recorrentes ligam um personagem ou um lugar a uma melodia.",
+      "A música pode elevar uma cena, acalmá-la ou dizer o que um personagem não consegue."
+     ],
+     "q": "Que melodia de filme você consegue cantarolar agora?",
+     "c": "Assista a uma cena pensando na música: o que mudaria sem ela?"
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Editing: the invisible art",
+     "g": "Learn how cuts join shots into rhythm and meaning.",
+     "p": [
+      "A cut joins one shot to the next; good editing often goes unnoticed.",
+      "Fast cutting feels energetic; long takes feel calm or immersive.",
+      "Cutting between two places can suggest events happening at the same time."
+     ],
+     "q": "Do you prefer fast-paced or slow-paced films?",
+     "c": "Count the cuts in one action scene and one quiet scene, and compare."
+    },
+    "de": {
+     "t": "Schnitt: die unsichtbare Kunst",
+     "g": "Lerne, wie Schnitte Einstellungen zu Rhythmus und Bedeutung verbinden.",
+     "p": [
+      "Ein Schnitt verbindet eine Einstellung mit der nächsten; guter Schnitt fällt oft nicht auf.",
+      "Schnelle Schnitte wirken energisch, lange Einstellungen ruhig oder fesselnd.",
+      "Der Wechsel zwischen zwei Orten kann Gleichzeitigkeit andeuten."
+     ],
+     "q": "Magst du lieber schnelle oder ruhige Filme?",
+     "c": "Zähl die Schnitte in einer Actionszene und einer ruhigen Szene und vergleiche."
+    },
+    "es": {
+     "t": "El montaje: el arte invisible",
+     "g": "Aprende cómo los cortes unen planos con ritmo y significado.",
+     "p": [
+      "Un corte une un plano con el siguiente; el buen montaje suele pasar inadvertido.",
+      "El montaje rápido da energía; los planos largos dan calma o inmersión.",
+      "Alternar entre dos lugares puede sugerir que ocurren a la vez."
+     ],
+     "q": "¿Prefieres películas de ritmo rápido o pausado?",
+     "c": "Cuenta los cortes de una escena de acción y de una tranquila, y compara."
+    },
+    "fr": {
+     "t": "Le montage : l'art invisible",
+     "g": "Apprends comment les coupes relient les plans en rythme et en sens.",
+     "p": [
+      "Une coupe relie un plan au suivant ; un bon montage passe souvent inaperçu.",
+      "Un montage rapide donne de l'énergie ; les plans longs, du calme ou de l'immersion.",
+      "Alterner entre deux lieux peut suggérer que tout se passe en même temps."
+     ],
+     "q": "Préfères-tu les films au rythme rapide ou lent ?",
+     "c": "Compte les coupes d'une scène d'action et d'une scène calme, puis compare."
+    },
+    "it": {
+     "t": "Il montaggio: l'arte invisibile",
+     "g": "Impara come gli stacchi uniscono le inquadrature in ritmo e significato.",
+     "p": [
+      "Uno stacco unisce un'inquadratura alla successiva; un buon montaggio spesso passa inosservato.",
+      "Un montaggio rapido dà energia; i piani sequenza danno calma o immersione.",
+      "Alternare due luoghi può suggerire eventi simultanei."
+     ],
+     "q": "Preferisci film dal ritmo veloce o lento?",
+     "c": "Conta gli stacchi in una scena d'azione e in una tranquilla, e confronta."
+    },
+    "pt": {
+     "t": "A montagem: a arte invisível",
+     "g": "Aprende como os cortes unem planos em ritmo e significado.",
+     "p": [
+      "Um corte liga um plano ao seguinte; a boa montagem passa muitas vezes despercebida.",
+      "Cortes rápidos dão energia; planos longos dão calma ou imersão.",
+      "Alternar entre dois lugares pode sugerir acontecimentos simultâneos."
+     ],
+     "q": "Preferes filmes de ritmo rápido ou calmo?",
+     "c": "Conta os cortes numa cena de ação e numa cena calma, e compara."
+    },
+    "pt_BR": {
+     "t": "A montagem: a arte invisível",
+     "g": "Aprenda como os cortes unem planos em ritmo e significado.",
+     "p": [
+      "Um corte liga um plano ao seguinte; boa montagem muitas vezes passa despercebida.",
+      "Cortes rápidos dão energia; planos longos dão calma ou imersão.",
+      "Alternar entre dois lugares pode sugerir acontecimentos simultâneos."
+     ],
+     "q": "Você prefere filmes de ritmo rápido ou calmo?",
+     "c": "Conte os cortes numa cena de ação e numa cena calma, e compare."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The scene and the sequence",
+     "g": "See how shots group into scenes and scenes into sequences.",
+     "p": [
+      "A scene happens in one place and time; a sequence links several scenes.",
+      "Transitions such as cuts, fades and dissolves signal changes of time or place.",
+      "Each scene should move the story or reveal a character."
+     ],
+     "q": "Which scene from any film would you rewatch anytime?",
+     "c": "Pick one scene and say in one sentence what it adds to the story."
+    },
+    "de": {
+     "t": "Szene und Sequenz",
+     "g": "Sieh, wie Einstellungen zu Szenen und Szenen zu Sequenzen werden.",
+     "p": [
+      "Eine Szene spielt an einem Ort zu einer Zeit; eine Sequenz verbindet mehrere Szenen.",
+      "Übergänge wie Schnitt, Abblende und Überblendung zeigen Zeit- oder Ortswechsel an.",
+      "Jede Szene sollte die Handlung voranbringen oder eine Figur zeigen."
+     ],
+     "q": "Welche Filmszene würdest du jederzeit wieder ansehen?",
+     "c": "Wähl eine Szene und sag in einem Satz, was sie zur Geschichte beiträgt."
+    },
+    "es": {
+     "t": "La escena y la secuencia",
+     "g": "Mira cómo los planos forman escenas y las escenas, secuencias.",
+     "p": [
+      "Una escena ocurre en un lugar y tiempo; una secuencia une varias escenas.",
+      "Transiciones como el corte, el fundido y el encadenado marcan cambios de tiempo o lugar.",
+      "Cada escena debe hacer avanzar la historia o revelar a un personaje."
+     ],
+     "q": "¿Qué escena de cualquier película verías en cualquier momento?",
+     "c": "Elige una escena y di en una frase qué aporta a la historia."
+    },
+    "fr": {
+     "t": "La scène et la séquence",
+     "g": "Vois comment les plans forment des scènes et les scènes des séquences.",
+     "p": [
+      "Une scène se déroule en un lieu et un moment ; une séquence relie plusieurs scènes.",
+      "Coupes, fondus et enchaînés signalent un changement de temps ou de lieu.",
+      "Chaque scène doit faire avancer l'histoire ou révéler un personnage."
+     ],
+     "q": "Quelle scène de film reverrais-tu à tout moment ?",
+     "c": "Choisis une scène et dis en une phrase ce qu'elle apporte à l'histoire."
+    },
+    "it": {
+     "t": "La scena e la sequenza",
+     "g": "Scopri come le inquadrature formano scene e le scene sequenze.",
+     "p": [
+      "Una scena avviene in un luogo e tempo; una sequenza unisce più scene.",
+      "Stacchi, dissolvenze e incrociate segnalano cambi di tempo o luogo.",
+      "Ogni scena dovrebbe far avanzare la storia o rivelare un personaggio."
+     ],
+     "q": "Quale scena di un film rivedresti in qualsiasi momento?",
+     "c": "Scegli una scena e di' in una frase cosa aggiunge alla storia."
+    },
+    "pt": {
+     "t": "A cena e a sequência",
+     "g": "Vê como os planos formam cenas e as cenas, sequências.",
+     "p": [
+      "Uma cena passa-se num lugar e tempo; uma sequência liga várias cenas.",
+      "Transições como o corte, o fade e o fundido marcam mudanças de tempo ou lugar.",
+      "Cada cena deve fazer avançar a história ou revelar uma personagem."
+     ],
+     "q": "Que cena de qualquer filme reverias a qualquer momento?",
+     "c": "Escolhe uma cena e diz numa frase o que ela traz à história."
+    },
+    "pt_BR": {
+     "t": "A cena e a sequência",
+     "g": "Veja como os planos formam cenas e as cenas, sequências.",
+     "p": [
+      "Uma cena acontece num lugar e tempo; uma sequência liga várias cenas.",
+      "Transições como corte, fade e fusão marcam mudanças de tempo ou lugar.",
+      "Cada cena deve fazer a história avançar ou revelar um personagem."
+     ],
+     "q": "Que cena de qualquer filme você reveria a qualquer hora?",
+     "c": "Escolha uma cena e diga numa frase o que ela traz para a história."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Beginning, middle and end",
+     "g": "Recognise the basic shape of most film stories.",
+     "p": [
+      "Act one introduces people and a world; act two brings challenges.",
+      "Act three resolves the main question the story raised.",
+      "Many stories turn on a moment where a character must choose."
+     ],
+     "q": "Which film has an ending that you found especially satisfying?",
+     "c": "Name the three acts of a film you know, in one line each."
+    },
+    "de": {
+     "t": "Anfang, Mitte und Ende",
+     "g": "Erkenne die Grundform der meisten Filmgeschichten.",
+     "p": [
+      "Der erste Akt stellt Figuren und Welt vor; der zweite bringt Hindernisse.",
+      "Der dritte Akt löst die Hauptfrage, die die Geschichte aufgeworfen hat.",
+      "Viele Geschichten drehen sich um einen Moment, in dem eine Figur wählen muss."
+     ],
+     "q": "Welcher Film hatte ein Ende, das dich besonders zufriedenstellte?",
+     "c": "Benenne die drei Akte eines Films, den du kennst, in je einer Zeile."
+    },
+    "es": {
+     "t": "Principio, nudo y desenlace",
+     "g": "Reconoce la forma básica de la mayoría de las historias de cine.",
+     "p": [
+      "El primer acto presenta personajes y mundo; el segundo trae retos.",
+      "El tercer acto resuelve la pregunta principal que planteó la historia.",
+      "Muchas historias giran en torno a un momento en que el personaje debe elegir."
+     ],
+     "q": "¿Qué película tiene un final que te pareció especialmente satisfactorio?",
+     "c": "Nombra los tres actos de una película que conozcas, en una línea cada uno."
+    },
+    "fr": {
+     "t": "Début, milieu et fin",
+     "g": "Reconnais la forme de base de la plupart des histoires de cinéma.",
+     "p": [
+      "Le premier acte présente personnages et univers ; le deuxième apporte des obstacles.",
+      "Le troisième acte résout la question principale posée par l'histoire.",
+      "Beaucoup d'histoires reposent sur un moment où le personnage doit choisir."
+     ],
+     "q": "Quel film a une fin qui t'a particulièrement satisfait ?",
+     "c": "Nomme les trois actes d'un film que tu connais, en une ligne chacun."
+    },
+    "it": {
+     "t": "Inizio, centro e fine",
+     "g": "Riconosci la forma di base della maggior parte delle storie al cinema.",
+     "p": [
+      "Il primo atto presenta personaggi e mondo; il secondo porta sfide.",
+      "Il terzo atto risolve la domanda principale posta dalla storia.",
+      "Molte storie ruotano attorno a un momento in cui il personaggio deve scegliere."
+     ],
+     "q": "Quale film ha un finale che ti ha soddisfatto in modo particolare?",
+     "c": "Nomina i tre atti di un film che conosci, in una riga ciascuno."
+    },
+    "pt": {
+     "t": "Princípio, meio e fim",
+     "g": "Reconhece a forma base da maioria das histórias de cinema.",
+     "p": [
+      "O primeiro ato apresenta personagens e mundo; o segundo traz desafios.",
+      "O terceiro ato resolve a pergunta principal levantada pela história.",
+      "Muitas histórias giram em torno de um momento em que a personagem tem de escolher."
+     ],
+     "q": "Que filme tem um final que achaste especialmente satisfatório?",
+     "c": "Nomeia os três atos de um filme que conheças, numa linha cada."
+    },
+    "pt_BR": {
+     "t": "Começo, meio e fim",
+     "g": "Reconheça a forma básica da maioria das histórias de cinema.",
+     "p": [
+      "O primeiro ato apresenta personagens e mundo; o segundo traz desafios.",
+      "O terceiro ato resolve a pergunta principal levantada pela história.",
+      "Muitas histórias giram em torno de um momento em que o personagem precisa escolher."
+     ],
+     "q": "Que filme tem um final que você achou especialmente satisfatório?",
+     "c": "Diga os três atos de um filme que você conhece, numa linha cada."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Characters we care about",
+     "g": "Discover what makes a film character memorable and relatable.",
+     "p": [
+      "Memorable characters want something, and something stands in their way.",
+      "Small flaws and quirks make characters feel real.",
+      "We learn who people are by what they do, not just what they say."
+     ],
+     "q": "Which film character feels like a friend to you?",
+     "c": "Describe a character's main wish in five words."
+    },
+    "de": {
+     "t": "Figuren, die uns berühren",
+     "g": "Entdecke, was eine Filmfigur einprägsam und nahbar macht.",
+     "p": [
+      "Einprägsame Figuren wollen etwas, und etwas steht ihnen im Weg.",
+      "Kleine Schwächen und Eigenheiten machen Figuren lebendig.",
+      "Wer jemand ist, zeigt sich im Tun, nicht nur im Sagen."
+     ],
+     "q": "Welche Filmfigur fühlt sich für dich wie ein Freund an?",
+     "c": "Beschreib den Hauptwunsch einer Figur in fünf Wörtern."
+    },
+    "es": {
+     "t": "Personajes que nos importan",
+     "g": "Descubre qué hace memorable y cercano a un personaje de cine.",
+     "p": [
+      "Los personajes memorables desean algo y algo se interpone en su camino.",
+      "Pequeños defectos y manías hacen que parezcan reales.",
+      "Conocemos a las personas por lo que hacen, no solo por lo que dicen."
+     ],
+     "q": "¿Qué personaje de película te parece un amigo?",
+     "c": "Describe el deseo principal de un personaje en cinco palabras."
+    },
+    "fr": {
+     "t": "Des personnages qui nous touchent",
+     "g": "Découvre ce qui rend un personnage de film mémorable et attachant.",
+     "p": [
+      "Les personnages mémorables veulent quelque chose, et quelque chose les en empêche.",
+      "De petits défauts et manies les rendent vrais.",
+      "On connaît les gens à ce qu'ils font, pas seulement à ce qu'ils disent."
+     ],
+     "q": "Quel personnage de film est comme un ami pour toi ?",
+     "c": "Décris le désir principal d'un personnage en cinq mots."
+    },
+    "it": {
+     "t": "Personaggi a cui teniamo",
+     "g": "Scopri cosa rende un personaggio memorabile e vicino a noi.",
+     "p": [
+      "I personaggi memorabili vogliono qualcosa e qualcosa li ostacola.",
+      "Piccoli difetti e manie li rendono reali.",
+      "Capiamo chi sono dalle azioni, non solo dalle parole."
+     ],
+     "q": "Quale personaggio di un film senti come un amico?",
+     "c": "Descrivi il desiderio principale di un personaggio in cinque parole."
+    },
+    "pt": {
+     "t": "Personagens de quem gostamos",
+     "g": "Descobre o que torna uma personagem de cinema memorável e próxima.",
+     "p": [
+      "As personagens memoráveis querem algo e algo se interpõe no caminho.",
+      "Pequenos defeitos e manias tornam-nas reais.",
+      "Conhecemos as pessoas pelo que fazem, não só pelo que dizem."
+     ],
+     "q": "Que personagem de um filme sentes como um amigo?",
+     "c": "Descreve o desejo principal de uma personagem em cinco palavras."
+    },
+    "pt_BR": {
+     "t": "Personagens de quem a gente gosta",
+     "g": "Descubra o que torna um personagem de cinema memorável e próximo.",
+     "p": [
+      "Personagens memoráveis querem algo e algo atrapalha o caminho.",
+      "Pequenos defeitos e manias deixam eles reais.",
+      "Conhecemos as pessoas pelo que fazem, não só pelo que dizem."
+     ],
+     "q": "Que personagem de filme você sente como um amigo?",
+     "c": "Descreva o desejo principal de um personagem em cinco palavras."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Actors and performance",
+     "g": "See how acting for the screen differs from the stage.",
+     "p": [
+      "On stage, actors project to reach the back row; on screen, a close camera catches tiny details.",
+      "Screen acting often relies on subtle looks and small gestures.",
+      "Films are shot out of order, so actors must keep emotions consistent."
+     ],
+     "q": "Which performance has impressed you most, and why?",
+     "c": "Watch one actor's eyes in a close-up and note what they convey."
+    },
+    "de": {
+     "t": "Schauspieler und Spiel",
+     "g": "Sieh, wie sich Schauspiel für die Leinwand vom Theater unterscheidet.",
+     "p": [
+      "Auf der Bühne spielt man bis zur letzten Reihe; im Film fängt die nahe Kamera kleinste Details ein.",
+      "Filmspiel lebt oft von feinen Blicken und kleinen Gesten.",
+      "Filme werden nicht der Reihe nach gedreht, daher müssen Gefühle stimmig bleiben."
+     ],
+     "q": "Welche schauspielerische Leistung hat dich am meisten beeindruckt, und warum?",
+     "c": "Beobachte in einer Nahaufnahme die Augen einer Person und notiere, was sie ausdrücken."
+    },
+    "es": {
+     "t": "Actores e interpretación",
+     "g": "Mira cómo actuar para la pantalla difiere del teatro.",
+     "p": [
+      "En el teatro se proyecta la voz hasta la última fila; en pantalla, la cámara cercana capta detalles mínimos.",
+      "La actuación en cine suele apoyarse en miradas sutiles y gestos pequeños.",
+      "Las películas se ruedan sin orden, así que hay que mantener la coherencia emocional."
+     ],
+     "q": "¿Qué interpretación te ha impresionado más y por qué?",
+     "c": "Observa los ojos de un actor en un primer plano y anota qué transmiten."
+    },
+    "fr": {
+     "t": "Acteurs et jeu d'acteur",
+     "g": "Vois en quoi jouer pour l'écran diffère du théâtre.",
+     "p": [
+      "Au théâtre, on projette sa voix jusqu'au dernier rang ; à l'écran, la caméra proche capte les plus petits détails.",
+      "Le jeu au cinéma repose souvent sur des regards subtils et de petits gestes.",
+      "Les films sont tournés dans le désordre : il faut garder des émotions cohérentes."
+     ],
+     "q": "Quelle interprétation t'a le plus impressionné, et pourquoi ?",
+     "c": "Observe les yeux d'un acteur en gros plan et note ce qu'ils expriment."
+    },
+    "it": {
+     "t": "Attori e interpretazione",
+     "g": "Scopri come recitare per lo schermo differisce dal teatro.",
+     "p": [
+      "A teatro si proietta la voce fino all'ultima fila; sullo schermo la camera vicina coglie dettagli minimi.",
+      "La recitazione cinematografica si affida spesso a sguardi sottili e piccoli gesti.",
+      "I film si girano fuori sequenza, quindi le emozioni devono restare coerenti."
+     ],
+     "q": "Quale interpretazione ti ha colpito di più, e perché?",
+     "c": "Osserva gli occhi di un attore in un primo piano e annota cosa esprimono."
+    },
+    "pt": {
+     "t": "Atores e interpretação",
+     "g": "Vê como representar para o ecrã difere do teatro.",
+     "p": [
+      "No teatro projeta-se a voz até à última fila; no ecrã, a câmara próxima capta detalhes mínimos.",
+      "A representação no cinema apoia-se muitas vezes em olhares subtis e pequenos gestos.",
+      "Os filmes rodam-se fora de ordem, por isso é preciso manter a coerência emocional."
+     ],
+     "q": "Que interpretação mais te impressionou, e porquê?",
+     "c": "Observa os olhos de um ator num grande plano e anota o que transmitem."
+    },
+    "pt_BR": {
+     "t": "Atores e atuação",
+     "g": "Veja como atuar para a tela difere do teatro.",
+     "p": [
+      "No teatro projeta-se a voz até a última fila; na tela, a câmera próxima capta detalhes mínimos.",
+      "A atuação no cinema costuma se apoiar em olhares sutis e pequenos gestos.",
+      "Os filmes são rodados fora de ordem, então é preciso manter a coerência emocional."
+     ],
+     "q": "Que atuação mais te impressionou, e por quê?",
+     "c": "Observe os olhos de um ator num close-up e anote o que eles transmitem."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Who does what on a film set",
+     "g": "Take a first look at the director, crew and cast.",
+     "p": [
+      "The director guides the creative vision and works with actors and crew.",
+      "The cinematographer designs the images; the editor shapes the final story.",
+      "Dozens of other roles, from sound to costumes, make a film possible."
+     ],
+     "q": "Which film job would you most like to try?",
+     "c": "Watch the end credits of a film and pick three jobs you did not know."
+    },
+    "de": {
+     "t": "Wer macht was am Filmset",
+     "g": "Wirf einen ersten Blick auf Regie, Crew und Besetzung.",
+     "p": [
+      "Die Regie leitet die kreative Vision und arbeitet mit Darstellern und Team.",
+      "Die Kamerafrau oder der Kameramann gestaltet die Bilder; der Schnitt formt die fertige Geschichte.",
+      "Dutzende weitere Berufe, von Ton bis Kostüm, machen einen Film möglich."
+     ],
+     "q": "Welchen Filmberuf würdest du am liebsten ausprobieren?",
+     "c": "Lies den Abspann eines Films und such drei Berufe, die du nicht kanntest."
+    },
+    "es": {
+     "t": "Quién hace qué en un rodaje",
+     "g": "Echa un primer vistazo a la dirección, el equipo y el reparto.",
+     "p": [
+      "La dirección guía la visión creativa y trabaja con actores y equipo.",
+      "La dirección de fotografía diseña las imágenes; el montador da forma a la historia final.",
+      "Decenas de otros oficios, del sonido al vestuario, hacen posible una película."
+     ],
+     "q": "¿Qué oficio del cine te gustaría probar más?",
+     "c": "Mira los créditos finales de una película y elige tres oficios que no conocías."
+    },
+    "fr": {
+     "t": "Qui fait quoi sur un tournage",
+     "g": "Découvre le rôle de la réalisation, de l'équipe et de la distribution.",
+     "p": [
+      "Le réalisateur guide la vision créative et travaille avec acteurs et équipe.",
+      "Le chef opérateur conçoit les images ; le monteur façonne l'histoire finale.",
+      "Des dizaines d'autres métiers, du son aux costumes, rendent un film possible."
+     ],
+     "q": "Quel métier du cinéma aimerais-tu le plus essayer ?",
+     "c": "Regarde le générique de fin d'un film et choisis trois métiers que tu ignorais."
+    },
+    "it": {
+     "t": "Chi fa cosa su un set",
+     "g": "Dai un primo sguardo a regia, troupe e cast.",
+     "p": [
+      "Il regista guida la visione creativa e lavora con attori e troupe.",
+      "Il direttore della fotografia progetta le immagini; il montatore dà forma alla storia finale.",
+      "Decine di altri mestieri, dal suono ai costumi, rendono possibile un film."
+     ],
+     "q": "Quale mestiere del cinema vorresti provare di più?",
+     "c": "Guarda i titoli di coda di un film e scegli tre mestieri che non conoscevi."
+    },
+    "pt": {
+     "t": "Quem faz o quê num set de filmagem",
+     "g": "Dá uma primeira vista de olhos à realização, equipa e elenco.",
+     "p": [
+      "O realizador guia a visão criativa e trabalha com atores e equipa.",
+      "O diretor de fotografia desenha as imagens; o montador dá forma à história final.",
+      "Dezenas de outras funções, do som ao guarda-roupa, tornam um filme possível."
+     ],
+     "q": "Que profissão do cinema gostarias mais de experimentar?",
+     "c": "Vê os créditos finais de um filme e escolhe três funções que desconhecias."
+    },
+    "pt_BR": {
+     "t": "Quem faz o quê num set de filmagem",
+     "g": "Dê uma primeira olhada na direção, equipe e elenco.",
+     "p": [
+      "O diretor guia a visão criativa e trabalha com atores e equipe.",
+      "O diretor de fotografia desenha as imagens; o montador dá forma à história final.",
+      "Dezenas de outras funções, do som ao figurino, tornam um filme possível."
+     ],
+     "q": "Que profissão do cinema você mais gostaria de experimentar?",
+     "c": "Veja os créditos finais de um filme e escolha três funções que você não conhecia."
+    }
+   }
+  }
+ ]
+}

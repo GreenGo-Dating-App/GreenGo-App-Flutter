@@ -1,0 +1,835 @@
+{
+ "topic": "music_genres",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Blue notes and the twelve-bar form",
+     "g": "Hear the bent notes and the three-chord pattern behind countless songs.",
+     "p": [
+      "Blue notes are slightly bent notes, often the third, fifth or seventh, that give blues its ache.",
+      "The twelve-bar blues repeats a cycle of twelve measures using three chords.",
+      "Rock and roll, jazz and soul all inherited this pattern and the expressive bending."
+     ],
+     "q": "Can you hear a bent note in a guitar solo, and how does it make you feel?",
+     "c": "Listen to a blues and count twelve bars, then notice when the cycle starts again."
+    },
+    "de": {
+     "t": "Blue Notes und das Zwölftaktschema",
+     "g": "Die gebogenen Töne und das Dreiakkord-Muster hinter unzähligen Liedern hören.",
+     "p": [
+      "Blue Notes sind leicht gebogene Töne, oft Terz, Quinte oder Septime, die dem Blues seine Wehmut geben.",
+      "Der Zwölftakt-Blues wiederholt einen Zyklus aus zwölf Takten mit drei Akkorden.",
+      "Rock and Roll, Jazz und Soul erbten dieses Muster und das ausdrucksvolle Biegen."
+     ],
+     "q": "Hörst du in einem Gitarrensolo einen gebogenen Ton, und was löst er in dir aus?",
+     "c": "Hör einen Blues, zähl zwölf Takte und achte darauf, wann der Zyklus neu beginnt."
+    },
+    "es": {
+     "t": "Notas azules y el esquema de doce compases",
+     "g": "Oír las notas dobladas y el patrón de tres acordes de incontables canciones.",
+     "p": [
+      "Las notas azules son notas ligeramente dobladas, a menudo la tercera, quinta o séptima, que dan al blues su pesar.",
+      "El blues de doce compases repite un ciclo de doce compases con tres acordes.",
+      "El rock and roll, el jazz y el soul heredaron este patrón y el doblado expresivo."
+     ],
+     "q": "¿Distingues una nota doblada en un solo de guitarra y qué te hace sentir?",
+     "c": "Escucha un blues, cuenta doce compases y fíjate cuándo vuelve a empezar el ciclo."
+    },
+    "fr": {
+     "t": "Blue notes et grille de douze mesures",
+     "g": "Entendre les notes inclinées et la grille à trois accords derrière tant de chansons.",
+     "p": [
+      "Les blue notes sont des notes légèrement inclinées, souvent la tierce, la quinte ou la septième, qui donnent au blues sa mélancolie.",
+      "Le blues de douze mesures répète un cycle de douze mesures sur trois accords.",
+      "Le rock and roll, le jazz et la soul ont hérité de cette grille et de ces inflexions expressives."
+     ],
+     "q": "Entendez-vous une note inclinée dans un solo de guitare, et que ressentez-vous ?",
+     "c": "Écoutez un blues, comptez douze mesures et repérez quand le cycle recommence."
+    },
+    "it": {
+     "t": "Blue note e schema di dodici battute",
+     "g": "Sentire le note piegate e lo schema a tre accordi dietro innumerevoli brani.",
+     "p": [
+      "Le blue note sono note leggermente piegate, spesso terza, quinta o settima, che danno al blues la sua malinconia.",
+      "Il blues di dodici battute ripete un ciclo di dodici misure con tre accordi.",
+      "Rock and roll, jazz e soul hanno ereditato questo schema e le inflessioni espressive."
+     ],
+     "q": "Senti una nota piegata in un assolo di chitarra e cosa ti trasmette?",
+     "c": "Ascolta un blues, conta dodici battute e nota quando il ciclo ricomincia."
+    },
+    "pt": {
+     "t": "Blue notes e o esquema de doze compassos",
+     "g": "Ouvir as notas dobradas e o padrão de três acordes por trás de inúmeras canções.",
+     "p": [
+      "As blue notes são notas ligeiramente dobradas, muitas vezes a terceira, quinta ou sétima, que dão ao blues a sua mágoa.",
+      "O blues de doze compassos repete um ciclo de doze compassos com três acordes.",
+      "O rock and roll, o jazz e o soul herdaram este padrão e o dobrar expressivo."
+     ],
+     "q": "Consegues ouvir uma nota dobrada num solo de guitarra e o que te faz sentir?",
+     "c": "Ouve um blues, conta doze compassos e repara quando o ciclo recomeça."
+    },
+    "pt_BR": {
+     "t": "Blue notes e o esquema de doze compassos",
+     "g": "Ouvir as notas dobradas e o padrão de três acordes por trás de inúmeras músicas.",
+     "p": [
+      "As blue notes são notas levemente dobradas, muitas vezes a terça, quinta ou sétima, que dão ao blues seu lamento.",
+      "O blues de doze compassos repete um ciclo de doze compassos com três acordes.",
+      "O rock and roll, o jazz e o soul herdaram esse padrão e o dobrar expressivo."
+     ],
+     "q": "Você consegue ouvir uma nota dobrada num solo de guitarra e o que ela faz sentir?",
+     "c": "Escute um blues, conte doze compassos e perceba quando o ciclo recomeça."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Delta blues and Chicago blues",
+     "g": "Compare acoustic Delta blues with the electric Chicago sound.",
+     "p": [
+      "Delta blues, from Mississippi, is often a solo voice with acoustic guitar, as in Robert Johnson.",
+      "Many players moved north in the Great Migration and plugged in, creating Chicago blues.",
+      "Muddy Waters led the electric sound with a band: guitars, harmonica, bass and drums."
+     ],
+     "q": "Do you prefer a lone voice and guitar, or a full electric band, and why?",
+     "c": "Play a Delta blues and a Chicago blues back to back; note what the band adds."
+    },
+    "de": {
+     "t": "Delta-Blues und Chicago-Blues",
+     "g": "Den akustischen Delta-Blues mit dem elektrischen Chicago-Sound vergleichen.",
+     "p": [
+      "Der Delta-Blues aus Mississippi ist oft eine Solostimme mit Akustikgitarre, etwa bei Robert Johnson.",
+      "Viele Musiker zogen in der Großen Wanderung nach Norden und griffen zum Verstärker: Chicago-Blues entstand.",
+      "Muddy Waters prägte den elektrischen Sound mit Band: Gitarren, Mundharmonika, Bass, Schlagzeug."
+     ],
+     "q": "Magst du lieber Stimme und Gitarre allein oder eine volle E-Band, und warum?",
+     "c": "Hör einen Delta- und einen Chicago-Blues direkt nacheinander und achte darauf, was die Band hinzufügt."
+    },
+    "es": {
+     "t": "Blues del Delta y blues de Chicago",
+     "g": "Comparar el blues acústico del Delta con el sonido eléctrico de Chicago.",
+     "p": [
+      "El blues del Delta, de Misisipi, suele ser una voz sola con guitarra acústica, como en Robert Johnson.",
+      "Muchos músicos emigraron al norte en la Gran Migración y se electrificaron: nació el blues de Chicago.",
+      "Muddy Waters lideró el sonido eléctrico con banda: guitarras, armónica, bajo y batería."
+     ],
+     "q": "¿Prefieres una voz con guitarra a solas o una banda eléctrica completa, y por qué?",
+     "c": "Escucha seguidos un blues del Delta y uno de Chicago y fíjate en lo que añade la banda."
+    },
+    "fr": {
+     "t": "Blues du Delta et blues de Chicago",
+     "g": "Comparer le blues acoustique du Delta et le son électrique de Chicago.",
+     "p": [
+      "Le blues du Delta, du Mississippi, est souvent une voix seule avec guitare acoustique, comme chez Robert Johnson.",
+      "Beaucoup de musiciens sont montés vers le nord lors de la Grande Migration et se sont électrifiés : le blues de Chicago.",
+      "Muddy Waters a mené le son électrique avec un groupe : guitares, harmonica, basse et batterie."
+     ],
+     "q": "Préférez-vous une voix et une guitare seules ou un groupe électrique complet, et pourquoi ?",
+     "c": "Écoutez un blues du Delta puis un blues de Chicago et notez ce qu'apporte le groupe."
+    },
+    "it": {
+     "t": "Delta blues e Chicago blues",
+     "g": "Confrontare il Delta blues acustico con il suono elettrico di Chicago.",
+     "p": [
+      "Il Delta blues, del Mississippi, è spesso una voce sola con chitarra acustica, come in Robert Johnson.",
+      "Molti musicisti salirono al nord nella Grande Migrazione e passarono all'elettrico: nacque il Chicago blues.",
+      "Muddy Waters guidò il suono elettrico con una band: chitarre, armonica, basso e batteria."
+     ],
+     "q": "Preferisci voce e chitarra da sole o una band elettrica al completo, e perché?",
+     "c": "Ascolta di seguito un Delta blues e un Chicago blues e nota cosa aggiunge la band."
+    },
+    "pt": {
+     "t": "Delta blues e Chicago blues",
+     "g": "Comparar o blues acústico do Delta com o som elétrico de Chicago.",
+     "p": [
+      "O Delta blues, do Mississípi, é muitas vezes uma voz sozinha com guitarra acústica, como em Robert Johnson.",
+      "Muitos músicos foram para norte na Grande Migração e eletrificaram-se: nasceu o blues de Chicago.",
+      "Muddy Waters liderou o som elétrico com banda: guitarras, gaita, baixo e bateria."
+     ],
+     "q": "Preferes voz e guitarra a sós ou uma banda elétrica completa, e porquê?",
+     "c": "Ouve seguidos um blues do Delta e um de Chicago e repara no que a banda acrescenta."
+    },
+    "pt_BR": {
+     "t": "Delta blues e Chicago blues",
+     "g": "Comparar o blues acústico do Delta com o som elétrico de Chicago.",
+     "p": [
+      "O Delta blues, do Mississippi, costuma ser uma voz sozinha com violão, como em Robert Johnson.",
+      "Muitos músicos foram para o norte na Grande Migração e eletrificaram o som: nasceu o blues de Chicago.",
+      "Muddy Waters liderou o som elétrico com banda: guitarras, gaita, baixo e bateria."
+     ],
+     "q": "Você prefere voz e violão sozinhos ou uma banda elétrica completa, e por quê?",
+     "c": "Ouça em sequência um blues do Delta e um de Chicago e note o que a banda acrescenta."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gospel choirs and spirituals",
+     "g": "Hear how choir singing and call and response shaped later pop vocals.",
+     "p": [
+      "Spirituals grew from African American communities and carry hope, faith and shared strength.",
+      "Gospel choirs use powerful harmony, handclaps and a lead singer answered by the group.",
+      "Soul, R&B and pop singers learned their runs, passion and phrasing in church choirs."
+     ],
+     "q": "Have you ever sung in a group, and how did it feel to blend your voice?",
+     "c": "Listen to a gospel choir and follow how the lead voice and the choir trade lines."
+    },
+    "de": {
+     "t": "Gospelchöre und Spirituals",
+     "g": "Hören, wie Chorgesang und Frage und Antwort spätere Popstimmen prägten.",
+     "p": [
+      "Spirituals entstanden in afroamerikanischen Gemeinschaften und tragen Hoffnung, Glauben und Gemeinschaftskraft.",
+      "Gospelchöre nutzen kraftvolle Harmonien, Händeklatschen und einen Vorsänger, dem der Chor antwortet.",
+      "Soul-, R&B- und Popsänger lernten Läufe, Leidenschaft und Phrasierung in Kirchenchören."
+     ],
+     "q": "Hast du je in einer Gruppe gesungen, und wie war es, die Stimme einzufügen?",
+     "c": "Hör einen Gospelchor und folge, wie Vorsänger und Chor sich die Zeilen zuspielen."
+    },
+    "es": {
+     "t": "Coros de góspel y espirituales",
+     "g": "Oír cómo el canto coral y la llamada y respuesta moldearon la voz del pop.",
+     "p": [
+      "Los espirituales nacieron en comunidades afroamericanas y transmiten esperanza, fe y fuerza compartida.",
+      "Los coros de góspel usan armonías potentes, palmas y un solista al que responde el grupo.",
+      "Los cantantes de soul, R&B y pop aprendieron adornos, pasión y fraseo en coros de iglesia."
+     ],
+     "q": "¿Has cantado alguna vez en grupo y cómo fue fundir tu voz con las demás?",
+     "c": "Escucha un coro de góspel y sigue cómo se turnan la voz solista y el coro."
+    },
+    "fr": {
+     "t": "Chœurs gospel et spirituals",
+     "g": "Entendre comment le chant choral et l'appel-réponse ont façonné les voix de la pop.",
+     "p": [
+      "Les spirituals sont nés dans les communautés afro-américaines et portent espoir, foi et force partagée.",
+      "Les chœurs gospel mêlent harmonies puissantes, battements de mains et un soliste auquel le groupe répond.",
+      "Les chanteurs de soul, de R&B et de pop ont appris vocalises, passion et phrasé dans les chœurs d'église."
+     ],
+     "q": "Avez-vous déjà chanté en groupe, et qu'avez-vous ressenti en fondant votre voix ?",
+     "c": "Écoutez un chœur gospel et suivez l'échange entre la voix soliste et le chœur."
+    },
+    "it": {
+     "t": "Cori gospel e spiritual",
+     "g": "Sentire come il canto corale e il botta e risposta hanno plasmato le voci del pop.",
+     "p": [
+      "Gli spiritual nacquero nelle comunità afroamericane e portano speranza, fede e forza condivisa.",
+      "I cori gospel usano armonie potenti, battiti di mani e un solista a cui il gruppo risponde.",
+      "I cantanti soul, R&B e pop hanno imparato virtuosismi, passione e fraseggio nei cori di chiesa."
+     ],
+     "q": "Hai mai cantato in gruppo e com'è stato fondere la tua voce con le altre?",
+     "c": "Ascolta un coro gospel e segui lo scambio tra voce solista e coro."
+    },
+    "pt": {
+     "t": "Coros gospel e espirituais",
+     "g": "Ouvir como o canto coral e a chamada e resposta moldaram as vozes da pop.",
+     "p": [
+      "Os espirituais nasceram em comunidades afro-americanas e trazem esperança, fé e força partilhada.",
+      "Os coros gospel usam harmonias potentes, palmas e um solista a quem o grupo responde.",
+      "Cantores de soul, R&B e pop aprenderam ornamentos, paixão e fraseado em coros de igreja."
+     ],
+     "q": "Já cantaste em grupo e como foi fundir a tua voz com as outras?",
+     "c": "Ouve um coro gospel e segue como a voz solista e o coro se alternam."
+    },
+    "pt_BR": {
+     "t": "Coros gospel e espirituais",
+     "g": "Ouvir como o canto coral e a chamada e resposta moldaram as vozes do pop.",
+     "p": [
+      "Os espirituais nasceram em comunidades afro-americanas e trazem esperança, fé e força compartilhada.",
+      "Os coros gospel usam harmonias potentes, palmas e um solista a quem o grupo responde.",
+      "Cantores de soul, R&B e pop aprenderam ornamentos, paixão e fraseado em coros de igreja."
+     ],
+     "q": "Você já cantou em grupo e como foi fundir sua voz com as outras?",
+     "c": "Ouça um coro gospel e acompanhe como a voz solista e o coro se alternam."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Early jazz in New Orleans",
+     "g": "Meet early jazz and its joyful collective improvisation.",
+     "p": [
+      "Jazz grew in New Orleans around 1900 from blues, ragtime, brass bands and Creole music.",
+      "Trumpet, clarinet and trombone improvise together, weaving lines around each other.",
+      "Louis Armstrong made the solo famous with his bright trumpet and warm, playful voice."
+     ],
+     "q": "Does improvising, making music up on the spot, sound exciting or scary to you?",
+     "c": "Listen to an early jazz track and try to pick out trumpet, clarinet and trombone."
+    },
+    "de": {
+     "t": "Früher Jazz in New Orleans",
+     "g": "Den frühen Jazz und seine fröhliche gemeinsame Improvisation kennenlernen.",
+     "p": [
+      "Jazz entstand um 1900 in New Orleans aus Blues, Ragtime, Brassbands und kreolischer Musik.",
+      "Trompete, Klarinette und Posaune improvisieren zusammen und verweben ihre Linien.",
+      "Louis Armstrong machte das Solo mit strahlender Trompete und warmer, verspielter Stimme berühmt."
+     ],
+     "q": "Klingt Improvisieren, also Musik aus dem Stegreif, für dich spannend oder beängstigend?",
+     "c": "Hör ein frühes Jazzstück und versuche Trompete, Klarinette und Posaune herauszuhören."
+    },
+    "es": {
+     "t": "Jazz primitivo en Nueva Orleans",
+     "g": "Conocer el jazz temprano y su alegre improvisación colectiva.",
+     "p": [
+      "El jazz nació en Nueva Orleans hacia 1900 del blues, el ragtime, las bandas de metales y la música criolla.",
+      "Trompeta, clarinete y trombón improvisan juntos, entrelazando sus líneas.",
+      "Louis Armstrong popularizó el solo con su trompeta brillante y su voz cálida y juguetona."
+     ],
+     "q": "¿Improvisar, inventar música al momento, te parece emocionante o aterrador?",
+     "c": "Escucha un tema de jazz temprano e intenta distinguir trompeta, clarinete y trombón."
+    },
+    "fr": {
+     "t": "Les débuts du jazz à La Nouvelle-Orléans",
+     "g": "Découvrir le jazz des origines et son improvisation collective joyeuse.",
+     "p": [
+      "Le jazz est né à La Nouvelle-Orléans vers 1900 du blues, du ragtime, des fanfares et de la musique créole.",
+      "Trompette, clarinette et trombone improvisent ensemble en entrelaçant leurs lignes.",
+      "Louis Armstrong a rendu le solo célèbre avec sa trompette éclatante et sa voix chaude et espiègle."
+     ],
+     "q": "Improviser, inventer la musique sur le moment, vous semble-t-il excitant ou effrayant ?",
+     "c": "Écoutez un morceau de jazz ancien et essayez de distinguer trompette, clarinette et trombone."
+    },
+    "it": {
+     "t": "Il primo jazz a New Orleans",
+     "g": "Conoscere il jazz delle origini e la sua gioiosa improvvisazione collettiva.",
+     "p": [
+      "Il jazz nacque a New Orleans intorno al 1900 da blues, ragtime, bande di ottoni e musica creola.",
+      "Tromba, clarinetto e trombone improvvisano insieme intrecciando le loro linee.",
+      "Louis Armstrong rese famoso l'assolo con la sua tromba brillante e la voce calda e giocosa."
+     ],
+     "q": "Improvvisare, inventare musica sul momento, ti sembra emozionante o spaventoso?",
+     "c": "Ascolta un brano di jazz antico e prova a distinguere tromba, clarinetto e trombone."
+    },
+    "pt": {
+     "t": "O jazz primitivo de Nova Orleães",
+     "g": "Conhecer o jazz dos primórdios e a sua alegre improvisação coletiva.",
+     "p": [
+      "O jazz nasceu em Nova Orleães por volta de 1900 do blues, do ragtime, das bandas de metais e da música crioula.",
+      "Trompete, clarinete e trombone improvisam juntos, entrelaçando as suas linhas.",
+      "Louis Armstrong popularizou o solo com o seu trompete brilhante e a voz quente e brincalhona."
+     ],
+     "q": "Improvisar, inventar música na hora, parece-te empolgante ou assustador?",
+     "c": "Ouve um tema de jazz antigo e tenta distinguir trompete, clarinete e trombone."
+    },
+    "pt_BR": {
+     "t": "O jazz primitivo de Nova Orleans",
+     "g": "Conhecer o jazz dos primórdios e sua alegre improvisação coletiva.",
+     "p": [
+      "O jazz nasceu em Nova Orleans por volta de 1900 do blues, do ragtime, das bandas de metais e da música crioula.",
+      "Trompete, clarinete e trombone improvisam juntos, entrelaçando suas linhas.",
+      "Louis Armstrong popularizou o solo com seu trompete brilhante e a voz quente e brincalhona."
+     ],
+     "q": "Improvisar, inventar música na hora, parece empolgante ou assustador para você?",
+     "c": "Escute uma faixa de jazz antigo e tente distinguir trompete, clarinete e trombone."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Swing and the big band era",
+     "g": "Feel why swing and big bands made jazz the dance music of the 1930s.",
+     "p": [
+      "Big bands had sections of saxophones, trumpets and trombones plus a rhythm section.",
+      "Swing means a lilting, bouncy feel where beats are played in a long-short pattern.",
+      "Duke Ellington composed rich, original music while Count Basie perfected a driving, relaxed groove."
+     ],
+     "q": "Would you have enjoyed a swing dance hall, and what would you wear?",
+     "c": "Listen to a big band and count how many horn sections answer each other."
+    },
+    "de": {
+     "t": "Swing und die Bigband-Ära",
+     "g": "Spüren, warum Swing und Bigbands Jazz in den 1930ern zur Tanzmusik machten.",
+     "p": [
+      "Bigbands hatten Gruppen aus Saxofonen, Trompeten und Posaunen sowie eine Rhythmusgruppe.",
+      "Swing heißt ein federndes Gefühl, bei dem Schläge in einem Lang-kurz-Muster gespielt werden.",
+      "Duke Ellington komponierte reiche, eigene Musik, Count Basie perfektionierte einen treibenden, entspannten Groove."
+     ],
+     "q": "Hättest du einen Swing-Tanzsaal genossen, und was hättest du getragen?",
+     "c": "Hör eine Bigband und zähl, wie viele Bläsergruppen sich gegenseitig antworten."
+    },
+    "es": {
+     "t": "Swing y la era de las big bands",
+     "g": "Sentir por qué el swing y las big bands hicieron del jazz la música de baile de los años treinta.",
+     "p": [
+      "Las big bands tenían secciones de saxofones, trompetas y trombones, más una sección rítmica.",
+      "Swing significa un balanceo saltarín donde los pulsos se tocan en un patrón largo-corto.",
+      "Duke Ellington compuso música original y rica, y Count Basie perfeccionó un groove firme y relajado."
+     ],
+     "q": "¿Te habría gustado un salón de baile de swing y qué te habrías puesto?",
+     "c": "Escucha una big band y cuenta cuántas secciones de viento se responden entre sí."
+    },
+    "fr": {
+     "t": "Le swing et l'ère des big bands",
+     "g": "Sentir pourquoi le swing et les big bands ont fait du jazz la musique de danse des années 1930.",
+     "p": [
+      "Les big bands comptaient des pupitres de saxophones, de trompettes et de trombones, plus une section rythmique.",
+      "Le swing, c'est un balancement chaloupé où les temps se jouent selon un motif long-court.",
+      "Duke Ellington a composé une musique riche et originale, Count Basie a perfectionné un groove soutenu et détendu."
+     ],
+     "q": "Auriez-vous aimé un bal swing, et que porteriez-vous ?",
+     "c": "Écoutez un big band et comptez combien de pupitres de cuivres se répondent."
+    },
+    "it": {
+     "t": "Lo swing e l'era delle big band",
+     "g": "Sentire perché swing e big band fecero del jazz la musica da ballo degli anni Trenta.",
+     "p": [
+      "Le big band avevano sezioni di sassofoni, trombe e tromboni più una sezione ritmica.",
+      "Swing significa un dondolio saltellante in cui i battiti si suonano in uno schema lungo-breve.",
+      "Duke Ellington compose musica ricca e originale, Count Basie perfezionò un groove incalzante e rilassato."
+     ],
+     "q": "Ti sarebbe piaciuta una sala da ballo swing e cosa avresti indossato?",
+     "c": "Ascolta una big band e conta quante sezioni di fiati si rispondono."
+    },
+    "pt": {
+     "t": "O swing e a era das big bands",
+     "g": "Sentir porque o swing e as big bands fizeram do jazz a música de dança dos anos 1930.",
+     "p": [
+      "As big bands tinham secções de saxofones, trompetes e trombones, mais uma secção rítmica.",
+      "Swing significa um balanço saltitante em que as batidas se tocam num padrão longo-curto.",
+      "Duke Ellington compôs música rica e original; Count Basie aperfeiçoou um groove firme e descontraído."
+     ],
+     "q": "Terias gostado de um salão de baile de swing e o que vestirias?",
+     "c": "Ouve uma big band e conta quantas secções de sopros se respondem."
+    },
+    "pt_BR": {
+     "t": "O swing e a era das big bands",
+     "g": "Sentir por que o swing e as big bands fizeram do jazz a música de dança dos anos 1930.",
+     "p": [
+      "As big bands tinham naipes de saxofones, trompetes e trombones, mais uma seção rítmica.",
+      "Swing significa um balanço saltitante em que as batidas são tocadas num padrão longo-curto.",
+      "Duke Ellington compôs música rica e original; Count Basie aperfeiçoou um groove firme e descontraído."
+     ],
+     "q": "Você teria curtido um salão de baile de swing e o que vestiria?",
+     "c": "Escute uma big band e conte quantos naipes de sopros se respondem."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Bebop: jazz gets fast",
+     "g": "Discover bebop, the fast, virtuosic style for listening.",
+     "p": [
+      "Bebop appeared in the 1940s, led by saxophonist Charlie Parker and trumpeter Dizzy Gillespie.",
+      "Small groups play fast tempos, complex chords and quick solo lines for close listening.",
+      "It moved jazz from the dance floor to the concert hall, valuing skill and invention."
+     ],
+     "q": "Do you enjoy music that challenges you, or music that relaxes you more?",
+     "c": "Listen to a bebop tune and try to follow the melody, then the solo."
+    },
+    "de": {
+     "t": "Bebop: Jazz wird schnell",
+     "g": "Den Bebop entdecken, den schnellen, virtuosen Stil zum Zuhören.",
+     "p": [
+      "Bebop entstand in den 1940ern, angeführt von Saxofonist Charlie Parker und Trompeter Dizzy Gillespie.",
+      "Kleine Gruppen spielen schnelle Tempi, komplexe Akkorde und flinke Soli zum genauen Zuhören.",
+      "Er holte den Jazz vom Tanzboden in den Konzertsaal und schätzte Können und Erfindungsgeist."
+     ],
+     "q": "Magst du Musik, die fordert, oder eher Musik, die entspannt?",
+     "c": "Hör ein Bebop-Stück und versuche erst der Melodie, dann dem Solo zu folgen."
+    },
+    "es": {
+     "t": "Bebop: el jazz se acelera",
+     "g": "Descubrir el bebop, el estilo rápido y virtuoso para escuchar con atención.",
+     "p": [
+      "El bebop surgió en los años cuarenta, con el saxofonista Charlie Parker y el trompetista Dizzy Gillespie.",
+      "Grupos pequeños tocan tempos rápidos, acordes complejos y solos ágiles pensados para escuchar.",
+      "Llevó el jazz de la pista de baile a la sala de conciertos, valorando destreza e invención."
+     ],
+     "q": "¿Disfrutas más la música que te reta o la que te relaja?",
+     "c": "Escucha un tema de bebop e intenta seguir la melodía y luego el solo."
+    },
+    "fr": {
+     "t": "Le bebop : le jazz s'accélère",
+     "g": "Découvrir le bebop, style rapide et virtuose fait pour l'écoute.",
+     "p": [
+      "Le bebop apparaît dans les années 1940, avec le saxophoniste Charlie Parker et le trompettiste Dizzy Gillespie.",
+      "De petits groupes jouent des tempos rapides, des accords complexes et des solos agiles à écouter de près.",
+      "Il a fait passer le jazz de la piste de danse à la salle de concert, en valorisant technique et invention."
+     ],
+     "q": "Aimez-vous la musique qui défie ou celle qui détend ?",
+     "c": "Écoutez un morceau de bebop et suivez d'abord la mélodie, puis le solo."
+    },
+    "it": {
+     "t": "Il bebop: il jazz accelera",
+     "g": "Scoprire il bebop, lo stile veloce e virtuoso da ascoltare con attenzione.",
+     "p": [
+      "Il bebop apparve negli anni Quaranta, con il sassofonista Charlie Parker e il trombettista Dizzy Gillespie.",
+      "Piccoli gruppi suonano tempi veloci, accordi complessi e assoli rapidi da ascoltare da vicino.",
+      "Portò il jazz dalla pista da ballo alla sala da concerto, valorizzando abilità e invenzione."
+     ],
+     "q": "Ti piace di più la musica che ti sfida o quella che ti rilassa?",
+     "c": "Ascolta un brano bebop e prova a seguire prima la melodia, poi l'assolo."
+    },
+    "pt": {
+     "t": "Bebop: o jazz acelera",
+     "g": "Descobrir o bebop, o estilo rápido e virtuoso para ouvir com atenção.",
+     "p": [
+      "O bebop surgiu nos anos 1940, com o saxofonista Charlie Parker e o trompetista Dizzy Gillespie.",
+      "Pequenos grupos tocam andamentos rápidos, acordes complexos e solos ágeis para ouvir de perto.",
+      "Levou o jazz da pista de dança para a sala de concertos, valorizando perícia e invenção."
+     ],
+     "q": "Gostas mais de música que te desafia ou de música que te relaxa?",
+     "c": "Ouve um tema de bebop e tenta seguir primeiro a melodia, depois o solo."
+    },
+    "pt_BR": {
+     "t": "Bebop: o jazz acelera",
+     "g": "Descobrir o bebop, o estilo rápido e virtuoso para ouvir com atenção.",
+     "p": [
+      "O bebop surgiu nos anos 1940, com o saxofonista Charlie Parker e o trompetista Dizzy Gillespie.",
+      "Pequenos grupos tocam andamentos rápidos, acordes complexos e solos ágeis para ouvir de perto.",
+      "Levou o jazz da pista de dança para a sala de concertos, valorizando perícia e invenção."
+     ],
+     "q": "Você curte mais música que desafia ou música que relaxa?",
+     "c": "Escute um tema de bebop e tente seguir primeiro a melodia, depois o solo."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cool jazz and modal jazz",
+     "g": "Hear the relaxed, spacious side of jazz.",
+     "p": [
+      "Cool jazz of the 1950s is softer and calmer than bebop, with smooth tone and more space.",
+      "Miles Davis recorded Kind of Blue in 1959, built on modes instead of rapid chord changes.",
+      "Modal jazz gives soloists room to stretch out over a few slowly changing scales."
+     ],
+     "q": "When do you like quiet, spacious music, and what does it do for your mood?",
+     "c": "Play So What from Kind of Blue and notice the pauses between phrases."
+    },
+    "de": {
+     "t": "Cool Jazz und modaler Jazz",
+     "g": "Die entspannte, weite Seite des Jazz hören.",
+     "p": [
+      "Der Cool Jazz der 1950er ist weicher und ruhiger als Bebop, mit sanftem Ton und mehr Raum.",
+      "Miles Davis nahm 1959 Kind of Blue auf, aufgebaut auf Modi statt auf schnellen Akkordwechseln.",
+      "Modaler Jazz gibt Solisten Platz, sich über wenigen, langsam wechselnden Skalen zu entfalten."
+     ],
+     "q": "Wann magst du ruhige, weite Musik, und was bewirkt sie bei dir?",
+     "c": "Hör So What von Kind of Blue und achte auf die Pausen zwischen den Phrasen."
+    },
+    "es": {
+     "t": "Jazz cool y jazz modal",
+     "g": "Oír el lado relajado y espacioso del jazz.",
+     "p": [
+      "El cool jazz de los años cincuenta es más suave y calmado que el bebop, con tono liso y más espacio.",
+      "Miles Davis grabó Kind of Blue en 1959, basado en modos en lugar de cambios rápidos de acordes.",
+      "El jazz modal da a los solistas espacio para explayarse sobre pocas escalas que cambian despacio."
+     ],
+     "q": "¿Cuándo te gusta la música tranquila y espaciosa y qué hace por tu ánimo?",
+     "c": "Pon So What de Kind of Blue y fíjate en las pausas entre frases."
+    },
+    "fr": {
+     "t": "Cool jazz et jazz modal",
+     "g": "Entendre le côté détendu et aéré du jazz.",
+     "p": [
+      "Le cool jazz des années 1950 est plus doux et calme que le bebop, avec un son lisse et plus d'espace.",
+      "Miles Davis enregistre Kind of Blue en 1959, fondé sur des modes plutôt que sur des changements d'accords rapides.",
+      "Le jazz modal laisse aux solistes de l'espace sur quelques gammes qui changent lentement."
+     ],
+     "q": "Quand aimez-vous une musique calme et aérée, et que fait-elle à votre humeur ?",
+     "c": "Écoutez So What de Kind of Blue et remarquez les silences entre les phrases."
+    },
+    "it": {
+     "t": "Cool jazz e jazz modale",
+     "g": "Sentire il lato rilassato e spazioso del jazz.",
+     "p": [
+      "Il cool jazz degli anni Cinquanta è più morbido e calmo del bebop, con suono liscio e più spazio.",
+      "Miles Davis registrò Kind of Blue nel 1959, basato su modi invece che su rapidi cambi di accordi.",
+      "Il jazz modale lascia ai solisti spazio per distendersi su poche scale che cambiano lentamente."
+     ],
+     "q": "Quando ti piace la musica calma e spaziosa e cosa fa al tuo umore?",
+     "c": "Metti So What da Kind of Blue e nota le pause tra le frasi."
+    },
+    "pt": {
+     "t": "Cool jazz e jazz modal",
+     "g": "Ouvir o lado descontraído e espaçoso do jazz.",
+     "p": [
+      "O cool jazz dos anos 1950 é mais suave e calmo do que o bebop, com som liso e mais espaço.",
+      "Miles Davis gravou Kind of Blue em 1959, assente em modos e não em mudanças rápidas de acordes.",
+      "O jazz modal dá aos solistas espaço para se estenderem sobre poucas escalas que mudam devagar."
+     ],
+     "q": "Quando gostas de música calma e espaçosa e o que faz ao teu humor?",
+     "c": "Põe So What de Kind of Blue e repara nas pausas entre as frases."
+    },
+    "pt_BR": {
+     "t": "Cool jazz e jazz modal",
+     "g": "Ouvir o lado descontraído e espaçoso do jazz.",
+     "p": [
+      "O cool jazz dos anos 1950 é mais suave e calmo que o bebop, com som liso e mais espaço.",
+      "Miles Davis gravou Kind of Blue em 1959, baseado em modos e não em mudanças rápidas de acordes.",
+      "O jazz modal dá aos solistas espaço para se estenderem sobre poucas escalas que mudam devagar."
+     ],
+     "q": "Quando você gosta de música calma e espaçosa e o que ela faz pelo seu humor?",
+     "c": "Coloque So What de Kind of Blue e perceba as pausas entre as frases."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Great jazz vocalists",
+     "g": "Appreciate phrasing, scat and storytelling in great jazz singers.",
+     "p": [
+      "Ella Fitzgerald was famed for pure tone, perfect timing and brilliant scat singing.",
+      "Billie Holiday used subtle timing and a fragile, intimate voice to make lyrics feel personal.",
+      "Sarah Vaughan had a rich, wide-ranging voice that she played like an instrument."
+     ],
+     "q": "Who sings with the most personality for you, and what do you notice first?",
+     "c": "Listen to Ella scat and see if you can hum back one of her improvised lines."
+    },
+    "de": {
+     "t": "Große Jazzsängerinnen",
+     "g": "Phrasierung, Scat und Erzählkunst großer Jazzstimmen schätzen lernen.",
+     "p": [
+      "Ella Fitzgerald war berühmt für reinen Ton, perfektes Timing und brillanten Scat-Gesang.",
+      "Billie Holiday machte mit feinem Timing und zerbrechlicher, naher Stimme Texte persönlich.",
+      "Sarah Vaughan hatte eine reiche, weit reichende Stimme, die sie wie ein Instrument spielte."
+     ],
+     "q": "Wer singt für dich mit der meisten Persönlichkeit, und was fällt dir zuerst auf?",
+     "c": "Hör Ella beim Scat und versuche, eine ihrer improvisierten Zeilen nachzusummen."
+    },
+    "es": {
+     "t": "Grandes voces del jazz",
+     "g": "Apreciar el fraseo, el scat y la narración de las grandes cantantes de jazz.",
+     "p": [
+      "Ella Fitzgerald era famosa por su tono puro, su tiempo perfecto y su brillante scat.",
+      "Billie Holiday usaba un fraseo sutil y una voz frágil e íntima para hacer personales las letras.",
+      "Sarah Vaughan tenía una voz rica y de gran registro que tocaba como un instrumento."
+     ],
+     "q": "¿Quién canta con más personalidad para ti y qué notas primero?",
+     "c": "Escucha a Ella en scat y mira si puedes tararear una de sus líneas improvisadas."
+    },
+    "fr": {
+     "t": "Les grandes voix du jazz",
+     "g": "Apprécier le phrasé, le scat et l'art de raconter des grandes chanteuses de jazz.",
+     "p": [
+      "Ella Fitzgerald était célèbre pour sa voix pure, son timing parfait et son scat brillant.",
+      "Billie Holiday, par un phrasé subtil et une voix fragile et intime, rendait les paroles personnelles.",
+      "Sarah Vaughan avait une voix riche et étendue qu'elle jouait comme un instrument."
+     ],
+     "q": "Qui chante avec le plus de personnalité pour vous, et que remarquez-vous d'abord ?",
+     "c": "Écoutez Ella en scat et essayez de refredonner une de ses lignes improvisées."
+    },
+    "it": {
+     "t": "Le grandi voci del jazz",
+     "g": "Apprezzare fraseggio, scat e capacità narrativa delle grandi cantanti jazz.",
+     "p": [
+      "Ella Fitzgerald era famosa per il timbro puro, il tempo perfetto e lo scat brillante.",
+      "Billie Holiday con tempi sottili e una voce fragile e intima rendeva personali i testi.",
+      "Sarah Vaughan aveva una voce ricca e ampia che suonava come uno strumento."
+     ],
+     "q": "Chi canta con più personalità per te e cosa noti per prima cosa?",
+     "c": "Ascolta Ella in scat e prova a ricantare una delle sue frasi improvvisate."
+    },
+    "pt": {
+     "t": "As grandes vozes do jazz",
+     "g": "Apreciar o fraseado, o scat e a narrativa das grandes cantoras de jazz.",
+     "p": [
+      "Ella Fitzgerald era famosa pelo tom puro, pelo tempo perfeito e pelo scat brilhante.",
+      "Billie Holiday, com um fraseado subtil e uma voz frágil e íntima, tornava as letras pessoais.",
+      "Sarah Vaughan tinha uma voz rica e de grande alcance que tocava como um instrumento."
+     ],
+     "q": "Quem canta com mais personalidade para ti e o que notas primeiro?",
+     "c": "Ouve a Ella em scat e vê se consegues trautear uma das suas linhas improvisadas."
+    },
+    "pt_BR": {
+     "t": "As grandes vozes do jazz",
+     "g": "Apreciar o fraseado, o scat e a narrativa das grandes cantoras de jazz.",
+     "p": [
+      "Ella Fitzgerald era famosa pelo timbre puro, pelo tempo perfeito e pelo scat brilhante.",
+      "Billie Holiday, com fraseado sutil e voz frágil e íntima, tornava as letras pessoais.",
+      "Sarah Vaughan tinha uma voz rica e de grande alcance que tocava como um instrumento."
+     ],
+     "q": "Quem canta com mais personalidade para você e o que você nota primeiro?",
+     "c": "Escute Ella em scat e veja se consegue cantarolar uma das linhas improvisadas."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Country music roots",
+     "g": "Trace country music back to fiddles, steel guitar and story songs.",
+     "p": [
+      "Country grew from Appalachian folk, Celtic fiddle tunes, blues and cowboy songs.",
+      "The Carter Family recorded in the late 1920s and set a model for harmony and guitar picking.",
+      "Steel guitar, fiddle and plain-spoken lyrics about home, work and love define the sound."
+     ],
+     "q": "Do you like songs that tell a clear story, and which one is your favourite?",
+     "c": "Listen to a country song and retell its story in two sentences."
+    },
+    "de": {
+     "t": "Die Wurzeln der Countrymusik",
+     "g": "Countrymusik zurückverfolgen zu Geigen, Steelgitarre und erzählenden Liedern.",
+     "p": [
+      "Country wuchs aus Appalachen-Folk, keltischen Fiedelmelodien, Blues und Cowboyliedern.",
+      "Die Carter Family nahm Ende der 1920er auf und prägte Harmoniegesang und Gitarrenzupfen.",
+      "Steelgitarre, Fiedel und schlichte Texte über Heimat, Arbeit und Liebe prägen den Klang."
+     ],
+     "q": "Magst du Lieder mit klarer Geschichte, und welches ist dein liebstes?",
+     "c": "Hör einen Countrysong und erzähle seine Geschichte in zwei Sätzen nach."
+    },
+    "es": {
+     "t": "Raíces de la música country",
+     "g": "Seguir el rastro del country hasta violines, guitarra de acero y canciones narrativas.",
+     "p": [
+      "El country creció del folk de los Apalaches, las melodías celtas de violín, el blues y las canciones vaqueras.",
+      "La Carter Family grabó a fines de los años veinte y marcó el modelo de armonía y punteo de guitarra.",
+      "La guitarra de acero, el violín y letras sencillas sobre hogar, trabajo y amor definen el sonido."
+     ],
+     "q": "¿Te gustan las canciones que cuentan una historia clara y cuál es tu favorita?",
+     "c": "Escucha una canción country y cuenta su historia en dos frases."
+    },
+    "fr": {
+     "t": "Les racines de la country",
+     "g": "Remonter la country jusqu'aux violons, à la steel guitar et aux chansons qui racontent.",
+     "p": [
+      "La country est née du folk des Appalaches, des airs de violon celtes, du blues et des chants de cow-boys.",
+      "La Carter Family enregistre à la fin des années 1920 et fixe un modèle d'harmonies et de jeu à la guitare.",
+      "Steel guitar, violon et paroles simples sur la maison, le travail et l'amour définissent le son."
+     ],
+     "q": "Aimez-vous les chansons qui racontent une histoire claire, et laquelle préférez-vous ?",
+     "c": "Écoutez une chanson country et racontez son histoire en deux phrases."
+    },
+    "it": {
+     "t": "Le radici della musica country",
+     "g": "Risalire dalla country ai violini, alla steel guitar e alle canzoni che raccontano.",
+     "p": [
+      "La country crebbe dal folk degli Appalachi, dalle melodie celtiche di violino, dal blues e dai canti dei cowboy.",
+      "La Carter Family registrò a fine anni Venti e fissò un modello di armonie e chitarra arpeggiata.",
+      "Steel guitar, violino e testi semplici su casa, lavoro e amore definiscono il suono."
+     ],
+     "q": "Ti piacciono le canzoni che raccontano una storia chiara e qual è la tua preferita?",
+     "c": "Ascolta una canzone country e racconta la sua storia in due frasi."
+    },
+    "pt": {
+     "t": "As raízes da música country",
+     "g": "Seguir a pista do country até violinos, guitarra de aço e canções narrativas.",
+     "p": [
+      "O country cresceu do folk dos Apalaches, de melodias celtas de violino, do blues e de canções de cowboys.",
+      "A Carter Family gravou no final dos anos 1920 e criou um modelo de harmonia e dedilhado de guitarra.",
+      "Guitarra de aço, violino e letras simples sobre casa, trabalho e amor definem o som."
+     ],
+     "q": "Gostas de canções que contam uma história clara e qual é a tua favorita?",
+     "c": "Ouve uma canção country e conta a sua história em duas frases."
+    },
+    "pt_BR": {
+     "t": "As raízes da música country",
+     "g": "Seguir a pista do country até violinos, guitarra de aço e canções narrativas.",
+     "p": [
+      "O country cresceu do folk dos Apalaches, de melodias celtas de violino, do blues e de canções de vaqueiros.",
+      "A Carter Family gravou no fim dos anos 1920 e criou um modelo de harmonia e dedilhado de violão.",
+      "Guitarra de aço, violino e letras simples sobre casa, trabalho e amor definem o som."
+     ],
+     "q": "Você gosta de músicas que contam uma história clara e qual é a sua favorita?",
+     "c": "Escute uma música country e conte a história dela em duas frases."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Bluegrass",
+     "g": "Enjoy bluegrass, acoustic string music played fast with tight harmonies.",
+     "p": [
+      "Bill Monroe and his Blue Grass Boys shaped the style in the 1940s.",
+      "Banjo, mandolin, fiddle, guitar and upright bass play without drums.",
+      "Musicians trade solos at amazing speed while singers blend in high, close harmony."
+     ],
+     "q": "Have you ever seen live acoustic music, and what surprised you about it?",
+     "c": "Listen to a bluegrass tune and count how many instruments take a solo."
+    },
+    "de": {
+     "t": "Bluegrass",
+     "g": "Bluegrass genießen, akustische Saitenmusik, schnell gespielt mit enger Harmonie.",
+     "p": [
+      "Bill Monroe und seine Blue Grass Boys prägten den Stil in den 1940ern.",
+      "Banjo, Mandoline, Fiedel, Gitarre und Kontrabass spielen ohne Schlagzeug.",
+      "Die Musiker wechseln sich in rasantem Tempo mit Soli ab, die Sänger singen eng und hoch zusammen."
+     ],
+     "q": "Hast du schon einmal Live-Akustikmusik gesehen, und was hat dich überrascht?",
+     "c": "Hör ein Bluegrass-Stück und zähl, wie viele Instrumente ein Solo spielen."
+    },
+    "es": {
+     "t": "Bluegrass",
+     "g": "Disfrutar del bluegrass, música acústica de cuerdas tocada rápido y con armonías cerradas.",
+     "p": [
+      "Bill Monroe y sus Blue Grass Boys definieron el estilo en los años cuarenta.",
+      "Banjo, mandolina, violín, guitarra y contrabajo suenan sin batería.",
+      "Los músicos se turnan solos a una velocidad asombrosa y los cantantes se funden en armonías agudas y cercanas."
+     ],
+     "q": "¿Has visto alguna vez música acústica en directo y qué te sorprendió?",
+     "c": "Escucha un tema de bluegrass y cuenta cuántos instrumentos tocan un solo."
+    },
+    "fr": {
+     "t": "Le bluegrass",
+     "g": "Savourer le bluegrass, musique acoustique à cordes jouée vite avec des harmonies serrées.",
+     "p": [
+      "Bill Monroe et ses Blue Grass Boys façonnent le style dans les années 1940.",
+      "Banjo, mandoline, violon, guitare et contrebasse jouent sans batterie.",
+      "Les musiciens s'échangent les solos à une vitesse étonnante, les chanteurs mêlent des harmonies hautes et serrées."
+     ],
+     "q": "Avez-vous déjà vu de la musique acoustique en concert, et qu'est-ce qui vous a surpris ?",
+     "c": "Écoutez un morceau de bluegrass et comptez combien d'instruments prennent un solo."
+    },
+    "it": {
+     "t": "Il bluegrass",
+     "g": "Godersi il bluegrass, musica acustica a corde suonata veloce con armonie strette.",
+     "p": [
+      "Bill Monroe e i suoi Blue Grass Boys definirono lo stile negli anni Quaranta.",
+      "Banjo, mandolino, violino, chitarra e contrabbasso suonano senza batteria.",
+      "I musicisti si alternano negli assoli a velocità sorprendente e i cantanti fondono armonie alte e vicine."
+     ],
+     "q": "Hai mai visto musica acustica dal vivo e cosa ti ha sorpreso?",
+     "c": "Ascolta un brano bluegrass e conta quanti strumenti fanno un assolo."
+    },
+    "pt": {
+     "t": "O bluegrass",
+     "g": "Desfrutar do bluegrass, música acústica de cordas tocada depressa e com harmonias fechadas.",
+     "p": [
+      "Bill Monroe e os seus Blue Grass Boys definiram o estilo nos anos 1940.",
+      "Banjo, bandolim, violino, guitarra e contrabaixo tocam sem bateria.",
+      "Os músicos alternam solos a uma velocidade espantosa e os cantores fundem harmonias agudas e próximas."
+     ],
+     "q": "Já viste música acústica ao vivo e o que te surpreendeu?",
+     "c": "Ouve um tema de bluegrass e conta quantos instrumentos fazem um solo."
+    },
+    "pt_BR": {
+     "t": "O bluegrass",
+     "g": "Curtir o bluegrass, música acústica de cordas tocada rápido e com harmonias fechadas.",
+     "p": [
+      "Bill Monroe e seus Blue Grass Boys definiram o estilo nos anos 1940.",
+      "Banjo, bandolim, violino, violão e contrabaixo tocam sem bateria.",
+      "Os músicos alternam solos numa velocidade impressionante e os cantores fundem harmonias agudas e próximas."
+     ],
+     "q": "Você já viu música acústica ao vivo e o que te surpreendeu?",
+     "c": "Escute um tema de bluegrass e conte quantos instrumentos fazem um solo."
+    }
+   }
+  }
+ ]
+}

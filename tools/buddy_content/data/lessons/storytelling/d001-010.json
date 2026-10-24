@@ -1,0 +1,835 @@
+{
+ "topic": "storytelling",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to our story path",
+     "g": "Learn how we will build stories together, one small lesson and one turn at a time.",
+     "p": [
+      "Each day you get one small storytelling idea to try right away.",
+      "We will write and tell stories together, taking turns line by line.",
+      "There are no wrong stories here, only first drafts that grow."
+     ],
+     "q": "What kind of stories did you love most when you were little?",
+     "c": "Tell me your favorite story in just two sentences."
+    },
+    "de": {
+     "t": "Willkommen auf unserem Geschichtenweg",
+     "g": "Du erfährst, wie wir gemeinsam Geschichten bauen, jeden Tag ein kleiner Schritt.",
+     "p": [
+      "Jeden Tag bekommst du eine kleine Erzählidee zum sofortigen Ausprobieren.",
+      "Wir schreiben und erzählen zusammen, Zeile für Zeile im Wechsel.",
+      "Hier gibt es keine falschen Geschichten, nur erste Fassungen, die wachsen."
+     ],
+     "q": "Welche Geschichten mochtest du als Kind am liebsten?",
+     "c": "Erzähl mir deine Lieblingsgeschichte in nur zwei Sätzen."
+    },
+    "es": {
+     "t": "Bienvenido a nuestro camino de cuentos",
+     "g": "Descubre cómo construiremos historias juntos, con una lección pequeña al día.",
+     "p": [
+      "Cada día recibes una pequeña idea de narración para probar enseguida.",
+      "Escribiremos y contaremos historias por turnos, frase a frase.",
+      "Aquí no hay historias malas, solo primeros borradores que crecen."
+     ],
+     "q": "¿Qué tipo de cuentos te gustaban más de pequeño?",
+     "c": "Cuéntame tu historia favorita en solo dos frases."
+    },
+    "fr": {
+     "t": "Bienvenue sur notre chemin des histoires",
+     "g": "Découvre comment nous bâtirons des histoires ensemble, une petite leçon par jour.",
+     "p": [
+      "Chaque jour, tu reçois une petite idée de narration à essayer tout de suite.",
+      "Nous écrirons et raconterons à tour de rôle, phrase après phrase.",
+      "Ici, pas de mauvaise histoire, seulement des premiers jets qui grandissent."
+     ],
+     "q": "Quelles histoires aimais-tu le plus quand tu étais petit ?",
+     "c": "Raconte-moi ton histoire préférée en seulement deux phrases."
+    },
+    "it": {
+     "t": "Benvenuto nel nostro percorso di storie",
+     "g": "Scopri come costruiremo storie insieme, con una piccola lezione al giorno.",
+     "p": [
+      "Ogni giorno ricevi una piccola idea di racconto da provare subito.",
+      "Scriveremo e racconteremo a turni, frase dopo frase.",
+      "Qui non esistono storie sbagliate, solo prime bozze che crescono."
+     ],
+     "q": "Che tipo di storie amavi di più da piccolo?",
+     "c": "Raccontami la tua storia preferita in sole due frasi."
+    },
+    "pt": {
+     "t": "Bem-vindo ao nosso caminho de histórias",
+     "g": "Descobre como vamos construir histórias juntos, com uma pequena lição por dia.",
+     "p": [
+      "Todos os dias recebes uma pequena ideia de narração para experimentar logo.",
+      "Vamos escrever e contar histórias à vez, frase a frase.",
+      "Aqui não há histórias erradas, só primeiros rascunhos que crescem."
+     ],
+     "q": "Que tipo de histórias mais gostavas quando eras pequeno?",
+     "c": "Conta-me a tua história preferida em apenas duas frases."
+    },
+    "pt_BR": {
+     "t": "Boas-vindas ao nosso caminho de histórias",
+     "g": "Descubra como vamos construir histórias juntos, com uma pequena lição por dia.",
+     "p": [
+      "Todo dia você recebe uma ideia pequena de narrativa para testar na hora.",
+      "Vamos escrever e contar histórias em turnos, frase por frase.",
+      "Aqui não existe história errada, só primeiros rascunhos que crescem."
+     ],
+     "q": "Que tipo de história você mais amava quando era criança?",
+     "c": "Conte para mim sua história favorita em apenas duas frases."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What makes a story",
+     "g": "Know the four basic ingredients: character, place, problem and change.",
+     "p": [
+      "A character is someone we care about, even a tiny snail.",
+      "A place and a problem give that character something to face.",
+      "A story ends with a change: the character is not quite the same."
+     ],
+     "q": "Which of the four ingredients is your favorite to imagine?",
+     "c": "Build a four-ingredient story in four short sentences."
+    },
+    "de": {
+     "t": "Was eine Geschichte ausmacht",
+     "g": "Lerne die vier Grundzutaten kennen: Figur, Ort, Problem und Veränderung.",
+     "p": [
+      "Eine Figur liegt uns am Herzen, sogar eine winzige Schnecke.",
+      "Ort und Problem geben der Figur etwas, dem sie begegnen muss.",
+      "Am Ende steht eine Veränderung: Die Figur ist nicht mehr ganz dieselbe."
+     ],
+     "q": "Welche der vier Zutaten stellst du dir am liebsten vor?",
+     "c": "Baue eine Geschichte mit allen vier Zutaten in vier kurzen Sätzen."
+    },
+    "es": {
+     "t": "Qué hace a una historia",
+     "g": "Conoce los cuatro ingredientes básicos: personaje, lugar, problema y cambio.",
+     "p": [
+      "Un personaje es alguien que nos importa, aunque sea un caracol diminuto.",
+      "Un lugar y un problema le dan algo a lo que enfrentarse.",
+      "Una historia termina con un cambio: el personaje ya no es el mismo."
+     ],
+     "q": "¿Cuál de los cuatro ingredientes te gusta más imaginar?",
+     "c": "Crea una historia con los cuatro ingredientes en cuatro frases cortas."
+    },
+    "fr": {
+     "t": "Ce qui fait une histoire",
+     "g": "Connais les quatre ingrédients de base : personnage, lieu, problème et changement.",
+     "p": [
+      "Un personnage, c'est quelqu'un qui nous touche, même un minuscule escargot.",
+      "Un lieu et un problème lui donnent quelque chose à affronter.",
+      "Une histoire finit par un changement : le personnage n'est plus tout à fait le même."
+     ],
+     "q": "Lequel des quatre ingrédients aimes-tu le plus imaginer ?",
+     "c": "Compose une histoire avec les quatre ingrédients en quatre phrases courtes."
+    },
+    "it": {
+     "t": "Cosa rende una storia",
+     "g": "Conosci i quattro ingredienti base: personaggio, luogo, problema e cambiamento.",
+     "p": [
+      "Un personaggio è qualcuno a cui teniamo, anche una minuscola lumaca.",
+      "Un luogo e un problema gli danno qualcosa da affrontare.",
+      "Una storia finisce con un cambiamento: il personaggio non è più lo stesso."
+     ],
+     "q": "Quale dei quattro ingredienti ti piace di più immaginare?",
+     "c": "Crea una storia con i quattro ingredienti in quattro frasi brevi."
+    },
+    "pt": {
+     "t": "O que faz uma história",
+     "g": "Conhece os quatro ingredientes básicos: personagem, lugar, problema e mudança.",
+     "p": [
+      "Uma personagem é alguém de quem gostamos, até um caracol minúsculo.",
+      "Um lugar e um problema dão-lhe algo para enfrentar.",
+      "Uma história acaba com uma mudança: a personagem já não é a mesma."
+     ],
+     "q": "Qual dos quatro ingredientes mais gostas de imaginar?",
+     "c": "Cria uma história com os quatro ingredientes em quatro frases curtas."
+    },
+    "pt_BR": {
+     "t": "O que faz uma história",
+     "g": "Conheça os quatro ingredientes básicos: personagem, lugar, problema e mudança.",
+     "p": [
+      "Um personagem é alguém com quem nos importamos, até um caracol minúsculo.",
+      "Um lugar e um problema dão a ele algo para enfrentar.",
+      "Uma história termina com uma mudança: o personagem não é mais o mesmo."
+     ],
+     "q": "Qual dos quatro ingredientes você mais gosta de imaginar?",
+     "c": "Crie uma história com os quatro ingredientes em quatro frases curtas."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Stories are everywhere",
+     "g": "Spot stories hiding in jokes, songs, ads, chats and family memories.",
+     "p": [
+      "A joke is a tiny story with a surprise at the end.",
+      "Songs and ads often tell a whole story in under a minute.",
+      "Family memories are stories we keep retelling because they matter."
+     ],
+     "q": "Where did you hear a good story this week, even a small one?",
+     "c": "Pick one song or ad and retell its story in three sentences."
+    },
+    "de": {
+     "t": "Geschichten sind überall",
+     "g": "Entdecke Geschichten in Witzen, Liedern, Werbung, Gesprächen und Familienerinnerungen.",
+     "p": [
+      "Ein Witz ist eine winzige Geschichte mit Überraschung am Ende.",
+      "Lieder und Werbespots erzählen oft in unter einer Minute eine ganze Geschichte.",
+      "Familienerinnerungen erzählen wir immer wieder, weil sie uns wichtig sind."
+     ],
+     "q": "Wo hast du diese Woche eine gute Geschichte gehört, auch eine kleine?",
+     "c": "Such dir ein Lied oder einen Spot und erzähle dessen Geschichte in drei Sätzen."
+    },
+    "es": {
+     "t": "Las historias están en todas partes",
+     "g": "Descubre historias escondidas en chistes, canciones, anuncios, charlas y recuerdos familiares.",
+     "p": [
+      "Un chiste es una historia diminuta con sorpresa final.",
+      "Canciones y anuncios cuentan una historia entera en menos de un minuto.",
+      "Los recuerdos familiares son historias que repetimos porque importan."
+     ],
+     "q": "¿Dónde oíste una buena historia esta semana, aunque fuera pequeña?",
+     "c": "Elige una canción o un anuncio y cuenta su historia en tres frases."
+    },
+    "fr": {
+     "t": "Les histoires sont partout",
+     "g": "Repère les histoires cachées dans les blagues, chansons, pubs, discussions et souvenirs de famille.",
+     "p": [
+      "Une blague est une minuscule histoire avec une surprise à la fin.",
+      "Chansons et publicités racontent souvent toute une histoire en moins d'une minute.",
+      "Les souvenirs de famille, on les raconte encore et encore parce qu'ils comptent."
+     ],
+     "q": "Où as-tu entendu une bonne histoire cette semaine, même petite ?",
+     "c": "Choisis une chanson ou une pub et raconte son histoire en trois phrases."
+    },
+    "it": {
+     "t": "Le storie sono ovunque",
+     "g": "Scopri storie nascoste in barzellette, canzoni, pubblicità, chiacchiere e ricordi di famiglia.",
+     "p": [
+      "Una barzelletta è una storia minuscola con sorpresa finale.",
+      "Canzoni e pubblicità raccontano spesso una storia intera in meno di un minuto.",
+      "I ricordi di famiglia li raccontiamo di nuovo perché contano."
+     ],
+     "q": "Dove hai sentito una bella storia questa settimana, anche piccola?",
+     "c": "Scegli una canzone o una pubblicità e racconta la sua storia in tre frasi."
+    },
+    "pt": {
+     "t": "As histórias estão em todo o lado",
+     "g": "Descobre histórias escondidas em piadas, canções, anúncios, conversas e memórias de família.",
+     "p": [
+      "Uma piada é uma história minúscula com surpresa no fim.",
+      "Canções e anúncios contam muitas vezes uma história inteira em menos de um minuto.",
+      "As memórias de família são histórias que repetimos porque importam."
+     ],
+     "q": "Onde ouviste uma boa história esta semana, mesmo pequena?",
+     "c": "Escolhe uma canção ou um anúncio e conta a sua história em três frases."
+    },
+    "pt_BR": {
+     "t": "As histórias estão por toda parte",
+     "g": "Descubra histórias escondidas em piadas, músicas, propagandas, conversas e memórias de família.",
+     "p": [
+      "Uma piada é uma história minúscula com surpresa no final.",
+      "Músicas e propagandas muitas vezes contam uma história inteira em menos de um minuto.",
+      "Memórias de família são histórias que repetimos porque importam."
+     ],
+     "q": "Onde você ouviu uma boa história esta semana, mesmo pequena?",
+     "c": "Escolha uma música ou propaganda e conte a história dela em três frases."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Taking turns in a story",
+     "g": "Practice building a tale together, each adding one or two sentences.",
+     "p": [
+      "Listen to the last sentence before you add yours.",
+      "Keep your turn short so your partner has room to play.",
+      "Leave a small open door, like a sound or a question, for the next turn."
+     ],
+     "q": "Do you prefer to start a story or to continue one?",
+     "c": "Let's co-write: I start, you add two sentences, and we go three rounds."
+    },
+    "de": {
+     "t": "Abwechselnd erzählen",
+     "g": "Übe, gemeinsam eine Geschichte zu bauen, jeder mit ein bis zwei Sätzen.",
+     "p": [
+      "Hör den letzten Satz genau an, bevor du deinen ergänzt.",
+      "Halte deinen Zug kurz, damit dein Gegenüber Platz zum Spielen hat.",
+      "Lass eine kleine offene Tür, etwa ein Geräusch oder eine Frage."
+     ],
+     "q": "Beginnst du lieber eine Geschichte oder führst du eine weiter?",
+     "c": "Schreiben wir zusammen: Ich beginne, du ergänzt zwei Sätze, drei Runden lang."
+    },
+    "es": {
+     "t": "Turnarse para contar",
+     "g": "Practica construir un cuento juntos, cada uno con una o dos frases.",
+     "p": [
+      "Escucha la última frase antes de añadir la tuya.",
+      "Mantén tu turno corto para que tu compañero tenga espacio.",
+      "Deja una puertita abierta, como un sonido o una pregunta, para el siguiente turno."
+     ],
+     "q": "¿Prefieres empezar un cuento o continuar el de otro?",
+     "c": "Escribamos juntos: yo empiezo, tú añades dos frases y damos tres rondas."
+    },
+    "fr": {
+     "t": "Se relayer dans une histoire",
+     "g": "Entraîne-toi à bâtir un conte à deux, chacun ajoutant une ou deux phrases.",
+     "p": [
+      "Écoute la dernière phrase avant d'ajouter la tienne.",
+      "Garde ton tour court pour laisser de la place à ton partenaire.",
+      "Laisse une petite porte ouverte, un bruit ou une question, pour le tour suivant."
+     ],
+     "q": "Préfères-tu commencer une histoire ou continuer celle d'un autre ?",
+     "c": "Écrivons ensemble : je commence, tu ajoutes deux phrases, sur trois tours."
+    },
+    "it": {
+     "t": "Fare a turno nel racconto",
+     "g": "Esercitati a costruire una storia insieme, aggiungendo una o due frasi a testa.",
+     "p": [
+      "Ascolta l'ultima frase prima di aggiungere la tua.",
+      "Tieni breve il tuo turno così il compagno ha spazio per giocare.",
+      "Lascia una porticina aperta, come un suono o una domanda, per il turno dopo."
+     ],
+     "q": "Preferisci iniziare una storia o continuarne una?",
+     "c": "Scriviamo insieme: io comincio, tu aggiungi due frasi, per tre giri."
+    },
+    "pt": {
+     "t": "À vez na história",
+     "g": "Pratica construir um conto em conjunto, cada um com uma ou duas frases.",
+     "p": [
+      "Ouve a última frase antes de acrescentares a tua.",
+      "Mantém a tua vez curta para o parceiro ter espaço.",
+      "Deixa uma porta aberta, como um som ou uma pergunta, para a vez seguinte."
+     ],
+     "q": "Preferes começar uma história ou continuar a de outro?",
+     "c": "Vamos escrever juntos: eu começo, tu acrescentas duas frases, durante três rondas."
+    },
+    "pt_BR": {
+     "t": "Revezando na história",
+     "g": "Pratique construir um conto em dupla, cada um com uma ou duas frases.",
+     "p": [
+      "Escute a última frase antes de acrescentar a sua.",
+      "Mantenha seu turno curto para o parceiro ter espaço.",
+      "Deixe uma portinha aberta, como um som ou uma pergunta, para o próximo turno."
+     ],
+     "q": "Você prefere começar uma história ou continuar a de outra pessoa?",
+     "c": "Vamos escrever juntos: eu começo, você acrescenta duas frases, por três rodadas."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Once upon a time",
+     "g": "Meet classic story openings from many languages and see why they work.",
+     "p": [
+      "English says once upon a time, Spanish érase una vez, French il était une fois.",
+      "Arabic tales often begin kan ya ma kan, meaning it was and it was not.",
+      "An opening tells listeners: relax, a story is coming, and anything can happen."
+     ],
+     "q": "Which opening line sounds most like home to you?",
+     "c": "Invent your own opening phrase and use it to start a story."
+    },
+    "de": {
+     "t": "Es war einmal",
+     "g": "Lerne klassische Anfangsformeln aus vielen Sprachen kennen und warum sie wirken.",
+     "p": [
+      "Deutsch sagt es war einmal, Spanisch érase una vez, Französisch il était une fois.",
+      "Arabische Märchen beginnen oft mit kan ya ma kan: es war und es war nicht.",
+      "Ein Anfang sagt den Zuhörern: Lehn dich zurück, es kann alles passieren."
+     ],
+     "q": "Welche Anfangsformel klingt für dich am meisten nach Zuhause?",
+     "c": "Erfinde eine eigene Anfangsformel und beginne damit eine Geschichte."
+    },
+    "es": {
+     "t": "Érase una vez",
+     "g": "Conoce aperturas clásicas de cuentos en muchas lenguas y por qué funcionan.",
+     "p": [
+      "El español dice érase una vez, el inglés once upon a time, el francés il était une fois.",
+      "Los cuentos árabes suelen empezar con kan ya ma kan: era y no era.",
+      "Una apertura avisa: relájate, viene un cuento y todo puede pasar."
+     ],
+     "q": "¿Qué fórmula de inicio te suena más a casa?",
+     "c": "Inventa tu propia fórmula de inicio y empieza un cuento con ella."
+    },
+    "fr": {
+     "t": "Il était une fois",
+     "g": "Découvre des ouvertures classiques de contes dans plusieurs langues et pourquoi elles marchent.",
+     "p": [
+      "Le français dit il était une fois, l'espagnol érase una vez, l'anglais once upon a time.",
+      "Les contes arabes commencent souvent par kan ya ma kan : c'était et ce n'était pas.",
+      "Une ouverture dit aux auditeurs : détends-toi, tout peut arriver."
+     ],
+     "q": "Quelle formule d'ouverture te rappelle le plus la maison ?",
+     "c": "Invente ta propre formule d'ouverture et commence une histoire avec."
+    },
+    "it": {
+     "t": "C'era una volta",
+     "g": "Scopri aperture classiche di fiabe in molte lingue e perché funzionano.",
+     "p": [
+      "L'italiano dice c'era una volta, lo spagnolo érase una vez, il francese il était une fois.",
+      "Le fiabe arabe iniziano spesso con kan ya ma kan: c'era e non c'era.",
+      "Un inizio dice agli ascoltatori: rilassati, può succedere di tutto."
+     ],
+     "q": "Quale formula d'apertura ti suona più di casa?",
+     "c": "Inventa una tua formula d'apertura e inizia una storia con quella."
+    },
+    "pt": {
+     "t": "Era uma vez",
+     "g": "Conhece aberturas clássicas de contos em várias línguas e porque funcionam.",
+     "p": [
+      "O português diz era uma vez, o espanhol érase una vez, o francês il était une fois.",
+      "Os contos árabes começam muitas vezes com kan ya ma kan: era e não era.",
+      "Uma abertura avisa: relaxa, vem uma história e tudo pode acontecer."
+     ],
+     "q": "Que fórmula de abertura te soa mais a casa?",
+     "c": "Inventa a tua própria fórmula de abertura e começa uma história com ela."
+    },
+    "pt_BR": {
+     "t": "Era uma vez",
+     "g": "Conheça aberturas clássicas de contos em várias línguas e por que funcionam.",
+     "p": [
+      "O português diz era uma vez, o espanhol érase una vez, o francês il était une fois.",
+      "Os contos árabes costumam começar com kan ya ma kan: era e não era.",
+      "Uma abertura avisa: relaxe, vem uma história e tudo pode acontecer."
+     ],
+     "q": "Qual fórmula de abertura soa mais como a sua casa?",
+     "c": "Invente sua própria fórmula de abertura e comece uma história com ela."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Meet your main character",
+     "g": "Invent a hero with a name, a wish and one special quirk.",
+     "p": [
+      "Start with a name that is easy to say and fun to remember.",
+      "Add a wish: what does this hero want more than anything?",
+      "Give one quirk, like humming while thinking, to make them unique."
+     ],
+     "q": "What would your hero's name and quirk be?",
+     "c": "Write three lines introducing your hero: name, wish, quirk."
+    },
+    "de": {
+     "t": "Lerne deine Hauptfigur kennen",
+     "g": "Erfinde eine Heldin oder einen Helden mit Namen, Wunsch und einer besonderen Eigenart.",
+     "p": [
+      "Beginne mit einem Namen, der leicht zu sagen und gut zu merken ist.",
+      "Füge einen Wunsch hinzu: Was will die Figur mehr als alles andere?",
+      "Gib eine Eigenart, etwa Summen beim Nachdenken, damit sie einzigartig wird."
+     ],
+     "q": "Wie heißt deine Figur und was ist ihre Eigenart?",
+     "c": "Schreibe drei Zeilen zur Vorstellung: Name, Wunsch, Eigenart."
+    },
+    "es": {
+     "t": "Conoce a tu protagonista",
+     "g": "Inventa un héroe con nombre, un deseo y una rareza especial.",
+     "p": [
+      "Empieza con un nombre fácil de decir y divertido de recordar.",
+      "Añade un deseo: ¿qué quiere este héroe más que nada?",
+      "Dale una manía, como tararear al pensar, para hacerlo único."
+     ],
+     "q": "¿Cómo se llamaría tu héroe y cuál sería su manía?",
+     "c": "Escribe tres líneas que presenten a tu héroe: nombre, deseo, manía."
+    },
+    "fr": {
+     "t": "Rencontre ton personnage principal",
+     "g": "Invente un héros avec un nom, un souhait et une particularité.",
+     "p": [
+      "Commence par un nom facile à dire et amusant à retenir.",
+      "Ajoute un souhait : que veut ce héros plus que tout ?",
+      "Donne-lui une manie, comme fredonner en réfléchissant, pour le rendre unique."
+     ],
+     "q": "Quel serait le nom de ton héros et sa manie ?",
+     "c": "Écris trois lignes pour présenter ton héros : nom, souhait, manie."
+    },
+    "it": {
+     "t": "Conosci il tuo protagonista",
+     "g": "Inventa un eroe con un nome, un desiderio e una stranezza speciale.",
+     "p": [
+      "Parti da un nome facile da dire e divertente da ricordare.",
+      "Aggiungi un desiderio: che cosa vuole questo eroe più di tutto?",
+      "Dagli una mania, come canticchiare mentre pensa, per renderlo unico."
+     ],
+     "q": "Come si chiamerebbe il tuo eroe e quale sarebbe la sua mania?",
+     "c": "Scrivi tre righe che presentano il tuo eroe: nome, desiderio, mania."
+    },
+    "pt": {
+     "t": "Conhece a tua personagem principal",
+     "g": "Inventa um herói com nome, um desejo e uma mania especial.",
+     "p": [
+      "Começa com um nome fácil de dizer e divertido de lembrar.",
+      "Junta um desejo: o que quer este herói mais do que tudo?",
+      "Dá-lhe uma mania, como trautear a pensar, para o tornar único."
+     ],
+     "q": "Como se chamaria o teu herói e qual seria a sua mania?",
+     "c": "Escreve três linhas a apresentar o herói: nome, desejo, mania."
+    },
+    "pt_BR": {
+     "t": "Conheça seu personagem principal",
+     "g": "Invente um herói com nome, um desejo e uma mania especial.",
+     "p": [
+      "Comece com um nome fácil de dizer e divertido de lembrar.",
+      "Acrescente um desejo: o que esse herói quer mais que tudo?",
+      "Dê a ele uma mania, como cantarolar ao pensar, para torná-lo único."
+     ],
+     "q": "Como seu herói se chamaria e qual seria a mania dele?",
+     "c": "Escreva três linhas apresentando o herói: nome, desejo, mania."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Giving a character a wish",
+     "g": "See why so many good stories start with someone wanting something.",
+     "p": [
+      "A wish gives the character a direction to move in.",
+      "The bigger the wish, the more reasons for the story to keep going.",
+      "A wish can be small: a seat by the window, one more cookie."
+     ],
+     "q": "What did your hero from yesterday want most?",
+     "c": "Write the wish of your hero in one sentence and the first step toward it."
+    },
+    "de": {
+     "t": "Der Figur einen Wunsch geben",
+     "g": "Erkenne, warum so viele gute Geschichten damit beginnen, dass jemand etwas will.",
+     "p": [
+      "Ein Wunsch gibt der Figur eine Richtung.",
+      "Je größer der Wunsch, desto mehr Gründe, die Geschichte weiterzuerzählen.",
+      "Ein Wunsch darf klein sein: ein Fensterplatz, ein Keks mehr."
+     ],
+     "q": "Was wollte dein Held von gestern am meisten?",
+     "c": "Schreibe den Wunsch deiner Figur in einem Satz und den ersten Schritt dorthin."
+    },
+    "es": {
+     "t": "Dar un deseo al personaje",
+     "g": "Descubre por qué tantas buenas historias empiezan con alguien que quiere algo.",
+     "p": [
+      "Un deseo le da al personaje una dirección.",
+      "Cuanto mayor es el deseo, más motivos hay para seguir contando.",
+      "Un deseo puede ser pequeño: un asiento junto a la ventana, una galleta más."
+     ],
+     "q": "¿Qué quería más que nada tu héroe de ayer?",
+     "c": "Escribe el deseo de tu héroe en una frase y el primer paso hacia él."
+    },
+    "fr": {
+     "t": "Donner un souhait au personnage",
+     "g": "Vois pourquoi tant de bonnes histoires commencent par quelqu'un qui veut quelque chose.",
+     "p": [
+      "Un souhait donne au personnage une direction.",
+      "Plus le souhait est grand, plus l'histoire a de raisons de continuer.",
+      "Un souhait peut être petit : une place près de la fenêtre, un biscuit de plus."
+     ],
+     "q": "Que voulait le plus ton héros d'hier ?",
+     "c": "Écris le souhait de ton héros en une phrase et le premier pas vers lui."
+    },
+    "it": {
+     "t": "Dare un desiderio al personaggio",
+     "g": "Scopri perché tante belle storie iniziano con qualcuno che vuole qualcosa.",
+     "p": [
+      "Un desiderio dà al personaggio una direzione.",
+      "Più grande è il desiderio, più motivi ha la storia per andare avanti.",
+      "Un desiderio può essere piccolo: un posto vicino alla finestra, un biscotto in più."
+     ],
+     "q": "Che cosa voleva di più il tuo eroe di ieri?",
+     "c": "Scrivi il desiderio del tuo eroe in una frase e il primo passo verso di esso."
+    },
+    "pt": {
+     "t": "Dar um desejo à personagem",
+     "g": "Percebe porque tantas boas histórias começam com alguém que quer algo.",
+     "p": [
+      "Um desejo dá à personagem uma direção.",
+      "Quanto maior o desejo, mais razões para a história continuar.",
+      "Um desejo pode ser pequeno: um lugar à janela, mais uma bolacha."
+     ],
+     "q": "O que queria mais o teu herói de ontem?",
+     "c": "Escreve o desejo do teu herói numa frase e o primeiro passo para o alcançar."
+    },
+    "pt_BR": {
+     "t": "Dar um desejo ao personagem",
+     "g": "Entenda por que tantas boas histórias começam com alguém que quer algo.",
+     "p": [
+      "Um desejo dá ao personagem uma direção.",
+      "Quanto maior o desejo, mais motivos para a história continuar.",
+      "Um desejo pode ser pequeno: um lugar na janela, mais um biscoito."
+     ],
+     "q": "O que seu herói de ontem mais queria?",
+     "c": "Escreva o desejo do seu herói em uma frase e o primeiro passo para alcançá-lo."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing a setting",
+     "g": "Pick a time and place that make a story feel alive.",
+     "p": [
+      "A setting is more than a place: it is also the hour, the weather and the mood.",
+      "A busy market and a quiet attic lead to very different stories.",
+      "One specific detail, like a squeaky stair, beats a long description."
+     ],
+     "q": "Where would your next story happen, and at what time of day?",
+     "c": "Describe your setting in two sentences with one specific detail."
+    },
+    "de": {
+     "t": "Einen Schauplatz wählen",
+     "g": "Wähle Zeit und Ort so, dass eine Geschichte lebendig wirkt.",
+     "p": [
+      "Ein Schauplatz ist mehr als ein Ort: auch Uhrzeit, Wetter und Stimmung.",
+      "Ein lauter Markt und ein stiller Dachboden ergeben ganz andere Geschichten.",
+      "Ein genaues Detail, etwa eine knarrende Stufe, schlägt lange Beschreibungen."
+     ],
+     "q": "Wo würde deine nächste Geschichte spielen, und zu welcher Tageszeit?",
+     "c": "Beschreibe deinen Schauplatz in zwei Sätzen mit einem genauen Detail."
+    },
+    "es": {
+     "t": "Elegir el escenario",
+     "g": "Elige un tiempo y un lugar que den vida a la historia.",
+     "p": [
+      "El escenario es más que un lugar: también es la hora, el clima y el ambiente.",
+      "Un mercado animado y un desván tranquilo dan historias muy distintas.",
+      "Un detalle concreto, como un escalón que cruje, vale más que una larga descripción."
+     ],
+     "q": "¿Dónde ocurriría tu próxima historia y a qué hora del día?",
+     "c": "Describe tu escenario en dos frases con un detalle concreto."
+    },
+    "fr": {
+     "t": "Choisir le décor",
+     "g": "Choisis un moment et un lieu qui rendent l'histoire vivante.",
+     "p": [
+      "Un décor, c'est plus qu'un lieu : c'est aussi l'heure, la météo et l'ambiance.",
+      "Un marché animé et un grenier calme donnent des histoires très différentes.",
+      "Un détail précis, comme une marche qui grince, vaut mieux qu'une longue description."
+     ],
+     "q": "Où se passerait ta prochaine histoire, et à quelle heure ?",
+     "c": "Décris ton décor en deux phrases avec un détail précis."
+    },
+    "it": {
+     "t": "Scegliere l'ambientazione",
+     "g": "Scegli un tempo e un luogo che rendano viva la storia.",
+     "p": [
+      "L'ambientazione è più di un luogo: sono anche l'ora, il tempo e l'atmosfera.",
+      "Un mercato vivace e una soffitta silenziosa danno storie molto diverse.",
+      "Un dettaglio preciso, come un gradino che scricchiola, vale più di una lunga descrizione."
+     ],
+     "q": "Dove si svolgerebbe la tua prossima storia e a che ora del giorno?",
+     "c": "Descrivi la tua ambientazione in due frasi con un dettaglio preciso."
+    },
+    "pt": {
+     "t": "Escolher o cenário",
+     "g": "Escolhe um tempo e um lugar que deem vida à história.",
+     "p": [
+      "O cenário é mais do que um lugar: é também a hora, o tempo e o ambiente.",
+      "Um mercado animado e um sótão calmo dão histórias muito diferentes.",
+      "Um detalhe concreto, como um degrau que range, vale mais do que uma longa descrição."
+     ],
+     "q": "Onde se passaria a tua próxima história e a que hora do dia?",
+     "c": "Descreve o teu cenário em duas frases com um detalhe concreto."
+    },
+    "pt_BR": {
+     "t": "Escolher o cenário",
+     "g": "Escolha um tempo e um lugar que deem vida à história.",
+     "p": [
+      "O cenário é mais que um lugar: é também a hora, o clima e o ambiente.",
+      "Uma feira movimentada e um sótão calmo geram histórias bem diferentes.",
+      "Um detalhe concreto, como um degrau que range, vale mais que uma longa descrição."
+     ],
+     "q": "Onde sua próxima história aconteceria e em que hora do dia?",
+     "c": "Descreva seu cenário em duas frases com um detalhe concreto."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Using the five senses",
+     "g": "Add what characters see, hear, smell, taste and touch.",
+     "p": [
+      "Most writers lean on sight, so add a sound or a smell too.",
+      "Smell and taste bring back memories faster than almost anything.",
+      "Pick two senses per scene so it stays vivid without getting heavy."
+     ],
+     "q": "Which smell instantly takes you back to a happy place?",
+     "c": "Write a three-sentence scene using at least three different senses."
+    },
+    "de": {
+     "t": "Die fünf Sinne nutzen",
+     "g": "Füge hinzu, was Figuren sehen, hören, riechen, schmecken und fühlen.",
+     "p": [
+      "Die meisten verlassen sich auf das Sehen, also ergänze Klang oder Duft.",
+      "Geruch und Geschmack wecken Erinnerungen schneller als fast alles andere.",
+      "Nimm pro Szene zwei Sinne, so bleibt sie lebendig, aber nicht schwer."
+     ],
+     "q": "Welcher Duft bringt dich sofort an einen glücklichen Ort zurück?",
+     "c": "Schreibe eine Szene in drei Sätzen mit mindestens drei verschiedenen Sinnen."
+    },
+    "es": {
+     "t": "Usar los cinco sentidos",
+     "g": "Añade lo que los personajes ven, oyen, huelen, saborean y tocan.",
+     "p": [
+      "Casi todos usamos la vista, así que suma un sonido o un olor.",
+      "El olor y el sabor traen recuerdos más rápido que casi nada.",
+      "Elige dos sentidos por escena para que sea vívida sin volverse pesada."
+     ],
+     "q": "¿Qué olor te lleva al instante a un lugar feliz?",
+     "c": "Escribe una escena de tres frases con al menos tres sentidos distintos."
+    },
+    "fr": {
+     "t": "Utiliser les cinq sens",
+     "g": "Ajoute ce que les personnages voient, entendent, sentent, goûtent et touchent.",
+     "p": [
+      "On s'appuie surtout sur la vue : ajoute un son ou une odeur.",
+      "Odeurs et saveurs ravivent les souvenirs plus vite que presque tout.",
+      "Choisis deux sens par scène pour rester vivant sans alourdir."
+     ],
+     "q": "Quelle odeur te ramène tout de suite dans un endroit heureux ?",
+     "c": "Écris une scène de trois phrases avec au moins trois sens différents."
+    },
+    "it": {
+     "t": "Usare i cinque sensi",
+     "g": "Aggiungi ciò che i personaggi vedono, sentono, annusano, gustano e toccano.",
+     "p": [
+      "Quasi tutti puntano sulla vista: aggiungi anche un suono o un odore.",
+      "Odori e sapori richiamano ricordi più in fretta di quasi tutto.",
+      "Scegli due sensi per scena: resta vivida senza appesantirsi."
+     ],
+     "q": "Quale odore ti riporta subito in un posto felice?",
+     "c": "Scrivi una scena di tre frasi con almeno tre sensi diversi."
+    },
+    "pt": {
+     "t": "Usar os cinco sentidos",
+     "g": "Junta o que as personagens veem, ouvem, cheiram, provam e tocam.",
+     "p": [
+      "A maioria apoia-se na visão, por isso acrescenta um som ou um cheiro.",
+      "O cheiro e o sabor trazem memórias mais depressa do que quase tudo.",
+      "Escolhe dois sentidos por cena para ficar vívida sem pesar."
+     ],
+     "q": "Que cheiro te leva logo a um lugar feliz?",
+     "c": "Escreve uma cena de três frases com pelo menos três sentidos diferentes."
+    },
+    "pt_BR": {
+     "t": "Usando os cinco sentidos",
+     "g": "Acrescente o que os personagens veem, ouvem, cheiram, provam e tocam.",
+     "p": [
+      "A maioria se apoia na visão, então inclua um som ou um cheiro.",
+      "Cheiro e sabor trazem memórias mais rápido que quase tudo.",
+      "Escolha dois sentidos por cena para ficar vívida sem pesar."
+     ],
+     "q": "Que cheiro leva você na hora a um lugar feliz?",
+     "c": "Escreva uma cena de três frases com pelo menos três sentidos diferentes."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The problem that starts it all",
+     "g": "Create a challenge that gets the story moving.",
+     "p": [
+      "Without a problem, a story just sits still, like a boat in a calm bay.",
+      "The problem should block the character's wish in a clear way.",
+      "Friendly problems work well: a lost map, a stuck door, a missing recipe."
+     ],
+     "q": "What small problem could stop your hero from getting their wish?",
+     "c": "Write the moment the problem appears, in two or three sentences."
+    },
+    "de": {
+     "t": "Das Problem, das alles ins Rollen bringt",
+     "g": "Erschaffe eine Herausforderung, die die Geschichte in Bewegung setzt.",
+     "p": [
+      "Ohne Problem steht eine Geschichte still wie ein Boot in ruhiger Bucht.",
+      "Das Problem soll den Wunsch der Figur klar blockieren.",
+      "Freundliche Probleme funktionieren gut: eine verlorene Karte, eine klemmende Tür."
+     ],
+     "q": "Welches kleine Problem könnte deinen Helden am Wunsch hindern?",
+     "c": "Schreibe den Moment, in dem das Problem auftaucht, in zwei oder drei Sätzen."
+    },
+    "es": {
+     "t": "El problema que lo inicia todo",
+     "g": "Crea un desafío que ponga la historia en marcha.",
+     "p": [
+      "Sin problema, una historia se queda quieta como un barco en una bahía en calma.",
+      "El problema debe bloquear con claridad el deseo del personaje.",
+      "Los problemas amables funcionan bien: un mapa perdido, una puerta atascada."
+     ],
+     "q": "¿Qué pequeño problema podría impedir que tu héroe logre su deseo?",
+     "c": "Escribe el momento en que aparece el problema, en dos o tres frases."
+    },
+    "fr": {
+     "t": "Le problème qui lance tout",
+     "g": "Crée un défi qui fait avancer l'histoire.",
+     "p": [
+      "Sans problème, une histoire reste immobile comme un bateau dans une baie calme.",
+      "Le problème doit bloquer clairement le souhait du personnage.",
+      "Les problèmes gentils marchent bien : une carte perdue, une porte coincée."
+     ],
+     "q": "Quel petit problème pourrait empêcher ton héros d'obtenir son souhait ?",
+     "c": "Écris le moment où le problème surgit, en deux ou trois phrases."
+    },
+    "it": {
+     "t": "Il problema che dà il via a tutto",
+     "g": "Crea una sfida che metta in moto la storia.",
+     "p": [
+      "Senza problema una storia resta ferma, come una barca in una baia calma.",
+      "Il problema deve bloccare chiaramente il desiderio del personaggio.",
+      "I problemi gentili funzionano bene: una mappa persa, una porta bloccata."
+     ],
+     "q": "Quale piccolo problema potrebbe impedire al tuo eroe di avere il suo desiderio?",
+     "c": "Scrivi il momento in cui appare il problema, in due o tre frasi."
+    },
+    "pt": {
+     "t": "O problema que desencadeia tudo",
+     "g": "Cria um desafio que ponha a história em movimento.",
+     "p": [
+      "Sem problema, uma história fica parada como um barco numa baía calma.",
+      "O problema deve bloquear com clareza o desejo da personagem.",
+      "Problemas simpáticos funcionam bem: um mapa perdido, uma porta emperrada."
+     ],
+     "q": "Que pequeno problema podia impedir o teu herói de alcançar o desejo?",
+     "c": "Escreve o momento em que o problema surge, em duas ou três frases."
+    },
+    "pt_BR": {
+     "t": "O problema que começa tudo",
+     "g": "Crie um desafio que ponha a história em movimento.",
+     "p": [
+      "Sem problema, uma história fica parada como um barco numa baía calma.",
+      "O problema deve bloquear com clareza o desejo do personagem.",
+      "Problemas leves funcionam bem: um mapa perdido, uma porta emperrada."
+     ],
+     "q": "Que pequeno problema poderia impedir seu herói de realizar o desejo?",
+     "c": "Escreva o momento em que o problema aparece, em duas ou três frases."
+    }
+   }
+  }
+ ]
+}

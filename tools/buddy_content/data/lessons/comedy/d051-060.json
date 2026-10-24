@@ -1,0 +1,835 @@
+{
+ "topic": "comedy",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Malapropisms",
+     "g": "Learn about using a similar-sounding wrong word, named after Mrs Malaprop in a 1775 play.",
+     "p": [
+      "A malapropism swaps a word for a similar-sounding one with a funny result.",
+      "Mrs Malaprop appears in Sheridan's play The Rivals, from 1775.",
+      "Example: he is the pineapple of politeness, instead of pinnacle."
+     ],
+     "q": "Mrs Malaprop said a nice derangement of epitaphs. Can you guess the words she meant?",
+     "c": "Make one gentle malapropism on purpose today and see if anyone smiles."
+    },
+    "de": {
+     "t": "Malapropismen",
+     "g": "Das Benutzen eines ähnlich klingenden falschen Wortes kennenlernen, benannt nach Mrs Malaprop in einem Stück von 1775.",
+     "p": [
+      "Ein Malapropismus ersetzt ein Wort durch ein ähnlich klingendes mit komischem Ergebnis.",
+      "Mrs Malaprop kommt in Sheridans Stück The Rivals von 1775 vor.",
+      "Beispiel im Englischen: pineapple of politeness statt pinnacle, Ananas statt Gipfel."
+     ],
+     "q": "Im Deutschen etwa: Ich trinke gern einen Kamel-Tee statt Kamillentee.",
+     "c": "Bilde heute absichtlich einen sanften Malapropismus und schau, ob jemand lächelt."
+    },
+    "es": {
+     "t": "Malapropismos",
+     "g": "Conocer el uso de una palabra errónea de sonido parecido, nombrado por la señora Malaprop en una obra de 1775.",
+     "p": [
+      "Un malapropismo cambia una palabra por otra de sonido parecido con un resultado gracioso.",
+      "La señora Malaprop aparece en la obra de Sheridan Los rivales, de 1775.",
+      "Ejemplo en inglés: pineapple of politeness en lugar de pinnacle, piña en vez de cumbre."
+     ],
+     "q": "En español: Quiero un té de camello en lugar de un té de camomila.",
+     "c": "Haz hoy a propósito un malapropismo suave y mira si alguien sonríe."
+    },
+    "fr": {
+     "t": "Les malapropismes",
+     "g": "Découvrir l'emploi d'un mot faux mais ressemblant, nom tiré de Mrs Malaprop dans une pièce de 1775.",
+     "p": [
+      "Un malapropisme remplace un mot par un autre qui lui ressemble, avec un effet drôle.",
+      "Mrs Malaprop apparaît dans la pièce de Sheridan Les Rivaux, de 1775.",
+      "Exemple en anglais : pineapple of politeness au lieu de pinnacle, ananas au lieu de sommet."
+     ],
+     "q": "En français : Je vais au marché aux pouces au lieu du marché aux puces.",
+     "c": "Fais aujourd'hui exprès un malapropisme doux et regarde si quelqu'un sourit."
+    },
+    "it": {
+     "t": "Malapropismi",
+     "g": "Scoprire l'uso di una parola sbagliata dal suono simile, nome preso da Mrs Malaprop in un'opera del 1775.",
+     "p": [
+      "Un malapropismo sostituisce una parola con una dal suono simile con effetto buffo.",
+      "Mrs Malaprop compare nell'opera di Sheridan I rivali, del 1775.",
+      "Esempio in inglese: pineapple of politeness al posto di pinnacle, ananas al posto di vertice."
+     ],
+     "q": "In italiano: Che bella mozzarella di bufera, al posto di mozzarella di bufala!",
+     "c": "Fai oggi apposta un malapropismo gentile e guarda se qualcuno sorride."
+    },
+    "pt": {
+     "t": "Malapropismos",
+     "g": "Conhecer o uso de uma palavra errada de som parecido, nome dado pela Sra. Malaprop numa peça de 1775.",
+     "p": [
+      "Um malapropismo troca uma palavra por outra de som parecido com um resultado engraçado.",
+      "A Sra. Malaprop aparece na peça de Sheridan Os Rivais, de 1775.",
+      "Exemplo em inglês: pineapple of politeness em vez de pinnacle, ananás em vez de auge."
+     ],
+     "q": "Em português: Quero um chá de camelo em vez de um chá de camomila.",
+     "c": "Faz hoje de propósito um malapropismo suave e vê se alguém sorri."
+    },
+    "pt_BR": {
+     "t": "Malapropismos",
+     "g": "Conhecer o uso de uma palavra errada de som parecido, nome dado pela Sra. Malaprop numa peça de 1775.",
+     "p": [
+      "Um malapropismo troca uma palavra por outra de som parecido com um resultado engraçado.",
+      "A Sra. Malaprop aparece na peça de Sheridan Os Rivais, de 1775.",
+      "Exemplo em inglês: pineapple of politeness em vez de pinnacle, abacaxi em vez de auge."
+     ],
+     "q": "Em português: Quero um chá de camelo em vez de um chá de camomila.",
+     "c": "Faça hoje de propósito um malapropismo suave e veja se alguém sorri."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Double meanings",
+     "g": "See sentences that can be read two ways, as headlines sometimes do by accident.",
+     "p": [
+      "Some sentences have two readings, and the surprise comes from the second one.",
+      "Example: I saw the man with binoculars. Who had the binoculars?",
+      "Newspaper headlines are short, so they sometimes become funny by mistake."
+     ],
+     "q": "Can you write one sentence that can be read in two ways?",
+     "c": "Write a sentence with two readings and ask a friend which one they saw first."
+    },
+    "de": {
+     "t": "Doppeldeutigkeiten",
+     "g": "Sätze sehen, die sich auf zwei Weisen lesen lassen, wie es Schlagzeilen manchmal ungewollt tun.",
+     "p": [
+      "Manche Sätze haben zwei Lesarten, und die Überraschung kommt von der zweiten.",
+      "Beispiel: Ich sah den Mann mit dem Fernglas. Wer hatte das Fernglas?",
+      "Zeitungsschlagzeilen sind kurz, deshalb werden sie manchmal aus Versehen komisch."
+     ],
+     "q": "Kannst du einen Satz schreiben, der sich auf zwei Weisen lesen lässt?",
+     "c": "Schreib einen Satz mit zwei Lesarten und frag einen Freund, welche er zuerst sah."
+    },
+    "es": {
+     "t": "Dobles sentidos",
+     "g": "Ver frases que pueden leerse de dos maneras, como a veces hacen los titulares sin querer.",
+     "p": [
+      "Algunas frases tienen dos lecturas, y la sorpresa viene de la segunda.",
+      "Ejemplo: Vi al hombre con prismáticos. ¿Quién tenía los prismáticos?",
+      "Los titulares de prensa son cortos, así que a veces resultan graciosos por error."
+     ],
+     "q": "¿Puedes escribir una frase que se pueda leer de dos maneras?",
+     "c": "Escribe una frase con dos lecturas y pregunta a un amigo cuál vio primero."
+    },
+    "fr": {
+     "t": "Les doubles sens",
+     "g": "Voir des phrases qui se lisent de deux façons, comme le font parfois les titres de presse sans le vouloir.",
+     "p": [
+      "Certaines phrases ont deux lectures, et la surprise vient de la seconde.",
+      "Exemple : j'ai vu l'homme avec des jumelles. Qui avait les jumelles ?",
+      "Les titres de presse sont courts, donc ils deviennent parfois drôles par erreur."
+     ],
+     "q": "Peux-tu écrire une phrase qui se lit de deux façons ?",
+     "c": "Écris une phrase à deux lectures et demande à un ami laquelle il a vue en premier."
+    },
+    "it": {
+     "t": "I doppi sensi",
+     "g": "Vedere frasi che si possono leggere in due modi, come a volte fanno senza volere i titoli dei giornali.",
+     "p": [
+      "Alcune frasi hanno due letture, e la sorpresa viene dalla seconda.",
+      "Esempio: ho visto l'uomo con il binocolo. Chi aveva il binocolo?",
+      "I titoli dei giornali sono brevi, quindi a volte diventano buffi per errore."
+     ],
+     "q": "Riesci a scrivere una frase che si può leggere in due modi?",
+     "c": "Scrivi una frase con due letture e chiedi a un amico quale ha visto per prima."
+    },
+    "pt": {
+     "t": "Duplos sentidos",
+     "g": "Ver frases que se podem ler de duas maneiras, como às vezes fazem os títulos de jornal sem querer.",
+     "p": [
+      "Algumas frases têm duas leituras, e a surpresa vem da segunda.",
+      "Exemplo: vi o homem com binóculos. Quem tinha os binóculos?",
+      "Os títulos de jornal são curtos, por isso por vezes ficam engraçados por engano."
+     ],
+     "q": "Consegues escrever uma frase que se possa ler de duas maneiras?",
+     "c": "Escreve uma frase com duas leituras e pergunta a um amigo qual viu primeiro."
+    },
+    "pt_BR": {
+     "t": "Duplos sentidos",
+     "g": "Ver frases que podem ser lidas de duas maneiras, como às vezes fazem as manchetes sem querer.",
+     "p": [
+      "Algumas frases têm duas leituras, e a surpresa vem da segunda.",
+      "Exemplo: vi o homem com binóculo. Quem estava com o binóculo?",
+      "Manchetes de jornal são curtas, por isso às vezes ficam engraçadas por engano."
+     ],
+     "q": "Você consegue escrever uma frase que possa ser lida de duas maneiras?",
+     "c": "Escreva uma frase com duas leituras e pergunte a um amigo qual ele viu primeiro."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Homophones",
+     "g": "Meet words that sound the same but differ in spelling and meaning.",
+     "p": [
+      "Pear, pair and pare sound the same but mean fruit, two, and peel.",
+      "Homophones power puns: why was six afraid of seven? Because seven ate nine.",
+      "Seven eight nine sounds like seven ate nine."
+     ],
+     "q": "Can you find another trio or pair of words that sound the same?",
+     "c": "Write one sentence that uses two homophones, like: I ate eight pears."
+    },
+    "de": {
+     "t": "Homophone",
+     "g": "Wörter kennenlernen, die gleich klingen, aber verschieden geschrieben werden und Verschiedenes bedeuten.",
+     "p": [
+      "Seen und sehen, Meer und mehr, Lerche und Lärche: gleich oder ähnlich klingende Wörter mit anderer Bedeutung.",
+      "Beispiel: Meer und mehr klingen gleich, deshalb gibt es Witze wie: Wo ist mehr Wasser? Im Meer.",
+      "Homophone treiben Wortspiele an, weil ein Klang zwei Bilder zeigt."
+     ],
+     "q": "Findest du noch ein Paar Wörter, die gleich klingen?",
+     "c": "Schreib einen Satz mit zwei Homophonen, etwa: Das Meer hat mehr Wellen als der See."
+    },
+    "es": {
+     "t": "Homófonos",
+     "g": "Conocer palabras que suenan igual pero se escriben distinto y significan cosas distintas.",
+     "p": [
+      "Vaca y baca, tubo y tuvo, hola y ola suenan igual pero significan cosas distintas.",
+      "Los homófonos impulsan los juegos de palabras: El mar saluda con una ola: es un hola sin h.",
+      "Un mismo sonido muestra dos imágenes, y eso despierta la sonrisa."
+     ],
+     "q": "¿Encuentras otro par de palabras que suenen igual?",
+     "c": "Escribe una frase con dos homófonos, como: la ola dijo hola a la playa."
+    },
+    "fr": {
+     "t": "Les homophones",
+     "g": "Découvrir des mots qui sonnent pareil mais diffèrent par l'orthographe et le sens.",
+     "p": [
+      "Vert, verre, ver et vers sonnent pareil mais signifient couleur, objet, animal et direction.",
+      "Les homophones alimentent les jeux de mots : le ver vert va vers le verre vert, quatre mots qui sonnent pareil.",
+      "Un même son montre deux images, et cela fait naître le sourire."
+     ],
+     "q": "Trouves-tu un autre groupe de mots qui sonnent pareil ?",
+     "c": "Écris une phrase avec deux homophones, comme : le ver vert est dans le verre."
+    },
+    "it": {
+     "t": "Gli omofoni",
+     "g": "Conoscere parole che suonano uguali ma si scrivono e significano in modo diverso.",
+     "p": [
+      "In italiano gli omofoni sono pochi, ma ci sono: hanno e anno, ho e o, ha e a.",
+      "In inglese pear, pair e pare suonano uguali ma significano pera, paio e sbucciare.",
+      "Un solo suono mostra due immagini, e questo fa nascere il sorriso."
+     ],
+     "q": "Riesci a trovare un'altra coppia di parole che suonano uguale?",
+     "c": "Scrivi una frase con hanno e anno: Gli amici hanno festeggiato un anno insieme."
+    },
+    "pt": {
+     "t": "Homófonos",
+     "g": "Conhecer palavras que soam igual mas se escrevem e significam de forma diferente.",
+     "p": [
+      "Cesta e sexta, cem e sem, acento e assento soam igual ou quase, mas têm sentidos distintos.",
+      "Os homófonos alimentam os jogos de palavras: o que é que o cem disse ao sem? Nada, ficou sem resposta.",
+      "Um mesmo som mostra duas imagens, e isso faz nascer o sorriso."
+     ],
+     "q": "Encontras outro par de palavras que soem igual?",
+     "c": "Escreve uma frase com dois homófonos, como: sem cem euros não há viagem."
+    },
+    "pt_BR": {
+     "t": "Homófonos",
+     "g": "Conhecer palavras que soam igual mas se escrevem e significam de forma diferente.",
+     "p": [
+      "Cem e sem, concerto e conserto, cela e sela soam igual, mas têm sentidos distintos.",
+      "Os homófonos alimentam os jogos de palavras: o que o cem disse ao sem? Nada, ficou sem resposta.",
+      "Um mesmo som mostra duas imagens, e isso faz nascer o sorriso."
+     ],
+     "q": "Você acha outro par de palavras que soem igual?",
+     "c": "Escreva uma frase com dois homófonos, como: sem cem reais não tem passeio."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Homographs",
+     "g": "Discover same spelling but different meaning: how bat and bark power many jokes.",
+     "p": [
+      "A bat can be an animal or a stick for baseball, one spelling, two things.",
+      "Bark can be a dog's sound or the outside of a tree.",
+      "Example: what do trees wear at the beach? Swim trunks, since a trunk is also a tree's body."
+     ],
+     "q": "Can you find a word in your language that has two meanings?",
+     "c": "Write a two-line joke using a word with two meanings, like bat or bark."
+    },
+    "de": {
+     "t": "Homografe",
+     "g": "Entdecken: gleiche Schreibweise, verschiedene Bedeutung, und wie Schloss und Bank viele Witze antreiben.",
+     "p": [
+      "Ein Schloss kann ein Gebäude oder ein Türschloss sein, eine Schreibweise, zwei Dinge.",
+      "Eine Bank kann zum Sitzen dienen oder Geld verwalten.",
+      "Beispiel: Warum geht die Bank nie spazieren? Sie bleibt lieber sitzen, sie ist ja eine Bank."
+     ],
+     "q": "Findest du in deiner Sprache ein Wort mit zwei Bedeutungen?",
+     "c": "Schreib einen Zweizeiler mit einem Wort mit zwei Bedeutungen, etwa Schloss oder Bank."
+    },
+    "es": {
+     "t": "Homógrafos",
+     "g": "Descubrir la misma escritura con distinto significado: cómo banco y gato impulsan muchos chistes.",
+     "p": [
+      "Un banco puede ser para sentarse o para guardar dinero, una escritura y dos cosas.",
+      "Un gato puede ser un animal o una herramienta para levantar el coche.",
+      "Ejemplo: ¿Por qué el banco nunca se cansa? Porque siempre está sentado esperando clientes."
+     ],
+     "q": "¿Encuentras en tu idioma una palabra con dos significados?",
+     "c": "Escribe un chiste de dos líneas con una palabra de dos significados, como banco o gato."
+    },
+    "fr": {
+     "t": "Les homographes",
+     "g": "Découvrir la même orthographe avec un sens différent : comment avocat et souris alimentent beaucoup de blagues.",
+     "p": [
+      "Un avocat peut être un fruit ou un juriste, une orthographe, deux choses.",
+      "Une souris peut être un animal ou un objet d'ordinateur.",
+      "Exemple : que dit la souris à l'ordinateur ? Clique-moi dessus, je suis ton fan !"
+     ],
+     "q": "Trouves-tu dans ta langue un mot à deux sens ?",
+     "c": "Écris une blague de deux lignes avec un mot à deux sens, comme avocat ou souris."
+    },
+    "it": {
+     "t": "Gli omografi",
+     "g": "Scoprire la stessa scrittura con significati diversi: come banco e pesca alimentano molte barzellette.",
+     "p": [
+      "La pesca può essere un frutto o l'attività del pescatore, una scrittura, due cose.",
+      "Un banco può essere il tavolo di scuola o quello del mercato.",
+      "Esempio: cosa dice il pescatore alla pesca? Oggi ti pesco!"
+     ],
+     "q": "Trovi nella tua lingua una parola con due significati?",
+     "c": "Scrivi una barzelletta di due righe con una parola a doppio significato, come pesca o banco."
+    },
+    "pt": {
+     "t": "Homógrafos",
+     "g": "Descobrir a mesma escrita com sentidos diferentes: como manga e vela alimentam muitas piadas.",
+     "p": [
+      "A manga pode ser uma fruta ou parte de uma camisa, uma escrita, duas coisas.",
+      "A vela pode ser de barco ou de cera, e acende ou navega.",
+      "Exemplo: porque é que a camisa gosta de fruta? Porque tem manga."
+     ],
+     "q": "Encontras na tua língua uma palavra com dois sentidos?",
+     "c": "Escreve uma piada de duas linhas com uma palavra de dois sentidos, como manga ou vela."
+    },
+    "pt_BR": {
+     "t": "Homógrafos",
+     "g": "Descobrir a mesma escrita com sentidos diferentes: como manga e vela alimentam muitas piadas.",
+     "p": [
+      "A manga pode ser uma fruta ou parte de uma camisa, uma escrita, duas coisas.",
+      "A vela pode ser de barco ou de cera, e acende ou navega.",
+      "Exemplo: por que a camisa gosta de fruta? Porque tem manga."
+     ],
+     "q": "Você encontra na sua língua uma palavra com dois sentidos?",
+     "c": "Escreva uma piada de duas linhas com uma palavra de dois sentidos, como manga ou vela."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Visual puns",
+     "g": "See drawings and photos that play on words, from cartoons to shop signs.",
+     "p": [
+      "A visual pun shows a picture that matches two meanings at once.",
+      "Think of a hair salon called Curl Up and Dye, a name that plays on a phrase.",
+      "Cartoons often draw an idiom literally, like a person with a frog in their throat."
+     ],
+     "q": "Which shop name or picture has made you smile because of a pun?",
+     "c": "Sketch a quick doodle of a pun, like a pair of pears, and show someone."
+    },
+    "de": {
+     "t": "Bildwortspiele",
+     "g": "Zeichnungen und Fotos sehen, die mit Wörtern spielen, von Cartoons bis zu Ladenschildern.",
+     "p": [
+      "Ein Bildwortspiel zeigt ein Bild, das gleichzeitig zu zwei Bedeutungen passt.",
+      "Denk an einen Friseursalon namens Haarmonie, ein Name, der mit einem Wort spielt.",
+      "Cartoons zeichnen oft eine Redewendung wörtlich, etwa jemanden mit einem Frosch im Hals."
+     ],
+     "q": "Welcher Ladenname oder welches Bild hat dich wegen eines Wortspiels zum Lächeln gebracht?",
+     "c": "Zeichne ein schnelles Kritzelbild zu einem Wortspiel, etwa ein Paar Birnen, und zeig es jemandem."
+    },
+    "es": {
+     "t": "Juegos de palabras visuales",
+     "g": "Ver dibujos y fotos que juegan con las palabras, de las viñetas a los rótulos de tiendas.",
+     "p": [
+      "Un juego visual muestra una imagen que encaja con dos significados a la vez.",
+      "Piensa en una peluquería llamada Rizando el Rizo, un nombre que juega con una frase.",
+      "Las viñetas suelen dibujar una expresión de forma literal, como alguien con un nudo en la garganta."
+     ],
+     "q": "¿Qué nombre de tienda o imagen te ha hecho sonreír por un juego de palabras?",
+     "c": "Dibuja un garabato rápido de un juego de palabras, como un par de peras, y enséñaselo a alguien."
+    },
+    "fr": {
+     "t": "Les jeux de mots visuels",
+     "g": "Voir des dessins et photos qui jouent avec les mots, des dessins humoristiques aux enseignes.",
+     "p": [
+      "Un jeu de mots visuel montre une image qui correspond à deux sens à la fois.",
+      "Pense à un salon de coiffure nommé Hair du Temps, un nom qui joue avec une expression.",
+      "Les dessinateurs dessinent souvent une expression au pied de la lettre, comme quelqu'un avec un chat dans la gorge."
+     ],
+     "q": "Quel nom de magasin ou quelle image t'a fait sourire grâce à un jeu de mots ?",
+     "c": "Fais un petit gribouillis d'un jeu de mots, comme une paire de poires, et montre-le à quelqu'un."
+    },
+    "it": {
+     "t": "Giochi di parole visivi",
+     "g": "Vedere disegni e foto che giocano con le parole, dai fumetti alle insegne dei negozi.",
+     "p": [
+      "Un gioco di parole visivo mostra un'immagine che si adatta a due significati insieme.",
+      "Pensa a un parrucchiere chiamato Capelli e Capricci, un nome che gioca con le parole.",
+      "I vignettisti spesso disegnano un modo di dire alla lettera, come qualcuno con un rospo in gola."
+     ],
+     "q": "Quale nome di negozio o immagine ti ha fatto sorridere per un gioco di parole?",
+     "c": "Fai uno schizzo veloce di un gioco di parole, come un paio di pere, e mostralo a qualcuno."
+    },
+    "pt": {
+     "t": "Trocadilhos visuais",
+     "g": "Ver desenhos e fotografias que brincam com as palavras, dos cartoons às tabuletas de lojas.",
+     "p": [
+      "Um trocadilho visual mostra uma imagem que combina com dois sentidos ao mesmo tempo.",
+      "Pensa num cabeleireiro chamado Corte e Costura, um nome que brinca com uma frase.",
+      "Os cartoons desenham muitas vezes uma expressão à letra, como alguém com um nó na garganta."
+     ],
+     "q": "Que nome de loja ou imagem te fez sorrir por causa de um trocadilho?",
+     "c": "Faz um rabisco rápido de um trocadilho, como um par de peras, e mostra a alguém."
+    },
+    "pt_BR": {
+     "t": "Trocadilhos visuais",
+     "g": "Ver desenhos e fotos que brincam com as palavras, dos cartuns às placas de lojas.",
+     "p": [
+      "Um trocadilho visual mostra uma imagem que combina com dois sentidos ao mesmo tempo.",
+      "Pense num salão de cabeleireiro chamado Corte e Costura, um nome que brinca com uma frase.",
+      "Cartuns desenham muitas vezes uma expressão ao pé da letra, como alguém com um nó na garganta."
+     ],
+     "q": "Que nome de loja ou imagem fez você sorrir por causa de um trocadilho?",
+     "c": "Faça um rabisco rápido de um trocadilho, como um par de peras, e mostre para alguém."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Funny signs and labels",
+     "g": "Enjoy amusing real-world signs and see why unclear wording makes people smile.",
+     "p": [
+      "Short signs can be read in two ways when words are missing.",
+      "Example: a sign reading Slow children at play can seem to describe the children.",
+      "Clear commas and extra words make a sign both safe and not funny."
+     ],
+     "q": "Have you seen a sign or label that made you laugh?",
+     "c": "Notice one sign today and rewrite it with a funny but harmless second meaning."
+    },
+    "de": {
+     "t": "Lustige Schilder und Etiketten",
+     "g": "Amüsante Schilder aus dem Alltag genießen und sehen, warum unklare Formulierungen zum Lächeln bringen.",
+     "p": [
+      "Kurze Schilder lassen sich zweifach lesen, wenn Wörter fehlen.",
+      "Beispiel: Ein Schild mit Langsam, Kinder spielen kann so klingen, als wären die Kinder langsam.",
+      "Klare Kommas und zusätzliche Wörter machen ein Schild sicher, aber nicht lustig."
+     ],
+     "q": "Hast du schon ein Schild oder Etikett gesehen, das dich zum Lachen brachte?",
+     "c": "Bemerke heute ein Schild und schreib es mit einer lustigen, harmlosen zweiten Bedeutung um."
+    },
+    "es": {
+     "t": "Letreros y etiquetas graciosos",
+     "g": "Disfrutar de letreros divertidos del mundo real y ver por qué las frases poco claras hacen sonreír.",
+     "p": [
+      "Los letreros cortos pueden leerse de dos maneras cuando faltan palabras.",
+      "Ejemplo: un letrero que dice Despacio, niños jugando puede sonar como si los niños fueran lentos.",
+      "Las comas claras y las palabras extra hacen un letrero seguro pero nada gracioso."
+     ],
+     "q": "¿Has visto algún letrero o etiqueta que te hiciera reír?",
+     "c": "Fíjate hoy en un letrero y reescríbelo con un segundo sentido gracioso pero inofensivo."
+    },
+    "fr": {
+     "t": "Panneaux et étiquettes drôles",
+     "g": "Savourer des panneaux amusants du monde réel et voir pourquoi un texte peu clair fait sourire.",
+     "p": [
+      "Les panneaux courts peuvent se lire de deux façons quand des mots manquent.",
+      "Exemple : un panneau Lentement, enfants jouant peut sembler décrire des enfants lents.",
+      "Des virgules claires et des mots en plus rendent un panneau sûr mais pas drôle."
+     ],
+     "q": "As-tu déjà vu un panneau ou une étiquette qui t'a fait rire ?",
+     "c": "Remarque aujourd'hui un panneau et réécris-le avec un second sens drôle mais inoffensif."
+    },
+    "it": {
+     "t": "Cartelli ed etichette buffi",
+     "g": "Godersi cartelli divertenti del mondo reale e vedere perché le frasi poco chiare fanno sorridere.",
+     "p": [
+      "I cartelli brevi si possono leggere in due modi quando mancano parole.",
+      "Esempio: un cartello con scritto Piano, bambini che giocano può sembrare descrivere bambini lenti.",
+      "Virgole chiare e parole in più rendono un cartello sicuro ma non buffo."
+     ],
+     "q": "Hai mai visto un cartello o un'etichetta che ti ha fatto ridere?",
+     "c": "Nota oggi un cartello e riscrivilo con un secondo significato buffo ma innocuo."
+    },
+    "pt": {
+     "t": "Placas e rótulos engraçados",
+     "g": "Apreciar placas divertidas do mundo real e ver porque frases pouco claras fazem sorrir.",
+     "p": [
+      "As placas curtas podem ler-se de duas maneiras quando faltam palavras.",
+      "Exemplo: uma placa com Devagar, crianças a brincar pode parecer descrever crianças lentas.",
+      "Vírgulas claras e palavras a mais tornam a placa segura mas nada engraçada."
+     ],
+     "q": "Já viste uma placa ou um rótulo que te fez rir?",
+     "c": "Repara hoje numa placa e reescreve-a com um segundo sentido engraçado mas inofensivo."
+    },
+    "pt_BR": {
+     "t": "Placas e rótulos engraçados",
+     "g": "Curtir placas divertidas do mundo real e ver por que frases pouco claras fazem sorrir.",
+     "p": [
+      "Placas curtas podem ser lidas de duas maneiras quando faltam palavras.",
+      "Exemplo: uma placa com Devagar, crianças brincando pode parecer descrever crianças lentas.",
+      "Vírgulas claras e palavras a mais deixam a placa segura mas nada engraçada."
+     ],
+     "q": "Você já viu uma placa ou rótulo que fez você rir?",
+     "c": "Repare hoje numa placa e reescreva com um segundo sentido engraçado mas inofensivo."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Playful teasing",
+     "g": "Learn friendly banter between people who know each other well, and its golden rules.",
+     "p": [
+      "Teasing works only between people who trust each other.",
+      "Golden rule one: tease about harmless things, never about real worries.",
+      "Golden rule two: stop at once if the other person does not smile."
+     ],
+     "q": "How do your closest friends tease you in a way that feels warm?",
+     "c": "Give one friend a very gentle, affectionate tease today and check they smile."
+    },
+    "de": {
+     "t": "Freundliches Necken",
+     "g": "Freundliches Geplänkel zwischen Menschen lernen, die sich gut kennen, und seine goldenen Regeln.",
+     "p": [
+      "Necken funktioniert nur zwischen Menschen, die einander vertrauen.",
+      "Goldene Regel eins: Neck über harmlose Dinge, nie über echte Sorgen.",
+      "Goldene Regel zwei: Hör sofort auf, wenn der andere nicht lächelt."
+     ],
+     "q": "Wie necken dich deine engsten Freunde auf eine warme Art?",
+     "c": "Neck heute einen Freund ganz sanft und liebevoll und achte darauf, dass er lächelt."
+    },
+    "es": {
+     "t": "Bromas cariñosas",
+     "g": "Aprender el juego amistoso entre personas que se conocen bien y sus reglas de oro.",
+     "p": [
+      "Las bromas funcionan solo entre personas que confían unas en otras.",
+      "Regla de oro uno: bromea con cosas inofensivas, nunca con preocupaciones reales.",
+      "Regla de oro dos: para de inmediato si la otra persona no sonríe."
+     ],
+     "q": "¿Cómo te toman el pelo tus amigos más cercanos de una forma cálida?",
+     "c": "Haz hoy a un amigo una broma muy suave y cariñosa y comprueba que sonría."
+    },
+    "fr": {
+     "t": "Taquineries amicales",
+     "g": "Apprendre la plaisanterie amicale entre personnes qui se connaissent bien et ses règles d'or.",
+     "p": [
+      "La taquinerie ne marche qu'entre personnes qui se font confiance.",
+      "Règle d'or numéro un : taquine sur des choses inoffensives, jamais sur de vraies inquiétudes.",
+      "Règle d'or numéro deux : arrête-toi tout de suite si l'autre ne sourit pas."
+     ],
+     "q": "Comment tes amis les plus proches te taquinent-ils avec chaleur ?",
+     "c": "Taquine aujourd'hui un ami très doucement, avec affection, et vérifie qu'il sourit."
+    },
+    "it": {
+     "t": "Prese in giro affettuose",
+     "g": "Imparare lo scherzo amichevole tra persone che si conoscono bene e le sue regole d'oro.",
+     "p": [
+      "Le prese in giro funzionano solo tra persone che si fidano l'una dell'altra.",
+      "Regola d'oro uno: scherza su cose innocue, mai su preoccupazioni vere.",
+      "Regola d'oro due: fermati subito se l'altro non sorride."
+     ],
+     "q": "Come ti prendono in giro con calore i tuoi amici più stretti?",
+     "c": "Oggi prendi in giro un amico in modo dolce e affettuoso e controlla che sorrida."
+    },
+    "pt": {
+     "t": "Brincadeiras carinhosas",
+     "g": "Aprender o gracejo amigável entre pessoas que se conhecem bem e as suas regras de ouro.",
+     "p": [
+      "As brincadeiras só funcionam entre pessoas que confiam umas nas outras.",
+      "Regra de ouro um: brinca com coisas inofensivas, nunca com preocupações verdadeiras.",
+      "Regra de ouro dois: pára de imediato se a outra pessoa não sorrir."
+     ],
+     "q": "Como é que os teus amigos mais próximos brincam contigo de forma calorosa?",
+     "c": "Faz hoje a um amigo uma brincadeira muito suave e carinhosa e verifica se ele sorri."
+    },
+    "pt_BR": {
+     "t": "Brincadeiras carinhosas",
+     "g": "Aprender a zoeira amigável entre pessoas que se conhecem bem e suas regras de ouro.",
+     "p": [
+      "Brincadeiras só funcionam entre pessoas que confiam umas nas outras.",
+      "Regra de ouro um: brinque com coisas inofensivas, nunca com preocupações de verdade.",
+      "Regra de ouro dois: pare na hora se a outra pessoa não sorrir."
+     ],
+     "q": "Como seus amigos mais próximos brincam com você de um jeito carinhoso?",
+     "c": "Faça hoje com um amigo uma brincadeira bem suave e carinhosa e confira se ele sorri."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Compliments with a smile",
+     "g": "Add light humour to praise so it feels warm and memorable.",
+     "p": [
+      "A compliment with a playful twist is remembered longer.",
+      "Example: your cooking is so good that my diet has filed a complaint.",
+      "Keep the joke on yourself, never on the person you praise."
+     ],
+     "q": "What compliment has made you smile the most?",
+     "c": "Give one compliment with a gentle funny twist and watch the reaction."
+    },
+    "de": {
+     "t": "Komplimente mit einem Lächeln",
+     "g": "Leichten Humor ins Lob bringen, damit es warm und einprägsam wirkt.",
+     "p": [
+      "Ein Kompliment mit spielerischer Wendung bleibt länger im Gedächtnis.",
+      "Beispiel: Du kochst so gut, dass meine Diät Beschwerde eingelegt hat.",
+      "Mach den Witz auf eigene Kosten, nie auf Kosten der gelobten Person."
+     ],
+     "q": "Welches Kompliment hat dich am meisten zum Lächeln gebracht?",
+     "c": "Mach heute ein Kompliment mit sanfter, lustiger Wendung und beobachte die Reaktion."
+    },
+    "es": {
+     "t": "Cumplidos con una sonrisa",
+     "g": "Añadir humor ligero a los elogios para que resulten cálidos y memorables.",
+     "p": [
+      "Un cumplido con un giro juguetón se recuerda más tiempo.",
+      "Ejemplo: cocinas tan bien que mi dieta ha presentado una queja.",
+      "Haz la broma a tu costa, nunca a costa de la persona elogiada."
+     ],
+     "q": "¿Qué cumplido te hizo sonreír más?",
+     "c": "Haz hoy un cumplido con un suave giro gracioso y mira la reacción."
+    },
+    "fr": {
+     "t": "Des compliments avec le sourire",
+     "g": "Ajouter une touche d'humour aux compliments pour qu'ils soient chaleureux et mémorables.",
+     "p": [
+      "Un compliment avec une touche de fantaisie se retient plus longtemps.",
+      "Exemple : tu cuisines si bien que mon régime a déposé une plainte.",
+      "Fais la blague à tes dépens, jamais aux dépens de la personne complimentée."
+     ],
+     "q": "Quel compliment t'a le plus fait sourire ?",
+     "c": "Fais aujourd'hui un compliment avec une douce touche drôle et observe la réaction."
+    },
+    "it": {
+     "t": "Complimenti con il sorriso",
+     "g": "Aggiungere un po' di umorismo ai complimenti perché siano caldi e memorabili.",
+     "p": [
+      "Un complimento con una svolta giocosa si ricorda più a lungo.",
+      "Esempio: cucini così bene che la mia dieta ha presentato reclamo.",
+      "Fai lo scherzo a tue spese, mai a spese di chi lodi."
+     ],
+     "q": "Quale complimento ti ha fatto sorridere di più?",
+     "c": "Fai oggi un complimento con una dolce svolta buffa e osserva la reazione."
+    },
+    "pt": {
+     "t": "Elogios com um sorriso",
+     "g": "Juntar humor leve aos elogios para que soem calorosos e memoráveis.",
+     "p": [
+      "Um elogio com um toque brincalhão fica na memória por mais tempo.",
+      "Exemplo: cozinhas tão bem que a minha dieta apresentou queixa.",
+      "Faz a piada à tua custa, nunca à custa de quem elogias."
+     ],
+     "q": "Que elogio te fez sorrir mais?",
+     "c": "Faz hoje um elogio com um suave toque engraçado e observa a reação."
+    },
+    "pt_BR": {
+     "t": "Elogios com um sorriso",
+     "g": "Acrescentar humor leve aos elogios para que soem calorosos e memoráveis.",
+     "p": [
+      "Um elogio com um toque brincalhão fica na memória por mais tempo.",
+      "Exemplo: você cozinha tão bem que minha dieta abriu uma reclamação.",
+      "Faça a piada às suas custas, nunca às custas de quem você elogia."
+     ],
+     "q": "Que elogio fez você sorrir mais?",
+     "c": "Faça hoje um elogio com um suave toque engraçado e observe a reação."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Humour in greetings",
+     "g": "Break the ice with a gentle joke when meeting new people.",
+     "p": [
+      "A light remark in the first minute can relax everyone.",
+      "Good ice-breakers are about the shared moment: the weather, the queue or the snacks.",
+      "Keep it short, smile, and then ask a real question about the other person."
+     ],
+     "q": "What is the nicest way someone has ever broken the ice with you?",
+     "c": "Greet one new person today with a small, kind, funny remark about the shared situation."
+    },
+    "de": {
+     "t": "Humor bei der Begrüßung",
+     "g": "Das Eis mit einem sanften Witz brechen, wenn du neue Menschen triffst.",
+     "p": [
+      "Eine leichte Bemerkung in der ersten Minute kann alle entspannen.",
+      "Gute Eisbrecher betreffen den gemeinsamen Moment: das Wetter, die Schlange oder die Snacks.",
+      "Halte es kurz, lächle und stell dann eine echte Frage zur anderen Person."
+     ],
+     "q": "Wie hat jemand dir gegenüber einmal auf besonders nette Weise das Eis gebrochen?",
+     "c": "Begrüße heute eine neue Person mit einer kleinen, freundlichen, lustigen Bemerkung zur gemeinsamen Lage."
+    },
+    "es": {
+     "t": "Humor en los saludos",
+     "g": "Romper el hielo con un chiste suave al conocer a gente nueva.",
+     "p": [
+      "Un comentario ligero en el primer minuto puede relajar a todos.",
+      "Los buenos rompehielos hablan del momento compartido: el tiempo, la cola o los aperitivos.",
+      "Hazlo corto, sonríe y luego haz una pregunta real sobre la otra persona."
+     ],
+     "q": "¿Cuál es la manera más agradable en que alguien rompió el hielo contigo?",
+     "c": "Saluda hoy a alguien nuevo con un comentario pequeño, amable y gracioso sobre la situación compartida."
+    },
+    "fr": {
+     "t": "L'humour dans les salutations",
+     "g": "Briser la glace avec une blague douce quand tu rencontres de nouvelles personnes.",
+     "p": [
+      "Une remarque légère dans la première minute peut détendre tout le monde.",
+      "Les bons brise-glace portent sur le moment partagé : la météo, la file d'attente ou les petits fours.",
+      "Reste bref, souris, puis pose une vraie question sur l'autre personne."
+     ],
+     "q": "Quelle est la plus belle façon dont quelqu'un a brisé la glace avec toi ?",
+     "c": "Salue aujourd'hui une nouvelle personne avec une petite remarque gentille et drôle sur la situation partagée."
+    },
+    "it": {
+     "t": "L'umorismo nei saluti",
+     "g": "Rompere il ghiaccio con una battuta gentile quando conosci persone nuove.",
+     "p": [
+      "Una battuta leggera nel primo minuto può rilassare tutti.",
+      "I buoni rompighiaccio riguardano il momento condiviso: il meteo, la fila o gli stuzzichini.",
+      "Sii breve, sorridi, poi fai una vera domanda sull'altra persona."
+     ],
+     "q": "Qual è il modo più bello in cui qualcuno ha rotto il ghiaccio con te?",
+     "c": "Saluta oggi una persona nuova con una piccola battuta gentile e divertente sulla situazione condivisa."
+    },
+    "pt": {
+     "t": "O humor nas saudações",
+     "g": "Quebrar o gelo com uma piada suave ao conhecer pessoas novas.",
+     "p": [
+      "Um comentário leve no primeiro minuto pode descontrair todos.",
+      "Bons quebra-gelos falam do momento partilhado: o tempo, a fila ou os aperitivos.",
+      "Sê breve, sorri e depois faz uma pergunta verdadeira sobre a outra pessoa."
+     ],
+     "q": "Qual foi a forma mais simpática como alguém quebrou o gelo contigo?",
+     "c": "Cumprimenta hoje uma pessoa nova com um pequeno comentário simpático e engraçado sobre a situação partilhada."
+    },
+    "pt_BR": {
+     "t": "O humor nas saudações",
+     "g": "Quebrar o gelo com uma piada leve ao conhecer pessoas novas.",
+     "p": [
+      "Um comentário leve no primeiro minuto pode descontrair todo mundo.",
+      "Bons quebra-gelos falam do momento compartilhado: o clima, a fila ou os petiscos.",
+      "Seja breve, sorria e depois faça uma pergunta de verdade sobre a outra pessoa."
+     ],
+     "q": "Qual foi a forma mais simpática como alguém quebrou o gelo com você?",
+     "c": "Cumprimente hoje uma pessoa nova com um pequeno comentário simpático e engraçado sobre a situação compartilhada."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: humour across cultures",
+     "g": "Recap national styles and wordplay with a small challenge.",
+     "p": [
+      "Every culture has its own humour: dry in Britain, energetic in the US, wordplay in Germany and France.",
+      "Puns, homophones, idioms and false friends make languages playful.",
+      "Kindness travels everywhere: laugh with people and explain with warmth."
+     ],
+     "q": "Which culture's humour would you like to explore further, and why?",
+     "c": "Share one joke or wordplay from your culture with someone from another one."
+    },
+    "de": {
+     "t": "Wiederholung: Humor in den Kulturen",
+     "g": "Nationale Stile und Wortspiele mit einer kleinen Aufgabe wiederholen.",
+     "p": [
+      "Jede Kultur hat ihren eigenen Humor: trocken in Britannien, energiegeladen in den USA, Wortspiele in Deutschland und Frankreich.",
+      "Wortspiele, Homophone, Redewendungen und falsche Freunde machen Sprachen verspielt.",
+      "Freundlichkeit gilt überall: Lach mit den Menschen und erkläre mit Wärme."
+     ],
+     "q": "Den Humor welcher Kultur möchtest du weiter erkunden, und warum?",
+     "c": "Teile einen Witz oder ein Wortspiel aus deiner Kultur mit jemandem aus einer anderen."
+    },
+    "es": {
+     "t": "Repaso: humor entre culturas",
+     "g": "Repasar los estilos nacionales y los juegos de palabras con un pequeño reto.",
+     "p": [
+      "Cada cultura tiene su humor: seco en Gran Bretaña, enérgico en EE. UU., juegos de palabras en Alemania y Francia.",
+      "Los juegos de palabras, homófonos, modismos y falsos amigos hacen juguetones los idiomas.",
+      "La amabilidad viaja a todas partes: ríe con la gente y explica con calidez."
+     ],
+     "q": "¿El humor de qué cultura te gustaría explorar más, y por qué?",
+     "c": "Comparte un chiste o juego de palabras de tu cultura con alguien de otra."
+    },
+    "fr": {
+     "t": "Révision : l'humour entre cultures",
+     "g": "Revenir sur les styles nationaux et les jeux de mots avec un petit défi.",
+     "p": [
+      "Chaque culture a son humour : sec en Grande-Bretagne, énergique aux États-Unis, jeux de mots en Allemagne et en France.",
+      "Calembours, homophones, expressions imagées et faux amis rendent les langues joueuses.",
+      "La gentillesse voyage partout : ris avec les gens et explique avec chaleur."
+     ],
+     "q": "L'humour de quelle culture aimerais-tu explorer davantage, et pourquoi ?",
+     "c": "Partage une blague ou un jeu de mots de ta culture avec quelqu'un d'une autre."
+    },
+    "it": {
+     "t": "Ripasso: umorismo tra le culture",
+     "g": "Ripassare gli stili nazionali e i giochi di parole con una piccola sfida.",
+     "p": [
+      "Ogni cultura ha il suo umorismo: asciutto in Gran Bretagna, energico negli USA, giochi di parole in Germania e Francia.",
+      "Giochi di parole, omofoni, modi di dire e falsi amici rendono le lingue giocose.",
+      "La gentilezza viaggia ovunque: ridi con le persone e spiega con calore."
+     ],
+     "q": "L'umorismo di quale cultura vorresti esplorare di più, e perché?",
+     "c": "Condividi una barzelletta o un gioco di parole della tua cultura con qualcuno di un'altra."
+    },
+    "pt": {
+     "t": "Revisão: humor entre culturas",
+     "g": "Rever os estilos nacionais e os jogos de palavras com um pequeno desafio.",
+     "p": [
+      "Cada cultura tem o seu humor: seco na Grã-Bretanha, enérgico nos EUA, jogos de palavras na Alemanha e em França.",
+      "Trocadilhos, homófonos, expressões idiomáticas e falsos amigos tornam as línguas brincalhonas.",
+      "A simpatia viaja para todo o lado: ri com as pessoas e explica com carinho."
+     ],
+     "q": "O humor de que cultura gostarias de explorar mais, e porquê?",
+     "c": "Partilha uma piada ou um jogo de palavras da tua cultura com alguém de outra."
+    },
+    "pt_BR": {
+     "t": "Revisão: humor entre culturas",
+     "g": "Rever os estilos nacionais e os jogos de palavras com um pequeno desafio.",
+     "p": [
+      "Cada cultura tem o seu humor: seco na Grã-Bretanha, enérgico nos EUA, jogos de palavras na Alemanha e na França.",
+      "Trocadilhos, homófonos, expressões idiomáticas e falsos amigos deixam as línguas brincalhonas.",
+      "A gentileza viaja para todo lugar: ria com as pessoas e explique com carinho."
+     ],
+     "q": "O humor de que cultura você gostaria de explorar mais, e por quê?",
+     "c": "Compartilhe uma piada ou um jogo de palavras da sua cultura com alguém de outra."
+    }
+   }
+  }
+ ]
+}

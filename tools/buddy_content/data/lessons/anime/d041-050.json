@@ -1,0 +1,835 @@
+{
+ "topic": "anime",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Only Yesterday and Pom Poko",
+     "g": "Enjoy Takahata's childhood memories and playful raccoon dogs.",
+     "p": [
+      "Only Yesterday (1991) follows a woman remembering her childhood in the 1960s.",
+      "Pom Poko (1994) shows tanuki, Japanese raccoon dogs, using shape-shifting magic.",
+      "Both films celebrate memories, community and Japan's countryside."
+     ],
+     "q": "Which childhood memory would you put in a film about your life?",
+     "c": "Draw a tanuki shape-shifting into an everyday object like a teapot."
+    },
+    "de": {
+     "t": "Only Yesterday und Pom Poko",
+     "g": "Genieße Takahatas Kindheitserinnerungen und verspielte Marderhunde.",
+     "p": [
+      "Only Yesterday (1991) zeigt eine Frau, die sich an ihre Kindheit in den 1960ern erinnert.",
+      "Pom Poko (1994) zeigt Tanuki, japanische Marderhunde, mit Verwandlungszauber.",
+      "Beide Filme feiern Erinnerungen, Gemeinschaft und Japans Landschaft."
+     ],
+     "q": "Welche Kindheitserinnerung käme in einen Film über dein Leben?",
+     "c": "Zeichne einen Tanuki, der sich in einen Alltagsgegenstand wie eine Teekanne verwandelt."
+    },
+    "es": {
+     "t": "Only Yesterday y Pom Poko",
+     "g": "Disfruta de los recuerdos de infancia de Takahata y de unos tanuki juguetones.",
+     "p": [
+      "Only Yesterday (1991) sigue a una mujer que recuerda su infancia en los años 60.",
+      "Pom Poko (1994) muestra a los tanuki, mapaches japoneses, con magia de transformación.",
+      "Ambas celebran los recuerdos, la comunidad y el campo de Japón."
+     ],
+     "q": "¿Qué recuerdo de infancia pondrías en una película sobre tu vida?",
+     "c": "Dibuja un tanuki transformándose en un objeto cotidiano, como una tetera."
+    },
+    "fr": {
+     "t": "Only Yesterday et Pom Poko",
+     "g": "Savoure les souvenirs d'enfance de Takahata et des tanukis malicieux.",
+     "p": [
+      "Only Yesterday (1991) suit une femme qui se souvient de son enfance dans les années 1960.",
+      "Pom Poko (1994) montre des tanukis, chiens viverrins japonais, aux pouvoirs de métamorphose.",
+      "Les deux films célèbrent les souvenirs, la communauté et la campagne japonaise."
+     ],
+     "q": "Quel souvenir d'enfance mettrais-tu dans un film sur ta vie ?",
+     "c": "Dessine un tanuki qui se transforme en objet du quotidien, comme une théière."
+    },
+    "it": {
+     "t": "Only Yesterday e Pom Poko",
+     "g": "Goditi i ricordi d'infanzia di Takahata e i giocosi tanuki.",
+     "p": [
+      "Only Yesterday (1991) segue una donna che ricorda la sua infanzia negli anni Sessanta.",
+      "Pom Poko (1994) mostra i tanuki, i procioni giapponesi, con la magia della trasformazione.",
+      "Entrambi i film celebrano ricordi, comunità e campagna giapponese."
+     ],
+     "q": "Quale ricordo d'infanzia metteresti in un film sulla tua vita?",
+     "c": "Disegna un tanuki che si trasforma in un oggetto quotidiano, come una teiera."
+    },
+    "pt": {
+     "t": "Only Yesterday e Pom Poko",
+     "g": "Aprecia as memórias de infância de Takahata e os brincalhões tanuki.",
+     "p": [
+      "Only Yesterday (1991) segue uma mulher que recorda a infância nos anos 60.",
+      "Pom Poko (1994) mostra tanuki, cães-guaxinins japoneses, com magia de transformação.",
+      "Os dois filmes celebram memórias, comunidade e o campo do Japão."
+     ],
+     "q": "Que memória de infância porias num filme sobre a tua vida?",
+     "c": "Desenha um tanuki a transformar-se num objeto do dia a dia, como um bule."
+    },
+    "pt_BR": {
+     "t": "Only Yesterday e Pom Poko",
+     "g": "Curta as memórias de infância de Takahata e os brincalhões tanuki.",
+     "p": [
+      "Only Yesterday (1991) acompanha uma mulher que lembra a infância nos anos 60.",
+      "Pom Poko (1994) mostra tanuki, cães-guaxinins japoneses, com magia de transformação.",
+      "Os dois filmes celebram memórias, comunidade e o interior do Japão."
+     ],
+     "q": "Que memória de infância você poria num filme sobre a sua vida?",
+     "c": "Desenhe um tanuki se transformando num objeto do dia a dia, como um bule."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Tale of the Princess Kaguya",
+     "g": "Admire a watercolour-style retelling of Japan's oldest surviving tale.",
+     "p": [
+      "The 2013 film retells The Tale of the Bamboo Cutter, a story over a thousand years old.",
+      "A tiny girl found in a bamboo stalk grows into a princess.",
+      "Its sketchy, watercolour look took years of hand-drawn work."
+     ],
+     "q": "What would you paint to show a feeling without using words?",
+     "c": "Paint or colour a loose, sketch-like bamboo grove in two or three colours."
+    },
+    "de": {
+     "t": "Die Legende der Prinzessin Kaguya",
+     "g": "Bewundere die aquarellartige Neuerzählung der ältesten erhaltenen Erzählung Japans.",
+     "p": [
+      "Der Film von 2013 erzählt Das Märchen vom Bambusschneider, über tausend Jahre alt.",
+      "Ein winziges Mädchen aus einem Bambusstängel wächst zur Prinzessin heran.",
+      "Der skizzenhafte Aquarell-Look erforderte Jahre an Handarbeit."
+     ],
+     "q": "Was würdest du malen, um ohne Worte ein Gefühl zu zeigen?",
+     "c": "Male einen lockeren, skizzenhaften Bambushain in zwei oder drei Farben."
+    },
+    "es": {
+     "t": "El cuento de la princesa Kaguya",
+     "g": "Admira la versión en acuarela del cuento más antiguo conservado de Japón.",
+     "p": [
+      "La película de 2013 recrea El cuento del cortador de bambú, de más de mil años.",
+      "Una niña diminuta hallada en un tallo de bambú crece hasta ser princesa.",
+      "Su aspecto de boceto y acuarela costó años de trabajo a mano."
+     ],
+     "q": "¿Qué pintarías para mostrar un sentimiento sin palabras?",
+     "c": "Pinta un bosque de bambú suelto, como un boceto, con dos o tres colores."
+    },
+    "fr": {
+     "t": "Le Conte de la princesse Kaguya",
+     "g": "Admire la version aquarellée du plus ancien récit conservé du Japon.",
+     "p": [
+      "Le film de 2013 raconte Le Conte du coupeur de bambou, vieux de plus de mille ans.",
+      "Une minuscule fillette trouvée dans une tige de bambou devient princesse.",
+      "Son aspect d'esquisse aquarellée a demandé des années de travail à la main."
+     ],
+     "q": "Que peindrais-tu pour montrer un sentiment sans mots ?",
+     "c": "Peins une bambouseraie libre, comme une esquisse, avec deux ou trois couleurs."
+    },
+    "it": {
+     "t": "La storia della principessa Splendente",
+     "g": "Ammira la versione ad acquerello del più antico racconto giapponese conservato.",
+     "p": [
+      "Il film del 2013 rilegge Il racconto del tagliabambù, vecchio di oltre mille anni.",
+      "Una minuscola bambina trovata in una canna di bambù diventa principessa.",
+      "Il suo aspetto di bozzetto ad acquerello richiese anni di lavoro a mano."
+     ],
+     "q": "Cosa dipingeresti per mostrare un sentimento senza parole?",
+     "c": "Dipingi un bosco di bambù sciolto, come un bozzetto, con due o tre colori."
+    },
+    "pt": {
+     "t": "O Conto da Princesa Kaguya",
+     "g": "Admira a versão em aguarela do mais antigo conto conservado do Japão.",
+     "p": [
+      "O filme de 2013 recria O Conto do Cortador de Bambu, com mais de mil anos.",
+      "Uma menina minúscula encontrada num caule de bambu cresce até ser princesa.",
+      "O aspeto de esboço e aguarela exigiu anos de trabalho à mão."
+     ],
+     "q": "O que pintarias para mostrar um sentimento sem palavras?",
+     "c": "Pinta um bambuzal solto, como um esboço, com duas ou três cores."
+    },
+    "pt_BR": {
+     "t": "O Conto da Princesa Kaguya",
+     "g": "Admire a versão em aquarela do mais antigo conto conservado do Japão.",
+     "p": [
+      "O filme de 2013 recria O Conto do Cortador de Bambu, com mais de mil anos.",
+      "Uma menina minúscula achada num talo de bambu cresce até ser princesa.",
+      "O visual de esboço e aquarela exigiu anos de trabalho à mão."
+     ],
+     "q": "O que você pintaria para mostrar um sentimento sem palavras?",
+     "c": "Pinte um bambuzal solto, como um esboço, com duas ou três cores."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Whisper of the Heart",
+     "g": "Follow dreams, story-writing and violin making in Tokyo.",
+     "p": [
+      "Whisper of the Heart (1995) was directed by Yoshifumi Kondo.",
+      "Shizuku loves books and tries to write her first story while a boy dreams of making violins.",
+      "It encourages young people to practise, be patient and believe in their craft."
+     ],
+     "q": "What creative project would you like to try, even if it feels hard?",
+     "c": "Write the first three lines of a story and draw its main character."
+    },
+    "de": {
+     "t": "Flüstern des Herzens",
+     "g": "Folge Träumen, dem Geschichtenschreiben und dem Geigenbau in Tokio.",
+     "p": [
+      "Flüstern des Herzens (1995) wurde von Yoshifumi Kondo inszeniert.",
+      "Shizuku liebt Bücher und schreibt ihre erste Geschichte, während ein Junge vom Geigenbau träumt.",
+      "Der Film ermutigt junge Menschen zu üben, geduldig zu sein und an ihr Handwerk zu glauben."
+     ],
+     "q": "Welches kreative Projekt würdest du gern probieren, auch wenn es schwer scheint?",
+     "c": "Schreibe die ersten drei Zeilen einer Geschichte und zeichne die Hauptfigur."
+    },
+    "es": {
+     "t": "Susurros del corazón",
+     "g": "Sigue sueños, escritura de cuentos y fabricación de violines en Tokio.",
+     "p": [
+      "Susurros del corazón (1995) fue dirigida por Yoshifumi Kondo.",
+      "Shizuku ama los libros y escribe su primer cuento mientras un chico sueña con fabricar violines.",
+      "Anima a los jóvenes a practicar, tener paciencia y creer en su oficio."
+     ],
+     "q": "¿Qué proyecto creativo te gustaría probar, aunque parezca difícil?",
+     "c": "Escribe las tres primeras líneas de un cuento y dibuja a su protagonista."
+    },
+    "fr": {
+     "t": "Si tu tends l'oreille",
+     "g": "Suis des rêves, l'écriture d'histoires et la lutherie à Tokyo.",
+     "p": [
+      "Si tu tends l'oreille (1995) a été réalisé par Yoshifumi Kondo.",
+      "Shizuku aime les livres et écrit sa première histoire, tandis qu'un garçon rêve de faire des violons.",
+      "Le film encourage les jeunes à s'exercer, patienter et croire en leur art."
+     ],
+     "q": "Quel projet créatif aimerais-tu tenter, même s'il semble difficile ?",
+     "c": "Écris les trois premières lignes d'une histoire et dessine son personnage principal."
+    },
+    "it": {
+     "t": "I sospiri del mio cuore",
+     "g": "Segui sogni, scrittura di racconti e liuteria a Tokyo.",
+     "p": [
+      "I sospiri del mio cuore (1995) fu diretto da Yoshifumi Kondo.",
+      "Shizuku ama i libri e scrive il suo primo racconto, mentre un ragazzo sogna di costruire violini.",
+      "Incoraggia i giovani a esercitarsi, avere pazienza e credere nel loro mestiere."
+     ],
+     "q": "Quale progetto creativo vorresti provare, anche se sembra difficile?",
+     "c": "Scrivi le prime tre righe di un racconto e disegna il protagonista."
+    },
+    "pt": {
+     "t": "Sussurros do Coração",
+     "g": "Segue sonhos, escrita de histórias e construção de violinos em Tóquio.",
+     "p": [
+      "Sussurros do Coração (1995) foi realizado por Yoshifumi Kondo.",
+      "Shizuku adora livros e escreve a sua primeira história, enquanto um rapaz sonha construir violinos.",
+      "Incentiva os jovens a praticar, ter paciência e acreditar no seu ofício."
+     ],
+     "q": "Que projeto criativo gostarias de experimentar, mesmo parecendo difícil?",
+     "c": "Escreve as três primeiras linhas de uma história e desenha a personagem principal."
+    },
+    "pt_BR": {
+     "t": "Sussurros do Coração",
+     "g": "Siga sonhos, escrita de histórias e fabricação de violinos em Tóquio.",
+     "p": [
+      "Sussurros do Coração (1995) foi dirigido por Yoshifumi Kondo.",
+      "Shizuku adora livros e escreve sua primeira história, enquanto um garoto sonha em fazer violinos.",
+      "Incentiva os jovens a praticar, ter paciência e acreditar no seu ofício."
+     ],
+     "q": "Que projeto criativo você gostaria de experimentar, mesmo parecendo difícil?",
+     "c": "Escreva as três primeiras linhas de uma história e desenhe o personagem principal."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Secret World of Arrietty",
+     "g": "Meet tiny borrowers living under the floor of a house.",
+     "p": [
+      "The 2010 film is based on Mary Norton's novel The Borrowers.",
+      "Arrietty is a tiny girl who borrows small things from the humans above.",
+      "It shows how big everyday objects feel when you are only a few centimetres tall."
+     ],
+     "q": "If you were tiny, which household object would become your home?",
+     "c": "Draw a room from Arrietty's size: a giant cup, button or sugar cube."
+    },
+    "de": {
+     "t": "Arrietty: Die wundersame Welt der Borger",
+     "g": "Triff winzige Borger, die unter dem Fußboden eines Hauses leben.",
+     "p": [
+      "Der Film von 2010 beruht auf Mary Nortons Roman Die Borger.",
+      "Arrietty ist ein winziges Mädchen, das kleine Dinge von den Menschen oben borgt.",
+      "Er zeigt, wie riesig Alltagsgegenstände wirken, wenn man nur wenige Zentimeter misst."
+     ],
+     "q": "Wenn du winzig wärst, welcher Haushaltsgegenstand würde dein Zuhause?",
+     "c": "Zeichne einen Raum in Arriettys Größe: eine riesige Tasse, Knopf oder Zuckerwürfel."
+    },
+    "es": {
+     "t": "Arrietty y el mundo de los diminutos",
+     "g": "Conoce a unos diminutos que viven bajo el suelo de una casa.",
+     "p": [
+      "La película de 2010 se basa en la novela Los increíbles Borrowers, de Mary Norton.",
+      "Arrietty es una niña diminuta que toma prestadas cosas pequeñas de los humanos de arriba.",
+      "Muestra lo enormes que parecen los objetos cuando se mide solo unos centímetros."
+     ],
+     "q": "Si fueras diminuto, ¿qué objeto de casa sería tu hogar?",
+     "c": "Dibuja una habitación a escala de Arrietty: una taza, botón o terrón de azúcar gigante."
+    },
+    "fr": {
+     "t": "Arrietty, le petit monde des chapardeurs",
+     "g": "Rencontre de minuscules emprunteurs vivant sous le plancher d'une maison.",
+     "p": [
+      "Le film de 2010 s'inspire du roman Les Chapardeurs de Mary Norton.",
+      "Arrietty est une minuscule fille qui emprunte de petites choses aux humains d'en haut.",
+      "Il montre combien les objets paraissent géants quand on mesure quelques centimètres."
+     ],
+     "q": "Si tu étais minuscule, quel objet de la maison deviendrait ton foyer ?",
+     "c": "Dessine une pièce à l'échelle d'Arrietty : une tasse, un bouton ou un sucre géant."
+    },
+    "it": {
+     "t": "Arrietty, il mondo segreto sotto il pavimento",
+     "g": "Conosci minuscoli prestatori che vivono sotto il pavimento di una casa.",
+     "p": [
+      "Il film del 2010 è tratto dal romanzo Gli Rubacchiotti di Mary Norton.",
+      "Arrietty è una minuscola ragazza che prende in prestito piccole cose dagli umani di sopra.",
+      "Mostra quanto sembrino enormi gli oggetti quando si è alti pochi centimetri."
+     ],
+     "q": "Se fossi minuscolo, quale oggetto di casa diventerebbe la tua dimora?",
+     "c": "Disegna una stanza della misura di Arrietty: una tazza, bottone o zolletta gigante."
+    },
+    "pt": {
+     "t": "Arrietty e o Mundo dos Pequeninos",
+     "g": "Conhece pequeninos que vivem sob o chão de uma casa.",
+     "p": [
+      "O filme de 2010 baseia-se no romance Os Pequeninos, de Mary Norton.",
+      "Arrietty é uma menina minúscula que pede emprestadas coisas pequenas aos humanos de cima.",
+      "Mostra como os objetos parecem enormes quando se mede só alguns centímetros."
+     ],
+     "q": "Se fosses minúsculo, que objeto da casa seria o teu lar?",
+     "c": "Desenha uma divisão à escala da Arrietty: uma chávena, botão ou cubo de açúcar gigante."
+    },
+    "pt_BR": {
+     "t": "O Mundo dos Pequeninos",
+     "g": "Conheça pequeninos que vivem sob o chão de uma casa.",
+     "p": [
+      "O filme de 2010 é baseado no romance Os Pequeninos, de Mary Norton.",
+      "Arrietty é uma menina minúscula que pega emprestadas coisas pequenas dos humanos de cima.",
+      "Mostra como os objetos parecem enormes quando se mede só alguns centímetros."
+     ],
+     "q": "Se você fosse minúsculo, que objeto da casa seria o seu lar?",
+     "c": "Desenhe um cômodo na escala da Arrietty: uma xícara, botão ou cubo de açúcar gigante."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Joe Hisaishi's music",
+     "g": "Hear the composer behind Miyazaki's unforgettable soundtracks.",
+     "p": [
+      "Joe Hisaishi has composed music for Miyazaki's films since Nausicaä in 1984.",
+      "His themes mix orchestral sound, piano and gentle melodies.",
+      "Music in Ghibli films often carries emotion where dialogue is silent."
+     ],
+     "q": "Which film theme would you hum if you heard its first notes?",
+     "c": "Listen to one Hisaishi theme and draw the colours and shapes you imagine."
+    },
+    "de": {
+     "t": "Joe Hisaishis Musik",
+     "g": "Höre den Komponisten hinter Miyazakis unvergesslichen Soundtracks.",
+     "p": [
+      "Joe Hisaishi komponiert seit Nausicaä 1984 für Miyazakis Filme.",
+      "Seine Themen verbinden Orchesterklang, Klavier und sanfte Melodien.",
+      "Musik in Ghibli-Filmen trägt Gefühl, wo die Dialoge schweigen."
+     ],
+     "q": "Welches Filmthema würdest du summen, wenn du die ersten Töne hörst?",
+     "c": "Hör ein Hisaishi-Thema und zeichne die Farben und Formen, die du dir vorstellst."
+    },
+    "es": {
+     "t": "La música de Joe Hisaishi",
+     "g": "Escucha al compositor de las inolvidables bandas sonoras de Miyazaki.",
+     "p": [
+      "Joe Hisaishi compone para las películas de Miyazaki desde Nausicaä en 1984.",
+      "Sus temas mezclan sonido orquestal, piano y melodías suaves.",
+      "La música de Ghibli transmite emoción donde los diálogos callan."
+     ],
+     "q": "¿Qué tema de película tararearías al oír sus primeras notas?",
+     "c": "Escucha un tema de Hisaishi y dibuja los colores y formas que imaginas."
+    },
+    "fr": {
+     "t": "La musique de Joe Hisaishi",
+     "g": "Écoute le compositeur des bandes originales inoubliables de Miyazaki.",
+     "p": [
+      "Joe Hisaishi compose pour les films de Miyazaki depuis Nausicaä en 1984.",
+      "Ses thèmes mêlent orchestre, piano et mélodies douces.",
+      "La musique des films Ghibli porte l'émotion là où les dialogues se taisent."
+     ],
+     "q": "Quel thème de film fredonnerais-tu en entendant ses premières notes ?",
+     "c": "Écoute un thème de Hisaishi et dessine les couleurs et formes que tu imagines."
+    },
+    "it": {
+     "t": "La musica di Joe Hisaishi",
+     "g": "Ascolta il compositore delle indimenticabili colonne sonore di Miyazaki.",
+     "p": [
+      "Joe Hisaishi compone per i film di Miyazaki da Nausicaä nel 1984.",
+      "I suoi temi mescolano suono orchestrale, pianoforte e melodie delicate.",
+      "La musica nei film Ghibli porta emozione dove i dialoghi tacciono."
+     ],
+     "q": "Quale tema di film canticchieresti sentendo le prime note?",
+     "c": "Ascolta un tema di Hisaishi e disegna i colori e le forme che immagini."
+    },
+    "pt": {
+     "t": "A música de Joe Hisaishi",
+     "g": "Ouve o compositor das inesquecíveis bandas sonoras de Miyazaki.",
+     "p": [
+      "Joe Hisaishi compõe para os filmes de Miyazaki desde Nausicaä em 1984.",
+      "Os seus temas misturam som orquestral, piano e melodias suaves.",
+      "A música nos filmes Ghibli transmite emoção onde os diálogos se calam."
+     ],
+     "q": "Que tema de filme trautearias ao ouvir as primeiras notas?",
+     "c": "Ouve um tema de Hisaishi e desenha as cores e formas que imaginas."
+    },
+    "pt_BR": {
+     "t": "A música de Joe Hisaishi",
+     "g": "Ouça o compositor das inesquecíveis trilhas sonoras de Miyazaki.",
+     "p": [
+      "Joe Hisaishi compõe para os filmes de Miyazaki desde Nausicaä em 1984.",
+      "Seus temas misturam som orquestral, piano e melodias suaves.",
+      "A música nos filmes Ghibli transmite emoção onde os diálogos se calam."
+     ],
+     "q": "Que tema de filme você cantarolaria ao ouvir as primeiras notas?",
+     "c": "Ouça um tema de Hisaishi e desenhe as cores e formas que você imagina."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ghibli food scenes",
+     "g": "See why food in Ghibli films looks so delicious.",
+     "p": [
+      "Simple meals like eggs, bread, rice balls and ramen are drawn with great care.",
+      "Eating together in these scenes shows comfort, friendship and kindness.",
+      "Details like steam, sizzle and texture make you almost taste the food."
+     ],
+     "q": "Which animated meal would you most like to share with a friend?",
+     "c": "Draw a cosy meal with steam rising and a friend sitting beside you."
+    },
+    "de": {
+     "t": "Essensszenen bei Ghibli",
+     "g": "Erfahre, warum Essen in Ghibli-Filmen so lecker aussieht.",
+     "p": [
+      "Einfache Mahlzeiten wie Eier, Brot, Reisbällchen und Ramen sind mit Sorgfalt gezeichnet.",
+      "Gemeinsames Essen zeigt Geborgenheit, Freundschaft und Güte.",
+      "Details wie Dampf, Zischen und Textur lassen dich das Essen fast schmecken."
+     ],
+     "q": "Welche gezeichnete Mahlzeit würdest du am liebsten mit einem Freund teilen?",
+     "c": "Zeichne eine gemütliche Mahlzeit mit aufsteigendem Dampf und einem Freund daneben."
+    },
+    "es": {
+     "t": "Las escenas de comida de Ghibli",
+     "g": "Descubre por qué la comida en las películas de Ghibli parece tan deliciosa.",
+     "p": [
+      "Comidas sencillas como huevos, pan, onigiri y ramen se dibujan con mucho cuidado.",
+      "Comer juntos en esas escenas muestra consuelo, amistad y amabilidad.",
+      "Detalles como el vapor, el chisporroteo y la textura casi dejan saborear la comida."
+     ],
+     "q": "¿Qué comida animada te gustaría compartir con un amigo?",
+     "c": "Dibuja una comida acogedora con vapor y un amigo sentado a tu lado."
+    },
+    "fr": {
+     "t": "Les scènes de repas chez Ghibli",
+     "g": "Vois pourquoi la nourriture des films Ghibli donne tant envie.",
+     "p": [
+      "Des repas simples, œufs, pain, onigiris et ramen, sont dessinés avec grand soin.",
+      "Manger ensemble dans ces scènes évoque le réconfort, l'amitié et la bonté.",
+      "Vapeur, grésillement et textures donnent presque le goût des plats."
+     ],
+     "q": "Quel repas animé aimerais-tu partager avec un ami ?",
+     "c": "Dessine un repas douillet avec de la vapeur et un ami assis à côté de toi."
+    },
+    "it": {
+     "t": "Le scene di cibo di Ghibli",
+     "g": "Scopri perché il cibo nei film Ghibli sembra così delizioso.",
+     "p": [
+      "Pasti semplici come uova, pane, onigiri e ramen sono disegnati con grande cura.",
+      "Mangiare insieme in queste scene mostra conforto, amicizia e gentilezza.",
+      "Dettagli come vapore, sfrigolio e consistenza fanno quasi sentire il sapore."
+     ],
+     "q": "Quale pasto animato vorresti condividere con un amico?",
+     "c": "Disegna un pasto accogliente con il vapore che sale e un amico accanto a te."
+    },
+    "pt": {
+     "t": "As cenas de comida do Ghibli",
+     "g": "Descobre porque a comida nos filmes do Ghibli parece tão deliciosa.",
+     "p": [
+      "Refeições simples como ovos, pão, onigiri e ramen são desenhadas com muito cuidado.",
+      "Comer em conjunto nessas cenas mostra conforto, amizade e gentileza.",
+      "Detalhes como o vapor, o chiar e a textura quase dão para sentir o sabor."
+     ],
+     "q": "Que refeição animada gostarias de partilhar com um amigo?",
+     "c": "Desenha uma refeição aconchegante com vapor a subir e um amigo ao teu lado."
+    },
+    "pt_BR": {
+     "t": "As cenas de comida do Ghibli",
+     "g": "Descubra por que a comida nos filmes do Ghibli parece tão deliciosa.",
+     "p": [
+      "Refeições simples como ovos, pão, onigiri e lámen são desenhadas com muito cuidado.",
+      "Comer junto nessas cenas mostra conforto, amizade e gentileza.",
+      "Detalhes como vapor, chiado e textura quase dão para sentir o sabor."
+     ],
+     "q": "Que refeição animada você gostaria de dividir com um amigo?",
+     "c": "Desenhe uma refeição aconchegante com vapor subindo e um amigo ao seu lado."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Nature and environment in Ghibli",
+     "g": "Notice forests, skies and respect for the natural world.",
+     "p": [
+      "Totoro's forest, Nausicaä's valley and Ponyo's sea treat nature as alive.",
+      "Ghibli backgrounds are painted in detail, with clouds, grass and wind.",
+      "The films suggest living in balance with nature rather than against it."
+     ],
+     "q": "Which natural place in your area would you save in a film?",
+     "c": "Paint or draw a nature scene with wind visible in the grass and trees."
+    },
+    "de": {
+     "t": "Natur und Umwelt bei Ghibli",
+     "g": "Achte auf Wälder, Himmel und Respekt vor der Natur.",
+     "p": [
+      "Totoros Wald, Nausicaäs Tal und Ponyos Meer zeigen Natur als lebendig.",
+      "Ghiblis Hintergründe sind detailreich gemalt, mit Wolken, Gras und Wind.",
+      "Die Filme legen ein Leben im Gleichgewicht mit der Natur nahe, nicht gegen sie."
+     ],
+     "q": "Welchen Naturort in deiner Gegend würdest du in einem Film bewahren?",
+     "c": "Male oder zeichne eine Naturszene, in der man den Wind in Gras und Bäumen sieht."
+    },
+    "es": {
+     "t": "Naturaleza y medio ambiente en Ghibli",
+     "g": "Fíjate en los bosques, los cielos y el respeto por el mundo natural.",
+     "p": [
+      "El bosque de Totoro, el valle de Nausicaä y el mar de Ponyo tratan la naturaleza como algo vivo.",
+      "Los fondos de Ghibli están pintados al detalle, con nubes, hierba y viento.",
+      "Las películas sugieren vivir en equilibrio con la naturaleza, no contra ella."
+     ],
+     "q": "¿Qué lugar natural de tu zona salvarías en una película?",
+     "c": "Pinta o dibuja un paisaje natural con el viento visible en la hierba y los árboles."
+    },
+    "fr": {
+     "t": "Nature et environnement chez Ghibli",
+     "g": "Remarque les forêts, les ciels et le respect du monde naturel.",
+     "p": [
+      "La forêt de Totoro, la vallée de Nausicaä et la mer de Ponyo traitent la nature comme vivante.",
+      "Les décors Ghibli sont peints avec détail : nuages, herbe et vent.",
+      "Les films suggèrent de vivre en équilibre avec la nature plutôt que contre elle."
+     ],
+     "q": "Quel lieu naturel de ta région sauverais-tu dans un film ?",
+     "c": "Peins ou dessine une scène de nature où le vent se voit dans l'herbe et les arbres."
+    },
+    "it": {
+     "t": "Natura e ambiente in Ghibli",
+     "g": "Osserva foreste, cieli e rispetto per il mondo naturale.",
+     "p": [
+      "La foresta di Totoro, la valle di Nausicaä e il mare di Ponyo trattano la natura come viva.",
+      "Gli sfondi Ghibli sono dipinti con cura, con nuvole, erba e vento.",
+      "I film suggeriscono di vivere in equilibrio con la natura, non contro di essa."
+     ],
+     "q": "Quale luogo naturale della tua zona salveresti in un film?",
+     "c": "Dipingi o disegna una scena di natura con il vento visibile tra erba e alberi."
+    },
+    "pt": {
+     "t": "Natureza e ambiente no Ghibli",
+     "g": "Repara nas florestas, nos céus e no respeito pelo mundo natural.",
+     "p": [
+      "A floresta de Totoro, o vale de Nausicaä e o mar de Ponyo tratam a natureza como viva.",
+      "Os fundos do Ghibli são pintados ao pormenor, com nuvens, erva e vento.",
+      "Os filmes sugerem viver em equilíbrio com a natureza, não contra ela."
+     ],
+     "q": "Que lugar natural da tua zona salvarias num filme?",
+     "c": "Pinta ou desenha uma cena de natureza com o vento visível na erva e nas árvores."
+    },
+    "pt_BR": {
+     "t": "Natureza e meio ambiente no Ghibli",
+     "g": "Repare nas florestas, nos céus e no respeito pelo mundo natural.",
+     "p": [
+      "A floresta de Totoro, o vale de Nausicaä e o mar de Ponyo tratam a natureza como viva.",
+      "Os fundos do Ghibli são pintados em detalhe, com nuvens, grama e vento.",
+      "Os filmes sugerem viver em equilíbrio com a natureza, não contra ela."
+     ],
+     "q": "Que lugar natural da sua região você salvaria num filme?",
+     "c": "Pinte ou desenhe uma cena de natureza com o vento visível na grama e nas árvores."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Flying machines in Miyazaki films",
+     "g": "Look at airships, gliders and the dream of flight.",
+     "p": [
+      "Miyazaki loved aeroplanes as a child, and flight appears in nearly all his films.",
+      "Machines are drawn with believable gears, wings and propellers.",
+      "Flying stands for freedom, wonder and seeing the world from above."
+     ],
+     "q": "If you could fly for one day, where would you go?",
+     "c": "Design a flying machine with at least three working parts and label them."
+    },
+    "de": {
+     "t": "Flugmaschinen in Miyazakis Filmen",
+     "g": "Betrachte Luftschiffe, Gleiter und den Traum vom Fliegen.",
+     "p": [
+      "Miyazaki liebte als Kind Flugzeuge, und das Fliegen kommt in fast allen Filmen vor.",
+      "Maschinen sind mit glaubhaften Zahnrädern, Flügeln und Propellern gezeichnet.",
+      "Fliegen steht für Freiheit, Staunen und den Blick auf die Welt von oben."
+     ],
+     "q": "Wenn du einen Tag fliegen könntest, wohin ginge es?",
+     "c": "Entwirf eine Flugmaschine mit mindestens drei funktionierenden Teilen und beschrifte sie."
+    },
+    "es": {
+     "t": "Máquinas voladoras en Miyazaki",
+     "g": "Mira los dirigibles, planeadores y el sueño de volar.",
+     "p": [
+      "A Miyazaki le encantaban los aviones de niño y el vuelo aparece en casi todas sus películas.",
+      "Las máquinas se dibujan con engranajes, alas y hélices creíbles.",
+      "Volar representa libertad, asombro y ver el mundo desde arriba."
+     ],
+     "q": "Si pudieras volar un día, ¿adónde irías?",
+     "c": "Diseña una máquina voladora con al menos tres piezas que funcionen y rotúlalas."
+    },
+    "fr": {
+     "t": "Machines volantes chez Miyazaki",
+     "g": "Regarde les dirigeables, planeurs et le rêve de voler.",
+     "p": [
+      "Miyazaki adorait les avions enfant, et le vol apparaît dans presque tous ses films.",
+      "Les machines sont dessinées avec des engrenages, ailes et hélices crédibles.",
+      "Voler incarne la liberté, l'émerveillement et la vue du monde d'en haut."
+     ],
+     "q": "Si tu pouvais voler un jour, où irais-tu ?",
+     "c": "Conçois une machine volante avec au moins trois pièces fonctionnelles et légende-les."
+    },
+    "it": {
+     "t": "Macchine volanti nei film di Miyazaki",
+     "g": "Guarda dirigibili, deltaplani e il sogno del volo.",
+     "p": [
+      "Da bambino Miyazaki amava gli aerei e il volo compare in quasi tutti i suoi film.",
+      "Le macchine sono disegnate con ingranaggi, ali ed eliche credibili.",
+      "Volare rappresenta libertà, stupore e vedere il mondo dall'alto."
+     ],
+     "q": "Se potessi volare per un giorno, dove andresti?",
+     "c": "Progetta una macchina volante con almeno tre parti funzionanti e etichettale."
+    },
+    "pt": {
+     "t": "Máquinas voadoras nos filmes de Miyazaki",
+     "g": "Olha para dirigíveis, planadores e o sonho de voar.",
+     "p": [
+      "Miyazaki adorava aviões em criança e o voo surge em quase todos os seus filmes.",
+      "As máquinas são desenhadas com engrenagens, asas e hélices credíveis.",
+      "Voar representa liberdade, deslumbramento e ver o mundo lá de cima."
+     ],
+     "q": "Se pudesses voar por um dia, para onde irias?",
+     "c": "Desenha uma máquina voadora com pelo menos três peças funcionais e legenda-as."
+    },
+    "pt_BR": {
+     "t": "Máquinas voadoras nos filmes de Miyazaki",
+     "g": "Olhe para dirigíveis, planadores e o sonho de voar.",
+     "p": [
+      "Miyazaki adorava aviões quando criança e o voo aparece em quase todos os seus filmes.",
+      "As máquinas são desenhadas com engrenagens, asas e hélices convincentes.",
+      "Voar representa liberdade, encantamento e ver o mundo lá de cima."
+     ],
+     "q": "Se você pudesse voar por um dia, para onde iria?",
+     "c": "Desenhe uma máquina voadora com pelo menos três peças funcionais e legende-as."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ghibli Museum and Ghibli Park",
+     "g": "Discover places in Japan where fans can step into Ghibli worlds.",
+     "p": [
+      "The Ghibli Museum in Mitaka, Tokyo, opened in 2001 and shows how animation is made.",
+      "Ghibli Park in Aichi opened in 2022 with areas inspired by several films.",
+      "Visitors can explore sets, gardens and exhibitions made with Ghibli's own care."
+     ],
+     "q": "If you visited, which film's world would you walk into first?",
+     "c": "Plan a tiny museum room for a favourite film and sketch what is inside."
+    },
+    "de": {
+     "t": "Ghibli-Museum und Ghibli-Park",
+     "g": "Entdecke Orte in Japan, an denen Fans in Ghibli-Welten eintauchen.",
+     "p": [
+      "Das Ghibli-Museum in Mitaka, Tokio, öffnete 2001 und zeigt, wie Animation entsteht.",
+      "Der Ghibli-Park in Aichi öffnete 2022 mit Bereichen zu mehreren Filmen.",
+      "Besucher erkunden Kulissen, Gärten und Ausstellungen, mit Ghiblis eigener Sorgfalt gestaltet."
+     ],
+     "q": "Wenn du hinreist, in welche Filmwelt gehst du zuerst?",
+     "c": "Plane einen kleinen Museumsraum für einen Lieblingsfilm und skizziere den Inhalt."
+    },
+    "es": {
+     "t": "Museo Ghibli y Parque Ghibli",
+     "g": "Descubre lugares de Japón donde los fans entran en los mundos de Ghibli.",
+     "p": [
+      "El Museo Ghibli de Mitaka, Tokio, abrió en 2001 y muestra cómo se hace la animación.",
+      "El Parque Ghibli de Aichi abrió en 2022 con zonas inspiradas en varias películas.",
+      "Se pueden recorrer escenarios, jardines y exposiciones creados con el cuidado de Ghibli."
+     ],
+     "q": "Si fueras, ¿en qué mundo de película entrarías primero?",
+     "c": "Planea una pequeña sala de museo para una película favorita y dibuja su contenido."
+    },
+    "fr": {
+     "t": "Musée Ghibli et parc Ghibli",
+     "g": "Découvre des lieux au Japon où les fans entrent dans les mondes Ghibli.",
+     "p": [
+      "Le musée Ghibli de Mitaka, à Tokyo, a ouvert en 2001 et montre comment on fait l'animation.",
+      "Le parc Ghibli d'Aichi a ouvert en 2022 avec des zones inspirées de plusieurs films.",
+      "On y explore décors, jardins et expositions réalisés avec le soin de Ghibli."
+     ],
+     "q": "Si tu y allais, dans quel monde de film entrerais-tu en premier ?",
+     "c": "Imagine une petite salle de musée pour un film préféré et esquisse son contenu."
+    },
+    "it": {
+     "t": "Museo Ghibli e Parco Ghibli",
+     "g": "Scopri luoghi in Giappone dove i fan entrano nei mondi Ghibli.",
+     "p": [
+      "Il Museo Ghibli a Mitaka, Tokyo, aprì nel 2001 e mostra come si fa l'animazione.",
+      "Il Parco Ghibli ad Aichi aprì nel 2022 con aree ispirate a più film.",
+      "Si esplorano scenografie, giardini e mostre fatte con la cura di Ghibli."
+     ],
+     "q": "Se ci andassi, in quale mondo di film entreresti per primo?",
+     "c": "Progetta una piccola sala di museo per un film preferito e schizza il contenuto."
+    },
+    "pt": {
+     "t": "Museu Ghibli e Parque Ghibli",
+     "g": "Descobre locais no Japão onde os fãs entram nos mundos Ghibli.",
+     "p": [
+      "O Museu Ghibli em Mitaka, Tóquio, abriu em 2001 e mostra como se faz animação.",
+      "O Parque Ghibli em Aichi abriu em 2022 com áreas inspiradas em vários filmes.",
+      "Visitam-se cenários, jardins e exposições feitos com o cuidado do Ghibli."
+     ],
+     "q": "Se fosses lá, em que mundo de filme entrarias primeiro?",
+     "c": "Planeia uma pequena sala de museu para um filme favorito e esboça o conteúdo."
+    },
+    "pt_BR": {
+     "t": "Museu Ghibli e Parque Ghibli",
+     "g": "Descubra lugares no Japão onde os fãs entram nos mundos Ghibli.",
+     "p": [
+      "O Museu Ghibli em Mitaka, Tóquio, abriu em 2001 e mostra como se faz animação.",
+      "O Parque Ghibli em Aichi abriu em 2022 com áreas inspiradas em vários filmes.",
+      "Dá para visitar cenários, jardins e exposições feitos com o cuidado do Ghibli."
+     ],
+     "q": "Se você fosse lá, em que mundo de filme entraria primeiro?",
+     "c": "Planeje uma pequena sala de museu para um filme favorito e esboce o conteúdo."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ghibli for the whole family",
+     "g": "Choose the right Ghibli film for different ages.",
+     "p": [
+      "Totoro, Kiki and Ponyo are gentle choices for young children.",
+      "Spirited Away, Howl and Arrietty suit older kids and adults who like adventure.",
+      "Check the official age ratings in your country and watch together when unsure."
+     ],
+     "q": "Which Ghibli film would you pick for a family movie night, and why?",
+     "c": "Make a short list of three films for a family and note one reason each."
+    },
+    "de": {
+     "t": "Ghibli für die ganze Familie",
+     "g": "Wähle den passenden Ghibli-Film für verschiedene Altersstufen.",
+     "p": [
+      "Totoro, Kiki und Ponyo sind sanfte Wahlen für kleine Kinder.",
+      "Chihiro, Howl und Arrietty passen zu älteren Kindern und Erwachsenen, die Abenteuer mögen.",
+      "Prüfe die offiziellen Altersfreigaben in deinem Land und schaut im Zweifel gemeinsam."
+     ],
+     "q": "Welchen Ghibli-Film würdest du für einen Familienabend wählen, und warum?",
+     "c": "Mache eine Liste mit drei Filmen für eine Familie und je einem Grund."
+    },
+    "es": {
+     "t": "Ghibli para toda la familia",
+     "g": "Elige la película de Ghibli adecuada para distintas edades.",
+     "p": [
+      "Totoro, Kiki y Ponyo son opciones suaves para los más pequeños.",
+      "El viaje de Chihiro, El castillo ambulante y Arrietty van bien para mayores y adultos aventureros.",
+      "Consulta las calificaciones de edad oficiales de tu país y vean juntos si dudas."
+     ],
+     "q": "¿Qué película de Ghibli elegirías para una noche de cine en familia y por qué?",
+     "c": "Haz una lista de tres películas para una familia con un motivo para cada una."
+    },
+    "fr": {
+     "t": "Ghibli pour toute la famille",
+     "g": "Choisis le bon film Ghibli selon les âges.",
+     "p": [
+      "Totoro, Kiki et Ponyo sont des choix doux pour les jeunes enfants.",
+      "Chihiro, Howl et Arrietty conviennent aux plus grands et aux adultes aimant l'aventure.",
+      "Consulte les classifications d'âge officielles de ton pays et regardez ensemble en cas de doute."
+     ],
+     "q": "Quel film Ghibli choisirais-tu pour une soirée cinéma en famille, et pourquoi ?",
+     "c": "Dresse une liste de trois films pour une famille, avec une raison chacun."
+    },
+    "it": {
+     "t": "Ghibli per tutta la famiglia",
+     "g": "Scegli il film Ghibli giusto per le diverse età.",
+     "p": [
+      "Totoro, Kiki e Ponyo sono scelte dolci per i più piccoli.",
+      "La città incantata, Howl e Arrietty vanno bene per ragazzi più grandi e adulti amanti dell'avventura.",
+      "Controlla le classificazioni di età ufficiali del tuo paese e guardate insieme se hai dubbi."
+     ],
+     "q": "Quale film Ghibli sceglieresti per una serata cinema in famiglia e perché?",
+     "c": "Fai un elenco di tre film per una famiglia con un motivo ciascuno."
+    },
+    "pt": {
+     "t": "Ghibli para toda a família",
+     "g": "Escolhe o filme Ghibli certo para diferentes idades.",
+     "p": [
+      "Totoro, Kiki e Ponyo são escolhas suaves para os mais novos.",
+      "A Viagem de Chihiro, Howl e Arrietty servem para mais velhos e adultos que gostam de aventura.",
+      "Consulta as classificações etárias oficiais do teu país e vejam juntos em caso de dúvida."
+     ],
+     "q": "Que filme Ghibli escolherias para uma noite de cinema em família e porquê?",
+     "c": "Faz uma lista de três filmes para uma família com um motivo para cada."
+    },
+    "pt_BR": {
+     "t": "Ghibli para toda a família",
+     "g": "Escolha o filme Ghibli certo para diferentes idades.",
+     "p": [
+      "Totoro, Kiki e Ponyo são escolhas suaves para os pequenos.",
+      "A Viagem de Chihiro, Howl e Arrietty servem para mais velhos e adultos que gostam de aventura.",
+      "Consulte as classificações etárias oficiais do seu país e assistam juntos em caso de dúvida."
+     ],
+     "q": "Que filme Ghibli você escolheria para uma noite de cinema em família e por quê?",
+     "c": "Faça uma lista de três filmes para uma família com um motivo para cada."
+    }
+   }
+  }
+ ]
+}

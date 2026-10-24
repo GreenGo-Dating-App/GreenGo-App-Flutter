@@ -1,0 +1,835 @@
+{
+ "topic": "joke_buddy",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Number riddles",
+     "g": "Solve little puzzles with numbers and a playful twist.",
+     "p": [
+      "Number riddles hide a trick in the wording, not in the maths.",
+      "Example: how many months have 28 days? All of them!",
+      "Example: two fathers and two sons catch three fish and each takes one. How? A grandfather, a father and a son."
+     ],
+     "q": "Do you like numbers, or do they like to trick you?",
+     "c": "Challenge: ask a friend 'How many months have 28 days?' and watch the thinking face."
+    },
+    "de": {
+     "t": "Zahlenrätsel",
+     "g": "Löse kleine Rätsel mit Zahlen und einer verspielten Wendung.",
+     "p": [
+      "Zahlenrätsel verstecken den Trick in den Worten, nicht in der Mathematik.",
+      "Beispiel: Wie viele Monate haben 28 Tage? Alle!",
+      "Beispiel: Zwei Väter und zwei Söhne fangen drei Fische und jeder nimmt einen. Wie? Großvater, Vater und Sohn."
+     ],
+     "q": "Magst du Zahlen oder legen sie dich gern herein?",
+     "c": "Aufgabe: Frag einen Freund: Wie viele Monate haben 28 Tage? und beobachte sein Denkgesicht."
+    },
+    "es": {
+     "t": "Adivinanzas con números",
+     "g": "Resuelve pequeños acertijos con números y un giro divertido.",
+     "p": [
+      "Los acertijos numéricos esconden el truco en las palabras, no en las matemáticas.",
+      "Ejemplo: ¿cuántos meses tienen 28 días? ¡Todos!",
+      "Ejemplo: dos padres y dos hijos pescan tres peces y cada uno se lleva uno. ¿Cómo? Un abuelo, un padre y un hijo."
+     ],
+     "q": "¿Te gustan los números o te hacen trampas?",
+     "c": "Reto: pregunta a un amigo cuántos meses tienen 28 días y mira su cara de pensar."
+    },
+    "fr": {
+     "t": "Devinettes avec des nombres",
+     "g": "Résous de petites énigmes avec des chiffres et un détour amusant.",
+     "p": [
+      "Les énigmes de chiffres cachent le piège dans les mots, pas dans le calcul.",
+      "Exemple : combien de mois ont 28 jours ? Tous !",
+      "Exemple : deux pères et deux fils pêchent trois poissons et chacun en prend un. Comment ? Un grand-père, un père et un fils."
+     ],
+     "q": "Aimes-tu les chiffres ou te piègent-ils ?",
+     "c": "Défi : demande à un ami combien de mois ont 28 jours et observe sa tête qui réfléchit."
+    },
+    "it": {
+     "t": "Indovinelli con i numeri",
+     "g": "Risolvi piccoli enigmi con i numeri e una svolta giocosa.",
+     "p": [
+      "Gli indovinelli numerici nascondono il trucco nelle parole, non nella matematica.",
+      "Esempio: quanti mesi hanno 28 giorni? Tutti!",
+      "Esempio: due padri e due figli pescano tre pesci e ognuno ne prende uno. Come? Un nonno, un padre e un figlio."
+     ],
+     "q": "Ti piacciono i numeri o ti fanno scherzi?",
+     "c": "Sfida: chiedi a un amico quanti mesi hanno 28 giorni e guarda la sua faccia pensierosa."
+    },
+    "pt": {
+     "t": "Adivinhas com números",
+     "g": "Resolve pequenos enigmas com números e uma reviravolta divertida.",
+     "p": [
+      "As adivinhas numéricas escondem o truque nas palavras, não na matemática.",
+      "Exemplo: quantos meses têm 28 dias? Todos!",
+      "Exemplo: dois pais e dois filhos apanham três peixes e cada um leva um. Como? Um avô, um pai e um filho."
+     ],
+     "q": "Gostas de números ou eles pregam-te partidas?",
+     "c": "Desafio: pergunta a um amigo quantos meses têm 28 dias e vê a cara dele a pensar."
+    },
+    "pt_BR": {
+     "t": "Adivinhas com números",
+     "g": "Resolva pequenos enigmas com números e uma virada divertida.",
+     "p": [
+      "Adivinhas numéricas escondem o truque nas palavras, não na matemática.",
+      "Exemplo: quantos meses têm 28 dias? Todos!",
+      "Exemplo: dois pais e dois filhos pescam três peixes e cada um leva um. Como? Um avô, um pai e um filho."
+     ],
+     "q": "Você gosta de números ou eles te pregam peças?",
+     "c": "Desafio: pergunte a um amigo quantos meses têm 28 dias e veja a cara de pensativo dele."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Funny faces and expressions",
+     "g": "See how your face and voice help a joke land.",
+     "p": [
+      "A raised eyebrow, a wide-eyed look or a tiny smile can add half the joke.",
+      "Your voice can be sneaky, surprised or dramatic; changing it makes characters come alive.",
+      "Use faces gently: you want people to laugh with you."
+     ],
+     "q": "Which funny face do you pull when you are surprised?",
+     "c": "Challenge: tell a joke in front of a mirror and try two different expressions."
+    },
+    "de": {
+     "t": "Grimassen und Mimik",
+     "g": "Sieh, wie Gesicht und Stimme einem Witz helfen anzukommen.",
+     "p": [
+      "Eine hochgezogene Augenbraue, große Augen oder ein kleines Lächeln machen den halben Witz.",
+      "Deine Stimme kann verschmitzt, überrascht oder dramatisch klingen; so werden Figuren lebendig.",
+      "Setze Grimassen liebevoll ein: Die anderen sollen mit dir lachen."
+     ],
+     "q": "Welche lustige Grimasse machst du, wenn du überrascht bist?",
+     "c": "Aufgabe: Erzähl einen Witz vor dem Spiegel und probiere zwei verschiedene Gesichter."
+    },
+    "es": {
+     "t": "Caras y gestos graciosos",
+     "g": "Descubre cómo tu cara y tu voz ayudan a que un chiste funcione.",
+     "p": [
+      "Una ceja levantada, unos ojos grandes o una pequeña sonrisa ponen la mitad del chiste.",
+      "Tu voz puede ser pícara, sorprendida o dramática; así los personajes cobran vida.",
+      "Usa los gestos con cariño: quieres que rían contigo."
+     ],
+     "q": "¿Qué cara graciosa pones cuando te sorprendes?",
+     "c": "Reto: cuenta un chiste frente al espejo y prueba dos expresiones distintas."
+    },
+    "fr": {
+     "t": "Grimaces et expressions",
+     "g": "Vois comment ton visage et ta voix aident une blague à porter.",
+     "p": [
+      "Un sourcil levé, des yeux ronds ou un petit sourire font la moitié de la blague.",
+      "Ta voix peut être malicieuse, surprise ou dramatique ; les personnages prennent vie.",
+      "Utilise les mimiques avec douceur : on rit avec toi."
+     ],
+     "q": "Quelle drôle de tête fais-tu quand tu es surpris ?",
+     "c": "Défi : raconte une blague devant un miroir en essayant deux expressions différentes."
+    },
+    "it": {
+     "t": "Facce ed espressioni buffe",
+     "g": "Scopri come il viso e la voce aiutano una barzelletta a funzionare.",
+     "p": [
+      "Un sopracciglio alzato, gli occhi spalancati o un piccolo sorriso fanno metà della barzelletta.",
+      "La voce può essere furba, stupita o drammatica; così i personaggi prendono vita.",
+      "Usa le smorfie con gentilezza: vuoi che ridano con te."
+     ],
+     "q": "Che faccia buffa fai quando sei sorpreso?",
+     "c": "Sfida: racconta una barzelletta davanti allo specchio provando due espressioni diverse."
+    },
+    "pt": {
+     "t": "Caretas e expressões",
+     "g": "Descobre como a cara e a voz ajudam uma piada a resultar.",
+     "p": [
+      "Uma sobrancelha levantada, olhos arregalados ou um pequeno sorriso fazem metade da piada.",
+      "A voz pode ser marota, surpresa ou dramática; assim as personagens ganham vida.",
+      "Usa as caretas com carinho: queres que riam contigo."
+     ],
+     "q": "Que careta engraçada fazes quando te surpreendes?",
+     "c": "Desafio: conta uma piada diante do espelho e experimenta duas expressões diferentes."
+    },
+    "pt_BR": {
+     "t": "Caretas e expressões",
+     "g": "Descubra como o rosto e a voz ajudam uma piada a funcionar.",
+     "p": [
+      "Uma sobrancelha levantada, olhos arregalados ou um sorrisinho fazem metade da piada.",
+      "A voz pode ser marota, surpresa ou dramática; assim os personagens ganham vida.",
+      "Use as caretas com carinho: você quer que riam com você."
+     ],
+     "q": "Que careta engraçada você faz quando se surpreende?",
+     "c": "Desafio: conte uma piada na frente do espelho e experimente duas expressões diferentes."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Silly questions, silly answers",
+     "g": "Meet the chicken that crossed the road and its many cheerful versions.",
+     "p": [
+      "The classic: why did the chicken cross the road? To get to the other side!",
+      "The fun is that the plain answer is the surprise; then people invent silly versions.",
+      "Version: to prove to the duck that it could be done."
+     ],
+     "q": "Which silly question do you remember from childhood?",
+     "c": "Challenge: invent your own ending for why did the chicken cross the road."
+    },
+    "de": {
+     "t": "Alberne Fragen, alberne Antworten",
+     "g": "Lerne das Huhn kennen, das die Straße überquert, und seine vielen heiteren Varianten.",
+     "p": [
+      "Der Klassiker: Warum überquert das Huhn die Straße? Um auf die andere Seite zu kommen!",
+      "Der Spaß liegt darin, dass die schlichte Antwort die Überraschung ist; dann erfindet man alberne Varianten.",
+      "Variante: Um dem Enterich zu beweisen, dass es geht."
+     ],
+     "q": "Welche alberne Frage aus deiner Kindheit fällt dir ein?",
+     "c": "Aufgabe: Erfinde dein eigenes Ende für Warum überquert das Huhn die Straße."
+    },
+    "es": {
+     "t": "Preguntas tontas, respuestas tontas",
+     "g": "Conoce a la gallina que cruzó la carretera y sus muchas versiones alegres.",
+     "p": [
+      "El clásico: ¿por qué cruzó la gallina la carretera? ¡Para llegar al otro lado!",
+      "La gracia es que la respuesta simple es la sorpresa; luego todos inventan versiones tontas.",
+      "Versión: para demostrarle al pato que se podía."
+     ],
+     "q": "¿Qué pregunta tonta recuerdas de tu infancia?",
+     "c": "Reto: inventa tu propio final para por qué cruzó la gallina la carretera."
+    },
+    "fr": {
+     "t": "Questions bêtes, réponses bêtes",
+     "g": "Rencontre la poule qui traverse la route et ses nombreuses versions joyeuses.",
+     "p": [
+      "Le classique : pourquoi la poule traverse-t-elle la route ? Pour aller de l'autre côté !",
+      "Le plaisir vient de ce que la réponse simple est la surprise ; ensuite on invente des versions folles.",
+      "Version : pour prouver au canard que c'était possible."
+     ],
+     "q": "Quelle question bête te rappelle ton enfance ?",
+     "c": "Défi : invente ta propre fin pour pourquoi la poule traverse-t-elle la route."
+    },
+    "it": {
+     "t": "Domande sciocche, risposte sciocche",
+     "g": "Incontra la gallina che attraversa la strada e le sue tante versioni allegre.",
+     "p": [
+      "Il classico: perché la gallina attraversa la strada? Per andare dall'altra parte!",
+      "Il bello è che la risposta semplice è la sorpresa; poi tutti inventano versioni buffe.",
+      "Versione: per dimostrare all'anatra che si poteva fare."
+     ],
+     "q": "Quale domanda sciocca ricordi dall'infanzia?",
+     "c": "Sfida: inventa il tuo finale per perché la gallina attraversa la strada."
+    },
+    "pt": {
+     "t": "Perguntas tolas, respostas tolas",
+     "g": "Conhece a galinha que atravessou a estrada e as suas muitas versões alegres.",
+     "p": [
+      "O clássico: porque é que a galinha atravessou a estrada? Para chegar ao outro lado!",
+      "A graça é que a resposta simples é a surpresa; depois todos inventam versões tolas.",
+      "Versão: para provar ao pato que era possível."
+     ],
+     "q": "Que pergunta tola recordas da infância?",
+     "c": "Desafio: inventa o teu próprio final para porque é que a galinha atravessou a estrada."
+    },
+    "pt_BR": {
+     "t": "Perguntas bobas, respostas bobas",
+     "g": "Conheça a galinha que atravessou a rua e suas muitas versões alegres.",
+     "p": [
+      "O clássico: por que a galinha atravessou a rua? Para chegar ao outro lado!",
+      "A graça é que a resposta simples é a surpresa; depois todo mundo inventa versões bobas.",
+      "Versão: para provar ao pato que era possível."
+     ],
+     "q": "Que pergunta boba você lembra da infância?",
+     "c": "Desafio: invente seu próprio final para por que a galinha atravessou a rua."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Jokes about space",
+     "g": "Share light jokes about planets, the moon and astronauts.",
+     "p": [
+      "Space is huge, so jokes about it can be big, silly and friendly.",
+      "Example: How does the moon cut its hair? Eclipse it!",
+      "Many space words have everyday twins: star, moon, orbit, space."
+     ],
+     "q": "If you could visit one planet, which would it be?",
+     "c": "Challenge: invent a joke about a planet that is too shy to come out."
+    },
+    "de": {
+     "t": "Weltraumwitze",
+     "g": "Teile leichte Witze über Planeten, den Mond und Astronauten.",
+     "p": [
+      "Der Weltraum ist riesig, darum dürfen Witze darüber groß, albern und freundlich sein.",
+      "Beispiel: Warum hat der Mond nie Hunger? Weil er einmal im Monat voll ist!",
+      "Viele Weltraumwörter haben Alltagszwillinge: Stern, Mond, Umlaufbahn, Raum."
+     ],
+     "q": "Welchen Planeten würdest du gern besuchen?",
+     "c": "Aufgabe: Erfinde einen Witz über einen Planeten, der zu schüchtern ist, um herauszukommen."
+    },
+    "es": {
+     "t": "Chistes del espacio",
+     "g": "Comparte chistes ligeros sobre planetas, la Luna y astronautas.",
+     "p": [
+      "El espacio es enorme, así que los chistes pueden ser grandes, tontos y amables.",
+      "Ejemplo: ¿por qué los astronautas son tan despistados? ¡Porque siempre están en la Luna!",
+      "Muchas palabras del espacio tienen gemelas cotidianas: estrella, luna, órbita."
+     ],
+     "q": "Si pudieras visitar un planeta, ¿cuál sería?",
+     "c": "Reto: inventa un chiste sobre un planeta demasiado tímido para salir."
+    },
+    "fr": {
+     "t": "Blagues sur l'espace",
+     "g": "Partage des blagues légères sur les planètes, la Lune et les astronautes.",
+     "p": [
+      "L'espace est immense, donc les blagues peuvent être grandes, bêtes et gentilles.",
+      "Exemple : pourquoi les astronautes sont-ils si rêveurs ? Parce qu'ils ont la tête dans les étoiles !",
+      "Beaucoup de mots de l'espace ont des jumeaux du quotidien : étoile, lune, orbite."
+     ],
+     "q": "Si tu pouvais visiter une planète, laquelle choisirais-tu ?",
+     "c": "Défi : invente une blague sur une planète trop timide pour se montrer."
+    },
+    "it": {
+     "t": "Barzellette sullo spazio",
+     "g": "Condividi barzellette leggere su pianeti, Luna e astronauti.",
+     "p": [
+      "Lo spazio è enorme, quindi le barzellette possono essere grandi, sciocche e gentili.",
+      "Esempio: perché l'astronauta è sempre distratto? Perché ha la testa nella Luna!",
+      "Molte parole dello spazio hanno gemelle quotidiane: stella, luna, orbita."
+     ],
+     "q": "Se potessi visitare un pianeta, quale sceglieresti?",
+     "c": "Sfida: inventa una barzelletta su un pianeta troppo timido per uscire."
+    },
+    "pt": {
+     "t": "Piadas sobre o espaço",
+     "g": "Partilha piadas leves sobre planetas, a Lua e astronautas.",
+     "p": [
+      "O espaço é enorme, por isso as piadas podem ser grandes, tolas e simpáticas.",
+      "Exemplo: porque é que o astronauta é tão distraído? Porque anda sempre no mundo da lua!",
+      "Muitas palavras do espaço têm gémeas do dia a dia: estrela, lua, órbita."
+     ],
+     "q": "Se pudesses visitar um planeta, qual seria?",
+     "c": "Desafio: inventa uma piada sobre um planeta demasiado tímido para sair."
+    },
+    "pt_BR": {
+     "t": "Piadas sobre o espaço",
+     "g": "Compartilhe piadas leves sobre planetas, a Lua e astronautas.",
+     "p": [
+      "O espaço é enorme, então as piadas podem ser grandes, bobas e gentis.",
+      "Exemplo: por que o astronauta é tão distraído? Porque vive no mundo da lua!",
+      "Muitas palavras do espaço têm gêmeas do dia a dia: estrela, lua, órbita."
+     ],
+     "q": "Se você pudesse visitar um planeta, qual seria?",
+     "c": "Desafio: invente uma piada sobre um planeta tímido demais para aparecer."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your laugh style",
+     "g": "Talk about giggles, chuckles, snorts and belly laughs, and how you laugh.",
+     "p": [
+      "Everybody laughs differently: some giggle, some chuckle, some laugh with their whole body.",
+      "There is no wrong laugh; a happy laugh is contagious.",
+      "Knowing your laugh helps you enjoy jokes without worrying how you sound."
+     ],
+     "q": "How would you describe your own laugh?",
+     "c": "Challenge: notice how three people around you laugh and tell me which was the cheeriest."
+    },
+    "de": {
+     "t": "Dein Lachstil",
+     "g": "Sprich über Kichern, Glucksen, Prusten und Lachsalven und darüber, wie du lachst.",
+     "p": [
+      "Jeder lacht anders: Manche kichern, manche glucksen, manche lachen mit dem ganzen Körper.",
+      "Es gibt kein falsches Lachen; ein fröhliches Lachen steckt an.",
+      "Wer sein Lachen kennt, genießt Witze, ohne sich Gedanken zu machen, wie er klingt."
+     ],
+     "q": "Wie würdest du dein eigenes Lachen beschreiben?",
+     "c": "Aufgabe: Achte darauf, wie drei Menschen um dich lachen, und sag mir, wessen Lachen am fröhlichsten war."
+    },
+    "es": {
+     "t": "Tu estilo de risa",
+     "g": "Habla de risitas, carcajadas, resoplidos y risas de barriga, y de cómo ríes tú.",
+     "p": [
+      "Cada persona ríe distinto: unos se ríen bajito, otros sueltan carcajadas con todo el cuerpo.",
+      "No hay risa incorrecta; una risa alegre se contagia.",
+      "Conocer tu risa te ayuda a disfrutar los chistes sin preocuparte por cómo suenas."
+     ],
+     "q": "¿Cómo describirías tu propia risa?",
+     "c": "Reto: fíjate en cómo ríen tres personas a tu alrededor y dime cuál fue la más alegre."
+    },
+    "fr": {
+     "t": "Ton style de rire",
+     "g": "Parle des fous rires, des petits rires, des ricanements et des gros éclats, et de la façon dont tu ris.",
+     "p": [
+      "Chacun rit à sa façon : certains gloussent, d'autres rient de tout leur corps.",
+      "Il n'y a pas de mauvais rire ; un rire joyeux est contagieux.",
+      "Connaître ton rire t'aide à savourer les blagues sans te soucier de ton bruit."
+     ],
+     "q": "Comment décrirais-tu ton propre rire ?",
+     "c": "Défi : observe comment rient trois personnes autour de toi et dis-moi lequel était le plus joyeux."
+    },
+    "it": {
+     "t": "Il tuo stile di risata",
+     "g": "Parla di risatine, risate di pancia e sbuffi, e di come ridi tu.",
+     "p": [
+      "Ognuno ride a modo suo: c'è chi ridacchia e chi ride con tutto il corpo.",
+      "Non esiste una risata sbagliata; una risata allegra è contagiosa.",
+      "Conoscere la tua risata ti aiuta a goderti le barzellette senza pensare a come suoni."
+     ],
+     "q": "Come descriveresti la tua risata?",
+     "c": "Sfida: osserva come ridono tre persone intorno a te e dimmi quale era la più allegra."
+    },
+    "pt": {
+     "t": "O teu estilo de riso",
+     "g": "Fala de risinhos, gargalhadas e risadas de barriga, e de como ris.",
+     "p": [
+      "Cada pessoa ri de forma diferente: uns riem baixinho, outros com o corpo todo.",
+      "Não há riso errado; um riso alegre é contagiante.",
+      "Conhecer o teu riso ajuda-te a gostar das piadas sem te preocupares com o som."
+     ],
+     "q": "Como descreverias o teu próprio riso?",
+     "c": "Desafio: repara em como riem três pessoas à tua volta e diz-me qual foi o mais alegre."
+    },
+    "pt_BR": {
+     "t": "Seu estilo de risada",
+     "g": "Fale de risadinhas, gargalhadas e risadas de barriga, e de como você ri.",
+     "p": [
+      "Cada pessoa ri de um jeito: uns riem baixinho, outros com o corpo todo.",
+      "Não existe risada errada; uma risada alegre contagia.",
+      "Conhecer sua risada ajuda a curtir as piadas sem se preocupar com o som."
+     ],
+     "q": "Como você descreveria a sua própria risada?",
+     "c": "Desafio: repare em como três pessoas ao seu redor riem e me diga qual foi a mais alegre."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Wordplay with names",
+     "g": "Enjoy gentle name puns that play with how names sound.",
+     "p": [
+      "Names can sound like ordinary words, which makes friendly puns possible.",
+      "Example: why is Ray always cheerful? He is a ray of sunshine!",
+      "Use made-up names or your own; never tease someone about theirs."
+     ],
+     "q": "Does your name sound like any other word?",
+     "c": "Challenge: make a kind pun with your own name or a made-up one."
+    },
+    "de": {
+     "t": "Wortspiele mit Namen",
+     "g": "Genieße freundliche Namenswitze, die mit dem Klang von Namen spielen.",
+     "p": [
+      "Namen klingen manchmal wie gewöhnliche Wörter, das ergibt freundliche Wortspiele.",
+      "Beispiel: Warum ist Sonja immer so fröhlich? Sie ist ein Stück Sonne!",
+      "Nimm erfundene Namen oder deinen eigenen; zieh niemanden mit seinem Namen auf."
+     ],
+     "q": "Klingt dein Name wie ein anderes Wort?",
+     "c": "Aufgabe: Bilde ein freundliches Wortspiel mit deinem eigenen oder einem erfundenen Namen."
+    },
+    "es": {
+     "t": "Juegos de palabras con nombres",
+     "g": "Disfruta de juegos de palabras amables que juegan con el sonido de los nombres.",
+     "p": [
+      "Los nombres a veces suenan como palabras comunes, y eso permite juegos amables.",
+      "Ejemplo: ¿por qué Rosa siempre huele bien? ¡Porque es una flor!",
+      "Usa nombres inventados o el tuyo; nunca te burles del nombre de otra persona."
+     ],
+     "q": "¿Tu nombre suena como alguna otra palabra?",
+     "c": "Reto: crea un juego de palabras amable con tu nombre o con uno inventado."
+    },
+    "fr": {
+     "t": "Jeux de mots avec les prénoms",
+     "g": "Savoure des jeux de mots doux qui jouent avec le son des prénoms.",
+     "p": [
+      "Les prénoms ressemblent parfois à des mots courants, ce qui permet des jeux de mots gentils.",
+      "Exemple : pourquoi Rose est-elle toujours de bonne humeur ? Elle voit la vie en rose !",
+      "Utilise des prénoms inventés ou le tien ; ne taquine jamais quelqu'un sur le sien."
+     ],
+     "q": "Ton prénom ressemble-t-il à un autre mot ?",
+     "c": "Défi : invente un jeu de mots gentil avec ton prénom ou un prénom imaginaire."
+    },
+    "it": {
+     "t": "Giochi di parole con i nomi",
+     "g": "Goditi giochi di parole gentili che giocano con il suono dei nomi.",
+     "p": [
+      "I nomi a volte suonano come parole comuni, e questo permette giochi di parole gentili.",
+      "Esempio: perché Stella è sempre di buon umore? Perché è una stella: brilla!",
+      "Usa nomi inventati o il tuo; non prendere mai in giro il nome di qualcuno."
+     ],
+     "q": "Il tuo nome suona come un'altra parola?",
+     "c": "Sfida: crea un gioco di parole gentile con il tuo nome o uno inventato."
+    },
+    "pt": {
+     "t": "Trocadilhos com nomes",
+     "g": "Diverte-te com trocadilhos simpáticos que brincam com o som dos nomes.",
+     "p": [
+      "Os nomes por vezes soam como palavras comuns, o que permite trocadilhos simpáticos.",
+      "Exemplo: porque é que a Rosa vê tudo cor-de-rosa? Porque é uma flor otimista!",
+      "Usa nomes inventados ou o teu; nunca gozes com o nome de ninguém."
+     ],
+     "q": "O teu nome soa como alguma outra palavra?",
+     "c": "Desafio: cria um trocadilho simpático com o teu nome ou um inventado."
+    },
+    "pt_BR": {
+     "t": "Trocadilhos com nomes",
+     "g": "Divirta-se com trocadilhos gentis que brincam com o som dos nomes.",
+     "p": [
+      "Nomes às vezes soam como palavras comuns, o que permite trocadilhos gentis.",
+      "Exemplo: por que a Estela brilha tanto? Porque é uma estrela!",
+      "Use nomes inventados ou o seu; nunca tire sarro do nome de ninguém."
+     ],
+     "q": "O seu nome soa como alguma outra palavra?",
+     "c": "Desafio: crie um trocadilho gentil com o seu nome ou um inventado."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Riddles with a trick",
+     "g": "Try riddles that make you overthink a simple answer.",
+     "p": [
+      "Trick riddles hide an easy answer behind a complicated-sounding question.",
+      "Example: a farmer has 17 sheep and all but 9 run away. How many are left? Nine!",
+      "Example: what can you break without touching it? A promise!"
+     ],
+     "q": "Did you overthink the sheep riddle at first?",
+     "c": "Challenge: give a friend the sheep riddle and say nothing until they answer."
+    },
+    "de": {
+     "t": "Rätsel mit Trick",
+     "g": "Probiere Rätsel, bei denen man eine einfache Antwort zu kompliziert denkt.",
+     "p": [
+      "Trickrätsel verstecken eine leichte Antwort hinter einer kompliziert klingenden Frage.",
+      "Beispiel: Ein Bauer hat 17 Schafe und alle bis auf 9 laufen weg. Wie viele bleiben? Neun!",
+      "Beispiel: Was kann man brechen, ohne es zu berühren? Ein Versprechen!"
+     ],
+     "q": "Hast du beim Schafrätsel zuerst zu viel nachgedacht?",
+     "c": "Aufgabe: Gib einem Freund das Schafrätsel und schweig, bis er antwortet."
+    },
+    "es": {
+     "t": "Adivinanzas con truco",
+     "g": "Prueba adivinanzas que te hacen pensar de más una respuesta sencilla.",
+     "p": [
+      "Los acertijos con truco esconden una respuesta fácil tras una pregunta que suena complicada.",
+      "Ejemplo: un granjero tiene 17 ovejas y todas menos 9 se escapan. ¿Cuántas quedan? ¡Nueve!",
+      "Ejemplo: ¿qué se puede romper sin tocarlo? ¡Una promesa!"
+     ],
+     "q": "¿Pensaste de más el acertijo de las ovejas al principio?",
+     "c": "Reto: plantea a un amigo el acertijo de las ovejas y no digas nada hasta que responda."
+    },
+    "fr": {
+     "t": "Devinettes à piège",
+     "g": "Essaie des devinettes qui font trop réfléchir pour une réponse simple.",
+     "p": [
+      "Les devinettes à piège cachent une réponse facile derrière une question qui semble compliquée.",
+      "Exemple : un fermier a 17 moutons et tous sauf 9 s'enfuient. Combien en reste-t-il ? Neuf !",
+      "Exemple : que peut-on briser sans le toucher ? Une promesse !"
+     ],
+     "q": "As-tu trop réfléchi à la devinette des moutons au début ?",
+     "c": "Défi : pose la devinette des moutons à un ami et ne dis rien avant sa réponse."
+    },
+    "it": {
+     "t": "Indovinelli con trucco",
+     "g": "Prova indovinelli che ti fanno pensare troppo a una risposta semplice.",
+     "p": [
+      "Gli indovinelli con trucco nascondono una risposta facile dietro una domanda che sembra complicata.",
+      "Esempio: un contadino ha 17 pecore e tutte tranne 9 scappano. Quante ne restano? Nove!",
+      "Esempio: cosa si può rompere senza toccarlo? Una promessa!"
+     ],
+     "q": "All'inizio hai pensato troppo all'indovinello delle pecore?",
+     "c": "Sfida: proponi a un amico l'indovinello delle pecore e non dire nulla finché risponde."
+    },
+    "pt": {
+     "t": "Adivinhas com truque",
+     "g": "Experimenta adivinhas que te fazem pensar demais numa resposta simples.",
+     "p": [
+      "As adivinhas com truque escondem uma resposta fácil atrás de uma pergunta que parece complicada.",
+      "Exemplo: um agricultor tem 17 ovelhas e todas menos 9 fogem. Quantas ficam? Nove!",
+      "Exemplo: o que se pode partir sem tocar? Uma promessa!"
+     ],
+     "q": "Pensaste demais na adivinha das ovelhas ao início?",
+     "c": "Desafio: faz a um amigo a adivinha das ovelhas e não digas nada até ele responder."
+    },
+    "pt_BR": {
+     "t": "Adivinhas com pegadinha",
+     "g": "Experimente adivinhas que fazem você pensar demais numa resposta simples.",
+     "p": [
+      "Adivinhas com pegadinha escondem uma resposta fácil atrás de uma pergunta que parece complicada.",
+      "Exemplo: um fazendeiro tem 17 ovelhas e todas menos 9 fogem. Quantas ficam? Nove!",
+      "Exemplo: o que se pode quebrar sem tocar? Uma promessa!"
+     ],
+     "q": "Você pensou demais na adivinha das ovelhas no começo?",
+     "c": "Desafio: faça a um amigo a adivinha das ovelhas e não diga nada até ele responder."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Jokes about music",
+     "g": "Enjoy light puns about notes, drums and pianos with keys.",
+     "p": [
+      "Music words have double lives: a note, a key, a bar, a scale.",
+      "Example: why did the singer carry a ladder? To reach the high notes!",
+      "Music jokes are friendly because everybody has a favourite song."
+     ],
+     "q": "What song always makes you smile?",
+     "c": "Challenge: invent a joke about an instrument that is feeling shy."
+    },
+    "de": {
+     "t": "Musikwitze",
+     "g": "Genieße leichte Wortspiele über Noten, Trommeln und Klaviere mit Tasten.",
+     "p": [
+      "Musikwörter haben ein Doppelleben: Note, Taste, Takt, Tonleiter.",
+      "Beispiel: Warum nimmt die Sängerin eine Leiter mit? Für die hohen Töne!",
+      "Musikwitze sind freundlich, denn jeder hat ein Lieblingslied."
+     ],
+     "q": "Welches Lied bringt dich immer zum Lächeln?",
+     "c": "Aufgabe: Erfinde einen Witz über ein Instrument, das sich schüchtern fühlt."
+    },
+    "es": {
+     "t": "Chistes de música",
+     "g": "Disfruta de juegos de palabras ligeros sobre notas, tambores y pianos con teclas.",
+     "p": [
+      "Las palabras de música tienen doble vida: nota, tecla, compás, escala.",
+      "Ejemplo: ¿por qué la cantante llevaba una escalera? ¡Para llegar a las notas altas!",
+      "Los chistes de música son amables, porque todos tenemos una canción favorita."
+     ],
+     "q": "¿Qué canción te hace sonreír siempre?",
+     "c": "Reto: inventa un chiste sobre un instrumento que se siente tímido."
+    },
+    "fr": {
+     "t": "Blagues sur la musique",
+     "g": "Savoure des jeux de mots légers sur les notes, les tambours et les pianos à touches.",
+     "p": [
+      "Les mots de la musique ont une double vie : note, touche, mesure, gamme.",
+      "Exemple : pourquoi la chanteuse portait-elle une échelle ? Pour atteindre les notes aiguës !",
+      "Les blagues de musique sont gentilles, car chacun a une chanson préférée."
+     ],
+     "q": "Quelle chanson te fait toujours sourire ?",
+     "c": "Défi : invente une blague sur un instrument qui se sent timide."
+    },
+    "it": {
+     "t": "Barzellette sulla musica",
+     "g": "Goditi giochi di parole leggeri su note, tamburi e pianoforti con i tasti.",
+     "p": [
+      "Le parole della musica hanno una doppia vita: nota, tasto, battuta, scala.",
+      "Esempio: perché la cantante portava una scala? Per raggiungere le note alte!",
+      "Le barzellette sulla musica sono gentili, perché tutti abbiamo una canzone preferita."
+     ],
+     "q": "Quale canzone ti fa sempre sorridere?",
+     "c": "Sfida: inventa una barzelletta su uno strumento che si sente timido."
+    },
+    "pt": {
+     "t": "Piadas sobre música",
+     "g": "Diverte-te com trocadilhos leves sobre notas, tambores e pianos com teclas.",
+     "p": [
+      "As palavras da música têm vida dupla: nota, tecla, compasso, escala.",
+      "Exemplo: porque é que a cantora levava uma escada? Para chegar às notas altas!",
+      "As piadas de música são simpáticas, porque todos temos uma canção preferida."
+     ],
+     "q": "Que canção te faz sempre sorrir?",
+     "c": "Desafio: inventa uma piada sobre um instrumento que se sente tímido."
+    },
+    "pt_BR": {
+     "t": "Piadas sobre música",
+     "g": "Divirta-se com trocadilhos leves sobre notas, tambores e pianos com teclas.",
+     "p": [
+      "Palavras da música têm vida dupla: nota, tecla, compasso, escala.",
+      "Exemplo: por que a cantora levava uma escada? Para alcançar as notas altas!",
+      "Piadas de música são gentis, porque todo mundo tem uma música favorita."
+     ],
+     "q": "Que música sempre faz você sorrir?",
+     "c": "Desafio: invente uma piada sobre um instrumento que está com vergonha."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Telling a joke to a friend",
+     "g": "Practise telling one short joke from start to finish.",
+     "p": [
+      "Pick a short joke you like and know it well enough to tell it without notes.",
+      "Look at your listener, pace the setup, pause, then land the punchline.",
+      "If it does not get a big laugh, smile anyway; the smile is the point."
+     ],
+     "q": "Which joke will you try on a friend?",
+     "c": "Challenge: tell your joke to a real friend today and share how it went."
+    },
+    "de": {
+     "t": "Einem Freund einen Witz erzählen",
+     "g": "Übe, einen kurzen Witz von Anfang bis Ende zu erzählen.",
+     "p": [
+      "Such dir einen kurzen Witz, den du magst und so gut kennst, dass du ihn ohne Zettel erzählst.",
+      "Schau dein Gegenüber an, erzähl den Aufbau ruhig, mach eine Pause und bring die Pointe.",
+      "Wenn kein großes Lachen kommt, lächle trotzdem; das Lächeln ist die Hauptsache."
+     ],
+     "q": "Welchen Witz probierst du an einem Freund aus?",
+     "c": "Aufgabe: Erzähl deinen Witz heute einem echten Freund und berichte, wie es lief."
+    },
+    "es": {
+     "t": "Contar un chiste a un amigo",
+     "g": "Practica contar un chiste corto de principio a fin.",
+     "p": [
+      "Elige un chiste corto que te guste y que conozcas tan bien que puedas contarlo sin apuntes.",
+      "Mira a quien te escucha, marca el ritmo de la preparación, haz una pausa y suelta el remate.",
+      "Si no hay una gran carcajada, sonríe igual; la sonrisa es lo importante."
+     ],
+     "q": "¿Qué chiste probarás con un amigo?",
+     "c": "Reto: cuenta tu chiste hoy a un amigo de verdad y cuéntame cómo fue."
+    },
+    "fr": {
+     "t": "Raconter une blague à un ami",
+     "g": "Entraîne-toi à raconter une blague courte du début à la fin.",
+     "p": [
+      "Choisis une blague courte que tu aimes et connais assez pour la raconter sans notes.",
+      "Regarde ton public, donne le rythme de la mise en place, fais une pause puis lance la chute.",
+      "Si le rire n'est pas immense, souris quand même ; le sourire est l'essentiel."
+     ],
+     "q": "Quelle blague vas-tu essayer sur un ami ?",
+     "c": "Défi : raconte ta blague à un vrai ami aujourd'hui et dis-moi comment ça s'est passé."
+    },
+    "it": {
+     "t": "Raccontare una barzelletta a un amico",
+     "g": "Esercitati a raccontare una barzelletta breve dall'inizio alla fine.",
+     "p": [
+      "Scegli una barzelletta breve che ti piace e che conosci abbastanza da raccontarla senza appunti.",
+      "Guarda chi ti ascolta, dai il ritmo alla preparazione, fai una pausa e lancia il finale.",
+      "Se la risata non è grande, sorridi lo stesso; il sorriso è la cosa importante."
+     ],
+     "q": "Quale barzelletta proverai con un amico?",
+     "c": "Sfida: racconta oggi la tua barzelletta a un vero amico e dimmi com'è andata."
+    },
+    "pt": {
+     "t": "Contar uma piada a um amigo",
+     "g": "Pratica contar uma piada curta do princípio ao fim.",
+     "p": [
+      "Escolhe uma piada curta de que gostes e que conheças bem o suficiente para a contar sem apontamentos.",
+      "Olha para quem te ouve, marca o ritmo da preparação, faz uma pausa e solta o final.",
+      "Se não houver grande gargalhada, sorri na mesma; o sorriso é o mais importante."
+     ],
+     "q": "Que piada vais experimentar com um amigo?",
+     "c": "Desafio: conta a tua piada hoje a um amigo a sério e diz-me como correu."
+    },
+    "pt_BR": {
+     "t": "Contar uma piada para um amigo",
+     "g": "Pratique contar uma piada curta do começo ao fim.",
+     "p": [
+      "Escolha uma piada curta de que você goste e que conheça bem o bastante para contar sem anotações.",
+      "Olhe para quem ouve, marque o ritmo da preparação, faça uma pausa e solte o final.",
+      "Se não rolar uma grande gargalhada, sorria do mesmo jeito; o sorriso é o mais importante."
+     ],
+     "q": "Que piada você vai testar com um amigo?",
+     "c": "Desafio: conte sua piada hoje para um amigo de verdade e me diga como foi."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your first month of jokes",
+     "g": "Revisit puns, riddles and timing with your favourite jokes so far.",
+     "p": [
+      "Think back: puns, knock-knock jokes, riddles, setups, punchlines and timing.",
+      "Pick your favourite from each style and notice what you enjoyed most.",
+      "Congratulations: a month of laughing makes you a kinder, funnier friend."
+     ],
+     "q": "Which joke or riddle from this month would you tell again?",
+     "c": "Challenge: tell your top three jokes or riddles of the month to someone you like."
+    },
+    "de": {
+     "t": "Rückblick: dein erster Witzemonat",
+     "g": "Wiederhole Wortspiele, Rätsel und Timing mit deinen bisherigen Lieblingswitzen.",
+     "p": [
+      "Denk zurück: Wortspiele, Klopf-klopf-Witze, Rätsel, Aufbau, Pointe und Timing.",
+      "Such dir aus jeder Art deinen Favoriten und achte darauf, was dir am meisten Spaß gemacht hat.",
+      "Glückwunsch: Ein Monat Lachen macht dich zum freundlicheren, lustigeren Freund."
+     ],
+     "q": "Welchen Witz oder welches Rätsel dieses Monats würdest du wieder erzählen?",
+     "c": "Aufgabe: Erzähl jemandem, den du magst, deine drei besten Witze oder Rätsel des Monats."
+    },
+    "es": {
+     "t": "Repaso: tu primer mes de chistes",
+     "g": "Repasa juegos de palabras, adivinanzas y tempo con tus chistes favoritos hasta ahora.",
+     "p": [
+      "Piensa en lo visto: juegos de palabras, toc toc, adivinanzas, preparación, remate y tempo.",
+      "Elige tu favorito de cada estilo y fíjate en qué disfrutaste más.",
+      "Felicidades: un mes de risas te hace un amigo más amable y más gracioso."
+     ],
+     "q": "¿Qué chiste o adivinanza de este mes volverías a contar?",
+     "c": "Reto: cuéntale a alguien que aprecies tus tres mejores chistes o adivinanzas del mes."
+    },
+    "fr": {
+     "t": "Révision : ton premier mois de blagues",
+     "g": "Revois les jeux de mots, devinettes et le timing avec tes blagues préférées.",
+     "p": [
+      "Repense à tout : jeux de mots, toc toc, devinettes, mise en place, chute et timing.",
+      "Choisis ton préféré dans chaque style et remarque ce qui t'a le plus plu.",
+      "Bravo : un mois de rires fait de toi un ami plus gentil et plus drôle."
+     ],
+     "q": "Quelle blague ou devinette de ce mois raconterais-tu encore ?",
+     "c": "Défi : raconte tes trois meilleures blagues ou devinettes du mois à quelqu'un que tu aimes."
+    },
+    "it": {
+     "t": "Ripasso: il tuo primo mese di barzellette",
+     "g": "Ripassa giochi di parole, indovinelli e tempismo con le tue barzellette preferite finora.",
+     "p": [
+      "Ripensa al mese: giochi di parole, toc toc, indovinelli, preparazione, finale e tempismo.",
+      "Scegli il tuo preferito di ogni stile e nota cosa ti è piaciuto di più.",
+      "Complimenti: un mese di risate ti rende un amico più gentile e divertente."
+     ],
+     "q": "Quale barzelletta o indovinello di questo mese racconteresti ancora?",
+     "c": "Sfida: racconta a qualcuno a cui tieni le tue tre migliori barzellette o indovinelli del mese."
+    },
+    "pt": {
+     "t": "Revisão: o teu primeiro mês de piadas",
+     "g": "Revê trocadilhos, adivinhas e timing com as tuas piadas preferidas até agora.",
+     "p": [
+      "Pensa no que viste: trocadilhos, toc toc, adivinhas, preparação, final e timing.",
+      "Escolhe a tua preferida de cada estilo e repara no que mais gostaste.",
+      "Parabéns: um mês de riso faz de ti um amigo mais simpático e mais divertido."
+     ],
+     "q": "Que piada ou adivinha deste mês voltarias a contar?",
+     "c": "Desafio: conta a alguém de quem gostes as tuas três melhores piadas ou adivinhas do mês."
+    },
+    "pt_BR": {
+     "t": "Revisão: seu primeiro mês de piadas",
+     "g": "Reveja trocadilhos, adivinhas e timing com suas piadas favoritas até agora.",
+     "p": [
+      "Pense no que viu: trocadilhos, toc toc, adivinhas, preparação, final e timing.",
+      "Escolha sua favorita de cada estilo e repare no que mais curtiu.",
+      "Parabéns: um mês de risadas faz de você um amigo mais gentil e mais divertido."
+     ],
+     "q": "Que piada ou adivinha deste mês você contaria de novo?",
+     "c": "Desafio: conte para alguém de quem você gosta suas três melhores piadas ou adivinhas do mês."
+    }
+   }
+  }
+ ]
+}

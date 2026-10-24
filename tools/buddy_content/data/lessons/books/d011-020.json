@@ -1,0 +1,835 @@
+{
+ "topic": "books",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is a novel?",
+     "g": "Understand what makes a novel different from other stories.",
+     "p": [
+      "A novel is a long work of fiction, usually many chapters of connected events.",
+      "Its characters are invented, though they can feel wonderfully real.",
+      "Most novels follow an arc: a problem appears, grows and finds an ending."
+     ],
+     "q": "Which novel has felt most real to you, and why?",
+     "c": "Open a novel you know and count how many chapters it has."
+    },
+    "de": {
+     "t": "Was ist ein Roman?",
+     "g": "Verstehe, was einen Roman von anderen Geschichten unterscheidet.",
+     "p": [
+      "Ein Roman ist ein langes Werk der Fiktion, meist mit vielen verbundenen Kapiteln.",
+      "Seine Figuren sind erfunden, können aber erstaunlich echt wirken.",
+      "Die meisten Romane folgen einem Bogen: Ein Problem entsteht, wächst und findet ein Ende."
+     ],
+     "q": "Welcher Roman wirkte auf dich am echtesten, und warum?",
+     "c": "Öffne einen Roman, den du kennst, und zähle seine Kapitel."
+    },
+    "es": {
+     "t": "¿Qué es una novela?",
+     "g": "Entiende qué distingue a la novela de otras historias.",
+     "p": [
+      "Una novela es una obra de ficción extensa, con muchos capítulos enlazados.",
+      "Sus personajes son inventados, aunque pueden parecer muy reales.",
+      "La mayoría sigue un arco: surge un problema, crece y llega a un final."
+     ],
+     "q": "¿Qué novela te ha parecido más real y por qué?",
+     "c": "Abre una novela que conozcas y cuenta cuántos capítulos tiene."
+    },
+    "fr": {
+     "t": "Qu'est-ce qu'un roman ?",
+     "g": "Comprends ce qui distingue le roman des autres récits.",
+     "p": [
+      "Un roman est une longue œuvre de fiction, en général faite de nombreux chapitres liés.",
+      "Ses personnages sont inventés, mais peuvent sembler très réels.",
+      "La plupart suivent un arc : un problème surgit, grandit et trouve une fin."
+     ],
+     "q": "Quel roman t'a paru le plus vrai, et pourquoi ?",
+     "c": "Ouvre un roman que tu connais et compte ses chapitres."
+    },
+    "it": {
+     "t": "Che cos'è un romanzo?",
+     "g": "Capisci cosa distingue il romanzo dalle altre storie.",
+     "p": [
+      "Un romanzo è un'opera di narrativa lunga, di solito con molti capitoli collegati.",
+      "I personaggi sono inventati, ma possono sembrare molto reali.",
+      "La maggior parte segue un arco: nasce un problema, cresce e trova una fine."
+     ],
+     "q": "Quale romanzo ti è sembrato più vero e perché?",
+     "c": "Apri un romanzo che conosci e conta quanti capitoli ha."
+    },
+    "pt": {
+     "t": "O que é um romance?",
+     "g": "Percebe o que distingue o romance de outras histórias.",
+     "p": [
+      "Um romance é uma obra de ficção longa, geralmente com muitos capítulos ligados.",
+      "As personagens são inventadas, mas podem parecer muito reais.",
+      "A maioria segue um arco: surge um problema, cresce e chega a um final."
+     ],
+     "q": "Que romance te pareceu mais real e porquê?",
+     "c": "Abre um romance que conheças e conta quantos capítulos tem."
+    },
+    "pt_BR": {
+     "t": "O que é um romance?",
+     "g": "Entenda o que distingue o romance de outras histórias.",
+     "p": [
+      "Um romance é uma obra de ficção longa, geralmente com muitos capítulos ligados.",
+      "Os personagens são inventados, mas podem parecer muito reais.",
+      "A maioria segue um arco: surge um problema, cresce e chega a um final."
+     ],
+     "q": "Que romance pareceu mais real para você e por quê?",
+     "c": "Abra um romance que você conheça e conte quantos capítulos ele tem."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Short stories: big worlds, few pages",
+     "g": "See why short stories suit busy readers.",
+     "p": [
+      "A short story can be read in one sitting, often in under an hour.",
+      "With few pages, every sentence counts and one moment can say a lot.",
+      "Writers like Chekhov, Borges and Alice Munro mastered the form."
+     ],
+     "q": "Do you prefer a story finished in one sitting or a long journey?",
+     "c": "Read one short story today and name its single main idea."
+    },
+    "de": {
+     "t": "Kurzgeschichten: große Welten, wenige Seiten",
+     "g": "Sieh, warum Kurzgeschichten zu vielbeschäftigten Lesern passen.",
+     "p": [
+      "Eine Kurzgeschichte liest man in einem Zug, oft in unter einer Stunde.",
+      "Bei wenigen Seiten zählt jeder Satz, und ein Moment kann viel sagen.",
+      "Autoren wie Tschechow, Borges und Alice Munro beherrschten die Form."
+     ],
+     "q": "Magst du lieber eine Geschichte in einem Zug oder eine lange Reise?",
+     "c": "Lies heute eine Kurzgeschichte und benenne ihre eine Hauptidee."
+    },
+    "es": {
+     "t": "Cuentos: grandes mundos en pocas páginas",
+     "g": "Descubre por qué el cuento encaja con lectores ocupados.",
+     "p": [
+      "Un cuento se lee de una sentada, a menudo en menos de una hora.",
+      "Con pocas páginas, cada frase cuenta y un instante puede decir mucho.",
+      "Autores como Chéjov, Borges y Alice Munro dominaron el género."
+     ],
+     "q": "¿Prefieres una historia de una sentada o un viaje largo?",
+     "c": "Lee hoy un cuento y nombra su idea principal."
+    },
+    "fr": {
+     "t": "La nouvelle : de grands mondes en peu de pages",
+     "g": "Vois pourquoi la nouvelle convient aux lecteurs pressés.",
+     "p": [
+      "Une nouvelle se lit d'une traite, souvent en moins d'une heure.",
+      "Avec peu de pages, chaque phrase compte et un instant peut en dire long.",
+      "Des auteurs comme Tchekhov, Borges et Alice Munro ont maîtrisé la forme."
+     ],
+     "q": "Préfères-tu une histoire d'une traite ou un long voyage ?",
+     "c": "Lis une nouvelle aujourd'hui et nomme son idée principale."
+    },
+    "it": {
+     "t": "Racconti: grandi mondi in poche pagine",
+     "g": "Scopri perché il racconto si adatta ai lettori impegnati.",
+     "p": [
+      "Un racconto si legge in una sola seduta, spesso in meno di un'ora.",
+      "Con poche pagine ogni frase conta e un istante può dire molto.",
+      "Autori come Čechov, Borges e Alice Munro hanno dominato la forma."
+     ],
+     "q": "Preferisci una storia in una seduta o un lungo viaggio?",
+     "c": "Leggi oggi un racconto e indica la sua idea principale."
+    },
+    "pt": {
+     "t": "Contos: grandes mundos em poucas páginas",
+     "g": "Vê porque é que o conto serve leitores ocupados.",
+     "p": [
+      "Um conto lê-se de uma assentada, muitas vezes em menos de uma hora.",
+      "Com poucas páginas, cada frase conta e um momento pode dizer muito.",
+      "Autores como Tchékhov, Borges e Alice Munro dominaram o género."
+     ],
+     "q": "Preferes uma história de uma assentada ou uma longa viagem?",
+     "c": "Lê hoje um conto e diz qual é a sua ideia principal."
+    },
+    "pt_BR": {
+     "t": "Contos: grandes mundos em poucas páginas",
+     "g": "Veja por que o conto serve a leitores ocupados.",
+     "p": [
+      "Um conto se lê de uma sentada, muitas vezes em menos de uma hora.",
+      "Com poucas páginas, cada frase conta e um momento pode dizer muito.",
+      "Autores como Tchékhov, Borges e Alice Munro dominaram o gênero."
+     ],
+     "q": "Você prefere uma história de uma sentada ou uma longa viagem?",
+     "c": "Leia hoje um conto e diga qual é a ideia principal dele."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Meet the main character",
+     "g": "Learn why we follow protagonists through a story.",
+     "p": [
+      "The protagonist is the character whose journey the story follows.",
+      "They want something, and obstacles in the way create the tension.",
+      "We care most when a character is flawed, brave and human at once."
+     ],
+     "q": "Which fictional character would you most like to meet?",
+     "c": "Pick a favourite hero and write in one line what they want most."
+    },
+    "de": {
+     "t": "Die Hauptfigur kennenlernen",
+     "g": "Lerne, warum wir Hauptfiguren durch eine Geschichte folgen.",
+     "p": [
+      "Die Hauptfigur ist die Person, deren Weg die Geschichte begleitet.",
+      "Sie will etwas, und Hindernisse auf dem Weg erzeugen die Spannung.",
+      "Wir fiebern am meisten mit, wenn eine Figur fehlerhaft, mutig und menschlich zugleich ist."
+     ],
+     "q": "Welche Romanfigur würdest du am liebsten treffen?",
+     "c": "Wähle einen Lieblingshelden und schreibe in einer Zeile, was er am meisten will."
+    },
+    "es": {
+     "t": "Conoce al protagonista",
+     "g": "Aprende por qué seguimos a los protagonistas en una historia.",
+     "p": [
+      "El protagonista es el personaje cuyo camino sigue la historia.",
+      "Quiere algo, y los obstáculos en el camino crean la tensión.",
+      "Nos importa más cuando es imperfecto, valiente y humano a la vez."
+     ],
+     "q": "¿A qué personaje de ficción te gustaría conocer?",
+     "c": "Elige a tu héroe favorito y escribe en una línea qué desea más."
+    },
+    "fr": {
+     "t": "Faire connaissance avec le héros",
+     "g": "Apprends pourquoi nous suivons un protagoniste dans une histoire.",
+     "p": [
+      "Le protagoniste est le personnage dont le parcours guide l'histoire.",
+      "Il veut quelque chose, et les obstacles créent la tension.",
+      "On s'attache surtout à un personnage imparfait, courageux et humain à la fois."
+     ],
+     "q": "Quel personnage de fiction aimerais-tu rencontrer ?",
+     "c": "Choisis un héros préféré et écris en une ligne ce qu'il veut le plus."
+    },
+    "it": {
+     "t": "Conosci il protagonista",
+     "g": "Impara perché seguiamo i protagonisti in una storia.",
+     "p": [
+      "Il protagonista è il personaggio il cui percorso guida la storia.",
+      "Vuole qualcosa, e gli ostacoli lungo la strada creano la tensione.",
+      "Ci importa di più quando è imperfetto, coraggioso e umano insieme."
+     ],
+     "q": "Quale personaggio di fantasia vorresti incontrare?",
+     "c": "Scegli il tuo eroe preferito e scrivi in una riga cosa desidera di più."
+    },
+    "pt": {
+     "t": "Conhecer a personagem principal",
+     "g": "Aprende porque seguimos os protagonistas numa história.",
+     "p": [
+      "O protagonista é a personagem cujo percurso a história acompanha.",
+      "Quer algo, e os obstáculos no caminho criam a tensão.",
+      "Importamo-nos mais quando é imperfeita, corajosa e humana ao mesmo tempo."
+     ],
+     "q": "Que personagem de ficção gostarias de conhecer?",
+     "c": "Escolhe o teu herói favorito e escreve numa linha o que mais deseja."
+    },
+    "pt_BR": {
+     "t": "Conhecer o personagem principal",
+     "g": "Aprenda por que seguimos os protagonistas numa história.",
+     "p": [
+      "O protagonista é o personagem cuja jornada a história acompanha.",
+      "Ele quer algo, e os obstáculos no caminho criam a tensão.",
+      "Ligamo-nos mais quando é imperfeito, corajoso e humano ao mesmo tempo."
+     ],
+     "q": "Que personagem de ficção você gostaria de conhecer?",
+     "c": "Escolha seu herói favorito e escreva em uma linha o que ele mais quer."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Plot basics: beginning, middle, end",
+     "g": "See how stories build from setup to resolution.",
+     "p": [
+      "The beginning introduces people, place and a situation that must change.",
+      "The middle raises the stakes with obstacles, surprises and choices.",
+      "The end resolves the main problem and shows what has changed."
+     ],
+     "q": "Which story had an ending that felt just right to you?",
+     "c": "Retell a favourite story in three sentences: beginning, middle, end."
+    },
+    "de": {
+     "t": "Handlungsgrundlagen: Anfang, Mitte, Ende",
+     "g": "Sieh, wie Geschichten von der Ausgangslage zur Lösung wachsen.",
+     "p": [
+      "Der Anfang stellt Figuren, Ort und eine Lage vor, die sich ändern muss.",
+      "In der Mitte steigen die Einsätze durch Hindernisse, Überraschungen und Entscheidungen.",
+      "Das Ende löst das Hauptproblem und zeigt, was sich verändert hat."
+     ],
+     "q": "Welche Geschichte hatte ein Ende, das für dich genau passte?",
+     "c": "Erzähle eine Lieblingsgeschichte in drei Sätzen: Anfang, Mitte, Ende."
+    },
+    "es": {
+     "t": "Bases de la trama: inicio, nudo y desenlace",
+     "g": "Mira cómo las historias crecen desde el planteamiento hasta la resolución.",
+     "p": [
+      "El inicio presenta personajes, lugar y una situación que debe cambiar.",
+      "El nudo sube la apuesta con obstáculos, sorpresas y decisiones.",
+      "El desenlace resuelve el problema principal y muestra qué ha cambiado."
+     ],
+     "q": "¿Qué historia tuvo un final que te pareció perfecto?",
+     "c": "Cuenta una historia favorita en tres frases: inicio, nudo, desenlace."
+    },
+    "fr": {
+     "t": "Bases de l'intrigue : début, milieu, fin",
+     "g": "Vois comment les histoires se construisent jusqu'à leur dénouement.",
+     "p": [
+      "Le début présente personnages, lieu et une situation qui doit changer.",
+      "Le milieu hausse les enjeux avec obstacles, surprises et choix.",
+      "La fin résout le problème principal et montre ce qui a changé."
+     ],
+     "q": "Quelle histoire avait une fin qui t'a paru parfaite ?",
+     "c": "Raconte une histoire préférée en trois phrases : début, milieu, fin."
+    },
+    "it": {
+     "t": "Basi della trama: inizio, mezzo, fine",
+     "g": "Vedi come le storie crescono dalla premessa alla soluzione.",
+     "p": [
+      "L'inizio presenta personaggi, luogo e una situazione che deve cambiare.",
+      "La parte centrale alza la posta con ostacoli, sorprese e scelte.",
+      "La fine risolve il problema principale e mostra cosa è cambiato."
+     ],
+     "q": "Quale storia aveva un finale che ti è sembrato perfetto?",
+     "c": "Racconta una storia preferita in tre frasi: inizio, mezzo, fine."
+    },
+    "pt": {
+     "t": "Noções de enredo: início, meio e fim",
+     "g": "Vê como as histórias crescem do arranque à resolução.",
+     "p": [
+      "O início apresenta personagens, lugar e uma situação que tem de mudar.",
+      "O meio aumenta a tensão com obstáculos, surpresas e escolhas.",
+      "O fim resolve o problema principal e mostra o que mudou."
+     ],
+     "q": "Que história teve um final que te pareceu perfeito?",
+     "c": "Conta uma história favorita em três frases: início, meio e fim."
+    },
+    "pt_BR": {
+     "t": "Noções de enredo: início, meio e fim",
+     "g": "Veja como as histórias crescem da apresentação à resolução.",
+     "p": [
+      "O início apresenta personagens, lugar e uma situação que precisa mudar.",
+      "O meio aumenta a tensão com obstáculos, surpresas e escolhas.",
+      "O fim resolve o problema principal e mostra o que mudou."
+     ],
+     "q": "Que história teve um final que pareceu perfeito para você?",
+     "c": "Conte uma história favorita em três frases: início, meio e fim."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Setting: where and when",
+     "g": "See how time and place shape a book's mood.",
+     "p": [
+      "Setting is the where and when: a village, a spaceship, a rainy year.",
+      "A good setting affects what characters can do and how they feel.",
+      "Some places feel like characters themselves, like the sea in Moby-Dick."
+     ],
+     "q": "Which book setting would you love to step into for a day?",
+     "c": "Choose a book and describe its setting using three senses."
+    },
+    "de": {
+     "t": "Schauplatz: wo und wann",
+     "g": "Sieh, wie Zeit und Ort die Stimmung eines Buches prägen.",
+     "p": [
+      "Der Schauplatz ist das Wo und Wann: ein Dorf, ein Raumschiff, ein verregnetes Jahr.",
+      "Ein guter Schauplatz beeinflusst, was Figuren tun können und wie sie fühlen.",
+      "Manche Orte wirken selbst wie Figuren, etwa das Meer in Moby-Dick."
+     ],
+     "q": "In welchen Buchschauplatz würdest du gern einen Tag eintauchen?",
+     "c": "Wähle ein Buch und beschreibe seinen Schauplatz mit drei Sinnen."
+    },
+    "es": {
+     "t": "El escenario: dónde y cuándo",
+     "g": "Mira cómo el tiempo y el lugar dan tono a un libro.",
+     "p": [
+      "El escenario es el dónde y el cuándo: un pueblo, una nave, un año lluvioso.",
+      "Un buen escenario influye en lo que los personajes pueden hacer y sentir.",
+      "Algunos lugares son casi personajes, como el mar en Moby Dick."
+     ],
+     "q": "¿A qué escenario de un libro te gustaría entrar un día?",
+     "c": "Elige un libro y describe su escenario con tres sentidos."
+    },
+    "fr": {
+     "t": "Le cadre : où et quand",
+     "g": "Vois comment le temps et le lieu façonnent l'ambiance d'un livre.",
+     "p": [
+      "Le cadre, c'est le où et le quand : un village, un vaisseau, une année pluvieuse.",
+      "Un bon cadre influence ce que les personnages font et ressentent.",
+      "Certains lieux sont presque des personnages, comme la mer dans Moby Dick."
+     ],
+     "q": "Dans quel décor de livre aimerais-tu passer une journée ?",
+     "c": "Choisis un livre et décris son cadre avec trois sens."
+    },
+    "it": {
+     "t": "L'ambientazione: dove e quando",
+     "g": "Vedi come tempo e luogo plasmano l'atmosfera di un libro.",
+     "p": [
+      "L'ambientazione è il dove e il quando: un villaggio, un'astronave, un anno piovoso.",
+      "Una buona ambientazione influenza ciò che i personaggi possono fare e sentire.",
+      "Certi luoghi sono quasi personaggi, come il mare in Moby Dick."
+     ],
+     "q": "In quale ambientazione di un libro vorresti entrare per un giorno?",
+     "c": "Scegli un libro e descrivi la sua ambientazione con tre sensi."
+    },
+    "pt": {
+     "t": "O cenário: onde e quando",
+     "g": "Vê como o tempo e o lugar moldam o ambiente de um livro.",
+     "p": [
+      "O cenário é o onde e o quando: uma aldeia, uma nave, um ano chuvoso.",
+      "Um bom cenário influencia o que as personagens fazem e sentem.",
+      "Alguns lugares são quase personagens, como o mar em Moby Dick."
+     ],
+     "q": "Em que cenário de um livro gostarias de entrar por um dia?",
+     "c": "Escolhe um livro e descreve o seu cenário com três sentidos."
+    },
+    "pt_BR": {
+     "t": "O cenário: onde e quando",
+     "g": "Veja como o tempo e o lugar moldam o clima de um livro.",
+     "p": [
+      "O cenário é o onde e o quando: uma vila, uma nave, um ano chuvoso.",
+      "Um bom cenário influencia o que os personagens fazem e sentem.",
+      "Alguns lugares são quase personagens, como o mar em Moby Dick."
+     ],
+     "q": "Em que cenário de um livro você gostaria de entrar por um dia?",
+     "c": "Escolha um livro e descreva o cenário dele com três sentidos."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Who is telling the story?",
+     "g": "Learn how the narrator changes what we see.",
+     "p": [
+      "First person uses I: we see events through one person's eyes.",
+      "Third person uses he, she or they: the narrator stands outside the story.",
+      "The same event can feel very different depending on who tells it."
+     ],
+     "q": "Do you prefer stories told by a character or by an outside voice?",
+     "c": "Rewrite one sentence from a book in first person, then third person."
+    },
+    "de": {
+     "t": "Wer erzählt die Geschichte?",
+     "g": "Lerne, wie der Erzähler verändert, was wir sehen.",
+     "p": [
+      "Die Ich-Form zeigt Ereignisse mit den Augen einer einzigen Person.",
+      "Die dritte Person nutzt er, sie oder es: Der Erzähler steht außerhalb der Geschichte.",
+      "Dasselbe Ereignis wirkt ganz anders, je nachdem, wer es erzählt."
+     ],
+     "q": "Magst du lieber Geschichten einer Figur oder einer äußeren Stimme?",
+     "c": "Schreibe einen Satz aus einem Buch in Ich-Form und dann in dritter Person um."
+    },
+    "es": {
+     "t": "¿Quién cuenta la historia?",
+     "g": "Aprende cómo el narrador cambia lo que vemos.",
+     "p": [
+      "La primera persona usa yo: vemos los hechos con los ojos de alguien.",
+      "La tercera persona usa él, ella o ellos: el narrador queda fuera de la historia.",
+      "Un mismo suceso cambia mucho según quién lo cuente."
+     ],
+     "q": "¿Prefieres historias contadas por un personaje o por una voz externa?",
+     "c": "Reescribe una frase de un libro en primera y luego en tercera persona."
+    },
+    "fr": {
+     "t": "Qui raconte l'histoire ?",
+     "g": "Apprends comment le narrateur change ce que nous voyons.",
+     "p": [
+      "La première personne dit je : on voit les faits par les yeux d'un seul être.",
+      "La troisième personne dit il, elle ou ils : le narrateur reste hors de l'histoire.",
+      "Un même événement change beaucoup selon qui le raconte."
+     ],
+     "q": "Préfères-tu les histoires racontées par un personnage ou par une voix extérieure ?",
+     "c": "Réécris une phrase d'un livre à la première puis à la troisième personne."
+    },
+    "it": {
+     "t": "Chi racconta la storia?",
+     "g": "Impara come il narratore cambia ciò che vediamo.",
+     "p": [
+      "La prima persona usa io: vediamo i fatti con gli occhi di qualcuno.",
+      "La terza persona usa lui, lei o loro: il narratore sta fuori dalla storia.",
+      "Lo stesso evento cambia molto a seconda di chi lo racconta."
+     ],
+     "q": "Preferisci storie raccontate da un personaggio o da una voce esterna?",
+     "c": "Riscrivi una frase di un libro in prima e poi in terza persona."
+    },
+    "pt": {
+     "t": "Quem conta a história?",
+     "g": "Aprende como o narrador muda o que vemos.",
+     "p": [
+      "A primeira pessoa usa eu: vemos os factos pelos olhos de alguém.",
+      "A terceira pessoa usa ele, ela ou eles: o narrador fica fora da história.",
+      "O mesmo acontecimento muda muito consoante quem o conta."
+     ],
+     "q": "Preferes histórias contadas por uma personagem ou por uma voz externa?",
+     "c": "Reescreve uma frase de um livro em primeira e depois em terceira pessoa."
+    },
+    "pt_BR": {
+     "t": "Quem conta a história?",
+     "g": "Aprenda como o narrador muda o que enxergamos.",
+     "p": [
+      "A primeira pessoa usa eu: vemos os fatos pelos olhos de alguém.",
+      "A terceira pessoa usa ele, ela ou eles: o narrador fica fora da história.",
+      "O mesmo acontecimento muda muito conforme quem o conta."
+     ],
+     "q": "Você prefere histórias contadas por um personagem ou por uma voz externa?",
+     "c": "Reescreva uma frase de um livro em primeira e depois em terceira pessoa."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Theme: what a book is really about",
+     "g": "Look past the plot to the big ideas in a story.",
+     "p": [
+      "Plot is what happens; theme is the idea underneath, like courage or home.",
+      "Ask: what does the story seem to say about life?",
+      "One book can hold several themes, and readers may see different ones."
+     ],
+     "q": "What theme do you notice most often in books you love?",
+     "c": "Pick a book and finish: this story is really about..."
+    },
+    "de": {
+     "t": "Thema: worum es in einem Buch wirklich geht",
+     "g": "Schau hinter die Handlung auf die großen Ideen einer Geschichte.",
+     "p": [
+      "Handlung ist, was geschieht; das Thema ist die Idee darunter, etwa Mut oder Heimat.",
+      "Frage dich: Was scheint die Geschichte über das Leben zu sagen?",
+      "Ein Buch kann mehrere Themen haben, und Leser sehen verschiedene."
+     ],
+     "q": "Welches Thema begegnet dir in deinen Lieblingsbüchern am häufigsten?",
+     "c": "Wähle ein Buch und vollende: Diese Geschichte handelt eigentlich von..."
+    },
+    "es": {
+     "t": "Tema: de qué trata de verdad un libro",
+     "g": "Mira más allá de la trama hacia las grandes ideas.",
+     "p": [
+      "La trama es lo que pasa; el tema es la idea de fondo, como el valor o el hogar.",
+      "Pregúntate: ¿qué parece decir la historia sobre la vida?",
+      "Un libro puede tener varios temas y cada lector verá distintos."
+     ],
+     "q": "¿Qué tema notas más a menudo en los libros que amas?",
+     "c": "Elige un libro y completa: esta historia trata en realidad de..."
+    },
+    "fr": {
+     "t": "Le thème : de quoi parle vraiment un livre",
+     "g": "Regarde au-delà de l'intrigue vers les grandes idées.",
+     "p": [
+      "L'intrigue, c'est ce qui arrive ; le thème, l'idée dessous, comme le courage ou le foyer.",
+      "Demande-toi : que semble dire l'histoire sur la vie ?",
+      "Un livre peut porter plusieurs thèmes, et chaque lecteur en voit d'autres."
+     ],
+     "q": "Quel thème remarques-tu le plus souvent dans tes livres préférés ?",
+     "c": "Choisis un livre et complète : cette histoire parle en réalité de..."
+    },
+    "it": {
+     "t": "Il tema: di cosa parla davvero un libro",
+     "g": "Guarda oltre la trama verso le grandi idee.",
+     "p": [
+      "La trama è ciò che accade; il tema è l'idea sotto, come il coraggio o la casa.",
+      "Chiediti: cosa sembra dire la storia sulla vita?",
+      "Un libro può avere più temi e ogni lettore ne vede di diversi."
+     ],
+     "q": "Quale tema noti più spesso nei libri che ami?",
+     "c": "Scegli un libro e completa: questa storia parla in realtà di..."
+    },
+    "pt": {
+     "t": "O tema: de que trata mesmo um livro",
+     "g": "Olha para lá do enredo, para as grandes ideias.",
+     "p": [
+      "O enredo é o que acontece; o tema é a ideia de fundo, como a coragem ou o lar.",
+      "Pergunta: o que parece a história dizer sobre a vida?",
+      "Um livro pode ter vários temas e cada leitor vê temas diferentes."
+     ],
+     "q": "Que tema notas mais vezes nos livros de que gostas?",
+     "c": "Escolhe um livro e completa: esta história trata, na verdade, de..."
+    },
+    "pt_BR": {
+     "t": "O tema: do que um livro realmente trata",
+     "g": "Olhe além do enredo, para as grandes ideias.",
+     "p": [
+      "O enredo é o que acontece; o tema é a ideia de fundo, como coragem ou lar.",
+      "Pergunte: o que a história parece dizer sobre a vida?",
+      "Um livro pode ter vários temas e cada leitor enxerga temas diferentes."
+     ],
+     "q": "Que tema você mais nota nos livros de que gosta?",
+     "c": "Escolha um livro e complete: essa história trata, na verdade, de..."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dialogue that sounds alive",
+     "g": "See how conversations reveal character and move a story.",
+     "p": [
+      "Good dialogue sounds like real speech, with pauses, interruptions and hints.",
+      "What characters say, and avoid saying, shows who they are.",
+      "Dialogue also moves the plot: secrets, plans and decisions come out in talk."
+     ],
+     "q": "Which fictional conversation do you still remember?",
+     "c": "Read a page of dialogue aloud and listen for each speaker's own voice."
+    },
+    "de": {
+     "t": "Dialoge, die lebendig klingen",
+     "g": "Sieh, wie Gespräche Figuren zeigen und die Handlung treiben.",
+     "p": [
+      "Guter Dialog klingt wie echte Sprache, mit Pausen, Unterbrechungen und Andeutungen.",
+      "Was Figuren sagen und verschweigen, zeigt, wer sie sind.",
+      "Dialoge treiben auch die Handlung: Geheimnisse, Pläne und Entscheidungen kommen im Gespräch heraus."
+     ],
+     "q": "An welches fiktive Gespräch erinnerst du dich noch?",
+     "c": "Lies eine Dialogseite laut und höre auf die eigene Stimme jedes Sprechers."
+    },
+    "es": {
+     "t": "Diálogos que suenan vivos",
+     "g": "Mira cómo las conversaciones revelan personajes y mueven la historia.",
+     "p": [
+      "Un buen diálogo suena a habla real, con pausas, interrupciones e indirectas.",
+      "Lo que dicen los personajes, y lo que callan, muestra quiénes son.",
+      "El diálogo también impulsa la trama: secretos, planes y decisiones salen al hablar."
+     ],
+     "q": "¿Qué conversación de ficción recuerdas todavía?",
+     "c": "Lee en voz alta una página de diálogo y escucha la voz de cada hablante."
+    },
+    "fr": {
+     "t": "Des dialogues qui sonnent vrai",
+     "g": "Vois comment les conversations révèlent les personnages et font avancer l'histoire.",
+     "p": [
+      "Un bon dialogue ressemble à la vraie parole, avec pauses, interruptions et sous-entendus.",
+      "Ce que les personnages disent, et taisent, montre qui ils sont.",
+      "Le dialogue fait aussi avancer l'intrigue : secrets, projets et décisions s'y dévoilent."
+     ],
+     "q": "Quelle conversation de fiction te reste en mémoire ?",
+     "c": "Lis à voix haute une page de dialogue et écoute la voix propre de chacun."
+    },
+    "it": {
+     "t": "Dialoghi che suonano vivi",
+     "g": "Vedi come le conversazioni rivelano i personaggi e muovono la storia.",
+     "p": [
+      "Un buon dialogo suona come parlato vero, con pause, interruzioni e allusioni.",
+      "Ciò che i personaggi dicono, e tacciono, mostra chi sono.",
+      "Il dialogo fa avanzare anche la trama: segreti, piani e decisioni emergono parlando."
+     ],
+     "q": "Quale conversazione di un libro ricordi ancora?",
+     "c": "Leggi ad alta voce una pagina di dialogo e ascolta la voce di ogni parlante."
+    },
+    "pt": {
+     "t": "Diálogos que soam vivos",
+     "g": "Vê como as conversas revelam personagens e movem a história.",
+     "p": [
+      "Um bom diálogo soa a fala real, com pausas, interrupções e indiretas.",
+      "O que as personagens dizem, e calam, mostra quem são.",
+      "O diálogo também move o enredo: segredos, planos e decisões surgem na conversa."
+     ],
+     "q": "Que conversa de ficção ainda recordas?",
+     "c": "Lê em voz alta uma página de diálogo e ouve a voz de cada falante."
+    },
+    "pt_BR": {
+     "t": "Diálogos que soam vivos",
+     "g": "Veja como as conversas revelam personagens e movem a história.",
+     "p": [
+      "Um bom diálogo soa como fala real, com pausas, interrupções e indiretas.",
+      "O que os personagens dizem, e calam, mostra quem eles são.",
+      "O diálogo também move o enredo: segredos, planos e decisões surgem na conversa."
+     ],
+     "q": "Que conversa de ficção você ainda lembra?",
+     "c": "Leia em voz alta uma página de diálogo e ouça a voz de cada falante."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading for pleasure vs study",
+     "g": "Learn why both ways of reading are valid.",
+     "p": [
+      "Pleasure reading is relaxed: you follow your mood and enjoy the ride.",
+      "Study reading is careful: slower, with notes, questions and rereading.",
+      "You can switch gears: skim easy parts, slow down for tricky ones."
+     ],
+     "q": "Do you read mostly for fun, for learning, or a mix?",
+     "c": "Read ten minutes for pleasure, then five minutes slowly with a pen."
+    },
+    "de": {
+     "t": "Lesen zum Vergnügen und zum Lernen",
+     "g": "Lerne, warum beide Arten des Lesens ihren Wert haben.",
+     "p": [
+      "Lesen zum Vergnügen ist entspannt: Du folgst deiner Stimmung und genießt.",
+      "Lernlesen ist sorgfältig: langsamer, mit Notizen, Fragen und Wiederlesen.",
+      "Du kannst umschalten: Leichtes überfliegen, bei Kniffligem langsamer werden."
+     ],
+     "q": "Liest du meist zum Spaß, zum Lernen oder gemischt?",
+     "c": "Lies zehn Minuten zum Vergnügen, dann fünf Minuten langsam mit Stift."
+    },
+    "es": {
+     "t": "Leer por placer y para estudiar",
+     "g": "Aprende por qué ambas formas de leer son válidas.",
+     "p": [
+      "La lectura por placer es relajada: sigues tu ánimo y disfrutas del viaje.",
+      "La lectura de estudio es cuidadosa: más lenta, con notas, preguntas y relecturas.",
+      "Puedes cambiar de marcha: hojear lo fácil y frenar en lo difícil."
+     ],
+     "q": "¿Lees sobre todo por diversión, para aprender o una mezcla?",
+     "c": "Lee diez minutos por placer y cinco despacio con un lápiz."
+    },
+    "fr": {
+     "t": "Lire pour le plaisir ou pour étudier",
+     "g": "Apprends pourquoi les deux façons de lire sont valables.",
+     "p": [
+      "La lecture plaisir est détendue : tu suis ton humeur et profites du voyage.",
+      "La lecture d'étude est soigneuse : plus lente, avec notes, questions et relectures.",
+      "Tu peux changer de rythme : survoler le facile, ralentir sur le difficile."
+     ],
+     "q": "Lis-tu surtout pour le plaisir, pour apprendre, ou un mélange ?",
+     "c": "Lis dix minutes pour le plaisir, puis cinq minutes lentement, crayon en main."
+    },
+    "it": {
+     "t": "Leggere per piacere e per studio",
+     "g": "Impara perché entrambi i modi di leggere sono validi.",
+     "p": [
+      "La lettura per piacere è rilassata: segui l'umore e ti godi il viaggio.",
+      "La lettura di studio è attenta: più lenta, con appunti, domande e riletture.",
+      "Puoi cambiare marcia: sfogliare il facile e rallentare sul difficile."
+     ],
+     "q": "Leggi soprattutto per divertimento, per imparare o un po' di tutto?",
+     "c": "Leggi dieci minuti per piacere e cinque lentamente con una penna."
+    },
+    "pt": {
+     "t": "Ler por prazer e para estudar",
+     "g": "Aprende porque ambas as formas de ler são válidas.",
+     "p": [
+      "A leitura por prazer é descontraída: segues o teu humor e gozas a viagem.",
+      "A leitura de estudo é cuidadosa: mais lenta, com notas, perguntas e releituras.",
+      "Podes mudar de ritmo: folhear o fácil e abrandar no difícil."
+     ],
+     "q": "Lês sobretudo por diversão, para aprender ou uma mistura?",
+     "c": "Lê dez minutos por prazer e cinco devagar com uma caneta."
+    },
+    "pt_BR": {
+     "t": "Ler por prazer e para estudar",
+     "g": "Aprenda por que as duas formas de ler são válidas.",
+     "p": [
+      "A leitura por prazer é descontraída: você segue o humor e curte a viagem.",
+      "A leitura de estudo é cuidadosa: mais lenta, com notas, perguntas e releituras.",
+      "Dá para mudar de marcha: folhear o fácil e desacelerar no difícil."
+     ],
+     "q": "Você lê mais por diversão, para aprender ou uma mistura?",
+     "c": "Leia dez minutos por prazer e cinco devagar com uma caneta."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Keeping a reading journal",
+     "g": "Learn simple ways to remember what you read.",
+     "p": [
+      "Note title, author and dates: a tiny list is already a journal.",
+      "Copy favourite lines and add a quick star rating or one-word feeling.",
+      "Re-reading your notes later brings the book back to life."
+     ],
+     "q": "Would you rather keep a journal on paper or on your phone?",
+     "c": "Start your journal today with the last book you finished and one line."
+    },
+    "de": {
+     "t": "Ein Lesetagebuch führen",
+     "g": "Lerne einfache Wege, dir Gelesenes zu merken.",
+     "p": [
+      "Notiere Titel, Autor und Daten: Schon eine kleine Liste ist ein Tagebuch.",
+      "Schreibe Lieblingszeilen ab und gib Sterne oder ein Gefühlswort dazu.",
+      "Später die Notizen zu lesen, erweckt das Buch zu neuem Leben."
+     ],
+     "q": "Führst du dein Tagebuch lieber auf Papier oder am Handy?",
+     "c": "Beginne heute mit dem zuletzt beendeten Buch und einer Zeile."
+    },
+    "es": {
+     "t": "Llevar un diario de lecturas",
+     "g": "Aprende formas sencillas de recordar lo que lees.",
+     "p": [
+      "Anota título, autor y fechas: una lista pequeña ya es un diario.",
+      "Copia frases favoritas y añade estrellas o una palabra de emoción.",
+      "Releer tus notas más tarde devuelve la vida al libro."
+     ],
+     "q": "¿Prefieres llevar el diario en papel o en el móvil?",
+     "c": "Empieza hoy con el último libro que terminaste y una línea."
+    },
+    "fr": {
+     "t": "Tenir un journal de lecture",
+     "g": "Apprends des moyens simples de retenir ce que tu lis.",
+     "p": [
+      "Note titre, auteur et dates : une petite liste est déjà un journal.",
+      "Recopie des phrases préférées et ajoute des étoiles ou un mot d'émotion.",
+      "Relire tes notes plus tard redonne vie au livre."
+     ],
+     "q": "Préfères-tu un journal sur papier ou sur téléphone ?",
+     "c": "Commence aujourd'hui avec le dernier livre terminé et une ligne."
+    },
+    "it": {
+     "t": "Tenere un diario di lettura",
+     "g": "Impara modi semplici per ricordare ciò che leggi.",
+     "p": [
+      "Annota titolo, autore e date: una piccola lista è già un diario.",
+      "Copia le frasi preferite e aggiungi stelle o una parola di emozione.",
+      "Rileggere gli appunti più tardi ridà vita al libro."
+     ],
+     "q": "Preferisci un diario su carta o sul telefono?",
+     "c": "Inizia oggi con l'ultimo libro finito e una riga."
+    },
+    "pt": {
+     "t": "Manter um diário de leituras",
+     "g": "Aprende formas simples de recordar o que lês.",
+     "p": [
+      "Anota título, autor e datas: uma pequena lista já é um diário.",
+      "Copia frases favoritas e acrescenta estrelas ou uma palavra de emoção.",
+      "Reler as notas mais tarde devolve vida ao livro."
+     ],
+     "q": "Preferes o diário em papel ou no telemóvel?",
+     "c": "Começa hoje com o último livro que acabaste e uma linha."
+    },
+    "pt_BR": {
+     "t": "Manter um diário de leituras",
+     "g": "Aprenda formas simples de lembrar o que você lê.",
+     "p": [
+      "Anote título, autor e datas: uma listinha já é um diário.",
+      "Copie frases favoritas e adicione estrelas ou uma palavra de emoção.",
+      "Reler as notas depois devolve vida ao livro."
+     ],
+     "q": "Você prefere o diário no papel ou no celular?",
+     "c": "Comece hoje com o último livro que terminou e uma linha."
+    }
+   }
+  }
+ ]
+}

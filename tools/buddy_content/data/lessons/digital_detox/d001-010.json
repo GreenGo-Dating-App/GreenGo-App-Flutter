@@ -1,0 +1,835 @@
+{
+ "topic": "digital_detox",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What a digital detox really means",
+     "g": "Understand that a detox is about using technology on purpose, not quitting it.",
+     "p": [
+      "A detox is not a ban; it is choosing when and why you use screens.",
+      "Technology is a great tool when it serves your life, not the other way round.",
+      "Small, kind changes last longer than dramatic resets."
+     ],
+     "q": "What would you like your relationship with screens to feel like?",
+     "c": "Today, notice one moment when you use your phone on purpose and one when you do not."
+    },
+    "de": {
+     "t": "Was digitale Entgiftung wirklich heißt",
+     "g": "Verstehen, dass es um bewusste Nutzung von Technik geht, nicht um Verzicht.",
+     "p": [
+      "Eine Auszeit ist kein Verbot, sondern die Wahl, wann und warum du Bildschirme nutzt.",
+      "Technik ist ein tolles Werkzeug, wenn sie deinem Leben dient und nicht umgekehrt.",
+      "Kleine, freundliche Änderungen halten länger als radikale Neustarts."
+     ],
+     "q": "Wie soll sich dein Verhältnis zu Bildschirmen anfühlen?",
+     "c": "Achte heute auf einen Moment bewusster und einen Moment unbewusster Handynutzung."
+    },
+    "es": {
+     "t": "Qué significa realmente un detox digital",
+     "g": "Entender que se trata de usar la tecnología con intención, no de dejarla.",
+     "p": [
+      "Un detox no es una prohibición: es elegir cuándo y para qué usas las pantallas.",
+      "La tecnología es una gran herramienta cuando sirve a tu vida y no al revés.",
+      "Los cambios pequeños y amables duran más que los giros drásticos."
+     ],
+     "q": "¿Cómo te gustaría que fuera tu relación con las pantallas?",
+     "c": "Hoy fíjate en un momento en que usas el móvil con intención y otro en que no."
+    },
+    "fr": {
+     "t": "Ce que signifie vraiment un détox numérique",
+     "g": "Comprendre qu'il s'agit d'utiliser la technologie volontairement, pas d'y renoncer.",
+     "p": [
+      "Un détox n'est pas une interdiction : c'est choisir quand et pourquoi utiliser les écrans.",
+      "La technologie est un super outil quand elle sert ta vie, et non l'inverse.",
+      "De petits changements bienveillants durent plus que les grands bouleversements."
+     ],
+     "q": "Quelle relation aimerais-tu avoir avec les écrans ?",
+     "c": "Aujourd'hui, repère un moment où tu utilises ton téléphone volontairement et un autre où non."
+    },
+    "it": {
+     "t": "Cosa significa davvero un detox digitale",
+     "g": "Capire che si tratta di usare la tecnologia con intenzione, non di abbandonarla.",
+     "p": [
+      "Un detox non è un divieto: è scegliere quando e perché usare gli schermi.",
+      "La tecnologia è uno strumento utile quando serve alla tua vita e non il contrario.",
+      "I piccoli cambiamenti gentili durano più delle svolte drastiche."
+     ],
+     "q": "Come vorresti che fosse il tuo rapporto con gli schermi?",
+     "c": "Oggi nota un momento in cui usi il telefono con intenzione e uno in cui non lo fai."
+    },
+    "pt": {
+     "t": "O que significa realmente um detox digital",
+     "g": "Perceber que se trata de usar a tecnologia de propósito, não de a abandonar.",
+     "p": [
+      "Um detox não é uma proibição: é escolher quando e porquê usas os ecrãs.",
+      "A tecnologia é uma ótima ferramenta quando serve a tua vida e não o contrário.",
+      "Pequenas mudanças gentis duram mais do que viragens radicais."
+     ],
+     "q": "Como gostarias que fosse a tua relação com os ecrãs?",
+     "c": "Hoje repara num momento em que usas o telemóvel de propósito e noutro em que não."
+    },
+    "pt_BR": {
+     "t": "O que significa de verdade um detox digital",
+     "g": "Entender que se trata de usar a tecnologia com intenção, não de abandoná-la.",
+     "p": [
+      "Um detox não é proibição: é escolher quando e por que você usa as telas.",
+      "A tecnologia é uma ótima ferramenta quando serve à sua vida e não o contrário.",
+      "Pequenas mudanças gentis duram mais do que viradas radicais."
+     ],
+     "q": "Como você gostaria que fosse sua relação com as telas?",
+     "c": "Hoje repare em um momento em que usa o celular de propósito e em outro em que não."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your screen story",
+     "g": "Look back at how screens became part of your daily routine.",
+     "p": [
+      "Think of your first phone, computer or TV and what you used it for.",
+      "Habits grew step by step, often without a decision on your part.",
+      "Seeing the story with curiosity, not judgement, makes change easier."
+     ],
+     "q": "What is your earliest memory of a screen, and how has it changed?",
+     "c": "Write three lines about how screens entered your life, then keep them."
+    },
+    "de": {
+     "t": "Deine Bildschirm-Geschichte",
+     "g": "Zurückblicken, wie Bildschirme Teil deines Alltags wurden.",
+     "p": [
+      "Denk an dein erstes Handy, deinen ersten Computer oder Fernseher und wofür du ihn nutztest.",
+      "Gewohnheiten sind Schritt für Schritt gewachsen, oft ohne bewusste Entscheidung.",
+      "Neugier statt Urteil macht Veränderung leichter."
+     ],
+     "q": "Was ist deine früheste Erinnerung an einen Bildschirm und wie hat sie sich verändert?",
+     "c": "Schreib drei Zeilen darüber, wie Bildschirme in dein Leben kamen, und heb sie auf."
+    },
+    "es": {
+     "t": "Tu historia con las pantallas",
+     "g": "Mirar atrás para ver cómo las pantallas entraron en tu rutina diaria.",
+     "p": [
+      "Piensa en tu primer móvil, ordenador o tele y para qué lo usabas.",
+      "Los hábitos crecieron paso a paso, muchas veces sin que decidieras nada.",
+      "Ver tu historia con curiosidad y sin juicio facilita el cambio."
+     ],
+     "q": "¿Cuál es tu primer recuerdo de una pantalla y cómo ha cambiado?",
+     "c": "Escribe tres líneas sobre cómo llegaron las pantallas a tu vida y guárdalas."
+    },
+    "fr": {
+     "t": "Ton histoire avec les écrans",
+     "g": "Revenir sur la façon dont les écrans se sont installés dans ton quotidien.",
+     "p": [
+      "Pense à ton premier téléphone, ordinateur ou téléviseur et à son usage.",
+      "Les habitudes se sont construites pas à pas, souvent sans vraie décision.",
+      "Regarder ton parcours avec curiosité, sans jugement, facilite le changement."
+     ],
+     "q": "Quel est ton premier souvenir d'un écran et comment a-t-il évolué ?",
+     "c": "Écris trois lignes sur l'arrivée des écrans dans ta vie, puis garde-les."
+    },
+    "it": {
+     "t": "La tua storia con gli schermi",
+     "g": "Ripercorrere come gli schermi sono entrati nella tua routine quotidiana.",
+     "p": [
+      "Pensa al tuo primo telefono, computer o televisore e a come lo usavi.",
+      "Le abitudini sono cresciute un passo alla volta, spesso senza una scelta precisa.",
+      "Guardare la tua storia con curiosità, senza giudizio, rende il cambiamento più facile."
+     ],
+     "q": "Qual è il tuo primo ricordo di uno schermo e come è cambiato?",
+     "c": "Scrivi tre righe su come gli schermi sono entrati nella tua vita e conservale."
+    },
+    "pt": {
+     "t": "A tua história com os ecrãs",
+     "g": "Olhar para trás e ver como os ecrãs entraram na tua rotina diária.",
+     "p": [
+      "Pensa no teu primeiro telemóvel, computador ou televisão e no uso que lhe davas.",
+      "Os hábitos cresceram passo a passo, muitas vezes sem uma decisão tua.",
+      "Ver a tua história com curiosidade, sem julgamento, facilita a mudança."
+     ],
+     "q": "Qual é a tua primeira memória de um ecrã e como mudou?",
+     "c": "Escreve três linhas sobre como os ecrãs entraram na tua vida e guarda-as."
+    },
+    "pt_BR": {
+     "t": "Sua história com as telas",
+     "g": "Olhar para trás e ver como as telas entraram na sua rotina diária.",
+     "p": [
+      "Pense no seu primeiro celular, computador ou TV e no uso que fazia deles.",
+      "Os hábitos cresceram passo a passo, muitas vezes sem uma decisão sua.",
+      "Ver sua história com curiosidade, sem julgamento, facilita a mudança."
+     ],
+     "q": "Qual é sua primeira lembrança de uma tela e como ela mudou?",
+     "c": "Escreva três linhas sobre como as telas entraram na sua vida e guarde."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why balance matters",
+     "g": "See the general benefits of balanced screen time.",
+     "p": [
+      "Less screen time can leave more room for focus, rest and movement.",
+      "Time away from screens often means more attention for the people near you.",
+      "Balance does not mean zero: it means screens fit around your life."
+     ],
+     "q": "Which would you enjoy most: more focus, more rest, more movement or more connection?",
+     "c": "Pick one benefit you want and write it on a note you can see."
+    },
+    "de": {
+     "t": "Warum Balance zählt",
+     "g": "Die allgemeinen Vorteile von ausgewogener Bildschirmzeit erkennen.",
+     "p": [
+      "Weniger Bildschirmzeit lässt oft mehr Raum für Konzentration, Ruhe und Bewegung.",
+      "Zeit ohne Bildschirm bedeutet oft mehr Aufmerksamkeit für die Menschen um dich.",
+      "Balance heißt nicht null: Bildschirme passen sich deinem Leben an."
+     ],
+     "q": "Was würde dir am meisten Freude machen: mehr Fokus, Ruhe, Bewegung oder Nähe?",
+     "c": "Wähle einen Vorteil, den du willst, und schreib ihn auf einen sichtbaren Zettel."
+    },
+    "es": {
+     "t": "Por qué importa el equilibrio",
+     "g": "Conocer los beneficios generales de un uso equilibrado de pantallas.",
+     "p": [
+      "Menos pantalla puede dejar más espacio para la concentración, el descanso y el movimiento.",
+      "El tiempo sin pantallas suele significar más atención para quienes te rodean.",
+      "Equilibrio no es cero: es que las pantallas encajen en tu vida."
+     ],
+     "q": "¿Qué disfrutarías más: más concentración, descanso, movimiento o conexión?",
+     "c": "Elige un beneficio que quieras y anótalo en una nota que puedas ver."
+    },
+    "fr": {
+     "t": "Pourquoi l'équilibre compte",
+     "g": "Découvrir les bienfaits généraux d'un temps d'écran équilibré.",
+     "p": [
+      "Moins d'écran peut laisser plus de place à la concentration, au repos et au mouvement.",
+      "Du temps sans écran, c'est souvent plus d'attention pour les gens autour de toi.",
+      "L'équilibre ne veut pas dire zéro : les écrans s'adaptent à ta vie."
+     ],
+     "q": "Qu'apprécierais-tu le plus : concentration, repos, mouvement ou lien avec les autres ?",
+     "c": "Choisis un bienfait qui te tente et note-le sur un papier bien visible."
+    },
+    "it": {
+     "t": "Perché l'equilibrio conta",
+     "g": "Scoprire i benefici generali di un tempo di schermo equilibrato.",
+     "p": [
+      "Meno schermo può lasciare più spazio a concentrazione, riposo e movimento.",
+      "Il tempo lontano dagli schermi spesso vuol dire più attenzione per chi ti sta vicino.",
+      "Equilibrio non significa zero: gli schermi si adattano alla tua vita."
+     ],
+     "q": "Cosa ti piacerebbe di più: più concentrazione, riposo, movimento o vicinanza?",
+     "c": "Scegli un beneficio che vuoi e scrivilo su un biglietto ben visibile."
+    },
+    "pt": {
+     "t": "Porque o equilíbrio importa",
+     "g": "Conhecer os benefícios gerais de um tempo de ecrã equilibrado.",
+     "p": [
+      "Menos ecrã pode deixar mais espaço para concentração, descanso e movimento.",
+      "Tempo sem ecrãs costuma significar mais atenção para quem está perto de ti.",
+      "Equilíbrio não é zero: é os ecrãs caberem na tua vida."
+     ],
+     "q": "Do que gostarias mais: concentração, descanso, movimento ou convívio?",
+     "c": "Escolhe um benefício que queres e escreve-o num papel que consigas ver."
+    },
+    "pt_BR": {
+     "t": "Por que o equilíbrio importa",
+     "g": "Conhecer os benefícios gerais de um tempo de tela equilibrado.",
+     "p": [
+      "Menos tela pode deixar mais espaço para foco, descanso e movimento.",
+      "Tempo longe das telas costuma significar mais atenção para quem está perto de você.",
+      "Equilíbrio não é zero: é as telas caberem na sua vida."
+     ],
+     "q": "Do que você gostaria mais: foco, descanso, movimento ou convivência?",
+     "c": "Escolha um benefício que você quer e escreva num papel que possa ver."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Checking your screen time",
+     "g": "Find your phone's built-in screen time report and read it calmly.",
+     "p": [
+      "Most phones have a built-in report in the settings menu.",
+      "Look at the daily total and the weekly trend, not just one day.",
+      "Numbers are information, not a grade: stay curious, not critical."
+     ],
+     "q": "Were you surprised by your screen time total, up or down from what you guessed?",
+     "c": "Open the report today and note your daily average in one line."
+    },
+    "de": {
+     "t": "Deine Bildschirmzeit prüfen",
+     "g": "Den eingebauten Bildschirmzeit-Bericht deines Handys finden und gelassen lesen.",
+     "p": [
+      "Die meisten Handys haben in den Einstellungen einen eingebauten Bericht.",
+      "Schau auf die Tagessumme und den Wochentrend, nicht nur auf einen Tag.",
+      "Zahlen sind Information, keine Note: bleib neugierig statt kritisch."
+     ],
+     "q": "Hat dich deine Bildschirmzeit überrascht, im Vergleich zu deiner Schätzung?",
+     "c": "Öffne heute den Bericht und notiere deinen Tagesdurchschnitt in einer Zeile."
+    },
+    "es": {
+     "t": "Revisar tu tiempo de pantalla",
+     "g": "Encontrar el informe de tiempo de pantalla de tu móvil y leerlo con calma.",
+     "p": [
+      "La mayoría de los móviles traen un informe en los ajustes.",
+      "Mira el total diario y la tendencia semanal, no solo un día.",
+      "Los números son información, no una nota: mantén la curiosidad, no la crítica."
+     ],
+     "q": "¿Te sorprendió tu tiempo de pantalla frente a lo que imaginabas?",
+     "c": "Abre el informe hoy y anota tu promedio diario en una línea."
+    },
+    "fr": {
+     "t": "Consulter ton temps d'écran",
+     "g": "Trouver le rapport de temps d'écran de ton téléphone et le lire calmement.",
+     "p": [
+      "La plupart des téléphones ont un rapport intégré dans les réglages.",
+      "Regarde le total quotidien et la tendance de la semaine, pas un seul jour.",
+      "Les chiffres sont une information, pas une note : reste curieux, pas critique."
+     ],
+     "q": "Ton temps d'écran t'a-t-il surpris par rapport à ce que tu imaginais ?",
+     "c": "Ouvre le rapport aujourd'hui et note ta moyenne quotidienne en une ligne."
+    },
+    "it": {
+     "t": "Controllare il tempo di schermo",
+     "g": "Trovare il report del tempo di schermo del telefono e leggerlo con calma.",
+     "p": [
+      "La maggior parte dei telefoni ha un report integrato nelle impostazioni.",
+      "Guarda il totale giornaliero e l'andamento settimanale, non un solo giorno.",
+      "I numeri sono informazioni, non un voto: resta curioso, non critico."
+     ],
+     "q": "Ti ha sorpreso il tuo tempo di schermo rispetto a quello che immaginavi?",
+     "c": "Apri il report oggi e annota la tua media giornaliera in una riga."
+    },
+    "pt": {
+     "t": "Ver o teu tempo de ecrã",
+     "g": "Encontrar o relatório de tempo de ecrã do telemóvel e lê-lo com calma.",
+     "p": [
+      "A maioria dos telemóveis tem um relatório integrado nas definições.",
+      "Olha para o total diário e a tendência semanal, não só para um dia.",
+      "Os números são informação, não uma nota: sê curioso, não crítico."
+     ],
+     "q": "O teu tempo de ecrã surpreendeu-te em relação ao que imaginavas?",
+     "c": "Abre hoje o relatório e anota a tua média diária numa linha."
+    },
+    "pt_BR": {
+     "t": "Conferindo seu tempo de tela",
+     "g": "Encontrar o relatório de tempo de tela do celular e lê-lo com calma.",
+     "p": [
+      "A maioria dos celulares tem um relatório integrado nas configurações.",
+      "Olhe o total diário e a tendência da semana, não só um dia.",
+      "Números são informação, não uma nota: seja curioso, não crítico."
+     ],
+     "q": "Seu tempo de tela te surpreendeu em relação ao que você imaginava?",
+     "c": "Abra o relatório hoje e anote sua média diária em uma linha."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your most used apps",
+     "g": "Notice which apps take most of your time and how they leave you feeling.",
+     "p": [
+      "Look at your top three apps in the screen time report.",
+      "After using each one, ask yourself: energised, neutral or drained?",
+      "Time spent and value gained are not always the same thing."
+     ],
+     "q": "Which of your top apps would you happily keep, and which surprised you?",
+     "c": "Next to each top app, jot down one word for how you feel afterwards."
+    },
+    "de": {
+     "t": "Deine meistgenutzten Apps",
+     "g": "Erkennen, welche Apps die meiste Zeit fressen und wie du dich danach fühlst.",
+     "p": [
+      "Sieh dir deine drei häufigsten Apps im Bildschirmzeit-Bericht an.",
+      "Frag dich nach jeder: energiegeladen, neutral oder ausgelaugt?",
+      "Verbrachte Zeit und gewonnener Wert sind nicht immer dasselbe."
+     ],
+     "q": "Welche deiner Top-Apps würdest du gern behalten und welche hat dich überrascht?",
+     "c": "Schreib neben jede Top-App ein Wort dazu, wie du dich danach fühlst."
+    },
+    "es": {
+     "t": "Tus apps más usadas",
+     "g": "Notar qué apps se llevan más tiempo y cómo te dejan después.",
+     "p": [
+      "Mira tus tres apps principales en el informe de tiempo de pantalla.",
+      "Tras usar cada una, pregúntate: ¿con energía, neutral o agotado?",
+      "El tiempo invertido y el valor recibido no siempre coinciden."
+     ],
+     "q": "¿Cuál de tus apps top conservarías encantado y cuál te sorprendió?",
+     "c": "Junto a cada app, anota una palabra sobre cómo te sientes después."
+    },
+    "fr": {
+     "t": "Tes applis les plus utilisées",
+     "g": "Repérer quelles applis prennent le plus de temps et comment tu te sens après.",
+     "p": [
+      "Regarde tes trois applis principales dans le rapport de temps d'écran.",
+      "Après chacune, demande-toi : plein d'énergie, neutre ou vidé ?",
+      "Temps passé et valeur reçue ne vont pas toujours de pair."
+     ],
+     "q": "Laquelle de tes applis phares garderais-tu volontiers, et laquelle t'a surpris ?",
+     "c": "À côté de chaque appli, note un mot sur ce que tu ressens ensuite."
+    },
+    "it": {
+     "t": "Le tue app più usate",
+     "g": "Notare quali app occupano più tempo e come ti lasciano dopo.",
+     "p": [
+      "Guarda le tue tre app principali nel report del tempo di schermo.",
+      "Dopo ognuna chiediti: carico, neutro o scarico?",
+      "Tempo speso e valore ricevuto non sempre coincidono."
+     ],
+     "q": "Quale delle tue app top terresti volentieri e quale ti ha sorpreso?",
+     "c": "Accanto a ogni app scrivi una parola su come ti senti dopo."
+    },
+    "pt": {
+     "t": "As tuas apps mais usadas",
+     "g": "Reparar em que apps levam mais tempo e como te deixam depois.",
+     "p": [
+      "Vê as tuas três apps principais no relatório de tempo de ecrã.",
+      "Depois de cada uma, pergunta-te: com energia, neutro ou esgotado?",
+      "Tempo gasto e valor recebido nem sempre coincidem."
+     ],
+     "q": "Qual das tuas apps principais manterias com gosto e qual te surpreendeu?",
+     "c": "Ao lado de cada app, escreve uma palavra sobre como te sentes depois."
+    },
+    "pt_BR": {
+     "t": "Seus apps mais usados",
+     "g": "Perceber quais apps levam mais tempo e como deixam você depois.",
+     "p": [
+      "Veja seus três apps principais no relatório de tempo de tela.",
+      "Depois de cada um, pergunte: com energia, neutro ou esgotado?",
+      "Tempo gasto e valor recebido nem sempre coincidem."
+     ],
+     "q": "Qual dos seus apps principais você manteria com gosto e qual te surpreendeu?",
+     "c": "Ao lado de cada app, escreva uma palavra sobre como se sente depois."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Counting pickups",
+     "g": "Learn how often you unlock your phone and what makes you reach for it.",
+     "p": [
+      "Many phones show how many times you pick them up each day.",
+      "Most pickups are short and automatic, not planned.",
+      "Knowing the number is the first step; no need to change it yet."
+     ],
+     "q": "Do you remember what you were looking for the last time you unlocked your phone?",
+     "c": "Make a tally mark each time you unlock your phone for one hour today."
+    },
+    "de": {
+     "t": "Entsperrungen zählen",
+     "g": "Lernen, wie oft du dein Handy entsperrst und was dich dazu bringt.",
+     "p": [
+      "Viele Handys zeigen, wie oft du sie pro Tag in die Hand nimmst.",
+      "Die meisten Griffe sind kurz und automatisch, nicht geplant.",
+      "Die Zahl zu kennen ist der erste Schritt; ändern musst du noch nichts."
+     ],
+     "q": "Weißt du noch, wonach du beim letzten Entsperren eigentlich gesucht hast?",
+     "c": "Mach heute eine Stunde lang bei jedem Entsperren einen Strich."
+    },
+    "es": {
+     "t": "Contar las veces que lo coges",
+     "g": "Saber cuántas veces desbloqueas el móvil y qué te impulsa a hacerlo.",
+     "p": [
+      "Muchos móviles muestran cuántas veces lo coges cada día.",
+      "La mayoría de las veces son rápidas y automáticas, no planeadas.",
+      "Conocer la cifra es el primer paso; aún no hace falta cambiarla."
+     ],
+     "q": "¿Recuerdas qué buscabas la última vez que desbloqueaste el móvil?",
+     "c": "Haz una marca cada vez que desbloquees el móvil durante una hora hoy."
+    },
+    "fr": {
+     "t": "Compter tes déverrouillages",
+     "g": "Savoir combien de fois tu déverrouilles ton téléphone et pourquoi.",
+     "p": [
+      "Beaucoup de téléphones indiquent combien de fois tu les prends chaque jour.",
+      "La plupart des prises en main sont brèves et automatiques, pas prévues.",
+      "Connaître le chiffre est la première étape ; inutile de le changer déjà."
+     ],
+     "q": "Te souviens-tu de ce que tu cherchais la dernière fois que tu l'as déverrouillé ?",
+     "c": "Fais un trait à chaque déverrouillage pendant une heure aujourd'hui."
+    },
+    "it": {
+     "t": "Contare gli sblocchi",
+     "g": "Scoprire quante volte sblocchi il telefono e cosa ti spinge a farlo.",
+     "p": [
+      "Molti telefoni mostrano quante volte lo prendi in mano ogni giorno.",
+      "La maggior parte degli sblocchi è breve e automatica, non pianificata.",
+      "Conoscere il numero è il primo passo; non serve ancora cambiarlo."
+     ],
+     "q": "Ricordi cosa cercavi l'ultima volta che hai sbloccato il telefono?",
+     "c": "Fai un segno a ogni sblocco per un'ora oggi."
+    },
+    "pt": {
+     "t": "Contar os desbloqueios",
+     "g": "Saber quantas vezes desbloqueias o telemóvel e o que te leva a isso.",
+     "p": [
+      "Muitos telemóveis mostram quantas vezes pegas neles por dia.",
+      "A maioria das vezes é rápida e automática, não planeada.",
+      "Saber o número é o primeiro passo; ainda não precisas de o mudar."
+     ],
+     "q": "Lembras-te do que procuravas da última vez que desbloqueaste o telemóvel?",
+     "c": "Faz um traço a cada desbloqueio durante uma hora hoje."
+    },
+    "pt_BR": {
+     "t": "Contando os desbloqueios",
+     "g": "Saber quantas vezes você desbloqueia o celular e o que leva você a isso.",
+     "p": [
+      "Muitos celulares mostram quantas vezes você pega neles por dia.",
+      "A maioria das vezes é rápida e automática, não planejada.",
+      "Saber o número é o primeiro passo; ainda não precisa mudá-lo."
+     ],
+     "q": "Você lembra o que procurava na última vez que desbloqueou o celular?",
+     "c": "Faça um traço a cada desbloqueio durante uma hora hoje."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Spotting your triggers",
+     "g": "Identify the common reasons you grab your phone.",
+     "p": [
+      "Boredom, waiting, notifications and stress are common triggers.",
+      "A trigger is just a cue; you can notice it before you act.",
+      "Naming it quietly in your head ('boredom') gives you a choice."
+     ],
+     "q": "What usually makes you reach for your phone first: boredom, a ping or a worry?",
+     "c": "Today, whisper the trigger name to yourself three times before checking."
+    },
+    "de": {
+     "t": "Deine Auslöser erkennen",
+     "g": "Die üblichen Gründe erkennen, warum du zum Handy greifst.",
+     "p": [
+      "Langeweile, Warten, Benachrichtigungen und Stress sind häufige Auslöser.",
+      "Ein Auslöser ist nur ein Signal; du kannst ihn bemerken, bevor du handelst.",
+      "Ihn still zu benennen („Langeweile“) schafft eine Wahl."
+     ],
+     "q": "Was lässt dich meist zuerst zum Handy greifen: Langeweile, ein Ton oder eine Sorge?",
+     "c": "Benenne heute dreimal innerlich den Auslöser, bevor du aufs Handy schaust."
+    },
+    "es": {
+     "t": "Detectar tus desencadenantes",
+     "g": "Identificar los motivos habituales por los que coges el móvil.",
+     "p": [
+      "El aburrimiento, la espera, las notificaciones y el estrés son desencadenantes comunes.",
+      "Un desencadenante es solo una señal; puedes notarlo antes de actuar.",
+      "Nombrarlo en silencio («aburrimiento») te da opción de elegir."
+     ],
+     "q": "¿Qué te lleva primero al móvil: aburrimiento, un aviso o una preocupación?",
+     "c": "Hoy nombra el desencadenante en silencio tres veces antes de mirar el móvil."
+    },
+    "fr": {
+     "t": "Repérer tes déclencheurs",
+     "g": "Identifier les raisons habituelles pour lesquelles tu attrapes ton téléphone.",
+     "p": [
+      "L'ennui, l'attente, les notifications et le stress sont des déclencheurs courants.",
+      "Un déclencheur n'est qu'un signal ; tu peux le remarquer avant d'agir.",
+      "Le nommer en silence (« ennui ») te redonne le choix."
+     ],
+     "q": "Qu'est-ce qui te fait saisir ton téléphone : l'ennui, une alerte ou un souci ?",
+     "c": "Aujourd'hui, nomme tout bas le déclencheur trois fois avant de regarder ton téléphone."
+    },
+    "it": {
+     "t": "Riconoscere i tuoi inneschi",
+     "g": "Individuare i motivi più comuni per cui prendi il telefono.",
+     "p": [
+      "Noia, attesa, notifiche e stress sono inneschi comuni.",
+      "Un innesco è solo un segnale; puoi notarlo prima di agire.",
+      "Nominarlo in silenzio («noia») ti dà una scelta."
+     ],
+     "q": "Cosa ti fa prendere il telefono per primo: noia, una notifica o una preoccupazione?",
+     "c": "Oggi nomina l'innesco tra te e te tre volte prima di controllare il telefono."
+    },
+    "pt": {
+     "t": "Identificar os teus gatilhos",
+     "g": "Identificar os motivos habituais pelos quais pegas no telemóvel.",
+     "p": [
+      "Tédio, espera, notificações e stresse são gatilhos comuns.",
+      "Um gatilho é só um sinal; podes notá-lo antes de agir.",
+      "Nomeá-lo em silêncio («tédio») dá-te uma escolha."
+     ],
+     "q": "O que te faz pegar primeiro no telemóvel: tédio, um aviso ou uma preocupação?",
+     "c": "Hoje diz o nome do gatilho em silêncio três vezes antes de ver o telemóvel."
+    },
+    "pt_BR": {
+     "t": "Identificando seus gatilhos",
+     "g": "Identificar os motivos comuns pelos quais você pega o celular.",
+     "p": [
+      "Tédio, espera, notificações e estresse são gatilhos comuns.",
+      "Um gatilho é só um sinal; você pode notá-lo antes de agir.",
+      "Nomeá-lo em silêncio («tédio») dá a você uma escolha."
+     ],
+     "q": "O que faz você pegar o celular primeiro: tédio, um aviso ou uma preocupação?",
+     "c": "Hoje diga o nome do gatilho em silêncio três vezes antes de olhar o celular."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Autopilot scrolling",
+     "g": "Recognise the moments when you scroll without really choosing to.",
+     "p": [
+      "Autopilot is when your thumb moves before you decide anything.",
+      "Signs: you forget why you opened the app or lose track of time.",
+      "Catching it is a win, even if you keep scrolling afterwards."
+     ],
+     "q": "When do you notice yourself scrolling on autopilot most often?",
+     "c": "Each time you catch autopilot today, gently put the phone down for ten seconds."
+    },
+    "de": {
+     "t": "Scrollen im Autopilot",
+     "g": "Die Momente erkennen, in denen du scrollst, ohne es wirklich zu wählen.",
+     "p": [
+      "Autopilot heißt: Dein Daumen bewegt sich, bevor du etwas entschieden hast.",
+      "Zeichen: Du vergisst, warum du die App geöffnet hast, oder verlierst die Zeit.",
+      "Es zu bemerken ist ein Erfolg, auch wenn du danach weiterscrollst."
+     ],
+     "q": "Wann erwischst du dich am häufigsten beim Autopilot-Scrollen?",
+     "c": "Leg das Handy heute bei jedem Autopilot-Moment zehn Sekunden sanft weg."
+    },
+    "es": {
+     "t": "Scroll en piloto automático",
+     "g": "Reconocer los momentos en que haces scroll sin haberlo elegido.",
+     "p": [
+      "El piloto automático es cuando el pulgar se mueve antes de que decidas nada.",
+      "Señales: olvidas para qué abriste la app o pierdes la noción del tiempo.",
+      "Darte cuenta ya es un logro, aunque sigas deslizando después."
+     ],
+     "q": "¿Cuándo te pillas más a menudo haciendo scroll en piloto automático?",
+     "c": "Cada vez que lo notes hoy, deja el móvil con calma durante diez segundos."
+    },
+    "fr": {
+     "t": "Défilement en pilote automatique",
+     "g": "Reconnaître les moments où tu fais défiler sans vraiment choisir.",
+     "p": [
+      "Le pilote automatique, c'est quand ton pouce bouge avant que tu aies décidé quoi que ce soit.",
+      "Signes : tu oublies pourquoi tu as ouvert l'appli ou tu perds la notion du temps.",
+      "Le remarquer est déjà une victoire, même si tu continues ensuite."
+     ],
+     "q": "Quand te surprends-tu le plus souvent à faire défiler en pilote automatique ?",
+     "c": "À chaque fois que tu le remarques aujourd'hui, pose doucement ton téléphone dix secondes."
+    },
+    "it": {
+     "t": "Scorrere in automatico",
+     "g": "Riconoscere i momenti in cui scorri senza averlo davvero scelto.",
+     "p": [
+      "Il pilota automatico è quando il pollice si muove prima che tu abbia deciso qualcosa.",
+      "Segnali: dimentichi perché hai aperto l'app o perdi la cognizione del tempo.",
+      "Accorgertene è già una vittoria, anche se poi continui a scorrere."
+     ],
+     "q": "Quando ti accorgi più spesso di scorrere in automatico?",
+     "c": "Ogni volta che te ne accorgi oggi, posa il telefono con calma per dieci secondi."
+    },
+    "pt": {
+     "t": "Deslizar em piloto automático",
+     "g": "Reconhecer os momentos em que deslizas sem o ter escolhido.",
+     "p": [
+      "Piloto automático é quando o polegar mexe antes de decidires alguma coisa.",
+      "Sinais: esqueces porque abriste a app ou perdes a noção do tempo.",
+      "Aperceberes-te já é uma vitória, mesmo que continues depois."
+     ],
+     "q": "Quando é que te apanhas mais vezes a deslizar em piloto automático?",
+     "c": "Sempre que te aperceberes hoje, pousa o telemóvel com calma durante dez segundos."
+    },
+    "pt_BR": {
+     "t": "Rolando no piloto automático",
+     "g": "Reconhecer os momentos em que você rola a tela sem ter escolhido.",
+     "p": [
+      "Piloto automático é quando o polegar se mexe antes de você decidir qualquer coisa.",
+      "Sinais: você esquece por que abriu o app ou perde a noção do tempo.",
+      "Perceber já é uma vitória, mesmo que você continue depois."
+     ],
+     "q": "Quando você mais se pega rolando a tela no piloto automático?",
+     "c": "Toda vez que perceber hoje, pouse o celular com calma por dez segundos."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Intentional versus mindless use",
+     "g": "Tell apart opening an app for a reason from drifting into it.",
+     "p": [
+      "Intentional use has a purpose: message a friend, check a map, read a page.",
+      "Mindless use starts with the thumb and ends with 'why am I here?'",
+      "Both are human; the goal is simply more of the first kind."
+     ],
+     "q": "What is one thing you do on your phone that is clearly intentional?",
+     "c": "Before opening any app today, finish this sentence: I am opening this to..."
+    },
+    "de": {
+     "t": "Bewusste gegen gedankenlose Nutzung",
+     "g": "Unterscheiden, ob du eine App mit Grund öffnest oder hineingleitest.",
+     "p": [
+      "Bewusste Nutzung hat einen Zweck: einem Freund schreiben, eine Karte prüfen, eine Seite lesen.",
+      "Gedankenloses Nutzen beginnt mit dem Daumen und endet mit „Warum bin ich hier?“",
+      "Beides ist menschlich; Ziel ist einfach mehr von der ersten Art."
+     ],
+     "q": "Was machst du am Handy, das eindeutig bewusst ist?",
+     "c": "Beende heute vor jeder App den Satz: Ich öffne das, um ..."
+    },
+    "es": {
+     "t": "Uso intencionado frente a uso automático",
+     "g": "Distinguir entre abrir una app con un motivo y dejarse llevar.",
+     "p": [
+      "El uso intencionado tiene un fin: escribir a un amigo, mirar un mapa, leer una página.",
+      "El uso automático empieza con el pulgar y acaba en «¿qué hago aquí?».",
+      "Ambos son humanos; la meta es simplemente más del primero."
+     ],
+     "q": "¿Qué haces con el móvil que sea claramente intencionado?",
+     "c": "Antes de abrir cualquier app hoy, completa: abro esto para..."
+    },
+    "fr": {
+     "t": "Usage voulu ou usage machinal",
+     "g": "Distinguer ouvrir une appli pour une raison et s'y laisser glisser.",
+     "p": [
+      "L'usage voulu a un but : écrire à un ami, consulter une carte, lire une page.",
+      "L'usage machinal commence par le pouce et finit par « que fais-je ici ? »",
+      "Les deux sont humains ; l'objectif est simplement plus du premier."
+     ],
+     "q": "Quelle est une chose que tu fais sur ton téléphone avec une vraie intention ?",
+     "c": "Avant d'ouvrir une appli aujourd'hui, complète : j'ouvre ceci pour..."
+    },
+    "it": {
+     "t": "Uso intenzionale o distratto",
+     "g": "Distinguere tra aprire un'app per un motivo e lasciarsi trascinare.",
+     "p": [
+      "L'uso intenzionale ha uno scopo: scrivere a un amico, guardare una mappa, leggere una pagina.",
+      "L'uso distratto inizia dal pollice e finisce con «perché sono qui?».",
+      "Entrambi sono umani; l'obiettivo è semplicemente più del primo."
+     ],
+     "q": "Cosa fai al telefono che sia chiaramente intenzionale?",
+     "c": "Prima di aprire un'app oggi, completa la frase: apro questa per..."
+    },
+    "pt": {
+     "t": "Uso intencional ou distraído",
+     "g": "Distinguir abrir uma app por um motivo de se deixar levar.",
+     "p": [
+      "O uso intencional tem um objetivo: escrever a um amigo, ver um mapa, ler uma página.",
+      "O uso distraído começa no polegar e acaba em «o que faço aqui?».",
+      "Ambos são humanos; o objetivo é apenas mais do primeiro."
+     ],
+     "q": "O que fazes no telemóvel que seja claramente intencional?",
+     "c": "Antes de abrires uma app hoje, completa: abro isto para..."
+    },
+    "pt_BR": {
+     "t": "Uso intencional ou distraído",
+     "g": "Distinguir abrir um app por um motivo de se deixar levar.",
+     "p": [
+      "O uso intencional tem um objetivo: escrever a um amigo, ver um mapa, ler uma página.",
+      "O uso distraído começa no polegar e termina em «o que estou fazendo aqui?».",
+      "Ambos são humanos; o objetivo é simplesmente mais do primeiro."
+     ],
+     "q": "O que você faz no celular que é claramente intencional?",
+     "c": "Antes de abrir um app hoje, complete: estou abrindo isto para..."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Setting a gentle first goal",
+     "g": "Choose one small, realistic screen-time change for this week.",
+     "p": [
+      "Pick one change you could do even on a busy day.",
+      "Examples: no phone at breakfast, or one app closed after dinner.",
+      "Small goals you keep beat big goals you drop."
+     ],
+     "q": "What is one tiny change you feel ready to try this week?",
+     "c": "Write your goal on a note and put it where you see it each morning."
+    },
+    "de": {
+     "t": "Ein sanftes erstes Ziel setzen",
+     "g": "Eine kleine, realistische Änderung der Bildschirmzeit für diese Woche wählen.",
+     "p": [
+      "Wähle eine Änderung, die auch an einem vollen Tag machbar ist.",
+      "Beispiele: kein Handy beim Frühstück oder eine App nach dem Abendessen zu.",
+      "Kleine Ziele, die du hältst, schlagen große, die du fallen lässt."
+     ],
+     "q": "Welche winzige Änderung willst du diese Woche ausprobieren?",
+     "c": "Schreib dein Ziel auf einen Zettel und häng ihn dorthin, wo du ihn morgens siehst."
+    },
+    "es": {
+     "t": "Fijar una primera meta suave",
+     "g": "Elegir un cambio pequeño y realista en tu tiempo de pantalla esta semana.",
+     "p": [
+      "Elige un cambio que puedas hacer incluso en un día ocupado.",
+      "Ejemplos: sin móvil en el desayuno o una app cerrada después de cenar.",
+      "Las metas pequeñas que cumples superan a las grandes que abandonas."
+     ],
+     "q": "¿Qué pequeño cambio te sientes listo para probar esta semana?",
+     "c": "Anota tu meta en una nota y ponla donde la veas cada mañana."
+    },
+    "fr": {
+     "t": "Fixer un premier objectif doux",
+     "g": "Choisir un petit changement réaliste de temps d'écran pour cette semaine.",
+     "p": [
+      "Choisis un changement faisable même un jour chargé.",
+      "Exemples : pas de téléphone au petit-déjeuner, ou une appli fermée après le dîner.",
+      "De petits objectifs tenus valent mieux que de grands abandonnés."
+     ],
+     "q": "Quel petit changement te sens-tu prêt à essayer cette semaine ?",
+     "c": "Écris ton objectif sur un papier et place-le là où tu le vois chaque matin."
+    },
+    "it": {
+     "t": "Fissare un primo obiettivo gentile",
+     "g": "Scegliere un piccolo cambiamento realistico del tempo di schermo per questa settimana.",
+     "p": [
+      "Scegli un cambiamento fattibile anche in una giornata piena.",
+      "Esempi: niente telefono a colazione o un'app chiusa dopo cena.",
+      "Piccoli obiettivi mantenuti battono grandi obiettivi abbandonati."
+     ],
+     "q": "Quale piccolo cambiamento ti senti pronto a provare questa settimana?",
+     "c": "Scrivi il tuo obiettivo su un biglietto e mettilo dove lo vedi ogni mattina."
+    },
+    "pt": {
+     "t": "Definir uma primeira meta suave",
+     "g": "Escolher uma pequena mudança realista no tempo de ecrã para esta semana.",
+     "p": [
+      "Escolhe uma mudança possível mesmo num dia cheio.",
+      "Exemplos: sem telemóvel ao pequeno-almoço ou uma app fechada depois do jantar.",
+      "Metas pequenas que cumpres valem mais do que grandes que abandonas."
+     ],
+     "q": "Que pequena mudança te sentes pronto para experimentar esta semana?",
+     "c": "Escreve a tua meta num papel e põe-no onde o vejas todas as manhãs."
+    },
+    "pt_BR": {
+     "t": "Definindo uma primeira meta suave",
+     "g": "Escolher uma pequena mudança realista no tempo de tela para esta semana.",
+     "p": [
+      "Escolha uma mudança possível mesmo num dia cheio.",
+      "Exemplos: sem celular no café da manhã ou um app fechado depois do jantar.",
+      "Metas pequenas que você cumpre valem mais do que grandes que abandona."
+     ],
+     "q": "Que pequena mudança você se sente pronto para testar nesta semana?",
+     "c": "Escreva sua meta num papel e coloque onde você veja toda manhã."
+    }
+   }
+  }
+ ]
+}

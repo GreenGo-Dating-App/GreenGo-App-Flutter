@@ -1,0 +1,835 @@
+{
+ "topic": "anime",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pokémon around the world",
+     "g": "See how a game became a global anime about friendship.",
+     "p": [
+      "Pokémon began as a video game in Japan in 1996, created by Satoshi Tajiri.",
+      "The anime started in 1997 and follows young trainers and their Pokémon partners.",
+      "Its heart is friendship, curiosity and travelling to learn new things."
+     ],
+     "q": "Which Pokémon, if any, would you pick as a travel companion?",
+     "c": "Invent a new Pokémon: draw it and give it a name and a favourite food."
+    },
+    "de": {
+     "t": "Pokémon in aller Welt",
+     "g": "Sieh, wie aus einem Spiel ein weltweiter Anime über Freundschaft wurde.",
+     "p": [
+      "Pokémon begann 1996 als Videospiel in Japan, erdacht von Satoshi Tajiri.",
+      "Der Anime startete 1997 und begleitet junge Trainer und ihre Pokémon.",
+      "Im Kern geht es um Freundschaft, Neugier und Reisen, um Neues zu lernen."
+     ],
+     "q": "Welches Pokémon würdest du als Reisebegleiter wählen?",
+     "c": "Erfinde ein neues Pokémon: zeichne es und gib ihm Namen und Lieblingsessen."
+    },
+    "es": {
+     "t": "Pokémon por el mundo",
+     "g": "Descubre cómo un videojuego se convirtió en un anime mundial sobre la amistad.",
+     "p": [
+      "Pokémon nació como videojuego en Japón en 1996, creado por Satoshi Tajiri.",
+      "El anime empezó en 1997 y sigue a jóvenes entrenadores y sus compañeros Pokémon.",
+      "Su corazón es la amistad, la curiosidad y viajar para aprender cosas nuevas."
+     ],
+     "q": "¿Qué Pokémon elegirías como compañero de viaje?",
+     "c": "Inventa un nuevo Pokémon: dibújalo y ponle nombre y comida favorita."
+    },
+    "fr": {
+     "t": "Pokémon autour du monde",
+     "g": "Vois comment un jeu est devenu un anime mondial sur l'amitié.",
+     "p": [
+      "Pokémon est né comme jeu vidéo au Japon en 1996, créé par Satoshi Tajiri.",
+      "L'anime a débuté en 1997 et suit de jeunes dresseurs et leurs Pokémon.",
+      "Son cœur, c'est l'amitié, la curiosité et le voyage pour apprendre."
+     ],
+     "q": "Quel Pokémon choisirais-tu comme compagnon de voyage ?",
+     "c": "Invente un nouveau Pokémon : dessine-le, donne-lui un nom et un plat préféré."
+    },
+    "it": {
+     "t": "Pokémon nel mondo",
+     "g": "Scopri come un videogioco è diventato un anime mondiale sull'amicizia.",
+     "p": [
+      "Pokémon nacque come videogioco in Giappone nel 1996, ideato da Satoshi Tajiri.",
+      "L'anime iniziò nel 1997 e segue giovani allenatori e i loro Pokémon.",
+      "Il suo cuore è l'amicizia, la curiosità e il viaggio per imparare."
+     ],
+     "q": "Quale Pokémon sceglieresti come compagno di viaggio?",
+     "c": "Inventa un nuovo Pokémon: disegnalo e dagli un nome e un cibo preferito."
+    },
+    "pt": {
+     "t": "Pokémon pelo mundo",
+     "g": "Vê como um jogo se tornou um anime mundial sobre amizade.",
+     "p": [
+      "Pokémon nasceu como videojogo no Japão em 1996, criado por Satoshi Tajiri.",
+      "O anime começou em 1997 e segue jovens treinadores e os seus Pokémon.",
+      "O seu coração é a amizade, a curiosidade e viajar para aprender coisas novas."
+     ],
+     "q": "Que Pokémon escolherias como companheiro de viagem?",
+     "c": "Inventa um novo Pokémon: desenha-o e dá-lhe um nome e uma comida preferida."
+    },
+    "pt_BR": {
+     "t": "Pokémon pelo mundo",
+     "g": "Veja como um jogo virou um anime mundial sobre amizade.",
+     "p": [
+      "Pokémon nasceu como videogame no Japão em 1996, criado por Satoshi Tajiri.",
+      "O anime começou em 1997 e acompanha jovens treinadores e seus Pokémon.",
+      "O coração dele é a amizade, a curiosidade e viajar para aprender coisas novas."
+     ],
+     "q": "Que Pokémon você escolheria como companheiro de viagem?",
+     "c": "Invente um novo Pokémon: desenhe e dê um nome e uma comida favorita."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sazae-san: a TV record holder",
+     "g": "Meet the family anime that has aired weekly since 1969.",
+     "p": [
+      "Sazae-san is based on a comic by Machiko Hasegawa about a cheerful family.",
+      "The anime first aired in 1969 and is recognised as the longest-running animated TV series.",
+      "Its everyday humour shows how Japanese home life changed over decades."
+     ],
+     "q": "Which family show do you remember watching with your relatives?",
+     "c": "Draw a family dinner table with three or more relatives and their meal."
+    },
+    "de": {
+     "t": "Sazae-san: Rekordhalter im TV",
+     "g": "Lerne den Familien-Anime kennen, der seit 1969 wöchentlich läuft.",
+     "p": [
+      "Sazae-san beruht auf einem Comic von Machiko Hasegawa über eine fröhliche Familie.",
+      "Der Anime startete 1969 und gilt als längste Zeichentrickserie im Fernsehen.",
+      "Der Alltagshumor zeigt, wie sich das Familienleben in Japan wandelte."
+     ],
+     "q": "Welche Familienserie hast du früher mit Verwandten gesehen?",
+     "c": "Zeichne einen Familientisch mit drei oder mehr Verwandten und ihrem Essen."
+    },
+    "es": {
+     "t": "Sazae-san: récord en la TV",
+     "g": "Conoce el anime familiar que se emite cada semana desde 1969.",
+     "p": [
+      "Sazae-san se basa en un cómic de Machiko Hasegawa sobre una familia alegre.",
+      "El anime se estrenó en 1969 y se reconoce como la serie animada de TV más longeva.",
+      "Su humor cotidiano muestra cómo cambió la vida en casa en Japón."
+     ],
+     "q": "¿Qué serie familiar recuerdas haber visto con tus parientes?",
+     "c": "Dibuja una mesa familiar con tres o más parientes y su comida."
+    },
+    "fr": {
+     "t": "Sazae-san : record à la télé",
+     "g": "Découvre l'anime familial diffusé chaque semaine depuis 1969.",
+     "p": [
+      "Sazae-san s'inspire d'une BD de Machiko Hasegawa sur une famille joyeuse.",
+      "L'anime a débuté en 1969 et est reconnu comme la plus longue série animée de la TV.",
+      "Son humour du quotidien montre l'évolution de la vie de famille au Japon."
+     ],
+     "q": "Quelle série familiale te rappelles-tu avoir regardée avec tes proches ?",
+     "c": "Dessine une table de famille avec trois proches ou plus et leur repas."
+    },
+    "it": {
+     "t": "Sazae-san: record in TV",
+     "g": "Conosci l'anime familiare in onda ogni settimana dal 1969.",
+     "p": [
+      "Sazae-san è tratto da un fumetto di Machiko Hasegawa su una famiglia allegra.",
+      "L'anime debuttò nel 1969 ed è riconosciuto come la serie animata TV più longeva.",
+      "Il suo umorismo quotidiano mostra come cambiò la vita familiare in Giappone."
+     ],
+     "q": "Quale serie per famiglie ricordi di aver visto con i parenti?",
+     "c": "Disegna una tavola di famiglia con tre o più parenti e il loro pasto."
+    },
+    "pt": {
+     "t": "Sazae-san: recorde na TV",
+     "g": "Conhece o anime familiar que passa todas as semanas desde 1969.",
+     "p": [
+      "Sazae-san baseia-se numa banda desenhada de Machiko Hasegawa sobre uma família alegre.",
+      "O anime estreou em 1969 e é reconhecido como a série animada de TV mais longa.",
+      "O humor do dia a dia mostra como mudou a vida em casa no Japão."
+     ],
+     "q": "Que série familiar recordas ter visto com os teus familiares?",
+     "c": "Desenha uma mesa de família com três ou mais familiares e a refeição."
+    },
+    "pt_BR": {
+     "t": "Sazae-san: recorde na TV",
+     "g": "Conheça o anime familiar que vai ao ar toda semana desde 1969.",
+     "p": [
+      "Sazae-san é baseado numa história em quadrinhos de Machiko Hasegawa sobre uma família alegre.",
+      "O anime estreou em 1969 e é reconhecido como a série animada de TV mais longa.",
+      "O humor do dia a dia mostra como mudou a vida em casa no Japão."
+     ],
+     "q": "Que série familiar você lembra de ter visto com seus parentes?",
+     "c": "Desenhe uma mesa de família com três ou mais parentes e a refeição."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Anpanman and kindness",
+     "g": "Meet Japan's bread-headed hero who shares his own face with the hungry.",
+     "p": [
+      "Anpanman was created by Takashi Yanase, and the anime began in 1988.",
+      "His head is a sweet bean-paste bun, and he lets hungry people eat a piece.",
+      "It teaches that real heroes help others, even when it costs them something."
+     ],
+     "q": "What small act of kindness could be your own superpower today?",
+     "c": "Draw a hero whose special power is kindness, with a simple costume."
+    },
+    "de": {
+     "t": "Anpanman und Güte",
+     "g": "Lerne Japans Brotkopf-Helden kennen, der sein Gesicht mit Hungrigen teilt.",
+     "p": [
+      "Anpanman wurde von Takashi Yanase erfunden, der Anime startete 1988.",
+      "Sein Kopf ist ein Brötchen mit süßer Bohnenpaste; Hungrige dürfen ein Stück essen.",
+      "Er zeigt: Wahre Helden helfen anderen, auch wenn es sie etwas kostet."
+     ],
+     "q": "Welche kleine freundliche Tat könnte heute deine Superkraft sein?",
+     "c": "Zeichne einen Helden, dessen Kraft die Güte ist, mit einfachem Kostüm."
+    },
+    "es": {
+     "t": "Anpanman y la bondad",
+     "g": "Conoce al héroe japonés con cabeza de pan que comparte su cara con los hambrientos.",
+     "p": [
+      "Anpanman lo creó Takashi Yanase y el anime empezó en 1988.",
+      "Su cabeza es un bollo de pasta de judías dulce y deja que los hambrientos coman un trozo.",
+      "Enseña que los héroes de verdad ayudan a otros, aunque les cueste algo."
+     ],
+     "q": "¿Qué pequeño gesto amable puede ser hoy tu superpoder?",
+     "c": "Dibuja un héroe cuyo poder especial sea la bondad, con un traje sencillo."
+    },
+    "fr": {
+     "t": "Anpanman et la bonté",
+     "g": "Rencontre le héros japonais à tête de pain qui partage son visage avec les affamés.",
+     "p": [
+      "Anpanman a été créé par Takashi Yanase et l'anime a débuté en 1988.",
+      "Sa tête est une brioche à la pâte de haricots sucrée, dont il offre un morceau.",
+      "Il enseigne que les vrais héros aident les autres, même si cela leur coûte."
+     ],
+     "q": "Quel petit geste gentil pourrait être ton super-pouvoir aujourd'hui ?",
+     "c": "Dessine un héros dont le pouvoir est la gentillesse, avec un costume simple."
+    },
+    "it": {
+     "t": "Anpanman e la gentilezza",
+     "g": "Conosci l'eroe giapponese con la testa di pane che offre il suo viso agli affamati.",
+     "p": [
+      "Anpanman fu creato da Takashi Yanase e l'anime iniziò nel 1988.",
+      "La sua testa è un panino alla pasta di fagioli dolce, di cui offre un pezzo.",
+      "Insegna che i veri eroi aiutano gli altri, anche se costa loro qualcosa."
+     ],
+     "q": "Quale piccolo gesto gentile può essere oggi il tuo superpotere?",
+     "c": "Disegna un eroe il cui potere speciale è la gentilezza, con un costume semplice."
+    },
+    "pt": {
+     "t": "Anpanman e a bondade",
+     "g": "Conhece o herói japonês com cabeça de pão que partilha a sua cara com os esfomeados.",
+     "p": [
+      "Anpanman foi criado por Takashi Yanase e o anime começou em 1988.",
+      "A cabeça é um pãozinho de pasta de feijão doce, e ele deixa os famintos comer um pedaço.",
+      "Ensina que os verdadeiros heróis ajudam os outros, mesmo que lhes custe algo."
+     ],
+     "q": "Que pequeno gesto simpático pode ser hoje o teu superpoder?",
+     "c": "Desenha um herói cujo poder especial é a bondade, com um fato simples."
+    },
+    "pt_BR": {
+     "t": "Anpanman e a bondade",
+     "g": "Conheça o herói japonês com cabeça de pão que divide seu rosto com os famintos.",
+     "p": [
+      "Anpanman foi criado por Takashi Yanase e o anime começou em 1988.",
+      "A cabeça é um pãozinho de pasta de feijão doce, e ele deixa os famintos comerem um pedaço.",
+      "Ensina que os verdadeiros heróis ajudam os outros, mesmo que lhes custe algo."
+     ],
+     "q": "Que pequeno gesto gentil pode ser hoje o seu superpoder?",
+     "c": "Desenhe um herói cujo poder especial é a bondade, com uma roupa simples."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Chibi Maruko-chan",
+     "g": "Visit everyday childhood comedy set in 1970s Japan.",
+     "p": [
+      "Chibi Maruko-chan comes from a manga by Momoko Sakura, with an anime from 1990.",
+      "It follows a third-grade girl in Shizuoka and her family, friends and school days.",
+      "Its charm is gentle humour and nostalgia for simple everyday moments."
+     ],
+     "q": "What small everyday moment from your own childhood makes you smile?",
+     "c": "Draw a childhood memory as a single comic panel with a short caption."
+    },
+    "de": {
+     "t": "Chibi Maruko-chan",
+     "g": "Besuche eine Alltagskomödie aus der Kindheit im Japan der 1970er.",
+     "p": [
+      "Chibi Maruko-chan stammt von einem Manga von Momoko Sakura; der Anime läuft seit 1990.",
+      "Die Serie begleitet ein Mädchen der dritten Klasse in Shizuoka mit Familie und Freunden.",
+      "Der Reiz liegt im sanften Humor und der Nostalgie für kleine Alltagsmomente."
+     ],
+     "q": "Welcher kleine Alltagsmoment deiner Kindheit lässt dich lächeln?",
+     "c": "Zeichne eine Kindheitserinnerung als ein Comic-Panel mit kurzer Bildunterschrift."
+    },
+    "es": {
+     "t": "Chibi Maruko-chan",
+     "g": "Visita la comedia cotidiana de infancia ambientada en el Japón de los años 70.",
+     "p": [
+      "Chibi Maruko-chan viene de un manga de Momoko Sakura, con anime desde 1990.",
+      "Sigue a una niña de tercer curso en Shizuoka, su familia, amigos y días de colegio.",
+      "Su encanto es el humor suave y la nostalgia de los momentos sencillos."
+     ],
+     "q": "¿Qué pequeño momento cotidiano de tu infancia te hace sonreír?",
+     "c": "Dibuja un recuerdo de infancia en una viñeta con un pie de texto breve."
+    },
+    "fr": {
+     "t": "Chibi Maruko-chan",
+     "g": "Visite une comédie du quotidien sur l'enfance dans le Japon des années 1970.",
+     "p": [
+      "Chibi Maruko-chan vient d'un manga de Momoko Sakura, avec un anime depuis 1990.",
+      "Elle suit une écolière de troisième année à Shizuoka, sa famille, ses amis et l'école.",
+      "Son charme tient à son humour doux et à la nostalgie des petits moments simples."
+     ],
+     "q": "Quel petit moment du quotidien de ton enfance te fait sourire ?",
+     "c": "Dessine un souvenir d'enfance en une case avec une courte légende."
+    },
+    "it": {
+     "t": "Chibi Maruko-chan",
+     "g": "Visita una commedia quotidiana sull'infanzia nel Giappone degli anni Settanta.",
+     "p": [
+      "Chibi Maruko-chan nasce da un manga di Momoko Sakura, con anime dal 1990.",
+      "Segue una bambina di terza elementare a Shizuoka, tra famiglia, amici e scuola.",
+      "Il suo fascino è l'umorismo gentile e la nostalgia dei momenti semplici."
+     ],
+     "q": "Quale piccolo momento quotidiano della tua infanzia ti fa sorridere?",
+     "c": "Disegna un ricordo d'infanzia in una vignetta con una breve didascalia."
+    },
+    "pt": {
+     "t": "Chibi Maruko-chan",
+     "g": "Visita uma comédia do dia a dia sobre a infância no Japão dos anos 70.",
+     "p": [
+      "Chibi Maruko-chan vem de um manga de Momoko Sakura, com anime desde 1990.",
+      "Acompanha uma menina do terceiro ano em Shizuoka, a família, os amigos e a escola.",
+      "O seu encanto é o humor suave e a nostalgia dos momentos simples."
+     ],
+     "q": "Que pequeno momento do dia a dia da tua infância te faz sorrir?",
+     "c": "Desenha uma memória de infância numa vinheta com uma legenda curta."
+    },
+    "pt_BR": {
+     "t": "Chibi Maruko-chan",
+     "g": "Visite uma comédia do cotidiano sobre a infância no Japão dos anos 70.",
+     "p": [
+      "Chibi Maruko-chan vem de um mangá de Momoko Sakura, com anime desde 1990.",
+      "Acompanha uma menina do terceiro ano em Shizuoka, a família, os amigos e a escola.",
+      "O charme dele é o humor suave e a nostalgia dos momentos simples."
+     ],
+     "q": "Que pequeno momento do cotidiano da sua infância faz você sorrir?",
+     "c": "Desenhe uma memória de infância num quadro com uma legenda curta."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hamtaro and cute pet anime",
+     "g": "Meet little hamsters, big adventures and the charm of cuteness.",
+     "p": [
+      "Hamtaro is based on picture books by Ritsuko Kawai, with an anime from 2000.",
+      "The Ham-Hams are pet hamsters who meet in secret while their owners are away.",
+      "Cute pet stories show how animals can make everyday life brighter."
+     ],
+     "q": "Do you have a pet, or one you wish you had? What is it like?",
+     "c": "Draw a tiny pet with a big personality and write its name and hobby."
+    },
+    "de": {
+     "t": "Hamtaro und süße Haustier-Anime",
+     "g": "Lerne kleine Hamster, große Abenteuer und den Reiz des Niedlichen kennen.",
+     "p": [
+      "Hamtaro beruht auf Bilderbüchern von Ritsuko Kawai; der Anime startete 2000.",
+      "Die Ham-Hams sind Hamster, die sich heimlich treffen, während die Besitzer weg sind.",
+      "Süße Haustiergeschichten zeigen, wie Tiere den Alltag aufhellen."
+     ],
+     "q": "Hast du ein Haustier oder wünschst du dir eines? Wie ist es?",
+     "c": "Zeichne ein winziges Haustier mit großer Persönlichkeit, mit Namen und Hobby."
+    },
+    "es": {
+     "t": "Hamtaro y los animes de mascotas",
+     "g": "Conoce a unos hámsters, grandes aventuras y el encanto de lo adorable.",
+     "p": [
+      "Hamtaro se basa en libros ilustrados de Ritsuko Kawai, con anime desde 2000.",
+      "Los Ham-Ham son hámsters que se reúnen en secreto mientras sus dueños no están.",
+      "Las historias de mascotas muestran cómo los animales alegran el día a día."
+     ],
+     "q": "¿Tienes una mascota o te gustaría tener una? ¿Cómo es?",
+     "c": "Dibuja una mascota diminuta con gran personalidad y escribe su nombre y afición."
+    },
+    "fr": {
+     "t": "Hamtaro et les animes d'animaux",
+     "g": "Rencontre de petits hamsters, de grandes aventures et le charme du mignon.",
+     "p": [
+      "Hamtaro vient d'albums illustrés de Ritsuko Kawai, avec un anime depuis 2000.",
+      "Les Ham-Hams sont des hamsters qui se retrouvent en secret quand leurs maîtres sont absents.",
+      "Les histoires d'animaux de compagnie montrent comment ils égayent le quotidien."
+     ],
+     "q": "As-tu un animal, ou en rêves-tu un ? Comment est-il ?",
+     "c": "Dessine un minuscule animal à forte personnalité, avec son nom et son passe-temps."
+    },
+    "it": {
+     "t": "Hamtaro e gli anime di animali",
+     "g": "Conosci piccoli criceti, grandi avventure e il fascino della dolcezza.",
+     "p": [
+      "Hamtaro nasce da libri illustrati di Ritsuko Kawai, con anime dal 2000.",
+      "Gli Ham-Ham sono criceti che si incontrano in segreto quando i padroni sono via.",
+      "Le storie di animali domestici mostrano come rallegrano la vita di ogni giorno."
+     ],
+     "q": "Hai un animale domestico o ne vorresti uno? Com'è?",
+     "c": "Disegna un minuscolo animale con grande personalità e scrivi nome e hobby."
+    },
+    "pt": {
+     "t": "Hamtaro e os animes de animais",
+     "g": "Conhece pequenos hamsters, grandes aventuras e o encanto do fofinho.",
+     "p": [
+      "Hamtaro baseia-se em livros ilustrados de Ritsuko Kawai, com anime desde 2000.",
+      "Os Ham-Hams são hamsters que se encontram em segredo quando os donos estão fora.",
+      "As histórias de animais de estimação mostram como alegram o dia a dia."
+     ],
+     "q": "Tens um animal de estimação ou gostavas de ter um? Como é?",
+     "c": "Desenha um animalzinho com grande personalidade e escreve o nome e o passatempo."
+    },
+    "pt_BR": {
+     "t": "Hamtaro e os animes de pets",
+     "g": "Conheça pequenos hamsters, grandes aventuras e o charme do fofinho.",
+     "p": [
+      "Hamtaro é baseado em livros ilustrados de Ritsuko Kawai, com anime desde 2000.",
+      "Os Ham-Hams são hamsters que se encontram em segredo quando os donos saem.",
+      "As histórias de pets mostram como eles alegram o dia a dia."
+     ],
+     "q": "Você tem um pet ou gostaria de ter um? Como ele é?",
+     "c": "Desenhe um bichinho com grande personalidade e escreva o nome e o hobby."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kawaii culture",
+     "g": "Explore cuteness as a Japanese aesthetic in anime and design.",
+     "p": [
+      "Kawaii means cute, lovable and charming, and it shapes art and products.",
+      "Round shapes, soft colours and small sizes are classic ingredients.",
+      "Mascots and characters appear on trains, shops and even public signs."
+     ],
+     "q": "What everyday object do you find kawaii, and why?",
+     "c": "Redesign a plain object, like a mug, as kawaii with round shapes."
+    },
+    "de": {
+     "t": "Kawaii-Kultur",
+     "g": "Entdecke das Niedliche als japanische Ästhetik in Anime und Design.",
+     "p": [
+      "Kawaii heißt niedlich, liebenswert und reizend und prägt Kunst und Produkte.",
+      "Runde Formen, sanfte Farben und kleine Größen sind klassische Zutaten.",
+      "Maskottchen und Figuren erscheinen auf Zügen, in Läden und auf Schildern."
+     ],
+     "q": "Welchen Alltagsgegenstand findest du kawaii, und warum?",
+     "c": "Gestalte einen schlichten Gegenstand, etwa eine Tasse, kawaii mit runden Formen."
+    },
+    "es": {
+     "t": "Cultura kawaii",
+     "g": "Explora lo adorable como estética japonesa en el anime y el diseño.",
+     "p": [
+      "Kawaii significa tierno, adorable y encantador, y marca el arte y los productos.",
+      "Las formas redondas, los colores suaves y los tamaños pequeños son ingredientes clásicos.",
+      "Las mascotas y personajes aparecen en trenes, tiendas e incluso carteles públicos."
+     ],
+     "q": "¿Qué objeto cotidiano te parece kawaii y por qué?",
+     "c": "Rediseña un objeto sencillo, como una taza, en versión kawaii con formas redondas."
+    },
+    "fr": {
+     "t": "La culture kawaii",
+     "g": "Explore le mignon comme esthétique japonaise dans l'anime et le design.",
+     "p": [
+      "Kawaii veut dire mignon, adorable et charmant, et marque l'art et les produits.",
+      "Formes rondes, couleurs douces et petites tailles en sont les ingrédients classiques.",
+      "Mascottes et personnages s'affichent sur les trains, dans les magasins et les panneaux."
+     ],
+     "q": "Quel objet du quotidien trouves-tu kawaii, et pourquoi ?",
+     "c": "Redessine un objet simple, comme une tasse, en kawaii avec des formes rondes."
+    },
+    "it": {
+     "t": "Cultura kawaii",
+     "g": "Esplora la dolcezza come estetica giapponese in anime e design.",
+     "p": [
+      "Kawaii significa carino, adorabile e grazioso, e influenza arte e prodotti.",
+      "Forme rotonde, colori morbidi e piccole dimensioni sono ingredienti classici.",
+      "Mascotte e personaggi appaiono su treni, negozi e persino cartelli pubblici."
+     ],
+     "q": "Quale oggetto quotidiano trovi kawaii e perché?",
+     "c": "Ridisegna un oggetto semplice, come una tazza, in versione kawaii con forme tonde."
+    },
+    "pt": {
+     "t": "Cultura kawaii",
+     "g": "Explora o fofinho como estética japonesa no anime e no design.",
+     "p": [
+      "Kawaii significa amoroso, adorável e encantador, e marca a arte e os produtos.",
+      "Formas redondas, cores suaves e tamanhos pequenos são ingredientes clássicos.",
+      "Mascotes e personagens aparecem em comboios, lojas e até em placas públicas."
+     ],
+     "q": "Que objeto do dia a dia achas kawaii e porquê?",
+     "c": "Redesenha um objeto simples, como uma caneca, em versão kawaii com formas redondas."
+    },
+    "pt_BR": {
+     "t": "Cultura kawaii",
+     "g": "Explore o fofo como estética japonesa no anime e no design.",
+     "p": [
+      "Kawaii significa fofo, adorável e encantador, e marca a arte e os produtos.",
+      "Formas redondas, cores suaves e tamanhos pequenos são ingredientes clássicos.",
+      "Mascotes e personagens aparecem em trens, lojas e até em placas públicas."
+     ],
+     "q": "Que objeto do dia a dia você acha kawaii e por quê?",
+     "c": "Redesenhe um objeto simples, como uma caneca, em versão kawaii com formas redondas."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Talking about anime: key words",
+     "g": "Learn otaku, seiyu, mangaka, sakuga and other fan terms.",
+     "p": [
+      "A mangaka draws manga, and a seiyu is a voice actor in anime.",
+      "Sakuga means especially well-animated scenes that fans admire.",
+      "Otaku in Japan means a person deeply devoted to a hobby, so use it carefully."
+     ],
+     "q": "Which of these words would you most likely use in a chat with friends?",
+     "c": "Write a sentence about a favourite scene using at least two new words."
+    },
+    "de": {
+     "t": "Anime-Vokabeln für Gespräche",
+     "g": "Lerne Otaku, Seiyū, Mangaka, Sakuga und weitere Fan-Begriffe.",
+     "p": [
+      "Ein Mangaka zeichnet Manga, ein Seiyū ist ein Synchronsprecher im Anime.",
+      "Sakuga meint besonders gut animierte Szenen, die Fans bewundern.",
+      "Otaku heißt in Japan jemand, der einem Hobby sehr ergeben ist; sei vorsichtig damit."
+     ],
+     "q": "Welches dieser Wörter würdest du im Gespräch mit Freunden am ehesten nutzen?",
+     "c": "Schreibe einen Satz über eine Lieblingsszene mit mindestens zwei neuen Wörtern."
+    },
+    "es": {
+     "t": "Hablar de anime: palabras clave",
+     "g": "Aprende otaku, seiyū, mangaka, sakuga y otros términos de fans.",
+     "p": [
+      "Un mangaka dibuja manga y un seiyū es un actor de voz de anime.",
+      "Sakuga son escenas especialmente bien animadas que admiran los fans.",
+      "En Japón otaku es alguien muy entregado a una afición, así que úsalo con cuidado."
+     ],
+     "q": "¿Cuál de estas palabras usarías más al charlar con amigos?",
+     "c": "Escribe una frase sobre una escena favorita con al menos dos palabras nuevas."
+    },
+    "fr": {
+     "t": "Parler d'anime : mots clés",
+     "g": "Apprends otaku, seiyū, mangaka, sakuga et d'autres termes de fans.",
+     "p": [
+      "Un mangaka dessine des mangas et un seiyū est un doubleur d'anime.",
+      "Sakuga désigne des scènes particulièrement bien animées que les fans admirent.",
+      "Au Japon, otaku désigne quelqu'un de très passionné par un loisir ; à manier avec soin."
+     ],
+     "q": "Lequel de ces mots utiliserais-tu le plus avec des amis ?",
+     "c": "Écris une phrase sur une scène préférée avec au moins deux mots nouveaux."
+    },
+    "it": {
+     "t": "Parlare di anime: parole chiave",
+     "g": "Impara otaku, seiyū, mangaka, sakuga e altri termini da fan.",
+     "p": [
+      "Un mangaka disegna manga e un seiyū è un doppiatore di anime.",
+      "Sakuga indica scene animate particolarmente bene che i fan ammirano.",
+      "In Giappone otaku è chi si dedica molto a un hobby, quindi usalo con cautela."
+     ],
+     "q": "Quale di queste parole useresti di più chiacchierando con amici?",
+     "c": "Scrivi una frase su una scena preferita con almeno due parole nuove."
+    },
+    "pt": {
+     "t": "Falar de anime: palavras-chave",
+     "g": "Aprende otaku, seiyū, mangaka, sakuga e outros termos de fãs.",
+     "p": [
+      "Um mangaka desenha manga e um seiyū é um dobrador de voz de anime.",
+      "Sakuga são cenas especialmente bem animadas que os fãs admiram.",
+      "No Japão otaku é quem se dedica muito a um passatempo, por isso usa com cuidado."
+     ],
+     "q": "Qual destas palavras usarias mais numa conversa com amigos?",
+     "c": "Escreve uma frase sobre uma cena preferida com pelo menos duas palavras novas."
+    },
+    "pt_BR": {
+     "t": "Falando de anime: palavras-chave",
+     "g": "Aprenda otaku, seiyū, mangaká, sakuga e outros termos de fãs.",
+     "p": [
+      "Um mangaká desenha mangá e um seiyū é um dublador de anime.",
+      "Sakuga são cenas especialmente bem animadas que os fãs admiram.",
+      "No Japão otaku é quem se dedica muito a um hobby, então use com cuidado."
+     ],
+     "q": "Qual dessas palavras você mais usaria numa conversa com amigos?",
+     "c": "Escreva uma frase sobre uma cena favorita com pelo menos duas palavras novas."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Japanese honorifics in anime",
+     "g": "Understand what -san, -kun, -chan, -senpai and -sensei tell you.",
+     "p": [
+      "-san is a polite, neutral suffix, like Mr, Ms or Mx, added to names.",
+      "-kun and -chan are friendly; -chan is often used for children or close friends.",
+      "-senpai is for an older schoolmate or colleague and -sensei for teachers."
+     ],
+     "q": "How would you address a friend, a teacher and an older classmate?",
+     "c": "Write three names with the honorific you think fits best for each."
+    },
+    "de": {
+     "t": "Japanische Anreden im Anime",
+     "g": "Verstehe, was -san, -kun, -chan, -senpai und -sensei verraten.",
+     "p": [
+      "-san ist eine höfliche, neutrale Endung wie Herr oder Frau.",
+      "-kun und -chan sind freundlich; -chan nutzt man oft für Kinder oder enge Freunde.",
+      "-senpai gilt für ältere Mitschüler oder Kollegen, -sensei für Lehrer."
+     ],
+     "q": "Wie würdest du einen Freund, eine Lehrerin und einen älteren Mitschüler ansprechen?",
+     "c": "Schreibe drei Namen und die Anrede, die du für jeden am passendsten findest."
+    },
+    "es": {
+     "t": "Honoríficos japoneses en el anime",
+     "g": "Entiende qué indican -san, -kun, -chan, -senpai y -sensei.",
+     "p": [
+      "-san es un sufijo cortés y neutro, como señor o señora, que se añade a los nombres.",
+      "-kun y -chan son cercanos; -chan se usa a menudo con niños o amigos íntimos.",
+      "-senpai es para un compañero o colega mayor y -sensei para los profesores."
+     ],
+     "q": "¿Cómo tratarías a un amigo, a un profesor y a un compañero mayor?",
+     "c": "Escribe tres nombres con el honorífico que creas más adecuado para cada uno."
+    },
+    "fr": {
+     "t": "Les titres honorifiques japonais",
+     "g": "Comprends ce que -san, -kun, -chan, -senpai et -sensei indiquent.",
+     "p": [
+      "-san est un suffixe poli et neutre, comme monsieur ou madame, ajouté aux noms.",
+      "-kun et -chan sont amicaux ; -chan s'emploie souvent pour les enfants ou proches.",
+      "-senpai désigne un aîné à l'école ou au travail, -sensei un enseignant."
+     ],
+     "q": "Comment t'adresserais-tu à un ami, un professeur et un camarade plus âgé ?",
+     "c": "Écris trois noms avec le suffixe qui te semble le plus juste pour chacun."
+    },
+    "it": {
+     "t": "Gli onorifici giapponesi",
+     "g": "Capisci cosa indicano -san, -kun, -chan, -senpai e -sensei.",
+     "p": [
+      "-san è un suffisso cortese e neutro, come signor o signora, aggiunto ai nomi.",
+      "-kun e -chan sono amichevoli; -chan si usa spesso per bambini o amici stretti.",
+      "-senpai è per un compagno o collega più anziano e -sensei per gli insegnanti."
+     ],
+     "q": "Come ti rivolgeresti a un amico, a un insegnante e a un compagno più grande?",
+     "c": "Scrivi tre nomi con l'onorifico che ritieni più adatto per ciascuno."
+    },
+    "pt": {
+     "t": "Honoríficos japoneses no anime",
+     "g": "Percebe o que -san, -kun, -chan, -senpai e -sensei indicam.",
+     "p": [
+      "-san é um sufixo cortês e neutro, como senhor ou senhora, junto aos nomes.",
+      "-kun e -chan são amigáveis; -chan usa-se muito com crianças ou amigos próximos.",
+      "-senpai é para um colega mais velho e -sensei para professores."
+     ],
+     "q": "Como tratarias um amigo, um professor e um colega mais velho?",
+     "c": "Escreve três nomes com o honorífico que achas mais adequado a cada um."
+    },
+    "pt_BR": {
+     "t": "Honoríficos japoneses no anime",
+     "g": "Entenda o que -san, -kun, -chan, -senpai e -sensei indicam.",
+     "p": [
+      "-san é um sufixo educado e neutro, como senhor ou senhora, junto aos nomes.",
+      "-kun e -chan são amigáveis; -chan costuma ser usado com crianças ou amigos próximos.",
+      "-senpai é para um colega mais velho e -sensei para professores."
+     ],
+     "q": "Como você trataria um amigo, um professor e um colega mais velho?",
+     "c": "Escreva três nomes com o honorífico que você acha mais adequado a cada um."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Common Japanese phrases in anime",
+     "g": "Learn what itadakimasu, ganbatte and tadaima mean.",
+     "p": [
+      "Itadakimasu is said before eating, to thank everyone behind the meal.",
+      "Ganbatte means do your best, a cheerful way to encourage someone.",
+      "Tadaima means I am home, and the answer is okaeri, welcome back."
+     ],
+     "q": "Which phrase would you like to start using with friends or family?",
+     "c": "Say itadakimasu before your next meal and tadaima when you get home."
+    },
+    "de": {
+     "t": "Häufige japanische Sätze im Anime",
+     "g": "Lerne, was itadakimasu, ganbatte und tadaima bedeuten.",
+     "p": [
+      "Itadakimasu sagt man vor dem Essen, um allen hinter der Mahlzeit zu danken.",
+      "Ganbatte heißt gib dein Bestes, eine fröhliche Art zu ermutigen.",
+      "Tadaima heißt ich bin zu Hause; die Antwort ist okaeri, willkommen zurück."
+     ],
+     "q": "Welchen Ausdruck würdest du gern mit Freunden oder Familie benutzen?",
+     "c": "Sag vor deiner nächsten Mahlzeit itadakimasu und zu Hause tadaima."
+    },
+    "es": {
+     "t": "Frases japonesas habituales en el anime",
+     "g": "Aprende qué significan itadakimasu, ganbatte y tadaima.",
+     "p": [
+      "Itadakimasu se dice antes de comer, para agradecer a todos los que hicieron la comida.",
+      "Ganbatte significa haz lo mejor que puedas, una forma alegre de animar.",
+      "Tadaima significa ya estoy en casa y se responde okaeri, bienvenido."
+     ],
+     "q": "¿Qué frase te gustaría empezar a usar con amigos o familia?",
+     "c": "Di itadakimasu antes de tu próxima comida y tadaima al llegar a casa."
+    },
+    "fr": {
+     "t": "Expressions japonaises courantes dans l'anime",
+     "g": "Apprends le sens d'itadakimasu, ganbatte et tadaima.",
+     "p": [
+      "Itadakimasu se dit avant de manger, pour remercier tous ceux qui ont permis le repas.",
+      "Ganbatte veut dire fais de ton mieux, une façon joyeuse d'encourager.",
+      "Tadaima veut dire je suis rentré ; on répond okaeri, bon retour."
+     ],
+     "q": "Quelle expression aimerais-tu employer avec tes amis ou ta famille ?",
+     "c": "Dis itadakimasu avant ton prochain repas et tadaima en rentrant chez toi."
+    },
+    "it": {
+     "t": "Frasi giapponesi comuni negli anime",
+     "g": "Impara cosa significano itadakimasu, ganbatte e tadaima.",
+     "p": [
+      "Itadakimasu si dice prima di mangiare, per ringraziare chi ha reso possibile il pasto.",
+      "Ganbatte significa fai del tuo meglio, un modo allegro per incoraggiare.",
+      "Tadaima significa sono a casa e si risponde okaeri, bentornato."
+     ],
+     "q": "Quale frase vorresti iniziare a usare con amici o famiglia?",
+     "c": "Di' itadakimasu prima del prossimo pasto e tadaima quando torni a casa."
+    },
+    "pt": {
+     "t": "Frases japonesas comuns no anime",
+     "g": "Aprende o que significam itadakimasu, ganbatte e tadaima.",
+     "p": [
+      "Itadakimasu diz-se antes de comer, para agradecer a todos os que fizeram a refeição.",
+      "Ganbatte significa faz o teu melhor, uma forma alegre de encorajar.",
+      "Tadaima significa cheguei a casa e responde-se okaeri, bem-vindo de volta."
+     ],
+     "q": "Que frase gostarias de começar a usar com amigos ou família?",
+     "c": "Diz itadakimasu antes da próxima refeição e tadaima ao chegares a casa."
+    },
+    "pt_BR": {
+     "t": "Frases japonesas comuns no anime",
+     "g": "Aprenda o que significam itadakimasu, ganbatte e tadaima.",
+     "p": [
+      "Itadakimasu se diz antes de comer, para agradecer a todos que fizeram a refeição.",
+      "Ganbatte significa faça o seu melhor, um jeito alegre de incentivar.",
+      "Tadaima significa cheguei em casa e se responde okaeri, bem-vindo de volta."
+     ],
+     "q": "Que frase você gostaria de começar a usar com amigos ou família?",
+     "c": "Diga itadakimasu antes da próxima refeição e tadaima ao chegar em casa."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: first steps in anime",
+     "g": "Recap formats, styles and audiences from days 1 to 29.",
+     "p": [
+      "Recall formats: series, films, OVAs, cours, openings and endings.",
+      "Recall style: big eyes, symbols, chibi, and how manga is read right to left.",
+      "Recall audiences and classics: kodomo to josei, Doraemon, Sazae-san, Pokémon."
+     ],
+     "q": "Which topic from this first month did you enjoy most, and why?",
+     "c": "Draw a one-page summary: a face, a chibi and your favourite classic."
+    },
+    "de": {
+     "t": "Rückblick: erste Schritte im Anime",
+     "g": "Wiederhole Formate, Stile und Zielgruppen der Tage 1 bis 29.",
+     "p": [
+      "Erinnere dich an Formate: Serien, Filme, OVAs, Cours, Openings und Endings.",
+      "Erinnere dich an Stil: große Augen, Symbole, Chibi und Manga von rechts nach links.",
+      "Erinnere dich an Zielgruppen und Klassiker: Kodomo bis Josei, Doraemon, Sazae-san, Pokémon."
+     ],
+     "q": "Welches Thema dieses ersten Monats hat dir am meisten gefallen, und warum?",
+     "c": "Zeichne eine Zusammenfassung: ein Gesicht, ein Chibi und dein Lieblingsklassiker."
+    },
+    "es": {
+     "t": "Repaso: primeros pasos en el anime",
+     "g": "Repasa formatos, estilos y públicos de los días 1 a 29.",
+     "p": [
+      "Recuerda los formatos: series, películas, OVAs, cours, openings y endings.",
+      "Recuerda el estilo: ojos grandes, símbolos, chibi y el manga leído de derecha a izquierda.",
+      "Recuerda públicos y clásicos: de kodomo a josei, Doraemon, Sazae-san, Pokémon."
+     ],
+     "q": "¿Qué tema de este primer mes te gustó más y por qué?",
+     "c": "Dibuja un resumen en una página: una cara, un chibi y tu clásico favorito."
+    },
+    "fr": {
+     "t": "Révision : premiers pas dans l'anime",
+     "g": "Revois formats, styles et publics des jours 1 à 29.",
+     "p": [
+      "Rappelle-toi les formats : séries, films, OVA, cours, openings et endings.",
+      "Rappelle-toi le style : grands yeux, symboles, chibi et manga lu de droite à gauche.",
+      "Rappelle-toi publics et classiques : de kodomo à josei, Doraemon, Sazae-san, Pokémon."
+     ],
+     "q": "Quel sujet de ce premier mois as-tu préféré, et pourquoi ?",
+     "c": "Dessine un résumé d'une page : un visage, un chibi et ton classique préféré."
+    },
+    "it": {
+     "t": "Ripasso: primi passi nell'anime",
+     "g": "Ripassa formati, stili e pubblici dei giorni da 1 a 29.",
+     "p": [
+      "Ricorda i formati: serie, film, OVA, cour, opening ed ending.",
+      "Ricorda lo stile: occhi grandi, simboli, chibi e il manga letto da destra a sinistra.",
+      "Ricorda pubblici e classici: da kodomo a josei, Doraemon, Sazae-san, Pokémon."
+     ],
+     "q": "Quale argomento di questo primo mese ti è piaciuto di più e perché?",
+     "c": "Disegna un riassunto in una pagina: un viso, un chibi e il tuo classico preferito."
+    },
+    "pt": {
+     "t": "Revisão: primeiros passos no anime",
+     "g": "Revê formatos, estilos e públicos dos dias 1 a 29.",
+     "p": [
+      "Recorda os formatos: séries, filmes, OVAs, cours, aberturas e encerramentos.",
+      "Recorda o estilo: olhos grandes, símbolos, chibi e o manga lido da direita para a esquerda.",
+      "Recorda públicos e clássicos: de kodomo a josei, Doraemon, Sazae-san, Pokémon."
+     ],
+     "q": "Que tema deste primeiro mês mais gostaste e porquê?",
+     "c": "Desenha um resumo numa página: um rosto, um chibi e o teu clássico preferido."
+    },
+    "pt_BR": {
+     "t": "Revisão: primeiros passos no anime",
+     "g": "Reveja formatos, estilos e públicos dos dias 1 a 29.",
+     "p": [
+      "Lembre os formatos: séries, filmes, OVAs, cours, aberturas e encerramentos.",
+      "Lembre o estilo: olhos grandes, símbolos, chibi e o mangá lido da direita para a esquerda.",
+      "Lembre públicos e clássicos: de kodomo a josei, Doraemon, Sazae-san, Pokémon."
+     ],
+     "q": "Que tema deste primeiro mês você mais curtiu e por quê?",
+     "c": "Desenhe um resumo numa página: um rosto, um chibi e o seu clássico favorito."
+    }
+   }
+  }
+ ]
+}

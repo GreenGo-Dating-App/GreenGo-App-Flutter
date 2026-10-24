@@ -1,0 +1,835 @@
+{
+ "topic": "good_listener",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome: how was your day?",
+     "g": "Share three small moments from today and notice how it feels to be heard.",
+     "p": [
+      "Small moments count: a coffee, a chat, a walk are all worth sharing.",
+      "Being listened to feels good, so notice that feeling today.",
+      "You do not need big news; ordinary days make real conversation."
+     ],
+     "q": "What were three small moments from your day today?",
+     "c": "Tell one person about one small moment from your day."
+    },
+    "de": {
+     "t": "Willkommen: Wie war dein Tag?",
+     "g": "Teile drei kleine Momente deines Tages und spüre, wie es ist, gehört zu werden.",
+     "p": [
+      "Kleine Momente zählen: ein Kaffee, ein Gespräch, ein Spaziergang.",
+      "Zugehört zu werden tut gut. Achte heute auf dieses Gefühl.",
+      "Du brauchst keine großen Neuigkeiten; ganz normale Tage reichen."
+     ],
+     "q": "Welche drei kleinen Momente hattest du heute?",
+     "c": "Erzähle heute einer Person von einem kleinen Moment deines Tages."
+    },
+    "es": {
+     "t": "Bienvenido: ¿cómo fue tu día?",
+     "g": "Comparte tres momentos pequeños de hoy y nota cómo se siente que te escuchen.",
+     "p": [
+      "Los momentos pequeños cuentan: un café, una charla, un paseo.",
+      "Sentirte escuchado sienta bien; fíjate en esa sensación hoy.",
+      "No hacen falta grandes noticias; los días normales bastan."
+     ],
+     "q": "¿Cuáles fueron tres momentos pequeños de tu día?",
+     "c": "Cuéntale a alguien un momento pequeño de tu día."
+    },
+    "fr": {
+     "t": "Bienvenue : comment était ta journée ?",
+     "g": "Partage trois petits moments d'aujourd'hui et sens ce que c'est d'être écouté.",
+     "p": [
+      "Les petits moments comptent : un café, une discussion, une balade.",
+      "Être écouté fait du bien ; remarque cette sensation aujourd'hui.",
+      "Pas besoin de grandes nouvelles : les jours ordinaires suffisent."
+     ],
+     "q": "Quels ont été trois petits moments de ta journée ?",
+     "c": "Raconte à quelqu'un un petit moment de ta journée."
+    },
+    "it": {
+     "t": "Benvenuto: com'è andata la giornata?",
+     "g": "Condividi tre piccoli momenti di oggi e nota come ci si sente ad essere ascoltati.",
+     "p": [
+      "I piccoli momenti contano: un caffè, due chiacchiere, una passeggiata.",
+      "Sentirsi ascoltati fa bene; osserva questa sensazione oggi.",
+      "Non servono grandi novità: i giorni normali bastano."
+     ],
+     "q": "Quali sono stati tre piccoli momenti della tua giornata?",
+     "c": "Racconta a qualcuno un piccolo momento della tua giornata."
+    },
+    "pt": {
+     "t": "Bem-vindo: como foi o teu dia?",
+     "g": "Partilha três pequenos momentos de hoje e repara como é sentir-se ouvido.",
+     "p": [
+      "Os pequenos momentos contam: um café, uma conversa, um passeio.",
+      "Sentir-se ouvido sabe bem; repara nessa sensação hoje.",
+      "Não precisas de grandes novidades; os dias normais chegam."
+     ],
+     "q": "Quais foram três pequenos momentos do teu dia?",
+     "c": "Conta a alguém um pequeno momento do teu dia."
+    },
+    "pt_BR": {
+     "t": "Boas-vindas: como foi o seu dia?",
+     "g": "Compartilhe três pequenos momentos de hoje e perceba como é ser ouvido.",
+     "p": [
+      "Pequenos momentos contam: um café, uma conversa, uma caminhada.",
+      "Ser ouvido faz bem; perceba essa sensação hoje.",
+      "Você não precisa de grandes novidades; dias comuns bastam."
+     ],
+     "q": "Quais foram três pequenos momentos do seu dia?",
+     "c": "Conte a alguém um pequeno momento do seu dia."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The power of being heard",
+     "g": "Understand why feeling listened to matters and what good listeners do differently.",
+     "p": [
+      "When someone listens fully, we feel valued and understood.",
+      "Good listeners focus on the speaker, not on their next reply.",
+      "Listening is a skill, and anyone can practise it a little each day."
+     ],
+     "q": "Think of a time someone really listened to you. What did they do?",
+     "c": "Notice one thing a good listener does and try it in a chat today."
+    },
+    "de": {
+     "t": "Die Kraft des Gehörtwerdens",
+     "g": "Verstehe, warum Zuhören wichtig ist und was gute Zuhörer anders machen.",
+     "p": [
+      "Wer uns ganz zuhört, gibt uns das Gefühl, wertvoll und verstanden zu sein.",
+      "Gute Zuhörer achten auf den Sprecher, nicht auf ihre nächste Antwort.",
+      "Zuhören ist eine Fähigkeit, die jeder täglich ein bisschen üben kann."
+     ],
+     "q": "Denk an einen Moment, in dem dir jemand wirklich zugehört hat. Was tat er?",
+     "c": "Beobachte, was gute Zuhörer tun, und probiere es heute in einem Gespräch."
+    },
+    "es": {
+     "t": "El poder de ser escuchado",
+     "g": "Entiende por qué importa sentirse escuchado y qué hacen distinto los buenos oyentes.",
+     "p": [
+      "Cuando alguien escucha de verdad, nos sentimos valorados y comprendidos.",
+      "Quien escucha bien se centra en quien habla, no en su próxima respuesta.",
+      "Escuchar es una habilidad y todos podemos practicarla un poco cada día."
+     ],
+     "q": "Piensa en alguien que te escuchó de verdad. ¿Qué hizo?",
+     "c": "Fíjate en algo que hacen los buenos oyentes y pruébalo hoy en una charla."
+    },
+    "fr": {
+     "t": "Le pouvoir d'être entendu",
+     "g": "Comprends pourquoi se sentir écouté compte et ce que font les bons auditeurs.",
+     "p": [
+      "Quand quelqu'un écoute vraiment, on se sent valorisé et compris.",
+      "Un bon auditeur se concentre sur celui qui parle, pas sur sa réponse.",
+      "Écouter est une compétence que chacun peut cultiver un peu chaque jour."
+     ],
+     "q": "Pense à un moment où quelqu'un t'a vraiment écouté. Que faisait-il ?",
+     "c": "Repère un geste de bon auditeur et essaie-le aujourd'hui dans une discussion."
+    },
+    "it": {
+     "t": "Il potere di essere ascoltati",
+     "g": "Capisci perché sentirsi ascoltati conta e cosa fanno di diverso i buoni ascoltatori.",
+     "p": [
+      "Quando qualcuno ascolta davvero, ci sentiamo apprezzati e capiti.",
+      "Chi ascolta bene si concentra su chi parla, non sulla propria risposta.",
+      "Ascoltare è un'abilità e tutti possiamo allenarla un po' ogni giorno."
+     ],
+     "q": "Pensa a una volta in cui qualcuno ti ha ascoltato davvero. Cosa faceva?",
+     "c": "Nota una cosa che fa un buon ascoltatore e provala oggi in una chiacchierata."
+    },
+    "pt": {
+     "t": "O poder de ser ouvido",
+     "g": "Percebe porque é importante sentir-se ouvido e o que fazem de diferente os bons ouvintes.",
+     "p": [
+      "Quando alguém ouve de verdade, sentimo-nos valorizados e compreendidos.",
+      "Quem ouve bem foca-se em quem fala, não na sua próxima resposta.",
+      "Ouvir é uma competência e todos a podemos treinar um pouco por dia."
+     ],
+     "q": "Pensa numa vez em que alguém te ouviu mesmo. O que fez essa pessoa?",
+     "c": "Repara numa coisa que os bons ouvintes fazem e experimenta-a hoje."
+    },
+    "pt_BR": {
+     "t": "O poder de ser ouvido",
+     "g": "Entenda por que sentir-se ouvido importa e o que os bons ouvintes fazem diferente.",
+     "p": [
+      "Quando alguém ouve de verdade, nos sentimos valorizados e compreendidos.",
+      "Quem ouve bem foca em quem fala, não na própria resposta.",
+      "Ouvir é uma habilidade e todo mundo pode praticar um pouco por dia."
+     ],
+     "q": "Pense em uma vez em que alguém ouviu você de verdade. O que essa pessoa fez?",
+     "c": "Perceba algo que os bons ouvintes fazem e experimente hoje numa conversa."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your day in three words",
+     "g": "Sum up your day in three words, then tell the story behind each one.",
+     "p": [
+      "Three words give a quick, honest snapshot of a day.",
+      "The story behind a word is where the real sharing begins.",
+      "Listeners can pick one word and ask about it."
+     ],
+     "q": "Which three words describe your day, and why?",
+     "c": "Ask a friend for their three words and then ask about one of them."
+    },
+    "de": {
+     "t": "Dein Tag in drei Worten",
+     "g": "Fasse deinen Tag in drei Worten zusammen und erzähle die Geschichte dahinter.",
+     "p": [
+      "Drei Worte geben einen kurzen, ehrlichen Schnappschuss des Tages.",
+      "In der Geschichte hinter einem Wort beginnt das echte Erzählen.",
+      "Zuhörer können sich ein Wort aussuchen und dazu nachfragen."
+     ],
+     "q": "Welche drei Worte beschreiben deinen Tag, und warum?",
+     "c": "Frag einen Freund nach seinen drei Worten und dann nach einem davon."
+    },
+    "es": {
+     "t": "Tu día en tres palabras",
+     "g": "Resume tu día en tres palabras y cuenta la historia detrás de cada una.",
+     "p": [
+      "Tres palabras dan una foto rápida y sincera del día.",
+      "La historia detrás de una palabra es donde empieza el compartir.",
+      "Quien escucha puede elegir una palabra y preguntar por ella."
+     ],
+     "q": "¿Qué tres palabras describen tu día y por qué?",
+     "c": "Pide a un amigo sus tres palabras y pregunta por una de ellas."
+    },
+    "fr": {
+     "t": "Ta journée en trois mots",
+     "g": "Résume ta journée en trois mots, puis raconte l'histoire derrière chacun.",
+     "p": [
+      "Trois mots donnent un instantané rapide et sincère de la journée.",
+      "L'histoire derrière un mot, c'est là que le partage commence.",
+      "Celui qui écoute peut choisir un mot et poser une question dessus."
+     ],
+     "q": "Quels trois mots décrivent ta journée, et pourquoi ?",
+     "c": "Demande à un ami ses trois mots, puis interroge-le sur l'un d'eux."
+    },
+    "it": {
+     "t": "La tua giornata in tre parole",
+     "g": "Riassumi la giornata in tre parole, poi racconta la storia dietro ognuna.",
+     "p": [
+      "Tre parole offrono un'istantanea rapida e sincera della giornata.",
+      "La storia dietro una parola è dove inizia il vero racconto.",
+      "Chi ascolta può scegliere una parola e chiedere di più."
+     ],
+     "q": "Quali tre parole descrivono la tua giornata, e perché?",
+     "c": "Chiedi a un amico le sue tre parole, poi chiedi di una di esse."
+    },
+    "pt": {
+     "t": "O teu dia em três palavras",
+     "g": "Resume o teu dia em três palavras e conta a história por trás de cada uma.",
+     "p": [
+      "Três palavras dão uma fotografia rápida e sincera do dia.",
+      "A história por trás de uma palavra é onde começa a partilha.",
+      "Quem ouve pode escolher uma palavra e perguntar sobre ela."
+     ],
+     "q": "Que três palavras descrevem o teu dia, e porquê?",
+     "c": "Pede a um amigo as três palavras dele e pergunta por uma delas."
+    },
+    "pt_BR": {
+     "t": "Seu dia em três palavras",
+     "g": "Resuma seu dia em três palavras e conte a história por trás de cada uma.",
+     "p": [
+      "Três palavras dão uma foto rápida e sincera do dia.",
+      "A história por trás de uma palavra é onde começa o compartilhar.",
+      "Quem ouve pode escolher uma palavra e perguntar sobre ela."
+     ],
+     "q": "Quais três palavras descrevem o seu dia, e por quê?",
+     "c": "Peça a um amigo as três palavras dele e pergunte sobre uma delas."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Noticing small good things",
+     "g": "Spot tiny pleasant moments, like a warm drink or a kind smile, and share them.",
+     "p": [
+      "Small good things are easy to miss when we rush.",
+      "Saying them aloud makes them last longer.",
+      "Sharing good things also invites others to share theirs."
+     ],
+     "q": "What small good thing did you notice today?",
+     "c": "Notice three small good things today and tell someone about one."
+    },
+    "de": {
+     "t": "Kleine schöne Dinge bemerken",
+     "g": "Entdecke winzige schöne Momente, wie ein warmes Getränk oder ein freundliches Lächeln, und teile sie.",
+     "p": [
+      "Kleine schöne Dinge übersieht man leicht, wenn man hetzt.",
+      "Wer sie ausspricht, behält sie länger.",
+      "Wer Schönes teilt, lädt andere ein, ihres zu teilen."
+     ],
+     "q": "Welches kleine schöne Ding hast du heute bemerkt?",
+     "c": "Bemerke heute drei schöne Kleinigkeiten und erzähle jemandem von einer."
+    },
+    "es": {
+     "t": "Notar las pequeñas cosas buenas",
+     "g": "Detecta pequeños momentos agradables, como una bebida caliente o una sonrisa amable, y compártelos.",
+     "p": [
+      "Las cosas buenas pequeñas se pierden fácilmente con las prisas.",
+      "Decirlas en voz alta hace que duren más.",
+      "Compartir lo bueno invita a otros a compartir lo suyo."
+     ],
+     "q": "¿Qué pequeña cosa buena notaste hoy?",
+     "c": "Fíjate en tres cosas buenas pequeñas hoy y cuéntale una a alguien."
+    },
+    "fr": {
+     "t": "Remarquer les petites bonnes choses",
+     "g": "Repère de petits moments agréables, comme une boisson chaude ou un sourire, et partage-les.",
+     "p": [
+      "Les petites bonnes choses passent inaperçues quand on se presse.",
+      "Les dire à voix haute les fait durer plus longtemps.",
+      "Partager le positif invite les autres à partager aussi."
+     ],
+     "q": "Quelle petite bonne chose as-tu remarquée aujourd'hui ?",
+     "c": "Remarque trois petites bonnes choses aujourd'hui et parle d'une à quelqu'un."
+    },
+    "it": {
+     "t": "Notare le piccole cose belle",
+     "g": "Individua piccoli momenti piacevoli, come una bevanda calda o un sorriso gentile, e condividili.",
+     "p": [
+      "Le piccole cose belle si perdono facilmente quando si ha fretta.",
+      "Dirle ad alta voce le fa durare di più.",
+      "Condividere il bello invita anche gli altri a farlo."
+     ],
+     "q": "Quale piccola cosa bella hai notato oggi?",
+     "c": "Nota tre piccole cose belle oggi e raccontane una a qualcuno."
+    },
+    "pt": {
+     "t": "Reparar nas pequenas coisas boas",
+     "g": "Descobre pequenos momentos agradáveis, como uma bebida quente ou um sorriso simpático, e partilha-os.",
+     "p": [
+      "As pequenas coisas boas passam despercebidas quando temos pressa.",
+      "Dizê-las em voz alta faz com que durem mais.",
+      "Partilhar o que é bom convida os outros a partilharem o seu."
+     ],
+     "q": "Que pequena coisa boa reparaste hoje?",
+     "c": "Repara em três pequenas coisas boas hoje e conta uma a alguém."
+    },
+    "pt_BR": {
+     "t": "Notar as pequenas coisas boas",
+     "g": "Perceba pequenos momentos agradáveis, como uma bebida quente ou um sorriso gentil, e compartilhe.",
+     "p": [
+      "As pequenas coisas boas passam batido quando estamos com pressa.",
+      "Dizê-las em voz alta faz com que durem mais.",
+      "Compartilhar o que é bom convida os outros a compartilharem também."
+     ],
+     "q": "Que pequena coisa boa você notou hoje?",
+     "c": "Note três pequenas coisas boas hoje e conte uma a alguém."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Open versus closed questions",
+     "g": "Learn how questions starting with what, how and tell me invite longer answers.",
+     "p": [
+      "Closed questions get yes or no; open questions get stories.",
+      "Try starting with what, how or tell me about.",
+      "Open questions show you really want to know more."
+     ],
+     "q": "How would you turn 'Did you like the trip?' into an open question?",
+     "c": "Ask one open question today instead of a yes-or-no question."
+    },
+    "de": {
+     "t": "Offene und geschlossene Fragen",
+     "g": "Lerne, wie Fragen mit was, wie und erzähl mir längere Antworten einladen.",
+     "p": [
+      "Geschlossene Fragen bringen Ja oder Nein; offene bringen Geschichten.",
+      "Beginne mit was, wie oder erzähl mir von.",
+      "Offene Fragen zeigen, dass du wirklich mehr wissen willst."
+     ],
+     "q": "Wie machst du aus 'Hat dir die Reise gefallen?' eine offene Frage?",
+     "c": "Stelle heute eine offene Frage statt einer Ja-Nein-Frage."
+    },
+    "es": {
+     "t": "Preguntas abiertas y cerradas",
+     "g": "Aprende cómo las preguntas con qué, cómo y cuéntame invitan a respuestas más largas.",
+     "p": [
+      "Las preguntas cerradas dan un sí o no; las abiertas dan historias.",
+      "Empieza con qué, cómo o cuéntame sobre.",
+      "Las preguntas abiertas muestran que de verdad quieres saber más."
+     ],
+     "q": "¿Cómo convertirías '¿Te gustó el viaje?' en una pregunta abierta?",
+     "c": "Haz hoy una pregunta abierta en lugar de una de sí o no."
+    },
+    "fr": {
+     "t": "Questions ouvertes et fermées",
+     "g": "Apprends comment les questions avec quoi, comment et raconte-moi appellent des réponses plus longues.",
+     "p": [
+      "Les questions fermées donnent oui ou non ; les ouvertes donnent des histoires.",
+      "Commence par quoi, comment ou raconte-moi.",
+      "Les questions ouvertes montrent que tu veux vraiment en savoir plus."
+     ],
+     "q": "Comment transformerais-tu 'Tu as aimé le voyage ?' en question ouverte ?",
+     "c": "Pose aujourd'hui une question ouverte plutôt qu'une question oui ou non."
+    },
+    "it": {
+     "t": "Domande aperte e chiuse",
+     "g": "Scopri come le domande con cosa, come e raccontami invitano a risposte più lunghe.",
+     "p": [
+      "Le domande chiuse danno sì o no; quelle aperte danno storie.",
+      "Prova a iniziare con cosa, come o raccontami di.",
+      "Le domande aperte mostrano che vuoi davvero saperne di più."
+     ],
+     "q": "Come trasformeresti 'Ti è piaciuto il viaggio?' in una domanda aperta?",
+     "c": "Fai oggi una domanda aperta invece di una da sì o no."
+    },
+    "pt": {
+     "t": "Perguntas abertas e fechadas",
+     "g": "Aprende como perguntas com o quê, como e conta-me convidam a respostas mais longas.",
+     "p": [
+      "As perguntas fechadas dão sim ou não; as abertas dão histórias.",
+      "Começa com o quê, como ou conta-me sobre.",
+      "As perguntas abertas mostram que queres mesmo saber mais."
+     ],
+     "q": "Como transformarias 'Gostaste da viagem?' numa pergunta aberta?",
+     "c": "Faz hoje uma pergunta aberta em vez de uma de sim ou não."
+    },
+    "pt_BR": {
+     "t": "Perguntas abertas e fechadas",
+     "g": "Aprenda como perguntas com o quê, como e me conte convidam a respostas mais longas.",
+     "p": [
+      "Perguntas fechadas rendem sim ou não; as abertas rendem histórias.",
+      "Comece com o quê, como ou me conte sobre.",
+      "Perguntas abertas mostram que você quer mesmo saber mais."
+     ],
+     "q": "Como você transformaria 'Gostou da viagem?' em uma pergunta aberta?",
+     "c": "Faça hoje uma pergunta aberta em vez de uma de sim ou não."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Putting the phone down",
+     "g": "Give full attention in a conversation by removing small distractions.",
+     "p": [
+      "A phone on the table quietly says that something else may matter more.",
+      "Turning it face down or away shows you are present.",
+      "Even a short chat feels richer without interruptions."
+     ],
+     "q": "What usually pulls your attention away when you talk with someone?",
+     "c": "Put your phone away during one conversation today."
+    },
+    "de": {
+     "t": "Das Handy weglegen",
+     "g": "Schenke deine volle Aufmerksamkeit, indem du kleine Ablenkungen entfernst.",
+     "p": [
+      "Ein Handy auf dem Tisch sagt leise, dass etwas anderes wichtiger sein könnte.",
+      "Es umzudrehen oder wegzulegen zeigt, dass du da bist.",
+      "Auch ein kurzes Gespräch wird ohne Unterbrechungen reicher."
+     ],
+     "q": "Was lenkt dich im Gespräch meistens ab?",
+     "c": "Lege dein Handy heute in einem Gespräch weg."
+    },
+    "es": {
+     "t": "Dejar el móvil",
+     "g": "Da toda tu atención en una conversación quitando pequeñas distracciones.",
+     "p": [
+      "Un móvil sobre la mesa dice en silencio que algo más puede importar más.",
+      "Girarlo o guardarlo muestra que estás presente.",
+      "Hasta una charla corta es más rica sin interrupciones."
+     ],
+     "q": "¿Qué suele distraer tu atención cuando hablas con alguien?",
+     "c": "Guarda el móvil durante una conversación hoy."
+    },
+    "fr": {
+     "t": "Poser son téléphone",
+     "g": "Offre ton attention entière en retirant les petites distractions.",
+     "p": [
+      "Un téléphone sur la table dit tout bas que autre chose compte peut-être plus.",
+      "Le retourner ou le ranger montre que tu es présent.",
+      "Même une courte discussion est plus riche sans interruptions."
+     ],
+     "q": "Qu'est-ce qui détourne le plus ton attention quand tu parles à quelqu'un ?",
+     "c": "Range ton téléphone pendant une conversation aujourd'hui."
+    },
+    "it": {
+     "t": "Mettere via il telefono",
+     "g": "Dai piena attenzione in una conversazione eliminando le piccole distrazioni.",
+     "p": [
+      "Un telefono sul tavolo dice piano che qualcos'altro può contare di più.",
+      "Girarlo o metterlo via mostra che ci sei.",
+      "Anche una breve chiacchierata è più ricca senza interruzioni."
+     ],
+     "q": "Cosa distrae di solito la tua attenzione quando parli con qualcuno?",
+     "c": "Metti via il telefono durante una conversazione oggi."
+    },
+    "pt": {
+     "t": "Pousar o telemóvel",
+     "g": "Dá toda a atenção numa conversa, tirando as pequenas distrações.",
+     "p": [
+      "Um telemóvel na mesa diz baixinho que outra coisa pode importar mais.",
+      "Virá-lo ou guardá-lo mostra que estás presente.",
+      "Até uma conversa curta fica mais rica sem interrupções."
+     ],
+     "q": "O que costuma desviar a tua atenção quando falas com alguém?",
+     "c": "Guarda o telemóvel durante uma conversa hoje."
+    },
+    "pt_BR": {
+     "t": "Guardar o celular",
+     "g": "Dê toda a atenção numa conversa tirando as pequenas distrações.",
+     "p": [
+      "Um celular na mesa diz baixinho que outra coisa pode importar mais.",
+      "Virá-lo ou guardá-lo mostra que você está presente.",
+      "Até uma conversa curta fica mais rica sem interrupções."
+     ],
+     "q": "O que costuma desviar a sua atenção quando você fala com alguém?",
+     "c": "Guarde o celular durante uma conversa hoje."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Weekly reflections",
+     "g": "Look back at the week: one highlight, one surprise, one thing learned.",
+     "p": [
+      "A weekly look back helps you notice what mattered.",
+      "Highlight, surprise and lesson are three easy prompts.",
+      "Sharing a reflection invites the listener into your week."
+     ],
+     "q": "What was your highlight, surprise and lesson this week?",
+     "c": "Share your week's highlight with one person today."
+    },
+    "de": {
+     "t": "Wochenrückblick",
+     "g": "Blicke auf die Woche zurück: ein Highlight, eine Überraschung, eine Erkenntnis.",
+     "p": [
+      "Ein Wochenrückblick zeigt, was wichtig war.",
+      "Highlight, Überraschung und Lernerfahrung sind drei einfache Impulse.",
+      "Wer einen Rückblick teilt, lässt den Zuhörer an der Woche teilhaben."
+     ],
+     "q": "Was war dein Highlight, deine Überraschung und deine Lektion der Woche?",
+     "c": "Erzähle heute einer Person von deinem Wochen-Highlight."
+    },
+    "es": {
+     "t": "Reflexiones semanales",
+     "g": "Repasa la semana: un momento estrella, una sorpresa y algo aprendido.",
+     "p": [
+      "Mirar atrás cada semana ayuda a notar lo que importó.",
+      "Momento estrella, sorpresa y aprendizaje son tres pistas sencillas.",
+      "Compartir una reflexión invita a quien escucha a entrar en tu semana."
+     ],
+     "q": "¿Cuál fue tu momento estrella, tu sorpresa y tu aprendizaje esta semana?",
+     "c": "Comparte hoy con alguien el mejor momento de tu semana."
+    },
+    "fr": {
+     "t": "Bilan de la semaine",
+     "g": "Regarde la semaine : un temps fort, une surprise, une chose apprise.",
+     "p": [
+      "Un bilan hebdomadaire aide à voir ce qui a compté.",
+      "Temps fort, surprise et leçon sont trois pistes simples.",
+      "Partager un bilan invite l'auditeur dans ta semaine."
+     ],
+     "q": "Quel a été ton temps fort, ta surprise et ta leçon cette semaine ?",
+     "c": "Partage aujourd'hui le temps fort de ta semaine avec quelqu'un."
+    },
+    "it": {
+     "t": "Riflessioni settimanali",
+     "g": "Ripercorri la settimana: un momento top, una sorpresa, una cosa imparata.",
+     "p": [
+      "Guardare indietro ogni settimana aiuta a notare ciò che è contato.",
+      "Momento top, sorpresa e lezione sono tre spunti semplici.",
+      "Condividere una riflessione invita chi ascolta nella tua settimana."
+     ],
+     "q": "Qual è stato il tuo momento top, la sorpresa e la lezione della settimana?",
+     "c": "Condividi oggi con qualcuno il momento migliore della tua settimana."
+    },
+    "pt": {
+     "t": "Reflexões semanais",
+     "g": "Revê a semana: um ponto alto, uma surpresa, uma coisa aprendida.",
+     "p": [
+      "Olhar para trás todas as semanas ajuda a notar o que importou.",
+      "Ponto alto, surpresa e lição são três pistas simples.",
+      "Partilhar uma reflexão convida quem ouve a entrar na tua semana."
+     ],
+     "q": "Qual foi o teu ponto alto, a tua surpresa e a tua lição desta semana?",
+     "c": "Partilha hoje o ponto alto da tua semana com alguém."
+    },
+    "pt_BR": {
+     "t": "Reflexões semanais",
+     "g": "Revise a semana: um destaque, uma surpresa, uma coisa aprendida.",
+     "p": [
+      "Olhar para trás toda semana ajuda a notar o que importou.",
+      "Destaque, surpresa e lição são três pistas simples.",
+      "Compartilhar uma reflexão convida quem ouve a entrar na sua semana."
+     ],
+     "q": "Qual foi o seu destaque, sua surpresa e sua lição desta semana?",
+     "c": "Compartilhe hoje o destaque da sua semana com alguém."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Eye contact and warm presence",
+     "g": "Use simple body language that shows you are present and interested.",
+     "p": [
+      "Gentle eye contact tells the speaker you are with them.",
+      "A relaxed face and a soft smile make talking easier.",
+      "Comfort varies by person and culture, so look away now and then."
+     ],
+     "q": "How does it feel when someone looks at you while you talk?",
+     "c": "Practise warm, relaxed eye contact in one chat today."
+    },
+    "de": {
+     "t": "Blickkontakt und warme Präsenz",
+     "g": "Nutze einfache Körpersprache, die zeigt, dass du da und interessiert bist.",
+     "p": [
+      "Sanfter Blickkontakt sagt dem Sprecher: Ich bin bei dir.",
+      "Ein entspanntes Gesicht und ein leichtes Lächeln machen das Reden leichter.",
+      "Was angenehm ist, hängt von Person und Kultur ab; schau auch mal weg."
+     ],
+     "q": "Wie fühlt es sich an, wenn dich jemand beim Reden ansieht?",
+     "c": "Übe heute in einem Gespräch warmen, entspannten Blickkontakt."
+    },
+    "es": {
+     "t": "Contacto visual y presencia cálida",
+     "g": "Usa un lenguaje corporal sencillo que muestre que estás presente e interesado.",
+     "p": [
+      "Un contacto visual suave le dice a quien habla que estás con él.",
+      "Una cara relajada y una sonrisa suave facilitan hablar.",
+      "La comodidad varía según persona y cultura; aparta la mirada de vez en cuando."
+     ],
+     "q": "¿Cómo se siente cuando alguien te mira mientras hablas?",
+     "c": "Practica un contacto visual cálido y relajado en una charla hoy."
+    },
+    "fr": {
+     "t": "Contact visuel et présence chaleureuse",
+     "g": "Utilise un langage corporel simple qui montre que tu es présent et intéressé.",
+     "p": [
+      "Un regard doux dit à celui qui parle que tu es avec lui.",
+      "Un visage détendu et un sourire léger facilitent la parole.",
+      "Le confort varie selon la personne et la culture ; détourne parfois le regard."
+     ],
+     "q": "Que ressens-tu quand quelqu'un te regarde pendant que tu parles ?",
+     "c": "Pratique un contact visuel chaleureux et détendu dans une discussion aujourd'hui."
+    },
+    "it": {
+     "t": "Contatto visivo e presenza calorosa",
+     "g": "Usa un linguaggio del corpo semplice che mostri che ci sei e sei interessato.",
+     "p": [
+      "Uno sguardo gentile dice a chi parla che sei con lui.",
+      "Un viso rilassato e un sorriso lieve rendono più facile parlare.",
+      "Il comfort varia per persona e cultura; distogli lo sguardo ogni tanto."
+     ],
+     "q": "Come ti senti quando qualcuno ti guarda mentre parli?",
+     "c": "Esercita un contatto visivo caldo e rilassato in una chiacchierata oggi."
+    },
+    "pt": {
+     "t": "Contacto visual e presença calorosa",
+     "g": "Usa uma linguagem corporal simples que mostre que estás presente e interessado.",
+     "p": [
+      "Um olhar suave diz a quem fala que estás com essa pessoa.",
+      "Um rosto descontraído e um sorriso leve tornam o falar mais fácil.",
+      "O conforto varia com a pessoa e a cultura; desvia o olhar de vez em quando."
+     ],
+     "q": "Como te sentes quando alguém te olha enquanto falas?",
+     "c": "Pratica um contacto visual caloroso e descontraído numa conversa hoje."
+    },
+    "pt_BR": {
+     "t": "Contato visual e presença calorosa",
+     "g": "Use uma linguagem corporal simples que mostre que você está presente e interessado.",
+     "p": [
+      "Um olhar suave diz a quem fala que você está com essa pessoa.",
+      "Um rosto relaxado e um sorriso leve facilitam o falar.",
+      "O conforto varia com a pessoa e a cultura; desvie o olhar de vez em quando."
+     ],
+     "q": "Como você se sente quando alguém olha para você enquanto fala?",
+     "c": "Pratique um contato visual caloroso e relaxado numa conversa hoje."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Morning routines we love",
+     "g": "Talk about how you start your day and what makes mornings easier.",
+     "p": [
+      "Mornings are a friendly topic everyone can relate to.",
+      "Small rituals, like a stretch or a song, can set the tone.",
+      "Asking about routines reveals what people value."
+     ],
+     "q": "What is your favourite part of your morning?",
+     "c": "Ask someone about their morning routine and listen for one detail."
+    },
+    "de": {
+     "t": "Morgenroutinen, die wir lieben",
+     "g": "Sprich darüber, wie du in den Tag startest und was Morgen leichter macht.",
+     "p": [
+      "Morgen sind ein freundliches Thema, das jeder kennt.",
+      "Kleine Rituale, wie Dehnen oder ein Lied, geben den Ton an.",
+      "Fragen zu Routinen zeigen, was Menschen wichtig ist."
+     ],
+     "q": "Was ist dein liebster Teil des Morgens?",
+     "c": "Frag jemanden nach seiner Morgenroutine und achte auf ein Detail."
+    },
+    "es": {
+     "t": "Rutinas matutinas que nos gustan",
+     "g": "Habla de cómo empiezas el día y qué hace las mañanas más fáciles.",
+     "p": [
+      "Las mañanas son un tema amable con el que todos se identifican.",
+      "Pequeños rituales, como estirarse o una canción, marcan el tono.",
+      "Preguntar por rutinas revela lo que la gente valora."
+     ],
+     "q": "¿Cuál es tu parte favorita de la mañana?",
+     "c": "Pregunta a alguien por su rutina matutina y escucha un detalle."
+    },
+    "fr": {
+     "t": "Les routines du matin qu'on aime",
+     "g": "Parle de ta façon de commencer la journée et de ce qui facilite les matins.",
+     "p": [
+      "Les matins sont un sujet simple dans lequel chacun se retrouve.",
+      "De petits rituels, comme s'étirer ou une chanson, donnent le ton.",
+      "Demander les routines révèle ce qui compte pour les gens."
+     ],
+     "q": "Quel est ton moment préféré du matin ?",
+     "c": "Demande à quelqu'un sa routine du matin et retiens un détail."
+    },
+    "it": {
+     "t": "Routine mattutine che amiamo",
+     "g": "Parla di come inizi la giornata e di cosa rende le mattine più facili.",
+     "p": [
+      "Le mattine sono un tema amichevole in cui tutti si riconoscono.",
+      "Piccoli rituali, come stiracchiarsi o una canzone, danno il tono.",
+      "Chiedere delle routine rivela ciò che le persone apprezzano."
+     ],
+     "q": "Qual è la tua parte preferita della mattina?",
+     "c": "Chiedi a qualcuno la sua routine mattutina e ascolta un dettaglio."
+    },
+    "pt": {
+     "t": "Rotinas matinais de que gostamos",
+     "g": "Fala de como começas o dia e do que torna as manhãs mais fáceis.",
+     "p": [
+      "As manhãs são um tema simpático com que todos se identificam.",
+      "Pequenos rituais, como espreguiçar-se ou uma canção, definem o tom.",
+      "Perguntar por rotinas revela o que as pessoas valorizam."
+     ],
+     "q": "Qual é a tua parte preferida da manhã?",
+     "c": "Pergunta a alguém pela rotina matinal e fica atento a um detalhe."
+    },
+    "pt_BR": {
+     "t": "Rotinas matinais que amamos",
+     "g": "Fale sobre como você começa o dia e o que deixa as manhãs mais fáceis.",
+     "p": [
+      "As manhãs são um assunto simpático com que todo mundo se identifica.",
+      "Pequenos rituais, como se espreguiçar ou uma música, dão o tom.",
+      "Perguntar sobre rotinas revela o que as pessoas valorizam."
+     ],
+     "q": "Qual é a sua parte favorita da manhã?",
+     "c": "Pergunte a alguém sobre a rotina matinal e fique atento a um detalhe."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reflecting back in your own words",
+     "g": "Repeat the heart of what someone said to show you understood.",
+     "p": [
+      "Paraphrasing shows you were really listening.",
+      "Use phrases like 'So it sounds like...' to start.",
+      "If you got it wrong, the speaker can gently correct you."
+     ],
+     "q": "How would you reflect back: 'I had a rushed morning and missed my bus'?",
+     "c": "Reflect back what someone says once today, in your own words."
+    },
+    "de": {
+     "t": "Mit eigenen Worten spiegeln",
+     "g": "Wiederhole den Kern des Gesagten, um zu zeigen, dass du verstanden hast.",
+     "p": [
+      "Umschreiben zeigt, dass du wirklich zugehört hast.",
+      "Beginne mit Sätzen wie 'Das klingt, als ob...'.",
+      "Lagst du falsch, kann der Sprecher dich freundlich korrigieren."
+     ],
+     "q": "Wie würdest du spiegeln: 'Mein Morgen war hektisch, ich habe den Bus verpasst'?",
+     "c": "Spiegle heute einmal mit eigenen Worten, was jemand sagt."
+    },
+    "es": {
+     "t": "Reflejar con tus propias palabras",
+     "g": "Repite lo esencial de lo que alguien dijo para mostrar que lo entendiste.",
+     "p": [
+      "Parafrasear muestra que de verdad escuchabas.",
+      "Empieza con frases como 'Entonces, suena como si...'.",
+      "Si te equivocas, quien habla puede corregirte con suavidad."
+     ],
+     "q": "¿Cómo reflejarías: 'Tuve una mañana de prisa y perdí el autobús'?",
+     "c": "Refleja hoy una vez con tus palabras lo que alguien diga."
+    },
+    "fr": {
+     "t": "Reformuler avec tes mots",
+     "g": "Reprends l'essentiel de ce que quelqu'un a dit pour montrer que tu as compris.",
+     "p": [
+      "Reformuler montre que tu écoutais vraiment.",
+      "Commence par des phrases comme 'Si je comprends bien...'.",
+      "Si tu te trompes, l'autre peut te corriger gentiment."
+     ],
+     "q": "Comment reformulerais-tu : 'Ma matinée était pressée et j'ai raté mon bus' ?",
+     "c": "Reformule une fois aujourd'hui, avec tes mots, ce que dit quelqu'un."
+    },
+    "it": {
+     "t": "Riformulare con parole tue",
+     "g": "Ripeti il cuore di ciò che qualcuno ha detto per mostrare che hai capito.",
+     "p": [
+      "Parafrasare mostra che stavi davvero ascoltando.",
+      "Inizia con frasi come 'Quindi sembra che...'.",
+      "Se sbagli, chi parla può correggerti con gentilezza."
+     ],
+     "q": "Come riformuleresti: 'Ho avuto una mattina di corsa e ho perso l'autobus'?",
+     "c": "Riformula oggi una volta, con parole tue, ciò che dice qualcuno."
+    },
+    "pt": {
+     "t": "Refletir com as tuas palavras",
+     "g": "Repete o essencial do que alguém disse para mostrar que percebeste.",
+     "p": [
+      "Parafrasear mostra que estavas mesmo a ouvir.",
+      "Começa com frases como 'Então parece que...'.",
+      "Se te enganares, quem fala pode corrigir-te com delicadeza."
+     ],
+     "q": "Como refletirias: 'Tive uma manhã apressada e perdi o autocarro'?",
+     "c": "Reflete hoje uma vez, com as tuas palavras, o que alguém disser."
+    },
+    "pt_BR": {
+     "t": "Refletir com as suas palavras",
+     "g": "Repita o essencial do que alguém disse para mostrar que entendeu.",
+     "p": [
+      "Parafrasear mostra que você estava mesmo ouvindo.",
+      "Comece com frases como 'Então parece que...'.",
+      "Se errar, quem fala pode corrigir você com delicadeza."
+     ],
+     "q": "Como você refletiria: 'Tive uma manhã corrida e perdi o ônibus'?",
+     "c": "Reflita hoje uma vez, com suas palavras, o que alguém disser."
+    }
+   }
+  }
+ ]
+}

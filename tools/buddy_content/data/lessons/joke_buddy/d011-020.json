@@ -1,0 +1,835 @@
+{
+ "topic": "joke_buddy",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Smiling at small things",
+     "g": "Find the funny side of ordinary daily moments.",
+     "p": [
+      "Humour hides in tiny things: a sleepy cat, a mismatched sock, a coffee cup that is always empty.",
+      "Noticing funny details trains your eye for jokes.",
+      "Funny moments are easier to share when they are kind and light."
+     ],
+     "q": "What small thing made you smile this week?",
+     "c": "Challenge: write down three small funny moments from today."
+    },
+    "de": {
+     "t": "Über Kleinigkeiten schmunzeln",
+     "g": "Entdecke die komische Seite ganz gewöhnlicher Alltagsmomente.",
+     "p": [
+      "Humor versteckt sich im Kleinen: eine schläfrige Katze, ein einzelner Socken, eine ständig leere Tasse.",
+      "Wer lustige Details bemerkt, schult seinen Blick für Witze.",
+      "Lustige Momente lassen sich leichter teilen, wenn sie freundlich und leicht sind."
+     ],
+     "q": "Welche Kleinigkeit hat dich diese Woche zum Lächeln gebracht?",
+     "c": "Aufgabe: Schreib drei kleine lustige Momente von heute auf."
+    },
+    "es": {
+     "t": "Sonreír con las pequeñas cosas",
+     "g": "Encuentra el lado gracioso de los momentos cotidianos.",
+     "p": [
+      "El humor se esconde en lo pequeño: un gato dormilón, un calcetín desparejado, una taza siempre vacía.",
+      "Fijarte en detalles graciosos entrena tu ojo para los chistes.",
+      "Los momentos graciosos se comparten mejor cuando son amables y ligeros."
+     ],
+     "q": "¿Qué pequeña cosa te hizo sonreír esta semana?",
+     "c": "Reto: anota tres pequeños momentos graciosos de hoy."
+    },
+    "fr": {
+     "t": "Sourire des petites choses",
+     "g": "Trouve le côté drôle des moments ordinaires du quotidien.",
+     "p": [
+      "L'humour se cache dans les détails : un chat endormi, une chaussette dépareillée, une tasse toujours vide.",
+      "Remarquer les détails drôles entraîne ton œil à repérer les blagues.",
+      "Les moments drôles se partagent mieux quand ils sont doux et légers."
+     ],
+     "q": "Quelle petite chose t'a fait sourire cette semaine ?",
+     "c": "Défi : note trois petits moments drôles de ta journée."
+    },
+    "it": {
+     "t": "Sorridere delle piccole cose",
+     "g": "Trova il lato buffo dei momenti quotidiani più semplici.",
+     "p": [
+      "L'umorismo si nasconde nelle piccole cose: un gatto assonnato, un calzino spaiato, una tazza sempre vuota.",
+      "Notare i dettagli buffi allena l'occhio per le barzellette.",
+      "I momenti buffi si condividono meglio quando sono gentili e leggeri."
+     ],
+     "q": "Quale piccola cosa ti ha fatto sorridere questa settimana?",
+     "c": "Sfida: scrivi tre piccoli momenti buffi di oggi."
+    },
+    "pt": {
+     "t": "Sorrir com as pequenas coisas",
+     "g": "Encontra o lado engraçado dos momentos do dia a dia.",
+     "p": [
+      "O humor esconde-se no que é pequeno: um gato sonolento, uma meia desirmanada, uma chávena sempre vazia.",
+      "Reparar em detalhes engraçados treina o teu olho para as piadas.",
+      "Os momentos engraçados partilham-se melhor quando são simpáticos e leves."
+     ],
+     "q": "Que pequena coisa te fez sorrir esta semana?",
+     "c": "Desafio: anota três pequenos momentos engraçados de hoje."
+    },
+    "pt_BR": {
+     "t": "Sorrir com as pequenas coisas",
+     "g": "Encontre o lado engraçado dos momentos do dia a dia.",
+     "p": [
+      "O humor se esconde no que é pequeno: um gato sonolento, uma meia sem par, uma xícara sempre vazia.",
+      "Reparar em detalhes engraçados treina seu olho para as piadas.",
+      "Momentos engraçados se compartilham melhor quando são gentis e leves."
+     ],
+     "q": "Que coisinha fez você sorrir esta semana?",
+     "c": "Desafio: anote três pequenos momentos engraçados de hoje."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Homophones for laughs",
+     "g": "Play with words that sound the same but mean different things, like flower and flour.",
+     "p": [
+      "Homophones sound alike but have different spellings and meanings, like sea and see.",
+      "Example: I wanted to bake a cake but had no flour, so I bought a flower. It did not rise!",
+      "Say the joke out loud; homophones work best when heard, not read."
+     ],
+     "q": "Can you think of two more words that sound the same?",
+     "c": "Challenge: build a tiny joke around the pair night and knight."
+    },
+    "de": {
+     "t": "Gleichklang für Lacher",
+     "g": "Spiele mit Wörtern, die gleich klingen, aber Verschiedenes bedeuten, wie Meer und mehr.",
+     "p": [
+      "Wörter wie Meer und mehr oder Wal und Wahl klingen gleich, bedeuten aber etwas anderes.",
+      "Beispiel: Was sagt der Fisch, der nicht genug bekommt? Ich will mehr Meer!",
+      "Sprich den Witz laut aus; Gleichklang wirkt beim Hören am besten."
+     ],
+     "q": "Fallen dir zwei weitere Wörter ein, die gleich klingen?",
+     "c": "Aufgabe: Bau einen kleinen Witz um das Paar Wal und Wahl."
+    },
+    "es": {
+     "t": "Palabras que suenan igual",
+     "g": "Juega con palabras que suenan igual pero significan cosas distintas, como hola y ola.",
+     "p": [
+      "Hay palabras que suenan igual y se escriben distinto, como hola y ola o casa y caza.",
+      "Ejemplo: ¿Qué le dijo una ola a otra? ¡Hola!",
+      "Cuenta el chiste en voz alta; estos juegos funcionan mejor al oírlos."
+     ],
+     "q": "¿Se te ocurren otras dos palabras que suenen igual?",
+     "c": "Reto: crea un chiste pequeño con el par casa y caza."
+    },
+    "fr": {
+     "t": "Les homophones qui font rire",
+     "g": "Joue avec des mots qui sonnent pareil mais ont des sens différents, comme mer et mère.",
+     "p": [
+      "Les homophones se prononcent pareil mais s'écrivent et se comprennent autrement : mer, mère, maire.",
+      "Exemple : quelle est la mère la plus salée ? La mer !",
+      "Dis la blague à voix haute ; les homophones marchent mieux à l'oral."
+     ],
+     "q": "Connais-tu deux autres mots qui sonnent pareil ?",
+     "c": "Défi : invente une petite blague avec le duo vert et verre."
+    },
+    "it": {
+     "t": "Parole che suonano uguali",
+     "g": "Gioca con parole che suonano uguali ma significano cose diverse, come ago e lago.",
+     "p": [
+      "In italiano capita con l'ago e il lago, l'una e la luna, l'ora e lora: cambia solo dove ti fermi.",
+      "Esempio: che differenza c'è tra l'ago e il lago? Con uno cuci, nell'altro nuoti!",
+      "Racconta la barzelletta a voce alta: questi giochi funzionano meglio ascoltati."
+     ],
+     "q": "Ti vengono in mente altre due parole che suonano uguali?",
+     "c": "Sfida: inventa una piccola battuta con la coppia l'una e la luna."
+    },
+    "pt": {
+     "t": "Palavras que soam igual",
+     "g": "Brinca com palavras que soam igual mas significam coisas diferentes, como concerto e conserto.",
+     "p": [
+      "Algumas palavras soam parecido mas escrevem-se de forma diferente, como concerto e conserto.",
+      "Exemplo: quando é que um concerto precisa de conserto? Quando desafina!",
+      "Diz a piada em voz alta; estes jogos funcionam melhor ouvidos do que lidos."
+     ],
+     "q": "Lembras-te de mais duas palavras que soem igual?",
+     "c": "Desafio: cria uma pequena piada com o par cem e sem."
+    },
+    "pt_BR": {
+     "t": "Palavras que soam iguais",
+     "g": "Brinque com palavras que soam iguais mas significam coisas diferentes, como sexta e cesta.",
+     "p": [
+      "Algumas palavras soam iguais mas se escrevem diferente, como sexta e cesta ou cela e sela.",
+      "Exemplo: qual é o dia da semana em que se leva a cesta? Sexta!",
+      "Diga a piada em voz alta; essas brincadeiras funcionam melhor ouvidas do que lidas."
+     ],
+     "q": "Você lembra de mais duas palavras que soam iguais?",
+     "c": "Desafio: crie uma pequena piada com o par cela e sela."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The surprise ending",
+     "g": "See why an unexpected twist is the heart of most jokes.",
+     "p": [
+      "Your brain guesses where a sentence goes; the joke takes a different road.",
+      "Example: Why did the scarecrow win an award? He was outstanding in his field!",
+      "The bigger the gap between guess and ending, the bigger the smile."
+     ],
+     "q": "Which joke surprised you most recently?",
+     "c": "Challenge: tell a short joke, but stop right before the last word and let a friend guess."
+    },
+    "de": {
+     "t": "Das überraschende Ende",
+     "g": "Sieh, warum eine unerwartete Wendung das Herz der meisten Witze ist.",
+     "p": [
+      "Dein Gehirn rät, wohin der Satz geht; der Witz nimmt einen anderen Weg.",
+      "Beispiel: Was macht ein Clown im Büro? Faxen!",
+      "Je größer der Abstand zwischen Vermutung und Ende, desto größer das Lächeln."
+     ],
+     "q": "Welcher Witz hat dich zuletzt am meisten überrascht?",
+     "c": "Aufgabe: Erzähl einen kurzen Witz, halte vor dem letzten Wort an und lass raten."
+    },
+    "es": {
+     "t": "El final sorpresa",
+     "g": "Descubre por qué un giro inesperado es el corazón de casi todos los chistes.",
+     "p": [
+      "Tu cerebro adivina hacia dónde va la frase; el chiste toma otro camino.",
+      "Ejemplo: ¿Qué hace una abeja en el gimnasio? ¡Zum-ba!",
+      "Cuanto mayor es la distancia entre lo esperado y el final, mayor es la sonrisa."
+     ],
+     "q": "¿Qué chiste te sorprendió más últimamente?",
+     "c": "Reto: cuenta un chiste corto, para antes de la última palabra y deja que adivinen."
+    },
+    "fr": {
+     "t": "La chute surprise",
+     "g": "Vois pourquoi un revirement inattendu est le cœur de la plupart des blagues.",
+     "p": [
+      "Ton cerveau devine où va la phrase ; la blague prend un autre chemin.",
+      "Exemple : que fait une fraise sur un cheval ? Tagada tagada !",
+      "Plus l'écart entre ce qu'on attend et la fin est grand, plus le sourire est grand."
+     ],
+     "q": "Quelle blague t'a le plus surpris récemment ?",
+     "c": "Défi : raconte une blague courte, arrête-toi avant le dernier mot et laisse deviner."
+    },
+    "it": {
+     "t": "Il finale a sorpresa",
+     "g": "Scopri perché una svolta inattesa è il cuore di quasi tutte le barzellette.",
+     "p": [
+      "Il tuo cervello indovina dove va la frase; la barzelletta prende un'altra strada.",
+      "Esempio: come si chiama un cane mago? Labracadabra!",
+      "Più è grande la distanza tra attesa e finale, più grande è il sorriso."
+     ],
+     "q": "Quale barzelletta ti ha sorpreso di più di recente?",
+     "c": "Sfida: racconta una barzelletta breve, fermati prima dell'ultima parola e fai indovinare."
+    },
+    "pt": {
+     "t": "O final surpresa",
+     "g": "Vê porque é que uma reviravolta inesperada é o coração da maioria das piadas.",
+     "p": [
+      "O teu cérebro adivinha para onde vai a frase; a piada segue outro caminho.",
+      "Exemplo: qual é o cúmulo da rapidez? Apagar a luz e deitar-se antes de ficar escuro!",
+      "Quanto maior a distância entre o esperado e o final, maior o sorriso."
+     ],
+     "q": "Que piada te surpreendeu mais recentemente?",
+     "c": "Desafio: conta uma piada curta, pára antes da última palavra e deixa adivinhar."
+    },
+    "pt_BR": {
+     "t": "O final surpresa",
+     "g": "Veja por que uma virada inesperada é o coração da maioria das piadas.",
+     "p": [
+      "Seu cérebro adivinha para onde vai a frase; a piada segue outro caminho.",
+      "Exemplo: o que o pato disse para a pata? Vem quá!",
+      "Quanto maior a distância entre o esperado e o final, maior o sorriso."
+     ],
+     "q": "Que piada surpreendeu você mais recentemente?",
+     "c": "Desafio: conte uma piada curta, pare antes da última palavra e deixe adivinharem."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dad jokes",
+     "g": "Enjoy the groan-worthy, wholesome jokes people love to hate and love to tell.",
+     "p": [
+      "A dad joke is short, silly and totally harmless, and it earns a groan.",
+      "Example: I'm afraid for the calendar. Its days are numbered!",
+      "The groan is the applause; proud dad-joke tellers smile anyway."
+     ],
+     "q": "What is the groan-iest joke you know?",
+     "c": "Challenge: tell one dad joke today and enjoy the groan."
+    },
+    "de": {
+     "t": "Papa-Witze",
+     "g": "Genieße die wohltuenden Witze zum Stöhnen, die man liebt und trotzdem erzählt.",
+     "p": [
+      "Ein Papa-Witz ist kurz, albern und völlig harmlos und erntet ein Stöhnen.",
+      "Beispiel: Wie nennt man einen Bumerang, der nicht zurückkommt? Stock!",
+      "Das Stöhnen ist der Applaus; stolze Erzähler lächeln trotzdem."
+     ],
+     "q": "Welcher Witz zum Stöhnen fällt dir als Erstes ein?",
+     "c": "Aufgabe: Erzähl heute einen Papa-Witz und genieße das Stöhnen."
+    },
+    "es": {
+     "t": "Chistes de padre",
+     "g": "Disfruta de esos chistes malos y entrañables que hacen suspirar y gustan igual.",
+     "p": [
+      "Un chiste de padre es corto, tonto, totalmente inofensivo y arranca un suspiro.",
+      "Ejemplo: ¿Qué le dice un jaguar a otro? ¡Jaguar yu!",
+      "El suspiro es el aplauso; el que lo cuenta sonríe orgulloso."
+     ],
+     "q": "¿Cuál es el chiste más malo y más bueno que conoces?",
+     "c": "Reto: cuenta hoy un chiste de padre y disfruta del suspiro."
+    },
+    "fr": {
+     "t": "Blagues de papa",
+     "g": "Savoure ces blagues gentilles qui font soupirer, qu'on adore détester et raconter.",
+     "p": [
+      "Une blague de papa est courte, bête, inoffensive et provoque un soupir.",
+      "Exemple : comment appelle-t-on un chien sans pattes ? On ne l'appelle pas, on va le chercher !",
+      "Le soupir est l'applaudissement ; le conteur sourit fièrement."
+     ],
+     "q": "Quelle est la blague la plus nulle et la plus géniale que tu connaisses ?",
+     "c": "Défi : raconte une blague de papa aujourd'hui et savoure le soupir."
+    },
+    "it": {
+     "t": "Barzellette da papà",
+     "g": "Goditi quelle battute innocue che fanno sospirare e che tutti amano raccontare.",
+     "p": [
+      "Una battuta da papà è breve, sciocca, innocua e strappa un sospiro.",
+      "Esempio: cosa dice un muro all'altro? Ci vediamo all'angolo!",
+      "Il sospiro è l'applauso; chi la racconta sorride con orgoglio."
+     ],
+     "q": "Qual è la battuta più sciocca e più bella che conosci?",
+     "c": "Sfida: racconta oggi una battuta da papà e goditi il sospiro."
+    },
+    "pt": {
+     "t": "Piadas de pai",
+     "g": "Diverte-te com as piadas inocentes que fazem suspirar e que toda a gente adora contar.",
+     "p": [
+      "Uma piada de pai é curta, tola, inofensiva e arranca um suspiro.",
+      "Exemplo: o que disse o zero ao oito? Bonito cinto!",
+      "O suspiro é o aplauso; quem a conta sorri com orgulho."
+     ],
+     "q": "Qual é a piada mais tola e mais boa que conheces?",
+     "c": "Desafio: conta hoje uma piada de pai e saboreia o suspiro."
+    },
+    "pt_BR": {
+     "t": "Piadas de tiozão",
+     "g": "Divirta-se com as piadas inocentes que fazem suspirar e que todo mundo ama contar.",
+     "p": [
+      "Uma piada de tiozão é curta, boba, inofensiva e arranca um suspiro.",
+      "Exemplo: o que um tijolo disse para o outro? Há um cimento entre nós!",
+      "O suspiro é o aplauso; quem conta sorri com orgulho."
+     ],
+     "q": "Qual é a piada mais boba e mais boa que você conhece?",
+     "c": "Desafio: conte hoje uma piada de tiozão e curta o suspiro."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tongue twisters",
+     "g": "Try fun phrases that trip up the tongue, like she sells sea shells.",
+     "p": [
+      "A tongue twister repeats similar sounds so your mouth gets mixed up.",
+      "Try it: She sells sea shells by the sea shore.",
+      "Start slowly and speed up; mistakes are half the fun."
+     ],
+     "q": "Which tongue twister do you know, in any language?",
+     "c": "Challenge: say 'She sells sea shells by the sea shore' three times fast."
+    },
+    "de": {
+     "t": "Zungenbrecher",
+     "g": "Probiere lustige Sätze, bei denen die Zunge stolpert, wie Fischers Fritz.",
+     "p": [
+      "Ein Zungenbrecher wiederholt ähnliche Laute, bis der Mund durcheinanderkommt.",
+      "Probier es: Fischers Fritz fischt frische Fische, frische Fische fischt Fischers Fritz.",
+      "Fang langsam an und werde schneller; Versprecher sind der halbe Spaß."
+     ],
+     "q": "Welchen Zungenbrecher kennst du, in irgendeiner Sprache?",
+     "c": "Aufgabe: Sag dreimal schnell: Blaukraut bleibt Blaukraut und Brautkleid bleibt Brautkleid."
+    },
+    "es": {
+     "t": "Trabalenguas",
+     "g": "Prueba frases divertidas que enredan la lengua, como los tres tristes tigres.",
+     "p": [
+      "Un trabalenguas repite sonidos parecidos hasta que la boca se confunde.",
+      "Pruébalo: tres tristes tigres tragaban trigo en un trigal.",
+      "Empieza despacio y acelera; equivocarse es la mitad de la diversión."
+     ],
+     "q": "¿Qué trabalenguas conoces, en cualquier idioma?",
+     "c": "Reto: di tres veces seguidas y rápido: Pablito clavó un clavito."
+    },
+    "fr": {
+     "t": "Les virelangues",
+     "g": "Essaie des phrases amusantes qui font trébucher la langue, comme les chaussettes de l'archiduchesse.",
+     "p": [
+      "Un virelangue répète des sons proches jusqu'à ce que la bouche s'embrouille.",
+      "Essaie : les chaussettes de l'archiduchesse sont-elles sèches, archi-sèches ?",
+      "Commence lentement puis accélère ; les erreurs font la moitié du plaisir."
+     ],
+     "q": "Quel virelangue connais-tu, dans n'importe quelle langue ?",
+     "c": "Défi : dis trois fois vite : un chasseur sachant chasser sait chasser sans son chien."
+    },
+    "it": {
+     "t": "Gli scioglilingua",
+     "g": "Prova frasi divertenti che fanno inciampare la lingua, come trentatré trentini.",
+     "p": [
+      "Uno scioglilingua ripete suoni simili finché la bocca si confonde.",
+      "Prova: trentatré trentini entrarono a Trento tutti e trentatré trotterellando.",
+      "Parti piano e accelera: gli errori sono metà del divertimento."
+     ],
+     "q": "Quale scioglilingua conosci, in qualsiasi lingua?",
+     "c": "Sfida: ripeti tre volte veloce: sopra la panca la capra campa, sotto la panca la capra crepa."
+    },
+    "pt": {
+     "t": "Trava-línguas",
+     "g": "Experimenta frases divertidas que enrolam a língua, como o rato que roeu a roupa do rei.",
+     "p": [
+      "Um trava-línguas repete sons parecidos até a boca se enrolar.",
+      "Experimenta: o rato roeu a roupa do rei de Roma.",
+      "Começa devagar e acelera; errar é metade da diversão."
+     ],
+     "q": "Que trava-línguas conheces, em qualquer língua?",
+     "c": "Desafio: diz três vezes seguidas e depressa: o tempo perguntou ao tempo quanto tempo o tempo tem."
+    },
+    "pt_BR": {
+     "t": "Trava-línguas",
+     "g": "Experimente frases divertidas que enrolam a língua, como a do sabiá que sabia assobiar.",
+     "p": [
+      "Um trava-línguas repete sons parecidos até a boca se enrolar.",
+      "Experimente: o sabiá não sabia que o sábio sabia que o sabiá sabia assobiar.",
+      "Comece devagar e acelere; errar é metade da diversão."
+     ],
+     "q": "Que trava-línguas você conhece, em qualquer língua?",
+     "c": "Desafio: diga três vezes seguidas e rápido: o tempo perguntou ao tempo quanto tempo o tempo tem."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Jokes about the weather",
+     "g": "Share light jokes about rain, snow and sunshine.",
+     "p": [
+      "Weather is a perfect topic: everyone knows it, and nobody is offended.",
+      "Example: What did the cloud wear under his raincoat? Thunderwear!",
+      "Talking about the weather also makes a friendly way to start a chat."
+     ],
+     "q": "What is your favourite kind of weather?",
+     "c": "Challenge: invent a one-line joke about today's weather."
+    },
+    "de": {
+     "t": "Wetterwitze",
+     "g": "Teile leichte Witze über Regen, Schnee und Sonnenschein.",
+     "p": [
+      "Das Wetter ist ein ideales Thema: Alle kennen es und niemand fühlt sich gekränkt.",
+      "Beispiel: Wie nennt man einen Schneemann im Sommer? Eine Pfütze!",
+      "Über das Wetter zu scherzen ist auch ein freundlicher Gesprächsanfang."
+     ],
+     "q": "Welches Wetter magst du am liebsten?",
+     "c": "Aufgabe: Erfinde einen Einzeiler über das heutige Wetter."
+    },
+    "es": {
+     "t": "Chistes del tiempo",
+     "g": "Comparte chistes ligeros sobre la lluvia, la nieve y el sol.",
+     "p": [
+      "El tiempo es un tema perfecto: todos lo conocen y a nadie ofende.",
+      "Ejemplo: ¿Por qué las nubes no van a la escuela? ¡Porque siempre están en las nubes!",
+      "Hablar del tiempo también es una forma amable de empezar una charla."
+     ],
+     "q": "¿Qué tipo de clima te gusta más?",
+     "c": "Reto: inventa un chiste de una línea sobre el tiempo de hoy."
+    },
+    "fr": {
+     "t": "Blagues sur la météo",
+     "g": "Partage des blagues légères sur la pluie, la neige et le soleil.",
+     "p": [
+      "La météo est un sujet parfait : tout le monde la connaît et personne n'est vexé.",
+      "Exemple : pourquoi la pluie est-elle toujours polie ? Parce qu'elle tombe à pic !",
+      "Parler du temps est aussi une façon aimable d'entamer une conversation."
+     ],
+     "q": "Quel temps préfères-tu ?",
+     "c": "Défi : invente une blague d'une ligne sur la météo du jour."
+    },
+    "it": {
+     "t": "Barzellette sul tempo",
+     "g": "Condividi barzellette leggere su pioggia, neve e sole.",
+     "p": [
+      "Il tempo è un argomento perfetto: lo conoscono tutti e non offende nessuno.",
+      "Esempio: cosa dice una goccia di pioggia all'altra? Ci vediamo in pozzanghera!",
+      "Parlare del tempo è anche un modo gentile per iniziare una chiacchierata."
+     ],
+     "q": "Che tempo preferisci?",
+     "c": "Sfida: inventa una battuta di una riga sul tempo di oggi."
+    },
+    "pt": {
+     "t": "Piadas sobre o tempo",
+     "g": "Partilha piadas leves sobre a chuva, a neve e o sol.",
+     "p": [
+      "O tempo é um tema perfeito: toda a gente o conhece e ninguém se ofende.",
+      "Exemplo: porque é que a nuvem foi ao médico? Estava carregada!",
+      "Falar do tempo também é uma forma simpática de começar uma conversa."
+     ],
+     "q": "Que tipo de tempo preferes?",
+     "c": "Desafio: inventa uma piada de uma linha sobre o tempo de hoje."
+    },
+    "pt_BR": {
+     "t": "Piadas sobre o tempo",
+     "g": "Compartilhe piadas leves sobre chuva, neve e sol.",
+     "p": [
+      "O tempo é um assunto perfeito: todo mundo conhece e ninguém se ofende.",
+      "Exemplo: o que o guarda-chuva disse para a chuva? Pode vir, eu te cubro!",
+      "Falar do tempo também é um jeito simpático de começar uma conversa."
+     ],
+     "q": "Que tipo de tempo você prefere?",
+     "c": "Desafio: invente uma piada de uma linha sobre o tempo de hoje."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What am I? riddles",
+     "g": "Guess riddles where an object describes itself and you find the answer.",
+     "p": [
+      "In a What am I riddle, the object speaks in the first person.",
+      "Example: I have keys but no locks, and I have space but no room. What am I? A keyboard!",
+      "Each clue narrows the answer; stay calm and picture the object."
+     ],
+     "q": "What am I: I have pages but I am not a tree. Any guess?",
+     "c": "Challenge: write your own What am I riddle about something in your kitchen."
+    },
+    "de": {
+     "t": "Was bin ich? Rätsel",
+     "g": "Errate Rätsel, in denen ein Gegenstand sich selbst beschreibt.",
+     "p": [
+      "Beim Was-bin-ich-Rätsel spricht der Gegenstand von sich selbst.",
+      "Beispiel: Ich habe viele Seiten, aber nur einen Rücken. Was bin ich? Ein Buch!",
+      "Jeder Hinweis grenzt die Lösung ein; bleib ruhig und stell dir den Gegenstand vor."
+     ],
+     "q": "Was bin ich: Ich habe Tasten, aber öffne keine Türen. Eine Idee?",
+     "c": "Aufgabe: Schreib dein eigenes Was-bin-ich-Rätsel über etwas aus deiner Küche."
+    },
+    "es": {
+     "t": "Adivinanzas de qué soy",
+     "g": "Adivina acertijos en los que un objeto se describe a sí mismo.",
+     "p": [
+      "En una adivinanza de qué soy, el objeto habla en primera persona.",
+      "Ejemplo: tengo hojas y no soy árbol, tengo lomo y no soy animal. ¿Qué soy? ¡Un libro!",
+      "Cada pista reduce la respuesta; mantén la calma e imagina el objeto."
+     ],
+     "q": "¿Qué soy: tengo teclas pero no abro puertas? ¿Alguna idea?",
+     "c": "Reto: escribe tu propia adivinanza de qué soy sobre algo de tu cocina."
+    },
+    "fr": {
+     "t": "Devinettes « Qui suis-je ? »",
+     "g": "Devine des énigmes où un objet se décrit lui-même.",
+     "p": [
+      "Dans une devinette Qui suis-je, l'objet parle à la première personne.",
+      "Exemple : j'ai un lit mais je ne dors jamais, j'ai une bouche mais je ne parle pas. Qui suis-je ? Une rivière !",
+      "Chaque indice réduit les possibilités ; reste calme et imagine l'objet."
+     ],
+     "q": "Qui suis-je : j'ai des pages mais je ne suis pas un arbre. Une idée ?",
+     "c": "Défi : écris ta propre devinette Qui suis-je sur un objet de ta cuisine."
+    },
+    "it": {
+     "t": "Indovinelli «Chi sono?»",
+     "g": "Indovina enigmi in cui un oggetto descrive se stesso.",
+     "p": [
+      "In un indovinello Chi sono, l'oggetto parla in prima persona.",
+      "Esempio: ho un letto ma non dormo mai, ho una bocca ma non parlo. Chi sono? Un fiume!",
+      "Ogni indizio restringe la risposta; resta calmo e immagina l'oggetto."
+     ],
+     "q": "Chi sono: ho le pagine ma non sono un albero. Hai un'idea?",
+     "c": "Sfida: scrivi il tuo indovinello Chi sono su qualcosa della tua cucina."
+    },
+    "pt": {
+     "t": "Adivinhas «O que sou eu?»",
+     "g": "Adivinha enigmas em que um objeto se descreve a si mesmo.",
+     "p": [
+      "Numa adivinha O que sou eu, o objeto fala na primeira pessoa.",
+      "Exemplo: tenho folhas mas não sou árvore, tenho lombada mas não sou animal. O que sou? Um livro!",
+      "Cada pista reduz as hipóteses; mantém a calma e imagina o objeto."
+     ],
+     "q": "O que sou eu: tenho teclas mas não abro portas. Tens ideia?",
+     "c": "Desafio: escreve a tua adivinha O que sou eu sobre algo da tua cozinha."
+    },
+    "pt_BR": {
+     "t": "Adivinhas «O que sou eu?»",
+     "g": "Adivinhe enigmas em que um objeto se descreve sozinho.",
+     "p": [
+      "Numa adivinha O que sou eu, o objeto fala na primeira pessoa.",
+      "Exemplo: tenho teclas mas não abro portas e tenho pedais mas não ando. O que sou? Um piano!",
+      "Cada pista reduz as possibilidades; fique calmo e imagine o objeto."
+     ],
+     "q": "O que sou eu: tenho folhas mas não sou árvore. Tem ideia?",
+     "c": "Desafio: escreva sua adivinha O que sou eu sobre algo da sua cozinha."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Timing basics",
+     "g": "Learn why a short pause before the punchline makes jokes land better.",
+     "p": [
+      "Timing means when you say things, and a tiny pause builds anticipation.",
+      "Say the setup, breathe for one second, then deliver the punchline.",
+      "Do not rush: laughter needs a moment to arrive."
+     ],
+     "q": "Do you tend to tell jokes fast or slowly?",
+     "c": "Challenge: tell one joke today and count 'one-two' silently before the punchline."
+    },
+    "de": {
+     "t": "Timing-Grundlagen",
+     "g": "Lerne, warum eine kurze Pause vor der Pointe Witze besser ankommen lässt.",
+     "p": [
+      "Timing heißt, wann du etwas sagst, und eine kleine Pause baut Spannung auf.",
+      "Sag den Aufbau, atme eine Sekunde und bring dann die Pointe.",
+      "Hetz nicht: Lachen braucht einen Moment, um anzukommen."
+     ],
+     "q": "Erzählst du Witze eher schnell oder langsam?",
+     "c": "Aufgabe: Erzähl heute einen Witz und zähl vor der Pointe leise eins, zwei."
+    },
+    "es": {
+     "t": "Lo básico del tempo",
+     "g": "Aprende por qué una pausa breve antes del remate hace que los chistes funcionen mejor.",
+     "p": [
+      "El tempo es cuándo dices las cosas, y una pausa pequeña crea expectación.",
+      "Di la preparación, respira un segundo y suelta el remate.",
+      "No te apresures: la risa necesita un momento para llegar."
+     ],
+     "q": "¿Sueles contar los chistes rápido o despacio?",
+     "c": "Reto: cuenta un chiste hoy y cuenta mentalmente uno-dos antes del remate."
+    },
+    "fr": {
+     "t": "Les bases du timing",
+     "g": "Apprends pourquoi une courte pause avant la chute fait mieux passer les blagues.",
+     "p": [
+      "Le timing, c'est le moment où tu dis les choses, et une petite pause crée l'attente.",
+      "Dis la mise en place, respire une seconde, puis lance la chute.",
+      "Ne te presse pas : le rire a besoin d'un instant pour arriver."
+     ],
+     "q": "Racontes-tu plutôt vite ou lentement ?",
+     "c": "Défi : raconte une blague aujourd'hui et compte un-deux dans ta tête avant la chute."
+    },
+    "it": {
+     "t": "Le basi del tempismo",
+     "g": "Impara perché una breve pausa prima della battuta finale fa funzionare meglio le barzellette.",
+     "p": [
+      "Il tempismo è quando dici le cose, e una piccola pausa crea attesa.",
+      "Di' la preparazione, respira per un secondo e poi lancia la battuta.",
+      "Non avere fretta: la risata ha bisogno di un attimo per arrivare."
+     ],
+     "q": "Di solito racconti le barzellette in fretta o con calma?",
+     "c": "Sfida: racconta una barzelletta oggi e conta uno-due in silenzio prima del finale."
+    },
+    "pt": {
+     "t": "Noções de timing",
+     "g": "Aprende porque é que uma pausa curta antes da graça final faz as piadas resultarem melhor.",
+     "p": [
+      "Timing é o momento em que dizes as coisas, e uma pequena pausa cria expectativa.",
+      "Diz a preparação, respira um segundo e solta a graça final.",
+      "Não tenhas pressa: o riso precisa de um instante para chegar."
+     ],
+     "q": "Costumas contar piadas depressa ou devagar?",
+     "c": "Desafio: conta uma piada hoje e conta um-dois em silêncio antes do final."
+    },
+    "pt_BR": {
+     "t": "Noções de timing",
+     "g": "Aprenda por que uma pausa curta antes do final da piada faz ela funcionar melhor.",
+     "p": [
+      "Timing é o momento em que você fala as coisas, e uma pausa pequena cria expectativa.",
+      "Diga a preparação, respire um segundo e solte o final.",
+      "Não tenha pressa: a risada precisa de um instante para chegar."
+     ],
+     "q": "Você costuma contar piadas rápido ou devagar?",
+     "c": "Desafio: conte uma piada hoje e conte um-dois em silêncio antes do final."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "School and classroom jokes",
+     "g": "Enjoy friendly jokes about homework and classrooms.",
+     "p": [
+      "School jokes work because everyone has been to school.",
+      "Example: Why did the teacher wear sunglasses? Her students were so bright!",
+      "Keep school jokes kind: laugh at pencils and homework, not at classmates."
+     ],
+     "q": "What was your favourite school subject?",
+     "c": "Challenge: invent a short joke about a pencil, an eraser or a ruler."
+    },
+    "de": {
+     "t": "Schul- und Klassenzimmerwitze",
+     "g": "Genieße freundliche Witze über Hausaufgaben und Klassenzimmer.",
+     "p": [
+      "Schulwitze funktionieren, weil alle schon einmal zur Schule gegangen sind.",
+      "Beispiel: Warum trägt der Lehrer eine Sonnenbrille? Seine Klasse ist so strahlend hell!",
+      "Halte Schulwitze freundlich: Lache über Stifte und Hausaufgaben, nicht über Mitschüler."
+     ],
+     "q": "Was war dein Lieblingsfach in der Schule?",
+     "c": "Aufgabe: Erfinde einen kurzen Witz über einen Bleistift, einen Radiergummi oder ein Lineal."
+    },
+    "es": {
+     "t": "Chistes de escuela y clase",
+     "g": "Disfruta de chistes amables sobre deberes y aulas.",
+     "p": [
+      "Los chistes de escuela funcionan porque todos hemos ido al colegio.",
+      "Ejemplo: ¿Por qué el profe lleva gafas de sol? ¡Porque sus alumnos son muy brillantes!",
+      "Mantén amables los chistes escolares: ríe de lápices y deberes, no de compañeros."
+     ],
+     "q": "¿Cuál era tu asignatura favorita en el cole?",
+     "c": "Reto: inventa un chiste corto sobre un lápiz, una goma o una regla."
+    },
+    "fr": {
+     "t": "Blagues d'école et de classe",
+     "g": "Savoure des blagues gentilles sur les devoirs et la salle de classe.",
+     "p": [
+      "Les blagues d'école marchent parce que tout le monde est allé à l'école.",
+      "Exemple : pourquoi le prof porte-t-il des lunettes de soleil ? Parce que ses élèves sont brillants !",
+      "Reste gentil : ris des crayons et des devoirs, pas de tes camarades."
+     ],
+     "q": "Quelle était ta matière préférée à l'école ?",
+     "c": "Défi : invente une blague courte sur un crayon, une gomme ou une règle."
+    },
+    "it": {
+     "t": "Barzellette sulla scuola",
+     "g": "Goditi barzellette gentili sui compiti e sulla classe.",
+     "p": [
+      "Le barzellette sulla scuola funzionano perché tutti siamo stati a scuola.",
+      "Esempio: perché il prof porta gli occhiali da sole? Perché i suoi alunni sono brillanti!",
+      "Resta gentile: ridi di matite e compiti, non dei compagni."
+     ],
+     "q": "Qual era la tua materia preferita a scuola?",
+     "c": "Sfida: inventa una battuta breve su una matita, una gomma o un righello."
+    },
+    "pt": {
+     "t": "Piadas de escola e sala de aula",
+     "g": "Diverte-te com piadas simpáticas sobre trabalhos de casa e salas de aula.",
+     "p": [
+      "As piadas de escola funcionam porque todos fomos à escola.",
+      "Exemplo: porque é que o professor usa óculos de sol? Porque os alunos são muito brilhantes!",
+      "Mantém as piadas escolares simpáticas: ri de lápis e TPC, não de colegas."
+     ],
+     "q": "Qual era a tua disciplina preferida na escola?",
+     "c": "Desafio: inventa uma piada curta sobre um lápis, uma borracha ou uma régua."
+    },
+    "pt_BR": {
+     "t": "Piadas de escola e sala de aula",
+     "g": "Divirta-se com piadas gentis sobre lição de casa e salas de aula.",
+     "p": [
+      "Piadas de escola funcionam porque todo mundo já foi à escola.",
+      "Exemplo: por que o professor usa óculos escuros? Porque os alunos são muito brilhantes!",
+      "Mantenha as piadas escolares gentis: ria de lápis e lição, não dos colegas."
+     ],
+     "q": "Qual era sua matéria preferida na escola?",
+     "c": "Desafio: invente uma piada curta sobre um lápis, uma borracha ou uma régua."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Jokes for kids",
+     "g": "Learn why simple, silly jokes make children laugh and how to tell them.",
+     "p": [
+      "Kids love silly sounds, animals, surprises and a joke they can repeat.",
+      "Example: What do you call a sleeping dinosaur? A dino-snore!",
+      "Short, clear and playful beats clever and complicated."
+     ],
+     "q": "What joke did you love as a child?",
+     "c": "Challenge: tell a kid or a young relative one silly joke today."
+    },
+    "de": {
+     "t": "Witze für Kinder",
+     "g": "Lerne, warum einfache, alberne Witze Kinder zum Lachen bringen und wie man sie erzählt.",
+     "p": [
+      "Kinder lieben alberne Laute, Tiere, Überraschungen und Witze zum Nachsagen.",
+      "Beispiel: Was ist gelb und kann nicht schwimmen? Ein Bagger!",
+      "Kurz, klar und verspielt schlägt klug und kompliziert."
+     ],
+     "q": "Welchen Witz hast du als Kind geliebt?",
+     "c": "Aufgabe: Erzähl einem Kind oder jungen Verwandten heute einen albernen Witz."
+    },
+    "es": {
+     "t": "Chistes para niños",
+     "g": "Aprende por qué los chistes simples y tontos hacen reír a los niños y cómo contarlos.",
+     "p": [
+      "A los niños les encantan los sonidos tontos, los animales, las sorpresas y los chistes repetibles.",
+      "Ejemplo: ¿Cuál es el animal más antiguo? ¡La cebra, porque está en blanco y negro!",
+      "Corto, claro y juguetón gana a listo y complicado."
+     ],
+     "q": "¿Qué chiste te encantaba de niño?",
+     "c": "Reto: cuéntale hoy un chiste tonto a un niño o a un familiar joven."
+    },
+    "fr": {
+     "t": "Blagues pour enfants",
+     "g": "Apprends pourquoi les blagues simples et rigolotes font rire les enfants.",
+     "p": [
+      "Les enfants adorent les sons rigolos, les animaux, les surprises et les blagues à répéter.",
+      "Exemple : qu'est-ce qui est jaune et qui attend ? Jonathan !",
+      "Court, clair et joueur vaut mieux que malin et compliqué."
+     ],
+     "q": "Quelle blague adorais-tu enfant ?",
+     "c": "Défi : raconte une blague rigolote à un enfant ou à un jeune proche aujourd'hui."
+    },
+    "it": {
+     "t": "Barzellette per bambini",
+     "g": "Scopri perché le barzellette semplici e sciocche fanno ridere i bambini.",
+     "p": [
+      "I bambini amano i suoni buffi, gli animali, le sorprese e le barzellette da ripetere.",
+      "Esempio: perché la mucca ha il campanello? Perché le corna non funzionano!",
+      "Breve, chiaro e giocoso batte furbo e complicato."
+     ],
+     "q": "Quale barzelletta amavi da bambino?",
+     "c": "Sfida: racconta oggi una barzelletta sciocca a un bambino o a un giovane parente."
+    },
+    "pt": {
+     "t": "Piadas para crianças",
+     "g": "Descobre porque é que as piadas simples e tolas fazem rir as crianças.",
+     "p": [
+      "As crianças adoram sons tolos, animais, surpresas e piadas que se repetem.",
+      "Exemplo: qual é o animal mais antigo? A zebra, porque é a preto e branco!",
+      "Curta, clara e brincalhona vence esperta e complicada."
+     ],
+     "q": "Que piada adoravas em criança?",
+     "c": "Desafio: conta hoje uma piada tola a uma criança ou a um familiar jovem."
+    },
+    "pt_BR": {
+     "t": "Piadas para crianças",
+     "g": "Descubra por que as piadas simples e bobas fazem as crianças rirem.",
+     "p": [
+      "Crianças adoram sons bobos, animais, surpresas e piadas para repetir.",
+      "Exemplo: qual é o animal mais antigo? A zebra, porque é preto e branco!",
+      "Curta, clara e brincalhona vence esperta e complicada."
+     ],
+     "q": "Que piada você adorava quando criança?",
+     "c": "Desafio: conte hoje uma piada boba para uma criança ou um parente jovem."
+    }
+   }
+  }
+ ]
+}

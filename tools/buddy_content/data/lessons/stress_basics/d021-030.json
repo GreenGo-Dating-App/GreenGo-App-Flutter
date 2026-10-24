@@ -1,0 +1,835 @@
+{
+ "topic": "stress_basics",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Different people, different stress",
+     "g": "Learn why the same situation can feel easy for one person and hard for another.",
+     "p": [
+      "Our past, health, sleep and support all shape how heavy a situation feels.",
+      "What stresses a friend may not stress you, and that is perfectly normal.",
+      "Comparing yourself with others rarely helps; your own signals matter most."
+     ],
+     "q": "What is easy for others but stressful for you, and the other way round?",
+     "c": "Today, skip one comparison and ask what you need instead."
+    },
+    "de": {
+     "t": "Verschiedene Menschen, verschiedener Stress",
+     "g": "Lerne, warum dieselbe Situation für einen leicht und für andere schwer sein kann.",
+     "p": [
+      "Vergangenheit, Gesundheit, Schlaf und Rückhalt prägen, wie schwer sich eine Situation anfühlt.",
+      "Was einen Freund stresst, muss dich nicht stressen, und das ist völlig normal.",
+      "Vergleiche mit anderen helfen selten; deine eigenen Signale zählen am meisten."
+     ],
+     "q": "Was ist für andere leicht, aber für dich stressig, und umgekehrt?",
+     "c": "Lass heute einen Vergleich weg und frage dich stattdessen, was du brauchst."
+    },
+    "es": {
+     "t": "Personas distintas, estrés distinto",
+     "g": "Aprende por qué la misma situación puede ser fácil para uno y difícil para otro.",
+     "p": [
+      "Nuestro pasado, salud, sueño y apoyo influyen en lo pesada que se siente una situación.",
+      "Lo que estresa a un amigo quizá no te estrese a ti, y es totalmente normal.",
+      "Compararte con otros rara vez ayuda; tus propias señales importan más."
+     ],
+     "q": "¿Qué es fácil para otros pero estresante para ti, y al revés?",
+     "c": "Hoy deja una comparación y pregúntate en cambio qué necesitas."
+    },
+    "fr": {
+     "t": "Personnes différentes, stress différent",
+     "g": "Comprends pourquoi une même situation peut être facile pour l'un et dure pour l'autre.",
+     "p": [
+      "Notre passé, notre santé, notre sommeil et notre soutien influencent le poids d'une situation.",
+      "Ce qui stresse un ami ne te stresse peut-être pas, et c'est tout à fait normal.",
+      "Te comparer aux autres aide rarement; tes propres signaux comptent le plus."
+     ],
+     "q": "Qu'est-ce qui est facile pour les autres mais stressant pour toi, et inversement ?",
+     "c": "Aujourd'hui, évite une comparaison et demande-toi plutôt ce dont tu as besoin."
+    },
+    "it": {
+     "t": "Persone diverse, stress diverso",
+     "g": "Scopri perché la stessa situazione può essere facile per uno e dura per un altro.",
+     "p": [
+      "Passato, salute, sonno e sostegno influenzano quanto pesa una situazione.",
+      "Ciò che stressa un amico può non stressare te, ed è del tutto normale.",
+      "Confrontarsi con gli altri aiuta di rado; i tuoi segnali contano di più."
+     ],
+     "q": "Che cosa è facile per gli altri ma stressante per te, e viceversa?",
+     "c": "Oggi salta un confronto e chiediti invece di che cosa hai bisogno."
+    },
+    "pt": {
+     "t": "Pessoas diferentes, stress diferente",
+     "g": "Percebe porque a mesma situação pode ser fácil para um e difícil para outro.",
+     "p": [
+      "O nosso passado, saúde, sono e apoio influenciam o peso que uma situação tem.",
+      "O que stressa um amigo pode não te stressar a ti, e isso é perfeitamente normal.",
+      "Comparares-te com os outros raramente ajuda; os teus sinais é que contam."
+     ],
+     "q": "O que é fácil para os outros mas stressante para ti, e vice-versa?",
+     "c": "Hoje salta uma comparação e pergunta antes o que precisas."
+    },
+    "pt_BR": {
+     "t": "Pessoas diferentes, estresse diferente",
+     "g": "Entenda por que a mesma situação pode ser fácil para um e difícil para outro.",
+     "p": [
+      "Nosso passado, saúde, sono e apoio influenciam o peso que uma situação tem.",
+      "O que estressa um amigo pode não estressar você, e isso é totalmente normal.",
+      "Se comparar com os outros raramente ajuda; seus próprios sinais é que contam."
+     ],
+     "q": "O que é fácil para os outros mas estressante para você, e vice-versa?",
+     "c": "Hoje pule uma comparação e pergunte a si mesmo do que precisa."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Stress across cultures",
+     "g": "See how various cultures talk about and handle pressure in daily life.",
+     "p": [
+      "Many cultures have habits for slowing down, like a daily tea break or a shared meal.",
+      "Some value quiet reflection, others lean on community, song or time outdoors.",
+      "Learning from other traditions can give you new ideas that fit you."
+     ],
+     "q": "Which habit from your own culture helps you slow down?",
+     "c": "Try one calming habit from another culture today, such as a slow tea break."
+    },
+    "de": {
+     "t": "Stress in anderen Kulturen",
+     "g": "Sieh, wie verschiedene Kulturen im Alltag über Druck sprechen und damit umgehen.",
+     "p": [
+      "Viele Kulturen haben Gewohnheiten zum Entschleunigen, etwa eine Teepause oder gemeinsames Essen.",
+      "Manche schätzen stille Besinnung, andere setzen auf Gemeinschaft, Gesang oder Zeit draußen.",
+      "Von anderen Traditionen zu lernen kann dir neue, passende Ideen schenken."
+     ],
+     "q": "Welche Gewohnheit deiner eigenen Kultur hilft dir beim Entschleunigen?",
+     "c": "Probiere heute eine beruhigende Gewohnheit einer anderen Kultur, etwa eine langsame Teepause."
+    },
+    "es": {
+     "t": "El estrés en distintas culturas",
+     "g": "Descubre cómo diversas culturas hablan de la presión y la manejan en el día a día.",
+     "p": [
+      "Muchas culturas tienen hábitos para bajar el ritmo, como una pausa para el té o una comida compartida.",
+      "Unas valoran la reflexión tranquila, otras se apoyan en la comunidad, el canto o el aire libre.",
+      "Aprender de otras tradiciones puede darte ideas nuevas que te encajen."
+     ],
+     "q": "¿Qué hábito de tu propia cultura te ayuda a ir más despacio?",
+     "c": "Prueba hoy un hábito calmante de otra cultura, como una pausa lenta para el té."
+    },
+    "fr": {
+     "t": "Le stress selon les cultures",
+     "g": "Vois comment diverses cultures parlent de la pression et la gèrent au quotidien.",
+     "p": [
+      "Beaucoup de cultures ont des habitudes pour ralentir, comme une pause thé ou un repas partagé.",
+      "Certaines valorisent la réflexion calme, d'autres misent sur la communauté, le chant ou le plein air.",
+      "Apprendre d'autres traditions peut t'offrir de nouvelles idées qui te conviennent."
+     ],
+     "q": "Quelle habitude de ta propre culture t'aide à ralentir ?",
+     "c": "Essaie aujourd'hui une habitude apaisante d'une autre culture, comme une pause thé lente."
+    },
+    "it": {
+     "t": "Lo stress nelle diverse culture",
+     "g": "Scopri come culture diverse parlano della pressione e la gestiscono nella vita quotidiana.",
+     "p": [
+      "Molte culture hanno abitudini per rallentare, come una pausa tè o un pasto condiviso.",
+      "Alcune danno valore alla riflessione tranquilla, altre alla comunità, al canto o all'aria aperta.",
+      "Imparare da altre tradizioni può darti idee nuove che ti si addicono."
+     ],
+     "q": "Quale abitudine della tua cultura ti aiuta a rallentare?",
+     "c": "Prova oggi un'abitudine calmante di un'altra cultura, come una lenta pausa tè."
+    },
+    "pt": {
+     "t": "O stress nas várias culturas",
+     "g": "Vê como diferentes culturas falam da pressão e lidam com ela no dia a dia.",
+     "p": [
+      "Muitas culturas têm hábitos para abrandar, como uma pausa para o chá ou uma refeição partilhada.",
+      "Umas valorizam a reflexão tranquila, outras apoiam-se na comunidade, no canto ou ao ar livre.",
+      "Aprender com outras tradições pode dar-te ideias novas que te sirvam."
+     ],
+     "q": "Que hábito da tua própria cultura te ajuda a abrandar?",
+     "c": "Experimenta hoje um hábito calmante de outra cultura, como uma pausa lenta para o chá."
+    },
+    "pt_BR": {
+     "t": "O estresse nas várias culturas",
+     "g": "Veja como diferentes culturas falam da pressão e lidam com ela no dia a dia.",
+     "p": [
+      "Muitas culturas têm hábitos para desacelerar, como uma pausa para o chá ou uma refeição compartilhada.",
+      "Umas valorizam a reflexão tranquila, outras se apoiam na comunidade, no canto ou ao ar livre.",
+      "Aprender com outras tradições pode trazer ideias novas que combinem com você."
+     ],
+     "q": "Que hábito da sua própria cultura ajuda você a desacelerar?",
+     "c": "Experimente hoje um hábito calmante de outra cultura, como uma pausa lenta para o chá."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Words for stress",
+     "g": "Explore expressions about stress and calm in different languages.",
+     "p": [
+      "English says to feel under pressure, German says Stress hat mich im Griff, and Spanish says estar agobiado.",
+      "French has être à bout, Italian has essere sotto pressione, and Portuguese has andar stressado.",
+      "Calm has its own sayings, like keeping a cool head or taking things one step at a time."
+     ],
+     "q": "Which phrase about stress or calm do you use most in your language?",
+     "c": "Pick one new calm phrase from another language and say it aloud today."
+    },
+    "de": {
+     "t": "Wörter für Stress",
+     "g": "Entdecke Ausdrücke für Stress und Ruhe in verschiedenen Sprachen.",
+     "p": [
+      "Englisch sagt under pressure, Spanisch estar agobiado, und im Deutschen heißt es: Ich bin im Stress.",
+      "Französisch kennt être à bout, Italienisch essere sotto pressione, Portugiesisch andar stressado.",
+      "Auch Ruhe hat Redensarten, etwa einen kühlen Kopf bewahren oder Schritt für Schritt vorgehen."
+     ],
+     "q": "Welchen Ausdruck über Stress oder Ruhe nutzt du in deiner Sprache am meisten?",
+     "c": "Wähle heute einen neuen Ruhe-Ausdruck aus einer anderen Sprache und sprich ihn laut aus."
+    },
+    "es": {
+     "t": "Palabras para el estrés",
+     "g": "Explora expresiones sobre el estrés y la calma en distintos idiomas.",
+     "p": [
+      "En inglés se dice under pressure, en alemán Stress hat mich im Griff, y en español estar agobiado.",
+      "El francés tiene être à bout, el italiano essere sotto pressione y el portugués andar stressado.",
+      "La calma también tiene sus dichos, como mantener la cabeza fría o ir paso a paso."
+     ],
+     "q": "¿Qué frase sobre el estrés o la calma usas más en tu idioma?",
+     "c": "Elige hoy una frase calmante nueva de otro idioma y dila en voz alta."
+    },
+    "fr": {
+     "t": "Les mots du stress",
+     "g": "Explore des expressions sur le stress et le calme dans différentes langues.",
+     "p": [
+      "L'anglais dit under pressure, l'allemand Stress hat mich im Griff, l'espagnol estar agobiado.",
+      "Le français a être à bout, l'italien essere sotto pressione, le portugais andar stressado.",
+      "Le calme a aussi ses dictons, comme garder la tête froide ou y aller pas à pas."
+     ],
+     "q": "Quelle expression sur le stress ou le calme utilises-tu le plus dans ta langue ?",
+     "c": "Choisis aujourd'hui une nouvelle expression apaisante d'une autre langue et dis-la à voix haute."
+    },
+    "it": {
+     "t": "Le parole dello stress",
+     "g": "Esplora espressioni sullo stress e sulla calma in lingue diverse.",
+     "p": [
+      "L'inglese dice under pressure, il tedesco Stress hat mich im Griff, lo spagnolo estar agobiado.",
+      "Il francese ha être à bout, l'italiano essere sotto pressione, il portoghese andar stressado.",
+      "Anche la calma ha i suoi modi di dire, come mantenere la testa fredda o andare passo dopo passo."
+     ],
+     "q": "Quale espressione sullo stress o sulla calma usi di più nella tua lingua?",
+     "c": "Scegli oggi una nuova frase calmante da un'altra lingua e dilla ad alta voce."
+    },
+    "pt": {
+     "t": "Palavras para o stress",
+     "g": "Explora expressões sobre stress e calma em várias línguas.",
+     "p": [
+      "O inglês diz under pressure, o alemão Stress hat mich im Griff e o espanhol estar agobiado.",
+      "O francês tem être à bout, o italiano essere sotto pressione e o português andar stressado.",
+      "A calma também tem ditos próprios, como manter a cabeça fria ou ir passo a passo."
+     ],
+     "q": "Que expressão sobre stress ou calma usas mais na tua língua?",
+     "c": "Escolhe hoje uma frase calmante nova de outra língua e diz-a em voz alta."
+    },
+    "pt_BR": {
+     "t": "Palavras para o estresse",
+     "g": "Explore expressões sobre estresse e calma em várias línguas.",
+     "p": [
+      "O inglês diz under pressure, o alemão Stress hat mich im Griff e o espanhol estar agobiado.",
+      "O francês tem être à bout, o italiano essere sotto pressione e o português andar estressado.",
+      "A calma também tem seus ditados, como manter a cabeça fria ou ir um passo de cada vez."
+     ],
+     "q": "Que expressão sobre estresse ou calma você mais usa na sua língua?",
+     "c": "Escolha hoje uma frase calmante nova de outra língua e diga em voz alta."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your calm moments",
+     "g": "Remember times you felt truly relaxed and what made them so.",
+     "p": [
+      "Think of a moment you felt at ease: where were you, who was there, what could you sense?",
+      "Calm often has ingredients, like quiet, warmth, nature, music or good company.",
+      "Knowing your ingredients lets you add more of them to ordinary days."
+     ],
+     "q": "What was one of the calmest moments you can remember?",
+     "c": "Recall that moment for one minute and notice how your body feels."
+    },
+    "de": {
+     "t": "Deine ruhigen Momente",
+     "g": "Erinnere dich an Zeiten, in denen du wirklich entspannt warst, und was sie so machte.",
+     "p": [
+      "Denke an einen Moment der Gelassenheit: Wo warst du, wer war da, was konntest du wahrnehmen?",
+      "Ruhe hat oft Zutaten, wie Stille, Wärme, Natur, Musik oder gute Gesellschaft.",
+      "Wer seine Zutaten kennt, kann mehr davon in gewöhnliche Tage bringen."
+     ],
+     "q": "Was war einer der ruhigsten Momente, an die du dich erinnerst?",
+     "c": "Erinnere dich eine Minute lang an diesen Moment und spüre, wie sich dein Körper anfühlt."
+    },
+    "es": {
+     "t": "Tus momentos de calma",
+     "g": "Recuerda ratos en que te sentiste realmente relajado y qué los hizo así.",
+     "p": [
+      "Piensa en un momento de tranquilidad: ¿dónde estabas, quién estaba, qué percibías?",
+      "La calma suele tener ingredientes, como silencio, calidez, naturaleza, música o buena compañía.",
+      "Conocer tus ingredientes te permite añadir más a los días normales."
+     ],
+     "q": "¿Cuál fue uno de los momentos más tranquilos que recuerdas?",
+     "c": "Recuerda ese momento durante un minuto y nota cómo se siente tu cuerpo."
+    },
+    "fr": {
+     "t": "Tes moments de calme",
+     "g": "Souviens-toi de moments où tu étais vraiment détendu et de ce qui les rendait ainsi.",
+     "p": [
+      "Pense à un moment de sérénité : où étais-tu, qui était là, que percevais-tu ?",
+      "Le calme a souvent des ingrédients : silence, chaleur, nature, musique ou bonne compagnie.",
+      "Connaître tes ingrédients te permet d'en ajouter davantage aux journées ordinaires."
+     ],
+     "q": "Quel est l'un des moments les plus calmes dont tu te souviens ?",
+     "c": "Revis ce moment pendant une minute et remarque ce que ressent ton corps."
+    },
+    "it": {
+     "t": "I tuoi momenti di calma",
+     "g": "Ricorda i momenti in cui ti sei sentito davvero rilassato e che cosa li rendeva tali.",
+     "p": [
+      "Pensa a un momento di serenità: dov'eri, chi c'era, che cosa percepivi?",
+      "La calma ha spesso degli ingredienti: silenzio, calore, natura, musica o buona compagnia.",
+      "Conoscere i tuoi ingredienti ti permette di aggiungerne di più ai giorni normali."
+     ],
+     "q": "Qual è stato uno dei momenti più calmi che ricordi?",
+     "c": "Rivivi quel momento per un minuto e nota come si sente il tuo corpo."
+    },
+    "pt": {
+     "t": "Os teus momentos de calma",
+     "g": "Lembra-te de momentos em que te sentiste mesmo relaxado e do que os tornou assim.",
+     "p": [
+      "Pensa num momento de tranquilidade: onde estavas, quem estava contigo, o que sentias?",
+      "A calma costuma ter ingredientes, como silêncio, calor, natureza, música ou boa companhia.",
+      "Conhecer os teus ingredientes permite pôr mais deles nos dias normais."
+     ],
+     "q": "Qual foi um dos momentos mais calmos de que te lembras?",
+     "c": "Recorda esse momento durante um minuto e repara como o teu corpo se sente."
+    },
+    "pt_BR": {
+     "t": "Seus momentos de calma",
+     "g": "Lembre-se de momentos em que você se sentiu realmente relaxado e do que os tornou assim.",
+     "p": [
+      "Pense num momento de tranquilidade: onde você estava, quem estava junto, o que percebia?",
+      "A calma costuma ter ingredientes, como silêncio, calor, natureza, música ou boa companhia.",
+      "Conhecer seus ingredientes permite pôr mais deles nos dias comuns."
+     ],
+     "q": "Qual foi um dos momentos mais calmos de que você se lembra?",
+     "c": "Relembre esse momento por um minuto e note como o seu corpo se sente."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Building a relief menu",
+     "g": "Start a list of small things that help you feel calmer.",
+     "p": [
+      "A relief menu is a list of quick options, like a walk, a song, tea or calling a friend.",
+      "Include choices for one minute, ten minutes and one hour, so something always fits.",
+      "When stress rises, picking from a list is easier than thinking of ideas."
+     ],
+     "q": "What are three things that already help you feel calmer?",
+     "c": "Write at least five items on your relief menu and keep it somewhere handy."
+    },
+    "de": {
+     "t": "Eine Entlastungs-Speisekarte",
+     "g": "Beginne eine Liste kleiner Dinge, die dir helfen, ruhiger zu werden.",
+     "p": [
+      "Eine Entlastungs-Speisekarte listet schnelle Optionen, etwa Spaziergang, Lied, Tee oder einen Freund anrufen.",
+      "Nimm Auswahl für eine Minute, zehn Minuten und eine Stunde auf, damit immer etwas passt.",
+      "Steigt der Stress, ist Auswählen leichter als Ideen zu suchen."
+     ],
+     "q": "Welche drei Dinge helfen dir schon jetzt, ruhiger zu werden?",
+     "c": "Schreibe mindestens fünf Punkte auf deine Speisekarte und bewahre sie griffbereit auf."
+    },
+    "es": {
+     "t": "Armar un menú de alivio",
+     "g": "Empieza una lista de pequeñas cosas que te ayudan a sentirte más tranquilo.",
+     "p": [
+      "Un menú de alivio es una lista de opciones rápidas, como pasear, una canción, un té o llamar a un amigo.",
+      "Incluye opciones de un minuto, diez minutos y una hora, para que siempre haya algo que encaje.",
+      "Cuando sube el estrés, elegir de una lista es más fácil que pensar ideas."
+     ],
+     "q": "¿Qué tres cosas ya te ayudan a sentirte más tranquilo?",
+     "c": "Escribe al menos cinco ideas en tu menú de alivio y guárdalo a mano."
+    },
+    "fr": {
+     "t": "Créer un menu de détente",
+     "g": "Commence une liste de petites choses qui t'aident à te sentir plus calme.",
+     "p": [
+      "Un menu de détente est une liste d'options rapides : marche, chanson, thé ou appel à un ami.",
+      "Prévois des choix pour une minute, dix minutes et une heure, pour que quelque chose convienne toujours.",
+      "Quand le stress monte, choisir dans une liste est plus facile que chercher des idées."
+     ],
+     "q": "Quelles trois choses t'aident déjà à te sentir plus calme ?",
+     "c": "Écris au moins cinq idées sur ton menu de détente et garde-le à portée de main."
+    },
+    "it": {
+     "t": "Costruire un menu del sollievo",
+     "g": "Inizia un elenco di piccole cose che ti aiutano a sentirti più calmo.",
+     "p": [
+      "Un menu del sollievo è un elenco di opzioni rapide: passeggiata, canzone, tè o una telefonata a un amico.",
+      "Includi scelte da un minuto, dieci minuti e un'ora, così qualcosa va sempre bene.",
+      "Quando lo stress sale, scegliere da un elenco è più facile che inventare idee."
+     ],
+     "q": "Quali tre cose ti aiutano già a sentirti più calmo?",
+     "c": "Scrivi almeno cinque voci sul tuo menu del sollievo e tienilo a portata di mano."
+    },
+    "pt": {
+     "t": "Criar um menu de alívio",
+     "g": "Começa uma lista de pequenas coisas que te ajudam a sentir mais calma.",
+     "p": [
+      "Um menu de alívio é uma lista de opções rápidas, como passear, uma música, um chá ou ligar a um amigo.",
+      "Inclui escolhas de um minuto, dez minutos e uma hora, para haver sempre algo que sirva.",
+      "Quando o stress sobe, escolher de uma lista é mais fácil do que pensar em ideias."
+     ],
+     "q": "Que três coisas já te ajudam a sentir mais calma?",
+     "c": "Escreve pelo menos cinco itens no teu menu de alívio e guarda-o à mão."
+    },
+    "pt_BR": {
+     "t": "Montar um menu de alívio",
+     "g": "Comece uma lista de pequenas coisas que ajudam você a se sentir mais calmo.",
+     "p": [
+      "Um menu de alívio é uma lista de opções rápidas, como caminhar, uma música, um chá ou ligar para um amigo.",
+      "Inclua escolhas de um minuto, dez minutos e uma hora, para sempre ter algo que sirva.",
+      "Quando o estresse sobe, escolher de uma lista é mais fácil do que pensar em ideias."
+     ],
+     "q": "Que três coisas já ajudam você a se sentir mais calmo?",
+     "c": "Escreva pelo menos cinco itens no seu menu de alívio e deixe-o à mão."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Small steps matter",
+     "g": "Learn why tiny, regular relief habits work better than rare big escapes.",
+     "p": [
+      "One minute of calm every day adds up more than one big holiday a year.",
+      "Small habits are easy to start, easy to keep and kind to a busy schedule.",
+      "Attach a new habit to something you already do, like breathing while the kettle boils."
+     ],
+     "q": "Which tiny habit could you realistically do every single day?",
+     "c": "Choose one habit under two minutes and tie it to a daily routine."
+    },
+    "de": {
+     "t": "Kleine Schritte zählen",
+     "g": "Lerne, warum winzige, regelmäßige Entlastungsgewohnheiten besser wirken als seltene große Fluchten.",
+     "p": [
+      "Eine Minute Ruhe jeden Tag bringt mehr als ein großer Urlaub im Jahr.",
+      "Kleine Gewohnheiten sind leicht zu beginnen, leicht zu halten und freundlich zu vollen Tagen.",
+      "Koppele eine neue Gewohnheit an etwas Bestehendes, etwa atmen, während das Wasser kocht."
+     ],
+     "q": "Welche winzige Gewohnheit könntest du realistisch jeden Tag schaffen?",
+     "c": "Wähle eine Gewohnheit unter zwei Minuten und knüpfe sie an eine tägliche Routine."
+    },
+    "es": {
+     "t": "Los pequeños pasos importan",
+     "g": "Aprende por qué los hábitos de alivio diminutos y regulares funcionan mejor que escapadas grandes y raras.",
+     "p": [
+      "Un minuto de calma cada día suma más que unas grandes vacaciones al año.",
+      "Los hábitos pequeños son fáciles de empezar, de mantener y amables con una agenda llena.",
+      "Une un hábito nuevo a algo que ya haces, como respirar mientras hierve el agua."
+     ],
+     "q": "¿Qué hábito diminuto podrías hacer de verdad cada día?",
+     "c": "Elige un hábito de menos de dos minutos y átalo a una rutina diaria."
+    },
+    "fr": {
+     "t": "Les petits pas comptent",
+     "g": "Comprends pourquoi de minuscules habitudes régulières valent mieux que de rares grandes évasions.",
+     "p": [
+      "Une minute de calme chaque jour compte plus qu'une grande vacance par an.",
+      "Les petites habitudes sont faciles à commencer, à garder et douces pour un emploi du temps chargé.",
+      "Accroche une nouvelle habitude à quelque chose que tu fais déjà, comme respirer pendant que l'eau chauffe."
+     ],
+     "q": "Quelle minuscule habitude pourrais-tu vraiment faire chaque jour ?",
+     "c": "Choisis une habitude de moins de deux minutes et lie-la à une routine quotidienne."
+    },
+    "it": {
+     "t": "I piccoli passi contano",
+     "g": "Scopri perché minuscole abitudini regolari funzionano meglio di rare grandi fughe.",
+     "p": [
+      "Un minuto di calma ogni giorno vale più di una grande vacanza all'anno.",
+      "Le piccole abitudini sono facili da iniziare, da mantenere e gentili con un'agenda piena.",
+      "Collega una nuova abitudine a qualcosa che già fai, come respirare mentre bolle l'acqua."
+     ],
+     "q": "Quale minuscola abitudine potresti davvero fare ogni giorno?",
+     "c": "Scegli un'abitudine sotto i due minuti e legala a una routine quotidiana."
+    },
+    "pt": {
+     "t": "Os pequenos passos contam",
+     "g": "Percebe porque pequenos hábitos regulares funcionam melhor do que raras grandes fugas.",
+     "p": [
+      "Um minuto de calma por dia vale mais do que umas grandes férias por ano.",
+      "Os pequenos hábitos são fáceis de começar, de manter e simpáticos para uma agenda cheia.",
+      "Liga um hábito novo a algo que já fazes, como respirar enquanto a água ferve."
+     ],
+     "q": "Que pequeníssimo hábito conseguirias mesmo fazer todos os dias?",
+     "c": "Escolhe um hábito de menos de dois minutos e liga-o a uma rotina diária."
+    },
+    "pt_BR": {
+     "t": "Os pequenos passos contam",
+     "g": "Entenda por que pequenos hábitos regulares funcionam melhor que raras grandes fugas.",
+     "p": [
+      "Um minuto de calma por dia vale mais do que umas grandes férias por ano.",
+      "Os pequenos hábitos são fáceis de começar, de manter e gentis com uma agenda cheia.",
+      "Ligue um hábito novo a algo que você já faz, como respirar enquanto a água ferve."
+     ],
+     "q": "Que pequeníssimo hábito você conseguiria mesmo fazer todo dia?",
+     "c": "Escolha um hábito de menos de dois minutos e ligue-o a uma rotina diária."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "When to talk to a professional",
+     "g": "Know the signs that it is a good idea to speak with a doctor or counsellor.",
+     "p": [
+      "If stress feels overwhelming, lasts for weeks or affects sleep, work or relationships, reach out.",
+      "Persistent low mood, constant worry or physical symptoms are good reasons to see a doctor.",
+      "Asking for help is a sign of strength, and these lessons are not a substitute for care."
+     ],
+     "q": "Who could you turn to if stress ever felt like too much?",
+     "c": "Note the name of one doctor, helpline or trusted person you could contact."
+    },
+    "de": {
+     "t": "Wann du mit einer Fachperson sprichst",
+     "g": "Kenne die Zeichen, bei denen ein Gespräch mit Ärztin, Arzt oder Beratung sinnvoll ist.",
+     "p": [
+      "Wirkt Stress überwältigend, hält wochenlang an oder stört Schlaf, Arbeit oder Beziehungen, hol dir Hilfe.",
+      "Anhaltend gedrückte Stimmung, ständige Sorgen oder körperliche Beschwerden sind gute Gründe für einen Arztbesuch.",
+      "Hilfe zu suchen ist ein Zeichen von Stärke; diese Lektionen ersetzen keine Behandlung."
+     ],
+     "q": "An wen könntest du dich wenden, wenn Stress dir einmal zu viel würde?",
+     "c": "Notiere den Namen einer Ärztin, einer Hotline oder einer Vertrauensperson, die du kontaktieren könntest."
+    },
+    "es": {
+     "t": "Cuándo hablar con un profesional",
+     "g": "Conoce las señales de que conviene hablar con un médico o un consejero.",
+     "p": [
+      "Si el estrés te abruma, dura semanas o afecta al sueño, al trabajo o a las relaciones, pide ayuda.",
+      "Un ánimo bajo persistente, preocupación constante o síntomas físicos son buenos motivos para ver a un médico.",
+      "Pedir ayuda es señal de fortaleza, y estas lecciones no sustituyen la atención profesional."
+     ],
+     "q": "¿A quién podrías acudir si el estrés alguna vez te resultara demasiado?",
+     "c": "Anota el nombre de un médico, una línea de ayuda o una persona de confianza a quien contactar."
+    },
+    "fr": {
+     "t": "Quand parler à un professionnel",
+     "g": "Connais les signes qui montrent qu'il vaut mieux parler à un médecin ou à un conseiller.",
+     "p": [
+      "Si le stress est écrasant, dure des semaines ou touche le sommeil, le travail ou les relations, demande de l'aide.",
+      "Un moral bas persistant, une inquiétude constante ou des symptômes physiques sont de bonnes raisons de voir un médecin.",
+      "Demander de l'aide est une force, et ces leçons ne remplacent pas des soins."
+     ],
+     "q": "Vers qui pourrais-tu te tourner si le stress devenait trop lourd ?",
+     "c": "Note le nom d'un médecin, d'une ligne d'écoute ou d'une personne de confiance à contacter."
+    },
+    "it": {
+     "t": "Quando parlare con un professionista",
+     "g": "Riconosci i segnali per cui è bene parlare con un medico o un consulente.",
+     "p": [
+      "Se lo stress è opprimente, dura settimane o influisce su sonno, lavoro o relazioni, chiedi aiuto.",
+      "Umore basso persistente, preoccupazione costante o sintomi fisici sono buoni motivi per vedere un medico.",
+      "Chiedere aiuto è segno di forza, e queste lezioni non sostituiscono le cure."
+     ],
+     "q": "A chi potresti rivolgerti se lo stress diventasse troppo?",
+     "c": "Annota il nome di un medico, di una linea di ascolto o di una persona fidata da contattare."
+    },
+    "pt": {
+     "t": "Quando falar com um profissional",
+     "g": "Conhece os sinais de que é bom falar com um médico ou um conselheiro.",
+     "p": [
+      "Se o stress for esmagador, durar semanas ou afetar o sono, o trabalho ou as relações, pede ajuda.",
+      "Humor em baixo persistente, preocupação constante ou sintomas físicos são bons motivos para ir ao médico.",
+      "Pedir ajuda é sinal de força, e estas lições não substituem cuidados profissionais."
+     ],
+     "q": "A quem poderias recorrer se o stress alguma vez fosse demasiado?",
+     "c": "Anota o nome de um médico, de uma linha de apoio ou de alguém de confiança que possas contactar."
+    },
+    "pt_BR": {
+     "t": "Quando falar com um profissional",
+     "g": "Conheça os sinais de que é bom falar com um médico ou um conselheiro.",
+     "p": [
+      "Se o estresse for esmagador, durar semanas ou afetar o sono, o trabalho ou os relacionamentos, peça ajuda.",
+      "Humor baixo persistente, preocupação constante ou sintomas físicos são bons motivos para ir ao médico.",
+      "Pedir ajuda é sinal de força, e estas lições não substituem o cuidado profissional."
+     ],
+     "q": "A quem você poderia recorrer se o estresse um dia fosse demais?",
+     "c": "Anote o nome de um médico, de um serviço de apoio ou de alguém de confiança que você possa contatar."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kindness to yourself",
+     "g": "Practise treating yourself with the patience you would offer a friend.",
+     "p": [
+      "Imagine a friend feeling stressed: you would speak gently, not criticise them.",
+      "Offer yourself the same tone, especially when you make a mistake or feel behind.",
+      "Self-kindness does not lower your standards; it helps you recover faster."
+     ],
+     "q": "What would you say to a friend in your exact situation today?",
+     "c": "Say one kind sentence to yourself out loud, as you would to a friend."
+    },
+    "de": {
+     "t": "Freundlich zu dir selbst",
+     "g": "Übe, dir selbst mit der Geduld zu begegnen, die du einer Freundin oder einem Freund schenken würdest.",
+     "p": [
+      "Stell dir einen gestressten Freund vor: Du würdest sanft sprechen und ihn nicht kritisieren.",
+      "Biete dir denselben Ton an, besonders bei Fehlern oder wenn du dich im Rückstand fühlst.",
+      "Selbstfreundlichkeit senkt keine Ansprüche; sie hilft dir, dich schneller zu erholen."
+     ],
+     "q": "Was würdest du einem Freund in genau deiner Lage heute sagen?",
+     "c": "Sprich einen freundlichen Satz laut zu dir, so wie zu einem Freund."
+    },
+    "es": {
+     "t": "Amabilidad contigo mismo",
+     "g": "Practica tratarte con la paciencia que le ofrecerías a un amigo.",
+     "p": [
+      "Imagina a un amigo estresado: le hablarías con suavidad, sin criticarlo.",
+      "Ofrécete el mismo tono, sobre todo si cometes un error o sientes que vas atrasado.",
+      "Ser amable contigo no baja tus metas; te ayuda a recuperarte más rápido."
+     ],
+     "q": "¿Qué le dirías hoy a un amigo en tu misma situación?",
+     "c": "Dite en voz alta una frase amable, como se la dirías a un amigo."
+    },
+    "fr": {
+     "t": "Bienveillance envers toi-même",
+     "g": "Pratique la patience envers toi-même comme tu l'offrirais à un ami.",
+     "p": [
+      "Imagine un ami stressé : tu lui parlerais doucement, sans le critiquer.",
+      "Offre-toi le même ton, surtout quand tu fais une erreur ou te sens en retard.",
+      "La bienveillance envers soi n'abaisse pas tes exigences; elle t'aide à récupérer plus vite."
+     ],
+     "q": "Que dirais-tu aujourd'hui à un ami dans ta situation exacte ?",
+     "c": "Dis-toi à voix haute une phrase bienveillante, comme à un ami."
+    },
+    "it": {
+     "t": "Gentilezza verso te stesso",
+     "g": "Esercitati a trattarti con la pazienza che offriresti a un amico.",
+     "p": [
+      "Immagina un amico stressato: gli parleresti con dolcezza, senza criticarlo.",
+      "Offriti lo stesso tono, soprattutto quando sbagli o ti senti indietro.",
+      "La gentilezza verso di sé non abbassa le tue esigenze; ti aiuta a riprenderti prima."
+     ],
+     "q": "Che cosa diresti oggi a un amico nella tua stessa situazione?",
+     "c": "Dì a te stesso ad alta voce una frase gentile, come a un amico."
+    },
+    "pt": {
+     "t": "Gentileza contigo mesmo",
+     "g": "Pratica tratares-te com a paciência que oferecerias a um amigo.",
+     "p": [
+      "Imagina um amigo stressado: falavas-lhe com suavidade, sem o criticar.",
+      "Oferece a ti o mesmo tom, sobretudo quando erras ou te sentes atrasado.",
+      "Ser gentil contigo não baixa as tuas exigências; ajuda-te a recuperar mais depressa."
+     ],
+     "q": "O que dirias hoje a um amigo na tua situação exata?",
+     "c": "Diz em voz alta uma frase gentil a ti mesmo, como dirias a um amigo."
+    },
+    "pt_BR": {
+     "t": "Gentileza consigo mesmo",
+     "g": "Pratique tratar a si mesmo com a paciência que você ofereceria a um amigo.",
+     "p": [
+      "Imagine um amigo estressado: você falaria com suavidade, sem criticar.",
+      "Ofereça a si o mesmo tom, sobretudo quando errar ou se sentir atrasado.",
+      "Ser gentil consigo não rebaixa seus padrões; ajuda a se recuperar mais rápido."
+     ],
+     "q": "O que você diria hoje a um amigo na sua situação exata?",
+     "c": "Diga em voz alta uma frase gentil para si, como diria a um amigo."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Setting a gentle goal",
+     "g": "Choose one realistic stress-relief goal for the coming month.",
+     "p": [
+      "A gentle goal is small and clear, like five minutes of slow breathing each evening.",
+      "Pick something you can do even on a bad day, so it stays possible.",
+      "Write it down and decide when and where you will do it."
+     ],
+     "q": "What gentle goal feels doable for you over the next month?",
+     "c": "Write your goal in one sentence, with a time and a place."
+    },
+    "de": {
+     "t": "Ein sanftes Ziel setzen",
+     "g": "Wähle ein realistisches Entlastungsziel für den kommenden Monat.",
+     "p": [
+      "Ein sanftes Ziel ist klein und klar, etwa jeden Abend fünf Minuten langsam atmen.",
+      "Wähle etwas, das auch an schlechten Tagen geht, damit es machbar bleibt.",
+      "Schreibe es auf und lege fest, wann und wo du es tust."
+     ],
+     "q": "Welches sanfte Ziel fühlt sich für den nächsten Monat machbar an?",
+     "c": "Schreibe dein Ziel in einem Satz auf, mit Zeit und Ort."
+    },
+    "es": {
+     "t": "Fijar una meta suave",
+     "g": "Elige una meta realista de alivio del estrés para el próximo mes.",
+     "p": [
+      "Una meta suave es pequeña y clara, como cinco minutos de respiración lenta cada noche.",
+      "Elige algo que puedas hacer incluso en un mal día, para que siga siendo posible.",
+      "Anótala y decide cuándo y dónde la harás."
+     ],
+     "q": "¿Qué meta suave te parece factible para el próximo mes?",
+     "c": "Escribe tu meta en una frase, con hora y lugar."
+    },
+    "fr": {
+     "t": "Se fixer un objectif doux",
+     "g": "Choisis un objectif réaliste de détente pour le mois à venir.",
+     "p": [
+      "Un objectif doux est petit et clair, comme cinq minutes de respiration lente chaque soir.",
+      "Choisis quelque chose de faisable même un mauvais jour, pour que cela reste possible.",
+      "Écris-le et décide quand et où tu le feras."
+     ],
+     "q": "Quel objectif doux te semble faisable pour le mois prochain ?",
+     "c": "Écris ton objectif en une phrase, avec une heure et un lieu."
+    },
+    "it": {
+     "t": "Fissare un obiettivo gentile",
+     "g": "Scegli un obiettivo realistico di sollievo dallo stress per il prossimo mese.",
+     "p": [
+      "Un obiettivo gentile è piccolo e chiaro, come cinque minuti di respiro lento ogni sera.",
+      "Scegli qualcosa di fattibile anche in una brutta giornata, così resta possibile.",
+      "Scrivilo e decidi quando e dove lo farai."
+     ],
+     "q": "Quale obiettivo gentile ti sembra fattibile per il prossimo mese?",
+     "c": "Scrivi il tuo obiettivo in una frase, con orario e luogo."
+    },
+    "pt": {
+     "t": "Definir um objetivo suave",
+     "g": "Escolhe um objetivo realista de alívio do stress para o próximo mês.",
+     "p": [
+      "Um objetivo suave é pequeno e claro, como cinco minutos de respiração lenta cada noite.",
+      "Escolhe algo que consigas fazer mesmo num mau dia, para continuar possível.",
+      "Escreve-o e decide quando e onde o vais fazer."
+     ],
+     "q": "Que objetivo suave te parece possível para o próximo mês?",
+     "c": "Escreve o teu objetivo numa frase, com hora e local."
+    },
+    "pt_BR": {
+     "t": "Definir uma meta suave",
+     "g": "Escolha uma meta realista de alívio do estresse para o próximo mês.",
+     "p": [
+      "Uma meta suave é pequena e clara, como cinco minutos de respiração lenta toda noite.",
+      "Escolha algo que você consiga fazer até num dia ruim, para continuar possível.",
+      "Escreva e decida quando e onde vai fazer."
+     ],
+     "q": "Que meta suave parece possível para você no próximo mês?",
+     "c": "Escreva sua meta numa frase, com horário e lugar."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Month one review",
+     "g": "Look back at what stress is, your signals, triggers and diary.",
+     "p": [
+      "You learned that stress is natural and shows up in body, mind and behaviour.",
+      "You found your own signals and triggers and started a diary and a relief menu.",
+      "You also learned to name feelings, pause and be kind to yourself."
+     ],
+     "q": "Which idea from this first month helped you the most?",
+     "c": "Pick your favourite tool from this month and use it once today."
+    },
+    "de": {
+     "t": "Rückblick auf Monat eins",
+     "g": "Blicke zurück auf Stress, deine Signale, Auslöser und dein Tagebuch.",
+     "p": [
+      "Du hast gelernt, dass Stress natürlich ist und sich in Körper, Gedanken und Verhalten zeigt.",
+      "Du hast eigene Signale und Auslöser gefunden und ein Tagebuch und eine Entlastungsliste begonnen.",
+      "Außerdem hast du geübt, Gefühle zu benennen, innezuhalten und freundlich zu dir zu sein."
+     ],
+     "q": "Welche Idee aus diesem ersten Monat hat dir am meisten geholfen?",
+     "c": "Wähle dein Lieblingswerkzeug aus diesem Monat und nutze es heute einmal."
+    },
+    "es": {
+     "t": "Repaso del primer mes",
+     "g": "Repasa qué es el estrés, tus señales, desencadenantes y tu diario.",
+     "p": [
+      "Aprendiste que el estrés es natural y se muestra en el cuerpo, la mente y la conducta.",
+      "Encontraste tus señales y desencadenantes y empezaste un diario y un menú de alivio.",
+      "También aprendiste a nombrar sentimientos, hacer pausas y ser amable contigo."
+     ],
+     "q": "¿Qué idea de este primer mes te ayudó más?",
+     "c": "Elige tu herramienta favorita de este mes y úsala una vez hoy."
+    },
+    "fr": {
+     "t": "Bilan du premier mois",
+     "g": "Reviens sur ce qu'est le stress, tes signaux, tes déclencheurs et ton journal.",
+     "p": [
+      "Tu as appris que le stress est naturel et se montre dans le corps, l'esprit et le comportement.",
+      "Tu as trouvé tes signaux et déclencheurs et commencé un journal et un menu de détente.",
+      "Tu as aussi appris à nommer tes émotions, à faire une pause et à être bienveillant envers toi."
+     ],
+     "q": "Quelle idée de ce premier mois t'a le plus aidé ?",
+     "c": "Choisis ton outil préféré de ce mois et utilise-le une fois aujourd'hui."
+    },
+    "it": {
+     "t": "Ripasso del primo mese",
+     "g": "Ripercorri cos'è lo stress, i tuoi segnali, i fattori scatenanti e il diario.",
+     "p": [
+      "Hai imparato che lo stress è naturale e si manifesta in corpo, mente e comportamento.",
+      "Hai trovato i tuoi segnali e fattori scatenanti e iniziato un diario e un menu del sollievo.",
+      "Hai anche imparato a nominare le emozioni, fare una pausa ed essere gentile con te."
+     ],
+     "q": "Quale idea di questo primo mese ti ha aiutato di più?",
+     "c": "Scegli il tuo strumento preferito del mese e usalo una volta oggi."
+    },
+    "pt": {
+     "t": "Revisão do primeiro mês",
+     "g": "Revê o que é o stress, os teus sinais, gatilhos e o teu diário.",
+     "p": [
+      "Aprendeste que o stress é natural e se mostra no corpo, na mente e no comportamento.",
+      "Encontraste os teus sinais e gatilhos e começaste um diário e um menu de alívio.",
+      "Também aprendeste a nomear sentimentos, fazer pausas e ser gentil contigo."
+     ],
+     "q": "Que ideia deste primeiro mês mais te ajudou?",
+     "c": "Escolhe a tua ferramenta preferida deste mês e usa-a uma vez hoje."
+    },
+    "pt_BR": {
+     "t": "Revisão do primeiro mês",
+     "g": "Reveja o que é o estresse, seus sinais, gatilhos e o seu diário.",
+     "p": [
+      "Você aprendeu que o estresse é natural e aparece no corpo, na mente e no comportamento.",
+      "Você encontrou seus sinais e gatilhos e começou um diário e um menu de alívio.",
+      "Também aprendeu a nomear sentimentos, fazer pausas e ser gentil consigo."
+     ],
+     "q": "Que ideia deste primeiro mês mais ajudou você?",
+     "c": "Escolha sua ferramenta preferida deste mês e use-a uma vez hoje."
+    }
+   }
+  }
+ ]
+}

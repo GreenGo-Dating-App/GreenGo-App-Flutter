@@ -19,6 +19,8 @@ import '../shared/firebaseAdmin';
 import { BuddySettings, utcDay } from './model';
 
 export const COURSE_DAYS = 365;
+/** Path length for a topic: the contiguous lessons written so far (owner 2026-10-24: 30 for now). */
+export const courseDays = (c: Course | null) => Math.min(COURSE_DAYS, Math.max(1, Number(c?.lessonsReady) || COURSE_DAYS));
 const TTL_MS = 10 * 60_000;
 const ASKED_KEEP = 150;
 
@@ -50,11 +52,11 @@ export const getQuestions = (topic: string) =>
   cached<Question[]>(`q:${topic}`, async () => ((await db().doc(`buddy_questions/${topic}`).get()).data()?.questions ?? []) as Question[]);
 
 /** The stored state, with the next lesson unlocked when yesterday's (or older) was done. */
-export function currentCourse(raw: unknown, nowMs = Date.now()): CourseState {
+export function currentCourse(raw: unknown, nowMs = Date.now(), maxDay = COURSE_DAYS): CourseState {
   const c = (raw && typeof raw === 'object' ? raw : {}) as Partial<CourseState>;
-  let day = Math.min(COURSE_DAYS, Math.max(1, Math.floor(Number(c.day) || 1)));
+  let day = Math.min(maxDay, Math.max(1, Math.floor(Number(c.day) || 1)));
   let doneOn = typeof c.doneOn === 'string' ? c.doneOn : null;
-  if (doneOn && doneOn < utcDay(nowMs) && day < COURSE_DAYS) {
+  if (doneOn && doneOn < utcDay(nowMs) && day < maxDay) {
     day += 1;
     doneOn = null;
   }
@@ -79,12 +81,15 @@ export function pickQuestions(all: Question[], lang: string, lv: string, asked: 
 }
 
 /** System-prompt block: today's lesson (in the Buddy's language) + candidate questions. */
-export function courseBlock(b: BuddySettings, state: CourseState, lesson: Lesson | null, questions: { id: string; text: string }[]): string {
+export function courseBlock(b: BuddySettings, state: CourseState, lesson: Lesson | null, questions: { id: string; text: string }[], maxDay = COURSE_DAYS): string {
   const parts: string[] = [];
   const lt = lesson?.i18n?.[b.language] ?? lesson?.i18n?.en;
   if (lesson && lt) {
+    const finished = !!state.doneOn && lesson.d >= maxDay;
+    const note = finished ? ' - the whole path is finished: celebrate it, review earlier lessons or just chat'
+      : state.doneOn ? ' - already done today: just chat, review or go deeper, next lesson tomorrow' : '';
     parts.push(
-      `TODAY'S LESSON (day ${lesson.d} of ${COURSE_DAYS}, level ${lesson.lv})${state.doneOn ? ' - already done today: just chat, review or go deeper, next lesson tomorrow' : ''}:`,
+      `TODAY'S LESSON (day ${lesson.d} of ${maxDay}, level ${lesson.lv})${note}:`,
       `Title: ${lt.t}. Goal: ${lt.g}`,
       `Key points: ${lt.p.join(' | ')}`,
       `Practice question: ${lt.q}`,

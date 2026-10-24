@@ -1,0 +1,835 @@
+{
+ "topic": "healthy_eating",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "One small change at a time",
+     "g": "See why tiny, realistic swaps last longer than big, dramatic changes.",
+     "p": [
+      "A small change, like an extra vegetable at lunch, is easy to repeat and quickly becomes normal.",
+      "Big overhauls often fade within days because they ask too much at once.",
+      "Each small win builds confidence for the next one."
+     ],
+     "q": "What is one tiny food change you could keep up for a whole month?",
+     "c": "Pick one small change and write it down where you will see it tomorrow."
+    },
+    "de": {
+     "t": "Eine kleine Veränderung nach der anderen",
+     "g": "Sieh, warum winzige, realistische Tausche länger halten als große, dramatische Umstellungen.",
+     "p": [
+      "Eine kleine Änderung, etwa mehr Gemüse zum Mittagessen, ist leicht zu wiederholen und wird schnell normal.",
+      "Große Umstellungen verpuffen oft nach Tagen, weil sie auf einmal zu viel verlangen.",
+      "Jeder kleine Erfolg gibt Selbstvertrauen für den nächsten."
+     ],
+     "q": "Welche winzige Veränderung beim Essen könntest du einen ganzen Monat durchhalten?",
+     "c": "Such dir eine kleine Veränderung aus und schreib sie dorthin, wo du sie morgen siehst."
+    },
+    "es": {
+     "t": "Un pequeño cambio cada vez",
+     "g": "Descubre por qué los cambios pequeños y realistas duran más que los grandes y drásticos.",
+     "p": [
+      "Un cambio pequeño, como una verdura extra en el almuerzo, es fácil de repetir y pronto se vuelve normal.",
+      "Los grandes giros suelen desaparecer en días porque piden demasiado de golpe.",
+      "Cada pequeño logro te da confianza para el siguiente."
+     ],
+     "q": "¿Qué pequeño cambio con la comida podrías mantener un mes entero?",
+     "c": "Elige un cambio pequeño y anótalo donde lo veas mañana."
+    },
+    "fr": {
+     "t": "Un petit changement à la fois",
+     "g": "Vois pourquoi de petits échanges réalistes durent plus longtemps que de grands bouleversements.",
+     "p": [
+      "Un petit changement, comme un légume de plus au déjeuner, se répète facilement et devient vite normal.",
+      "Les grands bouleversements s'éteignent souvent en quelques jours car ils demandent trop d'un coup.",
+      "Chaque petite victoire donne confiance pour la suivante."
+     ],
+     "q": "Quel minuscule changement alimentaire pourrais-tu tenir un mois entier ?",
+     "c": "Choisis un petit changement et note-le là où tu le verras demain."
+    },
+    "it": {
+     "t": "Un piccolo cambiamento alla volta",
+     "g": "Scopri perché piccoli scambi realistici durano più dei grandi cambiamenti drastici.",
+     "p": [
+      "Un piccolo cambiamento, come una verdura in più a pranzo, è facile da ripetere e diventa presto normale.",
+      "Le grandi rivoluzioni spesso svaniscono in pochi giorni perché chiedono troppo tutto insieme.",
+      "Ogni piccola vittoria dà fiducia per la prossima."
+     ],
+     "q": "Quale minuscolo cambiamento a tavola potresti mantenere per un mese intero?",
+     "c": "Scegli un piccolo cambiamento e scrivilo dove lo vedrai domani."
+    },
+    "pt": {
+     "t": "Uma pequena mudança de cada vez",
+     "g": "Percebe porque é que pequenas trocas realistas duram mais do que grandes mudanças drásticas.",
+     "p": [
+      "Uma pequena mudança, como um legume extra ao almoço, é fácil de repetir e depressa se torna normal.",
+      "As grandes revoluções costumam desaparecer em dias porque pedem demasiado de uma vez.",
+      "Cada pequena vitória dá confiança para a seguinte."
+     ],
+     "q": "Que pequena mudança na alimentação poderias manter durante um mês inteiro?",
+     "c": "Escolhe uma pequena mudança e escreve-a onde a vejas amanhã."
+    },
+    "pt_BR": {
+     "t": "Uma pequena mudança de cada vez",
+     "g": "Entenda por que pequenas trocas realistas duram mais do que grandes mudanças drásticas.",
+     "p": [
+      "Uma pequena mudança, como um legume extra no almoço, é fácil de repetir e logo vira normal.",
+      "Grandes reviravoltas costumam sumir em dias porque pedem demais de uma vez.",
+      "Cada pequena vitória dá confiança para a próxima."
+     ],
+     "q": "Que pequena mudança na alimentação você poderia manter por um mês inteiro?",
+     "c": "Escolha uma pequena mudança e anote onde você vai ver amanhã."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Adding instead of cutting",
+     "g": "Focus on what you can add to meals, like a vegetable or a handful of beans.",
+     "p": [
+      "Adding foods feels positive: a handful of spinach or beans makes a meal richer.",
+      "When there is more good stuff on the plate, you rarely feel deprived.",
+      "Think of building a meal up, not taking things away."
+     ],
+     "q": "Which meal of yours could use one extra vegetable or a handful of beans?",
+     "c": "At your next meal, add one thing to your plate rather than taking anything away."
+    },
+    "de": {
+     "t": "Hinzufügen statt Weglassen",
+     "g": "Konzentriere dich darauf, was du Mahlzeiten hinzufügen kannst, etwa Gemüse oder eine Handvoll Bohnen.",
+     "p": [
+      "Hinzufügen fühlt sich positiv an: eine Handvoll Spinat oder Bohnen macht ein Essen reichhaltiger.",
+      "Wenn mehr Gutes auf dem Teller liegt, fühlst du dich selten verzichtend.",
+      "Denk daran, eine Mahlzeit aufzubauen, statt etwas wegzunehmen."
+     ],
+     "q": "Welche deiner Mahlzeiten könnte ein extra Gemüse oder eine Handvoll Bohnen vertragen?",
+     "c": "Füge bei der nächsten Mahlzeit etwas hinzu, statt etwas wegzunehmen."
+    },
+    "es": {
+     "t": "Sumar en lugar de quitar",
+     "g": "Céntrate en lo que puedes añadir a las comidas, como una verdura o un puñado de legumbres.",
+     "p": [
+      "Añadir se siente positivo: un puñado de espinacas o legumbres enriquece una comida.",
+      "Cuando hay más cosas buenas en el plato, rara vez sientes privación.",
+      "Piensa en construir una comida, no en quitar cosas."
+     ],
+     "q": "¿Qué comida tuya podría llevar una verdura extra o un puñado de legumbres?",
+     "c": "En tu próxima comida, añade algo al plato en lugar de quitar nada."
+    },
+    "fr": {
+     "t": "Ajouter plutôt que retirer",
+     "g": "Concentre-toi sur ce que tu peux ajouter aux repas, comme un légume ou une poignée de haricots.",
+     "p": [
+      "Ajouter fait du bien : une poignée d'épinards ou de haricots enrichit un repas.",
+      "Quand il y a plus de bonnes choses dans l'assiette, on se sent rarement privé.",
+      "Pense à construire un repas, pas à enlever des choses."
+     ],
+     "q": "Quel repas pourrait accueillir un légume en plus ou une poignée de haricots ?",
+     "c": "Au prochain repas, ajoute quelque chose à ton assiette plutôt que d'enlever quoi que ce soit."
+    },
+    "it": {
+     "t": "Aggiungere invece di togliere",
+     "g": "Concentrati su ciò che puoi aggiungere ai pasti, come una verdura o una manciata di fagioli.",
+     "p": [
+      "Aggiungere dà una sensazione positiva: una manciata di spinaci o fagioli arricchisce un pasto.",
+      "Quando nel piatto c'è più roba buona, ci si sente raramente privati.",
+      "Pensa a costruire un pasto, non a togliere cose."
+     ],
+     "q": "Quale tuo pasto potrebbe accogliere una verdura in più o una manciata di fagioli?",
+     "c": "Al prossimo pasto aggiungi qualcosa al piatto invece di togliere qualcosa."
+    },
+    "pt": {
+     "t": "Juntar em vez de tirar",
+     "g": "Foca-te no que podes juntar às refeições, como um legume ou um punhado de feijão.",
+     "p": [
+      "Juntar sabe a positivo: um punhado de espinafres ou feijão enriquece uma refeição.",
+      "Quando há mais coisas boas no prato, raramente te sentes privado.",
+      "Pensa em construir uma refeição, não em tirar coisas."
+     ],
+     "q": "Que refeição tua podia levar um legume extra ou um punhado de feijão?",
+     "c": "Na próxima refeição, junta algo ao prato em vez de tirares o que quer que seja."
+    },
+    "pt_BR": {
+     "t": "Somar em vez de tirar",
+     "g": "Foque no que você pode acrescentar às refeições, como um legume ou um punhado de feijão.",
+     "p": [
+      "Acrescentar é positivo: um punhado de espinafre ou feijão deixa a refeição mais rica.",
+      "Quando há mais coisas boas no prato, você raramente se sente privado.",
+      "Pense em montar uma refeição, não em tirar coisas."
+     ],
+     "q": "Que refeição sua poderia ganhar um legume extra ou um punhado de feijão?",
+     "c": "Na próxima refeição, acrescente algo ao prato em vez de tirar qualquer coisa."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Whole foods versus highly processed foods",
+     "g": "Take a friendly look at the spectrum from fresh foods to ready-made ones.",
+     "p": [
+      "Foods range from fresh and simple, like apples, to lightly processed, like canned beans, to highly processed.",
+      "Processing is not always bad: freezing, canning and baking can be handy and useful.",
+      "Aim for a good share of simple, recognisable foods, and enjoy the rest too."
+     ],
+     "q": "Which ready-made foods do you reach for most, and why do you like them?",
+     "c": "Today, swap one packaged item for a simpler version, such as a whole fruit for a fruit snack."
+    },
+    "de": {
+     "t": "Vollwertige und stark verarbeitete Lebensmittel",
+     "g": "Wirf einen freundlichen Blick auf das Spektrum von frischen bis zu fertigen Lebensmitteln.",
+     "p": [
+      "Lebensmittel reichen von frisch und schlicht, wie Äpfeln, über leicht verarbeitet, wie Dosenbohnen, bis stark verarbeitet.",
+      "Verarbeitung ist nicht immer schlecht: Einfrieren, Einkochen und Backen können praktisch und nützlich sein.",
+      "Strebe einen guten Anteil einfacher, erkennbarer Lebensmittel an und genieße auch den Rest."
+     ],
+     "q": "Zu welchen Fertigprodukten greifst du am häufigsten, und was magst du daran?",
+     "c": "Tausche heute ein verpacktes Produkt gegen eine einfachere Variante, etwa ein ganzes Obststück statt eines Fruchtsnacks."
+    },
+    "es": {
+     "t": "Alimentos naturales y muy procesados",
+     "g": "Echa un vistazo amable al espectro que va de lo fresco a lo ya preparado.",
+     "p": [
+      "Los alimentos van de lo fresco y sencillo, como una manzana, a lo poco procesado, como las legumbres en conserva, y a lo muy procesado.",
+      "Procesar no siempre es malo: congelar, enlatar u hornear puede ser práctico y útil.",
+      "Busca una buena parte de alimentos sencillos y reconocibles, y disfruta también del resto."
+     ],
+     "q": "¿Qué alimentos preparados eliges más y por qué te gustan?",
+     "c": "Hoy cambia un producto envasado por una versión más simple, como una fruta entera en lugar de un snack de fruta."
+    },
+    "fr": {
+     "t": "Aliments bruts et aliments très transformés",
+     "g": "Jette un regard bienveillant sur l'éventail qui va du frais au prêt à manger.",
+     "p": [
+      "Les aliments vont du frais et simple, comme une pomme, au peu transformé, comme les haricots en conserve, puis au très transformé.",
+      "Transformer n'est pas toujours mauvais : congeler, mettre en conserve ou cuire peut être pratique et utile.",
+      "Vise une bonne part d'aliments simples et reconnaissables, et savoure aussi le reste."
+     ],
+     "q": "Quels aliments tout prêts choisis-tu le plus souvent, et pourquoi les aimes-tu ?",
+     "c": "Aujourd'hui, remplace un produit emballé par une version plus simple, comme un fruit entier à la place d'une pâte de fruits."
+    },
+    "it": {
+     "t": "Cibi interi e cibi molto elaborati",
+     "g": "Dai uno sguardo amichevole allo spettro che va dal fresco al pronto.",
+     "p": [
+      "I cibi vanno dal fresco e semplice, come una mela, al poco lavorato, come i legumi in scatola, fino al molto lavorato.",
+      "Lavorare non è sempre un male: congelare, conservare e cuocere possono essere pratici e utili.",
+      "Punta a una buona parte di cibi semplici e riconoscibili, e goditi anche il resto."
+     ],
+     "q": "Quali cibi pronti scegli più spesso e perché ti piacciono?",
+     "c": "Oggi sostituisci un prodotto confezionato con una versione più semplice, come un frutto intero al posto di uno snack alla frutta."
+    },
+    "pt": {
+     "t": "Alimentos inteiros e muito processados",
+     "g": "Dá uma vista de olhos amigável ao espetro que vai do fresco ao pronto.",
+     "p": [
+      "Os alimentos vão do fresco e simples, como uma maçã, ao pouco processado, como feijão em lata, até ao muito processado.",
+      "Processar nem sempre é mau: congelar, enlatar e cozer podem ser práticos e úteis.",
+      "Procura ter uma boa parte de alimentos simples e reconhecíveis e aprecia também o resto."
+     ],
+     "q": "Que alimentos prontos escolhes mais vezes e porque gostas deles?",
+     "c": "Hoje troca um produto embalado por uma versão mais simples, como uma fruta inteira em vez de um snack de fruta."
+    },
+    "pt_BR": {
+     "t": "Alimentos inteiros e muito processados",
+     "g": "Dê uma olhada amigável no espectro que vai do fresco ao pronto.",
+     "p": [
+      "Os alimentos vão do fresco e simples, como uma maçã, ao pouco processado, como feijão em lata, até o muito processado.",
+      "Processar nem sempre é ruim: congelar, enlatar e assar podem ser práticos e úteis.",
+      "Procure ter uma boa parte de alimentos simples e reconhecíveis e aproveite também o resto."
+     ],
+     "q": "Quais alimentos prontos você escolhe mais e por que gosta deles?",
+     "c": "Hoje troque um produto embalado por uma versão mais simples, como uma fruta inteira no lugar de um snack de fruta."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cooking more at home",
+     "g": "See how simple home cooking puts you in charge of ingredients and flavour.",
+     "p": [
+      "Cooking at home lets you choose the ingredients, the amount of salt and the flavours.",
+      "Simple meals count: scrambled eggs, a stir-fry or a bowl of soup are all real cooking.",
+      "It does not need skill or fancy tools, just a little time and curiosity."
+     ],
+     "q": "What is the easiest dish you can already cook, and who taught you?",
+     "c": "Cook one simple meal from scratch today, even if it only takes ten minutes."
+    },
+    "de": {
+     "t": "Mehr zu Hause kochen",
+     "g": "Erlebe, wie einfaches Kochen zu Hause dir die Kontrolle über Zutaten und Geschmack gibt.",
+     "p": [
+      "Beim Kochen zu Hause wählst du Zutaten, Salzmenge und Aromen selbst.",
+      "Einfache Gerichte zählen: Rührei, eine Gemüsepfanne oder eine Schale Suppe sind echtes Kochen.",
+      "Dafür braucht es kein Können und keine schicken Geräte, nur etwas Zeit und Neugier."
+     ],
+     "q": "Welches ist das einfachste Gericht, das du schon kochen kannst, und wer hat es dir beigebracht?",
+     "c": "Koche heute ein einfaches Essen von Grund auf, auch wenn es nur zehn Minuten dauert."
+    },
+    "es": {
+     "t": "Cocinar más en casa",
+     "g": "Descubre cómo cocinar en casa te da el control de los ingredientes y el sabor.",
+     "p": [
+      "Cocinar en casa te permite elegir los ingredientes, la cantidad de sal y los sabores.",
+      "Las comidas sencillas cuentan: unos huevos revueltos, un salteado o un plato de sopa son cocina de verdad.",
+      "No hacen falta habilidad ni aparatos sofisticados, solo algo de tiempo y curiosidad."
+     ],
+     "q": "¿Cuál es el plato más fácil que ya sabes cocinar y quién te lo enseñó?",
+     "c": "Cocina hoy una comida sencilla desde cero, aunque solo lleve diez minutos."
+    },
+    "fr": {
+     "t": "Cuisiner davantage à la maison",
+     "g": "Vois comment cuisiner simplement chez toi te donne la main sur les ingrédients et la saveur.",
+     "p": [
+      "Cuisiner à la maison permet de choisir les ingrédients, la quantité de sel et les saveurs.",
+      "Les repas simples comptent : des œufs brouillés, un sauté de légumes ou un bol de soupe sont de vraie cuisine.",
+      "Pas besoin de talent ni d'appareils sophistiqués, juste un peu de temps et de curiosité."
+     ],
+     "q": "Quel est le plat le plus facile que tu sais déjà cuisiner, et qui te l'a appris ?",
+     "c": "Cuisine aujourd'hui un repas simple à partir de zéro, même s'il ne prend que dix minutes."
+    },
+    "it": {
+     "t": "Cucinare di più a casa",
+     "g": "Scopri come cucinare semplice a casa ti dà il controllo su ingredienti e sapore.",
+     "p": [
+      "Cucinare a casa permette di scegliere gli ingredienti, la quantità di sale e i sapori.",
+      "I pasti semplici contano: uova strapazzate, un saltato di verdure o una scodella di zuppa sono vera cucina.",
+      "Non servono abilità né attrezzi sofisticati, solo un po' di tempo e curiosità."
+     ],
+     "q": "Qual è il piatto più semplice che sai già cucinare e chi te l'ha insegnato?",
+     "c": "Oggi cucina un pasto semplice da zero, anche se richiede solo dieci minuti."
+    },
+    "pt": {
+     "t": "Cozinhar mais em casa",
+     "g": "Descobre como cozinhar em casa te dá o controlo dos ingredientes e do sabor.",
+     "p": [
+      "Cozinhar em casa permite escolher os ingredientes, a quantidade de sal e os sabores.",
+      "As refeições simples contam: ovos mexidos, um salteado ou uma tigela de sopa são cozinha a sério.",
+      "Não são precisos jeito nem aparelhos sofisticados, só um pouco de tempo e curiosidade."
+     ],
+     "q": "Qual é o prato mais fácil que já sabes cozinhar e quem to ensinou?",
+     "c": "Hoje cozinha uma refeição simples de raiz, mesmo que demore só dez minutos."
+    },
+    "pt_BR": {
+     "t": "Cozinhar mais em casa",
+     "g": "Descubra como cozinhar em casa dá a você o controle dos ingredientes e do sabor.",
+     "p": [
+      "Cozinhar em casa permite escolher os ingredientes, a quantidade de sal e os sabores.",
+      "Refeições simples contam: ovos mexidos, um refogado ou uma tigela de sopa são cozinha de verdade.",
+      "Não é preciso habilidade nem aparelhos sofisticados, só um pouco de tempo e curiosidade."
+     ],
+     "q": "Qual é o prato mais fácil que você já sabe fazer e quem ensinou?",
+     "c": "Hoje cozinhe uma refeição simples do zero, mesmo que leve só dez minutos."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A simple pantry starter kit",
+     "g": "Stock a few staples like oats, rice, canned beans, tomatoes and spices for easy meals.",
+     "p": [
+      "Oats, rice or pasta, canned beans and tomatoes can become dozens of meals.",
+      "Add a few spices and a bottle of oil, and you can always cook something tasty.",
+      "Start with what you will really use; a small pantry is better than a crowded one."
+     ],
+     "q": "Which three pantry staples would you want on hand for a quick dinner?",
+     "c": "Check your cupboard today and note one staple you would like to add next time."
+    },
+    "de": {
+     "t": "Ein einfacher Vorratsschrank für den Start",
+     "g": "Leg dir ein paar Basics wie Haferflocken, Reis, Dosenbohnen, Tomaten und Gewürze für schnelle Mahlzeiten zu.",
+     "p": [
+      "Haferflocken, Reis oder Nudeln, Dosenbohnen und Tomaten ergeben Dutzende Gerichte.",
+      "Mit ein paar Gewürzen und einer Flasche Öl kannst du immer etwas Leckeres kochen.",
+      "Fang mit dem an, was du wirklich verwendest; ein kleiner Vorrat ist besser als ein überfüllter."
+     ],
+     "q": "Welche drei Vorräte hättest du gern zur Hand für ein schnelles Abendessen?",
+     "c": "Wirf heute einen Blick in deinen Schrank und notiere einen Basisartikel, den du beim nächsten Mal ergänzen möchtest."
+    },
+    "es": {
+     "t": "Una despensa básica para empezar",
+     "g": "Ten a mano algunos básicos como avena, arroz, legumbres en conserva, tomate y especias para comidas fáciles.",
+     "p": [
+      "Avena, arroz o pasta, legumbres en conserva y tomate pueden convertirse en decenas de comidas.",
+      "Con unas especias y una botella de aceite siempre podrás cocinar algo rico.",
+      "Empieza con lo que de verdad vas a usar; una despensa pequeña es mejor que una abarrotada."
+     ],
+     "q": "¿Qué tres básicos querrías tener a mano para una cena rápida?",
+     "c": "Revisa hoy tu despensa y anota un básico que quieras añadir la próxima vez."
+    },
+    "fr": {
+     "t": "Un garde-manger de départ tout simple",
+     "g": "Prévois quelques basiques comme flocons d'avoine, riz, haricots en conserve, tomates et épices pour des repas faciles.",
+     "p": [
+      "Flocons d'avoine, riz ou pâtes, haricots en conserve et tomates deviennent des dizaines de repas.",
+      "Avec quelques épices et une bouteille d'huile, tu peux toujours cuisiner quelque chose de bon.",
+      "Commence par ce que tu utiliseras vraiment ; un petit placard vaut mieux qu'un placard bondé."
+     ],
+     "q": "Quels trois basiques aimerais-tu avoir sous la main pour un dîner rapide ?",
+     "c": "Jette un œil à ton placard aujourd'hui et note un basique à ajouter la prochaine fois."
+    },
+    "it": {
+     "t": "Una dispensa base per iniziare",
+     "g": "Tieni a portata di mano alcuni fondamentali come avena, riso, legumi in scatola, pomodori e spezie per pasti facili.",
+     "p": [
+      "Avena, riso o pasta, legumi in scatola e pomodori possono diventare decine di pasti.",
+      "Con qualche spezia e una bottiglia d'olio puoi sempre cucinare qualcosa di buono.",
+      "Parti da ciò che userai davvero; una dispensa piccola è meglio di una stracolma."
+     ],
+     "q": "Quali tre fondamentali vorresti avere sempre per una cena veloce?",
+     "c": "Dai oggi un'occhiata alla dispensa e annota un fondamentale da aggiungere la prossima volta."
+    },
+    "pt": {
+     "t": "Uma despensa básica para começar",
+     "g": "Tem à mão alguns básicos como aveia, arroz, feijão em lata, tomate e especiarias para refeições fáceis.",
+     "p": [
+      "Aveia, arroz ou massa, feijão em lata e tomate podem dar dezenas de refeições.",
+      "Com umas especiarias e uma garrafa de azeite, podes sempre cozinhar algo saboroso.",
+      "Começa pelo que vais mesmo usar; uma despensa pequena é melhor do que uma cheia."
+     ],
+     "q": "Que três básicos gostarias de ter à mão para um jantar rápido?",
+     "c": "Hoje espreita a despensa e anota um básico que queiras juntar da próxima vez."
+    },
+    "pt_BR": {
+     "t": "Uma despensa básica para começar",
+     "g": "Tenha à mão alguns básicos como aveia, arroz, feijão em lata, tomate e temperos para refeições fáceis.",
+     "p": [
+      "Aveia, arroz ou macarrão, feijão em lata e tomate podem virar dezenas de refeições.",
+      "Com alguns temperos e uma garrafa de azeite, você sempre consegue fazer algo gostoso.",
+      "Comece pelo que você vai realmente usar; uma despensa pequena é melhor do que uma lotada."
+     ],
+     "q": "Quais três básicos você gostaria de ter à mão para um jantar rápido?",
+     "c": "Hoje dê uma olhada na despensa e anote um básico que quer incluir da próxima vez."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fresh, frozen and canned",
+     "g": "Learn why frozen and canned vegetables and fruit can be smart, nutritious choices.",
+     "p": [
+      "Frozen produce is usually frozen soon after picking, so it keeps much of its goodness.",
+      "Canned beans, tomatoes and fish keep for months and make meals quick.",
+      "All three forms count, so use whichever fits your week, budget and storage."
+     ],
+     "q": "Which frozen or canned food do you already use and enjoy?",
+     "c": "Add one frozen or canned vegetable or fruit to a meal today."
+    },
+    "de": {
+     "t": "Frisch, tiefgekühlt und aus der Dose",
+     "g": "Erfahre, warum tiefgekühltes und konserviertes Gemüse und Obst kluge, nährstoffreiche Entscheidungen sein können.",
+     "p": [
+      "Tiefkühlware wird meist kurz nach der Ernte eingefroren und behält viel von ihrem Wert.",
+      "Dosenbohnen, Tomaten und Fisch halten monatelang und machen Mahlzeiten schnell.",
+      "Alle drei Formen zählen, nimm also, was zu Woche, Budget und Platz passt."
+     ],
+     "q": "Welches Tiefkühl- oder Dosenprodukt nutzt und magst du schon?",
+     "c": "Füge heute einer Mahlzeit ein tiefgekühltes oder konserviertes Gemüse oder Obst hinzu."
+    },
+    "es": {
+     "t": "Fresco, congelado y en conserva",
+     "g": "Aprende por qué las verduras y frutas congeladas o en conserva pueden ser elecciones inteligentes y nutritivas.",
+     "p": [
+      "Los productos congelados suelen congelarse poco después de la cosecha, así que conservan gran parte de sus bondades.",
+      "Las legumbres, el tomate y el pescado en conserva duran meses y aceleran las comidas.",
+      "Las tres formas cuentan, así que usa la que encaje con tu semana, presupuesto y espacio."
+     ],
+     "q": "¿Qué alimento congelado o en conserva ya usas y disfrutas?",
+     "c": "Hoy añade a una comida una verdura o fruta congelada o en conserva."
+    },
+    "fr": {
+     "t": "Frais, surgelé et en conserve",
+     "g": "Découvre pourquoi légumes et fruits surgelés ou en conserve peuvent être des choix malins et nutritifs.",
+     "p": [
+      "Les produits surgelés le sont en général peu après la récolte et gardent une grande partie de leurs qualités.",
+      "Haricots, tomates et poisson en conserve se gardent des mois et accélèrent les repas.",
+      "Les trois formes comptent : choisis celle qui convient à ta semaine, ton budget et ta place."
+     ],
+     "q": "Quel aliment surgelé ou en conserve utilises-tu déjà avec plaisir ?",
+     "c": "Aujourd'hui, ajoute à un repas un légume ou un fruit surgelé ou en conserve."
+    },
+    "it": {
+     "t": "Fresco, surgelato e in scatola",
+     "g": "Scopri perché verdura e frutta surgelate o in scatola possono essere scelte intelligenti e nutrienti.",
+     "p": [
+      "I prodotti surgelati di solito sono congelati poco dopo la raccolta e mantengono gran parte delle loro qualità.",
+      "Legumi, pomodori e pesce in scatola durano mesi e velocizzano i pasti.",
+      "Tutte e tre le forme contano: usa quella adatta alla tua settimana, al budget e allo spazio."
+     ],
+     "q": "Quale alimento surgelato o in scatola usi già e ti piace?",
+     "c": "Oggi aggiungi a un pasto una verdura o frutta surgelata o in scatola."
+    },
+    "pt": {
+     "t": "Fresco, congelado e em conserva",
+     "g": "Aprende porque é que legumes e fruta congelados ou em conserva podem ser escolhas inteligentes e nutritivas.",
+     "p": [
+      "Os produtos congelados costumam ser congelados logo após a colheita, por isso mantêm boa parte das suas qualidades.",
+      "Feijão, tomate e peixe em conserva duram meses e tornam as refeições rápidas.",
+      "As três formas contam, por isso usa a que se ajusta à tua semana, orçamento e espaço."
+     ],
+     "q": "Que alimento congelado ou em conserva já usas e aprecias?",
+     "c": "Hoje junta a uma refeição um legume ou fruta congelado ou em conserva."
+    },
+    "pt_BR": {
+     "t": "Fresco, congelado e enlatado",
+     "g": "Aprenda por que legumes e frutas congelados ou enlatados podem ser escolhas inteligentes e nutritivas.",
+     "p": [
+      "Os produtos congelados costumam ser congelados logo após a colheita, então mantêm boa parte das suas qualidades.",
+      "Feijão, tomate e peixe enlatados duram meses e deixam as refeições rápidas.",
+      "As três formas contam, então use a que combina com sua semana, orçamento e espaço."
+     ],
+     "q": "Que alimento congelado ou enlatado você já usa e curte?",
+     "c": "Hoje inclua em uma refeição um legume ou fruta congelado ou enlatado."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Herbs and spices for flavour",
+     "g": "Use herbs and spices to make food exciting while relying less on salt.",
+     "p": [
+      "Herbs like basil, parsley and coriander add freshness; spices like cumin and paprika add warmth.",
+      "A squeeze of lemon, some garlic or a pinch of chilli can lift a simple dish.",
+      "Flavour from herbs and spices is a friendly way to need less salt."
+     ],
+     "q": "Which herb or spice smells like home to you?",
+     "c": "Season one meal today with a herb or spice you have not used for a while."
+    },
+    "de": {
+     "t": "Kräuter und Gewürze für Geschmack",
+     "g": "Nutze Kräuter und Gewürze, um Essen spannend zu machen und weniger Salz zu brauchen.",
+     "p": [
+      "Kräuter wie Basilikum, Petersilie und Koriander bringen Frische; Gewürze wie Kreuzkümmel und Paprika Wärme.",
+      "Ein Spritzer Zitrone, etwas Knoblauch oder eine Prise Chili kann ein einfaches Gericht aufwerten.",
+      "Aroma aus Kräutern und Gewürzen ist ein freundlicher Weg, weniger Salz zu brauchen."
+     ],
+     "q": "Welches Kraut oder Gewürz riecht für dich nach Zuhause?",
+     "c": "Würze heute ein Essen mit einem Kraut oder Gewürz, das du lange nicht benutzt hast."
+    },
+    "es": {
+     "t": "Hierbas y especias para dar sabor",
+     "g": "Usa hierbas y especias para animar la comida y depender menos de la sal.",
+     "p": [
+      "Hierbas como albahaca, perejil y cilantro aportan frescura; especias como comino y pimentón, calidez.",
+      "Un chorrito de limón, un poco de ajo o una pizca de chile pueden realzar un plato sencillo.",
+      "El sabor de hierbas y especias es una forma amable de necesitar menos sal."
+     ],
+     "q": "¿Qué hierba o especia te huele a casa?",
+     "c": "Hoy sazona una comida con una hierba o especia que hace tiempo no usas."
+    },
+    "fr": {
+     "t": "Herbes et épices pour la saveur",
+     "g": "Utilise herbes et épices pour égayer les plats et compter moins sur le sel.",
+     "p": [
+      "Les herbes comme basilic, persil et coriandre apportent de la fraîcheur ; les épices comme cumin et paprika, de la chaleur.",
+      "Un filet de citron, un peu d'ail ou une pincée de piment peut relever un plat simple.",
+      "Le goût des herbes et des épices est une façon douce de se contenter de moins de sel."
+     ],
+     "q": "Quelle herbe ou épice sent la maison pour toi ?",
+     "c": "Aujourd'hui, assaisonne un repas avec une herbe ou une épice que tu n'as pas utilisée depuis longtemps."
+    },
+    "it": {
+     "t": "Erbe e spezie per dare sapore",
+     "g": "Usa erbe e spezie per rendere il cibo emozionante e contare meno sul sale.",
+     "p": [
+      "Erbe come basilico, prezzemolo e coriandolo portano freschezza; spezie come cumino e paprika, calore.",
+      "Una spremuta di limone, un po' d'aglio o un pizzico di peperoncino può rialzare un piatto semplice.",
+      "Il sapore di erbe e spezie è un modo gentile per aver bisogno di meno sale."
+     ],
+     "q": "Quale erba o spezia ha per te il profumo di casa?",
+     "c": "Oggi condisci un pasto con un'erba o una spezia che non usi da un po'."
+    },
+    "pt": {
+     "t": "Ervas e especiarias para dar sabor",
+     "g": "Usa ervas e especiarias para animar a comida e depender menos do sal.",
+     "p": [
+      "Ervas como manjericão, salsa e coentros dão frescura; especiarias como cominhos e colorau dão calor.",
+      "Um fio de limão, um pouco de alho ou uma pitada de piri-piri pode realçar um prato simples.",
+      "O sabor das ervas e especiarias é uma forma simpática de precisar de menos sal."
+     ],
+     "q": "Que erva ou especiaria te cheira a casa?",
+     "c": "Hoje tempera uma refeição com uma erva ou especiaria que já não usas há algum tempo."
+    },
+    "pt_BR": {
+     "t": "Ervas e temperos para dar sabor",
+     "g": "Use ervas e temperos para animar a comida e depender menos do sal.",
+     "p": [
+      "Ervas como manjericão, salsinha e coentro dão frescor; temperos como cominho e páprica dão calor.",
+      "Um fio de limão, um pouco de alho ou uma pitada de pimenta pode realçar um prato simples.",
+      "O sabor das ervas e dos temperos é um jeito amigável de precisar de menos sal."
+     ],
+     "q": "Que erva ou tempero tem cheiro de casa para você?",
+     "c": "Hoje tempere uma refeição com uma erva ou tempero que você não usa há algum tempo."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Getting to know salt",
+     "g": "Learn where most salt in meals comes from and easy ways to enjoy food with less of it.",
+     "p": [
+      "Much of the salt we eat comes from bread, sauces, soups and packaged foods, not only the shaker.",
+      "Tastes adjust: after a few weeks with a little less salt, food often tastes fresh again.",
+      "Lemon, herbs and spices can fill in the flavour while you ease back gently."
+     ],
+     "q": "Where do you think most of the salt in your day comes from?",
+     "c": "Taste your food before adding salt today, and only add a little if you still want it."
+    },
+    "de": {
+     "t": "Salz kennenlernen",
+     "g": "Erfahre, woher das meiste Salz in Mahlzeiten kommt und wie du mit weniger genießen kannst.",
+     "p": [
+      "Viel Salz stammt aus Brot, Soßen, Suppen und Fertigprodukten, nicht nur aus dem Salzstreuer.",
+      "Der Geschmack gewöhnt sich um: Nach ein paar Wochen mit etwas weniger Salz schmeckt Essen oft wieder frisch.",
+      "Zitrone, Kräuter und Gewürze füllen den Geschmack aus, während du sanft zurückschraubst."
+     ],
+     "q": "Woher kommt wohl das meiste Salz in deinem Tag?",
+     "c": "Probiere dein Essen heute, bevor du nachsalzt, und nimm nur wenig, falls du es noch willst."
+    },
+    "es": {
+     "t": "Conocer la sal",
+     "g": "Descubre de dónde viene la mayor parte de la sal de las comidas y formas fáciles de disfrutar con menos.",
+     "p": [
+      "Gran parte de la sal que tomamos viene del pan, las salsas, las sopas y los envasados, no solo del salero.",
+      "El gusto se adapta: tras unas semanas con algo menos de sal, la comida suele saber fresca otra vez.",
+      "Limón, hierbas y especias aportan sabor mientras reduces poco a poco."
+     ],
+     "q": "¿De dónde crees que viene la mayor parte de la sal de tu día?",
+     "c": "Hoy prueba tu comida antes de añadir sal y pon solo un poco si aún la quieres."
+    },
+    "fr": {
+     "t": "Faire connaissance avec le sel",
+     "g": "Découvre d'où vient l'essentiel du sel des repas et des façons simples de savourer avec moins.",
+     "p": [
+      "Beaucoup de sel vient du pain, des sauces, des soupes et des produits emballés, pas seulement de la salière.",
+      "Le goût s'adapte : après quelques semaines avec un peu moins de sel, les aliments retrouvent souvent du relief.",
+      "Citron, herbes et épices comblent la saveur pendant que tu réduis doucement."
+     ],
+     "q": "D'où vient selon toi l'essentiel du sel de ta journée ?",
+     "c": "Aujourd'hui, goûte ton plat avant de saler et n'ajoute qu'un peu de sel si tu en veux encore."
+    },
+    "it": {
+     "t": "Conoscere il sale",
+     "g": "Scopri da dove viene la maggior parte del sale nei pasti e modi facili per gustare con meno.",
+     "p": [
+      "Molto sale arriva da pane, salse, zuppe e prodotti confezionati, non solo dalla saliera.",
+      "Il gusto si adatta: dopo qualche settimana con un po' meno sale, il cibo spesso torna a sapere di fresco.",
+      "Limone, erbe e spezie riempiono il sapore mentre riduci con gentilezza."
+     ],
+     "q": "Da dove pensi che arrivi la maggior parte del sale della tua giornata?",
+     "c": "Oggi assaggia il cibo prima di salare e aggiungine solo un po' se ne hai ancora voglia."
+    },
+    "pt": {
+     "t": "Conhecer o sal",
+     "g": "Descobre de onde vem a maior parte do sal das refeições e formas fáceis de apreciar com menos.",
+     "p": [
+      "Muito do sal vem do pão, dos molhos, das sopas e dos produtos embalados, não só do saleiro.",
+      "O paladar adapta-se: após umas semanas com um pouco menos de sal, a comida volta muitas vezes a saber a fresco.",
+      "Limão, ervas e especiarias dão sabor enquanto reduzes devagar."
+     ],
+     "q": "De onde achas que vem a maior parte do sal do teu dia?",
+     "c": "Hoje prova a comida antes de pôr sal e põe só um pouco se ainda quiseres."
+    },
+    "pt_BR": {
+     "t": "Conhecer o sal",
+     "g": "Descubra de onde vem a maior parte do sal das refeições e jeitos fáceis de aproveitar com menos.",
+     "p": [
+      "Muito do sal vem do pão, dos molhos, das sopas e dos produtos embalados, não só do saleiro.",
+      "O paladar se adapta: depois de algumas semanas com um pouco menos de sal, a comida costuma ter gosto de fresca de novo.",
+      "Limão, ervas e temperos dão sabor enquanto você reduz aos poucos."
+     ],
+     "q": "De onde você acha que vem a maior parte do sal do seu dia?",
+     "c": "Hoje prove a comida antes de pôr sal e coloque só um pouco se ainda quiser."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Getting to know added sugars",
+     "g": "Spot added sugars in drinks and snacks and enjoy sweet things mindfully.",
+     "p": [
+      "Added sugars are the ones put in during making, found in drinks, sweets, cereals and sauces.",
+      "The sugar naturally in whole fruit comes with fibre and is a different story.",
+      "Sweets can be part of a happy life: the aim is to notice, not to feel guilty."
+     ],
+     "q": "Which sweet food or drink do you enjoy most, and when?",
+     "c": "Check the label of one sweet drink or snack today and see whether sugar is listed."
+    },
+    "de": {
+     "t": "Zugesetzten Zucker kennenlernen",
+     "g": "Erkenne zugesetzten Zucker in Getränken und Snacks und genieße Süßes bewusst.",
+     "p": [
+      "Zugesetzter Zucker wird bei der Herstellung hinzugefügt und steckt in Getränken, Süßigkeiten, Müsli und Soßen.",
+      "Der Zucker, der natürlich in ganzem Obst steckt, kommt mit Ballaststoffen und ist etwas anderes.",
+      "Süßes darf zu einem glücklichen Leben gehören: Ziel ist Aufmerksamkeit, nicht schlechtes Gewissen."
+     ],
+     "q": "Welches süße Essen oder Getränk magst du am liebsten, und wann?",
+     "c": "Prüfe heute das Etikett eines süßen Getränks oder Snacks und schau, ob Zucker gelistet ist."
+    },
+    "es": {
+     "t": "Conocer los azúcares añadidos",
+     "g": "Detecta los azúcares añadidos en bebidas y snacks y disfruta de lo dulce con atención.",
+     "p": [
+      "Los azúcares añadidos se incorporan en la elaboración y están en bebidas, dulces, cereales y salsas.",
+      "El azúcar que lleva de forma natural la fruta entera viene con fibra y es otra cosa.",
+      "Lo dulce puede formar parte de una vida feliz: se trata de notarlo, no de sentir culpa."
+     ],
+     "q": "¿Qué dulce o bebida dulce disfrutas más y cuándo?",
+     "c": "Hoy mira la etiqueta de una bebida o snack dulce y comprueba si aparece azúcar."
+    },
+    "fr": {
+     "t": "Faire connaissance avec les sucres ajoutés",
+     "g": "Repère les sucres ajoutés dans les boissons et les en-cas et savoure le sucré en pleine conscience.",
+     "p": [
+      "Les sucres ajoutés sont mis lors de la fabrication, dans boissons, sucreries, céréales et sauces.",
+      "Le sucre naturellement présent dans le fruit entier vient avec des fibres : c'est autre chose.",
+      "Les douceurs ont leur place dans une vie heureuse : il s'agit d'y prêter attention, pas de culpabiliser."
+     ],
+     "q": "Quel aliment ou boisson sucré aimes-tu le plus, et quand ?",
+     "c": "Aujourd'hui, regarde l'étiquette d'une boisson ou d'un en-cas sucré et vois si du sucre y figure."
+    },
+    "it": {
+     "t": "Conoscere gli zuccheri aggiunti",
+     "g": "Riconosci gli zuccheri aggiunti in bevande e snack e gusta il dolce con consapevolezza.",
+     "p": [
+      "Gli zuccheri aggiunti sono quelli messi durante la produzione, in bevande, dolci, cereali e salse.",
+      "Lo zucchero naturalmente presente nella frutta intera viene con le fibre ed è un altro discorso.",
+      "I dolci possono far parte di una vita felice: lo scopo è accorgersene, non sentirsi in colpa."
+     ],
+     "q": "Quale cibo o bevanda dolce ti piace di più e quando?",
+     "c": "Oggi guarda l'etichetta di una bevanda o snack dolce e vedi se compare lo zucchero."
+    },
+    "pt": {
+     "t": "Conhecer os açúcares adicionados",
+     "g": "Deteta os açúcares adicionados em bebidas e snacks e aprecia o doce com atenção.",
+     "p": [
+      "Os açúcares adicionados são os que se põem no fabrico, em bebidas, doces, cereais e molhos.",
+      "O açúcar que existe naturalmente na fruta inteira vem com fibra e é outra coisa.",
+      "O doce pode fazer parte de uma vida feliz: trata-se de reparar, não de sentir culpa."
+     ],
+     "q": "Que doce ou bebida doce aprecias mais e quando?",
+     "c": "Hoje vê o rótulo de uma bebida ou snack doce e confirma se o açúcar aparece."
+    },
+    "pt_BR": {
+     "t": "Conhecer os açúcares adicionados",
+     "g": "Identifique os açúcares adicionados em bebidas e snacks e aproveite o doce com atenção.",
+     "p": [
+      "Os açúcares adicionados são os colocados na fabricação, em bebidas, doces, cereais e molhos.",
+      "O açúcar que existe naturalmente na fruta inteira vem com fibras e é outra coisa.",
+      "O doce pode fazer parte de uma vida feliz: trata-se de perceber, não de sentir culpa."
+     ],
+     "q": "Que doce ou bebida doce você mais curte e quando?",
+     "c": "Hoje olhe o rótulo de uma bebida ou snack doce e veja se o açúcar aparece."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fibre and why it matters",
+     "g": "Learn what fibre is, where it is found and how it supports digestion.",
+     "p": [
+      "Fibre is the part of plant foods that the body does not fully digest.",
+      "You find it in vegetables, fruit, whole grains, beans, nuts and seeds.",
+      "It helps keep digestion comfortable and meals filling, so add it gradually and drink water."
+     ],
+     "q": "Which fibre-rich foods do you already enjoy without thinking about it?",
+     "c": "Add one fibre-rich food today, such as oats, beans, an apple or whole-grain bread."
+    },
+    "de": {
+     "t": "Ballaststoffe und warum sie zählen",
+     "g": "Erfahre, was Ballaststoffe sind, wo man sie findet und wie sie die Verdauung unterstützen.",
+     "p": [
+      "Ballaststoffe sind der Teil pflanzlicher Lebensmittel, den der Körper nicht vollständig verdaut.",
+      "Du findest sie in Gemüse, Obst, Vollkorn, Hülsenfrüchten, Nüssen und Samen.",
+      "Sie helfen, die Verdauung angenehm zu halten und machen satt; steigere sie langsam und trink Wasser."
+     ],
+     "q": "Welche ballaststoffreichen Lebensmittel isst du schon gern, ohne darüber nachzudenken?",
+     "c": "Iss heute ein ballaststoffreiches Lebensmittel, etwa Haferflocken, Bohnen, einen Apfel oder Vollkornbrot."
+    },
+    "es": {
+     "t": "La fibra y por qué importa",
+     "g": "Aprende qué es la fibra, dónde se encuentra y cómo ayuda a la digestión.",
+     "p": [
+      "La fibra es la parte de los alimentos vegetales que el cuerpo no digiere por completo.",
+      "La encuentras en verduras, fruta, cereales integrales, legumbres, frutos secos y semillas.",
+      "Ayuda a que la digestión sea cómoda y las comidas sacien; añádela poco a poco y bebe agua."
+     ],
+     "q": "¿Qué alimentos ricos en fibra ya disfrutas sin pensarlo?",
+     "c": "Hoy añade un alimento rico en fibra, como avena, legumbres, una manzana o pan integral."
+    },
+    "fr": {
+     "t": "Les fibres et pourquoi elles comptent",
+     "g": "Découvre ce que sont les fibres, où on les trouve et comment elles soutiennent la digestion.",
+     "p": [
+      "Les fibres sont la partie des aliments végétaux que le corps ne digère pas complètement.",
+      "On en trouve dans les légumes, les fruits, les céréales complètes, les légumineuses, les noix et les graines.",
+      "Elles aident à garder une digestion confortable et rassasient ; ajoute-les progressivement et bois de l'eau."
+     ],
+     "q": "Quels aliments riches en fibres aimes-tu déjà sans y penser ?",
+     "c": "Aujourd'hui, ajoute un aliment riche en fibres, comme l'avoine, des haricots, une pomme ou du pain complet."
+    },
+    "it": {
+     "t": "Le fibre e perché contano",
+     "g": "Scopri cosa sono le fibre, dove si trovano e come aiutano la digestione.",
+     "p": [
+      "Le fibre sono la parte dei cibi vegetali che il corpo non digerisce del tutto.",
+      "Le trovi in verdura, frutta, cereali integrali, legumi, frutta secca e semi.",
+      "Aiutano a mantenere la digestione comoda e saziano; aggiungile gradualmente e bevi acqua."
+     ],
+     "q": "Quali cibi ricchi di fibre ti piacciono già senza pensarci?",
+     "c": "Oggi aggiungi un cibo ricco di fibre, come avena, legumi, una mela o pane integrale."
+    },
+    "pt": {
+     "t": "As fibras e porque importam",
+     "g": "Aprende o que são as fibras, onde se encontram e como ajudam a digestão.",
+     "p": [
+      "As fibras são a parte dos alimentos vegetais que o corpo não digere por completo.",
+      "Encontras fibras em legumes, fruta, cereais integrais, leguminosas, frutos secos e sementes.",
+      "Ajudam a manter a digestão confortável e a saciar; junta-as aos poucos e bebe água."
+     ],
+     "q": "Que alimentos ricos em fibra já aprecias sem pensar nisso?",
+     "c": "Hoje junta um alimento rico em fibra, como aveia, feijão, uma maçã ou pão integral."
+    },
+    "pt_BR": {
+     "t": "As fibras e por que importam",
+     "g": "Aprenda o que são as fibras, onde são encontradas e como ajudam a digestão.",
+     "p": [
+      "As fibras são a parte dos alimentos vegetais que o corpo não digere por completo.",
+      "Você encontra fibras em legumes, frutas, grãos integrais, feijões, castanhas e sementes.",
+      "Elas ajudam a manter a digestão confortável e a dar saciedade; inclua aos poucos e beba água."
+     ],
+     "q": "Que alimentos ricos em fibras você já curte sem nem pensar?",
+     "c": "Hoje inclua um alimento rico em fibras, como aveia, feijão, uma maçã ou pão integral."
+    }
+   }
+  }
+ ]
+}

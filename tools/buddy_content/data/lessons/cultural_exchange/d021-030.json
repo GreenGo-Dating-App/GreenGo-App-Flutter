@@ -1,0 +1,835 @@
+{
+ "topic": "cultural_exchange",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Homes around the world",
+     "g": "Compare apartments and houses, and whether shoes stay on or come off at the door.",
+     "p": [
+      "Many people live in apartments in big cities and in houses in villages or suburbs.",
+      "In Japan, Korea, Scandinavia and many other places, shoes come off at the door.",
+      "Homes can have a shared courtyard, a balcony garden or a family room for everyone."
+     ],
+     "q": "Do you take your shoes off at home, and what does your home feel like?",
+     "c": "Describe your favourite corner of your home in two sentences."
+    },
+    "de": {
+     "t": "Wohnen weltweit",
+     "g": "Vergleiche Wohnungen und Häuser und ob Schuhe an der Tür bleiben oder ausgezogen werden.",
+     "p": [
+      "Viele leben in Großstädten in Wohnungen und in Dörfern oder Vororten in Häusern.",
+      "In Japan, Korea, Skandinavien und vielen anderen Orten zieht man die Schuhe an der Tür aus.",
+      "Zuhause kann einen gemeinsamen Hof, einen Balkongarten oder ein Familienzimmer für alle haben."
+     ],
+     "q": "Ziehst du zu Hause die Schuhe aus, und wie fühlt sich dein Zuhause an?",
+     "c": "Beschreibe deine Lieblingsecke zu Hause in zwei Sätzen."
+    },
+    "es": {
+     "t": "Hogares del mundo",
+     "g": "Compara pisos y casas, y si los zapatos se quedan puestos o se quitan en la puerta.",
+     "p": [
+      "Mucha gente vive en pisos en las grandes ciudades y en casas en pueblos o afueras.",
+      "En Japón, Corea, Escandinavia y muchos otros lugares los zapatos se quitan en la puerta.",
+      "Un hogar puede tener patio compartido, un jardín en el balcón o un salón para todos."
+     ],
+     "q": "¿Te quitas los zapatos en casa y cómo se siente tu hogar?",
+     "c": "Describe tu rincón favorito de tu casa en dos frases."
+    },
+    "fr": {
+     "t": "Les logements dans le monde",
+     "g": "Compare appartements et maisons, et si l'on garde ou retire ses chaussures à l'entrée.",
+     "p": [
+      "Beaucoup de gens vivent en appartement dans les grandes villes et en maison dans les villages ou banlieues.",
+      "Au Japon, en Corée, en Scandinavie et ailleurs, on enlève ses chaussures à l'entrée.",
+      "Un logement peut avoir une cour partagée, un jardin sur le balcon ou une pièce pour tous."
+     ],
+     "q": "Enlèves-tu tes chaussures chez toi, et comment est ton chez-toi ?",
+     "c": "Décris ton coin préféré chez toi en deux phrases."
+    },
+    "it": {
+     "t": "Case nel mondo",
+     "g": "Confronta appartamenti e case, e se le scarpe restano o si tolgono alla porta.",
+     "p": [
+      "Molte persone vivono in appartamento nelle grandi città e in casa nei paesi o nelle periferie.",
+      "In Giappone, Corea, Scandinavia e in molti altri posti le scarpe si tolgono alla porta.",
+      "Una casa può avere un cortile condiviso, un giardino sul balcone o una stanza per tutta la famiglia."
+     ],
+     "q": "Ti togli le scarpe in casa e come si sente la tua casa?",
+     "c": "Descrivi il tuo angolo preferito di casa in due frasi."
+    },
+    "pt": {
+     "t": "Casas pelo mundo",
+     "g": "Compara apartamentos e moradias, e se os sapatos ficam ou saem à porta.",
+     "p": [
+      "Muita gente vive em apartamentos nas grandes cidades e em casas em aldeias ou subúrbios.",
+      "No Japão, na Coreia, na Escandinávia e em muitos outros lugares tiram-se os sapatos à porta.",
+      "Uma casa pode ter pátio partilhado, jardim na varanda ou sala para toda a família."
+     ],
+     "q": "Tiras os sapatos em casa e como é a tua casa?",
+     "c": "Descreve o teu canto preferido da casa em duas frases."
+    },
+    "pt_BR": {
+     "t": "Casas pelo mundo",
+     "g": "Compare apartamentos e casas, e se os sapatos ficam ou saem na porta.",
+     "p": [
+      "Muita gente mora em apartamentos nas grandes cidades e em casas em vilas ou subúrbios.",
+      "No Japão, na Coreia, na Escandinávia e em muitos outros lugares se tiram os sapatos na porta.",
+      "Uma casa pode ter pátio compartilhado, jardim na varanda ou sala para toda a família."
+     ],
+     "q": "Você tira os sapatos em casa e como é a sua casa?",
+     "c": "Descreva seu canto preferido da casa em duas frases."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Family life",
+     "g": "See who lives together, how big families are and how often they meet.",
+     "p": [
+      "In many places several generations share one home; in others people live alone or in small households.",
+      "Family can include cousins, godparents and close friends who feel like kin.",
+      "Weekly lunches, calls and holidays keep families close, even across distance."
+     ],
+     "q": "Who counts as family for you, and how do you stay in touch?",
+     "c": "Send a kind message to a relative or close friend today."
+    },
+    "de": {
+     "t": "Familienleben",
+     "g": "Erfahre, wer zusammenlebt, wie groß Familien sind und wie oft man sich trifft.",
+     "p": [
+      "Vielerorts teilen mehrere Generationen ein Zuhause; anderswo lebt man allein oder zu zweit.",
+      "Familie kann Cousins, Paten und enge Freunde einschließen, die sich wie Verwandte anfühlen.",
+      "Wöchentliche Essen, Anrufe und Feiertage halten Familien auch über Distanz nah."
+     ],
+     "q": "Wer gehört für dich zur Familie, und wie bleibt ihr in Kontakt?",
+     "c": "Schicke heute einer Verwandten oder einem engen Freund eine nette Nachricht."
+    },
+    "es": {
+     "t": "La vida familiar",
+     "g": "Descubre quién vive junto, qué tamaño tienen las familias y cada cuánto se reúnen.",
+     "p": [
+      "En muchos lugares varias generaciones comparten casa; en otros se vive solo o en hogares pequeños.",
+      "La familia puede incluir primos, padrinos y amigos cercanos que se sienten como parientes.",
+      "Las comidas semanales, las llamadas y las fiestas unen a las familias, incluso a distancia."
+     ],
+     "q": "¿Quién cuenta como familia para ti y cómo mantienen el contacto?",
+     "c": "Envía hoy un mensaje cariñoso a un familiar o amigo cercano."
+    },
+    "fr": {
+     "t": "La vie de famille",
+     "g": "Vois qui vit ensemble, la taille des familles et la fréquence des retrouvailles.",
+     "p": [
+      "Dans beaucoup d'endroits plusieurs générations partagent un foyer; ailleurs on vit seul ou en petit foyer.",
+      "La famille peut inclure cousins, parrains et amis proches qui sont comme des parents.",
+      "Déjeuners hebdomadaires, appels et fêtes rapprochent les familles, même à distance."
+     ],
+     "q": "Qui compte comme famille pour toi, et comment restez-vous en contact ?",
+     "c": "Envoie aujourd'hui un message gentil à un proche ou à un ami."
+    },
+    "it": {
+     "t": "La vita di famiglia",
+     "g": "Scopri chi vive insieme, quanto sono grandi le famiglie e quanto spesso si incontrano.",
+     "p": [
+      "In molti luoghi più generazioni condividono una casa; altrove si vive da soli o in piccoli nuclei.",
+      "La famiglia può includere cugini, padrini e amici cari che sembrano parenti.",
+      "Pranzi settimanali, telefonate e feste tengono unite le famiglie, anche a distanza."
+     ],
+     "q": "Chi è famiglia per te e come restate in contatto?",
+     "c": "Manda oggi un messaggio gentile a un parente o a un amico caro."
+    },
+    "pt": {
+     "t": "A vida em família",
+     "g": "Descobre quem vive junto, o tamanho das famílias e com que frequência se reúnem.",
+     "p": [
+      "Em muitos lugares várias gerações partilham uma casa; noutros vive-se só ou em pequenos agregados.",
+      "A família pode incluir primos, padrinhos e amigos próximos que parecem parentes.",
+      "Almoços semanais, chamadas e festas mantêm as famílias unidas, mesmo à distância."
+     ],
+     "q": "Quem é família para ti e como mantêm o contacto?",
+     "c": "Envia hoje uma mensagem carinhosa a um familiar ou amigo próximo."
+    },
+    "pt_BR": {
+     "t": "A vida em família",
+     "g": "Descubra quem mora junto, o tamanho das famílias e com que frequência se reúnem.",
+     "p": [
+      "Em muitos lugares várias gerações dividem uma casa; em outros se mora só ou em pequenas famílias.",
+      "A família pode incluir primos, padrinhos e amigos próximos que parecem parentes.",
+      "Almoços semanais, ligações e festas mantêm as famílias unidas, mesmo à distância."
+     ],
+     "q": "Quem é família para você e como vocês mantêm contato?",
+     "c": "Mande hoje uma mensagem carinhosa a um familiar ou amigo próximo."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Grandparents and elders",
+     "g": "Learn about the role of older generations in daily life.",
+     "p": [
+      "In many cultures elders are greeted first and their advice is valued.",
+      "Grandparents often pass on recipes, songs, stories and skills.",
+      "In some places older relatives help raise children; in others they live independently and visit."
+     ],
+     "q": "What is one thing you learned from a grandparent or an older person?",
+     "c": "Ask an older person about a story or tradition from their youth."
+    },
+    "de": {
+     "t": "Großeltern und Ältere",
+     "g": "Lerne die Rolle älterer Generationen im Alltag kennen.",
+     "p": [
+      "In vielen Kulturen werden Ältere zuerst begrüßt und ihr Rat wird geschätzt.",
+      "Großeltern geben oft Rezepte, Lieder, Geschichten und Fertigkeiten weiter.",
+      "Manchenorts helfen ältere Verwandte bei der Kinderbetreuung; anderswo leben sie selbstständig und kommen zu Besuch."
+     ],
+     "q": "Was hast du von einem Großelternteil oder einer älteren Person gelernt?",
+     "c": "Frage eine ältere Person nach einer Geschichte oder Tradition aus ihrer Jugend."
+    },
+    "es": {
+     "t": "Abuelos y mayores",
+     "g": "Aprende el papel de las generaciones mayores en la vida diaria.",
+     "p": [
+      "En muchas culturas se saluda primero a los mayores y se valora su consejo.",
+      "Los abuelos suelen transmitir recetas, canciones, historias y habilidades.",
+      "En algunos lugares los parientes mayores ayudan a criar; en otros viven solos y visitan."
+     ],
+     "q": "¿Qué cosa aprendiste de un abuelo o de una persona mayor?",
+     "c": "Pregunta a una persona mayor por una historia o tradición de su juventud."
+    },
+    "fr": {
+     "t": "Grands-parents et aînés",
+     "g": "Découvre le rôle des générations plus âgées dans la vie quotidienne.",
+     "p": [
+      "Dans beaucoup de cultures on salue d'abord les aînés et on apprécie leurs conseils.",
+      "Les grands-parents transmettent souvent recettes, chansons, histoires et savoir-faire.",
+      "Parfois les aînés aident à élever les enfants; ailleurs ils vivent seuls et rendent visite."
+     ],
+     "q": "Qu'as-tu appris d'un grand-parent ou d'une personne âgée ?",
+     "c": "Demande à une personne âgée une histoire ou une tradition de sa jeunesse."
+    },
+    "it": {
+     "t": "Nonni e anziani",
+     "g": "Scopri il ruolo delle generazioni più anziane nella vita quotidiana.",
+     "p": [
+      "In molte culture gli anziani si salutano per primi e i loro consigli sono apprezzati.",
+      "I nonni spesso tramandano ricette, canzoni, storie e abilità.",
+      "In alcuni luoghi i parenti anziani aiutano a crescere i bambini; in altri vivono da soli e fanno visita."
+     ],
+     "q": "Che cosa hai imparato da un nonno o da una persona anziana?",
+     "c": "Chiedi a una persona anziana una storia o una tradizione della sua giovinezza."
+    },
+    "pt": {
+     "t": "Avós e idosos",
+     "g": "Aprende o papel das gerações mais velhas no dia a dia.",
+     "p": [
+      "Em muitas culturas cumprimentam-se primeiro os mais velhos e valoriza-se o seu conselho.",
+      "Os avós costumam transmitir receitas, canções, histórias e saberes.",
+      "Nalguns lugares os familiares mais velhos ajudam a criar os filhos; noutros vivem sós e visitam."
+     ],
+     "q": "O que aprendeste com um avô ou com uma pessoa mais velha?",
+     "c": "Pergunta a uma pessoa mais velha por uma história ou tradição da juventude."
+    },
+    "pt_BR": {
+     "t": "Avós e idosos",
+     "g": "Aprenda o papel das gerações mais velhas no dia a dia.",
+     "p": [
+      "Em muitas culturas se cumprimentam primeiro os mais velhos e se valoriza o conselho deles.",
+      "Os avós costumam passar adiante receitas, músicas, histórias e saberes.",
+      "Em alguns lugares os parentes mais velhos ajudam a criar os filhos; em outros moram sozinhos e visitam."
+     ],
+     "q": "O que você aprendeu com um avô ou com uma pessoa mais velha?",
+     "c": "Pergunte a uma pessoa mais velha sobre uma história ou tradição da juventude."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Childhood games",
+     "g": "Meet playground games and toys that children love in different places.",
+     "p": [
+      "Hopscotch, marbles, tag and skipping rope appear in many countries under different names.",
+      "Kids in many places love kites, football, string games and clapping rhymes.",
+      "Simple games need little: a stone, a line of chalk or a good imagination."
+     ],
+     "q": "What game did you love playing as a child, and what were the rules?",
+     "c": "Teach a simple childhood game to someone, or recall its rules."
+    },
+    "de": {
+     "t": "Kinderspiele",
+     "g": "Lerne Spielplatzspiele und Spielzeuge kennen, die Kinder an verschiedenen Orten lieben.",
+     "p": [
+      "Himmel und Hölle, Murmeln, Fangen und Seilspringen gibt es in vielen Ländern mit anderen Namen.",
+      "Kinder vielerorts lieben Drachen, Fußball, Fadenspiele und Klatschreime.",
+      "Einfache Spiele brauchen wenig: einen Stein, einen Kreidestrich oder Fantasie."
+     ],
+     "q": "Welches Spiel hast du als Kind geliebt, und wie waren die Regeln?",
+     "c": "Bring jemandem ein einfaches Kinderspiel bei oder erinnere dich an seine Regeln."
+    },
+    "es": {
+     "t": "Juegos de infancia",
+     "g": "Conoce juegos de recreo y juguetes que los niños aman en distintos lugares.",
+     "p": [
+      "La rayuela, las canicas, el pilla-pilla y la comba existen en muchos países con otros nombres.",
+      "Niños de muchos lugares aman las cometas, el fútbol, los juegos de cuerdas y las rimas de palmas.",
+      "Los juegos sencillos necesitan poco: una piedra, una raya de tiza o buena imaginación."
+     ],
+     "q": "¿A qué juego te encantaba jugar de niño y cuáles eran las reglas?",
+     "c": "Enseña un juego sencillo de la infancia a alguien o recuerda sus reglas."
+    },
+    "fr": {
+     "t": "Jeux d'enfance",
+     "g": "Découvre jeux de cour et jouets que les enfants adorent partout.",
+     "p": [
+      "Marelle, billes, chat et corde à sauter existent dans beaucoup de pays sous d'autres noms.",
+      "Les enfants de nombreux endroits aiment cerfs-volants, football, jeux de ficelle et comptines à taper.",
+      "Les jeux simples demandent peu : un caillou, un trait de craie ou beaucoup d'imagination."
+     ],
+     "q": "À quel jeu adorais-tu jouer enfant, et quelles étaient les règles ?",
+     "c": "Apprends un jeu d'enfance simple à quelqu'un ou rappelle-toi ses règles."
+    },
+    "it": {
+     "t": "Giochi d'infanzia",
+     "g": "Scopri giochi da cortile e giocattoli amati dai bambini in luoghi diversi.",
+     "p": [
+      "Campana, biglie, acchiapparella e corda esistono in molti paesi con nomi diversi.",
+      "I bambini in molti luoghi amano aquiloni, calcio, giochi con il filo e filastrocche con le mani.",
+      "I giochi semplici richiedono poco: un sasso, una riga di gesso e un po' di fantasia."
+     ],
+     "q": "A quale gioco amavi giocare da bambino e quali erano le regole?",
+     "c": "Insegna un semplice gioco d'infanzia a qualcuno o ricorda le sue regole."
+    },
+    "pt": {
+     "t": "Jogos de infância",
+     "g": "Conhece jogos de recreio e brinquedos que as crianças adoram em vários lugares.",
+     "p": [
+      "A macaca, as berlindes, a apanhada e a corda existem em muitos países com outros nomes.",
+      "Crianças em muitos lugares adoram papagaios de papel, futebol, jogos de cordel e lenga-lengas de palmas.",
+      "Os jogos simples precisam de pouco: uma pedra, um risco de giz e imaginação."
+     ],
+     "q": "De que jogo gostavas em criança e quais eram as regras?",
+     "c": "Ensina um jogo simples da infância a alguém ou recorda as suas regras."
+    },
+    "pt_BR": {
+     "t": "Brincadeiras de infância",
+     "g": "Conheça jogos de recreio e brinquedos que as crianças adoram em vários lugares.",
+     "p": [
+      "Amarelinha, bolinhas de gude, pega-pega e pular corda existem em muitos países com outros nomes.",
+      "Crianças em muitos lugares adoram pipas, futebol, brincadeiras de barbante e cantigas de palmas.",
+      "As brincadeiras simples precisam de pouco: uma pedrinha, um risco de giz e imaginação."
+     ],
+     "q": "De que brincadeira você gostava na infância e quais eram as regras?",
+     "c": "Ensine uma brincadeira simples da infância a alguém ou lembre as regras."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "School days",
+     "g": "Compare school hours, uniforms, lunches and subjects across countries.",
+     "p": [
+      "School starts early in some countries and later in others; some have a long lunch break.",
+      "Many students wear uniforms in places like Japan, the UK and Brazil's private schools; others wear their own clothes.",
+      "School lunch might be a packed box, a canteen meal or a trip home."
+     ],
+     "q": "What was a typical school day like for you?",
+     "c": "Share one memory of a favourite teacher or subject."
+    },
+    "de": {
+     "t": "Schultage",
+     "g": "Vergleiche Schulzeiten, Uniformen, Mittagessen und Fächer in verschiedenen Ländern.",
+     "p": [
+      "Die Schule beginnt in manchen Ländern früh, in anderen später; manche haben eine lange Mittagspause.",
+      "Viele Schüler tragen Uniform, etwa in Japan oder Großbritannien; andere tragen eigene Kleidung.",
+      "Das Schulessen kann eine Brotdose, ein Kantinenessen oder der Heimweg sein."
+     ],
+     "q": "Wie sah dein typischer Schultag aus?",
+     "c": "Teile eine Erinnerung an eine Lieblingslehrkraft oder ein Lieblingsfach."
+    },
+    "es": {
+     "t": "Días de escuela",
+     "g": "Compara horarios escolares, uniformes, almuerzos y asignaturas en distintos países.",
+     "p": [
+      "La escuela empieza temprano en unos países y más tarde en otros; algunos tienen largo descanso para comer.",
+      "Muchos estudiantes llevan uniforme, por ejemplo en Japón o el Reino Unido; otros, su propia ropa.",
+      "El almuerzo escolar puede ser una fiambrera, un menú de comedor o volver a casa."
+     ],
+     "q": "¿Cómo era un día típico en tu escuela?",
+     "c": "Comparte un recuerdo de un profesor o una asignatura favorita."
+    },
+    "fr": {
+     "t": "Journées d'école",
+     "g": "Compare horaires scolaires, uniformes, repas et matières selon les pays.",
+     "p": [
+      "L'école commence tôt dans certains pays et plus tard dans d'autres; certains ont une longue pause déjeuner.",
+      "Beaucoup d'élèves portent un uniforme, par exemple au Japon ou au Royaume-Uni; d'autres leurs propres vêtements.",
+      "Le déjeuner peut être une gamelle, un repas de cantine ou un retour à la maison."
+     ],
+     "q": "À quoi ressemblait une journée d'école typique pour toi ?",
+     "c": "Partage un souvenir d'un professeur ou d'une matière préférée."
+    },
+    "it": {
+     "t": "Giornate a scuola",
+     "g": "Confronta orari scolastici, divise, pranzi e materie nei vari paesi.",
+     "p": [
+      "La scuola inizia presto in alcuni paesi e più tardi in altri; alcuni hanno una lunga pausa pranzo.",
+      "Molti studenti portano la divisa, per esempio in Giappone o nel Regno Unito; altri vestono come vogliono.",
+      "Il pranzo a scuola può essere un cestino, un pasto in mensa o il ritorno a casa."
+     ],
+     "q": "Com'era una tua giornata tipica a scuola?",
+     "c": "Condividi un ricordo di un insegnante o di una materia preferita."
+    },
+    "pt": {
+     "t": "Dias de escola",
+     "g": "Compara horários escolares, uniformes, almoços e disciplinas em vários países.",
+     "p": [
+      "A escola começa cedo nuns países e mais tarde noutros; alguns têm um longo intervalo de almoço.",
+      "Muitos alunos usam uniforme, por exemplo no Japão ou no Reino Unido; outros usam roupa própria.",
+      "O almoço escolar pode ser uma lancheira, uma refeição na cantina ou ir a casa."
+     ],
+     "q": "Como era um dia típico na tua escola?",
+     "c": "Partilha uma memória de um professor ou de uma disciplina favorita."
+    },
+    "pt_BR": {
+     "t": "Dias de escola",
+     "g": "Compare horários escolares, uniformes, almoços e matérias em vários países.",
+     "p": [
+      "A escola começa cedo em alguns países e mais tarde em outros; alguns têm um longo intervalo de almoço.",
+      "Muitos alunos usam uniforme, por exemplo no Japão ou no Reino Unido; outros usam roupa própria.",
+      "O almoço escolar pode ser uma marmita, uma refeição na cantina ou ir para casa."
+     ],
+     "q": "Como era um dia típico na sua escola?",
+     "c": "Compartilhe uma lembrança de um professor ou de uma matéria favorita."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The school year",
+     "g": "Find out when holidays happen and how exams and grades work.",
+     "p": [
+      "In many countries the year starts in autumn; in others, like Brazil or Australia, it starts around January or February.",
+      "Summer holidays can last two months or more, or be shorter with more breaks.",
+      "Grades can be numbers, letters or descriptions, and exams take many forms."
+     ],
+     "q": "When did your school year begin and end, and what was your favourite break?",
+     "c": "Ask a friend abroad how their school year is organised."
+    },
+    "de": {
+     "t": "Das Schuljahr",
+     "g": "Erfahre, wann Ferien sind und wie Prüfungen und Noten funktionieren.",
+     "p": [
+      "In vielen Ländern beginnt das Jahr im Herbst; in anderen, wie Brasilien oder Australien, um Januar oder Februar.",
+      "Sommerferien dauern manchmal zwei Monate oder mehr, anderswo sind sie kürzer mit mehr Pausen.",
+      "Noten können Zahlen, Buchstaben oder Beschreibungen sein, und Prüfungen gibt es in vielen Formen."
+     ],
+     "q": "Wann begann und endete dein Schuljahr, und welche Pause mochtest du am liebsten?",
+     "c": "Frage einen Freund im Ausland, wie sein Schuljahr organisiert ist."
+    },
+    "es": {
+     "t": "El año escolar",
+     "g": "Descubre cuándo son las vacaciones y cómo funcionan los exámenes y las notas.",
+     "p": [
+      "En muchos países el curso empieza en otoño; en otros, como Brasil o Australia, hacia enero o febrero.",
+      "Las vacaciones de verano pueden durar dos meses o más, o ser más cortas con más descansos.",
+      "Las notas pueden ser números, letras o descripciones, y los exámenes toman muchas formas."
+     ],
+     "q": "¿Cuándo empezaba y terminaba tu curso y cuál era tu descanso favorito?",
+     "c": "Pregunta a un amigo del extranjero cómo se organiza su año escolar."
+    },
+    "fr": {
+     "t": "L'année scolaire",
+     "g": "Découvre quand tombent les vacances et comment fonctionnent examens et notes.",
+     "p": [
+      "Dans beaucoup de pays l'année commence en automne; ailleurs, comme au Brésil ou en Australie, en janvier ou février.",
+      "Les vacances d'été peuvent durer deux mois ou plus, ou être plus courtes avec plus de pauses.",
+      "Les notes peuvent être des chiffres, des lettres ou des appréciations, et les examens varient."
+     ],
+     "q": "Quand ton année scolaire commençait-elle et finissait-elle, et quelle pause préférais-tu ?",
+     "c": "Demande à un ami à l'étranger comment est organisée son année scolaire."
+    },
+    "it": {
+     "t": "L'anno scolastico",
+     "g": "Scopri quando cadono le vacanze e come funzionano esami e voti.",
+     "p": [
+      "In molti paesi l'anno inizia in autunno; in altri, come Brasile o Australia, intorno a gennaio o febbraio.",
+      "Le vacanze estive possono durare due mesi o più, oppure essere più brevi con più pause.",
+      "I voti possono essere numeri, lettere o giudizi, e gli esami hanno molte forme."
+     ],
+     "q": "Quando iniziava e finiva il tuo anno scolastico e qual era la tua pausa preferita?",
+     "c": "Chiedi a un amico all'estero come è organizzato il suo anno scolastico."
+    },
+    "pt": {
+     "t": "O ano letivo",
+     "g": "Descobre quando são as férias e como funcionam exames e notas.",
+     "p": [
+      "Em muitos países o ano começa no outono; noutros, como o Brasil ou a Austrália, por volta de janeiro ou fevereiro.",
+      "As férias de verão podem durar dois meses ou mais, ou ser mais curtas com mais pausas.",
+      "As notas podem ser números, letras ou descrições, e os exames têm muitas formas."
+     ],
+     "q": "Quando começava e acabava o teu ano letivo e qual era a tua pausa preferida?",
+     "c": "Pergunta a um amigo no estrangeiro como se organiza o ano letivo dele."
+    },
+    "pt_BR": {
+     "t": "O ano letivo",
+     "g": "Descubra quando são as férias e como funcionam provas e notas.",
+     "p": [
+      "Em muitos países o ano começa no outono; em outros, como o Brasil ou a Austrália, por volta de janeiro ou fevereiro.",
+      "As férias de verão podem durar dois meses ou mais, ou ser mais curtas com mais pausas.",
+      "As notas podem ser números, letras ou descrições, e as provas têm muitas formas."
+     ],
+     "q": "Quando começava e terminava o seu ano letivo e qual era sua pausa preferida?",
+     "c": "Pergunte a um amigo no exterior como é organizado o ano letivo dele."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Work routines",
+     "g": "Compare working hours, lunch breaks and weekends around the world.",
+     "p": [
+      "Many offices run from morning to late afternoon; some places have a long midday break.",
+      "In many countries the weekend is Saturday and Sunday; elsewhere it is Friday and Saturday.",
+      "Some workplaces value coffee breaks and team lunches as part of the rhythm."
+     ],
+     "q": "What does a normal working or studying day look like for you?",
+     "c": "Describe your daily rhythm to me in three parts: morning, midday, evening."
+    },
+    "de": {
+     "t": "Arbeitsalltag",
+     "g": "Vergleiche Arbeitszeiten, Mittagspausen und Wochenenden auf der Welt.",
+     "p": [
+      "Viele Büros arbeiten vom Morgen bis zum späten Nachmittag; manche haben eine lange Mittagspause.",
+      "In vielen Ländern ist das Wochenende Samstag und Sonntag; anderswo Freitag und Samstag.",
+      "Manche Arbeitsplätze schätzen Kaffeepausen und gemeinsames Mittagessen als Teil des Rhythmus."
+     ],
+     "q": "Wie sieht ein normaler Arbeits- oder Lerntag bei dir aus?",
+     "c": "Beschreibe mir deinen Tagesrhythmus in drei Teilen: Morgen, Mittag, Abend."
+    },
+    "es": {
+     "t": "Rutinas de trabajo",
+     "g": "Compara horarios laborales, pausas para comer y fines de semana por el mundo.",
+     "p": [
+      "Muchas oficinas funcionan de la mañana a la tarde; algunos lugares tienen una larga pausa al mediodía.",
+      "En muchos países el fin de semana es sábado y domingo; en otros, viernes y sábado.",
+      "Algunos lugares de trabajo valoran el café y los almuerzos de equipo como parte del ritmo."
+     ],
+     "q": "¿Cómo es tu día normal de trabajo o estudio?",
+     "c": "Descríbeme tu ritmo diario en tres partes: mañana, mediodía y noche."
+    },
+    "fr": {
+     "t": "Routines de travail",
+     "g": "Compare horaires de travail, pauses déjeuner et week-ends dans le monde.",
+     "p": [
+      "Beaucoup de bureaux fonctionnent du matin à la fin d'après-midi; certains lieux ont une longue pause à midi.",
+      "Dans beaucoup de pays le week-end est samedi et dimanche; ailleurs, vendredi et samedi.",
+      "Certains lieux de travail apprécient pauses café et déjeuners d'équipe dans leur rythme."
+     ],
+     "q": "À quoi ressemble ta journée normale de travail ou d'études ?",
+     "c": "Décris-moi ton rythme quotidien en trois temps : matin, midi, soir."
+    },
+    "it": {
+     "t": "Routine di lavoro",
+     "g": "Confronta orari di lavoro, pause pranzo e weekend nel mondo.",
+     "p": [
+      "Molti uffici lavorano dalla mattina al tardo pomeriggio; alcuni luoghi hanno una lunga pausa a metà giornata.",
+      "In molti paesi il weekend è sabato e domenica; altrove è venerdì e sabato.",
+      "Alcuni posti di lavoro apprezzano pause caffè e pranzi di squadra come parte del ritmo."
+     ],
+     "q": "Com'è la tua normale giornata di lavoro o di studio?",
+     "c": "Descrivimi il tuo ritmo quotidiano in tre parti: mattina, mezzogiorno, sera."
+    },
+    "pt": {
+     "t": "Rotinas de trabalho",
+     "g": "Compara horários de trabalho, pausas para almoço e fins de semana pelo mundo.",
+     "p": [
+      "Muitos escritórios funcionam da manhã ao fim da tarde; alguns lugares têm uma longa pausa ao meio-dia.",
+      "Em muitos países o fim de semana é sábado e domingo; noutros, sexta e sábado.",
+      "Alguns locais de trabalho valorizam pausas para café e almoços de equipa no seu ritmo."
+     ],
+     "q": "Como é o teu dia normal de trabalho ou estudo?",
+     "c": "Descreve-me o teu ritmo diário em três partes: manhã, meio-dia e noite."
+    },
+    "pt_BR": {
+     "t": "Rotinas de trabalho",
+     "g": "Compare horários de trabalho, pausas para almoço e fins de semana pelo mundo.",
+     "p": [
+      "Muitos escritórios funcionam da manhã ao fim da tarde; alguns lugares têm uma longa pausa ao meio-dia.",
+      "Em muitos países o fim de semana é sábado e domingo; em outros, sexta e sábado.",
+      "Alguns locais de trabalho valorizam pausas para café e almoços de equipe no seu ritmo."
+     ],
+     "q": "Como é o seu dia normal de trabalho ou estudo?",
+     "c": "Descreva para mim seu ritmo diário em três partes: manhã, meio-dia e noite."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Weekends and free time",
+     "g": "See what people do on their days off in different cultures.",
+     "p": [
+      "Many people enjoy family meals, sports, markets, gardening or visiting friends.",
+      "In some cities people head to parks or beaches; in others they take trips to the countryside.",
+      "Rest looks different everywhere, and doing little is a valid choice too."
+     ],
+     "q": "How do you like to spend a free weekend day?",
+     "c": "Plan one small, enjoyable weekend activity and tell me about it."
+    },
+    "de": {
+     "t": "Wochenende und Freizeit",
+     "g": "Entdecke, was Menschen in verschiedenen Kulturen an freien Tagen tun.",
+     "p": [
+      "Viele genießen Familienessen, Sport, Märkte, Gartenarbeit oder Besuche bei Freunden.",
+      "In manchen Städten geht man in Parks oder an Strände; anderswo aufs Land.",
+      "Erholung sieht überall anders aus, und wenig zu tun ist auch eine gute Wahl."
+     ],
+     "q": "Wie verbringst du gern einen freien Wochenendtag?",
+     "c": "Plane eine kleine, schöne Wochenendaktivität und erzähl mir davon."
+    },
+    "es": {
+     "t": "Fines de semana y tiempo libre",
+     "g": "Descubre qué hace la gente en sus días libres en distintas culturas.",
+     "p": [
+      "Mucha gente disfruta de comidas en familia, deporte, mercados, jardinería o visitas a amigos.",
+      "En algunas ciudades se va a parques o playas; en otras, de excursión al campo.",
+      "El descanso es distinto en cada lugar, y hacer poco también es una buena opción."
+     ],
+     "q": "¿Cómo te gusta pasar un día libre de fin de semana?",
+     "c": "Planea una pequeña actividad agradable para el fin de semana y cuéntamela."
+    },
+    "fr": {
+     "t": "Week-ends et loisirs",
+     "g": "Découvre ce que les gens font pendant leurs jours de repos selon les cultures.",
+     "p": [
+      "Beaucoup aiment repas de famille, sport, marchés, jardinage ou visites à des amis.",
+      "Dans certaines villes on va au parc ou à la plage; dans d'autres, à la campagne.",
+      "Le repos prend des formes variées, et ne pas faire grand-chose est aussi un bon choix."
+     ],
+     "q": "Comment aimes-tu passer une journée de week-end libre ?",
+     "c": "Prévois une petite activité agréable pour le week-end et raconte-la-moi."
+    },
+    "it": {
+     "t": "Weekend e tempo libero",
+     "g": "Scopri cosa fanno le persone nei giorni liberi nelle diverse culture.",
+     "p": [
+      "Molti amano pranzi di famiglia, sport, mercati, giardinaggio o visite agli amici.",
+      "In alcune città si va nei parchi o al mare; in altre in gita in campagna.",
+      "Il riposo è diverso ovunque, e fare poco è una scelta valida."
+     ],
+     "q": "Come ti piace passare una giornata libera nel weekend?",
+     "c": "Pianifica una piccola attività piacevole per il weekend e raccontamela."
+    },
+    "pt": {
+     "t": "Fins de semana e tempo livre",
+     "g": "Descobre o que as pessoas fazem nos dias de folga em várias culturas.",
+     "p": [
+      "Muita gente gosta de refeições em família, desporto, mercados, jardinagem ou visitas a amigos.",
+      "Nalgumas cidades vai-se a parques ou praias; noutras, passeia-se pelo campo.",
+      "O descanso é diferente em todo o lado, e fazer pouco também é uma boa escolha."
+     ],
+     "q": "Como gostas de passar um dia livre de fim de semana?",
+     "c": "Planeia uma pequena atividade agradável para o fim de semana e conta-me."
+    },
+    "pt_BR": {
+     "t": "Fins de semana e tempo livre",
+     "g": "Descubra o que as pessoas fazem nos dias de folga em várias culturas.",
+     "p": [
+      "Muita gente gosta de refeições em família, esporte, feiras, jardinagem ou visitas a amigos.",
+      "Em algumas cidades se vai a parques ou praias; em outras, passeia-se pelo campo.",
+      "O descanso é diferente em todo lugar, e fazer pouco também é uma boa escolha."
+     ],
+     "q": "Como você gosta de passar um dia livre de fim de semana?",
+     "c": "Planeje uma pequena atividade agradável para o fim de semana e me conte."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shopping habits",
+     "g": "Look at markets, malls, corner shops and bargaining customs.",
+     "p": [
+      "Many people shop at weekly open-air markets; others prefer malls or online stores.",
+      "Corner shops and small family stores are the heart of daily shopping in many neighbourhoods.",
+      "In some markets friendly bargaining is expected; in shops with fixed prices it is not."
+     ],
+     "q": "Where do you usually buy food and everyday items, and why there?",
+     "c": "Visit a market or local shop, or imagine one, and describe what you see."
+    },
+    "de": {
+     "t": "Einkaufsgewohnheiten",
+     "g": "Schau dir Märkte, Einkaufszentren, Tante-Emma-Läden und Feilschbräuche an.",
+     "p": [
+      "Viele kaufen auf Wochenmärkten ein; andere bevorzugen Einkaufszentren oder Online-Shops.",
+      "Kleine Läden um die Ecke sind in vielen Vierteln das Herz des täglichen Einkaufs.",
+      "Auf manchen Märkten wird freundliches Handeln erwartet; in Geschäften mit festen Preisen nicht."
+     ],
+     "q": "Wo kaufst du meist Essen und Alltägliches ein, und warum dort?",
+     "c": "Besuche einen Markt oder Laden, oder stell dir einen vor, und beschreibe, was du siehst."
+    },
+    "es": {
+     "t": "Hábitos de compra",
+     "g": "Conoce mercados, centros comerciales, tiendas de barrio y costumbres de regateo.",
+     "p": [
+      "Mucha gente compra en mercados semanales al aire libre; otros prefieren centros comerciales o tiendas en línea.",
+      "Las tiendas de barrio y los pequeños comercios familiares son el centro de la compra diaria en muchos barrios.",
+      "En algunos mercados se espera un regateo amistoso; en tiendas de precio fijo, no."
+     ],
+     "q": "¿Dónde sueles comprar comida y cosas cotidianas y por qué allí?",
+     "c": "Visita un mercado o una tienda local, o imagina uno, y describe lo que ves."
+    },
+    "fr": {
+     "t": "Habitudes d'achat",
+     "g": "Découvre marchés, centres commerciaux, petits commerces et coutumes du marchandage.",
+     "p": [
+      "Beaucoup font leurs courses au marché en plein air; d'autres préfèrent centres commerciaux ou boutiques en ligne.",
+      "Les petits commerces de quartier sont le coeur des courses quotidiennes dans beaucoup de quartiers.",
+      "Dans certains marchés un marchandage amical est attendu; dans les magasins à prix fixes, non."
+     ],
+     "q": "Où achètes-tu d'habitude nourriture et articles du quotidien, et pourquoi là ?",
+     "c": "Visite un marché ou un commerce local, ou imagine-en un, et décris ce que tu vois."
+    },
+    "it": {
+     "t": "Abitudini di acquisto",
+     "g": "Guarda mercati, centri commerciali, negozietti e usanze del contrattare.",
+     "p": [
+      "Molti fanno la spesa ai mercati settimanali all'aperto; altri preferiscono centri commerciali o negozi online.",
+      "I negozietti di quartiere sono il cuore della spesa quotidiana in molte zone.",
+      "In alcuni mercati ci si aspetta una trattativa amichevole; nei negozi a prezzo fisso no."
+     ],
+     "q": "Dove compri di solito cibo e cose di ogni giorno e perché lì?",
+     "c": "Visita un mercato o un negozio locale, o immaginane uno, e descrivi ciò che vedi."
+    },
+    "pt": {
+     "t": "Hábitos de compra",
+     "g": "Conhece mercados, centros comerciais, lojas de bairro e costumes de regateio.",
+     "p": [
+      "Muita gente compra em mercados semanais ao ar livre; outros preferem centros comerciais ou lojas online.",
+      "As lojas de bairro e os pequenos comércios familiares são o centro das compras diárias em muitos bairros.",
+      "Em alguns mercados espera-se um regateio simpático; em lojas de preço fixo, não."
+     ],
+     "q": "Onde costumas comprar comida e coisas do dia a dia e porquê aí?",
+     "c": "Visita um mercado ou loja local, ou imagina um, e descreve o que vês."
+    },
+    "pt_BR": {
+     "t": "Hábitos de compra",
+     "g": "Conheça feiras, shoppings, lojinhas de bairro e costumes de pechincha.",
+     "p": [
+      "Muita gente compra em feiras semanais ao ar livre; outros preferem shoppings ou lojas online.",
+      "As lojinhas de bairro e os pequenos comércios familiares são o centro das compras diárias em muitos bairros.",
+      "Em alguns mercados se espera uma pechincha amigável; em lojas de preço fixo, não."
+     ],
+     "q": "Onde você costuma comprar comida e coisas do dia a dia e por que lá?",
+     "c": "Visite uma feira ou loja local, ou imagine uma, e descreva o que vê."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: daily life basics",
+     "g": "Revisit greetings, meals and routines and share your favourite discovery.",
+     "p": [
+      "You explored greetings, names, personal space and body language.",
+      "You also compared mornings, meals, homes, families, schools and work.",
+      "The best discoveries are the ones that made you see your own habits anew."
+     ],
+     "q": "Which discovery from these weeks surprised you most, and why?",
+     "c": "Tell one person about something you learned here this week."
+    },
+    "de": {
+     "t": "Rückblick: Alltagsgrundlagen",
+     "g": "Blicke auf Begrüßungen, Mahlzeiten und Routinen zurück und teile deine liebste Entdeckung.",
+     "p": [
+      "Du hast Begrüßungen, Namen, persönlichen Freiraum und Körpersprache erkundet.",
+      "Du hast auch Morgen, Mahlzeiten, Wohnen, Familien, Schulen und Arbeit verglichen.",
+      "Die schönsten Entdeckungen sind jene, die dich deine eigenen Gewohnheiten neu sehen ließen."
+     ],
+     "q": "Welche Entdeckung der letzten Wochen hat dich am meisten überrascht, und warum?",
+     "c": "Erzähle jemandem diese Woche von etwas, das du hier gelernt hast."
+    },
+    "es": {
+     "t": "Repaso: lo básico del día a día",
+     "g": "Repasa saludos, comidas y rutinas y comparte tu descubrimiento favorito.",
+     "p": [
+      "Exploraste saludos, nombres, espacio personal y lenguaje corporal.",
+      "También comparaste mañanas, comidas, hogares, familias, escuelas y trabajo.",
+      "Los mejores descubrimientos son los que te hicieron ver tus propios hábitos de otra forma."
+     ],
+     "q": "¿Qué descubrimiento de estas semanas te sorprendió más y por qué?",
+     "c": "Cuéntale a alguien algo que hayas aprendido aquí esta semana."
+    },
+    "fr": {
+     "t": "Révision : les bases du quotidien",
+     "g": "Reviens sur salutations, repas et routines et partage ta découverte préférée.",
+     "p": [
+      "Tu as exploré salutations, prénoms, espace personnel et langage corporel.",
+      "Tu as aussi comparé matins, repas, logements, familles, écoles et travail.",
+      "Les meilleures découvertes sont celles qui te font voir tes propres habitudes autrement."
+     ],
+     "q": "Quelle découverte de ces semaines t'a le plus surpris, et pourquoi ?",
+     "c": "Parle à quelqu'un de ce que tu as appris ici cette semaine."
+    },
+    "it": {
+     "t": "Ripasso: le basi della vita quotidiana",
+     "g": "Ripassa saluti, pasti e routine e condividi la tua scoperta preferita.",
+     "p": [
+      "Hai esplorato saluti, nomi, spazio personale e linguaggio del corpo.",
+      "Hai anche confrontato mattine, pasti, case, famiglie, scuole e lavoro.",
+      "Le scoperte più belle sono quelle che ti fanno vedere in modo nuovo le tue abitudini."
+     ],
+     "q": "Quale scoperta di queste settimane ti ha sorpreso di più e perché?",
+     "c": "Racconta a qualcuno qualcosa che hai imparato qui questa settimana."
+    },
+    "pt": {
+     "t": "Revisão: o essencial do dia a dia",
+     "g": "Revê cumprimentos, refeições e rotinas e partilha a tua descoberta preferida.",
+     "p": [
+      "Exploraste cumprimentos, nomes, espaço pessoal e linguagem corporal.",
+      "Também comparaste manhãs, refeições, casas, famílias, escolas e trabalho.",
+      "As melhores descobertas são as que te fizeram ver os teus hábitos de outra forma."
+     ],
+     "q": "Que descoberta destas semanas mais te surpreendeu e porquê?",
+     "c": "Conta a alguém algo que aprendeste aqui esta semana."
+    },
+    "pt_BR": {
+     "t": "Revisão: o básico do dia a dia",
+     "g": "Revise cumprimentos, refeições e rotinas e compartilhe sua descoberta preferida.",
+     "p": [
+      "Você explorou cumprimentos, nomes, espaço pessoal e linguagem corporal.",
+      "Também comparou manhãs, refeições, casas, famílias, escolas e trabalho.",
+      "As melhores descobertas são as que fizeram você ver seus hábitos de outra forma."
+     ],
+     "q": "Que descoberta dessas semanas mais surpreendeu você e por quê?",
+     "c": "Conte a alguém algo que você aprendeu aqui esta semana."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "digital_detox",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Taming notifications",
+     "g": "Learn why constant alerts break attention and how to choose which ones matter.",
+     "p": [
+      "Every alert pulls your attention away, even if you do not open it.",
+      "Some alerts are useful, like a call from family; many are not.",
+      "You decide who and what gets to interrupt you."
+     ],
+     "q": "Which notification interrupts you most often during the day?",
+     "c": "Count the notifications you get in one morning and note the top three sources."
+    },
+    "de": {
+     "t": "Benachrichtigungen zähmen",
+     "g": "Verstehen, warum ständige Signale die Aufmerksamkeit stören und welche wirklich zählen.",
+     "p": [
+      "Jede Meldung zieht deine Aufmerksamkeit weg, auch wenn du sie nicht öffnest.",
+      "Manche sind nützlich, etwa ein Anruf der Familie; viele nicht.",
+      "Du entscheidest, wer und was dich unterbrechen darf."
+     ],
+     "q": "Welche Benachrichtigung unterbricht dich tagsüber am häufigsten?",
+     "c": "Zähle die Meldungen eines Vormittags und notiere die drei häufigsten Quellen."
+    },
+    "es": {
+     "t": "Domar las notificaciones",
+     "g": "Entender por qué los avisos constantes rompen la atención y cuáles importan.",
+     "p": [
+      "Cada aviso te distrae, aunque no lo abras.",
+      "Algunos son útiles, como la llamada de un familiar; muchos no.",
+      "Tú decides quién y qué puede interrumpirte."
+     ],
+     "q": "¿Qué notificación te interrumpe más a menudo durante el día?",
+     "c": "Cuenta las notificaciones de una mañana y anota las tres fuentes principales."
+    },
+    "fr": {
+     "t": "Apprivoiser les notifications",
+     "g": "Comprendre pourquoi les alertes constantes brisent l'attention et lesquelles comptent.",
+     "p": [
+      "Chaque alerte détourne ton attention, même si tu ne l'ouvres pas.",
+      "Certaines sont utiles, comme un appel de la famille ; beaucoup ne le sont pas.",
+      "C'est toi qui décides qui et quoi peut t'interrompre."
+     ],
+     "q": "Quelle notification t'interrompt le plus souvent dans la journée ?",
+     "c": "Compte les notifications d'une matinée et note les trois sources principales."
+    },
+    "it": {
+     "t": "Domare le notifiche",
+     "g": "Capire perché gli avvisi continui spezzano l'attenzione e quali contano davvero.",
+     "p": [
+      "Ogni avviso distrae la tua attenzione, anche se non lo apri.",
+      "Alcuni sono utili, come la chiamata di un familiare; molti no.",
+      "Sei tu a decidere chi e cosa può interromperti."
+     ],
+     "q": "Quale notifica ti interrompe più spesso durante il giorno?",
+     "c": "Conta le notifiche di una mattina e annota le tre fonti principali."
+    },
+    "pt": {
+     "t": "Domar as notificações",
+     "g": "Perceber porque os avisos constantes quebram a atenção e quais importam.",
+     "p": [
+      "Cada aviso desvia a tua atenção, mesmo que não o abras.",
+      "Alguns são úteis, como uma chamada da família; muitos não.",
+      "Tu decides quem e o que te pode interromper."
+     ],
+     "q": "Que notificação te interrompe mais vezes durante o dia?",
+     "c": "Conta as notificações de uma manhã e anota as três fontes principais."
+    },
+    "pt_BR": {
+     "t": "Domando as notificações",
+     "g": "Entender por que os avisos constantes quebram a atenção e quais importam.",
+     "p": [
+      "Cada aviso desvia sua atenção, mesmo que você não o abra.",
+      "Alguns são úteis, como uma ligação da família; muitos não.",
+      "Você decide quem e o que pode interromper você."
+     ],
+     "q": "Qual notificação interrompe você com mais frequência durante o dia?",
+     "c": "Conte as notificações de uma manhã e anote as três fontes principais."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Turning off non-essential alerts",
+     "g": "Go through your apps and switch off notifications you do not need.",
+     "p": [
+      "Open notification settings and scroll through the apps one by one.",
+      "Keep alerts from people and from things that are time-sensitive.",
+      "Switch off the rest; you can always turn one back on."
+     ],
+     "q": "Which alerts were easiest to switch off, and which felt hard?",
+     "c": "Switch off notifications for at least five apps today."
+    },
+    "de": {
+     "t": "Unnötige Meldungen abschalten",
+     "g": "Deine Apps durchgehen und Benachrichtigungen ausschalten, die du nicht brauchst.",
+     "p": [
+      "Öffne die Benachrichtigungseinstellungen und geh die Apps einzeln durch.",
+      "Behalte Meldungen von Menschen und von zeitkritischen Dingen.",
+      "Schalte den Rest aus; du kannst jede später wieder einschalten."
+     ],
+     "q": "Welche Meldungen ließen sich leicht abschalten, welche fielen schwer?",
+     "c": "Schalte heute die Benachrichtigungen von mindestens fünf Apps aus."
+    },
+    "es": {
+     "t": "Desactivar avisos no esenciales",
+     "g": "Repasar tus apps y desactivar las notificaciones que no necesitas.",
+     "p": [
+      "Abre los ajustes de notificaciones y recorre las apps una a una.",
+      "Conserva avisos de personas y de cosas urgentes.",
+      "Desactiva el resto; siempre puedes volver a activar alguno."
+     ],
+     "q": "¿Qué avisos fue fácil desactivar y cuáles costó más?",
+     "c": "Desactiva hoy las notificaciones de al menos cinco apps."
+    },
+    "fr": {
+     "t": "Couper les alertes non essentielles",
+     "g": "Passer tes applis en revue et désactiver les notifications inutiles.",
+     "p": [
+      "Ouvre les réglages de notifications et parcours les applis une par une.",
+      "Garde les alertes de personnes et de choses urgentes.",
+      "Coupe le reste ; tu peux toujours en rallumer une."
+     ],
+     "q": "Quelles alertes était facile de couper, et lesquelles ont été difficiles ?",
+     "c": "Désactive aujourd'hui les notifications d'au moins cinq applis."
+    },
+    "it": {
+     "t": "Spegnere gli avvisi non essenziali",
+     "g": "Passare in rassegna le app e disattivare le notifiche che non ti servono.",
+     "p": [
+      "Apri le impostazioni delle notifiche e scorri le app una per una.",
+      "Tieni gli avvisi delle persone e delle cose urgenti.",
+      "Spegni il resto; puoi sempre riattivarne una."
+     ],
+     "q": "Quali avvisi è stato facile spegnere e quali più difficile?",
+     "c": "Disattiva oggi le notifiche di almeno cinque app."
+    },
+    "pt": {
+     "t": "Desligar avisos não essenciais",
+     "g": "Rever as tuas apps e desligar as notificações de que não precisas.",
+     "p": [
+      "Abre as definições de notificações e percorre as apps uma a uma.",
+      "Mantém avisos de pessoas e de coisas urgentes.",
+      "Desliga o resto; podes sempre voltar a ligar algum."
+     ],
+     "q": "Que avisos foi fácil desligar e quais custaram mais?",
+     "c": "Desliga hoje as notificações de pelo menos cinco apps."
+    },
+    "pt_BR": {
+     "t": "Desligando avisos não essenciais",
+     "g": "Rever seus apps e desligar as notificações de que você não precisa.",
+     "p": [
+      "Abra as configurações de notificações e percorra os apps um a um.",
+      "Mantenha avisos de pessoas e de coisas urgentes.",
+      "Desligue o resto; você sempre pode religar algum."
+     ],
+     "q": "Quais avisos foi fácil desligar e quais custaram mais?",
+     "c": "Desligue hoje as notificações de pelo menos cinco apps."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Batching notifications",
+     "g": "Use scheduled summaries so alerts arrive a few times a day.",
+     "p": [
+      "Some phones can bundle non-urgent alerts into a summary.",
+      "A summary at set times lets you check without constant interruptions.",
+      "Choose times that match your day, like lunch and early evening."
+     ],
+     "q": "When would a daily notification summary fit best into your routine?",
+     "c": "Look for a scheduled summary setting and try it for one day."
+    },
+    "de": {
+     "t": "Benachrichtigungen bündeln",
+     "g": "Zeitgesteuerte Zusammenfassungen nutzen, damit Meldungen nur ein paar Mal täglich kommen.",
+     "p": [
+      "Manche Handys bündeln unwichtige Meldungen zu einer Zusammenfassung.",
+      "Eine Zusammenfassung zu festen Zeiten erlaubt dir Nachsehen ohne ständige Unterbrechung.",
+      "Wähle Zeiten, die zu deinem Tag passen, etwa Mittag und früher Abend."
+     ],
+     "q": "Wann würde eine tägliche Zusammenfassung am besten in deinen Alltag passen?",
+     "c": "Suche die Einstellung für zeitgesteuerte Zusammenfassungen und probiere sie einen Tag aus."
+    },
+    "es": {
+     "t": "Agrupar notificaciones",
+     "g": "Usar resúmenes programados para que los avisos lleguen unas pocas veces al día.",
+     "p": [
+      "Algunos móviles agrupan los avisos no urgentes en un resumen.",
+      "Un resumen a horas fijas te deja revisar sin interrupciones constantes.",
+      "Elige horas que encajen con tu día, como el mediodía y la tarde."
+     ],
+     "q": "¿Cuándo encajaría mejor un resumen diario de notificaciones en tu rutina?",
+     "c": "Busca el ajuste de resumen programado y pruébalo durante un día."
+    },
+    "fr": {
+     "t": "Regrouper les notifications",
+     "g": "Utiliser des résumés programmés pour que les alertes arrivent quelques fois par jour.",
+     "p": [
+      "Certains téléphones regroupent les alertes non urgentes dans un résumé.",
+      "Un résumé à heures fixes te laisse vérifier sans interruptions constantes.",
+      "Choisis des moments adaptés à ta journée, comme midi et début de soirée."
+     ],
+     "q": "Quand un résumé quotidien de notifications s'intégrerait-il le mieux à ta routine ?",
+     "c": "Cherche le réglage de résumé programmé et essaie-le pendant une journée."
+    },
+    "it": {
+     "t": "Raggruppare le notifiche",
+     "g": "Usare riepiloghi programmati così gli avvisi arrivano poche volte al giorno.",
+     "p": [
+      "Alcuni telefoni raggruppano gli avvisi non urgenti in un riepilogo.",
+      "Un riepilogo a orari fissi ti permette di controllare senza interruzioni continue.",
+      "Scegli orari adatti alla tua giornata, come pranzo e prima sera."
+     ],
+     "q": "Quando un riepilogo giornaliero delle notifiche si adatterebbe meglio alla tua routine?",
+     "c": "Cerca l'impostazione del riepilogo programmato e provala per un giorno."
+    },
+    "pt": {
+     "t": "Agrupar notificações",
+     "g": "Usar resumos programados para os avisos chegarem poucas vezes por dia.",
+     "p": [
+      "Alguns telemóveis agrupam avisos não urgentes num resumo.",
+      "Um resumo a horas fixas deixa-te ver sem interrupções constantes.",
+      "Escolhe horas que combinem com o teu dia, como o almoço e o início da noite."
+     ],
+     "q": "Quando se encaixaria melhor um resumo diário de notificações na tua rotina?",
+     "c": "Procura a definição de resumo programado e experimenta-a durante um dia."
+    },
+    "pt_BR": {
+     "t": "Agrupando notificações",
+     "g": "Usar resumos programados para os avisos chegarem poucas vezes por dia.",
+     "p": [
+      "Alguns celulares agrupam avisos não urgentes em um resumo.",
+      "Um resumo em horários fixos permite conferir sem interrupções constantes.",
+      "Escolha horários que combinem com seu dia, como o almoço e o começo da noite."
+     ],
+     "q": "Quando um resumo diário de notificações se encaixaria melhor na sua rotina?",
+     "c": "Procure a configuração de resumo programado e teste por um dia."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Do Not Disturb mode",
+     "g": "Set quiet hours so your phone stays silent when you need calm.",
+     "p": [
+      "Do Not Disturb silences calls and alerts during times you choose.",
+      "You can allow a few important people through for peace of mind.",
+      "Schedule it for sleep, meals or focused work."
+     ],
+     "q": "When in your day would a few quiet hours help most?",
+     "c": "Set a daily Do Not Disturb schedule and keep it for the whole week."
+    },
+    "de": {
+     "t": "Nicht-stören-Modus",
+     "g": "Ruhezeiten festlegen, damit dein Handy stumm bleibt, wenn du Ruhe brauchst.",
+     "p": [
+      "Nicht stören schaltet Anrufe und Meldungen zu gewählten Zeiten stumm.",
+      "Du kannst ein paar wichtige Personen durchlassen, für ein gutes Gefühl.",
+      "Plane ihn für Schlaf, Mahlzeiten oder konzentriertes Arbeiten."
+     ],
+     "q": "Wann am Tag würden dir ein paar ruhige Stunden am meisten helfen?",
+     "c": "Richte einen täglichen Nicht-stören-Zeitplan ein und halte ihn die ganze Woche."
+    },
+    "es": {
+     "t": "Modo No molestar",
+     "g": "Fijar horas de silencio para que el móvil calle cuando necesitas calma.",
+     "p": [
+      "No molestar silencia llamadas y avisos en los momentos que elijas.",
+      "Puedes dejar pasar a unas pocas personas importantes para estar tranquilo.",
+      "Prográmalo para dormir, comer o trabajar concentrado."
+     ],
+     "q": "¿En qué momento del día te ayudarían más unas horas de calma?",
+     "c": "Programa un horario diario de No molestar y mantenlo toda la semana."
+    },
+    "fr": {
+     "t": "Mode Ne pas déranger",
+     "g": "Fixer des heures de silence pour que ton téléphone se taise quand tu as besoin de calme.",
+     "p": [
+      "Ne pas déranger coupe les appels et alertes aux moments que tu choisis.",
+      "Tu peux laisser passer quelques personnes importantes pour être tranquille.",
+      "Programme-le pour le sommeil, les repas ou le travail concentré."
+     ],
+     "q": "À quel moment de ta journée quelques heures de calme t'aideraient-elles le plus ?",
+     "c": "Programme un horaire quotidien de Ne pas déranger et garde-le toute la semaine."
+    },
+    "it": {
+     "t": "Modalità Non disturbare",
+     "g": "Impostare ore di silenzio così il telefono tace quando ti serve calma.",
+     "p": [
+      "Non disturbare silenzia chiamate e avvisi negli orari che scegli.",
+      "Puoi lasciar passare poche persone importanti per stare tranquillo.",
+      "Programmalo per dormire, mangiare o lavorare concentrato."
+     ],
+     "q": "In quale momento della giornata ti aiuterebbero di più alcune ore di calma?",
+     "c": "Imposta un orario giornaliero di Non disturbare e mantienilo per tutta la settimana."
+    },
+    "pt": {
+     "t": "Modo Não incomodar",
+     "g": "Definir horas de silêncio para o telemóvel calar quando precisas de calma.",
+     "p": [
+      "Não incomodar silencia chamadas e avisos nas horas que escolheres.",
+      "Podes deixar passar algumas pessoas importantes para ficares descansado.",
+      "Programa-o para dormir, comer ou trabalhar concentrado."
+     ],
+     "q": "Em que altura do dia te ajudariam mais algumas horas de calma?",
+     "c": "Programa um horário diário de Não incomodar e mantém-no durante toda a semana."
+    },
+    "pt_BR": {
+     "t": "Modo Não perturbe",
+     "g": "Definir horas de silêncio para o celular calar quando você precisa de calma.",
+     "p": [
+      "Não perturbe silencia ligações e avisos nos horários que você escolher.",
+      "Você pode deixar passar algumas pessoas importantes para ficar tranquilo.",
+      "Programe para dormir, comer ou trabalhar concentrado."
+     ],
+     "q": "Em que momento do dia algumas horas de calma ajudariam mais?",
+     "c": "Programe um horário diário de Não perturbe e mantenha a semana toda."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Focus modes",
+     "g": "Create modes for work, family time or sleep that limit distractions.",
+     "p": [
+      "A focus mode shows only the apps and alerts that fit what you are doing.",
+      "Make one for work, one for evenings and one for sleep.",
+      "Switching modes tells your brain what kind of time it is."
+     ],
+     "q": "Which part of your day would benefit most from its own focus mode?",
+     "c": "Create one focus mode today and use it for at least one session."
+    },
+    "de": {
+     "t": "Fokus-Modi",
+     "g": "Modi für Arbeit, Familienzeit oder Schlaf einrichten, die Ablenkung begrenzen.",
+     "p": [
+      "Ein Fokus-Modus zeigt nur Apps und Meldungen, die zu deiner Tätigkeit passen.",
+      "Richte einen für die Arbeit, einen für den Abend und einen für den Schlaf ein.",
+      "Das Umschalten sagt deinem Kopf, welche Art Zeit gerade ist."
+     ],
+     "q": "Welcher Teil deines Tages würde am meisten von einem eigenen Fokus-Modus profitieren?",
+     "c": "Erstelle heute einen Fokus-Modus und nutze ihn in mindestens einer Sitzung."
+    },
+    "es": {
+     "t": "Modos de concentración",
+     "g": "Crear modos para el trabajo, la familia o el sueño que limiten las distracciones.",
+     "p": [
+      "Un modo de concentración muestra solo las apps y avisos que encajan con lo que haces.",
+      "Crea uno para el trabajo, otro para las tardes y otro para dormir.",
+      "Cambiar de modo le dice a tu cerebro qué tipo de tiempo es."
+     ],
+     "q": "¿Qué parte de tu día se beneficiaría más de su propio modo?",
+     "c": "Crea hoy un modo de concentración y úsalo al menos en una sesión."
+    },
+    "fr": {
+     "t": "Modes de concentration",
+     "g": "Créer des modes pour le travail, la famille ou le sommeil qui limitent les distractions.",
+     "p": [
+      "Un mode de concentration n'affiche que les applis et alertes adaptées à ce que tu fais.",
+      "Crée-en un pour le travail, un pour les soirées et un pour dormir.",
+      "Changer de mode dit à ton cerveau quel type de moment c'est."
+     ],
+     "q": "Quelle partie de ta journée profiterait le plus de son propre mode ?",
+     "c": "Crée un mode de concentration aujourd'hui et utilise-le pendant au moins une session."
+    },
+    "it": {
+     "t": "Modalità di concentrazione",
+     "g": "Creare modalità per lavoro, famiglia o sonno che limitano le distrazioni.",
+     "p": [
+      "Una modalità di concentrazione mostra solo app e avvisi adatti a ciò che fai.",
+      "Creane una per il lavoro, una per le serate e una per dormire.",
+      "Cambiare modalità dice al cervello che tipo di momento è."
+     ],
+     "q": "Quale parte della tua giornata trarrebbe più vantaggio da una modalità dedicata?",
+     "c": "Crea oggi una modalità di concentrazione e usala in almeno una sessione."
+    },
+    "pt": {
+     "t": "Modos de concentração",
+     "g": "Criar modos para o trabalho, a família ou o sono que limitem distrações.",
+     "p": [
+      "Um modo de concentração mostra só as apps e avisos que combinam com o que fazes.",
+      "Cria um para o trabalho, outro para as noites e outro para dormir.",
+      "Mudar de modo diz ao cérebro que tipo de tempo é."
+     ],
+     "q": "Que parte do teu dia mais beneficiaria de um modo próprio?",
+     "c": "Cria hoje um modo de concentração e usa-o em pelo menos uma sessão."
+    },
+    "pt_BR": {
+     "t": "Modos de foco",
+     "g": "Criar modos para o trabalho, a família ou o sono que limitem distrações.",
+     "p": [
+      "Um modo de foco mostra só os apps e avisos que combinam com o que você faz.",
+      "Crie um para o trabalho, outro para as noites e outro para dormir.",
+      "Trocar de modo diz ao cérebro que tipo de tempo é."
+     ],
+     "q": "Que parte do seu dia mais se beneficiaria de um modo próprio?",
+     "c": "Crie hoje um modo de foco e use em pelo menos uma sessão."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Silencing group chats",
+     "g": "Mute busy chats and check them when it suits you.",
+     "p": [
+      "Busy group chats can ping dozens of times a day.",
+      "Muting does not mean leaving: you just read at your own time.",
+      "Important people can still reach you directly."
+     ],
+     "q": "Which group chat would you most like to mute for a while?",
+     "c": "Mute your busiest group chat today and read it once in the evening."
+    },
+    "de": {
+     "t": "Gruppenchats stummschalten",
+     "g": "Lebhafte Chats stummschalten und lesen, wenn es dir passt.",
+     "p": [
+      "Lebhafte Gruppenchats können dutzende Male am Tag pingen.",
+      "Stummschalten heißt nicht austreten: du liest einfach zu deiner Zeit.",
+      "Wichtige Menschen erreichen dich weiterhin direkt."
+     ],
+     "q": "Welchen Gruppenchat würdest du am liebsten eine Weile stummschalten?",
+     "c": "Schalte heute deinen lebhaftesten Gruppenchat stumm und lies ihn einmal am Abend."
+    },
+    "es": {
+     "t": "Silenciar los chats de grupo",
+     "g": "Silenciar chats ajetreados y revisarlos cuando te venga bien.",
+     "p": [
+      "Los grupos muy activos pueden avisar decenas de veces al día.",
+      "Silenciar no es salir: simplemente lees cuando te conviene.",
+      "Las personas importantes aún pueden contactarte directamente."
+     ],
+     "q": "¿Qué chat de grupo te gustaría silenciar un tiempo?",
+     "c": "Silencia hoy tu chat de grupo más activo y léelo una vez por la tarde."
+    },
+    "fr": {
+     "t": "Mettre les groupes en sourdine",
+     "g": "Couper le son des discussions très actives et les lire quand ça te convient.",
+     "p": [
+      "Les groupes très actifs peuvent notifier des dizaines de fois par jour.",
+      "Mettre en sourdine n'est pas quitter : tu lis simplement à ton rythme.",
+      "Les personnes importantes peuvent toujours te joindre directement."
+     ],
+     "q": "Quel groupe aimerais-tu mettre en sourdine pendant un temps ?",
+     "c": "Mets aujourd'hui en sourdine ton groupe le plus actif et lis-le une fois le soir."
+    },
+    "it": {
+     "t": "Silenziare le chat di gruppo",
+     "g": "Silenziare le chat affollate e leggerle quando ti fa comodo.",
+     "p": [
+      "Le chat di gruppo molto attive possono notificare decine di volte al giorno.",
+      "Silenziare non significa uscire: leggi semplicemente quando vuoi.",
+      "Le persone importanti possono comunque contattarti direttamente."
+     ],
+     "q": "Quale chat di gruppo vorresti silenziare per un po'?",
+     "c": "Silenzia oggi la tua chat di gruppo più attiva e leggila una volta la sera."
+    },
+    "pt": {
+     "t": "Silenciar grupos de conversa",
+     "g": "Silenciar conversas movimentadas e lê-las quando te der jeito.",
+     "p": [
+      "Grupos muito ativos podem avisar dezenas de vezes por dia.",
+      "Silenciar não é sair: simplesmente lês quando te convém.",
+      "As pessoas importantes ainda te podem contactar diretamente."
+     ],
+     "q": "Que grupo de conversa gostarias de silenciar durante algum tempo?",
+     "c": "Silencia hoje o teu grupo mais ativo e lê-o uma vez ao fim do dia."
+    },
+    "pt_BR": {
+     "t": "Silenciando grupos de conversa",
+     "g": "Silenciar conversas movimentadas e ler quando for conveniente.",
+     "p": [
+      "Grupos muito ativos podem avisar dezenas de vezes por dia.",
+      "Silenciar não é sair: você simplesmente lê quando quiser.",
+      "As pessoas importantes ainda podem falar com você diretamente."
+     ],
+     "q": "Qual grupo de conversa você gostaria de silenciar por um tempo?",
+     "c": "Silencie hoje seu grupo mais ativo e leia uma vez à noite."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Badges and red dots",
+     "g": "Turn off app badges that create a feeling of urgency.",
+     "p": [
+      "Red dots and numbers are designed to make you tap.",
+      "Without badges, you open an app because you chose to.",
+      "You can keep a badge on the few apps that really need one."
+     ],
+     "q": "Which red dot do you find hardest to ignore?",
+     "c": "Turn off badges for every app except those from people you care about."
+    },
+    "de": {
+     "t": "Abzeichen und rote Punkte",
+     "g": "App-Abzeichen ausschalten, die ein Gefühl von Dringlichkeit erzeugen.",
+     "p": [
+      "Rote Punkte und Zahlen sollen dich zum Tippen bringen.",
+      "Ohne Abzeichen öffnest du eine App, weil du es so wählst.",
+      "Bei den wenigen Apps, die es wirklich brauchen, kannst du sie behalten."
+     ],
+     "q": "Welcher rote Punkt fällt dir am schwersten zu ignorieren?",
+     "c": "Schalte heute alle Abzeichen aus, außer die von Menschen, die dir wichtig sind."
+    },
+    "es": {
+     "t": "Globos y puntos rojos",
+     "g": "Desactivar los globos de las apps que generan sensación de urgencia.",
+     "p": [
+      "Los puntos rojos y los números están pensados para que toques.",
+      "Sin globos, abres una app porque tú lo decides.",
+      "Puedes mantenerlos en las pocas apps que de verdad los necesitan."
+     ],
+     "q": "¿Qué punto rojo te cuesta más ignorar?",
+     "c": "Desactiva hoy los globos de todas las apps salvo las de personas que quieres."
+    },
+    "fr": {
+     "t": "Pastilles et points rouges",
+     "g": "Désactiver les pastilles d'applis qui créent un sentiment d'urgence.",
+     "p": [
+      "Les points rouges et les chiffres sont conçus pour te faire toucher.",
+      "Sans pastilles, tu ouvres une appli parce que tu l'as choisi.",
+      "Tu peux les garder sur les rares applis qui en ont vraiment besoin."
+     ],
+     "q": "Quel point rouge as-tu le plus de mal à ignorer ?",
+     "c": "Désactive aujourd'hui les pastilles de toutes les applis sauf celles de personnes qui comptent."
+    },
+    "it": {
+     "t": "Badge e puntini rossi",
+     "g": "Disattivare i badge delle app che creano un senso di urgenza.",
+     "p": [
+      "I puntini rossi e i numeri sono pensati per farti toccare.",
+      "Senza badge, apri un'app perché l'hai scelto tu.",
+      "Puoi tenerli sulle poche app che ne hanno davvero bisogno."
+     ],
+     "q": "Quale puntino rosso ti è più difficile ignorare?",
+     "c": "Disattiva oggi i badge di tutte le app tranne quelle delle persone a cui tieni."
+    },
+    "pt": {
+     "t": "Selos e pontos vermelhos",
+     "g": "Desligar os selos das apps que criam sensação de urgência.",
+     "p": [
+      "Os pontos vermelhos e os números são feitos para te fazer tocar.",
+      "Sem selos, abres uma app porque escolheste.",
+      "Podes manter selos nas poucas apps que realmente precisam."
+     ],
+     "q": "Que ponto vermelho tens mais dificuldade em ignorar?",
+     "c": "Desliga hoje os selos de todas as apps, exceto as de pessoas de quem gostas."
+    },
+    "pt_BR": {
+     "t": "Selos e bolinhas vermelhas",
+     "g": "Desligar os selos dos apps que criam sensação de urgência.",
+     "p": [
+      "As bolinhas vermelhas e os números são feitos para fazer você tocar.",
+      "Sem selos, você abre um app porque escolheu.",
+      "Você pode manter selos nos poucos apps que realmente precisam."
+     ],
+     "q": "Qual bolinha vermelha você tem mais dificuldade de ignorar?",
+     "c": "Desligue hoje os selos de todos os apps, exceto os de pessoas de quem você gosta."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A calmer home screen",
+     "g": "Move tempting apps off the first screen to reduce impulse opening.",
+     "p": [
+      "What you see first is what you tap most.",
+      "Keep tools on page one and move the most tempting apps away.",
+      "Fewer icons on screen means fewer automatic taps."
+     ],
+     "q": "Which app would you move first, if you were honest?",
+     "c": "Rearrange your home screen today so only helpful tools are on page one."
+    },
+    "de": {
+     "t": "Ein ruhigerer Startbildschirm",
+     "g": "Verlockende Apps vom ersten Bildschirm entfernen, um Impulsöffnungen zu verringern.",
+     "p": [
+      "Was du zuerst siehst, tippst du am meisten.",
+      "Lass Werkzeuge auf Seite eins und verschiebe die verlockendsten Apps weg.",
+      "Weniger Symbole bedeuten weniger automatische Tipper."
+     ],
+     "q": "Welche App würdest du ehrlicherweise zuerst verschieben?",
+     "c": "Ordne heute deinen Startbildschirm um, sodass auf Seite eins nur hilfreiche Werkzeuge liegen."
+    },
+    "es": {
+     "t": "Una pantalla de inicio más tranquila",
+     "g": "Mover apps tentadoras fuera de la primera pantalla para abrir menos por impulso.",
+     "p": [
+      "Lo que ves primero es lo que más tocas.",
+      "Deja las herramientas en la primera página y aleja las apps más tentadoras.",
+      "Menos iconos a la vista significa menos toques automáticos."
+     ],
+     "q": "¿Qué app moverías primero, siendo sincero?",
+     "c": "Reorganiza hoy tu pantalla de inicio para que en la primera página solo haya herramientas útiles."
+    },
+    "fr": {
+     "t": "Un écran d'accueil plus calme",
+     "g": "Éloigner les applis tentantes du premier écran pour réduire les ouvertures impulsives.",
+     "p": [
+      "Ce que tu vois en premier est ce que tu touches le plus.",
+      "Garde les outils sur la première page et éloigne les applis les plus tentantes.",
+      "Moins d'icônes à l'écran, c'est moins de touches automatiques."
+     ],
+     "q": "Quelle appli déplacerais-tu en premier, en toute honnêteté ?",
+     "c": "Réorganise ton écran d'accueil aujourd'hui pour n'avoir que des outils utiles sur la première page."
+    },
+    "it": {
+     "t": "Una schermata iniziale più calma",
+     "g": "Spostare le app tentatrici dalla prima schermata per ridurre le aperture impulsive.",
+     "p": [
+      "Ciò che vedi per primo è ciò che tocchi di più.",
+      "Tieni gli strumenti nella prima pagina e allontana le app più tentatrici.",
+      "Meno icone in vista significa meno tocchi automatici."
+     ],
+     "q": "Quale app sposteresti per prima, se fossi sincero?",
+     "c": "Riordina oggi la schermata iniziale in modo che la prima pagina contenga solo strumenti utili."
+    },
+    "pt": {
+     "t": "Um ecrã inicial mais calmo",
+     "g": "Afastar apps tentadoras do primeiro ecrã para reduzir aberturas por impulso.",
+     "p": [
+      "O que vês primeiro é o que mais tocas.",
+      "Deixa as ferramentas na primeira página e afasta as apps mais tentadoras.",
+      "Menos ícones à vista significa menos toques automáticos."
+     ],
+     "q": "Que app moverias primeiro, se fosses sincero?",
+     "c": "Reorganiza hoje o ecrã inicial para a primeira página ter só ferramentas úteis."
+    },
+    "pt_BR": {
+     "t": "Uma tela inicial mais calma",
+     "g": "Afastar apps tentadores da primeira tela para reduzir aberturas por impulso.",
+     "p": [
+      "O que você vê primeiro é o que mais toca.",
+      "Deixe as ferramentas na primeira página e afaste os apps mais tentadores.",
+      "Menos ícones à vista significa menos toques automáticos."
+     ],
+     "q": "Qual app você moveria primeiro, sendo sincero?",
+     "c": "Reorganize hoje a tela inicial para a primeira página ter só ferramentas úteis."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Folders and the second page",
+     "g": "Hide distracting apps in folders so opening them takes a decision.",
+     "p": [
+      "Put tempting apps in a folder on the last page of your phone.",
+      "One extra step is often enough to turn a reflex into a choice.",
+      "Name the folder something honest, like 'Pause first'."
+     ],
+     "q": "Which apps would you place in a pause folder?",
+     "c": "Create a folder for your most tempting apps and move it off the first page."
+    },
+    "de": {
+     "t": "Ordner und die zweite Seite",
+     "g": "Ablenkende Apps in Ordnern verstecken, damit das Öffnen eine Entscheidung braucht.",
+     "p": [
+      "Leg verlockende Apps in einen Ordner auf der letzten Seite deines Handys.",
+      "Ein zusätzlicher Schritt reicht oft, um einen Reflex in eine Wahl zu verwandeln.",
+      "Gib dem Ordner einen ehrlichen Namen, etwa „Erst innehalten“."
+     ],
+     "q": "Welche Apps würdest du in einen Pausen-Ordner legen?",
+     "c": "Erstelle einen Ordner für deine verlockendsten Apps und verschiebe ihn von der ersten Seite."
+    },
+    "es": {
+     "t": "Carpetas y la segunda página",
+     "g": "Esconder apps que distraen en carpetas para que abrirlas exija una decisión.",
+     "p": [
+      "Pon las apps tentadoras en una carpeta en la última página del móvil.",
+      "Un paso extra suele bastar para convertir un reflejo en una elección.",
+      "Ponle a la carpeta un nombre honesto, como «Pausa primero»."
+     ],
+     "q": "¿Qué apps pondrías en una carpeta de pausa?",
+     "c": "Crea una carpeta para tus apps más tentadoras y sácala de la primera página."
+    },
+    "fr": {
+     "t": "Dossiers et deuxième page",
+     "g": "Cacher les applis qui distraient dans des dossiers pour que les ouvrir demande une décision.",
+     "p": [
+      "Mets les applis tentantes dans un dossier sur la dernière page du téléphone.",
+      "Une étape de plus suffit souvent à transformer un réflexe en choix.",
+      "Donne au dossier un nom honnête, comme « Pause d'abord »."
+     ],
+     "q": "Quelles applis mettrais-tu dans un dossier pause ?",
+     "c": "Crée un dossier pour tes applis les plus tentantes et éloigne-le de la première page."
+    },
+    "it": {
+     "t": "Cartelle e seconda pagina",
+     "g": "Nascondere le app che distraggono in cartelle così aprirle richiede una decisione.",
+     "p": [
+      "Metti le app tentatrici in una cartella nell'ultima pagina del telefono.",
+      "Un passaggio in più spesso basta a trasformare un riflesso in una scelta.",
+      "Dai alla cartella un nome onesto, come «Prima una pausa»."
+     ],
+     "q": "Quali app metteresti in una cartella pausa?",
+     "c": "Crea una cartella per le tue app più tentatrici e spostala fuori dalla prima pagina."
+    },
+    "pt": {
+     "t": "Pastas e a segunda página",
+     "g": "Esconder apps que distraem em pastas para que abri-las exija uma decisão.",
+     "p": [
+      "Põe as apps tentadoras numa pasta na última página do telemóvel.",
+      "Um passo extra costuma bastar para transformar um reflexo numa escolha.",
+      "Dá à pasta um nome honesto, como «Pausa primeiro»."
+     ],
+     "q": "Que apps porias numa pasta de pausa?",
+     "c": "Cria uma pasta para as tuas apps mais tentadoras e tira-a da primeira página."
+    },
+    "pt_BR": {
+     "t": "Pastas e a segunda página",
+     "g": "Esconder apps que distraem em pastas para que abri-los exija uma decisão.",
+     "p": [
+      "Ponha os apps tentadores numa pasta na última página do celular.",
+      "Um passo extra costuma bastar para transformar um reflexo numa escolha.",
+      "Dê à pasta um nome honesto, como «Pausa primeiro»."
+     ],
+     "q": "Que apps você poria numa pasta de pausa?",
+     "c": "Crie uma pasta para seus apps mais tentadores e tire-a da primeira página."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Greyscale mode",
+     "g": "Try a black and white screen to make the phone less eye-catching.",
+     "p": [
+      "Colour grabs attention; greyscale makes the screen calmer.",
+      "Many phones have a greyscale option in accessibility settings.",
+      "Try it for a day and notice how often you open apps."
+     ],
+     "q": "How does your phone feel when everything is in shades of grey?",
+     "c": "Switch on greyscale for one day, or for the evening, and see what changes."
+    },
+    "de": {
+     "t": "Graustufenmodus",
+     "g": "Einen Schwarz-Weiß-Bildschirm testen, damit das Handy weniger Blicke anzieht.",
+     "p": [
+      "Farbe fesselt die Aufmerksamkeit; Graustufen machen den Bildschirm ruhiger.",
+      "Viele Handys haben in den Bedienungshilfen eine Graustufenoption.",
+      "Probiere es einen Tag und achte darauf, wie oft du Apps öffnest."
+     ],
+     "q": "Wie fühlt sich dein Handy an, wenn alles in Grautönen ist?",
+     "c": "Schalte Graustufen einen Tag oder den Abend lang ein und beobachte, was sich ändert."
+    },
+    "es": {
+     "t": "Modo escala de grises",
+     "g": "Probar una pantalla en blanco y negro para que el móvil llame menos la atención.",
+     "p": [
+      "El color atrae la atención; la escala de grises calma la pantalla.",
+      "Muchos móviles tienen una opción de grises en accesibilidad.",
+      "Pruébalo un día y fíjate en cuántas veces abres apps."
+     ],
+     "q": "¿Cómo se siente tu móvil cuando todo está en tonos grises?",
+     "c": "Activa la escala de grises un día, o por la tarde, y observa qué cambia."
+    },
+    "fr": {
+     "t": "Mode niveaux de gris",
+     "g": "Essayer un écran noir et blanc pour rendre le téléphone moins attirant.",
+     "p": [
+      "La couleur attire l'attention ; les gris apaisent l'écran.",
+      "Beaucoup de téléphones ont une option niveaux de gris dans l'accessibilité.",
+      "Essaie-la une journée et remarque combien de fois tu ouvres des applis."
+     ],
+     "q": "Que ressens-tu quand ton téléphone est tout en nuances de gris ?",
+     "c": "Active les niveaux de gris une journée, ou le soir, et observe ce qui change."
+    },
+    "it": {
+     "t": "Modalità scala di grigi",
+     "g": "Provare uno schermo in bianco e nero per rendere il telefono meno attraente.",
+     "p": [
+      "Il colore cattura l'attenzione; la scala di grigi rende lo schermo più calmo.",
+      "Molti telefoni hanno un'opzione in scala di grigi nell'accessibilità.",
+      "Provala per un giorno e nota quanto spesso apri le app."
+     ],
+     "q": "Come ti sembra il telefono quando tutto è in toni di grigio?",
+     "c": "Attiva la scala di grigi per un giorno, o per la sera, e osserva cosa cambia."
+    },
+    "pt": {
+     "t": "Modo escala de cinzentos",
+     "g": "Experimentar um ecrã a preto e branco para o telemóvel chamar menos a atenção.",
+     "p": [
+      "A cor atrai a atenção; a escala de cinzentos acalma o ecrã.",
+      "Muitos telemóveis têm uma opção de cinzentos na acessibilidade.",
+      "Experimenta durante um dia e repara quantas vezes abres apps."
+     ],
+     "q": "Como se sente o teu telemóvel quando tudo está em tons de cinzento?",
+     "c": "Ativa a escala de cinzentos durante um dia, ou ao serão, e vê o que muda."
+    },
+    "pt_BR": {
+     "t": "Modo escala de cinza",
+     "g": "Testar uma tela em preto e branco para o celular chamar menos atenção.",
+     "p": [
+      "A cor atrai a atenção; a escala de cinza acalma a tela.",
+      "Muitos celulares têm uma opção de cinza nas configurações de acessibilidade.",
+      "Teste por um dia e repare quantas vezes você abre apps."
+     ],
+     "q": "Como seu celular parece quando tudo está em tons de cinza?",
+     "c": "Ative a escala de cinza por um dia, ou à noite, e veja o que muda."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "mindfulness",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mindful stretching",
+     "g": "Move slowly through simple stretches while feeling each sensation.",
+     "p": [
+      "Choose two or three easy stretches, like reaching up or rolling the shoulders.",
+      "Move slowly and feel the muscles lengthening, stopping well before any pain.",
+      "Breathe naturally and let the stretch be gentle, not a performance."
+     ],
+     "q": "Which stretch felt best, and what sensations came with it?",
+     "c": "Do a slow two-minute stretch today and feel every sensation."
+    },
+    "de": {
+     "t": "Achtsames Dehnen",
+     "g": "Bewege dich langsam durch einfache Dehnübungen und spüre jede Empfindung.",
+     "p": [
+      "Wähle zwei oder drei leichte Dehnungen, etwa Strecken nach oben oder Schulterkreisen.",
+      "Bewege dich langsam, spüre die Muskeln länger werden und stoppe weit vor jedem Schmerz.",
+      "Atme natürlich und lass die Dehnung sanft sein, keine Leistung."
+     ],
+     "q": "Welche Dehnung fühlte sich am besten an, und welche Empfindungen kamen dazu?",
+     "c": "Dehne dich heute zwei Minuten langsam und spüre jede Empfindung."
+    },
+    "es": {
+     "t": "Estiramiento consciente",
+     "g": "Muévete despacio por estiramientos sencillos sintiendo cada sensación.",
+     "p": [
+      "Elige dos o tres estiramientos fáciles, como alzar los brazos o girar los hombros.",
+      "Muévete despacio y siente cómo se alargan los músculos, parando mucho antes de cualquier dolor.",
+      "Respira con naturalidad y deja que el estiramiento sea suave, no una exhibición."
+     ],
+     "q": "¿Qué estiramiento te sentó mejor y qué sensaciones trajo?",
+     "c": "Haz hoy un estiramiento lento de dos minutos y siente cada sensación."
+    },
+    "fr": {
+     "t": "Étirements en pleine conscience",
+     "g": "Déplace-toi lentement dans des étirements simples en sentant chaque sensation.",
+     "p": [
+      "Choisis deux ou trois étirements faciles, comme lever les bras ou rouler les épaules.",
+      "Bouge lentement et sens les muscles s'allonger, en t'arrêtant bien avant toute douleur.",
+      "Respire naturellement et garde l'étirement doux, sans performance."
+     ],
+     "q": "Quel étirement t'a fait le plus de bien, et quelles sensations l'accompagnaient ?",
+     "c": "Fais aujourd'hui un étirement lent de deux minutes en sentant chaque sensation."
+    },
+    "it": {
+     "t": "Stretching consapevole",
+     "g": "Muoviti lentamente in semplici stiramenti sentendo ogni sensazione.",
+     "p": [
+      "Scegli due o tre stiramenti facili, come allungare le braccia o ruotare le spalle.",
+      "Muoviti piano e senti i muscoli allungarsi, fermandoti ben prima di ogni dolore.",
+      "Respira naturalmente e tieni lo stiramento dolce, non una prestazione."
+     ],
+     "q": "Quale stiramento ti ha fatto stare meglio e quali sensazioni ha portato?",
+     "c": "Oggi fai uno stretching lento di due minuti e senti ogni sensazione."
+    },
+    "pt": {
+     "t": "Alongamento consciente",
+     "g": "Move-te devagar por alongamentos simples, sentindo cada sensação.",
+     "p": [
+      "Escolhe dois ou três alongamentos fáceis, como esticar os braços ou rodar os ombros.",
+      "Move-te devagar e sente os músculos a alongar, parando bem antes de qualquer dor.",
+      "Respira naturalmente e deixa o alongamento ser suave, não uma exibição."
+     ],
+     "q": "Que alongamento te soube melhor e que sensações trouxe?",
+     "c": "Faz hoje um alongamento lento de dois minutos e sente cada sensação."
+    },
+    "pt_BR": {
+     "t": "Alongamento consciente",
+     "g": "Mova-se devagar por alongamentos simples, sentindo cada sensação.",
+     "p": [
+      "Escolha dois ou três alongamentos fáceis, como esticar os braços ou girar os ombros.",
+      "Mova-se devagar e sinta os músculos alongando, parando bem antes de qualquer dor.",
+      "Respire naturalmente e deixe o alongamento ser suave, sem desempenho."
+     ],
+     "q": "Que alongamento foi melhor para você e que sensações trouxe?",
+     "c": "Faça hoje um alongamento lento de dois minutos e sinta cada sensação."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Posture check-ins",
+     "g": "Notice how you sit or stand at different moments of the day.",
+     "p": [
+      "Pause and ask: how am I sitting or standing right now?",
+      "Notice without judging; slumping and tilting are simply information.",
+      "If you wish, adjust gently and feel what changes in your breath and body."
+     ],
+     "q": "At which moment of your day do you notice your posture changing most?",
+     "c": "Check your posture at three set times today, such as 10, 14 and 18 hours."
+    },
+    "de": {
+     "t": "Haltungs-Check-ins",
+     "g": "Bemerke, wie du zu verschiedenen Zeiten des Tages sitzt oder stehst.",
+     "p": [
+      "Halte inne und frage: Wie sitze oder stehe ich gerade?",
+      "Bemerke ohne zu urteilen; Zusammensinken und Neigen sind nur Information.",
+      "Wenn du magst, korrigiere sanft und spüre, was sich in Atem und Körper ändert."
+     ],
+     "q": "Zu welchem Zeitpunkt deines Tages verändert sich deine Haltung am meisten?",
+     "c": "Prüfe heute zu drei festen Zeiten deine Haltung, etwa um 10, 14 und 18 Uhr."
+    },
+    "es": {
+     "t": "Revisiones de postura",
+     "g": "Nota cómo te sientas o estás de pie en distintos momentos del día.",
+     "p": [
+      "Haz una pausa y pregunta: ¿cómo estoy sentado o de pie ahora mismo?",
+      "Nota sin juzgar; encorvarse o ladearse es solo información.",
+      "Si quieres, ajusta con suavidad y siente qué cambia en tu respiración y cuerpo."
+     ],
+     "q": "¿En qué momento del día notas que más cambia tu postura?",
+     "c": "Revisa tu postura hoy en tres horas fijas, por ejemplo a las 10, 14 y 18."
+    },
+    "fr": {
+     "t": "Bilans de posture",
+     "g": "Remarque comment tu es assis ou debout à différents moments de la journée.",
+     "p": [
+      "Fais une pause et demande : comment suis-je assis ou debout en ce moment ?",
+      "Remarque sans juger; se voûter ou pencher n'est qu'une information.",
+      "Si tu veux, ajuste doucement et sens ce qui change dans ta respiration et ton corps."
+     ],
+     "q": "À quel moment de ta journée ta posture change-t-elle le plus ?",
+     "c": "Vérifie ta posture aujourd'hui à trois heures fixes, par exemple 10, 14 et 18 heures."
+    },
+    "it": {
+     "t": "Controlli della postura",
+     "g": "Nota come siedi o stai in piedi in momenti diversi della giornata.",
+     "p": [
+      "Fermati e chiedi: come sono seduto o in piedi adesso?",
+      "Nota senza giudicare; curvarsi o inclinarsi è solo un'informazione.",
+      "Se vuoi, correggi con dolcezza e senti cosa cambia nel respiro e nel corpo."
+     ],
+     "q": "In quale momento della giornata noti che la tua postura cambia di più?",
+     "c": "Controlla la postura oggi a tre orari fissi, per esempio alle 10, 14 e 18."
+    },
+    "pt": {
+     "t": "Verificações de postura",
+     "g": "Repara em como te sentas ou ficas de pé em diferentes momentos do dia.",
+     "p": [
+      "Pára e pergunta: como estou sentado ou de pé agora?",
+      "Repara sem julgar; curvar-se ou inclinar-se é apenas informação.",
+      "Se quiseres, ajusta com suavidade e sente o que muda na respiração e no corpo."
+     ],
+     "q": "Em que momento do dia reparas que a tua postura mais muda?",
+     "c": "Verifica a tua postura hoje a três horas fixas, por exemplo às 10, 14 e 18."
+    },
+    "pt_BR": {
+     "t": "Checagens de postura",
+     "g": "Perceba como você senta ou fica em pé em diferentes momentos do dia.",
+     "p": [
+      "Pare e pergunte: como estou sentado ou em pé agora?",
+      "Perceba sem julgar; curvar-se ou inclinar-se é apenas informação.",
+      "Se quiser, ajuste com suavidade e sinta o que muda na respiração e no corpo."
+     ],
+     "q": "Em que momento do dia você percebe que sua postura mais muda?",
+     "c": "Verifique sua postura hoje em três horários fixos, por exemplo às 10, 14 e 18."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Relaxing the face",
+     "g": "Soften the forehead, eyes and jaw with each out-breath.",
+     "p": [
+      "On an out-breath, let the forehead smooth out like a calm lake.",
+      "Soften the eyes, let the tongue rest and unclench the jaw.",
+      "Repeat for a few breaths; many people hold lots of tension in the face."
+     ],
+     "q": "Which part of your face held the most tension?",
+     "c": "Soften your face on three out-breaths each time you wait for something today."
+    },
+    "de": {
+     "t": "Das Gesicht entspannen",
+     "g": "Lass Stirn, Augen und Kiefer mit jedem Ausatmen weich werden.",
+     "p": [
+      "Lass beim Ausatmen die Stirn glatt werden wie einen ruhigen See.",
+      "Entspanne die Augen, lass die Zunge ruhen und löse den Kiefer.",
+      "Wiederhole einige Atemzüge; viele halten viel Anspannung im Gesicht."
+     ],
+     "q": "Welcher Teil deines Gesichts hielt die meiste Anspannung?",
+     "c": "Entspanne heute bei jedem Warten dein Gesicht auf drei Ausatmungen."
+    },
+    "es": {
+     "t": "Relajar el rostro",
+     "g": "Suaviza la frente, los ojos y la mandíbula con cada exhalación.",
+     "p": [
+      "Al exhalar, deja que la frente se alise como un lago en calma.",
+      "Suaviza los ojos, deja descansar la lengua y afloja la mandíbula.",
+      "Repite unas respiraciones; mucha gente guarda mucha tensión en la cara."
+     ],
+     "q": "¿Qué parte de tu rostro guardaba más tensión?",
+     "c": "Suaviza tu cara en tres exhalaciones cada vez que esperes algo hoy."
+    },
+    "fr": {
+     "t": "Détendre le visage",
+     "g": "Adoucis le front, les yeux et la mâchoire à chaque expiration.",
+     "p": [
+      "À l'expiration, laisse le front se lisser comme un lac calme.",
+      "Adoucis les yeux, laisse la langue reposer et desserre la mâchoire.",
+      "Répète quelques respirations; beaucoup de gens gardent beaucoup de tension dans le visage."
+     ],
+     "q": "Quelle partie de ton visage gardait le plus de tension ?",
+     "c": "Détends ton visage sur trois expirations à chaque attente aujourd'hui."
+    },
+    "it": {
+     "t": "Rilassare il viso",
+     "g": "Ammorbidisci fronte, occhi e mascella a ogni espirazione.",
+     "p": [
+      "Espirando, lascia che la fronte si distenda come un lago calmo.",
+      "Ammorbidisci gli occhi, lascia riposare la lingua e rilascia la mascella.",
+      "Ripeti per qualche respiro; molti tengono molta tensione nel viso."
+     ],
+     "q": "Quale parte del viso tratteneva più tensione?",
+     "c": "Oggi rilassa il viso su tre espirazioni ogni volta che aspetti qualcosa."
+    },
+    "pt": {
+     "t": "Relaxar o rosto",
+     "g": "Suaviza a testa, os olhos e o maxilar a cada expiração.",
+     "p": [
+      "Ao expirar, deixa a testa alisar como um lago calmo.",
+      "Suaviza os olhos, deixa a língua descansar e solta o maxilar.",
+      "Repete algumas respirações; muita gente guarda muita tensão no rosto."
+     ],
+     "q": "Que parte do rosto guardava mais tensão?",
+     "c": "Relaxa hoje o rosto em três expirações sempre que esperares por algo."
+    },
+    "pt_BR": {
+     "t": "Relaxando o rosto",
+     "g": "Suavize a testa, os olhos e a mandíbula a cada expiração.",
+     "p": [
+      "Ao expirar, deixe a testa alisar como um lago calmo.",
+      "Suavize os olhos, deixe a língua descansar e solte a mandíbula.",
+      "Repita por algumas respirações; muita gente guarda muita tensão no rosto."
+     ],
+     "q": "Que parte do rosto guardava mais tensão?",
+     "c": "Relaxe hoje o rosto em três expirações sempre que esperar por algo."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The shoulder drop",
+     "g": "Lift the shoulders on an in-breath and let them fall on the out-breath.",
+     "p": [
+      "Breathe in and lift the shoulders gently toward the ears.",
+      "Breathe out and let them drop completely, like a sigh.",
+      "Do it only a few times and not forcefully; stop if your neck or shoulders hurt."
+     ],
+     "q": "How did your shoulders feel after letting them drop?",
+     "c": "Do five shoulder drops at your desk or on a bench today."
+    },
+    "de": {
+     "t": "Das Schulterfallen",
+     "g": "Hebe die Schultern beim Einatmen und lass sie beim Ausatmen fallen.",
+     "p": [
+      "Atme ein und hebe die Schultern sanft Richtung Ohren.",
+      "Atme aus und lass sie ganz fallen, wie einen Seufzer.",
+      "Mache es nur ein paar Mal und ohne Kraft; stoppe bei Nacken- oder Schulterschmerz."
+     ],
+     "q": "Wie fühlten sich deine Schultern nach dem Fallenlassen an?",
+     "c": "Mache heute fünf Schulterfälle am Schreibtisch oder auf einer Bank."
+    },
+    "es": {
+     "t": "La caída de hombros",
+     "g": "Sube los hombros al inhalar y déjalos caer al exhalar.",
+     "p": [
+      "Inhala y sube los hombros con suavidad hacia las orejas.",
+      "Exhala y déjalos caer del todo, como un suspiro.",
+      "Hazlo solo unas veces y sin fuerza; para si te duele el cuello o los hombros."
+     ],
+     "q": "¿Cómo se sintieron tus hombros tras dejarlos caer?",
+     "c": "Haz hoy cinco caídas de hombros en tu mesa o en un banco."
+    },
+    "fr": {
+     "t": "La chute des épaules",
+     "g": "Lève les épaules à l'inspiration et laisse-les tomber à l'expiration.",
+     "p": [
+      "Inspire et lève doucement les épaules vers les oreilles.",
+      "Expire et laisse-les retomber complètement, comme un soupir.",
+      "Fais-le quelques fois seulement et sans force; arrête si la nuque ou les épaules font mal."
+     ],
+     "q": "Comment tes épaules se sentaient-elles après les avoir laissées tomber ?",
+     "c": "Fais aujourd'hui cinq chutes d'épaules à ton bureau ou sur un banc."
+    },
+    "it": {
+     "t": "La caduta delle spalle",
+     "g": "Solleva le spalle all'inspirazione e lasciale cadere all'espirazione.",
+     "p": [
+      "Inspira e solleva dolcemente le spalle verso le orecchie.",
+      "Espira e lasciale cadere del tutto, come un sospiro.",
+      "Fallo solo poche volte e senza forza; fermati se collo o spalle fanno male."
+     ],
+     "q": "Come si sentivano le spalle dopo averle lasciate cadere?",
+     "c": "Oggi fai cinque cadute di spalle alla scrivania o su una panchina."
+    },
+    "pt": {
+     "t": "A queda dos ombros",
+     "g": "Levanta os ombros ao inspirar e deixa-os cair ao expirar.",
+     "p": [
+      "Inspira e levanta suavemente os ombros em direção às orelhas.",
+      "Expira e deixa-os cair por completo, como um suspiro.",
+      "Faz só algumas vezes e sem força; pára se o pescoço ou os ombros doerem."
+     ],
+     "q": "Como se sentiram os teus ombros depois de os deixares cair?",
+     "c": "Faz hoje cinco quedas de ombros na secretária ou num banco."
+    },
+    "pt_BR": {
+     "t": "A queda dos ombros",
+     "g": "Levante os ombros ao inspirar e deixe-os cair ao expirar.",
+     "p": [
+      "Inspire e levante suavemente os ombros em direção às orelhas.",
+      "Expire e deixe-os cair por completo, como um suspiro.",
+      "Faça só algumas vezes e sem força; pare se o pescoço ou os ombros doerem."
+     ],
+     "q": "Como seus ombros se sentiram depois de deixá-los cair?",
+     "c": "Faça hoje cinco quedas de ombros na mesa de trabalho ou num banco."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Noticing temperature",
+     "g": "Feel warmth and coolness on the skin as an anchor to the present.",
+     "p": [
+      "Notice the air on your face, hands and arms.",
+      "Find warm spots, cool spots and places where clothes touch the skin.",
+      "Temperature is always available, which makes it a handy anchor."
+     ],
+     "q": "Where on your body did you feel warmth, and where coolness?",
+     "c": "Stop three times today and feel the temperature on your skin for a breath."
+    },
+    "de": {
+     "t": "Temperatur wahrnehmen",
+     "g": "Spüre Wärme und Kühle auf der Haut als Anker in der Gegenwart.",
+     "p": [
+      "Bemerke die Luft auf Gesicht, Händen und Armen.",
+      "Finde warme und kühle Stellen und Orte, wo Kleidung die Haut berührt.",
+      "Temperatur ist immer verfügbar, ein praktischer Anker."
+     ],
+     "q": "Wo an deinem Körper hast du Wärme gespürt, wo Kühle?",
+     "c": "Halte heute dreimal inne und spüre einen Atemzug lang die Temperatur auf der Haut."
+    },
+    "es": {
+     "t": "Notar la temperatura",
+     "g": "Siente calor y frescor en la piel como ancla al presente.",
+     "p": [
+      "Nota el aire en la cara, las manos y los brazos.",
+      "Encuentra zonas cálidas, zonas frescas y lugares donde la ropa toca la piel.",
+      "La temperatura siempre está disponible, así que es un ancla práctica."
+     ],
+     "q": "¿En qué partes del cuerpo sentiste calor y en cuáles frescor?",
+     "c": "Detente tres veces hoy y siente la temperatura de tu piel durante una respiración."
+    },
+    "fr": {
+     "t": "Remarquer la température",
+     "g": "Sens la chaleur et la fraîcheur sur la peau comme ancre dans le présent.",
+     "p": [
+      "Remarque l'air sur ton visage, tes mains et tes bras.",
+      "Trouve des zones chaudes, fraîches et les endroits où les vêtements touchent la peau.",
+      "La température est toujours disponible, c'est une ancre pratique."
+     ],
+     "q": "Où as-tu senti la chaleur sur ton corps, et où la fraîcheur ?",
+     "c": "Arrête-toi trois fois aujourd'hui et sens la température de ta peau le temps d'une respiration."
+    },
+    "it": {
+     "t": "Notare la temperatura",
+     "g": "Senti caldo e fresco sulla pelle come ancora al presente.",
+     "p": [
+      "Nota l'aria su viso, mani e braccia.",
+      "Trova zone calde, zone fresche e punti dove i vestiti toccano la pelle.",
+      "La temperatura è sempre disponibile, quindi è un'ancora pratica."
+     ],
+     "q": "In quali punti del corpo hai sentito caldo e in quali fresco?",
+     "c": "Fermati tre volte oggi e senti la temperatura sulla pelle per un respiro."
+    },
+    "pt": {
+     "t": "Reparar na temperatura",
+     "g": "Sente calor e frescura na pele como âncora ao presente.",
+     "p": [
+      "Repara no ar no rosto, mãos e braços.",
+      "Encontra zonas quentes, frescas e locais onde a roupa toca na pele.",
+      "A temperatura está sempre disponível, por isso é uma âncora prática."
+     ],
+     "q": "Em que partes do corpo sentiste calor e em quais frescura?",
+     "c": "Pára três vezes hoje e sente a temperatura da pele durante uma respiração."
+    },
+    "pt_BR": {
+     "t": "Percebendo a temperatura",
+     "g": "Sinta calor e frescor na pele como âncora ao presente.",
+     "p": [
+      "Perceba o ar no rosto, nas mãos e nos braços.",
+      "Encontre áreas quentes, frescas e lugares onde a roupa toca a pele.",
+      "A temperatura está sempre disponível, então é uma âncora prática."
+     ],
+     "q": "Em que partes do corpo você sentiu calor e em quais frescor?",
+     "c": "Pare três vezes hoje e sinta a temperatura da pele por uma respiração."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mindful standing",
+     "g": "Stand still for a minute and sense balance and tiny movements.",
+     "p": [
+      "Stand with feet hip-width apart and knees soft, not locked.",
+      "Feel the tiny sways your body makes to stay balanced.",
+      "Hold on to a wall or chair if you feel unsteady; safety comes first."
+     ],
+     "q": "What small movements did you notice while standing still?",
+     "c": "Stand mindfully for one minute while waiting for something today."
+    },
+    "de": {
+     "t": "Achtsam stehen",
+     "g": "Stehe eine Minute still und spüre Gleichgewicht und kleinste Bewegungen.",
+     "p": [
+      "Stehe mit hüftbreiten Füßen und weichen, nicht durchgedrückten Knien.",
+      "Spüre das winzige Schwanken, mit dem dein Körper das Gleichgewicht hält.",
+      "Halte dich an Wand oder Stuhl, wenn du dich unsicher fühlst; Sicherheit geht vor."
+     ],
+     "q": "Welche kleinen Bewegungen hast du beim ruhigen Stehen bemerkt?",
+     "c": "Stehe heute beim Warten eine Minute achtsam."
+    },
+    "es": {
+     "t": "De pie con atención",
+     "g": "Quédate de pie un minuto y siente el equilibrio y los pequeños movimientos.",
+     "p": [
+      "Ponte con los pies a la anchura de la cadera y las rodillas suaves, sin bloquear.",
+      "Siente los pequeños vaivenes que hace tu cuerpo para mantener el equilibrio.",
+      "Apóyate en una pared o silla si te sientes inestable; primero la seguridad."
+     ],
+     "q": "¿Qué pequeños movimientos notaste al estar quieto de pie?",
+     "c": "Permanece de pie con atención un minuto mientras esperas algo hoy."
+    },
+    "fr": {
+     "t": "Se tenir debout en pleine conscience",
+     "g": "Reste debout une minute et sens l'équilibre et les tout petits mouvements.",
+     "p": [
+      "Tiens-toi les pieds écartés à la largeur des hanches, genoux souples et non bloqués.",
+      "Sens les petits balancements que fait ton corps pour garder l'équilibre.",
+      "Appuie-toi à un mur ou une chaise si tu te sens instable; la sécurité d'abord."
+     ],
+     "q": "Quels petits mouvements as-tu remarqués en restant immobile debout ?",
+     "c": "Reste debout en pleine conscience une minute en attendant quelque chose aujourd'hui."
+    },
+    "it": {
+     "t": "Stare in piedi con consapevolezza",
+     "g": "Resta in piedi un minuto e senti equilibrio e piccoli movimenti.",
+     "p": [
+      "Stai con i piedi alla larghezza delle anche e le ginocchia morbide, non bloccate.",
+      "Senti i piccoli ondeggiamenti che il corpo fa per mantenere l'equilibrio.",
+      "Appoggiati a un muro o a una sedia se ti senti instabile; prima la sicurezza."
+     ],
+     "q": "Quali piccoli movimenti hai notato stando fermo in piedi?",
+     "c": "Oggi stai in piedi con consapevolezza per un minuto mentre aspetti qualcosa."
+    },
+    "pt": {
+     "t": "Estar de pé com atenção",
+     "g": "Fica de pé um minuto e sente o equilíbrio e os pequenos movimentos.",
+     "p": [
+      "Fica com os pés à largura da anca e os joelhos suaves, sem bloquear.",
+      "Sente os pequenos balanços que o corpo faz para manter o equilíbrio.",
+      "Apoia-te numa parede ou cadeira se te sentires instável; a segurança primeiro."
+     ],
+     "q": "Que pequenos movimentos notaste ao ficar parado de pé?",
+     "c": "Fica hoje de pé com atenção um minuto enquanto esperas por algo."
+    },
+    "pt_BR": {
+     "t": "Ficando em pé com atenção",
+     "g": "Fique em pé um minuto e sinta o equilíbrio e os pequenos movimentos.",
+     "p": [
+      "Fique com os pés na largura do quadril e os joelhos macios, sem travar.",
+      "Sinta os pequenos balanços que o corpo faz para manter o equilíbrio.",
+      "Apoie-se numa parede ou cadeira se se sentir instável; segurança primeiro."
+     ],
+     "q": "Que pequenos movimentos você percebeu ao ficar parado em pé?",
+     "c": "Fique hoje em pé com atenção por um minuto enquanto espera por algo."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Body and mood connection",
+     "g": "Notice how posture and breathing change with different moods.",
+     "p": [
+      "Pause when you feel happy, tired or annoyed and check your body.",
+      "Notice posture, breathing speed and tension in each mood.",
+      "Body and mood influence each other; noticing gives you gentle choices."
+     ],
+     "q": "What does your body do when you feel happy compared to tired?",
+     "c": "Notice your posture and breath during two different moods today."
+    },
+    "de": {
+     "t": "Verbindung von Körper und Stimmung",
+     "g": "Bemerke, wie sich Haltung und Atmung bei verschiedenen Stimmungen verändern.",
+     "p": [
+      "Halte inne, wenn du dich froh, müde oder genervt fühlst, und spüre den Körper.",
+      "Bemerke Haltung, Atemtempo und Anspannung in jeder Stimmung.",
+      "Körper und Stimmung beeinflussen sich; Bemerken schenkt sanfte Wahlmöglichkeiten."
+     ],
+     "q": "Was macht dein Körper, wenn du froh bist, im Vergleich zu müde?",
+     "c": "Beobachte heute Haltung und Atem bei zwei verschiedenen Stimmungen."
+    },
+    "es": {
+     "t": "Conexión entre cuerpo y ánimo",
+     "g": "Nota cómo cambian la postura y la respiración con distintos estados de ánimo.",
+     "p": [
+      "Haz una pausa cuando te sientas alegre, cansado o molesto y revisa tu cuerpo.",
+      "Nota postura, velocidad de respiración y tensión en cada ánimo.",
+      "Cuerpo y ánimo se influyen; notarlo te da opciones suaves."
+     ],
+     "q": "¿Qué hace tu cuerpo cuando estás alegre comparado con cuando estás cansado?",
+     "c": "Nota tu postura y respiración en dos estados de ánimo distintos hoy."
+    },
+    "fr": {
+     "t": "Lien entre corps et humeur",
+     "g": "Remarque comment posture et respiration changent selon les humeurs.",
+     "p": [
+      "Fais une pause quand tu te sens joyeux, fatigué ou agacé et observe ton corps.",
+      "Remarque posture, rythme respiratoire et tension dans chaque humeur.",
+      "Corps et humeur s'influencent; remarquer t'offre de doux choix."
+     ],
+     "q": "Que fait ton corps quand tu es joyeux par rapport à quand tu es fatigué ?",
+     "c": "Observe aujourd'hui ta posture et ton souffle dans deux humeurs différentes."
+    },
+    "it": {
+     "t": "Il legame tra corpo e umore",
+     "g": "Nota come postura e respiro cambiano con umori diversi.",
+     "p": [
+      "Fermati quando ti senti felice, stanco o irritato e controlla il corpo.",
+      "Nota postura, velocità del respiro e tensione in ogni umore.",
+      "Corpo e umore si influenzano; notare ti dà scelte delicate."
+     ],
+     "q": "Cosa fa il tuo corpo quando sei felice rispetto a quando sei stanco?",
+     "c": "Oggi nota postura e respiro in due umori diversi."
+    },
+    "pt": {
+     "t": "A ligação entre corpo e humor",
+     "g": "Repara como a postura e a respiração mudam com diferentes humores.",
+     "p": [
+      "Pára quando te sentires feliz, cansado ou irritado e verifica o corpo.",
+      "Repara na postura, velocidade da respiração e tensão em cada humor.",
+      "Corpo e humor influenciam-se; reparar dá-te escolhas suaves."
+     ],
+     "q": "O que faz o teu corpo quando estás feliz em comparação com cansado?",
+     "c": "Repara hoje na postura e respiração em dois humores diferentes."
+    },
+    "pt_BR": {
+     "t": "A ligação entre corpo e humor",
+     "g": "Perceba como a postura e a respiração mudam com humores diferentes.",
+     "p": [
+      "Pare quando se sentir feliz, cansado ou irritado e verifique o corpo.",
+      "Perceba a postura, a velocidade da respiração e a tensão em cada humor.",
+      "Corpo e humor se influenciam; perceber dá escolhas suaves."
+     ],
+     "q": "O que seu corpo faz quando você está feliz em comparação com cansado?",
+     "c": "Perceba hoje a postura e a respiração em dois humores diferentes."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The energy check-in",
+     "g": "Rate your energy from one to ten and notice what lifts or drains it.",
+     "p": [
+      "Ask yourself: from one to ten, how is my energy right now?",
+      "Notice what has raised it, such as sleep, food or a walk, and what lowered it.",
+      "This is just a curious check, not a grade; low days are normal."
+     ],
+     "q": "What gives you energy, and what quietly takes it away?",
+     "c": "Rate your energy morning, noon and evening, and note one pattern."
+    },
+    "de": {
+     "t": "Der Energie-Check",
+     "g": "Bewerte deine Energie von eins bis zehn und bemerke, was sie hebt oder senkt.",
+     "p": [
+      "Frage dich: Wie ist meine Energie gerade, von eins bis zehn?",
+      "Bemerke, was sie gehoben hat, etwa Schlaf, Essen oder Gehen, und was sie senkte.",
+      "Das ist nur ein neugieriger Check, keine Note; schwache Tage sind normal."
+     ],
+     "q": "Was gibt dir Energie, und was nimmt sie dir leise weg?",
+     "c": "Bewerte deine Energie morgens, mittags und abends und notiere ein Muster."
+    },
+    "es": {
+     "t": "El chequeo de energía",
+     "g": "Puntúa tu energía de uno a diez y nota qué la sube o la baja.",
+     "p": [
+      "Pregúntate: del uno al diez, ¿cómo está mi energía ahora?",
+      "Nota qué la ha subido, como el sueño, la comida o un paseo, y qué la ha bajado.",
+      "Es solo un chequeo curioso, no una nota; los días bajos son normales."
+     ],
+     "q": "¿Qué te da energía y qué te la quita sin que te des cuenta?",
+     "c": "Puntúa tu energía por la mañana, al mediodía y por la noche, y anota un patrón."
+    },
+    "fr": {
+     "t": "Le bilan d'énergie",
+     "g": "Note ton énergie de un à dix et remarque ce qui l'augmente ou la diminue.",
+     "p": [
+      "Demande-toi : de un à dix, quelle est mon énergie en ce moment ?",
+      "Remarque ce qui l'a augmentée, comme le sommeil, un repas ou une marche, et ce qui l'a baissée.",
+      "C'est juste un bilan curieux, pas une note; les jours bas sont normaux."
+     ],
+     "q": "Qu'est-ce qui te donne de l'énergie, et qu'est-ce qui t'en prend discrètement ?",
+     "c": "Note ton énergie matin, midi et soir, et relève une tendance."
+    },
+    "it": {
+     "t": "Il check-in dell'energia",
+     "g": "Dai un voto alla tua energia da uno a dieci e nota cosa la alza o la abbassa.",
+     "p": [
+      "Chiediti: da uno a dieci, com'è la mia energia adesso?",
+      "Nota cosa l'ha alzata, come sonno, cibo o una passeggiata, e cosa l'ha abbassata.",
+      "È solo un controllo curioso, non un voto; i giorni bassi sono normali."
+     ],
+     "q": "Cosa ti dà energia e cosa te la toglie piano piano?",
+     "c": "Valuta la tua energia mattina, mezzogiorno e sera e annota uno schema."
+    },
+    "pt": {
+     "t": "O ponto de situação da energia",
+     "g": "Avalia a tua energia de um a dez e repara no que a sobe ou desce.",
+     "p": [
+      "Pergunta-te: de um a dez, como está a minha energia agora?",
+      "Repara no que a subiu, como sono, comida ou um passeio, e no que a baixou.",
+      "É só uma verificação curiosa, não uma nota; os dias baixos são normais."
+     ],
+     "q": "O que te dá energia e o que ta tira discretamente?",
+     "c": "Avalia a tua energia de manhã, ao meio-dia e à noite e anota um padrão."
+    },
+    "pt_BR": {
+     "t": "O check-in de energia",
+     "g": "Avalie sua energia de um a dez e perceba o que a sobe ou a desce.",
+     "p": [
+      "Pergunte-se: de um a dez, como está minha energia agora?",
+      "Perceba o que a subiu, como sono, comida ou uma caminhada, e o que a baixou.",
+      "É só uma checagem curiosa, não uma nota; dias baixos são normais."
+     ],
+     "q": "O que dá energia a você e o que a tira discretamente?",
+     "c": "Avalie sua energia de manhã, ao meio-dia e à noite e anote um padrão."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mindful rest breaks",
+     "g": "Take short screen-free breaks to let body and mind reset.",
+     "p": [
+      "Step away from screens for two to five minutes.",
+      "Look out of a window, stretch or just breathe, with no phone in hand.",
+      "Short breaks help focus; rest is part of doing things well."
+     ],
+     "q": "What kind of break refreshes you most: moving, looking far away or being still?",
+     "c": "Take two screen-free breaks of three minutes today."
+    },
+    "de": {
+     "t": "Achtsame Pausen",
+     "g": "Mache kurze bildschirmfreie Pausen, damit Körper und Geist sich zurücksetzen.",
+     "p": [
+      "Gehe zwei bis fünf Minuten weg vom Bildschirm.",
+      "Schaue aus dem Fenster, strecke dich oder atme einfach, ohne Handy in der Hand.",
+      "Kurze Pausen fördern den Fokus; Ruhe gehört zum guten Arbeiten."
+     ],
+     "q": "Welche Pause erfrischt dich am meisten: Bewegung, Blick in die Ferne oder Stille?",
+     "c": "Mache heute zwei bildschirmfreie Pausen von drei Minuten."
+    },
+    "es": {
+     "t": "Descansos conscientes",
+     "g": "Haz descansos cortos sin pantallas para que cuerpo y mente se reinicien.",
+     "p": [
+      "Aléjate de las pantallas dos a cinco minutos.",
+      "Mira por la ventana, estírate o solo respira, sin el móvil en la mano.",
+      "Los descansos breves ayudan al enfoque; descansar es parte de hacer bien las cosas."
+     ],
+     "q": "¿Qué tipo de descanso te refresca más: moverte, mirar lejos o estar quieto?",
+     "c": "Haz hoy dos descansos de tres minutos sin pantallas."
+    },
+    "fr": {
+     "t": "Pauses en pleine conscience",
+     "g": "Fais de courtes pauses sans écran pour que le corps et l'esprit se réinitialisent.",
+     "p": [
+      "Éloigne-toi des écrans deux à cinq minutes.",
+      "Regarde par la fenêtre, étire-toi ou respire simplement, sans téléphone en main.",
+      "De courtes pauses aident la concentration; le repos fait partie du travail bien fait."
+     ],
+     "q": "Quel type de pause te rafraîchit le plus : bouger, regarder au loin ou rester immobile ?",
+     "c": "Fais aujourd'hui deux pauses de trois minutes sans écran."
+    },
+    "it": {
+     "t": "Pause consapevoli",
+     "g": "Fai brevi pause senza schermi per far ripartire corpo e mente.",
+     "p": [
+      "Allontanati dagli schermi per due-cinque minuti.",
+      "Guarda fuori dalla finestra, stiracchiati o semplicemente respira, senza telefono in mano.",
+      "Le pause brevi aiutano la concentrazione; il riposo fa parte del lavorare bene."
+     ],
+     "q": "Che tipo di pausa ti ricarica di più: muoverti, guardare lontano o stare fermo?",
+     "c": "Oggi fai due pause di tre minuti senza schermi."
+    },
+    "pt": {
+     "t": "Pausas conscientes",
+     "g": "Faz pausas curtas sem ecrãs para o corpo e a mente reiniciarem.",
+     "p": [
+      "Afasta-te dos ecrãs durante dois a cinco minutos.",
+      "Olha pela janela, estica-te ou apenas respira, sem telemóvel na mão.",
+      "Pausas curtas ajudam o foco; descansar faz parte de fazer bem as coisas."
+     ],
+     "q": "Que tipo de pausa te refresca mais: mexer, olhar ao longe ou ficar parado?",
+     "c": "Faz hoje duas pausas de três minutos sem ecrãs."
+    },
+    "pt_BR": {
+     "t": "Pausas conscientes",
+     "g": "Faça pausas curtas sem telas para o corpo e a mente reiniciarem.",
+     "p": [
+      "Afaste-se das telas por dois a cinco minutos.",
+      "Olhe pela janela, alongue-se ou apenas respire, sem celular na mão.",
+      "Pausas curtas ajudam o foco; descansar faz parte de fazer bem as coisas."
+     ],
+     "q": "Que tipo de pausa refresca mais você: mexer, olhar ao longe ou ficar parado?",
+     "c": "Faça hoje duas pausas de três minutos sem telas."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Breathing with movement",
+     "g": "Raise the arms with the in-breath and lower them with the out-breath.",
+     "p": [
+      "Stand or sit and breathe in as your arms rise slowly.",
+      "Breathe out as your arms float down, matching the pace of the breath.",
+      "Move gently within a comfortable range; stop if anything hurts."
+     ],
+     "q": "How did joining movement and breath feel compared to sitting still?",
+     "c": "Do ten slow arm-and-breath movements today, once in the morning."
+    },
+    "de": {
+     "t": "Atmen mit Bewegung",
+     "g": "Hebe die Arme beim Einatmen und senke sie beim Ausatmen.",
+     "p": [
+      "Stehe oder sitze und atme ein, während die Arme sich langsam heben.",
+      "Atme aus, während die Arme herabschweben, im Tempo des Atems.",
+      "Bewege dich sanft im angenehmen Bereich; stoppe bei Schmerzen."
+     ],
+     "q": "Wie fühlte sich die Verbindung von Bewegung und Atem im Vergleich zum Stillsitzen an?",
+     "c": "Mache heute morgens zehn langsame Arm-Atem-Bewegungen."
+    },
+    "es": {
+     "t": "Respirar con movimiento",
+     "g": "Sube los brazos al inhalar y bájalos al exhalar.",
+     "p": [
+      "De pie o sentado, inhala mientras los brazos suben despacio.",
+      "Exhala mientras los brazos descienden flotando, al ritmo de la respiración.",
+      "Muévete con suavidad dentro de un rango cómodo; para si algo duele."
+     ],
+     "q": "¿Cómo se sintió unir movimiento y respiración frente a estar quieto?",
+     "c": "Haz hoy diez movimientos lentos de brazos y respiración, por la mañana."
+    },
+    "fr": {
+     "t": "Respirer avec le mouvement",
+     "g": "Lève les bras à l'inspiration et baisse-les à l'expiration.",
+     "p": [
+      "Debout ou assis, inspire pendant que les bras montent lentement.",
+      "Expire pendant que les bras redescendent, au rythme du souffle.",
+      "Bouge doucement dans une amplitude confortable; arrête si quelque chose fait mal."
+     ],
+     "q": "Comment as-tu vécu l'union du mouvement et du souffle par rapport à l'immobilité ?",
+     "c": "Fais aujourd'hui dix mouvements lents bras et souffle, le matin."
+    },
+    "it": {
+     "t": "Respirare con il movimento",
+     "g": "Solleva le braccia all'inspirazione e abbassale all'espirazione.",
+     "p": [
+      "In piedi o seduto, inspira mentre le braccia salgono lentamente.",
+      "Espira mentre le braccia scendono fluttuando, al ritmo del respiro.",
+      "Muoviti con dolcezza entro un raggio comodo; fermati se qualcosa fa male."
+     ],
+     "q": "Come ti è sembrato unire movimento e respiro rispetto allo stare fermo?",
+     "c": "Oggi fai dieci movimenti lenti di braccia e respiro, al mattino."
+    },
+    "pt": {
+     "t": "Respirar com movimento",
+     "g": "Levanta os braços ao inspirar e baixa-os ao expirar.",
+     "p": [
+      "De pé ou sentado, inspira enquanto os braços sobem devagar.",
+      "Expira enquanto os braços descem a flutuar, ao ritmo da respiração.",
+      "Move-te com suavidade num alcance confortável; pára se algo doer."
+     ],
+     "q": "Como foi unir movimento e respiração em comparação com estar parado?",
+     "c": "Faz hoje dez movimentos lentos de braços e respiração, de manhã."
+    },
+    "pt_BR": {
+     "t": "Respirando com movimento",
+     "g": "Levante os braços ao inspirar e abaixe-os ao expirar.",
+     "p": [
+      "Em pé ou sentado, inspire enquanto os braços sobem devagar.",
+      "Expire enquanto os braços descem flutuando, no ritmo da respiração.",
+      "Mova-se com suavidade num alcance confortável; pare se algo doer."
+     ],
+     "q": "Como foi unir movimento e respiração em comparação com ficar parado?",
+     "c": "Faça hoje dez movimentos lentos de braços e respiração, de manhã."
+    }
+   }
+  }
+ ]
+}

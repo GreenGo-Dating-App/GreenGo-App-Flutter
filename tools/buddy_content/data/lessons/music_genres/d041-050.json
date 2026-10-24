@@ -1,0 +1,835 @@
+{
+ "topic": "music_genres",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Golden age hip hop",
+     "g": "Explore rich sampling and clever rhymes of hip hop's golden age.",
+     "p": [
+      "In the late 1980s and early 1990s, producers layered samples from funk, jazz and soul into dense beats.",
+      "Run-DMC brought hard beats and rock guitar, while De La Soul added humour and playful creativity.",
+      "A Tribe Called Quest blended jazz samples with relaxed, thoughtful rhymes."
+     ],
+     "q": "Do you like it when a new song reuses a piece of an older one?",
+     "c": "Listen to a golden age track and try to guess which old record the sample came from."
+    },
+    "de": {
+     "t": "Hip-Hop der goldenen Ära",
+     "g": "Das reiche Sampling und die klugen Reime der goldenen Ära des Hip-Hop erkunden.",
+     "p": [
+      "In den späten 1980ern und frühen 1990ern schichteten Produzenten Samples aus Funk, Jazz und Soul zu dichten Beats.",
+      "Run-DMC brachten harte Beats und Rockgitarre, De La Soul ergänzten Humor und spielerische Kreativität.",
+      "A Tribe Called Quest verbanden Jazz-Samples mit entspannten, nachdenklichen Reimen."
+     ],
+     "q": "Magst du es, wenn ein neuer Song ein Stück eines älteren wiederverwendet?",
+     "c": "Hör einen Track der goldenen Ära und rate, aus welcher alten Platte das Sample stammt."
+    },
+    "es": {
+     "t": "La edad de oro del hip hop",
+     "g": "Explorar el rico sampleo y las rimas ingeniosas de la edad de oro del hip hop.",
+     "p": [
+      "A finales de los ochenta y principios de los noventa, los productores superponían samples de funk, jazz y soul en bases densas.",
+      "Run-DMC trajeron ritmos duros y guitarra rock, mientras De La Soul añadió humor y creatividad juguetona.",
+      "A Tribe Called Quest mezclaron samples de jazz con rimas relajadas y reflexivas."
+     ],
+     "q": "¿Te gusta cuando una canción nueva reutiliza un trozo de otra más antigua?",
+     "c": "Escucha un tema de la edad de oro e intenta adivinar de qué disco antiguo viene el sample."
+    },
+    "fr": {
+     "t": "L'âge d'or du hip-hop",
+     "g": "Explorer le sampling riche et les rimes malignes de l'âge d'or du hip-hop.",
+     "p": [
+      "À la fin des années 1980 et au début des années 1990, les producteurs superposent des samples de funk, de jazz et de soul en beats denses.",
+      "Run-DMC apportent des beats durs et de la guitare rock, De La Soul ajoute humour et créativité ludique.",
+      "A Tribe Called Quest mêlent samples de jazz et rimes détendues et réfléchies."
+     ],
+     "q": "Aimez-vous qu'une nouvelle chanson reprenne un morceau d'une plus ancienne ?",
+     "c": "Écoutez un titre de l'âge d'or et essayez de deviner de quel vieux disque vient le sample."
+    },
+    "it": {
+     "t": "L'età d'oro dell'hip hop",
+     "g": "Esplorare il ricco campionamento e le rime ingegnose dell'età d'oro dell'hip hop.",
+     "p": [
+      "Tra fine anni Ottanta e inizio Novanta i produttori stratificavano campioni di funk, jazz e soul in beat densi.",
+      "I Run-DMC portarono beat duri e chitarra rock, mentre i De La Soul aggiunsero umorismo e creatività giocosa.",
+      "Gli A Tribe Called Quest unirono campioni jazz a rime rilassate e riflessive."
+     ],
+     "q": "Ti piace quando una canzone nuova riusa un pezzo di una più vecchia?",
+     "c": "Ascolta un brano dell'età d'oro e prova a indovinare da quale vecchio disco viene il campione."
+    },
+    "pt": {
+     "t": "A era de ouro do hip hop",
+     "g": "Explorar o rico sampling e as rimas inteligentes da era de ouro do hip hop.",
+     "p": [
+      "No final dos anos 1980 e início dos 1990, os produtores sobrepunham samples de funk, jazz e soul em batidas densas.",
+      "Os Run-DMC trouxeram batidas duras e guitarra rock, enquanto os De La Soul juntaram humor e criatividade brincalhona.",
+      "Os A Tribe Called Quest misturaram samples de jazz com rimas descontraídas e ponderadas."
+     ],
+     "q": "Gostas quando uma canção nova reutiliza um pedaço de outra mais antiga?",
+     "c": "Ouve um tema da era de ouro e tenta adivinhar de que disco antigo vem o sample."
+    },
+    "pt_BR": {
+     "t": "A era de ouro do hip hop",
+     "g": "Explorar o rico sampling e as rimas inteligentes da era de ouro do hip hop.",
+     "p": [
+      "No fim dos anos 1980 e início dos 1990, os produtores sobrepunham samples de funk, jazz e soul em batidas densas.",
+      "O Run-DMC trouxe batidas duras e guitarra rock, enquanto o De La Soul juntou humor e criatividade brincalhona.",
+      "O A Tribe Called Quest misturou samples de jazz com rimas descontraídas e ponderadas."
+     ],
+     "q": "Você gosta quando uma música nova reaproveita um pedaço de outra mais antiga?",
+     "c": "Escute uma faixa da era de ouro e tente adivinhar de qual disco antigo vem o sample."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How rap flow works",
+     "g": "Understand rhythm, rhyme and delivery in a rapper's flow.",
+     "p": [
+      "Flow is how a rapper fits words to the beat: speed, pauses, accents and rhythm patterns.",
+      "Rhyme schemes can be simple end rhymes or complex chains of rhymes inside each line.",
+      "Delivery, the tone, energy and clarity of the voice, makes each rapper recognisable."
+     ],
+     "q": "Can you spot a favourite rapper's style by the way they ride the beat?",
+     "c": "Pick a verse and tap the beat while noting where the rhymes land."
+    },
+    "de": {
+     "t": "Wie der Rap-Flow funktioniert",
+     "g": "Rhythmus, Reim und Vortrag im Flow eines Rappers verstehen.",
+     "p": [
+      "Flow ist, wie ein Rapper Wörter in den Beat setzt: Tempo, Pausen, Akzente und Rhythmusmuster.",
+      "Reimschemata können einfache Endreime oder komplexe Reimketten innerhalb jeder Zeile sein.",
+      "Der Vortrag, Ton, Energie und Klarheit der Stimme, macht jeden Rapper erkennbar."
+     ],
+     "q": "Erkennst du den Stil eines Lieblingsrappers daran, wie er auf dem Beat reitet?",
+     "c": "Wähl eine Strophe und klopfe den Beat mit, während du notierst, wo die Reime landen."
+    },
+    "es": {
+     "t": "Cómo funciona el flow del rap",
+     "g": "Entender ritmo, rima y entrega en el flow de un rapero.",
+     "p": [
+      "El flow es cómo un rapero encaja las palabras en el ritmo: velocidad, pausas, acentos y patrones rítmicos.",
+      "Los esquemas de rima pueden ser simples rimas finales o cadenas complejas de rimas dentro de cada verso.",
+      "La entrega, el tono, la energía y la claridad de la voz, hace reconocible a cada rapero."
+     ],
+     "q": "¿Reconoces el estilo de tu rapero favorito por cómo monta el beat?",
+     "c": "Elige una estrofa y marca el ritmo mientras anotas dónde caen las rimas."
+    },
+    "fr": {
+     "t": "Comment fonctionne le flow du rap",
+     "g": "Comprendre rythme, rime et diction dans le flow d'un rappeur.",
+     "p": [
+      "Le flow, c'est la façon dont un rappeur place les mots sur le beat : vitesse, pauses, accents et motifs rythmiques.",
+      "Les schémas de rimes vont de simples rimes finales à de longues chaînes de rimes internes à chaque vers.",
+      "La diction, c'est-à-dire le ton, l'énergie et la clarté de la voix, rend chaque rappeur reconnaissable."
+     ],
+     "q": "Reconnaissez-vous le style d'un rappeur préféré à sa façon de chevaucher le beat ?",
+     "c": "Choisissez un couplet et marquez le beat en notant où tombent les rimes."
+    },
+    "it": {
+     "t": "Come funziona il flow del rap",
+     "g": "Capire ritmo, rima e interpretazione nel flow di un rapper.",
+     "p": [
+      "Il flow è come un rapper inserisce le parole nel beat: velocità, pause, accenti e schemi ritmici.",
+      "Gli schemi di rima possono essere semplici rime finali o catene complesse di rime dentro ogni verso.",
+      "L'interpretazione, tono, energia e chiarezza della voce, rende ogni rapper riconoscibile."
+     ],
+     "q": "Riconosci lo stile di un rapper preferito da come cavalca il beat?",
+     "c": "Scegli una strofa e batti il beat notando dove cadono le rime."
+    },
+    "pt": {
+     "t": "Como funciona o flow do rap",
+     "g": "Perceber ritmo, rima e dicção no flow de um rapper.",
+     "p": [
+      "O flow é como um rapper encaixa as palavras na batida: velocidade, pausas, acentos e padrões rítmicos.",
+      "Os esquemas de rima podem ser rimas finais simples ou cadeias complexas de rimas dentro de cada verso.",
+      "A dicção, o tom, a energia e a clareza da voz, torna cada rapper reconhecível."
+     ],
+     "q": "Reconheces o estilo de um rapper favorito pela forma como monta a batida?",
+     "c": "Escolhe uma estrofe e marca a batida enquanto anotas onde caem as rimas."
+    },
+    "pt_BR": {
+     "t": "Como funciona o flow do rap",
+     "g": "Entender ritmo, rima e dicção no flow de um rapper.",
+     "p": [
+      "O flow é como um rapper encaixa as palavras na batida: velocidade, pausas, acentos e padrões rítmicos.",
+      "Os esquemas de rima podem ser rimas finais simples ou cadeias complexas de rimas dentro de cada verso.",
+      "A dicção, o tom, a energia e a clareza da voz, torna cada rapper reconhecível."
+     ],
+     "q": "Você reconhece o estilo de um rapper favorito pelo jeito que ele monta na batida?",
+     "c": "Escolha uma estrofe e marque a batida enquanto anota onde caem as rimas."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "R&B evolves",
+     "g": "Follow R&B from big ballads to smooth, beat-driven 1990s sound.",
+     "p": [
+      "Whitney Houston's soaring voice made R&B ballads global hits in the 1980s.",
+      "In the 1990s, new jack swing and smooth R&B paired sung vocals with hip hop-influenced beats.",
+      "Artists like Mary J. Blige and Stevie Wonder show soul feeling flowing through each era."
+     ],
+     "q": "What kind of voice moves you most: powerful, smooth or intimate?",
+     "c": "Listen to one R&B ballad and one 90s R&B groove and compare the drum sounds."
+    },
+    "de": {
+     "t": "R&B entwickelt sich",
+     "g": "R&B von großen Balladen zum geschmeidigen, beatgetriebenen Sound der 1990er verfolgen.",
+     "p": [
+      "Whitney Houstons strahlende Stimme machte R&B-Balladen in den 1980ern zu weltweiten Hits.",
+      "In den 1990ern verbanden New Jack Swing und smoother R&B Gesang mit hip-hop-beeinflussten Beats.",
+      "Künstler wie Mary J. Blige und Stevie Wonder zeigen, wie Soulgefühl durch jede Ära fließt."
+     ],
+     "q": "Welche Art von Stimme berührt dich am meisten: kraftvoll, glatt oder intim?",
+     "c": "Hör eine R&B-Ballade und einen R&B-Groove der 90er und vergleiche die Schlagzeugklänge."
+    },
+    "es": {
+     "t": "El R&B evoluciona",
+     "g": "Seguir el R&B desde las grandes baladas hasta el sonido suave y rítmico de los noventa.",
+     "p": [
+      "La voz elevada de Whitney Houston convirtió las baladas de R&B en éxitos mundiales en los ochenta.",
+      "En los noventa, el new jack swing y el R&B suave unieron voces cantadas con ritmos influidos por el hip hop.",
+      "Artistas como Mary J. Blige y Stevie Wonder muestran el sentimiento soul a través de cada época."
+     ],
+     "q": "¿Qué tipo de voz te conmueve más: potente, suave o íntima?",
+     "c": "Escucha una balada de R&B y un groove de R&B de los noventa y compara los sonidos de batería."
+    },
+    "fr": {
+     "t": "L'évolution du R&B",
+     "g": "Suivre le R&B des grandes ballades au son fluide et rythmé des années 1990.",
+     "p": [
+      "La voix éclatante de Whitney Houston fait des ballades R&B des succès mondiaux dans les années 1980.",
+      "Dans les années 1990, le new jack swing et le R&B lisse associent chant et rythmes influencés par le hip-hop.",
+      "Des artistes comme Mary J. Blige et Stevie Wonder montrent l'émotion soul traversant chaque époque."
+     ],
+     "q": "Quelle voix vous touche le plus : puissante, lisse ou intime ?",
+     "c": "Écoutez une ballade R&B et un groove R&B des années 90 et comparez les sons de batterie."
+    },
+    "it": {
+     "t": "L'R&B si evolve",
+     "g": "Seguire l'R&B dalle grandi ballate al suono morbido e ritmato degli anni Novanta.",
+     "p": [
+      "La voce spiegata di Whitney Houston rese le ballate R&B successi mondiali negli anni Ottanta.",
+      "Negli anni Novanta new jack swing e R&B morbido unirono il canto a beat influenzati dall'hip hop.",
+      "Artisti come Mary J. Blige e Stevie Wonder mostrano il sentimento soul in ogni epoca."
+     ],
+     "q": "Che tipo di voce ti commuove di più: potente, morbida o intima?",
+     "c": "Ascolta una ballata R&B e un groove R&B anni Novanta e confronta i suoni di batteria."
+    },
+    "pt": {
+     "t": "O R&B evolui",
+     "g": "Seguir o R&B das grandes baladas ao som suave e ritmado dos anos 1990.",
+     "p": [
+      "A voz arrebatadora de Whitney Houston tornou as baladas de R&B êxitos mundiais nos anos 1980.",
+      "Nos anos 1990, o new jack swing e o R&B suave juntaram voz cantada a batidas influenciadas pelo hip hop.",
+      "Artistas como Mary J. Blige e Stevie Wonder mostram o sentimento soul em cada época."
+     ],
+     "q": "Que tipo de voz te comove mais: potente, suave ou íntima?",
+     "c": "Ouve uma balada de R&B e um groove de R&B dos anos 90 e compara os sons de bateria."
+    },
+    "pt_BR": {
+     "t": "O R&B evolui",
+     "g": "Seguir o R&B das grandes baladas ao som suave e ritmado dos anos 1990.",
+     "p": [
+      "A voz arrebatadora de Whitney Houston transformou as baladas de R&B em sucessos mundiais nos anos 1980.",
+      "Nos anos 1990, o new jack swing e o R&B suave juntaram voz cantada a batidas influenciadas pelo hip hop.",
+      "Artistas como Mary J. Blige e Stevie Wonder mostram o sentimento soul em cada época."
+     ],
+     "q": "Que tipo de voz mais te comove: potente, suave ou íntima?",
+     "c": "Escute uma balada de R&B e um groove de R&B dos anos 90 e compare os sons de bateria."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reggae and Jamaican music",
+     "g": "Discover reggae's offbeat guitar and relaxed groove from Jamaica.",
+     "p": [
+      "Reggae emerged in Jamaica in the late 1960s, with a slow, heavy beat and the guitar on the offbeat, called the skank.",
+      "The bass line carries the melody, and drums often emphasise the third beat of the bar.",
+      "Bob Marley and the Wailers took reggae worldwide with songs of unity and hope."
+     ],
+     "q": "Does a laid-back groove help you relax, and when do you listen to it?",
+     "c": "Listen to One Love by Bob Marley and tap the offbeat guitar."
+    },
+    "de": {
+     "t": "Reggae und jamaikanische Musik",
+     "g": "Reggaes Offbeat-Gitarre und entspannten Groove aus Jamaika entdecken.",
+     "p": [
+      "Reggae entstand Ende der 1960er auf Jamaika, mit langsamem, schwerem Beat und der Gitarre auf dem Offbeat, dem Skank.",
+      "Die Basslinie trägt die Melodie, und das Schlagzeug betont oft den dritten Schlag des Taktes.",
+      "Bob Marley and the Wailers brachten Reggae mit Liedern über Einheit und Hoffnung in die Welt."
+     ],
+     "q": "Hilft dir ein entspannter Groove beim Abschalten, und wann hörst du ihn?",
+     "c": "Hör One Love von Bob Marley und klopfe die Offbeat-Gitarre mit."
+    },
+    "es": {
+     "t": "Reggae y música jamaicana",
+     "g": "Descubrir la guitarra a contratiempo del reggae y su groove relajado de Jamaica.",
+     "p": [
+      "El reggae surgió en Jamaica a finales de los sesenta, con un ritmo lento y pesado y la guitarra a contratiempo, llamada skank.",
+      "La línea de bajo lleva la melodía y la batería suele acentuar el tercer tiempo del compás.",
+      "Bob Marley and the Wailers llevaron el reggae por el mundo con canciones de unidad y esperanza."
+     ],
+     "q": "¿Te ayuda a relajarte un groove tranquilo y cuándo lo escuchas?",
+     "c": "Escucha One Love de Bob Marley y marca la guitarra a contratiempo."
+    },
+    "fr": {
+     "t": "Le reggae et la musique jamaïcaine",
+     "g": "Découvrir la guitare sur le contretemps du reggae et son groove détendu venu de Jamaïque.",
+     "p": [
+      "Le reggae naît en Jamaïque à la fin des années 1960, avec un rythme lent et lourd et la guitare sur le contretemps, le skank.",
+      "La ligne de basse porte la mélodie et la batterie accentue souvent le troisième temps de la mesure.",
+      "Bob Marley and the Wailers font connaître le reggae au monde avec des chansons d'unité et d'espoir."
+     ],
+     "q": "Un groove tranquille vous aide-t-il à vous détendre, et quand l'écoutez-vous ?",
+     "c": "Écoutez One Love de Bob Marley et frappez la guitare sur le contretemps."
+    },
+    "it": {
+     "t": "Il reggae e la musica giamaicana",
+     "g": "Scoprire la chitarra in controtempo del reggae e il suo groove rilassato dalla Giamaica.",
+     "p": [
+      "Il reggae nacque in Giamaica a fine anni Sessanta, con un ritmo lento e pesante e la chitarra in controtempo, detta skank.",
+      "La linea di basso porta la melodia e la batteria spesso accentua il terzo battito della misura.",
+      "Bob Marley and the Wailers portarono il reggae nel mondo con canzoni di unità e speranza."
+     ],
+     "q": "Un groove rilassato ti aiuta a distenderti e quando lo ascolti?",
+     "c": "Ascolta One Love di Bob Marley e batti la chitarra in controtempo."
+    },
+    "pt": {
+     "t": "O reggae e a música jamaicana",
+     "g": "Descobrir a guitarra em contratempo do reggae e o seu groove descontraído da Jamaica.",
+     "p": [
+      "O reggae surgiu na Jamaica no final dos anos 1960, com ritmo lento e pesado e a guitarra em contratempo, chamada skank.",
+      "A linha de baixo leva a melodia e a bateria costuma acentuar o terceiro tempo do compasso.",
+      "Bob Marley and the Wailers levaram o reggae pelo mundo com canções de união e esperança."
+     ],
+     "q": "Um groove descontraído ajuda-te a relaxar e quando o ouves?",
+     "c": "Ouve One Love de Bob Marley e marca a guitarra em contratempo."
+    },
+    "pt_BR": {
+     "t": "O reggae e a música jamaicana",
+     "g": "Descobrir a guitarra em contratempo do reggae e seu groove descontraído da Jamaica.",
+     "p": [
+      "O reggae surgiu na Jamaica no fim dos anos 1960, com ritmo lento e pesado e a guitarra em contratempo, chamada skank.",
+      "A linha de baixo leva a melodia e a bateria costuma acentuar o terceiro tempo do compasso.",
+      "Bob Marley and the Wailers levaram o reggae pelo mundo com músicas de união e esperança."
+     ],
+     "q": "Um groove descontraído te ajuda a relaxar e quando você o escuta?",
+     "c": "Escute One Love de Bob Marley e marque a guitarra em contratempo."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ska and rocksteady",
+     "g": "Hear how upbeat ska slowed into sweet rocksteady.",
+     "p": [
+      "Ska, from Jamaica around 1960, mixes Caribbean rhythms with American jazz and R&B, led by lively horns.",
+      "Rocksteady slowed the tempo around 1966, with smoother vocals and more space for the bass.",
+      "These two styles are the direct ancestors of reggae and later inspired the 2 Tone movement in Britain."
+     ],
+     "q": "Do you prefer music that makes you jump or music that makes you sway?",
+     "c": "Compare a ska song and a rocksteady song and note the tempo difference."
+    },
+    "de": {
+     "t": "Ska und Rocksteady",
+     "g": "Hören, wie der lebhafte Ska sich zum sanften Rocksteady verlangsamte.",
+     "p": [
+      "Ska aus Jamaika um 1960 mischt karibische Rhythmen mit amerikanischem Jazz und R&B, angeführt von lebhaften Bläsern.",
+      "Rocksteady verlangsamte das Tempo um 1966, mit weicheren Stimmen und mehr Raum für den Bass.",
+      "Diese beiden Stile sind die direkten Vorfahren des Reggae und inspirierten später die 2-Tone-Bewegung in Großbritannien."
+     ],
+     "q": "Magst du Musik, die zum Springen bringt, oder Musik, die zum Wiegen bringt?",
+     "c": "Vergleiche einen Ska- und einen Rocksteady-Song und achte auf den Tempounterschied."
+    },
+    "es": {
+     "t": "Ska y rocksteady",
+     "g": "Oír cómo el animado ska se ralentizó hasta el dulce rocksteady.",
+     "p": [
+      "El ska, de Jamaica hacia 1960, mezcla ritmos caribeños con jazz y R&B estadounidenses, con metales muy animados.",
+      "El rocksteady redujo el tempo hacia 1966, con voces más suaves y más espacio para el bajo.",
+      "Estos dos estilos son los antepasados directos del reggae y luego inspiraron el movimiento 2 Tone en Gran Bretaña."
+     ],
+     "q": "¿Prefieres música que te haga saltar o que te haga balancearte?",
+     "c": "Compara una canción de ska y una de rocksteady y anota la diferencia de tempo."
+    },
+    "fr": {
+     "t": "Ska et rocksteady",
+     "g": "Entendre comment le ska enjoué s'est ralenti en un doux rocksteady.",
+     "p": [
+      "Le ska, né en Jamaïque vers 1960, mêle rythmes caribéens, jazz et R&B américains, mené par des cuivres vifs.",
+      "Le rocksteady ralentit le tempo vers 1966, avec des voix plus douces et plus de place pour la basse.",
+      "Ces deux styles sont les ancêtres directs du reggae et inspireront plus tard le mouvement 2 Tone en Grande-Bretagne."
+     ],
+     "q": "Préférez-vous une musique qui fait sauter ou qui fait se balancer ?",
+     "c": "Comparez une chanson ska et une chanson rocksteady et notez la différence de tempo."
+    },
+    "it": {
+     "t": "Ska e rocksteady",
+     "g": "Sentire come lo ska vivace rallentò nel dolce rocksteady.",
+     "p": [
+      "Lo ska, dalla Giamaica intorno al 1960, mescola ritmi caraibici con jazz e R&B americani, guidato da fiati vivaci.",
+      "Il rocksteady rallentò il tempo intorno al 1966, con voci più morbide e più spazio per il basso.",
+      "Questi due stili sono gli antenati diretti del reggae e poi ispirarono il movimento 2 Tone in Gran Bretagna."
+     ],
+     "q": "Preferisci la musica che fa saltare o quella che fa ondeggiare?",
+     "c": "Confronta una canzone ska e una rocksteady e nota la differenza di tempo."
+    },
+    "pt": {
+     "t": "Ska e rocksteady",
+     "g": "Ouvir como o ska animado abrandou no doce rocksteady.",
+     "p": [
+      "O ska, da Jamaica por volta de 1960, mistura ritmos caribenhos com jazz e R&B americanos, com metais animados.",
+      "O rocksteady abrandou o andamento por volta de 1966, com vozes mais suaves e mais espaço para o baixo.",
+      "Estes dois estilos são os antepassados diretos do reggae e mais tarde inspiraram o movimento 2 Tone na Grã-Bretanha."
+     ],
+     "q": "Preferes música que te faz saltar ou que te faz embalar?",
+     "c": "Compara uma canção de ska e uma de rocksteady e anota a diferença de andamento."
+    },
+    "pt_BR": {
+     "t": "Ska e rocksteady",
+     "g": "Ouvir como o ska animado desacelerou no doce rocksteady.",
+     "p": [
+      "O ska, da Jamaica por volta de 1960, mistura ritmos caribenhos com jazz e R&B americanos, com metais animados.",
+      "O rocksteady desacelerou o andamento por volta de 1966, com vozes mais suaves e mais espaço para o baixo.",
+      "Esses dois estilos são os antepassados diretos do reggae e mais tarde inspiraram o movimento 2 Tone na Grã-Bretanha."
+     ],
+     "q": "Você prefere música que faz pular ou que faz balançar?",
+     "c": "Compare uma música de ska e uma de rocksteady e anote a diferença de andamento."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dub and the sound system",
+     "g": "See how Jamaican producers turned the mixing desk into an instrument.",
+     "p": [
+      "Sound systems were mobile speaker setups that played records at street parties in Jamaica.",
+      "Producers like King Tubby and Lee Scratch Perry stripped tracks to bass and drums, adding echo and reverb.",
+      "Dub influenced remix culture, hip hop, electronic dance and many modern producers."
+     ],
+     "q": "Do you think remixing a song is also a form of creation?",
+     "c": "Listen to a dub track and notice the echo effects on the drums and voice."
+    },
+    "de": {
+     "t": "Dub und das Soundsystem",
+     "g": "Sehen, wie jamaikanische Produzenten das Mischpult zum Instrument machten.",
+     "p": [
+      "Soundsysteme waren mobile Lautsprecheranlagen, die bei Straßenpartys auf Jamaika Platten spielten.",
+      "Produzenten wie King Tubby und Lee Scratch Perry reduzierten Stücke auf Bass und Drums und fügten Echo und Hall hinzu.",
+      "Dub beeinflusste Remix-Kultur, Hip-Hop, elektronische Tanzmusik und viele heutige Produzenten."
+     ],
+     "q": "Ist das Remixen eines Liedes für dich auch eine Form des Erschaffens?",
+     "c": "Hör einen Dub-Track und achte auf die Echoeffekte auf Schlagzeug und Stimme."
+    },
+    "es": {
+     "t": "El dub y el sound system",
+     "g": "Ver cómo los productores jamaicanos convirtieron la mesa de mezclas en un instrumento.",
+     "p": [
+      "Los sound systems eran equipos móviles de altavoces que ponían discos en fiestas callejeras de Jamaica.",
+      "Productores como King Tubby y Lee Scratch Perry reducían los temas a bajo y batería, añadiendo eco y reverberación.",
+      "El dub influyó en la cultura del remix, el hip hop, la música de baile electrónica y muchos productores actuales."
+     ],
+     "q": "¿Crees que remezclar una canción también es una forma de crear?",
+     "c": "Escucha un tema de dub y fíjate en los efectos de eco sobre la batería y la voz."
+    },
+    "fr": {
+     "t": "Le dub et le sound system",
+     "g": "Voir comment des producteurs jamaïcains ont fait de la table de mixage un instrument.",
+     "p": [
+      "Les sound systems étaient des installations mobiles d'enceintes qui passaient des disques lors des fêtes de rue en Jamaïque.",
+      "Des producteurs comme King Tubby et Lee Scratch Perry réduisaient les titres à la basse et à la batterie, avec écho et réverbération.",
+      "Le dub a influencé la culture du remix, le hip-hop, la danse électronique et de nombreux producteurs actuels."
+     ],
+     "q": "Pensez-vous que remixer une chanson soit aussi une forme de création ?",
+     "c": "Écoutez un titre dub et remarquez les effets d'écho sur la batterie et la voix."
+    },
+    "it": {
+     "t": "Il dub e il sound system",
+     "g": "Vedere come i produttori giamaicani fecero del mixer uno strumento.",
+     "p": [
+      "I sound system erano impianti mobili di casse che facevano girare dischi alle feste di strada in Giamaica.",
+      "Produttori come King Tubby e Lee Scratch Perry riducevano i brani a basso e batteria, aggiungendo eco e riverbero.",
+      "Il dub influenzò la cultura del remix, l'hip hop, la dance elettronica e molti produttori di oggi."
+     ],
+     "q": "Pensi che remixare una canzone sia anche una forma di creazione?",
+     "c": "Ascolta un brano dub e nota gli effetti di eco su batteria e voce."
+    },
+    "pt": {
+     "t": "O dub e o sound system",
+     "g": "Ver como os produtores jamaicanos fizeram da mesa de mistura um instrumento.",
+     "p": [
+      "Os sound systems eram equipamentos móveis de colunas que passavam discos em festas de rua na Jamaica.",
+      "Produtores como King Tubby e Lee Scratch Perry reduziam os temas a baixo e bateria, com eco e reverberação.",
+      "O dub influenciou a cultura do remix, o hip hop, a dança eletrónica e muitos produtores atuais."
+     ],
+     "q": "Achas que remisturar uma canção também é uma forma de criar?",
+     "c": "Ouve um tema dub e repara nos efeitos de eco na bateria e na voz."
+    },
+    "pt_BR": {
+     "t": "O dub e o sound system",
+     "g": "Ver como os produtores jamaicanos fizeram da mesa de mixagem um instrumento.",
+     "p": [
+      "Os sound systems eram equipamentos móveis de caixas de som que tocavam discos em festas de rua na Jamaica.",
+      "Produtores como King Tubby e Lee Scratch Perry reduziam as faixas a baixo e bateria, com eco e reverb.",
+      "O dub influenciou a cultura do remix, o hip hop, a dance eletrônica e muitos produtores atuais."
+     ],
+     "q": "Você acha que remixar uma música também é uma forma de criar?",
+     "c": "Escute uma faixa de dub e note os efeitos de eco na bateria e na voz."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Salsa",
+     "g": "Feel salsa, born in New York from Cuban and Caribbean rhythms.",
+     "p": [
+      "Salsa grew in 1960s and 70s New York among Cuban and Puerto Rican musicians, with labels like Fania.",
+      "It combines Cuban son with brass, piano, congas and timbales, plus call-and-response vocals.",
+      "Celia Cruz, the Queen of Salsa, was known for her powerful voice and her cry of Azucar."
+     ],
+     "q": "Do you dance, or would you like to try, and to which rhythm?",
+     "c": "Listen to a salsa song and clap the clave rhythm underneath it."
+    },
+    "de": {
+     "t": "Salsa",
+     "g": "Salsa spüren, in New York aus kubanischen und karibischen Rhythmen entstanden.",
+     "p": [
+      "Salsa wuchs in den 1960er und 70er Jahren in New York unter kubanischen und puerto-ricanischen Musikern, mit Labels wie Fania.",
+      "Sie verbindet kubanischen Son mit Bläsern, Klavier, Congas und Timbales sowie Frage-und-Antwort-Gesang.",
+      "Celia Cruz, die Königin der Salsa, war bekannt für ihre kraftvolle Stimme und ihren Ruf Azucar."
+     ],
+     "q": "Tanzt du, oder möchtest du es lernen, und zu welchem Rhythmus?",
+     "c": "Hör einen Salsa-Song und klatsche den Clave-Rhythmus darunter mit."
+    },
+    "es": {
+     "t": "Salsa",
+     "g": "Sentir la salsa, nacida en Nueva York de ritmos cubanos y caribeños.",
+     "p": [
+      "La salsa creció en la Nueva York de los sesenta y setenta entre músicos cubanos y puertorriqueños, con sellos como Fania.",
+      "Combina el son cubano con metales, piano, congas y timbales, más voces de pregunta y respuesta.",
+      "Celia Cruz, la Reina de la Salsa, era conocida por su voz potente y su grito de Azúcar."
+     ],
+     "q": "¿Bailas o te gustaría probar y qué ritmo?",
+     "c": "Escucha una salsa y marca con palmas la clave que hay debajo."
+    },
+    "fr": {
+     "t": "La salsa",
+     "g": "Sentir la salsa, née à New York de rythmes cubains et caribéens.",
+     "p": [
+      "La salsa grandit dans le New York des années 1960 et 70 chez des musiciens cubains et portoricains, avec des labels comme Fania.",
+      "Elle associe le son cubain à des cuivres, piano, congas et timbales, avec un chant en appel-réponse.",
+      "Celia Cruz, la reine de la salsa, était connue pour sa voix puissante et son cri Azucar."
+     ],
+     "q": "Dansez-vous, ou aimeriez-vous essayer, et sur quel rythme ?",
+     "c": "Écoutez une salsa et frappez des mains la clave qui la soutient."
+    },
+    "it": {
+     "t": "La salsa",
+     "g": "Sentire la salsa, nata a New York da ritmi cubani e caraibici.",
+     "p": [
+      "La salsa crebbe nella New York degli anni Sessanta e Settanta tra musicisti cubani e portoricani, con etichette come la Fania.",
+      "Unisce il son cubano a fiati, pianoforte, congas e timbales, più canto a botta e risposta.",
+      "Celia Cruz, la regina della salsa, era nota per la voce potente e il grido Azucar."
+     ],
+     "q": "Balli o ti piacerebbe provare, e su quale ritmo?",
+     "c": "Ascolta una salsa e batti le mani la clave che c'è sotto."
+    },
+    "pt": {
+     "t": "A salsa",
+     "g": "Sentir a salsa, nascida em Nova Iorque de ritmos cubanos e caribenhos.",
+     "p": [
+      "A salsa cresceu na Nova Iorque dos anos 1960 e 70 entre músicos cubanos e porto-riquenhos, com editoras como a Fania.",
+      "Combina o son cubano com metais, piano, congas e timbales, mais vozes em pergunta e resposta.",
+      "Celia Cruz, a Rainha da Salsa, era conhecida pela voz potente e pelo grito de Azúcar."
+     ],
+     "q": "Danças ou gostarias de experimentar, e a que ritmo?",
+     "c": "Ouve uma salsa e bate palmas a clave que está por baixo."
+    },
+    "pt_BR": {
+     "t": "A salsa",
+     "g": "Sentir a salsa, nascida em Nova York de ritmos cubanos e caribenhos.",
+     "p": [
+      "A salsa cresceu na Nova York dos anos 1960 e 70 entre músicos cubanos e porto-riquenhos, com gravadoras como a Fania.",
+      "Combina o son cubano com metais, piano, congas e timbales, mais vozes em pergunta e resposta.",
+      "Celia Cruz, a Rainha da Salsa, era conhecida pela voz potente e pelo grito de Azúcar."
+     ],
+     "q": "Você dança ou gostaria de experimentar, e que ritmo?",
+     "c": "Escute uma salsa e bata palmas a clave que está por baixo."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cuban son and the clave",
+     "g": "Learn the two-bar clave pattern that anchors Latin music.",
+     "p": [
+      "Son cubano emerged in eastern Cuba in the late 1800s, blending Spanish guitar songs with African rhythms.",
+      "The clave is a five-note pattern played over two bars, often on two wooden sticks.",
+      "Son, salsa, rumba and much Latin jazz are built around the clave."
+     ],
+     "q": "Can you clap the 3-2 clave pattern after hearing it a few times?",
+     "c": "Listen to a son song, such as from the Buena Vista Social Club, and tap the clave."
+    },
+    "de": {
+     "t": "Kubanischer Son und die Clave",
+     "g": "Das Zwei-Takt-Muster der Clave lernen, das lateinamerikanische Musik verankert.",
+     "p": [
+      "Der Son cubano entstand im späten 19. Jahrhundert im Osten Kubas und verband spanische Gitarrenlieder mit afrikanischen Rhythmen.",
+      "Die Clave ist ein Fünf-Ton-Muster über zwei Takte, oft auf zwei Holzstäben gespielt.",
+      "Son, Salsa, Rumba und viel Latin Jazz sind um die Clave herum gebaut."
+     ],
+     "q": "Kannst du das 3-2-Clave-Muster klatschen, nachdem du es ein paarmal gehört hast?",
+     "c": "Hör einen Son, etwa vom Buena Vista Social Club, und klopfe die Clave mit."
+    },
+    "es": {
+     "t": "El son cubano y la clave",
+     "g": "Aprender el patrón de clave de dos compases que ancla la música latina.",
+     "p": [
+      "El son cubano surgió en el oriente de Cuba a finales del siglo XIX, mezclando canciones españolas de guitarra con ritmos africanos.",
+      "La clave es un patrón de cinco golpes en dos compases, a menudo tocado con dos palos de madera.",
+      "El son, la salsa, la rumba y mucho jazz latino se construyen en torno a la clave."
+     ],
+     "q": "¿Puedes marcar con palmas la clave 3-2 tras oírla varias veces?",
+     "c": "Escucha un son, por ejemplo del Buena Vista Social Club, y marca la clave."
+    },
+    "fr": {
+     "t": "Le son cubain et la clave",
+     "g": "Apprendre le motif de clave sur deux mesures qui ancre la musique latine.",
+     "p": [
+      "Le son cubain naît dans l'est de Cuba à la fin du XIXe siècle, mêlant chansons espagnoles à la guitare et rythmes africains.",
+      "La clave est un motif de cinq notes sur deux mesures, souvent joué sur deux bâtons de bois.",
+      "Le son, la salsa, la rumba et beaucoup de jazz latin s'articulent autour de la clave."
+     ],
+     "q": "Pouvez-vous frapper la clave 3-2 après l'avoir entendue plusieurs fois ?",
+     "c": "Écoutez un son, par exemple du Buena Vista Social Club, et frappez la clave."
+    },
+    "it": {
+     "t": "Il son cubano e la clave",
+     "g": "Imparare lo schema di clave di due battute che ancora la musica latina.",
+     "p": [
+      "Il son cubano nacque nell'est di Cuba a fine Ottocento, unendo canzoni spagnole per chitarra e ritmi africani.",
+      "La clave è uno schema di cinque colpi su due battute, spesso suonato con due bastoncini di legno.",
+      "Son, salsa, rumba e molto jazz latino sono costruiti intorno alla clave."
+     ],
+     "q": "Riesci a battere la clave 3-2 dopo averla sentita qualche volta?",
+     "c": "Ascolta un son, ad esempio del Buena Vista Social Club, e batti la clave."
+    },
+    "pt": {
+     "t": "O son cubano e a clave",
+     "g": "Aprender o padrão de clave de dois compassos que ancora a música latina.",
+     "p": [
+      "O son cubano surgiu no leste de Cuba no final do século XIX, juntando canções espanholas de guitarra e ritmos africanos.",
+      "A clave é um padrão de cinco batidas em dois compassos, muitas vezes tocado em dois paus de madeira.",
+      "O son, a salsa, a rumba e muito jazz latino constroem-se em torno da clave."
+     ],
+     "q": "Consegues bater palmas a clave 3-2 depois de a ouvir algumas vezes?",
+     "c": "Ouve um son, por exemplo do Buena Vista Social Club, e marca a clave."
+    },
+    "pt_BR": {
+     "t": "O son cubano e a clave",
+     "g": "Aprender o padrão de clave de dois compassos que ancora a música latina.",
+     "p": [
+      "O son cubano surgiu no leste de Cuba no fim do século XIX, juntando canções espanholas de violão e ritmos africanos.",
+      "A clave é um padrão de cinco batidas em dois compassos, muitas vezes tocado em dois bastões de madeira.",
+      "O son, a salsa, a rumba e muito jazz latino se constroem em torno da clave."
+     ],
+     "q": "Você consegue bater palmas a clave 3-2 depois de ouvir algumas vezes?",
+     "c": "Escute um son, por exemplo do Buena Vista Social Club, e marque a clave."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Samba from Brazil",
+     "g": "Meet samba, the rhythm of Rio's carnival schools.",
+     "p": [
+      "Samba grew in Rio de Janeiro in the early 20th century from Afro-Brazilian communities.",
+      "Samba schools prepare all year for carnival, with huge percussion groups called baterias.",
+      "Instruments include the deep surdo drum, the small cavaquinho and tamborim, and many voices singing together."
+     ],
+     "q": "Have you seen or taken part in a carnival or street parade?",
+     "c": "Listen to a samba and try to hear the surdo marking the beat below."
+    },
+    "de": {
+     "t": "Samba aus Brasilien",
+     "g": "Samba kennenlernen, den Rhythmus der Karnevalsschulen von Rio.",
+     "p": [
+      "Samba entstand im frühen 20. Jahrhundert in Rio de Janeiro aus afrobrasilianischen Gemeinschaften.",
+      "Sambaschulen bereiten sich das ganze Jahr auf den Karneval vor, mit riesigen Schlagwerkgruppen, den Baterias.",
+      "Zu den Instrumenten zählen die tiefe Surdo-Trommel, das kleine Cavaquinho und Tamborim und viele singende Stimmen."
+     ],
+     "q": "Hast du schon einen Karneval oder Straßenumzug gesehen oder mitgemacht?",
+     "c": "Hör einen Samba und versuche, die Surdo zu hören, die darunter den Takt markiert."
+    },
+    "es": {
+     "t": "Samba de Brasil",
+     "g": "Conocer la samba, el ritmo de las escuelas de carnaval de Río.",
+     "p": [
+      "La samba creció en Río de Janeiro a principios del siglo XX en comunidades afrobrasileñas.",
+      "Las escuelas de samba se preparan todo el año para el carnaval, con enormes grupos de percusión llamados baterías.",
+      "Los instrumentos incluyen el surdo grave, el pequeño cavaquinho y el tamborim, y muchas voces cantando juntas."
+     ],
+     "q": "¿Has visto o participado en un carnaval o desfile callejero?",
+     "c": "Escucha una samba e intenta oír el surdo marcando el pulso por debajo."
+    },
+    "fr": {
+     "t": "La samba du Brésil",
+     "g": "Découvrir la samba, rythme des écoles de carnaval de Rio.",
+     "p": [
+      "La samba naît à Rio de Janeiro au début du XXe siècle au sein de communautés afro-brésiliennes.",
+      "Les écoles de samba préparent le carnaval toute l'année, avec d'immenses groupes de percussions, les baterias.",
+      "Les instruments comprennent le surdo grave, le petit cavaquinho et le tamborim, et de nombreuses voix qui chantent ensemble."
+     ],
+     "q": "Avez-vous déjà vu ou participé à un carnaval ou à un défilé de rue ?",
+     "c": "Écoutez une samba et essayez d'entendre le surdo qui marque le temps en dessous."
+    },
+    "it": {
+     "t": "La samba brasiliana",
+     "g": "Conoscere la samba, il ritmo delle scuole di carnevale di Rio.",
+     "p": [
+      "La samba crebbe a Rio de Janeiro all'inizio del Novecento nelle comunità afrobrasiliane.",
+      "Le scuole di samba si preparano tutto l'anno al carnevale, con enormi gruppi di percussioni detti baterias.",
+      "Gli strumenti comprendono il profondo surdo, il piccolo cavaquinho e il tamborim, e molte voci che cantano insieme."
+     ],
+     "q": "Hai mai visto o partecipato a un carnevale o a una parata di strada?",
+     "c": "Ascolta una samba e prova a sentire il surdo che segna il tempo sotto."
+    },
+    "pt": {
+     "t": "O samba do Brasil",
+     "g": "Conhecer o samba, o ritmo das escolas de carnaval do Rio.",
+     "p": [
+      "O samba cresceu no Rio de Janeiro no início do século XX em comunidades afro-brasileiras.",
+      "As escolas de samba preparam-se o ano inteiro para o carnaval, com enormes grupos de percussão chamados baterias.",
+      "Os instrumentos incluem o surdo grave, o pequeno cavaquinho e o tamborim, e muitas vozes a cantar juntas."
+     ],
+     "q": "Já viste ou participaste num carnaval ou desfile de rua?",
+     "c": "Ouve um samba e tenta ouvir o surdo a marcar o compasso por baixo."
+    },
+    "pt_BR": {
+     "t": "O samba do Brasil",
+     "g": "Conhecer o samba, o ritmo das escolas de carnaval do Rio.",
+     "p": [
+      "O samba cresceu no Rio de Janeiro no início do século XX em comunidades afro-brasileiras.",
+      "As escolas de samba se preparam o ano inteiro para o carnaval, com enormes grupos de percussão chamados baterias.",
+      "Os instrumentos incluem o surdo grave, o pequeno cavaquinho e o tamborim, e muitas vozes cantando juntas."
+     ],
+     "q": "Você já viu ou participou de um carnaval ou desfile de rua?",
+     "c": "Escute um samba e tente ouvir o surdo marcando o compasso por baixo."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Bossa nova",
+     "g": "Hear bossa nova, a soft blend of samba and jazz.",
+     "p": [
+      "Bossa nova emerged in Rio in the late 1950s, built on a gentle, syncopated guitar rhythm.",
+      "João Gilberto's quiet singing and guitar style gave the genre its trademark intimacy.",
+      "Tom Jobim composed songs like The Girl from Ipanema with sophisticated harmonies borrowed from jazz."
+     ],
+     "q": "Do you like music that feels quiet and conversational?",
+     "c": "Listen to Chega de Saudade or Corcovado and notice how softly the voice sings."
+    },
+    "de": {
+     "t": "Bossa Nova",
+     "g": "Bossa Nova hören, eine sanfte Mischung aus Samba und Jazz.",
+     "p": [
+      "Bossa Nova entstand Ende der 1950er in Rio, aufgebaut auf einem sanften, synkopierten Gitarrenrhythmus.",
+      "João Gilbertos leiser Gesang und Gitarrenstil gaben dem Genre seine typische Intimität.",
+      "Tom Jobim komponierte Lieder wie The Girl from Ipanema mit raffinierten, vom Jazz geliehenen Harmonien."
+     ],
+     "q": "Magst du Musik, die ruhig und wie ein Gespräch wirkt?",
+     "c": "Hör Chega de Saudade oder Corcovado und achte darauf, wie leise die Stimme singt."
+    },
+    "es": {
+     "t": "Bossa nova",
+     "g": "Oír la bossa nova, una mezcla suave de samba y jazz.",
+     "p": [
+      "La bossa nova surgió en Río a finales de los cincuenta, sobre un ritmo de guitarra suave y sincopado.",
+      "El canto tranquilo y el estilo de guitarra de João Gilberto dieron al género su intimidad característica.",
+      "Tom Jobim compuso canciones como The Girl from Ipanema con armonías sofisticadas tomadas del jazz."
+     ],
+     "q": "¿Te gusta la música que suena tranquila y como una conversación?",
+     "c": "Escucha Chega de Saudade o Corcovado y fíjate en lo suave que canta la voz."
+    },
+    "fr": {
+     "t": "La bossa nova",
+     "g": "Entendre la bossa nova, mélange doux de samba et de jazz.",
+     "p": [
+      "La bossa nova apparaît à Rio à la fin des années 1950, sur un rythme de guitare doux et syncopé.",
+      "Le chant discret et le jeu de guitare de João Gilberto donnent au genre son intimité caractéristique.",
+      "Tom Jobim compose des chansons comme The Girl from Ipanema aux harmonies raffinées empruntées au jazz."
+     ],
+     "q": "Aimez-vous la musique qui semble calme et proche de la conversation ?",
+     "c": "Écoutez Chega de Saudade ou Corcovado et remarquez la douceur de la voix."
+    },
+    "it": {
+     "t": "La bossa nova",
+     "g": "Sentire la bossa nova, morbida miscela di samba e jazz.",
+     "p": [
+      "La bossa nova nacque a Rio alla fine degli anni Cinquanta, su un ritmo di chitarra dolce e sincopato.",
+      "Il canto sommesso e lo stile chitarristico di João Gilberto diedero al genere la sua intimità caratteristica.",
+      "Tom Jobim compose canzoni come The Girl from Ipanema con armonie raffinate prese dal jazz."
+     ],
+     "q": "Ti piace la musica che suona calma e quasi una conversazione?",
+     "c": "Ascolta Chega de Saudade o Corcovado e nota quanto piano canta la voce."
+    },
+    "pt": {
+     "t": "Bossa nova",
+     "g": "Ouvir a bossa nova, uma mistura suave de samba e jazz.",
+     "p": [
+      "A bossa nova surgiu no Rio no final dos anos 1950, sobre um ritmo de guitarra suave e sincopado.",
+      "O canto baixinho e o estilo de guitarra de João Gilberto deram ao género a sua intimidade característica.",
+      "Tom Jobim compôs canções como The Girl from Ipanema com harmonias sofisticadas vindas do jazz."
+     ],
+     "q": "Gostas de música que soa calma, quase como uma conversa?",
+     "c": "Ouve Chega de Saudade ou Corcovado e repara como a voz canta baixinho."
+    },
+    "pt_BR": {
+     "t": "Bossa nova",
+     "g": "Ouvir a bossa nova, uma mistura suave de samba e jazz.",
+     "p": [
+      "A bossa nova surgiu no Rio no fim dos anos 1950, sobre um ritmo de violão suave e sincopado.",
+      "O canto baixinho e o estilo de violão de João Gilberto deram ao gênero sua intimidade característica.",
+      "Tom Jobim compôs músicas como Garota de Ipanema com harmonias sofisticadas vindas do jazz."
+     ],
+     "q": "Você gosta de música que soa calma, quase como uma conversa?",
+     "c": "Escute Chega de Saudade ou Corcovado e note como a voz canta baixinho."
+    }
+   }
+  }
+ ]
+}

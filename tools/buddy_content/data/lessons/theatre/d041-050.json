@@ -1,0 +1,835 @@
+{
+ "topic": "theatre",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The showstopper",
+     "g": "Enjoy the big number that makes the audience cheer so long the show has to pause.",
+     "p": [
+      "A showstopper is a number so thrilling that applause halts the performance for a moment.",
+      "It usually has a catchy tune, bold choreography and a performer giving everything.",
+      "Ensemble dances, a comic song or a powerful solo can all become the evening's showstopper."
+     ],
+     "q": "What is the most thrilling live performance moment you have ever witnessed?",
+     "c": "Today, perform a thirty-second showstopper entrance, with a big pose and a smile, for someone at home."
+    },
+    "de": {
+     "t": "Der Showstopper",
+     "g": "Genieße die große Nummer, die das Publikum so lange jubeln lässt, dass die Show pausieren muss.",
+     "p": [
+      "Ein Showstopper ist eine Nummer, so mitreißend, dass der Applaus die Aufführung kurz anhält.",
+      "Meist hat sie eine eingängige Melodie, kühne Choreografie und einen Darsteller, der alles gibt.",
+      "Ensembletänze, ein komisches Lied oder ein kraftvolles Solo können zum Showstopper des Abends werden."
+     ],
+     "q": "Was war der mitreißendste Moment einer Live-Aufführung, den du je erlebt hast?",
+     "c": "Zeige heute jemandem zu Hause einen dreißigsekündigen Showstopper-Auftritt mit großer Pose und Lächeln."
+    },
+    "es": {
+     "t": "El número estrella",
+     "g": "Disfruta del gran número que hace que el público aplauda tanto que el espectáculo debe parar.",
+     "p": [
+      "Un número estrella es tan emocionante que los aplausos detienen la función por un momento.",
+      "Suele tener una melodía pegadiza, una coreografía atrevida y un intérprete que lo da todo.",
+      "Bailes de conjunto, una canción cómica o un solo potente pueden ser el número estrella de la noche."
+     ],
+     "q": "¿Cuál es el momento más emocionante de un espectáculo en vivo que has presenciado?",
+     "c": "Hoy haz una entrada de treinta segundos como número estrella, con pose grande y sonrisa, ante alguien en casa."
+    },
+    "fr": {
+     "t": "Le numéro qui arrête le spectacle",
+     "g": "Savoure le grand numéro qui fait acclamer le public si longtemps que le spectacle doit s'interrompre.",
+     "p": [
+      "Un showstopper est un numéro si enthousiasmant que les applaudissements arrêtent un instant la représentation.",
+      "Il a souvent un air entraînant, une chorégraphie audacieuse et un artiste qui donne tout.",
+      "Danses d'ensemble, chanson comique ou solo puissant peuvent devenir le clou de la soirée."
+     ],
+     "q": "Quel est le moment le plus enthousiasmant d'un spectacle vivant que tu aies vécu ?",
+     "c": "Aujourd'hui, fais pendant trente secondes une entrée de vedette, grande pose et sourire, devant quelqu'un chez toi."
+    },
+    "it": {
+     "t": "Il numero che ferma lo spettacolo",
+     "g": "Goditi il grande numero che fa applaudire così a lungo che lo spettacolo deve fermarsi.",
+     "p": [
+      "Uno showstopper è un numero così emozionante che gli applausi fermano per un attimo lo spettacolo.",
+      "Di solito ha una melodia orecchiabile, una coreografia audace e un interprete che dà tutto.",
+      "Balli d'insieme, una canzone comica o un assolo potente possono diventare il clou della serata."
+     ],
+     "q": "Qual è stato il momento più emozionante di uno spettacolo dal vivo a cui hai assistito?",
+     "c": "Oggi fai un'entrata da star di trenta secondi, con posa grande e sorriso, davanti a qualcuno a casa."
+    },
+    "pt": {
+     "t": "O número que pára o espetáculo",
+     "g": "Diverte-te com o grande número que faz o público aplaudir tanto que o espetáculo tem de parar.",
+     "p": [
+      "Um número de sucesso é tão empolgante que os aplausos param por um instante a representação.",
+      "Costuma ter uma melodia cativante, coreografia ousada e um intérprete que dá tudo.",
+      "Danças de conjunto, uma canção cómica ou um solo poderoso podem ser o ponto alto da noite."
+     ],
+     "q": "Qual foi o momento mais empolgante de um espetáculo ao vivo a que assististe?",
+     "c": "Hoje faz uma entrada de estrela de trinta segundos, com pose grande e sorriso, diante de alguém em casa."
+    },
+    "pt_BR": {
+     "t": "O número que para o espetáculo",
+     "g": "Divirta-se com o grande número que faz a plateia aplaudir tanto que o espetáculo precisa parar.",
+     "p": [
+      "Um número de sucesso é tão empolgante que os aplausos param por um instante a apresentação.",
+      "Costuma ter uma melodia grudenta, coreografia ousada e um intérprete que dá tudo.",
+      "Danças de conjunto, uma canção cômica ou um solo poderoso podem ser o ponto alto da noite."
+     ],
+     "q": "Qual foi o momento mais empolgante de um espetáculo ao vivo a que você assistiu?",
+     "c": "Hoje faça uma entrada de estrela de trinta segundos, com pose grande e sorriso, para alguém em casa."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Broadway and the West End",
+     "g": "Visit New York's and London's famous theatre districts and see why they link with musicals.",
+     "p": [
+      "Broadway is a street and district in New York where dozens of large theatres cluster.",
+      "The West End is London's theatre district, with historic playhouses around Shaftesbury Avenue.",
+      "Many hit musicals open in one and cross the ocean to the other, reaching audiences worldwide."
+     ],
+     "q": "If you could see a show in either district, which one would you pick and why?",
+     "c": "Today, find a map of one theatre district and note three theatre names you like."
+    },
+    "de": {
+     "t": "Broadway und West End",
+     "g": "Besuche die berühmten Theaterviertel von New York und London und sieh, warum sie mit Musicals verbunden sind.",
+     "p": [
+      "Broadway ist eine Straße und ein Viertel in New York, wo Dutzende große Theater dicht beieinander liegen.",
+      "Das West End ist Londons Theaterviertel mit historischen Häusern rund um die Shaftesbury Avenue.",
+      "Viele Musical-Hits starten in einem und reisen über den Ozean zum anderen und erreichen weltweit Publikum."
+     ],
+     "q": "Wenn du in einem der Viertel eine Show sehen könntest, welches würdest du wählen und warum?",
+     "c": "Suche heute einen Plan eines Theaterviertels und notiere drei Theaternamen, die dir gefallen."
+    },
+    "es": {
+     "t": "Broadway y el West End",
+     "g": "Visita los famosos barrios teatrales de Nueva York y Londres y descubre por qué se asocian con los musicales.",
+     "p": [
+      "Broadway es una calle y un distrito de Nueva York donde se agrupan decenas de grandes teatros.",
+      "El West End es el barrio teatral de Londres, con históricos teatros alrededor de Shaftesbury Avenue.",
+      "Muchos musicales de éxito se estrenan en uno y cruzan el océano hacia el otro, llegando al público de todo el mundo."
+     ],
+     "q": "Si pudieras ver un espectáculo en uno de los dos, ¿cuál elegirías y por qué?",
+     "c": "Hoy busca un mapa de un barrio teatral y anota tres nombres de teatros que te gusten."
+    },
+    "fr": {
+     "t": "Broadway et le West End",
+     "g": "Visite les célèbres quartiers de théâtre de New York et Londres et vois pourquoi on les associe aux comédies musicales.",
+     "p": [
+      "Broadway est une avenue et un quartier de New York où des dizaines de grands théâtres sont regroupés.",
+      "Le West End est le quartier des théâtres de Londres, avec des salles historiques autour de Shaftesbury Avenue.",
+      "Beaucoup de comédies musicales à succès débutent dans l'un et traversent l'océan vers l'autre, touchant le monde entier."
+     ],
+     "q": "Si tu pouvais voir un spectacle dans l'un des deux, lequel choisirais-tu et pourquoi ?",
+     "c": "Aujourd'hui, trouve le plan d'un quartier de théâtres et note trois noms de salles qui te plaisent."
+    },
+    "it": {
+     "t": "Broadway e il West End",
+     "g": "Visita i celebri quartieri teatrali di New York e Londra e scopri perché sono legati ai musical.",
+     "p": [
+      "Broadway è una strada e un distretto di New York dove decine di grandi teatri sono raggruppati.",
+      "Il West End è il quartiere dei teatri di Londra, con sale storiche intorno a Shaftesbury Avenue.",
+      "Molti musical di successo debuttano in uno e attraversano l'oceano verso l'altro, raggiungendo il pubblico del mondo."
+     ],
+     "q": "Se potessi vedere uno spettacolo in uno dei due, quale sceglieresti e perché?",
+     "c": "Oggi trova la mappa di un quartiere teatrale e annota tre nomi di teatri che ti piacciono."
+    },
+    "pt": {
+     "t": "A Broadway e o West End",
+     "g": "Visita os famosos bairros teatrais de Nova Iorque e Londres e vê porque se associam aos musicais.",
+     "p": [
+      "A Broadway é uma rua e um distrito de Nova Iorque onde se agrupam dezenas de grandes teatros.",
+      "O West End é o bairro teatral de Londres, com teatros históricos à volta da Shaftesbury Avenue.",
+      "Muitos musicais de sucesso estreiam num e atravessam o oceano para o outro, chegando ao público de todo o mundo."
+     ],
+     "q": "Se pudesses ver um espetáculo num dos dois, qual escolherias e porquê?",
+     "c": "Hoje procura um mapa de um bairro teatral e anota três nomes de teatros de que gostes."
+    },
+    "pt_BR": {
+     "t": "A Broadway e o West End",
+     "g": "Visite os famosos bairros teatrais de Nova York e Londres e veja por que se associam aos musicais.",
+     "p": [
+      "A Broadway é uma rua e um distrito de Nova York onde se agrupam dezenas de grandes teatros.",
+      "O West End é o bairro teatral de Londres, com teatros históricos em volta da Shaftesbury Avenue.",
+      "Muitos musicais de sucesso estreiam em um e atravessam o oceano para o outro, chegando ao público do mundo todo."
+     ],
+     "q": "Se você pudesse ver um espetáculo em um dos dois, qual escolheria e por quê?",
+     "c": "Hoje procure um mapa de um bairro teatral e anote três nomes de teatros de que você goste."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Opera versus musical",
+     "g": "Compare sung-through classical music with a mix of speech and song, and see what they share.",
+     "p": [
+      "Opera is mostly sung, with trained voices that carry over an orchestra without microphones.",
+      "Musicals usually mix speech and song and often use light amplification and popular styles.",
+      "Both tell stories through music, and some works sit happily between the two worlds."
+     ],
+     "q": "Have you heard an opera aria or musical song that gave you goosebumps?",
+     "c": "Today, listen to one opera aria and one musical song, and note how the voices differ."
+    },
+    "de": {
+     "t": "Oper gegen Musical",
+     "g": "Vergleiche durchgesungene klassische Musik mit einer Mischung aus Sprache und Gesang und sieh, was beide verbindet.",
+     "p": [
+      "Die Oper wird meist gesungen, mit geschulten Stimmen, die ohne Mikrofon über ein Orchester tragen.",
+      "Musicals mischen meist Sprache und Gesang und nutzen oft leichte Verstärkung und Popstile.",
+      "Beide erzählen Geschichten mit Musik, und manche Werke sitzen gern zwischen beiden Welten."
+     ],
+     "q": "Hast du eine Opernarie oder ein Musicallied gehört, das dir Gänsehaut machte?",
+     "c": "Höre heute eine Opernarie und ein Musicallied und achte darauf, wie sich die Stimmen unterscheiden."
+    },
+    "es": {
+     "t": "Ópera frente a musical",
+     "g": "Compara la música clásica cantada de principio a fin con la mezcla de texto y canción, y mira qué comparten.",
+     "p": [
+      "La ópera se canta casi toda, con voces entrenadas que se oyen sobre una orquesta sin micrófono.",
+      "Los musicales suelen mezclar texto y canto y a menudo usan amplificación ligera y estilos populares.",
+      "Ambos cuentan historias con música, y algunas obras viven a gusto entre los dos mundos."
+     ],
+     "q": "¿Has oído un aria de ópera o una canción de musical que te pusiera la piel de gallina?",
+     "c": "Hoy escucha un aria de ópera y una canción de musical y fíjate en cómo difieren las voces."
+    },
+    "fr": {
+     "t": "Opéra ou comédie musicale",
+     "g": "Compare la musique classique chantée de bout en bout avec le mélange de parole et de chant, et vois ce qu'elles partagent.",
+     "p": [
+      "L'opéra est surtout chanté, avec des voix entraînées qui portent au-dessus de l'orchestre sans micro.",
+      "Les comédies musicales mêlent en général parole et chant et utilisent souvent une légère amplification et des styles populaires.",
+      "Les deux racontent des histoires en musique, et certaines œuvres se tiennent entre les deux mondes."
+     ],
+     "q": "As-tu déjà entendu un air d'opéra ou une chanson de comédie musicale qui t'a donné des frissons ?",
+     "c": "Aujourd'hui, écoute un air d'opéra et une chanson de comédie musicale et note comment les voix diffèrent."
+    },
+    "it": {
+     "t": "Opera lirica e musical",
+     "g": "Confronta la musica classica cantata dall'inizio alla fine con il mix di parlato e canto, e vedi cosa condividono.",
+     "p": [
+      "L'opera è cantata quasi tutta, con voci addestrate che si sentono sopra un'orchestra senza microfono.",
+      "I musical di solito mescolano parlato e canto e spesso usano una leggera amplificazione e stili popolari.",
+      "Entrambi raccontano storie con la musica, e alcune opere stanno bene a metà tra i due mondi."
+     ],
+     "q": "Hai sentito un'aria d'opera o una canzone di musical che ti ha fatto venire i brividi?",
+     "c": "Oggi ascolta un'aria d'opera e una canzone di musical e nota come differiscono le voci."
+    },
+    "pt": {
+     "t": "Ópera ou musical",
+     "g": "Compara a música clássica cantada do princípio ao fim com a mistura de fala e canto, e vê o que partilham.",
+     "p": [
+      "A ópera é quase toda cantada, com vozes treinadas que se ouvem sobre uma orquestra sem microfone.",
+      "Os musicais costumam misturar fala e canto e usam muitas vezes amplificação leve e estilos populares.",
+      "Ambos contam histórias com música, e algumas obras ficam bem entre os dois mundos."
+     ],
+     "q": "Já ouviste uma ária de ópera ou canção de musical que te arrepiou?",
+     "c": "Hoje ouve uma ária de ópera e uma canção de musical e repara como as vozes diferem."
+    },
+    "pt_BR": {
+     "t": "Ópera ou musical",
+     "g": "Compare a música clássica cantada do começo ao fim com a mistura de fala e canto, e veja o que compartilham.",
+     "p": [
+      "A ópera é quase toda cantada, com vozes treinadas que se ouvem sobre uma orquestra sem microfone.",
+      "Os musicais costumam misturar fala e canto e muitas vezes usam amplificação leve e estilos populares.",
+      "Ambos contam histórias com música, e algumas obras ficam bem entre os dois mundos."
+     ],
+     "q": "Você já ouviu uma ária de ópera ou canção de musical que te arrepiou?",
+     "c": "Hoje ouça uma ária de ópera e uma canção de musical e note como as vozes diferem."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Operetta",
+     "g": "Meet the light, witty ancestor of the musical, from Offenbach in Paris to Strauss in Vienna.",
+     "p": [
+      "Operetta is a light opera with spoken dialogue, lively tunes and comic or romantic plots.",
+      "Jacques Offenbach made it famous in 1850s Paris with sparkling melodies and playful satire.",
+      "In Vienna, Johann Strauss II wrote waltz-filled works like Die Fledermaus, full of party spirit."
+     ],
+     "q": "Do you enjoy light, witty music, such as a waltz or a cheeky tune?",
+     "c": "Today, listen to a waltz or a can-can melody and move along with it for one minute."
+    },
+    "de": {
+     "t": "Operette",
+     "g": "Lerne den leichten, witzigen Vorfahren des Musicals kennen, von Offenbach in Paris bis Strauss in Wien.",
+     "p": [
+      "Die Operette ist eine leichte Oper mit gesprochenem Dialog, schwungvollen Melodien und komischen oder romantischen Handlungen.",
+      "Jacques Offenbach machte sie in den 1850er Jahren in Paris mit funkelnden Melodien und spielerischer Satire berühmt.",
+      "In Wien schrieb Johann Strauss Sohn walzerreiche Werke wie Die Fledermaus voller Festlaune."
+     ],
+     "q": "Magst du leichte, witzige Musik, wie einen Walzer oder eine freche Melodie?",
+     "c": "Höre heute einen Walzer oder eine Can-Can-Melodie und bewege dich eine Minute lang dazu."
+    },
+    "es": {
+     "t": "La opereta",
+     "g": "Conoce a la ligera y ocurrente antepasada del musical, de Offenbach en París a Strauss en Viena.",
+     "p": [
+      "La opereta es una ópera ligera con diálogo hablado, melodías vivaces y tramas cómicas o románticas.",
+      "Jacques Offenbach la hizo famosa en el París de 1850 con melodías chispeantes y sátira juguetona.",
+      "En Viena, Johann Strauss hijo escribió obras llenas de valses como El murciélago, con aire de fiesta."
+     ],
+     "q": "¿Disfrutas de la música ligera e ingeniosa, como un vals o una melodía descarada?",
+     "c": "Hoy escucha un vals o una melodía de cancán y muévete con ella durante un minuto."
+    },
+    "fr": {
+     "t": "L'opérette",
+     "g": "Rencontre l'ancêtre léger et spirituel de la comédie musicale, d'Offenbach à Paris à Strauss à Vienne.",
+     "p": [
+      "L'opérette est un opéra léger avec dialogues parlés, airs entraînants et intrigues comiques ou romantiques.",
+      "Jacques Offenbach la rendit célèbre dans le Paris des années 1850, avec des mélodies pétillantes et une satire espiègle.",
+      "À Vienne, Johann Strauss fils écrivit des œuvres pleines de valses comme La Chauve-Souris, remplies d'esprit de fête."
+     ],
+     "q": "Aimes-tu la musique légère et spirituelle, comme une valse ou un air espiègle ?",
+     "c": "Aujourd'hui, écoute une valse ou un air de french cancan et bouge avec pendant une minute."
+    },
+    "it": {
+     "t": "L'operetta",
+     "g": "Conosci l'antenata leggera e brillante del musical, da Offenbach a Parigi a Strauss a Vienna.",
+     "p": [
+      "L'operetta è un'opera leggera con dialoghi parlati, melodie vivaci e trame comiche o romantiche.",
+      "Jacques Offenbach la rese celebre nella Parigi degli anni Cinquanta dell'Ottocento con melodie frizzanti e satira giocosa.",
+      "A Vienna Johann Strauss figlio scrisse opere piene di valzer come Il pipistrello, ricche di spirito di festa."
+     ],
+     "q": "Ti piace la musica leggera e arguta, come un valzer o una melodia sbarazzina?",
+     "c": "Oggi ascolta un valzer o una melodia di can-can e muoviti con essa per un minuto."
+    },
+    "pt": {
+     "t": "A opereta",
+     "g": "Conhece a ligeira e espirituosa antepassada do musical, de Offenbach em Paris a Strauss em Viena.",
+     "p": [
+      "A opereta é uma ópera ligeira com diálogo falado, melodias vivas e enredos cómicos ou românticos.",
+      "Jacques Offenbach tornou-a famosa na Paris de 1850 com melodias cintilantes e sátira brincalhona.",
+      "Em Viena, Johann Strauss filho escreveu obras cheias de valsas como O Morcego, com espírito de festa."
+     ],
+     "q": "Gostas de música ligeira e espirituosa, como uma valsa ou uma melodia atrevida?",
+     "c": "Hoje ouve uma valsa ou uma melodia de cancã e mexe-te com ela durante um minuto."
+    },
+    "pt_BR": {
+     "t": "A opereta",
+     "g": "Conheça a leve e espirituosa antepassada do musical, de Offenbach em Paris a Strauss em Viena.",
+     "p": [
+      "A opereta é uma ópera leve com diálogo falado, melodias vivas e enredos cômicos ou românticos.",
+      "Jacques Offenbach a tornou famosa na Paris de 1850 com melodias cintilantes e sátira brincalhona.",
+      "Em Viena, Johann Strauss filho escreveu obras cheias de valsas como O Morcego, com espírito de festa."
+     ],
+     "q": "Você gosta de música leve e espirituosa, como uma valsa ou uma melodia atrevida?",
+     "c": "Hoje ouça uma valsa ou uma melodia de cancã e se mexa com ela por um minuto."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pantomime traditions",
+     "g": "Enjoy British family pantomime with dames, villains to boo and the famous he's behind you.",
+     "p": [
+      "Pantomime is a British Christmas-season show based on fairy tales, full of songs and silliness.",
+      "The dame is a comic older woman played by a man, and the villain is booed with great joy.",
+      "Audience taking part is the heart of it: shouting, singing along and warning the hero."
+     ],
+     "q": "Do you enjoy shows where the audience can shout, sing and join in?",
+     "c": "Today, shout a friendly oh no it isn't, oh yes it is exchange with someone for fun."
+    },
+    "de": {
+     "t": "Pantomime-Traditionen",
+     "g": "Genieße die britische Familien-Pantomime mit Dame, auszubuhenden Schurken und dem berühmten He's behind you.",
+     "p": [
+      "Pantomime ist eine britische Weihnachtsshow nach Märchen, voller Lieder und Albernheiten.",
+      "Die Dame ist eine komische ältere Frau, gespielt von einem Mann, und der Schurke wird mit großer Freude ausgebuht.",
+      "Das Mitmachen des Publikums ist das Herz: rufen, mitsingen und den Helden warnen."
+     ],
+     "q": "Magst du Shows, bei denen das Publikum rufen, singen und mitmachen darf?",
+     "c": "Rufe heute zum Spaß mit jemandem ein freundliches Oh no it isn't, oh yes it is."
+    },
+    "es": {
+     "t": "Tradiciones de la pantomima",
+     "g": "Disfruta de la pantomima familiar británica con damas, villanos a los que abuchear y el famoso he's behind you.",
+     "p": [
+      "La pantomima es un espectáculo británico de Navidad basado en cuentos de hadas, lleno de canciones y tonterías.",
+      "La dama es una mujer mayor cómica interpretada por un hombre, y al villano se le abuchea con gran alegría.",
+      "La participación del público es el corazón: gritar, cantar y avisar al héroe."
+     ],
+     "q": "¿Disfrutas de los espectáculos en los que el público puede gritar, cantar y participar?",
+     "c": "Hoy lanza por diversión con alguien un amistoso oh no it isn't, oh yes it is."
+    },
+    "fr": {
+     "t": "Les traditions de la pantomime",
+     "g": "Savoure la pantomime familiale britannique avec dames, méchants à huer et le fameux he's behind you.",
+     "p": [
+      "La pantomime est un spectacle britannique de Noël inspiré de contes de fées, plein de chansons et de bêtises.",
+      "La dame est une vieille femme comique jouée par un homme, et le méchant est hué avec grande joie.",
+      "La participation du public en est le cœur : crier, chanter en chœur et prévenir le héros."
+     ],
+     "q": "Aimes-tu les spectacles où le public peut crier, chanter et participer ?",
+     "c": "Aujourd'hui, lance pour le plaisir un échange amical oh no it isn't, oh yes it is avec quelqu'un."
+    },
+    "it": {
+     "t": "Le tradizioni della pantomima",
+     "g": "Goditi la pantomima familiare britannica con dame, cattivi da fischiare e il celebre he's behind you.",
+     "p": [
+      "La pantomima è uno spettacolo britannico natalizio ispirato alle fiabe, pieno di canzoni e sciocchezze.",
+      "La dama è una anziana comica interpretata da un uomo, e il cattivo viene fischiato con grande gioia.",
+      "La partecipazione del pubblico è il cuore: gridare, cantare insieme e avvisare l'eroe."
+     ],
+     "q": "Ti piacciono gli spettacoli in cui il pubblico può gridare, cantare e partecipare?",
+     "c": "Oggi lancia per gioco con qualcuno un amichevole oh no it isn't, oh yes it is."
+    },
+    "pt": {
+     "t": "As tradições da pantomima",
+     "g": "Diverte-te com a pantomima familiar britânica, com damas, vilões a vaiar e o famoso he's behind you.",
+     "p": [
+      "A pantomima é um espetáculo britânico da época de Natal baseado em contos de fadas, cheio de canções e tolices.",
+      "A dama é uma velha cómica interpretada por um homem, e o vilão é vaiado com grande alegria.",
+      "A participação do público é o coração: gritar, cantar e avisar o herói."
+     ],
+     "q": "Gostas de espetáculos em que o público pode gritar, cantar e participar?",
+     "c": "Hoje lança por diversão com alguém um simpático oh no it isn't, oh yes it is."
+    },
+    "pt_BR": {
+     "t": "As tradições da pantomima",
+     "g": "Divirta-se com a pantomima familiar britânica, com damas, vilões para vaiar e o famoso he's behind you.",
+     "p": [
+      "A pantomima é um espetáculo britânico da época do Natal baseado em contos de fadas, cheio de canções e bobagens.",
+      "A dama é uma velhinha cômica interpretada por um homem, e o vilão é vaiado com grande alegria.",
+      "A participação da plateia é o coração: gritar, cantar e avisar o herói."
+     ],
+     "q": "Você gosta de espetáculos em que a plateia pode gritar, cantar e participar?",
+     "c": "Hoje lance por diversão com alguém um simpático oh no it isn't, oh yes it is."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cabaret and revue",
+     "g": "Explore short songs, sketches and dances in an intimate setting, without one single story.",
+     "p": [
+      "Cabaret grew in late-1800s Paris and Berlin as small venues mixing songs, comedy and poetry.",
+      "A revue is a themed collection of sketches, songs and dances with no single plot.",
+      "The close space makes it personal: the performer can look at you, joke and sing a few feet away."
+     ],
+     "q": "Would you enjoy a small, close show where the host talks to the audience?",
+     "c": "Today, plan a three-item mini revue: one joke, one song line and one little dance move."
+    },
+    "de": {
+     "t": "Kabarett und Revue",
+     "g": "Entdecke kurze Lieder, Sketche und Tänze in intimer Umgebung, ohne eine einzige durchgehende Geschichte.",
+     "p": [
+      "Das Kabarett entstand Ende des 19. Jahrhunderts in Paris und Berlin als kleine Bühnen mit Liedern, Komik und Poesie.",
+      "Eine Revue ist eine thematische Sammlung von Sketchen, Liedern und Tänzen ohne durchgehende Handlung.",
+      "Der enge Raum macht es persönlich: Der Künstler kann dich ansehen, scherzen und wenige Meter entfernt singen."
+     ],
+     "q": "Würde dir eine kleine, nahe Show gefallen, in der der Moderator mit dem Publikum spricht?",
+     "c": "Plane heute eine Mini-Revue mit drei Nummern: ein Witz, eine Liedzeile und ein kleiner Tanzschritt."
+    },
+    "es": {
+     "t": "Cabaret y revista",
+     "g": "Explora canciones cortas, sketches y bailes en un entorno íntimo, sin una única historia.",
+     "p": [
+      "El cabaret nació a finales del siglo XIX en París y Berlín como locales pequeños que mezclaban canciones, humor y poesía.",
+      "Una revista es una colección temática de sketches, canciones y bailes sin una trama única.",
+      "El espacio cercano lo hace personal: el artista puede mirarte, bromear y cantar a pocos metros."
+     ],
+     "q": "¿Disfrutarías de un espectáculo pequeño y cercano donde el presentador habla con el público?",
+     "c": "Hoy planea una mini revista de tres números: un chiste, un verso cantado y un pequeño paso de baile."
+    },
+    "fr": {
+     "t": "Cabaret et revue",
+     "g": "Explore chansons courtes, sketchs et danses dans un cadre intime, sans une seule histoire.",
+     "p": [
+      "Le cabaret est né à la fin du XIXe siècle à Paris et à Berlin dans de petites salles mêlant chansons, humour et poésie.",
+      "Une revue est une série thématique de sketchs, chansons et danses sans intrigue unique.",
+      "L'espace proche le rend personnel : l'artiste peut te regarder, plaisanter et chanter à quelques mètres."
+     ],
+     "q": "Aimerais-tu un petit spectacle proche où l'animateur parle au public ?",
+     "c": "Aujourd'hui, prépare une mini revue en trois numéros : une blague, une ligne chantée et un petit pas de danse."
+    },
+    "it": {
+     "t": "Cabaret e rivista",
+     "g": "Esplora canzoni brevi, sketch e danze in un ambiente intimo, senza una storia unica.",
+     "p": [
+      "Il cabaret nacque a fine Ottocento a Parigi e Berlino come piccoli locali che univano canzoni, comicità e poesia.",
+      "Una rivista è una raccolta a tema di sketch, canzoni e balli senza una trama unica.",
+      "Lo spazio ravvicinato lo rende personale: l'artista può guardarti, scherzare e cantare a pochi metri."
+     ],
+     "q": "Ti piacerebbe uno spettacolo piccolo e vicino in cui il presentatore parla al pubblico?",
+     "c": "Oggi pianifica una mini rivista in tre numeri: una battuta, un verso cantato e un piccolo passo di danza."
+    },
+    "pt": {
+     "t": "Cabaré e revista",
+     "g": "Explora canções curtas, sketches e danças num ambiente íntimo, sem uma única história.",
+     "p": [
+      "O cabaré nasceu no fim do século XIX em Paris e Berlim, em pequenos locais que misturavam canções, humor e poesia.",
+      "Uma revista é uma coleção temática de sketches, canções e danças sem enredo único.",
+      "O espaço próximo torna-o pessoal: o artista pode olhar para ti, brincar e cantar a poucos metros."
+     ],
+     "q": "Gostarias de um espetáculo pequeno e próximo onde o apresentador fala com o público?",
+     "c": "Hoje planeia uma mini revista de três números: uma piada, um verso cantado e um pequeno passo de dança."
+    },
+    "pt_BR": {
+     "t": "Cabaré e revista",
+     "g": "Explore canções curtas, esquetes e danças num ambiente íntimo, sem uma única história.",
+     "p": [
+      "O cabaré nasceu no fim do século XIX em Paris e Berlim, em pequenos locais que misturavam canções, humor e poesia.",
+      "Uma revista é uma coleção temática de esquetes, canções e danças sem enredo único.",
+      "O espaço próximo o torna pessoal: o artista pode olhar para você, brincar e cantar a poucos metros."
+     ],
+     "q": "Você curtiria um espetáculo pequeno e próximo em que o apresentador fala com a plateia?",
+     "c": "Hoje planeje uma mini revista de três números: uma piada, um verso cantado e um pequeno passo de dança."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mini review: songs and traditions",
+     "g": "Recap world traditions and musical basics, then pick your favourite so far.",
+     "p": [
+      "You have met Noh, Kabuki, Peking opera, Kathakali and puppet theatre from around the world.",
+      "You know the musical's building blocks: the overture, the I want song and the showstopper.",
+      "You also know where opera, operetta, pantomime and cabaret fit in the big family of live shows."
+     ],
+     "q": "Which tradition or musical idea from this stretch was your favourite, and why?",
+     "c": "Today, share your favourite from the last three weeks with a friend in two sentences."
+    },
+    "de": {
+     "t": "Mini-Rückblick: Lieder und Traditionen",
+     "g": "Wiederhole Welttraditionen und Musical-Grundlagen und wähle dann deinen bisherigen Favoriten.",
+     "p": [
+      "Du hast Noh, Kabuki, Peking-Oper, Kathakali und Puppentheater aus aller Welt kennengelernt.",
+      "Du kennst die Bausteine des Musicals: Ouvertüre, Ich-will-Lied und Showstopper.",
+      "Du weißt auch, wo Oper, Operette, Pantomime und Kabarett in der großen Familie der Live-Shows stehen."
+     ],
+     "q": "Welche Tradition oder Musical-Idee dieser Etappe war dein Favorit, und warum?",
+     "c": "Erzähle heute einem Freund in zwei Sätzen von deinem Favoriten der letzten drei Wochen."
+    },
+    "es": {
+     "t": "Mini repaso: canciones y tradiciones",
+     "g": "Repasa las tradiciones del mundo y los fundamentos del musical y elige tu favorito hasta ahora.",
+     "p": [
+      "Has conocido el Noh, el kabuki, la ópera de Pekín, el kathakali y el teatro de títeres de todo el mundo.",
+      "Conoces los ladrillos del musical: la obertura, la canción del deseo y el número estrella.",
+      "También sabes dónde encajan la ópera, la opereta, la pantomima y el cabaret en la gran familia del espectáculo en vivo."
+     ],
+     "q": "¿Qué tradición o idea de musical de este tramo fue tu favorita y por qué?",
+     "c": "Hoy cuéntale a un amigo en dos frases tu favorito de las últimas tres semanas."
+    },
+    "fr": {
+     "t": "Mini bilan : chansons et traditions",
+     "g": "Reprends les traditions du monde et les bases de la comédie musicale, puis choisis ton préféré jusqu'ici.",
+     "p": [
+      "Tu as rencontré le Nô, le kabuki, l'opéra de Pékin, le kathakali et le théâtre de marionnettes du monde entier.",
+      "Tu connais les briques de la comédie musicale : l'ouverture, la chanson du rêve et le numéro qui arrête le spectacle.",
+      "Tu sais aussi où se placent opéra, opérette, pantomime et cabaret dans la grande famille du spectacle vivant."
+     ],
+     "q": "Quelle tradition ou idée de comédie musicale de cette étape as-tu préférée, et pourquoi ?",
+     "c": "Aujourd'hui, partage en deux phrases avec un ami ton préféré des trois dernières semaines."
+    },
+    "it": {
+     "t": "Mini ripasso: canzoni e tradizioni",
+     "g": "Ripassa le tradizioni del mondo e le basi del musical, poi scegli il tuo preferito finora.",
+     "p": [
+      "Hai conosciuto il Noh, il kabuki, l'opera di Pechino, il kathakali e il teatro di figura del mondo.",
+      "Conosci i mattoni del musical: l'ouverture, la canzone del desiderio e il numero che ferma lo spettacolo.",
+      "Sai anche dove si collocano opera, operetta, pantomima e cabaret nella grande famiglia dello spettacolo dal vivo."
+     ],
+     "q": "Quale tradizione o idea di musical di questa tappa è stata la tua preferita e perché?",
+     "c": "Oggi condividi in due frasi con un amico il tuo preferito delle ultime tre settimane."
+    },
+    "pt": {
+     "t": "Mini revisão: canções e tradições",
+     "g": "Revê as tradições do mundo e os fundamentos do musical e escolhe o teu favorito até agora.",
+     "p": [
+      "Conheceste o Noh, o kabuki, a ópera de Pequim, o kathakali e o teatro de marionetas de todo o mundo.",
+      "Conheces os blocos do musical: a abertura, a canção do desejo e o número de sucesso.",
+      "Também sabes onde se encaixam a ópera, a opereta, a pantomima e o cabaré na grande família do espetáculo ao vivo."
+     ],
+     "q": "Que tradição ou ideia de musical desta etapa foi a tua favorita e porquê?",
+     "c": "Hoje conta a um amigo em duas frases o teu favorito das últimas três semanas."
+    },
+    "pt_BR": {
+     "t": "Mini revisão: canções e tradições",
+     "g": "Revise as tradições do mundo e os fundamentos do musical e escolha seu favorito até agora.",
+     "p": [
+      "Você conheceu o Noh, o kabuki, a ópera de Pequim, o kathakali e o teatro de bonecos do mundo todo.",
+      "Você conhece os blocos do musical: a abertura, a canção do desejo e o número de sucesso.",
+      "Você também sabe onde cabem a ópera, a opereta, a pantomima e o cabaré na grande família do espetáculo ao vivo."
+     ],
+     "q": "Que tradição ou ideia de musical desta etapa foi a sua favorita e por quê?",
+     "c": "Hoje conte a um amigo em duas frases o seu favorito das últimas três semanas."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why we love live shows",
+     "g": "Explore shared laughter, suspense and the thrill of something that can never happen the same way twice.",
+     "p": [
+      "In a live show, a hundred people laugh together, and laughter feels bigger when it is shared.",
+      "Anything can happen, so suspense is real: a missed cue, a surprise, a perfect moment.",
+      "Because no two nights are identical, being there feels special, like witnessing a one-time event."
+     ],
+     "q": "What is the best moment you have shared with a crowd, in a theatre, stadium or street?",
+     "c": "Today, share a joke or funny story with two or more people and notice the group laughter."
+    },
+    "de": {
+     "t": "Warum wir Live-Shows lieben",
+     "g": "Entdecke gemeinsames Lachen, Spannung und den Reiz von etwas, das nie zweimal gleich geschieht.",
+     "p": [
+      "In einer Live-Show lachen hundert Menschen zusammen, und Lachen wirkt größer, wenn man es teilt.",
+      "Alles kann passieren, daher ist die Spannung echt: ein verpasster Einsatz, eine Überraschung, ein perfekter Moment.",
+      "Weil keine zwei Abende gleich sind, fühlt sich das Dabeisein besonders an, wie ein einmaliges Ereignis."
+     ],
+     "q": "Was war der schönste Moment, den du mit einer Menschenmenge geteilt hast, im Theater, Stadion oder auf der Straße?",
+     "c": "Teile heute einen Witz oder eine lustige Geschichte mit zwei oder mehr Leuten und achte auf das Gruppenlachen."
+    },
+    "es": {
+     "t": "Por qué amamos los espectáculos en vivo",
+     "g": "Explora la risa compartida, el suspense y la emoción de algo que nunca sucede igual dos veces.",
+     "p": [
+      "En un espectáculo en vivo cien personas ríen juntas, y la risa se siente más grande cuando se comparte.",
+      "Todo puede pasar, así que el suspense es real: una entrada fallida, una sorpresa, un momento perfecto.",
+      "Como no hay dos noches iguales, estar allí se siente especial, como presenciar un acontecimiento único."
+     ],
+     "q": "¿Cuál es el mejor momento que has compartido con una multitud, en un teatro, estadio o en la calle?",
+     "c": "Hoy comparte un chiste o una historia graciosa con dos o más personas y fíjate en la risa del grupo."
+    },
+    "fr": {
+     "t": "Pourquoi on aime le spectacle vivant",
+     "g": "Explore le rire partagé, le suspense et le frisson de ce qui ne se reproduit jamais deux fois pareil.",
+     "p": [
+      "Dans un spectacle vivant, cent personnes rient ensemble, et le rire paraît plus grand quand il est partagé.",
+      "Tout peut arriver, donc le suspense est réel : un top raté, une surprise, un moment parfait.",
+      "Comme deux soirs ne sont jamais identiques, être là paraît spécial, comme assister à un événement unique."
+     ],
+     "q": "Quel est le meilleur moment que tu aies partagé avec une foule, au théâtre, au stade ou dans la rue ?",
+     "c": "Aujourd'hui, partage une blague ou une histoire drôle avec deux personnes ou plus et remarque le rire du groupe."
+    },
+    "it": {
+     "t": "Perché amiamo gli spettacoli dal vivo",
+     "g": "Esplora le risate condivise, la suspense e il brivido di qualcosa che non accade mai uguale due volte.",
+     "p": [
+      "In uno spettacolo dal vivo cento persone ridono insieme, e la risata sembra più grande se condivisa.",
+      "Tutto può succedere, quindi la suspense è reale: un'entrata saltata, una sorpresa, un momento perfetto.",
+      "Poiché non esistono due sere uguali, esserci sembra speciale, come assistere a un evento unico."
+     ],
+     "q": "Qual è il momento più bello che hai condiviso con una folla, a teatro, allo stadio o per strada?",
+     "c": "Oggi condividi una barzelletta o una storia divertente con due o più persone e nota le risate del gruppo."
+    },
+    "pt": {
+     "t": "Porque amamos espetáculos ao vivo",
+     "g": "Explora o riso partilhado, o suspense e a emoção de algo que nunca acontece igual duas vezes.",
+     "p": [
+      "Num espetáculo ao vivo cem pessoas riem juntas, e o riso parece maior quando é partilhado.",
+      "Tudo pode acontecer, por isso o suspense é real: uma deixa falhada, uma surpresa, um momento perfeito.",
+      "Como não há duas noites iguais, estar lá parece especial, como assistir a um acontecimento único."
+     ],
+     "q": "Qual foi o melhor momento que partilhaste com uma multidão, num teatro, estádio ou na rua?",
+     "c": "Hoje partilha uma piada ou história engraçada com duas ou mais pessoas e repara no riso do grupo."
+    },
+    "pt_BR": {
+     "t": "Por que amamos espetáculos ao vivo",
+     "g": "Explore o riso compartilhado, o suspense e a emoção de algo que nunca acontece igual duas vezes.",
+     "p": [
+      "Num espetáculo ao vivo cem pessoas riem juntas, e o riso parece maior quando é compartilhado.",
+      "Tudo pode acontecer, então o suspense é real: uma deixa perdida, uma surpresa, um momento perfeito.",
+      "Como não há duas noites iguais, estar lá parece especial, como assistir a um acontecimento único."
+     ],
+     "q": "Qual foi o melhor momento que você compartilhou com uma multidão, num teatro, estádio ou na rua?",
+     "c": "Hoje compartilhe uma piada ou história engraçada com duas ou mais pessoas e note o riso do grupo."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Watching actively",
+     "g": "Notice acting choices, design and pacing while still enjoying the story.",
+     "p": [
+      "Watch how an actor uses pauses, glances and posture, not just words, to show what they feel.",
+      "Look at light, colour, sound and set: they quietly tell you the mood and place.",
+      "Feel the pacing: when a scene speeds up, slows down or goes silent, the show is steering you."
+     ],
+     "q": "What small detail in a show or film have you noticed that others might miss?",
+     "c": "Today, watch two minutes of any performance and note one acting choice and one design choice."
+    },
+    "de": {
+     "t": "Aktiv zuschauen",
+     "g": "Nimm Schauspielentscheidungen, Gestaltung und Tempo wahr und genieße trotzdem die Geschichte.",
+     "p": [
+      "Achte darauf, wie ein Schauspieler Pausen, Blicke und Haltung, nicht nur Worte, nutzt, um Gefühle zu zeigen.",
+      "Sieh auf Licht, Farbe, Ton und Bühnenbild: Sie verraten leise Stimmung und Ort.",
+      "Spüre das Tempo: Wenn eine Szene schneller, langsamer oder still wird, lenkt dich die Show."
+     ],
+     "q": "Welches kleine Detail in einer Show oder einem Film hast du bemerkt, das andere übersehen könnten?",
+     "c": "Sieh dir heute zwei Minuten einer Aufführung an und notiere eine Schauspiel- und eine Gestaltungsentscheidung."
+    },
+    "es": {
+     "t": "Mirar con atención",
+     "g": "Fíjate en las decisiones de interpretación, el diseño y el ritmo sin dejar de disfrutar de la historia.",
+     "p": [
+      "Mira cómo un actor usa pausas, miradas y postura, no solo palabras, para mostrar lo que siente.",
+      "Observa luz, color, sonido y escenografía: te dicen en voz baja el ánimo y el lugar.",
+      "Siente el ritmo: cuando una escena acelera, se frena o enmudece, el espectáculo te está guiando."
+     ],
+     "q": "¿Qué pequeño detalle de un espectáculo o película has notado que otros quizá no vean?",
+     "c": "Hoy mira dos minutos de cualquier función y anota una decisión de interpretación y una de diseño."
+    },
+    "fr": {
+     "t": "Regarder activement",
+     "g": "Remarque les choix de jeu, la conception et le rythme tout en savourant l'histoire.",
+     "p": [
+      "Observe comment un acteur utilise pauses, regards et posture, pas seulement les mots, pour montrer ce qu'il ressent.",
+      "Regarde lumière, couleur, son et décor : ils disent discrètement l'ambiance et le lieu.",
+      "Sens le rythme : quand une scène accélère, ralentit ou se tait, le spectacle te guide."
+     ],
+     "q": "Quel petit détail d'un spectacle ou d'un film as-tu remarqué que d'autres pourraient manquer ?",
+     "c": "Aujourd'hui, regarde deux minutes d'un spectacle et note un choix de jeu et un choix de conception."
+    },
+    "it": {
+     "t": "Guardare con attenzione",
+     "g": "Nota le scelte di recitazione, il design e il ritmo senza smettere di goderti la storia.",
+     "p": [
+      "Osserva come un attore usa pause, sguardi e postura, non solo parole, per mostrare ciò che prova.",
+      "Guarda luce, colore, suono e scena: dicono piano l'atmosfera e il luogo.",
+      "Senti il ritmo: quando una scena accelera, rallenta o tace, lo spettacolo ti sta guidando."
+     ],
+     "q": "Quale piccolo dettaglio di uno spettacolo o film hai notato che altri potrebbero perdere?",
+     "c": "Oggi guarda due minuti di una rappresentazione e annota una scelta di recitazione e una di allestimento."
+    },
+    "pt": {
+     "t": "Ver com atenção",
+     "g": "Repara nas escolhas de interpretação, no desenho de cena e no ritmo sem deixar de gostar da história.",
+     "p": [
+      "Observa como um ator usa pausas, olhares e postura, não só palavras, para mostrar o que sente.",
+      "Olha para luz, cor, som e cenário: dizem baixinho o ambiente e o lugar.",
+      "Sente o ritmo: quando uma cena acelera, abranda ou se cala, o espetáculo está a guiar-te."
+     ],
+     "q": "Que pequeno pormenor de um espetáculo ou filme notaste que outros talvez não vejam?",
+     "c": "Hoje vê dois minutos de qualquer espetáculo e anota uma escolha de interpretação e uma de desenho de cena."
+    },
+    "pt_BR": {
+     "t": "Assistir com atenção",
+     "g": "Note as escolhas de interpretação, o design de cena e o ritmo sem deixar de curtir a história.",
+     "p": [
+      "Observe como um ator usa pausas, olhares e postura, não só palavras, para mostrar o que sente.",
+      "Olhe para luz, cor, som e cenário: eles dizem baixinho o clima e o lugar.",
+      "Sinta o ritmo: quando uma cena acelera, desacelera ou silencia, o espetáculo está te guiando."
+     ],
+     "q": "Que pequeno detalhe de um espetáculo ou filme você notou que outros talvez não vejam?",
+     "c": "Hoje assista a dois minutos de qualquer espetáculo e anote uma escolha de interpretação e uma de design de cena."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Talking about a show afterwards",
+     "g": "Use simple questions to share impressions: what moved you, surprised you and stayed with you.",
+     "p": [
+      "Start with feelings: what made you laugh, smile or go quiet, and in which scene?",
+      "Ask what surprised you: a twist, a costume, a song, a performer's voice or a clever idea.",
+      "Finish with what stays: one image, line or tune you are still thinking about the next day."
+     ],
+     "q": "Which question would you most like a friend to ask you after a show?",
+     "c": "Today, answer the three questions about the last film, show or concert you enjoyed."
+    },
+    "de": {
+     "t": "Nach der Show darüber sprechen",
+     "g": "Teile Eindrücke mit einfachen Fragen: was dich bewegte, überraschte und bei dir blieb.",
+     "p": [
+      "Beginne mit Gefühlen: Was brachte dich zum Lachen, Lächeln oder Schweigen, und in welcher Szene?",
+      "Frage, was überraschte: eine Wendung, ein Kostüm, ein Lied, die Stimme eines Darstellers oder eine clevere Idee.",
+      "Schließe mit dem, was bleibt: ein Bild, eine Zeile oder eine Melodie, die dir am nächsten Tag noch im Kopf ist."
+     ],
+     "q": "Welche Frage würdest du dir nach einer Show am liebsten von einem Freund stellen lassen?",
+     "c": "Beantworte heute die drei Fragen zum letzten Film, zur letzten Show oder zum letzten Konzert, das dir gefiel."
+    },
+    "es": {
+     "t": "Hablar de un espectáculo después",
+     "g": "Usa preguntas sencillas para compartir impresiones: qué te emocionó, qué te sorprendió y qué se quedó contigo.",
+     "p": [
+      "Empieza por las emociones: ¿qué te hizo reír, sonreír o callar, y en qué escena?",
+      "Pregunta qué sorprendió: un giro, un vestuario, una canción, la voz de un intérprete o una idea ingeniosa.",
+      "Termina con lo que queda: una imagen, un verso o una melodía en que sigues pensando al día siguiente."
+     ],
+     "q": "¿Qué pregunta te gustaría más que te hiciera un amigo tras un espectáculo?",
+     "c": "Hoy responde las tres preguntas sobre la última película, función o concierto que disfrutaste."
+    },
+    "fr": {
+     "t": "Parler d'un spectacle après coup",
+     "g": "Utilise des questions simples pour partager tes impressions : ce qui t'a ému, surpris et est resté en toi.",
+     "p": [
+      "Commence par les émotions : qu'est-ce qui t'a fait rire, sourire ou te taire, et dans quelle scène ?",
+      "Demande ce qui a surpris : un rebondissement, un costume, une chanson, la voix d'un artiste ou une idée maligne.",
+      "Termine par ce qui reste : une image, une réplique ou un air auquel tu penses encore le lendemain."
+     ],
+     "q": "Quelle question aimerais-tu le plus qu'un ami te pose après un spectacle ?",
+     "c": "Aujourd'hui, réponds aux trois questions sur le dernier film, spectacle ou concert que tu as aimé."
+    },
+    "it": {
+     "t": "Parlare di uno spettacolo dopo",
+     "g": "Usa domande semplici per condividere impressioni: cosa ti ha commosso, sorpreso e ti è rimasto dentro.",
+     "p": [
+      "Parti dalle emozioni: cosa ti ha fatto ridere, sorridere o tacere, e in quale scena?",
+      "Chiedi cosa ti ha sorpreso: una svolta, un costume, una canzone, la voce di un artista o un'idea ingegnosa.",
+      "Finisci con ciò che resta: un'immagine, una battuta o una melodia a cui pensi ancora il giorno dopo."
+     ],
+     "q": "Quale domanda vorresti che un amico ti facesse dopo uno spettacolo?",
+     "c": "Oggi rispondi alle tre domande sull'ultimo film, spettacolo o concerto che ti è piaciuto."
+    },
+    "pt": {
+     "t": "Falar de um espetáculo depois",
+     "g": "Usa perguntas simples para partilhar impressões: o que te comoveu, surpreendeu e ficou contigo.",
+     "p": [
+      "Começa pelas emoções: o que te fez rir, sorrir ou calar, e em que cena?",
+      "Pergunta o que surpreendeu: uma viragem, um figurino, uma canção, a voz de um artista ou uma ideia engenhosa.",
+      "Termina com o que fica: uma imagem, uma fala ou uma melodia em que ainda pensas no dia seguinte."
+     ],
+     "q": "Que pergunta gostarias mais que um amigo te fizesse depois de um espetáculo?",
+     "c": "Hoje responde às três perguntas sobre o último filme, espetáculo ou concerto de que gostaste."
+    },
+    "pt_BR": {
+     "t": "Falar de um espetáculo depois",
+     "g": "Use perguntas simples para compartilhar impressões: o que te comoveu, surpreendeu e ficou com você.",
+     "p": [
+      "Comece pelas emoções: o que te fez rir, sorrir ou calar, e em que cena?",
+      "Pergunte o que surpreendeu: uma virada, um figurino, uma canção, a voz de um artista ou uma ideia engenhosa.",
+      "Termine com o que fica: uma imagem, uma fala ou uma melodia em que você ainda pensa no dia seguinte."
+     ],
+     "q": "Que pergunta você mais gostaria que um amigo te fizesse depois de um espetáculo?",
+     "c": "Hoje responda às três perguntas sobre o último filme, espetáculo ou show de que você gostou."
+    }
+   }
+  }
+ ]
+}

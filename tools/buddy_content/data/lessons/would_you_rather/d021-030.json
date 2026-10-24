@@ -1,0 +1,835 @@
+{
+ "topic": "would_you_rather",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Robot helper or magic wand",
+     "g": "Imagine everyday chores made easy and how you would use the help.",
+     "p": [
+      "A robot helper does the same tasks every day, reliably.",
+      "A magic wand grants quick wishes, but you must choose them wisely.",
+      "Think about which chores you would hand over first."
+     ],
+     "q": "Would you rather have a friendly robot helper or a magic wand for one day? What would you ask for?",
+     "c": "List three small chores you would give to your helper."
+    },
+    "de": {
+     "t": "Roboter-Helfer oder Zauberstab",
+     "g": "Stell dir leichte Alltagsarbeiten vor und wie du die Hilfe nutzen würdest.",
+     "p": [
+      "Ein Roboter-Helfer erledigt täglich zuverlässig dieselben Aufgaben.",
+      "Ein Zauberstab erfüllt schnelle Wünsche, aber du musst sie klug wählen.",
+      "Überlege, welche Arbeiten du zuerst abgeben würdest."
+     ],
+     "q": "Hättest du lieber einen freundlichen Roboter-Helfer oder einen Tag lang einen Zauberstab? Was würdest du dir wünschen?",
+     "c": "Liste drei kleine Aufgaben auf, die du deinem Helfer geben würdest."
+    },
+    "es": {
+     "t": "Robot ayudante o varita mágica",
+     "g": "Imagina las tareas diarias fáciles y cómo usarías la ayuda.",
+     "p": [
+      "Un robot ayudante hace las mismas tareas cada día con fiabilidad.",
+      "Una varita mágica concede deseos rápidos, pero hay que elegirlos bien.",
+      "Piensa qué tareas le darías primero."
+     ],
+     "q": "¿Prefieres un robot ayudante simpático o una varita mágica por un día? ¿Qué pedirías?",
+     "c": "Haz una lista de tres tareas pequeñas que le darías a tu ayudante."
+    },
+    "fr": {
+     "t": "Robot assistant ou baguette magique",
+     "g": "Imagine des corvées faciles et comment tu utiliserais l'aide.",
+     "p": [
+      "Un robot assistant fait les mêmes tâches chaque jour, avec fiabilité.",
+      "Une baguette magique exauce vite des vœux, mais il faut bien les choisir.",
+      "Pense aux corvées que tu confierais en premier."
+     ],
+     "q": "Tu préfères un gentil robot assistant ou une baguette magique pour un jour ? Que demanderais-tu ?",
+     "c": "Note trois petites corvées que tu confierais à ton assistant."
+    },
+    "it": {
+     "t": "Robot aiutante o bacchetta magica",
+     "g": "Immagina le faccende di casa facili e come useresti l'aiuto.",
+     "p": [
+      "Un robot aiutante svolge ogni giorno gli stessi compiti in modo affidabile.",
+      "Una bacchetta magica esaudisce desideri rapidi, ma vanno scelti con cura.",
+      "Pensa a quali faccende affideresti per prime."
+     ],
+     "q": "Preferisci un simpatico robot aiutante o una bacchetta magica per un giorno? Cosa chiederesti?",
+     "c": "Elenca tre piccole faccende che daresti al tuo aiutante."
+    },
+    "pt": {
+     "t": "Robô ajudante ou varinha mágica",
+     "g": "Imagina as tarefas diárias fáceis e como usarias a ajuda.",
+     "p": [
+      "Um robô ajudante faz as mesmas tarefas todos os dias, com fiabilidade.",
+      "Uma varinha mágica concede desejos rápidos, mas há que escolhê-los bem.",
+      "Pensa em que tarefas entregarias primeiro."
+     ],
+     "q": "Preferias um robô ajudante simpático ou uma varinha mágica por um dia? O que pedirias?",
+     "c": "Faz uma lista de três tarefas pequenas que darias ao teu ajudante."
+    },
+    "pt_BR": {
+     "t": "Robô ajudante ou varinha mágica",
+     "g": "Imagine as tarefas do dia a dia fáceis e como usaria a ajuda.",
+     "p": [
+      "Um robô ajudante faz as mesmas tarefas todo dia, com confiança.",
+      "Uma varinha mágica realiza desejos rápidos, mas é preciso escolher bem.",
+      "Pense em quais tarefas entregaria primeiro."
+     ],
+     "q": "Você prefere um robô ajudante simpático ou uma varinha mágica por um dia? O que pediria?",
+     "c": "Liste três tarefas pequenas que você daria ao seu ajudante."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Famous chef or famous musician",
+     "g": "Dream careers just for fun and what your signature work would be.",
+     "p": [
+      "A chef shares joy through taste and a full table.",
+      "A musician shares joy through songs and live shows.",
+      "Your signature work could be a dish, a song or a tradition."
+     ],
+     "q": "Would you rather be a famous chef or a famous musician? What would your signature creation be?",
+     "c": "Invent a name for your signature dish or song."
+    },
+    "de": {
+     "t": "Berühmter Koch oder berühmter Musiker",
+     "g": "Traumberufe nur zum Spaß und was dein Markenzeichen wäre.",
+     "p": [
+      "Ein Koch schenkt Freude durch Geschmack und einen vollen Tisch.",
+      "Ein Musiker schenkt Freude durch Lieder und Live-Auftritte.",
+      "Dein Markenzeichen könnte ein Gericht, ein Lied oder eine Tradition sein."
+     ],
+     "q": "Wärst du lieber ein berühmter Koch oder ein berühmter Musiker? Was wäre deine Spezialität?",
+     "c": "Erfinde einen Namen für dein Signature-Gericht oder -Lied."
+    },
+    "es": {
+     "t": "Chef famoso o músico famoso",
+     "g": "Profesiones soñadas por diversión y cuál sería tu obra estrella.",
+     "p": [
+      "Un chef comparte alegría con el sabor y una mesa llena.",
+      "Un músico comparte alegría con canciones y conciertos.",
+      "Tu obra estrella podría ser un plato, una canción o una tradición."
+     ],
+     "q": "¿Prefieres ser un chef famoso o un músico famoso? ¿Cuál sería tu creación estrella?",
+     "c": "Inventa un nombre para tu plato o canción estrella."
+    },
+    "fr": {
+     "t": "Chef célèbre ou musicien célèbre",
+     "g": "Des métiers de rêve pour rire et ta création signature.",
+     "p": [
+      "Un chef partage la joie par le goût et une table bien garnie.",
+      "Un musicien partage la joie par des chansons et des concerts.",
+      "Ta création signature pourrait être un plat, une chanson ou une tradition."
+     ],
+     "q": "Tu préfères être un chef célèbre ou un musicien célèbre ? Quelle serait ta création signature ?",
+     "c": "Invente un nom pour ton plat ou ta chanson signature."
+    },
+    "it": {
+     "t": "Chef famoso o musicista famoso",
+     "g": "Lavori da sogno per gioco e quale sarebbe la tua opera simbolo.",
+     "p": [
+      "Uno chef condivide gioia con il gusto e una tavola piena.",
+      "Un musicista condivide gioia con canzoni e concerti.",
+      "La tua opera simbolo potrebbe essere un piatto, una canzone o una tradizione."
+     ],
+     "q": "Preferisci essere uno chef famoso o un musicista famoso? Quale sarebbe la tua creazione simbolo?",
+     "c": "Inventa un nome per il tuo piatto o la tua canzone simbolo."
+    },
+    "pt": {
+     "t": "Chefe famoso ou músico famoso",
+     "g": "Profissões de sonho por brincadeira e qual seria a tua obra de assinatura.",
+     "p": [
+      "Um chefe partilha alegria com o sabor e uma mesa cheia.",
+      "Um músico partilha alegria com canções e concertos.",
+      "A tua obra de assinatura podia ser um prato, uma canção ou uma tradição."
+     ],
+     "q": "Preferias ser um chefe famoso ou um músico famoso? Qual seria a tua criação de assinatura?",
+     "c": "Inventa um nome para o teu prato ou canção de assinatura."
+    },
+    "pt_BR": {
+     "t": "Chef famoso ou músico famoso",
+     "g": "Profissões dos sonhos por diversão e qual seria sua obra de assinatura.",
+     "p": [
+      "Um chef compartilha alegria com o sabor e uma mesa cheia.",
+      "Um músico compartilha alegria com músicas e shows.",
+      "Sua obra de assinatura poderia ser um prato, uma música ou uma tradição."
+     ],
+     "q": "Você prefere ser um chef famoso ou um músico famoso? Qual seria sua criação de assinatura?",
+     "c": "Invente um nome para seu prato ou música de assinatura."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Visit the past or the future",
+     "g": "Learn time travel basics: which direction you would choose and why.",
+     "p": [
+      "The past lets you meet history, old cities and old traditions.",
+      "The future lets you see new ideas, gadgets and ways of living.",
+      "Choose one era and one thing you would bring back or leave behind."
+     ],
+     "q": "Would you rather visit the past or the future for one day? Which time would you pick?",
+     "c": "Write one question you would ask a person from your chosen era."
+    },
+    "de": {
+     "t": "Vergangenheit oder Zukunft besuchen",
+     "g": "Lerne die Grundlagen der Zeitreise: welche Richtung du wählst und warum.",
+     "p": [
+      "In der Vergangenheit begegnest du Geschichte, alten Städten und Traditionen.",
+      "In der Zukunft siehst du neue Ideen, Geräte und Lebensweisen.",
+      "Wähle eine Epoche und eine Sache, die du mitbringen oder dalassen würdest."
+     ],
+     "q": "Würdest du lieber einen Tag die Vergangenheit oder die Zukunft besuchen? Welche Zeit wählst du?",
+     "c": "Schreibe eine Frage, die du einem Menschen aus deiner gewählten Epoche stellen würdest."
+    },
+    "es": {
+     "t": "Visitar el pasado o el futuro",
+     "g": "Aprende lo básico de los viajes en el tiempo: qué dirección eliges y por qué.",
+     "p": [
+      "El pasado te deja conocer la historia, ciudades antiguas y viejas tradiciones.",
+      "El futuro te deja ver ideas nuevas, aparatos y formas de vivir.",
+      "Elige una época y algo que traerías o dejarías atrás."
+     ],
+     "q": "¿Prefieres visitar el pasado o el futuro por un día? ¿Qué época elegirías?",
+     "c": "Escribe una pregunta que le harías a una persona de la época elegida."
+    },
+    "fr": {
+     "t": "Visiter le passé ou le futur",
+     "g": "Découvre les bases du voyage dans le temps : quelle direction et pourquoi.",
+     "p": [
+      "Le passé te fait rencontrer l'histoire, les vieilles villes et les traditions.",
+      "Le futur te montre de nouvelles idées, des gadgets et des façons de vivre.",
+      "Choisis une époque et une chose que tu rapporterais ou laisserais."
+     ],
+     "q": "Tu préfères visiter le passé ou le futur pendant un jour ? Quelle époque choisirais-tu ?",
+     "c": "Écris une question que tu poserais à quelqu'un de l'époque choisie."
+    },
+    "it": {
+     "t": "Visitare il passato o il futuro",
+     "g": "Impara le basi del viaggio nel tempo: quale direzione scegli e perché.",
+     "p": [
+      "Il passato ti fa incontrare la storia, le vecchie città e le tradizioni.",
+      "Il futuro ti mostra nuove idee, gadget e modi di vivere.",
+      "Scegli un'epoca e una cosa che porteresti indietro o lasceresti."
+     ],
+     "q": "Preferisci visitare il passato o il futuro per un giorno? Quale epoca sceglieresti?",
+     "c": "Scrivi una domanda che faresti a una persona dell'epoca scelta."
+    },
+    "pt": {
+     "t": "Visitar o passado ou o futuro",
+     "g": "Aprende o básico das viagens no tempo: que direção escolhes e porquê.",
+     "p": [
+      "O passado deixa-te conhecer a história, cidades antigas e tradições.",
+      "O futuro deixa-te ver ideias novas, aparelhos e modos de viver.",
+      "Escolhe uma época e algo que trarias ou deixarias para trás."
+     ],
+     "q": "Preferias visitar o passado ou o futuro por um dia? Que época escolherias?",
+     "c": "Escreve uma pergunta que farias a uma pessoa da época escolhida."
+    },
+    "pt_BR": {
+     "t": "Visitar o passado ou o futuro",
+     "g": "Aprenda o básico das viagens no tempo: que direção escolhe e por quê.",
+     "p": [
+      "O passado deixa você conhecer a história, cidades antigas e tradições.",
+      "O futuro deixa você ver ideias novas, aparelhos e jeitos de viver.",
+      "Escolha uma época e algo que traria ou deixaria para trás."
+     ],
+     "q": "Você prefere visitar o passado ou o futuro por um dia? Que época escolheria?",
+     "c": "Escreva uma pergunta que faria a uma pessoa da época escolhida."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ice cream or cake at a party",
+     "g": "Talk about party treats, flavours and celebration habits across cultures.",
+     "p": [
+      "Ice cream is cool, colourful and easy to share.",
+      "Cake is the classic centrepiece with candles and a wish.",
+      "Many countries have their own special celebration sweets."
+     ],
+     "q": "Would you rather have ice cream or cake at your party? Which flavour would you pick?",
+     "c": "Describe the dessert table at your dream party in one sentence."
+    },
+    "de": {
+     "t": "Eis oder Kuchen auf der Feier",
+     "g": "Sprich über Partyleckereien, Geschmäcker und Feiergewohnheiten in verschiedenen Kulturen.",
+     "p": [
+      "Eis ist kühl, bunt und leicht zu teilen.",
+      "Kuchen ist der klassische Mittelpunkt mit Kerzen und einem Wunsch.",
+      "Viele Länder haben ihre eigenen besonderen Festtagssüßigkeiten."
+     ],
+     "q": "Würdest du auf deiner Feier lieber Eis oder Kuchen haben? Welche Sorte würdest du wählen?",
+     "c": "Beschreibe den Dessertisch deiner Traumparty in einem Satz."
+    },
+    "es": {
+     "t": "Helado o tarta en una fiesta",
+     "g": "Habla de dulces de fiesta, sabores y costumbres de celebración en distintas culturas.",
+     "p": [
+      "El helado es fresco, colorido y fácil de compartir.",
+      "La tarta es el centro clásico con velas y un deseo.",
+      "Muchos países tienen sus propios dulces de celebración."
+     ],
+     "q": "¿Prefieres helado o tarta en tu fiesta? ¿Qué sabor elegirías?",
+     "c": "Describe en una frase la mesa de postres de tu fiesta soñada."
+    },
+    "fr": {
+     "t": "Glace ou gâteau à une fête",
+     "g": "Parle des douceurs de fête, des parfums et des habitudes de célébration selon les cultures.",
+     "p": [
+      "La glace est fraîche, colorée et facile à partager.",
+      "Le gâteau est la star classique, avec bougies et vœu.",
+      "Beaucoup de pays ont leurs propres douceurs de fête."
+     ],
+     "q": "Tu préfères une glace ou un gâteau à ta fête ? Quel parfum choisirais-tu ?",
+     "c": "Décris en une phrase la table des desserts de ta fête de rêve."
+    },
+    "it": {
+     "t": "Gelato o torta a una festa",
+     "g": "Parla dei dolci di festa, dei gusti e delle abitudini di celebrazione nelle culture.",
+     "p": [
+      "Il gelato è fresco, colorato e facile da condividere.",
+      "La torta è il classico protagonista con candeline e desiderio.",
+      "Molti paesi hanno i loro dolci speciali per le feste."
+     ],
+     "q": "Preferisci gelato o torta alla tua festa? Che gusto sceglieresti?",
+     "c": "Descrivi in una frase il tavolo dei dolci della tua festa da sogno."
+    },
+    "pt": {
+     "t": "Gelado ou bolo numa festa",
+     "g": "Fala de doces de festa, sabores e hábitos de celebração em várias culturas.",
+     "p": [
+      "O gelado é fresco, colorido e fácil de partilhar.",
+      "O bolo é o clássico protagonista, com velas e um desejo.",
+      "Muitos países têm os seus doces especiais de celebração."
+     ],
+     "q": "Preferias gelado ou bolo na tua festa? Que sabor escolherias?",
+     "c": "Descreve numa frase a mesa de sobremesas da tua festa de sonho."
+    },
+    "pt_BR": {
+     "t": "Sorvete ou bolo numa festa",
+     "g": "Fale de doces de festa, sabores e hábitos de celebração em várias culturas.",
+     "p": [
+      "O sorvete é gelado, colorido e fácil de dividir.",
+      "O bolo é o clássico protagonista, com velas e um desejo.",
+      "Muitos países têm seus doces especiais de celebração."
+     ],
+     "q": "Você prefere sorvete ou bolo na sua festa? Que sabor escolheria?",
+     "c": "Descreva numa frase a mesa de sobremesas da sua festa dos sonhos."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Beach volleyball or mountain hiking",
+     "g": "Compare active holiday choices and how you like to move outdoors.",
+     "p": [
+      "Beach volleyball is social, sandy and full of laughter.",
+      "Mountain hiking is steady, scenic and rewarding at the top.",
+      "Moving outdoors is good fun, so pick the pace that suits you."
+     ],
+     "q": "Would you rather play beach volleyball or hike a mountain on holiday? Who would join you?",
+     "c": "Take a ten-minute walk today and notice three things you like."
+    },
+    "de": {
+     "t": "Beachvolleyball oder Bergwandern",
+     "g": "Vergleiche aktive Urlaubsideen und wie du dich draußen gern bewegst.",
+     "p": [
+      "Beachvolleyball ist gesellig, sandig und voller Lachen.",
+      "Bergwandern ist gleichmäßig, aussichtsreich und belohnt am Gipfel.",
+      "Draußen bewegen macht Spaß, wähle das Tempo, das zu dir passt."
+     ],
+     "q": "Würdest du im Urlaub lieber Beachvolleyball spielen oder einen Berg erwandern? Wer käme mit?",
+     "c": "Mach heute einen zehnminütigen Spaziergang und achte auf drei Dinge, die dir gefallen."
+    },
+    "es": {
+     "t": "Voleibol de playa o senderismo",
+     "g": "Compara planes activos de vacaciones y cómo te gusta moverte al aire libre.",
+     "p": [
+      "El voleibol de playa es social, arenoso y lleno de risas.",
+      "El senderismo es constante, panorámico y gratificante en la cima.",
+      "Moverse al aire libre es divertido, elige el ritmo que te vaya."
+     ],
+     "q": "¿Prefieres jugar al voleibol de playa o subir una montaña de vacaciones? ¿Quién te acompañaría?",
+     "c": "Da hoy un paseo de diez minutos y fíjate en tres cosas que te gusten."
+    },
+    "fr": {
+     "t": "Beach-volley ou randonnée en montagne",
+     "g": "Compare des vacances actives et ta façon de bouger dehors.",
+     "p": [
+      "Le beach-volley est social, sablonneux et plein de rires.",
+      "La randonnée est régulière, panoramique et gratifiante au sommet.",
+      "Bouger dehors, c'est amusant, alors choisis le rythme qui te va."
+     ],
+     "q": "Tu préfères jouer au beach-volley ou randonner en montagne en vacances ? Qui viendrait avec toi ?",
+     "c": "Fais aujourd'hui une balade de dix minutes et repère trois choses que tu aimes."
+    },
+    "it": {
+     "t": "Beach volley o escursione in montagna",
+     "g": "Confronta vacanze attive e il modo in cui ti piace muoverti all'aperto.",
+     "p": [
+      "Il beach volley è sociale, sabbioso e pieno di risate.",
+      "L'escursione è costante, panoramica e appagante in cima.",
+      "Muoversi all'aperto è divertente, scegli il ritmo che fa per te."
+     ],
+     "q": "Preferisci giocare a beach volley o scalare una montagna in vacanza? Chi verrebbe con te?",
+     "c": "Fai oggi una passeggiata di dieci minuti e nota tre cose che ti piacciono."
+    },
+    "pt": {
+     "t": "Voleibol de praia ou caminhada na montanha",
+     "g": "Compara férias ativas e o modo como gostas de te mexer ao ar livre.",
+     "p": [
+      "O voleibol de praia é social, arenoso e cheio de risos.",
+      "A caminhada é constante, panorâmica e compensa no cimo.",
+      "Mexer-se ao ar livre é divertido, escolhe o ritmo que te serve."
+     ],
+     "q": "Preferias jogar voleibol de praia ou subir uma montanha nas férias? Quem iria contigo?",
+     "c": "Dá hoje um passeio de dez minutos e repara em três coisas de que gostas."
+    },
+    "pt_BR": {
+     "t": "Vôlei de praia ou trilha na montanha",
+     "g": "Compare férias ativas e o jeito que você gosta de se mexer ao ar livre.",
+     "p": [
+      "O vôlei de praia é social, cheio de areia e de risadas.",
+      "A trilha é constante, panorâmica e compensa lá no topo.",
+      "Se mexer ao ar livre é divertido, escolha o ritmo que combina com você."
+     ],
+     "q": "Você prefere jogar vôlei de praia ou subir uma montanha nas férias? Quem iria com você?",
+     "c": "Faça hoje uma caminhada de dez minutos e repare em três coisas de que gosta."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Always know the time or never get lost",
+     "g": "Think about small practical superpowers and how they would change your day.",
+     "p": [
+      "Always knowing the time means you are never late.",
+      "Never getting lost means every trip feels easy and calm.",
+      "Small powers can quietly improve many ordinary moments."
+     ],
+     "q": "Would you rather always know the exact time or never get lost? Where would you use your power first?",
+     "c": "Notice today how often you check the time or the way."
+    },
+    "de": {
+     "t": "Immer die Uhrzeit wissen oder nie verlaufen",
+     "g": "Überlege dir kleine praktische Superkräfte und wie sie deinen Tag verändern.",
+     "p": [
+      "Immer die Uhrzeit zu kennen heißt, nie zu spät zu kommen.",
+      "Sich nie zu verlaufen macht jede Reise leicht und entspannt.",
+      "Kleine Kräfte verbessern leise viele gewöhnliche Momente."
+     ],
+     "q": "Würdest du lieber immer die genaue Uhrzeit wissen oder dich nie verlaufen? Wo würdest du die Kraft zuerst nutzen?",
+     "c": "Achte heute darauf, wie oft du auf die Uhr oder den Weg schaust."
+    },
+    "es": {
+     "t": "Saber siempre la hora o no perderte nunca",
+     "g": "Piensa en pequeños superpoderes prácticos y cómo cambiarían tu día.",
+     "p": [
+      "Saber siempre la hora significa no llegar nunca tarde.",
+      "No perderte nunca hace que cada viaje sea fácil y tranquilo.",
+      "Los poderes pequeños mejoran en silencio muchos momentos normales."
+     ],
+     "q": "¿Prefieres saber siempre la hora exacta o no perderte nunca? ¿Dónde usarías tu poder primero?",
+     "c": "Fíjate hoy en cuántas veces miras la hora o el camino."
+    },
+    "fr": {
+     "t": "Toujours connaître l'heure ou ne jamais se perdre",
+     "g": "Pense à de petits super-pouvoirs pratiques et à leur effet sur ta journée.",
+     "p": [
+      "Connaître toujours l'heure, c'est ne jamais être en retard.",
+      "Ne jamais se perdre rend chaque voyage facile et serein.",
+      "De petits pouvoirs améliorent discrètement bien des moments ordinaires."
+     ],
+     "q": "Tu préfères toujours connaître l'heure exacte ou ne jamais te perdre ? Où utiliserais-tu ton pouvoir d'abord ?",
+     "c": "Remarque aujourd'hui combien de fois tu regardes l'heure ou ton chemin."
+    },
+    "it": {
+     "t": "Sapere sempre l'ora o non perdersi mai",
+     "g": "Pensa a piccoli superpoteri pratici e a come cambierebbero la tua giornata.",
+     "p": [
+      "Sapere sempre l'ora significa non arrivare mai in ritardo.",
+      "Non perdersi mai rende ogni viaggio facile e sereno.",
+      "I piccoli poteri migliorano in silenzio molti momenti normali."
+     ],
+     "q": "Preferisci sapere sempre l'ora esatta o non perderti mai? Dove useresti per prima il tuo potere?",
+     "c": "Nota oggi quante volte controlli l'ora o la strada."
+    },
+    "pt": {
+     "t": "Saber sempre as horas ou nunca me perder",
+     "g": "Pensa em pequenos superpoderes práticos e como mudariam o teu dia.",
+     "p": [
+      "Saber sempre as horas quer dizer nunca chegar atrasado.",
+      "Nunca te perderes torna cada viagem fácil e calma.",
+      "Poderes pequenos melhoram em silêncio muitos momentos normais."
+     ],
+     "q": "Preferias saber sempre as horas exatas ou nunca te perderes? Onde usarias o poder primeiro?",
+     "c": "Repara hoje quantas vezes olhas para as horas ou para o caminho."
+    },
+    "pt_BR": {
+     "t": "Saber sempre as horas ou nunca se perder",
+     "g": "Pense em pequenos superpoderes práticos e como mudariam seu dia.",
+     "p": [
+      "Saber sempre as horas quer dizer nunca chegar atrasado.",
+      "Nunca se perder torna cada viagem fácil e tranquila.",
+      "Poderes pequenos melhoram em silêncio muitos momentos comuns."
+     ],
+     "q": "Você prefere saber sempre as horas exatas ou nunca se perder? Onde usaria o poder primeiro?",
+     "c": "Repare hoje quantas vezes você olha as horas ou o caminho."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Big party or small dinner",
+     "g": "Explore ways of celebrating with friends and what makes a great gathering.",
+     "p": [
+      "A big party means music, new faces and lots of energy.",
+      "A small dinner means deep chats and a relaxed pace.",
+      "A great gathering is about people feeling welcome."
+     ],
+     "q": "Would you rather celebrate with a big party or a small dinner? Who would you invite?",
+     "c": "Plan a tiny gathering and pick one dish and one song for it."
+    },
+    "de": {
+     "t": "Große Party oder kleines Abendessen",
+     "g": "Entdecke Arten, mit Freunden zu feiern, und was ein Treffen schön macht.",
+     "p": [
+      "Eine große Party bedeutet Musik, neue Gesichter und viel Energie.",
+      "Ein kleines Abendessen bedeutet tiefe Gespräche und ein entspanntes Tempo.",
+      "Bei einem schönen Treffen geht es darum, dass sich alle willkommen fühlen."
+     ],
+     "q": "Würdest du lieber mit einer großen Party oder einem kleinen Abendessen feiern? Wen würdest du einladen?",
+     "c": "Plane ein kleines Treffen und wähle ein Gericht und ein Lied dafür."
+    },
+    "es": {
+     "t": "Gran fiesta o cena pequeña",
+     "g": "Explora formas de celebrar con amigos y qué hace genial una reunión.",
+     "p": [
+      "Una gran fiesta significa música, caras nuevas y mucha energía.",
+      "Una cena pequeña significa charlas profundas y un ritmo tranquilo.",
+      "Una buena reunión consiste en que todos se sientan bienvenidos."
+     ],
+     "q": "¿Prefieres celebrar con una gran fiesta o con una cena pequeña? ¿A quién invitarías?",
+     "c": "Planea una reunión pequeña y elige un plato y una canción."
+    },
+    "fr": {
+     "t": "Grande fête ou petit dîner",
+     "g": "Explore des façons de fêter entre amis et ce qui rend une soirée réussie.",
+     "p": [
+      "Une grande fête, c'est de la musique, des nouveaux visages et beaucoup d'énergie.",
+      "Un petit dîner, c'est des vraies discussions et un rythme tranquille.",
+      "Une belle réunion, c'est avant tout que chacun se sente bienvenu."
+     ],
+     "q": "Tu préfères fêter avec une grande fête ou un petit dîner ? Qui inviterais-tu ?",
+     "c": "Prépare une petite réunion et choisis un plat et une chanson."
+    },
+    "it": {
+     "t": "Grande festa o cena piccola",
+     "g": "Esplora modi di festeggiare con gli amici e cosa rende bello un incontro.",
+     "p": [
+      "Una grande festa significa musica, volti nuovi e tanta energia.",
+      "Una cena piccola significa chiacchiere profonde e un ritmo rilassato.",
+      "Un bell'incontro è fatto di persone che si sentono benvenute."
+     ],
+     "q": "Preferisci festeggiare con una grande festa o con una cena piccola? Chi inviteresti?",
+     "c": "Pianifica un piccolo incontro e scegli un piatto e una canzone."
+    },
+    "pt": {
+     "t": "Grande festa ou jantar pequeno",
+     "g": "Explora formas de festejar com amigos e o que torna um encontro ótimo.",
+     "p": [
+      "Uma grande festa quer dizer música, caras novas e muita energia.",
+      "Um jantar pequeno quer dizer conversas a sério e um ritmo calmo.",
+      "Um bom encontro passa por todos se sentirem bem-vindos."
+     ],
+     "q": "Preferias festejar com uma grande festa ou um jantar pequeno? Quem convidarias?",
+     "c": "Planeia um encontro pequeno e escolhe um prato e uma música."
+    },
+    "pt_BR": {
+     "t": "Festão ou jantar pequeno",
+     "g": "Explore jeitos de comemorar com amigos e o que faz um encontro ser ótimo.",
+     "p": [
+      "Um festão quer dizer música, caras novas e muita energia.",
+      "Um jantar pequeno quer dizer conversas de verdade e um ritmo calmo.",
+      "Um bom encontro depende de todos se sentirem bem-vindos."
+     ],
+     "q": "Você prefere comemorar com um festão ou um jantar pequeno? Quem convidaria?",
+     "c": "Planeje um encontro pequeno e escolha um prato e uma música."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Write a novel or film a movie",
+     "g": "Tell stories in different ways and think about the plot you would pick.",
+     "p": [
+      "A novel gives you words, time and a private world.",
+      "A film gives you images, music and a team of friends.",
+      "Every story needs a hero, a goal and a small surprise."
+     ],
+     "q": "Would you rather write a novel or direct a movie? What would the story be about?",
+     "c": "Tell your story idea in just two sentences."
+    },
+    "de": {
+     "t": "Einen Roman schreiben oder einen Film drehen",
+     "g": "Erzähle Geschichten auf verschiedene Weise und überlege dir eine Handlung.",
+     "p": [
+      "Ein Roman gibt dir Worte, Zeit und eine eigene Welt.",
+      "Ein Film gibt dir Bilder, Musik und ein Team aus Freunden.",
+      "Jede Geschichte braucht einen Helden, ein Ziel und eine kleine Überraschung."
+     ],
+     "q": "Würdest du lieber einen Roman schreiben oder einen Film drehen? Wovon würde die Geschichte handeln?",
+     "c": "Erzähle deine Geschichtenidee in nur zwei Sätzen."
+    },
+    "es": {
+     "t": "Escribir una novela o rodar una película",
+     "g": "Cuenta historias de distintas maneras y piensa en la trama que elegirías.",
+     "p": [
+      "Una novela te da palabras, tiempo y un mundo propio.",
+      "Una película te da imágenes, música y un equipo de amigos.",
+      "Toda historia necesita un héroe, una meta y una pequeña sorpresa."
+     ],
+     "q": "¿Prefieres escribir una novela o dirigir una película? ¿De qué trataría la historia?",
+     "c": "Cuenta tu idea de historia en solo dos frases."
+    },
+    "fr": {
+     "t": "Écrire un roman ou tourner un film",
+     "g": "Raconte des histoires de différentes façons et imagine l'intrigue.",
+     "p": [
+      "Un roman te donne des mots, du temps et un monde à toi.",
+      "Un film te donne des images, de la musique et une équipe d'amis.",
+      "Chaque histoire a besoin d'un héros, d'un but et d'une petite surprise."
+     ],
+     "q": "Tu préfères écrire un roman ou réaliser un film ? De quoi parlerait l'histoire ?",
+     "c": "Raconte ton idée d'histoire en deux phrases seulement."
+    },
+    "it": {
+     "t": "Scrivere un romanzo o girare un film",
+     "g": "Racconta storie in modi diversi e pensa alla trama che sceglieresti.",
+     "p": [
+      "Un romanzo ti dà parole, tempo e un mondo tutto tuo.",
+      "Un film ti dà immagini, musica e una squadra di amici.",
+      "Ogni storia ha bisogno di un eroe, di un obiettivo e di una piccola sorpresa."
+     ],
+     "q": "Preferisci scrivere un romanzo o dirigere un film? Di cosa parlerebbe la storia?",
+     "c": "Racconta la tua idea di storia in sole due frasi."
+    },
+    "pt": {
+     "t": "Escrever um romance ou rodar um filme",
+     "g": "Conta histórias de formas diferentes e pensa no enredo que escolherias.",
+     "p": [
+      "Um romance dá-te palavras, tempo e um mundo só teu.",
+      "Um filme dá-te imagens, música e uma equipa de amigos.",
+      "Toda a história precisa de um herói, de um objetivo e de uma pequena surpresa."
+     ],
+     "q": "Preferias escrever um romance ou realizar um filme? Sobre o que seria a história?",
+     "c": "Conta a tua ideia de história em apenas duas frases."
+    },
+    "pt_BR": {
+     "t": "Escrever um romance ou filmar um filme",
+     "g": "Conte histórias de jeitos diferentes e pense no enredo que escolheria.",
+     "p": [
+      "Um romance dá a você palavras, tempo e um mundo só seu.",
+      "Um filme dá imagens, música e uma equipe de amigos.",
+      "Toda história precisa de um herói, de um objetivo e de uma pequena surpresa."
+     ],
+     "q": "Você prefere escrever um romance ou dirigir um filme? Sobre o que seria a história?",
+     "c": "Conte sua ideia de história em apenas duas frases."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Live by a lake or by the sea",
+     "g": "Talk about waterside life and the activities each place offers.",
+     "p": [
+      "A lake is calm, mirror-like and good for rowing and picnics.",
+      "The sea has waves, tides, shells and a wide horizon.",
+      "Water, in any form, tends to make people feel relaxed."
+     ],
+     "q": "Would you rather live by a quiet lake or by the open sea? What would you do every morning?",
+     "c": "Describe the sound of your chosen water in three words."
+    },
+    "de": {
+     "t": "Am See oder am Meer wohnen",
+     "g": "Sprich über das Leben am Wasser und was jeder Ort bietet.",
+     "p": [
+      "Ein See ist ruhig, spiegelglatt und gut zum Rudern und Picknicken.",
+      "Das Meer hat Wellen, Gezeiten, Muscheln und einen weiten Horizont.",
+      "Wasser in jeder Form lässt Menschen meist entspannen."
+     ],
+     "q": "Würdest du lieber an einem stillen See oder am offenen Meer wohnen? Was würdest du jeden Morgen tun?",
+     "c": "Beschreibe das Geräusch deines gewählten Wassers in drei Wörtern."
+    },
+    "es": {
+     "t": "Vivir junto a un lago o junto al mar",
+     "g": "Habla de la vida junto al agua y de lo que ofrece cada lugar.",
+     "p": [
+      "Un lago es tranquilo, como un espejo, ideal para remar y hacer picnic.",
+      "El mar tiene olas, mareas, conchas y un horizonte amplio.",
+      "El agua, de cualquier forma, suele relajar a la gente."
+     ],
+     "q": "¿Prefieres vivir junto a un lago tranquilo o junto al mar abierto? ¿Qué harías cada mañana?",
+     "c": "Describe el sonido de tu agua elegida en tres palabras."
+    },
+    "fr": {
+     "t": "Vivre près d'un lac ou près de la mer",
+     "g": "Parle de la vie au bord de l'eau et de ce que chaque lieu offre.",
+     "p": [
+      "Un lac est calme, comme un miroir, idéal pour ramer et pique-niquer.",
+      "La mer a des vagues, des marées, des coquillages et un large horizon.",
+      "L'eau, sous toutes ses formes, apaise souvent les gens."
+     ],
+     "q": "Tu préfères vivre près d'un lac tranquille ou de la mer ? Que ferais-tu chaque matin ?",
+     "c": "Décris le bruit de ton eau choisie en trois mots."
+    },
+    "it": {
+     "t": "Vivere vicino a un lago o al mare",
+     "g": "Parla della vita vicino all'acqua e di cosa offre ogni posto.",
+     "p": [
+      "Un lago è calmo, uno specchio, ottimo per remare e fare picnic.",
+      "Il mare ha onde, maree, conchiglie e un orizzonte ampio.",
+      "L'acqua, in ogni forma, di solito rilassa le persone."
+     ],
+     "q": "Preferisci vivere vicino a un lago tranquillo o al mare aperto? Cosa faresti ogni mattina?",
+     "c": "Descrivi il suono della tua acqua scelta in tre parole."
+    },
+    "pt": {
+     "t": "Viver junto a um lago ou junto ao mar",
+     "g": "Fala da vida junto à água e do que cada lugar oferece.",
+     "p": [
+      "Um lago é calmo, como um espelho, ótimo para remar e fazer piqueniques.",
+      "O mar tem ondas, marés, conchas e um horizonte largo.",
+      "A água, de qualquer forma, costuma relaxar as pessoas."
+     ],
+     "q": "Preferias viver junto a um lago sossegado ou junto ao mar aberto? O que farias todas as manhãs?",
+     "c": "Descreve o som da tua água escolhida em três palavras."
+    },
+    "pt_BR": {
+     "t": "Morar perto de um lago ou do mar",
+     "g": "Fale da vida perto da água e do que cada lugar oferece.",
+     "p": [
+      "Um lago é calmo, parece um espelho, ótimo para remar e fazer piquenique.",
+      "O mar tem ondas, marés, conchas e um horizonte amplo.",
+      "A água, de qualquer forma, costuma relaxar as pessoas."
+     ],
+     "q": "Você prefere morar perto de um lago tranquilo ou do mar aberto? O que faria toda manhã?",
+     "c": "Descreva o som da água que escolheu em três palavras."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review day: your first favourite picks",
+     "g": "Look back at the first month of choices and spot your patterns.",
+     "p": [
+      "You have made many choices already: food, places, powers and hobbies.",
+      "Patterns show what you value: calm, adventure, creativity or company.",
+      "Changing your mind later is part of the fun."
+     ],
+     "q": "Which three choices from this month were easiest for you, and which one was hardest? Why?",
+     "c": "Pick your favourite dilemma so far and ask it to someone new."
+    },
+    "de": {
+     "t": "Wiederholungstag: deine ersten Lieblingswahlen",
+     "g": "Blicke auf den ersten Monat voller Entscheidungen zurück und finde deine Muster.",
+     "p": [
+      "Du hast schon viele Entscheidungen getroffen: Essen, Orte, Kräfte und Hobbys.",
+      "Muster zeigen, was dir wichtig ist: Ruhe, Abenteuer, Kreativität oder Gesellschaft.",
+      "Seine Meinung später zu ändern gehört zum Spaß."
+     ],
+     "q": "Welche drei Entscheidungen dieses Monats fielen dir leicht, und welche war am schwersten? Warum?",
+     "c": "Wähle dein bisheriges Lieblingsdilemma und stelle es jemand Neuem."
+    },
+    "es": {
+     "t": "Día de repaso: tus primeras elecciones favoritas",
+     "g": "Mira atrás el primer mes de elecciones y detecta tus patrones.",
+     "p": [
+      "Ya has hecho muchas elecciones: comida, lugares, poderes y aficiones.",
+      "Los patrones muestran lo que valoras: calma, aventura, creatividad o compañía.",
+      "Cambiar de opinión más tarde forma parte de la diversión."
+     ],
+     "q": "¿Qué tres elecciones de este mes te resultaron más fáciles y cuál fue la más difícil? ¿Por qué?",
+     "c": "Elige tu dilema favorito hasta ahora y plantéaselo a alguien nuevo."
+    },
+    "fr": {
+     "t": "Jour de révision : tes premiers choix préférés",
+     "g": "Regarde le premier mois de choix et repère tes tendances.",
+     "p": [
+      "Tu as déjà fait beaucoup de choix : plats, lieux, pouvoirs et loisirs.",
+      "Tes tendances montrent ce que tu aimes : calme, aventure, créativité ou compagnie.",
+      "Changer d'avis plus tard fait partie du plaisir."
+     ],
+     "q": "Quels trois choix de ce mois ont été les plus faciles pour toi, et lequel le plus difficile ? Pourquoi ?",
+     "c": "Choisis ton dilemme préféré jusqu'ici et pose-le à quelqu'un de nouveau."
+    },
+    "it": {
+     "t": "Giorno di ripasso: le tue prime scelte preferite",
+     "g": "Guarda indietro il primo mese di scelte e individua i tuoi schemi.",
+     "p": [
+      "Hai già fatto molte scelte: cibo, luoghi, poteri e hobby.",
+      "Gli schemi mostrano cosa ti sta a cuore: calma, avventura, creatività o compagnia.",
+      "Cambiare idea più tardi fa parte del divertimento."
+     ],
+     "q": "Quali tre scelte di questo mese ti sono sembrate più facili e quale la più difficile? Perché?",
+     "c": "Scegli il tuo dilemma preferito finora e proponilo a qualcuno di nuovo."
+    },
+    "pt": {
+     "t": "Dia de revisão: as tuas primeiras escolhas favoritas",
+     "g": "Olha para trás, para o primeiro mês de escolhas, e descobre os teus padrões.",
+     "p": [
+      "Já fizeste muitas escolhas: comida, lugares, poderes e passatempos.",
+      "Os padrões mostram o que valorizas: calma, aventura, criatividade ou companhia.",
+      "Mudar de ideias mais tarde faz parte da diversão."
+     ],
+     "q": "Que três escolhas deste mês foram mais fáceis para ti e qual foi a mais difícil? Porquê?",
+     "c": "Escolhe o teu dilema favorito até agora e propõe-no a alguém novo."
+    },
+    "pt_BR": {
+     "t": "Dia de revisão: suas primeiras escolhas favoritas",
+     "g": "Olhe para trás, para o primeiro mês de escolhas, e descubra seus padrões.",
+     "p": [
+      "Você já fez muitas escolhas: comida, lugares, poderes e hobbies.",
+      "Os padrões mostram o que você valoriza: calma, aventura, criatividade ou companhia.",
+      "Mudar de ideia depois faz parte da diversão."
+     ],
+     "q": "Quais três escolhas deste mês foram mais fáceis para você e qual foi a mais difícil? Por quê?",
+     "c": "Escolha seu dilema favorito até agora e proponha a alguém novo."
+    }
+   }
+  }
+ ]
+}

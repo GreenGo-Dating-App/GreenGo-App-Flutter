@@ -1,0 +1,835 @@
+{
+ "topic": "gratitude",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Thank you in new languages",
+     "g": "Learn how to say thank you in the languages of people you meet.",
+     "p": [
+      "Thank you in someone's own language is a small gift of respect.",
+      "Try a few: gracias, obrigado, merci, danke, grazie, arigato.",
+      "Pronunciation does not need to be perfect; the effort is what people appreciate."
+     ],
+     "q": "Which languages do you know how to say thank you in?",
+     "c": "Learn to say thank you in one new language and use it with someone this week."
+    },
+    "de": {
+     "t": "Danke in neuen Sprachen",
+     "g": "Lerne, wie man in den Sprachen der Menschen, denen du begegnest, Danke sagt.",
+     "p": [
+      "Danke in der Sprache des anderen ist ein kleines Geschenk des Respekts.",
+      "Probiere einige: gracias, obrigado, merci, thanks, grazie, arigato.",
+      "Die Aussprache muss nicht perfekt sein; die Mühe ist es, was Menschen schätzen."
+     ],
+     "q": "In welchen Sprachen kannst du Danke sagen?",
+     "c": "Lerne, in einer neuen Sprache Danke zu sagen, und nutze es diese Woche bei jemandem."
+    },
+    "es": {
+     "t": "Gracias en nuevos idiomas",
+     "g": "Aprende a dar las gracias en los idiomas de las personas que conoces.",
+     "p": [
+      "Dar las gracias en el idioma de alguien es un pequeño regalo de respeto.",
+      "Prueba algunos: thank you, obrigado, merci, danke, grazie, arigato.",
+      "La pronunciación no tiene que ser perfecta; lo que la gente valora es el esfuerzo."
+     ],
+     "q": "¿En qué idiomas sabes decir gracias?",
+     "c": "Aprende a decir gracias en un idioma nuevo y úsalo con alguien esta semana."
+    },
+    "fr": {
+     "t": "Merci dans de nouvelles langues",
+     "g": "Apprends à dire merci dans les langues des personnes que tu rencontres.",
+     "p": [
+      "Dire merci dans la langue de quelqu'un est un petit cadeau de respect.",
+      "Essaie-en quelques-uns : gracias, obrigado, thank you, danke, grazie, arigato.",
+      "La prononciation n'a pas besoin d'être parfaite ; c'est l'effort que les gens apprécient."
+     ],
+     "q": "Dans quelles langues sais-tu dire merci ?",
+     "c": "Apprends à dire merci dans une nouvelle langue et utilise-le avec quelqu'un cette semaine."
+    },
+    "it": {
+     "t": "Grazie in nuove lingue",
+     "g": "Impara a dire grazie nelle lingue delle persone che incontri.",
+     "p": [
+      "Dire grazie nella lingua di qualcuno è un piccolo dono di rispetto.",
+      "Prova qualcuno: gracias, obrigado, merci, danke, thank you, arigato.",
+      "La pronuncia non deve essere perfetta; è l'impegno che le persone apprezzano."
+     ],
+     "q": "In quali lingue sai dire grazie?",
+     "c": "Impara a dire grazie in una lingua nuova e usalo con qualcuno questa settimana."
+    },
+    "pt": {
+     "t": "Obrigado em novas línguas",
+     "g": "Aprende a dizer obrigado nas línguas das pessoas que conheces.",
+     "p": [
+      "Dizer obrigado na língua de alguém é um pequeno presente de respeito.",
+      "Experimenta algumas: gracias, thank you, merci, danke, grazie, arigato.",
+      "A pronúncia não precisa de ser perfeita; é o esforço que as pessoas valorizam."
+     ],
+     "q": "Em que línguas sabes dizer obrigado?",
+     "c": "Aprende a dizer obrigado numa língua nova e usa-o com alguém esta semana."
+    },
+    "pt_BR": {
+     "t": "Obrigado em novos idiomas",
+     "g": "Aprenda a dizer obrigado nos idiomas das pessoas que você conhece.",
+     "p": [
+      "Dizer obrigado no idioma de alguém é um pequeno presente de respeito.",
+      "Experimente alguns: gracias, thank you, merci, danke, grazie, arigato.",
+      "A pronúncia não precisa ser perfeita; é o esforço que as pessoas valorizam."
+     ],
+     "q": "Em que idiomas você sabe dizer obrigado?",
+     "c": "Aprenda a dizer obrigado em um idioma novo e use com alguém esta semana."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sharing good things at meals",
+     "g": "Share one good thing each during a meal with family or friends.",
+     "p": [
+      "Mealtime is a natural moment to slow down and talk together.",
+      "Each person shares one good thing from the day, no commenting needed.",
+      "Even a quick round makes the table feel warmer."
+     ],
+     "q": "What would your table talk about if everyone shared one good thing?",
+     "c": "At your next shared meal, invite everyone to say one good thing from their day."
+    },
+    "de": {
+     "t": "Gute Dinge beim Essen teilen",
+     "g": "Teilt bei einer Mahlzeit mit Familie oder Freunden je eine gute Sache.",
+     "p": [
+      "Die Mahlzeit ist ein natürlicher Moment, um langsamer zu werden und miteinander zu reden.",
+      "Jeder erzählt eine gute Sache des Tages, Kommentare sind nicht nötig.",
+      "Schon eine kurze Runde macht den Tisch wärmer."
+     ],
+     "q": "Worüber würde an deinem Tisch gesprochen, wenn jeder eine gute Sache teilte?",
+     "c": "Lade bei der nächsten gemeinsamen Mahlzeit alle ein, eine gute Sache ihres Tages zu nennen."
+    },
+    "es": {
+     "t": "Compartir lo bueno en la mesa",
+     "g": "Compartid una cosa buena cada uno durante una comida con familia o amigos.",
+     "p": [
+      "La comida es un momento natural para ir más despacio y conversar juntos.",
+      "Cada persona cuenta una cosa buena del día, sin necesidad de comentarios.",
+      "Incluso una ronda rápida hace la mesa más cálida."
+     ],
+     "q": "¿De qué se hablaría en tu mesa si todos compartieran una cosa buena?",
+     "c": "En tu próxima comida compartida, invita a todos a decir una cosa buena de su día."
+    },
+    "fr": {
+     "t": "Partager le bon à table",
+     "g": "Partagez chacun une bonne chose pendant un repas en famille ou entre amis.",
+     "p": [
+      "Le repas est un moment naturel pour ralentir et parler ensemble.",
+      "Chacun partage une bonne chose de la journée, sans besoin de commenter.",
+      "Même un tour rapide rend la table plus chaleureuse."
+     ],
+     "q": "De quoi parlerait-on à ta table si chacun partageait une bonne chose ?",
+     "c": "Au prochain repas partagé, invite tout le monde à dire une bonne chose de sa journée."
+    },
+    "it": {
+     "t": "Condividere il bello a tavola",
+     "g": "Condividete una cosa bella ciascuno durante un pasto con famiglia o amici.",
+     "p": [
+      "Il pasto è un momento naturale per rallentare e parlare insieme.",
+      "Ognuno condivide una cosa bella della giornata, senza bisogno di commenti.",
+      "Anche un giro veloce rende la tavola più calda."
+     ],
+     "q": "Di cosa si parlerebbe alla tua tavola se tutti condividessero una cosa bella?",
+     "c": "Al prossimo pasto condiviso, invita tutti a dire una cosa bella della loro giornata."
+    },
+    "pt": {
+     "t": "Partilhar o bom à mesa",
+     "g": "Partilhem uma coisa boa cada um durante uma refeição com família ou amigos.",
+     "p": [
+      "A refeição é um momento natural para abrandar e conversar juntos.",
+      "Cada pessoa conta uma coisa boa do dia, sem precisar de comentários.",
+      "Mesmo uma ronda rápida torna a mesa mais calorosa."
+     ],
+     "q": "Do que se falaria à tua mesa se todos partilhassem uma coisa boa?",
+     "c": "Na próxima refeição partilhada, convida todos a dizer uma coisa boa do seu dia."
+    },
+    "pt_BR": {
+     "t": "Compartilhando o bom à mesa",
+     "g": "Compartilhem uma coisa boa cada um durante uma refeição com família ou amigos.",
+     "p": [
+      "A refeição é um momento natural para desacelerar e conversar juntos.",
+      "Cada pessoa conta uma coisa boa do dia, sem precisar de comentários.",
+      "Mesmo uma rodada rápida deixa a mesa mais calorosa."
+     ],
+     "q": "Do que se falaria na sua mesa se todos compartilhassem uma coisa boa?",
+     "c": "Na próxima refeição compartilhada, convide todos a dizer uma coisa boa do dia."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your community",
+     "g": "Notice the local places and groups you value.",
+     "p": [
+      "A community can be a street, a club, a market, a class or an online group.",
+      "Think of places where you feel welcome and at ease.",
+      "Appreciating them makes you more likely to support and enjoy them."
+     ],
+     "q": "Which local place or group makes you feel like you belong?",
+     "c": "Visit, support or thank one local place or group you value this week."
+    },
+    "de": {
+     "t": "Deine Gemeinschaft",
+     "g": "Bemerke die Orte und Gruppen in deiner Nähe, die du schätzt.",
+     "p": [
+      "Eine Gemeinschaft kann eine Straße, ein Verein, ein Markt, ein Kurs oder eine Online-Gruppe sein.",
+      "Denke an Orte, an denen du dich willkommen und wohl fühlst.",
+      "Sie zu schätzen macht es wahrscheinlicher, dass du sie unterstützt und genießt."
+     ],
+     "q": "Welcher Ort oder welche Gruppe vor Ort gibt dir das Gefühl dazuzugehören?",
+     "c": "Besuche, unterstütze oder bedanke dich diese Woche bei einem Ort oder einer Gruppe, die du schätzt."
+    },
+    "es": {
+     "t": "Tu comunidad",
+     "g": "Fíjate en los lugares y grupos locales que valoras.",
+     "p": [
+      "Una comunidad puede ser una calle, un club, un mercado, una clase o un grupo en línea.",
+      "Piensa en lugares donde te sientes bienvenido y a gusto.",
+      "Valorarlos hace más probable que los apoyes y disfrutes."
+     ],
+     "q": "¿Qué lugar o grupo local te hace sentir que perteneces?",
+     "c": "Visita, apoya o da las gracias a un lugar o grupo local que valoras esta semana."
+    },
+    "fr": {
+     "t": "Ta communauté",
+     "g": "Remarque les lieux et groupes locaux que tu apprécies.",
+     "p": [
+      "Une communauté peut être une rue, un club, un marché, un cours ou un groupe en ligne.",
+      "Pense aux endroits où tu te sens bienvenu et à l'aise.",
+      "Les apprécier te rend plus enclin à les soutenir et à en profiter."
+     ],
+     "q": "Quel lieu ou groupe local te donne le sentiment d'appartenir ?",
+     "c": "Visite, soutiens ou remercie cette semaine un lieu ou groupe local que tu apprécies."
+    },
+    "it": {
+     "t": "La tua comunità",
+     "g": "Nota i luoghi e i gruppi locali che apprezzi.",
+     "p": [
+      "Una comunità può essere una via, un club, un mercato, un corso o un gruppo online.",
+      "Pensa ai luoghi in cui ti senti il benvenuto e a tuo agio.",
+      "Apprezzarli rende più probabile che tu li sostenga e ne goda."
+     ],
+     "q": "Quale luogo o gruppo locale ti fa sentire di appartenere?",
+     "c": "Visita, sostieni o ringrazia questa settimana un luogo o gruppo locale che apprezzi."
+    },
+    "pt": {
+     "t": "A tua comunidade",
+     "g": "Repara nos locais e grupos que valorizas perto de ti.",
+     "p": [
+      "Uma comunidade pode ser uma rua, um clube, um mercado, uma aula ou um grupo online.",
+      "Pensa em sítios onde te sentes bem-vindo e à vontade.",
+      "Valorizá-los torna mais provável que os apoies e aproveites."
+     ],
+     "q": "Que local ou grupo da tua zona te faz sentir que pertences?",
+     "c": "Visita, apoia ou agradece esta semana a um local ou grupo que valorizas."
+    },
+    "pt_BR": {
+     "t": "Sua comunidade",
+     "g": "Perceba os lugares e grupos locais que você valoriza.",
+     "p": [
+      "Uma comunidade pode ser uma rua, um clube, uma feira, uma aula ou um grupo online.",
+      "Pense em lugares onde você se sente bem-vindo e à vontade.",
+      "Valorizá-los torna mais provável que você os apoie e aproveite."
+     ],
+     "q": "Que lugar ou grupo local faz você sentir que pertence?",
+     "c": "Visite, apoie ou agradeça esta semana a um lugar ou grupo local que você valoriza."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shared laughter",
+     "g": "Recall a recent moment of laughing together with others.",
+     "p": [
+      "Laughing together is one of the quickest ways people bond.",
+      "Replay the joke, the silly moment or the person who made everyone laugh.",
+      "Being thankful for laughter makes it easier to invite more of it."
+     ],
+     "q": "When did you last laugh until it hurt, and who was there?",
+     "c": "Share a funny memory with someone and enjoy laughing about it again together."
+    },
+    "de": {
+     "t": "Gemeinsames Lachen",
+     "g": "Erinnere dich an einen kürzlichen Moment, in dem du mit anderen gelacht hast.",
+     "p": [
+      "Gemeinsam zu lachen ist einer der schnellsten Wege, wie Menschen sich verbinden.",
+      "Spiele den Witz, den albernen Moment oder die Person, die alle zum Lachen brachte, noch einmal ab.",
+      "Dankbar für Lachen zu sein erleichtert es, mehr davon einzuladen."
+     ],
+     "q": "Wann hast du zuletzt Tränen gelacht, und wer war dabei?",
+     "c": "Teile eine lustige Erinnerung mit jemandem und lacht noch einmal gemeinsam darüber."
+    },
+    "es": {
+     "t": "Risas compartidas",
+     "g": "Recuerda un momento reciente en que te reíste con otras personas.",
+     "p": [
+      "Reír juntos es una de las formas más rápidas de unirse.",
+      "Repasa el chiste, el momento tonto o la persona que hizo reír a todos.",
+      "Agradecer la risa facilita invitar a más."
+     ],
+     "q": "¿Cuándo fue la última vez que te reíste hasta que te dolió y quién estaba?",
+     "c": "Comparte un recuerdo gracioso con alguien y disfrutad riendo de nuevo juntos."
+    },
+    "fr": {
+     "t": "Les rires partagés",
+     "g": "Rappelle-toi un moment récent où tu as ri avec d'autres.",
+     "p": [
+      "Rire ensemble est l'un des moyens les plus rapides de créer des liens.",
+      "Revois la blague, le moment idiot ou la personne qui a fait rire tout le monde.",
+      "Être reconnaissant pour le rire donne envie d'en inviter davantage."
+     ],
+     "q": "Quand as-tu ri aux larmes pour la dernière fois, et qui était là ?",
+     "c": "Partage un souvenir drôle avec quelqu'un et riez-en à nouveau ensemble."
+    },
+    "it": {
+     "t": "Le risate condivise",
+     "g": "Ricorda un momento recente in cui hai riso insieme ad altri.",
+     "p": [
+      "Ridere insieme è uno dei modi più rapidi per creare legami.",
+      "Rivivi la battuta, il momento buffo o la persona che ha fatto ridere tutti.",
+      "Essere grati per le risate rende più facile invitarne altre."
+     ],
+     "q": "Quando hai riso fino alle lacrime l'ultima volta, e chi c'era?",
+     "c": "Condividi un ricordo divertente con qualcuno e godetevi un'altra risata insieme."
+    },
+    "pt": {
+     "t": "Gargalhadas partilhadas",
+     "g": "Recorda um momento recente em que riste com outras pessoas.",
+     "p": [
+      "Rir juntos é uma das formas mais rápidas de criar laços.",
+      "Repassa a piada, o momento parvo ou a pessoa que fez todos rir.",
+      "Ser grato pelo riso facilita convidar mais."
+     ],
+     "q": "Quando foi a última vez que riste até doer e quem estava contigo?",
+     "c": "Partilha uma memória engraçada com alguém e riam outra vez juntos."
+    },
+    "pt_BR": {
+     "t": "Risadas compartilhadas",
+     "g": "Lembre de um momento recente em que você riu junto com outras pessoas.",
+     "p": [
+      "Rir junto é uma das formas mais rápidas de criar laços.",
+      "Reveja a piada, o momento bobo ou a pessoa que fez todos rirem.",
+      "Ser grato pelo riso facilita convidar mais."
+     ],
+     "q": "Quando foi a última vez que você riu até doer e quem estava com você?",
+     "c": "Compartilhe uma lembrança engraçada com alguém e riam de novo juntos."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Receiving thanks gracefully",
+     "g": "Accept thanks and compliments with a simple smile.",
+     "p": [
+      "Many of us deflect thanks with it was nothing, which can dim the moment.",
+      "A simple thank you or you are welcome lets the other person feel heard.",
+      "Receiving gratitude is also a kind of gift you give back."
+     ],
+     "q": "How do you usually react when someone thanks or compliments you?",
+     "c": "Next time someone thanks you, reply with just a smile and you are welcome."
+    },
+    "de": {
+     "t": "Dank gelassen annehmen",
+     "g": "Nimm Dank und Komplimente mit einem einfachen Lächeln an.",
+     "p": [
+      "Viele von uns wehren Dank mit War doch nichts ab, was den Moment dämpfen kann.",
+      "Ein schlichtes Danke oder Gern geschehen lässt das Gegenüber sich gehört fühlen.",
+      "Dank anzunehmen ist auch ein Geschenk, das du zurückgibst."
+     ],
+     "q": "Wie reagierst du meist, wenn dir jemand dankt oder ein Kompliment macht?",
+     "c": "Antworte, wenn dir das nächste Mal jemand dankt, nur mit einem Lächeln und Gern geschehen."
+    },
+    "es": {
+     "t": "Recibir las gracias con gracia",
+     "g": "Acepta agradecimientos y cumplidos con una sonrisa sencilla.",
+     "p": [
+      "Muchos respondemos a un gracias con no fue nada, lo que puede apagar el momento.",
+      "Un simple gracias o de nada hace que la otra persona se sienta escuchada.",
+      "Recibir gratitud también es un regalo que devuelves."
+     ],
+     "q": "¿Cómo sueles reaccionar cuando alguien te da las gracias o te hace un cumplido?",
+     "c": "La próxima vez que alguien te dé las gracias, responde solo con una sonrisa y de nada."
+    },
+    "fr": {
+     "t": "Recevoir un merci avec grâce",
+     "g": "Accepte remerciements et compliments avec un simple sourire.",
+     "p": [
+      "Beaucoup répondent à un merci par ce n'est rien, ce qui peut éteindre le moment.",
+      "Un simple merci ou avec plaisir permet à l'autre de se sentir entendu.",
+      "Recevoir de la gratitude est aussi un cadeau que tu rends."
+     ],
+     "q": "Comment réagis-tu d'habitude quand quelqu'un te remercie ou te complimente ?",
+     "c": "La prochaine fois que quelqu'un te remercie, réponds simplement par un sourire et avec plaisir."
+    },
+    "it": {
+     "t": "Ricevere un grazie con grazia",
+     "g": "Accetta ringraziamenti e complimenti con un semplice sorriso.",
+     "p": [
+      "Molti rispondono a un grazie con figurati, non è niente, e questo può spegnere il momento.",
+      "Un semplice grazie o prego fa sentire l'altro ascoltato.",
+      "Ricevere gratitudine è anche un dono che restituisci."
+     ],
+     "q": "Come reagisci di solito quando qualcuno ti ringrazia o ti fa un complimento?",
+     "c": "La prossima volta che qualcuno ti ringrazia, rispondi solo con un sorriso e prego."
+    },
+    "pt": {
+     "t": "Receber um obrigado com graça",
+     "g": "Aceita agradecimentos e elogios com um simples sorriso.",
+     "p": [
+      "Muitos respondemos a um obrigado com não foi nada, o que pode apagar o momento.",
+      "Um simples obrigado ou de nada faz o outro sentir-se ouvido.",
+      "Receber gratidão também é um presente que devolves."
+     ],
+     "q": "Como costumas reagir quando alguém te agradece ou te elogia?",
+     "c": "Da próxima vez que alguém te agradecer, responde só com um sorriso e de nada."
+    },
+    "pt_BR": {
+     "t": "Recebendo um obrigado com leveza",
+     "g": "Aceite agradecimentos e elogios com um simples sorriso.",
+     "p": [
+      "Muitos respondem a um obrigado com não foi nada, o que pode apagar o momento.",
+      "Um simples obrigado ou de nada faz o outro se sentir ouvido.",
+      "Receber gratidão também é um presente que você devolve."
+     ],
+     "q": "Como você costuma reagir quando alguém agradece ou elogia você?",
+     "c": "Da próxima vez que alguém agradecer, responda só com um sorriso e de nada."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Support in tough times",
+     "g": "Remember who was there for you when things were tough.",
+     "p": [
+      "Hard times are real, and so is the help that sometimes comes with them.",
+      "Recalling support does not erase the difficulty; it adds something true next to it.",
+      "If no one comes to mind, think of any small help, even from a stranger or a book."
+     ],
+     "q": "Who helped you through a difficult stretch?",
+     "c": "Think of someone who supported you and, if it feels right, let them know it mattered."
+    },
+    "de": {
+     "t": "Beistand in schweren Zeiten",
+     "g": "Erinnere dich, wer in schweren Zeiten für dich da war.",
+     "p": [
+      "Schwere Zeiten sind echt, und echt ist auch die Hilfe, die manchmal dazukommt.",
+      "Sich an Beistand zu erinnern löscht die Schwierigkeit nicht aus; es stellt etwas Wahres daneben.",
+      "Wenn dir niemand einfällt, denke an jede kleine Hilfe, auch von Fremden oder aus einem Buch."
+     ],
+     "q": "Wer hat dir durch eine schwierige Zeit geholfen?",
+     "c": "Denke an jemanden, der dich unterstützt hat, und lass ihn, wenn es passt, wissen, dass es zählte."
+    },
+    "es": {
+     "t": "Apoyo en tiempos difíciles",
+     "g": "Recuerda quién estuvo a tu lado cuando las cosas eran difíciles.",
+     "p": [
+      "Los tiempos duros son reales, y también la ayuda que a veces llega con ellos.",
+      "Recordar el apoyo no borra la dificultad; añade algo verdadero a su lado.",
+      "Si no te viene nadie a la mente, piensa en cualquier ayuda pequeña, incluso de un desconocido o un libro."
+     ],
+     "q": "¿Quién te ayudó a pasar un periodo difícil?",
+     "c": "Piensa en alguien que te apoyó y, si te parece bien, hazle saber que fue importante."
+    },
+    "fr": {
+     "t": "Le soutien dans les moments difficiles",
+     "g": "Rappelle-toi qui était là pour toi quand c'était dur.",
+     "p": [
+      "Les moments difficiles sont réels, tout comme l'aide qui parfois les accompagne.",
+      "Se souvenir du soutien n'efface pas la difficulté ; cela ajoute quelque chose de vrai à côté.",
+      "Si personne ne te vient à l'esprit, pense à une petite aide, même d'un inconnu ou d'un livre."
+     ],
+     "q": "Qui t'a aidé à traverser une période difficile ?",
+     "c": "Pense à quelqu'un qui t'a soutenu et, si cela te semble juste, dis-lui que cela a compté."
+    },
+    "it": {
+     "t": "Sostegno nei momenti difficili",
+     "g": "Ricorda chi c'era per te quando le cose erano dure.",
+     "p": [
+      "I momenti difficili sono reali, e lo è anche l'aiuto che a volte arriva con essi.",
+      "Ricordare il sostegno non cancella la difficoltà; aggiunge qualcosa di vero accanto.",
+      "Se non ti viene in mente nessuno, pensa a qualsiasi piccolo aiuto, anche da uno sconosciuto o da un libro."
+     ],
+     "q": "Chi ti ha aiutato in un periodo difficile?",
+     "c": "Pensa a qualcuno che ti ha sostenuto e, se ti sembra giusto, fagli sapere che è stato importante."
+    },
+    "pt": {
+     "t": "Apoio em tempos difíceis",
+     "g": "Recorda quem esteve contigo quando as coisas eram difíceis.",
+     "p": [
+      "Os tempos difíceis são reais, e a ajuda que por vezes os acompanha também.",
+      "Recordar o apoio não apaga a dificuldade; junta algo verdadeiro ao lado dela.",
+      "Se não te vier ninguém à cabeça, pensa em qualquer pequena ajuda, até de um desconhecido ou de um livro."
+     ],
+     "q": "Quem te ajudou a atravessar um período difícil?",
+     "c": "Pensa em alguém que te apoiou e, se te parecer bem, diz-lhe que foi importante."
+    },
+    "pt_BR": {
+     "t": "Apoio em tempos difíceis",
+     "g": "Lembre de quem esteve com você quando as coisas estavam difíceis.",
+     "p": [
+      "Tempos difíceis são reais, e a ajuda que às vezes vem com eles também.",
+      "Lembrar do apoio não apaga a dificuldade; acrescenta algo verdadeiro ao lado dela.",
+      "Se ninguém vier à mente, pense em qualquer pequena ajuda, até de um desconhecido ou de um livro."
+     ],
+     "q": "Quem ajudou você a atravessar um período difícil?",
+     "c": "Pense em alguém que apoiou você e, se parecer certo, diga que isso foi importante."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gratitude and generosity",
+     "g": "See how feeling thankful can inspire you to give to others.",
+     "p": [
+      "Feeling thankful often makes giving feel natural rather than like a duty.",
+      "Giving can be time, attention, a compliment or a small gift.",
+      "Generosity does not depend on having a lot; it depends on noticing a need."
+     ],
+     "q": "How does feeling thankful change the way you treat others?",
+     "c": "Give something small today: your time, a compliment or help with a task."
+    },
+    "de": {
+     "t": "Dankbarkeit und Großzügigkeit",
+     "g": "Erkenne, wie Dankbarkeit dich anregen kann, anderen zu geben.",
+     "p": [
+      "Dankbarkeit lässt Geben oft natürlich wirken statt wie eine Pflicht.",
+      "Geben kann Zeit, Aufmerksamkeit, ein Kompliment oder ein kleines Geschenk sein.",
+      "Großzügigkeit hängt nicht davon ab, viel zu haben, sondern davon, einen Bedarf zu bemerken."
+     ],
+     "q": "Wie verändert Dankbarkeit die Art, wie du mit anderen umgehst?",
+     "c": "Gib heute etwas Kleines: deine Zeit, ein Kompliment oder Hilfe bei einer Aufgabe."
+    },
+    "es": {
+     "t": "Gratitud y generosidad",
+     "g": "Descubre cómo sentir gratitud puede inspirarte a dar a los demás.",
+     "p": [
+      "Sentirse agradecido suele hacer que dar parezca natural y no un deber.",
+      "Dar puede ser tiempo, atención, un cumplido o un pequeño regalo.",
+      "La generosidad no depende de tener mucho, sino de notar una necesidad."
+     ],
+     "q": "¿Cómo cambia tu trato a los demás el sentirte agradecido?",
+     "c": "Da hoy algo pequeño: tu tiempo, un cumplido o ayuda con una tarea."
+    },
+    "fr": {
+     "t": "Gratitude et générosité",
+     "g": "Vois comment la gratitude peut t'inspirer à donner aux autres.",
+     "p": [
+      "Se sentir reconnaissant rend souvent le don naturel plutôt qu'un devoir.",
+      "Donner peut être du temps, de l'attention, un compliment ou un petit cadeau.",
+      "La générosité ne dépend pas d'avoir beaucoup, mais de remarquer un besoin."
+     ],
+     "q": "Comment le fait d'être reconnaissant change-t-il ta façon de traiter les autres ?",
+     "c": "Donne aujourd'hui quelque chose de petit : ton temps, un compliment ou un coup de main."
+    },
+    "it": {
+     "t": "Gratitudine e generosità",
+     "g": "Scopri come sentirti grato può ispirarti a dare agli altri.",
+     "p": [
+      "Sentirsi grati spesso fa sembrare il dare naturale invece che un dovere.",
+      "Dare può essere tempo, attenzione, un complimento o un piccolo regalo.",
+      "La generosità non dipende dall'avere molto, ma dal notare un bisogno."
+     ],
+     "q": "Come cambia il modo in cui tratti gli altri il sentirti grato?",
+     "c": "Dai oggi qualcosa di piccolo: il tuo tempo, un complimento o aiuto con un compito."
+    },
+    "pt": {
+     "t": "Gratidão e generosidade",
+     "g": "Descobre como sentir gratidão te pode inspirar a dar aos outros.",
+     "p": [
+      "Sentir gratidão faz muitas vezes o dar parecer natural e não um dever.",
+      "Dar pode ser tempo, atenção, um elogio ou uma pequena prenda.",
+      "A generosidade não depende de ter muito, mas de reparar numa necessidade."
+     ],
+     "q": "Como muda o teu trato com os outros sentires-te grato?",
+     "c": "Dá hoje algo pequeno: o teu tempo, um elogio ou ajuda numa tarefa."
+    },
+    "pt_BR": {
+     "t": "Gratidão e generosidade",
+     "g": "Descubra como sentir gratidão pode inspirar você a dar aos outros.",
+     "p": [
+      "Sentir gratidão muitas vezes faz o dar parecer natural e não um dever.",
+      "Dar pode ser tempo, atenção, um elogio ou um pequeno presente.",
+      "A generosidade não depende de ter muito, mas de perceber uma necessidade."
+     ],
+     "q": "Como sentir gratidão muda a forma como você trata os outros?",
+     "c": "Dê hoje algo pequeno: seu tempo, um elogio ou ajuda numa tarefa."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A random act of kindness",
+     "g": "Do something kind and notice how it feels.",
+     "p": [
+      "A kind act can be tiny: paying a compliment, holding a door, leaving a nice note.",
+      "Doing it without expecting thanks keeps it pure and light.",
+      "Notice your own mood afterwards; kindness often warms the giver too."
+     ],
+     "q": "What small kind act could you do without anyone knowing?",
+     "c": "Do one random act of kindness today and notice how you feel afterwards."
+    },
+    "de": {
+     "t": "Eine zufällige Freundlichkeit",
+     "g": "Tu etwas Freundliches und bemerke, wie es sich anfühlt.",
+     "p": [
+      "Eine freundliche Tat kann winzig sein: ein Kompliment, eine aufgehaltene Tür, ein netter Zettel.",
+      "Sie ohne Erwartung von Dank zu tun hält sie rein und leicht.",
+      "Achte danach auf deine Stimmung; Freundlichkeit wärmt oft auch den Gebenden."
+     ],
+     "q": "Welche kleine freundliche Tat könntest du tun, ohne dass jemand es erfährt?",
+     "c": "Tu heute eine zufällige freundliche Tat und achte darauf, wie du dich danach fühlst."
+    },
+    "es": {
+     "t": "Un acto de bondad al azar",
+     "g": "Haz algo amable y fíjate en cómo se siente.",
+     "p": [
+      "Un gesto amable puede ser diminuto: un cumplido, sostener una puerta, dejar una nota bonita.",
+      "Hacerlo sin esperar agradecimiento lo mantiene puro y ligero.",
+      "Fíjate después en tu ánimo; la amabilidad suele calentar también a quien da."
+     ],
+     "q": "¿Qué pequeño gesto amable podrías hacer sin que nadie lo sepa?",
+     "c": "Haz hoy un acto de bondad al azar y nota cómo te sientes después."
+    },
+    "fr": {
+     "t": "Un geste de gentillesse au hasard",
+     "g": "Fais quelque chose de gentil et remarque ce que tu ressens.",
+     "p": [
+      "Un geste gentil peut être minuscule : un compliment, une porte tenue, un mot sympa laissé.",
+      "Le faire sans attendre de remerciement le garde pur et léger.",
+      "Remarque ensuite ton humeur ; la gentillesse réchauffe souvent aussi celui qui donne."
+     ],
+     "q": "Quel petit geste gentil pourrais-tu faire sans que personne ne le sache ?",
+     "c": "Fais aujourd'hui un geste de gentillesse au hasard et remarque ce que tu ressens ensuite."
+    },
+    "it": {
+     "t": "Un gesto di gentilezza a caso",
+     "g": "Fai qualcosa di gentile e nota come ti senti.",
+     "p": [
+      "Un gesto gentile può essere minuscolo: un complimento, una porta tenuta, un bigliettino carino.",
+      "Farlo senza aspettarsi un grazie lo mantiene puro e leggero.",
+      "Nota poi il tuo umore; la gentilezza scalda spesso anche chi dà."
+     ],
+     "q": "Quale piccolo gesto gentile potresti fare senza che nessuno lo sappia?",
+     "c": "Fai oggi un gesto di gentilezza a caso e nota come ti senti dopo."
+    },
+    "pt": {
+     "t": "Um gesto de gentileza ao acaso",
+     "g": "Faz algo simpático e repara como te sentes.",
+     "p": [
+      "Um gesto simpático pode ser minúsculo: um elogio, uma porta aberta, um bilhete simpático.",
+      "Fazê-lo sem esperar agradecimento mantém-no puro e leve.",
+      "Repara depois na tua disposição; a gentileza muitas vezes aquece também quem dá."
+     ],
+     "q": "Que pequeno gesto simpático poderias fazer sem que ninguém soubesse?",
+     "c": "Faz hoje um gesto de gentileza ao acaso e repara como te sentes depois."
+    },
+    "pt_BR": {
+     "t": "Um gesto de gentileza aleatório",
+     "g": "Faça algo gentil e perceba como você se sente.",
+     "p": [
+      "Um gesto gentil pode ser minúsculo: um elogio, uma porta segurada, um bilhetinho simpático.",
+      "Fazer sem esperar agradecimento mantém o gesto puro e leve.",
+      "Perceba depois seu humor; a gentileza muitas vezes aquece também quem dá."
+     ],
+     "q": "Que pequeno gesto gentil você poderia fazer sem que ninguém soubesse?",
+     "c": "Faça hoje um gesto de gentileza aleatório e perceba como você se sente depois."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Online connections",
+     "g": "Appreciate people you know through apps and messages.",
+     "p": [
+      "Online friends, group chats and communities can be real sources of support and fun.",
+      "Think of someone who makes your screen time feel warm rather than empty.",
+      "A thoughtful message can make a distant connection feel close."
+     ],
+     "q": "Which online connection do you value, and why?",
+     "c": "Send a kind message to someone you know only online and tell them you appreciate them."
+    },
+    "de": {
+     "t": "Online-Verbindungen",
+     "g": "Schätze Menschen, die du über Apps und Nachrichten kennst.",
+     "p": [
+      "Online-Freunde, Gruppenchats und Communities können echte Quellen von Unterstützung und Spaß sein.",
+      "Denke an jemanden, der deine Bildschirmzeit warm statt leer macht.",
+      "Eine aufmerksame Nachricht kann eine ferne Verbindung nah wirken lassen."
+     ],
+     "q": "Welche Online-Verbindung schätzt du, und warum?",
+     "c": "Schicke jemandem, den du nur online kennst, eine freundliche Nachricht und sage, dass du ihn schätzt."
+    },
+    "es": {
+     "t": "Conexiones en línea",
+     "g": "Valora a las personas que conoces por apps y mensajes.",
+     "p": [
+      "Los amigos en línea, los chats de grupo y las comunidades pueden ser fuentes reales de apoyo y diversión.",
+      "Piensa en alguien que hace que tu tiempo de pantalla se sienta cálido y no vacío.",
+      "Un mensaje atento puede hacer que una conexión lejana se sienta cercana."
+     ],
+     "q": "¿Qué conexión en línea valoras y por qué?",
+     "c": "Envía un mensaje amable a alguien que solo conoces en línea y dile que lo valoras."
+    },
+    "fr": {
+     "t": "Les liens en ligne",
+     "g": "Apprécie les personnes que tu connais via des applis et des messages.",
+     "p": [
+      "Les amis en ligne, les groupes de discussion et les communautés peuvent être de vraies sources de soutien et de joie.",
+      "Pense à quelqu'un qui rend ton temps d'écran chaleureux plutôt que vide.",
+      "Un message attentionné peut rendre proche un lien lointain."
+     ],
+     "q": "Quel lien en ligne apprécies-tu, et pourquoi ?",
+     "c": "Envoie un message gentil à quelqu'un que tu ne connais qu'en ligne et dis-lui que tu l'apprécies."
+    },
+    "it": {
+     "t": "Connessioni online",
+     "g": "Apprezza le persone che conosci tramite app e messaggi.",
+     "p": [
+      "Amici online, chat di gruppo e comunità possono essere vere fonti di sostegno e divertimento.",
+      "Pensa a qualcuno che rende il tuo tempo davanti allo schermo caldo invece che vuoto.",
+      "Un messaggio premuroso può far sentire vicina una connessione lontana."
+     ],
+     "q": "Quale connessione online apprezzi e perché?",
+     "c": "Invia un messaggio gentile a qualcuno che conosci solo online e digli che lo apprezzi."
+    },
+    "pt": {
+     "t": "Ligações online",
+     "g": "Valoriza as pessoas que conheces através de apps e mensagens.",
+     "p": [
+      "Amigos online, chats de grupo e comunidades podem ser fontes reais de apoio e diversão.",
+      "Pensa em alguém que faz o teu tempo de ecrã parecer caloroso em vez de vazio.",
+      "Uma mensagem atenciosa pode fazer uma ligação distante parecer próxima."
+     ],
+     "q": "Que ligação online valorizas e porquê?",
+     "c": "Envia uma mensagem simpática a alguém que só conheces online e diz-lhe que o valorizas."
+    },
+    "pt_BR": {
+     "t": "Conexões online",
+     "g": "Valorize as pessoas que você conhece por apps e mensagens.",
+     "p": [
+      "Amigos online, grupos de conversa e comunidades podem ser fontes reais de apoio e diversão.",
+      "Pense em alguém que faz seu tempo de tela parecer caloroso em vez de vazio.",
+      "Uma mensagem atenciosa pode fazer uma conexão distante parecer próxima."
+     ],
+     "q": "Que conexão online você valoriza e por quê?",
+     "c": "Envie uma mensagem gentil a alguém que você só conhece online e diga que valoriza essa pessoa."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: gratitude for people",
+     "g": "Reflect on the people you appreciated and thanked this month.",
+     "p": [
+      "This month you looked at family, friends, helpers, strangers and neighbours.",
+      "Notice whose names appeared most and what they gave you.",
+      "People are a big part of what makes life good, and you are one for others."
+     ],
+     "q": "Which person from this month do you most want to keep appreciating?",
+     "c": "List five people you appreciate, and thank at least one of them today."
+    },
+    "de": {
+     "t": "Rückblick: Dankbarkeit für Menschen",
+     "g": "Betrachte die Menschen, die du diesen Monat geschätzt und bedankt hast.",
+     "p": [
+      "Diesen Monat hast du auf Familie, Freunde, Helfer, Fremde und Nachbarn geschaut.",
+      "Achte darauf, wessen Namen am häufigsten vorkamen und was sie dir gaben.",
+      "Menschen sind ein großer Teil dessen, was das Leben gut macht, und du bist es für andere."
+     ],
+     "q": "Welche Person dieses Monats möchtest du am meisten weiter wertschätzen?",
+     "c": "Liste fünf Menschen auf, die du schätzt, und danke heute mindestens einem davon."
+    },
+    "es": {
+     "t": "Repaso: gratitud por las personas",
+     "g": "Reflexiona sobre las personas que valoraste y agradeciste este mes.",
+     "p": [
+      "Este mes miraste a la familia, amigos, ayudantes, desconocidos y vecinos.",
+      "Fíjate en qué nombres aparecieron más y qué te dieron.",
+      "Las personas son gran parte de lo que hace buena la vida, y tú lo eres para otros."
+     ],
+     "q": "¿A qué persona de este mes quieres seguir valorando más?",
+     "c": "Haz una lista de cinco personas que valoras y da las gracias al menos a una hoy."
+    },
+    "fr": {
+     "t": "Bilan : gratitude pour les gens",
+     "g": "Réfléchis aux personnes que tu as appréciées et remerciées ce mois-ci.",
+     "p": [
+      "Ce mois-ci, tu as regardé la famille, les amis, les aides, les inconnus et les voisins.",
+      "Remarque quels noms sont apparus le plus et ce qu'ils t'ont donné.",
+      "Les gens sont une grande part de ce qui rend la vie bonne, et tu l'es pour les autres."
+     ],
+     "q": "Quelle personne de ce mois veux-tu continuer à apprécier le plus ?",
+     "c": "Fais la liste de cinq personnes que tu apprécies et remercie-en au moins une aujourd'hui."
+    },
+    "it": {
+     "t": "Ripasso: gratitudine per le persone",
+     "g": "Rifletti sulle persone che hai apprezzato e ringraziato questo mese.",
+     "p": [
+      "Questo mese hai guardato a famiglia, amici, aiutanti, sconosciuti e vicini.",
+      "Nota quali nomi sono comparsi di più e cosa ti hanno dato.",
+      "Le persone sono gran parte di ciò che rende buona la vita, e tu lo sei per gli altri."
+     ],
+     "q": "Quale persona di questo mese vuoi continuare ad apprezzare di più?",
+     "c": "Elenca cinque persone che apprezzi e ringrazia almeno una di loro oggi."
+    },
+    "pt": {
+     "t": "Revisão: gratidão pelas pessoas",
+     "g": "Reflete sobre as pessoas que valorizaste e a quem agradeceste este mês.",
+     "p": [
+      "Este mês olhaste para família, amigos, ajudantes, desconhecidos e vizinhos.",
+      "Repara em que nomes apareceram mais e o que te deram.",
+      "As pessoas são grande parte do que torna a vida boa, e tu és uma delas para os outros."
+     ],
+     "q": "Que pessoa deste mês queres continuar a valorizar mais?",
+     "c": "Lista cinco pessoas que valorizas e agradece a pelo menos uma delas hoje."
+    },
+    "pt_BR": {
+     "t": "Revisão: gratidão pelas pessoas",
+     "g": "Reflita sobre as pessoas que você valorizou e a quem agradeceu este mês.",
+     "p": [
+      "Este mês você olhou para família, amigos, ajudantes, desconhecidos e vizinhos.",
+      "Perceba quais nomes apareceram mais e o que eles deram a você.",
+      "As pessoas são grande parte do que torna a vida boa, e você é uma delas para os outros."
+     ],
+     "q": "Que pessoa deste mês você mais quer continuar valorizando?",
+     "c": "Liste cinco pessoas que você valoriza e agradeça a pelo menos uma delas hoje."
+    }
+   }
+  }
+ ]
+}

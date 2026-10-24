@@ -1,0 +1,835 @@
+{
+ "topic": "self_confidence",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What confidence really is",
+     "g": "Understand confidence as trust in your ability to learn and cope, not as never feeling nervous.",
+     "p": [
+      "Confident people still feel nervous; they act anyway because they trust they can handle what comes.",
+      "Confidence is not a trait you are born with. It is a skill that grows with practice.",
+      "You do not need to be sure of the result, only willing to try and learn along the way."
+     ],
+     "q": "When did you last do something while feeling a bit nervous, and how did it go?",
+     "c": "Do one small thing today that makes you slightly nervous, and say to yourself: I can handle this."
+    },
+    "de": {
+     "t": "Was Selbstvertrauen wirklich ist",
+     "g": "Verstehe Selbstvertrauen als Vertrauen in deine Fähigkeit zu lernen und klarzukommen, nicht als Nervenfreiheit.",
+     "p": [
+      "Selbstsichere Menschen sind auch nervös; sie handeln trotzdem, weil sie darauf vertrauen, damit umgehen zu können.",
+      "Selbstvertrauen ist keine angeborene Eigenschaft, sondern eine Fähigkeit, die mit Übung wächst.",
+      "Du musst das Ergebnis nicht kennen, nur bereit sein, es zu versuchen und dabei zu lernen."
+     ],
+     "q": "Wann hast du zuletzt etwas getan, obwohl du nervös warst, und wie ist es gelaufen?",
+     "c": "Tu heute eine Kleinigkeit, die dich leicht nervös macht, und sag dir: Das schaffe ich."
+    },
+    "es": {
+     "t": "Qué es de verdad la confianza",
+     "g": "Entiende la confianza como fe en tu capacidad de aprender y afrontar, no como no sentir nervios nunca.",
+     "p": [
+      "Las personas seguras también sienten nervios; actúan igualmente porque confían en poder con lo que venga.",
+      "La confianza no es un rasgo de nacimiento. Es una habilidad que crece con la práctica.",
+      "No necesitas estar seguro del resultado, solo querer intentarlo y aprender por el camino."
+     ],
+     "q": "¿Cuándo hiciste algo por última vez sintiendo algo de nervios y cómo te fue?",
+     "c": "Haz hoy algo pequeño que te ponga un poco nervioso y dite: puedo con esto."
+    },
+    "fr": {
+     "t": "Ce qu'est vraiment la confiance en soi",
+     "g": "Comprends la confiance comme la foi en ta capacité d'apprendre et de t'adapter, pas comme l'absence de trac.",
+     "p": [
+      "Les personnes confiantes ont aussi le trac; elles agissent quand même car elles se savent capables de gérer.",
+      "La confiance n'est pas un don de naissance. C'est une compétence qui se développe en s'exerçant.",
+      "Tu n'as pas besoin d'être sûr du résultat, seulement d'oser essayer et d'apprendre en chemin."
+     ],
+     "q": "Quand as-tu fait quelque chose en ayant un peu le trac, et comment cela s'est-il passé ?",
+     "c": "Fais aujourd'hui une petite chose qui te met un peu mal à l'aise et dis-toi : je peux y arriver."
+    },
+    "it": {
+     "t": "Cos'è davvero la fiducia in sé",
+     "g": "Intendi la fiducia come credere nella tua capacità di imparare e cavartela, non come assenza di nervosismo.",
+     "p": [
+      "Chi è sicuro di sé si agita comunque; agisce lo stesso perché sa di poter gestire ciò che arriva.",
+      "La fiducia in sé non è un tratto innato. È una competenza che cresce con l'allenamento.",
+      "Non serve essere certi del risultato, basta voler provare e imparare strada facendo."
+     ],
+     "q": "Quando hai fatto qualcosa l'ultima volta pur sentendoti un po' teso, e com'è andata?",
+     "c": "Oggi fai una piccola cosa che ti rende un po' nervoso e ripeti a te stesso: ce la posso fare."
+    },
+    "pt": {
+     "t": "O que é realmente a confiança",
+     "g": "Percebe a confiança como acreditar na tua capacidade de aprender e lidar, e não como nunca ficar nervoso.",
+     "p": [
+      "Quem tem confiança também fica nervoso; age na mesma porque acredita que consegue lidar com o que vier.",
+      "A confiança não é uma característica de nascença. É uma competência que cresce com a prática.",
+      "Não precisas de ter a certeza do resultado, só de estar disposto a tentar e a aprender pelo caminho."
+     ],
+     "q": "Quando foi a última vez que fizeste algo sentindo-te um pouco nervoso, e como correu?",
+     "c": "Faz hoje uma coisa pequena que te deixe um pouco nervoso e diz para ti: eu consigo lidar com isto."
+    },
+    "pt_BR": {
+     "t": "O que é realmente a autoconfiança",
+     "g": "Entenda a autoconfiança como acreditar na sua capacidade de aprender e lidar, não como nunca ficar nervoso.",
+     "p": [
+      "Pessoas confiantes também ficam nervosas; elas agem mesmo assim porque acreditam que dão conta do que vier.",
+      "Autoconfiança não é um traço de nascença. É uma habilidade que cresce com a prática.",
+      "Você não precisa ter certeza do resultado, só topar tentar e aprender pelo caminho."
+     ],
+     "q": "Quando foi a última vez que você fez algo sentindo um friozinho, e como foi?",
+     "c": "Faça hoje uma coisinha que te deixe um pouco nervoso e diga a si mesmo: eu dou conta disso."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Confidence versus arrogance",
+     "g": "See how quiet, kind confidence differs from showing off or needing to win.",
+     "p": [
+      "Arrogance needs an audience; real confidence is comfortable even when nobody is watching.",
+      "Confident people can say I don't know, ask for help and celebrate other people's success.",
+      "Showing off often hides doubt. Calm self-trust has nothing to prove."
+     ],
+     "q": "Think of someone whose confidence you admire. What do they do that feels warm rather than loud?",
+     "c": "Today, congratulate someone sincerely on something they did well, with no need to top it."
+    },
+    "de": {
+     "t": "Selbstvertrauen oder Arroganz",
+     "g": "Erkenne, wie ruhiges, freundliches Selbstvertrauen sich von Angeberei und Siegeszwang unterscheidet.",
+     "p": [
+      "Arroganz braucht Publikum; echtes Selbstvertrauen ist auch dann entspannt, wenn niemand zusieht.",
+      "Selbstsichere Menschen können sagen: Das weiß ich nicht, um Hilfe bitten und andere mitfeiern.",
+      "Angeberei verdeckt oft Zweifel. Ruhiges Selbstvertrauen muss nichts beweisen."
+     ],
+     "q": "Denk an jemanden, dessen Selbstsicherheit du bewunderst. Was macht diese Person warm statt laut?",
+     "c": "Gratuliere heute jemandem aufrichtig zu etwas Gelungenem, ohne es überbieten zu wollen."
+    },
+    "es": {
+     "t": "Confianza frente a arrogancia",
+     "g": "Descubre cómo la confianza tranquila y amable se distingue de presumir o necesitar ganar.",
+     "p": [
+      "La arrogancia necesita público; la confianza real está cómoda aunque nadie mire.",
+      "Las personas seguras pueden decir no lo sé, pedir ayuda y alegrarse por el éxito ajeno.",
+      "Presumir suele esconder dudas. La seguridad serena no tiene nada que demostrar."
+     ],
+     "q": "Piensa en alguien cuya seguridad admiras. ¿Qué hace para que se sienta cálida y no ruidosa?",
+     "c": "Hoy felicita con sinceridad a alguien por algo bien hecho, sin necesidad de superarlo."
+    },
+    "fr": {
+     "t": "Confiance ou arrogance",
+     "g": "Vois en quoi une confiance calme et bienveillante diffère de la vantardise ou du besoin de gagner.",
+     "p": [
+      "L'arrogance a besoin d'un public; la vraie confiance est à l'aise même quand personne ne regarde.",
+      "Les personnes confiantes savent dire je ne sais pas, demander de l'aide et se réjouir du succès des autres.",
+      "Se vanter cache souvent du doute. Une confiance sereine n'a rien à prouver."
+     ],
+     "q": "Pense à quelqu'un dont tu admires l'assurance. Qu'est-ce qui la rend chaleureuse plutôt que bruyante ?",
+     "c": "Aujourd'hui, félicite sincèrement quelqu'un pour une belle réussite, sans chercher à faire mieux."
+    },
+    "it": {
+     "t": "Sicurezza o arroganza",
+     "g": "Scopri come una sicurezza tranquilla e gentile si distingue dal vantarsi o dal bisogno di vincere.",
+     "p": [
+      "L'arroganza ha bisogno di un pubblico; la vera sicurezza sta bene anche quando nessuno guarda.",
+      "Chi è sicuro di sé sa dire non lo so, chiedere aiuto e gioire dei successi altrui.",
+      "Vantarsi spesso nasconde dubbi. La fiducia serena non ha nulla da dimostrare."
+     ],
+     "q": "Pensa a qualcuno di cui ammiri la sicurezza. Cosa fa per sembrare caloroso e non rumoroso?",
+     "c": "Oggi congratulati sinceramente con qualcuno per qualcosa di ben fatto, senza voler fare di meglio."
+    },
+    "pt": {
+     "t": "Confiança versus arrogância",
+     "g": "Vê como a confiança tranquila e gentil se distingue de se exibir ou de precisar de ganhar.",
+     "p": [
+      "A arrogância precisa de plateia; a confiança verdadeira está à vontade mesmo sem ninguém a ver.",
+      "Quem tem confiança sabe dizer não sei, pedir ajuda e alegrar-se com o sucesso dos outros.",
+      "Exibir-se esconde muitas vezes dúvida. A confiança serena não tem nada a provar."
+     ],
+     "q": "Pensa em alguém cuja confiança admiras. O que faz essa pessoa para parecer calorosa e não barulhenta?",
+     "c": "Hoje dá os parabéns com sinceridade a alguém por algo bem feito, sem querer fazer melhor."
+    },
+    "pt_BR": {
+     "t": "Confiança versus arrogância",
+     "g": "Veja como a confiança tranquila e gentil é diferente de se exibir ou precisar vencer.",
+     "p": [
+      "A arrogância precisa de plateia; a confiança de verdade fica à vontade mesmo sem ninguém olhando.",
+      "Quem tem confiança sabe dizer não sei, pedir ajuda e torcer pelo sucesso dos outros.",
+      "Se exibir muitas vezes esconde dúvida. A segurança serena não tem nada a provar."
+     ],
+     "q": "Pense em alguém cuja confiança você admira. O que essa pessoa faz para parecer acolhedora e não barulhenta?",
+     "c": "Hoje parabenize alguém com sinceridade por algo bem feito, sem querer superar."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your confidence snapshot",
+     "g": "Notice where you already feel sure of yourself and where you feel less so.",
+     "p": [
+      "Confidence is not one block. You can feel strong at cooking and shaky at speaking up.",
+      "Listing areas of life such as work, friends, family and hobbies shows your real map.",
+      "A snapshot is not a verdict. It is just where you start, and starting points can move."
+     ],
+     "q": "In which area of life do you feel most sure of yourself, and where would you like to feel steadier?",
+     "c": "Write down five areas of life and give each a score from 1 to 5, with no judging."
+    },
+    "de": {
+     "t": "Dein Selbstvertrauens-Schnappschuss",
+     "g": "Bemerke, wo du dir schon sicher bist und wo weniger.",
+     "p": [
+      "Selbstvertrauen ist kein einheitlicher Block. Beim Kochen kannst du stark sein und beim Reden unsicher.",
+      "Bereiche wie Beruf, Freunde, Familie und Hobbys aufzulisten zeigt deine echte Landkarte.",
+      "Ein Schnappschuss ist kein Urteil. Es ist nur dein Startpunkt, und Startpunkte lassen sich verschieben."
+     ],
+     "q": "In welchem Lebensbereich fühlst du dich am sichersten, und wo möchtest du dich stabiler fühlen?",
+     "c": "Schreib fünf Lebensbereiche auf und gib jedem eine Note von 1 bis 5, ohne dich zu bewerten."
+    },
+    "es": {
+     "t": "Tu foto de confianza actual",
+     "g": "Fíjate en dónde ya te sientes seguro y en dónde te sientes menos.",
+     "p": [
+      "La confianza no es un bloque único. Puedes sentirte fuerte cocinando e inseguro al opinar.",
+      "Listar áreas como trabajo, amistades, familia y aficiones muestra tu mapa real.",
+      "Una foto no es un veredicto. Es solo tu punto de partida, y los puntos de partida se pueden mover."
+     ],
+     "q": "¿En qué área de tu vida te sientes más seguro y en cuál te gustaría sentirte más firme?",
+     "c": "Anota cinco áreas de tu vida y ponle a cada una una nota del 1 al 5, sin juzgarte."
+    },
+    "fr": {
+     "t": "Ton instantané de confiance",
+     "g": "Repère où tu te sens déjà sûr de toi et où tu l'es moins.",
+     "p": [
+      "La confiance n'est pas un bloc. On peut être à l'aise en cuisine et hésitant pour prendre la parole.",
+      "Lister des domaines comme le travail, les amis, la famille et les loisirs dessine ta vraie carte.",
+      "Un instantané n'est pas un verdict. C'est un point de départ, et un point de départ peut bouger."
+     ],
+     "q": "Dans quel domaine de ta vie te sens-tu le plus sûr de toi, et où aimerais-tu être plus stable ?",
+     "c": "Note cinq domaines de ta vie et donne à chacun une note de 1 à 5, sans te juger."
+    },
+    "it": {
+     "t": "La tua fotografia della fiducia",
+     "g": "Nota dove ti senti già sicuro e dove un po' meno.",
+     "p": [
+      "La fiducia non è un blocco unico. Puoi sentirti forte ai fornelli e incerto quando devi esprimerti.",
+      "Elencare aree come lavoro, amici, famiglia e hobby mostra la tua mappa reale.",
+      "Una fotografia non è un verdetto. È solo il punto di partenza, e i punti di partenza si spostano."
+     ],
+     "q": "In quale area della vita ti senti più sicuro e dove vorresti sentirti più saldo?",
+     "c": "Scrivi cinque aree della tua vita e dai a ciascuna un voto da 1 a 5, senza giudicarti."
+    },
+    "pt": {
+     "t": "O teu retrato de confiança",
+     "g": "Repara onde já te sentes seguro e onde te sentes menos.",
+     "p": [
+      "A confiança não é um bloco único. Podes sentir-te forte a cozinhar e inseguro a falar em público.",
+      "Listar áreas como trabalho, amigos, família e passatempos mostra o teu mapa real.",
+      "Um retrato não é uma sentença. É só o ponto de partida, e os pontos de partida mudam."
+     ],
+     "q": "Em que área da vida te sentes mais seguro e onde gostarias de te sentir mais firme?",
+     "c": "Escreve cinco áreas da tua vida e dá a cada uma uma nota de 1 a 5, sem te julgares."
+    },
+    "pt_BR": {
+     "t": "Seu retrato de autoconfiança",
+     "g": "Perceba onde você já se sente seguro e onde se sente menos.",
+     "p": [
+      "A confiança não é um bloco só. Você pode se sentir forte na cozinha e inseguro para se posicionar.",
+      "Listar áreas como trabalho, amigos, família e hobbies mostra o seu mapa de verdade.",
+      "Um retrato não é um veredito. É só o ponto de partida, e pontos de partida mudam."
+     ],
+     "q": "Em qual área da vida você se sente mais seguro e onde gostaria de se sentir mais firme?",
+     "c": "Anote cinco áreas da sua vida e dê a cada uma uma nota de 1 a 5, sem se julgar."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The power of one small win",
+     "g": "Learn why finishing a tiny task builds momentum and proof that you can follow through.",
+     "p": [
+      "Each finished task is a small piece of evidence that you do what you say.",
+      "Small wins are easy to repeat, and repetition is what builds a confident feeling.",
+      "Pick tasks so small that starting feels almost silly, like making the bed or answering one message."
+     ],
+     "q": "What is one tiny task you could finish in five minutes today?",
+     "c": "Choose one task under five minutes, finish it, and take a moment to notice the good feeling."
+    },
+    "de": {
+     "t": "Die Kraft eines kleinen Erfolgs",
+     "g": "Erfahre, warum eine winzige erledigte Aufgabe Schwung gibt und beweist, dass du dranbleiben kannst.",
+     "p": [
+      "Jede erledigte Aufgabe ist ein kleiner Beleg dafür, dass du hältst, was du sagst.",
+      "Kleine Erfolge lassen sich leicht wiederholen, und Wiederholung baut das Selbstvertrauen auf.",
+      "Wähle Aufgaben, die so klein sind, dass der Start fast albern wirkt, etwa das Bett machen oder eine Nachricht beantworten."
+     ],
+     "q": "Welche winzige Aufgabe könntest du heute in fünf Minuten erledigen?",
+     "c": "Such dir eine Aufgabe unter fünf Minuten aus, erledige sie und spür kurz das gute Gefühl."
+    },
+    "es": {
+     "t": "El poder de una pequeña victoria",
+     "g": "Aprende por qué terminar una tarea mínima da impulso y prueba que eres capaz de cumplir.",
+     "p": [
+      "Cada tarea terminada es una pequeña prueba de que haces lo que dices.",
+      "Las pequeñas victorias son fáciles de repetir, y repetir es lo que construye la sensación de seguridad.",
+      "Elige tareas tan pequeñas que empezar parezca casi una tontería, como hacer la cama o contestar un mensaje."
+     ],
+     "q": "¿Qué tarea diminuta podrías terminar hoy en cinco minutos?",
+     "c": "Elige una tarea de menos de cinco minutos, termínala y detente a notar la buena sensación."
+    },
+    "fr": {
+     "t": "Le pouvoir d'une petite victoire",
+     "g": "Découvre pourquoi finir une toute petite tâche crée de l'élan et prouve que tu tiens parole.",
+     "p": [
+      "Chaque tâche terminée est une petite preuve que tu fais ce que tu dis.",
+      "Les petites victoires se répètent facilement, et la répétition construit le sentiment de confiance.",
+      "Choisis des tâches si petites que commencer semble presque ridicule, comme faire son lit ou répondre à un message."
+     ],
+     "q": "Quelle toute petite tâche pourrais-tu terminer aujourd'hui en cinq minutes ?",
+     "c": "Choisis une tâche de moins de cinq minutes, termine-la et prends un instant pour sentir ce bien-être."
+    },
+    "it": {
+     "t": "Il potere di una piccola vittoria",
+     "g": "Scopri perché finire un compito minuscolo dà slancio e prova che sai portare a termine.",
+     "p": [
+      "Ogni compito concluso è una piccola prova che fai ciò che dici.",
+      "Le piccole vittorie si ripetono facilmente, e la ripetizione costruisce la sensazione di sicurezza.",
+      "Scegli compiti così piccoli che iniziare sembra quasi sciocco, come rifare il letto o rispondere a un messaggio."
+     ],
+     "q": "Quale compito minuscolo potresti finire oggi in cinque minuti?",
+     "c": "Scegli un compito sotto i cinque minuti, finiscilo e fermati a notare la bella sensazione."
+    },
+    "pt": {
+     "t": "O poder de uma pequena vitória",
+     "g": "Percebe por que concluir uma tarefa minúscula dá impulso e prova que consegues cumprir.",
+     "p": [
+      "Cada tarefa concluída é uma pequena prova de que fazes o que dizes.",
+      "As pequenas vitórias repetem-se com facilidade, e a repetição é o que constrói a sensação de confiança.",
+      "Escolhe tarefas tão pequenas que começar parece quase ridículo, como fazer a cama ou responder a uma mensagem."
+     ],
+     "q": "Que tarefa minúscula podias concluir hoje em cinco minutos?",
+     "c": "Escolhe uma tarefa com menos de cinco minutos, conclui-a e repara no bom sentimento."
+    },
+    "pt_BR": {
+     "t": "O poder de uma pequena vitória",
+     "g": "Entenda por que terminar uma tarefa minúscula dá impulso e prova que você consegue cumprir.",
+     "p": [
+      "Cada tarefa concluída é uma pequena prova de que você faz o que diz.",
+      "Pequenas vitórias são fáceis de repetir, e repetir é o que constrói a sensação de confiança.",
+      "Escolha tarefas tão pequenas que começar pareça até bobagem, como arrumar a cama ou responder uma mensagem."
+     ],
+     "q": "Qual tarefa minúscula você poderia terminar hoje em cinco minutos?",
+     "c": "Escolha uma tarefa de menos de cinco minutos, termine e repare na sensação boa."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Starting a wins journal",
+     "g": "Write down three things you did well each day, however small.",
+     "p": [
+      "Our minds remember mistakes more than successes, so we have to record the good on purpose.",
+      "Wins can be tiny: you made a call, stayed calm, helped someone or simply showed up.",
+      "Three lines at night is enough. Over weeks the page becomes real proof of your progress."
+     ],
+     "q": "What is one thing you did well in the last two days that you have not given yourself credit for?",
+     "c": "Tonight write three things you did well today, and keep it up for a whole week."
+    },
+    "de": {
+     "t": "Ein Erfolgstagebuch beginnen",
+     "g": "Schreibe jeden Tag drei Dinge auf, die dir gelungen sind, auch kleine.",
+     "p": [
+      "Unser Kopf behält Fehler besser als Erfolge, also müssen wir das Gute bewusst festhalten.",
+      "Erfolge dürfen winzig sein: ein Anruf, Ruhe bewahrt, jemandem geholfen oder einfach erschienen.",
+      "Drei Zeilen am Abend genügen. Über Wochen wird die Seite zum echten Beweis deines Fortschritts."
+     ],
+     "q": "Was ist dir in den letzten zwei Tagen gut gelungen, ohne dass du es dir angerechnet hast?",
+     "c": "Schreib heute Abend drei gelungene Dinge auf und halte das eine ganze Woche durch."
+    },
+    "es": {
+     "t": "Empieza un diario de logros",
+     "g": "Anota cada día tres cosas que hiciste bien, por pequeñas que sean.",
+     "p": [
+      "Nuestra mente recuerda más los errores que los aciertos, así que hay que anotar lo bueno a propósito.",
+      "Los logros pueden ser mínimos: hiciste una llamada, mantuviste la calma, ayudaste a alguien o simplemente apareciste.",
+      "Tres líneas por la noche bastan. Con las semanas, la página se vuelve una prueba real de tu avance."
+     ],
+     "q": "¿Qué has hecho bien en los últimos dos días y todavía no te has reconocido?",
+     "c": "Esta noche anota tres cosas que hiciste bien hoy y mantenlo durante una semana entera."
+    },
+    "fr": {
+     "t": "Commencer un journal de réussites",
+     "g": "Note chaque jour trois choses que tu as bien faites, même toutes petites.",
+     "p": [
+      "Notre esprit retient mieux les erreurs que les réussites, il faut donc noter le positif exprès.",
+      "Une réussite peut être minuscule : un appel passé, du calme gardé, un coup de main ou simplement être venu.",
+      "Trois lignes le soir suffisent. Au fil des semaines, la page devient une vraie preuve de tes progrès."
+     ],
+     "q": "Qu'as-tu bien fait ces deux derniers jours sans t'en accorder le mérite ?",
+     "c": "Ce soir, note trois choses bien faites aujourd'hui et continue pendant une semaine entière."
+    },
+    "it": {
+     "t": "Inizia un diario dei successi",
+     "g": "Scrivi ogni giorno tre cose che hai fatto bene, per piccole che siano.",
+     "p": [
+      "La mente ricorda gli errori più dei successi, perciò il positivo va annotato di proposito.",
+      "I successi possono essere minuscoli: hai fatto una telefonata, hai mantenuto la calma, hai aiutato qualcuno o ti sei presentato.",
+      "Bastano tre righe la sera. Con le settimane la pagina diventa una prova reale dei tuoi progressi."
+     ],
+     "q": "Cosa hai fatto bene negli ultimi due giorni senza riconoscertelo?",
+     "c": "Stasera scrivi tre cose fatte bene oggi e continua per un'intera settimana."
+    },
+    "pt": {
+     "t": "Começar um diário de vitórias",
+     "g": "Escreve todos os dias três coisas que fizeste bem, por pequenas que sejam.",
+     "p": [
+      "A nossa mente guarda mais os erros do que os êxitos, por isso temos de registar o que é bom de propósito.",
+      "As vitórias podem ser minúsculas: fizeste uma chamada, mantiveste a calma, ajudaste alguém ou simplesmente apareceste.",
+      "Três linhas à noite chegam. Ao fim de semanas, a página torna-se prova real do teu progresso."
+     ],
+     "q": "O que fizeste bem nos últimos dois dias e ainda não reconheceste a ti próprio?",
+     "c": "Esta noite escreve três coisas que fizeste bem hoje e mantém isto durante uma semana inteira."
+    },
+    "pt_BR": {
+     "t": "Começando um diário de conquistas",
+     "g": "Escreva todo dia três coisas que você fez bem, por menores que sejam.",
+     "p": [
+      "Nossa mente guarda mais os erros do que os acertos, então é preciso registrar o que é bom de propósito.",
+      "As conquistas podem ser mínimas: você fez uma ligação, manteve a calma, ajudou alguém ou simplesmente apareceu.",
+      "Três linhas à noite bastam. Com as semanas, a página vira uma prova real do seu progresso."
+     ],
+     "q": "O que você fez bem nos últimos dois dias e ainda não se deu crédito?",
+     "c": "Hoje à noite escreva três coisas que você fez bem e mantenha isso por uma semana inteira."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Noticing your inner voice",
+     "g": "Become aware of the words you use when you talk to yourself.",
+     "p": [
+      "Everyone has an inner commentator, and it often runs in the background unnoticed.",
+      "You can't change a voice you haven't heard, so the first step is simply listening.",
+      "Notice without judging: just catch the phrase and name it, like there goes the critic again."
+     ],
+     "q": "What is one phrase your inner voice often says to you when something goes wrong?",
+     "c": "Today catch three things you say to yourself and jot them down exactly as you heard them."
+    },
+    "de": {
+     "t": "Deine innere Stimme bemerken",
+     "g": "Werde dir der Worte bewusst, mit denen du mit dir selbst sprichst.",
+     "p": [
+      "Jeder hat einen inneren Kommentator, der oft unbemerkt im Hintergrund läuft.",
+      "Eine Stimme, die du nicht gehört hast, kannst du nicht ändern; der erste Schritt ist also Zuhören.",
+      "Bemerke ohne zu urteilen: Fang den Satz auf und benenne ihn, etwa: Da ist der Kritiker wieder."
+     ],
+     "q": "Welchen Satz sagt deine innere Stimme oft, wenn etwas schiefgeht?",
+     "c": "Fang heute drei Dinge auf, die du zu dir sagst, und notiere sie genau so, wie du sie gehört hast."
+    },
+    "es": {
+     "t": "Notar tu voz interior",
+     "g": "Toma conciencia de las palabras que usas cuando te hablas a ti mismo.",
+     "p": [
+      "Todos tenemos un comentarista interno que suele funcionar de fondo sin que lo notemos.",
+      "No puedes cambiar una voz que no has oído, así que el primer paso es simplemente escucharla.",
+      "Observa sin juzgar: atrapa la frase y ponle nombre, como ahí está el crítico otra vez."
+     ],
+     "q": "¿Qué frase te dice a menudo tu voz interior cuando algo sale mal?",
+     "c": "Hoy atrapa tres cosas que te dices y anótalas tal como las oíste."
+    },
+    "fr": {
+     "t": "Remarquer ta voix intérieure",
+     "g": "Prends conscience des mots que tu emploies quand tu te parles.",
+     "p": [
+      "Chacun a un commentateur intérieur qui tourne souvent en arrière-plan sans qu'on le remarque.",
+      "On ne peut pas changer une voix qu'on n'a pas entendue; la première étape est donc d'écouter.",
+      "Observe sans juger : attrape la phrase et nomme-la, par exemple voilà le critique qui revient."
+     ],
+     "q": "Quelle phrase ta voix intérieure te répète-t-elle souvent quand quelque chose tourne mal ?",
+     "c": "Aujourd'hui, attrape trois choses que tu te dis et note-les exactement comme tu les as entendues."
+    },
+    "it": {
+     "t": "Ascoltare la tua voce interiore",
+     "g": "Diventa consapevole delle parole che usi quando parli con te stesso.",
+     "p": [
+      "Ognuno ha un commentatore interiore che spesso lavora in sottofondo senza essere notato.",
+      "Non puoi cambiare una voce che non hai sentito, quindi il primo passo è semplicemente ascoltare.",
+      "Osserva senza giudicare: cattura la frase e dalle un nome, tipo ecco di nuovo il critico."
+     ],
+     "q": "Quale frase ti ripete spesso la tua voce interiore quando qualcosa va storto?",
+     "c": "Oggi cattura tre cose che dici a te stesso e annotale esattamente come le hai sentite."
+    },
+    "pt": {
+     "t": "Reparar na tua voz interior",
+     "g": "Toma consciência das palavras que usas quando falas contigo.",
+     "p": [
+      "Todos temos um comentador interior que muitas vezes funciona em segundo plano sem darmos conta.",
+      "Não podes mudar uma voz que não ouviste, por isso o primeiro passo é simplesmente escutar.",
+      "Repara sem julgar: apanha a frase e dá-lhe um nome, como lá está o crítico outra vez."
+     ],
+     "q": "Que frase te diz muitas vezes a tua voz interior quando algo corre mal?",
+     "c": "Hoje apanha três coisas que dizes a ti próprio e anota-as exatamente como as ouviste."
+    },
+    "pt_BR": {
+     "t": "Percebendo sua voz interior",
+     "g": "Fique atento às palavras que você usa quando fala consigo mesmo.",
+     "p": [
+      "Todo mundo tem um comentarista interno que muitas vezes roda ao fundo sem a gente notar.",
+      "Você não muda uma voz que não ouviu, então o primeiro passo é simplesmente escutar.",
+      "Perceba sem julgar: pegue a frase e dê um nome, tipo lá vem o crítico de novo."
+     ],
+     "q": "Que frase sua voz interior costuma dizer quando algo dá errado?",
+     "c": "Hoje pegue três coisas que você diz a si mesmo e anote exatamente como ouviu."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Talking to yourself like a friend",
+     "g": "Replace harsh self-talk with the tone you would use for a good friend.",
+     "p": [
+      "You would never tell a friend they are hopeless, so you don't have to say it to yourself.",
+      "Kind does not mean fake. A friend is honest but warm: that went badly, and you can try again.",
+      "A softer tone actually makes it easier to learn from mistakes and keep going."
+     ],
+     "q": "What would you say to a friend who made the same mistake you were hard on yourself about?",
+     "c": "Take one harsh thought today and rewrite it the way you would say it to a friend."
+    },
+    "de": {
+     "t": "Mit dir sprechen wie mit einem Freund",
+     "g": "Ersetze harte Selbstkritik durch den Ton, den du einem guten Freund gegenüber hättest.",
+     "p": [
+      "Einem Freund würdest du nie sagen, er sei hoffnungslos, also musst du das auch nicht zu dir sagen.",
+      "Freundlich heißt nicht falsch. Ein Freund ist ehrlich, aber warm: Das ging schief, du kannst es nochmal versuchen.",
+      "Ein weicherer Ton macht es leichter, aus Fehlern zu lernen und weiterzumachen."
+     ],
+     "q": "Was würdest du einem Freund sagen, der denselben Fehler gemacht hat, für den du dich selbst hart kritisierst?",
+     "c": "Nimm heute einen harten Gedanken und formuliere ihn so um, wie du ihn einem Freund sagen würdest."
+    },
+    "es": {
+     "t": "Hablarte como a un amigo",
+     "g": "Cambia la autocrítica dura por el tono que usarías con un buen amigo.",
+     "p": [
+      "A un amigo jamás le dirías que no tiene remedio, así que tampoco hace falta decírtelo a ti.",
+      "Amable no es falso. Un amigo es honesto pero cálido: eso salió mal, y puedes volver a intentarlo.",
+      "Un tono más suave facilita aprender de los errores y seguir adelante."
+     ],
+     "q": "¿Qué le dirías a un amigo que cometió el mismo error por el que tú te criticas con dureza?",
+     "c": "Toma hoy un pensamiento duro y reescríbelo como se lo dirías a un amigo."
+    },
+    "fr": {
+     "t": "Te parler comme à un ami",
+     "g": "Remplace la dureté envers toi-même par le ton que tu aurais avec un bon ami.",
+     "p": [
+      "Tu ne dirais jamais à un ami qu'il est nul, tu n'as donc pas à te le dire non plus.",
+      "Bienveillant ne veut pas dire faux. Un ami est honnête mais chaleureux : ça s'est mal passé, tu peux réessayer.",
+      "Un ton plus doux aide à tirer des leçons de ses erreurs et à continuer."
+     ],
+     "q": "Que dirais-tu à un ami qui a fait la même erreur que celle pour laquelle tu te juges durement ?",
+     "c": "Prends aujourd'hui une pensée dure et reformule-la comme tu la dirais à un ami."
+    },
+    "it": {
+     "t": "Parlarti come a un amico",
+     "g": "Sostituisci l'autocritica dura con il tono che useresti con un buon amico.",
+     "p": [
+      "A un amico non diresti mai che è un caso perso, quindi non serve dirlo a te stesso.",
+      "Gentile non vuol dire falso. Un amico è sincero ma caloroso: è andata male, puoi riprovare.",
+      "Un tono più morbido rende più facile imparare dagli errori e andare avanti."
+     ],
+     "q": "Cosa diresti a un amico che ha fatto lo stesso errore per cui sei duro con te stesso?",
+     "c": "Oggi prendi un pensiero duro e riscrivilo come lo diresti a un amico."
+    },
+    "pt": {
+     "t": "Falar contigo como a um amigo",
+     "g": "Troca a autocrítica dura pelo tom que usarias com um bom amigo.",
+     "p": [
+      "A um amigo nunca dirias que não tem jeito nenhum, por isso também não precisas de o dizer a ti.",
+      "Gentil não é o mesmo que falso. Um amigo é honesto mas caloroso: correu mal, e podes tentar de novo.",
+      "Um tom mais suave facilita aprender com os erros e continuar."
+     ],
+     "q": "O que dirias a um amigo que cometeu o mesmo erro pelo qual és duro contigo?",
+     "c": "Hoje pega num pensamento duro e reescreve-o como o dirias a um amigo."
+    },
+    "pt_BR": {
+     "t": "Falando consigo como com um amigo",
+     "g": "Troque a autocrítica dura pelo tom que você usaria com um bom amigo.",
+     "p": [
+      "Você nunca diria a um amigo que ele é um caso perdido, então também não precisa dizer isso a si mesmo.",
+      "Gentil não é falso. Um amigo é sincero mas acolhedor: deu errado, e dá para tentar de novo.",
+      "Um tom mais suave facilita aprender com os erros e seguir em frente."
+     ],
+     "q": "O que você diria a um amigo que cometeu o mesmo erro pelo qual você se cobra tanto?",
+     "c": "Hoje pegue um pensamento duro e reescreva do jeito que diria a um amigo."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Catching all-or-nothing thoughts",
+     "g": "Spot words like always and never and find a fairer version.",
+     "p": [
+      "Words like always, never, everyone and nothing turn one event into a rule about you.",
+      "A fairer version is more accurate: I stumbled this time, not I always fail.",
+      "Looking for exceptions loosens the thought. Think of one time it went at least okay."
+     ],
+     "q": "Which all-or-nothing phrase do you catch yourself saying, and what would a fairer version be?",
+     "c": "Catch one always or never thought today and rewrite it with sometimes or this time."
+    },
+    "de": {
+     "t": "Alles-oder-nichts-Gedanken erwischen",
+     "g": "Erkenne Wörter wie immer und nie und finde eine gerechtere Version.",
+     "p": [
+      "Wörter wie immer, nie, alle und nichts machen aus einem Ereignis eine Regel über dich.",
+      "Eine gerechtere Version ist genauer: Diesmal bin ich gestolpert, nicht: Ich scheitere immer.",
+      "Das Suchen nach Ausnahmen lockert den Gedanken. Denk an ein Mal, bei dem es zumindest okay lief."
+     ],
+     "q": "Welchen Alles-oder-nichts-Satz sagst du dir, und wie wäre eine gerechtere Version?",
+     "c": "Fang heute einen Immer- oder Nie-Gedanken ab und formuliere ihn mit manchmal oder diesmal um."
+    },
+    "es": {
+     "t": "Cazar pensamientos de todo o nada",
+     "g": "Detecta palabras como siempre y nunca y busca una versión más justa.",
+     "p": [
+      "Palabras como siempre, nunca, todos y nada convierten un suceso en una regla sobre ti.",
+      "Una versión más justa es más exacta: esta vez tropecé, no siempre fracaso.",
+      "Buscar excepciones afloja el pensamiento. Recuerda una vez en que salió al menos bien."
+     ],
+     "q": "¿Qué frase de todo o nada te sorprendes diciendo y cuál sería una versión más justa?",
+     "c": "Hoy atrapa un pensamiento de siempre o nunca y reescríbelo con a veces o esta vez."
+    },
+    "fr": {
+     "t": "Repérer les pensées tout ou rien",
+     "g": "Repère des mots comme toujours et jamais et trouve une version plus juste.",
+     "p": [
+      "Des mots comme toujours, jamais, tout le monde et rien transforment un événement en règle sur toi.",
+      "Une version plus juste est plus exacte : cette fois j'ai trébuché, pas je rate toujours tout.",
+      "Chercher des exceptions détend la pensée. Souviens-toi d'une fois où cela s'est au moins bien passé."
+     ],
+     "q": "Quelle phrase tout ou rien te surprends-tu à dire, et quelle serait une version plus juste ?",
+     "c": "Aujourd'hui, repère une pensée avec toujours ou jamais et reformule-la avec parfois ou cette fois."
+    },
+    "it": {
+     "t": "Cogliere i pensieri tutto o niente",
+     "g": "Individua parole come sempre e mai e trova una versione più giusta.",
+     "p": [
+      "Parole come sempre, mai, tutti e niente trasformano un episodio in una regola su di te.",
+      "Una versione più giusta è più accurata: stavolta sono inciampato, non fallisco sempre.",
+      "Cercare le eccezioni allenta il pensiero. Ricorda una volta in cui è andata almeno discretamente."
+     ],
+     "q": "Quale frase tutto o niente ti sorprendi a dire e quale sarebbe una versione più giusta?",
+     "c": "Oggi cogli un pensiero con sempre o mai e riscrivilo con a volte o stavolta."
+    },
+    "pt": {
+     "t": "Apanhar pensamentos de tudo ou nada",
+     "g": "Repara em palavras como sempre e nunca e encontra uma versão mais justa.",
+     "p": [
+      "Palavras como sempre, nunca, todos e nada transformam um acontecimento numa regra sobre ti.",
+      "Uma versão mais justa é mais exata: desta vez tropecei, e não falho sempre.",
+      "Procurar exceções afrouxa o pensamento. Lembra-te de uma vez em que correu pelo menos razoavelmente."
+     ],
+     "q": "Que frase de tudo ou nada dizes a ti próprio e qual seria uma versão mais justa?",
+     "c": "Hoje apanha um pensamento com sempre ou nunca e reescreve-o com às vezes ou desta vez."
+    },
+    "pt_BR": {
+     "t": "Pegando pensamentos de tudo ou nada",
+     "g": "Perceba palavras como sempre e nunca e encontre uma versão mais justa.",
+     "p": [
+      "Palavras como sempre, nunca, todo mundo e nada transformam um episódio numa regra sobre você.",
+      "Uma versão mais justa é mais precisa: dessa vez eu tropecei, não é que eu sempre falho.",
+      "Procurar exceções afrouxa o pensamento. Lembre de uma vez em que deu pelo menos mais ou menos certo."
+     ],
+     "q": "Que frase de tudo ou nada você se pega dizendo e qual seria uma versão mais justa?",
+     "c": "Hoje pegue um pensamento com sempre ou nunca e reescreva com às vezes ou dessa vez."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The word yet",
+     "g": "Turn I can't do this into I can't do this yet.",
+     "p": [
+      "Adding yet turns a closed door into a path: it says you are still learning.",
+      "Every skill you have today, from walking to reading, started as something you couldn't do yet.",
+      "Yet works best with a next step: I can't do it yet, so I will practise ten minutes."
+     ],
+     "q": "What is something you can't do yet that you would love to be able to do one day?",
+     "c": "Pick one thing you say you can't do and add yet, plus one tiny step toward it."
+    },
+    "de": {
+     "t": "Das Wort noch",
+     "g": "Mach aus Ich kann das nicht ein Ich kann das noch nicht.",
+     "p": [
+      "Das Wörtchen noch verwandelt eine geschlossene Tür in einen Weg: Du lernst ja noch.",
+      "Jede Fähigkeit, die du heute hast, vom Laufen bis zum Lesen, war einmal etwas, das du noch nicht konntest.",
+      "Noch wirkt am besten mit einem nächsten Schritt: Ich kann es noch nicht, also übe ich zehn Minuten."
+     ],
+     "q": "Was kannst du noch nicht, würdest aber eines Tages gern können?",
+     "c": "Wähl etwas, von dem du sagst, du könntest es nicht, ergänze noch und plane einen winzigen Schritt dazu."
+    },
+    "es": {
+     "t": "La palabra todavía",
+     "g": "Convierte no puedo hacerlo en todavía no puedo hacerlo.",
+     "p": [
+      "Añadir todavía convierte una puerta cerrada en un camino: dice que sigues aprendiendo.",
+      "Toda habilidad que tienes hoy, de caminar a leer, empezó siendo algo que todavía no sabías hacer.",
+      "Todavía funciona mejor con un siguiente paso: aún no puedo, así que practicaré diez minutos."
+     ],
+     "q": "¿Qué cosa todavía no sabes hacer y te encantaría poder hacer algún día?",
+     "c": "Elige algo que dices que no puedes, añade todavía y un paso diminuto hacia ello."
+    },
+    "fr": {
+     "t": "Le mot pas encore",
+     "g": "Transforme je n'y arrive pas en je n'y arrive pas encore.",
+     "p": [
+      "Ajouter encore change une porte fermée en chemin : cela dit que tu es en train d'apprendre.",
+      "Chaque compétence que tu as aujourd'hui, de marcher à lire, a commencé par quelque chose que tu ne savais pas encore faire.",
+      "Encore marche mieux avec une prochaine étape : je n'y arrive pas encore, alors je m'entraîne dix minutes."
+     ],
+     "q": "Qu'est-ce que tu ne sais pas encore faire et que tu aimerais savoir faire un jour ?",
+     "c": "Choisis une chose que tu dis ne pas pouvoir faire, ajoute encore et un tout petit pas vers elle."
+    },
+    "it": {
+     "t": "La parola ancora",
+     "g": "Trasforma non ci riesco in non ci riesco ancora.",
+     "p": [
+      "Aggiungere ancora trasforma una porta chiusa in un sentiero: dice che stai ancora imparando.",
+      "Ogni abilità che hai oggi, dal camminare al leggere, è partita da qualcosa che non sapevi ancora fare.",
+      "Ancora funziona meglio con un passo successivo: non ci riesco ancora, quindi mi alleno dieci minuti."
+     ],
+     "q": "Cosa non sai ancora fare e ti piacerebbe saper fare un giorno?",
+     "c": "Scegli una cosa che dici di non saper fare, aggiungi ancora e un piccolissimo passo verso di essa."
+    },
+    "pt": {
+     "t": "A palavra ainda",
+     "g": "Transforma não consigo em ainda não consigo.",
+     "p": [
+      "Juntar ainda transforma uma porta fechada num caminho: diz que continuas a aprender.",
+      "Cada competência que tens hoje, de andar a ler, começou por ser algo que ainda não sabias fazer.",
+      "Ainda funciona melhor com um passo seguinte: ainda não consigo, por isso vou treinar dez minutos."
+     ],
+     "q": "O que é que ainda não sabes fazer e adorarias saber um dia?",
+     "c": "Escolhe uma coisa que dizes não conseguir, junta ainda e um passo minúsculo em direção a ela."
+    },
+    "pt_BR": {
+     "t": "A palavra ainda",
+     "g": "Transforme não consigo em ainda não consigo.",
+     "p": [
+      "Acrescentar ainda transforma uma porta fechada em caminho: diz que você continua aprendendo.",
+      "Toda habilidade que você tem hoje, de andar a ler, começou como algo que você ainda não sabia fazer.",
+      "Ainda funciona melhor com um próximo passo: ainda não consigo, então vou treinar dez minutos."
+     ],
+     "q": "O que você ainda não sabe fazer e adoraria saber um dia?",
+     "c": "Escolha algo que você diz não conseguir, acrescente ainda e um passinho minúsculo em direção a isso."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Posture and presence",
+     "g": "Learn how standing tall and relaxing your shoulders can help you feel more at ease.",
+     "p": [
+      "Body and mind talk to each other: an open, relaxed posture often helps you feel steadier.",
+      "Think tall but easy: feet grounded, shoulders down and back, chin level, jaw loose.",
+      "Check in a few times a day. Small adjustments beat stiff, forced posing."
+     ],
+     "q": "How does your body usually look when you feel unsure, and what could you change gently?",
+     "c": "Three times today, pause, relax your shoulders, stand or sit tall, and take one easy breath."
+    },
+    "de": {
+     "t": "Haltung und Präsenz",
+     "g": "Erfahre, wie aufrechtes Stehen und entspannte Schultern dir mehr Gelassenheit geben können.",
+     "p": [
+      "Körper und Geist beeinflussen sich: Eine offene, entspannte Haltung hilft oft, sich stabiler zu fühlen.",
+      "Denk groß, aber locker: Füße geerdet, Schultern locker nach hinten unten, Kinn waagerecht, Kiefer entspannt.",
+      "Prüfe dich mehrmals am Tag. Kleine Korrekturen sind besser als steifes, erzwungenes Posieren."
+     ],
+     "q": "Wie sieht dein Körper meist aus, wenn du unsicher bist, und was könntest du sanft ändern?",
+     "c": "Halte heute dreimal inne, entspanne die Schultern, richte dich auf und atme einmal ruhig durch."
+    },
+    "es": {
+     "t": "Postura y presencia",
+     "g": "Descubre cómo ponerte erguido y relajar los hombros puede ayudarte a sentirte más a gusto.",
+     "p": [
+      "Cuerpo y mente se comunican: una postura abierta y relajada suele ayudarte a sentirte más firme.",
+      "Piensa en alto pero relajado: pies firmes, hombros atrás y abajo, barbilla recta, mandíbula suelta.",
+      "Revísate varias veces al día. Los pequeños ajustes valen más que posar rígido y forzado."
+     ],
+     "q": "¿Cómo suele verse tu cuerpo cuando te sientes inseguro y qué podrías cambiar con suavidad?",
+     "c": "Tres veces hoy, haz una pausa, relaja los hombros, enderézate y respira hondo con calma."
+    },
+    "fr": {
+     "t": "Posture et présence",
+     "g": "Découvre comment te tenir droit et détendre les épaules peut t'aider à te sentir plus à l'aise.",
+     "p": [
+      "Corps et esprit se parlent : une posture ouverte et détendue aide souvent à se sentir plus stable.",
+      "Pense grand mais souple : pieds bien posés, épaules basses et en arrière, menton droit, mâchoire relâchée.",
+      "Vérifie plusieurs fois par jour. De petits ajustements valent mieux qu'une pose raide et forcée."
+     ],
+     "q": "Comment ton corps se tient-il d'habitude quand tu doutes, et que pourrais-tu changer doucement ?",
+     "c": "Trois fois aujourd'hui, fais une pause, détends les épaules, redresse-toi et respire calmement."
+    },
+    "it": {
+     "t": "Postura e presenza",
+     "g": "Scopri come stare dritto e rilassare le spalle può aiutarti a sentirti più a tuo agio.",
+     "p": [
+      "Corpo e mente si parlano: una postura aperta e rilassata spesso aiuta a sentirsi più saldi.",
+      "Pensa alto ma morbido: piedi ben appoggiati, spalle basse e indietro, mento dritto, mascella sciolta.",
+      "Controllati più volte al giorno. Piccoli aggiustamenti valgono più di pose rigide e forzate."
+     ],
+     "q": "Come appare di solito il tuo corpo quando ti senti incerto e cosa potresti cambiare con dolcezza?",
+     "c": "Tre volte oggi fermati, rilassa le spalle, raddrizzati e fai un respiro tranquillo."
+    },
+    "pt": {
+     "t": "Postura e presença",
+     "g": "Descobre como ficar direito e relaxar os ombros te pode ajudar a sentir-te mais à vontade.",
+     "p": [
+      "Corpo e mente comunicam: uma postura aberta e relaxada ajuda muitas vezes a sentires-te mais firme.",
+      "Pensa alto mas descontraído: pés assentes, ombros para trás e para baixo, queixo ao nível, maxilar solto.",
+      "Verifica-te várias vezes por dia. Pequenos ajustes valem mais do que poses rígidas e forçadas."
+     ],
+     "q": "Como costuma estar o teu corpo quando te sentes inseguro e o que podias mudar com suavidade?",
+     "c": "Três vezes hoje, faz uma pausa, relaxa os ombros, endireita-te e respira fundo com calma."
+    },
+    "pt_BR": {
+     "t": "Postura e presença",
+     "g": "Descubra como ficar com a coluna ereta e relaxar os ombros pode ajudar você a se sentir mais à vontade.",
+     "p": [
+      "Corpo e mente conversam: uma postura aberta e relaxada costuma ajudar a se sentir mais firme.",
+      "Pense alto mas leve: pés firmes, ombros para trás e para baixo, queixo reto, mandíbula solta.",
+      "Confira várias vezes ao dia. Pequenos ajustes valem mais do que poses duras e forçadas."
+     ],
+     "q": "Como seu corpo costuma ficar quando você se sente inseguro e o que poderia mudar com delicadeza?",
+     "c": "Três vezes hoje, pare um instante, relaxe os ombros, endireite-se e respire fundo com calma."
+    }
+   }
+  }
+ ]
+}

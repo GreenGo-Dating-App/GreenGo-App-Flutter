@@ -1,0 +1,835 @@
+{
+ "topic": "series",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to the world of TV series",
+     "g": "Start a 365-day path through TV history, genres and storytelling, one small lesson a day.",
+     "p": [
+      "We will travel from sitcoms and soaps to world TV and the craft of writing.",
+      "Each day brings one idea, one question and one tiny challenge.",
+      "The goal is simple: to watch series more actively and enjoy them more."
+     ],
+     "q": "Which series first made you fall in love with television?",
+     "c": "Tonight, watch ten minutes of any show and note one thing you notice."
+    },
+    "de": {
+     "t": "Willkommen in der Welt der TV-Serien",
+     "g": "Starte einen 365-Tage-Weg durch TV-Geschichte, Genres und Erzählkunst, jeden Tag eine kleine Lektion.",
+     "p": [
+      "Wir reisen von Sitcoms und Seifenopern bis zu Weltfernsehen und Drehbuchhandwerk.",
+      "Jeden Tag gibt es eine Idee, eine Frage und eine kleine Aufgabe.",
+      "Das Ziel ist einfach: Serien bewusster schauen und mehr genießen."
+     ],
+     "q": "Welche Serie hat dich zuerst für das Fernsehen begeistert?",
+     "c": "Schau heute Abend zehn Minuten irgendeiner Serie und notiere, was dir auffällt."
+    },
+    "es": {
+     "t": "Bienvenido al mundo de las series",
+     "g": "Empieza un camino de 365 días por la historia de la tele, los géneros y el arte de contar, con una lección diaria.",
+     "p": [
+      "Viajaremos de las comedias y los culebrones a la tele del mundo y el oficio de escribir.",
+      "Cada día trae una idea, una pregunta y un pequeño reto.",
+      "El objetivo es sencillo: ver series con más atención y disfrutarlas más."
+     ],
+     "q": "¿Qué serie te enamoró por primera vez de la televisión?",
+     "c": "Esta noche mira diez minutos de cualquier serie y anota algo en lo que te fijes."
+    },
+    "fr": {
+     "t": "Bienvenue dans le monde des séries",
+     "g": "Lance-toi dans un parcours de 365 jours à travers l'histoire de la télé, les genres et l'art de raconter, une leçon par jour.",
+     "p": [
+      "Nous irons des sitcoms et des feuilletons à la télé du monde et au métier d'écrire.",
+      "Chaque jour apporte une idée, une question et un petit défi.",
+      "Le but est simple : regarder les séries plus activement et les apprécier davantage."
+     ],
+     "q": "Quelle série t'a fait aimer la télévision pour la première fois ?",
+     "c": "Ce soir, regarde dix minutes d'une série et note une chose qui te frappe."
+    },
+    "it": {
+     "t": "Benvenuto nel mondo delle serie TV",
+     "g": "Inizia un percorso di 365 giorni tra storia della TV, generi e arte del racconto, con una piccola lezione al giorno.",
+     "p": [
+      "Viaggeremo dalle sitcom e dalle soap alla TV del mondo e al mestiere di scrivere.",
+      "Ogni giorno porta un'idea, una domanda e una piccola sfida.",
+      "L'obiettivo è semplice: guardare le serie in modo più attento e goderle di più."
+     ],
+     "q": "Quale serie ti ha fatto innamorare per la prima volta della televisione?",
+     "c": "Stasera guarda dieci minuti di una serie qualsiasi e annota una cosa che noti."
+    },
+    "pt": {
+     "t": "Bem-vindo ao mundo das séries de TV",
+     "g": "Começa um percurso de 365 dias pela história da TV, pelos géneros e pela arte de contar, com uma pequena lição por dia.",
+     "p": [
+      "Vamos viajar das sitcoms e das novelas à TV do mundo e ao ofício de escrever.",
+      "Cada dia traz uma ideia, uma pergunta e um pequeno desafio.",
+      "O objetivo é simples: ver séries com mais atenção e gostar ainda mais delas."
+     ],
+     "q": "Que série te fez apaixonar pela primeira vez pela televisão?",
+     "c": "Esta noite vê dez minutos de uma série qualquer e anota algo que reparares."
+    },
+    "pt_BR": {
+     "t": "Bem-vindo ao mundo das séries de TV",
+     "g": "Comece um caminho de 365 dias pela história da TV, pelos gêneros e pela arte de contar, com uma pequena lição por dia.",
+     "p": [
+      "Vamos viajar das sitcoms e das novelas até a TV do mundo e o ofício de escrever.",
+      "Cada dia traz uma ideia, uma pergunta e um pequeno desafio.",
+      "O objetivo é simples: assistir às séries com mais atenção e curtir ainda mais."
+     ],
+     "q": "Qual série fez você se apaixonar pela televisão pela primeira vez?",
+     "c": "Hoje à noite, assista a dez minutos de qualquer série e anote algo que você notar."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What makes something a series",
+     "g": "Understand the three ingredients that turn a story into a series.",
+     "p": [
+      "A series has recurring characters who we want to see again and again.",
+      "It has a shared world with its own rules, places and tone.",
+      "Its story is told in episodes, which lets it grow over time."
+     ],
+     "q": "Think of a show you love: who is the one character you would miss most?",
+     "c": "Pick one show and name its characters, its world and its episode rhythm."
+    },
+    "de": {
+     "t": "Was eine Serie ausmacht",
+     "g": "Verstehe die drei Zutaten, die aus einer Geschichte eine Serie machen.",
+     "p": [
+      "Eine Serie hat wiederkehrende Figuren, die wir immer wieder sehen wollen.",
+      "Sie hat eine gemeinsame Welt mit eigenen Regeln, Orten und einem eigenen Ton.",
+      "Ihre Geschichte wird in Folgen erzählt und kann so über die Zeit wachsen."
+     ],
+     "q": "Denk an eine Lieblingsserie: Welche Figur würdest du am meisten vermissen?",
+     "c": "Wähle eine Serie und benenne ihre Figuren, ihre Welt und ihren Folgenrhythmus."
+    },
+    "es": {
+     "t": "Qué convierte algo en una serie",
+     "g": "Entiende los tres ingredientes que convierten una historia en una serie.",
+     "p": [
+      "Una serie tiene personajes recurrentes a los que queremos volver a ver.",
+      "Tiene un mundo compartido con sus reglas, lugares y tono propios.",
+      "Su historia se cuenta en episodios, lo que le permite crecer con el tiempo."
+     ],
+     "q": "Piensa en una serie que te encanta: ¿qué personaje echarías más de menos?",
+     "c": "Elige una serie y nombra sus personajes, su mundo y el ritmo de sus episodios."
+    },
+    "fr": {
+     "t": "Ce qui fait une série",
+     "g": "Comprends les trois ingrédients qui transforment une histoire en série.",
+     "p": [
+      "Une série a des personnages récurrents qu'on a envie de retrouver.",
+      "Elle a un monde commun, avec ses règles, ses lieux et son ton.",
+      "Son histoire se raconte en épisodes, ce qui lui permet de grandir avec le temps."
+     ],
+     "q": "Pense à une série que tu aimes : quel personnage te manquerait le plus ?",
+     "c": "Choisis une série et nomme ses personnages, son monde et le rythme de ses épisodes."
+    },
+    "it": {
+     "t": "Che cosa rende una serie una serie",
+     "g": "Capisci i tre ingredienti che trasformano una storia in una serie.",
+     "p": [
+      "Una serie ha personaggi ricorrenti che vogliamo rivedere ancora e ancora.",
+      "Ha un mondo condiviso con regole, luoghi e tono propri.",
+      "La sua storia è raccontata a episodi, e questo la fa crescere nel tempo."
+     ],
+     "q": "Pensa a una serie che ami: quale personaggio ti mancherebbe di più?",
+     "c": "Scegli una serie e nomina i suoi personaggi, il suo mondo e il ritmo degli episodi."
+    },
+    "pt": {
+     "t": "O que faz uma série",
+     "g": "Percebe os três ingredientes que transformam uma história numa série.",
+     "p": [
+      "Uma série tem personagens recorrentes que queremos voltar a ver.",
+      "Tem um mundo partilhado, com regras, lugares e tom próprios.",
+      "A sua história é contada em episódios, o que a deixa crescer com o tempo."
+     ],
+     "q": "Pensa numa série de que gostes: que personagem te faria mais falta?",
+     "c": "Escolhe uma série e nomeia as personagens, o mundo e o ritmo dos episódios."
+    },
+    "pt_BR": {
+     "t": "O que faz uma série",
+     "g": "Entenda os três ingredientes que transformam uma história em série.",
+     "p": [
+      "Uma série tem personagens recorrentes que queremos rever sempre.",
+      "Tem um mundo compartilhado, com regras, lugares e tom próprios.",
+      "A história é contada em episódios, o que permite crescer com o tempo."
+     ],
+     "q": "Pense numa série que você ama: qual personagem faria mais falta?",
+     "c": "Escolha uma série e nomeie os personagens, o mundo e o ritmo dos episódios."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Episodes, seasons and series",
+     "g": "Learn the basic words people use to talk about TV.",
+     "p": [
+      "An episode is one installment; a season is a group of episodes.",
+      "In British English a season is often called a series; in American English a series is the whole show.",
+      "A renewal means the channel orders another season; a run is the full life of a show."
+     ],
+     "q": "How many seasons of your favourite show have you seen so far?",
+     "c": "Write one sentence about a show using episode, season and renewal correctly."
+    },
+    "de": {
+     "t": "Folgen, Staffeln und Serien",
+     "g": "Lerne die Grundwörter, mit denen man über Fernsehen spricht.",
+     "p": [
+      "Eine Folge ist ein Teil; eine Staffel ist eine Gruppe von Folgen.",
+      "Im britischen Englisch heißt eine Staffel oft series, im amerikanischen die ganze Serie.",
+      "Eine Verlängerung heißt, der Sender bestellt eine weitere Staffel; die Laufzeit ist das ganze Serienleben."
+     ],
+     "q": "Wie viele Staffeln deiner Lieblingsserie hast du bisher gesehen?",
+     "c": "Schreibe einen Satz über eine Serie mit Folge, Staffel und Verlängerung."
+    },
+    "es": {
+     "t": "Episodios, temporadas y series",
+     "g": "Aprende las palabras básicas para hablar de televisión.",
+     "p": [
+      "Un episodio es una entrega; una temporada es un grupo de episodios.",
+      "En inglés británico la temporada suele llamarse series; en el americano, series es todo el programa.",
+      "Una renovación significa que el canal encarga otra temporada; la emisión es toda la vida de la serie."
+     ],
+     "q": "¿Cuántas temporadas de tu serie favorita has visto hasta ahora?",
+     "c": "Escribe una frase sobre una serie usando episodio, temporada y renovación bien."
+    },
+    "fr": {
+     "t": "Épisodes, saisons et séries",
+     "g": "Apprends les mots de base pour parler de télévision.",
+     "p": [
+      "Un épisode est un chapitre ; une saison est un groupe d'épisodes.",
+      "En anglais britannique, une saison se dit souvent series ; en américain, series désigne toute la série.",
+      "Un renouvellement signifie que la chaîne commande une autre saison ; la diffusion est toute la vie de la série."
+     ],
+     "q": "Combien de saisons de ta série préférée as-tu déjà vues ?",
+     "c": "Écris une phrase sur une série avec épisode, saison et renouvellement."
+    },
+    "it": {
+     "t": "Episodi, stagioni e serie",
+     "g": "Impara le parole di base per parlare di televisione.",
+     "p": [
+      "Un episodio è una puntata; una stagione è un gruppo di episodi.",
+      "In inglese britannico la stagione si dice spesso series; in quello americano series è l'intero programma.",
+      "Un rinnovo significa che il canale ordina un'altra stagione; la messa in onda è l'intera vita della serie."
+     ],
+     "q": "Quante stagioni della tua serie preferita hai visto finora?",
+     "c": "Scrivi una frase su una serie usando episodio, stagione e rinnovo."
+    },
+    "pt": {
+     "t": "Episódios, temporadas e séries",
+     "g": "Aprende as palavras básicas para falar de televisão.",
+     "p": [
+      "Um episódio é uma entrega; uma temporada é um grupo de episódios.",
+      "No inglês britânico a temporada diz-se muitas vezes series; no americano, series é o programa todo.",
+      "Uma renovação significa que o canal encomenda outra temporada; a exibição é toda a vida da série."
+     ],
+     "q": "Quantas temporadas da tua série preferida já viste?",
+     "c": "Escreve uma frase sobre uma série com episódio, temporada e renovação."
+    },
+    "pt_BR": {
+     "t": "Episódios, temporadas e séries",
+     "g": "Aprenda as palavras básicas para falar de televisão.",
+     "p": [
+      "Um episódio é uma parte; uma temporada é um grupo de episódios.",
+      "No inglês britânico a temporada costuma ser series; no americano, series é o programa inteiro.",
+      "Uma renovação significa que o canal encomenda outra temporada; a exibição é toda a vida da série."
+     ],
+     "q": "Quantas temporadas da sua série favorita você já viu?",
+     "c": "Escreva uma frase sobre uma série usando episódio, temporada e renovação."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The pilot episode",
+     "g": "See why the first episode has such a big job to do.",
+     "p": [
+      "A pilot introduces the world, the main people and the tone of the show.",
+      "It also makes a promise: what kind of stories will come next.",
+      "Sometimes the pilot is made first as a test, and a channel decides whether to order more."
+     ],
+     "q": "Do you remember the first episode of a show that hooked you at once?",
+     "c": "Rewatch or recall a pilot and list what it told you in its first five minutes."
+    },
+    "de": {
+     "t": "Die Pilotfolge",
+     "g": "Erkenne, warum die erste Folge so eine große Aufgabe hat.",
+     "p": [
+      "Ein Pilot stellt die Welt, die Hauptfiguren und den Ton der Serie vor.",
+      "Er gibt auch ein Versprechen: Welche Geschichten werden folgen?",
+      "Manchmal wird der Pilot zuerst als Test gedreht, und der Sender entscheidet über mehr Folgen."
+     ],
+     "q": "Erinnerst du dich an eine erste Folge, die dich sofort gepackt hat?",
+     "c": "Sieh oder erinnere dich an einen Piloten und notiere, was er in fünf Minuten verrät."
+    },
+    "es": {
+     "t": "El episodio piloto",
+     "g": "Descubre por qué el primer episodio tiene una tarea tan grande.",
+     "p": [
+      "Un piloto presenta el mundo, a los protagonistas y el tono de la serie.",
+      "También hace una promesa: qué tipo de historias vendrán después.",
+      "A veces el piloto se rueda primero como prueba y el canal decide si encarga más."
+     ],
+     "q": "¿Recuerdas el primer episodio de una serie que te enganchó enseguida?",
+     "c": "Revisa o recuerda un piloto y anota qué te contó en sus primeros cinco minutos."
+    },
+    "fr": {
+     "t": "L'épisode pilote",
+     "g": "Vois pourquoi le premier épisode a une mission si importante.",
+     "p": [
+      "Un pilote présente le monde, les personnages principaux et le ton de la série.",
+      "Il fait aussi une promesse : quel genre d'histoires va suivre.",
+      "Parfois le pilote est tourné d'abord comme test, et la chaîne décide d'en commander plus."
+     ],
+     "q": "Te souviens-tu d'un premier épisode qui t'a accroché tout de suite ?",
+     "c": "Revois ou rappelle-toi un pilote et note ce qu'il t'a appris en cinq minutes."
+    },
+    "it": {
+     "t": "L'episodio pilota",
+     "g": "Scopri perché il primo episodio ha un compito così grande.",
+     "p": [
+      "Un pilota presenta il mondo, i protagonisti e il tono della serie.",
+      "Fa anche una promessa: che tipo di storie arriveranno dopo.",
+      "A volte il pilota si gira prima come prova e il canale decide se ordinarne altri."
+     ],
+     "q": "Ricordi il primo episodio di una serie che ti ha conquistato subito?",
+     "c": "Rivedi o ricorda un pilota e annota cosa ti ha detto nei primi cinque minuti."
+    },
+    "pt": {
+     "t": "O episódio piloto",
+     "g": "Percebe porque é que o primeiro episódio tem uma tarefa tão grande.",
+     "p": [
+      "Um piloto apresenta o mundo, as personagens principais e o tom da série.",
+      "Faz também uma promessa: que tipo de histórias virão a seguir.",
+      "Por vezes o piloto é feito primeiro como teste e o canal decide se encomenda mais."
+     ],
+     "q": "Lembras-te do primeiro episódio de uma série que te prendeu logo?",
+     "c": "Revê ou recorda um piloto e anota o que te contou nos primeiros cinco minutos."
+    },
+    "pt_BR": {
+     "t": "O episódio piloto",
+     "g": "Entenda por que o primeiro episódio tem uma missão tão grande.",
+     "p": [
+      "Um piloto apresenta o mundo, os personagens principais e o tom da série.",
+      "Ele também faz uma promessa: que tipo de histórias virão depois.",
+      "Às vezes o piloto é feito primeiro como teste e o canal decide se encomenda mais."
+     ],
+     "q": "Você lembra do primeiro episódio de uma série que te fisgou logo?",
+     "c": "Reveja ou lembre um piloto e anote o que ele contou nos primeiros cinco minutos."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your personal TV profile",
+     "g": "Discover what your favourite shows say about your taste.",
+     "p": [
+      "List three shows you love and look for what they share.",
+      "Maybe it is a type of humour, a kind of hero or a certain pace.",
+      "Knowing your taste helps you choose better and explain your choices."
+     ],
+     "q": "What do your top three shows have in common, even if they look different?",
+     "c": "Write your top three shows and one shared quality in a single line."
+    },
+    "de": {
+     "t": "Dein persönliches TV-Profil",
+     "g": "Entdecke, was deine Lieblingsserien über deinen Geschmack verraten.",
+     "p": [
+      "Nenne drei Serien, die du liebst, und suche, was sie verbindet.",
+      "Vielleicht ist es eine Art Humor, ein Heldentyp oder ein bestimmtes Tempo.",
+      "Wer seinen Geschmack kennt, wählt besser und kann seine Wahl erklären."
+     ],
+     "q": "Was haben deine drei Lieblingsserien gemeinsam, auch wenn sie verschieden wirken?",
+     "c": "Schreibe deine Top drei und eine gemeinsame Eigenschaft in eine Zeile."
+    },
+    "es": {
+     "t": "Tu perfil televisivo personal",
+     "g": "Descubre qué dicen tus series favoritas sobre tu gusto.",
+     "p": [
+      "Anota tres series que te encantan y busca lo que comparten.",
+      "Quizá sea un tipo de humor, un tipo de héroe o un ritmo concreto.",
+      "Conocer tu gusto te ayuda a elegir mejor y a explicar tus elecciones."
+     ],
+     "q": "¿Qué tienen en común tus tres series favoritas aunque parezcan distintas?",
+     "c": "Escribe tus tres favoritas y una cualidad compartida en una sola línea."
+    },
+    "fr": {
+     "t": "Ton profil télé personnel",
+     "g": "Découvre ce que tes séries préférées disent de ton goût.",
+     "p": [
+      "Note trois séries que tu adores et cherche ce qu'elles partagent.",
+      "Peut-être un type d'humour, un genre de héros ou un certain rythme.",
+      "Connaître ton goût t'aide à mieux choisir et à expliquer tes choix."
+     ],
+     "q": "Qu'ont en commun tes trois séries préférées, même si elles semblent différentes ?",
+     "c": "Écris tes trois favorites et une qualité commune en une seule ligne."
+    },
+    "it": {
+     "t": "Il tuo profilo televisivo personale",
+     "g": "Scopri cosa dicono le tue serie preferite del tuo gusto.",
+     "p": [
+      "Elenca tre serie che ami e cerca ciò che hanno in comune.",
+      "Forse un tipo di umorismo, un genere di eroe o un certo ritmo.",
+      "Conoscere il tuo gusto ti aiuta a scegliere meglio e a spiegare le scelte."
+     ],
+     "q": "Cosa hanno in comune le tue tre serie preferite, anche se sembrano diverse?",
+     "c": "Scrivi le tue prime tre serie e una qualità comune in una sola riga."
+    },
+    "pt": {
+     "t": "O teu perfil televisivo pessoal",
+     "g": "Descobre o que as tuas séries preferidas dizem sobre o teu gosto.",
+     "p": [
+      "Lista três séries de que gostes e procura o que partilham.",
+      "Talvez seja um tipo de humor, um tipo de herói ou um certo ritmo.",
+      "Conhecer o teu gosto ajuda-te a escolher melhor e a explicar as escolhas."
+     ],
+     "q": "O que têm em comum as tuas três séries preferidas, mesmo parecendo diferentes?",
+     "c": "Escreve as tuas três preferidas e uma qualidade comum numa só linha."
+    },
+    "pt_BR": {
+     "t": "Seu perfil pessoal de TV",
+     "g": "Descubra o que suas séries favoritas dizem sobre o seu gosto.",
+     "p": [
+      "Liste três séries que você ama e procure o que elas têm em comum.",
+      "Talvez seja um tipo de humor, um tipo de herói ou um certo ritmo.",
+      "Conhecer seu gosto ajuda a escolher melhor e a explicar suas escolhas."
+     ],
+     "q": "O que suas três séries favoritas têm em comum, mesmo parecendo diferentes?",
+     "c": "Escreva suas três favoritas e uma qualidade em comum numa só linha."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Episodic versus serialized stories",
+     "g": "Tell apart self-contained episodes from stories that keep going.",
+     "p": [
+      "In an episodic show, each episode has its own problem and its own ending.",
+      "In a serialized show, events carry over and you need earlier episodes to follow.",
+      "Many shows mix both: a small story each week plus a bigger arc."
+     ],
+     "q": "Do you prefer a fresh story each week or one long story? Why?",
+     "c": "Choose a show and decide whether you could watch its episodes in random order."
+    },
+    "de": {
+     "t": "Episodisch oder fortlaufend erzählt",
+     "g": "Unterscheide in sich abgeschlossene Folgen von Geschichten, die weitergehen.",
+     "p": [
+      "In einer episodischen Serie hat jede Folge ein eigenes Problem und ein eigenes Ende.",
+      "In einer fortlaufenden Serie wirken Ereignisse nach, und man braucht frühere Folgen.",
+      "Viele Serien mischen beides: kleine Geschichte pro Woche plus großer Bogen."
+     ],
+     "q": "Magst du lieber jede Woche eine neue Geschichte oder eine lange? Warum?",
+     "c": "Wähle eine Serie und entscheide, ob man ihre Folgen in beliebiger Reihenfolge sehen könnte."
+    },
+    "es": {
+     "t": "Historias episódicas y seriadas",
+     "g": "Distingue los episodios autónomos de las historias que continúan.",
+     "p": [
+      "En una serie episódica cada capítulo tiene su problema y su final.",
+      "En una serie serializada los hechos continúan y hace falta ver los episodios anteriores.",
+      "Muchas series mezclan ambas: una historia pequeña cada semana y un arco mayor."
+     ],
+     "q": "¿Prefieres una historia nueva cada semana o una larga? ¿Por qué?",
+     "c": "Elige una serie y decide si podrías ver sus episodios en orden aleatorio."
+    },
+    "fr": {
+     "t": "Épisodique ou feuilletonnant",
+     "g": "Distingue les épisodes autonomes des histoires qui continuent.",
+     "p": [
+      "Dans une série épisodique, chaque épisode a son problème et sa fin.",
+      "Dans une série feuilletonnante, les événements se prolongent et il faut avoir vu les précédents.",
+      "Beaucoup de séries mélangent les deux : une petite histoire par semaine et un grand fil."
+     ],
+     "q": "Préfères-tu une nouvelle histoire chaque semaine ou une longue ? Pourquoi ?",
+     "c": "Choisis une série et décide si tu pourrais voir ses épisodes dans le désordre."
+    },
+    "it": {
+     "t": "Storie episodiche e serializzate",
+     "g": "Distingui gli episodi autonomi dalle storie che proseguono.",
+     "p": [
+      "In una serie episodica ogni puntata ha il suo problema e la sua conclusione.",
+      "In una serie serializzata gli eventi continuano e servono gli episodi precedenti.",
+      "Molte serie mescolano le due cose: una piccola storia a settimana e un arco più grande."
+     ],
+     "q": "Preferisci una storia nuova ogni settimana o una lunga? Perché?",
+     "c": "Scegli una serie e decidi se potresti guardarne gli episodi in ordine casuale."
+    },
+    "pt": {
+     "t": "Histórias episódicas e serializadas",
+     "g": "Distingue episódios independentes de histórias que continuam.",
+     "p": [
+      "Numa série episódica cada episódio tem o seu problema e o seu final.",
+      "Numa série serializada os acontecimentos continuam e precisas dos episódios anteriores.",
+      "Muitas séries misturam as duas: uma pequena história por semana e um arco maior."
+     ],
+     "q": "Preferes uma história nova por semana ou uma longa? Porquê?",
+     "c": "Escolhe uma série e decide se poderias ver os episódios por ordem aleatória."
+    },
+    "pt_BR": {
+     "t": "Histórias episódicas e seriadas",
+     "g": "Diferencie episódios independentes de histórias que continuam.",
+     "p": [
+      "Numa série episódica cada episódio tem seu problema e seu final.",
+      "Numa série seriada os acontecimentos continuam e você precisa dos episódios anteriores.",
+      "Muitas séries misturam as duas: uma pequena história por semana e um arco maior."
+     ],
+     "q": "Você prefere uma história nova por semana ou uma longa? Por quê?",
+     "c": "Escolha uma série e decida se dá para ver os episódios em ordem aleatória."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The sitcom in a nutshell",
+     "g": "Meet situation comedy, TV's most famous comic format.",
+     "p": [
+      "A sitcom has a fixed setting, like a flat, a bar or an office.",
+      "Familiar characters bring a new small problem to solve each episode.",
+      "Characters rarely change much, which makes the show comforting to revisit."
+     ],
+     "q": "Which sitcom setting would you most like to spend an afternoon in?",
+     "c": "Name a sitcom and write its setting, its core characters and a typical problem."
+    },
+    "de": {
+     "t": "Die Sitcom auf einen Blick",
+     "g": "Lerne die Situationskomödie kennen, das bekannteste Comedy-Format im Fernsehen.",
+     "p": [
+      "Eine Sitcom hat einen festen Schauplatz, etwa eine Wohnung, eine Bar oder ein Büro.",
+      "Vertraute Figuren bringen jede Folge ein neues kleines Problem mit.",
+      "Die Figuren verändern sich selten stark, deshalb tut Wiedersehen gut."
+     ],
+     "q": "In welchem Sitcom-Schauplatz würdest du gern einen Nachmittag verbringen?",
+     "c": "Nenne eine Sitcom und schreibe Schauplatz, Hauptfiguren und ein typisches Problem auf."
+    },
+    "es": {
+     "t": "La comedia de situación en breve",
+     "g": "Conoce la comedia de situación, el formato cómico más famoso de la tele.",
+     "p": [
+      "Una sitcom tiene un escenario fijo, como un piso, un bar o una oficina.",
+      "Personajes conocidos traen un pequeño problema nuevo en cada episodio.",
+      "Los personajes cambian poco, y por eso da gusto volver a verla."
+     ],
+     "q": "¿En qué escenario de sitcom pasarías una tarde con más gusto?",
+     "c": "Nombra una sitcom y anota su escenario, sus personajes y un problema típico."
+    },
+    "fr": {
+     "t": "La sitcom en bref",
+     "g": "Découvre la comédie de situation, le format comique le plus célèbre de la télé.",
+     "p": [
+      "Une sitcom a un décor fixe, comme un appartement, un bar ou un bureau.",
+      "Des personnages familiers apportent chaque épisode un petit problème nouveau.",
+      "Les personnages changent peu, ce qui rend la série réconfortante à revoir."
+     ],
+     "q": "Dans quel décor de sitcom aimerais-tu passer un après-midi ?",
+     "c": "Nomme une sitcom et note son décor, ses personnages et un problème typique."
+    },
+    "it": {
+     "t": "La sitcom in breve",
+     "g": "Conosci la commedia di situazione, il formato comico più famoso della TV.",
+     "p": [
+      "Una sitcom ha un'ambientazione fissa, come un appartamento, un bar o un ufficio.",
+      "Personaggi familiari portano ogni episodio un nuovo piccolo problema.",
+      "I personaggi cambiano poco, e per questo è rassicurante rivederla."
+     ],
+     "q": "In quale ambientazione di sitcom passeresti volentieri un pomeriggio?",
+     "c": "Nomina una sitcom e scrivi ambientazione, personaggi e un problema tipico."
+    },
+    "pt": {
+     "t": "A sitcom em poucas palavras",
+     "g": "Conhece a comédia de situação, o formato cómico mais famoso da TV.",
+     "p": [
+      "Uma sitcom tem um cenário fixo, como um apartamento, um bar ou um escritório.",
+      "Personagens conhecidas trazem um pequeno problema novo em cada episódio.",
+      "As personagens mudam pouco, o que torna reconfortante voltar a vê-la."
+     ],
+     "q": "Em que cenário de sitcom gostarias de passar uma tarde?",
+     "c": "Nomeia uma sitcom e escreve o cenário, as personagens e um problema típico."
+    },
+    "pt_BR": {
+     "t": "A sitcom em poucas palavras",
+     "g": "Conheça a comédia de situação, o formato cômico mais famoso da TV.",
+     "p": [
+      "Uma sitcom tem cenário fixo, como um apartamento, um bar ou um escritório.",
+      "Personagens conhecidos trazem um pequeno problema novo a cada episódio.",
+      "Os personagens mudam pouco, o que torna reconfortante rever a série."
+     ],
+     "q": "Em qual cenário de sitcom você gostaria de passar uma tarde?",
+     "c": "Cite uma sitcom e escreva o cenário, os personagens e um problema típico."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The drama series",
+     "g": "Learn what sets drama apart: depth, emotion and change.",
+     "p": [
+      "Drama follows characters through choices that change them over time.",
+      "Episodes are usually longer and more emotional than in a sitcom.",
+      "Drama can have humour, but its heart is stakes: what the characters stand to win or lose."
+     ],
+     "q": "Which drama character has changed the most since their first episode?",
+     "c": "Pick a drama character and write what they wanted at the start and what they want now."
+    },
+    "de": {
+     "t": "Die Dramaserie",
+     "g": "Lerne, was das Drama auszeichnet: Tiefe, Gefühl und Wandel.",
+     "p": [
+      "Ein Drama begleitet Figuren durch Entscheidungen, die sie mit der Zeit verändern.",
+      "Die Folgen sind meist länger und gefühlvoller als in einer Sitcom.",
+      "Drama kann Humor haben, doch sein Kern ist der Einsatz: Was können die Figuren gewinnen oder verlieren?"
+     ],
+     "q": "Welche Dramafigur hat sich seit der ersten Folge am meisten verändert?",
+     "c": "Wähle eine Dramafigur und schreibe auf, was sie anfangs wollte und was sie jetzt will."
+    },
+    "es": {
+     "t": "La serie dramática",
+     "g": "Aprende qué distingue al drama: profundidad, emoción y cambio.",
+     "p": [
+      "El drama sigue a personajes por decisiones que los transforman con el tiempo.",
+      "Los episodios suelen ser más largos y emotivos que en una comedia.",
+      "El drama puede tener humor, pero su corazón es lo que está en juego."
+     ],
+     "q": "¿Qué personaje de drama ha cambiado más desde su primer episodio?",
+     "c": "Elige un personaje y escribe qué quería al principio y qué quiere ahora."
+    },
+    "fr": {
+     "t": "La série dramatique",
+     "g": "Apprends ce qui distingue le drame : profondeur, émotion et changement.",
+     "p": [
+      "Le drame suit des personnages à travers des choix qui les transforment avec le temps.",
+      "Les épisodes sont souvent plus longs et plus émouvants que dans une sitcom.",
+      "Le drame peut avoir de l'humour, mais son cœur, c'est l'enjeu : ce qu'on peut gagner ou perdre."
+     ],
+     "q": "Quel personnage de drame a le plus changé depuis son premier épisode ?",
+     "c": "Choisis un personnage et écris ce qu'il voulait au début et ce qu'il veut maintenant."
+    },
+    "it": {
+     "t": "La serie drammatica",
+     "g": "Scopri cosa distingue il dramma: profondità, emozione e cambiamento.",
+     "p": [
+      "Il dramma segue i personaggi attraverso scelte che li cambiano nel tempo.",
+      "Gli episodi sono di solito più lunghi ed emotivi che in una sitcom.",
+      "Il dramma può avere umorismo, ma il suo cuore è la posta in gioco."
+     ],
+     "q": "Quale personaggio di una serie drammatica è cambiato di più dal primo episodio?",
+     "c": "Scegli un personaggio e scrivi cosa voleva all'inizio e cosa vuole adesso."
+    },
+    "pt": {
+     "t": "A série dramática",
+     "g": "Aprende o que distingue o drama: profundidade, emoção e mudança.",
+     "p": [
+      "O drama acompanha personagens em escolhas que os transformam com o tempo.",
+      "Os episódios costumam ser mais longos e emotivos do que numa sitcom.",
+      "O drama pode ter humor, mas o seu coração é o que está em jogo."
+     ],
+     "q": "Que personagem de drama mudou mais desde o primeiro episódio?",
+     "c": "Escolhe uma personagem e escreve o que queria no início e o que quer agora."
+    },
+    "pt_BR": {
+     "t": "A série dramática",
+     "g": "Aprenda o que distingue o drama: profundidade, emoção e mudança.",
+     "p": [
+      "O drama acompanha personagens em escolhas que os transformam com o tempo.",
+      "Os episódios costumam ser mais longos e emotivos do que numa sitcom.",
+      "O drama pode ter humor, mas o coração dele é o que está em jogo."
+     ],
+     "q": "Qual personagem de drama mais mudou desde o primeiro episódio?",
+     "c": "Escolha um personagem e escreva o que ele queria no início e o que quer agora."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The miniseries and limited series",
+     "g": "Discover stories built to end after one short run.",
+     "p": [
+      "A limited series tells one complete story in a few episodes, with no plan for more.",
+      "Because the ending is known, writers can plan every scene toward it.",
+      "Many are based on novels, true events or history."
+     ],
+     "q": "Would you rather watch a story that ends in six episodes or one that runs for years?",
+     "c": "Look for a limited series to try and note how many episodes it needs."
+    },
+    "de": {
+     "t": "Miniserien und limitierte Serien",
+     "g": "Entdecke Geschichten, die nach einer kurzen Laufzeit enden sollen.",
+     "p": [
+      "Eine limitierte Serie erzählt eine ganze Geschichte in wenigen Folgen, ohne Plan für mehr.",
+      "Da das Ende feststeht, können Autoren jede Szene darauf ausrichten.",
+      "Viele beruhen auf Romanen, wahren Ereignissen oder Geschichte."
+     ],
+     "q": "Siehst du lieber eine Geschichte, die nach sechs Folgen endet, oder eine, die Jahre läuft?",
+     "c": "Suche dir eine limitierte Serie zum Ausprobieren und notiere, wie viele Folgen sie hat."
+    },
+    "es": {
+     "t": "Miniseries y series limitadas",
+     "g": "Descubre las historias pensadas para terminar tras una emisión corta.",
+     "p": [
+      "Una serie limitada cuenta una historia completa en pocos episodios, sin plan de más.",
+      "Como el final es conocido, los guionistas pueden orientar cada escena hacia él.",
+      "Muchas se basan en novelas, hechos reales o historia."
+     ],
+     "q": "¿Prefieres una historia que acaba en seis episodios o una que dura años?",
+     "c": "Busca una serie limitada para probar y anota cuántos episodios necesita."
+    },
+    "fr": {
+     "t": "Mini-séries et séries limitées",
+     "g": "Découvre les histoires conçues pour finir après une courte diffusion.",
+     "p": [
+      "Une série limitée raconte une histoire complète en peu d'épisodes, sans suite prévue.",
+      "Comme la fin est connue, les scénaristes orientent chaque scène vers elle.",
+      "Beaucoup s'inspirent de romans, de faits réels ou d'histoire."
+     ],
+     "q": "Préfères-tu une histoire qui finit en six épisodes ou une qui dure des années ?",
+     "c": "Cherche une série limitée à essayer et note le nombre d'épisodes."
+    },
+    "it": {
+     "t": "Miniserie e serie limitate",
+     "g": "Scopri le storie pensate per finire dopo una breve messa in onda.",
+     "p": [
+      "Una serie limitata racconta una storia completa in pochi episodi, senza piani per altro.",
+      "Poiché il finale è noto, gli autori orientano ogni scena verso di esso.",
+      "Molte si basano su romanzi, fatti reali o storia."
+     ],
+     "q": "Preferisci una storia che finisce in sei episodi o una che dura anni?",
+     "c": "Cerca una serie limitata da provare e annota quanti episodi ha."
+    },
+    "pt": {
+     "t": "Minisséries e séries limitadas",
+     "g": "Descobre histórias feitas para acabar após uma emissão curta.",
+     "p": [
+      "Uma série limitada conta uma história completa em poucos episódios, sem plano para mais.",
+      "Como o final é conhecido, os argumentistas orientam cada cena para ele.",
+      "Muitas baseiam-se em romances, factos reais ou história."
+     ],
+     "q": "Preferes uma história que acaba em seis episódios ou uma que dura anos?",
+     "c": "Procura uma série limitada para experimentar e anota quantos episódios tem."
+    },
+    "pt_BR": {
+     "t": "Minisséries e séries limitadas",
+     "g": "Descubra histórias feitas para acabar depois de uma exibição curta.",
+     "p": [
+      "Uma série limitada conta uma história completa em poucos episódios, sem plano para mais.",
+      "Como o final é conhecido, os roteiristas orientam cada cena para ele.",
+      "Muitas são baseadas em romances, fatos reais ou história."
+     ],
+     "q": "Você prefere uma história que acaba em seis episódios ou uma que dura anos?",
+     "c": "Procure uma série limitada para testar e anote quantos episódios ela tem."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The anthology series",
+     "g": "Explore shows that start fresh with new stories, settings or casts.",
+     "p": [
+      "In an anthology, each episode or season is a separate story.",
+      "You can start almost anywhere, which makes anthologies easy to share.",
+      "They let writers and actors try many tones, from funny to thoughtful."
+     ],
+     "q": "If you could write one anthology episode, what would it be about?",
+     "c": "Imagine a title and a one-line plot for your own anthology episode."
+    },
+    "de": {
+     "t": "Die Anthologieserie",
+     "g": "Entdecke Serien, die mit neuen Geschichten, Orten oder Besetzungen neu beginnen.",
+     "p": [
+      "In einer Anthologie ist jede Folge oder Staffel eine eigene Geschichte.",
+      "Man kann fast überall einsteigen, deshalb lassen sie sich leicht weiterempfehlen.",
+      "Autoren und Schauspieler können viele Töne ausprobieren, von lustig bis nachdenklich."
+     ],
+     "q": "Wenn du eine Anthologie-Folge schreiben könntest, wovon würde sie handeln?",
+     "c": "Erfinde einen Titel und eine Ein-Satz-Handlung für deine eigene Anthologie-Folge."
+    },
+    "es": {
+     "t": "La serie antológica",
+     "g": "Explora series que empiezan de cero con nuevas historias, escenarios o repartos.",
+     "p": [
+      "En una antología cada episodio o temporada es una historia aparte.",
+      "Puedes empezar casi por cualquier parte, así que es fácil recomendarlas.",
+      "Permiten a guionistas y actores probar muchos tonos, de lo divertido a lo reflexivo."
+     ],
+     "q": "Si pudieras escribir un episodio de antología, ¿de qué trataría?",
+     "c": "Imagina un título y un argumento de una línea para tu propio episodio."
+    },
+    "fr": {
+     "t": "La série d'anthologie",
+     "g": "Explore les séries qui repartent à zéro avec de nouvelles histoires, lieux ou distributions.",
+     "p": [
+      "Dans une anthologie, chaque épisode ou saison est une histoire à part.",
+      "On peut commencer presque n'importe où, ce qui les rend faciles à recommander.",
+      "Elles permettent d'essayer bien des tons, du drôle au réfléchi."
+     ],
+     "q": "Si tu pouvais écrire un épisode d'anthologie, de quoi parlerait-il ?",
+     "c": "Imagine un titre et une intrigue en une ligne pour ton propre épisode."
+    },
+    "it": {
+     "t": "La serie antologica",
+     "g": "Esplora le serie che ripartono da zero con nuove storie, ambienti o cast.",
+     "p": [
+      "In un'antologia ogni episodio o stagione è una storia a sé.",
+      "Si può iniziare quasi ovunque, quindi sono facili da consigliare.",
+      "Permettono ad autori e attori di provare molti toni, dal comico al riflessivo."
+     ],
+     "q": "Se potessi scrivere un episodio di antologia, di cosa parlerebbe?",
+     "c": "Immagina un titolo e una trama in una riga per il tuo episodio."
+    },
+    "pt": {
+     "t": "A série antológica",
+     "g": "Explora séries que recomeçam do zero com novas histórias, cenários ou elencos.",
+     "p": [
+      "Numa antologia cada episódio ou temporada é uma história à parte.",
+      "Podes começar quase em qualquer ponto, por isso são fáceis de recomendar.",
+      "Permitem a argumentistas e atores experimentar vários tons, do divertido ao reflexivo."
+     ],
+     "q": "Se pudesses escrever um episódio de antologia, sobre o que seria?",
+     "c": "Imagina um título e um enredo de uma linha para o teu episódio."
+    },
+    "pt_BR": {
+     "t": "A série antológica",
+     "g": "Explore séries que recomeçam do zero com novas histórias, cenários ou elencos.",
+     "p": [
+      "Numa antologia, cada episódio ou temporada é uma história à parte.",
+      "Você pode começar quase em qualquer ponto, então é fácil recomendar.",
+      "Elas permitem a roteiristas e atores experimentar vários tons, do divertido ao reflexivo."
+     ],
+     "q": "Se você pudesse escrever um episódio de antologia, sobre o que seria?",
+     "c": "Imagine um título e um enredo de uma linha para o seu episódio."
+    }
+   }
+  }
+ ]
+}

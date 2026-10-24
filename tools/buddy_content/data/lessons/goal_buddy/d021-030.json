@@ -1,0 +1,835 @@
+{
+ "topic": "goal_buddy",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Goals in many cultures",
+     "g": "See how New Year resolutions, Japanese kaizen and other traditions approach goals.",
+     "p": [
+      "Many places mark a fresh start: New Year resolutions are a familiar example.",
+      "Kaizen, from Japan, means continuous improvement through small changes.",
+      "Different cultures agree on one thing: steady, small effort adds up."
+     ],
+     "q": "Which tradition about goals or fresh starts do you know or like?",
+     "c": "Pick one tiny kaizen-style improvement and do it once today."
+    },
+    "de": {
+     "t": "Ziele in vielen Kulturen",
+     "g": "Sieh, wie Neujahrsvorsätze, das japanische Kaizen und andere Traditionen Ziele angehen.",
+     "p": [
+      "Viele Orte feiern einen Neuanfang: Neujahrsvorsätze sind ein bekanntes Beispiel.",
+      "Kaizen aus Japan bedeutet stetige Verbesserung durch kleine Veränderungen.",
+      "Kulturen sind sich in einem einig: Stetiger, kleiner Einsatz summiert sich."
+     ],
+     "q": "Welche Tradition zu Zielen oder Neuanfängen kennst oder magst du?",
+     "c": "Wähle eine winzige Kaizen-Verbesserung und setze sie heute einmal um."
+    },
+    "es": {
+     "t": "Metas en muchas culturas",
+     "g": "Mira cómo los propósitos de Año Nuevo, el kaizen japonés y otras tradiciones enfocan las metas.",
+     "p": [
+      "Muchos lugares celebran un nuevo comienzo: los propósitos de Año Nuevo son un ejemplo conocido.",
+      "El kaizen, de Japón, significa mejora continua mediante pequeños cambios.",
+      "Las culturas coinciden en algo: el esfuerzo constante y pequeño suma."
+     ],
+     "q": "¿Qué tradición sobre metas o nuevos comienzos conoces o te gusta?",
+     "c": "Elige una mejora minúscula al estilo kaizen y hazla una vez hoy."
+    },
+    "fr": {
+     "t": "Les objectifs dans les cultures",
+     "g": "Vois comment les résolutions du Nouvel An, le kaizen japonais et d'autres traditions abordent les objectifs.",
+     "p": [
+      "Beaucoup de pays marquent un nouveau départ : les résolutions du Nouvel An en sont un exemple connu.",
+      "Le kaizen, venu du Japon, signifie amélioration continue par petits changements.",
+      "Les cultures s'accordent sur un point : un petit effort régulier s'additionne."
+     ],
+     "q": "Quelle tradition sur les objectifs ou les nouveaux départs connais-tu ou aimes-tu ?",
+     "c": "Choisis une toute petite amélioration façon kaizen et fais-la une fois aujourd'hui."
+    },
+    "it": {
+     "t": "Gli obiettivi in molte culture",
+     "g": "Scopri come i propositi di Capodanno, il kaizen giapponese e altre tradizioni vedono gli obiettivi.",
+     "p": [
+      "Molti luoghi celebrano un nuovo inizio: i propositi di Capodanno sono un esempio noto.",
+      "Il kaizen, dal Giappone, significa miglioramento continuo con piccoli cambiamenti.",
+      "Le culture concordano su una cosa: un piccolo impegno costante si somma."
+     ],
+     "q": "Quale tradizione sugli obiettivi o sui nuovi inizi conosci o ti piace?",
+     "c": "Scegli un piccolissimo miglioramento in stile kaizen e fallo una volta oggi."
+    },
+    "pt": {
+     "t": "Metas em muitas culturas",
+     "g": "Vê como as resoluções de Ano Novo, o kaizen japonês e outras tradições encaram as metas.",
+     "p": [
+      "Muitos lugares celebram um recomeço: as resoluções de Ano Novo são um exemplo conhecido.",
+      "O kaizen, do Japão, significa melhoria contínua através de pequenas mudanças.",
+      "As culturas concordam numa coisa: um esforço pequeno e constante soma."
+     ],
+     "q": "Que tradição sobre metas ou recomeços conheces ou de que gostas?",
+     "c": "Escolhe uma pequena melhoria ao estilo kaizen e faz uma vez hoje."
+    },
+    "pt_BR": {
+     "t": "Metas em muitas culturas",
+     "g": "Veja como as resoluções de Ano Novo, o kaizen japonês e outras tradições encaram as metas.",
+     "p": [
+      "Muitos lugares celebram um recomeço: as resoluções de Ano Novo são um exemplo conhecido.",
+      "O kaizen, do Japão, significa melhoria contínua por meio de pequenas mudanças.",
+      "As culturas concordam em uma coisa: esforço pequeno e constante soma."
+     ],
+     "q": "Que tradição sobre metas ou recomeços você conhece ou gosta?",
+     "c": "Escolha uma pequena melhoria no estilo kaizen e faça uma vez hoje."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The power of small promises",
+     "g": "See how keeping tiny promises to yourself builds trust and confidence.",
+     "p": [
+      "Each promise you keep, even a tiny one, tells you that you can rely on yourself.",
+      "Broken big promises hurt trust; kept small ones grow it.",
+      "Promise only what you are sure you can do today."
+     ],
+     "q": "What is a tiny promise to yourself you could keep today?",
+     "c": "Make one very small promise to yourself and keep it before tonight."
+    },
+    "de": {
+     "t": "Die Kraft kleiner Versprechen",
+     "g": "Erlebe, wie kleine Versprechen an dich selbst Vertrauen und Selbstsicherheit aufbauen.",
+     "p": [
+      "Jedes gehaltene Versprechen, auch ein winziges, zeigt dir, dass du dich auf dich verlassen kannst.",
+      "Gebrochene große Versprechen schaden dem Vertrauen; gehaltene kleine lassen es wachsen.",
+      "Verspreche nur, was du heute sicher schaffst."
+     ],
+     "q": "Welches winzige Versprechen an dich könntest du heute halten?",
+     "c": "Gib dir ein sehr kleines Versprechen und halte es noch vor dem Abend."
+    },
+    "es": {
+     "t": "El poder de las pequeñas promesas",
+     "g": "Mira cómo cumplir promesas diminutas contigo mismo crea confianza y seguridad.",
+     "p": [
+      "Cada promesa que cumples, aunque sea pequeña, te dice que puedes contar contigo.",
+      "Las promesas grandes rotas dañan la confianza; las pequeñas cumplidas la hacen crecer.",
+      "Promete solo lo que estés seguro de poder hacer hoy."
+     ],
+     "q": "¿Qué pequeña promesa a ti mismo podrías cumplir hoy?",
+     "c": "Hazte una promesa muy pequeña y cúmplela antes de esta noche."
+    },
+    "fr": {
+     "t": "Le pouvoir des petites promesses",
+     "g": "Vois comment tenir de minuscules promesses envers toi construit confiance et assurance.",
+     "p": [
+      "Chaque promesse tenue, même minuscule, te dit que tu peux compter sur toi.",
+      "Les grandes promesses non tenues abîment la confiance ; les petites tenues la font grandir.",
+      "Ne promets que ce dont tu es sûr aujourd'hui."
+     ],
+     "q": "Quelle toute petite promesse envers toi pourrais-tu tenir aujourd'hui ?",
+     "c": "Fais-toi une très petite promesse et tiens-la avant ce soir."
+    },
+    "it": {
+     "t": "Il potere delle piccole promesse",
+     "g": "Scopri come mantenere piccole promesse a te stesso costruisce fiducia e sicurezza.",
+     "p": [
+      "Ogni promessa mantenuta, anche piccola, ti dice che puoi contare su di te.",
+      "Le grandi promesse infrante rovinano la fiducia; le piccole mantenute la fanno crescere.",
+      "Prometti solo ciò che sei sicuro di poter fare oggi."
+     ],
+     "q": "Quale piccola promessa a te stesso potresti mantenere oggi?",
+     "c": "Fai a te stesso una piccolissima promessa e mantienila prima di stasera."
+    },
+    "pt": {
+     "t": "O poder das pequenas promessas",
+     "g": "Vê como cumprir pequenas promessas a ti próprio cria confiança e segurança.",
+     "p": [
+      "Cada promessa cumprida, mesmo pequena, diz-te que podes contar contigo.",
+      "Promessas grandes quebradas ferem a confiança; as pequenas cumpridas fazem-na crescer.",
+      "Promete só o que tens a certeza de conseguir hoje."
+     ],
+     "q": "Que pequena promessa a ti próprio poderias cumprir hoje?",
+     "c": "Faz a ti próprio uma promessa muito pequena e cumpre-a antes da noite."
+    },
+    "pt_BR": {
+     "t": "O poder das pequenas promessas",
+     "g": "Veja como cumprir pequenas promessas a si mesmo cria confiança e segurança.",
+     "p": [
+      "Cada promessa cumprida, mesmo pequena, diz que você pode contar consigo.",
+      "Promessas grandes quebradas ferem a confiança; as pequenas cumpridas a fazem crescer.",
+      "Prometa só o que você tem certeza de conseguir hoje."
+     ],
+     "q": "Que pequena promessa a si mesmo você poderia cumprir hoje?",
+     "c": "Faça a si mesmo uma promessa bem pequena e cumpra antes da noite."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Goal language that helps",
+     "g": "Say I am learning to and I choose to instead of I must.",
+     "p": [
+      "Words shape feelings: I must feels heavy, I choose to feels free.",
+      "I am learning to leaves room for mistakes and growth.",
+      "Kind self-talk is a tool, and you can practice it daily."
+     ],
+     "q": "How would you reword one I must about your goal into I choose to?",
+     "c": "Rewrite one I should sentence about your goal using I choose to."
+    },
+    "de": {
+     "t": "Zielsprache, die hilft",
+     "g": "Sage Ich lerne gerade und Ich entscheide mich statt Ich muss.",
+     "p": [
+      "Wörter prägen Gefühle: Ich muss wirkt schwer, Ich entscheide mich wirkt frei.",
+      "Ich lerne gerade lässt Platz für Fehler und Wachstum.",
+      "Freundliche Selbstgespräche sind ein Werkzeug, das du täglich üben kannst."
+     ],
+     "q": "Wie würdest du ein Ich muss zu deinem Ziel in Ich entscheide mich umformulieren?",
+     "c": "Schreibe einen Ich sollte-Satz zu deinem Ziel mit Ich entscheide mich um."
+    },
+    "es": {
+     "t": "Un lenguaje que ayuda",
+     "g": "Di estoy aprendiendo a y elijo en lugar de debo.",
+     "p": [
+      "Las palabras moldean las emociones: debo pesa, elijo libera.",
+      "Estoy aprendiendo a deja espacio para errores y crecimiento.",
+      "Hablarte con amabilidad es una herramienta que puedes practicar a diario."
+     ],
+     "q": "¿Cómo reformularías un debo sobre tu meta como elijo?",
+     "c": "Reescribe una frase con debería sobre tu meta usando elijo."
+    },
+    "fr": {
+     "t": "Un langage qui aide",
+     "g": "Dis j'apprends à et je choisis de au lieu de je dois.",
+     "p": [
+      "Les mots influencent les émotions : je dois pèse, je choisis libère.",
+      "J'apprends à laisse de la place aux erreurs et à la progression.",
+      "Se parler avec bienveillance est un outil qu'on s'entraîne à utiliser chaque jour."
+     ],
+     "q": "Comment reformulerais-tu un je dois sur ton objectif en je choisis ?",
+     "c": "Réécris une phrase en je devrais sur ton objectif avec je choisis."
+    },
+    "it": {
+     "t": "Un linguaggio che aiuta",
+     "g": "Di' sto imparando a e scelgo di invece di devo.",
+     "p": [
+      "Le parole plasmano le emozioni: devo pesa, scelgo libera.",
+      "Sto imparando a lascia spazio a errori e crescita.",
+      "Parlarti con gentilezza è uno strumento che puoi allenare ogni giorno."
+     ],
+     "q": "Come riformuleresti un devo sul tuo obiettivo in scelgo di?",
+     "c": "Riscrivi una frase con dovrei sul tuo obiettivo usando scelgo di."
+    },
+    "pt": {
+     "t": "Linguagem que ajuda",
+     "g": "Diz estou a aprender a e escolho em vez de tenho de.",
+     "p": [
+      "As palavras moldam as emoções: tenho de pesa, escolho liberta.",
+      "Estou a aprender a deixa espaço para erros e crescimento.",
+      "Falar contigo com gentileza é uma ferramenta que podes treinar todos os dias."
+     ],
+     "q": "Como reformularias um tenho de sobre a tua meta para escolho?",
+     "c": "Reescreve uma frase com devia sobre a tua meta usando escolho."
+    },
+    "pt_BR": {
+     "t": "Linguagem que ajuda",
+     "g": "Diga estou aprendendo a e eu escolho em vez de eu tenho que.",
+     "p": [
+      "As palavras moldam as emoções: eu tenho que pesa, eu escolho liberta.",
+      "Estou aprendendo a deixa espaço para erros e crescimento.",
+      "Falar consigo com gentileza é uma ferramenta que você pode treinar todo dia."
+     ],
+     "q": "Como você reformularia um eu tenho que sobre sua meta para eu escolho?",
+     "c": "Reescreva uma frase com eu deveria sobre sua meta usando eu escolho."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Making your goal visible",
+     "g": "Place a note, picture or reminder where you will see it every day.",
+     "p": [
+      "Out of sight often means out of mind, so put your goal in view.",
+      "Good spots: the fridge, the mirror, your desk or your phone background.",
+      "A picture or a short phrase works better than a long text."
+     ],
+     "q": "Where in your day will you naturally see a reminder of your goal?",
+     "c": "Put one note or picture about your goal in a spot you see daily."
+    },
+    "de": {
+     "t": "Dein Ziel sichtbar machen",
+     "g": "Platziere eine Notiz, ein Bild oder eine Erinnerung dort, wo du sie täglich siehst.",
+     "p": [
+      "Aus den Augen heißt oft aus dem Sinn, also hol dein Ziel ins Blickfeld.",
+      "Gute Orte: Kühlschrank, Spiegel, Schreibtisch oder Handy-Hintergrund.",
+      "Ein Bild oder ein kurzer Satz wirkt besser als ein langer Text."
+     ],
+     "q": "Wo siehst du in deinem Alltag ganz selbstverständlich eine Erinnerung an dein Ziel?",
+     "c": "Hänge eine Notiz oder ein Bild zu deinem Ziel an einen Ort, den du täglich siehst."
+    },
+    "es": {
+     "t": "Haz visible tu meta",
+     "g": "Coloca una nota, imagen o recordatorio donde lo veas cada día.",
+     "p": [
+      "Lo que no se ve se olvida, así que pon tu meta a la vista.",
+      "Buenos sitios: la nevera, el espejo, el escritorio o el fondo del móvil.",
+      "Una imagen o una frase corta funciona mejor que un texto largo."
+     ],
+     "q": "¿Dónde verás de forma natural un recordatorio de tu meta en tu día?",
+     "c": "Pon una nota o imagen de tu meta en un lugar que veas a diario."
+    },
+    "fr": {
+     "t": "Rendre ton objectif visible",
+     "g": "Place une note, une image ou un rappel là où tu le verras chaque jour.",
+     "p": [
+      "Loin des yeux, loin de l'esprit : mets ton objectif sous ton regard.",
+      "Bons endroits : le frigo, le miroir, le bureau ou le fond d'écran du téléphone.",
+      "Une image ou une courte phrase marche mieux qu'un long texte."
+     ],
+     "q": "Où verras-tu naturellement un rappel de ton objectif dans ta journée ?",
+     "c": "Mets une note ou une image de ton objectif à un endroit que tu vois chaque jour."
+    },
+    "it": {
+     "t": "Rendere visibile il tuo obiettivo",
+     "g": "Metti un appunto, un'immagine o un promemoria dove lo vedrai ogni giorno.",
+     "p": [
+      "Lontano dagli occhi, lontano dalla mente: metti l'obiettivo in vista.",
+      "Buoni posti: il frigo, lo specchio, la scrivania o lo sfondo del telefono.",
+      "Un'immagine o una frase breve funziona meglio di un testo lungo."
+     ],
+     "q": "Dove vedrai naturalmente un promemoria del tuo obiettivo durante il giorno?",
+     "c": "Metti un appunto o un'immagine del tuo obiettivo in un posto che vedi ogni giorno."
+    },
+    "pt": {
+     "t": "Torna a tua meta visível",
+     "g": "Põe uma nota, imagem ou lembrete onde o vejas todos os dias.",
+     "p": [
+      "O que não se vê esquece-se, por isso põe a tua meta à vista.",
+      "Bons sítios: o frigorífico, o espelho, a secretária ou o fundo do telemóvel.",
+      "Uma imagem ou uma frase curta funciona melhor do que um texto longo."
+     ],
+     "q": "Onde vais ver naturalmente um lembrete da tua meta durante o dia?",
+     "c": "Põe uma nota ou imagem da tua meta num sítio que vejas diariamente."
+    },
+    "pt_BR": {
+     "t": "Deixe sua meta visível",
+     "g": "Coloque uma nota, imagem ou lembrete onde você o veja todo dia.",
+     "p": [
+      "O que não se vê se esquece, então ponha sua meta à vista.",
+      "Bons lugares: a geladeira, o espelho, a mesa ou o papel de parede do celular.",
+      "Uma imagem ou uma frase curta funciona melhor do que um texto longo."
+     ],
+     "q": "Onde você vai ver naturalmente um lembrete da sua meta durante o dia?",
+     "c": "Coloque uma nota ou imagem da sua meta num lugar que você veja todo dia."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A goal card in your pocket",
+     "g": "Create a small card or phone note with your goal and your why.",
+     "p": [
+      "A tiny card keeps your goal and reason one tap or glance away.",
+      "Write your goal sentence, your why and your first step.",
+      "Reading it for ten seconds can reset a wandering day."
+     ],
+     "q": "What would you put on your goal card to cheer yourself up?",
+     "c": "Make a small goal card or phone note with goal, why and first step."
+    },
+    "de": {
+     "t": "Eine Zielkarte für die Tasche",
+     "g": "Erstelle eine kleine Karte oder Handynotiz mit deinem Ziel und deinem Grund.",
+     "p": [
+      "Eine winzige Karte hält Ziel und Grund nur einen Blick entfernt.",
+      "Schreibe deinen Zielsatz, deinen Grund und deinen ersten Schritt auf.",
+      "Zehn Sekunden Lesen können einen abgelenkten Tag zurechtrücken."
+     ],
+     "q": "Was würdest du auf deine Zielkarte schreiben, um dich aufzumuntern?",
+     "c": "Mache eine kleine Zielkarte oder Handynotiz mit Ziel, Grund und erstem Schritt."
+    },
+    "es": {
+     "t": "Una tarjeta de meta en tu bolsillo",
+     "g": "Crea una tarjetita o nota del móvil con tu meta y tu porqué.",
+     "p": [
+      "Una tarjeta pequeña mantiene tu meta y tu razón a un vistazo.",
+      "Escribe tu frase de meta, tu porqué y tu primer paso.",
+      "Leerla diez segundos puede reencauzar un día disperso."
+     ],
+     "q": "¿Qué pondrías en tu tarjeta de meta para animarte?",
+     "c": "Haz una tarjeta o nota del móvil con meta, porqué y primer paso."
+    },
+    "fr": {
+     "t": "Une carte d'objectif dans ta poche",
+     "g": "Crée une petite carte ou une note de téléphone avec ton objectif et ta raison.",
+     "p": [
+      "Une petite carte garde ton objectif et ta raison à portée de regard.",
+      "Écris ta phrase d'objectif, ta raison et ton premier pas.",
+      "La lire dix secondes peut recadrer une journée dispersée."
+     ],
+     "q": "Qu'écrirais-tu sur ta carte d'objectif pour t'encourager ?",
+     "c": "Fais une petite carte ou note avec objectif, raison et premier pas."
+    },
+    "it": {
+     "t": "Una carta dell'obiettivo in tasca",
+     "g": "Crea un biglietto o una nota sul telefono con il tuo obiettivo e il tuo perché.",
+     "p": [
+      "Un piccolo biglietto tiene obiettivo e ragione a portata di sguardo.",
+      "Scrivi la frase dell'obiettivo, il tuo perché e il primo passo.",
+      "Leggerlo dieci secondi può rimettere in carreggiata una giornata dispersiva."
+     ],
+     "q": "Cosa metteresti sulla tua carta dell'obiettivo per darti la carica?",
+     "c": "Fai un biglietto o una nota con obiettivo, perché e primo passo."
+    },
+    "pt": {
+     "t": "Um cartão da meta no bolso",
+     "g": "Cria um cartãozinho ou nota no telemóvel com a tua meta e o teu porquê.",
+     "p": [
+      "Um cartão pequeno mantém a meta e a razão à distância de um olhar.",
+      "Escreve a frase da meta, o teu porquê e o primeiro passo.",
+      "Lê-lo dez segundos pode reencaminhar um dia disperso."
+     ],
+     "q": "O que porias no teu cartão da meta para te animar?",
+     "c": "Faz um cartão ou nota no telemóvel com meta, porquê e primeiro passo."
+    },
+    "pt_BR": {
+     "t": "Um cartão da meta no bolso",
+     "g": "Crie um cartãozinho ou nota no celular com sua meta e o seu porquê.",
+     "p": [
+      "Um cartão pequeno mantém a meta e a razão a um olhar de distância.",
+      "Escreva a frase da meta, o seu porquê e o primeiro passo.",
+      "Ler por dez segundos pode redirecionar um dia disperso."
+     ],
+     "q": "O que você poria no cartão da meta para se animar?",
+     "c": "Faça um cartão ou nota no celular com meta, porquê e primeiro passo."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Telling one person",
+     "g": "Choose someone supportive to share your goal with for extra commitment.",
+     "p": [
+      "Saying a goal to someone makes it feel more real.",
+      "Pick a kind person who cheers you on, not one who judges.",
+      "You can ask for something small, like checking in with you weekly."
+     ],
+     "q": "Who is the most supportive person you could tell about your goal?",
+     "c": "Tell one supportive person your goal, or write them a message today."
+    },
+    "de": {
+     "t": "Einer Person davon erzählen",
+     "g": "Wähle eine unterstützende Person, der du dein Ziel erzählst, für mehr Verbindlichkeit.",
+     "p": [
+      "Ein Ziel jemandem zu sagen macht es wirklicher.",
+      "Wähle einen freundlichen Menschen, der dich anfeuert, nicht einen, der urteilt.",
+      "Du kannst um etwas Kleines bitten, etwa wöchentlich bei dir nachzufragen."
+     ],
+     "q": "Wer ist die unterstützendste Person, der du von deinem Ziel erzählen könntest?",
+     "c": "Erzähle einer unterstützenden Person von deinem Ziel oder schreibe ihr heute."
+    },
+    "es": {
+     "t": "Contárselo a una persona",
+     "g": "Elige a alguien que te apoye para compartir tu meta y comprometerte más.",
+     "p": [
+      "Decir una meta a alguien la hace sentir más real.",
+      "Elige a una persona amable que te anime, no que te juzgue.",
+      "Puedes pedir algo pequeño, como que te pregunte cada semana."
+     ],
+     "q": "¿Quién es la persona que más te apoyaría para contarle tu meta?",
+     "c": "Cuéntale tu meta a una persona de confianza o escríbele hoy."
+    },
+    "fr": {
+     "t": "En parler à une personne",
+     "g": "Choisis quelqu'un de bienveillant avec qui partager ton objectif pour t'engager davantage.",
+     "p": [
+      "Dire un objectif à quelqu'un le rend plus réel.",
+      "Choisis une personne gentille qui t'encourage, pas qui juge.",
+      "Tu peux demander quelque chose de petit, comme prendre de tes nouvelles chaque semaine."
+     ],
+     "q": "Quelle est la personne la plus encourageante à qui parler de ton objectif ?",
+     "c": "Parle de ton objectif à une personne bienveillante ou écris-lui aujourd'hui."
+    },
+    "it": {
+     "t": "Dirlo a una persona",
+     "g": "Scegli qualcuno che ti sostiene per condividere l'obiettivo e impegnarti di più.",
+     "p": [
+      "Dire un obiettivo a qualcuno lo rende più reale.",
+      "Scegli una persona gentile che ti incoraggia, non che giudica.",
+      "Puoi chiedere qualcosa di piccolo, come sentirvi ogni settimana."
+     ],
+     "q": "Chi è la persona più di supporto a cui potresti parlare del tuo obiettivo?",
+     "c": "Parla del tuo obiettivo a una persona di fiducia o scrivile oggi."
+    },
+    "pt": {
+     "t": "Contar a uma pessoa",
+     "g": "Escolhe alguém que te apoie para partilhares a meta e te comprometeres mais.",
+     "p": [
+      "Dizer uma meta a alguém torna-a mais real.",
+      "Escolhe uma pessoa simpática que te anime, não que te julgue.",
+      "Podes pedir algo pequeno, como perguntar-te como vai todas as semanas."
+     ],
+     "q": "Quem é a pessoa mais solidária a quem podias contar a tua meta?",
+     "c": "Conta a tua meta a uma pessoa de confiança ou escreve-lhe hoje."
+    },
+    "pt_BR": {
+     "t": "Contar a uma pessoa",
+     "g": "Escolha alguém que apoie você para compartilhar a meta e se comprometer mais.",
+     "p": [
+      "Dizer uma meta a alguém a torna mais real.",
+      "Escolha uma pessoa gentil que anime você, não que julgue.",
+      "Você pode pedir algo pequeno, como perguntar como você está toda semana."
+     ],
+     "q": "Quem é a pessoa mais apoiadora a quem você poderia contar sua meta?",
+     "c": "Conte sua meta a uma pessoa de confiança ou escreva para ela hoje."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first tiny action",
+     "g": "Do one five-minute action toward your goal today.",
+     "p": [
+      "Starting beats planning: one tiny action turns the goal into motion.",
+      "Choose something so small you cannot say no, like gathering what you need.",
+      "Set a timer for five minutes and stop when it rings, if you like."
+     ],
+     "q": "What five-minute action can you do right now for your goal?",
+     "c": "Set a five-minute timer and do one tiny action for your goal."
+    },
+    "de": {
+     "t": "Deine erste winzige Handlung",
+     "g": "Mache heute eine Fünf-Minuten-Handlung für dein Ziel.",
+     "p": [
+      "Anfangen schlägt Planen: Eine winzige Handlung bringt das Ziel in Bewegung.",
+      "Wähle etwas so Kleines, dass du nicht Nein sagen kannst, etwa Material bereitlegen.",
+      "Stelle einen Fünf-Minuten-Timer und höre auf, wenn er klingelt, wenn du magst."
+     ],
+     "q": "Welche Fünf-Minuten-Handlung kannst du jetzt für dein Ziel tun?",
+     "c": "Stelle einen Fünf-Minuten-Timer und tu eine winzige Handlung für dein Ziel."
+    },
+    "es": {
+     "t": "Tu primera acción diminuta",
+     "g": "Haz hoy una acción de cinco minutos hacia tu meta.",
+     "p": [
+      "Empezar vale más que planear: una acción diminuta pone la meta en marcha.",
+      "Elige algo tan pequeño que no puedas decir que no, como reunir lo que necesitas.",
+      "Pon un temporizador de cinco minutos y para al sonar, si quieres."
+     ],
+     "q": "¿Qué acción de cinco minutos puedes hacer ahora por tu meta?",
+     "c": "Pon un temporizador de cinco minutos y haz una acción diminuta por tu meta."
+    },
+    "fr": {
+     "t": "Ta première toute petite action",
+     "g": "Fais aujourd'hui une action de cinq minutes vers ton objectif.",
+     "p": [
+      "Commencer vaut mieux que planifier : une petite action met l'objectif en mouvement.",
+      "Choisis quelque chose de si petit que tu ne puisses pas refuser, comme rassembler ton matériel.",
+      "Mets un minuteur de cinq minutes et arrête-toi à la sonnerie, si tu veux."
+     ],
+     "q": "Quelle action de cinq minutes peux-tu faire maintenant pour ton objectif ?",
+     "c": "Lance un minuteur de cinq minutes et fais une petite action pour ton objectif."
+    },
+    "it": {
+     "t": "La tua prima piccolissima azione",
+     "g": "Fai oggi un'azione di cinque minuti verso il tuo obiettivo.",
+     "p": [
+      "Iniziare vale più che pianificare: una piccola azione mette in moto l'obiettivo.",
+      "Scegli qualcosa di così piccolo da non poter dire no, come preparare ciò che serve.",
+      "Imposta un timer di cinque minuti e fermati al suono, se vuoi."
+     ],
+     "q": "Quale azione di cinque minuti puoi fare ora per il tuo obiettivo?",
+     "c": "Imposta un timer di cinque minuti e fai una piccola azione per il tuo obiettivo."
+    },
+    "pt": {
+     "t": "A tua primeira pequena ação",
+     "g": "Faz hoje uma ação de cinco minutos rumo à tua meta.",
+     "p": [
+      "Começar vale mais do que planear: uma pequena ação põe a meta em movimento.",
+      "Escolhe algo tão pequeno que não possas dizer que não, como juntar o que precisas.",
+      "Põe um temporizador de cinco minutos e pára quando tocar, se quiseres."
+     ],
+     "q": "Que ação de cinco minutos podes fazer agora pela tua meta?",
+     "c": "Põe um temporizador de cinco minutos e faz uma pequena ação pela tua meta."
+    },
+    "pt_BR": {
+     "t": "Sua primeira pequena ação",
+     "g": "Faça hoje uma ação de cinco minutos rumo à sua meta.",
+     "p": [
+      "Começar vale mais do que planejar: uma pequena ação põe a meta em movimento.",
+      "Escolha algo tão pequeno que você não consiga dizer não, como juntar o que precisa.",
+      "Ponha um timer de cinco minutos e pare quando tocar, se quiser."
+     ],
+     "q": "Que ação de cinco minutos você pode fazer agora pela sua meta?",
+     "c": "Ponha um timer de cinco minutos e faça uma pequena ação pela sua meta."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Noticing early progress",
+     "g": "Spot the small signs that you have already started moving.",
+     "p": [
+      "Early progress is tiny, but it is real and worth noticing.",
+      "Look for signs: a started list, a clearer plan, one finished action.",
+      "Noticing progress feeds motivation better than waiting for big results."
+     ],
+     "q": "What small sign of progress can you already see?",
+     "c": "Write down three small signs of progress, however tiny they seem."
+    },
+    "de": {
+     "t": "Frühen Fortschritt bemerken",
+     "g": "Erkenne die kleinen Zeichen, dass du dich schon bewegst.",
+     "p": [
+      "Früher Fortschritt ist winzig, aber echt und eine Beachtung wert.",
+      "Achte auf Zeichen: eine begonnene Liste, ein klarerer Plan, eine erledigte Handlung.",
+      "Fortschritt zu bemerken nährt Motivation besser als auf große Ergebnisse zu warten."
+     ],
+     "q": "Welches kleine Zeichen von Fortschritt siehst du schon?",
+     "c": "Schreibe drei kleine Fortschrittszeichen auf, egal wie winzig sie scheinen."
+    },
+    "es": {
+     "t": "Notar el progreso temprano",
+     "g": "Detecta las pequeñas señales de que ya te has puesto en marcha.",
+     "p": [
+      "El progreso temprano es diminuto, pero real y digno de notarse.",
+      "Busca señales: una lista empezada, un plan más claro, una acción terminada.",
+      "Notar el progreso alimenta la motivación mejor que esperar grandes resultados."
+     ],
+     "q": "¿Qué pequeña señal de progreso ya puedes ver?",
+     "c": "Anota tres pequeñas señales de progreso, por diminutas que parezcan."
+    },
+    "fr": {
+     "t": "Remarquer les premiers progrès",
+     "g": "Repère les petits signes que tu as déjà commencé à avancer.",
+     "p": [
+      "Les premiers progrès sont minuscules, mais réels et dignes d'attention.",
+      "Cherche des signes : une liste commencée, un plan plus clair, une action terminée.",
+      "Remarquer les progrès nourrit la motivation mieux qu'attendre de grands résultats."
+     ],
+     "q": "Quel petit signe de progrès vois-tu déjà ?",
+     "c": "Note trois petits signes de progrès, aussi minuscules soient-ils."
+    },
+    "it": {
+     "t": "Notare i primi progressi",
+     "g": "Individua i piccoli segni che hai già iniziato a muoverti.",
+     "p": [
+      "I primi progressi sono minuscoli, ma reali e degni di nota.",
+      "Cerca segni: una lista iniziata, un piano più chiaro, un'azione finita.",
+      "Notare i progressi alimenta la motivazione meglio che aspettare grandi risultati."
+     ],
+     "q": "Quale piccolo segno di progresso vedi già?",
+     "c": "Scrivi tre piccoli segni di progresso, per quanto minuscoli sembrino."
+    },
+    "pt": {
+     "t": "Reparar no progresso inicial",
+     "g": "Deteta os pequenos sinais de que já começaste a mover-te.",
+     "p": [
+      "O progresso inicial é minúsculo, mas real e merece atenção.",
+      "Procura sinais: uma lista começada, um plano mais claro, uma ação concluída.",
+      "Reparar no progresso alimenta a motivação melhor do que esperar grandes resultados."
+     ],
+     "q": "Que pequeno sinal de progresso já consegues ver?",
+     "c": "Escreve três pequenos sinais de progresso, por minúsculos que pareçam."
+    },
+    "pt_BR": {
+     "t": "Perceber o progresso inicial",
+     "g": "Perceba os pequenos sinais de que você já começou a se mover.",
+     "p": [
+      "O progresso inicial é minúsculo, mas real e merece atenção.",
+      "Procure sinais: uma lista começada, um plano mais claro, uma ação concluída.",
+      "Perceber o progresso alimenta a motivação melhor do que esperar grandes resultados."
+     ],
+     "q": "Que pequeno sinal de progresso você já consegue ver?",
+     "c": "Escreva três pequenos sinais de progresso, por menores que pareçam."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Questions that keep you on track",
+     "g": "A few simple questions to ask yourself each evening about your goal.",
+     "p": [
+      "A short evening check-in keeps your goal alive without effort.",
+      "Try three questions: what did I do, what helped, what is next?",
+      "Answer kindly and briefly; one line each is plenty."
+     ],
+     "q": "Which of the three evening questions would you find most useful?",
+     "c": "Answer the three evening questions in one line each tonight."
+    },
+    "de": {
+     "t": "Fragen, die auf Kurs halten",
+     "g": "Ein paar einfache Fragen, die du dir abends zu deinem Ziel stellen kannst.",
+     "p": [
+      "Ein kurzer Abend-Check hält dein Ziel ohne Mühe lebendig.",
+      "Probiere drei Fragen: Was habe ich getan, was hat geholfen, was kommt als Nächstes?",
+      "Antworte freundlich und knapp; eine Zeile pro Frage genügt."
+     ],
+     "q": "Welche der drei Abendfragen findest du am nützlichsten?",
+     "c": "Beantworte heute Abend die drei Fragen in je einer Zeile."
+    },
+    "es": {
+     "t": "Preguntas que te mantienen en camino",
+     "g": "Unas preguntas sencillas para hacerte cada noche sobre tu meta.",
+     "p": [
+      "Un breve repaso nocturno mantiene viva tu meta sin esfuerzo.",
+      "Prueba tres preguntas: ¿qué hice?, ¿qué ayudó?, ¿qué sigue?",
+      "Responde con amabilidad y brevedad; una línea cada una basta."
+     ],
+     "q": "¿Cuál de las tres preguntas nocturnas te parece más útil?",
+     "c": "Responde esta noche las tres preguntas en una línea cada una."
+    },
+    "fr": {
+     "t": "Des questions pour rester sur la voie",
+     "g": "Quelques questions simples à te poser chaque soir sur ton objectif.",
+     "p": [
+      "Un court bilan du soir garde ton objectif vivant sans effort.",
+      "Essaie trois questions : qu'ai-je fait, qu'est-ce qui a aidé, et ensuite ?",
+      "Réponds avec douceur et brièveté ; une ligne chacune suffit."
+     ],
+     "q": "Laquelle des trois questions du soir te semble la plus utile ?",
+     "c": "Réponds ce soir aux trois questions en une ligne chacune."
+    },
+    "it": {
+     "t": "Domande per restare in rotta",
+     "g": "Qualche semplice domanda da farti ogni sera sul tuo obiettivo.",
+     "p": [
+      "Un breve bilancio serale mantiene vivo il tuo obiettivo senza fatica.",
+      "Prova tre domande: cosa ho fatto, cosa ha aiutato, cosa viene dopo?",
+      "Rispondi con gentilezza e brevità; una riga ciascuna basta."
+     ],
+     "q": "Quale delle tre domande serali trovi più utile?",
+     "c": "Rispondi stasera alle tre domande in una riga ciascuna."
+    },
+    "pt": {
+     "t": "Perguntas que te mantêm no rumo",
+     "g": "Algumas perguntas simples para te fazeres todas as noites sobre a tua meta.",
+     "p": [
+      "Um breve balanço à noite mantém a meta viva sem esforço.",
+      "Experimenta três perguntas: o que fiz, o que ajudou, o que vem a seguir?",
+      "Responde com gentileza e brevidade; uma linha cada uma chega."
+     ],
+     "q": "Qual das três perguntas da noite achas mais útil?",
+     "c": "Responde esta noite às três perguntas, uma linha cada."
+    },
+    "pt_BR": {
+     "t": "Perguntas que mantêm você no rumo",
+     "g": "Algumas perguntas simples para fazer a si mesmo toda noite sobre sua meta.",
+     "p": [
+      "Um breve balanço à noite mantém a meta viva sem esforço.",
+      "Experimente três perguntas: o que fiz, o que ajudou, o que vem agora?",
+      "Responda com gentileza e brevidade; uma linha cada uma basta."
+     ],
+     "q": "Qual das três perguntas da noite você acha mais útil?",
+     "c": "Responda esta noite às três perguntas, uma linha cada."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your goal foundation",
+     "g": "Look back at your goal statement, your why and your very first steps.",
+     "p": [
+      "You have built a foundation: a goal, a reason, a date and a first step.",
+      "Reviewing shows what is solid and what could be adjusted.",
+      "Celebrate what you have done; this is a real start."
+     ],
+     "q": "Looking back over this month, what are you proudest of so far?",
+     "c": "Reread your goal card and change one word or detail that no longer fits."
+    },
+    "de": {
+     "t": "Rückblick: dein Zielfundament",
+     "g": "Blicke zurück auf deine Zielformulierung, deinen Grund und deine ersten Schritte.",
+     "p": [
+      "Du hast ein Fundament gebaut: Ziel, Grund, Datum und ein erster Schritt.",
+      "Ein Rückblick zeigt, was stabil ist und was du anpassen könntest.",
+      "Feiere, was du getan hast; das ist ein echter Anfang."
+     ],
+     "q": "Worauf bist du in diesem Monat bisher am stolzesten?",
+     "c": "Lies deine Zielkarte noch einmal und ändere ein Wort oder Detail, das nicht mehr passt."
+    },
+    "es": {
+     "t": "Repaso: la base de tu meta",
+     "g": "Repasa tu frase de meta, tu porqué y tus primeros pasos.",
+     "p": [
+      "Has construido una base: una meta, una razón, una fecha y un primer paso.",
+      "Repasar muestra qué está firme y qué se podría ajustar.",
+      "Celebra lo que has hecho; es un comienzo de verdad."
+     ],
+     "q": "Mirando este mes, ¿de qué estás más orgulloso hasta ahora?",
+     "c": "Relee tu tarjeta de meta y cambia una palabra o detalle que ya no encaje."
+    },
+    "fr": {
+     "t": "Bilan : les bases de ton objectif",
+     "g": "Reviens sur ta phrase d'objectif, ta raison et tes tout premiers pas.",
+     "p": [
+      "Tu as posé des bases : un objectif, une raison, une date et un premier pas.",
+      "Faire le point montre ce qui est solide et ce qu'on peut ajuster.",
+      "Célèbre ce que tu as fait ; c'est un vrai début."
+     ],
+     "q": "En regardant ce mois, de quoi es-tu le plus fier jusqu'ici ?",
+     "c": "Relis ta carte d'objectif et change un mot ou un détail qui ne convient plus."
+    },
+    "it": {
+     "t": "Ripasso: le basi del tuo obiettivo",
+     "g": "Rivedi la frase del tuo obiettivo, il tuo perché e i tuoi primi passi.",
+     "p": [
+      "Hai costruito una base: un obiettivo, una ragione, una data e un primo passo.",
+      "Rivedere mostra cosa è solido e cosa si può aggiustare.",
+      "Festeggia ciò che hai fatto; è un vero inizio."
+     ],
+     "q": "Guardando questo mese, di cosa sei più fiero finora?",
+     "c": "Rileggi la tua carta dell'obiettivo e cambia una parola o un dettaglio che non va più."
+    },
+    "pt": {
+     "t": "Revisão: a base da tua meta",
+     "g": "Revê a frase da tua meta, o teu porquê e os teus primeiros passos.",
+     "p": [
+      "Construíste uma base: uma meta, uma razão, uma data e um primeiro passo.",
+      "Rever mostra o que está sólido e o que se pode ajustar.",
+      "Celebra o que fizeste; é um começo a sério."
+     ],
+     "q": "Olhando para este mês, do que estás mais orgulhoso até agora?",
+     "c": "Relê o teu cartão da meta e muda uma palavra ou detalhe que já não encaixe."
+    },
+    "pt_BR": {
+     "t": "Revisão: a base da sua meta",
+     "g": "Reveja a frase da sua meta, o seu porquê e os seus primeiros passos.",
+     "p": [
+      "Você construiu uma base: uma meta, uma razão, uma data e um primeiro passo.",
+      "Rever mostra o que está sólido e o que pode ser ajustado.",
+      "Comemore o que você fez; é um começo de verdade."
+     ],
+     "q": "Olhando para este mês, do que você mais se orgulha até agora?",
+     "c": "Releia seu cartão da meta e mude uma palavra ou detalhe que já não combine."
+    }
+   }
+  }
+ ]
+}

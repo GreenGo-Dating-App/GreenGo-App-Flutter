@@ -1,0 +1,835 @@
+{
+ "topic": "comedy",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Humour around the world",
+     "g": "Take a first tour of how every culture laughs in its own style.",
+     "p": [
+      "Every culture laughs, but the favourite styles differ: wordplay, storytelling, irony or slapstick.",
+      "Humour grows from language, history and daily habits.",
+      "Curiosity is the key: ask people what makes them laugh at home."
+     ],
+     "q": "What funny tradition or joke style comes from your country or region?",
+     "c": "Ask one person from another country what kind of joke they love and listen carefully."
+    },
+    "de": {
+     "t": "Humor rund um die Welt",
+     "g": "Eine erste Reise dazu, wie jede Kultur auf ihre Weise lacht.",
+     "p": [
+      "Jede Kultur lacht, aber die Lieblingsstile unterscheiden sich: Wortspiel, Erzählung, Ironie oder Slapstick.",
+      "Humor wächst aus Sprache, Geschichte und Alltagsgewohnheiten.",
+      "Neugier ist der Schlüssel: Frag Menschen, worüber sie zu Hause lachen."
+     ],
+     "q": "Welche lustige Tradition oder Witzart kommt aus deinem Land oder deiner Region?",
+     "c": "Frag heute jemanden aus einem anderen Land, welche Witze er liebt, und hör gut zu."
+    },
+    "es": {
+     "t": "El humor en el mundo",
+     "g": "Hacer un primer recorrido por la forma en que cada cultura ríe a su manera.",
+     "p": [
+      "Todas las culturas ríen, pero los estilos favoritos varían: juegos de palabras, relatos, ironía o payasadas.",
+      "El humor nace del idioma, la historia y las costumbres diarias.",
+      "La curiosidad es la clave: pregunta a la gente qué les hace reír en su casa."
+     ],
+     "q": "¿Qué tradición graciosa o estilo de chiste viene de tu país o región?",
+     "c": "Pregunta hoy a alguien de otro país qué tipo de chiste le encanta y escucha con atención."
+    },
+    "fr": {
+     "t": "L'humour dans le monde",
+     "g": "Faire un premier tour de la façon dont chaque culture rit à sa manière.",
+     "p": [
+      "Toutes les cultures rient, mais les styles préférés varient : jeux de mots, récits, ironie ou grosses farces.",
+      "L'humour naît de la langue, de l'histoire et des habitudes quotidiennes.",
+      "La curiosité est la clé : demande aux gens ce qui les fait rire chez eux."
+     ],
+     "q": "Quelle tradition drôle ou quel style de blague vient de ton pays ou de ta région ?",
+     "c": "Demande aujourd'hui à quelqu'un d'un autre pays quel genre de blague il adore et écoute bien."
+    },
+    "it": {
+     "t": "L'umorismo nel mondo",
+     "g": "Fare un primo giro di come ogni cultura ride a modo suo.",
+     "p": [
+      "Ogni cultura ride, ma gli stili preferiti variano: giochi di parole, racconti, ironia o comicità fisica.",
+      "L'umorismo nasce dalla lingua, dalla storia e dalle abitudini quotidiane.",
+      "La curiosità è la chiave: chiedi alle persone cosa le fa ridere a casa loro."
+     ],
+     "q": "Quale tradizione buffa o stile di barzelletta viene dal tuo paese o dalla tua regione?",
+     "c": "Chiedi oggi a qualcuno di un altro paese che tipo di barzelletta ama e ascolta con attenzione."
+    },
+    "pt": {
+     "t": "O humor pelo mundo",
+     "g": "Fazer uma primeira viagem pelo modo como cada cultura ri à sua maneira.",
+     "p": [
+      "Todas as culturas riem, mas os estilos favoritos variam: trocadilhos, histórias, ironia ou palhaçadas.",
+      "O humor nasce da língua, da história e dos hábitos diários.",
+      "A curiosidade é a chave: pergunta às pessoas do que se riem em casa."
+     ],
+     "q": "Que tradição engraçada ou estilo de piada vem do teu país ou da tua região?",
+     "c": "Pergunta hoje a alguém de outro país que tipo de piada adora e ouve com atenção."
+    },
+    "pt_BR": {
+     "t": "O humor pelo mundo",
+     "g": "Fazer uma primeira viagem pelo jeito como cada cultura ri à sua maneira.",
+     "p": [
+      "Todas as culturas riem, mas os estilos favoritos variam: trocadilhos, histórias, ironia ou pastelão.",
+      "O humor nasce da língua, da história e dos hábitos do dia a dia.",
+      "A curiosidade é a chave: pergunte às pessoas do que elas riem em casa."
+     ],
+     "q": "Que tradição engraçada ou estilo de piada vem do seu país ou da sua região?",
+     "c": "Pergunte hoje a alguém de outro país que tipo de piada adora e escute com atenção."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "British humour basics",
+     "g": "Meet dry wit, irony and understatement, and why a straight face matters.",
+     "p": [
+      "Dry wit sounds serious while saying something playful.",
+      "Irony means saying one thing and meaning another, with a wink in the tone.",
+      "Britain's comedy groups, like Monty Python, made absurd humour famous worldwide."
+     ],
+     "q": "Can you say something funny with a completely straight face?",
+     "c": "Say one sentence today in a calm, dry voice, such as: well, that went about as planned."
+    },
+    "de": {
+     "t": "Britischer Humor: die Grundlagen",
+     "g": "Trockenen Witz, Ironie und Untertreibung kennenlernen und warum ein ernstes Gesicht zählt.",
+     "p": [
+      "Trockener Witz klingt ernst, sagt aber etwas Verspieltes.",
+      "Ironie heißt, das Gegenteil zu sagen, mit einem Augenzwinkern im Ton.",
+      "Britische Komikergruppen wie Monty Python machten absurden Humor weltweit berühmt."
+     ],
+     "q": "Kannst du mit völlig ernstem Gesicht etwas Lustiges sagen?",
+     "c": "Sag heute einen Satz in ruhigem, trockenem Ton, etwa: Na, das lief ja genau nach Plan."
+    },
+    "es": {
+     "t": "Fundamentos del humor británico",
+     "g": "Conocer el ingenio seco, la ironía y la atenuación, y por qué importa la cara seria.",
+     "p": [
+      "El ingenio seco suena serio mientras dice algo juguetón.",
+      "La ironía es decir una cosa y querer decir otra, con un guiño en el tono.",
+      "Grupos británicos como Monty Python hicieron famoso el humor absurdo en el mundo."
+     ],
+     "q": "¿Puedes decir algo gracioso con la cara completamente seria?",
+     "c": "Di hoy una frase con voz tranquila y seca, como: pues esto ha salido más o menos como estaba previsto."
+    },
+    "fr": {
+     "t": "Les bases de l'humour britannique",
+     "g": "Découvrir l'esprit pince-sans-rire, l'ironie et l'understatement, et l'importance du visage sérieux.",
+     "p": [
+      "L'humour pince-sans-rire sonne sérieux tout en disant quelque chose de joueur.",
+      "L'ironie, c'est dire une chose en en pensant une autre, avec un clin d'œil dans le ton.",
+      "Des troupes britanniques comme les Monty Python ont rendu l'humour absurde célèbre dans le monde."
+     ],
+     "q": "Peux-tu dire quelque chose de drôle avec un visage parfaitement sérieux ?",
+     "c": "Dis aujourd'hui une phrase d'une voix calme et pince-sans-rire, comme : eh bien, tout s'est passé comme prévu."
+    },
+    "it": {
+     "t": "Le basi dell'umorismo britannico",
+     "g": "Conoscere l'arguzia asciutta, l'ironia e l'understatement, e perché conta la faccia seria.",
+     "p": [
+      "L'arguzia asciutta suona seria mentre dice qualcosa di giocoso.",
+      "L'ironia è dire una cosa intendendone un'altra, con un occhiolino nel tono.",
+      "Gruppi britannici come i Monty Python hanno reso celebre nel mondo l'umorismo assurdo."
+     ],
+     "q": "Riesci a dire qualcosa di divertente con la faccia perfettamente seria?",
+     "c": "Di' oggi una frase con voce calma e asciutta, tipo: beh, è andata più o meno come previsto."
+    },
+    "pt": {
+     "t": "Noções básicas do humor britânico",
+     "g": "Conhecer o espírito seco, a ironia e o eufemismo, e porque importa a cara séria.",
+     "p": [
+      "O espírito seco soa sério enquanto diz algo brincalhão.",
+      "A ironia é dizer uma coisa e querer dizer outra, com uma piscadela no tom.",
+      "Grupos britânicos como os Monty Python tornaram o humor absurdo famoso no mundo."
+     ],
+     "q": "Consegues dizer algo engraçado com a cara completamente séria?",
+     "c": "Diz hoje uma frase em tom calmo e seco, como: pois, correu mais ou menos como previsto."
+    },
+    "pt_BR": {
+     "t": "Noções básicas do humor britânico",
+     "g": "Conhecer o humor seco, a ironia e o eufemismo, e por que importa a cara séria.",
+     "p": [
+      "O humor seco soa sério enquanto diz algo brincalhão.",
+      "A ironia é dizer uma coisa e querer dizer outra, com uma piscadela no tom.",
+      "Grupos britânicos como o Monty Python tornaram o humor absurdo famoso no mundo."
+     ],
+     "q": "Você consegue dizer algo engraçado com a cara completamente séria?",
+     "c": "Diga hoje uma frase em tom calmo e seco, como: pois é, saiu mais ou menos como previsto."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "American humour basics",
+     "g": "See energy, self-confidence and storytelling in classic American comedy.",
+     "p": [
+      "Stand-up comedy turned personal stories and observations into a famous art form.",
+      "Confident delivery and big energy keep a large room laughing.",
+      "Sitcoms like I Love Lucy showed how physical comedy and warm characters work together."
+     ],
+     "q": "Which comedian or show from any country makes you laugh most?",
+     "c": "Tell a two-sentence story about your day with a big, confident voice."
+    },
+    "de": {
+     "t": "Amerikanischer Humor: die Grundlagen",
+     "g": "Energie, Selbstvertrauen und Erzählkunst in der klassischen amerikanischen Comedy sehen.",
+     "p": [
+      "Stand-up-Comedy machte persönliche Geschichten und Beobachtungen zu einer berühmten Kunstform.",
+      "Selbstbewusster Vortrag und viel Energie halten einen großen Saal am Lachen.",
+      "Sitcoms wie I Love Lucy zeigten, wie Körperkomik und warmherzige Figuren zusammenwirken."
+     ],
+     "q": "Welcher Comedian oder welche Show aus irgendeinem Land bringt dich am meisten zum Lachen?",
+     "c": "Erzähl heute eine Zwei-Satz-Geschichte über deinen Tag mit großer, selbstbewusster Stimme."
+    },
+    "es": {
+     "t": "Fundamentos del humor estadounidense",
+     "g": "Ver la energía, la seguridad y el relato en la comedia clásica estadounidense.",
+     "p": [
+      "El stand-up convirtió historias personales y observaciones en un arte famoso.",
+      "Una entrega segura y mucha energía mantienen riendo a una sala grande.",
+      "Comedias como Te quiero, Lucy mostraron cómo funcionan juntos el humor físico y los personajes cálidos."
+     ],
+     "q": "¿Qué humorista o programa de cualquier país te hace reír más?",
+     "c": "Cuenta hoy una historia de dos frases sobre tu día con voz grande y segura."
+    },
+    "fr": {
+     "t": "Les bases de l'humour américain",
+     "g": "Voir l'énergie, la confiance en soi et le récit dans la comédie américaine classique.",
+     "p": [
+      "Le stand-up a transformé histoires personnelles et observations en art célèbre.",
+      "Une présentation assurée et beaucoup d'énergie font rire une grande salle.",
+      "Des sitcoms comme I Love Lucy ont montré comment l'humour physique et les personnages chaleureux s'accordent."
+     ],
+     "q": "Quel humoriste ou quelle émission de n'importe quel pays te fait le plus rire ?",
+     "c": "Raconte aujourd'hui une histoire de deux phrases sur ta journée avec une voix forte et assurée."
+    },
+    "it": {
+     "t": "Le basi dell'umorismo americano",
+     "g": "Vedere energia, sicurezza e racconto nella comicità americana classica.",
+     "p": [
+      "La stand-up comedy ha trasformato storie personali e osservazioni in un'arte famosa.",
+      "Una recitazione sicura e tanta energia fanno ridere una sala grande.",
+      "Sitcom come Lucy ed io hanno mostrato come funzionano insieme comicità fisica e personaggi calorosi."
+     ],
+     "q": "Quale comico o programma di qualsiasi paese ti fa ridere di più?",
+     "c": "Racconta oggi una storia di due frasi sulla tua giornata con voce grande e sicura."
+    },
+    "pt": {
+     "t": "Noções básicas do humor americano",
+     "g": "Ver a energia, a confiança e a narrativa na comédia americana clássica.",
+     "p": [
+      "O stand-up transformou histórias pessoais e observações numa arte famosa.",
+      "Uma entrega confiante e muita energia mantêm uma sala grande a rir.",
+      "Séries como I Love Lucy mostraram como a comédia física e as personagens calorosas funcionam juntas."
+     ],
+     "q": "Que humorista ou programa de qualquer país te faz rir mais?",
+     "c": "Conta hoje uma história de duas frases sobre o teu dia com voz grande e confiante."
+    },
+    "pt_BR": {
+     "t": "Noções básicas do humor americano",
+     "g": "Ver a energia, a confiança e a narrativa na comédia americana clássica.",
+     "p": [
+      "O stand-up transformou histórias pessoais e observações numa arte famosa.",
+      "Uma entrega confiante e muita energia mantêm uma sala grande rindo.",
+      "Séries como I Love Lucy mostraram como a comédia física e os personagens calorosos funcionam juntos."
+     ],
+     "q": "Que humorista ou programa de qualquer país faz você rir mais?",
+     "c": "Conte hoje uma história de duas frases sobre o seu dia com voz grande e confiante."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "German humour basics",
+     "g": "Enjoy wordplay, precision and the joy of the Kalauer, the cheerful bad pun.",
+     "p": [
+      "A Kalauer is a deliberately silly pun that earns a happy groan.",
+      "German can build long compound words, which makes playful wordplay easy.",
+      "Precise, deadpan delivery makes an absurd idea even funnier."
+     ],
+     "q": "Can you invent a funny long word by gluing two words together?",
+     "c": "Invent one playful compound word today and explain what it means."
+    },
+    "de": {
+     "t": "Deutscher Humor: die Grundlagen",
+     "g": "Wortspiel, Genauigkeit und die Freude am Kalauer genießen.",
+     "p": [
+      "Ein Kalauer ist ein absichtlich alberner Witz, der ein fröhliches Stöhnen verdient.",
+      "Das Deutsche bildet lange zusammengesetzte Wörter, das macht Wortspiele leicht.",
+      "Präziser, trockener Vortrag macht eine absurde Idee noch komischer."
+     ],
+     "q": "Kannst du ein lustiges langes Wort erfinden, indem du zwei Wörter zusammenklebst?",
+     "c": "Erfinde heute ein spielerisches Kompositum und erkläre, was es bedeutet."
+    },
+    "es": {
+     "t": "Fundamentos del humor alemán",
+     "g": "Disfrutar del juego de palabras, la precisión y el Kalauer, el chiste malo alegre.",
+     "p": [
+      "Un Kalauer es un juego de palabras tonto a propósito que merece un quejido feliz.",
+      "El alemán forma palabras compuestas largas, lo que facilita los juegos de palabras.",
+      "Una entrega precisa e inexpresiva hace una idea absurda aún más graciosa."
+     ],
+     "q": "¿Puedes inventar una palabra larga y graciosa uniendo dos palabras?",
+     "c": "Inventa hoy una palabra compuesta divertida y explica qué significa."
+    },
+    "fr": {
+     "t": "Les bases de l'humour allemand",
+     "g": "Savourer le jeu de mots, la précision et la joie du Kalauer, le mauvais jeu de mots joyeux.",
+     "p": [
+      "Un Kalauer est un jeu de mots volontairement bête qui mérite un grognement heureux.",
+      "L'allemand forme de longs mots composés, ce qui facilite les jeux de mots.",
+      "Une diction précise et impassible rend une idée absurde encore plus drôle."
+     ],
+     "q": "Peux-tu inventer un mot long et drôle en collant deux mots ensemble ?",
+     "c": "Invente aujourd'hui un mot composé amusant et explique ce qu'il veut dire."
+    },
+    "it": {
+     "t": "Le basi dell'umorismo tedesco",
+     "g": "Gustare il gioco di parole, la precisione e la gioia del Kalauer, il cattivo gioco di parole allegro.",
+     "p": [
+      "Un Kalauer è un gioco di parole volutamente sciocco che merita un mugugno felice.",
+      "Il tedesco forma lunghe parole composte, il che rende facili i giochi di parole.",
+      "Una recitazione precisa e impassibile rende un'idea assurda ancora più divertente."
+     ],
+     "q": "Riesci a inventare una parola lunga e buffa unendo due parole?",
+     "c": "Inventa oggi una parola composta divertente e spiega cosa significa."
+    },
+    "pt": {
+     "t": "Noções básicas do humor alemão",
+     "g": "Apreciar o jogo de palavras, a precisão e a alegria do Kalauer, o trocadilho mau e alegre.",
+     "p": [
+      "Um Kalauer é um trocadilho propositadamente tolo que merece um gemido feliz.",
+      "O alemão forma palavras compostas compridas, o que facilita os jogos de palavras.",
+      "Uma entrega precisa e impassível torna uma ideia absurda ainda mais engraçada."
+     ],
+     "q": "Consegues inventar uma palavra comprida e engraçada juntando duas palavras?",
+     "c": "Inventa hoje uma palavra composta divertida e explica o que significa."
+    },
+    "pt_BR": {
+     "t": "Noções básicas do humor alemão",
+     "g": "Curtir o jogo de palavras, a precisão e a alegria do Kalauer, o trocadilho ruim e alegre.",
+     "p": [
+      "Um Kalauer é um trocadilho propositalmente bobo que merece um gemido feliz.",
+      "O alemão forma palavras compostas compridas, o que facilita os jogos de palavras.",
+      "Uma entrega precisa e impassível deixa uma ideia absurda ainda mais engraçada."
+     ],
+     "q": "Você consegue inventar uma palavra comprida e engraçada juntando duas palavras?",
+     "c": "Invente hoje uma palavra composta divertida e explique o que significa."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "French humour basics",
+     "g": "Meet esprit and the calembour: wit and word games in French conversation.",
+     "p": [
+      "Esprit means quick, elegant wit that sparkles in conversation.",
+      "A calembour is a French pun, loved in newspapers, songs and daily talk.",
+      "Understated elegance and clever turns of phrase are prized."
+     ],
+     "q": "Can you make a witty remark about the weather without complaining?",
+     "c": "Craft one elegant, witty sentence today and say it with a light smile."
+    },
+    "de": {
+     "t": "Französischer Humor: die Grundlagen",
+     "g": "Esprit und das Calembour kennenlernen: Witz und Wortspiele im französischen Gespräch.",
+     "p": [
+      "Esprit bedeutet schnellen, eleganten Witz, der im Gespräch funkelt.",
+      "Ein Calembour ist ein französisches Wortspiel, beliebt in Zeitungen, Liedern und Alltag.",
+      "Zurückhaltende Eleganz und geistreiche Wendungen werden geschätzt."
+     ],
+     "q": "Kannst du eine witzige Bemerkung über das Wetter machen, ohne zu klagen?",
+     "c": "Formuliere heute einen eleganten, witzigen Satz und sag ihn mit leichtem Lächeln."
+    },
+    "es": {
+     "t": "Fundamentos del humor francés",
+     "g": "Conocer el esprit y el calembour: ingenio y juegos de palabras en la conversación francesa.",
+     "p": [
+      "El esprit es un ingenio rápido y elegante que brilla en la charla.",
+      "Un calembour es un juego de palabras francés, querido en periódicos, canciones y conversaciones.",
+      "Se valoran la elegancia discreta y los giros ingeniosos de frase."
+     ],
+     "q": "¿Puedes hacer un comentario ingenioso sobre el tiempo sin quejarte?",
+     "c": "Elabora hoy una frase elegante e ingeniosa y dila con una leve sonrisa."
+    },
+    "fr": {
+     "t": "Les bases de l'humour français",
+     "g": "Découvrir l'esprit et le calembour : trait d'esprit et jeux de mots dans la conversation française.",
+     "p": [
+      "L'esprit, c'est une vivacité élégante qui pétille dans la conversation.",
+      "Le calembour est un jeu de mots aimé dans les journaux, les chansons et la vie courante.",
+      "On apprécie l'élégance discrète et les tournures de phrase astucieuses."
+     ],
+     "q": "Peux-tu faire une remarque spirituelle sur la météo sans te plaindre ?",
+     "c": "Compose aujourd'hui une phrase élégante et spirituelle et dis-la avec un léger sourire."
+    },
+    "it": {
+     "t": "Le basi dell'umorismo francese",
+     "g": "Conoscere l'esprit e il calembour: arguzia e giochi di parole nella conversazione francese.",
+     "p": [
+      "L'esprit è un'arguzia rapida ed elegante che brilla nella conversazione.",
+      "Un calembour è un gioco di parole francese, amato nei giornali, nelle canzoni e nel parlare quotidiano.",
+      "Si apprezzano l'eleganza discreta e i giri di frase ingegnosi."
+     ],
+     "q": "Riesci a fare un'osservazione arguta sul tempo senza lamentarti?",
+     "c": "Costruisci oggi una frase elegante e arguta e dilla con un lieve sorriso."
+    },
+    "pt": {
+     "t": "Noções básicas do humor francês",
+     "g": "Conhecer o esprit e o calembour: espírito e jogos de palavras na conversa francesa.",
+     "p": [
+      "O esprit é um humor rápido e elegante que brilha na conversa.",
+      "Um calembour é um trocadilho francês, apreciado em jornais, canções e na fala diária.",
+      "Valorizam-se a elegância discreta e as expressões engenhosas."
+     ],
+     "q": "Consegues fazer um comentário espirituoso sobre o tempo sem te queixares?",
+     "c": "Cria hoje uma frase elegante e espirituosa e di-la com um leve sorriso."
+    },
+    "pt_BR": {
+     "t": "Noções básicas do humor francês",
+     "g": "Conhecer o esprit e o calembour: espírito e jogos de palavras na conversa francesa.",
+     "p": [
+      "O esprit é um humor rápido e elegante que brilha na conversa.",
+      "Um calembour é um trocadilho francês, apreciado em jornais, músicas e na fala diária.",
+      "Valorizam-se a elegância discreta e as expressões engenhosas."
+     ],
+     "q": "Você consegue fazer um comentário espirituoso sobre o tempo sem reclamar?",
+     "c": "Crie hoje uma frase elegante e espirituosa e diga com um leve sorriso."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Italian humour basics",
+     "g": "Enjoy lively gestures, barzellette and comic characters from the commedia tradition.",
+     "p": [
+      "Expressive hands and faces are part of the joke in Italian conversation.",
+      "A barzelletta is a classic short joke, often told among friends and family.",
+      "Commedia dell'arte gave the world stock characters like Arlecchino, the clever, hungry servant."
+     ],
+     "q": "Which gesture do you use most when you tell a story?",
+     "c": "Tell a short story today and let your hands do half the talking."
+    },
+    "de": {
+     "t": "Italienischer Humor: die Grundlagen",
+     "g": "Lebhafte Gesten, Barzellette und komische Figuren der Commedia-Tradition genießen.",
+     "p": [
+      "Ausdrucksstarke Hände und Gesichter gehören im italienischen Gespräch zum Witz.",
+      "Eine Barzelletta ist ein klassischer kurzer Witz, oft unter Freunden und Familie erzählt.",
+      "Die Commedia dell'arte schenkte der Welt Typen wie Arlecchino, den klugen, hungrigen Diener."
+     ],
+     "q": "Welche Geste benutzt du am häufigsten, wenn du eine Geschichte erzählst?",
+     "c": "Erzähl heute eine kurze Geschichte und lass deine Hände die Hälfte erzählen."
+    },
+    "es": {
+     "t": "Fundamentos del humor italiano",
+     "g": "Disfrutar de gestos vivaces, barzellette y personajes cómicos de la tradición de la commedia.",
+     "p": [
+      "Las manos y los rostros expresivos forman parte del chiste en la conversación italiana.",
+      "Una barzelletta es un chiste corto clásico, contado a menudo entre amigos y familia.",
+      "La commedia dell'arte regaló al mundo personajes como Arlecchino, el criado astuto y hambriento."
+     ],
+     "q": "¿Qué gesto usas más cuando cuentas una historia?",
+     "c": "Cuenta hoy una historia corta y deja que tus manos hablen la mitad."
+    },
+    "fr": {
+     "t": "Les bases de l'humour italien",
+     "g": "Savourer les gestes vifs, les barzellette et les personnages comiques de la tradition de la commedia.",
+     "p": [
+      "Les mains et les visages expressifs font partie de la blague dans la conversation italienne.",
+      "Une barzelletta est une blague courte classique, souvent racontée entre amis et en famille.",
+      "La commedia dell'arte a offert au monde des types comme Arlequin, le serviteur rusé et affamé."
+     ],
+     "q": "Quel geste utilises-tu le plus quand tu racontes une histoire ?",
+     "c": "Raconte aujourd'hui une histoire courte et laisse tes mains parler pour moitié."
+    },
+    "it": {
+     "t": "Le basi dell'umorismo italiano",
+     "g": "Godersi gesti vivaci, barzellette e personaggi comici della tradizione della commedia.",
+     "p": [
+      "Mani e volti espressivi fanno parte della battuta nella conversazione italiana.",
+      "La barzelletta è una battuta breve classica, spesso raccontata tra amici e in famiglia.",
+      "La commedia dell'arte ha regalato al mondo maschere come Arlecchino, il servitore furbo e affamato."
+     ],
+     "q": "Quale gesto usi di più quando racconti una storia?",
+     "c": "Racconta oggi una storia breve e lascia che le mani facciano metà del lavoro."
+    },
+    "pt": {
+     "t": "Noções básicas do humor italiano",
+     "g": "Apreciar gestos vivos, barzellette e personagens cómicas da tradição da commedia.",
+     "p": [
+      "Mãos e rostos expressivos fazem parte da piada na conversa italiana.",
+      "Uma barzelletta é uma piada curta clássica, muitas vezes contada entre amigos e família.",
+      "A commedia dell'arte deu ao mundo figuras como Arlecchino, o criado esperto e esfomeado."
+     ],
+     "q": "Que gesto usas mais quando contas uma história?",
+     "c": "Conta hoje uma história curta e deixa as mãos falar por metade."
+    },
+    "pt_BR": {
+     "t": "Noções básicas do humor italiano",
+     "g": "Curtir gestos vivos, barzellette e personagens cômicos da tradição da commedia.",
+     "p": [
+      "Mãos e rostos expressivos fazem parte da piada na conversa italiana.",
+      "Uma barzelletta é uma piada curta clássica, muitas vezes contada entre amigos e família.",
+      "A commedia dell'arte deu ao mundo figuras como Arlecchino, o criado esperto e esfomeado."
+     ],
+     "q": "Que gesto você mais usa quando conta uma história?",
+     "c": "Conte hoje uma história curta e deixe as mãos falarem por metade."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Spanish humour basics",
+     "g": "Explore chistes, quick wit and the warm teasing of Spanish-speaking friends.",
+     "p": [
+      "A chiste is a short joke, often starting with a classic phrase like: ¿Sabes cuál es...?",
+      "Quick, playful comebacks are admired in friendly conversation.",
+      "Warm teasing between friends shows affection, as long as everyone is laughing."
+     ],
+     "q": "Can you answer a friendly tease with a quick, kind reply?",
+     "c": "Practise one quick, kind comeback today when a friend teases you lightly."
+    },
+    "de": {
+     "t": "Spanischer Humor: die Grundlagen",
+     "g": "Chistes, schnellen Witz und das warmherzige Necken spanischsprachiger Freunde entdecken.",
+     "p": [
+      "Ein Chiste ist ein kurzer Witz, oft mit einer klassischen Einleitung wie: ¿Sabes cuál es...?",
+      "Schnelle, spielerische Antworten werden im freundlichen Gespräch bewundert.",
+      "Warmherziges Necken unter Freunden zeigt Zuneigung, solange alle lachen."
+     ],
+     "q": "Kannst du auf eine freundliche Neckerei mit einer schnellen, netten Antwort reagieren?",
+     "c": "Übe heute eine schnelle, freundliche Antwort, wenn ein Freund dich leicht neckt."
+    },
+    "es": {
+     "t": "Fundamentos del humor español e hispano",
+     "g": "Explorar los chistes, la agilidad mental y las bromas cariñosas entre amigos hispanohablantes.",
+     "p": [
+      "Un chiste es una historia corta, a menudo con una frase clásica como: ¿Sabes cuál es...?",
+      "Las respuestas rápidas y juguetonas se admiran en una charla amistosa.",
+      "Las bromas cariñosas entre amigos muestran afecto, mientras todos se rían."
+     ],
+     "q": "¿Puedes responder a una broma amistosa con una réplica rápida y amable?",
+     "c": "Practica hoy una réplica rápida y amable cuando un amigo te tome el pelo con cariño."
+    },
+    "fr": {
+     "t": "Les bases de l'humour espagnol",
+     "g": "Explorer les chistes, la repartie et les taquineries chaleureuses entre amis hispanophones.",
+     "p": [
+      "Un chiste est une blague courte, souvent lancée avec une phrase classique comme : ¿Sabes cuál es...?",
+      "Les réparties rapides et espiègles sont admirées dans une conversation amicale.",
+      "Les taquineries chaleureuses entre amis montrent l'affection, tant que tout le monde rit."
+     ],
+     "q": "Peux-tu répondre à une taquinerie amicale par une réplique rapide et gentille ?",
+     "c": "Entraîne-toi aujourd'hui à une réplique rapide et gentille quand un ami te taquine légèrement."
+    },
+    "it": {
+     "t": "Le basi dell'umorismo spagnolo",
+     "g": "Esplorare i chistes, la battuta pronta e le prese in giro affettuose tra amici ispanofoni.",
+     "p": [
+      "Un chiste è una barzelletta breve, spesso introdotta da una frase classica come: ¿Sabes cuál es...?",
+      "Le risposte rapide e giocose sono apprezzate nella conversazione amichevole.",
+      "Le prese in giro affettuose tra amici mostrano affetto, finché tutti ridono."
+     ],
+     "q": "Riesci a rispondere a una battuta amichevole con una replica rapida e gentile?",
+     "c": "Esercitati oggi con una replica rapida e gentile quando un amico ti prende leggermente in giro."
+    },
+    "pt": {
+     "t": "Noções básicas do humor espanhol",
+     "g": "Explorar os chistes, a agilidade mental e as brincadeiras carinhosas entre amigos hispanofalantes.",
+     "p": [
+      "Um chiste é uma piada curta, muitas vezes lançada com uma frase clássica como: ¿Sabes cuál es...?",
+      "As respostas rápidas e brincalhonas são admiradas numa conversa amigável.",
+      "As brincadeiras carinhosas entre amigos mostram afeto, desde que todos riam."
+     ],
+     "q": "Consegues responder a uma brincadeira amigável com uma réplica rápida e simpática?",
+     "c": "Treina hoje uma réplica rápida e simpática quando um amigo brincar contigo de leve."
+    },
+    "pt_BR": {
+     "t": "Noções básicas do humor espanhol",
+     "g": "Explorar os chistes, a agilidade mental e as brincadeiras carinhosas entre amigos hispanofalantes.",
+     "p": [
+      "Um chiste é uma piada curta, muitas vezes lançada com uma frase clássica como: ¿Sabes cuál es...?",
+      "Respostas rápidas e brincalhonas são admiradas numa conversa amigável.",
+      "Brincadeiras carinhosas entre amigos mostram afeto, desde que todos riam."
+     ],
+     "q": "Você consegue responder a uma brincadeira amigável com uma resposta rápida e simpática?",
+     "c": "Treine hoje uma resposta rápida e simpática quando um amigo brincar de leve com você."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Portuguese humour basics",
+     "g": "Enjoy trocadilhos and gentle irony in European Portuguese conversation.",
+     "p": [
+      "A trocadilho is a pun, and Portuguese offers many thanks to similar-sounding words.",
+      "Gentle irony, often with a small shrug, is part of everyday banter.",
+      "Self-deprecating, warm humour about daily life is very popular."
+     ],
+     "q": "Can you find a word in Portuguese that sounds like two things?",
+     "c": "Try one trocadilho today, even with just the words you know."
+    },
+    "de": {
+     "t": "Portugiesischer Humor: die Grundlagen",
+     "g": "Trocadilhos und sanfte Ironie im europäisch-portugiesischen Gespräch genießen.",
+     "p": [
+      "Ein Trocadilho ist ein Wortspiel, und das Portugiesische bietet viele durch ähnlich klingende Wörter.",
+      "Sanfte Ironie, oft mit einem kleinen Schulterzucken, gehört zum Alltagsgespräch.",
+      "Selbstironischer, warmer Humor über den Alltag ist sehr beliebt."
+     ],
+     "q": "Findest du im Portugiesischen ein Wort, das nach zwei Dingen klingt?",
+     "c": "Versuch heute ein Trocadilho, auch nur mit den Wörtern, die du kennst."
+    },
+    "es": {
+     "t": "Fundamentos del humor portugués",
+     "g": "Disfrutar de los trocadilhos y la ironía suave en la conversación en portugués de Portugal.",
+     "p": [
+      "Un trocadilho es un juego de palabras, y el portugués ofrece muchos por palabras de sonido parecido.",
+      "La ironía suave, a menudo con un pequeño encogimiento de hombros, forma parte de la charla diaria.",
+      "El humor cálido y autocrítico sobre la vida cotidiana es muy popular."
+     ],
+     "q": "¿Encuentras una palabra en portugués que suene como dos cosas?",
+     "c": "Prueba hoy un trocadilho, aunque sea solo con las palabras que conoces."
+    },
+    "fr": {
+     "t": "Les bases de l'humour portugais",
+     "g": "Savourer les trocadilhos et la douce ironie dans la conversation en portugais européen.",
+     "p": [
+      "Un trocadilho est un jeu de mots, et le portugais en offre beaucoup grâce aux mots qui se ressemblent.",
+      "La douce ironie, souvent avec un petit haussement d'épaules, fait partie de la conversation de tous les jours.",
+      "L'humour chaleureux et autodérisoire sur la vie quotidienne est très apprécié."
+     ],
+     "q": "Trouves-tu un mot portugais qui sonne comme deux choses ?",
+     "c": "Essaie aujourd'hui un trocadilho, même avec les seuls mots que tu connais."
+    },
+    "it": {
+     "t": "Le basi dell'umorismo portoghese",
+     "g": "Gustare i trocadilhos e la dolce ironia nella conversazione in portoghese europeo.",
+     "p": [
+      "Un trocadilho è un gioco di parole, e il portoghese ne offre molti grazie a parole dal suono simile.",
+      "La dolce ironia, spesso con una piccola alzata di spalle, fa parte della chiacchiera quotidiana.",
+      "L'umorismo caldo e autoironico sulla vita di tutti i giorni è molto popolare."
+     ],
+     "q": "Trovi una parola portoghese che suona come due cose?",
+     "c": "Prova oggi un trocadilho, anche solo con le parole che conosci."
+    },
+    "pt": {
+     "t": "Noções básicas do humor português",
+     "g": "Apreciar os trocadilhos e a ironia suave na conversa em português europeu.",
+     "p": [
+      "Um trocadilho é um jogo de palavras, e o português oferece muitos graças a palavras de som parecido.",
+      "A ironia suave, muitas vezes com um pequeno encolher de ombros, faz parte da conversa diária.",
+      "O humor caloroso e autocrítico sobre o dia a dia é muito popular."
+     ],
+     "q": "Consegues encontrar uma palavra em português que soe a duas coisas?",
+     "c": "Experimenta hoje um trocadilho, mesmo só com as palavras que conheces."
+    },
+    "pt_BR": {
+     "t": "Noções básicas do humor português",
+     "g": "Curtir os trocadilhos e a ironia suave na conversa em português europeu.",
+     "p": [
+      "Um trocadilho é um jogo de palavras, e o português tem muitos graças a palavras de som parecido.",
+      "A ironia suave, muitas vezes com um pequeno dar de ombros, faz parte da conversa diária.",
+      "O humor caloroso e autocrítico sobre o dia a dia é muito popular."
+     ],
+     "q": "Você consegue achar uma palavra em português que soe como duas coisas?",
+     "c": "Experimente hoje um trocadilho, mesmo só com as palavras que você conhece."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Brazilian humour basics",
+     "g": "Enjoy playful teasing, creative slang and the famous Brazilian lightness.",
+     "p": [
+      "Brazilian humour often finds the funny side of everyday trouble with a smile.",
+      "Creative nicknames and slang keep conversation playful.",
+      "Radio, TV and internet memes spread jokes that everyone shares."
+     ],
+     "q": "Do you have a funny nickname, and who gave it to you?",
+     "c": "Invent a gentle, affectionate nickname for a friend or object today."
+    },
+    "de": {
+     "t": "Brasilianischer Humor: die Grundlagen",
+     "g": "Spielerisches Necken, kreativen Slang und die berühmte brasilianische Leichtigkeit genießen.",
+     "p": [
+      "Brasilianischer Humor findet oft mit einem Lächeln die komische Seite alltäglicher Sorgen.",
+      "Kreative Spitznamen und Slang halten das Gespräch spielerisch.",
+      "Radio, Fernsehen und Internet-Memes verbreiten Witze, die alle teilen."
+     ],
+     "q": "Hast du einen lustigen Spitznamen, und wer hat ihn dir gegeben?",
+     "c": "Erfinde heute einen sanften, liebevollen Spitznamen für einen Freund oder Gegenstand."
+    },
+    "es": {
+     "t": "Fundamentos del humor brasileño",
+     "g": "Disfrutar de las bromas cariñosas, la jerga creativa y la famosa ligereza brasileña.",
+     "p": [
+      "El humor brasileño suele encontrar con una sonrisa el lado gracioso de los problemas cotidianos.",
+      "Los apodos y la jerga creativos mantienen la conversación juguetona.",
+      "La radio, la tele y los memes de internet difunden chistes que todos comparten."
+     ],
+     "q": "¿Tienes un apodo gracioso y quién te lo puso?",
+     "c": "Inventa hoy un apodo suave y cariñoso para un amigo o un objeto."
+    },
+    "fr": {
+     "t": "Les bases de l'humour brésilien",
+     "g": "Savourer les taquineries joyeuses, l'argot créatif et la célèbre légèreté brésilienne.",
+     "p": [
+      "L'humour brésilien trouve souvent avec le sourire le côté drôle des soucis quotidiens.",
+      "Les surnoms et l'argot créatifs gardent la conversation joueuse.",
+      "La radio, la télé et les mèmes d'internet diffusent des blagues que tout le monde partage."
+     ],
+     "q": "As-tu un surnom drôle, et qui te l'a donné ?",
+     "c": "Invente aujourd'hui un surnom doux et affectueux pour un ami ou un objet."
+    },
+    "it": {
+     "t": "Le basi dell'umorismo brasiliano",
+     "g": "Gustare le prese in giro giocose, lo slang creativo e la famosa leggerezza brasiliana.",
+     "p": [
+      "L'umorismo brasiliano spesso trova con un sorriso il lato buffo dei guai quotidiani.",
+      "Soprannomi e slang creativi mantengono la conversazione giocosa.",
+      "Radio, TV e meme di internet diffondono battute che tutti condividono."
+     ],
+     "q": "Hai un soprannome buffo, e chi te lo ha dato?",
+     "c": "Inventa oggi un soprannome dolce e affettuoso per un amico o un oggetto."
+    },
+    "pt": {
+     "t": "Noções básicas do humor brasileiro",
+     "g": "Apreciar as brincadeiras carinhosas, a gíria criativa e a famosa leveza brasileira.",
+     "p": [
+      "O humor brasileiro costuma encontrar com um sorriso o lado engraçado dos problemas do dia a dia.",
+      "Alcunhas e gíria criativas mantêm a conversa brincalhona.",
+      "A rádio, a televisão e os memes da internet espalham piadas que todos partilham."
+     ],
+     "q": "Tens uma alcunha engraçada e quem ta deu?",
+     "c": "Inventa hoje uma alcunha suave e carinhosa para um amigo ou um objeto."
+    },
+    "pt_BR": {
+     "t": "Noções básicas do humor brasileiro",
+     "g": "Curtir as brincadeiras carinhosas, a gíria criativa e a famosa leveza brasileira.",
+     "p": [
+      "O humor brasileiro costuma achar com um sorriso o lado engraçado dos perrengues do dia a dia.",
+      "Apelidos e gírias criativos mantêm a conversa brincalhona.",
+      "Rádio, TV e memes da internet espalham piadas que todo mundo compartilha."
+     ],
+     "q": "Você tem um apelido engraçado e quem deu?",
+     "c": "Invente hoje um apelido suave e carinhoso para um amigo ou um objeto."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Japanese manzai",
+     "g": "Meet a comedy duo of the straight man and the funny man, a style with long roots in Japan.",
+     "p": [
+      "Manzai is a duo act: the boke says silly things, the tsukkomi corrects them.",
+      "The quick back-and-forth creates rhythm, like a verbal tennis match.",
+      "Manzai has roots going back centuries and is still hugely popular on stage and TV."
+     ],
+     "q": "Which of the two roles would you enjoy playing, the silly or the straight one?",
+     "c": "Try a mini manzai with a friend: one says something silly, the other reacts kindly."
+    },
+    "de": {
+     "t": "Japanisches Manzai",
+     "g": "Ein Comedy-Duo aus Stichwortgeber und Spaßmacher kennenlernen, ein Stil mit langer Tradition in Japan.",
+     "p": [
+      "Manzai ist ein Duo-Auftritt: Der Boke sagt alberne Dinge, der Tsukkomi korrigiert sie.",
+      "Das schnelle Hin und Her erzeugt Rhythmus wie ein verbales Tennisspiel.",
+      "Manzai hat Wurzeln, die Jahrhunderte zurückreichen, und ist auf Bühne und im Fernsehen sehr beliebt."
+     ],
+     "q": "Welche der beiden Rollen würdest du gern spielen, die alberne oder die ernste?",
+     "c": "Probiere mit einem Freund ein Mini-Manzai: Einer sagt etwas Albernes, der andere reagiert freundlich."
+    },
+    "es": {
+     "t": "El manzai japonés",
+     "g": "Conocer un dúo cómico del serio y el gracioso, un estilo con largas raíces en Japón.",
+     "p": [
+      "El manzai es un número de dúo: el boke dice tonterías, el tsukkomi las corrige.",
+      "El rápido ir y venir crea ritmo, como un partido de tenis verbal.",
+      "El manzai tiene raíces de siglos y sigue siendo muy popular en escenarios y televisión."
+     ],
+     "q": "¿Cuál de los dos papeles disfrutarías más, el tonto o el serio?",
+     "c": "Prueba un mini manzai con un amigo: uno dice algo tonto, el otro reacciona con amabilidad."
+    },
+    "fr": {
+     "t": "Le manzai japonais",
+     "g": "Découvrir un duo comique composé du sérieux et du farceur, un style aux longues racines au Japon.",
+     "p": [
+      "Le manzai est un numéro en duo : le boke dit des bêtises, le tsukkomi les corrige.",
+      "Le va-et-vient rapide crée du rythme, comme un match de tennis verbal.",
+      "Le manzai a des racines vieilles de plusieurs siècles et reste très populaire sur scène et à la télé."
+     ],
+     "q": "Lequel des deux rôles aimerais-tu jouer, le farceur ou le sérieux ?",
+     "c": "Essaie un mini manzai avec un ami : l'un dit une bêtise, l'autre réagit gentiment."
+    },
+    "it": {
+     "t": "Il manzai giapponese",
+     "g": "Conoscere un duo comico formato dal serio e dal buffone, uno stile con lunghe radici in Giappone.",
+     "p": [
+      "Il manzai è un numero in coppia: il boke dice sciocchezze, il tsukkomi le corregge.",
+      "Il rapido botta e risposta crea ritmo, come una partita di tennis verbale.",
+      "Il manzai ha radici di secoli ed è ancora molto popolare su palco e in TV."
+     ],
+     "q": "Quale dei due ruoli ti piacerebbe interpretare, lo sciocco o il serio?",
+     "c": "Prova un mini manzai con un amico: uno dice una sciocchezza, l'altro reagisce con gentilezza."
+    },
+    "pt": {
+     "t": "O manzai japonês",
+     "g": "Conhecer uma dupla cómica do sério e do brincalhão, um estilo com longas raízes no Japão.",
+     "p": [
+      "O manzai é um número a dois: o boke diz tolices, o tsukkomi corrige-as.",
+      "O vaivém rápido cria ritmo, como um jogo de ténis verbal.",
+      "O manzai tem raízes de séculos e continua muito popular em palco e na televisão."
+     ],
+     "q": "Qual dos dois papéis gostarias mais de fazer, o tolo ou o sério?",
+     "c": "Experimenta um mini manzai com um amigo: um diz algo tolo, o outro reage com simpatia."
+    },
+    "pt_BR": {
+     "t": "O manzai japonês",
+     "g": "Conhecer uma dupla cômica do sério e do brincalhão, um estilo com longas raízes no Japão.",
+     "p": [
+      "O manzai é um número a dois: o boke diz bobagens, o tsukkomi corrige.",
+      "O vaivém rápido cria ritmo, como uma partida de tênis verbal.",
+      "O manzai tem raízes de séculos e continua muito popular no palco e na televisão."
+     ],
+     "q": "Qual dos dois papéis você gostaria mais de fazer, o bobo ou o sério?",
+     "c": "Experimente um mini manzai com um amigo: um diz algo bobo, o outro reage com carinho."
+    }
+   }
+  }
+ ]
+}

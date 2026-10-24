@@ -1,0 +1,835 @@
+{
+ "topic": "fashion_basics",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Belts as finishers",
+     "g": "See how belts define a waist, add colour and hold an outfit together.",
+     "p": [
+      "A belt can mark the waist on dresses, coats or loose shirts.",
+      "Leather, fabric and woven belts each bring a different feel.",
+      "Match the belt to your shoes or choose a contrast on purpose."
+     ],
+     "q": "Do you wear belts? Where would one finish your outfit best?",
+     "c": "Add a belt over a loose top, dress or coat today and see the shape change."
+    },
+    "de": {
+     "t": "Gürtel als Finish",
+     "g": "Sehen, wie Gürtel die Taille betonen, Farbe bringen und ein Outfit zusammenhalten.",
+     "p": [
+      "Ein Gürtel kann die Taille bei Kleidern, Mänteln oder weiten Hemden markieren.",
+      "Gürtel aus Leder, Stoff oder Geflecht bringen jeweils ein anderes Gefühl.",
+      "Stimme den Gürtel auf die Schuhe ab oder wähle bewusst einen Kontrast."
+     ],
+     "q": "Trägst du Gürtel? Wo würde einer dein Outfit am besten abrunden?",
+     "c": "Trage heute einen Gürtel über einem weiten Oberteil, Kleid oder Mantel und sieh die Form."
+    },
+    "es": {
+     "t": "Cinturones como remate",
+     "g": "Ver cómo los cinturones marcan la cintura, aportan color y unen un conjunto.",
+     "p": [
+      "Un cinturón puede marcar la cintura en vestidos, abrigos o camisas amplias.",
+      "Los de cuero, tela o trenzados dan cada uno una sensación distinta.",
+      "Combínalo con tus zapatos o elige un contraste a propósito."
+     ],
+     "q": "¿Llevas cinturón? ¿Dónde remataría mejor tu conjunto?",
+     "c": "Añade hoy un cinturón sobre una prenda holgada, vestido o abrigo y mira cómo cambia la forma."
+    },
+    "fr": {
+     "t": "La ceinture comme finition",
+     "g": "Voir comment les ceintures marquent la taille, ajoutent de la couleur et unifient une tenue.",
+     "p": [
+      "Une ceinture peut marquer la taille sur robes, manteaux ou chemises amples.",
+      "Cuir, tissu et tressé donnent chacun une sensation différente.",
+      "Assortis-la à tes chaussures ou choisis un contraste volontaire."
+     ],
+     "q": "Portes-tu des ceintures ? Où finirait-elle le mieux ta tenue ?",
+     "c": "Ajoute aujourd'hui une ceinture sur un haut ample, une robe ou un manteau."
+    },
+    "it": {
+     "t": "Le cinture come tocco finale",
+     "g": "Vedere come le cinture segnano la vita, aggiungono colore e uniscono un outfit.",
+     "p": [
+      "Una cintura può segnare la vita su abiti, cappotti o camicie ampie.",
+      "Cinture in pelle, tessuto o intrecciate danno ognuna una sensazione diversa.",
+      "Abbinala alle scarpe o scegli un contrasto voluto."
+     ],
+     "q": "Porti le cinture? Dove completerebbe meglio il tuo outfit?",
+     "c": "Oggi aggiungi una cintura su un capo ampio, un abito o un cappotto e guarda la forma."
+    },
+    "pt": {
+     "t": "Os cintos como remate",
+     "g": "Ver como os cintos marcam a cintura, dão cor e unem um conjunto.",
+     "p": [
+      "Um cinto pode marcar a cintura em vestidos, casacos ou camisas largas.",
+      "Os de couro, tecido ou entrançados dão cada um uma sensação diferente.",
+      "Combina-o com os sapatos ou escolhe um contraste de propósito."
+     ],
+     "q": "Usas cintos? Onde acabaria melhor o teu conjunto?",
+     "c": "Acrescenta hoje um cinto sobre uma peça larga, vestido ou casaco e vê a forma mudar."
+    },
+    "pt_BR": {
+     "t": "Cintos como arremate",
+     "g": "Ver como os cintos marcam a cintura, dão cor e unem um look.",
+     "p": [
+      "Um cinto pode marcar a cintura em vestidos, casacos ou camisas largas.",
+      "Os de couro, tecido ou trançados dão cada um uma sensação diferente.",
+      "Combine com os sapatos ou escolha um contraste de propósito."
+     ],
+     "q": "Você usa cintos? Onde um cinto arremataria melhor o seu look?",
+     "c": "Adicione hoje um cinto sobre uma peça larga, vestido ou casaco e veja a forma mudar."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Scarves for warmth and style",
+     "g": "Learn fabrics and simple ways to tie scarves for warmth or decoration.",
+     "p": [
+      "Wool and cashmere scarves warm; cotton and silk ones are lighter.",
+      "A loop, a loose drape or a simple knot are easy ways to start.",
+      "A scarf is a quick way to bring colour or pattern near the face."
+     ],
+     "q": "Do you own a scarf you love? How do you usually wear it?",
+     "c": "Try one new way of wearing a scarf today, such as a loose loop or a knot."
+    },
+    "de": {
+     "t": "Schals für Wärme und Stil",
+     "g": "Stoffe und einfache Wege kennenlernen, Schals für Wärme oder Schmuck zu binden.",
+     "p": [
+      "Schals aus Wolle und Kaschmir wärmen; Baumwoll- und Seidenschals sind leichter.",
+      "Eine Schlaufe, ein lockerer Wurf oder ein einfacher Knoten sind leichte Anfänge.",
+      "Ein Schal bringt schnell Farbe oder Muster ans Gesicht."
+     ],
+     "q": "Besitzt du einen Schal, den du liebst? Wie trägst du ihn meist?",
+     "c": "Probiere heute eine neue Schaltrageweise, etwa eine lockere Schlaufe oder einen Knoten."
+    },
+    "es": {
+     "t": "Bufandas para abrigo y estilo",
+     "g": "Aprender tejidos y formas sencillas de atar bufandas para abrigar o adornar.",
+     "p": [
+      "Las de lana y cachemira abrigan; las de algodón y seda son más ligeras.",
+      "Una lazada, un caído suelto o un nudo simple son formas fáciles de empezar.",
+      "Una bufanda aporta rápido color o estampado cerca del rostro."
+     ],
+     "q": "¿Tienes una bufanda que te encante? ¿Cómo la llevas normalmente?",
+     "c": "Prueba hoy una forma nueva de llevar una bufanda, como una lazada suelta o un nudo."
+    },
+    "fr": {
+     "t": "Écharpes pour la chaleur et le style",
+     "g": "Apprendre les matières et des façons simples de nouer une écharpe pour se réchauffer ou décorer.",
+     "p": [
+      "Laine et cachemire réchauffent; coton et soie sont plus légers.",
+      "Une boucle, un drapé lâche ou un noeud simple sont faciles pour commencer.",
+      "Une écharpe apporte vite couleur ou motif près du visage."
+     ],
+     "q": "As-tu une écharpe que tu adores ? Comment la portes-tu d'habitude ?",
+     "c": "Essaie aujourd'hui une nouvelle façon de porter une écharpe, boucle lâche ou noeud."
+    },
+    "it": {
+     "t": "Sciarpe per calore e stile",
+     "g": "Imparare tessuti e modi semplici di annodare le sciarpe per scaldare o decorare.",
+     "p": [
+      "Lana e cashmere scaldano; cotone e seta sono più leggeri.",
+      "Un anello, un drappeggio morbido o un nodo semplice sono modi facili per iniziare.",
+      "Una sciarpa porta in fretta colore o disegno vicino al viso."
+     ],
+     "q": "Hai una sciarpa che ami? Come la porti di solito?",
+     "c": "Prova oggi un nuovo modo di portare la sciarpa, come un anello morbido o un nodo."
+    },
+    "pt": {
+     "t": "Cachecóis para aquecer e dar estilo",
+     "g": "Aprender tecidos e formas simples de atar cachecóis para aquecer ou decorar.",
+     "p": [
+      "Os de lã e caxemira aquecem; os de algodão e seda são mais leves.",
+      "Uma laçada, um drapeado solto ou um nó simples são formas fáceis de começar.",
+      "Um cachecol traz depressa cor ou padrão junto ao rosto."
+     ],
+     "q": "Tens um cachecol de que gostes muito? Como o usas normalmente?",
+     "c": "Experimenta hoje uma forma nova de usar um cachecol, como uma laçada solta ou um nó."
+    },
+    "pt_BR": {
+     "t": "Cachecóis para aquecer e dar estilo",
+     "g": "Aprender tecidos e jeitos simples de amarrar cachecóis para aquecer ou decorar.",
+     "p": [
+      "Os de lã e cashmere aquecem; os de algodão e seda são mais leves.",
+      "Uma laçada, um drapeado solto ou um nó simples são jeitos fáceis de começar.",
+      "Um cachecol traz rápido cor ou estampa perto do rosto."
+     ],
+     "q": "Você tem um cachecol que adora? Como costuma usar?",
+     "c": "Experimente hoje um jeito novo de usar o cachecol, como uma laçada solta ou um nó."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hats through the seasons",
+     "g": "Meet beanies, caps, sun hats and fedoras and how to wear each with confidence.",
+     "p": [
+      "Beanies warm in winter; caps and sun hats protect from sun.",
+      "A hat that fits comfortably is easier to wear with ease.",
+      "Wear it with a relaxed attitude; confidence is what makes a hat work."
+     ],
+     "q": "Have you ever worn a hat you loved? What was it like?",
+     "c": "Try on a hat today, even just at home, and choose how to wear it."
+    },
+    "de": {
+     "t": "Hüte durch die Jahreszeiten",
+     "g": "Beanies, Caps, Sonnenhüte und Fedoras kennenlernen und jeden selbstbewusst tragen.",
+     "p": [
+      "Beanies wärmen im Winter; Caps und Sonnenhüte schützen vor der Sonne.",
+      "Ein bequem sitzender Hut lässt sich leichter selbstverständlich tragen.",
+      "Trage ihn entspannt; Selbstvertrauen lässt einen Hut wirken."
+     ],
+     "q": "Hast du schon einmal einen Hut getragen, den du geliebt hast? Wie war das?",
+     "c": "Probiere heute einen Hut an, auch nur zu Hause, und entscheide, wie du ihn trägst."
+    },
+    "es": {
+     "t": "Sombreros y gorros en cada estación",
+     "g": "Conocer gorros, gorras, sombreros de sol y fedoras y cómo llevar cada uno con seguridad.",
+     "p": [
+      "Los gorros abrigan en invierno; las gorras y sombreros protegen del sol.",
+      "Un sombrero que queda cómodo es más fácil de llevar con naturalidad.",
+      "Llévalo con actitud relajada; la confianza es lo que hace que funcione."
+     ],
+     "q": "¿Has llevado alguna vez un sombrero que te encantara? ¿Cómo fue?",
+     "c": "Pruébate hoy un sombrero, aunque sea en casa, y decide cómo llevarlo."
+    },
+    "fr": {
+     "t": "Les chapeaux au fil des saisons",
+     "g": "Découvrir bonnets, casquettes, chapeaux de soleil et fedoras et comment les porter avec assurance.",
+     "p": [
+      "Les bonnets réchauffent l'hiver; casquettes et chapeaux protègent du soleil.",
+      "Un chapeau confortable se porte plus naturellement.",
+      "Porte-le avec décontraction; la confiance fait fonctionner un chapeau."
+     ],
+     "q": "As-tu déjà porté un chapeau que tu adorais ? Comment était-ce ?",
+     "c": "Essaie un chapeau aujourd'hui, même chez toi, et choisis comment le porter."
+    },
+    "it": {
+     "t": "Cappelli per ogni stagione",
+     "g": "Conoscere cappelli di lana, berretti, cappelli da sole e fedora e come portarli con sicurezza.",
+     "p": [
+      "I berretti di lana scaldano d'inverno; cappellini e cappelli da sole proteggono.",
+      "Un cappello comodo si porta con più naturalezza.",
+      "Portalo con atteggiamento rilassato; la sicurezza fa funzionare un cappello."
+     ],
+     "q": "Hai mai indossato un cappello che ti piaceva? Com'era?",
+     "c": "Prova oggi un cappello, anche solo a casa, e scegli come portarlo."
+    },
+    "pt": {
+     "t": "Chapéus ao longo das estações",
+     "g": "Conhecer gorros, bonés, chapéus de sol e fedoras e como usar cada um com confiança.",
+     "p": [
+      "Os gorros aquecem no inverno; bonés e chapéus de sol protegem do sol.",
+      "Um chapéu confortável é mais fácil de usar com naturalidade.",
+      "Usa-o com atitude descontraída; a confiança é o que faz um chapéu resultar."
+     ],
+     "q": "Já usaste um chapéu de que gostasses muito? Como foi?",
+     "c": "Experimenta hoje um chapéu, mesmo que só em casa, e decide como o usar."
+    },
+    "pt_BR": {
+     "t": "Chapéus ao longo das estações",
+     "g": "Conhecer gorros, bonés, chapéus de sol e fedoras e como usar cada um com confiança.",
+     "p": [
+      "Os gorros aquecem no inverno; bonés e chapéus de sol protegem do sol.",
+      "Um chapéu confortável é mais fácil de usar com naturalidade.",
+      "Use com atitude descontraída; a confiança é o que faz um chapéu funcionar."
+     ],
+     "q": "Você já usou um chapéu de que gostou muito? Como foi?",
+     "c": "Experimente hoje um chapéu, mesmo que só em casa, e decida como usar."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Simple jewellery",
+     "g": "Use a few everyday pieces to personalise outfits without overdoing it.",
+     "p": [
+      "A few meaningful pieces often say more than many.",
+      "Match metal tones, or mix them on purpose for a modern look.",
+      "Choose pieces that are comfortable and do not irritate your skin."
+     ],
+     "q": "Do you have a piece of jewellery with a special story?",
+     "c": "Choose one or two pieces for today and take the rest off, then see the effect."
+    },
+    "de": {
+     "t": "Schlichter Schmuck",
+     "g": "Wenige Alltagsstücke nutzen, um Outfits zu personalisieren, ohne zu übertreiben.",
+     "p": [
+      "Wenige bedeutsame Stücke sagen oft mehr als viele.",
+      "Stimme Metalltöne ab oder mische sie bewusst für einen modernen Look.",
+      "Wähle Stücke, die bequem sind und deine Haut nicht reizen."
+     ],
+     "q": "Hast du ein Schmuckstück mit besonderer Geschichte?",
+     "c": "Wähle heute ein oder zwei Stücke, lege den Rest ab und sieh die Wirkung."
+    },
+    "es": {
+     "t": "Joyería sencilla",
+     "g": "Usar unas pocas piezas de diario para personalizar conjuntos sin exagerar.",
+     "p": [
+      "Pocas piezas con significado suelen decir más que muchas.",
+      "Combina los tonos de metal o mézclalos a propósito para un aire moderno.",
+      "Elige piezas cómodas que no irriten tu piel."
+     ],
+     "q": "¿Tienes una joya con una historia especial?",
+     "c": "Elige hoy una o dos piezas, quita el resto y mira el efecto."
+    },
+    "fr": {
+     "t": "Bijoux simples",
+     "g": "Utiliser quelques pièces du quotidien pour personnaliser ses tenues sans en faire trop.",
+     "p": [
+      "Quelques pièces qui comptent en disent souvent plus que beaucoup.",
+      "Accorde les tons de métal, ou mélange-les volontairement pour un air moderne.",
+      "Choisis des pièces confortables qui n'irritent pas la peau."
+     ],
+     "q": "As-tu un bijou qui a une histoire particulière ?",
+     "c": "Choisis aujourd'hui un ou deux bijoux, retire le reste et observe l'effet."
+    },
+    "it": {
+     "t": "Gioielli semplici",
+     "g": "Usare pochi pezzi di ogni giorno per personalizzare gli outfit senza esagerare.",
+     "p": [
+      "Pochi pezzi significativi spesso dicono più di tanti.",
+      "Abbina i toni dei metalli o mescolali di proposito per un tocco moderno.",
+      "Scegli pezzi comodi che non irritino la pelle."
+     ],
+     "q": "Hai un gioiello con una storia speciale?",
+     "c": "Scegli oggi uno o due pezzi, togli il resto e osserva l'effetto."
+    },
+    "pt": {
+     "t": "Joias simples",
+     "g": "Usar poucas peças do dia a dia para personalizar conjuntos sem exagerar.",
+     "p": [
+      "Poucas peças com significado dizem muitas vezes mais do que muitas.",
+      "Combina os tons de metal ou mistura-os de propósito para um toque moderno.",
+      "Escolhe peças confortáveis que não irritem a pele."
+     ],
+     "q": "Tens uma joia com uma história especial?",
+     "c": "Escolhe hoje uma ou duas peças, tira o resto e vê o efeito."
+    },
+    "pt_BR": {
+     "t": "Joias simples",
+     "g": "Usar poucas peças do dia a dia para personalizar looks sem exagerar.",
+     "p": [
+      "Poucas peças com significado costumam dizer mais do que muitas.",
+      "Combine os tons de metal ou misture de propósito para um toque moderno.",
+      "Escolha peças confortáveis que não irritem a pele."
+     ],
+     "q": "Você tem uma joia com uma história especial?",
+     "c": "Escolha hoje uma ou duas peças, tire o resto e veja o efeito."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Watches and small accessories",
+     "g": "See how small details like a watch or pin can express personality.",
+     "p": [
+      "A watch is both useful and a quiet style detail.",
+      "Pins, patches and bracelets add personality in very little space.",
+      "Small items are low-cost ways to change an outfit's character."
+     ],
+     "q": "Which small accessory would best express you?",
+     "c": "Add one small detail to your outfit today, like a pin or a bracelet."
+    },
+    "de": {
+     "t": "Uhren und kleine Accessoires",
+     "g": "Sehen, wie kleine Details wie eine Uhr oder Anstecknadel Persönlichkeit ausdrücken können.",
+     "p": [
+      "Eine Uhr ist nützlich und zugleich ein leises Stildetail.",
+      "Anstecknadeln, Aufnäher und Armbänder geben auf kleinem Raum Persönlichkeit.",
+      "Kleine Teile sind einfache Wege, den Charakter eines Outfits zu ändern."
+     ],
+     "q": "Welches kleine Accessoire würde dich am besten ausdrücken?",
+     "c": "Ergänze heute dein Outfit um ein kleines Detail, etwa eine Nadel oder ein Armband."
+    },
+    "es": {
+     "t": "Relojes y pequeños complementos",
+     "g": "Ver cómo detalles pequeños como un reloj o un pin pueden expresar personalidad.",
+     "p": [
+      "Un reloj es útil y a la vez un detalle de estilo discreto.",
+      "Pins, parches y pulseras dan personalidad en muy poco espacio.",
+      "Los complementos pequeños son una forma sencilla de cambiar el carácter de un conjunto."
+     ],
+     "q": "¿Qué complemento pequeño te expresaría mejor?",
+     "c": "Añade hoy un detalle pequeño a tu conjunto, como un pin o una pulsera."
+    },
+    "fr": {
+     "t": "Montres et petits accessoires",
+     "g": "Voir comment de petits détails comme une montre ou une broche expriment la personnalité.",
+     "p": [
+      "Une montre est utile et aussi un détail de style discret.",
+      "Broches, écussons et bracelets apportent de la personnalité en peu d'espace.",
+      "Les petits accessoires changent facilement le caractère d'une tenue."
+     ],
+     "q": "Quel petit accessoire t'exprimerait le mieux ?",
+     "c": "Ajoute aujourd'hui un petit détail à ta tenue, comme une broche ou un bracelet."
+    },
+    "it": {
+     "t": "Orologi e piccoli accessori",
+     "g": "Vedere come piccoli dettagli come un orologio o una spilla esprimono la personalità.",
+     "p": [
+      "Un orologio è utile e anche un dettaglio di stile discreto.",
+      "Spille, toppe e braccialetti danno personalità in poco spazio.",
+      "Gli accessori piccoli sono un modo semplice per cambiare il carattere di un outfit."
+     ],
+     "q": "Quale piccolo accessorio ti esprimerebbe meglio?",
+     "c": "Aggiungi oggi un piccolo dettaglio al tuo outfit, come una spilla o un braccialetto."
+    },
+    "pt": {
+     "t": "Relógios e pequenos acessórios",
+     "g": "Ver como pequenos detalhes como um relógio ou um alfinete exprimem personalidade.",
+     "p": [
+      "Um relógio é útil e também um detalhe de estilo discreto.",
+      "Alfinetes, remendos e pulseiras dão personalidade em pouco espaço.",
+      "Os acessórios pequenos são uma forma simples de mudar o caráter de um conjunto."
+     ],
+     "q": "Que pequeno acessório te exprimiria melhor?",
+     "c": "Acrescenta hoje um pequeno detalhe ao teu conjunto, como um alfinete ou uma pulseira."
+    },
+    "pt_BR": {
+     "t": "Relógios e pequenos acessórios",
+     "g": "Ver como pequenos detalhes como um relógio ou um broche expressam personalidade.",
+     "p": [
+      "Um relógio é útil e também um detalhe de estilo discreto.",
+      "Broches, patches e pulseiras dão personalidade em pouco espaço.",
+      "Acessórios pequenos são um jeito simples de mudar o caráter de um look."
+     ],
+     "q": "Que pequeno acessório expressaria melhor você?",
+     "c": "Adicione hoje um pequeno detalhe ao seu look, como um broche ou uma pulseira."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Glasses and sunglasses",
+     "g": "Frame shapes and colours are part of your style and protect you from the sun.",
+     "p": [
+      "Frames sit at the centre of the face and shape your whole look.",
+      "Try round, square and cat-eye shapes and see which feels like you.",
+      "Sunglasses with proper UV protection are good for your eyes."
+     ],
+     "q": "Do you wear glasses or sunglasses? How do you choose them?",
+     "c": "Try on three frame shapes in a shop or at home and notice how each feels."
+    },
+    "de": {
+     "t": "Brillen und Sonnenbrillen",
+     "g": "Brillenformen und -farben sind Teil deines Stils und schützen vor der Sonne.",
+     "p": [
+      "Gestelle sitzen in der Mitte des Gesichts und prägen deinen ganzen Look.",
+      "Probiere runde, eckige und Cat-Eye-Formen und sieh, welche sich nach dir anfühlt.",
+      "Sonnenbrillen mit gutem UV-Schutz tun deinen Augen gut."
+     ],
+     "q": "Trägst du Brille oder Sonnenbrille? Wie wählst du sie aus?",
+     "c": "Probiere drei Brillenformen im Laden oder zu Hause an und achte darauf, wie sie sich anfühlen."
+    },
+    "es": {
+     "t": "Gafas y gafas de sol",
+     "g": "Las formas y colores de montura son parte de tu estilo y te protegen del sol.",
+     "p": [
+      "Las monturas están en el centro del rostro y marcan todo tu look.",
+      "Prueba formas redondas, cuadradas y de ojo de gato y mira cuál sientes tuya.",
+      "Las gafas de sol con buena protección UV cuidan tus ojos."
+     ],
+     "q": "¿Llevas gafas o gafas de sol? ¿Cómo las eliges?",
+     "c": "Pruébate tres formas de montura en una tienda o en casa y nota cómo se sienten."
+    },
+    "fr": {
+     "t": "Lunettes et lunettes de soleil",
+     "g": "Les formes et couleurs de monture font partie de ton style et te protègent du soleil.",
+     "p": [
+      "La monture est au centre du visage et façonne tout ton look.",
+      "Essaie des formes rondes, carrées et papillon et vois laquelle te ressemble.",
+      "Des lunettes de soleil avec une bonne protection UV protègent tes yeux."
+     ],
+     "q": "Portes-tu des lunettes ou des lunettes de soleil ? Comment les choisis-tu ?",
+     "c": "Essaie trois formes de monture en magasin ou chez toi et remarque ce que tu ressens."
+    },
+    "it": {
+     "t": "Occhiali e occhiali da sole",
+     "g": "Forme e colori delle montature fanno parte del tuo stile e ti proteggono dal sole.",
+     "p": [
+      "La montatura sta al centro del viso e modella tutto il tuo look.",
+      "Prova forme tonde, squadrate e a occhi di gatto e vedi quale senti tua.",
+      "Gli occhiali da sole con buona protezione UV fanno bene agli occhi."
+     ],
+     "q": "Porti occhiali o occhiali da sole? Come li scegli?",
+     "c": "Prova tre forme di montatura in negozio o a casa e nota come ti senti."
+    },
+    "pt": {
+     "t": "Óculos e óculos de sol",
+     "g": "As formas e cores das armações fazem parte do teu estilo e protegem-te do sol.",
+     "p": [
+      "A armação fica no centro do rosto e define todo o teu visual.",
+      "Experimenta formas redondas, quadradas e olho de gato e vê qual sentes tua.",
+      "Os óculos de sol com boa proteção UV fazem bem aos olhos."
+     ],
+     "q": "Usas óculos ou óculos de sol? Como os escolhes?",
+     "c": "Experimenta três formas de armação numa loja ou em casa e repara como te sentes."
+    },
+    "pt_BR": {
+     "t": "Óculos e óculos de sol",
+     "g": "As formas e cores das armações fazem parte do seu estilo e protegem do sol.",
+     "p": [
+      "A armação fica no centro do rosto e define todo o seu visual.",
+      "Experimente formas redondas, quadradas e gatinho e veja qual você sente sua.",
+      "Óculos de sol com boa proteção UV fazem bem aos olhos."
+     ],
+     "q": "Você usa óculos ou óculos de sol? Como escolhe?",
+     "c": "Experimente três formatos de armação numa loja ou em casa e note como se sente."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Underlayers that help",
+     "g": "Comfortable, well-fitting basics make outer clothes sit and feel better.",
+     "p": [
+      "Underlayers are the base that everything else sits on.",
+      "Soft, well-fitting basics stop pulling, slipping and itching.",
+      "Choose what is comfortable for you; good support is personal."
+     ],
+     "q": "Do you have an underlayer you could not live without?",
+     "c": "Check your underlayers today and set aside anything that does not feel right."
+    },
+    "de": {
+     "t": "Unterschichten, die helfen",
+     "g": "Bequeme, gut sitzende Basics lassen Oberbekleidung besser sitzen und sich besser anfühlen.",
+     "p": [
+      "Unterschichten sind die Basis, auf der alles andere sitzt.",
+      "Weiche, passende Basics verhindern Ziehen, Rutschen und Kratzen.",
+      "Wähle, was für dich bequem ist; guter Halt ist individuell."
+     ],
+     "q": "Hast du eine Unterschicht, ohne die du nicht leben könntest?",
+     "c": "Prüfe heute deine Unterschichten und leg beiseite, was sich nicht richtig anfühlt."
+    },
+    "es": {
+     "t": "Capas base que ayudan",
+     "g": "Básicos cómodos y bien ajustados hacen que la ropa de encima caiga y se sienta mejor.",
+     "p": [
+      "Las capas base son el cimiento sobre el que se apoya todo lo demás.",
+      "Básicos suaves y bien ajustados evitan tirones, deslices y picores.",
+      "Elige lo que te resulte cómodo; el buen soporte es personal."
+     ],
+     "q": "¿Tienes una capa base sin la que no podrías vivir?",
+     "c": "Revisa hoy tus capas base y aparta lo que no te resulte cómodo."
+    },
+    "fr": {
+     "t": "Les sous-couches qui aident",
+     "g": "Des basiques confortables et bien ajustés améliorent la tenue et le confort des vêtements du dessus.",
+     "p": [
+      "Les sous-couches sont la base sur laquelle tout le reste repose.",
+      "Des basiques doux et ajustés évitent tiraillements, glissements et démangeaisons.",
+      "Choisis ce qui est confortable pour toi; un bon maintien est personnel."
+     ],
+     "q": "As-tu une sous-couche dont tu ne pourrais pas te passer ?",
+     "c": "Passe en revue tes sous-couches aujourd'hui et mets de côté celles qui ne vont pas."
+    },
+    "it": {
+     "t": "Sottostrati che aiutano",
+     "g": "Capi base comodi e ben calzanti fanno cadere e sentire meglio i vestiti sopra.",
+     "p": [
+      "I sottostrati sono la base su cui poggia tutto il resto.",
+      "Capi morbidi e ben calzanti evitano tiramenti, scivolamenti e prurito.",
+      "Scegli ciò che è comodo per te; un buon sostegno è personale."
+     ],
+     "q": "Hai un sottostrato di cui non potresti fare a meno?",
+     "c": "Controlla oggi i tuoi sottostrati e metti da parte ciò che non va bene."
+    },
+    "pt": {
+     "t": "Camadas de base que ajudam",
+     "g": "Básicos confortáveis e bem ajustados fazem a roupa por cima assentar e sentir-se melhor.",
+     "p": [
+      "As camadas de base são o alicerce sobre o qual tudo o resto assenta.",
+      "Básicos suaves e bem ajustados evitam repuxos, deslizes e comichão.",
+      "Escolhe o que for confortável para ti; o bom apoio é pessoal."
+     ],
+     "q": "Tens uma camada de base sem a qual não viverias?",
+     "c": "Verifica hoje as tuas camadas de base e põe de lado o que não te soa bem."
+    },
+    "pt_BR": {
+     "t": "Camadas de base que ajudam",
+     "g": "Básicos confortáveis e bem ajustados fazem a roupa por cima cair e ser melhor de usar.",
+     "p": [
+      "As camadas de base são o alicerce sobre o qual todo o resto se apoia.",
+      "Básicos macios e bem ajustados evitam repuxos, escorregões e coceira.",
+      "Escolha o que for confortável para você; bom suporte é pessoal."
+     ],
+     "q": "Você tem uma camada de base sem a qual não viveria?",
+     "c": "Confira hoje suas camadas de base e separe o que não for confortável."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Comfort is stylish",
+     "g": "Feeling comfortable helps you carry any outfit with confidence.",
+     "p": [
+      "When you are comfortable, you move and stand more naturally.",
+      "Soft fabrics, room to move and shoes that do not hurt all count.",
+      "Comfort and style can go together; neither has to win."
+     ],
+     "q": "What is the most comfortable outfit you own, and why does it work?",
+     "c": "Wear something comfortable today that still feels like your style."
+    },
+    "de": {
+     "t": "Komfort ist stilvoll",
+     "g": "Wer sich wohlfühlt, trägt jedes Outfit selbstbewusster.",
+     "p": [
+      "Wenn du dich wohlfühlst, bewegst und stehst du natürlicher.",
+      "Weiche Stoffe, Bewegungsfreiheit und Schuhe, die nicht drücken, zählen alle.",
+      "Komfort und Stil können zusammengehen; keiner muss gewinnen."
+     ],
+     "q": "Was ist dein bequemstes Outfit, und warum funktioniert es?",
+     "c": "Trage heute etwas Bequemes, das sich trotzdem nach deinem Stil anfühlt."
+    },
+    "es": {
+     "t": "La comodidad también es estilo",
+     "g": "Sentirte cómodo te ayuda a llevar cualquier conjunto con confianza.",
+     "p": [
+      "Cuando estás cómodo, te mueves y te mantienes con más naturalidad.",
+      "Tejidos suaves, espacio para moverte y zapatos que no duelan cuentan.",
+      "Comodidad y estilo pueden ir juntos; ninguno tiene que ganar."
+     ],
+     "q": "¿Cuál es el conjunto más cómodo que tienes y por qué funciona?",
+     "c": "Lleva hoy algo cómodo que siga sintiéndose como tu estilo."
+    },
+    "fr": {
+     "t": "Le confort, c'est élégant",
+     "g": "Se sentir à l'aise aide à porter n'importe quelle tenue avec assurance.",
+     "p": [
+      "Quand tu es à l'aise, tu bouges et tu te tiens plus naturellement.",
+      "Tissus doux, aisance de mouvement et chaussures qui ne font pas mal comptent tous.",
+      "Confort et style peuvent aller ensemble; aucun n'a besoin de gagner."
+     ],
+     "q": "Quelle est la tenue la plus confortable que tu possèdes, et pourquoi marche-t-elle ?",
+     "c": "Porte aujourd'hui quelque chose de confortable qui te ressemble."
+    },
+    "it": {
+     "t": "Il comfort è stile",
+     "g": "Sentirsi a proprio agio aiuta a portare qualsiasi outfit con sicurezza.",
+     "p": [
+      "Quando stai comodo, ti muovi e stai in piedi con più naturalezza.",
+      "Tessuti morbidi, spazio per muoversi e scarpe che non fanno male contano tutti.",
+      "Comfort e stile possono andare insieme; nessuno deve vincere."
+     ],
+     "q": "Qual è l'outfit più comodo che hai e perché funziona?",
+     "c": "Indossa oggi qualcosa di comodo che sia comunque nel tuo stile."
+    },
+    "pt": {
+     "t": "O conforto também é estilo",
+     "g": "Sentires-te confortável ajuda-te a usar qualquer conjunto com confiança.",
+     "p": [
+      "Quando estás confortável, moves-te e manténs-te com mais naturalidade.",
+      "Tecidos suaves, espaço para te mexeres e sapatos que não doam contam todos.",
+      "Conforto e estilo podem andar juntos; nenhum tem de ganhar."
+     ],
+     "q": "Qual é o conjunto mais confortável que tens e porque funciona?",
+     "c": "Usa hoje algo confortável que continue a ter o teu estilo."
+    },
+    "pt_BR": {
+     "t": "O conforto também é estilo",
+     "g": "Sentir-se confortável ajuda você a usar qualquer look com confiança.",
+     "p": [
+      "Quando você está confortável, se move e se posiciona com mais naturalidade.",
+      "Tecidos macios, espaço para se mexer e sapatos que não machucam contam todos.",
+      "Conforto e estilo podem andar juntos; nenhum precisa vencer."
+     ],
+     "q": "Qual é o look mais confortável que você tem e por que funciona?",
+     "c": "Use hoje algo confortável que continue com o seu estilo."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dressing for your day",
+     "g": "Plan outfits around your activities, the weather and how you want to feel.",
+     "p": [
+      "Think about what your day holds: sitting, walking, meetings or play.",
+      "Check the weather and pack a layer you can add or remove.",
+      "Add how you want to feel: calm, bright or ready for anything."
+     ],
+     "q": "What does a typical day look like, and what does it need from your clothes?",
+     "c": "Plan tomorrow's outfit tonight around your activities, the weather and mood."
+    },
+    "de": {
+     "t": "Für deinen Tag anziehen",
+     "g": "Outfits nach Aktivitäten, Wetter und gewünschtem Gefühl planen.",
+     "p": [
+      "Denk daran, was dein Tag bringt: Sitzen, Gehen, Termine oder Spiel.",
+      "Prüfe das Wetter und nimm eine Schicht mit, die du an- oder ausziehen kannst.",
+      "Füge hinzu, wie du dich fühlen willst: ruhig, hell oder zu allem bereit."
+     ],
+     "q": "Wie sieht ein typischer Tag aus, und was braucht er von deiner Kleidung?",
+     "c": "Plane heute Abend das Outfit für morgen nach Aktivitäten, Wetter und Stimmung."
+    },
+    "es": {
+     "t": "Vestirte para tu día",
+     "g": "Planear conjuntos según tus actividades, el clima y cómo quieres sentirte.",
+     "p": [
+      "Piensa en lo que trae tu día: estar sentado, caminar, reuniones o juego.",
+      "Mira el tiempo y lleva una capa que puedas añadir o quitar.",
+      "Suma cómo quieres sentirte: tranquilo, alegre o listo para todo."
+     ],
+     "q": "¿Cómo es un día típico y qué necesita de tu ropa?",
+     "c": "Planea esta noche el conjunto de mañana según actividades, clima y ánimo."
+    },
+    "fr": {
+     "t": "S'habiller pour sa journée",
+     "g": "Planifier ses tenues selon ses activités, la météo et l'humeur voulue.",
+     "p": [
+      "Pense à ce que ta journée réserve: rester assis, marcher, réunions ou jeux.",
+      "Regarde la météo et prévois une couche à ajouter ou à retirer.",
+      "Ajoute ce que tu veux ressentir: calme, éclatant ou prêt à tout."
+     ],
+     "q": "À quoi ressemble une journée type, et qu'attend-elle de tes vêtements ?",
+     "c": "Prépare ce soir la tenue de demain selon activités, météo et humeur."
+    },
+    "it": {
+     "t": "Vestirsi per la propria giornata",
+     "g": "Pianificare gli outfit in base alle attività, al meteo e a come vuoi sentirti.",
+     "p": [
+      "Pensa a cosa ti aspetta: stare seduti, camminare, riunioni o gioco.",
+      "Controlla il meteo e porta uno strato da aggiungere o togliere.",
+      "Aggiungi come vuoi sentirti: calmo, luminoso o pronto a tutto."
+     ],
+     "q": "Com'è una tua giornata tipo e cosa chiede ai tuoi vestiti?",
+     "c": "Pianifica stasera l'outfit di domani in base ad attività, meteo e umore."
+    },
+    "pt": {
+     "t": "Vestir-te para o teu dia",
+     "g": "Planear conjuntos conforme as atividades, o tempo e como queres sentir-te.",
+     "p": [
+      "Pensa no que o teu dia traz: estar sentado, andar, reuniões ou brincadeira.",
+      "Vê o tempo e leva uma camada que possas pôr ou tirar.",
+      "Junta como queres sentir-te: calmo, alegre ou pronto para tudo."
+     ],
+     "q": "Como é um dia típico e o que pede à tua roupa?",
+     "c": "Planeia esta noite o conjunto de amanhã conforme atividades, tempo e humor."
+    },
+    "pt_BR": {
+     "t": "Vestir-se para o seu dia",
+     "g": "Planejar looks conforme as atividades, o tempo e como você quer se sentir.",
+     "p": [
+      "Pense no que o seu dia traz: ficar sentado, andar, reuniões ou brincadeiras.",
+      "Veja o tempo e leve uma camada que possa pôr ou tirar.",
+      "Some como quer se sentir: calmo, animado ou pronto para tudo."
+     ],
+     "q": "Como é um dia típico e o que ele pede das suas roupas?",
+     "c": "Planeje hoje à noite o look de amanhã conforme atividades, tempo e humor."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: the clothing basics",
+     "g": "Look back at key garments, shoes and accessories in your wardrobe.",
+     "p": [
+      "Remember tops, bottoms, layers, shoes, bags and accessories.",
+      "Notice which pieces work hardest and which wait for a chance.",
+      "Celebrate what you already own before wanting anything new."
+     ],
+     "q": "Which garment or accessory from these weeks surprised you most?",
+     "c": "Put together a favourite full outfit from head to toe and enjoy wearing it."
+    },
+    "de": {
+     "t": "Rückblick: die Kleidungs-Basics",
+     "g": "Auf wichtige Kleidungsstücke, Schuhe und Accessoires in deinem Schrank zurückblicken.",
+     "p": [
+      "Erinnere dich an Oberteile, Hosen, Schichten, Schuhe, Taschen und Accessoires.",
+      "Bemerke, welche Teile am meisten leisten und welche auf ihre Chance warten.",
+      "Feiere, was du schon hast, bevor du etwas Neues willst."
+     ],
+     "q": "Welches Kleidungsstück oder Accessoire hat dich in diesen Wochen am meisten überrascht?",
+     "c": "Stelle ein komplettes Lieblingsoutfit von Kopf bis Fuß zusammen und genieße es."
+    },
+    "es": {
+     "t": "Repaso: lo básico de la ropa",
+     "g": "Mirar atrás a prendas, zapatos y complementos clave de tu armario.",
+     "p": [
+      "Recuerda partes de arriba, de abajo, capas, zapatos, bolsos y complementos.",
+      "Fíjate en qué piezas trabajan más y cuáles esperan su oportunidad.",
+      "Celebra lo que ya tienes antes de desear algo nuevo."
+     ],
+     "q": "¿Qué prenda o complemento de estas semanas te sorprendió más?",
+     "c": "Crea un conjunto favorito completo de pies a cabeza y disfruta llevándolo."
+    },
+    "fr": {
+     "t": "Bilan : les basiques vestimentaires",
+     "g": "Revenir sur les pièces, chaussures et accessoires clés de ta garde-robe.",
+     "p": [
+      "Rappelle-toi hauts, bas, couches, chaussures, sacs et accessoires.",
+      "Remarque quelles pièces travaillent le plus et lesquelles attendent leur chance.",
+      "Célèbre ce que tu possèdes déjà avant de désirer du neuf."
+     ],
+     "q": "Quelle pièce ou quel accessoire de ces semaines t'a le plus surpris ?",
+     "c": "Compose une tenue préférée complète, de la tête aux pieds, et savoure-la."
+    },
+    "it": {
+     "t": "Ripasso: le basi dei vestiti",
+     "g": "Ripensare a capi, scarpe e accessori chiave del tuo guardaroba.",
+     "p": [
+      "Ricorda top, pantaloni, strati, scarpe, borse e accessori.",
+      "Nota quali capi lavorano di più e quali aspettano la loro occasione.",
+      "Festeggia ciò che hai già prima di desiderare qualcosa di nuovo."
+     ],
+     "q": "Quale capo o accessorio di queste settimane ti ha sorpreso di più?",
+     "c": "Crea un outfit preferito completo dalla testa ai piedi e goditelo."
+    },
+    "pt": {
+     "t": "Revisão: o básico da roupa",
+     "g": "Olhar para trás para as peças, os sapatos e os acessórios principais do teu guarda-roupa.",
+     "p": [
+      "Recorda partes de cima, de baixo, camadas, sapatos, malas e acessórios.",
+      "Repara que peças trabalham mais e quais esperam a sua oportunidade.",
+      "Celebra o que já tens antes de desejares algo novo."
+     ],
+     "q": "Que peça ou acessório destas semanas te surpreendeu mais?",
+     "c": "Cria um conjunto favorito completo, dos pés à cabeça, e desfruta de o usar."
+    },
+    "pt_BR": {
+     "t": "Revisão: o básico da roupa",
+     "g": "Olhar para trás para as peças, sapatos e acessórios principais do seu guarda-roupa.",
+     "p": [
+      "Lembre partes de cima, de baixo, camadas, sapatos, bolsas e acessórios.",
+      "Note quais peças trabalham mais e quais esperam a sua chance.",
+      "Celebre o que já tem antes de desejar algo novo."
+     ],
+     "q": "Qual peça ou acessório destas semanas mais surpreendeu você?",
+     "c": "Monte um look favorito completo, dos pés à cabeça, e aproveite para usá-lo."
+    }
+   }
+  }
+ ]
+}

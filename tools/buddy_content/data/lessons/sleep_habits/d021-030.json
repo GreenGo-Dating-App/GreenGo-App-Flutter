@@ -1,0 +1,835 @@
+{
+ "topic": "sleep_habits",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Starting a sleep diary",
+     "g": "Begin a simple daily log to learn your own patterns.",
+     "p": [
+      "Write bedtime, wake time and how you feel, in one line.",
+      "Keep it short so you can stick with it.",
+      "Judge nothing; you are just collecting facts about yourself."
+     ],
+     "q": "Where could you keep a diary so you see it every evening?",
+     "c": "Tonight, put a small notebook by your bed and write the first line."
+    },
+    "de": {
+     "t": "Ein Schlaftagebuch beginnen",
+     "g": "Starte ein einfaches Tagesprotokoll, um deine Muster zu erkennen.",
+     "p": [
+      "Schreib Schlafenszeit, Aufstehzeit und dein Befinden in eine Zeile.",
+      "Halte es kurz, damit du dranbleibst.",
+      "Bewerte nichts, du sammelst nur Fakten über dich."
+     ],
+     "q": "Wo könntest du das Tagebuch aufbewahren, damit du es jeden Abend siehst?",
+     "c": "Leg heute Abend ein kleines Notizbuch neben dein Bett und schreib die erste Zeile."
+    },
+    "es": {
+     "t": "Empezar un diario de sueño",
+     "g": "Empieza un registro diario sencillo para conocer tus patrones.",
+     "p": [
+      "Anota hora de acostarte, de despertar y cómo te sientes, en una línea.",
+      "Hazlo breve para poder mantenerlo.",
+      "No juzgues nada, solo reúnes datos sobre ti."
+     ],
+     "q": "¿Dónde podrías guardar el diario para verlo cada noche?",
+     "c": "Esta noche deja una libreta junto a la cama y escribe la primera línea."
+    },
+    "fr": {
+     "t": "Commencer un journal du sommeil",
+     "g": "Lance un petit relevé quotidien pour connaître tes habitudes.",
+     "p": [
+      "Note l'heure du coucher, du lever et ton ressenti, en une ligne.",
+      "Reste bref pour tenir dans la durée.",
+      "Ne juge rien, tu rassembles juste des faits sur toi."
+     ],
+     "q": "Où pourrais-tu ranger ce journal pour le voir chaque soir ?",
+     "c": "Ce soir, pose un petit carnet près du lit et écris la première ligne."
+    },
+    "it": {
+     "t": "Iniziare un diario del sonno",
+     "g": "Comincia un semplice registro quotidiano per conoscere le tue abitudini.",
+     "p": [
+      "Scrivi orario del letto, del risveglio e come stai, in una riga.",
+      "Tienilo breve per riuscire a continuare.",
+      "Non giudicare nulla, raccogli solo dati su di te."
+     ],
+     "q": "Dove potresti tenere il diario per vederlo ogni sera?",
+     "c": "Stasera metti un taccuino accanto al letto e scrivi la prima riga."
+    },
+    "pt": {
+     "t": "Começar um diário do sono",
+     "g": "Começa um registo diário simples para conheceres os teus padrões.",
+     "p": [
+      "Escreve a hora de deitar, de acordar e como te sentes, numa linha.",
+      "Mantém-no curto para conseguires continuar.",
+      "Não julgues nada, estás só a reunir factos sobre ti."
+     ],
+     "q": "Onde poderias guardar o diário para o veres todas as noites?",
+     "c": "Esta noite, põe um caderno junto à cama e escreve a primeira linha."
+    },
+    "pt_BR": {
+     "t": "Começando um diário do sono",
+     "g": "Comece um registro diário simples para conhecer os seus padrões.",
+     "p": [
+      "Escreva a hora de deitar, de acordar e como se sente, numa linha.",
+      "Mantenha curto para conseguir continuar.",
+      "Não julgue nada, você está só reunindo fatos sobre si."
+     ],
+     "q": "Onde você poderia guardar o diário para vê-lo toda noite?",
+     "c": "Hoje à noite, deixe um caderno ao lado da cama e escreva a primeira linha."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading your first week",
+     "g": "Spot patterns in your first diary entries.",
+     "p": [
+      "Look for late nights, early alarms or restless evenings.",
+      "Compare days when you felt great with days you did not.",
+      "Pick one pattern to be curious about, not to fix yet."
+     ],
+     "q": "What pattern surprised you most in your diary?",
+     "c": "Tonight, circle the one pattern you want to explore."
+    },
+    "de": {
+     "t": "Deine erste Woche lesen",
+     "g": "Erkenne Muster in den ersten Tagebucheinträgen.",
+     "p": [
+      "Achte auf späte Nächte, frühe Wecker oder unruhige Abende.",
+      "Vergleiche Tage, an denen du dich super fühltest, mit anderen.",
+      "Such dir ein Muster aus, auf das du neugierig bist, noch ohne es zu ändern."
+     ],
+     "q": "Welches Muster hat dich im Tagebuch am meisten überrascht?",
+     "c": "Kreise heute Abend das eine Muster ein, das du erkunden willst."
+    },
+    "es": {
+     "t": "Leer tu primera semana",
+     "g": "Detecta patrones en tus primeras anotaciones.",
+     "p": [
+      "Busca noches tardías, alarmas tempranas o tardes inquietas.",
+      "Compara los días en que te sentiste genial con los que no.",
+      "Elige un patrón que te dé curiosidad, sin arreglarlo todavía."
+     ],
+     "q": "¿Qué patrón te sorprendió más en tu diario?",
+     "c": "Esta noche rodea con un círculo el patrón que quieres explorar."
+    },
+    "fr": {
+     "t": "Lire ta première semaine",
+     "g": "Repère des tendances dans tes premières notes.",
+     "p": [
+      "Cherche les nuits tardives, les réveils matinaux ou les soirées agitées.",
+      "Compare les jours où tu étais en forme avec les autres.",
+      "Choisis une tendance qui te rend curieux, sans la corriger tout de suite."
+     ],
+     "q": "Quelle tendance t'a le plus surpris dans ton journal ?",
+     "c": "Ce soir, entoure la tendance que tu veux explorer."
+    },
+    "it": {
+     "t": "Leggere la tua prima settimana",
+     "g": "Individua schemi nelle prime annotazioni.",
+     "p": [
+      "Cerca notti tarde, sveglie presto o serate agitate.",
+      "Confronta i giorni in cui stavi benissimo con gli altri.",
+      "Scegli uno schema che ti incuriosisce, senza ancora correggerlo."
+     ],
+     "q": "Quale schema ti ha sorpreso di più nel diario?",
+     "c": "Stasera cerchia lo schema che vuoi esplorare."
+    },
+    "pt": {
+     "t": "Ler a tua primeira semana",
+     "g": "Descobre padrões nas tuas primeiras anotações.",
+     "p": [
+      "Procura noites tardias, despertadores cedo ou noites inquietas.",
+      "Compara os dias em que te sentiste ótimo com os outros.",
+      "Escolhe um padrão que te desperte curiosidade, sem o corrigir já."
+     ],
+     "q": "Que padrão mais te surpreendeu no teu diário?",
+     "c": "Esta noite, circunda o padrão que queres explorar."
+    },
+    "pt_BR": {
+     "t": "Lendo a sua primeira semana",
+     "g": "Descubra padrões nas suas primeiras anotações.",
+     "p": [
+      "Procure noites tardias, despertadores cedo ou noites inquietas.",
+      "Compare os dias em que você se sentiu ótimo com os outros.",
+      "Escolha um padrão que desperte curiosidade, sem corrigir ainda."
+     ],
+     "q": "Qual padrão mais surpreendeu você no diário?",
+     "c": "Hoje à noite, circule o padrão que você quer explorar."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Setting a gentle goal",
+     "g": "Choose one realistic, kind sleep goal for the month.",
+     "p": [
+      "Pick something small, like a steady wake-up time.",
+      "Phrase it kindly: I will try, not I must.",
+      "A goal you can keep three days in a row is a good one."
+     ],
+     "q": "What is one small sleep goal that feels doable?",
+     "c": "Tonight, write your goal on a note and place it by the bed."
+    },
+    "de": {
+     "t": "Ein sanftes Ziel setzen",
+     "g": "Wähle ein realistisches, freundliches Schlafziel für den Monat.",
+     "p": [
+      "Such dir etwas Kleines, etwa eine feste Aufstehzeit.",
+      "Formuliere es freundlich: Ich probiere es, statt Ich muss.",
+      "Ein Ziel, das du drei Tage hintereinander schaffst, ist ein gutes."
+     ],
+     "q": "Welches kleine Schlafziel fühlt sich machbar an?",
+     "c": "Schreib dein Ziel heute Abend auf einen Zettel und leg ihn neben das Bett."
+    },
+    "es": {
+     "t": "Fijar una meta amable",
+     "g": "Elige una meta de sueño realista y amable para el mes.",
+     "p": [
+      "Elige algo pequeño, como una hora de despertar estable.",
+      "Formúlala con cariño: voy a intentar, en vez de debo.",
+      "Una meta que puedas cumplir tres días seguidos es buena."
+     ],
+     "q": "¿Qué meta pequeña de sueño te parece factible?",
+     "c": "Esta noche escribe tu meta en una nota y déjala junto a la cama."
+    },
+    "fr": {
+     "t": "Fixer un objectif doux",
+     "g": "Choisis un objectif de sommeil réaliste et bienveillant pour le mois.",
+     "p": [
+      "Choisis quelque chose de petit, comme une heure de lever stable.",
+      "Formule-le avec gentillesse : je vais essayer, pas je dois.",
+      "Un objectif tenable trois jours de suite est un bon objectif."
+     ],
+     "q": "Quel petit objectif de sommeil te semble faisable ?",
+     "c": "Ce soir, écris ton objectif sur un mot et pose-le près du lit."
+    },
+    "it": {
+     "t": "Fissare un obiettivo gentile",
+     "g": "Scegli un obiettivo di sonno realistico e gentile per il mese.",
+     "p": [
+      "Scegli qualcosa di piccolo, come un orario di sveglia stabile.",
+      "Formulalo con gentilezza: proverò, non devo.",
+      "Un obiettivo che riesci a mantenere per tre giorni è un buon obiettivo."
+     ],
+     "q": "Quale piccolo obiettivo di sonno ti sembra fattibile?",
+     "c": "Stasera scrivi l'obiettivo su un biglietto e mettilo accanto al letto."
+    },
+    "pt": {
+     "t": "Definir uma meta gentil",
+     "g": "Escolhe uma meta de sono realista e amável para o mês.",
+     "p": [
+      "Escolhe algo pequeno, como uma hora de acordar estável.",
+      "Formula-a com carinho: vou tentar, em vez de tenho de.",
+      "Uma meta que consigas cumprir três dias seguidos é boa."
+     ],
+     "q": "Que pequena meta de sono te parece possível?",
+     "c": "Esta noite, escreve a tua meta num papel e deixa-o junto à cama."
+    },
+    "pt_BR": {
+     "t": "Definindo uma meta gentil",
+     "g": "Escolha uma meta de sono realista e gentil para o mês.",
+     "p": [
+      "Escolha algo pequeno, como uma hora de acordar estável.",
+      "Formule com carinho: vou tentar, em vez de preciso.",
+      "Uma meta que você consiga cumprir três dias seguidos é boa."
+     ],
+     "q": "Que pequena meta de sono parece possível para você?",
+     "c": "Hoje à noite, escreva a sua meta num papel e deixe ao lado da cama."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Small changes, big effect",
+     "g": "See why tiny adjustments beat big overhauls.",
+     "p": [
+      "Moving bedtime 15 minutes earlier is easy to repeat.",
+      "Small wins build confidence and become habits.",
+      "Big plans often collapse after a few days."
+     ],
+     "q": "What 15-minute change could you try this week?",
+     "c": "Tonight, start your wind-down 15 minutes earlier."
+    },
+    "de": {
+     "t": "Kleine Änderungen, große Wirkung",
+     "g": "Sieh, warum kleine Anpassungen große Umstellungen schlagen.",
+     "p": [
+      "Die Schlafenszeit 15 Minuten vorzuverlegen lässt sich leicht wiederholen.",
+      "Kleine Erfolge geben Selbstvertrauen und werden zu Gewohnheiten.",
+      "Große Pläne brechen oft nach wenigen Tagen zusammen."
+     ],
+     "q": "Welche 15-Minuten-Änderung könntest du diese Woche testen?",
+     "c": "Beginne heute Abend 15 Minuten früher mit dem Runterfahren."
+    },
+    "es": {
+     "t": "Cambios pequeños, gran efecto",
+     "g": "Mira por qué los ajustes mínimos superan a los grandes cambios.",
+     "p": [
+      "Adelantar 15 minutos la hora de acostarte es fácil de repetir.",
+      "Las pequeñas victorias dan confianza y se vuelven hábitos.",
+      "Los grandes planes suelen derrumbarse a los pocos días."
+     ],
+     "q": "¿Qué cambio de 15 minutos podrías probar esta semana?",
+     "c": "Esta noche empieza a relajarte 15 minutos antes."
+    },
+    "fr": {
+     "t": "Petits changements, grand effet",
+     "g": "Vois pourquoi de petits ajustements battent les grands bouleversements.",
+     "p": [
+      "Avancer le coucher de 15 minutes est facile à répéter.",
+      "Les petites victoires donnent confiance et deviennent des habitudes.",
+      "Les grands plans s'effondrent souvent après quelques jours."
+     ],
+     "q": "Quel changement de 15 minutes pourrais-tu essayer cette semaine ?",
+     "c": "Ce soir, commence ta détente 15 minutes plus tôt."
+    },
+    "it": {
+     "t": "Piccoli cambiamenti, grande effetto",
+     "g": "Scopri perché i piccoli aggiustamenti battono le grandi rivoluzioni.",
+     "p": [
+      "Anticipare di 15 minuti l'ora di andare a letto è facile da ripetere.",
+      "Le piccole vittorie danno fiducia e diventano abitudini.",
+      "I grandi piani spesso crollano dopo pochi giorni."
+     ],
+     "q": "Quale cambiamento di 15 minuti potresti provare questa settimana?",
+     "c": "Stasera inizia a rilassarti 15 minuti prima."
+    },
+    "pt": {
+     "t": "Pequenas mudanças, grande efeito",
+     "g": "Vê porque pequenos ajustes vencem grandes revoluções.",
+     "p": [
+      "Adiantar 15 minutos a hora de deitar é fácil de repetir.",
+      "Pequenas vitórias dão confiança e tornam-se hábitos.",
+      "Grandes planos costumam ruir ao fim de poucos dias."
+     ],
+     "q": "Que mudança de 15 minutos podias experimentar esta semana?",
+     "c": "Esta noite, começa a descontrair 15 minutos mais cedo."
+    },
+    "pt_BR": {
+     "t": "Pequenas mudanças, grande efeito",
+     "g": "Veja por que pequenos ajustes vencem grandes revoluções.",
+     "p": [
+      "Adiantar 15 minutos a hora de deitar é fácil de repetir.",
+      "Pequenas vitórias dão confiança e viram hábitos.",
+      "Grandes planos costumam desabar em poucos dias."
+     ],
+     "q": "Que mudança de 15 minutos você poderia testar esta semana?",
+     "c": "Hoje à noite, comece a desacelerar 15 minutos mais cedo."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "When to talk to a doctor",
+     "g": "Know the signs that deserve a professional's view.",
+     "p": [
+      "Loud snoring, gasping or long pauses in breathing at night deserve a check.",
+      "Weeks of poor sleep or heavy daytime sleepiness do too.",
+      "This path shares habits only; a doctor can look at your case."
+     ],
+     "q": "Is there anything about your sleep you have wondered about?",
+     "c": "Tonight, jot down any sleep worry to mention to a doctor."
+    },
+    "de": {
+     "t": "Wann zum Arzt",
+     "g": "Kenne die Zeichen, die eine fachliche Einschätzung verdienen.",
+     "p": [
+      "Lautes Schnarchen, Luftschnappen oder Atempausen nachts sollten abgeklärt werden.",
+      "Das gilt auch für wochenlang schlechten Schlaf oder starke Tagesmüdigkeit.",
+      "Dieser Weg teilt nur Gewohnheiten; ein Arzt kann deinen Fall beurteilen."
+     ],
+     "q": "Gibt es etwas an deinem Schlaf, das du dich schon gefragt hast?",
+     "c": "Notiere heute Abend eine Schlafsorge, die du beim Arzt ansprechen kannst."
+    },
+    "es": {
+     "t": "Cuándo hablar con un médico",
+     "g": "Conoce las señales que merecen la opinión de un profesional.",
+     "p": [
+      "Ronquidos fuertes, ahogos o pausas largas al respirar de noche merecen una revisión.",
+      "También semanas de mal sueño o mucha somnolencia diurna.",
+      "Este camino solo comparte hábitos; un médico puede valorar tu caso."
+     ],
+     "q": "¿Hay algo de tu sueño que te haya preocupado?",
+     "c": "Esta noche anota cualquier duda de sueño para comentarla con un médico."
+    },
+    "fr": {
+     "t": "Quand consulter un médecin",
+     "g": "Connais les signes qui méritent l'avis d'un professionnel.",
+     "p": [
+      "Ronflements forts, halètements ou pauses respiratoires la nuit méritent un contrôle.",
+      "Des semaines de mauvais sommeil ou une forte somnolence en journée aussi.",
+      "Ce parcours ne partage que des habitudes ; un médecin peut examiner ton cas."
+     ],
+     "q": "Y a-t-il quelque chose dans ton sommeil qui t'interroge ?",
+     "c": "Ce soir, note une inquiétude de sommeil à évoquer avec un médecin."
+    },
+    "it": {
+     "t": "Quando parlare con un medico",
+     "g": "Conosci i segnali che meritano il parere di un professionista.",
+     "p": [
+      "Russare forte, affanni o lunghe pause del respiro di notte meritano un controllo.",
+      "Anche settimane di sonno scarso o forte sonnolenza diurna.",
+      "Questo percorso condivide solo abitudini; un medico può valutare il tuo caso."
+     ],
+     "q": "C'è qualcosa del tuo sonno che ti ha fatto riflettere?",
+     "c": "Stasera annota ogni dubbio sul sonno da riferire a un medico."
+    },
+    "pt": {
+     "t": "Quando falar com um médico",
+     "g": "Conhece os sinais que merecem a opinião de um profissional.",
+     "p": [
+      "Ressonar alto, engasgos ou pausas longas na respiração à noite merecem avaliação.",
+      "Também semanas de sono mau ou muita sonolência de dia.",
+      "Este percurso partilha apenas hábitos; um médico pode avaliar o teu caso."
+     ],
+     "q": "Há algo no teu sono que te tenha deixado a pensar?",
+     "c": "Esta noite, anota qualquer dúvida de sono para falar com um médico."
+    },
+    "pt_BR": {
+     "t": "Quando falar com um médico",
+     "g": "Conheça os sinais que merecem a opinião de um profissional.",
+     "p": [
+      "Roncar alto, engasgos ou pausas longas na respiração à noite merecem avaliação.",
+      "Também semanas de sono ruim ou muita sonolência de dia.",
+      "Este caminho compartilha apenas hábitos; um médico pode avaliar o seu caso."
+     ],
+     "q": "Tem algo no seu sono que deixou você pensando?",
+     "c": "Hoje à noite, anote qualquer dúvida de sono para falar com um médico."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sleep around the world",
+     "g": "Take a first look at sleep customs across cultures.",
+     "p": [
+      "Some places keep a midday rest, like the Spanish siesta.",
+      "Bedtimes and family sleeping arrangements differ widely.",
+      "No single custom is right; what matters is what suits you."
+     ],
+     "q": "Is there a sleep custom in your culture you like?",
+     "c": "Tonight, try a calming habit from another culture, like warm herbal tea."
+    },
+    "de": {
+     "t": "Schlaf rund um die Welt",
+     "g": "Wirf einen ersten Blick auf Schlafbräuche in verschiedenen Kulturen.",
+     "p": [
+      "Mancherorts gibt es eine Mittagsruhe, etwa die spanische Siesta.",
+      "Schlafenszeiten und Schlafarrangements in Familien sind sehr verschieden.",
+      "Kein Brauch ist der richtige; wichtig ist, was zu dir passt."
+     ],
+     "q": "Gibt es einen Schlafbrauch in deiner Kultur, den du magst?",
+     "c": "Probiere heute Abend eine beruhigende Gewohnheit aus einer anderen Kultur, etwa warmen Kräutertee."
+    },
+    "es": {
+     "t": "El sueño en el mundo",
+     "g": "Echa un primer vistazo a las costumbres de sueño de distintas culturas.",
+     "p": [
+      "En algunos lugares hay descanso a mediodía, como la siesta española.",
+      "Las horas de acostarse y los arreglos familiares para dormir varían mucho.",
+      "Ninguna costumbre es la correcta; importa lo que te funcione."
+     ],
+     "q": "¿Hay alguna costumbre de sueño de tu cultura que te guste?",
+     "c": "Esta noche prueba un hábito calmante de otra cultura, como una infusión tibia."
+    },
+    "fr": {
+     "t": "Le sommeil autour du monde",
+     "g": "Découvre un premier aperçu des coutumes du sommeil selon les cultures.",
+     "p": [
+      "Certains endroits ont un repos de mi-journée, comme la sieste espagnole.",
+      "Les heures de coucher et les arrangements familiaux varient beaucoup.",
+      "Aucune coutume n'est la bonne ; ce qui compte, c'est ce qui te convient."
+     ],
+     "q": "Y a-t-il une coutume de sommeil de ta culture que tu aimes ?",
+     "c": "Ce soir, essaie une habitude apaisante d'une autre culture, comme une tisane tiède."
+    },
+    "it": {
+     "t": "Il sonno nel mondo",
+     "g": "Dai un primo sguardo alle usanze del sonno nelle varie culture.",
+     "p": [
+      "In alcuni luoghi c'è un riposo di metà giornata, come la siesta spagnola.",
+      "Orari del letto e modi di dormire in famiglia variano molto.",
+      "Nessuna usanza è quella giusta; conta ciò che ti si addice."
+     ],
+     "q": "C'è un'usanza del sonno della tua cultura che ti piace?",
+     "c": "Stasera prova un'abitudine calmante di un'altra cultura, come una tisana tiepida."
+    },
+    "pt": {
+     "t": "O sono pelo mundo",
+     "g": "Dá uma primeira vista de olhos pelos costumes do sono em várias culturas.",
+     "p": [
+      "Em alguns lugares há descanso a meio do dia, como a sesta espanhola.",
+      "As horas de deitar e os arranjos familiares para dormir variam muito.",
+      "Nenhum costume é o certo; importa o que te serve."
+     ],
+     "q": "Há algum costume de sono da tua cultura de que gostes?",
+     "c": "Esta noite, experimenta um hábito calmante de outra cultura, como uma infusão morna."
+    },
+    "pt_BR": {
+     "t": "O sono pelo mundo",
+     "g": "Dê uma primeira olhada nos costumes do sono em várias culturas.",
+     "p": [
+      "Em alguns lugares há descanso no meio do dia, como a sesta espanhola.",
+      "Os horários de deitar e os arranjos familiares para dormir variam muito.",
+      "Nenhum costume é o certo; importa o que serve para você."
+     ],
+     "q": "Existe algum costume de sono da sua cultura de que você goste?",
+     "c": "Hoje à noite, experimente um hábito calmante de outra cultura, como um chá morno."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Words for sleep",
+     "g": "Enjoy fun sleep expressions from different languages.",
+     "p": [
+      "English says sleep like a log; Spanish says like a dormouse.",
+      "German says like a marmot; Italian says like a dormouse too.",
+      "Sayings show how every culture pictures deep, easy sleep."
+     ],
+     "q": "What is your favourite saying about sleep?",
+     "c": "Tonight, say a sleep saying aloud as you settle in."
+    },
+    "de": {
+     "t": "Wörter für Schlaf",
+     "g": "Entdecke lustige Schlafredensarten aus verschiedenen Sprachen.",
+     "p": [
+      "Englisch sagt wie ein Baumstamm schlafen, Spanisch wie ein Siebenschläfer.",
+      "Deutsch sagt wie ein Murmeltier, Italienisch ebenfalls wie ein Siebenschläfer.",
+      "Redensarten zeigen, wie jede Kultur tiefen, leichten Schlaf darstellt."
+     ],
+     "q": "Was ist dein Lieblingssprichwort rund um Schlaf?",
+     "c": "Sprich heute Abend beim Einkuscheln eine Schlafredensart laut aus."
+    },
+    "es": {
+     "t": "Palabras para dormir",
+     "g": "Disfruta de expresiones divertidas sobre el sueño en distintos idiomas.",
+     "p": [
+      "El inglés dice dormir como un tronco; el español, como un lirón.",
+      "El alemán dice como una marmota; el italiano también como un lirón.",
+      "Los refranes muestran cómo cada cultura imagina un sueño profundo y fácil."
+     ],
+     "q": "¿Cuál es tu dicho favorito sobre el sueño?",
+     "c": "Esta noche di en voz alta un dicho sobre dormir al acostarte."
+    },
+    "fr": {
+     "t": "Des mots pour dormir",
+     "g": "Savoure des expressions amusantes sur le sommeil dans diverses langues.",
+     "p": [
+      "L'anglais dit dormir comme une bûche ; le français, comme un loir.",
+      "L'allemand dit comme une marmotte ; l'italien aussi comme un loir.",
+      "Ces dictons montrent comment chaque culture imagine un sommeil profond et facile."
+     ],
+     "q": "Quel est ton dicton préféré sur le sommeil ?",
+     "c": "Ce soir, dis à voix haute un dicton sur le sommeil en t'installant."
+    },
+    "it": {
+     "t": "Parole per dormire",
+     "g": "Divertiti con espressioni curiose sul sonno in lingue diverse.",
+     "p": [
+      "L'inglese dice dormire come un ceppo; l'italiano, come un ghiro.",
+      "Il tedesco dice come una marmotta; lo spagnolo come un ghiro.",
+      "I modi di dire mostrano come ogni cultura immagina un sonno profondo e facile."
+     ],
+     "q": "Qual è il tuo modo di dire preferito sul sonno?",
+     "c": "Stasera pronuncia ad alta voce un modo di dire sul sonno mentre ti sistemi."
+    },
+    "pt": {
+     "t": "Palavras para dormir",
+     "g": "Diverte-te com expressões sobre o sono em várias línguas.",
+     "p": [
+      "O inglês diz dormir como um tronco; o espanhol, como um arganaz.",
+      "O alemão diz como uma marmota; o italiano, também como um arganaz.",
+      "Os ditados mostram como cada cultura imagina um sono profundo e fácil."
+     ],
+     "q": "Qual é o teu ditado preferido sobre o sono?",
+     "c": "Esta noite, diz em voz alta um ditado sobre dormir ao deitares-te."
+    },
+    "pt_BR": {
+     "t": "Palavras para dormir",
+     "g": "Divirta-se com expressões sobre o sono em várias línguas.",
+     "p": [
+      "O inglês diz dormir como um tronco; o espanhol, como um arganaz.",
+      "O alemão diz como uma marmota; o italiano, também como um arganaz.",
+      "Os ditados mostram como cada cultura imagina um sono profundo e fácil."
+     ],
+     "q": "Qual é o seu ditado favorito sobre o sono?",
+     "c": "Hoje à noite, diga em voz alta um ditado sobre dormir ao se deitar."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your ideal day of rest",
+     "g": "Imagine a day with great sleep and what it changes.",
+     "p": [
+      "Picture waking up refreshed and how the morning feels.",
+      "Think about what you would do with extra energy.",
+      "A clear picture can motivate small steps."
+     ],
+     "q": "What would a day after perfect sleep look like for you?",
+     "c": "Tonight, picture that day for one minute before sleep."
+    },
+    "de": {
+     "t": "Dein idealer Ruhetag",
+     "g": "Stell dir einen Tag mit tollem Schlaf vor und was er verändert.",
+     "p": [
+      "Male dir aus, wie du erfrischt aufwachst und wie sich der Morgen anfühlt.",
+      "Überlege, was du mit mehr Energie anfangen würdest.",
+      "Ein klares Bild kann kleine Schritte beflügeln."
+     ],
+     "q": "Wie sähe ein Tag nach perfektem Schlaf für dich aus?",
+     "c": "Stell dir heute Abend eine Minute lang diesen Tag vor dem Schlafen vor."
+    },
+    "es": {
+     "t": "Tu día ideal de descanso",
+     "g": "Imagina un día con un sueño estupendo y lo que cambiaría.",
+     "p": [
+      "Visualiza despertar renovado y cómo se siente la mañana.",
+      "Piensa qué harías con esa energía extra.",
+      "Una imagen clara puede motivar pequeños pasos."
+     ],
+     "q": "¿Cómo sería para ti un día después de dormir perfecto?",
+     "c": "Esta noche imagina ese día durante un minuto antes de dormir."
+    },
+    "fr": {
+     "t": "Ta journée idéale de repos",
+     "g": "Imagine une journée après un super sommeil et ce qu'elle changerait.",
+     "p": [
+      "Visualise un réveil en forme et la sensation du matin.",
+      "Pense à ce que tu ferais avec cette énergie en plus.",
+      "Une image claire peut motiver de petits pas."
+     ],
+     "q": "À quoi ressemblerait pour toi une journée après un sommeil parfait ?",
+     "c": "Ce soir, imagine cette journée pendant une minute avant de dormir."
+    },
+    "it": {
+     "t": "Il tuo giorno ideale di riposo",
+     "g": "Immagina una giornata dopo un sonno ottimo e cosa cambierebbe.",
+     "p": [
+      "Visualizza un risveglio rigenerato e come si sente la mattina.",
+      "Pensa a cosa faresti con quell'energia in più.",
+      "Un'immagine chiara può motivare piccoli passi."
+     ],
+     "q": "Come sarebbe per te una giornata dopo un sonno perfetto?",
+     "c": "Stasera immagina quel giorno per un minuto prima di dormire."
+    },
+    "pt": {
+     "t": "O teu dia ideal de descanso",
+     "g": "Imagina um dia depois de dormir muito bem e o que mudaria.",
+     "p": [
+      "Visualiza acordar retemperado e como a manhã se sente.",
+      "Pensa no que farias com essa energia extra.",
+      "Uma imagem clara pode motivar pequenos passos."
+     ],
+     "q": "Como seria para ti um dia depois de dormir na perfeição?",
+     "c": "Esta noite, imagina esse dia durante um minuto antes de dormir."
+    },
+    "pt_BR": {
+     "t": "O seu dia ideal de descanso",
+     "g": "Imagine um dia depois de dormir muito bem e o que mudaria.",
+     "p": [
+      "Visualize acordar renovado e como a manhã se sente.",
+      "Pense no que você faria com essa energia extra.",
+      "Uma imagem clara pode motivar pequenos passos."
+     ],
+     "q": "Como seria para você um dia depois de dormir perfeitamente?",
+     "c": "Hoje à noite, imagine esse dia por um minuto antes de dormir."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rest is not laziness",
+     "g": "See sleep as a skill and an investment.",
+     "p": [
+      "Resting well is part of doing things well.",
+      "Many admired people protect their sleep on purpose.",
+      "Time spent sleeping returns as energy and clarity."
+     ],
+     "q": "Do you ever feel guilty about resting?",
+     "c": "Tonight, go to bed without apologising to yourself."
+    },
+    "de": {
+     "t": "Ruhe ist keine Faulheit",
+     "g": "Sieh Schlaf als Fähigkeit und als Investition.",
+     "p": [
+      "Gut zu ruhen gehört dazu, Dinge gut zu tun.",
+      "Viele bewunderte Menschen schützen ihren Schlaf bewusst.",
+      "Schlafenszeit kommt als Energie und Klarheit zurück."
+     ],
+     "q": "Hast du manchmal ein schlechtes Gewissen beim Ausruhen?",
+     "c": "Geh heute Abend ins Bett, ohne dich dafür zu entschuldigen."
+    },
+    "es": {
+     "t": "Descansar no es pereza",
+     "g": "Mira el sueño como una habilidad y una inversión.",
+     "p": [
+      "Descansar bien es parte de hacer bien las cosas.",
+      "Mucha gente admirada protege su sueño a propósito.",
+      "El tiempo que duermes vuelve como energía y claridad."
+     ],
+     "q": "¿Te sientes a veces culpable por descansar?",
+     "c": "Esta noche acuéstate sin pedirte perdón a ti mismo."
+    },
+    "fr": {
+     "t": "Se reposer n'est pas de la paresse",
+     "g": "Vois le sommeil comme une compétence et un investissement.",
+     "p": [
+      "Bien se reposer fait partie de bien faire les choses.",
+      "Beaucoup de personnes admirées protègent leur sommeil exprès.",
+      "Le temps passé à dormir revient en énergie et en clarté."
+     ],
+     "q": "Te sens-tu parfois coupable de te reposer ?",
+     "c": "Ce soir, couche-toi sans t'excuser auprès de toi-même."
+    },
+    "it": {
+     "t": "Riposare non è pigrizia",
+     "g": "Vedi il sonno come un'abilità e un investimento.",
+     "p": [
+      "Riposare bene fa parte del fare bene le cose.",
+      "Molte persone ammirate proteggono il loro sonno di proposito.",
+      "Il tempo dormito ritorna come energia e lucidità."
+     ],
+     "q": "Ti senti a volte in colpa per il riposo?",
+     "c": "Stasera vai a letto senza scusarti con te stesso."
+    },
+    "pt": {
+     "t": "Descansar não é preguiça",
+     "g": "Vê o sono como uma competência e um investimento.",
+     "p": [
+      "Descansar bem faz parte de fazer bem as coisas.",
+      "Muitas pessoas admiradas protegem o sono de propósito.",
+      "O tempo que dormes volta como energia e clareza."
+     ],
+     "q": "Sentes-te por vezes culpado por descansar?",
+     "c": "Esta noite, deita-te sem pedires desculpa a ti próprio."
+    },
+    "pt_BR": {
+     "t": "Descansar não é preguiça",
+     "g": "Veja o sono como uma habilidade e um investimento.",
+     "p": [
+      "Descansar bem faz parte de fazer bem as coisas.",
+      "Muitas pessoas admiradas protegem o sono de propósito.",
+      "O tempo que você dorme volta como energia e clareza."
+     ],
+     "q": "Você às vezes se sente culpado por descansar?",
+     "c": "Hoje à noite, deite sem pedir desculpas a si mesmo."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Month one review",
+     "g": "Look back at the basics: cycles, body clock, pressure and diary.",
+     "p": [
+      "Sleep runs in cycles of about 90 minutes.",
+      "Your body clock and sleep pressure work together.",
+      "Light, small steps and your diary are your best tools."
+     ],
+     "q": "Which idea from this month helped you most?",
+     "c": "Tonight, repeat your favourite wind-down step from the month."
+    },
+    "de": {
+     "t": "Rückblick auf Monat eins",
+     "g": "Schau zurück auf die Grundlagen: Zyklen, innere Uhr, Druck und Tagebuch.",
+     "p": [
+      "Schlaf läuft in Zyklen von etwa 90 Minuten.",
+      "Innere Uhr und Schlafdruck arbeiten zusammen.",
+      "Licht, kleine Schritte und dein Tagebuch sind deine besten Werkzeuge."
+     ],
+     "q": "Welche Idee aus diesem Monat hat dir am meisten geholfen?",
+     "c": "Wiederhole heute Abend deinen liebsten Runterfahr-Schritt des Monats."
+    },
+    "es": {
+     "t": "Repaso del primer mes",
+     "g": "Repasa lo básico: ciclos, reloj biológico, presión y diario.",
+     "p": [
+      "El sueño va en ciclos de unos 90 minutos.",
+      "Tu reloj biológico y la presión de sueño trabajan juntos.",
+      "La luz, los pasos pequeños y tu diario son tus mejores herramientas."
+     ],
+     "q": "¿Qué idea de este mes te ayudó más?",
+     "c": "Esta noche repite tu paso de relajación favorito del mes."
+    },
+    "fr": {
+     "t": "Bilan du premier mois",
+     "g": "Reviens sur les bases : cycles, horloge, pression et journal.",
+     "p": [
+      "Le sommeil fonctionne par cycles d'environ 90 minutes.",
+      "Ton horloge et la pression de sommeil travaillent ensemble.",
+      "La lumière, les petits pas et ton journal sont tes meilleurs outils."
+     ],
+     "q": "Quelle idée de ce mois t'a le plus aidé ?",
+     "c": "Ce soir, refais ton geste de détente préféré du mois."
+    },
+    "it": {
+     "t": "Ripasso del primo mese",
+     "g": "Ripassa le basi: cicli, orologio biologico, pressione e diario.",
+     "p": [
+      "Il sonno procede per cicli di circa 90 minuti.",
+      "Il tuo orologio biologico e la pressione del sonno lavorano insieme.",
+      "Luce, piccoli passi e diario sono i tuoi strumenti migliori."
+     ],
+     "q": "Quale idea di questo mese ti è servita di più?",
+     "c": "Stasera ripeti il tuo gesto di relax preferito del mese."
+    },
+    "pt": {
+     "t": "Revisão do primeiro mês",
+     "g": "Revê o essencial: ciclos, relógio biológico, pressão e diário.",
+     "p": [
+      "O sono decorre em ciclos de cerca de 90 minutos.",
+      "O teu relógio biológico e a pressão do sono trabalham juntos.",
+      "A luz, os passos pequenos e o diário são as tuas melhores ferramentas."
+     ],
+     "q": "Que ideia deste mês mais te ajudou?",
+     "c": "Esta noite, repete o teu gesto de descontração preferido do mês."
+    },
+    "pt_BR": {
+     "t": "Revisão do primeiro mês",
+     "g": "Reveja o básico: ciclos, relógio biológico, pressão e diário.",
+     "p": [
+      "O sono acontece em ciclos de cerca de 90 minutos.",
+      "O seu relógio biológico e a pressão do sono trabalham juntos.",
+      "A luz, os passos pequenos e o diário são as suas melhores ferramentas."
+     ],
+     "q": "Que ideia deste mês mais ajudou você?",
+     "c": "Hoje à noite, repita o seu gesto de relaxamento favorito do mês."
+    }
+   }
+  }
+ ]
+}

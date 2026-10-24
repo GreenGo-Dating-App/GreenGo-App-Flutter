@@ -1,0 +1,835 @@
+{
+ "topic": "board_games",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to the world of board games",
+     "g": "Get to know the path ahead: classics, modern games and word games.",
+     "p": [
+      "We start with ancient classics and move to modern strategy games.",
+      "Word games join in along the way to warm up your vocabulary.",
+      "Each day brings one small lesson and a tiny challenge."
+     ],
+     "q": "Which board game do you remember best from your childhood?",
+     "c": "Name one game you would love to play again this week."
+    },
+    "de": {
+     "t": "Willkommen in der Welt der Brettspiele",
+     "g": "Lerne den Weg kennen: Klassiker, moderne Spiele und Wortspiele.",
+     "p": [
+      "Wir beginnen mit uralten Klassikern und gehen zu modernen Strategiespielen über.",
+      "Unterwegs wärmen Wortspiele deinen Wortschatz auf.",
+      "Jeden Tag gibt es eine kleine Lektion und eine winzige Aufgabe."
+     ],
+     "q": "Welches Brettspiel aus deiner Kindheit ist dir am besten im Gedächtnis geblieben?",
+     "c": "Nenne ein Spiel, das du diese Woche gern wieder spielen würdest."
+    },
+    "es": {
+     "t": "Bienvenido al mundo de los juegos de mesa",
+     "g": "Conoce el camino que viene: clásicos, juegos modernos y juegos de palabras.",
+     "p": [
+      "Empezamos con clásicos antiguos y avanzamos hacia la estrategia moderna.",
+      "Por el camino habrá juegos de palabras para calentar tu vocabulario.",
+      "Cada día trae una lección pequeña y un mini reto."
+     ],
+     "q": "¿Qué juego de mesa recuerdas mejor de tu infancia?",
+     "c": "Nombra un juego al que te gustaría volver a jugar esta semana."
+    },
+    "fr": {
+     "t": "Bienvenue dans le monde des jeux de société",
+     "g": "Découvre le parcours : classiques, jeux modernes et jeux de mots.",
+     "p": [
+      "On commence par les classiques anciens, puis on passe à la stratégie moderne.",
+      "En chemin, des jeux de mots échauffent ton vocabulaire.",
+      "Chaque jour apporte une petite leçon et un mini défi."
+     ],
+     "q": "Quel jeu de société te rappelle le plus ton enfance ?",
+     "c": "Cite un jeu auquel tu aimerais rejouer cette semaine."
+    },
+    "it": {
+     "t": "Benvenuto nel mondo dei giochi da tavolo",
+     "g": "Scopri il percorso: classici, giochi moderni e giochi di parole.",
+     "p": [
+      "Si parte dai classici antichi e si arriva alla strategia moderna.",
+      "Lungo la strada i giochi di parole scaldano il tuo vocabolario.",
+      "Ogni giorno una piccola lezione e una mini sfida."
+     ],
+     "q": "Quale gioco da tavolo ricordi meglio della tua infanzia?",
+     "c": "Nomina un gioco a cui vorresti rigiocare questa settimana."
+    },
+    "pt": {
+     "t": "Bem-vindo ao mundo dos jogos de tabuleiro",
+     "g": "Conhece o percurso: clássicos, jogos modernos e jogos de palavras.",
+     "p": [
+      "Começamos com clássicos antigos e passamos à estratégia moderna.",
+      "Pelo caminho, os jogos de palavras aquecem o teu vocabulário.",
+      "Cada dia traz uma pequena lição e um mini desafio."
+     ],
+     "q": "Que jogo de tabuleiro recordas melhor da tua infância?",
+     "c": "Diz um jogo a que gostarias de voltar a jogar esta semana."
+    },
+    "pt_BR": {
+     "t": "Boas-vindas ao mundo dos jogos de tabuleiro",
+     "g": "Conheça o caminho: clássicos, jogos modernos e jogos de palavras.",
+     "p": [
+      "Começamos com clássicos antigos e avançamos para a estratégia moderna.",
+      "No caminho, jogos de palavras aquecem o seu vocabulário.",
+      "Cada dia traz uma pequena lição e um mini desafio."
+     ],
+     "q": "Qual jogo de tabuleiro você lembra melhor da infância?",
+     "c": "Diga um jogo que você gostaria de jogar de novo esta semana."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What makes a game a game",
+     "g": "Spot the basic ingredients every game shares.",
+     "p": [
+      "Every game has rules that tell you what you may and may not do.",
+      "Every game has a goal, so players know what they are aiming for.",
+      "Choices make it fun: you decide, and your decision matters."
+     ],
+     "q": "Think of a game you like: what is its goal, in one sentence?",
+     "c": "Pick any game and name its rule, goal and a key choice."
+    },
+    "de": {
+     "t": "Was ein Spiel zum Spiel macht",
+     "g": "Erkenne die Grundzutaten, die jedes Spiel teilt.",
+     "p": [
+      "Jedes Spiel hat Regeln, die sagen, was erlaubt ist und was nicht.",
+      "Jedes Spiel hat ein Ziel, damit alle wissen, worauf sie hinspielen.",
+      "Entscheidungen machen Spaß: Du wählst, und deine Wahl zählt."
+     ],
+     "q": "Denk an ein Spiel, das du magst: Was ist sein Ziel in einem Satz?",
+     "c": "Wähle ein Spiel und nenne Regel, Ziel und eine wichtige Entscheidung."
+    },
+    "es": {
+     "t": "Qué hace que un juego sea un juego",
+     "g": "Descubre los ingredientes básicos que comparten todos los juegos.",
+     "p": [
+      "Todo juego tiene reglas que dicen qué puedes y qué no puedes hacer.",
+      "Todo juego tiene una meta, para que los jugadores sepan a qué aspiran.",
+      "Las decisiones lo hacen divertido: tú eliges y tu elección importa."
+     ],
+     "q": "Piensa en un juego que te guste: ¿cuál es su meta en una frase?",
+     "c": "Elige un juego y nombra su regla, su meta y una decisión clave."
+    },
+    "fr": {
+     "t": "Ce qui fait un jeu",
+     "g": "Repère les ingrédients de base que partagent tous les jeux.",
+     "p": [
+      "Tout jeu a des règles qui disent ce qui est permis ou non.",
+      "Tout jeu a un but, pour que chacun sache ce qu'il vise.",
+      "Les choix rendent le jeu amusant : tu décides, et ça compte."
+     ],
+     "q": "Pense à un jeu que tu aimes : quel est son but en une phrase ?",
+     "c": "Choisis un jeu et nomme sa règle, son but et un choix clé."
+    },
+    "it": {
+     "t": "Cosa rende un gioco un gioco",
+     "g": "Individua gli ingredienti di base che ogni gioco condivide.",
+     "p": [
+      "Ogni gioco ha regole che dicono cosa puoi e cosa non puoi fare.",
+      "Ogni gioco ha un obiettivo, così si sa a cosa puntare.",
+      "Le scelte lo rendono divertente: decidi tu e la scelta conta."
+     ],
+     "q": "Pensa a un gioco che ti piace: qual è il suo obiettivo in una frase?",
+     "c": "Scegli un gioco e indica regola, obiettivo e una scelta chiave."
+    },
+    "pt": {
+     "t": "O que faz um jogo ser um jogo",
+     "g": "Descobre os ingredientes básicos que todos os jogos partilham.",
+     "p": [
+      "Todo o jogo tem regras que dizem o que podes ou não fazer.",
+      "Todo o jogo tem um objetivo, para se saber ao que se aspira.",
+      "As escolhas tornam-no divertido: decides tu e a escolha conta."
+     ],
+     "q": "Pensa num jogo de que gostes: qual é o objetivo numa frase?",
+     "c": "Escolhe um jogo e diz a regra, o objetivo e uma escolha-chave."
+    },
+    "pt_BR": {
+     "t": "O que faz um jogo ser um jogo",
+     "g": "Descubra os ingredientes básicos que todo jogo tem em comum.",
+     "p": [
+      "Todo jogo tem regras que dizem o que você pode ou não fazer.",
+      "Todo jogo tem um objetivo, para os jogadores saberem aonde chegar.",
+      "As escolhas deixam tudo divertido: você decide e a escolha importa."
+     ],
+     "q": "Pense num jogo de que você gosta: qual é o objetivo em uma frase?",
+     "c": "Escolha um jogo e diga a regra, o objetivo e uma escolha-chave."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The parts of a board game",
+     "g": "Recognize the common components and what each one does.",
+     "p": [
+      "The board is the shared space where the game happens.",
+      "Dice and cards add surprise; tokens and tiles track or build things.",
+      "Knowing each part helps you learn new rules much faster."
+     ],
+     "q": "Which component do you enjoy touching most: dice, cards or tiles?",
+     "c": "Look at any game box and list five components you find."
+    },
+    "de": {
+     "t": "Die Teile eines Brettspiels",
+     "g": "Erkenne die gängigen Bestandteile und ihre Aufgaben.",
+     "p": [
+      "Das Brett ist der gemeinsame Raum, in dem das Spiel stattfindet.",
+      "Würfel und Karten bringen Überraschung; Figuren und Plättchen zeigen oder bauen etwas.",
+      "Wer jeden Teil kennt, lernt neue Regeln viel schneller."
+     ],
+     "q": "Welches Material magst du am liebsten anfassen: Würfel, Karten oder Plättchen?",
+     "c": "Sieh dir eine Spieleschachtel an und liste fünf Bestandteile auf."
+    },
+    "es": {
+     "t": "Las partes de un juego de mesa",
+     "g": "Reconoce los componentes habituales y para qué sirve cada uno.",
+     "p": [
+      "El tablero es el espacio compartido donde ocurre el juego.",
+      "Dados y cartas aportan sorpresa; fichas y losetas marcan o construyen.",
+      "Conocer cada pieza te ayuda a aprender reglas nuevas más rápido."
+     ],
+     "q": "¿Qué componente disfrutas más tocando: dados, cartas o losetas?",
+     "c": "Mira una caja de juego y enumera cinco componentes que veas."
+    },
+    "fr": {
+     "t": "Les éléments d'un jeu de société",
+     "g": "Reconnais les composants courants et leur rôle.",
+     "p": [
+      "Le plateau est l'espace commun où se déroule la partie.",
+      "Dés et cartes apportent la surprise ; pions et tuiles marquent ou construisent.",
+      "Connaître chaque élément aide à apprendre de nouvelles règles plus vite."
+     ],
+     "q": "Quel élément aimes-tu le plus manipuler : dés, cartes ou tuiles ?",
+     "c": "Regarde une boîte de jeu et liste cinq composants que tu y trouves."
+    },
+    "it": {
+     "t": "Le parti di un gioco da tavolo",
+     "g": "Riconosci i componenti più comuni e a cosa servono.",
+     "p": [
+      "Il tabellone è lo spazio condiviso dove si svolge il gioco.",
+      "Dadi e carte portano sorpresa; pedine e tessere segnano o costruiscono.",
+      "Conoscere ogni parte ti aiuta a imparare nuove regole più in fretta."
+     ],
+     "q": "Quale componente ti piace di più toccare: dadi, carte o tessere?",
+     "c": "Guarda una scatola di gioco ed elenca cinque componenti."
+    },
+    "pt": {
+     "t": "As partes de um jogo de tabuleiro",
+     "g": "Reconhece os componentes comuns e para que serve cada um.",
+     "p": [
+      "O tabuleiro é o espaço partilhado onde o jogo acontece.",
+      "Dados e cartas trazem surpresa; peões e peças marcam ou constroem.",
+      "Conhecer cada peça ajuda a aprender regras novas mais depressa."
+     ],
+     "q": "Que componente gostas mais de tocar: dados, cartas ou peças?",
+     "c": "Olha para uma caixa de jogo e lista cinco componentes que vês."
+    },
+    "pt_BR": {
+     "t": "As partes de um jogo de tabuleiro",
+     "g": "Reconheça os componentes comuns e para que serve cada um.",
+     "p": [
+      "O tabuleiro é o espaço compartilhado onde o jogo acontece.",
+      "Dados e cartas trazem surpresa; peões e peças marcam ou constroem.",
+      "Conhecer cada peça ajuda a aprender regras novas bem mais rápido."
+     ],
+     "q": "Qual componente você mais gosta de tocar: dados, cartas ou peças?",
+     "c": "Olhe uma caixa de jogo e liste cinco componentes que encontrar."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your personal game profile",
+     "g": "Discover what you enjoy in the games you already know.",
+     "p": [
+      "Some people love planning, others love luck, chat or speed.",
+      "Notice whether you prefer playing alone, in teams or against others.",
+      "Your profile will help you pick games you will really enjoy."
+     ],
+     "q": "What do you enjoy most in a game: thinking, laughing or competing?",
+     "c": "Write three games you like and one word describing each."
+    },
+    "de": {
+     "t": "Dein persönliches Spielprofil",
+     "g": "Entdecke, was dir an bekannten Spielen gefällt.",
+     "p": [
+      "Manche lieben Planung, andere Glück, Gespräche oder Tempo.",
+      "Achte darauf, ob du lieber allein, im Team oder gegeneinander spielst.",
+      "Dein Profil hilft dir, Spiele zu finden, die dir wirklich gefallen."
+     ],
+     "q": "Was magst du an Spielen am meisten: Nachdenken, Lachen oder Wettkampf?",
+     "c": "Schreibe drei Lieblingsspiele auf, jeweils mit einem passenden Wort."
+    },
+    "es": {
+     "t": "Tu perfil personal de jugador",
+     "g": "Descubre qué disfrutas de los juegos que ya conoces.",
+     "p": [
+      "A unos les encanta planear, a otros la suerte, la charla o la rapidez.",
+      "Fíjate si prefieres jugar solo, en equipo o contra otros.",
+      "Tu perfil te ayudará a elegir juegos que de verdad disfrutes."
+     ],
+     "q": "¿Qué disfrutas más en un juego: pensar, reír o competir?",
+     "c": "Escribe tres juegos que te gusten y una palabra para cada uno."
+    },
+    "fr": {
+     "t": "Ton profil de joueur",
+     "g": "Découvre ce que tu aimes dans les jeux que tu connais déjà.",
+     "p": [
+      "Certains aiment planifier, d'autres la chance, la discussion ou la vitesse.",
+      "Remarque si tu préfères jouer seul, en équipe ou contre les autres.",
+      "Ton profil t'aidera à choisir des jeux qui te plaisent vraiment."
+     ],
+     "q": "Qu'aimes-tu le plus dans un jeu : réfléchir, rire ou rivaliser ?",
+     "c": "Écris trois jeux que tu aimes, avec un mot qui décrit chacun."
+    },
+    "it": {
+     "t": "Il tuo profilo di giocatore",
+     "g": "Scopri cosa ti piace nei giochi che già conosci.",
+     "p": [
+      "C'è chi ama pianificare, chi la fortuna, la chiacchiera o la rapidità.",
+      "Nota se preferisci giocare da solo, in squadra o contro gli altri.",
+      "Il tuo profilo ti aiuterà a scegliere giochi che ti piacciono davvero."
+     ],
+     "q": "Cosa ti piace di più in un gioco: pensare, ridere o competere?",
+     "c": "Scrivi tre giochi che ami e una parola per descrivere ciascuno."
+    },
+    "pt": {
+     "t": "O teu perfil de jogador",
+     "g": "Descobre o que gostas nos jogos que já conheces.",
+     "p": [
+      "Uns adoram planear, outros a sorte, a conversa ou a rapidez.",
+      "Repara se preferes jogar sozinho, em equipa ou contra os outros.",
+      "O teu perfil ajuda-te a escolher jogos de que vais mesmo gostar."
+     ],
+     "q": "O que gostas mais num jogo: pensar, rir ou competir?",
+     "c": "Escreve três jogos de que gostes e uma palavra para cada um."
+    },
+    "pt_BR": {
+     "t": "Seu perfil pessoal de jogador",
+     "g": "Descubra o que você curte nos jogos que já conhece.",
+     "p": [
+      "Uns adoram planejar, outros a sorte, a conversa ou a rapidez.",
+      "Note se você prefere jogar sozinho, em equipe ou contra os outros.",
+      "Seu perfil ajuda a escolher jogos de que você vai gostar de verdade."
+     ],
+     "q": "O que você mais curte num jogo: pensar, rir ou competir?",
+     "c": "Escreva três jogos que você curte e uma palavra para cada um."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Word game: I spy",
+     "g": "Play a simple guessing game with letters and colours.",
+     "p": [
+      "One player says: I spy with my little eye something that starts with B.",
+      "Others guess until someone finds the object; that person spies next.",
+      "Colours work too: I spy something green, to practise colour words."
+     ],
+     "q": "I spy something that starts with the letter C. Can you guess what?",
+     "c": "Play I spy with someone and use at least three colour words."
+    },
+    "de": {
+     "t": "Wortspiel: Ich sehe was, was du nicht siehst",
+     "g": "Spiele ein einfaches Ratespiel mit Buchstaben und Farben.",
+     "p": [
+      "Ein Spieler sagt: Ich sehe was, was du nicht siehst, und es beginnt mit B.",
+      "Die anderen raten, bis jemand den Gegenstand findet und dann selbst dran ist.",
+      "Auch Farben gehen: Ich sehe was Grünes, das übt Farbwörter."
+     ],
+     "q": "Ich sehe was, was du nicht siehst, und es beginnt mit C. Errätst du es?",
+     "c": "Spiele es mit jemandem und nutze mindestens drei Farbwörter."
+    },
+    "es": {
+     "t": "Juego de palabras: Veo veo",
+     "g": "Juega a un juego de adivinar con letras y colores.",
+     "p": [
+      "Un jugador dice: Veo veo, una cosa que empieza por B.",
+      "Los demás adivinan hasta que alguien acierta y es quien dice el siguiente.",
+      "También sirven los colores: veo algo verde, para practicar colores."
+     ],
+     "q": "Veo veo, una cosa que empieza por la letra C. ¿Adivinas cuál es?",
+     "c": "Juega al veo veo con alguien y usa al menos tres colores."
+    },
+    "fr": {
+     "t": "Jeu de mots : Je vois quelque chose",
+     "g": "Joue à un jeu de devinettes simple avec lettres et couleurs.",
+     "p": [
+      "Un joueur dit : je vois quelque chose qui commence par B.",
+      "Les autres devinent jusqu'à ce que l'objet soit trouvé ; le gagnant passe ensuite.",
+      "Les couleurs marchent aussi : je vois du vert, pour pratiquer les couleurs."
+     ],
+     "q": "Je vois quelque chose qui commence par la lettre C. Devines-tu quoi ?",
+     "c": "Joue avec quelqu'un en utilisant au moins trois noms de couleurs."
+    },
+    "it": {
+     "t": "Gioco di parole: Vedo vedo",
+     "g": "Gioca a un semplice indovinello con lettere e colori.",
+     "p": [
+      "Un giocatore dice: vedo qualcosa che inizia con la B.",
+      "Gli altri indovinano finché qualcuno trova l'oggetto e tocca a lui.",
+      "Anche i colori vanno bene: vedo qualcosa di verde, per esercitarti."
+     ],
+     "q": "Vedo qualcosa che inizia con la lettera C. Indovini cosa?",
+     "c": "Gioca con qualcuno usando almeno tre parole di colori."
+    },
+    "pt": {
+     "t": "Jogo de palavras: Vejo vejo",
+     "g": "Joga um jogo simples de adivinhar com letras e cores.",
+     "p": [
+      "Um jogador diz: vejo uma coisa que começa por B.",
+      "Os outros adivinham até alguém acertar e passar a ser quem diz.",
+      "Também servem as cores: vejo algo verde, para treinar as cores."
+     ],
+     "q": "Vejo uma coisa que começa pela letra C. Consegues adivinhar qual?",
+     "c": "Joga com alguém e usa pelo menos três palavras de cores."
+    },
+    "pt_BR": {
+     "t": "Jogo de palavras: Eu vejo",
+     "g": "Jogue um jogo simples de adivinhar com letras e cores.",
+     "p": [
+      "Um jogador diz: eu vejo uma coisa que começa com B.",
+      "Os outros adivinham até alguém acertar e ser o próximo a falar.",
+      "Cores também servem: vejo algo verde, para treinar as cores."
+     ],
+     "q": "Eu vejo uma coisa que começa com a letra C. Adivinha qual é?",
+     "c": "Jogue com alguém e use pelo menos três palavras de cores."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Taking turns",
+     "g": "Understand how turn order keeps games fair and flowing.",
+     "p": [
+      "Many games go clockwise, so the next player is always clear.",
+      "A round is one full cycle in which everyone has had a turn.",
+      "Fair turns mean everyone gets time to think and act."
+     ],
+     "q": "How do you decide who goes first when you play with friends?",
+     "c": "Try a new way to pick the first player, such as youngest first."
+    },
+    "de": {
+     "t": "Reihum spielen",
+     "g": "Verstehe, wie die Zugreihenfolge Spiele fair und flüssig hält.",
+     "p": [
+      "Viele Spiele gehen im Uhrzeigersinn, so ist der Nächste immer klar.",
+      "Eine Runde ist ein voller Durchgang, in dem alle einmal dran waren.",
+      "Faire Züge heißen: Alle haben Zeit zum Denken und Handeln."
+     ],
+     "q": "Wie entscheidet ihr unter Freunden, wer anfängt?",
+     "c": "Probiere eine neue Art, den Startspieler zu wählen, etwa den Jüngsten."
+    },
+    "es": {
+     "t": "Respetar los turnos",
+     "g": "Entiende cómo el orden de turnos mantiene el juego justo y fluido.",
+     "p": [
+      "Muchos juegos van en sentido horario, así el siguiente está claro.",
+      "Una ronda es un ciclo completo en el que todos han jugado.",
+      "Turnos justos significan que todos tienen tiempo para pensar y actuar."
+     ],
+     "q": "¿Cómo decidís quién empieza cuando jugáis con amigos?",
+     "c": "Prueba una forma nueva de elegir al primero, como el más joven."
+    },
+    "fr": {
+     "t": "Chacun son tour",
+     "g": "Comprends comment l'ordre des tours rend le jeu juste et fluide.",
+     "p": [
+      "Beaucoup de jeux tournent dans le sens des aiguilles d'une montre.",
+      "Une manche est un cycle complet où chacun a joué une fois.",
+      "Des tours équitables laissent à chacun le temps de réfléchir et d'agir."
+     ],
+     "q": "Comment décidez-vous qui commence quand vous jouez entre amis ?",
+     "c": "Essaie une nouvelle façon de choisir le premier, comme le plus jeune."
+    },
+    "it": {
+     "t": "Rispettare i turni",
+     "g": "Capisci come l'ordine dei turni rende il gioco equo e fluido.",
+     "p": [
+      "Molti giochi vanno in senso orario, così il prossimo è sempre chiaro.",
+      "Un round è un giro completo in cui tutti hanno giocato.",
+      "Turni equi significano che tutti hanno tempo per pensare e agire."
+     ],
+     "q": "Come decidete chi inizia quando giocate con gli amici?",
+     "c": "Prova un modo nuovo per scegliere il primo, come il più giovane."
+    },
+    "pt": {
+     "t": "Esperar pela sua vez",
+     "g": "Percebe como a ordem das jogadas mantém o jogo justo e fluido.",
+     "p": [
+      "Muitos jogos seguem o sentido dos ponteiros do relógio.",
+      "Uma ronda é um ciclo completo em que todos já jogaram.",
+      "Jogadas justas dão a todos tempo para pensar e agir."
+     ],
+     "q": "Como decidem quem começa quando jogam com amigos?",
+     "c": "Experimenta uma nova forma de escolher o primeiro, como o mais novo."
+    },
+    "pt_BR": {
+     "t": "Respeitar a vez",
+     "g": "Entenda como a ordem das jogadas deixa o jogo justo e fluido.",
+     "p": [
+      "Muitos jogos seguem o sentido horário, e o próximo fica sempre claro.",
+      "Uma rodada é um ciclo completo em que todos já jogaram.",
+      "Vezes justas dão a todos tempo para pensar e agir."
+     ],
+     "q": "Como vocês decidem quem começa quando jogam com amigos?",
+     "c": "Experimente um jeito novo de escolher o primeiro, como o mais novo."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How to read a rulebook",
+     "g": "Find the goal, setup and turn structure quickly.",
+     "p": [
+      "Start with the goal: it tells you what everything else is for.",
+      "Next read the setup, then what a player does on a turn.",
+      "Skim examples and pictures; they explain rules faster than text."
+     ],
+     "q": "What helps you most when learning rules: reading, watching or playing?",
+     "c": "Open one rulebook and find its goal in under one minute."
+    },
+    "de": {
+     "t": "Eine Spielregel lesen",
+     "g": "Finde Ziel, Aufbau und Spielablauf schnell.",
+     "p": [
+      "Beginne mit dem Ziel: Es zeigt, wofür alles andere da ist.",
+      "Lies dann den Aufbau und was man in seinem Zug tut.",
+      "Überfliege Beispiele und Bilder; sie erklären oft schneller als Text."
+     ],
+     "q": "Was hilft dir beim Regeln lernen am meisten: Lesen, Zusehen oder Ausprobieren?",
+     "c": "Öffne eine Spielregel und finde das Ziel in unter einer Minute."
+    },
+    "es": {
+     "t": "Cómo leer un reglamento",
+     "g": "Encuentra rápido la meta, la preparación y la estructura del turno.",
+     "p": [
+      "Empieza por la meta: te dice para qué sirve todo lo demás.",
+      "Luego lee la preparación y qué hace un jugador en su turno.",
+      "Mira ejemplos e imágenes; explican las reglas más rápido que el texto."
+     ],
+     "q": "¿Qué te ayuda más a aprender reglas: leer, ver o probar?",
+     "c": "Abre un reglamento y encuentra su meta en menos de un minuto."
+    },
+    "fr": {
+     "t": "Lire une règle du jeu",
+     "g": "Trouve vite le but, la mise en place et le déroulement d'un tour.",
+     "p": [
+      "Commence par le but : il explique à quoi sert tout le reste.",
+      "Lis ensuite la mise en place, puis ce que fait un joueur à son tour.",
+      "Parcours les exemples et images ; ils expliquent plus vite que le texte."
+     ],
+     "q": "Qu'est-ce qui t'aide le plus à apprendre : lire, regarder ou essayer ?",
+     "c": "Ouvre une règle et trouve son but en moins d'une minute."
+    },
+    "it": {
+     "t": "Come leggere un regolamento",
+     "g": "Trova in fretta obiettivo, preparazione e struttura del turno.",
+     "p": [
+      "Parti dall'obiettivo: ti dice a cosa serve tutto il resto.",
+      "Poi leggi la preparazione e cosa fa un giocatore nel suo turno.",
+      "Guarda esempi e immagini: spiegano le regole più in fretta del testo."
+     ],
+     "q": "Cosa ti aiuta di più a imparare le regole: leggere, guardare o provare?",
+     "c": "Apri un regolamento e trova l'obiettivo in meno di un minuto."
+    },
+    "pt": {
+     "t": "Como ler um livro de regras",
+     "g": "Encontra depressa o objetivo, a preparação e a estrutura da jogada.",
+     "p": [
+      "Começa pelo objetivo: diz-te para que serve tudo o resto.",
+      "Depois lê a preparação e o que um jogador faz na sua vez.",
+      "Vê exemplos e imagens; explicam as regras mais depressa que o texto."
+     ],
+     "q": "O que mais te ajuda a aprender regras: ler, ver ou experimentar?",
+     "c": "Abre um livro de regras e encontra o objetivo em menos de um minuto."
+    },
+    "pt_BR": {
+     "t": "Como ler um manual de regras",
+     "g": "Encontre rápido o objetivo, a preparação e a estrutura da rodada.",
+     "p": [
+      "Comece pelo objetivo: ele diz para que serve todo o resto.",
+      "Depois leia a preparação e o que o jogador faz na sua vez.",
+      "Veja exemplos e imagens; explicam as regras mais rápido que o texto."
+     ],
+     "q": "O que mais ajuda você a aprender regras: ler, ver ou testar?",
+     "c": "Abra um manual de regras e ache o objetivo em menos de um minuto."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Setting up a game",
+     "g": "Organize components so play can start smoothly.",
+     "p": [
+      "Sort pieces by type first so you can find them quickly.",
+      "Follow the setup diagram in the rulebook, step by step.",
+      "Share the job: one person deals cards, another places tokens."
+     ],
+     "q": "Do you like setting up games, or do you prefer someone else to do it?",
+     "c": "Time a setup of a game you own and try to make it faster."
+    },
+    "de": {
+     "t": "Ein Spiel aufbauen",
+     "g": "Ordne die Teile, damit das Spiel reibungslos starten kann.",
+     "p": [
+      "Sortiere die Teile zuerst nach Art, damit du sie schnell findest.",
+      "Folge dem Aufbauplan in der Anleitung Schritt für Schritt.",
+      "Teilt die Arbeit: Einer gibt Karten aus, ein anderer platziert Figuren."
+     ],
+     "q": "Baust du Spiele gern auf, oder macht das lieber jemand anderes?",
+     "c": "Stoppe den Aufbau eines Spiels und versuche, schneller zu werden."
+    },
+    "es": {
+     "t": "Preparar un juego",
+     "g": "Organiza los componentes para empezar a jugar sin problemas.",
+     "p": [
+      "Ordena primero las piezas por tipo para encontrarlas rápido.",
+      "Sigue el esquema de preparación del reglamento, paso a paso.",
+      "Repartid el trabajo: uno reparte cartas y otro coloca fichas."
+     ],
+     "q": "¿Te gusta preparar los juegos o prefieres que lo haga otro?",
+     "c": "Cronometra la preparación de un juego tuyo e intenta hacerla más rápida."
+    },
+    "fr": {
+     "t": "Mettre en place un jeu",
+     "g": "Organise les composants pour démarrer la partie sans accroc.",
+     "p": [
+      "Trie d'abord les pièces par type pour les retrouver vite.",
+      "Suis le schéma de mise en place de la règle, étape par étape.",
+      "Partagez la tâche : l'un distribue les cartes, l'autre place les pions."
+     ],
+     "q": "Aimes-tu installer les jeux ou préfères-tu que quelqu'un d'autre le fasse ?",
+     "c": "Chronomètre la mise en place d'un de tes jeux et essaie d'aller plus vite."
+    },
+    "it": {
+     "t": "Preparare un gioco",
+     "g": "Organizza i componenti per iniziare a giocare senza intoppi.",
+     "p": [
+      "Prima ordina i pezzi per tipo, così li trovi in fretta.",
+      "Segui lo schema di preparazione del regolamento, passo dopo passo.",
+      "Dividetevi i compiti: uno distribuisce le carte, un altro mette le pedine."
+     ],
+     "q": "Ti piace preparare i giochi o preferisci che lo faccia un altro?",
+     "c": "Cronometra la preparazione di un tuo gioco e prova a farla più veloce."
+    },
+    "pt": {
+     "t": "Preparar um jogo",
+     "g": "Organiza os componentes para o jogo começar sem sobressaltos.",
+     "p": [
+      "Separa primeiro as peças por tipo para as encontrares depressa.",
+      "Segue o esquema de preparação do livro de regras, passo a passo.",
+      "Dividam o trabalho: um dá as cartas, outro coloca as peças."
+     ],
+     "q": "Gostas de preparar jogos ou preferes que seja outro a fazê-lo?",
+     "c": "Cronometra a preparação de um jogo teu e tenta fazê-la mais depressa."
+    },
+    "pt_BR": {
+     "t": "Preparar um jogo",
+     "g": "Organize os componentes para o jogo começar sem tropeços.",
+     "p": [
+      "Separe primeiro as peças por tipo para achá-las rápido.",
+      "Siga o esquema de preparação do manual, passo a passo.",
+      "Dividam o trabalho: um distribui as cartas, outro coloca as peças."
+     ],
+     "q": "Você gosta de preparar jogos ou prefere que outra pessoa faça?",
+     "c": "Cronometre a preparação de um jogo seu e tente fazê-la mais rápido."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Winning conditions",
+     "g": "Learn the main ways a game can be won.",
+     "p": [
+      "Some games count points, and the highest total wins.",
+      "Others are races: the first to reach the finish line wins.",
+      "Some end by capture or blocking, or when a goal is completed together."
+     ],
+     "q": "Which kind of win feels best to you: points, a race or a capture?",
+     "c": "Pick three games and name how each one is won."
+    },
+    "de": {
+     "t": "Siegbedingungen",
+     "g": "Lerne die wichtigsten Wege kennen, ein Spiel zu gewinnen.",
+     "p": [
+      "Manche Spiele zählen Punkte, und die höchste Summe gewinnt.",
+      "Andere sind Rennen: Wer zuerst im Ziel ist, gewinnt.",
+      "Manche enden durch Schlagen oder Blockieren oder wenn alle ein Ziel erreichen."
+     ],
+     "q": "Welche Art Sieg fühlt sich für dich am besten an: Punkte, Rennen oder Schlagen?",
+     "c": "Wähle drei Spiele und nenne, wie man jeweils gewinnt."
+    },
+    "es": {
+     "t": "Condiciones de victoria",
+     "g": "Aprende las principales formas de ganar un juego.",
+     "p": [
+      "Algunos juegos cuentan puntos y gana quien más suma.",
+      "Otros son carreras: gana quien llega primero a la meta.",
+      "Otros terminan por captura o bloqueo, o cuando se logra una meta común."
+     ],
+     "q": "¿Qué victoria te gusta más: por puntos, carrera o captura?",
+     "c": "Elige tres juegos y di cómo se gana cada uno."
+    },
+    "fr": {
+     "t": "Conditions de victoire",
+     "g": "Apprends les principales façons de gagner une partie.",
+     "p": [
+      "Certains jeux comptent des points : le total le plus haut gagne.",
+      "D'autres sont des courses : le premier à l'arrivée l'emporte.",
+      "D'autres finissent par capture, blocage ou objectif atteint ensemble."
+     ],
+     "q": "Quelle victoire préfères-tu : aux points, à la course ou par capture ?",
+     "c": "Choisis trois jeux et dis comment on gagne dans chacun."
+    },
+    "it": {
+     "t": "Condizioni di vittoria",
+     "g": "Impara i principali modi per vincere un gioco.",
+     "p": [
+      "Alcuni giochi contano i punti e vince il totale più alto.",
+      "Altri sono corse: vince chi arriva per primo al traguardo.",
+      "Altri finiscono per cattura o blocco, o quando un obiettivo è raggiunto insieme."
+     ],
+     "q": "Quale vittoria preferisci: a punti, in corsa o per cattura?",
+     "c": "Scegli tre giochi e di' come si vince in ciascuno."
+    },
+    "pt": {
+     "t": "Condições de vitória",
+     "g": "Aprende as principais formas de ganhar um jogo.",
+     "p": [
+      "Alguns jogos contam pontos e ganha quem tiver mais.",
+      "Outros são corridas: ganha quem chegar primeiro à meta.",
+      "Outros acabam por captura ou bloqueio, ou quando um objetivo comum é cumprido."
+     ],
+     "q": "Que vitória preferes: por pontos, em corrida ou por captura?",
+     "c": "Escolhe três jogos e diz como se ganha em cada um."
+    },
+    "pt_BR": {
+     "t": "Condições de vitória",
+     "g": "Aprenda as principais formas de ganhar um jogo.",
+     "p": [
+      "Alguns jogos contam pontos e ganha quem somar mais.",
+      "Outros são corridas: ganha quem chegar primeiro à linha de chegada.",
+      "Outros terminam por captura ou bloqueio, ou quando um objetivo comum é cumprido."
+     ],
+     "q": "Qual vitória você prefere: por pontos, em corrida ou por captura?",
+     "c": "Escolha três jogos e diga como se ganha em cada um."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Word game: Twenty questions",
+     "g": "Guess a hidden thing using only yes or no questions.",
+     "p": [
+      "One player thinks of an object, animal or place and keeps it secret.",
+      "Others ask yes or no questions, up to twenty in total.",
+      "Start broad: Is it alive? Is it bigger than a chair? Then narrow down."
+     ],
+     "q": "I am thinking of something. What is your first yes or no question?",
+     "c": "Play twenty questions and try to guess in under ten questions."
+    },
+    "de": {
+     "t": "Wortspiel: Zwanzig Fragen",
+     "g": "Errate etwas Verstecktes nur mit Ja-Nein-Fragen.",
+     "p": [
+      "Ein Spieler denkt sich einen Gegenstand, ein Tier oder Ort aus und schweigt.",
+      "Die anderen stellen Ja-Nein-Fragen, höchstens zwanzig.",
+      "Beginne weit: Lebt es? Ist es größer als ein Stuhl? Dann grenze ein."
+     ],
+     "q": "Ich denke an etwas. Wie lautet deine erste Ja-Nein-Frage?",
+     "c": "Spiele Zwanzig Fragen und rate in weniger als zehn Fragen."
+    },
+    "es": {
+     "t": "Juego de palabras: Veinte preguntas",
+     "g": "Adivina algo oculto usando solo preguntas de sí o no.",
+     "p": [
+      "Un jugador piensa en un objeto, animal o lugar y lo guarda en secreto.",
+      "Los demás hacen preguntas de sí o no, hasta veinte en total.",
+      "Empieza amplio: ¿Está vivo? ¿Es mayor que una silla? Luego acota."
+     ],
+     "q": "Estoy pensando en algo. ¿Cuál es tu primera pregunta de sí o no?",
+     "c": "Juega a veinte preguntas e intenta acertar en menos de diez."
+    },
+    "fr": {
+     "t": "Jeu de mots : Vingt questions",
+     "g": "Devine une chose cachée avec seulement des questions oui ou non.",
+     "p": [
+      "Un joueur pense à un objet, un animal ou un lieu et garde le secret.",
+      "Les autres posent des questions oui ou non, vingt au maximum.",
+      "Commence large : est-ce vivant ? plus grand qu'une chaise ? Puis affine."
+     ],
+     "q": "Je pense à quelque chose. Quelle est ta première question oui ou non ?",
+     "c": "Joue à vingt questions et essaie de trouver en moins de dix."
+    },
+    "it": {
+     "t": "Gioco di parole: Venti domande",
+     "g": "Indovina una cosa nascosta usando solo domande sì o no.",
+     "p": [
+      "Un giocatore pensa a un oggetto, animale o luogo e lo tiene segreto.",
+      "Gli altri fanno domande sì o no, al massimo venti.",
+      "Parti in largo: è vivo? è più grande di una sedia? Poi restringi."
+     ],
+     "q": "Sto pensando a qualcosa. Qual è la tua prima domanda sì o no?",
+     "c": "Gioca a venti domande e prova a indovinare in meno di dieci."
+    },
+    "pt": {
+     "t": "Jogo de palavras: Vinte perguntas",
+     "g": "Adivinha algo escondido usando só perguntas de sim ou não.",
+     "p": [
+      "Um jogador pensa num objeto, animal ou lugar e guarda segredo.",
+      "Os outros fazem perguntas de sim ou não, no máximo vinte.",
+      "Começa amplo: está vivo? É maior que uma cadeira? Depois afunila."
+     ],
+     "q": "Estou a pensar em algo. Qual é a tua primeira pergunta de sim ou não?",
+     "c": "Joga às vinte perguntas e tenta acertar em menos de dez."
+    },
+    "pt_BR": {
+     "t": "Jogo de palavras: Vinte perguntas",
+     "g": "Adivinhe algo escondido usando só perguntas de sim ou não.",
+     "p": [
+      "Um jogador pensa em um objeto, animal ou lugar e guarda segredo.",
+      "Os outros fazem perguntas de sim ou não, no máximo vinte.",
+      "Comece amplo: é vivo? É maior que uma cadeira? Depois afunile."
+     ],
+     "q": "Estou pensando em algo. Qual é a sua primeira pergunta de sim ou não?",
+     "c": "Jogue vinte perguntas e tente acertar em menos de dez."
+    }
+   }
+  }
+ ]
+}

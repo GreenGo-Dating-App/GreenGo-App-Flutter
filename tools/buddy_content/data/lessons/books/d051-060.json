@@ -1,0 +1,835 @@
+{
+ "topic": "books",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cookbooks as reading",
+     "g": "Enjoy recipes, food stories and culture inside cookbooks.",
+     "p": [
+      "Cookbooks teach dishes, but many also share memories, places and traditions.",
+      "Mrs Beeton's household book from 1861 and Claudia Roden's Middle Eastern writing show food as culture.",
+      "Reading a cookbook like a story can inspire a meal you would never have planned."
+     ],
+     "q": "What dish do you remember from your family kitchen?",
+     "c": "Browse one recipe as a story, then note one ingredient you want to try."
+    },
+    "de": {
+     "t": "Kochbücher als Lektüre",
+     "g": "Genieße Rezepte, Geschichten und Kultur in Kochbüchern.",
+     "p": [
+      "Kochbücher lehren Gerichte, doch viele erzählen auch von Erinnerungen, Orten und Traditionen.",
+      "Mrs Beetons Haushaltsbuch von 1861 und Claudia Rodens Bücher über die Küche des Nahen Ostens zeigen Essen als Kultur.",
+      "Ein Kochbuch wie eine Geschichte zu lesen, kann ein nie geplantes Essen inspirieren."
+     ],
+     "q": "Welches Gericht aus der Küche deiner Familie ist dir in Erinnerung?",
+     "c": "Lies ein Rezept wie eine Geschichte und notiere eine Zutat, die du probieren willst."
+    },
+    "es": {
+     "t": "Libros de cocina para leer",
+     "g": "Disfruta de recetas, historias de comida y cultura en los libros de cocina.",
+     "p": [
+      "Los libros de cocina enseñan platos, pero muchos comparten recuerdos, lugares y tradiciones.",
+      "El libro de hogar de Mrs Beeton de 1861 y los textos de Claudia Roden sobre Oriente Medio muestran la comida como cultura.",
+      "Leer un libro de cocina como un relato puede inspirar una comida que no habías planeado."
+     ],
+     "q": "¿Qué plato recuerdas de la cocina de tu familia?",
+     "c": "Lee una receta como una historia y anota un ingrediente que quieras probar."
+    },
+    "fr": {
+     "t": "Les livres de cuisine à lire",
+     "g": "Savoure recettes, histoires de table et culture dans les livres de cuisine.",
+     "p": [
+      "Les livres de cuisine enseignent des plats, mais beaucoup partagent aussi souvenirs, lieux et traditions.",
+      "Le livre de maison de Mrs Beeton de 1861 et les écrits de Claudia Roden sur le Moyen-Orient montrent la cuisine comme culture.",
+      "Lire un livre de cuisine comme un récit peut inspirer un repas imprévu."
+     ],
+     "q": "Quel plat de la cuisine de ta famille te reste en mémoire ?",
+     "c": "Lis une recette comme une histoire et note un ingrédient que tu veux essayer."
+    },
+    "it": {
+     "t": "I libri di cucina da leggere",
+     "g": "Goditi ricette, storie di cibo e cultura nei libri di cucina.",
+     "p": [
+      "I libri di cucina insegnano piatti, ma molti condividono anche ricordi, luoghi e tradizioni.",
+      "Il manuale domestico di Mrs Beeton del 1861 e gli scritti di Claudia Roden sul Medio Oriente mostrano il cibo come cultura.",
+      "Leggere un libro di cucina come un racconto può ispirare un pasto imprevisto."
+     ],
+     "q": "Quale piatto ricordi dalla cucina della tua famiglia?",
+     "c": "Leggi una ricetta come una storia e annota un ingrediente che vuoi provare."
+    },
+    "pt": {
+     "t": "Livros de culinária para ler",
+     "g": "Aprecia receitas, histórias de comida e cultura nos livros de culinária.",
+     "p": [
+      "Os livros de culinária ensinam pratos, mas muitos partilham também memórias, lugares e tradições.",
+      "O livro doméstico de Mrs Beeton de 1861 e os textos de Claudia Roden sobre o Médio Oriente mostram a comida como cultura.",
+      "Ler um livro de culinária como uma história pode inspirar uma refeição imprevista."
+     ],
+     "q": "Que prato recordas da cozinha da tua família?",
+     "c": "Lê uma receita como uma história e anota um ingrediente que queiras experimentar."
+    },
+    "pt_BR": {
+     "t": "Livros de culinária para ler",
+     "g": "Curta receitas, histórias de comida e cultura nos livros de culinária.",
+     "p": [
+      "Livros de culinária ensinam pratos, mas muitos compartilham também memórias, lugares e tradições.",
+      "O livro doméstico de Mrs Beeton de 1861 e os textos de Claudia Roden sobre o Oriente Médio mostram a comida como cultura.",
+      "Ler um livro de culinária como uma história pode inspirar uma refeição inesperada."
+     ],
+     "q": "Que prato você lembra da cozinha da sua família?",
+     "c": "Leia uma receita como uma história e anote um ingrediente que queira experimentar."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Nature writing",
+     "g": "Explore books about landscapes, animals and the natural world.",
+     "p": [
+      "Nature writing blends careful observation with personal reflection.",
+      "Henry David Thoreau's Walden, from 1854, describes two years by a pond.",
+      "Gilbert White's The Natural History of Selborne, from 1789, is a gentle village classic."
+     ],
+     "q": "What natural place would you like a book to describe for you?",
+     "c": "Spend five minutes outdoors and write three observations in a nature writer's style."
+    },
+    "de": {
+     "t": "Naturliteratur",
+     "g": "Entdecke Bücher über Landschaften, Tiere und die Natur.",
+     "p": [
+      "Naturliteratur verbindet genaue Beobachtung mit persönlicher Betrachtung.",
+      "Henry David Thoreaus Walden von 1854 beschreibt zwei Jahre an einem Teich.",
+      "Gilbert Whites The Natural History of Selborne von 1789 ist ein sanfter Dorfklassiker."
+     ],
+     "q": "Welchen Naturort soll ein Buch dir beschreiben?",
+     "c": "Verbringe fünf Minuten draußen und schreibe drei Beobachtungen im Stil eines Naturautors auf."
+    },
+    "es": {
+     "t": "Literatura de naturaleza",
+     "g": "Explora libros sobre paisajes, animales y el mundo natural.",
+     "p": [
+      "La literatura de naturaleza une la observación atenta con la reflexión personal.",
+      "Walden, de Henry David Thoreau, de 1854, describe dos años junto a un estanque.",
+      "The Natural History of Selborne, de Gilbert White, de 1789, es un suave clásico rural."
+     ],
+     "q": "¿Qué lugar natural te gustaría que un libro describiera?",
+     "c": "Pasa cinco minutos al aire libre y escribe tres observaciones al estilo de un autor de naturaleza."
+    },
+    "fr": {
+     "t": "L'écriture de la nature",
+     "g": "Explore des livres sur les paysages, les animaux et la nature.",
+     "p": [
+      "L'écriture de la nature mêle observation attentive et réflexion personnelle.",
+      "Walden de Henry David Thoreau, de 1854, décrit deux années au bord d'un étang.",
+      "The Natural History of Selborne de Gilbert White, de 1789, est un doux classique de village."
+     ],
+     "q": "Quel lieu naturel aimerais-tu qu'un livre te décrive ?",
+     "c": "Passe cinq minutes dehors et écris trois observations dans le style d'un auteur nature."
+    },
+    "it": {
+     "t": "La scrittura sulla natura",
+     "g": "Esplora libri su paesaggi, animali e mondo naturale.",
+     "p": [
+      "La scrittura sulla natura unisce osservazione attenta e riflessione personale.",
+      "Walden di Henry David Thoreau, del 1854, descrive due anni accanto a uno stagno.",
+      "The Natural History of Selborne di Gilbert White, del 1789, è un dolce classico di villaggio."
+     ],
+     "q": "Quale luogo naturale vorresti che un libro ti descrivesse?",
+     "c": "Passa cinque minuti all'aperto e scrivi tre osservazioni nello stile di uno scrittore di natura."
+    },
+    "pt": {
+     "t": "A literatura de natureza",
+     "g": "Explora livros sobre paisagens, animais e o mundo natural.",
+     "p": [
+      "A literatura de natureza une observação atenta e reflexão pessoal.",
+      "Walden, de Henry David Thoreau, de 1854, descreve dois anos junto a um lago.",
+      "The Natural History of Selborne, de Gilbert White, de 1789, é um suave clássico de aldeia."
+     ],
+     "q": "Que lugar natural gostarias que um livro te descrevesse?",
+     "c": "Passa cinco minutos ao ar livre e escreve três observações ao estilo de um autor da natureza."
+    },
+    "pt_BR": {
+     "t": "A literatura de natureza",
+     "g": "Explore livros sobre paisagens, animais e o mundo natural.",
+     "p": [
+      "A literatura de natureza une observação atenta e reflexão pessoal.",
+      "Walden, de Henry David Thoreau, de 1854, descreve dois anos ao lado de um lago.",
+      "The Natural History of Selborne, de Gilbert White, de 1789, é um suave clássico de vilarejo."
+     ],
+     "q": "Que lugar natural você gostaria que um livro descrevesse?",
+     "c": "Passe cinco minutos ao ar livre e escreva três observações no estilo de um autor da natureza."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Trying a new genre",
+     "g": "Step outside your comfort zone with a short, friendly title.",
+     "p": [
+      "Reading only one genre is lovely, but a new one can surprise you.",
+      "Start with a short book or story so the risk stays small.",
+      "Ask a friend or librarian for an easy entry point into the new genre."
+     ],
+     "q": "Which genre have you never tried, and what makes you curious about it?",
+     "c": "Pick a short book in a genre you never read and try ten pages."
+    },
+    "de": {
+     "t": "Ein neues Genre ausprobieren",
+     "g": "Verlasse deine Komfortzone mit einem kurzen, freundlichen Titel.",
+     "p": [
+      "Nur ein Genre zu lesen ist schön, aber ein neues kann dich überraschen.",
+      "Beginne mit einem kurzen Buch oder einer Geschichte, damit das Risiko klein bleibt.",
+      "Frage Freunde oder Bibliothekare nach einem leichten Einstieg ins neue Genre."
+     ],
+     "q": "Welches Genre hast du nie probiert, und was macht dich neugierig darauf?",
+     "c": "Wähle ein kurzes Buch in einem Genre, das du nie liest, und probiere zehn Seiten."
+    },
+    "es": {
+     "t": "Probar un género nuevo",
+     "g": "Sal de tu zona de confort con un título corto y amable.",
+     "p": [
+      "Leer un solo género es agradable, pero uno nuevo puede sorprenderte.",
+      "Empieza con un libro o relato corto para que el riesgo sea pequeño.",
+      "Pide a un amigo o bibliotecario una entrada fácil al nuevo género."
+     ],
+     "q": "¿Qué género nunca has probado y qué te da curiosidad de él?",
+     "c": "Elige un libro corto de un género que nunca lees y prueba diez páginas."
+    },
+    "fr": {
+     "t": "Essayer un nouveau genre",
+     "g": "Sors de ta zone de confort avec un titre court et accessible.",
+     "p": [
+      "Ne lire qu'un genre est agréable, mais un nouveau peut te surprendre.",
+      "Commence par un livre ou un récit court pour que le risque reste petit.",
+      "Demande à un ami ou à un bibliothécaire une porte d'entrée facile dans ce genre."
+     ],
+     "q": "Quel genre n'as-tu jamais essayé, et qu'est-ce qui te rend curieux ?",
+     "c": "Choisis un court livre d'un genre que tu ne lis jamais et essaie dix pages."
+    },
+    "it": {
+     "t": "Provare un nuovo genere",
+     "g": "Esci dalla tua zona di comfort con un titolo breve e amichevole.",
+     "p": [
+      "Leggere un solo genere è bello, ma uno nuovo può sorprenderti.",
+      "Parti da un libro o racconto breve, così il rischio resta piccolo.",
+      "Chiedi a un amico o a un bibliotecario un ingresso facile nel nuovo genere."
+     ],
+     "q": "Quale genere non hai mai provato e cosa ti incuriosisce?",
+     "c": "Scegli un libro breve di un genere che non leggi mai e prova dieci pagine."
+    },
+    "pt": {
+     "t": "Experimentar um novo género",
+     "g": "Sai da zona de conforto com um título curto e simpático.",
+     "p": [
+      "Ler só um género é agradável, mas um novo pode surpreender-te.",
+      "Começa por um livro ou conto curto para que o risco seja pequeno.",
+      "Pede a um amigo ou bibliotecário uma entrada fácil no novo género."
+     ],
+     "q": "Que género nunca experimentaste e o que te desperta curiosidade?",
+     "c": "Escolhe um livro curto de um género que nunca lês e tenta dez páginas."
+    },
+    "pt_BR": {
+     "t": "Experimentar um novo gênero",
+     "g": "Saia da zona de conforto com um título curto e simpático.",
+     "p": [
+      "Ler só um gênero é gostoso, mas um novo pode surpreender você.",
+      "Comece por um livro ou conto curto para que o risco seja pequeno.",
+      "Peça a um amigo ou bibliotecário uma entrada fácil no novo gênero."
+     ],
+     "q": "Que gênero você nunca experimentou e o que desperta sua curiosidade?",
+     "c": "Escolha um livro curto de um gênero que nunca lê e tente dez páginas."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Book series: why we binge",
+     "g": "Understand how series hook readers across many books.",
+     "p": [
+      "Series let you spend more time with characters and worlds you love.",
+      "Cliffhangers and open questions pull you from one book into the next.",
+      "Examples include Narnia, Harry Potter and the Moomin books by Tove Jansson."
+     ],
+     "q": "Which series would you most like to start or finish?",
+     "c": "Check how many books your favourite series has and where to begin."
+    },
+    "de": {
+     "t": "Buchreihen: warum wir sie verschlingen",
+     "g": "Verstehe, wie Reihen Leser über viele Bücher fesseln.",
+     "p": [
+      "Reihen lassen dich mehr Zeit mit geliebten Figuren und Welten verbringen.",
+      "Cliffhanger und offene Fragen ziehen dich von einem Band in den nächsten.",
+      "Beispiele sind Narnia, Harry Potter und die Mumin-Bücher von Tove Jansson."
+     ],
+     "q": "Welche Reihe würdest du am liebsten beginnen oder beenden?",
+     "c": "Prüfe, wie viele Bände deine Lieblingsreihe hat und wo man beginnt."
+    },
+    "es": {
+     "t": "Sagas de libros: por qué las devoramos",
+     "g": "Entiende cómo las sagas enganchan al lector a lo largo de muchos libros.",
+     "p": [
+      "Las sagas te dejan pasar más tiempo con personajes y mundos que amas.",
+      "Los finales abiertos y las preguntas pendientes te llevan de un libro al siguiente.",
+      "Ejemplos son Narnia, Harry Potter y los libros de los Mumin de Tove Jansson."
+     ],
+     "q": "¿Qué saga te gustaría más empezar o terminar?",
+     "c": "Comprueba cuántos libros tiene tu saga favorita y por cuál empezar."
+    },
+    "fr": {
+     "t": "Les séries de livres : pourquoi on les dévore",
+     "g": "Comprends comment les séries captivent les lecteurs sur plusieurs livres.",
+     "p": [
+      "Les séries permettent de passer plus de temps avec des personnages et mondes aimés.",
+      "Les fins en suspens et les questions ouvertes t'entraînent d'un livre au suivant.",
+      "Parmi les exemples : Narnia, Harry Potter et les Moomins de Tove Jansson."
+     ],
+     "q": "Quelle série aimerais-tu le plus commencer ou finir ?",
+     "c": "Vérifie combien de livres compte ta série préférée et par où commencer."
+    },
+    "it": {
+     "t": "Le serie di libri: perché le divoriamo",
+     "g": "Capisci come le serie tengono incollati i lettori su molti libri.",
+     "p": [
+      "Le serie ti fanno passare più tempo con personaggi e mondi che ami.",
+      "Finali sospesi e domande aperte ti portano da un libro al successivo.",
+      "Esempi sono Narnia, Harry Potter e i libri dei Mumin di Tove Jansson."
+     ],
+     "q": "Quale serie ti piacerebbe di più iniziare o finire?",
+     "c": "Controlla quanti libri ha la tua serie preferita e da dove iniziare."
+    },
+    "pt": {
+     "t": "As séries de livros: porque as devoramos",
+     "g": "Percebe como as séries prendem os leitores ao longo de muitos livros.",
+     "p": [
+      "As séries deixam-te passar mais tempo com personagens e mundos que amas.",
+      "Finais em suspenso e perguntas em aberto levam-te de um livro para o seguinte.",
+      "Exemplos são Nárnia, Harry Potter e os livros dos Moomins de Tove Jansson."
+     ],
+     "q": "Que série gostarias mais de começar ou acabar?",
+     "c": "Vê quantos livros tem a tua série favorita e por onde começar."
+    },
+    "pt_BR": {
+     "t": "As séries de livros: por que as devoramos",
+     "g": "Entenda como as séries prendem leitores ao longo de muitos livros.",
+     "p": [
+      "As séries deixam você passar mais tempo com personagens e mundos que ama.",
+      "Finais em suspenso e perguntas em aberto levam você de um livro ao seguinte.",
+      "Exemplos são Nárnia, Harry Potter e os livros dos Moomins de Tove Jansson."
+     ],
+     "q": "Que série você mais gostaria de começar ou terminar?",
+     "c": "Veja quantos livros tem sua série favorita e por onde começar."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Standalone vs series",
+     "g": "Weigh the pleasures of a complete story against a long saga.",
+     "p": [
+      "A standalone book gives you a full story in one go, with a satisfying end.",
+      "A series offers depth and long friendships with characters, but needs commitment.",
+      "Many readers alternate: a saga, then a quick standalone as a palate cleanser."
+     ],
+     "q": "Are you in the mood for a saga or a single story right now?",
+     "c": "Choose your next read by mood and note whether it is standalone or series."
+    },
+    "de": {
+     "t": "Einzelband oder Reihe",
+     "g": "Wäge die Freude an einer abgeschlossenen Geschichte gegen eine lange Saga ab.",
+     "p": [
+      "Ein Einzelband bietet eine ganze Geschichte auf einmal mit befriedigendem Ende.",
+      "Eine Reihe bietet Tiefe und lange Freundschaft mit Figuren, verlangt aber Ausdauer.",
+      "Viele wechseln ab: eine Saga, dann ein kurzer Einzelband zum Durchatmen."
+     ],
+     "q": "Hast du gerade Lust auf eine Saga oder eine einzelne Geschichte?",
+     "c": "Wähle dein nächstes Buch nach Stimmung und notiere, ob Einzelband oder Reihe."
+    },
+    "es": {
+     "t": "Libro único o saga",
+     "g": "Sopesa el placer de una historia completa frente a una larga saga.",
+     "p": [
+      "Un libro único da una historia entera de una vez, con un final satisfactorio.",
+      "Una saga ofrece profundidad y amistad duradera con los personajes, pero exige compromiso.",
+      "Muchos alternan: una saga y luego un libro breve para despejar la mente."
+     ],
+     "q": "¿Te apetece ahora una saga o una historia única?",
+     "c": "Elige tu próxima lectura según tu ánimo y anota si es independiente o saga."
+    },
+    "fr": {
+     "t": "Livre isolé ou série",
+     "g": "Compare le plaisir d'une histoire complète et celui d'une longue saga.",
+     "p": [
+      "Un livre isolé offre une histoire entière d'un coup, avec une fin satisfaisante.",
+      "Une série offre profondeur et longue amitié avec les personnages, mais demande de l'engagement.",
+      "Beaucoup alternent : une saga, puis un court livre isolé pour respirer."
+     ],
+     "q": "As-tu envie d'une saga ou d'une histoire unique en ce moment ?",
+     "c": "Choisis ta prochaine lecture selon ton humeur et note si c'est un tome unique ou une série."
+    },
+    "it": {
+     "t": "Libro singolo o serie",
+     "g": "Confronta il piacere di una storia completa con quello di una lunga saga.",
+     "p": [
+      "Un libro singolo offre una storia intera in una volta, con un finale appagante.",
+      "Una serie offre profondità e lunga amicizia con i personaggi, ma richiede impegno.",
+      "Molti alternano: una saga e poi un breve libro singolo per respirare."
+     ],
+     "q": "Hai voglia di una saga o di una storia singola in questo momento?",
+     "c": "Scegli la prossima lettura in base all'umore e annota se è singolo o serie."
+    },
+    "pt": {
+     "t": "Livro único ou série",
+     "g": "Pesa o prazer de uma história completa contra uma longa saga.",
+     "p": [
+      "Um livro único dá uma história inteira de uma vez, com um final satisfatório.",
+      "Uma série dá profundidade e longa amizade com as personagens, mas exige compromisso.",
+      "Muitos alternam: uma saga e depois um livro curto para arejar."
+     ],
+     "q": "Apetece-te agora uma saga ou uma história única?",
+     "c": "Escolhe a tua próxima leitura pelo humor e anota se é único ou série."
+    },
+    "pt_BR": {
+     "t": "Livro único ou série",
+     "g": "Pese o prazer de uma história completa contra uma longa saga.",
+     "p": [
+      "Um livro único dá uma história inteira de uma vez, com um final satisfatório.",
+      "Uma série dá profundidade e longa amizade com os personagens, mas exige compromisso.",
+      "Muitos alternam: uma saga e depois um livro curto para arejar a cabeça."
+     ],
+     "q": "Você está com vontade de uma saga ou de uma história única agora?",
+     "c": "Escolha a próxima leitura pelo humor e anote se é único ou série."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Spoilers and how to avoid them",
+     "g": "Enjoy surprises and talk about books without ruining them.",
+     "p": [
+      "A spoiler reveals a twist or ending before you reach it yourself.",
+      "Avoid it by skipping reviews' last paragraphs and covering back-cover hints.",
+      "When chatting, say how a book made you feel rather than what happens."
+     ],
+     "q": "Do you like knowing the ending first, or never at all?",
+     "c": "Describe a book you love in two sentences without revealing any plot twist."
+    },
+    "de": {
+     "t": "Spoiler und wie man sie vermeidet",
+     "g": "Genieße Überraschungen und sprich über Bücher, ohne sie zu verderben.",
+     "p": [
+      "Ein Spoiler verrät eine Wendung oder das Ende, bevor du selbst dort bist.",
+      "Vermeide sie, indem du Schlussabsätze von Rezensionen überspringst.",
+      "Sag im Gespräch lieber, wie ein Buch dich fühlen ließ, statt was passiert."
+     ],
+     "q": "Willst du das Ende vorher wissen oder auf keinen Fall?",
+     "c": "Beschreibe ein Lieblingsbuch in zwei Sätzen, ohne eine Wendung zu verraten."
+    },
+    "es": {
+     "t": "Spoilers y cómo evitarlos",
+     "g": "Disfruta de las sorpresas y habla de libros sin arruinarlos.",
+     "p": [
+      "Un spoiler revela un giro o el final antes de que llegues tú.",
+      "Evítalo saltándote los últimos párrafos de las reseñas.",
+      "Al charlar, di cómo te hizo sentir un libro en vez de lo que ocurre."
+     ],
+     "q": "¿Te gusta saber el final antes o nunca?",
+     "c": "Describe un libro que ames en dos frases sin revelar ningún giro."
+    },
+    "fr": {
+     "t": "Les spoilers et comment les éviter",
+     "g": "Savoure les surprises et parle des livres sans les gâcher.",
+     "p": [
+      "Un spoiler révèle un rebondissement ou la fin avant que tu y arrives.",
+      "Évite-les en sautant les derniers paragraphes des critiques.",
+      "En discutant, dis ce que le livre t'a fait ressentir plutôt que ce qui arrive."
+     ],
+     "q": "Aimes-tu connaître la fin d'abord, ou jamais ?",
+     "c": "Décris un livre que tu aimes en deux phrases sans révéler de rebondissement."
+    },
+    "it": {
+     "t": "Spoiler e come evitarli",
+     "g": "Goditi le sorprese e parla dei libri senza rovinarli.",
+     "p": [
+      "Uno spoiler rivela una svolta o il finale prima che tu ci arrivi.",
+      "Evitali saltando gli ultimi paragrafi delle recensioni.",
+      "Parlando, di' come ti ha fatto sentire un libro invece di cosa succede."
+     ],
+     "q": "Ti piace conoscere il finale prima, o mai?",
+     "c": "Descrivi un libro che ami in due frasi senza rivelare colpi di scena."
+    },
+    "pt": {
+     "t": "Spoilers e como evitá-los",
+     "g": "Goza as surpresas e fala de livros sem os estragar.",
+     "p": [
+      "Um spoiler revela uma reviravolta ou o final antes de lá chegares.",
+      "Evita-os saltando os últimos parágrafos das críticas.",
+      "Ao conversar, diz como o livro te fez sentir em vez do que acontece."
+     ],
+     "q": "Gostas de saber o final antes, ou nunca?",
+     "c": "Descreve um livro de que gostes em duas frases sem revelar reviravoltas."
+    },
+    "pt_BR": {
+     "t": "Spoilers e como evitá-los",
+     "g": "Curta as surpresas e fale de livros sem estragá-los.",
+     "p": [
+      "Um spoiler revela uma reviravolta ou o final antes de você chegar lá.",
+      "Evite-os pulando os últimos parágrafos das resenhas.",
+      "Ao conversar, diga como o livro fez você sentir em vez do que acontece."
+     ],
+     "q": "Você gosta de saber o final antes, ou nunca?",
+     "c": "Descreva um livro de que gosta em duas frases sem revelar reviravoltas."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading ratings and reviews",
+     "g": "Use online reviews without being misled.",
+     "p": [
+      "Star averages are a rough guide: tastes differ and ratings can be skewed.",
+      "Read a few middling reviews; they often explain strengths and weaknesses best.",
+      "Look for reviewers whose taste matches yours and trust them more."
+     ],
+     "q": "Do reviews help you choose, or do you prefer to just try a book?",
+     "c": "Compare one book's best and worst reviews and note what they disagree on."
+    },
+    "de": {
+     "t": "Bewertungen und Rezensionen lesen",
+     "g": "Nutze Online-Rezensionen, ohne dich in die Irre führen zu lassen.",
+     "p": [
+      "Sterne-Durchschnitte sind nur ein Anhaltspunkt: Geschmäcker sind verschieden.",
+      "Lies ein paar mittlere Rezensionen; sie erklären Stärken und Schwächen oft am besten.",
+      "Suche Rezensenten mit ähnlichem Geschmack und vertraue ihnen mehr."
+     ],
+     "q": "Helfen dir Rezensionen bei der Auswahl, oder probierst du lieber einfach?",
+     "c": "Vergleiche die beste und schlechteste Rezension eines Buches und notiere den Streitpunkt."
+    },
+    "es": {
+     "t": "Leer valoraciones y reseñas",
+     "g": "Usa las reseñas en línea sin dejarte engañar.",
+     "p": [
+      "Las estrellas promedio son una guía aproximada: los gustos difieren.",
+      "Lee algunas reseñas intermedias; suelen explicar mejor virtudes y defectos.",
+      "Busca reseñistas con gustos parecidos a los tuyos y confía más en ellos."
+     ],
+     "q": "¿Te ayudan las reseñas a elegir o prefieres probar un libro sin más?",
+     "c": "Compara la mejor y la peor reseña de un libro y anota en qué discrepan."
+    },
+    "fr": {
+     "t": "Lire notes et avis",
+     "g": "Utilise les avis en ligne sans te laisser tromper.",
+     "p": [
+      "La moyenne d'étoiles n'est qu'un repère : les goûts diffèrent.",
+      "Lis quelques avis mitigés ; ils expliquent souvent le mieux forces et faiblesses.",
+      "Cherche des lecteurs au goût proche du tien et fais-leur davantage confiance."
+     ],
+     "q": "Les avis t'aident-ils à choisir, ou préfères-tu simplement essayer ?",
+     "c": "Compare le meilleur et le pire avis d'un livre et note leur désaccord."
+    },
+    "it": {
+     "t": "Leggere voti e recensioni",
+     "g": "Usa le recensioni online senza lasciarti ingannare.",
+     "p": [
+      "La media delle stelle è una guida approssimativa: i gusti differiscono.",
+      "Leggi qualche recensione intermedia: spesso spiega meglio pregi e difetti.",
+      "Cerca recensori con gusti simili ai tuoi e fidati di più di loro."
+     ],
+     "q": "Le recensioni ti aiutano a scegliere o preferisci provare direttamente?",
+     "c": "Confronta la migliore e la peggiore recensione di un libro e annota il disaccordo."
+    },
+    "pt": {
+     "t": "Ler classificações e críticas",
+     "g": "Usa as críticas online sem te deixares enganar.",
+     "p": [
+      "A média de estrelas é apenas um guia: os gostos diferem.",
+      "Lê algumas críticas medianas; costumam explicar melhor virtudes e defeitos.",
+      "Procura críticos com gostos parecidos com os teus e confia mais neles."
+     ],
+     "q": "As críticas ajudam-te a escolher ou preferes simplesmente experimentar?",
+     "c": "Compara a melhor e a pior crítica de um livro e anota em que discordam."
+    },
+    "pt_BR": {
+     "t": "Ler notas e resenhas",
+     "g": "Use as resenhas online sem se deixar enganar.",
+     "p": [
+      "A média de estrelas é só um guia: os gostos variam.",
+      "Leia algumas resenhas medianas; costumam explicar melhor virtudes e defeitos.",
+      "Procure resenhistas com gostos parecidos com os seus e confie mais neles."
+     ],
+     "q": "As resenhas ajudam você a escolher ou prefere simplesmente experimentar?",
+     "c": "Compare a melhor e a pior resenha de um livro e anote em que elas discordam."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing your first mini review",
+     "g": "Use a simple formula to share your opinion.",
+     "p": [
+      "Start with what the book is about in one sentence, with no spoilers.",
+      "Then say what worked for you: characters, style, ideas or pace.",
+      "Finish with who might enjoy it, and add a star rating if you like."
+     ],
+     "q": "Which book would you love to recommend to a friend right now?",
+     "c": "Write a three-sentence review of the last book you finished."
+    },
+    "de": {
+     "t": "Deine erste Mini-Rezension schreiben",
+     "g": "Nutze eine einfache Formel, um deine Meinung zu teilen.",
+     "p": [
+      "Beginne mit einem Satz darüber, worum es geht, ohne Spoiler.",
+      "Sage dann, was für dich funktioniert hat: Figuren, Stil, Ideen oder Tempo.",
+      "Schließe mit dem, wem es gefallen könnte, gern mit Sternen."
+     ],
+     "q": "Welches Buch würdest du einem Freund jetzt am liebsten empfehlen?",
+     "c": "Schreibe eine Rezension in drei Sätzen zum zuletzt beendeten Buch."
+    },
+    "es": {
+     "t": "Escribe tu primera mini reseña",
+     "g": "Usa una fórmula sencilla para compartir tu opinión.",
+     "p": [
+      "Empieza con una frase sobre de qué trata el libro, sin spoilers.",
+      "Luego di qué te funcionó: personajes, estilo, ideas o ritmo.",
+      "Termina con a quién podría gustarle y añade estrellas si quieres."
+     ],
+     "q": "¿Qué libro te gustaría recomendar ahora mismo a un amigo?",
+     "c": "Escribe una reseña de tres frases sobre el último libro que terminaste."
+    },
+    "fr": {
+     "t": "Écrire ta première mini-critique",
+     "g": "Utilise une formule simple pour partager ton avis.",
+     "p": [
+      "Commence par une phrase sur le sujet du livre, sans spoiler.",
+      "Dis ensuite ce qui a marché pour toi : personnages, style, idées ou rythme.",
+      "Termine par à qui il pourrait plaire, avec des étoiles si tu veux."
+     ],
+     "q": "Quel livre aimerais-tu recommander à un ami maintenant ?",
+     "c": "Écris une critique en trois phrases du dernier livre que tu as fini."
+    },
+    "it": {
+     "t": "Scrivere la tua prima mini recensione",
+     "g": "Usa una formula semplice per condividere la tua opinione.",
+     "p": [
+      "Inizia con una frase su di cosa parla il libro, senza spoiler.",
+      "Poi di' cosa ha funzionato per te: personaggi, stile, idee o ritmo.",
+      "Finisci con a chi potrebbe piacere e aggiungi stelle se vuoi."
+     ],
+     "q": "Quale libro ti piacerebbe consigliare subito a un amico?",
+     "c": "Scrivi una recensione di tre frasi sull'ultimo libro che hai finito."
+    },
+    "pt": {
+     "t": "Escrever a tua primeira mini crítica",
+     "g": "Usa uma fórmula simples para partilhar a tua opinião.",
+     "p": [
+      "Começa com uma frase sobre o assunto do livro, sem spoilers.",
+      "Depois diz o que funcionou para ti: personagens, estilo, ideias ou ritmo.",
+      "Termina com quem poderá gostar e acrescenta estrelas se quiseres."
+     ],
+     "q": "Que livro gostarias de recomendar agora a um amigo?",
+     "c": "Escreve uma crítica de três frases sobre o último livro que acabaste."
+    },
+    "pt_BR": {
+     "t": "Escrever sua primeira mini resenha",
+     "g": "Use uma fórmula simples para compartilhar sua opinião.",
+     "p": [
+      "Comece com uma frase sobre o assunto do livro, sem spoilers.",
+      "Depois diga o que funcionou para você: personagens, estilo, ideias ou ritmo.",
+      "Termine com quem pode gostar e adicione estrelas se quiser."
+     ],
+     "q": "Que livro você gostaria de recomendar agora a um amigo?",
+     "c": "Escreva uma resenha de três frases sobre o último livro que terminou."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Inspiring reading quotes",
+     "g": "Enjoy famous lines about books and what they say about readers.",
+     "p": [
+      "Francis Bacon wrote in 1625: Reading maketh a full man.",
+      "Emily Dickinson wrote: There is no Frigate like a Book to take us Lands away.",
+      "Both lines say that books feed the mind and carry us to other places."
+     ],
+     "q": "Which line about books or reading do you like best?",
+     "c": "Choose a favourite line about reading and write it where you will see it."
+    },
+    "de": {
+     "t": "Inspirierende Zitate übers Lesen",
+     "g": "Genieße berühmte Zeilen über Bücher und was sie über Leser sagen.",
+     "p": [
+      "Francis Bacon schrieb 1625: Lesen macht einen vollen Menschen.",
+      "Emily Dickinson schrieb: Keine Fregatte gleicht einem Buch, das uns in ferne Länder trägt.",
+      "Beide Zeilen sagen, dass Bücher den Geist nähren und uns an andere Orte tragen."
+     ],
+     "q": "Welche Zeile über Bücher oder Lesen gefällt dir am besten?",
+     "c": "Wähle eine Lieblingszeile über das Lesen und schreibe sie dorthin, wo du sie siehst."
+    },
+    "es": {
+     "t": "Citas inspiradoras sobre la lectura",
+     "g": "Disfruta de frases famosas sobre los libros y lo que dicen de los lectores.",
+     "p": [
+      "Francis Bacon escribió en 1625: La lectura hace al hombre completo.",
+      "Emily Dickinson escribió: No hay fragata como un libro para llevarnos a tierras lejanas.",
+      "Ambas frases dicen que los libros alimentan la mente y nos llevan a otros lugares."
+     ],
+     "q": "¿Qué frase sobre los libros o la lectura te gusta más?",
+     "c": "Elige una frase favorita sobre la lectura y escríbela donde la veas."
+    },
+    "fr": {
+     "t": "Citations inspirantes sur la lecture",
+     "g": "Savoure des phrases célèbres sur les livres et ce qu'elles disent des lecteurs.",
+     "p": [
+      "Francis Bacon écrivait en 1625 : La lecture fait l'homme complet.",
+      "Emily Dickinson écrivait : Nulle frégate n'égale un livre pour nous emporter vers des terres lointaines.",
+      "Ces deux phrases disent que les livres nourrissent l'esprit et nous emmènent ailleurs."
+     ],
+     "q": "Quelle phrase sur les livres ou la lecture préfères-tu ?",
+     "c": "Choisis une phrase préférée sur la lecture et écris-la là où tu la verras."
+    },
+    "it": {
+     "t": "Citazioni ispiratrici sulla lettura",
+     "g": "Goditi frasi famose sui libri e cosa dicono dei lettori.",
+     "p": [
+      "Francis Bacon scrisse nel 1625: La lettura fa l'uomo completo.",
+      "Emily Dickinson scrisse: Nessuna fregata è come un libro per portarci in terre lontane.",
+      "Entrambe dicono che i libri nutrono la mente e ci portano altrove."
+     ],
+     "q": "Quale frase sui libri o sulla lettura ti piace di più?",
+     "c": "Scegli una frase preferita sulla lettura e scrivila dove la vedrai."
+    },
+    "pt": {
+     "t": "Citações inspiradoras sobre a leitura",
+     "g": "Aprecia frases famosas sobre livros e o que dizem dos leitores.",
+     "p": [
+      "Francis Bacon escreveu em 1625: A leitura faz o homem completo.",
+      "Emily Dickinson escreveu: Nenhuma fragata é como um livro para nos levar a terras distantes.",
+      "Ambas dizem que os livros alimentam a mente e nos levam a outros lugares."
+     ],
+     "q": "Que frase sobre livros ou leitura mais te agrada?",
+     "c": "Escolhe uma frase favorita sobre leitura e escreve-a onde a possas ver."
+    },
+    "pt_BR": {
+     "t": "Citações inspiradoras sobre a leitura",
+     "g": "Curta frases famosas sobre livros e o que dizem dos leitores.",
+     "p": [
+      "Francis Bacon escreveu em 1625: A leitura faz o homem completo.",
+      "Emily Dickinson escreveu: Nenhuma fragata é como um livro para nos levar a terras distantes.",
+      "Ambas dizem que os livros alimentam a mente e nos levam a outros lugares."
+     ],
+     "q": "Que frase sobre livros ou leitura mais agrada você?",
+     "c": "Escolha uma frase favorita sobre leitura e escreva onde possa vê-la."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: genres and formats",
+     "g": "Recap genres and nonfiction types from days 31 to 59.",
+     "p": [
+      "Fiction genres: mystery, science fiction, fantasy, historical, adventure and humour.",
+      "Nonfiction types: memoir, biography, science, history, travel, essays and cookbooks.",
+      "Smart choosing: try new genres, watch for spoilers and read reviews wisely."
+     ],
+     "q": "Which genre surprised you most in these weeks?",
+     "c": "Pick one genre you enjoyed and one you want to try, and write both down."
+    },
+    "de": {
+     "t": "Rückblick: Genres und Formate",
+     "g": "Wiederhole Genres und Sachbuchtypen der Tage 31 bis 59.",
+     "p": [
+      "Belletristik-Genres: Krimi, Science-Fiction, Fantasy, Historisches, Abenteuer und Humor.",
+      "Sachbuchtypen: Memoiren, Biografie, Wissenschaft, Geschichte, Reise, Essays und Kochbücher.",
+      "Klug wählen: neue Genres probieren, Spoiler meiden und Rezensionen klug lesen."
+     ],
+     "q": "Welches Genre hat dich in diesen Wochen am meisten überrascht?",
+     "c": "Wähle ein Genre, das dir gefiel, und eines, das du probieren willst, und notiere beide."
+    },
+    "es": {
+     "t": "Repaso: géneros y formatos",
+     "g": "Repasa géneros y tipos de no ficción de los días 31 a 59.",
+     "p": [
+      "Géneros de ficción: misterio, ciencia ficción, fantasía, histórica, aventuras y humor.",
+      "Tipos de no ficción: memorias, biografía, ciencia, historia, viajes, ensayos y cocina.",
+      "Elegir con cabeza: prueba géneros nuevos, evita spoilers y lee reseñas con criterio."
+     ],
+     "q": "¿Qué género te ha sorprendido más en estas semanas?",
+     "c": "Elige un género que disfrutaste y uno que quieras probar, y anota ambos."
+    },
+    "fr": {
+     "t": "Bilan : genres et formats",
+     "g": "Reviens sur les genres et types de non-fiction des jours 31 à 59.",
+     "p": [
+      "Genres de fiction : polar, science-fiction, fantasy, historique, aventure et humour.",
+      "Types de non-fiction : mémoires, biographie, science, histoire, voyage, essais et cuisine.",
+      "Bien choisir : essayer de nouveaux genres, éviter les spoilers et lire les avis avec recul."
+     ],
+     "q": "Quel genre t'a le plus surpris ces dernières semaines ?",
+     "c": "Choisis un genre que tu as aimé et un à essayer, et note les deux."
+    },
+    "it": {
+     "t": "Ripasso: generi e formati",
+     "g": "Ripassa generi e tipi di saggistica dei giorni da 31 a 59.",
+     "p": [
+      "Generi di narrativa: giallo, fantascienza, fantasy, storico, avventura e umorismo.",
+      "Tipi di saggistica: memoir, biografia, scienza, storia, viaggi, saggi e cucina.",
+      "Scelta intelligente: prova nuovi generi, evita gli spoiler e leggi le recensioni con criterio."
+     ],
+     "q": "Quale genere ti ha sorpreso di più in queste settimane?",
+     "c": "Scegli un genere che ti è piaciuto e uno da provare, e annota entrambi."
+    },
+    "pt": {
+     "t": "Revisão: géneros e formatos",
+     "g": "Revê géneros e tipos de não ficção dos dias 31 a 59.",
+     "p": [
+      "Géneros de ficção: policial, ficção científica, fantasia, histórico, aventuras e humor.",
+      "Tipos de não ficção: memórias, biografia, ciência, história, viagens, ensaios e culinária.",
+      "Escolher bem: experimenta novos géneros, evita spoilers e lê críticas com critério."
+     ],
+     "q": "Que género mais te surpreendeu nestas semanas?",
+     "c": "Escolhe um género de que gostaste e um que queiras experimentar, e anota ambos."
+    },
+    "pt_BR": {
+     "t": "Revisão: gêneros e formatos",
+     "g": "Reveja gêneros e tipos de não ficção dos dias 31 a 59.",
+     "p": [
+      "Gêneros de ficção: policial, ficção científica, fantasia, histórico, aventura e humor.",
+      "Tipos de não ficção: memórias, biografia, ciência, história, viagens, ensaios e culinária.",
+      "Escolher bem: experimente novos gêneros, evite spoilers e leia resenhas com critério."
+     ],
+     "q": "Que gênero mais surpreendeu você nessas semanas?",
+     "c": "Escolha um gênero de que gostou e um que queira experimentar, e anote os dois."
+    }
+   }
+  }
+ ]
+}

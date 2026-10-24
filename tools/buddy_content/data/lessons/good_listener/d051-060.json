@@ -1,0 +1,835 @@
+{
+ "topic": "good_listener",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A place you would love to visit",
+     "g": "Describe a dream destination and what draws you to it.",
+     "p": [
+      "Dream trips reveal what people long for: calm, adventure, culture.",
+      "Listening for the 'why' behind a place tells you about the person.",
+      "Listeners can ask what they would do on the first day."
+     ],
+     "q": "Which place would you love to visit, and what draws you there?",
+     "c": "Ask someone about a dream destination and what they would do first."
+    },
+    "de": {
+     "t": "Ein Ort, den du gern besuchen würdest",
+     "g": "Beschreibe ein Traumziel und was dich daran anzieht.",
+     "p": [
+      "Traumreisen zeigen, wonach Menschen sich sehnen: Ruhe, Abenteuer, Kultur.",
+      "Auf das 'Warum' hinter einem Ort zu hören verrät viel über den Menschen.",
+      "Zuhörer können fragen, was du am ersten Tag tun würdest."
+     ],
+     "q": "Welchen Ort würdest du gern besuchen, und was zieht dich dorthin?",
+     "c": "Frag jemanden nach einem Traumziel und was er zuerst tun würde."
+    },
+    "es": {
+     "t": "Un lugar que te encantaría visitar",
+     "g": "Describe un destino soñado y qué te atrae de él.",
+     "p": [
+      "Los viajes soñados revelan lo que la gente anhela: calma, aventura, cultura.",
+      "Escuchar el 'por qué' de un lugar dice mucho de la persona.",
+      "Quien escucha puede preguntar qué harías el primer día."
+     ],
+     "q": "¿Qué lugar te encantaría visitar y qué te atrae de él?",
+     "c": "Pregunta a alguien por un destino soñado y qué haría primero."
+    },
+    "fr": {
+     "t": "Un endroit que tu aimerais visiter",
+     "g": "Décris une destination de rêve et ce qui t'attire.",
+     "p": [
+      "Les voyages rêvés révèlent ce que l'on désire : calme, aventure, culture.",
+      "Écouter le 'pourquoi' d'un lieu en dit long sur la personne.",
+      "Celui qui écoute peut demander ce que tu ferais le premier jour."
+     ],
+     "q": "Quel endroit aimerais-tu visiter, et qu'est-ce qui t'y attire ?",
+     "c": "Demande à quelqu'un sa destination de rêve et ce qu'il ferait en premier."
+    },
+    "it": {
+     "t": "Un posto che ameresti visitare",
+     "g": "Descrivi una destinazione da sogno e cosa ti attira.",
+     "p": [
+      "I viaggi sognati rivelano ciò che si desidera: calma, avventura, cultura.",
+      "Ascoltare il 'perché' di un luogo dice molto della persona.",
+      "Chi ascolta può chiedere cosa faresti il primo giorno."
+     ],
+     "q": "Quale posto ameresti visitare, e cosa ti attira?",
+     "c": "Chiedi a qualcuno di una destinazione da sogno e cosa farebbe per prima cosa."
+    },
+    "pt": {
+     "t": "Um lugar que adorarias visitar",
+     "g": "Descreve um destino de sonho e o que te atrai nele.",
+     "p": [
+      "As viagens sonhadas revelam o que se deseja: calma, aventura, cultura.",
+      "Ouvir o 'porquê' de um lugar diz muito sobre a pessoa.",
+      "Quem ouve pode perguntar o que farias no primeiro dia."
+     ],
+     "q": "Que lugar adorarias visitar e o que te atrai nele?",
+     "c": "Pergunta a alguém por um destino de sonho e o que faria primeiro."
+    },
+    "pt_BR": {
+     "t": "Um lugar que você adoraria visitar",
+     "g": "Descreva um destino dos sonhos e o que atrai você nele.",
+     "p": [
+      "Viagens sonhadas revelam o que se deseja: calma, aventura, cultura.",
+      "Ouvir o 'porquê' de um lugar diz muito sobre a pessoa.",
+      "Quem ouve pode perguntar o que você faria no primeiro dia."
+     ],
+     "q": "Que lugar você adoraria visitar e o que atrai você nele?",
+     "c": "Pergunte a alguém sobre um destino dos sonhos e o que faria primeiro."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Keeping the focus on them",
+     "g": "Resist the urge to turn every story into your own story.",
+     "p": [
+      "'Same thing happened to me!' can pull the spotlight away.",
+      "Share briefly if it helps, then hand the focus back.",
+      "Ask 'And what happened next for you?'"
+     ],
+     "q": "When do you tend to answer a story with your own?",
+     "c": "Respond to one story today without mentioning your own experience."
+    },
+    "de": {
+     "t": "Den Fokus bei ihnen lassen",
+     "g": "Widerstehe dem Drang, jede Geschichte zu deiner eigenen zu machen.",
+     "p": [
+      "'Mir ist dasselbe passiert!' kann den Scheinwerfer wegziehen.",
+      "Teile kurz, wenn es hilft, und gib den Fokus dann zurück.",
+      "Frag: 'Und wie ging es bei dir weiter?'"
+     ],
+     "q": "Wann antwortest du auf eine Geschichte gern mit deiner eigenen?",
+     "c": "Antworte heute auf eine Geschichte, ohne deine eigene Erfahrung zu erwähnen."
+    },
+    "es": {
+     "t": "Mantener el foco en ellos",
+     "g": "Resiste el impulso de convertir cada historia en la tuya.",
+     "p": [
+      "'¡A mí me pasó lo mismo!' puede quitar el foco a quien habla.",
+      "Comparte brevemente si ayuda y devuelve el foco.",
+      "Pregunta '¿Y qué pasó después en tu caso?'"
+     ],
+     "q": "¿Cuándo sueles responder a un relato con el tuyo?",
+     "c": "Responde hoy a un relato sin mencionar tu propia experiencia."
+    },
+    "fr": {
+     "t": "Garder le focus sur l'autre",
+     "g": "Résiste à l'envie de transformer chaque histoire en la tienne.",
+     "p": [
+      "'Pareil pour moi !' peut détourner l'attention de celui qui parle.",
+      "Partage brièvement si cela aide, puis rends la parole.",
+      "Demande 'Et ensuite, que s'est-il passé pour toi ?'"
+     ],
+     "q": "Quand réponds-tu volontiers à une histoire par la tienne ?",
+     "c": "Réponds aujourd'hui à une histoire sans mentionner ta propre expérience."
+    },
+    "it": {
+     "t": "Tenere il focus su di loro",
+     "g": "Resisti alla voglia di trasformare ogni storia nella tua.",
+     "p": [
+      "'Anche a me è successo!' può togliere il centro della scena a chi parla.",
+      "Condividi brevemente se aiuta, poi restituisci il focus.",
+      "Chiedi 'E poi cos'è successo per te?'"
+     ],
+     "q": "Quando tendi a rispondere a una storia con la tua?",
+     "c": "Rispondi oggi a una storia senza citare la tua esperienza."
+    },
+    "pt": {
+     "t": "Manter o foco neles",
+     "g": "Resiste ao impulso de transformar cada história na tua.",
+     "p": [
+      "'Aconteceu-me o mesmo!' pode tirar o foco a quem fala.",
+      "Partilha brevemente se ajudar e devolve o foco.",
+      "Pergunta 'E o que aconteceu a seguir contigo?'"
+     ],
+     "q": "Quando costumas responder a uma história com a tua?",
+     "c": "Responde hoje a uma história sem mencionar a tua experiência."
+    },
+    "pt_BR": {
+     "t": "Manter o foco neles",
+     "g": "Resista à vontade de transformar cada história na sua.",
+     "p": [
+      "'Aconteceu o mesmo comigo!' pode tirar o foco de quem fala.",
+      "Compartilhe brevemente se ajudar e devolva o foco.",
+      "Pergunte 'E o que aconteceu depois com você?'"
+     ],
+     "q": "Quando você costuma responder a uma história com a sua?",
+     "c": "Responda hoje a uma história sem mencionar a sua experiência."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pets and animals in your life",
+     "g": "Share stories about animals you know, love or would like to have.",
+     "p": [
+      "Animal stories are warm, funny and easy to tell.",
+      "Names, habits and little quirks make a pet come alive.",
+      "Listeners can ask for the funniest thing the animal ever did."
+     ],
+     "q": "Which animal has a story in your life?",
+     "c": "Ask someone about an animal in their life and its quirkiest habit."
+    },
+    "de": {
+     "t": "Haustiere und Tiere in deinem Leben",
+     "g": "Erzähle von Tieren, die du kennst, liebst oder gern hättest.",
+     "p": [
+      "Tiergeschichten sind warm, lustig und leicht zu erzählen.",
+      "Namen, Gewohnheiten und kleine Macken erwecken ein Tier zum Leben.",
+      "Zuhörer können nach dem lustigsten Streich des Tieres fragen."
+     ],
+     "q": "Welches Tier hat eine Geschichte in deinem Leben?",
+     "c": "Frag jemanden nach einem Tier in seinem Leben und seiner komischsten Angewohnheit."
+    },
+    "es": {
+     "t": "Mascotas y animales en tu vida",
+     "g": "Cuenta historias de animales que conoces, quieres o te gustaría tener.",
+     "p": [
+      "Las historias de animales son cálidas, divertidas y fáciles de contar.",
+      "Nombres, costumbres y manías hacen que una mascota cobre vida.",
+      "Quien escucha puede pedir lo más gracioso que hizo el animal."
+     ],
+     "q": "¿Qué animal tiene una historia en tu vida?",
+     "c": "Pregunta a alguien por un animal de su vida y su manía más curiosa."
+    },
+    "fr": {
+     "t": "Les animaux dans ta vie",
+     "g": "Raconte des histoires d'animaux que tu connais, aimes ou voudrais avoir.",
+     "p": [
+      "Les histoires d'animaux sont chaleureuses, drôles et faciles à raconter.",
+      "Noms, habitudes et petites manies donnent vie à un animal.",
+      "Celui qui écoute peut demander la chose la plus drôle que l'animal ait faite."
+     ],
+     "q": "Quel animal a une histoire dans ta vie ?",
+     "c": "Demande à quelqu'un un animal de sa vie et sa manie la plus drôle."
+    },
+    "it": {
+     "t": "Animali nella tua vita",
+     "g": "Racconta storie di animali che conosci, ami o vorresti avere.",
+     "p": [
+      "Le storie di animali sono calde, divertenti e facili da raccontare.",
+      "Nomi, abitudini e piccole manie fanno vivere un animale.",
+      "Chi ascolta può chiedere la cosa più buffa che l'animale abbia fatto."
+     ],
+     "q": "Quale animale ha una storia nella tua vita?",
+     "c": "Chiedi a qualcuno di un animale della sua vita e della sua mania più buffa."
+    },
+    "pt": {
+     "t": "Animais na tua vida",
+     "g": "Conta histórias de animais que conheces, amas ou gostarias de ter.",
+     "p": [
+      "As histórias de animais são calorosas, divertidas e fáceis de contar.",
+      "Nomes, hábitos e pequenas manias dão vida a um animal.",
+      "Quem ouve pode perguntar a coisa mais engraçada que o animal fez."
+     ],
+     "q": "Que animal tem uma história na tua vida?",
+     "c": "Pergunta a alguém por um animal da sua vida e a mania mais engraçada."
+    },
+    "pt_BR": {
+     "t": "Animais na sua vida",
+     "g": "Conte histórias de animais que você conhece, ama ou gostaria de ter.",
+     "p": [
+      "Histórias de animais são calorosas, divertidas e fáceis de contar.",
+      "Nomes, hábitos e pequenas manias dão vida a um animal.",
+      "Quem ouve pode perguntar a coisa mais engraçada que o animal já fez."
+     ],
+     "q": "Que animal tem uma história na sua vida?",
+     "c": "Pergunte a alguém sobre um animal da vida dele e a mania mais engraçada."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gentle curiosity about cultures",
+     "g": "Ask respectful questions about traditions different from your own.",
+     "p": [
+      "Cultural questions work best when they come from real interest.",
+      "Start with 'I'd love to learn about...' instead of 'Why do you...?'",
+      "Everyone is an expert on their own life, not a whole culture."
+     ],
+     "q": "What tradition from another culture would you like to learn about?",
+     "c": "Ask someone about a tradition in their family or region, kindly."
+    },
+    "de": {
+     "t": "Sanfte Neugier auf Kulturen",
+     "g": "Stelle respektvolle Fragen zu Traditionen, die sich von deinen unterscheiden.",
+     "p": [
+      "Kulturfragen gelingen am besten aus echtem Interesse.",
+      "Beginne mit 'Ich würde gern etwas über ... lernen' statt 'Warum macht ihr ...?'",
+      "Jeder ist Experte für das eigene Leben, nicht für eine ganze Kultur."
+     ],
+     "q": "Über welche Tradition einer anderen Kultur würdest du gern mehr erfahren?",
+     "c": "Frag jemanden freundlich nach einer Tradition seiner Familie oder Region."
+    },
+    "es": {
+     "t": "Curiosidad amable por las culturas",
+     "g": "Haz preguntas respetuosas sobre tradiciones distintas a las tuyas.",
+     "p": [
+      "Las preguntas culturales funcionan mejor con interés real.",
+      "Empieza con 'Me encantaría aprender sobre...' en vez de '¿Por qué hacéis...?'",
+      "Cada persona es experta en su vida, no en toda una cultura."
+     ],
+     "q": "¿Qué tradición de otra cultura te gustaría conocer?",
+     "c": "Pregunta con amabilidad a alguien por una tradición de su familia o región."
+    },
+    "fr": {
+     "t": "Curiosité douce pour les cultures",
+     "g": "Pose des questions respectueuses sur des traditions différentes des tiennes.",
+     "p": [
+      "Les questions culturelles marchent mieux quand l'intérêt est sincère.",
+      "Commence par 'J'aimerais en savoir plus sur...' plutôt que 'Pourquoi vous faites ça ?'",
+      "Chacun est expert de sa propre vie, pas d'une culture entière."
+     ],
+     "q": "Quelle tradition d'une autre culture aimerais-tu découvrir ?",
+     "c": "Demande gentiment à quelqu'un une tradition de sa famille ou de sa région."
+    },
+    "it": {
+     "t": "Curiosità gentile per le culture",
+     "g": "Fai domande rispettose su tradizioni diverse dalle tue.",
+     "p": [
+      "Le domande culturali funzionano meglio se nascono da vero interesse.",
+      "Inizia con 'Mi piacerebbe conoscere...' invece di 'Perché fate...?'",
+      "Ognuno è esperto della propria vita, non di un'intera cultura."
+     ],
+     "q": "Quale tradizione di un'altra cultura vorresti conoscere?",
+     "c": "Chiedi con gentilezza a qualcuno di una tradizione della sua famiglia o regione."
+    },
+    "pt": {
+     "t": "Curiosidade gentil sobre culturas",
+     "g": "Faz perguntas respeitosas sobre tradições diferentes das tuas.",
+     "p": [
+      "As perguntas culturais funcionam melhor com interesse genuíno.",
+      "Começa com 'Gostava de aprender sobre...' em vez de 'Porque fazem...?'",
+      "Cada pessoa é especialista na sua vida, não numa cultura inteira."
+     ],
+     "q": "Que tradição de outra cultura gostavas de conhecer?",
+     "c": "Pergunta com gentileza a alguém por uma tradição da sua família ou região."
+    },
+    "pt_BR": {
+     "t": "Curiosidade gentil sobre culturas",
+     "g": "Faça perguntas respeitosas sobre tradições diferentes das suas.",
+     "p": [
+      "Perguntas culturais funcionam melhor com interesse genuíno.",
+      "Comece com 'Eu adoraria aprender sobre...' em vez de 'Por que vocês fazem...?'",
+      "Cada pessoa é especialista na própria vida, não numa cultura inteira."
+     ],
+     "q": "Que tradição de outra cultura você gostaria de conhecer?",
+     "c": "Pergunte com gentileza a alguém sobre uma tradição da família ou região."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What energised you today",
+     "g": "Notice activities and people that give you energy.",
+     "p": [
+      "Some moments leave us lighter, others drain us.",
+      "Spotting what energises you helps you plan better days.",
+      "Listeners can ask what made that moment feel good."
+     ],
+     "q": "What gave you energy today?",
+     "c": "Ask someone what gave them energy this week and listen for the pattern."
+    },
+    "de": {
+     "t": "Was dir heute Energie gab",
+     "g": "Bemerke Aktivitäten und Menschen, die dir Energie geben.",
+     "p": [
+      "Manche Momente machen uns leichter, andere kosten Kraft.",
+      "Zu erkennen, was dich belebt, hilft dir, bessere Tage zu planen.",
+      "Zuhörer können fragen, was diesen Moment gut machte."
+     ],
+     "q": "Was hat dir heute Energie gegeben?",
+     "c": "Frag jemanden, was ihm diese Woche Energie gab, und achte auf das Muster."
+    },
+    "es": {
+     "t": "Qué te dio energía hoy",
+     "g": "Nota las actividades y personas que te dan energía.",
+     "p": [
+      "Algunos momentos nos dejan más ligeros, otros nos cansan.",
+      "Ver qué te da energía te ayuda a planear mejores días.",
+      "Quien escucha puede preguntar qué hizo bueno ese momento."
+     ],
+     "q": "¿Qué te dio energía hoy?",
+     "c": "Pregunta a alguien qué le dio energía esta semana y busca el patrón."
+    },
+    "fr": {
+     "t": "Ce qui t'a donné de l'énergie",
+     "g": "Remarque les activités et les personnes qui te donnent de l'énergie.",
+     "p": [
+      "Certains moments nous allègent, d'autres nous fatiguent.",
+      "Repérer ce qui t'énergise aide à mieux planifier tes journées.",
+      "Celui qui écoute peut demander ce qui a rendu ce moment agréable."
+     ],
+     "q": "Qu'est-ce qui t'a donné de l'énergie aujourd'hui ?",
+     "c": "Demande à quelqu'un ce qui lui a donné de l'énergie cette semaine et cherche le fil commun."
+    },
+    "it": {
+     "t": "Cosa ti ha dato energia oggi",
+     "g": "Nota le attività e le persone che ti danno energia.",
+     "p": [
+      "Alcuni momenti ci lasciano più leggeri, altri ci stancano.",
+      "Capire cosa ti dà energia aiuta a pianificare giornate migliori.",
+      "Chi ascolta può chiedere cosa ha reso bello quel momento."
+     ],
+     "q": "Cosa ti ha dato energia oggi?",
+     "c": "Chiedi a qualcuno cosa gli ha dato energia questa settimana e cerca lo schema."
+    },
+    "pt": {
+     "t": "O que te deu energia hoje",
+     "g": "Repara nas atividades e pessoas que te dão energia.",
+     "p": [
+      "Alguns momentos deixam-nos mais leves, outros cansam.",
+      "Perceber o que te dá energia ajuda a planear melhores dias.",
+      "Quem ouve pode perguntar o que tornou esse momento bom."
+     ],
+     "q": "O que te deu energia hoje?",
+     "c": "Pergunta a alguém o que lhe deu energia esta semana e procura o padrão."
+    },
+    "pt_BR": {
+     "t": "O que deu energia a você hoje",
+     "g": "Perceba as atividades e pessoas que dão energia a você.",
+     "p": [
+      "Alguns momentos deixam a gente mais leve, outros cansam.",
+      "Perceber o que dá energia ajuda a planejar dias melhores.",
+      "Quem ouve pode perguntar o que tornou esse momento bom."
+     ],
+     "q": "O que deu energia a você hoje?",
+     "c": "Pergunte a alguém o que deu energia a ela esta semana e procure o padrão."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Short and sweet check-ins",
+     "g": "Use quick daily questions that keep friendships warm.",
+     "p": [
+      "A short message can keep a friendship alive.",
+      "Ask something light: 'How is your week so far?'",
+      "Listen to the reply and answer with real care."
+     ],
+     "q": "What quick check-in question feels natural to you?",
+     "c": "Send one short check-in message to a friend today."
+    },
+    "de": {
+     "t": "Kurz und herzlich nachfragen",
+     "g": "Nutze kurze tägliche Fragen, die Freundschaften warm halten.",
+     "p": [
+      "Eine kurze Nachricht kann eine Freundschaft lebendig halten.",
+      "Frag etwas Leichtes: 'Wie läuft deine Woche bisher?'",
+      "Hör auf die Antwort und reagiere mit echter Anteilnahme."
+     ],
+     "q": "Welche kurze Nachfrage fühlt sich für dich natürlich an?",
+     "c": "Schicke heute einem Freund eine kurze Nachricht zum Nachfragen."
+    },
+    "es": {
+     "t": "Mensajes breves y cálidos",
+     "g": "Usa preguntas rápidas a diario que mantengan cálidas las amistades.",
+     "p": [
+      "Un mensaje corto puede mantener viva una amistad.",
+      "Pregunta algo ligero: '¿Cómo va tu semana?'",
+      "Escucha la respuesta y contesta con cariño de verdad."
+     ],
+     "q": "¿Qué pregunta rápida para saludar te sale natural?",
+     "c": "Envía hoy un mensaje corto de saludo a un amigo."
+    },
+    "fr": {
+     "t": "Des petits mots qui réchauffent",
+     "g": "Utilise de courtes questions quotidiennes qui gardent l'amitié chaleureuse.",
+     "p": [
+      "Un court message peut garder une amitié vivante.",
+      "Demande quelque chose de léger : 'Ta semaine se passe bien ?'",
+      "Écoute la réponse et réponds avec un vrai intérêt."
+     ],
+     "q": "Quelle courte question de prise de nouvelles te semble naturelle ?",
+     "c": "Envoie aujourd'hui un court message de prise de nouvelles à un ami."
+    },
+    "it": {
+     "t": "Brevi messaggi che scaldano",
+     "g": "Usa domande veloci ogni giorno che tengano calde le amicizie.",
+     "p": [
+      "Un breve messaggio può tenere viva un'amicizia.",
+      "Chiedi qualcosa di leggero: 'Come va la settimana?'",
+      "Ascolta la risposta e rispondi con vera attenzione."
+     ],
+     "q": "Quale breve domanda per sentirsi ti viene naturale?",
+     "c": "Manda oggi un breve messaggio a un amico per sapere come sta."
+    },
+    "pt": {
+     "t": "Mensagens curtas e queridas",
+     "g": "Usa perguntas rápidas diárias que mantêm as amizades calorosas.",
+     "p": [
+      "Uma mensagem curta pode manter viva uma amizade.",
+      "Pergunta algo leve: 'Como vai a tua semana?'",
+      "Ouve a resposta e responde com carinho a sério."
+     ],
+     "q": "Que pergunta rápida para saber como estão te sai natural?",
+     "c": "Envia hoje uma mensagem curta a um amigo para saber como está."
+    },
+    "pt_BR": {
+     "t": "Mensagens curtas e carinhosas",
+     "g": "Use perguntas rápidas diárias que mantêm as amizades calorosas.",
+     "p": [
+      "Uma mensagem curta pode manter viva uma amizade.",
+      "Pergunte algo leve: 'Como está a sua semana?'",
+      "Ouça a resposta e responda com carinho de verdade."
+     ],
+     "q": "Que pergunta rápida para saber como estão sai natural para você?",
+     "c": "Envie hoje uma mensagem curta a um amigo para saber como ele está."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your favourite way to learn",
+     "g": "Talk about whether you learn best by reading, doing, watching or chatting.",
+     "p": [
+      "People learn in different ways, and none is better.",
+      "Knowing how someone learns helps you explain things kindly.",
+      "Listeners can ask about a time something finally clicked."
+     ],
+     "q": "Do you learn best by reading, doing, watching or chatting?",
+     "c": "Ask someone how they learn best and try explaining that way."
+    },
+    "de": {
+     "t": "Deine liebste Art zu lernen",
+     "g": "Sprich darüber, ob du am besten durch Lesen, Tun, Zuschauen oder Reden lernst.",
+     "p": [
+      "Menschen lernen verschieden, und keine Art ist besser.",
+      "Wer weiß, wie jemand lernt, kann freundlicher erklären.",
+      "Zuhörer können nach einem Moment fragen, in dem es endlich Klick machte."
+     ],
+     "q": "Lernst du am besten durch Lesen, Tun, Zuschauen oder Reden?",
+     "c": "Frag jemanden, wie er am besten lernt, und erkläre in dieser Weise."
+    },
+    "es": {
+     "t": "Tu forma favorita de aprender",
+     "g": "Habla de si aprendes mejor leyendo, haciendo, viendo o conversando.",
+     "p": [
+      "La gente aprende de maneras distintas y ninguna es mejor.",
+      "Saber cómo aprende alguien ayuda a explicar con amabilidad.",
+      "Quien escucha puede preguntar por un momento en que algo encajó."
+     ],
+     "q": "¿Aprendes mejor leyendo, haciendo, viendo o conversando?",
+     "c": "Pregunta a alguien cómo aprende mejor y prueba a explicar así."
+    },
+    "fr": {
+     "t": "Ta façon préférée d'apprendre",
+     "g": "Dis si tu apprends mieux en lisant, en faisant, en regardant ou en discutant.",
+     "p": [
+      "Chacun apprend à sa manière et aucune n'est meilleure.",
+      "Savoir comment quelqu'un apprend aide à expliquer avec bienveillance.",
+      "Celui qui écoute peut demander un moment où tout s'est éclairé."
+     ],
+     "q": "Apprends-tu mieux en lisant, en faisant, en regardant ou en discutant ?",
+     "c": "Demande à quelqu'un comment il apprend le mieux et essaie d'expliquer ainsi."
+    },
+    "it": {
+     "t": "Il tuo modo preferito di imparare",
+     "g": "Parla di come impari meglio: leggendo, facendo, guardando o chiacchierando.",
+     "p": [
+      "Le persone imparano in modi diversi e nessuno è migliore.",
+      "Sapere come impara qualcuno aiuta a spiegare con gentilezza.",
+      "Chi ascolta può chiedere di un momento in cui tutto è diventato chiaro."
+     ],
+     "q": "Impari meglio leggendo, facendo, guardando o chiacchierando?",
+     "c": "Chiedi a qualcuno come impara meglio e prova a spiegare così."
+    },
+    "pt": {
+     "t": "A tua forma preferida de aprender",
+     "g": "Fala de como aprendes melhor: a ler, a fazer, a ver ou a conversar.",
+     "p": [
+      "As pessoas aprendem de formas diferentes e nenhuma é melhor.",
+      "Saber como alguém aprende ajuda a explicar com gentileza.",
+      "Quem ouve pode perguntar por um momento em que tudo fez clique."
+     ],
+     "q": "Aprendes melhor a ler, a fazer, a ver ou a conversar?",
+     "c": "Pergunta a alguém como aprende melhor e experimenta explicar assim."
+    },
+    "pt_BR": {
+     "t": "Sua forma favorita de aprender",
+     "g": "Fale sobre como você aprende melhor: lendo, fazendo, vendo ou conversando.",
+     "p": [
+      "As pessoas aprendem de formas diferentes e nenhuma é melhor.",
+      "Saber como alguém aprende ajuda a explicar com gentileza.",
+      "Quem ouve pode perguntar por um momento em que tudo fez sentido."
+     ],
+     "q": "Você aprende melhor lendo, fazendo, vendo ou conversando?",
+     "c": "Pergunte a alguém como aprende melhor e tente explicar desse jeito."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Clarifying questions",
+     "g": "Ask 'Do you mean...?' when something is unclear instead of guessing.",
+     "p": [
+      "Guessing can lead to misunderstandings; asking prevents them.",
+      "A clarifying question shows you care about getting it right.",
+      "Keep your tone light and curious."
+     ],
+     "q": "When did a misunderstanding happen because nobody asked?",
+     "c": "Ask 'Do you mean...?' once today when something is unclear."
+    },
+    "de": {
+     "t": "Klärende Fragen",
+     "g": "Frag 'Meinst du...?', wenn etwas unklar ist, statt zu raten.",
+     "p": [
+      "Raten führt zu Missverständnissen; Nachfragen beugt vor.",
+      "Eine klärende Frage zeigt, dass dir Verstehen wichtig ist.",
+      "Halte den Ton leicht und neugierig."
+     ],
+     "q": "Wann entstand ein Missverständnis, weil niemand nachfragte?",
+     "c": "Frag heute einmal 'Meinst du...?', wenn etwas unklar ist."
+    },
+    "es": {
+     "t": "Preguntas para aclarar",
+     "g": "Pregunta '¿Quieres decir...?' cuando algo no está claro, en vez de suponer.",
+     "p": [
+      "Suponer puede causar malentendidos; preguntar los evita.",
+      "Una pregunta aclaratoria muestra que te importa entender bien.",
+      "Mantén un tono ligero y curioso."
+     ],
+     "q": "¿Cuándo hubo un malentendido porque nadie preguntó?",
+     "c": "Pregunta hoy una vez '¿Quieres decir...?' cuando algo no esté claro."
+    },
+    "fr": {
+     "t": "Questions pour clarifier",
+     "g": "Demande 'Tu veux dire... ?' quand quelque chose n'est pas clair, plutôt que de deviner.",
+     "p": [
+      "Deviner peut créer des malentendus ; demander les évite.",
+      "Une question de clarification montre que tu tiens à bien comprendre.",
+      "Garde un ton léger et curieux."
+     ],
+     "q": "Quand un malentendu est-il né parce que personne n'a demandé ?",
+     "c": "Demande une fois aujourd'hui 'Tu veux dire... ?' quand quelque chose est flou."
+    },
+    "it": {
+     "t": "Domande di chiarimento",
+     "g": "Chiedi 'Intendi...?' quando qualcosa non è chiaro, invece di indovinare.",
+     "p": [
+      "Indovinare può causare malintesi; chiedere li evita.",
+      "Una domanda di chiarimento mostra che ci tieni a capire bene.",
+      "Mantieni un tono leggero e curioso."
+     ],
+     "q": "Quando c'è stato un malinteso perché nessuno ha chiesto?",
+     "c": "Chiedi oggi una volta 'Intendi...?' quando qualcosa non è chiaro."
+    },
+    "pt": {
+     "t": "Perguntas de esclarecimento",
+     "g": "Pergunta 'Queres dizer...?' quando algo não está claro, em vez de adivinhar.",
+     "p": [
+      "Adivinhar pode causar mal-entendidos; perguntar evita-os.",
+      "Uma pergunta de esclarecimento mostra que queres perceber bem.",
+      "Mantém um tom leve e curioso."
+     ],
+     "q": "Quando houve um mal-entendido porque ninguém perguntou?",
+     "c": "Pergunta hoje uma vez 'Queres dizer...?' quando algo não estiver claro."
+    },
+    "pt_BR": {
+     "t": "Perguntas de esclarecimento",
+     "g": "Pergunte 'Você quer dizer...?' quando algo não está claro, em vez de adivinhar.",
+     "p": [
+      "Adivinhar pode causar mal-entendidos; perguntar os evita.",
+      "Uma pergunta de esclarecimento mostra que você quer entender bem.",
+      "Mantenha um tom leve e curioso."
+     ],
+     "q": "Quando houve um mal-entendido porque ninguém perguntou?",
+     "c": "Pergunte hoje uma vez 'Você quer dizer...?' quando algo não estiver claro."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sounds you love",
+     "g": "Describe sounds like rain, birds, music or laughter that make you feel good.",
+     "p": [
+      "Sounds are strongly tied to memory and mood.",
+      "Describing a sound trains your ear and your words.",
+      "Listeners can ask where the sound takes you."
+     ],
+     "q": "Which sound makes you feel good, and where does it take you?",
+     "c": "Pause for one minute today and listen to the sounds around you."
+    },
+    "de": {
+     "t": "Klänge, die du liebst",
+     "g": "Beschreibe Geräusche wie Regen, Vögel, Musik oder Lachen, die dir guttun.",
+     "p": [
+      "Klänge sind eng mit Erinnerung und Stimmung verbunden.",
+      "Einen Klang zu beschreiben schult Ohr und Worte.",
+      "Zuhörer können fragen, wohin dich der Klang bringt."
+     ],
+     "q": "Welcher Klang tut dir gut, und wohin bringt er dich?",
+     "c": "Halte heute eine Minute inne und lausche den Klängen um dich herum."
+    },
+    "es": {
+     "t": "Sonidos que amas",
+     "g": "Describe sonidos como la lluvia, los pájaros, la música o las risas que te hacen sentir bien.",
+     "p": [
+      "Los sonidos están muy ligados a la memoria y al ánimo.",
+      "Describir un sonido entrena tu oído y tus palabras.",
+      "Quien escucha puede preguntar adónde te lleva ese sonido."
+     ],
+     "q": "¿Qué sonido te hace sentir bien y adónde te lleva?",
+     "c": "Haz hoy una pausa de un minuto y escucha los sonidos a tu alrededor."
+    },
+    "fr": {
+     "t": "Des sons que tu aimes",
+     "g": "Décris des sons comme la pluie, les oiseaux, la musique ou les rires qui te font du bien.",
+     "p": [
+      "Les sons sont fortement liés à la mémoire et à l'humeur.",
+      "Décrire un son entraîne ton oreille et tes mots.",
+      "Celui qui écoute peut demander où ce son te transporte."
+     ],
+     "q": "Quel son te fait du bien, et où te transporte-t-il ?",
+     "c": "Fais aujourd'hui une pause d'une minute et écoute les sons autour de toi."
+    },
+    "it": {
+     "t": "Suoni che ami",
+     "g": "Descrivi suoni come pioggia, uccelli, musica o risate che ti fanno stare bene.",
+     "p": [
+      "I suoni sono fortemente legati a memoria e umore.",
+      "Descrivere un suono allena orecchio e parole.",
+      "Chi ascolta può chiedere dove ti porta quel suono."
+     ],
+     "q": "Quale suono ti fa stare bene, e dove ti porta?",
+     "c": "Fai oggi una pausa di un minuto e ascolta i suoni intorno a te."
+    },
+    "pt": {
+     "t": "Sons de que gostas",
+     "g": "Descreve sons como chuva, pássaros, música ou riso que te fazem sentir bem.",
+     "p": [
+      "Os sons estão muito ligados à memória e ao humor.",
+      "Descrever um som treina o ouvido e as palavras.",
+      "Quem ouve pode perguntar para onde esse som te leva."
+     ],
+     "q": "Que som te faz sentir bem e para onde te leva?",
+     "c": "Faz hoje uma pausa de um minuto e ouve os sons à tua volta."
+    },
+    "pt_BR": {
+     "t": "Sons de que você gosta",
+     "g": "Descreva sons como chuva, pássaros, música ou risadas que fazem você se sentir bem.",
+     "p": [
+      "Os sons estão muito ligados à memória e ao humor.",
+      "Descrever um som treina o ouvido e as palavras.",
+      "Quem ouve pode perguntar para onde esse som leva você."
+     ],
+     "q": "Que som faz você se sentir bem e para onde ele leva você?",
+     "c": "Faça hoje uma pausa de um minuto e ouça os sons ao seu redor."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: two months of listening",
+     "g": "Revisit reflecting, follow-up questions and pauses with a short practice chat.",
+     "p": [
+      "You have practised reflecting, follow-ups, pauses and validating.",
+      "A short practice chat puts several skills together.",
+      "Progress shows in how people open up to you."
+     ],
+     "q": "Which skill helped you most in conversations this month?",
+     "c": "Have one chat today using a pause, a follow-up and a reflection."
+    },
+    "de": {
+     "t": "Rückblick: zwei Monate Zuhören",
+     "g": "Wiederhole Spiegeln, Nachfragen und Pausen in einem kurzen Übungsgespräch.",
+     "p": [
+      "Du hast Spiegeln, Nachfragen, Pausen und Anerkennen geübt.",
+      "Ein kurzes Übungsgespräch verbindet mehrere Fähigkeiten.",
+      "Fortschritt zeigt sich darin, wie Menschen sich dir öffnen."
+     ],
+     "q": "Welche Fähigkeit hat dir in Gesprächen diesen Monat am meisten geholfen?",
+     "c": "Führe heute ein Gespräch mit einer Pause, einer Nachfrage und einem Spiegeln."
+    },
+    "es": {
+     "t": "Repaso: dos meses escuchando",
+     "g": "Repasa reflejar, preguntas de seguimiento y pausas con una charla corta de práctica.",
+     "p": [
+      "Has practicado reflejar, preguntas de seguimiento, pausas y validar.",
+      "Una charla corta de práctica une varias habilidades.",
+      "El progreso se ve en cómo la gente se abre contigo."
+     ],
+     "q": "¿Qué habilidad te ayudó más en las conversaciones este mes?",
+     "c": "Ten hoy una charla usando una pausa, una pregunta de seguimiento y un reflejo."
+    },
+    "fr": {
+     "t": "Bilan : deux mois d'écoute",
+     "g": "Revois la reformulation, les relances et les pauses avec une courte discussion d'entraînement.",
+     "p": [
+      "Tu as pratiqué la reformulation, les relances, les pauses et la validation.",
+      "Une courte discussion d'entraînement réunit plusieurs compétences.",
+      "Le progrès se voit à la façon dont les gens s'ouvrent à toi."
+     ],
+     "q": "Quelle compétence t'a le plus aidé dans les discussions ce mois-ci ?",
+     "c": "Aie aujourd'hui une discussion avec une pause, une relance et une reformulation."
+    },
+    "it": {
+     "t": "Ripasso: due mesi di ascolto",
+     "g": "Ripassa riformulazione, domande di approfondimento e pause con una breve chiacchierata di pratica.",
+     "p": [
+      "Hai esercitato riformulazione, approfondimenti, pause e validazione.",
+      "Una breve chiacchierata di pratica unisce più abilità.",
+      "Il progresso si vede da come le persone si aprono con te."
+     ],
+     "q": "Quale abilità ti ha aiutato di più nelle conversazioni questo mese?",
+     "c": "Fai oggi una chiacchierata con una pausa, un approfondimento e una riformulazione."
+    },
+    "pt": {
+     "t": "Revisão: dois meses a ouvir",
+     "g": "Revê refletir, perguntas de seguimento e pausas com uma conversa curta de prática.",
+     "p": [
+      "Praticaste refletir, perguntas de seguimento, pausas e validar.",
+      "Uma conversa curta de prática junta várias competências.",
+      "O progresso vê-se em como as pessoas se abrem contigo."
+     ],
+     "q": "Que competência mais te ajudou nas conversas este mês?",
+     "c": "Tem hoje uma conversa com uma pausa, uma pergunta de seguimento e um reflexo."
+    },
+    "pt_BR": {
+     "t": "Revisão: dois meses ouvindo",
+     "g": "Revise refletir, perguntas de acompanhamento e pausas com uma conversa curta de prática.",
+     "p": [
+      "Você praticou refletir, perguntas de acompanhamento, pausas e validar.",
+      "Uma conversa curta de prática junta várias habilidades.",
+      "O progresso aparece em como as pessoas se abrem com você."
+     ],
+     "q": "Que habilidade mais ajudou você nas conversas este mês?",
+     "c": "Tenha hoje uma conversa com uma pausa, uma pergunta de acompanhamento e um reflexo."
+    }
+   }
+  }
+ ]
+}

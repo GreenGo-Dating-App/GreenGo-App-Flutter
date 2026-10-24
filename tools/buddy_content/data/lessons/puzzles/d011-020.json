@@ -1,0 +1,835 @@
+{
+ "topic": "puzzles",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Solving anagrams",
+     "g": "Learn tricks that make unscrambling letters faster and calmer.",
+     "p": [
+      "Spot common endings first, like -ING, -ED, -ER or -TION, and set those letters aside.",
+      "Write the letters in a circle or on small slips of paper; a fresh order often reveals a word you missed.",
+      "Separate vowels from consonants, then try common pairs such as TH, CH, ST and SH."
+     ],
+     "q": "Do you prefer to solve anagrams in your head, or do you write the letters out?",
+     "c": "Unscramble ELPAP and NIRAT: one is a fruit, the other is a vehicle that runs on rails."
+    },
+    "de": {
+     "t": "Anagramme lösen",
+     "g": "Tricks lernen, mit denen sich Buchstaben schneller und gelassener entwirren lassen.",
+     "p": [
+      "Suche zuerst häufige Endungen wie -EN, -ER, -UNG oder -LICH und lege diese Buchstaben beiseite.",
+      "Schreibe die Buchstaben im Kreis oder auf kleine Zettel; eine neue Reihenfolge zeigt oft ein übersehenes Wort.",
+      "Trenne Vokale und Konsonanten und probiere dann häufige Paare wie SCH, CH, ST und EI."
+     ],
+     "q": "Löst du Anagramme lieber im Kopf, oder schreibst du die Buchstaben auf?",
+     "c": "Entwirre ASHU und NAHD: Das eine ist ein Gebäude zum Wohnen, das andere ein Körperteil."
+    },
+    "es": {
+     "t": "Cómo resolver anagramas",
+     "g": "Aprender trucos para ordenar letras con más rapidez y calma.",
+     "p": [
+      "Busca primero terminaciones frecuentes, como -AR, -ADO, -CIÓN o -MENTE, y aparta esas letras.",
+      "Escribe las letras en círculo o en papelitos; un orden nuevo suele revelar una palabra que no veías.",
+      "Separa vocales y consonantes y prueba pares comunes como CH, LL, QU y ST."
+     ],
+     "q": "¿Prefieres resolver los anagramas de cabeza o escribes las letras?",
+     "c": "Ordena ASAC y ZUL: una es un lugar para vivir y la otra es lo que da una lámpara."
+    },
+    "fr": {
+     "t": "Résoudre des anagrammes",
+     "g": "Apprendre des astuces pour remettre les lettres en ordre plus vite et plus sereinement.",
+     "p": [
+      "Repère d'abord les terminaisons courantes, comme -ER, -ION, -MENT ou -EUR, et mets ces lettres de côté.",
+      "Écris les lettres en cercle ou sur des petits papiers ; un nouvel ordre révèle souvent un mot invisible.",
+      "Sépare voyelles et consonnes, puis essaie des paires courantes comme CH, OU, QU et ST."
+     ],
+     "q": "Préfères-tu résoudre les anagrammes de tête ou écrire les lettres ?",
+     "c": "Remets en ordre SIOMAN et LESOIL : l'un est un lieu où habiter, l'autre une étoile."
+    },
+    "it": {
+     "t": "Risolvere gli anagrammi",
+     "g": "Imparare trucchi per rimettere in ordine le lettere più in fretta e con calma.",
+     "p": [
+      "Cerca prima le desinenze comuni, come -ARE, -ERE, -ZIONE o -MENTE, e metti da parte quelle lettere.",
+      "Scrivi le lettere in cerchio o su piccoli foglietti; un nuovo ordine spesso rivela una parola sfuggita.",
+      "Separa vocali e consonanti, poi prova coppie comuni come CH, GN, SC e ST."
+     ],
+     "q": "Preferisci risolvere gli anagrammi a mente o scrivi le lettere?",
+     "c": "Riordina ACSA e LOSE: una è un posto dove abitare, l'altra è la stella del giorno."
+    },
+    "pt": {
+     "t": "Resolver anagramas",
+     "g": "Aprender truques para ordenar letras mais depressa e com calma.",
+     "p": [
+      "Procura primeiro terminações frequentes, como -AR, -ÇÃO, -MENTE ou -ADO, e põe essas letras de lado.",
+      "Escreve as letras em círculo ou em papelinhos; uma ordem nova revela muitas vezes uma palavra escondida.",
+      "Separa vogais e consoantes e experimenta pares comuns como CH, LH, NH e ST."
+     ],
+     "q": "Preferes resolver anagramas de cabeça ou escreves as letras?",
+     "c": "Ordena ASAC e ZUL: uma é um sítio onde viver e a outra é o que dá um candeeiro."
+    },
+    "pt_BR": {
+     "t": "Resolvendo anagramas",
+     "g": "Aprender truques para ordenar letras mais rápido e com calma.",
+     "p": [
+      "Procure primeiro terminações frequentes, como -AR, -ÇÃO, -MENTE ou -ADO, e deixe essas letras de lado.",
+      "Escreva as letras em círculo ou em papeizinhos; uma ordem nova muitas vezes revela uma palavra escondida.",
+      "Separe vogais e consoantes e experimente pares comuns como CH, LH, NH e ST."
+     ],
+     "q": "Você prefere resolver anagramas de cabeça ou escrever as letras?",
+     "c": "Ordene ASAC e ZUL: uma é um lugar para morar e a outra é o que a lâmpada dá."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Palindromes",
+     "g": "Meet words and sentences that read the same backwards as forwards.",
+     "p": [
+      "A palindrome reads the same in both directions, like 'level', 'racecar' and 'noon'.",
+      "The word comes from Greek 'palin' (again) and 'dromos' (way), so it means 'running back again'.",
+      "Sentences work too if you ignore spaces and punctuation: 'Was it a car or a cat I saw?'."
+     ],
+     "q": "Is there a name in your family or among your friends that is a palindrome?",
+     "c": "Find three palindromic words around you, such as 'mom' or 'kayak', and write them down."
+    },
+    "de": {
+     "t": "Palindrome",
+     "g": "Wörter und Sätze kennenlernen, die vorwärts und rückwärts gleich gelesen werden.",
+     "p": [
+      "Ein Palindrom liest sich in beide Richtungen gleich, wie „Otto“, „Anna“ und „Reittier“.",
+      "Das Wort kommt aus dem Griechischen: „palin“ (wieder) und „dromos“ (Lauf), also „wieder zurücklaufend“.",
+      "Auch Sätze gehen, wenn man Leerzeichen ignoriert, etwa: „Ein Esel lese nie.“"
+     ],
+     "q": "Gibt es in deiner Familie oder unter Freunden einen Namen, der ein Palindrom ist?",
+     "c": "Finde drei Palindrome in deiner Umgebung, etwa „Anna“ oder „Radar“, und schreib sie auf."
+    },
+    "es": {
+     "t": "Palíndromos",
+     "g": "Conocer palabras y frases que se leen igual al derecho y al revés.",
+     "p": [
+      "Un palíndromo se lee igual en ambos sentidos, como «ala», «radar» y «reconocer».",
+      "La palabra viene del griego «palin» (de nuevo) y «dromos» (camino): «que corre otra vez hacia atrás».",
+      "Las frases también valen si ignoras espacios y tildes: «Anita lava la tina»."
+     ],
+     "q": "¿Hay algún nombre en tu familia o entre tus amigos que sea un palíndromo?",
+     "c": "Encuentra tres palíndromos a tu alrededor, como «oso» u «ojo», y anótalos."
+    },
+    "fr": {
+     "t": "Palindromes",
+     "g": "Découvrir des mots et des phrases qui se lisent pareil à l'endroit et à l'envers.",
+     "p": [
+      "Un palindrome se lit pareil dans les deux sens, comme « radar », « kayak » et « ressasser ».",
+      "Le mot vient du grec « palin » (de nouveau) et « dromos » (course) : « qui court en arrière ».",
+      "Les phrases marchent aussi si on ignore espaces et accents : « Engage le jeu que je le gagne »."
+     ],
+     "q": "Y a-t-il dans ta famille ou chez tes amis un prénom qui soit un palindrome ?",
+     "c": "Trouve trois palindromes autour de toi, comme « elle » ou « été », et note-les."
+    },
+    "it": {
+     "t": "Palindromi",
+     "g": "Conoscere parole e frasi che si leggono uguali da sinistra a destra e viceversa.",
+     "p": [
+      "Un palindromo si legge uguale nei due sensi, come «anna», «ottetto» e «radar».",
+      "La parola viene dal greco «palin» (di nuovo) e «dromos» (corsa): «che corre di nuovo indietro».",
+      "Anche le frasi vanno bene se ignori gli spazi: «I topi non avevano nipoti»."
+     ],
+     "q": "C'è un nome in famiglia o tra gli amici che sia un palindromo?",
+     "c": "Trova tre palindromi intorno a te, come «oro» o «radar», e scrivili."
+    },
+    "pt": {
+     "t": "Palíndromos",
+     "g": "Conhecer palavras e frases que se leem igual da esquerda para a direita e ao contrário.",
+     "p": [
+      "Um palíndromo lê-se igual nos dois sentidos, como «arara», «ovo» e «radar».",
+      "A palavra vem do grego «palin» (de novo) e «dromos» (corrida): «que corre outra vez para trás».",
+      "As frases também servem se ignorares espaços e acentos: «Anotaram a data da maratona»."
+     ],
+     "q": "Há algum nome na tua família ou entre amigos que seja um palíndromo?",
+     "c": "Encontra três palíndromos à tua volta, como «ovo» ou «arara», e escreve-os."
+    },
+    "pt_BR": {
+     "t": "Palíndromos",
+     "g": "Conhecer palavras e frases que se leem igual da esquerda para a direita e do avesso.",
+     "p": [
+      "Um palíndromo se lê igual nos dois sentidos, como «arara», «ovo» e «radar».",
+      "A palavra vem do grego «palin» (de novo) e «dromos» (corrida): «que corre de novo para trás».",
+      "As frases também servem se você ignorar espaços e acentos: «Anotaram a data da maratona»."
+     ],
+     "q": "Existe algum nome na sua família ou entre amigos que seja um palíndromo?",
+     "c": "Encontre três palíndromos ao seu redor, como «ovo» ou «arara», e anote."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hidden words",
+     "g": "Learn to find words concealed inside longer words and sentences.",
+     "p": [
+      "A hidden word appears in order inside a longer word, like 'cat' inside 'educate'.",
+      "Scan slowly in groups of three or four letters; sometimes the word crosses the gap between two words.",
+      "Making your own is fun too: choose a word and tuck it inside a sentence without making it obvious."
+     ],
+     "q": "Is there a word hidden inside your own name or the name of your town?",
+     "c": "Find the body parts hidden in 'harmless' and in 'chinchilla'. Check each letter in order."
+    },
+    "de": {
+     "t": "Versteckte Wörter",
+     "g": "Lernen, Wörter zu finden, die in längeren Wörtern und Sätzen versteckt sind.",
+     "p": [
+      "Ein verstecktes Wort steht der Reihe nach in einem längeren Wort, etwa „Rat“ in „Karate“.",
+      "Suche langsam in Dreier- oder Vierergruppen; manchmal liegt das Wort über der Lücke zwischen zwei Wörtern.",
+      "Selbst bauen macht Spaß: Wähle ein Wort und verstecke es unauffällig in einem Satz."
+     ],
+     "q": "Steckt in deinem Namen oder im Namen deiner Stadt ein verstecktes Wort?",
+     "c": "Finde die versteckten Körperteile in „warm“ und in „beinahe“. Prüfe jeden Buchstaben der Reihe nach."
+    },
+    "es": {
+     "t": "Palabras escondidas",
+     "g": "Aprender a encontrar palabras ocultas dentro de palabras y frases más largas.",
+     "p": [
+      "Una palabra escondida aparece en orden dentro de otra más larga, como «sol» dentro de «resolver».",
+      "Rastrea despacio en grupos de tres o cuatro letras; a veces la palabra cruza el hueco entre dos palabras.",
+      "Crearlas también es divertido: elige una palabra y escóndela en una frase sin que se note."
+     ],
+     "q": "¿Hay alguna palabra escondida en tu nombre o en el nombre de tu ciudad?",
+     "c": "Encuentra las partes del cuerpo escondidas en «rojo» y en «romano». Comprueba cada letra en orden."
+    },
+    "fr": {
+     "t": "Mots cachés dans les mots",
+     "g": "Apprendre à trouver des mots dissimulés dans des mots et des phrases plus longs.",
+     "p": [
+      "Un mot caché apparaît dans l'ordre à l'intérieur d'un mot plus long, comme « rat » dans « pirate ».",
+      "Balaie lentement par groupes de trois ou quatre lettres ; parfois le mot enjambe l'espace entre deux mots.",
+      "En créer est amusant aussi : choisis un mot et glisse-le dans une phrase sans qu'il se remarque."
+     ],
+     "q": "Y a-t-il un mot caché dans ton prénom ou dans le nom de ta ville ?",
+     "c": "Trouve les parties du corps cachées dans « accident » et dans « venez ». Vérifie chaque lettre dans l'ordre."
+    },
+    "it": {
+     "t": "Parole nascoste",
+     "g": "Imparare a trovare parole celate dentro parole e frasi più lunghe.",
+     "p": [
+      "Una parola nascosta compare in ordine dentro una più lunga, come «ora» dentro «colorare».",
+      "Scorri lentamente a gruppi di tre o quattro lettere; a volte la parola attraversa lo spazio tra due parole.",
+      "Crearle è divertente: scegli una parola e nascondila in una frase senza che si noti."
+     ],
+     "q": "C'è una parola nascosta nel tuo nome o nel nome della tua città?",
+     "c": "Trova le parti del corpo nascoste in «romano» e in «angolare». Controlla ogni lettera in ordine."
+    },
+    "pt": {
+     "t": "Palavras escondidas",
+     "g": "Aprender a encontrar palavras ocultas dentro de palavras e frases mais longas.",
+     "p": [
+      "Uma palavra escondida surge em ordem dentro de outra mais longa, como «sol» dentro de «resolver».",
+      "Vasculha devagar em grupos de três ou quatro letras; às vezes a palavra atravessa o espaço entre duas palavras.",
+      "Criá-las também é divertido: escolhe uma palavra e esconde-a numa frase sem que se note."
+     ],
+     "q": "Há alguma palavra escondida no teu nome ou no nome da tua cidade?",
+     "c": "Encontra as partes do corpo escondidas em «molho» e em «chapéu». Confirma cada letra por ordem."
+    },
+    "pt_BR": {
+     "t": "Palavras escondidas",
+     "g": "Aprender a achar palavras ocultas dentro de palavras e frases mais longas.",
+     "p": [
+      "Uma palavra escondida aparece em ordem dentro de outra mais longa, como «sol» dentro de «resolver».",
+      "Varra devagar em grupos de três ou quatro letras; às vezes a palavra atravessa o espaço entre duas palavras.",
+      "Criar também é divertido: escolha uma palavra e esconda numa frase sem que dê para notar."
+     ],
+     "q": "Existe alguma palavra escondida no seu nome ou no nome da sua cidade?",
+     "c": "Ache as partes do corpo escondidas em «molho» e em «chapéu». Confira cada letra em ordem."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Word searches",
+     "g": "Learn to scan a letter grid in a calm, systematic way.",
+     "p": [
+      "A word search hides words in a grid, running across, down or diagonally, forwards or backwards.",
+      "Scan for the first letter of a word, then check all eight directions around it.",
+      "Hunt for rare letters like Q, Z, X and J first, because they appear in only a few places."
+     ],
+     "q": "Do you prefer finding words on paper, on a screen or on a wall puzzle?",
+     "c": "Make a tiny 4 by 4 grid that hides your first name or a favourite word, and ask someone to find it."
+    },
+    "de": {
+     "t": "Wortsuchrätsel",
+     "g": "Lernen, ein Buchstabengitter ruhig und systematisch abzusuchen.",
+     "p": [
+      "Ein Wortsuchrätsel versteckt Wörter im Gitter, waagerecht, senkrecht oder diagonal, vorwärts oder rückwärts.",
+      "Suche den ersten Buchstaben eines Wortes und prüfe dann alle acht Richtungen darum herum.",
+      "Jage zuerst seltene Buchstaben wie Q, Z, X und J, denn sie kommen nur an wenigen Stellen vor."
+     ],
+     "q": "Findest du Wörter lieber auf Papier, am Bildschirm oder in einem Wandrätsel?",
+     "c": "Baue ein kleines 4-mal-4-Gitter mit deinem Vornamen oder einem Lieblingswort und lass es finden."
+    },
+    "es": {
+     "t": "Sopas de letras",
+     "g": "Aprender a recorrer una cuadrícula de letras con calma y de forma sistemática.",
+     "p": [
+      "Una sopa de letras esconde palabras en una cuadrícula, en horizontal, vertical o diagonal, del derecho o al revés.",
+      "Busca la primera letra de una palabra y revisa las ocho direcciones a su alrededor.",
+      "Caza primero las letras raras, como Q, Z, X y J, porque aparecen en pocos sitios."
+     ],
+     "q": "¿Prefieres buscar palabras en papel, en pantalla o en un pasatiempo de pared?",
+     "c": "Crea una cuadrícula de 4 por 4 que esconda tu nombre o una palabra favorita y pide a alguien que la encuentre."
+    },
+    "fr": {
+     "t": "Les mots mêlés",
+     "g": "Apprendre à parcourir une grille de lettres calmement et méthodiquement.",
+     "p": [
+      "Une grille de mots mêlés cache des mots à l'horizontale, à la verticale ou en diagonale, à l'endroit ou à l'envers.",
+      "Cherche la première lettre d'un mot, puis vérifie les huit directions autour d'elle.",
+      "Chasse d'abord les lettres rares comme Q, Z, X et J, car elles n'apparaissent qu'à peu d'endroits."
+     ],
+     "q": "Préfères-tu chercher les mots sur papier, sur écran ou sur un jeu mural ?",
+     "c": "Fabrique une petite grille de 4 sur 4 qui cache ton prénom ou un mot préféré et fais-la résoudre."
+    },
+    "it": {
+     "t": "Le ricerche di parole",
+     "g": "Imparare a scorrere una griglia di lettere con calma e metodo.",
+     "p": [
+      "Una ricerca di parole nasconde termini in una griglia, in orizzontale, verticale o diagonale, dritti o al contrario.",
+      "Cerca la prima lettera di una parola, poi controlla le otto direzioni intorno a essa.",
+      "Caccia prima le lettere rare come Q, Z, X e J, perché compaiono in pochi punti."
+     ],
+     "q": "Preferisci cercare le parole su carta, su schermo o su un gioco da parete?",
+     "c": "Crea una griglia 4 per 4 che nasconda il tuo nome o una parola preferita e falla trovare a qualcuno."
+    },
+    "pt": {
+     "t": "Sopas de letras",
+     "g": "Aprender a percorrer uma grelha de letras com calma e método.",
+     "p": [
+      "Uma sopa de letras esconde palavras numa grelha, na horizontal, vertical ou diagonal, ao direito ou ao contrário.",
+      "Procura a primeira letra de uma palavra e verifica as oito direções à volta dela.",
+      "Caça primeiro as letras raras, como Q, Z, X e J, porque aparecem em poucos sítios."
+     ],
+     "q": "Preferes procurar palavras em papel, no ecrã ou num passatempo de parede?",
+     "c": "Cria uma grelha de 4 por 4 que esconda o teu nome ou uma palavra favorita e pede a alguém que a encontre."
+    },
+    "pt_BR": {
+     "t": "Caça-palavras",
+     "g": "Aprender a percorrer uma grade de letras com calma e método.",
+     "p": [
+      "Um caça-palavras esconde palavras numa grade, na horizontal, vertical ou diagonal, do jeito certo ou ao contrário.",
+      "Procure a primeira letra de uma palavra e confira as oito direções ao redor dela.",
+      "Cace primeiro as letras raras, como Q, Z, X e J, porque aparecem em poucos lugares."
+     ],
+     "q": "Você prefere procurar palavras no papel, na tela ou num passatempo de parede?",
+     "c": "Crie uma grade de 4 por 4 que esconda seu nome ou uma palavra favorita e peça a alguém que encontre."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Word ladders",
+     "g": "Change one letter at a time to turn one word into another.",
+     "p": [
+      "A word ladder changes just one letter per step, and every step must be a real word.",
+      "Lewis Carroll, author of Alice in Wonderland, invented them in the 1870s and called them 'doublets'.",
+      "Example: COLD, CORD, CARD, WARD, WARM. Work from both ends and look for words in the middle."
+     ],
+     "q": "Which two words would you love to connect with a ladder, like DAY and NIGHT?",
+     "c": "Turn CAT into DOG in three steps, changing one letter each time. Hint: start with the vowel."
+    },
+    "de": {
+     "t": "Wortleitern",
+     "g": "Buchstabe für Buchstabe ein Wort in ein anderes verwandeln.",
+     "p": [
+      "Eine Wortleiter ändert pro Schritt nur einen Buchstaben, und jeder Schritt muss ein echtes Wort sein.",
+      "Lewis Carroll, der Autor von Alice im Wunderland, erfand sie in den 1870ern und nannte sie „Doublets“.",
+      "Beispiel: ROSE, HOSE, HASE. Arbeite von beiden Enden aus und suche Wörter in der Mitte."
+     ],
+     "q": "Welche zwei Wörter würdest du gern mit einer Leiter verbinden, etwa TAG und NACHT?",
+     "c": "Verwandle HAUS in MAIS in zwei Schritten und ändere jedes Mal einen Buchstaben."
+    },
+    "es": {
+     "t": "Escaleras de palabras",
+     "g": "Cambiar una letra cada vez para convertir una palabra en otra.",
+     "p": [
+      "Una escalera de palabras cambia solo una letra por paso, y cada paso debe ser una palabra real.",
+      "Lewis Carroll, autor de Alicia en el país de las maravillas, las inventó en la década de 1870 y las llamó «doublets».",
+      "Ejemplo: GATO, PATO, PALO, PELO. Trabaja desde ambos extremos y busca palabras intermedias."
+     ],
+     "q": "¿Qué dos palabras te gustaría unir con una escalera, como DÍA y NOCHE?",
+     "c": "Convierte CASA en ROCA en tres pasos, cambiando una letra cada vez."
+    },
+    "fr": {
+     "t": "Les échelles de mots",
+     "g": "Changer une lettre à la fois pour transformer un mot en un autre.",
+     "p": [
+      "Une échelle de mots ne change qu'une lettre par étape, et chaque étape doit être un vrai mot.",
+      "Lewis Carroll, l'auteur d'Alice au pays des merveilles, les a inventées dans les années 1870 : les « doublets ».",
+      "Exemple : SOL, SEL, SEC. Travaille depuis les deux bouts et cherche des mots au milieu."
+     ],
+     "q": "Quels deux mots aimerais-tu relier par une échelle, comme JOUR et NUIT ?",
+     "c": "Transforme RIZ en RAT en deux étapes, en changeant une lettre à chaque fois."
+    },
+    "it": {
+     "t": "Scale di parole",
+     "g": "Cambiare una lettera alla volta per trasformare una parola in un'altra.",
+     "p": [
+      "Una scala di parole cambia una sola lettera per passo, e ogni passo deve essere una parola vera.",
+      "Lewis Carroll, autore di Alice nel Paese delle Meraviglie, le inventò negli anni 1870 e le chiamò «doublets».",
+      "Esempio: CASA, COSA, ROSA. Lavora da entrambe le estremità e cerca parole intermedie."
+     ],
+     "q": "Quali due parole ti piacerebbe collegare con una scala, come GIORNO e NOTTE?",
+     "c": "Trasforma PANE in LANA in due passi, cambiando una lettera ogni volta."
+    },
+    "pt": {
+     "t": "Escadas de palavras",
+     "g": "Mudar uma letra de cada vez para transformar uma palavra noutra.",
+     "p": [
+      "Uma escada de palavras muda só uma letra por passo, e cada passo tem de ser uma palavra real.",
+      "Lewis Carroll, autor de Alice no País das Maravilhas, inventou-as na década de 1870 e chamou-lhes «doublets».",
+      "Exemplo: GATO, PATO, RATO. Trabalha dos dois lados e procura palavras no meio."
+     ],
+     "q": "Que duas palavras gostarias de ligar com uma escada, como DIA e NOITE?",
+     "c": "Transforma CASA em MESA em dois passos, mudando uma letra de cada vez."
+    },
+    "pt_BR": {
+     "t": "Escadas de palavras",
+     "g": "Mudar uma letra de cada vez para transformar uma palavra em outra.",
+     "p": [
+      "Uma escada de palavras muda só uma letra por passo, e cada passo precisa ser uma palavra real.",
+      "Lewis Carroll, autor de Alice no País das Maravilhas, inventou na década de 1870 e chamou de «doublets».",
+      "Exemplo: GATO, PATO, RATO. Trabalhe dos dois lados e procure palavras no meio."
+     ],
+     "q": "Quais duas palavras você gostaria de ligar com uma escada, como DIA e NOITE?",
+     "c": "Transforme CASA em MESA em dois passos, mudando uma letra de cada vez."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Missing letters",
+     "g": "Complete words with gaps by using patterns and common letter pairs.",
+     "p": [
+      "Look at the shape of the gap: which letters can sit next to the ones you can already see?",
+      "Common pairs help: Q is almost always followed by U, and TH, CH and SH often travel together.",
+      "Count the blanks, try vowels first, and then check that the finished word is real."
+     ],
+     "q": "Which gaps do you find easier, in short words or in long ones?",
+     "c": "Fill the gaps: P_ZZ_E (a brain teaser) and R_DD_E (a riddle). Each has two missing letters."
+    },
+    "de": {
+     "t": "Fehlende Buchstaben",
+     "g": "Wörter mit Lücken ergänzen, indem du Muster und häufige Buchstabenpaare nutzt.",
+     "p": [
+      "Schau auf die Form der Lücke: Welche Buchstaben können neben denen stehen, die du schon siehst?",
+      "Häufige Paare helfen: Q wird fast immer von U gefolgt, und SCH, CH und ST treten oft zusammen auf.",
+      "Zähle die Lücken, probiere zuerst Vokale und prüfe dann, ob das fertige Wort echt ist."
+     ],
+     "q": "Welche Lücken findest du leichter, in kurzen oder in langen Wörtern?",
+     "c": "Fülle die Lücken: RÄ_SEL und BU_HSTABE. In jedem Wort fehlt genau ein Buchstabe."
+    },
+    "es": {
+     "t": "Letras que faltan",
+     "g": "Completar palabras con huecos usando patrones y pares de letras frecuentes.",
+     "p": [
+      "Mira la forma del hueco: ¿qué letras pueden ir junto a las que ya ves?",
+      "Los pares comunes ayudan: la Q casi siempre va seguida de U, y CH, LL y RR aparecen a menudo.",
+      "Cuenta los huecos, prueba primero las vocales y comprueba después que la palabra sea real."
+     ],
+     "q": "¿Qué huecos te resultan más fáciles, los de palabras cortas o los de largas?",
+     "c": "Rellena los huecos: ACERT_JO y PAL_BRA. A cada palabra le falta una sola letra."
+    },
+    "fr": {
+     "t": "Lettres manquantes",
+     "g": "Compléter des mots à trous grâce aux motifs et aux paires de lettres fréquentes.",
+     "p": [
+      "Regarde la forme du trou : quelles lettres peuvent se placer à côté de celles que tu vois déjà ?",
+      "Les paires courantes aident : le Q est presque toujours suivi d'un U, et CH, OU et EAU reviennent souvent.",
+      "Compte les trous, essaie d'abord les voyelles, puis vérifie que le mot obtenu existe."
+     ],
+     "q": "Quels trous trouves-tu plus faciles, dans les mots courts ou dans les longs ?",
+     "c": "Remplis les trous : É_IGME et LET_RE. Il manque une seule lettre dans chaque mot."
+    },
+    "it": {
+     "t": "Lettere mancanti",
+     "g": "Completare parole con buchi usando schemi e coppie di lettere frequenti.",
+     "p": [
+      "Guarda la forma del buco: quali lettere possono stare accanto a quelle che già vedi?",
+      "Le coppie comuni aiutano: la Q è quasi sempre seguita da U, e CH, GN e SC ricorrono spesso.",
+      "Conta i buchi, prova prima le vocali e poi controlla che la parola ottenuta esista."
+     ],
+     "q": "Quali buchi trovi più facili, nelle parole corte o in quelle lunghe?",
+     "c": "Riempi i buchi: INDOVI_ELLO e PARO_A. In ogni parola manca una sola lettera."
+    },
+    "pt": {
+     "t": "Letras em falta",
+     "g": "Completar palavras com lacunas usando padrões e pares de letras frequentes.",
+     "p": [
+      "Olha para a forma da lacuna: que letras podem ficar ao lado das que já vês?",
+      "Os pares comuns ajudam: o Q é quase sempre seguido de U, e CH, LH e NH aparecem muitas vezes.",
+      "Conta as lacunas, experimenta primeiro as vogais e depois verifica se a palavra existe."
+     ],
+     "q": "Que lacunas achas mais fáceis, nas palavras curtas ou nas longas?",
+     "c": "Preenche as lacunas: ENI_MA e PALA_RA. A cada palavra falta uma só letra."
+    },
+    "pt_BR": {
+     "t": "Letras faltando",
+     "g": "Completar palavras com lacunas usando padrões e pares de letras frequentes.",
+     "p": [
+      "Olhe a forma da lacuna: que letras podem ficar ao lado das que você já vê?",
+      "Os pares comuns ajudam: o Q quase sempre vem seguido de U, e CH, LH e NH aparecem muito.",
+      "Conte as lacunas, tente primeiro as vogais e depois confira se a palavra existe."
+     ],
+     "q": "Que lacunas você acha mais fáceis, nas palavras curtas ou nas longas?",
+     "c": "Preencha as lacunas: ENI_MA e PALA_RA. Em cada palavra falta uma só letra."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rebus puzzles",
+     "g": "Decode puzzles where pictures, letters and positions stand for words or phrases.",
+     "p": [
+      "'Rebus' is Latin for 'by things': the puzzle says words with objects instead of spelling them out.",
+      "Sounds count too: a picture of a BEE next to a LEAF can say 'belief'.",
+      "Position and size can add meaning, so notice where each item sits and how big it is."
+     ],
+     "q": "Do you like puzzles made of pictures or puzzles made of letters, and why?",
+     "c": "Decode this: a drawing of a BEE followed by a drawing of a LEAF. Say both words fast."
+    },
+    "de": {
+     "t": "Bilderrätsel (Rebus)",
+     "g": "Rätsel entschlüsseln, in denen Bilder, Buchstaben und Positionen für Wörter stehen.",
+     "p": [
+      "„Rebus“ ist Latein für „durch Dinge“: Das Rätsel sagt Wörter mit Gegenständen statt mit Buchstaben.",
+      "Auch Klänge zählen: Ein Bild von OHR neben einem Bild von RING ergibt „Ohrring“.",
+      "Position und Größe können Bedeutung tragen, achte also darauf, wo etwas steht und wie groß es ist."
+     ],
+     "q": "Magst du lieber Rätsel aus Bildern oder aus Buchstaben, und warum?",
+     "c": "Entschlüssle: eine Zeichnung von HAND, danach eine von SCHUH. Welches Wort entsteht?"
+    },
+    "es": {
+     "t": "Jeroglíficos (rebus)",
+     "g": "Descifrar pasatiempos donde dibujos, letras y posiciones representan palabras o frases.",
+     "p": [
+      "«Rebus» es latín para «por medio de cosas»: el juego dice palabras con objetos en vez de escribirlas.",
+      "Los sonidos también cuentan: un dibujo de CORTA seguido de PLUMAS suena a «cortaplumas».",
+      "La posición y el tamaño pueden añadir significado: fíjate en dónde está cada cosa y cuán grande es."
+     ],
+     "q": "¿Te gustan más los pasatiempos con dibujos o con letras, y por qué?",
+     "c": "Descifra: el dibujo de PARA seguido del de AGUA. Dilos rápido y escucha qué objeto aparece."
+    },
+    "fr": {
+     "t": "Les rébus",
+     "g": "Décoder des énigmes où images, lettres et positions représentent des mots ou des phrases.",
+     "p": [
+      "« Rébus » vient du latin « par les choses » : le jeu dit des mots avec des objets au lieu de les écrire.",
+      "Les sons comptent aussi : un dessin de POT suivi d'un dessin d'ÂGE donne « potage ».",
+      "La position et la taille peuvent ajouter du sens : regarde où se trouve chaque élément et sa grandeur."
+     ],
+     "q": "Aimes-tu mieux les énigmes en images ou en lettres, et pourquoi ?",
+     "c": "Décode : le dessin d'un PORT suivi du dessin d'un MANTEAU. Dis les deux mots vite."
+    },
+    "it": {
+     "t": "I rebus",
+     "g": "Decifrare giochi in cui disegni, lettere e posizioni rappresentano parole o frasi.",
+     "p": [
+      "«Rebus» in latino significa «per mezzo di cose»: il gioco dice parole con oggetti invece di scriverle.",
+      "Contano anche i suoni: un disegno di CAPO accanto a un disegno di DANNO suona come «capodanno».",
+      "Posizione e dimensione possono aggiungere significato: guarda dove sta ogni elemento e quanto è grande."
+     ],
+     "q": "Ti piacciono di più i giochi fatti di disegni o di lettere, e perché?",
+     "c": "Decifra: il disegno di una PORTA seguito da quello di un FOGLIO. Dillo veloce e ascolta."
+    },
+    "pt": {
+     "t": "Rébus",
+     "g": "Decifrar enigmas em que desenhos, letras e posições representam palavras ou frases.",
+     "p": [
+      "«Rebus» é latim para «por meio de coisas»: o jogo diz palavras com objetos em vez de as escrever.",
+      "Os sons também contam: um desenho de GUARDA seguido de CHUVA dá «guarda-chuva».",
+      "A posição e o tamanho podem acrescentar sentido: repara onde está cada coisa e quão grande é."
+     ],
+     "q": "Gostas mais de enigmas feitos de imagens ou de letras, e porquê?",
+     "c": "Decifra: o desenho de PÁRA seguido do desenho de QUEDAS. Diz as duas palavras depressa."
+    },
+    "pt_BR": {
+     "t": "Rébus",
+     "g": "Decifrar enigmas em que desenhos, letras e posições representam palavras ou frases.",
+     "p": [
+      "«Rebus» é latim para «por meio de coisas»: o jogo diz palavras com objetos em vez de escrevê-las.",
+      "Os sons também contam: um desenho de GUARDA seguido de CHUVA dá «guarda-chuva».",
+      "A posição e o tamanho podem acrescentar sentido: repare onde está cada coisa e o quanto é grande."
+     ],
+     "q": "Você gosta mais de enigmas feitos de imagens ou de letras, e por quê?",
+     "c": "Decifre: o desenho de PARA seguido do desenho de QUEDAS. Diga as duas palavras rápido."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Solving a rebus",
+     "g": "Read position, size and repetition as clues.",
+     "p": [
+      "In the classic 'MIND over MATTER', the word MIND is written above MATTER: the position says 'over'.",
+      "Size and repetition count: a tiny word may mean 'small', and a repeated word may mean 'again' or 'many'.",
+      "Say each part aloud, then join the sounds; many rebuses are solved by ear, not by eye."
+     ],
+     "q": "Which rebus clue feels cleverest to you: position, size or sound?",
+     "c": "Decode: the word HEAD written above the word HEELS. Which common phrase appears?"
+    },
+    "de": {
+     "t": "Einen Rebus lösen",
+     "g": "Position, Größe und Wiederholung als Hinweise lesen.",
+     "p": [
+      "Beim Klassiker „Geist über Materie“ steht GEIST über MATERIE: Die Position liefert das Wort „über“.",
+      "Größe und Wiederholung zählen: Ein winziges Wort kann „klein“ heißen, ein wiederholtes „nochmal“ oder „viele“.",
+      "Sprich jeden Teil laut aus und füge die Klänge zusammen; viele Rebusse löst man mit dem Ohr."
+     ],
+     "q": "Welcher Rebus-Hinweis kommt dir am klügsten vor: Position, Größe oder Klang?",
+     "c": "Entschlüssle: Das Wort HALS steht über dem Wort KOPF. Welche Redewendung entsteht?"
+    },
+    "es": {
+     "t": "Cómo resolver un jeroglífico",
+     "g": "Leer la posición, el tamaño y la repetición como pistas.",
+     "p": [
+      "En el clásico «mente sobre materia», la palabra MENTE se escribe encima de MATERIA: la posición dice «sobre».",
+      "El tamaño y la repetición cuentan: una palabra diminuta puede indicar «pequeño» y una repetida, «otra vez» o «muchos».",
+      "Di cada parte en voz alta y une los sonidos; muchos jeroglíficos se resuelven de oído, no a ojo."
+     ],
+     "q": "¿Qué pista te parece más ingeniosa: la posición, el tamaño o el sonido?",
+     "c": "Descifra: la palabra PATAS escrita boca abajo. ¿Qué expresión aparece?"
+    },
+    "fr": {
+     "t": "Résoudre un rébus",
+     "g": "Lire la position, la taille et la répétition comme des indices.",
+     "p": [
+      "Dans le classique « l'esprit sur la matière », ESPRIT est écrit au-dessus de MATIÈRE : la position dit « sur ».",
+      "La taille et la répétition comptent : un mot minuscule peut vouloir dire « petit », un mot répété « encore » ou « beaucoup ».",
+      "Dis chaque partie à voix haute puis assemble les sons ; beaucoup de rébus se résolvent à l'oreille."
+     ],
+     "q": "Quel indice de rébus te semble le plus malin : la position, la taille ou le son ?",
+     "c": "Décode : le mot SENS écrit au-dessus du mot SENS. Quelle expression apparaît ?"
+    },
+    "it": {
+     "t": "Risolvere un rebus",
+     "g": "Leggere posizione, dimensione e ripetizione come indizi.",
+     "p": [
+      "Nel classico «la mente sopra la materia», MENTE è scritta sopra MATERIA: la posizione dice «sopra».",
+      "Dimensione e ripetizione contano: una parola minuscola può voler dire «piccolo», una ripetuta «ancora» o «molti».",
+      "Di' ogni parte a voce alta e unisci i suoni; molti rebus si risolvono a orecchio, non a occhio."
+     ],
+     "q": "Quale indizio di rebus ti sembra più astuto: posizione, dimensione o suono?",
+     "c": "Decifra: la parola SOTTO scritta sopra la parola SOPRA. Quale parola nasce?"
+    },
+    "pt": {
+     "t": "Resolver um rébus",
+     "g": "Ler a posição, o tamanho e a repetição como pistas.",
+     "p": [
+      "No clássico «mente sobre matéria», a palavra MENTE escreve-se por cima de MATÉRIA: a posição diz «sobre».",
+      "O tamanho e a repetição contam: uma palavra minúscula pode querer dizer «pequeno» e uma repetida, «outra vez» ou «muitos».",
+      "Diz cada parte em voz alta e junta os sons; muitos rébus resolvem-se de ouvido, não a olho."
+     ],
+     "q": "Que pista de rébus te parece mais esperta: a posição, o tamanho ou o som?",
+     "c": "Decifra: a palavra PERNAS escrita de cabeça para baixo. Que expressão aparece?"
+    },
+    "pt_BR": {
+     "t": "Resolvendo um rébus",
+     "g": "Ler a posição, o tamanho e a repetição como pistas.",
+     "p": [
+      "No clássico «mente sobre matéria», a palavra MENTE é escrita em cima de MATÉRIA: a posição diz «sobre».",
+      "O tamanho e a repetição contam: uma palavra minúscula pode querer dizer «pequeno» e uma repetida, «de novo» ou «muitos».",
+      "Diga cada parte em voz alta e junte os sons; muitos rébus se resolvem de ouvido, não de olho."
+     ],
+     "q": "Qual pista de rébus parece mais esperta: a posição, o tamanho ou o som?",
+     "c": "Decifre: a palavra PERNAS escrita de cabeça para baixo. Que expressão aparece?"
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Crossword basics",
+     "g": "Understand how grids, numbered clues, across and down work together.",
+     "p": [
+      "A crossword grid has white squares for letters and black squares that separate the words.",
+      "A number marks where each answer starts, and clues are listed as Across (left to right) or Down (top to bottom).",
+      "Answers cross each other, so every letter you solve helps with at least one other word."
+     ],
+     "q": "Do you remember the first crossword you ever tried, and where you did it?",
+     "c": "Solve this clue: 'Pet that purrs (3 letters)'. Write the letters in boxes and check the length."
+    },
+    "de": {
+     "t": "Kreuzworträtsel: die Grundlagen",
+     "g": "Verstehen, wie Gitter, nummerierte Hinweise, waagerecht und senkrecht zusammenspielen.",
+     "p": [
+      "Ein Kreuzworträtsel hat weiße Felder für Buchstaben und schwarze Felder, die die Wörter trennen.",
+      "Eine Zahl markiert den Anfang jeder Lösung, die Hinweise stehen bei „waagerecht“ oder „senkrecht“.",
+      "Die Lösungen kreuzen sich, daher hilft jeder gelöste Buchstabe mindestens einem weiteren Wort."
+     ],
+     "q": "Erinnerst du dich an dein erstes Kreuzworträtsel und wo du es gelöst hast?",
+     "c": "Löse den Hinweis: „Haustier, das miaut (5 Buchstaben)“. Schreibe die Buchstaben in Kästchen und prüfe die Länge."
+    },
+    "es": {
+     "t": "Lo básico del crucigrama",
+     "g": "Entender cómo funcionan juntos la cuadrícula, las pistas numeradas, horizontales y verticales.",
+     "p": [
+      "Un crucigrama tiene casillas blancas para las letras y casillas negras que separan las palabras.",
+      "Un número marca dónde empieza cada respuesta, y las pistas se agrupan en horizontales y verticales.",
+      "Las respuestas se cruzan, así que cada letra que aciertas ayuda con al menos otra palabra."
+     ],
+     "q": "¿Recuerdas el primer crucigrama que intentaste y dónde lo hiciste?",
+     "c": "Resuelve esta pista: «Animal que ladra (5 letras)». Escribe las letras en casillas y comprueba la longitud."
+    },
+    "fr": {
+     "t": "Les bases des mots croisés",
+     "g": "Comprendre comment grille, définitions numérotées, horizontal et vertical fonctionnent ensemble.",
+     "p": [
+      "Une grille de mots croisés a des cases blanches pour les lettres et des cases noires qui séparent les mots.",
+      "Un numéro marque le début de chaque réponse, et les définitions sont classées en horizontal et vertical.",
+      "Les réponses se croisent : chaque lettre trouvée aide au moins un autre mot."
+     ],
+     "q": "Te souviens-tu de ton premier mots croisés et de l'endroit où tu l'as fait ?",
+     "c": "Résous cette définition : « Animal qui miaule (4 lettres) ». Place les lettres dans les cases et vérifie la longueur."
+    },
+    "it": {
+     "t": "Le basi delle parole crociate",
+     "g": "Capire come lavorano insieme griglia, definizioni numerate, orizzontali e verticali.",
+     "p": [
+      "Uno schema di parole crociate ha caselle bianche per le lettere e caselle nere che separano le parole.",
+      "Un numero indica dove inizia ogni risposta, e le definizioni sono divise in orizzontali e verticali.",
+      "Le risposte si incrociano, quindi ogni lettera trovata aiuta almeno un'altra parola."
+     ],
+     "q": "Ricordi le prime parole crociate che hai provato e dove le hai fatte?",
+     "c": "Risolvi questa definizione: «Animale che miagola (5 lettere)». Metti le lettere nelle caselle e controlla la lunghezza."
+    },
+    "pt": {
+     "t": "Noções básicas de palavras cruzadas",
+     "g": "Perceber como funcionam em conjunto a grelha, as pistas numeradas, horizontais e verticais.",
+     "p": [
+      "Umas palavras cruzadas têm quadrados brancos para as letras e quadrados pretos que separam as palavras.",
+      "Um número marca onde começa cada resposta, e as pistas dividem-se em horizontais e verticais.",
+      "As respostas cruzam-se, por isso cada letra que acertas ajuda pelo menos outra palavra."
+     ],
+     "q": "Lembras-te das primeiras palavras cruzadas que tentaste e onde as fizeste?",
+     "c": "Resolve esta pista: «Animal que mia (4 letras)». Põe as letras nos quadrados e confirma o tamanho."
+    },
+    "pt_BR": {
+     "t": "Noções básicas de palavras cruzadas",
+     "g": "Entender como grade, pistas numeradas, horizontais e verticais funcionam juntas.",
+     "p": [
+      "Uma cruzadinha tem quadradinhos brancos para as letras e quadradinhos pretos que separam as palavras.",
+      "Um número marca onde começa cada resposta, e as pistas se dividem em horizontais e verticais.",
+      "As respostas se cruzam, então cada letra que você acerta ajuda pelo menos outra palavra."
+     ],
+     "q": "Você lembra da primeira cruzadinha que tentou e onde fez?",
+     "c": "Resolva esta pista: «Animal que mia (4 letras)». Ponha as letras nos quadradinhos e confira o tamanho."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The first crossword",
+     "g": "Hear how Arthur Wynne published a 'word-cross' in a New York newspaper in 1913.",
+     "p": [
+      "On 21 December 1913 the journalist Arthur Wynne printed a 'word-cross' in the New York World.",
+      "His grid was diamond-shaped and came with simple numbered clues.",
+      "The name soon became 'crossword', and the puzzle spread to newspapers and books around the world."
+     ],
+     "q": "Which newspaper or magazine puzzle has been part of your life or your family's life?",
+     "c": "Write your own clue for the word SUN in under ten words, then test it on a friend."
+    },
+    "de": {
+     "t": "Das erste Kreuzworträtsel",
+     "g": "Erfahren, wie Arthur Wynne 1913 in einer New Yorker Zeitung ein „Word-Cross“ veröffentlichte.",
+     "p": [
+      "Am 21. Dezember 1913 druckte der Journalist Arthur Wynne in der New York World ein „Word-Cross“.",
+      "Sein Gitter hatte die Form einer Raute und kam mit einfachen nummerierten Hinweisen.",
+      "Der Name wurde bald zu „Crossword“, und das Rätsel eroberte Zeitungen und Bücher in aller Welt."
+     ],
+     "q": "Welches Zeitungs- oder Zeitschriftenrätsel gehörte zu deinem Leben oder dem deiner Familie?",
+     "c": "Schreibe einen eigenen Hinweis für das Wort SONNE in unter zehn Wörtern und teste ihn an einem Freund."
+    },
+    "es": {
+     "t": "El primer crucigrama",
+     "g": "Conocer cómo Arthur Wynne publicó un «word-cross» en un periódico de Nueva York en 1913.",
+     "p": [
+      "El 21 de diciembre de 1913 el periodista Arthur Wynne publicó un «word-cross» en el New York World.",
+      "Su cuadrícula tenía forma de rombo y traía pistas numeradas sencillas.",
+      "El nombre pronto pasó a ser «crossword», y el pasatiempo se extendió por periódicos y libros de todo el mundo."
+     ],
+     "q": "¿Qué pasatiempo de periódico o revista ha formado parte de tu vida o la de tu familia?",
+     "c": "Escribe tu propia pista para la palabra SOL en menos de diez palabras y pruébala con un amigo."
+    },
+    "fr": {
+     "t": "Le premier mots croisés",
+     "g": "Découvrir comment Arthur Wynne publia un « word-cross » dans un journal new-yorkais en 1913.",
+     "p": [
+      "Le 21 décembre 1913, le journaliste Arthur Wynne fit paraître un « word-cross » dans le New York World.",
+      "Sa grille avait la forme d'un losange, avec des définitions numérotées simples.",
+      "Le nom devint vite « crossword », et le jeu se répandit dans les journaux et les livres du monde entier."
+     ],
+     "q": "Quel jeu de journal ou de magazine a fait partie de ta vie ou de celle de ta famille ?",
+     "c": "Écris ta propre définition du mot SOLEIL en moins de dix mots et teste-la sur un ami."
+    },
+    "it": {
+     "t": "Il primo cruciverba",
+     "g": "Scoprire come Arthur Wynne pubblicò un «word-cross» su un giornale di New York nel 1913.",
+     "p": [
+      "Il 21 dicembre 1913 il giornalista Arthur Wynne pubblicò un «word-cross» sul New York World.",
+      "Lo schema aveva forma di rombo e semplici definizioni numerate.",
+      "Il nome divenne presto «crossword», e il gioco si diffuse su giornali e libri di tutto il mondo."
+     ],
+     "q": "Quale gioco di giornale o rivista ha fatto parte della tua vita o di quella della tua famiglia?",
+     "c": "Scrivi una tua definizione per la parola SOLE in meno di dieci parole e provala su un amico."
+    },
+    "pt": {
+     "t": "O primeiro crucigrama",
+     "g": "Saber como Arthur Wynne publicou um «word-cross» num jornal de Nova Iorque em 1913.",
+     "p": [
+      "A 21 de dezembro de 1913 o jornalista Arthur Wynne publicou um «word-cross» no New York World.",
+      "A grelha tinha forma de losango e trazia pistas numeradas simples.",
+      "O nome passou depressa a «crossword», e o passatempo espalhou-se por jornais e livros de todo o mundo."
+     ],
+     "q": "Que passatempo de jornal ou revista já fez parte da tua vida ou da tua família?",
+     "c": "Escreve a tua própria pista para a palavra SOL em menos de dez palavras e testa-a com um amigo."
+    },
+    "pt_BR": {
+     "t": "A primeira cruzadinha",
+     "g": "Saber como Arthur Wynne publicou um «word-cross» num jornal de Nova York em 1913.",
+     "p": [
+      "Em 21 de dezembro de 1913 o jornalista Arthur Wynne publicou um «word-cross» no New York World.",
+      "A grade tinha forma de losango e vinha com pistas numeradas simples.",
+      "O nome logo virou «crossword», e o passatempo se espalhou por jornais e livros do mundo todo."
+     ],
+     "q": "Que passatempo de jornal ou revista já fez parte da sua vida ou da sua família?",
+     "c": "Escreva sua própria pista para a palavra SOL em menos de dez palavras e teste com um amigo."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "comedy",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why we laugh",
+     "g": "Understand laughter as a social signal that brings people closer.",
+     "p": [
+      "We laugh far more often with other people than when we are alone.",
+      "Shared laughter says: we are on the same side, we feel safe together.",
+      "Laughing together can ease nerves and make new friends feel close."
+     ],
+     "q": "When did you last laugh until your cheeks hurt, and who was with you?",
+     "c": "Today, make one person smile with a friendly remark and notice how it feels."
+    },
+    "de": {
+     "t": "Warum wir lachen",
+     "g": "Lachen als soziales Signal verstehen, das Menschen näher zusammenbringt.",
+     "p": [
+      "Wir lachen viel öfter mit anderen als allein.",
+      "Gemeinsames Lachen sagt: Wir stehen auf derselben Seite und fühlen uns sicher.",
+      "Zusammen zu lachen nimmt Nervosität und lässt neue Freunde schneller vertraut werden."
+     ],
+     "q": "Wann hast du zuletzt Tränen gelacht, und wer war dabei?",
+     "c": "Bring heute einen Menschen mit einer netten Bemerkung zum Lächeln und achte darauf, wie sich das anfühlt."
+    },
+    "es": {
+     "t": "Por qué reímos",
+     "g": "Entender la risa como una señal social que acerca a las personas.",
+     "p": [
+      "Nos reímos muchísimo más con otras personas que a solas.",
+      "La risa compartida dice: estamos del mismo lado y nos sentimos seguros.",
+      "Reír juntos calma los nervios y hace que los nuevos amigos se sientan cerca."
+     ],
+     "q": "¿Cuándo fue la última vez que te reíste hasta que te dolió la cara, y con quién?",
+     "c": "Hoy haz sonreír a alguien con un comentario amable y fíjate en cómo te sientes."
+    },
+    "fr": {
+     "t": "Pourquoi on rit",
+     "g": "Comprendre le rire comme un signal social qui rapproche les gens.",
+     "p": [
+      "On rit beaucoup plus souvent avec les autres que tout seul.",
+      "Un rire partagé dit : nous sommes du même côté et nous nous sentons en sécurité.",
+      "Rire ensemble apaise le stress et rapproche les nouveaux amis."
+     ],
+     "q": "À quand remonte ton dernier fou rire, et avec qui étais-tu ?",
+     "c": "Aujourd'hui, fais sourire quelqu'un avec une remarque gentille et observe ce que tu ressens."
+    },
+    "it": {
+     "t": "Perché ridiamo",
+     "g": "Capire la risata come un segnale sociale che avvicina le persone.",
+     "p": [
+      "Ridiamo molto più spesso in compagnia che da soli.",
+      "Una risata condivisa dice: siamo dalla stessa parte e ci sentiamo al sicuro.",
+      "Ridere insieme scioglie la tensione e fa sentire vicini i nuovi amici."
+     ],
+     "q": "Quand'è stata l'ultima volta che hai riso fino alle lacrime, e con chi eri?",
+     "c": "Oggi strappa un sorriso a qualcuno con una battuta gentile e nota come ti senti."
+    },
+    "pt": {
+     "t": "Porque rimos",
+     "g": "Perceber o riso como um sinal social que aproxima as pessoas.",
+     "p": [
+      "Rimos muito mais vezes com os outros do que sozinhos.",
+      "O riso partilhado diz: estamos do mesmo lado e sentimo-nos seguros.",
+      "Rir em conjunto alivia a tensão e aproxima os novos amigos."
+     ],
+     "q": "Quando foi a última vez que riste até te doer a barriga, e com quem estavas?",
+     "c": "Hoje, faz alguém sorrir com um comentário simpático e repara no que sentes."
+    },
+    "pt_BR": {
+     "t": "Por que a gente ri",
+     "g": "Entender a risada como um sinal social que aproxima as pessoas.",
+     "p": [
+      "A gente ri muito mais com os outros do que sozinho.",
+      "A risada compartilhada diz: estamos do mesmo lado e nos sentimos seguros.",
+      "Rir junto alivia a tensão e deixa os novos amigos mais próximos."
+     ],
+     "q": "Quando foi a última vez que você riu até doer a barriga, e com quem estava?",
+     "c": "Hoje, faça alguém sorrir com um comentário simpático e perceba como você se sente."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What makes something funny",
+     "g": "Spot the three ingredients hiding inside most jokes.",
+     "p": [
+      "Surprise: the ending goes somewhere we did not expect.",
+      "A harmless twist: nobody gets hurt, the unexpected turn is just playful.",
+      "Shared understanding: the listener must know the same everyday things as you."
+     ],
+     "q": "Think of a joke you love. Which ingredient makes it work for you?",
+     "c": "Pick one joke and name its surprise out loud, to yourself or to a friend."
+    },
+    "de": {
+     "t": "Was etwas lustig macht",
+     "g": "Die drei Zutaten erkennen, die in den meisten Witzen stecken.",
+     "p": [
+      "Überraschung: Das Ende geht dorthin, wo wir es nicht erwartet haben.",
+      "Eine harmlose Wendung: Niemand wird verletzt, die Wendung ist nur spielerisch.",
+      "Gemeinsames Verständnis: Das Publikum muss dieselben Alltagsdinge kennen wie du."
+     ],
+     "q": "Denk an einen Witz, den du liebst. Welche Zutat lässt ihn bei dir wirken?",
+     "c": "Such dir einen Witz aus und benenne seine Überraschung laut, für dich oder einen Freund."
+    },
+    "es": {
+     "t": "Qué hace gracioso algo",
+     "g": "Descubrir los tres ingredientes escondidos en casi todos los chistes.",
+     "p": [
+      "Sorpresa: el final va a un lugar que no esperábamos.",
+      "Un giro inofensivo: nadie sale herido, el cambio es solo un juego.",
+      "Comprensión compartida: quien escucha debe conocer las mismas cosas cotidianas que tú."
+     ],
+     "q": "Piensa en un chiste que te encante. ¿Qué ingrediente hace que funcione?",
+     "c": "Elige un chiste y di en voz alta cuál es su sorpresa, a solas o con un amigo."
+    },
+    "fr": {
+     "t": "Ce qui rend une chose drôle",
+     "g": "Repérer les trois ingrédients cachés dans la plupart des blagues.",
+     "p": [
+      "La surprise : la fin va là où on ne l'attendait pas.",
+      "Un détour inoffensif : personne n'est blessé, le virage est juste joueur.",
+      "Une compréhension partagée : l'auditeur doit connaître les mêmes choses du quotidien que toi."
+     ],
+     "q": "Pense à une blague que tu adores. Quel ingrédient la fait fonctionner pour toi ?",
+     "c": "Choisis une blague et nomme sa surprise à voix haute, seul ou avec un ami."
+    },
+    "it": {
+     "t": "Cosa rende divertente una cosa",
+     "g": "Riconoscere i tre ingredienti nascosti nella maggior parte delle barzellette.",
+     "p": [
+      "La sorpresa: il finale va dove non ci aspettavamo.",
+      "Una svolta innocua: nessuno si fa male, il cambio di rotta è solo un gioco.",
+      "Comprensione condivisa: chi ascolta deve conoscere le stesse cose quotidiane che conosci tu."
+     ],
+     "q": "Pensa a una barzelletta che ami. Quale ingrediente la fa funzionare per te?",
+     "c": "Scegli una barzelletta e dì a voce alta qual è la sua sorpresa, da solo o con un amico."
+    },
+    "pt": {
+     "t": "O que torna algo engraçado",
+     "g": "Descobrir os três ingredientes escondidos na maioria das piadas.",
+     "p": [
+      "Surpresa: o final vai para onde não esperávamos.",
+      "Uma reviravolta inofensiva: ninguém se magoa, a mudança é só brincadeira.",
+      "Compreensão partilhada: quem ouve tem de conhecer as mesmas coisas do dia a dia que tu."
+     ],
+     "q": "Pensa numa piada de que gostes. Que ingrediente a faz funcionar para ti?",
+     "c": "Escolhe uma piada e diz em voz alta qual é a surpresa, sozinho ou com um amigo."
+    },
+    "pt_BR": {
+     "t": "O que torna algo engraçado",
+     "g": "Descobrir os três ingredientes escondidos na maioria das piadas.",
+     "p": [
+      "Surpresa: o final vai para onde a gente não esperava.",
+      "Uma virada inofensiva: ninguém se machuca, a mudança é só brincadeira.",
+      "Entendimento compartilhado: quem ouve precisa conhecer as mesmas coisas do dia a dia que você."
+     ],
+     "q": "Pense numa piada de que você gosta. Que ingrediente a faz funcionar?",
+     "c": "Escolha uma piada e diga em voz alta qual é a surpresa, sozinho ou com um amigo."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kind humour versus mean humour",
+     "g": "Learn to laugh with people, never at them.",
+     "p": [
+      "Kind humour includes everyone; mean humour picks a target.",
+      "A good test: would the person we joke about laugh too?",
+      "The best jokes leave everyone in the room smiling, including the quiet ones."
+     ],
+     "q": "Can you think of a joke that made everyone laugh, with nobody left out?",
+     "c": "Today, swap one teasing remark for a joke about yourself or about a silly situation."
+    },
+    "de": {
+     "t": "Freundlicher und fieser Humor",
+     "g": "Lernen, mit Menschen zu lachen und nie über sie.",
+     "p": [
+      "Freundlicher Humor schließt alle ein, fieser Humor sucht sich ein Opfer.",
+      "Ein guter Test: Würde die Person, über die wir scherzen, mitlachen?",
+      "Die besten Witze lassen alle im Raum lächeln, auch die Stillen."
+     ],
+     "q": "Fällt dir ein Witz ein, bei dem alle lachten und niemand ausgeschlossen war?",
+     "c": "Ersetze heute eine spöttische Bemerkung durch einen Witz über dich selbst oder eine komische Situation."
+    },
+    "es": {
+     "t": "Humor amable y humor hiriente",
+     "g": "Aprender a reír con las personas y nunca de ellas.",
+     "p": [
+      "El humor amable incluye a todos; el hiriente busca un blanco.",
+      "Una buena prueba: ¿se reiría también la persona de quien bromeamos?",
+      "Los mejores chistes dejan sonriendo a todos, también a los más callados."
+     ],
+     "q": "¿Se te ocurre un chiste que hizo reír a todos sin dejar a nadie fuera?",
+     "c": "Hoy cambia una burla por un chiste sobre ti o sobre una situación tonta."
+    },
+    "fr": {
+     "t": "Humour bienveillant ou moqueur",
+     "g": "Apprendre à rire avec les gens, jamais à leurs dépens.",
+     "p": [
+      "L'humour bienveillant inclut tout le monde ; l'humour méchant choisit une cible.",
+      "Un bon test : la personne dont on plaisante rirait-elle aussi ?",
+      "Les meilleures blagues font sourire toute la pièce, même les plus discrets."
+     ],
+     "q": "Connais-tu une blague qui a fait rire tout le monde sans exclure personne ?",
+     "c": "Aujourd'hui, remplace une pique par une blague sur toi ou sur une situation cocasse."
+    },
+    "it": {
+     "t": "Umorismo gentile e umorismo cattivo",
+     "g": "Imparare a ridere con le persone, mai di loro.",
+     "p": [
+      "L'umorismo gentile include tutti; quello cattivo sceglie un bersaglio.",
+      "Un buon test: la persona di cui scherziamo riderebbe anche lei?",
+      "Le migliori battute fanno sorridere tutta la stanza, anche i più silenziosi."
+     ],
+     "q": "Ti viene in mente una battuta che ha fatto ridere tutti senza escludere nessuno?",
+     "c": "Oggi sostituisci una frecciatina con una battuta su di te o su una situazione buffa."
+    },
+    "pt": {
+     "t": "Humor simpático e humor maldoso",
+     "g": "Aprender a rir com as pessoas e nunca delas.",
+     "p": [
+      "O humor simpático inclui todos; o maldoso escolhe um alvo.",
+      "Um bom teste: a pessoa de quem brincamos riria também?",
+      "As melhores piadas deixam todos a sorrir, até os mais calados."
+     ],
+     "q": "Lembras-te de uma piada que fez rir toda a gente sem deixar ninguém de fora?",
+     "c": "Hoje, troca uma provocação por uma piada sobre ti ou sobre uma situação parva."
+    },
+    "pt_BR": {
+     "t": "Humor gentil e humor maldoso",
+     "g": "Aprender a rir com as pessoas e nunca delas.",
+     "p": [
+      "O humor gentil inclui todo mundo; o maldoso escolhe um alvo.",
+      "Um bom teste: a pessoa de quem a gente brinca riria também?",
+      "As melhores piadas deixam todos sorrindo, até os mais quietos."
+     ],
+     "q": "Você lembra de uma piada que fez todo mundo rir sem deixar ninguém de fora?",
+     "c": "Hoje, troque uma alfinetada por uma piada sobre você ou sobre uma situação boba."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The anatomy of a joke",
+     "g": "See how a joke builds an expectation and then flips it.",
+     "p": [
+      "The setup paints a normal picture and builds an expectation.",
+      "The punchline flips that picture in a surprising way.",
+      "Keep the setup short: every extra word can weaken the twist."
+     ],
+     "q": "Here is a mini joke: I told my plant a secret, now it is rooted in trust. Where is the flip?",
+     "c": "Write your own setup in one sentence, then add a punchline that flips it."
+    },
+    "de": {
+     "t": "Der Aufbau eines Witzes",
+     "g": "Sehen, wie ein Witz eine Erwartung aufbaut und dann umdreht.",
+     "p": [
+      "Der Aufbau (Setup) malt ein normales Bild und weckt eine Erwartung.",
+      "Die Pointe dreht dieses Bild überraschend um.",
+      "Halte den Aufbau kurz: Jedes Extra-Wort kann die Wendung schwächen."
+     ],
+     "q": "Ein Mini-Witz: Warum können Geister so schlecht lügen? Man sieht durch sie hindurch. Wo liegt die Wendung?",
+     "c": "Schreib einen Aufbau in einem Satz und füge eine Pointe hinzu, die ihn umdreht."
+    },
+    "es": {
+     "t": "La anatomía de un chiste",
+     "g": "Ver cómo un chiste crea una expectativa y luego la da la vuelta.",
+     "p": [
+      "La preparación pinta una imagen normal y crea una expectativa.",
+      "El remate da la vuelta a esa imagen de forma sorprendente.",
+      "Mantén la preparación corta: cada palabra de más puede debilitar el giro."
+     ],
+     "q": "Un mini chiste: ¿Por qué está triste el libro de matemáticas? Porque tiene muchos problemas. ¿Dónde está el giro?",
+     "c": "Escribe una preparación en una frase y añade un remate que la dé la vuelta."
+    },
+    "fr": {
+     "t": "L'anatomie d'une blague",
+     "g": "Voir comment une blague crée une attente, puis la retourne.",
+     "p": [
+      "La mise en place dessine une image normale et crée une attente.",
+      "La chute retourne cette image de façon surprenante.",
+      "Garde la mise en place courte : chaque mot en trop peut affaiblir le retournement."
+     ],
+     "q": "Une mini-blague : pourquoi les plongeurs plongent-ils en arrière ? Sinon ils tombent dans le bateau. Où est le piège ?",
+     "c": "Écris une mise en place en une phrase, puis ajoute une chute qui la retourne."
+    },
+    "it": {
+     "t": "L'anatomia di una barzelletta",
+     "g": "Vedere come una barzelletta crea un'aspettativa e poi la ribalta.",
+     "p": [
+      "La premessa dipinge un quadro normale e crea un'aspettativa.",
+      "La battuta finale ribalta quel quadro in modo sorprendente.",
+      "Tieni breve la premessa: ogni parola in più può indebolire il colpo di scena."
+     ],
+     "q": "Una mini barzelletta: cosa dice un muro a un altro muro? Ci vediamo all'angolo. Dov'è il ribaltamento?",
+     "c": "Scrivi una premessa in una frase, poi aggiungi una battuta finale che la ribalti."
+    },
+    "pt": {
+     "t": "A anatomia de uma piada",
+     "g": "Ver como uma piada cria uma expectativa e depois a vira do avesso.",
+     "p": [
+      "A preparação desenha um quadro normal e cria uma expectativa.",
+      "O remate vira esse quadro do avesso de forma surpreendente.",
+      "Mantém a preparação curta: cada palavra a mais pode enfraquecer a reviravolta."
+     ],
+     "q": "Uma mini piada: o que faz um livro de matemática triste? Tem muitos problemas. Onde está a reviravolta?",
+     "c": "Escreve uma preparação numa frase e junta um remate que a vire do avesso."
+    },
+    "pt_BR": {
+     "t": "A anatomia de uma piada",
+     "g": "Ver como uma piada cria uma expectativa e depois a vira do avesso.",
+     "p": [
+      "A preparação desenha um quadro normal e cria uma expectativa.",
+      "O final vira esse quadro do avesso de um jeito surpreendente.",
+      "Mantenha a preparação curta: cada palavra a mais pode enfraquecer a virada."
+     ],
+     "q": "Uma mini piada: por que o livro de matemática está triste? Porque tem muitos problemas. Onde está a virada?",
+     "c": "Escreva uma preparação em uma frase e acrescente um final que a vire do avesso."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first joke to tell",
+     "g": "Choose a short, clean joke and practise it until it feels natural.",
+     "p": [
+      "Pick a joke you genuinely find funny; your enjoyment is contagious.",
+      "Short and clean is best: easy to remember and safe for any audience.",
+      "Practise out loud two or three times, then tell it in your own words."
+     ],
+     "q": "Which short clean joke would you like to make your own?",
+     "c": "Tell your chosen joke to one person today, and enjoy their reaction."
+    },
+    "de": {
+     "t": "Dein erster Witz zum Erzählen",
+     "g": "Einen kurzen, sauberen Witz auswählen und üben, bis er natürlich klingt.",
+     "p": [
+      "Wähle einen Witz, den du wirklich lustig findest; deine Freude steckt an.",
+      "Kurz und sauber ist am besten: leicht zu merken und für jedes Publikum geeignet.",
+      "Übe zwei- oder dreimal laut und erzähl ihn dann in deinen eigenen Worten."
+     ],
+     "q": "Welchen kurzen, sauberen Witz möchtest du zu deinem machen?",
+     "c": "Erzähl deinen gewählten Witz heute einer Person und genieße ihre Reaktion."
+    },
+    "es": {
+     "t": "Tu primer chiste para contar",
+     "g": "Elegir un chiste corto y limpio y practicarlo hasta que salga natural.",
+     "p": [
+      "Elige un chiste que de verdad te haga gracia; tu disfrute es contagioso.",
+      "Corto y limpio es lo mejor: fácil de recordar y apto para cualquier público.",
+      "Practica en voz alta dos o tres veces y cuéntalo con tus propias palabras."
+     ],
+     "q": "¿Qué chiste corto y limpio te gustaría hacer tuyo?",
+     "c": "Cuéntale hoy tu chiste a una persona y disfruta de su reacción."
+    },
+    "fr": {
+     "t": "Ta première blague à raconter",
+     "g": "Choisir une blague courte et propre et la répéter jusqu'à ce qu'elle soit naturelle.",
+     "p": [
+      "Choisis une blague qui te fait vraiment rire ; ton plaisir est contagieux.",
+      "Courte et propre, c'est l'idéal : facile à retenir et adaptée à tous les publics.",
+      "Répète à voix haute deux ou trois fois, puis raconte-la avec tes propres mots."
+     ],
+     "q": "Quelle blague courte et propre aimerais-tu faire tienne ?",
+     "c": "Raconte aujourd'hui ta blague à une personne et savoure sa réaction."
+    },
+    "it": {
+     "t": "La tua prima barzelletta da raccontare",
+     "g": "Scegliere una barzelletta breve e pulita ed esercitarla finché viene naturale.",
+     "p": [
+      "Scegli una barzelletta che ti fa davvero ridere; il tuo divertimento è contagioso.",
+      "Breve e pulita è meglio: facile da ricordare e adatta a ogni pubblico.",
+      "Esercitati ad alta voce due o tre volte, poi raccontala con parole tue."
+     ],
+     "q": "Quale barzelletta breve e pulita vorresti fare tua?",
+     "c": "Racconta oggi la tua barzelletta a una persona e goditi la sua reazione."
+    },
+    "pt": {
+     "t": "A tua primeira piada para contar",
+     "g": "Escolher uma piada curta e limpa e treiná-la até soar natural.",
+     "p": [
+      "Escolhe uma piada que realmente te faça rir; a tua alegria é contagiante.",
+      "Curta e limpa é o melhor: fácil de lembrar e adequada a qualquer público.",
+      "Treina em voz alta duas ou três vezes e conta-a com as tuas palavras."
+     ],
+     "q": "Que piada curta e limpa gostarias de tornar tua?",
+     "c": "Conta hoje a tua piada a uma pessoa e desfruta da reação dela."
+    },
+    "pt_BR": {
+     "t": "Sua primeira piada para contar",
+     "g": "Escolher uma piada curta e limpa e treinar até soar natural.",
+     "p": [
+      "Escolha uma piada que realmente faça você rir; sua alegria é contagiante.",
+      "Curta e limpa é o melhor: fácil de lembrar e adequada para qualquer público.",
+      "Treine em voz alta duas ou três vezes e conte com as suas palavras."
+     ],
+     "q": "Que piada curta e limpa você gostaria de fazer sua?",
+     "c": "Conte hoje a sua piada para uma pessoa e curta a reação dela."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Puns: playing with sounds",
+     "g": "Discover how sounds and double meanings spark a little joy.",
+     "p": [
+      "A pun plays on words that sound alike or have two meanings.",
+      "Example: I used to be a baker, but I could not make enough dough.",
+      "Groans and smiles are both a win; a pun is a tiny word game."
+     ],
+     "q": "Can you build a pun with the word light, which means bright and not heavy?",
+     "c": "Create one pun about a food or object near you and share it."
+    },
+    "de": {
+     "t": "Wortspiele: Spaß mit Klängen",
+     "g": "Entdecken, wie Klänge und Doppelbedeutungen kleine Freude auslösen.",
+     "p": [
+      "Ein Wortspiel nutzt Wörter, die ähnlich klingen oder zwei Bedeutungen haben.",
+      "Beispiel: Wie heißt ein Bumerang, der nicht zurückkommt? Stock.",
+      "Stöhnen und Lächeln sind beide ein Erfolg; ein Wortspiel ist ein winziges Spiel."
+     ],
+     "q": "Kannst du ein Wortspiel mit dem Wort Schlange bauen, Tier oder Warteschlange?",
+     "c": "Erfinde ein Wortspiel über ein Essen oder einen Gegenstand in deiner Nähe und teile es."
+    },
+    "es": {
+     "t": "Juegos de palabras: jugar con los sonidos",
+     "g": "Descubrir cómo los sonidos y los dobles sentidos crean pequeñas chispas de alegría.",
+     "p": [
+      "Un juego de palabras usa palabras que suenan parecido o tienen dos significados.",
+      "Ejemplo: ¿Qué hace una abeja en el gimnasio? ¡Zum-ba!",
+      "Una mueca y una sonrisa son victoria; un juego de palabras es un mini juego."
+     ],
+     "q": "¿Puedes inventar un juego de palabras con la palabra banco: asiento o dinero?",
+     "c": "Crea un juego de palabras sobre una comida o un objeto cercano y compártelo."
+    },
+    "fr": {
+     "t": "Les calembours : jouer avec les sons",
+     "g": "Découvrir comment les sons et les doubles sens créent de petites étincelles de joie.",
+     "p": [
+      "Un calembour joue sur des mots qui se ressemblent ou ont deux sens.",
+      "Exemple : Pourquoi les poissons détestent-ils l'ordinateur ? Peur du net.",
+      "Un grognement ou un sourire, c'est gagné ; un calembour est un mini jeu de mots."
+     ],
+     "q": "Peux-tu inventer un jeu de mots avec le mot mouche, insecte ou bien visé ?",
+     "c": "Invente un calembour sur un aliment ou un objet près de toi et partage-le."
+    },
+    "it": {
+     "t": "Giochi di parole: divertirsi con i suoni",
+     "g": "Scoprire come suoni e doppi sensi accendono una piccola scintilla di gioia.",
+     "p": [
+      "Un gioco di parole sfrutta parole che suonano simili o hanno due significati.",
+      "Esempio: qual è il colmo per un barbiere? Perdere il filo del discorso e tagliare corto.",
+      "Un sospiro e un sorriso sono entrambi una vittoria; è un mini gioco."
+     ],
+     "q": "Riesci a costruire un gioco di parole con la parola riso, cibo o risata?",
+     "c": "Crea un gioco di parole su un cibo o un oggetto vicino a te e condividilo."
+    },
+    "pt": {
+     "t": "Trocadilhos: brincar com os sons",
+     "g": "Descobrir como os sons e os duplos sentidos criam pequenas faíscas de alegria.",
+     "p": [
+      "Um trocadilho joga com palavras que soam parecido ou têm dois sentidos.",
+      "Exemplo: o que diz uma impressora a outra? Esse papel é teu ou é impressão minha?",
+      "Um gemido e um sorriso são ambos vitória; um trocadilho é um mini jogo de palavras."
+     ],
+     "q": "Consegues criar um trocadilho com a palavra manga, fruta ou parte da camisa?",
+     "c": "Cria um trocadilho sobre uma comida ou um objeto perto de ti e partilha-o."
+    },
+    "pt_BR": {
+     "t": "Trocadilhos: brincar com os sons",
+     "g": "Descobrir como os sons e os duplos sentidos criam pequenas faíscas de alegria.",
+     "p": [
+      "Um trocadilho brinca com palavras que soam parecido ou têm dois sentidos.",
+      "Exemplo: o que o pato disse para a pata? Vem quá!",
+      "Um gemido e um sorriso são ambos vitória; um trocadilho é um mini jogo de palavras."
+     ],
+     "q": "Você consegue criar um trocadilho com a palavra manga, fruta ou parte da camisa?",
+     "c": "Crie um trocadilho sobre uma comida ou um objeto perto de você e compartilhe."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Knock-knock jokes",
+     "g": "Learn the call-and-response format where the listener joins the joke.",
+     "p": [
+      "Knock-knock! Who is there? The listener must play along, so they are part of it.",
+      "The name given is the setup; the punchline twists it into a word play.",
+      "Example: Knock knock. Who is there? Boo. Boo who? Do not cry, it is only a joke."
+     ],
+     "q": "Do you know a knock-knock joke from your childhood? Share it with me!",
+     "c": "Tell one knock-knock joke to someone and let them say the answers."
+    },
+    "de": {
+     "t": "Klopf-klopf-Witze",
+     "g": "Das Frage-Antwort-Format kennenlernen, bei dem das Publikum mitspielt.",
+     "p": [
+      "Klopf, klopf! Wer ist da? Die andere Person muss mitspielen und gehört zum Witz.",
+      "Der genannte Name ist der Aufbau; die Pointe verdreht ihn zu einem Wortspiel.",
+      "Beispiel: Klopf klopf. Wer ist da? Buh. Buh wer? Nicht weinen, es ist nur ein Witz."
+     ],
+     "q": "Kennst du einen Klopf-klopf-Witz aus deiner Kindheit? Erzähl ihn mir!",
+     "c": "Erzähl heute jemandem einen Klopf-klopf-Witz und lass ihn die Antworten sagen."
+    },
+    "es": {
+     "t": "Chistes de toc-toc",
+     "g": "Aprender el formato de pregunta y respuesta en el que quien escucha participa.",
+     "p": [
+      "¡Toc, toc! ¿Quién es? Quien escucha debe seguir el juego, así que forma parte del chiste.",
+      "El nombre que se da es la preparación; el remate lo convierte en juego de palabras.",
+      "Ejemplo: Toc, toc. ¿Quién es? Yo. ¿Yo quién? ¡Ya ni te acuerdas de mí!"
+     ],
+     "q": "¿Recuerdas algún chiste de toc-toc de tu infancia? ¡Cuéntamelo!",
+     "c": "Cuenta hoy un chiste de toc-toc a alguien y deja que diga las respuestas."
+    },
+    "fr": {
+     "t": "Les blagues toc-toc",
+     "g": "Découvrir le format question-réponse où l'auditeur participe à la blague.",
+     "p": [
+      "Toc toc ! Qui est là ? L'autre doit jouer le jeu, il fait donc partie de la blague.",
+      "Le nom donné est la mise en place ; la chute le transforme en jeu de mots.",
+      "Exemple : Toc toc. Qui est là ? Thé. Thé qui ? Thé pas gentil de me laisser dehors !"
+     ],
+     "q": "Connais-tu une blague toc-toc de ton enfance ? Raconte-la-moi !",
+     "c": "Raconte aujourd'hui une blague toc-toc à quelqu'un et laisse-le dire les réponses."
+    },
+    "it": {
+     "t": "Le barzellette toc-toc",
+     "g": "Imparare il formato domanda e risposta in cui chi ascolta partecipa.",
+     "p": [
+      "Toc toc! Chi è? Chi ascolta deve stare al gioco, quindi fa parte della barzelletta.",
+      "Il nome dato è la premessa; la battuta lo trasforma in un gioco di parole.",
+      "Esempio: Toc toc. Chi è? Pier. Pier chi? Pier favore, apri la porta!"
+     ],
+     "q": "Ricordi una barzelletta toc-toc della tua infanzia? Raccontamela!",
+     "c": "Racconta oggi una barzelletta toc-toc a qualcuno e lascia che dica le risposte."
+    },
+    "pt": {
+     "t": "Piadas de toc-toc",
+     "g": "Aprender o formato pergunta e resposta em que quem ouve participa.",
+     "p": [
+      "Toc, toc! Quem é? Quem ouve tem de alinhar, por isso faz parte da piada.",
+      "O nome dado é a preparação; o remate transforma-o num jogo de palavras.",
+      "Exemplo: Toc toc. Quem é? Alface. Alface quem? Alface a porta, está frio lá fora!"
+     ],
+     "q": "Lembras-te de uma piada de toc-toc da tua infância? Conta-ma!",
+     "c": "Conta hoje uma piada de toc-toc a alguém e deixa que diga as respostas."
+    },
+    "pt_BR": {
+     "t": "Piadas de toc-toc",
+     "g": "Aprender o formato de pergunta e resposta em que quem ouve participa.",
+     "p": [
+      "Toc, toc! Quem é? Quem ouve precisa entrar na brincadeira, então faz parte da piada.",
+      "O nome dito é a preparação; o final transforma ele num jogo de palavras.",
+      "Exemplo: Toc toc. Quem é? Alface. Alface quem? Alface a porta, tá frio aqui fora!"
+     ],
+     "q": "Você lembra de uma piada de toc-toc da infância? Conta pra mim!",
+     "c": "Conte hoje uma piada de toc-toc para alguém e deixe a pessoa dizer as respostas."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Riddle jokes",
+     "g": "Enjoy question-and-answer jokes that tease the brain.",
+     "p": [
+      "A riddle joke asks a question whose answer is a playful surprise.",
+      "Example: What has keys but cannot open locks? A piano.",
+      "Guessing wrong is part of the fun; the answer makes us smile."
+     ],
+     "q": "What is a riddle you remember from childhood?",
+     "c": "Ask someone one riddle today and give them a moment to guess."
+    },
+    "de": {
+     "t": "Rätselwitze",
+     "g": "Frage-Antwort-Witze genießen, die das Gehirn necken.",
+     "p": [
+      "Ein Rätselwitz stellt eine Frage, deren Antwort eine spielerische Überraschung ist.",
+      "Beispiel: Was hat Tasten, kann aber keine Schlösser öffnen? Ein Klavier.",
+      "Falsch raten gehört zum Spaß; die Antwort bringt uns zum Lächeln."
+     ],
+     "q": "An welches Rätsel aus deiner Kindheit erinnerst du dich?",
+     "c": "Stell heute jemandem ein Rätsel und gib ihm einen Moment zum Raten."
+    },
+    "es": {
+     "t": "Chistes de adivinanza",
+     "g": "Disfrutar de chistes de pregunta y respuesta que hacen cosquillas al cerebro.",
+     "p": [
+      "Un chiste de adivinanza hace una pregunta cuya respuesta es una sorpresa divertida.",
+      "Ejemplo: ¿Qué tiene teclas pero no abre puertas? Un piano.",
+      "Equivocarse forma parte de la diversión; la respuesta nos saca una sonrisa."
+     ],
+     "q": "¿Qué adivinanza recuerdas de tu infancia?",
+     "c": "Hoy plantea una adivinanza a alguien y dale un momento para pensar."
+    },
+    "fr": {
+     "t": "Les devinettes drôles",
+     "g": "Savourer les blagues en question-réponse qui chatouillent le cerveau.",
+     "p": [
+      "Une devinette drôle pose une question dont la réponse est une surprise amusante.",
+      "Exemple : qu'est-ce qui a des touches mais n'ouvre pas de portes ? Un piano.",
+      "Se tromper fait partie du plaisir ; la réponse nous fait sourire."
+     ],
+     "q": "De quelle devinette te souviens-tu depuis l'enfance ?",
+     "c": "Pose aujourd'hui une devinette à quelqu'un et laisse-lui un moment pour chercher."
+    },
+    "it": {
+     "t": "Indovinelli buffi",
+     "g": "Divertirsi con barzellette a domanda e risposta che stuzzicano il cervello.",
+     "p": [
+      "Un indovinello buffo pone una domanda la cui risposta è una sorpresa giocosa.",
+      "Esempio: cosa ha i tasti ma non apre le porte? Un pianoforte.",
+      "Sbagliare fa parte del divertimento; la risposta ci fa sorridere."
+     ],
+     "q": "Quale indovinello ricordi dall'infanzia?",
+     "c": "Oggi proponi un indovinello a qualcuno e dagli un momento per pensarci."
+    },
+    "pt": {
+     "t": "Adivinhas engraçadas",
+     "g": "Divertir-se com piadas de pergunta e resposta que picam o cérebro.",
+     "p": [
+      "Uma adivinha engraçada faz uma pergunta cuja resposta é uma surpresa divertida.",
+      "Exemplo: o que tem teclas mas não abre portas? Um piano.",
+      "Errar faz parte da diversão; a resposta faz-nos sorrir."
+     ],
+     "q": "De que adivinha te lembras da infância?",
+     "c": "Hoje propõe uma adivinha a alguém e dá-lhe um momento para pensar."
+    },
+    "pt_BR": {
+     "t": "Charadas engraçadas",
+     "g": "Se divertir com piadas de pergunta e resposta que cutucam o cérebro.",
+     "p": [
+      "Uma charada engraçada faz uma pergunta cuja resposta é uma surpresa divertida.",
+      "Exemplo: o que tem teclas mas não abre portas? Um piano.",
+      "Errar faz parte da diversão; a resposta faz a gente sorrir."
+     ],
+     "q": "De qual charada você lembra da infância?",
+     "c": "Hoje proponha uma charada para alguém e dê um tempinho para pensar."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dad jokes and groaners",
+     "g": "See why a groan can still be a success that spreads good mood.",
+     "p": [
+      "Dad jokes are gentle, predictable puns that make people groan and smile.",
+      "Example: I only know 25 letters of the alphabet. I do not know y.",
+      "The groan is the applause; the joke has done its job."
+     ],
+     "q": "What is the best groaner you know? Do not be shy!",
+     "c": "Tell one groaner today and look for the smile hiding behind the eye roll."
+    },
+    "de": {
+     "t": "Flachwitze und Kalauer",
+     "g": "Sehen, warum ein Stöhnen trotzdem ein Erfolg ist und gute Laune verbreitet.",
+     "p": [
+      "Flachwitze sind sanfte, vorhersehbare Wortspiele, die zum Stöhnen und Lächeln bringen.",
+      "Beispiel: Was ist grün und klopft an die Tür? Ein Klopfsalat.",
+      "Das Stöhnen ist der Applaus; der Witz hat seine Aufgabe erfüllt."
+     ],
+     "q": "Was ist der beste Kalauer, den du kennst? Nur keine Scheu!",
+     "c": "Erzähl heute einen Kalauer und such das Lächeln hinter dem Augenrollen."
+    },
+    "es": {
+     "t": "Chistes malos y de padre",
+     "g": "Ver por qué un quejido puede ser un éxito que reparte buen humor.",
+     "p": [
+      "Los chistes malos son juegos de palabras suaves y previsibles que hacen gemir y sonreír.",
+      "Ejemplo: ¿Cuál es el colmo de un electricista? Que su mujer se llame Luz y no le haga caso.",
+      "El quejido es el aplauso; el chiste ha cumplido su misión."
+     ],
+     "q": "¿Cuál es el chiste malo más bueno que conoces? ¡No te cortes!",
+     "c": "Cuenta hoy un chiste malo y busca la sonrisa escondida tras los ojos en blanco."
+    },
+    "fr": {
+     "t": "Blagues de papa et jeux de mots foireux",
+     "g": "Voir pourquoi un grognement peut être un succès qui répand la bonne humeur.",
+     "p": [
+      "Les blagues de papa sont des jeux de mots doux et prévisibles qui font grogner et sourire.",
+      "Exemple : que fait une fraise sur un cheval ? Tagada tagada !",
+      "Le grognement est l'applaudissement ; la blague a rempli sa mission."
+     ],
+     "q": "Quelle est la meilleure blague de papa que tu connaisses ? Ne sois pas timide !",
+     "c": "Raconte aujourd'hui une blague de papa et cherche le sourire derrière les yeux au ciel."
+    },
+    "it": {
+     "t": "Barzellette da papà e battute pessime",
+     "g": "Capire perché un mugugno può essere un successo che porta buonumore.",
+     "p": [
+      "Le battute da papà sono giochi di parole gentili e prevedibili che fanno sbuffare e sorridere.",
+      "Esempio: come si chiama un cane senza zampe? Non importa, tanto non viene.",
+      "Il mugugno è l'applauso; la battuta ha fatto il suo dovere."
+     ],
+     "q": "Qual è la battuta pessima più bella che conosci? Non essere timido!",
+     "c": "Oggi racconta una battuta pessima e cerca il sorriso nascosto dietro gli occhi al cielo."
+    },
+    "pt": {
+     "t": "Piadas secas e trocadilhos fracos",
+     "g": "Ver porque um gemido pode ser um sucesso que espalha bom humor.",
+     "p": [
+      "As piadas secas são trocadilhos suaves e previsíveis que fazem gemer e sorrir.",
+      "Exemplo: o que disse o oceano à praia? Nada, só acenou.",
+      "O gemido é o aplauso; a piada cumpriu a sua missão."
+     ],
+     "q": "Qual é a melhor piada seca que conheces? Não tenhas vergonha!",
+     "c": "Hoje conta uma piada seca e procura o sorriso escondido atrás do revirar de olhos."
+    },
+    "pt_BR": {
+     "t": "Piadas de tiozão e trocadilhos sem graça",
+     "g": "Ver por que um gemido pode ser um sucesso que espalha bom humor.",
+     "p": [
+      "Piadas de tiozão são trocadilhos leves e previsíveis que fazem gemer e sorrir.",
+      "Exemplo: o que o oceano disse para a praia? Nada, só acenou.",
+      "O gemido é o aplauso; a piada cumpriu a missão."
+     ],
+     "q": "Qual é a melhor piada de tiozão que você conhece? Sem vergonha!",
+     "c": "Hoje conte uma piada de tiozão e procure o sorriso escondido atrás do revirar de olhos."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The power of surprise",
+     "g": "Learn misdirection: lead the listener one way, then land elsewhere.",
+     "p": [
+      "Misdirection makes the listener assume one story while you prepare another.",
+      "Choose words that fit both meanings, so the twist feels fair.",
+      "Example: I am reading a book on anti-gravity. It is impossible to put down."
+     ],
+     "q": "Can you finish this: I wanted to be a gardener, but the job was too...?",
+     "c": "Take any true everyday sentence and give it a surprising last word."
+    },
+    "de": {
+     "t": "Die Kraft der Überraschung",
+     "g": "Irreführung lernen: Das Publikum in eine Richtung lenken und woanders landen.",
+     "p": [
+      "Bei der Irreführung glaubt der Zuhörer eine Geschichte, während du eine andere vorbereitest.",
+      "Wähle Wörter, die zu beiden Bedeutungen passen, damit die Wendung fair wirkt.",
+      "Beispiel: Ich lese ein Buch über Schwerkraft. Es ist schwer, es aus der Hand zu legen."
+     ],
+     "q": "Kannst du ergänzen: Ich wollte Gärtner werden, aber der Job war mir zu...?",
+     "c": "Nimm einen wahren Alltagssatz und gib ihm ein überraschendes letztes Wort."
+    },
+    "es": {
+     "t": "El poder de la sorpresa",
+     "g": "Aprender el despiste: llevar al oyente por un camino y aterrizar en otro.",
+     "p": [
+      "El despiste hace que el oyente imagine una historia mientras tú preparas otra.",
+      "Elige palabras que encajen en ambos sentidos, para que el giro parezca justo.",
+      "Ejemplo: Estoy leyendo un libro sobre la gravedad. Es imposible soltarlo."
+     ],
+     "q": "¿Puedes terminar esto: Quería ser jardinero, pero el trabajo me parecía muy...?",
+     "c": "Toma una frase cotidiana y verdadera y dale una última palabra sorprendente."
+    },
+    "fr": {
+     "t": "Le pouvoir de la surprise",
+     "g": "Apprendre la fausse piste : mener l'auditeur dans un sens, puis atterrir ailleurs.",
+     "p": [
+      "La fausse piste fait imaginer une histoire à l'auditeur pendant que tu en prépares une autre.",
+      "Choisis des mots qui conviennent aux deux sens, pour que le retournement semble loyal.",
+      "Exemple : je lis un livre sur la gravité. Impossible de le lâcher."
+     ],
+     "q": "Peux-tu finir : je voulais être jardinier, mais le travail était trop...?",
+     "c": "Prends une phrase vraie du quotidien et donne-lui un dernier mot surprenant."
+    },
+    "it": {
+     "t": "Il potere della sorpresa",
+     "g": "Imparare il depistaggio: portare chi ascolta in una direzione e poi atterrare altrove.",
+     "p": [
+      "Il depistaggio fa immaginare una storia mentre tu ne prepari un'altra.",
+      "Scegli parole che vadano bene per entrambi i significati, così il colpo di scena sembra leale.",
+      "Esempio: sto leggendo un libro sulla gravità. È impossibile metterlo giù."
+     ],
+     "q": "Sai completare: volevo fare il giardiniere, ma il lavoro era troppo...?",
+     "c": "Prendi una frase quotidiana vera e dalle una parola finale sorprendente."
+    },
+    "pt": {
+     "t": "O poder da surpresa",
+     "g": "Aprender o despiste: levar quem ouve por um caminho e aterrar noutro.",
+     "p": [
+      "O despiste faz o ouvinte imaginar uma história enquanto preparas outra.",
+      "Escolhe palavras que sirvam os dois sentidos, para a reviravolta parecer justa.",
+      "Exemplo: estou a ler um livro sobre a gravidade. É impossível pousá-lo."
+     ],
+     "q": "Consegues acabar: queria ser jardineiro, mas o trabalho era demasiado...?",
+     "c": "Pega numa frase verdadeira do dia a dia e dá-lhe uma última palavra surpreendente."
+    },
+    "pt_BR": {
+     "t": "O poder da surpresa",
+     "g": "Aprender o despiste: levar quem ouve por um caminho e pousar em outro.",
+     "p": [
+      "O despiste faz o ouvinte imaginar uma história enquanto você prepara outra.",
+      "Escolha palavras que sirvam aos dois sentidos, para a virada parecer justa.",
+      "Exemplo: estou lendo um livro sobre gravidade. É impossível largar."
+     ],
+     "q": "Você consegue terminar: queria ser jardineiro, mas o trabalho era muito...?",
+     "c": "Pegue uma frase verdadeira do dia a dia e dê a ela uma última palavra surpreendente."
+    }
+   }
+  }
+ ]
+}

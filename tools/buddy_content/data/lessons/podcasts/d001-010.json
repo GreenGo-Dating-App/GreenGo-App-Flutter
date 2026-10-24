@@ -1,0 +1,835 @@
+{
+ "topic": "podcasts",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is a podcast?",
+     "g": "Understand what a podcast is and why people love listening to them.",
+     "p": [
+      "A podcast is an audio show you can play whenever you like, not at a fixed time.",
+      "Episodes come out in a series, so you can follow a show that you enjoy.",
+      "There are podcasts about almost any topic, from science to cooking to comedy."
+     ],
+     "q": "What topic would you most like to hear a whole show about?",
+     "c": "Search for one podcast on a topic you like and play its first five minutes."
+    },
+    "de": {
+     "t": "Was ist ein Podcast?",
+     "g": "Verstehen, was ein Podcast ist und warum so viele Menschen gern zuhören.",
+     "p": [
+      "Ein Podcast ist eine Audiosendung, die du jederzeit abspielen kannst, nicht nur zu einer festen Uhrzeit.",
+      "Folgen erscheinen als Serie, so kannst du einer Sendung folgen, die dir gefällt.",
+      "Es gibt Podcasts zu fast jedem Thema, von Wissenschaft über Kochen bis Comedy."
+     ],
+     "q": "Über welches Thema würdest du am liebsten eine ganze Sendung hören?",
+     "c": "Suche einen Podcast zu einem Lieblingsthema und höre die ersten fünf Minuten."
+    },
+    "es": {
+     "t": "¿Qué es un pódcast?",
+     "g": "Entender qué es un pódcast y por qué tanta gente disfruta escuchándolos.",
+     "p": [
+      "Un pódcast es un programa de audio que puedes escuchar cuando quieras, sin horario fijo.",
+      "Los episodios salen en serie, así que puedes seguir el programa que te guste.",
+      "Hay pódcast sobre casi todo: ciencia, cocina, humor y mucho más."
+     ],
+     "q": "¿Sobre qué tema te gustaría escuchar un programa entero?",
+     "c": "Busca un pódcast de un tema que te guste y escucha sus primeros cinco minutos."
+    },
+    "fr": {
+     "t": "Qu'est-ce qu'un podcast ?",
+     "g": "Comprendre ce qu'est un podcast et pourquoi tant de gens aiment l'écouter.",
+     "p": [
+      "Un podcast est une émission audio que l'on écoute quand on veut, sans horaire fixe.",
+      "Les épisodes sortent en série : on peut donc suivre une émission qu'on aime.",
+      "Il existe des podcasts sur presque tout : science, cuisine, humour et bien plus."
+     ],
+     "q": "Sur quel sujet aimerais-tu écouter toute une émission ?",
+     "c": "Cherche un podcast sur un sujet qui te plaît et écoute ses cinq premières minutes."
+    },
+    "it": {
+     "t": "Che cos'è un podcast?",
+     "g": "Capire che cos'è un podcast e perché a tanti piace ascoltarli.",
+     "p": [
+      "Un podcast è un programma audio che ascolti quando vuoi, senza orari fissi.",
+      "Gli episodi escono in serie, così puoi seguire il programma che ti piace.",
+      "Ci sono podcast su quasi tutto: scienza, cucina, comicità e molto altro."
+     ],
+     "q": "Su quale argomento ti piacerebbe ascoltare un intero programma?",
+     "c": "Cerca un podcast su un tema che ami e ascolta i suoi primi cinque minuti."
+    },
+    "pt": {
+     "t": "O que é um podcast?",
+     "g": "Perceber o que é um podcast e porque é que tanta gente gosta de os ouvir.",
+     "p": [
+      "Um podcast é um programa de áudio que podes ouvir quando quiseres, sem horário fixo.",
+      "Os episódios saem em série, por isso podes acompanhar o programa de que gostas.",
+      "Há podcasts sobre quase tudo: ciência, culinária, humor e muito mais."
+     ],
+     "q": "Sobre que tema gostarias de ouvir um programa inteiro?",
+     "c": "Procura um podcast sobre um tema de que gostes e ouve os primeiros cinco minutos."
+    },
+    "pt_BR": {
+     "t": "O que é um podcast?",
+     "g": "Entender o que é um podcast e por que tanta gente adora ouvir.",
+     "p": [
+      "Um podcast é um programa de áudio que você ouve quando quiser, sem horário fixo.",
+      "Os episódios saem em série, então você pode acompanhar o programa de que gosta.",
+      "Tem podcast sobre quase tudo: ciência, culinária, humor e muito mais."
+     ],
+     "q": "Sobre qual assunto você gostaria de ouvir um programa inteiro?",
+     "c": "Procure um podcast de um tema que você curte e ouça os primeiros cinco minutos."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A short history of podcasting",
+     "g": "See how internet radio and feeds led to the podcast boom.",
+     "p": [
+      "Early internet radio let people share audio, but listeners had to be online at set times.",
+      "RSS feeds let shows deliver new episodes automatically to anyone who subscribed.",
+      "The word podcast joined audio and portable players, and the idea grew fast."
+     ],
+     "q": "Do you remember the first time you heard about podcasts?",
+     "c": "Ask one friend or relative how they first discovered podcasts and note their story."
+    },
+    "de": {
+     "t": "Kurze Geschichte des Podcastens",
+     "g": "Sehen, wie Internetradio und Feeds zum Podcast-Boom führten.",
+     "p": [
+      "Frühes Internetradio ließ Menschen Audio teilen, aber man musste zu festen Zeiten online sein.",
+      "RSS-Feeds lieferten neue Folgen automatisch an alle, die eine Sendung abonniert hatten.",
+      "Das Wort Podcast verband Audio mit tragbaren Playern, und die Idee wuchs schnell."
+     ],
+     "q": "Weißt du noch, wann du zum ersten Mal von Podcasts gehört hast?",
+     "c": "Frag eine Person, wie sie Podcasts entdeckt hat, und notiere ihre Geschichte."
+    },
+    "es": {
+     "t": "Breve historia del pódcast",
+     "g": "Ver cómo la radio por internet y los feeds dieron origen al auge del pódcast.",
+     "p": [
+      "La radio por internet permitía compartir audio, pero había que conectarse a horas fijas.",
+      "Los feeds RSS enviaban episodios nuevos automáticamente a quien se suscribía.",
+      "La palabra pódcast unió audio y reproductores portátiles, y la idea creció rápido."
+     ],
+     "q": "¿Recuerdas la primera vez que oíste hablar de los pódcast?",
+     "c": "Pregunta a alguien cómo descubrió los pódcast y apunta su historia."
+    },
+    "fr": {
+     "t": "Brève histoire du podcast",
+     "g": "Voir comment la radio sur internet et les flux ont lancé l'essor du podcast.",
+     "p": [
+      "La radio sur internet permettait de partager du son, mais il fallait être connecté à heure fixe.",
+      "Les flux RSS envoyaient automatiquement les nouveaux épisodes aux abonnés.",
+      "Le mot podcast a uni l'audio et les lecteurs portables, et l'idée a vite grandi."
+     ],
+     "q": "Te souviens-tu de la première fois où tu as entendu parler de podcasts ?",
+     "c": "Demande à un proche comment il a découvert les podcasts et note son histoire."
+    },
+    "it": {
+     "t": "Breve storia del podcast",
+     "g": "Vedere come la radio via internet e i feed hanno portato al boom dei podcast.",
+     "p": [
+      "La radio su internet permetteva di condividere audio, ma bisognava collegarsi a orari fissi.",
+      "I feed RSS consegnavano i nuovi episodi in automatico a chi si iscriveva.",
+      "La parola podcast ha unito audio e lettori portatili, e l'idea è cresciuta in fretta."
+     ],
+     "q": "Ricordi la prima volta che hai sentito parlare di podcast?",
+     "c": "Chiedi a una persona come ha scoperto i podcast e annota la sua storia."
+    },
+    "pt": {
+     "t": "Breve história do podcast",
+     "g": "Ver como a rádio na internet e os feeds levaram ao boom dos podcasts.",
+     "p": [
+      "A rádio na internet permitia partilhar áudio, mas era preciso estar ligado a horas fixas.",
+      "Os feeds RSS enviavam os episódios novos automaticamente a quem se subscrevia.",
+      "A palavra podcast juntou áudio e leitores portáteis, e a ideia cresceu depressa."
+     ],
+     "q": "Lembras-te da primeira vez que ouviste falar de podcasts?",
+     "c": "Pergunta a alguém como descobriu os podcasts e escreve a história dessa pessoa."
+    },
+    "pt_BR": {
+     "t": "Breve história do podcast",
+     "g": "Ver como a rádio na internet e os feeds levaram ao boom dos podcasts.",
+     "p": [
+      "A rádio na internet permitia compartilhar áudio, mas era preciso estar online em horários fixos.",
+      "Os feeds RSS enviavam os episódios novos automaticamente a quem se inscrevia.",
+      "A palavra podcast juntou áudio e tocadores portáteis, e a ideia cresceu rápido."
+     ],
+     "q": "Você lembra a primeira vez que ouviu falar de podcasts?",
+     "c": "Pergunte a alguém como descobriu os podcasts e anote a história dessa pessoa."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How podcasts reach your phone",
+     "g": "Learn in plain words how an episode travels to your device.",
+     "p": [
+      "A podcast has a feed: a list of episodes that the creator updates.",
+      "A podcast app checks feeds for you and fetches new episodes.",
+      "Subscribing simply tells your app which feeds to watch."
+     ],
+     "q": "Which shows would you want delivered automatically to your phone?",
+     "c": "Open your podcast app and find where your subscriptions are listed."
+    },
+    "de": {
+     "t": "Wie Podcasts aufs Handy kommen",
+     "g": "Einfach erklärt: Wie eine Folge zu deinem Gerät gelangt.",
+     "p": [
+      "Ein Podcast hat einen Feed: eine Liste von Folgen, die der Macher aktualisiert.",
+      "Eine Podcast-App prüft Feeds für dich und lädt neue Folgen herunter.",
+      "Abonnieren sagt deiner App nur, welche Feeds sie beobachten soll."
+     ],
+     "q": "Welche Sendungen sollen automatisch auf dein Handy kommen?",
+     "c": "Öffne deine Podcast-App und finde die Liste deiner Abos."
+    },
+    "es": {
+     "t": "Cómo llegan los pódcast al móvil",
+     "g": "Aprender con palabras sencillas cómo viaja un episodio hasta tu dispositivo.",
+     "p": [
+      "Un pódcast tiene un feed: una lista de episodios que el creador va actualizando.",
+      "Una app de pódcast revisa los feeds por ti y descarga los episodios nuevos.",
+      "Suscribirse solo indica a la app qué feeds debe vigilar."
+     ],
+     "q": "¿Qué programas te gustaría recibir automáticamente en el móvil?",
+     "c": "Abre tu app de pódcast y localiza dónde aparecen tus suscripciones."
+    },
+    "fr": {
+     "t": "Comment les podcasts arrivent sur ton téléphone",
+     "g": "Comprendre simplement comment un épisode voyage jusqu'à ton appareil.",
+     "p": [
+      "Un podcast possède un flux : une liste d'épisodes que le créateur met à jour.",
+      "Une appli de podcasts surveille les flux pour toi et récupère les nouveaux épisodes.",
+      "S'abonner indique simplement à l'appli quels flux surveiller."
+     ],
+     "q": "Quelles émissions aimerais-tu recevoir automatiquement sur ton téléphone ?",
+     "c": "Ouvre ton appli de podcasts et repère la liste de tes abonnements."
+    },
+    "it": {
+     "t": "Come arrivano i podcast sul telefono",
+     "g": "Capire con parole semplici come un episodio arriva al tuo dispositivo.",
+     "p": [
+      "Un podcast ha un feed: un elenco di episodi che chi lo crea aggiorna.",
+      "Un'app per podcast controlla i feed per te e scarica i nuovi episodi.",
+      "Iscriversi dice solo all'app quali feed tenere d'occhio."
+     ],
+     "q": "Quali programmi vorresti ricevere in automatico sul telefono?",
+     "c": "Apri la tua app per podcast e trova l'elenco dei tuoi abbonamenti."
+    },
+    "pt": {
+     "t": "Como os podcasts chegam ao telemóvel",
+     "g": "Perceber em palavras simples como um episódio viaja até ao teu aparelho.",
+     "p": [
+      "Um podcast tem um feed: uma lista de episódios que o criador vai atualizando.",
+      "Uma aplicação de podcasts verifica os feeds por ti e descarrega os episódios novos.",
+      "Subscrever só diz à aplicação que feeds deve vigiar."
+     ],
+     "q": "Que programas gostarias de receber automaticamente no telemóvel?",
+     "c": "Abre a tua aplicação de podcasts e encontra a lista das tuas subscrições."
+    },
+    "pt_BR": {
+     "t": "Como os podcasts chegam ao celular",
+     "g": "Entender em palavras simples como um episódio viaja até o seu aparelho.",
+     "p": [
+      "Um podcast tem um feed: uma lista de episódios que o criador vai atualizando.",
+      "Um aplicativo de podcast verifica os feeds por você e baixa os episódios novos.",
+      "Seguir só diz ao aplicativo quais feeds ele deve vigiar."
+     ],
+     "q": "Quais programas você gostaria de receber automaticamente no celular?",
+     "c": "Abra seu aplicativo de podcast e encontre a lista das suas assinaturas."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing a podcast app",
+     "g": "Know what to look for when picking an app that fits you.",
+     "p": [
+      "Easy search and a clear library save time every day.",
+      "Downloads let you listen offline, and a tidy queue plans what plays next.",
+      "Playback speed and sleep timers are small features that matter a lot."
+     ],
+     "q": "What would make a podcast app perfect for your daily routine?",
+     "c": "Write down your top three must-have features, then check your app for them."
+    },
+    "de": {
+     "t": "Eine Podcast-App wählen",
+     "g": "Wissen, worauf es bei einer passenden App ankommt.",
+     "p": [
+      "Einfache Suche und eine übersichtliche Bibliothek sparen täglich Zeit.",
+      "Downloads erlauben Hören ohne Netz, und eine ordentliche Warteschlange plant das Nächste.",
+      "Abspieltempo und Einschlaf-Timer sind kleine Funktionen mit großer Wirkung."
+     ],
+     "q": "Was macht eine Podcast-App für deinen Alltag perfekt?",
+     "c": "Notiere deine drei wichtigsten Funktionen und prüfe, ob deine App sie hat."
+    },
+    "es": {
+     "t": "Elegir una app de pódcast",
+     "g": "Saber qué mirar al elegir una app que se adapte a ti.",
+     "p": [
+      "Una búsqueda fácil y una biblioteca clara ahorran tiempo cada día.",
+      "Las descargas permiten escuchar sin conexión y una cola ordenada planifica lo siguiente.",
+      "La velocidad de reproducción y el temporizador son detalles que importan mucho."
+     ],
+     "q": "¿Qué haría que una app de pódcast fuera perfecta para tu rutina?",
+     "c": "Anota tus tres funciones imprescindibles y comprueba si tu app las tiene."
+    },
+    "fr": {
+     "t": "Choisir une appli de podcasts",
+     "g": "Savoir quoi regarder pour choisir une appli qui te convient.",
+     "p": [
+      "Une recherche simple et une bibliothèque claire font gagner du temps chaque jour.",
+      "Les téléchargements permettent d'écouter hors ligne, et une file bien rangée prévoit la suite.",
+      "La vitesse de lecture et la minuterie de sommeil sont de petits détails très utiles."
+     ],
+     "q": "Qu'est-ce qui rendrait une appli de podcasts parfaite pour ta routine ?",
+     "c": "Note tes trois fonctions indispensables et vérifie si ton appli les propose."
+    },
+    "it": {
+     "t": "Scegliere un'app per podcast",
+     "g": "Sapere cosa cercare per scegliere un'app adatta a te.",
+     "p": [
+      "Una ricerca facile e una libreria chiara fanno risparmiare tempo ogni giorno.",
+      "I download permettono di ascoltare offline e una coda ordinata pianifica il seguito.",
+      "Velocità di riproduzione e timer di spegnimento sono piccoli dettagli che contano."
+     ],
+     "q": "Cosa renderebbe un'app per podcast perfetta per la tua routine?",
+     "c": "Scrivi le tue tre funzioni indispensabili e verifica se la tua app le ha."
+    },
+    "pt": {
+     "t": "Escolher uma aplicação de podcasts",
+     "g": "Saber o que procurar ao escolher uma aplicação que te sirva.",
+     "p": [
+      "Uma pesquisa fácil e uma biblioteca clara poupam tempo todos os dias.",
+      "Os downloads permitem ouvir sem rede e uma fila arrumada planeia o que vem a seguir.",
+      "A velocidade de reprodução e o temporizador são pormenores que contam muito."
+     ],
+     "q": "O que tornaria uma aplicação de podcasts perfeita para a tua rotina?",
+     "c": "Escreve as tuas três funções indispensáveis e vê se a tua aplicação as tem."
+    },
+    "pt_BR": {
+     "t": "Escolher um aplicativo de podcast",
+     "g": "Saber o que procurar ao escolher um aplicativo que combine com você.",
+     "p": [
+      "Uma busca fácil e uma biblioteca clara economizam tempo todo dia.",
+      "Downloads permitem ouvir offline e uma fila organizada planeja o que toca depois.",
+      "Velocidade de reprodução e timer de sono são detalhes que fazem diferença."
+     ],
+     "q": "O que deixaria um aplicativo de podcast perfeito para a sua rotina?",
+     "c": "Anote suas três funções indispensáveis e veja se o seu aplicativo tem todas."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your listening habits",
+     "g": "Notice when and where you could fit podcasts into your day.",
+     "p": [
+      "Commutes, chores and walks are great moments for audio.",
+      "Quiet evenings suit deeper, slower shows that need your attention.",
+      "Matching the show to the moment makes listening feel effortless."
+     ],
+     "q": "When in your day do you have ten spare minutes for audio?",
+     "c": "Pick one daily routine and listen to a short episode during it today."
+    },
+    "de": {
+     "t": "Deine Hörgewohnheiten",
+     "g": "Merken, wann und wo Podcasts in deinen Tag passen.",
+     "p": [
+      "Pendeln, Hausarbeit und Spaziergänge sind ideale Momente für Audio.",
+      "Ruhige Abende passen zu tieferen, langsameren Sendungen, die Aufmerksamkeit brauchen.",
+      "Wenn Sendung und Moment zusammenpassen, fällt das Hören leicht."
+     ],
+     "q": "Wann hast du am Tag zehn freie Minuten für Audio?",
+     "c": "Wähle eine tägliche Routine und höre heute dabei eine kurze Folge."
+    },
+    "es": {
+     "t": "Tus hábitos de escucha",
+     "g": "Notar cuándo y dónde caben los pódcast en tu día.",
+     "p": [
+      "El trayecto, las tareas y los paseos son buenos momentos para el audio.",
+      "Las tardes tranquilas van bien con programas más profundos y pausados.",
+      "Elegir el programa según el momento hace que escuchar sea fácil."
+     ],
+     "q": "¿En qué momento del día tienes diez minutos libres para el audio?",
+     "c": "Elige una rutina diaria y escucha un episodio corto durante ella hoy."
+    },
+    "fr": {
+     "t": "Tes habitudes d'écoute",
+     "g": "Repérer quand et où les podcasts peuvent se glisser dans ta journée.",
+     "p": [
+      "Les trajets, les tâches ménagères et les promenades sont idéaux pour l'audio.",
+      "Les soirées calmes conviennent aux émissions plus profondes qui demandent de l'attention.",
+      "Choisir l'émission selon le moment rend l'écoute naturelle."
+     ],
+     "q": "À quel moment de ta journée as-tu dix minutes libres pour l'audio ?",
+     "c": "Choisis une routine quotidienne et écoute un court épisode pendant celle-ci."
+    },
+    "it": {
+     "t": "Le tue abitudini di ascolto",
+     "g": "Notare quando e dove i podcast possono entrare nella tua giornata.",
+     "p": [
+      "Tragitti, faccende e passeggiate sono momenti ideali per l'audio.",
+      "Le serate tranquille si adattano a programmi più profondi e lenti.",
+      "Scegliere il programma in base al momento rende l'ascolto naturale."
+     ],
+     "q": "In che momento della giornata hai dieci minuti liberi per l'audio?",
+     "c": "Scegli una routine quotidiana e ascolta un episodio breve durante quella."
+    },
+    "pt": {
+     "t": "Os teus hábitos de escuta",
+     "g": "Reparar quando e onde os podcasts cabem no teu dia.",
+     "p": [
+      "Deslocações, tarefas domésticas e passeios são bons momentos para áudio.",
+      "As noites calmas combinam com programas mais profundos e lentos.",
+      "Escolher o programa conforme o momento torna o ouvir mais fácil."
+     ],
+     "q": "Em que altura do dia tens dez minutos livres para áudio?",
+     "c": "Escolhe uma rotina diária e ouve um episódio curto durante ela hoje."
+    },
+    "pt_BR": {
+     "t": "Seus hábitos de escuta",
+     "g": "Perceber quando e onde os podcasts cabem no seu dia.",
+     "p": [
+      "Trajetos, tarefas de casa e caminhadas são ótimos momentos para áudio.",
+      "Noites tranquilas combinam com programas mais profundos e calmos.",
+      "Escolher o programa conforme o momento deixa o ouvir bem mais fácil."
+     ],
+     "q": "Em que hora do dia você tem dez minutos livres para áudio?",
+     "c": "Escolha uma rotina diária e ouça um episódio curto durante ela hoje."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Following, subscribing and queues",
+     "g": "Keep new episodes coming and organise what to play next.",
+     "p": [
+      "Following a show means new episodes appear in your app without searching.",
+      "A queue is your personal playlist: add episodes in the order you want.",
+      "Remove old episodes now and then so your list stays inspiring, not heavy."
+     ],
+     "q": "How many shows can you follow before it feels like too much?",
+     "c": "Follow two shows and add three episodes to your queue in a sensible order."
+    },
+    "de": {
+     "t": "Folgen, abonnieren und Warteschlangen",
+     "g": "Neue Folgen im Blick behalten und das Nächste ordnen.",
+     "p": [
+      "Einer Sendung zu folgen heißt: Neue Folgen erscheinen in der App, ohne Suche.",
+      "Die Warteschlange ist deine Playlist: Füge Folgen in deiner Wunschreihenfolge hinzu.",
+      "Entferne alte Folgen ab und zu, damit deine Liste motiviert statt belastet."
+     ],
+     "q": "Wie vielen Sendungen kannst du folgen, ohne dass es zu viel wird?",
+     "c": "Folge zwei Sendungen und füge drei Folgen sinnvoll geordnet zur Warteschlange hinzu."
+    },
+    "es": {
+     "t": "Seguir, suscribirse y colas",
+     "g": "Mantener los episodios nuevos al día y ordenar qué escuchar después.",
+     "p": [
+      "Seguir un programa hace que los episodios nuevos aparezcan sin buscar.",
+      "La cola es tu lista personal: añade episodios en el orden que quieras.",
+      "Quita episodios viejos de vez en cuando para que tu lista motive y no pese."
+     ],
+     "q": "¿Cuántos programas puedes seguir sin que te agobie?",
+     "c": "Sigue dos programas y añade tres episodios a tu cola en un orden lógico."
+    },
+    "fr": {
+     "t": "Suivre, s'abonner et files d'attente",
+     "g": "Garder les nouveaux épisodes à portée et organiser la suite.",
+     "p": [
+      "Suivre une émission fait apparaître les nouveaux épisodes sans recherche.",
+      "La file d'attente est ta liste perso : ajoute les épisodes dans l'ordre voulu.",
+      "Retire parfois les vieux épisodes pour que ta liste motive au lieu de peser."
+     ],
+     "q": "Combien d'émissions peux-tu suivre sans que ce soit trop ?",
+     "c": "Suis deux émissions et ajoute trois épisodes à ta file dans un ordre logique."
+    },
+    "it": {
+     "t": "Seguire, iscriversi e code",
+     "g": "Tenere a portata i nuovi episodi e organizzare cosa ascoltare dopo.",
+     "p": [
+      "Seguire un programma fa comparire i nuovi episodi senza dover cercare.",
+      "La coda è la tua playlist personale: aggiungi gli episodi nell'ordine che vuoi.",
+      "Rimuovi ogni tanto i vecchi episodi, così la lista motiva invece di pesare."
+     ],
+     "q": "Quanti programmi riesci a seguire senza che diventino troppi?",
+     "c": "Segui due programmi e aggiungi tre episodi alla coda in un ordine sensato."
+    },
+    "pt": {
+     "t": "Seguir, subscrever e filas",
+     "g": "Manter os episódios novos à mão e organizar o que ouvir a seguir.",
+     "p": [
+      "Seguir um programa faz com que os episódios novos apareçam sem pesquisar.",
+      "A fila é a tua lista pessoal: junta episódios pela ordem que quiseres.",
+      "Retira episódios antigos de vez em quando para a lista motivar em vez de pesar."
+     ],
+     "q": "Quantos programas consegues seguir sem ser demasiado?",
+     "c": "Segue dois programas e junta três episódios à fila numa ordem sensata."
+    },
+    "pt_BR": {
+     "t": "Seguir, assinar e filas",
+     "g": "Manter os episódios novos à mão e organizar o que ouvir depois.",
+     "p": [
+      "Seguir um programa faz os episódios novos aparecerem sem precisar buscar.",
+      "A fila é a sua lista pessoal: adicione episódios na ordem que quiser.",
+      "Tire episódios antigos de vez em quando para a lista motivar em vez de pesar."
+     ],
+     "q": "Quantos programas você consegue seguir sem ficar demais?",
+     "c": "Siga dois programas e adicione três episódios à fila em uma ordem sensata."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Playback speed and skipping",
+     "g": "Use speed, chapters and skip buttons wisely.",
+     "p": [
+      "Slightly faster playback saves time on clear, simple speech.",
+      "Complex or emotional stories deserve normal speed so nothing is lost.",
+      "Chapters and skip buttons help you jump past parts you do not need."
+     ],
+     "q": "Do you prefer to listen at normal speed or a little faster?",
+     "c": "Play one episode at normal speed, then a minute at 1.25 times, and compare."
+    },
+    "de": {
+     "t": "Tempo und Vorspulen",
+     "g": "Tempo, Kapitel und Sprungtasten klug nutzen.",
+     "p": [
+      "Etwas schnelleres Abspielen spart Zeit bei klarer, einfacher Sprache.",
+      "Komplexe oder emotionale Geschichten verdienen normales Tempo, damit nichts verloren geht.",
+      "Kapitel und Sprungtasten helfen, Unnötiges zu überspringen."
+     ],
+     "q": "Hörst du lieber im normalen Tempo oder etwas schneller?",
+     "c": "Höre eine Folge normal, dann eine Minute mit 1,25-fachem Tempo, und vergleiche."
+    },
+    "es": {
+     "t": "Velocidad y saltos",
+     "g": "Usar con criterio la velocidad, los capítulos y los botones de salto.",
+     "p": [
+      "Una velocidad algo mayor ahorra tiempo con un habla clara y sencilla.",
+      "Las historias complejas o emotivas merecen velocidad normal para no perder nada.",
+      "Los capítulos y los saltos ayudan a pasar lo que no necesitas."
+     ],
+     "q": "¿Prefieres escuchar a velocidad normal o un poco más rápido?",
+     "c": "Escucha un episodio a velocidad normal, luego un minuto a 1,25 y compara."
+    },
+    "fr": {
+     "t": "Vitesse de lecture et sauts",
+     "g": "Utiliser avec discernement la vitesse, les chapitres et les boutons de saut.",
+     "p": [
+      "Une lecture un peu plus rapide fait gagner du temps avec une parole claire et simple.",
+      "Les histoires complexes ou émouvantes méritent la vitesse normale pour ne rien perdre.",
+      "Les chapitres et les sauts aident à passer ce qui ne t'intéresse pas."
+     ],
+     "q": "Préfères-tu écouter à vitesse normale ou un peu plus vite ?",
+     "c": "Écoute un épisode à vitesse normale, puis une minute à 1,25 fois, et compare."
+    },
+    "it": {
+     "t": "Velocità e salti",
+     "g": "Usare con giudizio velocità, capitoli e tasti di salto.",
+     "p": [
+      "Una riproduzione un po' più veloce fa risparmiare tempo con un parlato chiaro e semplice.",
+      "Le storie complesse o emotive meritano velocità normale per non perdere nulla.",
+      "Capitoli e salti aiutano a superare le parti che non ti servono."
+     ],
+     "q": "Preferisci ascoltare a velocità normale o un po' più veloce?",
+     "c": "Ascolta un episodio a velocità normale, poi un minuto a 1,25x, e confronta."
+    },
+    "pt": {
+     "t": "Velocidade e saltos",
+     "g": "Usar com critério a velocidade, os capítulos e os botões de salto.",
+     "p": [
+      "Uma velocidade um pouco maior poupa tempo com fala clara e simples.",
+      "Histórias complexas ou emotivas merecem velocidade normal para não perder nada.",
+      "Os capítulos e os saltos ajudam a passar o que não precisas."
+     ],
+     "q": "Preferes ouvir à velocidade normal ou um pouco mais depressa?",
+     "c": "Ouve um episódio à velocidade normal, depois um minuto a 1,25x, e compara."
+    },
+    "pt_BR": {
+     "t": "Velocidade e pulos",
+     "g": "Usar com critério a velocidade, os capítulos e os botões de pular.",
+     "p": [
+      "Uma velocidade um pouco maior economiza tempo com fala clara e simples.",
+      "Histórias complexas ou emocionantes merecem velocidade normal para não perder nada.",
+      "Capítulos e botões de pular ajudam a passar o que você não precisa."
+     ],
+     "q": "Você prefere ouvir na velocidade normal ou um pouco mais rápido?",
+     "c": "Ouça um episódio em velocidade normal, depois um minuto em 1,25x, e compare."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How to judge a podcast quickly",
+     "g": "Decide fast whether a show is worth your time.",
+     "p": [
+      "A trailer gives you a taste of tone, topic and voices in two minutes.",
+      "The first episode often explains the show's idea and shows its best intentions.",
+      "A clear description tells you who the show is for and how often it comes out."
+     ],
+     "q": "What makes you stop a show in the first five minutes?",
+     "c": "Judge one new show using only its description, trailer and first three minutes."
+    },
+    "de": {
+     "t": "Einen Podcast schnell beurteilen",
+     "g": "Schnell entscheiden, ob sich eine Sendung lohnt.",
+     "p": [
+      "Ein Trailer zeigt in zwei Minuten Ton, Thema und Stimmen.",
+      "Die erste Folge erklärt oft die Idee der Sendung und ihre besten Absichten.",
+      "Eine klare Beschreibung verrät, für wen die Sendung ist und wie oft sie erscheint."
+     ],
+     "q": "Was lässt dich eine Sendung in den ersten fünf Minuten abbrechen?",
+     "c": "Beurteile eine neue Sendung nur nach Beschreibung, Trailer und den ersten drei Minuten."
+    },
+    "es": {
+     "t": "Cómo juzgar un pódcast rápido",
+     "g": "Decidir enseguida si un programa merece tu tiempo.",
+     "p": [
+      "Un tráiler muestra el tono, el tema y las voces en dos minutos.",
+      "El primer episodio suele explicar la idea del programa y sus mejores intenciones.",
+      "Una descripción clara dice para quién es el programa y cada cuánto sale."
+     ],
+     "q": "¿Qué te hace dejar un programa en los primeros cinco minutos?",
+     "c": "Juzga un programa nuevo solo por su descripción, tráiler y primeros tres minutos."
+    },
+    "fr": {
+     "t": "Juger vite un podcast",
+     "g": "Décider vite si une émission vaut ton temps.",
+     "p": [
+      "Une bande-annonce donne en deux minutes le ton, le sujet et les voix.",
+      "Le premier épisode explique souvent l'idée de l'émission et ses meilleures intentions.",
+      "Une description claire dit à qui s'adresse l'émission et à quel rythme elle sort."
+     ],
+     "q": "Qu'est-ce qui te fait quitter une émission dans les cinq premières minutes ?",
+     "c": "Juge une nouvelle émission avec sa description, sa bande-annonce et trois minutes d'écoute."
+    },
+    "it": {
+     "t": "Giudicare un podcast in fretta",
+     "g": "Decidere in fretta se un programma vale il tuo tempo.",
+     "p": [
+      "Un trailer dà in due minuti tono, tema e voci.",
+      "Il primo episodio spesso spiega l'idea del programma e le sue migliori intenzioni.",
+      "Una descrizione chiara dice a chi è rivolto il programma e ogni quanto esce."
+     ],
+     "q": "Cosa ti fa abbandonare un programma nei primi cinque minuti?",
+     "c": "Giudica un programma nuovo solo da descrizione, trailer e primi tre minuti."
+    },
+    "pt": {
+     "t": "Avaliar um podcast depressa",
+     "g": "Decidir depressa se um programa merece o teu tempo.",
+     "p": [
+      "Um trailer mostra o tom, o tema e as vozes em dois minutos.",
+      "O primeiro episódio costuma explicar a ideia do programa e as suas melhores intenções.",
+      "Uma descrição clara diz a quem se dirige o programa e com que frequência sai."
+     ],
+     "q": "O que te faz largar um programa nos primeiros cinco minutos?",
+     "c": "Avalia um programa novo só pela descrição, pelo trailer e por três minutos."
+    },
+    "pt_BR": {
+     "t": "Avaliar um podcast rápido",
+     "g": "Decidir rápido se um programa vale o seu tempo.",
+     "p": [
+      "Um trailer mostra o tom, o tema e as vozes em dois minutos.",
+      "O primeiro episódio costuma explicar a ideia do programa e as suas melhores intenções.",
+      "Uma descrição clara diz para quem é o programa e com que frequência ele sai."
+     ],
+     "q": "O que faz você largar um programa nos primeiros cinco minutos?",
+     "c": "Avalie um programa novo só pela descrição, pelo trailer e por três minutos."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading show notes",
+     "g": "Use show notes to get more from every episode.",
+     "p": [
+      "Show notes often list links, books and sources mentioned in the audio.",
+      "Timestamps let you jump straight to the part you care about.",
+      "Guest bios help you learn more about the people you just heard."
+     ],
+     "q": "Which episode would you like to explore more deeply after listening?",
+     "c": "Open the notes of one episode and follow one link or timestamp."
+    },
+    "de": {
+     "t": "Shownotes lesen",
+     "g": "Mit Shownotes mehr aus jeder Folge holen.",
+     "p": [
+      "Shownotes nennen oft Links, Bücher und Quellen aus dem Audio.",
+      "Zeitmarken führen dich direkt zu dem Teil, der dich interessiert.",
+      "Gäste-Kurzbiografien helfen, die gehörten Menschen besser kennenzulernen."
+     ],
+     "q": "Welche Folge möchtest du nach dem Hören vertiefen?",
+     "c": "Öffne die Shownotes einer Folge und folge einem Link oder einer Zeitmarke."
+    },
+    "es": {
+     "t": "Leer las notas del programa",
+     "g": "Sacar más partido a cada episodio con las notas.",
+     "p": [
+      "Las notas suelen incluir enlaces, libros y fuentes mencionados en el audio.",
+      "Las marcas de tiempo te llevan directo a la parte que te interesa.",
+      "Las bios de invitados ayudan a conocer mejor a las personas que oíste."
+     ],
+     "q": "¿Qué episodio te gustaría explorar más a fondo tras escucharlo?",
+     "c": "Abre las notas de un episodio y sigue un enlace o una marca de tiempo."
+    },
+    "fr": {
+     "t": "Lire les notes d'émission",
+     "g": "Tirer plus de chaque épisode grâce aux notes.",
+     "p": [
+      "Les notes listent souvent liens, livres et sources cités dans l'audio.",
+      "Les repères de temps t'amènent directement à la partie qui t'intéresse.",
+      "Les présentations d'invités aident à mieux connaître les personnes entendues."
+     ],
+     "q": "Quel épisode aimerais-tu approfondir après l'écoute ?",
+     "c": "Ouvre les notes d'un épisode et suis un lien ou un repère de temps."
+    },
+    "it": {
+     "t": "Leggere le note dell'episodio",
+     "g": "Ricavare di più da ogni episodio con le note.",
+     "p": [
+      "Le note spesso elencano link, libri e fonti citati nell'audio.",
+      "I timestamp ti portano subito alla parte che ti interessa.",
+      "Le biografie degli ospiti aiutano a conoscere meglio le persone ascoltate."
+     ],
+     "q": "Quale episodio vorresti approfondire dopo l'ascolto?",
+     "c": "Apri le note di un episodio e segui un link o un timestamp."
+    },
+    "pt": {
+     "t": "Ler as notas do episódio",
+     "g": "Tirar mais de cada episódio com as notas.",
+     "p": [
+      "As notas costumam listar ligações, livros e fontes citados no áudio.",
+      "As marcas de tempo levam-te direto à parte que te interessa.",
+      "As biografias dos convidados ajudam a conhecer melhor quem ouviste."
+     ],
+     "q": "Que episódio gostarias de aprofundar depois de ouvir?",
+     "c": "Abre as notas de um episódio e segue uma ligação ou uma marca de tempo."
+    },
+    "pt_BR": {
+     "t": "Ler as notas do episódio",
+     "g": "Tirar mais de cada episódio com as notas.",
+     "p": [
+      "As notas costumam listar links, livros e fontes citados no áudio.",
+      "As marcas de tempo levam direto à parte que interessa.",
+      "As bios dos convidados ajudam a conhecer melhor quem você ouviu."
+     ],
+     "q": "Qual episódio você gostaria de aprofundar depois de ouvir?",
+     "c": "Abra as notas de um episódio e siga um link ou uma marca de tempo."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The interview podcast",
+     "g": "Learn how the most common format works: host, guest, conversation.",
+     "p": [
+      "The host prepares questions but follows the guest's interesting turns.",
+      "Good interviews feel like a relaxed chat, not a list of questions.",
+      "The guest brings expertise or a story, and the host guides the listener."
+     ],
+     "q": "If you could interview anyone you admire, whom would you pick?",
+     "c": "Listen to ten minutes of an interview and note one question that worked well."
+    },
+    "de": {
+     "t": "Der Interview-Podcast",
+     "g": "Das häufigste Format verstehen: Gastgeber, Gast, Gespräch.",
+     "p": [
+      "Die Moderation bereitet Fragen vor, folgt aber spannenden Wendungen des Gastes.",
+      "Gute Interviews wirken wie ein entspanntes Gespräch, nicht wie eine Fragenliste.",
+      "Der Gast bringt Wissen oder eine Geschichte mit, die Moderation führt die Hörer."
+     ],
+     "q": "Wen würdest du interviewen, wenn du jeden bewunderten Menschen wählen könntest?",
+     "c": "Höre zehn Minuten eines Interviews und notiere eine Frage, die gut funktionierte."
+    },
+    "es": {
+     "t": "El pódcast de entrevistas",
+     "g": "Aprender cómo funciona el formato más común: anfitrión, invitado, conversación.",
+     "p": [
+      "El anfitrión prepara preguntas pero sigue los giros interesantes del invitado.",
+      "Una buena entrevista parece una charla relajada, no una lista de preguntas.",
+      "El invitado aporta experiencia o una historia y el anfitrión guía al oyente."
+     ],
+     "q": "Si pudieras entrevistar a quien admiras, ¿a quién elegirías?",
+     "c": "Escucha diez minutos de una entrevista y apunta una pregunta que funcionó."
+    },
+    "fr": {
+     "t": "Le podcast d'interview",
+     "g": "Voir comment fonctionne le format le plus courant : hôte, invité, conversation.",
+     "p": [
+      "L'hôte prépare des questions mais suit les détours intéressants de l'invité.",
+      "Une bonne interview ressemble à une discussion détendue, pas à une liste de questions.",
+      "L'invité apporte son expertise ou une histoire, l'hôte guide l'auditeur."
+     ],
+     "q": "Si tu pouvais interviewer une personne que tu admires, qui choisirais-tu ?",
+     "c": "Écoute dix minutes d'une interview et note une question qui a bien fonctionné."
+    },
+    "it": {
+     "t": "Il podcast di interviste",
+     "g": "Capire come funziona il formato più comune: conduttore, ospite, conversazione.",
+     "p": [
+      "Il conduttore prepara le domande ma segue le svolte interessanti dell'ospite.",
+      "Una buona intervista sembra una chiacchierata rilassata, non un elenco di domande.",
+      "L'ospite porta competenza o una storia e il conduttore guida chi ascolta."
+     ],
+     "q": "Se potessi intervistare una persona che ammiri, chi sceglieresti?",
+     "c": "Ascolta dieci minuti di un'intervista e annota una domanda che ha funzionato."
+    },
+    "pt": {
+     "t": "O podcast de entrevistas",
+     "g": "Perceber como funciona o formato mais comum: anfitrião, convidado, conversa.",
+     "p": [
+      "O anfitrião prepara perguntas mas segue as voltas interessantes do convidado.",
+      "Uma boa entrevista parece uma conversa descontraída, não uma lista de perguntas.",
+      "O convidado traz conhecimento ou uma história e o anfitrião guia o ouvinte."
+     ],
+     "q": "Se pudesses entrevistar alguém que admiras, quem escolherias?",
+     "c": "Ouve dez minutos de uma entrevista e anota uma pergunta que funcionou bem."
+    },
+    "pt_BR": {
+     "t": "O podcast de entrevistas",
+     "g": "Entender como funciona o formato mais comum: apresentador, convidado, conversa.",
+     "p": [
+      "O apresentador prepara perguntas, mas acompanha as guinadas interessantes do convidado.",
+      "Uma boa entrevista parece um papo leve, não uma lista de perguntas.",
+      "O convidado traz conhecimento ou uma história e o apresentador guia quem ouve."
+     ],
+     "q": "Se pudesse entrevistar alguém que admira, quem você escolheria?",
+     "c": "Ouça dez minutos de uma entrevista e anote uma pergunta que funcionou bem."
+    }
+   }
+  }
+ ]
+}

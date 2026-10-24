@@ -1,0 +1,835 @@
+{
+ "topic": "cultural_exchange",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to cultural exchange",
+     "g": "See how swapping stories about daily life opens a window onto the world.",
+     "p": [
+      "Everyday details, like what you eat or how you greet people, tell rich stories.",
+      "Cultural exchange is a two-way street: you share and you listen.",
+      "You do not need to travel; a friendly chat is already an exchange."
+     ],
+     "q": "What is one small thing from your daily life that you think is worth sharing?",
+     "c": "Notice one daily habit today and be ready to tell me about it tomorrow."
+    },
+    "de": {
+     "t": "Willkommen beim Kulturaustausch",
+     "g": "Entdecke, wie Geschichten aus dem Alltag ein Fenster zur Welt öffnen.",
+     "p": [
+      "Alltägliche Details wie Essen oder Begrüßungen erzählen viele Geschichten.",
+      "Kulturaustausch ist keine Einbahnstraße: Du erzählst und du hörst zu.",
+      "Du musst nicht reisen; ein freundliches Gespräch ist schon ein Austausch."
+     ],
+     "q": "Welche Kleinigkeit aus deinem Alltag würdest du gern mit anderen teilen?",
+     "c": "Achte heute auf eine Alltagsgewohnheit und erzähl mir morgen davon."
+    },
+    "es": {
+     "t": "Bienvenido al intercambio cultural",
+     "g": "Descubre cómo compartir historias del día a día abre una ventana al mundo.",
+     "p": [
+      "Los detalles cotidianos, como lo que comes o cómo saludas, cuentan mucho.",
+      "El intercambio cultural va en dos direcciones: compartes y escuchas.",
+      "No hace falta viajar; una charla amistosa ya es un intercambio."
+     ],
+     "q": "¿Qué pequeña cosa de tu vida diaria crees que vale la pena compartir?",
+     "c": "Fíjate hoy en un hábito diario y cuéntamelo mañana."
+    },
+    "fr": {
+     "t": "Bienvenue dans l'échange culturel",
+     "g": "Découvre comment partager des histoires du quotidien ouvre une fenêtre sur le monde.",
+     "p": [
+      "Les détails de tous les jours, comme les repas ou les salutations, en disent long.",
+      "L'échange culturel va dans les deux sens : tu partages et tu écoutes.",
+      "Pas besoin de voyager; une conversation amicale est déjà un échange."
+     ],
+     "q": "Quel petit élément de ta vie quotidienne mérite d'être partagé, selon toi ?",
+     "c": "Observe une habitude quotidienne aujourd'hui et raconte-la-moi demain."
+    },
+    "it": {
+     "t": "Benvenuto nello scambio culturale",
+     "g": "Scopri come condividere storie di vita quotidiana apre una finestra sul mondo.",
+     "p": [
+      "I dettagli di ogni giorno, come il cibo o i saluti, raccontano molto.",
+      "Lo scambio culturale è a doppio senso: racconti e ascolti.",
+      "Non serve viaggiare; una chiacchierata amichevole è già uno scambio."
+     ],
+     "q": "Quale piccola cosa della tua vita quotidiana pensi valga la pena condividere?",
+     "c": "Osserva oggi un'abitudine quotidiana e raccontamela domani."
+    },
+    "pt": {
+     "t": "Bem-vindo ao intercâmbio cultural",
+     "g": "Vê como partilhar histórias do dia a dia abre uma janela para o mundo.",
+     "p": [
+      "Os pormenores do quotidiano, como a comida ou os cumprimentos, contam muito.",
+      "O intercâmbio cultural é de dois sentidos: partilhas e ouves.",
+      "Não é preciso viajar; uma conversa simpática já é um intercâmbio."
+     ],
+     "q": "Que pequena coisa do teu dia a dia achas que vale a pena partilhar?",
+     "c": "Repara hoje num hábito diário e conta-me amanhã."
+    },
+    "pt_BR": {
+     "t": "Bem-vindo ao intercâmbio cultural",
+     "g": "Veja como compartilhar histórias do dia a dia abre uma janela para o mundo.",
+     "p": [
+      "Os detalhes do cotidiano, como a comida ou os cumprimentos, contam muito.",
+      "O intercâmbio cultural é de mão dupla: você compartilha e escuta.",
+      "Não precisa viajar; uma conversa amigável já é um intercâmbio."
+     ],
+     "q": "Que pequena coisa do seu dia a dia você acha que vale a pena compartilhar?",
+     "c": "Observe hoje um hábito diário e me conte amanhã."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is culture?",
+     "g": "Understand culture as the shared habits, values, food, language and stories of a group.",
+     "p": [
+      "Culture is learned from family, friends, school and community, not inherited.",
+      "It includes food, music, language, manners, celebrations and ways of thinking.",
+      "Every group has culture, and people often belong to several at once."
+     ],
+     "q": "Which parts of your culture, like food or songs, do you enjoy the most?",
+     "c": "List three things that you would say are part of your culture."
+    },
+    "de": {
+     "t": "Was ist Kultur?",
+     "g": "Verstehe Kultur als gemeinsame Gewohnheiten, Werte, Essen, Sprache und Geschichten.",
+     "p": [
+      "Kultur wird in Familie, Schule und Gemeinschaft gelernt, nicht vererbt.",
+      "Sie umfasst Essen, Musik, Sprache, Umgangsformen, Feste und Denkweisen.",
+      "Jede Gruppe hat Kultur, und Menschen gehören oft zu mehreren zugleich."
+     ],
+     "q": "Welche Teile deiner Kultur, etwa Essen oder Lieder, magst du am liebsten?",
+     "c": "Nenne drei Dinge, die für dich zu deiner Kultur gehören."
+    },
+    "es": {
+     "t": "¿Qué es la cultura?",
+     "g": "Entiende la cultura como los hábitos, valores, comida, idioma e historias que comparte un grupo.",
+     "p": [
+      "La cultura se aprende en familia, con amigos, en la escuela y la comunidad.",
+      "Incluye comida, música, idioma, modales, fiestas y formas de pensar.",
+      "Todo grupo tiene cultura, y muchas personas pertenecen a varias a la vez."
+     ],
+     "q": "¿Qué partes de tu cultura, como la comida o las canciones, disfrutas más?",
+     "c": "Haz una lista de tres cosas que consideres parte de tu cultura."
+    },
+    "fr": {
+     "t": "Qu'est-ce que la culture ?",
+     "g": "Comprends la culture comme les habitudes, valeurs, plats, langue et histoires d'un groupe.",
+     "p": [
+      "La culture s'apprend en famille, entre amis, à l'école et dans la communauté.",
+      "Elle comprend cuisine, musique, langue, manières, fêtes et façons de penser.",
+      "Chaque groupe a une culture, et on appartient souvent à plusieurs à la fois."
+     ],
+     "q": "Quels aspects de ta culture, comme la cuisine ou les chansons, préfères-tu ?",
+     "c": "Note trois choses qui, pour toi, font partie de ta culture."
+    },
+    "it": {
+     "t": "Che cos'è la cultura?",
+     "g": "Capisci la cultura come abitudini, valori, cibo, lingua e storie condivise da un gruppo.",
+     "p": [
+      "La cultura si impara in famiglia, con gli amici, a scuola e nella comunità.",
+      "Comprende cibo, musica, lingua, buone maniere, feste e modi di pensare.",
+      "Ogni gruppo ha una cultura, e spesso si appartiene a più culture insieme."
+     ],
+     "q": "Quali parti della tua cultura, come il cibo o le canzoni, ami di più?",
+     "c": "Elenca tre cose che per te fanno parte della tua cultura."
+    },
+    "pt": {
+     "t": "O que é cultura?",
+     "g": "Percebe a cultura como os hábitos, valores, comida, língua e histórias de um grupo.",
+     "p": [
+      "A cultura aprende-se em família, com amigos, na escola e na comunidade.",
+      "Inclui comida, música, língua, boas maneiras, festas e formas de pensar.",
+      "Todos os grupos têm cultura, e muita gente pertence a várias ao mesmo tempo."
+     ],
+     "q": "Que partes da tua cultura, como a comida ou as canções, mais gostas?",
+     "c": "Faz uma lista de três coisas que fazem parte da tua cultura."
+    },
+    "pt_BR": {
+     "t": "O que é cultura?",
+     "g": "Entenda a cultura como os hábitos, valores, comida, idioma e histórias de um grupo.",
+     "p": [
+      "A cultura se aprende em família, com amigos, na escola e na comunidade.",
+      "Inclui comida, música, idioma, boas maneiras, festas e jeitos de pensar.",
+      "Todo grupo tem cultura, e muita gente pertence a várias ao mesmo tempo."
+     ],
+     "q": "Que partes da sua cultura, como a comida ou as músicas, você mais curte?",
+     "c": "Faça uma lista de três coisas que fazem parte da sua cultura."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The cultural iceberg",
+     "g": "Tell visible traits like food and dress apart from hidden ones like values and attitudes.",
+     "p": [
+      "Above the water: food, clothes, music, festivals. Easy to see.",
+      "Below the water: values, ideas about time, family, respect. Hard to see.",
+      "Most misunderstandings come from the hidden part of the iceberg."
+     ],
+     "q": "Can you think of a hidden value in your culture that visitors might not notice?",
+     "c": "Pick one visible custom of yours and ask yourself which value lies behind it."
+    },
+    "de": {
+     "t": "Der Kultur-Eisberg",
+     "g": "Unterscheide sichtbare Merkmale wie Essen und Kleidung von verborgenen wie Werten und Haltungen.",
+     "p": [
+      "Über dem Wasser: Essen, Kleidung, Musik, Feste. Leicht zu sehen.",
+      "Unter Wasser: Werte, Zeitgefühl, Familie, Respekt. Schwer zu sehen.",
+      "Die meisten Missverständnisse stammen aus dem verborgenen Teil."
+     ],
+     "q": "Fällt dir ein verborgener Wert deiner Kultur ein, den Besucher kaum bemerken?",
+     "c": "Wähle einen sichtbaren Brauch und frage dich, welcher Wert dahintersteckt."
+    },
+    "es": {
+     "t": "El iceberg cultural",
+     "g": "Distingue los rasgos visibles, como la comida y la ropa, de los ocultos, como los valores y actitudes.",
+     "p": [
+      "Sobre el agua: comida, ropa, música, fiestas. Es fácil de ver.",
+      "Bajo el agua: valores, noción del tiempo, familia, respeto. Es difícil de ver.",
+      "Muchos malentendidos nacen de la parte oculta del iceberg."
+     ],
+     "q": "¿Se te ocurre un valor oculto de tu cultura que un visitante no notaría?",
+     "c": "Elige una costumbre visible tuya y piensa qué valor hay detrás."
+    },
+    "fr": {
+     "t": "L'iceberg culturel",
+     "g": "Distingue les traits visibles, comme la cuisine et les vêtements, des traits cachés comme les valeurs.",
+     "p": [
+      "Au-dessus de l'eau : cuisine, vêtements, musique, fêtes. Facile à voir.",
+      "Sous l'eau : valeurs, rapport au temps, famille, respect. Difficile à voir.",
+      "Beaucoup de malentendus viennent de la partie cachée de l'iceberg."
+     ],
+     "q": "Vois-tu une valeur cachée de ta culture qu'un visiteur ne remarquerait pas ?",
+     "c": "Choisis une coutume visible chez toi et cherche la valeur qui est derrière."
+    },
+    "it": {
+     "t": "L'iceberg culturale",
+     "g": "Distingui i tratti visibili, come cibo e abbigliamento, da quelli nascosti come valori e atteggiamenti.",
+     "p": [
+      "Sopra l'acqua: cibo, vestiti, musica, feste. Facile da vedere.",
+      "Sotto l'acqua: valori, senso del tempo, famiglia, rispetto. Difficile da vedere.",
+      "Molti malintesi nascono dalla parte nascosta dell'iceberg."
+     ],
+     "q": "Ti viene in mente un valore nascosto della tua cultura che un visitatore non noterebbe?",
+     "c": "Scegli un'usanza visibile e chiediti quale valore c'è dietro."
+    },
+    "pt": {
+     "t": "O iceberg cultural",
+     "g": "Distingue os traços visíveis, como comida e roupa, dos ocultos, como valores e atitudes.",
+     "p": [
+      "Acima da água: comida, roupa, música, festas. Fácil de ver.",
+      "Abaixo da água: valores, noção de tempo, família, respeito. Difícil de ver.",
+      "Muitos mal-entendidos vêm da parte escondida do iceberg."
+     ],
+     "q": "Lembras-te de um valor oculto da tua cultura que um visitante não notaria?",
+     "c": "Escolhe um costume visível teu e pensa que valor está por trás."
+    },
+    "pt_BR": {
+     "t": "O iceberg cultural",
+     "g": "Distinga os traços visíveis, como comida e roupa, dos ocultos, como valores e atitudes.",
+     "p": [
+      "Acima da água: comida, roupa, música, festas. Fácil de ver.",
+      "Abaixo da água: valores, noção de tempo, família, respeito. Difícil de ver.",
+      "Muitos mal-entendidos vêm da parte escondida do iceberg."
+     ],
+     "q": "Você lembra de um valor oculto da sua cultura que um visitante não notaria?",
+     "c": "Escolha um costume visível seu e pense em que valor está por trás."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Curiosity with respect",
+     "g": "Practise asking questions with an open mind and without assumptions.",
+     "p": [
+      "Open questions like How do you usually celebrate? invite stories.",
+      "Say what you wonder instead of what you think is true about others.",
+      "If someone prefers not to answer, thank them and move on kindly."
+     ],
+     "q": "What is a question about another culture you have always wanted to ask?",
+     "c": "Rewrite one yes/no question into an open, curious question."
+    },
+    "de": {
+     "t": "Neugier mit Respekt",
+     "g": "Übe, mit offenem Geist und ohne Annahmen zu fragen.",
+     "p": [
+      "Offene Fragen wie Wie feiert ihr normalerweise? laden zum Erzählen ein.",
+      "Sag, was du dich fragst, statt zu behaupten, was bei anderen gilt.",
+      "Wenn jemand nicht antworten mag, bedanke dich und geh freundlich weiter."
+     ],
+     "q": "Welche Frage zu einer anderen Kultur wolltest du schon immer stellen?",
+     "c": "Formuliere eine Ja/Nein-Frage in eine offene, neugierige Frage um."
+    },
+    "es": {
+     "t": "Curiosidad con respeto",
+     "g": "Practica preguntar con la mente abierta y sin suposiciones.",
+     "p": [
+      "Las preguntas abiertas, como ¿Cómo suelen celebrar?, invitan a contar historias.",
+      "Di lo que te preguntas en lugar de lo que crees que es verdad de otros.",
+      "Si alguien prefiere no responder, agradece y sigue con amabilidad."
+     ],
+     "q": "¿Qué pregunta sobre otra cultura siempre has querido hacer?",
+     "c": "Convierte una pregunta de sí o no en una pregunta abierta y curiosa."
+    },
+    "fr": {
+     "t": "Curiosité et respect",
+     "g": "Entraîne-toi à poser des questions avec l'esprit ouvert et sans a priori.",
+     "p": [
+      "Les questions ouvertes, comme Comment fêtez-vous d'habitude ?, appellent des histoires.",
+      "Dis ce que tu te demandes plutôt que ce que tu crois vrai des autres.",
+      "Si quelqu'un préfère ne pas répondre, remercie-le et passe gentiment à autre chose."
+     ],
+     "q": "Quelle question sur une autre culture as-tu toujours voulu poser ?",
+     "c": "Transforme une question fermée en question ouverte et curieuse."
+    },
+    "it": {
+     "t": "Curiosità con rispetto",
+     "g": "Esercitati a fare domande con la mente aperta e senza supposizioni.",
+     "p": [
+      "Le domande aperte, come Come festeggiate di solito?, invitano a raccontare.",
+      "Di' ciò che ti chiedi invece di ciò che credi vero sugli altri.",
+      "Se qualcuno preferisce non rispondere, ringrazia e passa oltre con gentilezza."
+     ],
+     "q": "Quale domanda su un'altra cultura hai sempre voluto fare?",
+     "c": "Trasforma una domanda da sì o no in una domanda aperta e curiosa."
+    },
+    "pt": {
+     "t": "Curiosidade com respeito",
+     "g": "Pratica fazer perguntas de mente aberta e sem suposições.",
+     "p": [
+      "Perguntas abertas, como Como costumam celebrar?, convidam a contar histórias.",
+      "Diz o que te perguntas em vez do que achas ser verdade sobre os outros.",
+      "Se alguém preferir não responder, agradece e segue com simpatia."
+     ],
+     "q": "Que pergunta sobre outra cultura sempre quiseste fazer?",
+     "c": "Transforma uma pergunta de sim ou não numa pergunta aberta e curiosa."
+    },
+    "pt_BR": {
+     "t": "Curiosidade com respeito",
+     "g": "Pratique perguntar de mente aberta e sem suposições.",
+     "p": [
+      "Perguntas abertas, como Como vocês costumam comemorar?, convidam a contar histórias.",
+      "Diga o que você se pergunta em vez do que acha ser verdade sobre os outros.",
+      "Se alguém preferir não responder, agradeça e siga com gentileza."
+     ],
+     "q": "Que pergunta sobre outra cultura você sempre quis fazer?",
+     "c": "Transforme uma pergunta de sim ou não em uma pergunta aberta e curiosa."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "People, not stereotypes",
+     "g": "Remember that every person is unique and never represents a whole country.",
+     "p": [
+      "Say many people in a place do something, not all people.",
+      "Two people from the same city can have very different habits and tastes.",
+      "Stereotypes shrink people; curiosity about the person widens the picture."
+     ],
+     "q": "Has anyone ever assumed something about you because of where you are from?",
+     "c": "Replace one generalisation you know with a curious question about a person."
+    },
+    "de": {
+     "t": "Menschen, keine Klischees",
+     "g": "Denke daran: Jeder Mensch ist einzigartig und steht nie für ein ganzes Land.",
+     "p": [
+      "Sag, dass viele Menschen irgendwo etwas tun, nicht alle.",
+      "Zwei Menschen aus derselben Stadt können ganz verschieden leben und mögen.",
+      "Klischees machen Menschen klein; Neugier auf die Person erweitert das Bild."
+     ],
+     "q": "Hat jemand schon einmal etwas über dich angenommen, weil du von irgendwo kommst?",
+     "c": "Ersetze eine Verallgemeinerung durch eine neugierige Frage an einen Menschen."
+    },
+    "es": {
+     "t": "Personas, no estereotipos",
+     "g": "Recuerda que cada persona es única y nunca representa a todo un país.",
+     "p": [
+      "Di que muchas personas en un lugar hacen algo, no todas.",
+      "Dos personas de la misma ciudad pueden tener hábitos y gustos muy distintos.",
+      "Los estereotipos empequeñecen; la curiosidad por la persona amplía la imagen."
+     ],
+     "q": "¿Alguien ha supuesto algo de ti por el lugar de donde vienes?",
+     "c": "Cambia una generalización por una pregunta curiosa a una persona."
+    },
+    "fr": {
+     "t": "Des personnes, pas des clichés",
+     "g": "Rappelle-toi que chaque personne est unique et ne représente jamais un pays entier.",
+     "p": [
+      "Dis que beaucoup de gens quelque part font telle chose, pas tout le monde.",
+      "Deux personnes de la même ville peuvent avoir des goûts très différents.",
+      "Les clichés rétrécissent; la curiosité pour la personne élargit l'image."
+     ],
+     "q": "Quelqu'un a-t-il déjà fait une supposition sur toi à cause de tes origines ?",
+     "c": "Remplace une généralité par une question curieuse adressée à une personne."
+    },
+    "it": {
+     "t": "Persone, non stereotipi",
+     "g": "Ricorda che ogni persona è unica e non rappresenta mai un intero paese.",
+     "p": [
+      "Di' che molte persone in un luogo fanno qualcosa, non tutte.",
+      "Due persone della stessa città possono avere abitudini e gusti molto diversi.",
+      "Gli stereotipi rimpiccioliscono; la curiosità per la persona allarga il quadro."
+     ],
+     "q": "Qualcuno ha mai dato per scontato qualcosa di te per il luogo da cui vieni?",
+     "c": "Sostituisci una generalizzazione con una domanda curiosa a una persona."
+    },
+    "pt": {
+     "t": "Pessoas, não estereótipos",
+     "g": "Lembra-te de que cada pessoa é única e nunca representa um país inteiro.",
+     "p": [
+      "Diz que muitas pessoas num lugar fazem algo, não todas.",
+      "Duas pessoas da mesma cidade podem ter hábitos e gostos muito diferentes.",
+      "Os estereótipos diminuem; a curiosidade pela pessoa alarga a imagem."
+     ],
+     "q": "Alguém já presumiu algo sobre ti por causa de onde vens?",
+     "c": "Troca uma generalização por uma pergunta curiosa a uma pessoa."
+    },
+    "pt_BR": {
+     "t": "Pessoas, não estereótipos",
+     "g": "Lembre-se de que cada pessoa é única e nunca representa um país inteiro.",
+     "p": [
+      "Diga que muitas pessoas num lugar fazem algo, não todas.",
+      "Duas pessoas da mesma cidade podem ter hábitos e gostos bem diferentes.",
+      "Estereótipos diminuem; a curiosidade pela pessoa amplia o quadro."
+     ],
+     "q": "Alguém já presumiu algo sobre você por causa de onde você vem?",
+     "c": "Troque uma generalização por uma pergunta curiosa a uma pessoa."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your culture through fresh eyes",
+     "g": "Notice the habits you never think about because they feel normal.",
+     "p": [
+      "What feels normal to you may surprise a visitor, and the reverse is true too.",
+      "Try to see your street, meals and greetings as a newcomer would.",
+      "Explaining your own habits helps you understand them better."
+     ],
+     "q": "What habit of yours might surprise someone from far away?",
+     "c": "Write down one thing you do daily that you have never questioned."
+    },
+    "de": {
+     "t": "Deine Kultur mit frischem Blick",
+     "g": "Bemerke Gewohnheiten, über die du nie nachdenkst, weil sie normal wirken.",
+     "p": [
+      "Was für dich normal ist, kann Besucher überraschen, und umgekehrt.",
+      "Sieh deine Straße, Mahlzeiten und Begrüßungen wie ein Neuankömmling.",
+      "Wer eigene Gewohnheiten erklärt, versteht sie selbst besser."
+     ],
+     "q": "Welche Gewohnheit von dir könnte jemanden von weit weg überraschen?",
+     "c": "Schreibe eine tägliche Sache auf, die du nie hinterfragt hast."
+    },
+    "es": {
+     "t": "Tu cultura con ojos nuevos",
+     "g": "Fíjate en los hábitos en los que nunca piensas porque te parecen normales.",
+     "p": [
+      "Lo que es normal para ti puede sorprender a un visitante, y al revés.",
+      "Mira tu calle, tus comidas y saludos como lo haría alguien recién llegado.",
+      "Explicar tus costumbres te ayuda a entenderlas mejor."
+     ],
+     "q": "¿Qué hábito tuyo podría sorprender a alguien de muy lejos?",
+     "c": "Anota algo que haces a diario y nunca te has cuestionado."
+    },
+    "fr": {
+     "t": "Ta culture d'un oeil neuf",
+     "g": "Remarque les habitudes auxquelles tu ne penses jamais parce qu'elles semblent normales.",
+     "p": [
+      "Ce qui est normal pour toi peut surprendre un visiteur, et inversement.",
+      "Regarde ta rue, tes repas et tes salutations comme un nouvel arrivant.",
+      "Expliquer tes habitudes t'aide à mieux les comprendre."
+     ],
+     "q": "Quelle habitude à toi pourrait surprendre quelqu'un de très loin ?",
+     "c": "Note une chose que tu fais chaque jour sans jamais te l'être demandé."
+    },
+    "it": {
+     "t": "La tua cultura con occhi nuovi",
+     "g": "Nota le abitudini a cui non pensi mai perché sembrano normali.",
+     "p": [
+      "Ciò che è normale per te può sorprendere un visitatore, e viceversa.",
+      "Guarda la tua strada, i pasti e i saluti come farebbe un nuovo arrivato.",
+      "Spiegare le tue abitudini ti aiuta a capirle meglio."
+     ],
+     "q": "Quale tua abitudine potrebbe sorprendere qualcuno che vive lontano?",
+     "c": "Scrivi una cosa che fai ogni giorno e di cui non ti sei mai chiesto il perché."
+    },
+    "pt": {
+     "t": "A tua cultura com olhos novos",
+     "g": "Repara nos hábitos em que nunca pensas porque parecem normais.",
+     "p": [
+      "O que é normal para ti pode surpreender um visitante, e vice-versa.",
+      "Olha para a tua rua, refeições e cumprimentos como um recém-chegado.",
+      "Explicar os teus hábitos ajuda-te a percebê-los melhor."
+     ],
+     "q": "Que hábito teu poderia surpreender alguém de muito longe?",
+     "c": "Anota uma coisa que fazes todos os dias e nunca questionaste."
+    },
+    "pt_BR": {
+     "t": "Sua cultura com olhos novos",
+     "g": "Perceba os hábitos em que você nunca pensa porque parecem normais.",
+     "p": [
+      "O que é normal para você pode surpreender um visitante, e vice-versa.",
+      "Olhe para a sua rua, refeições e cumprimentos como um recém-chegado.",
+      "Explicar seus hábitos ajuda você a entendê-los melhor."
+     ],
+     "q": "Que hábito seu poderia surpreender alguém de bem longe?",
+     "c": "Anote uma coisa que você faz todo dia e nunca questionou."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Introducing your hometown",
+     "g": "Describe where you come from: its size, landscape and what it is known for.",
+     "p": [
+      "Mention size, landscape, climate and one place locals love.",
+      "Add a food, a festival or a saying that people there enjoy.",
+      "Specific details are more interesting than general words like nice."
+     ],
+     "q": "How would you describe your hometown to a friend who has never seen it?",
+     "c": "Write three sentences about your hometown with one surprising detail."
+    },
+    "de": {
+     "t": "Deine Heimatstadt vorstellen",
+     "g": "Beschreibe, woher du kommst: Größe, Landschaft und wofür der Ort bekannt ist.",
+     "p": [
+      "Nenne Größe, Landschaft, Klima und einen Ort, den Einheimische lieben.",
+      "Füge ein Essen, ein Fest oder einen Spruch hinzu, den man dort mag.",
+      "Konkrete Details sind spannender als allgemeine Wörter wie schön."
+     ],
+     "q": "Wie würdest du deine Heimat einem Freund beschreiben, der sie nie gesehen hat?",
+     "c": "Schreibe drei Sätze über deine Heimat mit einem überraschenden Detail."
+    },
+    "es": {
+     "t": "Presenta tu ciudad natal",
+     "g": "Describe de dónde vienes: su tamaño, paisaje y por qué es conocida.",
+     "p": [
+      "Menciona el tamaño, el paisaje, el clima y un lugar que la gente local ama.",
+      "Añade una comida, una fiesta o un dicho que se disfrute allí.",
+      "Los detalles concretos son más interesantes que palabras como bonito."
+     ],
+     "q": "¿Cómo describirías tu lugar de origen a un amigo que nunca lo ha visto?",
+     "c": "Escribe tres frases sobre tu lugar de origen con un detalle sorprendente."
+    },
+    "fr": {
+     "t": "Présenter ta ville natale",
+     "g": "Décris d'où tu viens : sa taille, son paysage et ce pour quoi elle est connue.",
+     "p": [
+      "Parle de la taille, du paysage, du climat et d'un lieu que les habitants aiment.",
+      "Ajoute un plat, une fête ou un dicton que l'on apprécie là-bas.",
+      "Les détails précis sont plus intéressants que des mots vagues comme joli."
+     ],
+     "q": "Comment décrirais-tu ta ville à un ami qui ne l'a jamais vue ?",
+     "c": "Écris trois phrases sur ta ville avec un détail surprenant."
+    },
+    "it": {
+     "t": "Presenta la tua città natale",
+     "g": "Descrivi da dove vieni: dimensioni, paesaggio e per che cosa è conosciuta.",
+     "p": [
+      "Cita dimensioni, paesaggio, clima e un posto amato dagli abitanti.",
+      "Aggiungi un piatto, una festa o un detto che là si apprezza.",
+      "I dettagli concreti sono più interessanti di parole generiche come bello."
+     ],
+     "q": "Come descriveresti la tua città a un amico che non l'ha mai vista?",
+     "c": "Scrivi tre frasi sulla tua città con un dettaglio sorprendente."
+    },
+    "pt": {
+     "t": "Apresenta a tua terra natal",
+     "g": "Descreve de onde vens: tamanho, paisagem e pelo que é conhecida.",
+     "p": [
+      "Refere o tamanho, a paisagem, o clima e um lugar que os locais adoram.",
+      "Acrescenta uma comida, uma festa ou um ditado de que se gosta aí.",
+      "Pormenores concretos são mais interessantes do que palavras como bonito."
+     ],
+     "q": "Como descreverias a tua terra a um amigo que nunca a viu?",
+     "c": "Escreve três frases sobre a tua terra com um pormenor surpreendente."
+    },
+    "pt_BR": {
+     "t": "Apresente sua cidade natal",
+     "g": "Descreva de onde você vem: tamanho, paisagem e pelo que ela é conhecida.",
+     "p": [
+      "Mencione o tamanho, a paisagem, o clima e um lugar que os locais adoram.",
+      "Acrescente uma comida, uma festa ou um ditado de que se gosta por lá.",
+      "Detalhes concretos são mais interessantes do que palavras como bonito."
+     ],
+     "q": "Como você descreveria sua cidade a um amigo que nunca a viu?",
+     "c": "Escreva três frases sobre sua cidade com um detalhe surpreendente."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Greetings around the world",
+     "g": "Learn how handshakes, bows, cheek kisses and waves are used, and what they mean.",
+     "p": [
+      "Many people shake hands; in Japan a bow is common; the Thai wai presses the palms together.",
+      "In many places, like France, Italy or Brazil, friends often greet with cheek kisses.",
+      "When unsure, watch what others do or let them lead the greeting."
+     ],
+     "q": "How do you usually greet a friend and how do you greet someone new?",
+     "c": "Greet someone today in a way different from your usual one, if appropriate."
+    },
+    "de": {
+     "t": "Begrüßungen weltweit",
+     "g": "Lerne, wie Händedruck, Verbeugung, Wangenkuss und Winken genutzt werden und was sie bedeuten.",
+     "p": [
+      "Viele schütteln Hände; in Japan ist die Verbeugung üblich; der Thai-Wai legt die Handflächen aneinander.",
+      "An vielen Orten, etwa in Frankreich, Italien oder Brasilien, begrüßen Freunde sich oft mit Wangenküssen.",
+      "Bist du unsicher, schau, was andere tun, oder lass sie die Begrüßung beginnen."
+     ],
+     "q": "Wie begrüßt du Freunde, und wie begrüßt du jemand Neuen?",
+     "c": "Begrüße heute jemanden auf eine andere Art als sonst, wenn es passt."
+    },
+    "es": {
+     "t": "Saludos por el mundo",
+     "g": "Aprende cómo se usan los apretones de manos, reverencias, besos en la mejilla y saludos con la mano.",
+     "p": [
+      "Mucha gente da la mano; en Japón es común inclinarse; el wai tailandés junta las palmas.",
+      "En muchos lugares, como Francia, Italia o Brasil, los amigos suelen saludarse con besos.",
+      "Si dudas, observa lo que hacen los demás o deja que ellos inicien el saludo."
+     ],
+     "q": "¿Cómo saludas a un amigo y cómo saludas a alguien que acabas de conocer?",
+     "c": "Saluda hoy a alguien de forma distinta a la habitual, si es apropiado."
+    },
+    "fr": {
+     "t": "Les salutations dans le monde",
+     "g": "Apprends comment on utilise poignées de main, révérences, bises et signes de la main.",
+     "p": [
+      "Beaucoup serrent la main; au Japon on s'incline souvent; le wai thaïlandais joint les paumes.",
+      "Dans beaucoup d'endroits, comme la France, l'Italie ou le Brésil, les amis se font souvent la bise.",
+      "En cas de doute, observe les autres ou laisse-les initier la salutation."
+     ],
+     "q": "Comment salues-tu un ami, et comment salues-tu quelqu'un de nouveau ?",
+     "c": "Salue quelqu'un aujourd'hui autrement que d'habitude, si c'est approprié."
+    },
+    "it": {
+     "t": "Saluti nel mondo",
+     "g": "Scopri come si usano strette di mano, inchini, baci sulla guancia e saluti con la mano.",
+     "p": [
+      "Molti si stringono la mano; in Giappone l'inchino è comune; il wai thailandese unisce i palmi.",
+      "In molti luoghi, come Francia, Italia o Brasile, gli amici si salutano spesso con baci sulle guance.",
+      "Nel dubbio, osserva gli altri o lascia che sia l'altra persona a iniziare."
+     ],
+     "q": "Come saluti un amico e come saluti una persona nuova?",
+     "c": "Oggi saluta qualcuno in modo diverso dal solito, se è appropriato."
+    },
+    "pt": {
+     "t": "Cumprimentos pelo mundo",
+     "g": "Aprende como se usam apertos de mão, vénias, beijinhos e acenos, e o que significam.",
+     "p": [
+      "Muita gente aperta a mão; no Japão a vénia é comum; o wai tailandês junta as palmas.",
+      "Em muitos lugares, como França, Itália ou Brasil, os amigos costumam dar beijinhos.",
+      "Na dúvida, observa o que os outros fazem ou deixa que comecem o cumprimento."
+     ],
+     "q": "Como cumprimentas um amigo e como cumprimentas alguém novo?",
+     "c": "Cumprimenta hoje alguém de forma diferente do habitual, se for adequado."
+    },
+    "pt_BR": {
+     "t": "Cumprimentos pelo mundo",
+     "g": "Aprenda como se usam apertos de mão, reverências, beijinhos e acenos, e o que significam.",
+     "p": [
+      "Muita gente aperta a mão; no Japão a reverência é comum; o wai tailandês junta as palmas.",
+      "Em muitos lugares, como França, Itália ou Brasil, amigos costumam se cumprimentar com beijinhos.",
+      "Na dúvida, observe o que os outros fazem ou deixe que comecem o cumprimento."
+     ],
+     "q": "Como você cumprimenta um amigo e como cumprimenta alguém novo?",
+     "c": "Cumprimente hoje alguém de um jeito diferente do habitual, se for adequado."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hello in many languages",
+     "g": "Learn friendly greetings from different languages.",
+     "p": [
+      "Hola in Spanish, Ciao in Italian, Namaste in Hindi, Konnichiwa in Japanese.",
+      "Salaam, Merhaba, Jambo and Bonjour are friendly hellos in other places.",
+      "Even one greeting in someone's language usually brings a smile."
+     ],
+     "q": "Which greetings do you already know, and which would you like to learn?",
+     "c": "Learn two new greetings today and say them out loud."
+    },
+    "de": {
+     "t": "Hallo in vielen Sprachen",
+     "g": "Lerne freundliche Begrüßungen aus verschiedenen Sprachen.",
+     "p": [
+      "Hola auf Spanisch, Ciao auf Italienisch, Namaste auf Hindi, Konnichiwa auf Japanisch.",
+      "Salaam, Merhaba, Jambo und Bonjour sind freundliche Grüße anderswo.",
+      "Schon ein Gruß in der Sprache anderer entlockt meist ein Lächeln."
+     ],
+     "q": "Welche Grußworte kennst du schon, und welche möchtest du lernen?",
+     "c": "Lerne heute zwei neue Grußworte und sprich sie laut aus."
+    },
+    "es": {
+     "t": "Hola en muchos idiomas",
+     "g": "Aprende saludos amistosos de distintos idiomas.",
+     "p": [
+      "Ciao en italiano, Namaste en hindi, Konnichiwa en japonés, Bonjour en francés.",
+      "Salaam, Merhaba, Jambo y Hello son saludos amistosos en otros lugares.",
+      "Un solo saludo en el idioma de alguien casi siempre arranca una sonrisa."
+     ],
+     "q": "¿Qué saludos ya conoces y cuáles te gustaría aprender?",
+     "c": "Aprende hoy dos saludos nuevos y dilos en voz alta."
+    },
+    "fr": {
+     "t": "Bonjour en plusieurs langues",
+     "g": "Apprends des salutations amicales de différentes langues.",
+     "p": [
+      "Hola en espagnol, Ciao en italien, Namaste en hindi, Konnichiwa en japonais.",
+      "Salaam, Merhaba, Jambo et Hello sont des saluts amicaux ailleurs.",
+      "Même un seul mot dans la langue de quelqu'un fait souvent sourire."
+     ],
+     "q": "Quelles salutations connais-tu déjà, et lesquelles voudrais-tu apprendre ?",
+     "c": "Apprends deux nouvelles salutations aujourd'hui et dis-les à voix haute."
+    },
+    "it": {
+     "t": "Ciao in tante lingue",
+     "g": "Impara saluti amichevoli da lingue diverse.",
+     "p": [
+      "Hola in spagnolo, Bonjour in francese, Namaste in hindi, Konnichiwa in giapponese.",
+      "Salaam, Merhaba, Jambo e Hello sono saluti cordiali altrove.",
+      "Anche un solo saluto nella lingua di qualcuno di solito fa sorridere."
+     ],
+     "q": "Quali saluti conosci già e quali ti piacerebbe imparare?",
+     "c": "Impara oggi due nuovi saluti e dilli ad alta voce."
+    },
+    "pt": {
+     "t": "Olá em muitas línguas",
+     "g": "Aprende cumprimentos simpáticos de diferentes línguas.",
+     "p": [
+      "Hola em espanhol, Ciao em italiano, Namaste em hindi, Konnichiwa em japonês.",
+      "Salaam, Merhaba, Jambo e Bonjour são cumprimentos simpáticos noutros lugares.",
+      "Até um só cumprimento na língua de alguém costuma trazer um sorriso."
+     ],
+     "q": "Que cumprimentos já conheces e quais gostarias de aprender?",
+     "c": "Aprende hoje dois cumprimentos novos e di-los em voz alta."
+    },
+    "pt_BR": {
+     "t": "Olá em muitas línguas",
+     "g": "Aprenda cumprimentos simpáticos de diferentes línguas.",
+     "p": [
+      "Hola em espanhol, Ciao em italiano, Namaste em híndi, Konnichiwa em japonês.",
+      "Salaam, Merhaba, Jambo e Bonjour são cumprimentos simpáticos em outros lugares.",
+      "Até um só cumprimento na língua de alguém costuma render um sorriso."
+     ],
+     "q": "Que cumprimentos você já conhece e quais gostaria de aprender?",
+     "c": "Aprenda hoje dois cumprimentos novos e diga-os em voz alta."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Names and naming traditions",
+     "g": "See how first names, surnames and nicknames work in different cultures.",
+     "p": [
+      "In many Spanish-speaking countries people carry two surnames, one from each parent.",
+      "In Japan and China the family name often comes first, then the given name.",
+      "Nicknames and name meanings often carry family stories and affection."
+     ],
+     "q": "Do you know the story or meaning behind your own name?",
+     "c": "Ask someone about their name today, or look up what yours means."
+    },
+    "de": {
+     "t": "Namen und Namenstraditionen",
+     "g": "Entdecke, wie Vornamen, Nachnamen und Spitznamen in Kulturen funktionieren.",
+     "p": [
+      "In vielen spanischsprachigen Ländern trägt man zwei Nachnamen, je einen von Mutter und Vater.",
+      "In Japan und China steht oft der Familienname vor dem Vornamen.",
+      "Spitznamen und Namensbedeutungen erzählen oft Familiengeschichten und Zuneigung."
+     ],
+     "q": "Kennst du die Geschichte oder Bedeutung deines eigenen Namens?",
+     "c": "Frage heute jemanden nach seinem Namen oder schau nach, was deiner bedeutet."
+    },
+    "es": {
+     "t": "Nombres y tradiciones",
+     "g": "Descubre cómo funcionan los nombres, apellidos y apodos en distintas culturas.",
+     "p": [
+      "En muchos países hispanohablantes se llevan dos apellidos, uno de cada progenitor.",
+      "En Japón y China el apellido suele ir primero y luego el nombre de pila.",
+      "Los apodos y los significados de los nombres suelen guardar historias y cariño."
+     ],
+     "q": "¿Conoces la historia o el significado de tu propio nombre?",
+     "c": "Pregunta hoy a alguien por su nombre, o busca qué significa el tuyo."
+    },
+    "fr": {
+     "t": "Prénoms et traditions",
+     "g": "Découvre comment fonctionnent prénoms, noms de famille et surnoms selon les cultures.",
+     "p": [
+      "Dans beaucoup de pays hispanophones, on porte deux noms, un de chaque parent.",
+      "Au Japon et en Chine, le nom de famille vient souvent avant le prénom.",
+      "Les surnoms et le sens des prénoms portent souvent histoires et affection."
+     ],
+     "q": "Connais-tu l'histoire ou la signification de ton propre prénom ?",
+     "c": "Demande à quelqu'un l'histoire de son prénom, ou cherche le sens du tien."
+    },
+    "it": {
+     "t": "Nomi e tradizioni",
+     "g": "Scopri come funzionano nomi, cognomi e soprannomi nelle varie culture.",
+     "p": [
+      "In molti paesi di lingua spagnola si portano due cognomi, uno per genitore.",
+      "In Giappone e in Cina il cognome viene spesso prima del nome.",
+      "Soprannomi e significati dei nomi spesso raccontano storie di famiglia e affetto."
+     ],
+     "q": "Conosci la storia o il significato del tuo nome?",
+     "c": "Chiedi oggi a qualcuno del suo nome, o cerca cosa significa il tuo."
+    },
+    "pt": {
+     "t": "Nomes e tradições",
+     "g": "Descobre como funcionam nomes próprios, apelidos e alcunhas nas várias culturas.",
+     "p": [
+      "Em muitos países de língua espanhola usam-se dois apelidos, um de cada progenitor.",
+      "No Japão e na China, o apelido de família costuma vir antes do nome próprio.",
+      "Alcunhas e significados dos nomes guardam muitas vezes histórias e carinho."
+     ],
+     "q": "Conheces a história ou o significado do teu próprio nome?",
+     "c": "Pergunta hoje a alguém pelo seu nome, ou procura o que significa o teu."
+    },
+    "pt_BR": {
+     "t": "Nomes e tradições",
+     "g": "Descubra como funcionam nomes, sobrenomes e apelidos nas várias culturas.",
+     "p": [
+      "Em muitos países de língua espanhola usam-se dois sobrenomes, um de cada genitor.",
+      "No Japão e na China, o sobrenome costuma vir antes do nome próprio.",
+      "Apelidos e significados dos nomes muitas vezes guardam histórias e carinho."
+     ],
+     "q": "Você conhece a história ou o significado do seu próprio nome?",
+     "c": "Pergunte hoje a alguém sobre o nome dela, ou descubra o que o seu significa."
+    }
+   }
+  }
+ ]
+}

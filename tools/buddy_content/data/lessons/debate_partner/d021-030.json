@@ -1,0 +1,835 @@
+{
+ "topic": "debate_partner",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "City life vs country life",
+     "g": "Weigh noise, nature, convenience and community in a friendly clash.",
+     "p": [
+      "List what each place offers: services, quiet, space, neighbours.",
+      "Compare on the same points so the debate stays fair.",
+      "Say which point matters most to you and why."
+     ],
+     "q": "City or countryside: where do you feel most at home?",
+     "c": "Name one strong point for the lifestyle you did not choose."
+    },
+    "de": {
+     "t": "Stadtleben gegen Landleben",
+     "g": "Wäge Lärm, Natur, Komfort und Gemeinschaft in einem freundlichen Schlagabtausch ab.",
+     "p": [
+      "Liste auf, was jeder Ort bietet: Angebote, Ruhe, Platz, Nachbarn.",
+      "Vergleiche anhand derselben Punkte, damit die Debatte fair bleibt.",
+      "Sage, welcher Punkt dir am wichtigsten ist und warum."
+     ],
+     "q": "Stadt oder Land: Wo fühlst du dich am meisten zu Hause?",
+     "c": "Nenne einen starken Punkt für den Lebensstil, den du nicht gewählt hast."
+    },
+    "es": {
+     "t": "Vida en la ciudad contra vida en el campo",
+     "g": "Sopesa ruido, naturaleza, comodidad y comunidad en un choque amistoso.",
+     "p": [
+      "Enumera lo que ofrece cada lugar: servicios, calma, espacio, vecinos.",
+      "Compara con los mismos puntos para que el debate sea justo.",
+      "Di qué punto te importa más y por qué."
+     ],
+     "q": "¿Ciudad o campo: dónde te sientes más en casa?",
+     "c": "Nombra un punto fuerte del estilo de vida que no elegiste."
+    },
+    "fr": {
+     "t": "Vie en ville contre vie à la campagne",
+     "g": "Pèse bruit, nature, confort et communauté dans un duel amical.",
+     "p": [
+      "Liste ce que chaque lieu offre : services, calme, espace, voisins.",
+      "Compare sur les mêmes points pour que le débat reste équitable.",
+      "Dis quel point compte le plus pour toi et pourquoi."
+     ],
+     "q": "Ville ou campagne : où te sens-tu le plus chez toi ?",
+     "c": "Cite un point fort du mode de vie que tu n'as pas choisi."
+    },
+    "it": {
+     "t": "Vita di città contro vita di campagna",
+     "g": "Pesa rumore, natura, comodità e comunità in uno scontro amichevole.",
+     "p": [
+      "Elenca cosa offre ogni luogo: servizi, quiete, spazio, vicini.",
+      "Confronta sugli stessi punti perché il dibattito resti equo.",
+      "Dì quale punto conta di più per te e perché."
+     ],
+     "q": "Città o campagna: dove ti senti più a casa?",
+     "c": "Nomina un punto forte dello stile di vita che non hai scelto."
+    },
+    "pt": {
+     "t": "Vida na cidade contra vida no campo",
+     "g": "Pondera ruído, natureza, comodidade e comunidade num choque amigável.",
+     "p": [
+      "Lista o que cada lugar oferece: serviços, sossego, espaço, vizinhos.",
+      "Compara nos mesmos pontos para o debate ser justo.",
+      "Diz que ponto te importa mais e porquê."
+     ],
+     "q": "Cidade ou campo: onde te sentes mais em casa?",
+     "c": "Indica um ponto forte do estilo de vida que não escolheste."
+    },
+    "pt_BR": {
+     "t": "Vida na cidade contra vida no campo",
+     "g": "Pondere barulho, natureza, comodidade e comunidade num confronto amigável.",
+     "p": [
+      "Liste o que cada lugar oferece: serviços, sossego, espaço, vizinhos.",
+      "Compare nos mesmos pontos para o debate ser justo.",
+      "Diga que ponto importa mais para você e por quê."
+     ],
+     "q": "Cidade ou campo: onde você se sente mais em casa?",
+     "c": "Cite um ponto forte do estilo de vida que você não escolheu."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Speaking clearly and briefly",
+     "g": "Make your point in short sentences that are easy to follow.",
+     "p": [
+      "One idea per sentence keeps listeners with you.",
+      "Cut filler words and get to the point in the first line.",
+      "Short does not mean shallow; it means well chosen."
+     ],
+     "q": "Explain why you like your hobby in only three sentences.",
+     "c": "Shrink your longest recent message to one clear sentence."
+    },
+    "de": {
+     "t": "Klar und kurz sprechen",
+     "g": "Bringe deinen Punkt in kurzen, leicht verständlichen Sätzen vor.",
+     "p": [
+      "Eine Idee pro Satz hält die Zuhörer bei dir.",
+      "Streiche Füllwörter und komm in der ersten Zeile zum Punkt.",
+      "Kurz heißt nicht flach, sondern gut gewählt."
+     ],
+     "q": "Erkläre in nur drei Sätzen, warum du dein Hobby magst.",
+     "c": "Kürze deine längste letzte Nachricht auf einen klaren Satz."
+    },
+    "es": {
+     "t": "Hablar con claridad y brevedad",
+     "g": "Expón tu idea en frases cortas y fáciles de seguir.",
+     "p": [
+      "Una idea por frase mantiene a los oyentes contigo.",
+      "Quita muletillas y ve al grano en la primera línea.",
+      "Breve no significa superficial; significa bien elegido."
+     ],
+     "q": "Explica en solo tres frases por qué te gusta tu afición.",
+     "c": "Reduce tu último mensaje más largo a una frase clara."
+    },
+    "fr": {
+     "t": "Parler clairement et brièvement",
+     "g": "Expose ton idée en phrases courtes et faciles à suivre.",
+     "p": [
+      "Une idée par phrase garde les auditeurs avec toi.",
+      "Supprime les mots de remplissage et va à l'essentiel dès la première ligne.",
+      "Court ne veut pas dire superficiel, mais bien choisi."
+     ],
+     "q": "Explique en trois phrases seulement pourquoi tu aimes ton loisir.",
+     "c": "Réduis ton dernier long message à une phrase claire."
+    },
+    "it": {
+     "t": "Parlare in modo chiaro e breve",
+     "g": "Esponi la tua idea con frasi corte e facili da seguire.",
+     "p": [
+      "Un'idea per frase tiene gli ascoltatori con te.",
+      "Togli i riempitivi e vai al punto già nella prima riga.",
+      "Breve non vuol dire superficiale, ma ben scelto."
+     ],
+     "q": "Spiega in sole tre frasi perché ti piace il tuo hobby.",
+     "c": "Riduci il tuo ultimo messaggio lungo a una frase chiara."
+    },
+    "pt": {
+     "t": "Falar com clareza e brevidade",
+     "g": "Expõe a tua ideia em frases curtas e fáceis de seguir.",
+     "p": [
+      "Uma ideia por frase mantém os ouvintes contigo.",
+      "Corta palavras de enchimento e vai direto ao assunto na primeira linha.",
+      "Curto não é superficial; é bem escolhido."
+     ],
+     "q": "Explica em apenas três frases porque gostas do teu passatempo.",
+     "c": "Reduz a tua última mensagem comprida a uma frase clara."
+    },
+    "pt_BR": {
+     "t": "Falar com clareza e brevidade",
+     "g": "Exponha sua ideia em frases curtas e fáceis de seguir.",
+     "p": [
+      "Uma ideia por frase mantém os ouvintes com você.",
+      "Corte palavras de enchimento e vá direto ao ponto na primeira linha.",
+      "Curto não é superficial; é bem escolhido."
+     ],
+     "q": "Explique em apenas três frases por que você gosta do seu hobby.",
+     "c": "Reduza sua última mensagem longa a uma frase clara."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pineapple on pizza",
+     "g": "The famous food fight: taste, tradition and the freedom to experiment.",
+     "p": [
+      "Separate taste, which is personal, from tradition, which is cultural.",
+      "Reasons like sweet meets salty are arguments; yuck is only a feeling.",
+      "Respect that food is about enjoyment, so keep it playful."
+     ],
+     "q": "Pineapple on pizza: yes or no, and what is your best reason?",
+     "c": "Design a pizza topping you would defend in a friendly debate."
+    },
+    "de": {
+     "t": "Ananas auf Pizza",
+     "g": "Der berühmte Essensstreit: Geschmack, Tradition und die Freiheit zu experimentieren.",
+     "p": [
+      "Trenne Geschmack, der persönlich ist, von Tradition, die kulturell ist.",
+      "Gründe wie süß trifft salzig sind Argumente; igitt ist nur ein Gefühl.",
+      "Essen soll Freude machen, also bleib spielerisch."
+     ],
+     "q": "Ananas auf Pizza: ja oder nein, und was ist dein bester Grund?",
+     "c": "Erfinde einen Pizzabelag, den du in einer freundlichen Debatte verteidigen würdest."
+    },
+    "es": {
+     "t": "Piña en la pizza",
+     "g": "La famosa pelea gastronómica: gusto, tradición y libertad de experimentar.",
+     "p": [
+      "Separa el gusto, que es personal, de la tradición, que es cultural.",
+      "Razones como dulce con salado son argumentos; qué asco es solo un sentimiento.",
+      "La comida es disfrute, así que mantenlo en tono de juego."
+     ],
+     "q": "Piña en la pizza: ¿sí o no, y cuál es tu mejor razón?",
+     "c": "Diseña un ingrediente de pizza que defenderías en un debate amistoso."
+    },
+    "fr": {
+     "t": "L'ananas sur la pizza",
+     "g": "La fameuse bataille culinaire : goût, tradition et liberté d'expérimenter.",
+     "p": [
+      "Sépare le goût, qui est personnel, de la tradition, qui est culturelle.",
+      "Des raisons comme le sucré-salé sont des arguments ; beurk n'est qu'un ressenti.",
+      "La cuisine est un plaisir, alors reste dans le jeu."
+     ],
+     "q": "Ananas sur la pizza : oui ou non, et quelle est ta meilleure raison ?",
+     "c": "Invente une garniture de pizza que tu défendrais dans un débat amical."
+    },
+    "it": {
+     "t": "Ananas sulla pizza",
+     "g": "La famosa lite culinaria: gusto, tradizione e libertà di sperimentare.",
+     "p": [
+      "Separa il gusto, che è personale, dalla tradizione, che è culturale.",
+      "Ragioni come dolce e salato sono argomenti; che schifo è solo una sensazione.",
+      "Il cibo è piacere, quindi resta sul gioco."
+     ],
+     "q": "Ananas sulla pizza: sì o no, e qual è la tua ragione migliore?",
+     "c": "Inventa un ingrediente per la pizza che difenderesti in un dibattito amichevole."
+    },
+    "pt": {
+     "t": "Ananás na pizza",
+     "g": "A famosa luta gastronómica: gosto, tradição e liberdade de experimentar.",
+     "p": [
+      "Separa o gosto, que é pessoal, da tradição, que é cultural.",
+      "Razões como doce com salgado são argumentos; que nojo é só uma sensação.",
+      "A comida é prazer, por isso mantém o tom de brincadeira."
+     ],
+     "q": "Ananás na pizza: sim ou não, e qual é a tua melhor razão?",
+     "c": "Cria um ingrediente de pizza que defenderias num debate amigável."
+    },
+    "pt_BR": {
+     "t": "Abacaxi na pizza",
+     "g": "A famosa briga gastronômica: gosto, tradição e liberdade de experimentar.",
+     "p": [
+      "Separe o gosto, que é pessoal, da tradição, que é cultural.",
+      "Razões como doce com salgado são argumentos; que nojo é só uma sensação.",
+      "Comida é prazer, então mantenha o clima de brincadeira."
+     ],
+     "q": "Abacaxi na pizza: sim ou não, e qual é a sua melhor razão?",
+     "c": "Crie uma cobertura de pizza que você defenderia num debate amigável."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Common ground first",
+     "g": "Start a reply by naming what you both agree on.",
+     "p": [
+      "Find the shared goal before you discuss the difference.",
+      "Say it out loud: We both want a fun weekend, so...",
+      "Starting from agreement makes the disagreement feel smaller."
+     ],
+     "q": "Think of a recent disagreement. What did you actually agree on?",
+     "c": "Begin your next reply with one sentence of common ground."
+    },
+    "de": {
+     "t": "Zuerst die Gemeinsamkeit",
+     "g": "Beginne eine Antwort damit, was ihr beide gleich seht.",
+     "p": [
+      "Finde das gemeinsame Ziel, bevor du über den Unterschied sprichst.",
+      "Sag es laut: Wir wollen beide ein schönes Wochenende, also...",
+      "Mit Einigkeit zu starten lässt den Unterschied kleiner wirken."
+     ],
+     "q": "Denk an eine neue Meinungsverschiedenheit. Worin wart ihr euch einig?",
+     "c": "Beginne deine nächste Antwort mit einem Satz Gemeinsamkeit."
+    },
+    "es": {
+     "t": "Primero lo que compartimos",
+     "g": "Empieza una respuesta nombrando lo que ambos compartís.",
+     "p": [
+      "Encuentra la meta común antes de hablar de la diferencia.",
+      "Dilo en voz alta: Los dos queremos un buen fin de semana, así que...",
+      "Partir del acuerdo hace que el desacuerdo parezca menor."
+     ],
+     "q": "Piensa en un desacuerdo reciente. ¿En qué estabais de acuerdo?",
+     "c": "Empieza tu próxima respuesta con una frase de terreno común."
+    },
+    "fr": {
+     "t": "D'abord le terrain d'entente",
+     "g": "Commence une réponse en nommant ce sur quoi vous êtes d'accord.",
+     "p": [
+      "Trouve l'objectif commun avant de parler de la différence.",
+      "Dis-le à voix haute : On veut tous les deux un bon week-end, donc...",
+      "Partir de l'accord fait paraître le désaccord plus petit."
+     ],
+     "q": "Pense à un désaccord récent. Sur quoi étiez-vous d'accord ?",
+     "c": "Commence ta prochaine réponse par une phrase de terrain d'entente."
+    },
+    "it": {
+     "t": "Prima il terreno comune",
+     "g": "Inizia una risposta nominando ciò su cui siete d'accordo.",
+     "p": [
+      "Trova l'obiettivo comune prima di parlare della differenza.",
+      "Dillo ad alta voce: Vogliamo entrambi un bel weekend, quindi...",
+      "Partire dall'accordo fa sembrare il disaccordo più piccolo."
+     ],
+     "q": "Pensa a un disaccordo recente. Su cosa eravate d'accordo?",
+     "c": "Inizia la tua prossima risposta con una frase di terreno comune."
+    },
+    "pt": {
+     "t": "Primeiro o terreno comum",
+     "g": "Começa uma resposta nomeando aquilo em que ambos concordam.",
+     "p": [
+      "Encontra o objetivo comum antes de falares da diferença.",
+      "Di-lo em voz alta: Os dois queremos um bom fim de semana, por isso...",
+      "Partir do acordo faz o desacordo parecer menor."
+     ],
+     "q": "Pensa num desacordo recente. Em que estavam de acordo?",
+     "c": "Começa a tua próxima resposta com uma frase de terreno comum."
+    },
+    "pt_BR": {
+     "t": "Primeiro o terreno comum",
+     "g": "Comece uma resposta nomeando aquilo em que vocês concordam.",
+     "p": [
+      "Encontre o objetivo comum antes de falar da diferença.",
+      "Diga em voz alta: Nós dois queremos um bom fim de semana, então...",
+      "Partir do acordo faz o desacordo parecer menor."
+     ],
+     "q": "Pense num desacordo recente. Em que vocês concordavam?",
+     "c": "Comece sua próxima resposta com uma frase de terreno comum."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Texting vs calling",
+     "g": "Which is better for staying in touch: a quick message or a voice call?",
+     "p": [
+      "List what each does well: speed, warmth, flexibility, clarity.",
+      "Use an example, like organising a trip versus sharing good news.",
+      "The best answer may depend on the situation; say when."
+     ],
+     "q": "Do you prefer texting or calling friends, and why?",
+     "c": "Name one moment where the other choice would have been better."
+    },
+    "de": {
+     "t": "Schreiben gegen Anrufen",
+     "g": "Was ist besser, um in Kontakt zu bleiben: eine kurze Nachricht oder ein Anruf?",
+     "p": [
+      "Liste auf, was jedes gut kann: Tempo, Wärme, Flexibilität, Klarheit.",
+      "Nutze ein Beispiel, etwa eine Reise planen gegen gute Nachrichten teilen.",
+      "Die beste Antwort kann von der Lage abhängen; sage, wann."
+     ],
+     "q": "Schreibst du Freunden lieber oder rufst du an, und warum?",
+     "c": "Nenne einen Moment, in dem die andere Wahl besser gewesen wäre."
+    },
+    "es": {
+     "t": "Escribir contra llamar",
+     "g": "¿Qué es mejor para mantener el contacto: un mensaje rápido o una llamada de voz?",
+     "p": [
+      "Enumera lo que hace bien cada uno: rapidez, calidez, flexibilidad, claridad.",
+      "Usa un ejemplo, como organizar un viaje frente a compartir buenas noticias.",
+      "La mejor respuesta puede depender de la situación; di cuándo."
+     ],
+     "q": "¿Prefieres escribir o llamar a tus amigos, y por qué?",
+     "c": "Nombra un momento en que la otra opción habría sido mejor."
+    },
+    "fr": {
+     "t": "Écrire contre appeler",
+     "g": "Qu'est-ce qui vaut mieux pour garder le contact : un message rapide ou un appel ?",
+     "p": [
+      "Liste ce que chacun fait bien : rapidité, chaleur, souplesse, clarté.",
+      "Utilise un exemple, comme organiser un voyage ou partager une bonne nouvelle.",
+      "La meilleure réponse peut dépendre de la situation ; dis quand."
+     ],
+     "q": "Préfères-tu écrire ou appeler tes amis, et pourquoi ?",
+     "c": "Cite un moment où l'autre choix aurait été meilleur."
+    },
+    "it": {
+     "t": "Scrivere contro telefonare",
+     "g": "Cosa è meglio per restare in contatto: un messaggio veloce o una telefonata?",
+     "p": [
+      "Elenca cosa fa bene ciascuno: velocità, calore, flessibilità, chiarezza.",
+      "Usa un esempio, come organizzare un viaggio contro condividere una bella notizia.",
+      "La risposta migliore può dipendere dalla situazione; dì quando."
+     ],
+     "q": "Preferisci scrivere o telefonare agli amici, e perché?",
+     "c": "Nomina un momento in cui l'altra scelta sarebbe stata migliore."
+    },
+    "pt": {
+     "t": "Mensagem contra chamada",
+     "g": "O que é melhor para manter o contacto: uma mensagem rápida ou uma chamada de voz?",
+     "p": [
+      "Lista o que cada um faz bem: rapidez, calor, flexibilidade, clareza.",
+      "Usa um exemplo, como organizar uma viagem versus partilhar boas notícias.",
+      "A melhor resposta pode depender da situação; diz quando."
+     ],
+     "q": "Preferes escrever ou telefonar aos amigos, e porquê?",
+     "c": "Indica um momento em que a outra escolha teria sido melhor."
+    },
+    "pt_BR": {
+     "t": "Mensagem contra ligação",
+     "g": "O que é melhor para manter contato: uma mensagem rápida ou uma ligação de voz?",
+     "p": [
+      "Liste o que cada um faz bem: rapidez, calor, flexibilidade, clareza.",
+      "Use um exemplo, como organizar uma viagem versus compartilhar boas notícias.",
+      "A melhor resposta pode depender da situação; diga quando."
+     ],
+     "q": "Você prefere mandar mensagem ou ligar para os amigos, e por quê?",
+     "c": "Cite um momento em que a outra escolha teria sido melhor."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Avoiding always and never",
+     "g": "Learn why absolute words weaken arguments and careful words strengthen them.",
+     "p": [
+      "Words like always and never are easy to disprove with one exception.",
+      "Try usually, often, most of the time or rarely instead.",
+      "Careful claims are harder to knock down and sound more honest."
+     ],
+     "q": "Rewrite for me: People always check their phones at dinner.",
+     "c": "Turn two always-or-never sentences from your day into careful ones."
+    },
+    "de": {
+     "t": "Immer und nie vermeiden",
+     "g": "Lerne, warum absolute Wörter Argumente schwächen und vorsichtige sie stärken.",
+     "p": [
+      "Wörter wie immer und nie sind mit einer Ausnahme leicht widerlegt.",
+      "Probiere stattdessen meist, oft, die meiste Zeit oder selten.",
+      "Vorsichtige Behauptungen sind schwerer zu kippen und klingen ehrlicher."
+     ],
+     "q": "Formuliere um: Leute schauen beim Essen immer aufs Handy.",
+     "c": "Mache aus zwei Immer-oder-nie-Sätzen deines Tages vorsichtige Sätze."
+    },
+    "es": {
+     "t": "Evitar siempre y nunca",
+     "g": "Aprende por qué las palabras absolutas debilitan y las cuidadosas fortalecen.",
+     "p": [
+      "Palabras como siempre y nunca se refutan fácilmente con una excepción.",
+      "Prueba mejor normalmente, a menudo, casi siempre o rara vez.",
+      "Las afirmaciones cuidadosas son más difíciles de derribar y suenan más honestas."
+     ],
+     "q": "Reescribe esto: La gente siempre mira el móvil durante la cena.",
+     "c": "Convierte dos frases con siempre o nunca de tu día en frases cuidadosas."
+    },
+    "fr": {
+     "t": "Éviter toujours et jamais",
+     "g": "Apprends pourquoi les mots absolus affaiblissent et les mots prudents renforcent.",
+     "p": [
+      "Des mots comme toujours et jamais se réfutent facilement par une exception.",
+      "Essaie plutôt souvent, en général, la plupart du temps ou rarement.",
+      "Les affirmations prudentes sont plus dures à abattre et plus honnêtes."
+     ],
+     "q": "Reformule : Les gens regardent toujours leur téléphone pendant le dîner.",
+     "c": "Transforme deux phrases avec toujours ou jamais de ta journée en phrases prudentes."
+    },
+    "it": {
+     "t": "Evitare sempre e mai",
+     "g": "Scopri perché le parole assolute indeboliscono e quelle caute rafforzano.",
+     "p": [
+      "Parole come sempre e mai si smontano facilmente con un'eccezione.",
+      "Prova invece di solito, spesso, per lo più o raramente.",
+      "Le tesi caute sono più difficili da abbattere e suonano più oneste."
+     ],
+     "q": "Riscrivi: La gente guarda sempre il telefono a cena.",
+     "c": "Trasforma due frasi con sempre o mai della tua giornata in frasi caute."
+    },
+    "pt": {
+     "t": "Evitar sempre e nunca",
+     "g": "Aprende porque as palavras absolutas enfraquecem e as cuidadosas fortalecem.",
+     "p": [
+      "Palavras como sempre e nunca refutam-se facilmente com uma exceção.",
+      "Experimenta antes normalmente, muitas vezes, quase sempre ou raramente.",
+      "As afirmações cuidadosas são mais difíceis de derrubar e soam mais honestas."
+     ],
+     "q": "Reescreve: As pessoas olham sempre para o telemóvel ao jantar.",
+     "c": "Transforma duas frases com sempre ou nunca do teu dia em frases cuidadosas."
+    },
+    "pt_BR": {
+     "t": "Evitar sempre e nunca",
+     "g": "Aprenda por que as palavras absolutas enfraquecem e as cuidadosas fortalecem.",
+     "p": [
+      "Palavras como sempre e nunca são refutadas fácil com uma exceção.",
+      "Experimente em vez disso normalmente, muitas vezes, quase sempre ou raramente.",
+      "Afirmações cuidadosas são mais difíceis de derrubar e soam mais honestas."
+     ],
+     "q": "Reescreva: As pessoas sempre olham o celular no jantar.",
+     "c": "Transforme duas frases com sempre ou nunca do seu dia em frases cuidadosas."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sweet or savoury breakfast?",
+     "g": "Debate the best way to start the day, plate by plate.",
+     "p": [
+      "Pick sweet or savoury and give a reason about energy or taste.",
+      "Use a vivid example: warm pancakes or eggs and toast.",
+      "Notice how many people enjoy both at different times."
+     ],
+     "q": "Sweet or savoury to start your morning, and why?",
+     "c": "Design a breakfast that compromises between the two sides."
+    },
+    "de": {
+     "t": "Süßes oder herzhaftes Frühstück?",
+     "g": "Debattiere den besten Start in den Tag, Teller für Teller.",
+     "p": [
+      "Wähle süß oder herzhaft und nenne einen Grund zu Energie oder Geschmack.",
+      "Nutze ein anschauliches Beispiel: warme Pfannkuchen oder Eier mit Toast.",
+      "Beachte, wie viele Menschen zu verschiedenen Zeiten beides mögen."
+     ],
+     "q": "Süß oder herzhaft zum Start in den Morgen, und warum?",
+     "c": "Entwirf ein Frühstück, das zwischen beiden Seiten vermittelt."
+    },
+    "es": {
+     "t": "¿Desayuno dulce o salado?",
+     "g": "Debate la mejor forma de empezar el día, plato a plato.",
+     "p": [
+      "Elige dulce o salado y da una razón sobre energía o sabor.",
+      "Usa un ejemplo vivo: tortitas calientes o huevos con tostadas.",
+      "Observa cuánta gente disfruta de ambos en momentos distintos."
+     ],
+     "q": "¿Dulce o salado para empezar la mañana, y por qué?",
+     "c": "Diseña un desayuno que haga de puente entre ambos bandos."
+    },
+    "fr": {
+     "t": "Petit-déjeuner sucré ou salé ?",
+     "g": "Débats de la meilleure façon de commencer la journée, assiette par assiette.",
+     "p": [
+      "Choisis sucré ou salé et donne une raison sur l'énergie ou le goût.",
+      "Utilise un exemple vivant : crêpes chaudes ou œufs et pain grillé.",
+      "Remarque combien de gens aiment les deux à des moments différents."
+     ],
+     "q": "Sucré ou salé pour commencer ta matinée, et pourquoi ?",
+     "c": "Imagine un petit-déjeuner qui fait un compromis entre les deux camps."
+    },
+    "it": {
+     "t": "Colazione dolce o salata?",
+     "g": "Discuti il modo migliore di iniziare la giornata, piatto dopo piatto.",
+     "p": [
+      "Scegli dolce o salato e dai una ragione su energia o gusto.",
+      "Usa un esempio vivido: pancake caldi oppure uova e pane tostato.",
+      "Nota quante persone amano entrambi in momenti diversi."
+     ],
+     "q": "Dolce o salata per iniziare la mattina, e perché?",
+     "c": "Progetta una colazione che faccia da compromesso tra le due parti."
+    },
+    "pt": {
+     "t": "Pequeno-almoço doce ou salgado?",
+     "g": "Debate a melhor forma de começar o dia, prato a prato.",
+     "p": [
+      "Escolhe doce ou salgado e dá uma razão sobre energia ou sabor.",
+      "Usa um exemplo vivo: panquecas quentes ou ovos com torradas.",
+      "Repara em quantas pessoas gostam dos dois em momentos diferentes."
+     ],
+     "q": "Doce ou salgado para começar a manhã, e porquê?",
+     "c": "Desenha um pequeno-almoço que seja um compromisso entre os dois lados."
+    },
+    "pt_BR": {
+     "t": "Café da manhã doce ou salgado?",
+     "g": "Debata a melhor forma de começar o dia, prato a prato.",
+     "p": [
+      "Escolha doce ou salgado e dê uma razão sobre energia ou sabor.",
+      "Use um exemplo vivo: panquecas quentes ou ovos com torrada.",
+      "Note quantas pessoas gostam dos dois em momentos diferentes."
+     ],
+     "q": "Doce ou salgado para começar a manhã, e por quê?",
+     "c": "Monte um café da manhã que seja um meio-termo entre os dois lados."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tone of voice matters",
+     "g": "See how a friendly tone helps your words land, even when you disagree.",
+     "p": [
+      "The same sentence can sound warm or cold depending on tone.",
+      "In text, tone comes from word choice, punctuation and kindness.",
+      "A calm, smiling tone lowers defences on both sides."
+     ],
+     "q": "How can you tell when someone is being friendly in a message?",
+     "c": "Rewrite a blunt sentence of yours so that it sounds friendly."
+    },
+    "de": {
+     "t": "Der Ton macht die Musik",
+     "g": "Sieh, wie ein freundlicher Ton deinen Worten hilft, auch bei Widerspruch.",
+     "p": [
+      "Derselbe Satz kann warm oder kalt klingen, je nach Ton.",
+      "In Texten entsteht der Ton durch Wortwahl, Zeichensetzung und Freundlichkeit.",
+      "Ein ruhiger, freundlicher Ton senkt auf beiden Seiten die Abwehr."
+     ],
+     "q": "Woran erkennst du, dass jemand in einer Nachricht freundlich ist?",
+     "c": "Formuliere einen schroffen Satz von dir so um, dass er freundlich klingt."
+    },
+    "es": {
+     "t": "El tono importa",
+     "g": "Descubre cómo un tono amable ayuda a tus palabras, incluso al discrepar.",
+     "p": [
+      "La misma frase puede sonar cálida o fría según el tono.",
+      "En texto, el tono viene de las palabras, la puntuación y la amabilidad.",
+      "Un tono tranquilo y sonriente baja las defensas de ambos lados."
+     ],
+     "q": "¿Cómo notas que alguien es amable en un mensaje?",
+     "c": "Reescribe una frase tuya brusca para que suene amable."
+    },
+    "fr": {
+     "t": "Le ton compte",
+     "g": "Vois comment un ton amical aide tes mots à porter, même en désaccord.",
+     "p": [
+      "La même phrase peut sonner chaleureuse ou froide selon le ton.",
+      "À l'écrit, le ton vient du choix des mots, de la ponctuation et de la gentillesse.",
+      "Un ton calme et souriant fait baisser la garde des deux côtés."
+     ],
+     "q": "Comment reconnais-tu qu'une personne est aimable dans un message ?",
+     "c": "Réécris une de tes phrases brusques pour qu'elle sonne amicale."
+    },
+    "it": {
+     "t": "Il tono conta",
+     "g": "Scopri come un tono amichevole aiuta le tue parole, anche in disaccordo.",
+     "p": [
+      "La stessa frase può suonare calda o fredda a seconda del tono.",
+      "Nello scritto il tono nasce da parole, punteggiatura e gentilezza.",
+      "Un tono calmo e sorridente abbassa le difese di entrambi."
+     ],
+     "q": "Come capisci che qualcuno è gentile in un messaggio?",
+     "c": "Riscrivi una tua frase brusca perché suoni amichevole."
+    },
+    "pt": {
+     "t": "O tom importa",
+     "g": "Descobre como um tom amigável ajuda as tuas palavras, mesmo ao discordar.",
+     "p": [
+      "A mesma frase pode soar calorosa ou fria conforme o tom.",
+      "No texto, o tom vem das palavras, da pontuação e da simpatia.",
+      "Um tom calmo e sorridente baixa as defesas dos dois lados."
+     ],
+     "q": "Como percebes que alguém está a ser simpático numa mensagem?",
+     "c": "Reescreve uma frase tua seca para que soe simpática."
+    },
+    "pt_BR": {
+     "t": "O tom importa",
+     "g": "Descubra como um tom amigável ajuda as suas palavras, mesmo ao discordar.",
+     "p": [
+      "A mesma frase pode soar calorosa ou fria conforme o tom.",
+      "No texto, o tom vem das palavras, da pontuação e da gentileza.",
+      "Um tom calmo e sorridente baixa as defesas dos dois lados."
+     ],
+     "q": "Como você percebe que alguém está sendo gentil numa mensagem?",
+     "c": "Reescreva uma frase sua seca para que soe gentil."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Flying vs invisibility",
+     "g": "A fun superpower debate to practise reasons and examples.",
+     "p": [
+      "Pick flying or invisibility and give two reasons with examples.",
+      "Imaginary topics are safe practice: no one gets hurt by a wrong answer.",
+      "Think of drawbacks too; fair debaters list costs and benefits."
+     ],
+     "q": "Flying or invisibility: which power would you choose?",
+     "c": "Name one problem your chosen power would cause."
+    },
+    "de": {
+     "t": "Fliegen gegen Unsichtbarkeit",
+     "g": "Eine lustige Superkraft-Debatte, um Gründe und Beispiele zu üben.",
+     "p": [
+      "Wähle Fliegen oder Unsichtbarkeit und nenne zwei Gründe mit Beispielen.",
+      "Erfundene Themen sind sichere Übung: Niemand leidet unter einer falschen Antwort.",
+      "Denk auch an Nachteile; faire Debattierer nennen Kosten und Nutzen."
+     ],
+     "q": "Fliegen oder Unsichtbarkeit: Welche Kraft würdest du wählen?",
+     "c": "Nenne ein Problem, das deine gewählte Kraft verursachen würde."
+    },
+    "es": {
+     "t": "Volar contra invisibilidad",
+     "g": "Un divertido debate de superpoderes para practicar razones y ejemplos.",
+     "p": [
+      "Elige volar o invisibilidad y da dos razones con ejemplos.",
+      "Los temas imaginarios son práctica segura: nadie sufre por una respuesta errónea.",
+      "Piensa también en las desventajas; un buen debatiente lista costes y beneficios."
+     ],
+     "q": "¿Volar o invisibilidad: qué poder elegirías?",
+     "c": "Nombra un problema que causaría el poder que elegiste."
+    },
+    "fr": {
+     "t": "Voler contre invisibilité",
+     "g": "Un débat amusant de superpouvoirs pour t'exercer aux raisons et aux exemples.",
+     "p": [
+      "Choisis voler ou invisibilité et donne deux raisons avec exemples.",
+      "Les sujets imaginaires sont un entraînement sûr : personne ne souffre d'une erreur.",
+      "Pense aussi aux inconvénients ; un débatteur juste liste coûts et bénéfices."
+     ],
+     "q": "Voler ou invisibilité : quel pouvoir choisirais-tu ?",
+     "c": "Cite un problème que causerait le pouvoir que tu as choisi."
+    },
+    "it": {
+     "t": "Volare contro invisibilità",
+     "g": "Un divertente dibattito sui superpoteri per esercitare ragioni ed esempi.",
+     "p": [
+      "Scegli volare o invisibilità e dai due ragioni con esempi.",
+      "Gli argomenti immaginari sono un esercizio sicuro: nessuno soffre per una risposta sbagliata.",
+      "Pensa anche agli svantaggi; un buon dibattente elenca costi e benefici."
+     ],
+     "q": "Volare o invisibilità: quale potere sceglieresti?",
+     "c": "Nomina un problema che causerebbe il potere che hai scelto."
+    },
+    "pt": {
+     "t": "Voar contra invisibilidade",
+     "g": "Um debate divertido de superpoderes para praticar razões e exemplos.",
+     "p": [
+      "Escolhe voar ou invisibilidade e dá duas razões com exemplos.",
+      "Temas imaginários são treino seguro: ninguém sofre por uma resposta errada.",
+      "Pensa também nas desvantagens; bons debatedores listam custos e benefícios."
+     ],
+     "q": "Voar ou invisibilidade: que poder escolherias?",
+     "c": "Indica um problema que o poder escolhido causaria."
+    },
+    "pt_BR": {
+     "t": "Voar contra invisibilidade",
+     "g": "Um debate divertido de superpoderes para praticar razões e exemplos.",
+     "p": [
+      "Escolha voar ou invisibilidade e dê duas razões com exemplos.",
+      "Temas imaginários são treino seguro: ninguém sofre por uma resposta errada.",
+      "Pense também nas desvantagens; bons debatedores listam custos e benefícios."
+     ],
+     "q": "Voar ou invisibilidade: qual poder você escolheria?",
+     "c": "Cite um problema que o poder escolhido causaria."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your first debate toolkit",
+     "g": "Revisit claims, reasons, examples and polite disagreement in one mini debate.",
+     "p": [
+      "Your toolkit: a clear claim, a because, an example and a polite tone.",
+      "Add the listening skills: summarise, ask, find common ground.",
+      "Keep absolutes soft and admit good points when you see them."
+     ],
+     "q": "Which tool from this month do you use most easily now?",
+     "c": "Give a full mini argument on any light topic, using four tools."
+    },
+    "de": {
+     "t": "Wiederholung: dein erstes Debatten-Werkzeug",
+     "g": "Wiederhole Behauptung, Gründe, Beispiele und höflichen Widerspruch in einer Mini-Debatte.",
+     "p": [
+      "Dein Werkzeug: klare Behauptung, ein weil, ein Beispiel und höflicher Ton.",
+      "Dazu die Zuhörfähigkeiten: zusammenfassen, fragen, Gemeinsamkeit finden.",
+      "Halte Absolutes weich und gib gute Punkte zu, wenn du sie siehst."
+     ],
+     "q": "Welches Werkzeug dieses Monats fällt dir inzwischen am leichtesten?",
+     "c": "Gib ein ganzes Mini-Argument zu einem leichten Thema mit vier Werkzeugen."
+    },
+    "es": {
+     "t": "Repaso: tu primer kit de debate",
+     "g": "Repasa afirmaciones, razones, ejemplos y desacuerdo educado en un minidebate.",
+     "p": [
+      "Tu kit: una afirmación clara, un porque, un ejemplo y un tono educado.",
+      "Suma la escucha: resumir, preguntar, buscar terreno común.",
+      "Mantén suaves los absolutos y admite los buenos puntos cuando los veas."
+     ],
+     "q": "¿Qué herramienta de este mes usas ya con más facilidad?",
+     "c": "Da un minidebate completo sobre un tema ligero, usando cuatro herramientas."
+    },
+    "fr": {
+     "t": "Révision : ton premier kit de débat",
+     "g": "Révise affirmations, raisons, exemples et désaccord poli dans un mini-débat.",
+     "p": [
+      "Ton kit : une affirmation claire, un parce que, un exemple et un ton poli.",
+      "Ajoute l'écoute : résumer, questionner, trouver un terrain d'entente.",
+      "Garde les absolus doux et admets les bons points quand tu les vois."
+     ],
+     "q": "Quel outil de ce mois utilises-tu le plus facilement maintenant ?",
+     "c": "Fais un mini-argument complet sur un sujet léger avec quatre outils."
+    },
+    "it": {
+     "t": "Ripasso: il tuo primo kit da dibattito",
+     "g": "Ripassa tesi, ragioni, esempi e dissenso cortese in un mini dibattito.",
+     "p": [
+      "Il tuo kit: una tesi chiara, un perché, un esempio e un tono cortese.",
+      "Aggiungi l'ascolto: riassumere, chiedere, trovare terreno comune.",
+      "Tieni morbidi gli assoluti e ammetti i buoni punti quando li vedi."
+     ],
+     "q": "Quale strumento di questo mese usi ormai con più facilità?",
+     "c": "Fai un mini argomento completo su un tema leggero con quattro strumenti."
+    },
+    "pt": {
+     "t": "Revisão: o teu primeiro kit de debate",
+     "g": "Revê afirmações, razões, exemplos e discordância educada num mini debate.",
+     "p": [
+      "O teu kit: uma afirmação clara, um porque, um exemplo e um tom educado.",
+      "Junta a escuta: resumir, perguntar, procurar terreno comum.",
+      "Mantém suaves os absolutos e admite os bons pontos quando os vires."
+     ],
+     "q": "Que ferramenta deste mês usas agora com mais facilidade?",
+     "c": "Faz um mini argumento completo sobre um tema leve, usando quatro ferramentas."
+    },
+    "pt_BR": {
+     "t": "Revisão: seu primeiro kit de debate",
+     "g": "Revise afirmações, razões, exemplos e discordância educada num mini debate.",
+     "p": [
+      "Seu kit: uma afirmação clara, um porque, um exemplo e um tom educado.",
+      "Junte a escuta: resumir, perguntar, buscar terreno comum.",
+      "Mantenha os absolutos suaves e admita os bons pontos quando os vir."
+     ],
+     "q": "Que ferramenta deste mês você usa com mais facilidade agora?",
+     "c": "Faça um mini argumento completo sobre um tema leve, usando quatro ferramentas."
+    }
+   }
+  }
+ ]
+}

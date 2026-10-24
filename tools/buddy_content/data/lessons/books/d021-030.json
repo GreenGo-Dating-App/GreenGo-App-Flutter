@@ -1,0 +1,835 @@
+{
+ "topic": "books",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Children's classics we never outgrow",
+     "g": "See why adults happily reread childhood favourites.",
+     "p": [
+      "Alice in Wonderland by Lewis Carroll plays with logic, words and nonsense.",
+      "The Little Prince by Saint-Exupéry hides wise thoughts in a simple tale.",
+      "Rereading as an adult reveals jokes and ideas you missed as a child."
+     ],
+     "q": "Which children's book would you happily read again today?",
+     "c": "Reread one page of a childhood favourite and see what you notice now."
+    },
+    "de": {
+     "t": "Kinderklassiker, aus denen man nie herauswächst",
+     "g": "Sieh, warum Erwachsene Kindheitslieblinge gern wieder lesen.",
+     "p": [
+      "Alice im Wunderland von Lewis Carroll spielt mit Logik, Wörtern und Unsinn.",
+      "Der kleine Prinz von Saint-Exupéry versteckt kluge Gedanken in einem schlichten Märchen.",
+      "Beim Wiederlesen entdeckst du Witze und Ideen, die du als Kind übersehen hast."
+     ],
+     "q": "Welches Kinderbuch würdest du heute gern noch einmal lesen?",
+     "c": "Lies eine Seite deines Kindheitsbuchs erneut und sieh, was dir jetzt auffällt."
+    },
+    "es": {
+     "t": "Clásicos infantiles que nunca superamos",
+     "g": "Descubre por qué los adultos releen con gusto los libros de la infancia.",
+     "p": [
+      "Alicia en el país de las maravillas, de Lewis Carroll, juega con lógica, palabras y disparates.",
+      "El principito, de Saint-Exupéry, esconde ideas sabias en un cuento sencillo.",
+      "Releer de adulto revela chistes e ideas que de niño pasaste por alto."
+     ],
+     "q": "¿Qué libro infantil releerías hoy con gusto?",
+     "c": "Relee una página de un favorito de la infancia y mira qué notas ahora."
+    },
+    "fr": {
+     "t": "Classiques d'enfance qu'on ne dépasse jamais",
+     "g": "Vois pourquoi les adultes relisent avec plaisir leurs livres d'enfance.",
+     "p": [
+      "Alice au pays des merveilles de Lewis Carroll joue avec la logique, les mots et l'absurde.",
+      "Le Petit Prince de Saint-Exupéry cache des pensées sages dans un conte simple.",
+      "Relire adulte révèle des blagues et des idées manquées enfant."
+     ],
+     "q": "Quel livre d'enfance relirais-tu volontiers aujourd'hui ?",
+     "c": "Relis une page d'un favori d'enfance et vois ce que tu remarques."
+    },
+    "it": {
+     "t": "Classici per ragazzi che non si superano mai",
+     "g": "Scopri perché gli adulti rileggono volentieri i libri dell'infanzia.",
+     "p": [
+      "Alice nel Paese delle Meraviglie di Lewis Carroll gioca con logica, parole e nonsense.",
+      "Il Piccolo Principe di Saint-Exupéry nasconde pensieri saggi in un racconto semplice.",
+      "Rileggere da adulti rivela battute e idee che da bambini sfuggivano."
+     ],
+     "q": "Quale libro per bambini rileggeresti volentieri oggi?",
+     "c": "Rileggi una pagina di un preferito d'infanzia e nota cosa vedi ora."
+    },
+    "pt": {
+     "t": "Clássicos infantis que nunca deixamos para trás",
+     "g": "Vê porque os adultos releem com gosto os livros da infância.",
+     "p": [
+      "Alice no País das Maravilhas, de Lewis Carroll, brinca com lógica, palavras e disparates.",
+      "O Principezinho, de Saint-Exupéry, esconde ideias sábias numa história simples.",
+      "Reler em adulto revela piadas e ideias que em criança passaram despercebidas."
+     ],
+     "q": "Que livro infantil relerias hoje com gosto?",
+     "c": "Relê uma página de um favorito da infância e vê o que notas agora."
+    },
+    "pt_BR": {
+     "t": "Clássicos infantis que nunca deixamos para trás",
+     "g": "Veja por que adultos releem com gosto os livros da infância.",
+     "p": [
+      "Alice no País das Maravilhas, de Lewis Carroll, brinca com lógica, palavras e besteirol.",
+      "O Pequeno Príncipe, de Saint-Exupéry, esconde ideias sábias numa história simples.",
+      "Reler adulto revela piadas e ideias que passaram batidas na infância."
+     ],
+     "q": "Que livro infantil você releria hoje com prazer?",
+     "c": "Releia uma página de um favorito da infância e veja o que nota agora."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fairy tales around the world",
+     "g": "Meet fairy tales from many cultures.",
+     "p": [
+      "The Brothers Grimm in Germany and Charles Perrault in France collected classic tales.",
+      "Hans Christian Andersen of Denmark wrote original tales like The Ugly Duckling.",
+      "Folk tales appear everywhere: Anansi in West Africa, Momotaro in Japan."
+     ],
+     "q": "Which fairy tale from your culture did you hear as a child?",
+     "c": "Look up one fairy tale from a country you have never read about."
+    },
+    "de": {
+     "t": "Märchen aus aller Welt",
+     "g": "Lerne Märchen aus vielen Kulturen kennen.",
+     "p": [
+      "Die Brüder Grimm in Deutschland und Charles Perrault in Frankreich sammelten klassische Märchen.",
+      "Hans Christian Andersen aus Dänemark schrieb eigene Märchen wie Das hässliche Entlein.",
+      "Volksmärchen gibt es überall: Anansi in Westafrika, Momotaro in Japan."
+     ],
+     "q": "Welches Märchen deiner Kultur hast du als Kind gehört?",
+     "c": "Suche ein Märchen aus einem Land, über das du noch nie gelesen hast."
+    },
+    "es": {
+     "t": "Cuentos de hadas de todo el mundo",
+     "g": "Conoce cuentos de hadas de muchas culturas.",
+     "p": [
+      "Los hermanos Grimm en Alemania y Charles Perrault en Francia recopilaron cuentos clásicos.",
+      "El danés Hans Christian Andersen escribió cuentos propios como El patito feo.",
+      "Los cuentos populares están en todas partes: Anansi en África occidental, Momotaro en Japón."
+     ],
+     "q": "¿Qué cuento de tu cultura escuchaste de niño?",
+     "c": "Busca un cuento de un país sobre el que nunca hayas leído."
+    },
+    "fr": {
+     "t": "Contes de fées du monde entier",
+     "g": "Découvre des contes de nombreuses cultures.",
+     "p": [
+      "Les frères Grimm en Allemagne et Charles Perrault en France ont recueilli des contes classiques.",
+      "Le Danois Hans Christian Andersen a écrit des contes originaux comme Le Vilain Petit Canard.",
+      "Les contes populaires existent partout : Anansi en Afrique de l'Ouest, Momotaro au Japon."
+     ],
+     "q": "Quel conte de ta culture as-tu entendu enfant ?",
+     "c": "Cherche un conte d'un pays dont tu n'as encore jamais lu."
+    },
+    "it": {
+     "t": "Fiabe da tutto il mondo",
+     "g": "Incontra fiabe di molte culture.",
+     "p": [
+      "I fratelli Grimm in Germania e Charles Perrault in Francia raccolsero fiabe classiche.",
+      "Il danese Hans Christian Andersen scrisse fiabe originali come Il brutto anatroccolo.",
+      "Le fiabe popolari esistono ovunque: Anansi in Africa occidentale, Momotaro in Giappone."
+     ],
+     "q": "Quale fiaba della tua cultura hai ascoltato da bambino?",
+     "c": "Cerca una fiaba di un paese di cui non hai mai letto."
+    },
+    "pt": {
+     "t": "Contos de fadas de todo o mundo",
+     "g": "Conhece contos de fadas de muitas culturas.",
+     "p": [
+      "Os irmãos Grimm na Alemanha e Charles Perrault em França recolheram contos clássicos.",
+      "O dinamarquês Hans Christian Andersen escreveu contos originais como O Patinho Feio.",
+      "Os contos populares existem por todo o lado: Anansi na África Ocidental, Momotaro no Japão."
+     ],
+     "q": "Que conto da tua cultura ouviste em criança?",
+     "c": "Procura um conto de um país sobre o qual nunca leste."
+    },
+    "pt_BR": {
+     "t": "Contos de fadas do mundo todo",
+     "g": "Conheça contos de fadas de muitas culturas.",
+     "p": [
+      "Os irmãos Grimm na Alemanha e Charles Perrault na França reuniram contos clássicos.",
+      "O dinamarquês Hans Christian Andersen escreveu contos originais como O Patinho Feio.",
+      "Os contos populares existem em todo lugar: Anansi na África Ocidental, Momotaro no Japão."
+     ],
+     "q": "Que conto da sua cultura você ouviu na infância?",
+     "c": "Procure um conto de um país sobre o qual você nunca leu."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fables and their morals",
+     "g": "Discover short animal stories that teach lessons.",
+     "p": [
+      "Aesop, the ancient Greek storyteller, is famous for fables like The Tortoise and the Hare.",
+      "Jean de La Fontaine retold many fables in French verse in the 1600s.",
+      "Fables end with a moral: a short lesson you can carry into daily life."
+     ],
+     "q": "Which fable or moral do you remember best?",
+     "c": "Read one fable and write its moral in your own words."
+    },
+    "de": {
+     "t": "Fabeln und ihre Lehren",
+     "g": "Entdecke kurze Tiergeschichten mit einer Lehre.",
+     "p": [
+      "Äsop, der antike griechische Erzähler, ist berühmt für Fabeln wie Der Hase und die Schildkröte.",
+      "Jean de La Fontaine erzählte im 17. Jahrhundert viele Fabeln in französischen Versen.",
+      "Fabeln enden mit einer Moral: einer kurzen Lehre für den Alltag."
+     ],
+     "q": "Welche Fabel oder Moral merkst du dir am besten?",
+     "c": "Lies eine Fabel und schreibe ihre Moral mit eigenen Worten auf."
+    },
+    "es": {
+     "t": "Las fábulas y sus moralejas",
+     "g": "Descubre breves historias de animales que enseñan.",
+     "p": [
+      "Esopo, el narrador de la antigua Grecia, es famoso por fábulas como La liebre y la tortuga.",
+      "Jean de La Fontaine recreó muchas fábulas en verso francés en el siglo XVII.",
+      "Las fábulas acaban con una moraleja: una lección breve para el día a día."
+     ],
+     "q": "¿Qué fábula o moraleja recuerdas mejor?",
+     "c": "Lee una fábula y escribe su moraleja con tus palabras."
+    },
+    "fr": {
+     "t": "Les fables et leurs morales",
+     "g": "Découvre de courtes histoires d'animaux qui enseignent.",
+     "p": [
+      "Ésope, conteur de la Grèce antique, est célèbre pour des fables comme Le Lièvre et la Tortue.",
+      "Jean de La Fontaine a repris de nombreuses fables en vers français au XVIIe siècle.",
+      "Les fables se terminent par une morale : une courte leçon pour la vie."
+     ],
+     "q": "Quelle fable ou quelle morale retiens-tu le mieux ?",
+     "c": "Lis une fable et écris sa morale avec tes mots."
+    },
+    "it": {
+     "t": "Le favole e le loro morali",
+     "g": "Scopri brevi storie di animali che insegnano.",
+     "p": [
+      "Esopo, narratore dell'antica Grecia, è famoso per favole come La lepre e la tartaruga.",
+      "Jean de La Fontaine rielaborò molte favole in versi francesi nel Seicento.",
+      "Le favole finiscono con una morale: una breve lezione per la vita quotidiana."
+     ],
+     "q": "Quale favola o morale ricordi meglio?",
+     "c": "Leggi una favola e scrivi la sua morale con parole tue."
+    },
+    "pt": {
+     "t": "As fábulas e as suas morais",
+     "g": "Descobre pequenas histórias de animais que ensinam.",
+     "p": [
+      "Esopo, contador da Grécia antiga, é famoso por fábulas como A Lebre e a Tartaruga.",
+      "Jean de La Fontaine recontou muitas fábulas em verso francês no século XVII.",
+      "As fábulas terminam com uma moral: uma lição curta para o dia a dia."
+     ],
+     "q": "Que fábula ou moral recordas melhor?",
+     "c": "Lê uma fábula e escreve a sua moral por palavras tuas."
+    },
+    "pt_BR": {
+     "t": "As fábulas e suas morais",
+     "g": "Descubra pequenas histórias de animais que ensinam.",
+     "p": [
+      "Esopo, contador da Grécia antiga, é famoso por fábulas como A Lebre e a Tartaruga.",
+      "Jean de La Fontaine recontou muitas fábulas em versos franceses no século XVII.",
+      "As fábulas terminam com uma moral: uma lição curta para o dia a dia."
+     ],
+     "q": "Que fábula ou moral você lembra melhor?",
+     "c": "Leia uma fábula e escreva a moral com suas palavras."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Picture books as art",
+     "g": "See how words and pictures work together.",
+     "p": [
+      "In a great picture book, the pictures tell things the words leave out.",
+      "Maurice Sendak's Where the Wild Things Are and Eric Carle's collage books are modern classics.",
+      "Reading slowly lets you spot tiny details in each illustration."
+     ],
+     "q": "Which picture book had art you remember vividly?",
+     "c": "Look through a picture book and find one detail the text never mentions."
+    },
+    "de": {
+     "t": "Bilderbücher als Kunst",
+     "g": "Sieh, wie Wort und Bild zusammenwirken.",
+     "p": [
+      "In einem großen Bilderbuch erzählen die Bilder, was der Text auslässt.",
+      "Maurice Sendaks Wo die wilden Kerle wohnen und Eric Carles Collagebücher sind moderne Klassiker.",
+      "Langsames Lesen lässt dich winzige Details in jeder Illustration entdecken."
+     ],
+     "q": "Welches Bilderbuch hat dir mit seinen Bildern besonders im Gedächtnis geblieben?",
+     "c": "Blättere ein Bilderbuch durch und finde ein Detail, das der Text nie erwähnt."
+    },
+    "es": {
+     "t": "Los libros ilustrados como arte",
+     "g": "Mira cómo trabajan juntos las palabras y las imágenes.",
+     "p": [
+      "En un gran libro ilustrado, las imágenes cuentan lo que el texto omite.",
+      "Donde viven los monstruos de Maurice Sendak y los collages de Eric Carle son clásicos modernos.",
+      "Leer despacio permite descubrir pequeños detalles en cada ilustración."
+     ],
+     "q": "¿Qué libro ilustrado tenía imágenes que recuerdas con viveza?",
+     "c": "Hojea un libro ilustrado y encuentra un detalle que el texto no menciona."
+    },
+    "fr": {
+     "t": "L'album illustré comme art",
+     "g": "Vois comment mots et images travaillent ensemble.",
+     "p": [
+      "Dans un grand album, les images disent ce que le texte omet.",
+      "Max et les Maximonstres de Maurice Sendak et les collages d'Eric Carle sont des classiques modernes.",
+      "Lire lentement permet de repérer de minuscules détails dans chaque illustration."
+     ],
+     "q": "Quel album avait des images dont tu te souviens bien ?",
+     "c": "Feuillette un album et trouve un détail que le texte ne mentionne jamais."
+    },
+    "it": {
+     "t": "Gli albi illustrati come arte",
+     "g": "Vedi come parole e immagini lavorano insieme.",
+     "p": [
+      "In un grande albo illustrato, le immagini dicono ciò che il testo omette.",
+      "Nel paese dei mostri selvaggi di Maurice Sendak e i collage di Eric Carle sono classici moderni.",
+      "Leggere lentamente permette di scoprire piccoli dettagli in ogni illustrazione."
+     ],
+     "q": "Quale albo illustrato aveva immagini che ricordi bene?",
+     "c": "Sfoglia un albo illustrato e trova un dettaglio che il testo non cita mai."
+    },
+    "pt": {
+     "t": "Os livros ilustrados como arte",
+     "g": "Vê como palavras e imagens trabalham juntas.",
+     "p": [
+      "Num grande livro ilustrado, as imagens contam o que o texto omite.",
+      "Onde Vivem os Monstros, de Maurice Sendak, e os colagens de Eric Carle são clássicos modernos.",
+      "Ler devagar permite descobrir pequenos detalhes em cada ilustração."
+     ],
+     "q": "Que livro ilustrado tinha imagens de que te lembras bem?",
+     "c": "Folheia um livro ilustrado e encontra um detalhe que o texto não menciona."
+    },
+    "pt_BR": {
+     "t": "Livros ilustrados como arte",
+     "g": "Veja como palavras e imagens trabalham juntas.",
+     "p": [
+      "Num grande livro ilustrado, as imagens contam o que o texto omite.",
+      "Onde Vivem os Monstros, de Maurice Sendak, e as colagens de Eric Carle são clássicos modernos.",
+      "Ler devagar permite descobrir pequenos detalhes em cada ilustração."
+     ],
+     "q": "Que livro ilustrado tinha imagens de que você lembra bem?",
+     "c": "Folheie um livro ilustrado e ache um detalhe que o texto nunca menciona."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Middle-grade adventures",
+     "g": "Explore stories for young readers full of friendship and courage.",
+     "p": [
+      "Middle-grade books suit readers of about eight to twelve, and many adults love them.",
+      "Classics include Charlotte's Web, Anne of Green Gables and Pippi Longstocking.",
+      "They mix adventure with friendship, curiosity and everyday bravery."
+     ],
+     "q": "Which childhood adventure story still makes you smile?",
+     "c": "Read the first chapter of a middle-grade book you missed as a child."
+    },
+    "de": {
+     "t": "Abenteuer für junge Leser",
+     "g": "Entdecke Geschichten voller Freundschaft und Mut für junge Leser.",
+     "p": [
+      "Bücher für etwa Acht- bis Zwölfjährige gefallen auch vielen Erwachsenen.",
+      "Klassiker sind Schweinchen Wilbur und seine Freunde, Anne auf Green Gables und Pippi Langstrumpf.",
+      "Sie mischen Abenteuer mit Freundschaft, Neugier und Alltagsmut."
+     ],
+     "q": "Welche Abenteuergeschichte deiner Kindheit lässt dich noch lächeln?",
+     "c": "Lies das erste Kapitel eines Buchs für junge Leser, das du als Kind verpasst hast."
+    },
+    "es": {
+     "t": "Aventuras para jóvenes lectores",
+     "g": "Explora historias llenas de amistad y valor para jóvenes lectores.",
+     "p": [
+      "Los libros para unos ocho a doce años también gustan a muchos adultos.",
+      "Entre los clásicos están La telaraña de Carlota, Ana de las tejas verdes y Pippi Calzaslargas.",
+      "Mezclan aventura con amistad, curiosidad y valentía cotidiana."
+     ],
+     "q": "¿Qué historia de aventuras de tu infancia aún te hace sonreír?",
+     "c": "Lee el primer capítulo de un libro juvenil que te perdiste de niño."
+    },
+    "fr": {
+     "t": "Aventures pour jeunes lecteurs",
+     "g": "Explore des histoires d'amitié et de courage pour jeunes lecteurs.",
+     "p": [
+      "Les livres pour les huit à douze ans environ plaisent aussi à beaucoup d'adultes.",
+      "Parmi les classiques : Le Petit Monde de Charlotte, Anne… la maison aux pignons verts et Fifi Brindacier.",
+      "Ils mêlent aventure, amitié, curiosité et courage quotidien."
+     ],
+     "q": "Quelle histoire d'aventure de ton enfance te fait encore sourire ?",
+     "c": "Lis le premier chapitre d'un livre jeunesse que tu as manqué enfant."
+    },
+    "it": {
+     "t": "Avventure per giovani lettori",
+     "g": "Esplora storie di amicizia e coraggio per giovani lettori.",
+     "p": [
+      "I libri per ragazzi dagli otto ai dodici anni circa piacciono a molti adulti.",
+      "Tra i classici: La tela di Carlotta, Anna dai capelli rossi e Pippi Calzelunghe.",
+      "Mescolano avventura con amicizia, curiosità e coraggio quotidiano."
+     ],
+     "q": "Quale storia d'avventura della tua infanzia ti fa ancora sorridere?",
+     "c": "Leggi il primo capitolo di un libro per ragazzi che ti sei perso da piccolo."
+    },
+    "pt": {
+     "t": "Aventuras para jovens leitores",
+     "g": "Explora histórias de amizade e coragem para jovens leitores.",
+     "p": [
+      "Os livros para cerca de oito a doze anos agradam também a muitos adultos.",
+      "Entre os clássicos: A Teia de Carlota, Anne de Green Gables e Píppi das Meias Altas.",
+      "Misturam aventura com amizade, curiosidade e coragem do dia a dia."
+     ],
+     "q": "Que história de aventuras da tua infância ainda te faz sorrir?",
+     "c": "Lê o primeiro capítulo de um livro juvenil que perdeste em criança."
+    },
+    "pt_BR": {
+     "t": "Aventuras para jovens leitores",
+     "g": "Explore histórias de amizade e coragem para jovens leitores.",
+     "p": [
+      "Os livros para cerca de oito a doze anos agradam também a muitos adultos.",
+      "Entre os clássicos: A Teia de Charlotte, Anne de Green Gables e Píppi Meialonga.",
+      "Misturam aventura com amizade, curiosidade e coragem do dia a dia."
+     ],
+     "q": "Que história de aventuras da sua infância ainda faz você sorrir?",
+     "c": "Leia o primeiro capítulo de um livro juvenil que você perdeu na infância."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Young adult fiction",
+     "g": "Learn why YA stories attract readers of every age.",
+     "p": [
+      "YA features teenage heroes facing choices, identity and growing up.",
+      "Fast pacing and honest voices make these books easy to start.",
+      "Many adults read YA for its energy, imagination and emotional honesty."
+     ],
+     "q": "Do you enjoy stories about growing up, at any age?",
+     "c": "Try the first chapter of one YA book recommended by a friend."
+    },
+    "de": {
+     "t": "Jugendliteratur",
+     "g": "Lerne, warum Jugendromane Leser jeden Alters anziehen.",
+     "p": [
+      "Jugendbücher zeigen junge Helden vor Entscheidungen, Identität und dem Erwachsenwerden.",
+      "Hohes Tempo und ehrliche Stimmen machen den Einstieg leicht.",
+      "Viele Erwachsene lesen sie wegen Energie, Fantasie und emotionaler Ehrlichkeit."
+     ],
+     "q": "Magst du Geschichten übers Erwachsenwerden, in jedem Alter?",
+     "c": "Probiere das erste Kapitel eines Jugendbuchs, das ein Freund empfiehlt."
+    },
+    "es": {
+     "t": "Narrativa juvenil",
+     "g": "Descubre por qué la narrativa juvenil atrae a lectores de todas las edades.",
+     "p": [
+      "Presenta héroes adolescentes ante decisiones, identidad y crecimiento.",
+      "El ritmo ágil y las voces sinceras facilitan empezar.",
+      "Muchos adultos la leen por su energía, imaginación y honestidad emocional."
+     ],
+     "q": "¿Te gustan las historias sobre crecer, a cualquier edad?",
+     "c": "Prueba el primer capítulo de un libro juvenil que te recomiende un amigo."
+    },
+    "fr": {
+     "t": "La littérature jeunesse pour ados",
+     "g": "Découvre pourquoi ces romans attirent des lecteurs de tout âge.",
+     "p": [
+      "Elle met en scène des héros adolescents face aux choix, à l'identité et à la croissance.",
+      "Un rythme vif et des voix sincères rendent l'entrée facile.",
+      "Beaucoup d'adultes la lisent pour son énergie, son imagination et sa franchise."
+     ],
+     "q": "Aimes-tu les histoires de passage à l'âge adulte, à tout âge ?",
+     "c": "Essaie le premier chapitre d'un roman ado conseillé par un ami."
+    },
+    "it": {
+     "t": "Narrativa young adult",
+     "g": "Scopri perché le storie young adult attirano lettori di ogni età.",
+     "p": [
+      "Presenta eroi adolescenti alle prese con scelte, identità e crescita.",
+      "Ritmo veloce e voci sincere rendono facile iniziare.",
+      "Molti adulti la leggono per energia, fantasia e sincerità emotiva."
+     ],
+     "q": "Ti piacciono le storie di crescita, a qualsiasi età?",
+     "c": "Prova il primo capitolo di un libro young adult consigliato da un amico."
+    },
+    "pt": {
+     "t": "Ficção juvenil",
+     "g": "Descobre porque a ficção juvenil atrai leitores de todas as idades.",
+     "p": [
+      "Apresenta heróis adolescentes perante escolhas, identidade e crescimento.",
+      "O ritmo rápido e as vozes sinceras facilitam o começo.",
+      "Muitos adultos leem-na pela energia, imaginação e honestidade emocional."
+     ],
+     "q": "Gostas de histórias sobre crescer, a qualquer idade?",
+     "c": "Experimenta o primeiro capítulo de um livro juvenil recomendado por um amigo."
+    },
+    "pt_BR": {
+     "t": "Ficção juvenil",
+     "g": "Descubra por que a ficção juvenil atrai leitores de todas as idades.",
+     "p": [
+      "Apresenta heróis adolescentes diante de escolhas, identidade e crescimento.",
+      "O ritmo rápido e as vozes sinceras facilitam o começo.",
+      "Muitos adultos leem pela energia, imaginação e honestidade emocional."
+     ],
+     "q": "Você gosta de histórias sobre crescer, em qualquer idade?",
+     "c": "Experimente o primeiro capítulo de um livro juvenil indicado por um amigo."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Graphic novels and comics",
+     "g": "See visual storytelling as real literature.",
+     "p": [
+      "Panels, speech bubbles and drawings tell a story together.",
+      "Tintin from Belgium, Asterix from France and Japanese manga are loved worldwide.",
+      "Reading images is a skill: look at expressions, colour and gaps between panels."
+     ],
+     "q": "Have you ever read a comic or manga you really loved?",
+     "c": "Read one short comic and notice what the pictures show without words."
+    },
+    "de": {
+     "t": "Graphic Novels und Comics",
+     "g": "Sieh visuelles Erzählen als echte Literatur.",
+     "p": [
+      "Panels, Sprechblasen und Zeichnungen erzählen gemeinsam eine Geschichte.",
+      "Tim und Struppi aus Belgien, Asterix aus Frankreich und japanische Manga sind weltweit beliebt.",
+      "Bilder zu lesen ist eine Fähigkeit: achte auf Mimik, Farbe und Lücken zwischen den Panels."
+     ],
+     "q": "Hast du schon einmal einen Comic oder Manga geliebt?",
+     "c": "Lies einen kurzen Comic und achte darauf, was die Bilder ohne Worte zeigen."
+    },
+    "es": {
+     "t": "Novela gráfica y cómic",
+     "g": "Mira la narración visual como verdadera literatura.",
+     "p": [
+      "Viñetas, bocadillos y dibujos cuentan juntos una historia.",
+      "Tintín de Bélgica, Astérix de Francia y el manga japonés gustan en todo el mundo.",
+      "Leer imágenes es una destreza: fíjate en gestos, color y espacios entre viñetas."
+     ],
+     "q": "¿Has leído alguna vez un cómic o manga que te encantara?",
+     "c": "Lee un cómic corto y observa qué muestran las imágenes sin palabras."
+    },
+    "fr": {
+     "t": "Romans graphiques et bandes dessinées",
+     "g": "Vois la narration visuelle comme une vraie littérature.",
+     "p": [
+      "Cases, bulles et dessins racontent ensemble une histoire.",
+      "Tintin de Belgique, Astérix de France et les mangas japonais sont aimés dans le monde.",
+      "Lire les images est un art : regarde les expressions, la couleur et les blancs entre cases."
+     ],
+     "q": "As-tu déjà lu une BD ou un manga que tu as adoré ?",
+     "c": "Lis une courte BD et note ce que les images montrent sans mots."
+    },
+    "it": {
+     "t": "Graphic novel e fumetti",
+     "g": "Vedi la narrazione visiva come vera letteratura.",
+     "p": [
+      "Vignette, nuvolette e disegni raccontano insieme una storia.",
+      "Tintin dal Belgio, Asterix dalla Francia e i manga giapponesi sono amati nel mondo.",
+      "Leggere le immagini è un'abilità: guarda espressioni, colori e spazi tra le vignette."
+     ],
+     "q": "Hai mai letto un fumetto o un manga che ti è piaciuto molto?",
+     "c": "Leggi un fumetto breve e nota cosa mostrano le immagini senza parole."
+    },
+    "pt": {
+     "t": "Romances gráficos e banda desenhada",
+     "g": "Vê a narração visual como verdadeira literatura.",
+     "p": [
+      "Vinhetas, balões e desenhos contam juntos uma história.",
+      "Tintim da Bélgica, Astérix de França e o manga japonês são amados em todo o mundo.",
+      "Ler imagens é uma arte: repara em expressões, cor e espaços entre vinhetas."
+     ],
+     "q": "Já leste uma banda desenhada ou manga de que gostaste muito?",
+     "c": "Lê uma BD curta e repara no que as imagens mostram sem palavras."
+    },
+    "pt_BR": {
+     "t": "Graphic novels e histórias em quadrinhos",
+     "g": "Veja a narração visual como verdadeira literatura.",
+     "p": [
+      "Quadros, balões e desenhos contam juntos uma história.",
+      "Tintim da Bélgica, Asterix da França e o mangá japonês são amados no mundo todo.",
+      "Ler imagens é uma habilidade: note expressões, cor e espaços entre os quadros."
+     ],
+     "q": "Você já leu um quadrinho ou mangá de que gostou muito?",
+     "c": "Leia um quadrinho curto e note o que as imagens mostram sem palavras."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Poetry for beginners",
+     "g": "Enjoy poetry through rhythm, images and short forms.",
+     "p": [
+      "Poems use rhythm, sound and images to say a lot in few words.",
+      "Short forms help: the Japanese haiku has just three lines, often about nature.",
+      "Read slowly and aloud; you do not have to decode every line."
+     ],
+     "q": "Do you have a poem or song lyric you love?",
+     "c": "Read one short poem twice, the second time aloud, and keep one line."
+    },
+    "de": {
+     "t": "Gedichte für Einsteiger",
+     "g": "Genieße Lyrik durch Rhythmus, Bilder und kurze Formen.",
+     "p": [
+      "Gedichte sagen mit Rhythmus, Klang und Bildern viel in wenigen Worten.",
+      "Kurze Formen helfen: Das japanische Haiku hat nur drei Zeilen, oft über die Natur.",
+      "Lies langsam und laut; du musst nicht jede Zeile entschlüsseln."
+     ],
+     "q": "Hast du ein Gedicht oder einen Liedtext, den du liebst?",
+     "c": "Lies ein kurzes Gedicht zweimal, das zweite Mal laut, und behalte eine Zeile."
+    },
+    "es": {
+     "t": "Poesía para principiantes",
+     "g": "Disfruta la poesía a través del ritmo, las imágenes y las formas breves.",
+     "p": [
+      "Los poemas usan ritmo, sonido e imágenes para decir mucho con poco.",
+      "Las formas breves ayudan: el haiku japonés tiene solo tres versos, a menudo sobre la naturaleza.",
+      "Lee despacio y en voz alta; no hace falta descifrar cada verso."
+     ],
+     "q": "¿Tienes un poema o una letra de canción que ames?",
+     "c": "Lee un poema corto dos veces, la segunda en voz alta, y quédate con un verso."
+    },
+    "fr": {
+     "t": "La poésie pour débuter",
+     "g": "Savoure la poésie par le rythme, les images et les formes brèves.",
+     "p": [
+      "Les poèmes utilisent rythme, sons et images pour dire beaucoup en peu de mots.",
+      "Les formes courtes aident : le haïku japonais n'a que trois vers, souvent sur la nature.",
+      "Lis lentement et à voix haute ; inutile de déchiffrer chaque vers."
+     ],
+     "q": "As-tu un poème ou des paroles de chanson que tu aimes ?",
+     "c": "Lis un court poème deux fois, la seconde à voix haute, et garde un vers."
+    },
+    "it": {
+     "t": "Poesia per principianti",
+     "g": "Gusta la poesia attraverso ritmo, immagini e forme brevi.",
+     "p": [
+      "Le poesie usano ritmo, suono e immagini per dire molto con poco.",
+      "Le forme brevi aiutano: l'haiku giapponese ha solo tre versi, spesso sulla natura.",
+      "Leggi lentamente e ad alta voce; non serve decifrare ogni verso."
+     ],
+     "q": "Hai una poesia o un testo di canzone che ami?",
+     "c": "Leggi una poesia breve due volte, la seconda ad alta voce, e tieni un verso."
+    },
+    "pt": {
+     "t": "Poesia para principiantes",
+     "g": "Aprecia a poesia através do ritmo, das imagens e das formas breves.",
+     "p": [
+      "Os poemas usam ritmo, som e imagens para dizer muito com pouco.",
+      "As formas curtas ajudam: o haiku japonês tem só três versos, muitas vezes sobre a natureza.",
+      "Lê devagar e em voz alta; não precisas de decifrar cada verso."
+     ],
+     "q": "Tens um poema ou letra de canção de que gostes?",
+     "c": "Lê um poema curto duas vezes, a segunda em voz alta, e guarda um verso."
+    },
+    "pt_BR": {
+     "t": "Poesia para iniciantes",
+     "g": "Aprecie a poesia pelo ritmo, pelas imagens e pelas formas breves.",
+     "p": [
+      "Os poemas usam ritmo, som e imagens para dizer muito com pouco.",
+      "As formas curtas ajudam: o haicai japonês tem só três versos, muitas vezes sobre a natureza.",
+      "Leia devagar e em voz alta; não precisa decifrar cada verso."
+     ],
+     "q": "Você tem um poema ou letra de música de que gosta?",
+     "c": "Leia um poema curto duas vezes, a segunda em voz alta, e guarde um verso."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading aloud",
+     "g": "Find out why reading aloud is powerful.",
+     "p": [
+      "Hearing words helps understanding, memory and a feel for rhythm.",
+      "Reading to children builds vocabulary and cosy bonding time.",
+      "Adults enjoy it too: share a chapter with a friend or read to yourself."
+     ],
+     "q": "Who would you enjoy reading aloud to, or being read to by?",
+     "c": "Read one page aloud today, with expression, to anyone or to yourself."
+    },
+    "de": {
+     "t": "Laut lesen",
+     "g": "Finde heraus, warum lautes Lesen so wirkungsvoll ist.",
+     "p": [
+      "Wörter zu hören hilft Verstehen, Gedächtnis und Gefühl für Rhythmus.",
+      "Kindern vorzulesen stärkt den Wortschatz und schafft gemütliche Nähe.",
+      "Auch Erwachsene genießen es: Teile ein Kapitel mit Freunden oder lies dir selbst vor."
+     ],
+     "q": "Wem würdest du gern vorlesen, oder von wem vorgelesen bekommen?",
+     "c": "Lies heute eine Seite mit Ausdruck laut vor, jemandem oder dir selbst."
+    },
+    "es": {
+     "t": "Leer en voz alta",
+     "g": "Descubre por qué leer en voz alta es tan poderoso.",
+     "p": [
+      "Oír las palabras ayuda a comprender, recordar y sentir el ritmo.",
+      "Leer a los niños amplía su vocabulario y crea momentos de cercanía.",
+      "Los adultos también lo disfrutan: comparte un capítulo con un amigo o léete a ti mismo."
+     ],
+     "q": "¿A quién te gustaría leerle en voz alta, o quién te leería a ti?",
+     "c": "Lee hoy una página en voz alta, con expresión, a alguien o a ti mismo."
+    },
+    "fr": {
+     "t": "Lire à voix haute",
+     "g": "Découvre pourquoi la lecture à voix haute est puissante.",
+     "p": [
+      "Entendre les mots aide à comprendre, à retenir et à sentir le rythme.",
+      "Lire aux enfants enrichit le vocabulaire et crée des moments de complicité.",
+      "Les adultes aiment aussi : partage un chapitre avec un ami ou lis pour toi."
+     ],
+     "q": "À qui aimerais-tu lire à voix haute, ou qui aimerais-tu écouter ?",
+     "c": "Lis aujourd'hui une page à voix haute, avec expression, à quelqu'un ou à toi."
+    },
+    "it": {
+     "t": "Leggere ad alta voce",
+     "g": "Scopri perché leggere ad alta voce è così efficace.",
+     "p": [
+      "Ascoltare le parole aiuta a capire, ricordare e sentire il ritmo.",
+      "Leggere ai bambini amplia il vocabolario e crea momenti di vicinanza.",
+      "Piace anche agli adulti: condividi un capitolo con un amico o leggi per te."
+     ],
+     "q": "A chi ti piacerebbe leggere ad alta voce, o chi vorresti ascoltare?",
+     "c": "Oggi leggi una pagina ad alta voce, con espressione, a qualcuno o a te stesso."
+    },
+    "pt": {
+     "t": "Ler em voz alta",
+     "g": "Descobre porque ler em voz alta é tão poderoso.",
+     "p": [
+      "Ouvir as palavras ajuda a compreender, a recordar e a sentir o ritmo.",
+      "Ler às crianças amplia o vocabulário e cria momentos de proximidade.",
+      "Os adultos também gostam: partilha um capítulo com um amigo ou lê para ti."
+     ],
+     "q": "A quem gostarias de ler em voz alta, ou quem gostarias de ouvir?",
+     "c": "Lê hoje uma página em voz alta, com expressão, a alguém ou a ti."
+    },
+    "pt_BR": {
+     "t": "Ler em voz alta",
+     "g": "Descubra por que ler em voz alta é tão poderoso.",
+     "p": [
+      "Ouvir as palavras ajuda a compreender, lembrar e sentir o ritmo.",
+      "Ler para crianças amplia o vocabulário e cria momentos de aconchego.",
+      "Adultos também curtem: divida um capítulo com um amigo ou leia para si."
+     ],
+     "q": "Para quem você gostaria de ler em voz alta, ou quem gostaria de ouvir?",
+     "c": "Leia hoje uma página em voz alta, com expressão, para alguém ou para você."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your first month of reading",
+     "g": "Look back at formats, habits and story basics from days 1 to 29.",
+     "p": [
+      "Habits: a fixed moment, a cosy spot and a small daily goal keep you reading.",
+      "Story basics: character, plot, setting, narrator, theme and dialogue.",
+      "Variety: fiction, fables, fairy tales, comics and poems are all reading."
+     ],
+     "q": "Which idea from this month has helped your reading the most?",
+     "c": "Write down one habit you will keep and one book you will start next."
+    },
+    "de": {
+     "t": "Rückblick: dein erster Lesemonat",
+     "g": "Blicke auf Formate, Gewohnheiten und Erzählgrundlagen der Tage 1 bis 29 zurück.",
+     "p": [
+      "Gewohnheiten: ein fester Zeitpunkt, ein gemütlicher Platz und ein kleines Tagesziel halten dich im Lesen.",
+      "Erzählgrundlagen: Figur, Handlung, Schauplatz, Erzähler, Thema und Dialog.",
+      "Vielfalt: Romane, Fabeln, Märchen, Comics und Gedichte zählen alle als Lesen."
+     ],
+     "q": "Welche Idee dieses Monats hat dir beim Lesen am meisten geholfen?",
+     "c": "Schreibe eine Gewohnheit auf, die du behältst, und ein Buch, das du als Nächstes beginnst."
+    },
+    "es": {
+     "t": "Repaso: tu primer mes de lectura",
+     "g": "Repasa formatos, hábitos y bases narrativas de los días 1 a 29.",
+     "p": [
+      "Hábitos: un momento fijo, un rincón agradable y una meta diaria pequeña te mantienen leyendo.",
+      "Bases narrativas: personaje, trama, escenario, narrador, tema y diálogo.",
+      "Variedad: novelas, fábulas, cuentos, cómics y poemas también son lectura."
+     ],
+     "q": "¿Qué idea de este mes te ha ayudado más a leer?",
+     "c": "Anota un hábito que mantendrás y un libro que empezarás después."
+    },
+    "fr": {
+     "t": "Bilan : ton premier mois de lecture",
+     "g": "Reviens sur les formats, habitudes et bases du récit des jours 1 à 29.",
+     "p": [
+      "Habitudes : un moment fixe, un coin agréable et un petit objectif quotidien font lire.",
+      "Bases du récit : personnage, intrigue, cadre, narrateur, thème et dialogue.",
+      "Variété : romans, fables, contes, BD et poèmes, tout cela est lecture."
+     ],
+     "q": "Quelle idée de ce mois t'a le plus aidé à lire ?",
+     "c": "Note une habitude que tu gardes et un livre que tu commenceras ensuite."
+    },
+    "it": {
+     "t": "Ripasso: il tuo primo mese di lettura",
+     "g": "Ripercorri formati, abitudini e basi del racconto dei giorni da 1 a 29.",
+     "p": [
+      "Abitudini: un momento fisso, un angolo piacevole e un piccolo obiettivo quotidiano ti tengono in lettura.",
+      "Basi del racconto: personaggio, trama, ambientazione, narratore, tema e dialogo.",
+      "Varietà: romanzi, favole, fiabe, fumetti e poesie sono tutti lettura."
+     ],
+     "q": "Quale idea di questo mese ti ha aiutato di più a leggere?",
+     "c": "Scrivi un'abitudine che manterrai e un libro che inizierai dopo."
+    },
+    "pt": {
+     "t": "Revisão: o teu primeiro mês de leitura",
+     "g": "Revê formatos, hábitos e bases da narrativa dos dias 1 a 29.",
+     "p": [
+      "Hábitos: um momento fixo, um canto agradável e uma pequena meta diária mantêm-te a ler.",
+      "Bases da narrativa: personagem, enredo, cenário, narrador, tema e diálogo.",
+      "Variedade: romances, fábulas, contos, BD e poemas também são leitura."
+     ],
+     "q": "Que ideia deste mês mais te ajudou a ler?",
+     "c": "Escreve um hábito que vais manter e um livro que vais começar a seguir."
+    },
+    "pt_BR": {
+     "t": "Revisão: seu primeiro mês de leitura",
+     "g": "Reveja formatos, hábitos e bases da narrativa dos dias 1 a 29.",
+     "p": [
+      "Hábitos: um momento fixo, um cantinho agradável e uma pequena meta diária mantêm você lendo.",
+      "Bases da narrativa: personagem, enredo, cenário, narrador, tema e diálogo.",
+      "Variedade: romances, fábulas, contos, quadrinhos e poemas também são leitura."
+     ],
+     "q": "Que ideia deste mês mais ajudou você a ler?",
+     "c": "Escreva um hábito que vai manter e um livro que vai começar a seguir."
+    }
+   }
+  }
+ ]
+}

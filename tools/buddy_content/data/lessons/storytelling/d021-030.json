@@ -1,0 +1,835 @@
+{
+ "topic": "storytelling",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Lion and the Mouse",
+     "g": "See how a tiny character can save the day in a fable.",
+     "p": [
+      "A lion spares a little mouse that woke him.",
+      "Later the mouse frees the lion from a hunter's net by gnawing the ropes.",
+      "The lesson: kindness returns, and nobody is too small to help."
+     ],
+     "q": "When did a small act of kindness come back to you?",
+     "c": "Write a mini fable where a very small hero helps a very big one."
+    },
+    "de": {
+     "t": "Der Löwe und die Maus",
+     "g": "Sieh, wie in einer Fabel eine winzige Figur den Tag rettet.",
+     "p": [
+      "Ein Löwe verschont eine kleine Maus, die ihn geweckt hat.",
+      "Später befreit die Maus den Löwen aus dem Netz, indem sie die Seile durchnagt.",
+      "Die Lehre: Freundlichkeit kehrt zurück, und niemand ist zu klein zum Helfen."
+     ],
+     "q": "Wann kam dir eine kleine freundliche Tat zurück?",
+     "c": "Schreibe eine Mini-Fabel, in der ein sehr kleiner Held einem sehr großen hilft."
+    },
+    "es": {
+     "t": "El león y el ratón",
+     "g": "Mira cómo un personaje diminuto salva el día en una fábula.",
+     "p": [
+      "Un león perdona a un ratoncito que lo despertó.",
+      "Más tarde el ratón libera al león de una red royendo las cuerdas.",
+      "La enseñanza: la bondad regresa y nadie es demasiado pequeño para ayudar."
+     ],
+     "q": "¿Cuándo te volvió un pequeño gesto amable?",
+     "c": "Escribe una minifábula donde un héroe muy pequeño ayuda a uno muy grande."
+    },
+    "fr": {
+     "t": "Le lion et le rat",
+     "g": "Vois comment un tout petit personnage sauve la situation dans une fable.",
+     "p": [
+      "Un lion épargne un petit rat qui l'avait réveillé.",
+      "Plus tard, le rat libère le lion d'un filet en rongeant les cordes.",
+      "La leçon : la bonté revient et personne n'est trop petit pour aider."
+     ],
+     "q": "Quand un petit geste gentil t'est-il revenu ?",
+     "c": "Écris une mini-fable où un très petit héros aide un très grand."
+    },
+    "it": {
+     "t": "Il leone e il topo",
+     "g": "Guarda come un personaggio minuscolo salva la situazione in una favola.",
+     "p": [
+      "Un leone risparmia un topolino che lo aveva svegliato.",
+      "Più tardi il topo libera il leone da una rete rosicchiando le corde.",
+      "La morale: la gentilezza ritorna e nessuno è troppo piccolo per aiutare."
+     ],
+     "q": "Quando ti è tornato indietro un piccolo gesto gentile?",
+     "c": "Scrivi una mini favola in cui un eroe piccolissimo aiuta uno grandissimo."
+    },
+    "pt": {
+     "t": "O leão e o rato",
+     "g": "Vê como uma personagem minúscula salva o dia numa fábula.",
+     "p": [
+      "Um leão poupa um ratinho que o acordou.",
+      "Mais tarde o rato liberta o leão de uma rede roendo as cordas.",
+      "A lição: a bondade volta e ninguém é pequeno demais para ajudar."
+     ],
+     "q": "Quando é que um pequeno gesto simpático te voltou?",
+     "c": "Escreve uma mini fábula em que um herói muito pequeno ajuda um muito grande."
+    },
+    "pt_BR": {
+     "t": "O leão e o rato",
+     "g": "Veja como um personagem minúsculo salva o dia numa fábula.",
+     "p": [
+      "Um leão poupa um ratinho que o acordou.",
+      "Mais tarde o rato liberta o leão de uma rede roendo as cordas.",
+      "A lição: a bondade volta e ninguém é pequeno demais para ajudar."
+     ],
+     "q": "Quando um pequeno gesto gentil voltou para você?",
+     "c": "Escreva uma minifábula em que um herói muito pequeno ajuda um muito grande."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Stone Soup",
+     "g": "Explore a European folk tale about sharing and clever ideas that bring people together.",
+     "p": [
+      "Hungry travelers say they can make soup from a stone.",
+      "Curious villagers each add a carrot, an onion, some salt.",
+      "Soon everyone shares a rich meal: cooperation is the secret ingredient."
+     ],
+     "q": "What dish would you bring to a shared pot like this?",
+     "c": "Tell a stone-soup style tale with a new magic starter, like a button."
+    },
+    "de": {
+     "t": "Steinsuppe",
+     "g": "Entdecke ein europäisches Volksmärchen über Teilen und kluge Ideen, die Menschen verbinden.",
+     "p": [
+      "Hungrige Reisende sagen, sie könnten Suppe aus einem Stein kochen.",
+      "Neugierige Dorfbewohner geben je eine Karotte, eine Zwiebel, etwas Salz dazu.",
+      "Bald teilen alle ein reichhaltiges Mahl: Zusammenarbeit ist die geheime Zutat."
+     ],
+     "q": "Welches Gericht würdest du zu so einem gemeinsamen Topf beitragen?",
+     "c": "Erzähle ein Märchen im Steinsuppen-Stil mit einem neuen Zauberstart, etwa einem Knopf."
+    },
+    "es": {
+     "t": "Sopa de piedra",
+     "g": "Explora un cuento popular europeo sobre compartir e ideas ingeniosas que unen a la gente.",
+     "p": [
+      "Unos viajeros hambrientos dicen que pueden hacer sopa con una piedra.",
+      "Los vecinos curiosos aportan una zanahoria, una cebolla, algo de sal.",
+      "Pronto todos comparten una comida rica: la cooperación es el ingrediente secreto."
+     ],
+     "q": "¿Qué plato llevarías a una olla compartida así?",
+     "c": "Cuenta un cuento al estilo de la sopa de piedra con un nuevo inicio mágico, como un botón."
+    },
+    "fr": {
+     "t": "La soupe au caillou",
+     "g": "Explore un conte populaire européen sur le partage et les idées ingénieuses qui rapprochent.",
+     "p": [
+      "Des voyageurs affamés disent pouvoir faire une soupe avec un caillou.",
+      "Les villageois curieux ajoutent chacun une carotte, un oignon, un peu de sel.",
+      "Bientôt tous partagent un bon repas : la coopération est l'ingrédient secret."
+     ],
+     "q": "Quel plat apporterais-tu à une marmite partagée comme celle-ci ?",
+     "c": "Raconte un conte façon soupe au caillou avec un nouveau départ magique, comme un bouton."
+    },
+    "it": {
+     "t": "La zuppa di sasso",
+     "g": "Esplora una fiaba popolare europea sulla condivisione e sulle idee furbe che uniscono.",
+     "p": [
+      "Viaggiatori affamati dicono di saper fare la zuppa con un sasso.",
+      "Gli abitanti curiosi aggiungono ciascuno una carota, una cipolla, un po' di sale.",
+      "Presto tutti condividono un pasto ricco: la cooperazione è l'ingrediente segreto."
+     ],
+     "q": "Quale piatto porteresti in una pentola condivisa come questa?",
+     "c": "Racconta una fiaba stile zuppa di sasso con un nuovo inizio magico, come un bottone."
+    },
+    "pt": {
+     "t": "A sopa de pedra",
+     "g": "Explora um conto popular europeu sobre partilha e ideias espertas que unem as pessoas.",
+     "p": [
+      "Viajantes famintos dizem que sabem fazer sopa com uma pedra.",
+      "Os aldeões curiosos juntam cada um uma cenoura, uma cebola, um pouco de sal.",
+      "Depressa todos partilham uma refeição rica: a cooperação é o ingrediente secreto."
+     ],
+     "q": "Que prato levarias para um tacho partilhado assim?",
+     "c": "Conta um conto ao estilo da sopa de pedra com um novo início mágico, como um botão."
+    },
+    "pt_BR": {
+     "t": "A sopa de pedra",
+     "g": "Explore um conto popular europeu sobre partilha e ideias espertas que unem as pessoas.",
+     "p": [
+      "Viajantes famintos dizem que sabem fazer sopa com uma pedra.",
+      "Os moradores curiosos acrescentam cada um uma cenoura, uma cebola, um pouco de sal.",
+      "Logo todos dividem uma refeição farta: a cooperação é o ingrediente secreto."
+     ],
+     "q": "Que prato você levaria para uma panela compartilhada assim?",
+     "c": "Conte um conto no estilo da sopa de pedra com um novo começo mágico, como um botão."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Retelling a tale in your words",
+     "g": "Keep the heart of a story while using your own voice.",
+     "p": [
+      "Find the heart first: the wish, the problem and the change.",
+      "Then use your own words, rhythm and small details.",
+      "Great storytellers across the world retell old tales and make them theirs."
+     ],
+     "q": "Which old tale would you love to retell your way?",
+     "c": "Retell the Tortoise and the Hare in your own voice in four sentences."
+    },
+    "de": {
+     "t": "Ein Märchen in eigenen Worten erzählen",
+     "g": "Bewahre den Kern einer Geschichte und nutze deine eigene Stimme.",
+     "p": [
+      "Finde zuerst den Kern: Wunsch, Problem und Veränderung.",
+      "Dann nimm deine eigenen Worte, deinen Rhythmus und kleine Details.",
+      "Große Erzähler weltweit erzählen alte Geschichten neu und machen sie zu ihren."
+     ],
+     "q": "Welches alte Märchen würdest du gern auf deine Art erzählen?",
+     "c": "Erzähle Hase und Schildkröte mit deiner Stimme in vier Sätzen neu."
+    },
+    "es": {
+     "t": "Recontar un cuento con tus palabras",
+     "g": "Mantén el corazón de una historia usando tu propia voz.",
+     "p": [
+      "Primero busca el corazón: el deseo, el problema y el cambio.",
+      "Luego usa tus palabras, tu ritmo y pequeños detalles.",
+      "Grandes narradores del mundo recuentan cuentos antiguos y los hacen suyos."
+     ],
+     "q": "¿Qué cuento antiguo te gustaría recontar a tu manera?",
+     "c": "Recuenta La liebre y la tortuga con tu voz en cuatro frases."
+    },
+    "fr": {
+     "t": "Raconter un conte avec tes mots",
+     "g": "Garde le cœur d'une histoire tout en utilisant ta propre voix.",
+     "p": [
+      "Trouve d'abord le cœur : le souhait, le problème et le changement.",
+      "Puis utilise tes mots, ton rythme et de petits détails.",
+      "De grands conteurs du monde entier reprennent de vieux contes et se les approprient."
+     ],
+     "q": "Quel vieux conte aimerais-tu raconter à ta façon ?",
+     "c": "Raconte Le lièvre et la tortue avec ta voix en quatre phrases."
+    },
+    "it": {
+     "t": "Raccontare una fiaba con parole tue",
+     "g": "Mantieni il cuore di una storia usando la tua voce.",
+     "p": [
+      "Trova prima il cuore: il desiderio, il problema e il cambiamento.",
+      "Poi usa le tue parole, il tuo ritmo e piccoli dettagli.",
+      "Grandi narratori nel mondo raccontano di nuovo le fiabe antiche e le fanno proprie."
+     ],
+     "q": "Quale fiaba antica ameresti raccontare a modo tuo?",
+     "c": "Racconta La lepre e la tartaruga con la tua voce in quattro frasi."
+    },
+    "pt": {
+     "t": "Recontar um conto com as tuas palavras",
+     "g": "Mantém o coração de uma história usando a tua própria voz.",
+     "p": [
+      "Primeiro encontra o coração: o desejo, o problema e a mudança.",
+      "Depois usa as tuas palavras, o teu ritmo e pequenos detalhes.",
+      "Grandes contadores pelo mundo recontam contos antigos e fazem-nos seus."
+     ],
+     "q": "Que conto antigo gostavas de recontar à tua maneira?",
+     "c": "Reconta A lebre e a tartaruga com a tua voz em quatro frases."
+    },
+    "pt_BR": {
+     "t": "Recontando um conto com suas palavras",
+     "g": "Mantenha o coração de uma história usando sua própria voz.",
+     "p": [
+      "Primeiro ache o coração: o desejo, o problema e a mudança.",
+      "Depois use suas palavras, seu ritmo e pequenos detalhes.",
+      "Grandes contadores pelo mundo recontam contos antigos e os tornam seus."
+     ],
+     "q": "Que conto antigo você adoraria recontar do seu jeito?",
+     "c": "Reconte A lebre e a tartaruga com sua voz em quatro frases."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Story objects",
+     "g": "Use a single object, like a key or a hat, to spark a story.",
+     "p": [
+      "An object can carry a history: who owned it, and why was it lost?",
+      "Ask three questions about it: where from, who needs it, what does it open?",
+      "Small objects make the story feel real and easy to picture."
+     ],
+     "q": "If you picked one object from your bag, what story could it tell?",
+     "c": "Take a brass key and write a four-sentence story about it."
+    },
+    "de": {
+     "t": "Geschichtenobjekte",
+     "g": "Nutze einen einzigen Gegenstand, etwa einen Schlüssel oder Hut, als Funken für eine Geschichte.",
+     "p": [
+      "Ein Gegenstand trägt eine Geschichte: Wem gehörte er, und warum ging er verloren?",
+      "Stelle drei Fragen: Woher, wer braucht ihn, was öffnet er?",
+      "Kleine Gegenstände machen die Geschichte greifbar und leicht vorstellbar."
+     ],
+     "q": "Welche Geschichte könnte ein Gegenstand aus deiner Tasche erzählen?",
+     "c": "Nimm einen Messingschlüssel und schreibe dazu eine Geschichte in vier Sätzen."
+    },
+    "es": {
+     "t": "Objetos con historia",
+     "g": "Usa un solo objeto, como una llave o un sombrero, para encender una historia.",
+     "p": [
+      "Un objeto lleva una historia: ¿de quién fue y por qué se perdió?",
+      "Hazle tres preguntas: ¿de dónde viene, quién lo necesita, qué abre?",
+      "Los objetos pequeños hacen la historia real y fácil de imaginar."
+     ],
+     "q": "Si sacaras un objeto de tu bolso, ¿qué historia contaría?",
+     "c": "Toma una llave de latón y escribe una historia de cuatro frases sobre ella."
+    },
+    "fr": {
+     "t": "Objets à histoires",
+     "g": "Utilise un seul objet, comme une clé ou un chapeau, pour déclencher une histoire.",
+     "p": [
+      "Un objet porte une histoire : à qui était-il, et pourquoi a-t-il été perdu ?",
+      "Pose trois questions : d'où vient-il, qui en a besoin, qu'ouvre-t-il ?",
+      "Les petits objets rendent l'histoire réelle et facile à imaginer."
+     ],
+     "q": "Si tu sortais un objet de ton sac, quelle histoire raconterait-il ?",
+     "c": "Prends une clé en laiton et écris une histoire de quatre phrases sur elle."
+    },
+    "it": {
+     "t": "Oggetti con una storia",
+     "g": "Usa un solo oggetto, come una chiave o un cappello, per accendere una storia.",
+     "p": [
+      "Un oggetto porta una storia: di chi era e perché è stato perso?",
+      "Fagli tre domande: da dove viene, chi ne ha bisogno, che cosa apre?",
+      "Gli oggetti piccoli rendono la storia reale e facile da immaginare."
+     ],
+     "q": "Se tirassi fuori un oggetto dalla borsa, che storia racconterebbe?",
+     "c": "Prendi una chiave d'ottone e scrivi una storia di quattro frasi su di essa."
+    },
+    "pt": {
+     "t": "Objetos com história",
+     "g": "Usa um só objeto, como uma chave ou um chapéu, para acender uma história.",
+     "p": [
+      "Um objeto leva uma história: de quem era e porque se perdeu?",
+      "Faz-lhe três perguntas: de onde vem, quem precisa dele, o que abre?",
+      "Objetos pequenos tornam a história real e fácil de imaginar."
+     ],
+     "q": "Se tirasses um objeto da mala, que história contaria?",
+     "c": "Pega numa chave de latão e escreve uma história de quatro frases sobre ela."
+    },
+    "pt_BR": {
+     "t": "Objetos com história",
+     "g": "Use um só objeto, como uma chave ou um chapéu, para acender uma história.",
+     "p": [
+      "Um objeto carrega uma história: de quem era e por que se perdeu?",
+      "Faça três perguntas: de onde vem, quem precisa dele, o que abre?",
+      "Objetos pequenos deixam a história real e fácil de imaginar."
+     ],
+     "q": "Se você tirasse um objeto da bolsa, que história ele contaria?",
+     "c": "Pegue uma chave de latão e escreva uma história de quatro frases sobre ela."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Picture prompts",
+     "g": "Find a story hidden inside a photo or a painting.",
+     "p": [
+      "Look at who is there, what just happened and what happens next.",
+      "Notice small clues: a coat on a chair, two cups, wet footprints.",
+      "One image can hold many stories, so there is no wrong answer."
+     ],
+     "q": "Which photo on your phone has the best hidden story?",
+     "c": "Pick a photo and tell me the story of the moment just before it was taken."
+    },
+    "de": {
+     "t": "Bildimpulse",
+     "g": "Finde eine Geschichte, die sich in einem Foto oder Gemälde versteckt.",
+     "p": [
+      "Schau, wer da ist, was gerade geschah und was als Nächstes passiert.",
+      "Achte auf kleine Hinweise: ein Mantel auf dem Stuhl, zwei Tassen, nasse Fußspuren.",
+      "Ein Bild kann viele Geschichten tragen, es gibt keine falsche Antwort."
+     ],
+     "q": "Welches Foto auf deinem Handy hat die beste versteckte Geschichte?",
+     "c": "Such ein Foto aus und erzähle den Moment kurz vor der Aufnahme."
+    },
+    "es": {
+     "t": "Imágenes que inspiran",
+     "g": "Encuentra una historia escondida en una foto o una pintura.",
+     "p": [
+      "Mira quién está, qué acaba de pasar y qué pasará después.",
+      "Fíjate en pistas pequeñas: un abrigo en una silla, dos tazas, huellas mojadas.",
+      "Una imagen guarda muchas historias, así que no hay respuesta incorrecta."
+     ],
+     "q": "¿Qué foto de tu móvil tiene la mejor historia escondida?",
+     "c": "Elige una foto y cuéntame la historia del momento justo antes de tomarla."
+    },
+    "fr": {
+     "t": "Images pour inspirer",
+     "g": "Trouve une histoire cachée dans une photo ou un tableau.",
+     "p": [
+      "Regarde qui est là, ce qui vient de se passer et ce qui va suivre.",
+      "Remarque les petits indices : un manteau sur une chaise, deux tasses, des traces mouillées.",
+      "Une image peut contenir bien des histoires, donc pas de mauvaise réponse."
+     ],
+     "q": "Quelle photo de ton téléphone cache la meilleure histoire ?",
+     "c": "Choisis une photo et raconte l'histoire du moment juste avant qu'elle soit prise."
+    },
+    "it": {
+     "t": "Immagini che ispirano",
+     "g": "Trova una storia nascosta in una foto o in un dipinto.",
+     "p": [
+      "Guarda chi c'è, che cosa è appena successo e che cosa accadrà dopo.",
+      "Nota i piccoli indizi: un cappotto su una sedia, due tazze, impronte bagnate.",
+      "Un'immagine può contenere molte storie, quindi non ci sono risposte sbagliate."
+     ],
+     "q": "Quale foto sul tuo telefono ha la migliore storia nascosta?",
+     "c": "Scegli una foto e raccontami la storia del momento appena prima dello scatto."
+    },
+    "pt": {
+     "t": "Imagens que inspiram",
+     "g": "Encontra uma história escondida numa foto ou num quadro.",
+     "p": [
+      "Olha quem está, o que acabou de acontecer e o que vai acontecer a seguir.",
+      "Repara em pistas pequenas: um casaco na cadeira, duas chávenas, pegadas molhadas.",
+      "Uma imagem guarda muitas histórias, por isso não há resposta errada."
+     ],
+     "q": "Que foto do teu telemóvel tem a melhor história escondida?",
+     "c": "Escolhe uma foto e conta-me a história do momento mesmo antes de ser tirada."
+    },
+    "pt_BR": {
+     "t": "Imagens que inspiram",
+     "g": "Encontre uma história escondida numa foto ou num quadro.",
+     "p": [
+      "Olhe quem está lá, o que acabou de acontecer e o que vai acontecer depois.",
+      "Repare em pistas pequenas: um casaco na cadeira, duas xícaras, pegadas molhadas.",
+      "Uma imagem guarda muitas histórias, então não existe resposta errada."
+     ],
+     "q": "Que foto do seu celular tem a melhor história escondida?",
+     "c": "Escolha uma foto e me conte a história do momento logo antes de ela ser tirada."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What if...?",
+     "g": "Use what-if questions to invent fresh story ideas.",
+     "p": [
+      "What if is a magic key: it changes one thing and lets the story grow.",
+      "Keep the change small and clear: what if the moon came down for tea?",
+      "Then ask: who would be surprised, who would be delighted, what would they do?"
+     ],
+     "q": "What is the funniest what-if you can think of right now?",
+     "c": "Write one what-if question and answer it with a three-sentence story."
+    },
+    "de": {
+     "t": "Was wäre, wenn...?",
+     "g": "Nutze Was-wäre-wenn-Fragen, um frische Geschichtenideen zu erfinden.",
+     "p": [
+      "Was wäre wenn ist ein Zauberschlüssel: Er ändert eine Sache, und die Geschichte wächst.",
+      "Halte die Änderung klein und klar: Was wäre, wenn der Mond zum Tee käme?",
+      "Dann frag: Wer wäre überrascht, wer erfreut, was würden sie tun?"
+     ],
+     "q": "Was ist die lustigste Was-wäre-wenn-Frage, die dir gerade einfällt?",
+     "c": "Schreibe eine Was-wäre-wenn-Frage und beantworte sie mit einer Geschichte in drei Sätzen."
+    },
+    "es": {
+     "t": "¿Y si...?",
+     "g": "Usa preguntas del tipo y si para inventar ideas frescas de historias.",
+     "p": [
+      "Y si es una llave mágica: cambia una cosa y la historia crece.",
+      "Mantén el cambio pequeño y claro: ¿y si la luna bajara a tomar el té?",
+      "Luego pregunta: ¿quién se sorprendería, quién se alegraría, qué haría?"
+     ],
+     "q": "¿Cuál es el y si más divertido que se te ocurre ahora?",
+     "c": "Escribe una pregunta y si y respóndela con una historia de tres frases."
+    },
+    "fr": {
+     "t": "Et si... ?",
+     "g": "Utilise les questions et si pour inventer des idées d'histoires fraîches.",
+     "p": [
+      "Et si est une clé magique : elle change une chose et l'histoire grandit.",
+      "Garde le changement petit et clair : et si la lune venait prendre le thé ?",
+      "Demande ensuite : qui serait surpris, qui serait ravi, que ferait-on ?"
+     ],
+     "q": "Quel est le et si le plus drôle qui te vient maintenant ?",
+     "c": "Écris une question et si et réponds par une histoire de trois phrases."
+    },
+    "it": {
+     "t": "E se...?",
+     "g": "Usa le domande e se per inventare idee fresche di storie.",
+     "p": [
+      "E se è una chiave magica: cambia una cosa e la storia cresce.",
+      "Tieni il cambiamento piccolo e chiaro: e se la luna scendesse a prendere il tè?",
+      "Poi chiedi: chi sarebbe sorpreso, chi felice, che cosa farebbe?"
+     ],
+     "q": "Qual è l'e se più divertente che ti viene in mente ora?",
+     "c": "Scrivi una domanda e se e rispondi con una storia di tre frasi."
+    },
+    "pt": {
+     "t": "E se...?",
+     "g": "Usa perguntas do tipo e se para inventar ideias frescas de histórias.",
+     "p": [
+      "E se é uma chave mágica: muda uma coisa e a história cresce.",
+      "Mantém a mudança pequena e clara: e se a lua descesse para tomar chá?",
+      "Depois pergunta: quem ficaria surpreendido, quem ficaria feliz, o que faria?"
+     ],
+     "q": "Qual é o e se mais engraçado que te ocorre agora?",
+     "c": "Escreve uma pergunta e se e responde com uma história de três frases."
+    },
+    "pt_BR": {
+     "t": "E se...?",
+     "g": "Use perguntas do tipo e se para inventar ideias frescas de histórias.",
+     "p": [
+      "E se é uma chave mágica: muda uma coisa e a história cresce.",
+      "Mantenha a mudança pequena e clara: e se a lua descesse para tomar chá?",
+      "Depois pergunte: quem ficaria surpreso, quem ficaria feliz, o que faria?"
+     ],
+     "q": "Qual é o e se mais engraçado que você imagina agora?",
+     "c": "Escreva uma pergunta e se e responda com uma história de três frases."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Animals as characters",
+     "g": "Learn why talking animals are so popular in tales worldwide.",
+     "p": [
+      "Animals carry simple traits: the fox is clever, the owl is wise.",
+      "Anansi the spider in West Africa and Coyote in Native American tales are tricksters.",
+      "Animal heroes let us talk about people gently and with humor."
+     ],
+     "q": "Which animal would be the hero of your own story?",
+     "c": "Create an animal hero with one trait and one wish, in three sentences."
+    },
+    "de": {
+     "t": "Tiere als Figuren",
+     "g": "Erfahre, warum sprechende Tiere in Märchen weltweit so beliebt sind.",
+     "p": [
+      "Tiere tragen einfache Eigenschaften: Der Fuchs ist schlau, die Eule weise.",
+      "Anansi, die Spinne in Westafrika, und Kojote in indianischen Erzählungen sind Schelme.",
+      "Tierhelden lassen uns sanft und mit Humor über Menschen sprechen."
+     ],
+     "q": "Welches Tier wäre der Held deiner eigenen Geschichte?",
+     "c": "Erschaffe einen Tierhelden mit einer Eigenschaft und einem Wunsch in drei Sätzen."
+    },
+    "es": {
+     "t": "Animales como personajes",
+     "g": "Descubre por qué los animales que hablan triunfan en los cuentos de todo el mundo.",
+     "p": [
+      "Los animales llevan rasgos simples: el zorro es astuto, el búho es sabio.",
+      "Anansi, la araña de África occidental, y Coyote en cuentos indígenas americanos son embaucadores.",
+      "Los héroes animales nos dejan hablar de las personas con suavidad y humor."
+     ],
+     "q": "¿Qué animal sería el héroe de tu propia historia?",
+     "c": "Crea un héroe animal con un rasgo y un deseo, en tres frases."
+    },
+    "fr": {
+     "t": "Les animaux comme personnages",
+     "g": "Découvre pourquoi les animaux qui parlent sont si populaires dans les contes du monde entier.",
+     "p": [
+      "Les animaux portent des traits simples : le renard est rusé, le hibou est sage.",
+      "Anansi l'araignée d'Afrique de l'Ouest et Coyote dans les contes amérindiens sont des farceurs.",
+      "Les héros animaux permettent de parler des gens avec douceur et humour."
+     ],
+     "q": "Quel animal serait le héros de ta propre histoire ?",
+     "c": "Crée un héros animal avec un trait et un souhait, en trois phrases."
+    },
+    "it": {
+     "t": "Gli animali come personaggi",
+     "g": "Scopri perché gli animali parlanti sono così amati nelle fiabe di tutto il mondo.",
+     "p": [
+      "Gli animali portano tratti semplici: la volpe è astuta, il gufo è saggio.",
+      "Anansi il ragno dell'Africa occidentale e Coyote nei racconti nativi americani sono briganti furbi.",
+      "Gli eroi animali ci fanno parlare delle persone con dolcezza e umorismo."
+     ],
+     "q": "Quale animale sarebbe l'eroe della tua storia?",
+     "c": "Crea un eroe animale con un tratto e un desiderio, in tre frasi."
+    },
+    "pt": {
+     "t": "Animais como personagens",
+     "g": "Descobre porque os animais que falam são tão populares nos contos de todo o mundo.",
+     "p": [
+      "Os animais trazem traços simples: a raposa é esperta, a coruja é sábia.",
+      "Anansi, a aranha da África Ocidental, e Coiote em contos indígenas americanos são marotos.",
+      "Heróis animais deixam-nos falar das pessoas com suavidade e humor."
+     ],
+     "q": "Que animal seria o herói da tua própria história?",
+     "c": "Cria um herói animal com um traço e um desejo, em três frases."
+    },
+    "pt_BR": {
+     "t": "Animais como personagens",
+     "g": "Descubra por que os animais que falam são tão populares nos contos do mundo todo.",
+     "p": [
+      "Os animais trazem traços simples: a raposa é esperta, a coruja é sábia.",
+      "Anansi, a aranha da África Ocidental, e o Coiote em contos indígenas americanos são trapaceiros.",
+      "Heróis animais nos deixam falar das pessoas com leveza e humor."
+     ],
+     "q": "Que animal seria o herói da sua própria história?",
+     "c": "Crie um herói animal com um traço e um desejo, em três frases."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mini story, big feeling",
+     "g": "Show one clear emotion in a short story.",
+     "p": [
+      "Pick one feeling only: pride, wonder, nervous excitement, relief.",
+      "Show it with actions and details instead of naming it.",
+      "A trembling hand and a hopeful smile say more than the word nervous."
+     ],
+     "q": "Which feeling is easiest for you to bring to life in words?",
+     "c": "Write a four-sentence story where we feel proud without the word proud."
+    },
+    "de": {
+     "t": "Mini-Geschichte, großes Gefühl",
+     "g": "Zeige in einer kurzen Geschichte ein klares Gefühl.",
+     "p": [
+      "Wähle nur ein Gefühl: Stolz, Staunen, nervöse Vorfreude, Erleichterung.",
+      "Zeige es durch Handlung und Details, statt es zu benennen.",
+      "Eine zitternde Hand und ein hoffnungsvolles Lächeln sagen mehr als das Wort nervös."
+     ],
+     "q": "Welches Gefühl kannst du am leichtesten in Worten lebendig machen?",
+     "c": "Schreibe eine Geschichte in vier Sätzen, in der wir Stolz spüren, ohne das Wort Stolz."
+    },
+    "es": {
+     "t": "Minihistoria, gran emoción",
+     "g": "Muestra una emoción clara en una historia corta.",
+     "p": [
+      "Elige una sola emoción: orgullo, asombro, emoción nerviosa, alivio.",
+      "Muéstrala con acciones y detalles en vez de nombrarla.",
+      "Una mano temblorosa y una sonrisa esperanzada dicen más que la palabra nervioso."
+     ],
+     "q": "¿Qué emoción te resulta más fácil de dar vida con palabras?",
+     "c": "Escribe una historia de cuatro frases donde sintamos orgullo sin la palabra orgullo."
+    },
+    "fr": {
+     "t": "Mini histoire, grande émotion",
+     "g": "Montre une émotion claire dans une histoire courte.",
+     "p": [
+      "Choisis une seule émotion : fierté, émerveillement, excitation nerveuse, soulagement.",
+      "Montre-la par des gestes et des détails plutôt que de la nommer.",
+      "Une main qui tremble et un sourire plein d'espoir en disent plus que le mot nerveux."
+     ],
+     "q": "Quelle émotion est la plus facile à faire vivre avec des mots ?",
+     "c": "Écris une histoire de quatre phrases où l'on ressent la fierté sans le mot fierté."
+    },
+    "it": {
+     "t": "Mini storia, grande emozione",
+     "g": "Mostra un'emozione chiara in una storia breve.",
+     "p": [
+      "Scegli una sola emozione: orgoglio, meraviglia, agitazione, sollievo.",
+      "Mostrala con azioni e dettagli invece di nominarla.",
+      "Una mano che trema e un sorriso speranzoso dicono più della parola nervoso."
+     ],
+     "q": "Quale emozione ti è più facile far vivere con le parole?",
+     "c": "Scrivi una storia di quattro frasi in cui si senta l'orgoglio senza la parola orgoglio."
+    },
+    "pt": {
+     "t": "Mini história, grande emoção",
+     "g": "Mostra uma emoção clara numa história curta.",
+     "p": [
+      "Escolhe uma só emoção: orgulho, espanto, ansiedade, alívio.",
+      "Mostra-a com ações e detalhes em vez de a nomear.",
+      "Uma mão a tremer e um sorriso esperançoso dizem mais do que a palavra nervoso."
+     ],
+     "q": "Que emoção é mais fácil para ti dar vida com palavras?",
+     "c": "Escreve uma história de quatro frases em que sentimos orgulho sem a palavra orgulho."
+    },
+    "pt_BR": {
+     "t": "Mini história, grande emoção",
+     "g": "Mostre uma emoção clara numa história curta.",
+     "p": [
+      "Escolha uma só emoção: orgulho, encantamento, ansiedade, alívio.",
+      "Mostre-a com ações e detalhes em vez de nomeá-la.",
+      "Uma mão tremendo e um sorriso esperançoso dizem mais que a palavra nervoso."
+     ],
+     "q": "Qual emoção é mais fácil para você dar vida com palavras?",
+     "c": "Escreva uma história de quatro frases em que sentimos orgulho sem a palavra orgulho."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Story time traditions",
+     "g": "Discover how families and communities share stories, from bedtime to festivals.",
+     "p": [
+      "Bedtime stories calm the day and build close family moments.",
+      "Many cultures gather around a fire or a table for storytelling evenings.",
+      "Griots in West Africa keep community stories alive through spoken word and music."
+     ],
+     "q": "What storytelling tradition does your family or town have?",
+     "c": "Ask someone at home for a story, and retell it to me in three sentences."
+    },
+    "de": {
+     "t": "Erzähltraditionen",
+     "g": "Entdecke, wie Familien und Gemeinschaften Geschichten teilen, vom Schlafengehen bis zu Festen.",
+     "p": [
+      "Gute-Nacht-Geschichten beruhigen den Tag und schaffen nahe Familienmomente.",
+      "Viele Kulturen versammeln sich am Feuer oder Tisch zu Erzählabenden.",
+      "Griots in Westafrika halten Gemeinschaftsgeschichten durch Wort und Musik lebendig."
+     ],
+     "q": "Welche Erzähltradition hat deine Familie oder dein Ort?",
+     "c": "Bitte jemanden zu Hause um eine Geschichte und erzähle sie mir in drei Sätzen nach."
+    },
+    "es": {
+     "t": "Tradiciones de contar historias",
+     "g": "Descubre cómo familias y comunidades comparten historias, de la hora de dormir a las fiestas.",
+     "p": [
+      "Los cuentos para dormir calman el día y crean momentos familiares cercanos.",
+      "Muchas culturas se reúnen en torno al fuego o la mesa para veladas de cuentos.",
+      "Los griots de África occidental mantienen vivas las historias de la comunidad con palabra y música."
+     ],
+     "q": "¿Qué tradición de contar historias tiene tu familia o tu pueblo?",
+     "c": "Pide una historia a alguien en casa y cuéntamela en tres frases."
+    },
+    "fr": {
+     "t": "Traditions de conte",
+     "g": "Découvre comment familles et communautés partagent des histoires, du coucher aux fêtes.",
+     "p": [
+      "Les histoires du soir apaisent la journée et créent des moments de famille proches.",
+      "De nombreuses cultures se rassemblent autour du feu ou de la table pour des veillées.",
+      "Les griots d'Afrique de l'Ouest font vivre les histoires de leur communauté par la parole et la musique."
+     ],
+     "q": "Quelle tradition de conte existe dans ta famille ou ta ville ?",
+     "c": "Demande une histoire à quelqu'un chez toi et raconte-la-moi en trois phrases."
+    },
+    "it": {
+     "t": "Tradizioni del racconto",
+     "g": "Scopri come famiglie e comunità condividono storie, dalla buonanotte alle feste.",
+     "p": [
+      "Le storie della buonanotte calmano la giornata e creano momenti di famiglia.",
+      "Molte culture si riuniscono attorno al fuoco o alla tavola per serate di racconti.",
+      "I griot dell'Africa occidentale tengono vive le storie della comunità con parola e musica."
+     ],
+     "q": "Quale tradizione del racconto ha la tua famiglia o il tuo paese?",
+     "c": "Chiedi una storia a qualcuno a casa e raccontamela in tre frasi."
+    },
+    "pt": {
+     "t": "Tradições de contar histórias",
+     "g": "Descobre como famílias e comunidades partilham histórias, da hora de dormir às festas.",
+     "p": [
+      "As histórias de embalar acalmam o dia e criam momentos de família.",
+      "Muitas culturas juntam-se à volta do lume ou da mesa para serões de contos.",
+      "Os griots da África Ocidental mantêm vivas as histórias da comunidade com palavra e música."
+     ],
+     "q": "Que tradição de contar histórias tem a tua família ou a tua terra?",
+     "c": "Pede uma história a alguém em casa e conta-ma em três frases."
+    },
+    "pt_BR": {
+     "t": "Tradições de contar histórias",
+     "g": "Descubra como famílias e comunidades compartilham histórias, da hora de dormir às festas.",
+     "p": [
+      "Histórias de ninar acalmam o dia e criam momentos de família.",
+      "Muitas culturas se reúnem em volta do fogo ou da mesa para noites de contos.",
+      "Os griots da África Ocidental mantêm vivas as histórias da comunidade com palavra e música."
+     ],
+     "q": "Que tradição de contar histórias sua família ou sua cidade tem?",
+     "c": "Peça uma história a alguém em casa e conte para mim em três frases."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: story building blocks",
+     "g": "Look back at characters, settings, problems and our first shared stories.",
+     "p": [
+      "A story needs a character with a wish, a place and a problem.",
+      "Senses, small details and a clear ending make it come alive.",
+      "Fables and retellings show how simple plots travel through cultures."
+     ],
+     "q": "Which lesson so far changed how you tell stories the most?",
+     "c": "Build a mini story using a hero, a setting, a problem and a happy ending."
+    },
+    "de": {
+     "t": "Rückblick: Bausteine der Geschichte",
+     "g": "Blicke zurück auf Figuren, Schauplätze, Probleme und unsere ersten gemeinsamen Geschichten.",
+     "p": [
+      "Eine Geschichte braucht eine Figur mit Wunsch, einen Ort und ein Problem.",
+      "Sinne, kleine Details und ein klares Ende erwecken sie zum Leben.",
+      "Fabeln und Nacherzählungen zeigen, wie einfache Handlungen durch Kulturen wandern."
+     ],
+     "q": "Welche Lektion hat dein Erzählen bisher am meisten verändert?",
+     "c": "Baue eine Mini-Geschichte aus Held, Schauplatz, Problem und glücklichem Ende."
+    },
+    "es": {
+     "t": "Repaso: piezas de la historia",
+     "g": "Repasa personajes, escenarios, problemas y nuestras primeras historias compartidas.",
+     "p": [
+      "Una historia necesita un personaje con un deseo, un lugar y un problema.",
+      "Los sentidos, los detalles y un final claro la hacen cobrar vida.",
+      "Las fábulas y los recuentos muestran cómo viajan las tramas simples entre culturas."
+     ],
+     "q": "¿Qué lección hasta ahora cambió más tu forma de contar?",
+     "c": "Crea una minihistoria con un héroe, un escenario, un problema y un final feliz."
+    },
+    "fr": {
+     "t": "Révision : les briques d'une histoire",
+     "g": "Reviens sur les personnages, décors, problèmes et nos premières histoires partagées.",
+     "p": [
+      "Une histoire a besoin d'un personnage avec un souhait, d'un lieu et d'un problème.",
+      "Les sens, les petits détails et une fin claire la font vivre.",
+      "Fables et reprises montrent comment les intrigues simples voyagent entre cultures."
+     ],
+     "q": "Quelle leçon a le plus changé ta façon de raconter jusqu'ici ?",
+     "c": "Compose une mini histoire avec un héros, un décor, un problème et une fin heureuse."
+    },
+    "it": {
+     "t": "Ripasso: i mattoni della storia",
+     "g": "Ripassa personaggi, ambientazioni, problemi e le nostre prime storie condivise.",
+     "p": [
+      "Una storia ha bisogno di un personaggio con un desiderio, un luogo e un problema.",
+      "I sensi, i piccoli dettagli e un finale chiaro la fanno vivere.",
+      "Favole e rielaborazioni mostrano come le trame semplici viaggiano tra le culture."
+     ],
+     "q": "Quale lezione finora ha cambiato di più il tuo modo di raccontare?",
+     "c": "Costruisci una mini storia con un eroe, un'ambientazione, un problema e un lieto fine."
+    },
+    "pt": {
+     "t": "Revisão: peças da história",
+     "g": "Revê personagens, cenários, problemas e as nossas primeiras histórias partilhadas.",
+     "p": [
+      "Uma história precisa de uma personagem com um desejo, um lugar e um problema.",
+      "Os sentidos, os pequenos detalhes e um final claro dão-lhe vida.",
+      "Fábulas e recontos mostram como enredos simples viajam entre culturas."
+     ],
+     "q": "Que lição até agora mais mudou a tua maneira de contar?",
+     "c": "Cria uma mini história com um herói, um cenário, um problema e um final feliz."
+    },
+    "pt_BR": {
+     "t": "Revisão: peças da história",
+     "g": "Reveja personagens, cenários, problemas e nossas primeiras histórias compartilhadas.",
+     "p": [
+      "Uma história precisa de um personagem com um desejo, um lugar e um problema.",
+      "Os sentidos, os pequenos detalhes e um final claro dão vida a ela.",
+      "Fábulas e recontos mostram como enredos simples viajam entre culturas."
+     ],
+     "q": "Que lição até agora mais mudou seu jeito de contar?",
+     "c": "Crie uma mini história com um herói, um cenário, um problema e um final feliz."
+    }
+   }
+  }
+ ]
+}

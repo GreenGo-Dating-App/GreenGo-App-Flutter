@@ -1,0 +1,835 @@
+{
+ "topic": "casual_chat",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hobbies and free time",
+     "g": "Share what you enjoy doing when you are free and hear about their hobbies.",
+     "p": [
+      "Name a hobby and say what you like about it: relaxing, creative or social.",
+      "Beginners count too: I'm just starting is a lovely thing to say.",
+      "Ask How did you get into it? to hear a story."
+     ],
+     "q": "What do you do when you have a free afternoon?",
+     "c": "Tell your Buddy about one hobby and ask how it got started for them."
+    },
+    "de": {
+     "t": "Hobbys und Freizeit",
+     "g": "Erzähle, was du in deiner Freizeit gern machst, und höre von den Hobbys des anderen.",
+     "p": [
+      "Nenne ein Hobby und sage, was du daran magst: entspannend, kreativ oder gesellig.",
+      "Auch Anfänger zählen: Ich fange gerade erst an ist ein schöner Satz.",
+      "Frag Wie bist du dazu gekommen? und höre eine Geschichte."
+     ],
+     "q": "Was machst du an einem freien Nachmittag?",
+     "c": "Erzähle deinem Buddy von einem Hobby und frag, wie es bei ihm angefangen hat."
+    },
+    "es": {
+     "t": "Aficiones y tiempo libre",
+     "g": "Cuenta qué te gusta hacer en tu tiempo libre y escucha las aficiones del otro.",
+     "p": [
+      "Nombra una afición y di qué te gusta de ella: relaja, es creativa o social.",
+      "Los principiantes también cuentan: Acabo de empezar es una frase preciosa.",
+      "Pregunta ¿Cómo empezaste? para escuchar una historia."
+     ],
+     "q": "¿Qué haces cuando tienes una tarde libre?",
+     "c": "Cuéntale a tu Buddy una afición y pregunta cómo empezó la suya."
+    },
+    "fr": {
+     "t": "Loisirs et temps libre",
+     "g": "Partage ce que tu aimes faire à tes heures perdues et écoute ses loisirs.",
+     "p": [
+      "Cite un loisir et dis ce que tu y aimes : détente, créativité ou convivialité.",
+      "Les débutants comptent aussi : Je viens de commencer est une belle phrase.",
+      "Demande Comment t'es-tu lancé ? pour entendre une histoire."
+     ],
+     "q": "Que fais-tu quand tu as un après-midi libre ?",
+     "c": "Parle d'un loisir à ton Buddy et demande comment le sien a commencé."
+    },
+    "it": {
+     "t": "Hobby e tempo libero",
+     "g": "Racconta cosa ti piace fare nel tempo libero e ascolta gli hobby dell'altro.",
+     "p": [
+      "Nomina un hobby e dì cosa ti piace: rilassa, è creativo o in compagnia.",
+      "Anche i principianti contano: Ho appena iniziato è una bella frase.",
+      "Chiedi Come hai iniziato? per ascoltare una storia."
+     ],
+     "q": "Cosa fai quando hai un pomeriggio libero?",
+     "c": "Parla di un hobby al tuo Buddy e chiedi come è iniziato il suo."
+    },
+    "pt": {
+     "t": "Passatempos e tempo livre",
+     "g": "Conta o que gostas de fazer no teu tempo livre e ouve os passatempos do outro.",
+     "p": [
+      "Diz um passatempo e o que gostas nele: relaxa, é criativo ou social.",
+      "Os principiantes também contam: Estou a começar é uma frase linda.",
+      "Pergunta Como é que começaste? para ouvir uma história."
+     ],
+     "q": "O que fazes quando tens uma tarde livre?",
+     "c": "Fala ao teu Buddy de um passatempo e pergunta como começou o dele."
+    },
+    "pt_BR": {
+     "t": "Hobbies e tempo livre",
+     "g": "Conte o que você gosta de fazer no tempo livre e ouça os hobbies do outro.",
+     "p": [
+      "Diga um hobby e o que você curte nele: relaxa, é criativo ou social.",
+      "Iniciantes também contam: Estou começando agora é uma frase linda.",
+      "Pergunte Como você começou? para ouvir uma história."
+     ],
+     "q": "O que você faz quando tem uma tarde livre?",
+     "c": "Fale de um hobby ao seu Buddy e pergunte como o dele começou."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Music you love",
+     "g": "Talk about favourite songs, artists and music for different moods.",
+     "p": [
+      "Name a song or artist and describe the feeling it gives you.",
+      "Music for different moments is fun: cooking, walking, focusing, celebrating.",
+      "Tastes differ, so say Interesting, I'll give it a listen rather than judging."
+     ],
+     "q": "Which song could you listen to again and again?",
+     "c": "Share one song you love and say what moment it fits. Ask for one back."
+    },
+    "de": {
+     "t": "Musik, die du liebst",
+     "g": "Sprich über Lieblingslieder, Künstler und Musik für verschiedene Stimmungen.",
+     "p": [
+      "Nenne ein Lied oder einen Künstler und beschreibe das Gefühl, das es dir gibt.",
+      "Musik für verschiedene Momente macht Spaß: Kochen, Spazieren, Konzentrieren, Feiern.",
+      "Geschmäcker sind verschieden: sag Interessant, ich höre mal rein, statt zu urteilen."
+     ],
+     "q": "Welches Lied kannst du immer wieder hören?",
+     "c": "Teile ein Lieblingslied und sag, zu welchem Moment es passt. Frag nach einem zurück."
+    },
+    "es": {
+     "t": "La música que te gusta",
+     "g": "Habla de canciones y artistas favoritos y de música para cada estado de ánimo.",
+     "p": [
+      "Nombra una canción o artista y describe lo que te hace sentir.",
+      "La música para cada momento es divertida: cocinar, caminar, concentrarse, celebrar.",
+      "Los gustos varían: di Interesante, la escucharé en vez de juzgar."
+     ],
+     "q": "¿Qué canción podrías escuchar una y otra vez?",
+     "c": "Comparte una canción que te encante y di para qué momento va. Pide una a cambio."
+    },
+    "fr": {
+     "t": "La musique que tu aimes",
+     "g": "Parle de chansons, d'artistes préférés et de musique pour chaque humeur.",
+     "p": [
+      "Cite une chanson ou un artiste et décris ce que tu ressens en l'écoutant.",
+      "La musique selon les moments est amusante : cuisiner, marcher, se concentrer, faire la fête.",
+      "Les goûts diffèrent : dis Intéressant, je vais écouter plutôt que de juger."
+     ],
+     "q": "Quelle chanson pourrais-tu écouter en boucle ?",
+     "c": "Partage une chanson que tu adores et dis à quel moment elle va. Demande-en une en retour."
+    },
+    "it": {
+     "t": "La musica che ami",
+     "g": "Parla di canzoni, artisti preferiti e musica per i diversi stati d'animo.",
+     "p": [
+      "Nomina una canzone o un artista e descrivi cosa ti fa sentire.",
+      "La musica per ogni momento è divertente: cucinare, camminare, concentrarsi, festeggiare.",
+      "I gusti cambiano: dì Interessante, la ascolto invece di giudicare."
+     ],
+     "q": "Quale canzone potresti ascoltare all'infinito?",
+     "c": "Condividi una canzone che ami e dì a che momento si adatta. Chiedine una in cambio."
+    },
+    "pt": {
+     "t": "A música de que gostas",
+     "g": "Fala de canções e artistas favoritos e de música para cada estado de espírito.",
+     "p": [
+      "Diz uma canção ou artista e descreve o que te faz sentir.",
+      "Música para cada momento é divertido: cozinhar, caminhar, concentrar, celebrar.",
+      "Os gostos variam: diz Interessante, vou ouvir em vez de julgares."
+     ],
+     "q": "Que canção podias ouvir vezes sem conta?",
+     "c": "Partilha uma canção de que gostes e diz a que momento serve. Pede uma em troca."
+    },
+    "pt_BR": {
+     "t": "A música que você ama",
+     "g": "Fale de músicas e artistas favoritos e de trilhas para cada humor.",
+     "p": [
+      "Diga uma música ou artista e descreva o que ela faz você sentir.",
+      "Música para cada momento é divertido: cozinhar, caminhar, focar, comemorar.",
+      "Gosto é gosto: diga Interessante, vou ouvir em vez de julgar."
+     ],
+     "q": "Que música você ouviria sem parar?",
+     "c": "Compartilhe uma música que você ama e diga para qual momento ela serve. Peça uma em troca."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Films and series",
+     "g": "Recommend something you watched and enjoyed, without spoiling it.",
+     "p": [
+      "Name the title and say what you liked: the story, the humour or the characters.",
+      "Avoid spoilers; say what it feels like instead of how it ends.",
+      "Ask What are you watching lately? to get ideas for your own list."
+     ],
+     "q": "What is a film or series you could watch again and again?",
+     "c": "Recommend one film or series to your Buddy in two spoiler-free sentences."
+    },
+    "de": {
+     "t": "Filme und Serien",
+     "g": "Empfiehl etwas, das du gesehen und gemocht hast, ohne zu spoilern.",
+     "p": [
+      "Nenne den Titel und sage, was dir gefiel: die Handlung, der Humor oder die Figuren.",
+      "Vermeide Spoiler; sag lieber, wie es sich anfühlt, statt wie es endet.",
+      "Frag Was schaust du gerade? und hol dir Ideen für deine Liste."
+     ],
+     "q": "Welchen Film oder welche Serie könntest du immer wieder sehen?",
+     "c": "Empfiehl deinem Buddy einen Film oder eine Serie in zwei Sätzen ohne Spoiler."
+    },
+    "es": {
+     "t": "Películas y series",
+     "g": "Recomienda algo que viste y te gustó, sin destripar nada.",
+     "p": [
+      "Di el título y qué te gustó: la historia, el humor o los personajes.",
+      "Evita los spoilers; di cómo se siente en vez de cómo termina.",
+      "Pregunta ¿Qué estás viendo últimamente? para sumar ideas a tu lista."
+     ],
+     "q": "¿Qué película o serie podrías ver una y otra vez?",
+     "c": "Recomienda a tu Buddy una película o serie en dos frases sin spoilers."
+    },
+    "fr": {
+     "t": "Films et séries",
+     "g": "Recommande quelque chose que tu as aimé regarder, sans rien divulgâcher.",
+     "p": [
+      "Cite le titre et dis ce qui t'a plu : l'histoire, l'humour ou les personnages.",
+      "Évite les spoilers ; dis l'ambiance plutôt que la fin.",
+      "Demande Tu regardes quoi en ce moment ? pour enrichir ta liste."
+     ],
+     "q": "Quel film ou quelle série pourrais-tu revoir sans te lasser ?",
+     "c": "Recommande un film ou une série à ton Buddy en deux phrases sans spoiler."
+    },
+    "it": {
+     "t": "Film e serie",
+     "g": "Consiglia qualcosa che hai visto e apprezzato, senza rovinare la sorpresa.",
+     "p": [
+      "Dì il titolo e cosa ti è piaciuto: la storia, l'umorismo o i personaggi.",
+      "Evita gli spoiler; racconta le sensazioni, non il finale.",
+      "Chiedi Cosa stai guardando ultimamente? per aggiungere idee alla tua lista."
+     ],
+     "q": "Quale film o serie potresti rivedere all'infinito?",
+     "c": "Consiglia al tuo Buddy un film o una serie in due frasi senza spoiler."
+    },
+    "pt": {
+     "t": "Filmes e séries",
+     "g": "Recomenda algo que viste e de que gostaste, sem estragar a surpresa.",
+     "p": [
+      "Diz o título e o que gostaste: a história, o humor ou as personagens.",
+      "Evita spoilers; diz como se sente em vez de como acaba.",
+      "Pergunta O que tens visto ultimamente? para juntar ideias à tua lista."
+     ],
+     "q": "Que filme ou série podias ver vezes sem conta?",
+     "c": "Recomenda ao teu Buddy um filme ou série em duas frases sem spoilers."
+    },
+    "pt_BR": {
+     "t": "Filmes e séries",
+     "g": "Recomende algo que você assistiu e curtiu, sem dar spoiler.",
+     "p": [
+      "Diga o título e o que gostou: a história, o humor ou os personagens.",
+      "Evite spoilers; diga como é a sensação em vez de como termina.",
+      "Pergunte O que você tem assistido ultimamente? para ganhar ideias para a sua lista."
+     ],
+     "q": "Que filme ou série você assistiria de novo e de novo?",
+     "c": "Recomende ao seu Buddy um filme ou série em duas frases sem spoiler."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Books and reading",
+     "g": "Chat about stories you love or want to read, from novels to comics.",
+     "p": [
+      "Say what you are reading or last enjoyed, and what drew you to it.",
+      "All reading counts: novels, comics, audiobooks, magazines, recipe books.",
+      "Ask What would you recommend to a beginner? for a friendly starting point."
+     ],
+     "q": "What was the last story that really pulled you in?",
+     "c": "Tell your Buddy about one book you loved or want to read, and why."
+    },
+    "de": {
+     "t": "Bücher und Lesen",
+     "g": "Sprich über Geschichten, die du liebst oder lesen möchtest, vom Roman bis zum Comic.",
+     "p": [
+      "Sage, was du liest oder zuletzt gern gelesen hast und was dich daran anzog.",
+      "Alles Lesen zählt: Romane, Comics, Hörbücher, Zeitschriften, Kochbücher.",
+      "Frag Was würdest du Einsteigern empfehlen? für einen netten Anfang."
+     ],
+     "q": "Welche Geschichte hat dich zuletzt richtig gepackt?",
+     "c": "Erzähle deinem Buddy von einem Buch, das du liebst oder lesen willst, und warum."
+    },
+    "es": {
+     "t": "Libros y lectura",
+     "g": "Charla sobre historias que te encantan o quieres leer, de novelas a cómics.",
+     "p": [
+      "Di qué lees o qué disfrutaste por última vez y qué te atrajo.",
+      "Toda lectura cuenta: novelas, cómics, audiolibros, revistas, libros de cocina.",
+      "Pregunta ¿Qué le recomendarías a alguien que empieza? como punto de partida."
+     ],
+     "q": "¿Cuál fue la última historia que de verdad te atrapó?",
+     "c": "Cuéntale a tu Buddy un libro que te encantó o quieres leer, y por qué."
+    },
+    "fr": {
+     "t": "Livres et lecture",
+     "g": "Parle d'histoires que tu aimes ou voudrais lire, du roman à la bande dessinée.",
+     "p": [
+      "Dis ce que tu lis ou as aimé dernièrement et ce qui t'a attiré.",
+      "Toute lecture compte : romans, BD, livres audio, magazines, livres de cuisine.",
+      "Demande Que conseillerais-tu à un débutant ? comme point de départ."
+     ],
+     "q": "Quelle est la dernière histoire qui t'a vraiment captivé ?",
+     "c": "Parle à ton Buddy d'un livre que tu adores ou veux lire, et dis pourquoi."
+    },
+    "it": {
+     "t": "Libri e lettura",
+     "g": "Chiacchiera di storie che ami o vorresti leggere, dai romanzi ai fumetti.",
+     "p": [
+      "Dì cosa stai leggendo o hai letto con piacere e cosa ti ha attirato.",
+      "Ogni lettura conta: romanzi, fumetti, audiolibri, riviste, libri di cucina.",
+      "Chiedi Cosa consiglieresti a chi comincia? come punto di partenza."
+     ],
+     "q": "Qual è l'ultima storia che ti ha davvero catturato?",
+     "c": "Racconta al tuo Buddy un libro che ami o vuoi leggere, e perché."
+    },
+    "pt": {
+     "t": "Livros e leitura",
+     "g": "Conversa sobre histórias que adoras ou queres ler, de romances a banda desenhada.",
+     "p": [
+      "Diz o que estás a ler ou o que leste com gosto e o que te atraiu.",
+      "Toda a leitura conta: romances, BD, audiolivros, revistas, livros de culinária.",
+      "Pergunta O que recomendarias a quem está a começar? como ponto de partida."
+     ],
+     "q": "Qual foi a última história que te prendeu a sério?",
+     "c": "Conta ao teu Buddy um livro que adoraste ou queres ler, e porquê."
+    },
+    "pt_BR": {
+     "t": "Livros e leitura",
+     "g": "Converse sobre histórias que você ama ou quer ler, de romances a quadrinhos.",
+     "p": [
+      "Diga o que está lendo ou o que leu com prazer e o que chamou sua atenção.",
+      "Toda leitura conta: romances, quadrinhos, audiolivros, revistas, livros de receitas.",
+      "Pergunte O que você recomendaria para quem está começando? como ponto de partida."
+     ],
+     "q": "Qual foi a última história que realmente prendeu você?",
+     "c": "Conte ao seu Buddy um livro que você amou ou quer ler, e por quê."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pets and animals",
+     "g": "Talk about pets you have, had or dream of, and animals you like.",
+     "p": [
+      "Say what pet you have or would like and one thing that makes it special.",
+      "No pet? Talk about favourite animals or the ones you meet on walks.",
+      "Ask What is their name? Pet names often come with a good story."
+     ],
+     "q": "Which animal would you pick as a companion and why?",
+     "c": "Tell your Buddy about a pet or favourite animal, then ask about theirs."
+    },
+    "de": {
+     "t": "Haustiere und Tiere",
+     "g": "Sprich über Haustiere, die du hast, hattest oder dir wünschst, und über Tiere, die du magst.",
+     "p": [
+      "Sage, welches Haustier du hast oder gern hättest und was es besonders macht.",
+      "Kein Haustier? Sprich über Lieblingstiere oder Tiere, die du beim Spazieren siehst.",
+      "Frag Wie heißt es? Namen von Haustieren haben oft eine schöne Geschichte."
+     ],
+     "q": "Welches Tier würdest du als Begleiter wählen und warum?",
+     "c": "Erzähle deinem Buddy von einem Haustier oder Lieblingstier und frag nach seinem."
+    },
+    "es": {
+     "t": "Mascotas y animales",
+     "g": "Habla de mascotas que tienes, tuviste o sueñas con tener, y de animales que te gustan.",
+     "p": [
+      "Di qué mascota tienes o te gustaría tener y qué la hace especial.",
+      "¿Sin mascota? Habla de animales favoritos o de los que ves al pasear.",
+      "Pregunta ¿Cómo se llama? Los nombres de mascotas suelen tener su historia."
+     ],
+     "q": "¿Qué animal elegirías como compañero y por qué?",
+     "c": "Cuéntale a tu Buddy de una mascota o animal favorito y pregunta por los suyos."
+    },
+    "fr": {
+     "t": "Animaux de compagnie",
+     "g": "Parle des animaux que tu as, as eu ou dont tu rêves, et de ceux que tu aimes.",
+     "p": [
+      "Dis quel animal tu as ou voudrais avoir et ce qui le rend spécial.",
+      "Pas d'animal ? Parle de tes bêtes préférées ou de celles croisées en balade.",
+      "Demande Il s'appelle comment ? Les noms d'animaux cachent souvent une histoire."
+     ],
+     "q": "Quel animal choisirais-tu comme compagnon, et pourquoi ?",
+     "c": "Parle à ton Buddy d'un animal que tu aimes, puis demande-lui le sien."
+    },
+    "it": {
+     "t": "Animali domestici",
+     "g": "Parla degli animali che hai, hai avuto o sogni, e di quelli che ti piacciono.",
+     "p": [
+      "Dì quale animale hai o vorresti e cosa lo rende speciale.",
+      "Niente animali? Parla dei tuoi preferiti o di quelli che incontri passeggiando.",
+      "Chiedi Come si chiama? I nomi degli animali hanno spesso una bella storia."
+     ],
+     "q": "Quale animale sceglieresti come compagno e perché?",
+     "c": "Racconta al tuo Buddy di un animale che ami e chiedi del suo."
+    },
+    "pt": {
+     "t": "Animais de estimação",
+     "g": "Fala dos animais que tens, tiveste ou sonhas ter, e dos que gostas.",
+     "p": [
+      "Diz que animal tens ou gostavas de ter e o que o torna especial.",
+      "Sem animal? Fala dos favoritos ou dos que vês nos passeios.",
+      "Pergunta Como se chama? Os nomes dos animais têm muitas vezes uma boa história."
+     ],
+     "q": "Que animal escolherias como companheiro e porquê?",
+     "c": "Conta ao teu Buddy de um animal de que gostes e pergunta pelo dele."
+    },
+    "pt_BR": {
+     "t": "Pets e animais",
+     "g": "Fale dos bichinhos que você tem, teve ou sonha ter, e dos que você gosta.",
+     "p": [
+      "Diga qual pet você tem ou queria ter e o que o torna especial.",
+      "Sem pet? Fale dos animais favoritos ou dos que você vê nos passeios.",
+      "Pergunte Qual é o nome dele? Nomes de pets costumam ter uma boa história."
+     ],
+     "q": "Que animal você escolheria como companheiro e por quê?",
+     "c": "Conte ao seu Buddy de um bichinho de que você gosta e pergunte pelo dele."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your favourite season",
+     "g": "Share what you love about each time of year and hear their favourite.",
+     "p": [
+      "Name your favourite season and the small things that make it special.",
+      "Seasons feel different around the world: some places have rainy and dry seasons.",
+      "Ask What do you do when that season arrives? for a personal story."
+     ],
+     "q": "Which season feels most like you, and why?",
+     "c": "Tell your Buddy your favourite season and one thing you do in it."
+    },
+    "de": {
+     "t": "Deine Lieblingsjahreszeit",
+     "g": "Erzähle, was du an jeder Jahreszeit liebst, und höre die Lieblingsjahreszeit des anderen.",
+     "p": [
+      "Nenne deine Lieblingsjahreszeit und die kleinen Dinge, die sie besonders machen.",
+      "Jahreszeiten sind weltweit verschieden: Manche Orte haben Regen- und Trockenzeit.",
+      "Frag Was machst du, wenn diese Zeit kommt? für eine persönliche Geschichte."
+     ],
+     "q": "Welche Jahreszeit passt am besten zu dir und warum?",
+     "c": "Erzähle deinem Buddy deine Lieblingsjahreszeit und etwas, das du darin tust."
+    },
+    "es": {
+     "t": "Tu estación favorita",
+     "g": "Cuenta qué te encanta de cada época del año y escucha cuál es la favorita del otro.",
+     "p": [
+      "Nombra tu estación favorita y las pequeñas cosas que la hacen especial.",
+      "Las estaciones son distintas en el mundo: algunos lugares tienen época de lluvias y de sequía.",
+      "Pregunta ¿Qué haces cuando llega esa estación? para obtener una historia personal."
+     ],
+     "q": "¿Qué estación va más contigo y por qué?",
+     "c": "Cuéntale a tu Buddy tu estación favorita y algo que haces en ella."
+    },
+    "fr": {
+     "t": "Ta saison préférée",
+     "g": "Partage ce que tu aimes dans chaque saison et écoute la préférée de l'autre.",
+     "p": [
+      "Cite ta saison préférée et les petits détails qui la rendent spéciale.",
+      "Les saisons varient dans le monde : certains pays ont une saison des pluies et une saison sèche.",
+      "Demande Que fais-tu quand cette saison arrive ? pour obtenir une histoire perso."
+     ],
+     "q": "Quelle saison te ressemble le plus, et pourquoi ?",
+     "c": "Dis à ton Buddy ta saison préférée et une chose que tu y fais."
+    },
+    "it": {
+     "t": "La tua stagione preferita",
+     "g": "Racconta cosa ami di ogni periodo dell'anno e ascolta la stagione preferita dell'altro.",
+     "p": [
+      "Nomina la tua stagione preferita e le piccole cose che la rendono speciale.",
+      "Le stagioni cambiano nel mondo: alcuni luoghi hanno la stagione delle piogge e quella secca.",
+      "Chiedi Cosa fai quando arriva quella stagione? per una storia personale."
+     ],
+     "q": "Quale stagione ti somiglia di più e perché?",
+     "c": "Dì al tuo Buddy la tua stagione preferita e una cosa che fai in quel periodo."
+    },
+    "pt": {
+     "t": "A tua estação favorita",
+     "g": "Partilha o que adoras em cada altura do ano e ouve a favorita do outro.",
+     "p": [
+      "Diz a tua estação favorita e as pequenas coisas que a tornam especial.",
+      "As estações são diferentes pelo mundo: alguns sítios têm época das chuvas e época seca.",
+      "Pergunta O que fazes quando essa estação chega? para ouvires uma história pessoal."
+     ],
+     "q": "Que estação mais combina contigo e porquê?",
+     "c": "Diz ao teu Buddy a tua estação favorita e uma coisa que fazes nela."
+    },
+    "pt_BR": {
+     "t": "Sua estação favorita",
+     "g": "Compartilhe o que você ama em cada época do ano e ouça a favorita do outro.",
+     "p": [
+      "Diga sua estação favorita e as pequenas coisas que a tornam especial.",
+      "As estações são diferentes pelo mundo: alguns lugares têm época de chuvas e de seca.",
+      "Pergunte O que você faz quando essa estação chega? para ouvir uma história pessoal."
+     ],
+     "q": "Qual estação mais combina com você e por quê?",
+     "c": "Diga ao seu Buddy sua estação favorita e uma coisa que você faz nela."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sharing small news",
+     "g": "Tell a friend about something new in your life in a natural way.",
+     "p": [
+      "Open with a hook: Guess what, I tried something new today.",
+      "Give two or three details, then pause so the other person can react.",
+      "Small news counts: a new recipe, a tidy desk, a nice walk."
+     ],
+     "q": "What is one small piece of news you would share today?",
+     "c": "Share one small piece of news with your Buddy and see how it reacts."
+    },
+    "de": {
+     "t": "Kleine Neuigkeiten teilen",
+     "g": "Erzähle einem Freund auf natürliche Weise etwas Neues aus deinem Leben.",
+     "p": [
+      "Beginne mit einem Aufhänger: Stell dir vor, heute habe ich etwas Neues probiert.",
+      "Gib zwei, drei Details und mach dann eine Pause, damit der andere reagieren kann.",
+      "Auch Kleinigkeiten zählen: ein neues Rezept, ein aufgeräumter Schreibtisch, ein schöner Spaziergang."
+     ],
+     "q": "Welche kleine Neuigkeit würdest du heute erzählen?",
+     "c": "Teile eine kleine Neuigkeit mit deinem Buddy und schau, wie er reagiert."
+    },
+    "es": {
+     "t": "Compartir pequeñas novedades",
+     "g": "Cuenta a un amigo algo nuevo de tu vida de forma natural.",
+     "p": [
+      "Empieza con un gancho: ¿Sabes qué? Hoy probé algo nuevo.",
+      "Da dos o tres detalles y haz una pausa para que el otro reaccione.",
+      "Las novedades pequeñas cuentan: una receta nueva, un escritorio ordenado, un buen paseo."
+     ],
+     "q": "¿Qué pequeña novedad contarías hoy?",
+     "c": "Comparte una pequeña novedad con tu Buddy y mira cómo reacciona."
+    },
+    "fr": {
+     "t": "Partager de petites nouvelles",
+     "g": "Raconte à un ami une nouveauté de ta vie de façon naturelle.",
+     "p": [
+      "Commence par une accroche : Devine quoi, j'ai essayé quelque chose de nouveau.",
+      "Donne deux ou trois détails, puis fais une pause pour laisser l'autre réagir.",
+      "Les petites nouvelles comptent : une recette, un bureau rangé, une belle balade."
+     ],
+     "q": "Quelle petite nouvelle partagerais-tu aujourd'hui ?",
+     "c": "Partage une petite nouvelle avec ton Buddy et vois comment il réagit."
+    },
+    "it": {
+     "t": "Condividere piccole novità",
+     "g": "Racconta a un amico una novità della tua vita in modo naturale.",
+     "p": [
+      "Parti con un gancio: Indovina un po', oggi ho provato qualcosa di nuovo.",
+      "Dai due o tre dettagli, poi fai una pausa per lasciare reagire l'altro.",
+      "Le piccole novità contano: una ricetta nuova, una scrivania in ordine, una bella passeggiata."
+     ],
+     "q": "Quale piccola novità racconteresti oggi?",
+     "c": "Condividi una piccola novità con il tuo Buddy e guarda come reagisce."
+    },
+    "pt": {
+     "t": "Partilhar pequenas novidades",
+     "g": "Conta a um amigo uma novidade da tua vida de forma natural.",
+     "p": [
+      "Começa com um gancho: Sabes que mais? Hoje experimentei algo novo.",
+      "Dá dois ou três detalhes e faz uma pausa para o outro reagir.",
+      "Novidades pequenas contam: uma receita nova, uma secretária arrumada, um bom passeio."
+     ],
+     "q": "Que pequena novidade contarias hoje?",
+     "c": "Partilha uma pequena novidade com o teu Buddy e vê como reage."
+    },
+    "pt_BR": {
+     "t": "Compartilhar pequenas novidades",
+     "g": "Conte a um amigo uma novidade da sua vida de forma natural.",
+     "p": [
+      "Comece com um gancho: Sabe o quê? Hoje eu experimentei algo novo.",
+      "Dê dois ou três detalhes e faça uma pausa para o outro reagir.",
+      "Novidades pequenas contam: uma receita nova, uma mesa organizada, um passeio gostoso."
+     ],
+     "q": "Que pequena novidade você contaria hoje?",
+     "c": "Compartilhe uma pequena novidade com seu Buddy e veja como ele reage."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Morning person or night owl",
+     "g": "Talk about when you feel most awake and what suits your rhythm.",
+     "p": [
+      "Say which you are and give a small proof: I love quiet mornings.",
+      "Many people are in between; say it is depends on the day if that is you.",
+      "Ask When do you get your best ideas? to learn their rhythm."
+     ],
+     "q": "When in the day do you feel most like yourself?",
+     "c": "Tell your Buddy your best time of day and what you do then."
+    },
+    "de": {
+     "t": "Frühaufsteher oder Nachteule",
+     "g": "Sprich darüber, wann du am wachsten bist und was zu deinem Rhythmus passt.",
+     "p": [
+      "Sage, was du bist, und nenne einen kleinen Beweis: Ich liebe ruhige Morgen.",
+      "Viele liegen dazwischen; sag ruhig, es hängt vom Tag ab, wenn das auf dich zutrifft.",
+      "Frag Wann hast du deine besten Ideen? und lerne seinen Rhythmus kennen."
+     ],
+     "q": "Wann am Tag fühlst du dich am meisten wie du selbst?",
+     "c": "Erzähle deinem Buddy deine beste Tageszeit und was du dann machst."
+    },
+    "es": {
+     "t": "Madrugador o noctámbulo",
+     "g": "Habla de cuándo estás más despierto y qué encaja con tu ritmo.",
+     "p": [
+      "Di cuál eres y da una pequeña prueba: Me encantan las mañanas tranquilas.",
+      "Mucha gente está en medio; di depende del día si es tu caso.",
+      "Pregunta ¿Cuándo tienes tus mejores ideas? para conocer su ritmo."
+     ],
+     "q": "¿A qué hora del día te sientes más tú?",
+     "c": "Cuéntale a tu Buddy tu mejor hora del día y qué haces entonces."
+    },
+    "fr": {
+     "t": "Lève-tôt ou oiseau de nuit",
+     "g": "Parle du moment où tu es le plus éveillé et de ce qui suit ton rythme.",
+     "p": [
+      "Dis lequel tu es et donne un petit indice : J'adore les matins calmes.",
+      "Beaucoup sont entre les deux ; dis que ça dépend des jours si c'est ton cas.",
+      "Demande Quand as-tu tes meilleures idées ? pour découvrir son rythme."
+     ],
+     "q": "À quel moment de la journée te sens-tu le plus toi-même ?",
+     "c": "Dis à ton Buddy ton meilleur moment de la journée et ce que tu y fais."
+    },
+    "it": {
+     "t": "Mattiniero o nottambulo",
+     "g": "Parla di quando ti senti più sveglio e di cosa si adatta al tuo ritmo.",
+     "p": [
+      "Dì cosa sei e porta una piccola prova: Adoro le mattine tranquille.",
+      "Molti stanno nel mezzo; dì dipende dal giorno se è il tuo caso.",
+      "Chiedi Quando ti vengono le idee migliori? per conoscere il suo ritmo."
+     ],
+     "q": "In quale momento della giornata ti senti più te stesso?",
+     "c": "Racconta al tuo Buddy il tuo momento migliore della giornata e cosa fai."
+    },
+    "pt": {
+     "t": "Madrugador ou noctívago",
+     "g": "Fala de quando te sentes mais desperto e do que combina com o teu ritmo.",
+     "p": [
+      "Diz o que és e dá uma pequena prova: Adoro manhãs calmas.",
+      "Muita gente está a meio; diz depende do dia se for o teu caso.",
+      "Pergunta Quando tens as tuas melhores ideias? para conheceres o ritmo dele."
+     ],
+     "q": "Em que altura do dia te sentes mais tu?",
+     "c": "Conta ao teu Buddy a tua melhor altura do dia e o que fazes então."
+    },
+    "pt_BR": {
+     "t": "Matutino ou noturno",
+     "g": "Fale de quando você se sente mais desperto e do que combina com o seu ritmo.",
+     "p": [
+      "Diga qual você é e dê uma pequena prova: Adoro manhãs tranquilas.",
+      "Muita gente está no meio; diga depende do dia se for o seu caso.",
+      "Pergunte Quando você tem as melhores ideias? para conhecer o ritmo dele."
+     ],
+     "q": "Em que hora do dia você se sente mais você?",
+     "c": "Conte ao seu Buddy seu melhor horário do dia e o que você faz nele."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your daily routine",
+     "g": "Walk through a typical day and hear how someone else's day flows.",
+     "p": [
+      "Use order words: first, then, after that, in the evening.",
+      "Mention one favourite moment and one thing you would change.",
+      "Keep it general; you do not need to share exact times or places."
+     ],
+     "q": "Which part of your day do you look forward to most?",
+     "c": "Describe your day in four short steps and ask your Buddy for theirs."
+    },
+    "de": {
+     "t": "Dein Tagesablauf",
+     "g": "Gehe einen typischen Tag durch und erfahre, wie der Tag eines anderen verläuft.",
+     "p": [
+      "Nutze Ordnungswörter: zuerst, dann, danach, am Abend.",
+      "Nenne einen Lieblingsmoment und eine Sache, die du ändern würdest.",
+      "Bleib allgemein; genaue Zeiten oder Orte musst du nicht verraten."
+     ],
+     "q": "Auf welchen Teil deines Tages freust du dich am meisten?",
+     "c": "Beschreibe deinen Tag in vier kurzen Schritten und frag deinen Buddy nach seinem."
+    },
+    "es": {
+     "t": "Tu rutina diaria",
+     "g": "Repasa un día típico y descubre cómo transcurre el día de otra persona.",
+     "p": [
+      "Usa palabras de orden: primero, luego, después, por la noche.",
+      "Menciona un momento favorito y algo que cambiarías.",
+      "Mantente en lo general; no hace falta dar horarios ni lugares exactos."
+     ],
+     "q": "¿Qué parte de tu día esperas con más ganas?",
+     "c": "Describe tu día en cuatro pasos cortos y pide el de tu Buddy."
+    },
+    "fr": {
+     "t": "Ta routine quotidienne",
+     "g": "Passe en revue une journée type et découvre le déroulé de celle d'un autre.",
+     "p": [
+      "Utilise des mots d'ordre : d'abord, puis, ensuite, le soir.",
+      "Cite un moment préféré et une chose que tu changerais.",
+      "Reste général ; inutile de donner des horaires ou des lieux précis."
+     ],
+     "q": "Quelle partie de ta journée attends-tu avec le plus d'impatience ?",
+     "c": "Décris ta journée en quatre courtes étapes et demande celle de ton Buddy."
+    },
+    "it": {
+     "t": "La tua routine quotidiana",
+     "g": "Ripercorri una giornata tipo e scopri come si svolge quella di un altro.",
+     "p": [
+      "Usa parole d'ordine: prima, poi, dopo, la sera.",
+      "Cita un momento preferito e una cosa che cambieresti.",
+      "Resta sul generale; non serve dire orari o luoghi precisi."
+     ],
+     "q": "Quale parte della tua giornata aspetti di più?",
+     "c": "Descrivi la tua giornata in quattro brevi passaggi e chiedi quella del tuo Buddy."
+    },
+    "pt": {
+     "t": "A tua rotina diária",
+     "g": "Percorre um dia típico e descobre como corre o dia de outra pessoa.",
+     "p": [
+      "Usa palavras de ordem: primeiro, depois, a seguir, à noite.",
+      "Menciona um momento favorito e uma coisa que mudarias.",
+      "Fica pelo geral; não precisas de dar horas nem locais exatos."
+     ],
+     "q": "Que parte do teu dia esperas com mais vontade?",
+     "c": "Descreve o teu dia em quatro passos curtos e pede o do teu Buddy."
+    },
+    "pt_BR": {
+     "t": "Sua rotina diária",
+     "g": "Percorra um dia típico e descubra como é o dia de outra pessoa.",
+     "p": [
+      "Use palavras de ordem: primeiro, depois, em seguida, à noite.",
+      "Mencione um momento favorito e uma coisa que você mudaria.",
+      "Fique no geral; não precisa dar horários nem lugares exatos."
+     ],
+     "q": "Que parte do seu dia você mais espera?",
+     "c": "Descreva seu dia em quatro passos curtos e peça o do seu Buddy."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Getting around town",
+     "g": "Chat about bikes, buses, walking and your favourite routes.",
+     "p": [
+      "Say how you usually get around and what you enjoy about it.",
+      "Mention a favourite route in general terms: along the river, through the park.",
+      "Ask How do you usually get around? Transport habits differ a lot."
+     ],
+     "q": "What is the most pleasant way to travel in your town?",
+     "c": "Describe your favourite way to get around to your Buddy and ask for theirs."
+    },
+    "de": {
+     "t": "Unterwegs in der Stadt",
+     "g": "Sprich über Fahrrad, Bus, Gehen und deine Lieblingsrouten.",
+     "p": [
+      "Sage, wie du dich meist fortbewegst und was dir daran gefällt.",
+      "Nenne eine Lieblingsroute allgemein: am Fluss entlang, durch den Park.",
+      "Frag Wie bist du meistens unterwegs? Gewohnheiten unterscheiden sich stark."
+     ],
+     "q": "Was ist die angenehmste Art, sich in deiner Stadt zu bewegen?",
+     "c": "Beschreibe deinem Buddy deine liebste Fortbewegungsart und frag nach seiner."
+    },
+    "es": {
+     "t": "Moverse por la ciudad",
+     "g": "Charla sobre bicis, autobuses, caminar y tus rutas favoritas.",
+     "p": [
+      "Di cómo te mueves normalmente y qué disfrutas de ello.",
+      "Menciona una ruta favorita en general: junto al río, por el parque.",
+      "Pregunta ¿Cómo te mueves normalmente? Los hábitos cambian mucho."
+     ],
+     "q": "¿Cuál es la forma más agradable de desplazarse en tu ciudad?",
+     "c": "Describe a tu Buddy tu forma favorita de moverte y pregunta por la suya."
+    },
+    "fr": {
+     "t": "Se déplacer en ville",
+     "g": "Parle de vélo, de bus, de marche et de tes trajets préférés.",
+     "p": [
+      "Dis comment tu te déplaces d'habitude et ce que tu y apprécies.",
+      "Cite un trajet préféré en termes généraux : le long de la rivière, à travers le parc.",
+      "Demande Tu te déplaces comment d'habitude ? Les habitudes varient beaucoup."
+     ],
+     "q": "Quelle est la façon la plus agréable de circuler dans ta ville ?",
+     "c": "Décris à ton Buddy ta façon préférée de te déplacer et demande la sienne."
+    },
+    "it": {
+     "t": "Spostarsi in città",
+     "g": "Chiacchiera di bici, autobus, camminate e dei tuoi percorsi preferiti.",
+     "p": [
+      "Dì come ti sposti di solito e cosa ti piace.",
+      "Cita un percorso preferito in modo generico: lungo il fiume, nel parco.",
+      "Chiedi Come ti sposti di solito? Le abitudini cambiano molto."
+     ],
+     "q": "Qual è il modo più piacevole di muoversi nella tua città?",
+     "c": "Descrivi al tuo Buddy il tuo modo preferito di spostarti e chiedi il suo."
+    },
+    "pt": {
+     "t": "Andar pela cidade",
+     "g": "Conversa sobre bicicletas, autocarros, caminhadas e os teus percursos favoritos.",
+     "p": [
+      "Diz como te deslocas normalmente e do que gostas nisso.",
+      "Menciona um percurso favorito em termos gerais: junto ao rio, pelo jardim.",
+      "Pergunta Como te deslocas normalmente? Os hábitos variam muito."
+     ],
+     "q": "Qual é a forma mais agradável de andar na tua cidade?",
+     "c": "Descreve ao teu Buddy a tua forma favorita de te deslocares e pergunta pela dele."
+    },
+    "pt_BR": {
+     "t": "Se locomover pela cidade",
+     "g": "Converse sobre bicicletas, ônibus, caminhadas e seus trajetos favoritos.",
+     "p": [
+      "Diga como você costuma se locomover e do que gosta nisso.",
+      "Mencione um trajeto favorito em termos gerais: ao longo do rio, pelo parque.",
+      "Pergunte Como você costuma se locomover? Os hábitos variam muito."
+     ],
+     "q": "Qual é a forma mais agradável de andar na sua cidade?",
+     "c": "Descreva ao seu Buddy seu jeito favorito de se locomover e pergunte pelo dele."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "theatre",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Noh theatre of Japan",
+     "g": "Discover slow, elegant movement, masks and music in one of the world's oldest living theatre forms.",
+     "p": [
+      "Noh took shape in Japan in the 1300s and is still performed today, which makes it astonishingly old.",
+      "Actors move with slow, precise steps, and the lead often wears a carved wooden mask.",
+      "A small band of flutes and drums and a chorus set the mood on a simple, bare stage."
+     ],
+     "q": "What do you imagine a slow, quiet performance could make you feel?",
+     "c": "Today, walk across a room in slow motion, placing each step with calm focus, for one minute."
+    },
+    "de": {
+     "t": "Das Noh-Theater Japans",
+     "g": "Entdecke langsame, elegante Bewegung, Masken und Musik in einer der ältesten lebenden Theaterformen der Welt.",
+     "p": [
+      "Noh entstand im 14. Jahrhundert in Japan und wird noch heute gespielt, was es erstaunlich alt macht.",
+      "Die Darsteller bewegen sich mit langsamen, genauen Schritten, und die Hauptrolle trägt oft eine geschnitzte Holzmaske.",
+      "Eine kleine Gruppe mit Flöten und Trommeln und ein Chor schaffen die Stimmung auf einer schlichten, kahlen Bühne."
+     ],
+     "q": "Was könnte deiner Vorstellung nach eine langsame, stille Aufführung in dir auslösen?",
+     "c": "Gehe heute eine Minute lang in Zeitlupe durch einen Raum und setze jeden Schritt ruhig und konzentriert."
+    },
+    "es": {
+     "t": "El teatro Noh de Japón",
+     "g": "Descubre el movimiento lento y elegante, las máscaras y la música de una de las formas teatrales vivas más antiguas.",
+     "p": [
+      "El Noh tomó forma en Japón en el siglo XIV y aún se representa, lo que lo hace asombrosamente antiguo.",
+      "Los actores se mueven con pasos lentos y precisos, y el protagonista suele llevar una máscara de madera tallada.",
+      "Un pequeño grupo con flautas y tambores y un coro crean el ambiente en un escenario sencillo y desnudo."
+     ],
+     "q": "¿Qué crees que podría hacerte sentir una función lenta y silenciosa?",
+     "c": "Hoy cruza una sala en cámara lenta, colocando cada paso con calma y atención, durante un minuto."
+    },
+    "fr": {
+     "t": "Le théâtre Nô du Japon",
+     "g": "Découvre le mouvement lent et élégant, les masques et la musique d'une des plus anciennes formes de théâtre vivantes.",
+     "p": [
+      "Le Nô a pris forme au Japon au XIVe siècle et se joue encore, ce qui le rend étonnamment ancien.",
+      "Les acteurs avancent à pas lents et précis, et le rôle principal porte souvent un masque de bois sculpté.",
+      "Un petit orchestre de flûtes et de tambours et un chœur créent l'ambiance sur une scène simple et nue."
+     ],
+     "q": "Que peut, d'après toi, te faire ressentir un spectacle lent et silencieux ?",
+     "c": "Aujourd'hui, traverse une pièce au ralenti en posant chaque pas avec calme et attention pendant une minute."
+    },
+    "it": {
+     "t": "Il teatro Noh del Giappone",
+     "g": "Scopri il movimento lento ed elegante, le maschere e la musica di una delle forme teatrali viventi più antiche.",
+     "p": [
+      "Il Noh prese forma in Giappone nel Trecento ed è ancora rappresentato, il che lo rende incredibilmente antico.",
+      "Gli attori si muovono con passi lenti e precisi, e il protagonista indossa spesso una maschera di legno intagliato.",
+      "Una piccola orchestra di flauti e tamburi e un coro creano l'atmosfera su un palco semplice e spoglio."
+     ],
+     "q": "Cosa pensi che uno spettacolo lento e silenzioso potrebbe farti provare?",
+     "c": "Oggi attraversa una stanza al rallentatore, posando ogni passo con calma e attenzione, per un minuto."
+    },
+    "pt": {
+     "t": "O teatro Noh do Japão",
+     "g": "Descobre o movimento lento e elegante, as máscaras e a música de uma das formas teatrais vivas mais antigas.",
+     "p": [
+      "O Noh formou-se no Japão no século XIV e ainda se representa, o que o torna espantosamente antigo.",
+      "Os atores movem-se com passos lentos e precisos, e o protagonista usa muitas vezes uma máscara de madeira esculpida.",
+      "Um pequeno grupo com flautas e tambores e um coro criam o ambiente num palco simples e nu."
+     ],
+     "q": "O que achas que um espetáculo lento e silencioso poderia fazer-te sentir?",
+     "c": "Hoje atravessa uma sala em câmara lenta, pousando cada passo com calma e atenção, durante um minuto."
+    },
+    "pt_BR": {
+     "t": "O teatro Noh do Japão",
+     "g": "Descubra o movimento lento e elegante, as máscaras e a música de uma das formas teatrais vivas mais antigas.",
+     "p": [
+      "O Noh se formou no Japão no século XIV e ainda é encenado, o que o torna espantosamente antigo.",
+      "Os atores se movem com passos lentos e precisos, e o protagonista costuma usar uma máscara de madeira esculpida.",
+      "Um pequeno grupo com flautas e tambores e um coro criam o clima num palco simples e vazio."
+     ],
+     "q": "O que você acha que um espetáculo lento e silencioso poderia te fazer sentir?",
+     "c": "Hoje atravesse uma sala em câmera lenta, pousando cada passo com calma e atenção, por um minuto."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kabuki",
+     "g": "Enjoy bold make-up, spectacular costumes, quick changes and the hanamichi walkway through the audience.",
+     "p": [
+      "Kabuki grew in Japan in the 1600s and is famous for striking make-up and splendid costumes.",
+      "The hanamichi is a raised walkway through the audience where stars make dramatic entrances.",
+      "Traditionally all roles are played by men, and shouted cheers from fans are part of the fun."
+     ],
+     "q": "If you could design a Kabuki make-up, which colours and lines would you choose?",
+     "c": "Today, strike a dramatic pose with a frozen expression for five seconds, like a Kabuki hero."
+    },
+    "de": {
+     "t": "Kabuki",
+     "g": "Genieße kräftige Schminke, prächtige Kostüme, schnelle Wechsel und den Hanamichi-Steg durch das Publikum.",
+     "p": [
+      "Kabuki entwickelte sich im 17. Jahrhundert in Japan und ist berühmt für auffallende Schminke und prächtige Kostüme.",
+      "Der Hanamichi ist ein erhöhter Steg durch das Publikum, auf dem Stars dramatische Auftritte haben.",
+      "Traditionell spielen Männer alle Rollen, und laute Zurufe der Fans gehören zum Vergnügen."
+     ],
+     "q": "Wenn du eine Kabuki-Schminke gestalten könntest, welche Farben und Linien würdest du wählen?",
+     "c": "Nimm heute fünf Sekunden lang eine dramatische Pose mit erstarrtem Ausdruck ein, wie ein Kabuki-Held."
+    },
+    "es": {
+     "t": "Kabuki",
+     "g": "Disfruta del maquillaje llamativo, los trajes espectaculares, los cambios rápidos y la pasarela hanamichi entre el público.",
+     "p": [
+      "El kabuki creció en Japón en el siglo XVII y es famoso por su maquillaje llamativo y sus magníficos trajes.",
+      "El hanamichi es una pasarela elevada entre el público por la que las estrellas hacen entradas dramáticas.",
+      "Tradicionalmente todos los papeles los hacen hombres, y los gritos de ánimo de los fans forman parte de la fiesta."
+     ],
+     "q": "Si pudieras diseñar un maquillaje kabuki, ¿qué colores y líneas elegirías?",
+     "c": "Hoy adopta una pose dramática con expresión congelada durante cinco segundos, como un héroe kabuki."
+    },
+    "fr": {
+     "t": "Le kabuki",
+     "g": "Savoure le maquillage audacieux, les costumes spectaculaires, les changements rapides et le passage hanamichi à travers le public.",
+     "p": [
+      "Le kabuki s'est développé au Japon au XVIIe siècle et est célèbre pour son maquillage frappant et ses costumes somptueux.",
+      "Le hanamichi est une passerelle surélevée à travers le public où les vedettes font des entrées spectaculaires.",
+      "Traditionnellement, tous les rôles sont tenus par des hommes, et les acclamations des fans font partie du plaisir."
+     ],
+     "q": "Si tu pouvais concevoir un maquillage de kabuki, quelles couleurs et quels traits choisirais-tu ?",
+     "c": "Aujourd'hui, prends une pose dramatique, visage figé, pendant cinq secondes, comme un héros de kabuki."
+    },
+    "it": {
+     "t": "Il kabuki",
+     "g": "Goditi trucco audace, costumi spettacolari, cambi rapidi e la passerella hanamichi tra il pubblico.",
+     "p": [
+      "Il kabuki crebbe in Giappone nel Seicento ed è famoso per il trucco vistoso e i costumi sfarzosi.",
+      "L'hanamichi è una passerella rialzata tra il pubblico su cui le star fanno entrate drammatiche.",
+      "Tradizionalmente tutti i ruoli sono recitati da uomini, e le grida di incoraggiamento dei fan fanno parte del divertimento."
+     ],
+     "q": "Se potessi disegnare un trucco kabuki, quali colori e linee sceglieresti?",
+     "c": "Oggi assumi una posa drammatica con espressione immobile per cinque secondi, come un eroe kabuki."
+    },
+    "pt": {
+     "t": "O kabuki",
+     "g": "Diverte-te com a maquilhagem arrojada, os trajes espetaculares, as mudanças rápidas e a passarela hanamichi pelo meio do público.",
+     "p": [
+      "O kabuki cresceu no Japão no século XVII e é famoso pela maquilhagem marcante e pelos trajes magníficos.",
+      "O hanamichi é uma passarela elevada pelo meio do público por onde as estrelas fazem entradas dramáticas.",
+      "Tradicionalmente todos os papéis são feitos por homens, e os gritos de apoio dos fãs fazem parte da festa."
+     ],
+     "q": "Se pudesses desenhar uma maquilhagem kabuki, que cores e linhas escolherias?",
+     "c": "Hoje adota uma pose dramática com expressão congelada durante cinco segundos, como um herói kabuki."
+    },
+    "pt_BR": {
+     "t": "O kabuki",
+     "g": "Divirta-se com a maquiagem ousada, os trajes espetaculares, as trocas rápidas e a passarela hanamichi pelo meio da plateia.",
+     "p": [
+      "O kabuki cresceu no Japão no século XVII e é famoso pela maquiagem marcante e pelos trajes magníficos.",
+      "O hanamichi é uma passarela elevada pelo meio da plateia por onde as estrelas fazem entradas dramáticas.",
+      "Tradicionalmente todos os papéis são feitos por homens, e os gritos de apoio dos fãs fazem parte da festa."
+     ],
+     "q": "Se você pudesse desenhar uma maquiagem kabuki, que cores e linhas escolheria?",
+     "c": "Hoje faça uma pose dramática com expressão congelada por cinco segundos, como um herói kabuki."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kyogen comic plays",
+     "g": "Meet the short, playful comedies performed between Noh pieces, full of clever servants.",
+     "p": [
+      "Kyogen are short comic plays shown in the breaks between Noh, offering laughter after solemn scenes.",
+      "Typical characters are a clever servant, a bossy master and a bumbling lord, in everyday situations.",
+      "The acting is clear and lively, with spoken Japanese of old times and big, simple gestures."
+     ],
+     "q": "Who is the funniest servant or sidekick you have ever seen in a story?",
+     "c": "Today, act out a tiny scene where a servant outwits a boastful master, using only voice and gesture."
+    },
+    "de": {
+     "t": "Kyogen, die komischen Stücke",
+     "g": "Lerne die kurzen, verspielten Komödien zwischen den Noh-Stücken kennen, voller kluger Diener.",
+     "p": [
+      "Kyogen sind kurze komische Stücke in den Pausen zwischen Noh und bringen Lachen nach ernsten Szenen.",
+      "Typische Figuren sind ein kluger Diener, ein herrischer Herr und ein tollpatschiger Fürst in Alltagslagen.",
+      "Das Spiel ist klar und lebhaft, mit altem gesprochenem Japanisch und großen, einfachen Gesten."
+     ],
+     "q": "Wer ist der lustigste Diener oder Sidekick, den du je in einer Geschichte gesehen hast?",
+     "c": "Spiele heute eine kleine Szene, in der ein Diener einen prahlenden Herrn überlistet, nur mit Stimme und Geste."
+    },
+    "es": {
+     "t": "Kyogen, las obras cómicas",
+     "g": "Conoce las comedias breves y juguetonas que se representan entre piezas Noh, llenas de criados astutos.",
+     "p": [
+      "Los kyogen son obras cómicas cortas que se muestran en los descansos del Noh y dan risas tras escenas solemnes.",
+      "Los personajes típicos son un criado listo, un amo mandón y un señor torpe, en situaciones cotidianas.",
+      "La interpretación es clara y viva, con japonés hablado de otros tiempos y gestos grandes y simples."
+     ],
+     "q": "¿Quién es el criado o ayudante más gracioso que has visto en una historia?",
+     "c": "Hoy representa una mini escena en que un criado burla a un amo fanfarrón, solo con voz y gesto."
+    },
+    "fr": {
+     "t": "Le kyôgen, comédies courtes",
+     "g": "Rencontre les comédies courtes et joueuses jouées entre les pièces de Nô, pleines de serviteurs malins.",
+     "p": [
+      "Les kyôgen sont de courtes pièces comiques montrées entre les Nô, qui apportent le rire après des scènes solennelles.",
+      "Les personnages typiques sont un serviteur rusé, un maître autoritaire et un seigneur maladroit, dans des situations de tous les jours.",
+      "Le jeu est clair et vif, avec du japonais parlé d'autrefois et de grands gestes simples."
+     ],
+     "q": "Quel est le serviteur ou compère le plus drôle que tu aies vu dans une histoire ?",
+     "c": "Aujourd'hui, joue une mini scène où un serviteur déjoue un maître vantard, avec seulement la voix et le geste."
+    },
+    "it": {
+     "t": "Il kyogen, le commedie brevi",
+     "g": "Conosci le commedie brevi e giocose recitate tra i pezzi Noh, piene di servi furbi.",
+     "p": [
+      "I kyogen sono brevi pezzi comici mostrati negli intervalli del Noh, che portano risate dopo scene solenni.",
+      "I personaggi tipici sono un servo furbo, un padrone prepotente e un signore maldestro, in situazioni quotidiane.",
+      "La recitazione è chiara e vivace, con giapponese parlato d'altri tempi e gesti grandi e semplici."
+     ],
+     "q": "Chi è il servo o aiutante più divertente che hai visto in una storia?",
+     "c": "Oggi recita una mini scena in cui un servo raggira un padrone spaccone, solo con voce e gesti."
+    },
+    "pt": {
+     "t": "O kyogen, as comédias curtas",
+     "g": "Conhece as comédias curtas e brincalhonas representadas entre peças Noh, cheias de criados espertos.",
+     "p": [
+      "Os kyogen são peças cómicas curtas mostradas nos intervalos do Noh, trazendo risos depois de cenas solenes.",
+      "As personagens típicas são um criado esperto, um amo mandão e um senhor desajeitado, em situações do dia a dia.",
+      "A interpretação é clara e viva, com japonês falado de outros tempos e gestos grandes e simples."
+     ],
+     "q": "Quem é o criado ou ajudante mais engraçado que já viste numa história?",
+     "c": "Hoje representa uma mini cena em que um criado engana um amo fanfarrão, só com voz e gestos."
+    },
+    "pt_BR": {
+     "t": "O kyogen, as comédias curtas",
+     "g": "Conheça as comédias curtas e brincalhonas encenadas entre peças Noh, cheias de criados espertos.",
+     "p": [
+      "Os kyogen são peças cômicas curtas apresentadas nos intervalos do Noh, trazendo risos depois de cenas solenes.",
+      "Os personagens típicos são um criado esperto, um amo mandão e um senhor desajeitado, em situações do dia a dia.",
+      "A interpretação é clara e viva, com japonês falado de outros tempos e gestos grandes e simples."
+     ],
+     "q": "Quem é o criado ou parceiro mais engraçado que você já viu numa história?",
+     "c": "Hoje interprete uma mini cena em que um criado engana um amo fanfarrão, só com voz e gestos."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Peking opera",
+     "g": "Explore singing, acrobatics, painted faces and symbolic gestures in China's famous stage art.",
+     "p": [
+      "Peking opera blends song, speech, dance and martial-arts acrobatics into one dazzling show.",
+      "Painted faces use colours as code: red often means loyalty, and white can signal a cunning character.",
+      "Few props are used: a whip means a horse, and a wave of a sleeve can mean a whole feeling."
+     ],
+     "q": "Which part would you enjoy: the singer, the acrobat or the clown?",
+     "c": "Today, mime riding a horse or opening a door using one gesture, and see if someone guesses it."
+    },
+    "de": {
+     "t": "Die Peking-Oper",
+     "g": "Entdecke Gesang, Akrobatik, bemalte Gesichter und symbolische Gesten in Chinas berühmter Bühnenkunst.",
+     "p": [
+      "Die Peking-Oper verbindet Gesang, Sprache, Tanz und Kampfkunst-Akrobatik zu einer glänzenden Show.",
+      "Bemalte Gesichter nutzen Farben als Code: Rot steht oft für Treue, Weiß kann eine listige Figur anzeigen.",
+      "Es gibt wenige Requisiten: Eine Peitsche steht für ein Pferd, ein Ärmelschwung für ein ganzes Gefühl."
+     ],
+     "q": "Welche Rolle würde dir gefallen: der Sänger, der Akrobat oder der Clown?",
+     "c": "Mime heute mit einer Geste Reiten oder Türöffnen und sieh, ob jemand es errät."
+    },
+    "es": {
+     "t": "La ópera de Pekín",
+     "g": "Explora el canto, la acrobacia, los rostros pintados y los gestos simbólicos del famoso arte escénico chino.",
+     "p": [
+      "La ópera de Pekín mezcla canto, texto, danza y acrobacia de artes marciales en un espectáculo deslumbrante.",
+      "Los rostros pintados usan los colores como código: el rojo suele significar lealtad y el blanco puede indicar astucia.",
+      "Se usan pocos accesorios: un látigo significa un caballo y un giro de manga puede expresar un sentimiento entero."
+     ],
+     "q": "¿Qué papel disfrutarías: el cantante, el acróbata o el payaso?",
+     "c": "Hoy mima montar a caballo o abrir una puerta con un solo gesto y mira si alguien lo adivina."
+    },
+    "fr": {
+     "t": "L'opéra de Pékin",
+     "g": "Explore le chant, l'acrobatie, les visages peints et les gestes symboliques de l'art scénique chinois.",
+     "p": [
+      "L'opéra de Pékin mêle chant, parole, danse et acrobaties d'arts martiaux en un spectacle éblouissant.",
+      "Les visages peints utilisent les couleurs comme un code : le rouge signifie souvent la loyauté, le blanc peut signaler la ruse.",
+      "Peu d'accessoires sont utilisés : une cravache veut dire un cheval et un mouvement de manche, tout un sentiment."
+     ],
+     "q": "Quel rôle aimerais-tu : le chanteur, l'acrobate ou le clown ?",
+     "c": "Aujourd'hui, mime avec un seul geste monter à cheval ou ouvrir une porte et vois si quelqu'un devine."
+    },
+    "it": {
+     "t": "L'opera di Pechino",
+     "g": "Esplora canto, acrobazie, volti dipinti e gesti simbolici della celebre arte scenica cinese.",
+     "p": [
+      "L'opera di Pechino unisce canto, parola, danza e acrobazie di arti marziali in uno spettacolo abbagliante.",
+      "I volti dipinti usano i colori come codice: il rosso significa spesso lealtà, il bianco può indicare astuzia.",
+      "Si usano pochi oggetti: una frusta vale un cavallo e un movimento di manica un sentimento intero."
+     ],
+     "q": "Quale ruolo ti piacerebbe: il cantante, l'acrobata o il clown?",
+     "c": "Oggi mima con un solo gesto di andare a cavallo o aprire una porta e vedi se qualcuno indovina."
+    },
+    "pt": {
+     "t": "A ópera de Pequim",
+     "g": "Explora o canto, a acrobacia, os rostos pintados e os gestos simbólicos da famosa arte cénica chinesa.",
+     "p": [
+      "A ópera de Pequim junta canto, fala, dança e acrobacia de artes marciais num espetáculo deslumbrante.",
+      "Os rostos pintados usam as cores como código: o vermelho significa muitas vezes lealdade e o branco pode indicar astúcia.",
+      "Usam-se poucos adereços: um chicote quer dizer um cavalo e um volteio de manga, um sentimento inteiro."
+     ],
+     "q": "Que papel gostarias de fazer: o cantor, o acrobata ou o palhaço?",
+     "c": "Hoje faz mímica de montar a cavalo ou abrir uma porta com um só gesto e vê se alguém adivinha."
+    },
+    "pt_BR": {
+     "t": "A ópera de Pequim",
+     "g": "Explore o canto, a acrobacia, os rostos pintados e os gestos simbólicos da famosa arte cênica chinesa.",
+     "p": [
+      "A ópera de Pequim junta canto, fala, dança e acrobacia de artes marciais num espetáculo deslumbrante.",
+      "Os rostos pintados usam as cores como código: o vermelho costuma significar lealdade e o branco pode indicar astúcia.",
+      "Usam-se poucos adereços: um chicote quer dizer um cavalo e um volteio de manga, um sentimento inteiro."
+     ],
+     "q": "Que papel você curtiria: o cantor, o acrobata ou o palhaço?",
+     "c": "Hoje faça mímica de montar a cavalo ou abrir uma porta com um só gesto e veja se alguém adivinha."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kathakali and Indian theatre",
+     "g": "Meet dance-drama from Kerala with elaborate make-up, plus Sanskrit drama and the Natya Shastra.",
+     "p": [
+      "Kathakali tells stories from epic tales using hand gestures, facial expressions and dazzling costumes.",
+      "Its green faces, red lips and huge headdresses help the audience recognise heroes and villains.",
+      "The Natya Shastra, an ancient Sanskrit text, explains drama, dance and emotions known as rasa."
+     ],
+     "q": "Which emotion, such as joy, wonder or courage, do you find easiest to show on your face?",
+     "c": "Today, show wonder, joy and surprise with only your eyes and eyebrows, in front of a mirror."
+    },
+    "de": {
+     "t": "Kathakali und indisches Theater",
+     "g": "Lerne Tanztheater aus Kerala mit aufwendiger Schminke kennen, dazu Sanskrit-Drama und das Natya Shastra.",
+     "p": [
+      "Kathakali erzählt Geschichten aus großen Epen mit Handgesten, Mimik und glanzvollen Kostümen.",
+      "Grüne Gesichter, rote Lippen und riesige Kopfaufsätze helfen dem Publikum, Helden und Schurken zu erkennen.",
+      "Das Natya Shastra, ein alter Sanskrit-Text, erklärt Drama, Tanz und Gefühle, genannt Rasa."
+     ],
+     "q": "Welches Gefühl, etwa Freude, Staunen oder Mut, kannst du am leichtesten im Gesicht zeigen?",
+     "c": "Zeige heute vor dem Spiegel Staunen, Freude und Überraschung nur mit Augen und Augenbrauen."
+    },
+    "es": {
+     "t": "Kathakali y el teatro indio",
+     "g": "Conoce el teatro bailado de Kerala con maquillaje elaborado, además del drama sánscrito y el Natya Shastra.",
+     "p": [
+      "El kathakali cuenta historias de grandes epopeyas con gestos de manos, expresiones faciales y trajes deslumbrantes.",
+      "Sus rostros verdes, labios rojos y enormes tocados ayudan al público a reconocer héroes y villanos.",
+      "El Natya Shastra, un antiguo texto sánscrito, explica el drama, la danza y las emociones llamadas rasa."
+     ],
+     "q": "¿Qué emoción, como alegría, asombro o valentía, te resulta más fácil mostrar con el rostro?",
+     "c": "Hoy muestra asombro, alegría y sorpresa solo con los ojos y las cejas ante un espejo."
+    },
+    "fr": {
+     "t": "Kathakali et théâtre indien",
+     "g": "Découvre le théâtre dansé du Kerala au maquillage élaboré, ainsi que le drame sanskrit et le Natya Shastra.",
+     "p": [
+      "Le kathakali raconte des histoires de grandes épopées avec gestes de mains, expressions du visage et costumes éblouissants.",
+      "Ses visages verts, lèvres rouges et immenses coiffes aident le public à reconnaître héros et méchants.",
+      "Le Natya Shastra, un ancien texte sanskrit, explique le drame, la danse et les émotions appelées rasa."
+     ],
+     "q": "Quelle émotion, comme la joie, l'émerveillement ou le courage, te semble la plus facile à montrer avec le visage ?",
+     "c": "Aujourd'hui, montre émerveillement, joie et surprise seulement avec les yeux et les sourcils, devant un miroir."
+    },
+    "it": {
+     "t": "Kathakali e teatro indiano",
+     "g": "Conosci il teatro danzato del Kerala dal trucco elaborato, oltre al dramma sanscrito e al Natya Shastra.",
+     "p": [
+      "Il kathakali racconta storie di grandi epopee con gesti delle mani, espressioni del viso e costumi abbaglianti.",
+      "I volti verdi, le labbra rosse e gli enormi copricapi aiutano il pubblico a riconoscere eroi e cattivi.",
+      "Il Natya Shastra, un antico testo sanscrito, spiega dramma, danza ed emozioni dette rasa."
+     ],
+     "q": "Quale emozione, come gioia, meraviglia o coraggio, ti è più facile mostrare con il viso?",
+     "c": "Oggi mostra meraviglia, gioia e sorpresa solo con occhi e sopracciglia, davanti a uno specchio."
+    },
+    "pt": {
+     "t": "Kathakali e o teatro indiano",
+     "g": "Conhece o teatro dançado de Querala com maquilhagem elaborada, além do drama sânscrito e do Natya Shastra.",
+     "p": [
+      "O kathakali conta histórias de grandes epopeias com gestos das mãos, expressões faciais e trajes deslumbrantes.",
+      "Os seus rostos verdes, lábios vermelhos e enormes toucados ajudam o público a reconhecer heróis e vilões.",
+      "O Natya Shastra, um antigo texto sânscrito, explica o drama, a dança e as emoções chamadas rasa."
+     ],
+     "q": "Que emoção, como alegria, espanto ou coragem, te é mais fácil mostrar com o rosto?",
+     "c": "Hoje mostra espanto, alegria e surpresa só com os olhos e as sobrancelhas, diante de um espelho."
+    },
+    "pt_BR": {
+     "t": "Kathakali e o teatro indiano",
+     "g": "Conheça o teatro dançado de Querala com maquiagem elaborada, além do drama sânscrito e do Natya Shastra.",
+     "p": [
+      "O kathakali conta histórias de grandes epopeias com gestos das mãos, expressões faciais e trajes deslumbrantes.",
+      "Seus rostos verdes, lábios vermelhos e enormes cocares ajudam a plateia a reconhecer heróis e vilões.",
+      "O Natya Shastra, um antigo texto sânscrito, explica o drama, a dança e as emoções chamadas rasa."
+     ],
+     "q": "Que emoção, como alegria, espanto ou coragem, é mais fácil você mostrar com o rosto?",
+     "c": "Hoje mostre espanto, alegria e surpresa só com os olhos e as sobrancelhas, diante de um espelho."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Puppet theatre traditions",
+     "g": "Discover Bunraku in Japan, shadow puppets in Indonesia and marionettes in Europe.",
+     "p": [
+      "In Bunraku, large puppets are moved by three visible puppeteers while a chanter voices the story.",
+      "Indonesian wayang kulit uses flat, finely cut leather puppets that cast shadows on a lit screen.",
+      "European marionettes hang from strings, and a puppet can feel alive through tiny movements."
+     ],
+     "q": "If you could make a puppet, what would its character and name be?",
+     "c": "Today, make a hand shadow animal on a wall and give it a little voice and name."
+    },
+    "de": {
+     "t": "Puppentheater-Traditionen",
+     "g": "Entdecke Bunraku in Japan, Schattenpuppen in Indonesien und Marionetten in Europa.",
+     "p": [
+      "Im Bunraku bewegen drei sichtbare Puppenspieler große Puppen, während ein Sprecher die Geschichte vertont.",
+      "Das indonesische Wayang Kulit nutzt flache, fein geschnittene Lederpuppen, die Schatten auf eine beleuchtete Leinwand werfen.",
+      "Europäische Marionetten hängen an Fäden, und eine Puppe kann durch winzige Bewegungen lebendig wirken."
+     ],
+     "q": "Wenn du eine Puppe bauen könntest, welchen Charakter und Namen hätte sie?",
+     "c": "Forme heute mit der Hand ein Schattentier an der Wand und gib ihm eine kleine Stimme und einen Namen."
+    },
+    "es": {
+     "t": "Tradiciones del teatro de títeres",
+     "g": "Descubre el bunraku en Japón, las sombras chinescas en Indonesia y las marionetas en Europa.",
+     "p": [
+      "En el bunraku, tres titiriteros visibles mueven grandes muñecos mientras un recitador pone la voz a la historia.",
+      "El wayang kulit indonesio usa títeres planos de cuero finamente recortado que proyectan sombras en una pantalla iluminada.",
+      "Las marionetas europeas cuelgan de hilos, y un títere puede parecer vivo con movimientos diminutos."
+     ],
+     "q": "Si pudieras hacer un títere, ¿qué carácter y nombre tendría?",
+     "c": "Hoy haz un animal de sombras con la mano en la pared y dale una vocecita y un nombre."
+    },
+    "fr": {
+     "t": "Les traditions de marionnettes",
+     "g": "Découvre le bunraku au Japon, les ombres au Wayang en Indonésie et les marionnettes en Europe.",
+     "p": [
+      "Dans le bunraku, trois marionnettistes visibles manient de grandes poupées pendant qu'un récitant donne voix à l'histoire.",
+      "Le wayang kulit indonésien utilise des figurines plates en cuir finement découpé qui projettent des ombres sur un écran éclairé.",
+      "Les marionnettes européennes pendent à des fils, et une marionnette peut sembler vivante grâce à de minuscules mouvements."
+     ],
+     "q": "Si tu pouvais fabriquer une marionnette, quel caractère et quel nom aurait-elle ?",
+     "c": "Aujourd'hui, fais un animal d'ombre avec la main sur un mur et donne-lui une petite voix et un nom."
+    },
+    "it": {
+     "t": "Le tradizioni del teatro di figura",
+     "g": "Scopri il bunraku in Giappone, le ombre del wayang in Indonesia e le marionette in Europa.",
+     "p": [
+      "Nel bunraku tre burattinai visibili muovono grandi pupazzi mentre un narratore dà voce alla storia.",
+      "Il wayang kulit indonesiano usa figure piatte di cuoio finemente intagliato che proiettano ombre su uno schermo illuminato.",
+      "Le marionette europee pendono da fili, e un pupazzo può sembrare vivo con minuscoli movimenti."
+     ],
+     "q": "Se potessi costruire un pupazzo, che carattere e nome avrebbe?",
+     "c": "Oggi fai con la mano un animale d'ombra sul muro e dagli una vocina e un nome."
+    },
+    "pt": {
+     "t": "As tradições do teatro de marionetas",
+     "g": "Descobre o bunraku no Japão, as sombras do wayang na Indonésia e as marionetas na Europa.",
+     "p": [
+      "No bunraku, três marionetistas visíveis movem grandes bonecos enquanto um recitador dá voz à história.",
+      "O wayang kulit indonésio usa bonecos planos de couro finamente recortado que projetam sombras num ecrã iluminado.",
+      "As marionetas europeias pendem de fios, e um boneco pode parecer vivo com movimentos minúsculos."
+     ],
+     "q": "Se pudesses fazer um boneco, que feitio e nome teria?",
+     "c": "Hoje faz um animal de sombras com a mão na parede e dá-lhe uma vozinha e um nome."
+    },
+    "pt_BR": {
+     "t": "As tradições do teatro de bonecos",
+     "g": "Descubra o bunraku no Japão, as sombras do wayang na Indonésia e as marionetes na Europa.",
+     "p": [
+      "No bunraku, três bonequeiros visíveis movem grandes bonecos enquanto um recitador dá voz à história.",
+      "O wayang kulit indonésio usa bonecos planos de couro finamente recortado que projetam sombras numa tela iluminada.",
+      "As marionetes europeias pendem de fios, e um boneco pode parecer vivo com movimentos minúsculos."
+     ],
+     "q": "Se você pudesse fazer um boneco, que jeito e nome ele teria?",
+     "c": "Hoje faça um animal de sombras com a mão na parede e dê a ele uma vozinha e um nome."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is a musical",
+     "g": "Learn how a story is told through songs, dialogue and dance, and how a song moves the plot.",
+     "p": [
+      "A musical blends spoken scenes, songs and dance so feelings and plot grow together.",
+      "A good song changes something: a character decides, discovers or reveals a secret by the end.",
+      "Lyrics are the words, the score is the music, and the book is the spoken story around them."
+     ],
+     "q": "Which musical song, in any language, would you say tells a story best?",
+     "c": "Today, turn a daily event like making breakfast into a short song of two lines."
+    },
+    "de": {
+     "t": "Was ist ein Musical",
+     "g": "Lerne, wie eine Geschichte durch Lieder, Dialog und Tanz erzählt wird und wie ein Lied die Handlung vorantreibt.",
+     "p": [
+      "Ein Musical verbindet gesprochene Szenen, Lieder und Tanz, sodass Gefühle und Handlung gemeinsam wachsen.",
+      "Ein gutes Lied verändert etwas: Eine Figur entscheidet sich, entdeckt oder verrät am Ende ein Geheimnis.",
+      "Der Text der Lieder heißt Lyrics, die Musik Partitur, und das Buch ist die gesprochene Geschichte drumherum."
+     ],
+     "q": "Welches Musicallied, in irgendeiner Sprache, erzählt deiner Meinung nach am besten eine Geschichte?",
+     "c": "Verwandle heute ein Alltagsereignis wie das Frühstücksmachen in ein kurzes Lied mit zwei Zeilen."
+    },
+    "es": {
+     "t": "Qué es un musical",
+     "g": "Aprende cómo se cuenta una historia con canciones, diálogo y baile, y cómo una canción mueve la trama.",
+     "p": [
+      "Un musical mezcla escenas habladas, canciones y baile para que sentimientos y trama crezcan juntos.",
+      "Una buena canción cambia algo: un personaje decide, descubre o revela un secreto al final.",
+      "La letra son las palabras, la partitura es la música y el libreto es la historia hablada que las rodea."
+     ],
+     "q": "¿Qué canción de musical, en cualquier idioma, dirías que cuenta mejor una historia?",
+     "c": "Hoy convierte un hecho cotidiano, como preparar el desayuno, en una canción corta de dos versos."
+    },
+    "fr": {
+     "t": "Qu'est-ce qu'une comédie musicale",
+     "g": "Apprends comment une histoire se raconte avec chansons, dialogues et danse, et comment une chanson fait avancer l'intrigue.",
+     "p": [
+      "Une comédie musicale mêle scènes parlées, chansons et danse pour que émotions et intrigue grandissent ensemble.",
+      "Une bonne chanson change quelque chose : un personnage décide, découvre ou révèle un secret à la fin.",
+      "Les paroles sont les mots, la partition est la musique et le livret l'histoire parlée autour."
+     ],
+     "q": "Quelle chanson de comédie musicale, en n'importe quelle langue, raconte le mieux une histoire selon toi ?",
+     "c": "Aujourd'hui, transforme un événement quotidien comme préparer le petit-déjeuner en courte chanson de deux lignes."
+    },
+    "it": {
+     "t": "Cos'è un musical",
+     "g": "Impara come si racconta una storia con canzoni, dialoghi e danza e come una canzone fa avanzare la trama.",
+     "p": [
+      "Un musical unisce scene parlate, canzoni e danza perché emozioni e trama crescano insieme.",
+      "Una buona canzone cambia qualcosa: un personaggio decide, scopre o rivela un segreto entro la fine.",
+      "I testi sono le parole, la partitura è la musica e il libretto è la storia parlata intorno."
+     ],
+     "q": "Quale canzone di un musical, in qualsiasi lingua, dici che racconta meglio una storia?",
+     "c": "Oggi trasforma un fatto quotidiano come preparare la colazione in una breve canzone di due versi."
+    },
+    "pt": {
+     "t": "O que é um musical",
+     "g": "Aprende como se conta uma história com canções, diálogo e dança e como uma canção faz avançar o enredo.",
+     "p": [
+      "Um musical junta cenas faladas, canções e dança para que sentimentos e enredo cresçam juntos.",
+      "Uma boa canção muda algo: uma personagem decide, descobre ou revela um segredo até ao fim.",
+      "A letra são as palavras, a partitura é a música e o libreto é a história falada à volta."
+     ],
+     "q": "Que canção de musical, em qualquer língua, dirias que conta melhor uma história?",
+     "c": "Hoje transforma um acontecimento do dia a dia, como fazer o pequeno-almoço, numa canção curta de dois versos."
+    },
+    "pt_BR": {
+     "t": "O que é um musical",
+     "g": "Aprenda como se conta uma história com canções, diálogo e dança e como uma canção faz o enredo avançar.",
+     "p": [
+      "Um musical junta cenas faladas, canções e dança para que sentimentos e enredo cresçam juntos.",
+      "Uma boa canção muda algo: um personagem decide, descobre ou revela um segredo até o fim.",
+      "A letra são as palavras, a partitura é a música e o libreto é a história falada em volta."
+     ],
+     "q": "Que canção de musical, em qualquer língua, você diria que conta melhor uma história?",
+     "c": "Hoje transforme um acontecimento do dia a dia, como fazer o café da manhã, numa canção curta de dois versos."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Anatomy of a musical number",
+     "g": "See how verse, chorus, build and button shape a show tune to earn applause.",
+     "p": [
+      "A verse tells the story, and the chorus is the catchy hook that returns again and again.",
+      "The bridge gives a twist, and the build lifts the energy toward a big final note.",
+      "The button is the last punchy beat that cues the audience to cheer, like a full stop in music."
+     ],
+     "q": "Which song do you know whose chorus gets stuck in your head the longest?",
+     "c": "Today, take a favourite song and label its verse, chorus, bridge and ending as you listen."
+    },
+    "de": {
+     "t": "Anatomie einer Musicalnummer",
+     "g": "Sieh, wie Strophe, Refrain, Steigerung und Schlusspunkt eine Showmelodie formen, damit sie Applaus erntet.",
+     "p": [
+      "Die Strophe erzählt die Geschichte, und der Refrain ist der eingängige Haken, der immer wiederkehrt.",
+      "Die Bridge bringt eine Wendung, und die Steigerung hebt die Energie auf einen großen Schlusston zu.",
+      "Der Button ist der letzte knackige Schlag, der das Publikum zum Jubeln einlädt, wie ein Punkt in der Musik."
+     ],
+     "q": "Bei welchem Lied bleibt dir der Refrain am längsten im Kopf?",
+     "c": "Nimm heute ein Lieblingslied und benenne beim Hören Strophe, Refrain, Bridge und Schluss."
+    },
+    "es": {
+     "t": "Anatomía de un número musical",
+     "g": "Mira cómo estrofa, estribillo, crescendo y remate dan forma a una canción de espectáculo para ganar aplausos.",
+     "p": [
+      "La estrofa cuenta la historia, y el estribillo es el gancho pegadizo que vuelve una y otra vez.",
+      "El puente da un giro, y el crescendo lleva la energía hacia una gran nota final.",
+      "El remate es el último golpe seco que invita al público a aplaudir, como un punto final en la música."
+     ],
+     "q": "¿Qué canción conoces cuyo estribillo se te queda más tiempo en la cabeza?",
+     "c": "Hoy toma una canción favorita y señala estrofa, estribillo, puente y final mientras la escuchas."
+    },
+    "fr": {
+     "t": "Anatomie d'un numéro musical",
+     "g": "Vois comment couplet, refrain, montée et chute façonnent un air de spectacle pour décrocher les applaudissements.",
+     "p": [
+      "Le couplet raconte l'histoire, et le refrain est l'accroche entêtante qui revient encore et encore.",
+      "Le pont apporte un rebondissement, et la montée lance l'énergie vers une grande note finale.",
+      "La chute est le dernier coup sec qui invite le public à acclamer, comme un point final en musique."
+     ],
+     "q": "Quelle chanson connais-tu dont le refrain reste le plus longtemps dans ta tête ?",
+     "c": "Aujourd'hui, prends une chanson préférée et repère couplet, refrain, pont et fin en l'écoutant."
+    },
+    "it": {
+     "t": "Anatomia di un numero musicale",
+     "g": "Scopri come strofa, ritornello, crescendo e chiusura plasmano un brano di spettacolo per conquistare applausi.",
+     "p": [
+      "La strofa racconta la storia, e il ritornello è il gancio orecchiabile che ritorna più volte.",
+      "Il ponte porta una svolta, e il crescendo spinge l'energia verso una grande nota finale.",
+      "La chiusura è l'ultimo colpo secco che invita il pubblico a esultare, come un punto fermo in musica."
+     ],
+     "q": "Quale canzone conosci il cui ritornello ti resta più a lungo in testa?",
+     "c": "Oggi prendi una canzone preferita e indica strofa, ritornello, ponte e finale mentre l'ascolti."
+    },
+    "pt": {
+     "t": "Anatomia de um número musical",
+     "g": "Vê como estrofe, refrão, crescendo e remate dão forma a uma canção de espetáculo para ganhar aplausos.",
+     "p": [
+      "A estrofe conta a história, e o refrão é o gancho cativante que volta uma e outra vez.",
+      "A ponte traz uma viragem, e o crescendo leva a energia para uma grande nota final.",
+      "O remate é o último golpe seco que convida o público a aplaudir, como um ponto final na música."
+     ],
+     "q": "Que canção conheces cujo refrão fica mais tempo na tua cabeça?",
+     "c": "Hoje pega numa canção favorita e assinala estrofe, refrão, ponte e final enquanto a ouves."
+    },
+    "pt_BR": {
+     "t": "Anatomia de um número musical",
+     "g": "Veja como estrofe, refrão, crescendo e fecho dão forma a uma canção de espetáculo para ganhar aplausos.",
+     "p": [
+      "A estrofe conta a história, e o refrão é o gancho grudento que volta várias vezes.",
+      "A ponte traz uma virada, e o crescendo leva a energia para uma grande nota final.",
+      "O fecho é a última batida seca que convida a plateia a aplaudir, como um ponto final na música."
+     ],
+     "q": "Que canção você conhece cujo refrão fica mais tempo na sua cabeça?",
+     "c": "Hoje pegue uma canção favorita e marque estrofe, refrão, ponte e final enquanto escuta."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The overture",
+     "g": "Hear how the instrumental opening previews melodies and sets the mood before the curtain rises.",
+     "p": [
+      "An overture is instrumental music played before the show, often mixing tunes you will hear later.",
+      "It tells the audience to settle down, and its style hints at comedy, romance or adventure ahead.",
+      "Listen for a melody you recognise later: it feels like meeting an old friend in the story."
+     ],
+     "q": "If your day had an overture, which music would play?",
+     "c": "Today, listen to an overture or any instrumental opening and note two feelings it gives you."
+    },
+    "de": {
+     "t": "Die Ouvertüre",
+     "g": "Höre, wie die instrumentale Eröffnung Melodien vorwegnimmt und Stimmung schafft, bevor der Vorhang aufgeht.",
+     "p": [
+      "Eine Ouvertüre ist Instrumentalmusik vor der Show und mischt oft Melodien, die später wiederkommen.",
+      "Sie lädt das Publikum zur Ruhe ein, und ihr Stil deutet Komödie, Romanze oder Abenteuer an.",
+      "Achte später auf eine bekannte Melodie: Es ist wie ein altes Wiedersehen in der Geschichte."
+     ],
+     "q": "Wenn dein Tag eine Ouvertüre hätte, welche Musik würde laufen?",
+     "c": "Höre heute eine Ouvertüre oder einen instrumentalen Auftakt und notiere zwei Gefühle, die er auslöst."
+    },
+    "es": {
+     "t": "La obertura",
+     "g": "Escucha cómo la apertura instrumental adelanta melodías y crea ambiente antes de que suba el telón.",
+     "p": [
+      "Una obertura es música instrumental antes del espectáculo, y a menudo mezcla temas que oirás después.",
+      "Invita al público a acomodarse, y su estilo insinúa comedia, romance o aventura por venir.",
+      "Escucha una melodía que reconozcas luego: es como reencontrar a un viejo amigo en la historia."
+     ],
+     "q": "Si tu día tuviera una obertura, ¿qué música sonaría?",
+     "c": "Hoy escucha una obertura o cualquier apertura instrumental y anota dos sensaciones que te da."
+    },
+    "fr": {
+     "t": "L'ouverture",
+     "g": "Écoute comment l'ouverture instrumentale annonce les mélodies et crée l'ambiance avant que le rideau se lève.",
+     "p": [
+      "Une ouverture est une musique instrumentale jouée avant le spectacle, qui mêle souvent des airs entendus plus tard.",
+      "Elle invite le public à s'installer, et son style laisse deviner comédie, romance ou aventure.",
+      "Repère plus tard une mélodie connue : c'est comme retrouver un vieil ami dans l'histoire."
+     ],
+     "q": "Si ta journée avait une ouverture, quelle musique jouerait ?",
+     "c": "Aujourd'hui, écoute une ouverture ou n'importe quel début instrumental et note deux sentiments qu'il t'inspire."
+    },
+    "it": {
+     "t": "L'ouverture",
+     "g": "Ascolta come l'apertura strumentale anticipa melodie e crea atmosfera prima che si alzi il sipario.",
+     "p": [
+      "Un'ouverture è musica strumentale prima dello spettacolo, e spesso mescola temi che sentirai dopo.",
+      "Invita il pubblico ad accomodarsi, e il suo stile lascia intuire commedia, romanticismo o avventura.",
+      "Riconosci più tardi una melodia: è come ritrovare un vecchio amico nella storia."
+     ],
+     "q": "Se la tua giornata avesse un'ouverture, quale musica suonerebbe?",
+     "c": "Oggi ascolta un'ouverture o un qualsiasi inizio strumentale e annota due sensazioni che ti dà."
+    },
+    "pt": {
+     "t": "A abertura",
+     "g": "Ouve como a abertura instrumental antecipa melodias e cria ambiente antes de subir o pano.",
+     "p": [
+      "Uma abertura é música instrumental antes do espetáculo, e mistura muitas vezes temas que ouvirás depois.",
+      "Convida o público a acomodar-se, e o seu estilo sugere comédia, romance ou aventura pela frente.",
+      "Repara mais tarde numa melodia que reconheças: é como reencontrar um velho amigo na história."
+     ],
+     "q": "Se o teu dia tivesse uma abertura, que música tocaria?",
+     "c": "Hoje ouve uma abertura ou qualquer início instrumental e anota duas sensações que te dá."
+    },
+    "pt_BR": {
+     "t": "A abertura",
+     "g": "Ouça como a abertura instrumental antecipa melodias e cria clima antes de a cortina subir.",
+     "p": [
+      "Uma abertura é música instrumental antes do espetáculo, e muitas vezes mistura temas que você ouvirá depois.",
+      "Convida a plateia a se acomodar, e seu estilo sugere comédia, romance ou aventura pela frente.",
+      "Repare depois numa melodia que você reconhece: é como reencontrar um velho amigo na história."
+     ],
+     "q": "Se o seu dia tivesse uma abertura, que música tocaria?",
+     "c": "Hoje ouça uma abertura ou qualquer início instrumental e anote duas sensações que ela te dá."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The I want song",
+     "g": "Meet the early number where the hero sings their dream, a classic tool of musical storytelling.",
+     "p": [
+      "An I want song comes near the start, when the hero tells us what they dream of most.",
+      "It gives the story a goal, so we cheer for the character and wonder if they will get there.",
+      "Examples exist across the genre, from a baker's wish to a young woman who dreams of adventure."
+     ],
+     "q": "If you wrote your own I want song, what would your first line be?",
+     "c": "Today, write two lines of an I want song about something you truly hope for."
+    },
+    "de": {
+     "t": "Das Ich-will-Lied",
+     "g": "Lerne die frühe Nummer kennen, in der der Held seinen Traum singt, ein Klassiker des Musical-Erzählens.",
+     "p": [
+      "Ein Ich-will-Lied kommt früh, wenn der Held uns verrät, wovon er am meisten träumt.",
+      "Es gibt der Geschichte ein Ziel, sodass wir mit der Figur fiebern und fragen, ob sie es erreicht.",
+      "Beispiele gibt es im ganzen Genre, vom Wunsch eines Bäckers bis zu einer jungen Frau, die vom Abenteuer träumt."
+     ],
+     "q": "Wenn du dein eigenes Ich-will-Lied schriebst, wie lautete die erste Zeile?",
+     "c": "Schreibe heute zwei Zeilen eines Ich-will-Liedes über etwas, das du wirklich erhoffst."
+    },
+    "es": {
+     "t": "La canción del deseo",
+     "g": "Conoce el número inicial en que el protagonista canta su sueño, un recurso clásico del musical.",
+     "p": [
+      "Una canción de deseo llega cerca del principio, cuando el protagonista nos cuenta lo que más sueña.",
+      "Da a la historia una meta, así que animamos al personaje y nos preguntamos si lo logrará.",
+      "Hay ejemplos en todo el género, desde el deseo de un panadero hasta una joven que sueña con aventuras."
+     ],
+     "q": "Si escribieras tu propia canción del deseo, ¿cuál sería tu primer verso?",
+     "c": "Hoy escribe dos versos de una canción del deseo sobre algo que de verdad esperas."
+    },
+    "fr": {
+     "t": "La chanson du rêve",
+     "g": "Découvre le numéro d'ouverture où le héros chante son rêve, un classique de la narration en musical.",
+     "p": [
+      "Une chanson du rêve arrive tôt, quand le héros nous dit ce dont il rêve le plus.",
+      "Elle donne un but à l'histoire, si bien qu'on encourage le personnage et qu'on se demande s'il y arrivera.",
+      "On en trouve dans tout le genre, du souhait d'un boulanger à une jeune femme qui rêve d'aventure."
+     ],
+     "q": "Si tu écrivais ta propre chanson du rêve, quelle serait ta première ligne ?",
+     "c": "Aujourd'hui, écris deux lignes d'une chanson du rêve sur quelque chose que tu espères vraiment."
+    },
+    "it": {
+     "t": "La canzone del desiderio",
+     "g": "Incontra il numero iniziale in cui l'eroe canta il suo sogno, uno strumento classico del racconto musicale.",
+     "p": [
+      "La canzone del desiderio arriva presto, quando l'eroe ci dice cosa sogna di più.",
+      "Dà alla storia un obiettivo, così facciamo il tifo per il personaggio e ci chiediamo se ce la farà.",
+      "Ci sono esempi in tutto il genere, dal desiderio di un fornaio a una giovane che sogna l'avventura."
+     ],
+     "q": "Se scrivessi la tua canzone del desiderio, quale sarebbe il primo verso?",
+     "c": "Oggi scrivi due versi di una canzone del desiderio su qualcosa che speri davvero."
+    },
+    "pt": {
+     "t": "A canção do desejo",
+     "g": "Conhece o número inicial em que o herói canta o seu sonho, um recurso clássico do musical.",
+     "p": [
+      "Uma canção do desejo surge no início, quando o herói nos diz o que mais sonha.",
+      "Dá à história um objetivo, por isso torcemos pela personagem e perguntamos se vai conseguir.",
+      "Há exemplos em todo o género, do desejo de um padeiro a uma jovem que sonha com aventuras."
+     ],
+     "q": "Se escrevesses a tua canção do desejo, qual seria o primeiro verso?",
+     "c": "Hoje escreve dois versos de uma canção do desejo sobre algo que realmente esperas."
+    },
+    "pt_BR": {
+     "t": "A canção do desejo",
+     "g": "Conheça o número inicial em que o herói canta seu sonho, um recurso clássico do musical.",
+     "p": [
+      "Uma canção do desejo surge no início, quando o herói nos diz o que mais sonha.",
+      "Dá à história um objetivo, então torcemos pelo personagem e nos perguntamos se ele vai conseguir.",
+      "Há exemplos em todo o gênero, do desejo de um padeiro a uma jovem que sonha com aventuras."
+     ],
+     "q": "Se você escrevesse sua canção do desejo, qual seria o primeiro verso?",
+     "c": "Hoje escreva dois versos de uma canção do desejo sobre algo que você realmente espera."
+    }
+   }
+  }
+ ]
+}

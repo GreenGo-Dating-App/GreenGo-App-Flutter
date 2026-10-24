@@ -1,0 +1,835 @@
+{
+ "topic": "puzzles",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Logic puzzles basics",
+     "g": "Meet puzzles solved purely by reasoning, using clear rules and clues.",
+     "p": [
+      "A logic puzzle needs no special knowledge: everything you need to know is already inside the clues.",
+      "Treat each clue as a rule that is always true, then combine two clues to learn something new.",
+      "Write things down with short notes, tables or arrows, because a tidy page keeps a tidy mind."
+     ],
+     "q": "Do you prefer reasoning step by step or trying ideas and seeing what happens?",
+     "c": "Ana is older than Ben, and Ben is older than Cy. Who is the oldest? Who is the youngest?"
+    },
+    "de": {
+     "t": "Grundlagen der Logikrätsel",
+     "g": "Rätsel kennenlernen, die allein durch Nachdenken mit klaren Regeln und Hinweisen gelöst werden.",
+     "p": [
+      "Ein Logikrätsel braucht kein Spezialwissen: Alles, was du wissen musst, steckt schon in den Hinweisen.",
+      "Behandle jeden Hinweis als Regel, die immer gilt, und kombiniere zwei Hinweise, um Neues zu erfahren.",
+      "Schreibe mit kurzen Notizen, Tabellen oder Pfeilen mit, denn ein ordentliches Blatt hält den Kopf ordentlich."
+     ],
+     "q": "Denkst du lieber Schritt für Schritt nach oder probierst du Ideen aus und schaust, was passiert?",
+     "c": "Ana ist älter als Ben, und Ben ist älter als Cy. Wer ist am ältesten? Wer ist am jüngsten?"
+    },
+    "es": {
+     "t": "Lo básico de los acertijos de lógica",
+     "g": "Conocer acertijos que se resuelven solo razonando, con reglas y pistas claras.",
+     "p": [
+      "Un acertijo de lógica no necesita conocimientos especiales: todo lo que debes saber ya está en las pistas.",
+      "Trata cada pista como una regla siempre cierta y combina dos pistas para descubrir algo nuevo.",
+      "Anota con notas breves, tablas o flechas, porque una hoja ordenada mantiene una mente ordenada."
+     ],
+     "q": "¿Prefieres razonar paso a paso o probar ideas y ver qué pasa?",
+     "c": "Ana es mayor que Ben, y Ben es mayor que Cy. ¿Quién es el mayor? ¿Quién es el menor?"
+    },
+    "fr": {
+     "t": "Les bases des énigmes de logique",
+     "g": "Découvrir des énigmes résolues uniquement par le raisonnement, avec des règles et des indices clairs.",
+     "p": [
+      "Une énigme de logique n'exige aucune connaissance spéciale : tout ce qu'il faut savoir est déjà dans les indices.",
+      "Traite chaque indice comme une règle toujours vraie, puis combine deux indices pour apprendre du nouveau.",
+      "Note avec de courtes phrases, des tableaux ou des flèches : une page bien rangée aide à penser."
+     ],
+     "q": "Préfères-tu raisonner pas à pas ou tester des idées pour voir ce qui se passe ?",
+     "c": "Ana est plus âgée que Ben, et Ben est plus âgé que Cy. Qui est le plus âgé ? Qui est le plus jeune ?"
+    },
+    "it": {
+     "t": "Le basi degli enigmi di logica",
+     "g": "Conoscere enigmi che si risolvono solo ragionando, con regole e indizi chiari.",
+     "p": [
+      "Un enigma di logica non richiede conoscenze speciali: tutto ciò che serve è già negli indizi.",
+      "Tratta ogni indizio come una regola sempre vera, poi combina due indizi per scoprire qualcosa di nuovo.",
+      "Scrivi con brevi appunti, tabelle o frecce, perché un foglio ordinato aiuta a pensare."
+     ],
+     "q": "Preferisci ragionare passo dopo passo o provare idee e vedere cosa succede?",
+     "c": "Ana è più grande di Ben, e Ben è più grande di Cy. Chi è il più grande? Chi è il più piccolo?"
+    },
+    "pt": {
+     "t": "Noções básicas de enigmas de lógica",
+     "g": "Conhecer enigmas que se resolvem só a raciocinar, com regras e pistas claras.",
+     "p": [
+      "Um enigma de lógica não precisa de conhecimentos especiais: tudo o que é preciso saber já está nas pistas.",
+      "Trata cada pista como uma regra sempre verdadeira e combina duas pistas para descobrir algo novo.",
+      "Escreve com notas curtas, tabelas ou setas, porque uma folha arrumada ajuda a pensar."
+     ],
+     "q": "Preferes raciocinar passo a passo ou experimentar ideias para ver o que acontece?",
+     "c": "A Ana é mais velha do que o Ben, e o Ben é mais velho do que o Cy. Quem é o mais velho? Quem é o mais novo?"
+    },
+    "pt_BR": {
+     "t": "Noções básicas de enigmas de lógica",
+     "g": "Conhecer enigmas que se resolvem só raciocinando, com regras e pistas claras.",
+     "p": [
+      "Um enigma de lógica não precisa de conhecimentos especiais: tudo o que você precisa saber já está nas pistas.",
+      "Trate cada pista como uma regra sempre verdadeira e combine duas pistas para descobrir algo novo.",
+      "Escreva com notas curtas, tabelas ou setas, porque uma folha organizada ajuda a pensar."
+     ],
+     "q": "Você prefere raciocinar passo a passo ou testar ideias para ver o que acontece?",
+     "c": "A Ana é mais velha que o Ben, e o Ben é mais velho que o Cy. Quem é o mais velho? Quem é o mais novo?"
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Deduction",
+     "g": "Move from facts to certain conclusions, step by step.",
+     "p": [
+      "Deduction starts from facts that are true and reaches a conclusion that must be true.",
+      "Example: all birds have feathers, a penguin is a bird, so a penguin has feathers.",
+      "A conclusion is certain only if it follows from the facts, never from a hunch or a guess."
+     ],
+     "q": "Can you describe a time when you worked something out from small clues?",
+     "c": "All cats in the shelter are friendly. Mimi is a cat living in the shelter. What must be true about Mimi?"
+    },
+    "de": {
+     "t": "Deduktion",
+     "g": "Schritt für Schritt von Tatsachen zu sicheren Schlüssen gelangen.",
+     "p": [
+      "Deduktion geht von wahren Tatsachen aus und kommt zu einem Schluss, der wahr sein muss.",
+      "Beispiel: Alle Vögel haben Federn, ein Pinguin ist ein Vogel, also hat ein Pinguin Federn.",
+      "Ein Schluss ist nur sicher, wenn er aus den Tatsachen folgt, nie aus einem Gefühl oder einer Vermutung."
+     ],
+     "q": "Kannst du von einem Moment erzählen, in dem du aus kleinen Hinweisen etwas herausgefunden hast?",
+     "c": "Alle Katzen im Tierheim sind freundlich. Mimi ist eine Katze im Tierheim. Was muss über Mimi stimmen?"
+    },
+    "es": {
+     "t": "Deducción",
+     "g": "Pasar de los hechos a conclusiones seguras, paso a paso.",
+     "p": [
+      "La deducción parte de hechos verdaderos y llega a una conclusión que tiene que ser verdadera.",
+      "Ejemplo: todas las aves tienen plumas, un pingüino es un ave, así que un pingüino tiene plumas.",
+      "Una conclusión es segura solo si se sigue de los hechos, nunca de una corazonada o una suposición."
+     ],
+     "q": "¿Puedes contar alguna vez en que dedujiste algo a partir de pequeñas pistas?",
+     "c": "Todos los gatos del refugio son cariñosos. Mimi es una gata que vive en el refugio. ¿Qué debe ser cierto de Mimi?"
+    },
+    "fr": {
+     "t": "La déduction",
+     "g": "Passer des faits à des conclusions certaines, pas à pas.",
+     "p": [
+      "La déduction part de faits vrais et aboutit à une conclusion qui doit être vraie.",
+      "Exemple : tous les oiseaux ont des plumes, un manchot est un oiseau, donc un manchot a des plumes.",
+      "Une conclusion est certaine seulement si elle découle des faits, jamais d'une intuition ou d'une supposition."
+     ],
+     "q": "Peux-tu raconter un moment où tu as déduit quelque chose à partir de petits indices ?",
+     "c": "Tous les chats du refuge sont gentils. Mimi est une chatte qui vit au refuge. Qu'est-ce qui est forcément vrai pour Mimi ?"
+    },
+    "it": {
+     "t": "La deduzione",
+     "g": "Passare dai fatti a conclusioni certe, passo dopo passo.",
+     "p": [
+      "La deduzione parte da fatti veri e arriva a una conclusione che deve essere vera.",
+      "Esempio: tutti gli uccelli hanno le piume, un pinguino è un uccello, quindi un pinguino ha le piume.",
+      "Una conclusione è certa solo se discende dai fatti, mai da un presentimento o da un'ipotesi."
+     ],
+     "q": "Puoi raccontare una volta in cui hai dedotto qualcosa da piccoli indizi?",
+     "c": "Tutti i gatti del rifugio sono affettuosi. Mimì è una gatta che vive nel rifugio. Cosa deve essere vero su Mimì?"
+    },
+    "pt": {
+     "t": "Dedução",
+     "g": "Passar dos factos a conclusões seguras, passo a passo.",
+     "p": [
+      "A dedução parte de factos verdadeiros e chega a uma conclusão que tem de ser verdadeira.",
+      "Exemplo: todas as aves têm penas, um pinguim é uma ave, logo um pinguim tem penas.",
+      "Uma conclusão só é segura se decorrer dos factos, nunca de um palpite ou de uma suposição."
+     ],
+     "q": "Consegues contar uma vez em que deduziste algo a partir de pequenas pistas?",
+     "c": "Todos os gatos do abrigo são simpáticos. A Mimi é uma gata que vive no abrigo. O que tem de ser verdade sobre a Mimi?"
+    },
+    "pt_BR": {
+     "t": "Dedução",
+     "g": "Passar dos fatos a conclusões seguras, passo a passo.",
+     "p": [
+      "A dedução parte de fatos verdadeiros e chega a uma conclusão que tem de ser verdadeira.",
+      "Exemplo: todas as aves têm penas, um pinguim é uma ave, logo um pinguim tem penas.",
+      "Uma conclusão só é segura se decorrer dos fatos, nunca de um palpite ou de uma suposição."
+     ],
+     "q": "Você consegue contar uma vez em que deduziu algo a partir de pequenas pistas?",
+     "c": "Todos os gatos do abrigo são dóceis. A Mimi é uma gata que vive no abrigo. O que tem de ser verdade sobre a Mimi?"
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "True or false statements",
+     "g": "Decide whether simple statements must be true, false or unknown.",
+     "p": [
+      "A statement can be true, false or unknown, depending on the facts you actually have.",
+      "'Not enough information' is a valid answer; don't fill gaps with guesses.",
+      "Check each statement against the facts one by one, and watch for words like 'all', 'some' and 'only'."
+     ],
+     "q": "When did you last say 'I don't know yet' and it turned out to be the wise answer?",
+     "c": "Fact: all my pets are dogs. Fact: Rex is a dog. Is 'Rex is my pet' true, false or unknown?"
+    },
+    "de": {
+     "t": "Wahre und falsche Aussagen",
+     "g": "Entscheiden, ob einfache Aussagen wahr, falsch oder unbekannt sein müssen.",
+     "p": [
+      "Eine Aussage kann wahr, falsch oder unbekannt sein, je nachdem, welche Tatsachen du wirklich hast.",
+      "„Zu wenig Information“ ist eine gültige Antwort; fülle Lücken nicht mit Vermutungen.",
+      "Prüfe jede Aussage der Reihe nach an den Tatsachen und achte auf Wörter wie „alle“, „einige“ und „nur“."
+     ],
+     "q": "Wann hast du zuletzt „weiß ich noch nicht“ gesagt, und es war die kluge Antwort?",
+     "c": "Tatsache: Alle meine Haustiere sind Hunde. Tatsache: Rex ist ein Hund. Ist „Rex ist mein Haustier“ wahr, falsch oder unbekannt?"
+    },
+    "es": {
+     "t": "Afirmaciones verdaderas y falsas",
+     "g": "Decidir si afirmaciones sencillas deben ser verdaderas, falsas o desconocidas.",
+     "p": [
+      "Una afirmación puede ser verdadera, falsa o desconocida, según los hechos que realmente tengas.",
+      "«No hay información suficiente» es una respuesta válida; no rellenes los huecos con suposiciones.",
+      "Comprueba cada afirmación con los hechos, una por una, y vigila palabras como «todos», «algunos» y «solo»."
+     ],
+     "q": "¿Cuándo dijiste por última vez «aún no lo sé» y resultó ser la respuesta sabia?",
+     "c": "Hecho: todas mis mascotas son perros. Hecho: Rex es un perro. ¿«Rex es mi mascota» es verdadero, falso o desconocido?"
+    },
+    "fr": {
+     "t": "Affirmations vraies ou fausses",
+     "g": "Décider si des affirmations simples sont forcément vraies, fausses ou inconnues.",
+     "p": [
+      "Une affirmation peut être vraie, fausse ou inconnue, selon les faits dont tu disposes vraiment.",
+      "« Pas assez d'informations » est une réponse valable ; ne comble pas les trous par des suppositions.",
+      "Vérifie chaque affirmation avec les faits, une par une, et méfie-toi de « tous », « certains » et « seulement »."
+     ],
+     "q": "Quand as-tu dit pour la dernière fois « je ne sais pas encore » et c'était la sage réponse ?",
+     "c": "Fait : tous mes animaux sont des chiens. Fait : Rex est un chien. « Rex est mon animal » est-il vrai, faux ou inconnu ?"
+    },
+    "it": {
+     "t": "Affermazioni vere o false",
+     "g": "Decidere se semplici affermazioni siano per forza vere, false o sconosciute.",
+     "p": [
+      "Un'affermazione può essere vera, falsa o sconosciuta, a seconda dei fatti che hai davvero.",
+      "«Informazioni insufficienti» è una risposta valida; non riempire i vuoti con supposizioni.",
+      "Controlla ogni affermazione con i fatti, una per una, e fai attenzione a «tutti», «alcuni» e «solo»."
+     ],
+     "q": "Quando hai detto l'ultima volta «non lo so ancora» ed era la risposta saggia?",
+     "c": "Fatto: tutti i miei animali sono cani. Fatto: Rex è un cane. «Rex è il mio animale» è vero, falso o sconosciuto?"
+    },
+    "pt": {
+     "t": "Afirmações verdadeiras e falsas",
+     "g": "Decidir se afirmações simples têm de ser verdadeiras, falsas ou desconhecidas.",
+     "p": [
+      "Uma afirmação pode ser verdadeira, falsa ou desconhecida, conforme os factos que realmente tens.",
+      "«Informação insuficiente» é uma resposta válida; não preenchas as lacunas com suposições.",
+      "Verifica cada afirmação com os factos, uma a uma, e cuidado com palavras como «todos», «alguns» e «só»."
+     ],
+     "q": "Quando disseste pela última vez «ainda não sei» e foi a resposta sensata?",
+     "c": "Facto: todos os meus animais são cães. Facto: o Rex é um cão. «O Rex é o meu animal» é verdadeiro, falso ou desconhecido?"
+    },
+    "pt_BR": {
+     "t": "Afirmações verdadeiras e falsas",
+     "g": "Decidir se afirmações simples têm de ser verdadeiras, falsas ou desconhecidas.",
+     "p": [
+      "Uma afirmação pode ser verdadeira, falsa ou desconhecida, conforme os fatos que você realmente tem.",
+      "«Informação insuficiente» é uma resposta válida; não preencha as lacunas com suposições.",
+      "Confira cada afirmação com os fatos, uma a uma, e atenção a palavras como «todos», «alguns» e «só»."
+     ],
+     "q": "Quando você disse pela última vez «ainda não sei» e foi a resposta sensata?",
+     "c": "Fato: todos os meus bichos são cachorros. Fato: o Rex é um cachorro. «O Rex é meu bicho» é verdadeiro, falso ou desconhecido?"
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "If-then reasoning",
+     "g": "Understand 'if A then B' and what it does and does not tell you.",
+     "p": [
+      "'If A then B' means that whenever A happens, B happens too.",
+      "It does not say B only follows A: if rain makes the grass wet, wet grass may come from a sprinkler too.",
+      "What does follow: if B is missing, then A cannot have happened, because A would have brought B."
+     ],
+     "q": "Can you give me an if-then rule from your own daily life?",
+     "c": "If I study, I pass. I did not pass. Did I study? Think about what the rule would have caused."
+    },
+    "de": {
+     "t": "Wenn-dann-Denken",
+     "g": "„Wenn A, dann B“ verstehen und was es sagt und was nicht.",
+     "p": [
+      "„Wenn A, dann B“ heißt: Immer wenn A eintritt, tritt auch B ein.",
+      "Es sagt nicht, dass B nur nach A kommt: Macht Regen das Gras nass, kann nasses Gras auch vom Rasensprenger kommen.",
+      "Was folgt: Fehlt B, kann A nicht eingetreten sein, denn A hätte B gebracht."
+     ],
+     "q": "Kannst du mir eine Wenn-dann-Regel aus deinem Alltag nennen?",
+     "c": "Wenn ich lerne, bestehe ich. Ich habe nicht bestanden. Habe ich gelernt? Überlege, was die Regel bewirkt hätte."
+    },
+    "es": {
+     "t": "Razonamiento si-entonces",
+     "g": "Entender «si A, entonces B» y lo que dice y no dice.",
+     "p": [
+      "«Si A, entonces B» significa que siempre que ocurre A, también ocurre B.",
+      "No dice que B solo venga tras A: si la lluvia moja el césped, el césped mojado también puede venir de un aspersor.",
+      "Lo que sí se sigue: si falta B, entonces A no pudo ocurrir, porque A habría traído B."
+     ],
+     "q": "¿Puedes darme una regla del tipo si-entonces de tu vida diaria?",
+     "c": "Si estudio, apruebo. No aprobé. ¿Estudié? Piensa qué habría causado la regla."
+    },
+    "fr": {
+     "t": "Le raisonnement si-alors",
+     "g": "Comprendre « si A alors B » et ce que cela dit ou ne dit pas.",
+     "p": [
+      "« Si A alors B » signifie que chaque fois que A se produit, B se produit aussi.",
+      "Cela ne dit pas que B ne vient qu'après A : si la pluie mouille l'herbe, l'herbe mouillée peut venir d'un arroseur.",
+      "Ce qui s'ensuit : si B manque, alors A ne s'est pas produit, car A aurait amené B."
+     ],
+     "q": "Peux-tu me donner une règle du type si-alors de ta vie quotidienne ?",
+     "c": "Si j'étudie, je réussis. Je n'ai pas réussi. Ai-je étudié ? Réfléchis à ce que la règle aurait provoqué."
+    },
+    "it": {
+     "t": "Il ragionamento se-allora",
+     "g": "Capire «se A allora B» e cosa dice e non dice.",
+     "p": [
+      "«Se A allora B» significa che ogni volta che accade A, accade anche B.",
+      "Non dice che B segue solo A: se la pioggia bagna l'erba, l'erba bagnata può venire anche da un irrigatore.",
+      "Ciò che segue: se manca B, allora A non è accaduto, perché A avrebbe portato B."
+     ],
+     "q": "Puoi darmi una regola del tipo se-allora della tua vita quotidiana?",
+     "c": "Se studio, passo. Non sono passato. Ho studiato? Pensa a cosa avrebbe causato la regola."
+    },
+    "pt": {
+     "t": "Raciocínio se-então",
+     "g": "Perceber «se A, então B» e o que diz e não diz.",
+     "p": [
+      "«Se A, então B» significa que sempre que acontece A, também acontece B.",
+      "Não diz que B só vem depois de A: se a chuva molha a relva, a relva molhada pode vir também de um aspersor.",
+      "O que se conclui: se falta B, então A não aconteceu, porque A teria trazido B."
+     ],
+     "q": "Podes dar-me uma regra do tipo se-então da tua vida diária?",
+     "c": "Se estudo, passo. Não passei. Estudei? Pensa no que a regra teria causado."
+    },
+    "pt_BR": {
+     "t": "Raciocínio se-então",
+     "g": "Entender «se A, então B» e o que ele diz e não diz.",
+     "p": [
+      "«Se A, então B» significa que sempre que acontece A, também acontece B.",
+      "Não diz que B só vem depois de A: se a chuva molha a grama, a grama molhada pode vir também de um irrigador.",
+      "O que se conclui: se falta B, então A não aconteceu, porque A teria trazido B."
+     ],
+     "q": "Você pode me dar uma regra do tipo se-então da sua vida diária?",
+     "c": "Se eu estudo, passo. Não passei. Estudei? Pense no que a regra teria causado."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Logic grid puzzles",
+     "g": "Use a table of ticks and crosses to match people, pets and colours.",
+     "p": [
+      "A logic grid is a table where rows and columns list the things to match, like people and pets.",
+      "Put a tick when two things match and a cross when they cannot, using every clue in turn.",
+      "Every tick fills the rest of its row and column with crosses, which opens up more answers."
+     ],
+     "q": "Do you like tidy tables, or do you prefer drawing little pictures when you reason?",
+     "c": "Ana, Ben and Cy own a cat, a dog and a fish. Ana has neither the dog nor the fish. Ben has no dog. Who owns what?"
+    },
+    "de": {
+     "t": "Logikgitter-Rätsel",
+     "g": "Mit einer Tabelle aus Häkchen und Kreuzen Personen, Haustiere und Farben zuordnen.",
+     "p": [
+      "Ein Logikgitter ist eine Tabelle, in der Zeilen und Spalten die zuzuordnenden Dinge nennen, etwa Personen und Haustiere.",
+      "Setze ein Häkchen, wenn zwei Dinge zusammengehören, und ein Kreuz, wenn nicht, und nutze jeden Hinweis der Reihe nach.",
+      "Jedes Häkchen füllt den Rest seiner Zeile und Spalte mit Kreuzen und öffnet so weitere Antworten."
+     ],
+     "q": "Magst du ordentliche Tabellen oder zeichnest du beim Denken lieber kleine Bilder?",
+     "c": "Ana, Ben und Cy besitzen eine Katze, einen Hund und einen Fisch. Ana hat weder Hund noch Fisch. Ben hat keinen Hund. Wer hat was?"
+    },
+    "es": {
+     "t": "Acertijos de cuadrícula lógica",
+     "g": "Usar una tabla de marcas y cruces para emparejar personas, mascotas y colores.",
+     "p": [
+      "Una cuadrícula lógica es una tabla cuyas filas y columnas listan las cosas por emparejar, como personas y mascotas.",
+      "Pon una marca cuando dos cosas coinciden y una cruz cuando no pueden, usando cada pista por turno.",
+      "Cada marca llena con cruces el resto de su fila y columna, lo que abre más respuestas."
+     ],
+     "q": "¿Te gustan las tablas ordenadas o prefieres dibujar pequeños esquemas al razonar?",
+     "c": "Ana, Ben y Cy tienen un gato, un perro y un pez. Ana no tiene ni el perro ni el pez. Ben no tiene perro. ¿Quién tiene qué?"
+    },
+    "fr": {
+     "t": "Les grilles de logique",
+     "g": "Utiliser un tableau de coches et de croix pour associer personnes, animaux et couleurs.",
+     "p": [
+      "Une grille de logique est un tableau dont les lignes et colonnes listent les éléments à associer, comme personnes et animaux.",
+      "Mets une coche quand deux éléments vont ensemble et une croix quand c'est impossible, en utilisant chaque indice à tour de rôle.",
+      "Chaque coche remplit de croix le reste de sa ligne et de sa colonne, ce qui ouvre d'autres réponses."
+     ],
+     "q": "Aimes-tu les tableaux bien rangés ou préfères-tu dessiner de petits schémas pour raisonner ?",
+     "c": "Ana, Ben et Cy ont un chat, un chien et un poisson. Ana n'a ni le chien ni le poisson. Ben n'a pas de chien. Qui a quoi ?"
+    },
+    "it": {
+     "t": "Gli schemi logici",
+     "g": "Usare una tabella di spunte e croci per abbinare persone, animali e colori.",
+     "p": [
+      "Uno schema logico è una tabella le cui righe e colonne elencano le cose da abbinare, come persone e animali.",
+      "Metti una spunta quando due cose combaciano e una croce quando non possono, usando ogni indizio a turno.",
+      "Ogni spunta riempie di croci il resto della sua riga e colonna, e questo apre altre risposte."
+     ],
+     "q": "Ti piacciono le tabelle ordinate o preferisci disegnare piccoli schemi mentre ragioni?",
+     "c": "Ana, Ben e Cy hanno un gatto, un cane e un pesce. Ana non ha né il cane né il pesce. Ben non ha il cane. Chi ha cosa?"
+    },
+    "pt": {
+     "t": "Enigmas de grelha lógica",
+     "g": "Usar uma tabela de visto e cruzes para emparelhar pessoas, animais e cores.",
+     "p": [
+      "Uma grelha lógica é uma tabela cujas linhas e colunas listam as coisas a emparelhar, como pessoas e animais.",
+      "Põe um visto quando duas coisas combinam e uma cruz quando não podem, usando cada pista por vez.",
+      "Cada visto enche de cruzes o resto da sua linha e coluna, o que abre mais respostas."
+     ],
+     "q": "Gostas de tabelas arrumadas ou preferes desenhar pequenos esquemas quando raciocinas?",
+     "c": "A Ana, o Ben e o Cy têm um gato, um cão e um peixe. A Ana não tem nem o cão nem o peixe. O Ben não tem cão. Quem tem o quê?"
+    },
+    "pt_BR": {
+     "t": "Enigmas de grade lógica",
+     "g": "Usar uma tabela de vistos e xis para combinar pessoas, bichos e cores.",
+     "p": [
+      "Uma grade lógica é uma tabela cujas linhas e colunas listam as coisas a combinar, como pessoas e bichos.",
+      "Ponha um visto quando duas coisas combinam e um xis quando não podem, usando cada pista por vez.",
+      "Cada visto enche de xis o resto da sua linha e coluna, o que abre mais respostas."
+     ],
+     "q": "Você gosta de tabelas organizadas ou prefere desenhar pequenos esquemas quando raciocina?",
+     "c": "A Ana, o Ben e o Cy têm um gato, um cachorro e um peixe. A Ana não tem nem o cachorro nem o peixe. O Ben não tem cachorro. Quem tem o quê?"
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Solving a logic grid",
+     "g": "Mark impossibilities first and spot the only remaining option.",
+     "p": [
+      "Start with clues that say 'not': a cross is just as valuable as a tick.",
+      "After each clue, scan every row and column for one with only a single empty cell left.",
+      "When two clues point at the same cell, trust the grid, and re-read if two ticks collide."
+     ],
+     "q": "Have you ever solved a puzzle by ruling things out rather than finding the answer directly?",
+     "c": "Ana, Ben and Cleo wear red, blue and green hats. Ana wears neither red nor blue. Ben wears neither green nor red. Who wears which?"
+    },
+    "de": {
+     "t": "Ein Logikgitter lösen",
+     "g": "Zuerst Unmögliches markieren und die einzig verbleibende Möglichkeit erkennen.",
+     "p": [
+      "Beginne mit Hinweisen, die „nicht“ sagen: Ein Kreuz ist genauso wertvoll wie ein Häkchen.",
+      "Suche nach jedem Hinweis in jeder Zeile und Spalte nach einer, in der nur noch ein Feld frei ist.",
+      "Verweisen zwei Hinweise auf dasselbe Feld, vertraue dem Gitter, und lies neu, wenn zwei Häkchen kollidieren."
+     ],
+     "q": "Hast du je ein Rätsel durch Ausschließen gelöst statt die Antwort direkt zu finden?",
+     "c": "Ana, Ben und Cleo tragen rote, blaue und grüne Mützen. Ana trägt weder Rot noch Blau. Ben trägt weder Grün noch Rot. Wer trägt welche?"
+    },
+    "es": {
+     "t": "Resolver una cuadrícula lógica",
+     "g": "Marcar primero las imposibilidades y detectar la única opción que queda.",
+     "p": [
+      "Empieza por las pistas que dicen «no»: una cruz vale tanto como una marca.",
+      "Tras cada pista, revisa cada fila y columna en busca de una con una sola casilla libre.",
+      "Si dos pistas apuntan a la misma casilla, confía en la cuadrícula y relee si dos marcas chocan."
+     ],
+     "q": "¿Has resuelto alguna vez un acertijo descartando opciones en vez de hallar la respuesta directa?",
+     "c": "Ana, Ben y Cleo llevan gorros rojo, azul y verde. Ana no lleva ni rojo ni azul. Ben no lleva ni verde ni rojo. ¿Quién lleva cuál?"
+    },
+    "fr": {
+     "t": "Résoudre une grille de logique",
+     "g": "Marquer d'abord les impossibilités et repérer la seule option restante.",
+     "p": [
+      "Commence par les indices qui disent « pas » : une croix vaut autant qu'une coche.",
+      "Après chaque indice, parcours chaque ligne et colonne pour en trouver une avec une seule case libre.",
+      "Si deux indices visent la même case, fais confiance à la grille et relis si deux coches se heurtent."
+     ],
+     "q": "As-tu déjà résolu une énigme en éliminant des possibilités plutôt qu'en trouvant la réponse directement ?",
+     "c": "Ana, Ben et Cléo portent des bonnets rouge, bleu et vert. Ana ne porte ni rouge ni bleu. Ben ne porte ni vert ni rouge. Qui porte lequel ?"
+    },
+    "it": {
+     "t": "Risolvere uno schema logico",
+     "g": "Segnare prima le impossibilità e individuare l'unica opzione rimasta.",
+     "p": [
+      "Comincia dagli indizi che dicono «non»: una croce vale quanto una spunta.",
+      "Dopo ogni indizio, scorri ogni riga e colonna per trovarne una con una sola casella libera.",
+      "Se due indizi puntano alla stessa casella, fidati dello schema e rileggi se due spunte si scontrano."
+     ],
+     "q": "Hai mai risolto un enigma scartando le possibilità invece di trovare subito la risposta?",
+     "c": "Ana, Ben e Cleo hanno cappelli rosso, blu, verde. Ana non ha rosso né blu. Ben non ha verde né rosso. Chi ha quale?"
+    },
+    "pt": {
+     "t": "Resolver uma grelha lógica",
+     "g": "Marcar primeiro as impossibilidades e detetar a única opção que resta.",
+     "p": [
+      "Começa pelas pistas que dizem «não»: uma cruz vale tanto como um visto.",
+      "Depois de cada pista, percorre cada linha e coluna à procura de uma com uma só casa livre.",
+      "Se duas pistas apontam para a mesma casa, confia na grelha e relê se dois vistos colidirem."
+     ],
+     "q": "Já resolveste um enigma descartando hipóteses em vez de encontrar a resposta diretamente?",
+     "c": "A Ana, o Ben e a Cleo têm gorros vermelho, azul e verde. A Ana não tem vermelho nem azul. O Ben não tem verde nem vermelho. Quem tem qual?"
+    },
+    "pt_BR": {
+     "t": "Resolvendo uma grade lógica",
+     "g": "Marcar primeiro as impossibilidades e achar a única opção que sobra.",
+     "p": [
+      "Comece pelas pistas que dizem «não»: um xis vale tanto quanto um visto.",
+      "Depois de cada pista, percorra cada linha e coluna atrás de uma com uma só casa livre.",
+      "Se duas pistas apontam para a mesma casa, confie na grade e releia se dois vistos colidirem."
+     ],
+     "q": "Você já resolveu um enigma descartando hipóteses em vez de achar a resposta direto?",
+     "c": "A Ana, o Ben e a Cleo têm toucas vermelha, azul e verde. A Ana não tem vermelha nem azul. O Ben não tem verde nem vermelha. Quem tem qual?"
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ordering puzzles",
+     "g": "Work out who is taller, faster or first from a set of clues.",
+     "p": [
+      "Ordering puzzles give comparisons like 'taller than' or 'finished before', and you build the full line-up.",
+      "Draw a line and place names as clues arrive, leaving space for names you have not placed yet.",
+      "Comparisons chain: if Ana beats Ben and Ben beats Cy, then Ana beats Cy, even if nobody said so."
+     ],
+     "q": "Have you ever ranked things, like films or foods, and surprised yourself with the order?",
+     "c": "Anna finished before Ben. Carl finished after Ben. Dana finished before Anna. Who was first and who was last?"
+    },
+    "de": {
+     "t": "Reihenfolge-Rätsel",
+     "g": "Aus mehreren Hinweisen herausfinden, wer größer, schneller oder Erster ist.",
+     "p": [
+      "Reihenfolge-Rätsel geben Vergleiche wie „größer als“ oder „vor ... fertig“, und du baust die ganze Reihe auf.",
+      "Zeichne eine Linie und setze Namen, sobald Hinweise kommen, und lass Platz für noch nicht platzierte Namen.",
+      "Vergleiche verketten sich: Schlägt Ana Ben und Ben Cy, schlägt Ana auch Cy, selbst wenn es niemand sagt."
+     ],
+     "q": "Hast du schon einmal etwas gerankt, etwa Filme oder Speisen, und die Reihenfolge hat dich überrascht?",
+     "c": "Anna wurde vor Ben fertig. Carl wurde nach Ben fertig. Dana wurde vor Anna fertig. Wer war Erste oder Erster, wer Letzter?"
+    },
+    "es": {
+     "t": "Acertijos de orden",
+     "g": "Averiguar quién es más alto, rápido o primero a partir de unas pistas.",
+     "p": [
+      "Los acertijos de orden dan comparaciones como «más alto que» o «terminó antes que», y tú armas la fila completa.",
+      "Dibuja una línea y coloca nombres según llegan las pistas, dejando espacio para los que aún no has puesto.",
+      "Las comparaciones se encadenan: si Ana gana a Ben y Ben a Cy, Ana gana a Cy aunque nadie lo diga."
+     ],
+     "q": "¿Has ordenado alguna vez cosas, como películas o comidas, y te ha sorprendido el resultado?",
+     "c": "Ana terminó antes que Ben. Carlos terminó después de Ben. Dana terminó antes que Ana. ¿Quién fue primero y quién último?"
+    },
+    "fr": {
+     "t": "Les énigmes d'ordre",
+     "g": "Déterminer qui est le plus grand, le plus rapide ou le premier à partir d'indices.",
+     "p": [
+      "Les énigmes d'ordre donnent des comparaisons comme « plus grand que » ou « a fini avant », et tu construis la file complète.",
+      "Trace une ligne et place les noms à mesure que les indices arrivent, en laissant de la place pour les autres.",
+      "Les comparaisons s'enchaînent : si Ana bat Ben et Ben bat Cy, Ana bat Cy même si personne ne l'a dit."
+     ],
+     "q": "As-tu déjà classé des choses, comme des films ou des plats, et été surpris par l'ordre ?",
+     "c": "Anna a fini avant Ben. Carl a fini après Ben. Dana a fini avant Anna. Qui est arrivé premier et qui dernier ?"
+    },
+    "it": {
+     "t": "Enigmi di ordinamento",
+     "g": "Capire chi è più alto, veloce o primo da un insieme di indizi.",
+     "p": [
+      "Gli enigmi di ordinamento danno confronti come «più alto di» o «ha finito prima di», e tu costruisci la fila completa.",
+      "Disegna una linea e metti i nomi man mano che arrivano gli indizi, lasciando spazio per quelli non ancora collocati.",
+      "I confronti si concatenano: se Ana batte Ben e Ben batte Cy, Ana batte Cy anche se nessuno l'ha detto."
+     ],
+     "q": "Hai mai ordinato cose, come film o cibi, e ti ha sorpreso il risultato?",
+     "c": "Anna ha finito prima di Ben. Carlo ha finito dopo Ben. Dana ha finito prima di Anna. Chi è arrivato primo e chi ultimo?"
+    },
+    "pt": {
+     "t": "Enigmas de ordenação",
+     "g": "Descobrir quem é mais alto, rápido ou primeiro a partir de pistas.",
+     "p": [
+      "Os enigmas de ordenação dão comparações como «mais alto do que» ou «acabou antes de», e tu constróis a fila completa.",
+      "Desenha uma linha e põe os nomes à medida que as pistas chegam, deixando espaço para os que ainda não colocaste.",
+      "As comparações encadeiam-se: se a Ana vence o Ben e o Ben vence o Cy, a Ana vence o Cy mesmo que ninguém o diga."
+     ],
+     "q": "Já ordenaste coisas, como filmes ou comidas, e o resultado surpreendeu-te?",
+     "c": "A Anna acabou antes do Ben. O Carlos acabou depois do Ben. A Dana acabou antes da Anna. Quem foi primeiro e quem foi último?"
+    },
+    "pt_BR": {
+     "t": "Enigmas de ordenação",
+     "g": "Descobrir quem é mais alto, rápido ou primeiro a partir de pistas.",
+     "p": [
+      "Os enigmas de ordenação dão comparações como «mais alto que» ou «terminou antes de», e você monta a fila completa.",
+      "Desenhe uma linha e ponha os nomes conforme as pistas chegam, deixando espaço para os que ainda não colocou.",
+      "As comparações se encadeiam: se a Ana vence o Ben e o Ben vence o Cy, a Ana vence o Cy mesmo que ninguém diga."
+     ],
+     "q": "Você já ordenou coisas, como filmes ou comidas, e o resultado te surpreendeu?",
+     "c": "A Anna terminou antes do Ben. O Carlos terminou depois do Ben. A Dana terminou antes da Anna. Quem foi o primeiro e quem foi o último?"
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Seating puzzles",
+     "g": "Arrange people around a table using position clues.",
+     "p": [
+      "Draw the seats first, as numbered boxes for a row or as a circle for a round table.",
+      "Start with fixed clues like 'sits at the end' or 'sits in seat 1', then add the relative ones.",
+      "Around a round table there are no ends, and 'opposite' means half way around the circle."
+     ],
+     "q": "Who would you most like to sit next to at a dinner table, and why?",
+     "c": "Four friends sit in a row of seats 1 to 4. Ana is in seat 1. Ben sits next to Ana. Cleo does not sit next to Ben. Where does Dan sit?"
+    },
+    "de": {
+     "t": "Sitzordnungs-Rätsel",
+     "g": "Personen mithilfe von Positionshinweisen um einen Tisch anordnen.",
+     "p": [
+      "Zeichne zuerst die Plätze, als nummerierte Kästchen für eine Reihe oder als Kreis für einen runden Tisch.",
+      "Beginne mit festen Hinweisen wie „sitzt am Ende“ oder „sitzt auf Platz 1“ und füge dann die relativen hinzu.",
+      "An einem runden Tisch gibt es kein Ende, und „gegenüber“ heißt einen halben Kreis weiter."
+     ],
+     "q": "Neben wem würdest du bei einem Essen am liebsten sitzen, und warum?",
+     "c": "Vier Freunde sitzen in einer Reihe, Plätze 1 bis 4. Ana sitzt auf Platz 1. Ben sitzt neben Ana. Cleo sitzt nicht neben Ben. Wo sitzt Dan?"
+    },
+    "es": {
+     "t": "Acertijos de asientos",
+     "g": "Colocar personas en una mesa usando pistas de posición.",
+     "p": [
+      "Dibuja primero los asientos, como casillas numeradas para una fila o como un círculo para una mesa redonda.",
+      "Empieza por las pistas fijas, como «se sienta en el extremo» o «en el asiento 1», y añade después las relativas.",
+      "En una mesa redonda no hay extremos, y «enfrente» significa media vuelta al círculo."
+     ],
+     "q": "¿Junto a quién te gustaría más sentarte en una cena, y por qué?",
+     "c": "Cuatro amigos en una fila de asientos 1 a 4. Ana está en el 1. Ben, junto a Ana. Cleo no está junto a Ben. ¿Dónde se sienta Dan?"
+    },
+    "fr": {
+     "t": "Les énigmes de placement",
+     "g": "Placer des personnes autour d'une table grâce à des indices de position.",
+     "p": [
+      "Dessine d'abord les places, en cases numérotées pour une rangée ou en cercle pour une table ronde.",
+      "Commence par les indices fixes comme « est au bout » ou « est à la place 1 », puis ajoute les relatifs.",
+      "Autour d'une table ronde il n'y a pas de bout, et « en face » veut dire à un demi-tour du cercle."
+     ],
+     "q": "À côté de qui aimerais-tu le plus t'asseoir à un dîner, et pourquoi ?",
+     "c": "Quatre amis sur une rangée de places 1 à 4. Ana est en 1. Ben est à côté d'Ana. Cléo n'est pas à côté de Ben. Où est Dan ?"
+    },
+    "it": {
+     "t": "Enigmi di posti a sedere",
+     "g": "Sistemare persone attorno a un tavolo usando indizi di posizione.",
+     "p": [
+      "Disegna prima i posti, come caselle numerate per una fila o come un cerchio per un tavolo rotondo.",
+      "Parti dagli indizi fissi come «siede all'estremità» o «siede al posto 1», poi aggiungi quelli relativi.",
+      "Attorno a un tavolo rotondo non ci sono estremità, e «di fronte» significa mezzo giro del cerchio."
+     ],
+     "q": "Accanto a chi ti piacerebbe di più sederti a cena, e perché?",
+     "c": "Quattro amici in una fila di posti da 1 a 4. Ana è al posto 1. Ben siede accanto ad Ana. Cleo non siede accanto a Ben. Dove siede Dan?"
+    },
+    "pt": {
+     "t": "Enigmas de lugares à mesa",
+     "g": "Colocar pessoas à volta de uma mesa usando pistas de posição.",
+     "p": [
+      "Desenha primeiro os lugares, como quadrados numerados para uma fila ou como um círculo para uma mesa redonda.",
+      "Começa pelas pistas fixas, como «senta-se na ponta» ou «no lugar 1», e depois junta as relativas.",
+      "Numa mesa redonda não há pontas, e «em frente» significa meia volta ao círculo."
+     ],
+     "q": "Ao lado de quem gostarias mais de te sentar num jantar, e porquê?",
+     "c": "Quatro amigos numa fila de lugares de 1 a 4. A Ana está no 1. O Ben fica ao lado da Ana. A Cleo não fica ao lado do Ben. Onde fica o Dan?"
+    },
+    "pt_BR": {
+     "t": "Enigmas de lugares à mesa",
+     "g": "Acomodar pessoas ao redor de uma mesa usando pistas de posição.",
+     "p": [
+      "Desenhe primeiro os lugares, como quadradinhos numerados para uma fila ou como um círculo para uma mesa redonda.",
+      "Comece pelas pistas fixas, como «senta na ponta» ou «no lugar 1», e depois junte as relativas.",
+      "Numa mesa redonda não há pontas, e «em frente» significa meia volta no círculo."
+     ],
+     "q": "Ao lado de quem você mais gostaria de sentar num jantar, e por quê?",
+     "c": "Quatro amigos numa fila de lugares de 1 a 4. A Ana está no 1. O Ben fica ao lado da Ana. A Cleo não fica ao lado do Ben. Onde fica o Dan?"
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Knights and knaves",
+     "g": "Explore islands where some people always tell the truth and others always lie.",
+     "p": [
+      "On a knights-and-knaves island, knights always tell the truth and knaves always lie.",
+      "The logician Raymond Smullyan, who lived from 1919 to 2017, made these puzzles famous in his books.",
+      "Test each possibility: assume a speaker is a knight, see if the statement holds, then try the other case."
+     ],
+     "q": "Would you rather live among truth-tellers or liars for a day, just for the fun of it?",
+     "c": "An islander says 'I am a knight.' Can you tell whether he is a knight or a knave? Think about what each would say."
+    },
+    "de": {
+     "t": "Ritter und Schurken",
+     "g": "Inseln erkunden, auf denen manche immer die Wahrheit sagen und andere immer lügen.",
+     "p": [
+      "Auf einer Ritter-und-Schurken-Insel sagen Ritter immer die Wahrheit und Schurken immer die Unwahrheit.",
+      "Der Logiker Raymond Smullyan, der von 1919 bis 2017 lebte, machte diese Rätsel mit seinen Büchern berühmt.",
+      "Prüfe jede Möglichkeit: Nimm an, ein Sprecher ist ein Ritter, sieh, ob die Aussage stimmt, und probiere dann den anderen Fall."
+     ],
+     "q": "Würdest du für einen Tag lieber unter Wahrheitssagern oder Lügnern leben, nur zum Spaß?",
+     "c": "Ein Inselbewohner sagt „Ich bin ein Ritter.“ Kannst du sagen, ob er Ritter oder Schurke ist? Überlege, was jeder sagen würde."
+    },
+    "es": {
+     "t": "Caballeros y bribones",
+     "g": "Explorar islas donde unos siempre dicen la verdad y otros siempre mienten.",
+     "p": [
+      "En una isla de caballeros y bribones, los caballeros siempre dicen la verdad y los bribones siempre mienten.",
+      "El lógico Raymond Smullyan, que vivió de 1919 a 2017, hizo famosos estos acertijos con sus libros.",
+      "Prueba cada posibilidad: supón que quien habla es un caballero, mira si la frase se sostiene y prueba el otro caso."
+     ],
+     "q": "¿Preferirías vivir un día entre sinceros o entre mentirosos, solo por diversión?",
+     "c": "Un isleño dice «Soy un caballero». ¿Puedes saber si es caballero o bribón? Piensa qué diría cada uno."
+    },
+    "fr": {
+     "t": "Chevaliers et fourbes",
+     "g": "Explorer des îles où certains disent toujours la vérité et d'autres mentent toujours.",
+     "p": [
+      "Sur une île de chevaliers et de fourbes, les chevaliers disent toujours la vérité et les fourbes mentent toujours.",
+      "Le logicien Raymond Smullyan, qui a vécu de 1919 à 2017, a rendu ces énigmes célèbres dans ses livres.",
+      "Teste chaque possibilité : suppose qu'un locuteur est un chevalier, vois si la phrase tient, puis essaie l'autre cas."
+     ],
+     "q": "Préférerais-tu vivre un jour parmi des sincères ou des menteurs, juste pour le plaisir ?",
+     "c": "Un insulaire dit « Je suis un chevalier ». Peux-tu savoir s'il est chevalier ou fourbe ? Pense à ce que dirait chacun."
+    },
+    "it": {
+     "t": "Cavalieri e furfanti",
+     "g": "Esplorare isole dove alcuni dicono sempre la verità e altri mentono sempre.",
+     "p": [
+      "Su un'isola di cavalieri e furfanti, i cavalieri dicono sempre la verità e i furfanti mentono sempre.",
+      "Il logico Raymond Smullyan, vissuto dal 1919 al 2017, rese famosi questi enigmi con i suoi libri.",
+      "Prova ogni possibilità: supponi che chi parla sia un cavaliere, vedi se la frase regge, poi prova l'altro caso."
+     ],
+     "q": "Preferiresti vivere un giorno tra sinceri o tra bugiardi, solo per divertimento?",
+     "c": "Un isolano dice «Sono un cavaliere». Puoi capire se è cavaliere o furfante? Pensa a cosa direbbe ciascuno."
+    },
+    "pt": {
+     "t": "Cavaleiros e patifes",
+     "g": "Explorar ilhas onde uns dizem sempre a verdade e outros mentem sempre.",
+     "p": [
+      "Numa ilha de cavaleiros e patifes, os cavaleiros dizem sempre a verdade e os patifes mentem sempre.",
+      "O lógico Raymond Smullyan, que viveu de 1919 a 2017, tornou famosos estes enigmas nos seus livros.",
+      "Testa cada possibilidade: supõe que quem fala é um cavaleiro, vê se a frase se sustenta e experimenta o outro caso."
+     ],
+     "q": "Preferias viver um dia entre sinceros ou entre mentirosos, só por diversão?",
+     "c": "Um ilhéu diz «Sou um cavaleiro». Consegues saber se é cavaleiro ou patife? Pensa no que diria cada um."
+    },
+    "pt_BR": {
+     "t": "Cavaleiros e trapaceiros",
+     "g": "Explorar ilhas onde uns sempre dizem a verdade e outros sempre mentem.",
+     "p": [
+      "Numa ilha de cavaleiros e trapaceiros, os cavaleiros sempre dizem a verdade e os trapaceiros sempre mentem.",
+      "O lógico Raymond Smullyan, que viveu de 1919 a 2017, tornou esses enigmas famosos nos seus livros.",
+      "Teste cada possibilidade: suponha que quem fala é um cavaleiro, veja se a frase se sustenta e tente o outro caso."
+     ],
+     "q": "Você preferiria viver um dia entre sinceros ou entre mentirosos, só de brincadeira?",
+     "c": "Um ilhéu diz «Sou um cavaleiro». Dá para saber se é cavaleiro ou trapaceiro? Pense no que cada um diria."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Classic truth-teller puzzles",
+     "g": "Find the right road by asking one clever question.",
+     "p": [
+      "Two guards stand at a fork: one always tells the truth, the other always lies, and you may ask one question.",
+      "Ask either guard: 'What would the other guard say is the road to the city?' Then take the opposite road.",
+      "Both guards point to the wrong road, because a lie about a truth and a truth about a lie are both wrong."
+     ],
+     "q": "Where in daily life do you double-check something by asking a second source?",
+     "c": "In your own words, explain why both guards point to the road that does not lead to the city."
+    },
+    "de": {
+     "t": "Klassische Wahrheitssager-Rätsel",
+     "g": "Mit einer einzigen klugen Frage den richtigen Weg finden.",
+     "p": [
+      "Zwei Wächter stehen an einer Weggabelung: Einer sagt immer die Wahrheit, der andere lügt immer, und du darfst eine Frage stellen.",
+      "Frag einen Wächter: „Welchen Weg zur Stadt würde der andere Wächter nennen?“ Nimm dann den anderen Weg.",
+      "Beide Wächter zeigen den falschen Weg, denn eine Lüge über eine Wahrheit und eine Wahrheit über eine Lüge sind beide falsch."
+     ],
+     "q": "Wo im Alltag prüfst du etwas nach, indem du eine zweite Quelle fragst?",
+     "c": "Erkläre mit eigenen Worten, warum beide Wächter auf den Weg zeigen, der nicht zur Stadt führt."
+    },
+    "es": {
+     "t": "Acertijos clásicos de sinceros y mentirosos",
+     "g": "Encontrar el camino correcto con una sola pregunta ingeniosa.",
+     "p": [
+      "Dos guardias están en una bifurcación: uno siempre dice la verdad, el otro siempre miente, y solo puedes hacer una pregunta.",
+      "Pregunta a cualquiera: «¿Qué camino a la ciudad diría el otro guardia?» Luego toma el camino contrario.",
+      "Los dos señalan el camino equivocado, porque una mentira sobre una verdad y una verdad sobre una mentira son ambas falsas."
+     ],
+     "q": "¿Dónde, en tu vida diaria, compruebas algo preguntando a una segunda fuente?",
+     "c": "Con tus palabras, explica por qué ambos guardias señalan el camino que no lleva a la ciudad."
+    },
+    "fr": {
+     "t": "Énigmes classiques de menteurs",
+     "g": "Trouver la bonne route avec une seule question astucieuse.",
+     "p": [
+      "Deux gardes se tiennent à une bifurcation : l'un dit toujours la vérité, l'autre ment toujours, et tu n'as droit qu'à une question.",
+      "Demande à l'un d'eux : « Quelle route vers la ville l'autre garde indiquerait-il ? » Puis prends l'autre route.",
+      "Les deux gardes montrent la mauvaise route, car un mensonge sur une vérité et une vérité sur un mensonge sont tous deux faux."
+     ],
+     "q": "Où, dans la vie quotidienne, vérifies-tu une chose en interrogeant une seconde source ?",
+     "c": "Avec tes mots, explique pourquoi les deux gardes montrent la route qui ne mène pas à la ville."
+    },
+    "it": {
+     "t": "Enigmi classici di sinceri e bugiardi",
+     "g": "Trovare la strada giusta con una sola domanda astuta.",
+     "p": [
+      "Due guardie stanno a un bivio: una dice sempre la verità, l'altra mente sempre, e puoi fare una sola domanda.",
+      "Chiedi a una qualunque: «Quale strada per la città indicherebbe l'altra guardia?» Poi prendi la strada opposta.",
+      "Entrambe indicano la strada sbagliata, perché una bugia su una verità e una verità su una bugia sono entrambe false."
+     ],
+     "q": "Dove, nella vita quotidiana, controlli qualcosa chiedendo a una seconda fonte?",
+     "c": "Con parole tue, spiega perché entrambe le guardie indicano la strada che non porta alla città."
+    },
+    "pt": {
+     "t": "Enigmas clássicos de sinceros e mentirosos",
+     "g": "Encontrar o caminho certo com uma só pergunta esperta.",
+     "p": [
+      "Dois guardas estão numa bifurcação: um diz sempre a verdade, o outro mente sempre, e só podes fazer uma pergunta.",
+      "Pergunta a qualquer um: «Que caminho para a cidade diria o outro guarda?» Depois segue o caminho contrário.",
+      "Ambos apontam o caminho errado, porque uma mentira sobre uma verdade e uma verdade sobre uma mentira são ambas falsas."
+     ],
+     "q": "Onde, no teu dia a dia, confirmas algo perguntando a uma segunda fonte?",
+     "c": "Com as tuas palavras, explica porque é que os dois guardas apontam o caminho que não leva à cidade."
+    },
+    "pt_BR": {
+     "t": "Enigmas clássicos de sinceros e mentirosos",
+     "g": "Achar o caminho certo com uma só pergunta esperta.",
+     "p": [
+      "Dois guardas estão numa bifurcação: um sempre diz a verdade, o outro sempre mente, e você só pode fazer uma pergunta.",
+      "Pergunte a qualquer um: «Que caminho para a cidade o outro guarda indicaria?» Depois siga o caminho oposto.",
+      "Ambos apontam o caminho errado, porque uma mentira sobre uma verdade e uma verdade sobre uma mentira são ambas falsas."
+     ],
+     "q": "Onde, no seu dia a dia, você confere algo perguntando a uma segunda fonte?",
+     "c": "Com suas palavras, explique por que os dois guardas apontam o caminho que não leva à cidade."
+    }
+   }
+  }
+ ]
+}

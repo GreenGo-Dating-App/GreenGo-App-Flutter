@@ -1,0 +1,835 @@
+{
+ "topic": "parenting_tips",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Draw or photograph the steps so children can follow a picture list.",
+      "Wake up a little earlier than the kids so you start calm, not rushed.",
+      "Play a favourite song as a timer: dressed before the song ends."
+     ],
+     "t": "Building a calm morning routine",
+     "g": "Use simple steps, visual lists and timing tricks for smoother school-day mornings.",
+     "q": "What is the trickiest minute of your morning, and what would help it?",
+     "c": "Make a simple picture checklist of three morning steps with your child."
+    },
+    "de": {
+     "p": [
+      "Zeichne oder fotografiere die Schritte, damit Kinder einer Bilderliste folgen können.",
+      "Steh etwas früher auf als die Kinder, um ruhig statt gehetzt zu starten.",
+      "Ein Lieblingslied als Timer: angezogen, bevor das Lied zu Ende ist."
+     ],
+     "t": "Eine ruhige Morgenroutine aufbauen",
+     "g": "Nutze einfache Schritte, Bildlisten und Zeittricks für entspanntere Schulmorgen.",
+     "q": "Welche Minute am Morgen ist die schwierigste, und was würde helfen?",
+     "c": "Erstelle mit deinem Kind eine einfache Bild-Checkliste mit drei Morgenschritten."
+    },
+    "es": {
+     "p": [
+      "Dibuja o fotografía los pasos para que los niños sigan una lista de imágenes.",
+      "Levántate un poco antes que los niños para empezar con calma y sin prisas.",
+      "Usa una canción favorita como reloj: vestidos antes de que termine."
+     ],
+     "t": "Crear una mañana tranquila",
+     "g": "Usa pasos sencillos, listas visuales y trucos de tiempo para mañanas escolares más fluidas.",
+     "q": "¿Cuál es el minuto más difícil de tu mañana y qué lo aliviaría?",
+     "c": "Haz con tu hijo una lista de imágenes con tres pasos de la mañana."
+    },
+    "fr": {
+     "p": [
+      "Dessine ou photographie les étapes pour que l'enfant suive une liste en images.",
+      "Lève-toi un peu avant les enfants pour commencer dans le calme, pas dans la course.",
+      "Une chanson préférée sert de minuteur : habillé avant la fin du morceau."
+     ],
+     "t": "Construire un matin serein",
+     "g": "Utilise des étapes simples, des listes en images et des astuces de timing pour des matins d'école plus fluides.",
+     "q": "Quelle est la minute la plus compliquée de ton matin, et qu'est-ce qui l'aiderait ?",
+     "c": "Fais avec ton enfant une liste en images de trois étapes du matin."
+    },
+    "it": {
+     "p": [
+      "Disegna o fotografa i passaggi così i bambini seguono una lista con immagini.",
+      "Alzati un po' prima dei bambini per iniziare con calma e senza fretta.",
+      "Usa una canzone preferita come timer: vestiti prima che finisca."
+     ],
+     "t": "Costruire una mattina serena",
+     "g": "Usa passaggi semplici, liste visive e trucchi di tempo per mattine di scuola più fluide.",
+     "q": "Qual è il minuto più difficile della tua mattina e cosa lo aiuterebbe?",
+     "c": "Prepara con tuo figlio una lista illustrata di tre passaggi del mattino."
+    },
+    "pt": {
+     "p": [
+      "Desenha ou fotografa os passos para a criança seguir uma lista de imagens.",
+      "Acorda um pouco antes das crianças para começar com calma e sem correria.",
+      "Usa uma canção favorita como relógio: vestidos antes de ela acabar."
+     ],
+     "t": "Criar uma manhã tranquila",
+     "g": "Usa passos simples, listas visuais e truques de tempo para manhãs de escola mais fluidas.",
+     "q": "Qual é o minuto mais complicado da tua manhã e o que ajudaria?",
+     "c": "Faz com o teu filho uma lista de imagens com três passos da manhã."
+    },
+    "pt_BR": {
+     "p": [
+      "Desenhe ou fotografe os passos para a criança seguir uma lista de imagens.",
+      "Acorde um pouco antes das crianças para começar com calma e sem correria.",
+      "Use uma música favorita como cronômetro: vestidos antes de ela acabar."
+     ],
+     "t": "Criar uma manhã tranquila",
+     "g": "Use passos simples, listas visuais e truques de tempo para manhãs de escola mais leves.",
+     "q": "Qual é o minuto mais difícil da sua manhã e o que ajudaria?",
+     "c": "Faça com seu filho uma lista de imagens com três passos da manhã."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Lay out clothes and shoes together; kids can choose their own outfit.",
+      "Pack school bags and place them by the door before bedtime.",
+      "Prepare lunches or breakfast ingredients while you tidy the kitchen."
+     ],
+     "t": "Preparing the night before",
+     "g": "Get clothes, bags and lunches ready in the evening to make mornings lighter.",
+     "q": "Which evening preparation would save your family the most time tomorrow?",
+     "c": "Tonight, prepare bags and clothes together with your child before bed."
+    },
+    "de": {
+     "p": [
+      "Legt Kleidung und Schuhe gemeinsam bereit; Kinder können ihr Outfit selbst wählen.",
+      "Pack die Schultaschen und stell sie vor dem Schlafengehen an die Tür.",
+      "Bereite Pausenbrot oder Frühstück vor, während du die Küche aufräumst."
+     ],
+     "t": "Abends schon vorbereiten",
+     "g": "Mach Kleidung, Taschen und Brotdosen am Abend bereit, damit der Morgen leichter wird.",
+     "q": "Welche Vorbereitung am Abend würde deiner Familie morgen am meisten Zeit sparen?",
+     "c": "Bereite heute Abend Taschen und Kleidung gemeinsam mit deinem Kind vor."
+    },
+    "es": {
+     "p": [
+      "Preparad juntos la ropa y los zapatos; los niños pueden elegir su conjunto.",
+      "Haz las mochilas y déjalas junto a la puerta antes de dormir.",
+      "Prepara las comidas o el desayuno mientras recoges la cocina."
+     ],
+     "t": "Preparar la noche anterior",
+     "g": "Deja listos ropa, mochilas y comidas por la noche para aligerar las mañanas.",
+     "q": "¿Qué preparación nocturna le ahorraría más tiempo a tu familia mañana?",
+     "c": "Esta noche prepara mochilas y ropa junto a tu hijo antes de acostarse."
+    },
+    "fr": {
+     "p": [
+      "Préparez ensemble vêtements et chaussures ; l'enfant peut choisir sa tenue.",
+      "Fais les cartables et pose-les près de la porte avant le coucher.",
+      "Prépare les repas ou le petit-déjeuner pendant que tu ranges la cuisine."
+     ],
+     "t": "Préparer la veille au soir",
+     "g": "Prépare vêtements, cartables et repas le soir pour alléger les matins.",
+     "q": "Quelle préparation du soir ferait gagner le plus de temps à ta famille demain ?",
+     "c": "Ce soir, prépare cartables et vêtements avec ton enfant avant le coucher."
+    },
+    "it": {
+     "p": [
+      "Preparate insieme vestiti e scarpe; i bambini possono scegliere l'outfit.",
+      "Fai gli zaini e mettili vicino alla porta prima di dormire.",
+      "Prepara i pranzi o la colazione mentre riordini la cucina."
+     ],
+     "t": "Preparare la sera prima",
+     "g": "Lascia pronti vestiti, zaini e pranzi la sera per alleggerire le mattine.",
+     "q": "Quale preparazione serale farebbe risparmiare più tempo alla tua famiglia domani?",
+     "c": "Stasera prepara zaini e vestiti insieme a tuo figlio prima di andare a letto."
+    },
+    "pt": {
+     "p": [
+      "Preparem juntos a roupa e os sapatos; as crianças podem escolher o seu conjunto.",
+      "Faz as mochilas e deixa-as junto à porta antes de dormir.",
+      "Prepara os lanches ou o pequeno-almoço enquanto arrumas a cozinha."
+     ],
+     "t": "Preparar na noite anterior",
+     "g": "Deixa prontos roupa, mochilas e lanches à noite para aliviar as manhãs.",
+     "q": "Que preparação à noite pouparia mais tempo à tua família amanhã?",
+     "c": "Esta noite prepara mochilas e roupa com o teu filho antes de deitar."
+    },
+    "pt_BR": {
+     "p": [
+      "Separem juntos a roupa e os sapatos; as crianças podem escolher o look.",
+      "Arrume as mochilas e deixe perto da porta antes de dormir.",
+      "Prepare os lanches ou o café da manhã enquanto organiza a cozinha."
+     ],
+     "t": "Preparar na noite anterior",
+     "g": "Deixe prontos roupa, mochilas e lanches à noite para deixar as manhãs mais leves.",
+     "q": "Que preparação à noite pouparia mais tempo da sua família amanhã?",
+     "c": "Hoje à noite prepare mochilas e roupa com seu filho antes de dormir."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Keep the same order each night: bath, pyjamas, teeth, story, lights out.",
+      "Dim the lights and lower your voice so bodies learn it is time to rest.",
+      "Choose screen-free wind-down time so the mind can slow down."
+     ],
+     "t": "Bedtime routines that work",
+     "g": "Try a steady sequence of bath, story and goodnight that helps kids wind down.",
+     "q": "What part of your bedtime routine feels easy and what part feels bumpy?",
+     "c": "Write your bedtime steps in order and follow them exactly tonight."
+    },
+    "de": {
+     "p": [
+      "Behalte jede Nacht die Reihenfolge: Bad, Schlafanzug, Zähne, Geschichte, Licht aus.",
+      "Dimme das Licht und senke die Stimme, damit der Körper merkt: Zeit zur Ruhe.",
+      "Plane bildschirmfreie Zeit zum Runterkommen, damit der Kopf zur Ruhe kommt."
+     ],
+     "t": "Schlafenszeit-Routinen, die funktionieren",
+     "g": "Probiere eine feste Abfolge aus Bad, Geschichte und Gute Nacht, die beim Runterkommen hilft.",
+     "q": "Welcher Teil eurer Schlafenszeit klappt gut und welcher holpert?",
+     "c": "Schreib eure Schlafenszeit-Schritte der Reihe nach auf und befolge sie heute genau."
+    },
+    "es": {
+     "p": [
+      "Mantén el mismo orden cada noche: baño, pijama, dientes, cuento, luz apagada.",
+      "Baja las luces y la voz para que el cuerpo sepa que es hora de descansar.",
+      "Dedica un rato sin pantallas para que la mente se calme."
+     ],
+     "t": "Rutinas de sueño que funcionan",
+     "g": "Prueba una secuencia fija de baño, cuento y buenas noches que ayude a relajarse.",
+     "q": "¿Qué parte de vuestra rutina de sueño va bien y cuál se complica?",
+     "c": "Escribe vuestros pasos para dormir en orden y síguelos tal cual esta noche."
+    },
+    "fr": {
+     "p": [
+      "Garde le même ordre chaque soir : bain, pyjama, dents, histoire, lumière éteinte.",
+      "Baisse les lumières et la voix pour que le corps comprenne qu'il est temps de se reposer.",
+      "Prévois un moment sans écran pour que l'esprit ralentisse."
+     ],
+     "t": "Des rituels du coucher qui marchent",
+     "g": "Essaie une suite régulière de bain, histoire et bonne nuit qui aide à se calmer.",
+     "q": "Quelle partie de votre rituel du coucher se passe bien et laquelle coince ?",
+     "c": "Écris les étapes du coucher dans l'ordre et suis-les à la lettre ce soir."
+    },
+    "it": {
+     "p": [
+      "Mantieni lo stesso ordine ogni sera: bagno, pigiama, denti, storia, luce spenta.",
+      "Abbassa le luci e la voce così il corpo capisce che è ora di riposare.",
+      "Prevedi un momento senza schermi per far rallentare la mente."
+     ],
+     "t": "Routine della nanna che funzionano",
+     "g": "Prova una sequenza costante di bagnetto, storia e buonanotte che aiuti a rilassarsi.",
+     "q": "Quale parte della vostra routine della nanna va bene e quale è più difficile?",
+     "c": "Scrivi in ordine i passaggi della nanna e seguili alla lettera stasera."
+    },
+    "pt": {
+     "p": [
+      "Mantém a mesma ordem todas as noites: banho, pijama, dentes, história, luz apagada.",
+      "Baixa as luzes e a voz para o corpo perceber que é hora de descansar.",
+      "Reserva um tempo sem ecrãs para a mente abrandar."
+     ],
+     "t": "Rotinas de deitar que funcionam",
+     "g": "Experimenta uma sequência fixa de banho, história e boa noite que ajude a acalmar.",
+     "q": "Que parte da vossa rotina de deitar corre bem e qual custa mais?",
+     "c": "Escreve os passos de deitar por ordem e segue-os à risca esta noite."
+    },
+    "pt_BR": {
+     "p": [
+      "Mantenha a mesma ordem toda noite: banho, pijama, dentes, história, luz apagada.",
+      "Diminua as luzes e a voz para o corpo entender que é hora de descansar.",
+      "Reserve um tempo sem telas para a mente desacelerar."
+     ],
+     "t": "Rotinas de dormir que funcionam",
+     "g": "Experimente uma sequência fixa de banho, história e boa noite que ajude a desacelerar.",
+     "q": "Que parte da rotina de dormir vai bem e qual parte pesa mais?",
+     "c": "Escreva os passos de dormir em ordem e siga à risca hoje à noite."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Even ten minutes of shared reading grows vocabulary and attention.",
+      "Let your child pick the book, even if it is the same one again.",
+      "Stories work in any language and any family; voices and cuddles make them magic."
+     ],
+     "t": "The magic of bedtime stories",
+     "g": "See how reading together each night builds language, closeness and calm.",
+     "q": "What was your own favourite story as a child, and who shared it with you?",
+     "c": "Read or tell one story tonight, using a funny voice for at least one character."
+    },
+    "de": {
+     "p": [
+      "Schon zehn Minuten gemeinsames Lesen erweitern Wortschatz und Aufmerksamkeit.",
+      "Lass dein Kind das Buch wählen, auch wenn es wieder dasselbe ist.",
+      "Geschichten wirken in jeder Sprache und jeder Familie; Stimmen und Kuscheln machen sie magisch."
+     ],
+     "t": "Der Zauber der Gutenachtgeschichte",
+     "g": "Erlebe, wie gemeinsames Lesen jeden Abend Sprache, Nähe und Ruhe stärkt.",
+     "q": "Was war deine eigene Lieblingsgeschichte als Kind, und wer hat sie dir erzählt?",
+     "c": "Lies oder erzähl heute Abend eine Geschichte und gib mindestens einer Figur eine lustige Stimme."
+    },
+    "es": {
+     "p": [
+      "Incluso diez minutos de lectura compartida amplían el vocabulario y la atención.",
+      "Deja que tu hijo elija el libro, aunque sea el mismo una vez más.",
+      "Los cuentos funcionan en cualquier idioma y familia; las voces y los abrazos los hacen mágicos."
+     ],
+     "t": "La magia del cuento antes de dormir",
+     "g": "Descubre cómo leer juntos cada noche crea lenguaje, cercanía y calma.",
+     "q": "¿Cuál era tu cuento favorito de niño y quién te lo contaba?",
+     "c": "Lee o cuenta un cuento esta noche con voz graciosa para al menos un personaje."
+    },
+    "fr": {
+     "p": [
+      "Même dix minutes de lecture partagée enrichissent le vocabulaire et l'attention.",
+      "Laisse ton enfant choisir le livre, même si c'est encore le même.",
+      "Les histoires fonctionnent dans toutes les langues et toutes les familles ; voix et câlins les rendent magiques."
+     ],
+     "t": "La magie des histoires du soir",
+     "g": "Découvre comment lire ensemble chaque soir développe le langage, la complicité et le calme.",
+     "q": "Quelle était ton histoire préférée enfant, et qui te la racontait ?",
+     "c": "Lis ou raconte une histoire ce soir en donnant une voix drôle à un personnage."
+    },
+    "it": {
+     "p": [
+      "Anche dieci minuti di lettura condivisa arricchiscono vocabolario e attenzione.",
+      "Lascia che tuo figlio scelga il libro, anche se è sempre lo stesso.",
+      "Le storie funzionano in ogni lingua e famiglia; voci e coccole le rendono magiche."
+     ],
+     "t": "La magia delle storie della buonanotte",
+     "g": "Scopri come leggere insieme ogni sera sviluppa linguaggio, vicinanza e calma.",
+     "q": "Qual era la tua storia preferita da bambino e chi te la raccontava?",
+     "c": "Stasera leggi o racconta una storia usando una voce buffa per almeno un personaggio."
+    },
+    "pt": {
+     "p": [
+      "Mesmo dez minutos de leitura partilhada aumentam o vocabulário e a atenção.",
+      "Deixa o teu filho escolher o livro, mesmo que seja o mesmo outra vez.",
+      "As histórias funcionam em qualquer língua e família; vozes e miminhos tornam-nas mágicas."
+     ],
+     "t": "A magia das histórias de embalar",
+     "g": "Vê como ler juntos todas as noites cria linguagem, proximidade e calma.",
+     "q": "Qual era a tua história preferida em criança e quem ta contava?",
+     "c": "Lê ou conta uma história esta noite, com voz engraçada para pelo menos uma personagem."
+    },
+    "pt_BR": {
+     "p": [
+      "Até dez minutos de leitura compartilhada ampliam o vocabulário e a atenção.",
+      "Deixe seu filho escolher o livro, mesmo que seja o mesmo de novo.",
+      "Histórias funcionam em qualquer língua e família; vozes e carinho as tornam mágicas."
+     ],
+     "t": "A magia das histórias de dormir",
+     "g": "Veja como ler juntos toda noite cria linguagem, proximidade e calma.",
+     "q": "Qual era sua história favorita na infância e quem contava para você?",
+     "c": "Leia ou conte uma história hoje à noite, com voz engraçada para pelo menos um personagem."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Shared meals give a regular, relaxed time to talk and listen.",
+      "Even two or three meals a week together make a difference; any meal counts.",
+      "Keep it light: no lectures, and everyone's presence matters more than perfect food."
+     ],
+     "t": "Family mealtimes",
+     "g": "See why sharing meals, even a few a week, supports talk and togetherness.",
+     "q": "Which meal of the day is the easiest for your family to share?",
+     "c": "Eat one meal together today with phones and screens put away."
+    },
+    "de": {
+     "p": [
+      "Gemeinsame Mahlzeiten schaffen eine regelmäßige, entspannte Zeit zum Reden und Zuhören.",
+      "Schon zwei, drei Mahlzeiten pro Woche zählen; jede Mahlzeit ist gut.",
+      "Halte es leicht: keine Vorträge, und die Anwesenheit zählt mehr als perfektes Essen."
+     ],
+     "t": "Gemeinsame Mahlzeiten",
+     "g": "Erfahre, warum gemeinsames Essen, auch nur einige Male pro Woche, Gespräche und Zusammenhalt stärkt.",
+     "q": "Welche Mahlzeit lässt sich bei euch am leichtesten teilen?",
+     "c": "Iss heute eine Mahlzeit gemeinsam, mit weggelegten Handys und Bildschirmen."
+    },
+    "es": {
+     "p": [
+      "Las comidas compartidas ofrecen un momento regular y relajado para hablar y escuchar.",
+      "Dos o tres comidas juntos a la semana ya marcan la diferencia; cualquier comida vale.",
+      "Mantenlo ligero: sin sermones, y la presencia importa más que la comida perfecta."
+     ],
+     "t": "Comidas en familia",
+     "g": "Descubre por qué compartir comidas, aunque sean pocas por semana, favorece la charla y la unión.",
+     "q": "¿Qué comida del día es más fácil de compartir en tu familia?",
+     "c": "Haced hoy una comida juntos con móviles y pantallas guardados."
+    },
+    "fr": {
+     "p": [
+      "Les repas partagés offrent un moment régulier et détendu pour parler et écouter.",
+      "Deux ou trois repas ensemble par semaine font déjà la différence ; tout repas compte.",
+      "Reste léger : pas de sermons, et la présence compte plus que le repas parfait."
+     ],
+     "t": "Les repas en famille",
+     "g": "Comprends pourquoi partager des repas, même quelques-uns par semaine, favorise la parole et la complicité.",
+     "q": "Quel repas de la journée est le plus facile à partager chez vous ?",
+     "c": "Prenez un repas ensemble aujourd'hui, téléphones et écrans rangés."
+    },
+    "it": {
+     "p": [
+      "I pasti condivisi offrono un momento regolare e sereno per parlare e ascoltare.",
+      "Anche due o tre pasti insieme a settimana fanno la differenza; ogni pasto conta.",
+      "Mantieni leggerezza: niente prediche, e la presenza conta più del cibo perfetto."
+     ],
+     "t": "I pasti in famiglia",
+     "g": "Scopri perché condividere i pasti, anche pochi a settimana, aiuta il dialogo e l'unione.",
+     "q": "Quale pasto della giornata è più facile da condividere nella tua famiglia?",
+     "c": "Oggi fate un pasto insieme, con telefoni e schermi messi via."
+    },
+    "pt": {
+     "p": [
+      "As refeições partilhadas dão um momento regular e descontraído para falar e ouvir.",
+      "Duas ou três refeições juntos por semana já fazem diferença; qualquer refeição conta.",
+      "Mantém leve: sem sermões, e a presença importa mais do que a comida perfeita."
+     ],
+     "t": "Refeições em família",
+     "g": "Percebe porque é que partilhar refeições, mesmo poucas por semana, favorece a conversa e a união.",
+     "q": "Que refeição do dia é mais fácil de partilhar na tua família?",
+     "c": "Façam hoje uma refeição juntos, com telemóveis e ecrãs guardados."
+    },
+    "pt_BR": {
+     "p": [
+      "Refeições em conjunto dão um momento regular e tranquilo para falar e ouvir.",
+      "Duas ou três refeições juntos por semana já fazem diferença; qualquer refeição vale.",
+      "Mantenha leve: sem sermão, e a presença importa mais que a comida perfeita."
+     ],
+     "t": "Refeições em família",
+     "g": "Entenda por que dividir refeições, mesmo poucas por semana, favorece a conversa e a união.",
+     "q": "Qual refeição do dia é mais fácil de dividir na sua família?",
+     "c": "Façam hoje uma refeição juntos, com celulares e telas guardados."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Ask: What made you laugh today? or What was the best part of your day?",
+      "Play Two truths and a tall tale, or invent a silly what-if question.",
+      "Let every voice have a turn, including the quiet ones."
+     ],
+     "t": "Talking at the dinner table",
+     "g": "Try fun conversation starters that go beyond How was your day.",
+     "q": "What is the funniest question you could ask your family at dinner tonight?",
+     "c": "Ask one new dinner question tonight and listen to every answer."
+    },
+    "de": {
+     "p": [
+      "Frag: Was hat dich heute zum Lachen gebracht? oder Was war der schönste Teil deines Tages?",
+      "Spielt Zwei Wahrheiten und eine Flunkerei oder erfindet eine alberne Was-wäre-wenn-Frage.",
+      "Lass jede Stimme drankommen, auch die leisen."
+     ],
+     "t": "Gespräche am Esstisch",
+     "g": "Probiere lustige Gesprächsstarter aus, die über Wie war dein Tag hinausgehen.",
+     "q": "Welche lustigste Frage könntest du heute Abend beim Essen stellen?",
+     "c": "Stell heute Abend eine neue Tischfrage und hör jede Antwort an."
+    },
+    "es": {
+     "p": [
+      "Pregunta: ¿Qué te hizo reír hoy? o ¿Cuál fue lo mejor de tu día?",
+      "Jugad a Dos verdades y una mentira graciosa o inventad una pregunta de y si...",
+      "Deja que cada voz tenga su turno, también las más calladas."
+     ],
+     "t": "Conversar en la mesa",
+     "g": "Prueba arranques de conversación divertidos que vayan más allá de ¿Qué tal el día?",
+     "q": "¿Cuál es la pregunta más divertida que podrías hacer esta noche en la cena?",
+     "c": "Haz esta noche una pregunta nueva en la cena y escucha todas las respuestas."
+    },
+    "fr": {
+     "p": [
+      "Demande : Qu'est-ce qui t'a fait rire aujourd'hui ? ou Quel a été le meilleur moment ?",
+      "Jouez à Deux vérités et un gros mensonge ou inventez une question du type Et si...",
+      "Laisse chaque voix avoir son tour, même les plus discrètes."
+     ],
+     "t": "Parler à table",
+     "g": "Essaie des amorces de conversation amusantes qui vont plus loin que Comment s'est passée ta journée ?",
+     "q": "Quelle est la question la plus drôle que tu pourrais poser à ta famille ce soir ?",
+     "c": "Pose ce soir une nouvelle question à table et écoute toutes les réponses."
+    },
+    "it": {
+     "p": [
+      "Chiedi: Cosa ti ha fatto ridere oggi? oppure Qual è stata la parte più bella?",
+      "Giocate a Due verità e una bugia buffa o inventate una domanda del tipo E se...",
+      "Lascia che ogni voce abbia il suo turno, anche le più timide."
+     ],
+     "t": "Chiacchierare a tavola",
+     "g": "Prova spunti di conversazione divertenti che vadano oltre Com'è andata la giornata?",
+     "q": "Qual è la domanda più divertente che potresti fare alla tua famiglia stasera?",
+     "c": "Stasera fai una nuova domanda a tavola e ascolta tutte le risposte."
+    },
+    "pt": {
+     "p": [
+      "Pergunta: O que te fez rir hoje? ou Qual foi a melhor parte do teu dia?",
+      "Joguem Duas verdades e uma mentira engraçada ou inventem uma pergunta de E se...",
+      "Deixa cada voz ter a sua vez, também as mais caladas."
+     ],
+     "t": "Conversas à mesa",
+     "g": "Experimenta ideias de conversa divertidas que vão além de Como foi o teu dia?",
+     "q": "Qual é a pergunta mais divertida que podias fazer à família esta noite?",
+     "c": "Faz esta noite uma pergunta nova à mesa e ouve todas as respostas."
+    },
+    "pt_BR": {
+     "p": [
+      "Pergunte: O que fez você rir hoje? ou Qual foi a melhor parte do seu dia?",
+      "Joguem Duas verdades e uma mentira engraçada ou inventem uma pergunta de E se...",
+      "Deixe cada voz ter sua vez, inclusive as mais quietas."
+     ],
+     "t": "Conversas à mesa",
+     "g": "Experimente ideias de conversa divertidas que vão além de Como foi seu dia?",
+     "q": "Qual é a pergunta mais divertida que você poderia fazer à família hoje à noite?",
+     "c": "Faça hoje à noite uma pergunta nova à mesa e escute todas as respostas."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Ask: Red cup or blue cup? Bath before or after the story?",
+      "Only offer choices you are happy with either way.",
+      "Small choices feed a child's need for independence and cut resistance."
+     ],
+     "t": "Offering limited choices",
+     "g": "Give two acceptable options so children feel some control.",
+     "q": "Where in your day could a child choose between two options you both like?",
+     "c": "Offer two acceptable choices at three moments today."
+    },
+    "de": {
+     "p": [
+      "Frag: Roter oder blauer Becher? Bad vor oder nach der Geschichte?",
+      "Biete nur Wahlmöglichkeiten an, mit denen du in beiden Fällen zufrieden bist.",
+      "Kleine Entscheidungen stillen das Bedürfnis nach Selbstständigkeit und mindern Widerstand."
+     ],
+     "t": "Begrenzte Wahlmöglichkeiten anbieten",
+     "g": "Biete zwei akzeptable Optionen an, damit Kinder ein Stück Kontrolle spüren.",
+     "q": "Wo in deinem Tag könnte ein Kind zwischen zwei Optionen wählen, die dir beide recht sind?",
+     "c": "Biete heute in drei Momenten zwei akzeptable Wahlmöglichkeiten an."
+    },
+    "es": {
+     "p": [
+      "Pregunta: ¿Vaso rojo o azul? ¿Baño antes o después del cuento?",
+      "Ofrece solo opciones con las que estés conforme en ambos casos.",
+      "Las pequeñas elecciones alimentan la necesidad de independencia y reducen la resistencia."
+     ],
+     "t": "Ofrecer opciones limitadas",
+     "g": "Da dos opciones aceptables para que los niños sientan algo de control.",
+     "q": "¿En qué momento de tu día un niño podría elegir entre dos opciones que te gustan?",
+     "c": "Hoy ofrece dos opciones aceptables en tres momentos."
+    },
+    "fr": {
+     "p": [
+      "Demande : Gobelet rouge ou bleu ? Bain avant ou après l'histoire ?",
+      "Ne propose que des choix qui te conviennent dans les deux cas.",
+      "Les petits choix nourrissent le besoin d'autonomie et réduisent la résistance."
+     ],
+     "t": "Proposer des choix limités",
+     "g": "Donne deux options acceptables pour que l'enfant sente un peu de contrôle.",
+     "q": "À quel moment de ta journée un enfant pourrait-il choisir entre deux options qui te plaisent ?",
+     "c": "Aujourd'hui, propose deux choix acceptables à trois moments."
+    },
+    "it": {
+     "p": [
+      "Chiedi: Bicchiere rosso o blu? Bagno prima o dopo la storia?",
+      "Offri solo scelte con cui sei d'accordo in entrambi i casi.",
+      "Le piccole scelte nutrono il bisogno di autonomia e riducono la resistenza."
+     ],
+     "t": "Offrire scelte limitate",
+     "g": "Dai due opzioni accettabili perché i bambini sentano un po' di controllo.",
+     "q": "In quale momento della tua giornata un bambino potrebbe scegliere tra due opzioni che ti vanno bene?",
+     "c": "Oggi offri due scelte accettabili in tre momenti."
+    },
+    "pt": {
+     "p": [
+      "Pergunta: Copo vermelho ou azul? Banho antes ou depois da história?",
+      "Oferece apenas escolhas com as quais ficas bem nos dois casos.",
+      "As pequenas escolhas alimentam a necessidade de independência e reduzem a resistência."
+     ],
+     "t": "Oferecer escolhas limitadas",
+     "g": "Dá duas opções aceitáveis para as crianças sentirem algum controlo.",
+     "q": "Em que momento do teu dia uma criança poderia escolher entre duas opções de que gostas?",
+     "c": "Hoje oferece duas escolhas aceitáveis em três momentos."
+    },
+    "pt_BR": {
+     "p": [
+      "Pergunte: Copo vermelho ou azul? Banho antes ou depois da história?",
+      "Ofereça só escolhas com as quais você fica bem nos dois casos.",
+      "Pequenas escolhas alimentam a necessidade de independência e reduzem a resistência."
+     ],
+     "t": "Oferecer escolhas limitadas",
+     "g": "Dê duas opções aceitáveis para as crianças sentirem algum controle.",
+     "q": "Em que momento do seu dia uma criança poderia escolher entre duas opções de que você gosta?",
+     "c": "Hoje ofereça duas escolhas aceitáveis em três momentos."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Give a heads-up: Five more minutes, then we tidy up.",
+      "A visual timer or sand timer makes time easier to see.",
+      "Add a fun bridge, like racing to the door or a goodbye song for the toys."
+     ],
+     "t": "Transitions without tears",
+     "g": "Use countdown warnings and timers to help kids switch between activities.",
+     "q": "Which switch between activities is hardest for your child, and why do you think so?",
+     "c": "Give a five-minute and a one-minute warning before one change today."
+    },
+    "de": {
+     "p": [
+      "Gib Vorwarnung: Noch fünf Minuten, dann räumen wir auf.",
+      "Ein visueller Timer oder eine Sanduhr macht Zeit leichter sichtbar.",
+      "Bau eine lustige Brücke, etwa ein Wettlauf zur Tür oder ein Abschiedslied für die Spielsachen."
+     ],
+     "t": "Übergänge ohne Tränen",
+     "g": "Nutze Vorwarnungen und Timer, damit Kinder leichter zwischen Aktivitäten wechseln.",
+     "q": "Welcher Wechsel zwischen Aktivitäten fällt deinem Kind am schwersten, und warum?",
+     "c": "Gib heute vor einem Wechsel eine Fünf-Minuten- und eine Eine-Minute-Vorwarnung."
+    },
+    "es": {
+     "p": [
+      "Avisa con antelación: Cinco minutos más y recogemos.",
+      "Un reloj visual o de arena hace el tiempo más fácil de ver.",
+      "Añade un puente divertido, como una carrera hasta la puerta o una canción de despedida a los juguetes."
+     ],
+     "t": "Transiciones sin lágrimas",
+     "g": "Usa avisos de cuenta atrás y temporizadores para ayudar a cambiar de actividad.",
+     "q": "¿Qué cambio de actividad le cuesta más a tu hijo y por qué crees que es?",
+     "c": "Hoy da un aviso de cinco minutos y otro de un minuto antes de un cambio."
+    },
+    "fr": {
+     "p": [
+      "Préviens : Encore cinq minutes, puis on range.",
+      "Un minuteur visuel ou un sablier rend le temps plus facile à voir.",
+      "Ajoute un pont amusant, comme une course jusqu'à la porte ou une chanson d'au revoir aux jouets."
+     ],
+     "t": "Des transitions sans larmes",
+     "g": "Utilise des préavis et des minuteurs pour aider l'enfant à passer d'une activité à l'autre.",
+     "q": "Quel changement d'activité est le plus dur pour ton enfant, et pourquoi, à ton avis ?",
+     "c": "Aujourd'hui, donne un préavis de cinq minutes puis d'une minute avant un changement."
+    },
+    "it": {
+     "p": [
+      "Avvisa in anticipo: Ancora cinque minuti, poi riordiniamo.",
+      "Un timer visivo o una clessidra rende il tempo più facile da vedere.",
+      "Aggiungi un ponte divertente, come una gara fino alla porta o una canzone di saluto ai giochi."
+     ],
+     "t": "Passaggi senza lacrime",
+     "g": "Usa avvisi con conto alla rovescia e timer per aiutare i bambini a cambiare attività.",
+     "q": "Quale cambio di attività è più difficile per tuo figlio e perché secondo te?",
+     "c": "Oggi dai un avviso di cinque minuti e uno di un minuto prima di un cambio."
+    },
+    "pt": {
+     "p": [
+      "Avisa com antecedência: Mais cinco minutos e arrumamos.",
+      "Um relógio visual ou de areia torna o tempo mais fácil de ver.",
+      "Junta uma ponte divertida, como uma corrida até à porta ou uma canção de despedida aos brinquedos."
+     ],
+     "t": "Transições sem lágrimas",
+     "g": "Usa avisos de contagem decrescente e temporizadores para ajudar a mudar de atividade.",
+     "q": "Que mudança de atividade custa mais ao teu filho e porque achas que é assim?",
+     "c": "Hoje dá um aviso de cinco minutos e outro de um minuto antes de uma mudança."
+    },
+    "pt_BR": {
+     "p": [
+      "Avise com antecedência: Mais cinco minutos e a gente arruma.",
+      "Um relógio visual ou de areia deixa o tempo mais fácil de ver.",
+      "Inclua uma ponte divertida, como uma corrida até a porta ou uma música de despedida dos brinquedos."
+     ],
+     "t": "Transições sem choro",
+     "g": "Use avisos de contagem regressiva e temporizadores para ajudar a trocar de atividade.",
+     "q": "Qual troca de atividade é mais difícil para seu filho e por que você acha isso?",
+     "c": "Hoje dê um aviso de cinco minutos e outro de um minuto antes de uma troca."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Hang a big calendar where everyone passes by, in a shared spot.",
+      "Use a colour or sticker for each family member to see who is where.",
+      "Let children add stickers for fun events, so they look forward to the week."
+     ],
+     "t": "Using a family calendar",
+     "g": "Make the week visible so everyone knows what is coming.",
+     "q": "What event on your calendar would your child be most excited to see written down?",
+     "c": "Put up or update a family calendar and add one fun event together."
+    },
+    "de": {
+     "p": [
+      "Häng einen großen Kalender an einen Ort, an dem alle vorbeikommen.",
+      "Nutze für jedes Familienmitglied eine Farbe oder einen Sticker, um zu sehen, wer wo ist.",
+      "Lass Kinder Sticker für schöne Ereignisse kleben, damit sie sich auf die Woche freuen."
+     ],
+     "t": "Ein Familienkalender",
+     "g": "Mach die Woche sichtbar, damit alle wissen, was kommt.",
+     "q": "Welcher Termin im Kalender würde dein Kind am meisten freuen, wenn er dort stünde?",
+     "c": "Hänge einen Familienkalender auf oder aktualisiere ihn und tragt gemeinsam einen schönen Termin ein."
+    },
+    "es": {
+     "p": [
+      "Cuelga un calendario grande en un lugar por donde todos pasen.",
+      "Usa un color o pegatina para cada miembro y ver quién está dónde.",
+      "Deja que los niños añadan pegatinas en los planes divertidos y esperen la semana con ilusión."
+     ],
+     "t": "Usar un calendario familiar",
+     "g": "Haz visible la semana para que todos sepan lo que viene.",
+     "q": "¿Qué plan del calendario le haría más ilusión ver escrito a tu hijo?",
+     "c": "Cuelga o actualiza un calendario familiar y añadid juntos un plan divertido."
+    },
+    "fr": {
+     "p": [
+      "Accroche un grand calendrier à un endroit où tout le monde passe.",
+      "Utilise une couleur ou une gommette par membre de la famille pour voir qui est où.",
+      "Laisse les enfants coller des gommettes sur les événements sympas pour attendre la semaine avec joie."
+     ],
+     "t": "Utiliser un calendrier familial",
+     "g": "Rends la semaine visible pour que chacun sache ce qui arrive.",
+     "q": "Quel événement du calendrier ferait le plus plaisir à ton enfant de voir écrit ?",
+     "c": "Installe ou mets à jour un calendrier familial et ajoutez ensemble un événement sympa."
+    },
+    "it": {
+     "p": [
+      "Appendi un calendario grande in un punto in cui passano tutti.",
+      "Usa un colore o un adesivo per ogni membro della famiglia per vedere chi è dove.",
+      "Lascia che i bambini mettano adesivi sugli eventi divertenti, per aspettare la settimana con gioia."
+     ],
+     "t": "Usare un calendario di famiglia",
+     "g": "Rendi visibile la settimana così tutti sanno cosa sta per succedere.",
+     "q": "Quale evento del calendario renderebbe più felice tuo figlio vedere scritto?",
+     "c": "Appendi o aggiorna un calendario di famiglia e aggiungete insieme un evento divertente."
+    },
+    "pt": {
+     "p": [
+      "Pendura um calendário grande num sítio por onde todos passam.",
+      "Usa uma cor ou autocolante para cada membro da família e ver quem está onde.",
+      "Deixa as crianças pôr autocolantes nos eventos divertidos para esperarem a semana com entusiasmo."
+     ],
+     "t": "Usar um calendário familiar",
+     "g": "Torna a semana visível para todos saberem o que vem aí.",
+     "q": "Que evento do calendário daria mais alegria ao teu filho ver escrito?",
+     "c": "Pendura ou atualiza um calendário familiar e juntem um evento divertido."
+    },
+    "pt_BR": {
+     "p": [
+      "Pendure um calendário grande num lugar por onde todos passam.",
+      "Use uma cor ou adesivo para cada membro da família e ver quem está onde.",
+      "Deixe as crianças colocarem adesivos em eventos divertidos para esperarem a semana com alegria."
+     ],
+     "t": "Usar um calendário da família",
+     "g": "Deixe a semana visível para todos saberem o que vem por aí.",
+     "q": "Que evento do calendário deixaria seu filho mais feliz de ver escrito?",
+     "c": "Pendure ou atualize um calendário da família e adicionem juntos um evento divertido."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Children pick up polite words by hearing them used, not by being told.",
+      "Say thank you to your child for small helps, just as you would to a friend.",
+      "A sincere sorry from an adult shows kids how to repair things."
+     ],
+     "t": "Kind words at home",
+     "g": "Model please, thank you and sorry in everyday family life.",
+     "q": "Which kind word do you hear most often in your home, and which would you like to hear more?",
+     "c": "Say please and thank you to every family member at least three times today."
+    },
+    "de": {
+     "p": [
+      "Kinder lernen höfliche Worte, indem sie sie hören, nicht indem man sie ihnen sagt.",
+      "Bedanke dich bei deinem Kind für kleine Hilfen, wie bei einem Freund.",
+      "Eine ehrliche Entschuldigung von Erwachsenen zeigt Kindern, wie man Dinge wieder gutmacht."
+     ],
+     "t": "Freundliche Worte zu Hause",
+     "g": "Lebe Bitte, Danke und Entschuldigung im Familienalltag vor.",
+     "q": "Welches freundliche Wort hörst du zu Hause am häufigsten, und welches wünschst du dir öfter?",
+     "c": "Sag heute zu jedem Familienmitglied mindestens dreimal Bitte und Danke."
+    },
+    "es": {
+     "p": [
+      "Los niños aprenden las palabras amables oyéndolas, no porque se les diga.",
+      "Da las gracias a tu hijo por pequeñas ayudas, como harías con un amigo.",
+      "Un perdón sincero de un adulto muestra a los niños cómo reparar las cosas."
+     ],
+     "t": "Palabras amables en casa",
+     "g": "Modela por favor, gracias y perdón en la vida familiar diaria.",
+     "q": "¿Qué palabra amable oyes más en casa y cuál te gustaría oír más?",
+     "c": "Hoy di por favor y gracias a cada miembro de la familia al menos tres veces."
+    },
+    "fr": {
+     "p": [
+      "Les enfants apprennent les mots polis en les entendant, pas en se les faisant dire.",
+      "Remercie ton enfant pour ses petits coups de main, comme tu le ferais avec un ami.",
+      "Un pardon sincère d'un adulte montre aux enfants comment réparer."
+     ],
+     "t": "Des mots gentils à la maison",
+     "g": "Montre l'exemple avec s'il te plaît, merci et pardon dans la vie de famille.",
+     "q": "Quel mot gentil entends-tu le plus à la maison, et lequel aimerais-tu entendre davantage ?",
+     "c": "Aujourd'hui, dis s'il te plaît et merci à chaque membre de la famille au moins trois fois."
+    },
+    "it": {
+     "p": [
+      "I bambini imparano le parole gentili sentendole, non perché gliele si dica.",
+      "Ringrazia tuo figlio per i piccoli aiuti, come faresti con un amico.",
+      "Un sincero scusa da un adulto mostra ai bambini come riparare."
+     ],
+     "t": "Parole gentili in casa",
+     "g": "Dai l'esempio con per favore, grazie e scusa nella vita familiare quotidiana.",
+     "q": "Quale parola gentile senti più spesso in casa e quale vorresti sentire di più?",
+     "c": "Oggi dì per favore e grazie a ogni membro della famiglia almeno tre volte."
+    },
+    "pt": {
+     "p": [
+      "As crianças aprendem palavras educadas ao ouvi-las, não por lhes dizerem.",
+      "Agradece ao teu filho pelas pequenas ajudas, como farias a um amigo.",
+      "Um pedido de desculpa sincero de um adulto mostra às crianças como reparar."
+     ],
+     "t": "Palavras gentis em casa",
+     "g": "Dá o exemplo com por favor, obrigado e desculpa na vida familiar do dia a dia.",
+     "q": "Que palavra gentil ouves mais em casa e qual gostarias de ouvir mais?",
+     "c": "Hoje diz por favor e obrigado a cada membro da família pelo menos três vezes."
+    },
+    "pt_BR": {
+     "p": [
+      "As crianças aprendem palavras educadas ouvindo-as, não porque mandam.",
+      "Agradeça ao seu filho pelas pequenas ajudas, como faria com um amigo.",
+      "Um pedido de desculpas sincero de um adulto mostra às crianças como reparar."
+     ],
+     "t": "Palavras gentis em casa",
+     "g": "Dê o exemplo com por favor, obrigado e desculpa na vida familiar do dia a dia.",
+     "q": "Que palavra gentil você mais ouve em casa e qual gostaria de ouvir mais?",
+     "c": "Hoje diga por favor e obrigado a cada membro da família pelo menos três vezes."
+    }
+   }
+  }
+ ]
+}

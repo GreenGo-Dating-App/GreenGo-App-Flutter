@@ -1,0 +1,835 @@
+{
+ "topic": "cultural_exchange",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Polite forms of address",
+     "g": "Learn about formal and informal you, titles and when to use first names.",
+     "p": [
+      "Spanish, French, German and Portuguese all have formal and informal ways to say you.",
+      "Titles like Doctor, Professor or Mr are used more in some places than others.",
+      "If unsure, start formal and let the other person invite you to relax."
+     ],
+     "q": "Does your language have a formal you, and when do you use it?",
+     "c": "Notice today how you address different people and why."
+    },
+    "de": {
+     "t": "Höfliche Anredeformen",
+     "g": "Lerne formelles und informelles Du, Titel und den Gebrauch von Vornamen kennen.",
+     "p": [
+      "Spanisch, Französisch, Deutsch und Portugiesisch kennen höfliche und vertraute Anreden.",
+      "Titel wie Doktor, Professor oder Herr werden nicht überall gleich oft benutzt.",
+      "Im Zweifel starte förmlich und warte, bis dir das Du angeboten wird."
+     ],
+     "q": "Hat deine Sprache ein höfliches Sie, und wann benutzt du es?",
+     "c": "Achte heute darauf, wie du verschiedene Menschen ansprichst und warum."
+    },
+    "es": {
+     "t": "Formas de tratamiento",
+     "g": "Aprende sobre el tú y el usted, los títulos y cuándo usar el nombre de pila.",
+     "p": [
+      "El español, francés, alemán y portugués tienen formas formales e informales de decir tú.",
+      "Títulos como Doctor, Profesor o Señor se usan más en unos lugares que en otros.",
+      "Si dudas, empieza con formalidad y deja que la otra persona te invite a tutear."
+     ],
+     "q": "¿Tu idioma tiene un trato formal y cuándo lo usas?",
+     "c": "Observa hoy cómo te diriges a distintas personas y por qué."
+    },
+    "fr": {
+     "t": "Formules de politesse",
+     "g": "Découvre le tu et le vous, les titres et quand utiliser le prénom.",
+     "p": [
+      "L'espagnol, le français, l'allemand et le portugais ont une forme polie et une forme familière.",
+      "Des titres comme Docteur, Professeur ou Monsieur servent plus ou moins selon les lieux.",
+      "Dans le doute, commence par le vouvoiement et laisse l'autre t'inviter à te détendre."
+     ],
+     "q": "Ta langue a-t-elle une forme polie, et quand l'utilises-tu ?",
+     "c": "Observe aujourd'hui comment tu t'adresses à différentes personnes, et pourquoi."
+    },
+    "it": {
+     "t": "Forme di cortesia",
+     "g": "Scopri il tu e il lei, i titoli e quando usare il nome di battesimo.",
+     "p": [
+      "Spagnolo, francese, tedesco e portoghese hanno forme formali e informali di rivolgersi agli altri.",
+      "Titoli come Dottore, Professore o Signor si usano più in alcuni luoghi che in altri.",
+      "Nel dubbio, inizia in modo formale e lascia che sia l'altro a invitarti al tu."
+     ],
+     "q": "La tua lingua ha una forma di cortesia e quando la usi?",
+     "c": "Osserva oggi come ti rivolgi a persone diverse e perché."
+    },
+    "pt": {
+     "t": "Formas de tratamento",
+     "g": "Aprende o tu e o você, os títulos e quando usar o primeiro nome.",
+     "p": [
+      "Espanhol, francês, alemão e português têm formas formais e informais de tratamento.",
+      "Títulos como Doutor, Professor ou Senhor usam-se mais nuns lugares do que noutros.",
+      "Na dúvida, começa de forma formal e deixa que a outra pessoa te convide ao tu."
+     ],
+     "q": "A tua língua tem tratamento formal e quando o usas?",
+     "c": "Repara hoje em como tratas pessoas diferentes e porquê."
+    },
+    "pt_BR": {
+     "t": "Formas de tratamento",
+     "g": "Aprenda sobre o tu, o senhor e a senhora, os títulos e quando usar o primeiro nome.",
+     "p": [
+      "Espanhol, francês, alemão e português têm formas formais e informais de tratamento.",
+      "Títulos como Doutor, Professor ou Senhor são usados mais em alguns lugares do que em outros.",
+      "Na dúvida, comece de forma formal e deixe a outra pessoa convidar você a relaxar."
+     ],
+     "q": "Seu idioma tem tratamento formal e quando você o usa?",
+     "c": "Observe hoje como você trata pessoas diferentes e por quê."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Body language basics",
+     "g": "Discover gestures that differ from place to place, like nodding and the thumbs up.",
+     "p": [
+      "In most places nodding means yes, but in Bulgaria and parts of Greece it can mean no.",
+      "The thumbs up is friendly in many countries but can be rude in a few.",
+      "A smile is widely friendly, though how much people smile varies."
+     ],
+     "q": "Which gesture do you use without thinking, and what does it mean?",
+     "c": "Watch a video with the sound off and guess what the gestures say."
+    },
+    "de": {
+     "t": "Grundlagen der Körpersprache",
+     "g": "Entdecke Gesten, die von Ort zu Ort verschieden sind, wie Nicken und Daumen hoch.",
+     "p": [
+      "Meist heißt Nicken ja, doch in Bulgarien und Teilen Griechenlands kann es nein bedeuten.",
+      "Daumen hoch ist vielerorts freundlich, in wenigen Ländern aber unhöflich.",
+      "Ein Lächeln ist weithin freundlich, auch wenn die Häufigkeit unterschiedlich ist."
+     ],
+     "q": "Welche Geste benutzt du ohne nachzudenken, und was bedeutet sie?",
+     "c": "Schau ein Video ohne Ton und rate, was die Gesten sagen."
+    },
+    "es": {
+     "t": "Lo básico del lenguaje corporal",
+     "g": "Descubre gestos que cambian de un lugar a otro, como asentir o el pulgar hacia arriba.",
+     "p": [
+      "En casi todas partes asentir es sí, pero en Bulgaria y partes de Grecia puede ser no.",
+      "El pulgar hacia arriba es amistoso en muchos países, pero ofensivo en algunos.",
+      "Una sonrisa suele ser amistosa, aunque cuánto se sonríe varía."
+     ],
+     "q": "¿Qué gesto usas sin pensar y qué significa?",
+     "c": "Mira un vídeo sin sonido y adivina qué dicen los gestos."
+    },
+    "fr": {
+     "t": "Les bases du langage corporel",
+     "g": "Découvre des gestes qui varient d'un endroit à l'autre, comme hocher la tête ou le pouce levé.",
+     "p": [
+      "Presque partout hocher la tête veut dire oui, mais en Bulgarie et dans certaines régions de Grèce, non.",
+      "Le pouce levé est amical dans beaucoup de pays, mais impoli dans quelques-uns.",
+      "Le sourire est largement amical, même si on sourit plus ou moins selon les lieux."
+     ],
+     "q": "Quel geste fais-tu sans y penser, et que signifie-t-il ?",
+     "c": "Regarde une vidéo sans le son et devine ce que disent les gestes."
+    },
+    "it": {
+     "t": "Basi del linguaggio del corpo",
+     "g": "Scopri gesti che cambiano da luogo a luogo, come annuire e il pollice in su.",
+     "p": [
+      "Quasi ovunque annuire significa sì, ma in Bulgaria e in parte della Grecia può significare no.",
+      "Il pollice in su è amichevole in molti paesi, ma maleducato in alcuni.",
+      "Il sorriso è in genere amichevole, anche se quanto si sorride varia."
+     ],
+     "q": "Quale gesto fai senza pensarci e cosa significa?",
+     "c": "Guarda un video senza audio e indovina cosa dicono i gesti."
+    },
+    "pt": {
+     "t": "Noções de linguagem corporal",
+     "g": "Descobre gestos que mudam de lugar para lugar, como acenar com a cabeça e o polegar para cima.",
+     "p": [
+      "Quase sempre acenar com a cabeça é sim, mas na Bulgária e partes da Grécia pode ser não.",
+      "O polegar para cima é simpático em muitos países, mas ofensivo em alguns.",
+      "O sorriso é geralmente simpático, embora a frequência com que se sorri varie."
+     ],
+     "q": "Que gesto usas sem pensar e o que significa?",
+     "c": "Vê um vídeo sem som e adivinha o que dizem os gestos."
+    },
+    "pt_BR": {
+     "t": "Noções de linguagem corporal",
+     "g": "Descubra gestos que mudam de lugar para lugar, como balançar a cabeça e o joinha.",
+     "p": [
+      "Quase sempre assentir com a cabeça é sim, mas na Bulgária e partes da Grécia pode ser não.",
+      "O joinha é simpático em muitos países, mas ofensivo em alguns.",
+      "O sorriso costuma ser amigável, embora a frequência com que se sorri varie."
+     ],
+     "q": "Que gesto você usa sem pensar e o que ele significa?",
+     "c": "Assista a um vídeo sem som e adivinhe o que os gestos dizem."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Personal space",
+     "g": "See how close people stand and how much they touch varies by culture.",
+     "p": [
+      "In many places people stand closer when chatting; in others they keep more distance.",
+      "Touching an arm or hugging is common in some cultures and rare in others.",
+      "If someone steps back or closer, simply adjust and keep smiling."
+     ],
+     "q": "How much space feels comfortable to you when you talk with a friend?",
+     "c": "Notice how close you stand to people in different situations today."
+    },
+    "de": {
+     "t": "Persönlicher Freiraum",
+     "g": "Erfahre, wie unterschiedlich Nähe und Berührung in Kulturen sind.",
+     "p": [
+      "An manchen Orten steht man im Gespräch näher beieinander, an anderen mit mehr Abstand.",
+      "Berührungen am Arm oder Umarmungen sind mancherorts üblich, anderswo selten.",
+      "Tritt jemand zurück oder näher, passe dich einfach an und lächle weiter."
+     ],
+     "q": "Wie viel Abstand ist dir im Gespräch mit Freunden angenehm?",
+     "c": "Achte heute darauf, wie nah du in verschiedenen Situationen bei anderen stehst."
+    },
+    "es": {
+     "t": "El espacio personal",
+     "g": "Descubre cómo la cercanía y el contacto físico varían según la cultura.",
+     "p": [
+      "En muchos lugares la gente se acerca más al hablar; en otros mantiene más distancia.",
+      "Tocar el brazo o abrazar es común en unas culturas y poco habitual en otras.",
+      "Si alguien se aleja o se acerca, ajústate con naturalidad y sigue sonriendo."
+     ],
+     "q": "¿Cuánto espacio te resulta cómodo al hablar con un amigo?",
+     "c": "Fíjate hoy en cuánto te acercas a otras personas en distintas situaciones."
+    },
+    "fr": {
+     "t": "L'espace personnel",
+     "g": "Vois comment la distance et le contact physique varient selon les cultures.",
+     "p": [
+      "Dans beaucoup d'endroits on se tient plus près pour discuter; ailleurs, on garde plus de distance.",
+      "Toucher le bras ou s'embrasser est courant dans certaines cultures, rare dans d'autres.",
+      "Si quelqu'un recule ou s'approche, ajuste-toi simplement et continue de sourire."
+     ],
+     "q": "Quelle distance te semble confortable quand tu parles avec un ami ?",
+     "c": "Observe aujourd'hui à quelle distance tu te tiens des autres selon les situations."
+    },
+    "it": {
+     "t": "Lo spazio personale",
+     "g": "Scopri come distanza e contatto fisico variano da cultura a cultura.",
+     "p": [
+      "In molti luoghi ci si avvicina di più per parlare; in altri si mantiene più distanza.",
+      "Toccare il braccio o abbracciarsi è comune in alcune culture e raro in altre.",
+      "Se qualcuno si scosta o si avvicina, adeguati con naturalezza e continua a sorridere."
+     ],
+     "q": "Quanto spazio ti fa sentire a tuo agio quando parli con un amico?",
+     "c": "Osserva oggi a che distanza stai dagli altri in situazioni diverse."
+    },
+    "pt": {
+     "t": "O espaço pessoal",
+     "g": "Descobre como a proximidade e o contacto físico variam de cultura para cultura.",
+     "p": [
+      "Em muitos lugares as pessoas aproximam-se mais ao conversar; noutros mantêm mais distância.",
+      "Tocar no braço ou abraçar é comum em umas culturas e raro noutras.",
+      "Se alguém recuar ou se aproximar, ajusta-te com naturalidade e continua a sorrir."
+     ],
+     "q": "Quanto espaço te parece confortável ao falar com um amigo?",
+     "c": "Repara hoje a que distância ficas das pessoas em situações diferentes."
+    },
+    "pt_BR": {
+     "t": "O espaço pessoal",
+     "g": "Descubra como a proximidade e o contato físico variam de cultura para cultura.",
+     "p": [
+      "Em muitos lugares as pessoas ficam mais perto ao conversar; em outros mantêm mais distância.",
+      "Tocar o braço ou abraçar é comum em algumas culturas e raro em outras.",
+      "Se alguém recuar ou se aproximar, ajuste-se com naturalidade e continue sorrindo."
+     ],
+     "q": "Quanto espaço parece confortável para você ao falar com um amigo?",
+     "c": "Observe hoje a que distância você fica das pessoas em situações diferentes."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A typical morning",
+     "g": "Compare breakfast, commute and morning routines around the world.",
+     "p": [
+      "Some people wake at dawn, others start later; schedules follow climate and work.",
+      "Morning might mean a walk to school, a crowded train or a short stroll to a farm.",
+      "Small rituals, like tea, a stretch or a family chat, shape the start of the day."
+     ],
+     "q": "What does a typical morning look like for you, step by step?",
+     "c": "Describe your morning in four short steps and share it."
+    },
+    "de": {
+     "t": "Ein typischer Morgen",
+     "g": "Vergleiche Frühstück, Arbeitsweg und Morgenroutinen auf der Welt.",
+     "p": [
+      "Manche stehen im Morgengrauen auf, andere später; Rhythmen folgen Klima und Arbeit.",
+      "Morgens geht man vielleicht zur Schule, fährt im vollen Zug oder geht zum Hof.",
+      "Kleine Rituale wie Tee, Dehnen oder ein Familiengespräch prägen den Tagesbeginn."
+     ],
+     "q": "Wie sieht ein typischer Morgen bei dir aus, Schritt für Schritt?",
+     "c": "Beschreibe deinen Morgen in vier kurzen Schritten und teile ihn."
+    },
+    "es": {
+     "t": "Una mañana típica",
+     "g": "Compara desayunos, trayectos y rutinas matutinas por el mundo.",
+     "p": [
+      "Algunas personas se levantan al amanecer y otras más tarde; el clima y el trabajo marcan el ritmo.",
+      "La mañana puede ser un paseo a la escuela, un tren lleno o un corto camino a una granja.",
+      "Pequeños rituales, como un té, estirarse o charlar en familia, marcan el inicio del día."
+     ],
+     "q": "¿Cómo es una mañana típica para ti, paso a paso?",
+     "c": "Describe tu mañana en cuatro pasos cortos y compártela."
+    },
+    "fr": {
+     "t": "Un matin typique",
+     "g": "Compare petits-déjeuners, trajets et routines du matin dans le monde.",
+     "p": [
+      "Certains se lèvent à l'aube, d'autres plus tard; le climat et le travail dictent le rythme.",
+      "Le matin, c'est peut-être la marche vers l'école, un train bondé ou un court trajet vers la ferme.",
+      "De petits rituels, thé, étirements ou discussion en famille, lancent la journée."
+     ],
+     "q": "À quoi ressemble ton matin typique, étape par étape ?",
+     "c": "Décris ton matin en quatre courtes étapes et partage-le."
+    },
+    "it": {
+     "t": "Una mattina tipica",
+     "g": "Confronta colazioni, spostamenti e routine mattutine nel mondo.",
+     "p": [
+      "Alcuni si alzano all'alba, altri più tardi; clima e lavoro scandiscono il ritmo.",
+      "La mattina può essere una camminata verso la scuola, un treno affollato o un breve tragitto verso la fattoria.",
+      "Piccoli rituali, come un tè, lo stretching o una chiacchierata in famiglia, aprono la giornata."
+     ],
+     "q": "Com'è una tua mattina tipica, passo dopo passo?",
+     "c": "Descrivi la tua mattina in quattro brevi passi e condividila."
+    },
+    "pt": {
+     "t": "Uma manhã típica",
+     "g": "Compara pequenos-almoços, trajetos e rotinas matinais pelo mundo.",
+     "p": [
+      "Alguns acordam ao amanhecer, outros mais tarde; o clima e o trabalho ditam o ritmo.",
+      "A manhã pode ser uma caminhada até à escola, um comboio cheio ou um passeio curto até à quinta.",
+      "Pequenos rituais, como um chá, espreguiçar-se ou conversar em família, marcam o início do dia."
+     ],
+     "q": "Como é uma manhã típica para ti, passo a passo?",
+     "c": "Descreve a tua manhã em quatro passos curtos e partilha."
+    },
+    "pt_BR": {
+     "t": "Uma manhã típica",
+     "g": "Compare cafés da manhã, trajetos e rotinas matinais pelo mundo.",
+     "p": [
+      "Alguns acordam ao amanhecer, outros mais tarde; o clima e o trabalho ditam o ritmo.",
+      "A manhã pode ser uma caminhada até a escola, um trem lotado ou um passeio curto até o sítio.",
+      "Pequenos rituais, como um chá, se espreguiçar ou conversar em família, marcam o início do dia."
+     ],
+     "q": "Como é uma manhã típica para você, passo a passo?",
+     "c": "Descreva sua manhã em quatro passos curtos e compartilhe."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Breakfast around the world",
+     "g": "Taste a tour from rice and miso soup to toast, arepas and pastries.",
+     "p": [
+      "Many people in Japan enjoy rice, miso soup and fish; many in Venezuela and Colombia eat arepas.",
+      "Toast and jam, croissants, porridge and cheese plates are common elsewhere.",
+      "Some breakfasts are sweet, some savoury, and some are just coffee."
+     ],
+     "q": "What do you usually eat for breakfast, and would you try a very different one?",
+     "c": "Try a new breakfast item today, or look up a recipe from another country."
+    },
+    "de": {
+     "t": "Frühstück weltweit",
+     "g": "Mache eine Reise von Reis und Misosuppe bis zu Toast, Arepas und Gebäck.",
+     "p": [
+      "Viele in Japan essen Reis, Misosuppe und Fisch; viele in Venezuela und Kolumbien Arepas.",
+      "Toast mit Marmelade, Croissants, Porridge und Käseplatten sind anderswo üblich.",
+      "Manche Frühstücke sind süß, manche herzhaft, manche nur Kaffee."
+     ],
+     "q": "Was isst du zum Frühstück, und würdest du ein ganz anderes probieren?",
+     "c": "Probiere heute etwas Neues zum Frühstück oder suche ein Rezept aus einem anderen Land."
+    },
+    "es": {
+     "t": "Desayunos del mundo",
+     "g": "Haz un recorrido de arroz y sopa de miso a tostadas, arepas y bollería.",
+     "p": [
+      "Mucha gente en Japón desayuna arroz, sopa de miso y pescado; en Venezuela y Colombia, arepas.",
+      "Tostadas con mermelada, croissants, avena y platos de queso son comunes en otros sitios.",
+      "Algunos desayunos son dulces, otros salados y otros solo café."
+     ],
+     "q": "¿Qué sueles desayunar y probarías uno muy distinto?",
+     "c": "Prueba hoy algo nuevo para desayunar o busca una receta de otro país."
+    },
+    "fr": {
+     "t": "Petits-déjeuners du monde",
+     "g": "Fais un tour du riz et de la soupe miso aux tartines, arepas et viennoiseries.",
+     "p": [
+      "Beaucoup de Japonais mangent riz, soupe miso et poisson; en Colombie et au Venezuela, des arepas.",
+      "Tartines et confiture, croissants, porridge et plateaux de fromage sont courants ailleurs.",
+      "Certains petits-déjeuners sont sucrés, d'autres salés, d'autres juste un café."
+     ],
+     "q": "Que manges-tu au petit-déjeuner, et en essaierais-tu un très différent ?",
+     "c": "Goûte un nouveau petit-déjeuner aujourd'hui ou cherche une recette d'un autre pays."
+    },
+    "it": {
+     "t": "Colazioni nel mondo",
+     "g": "Fai un viaggio da riso e zuppa di miso a toast, arepas e dolci.",
+     "p": [
+      "Molti in Giappone mangiano riso, zuppa di miso e pesce; molti in Venezuela e Colombia, arepas.",
+      "Pane tostato e marmellata, cornetti, porridge e piatti di formaggi sono comuni altrove.",
+      "Alcune colazioni sono dolci, altre salate, altre solo un caffè."
+     ],
+     "q": "Che cosa mangi di solito a colazione e ne proveresti una molto diversa?",
+     "c": "Prova oggi qualcosa di nuovo a colazione o cerca una ricetta di un altro paese."
+    },
+    "pt": {
+     "t": "Pequenos-almoços pelo mundo",
+     "g": "Faz uma viagem do arroz e sopa de miso até torradas, arepas e pastelaria.",
+     "p": [
+      "Muitos no Japão comem arroz, sopa de miso e peixe; muitos na Venezuela e Colômbia, arepas.",
+      "Torradas com doce, croissants, papas de aveia e tábuas de queijo são comuns noutros sítios.",
+      "Alguns pequenos-almoços são doces, outros salgados, outros só café."
+     ],
+     "q": "O que costumas comer ao pequeno-almoço e experimentarias um bem diferente?",
+     "c": "Experimenta hoje algo novo ao pequeno-almoço ou procura uma receita de outro país."
+    },
+    "pt_BR": {
+     "t": "Café da manhã pelo mundo",
+     "g": "Faça uma viagem do arroz e sopa de missô até torradas, arepas e pães doces.",
+     "p": [
+      "Muitos no Japão comem arroz, sopa de missô e peixe; muitos na Venezuela e Colômbia, arepas.",
+      "Torrada com geleia, croissants, mingau e tábuas de queijo são comuns em outros lugares.",
+      "Alguns cafés da manhã são doces, outros salgados, outros só café."
+     ],
+     "q": "O que você costuma comer no café da manhã e experimentaria um bem diferente?",
+     "c": "Experimente hoje algo novo no café da manhã ou procure uma receita de outro país."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mealtimes and meal sizes",
+     "g": "Find out when people eat lunch and dinner and which meal is the biggest.",
+     "p": [
+      "In Spain and parts of Latin America, dinner is often late in the evening.",
+      "In many places lunch is the main meal, while elsewhere dinner is.",
+      "Snacks, tea breaks and small bites can fill the gaps between meals."
+     ],
+     "q": "When do you eat your main meal of the day, and with whom?",
+     "c": "Note your mealtimes today and compare them with a friend's."
+    },
+    "de": {
+     "t": "Essenszeiten und Mahlzeiten",
+     "g": "Erfahre, wann man zu Mittag und zu Abend isst und welche Mahlzeit die größte ist.",
+     "p": [
+      "In Spanien und Teilen Lateinamerikas isst man oft spät am Abend.",
+      "Vielerorts ist das Mittagessen die Hauptmahlzeit, anderswo das Abendessen.",
+      "Snacks, Teepausen und Häppchen füllen die Lücken zwischen den Mahlzeiten."
+     ],
+     "q": "Wann isst du deine Hauptmahlzeit, und mit wem?",
+     "c": "Notiere heute deine Essenszeiten und vergleiche sie mit denen eines Freundes."
+    },
+    "es": {
+     "t": "Horarios y tamaño de las comidas",
+     "g": "Descubre cuándo se almuerza y se cena y cuál es la comida más grande.",
+     "p": [
+      "En España y partes de Latinoamérica la cena suele ser tarde por la noche.",
+      "En muchos lugares el almuerzo es la comida principal; en otros, la cena.",
+      "Los tentempiés y las pausas para el té llenan los huecos entre comidas."
+     ],
+     "q": "¿A qué hora haces tu comida principal y con quién?",
+     "c": "Anota tus horarios de comida hoy y compáralos con los de un amigo."
+    },
+    "fr": {
+     "t": "Horaires et taille des repas",
+     "g": "Découvre quand on déjeune et dîne et quel repas est le plus copieux.",
+     "p": [
+      "En Espagne et dans certaines régions d'Amérique latine, on dîne souvent tard le soir.",
+      "Dans beaucoup d'endroits le déjeuner est le repas principal, ailleurs le dîner.",
+      "Collations, pauses thé et petites bouchées comblent l'intervalle entre les repas."
+     ],
+     "q": "À quelle heure prends-tu ton repas principal, et avec qui ?",
+     "c": "Note tes horaires de repas aujourd'hui et compare-les avec ceux d'un ami."
+    },
+    "it": {
+     "t": "Orari e dimensioni dei pasti",
+     "g": "Scopri quando si pranza e si cena e quale pasto è il più abbondante.",
+     "p": [
+      "In Spagna e in parti dell'America Latina la cena è spesso a tarda sera.",
+      "In molti luoghi il pranzo è il pasto principale, altrove lo è la cena.",
+      "Spuntini, pause tè e bocconcini riempiono gli spazi tra i pasti."
+     ],
+     "q": "A che ora fai il pasto principale della giornata e con chi?",
+     "c": "Annota oggi i tuoi orari dei pasti e confrontali con quelli di un amico."
+    },
+    "pt": {
+     "t": "Horários e tamanho das refeições",
+     "g": "Descobre quando se almoça e janta e qual é a refeição maior.",
+     "p": [
+      "Em Espanha e partes da América Latina, o jantar costuma ser tarde à noite.",
+      "Em muitos lugares o almoço é a refeição principal, noutros é o jantar.",
+      "Lanches, pausas para chá e petiscos preenchem os intervalos entre refeições."
+     ],
+     "q": "A que horas fazes a refeição principal do dia e com quem?",
+     "c": "Anota hoje os teus horários de refeição e compara-os com os de um amigo."
+    },
+    "pt_BR": {
+     "t": "Horários e tamanho das refeições",
+     "g": "Descubra quando se almoça e janta e qual é a refeição maior.",
+     "p": [
+      "Na Espanha e em partes da América Latina, o jantar costuma ser tarde da noite.",
+      "Em muitos lugares o almoço é a refeição principal, em outros é o jantar.",
+      "Lanches, pausas para o chá e petiscos preenchem os intervalos entre as refeições."
+     ],
+     "q": "A que horas você faz a refeição principal do dia e com quem?",
+     "c": "Anote hoje seus horários de refeição e compare com os de um amigo."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Table manners",
+     "g": "Explore chopsticks, hands, forks and knives, and local etiquette at the table.",
+     "p": [
+      "Chopsticks are common in much of East Asia; in many places people eat with their hands.",
+      "In Ethiopia a shared plate with injera is often eaten by hand, sometimes feeding each other.",
+      "Common courtesy: wait for the host, try a bit of everything and say thanks."
+     ],
+     "q": "What is a table manner you learned as a child in your home?",
+     "c": "Eat one meal today with attention to a manner you usually ignore."
+    },
+    "de": {
+     "t": "Tischmanieren",
+     "g": "Entdecke Stäbchen, Hände, Gabel und Messer und die Etikette am Tisch.",
+     "p": [
+      "Stäbchen sind in großen Teilen Ostasiens üblich; vielerorts isst man mit den Händen.",
+      "In Äthiopien isst man oft von einem gemeinsamen Teller mit Injera, mit der Hand.",
+      "Allgemeine Höflichkeit: auf die Gastgeber warten, alles probieren, danke sagen."
+     ],
+     "q": "Welche Tischsitte hast du als Kind zu Hause gelernt?",
+     "c": "Iss heute eine Mahlzeit und achte auf eine Sitte, die du sonst übersiehst."
+    },
+    "es": {
+     "t": "Modales en la mesa",
+     "g": "Explora palillos, manos, tenedores y cuchillos, y la etiqueta local en la mesa.",
+     "p": [
+      "Los palillos son comunes en buena parte de Asia oriental; en muchos sitios se come con las manos.",
+      "En Etiopía suele comerse con la mano de un plato compartido con injera.",
+      "Cortesía común: espera al anfitrión, prueba un poco de todo y da las gracias."
+     ],
+     "q": "¿Qué norma de mesa aprendiste de niño en tu casa?",
+     "c": "Haz hoy una comida prestando atención a una norma que sueles pasar por alto."
+    },
+    "fr": {
+     "t": "Manières de table",
+     "g": "Explore baguettes, mains, fourchettes et couteaux, et l'étiquette locale à table.",
+     "p": [
+      "Les baguettes sont courantes dans une grande partie de l'Asie de l'Est; ailleurs on mange avec les mains.",
+      "En Éthiopie, on mange souvent avec la main dans un plat commun avec de l'injera.",
+      "Politesse courante : attendre l'hôte, goûter un peu de tout et remercier."
+     ],
+     "q": "Quelle règle de table as-tu apprise enfant chez toi ?",
+     "c": "Prends un repas aujourd'hui en prêtant attention à une règle que tu ignores d'habitude."
+    },
+    "it": {
+     "t": "Buone maniere a tavola",
+     "g": "Esplora bacchette, mani, forchette e coltelli, e l'etichetta locale a tavola.",
+     "p": [
+      "Le bacchette sono comuni in gran parte dell'Asia orientale; in molti luoghi si mangia con le mani.",
+      "In Etiopia si mangia spesso con le mani da un piatto comune con l'injera.",
+      "Cortesia comune: aspetta chi ospita, assaggia un po' di tutto e ringrazia."
+     ],
+     "q": "Quale regola a tavola hai imparato da bambino a casa tua?",
+     "c": "Fai oggi un pasto prestando attenzione a una regola che di solito trascuri."
+    },
+    "pt": {
+     "t": "Boas maneiras à mesa",
+     "g": "Explora pauzinhos, mãos, garfos e facas, e a etiqueta local à mesa.",
+     "p": [
+      "Os pauzinhos são comuns em grande parte da Ásia Oriental; em muitos lugares come-se com as mãos.",
+      "Na Etiópia come-se muitas vezes à mão de um prato partilhado com injera.",
+      "Cortesia comum: espera pelo anfitrião, prova um pouco de tudo e agradece."
+     ],
+     "q": "Que regra à mesa aprendeste em criança em tua casa?",
+     "c": "Faz hoje uma refeição atento a uma regra que costumas ignorar."
+    },
+    "pt_BR": {
+     "t": "Boas maneiras à mesa",
+     "g": "Explore hashis, mãos, garfos e facas, e a etiqueta local à mesa.",
+     "p": [
+      "Os hashis são comuns em boa parte da Ásia Oriental; em muitos lugares se come com as mãos.",
+      "Na Etiópia se come muitas vezes com a mão de um prato compartilhado com injera.",
+      "Cortesia comum: espere o anfitrião, prove um pouco de tudo e agradeça."
+     ],
+     "q": "Que regra à mesa você aprendeu na infância em sua casa?",
+     "c": "Faça hoje uma refeição atento a uma regra que você costuma ignorar."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Street food culture",
+     "g": "Discover snacks sold on streets and in markets, and why people love them.",
+     "p": [
+      "Think of tacos in Mexico, pad thai in Thailand, falafel in the Middle East and pretzels in Germany.",
+      "Street food is often fresh, affordable and a way to meet neighbours.",
+      "Stalls usually specialise in one dish they have perfected over years."
+     ],
+     "q": "What is the best snack you have ever bought from a street stall or market?",
+     "c": "Try or look up one street food from another country and describe it."
+    },
+    "de": {
+     "t": "Straßenessen-Kultur",
+     "g": "Entdecke Snacks von Straße und Markt und warum Menschen sie lieben.",
+     "p": [
+      "Denk an Tacos in Mexiko, Pad Thai in Thailand, Falafel im Nahen Osten und Brezeln in Deutschland.",
+      "Straßenessen ist oft frisch, günstig und ein Ort, um Nachbarn zu treffen.",
+      "Stände sind meist auf ein Gericht spezialisiert, das sie über Jahre perfektioniert haben."
+     ],
+     "q": "Was ist der beste Snack, den du je an einem Stand oder Markt gekauft hast?",
+     "c": "Probiere oder recherchiere ein Straßenessen aus einem anderen Land und beschreibe es."
+    },
+    "es": {
+     "t": "Cultura de la comida callejera",
+     "g": "Descubre los snacks de calles y mercados, y por qué la gente los ama.",
+     "p": [
+      "Piensa en tacos en México, pad thai en Tailandia, falafel en Oriente Medio y pretzels en Alemania.",
+      "La comida callejera suele ser fresca, económica y una forma de conocer a los vecinos.",
+      "Los puestos suelen especializarse en un plato perfeccionado durante años."
+     ],
+     "q": "¿Cuál es el mejor bocado que has comprado en un puesto callejero o mercado?",
+     "c": "Prueba o busca una comida callejera de otro país y descríbela."
+    },
+    "fr": {
+     "t": "La culture de la street food",
+     "g": "Découvre les en-cas vendus dans les rues et marchés, et pourquoi on les adore.",
+     "p": [
+      "Pense aux tacos au Mexique, au pad thaï en Thaïlande, aux falafels au Moyen-Orient et aux bretzels en Allemagne.",
+      "La street food est souvent fraîche, abordable et une occasion de croiser ses voisins.",
+      "Les étals se spécialisent en général dans un plat perfectionné au fil des ans."
+     ],
+     "q": "Quel est le meilleur en-cas que tu aies acheté sur un étal ou un marché ?",
+     "c": "Goûte ou cherche une street food d'un autre pays et décris-la."
+    },
+    "it": {
+     "t": "La cultura del cibo di strada",
+     "g": "Scopri gli snack venduti per strada e nei mercati, e perché piacciono tanto.",
+     "p": [
+      "Pensa ai tacos in Messico, al pad thai in Thailandia, ai falafel in Medio Oriente e ai pretzel in Germania.",
+      "Il cibo di strada è spesso fresco, economico e un modo per incontrare i vicini.",
+      "Le bancarelle di solito si specializzano in un piatto perfezionato negli anni."
+     ],
+     "q": "Qual è il miglior spuntino che hai mai comprato in una bancarella o al mercato?",
+     "c": "Prova o cerca un cibo di strada di un altro paese e descrivilo."
+    },
+    "pt": {
+     "t": "Cultura da comida de rua",
+     "g": "Descobre os petiscos vendidos na rua e nos mercados, e porque são tão queridos.",
+     "p": [
+      "Pensa nos tacos no México, pad thai na Tailândia, falafel no Médio Oriente e pretzels na Alemanha.",
+      "A comida de rua costuma ser fresca, barata e uma forma de conhecer os vizinhos.",
+      "As bancas costumam especializar-se num prato aperfeiçoado ao longo de anos."
+     ],
+     "q": "Qual foi o melhor petisco que já compraste numa banca de rua ou mercado?",
+     "c": "Prova ou procura uma comida de rua de outro país e descreve-a."
+    },
+    "pt_BR": {
+     "t": "Cultura da comida de rua",
+     "g": "Descubra os petiscos vendidos na rua e nos mercados, e por que são tão queridos.",
+     "p": [
+      "Pense nos tacos no México, pad thai na Tailândia, falafel no Oriente Médio e pretzels na Alemanha.",
+      "A comida de rua costuma ser fresca, barata e uma forma de conhecer os vizinhos.",
+      "As barracas costumam se especializar em um prato aperfeiçoado ao longo de anos."
+     ],
+     "q": "Qual foi o melhor petisco que você já comprou numa barraca de rua ou feira?",
+     "c": "Experimente ou pesquise uma comida de rua de outro país e descreva."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Coffee and tea rituals",
+     "g": "Look at tea ceremonies, espresso bars, chai stalls and mate gourds.",
+     "p": [
+      "In Japan the tea ceremony is a calm, careful ritual; in Italy a quick espresso at the bar is common.",
+      "Chai stalls in India and mate shared in Argentina and Uruguay are social moments.",
+      "Many people in Turkey enjoy strong coffee and tea with friends for hours."
+     ],
+     "q": "What hot drink do you love, and who do you usually share it with?",
+     "c": "Make your favourite drink today and slow down to enjoy it fully."
+    },
+    "de": {
+     "t": "Kaffee- und Teerituale",
+     "g": "Schau dir Teezeremonien, Espressobars, Chai-Stände und Mate-Gefäße an.",
+     "p": [
+      "In Japan ist die Teezeremonie ein ruhiges, sorgfältiges Ritual; in Italien ist ein schneller Espresso an der Bar üblich.",
+      "Chai-Stände in Indien und geteilter Mate in Argentinien und Uruguay sind soziale Momente.",
+      "Viele Menschen in der Türkei trinken stundenlang Kaffee und Tee mit Freunden."
+     ],
+     "q": "Welches heiße Getränk liebst du, und mit wem teilst du es meist?",
+     "c": "Mache heute dein Lieblingsgetränk und genieße es ganz in Ruhe."
+    },
+    "es": {
+     "t": "Rituales del café y el té",
+     "g": "Conoce las ceremonias del té, los bares de espresso, los puestos de chai y el mate.",
+     "p": [
+      "En Japón la ceremonia del té es un ritual calmado y cuidadoso; en Italia es común un espresso rápido en la barra.",
+      "Los puestos de chai en India y el mate compartido en Argentina y Uruguay son momentos sociales.",
+      "Muchas personas en Turquía disfrutan horas de café y té con amigos."
+     ],
+     "q": "¿Qué bebida caliente te encanta y con quién la compartes?",
+     "c": "Prepara hoy tu bebida favorita y tómate tu tiempo para disfrutarla."
+    },
+    "fr": {
+     "t": "Rituels du café et du thé",
+     "g": "Découvre cérémonies du thé, bars à espresso, stands de chaï et calebasses de maté.",
+     "p": [
+      "Au Japon la cérémonie du thé est un rituel calme et soigné; en Italie, un espresso rapide au comptoir est courant.",
+      "Les stands de chaï en Inde et le maté partagé en Argentine et en Uruguay sont des moments sociaux.",
+      "Beaucoup de gens en Turquie savourent café et thé entre amis pendant des heures."
+     ],
+     "q": "Quelle boisson chaude aimes-tu, et avec qui la partages-tu d'habitude ?",
+     "c": "Prépare ta boisson préférée aujourd'hui et prends le temps de la savourer."
+    },
+    "it": {
+     "t": "Rituali del caffè e del tè",
+     "g": "Guarda cerimonie del tè, bar dell'espresso, bancarelle di chai e zucche per il mate.",
+     "p": [
+      "In Giappone la cerimonia del tè è un rito calmo e attento; in Italia è comune un espresso veloce al banco.",
+      "Le bancarelle di chai in India e il mate condiviso in Argentina e Uruguay sono momenti sociali.",
+      "Molte persone in Turchia amano ore di caffè e tè con gli amici."
+     ],
+     "q": "Quale bevanda calda ami e con chi la condividi di solito?",
+     "c": "Prepara oggi la tua bevanda preferita e rallenta per gustarla davvero."
+    },
+    "pt": {
+     "t": "Rituais do café e do chá",
+     "g": "Conhece cerimónias do chá, bares de espresso, bancas de chai e cuias de mate.",
+     "p": [
+      "No Japão a cerimónia do chá é um ritual calmo e cuidadoso; em Itália é comum um espresso rápido ao balcão.",
+      "As bancas de chai na Índia e o mate partilhado na Argentina e no Uruguai são momentos sociais.",
+      "Muita gente na Turquia aprecia horas de café e chá com amigos."
+     ],
+     "q": "Que bebida quente adoras e com quem costumas partilhá-la?",
+     "c": "Prepara hoje a tua bebida favorita e abranda para a saborear bem."
+    },
+    "pt_BR": {
+     "t": "Rituais do café e do chá",
+     "g": "Conheça cerimônias do chá, bares de espresso, barracas de chai e cuias de mate.",
+     "p": [
+      "No Japão a cerimônia do chá é um ritual calmo e cuidadoso; na Itália é comum um espresso rápido no balcão.",
+      "As barracas de chai na Índia e o mate compartilhado na Argentina e no Uruguai são momentos sociais.",
+      "Muita gente na Turquia curte horas de café e chá com amigos."
+     ],
+     "q": "Que bebida quente você adora e com quem costuma compartilhá-la?",
+     "c": "Prepare hoje sua bebida favorita e vá com calma para saboreá-la bem."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A dish from my childhood",
+     "g": "Practise telling the story of a favourite family recipe.",
+     "p": [
+      "Food memories mix smells, people, places and special occasions.",
+      "Say who cooked it, what is inside and when your family ate it.",
+      "Sharing a recipe is a warm way to share your culture."
+     ],
+     "q": "What dish from your childhood do you still think about?",
+     "c": "Write a three-line story about a family dish and share it with me."
+    },
+    "de": {
+     "t": "Ein Gericht aus meiner Kindheit",
+     "g": "Übe, die Geschichte eines Lieblingsrezepts der Familie zu erzählen.",
+     "p": [
+      "Essenserinnerungen verbinden Gerüche, Menschen, Orte und besondere Anlässe.",
+      "Sag, wer es gekocht hat, was drin ist und wann es gegessen wurde.",
+      "Ein Rezept zu teilen ist eine herzliche Art, die eigene Kultur zu teilen."
+     ],
+     "q": "An welches Gericht aus deiner Kindheit denkst du noch heute?",
+     "c": "Schreibe drei Zeilen über ein Familiengericht und teile sie mit mir."
+    },
+    "es": {
+     "t": "Un plato de mi infancia",
+     "g": "Practica contar la historia de una receta familiar favorita.",
+     "p": [
+      "Los recuerdos de comida mezclan olores, personas, lugares y ocasiones especiales.",
+      "Cuenta quién lo cocinaba, qué lleva y cuándo lo comía tu familia.",
+      "Compartir una receta es una forma cálida de compartir tu cultura."
+     ],
+     "q": "¿Qué plato de tu infancia sigues recordando?",
+     "c": "Escribe una historia de tres líneas sobre un plato familiar y compártela conmigo."
+    },
+    "fr": {
+     "t": "Un plat de mon enfance",
+     "g": "Entraîne-toi à raconter l'histoire d'une recette de famille préférée.",
+     "p": [
+      "Les souvenirs culinaires mêlent odeurs, personnes, lieux et occasions spéciales.",
+      "Dis qui le cuisinait, ce qu'il y avait dedans et quand on le mangeait.",
+      "Partager une recette est une façon chaleureuse de partager sa culture."
+     ],
+     "q": "Quel plat de ton enfance te revient encore en mémoire ?",
+     "c": "Écris trois lignes sur un plat de famille et partage-les avec moi."
+    },
+    "it": {
+     "t": "Un piatto della mia infanzia",
+     "g": "Esercitati a raccontare la storia di una ricetta di famiglia preferita.",
+     "p": [
+      "I ricordi legati al cibo mescolano odori, persone, luoghi e occasioni speciali.",
+      "Di' chi lo cucinava, cosa c'era dentro e quando lo mangiava la famiglia.",
+      "Condividere una ricetta è un modo caloroso di condividere la tua cultura."
+     ],
+     "q": "Quale piatto della tua infanzia ricordi ancora?",
+     "c": "Scrivi tre righe su un piatto di famiglia e condividile con me."
+    },
+    "pt": {
+     "t": "Um prato da minha infância",
+     "g": "Pratica contar a história de uma receita de família favorita.",
+     "p": [
+      "As memórias de comida misturam cheiros, pessoas, lugares e ocasiões especiais.",
+      "Diz quem o cozinhava, o que leva e quando a família o comia.",
+      "Partilhar uma receita é uma forma calorosa de partilhar a tua cultura."
+     ],
+     "q": "Que prato da tua infância ainda recordas?",
+     "c": "Escreve três linhas sobre um prato de família e partilha-as comigo."
+    },
+    "pt_BR": {
+     "t": "Um prato da minha infância",
+     "g": "Pratique contar a história de uma receita de família favorita.",
+     "p": [
+      "As memórias de comida misturam cheiros, pessoas, lugares e ocasiões especiais.",
+      "Diga quem cozinhava, o que leva e quando a família comia.",
+      "Compartilhar uma receita é uma forma calorosa de compartilhar sua cultura."
+     ],
+     "q": "Que prato da sua infância você ainda lembra?",
+     "c": "Escreva três linhas sobre um prato de família e compartilhe comigo."
+    }
+   }
+  }
+ ]
+}

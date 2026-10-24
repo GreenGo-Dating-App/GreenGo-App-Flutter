@@ -1,0 +1,835 @@
+{
+ "topic": "budgeting_basics",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Grocery budget basics",
+     "g": "Set a realistic food budget based on what you really buy.",
+     "p": [
+      "Look at a few weeks of grocery receipts to see your real average, then plan from there.",
+      "Include household basics if you buy them in the same shop, or give them their own line.",
+      "Start with an honest number and lower it gently, instead of a hopeful number you cannot reach."
+     ],
+     "q": "How would you describe your usual grocery shopping: planned, spontaneous or somewhere between?",
+     "c": "Add up your grocery receipts from the last two weeks and note the weekly average."
+    },
+    "de": {
+     "t": "Grundlagen des Lebensmittelbudgets",
+     "g": "Ein realistisches Essensbudget nach dem festlegen, was du wirklich kaufst.",
+     "p": [
+      "Sieh dir Einkaufsbelege mehrerer Wochen an, um deinen echten Durchschnitt zu sehen, und plane davon aus.",
+      "Rechne Haushaltsartikel dazu, wenn du sie im selben Laden kaufst, oder gib ihnen eine eigene Zeile.",
+      "Starte mit einer ehrlichen Zahl und senke sie sanft, statt mit einer erhofften, die du nicht erreichst."
+     ],
+     "q": "Wie würdest du dein Einkaufen beschreiben: geplant, spontan oder irgendwo dazwischen?",
+     "c": "Addiere deine Lebensmittelbelege der letzten zwei Wochen und notiere den Wochendurchschnitt."
+    },
+    "es": {
+     "t": "Bases del presupuesto de comida",
+     "g": "Fijar un presupuesto de comida realista basado en lo que de verdad compras.",
+     "p": [
+      "Mira los tickets del súper de unas semanas para ver tu promedio real y planifica desde ahí.",
+      "Incluye lo básico del hogar si lo compras en la misma tienda, o dale su propia línea.",
+      "Empieza con una cifra honesta y bájala con suavidad, en vez de una cifra deseada que no alcanzas."
+     ],
+     "q": "¿Cómo describirías tu compra habitual: planificada, espontánea o algo intermedio?",
+     "c": "Suma los tickets del súper de las últimas dos semanas y anota el promedio semanal."
+    },
+    "fr": {
+     "t": "Les bases du budget courses",
+     "g": "Fixer un budget alimentaire réaliste selon ce que tu achètes vraiment.",
+     "p": [
+      "Regarde quelques semaines de tickets de courses pour voir ta vraie moyenne, puis planifie à partir de là.",
+      "Inclus l'entretien de la maison si tu l'achètes au même endroit, ou donne-lui sa propre ligne.",
+      "Pars d'un chiffre honnête et baisse-le doucement, plutôt qu'un chiffre espéré hors de portée."
+     ],
+     "q": "Comment décrirais-tu tes courses habituelles : planifiées, spontanées ou entre les deux ?",
+     "c": "Additionne tes tickets de courses des deux dernières semaines et note la moyenne hebdomadaire."
+    },
+    "it": {
+     "t": "Basi del budget per la spesa",
+     "g": "Fissare un budget alimentare realistico basato su ciò che compri davvero.",
+     "p": [
+      "Guarda gli scontrini della spesa di qualche settimana per vedere la tua media reale e pianifica da lì.",
+      "Includi le cose di casa se le compri nello stesso negozio, oppure dai loro una riga a parte.",
+      "Parti da un numero onesto e abbassalo con dolcezza, invece di uno sperato che non raggiungi."
+     ],
+     "q": "Come descriveresti la tua spesa abituale: pianificata, spontanea o via di mezzo?",
+     "c": "Somma gli scontrini della spesa delle ultime due settimane e annota la media settimanale."
+    },
+    "pt": {
+     "t": "Noções do orçamento para comida",
+     "g": "Definir um orçamento realista para comida com base no que realmente compras.",
+     "p": [
+      "Vê os talões do supermercado de algumas semanas para veres a tua média real e planeia a partir daí.",
+      "Inclui os produtos de casa se os comprares na mesma loja, ou dá-lhes uma linha própria.",
+      "Começa com um número honesto e baixa-o com jeito, em vez de um número desejado que não alcanças."
+     ],
+     "q": "Como descreverias as tuas compras habituais: planeadas, espontâneas ou algo pelo meio?",
+     "c": "Soma os talões do supermercado das últimas duas semanas e anota a média semanal."
+    },
+    "pt_BR": {
+     "t": "Noções do orçamento para comida",
+     "g": "Definir um orçamento realista para comida com base no que você realmente compra.",
+     "p": [
+      "Veja os cupons do mercado de algumas semanas para ver sua média real e planeje a partir daí.",
+      "Inclua os produtos de casa se você os compra na mesma loja, ou dê a eles uma linha própria.",
+      "Comece com um número honesto e baixe com jeito, em vez de um número desejado que você não alcança."
+     ],
+     "q": "Como você descreveria suas compras habituais: planejadas, espontâneas ou no meio-termo?",
+     "c": "Some os cupons do mercado das últimas duas semanas e anote a média semanal."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Meal planning to save",
+     "g": "See how planning meals for the week reduces waste and extra trips.",
+     "p": [
+      "Planning meals means buying what you will actually cook, which cuts waste and impulse buys.",
+      "Start small: plan just four dinners and leave room for leftovers and one flexible night.",
+      "Pick meals that share ingredients, so one purchase works in several recipes."
+     ],
+     "q": "What is a simple meal you enjoy that you could cook twice this week?",
+     "c": "Plan four dinners for the coming week and write the ingredients you need."
+    },
+    "de": {
+     "t": "Essensplanung zum Sparen",
+     "g": "Sehen, wie Wochenplanung der Mahlzeiten Verschwendung und Extrawege reduziert.",
+     "p": [
+      "Essen zu planen heißt, zu kaufen, was du wirklich kochst, was Verschwendung und Spontankäufe senkt.",
+      "Fang klein an: Plane nur vier Abendessen und lass Platz für Reste und einen flexiblen Abend.",
+      "Wähle Gerichte mit gemeinsamen Zutaten, damit ein Einkauf für mehrere Rezepte reicht."
+     ],
+     "q": "Welches einfache Gericht magst du, das du diese Woche zweimal kochen könntest?",
+     "c": "Plane vier Abendessen für die kommende Woche und schreibe die nötigen Zutaten auf."
+    },
+    "es": {
+     "t": "Planificar comidas para ahorrar",
+     "g": "Ver cómo planificar las comidas de la semana reduce desperdicio y viajes extra.",
+     "p": [
+      "Planificar comidas es comprar lo que de verdad cocinarás, lo que reduce desperdicio y compras impulsivas.",
+      "Empieza pequeño: planifica solo cuatro cenas y deja hueco para sobras y una noche flexible.",
+      "Elige platos que compartan ingredientes, para que una compra sirva en varias recetas."
+     ],
+     "q": "¿Qué plato sencillo te gusta que podrías cocinar dos veces esta semana?",
+     "c": "Planifica cuatro cenas de la semana que viene y anota los ingredientes que necesitas."
+    },
+    "fr": {
+     "t": "Planifier ses repas pour économiser",
+     "g": "Voir comment planifier les repas de la semaine réduit le gaspillage et les trajets en plus.",
+     "p": [
+      "Planifier, c'est acheter ce que tu cuisineras vraiment, ce qui réduit gaspillage et achats impulsifs.",
+      "Commence petit : planifie seulement quatre dîners et garde de la place pour les restes et un soir libre.",
+      "Choisis des plats aux ingrédients communs, pour qu'un achat serve à plusieurs recettes."
+     ],
+     "q": "Quel plat simple que tu aimes pourrais-tu cuisiner deux fois cette semaine ?",
+     "c": "Planifie quatre dîners pour la semaine à venir et écris les ingrédients nécessaires."
+    },
+    "it": {
+     "t": "Pianificare i pasti per risparmiare",
+     "g": "Vedere come pianificare i pasti della settimana riduce sprechi e viaggi extra.",
+     "p": [
+      "Pianificare i pasti significa comprare ciò che cucinerai davvero, riducendo sprechi e acquisti d'impulso.",
+      "Parti piccolo: pianifica solo quattro cene e lascia spazio ad avanzi e a una sera libera.",
+      "Scegli piatti con ingredienti in comune, così un acquisto serve per più ricette."
+     ],
+     "q": "Quale piatto semplice che ti piace potresti cucinare due volte questa settimana?",
+     "c": "Pianifica quattro cene per la settimana prossima e scrivi gli ingredienti che servono."
+    },
+    "pt": {
+     "t": "Planear refeições para poupar",
+     "g": "Ver como planear as refeições da semana reduz desperdício e idas extra às compras.",
+     "p": [
+      "Planear refeições é comprar o que vais mesmo cozinhar, o que reduz desperdício e compras por impulso.",
+      "Começa pequeno: planeia só quatro jantares e deixa espaço para sobras e uma noite flexível.",
+      "Escolhe pratos que partilhem ingredientes, para uma compra servir em várias receitas."
+     ],
+     "q": "Que prato simples de que gostas podias cozinhar duas vezes esta semana?",
+     "c": "Planeia quatro jantares para a próxima semana e escreve os ingredientes de que precisas."
+    },
+    "pt_BR": {
+     "t": "Planejar refeições para economizar",
+     "g": "Ver como planejar as refeições da semana reduz desperdício e idas extras ao mercado.",
+     "p": [
+      "Planejar refeições é comprar o que você vai mesmo cozinhar, o que reduz desperdício e compras por impulso.",
+      "Comece pequeno: planeje só quatro jantares e deixe espaço para sobras e uma noite flexível.",
+      "Escolha pratos que compartilhem ingredientes, para uma compra servir em várias receitas."
+     ],
+     "q": "Que prato simples de que você gosta poderia cozinhar duas vezes esta semana?",
+     "c": "Planeje quatro jantares para a próxima semana e escreva os ingredientes de que precisa."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The smart shopping list",
+     "g": "Write a list by store section and stick to it.",
+     "p": [
+      "A list protects you from forgetting things and from buying things you did not need.",
+      "Group items by store section, so you walk the shop once without backtracking.",
+      "Add one small free space for a treat, so sticking to the list feels easy."
+     ],
+     "q": "Do you usually shop with a list, with a mental note, or with no plan?",
+     "c": "Write your next shopping list grouped by section, and check it before you leave."
+    },
+    "de": {
+     "t": "Die clevere Einkaufsliste",
+     "g": "Eine Liste nach Ladenbereichen schreiben und dabei bleiben.",
+     "p": [
+      "Eine Liste schützt dich davor, Dinge zu vergessen und Unnötiges zu kaufen.",
+      "Gruppiere nach Ladenbereichen, damit du den Laden einmal ohne Umwege durchgehst.",
+      "Lass eine kleine freie Zeile für eine Kleinigkeit, damit das Einhalten der Liste leichtfällt."
+     ],
+     "q": "Kaufst du meist mit Liste, mit Gedankenzettel oder ohne Plan ein?",
+     "c": "Schreibe deine nächste Einkaufsliste nach Bereichen und prüfe sie vor dem Losgehen."
+    },
+    "es": {
+     "t": "La lista de la compra inteligente",
+     "g": "Escribir la lista por secciones de la tienda y ceñirte a ella.",
+     "p": [
+      "Una lista te protege de olvidar cosas y de comprar lo que no necesitabas.",
+      "Agrupa los artículos por secciones, para recorrer la tienda una vez sin volver atrás.",
+      "Añade un pequeño hueco libre para un capricho, así seguir la lista resulta fácil."
+     ],
+     "q": "¿Sueles comprar con lista, con una nota mental o sin plan?",
+     "c": "Escribe tu próxima lista de la compra por secciones y revísala antes de salir."
+    },
+    "fr": {
+     "t": "La liste de courses futée",
+     "g": "Écrire une liste par rayon et t'y tenir.",
+     "p": [
+      "Une liste te protège des oublis et des achats dont tu n'avais pas besoin.",
+      "Groupe les articles par rayon, pour parcourir le magasin une fois sans revenir en arrière.",
+      "Ajoute une petite place libre pour une gourmandise, pour que suivre la liste soit facile."
+     ],
+     "q": "Fais-tu d'habitude tes courses avec une liste, une note mentale ou sans plan ?",
+     "c": "Écris ta prochaine liste de courses par rayon et relis-la avant de partir."
+    },
+    "it": {
+     "t": "La lista della spesa intelligente",
+     "g": "Scrivere una lista per reparto e seguirla.",
+     "p": [
+      "Una lista ti protegge dal dimenticare cose e dal comprare ciò che non serviva.",
+      "Raggruppa gli articoli per reparto, così giri il negozio una volta senza tornare indietro.",
+      "Aggiungi un piccolo spazio libero per uno sfizio, così seguire la lista è facile."
+     ],
+     "q": "Di solito fai la spesa con una lista, un appunto mentale o senza piano?",
+     "c": "Scrivi la tua prossima lista della spesa per reparti e ricontrollala prima di uscire."
+    },
+    "pt": {
+     "t": "A lista de compras inteligente",
+     "g": "Escrever a lista por secções da loja e cumpri-la.",
+     "p": [
+      "Uma lista protege-te de esqueceres coisas e de comprares o que não precisavas.",
+      "Agrupa os artigos por secções, para percorreres a loja uma vez sem voltar atrás.",
+      "Acrescenta um pequeno espaço livre para um miminho, assim cumprir a lista é fácil."
+     ],
+     "q": "Costumas fazer compras com lista, com nota mental ou sem plano?",
+     "c": "Escreve a tua próxima lista de compras por secções e confirma-a antes de sair."
+    },
+    "pt_BR": {
+     "t": "A lista de compras inteligente",
+     "g": "Escrever a lista por seções do mercado e segui-la.",
+     "p": [
+      "Uma lista protege você de esquecer coisas e de comprar o que não precisava.",
+      "Agrupe os itens por seções, para percorrer o mercado uma vez sem voltar atrás.",
+      "Acrescente um pequeno espaço livre para um mimo, assim seguir a lista é fácil."
+     ],
+     "q": "Você costuma fazer compras com lista, com anotação mental ou sem plano?",
+     "c": "Escreva sua próxima lista de compras por seções e confira antes de sair."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shopping on a full stomach",
+     "g": "Learn why hunger and tiredness make grocery bills grow.",
+     "p": [
+      "When we are hungry, everything in the shop looks tempting and our basket grows.",
+      "Eat a small snack before you shop, and avoid going when you are very tired.",
+      "If you cannot avoid it, a firm list and a small basket help you stay on track."
+     ],
+     "q": "Have you ever shopped hungry? What ended up in your basket?",
+     "c": "Eat something before your next shop and notice if the basket feels different."
+    },
+    "de": {
+     "t": "Einkaufen mit vollem Magen",
+     "g": "Verstehen, warum Hunger und Müdigkeit die Einkaufsrechnung wachsen lassen.",
+     "p": [
+      "Mit Hunger sieht im Laden alles verlockend aus und der Korb wird voller.",
+      "Iss vor dem Einkauf eine Kleinigkeit und geh nicht, wenn du sehr müde bist.",
+      "Geht es nicht anders, helfen eine feste Liste und ein kleiner Korb, auf Kurs zu bleiben."
+     ],
+     "q": "Hast du schon mal hungrig eingekauft? Was landete in deinem Korb?",
+     "c": "Iss vor dem nächsten Einkauf etwas und achte darauf, ob sich der Korb anders anfühlt."
+    },
+    "es": {
+     "t": "Comprar con el estómago lleno",
+     "g": "Entender por qué el hambre y el cansancio hacen crecer la cuenta del súper.",
+     "p": [
+      "Cuando tenemos hambre, todo en la tienda parece tentador y el carrito crece.",
+      "Come algo pequeño antes de ir y evita comprar cuando estés muy cansado.",
+      "Si no puedes evitarlo, una lista firme y una cesta pequeña ayudan a mantener el rumbo."
+     ],
+     "q": "¿Alguna vez compraste con hambre? ¿Qué acabó en tu cesta?",
+     "c": "Come algo antes de tu próxima compra y fíjate si la cesta se siente distinta."
+    },
+    "fr": {
+     "t": "Faire les courses le ventre plein",
+     "g": "Comprendre pourquoi la faim et la fatigue font grossir la facture des courses.",
+     "p": [
+      "Quand on a faim, tout paraît tentant dans le magasin et le panier se remplit.",
+      "Mange une petite collation avant d'y aller, et évite d'y aller très fatigué.",
+      "Si c'est inévitable, une liste ferme et un petit panier aident à rester dans les clous."
+     ],
+     "q": "As-tu déjà fait les courses affamé ? Qu'est-ce qui a fini dans ton panier ?",
+     "c": "Mange quelque chose avant tes prochaines courses et vois si le panier te semble différent."
+    },
+    "it": {
+     "t": "Fare la spesa a stomaco pieno",
+     "g": "Capire perché fame e stanchezza fanno crescere il conto della spesa.",
+     "p": [
+      "Quando abbiamo fame, tutto nel negozio sembra invitante e il carrello cresce.",
+      "Mangia uno spuntino prima di andare e evita di andarci molto stanco.",
+      "Se non puoi evitarlo, una lista ferma e un cestino piccolo aiutano a restare in carreggiata."
+     ],
+     "q": "Hai mai fatto la spesa affamato? Cosa è finito nel tuo carrello?",
+     "c": "Mangia qualcosa prima della prossima spesa e nota se il carrello ti sembra diverso."
+    },
+    "pt": {
+     "t": "Fazer compras de barriga cheia",
+     "g": "Perceber porque a fome e o cansaço fazem crescer a conta das compras.",
+     "p": [
+      "Quando temos fome, tudo na loja parece tentador e o cesto enche-se.",
+      "Come um pequeno lanche antes de ir e evita ir quando estás muito cansado.",
+      "Se não puderes evitar, uma lista firme e um cesto pequeno ajudam a manter o rumo."
+     ],
+     "q": "Já fizeste compras com fome? O que acabou no teu cesto?",
+     "c": "Come algo antes das próximas compras e repara se o cesto parece diferente."
+    },
+    "pt_BR": {
+     "t": "Fazer compras de barriga cheia",
+     "g": "Entender por que a fome e o cansaço fazem a conta do mercado crescer.",
+     "p": [
+      "Quando estamos com fome, tudo no mercado parece tentador e o carrinho enche.",
+      "Coma um lanchinho antes de ir e evite ir quando estiver muito cansado.",
+      "Se não der para evitar, uma lista firme e uma cesta pequena ajudam a manter o rumo."
+     ],
+     "q": "Você já fez compras com fome? O que acabou no seu carrinho?",
+     "c": "Coma algo antes das próximas compras e repare se o carrinho parece diferente."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Comparing unit prices",
+     "g": "Read the price per kilo or litre to find the better deal.",
+     "p": [
+      "The unit price, shown per kilo, litre or item, lets you compare different pack sizes fairly.",
+      "A bigger pack is not always cheaper per unit, so check the small label on the shelf.",
+      "If you have no label, divide the price by the weight or amount on the pack."
+     ],
+     "q": "Do you check unit prices when you shop, or go by the pack price?",
+     "c": "Compare the unit prices of two similar products next time you shop."
+    },
+    "de": {
+     "t": "Grundpreise vergleichen",
+     "g": "Den Preis pro Kilo oder Liter lesen, um das bessere Angebot zu finden.",
+     "p": [
+      "Der Grundpreis pro Kilo, Liter oder Stück erlaubt einen fairen Vergleich verschiedener Packungsgrößen.",
+      "Eine größere Packung ist nicht immer günstiger je Einheit, also prüfe das kleine Schild am Regal.",
+      "Gibt es kein Schild, teile den Preis durch Gewicht oder Menge der Packung."
+     ],
+     "q": "Prüfst du Grundpreise beim Einkaufen oder gehst du nach dem Packungspreis?",
+     "c": "Vergleiche beim nächsten Einkauf die Grundpreise zweier ähnlicher Produkte."
+    },
+    "es": {
+     "t": "Comparar precios por unidad",
+     "g": "Leer el precio por kilo o litro para encontrar la mejor oferta.",
+     "p": [
+      "El precio por unidad, mostrado por kilo, litro o pieza, permite comparar tamaños distintos con justicia.",
+      "Un envase grande no siempre es más barato por unidad, así que mira la etiqueta pequeña del estante.",
+      "Si no hay etiqueta, divide el precio entre el peso o la cantidad del envase."
+     ],
+     "q": "¿Miras los precios por unidad al comprar o te guías por el precio del envase?",
+     "c": "Compara los precios por unidad de dos productos parecidos en tu próxima compra."
+    },
+    "fr": {
+     "t": "Comparer les prix au kilo",
+     "g": "Lire le prix au kilo ou au litre pour trouver la meilleure affaire.",
+     "p": [
+      "Le prix à l'unité, au kilo ou au litre, permet de comparer équitablement des formats différents.",
+      "Un grand format n'est pas toujours moins cher à l'unité, alors regarde la petite étiquette du rayon.",
+      "Sans étiquette, divise le prix par le poids ou la quantité du paquet."
+     ],
+     "q": "Regardes-tu le prix au kilo en faisant tes courses, ou le prix du paquet ?",
+     "c": "Compare le prix à l'unité de deux produits similaires lors de tes prochaines courses."
+    },
+    "it": {
+     "t": "Confrontare i prezzi al chilo",
+     "g": "Leggere il prezzo al chilo o al litro per trovare l'offerta migliore.",
+     "p": [
+      "Il prezzo unitario, al chilo, al litro o al pezzo, permette di confrontare formati diversi in modo equo.",
+      "Una confezione grande non è sempre più economica per unità, quindi guarda l'etichetta piccola sullo scaffale.",
+      "Se manca l'etichetta, dividi il prezzo per il peso o la quantità della confezione."
+     ],
+     "q": "Guardi i prezzi unitari quando fai la spesa o ti fidi del prezzo della confezione?",
+     "c": "Confronta i prezzi unitari di due prodotti simili alla prossima spesa."
+    },
+    "pt": {
+     "t": "Comparar preços por unidade",
+     "g": "Ler o preço por quilo ou litro para encontrar a melhor oferta.",
+     "p": [
+      "O preço por unidade, indicado por quilo, litro ou peça, permite comparar tamanhos diferentes com justiça.",
+      "Uma embalagem maior nem sempre é mais barata por unidade, por isso vê a etiqueta pequena da prateleira.",
+      "Se não houver etiqueta, divide o preço pelo peso ou quantidade da embalagem."
+     ],
+     "q": "Olhas para os preços por unidade quando fazes compras ou guias-te pelo preço da embalagem?",
+     "c": "Compara os preços por unidade de dois produtos parecidos nas próximas compras."
+    },
+    "pt_BR": {
+     "t": "Comparar preços por unidade",
+     "g": "Ler o preço por quilo ou litro para encontrar a melhor oferta.",
+     "p": [
+      "O preço por unidade, indicado por quilo, litro ou peça, permite comparar tamanhos diferentes com justiça.",
+      "Uma embalagem maior nem sempre é mais barata por unidade, então veja a etiqueta pequena da prateleira.",
+      "Se não houver etiqueta, divida o preço pelo peso ou quantidade da embalagem."
+     ],
+     "q": "Você olha os preços por unidade ao comprar ou se guia pelo preço da embalagem?",
+     "c": "Compare os preços por unidade de dois produtos parecidos nas próximas compras."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Store brands worth trying",
+     "g": "Test own-brand products to find good value swaps.",
+     "p": [
+      "Store brands are often made to similar standards and cost less than famous names.",
+      "Swap one product at a time, and keep it only if you are happy with the taste.",
+      "Basics like pasta, rice, flour or canned goods are easy places to start."
+     ],
+     "q": "Is there a product where you always buy the famous brand, and why?",
+     "c": "Try one store-brand swap this week and rate it honestly."
+    },
+    "de": {
+     "t": "Eigenmarken, die sich lohnen",
+     "g": "Eigenmarken testen, um gute Preis-Leistungs-Tausche zu finden.",
+     "p": [
+      "Eigenmarken werden oft nach ähnlichen Standards gemacht und kosten weniger als bekannte Namen.",
+      "Tausche ein Produkt nach dem anderen und behalte es nur, wenn dir der Geschmack passt.",
+      "Basics wie Nudeln, Reis, Mehl oder Konserven sind leichte Startpunkte."
+     ],
+     "q": "Gibt es ein Produkt, bei dem du immer die bekannte Marke kaufst, und warum?",
+     "c": "Probiere diese Woche einen Eigenmarken-Tausch und bewerte ihn ehrlich."
+    },
+    "es": {
+     "t": "Marcas blancas que merecen la pena",
+     "g": "Probar productos de marca propia para encontrar cambios con buena relación calidad-precio.",
+     "p": [
+      "Las marcas blancas suelen fabricarse con estándares parecidos y cuestan menos que los nombres famosos.",
+      "Cambia un producto cada vez y quédate con él solo si te gusta el sabor.",
+      "Básicos como pasta, arroz, harina o conservas son buenos puntos de partida."
+     ],
+     "q": "¿Hay algún producto en el que siempre compras la marca famosa, y por qué?",
+     "c": "Prueba un cambio a marca blanca esta semana y valóralo con honestidad."
+    },
+    "fr": {
+     "t": "Les marques de distributeur à essayer",
+     "g": "Tester les produits de marque propre pour trouver de bons échanges.",
+     "p": [
+      "Les marques de distributeur sont souvent faites selon des normes proches et coûtent moins que les grandes marques.",
+      "Change un produit à la fois, et garde-le seulement si le goût te convient.",
+      "Les basiques comme pâtes, riz, farine ou conserves sont faciles pour commencer."
+     ],
+     "q": "Y a-t-il un produit où tu achètes toujours la grande marque, et pourquoi ?",
+     "c": "Essaie un échange vers une marque de distributeur cette semaine et note-le honnêtement."
+    },
+    "it": {
+     "t": "Marchi del distributore da provare",
+     "g": "Provare i prodotti a marchio proprio per trovare buoni scambi qualità-prezzo.",
+     "p": [
+      "I marchi del distributore sono spesso fatti con standard simili e costano meno dei nomi famosi.",
+      "Cambia un prodotto alla volta e tienilo solo se il gusto ti soddisfa.",
+      "Basi come pasta, riso, farina o scatolame sono facili punti di partenza."
+     ],
+     "q": "C'è un prodotto per cui compri sempre la marca famosa, e perché?",
+     "c": "Prova questa settimana uno scambio con un marchio del distributore e valutalo con onestà."
+    },
+    "pt": {
+     "t": "Marcas brancas que valem a pena",
+     "g": "Testar produtos de marca própria para encontrar boas trocas de preço-qualidade.",
+     "p": [
+      "As marcas brancas costumam ser feitas com padrões semelhantes e custam menos do que os nomes famosos.",
+      "Troca um produto de cada vez e mantém-no só se o sabor te agradar.",
+      "Básicos como massa, arroz, farinha ou conservas são bons pontos de partida."
+     ],
+     "q": "Há algum produto em que compras sempre a marca famosa, e porquê?",
+     "c": "Experimenta uma troca por marca branca esta semana e avalia-a com honestidade."
+    },
+    "pt_BR": {
+     "t": "Marcas próprias que valem a pena",
+     "g": "Testar produtos de marca própria para encontrar boas trocas de custo-benefício.",
+     "p": [
+      "As marcas próprias costumam seguir padrões semelhantes e custam menos do que os nomes famosos.",
+      "Troque um produto de cada vez e mantenha só se o sabor agradar.",
+      "Básicos como macarrão, arroz, farinha ou enlatados são bons pontos de partida."
+     ],
+     "q": "Tem algum produto em que você sempre compra a marca famosa, e por quê?",
+     "c": "Teste uma troca por marca própria esta semana e avalie com honestidade."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Seasonal fruit and vegetables",
+     "g": "Buy what is in season for better taste and better prices.",
+     "p": [
+      "Produce in season is usually fresher, tastier and often cheaper than out-of-season items.",
+      "Learn two or three fruits and vegetables that are in season where you live.",
+      "Frozen produce can also be a cheap, nutritious choice when fresh is out of season."
+     ],
+     "q": "What is your favourite fruit or vegetable, and when is it at its best?",
+     "c": "Pick one in-season fruit or vegetable and build a meal around it."
+    },
+    "de": {
+     "t": "Saisonales Obst und Gemüse",
+     "g": "Kaufen, was Saison hat, für besseren Geschmack und bessere Preise.",
+     "p": [
+      "Saisonware ist meist frischer, schmackhafter und oft günstiger als Ware außerhalb der Saison.",
+      "Lerne zwei oder drei Obst- und Gemüsesorten kennen, die bei dir gerade Saison haben.",
+      "Tiefkühlware kann ebenfalls eine günstige, nahrhafte Wahl sein, wenn frisch keine Saison hat."
+     ],
+     "q": "Was ist dein Lieblingsobst oder -gemüse und wann ist es am besten?",
+     "c": "Wähle ein saisonales Obst oder Gemüse und baue ein Gericht darum."
+    },
+    "es": {
+     "t": "Frutas y verduras de temporada",
+     "g": "Comprar lo que está de temporada para mejor sabor y mejores precios.",
+     "p": [
+      "Los productos de temporada suelen ser más frescos, sabrosos y a menudo más baratos que los de fuera de temporada.",
+      "Aprende dos o tres frutas y verduras que estén de temporada donde vives.",
+      "Lo congelado también puede ser una opción barata y nutritiva cuando lo fresco no está de temporada."
+     ],
+     "q": "¿Cuál es tu fruta o verdura favorita y cuándo está en su mejor momento?",
+     "c": "Elige una fruta o verdura de temporada y prepara una comida alrededor de ella."
+    },
+    "fr": {
+     "t": "Fruits et légumes de saison",
+     "g": "Acheter ce qui est de saison pour un meilleur goût et de meilleurs prix.",
+     "p": [
+      "Les produits de saison sont en général plus frais, plus savoureux et souvent moins chers.",
+      "Apprends deux ou trois fruits et légumes de saison là où tu vis.",
+      "Les surgelés peuvent aussi être un choix économique et nourrissant quand le frais est hors saison."
+     ],
+     "q": "Quel est ton fruit ou légume préféré, et quand est-il à son meilleur ?",
+     "c": "Choisis un fruit ou légume de saison et construis un repas autour."
+    },
+    "it": {
+     "t": "Frutta e verdura di stagione",
+     "g": "Comprare ciò che è di stagione per più gusto e prezzi migliori.",
+     "p": [
+      "I prodotti di stagione sono di solito più freschi, più saporiti e spesso più economici di quelli fuori stagione.",
+      "Impara due o tre frutti e verdure di stagione dove vivi.",
+      "Anche il surgelato può essere una scelta economica e nutriente quando il fresco è fuori stagione."
+     ],
+     "q": "Qual è la tua frutta o verdura preferita e quando è al meglio?",
+     "c": "Scegli un frutto o una verdura di stagione e costruisci un pasto intorno a lei."
+    },
+    "pt": {
+     "t": "Frutas e legumes da época",
+     "g": "Comprar o que está na época para melhor sabor e melhores preços.",
+     "p": [
+      "Os produtos da época costumam ser mais frescos, saborosos e muitas vezes mais baratos do que os fora de época.",
+      "Aprende duas ou três frutas e legumes que estão na época onde vives.",
+      "Os congelados também podem ser uma escolha barata e nutritiva quando o fresco está fora de época."
+     ],
+     "q": "Qual é a tua fruta ou legume preferido e quando está no seu melhor?",
+     "c": "Escolhe uma fruta ou legume da época e constrói uma refeição à volta dele."
+    },
+    "pt_BR": {
+     "t": "Frutas e legumes da estação",
+     "g": "Comprar o que está na estação para melhor sabor e melhores preços.",
+     "p": [
+      "Os produtos da estação costumam ser mais frescos, saborosos e muitas vezes mais baratos do que os fora de estação.",
+      "Aprenda duas ou três frutas e legumes que estão na estação onde você mora.",
+      "Os congelados também podem ser uma escolha barata e nutritiva quando o fresco está fora de estação."
+     ],
+     "q": "Qual é a sua fruta ou legume preferido e quando ele está no auge?",
+     "c": "Escolha uma fruta ou legume da estação e monte uma refeição em torno dele."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cooking in batches",
+     "g": "Make bigger portions to save time, energy and money.",
+     "p": [
+      "Cooking a big pot once is cheaper and quicker than cooking small meals many times.",
+      "Soups, stews, sauces and grains are great for batches and freeze well.",
+      "Label containers with the date, so nothing gets lost in the freezer."
+     ],
+     "q": "What dish could you cook in a double portion without getting bored of it?",
+     "c": "Cook a double portion of one dish this week and store the extra for later."
+    },
+    "de": {
+     "t": "In Mengen vorkochen",
+     "g": "Größere Portionen kochen, um Zeit, Energie und Geld zu sparen.",
+     "p": [
+      "Einmal einen großen Topf zu kochen ist günstiger und schneller als oft kleine Mahlzeiten.",
+      "Suppen, Eintöpfe, Soßen und Getreide eignen sich gut für Vorrat und lassen sich einfrieren.",
+      "Beschrifte Behälter mit dem Datum, damit im Gefrierfach nichts verloren geht."
+     ],
+     "q": "Welches Gericht könntest du doppelt kochen, ohne dass es dir langweilig wird?",
+     "c": "Koche diese Woche eine doppelte Portion eines Gerichts und bewahre den Rest für später auf."
+    },
+    "es": {
+     "t": "Cocinar en tandas",
+     "g": "Hacer porciones más grandes para ahorrar tiempo, energía y dinero.",
+     "p": [
+      "Cocinar una olla grande una vez es más barato y rápido que cocinar comidas pequeñas muchas veces.",
+      "Sopas, guisos, salsas y cereales son ideales para tandas y se congelan bien.",
+      "Etiqueta los recipientes con la fecha para que nada se pierda en el congelador."
+     ],
+     "q": "¿Qué plato podrías cocinar en doble ración sin aburrirte de él?",
+     "c": "Cocina una ración doble de un plato esta semana y guarda el extra para más adelante."
+    },
+    "fr": {
+     "t": "Cuisiner en grande quantité",
+     "g": "Préparer de plus grosses portions pour gagner du temps, de l'énergie et de l'argent.",
+     "p": [
+      "Cuisiner une grande marmite une fois coûte moins cher et va plus vite que de petits repas plusieurs fois.",
+      "Soupes, ragoûts, sauces et céréales se prêtent bien aux grandes quantités et se congèlent bien.",
+      "Étiquette les boîtes avec la date, pour que rien ne se perde au congélateur."
+     ],
+     "q": "Quel plat pourrais-tu cuisiner en double portion sans t'en lasser ?",
+     "c": "Cuisine une double portion d'un plat cette semaine et garde le surplus pour plus tard."
+    },
+    "it": {
+     "t": "Cucinare in grandi quantità",
+     "g": "Fare porzioni più grandi per risparmiare tempo, energia e denaro.",
+     "p": [
+      "Cucinare una pentola grande una volta costa meno ed è più rapido che cucinare piccoli pasti più volte.",
+      "Zuppe, stufati, sughi e cereali vanno benissimo in grandi quantità e si congelano bene.",
+      "Etichetta i contenitori con la data, così nulla si perde in freezer."
+     ],
+     "q": "Quale piatto potresti cucinare in doppia porzione senza stancartene?",
+     "c": "Cucina una doppia porzione di un piatto questa settimana e conserva il resto per dopo."
+    },
+    "pt": {
+     "t": "Cozinhar em grandes quantidades",
+     "g": "Fazer porções maiores para poupar tempo, energia e dinheiro.",
+     "p": [
+      "Cozinhar um tacho grande uma vez é mais barato e rápido do que cozinhar refeições pequenas muitas vezes.",
+      "Sopas, estufados, molhos e cereais são ótimos para grandes quantidades e congelam bem.",
+      "Etiqueta os recipientes com a data para nada se perder no congelador."
+     ],
+     "q": "Que prato podias cozinhar em dose dupla sem enjoares?",
+     "c": "Cozinha uma dose dupla de um prato esta semana e guarda o extra para mais tarde."
+    },
+    "pt_BR": {
+     "t": "Cozinhar em grandes quantidades",
+     "g": "Fazer porções maiores para economizar tempo, energia e dinheiro.",
+     "p": [
+      "Cozinhar uma panela grande uma vez é mais barato e rápido do que cozinhar refeições pequenas várias vezes.",
+      "Sopas, ensopados, molhos e grãos são ótimos para grandes quantidades e congelam bem.",
+      "Etiquete os potes com a data para nada se perder no freezer."
+     ],
+     "q": "Que prato você poderia cozinhar em dose dupla sem enjoar?",
+     "c": "Cozinhe uma dose dupla de um prato esta semana e guarde o extra para depois."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Loving your leftovers",
+     "g": "Turn leftovers into new meals instead of throwing them away.",
+     "p": [
+      "Leftovers are free ingredients: yesterday's rice can become fried rice or a salad.",
+      "Plan one leftover night each week, so nothing waits in the fridge until it spoils.",
+      "Small tricks help: soup from vegetable scraps, toast from stale bread, smoothies from soft fruit."
+     ],
+     "q": "What is the best meal you have ever made from leftovers?",
+     "c": "Make one new meal from leftovers today instead of cooking from scratch."
+    },
+    "de": {
+     "t": "Reste lieben lernen",
+     "g": "Reste in neue Gerichte verwandeln, statt sie wegzuwerfen.",
+     "p": [
+      "Reste sind kostenlose Zutaten: Reis von gestern wird zu gebratenem Reis oder Salat.",
+      "Plane pro Woche einen Resteabend, damit nichts im Kühlschrank wartet, bis es verdirbt.",
+      "Kleine Tricks helfen: Suppe aus Gemüseresten, Toast aus altem Brot, Smoothie aus weichem Obst."
+     ],
+     "q": "Was ist das beste Gericht, das du je aus Resten gemacht hast?",
+     "c": "Mache heute ein neues Gericht aus Resten, statt von Grund auf zu kochen."
+    },
+    "es": {
+     "t": "Aprender a querer las sobras",
+     "g": "Convertir las sobras en comidas nuevas en lugar de tirarlas.",
+     "p": [
+      "Las sobras son ingredientes gratis: el arroz de ayer puede ser arroz frito o una ensalada.",
+      "Planifica una noche de sobras a la semana, para que nada espere en la nevera hasta estropearse.",
+      "Pequeños trucos ayudan: sopa con restos de verdura, tostadas con pan duro, batidos con fruta blanda."
+     ],
+     "q": "¿Cuál es la mejor comida que has hecho con sobras?",
+     "c": "Haz hoy una comida nueva con sobras en vez de cocinar desde cero."
+    },
+    "fr": {
+     "t": "Aimer ses restes",
+     "g": "Transformer les restes en nouveaux repas au lieu de les jeter.",
+     "p": [
+      "Les restes sont des ingrédients gratuits : le riz d'hier devient riz sauté ou salade.",
+      "Prévois un soir restes par semaine, pour que rien n'attende au frigo jusqu'à se gâter.",
+      "De petites astuces aident : soupe avec des épluchures de légumes, tartines avec du pain rassis, smoothies avec des fruits mous."
+     ],
+     "q": "Quel est le meilleur repas que tu aies jamais fait avec des restes ?",
+     "c": "Fais aujourd'hui un nouveau repas avec des restes au lieu de cuisiner de zéro."
+    },
+    "it": {
+     "t": "Imparare ad amare gli avanzi",
+     "g": "Trasformare gli avanzi in nuovi pasti invece di buttarli.",
+     "p": [
+      "Gli avanzi sono ingredienti gratis: il riso di ieri diventa riso saltato o un'insalata.",
+      "Pianifica una sera avanzi a settimana, così niente aspetta in frigo finché si rovina.",
+      "Piccoli trucchi aiutano: zuppa con scarti di verdura, crostini con pane secco, frullati con frutta matura."
+     ],
+     "q": "Qual è il miglior pasto che hai mai fatto con gli avanzi?",
+     "c": "Fai oggi un nuovo pasto con gli avanzi invece di cucinare da zero."
+    },
+    "pt": {
+     "t": "Aprender a gostar das sobras",
+     "g": "Transformar as sobras em novas refeições em vez de as deitar fora.",
+     "p": [
+      "As sobras são ingredientes grátis: o arroz de ontem pode virar arroz salteado ou salada.",
+      "Planeia uma noite de sobras por semana, para nada ficar no frigorífico até estragar.",
+      "Pequenos truques ajudam: sopa com restos de legumes, torradas com pão duro, batidos com fruta mole."
+     ],
+     "q": "Qual é a melhor refeição que já fizeste com sobras?",
+     "c": "Faz hoje uma refeição nova com sobras em vez de cozinhares de raiz."
+    },
+    "pt_BR": {
+     "t": "Aprender a gostar das sobras",
+     "g": "Transformar as sobras em novas refeições em vez de jogá-las fora.",
+     "p": [
+      "As sobras são ingredientes grátis: o arroz de ontem pode virar arroz frito ou salada.",
+      "Planeje uma noite de sobras por semana, para nada ficar na geladeira até estragar.",
+      "Pequenos truques ajudam: sopa com restos de legumes, torrada com pão dormido, vitamina com fruta mole."
+     ],
+     "q": "Qual é a melhor refeição que você já fez com sobras?",
+     "c": "Faça hoje uma refeição nova com sobras em vez de cozinhar do zero."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reducing food waste at home",
+     "g": "Use storage tips and first-in, first-out habits for the fridge.",
+     "p": [
+      "Food that gets thrown away is money in the bin, so small storage habits pay off.",
+      "Use first in, first out: put newer items behind older ones so the old get used first.",
+      "Keep a see-first shelf for things that need to be eaten soon."
+     ],
+     "q": "What food do you most often end up throwing away?",
+     "c": "Tidy your fridge, move older items to the front and plan a meal around them."
+    },
+    "de": {
+     "t": "Lebensmittelverschwendung zu Hause senken",
+     "g": "Lagertipps und die Regel Zuerst rein, zuerst raus für den Kühlschrank nutzen.",
+     "p": [
+      "Weggeworfene Lebensmittel sind Geld im Müll, darum lohnen sich kleine Lagergewohnheiten.",
+      "Nutze zuerst rein, zuerst raus: Neues kommt hinter Älteres, damit das Alte zuerst verbraucht wird.",
+      "Richte ein Zuerst-essen-Fach für Dinge ein, die bald gegessen werden sollten."
+     ],
+     "q": "Welche Lebensmittel wirfst du am häufigsten weg?",
+     "c": "Räume deinen Kühlschrank auf, stelle Älteres nach vorn und plane ein Gericht damit."
+    },
+    "es": {
+     "t": "Reducir el desperdicio de comida en casa",
+     "g": "Usar consejos de almacenamiento y el hábito de lo primero que entra, primero que sale.",
+     "p": [
+      "La comida que se tira es dinero a la basura, así que los pequeños hábitos de almacenamiento compensan.",
+      "Usa lo primero que entra, primero que sale: lo nuevo detrás de lo viejo para gastar antes lo viejo.",
+      "Ten un estante de ver primero para lo que conviene comer pronto."
+     ],
+     "q": "¿Qué comida acabas tirando con más frecuencia?",
+     "c": "Ordena tu nevera, pon lo más antiguo delante y planifica una comida con ello."
+    },
+    "fr": {
+     "t": "Réduire le gaspillage alimentaire à la maison",
+     "g": "Utiliser des astuces de rangement et le réflexe premier entré, premier sorti au frigo.",
+     "p": [
+      "La nourriture jetée, c'est de l'argent à la poubelle : de petites habitudes de rangement paient.",
+      "Applique premier entré, premier sorti : le nouveau derrière l'ancien pour consommer l'ancien d'abord.",
+      "Garde une étagère à voir en premier pour ce qu'il faut manger bientôt."
+     ],
+     "q": "Quel aliment finis-tu le plus souvent par jeter ?",
+     "c": "Range ton frigo, mets les produits les plus anciens devant et planifie un repas avec eux."
+    },
+    "it": {
+     "t": "Ridurre lo spreco di cibo a casa",
+     "g": "Usare consigli di conservazione e l'abitudine primo entrato, primo uscito in frigo.",
+     "p": [
+      "Il cibo buttato sono soldi nella spazzatura, quindi le piccole abitudini di conservazione ripagano.",
+      "Usa primo entrato, primo uscito: il nuovo dietro al vecchio, così si usa prima il vecchio.",
+      "Tieni un ripiano da vedere per primo per ciò che va mangiato presto."
+     ],
+     "q": "Quale cibo finisci più spesso per buttare?",
+     "c": "Riordina il frigo, porta avanti i prodotti più vecchi e pianifica un pasto con loro."
+    },
+    "pt": {
+     "t": "Reduzir o desperdício de comida em casa",
+     "g": "Usar dicas de armazenamento e o hábito do primeiro a entrar, primeiro a sair no frigorífico.",
+     "p": [
+      "A comida deitada fora é dinheiro no lixo, por isso pequenos hábitos de armazenamento compensam.",
+      "Usa o primeiro a entrar, primeiro a sair: o novo atrás do velho para gastar o velho primeiro.",
+      "Tem uma prateleira de ver primeiro para o que convém comer em breve."
+     ],
+     "q": "Que comida acabas por deitar fora com mais frequência?",
+     "c": "Arruma o frigorífico, põe o mais antigo à frente e planeia uma refeição com isso."
+    },
+    "pt_BR": {
+     "t": "Reduzir o desperdício de comida em casa",
+     "g": "Usar dicas de armazenamento e o hábito do primeiro a entrar, primeiro a sair na geladeira.",
+     "p": [
+      "Comida jogada fora é dinheiro no lixo, então pequenos hábitos de armazenamento compensam.",
+      "Use o primeiro a entrar, primeiro a sair: o novo atrás do velho para gastar o velho primeiro.",
+      "Tenha uma prateleira de ver primeiro para o que convém comer logo."
+     ],
+     "q": "Que comida você mais acaba jogando fora?",
+     "c": "Arrume a geladeira, ponha o mais antigo na frente e planeje uma refeição com ele."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "moving_abroad",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Decluttering before a move",
+     "g": "Decide what to keep, sell, give away or store.",
+     "p": [
+      "Go room by room and sort into four boxes: keep, sell, give, store.",
+      "Ask yourself if you would buy the item again today for the move.",
+      "Start early and do one drawer a day instead of a whole house in a weekend."
+     ],
+     "q": "Which room will be the easiest or hardest to declutter?",
+     "c": "Declutter one drawer or shelf today and sort it into the four groups."
+    },
+    "de": {
+     "t": "Vor dem Umzug ausmisten",
+     "g": "Entscheide, was du behältst, verkaufst, verschenkst oder einlagerst.",
+     "p": [
+      "Geh Raum für Raum vor und sortiere in vier Kisten: behalten, verkaufen, verschenken, einlagern.",
+      "Frag dich, ob du den Gegenstand heute für den Umzug noch einmal kaufen würdest.",
+      "Fang früh an und mach eine Schublade pro Tag statt eines ganzen Hauses an einem Wochenende."
+     ],
+     "q": "Welcher Raum ist am leichtesten oder am schwersten auszumisten?",
+     "c": "Miste heute eine Schublade oder ein Regal aus und sortiere in die vier Gruppen."
+    },
+    "es": {
+     "t": "Ordenar y soltar antes de mudarte",
+     "g": "Decide qué guardas, vendes, regalas o almacenas.",
+     "p": [
+      "Ve habitación por habitación y clasifica en cuatro cajas: quedarse, vender, regalar, guardar.",
+      "Pregúntate si volverías a comprar ese objeto hoy para la mudanza.",
+      "Empieza pronto y haz un cajón al día en lugar de toda la casa en un fin de semana."
+     ],
+     "q": "¿Qué habitación será la más fácil o la más difícil de despejar?",
+     "c": "Despeja hoy un cajón o una estantería y clasifica en los cuatro grupos."
+    },
+    "fr": {
+     "t": "Désencombrer avant de partir",
+     "g": "Décide ce que tu gardes, vends, donnes ou stockes.",
+     "p": [
+      "Va pièce par pièce et trie en quatre cartons : garder, vendre, donner, stocker.",
+      "Demande-toi si tu rachèterais cet objet aujourd'hui pour le déménagement.",
+      "Commence tôt et fais un tiroir par jour plutôt que toute la maison en un week-end."
+     ],
+     "q": "Quelle pièce sera la plus facile ou la plus difficile à désencombrer ?",
+     "c": "Désencombre aujourd'hui un tiroir ou une étagère et trie-les dans les quatre groupes."
+    },
+    "it": {
+     "t": "Fare ordine prima di partire",
+     "g": "Decidi cosa tenere, vendere, regalare o mettere in deposito.",
+     "p": [
+      "Procedi stanza per stanza e smista in quattro scatole: tenere, vendere, regalare, depositare.",
+      "Chiediti se oggi riacquisteresti quell'oggetto per il trasloco.",
+      "Inizia presto e svuota un cassetto al giorno invece di tutta la casa in un fine settimana."
+     ],
+     "q": "Quale stanza sarà la più facile o la più difficile da sistemare?",
+     "c": "Fai ordine oggi in un cassetto o in uno scaffale e smistalo nei quattro gruppi."
+    },
+    "pt": {
+     "t": "Fazer triagem antes de mudares",
+     "g": "Decide o que manténs, vendes, ofereces ou guardas.",
+     "p": [
+      "Vai divisão a divisão e separa em quatro caixas: ficar, vender, oferecer, guardar.",
+      "Pergunta-te se voltarias a comprar o objeto hoje para a mudança.",
+      "Começa cedo e despacha uma gaveta por dia em vez da casa toda num fim de semana."
+     ],
+     "q": "Que divisão será a mais fácil ou a mais difícil de arrumar?",
+     "c": "Faz hoje a triagem de uma gaveta ou prateleira e separa nos quatro grupos."
+    },
+    "pt_BR": {
+     "t": "Fazendo triagem antes da mudança",
+     "g": "Decida o que manter, vender, doar ou guardar.",
+     "p": [
+      "Vá cômodo por cômodo e separe em quatro caixas: ficar, vender, doar, guardar.",
+      "Pergunte-se se compraria o objeto de novo hoje para a mudança.",
+      "Comece cedo e resolva uma gaveta por dia em vez da casa toda num fim de semana."
+     ],
+     "q": "Qual cômodo será o mais fácil ou o mais difícil de organizar?",
+     "c": "Faça hoje a triagem de uma gaveta ou prateleira e separe nos quatro grupos."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Selling and donating items",
+     "g": "Find simple ways to pass on things you will not take with you.",
+     "p": [
+      "Local marketplaces, friends, charity shops and community groups can all give items a second life.",
+      "Take clear photos, give an honest description and set a fair price.",
+      "Donating feels good and spares you the effort of waiting for the perfect buyer."
+     ],
+     "q": "Which item are you happiest to pass on to someone else?",
+     "c": "Pick three items to sell or donate and decide where each one will go."
+    },
+    "de": {
+     "t": "Verkaufen und Spenden",
+     "g": "Finde einfache Wege, Dinge weiterzugeben, die du nicht mitnimmst.",
+     "p": [
+      "Lokale Marktplätze, Freunde, Sozialkaufhäuser und Gemeindegruppen geben Dingen ein zweites Leben.",
+      "Mach klare Fotos, beschreibe ehrlich und setze einen fairen Preis.",
+      "Spenden fühlt sich gut an und erspart dir das Warten auf den perfekten Käufer."
+     ],
+     "q": "Welchen Gegenstand gibst du am liebsten an jemand anderen weiter?",
+     "c": "Such drei Dinge zum Verkaufen oder Spenden aus und entscheide, wohin jedes geht."
+    },
+    "es": {
+     "t": "Vender y donar objetos",
+     "g": "Encuentra formas sencillas de dar salida a lo que no te llevarás.",
+     "p": [
+      "Mercados locales, amigos, tiendas solidarias y grupos del barrio dan una segunda vida a los objetos.",
+      "Haz fotos claras, describe con sinceridad y fija un precio justo.",
+      "Donar sienta bien y te ahorra esperar al comprador perfecto."
+     ],
+     "q": "¿Qué objeto te alegra más pasar a otra persona?",
+     "c": "Elige tres objetos para vender o donar y decide adónde irá cada uno."
+    },
+    "fr": {
+     "t": "Vendre et donner des objets",
+     "g": "Trouve des moyens simples de transmettre ce que tu n'emporteras pas.",
+     "p": [
+      "Les sites de petites annonces, les amis, les boutiques solidaires et les groupes de quartier donnent une seconde vie aux objets.",
+      "Prends des photos nettes, décris honnêtement et fixe un prix juste.",
+      "Donner fait du bien et t'évite d'attendre l'acheteur parfait."
+     ],
+     "q": "Quel objet es-tu le plus heureux de transmettre à quelqu'un d'autre ?",
+     "c": "Choisis trois objets à vendre ou donner et décide où ira chacun."
+    },
+    "it": {
+     "t": "Vendere e donare oggetti",
+     "g": "Trova modi semplici per dare via ciò che non porterai con te.",
+     "p": [
+      "Mercatini locali, amici, negozi solidali e gruppi di quartiere danno una seconda vita agli oggetti.",
+      "Fai foto chiare, descrivi con onestà e fissa un prezzo equo.",
+      "Donare fa bene e ti evita di aspettare l'acquirente perfetto."
+     ],
+     "q": "Quale oggetto sei più felice di passare a qualcun altro?",
+     "c": "Scegli tre oggetti da vendere o donare e decidi dove andrà ciascuno."
+    },
+    "pt": {
+     "t": "Vender e doar objetos",
+     "g": "Encontra formas simples de dar destino ao que não vais levar.",
+     "p": [
+      "Mercados locais, amigos, lojas solidárias e grupos de bairro dão uma segunda vida aos objetos.",
+      "Tira fotografias nítidas, descreve com honestidade e define um preço justo.",
+      "Doar sabe bem e poupa-te a espera pelo comprador perfeito."
+     ],
+     "q": "Que objeto te deixa mais feliz passar a outra pessoa?",
+     "c": "Escolhe três objetos para vender ou doar e decide para onde vai cada um."
+    },
+    "pt_BR": {
+     "t": "Vendendo e doando objetos",
+     "g": "Encontre formas simples de dar destino ao que você não vai levar.",
+     "p": [
+      "Marketplaces locais, amigos, brechós solidários e grupos de bairro dão uma segunda vida aos objetos.",
+      "Tire fotos nítidas, descreva com honestidade e defina um preço justo.",
+      "Doar faz bem e poupa você de esperar pelo comprador perfeito."
+     ],
+     "q": "Que objeto deixa você mais feliz de passar para outra pessoa?",
+     "c": "Escolha três objetos para vender ou doar e decida para onde vai cada um."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What to take with you",
+     "g": "Choose items that are practical, personal or hard to replace.",
+     "p": [
+      "Take what is useful, meaningful or difficult to find abroad, and leave what is easy to rebuy.",
+      "Heavy furniture and bulky appliances are often cheaper to buy again locally.",
+      "Keep a short list of must-haves, and review it after decluttering."
+     ],
+     "q": "What is one thing you absolutely want to take with you?",
+     "c": "Write a list of ten must-take items and cross out any that are easy to replace."
+    },
+    "de": {
+     "t": "Was du mitnimmst",
+     "g": "Wähle Dinge aus, die praktisch, persönlich oder schwer zu ersetzen sind.",
+     "p": [
+      "Nimm mit, was nützlich, bedeutsam oder im Ausland schwer zu finden ist, und lass leicht Ersetzbares da.",
+      "Schwere Möbel und sperrige Geräte kauft man vor Ort oft günstiger neu.",
+      "Führe eine kurze Liste mit Unverzichtbarem und prüfe sie nach dem Ausmisten."
+     ],
+     "q": "Was möchtest du unbedingt mitnehmen?",
+     "c": "Schreib eine Liste mit zehn Dingen und streich die leicht ersetzbaren durch."
+    },
+    "es": {
+     "t": "Qué llevarte",
+     "g": "Elige objetos prácticos, personales o difíciles de reemplazar.",
+     "p": [
+      "Llévate lo útil, lo significativo o lo difícil de encontrar fuera, y deja lo fácil de recomprar.",
+      "Los muebles pesados y los electrodomésticos voluminosos suelen salir más baratos de nuevo en destino.",
+      "Ten una lista corta de imprescindibles y revísala después de despejar."
+     ],
+     "q": "¿Qué es lo único que quieres llevarte sí o sí?",
+     "c": "Escribe una lista de diez imprescindibles y tacha los fáciles de reemplazar."
+    },
+    "fr": {
+     "t": "Que emporter avec toi",
+     "g": "Choisis des objets pratiques, personnels ou difficiles à remplacer.",
+     "p": [
+      "Emporte ce qui est utile, important ou introuvable sur place, et laisse ce qui se rachète facilement.",
+      "Les gros meubles et appareils encombrants coûtent souvent moins cher à racheter sur place.",
+      "Garde une courte liste d'indispensables et revois-la après le tri."
+     ],
+     "q": "Quelle est la chose que tu veux absolument emporter ?",
+     "c": "Écris une liste de dix indispensables et barre ceux qui se remplacent facilement."
+    },
+    "it": {
+     "t": "Cosa portare con te",
+     "g": "Scegli oggetti pratici, personali o difficili da sostituire.",
+     "p": [
+      "Porta ciò che è utile, significativo o difficile da trovare all'estero, e lascia ciò che si ricompra facilmente.",
+      "Mobili pesanti ed elettrodomestici ingombranti spesso costano meno ricomprati sul posto.",
+      "Tieni una breve lista di indispensabili e rivedila dopo aver fatto ordine."
+     ],
+     "q": "Qual è una cosa che vuoi assolutamente portare con te?",
+     "c": "Scrivi una lista di dieci indispensabili e cancella quelli facili da sostituire."
+    },
+    "pt": {
+     "t": "O que levar contigo",
+     "g": "Escolhe objetos práticos, pessoais ou difíceis de substituir.",
+     "p": [
+      "Leva o que é útil, significativo ou difícil de encontrar lá, e deixa o que é fácil de voltar a comprar.",
+      "Móveis pesados e eletrodomésticos volumosos costumam ser mais baratos de comprar de novo no destino.",
+      "Mantém uma lista curta de imprescindíveis e revê-la depois da triagem."
+     ],
+     "q": "Qual é a coisa que queres levar mesmo contigo?",
+     "c": "Escreve uma lista de dez imprescindíveis e risca os fáceis de substituir."
+    },
+    "pt_BR": {
+     "t": "O que levar com você",
+     "g": "Escolha objetos práticos, pessoais ou difíceis de substituir.",
+     "p": [
+      "Leve o que é útil, significativo ou difícil de achar lá, e deixe o que é fácil de comprar de novo.",
+      "Móveis pesados e eletrodomésticos volumosos costumam sair mais baratos comprando de novo no destino.",
+      "Mantenha uma lista curta de imprescindíveis e revise depois da triagem."
+     ],
+     "q": "Qual é a coisa que você quer levar de qualquer jeito?",
+     "c": "Escreva uma lista de dez imprescindíveis e risque os fáceis de substituir."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Packing for the first weeks",
+     "g": "Pack essentials for the period before your things arrive.",
+     "p": [
+      "Prepare a first-weeks bag: clothes, toiletries, chargers, documents and basic kitchen items.",
+      "Think of it as camping in your new home. Simple is enough at the start.",
+      "Label bags and boxes so the urgent ones are opened first."
+     ],
+     "q": "What would you hate to be without in your first week?",
+     "c": "Pack a first-weeks bag list and check it against your daily routine."
+    },
+    "de": {
+     "t": "Packen für die ersten Wochen",
+     "g": "Pack das Nötigste für die Zeit, bevor deine Sachen ankommen.",
+     "p": [
+      "Bereite eine Erstwochen-Tasche vor: Kleidung, Hygieneartikel, Ladegeräte, Dokumente und Küchenbasics.",
+      "Stell es dir wie Camping im neuen Zuhause vor. Am Anfang reicht Einfaches.",
+      "Beschrifte Taschen und Kisten, damit die dringenden zuerst geöffnet werden."
+     ],
+     "q": "Worauf würdest du in der ersten Woche ungern verzichten?",
+     "c": "Schreib eine Liste für deine Erstwochen-Tasche und gleiche sie mit deinem Alltag ab."
+    },
+    "es": {
+     "t": "Hacer la maleta para las primeras semanas",
+     "g": "Prepara lo esencial para el tiempo antes de que lleguen tus cosas.",
+     "p": [
+      "Prepara una bolsa de primeras semanas: ropa, aseo, cargadores, documentos y utensilios básicos de cocina.",
+      "Piensa que es como acampar en tu nuevo hogar. Al principio basta con lo sencillo.",
+      "Etiqueta bolsas y cajas para abrir primero las urgentes."
+     ],
+     "q": "¿Sin qué cosa lo pasarías peor la primera semana?",
+     "c": "Haz la lista de tu bolsa de primeras semanas y compárala con tu rutina diaria."
+    },
+    "fr": {
+     "t": "Préparer les premières semaines",
+     "g": "Prépare l'essentiel pour la période avant l'arrivée de tes affaires.",
+     "p": [
+      "Prépare un sac des premières semaines : vêtements, toilette, chargeurs, documents et ustensiles de cuisine de base.",
+      "Vois cela comme du camping dans ton nouveau chez-toi. Le simple suffit au début.",
+      "Étiquette sacs et cartons pour ouvrir d'abord les plus urgents."
+     ],
+     "q": "De quoi détesterais-tu manquer la première semaine ?",
+     "c": "Dresse la liste de ton sac des premières semaines et compare-la à ta routine quotidienne."
+    },
+    "it": {
+     "t": "Preparare le prime settimane",
+     "g": "Prepara l'essenziale per il periodo prima che arrivino le tue cose.",
+     "p": [
+      "Prepara una borsa delle prime settimane: vestiti, igiene, caricabatterie, documenti e utensili da cucina di base.",
+      "Pensa di fare campeggio nella tua nuova casa. All'inizio basta il semplice.",
+      "Etichetta borse e scatole per aprire per prime quelle urgenti."
+     ],
+     "q": "Di cosa non vorresti proprio fare a meno nella prima settimana?",
+     "c": "Scrivi la lista della borsa delle prime settimane e confrontala con la tua routine quotidiana."
+    },
+    "pt": {
+     "t": "Preparar as primeiras semanas",
+     "g": "Prepara o essencial para o período antes de as tuas coisas chegarem.",
+     "p": [
+      "Prepara uma mala das primeiras semanas: roupa, higiene, carregadores, documentos e utensílios básicos de cozinha.",
+      "Pensa nisto como acampar na tua nova casa. No início chega o simples.",
+      "Etiqueta malas e caixas para abrires primeiro as urgentes."
+     ],
+     "q": "De que coisa não gostarias de estar sem na primeira semana?",
+     "c": "Escreve a lista da mala das primeiras semanas e compara-a com a tua rotina diária."
+    },
+    "pt_BR": {
+     "t": "Preparando as primeiras semanas",
+     "g": "Prepare o essencial para o período antes de suas coisas chegarem.",
+     "p": [
+      "Prepare uma mala das primeiras semanas: roupa, higiene, carregadores, documentos e utensílios básicos de cozinha.",
+      "Pense nisso como acampar na sua nova casa. No começo o simples basta.",
+      "Etiquete malas e caixas para abrir primeiro as urgentes."
+     ],
+     "q": "Do que você não gostaria de ficar sem na primeira semana?",
+     "c": "Escreva a lista da mala das primeiras semanas e compare com sua rotina diária."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shipping or suitcase?",
+     "g": "Compare ways to move belongings in general terms.",
+     "p": [
+      "Suitcases are fast and simple. Shipping suits larger loads but takes time and paperwork.",
+      "Ask for several quotes from reputable companies and read what is included.",
+      "Check official customs rules for your destination before sending anything."
+     ],
+     "q": "Would you rather travel light or ship your belongings?",
+     "c": "List what fits in two suitcases and what would need shipping."
+    },
+    "de": {
+     "t": "Versand oder Koffer?",
+     "g": "Vergleiche allgemein die Wege, Hab und Gut zu transportieren.",
+     "p": [
+      "Koffer sind schnell und einfach. Versand eignet sich für größere Mengen, braucht aber Zeit und Papierkram.",
+      "Hol mehrere Angebote seriöser Firmen ein und lies, was enthalten ist.",
+      "Prüfe vor dem Versand die offiziellen Zollregeln deines Ziellandes."
+     ],
+     "q": "Reist du lieber mit leichtem Gepäck oder verschickst du deine Sachen?",
+     "c": "Liste auf, was in zwei Koffer passt und was verschickt werden müsste."
+    },
+    "es": {
+     "t": "¿Envío o maleta?",
+     "g": "Compara en general las formas de trasladar tus pertenencias.",
+     "p": [
+      "Las maletas son rápidas y sencillas. El envío sirve para cargas grandes, pero lleva tiempo y papeleo.",
+      "Pide varios presupuestos a empresas fiables y lee qué incluyen.",
+      "Consulta las normas oficiales de aduanas de tu destino antes de enviar nada."
+     ],
+     "q": "¿Prefieres viajar ligero o enviar tus cosas?",
+     "c": "Haz una lista de lo que cabe en dos maletas y lo que habría que enviar."
+    },
+    "fr": {
+     "t": "Envoi ou valises ?",
+     "g": "Compare, en termes généraux, les façons de déplacer tes affaires.",
+     "p": [
+      "Les valises sont rapides et simples. L'envoi convient aux gros volumes mais demande du temps et des papiers.",
+      "Demande plusieurs devis à des entreprises sérieuses et lis ce qui est inclus.",
+      "Vérifie les règles douanières officielles de ta destination avant tout envoi."
+     ],
+     "q": "Préfères-tu voyager léger ou faire expédier tes affaires ?",
+     "c": "Liste ce qui tient dans deux valises et ce qu'il faudrait expédier."
+    },
+    "it": {
+     "t": "Spedizione o valigia?",
+     "g": "Confronta in generale i modi per spostare le tue cose.",
+     "p": [
+      "Le valigie sono veloci e semplici. La spedizione va bene per carichi grandi, ma richiede tempo e pratiche.",
+      "Chiedi più preventivi a aziende affidabili e leggi cosa è incluso.",
+      "Controlla le regole doganali ufficiali della destinazione prima di spedire qualsiasi cosa."
+     ],
+     "q": "Preferisci viaggiare leggero o spedire le tue cose?",
+     "c": "Elenca cosa sta in due valigie e cosa andrebbe spedito."
+    },
+    "pt": {
+     "t": "Envio ou mala?",
+     "g": "Compara, em termos gerais, as formas de levar os teus pertences.",
+     "p": [
+      "As malas são rápidas e simples. O envio serve cargas maiores, mas leva tempo e burocracia.",
+      "Pede vários orçamentos a empresas de confiança e lê o que está incluído.",
+      "Consulta as regras oficiais da alfândega do teu destino antes de enviares seja o que for."
+     ],
+     "q": "Preferes viajar leve ou enviar as tuas coisas?",
+     "c": "Lista o que cabe em duas malas e o que teria de ser enviado."
+    },
+    "pt_BR": {
+     "t": "Envio ou mala?",
+     "g": "Compare, em termos gerais, as formas de levar seus pertences.",
+     "p": [
+      "Malas são rápidas e simples. O envio serve cargas maiores, mas leva tempo e burocracia.",
+      "Peça vários orçamentos a empresas confiáveis e leia o que está incluído.",
+      "Consulte as regras oficiais da alfândega do seu destino antes de enviar qualquer coisa."
+     ],
+     "q": "Você prefere viajar leve ou enviar suas coisas?",
+     "c": "Liste o que cabe em duas malas e o que teria de ser enviado."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sentimental items",
+     "g": "Choose a few meaningful items that will make a new place feel like home.",
+     "p": [
+      "A photo, a blanket, a mug or a book can turn a rented room into your place.",
+      "Pick items with stories, not just items with value.",
+      "Keep the rest safe with family or in storage, so letting go feels gentle."
+     ],
+     "q": "Which small object means the most to you and why?",
+     "c": "Choose three meaningful items and put them in your first-weeks bag."
+    },
+    "de": {
+     "t": "Erinnerungsstücke",
+     "g": "Wähle ein paar bedeutsame Dinge, die den neuen Ort wie ein Zuhause wirken lassen.",
+     "p": [
+      "Ein Foto, eine Decke, eine Tasse oder ein Buch machen ein gemietetes Zimmer zu deinem Ort.",
+      "Wähle Dinge mit Geschichten, nicht nur Dinge mit Wert.",
+      "Gib den Rest bei Familie oder im Lager in sichere Obhut, damit das Loslassen sanft bleibt."
+     ],
+     "q": "Welcher kleine Gegenstand bedeutet dir am meisten und warum?",
+     "c": "Such drei bedeutsame Dinge aus und leg sie in deine Erstwochen-Tasche."
+    },
+    "es": {
+     "t": "Objetos con valor sentimental",
+     "g": "Elige unos pocos objetos con significado que hagan sentir un lugar nuevo como un hogar.",
+     "p": [
+      "Una foto, una manta, una taza o un libro pueden convertir una habitación alquilada en tu sitio.",
+      "Elige objetos con historia, no solo objetos con valor.",
+      "Deja el resto a buen recaudo con la familia o en un guardamuebles, para que soltar sea suave."
+     ],
+     "q": "¿Qué objeto pequeño significa más para ti y por qué?",
+     "c": "Elige tres objetos con significado y ponlos en tu bolsa de primeras semanas."
+    },
+    "fr": {
+     "t": "Objets sentimentaux",
+     "g": "Choisis quelques objets qui comptent pour que ton nouveau lieu ressemble à un chez-soi.",
+     "p": [
+      "Une photo, un plaid, une tasse ou un livre peuvent transformer une chambre louée en ton coin à toi.",
+      "Choisis des objets qui ont une histoire, pas seulement de la valeur.",
+      "Confie le reste à ta famille ou à un garde-meuble, pour que le lâcher-prise soit doux."
+     ],
+     "q": "Quel petit objet compte le plus pour toi et pourquoi ?",
+     "c": "Choisis trois objets qui comptent et mets-les dans ton sac des premières semaines."
+    },
+    "it": {
+     "t": "Oggetti del cuore",
+     "g": "Scegli pochi oggetti significativi che facciano sentire un posto nuovo come casa.",
+     "p": [
+      "Una foto, una coperta, una tazza o un libro possono trasformare una stanza in affitto nel tuo posto.",
+      "Scegli oggetti con una storia, non solo oggetti di valore.",
+      "Affida il resto a familiari o a un deposito, così lasciar andare sarà dolce."
+     ],
+     "q": "Quale piccolo oggetto significa di più per te e perché?",
+     "c": "Scegli tre oggetti significativi e mettili nella borsa delle prime settimane."
+    },
+    "pt": {
+     "t": "Objetos com valor sentimental",
+     "g": "Escolhe alguns objetos com significado que façam um lugar novo parecer casa.",
+     "p": [
+      "Uma fotografia, uma manta, uma caneca ou um livro podem transformar um quarto arrendado no teu cantinho.",
+      "Escolhe objetos com história, e não só objetos com valor.",
+      "Deixa o resto em segurança com a família ou num guarda-móveis, para que largar seja suave."
+     ],
+     "q": "Que pequeno objeto significa mais para ti e porquê?",
+     "c": "Escolhe três objetos com significado e põe-nos na mala das primeiras semanas."
+    },
+    "pt_BR": {
+     "t": "Objetos com valor sentimental",
+     "g": "Escolha alguns objetos com significado que façam um lugar novo parecer casa.",
+     "p": [
+      "Uma foto, uma manta, uma caneca ou um livro podem transformar um quarto alugado no seu cantinho.",
+      "Escolha objetos com história, e não só objetos de valor.",
+      "Deixe o resto em segurança com a família ou num guarda-móveis, para soltar ficar suave."
+     ],
+     "q": "Que pequeno objeto significa mais para você e por quê?",
+     "c": "Escolha três objetos com significado e coloque na mala das primeiras semanas."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Electronics and plugs",
+     "g": "Check plugs, voltage and adapters for your devices.",
+     "p": [
+      "Countries use different plug shapes and voltages, so check before you pack.",
+      "Many phone and laptop chargers handle several voltages, but read the label.",
+      "Buy a good travel adapter and keep it in your hand luggage."
+     ],
+     "q": "Which devices could you not live without abroad?",
+     "c": "Check the label on your chargers and write down the voltage range."
+    },
+    "de": {
+     "t": "Elektronik und Steckdosen",
+     "g": "Prüfe Stecker, Spannung und Adapter für deine Geräte.",
+     "p": [
+      "Länder nutzen unterschiedliche Steckerformen und Spannungen, prüfe das also vor dem Packen.",
+      "Viele Handy- und Laptop-Netzteile vertragen mehrere Spannungen, aber lies das Etikett.",
+      "Kauf einen guten Reiseadapter und trag ihn im Handgepäck."
+     ],
+     "q": "Auf welche Geräte willst du im Ausland nicht verzichten?",
+     "c": "Prüfe das Etikett deiner Ladegeräte und notiere den Spannungsbereich."
+    },
+    "es": {
+     "t": "Electrónica y enchufes",
+     "g": "Comprueba enchufes, voltaje y adaptadores para tus dispositivos.",
+     "p": [
+      "Cada país usa enchufes y voltajes distintos, así que comprueba antes de hacer el equipaje.",
+      "Muchos cargadores de móvil y portátil admiten varios voltajes, pero lee la etiqueta.",
+      "Compra un buen adaptador de viaje y llévalo en el equipaje de mano."
+     ],
+     "q": "¿Qué dispositivos no podrías dejar atrás en el extranjero?",
+     "c": "Mira la etiqueta de tus cargadores y anota el rango de voltaje."
+    },
+    "fr": {
+     "t": "Électronique et prises",
+     "g": "Vérifie prises, tension et adaptateurs pour tes appareils.",
+     "p": [
+      "Chaque pays utilise des prises et des tensions différentes : vérifie avant de faire tes bagages.",
+      "Beaucoup de chargeurs de téléphone et d'ordinateur gèrent plusieurs tensions, mais lis l'étiquette.",
+      "Achète un bon adaptateur de voyage et garde-le en bagage à main."
+     ],
+     "q": "Quels appareils ne pourrais-tu pas laisser derrière toi à l'étranger ?",
+     "c": "Regarde l'étiquette de tes chargeurs et note la plage de tension."
+    },
+    "it": {
+     "t": "Elettronica e prese",
+     "g": "Controlla prese, tensione e adattatori per i tuoi dispositivi.",
+     "p": [
+      "Ogni Paese usa prese e tensioni diverse, quindi controlla prima di fare le valigie.",
+      "Molti caricabatterie di telefono e portatile gestiscono più tensioni, ma leggi l'etichetta.",
+      "Compra un buon adattatore da viaggio e tienilo nel bagaglio a mano."
+     ],
+     "q": "Quali dispositivi non potresti lasciare a casa all'estero?",
+     "c": "Guarda l'etichetta dei tuoi caricabatterie e annota l'intervallo di tensione."
+    },
+    "pt": {
+     "t": "Eletrónica e tomadas",
+     "g": "Verifica fichas, voltagem e adaptadores para os teus dispositivos.",
+     "p": [
+      "Cada país usa fichas e voltagens diferentes, por isso verifica antes de fazeres as malas.",
+      "Muitos carregadores de telemóvel e portátil aceitam várias voltagens, mas lê a etiqueta.",
+      "Compra um bom adaptador de viagem e leva-o na bagagem de mão."
+     ],
+     "q": "De que dispositivos não abdicarias no estrangeiro?",
+     "c": "Vê a etiqueta dos teus carregadores e anota o intervalo de voltagem."
+    },
+    "pt_BR": {
+     "t": "Eletrônicos e tomadas",
+     "g": "Verifique plugues, voltagem e adaptadores para seus dispositivos.",
+     "p": [
+      "Cada país usa plugues e voltagens diferentes, então verifique antes de fazer as malas.",
+      "Muitos carregadores de celular e notebook aceitam várias voltagens, mas leia a etiqueta.",
+      "Compre um bom adaptador de viagem e leve na bagagem de mão."
+     ],
+     "q": "De quais dispositivos você não abriria mão no exterior?",
+     "c": "Veja a etiqueta dos seus carregadores e anote a faixa de voltagem."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Clothes for a new climate",
+     "g": "Pack for the weather and buy the rest locally.",
+     "p": [
+      "Layers work almost everywhere: a light base, a warm layer and a good outer shell.",
+      "Locals know what works best in their weather, so buy heavy coats on arrival.",
+      "Bring comfortable shoes, because new cities mean a lot of walking."
+     ],
+     "q": "What kind of weather will you need to prepare for most?",
+     "c": "Look at last year's weather chart for your destination and plan three layers."
+    },
+    "de": {
+     "t": "Kleidung für ein neues Klima",
+     "g": "Pack für das Wetter und kauf den Rest vor Ort.",
+     "p": [
+      "Zwiebellook funktioniert fast überall: eine leichte Basis, eine warme Schicht und eine gute Jacke.",
+      "Einheimische wissen, was bei ihrem Wetter am besten funktioniert, kauf dicke Mäntel also nach der Ankunft.",
+      "Nimm bequeme Schuhe mit, denn neue Städte bedeuten viel Laufen."
+     ],
+     "q": "Auf welches Wetter musst du dich am meisten vorbereiten?",
+     "c": "Sieh dir das Wetterdiagramm deines Ziels an und plane drei Schichten."
+    },
+    "es": {
+     "t": "Ropa para un clima nuevo",
+     "g": "Prepara el equipaje según el tiempo y compra el resto allí.",
+     "p": [
+      "Las capas funcionan casi en todas partes: una base ligera, una capa de abrigo y una buena cazadora.",
+      "La gente local sabe qué funciona mejor con su clima, así que compra los abrigos gruesos al llegar.",
+      "Lleva calzado cómodo, porque las ciudades nuevas implican mucho caminar."
+     ],
+     "q": "¿Para qué tipo de tiempo tendrás que prepararte más?",
+     "c": "Mira el gráfico de clima de tu destino y planifica tres capas."
+    },
+    "fr": {
+     "t": "Des vêtements pour un nouveau climat",
+     "g": "Prépare tes bagages selon la météo et achète le reste sur place.",
+     "p": [
+      "Les couches fonctionnent presque partout : une base légère, une couche chaude et une bonne veste.",
+      "Les habitants savent ce qui convient à leur météo : achète les gros manteaux à l'arrivée.",
+      "Emporte des chaussures confortables, car une nouvelle ville, c'est beaucoup de marche."
+     ],
+     "q": "À quel type de météo devras-tu le plus te préparer ?",
+     "c": "Regarde le diagramme climatique de ta destination et prévois trois couches."
+    },
+    "it": {
+     "t": "Vestiti per un nuovo clima",
+     "g": "Prepara le valigie in base al meteo e compra il resto sul posto.",
+     "p": [
+      "Il metodo a strati funziona quasi ovunque: una base leggera, uno strato caldo e una buona giacca.",
+      "I locali sanno cosa funziona meglio con il loro clima, quindi compra i cappotti pesanti all'arrivo.",
+      "Porta scarpe comode, perché le città nuove significano molto camminare."
+     ],
+     "q": "A che tipo di meteo dovrai prepararti di più?",
+     "c": "Guarda il grafico del clima della tua destinazione e pianifica tre strati."
+    },
+    "pt": {
+     "t": "Roupa para um clima novo",
+     "g": "Prepara a bagagem para o tempo e compra o resto no local.",
+     "p": [
+      "Vestir por camadas funciona quase em todo o lado: uma base leve, uma camada quente e um bom casaco.",
+      "Os locais sabem o que funciona melhor com o seu clima, por isso compra os casacos grossos à chegada.",
+      "Leva sapatos confortáveis, porque cidades novas significam muito andar a pé."
+     ],
+     "q": "Para que tipo de tempo terás de te preparar mais?",
+     "c": "Vê o gráfico do clima do teu destino e planeia três camadas."
+    },
+    "pt_BR": {
+     "t": "Roupas para um clima novo",
+     "g": "Prepare a bagagem para o tempo e compre o resto no local.",
+     "p": [
+      "Vestir em camadas funciona quase em todo lugar: uma base leve, uma camada quente e uma boa jaqueta.",
+      "Os moradores sabem o que funciona melhor no clima deles, então compre os casacos grossos na chegada.",
+      "Leve sapatos confortáveis, porque cidades novas significam muito caminhar."
+     ],
+     "q": "Para que tipo de tempo você terá de se preparar mais?",
+     "c": "Veja o gráfico de clima do seu destino e planeje três camadas."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Medicines and prescriptions",
+     "g": "Plan ahead and check official rules for bringing medicines.",
+     "p": [
+      "Rules on bringing medicines differ by country, so check the official health or customs pages.",
+      "This is general information, not medical advice. Talk to your doctor or pharmacist about your needs.",
+      "Carry medicines in original packaging with a doctor's note when appropriate."
+     ],
+     "q": "Do you take any regular medicine you should plan for?",
+     "c": "Ask your doctor or pharmacist what to prepare and write down the answer."
+    },
+    "de": {
+     "t": "Medikamente und Rezepte",
+     "g": "Plane voraus und prüfe die offiziellen Regeln für die Mitnahme von Medikamenten.",
+     "p": [
+      "Regeln zur Mitnahme von Medikamenten unterscheiden sich je nach Land, prüfe also die offiziellen Gesundheits- oder Zollseiten.",
+      "Das sind allgemeine Informationen, keine medizinische Beratung. Sprich mit Arzt oder Apotheker über deinen Bedarf.",
+      "Trag Medikamente in der Originalverpackung und bei Bedarf mit ärztlicher Bescheinigung bei dir."
+     ],
+     "q": "Nimmst du regelmäßig Medikamente, für die du planen musst?",
+     "c": "Frag Arzt oder Apotheker, was du vorbereiten solltest, und notiere die Antwort."
+    },
+    "es": {
+     "t": "Medicamentos y recetas",
+     "g": "Planifica con tiempo y consulta las normas oficiales para llevar medicamentos.",
+     "p": [
+      "Las normas para llevar medicamentos cambian según el país, así que consulta las webs oficiales de sanidad o aduanas.",
+      "Esto es información general, no consejo médico. Habla con tu médico o farmacéutico sobre tus necesidades.",
+      "Lleva los medicamentos en su envase original y, si procede, con un informe médico."
+     ],
+     "q": "¿Tomas algún medicamento habitual para el que debas planificar?",
+     "c": "Pregunta a tu médico o farmacéutico qué preparar y anota la respuesta."
+    },
+    "fr": {
+     "t": "Médicaments et ordonnances",
+     "g": "Anticipe et vérifie les règles officielles pour emporter des médicaments.",
+     "p": [
+      "Les règles pour emporter des médicaments varient selon le pays : consulte les sites officiels de santé ou de douane.",
+      "Ce sont des informations générales, pas un avis médical. Parle à ton médecin ou pharmacien de tes besoins.",
+      "Garde les médicaments dans leur emballage d'origine, avec un justificatif médical si besoin."
+     ],
+     "q": "Prends-tu un médicament régulier pour lequel il faut anticiper ?",
+     "c": "Demande à ton médecin ou pharmacien quoi préparer et note la réponse."
+    },
+    "it": {
+     "t": "Farmaci e ricette",
+     "g": "Pianifica in anticipo e controlla le regole ufficiali per portare farmaci.",
+     "p": [
+      "Le regole per portare farmaci cambiano da Paese a Paese, quindi consulta i siti ufficiali di sanità o dogana.",
+      "Sono informazioni generali, non consigli medici. Parla con il medico o il farmacista delle tue esigenze.",
+      "Porta i farmaci nella confezione originale e, se serve, con un certificato del medico."
+     ],
+     "q": "Prendi qualche farmaco regolare per cui devi pianificare?",
+     "c": "Chiedi a medico o farmacista cosa preparare e annota la risposta."
+    },
+    "pt": {
+     "t": "Medicamentos e receitas",
+     "g": "Planeia com antecedência e consulta as regras oficiais para levar medicamentos.",
+     "p": [
+      "As regras para levar medicamentos mudam de país para país, por isso consulta os sites oficiais de saúde ou alfândega.",
+      "Isto é informação geral, não aconselhamento médico. Fala com o teu médico ou farmacêutico sobre as tuas necessidades.",
+      "Leva os medicamentos na embalagem original e, se for caso disso, com declaração médica."
+     ],
+     "q": "Tomas algum medicamento habitual para o qual tenhas de planear?",
+     "c": "Pergunta ao teu médico ou farmacêutico o que preparar e anota a resposta."
+    },
+    "pt_BR": {
+     "t": "Remédios e receitas",
+     "g": "Planeje com antecedência e consulte as regras oficiais para levar remédios.",
+     "p": [
+      "As regras para levar remédios mudam de país para país, então consulte os sites oficiais de saúde ou alfândega.",
+      "Isto é informação geral, não orientação médica. Converse com seu médico ou farmacêutico sobre suas necessidades.",
+      "Leve os remédios na embalagem original e, se for o caso, com declaração médica."
+     ],
+     "q": "Você toma algum remédio de uso contínuo para o qual precise planejar?",
+     "c": "Pergunte ao seu médico ou farmacêutico o que preparar e anote a resposta."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Moving with pets in general",
+     "g": "Learn why pet travel needs early planning and official requirements.",
+     "p": [
+      "Pets often need documents, vaccinations and approved carriers, sometimes months ahead.",
+      "Requirements differ by country, so check the official agriculture or customs pages.",
+      "Talk to your vet and the airline early. Calm, well-prepared animals travel better."
+     ],
+     "q": "Do you have a pet, or would you like one in your new home?",
+     "c": "Write three questions to ask your vet and the airline about travel."
+    },
+    "de": {
+     "t": "Umzug mit Haustieren",
+     "g": "Lerne, warum Haustierreisen frühe Planung und offizielle Vorgaben brauchen.",
+     "p": [
+      "Haustiere brauchen oft Papiere, Impfungen und zugelassene Transportboxen, manchmal Monate im Voraus.",
+      "Die Vorgaben unterscheiden sich je nach Land, prüfe also die offiziellen Landwirtschafts- oder Zollseiten.",
+      "Sprich früh mit Tierarzt und Fluggesellschaft. Ruhige, gut vorbereitete Tiere reisen besser."
+     ],
+     "q": "Hast du ein Haustier oder wünschst du dir eins im neuen Zuhause?",
+     "c": "Schreib drei Fragen für Tierarzt und Fluggesellschaft zur Reise auf."
+    },
+    "es": {
+     "t": "Mudarse con mascotas",
+     "g": "Aprende por qué viajar con mascotas exige planificar pronto y cumplir requisitos oficiales.",
+     "p": [
+      "Las mascotas suelen necesitar documentos, vacunas y transportines homologados, a veces con meses de antelación.",
+      "Los requisitos cambian según el país, así que consulta las webs oficiales de agricultura o aduanas.",
+      "Habla pronto con tu veterinario y la aerolínea. Los animales tranquilos y bien preparados viajan mejor."
+     ],
+     "q": "¿Tienes mascota o te gustaría tener una en tu nuevo hogar?",
+     "c": "Escribe tres preguntas para tu veterinario y la aerolínea sobre el viaje."
+    },
+    "fr": {
+     "t": "Déménager avec des animaux",
+     "g": "Comprends pourquoi voyager avec un animal demande une préparation précoce et des exigences officielles.",
+     "p": [
+      "Les animaux ont souvent besoin de papiers, de vaccins et de caisses agréées, parfois des mois à l'avance.",
+      "Les exigences varient selon le pays : consulte les sites officiels de l'agriculture ou des douanes.",
+      "Parle tôt à ton vétérinaire et à la compagnie aérienne. Un animal calme et bien préparé voyage mieux."
+     ],
+     "q": "As-tu un animal, ou en voudrais-tu un dans ton nouveau chez-toi ?",
+     "c": "Écris trois questions à poser à ton vétérinaire et à la compagnie sur le voyage."
+    },
+    "it": {
+     "t": "Trasferirsi con animali domestici",
+     "g": "Scopri perché viaggiare con un animale richiede pianificazione anticipata e requisiti ufficiali.",
+     "p": [
+      "Gli animali spesso richiedono documenti, vaccinazioni e trasportini omologati, a volte con mesi di anticipo.",
+      "I requisiti cambiano da Paese a Paese, quindi consulta i siti ufficiali di agricoltura o dogana.",
+      "Parla presto con il veterinario e la compagnia aerea. Animali calmi e ben preparati viaggiano meglio."
+     ],
+     "q": "Hai un animale domestico o ne vorresti uno nella tua nuova casa?",
+     "c": "Scrivi tre domande da fare a veterinario e compagnia aerea sul viaggio."
+    },
+    "pt": {
+     "t": "Mudar com animais de estimação",
+     "g": "Percebe porque é que viajar com animais exige planeamento antecipado e requisitos oficiais.",
+     "p": [
+      "Os animais precisam muitas vezes de documentos, vacinas e transportadoras aprovadas, por vezes com meses de antecedência.",
+      "Os requisitos variam de país para país, por isso consulta os sites oficiais de agricultura ou alfândega.",
+      "Fala cedo com o veterinário e a companhia aérea. Animais calmos e bem preparados viajam melhor."
+     ],
+     "q": "Tens um animal de estimação ou gostavas de ter um na tua nova casa?",
+     "c": "Escreve três perguntas para o veterinário e a companhia aérea sobre a viagem."
+    },
+    "pt_BR": {
+     "t": "Mudando com animais de estimação",
+     "g": "Entenda por que viajar com animais exige planejamento antecipado e requisitos oficiais.",
+     "p": [
+      "Os animais costumam precisar de documentos, vacinas e caixas de transporte aprovadas, às vezes com meses de antecedência.",
+      "Os requisitos variam de país para país, então consulte os sites oficiais de agricultura ou alfândega.",
+      "Fale cedo com o veterinário e a companhia aérea. Animais calmos e bem preparados viajam melhor."
+     ],
+     "q": "Você tem um bicho de estimação ou gostaria de ter um na sua nova casa?",
+     "c": "Escreva três perguntas para o veterinário e a companhia aérea sobre a viagem."
+    }
+   }
+  }
+ ]
+}

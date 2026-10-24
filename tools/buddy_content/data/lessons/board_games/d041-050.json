@@ -1,0 +1,835 @@
+{
+ "topic": "board_games",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pictionary and drawing games",
+     "g": "Guess words from quick sketches, no art skills needed.",
+     "p": [
+      "One player draws a secret word while teammates shout guesses.",
+      "No letters, numbers or speaking are allowed while drawing.",
+      "Simple shapes work best: a circle and two lines can be many things."
+     ],
+     "q": "Stick figures are welcome, and bad drawings are half the fun.",
+     "c": "Draw the word bridge in ten seconds and see if someone guesses it."
+    },
+    "de": {
+     "t": "Montagsmaler und Zeichenspiele",
+     "g": "Errate Wörter aus schnellen Skizzen, ohne Zeichentalent.",
+     "p": [
+      "Ein Spieler zeichnet ein geheimes Wort, während das Team Vermutungen ruft.",
+      "Beim Zeichnen sind Buchstaben, Zahlen und Sprechen tabu.",
+      "Einfache Formen wirken am besten: Ein Kreis und zwei Striche können vieles sein."
+     ],
+     "q": "Strichmännchen sind willkommen, und schlechte Bilder sind der halbe Spaß.",
+     "c": "Zeichne das Wort Brücke in zehn Sekunden und sieh, ob es jemand errät."
+    },
+    "es": {
+     "t": "Pictionary y juegos de dibujo",
+     "g": "Adivina palabras a partir de bocetos rápidos, sin saber dibujar.",
+     "p": [
+      "Un jugador dibuja una palabra secreta mientras su equipo grita ideas.",
+      "Mientras se dibuja no se permiten letras, números ni hablar.",
+      "Las formas simples funcionan mejor: un círculo y dos rayas pueden ser muchas cosas."
+     ],
+     "q": "Los muñecos de palitos son bienvenidos y los dibujos malos son media diversión.",
+     "c": "Dibuja la palabra puente en diez segundos y mira si alguien la adivina."
+    },
+    "fr": {
+     "t": "Pictionary et jeux de dessin",
+     "g": "Devine des mots à partir de croquis rapides, sans talent requis.",
+     "p": [
+      "Un joueur dessine un mot secret pendant que son équipe lance des idées.",
+      "Pas de lettres, de chiffres ni de paroles pendant le dessin.",
+      "Les formes simples marchent le mieux : un cercle et deux traits peuvent être beaucoup de choses."
+     ],
+     "q": "Les bonshommes allumettes sont les bienvenus, et les mauvais dessins font rire.",
+     "c": "Dessine le mot pont en dix secondes et vois si quelqu'un le devine."
+    },
+    "it": {
+     "t": "Pictionary e giochi di disegno",
+     "g": "Indovina parole da schizzi veloci, senza bisogno di saper disegnare.",
+     "p": [
+      "Un giocatore disegna una parola segreta mentre la squadra urla le idee.",
+      "Mentre si disegna niente lettere, numeri o parole.",
+      "Le forme semplici funzionano meglio: un cerchio e due linee possono essere molte cose."
+     ],
+     "q": "Gli omini stilizzati sono benvenuti e i brutti disegni sono metà del divertimento.",
+     "c": "Disegna la parola ponte in dieci secondi e guarda se qualcuno la indovina."
+    },
+    "pt": {
+     "t": "Pictionary e jogos de desenho",
+     "g": "Adivinha palavras a partir de esboços rápidos, sem precisar de talento.",
+     "p": [
+      "Um jogador desenha uma palavra secreta enquanto a equipa grita ideias.",
+      "Enquanto se desenha, não se podem usar letras, números nem falar.",
+      "As formas simples funcionam melhor: um círculo e dois traços podem ser muitas coisas."
+     ],
+     "q": "Bonecos de palitos são bem-vindos e os desenhos maus são metade da diversão.",
+     "c": "Desenha a palavra ponte em dez segundos e vê se alguém adivinha."
+    },
+    "pt_BR": {
+     "t": "Imagem e Ação e jogos de desenho",
+     "g": "Adivinhe palavras a partir de esboços rápidos, sem precisar de talento.",
+     "p": [
+      "Um jogador desenha uma palavra secreta enquanto a equipe grita ideias.",
+      "Enquanto desenha, não vale usar letras, números nem falar.",
+      "Formas simples funcionam melhor: um círculo e dois traços podem ser muita coisa."
+     ],
+     "q": "Bonecos de palito são bem-vindos e desenho ruim é metade da diversão.",
+     "c": "Desenhe a palavra ponte em dez segundos e veja se alguém adivinha."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Jenga and dexterity games",
+     "g": "Enjoy steady hands, balance and suspense in physical games.",
+     "p": [
+      "In Jenga you pull a block from a tower and place it on top.",
+      "Tap blocks gently to find a loose one; the middle ones are often easier.",
+      "Other dexterity games include flicking discs, balancing pieces and stacking cups."
+     ],
+     "q": "A game of nerve and calm: breathe slowly and move gently.",
+     "c": "Build a small tower from books or cups and add one piece at a time."
+    },
+    "de": {
+     "t": "Jenga und Geschicklichkeitsspiele",
+     "g": "Genieße ruhige Hände, Balance und Spannung in körperlichen Spielen.",
+     "p": [
+      "Bei Jenga ziehst du einen Block aus dem Turm und legst ihn oben auf.",
+      "Klopfe sanft, um einen losen Block zu finden; mittlere sind oft leichter.",
+      "Weitere Geschicklichkeitsspiele: Scheiben schnippen, Teile balancieren, Becher stapeln."
+     ],
+     "q": "Ein Spiel für Nerven und Ruhe: atme langsam und bewege dich sanft.",
+     "c": "Baue einen kleinen Turm aus Büchern oder Bechern, Teil für Teil."
+    },
+    "es": {
+     "t": "Jenga y juegos de destreza",
+     "g": "Disfruta de pulso firme, equilibrio y suspense en juegos físicos.",
+     "p": [
+      "En Jenga sacas un bloque de la torre y lo colocas arriba.",
+      "Toca con suavidad para hallar uno suelto; los del medio suelen ser más fáciles.",
+      "Otros juegos de destreza: lanzar fichas, equilibrar piezas, apilar vasos."
+     ],
+     "q": "Un juego de calma y nervio: respira despacio y mueve con delicadeza.",
+     "c": "Construye una torre pequeña con libros o vasos y añade una pieza cada vez."
+    },
+    "fr": {
+     "t": "Jenga et jeux d'adresse",
+     "g": "Savoure mains sûres, équilibre et suspense dans les jeux physiques.",
+     "p": [
+      "Au Jenga, tu retires un bloc de la tour et le poses au sommet.",
+      "Tapote doucement pour trouver un bloc libre ; ceux du milieu sont souvent plus faciles.",
+      "Autres jeux d'adresse : pichenettes de palets, équilibre de pièces, empilage de gobelets."
+     ],
+     "q": "Un jeu de calme et de sang-froid : respire lentement et bouge avec douceur.",
+     "c": "Construis une petite tour avec des livres ou des gobelets, une pièce à la fois."
+    },
+    "it": {
+     "t": "Jenga e giochi di abilità manuale",
+     "g": "Goditi mani ferme, equilibrio e suspense nei giochi fisici.",
+     "p": [
+      "Nel Jenga togli un blocco dalla torre e lo metti in cima.",
+      "Picchietta piano per trovarne uno libero; quelli centrali sono spesso più facili.",
+      "Altri giochi di destrezza: far scivolare dischi, equilibrare pezzi, impilare bicchieri."
+     ],
+     "q": "Un gioco di calma e nervi saldi: respira piano e muoviti con dolcezza.",
+     "c": "Costruisci una piccola torre con libri o bicchieri, un pezzo alla volta."
+    },
+    "pt": {
+     "t": "Jenga e jogos de destreza",
+     "g": "Desfruta de mão firme, equilíbrio e suspense em jogos físicos.",
+     "p": [
+      "No Jenga tiras um bloco da torre e colocas no topo.",
+      "Bate de leve para achar um solto; os do meio costumam ser mais fáceis.",
+      "Outros jogos de destreza: lançar discos, equilibrar peças, empilhar copos."
+     ],
+     "q": "Um jogo de calma e sangue-frio: respira devagar e mexe com suavidade.",
+     "c": "Constrói uma torre pequena com livros ou copos, uma peça de cada vez."
+    },
+    "pt_BR": {
+     "t": "Jenga e jogos de destreza",
+     "g": "Curta mão firme, equilíbrio e suspense em jogos físicos.",
+     "p": [
+      "No Jenga você tira um bloco da torre e coloca no topo.",
+      "Bata de leve para achar um solto; os do meio costumam ser mais fáceis.",
+      "Outros jogos de destreza: lançar discos, equilibrar peças, empilhar copos."
+     ],
+     "q": "Um jogo de calma e sangue-frio: respire devagar e mexa com suavidade.",
+     "c": "Monte uma torre pequena com livros ou copos, uma peça de cada vez."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Card games that feel like board games",
+     "g": "Meet Uno and other simple card games families play at the table.",
+     "p": [
+      "Uno is a colour and number matching game first published in the 1970s.",
+      "You play a card matching the colour or number of the top one.",
+      "Shedding all your cards first wins, and special cards add surprises."
+     ],
+     "q": "Many easy card games work for ages from about seven.",
+     "c": "Which card game does your family or circle of friends play most?"
+    },
+    "de": {
+     "t": "Kartenspiele wie Brettspiele",
+     "g": "Lerne Uno und andere einfache Kartenspiele für den Familientisch kennen.",
+     "p": [
+      "Uno ist ein Farb- und Zahlenspiel, das erstmals in den 1970ern erschien.",
+      "Du spielst eine Karte, die zu Farbe oder Zahl der obersten passt.",
+      "Wer zuerst alle Karten los ist, gewinnt; Sonderkarten bringen Überraschungen."
+     ],
+     "q": "Viele einfache Kartenspiele funktionieren ab etwa sieben Jahren.",
+     "c": "Welches Kartenspiel spielt deine Familie oder dein Freundeskreis am meisten?"
+    },
+    "es": {
+     "t": "Juegos de cartas que parecen de mesa",
+     "g": "Conoce el Uno y otros juegos de cartas sencillos para toda la familia.",
+     "p": [
+      "El Uno es un juego de colores y números publicado por primera vez en los años 70.",
+      "Juegas una carta del mismo color o número que la de arriba.",
+      "Gana quien primero se queda sin cartas, y las cartas especiales sorprenden."
+     ],
+     "q": "Muchos juegos de cartas fáciles sirven desde unos siete años.",
+     "c": "¿Qué juego de cartas juega más tu familia o tu grupo de amigos?"
+    },
+    "fr": {
+     "t": "Jeux de cartes qui ressemblent à des jeux de plateau",
+     "g": "Découvre l'Uno et d'autres jeux de cartes simples pour la famille.",
+     "p": [
+      "L'Uno est un jeu de couleurs et de chiffres publié pour la première fois dans les années 1970.",
+      "Tu joues une carte de la même couleur ou du même chiffre que celle du dessus.",
+      "Le premier à se défausser de toutes ses cartes gagne, et les cartes spéciales surprennent."
+     ],
+     "q": "Beaucoup de jeux de cartes faciles conviennent dès sept ans environ.",
+     "c": "À quel jeu de cartes joue le plus ta famille ou ton cercle d'amis ?"
+    },
+    "it": {
+     "t": "Giochi di carte che sembrano da tavolo",
+     "g": "Conosci l'Uno e altri semplici giochi di carte per tutta la famiglia.",
+     "p": [
+      "L'Uno è un gioco di colori e numeri pubblicato per la prima volta negli anni 70.",
+      "Giochi una carta dello stesso colore o numero di quella in cima.",
+      "Vince chi finisce per primo le carte, e le carte speciali sorprendono."
+     ],
+     "q": "Molti giochi di carte facili vanno bene da circa sette anni.",
+     "c": "A quale gioco di carte gioca di più la tua famiglia o la tua compagnia?"
+    },
+    "pt": {
+     "t": "Jogos de cartas que parecem de tabuleiro",
+     "g": "Conhece o Uno e outros jogos de cartas simples para a família.",
+     "p": [
+      "O Uno é um jogo de cores e números publicado pela primeira vez nos anos 70.",
+      "Jogas uma carta da mesma cor ou número que a de cima.",
+      "Ganha quem primeiro ficar sem cartas, e as cartas especiais surpreendem."
+     ],
+     "q": "Muitos jogos de cartas fáceis servem a partir de cerca de sete anos.",
+     "c": "A que jogo de cartas joga mais a tua família ou o teu grupo de amigos?"
+    },
+    "pt_BR": {
+     "t": "Jogos de cartas que parecem de tabuleiro",
+     "g": "Conheça o Uno e outros jogos de cartas simples para a família.",
+     "p": [
+      "O Uno é um jogo de cores e números lançado pela primeira vez nos anos 70.",
+      "Você joga uma carta da mesma cor ou número da que está em cima.",
+      "Vence quem primeiro ficar sem cartas, e as cartas especiais surpreendem."
+     ],
+     "q": "Muitos jogos de cartas fáceis servem a partir de uns sete anos.",
+     "c": "Qual jogo de cartas sua família ou seu grupo de amigos mais joga?"
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Classic family games night",
+     "g": "Choose easy games that work for all ages.",
+     "p": [
+      "Pick games with short rules that can be explained in a couple of minutes.",
+      "Mix luck and skill so younger players have a real chance.",
+      "Keep snacks away from cards and boards, and keep rounds short."
+     ],
+     "q": "End on a high note: play one more quick game everyone enjoys.",
+     "c": "Plan a games night: name three games, and why you chose them."
+    },
+    "de": {
+     "t": "Klassischer Familienspieleabend",
+     "g": "Wähle leichte Spiele, die für alle Altersgruppen passen.",
+     "p": [
+      "Nimm Spiele mit kurzen Regeln, die in ein paar Minuten erklärt sind.",
+      "Mische Glück und Geschick, damit auch Jüngere echte Chancen haben.",
+      "Halte Snacks von Karten und Brett fern und die Runden kurz."
+     ],
+     "q": "Ende mit Schwung: noch ein kurzes Spiel, das allen gefällt.",
+     "c": "Plane einen Spieleabend: Nenne drei Spiele und warum du sie gewählt hast."
+    },
+    "es": {
+     "t": "Noche clásica de juegos en familia",
+     "g": "Elige juegos fáciles que funcionen para todas las edades.",
+     "p": [
+      "Escoge juegos de reglas cortas que se expliquen en un par de minutos.",
+      "Mezcla suerte y habilidad para que los más pequeños tengan opciones reales.",
+      "Aleja los snacks de cartas y tablero, y mantén las rondas cortas."
+     ],
+     "q": "Termina por todo lo alto: un juego rápido más que guste a todos.",
+     "c": "Planea una noche de juegos: nombra tres juegos y por qué los elegiste."
+    },
+    "fr": {
+     "t": "Soirée jeux en famille",
+     "g": "Choisis des jeux faciles qui plaisent à tous les âges.",
+     "p": [
+      "Prends des jeux aux règles courtes, expliquées en quelques minutes.",
+      "Mélange chance et habileté pour que les plus jeunes aient de vraies chances.",
+      "Garde les grignotages loin des cartes et du plateau, et les parties courtes."
+     ],
+     "q": "Termine en beauté : un dernier jeu rapide que tout le monde aime.",
+     "c": "Prépare une soirée jeux : cite trois jeux et pourquoi tu les as choisis."
+    },
+    "it": {
+     "t": "Serata classica di giochi in famiglia",
+     "g": "Scegli giochi facili che vadano bene per tutte le età.",
+     "p": [
+      "Prendi giochi con regole brevi, spiegabili in un paio di minuti.",
+      "Unisci fortuna e abilità, così i più piccoli hanno vere possibilità.",
+      "Tieni gli snack lontani da carte e tabellone e le partite brevi."
+     ],
+     "q": "Chiudi in bellezza: un ultimo gioco veloce che piaccia a tutti.",
+     "c": "Pianifica una serata di giochi: nomina tre giochi e perché li scegli."
+    },
+    "pt": {
+     "t": "Noite clássica de jogos em família",
+     "g": "Escolhe jogos fáceis que funcionem para todas as idades.",
+     "p": [
+      "Escolhe jogos de regras curtas que se expliquem em poucos minutos.",
+      "Mistura sorte e habilidade para os mais novos terem hipóteses reais.",
+      "Afasta os petiscos das cartas e do tabuleiro e mantém as rondas curtas."
+     ],
+     "q": "Termina em beleza: mais um jogo rápido de que todos gostem.",
+     "c": "Planeia uma noite de jogos: diz três jogos e porque os escolheste."
+    },
+    "pt_BR": {
+     "t": "Noite clássica de jogos em família",
+     "g": "Escolha jogos fáceis que funcionem para todas as idades.",
+     "p": [
+      "Escolha jogos de regras curtas que se expliquem em poucos minutos.",
+      "Misture sorte e habilidade para os menores terem chances reais.",
+      "Afaste os petiscos das cartas e do tabuleiro e mantenha as rodadas curtas."
+     ],
+     "q": "Termine em alta: mais um jogo rápido de que todos gostem.",
+     "c": "Planeje uma noite de jogos: diga três jogos e por que os escolheu."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Word game: Describe it without saying it",
+     "g": "Explain a word while avoiding the most obvious hints.",
+     "p": [
+      "Pick a word, like pizza, and list taboo words, like cheese and Italy.",
+      "Describe it using other words; if you say a taboo word, you lose the point.",
+      "Use categories, opposites, sounds and examples to guide your partner."
+     ],
+     "q": "It is a food that is round, hot and cut in slices. What is it?",
+     "c": "Describe the word umbrella without the words rain or open."
+    },
+    "de": {
+     "t": "Wortspiel: Beschreiben ohne es zu sagen",
+     "g": "Erkläre ein Wort und vermeide dabei die offensichtlichsten Hinweise.",
+     "p": [
+      "Wähle ein Wort, etwa Pizza, und tabuisiere Wörter wie Käse und Italien.",
+      "Beschreibe es mit anderen Wörtern; sagst du ein Tabuwort, verlierst du den Punkt.",
+      "Nutze Kategorien, Gegensätze, Geräusche und Beispiele, um zu führen."
+     ],
+     "q": "Es ist ein Essen, rund, heiß und in Stücke geschnitten. Was ist es?",
+     "c": "Beschreibe das Wort Regenschirm ohne die Wörter Regen oder aufspannen."
+    },
+    "es": {
+     "t": "Juego de palabras: Describir sin decirlo",
+     "g": "Explica una palabra evitando las pistas más obvias.",
+     "p": [
+      "Elige una palabra, como pizza, y una lista prohibida, como queso e Italia.",
+      "Descríbela con otras palabras; si dices una prohibida, pierdes el punto.",
+      "Usa categorías, opuestos, sonidos y ejemplos para guiar a tu pareja."
+     ],
+     "q": "Es una comida redonda, caliente y cortada en porciones. ¿Qué es?",
+     "c": "Describe la palabra paraguas sin las palabras lluvia ni abrir."
+    },
+    "fr": {
+     "t": "Jeu de mots : Décrire sans le dire",
+     "g": "Explique un mot en évitant les indices les plus évidents.",
+     "p": [
+      "Choisis un mot, comme pizza, et des mots interdits, comme fromage et Italie.",
+      "Décris-le avec d'autres mots ; si tu dis un mot interdit, tu perds le point.",
+      "Utilise catégories, contraires, sons et exemples pour guider ton partenaire."
+     ],
+     "q": "C'est un plat rond, chaud, coupé en parts. Qu'est-ce que c'est ?",
+     "c": "Décris le mot parapluie sans les mots pluie ni ouvrir."
+    },
+    "it": {
+     "t": "Gioco di parole: Descrivere senza dirlo",
+     "g": "Spiega una parola evitando gli indizi più ovvi.",
+     "p": [
+      "Scegli una parola, come pizza, e dei termini vietati, come formaggio e Italia.",
+      "Descrivila con altre parole; se dici un termine vietato, perdi il punto.",
+      "Usa categorie, contrari, suoni ed esempi per guidare il compagno."
+     ],
+     "q": "È un cibo rotondo, caldo e tagliato a spicchi. Cos'è?",
+     "c": "Descrivi la parola ombrello senza le parole pioggia né aprire."
+    },
+    "pt": {
+     "t": "Jogo de palavras: Descrever sem dizer",
+     "g": "Explica uma palavra evitando as pistas mais óbvias.",
+     "p": [
+      "Escolhe uma palavra, como pizza, e uma lista proibida, como queijo e Itália.",
+      "Descreve-a com outras palavras; se disseres uma proibida, perdes o ponto.",
+      "Usa categorias, opostos, sons e exemplos para guiar o teu par."
+     ],
+     "q": "É uma comida redonda, quente e cortada em fatias. O que é?",
+     "c": "Descreve a palavra guarda-chuva sem as palavras chuva nem abrir."
+    },
+    "pt_BR": {
+     "t": "Jogo de palavras: Descrever sem dizer",
+     "g": "Explique uma palavra evitando as pistas mais óbvias.",
+     "p": [
+      "Escolha uma palavra, como pizza, e uma lista proibida, como queijo e Itália.",
+      "Descreva com outras palavras; se disser uma proibida, perde o ponto.",
+      "Use categorias, opostos, sons e exemplos para guiar seu parceiro."
+     ],
+     "q": "É uma comida redonda, quente e cortada em fatias. O que é?",
+     "c": "Descreva a palavra guarda-chuva sem as palavras chuva nem abrir."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Good sportsmanship",
+     "g": "Win kindly, lose gracefully and have fun either way.",
+     "p": [
+      "Shake hands or say good game at the start and the end.",
+      "Celebrate great moves by others, even when they work against you.",
+      "If you lose, ask what you can learn; if you win, stay humble."
+     ],
+     "q": "Be patient with new players and never gloat or hurry them.",
+     "c": "What is one kind thing you can say after a close game?"
+    },
+    "de": {
+     "t": "Fair Play",
+     "g": "Gewinne freundlich, verliere gelassen und hab in beiden Fällen Spaß.",
+     "p": [
+      "Gebt euch zu Beginn und am Ende die Hand oder sagt: gutes Spiel.",
+      "Freue dich über gute Züge anderer, auch wenn sie gegen dich laufen.",
+      "Verlierst du, frage, was du lernen kannst; gewinnst du, bleib bescheiden."
+     ],
+     "q": "Sei geduldig mit Neulingen und trumpfe nie auf oder dränge sie.",
+     "c": "Was Nettes kannst du nach einem knappen Spiel sagen?"
+    },
+    "es": {
+     "t": "Deportividad",
+     "g": "Gana con amabilidad, pierde con elegancia y diviértete en ambos casos.",
+     "p": [
+      "Da la mano o di buen juego al empezar y al terminar.",
+      "Celebra las buenas jugadas de otros, aunque te perjudiquen.",
+      "Si pierdes, pregunta qué puedes aprender; si ganas, mantén la humildad."
+     ],
+     "q": "Ten paciencia con quienes empiezan y nunca presumas ni los apures.",
+     "c": "¿Qué cosa amable puedes decir después de una partida reñida?"
+    },
+    "fr": {
+     "t": "Le fair-play",
+     "g": "Gagne avec gentillesse, perds avec élégance et amuse-toi dans les deux cas.",
+     "p": [
+      "Serre la main ou dis bien joué au début et à la fin.",
+      "Applaudis les beaux coups des autres, même quand ils te desservent.",
+      "Si tu perds, demande ce que tu peux apprendre ; si tu gagnes, reste humble."
+     ],
+     "q": "Sois patient avec les débutants, sans te vanter ni les presser.",
+     "c": "Quelle phrase gentille peux-tu dire après une partie serrée ?"
+    },
+    "it": {
+     "t": "Correttezza sportiva",
+     "g": "Vinci con gentilezza, perdi con eleganza e divertiti in entrambi i casi.",
+     "p": [
+      "Stringi la mano o di' bella partita all'inizio e alla fine.",
+      "Festeggia le belle mosse degli altri, anche se ti danneggiano.",
+      "Se perdi, chiedi cosa puoi imparare; se vinci, resta umile."
+     ],
+     "q": "Sii paziente con i nuovi giocatori, senza vantarti né metter fretta.",
+     "c": "Quale cosa gentile puoi dire dopo una partita combattuta?"
+    },
+    "pt": {
+     "t": "Espírito desportivo",
+     "g": "Ganha com simpatia, perde com elegância e diverte-te nos dois casos.",
+     "p": [
+      "Aperta a mão ou diz bom jogo no início e no fim.",
+      "Celebra as boas jogadas dos outros, mesmo quando te prejudicam.",
+      "Se perderes, pergunta o que podes aprender; se ganhares, sê humilde."
+     ],
+     "q": "Tem paciência com quem começa e nunca te gabes nem os apresses.",
+     "c": "Que coisa simpática podes dizer depois de um jogo renhido?"
+    },
+    "pt_BR": {
+     "t": "Espírito esportivo",
+     "g": "Ganhe com gentileza, perca com elegância e se divirta nos dois casos.",
+     "p": [
+      "Aperte a mão ou diga bom jogo no início e no fim.",
+      "Comemore as boas jogadas dos outros, mesmo quando atrapalham você.",
+      "Se perder, pergunte o que pode aprender; se ganhar, seja humilde."
+     ],
+     "q": "Tenha paciência com quem está começando e nunca se gabe nem apresse.",
+     "c": "Que coisa gentil você pode dizer depois de um jogo disputado?"
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Teaching a game to friends",
+     "g": "Explain the goal first and the details later.",
+     "p": [
+      "Start with one sentence: what are we trying to do?",
+      "Show a sample turn instead of reading every rule aloud.",
+      "Begin playing early, and let rules come up as they matter."
+     ],
+     "q": "Check with a friendly question: does that make sense so far?",
+     "c": "Teach a simple game to someone in under three minutes."
+    },
+    "de": {
+     "t": "Freunden ein Spiel beibringen",
+     "g": "Erkläre zuerst das Ziel und die Details später.",
+     "p": [
+      "Beginne mit einem Satz: Was wollen wir erreichen?",
+      "Zeige einen Beispielzug, statt jede Regel vorzulesen.",
+      "Fangt früh an zu spielen; Regeln kommen, wenn sie wichtig werden."
+     ],
+     "q": "Frage freundlich nach: Ist das bis hierher klar?",
+     "c": "Bringe jemandem ein einfaches Spiel in unter drei Minuten bei."
+    },
+    "es": {
+     "t": "Enseñar un juego a los amigos",
+     "g": "Explica primero la meta y los detalles después.",
+     "p": [
+      "Empieza con una frase: ¿qué intentamos lograr?",
+      "Muestra un turno de ejemplo en vez de leer cada regla en voz alta.",
+      "Empezad a jugar pronto y que las reglas salgan cuando importen."
+     ],
+     "q": "Comprueba con una pregunta amable: ¿se entiende hasta aquí?",
+     "c": "Enseña un juego sencillo a alguien en menos de tres minutos."
+    },
+    "fr": {
+     "t": "Enseigner un jeu à ses amis",
+     "g": "Explique d'abord le but et les détails ensuite.",
+     "p": [
+      "Commence par une phrase : qu'essaie-t-on de faire ?",
+      "Montre un tour d'exemple plutôt que de lire chaque règle à voix haute.",
+      "Commencez à jouer tôt, et les règles viendront quand elles comptent."
+     ],
+     "q": "Vérifie avec une question amicale : c'est clair jusque-là ?",
+     "c": "Enseigne un jeu simple à quelqu'un en moins de trois minutes."
+    },
+    "it": {
+     "t": "Insegnare un gioco agli amici",
+     "g": "Spiega prima l'obiettivo e i dettagli dopo.",
+     "p": [
+      "Parti con una frase: che cosa cerchiamo di fare?",
+      "Mostra un turno d'esempio invece di leggere ogni regola ad alta voce.",
+      "Iniziate a giocare presto e le regole verranno quando contano."
+     ],
+     "q": "Verifica con una domanda gentile: finora è chiaro?",
+     "c": "Insegna un gioco semplice a qualcuno in meno di tre minuti."
+    },
+    "pt": {
+     "t": "Ensinar um jogo a amigos",
+     "g": "Explica primeiro o objetivo e os detalhes depois.",
+     "p": [
+      "Começa com uma frase: o que estamos a tentar fazer?",
+      "Mostra uma jogada de exemplo em vez de ler cada regra em voz alta.",
+      "Comecem a jogar cedo e as regras surgem quando importarem."
+     ],
+     "q": "Confirma com uma pergunta amiga: está claro até aqui?",
+     "c": "Ensina um jogo simples a alguém em menos de três minutos."
+    },
+    "pt_BR": {
+     "t": "Ensinar um jogo para os amigos",
+     "g": "Explique primeiro o objetivo e os detalhes depois.",
+     "p": [
+      "Comece com uma frase: o que estamos tentando fazer?",
+      "Mostre uma jogada de exemplo em vez de ler cada regra em voz alta.",
+      "Comecem a jogar cedo e as regras surgem quando importarem."
+     ],
+     "q": "Confirme com uma pergunta amiga: está claro até aqui?",
+     "c": "Ensine um jogo simples para alguém em menos de três minutos."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "House rules",
+     "g": "Learn about small changes players invent and when they help or hurt.",
+     "p": [
+      "House rules are friendly changes that a group agrees on before playing.",
+      "They can make a game easier for kids or shorter for a busy evening.",
+      "Agree on them first, and make sure everyone is comfortable."
+     ],
+     "q": "Too many changes can break balance, so try one at a time.",
+     "c": "What house rule have you or your family ever invented for a game?"
+    },
+    "de": {
+     "t": "Hausregeln",
+     "g": "Erfahre, welche kleinen Änderungen Spieler erfinden und wann sie helfen.",
+     "p": [
+      "Hausregeln sind freundliche Änderungen, auf die sich die Gruppe vor dem Spiel einigt.",
+      "Sie machen ein Spiel für Kinder leichter oder für einen vollen Abend kürzer.",
+      "Einigt euch vorher und achtet darauf, dass sich alle wohlfühlen."
+     ],
+     "q": "Zu viele Änderungen stören das Gleichgewicht, also eine nach der anderen.",
+     "c": "Welche Hausregel hast du oder deine Familie schon einmal erfunden?"
+    },
+    "es": {
+     "t": "Reglas de la casa",
+     "g": "Conoce los pequeños cambios que inventan los jugadores y cuándo ayudan.",
+     "p": [
+      "Las reglas de la casa son cambios amistosos que el grupo acuerda antes de jugar.",
+      "Pueden hacer un juego más fácil para niños o más corto para una tarde ocupada.",
+      "Acordadlas antes y aseguraos de que todos estén cómodos."
+     ],
+     "q": "Demasiados cambios rompen el equilibrio, así que probad de uno en uno.",
+     "c": "¿Qué regla de la casa has inventado tú o tu familia alguna vez?"
+    },
+    "fr": {
+     "t": "Les règles maison",
+     "g": "Découvre les petits changements que les joueurs inventent et quand ils aident.",
+     "p": [
+      "Les règles maison sont des changements amicaux décidés avant de jouer.",
+      "Elles peuvent faciliter un jeu pour les enfants ou le raccourcir pour une soirée chargée.",
+      "Mettez-vous d'accord d'abord et vérifiez que chacun est à l'aise."
+     ],
+     "q": "Trop de changements brisent l'équilibre, essayez-en un à la fois.",
+     "c": "Quelle règle maison toi ou ta famille avez-vous déjà inventée ?"
+    },
+    "it": {
+     "t": "Regole della casa",
+     "g": "Scopri i piccoli cambiamenti che i giocatori inventano e quando aiutano.",
+     "p": [
+      "Le regole della casa sono modifiche amichevoli concordate prima di giocare.",
+      "Possono rendere un gioco più facile per i bambini o più breve per una sera di fretta.",
+      "Concordatele prima e assicuratevi che tutti siano a proprio agio."
+     ],
+     "q": "Troppi cambi rompono l'equilibrio, quindi provatene uno alla volta.",
+     "c": "Quale regola della casa hai inventato tu o la tua famiglia?"
+    },
+    "pt": {
+     "t": "Regras da casa",
+     "g": "Descobre as pequenas mudanças que os jogadores inventam e quando ajudam.",
+     "p": [
+      "As regras da casa são mudanças amigáveis combinadas antes de jogar.",
+      "Podem tornar um jogo mais fácil para crianças ou mais curto numa noite ocupada.",
+      "Combinem-nas primeiro e certifiquem-se de que todos estão à vontade."
+     ],
+     "q": "Demasiadas mudanças quebram o equilíbrio, por isso experimentem uma de cada vez.",
+     "c": "Que regra da casa já inventaste tu ou a tua família?"
+    },
+    "pt_BR": {
+     "t": "Regras da casa",
+     "g": "Descubra as pequenas mudanças que os jogadores inventam e quando ajudam.",
+     "p": [
+      "Regras da casa são mudanças amigáveis combinadas antes de jogar.",
+      "Podem deixar um jogo mais fácil para crianças ou mais curto numa noite corrida.",
+      "Combinem antes e confirmem que todos estão à vontade."
+     ],
+     "q": "Muitas mudanças quebram o equilíbrio, então testem uma de cada vez.",
+     "c": "Que regra da casa você ou sua família já inventou?"
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Playing with children",
+     "g": "Choose simple games, gentle rules and keep everyone involved.",
+     "p": [
+      "Pick games with short turns, because young children lose focus fast.",
+      "Use colours, pictures and simple counting instead of reading.",
+      "Let them win sometimes, but also let them learn to lose happily."
+     ],
+     "q": "Praise effort and good ideas more than the final result.",
+     "c": "Name a game a child could play, and one rule you would simplify."
+    },
+    "de": {
+     "t": "Spielen mit Kindern",
+     "g": "Wähle einfache Spiele, sanfte Regeln und beziehe alle ein.",
+     "p": [
+      "Nimm Spiele mit kurzen Zügen, denn kleine Kinder verlieren schnell den Faden.",
+      "Nutze Farben, Bilder und einfaches Zählen statt Lesen.",
+      "Lass sie manchmal gewinnen, aber auch fröhlich verlieren lernen."
+     ],
+     "q": "Lobe Mühe und gute Ideen mehr als das Endergebnis.",
+     "c": "Nenne ein Spiel für Kinder und eine Regel, die du vereinfachen würdest."
+    },
+    "es": {
+     "t": "Jugar con niños",
+     "g": "Elige juegos simples, reglas suaves y mantén a todos involucrados.",
+     "p": [
+      "Escoge juegos de turnos cortos, porque los más pequeños pierden pronto la atención.",
+      "Usa colores, imágenes y conteo sencillo en lugar de lectura.",
+      "Déjalos ganar a veces, pero también aprender a perder con alegría."
+     ],
+     "q": "Elogia el esfuerzo y las buenas ideas más que el resultado final.",
+     "c": "Nombra un juego que un niño pueda jugar y una regla que simplificarías."
+    },
+    "fr": {
+     "t": "Jouer avec des enfants",
+     "g": "Choisis des jeux simples, des règles douces et implique tout le monde.",
+     "p": [
+      "Prends des jeux aux tours courts, car les petits perdent vite le fil.",
+      "Utilise couleurs, images et comptage simple plutôt que la lecture.",
+      "Laisse-les gagner parfois, mais aide-les aussi à perdre avec le sourire."
+     ],
+     "q": "Félicite l'effort et les bonnes idées plus que le résultat final.",
+     "c": "Cite un jeu adapté à un enfant et une règle que tu simplifierais."
+    },
+    "it": {
+     "t": "Giocare con i bambini",
+     "g": "Scegli giochi semplici, regole dolci e coinvolgi tutti.",
+     "p": [
+      "Prendi giochi con turni brevi, perché i più piccoli perdono presto l'attenzione.",
+      "Usa colori, immagini e semplici conteggi invece della lettura.",
+      "Lasciali vincere ogni tanto, ma aiutali anche a perdere con il sorriso."
+     ],
+     "q": "Elogia l'impegno e le buone idee più del risultato finale.",
+     "c": "Nomina un gioco adatto a un bambino e una regola che semplificheresti."
+    },
+    "pt": {
+     "t": "Jogar com crianças",
+     "g": "Escolhe jogos simples, regras suaves e mantém todos envolvidos.",
+     "p": [
+      "Escolhe jogos de jogadas curtas, porque os mais pequenos perdem depressa a atenção.",
+      "Usa cores, imagens e contagens simples em vez de leitura.",
+      "Deixa-os ganhar às vezes, mas também aprender a perder com alegria."
+     ],
+     "q": "Elogia o esforço e as boas ideias mais do que o resultado final.",
+     "c": "Diz um jogo que uma criança possa jogar e uma regra que simplificarias."
+    },
+    "pt_BR": {
+     "t": "Jogar com crianças",
+     "g": "Escolha jogos simples, regras suaves e mantenha todos envolvidos.",
+     "p": [
+      "Escolha jogos de jogadas curtas, porque os pequenos perdem rápido o foco.",
+      "Use cores, imagens e contagens simples em vez de leitura.",
+      "Deixe-os ganhar às vezes, mas também aprender a perder com alegria."
+     ],
+     "q": "Elogie o esforço e as boas ideias mais do que o resultado final.",
+     "c": "Diga um jogo que uma criança possa jogar e uma regra que você simplificaria."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Word game: Alphabet journey",
+     "g": "Take turns naming things from A to Z on a theme.",
+     "p": [
+      "Pick a theme, like animals, and go through the alphabet in order.",
+      "Player one says ant, player two says bear, and so on up to Z.",
+      "If Q, X or Z are hard, allow near answers or help each other."
+     ],
+     "q": "The journey is a team win when you reach Z together.",
+     "c": "Theme: food. What is your word for the letter C?"
+    },
+    "de": {
+     "t": "Wortspiel: Alphabet-Reise",
+     "g": "Nennt abwechselnd Dinge von A bis Z zu einem Thema.",
+     "p": [
+      "Wählt ein Thema, etwa Tiere, und geht das Alphabet der Reihe nach durch.",
+      "Spieler eins sagt Affe, Spieler zwei Bär, und so weiter bis Z.",
+      "Sind Q, X oder Z schwer, erlaubt Verwandtes oder helft einander."
+     ],
+     "q": "Die Reise ist ein Teamsieg, wenn ihr gemeinsam Z erreicht.",
+     "c": "Thema Essen: Welches Wort hast du für den Buchstaben C?"
+    },
+    "es": {
+     "t": "Juego de palabras: Viaje por el alfabeto",
+     "g": "Turnaos para nombrar cosas de la A a la Z sobre un tema.",
+     "p": [
+      "Elegid un tema, como animales, y recorred el alfabeto en orden.",
+      "El jugador uno dice abeja, el dos burro, y así hasta la Z.",
+      "Si Q, X o Z cuestan, aceptad respuestas cercanas o ayudaos."
+     ],
+     "q": "Es una victoria de equipo cuando llegáis juntos a la Z.",
+     "c": "Tema comida: ¿qué palabra tienes para la letra C?"
+    },
+    "fr": {
+     "t": "Jeu de mots : Voyage dans l'alphabet",
+     "g": "À tour de rôle, citez des choses de A à Z sur un thème.",
+     "p": [
+      "Choisissez un thème, comme les animaux, et parcourez l'alphabet dans l'ordre.",
+      "Le joueur un dit abeille, le deux biche, et ainsi de suite jusqu'à Z.",
+      "Si Q, X ou Z sont difficiles, acceptez des réponses proches ou aidez-vous."
+     ],
+     "q": "Le voyage est une victoire d'équipe quand vous atteignez Z ensemble.",
+     "c": "Thème nourriture : quel mot as-tu pour la lettre C ?"
+    },
+    "it": {
+     "t": "Gioco di parole: Viaggio nell'alfabeto",
+     "g": "A turno, nominate cose dalla A alla Z su un tema.",
+     "p": [
+      "Scegliete un tema, come gli animali, e percorrete l'alfabeto in ordine.",
+      "Il giocatore uno dice ape, il due balena, e così via fino alla Z.",
+      "Se Q, X o Z sono difficili, accettate risposte vicine o aiutatevi."
+     ],
+     "q": "Il viaggio è una vittoria di squadra quando arrivate insieme alla Z.",
+     "c": "Tema cibo: che parola hai per la lettera C?"
+    },
+    "pt": {
+     "t": "Jogo de palavras: Viagem pelo alfabeto",
+     "g": "Nomeiem coisas à vez, de A a Z, sobre um tema.",
+     "p": [
+      "Escolham um tema, como animais, e percorram o alfabeto por ordem.",
+      "O jogador um diz abelha, o dois burro, e assim até ao Z.",
+      "Se Q, X ou Z forem difíceis, aceitem respostas próximas ou ajudem-se."
+     ],
+     "q": "A viagem é uma vitória de equipa quando chegam juntos ao Z.",
+     "c": "Tema comida: que palavra tens para a letra C?"
+    },
+    "pt_BR": {
+     "t": "Jogo de palavras: Viagem pelo alfabeto",
+     "g": "Citem coisas em turnos, de A a Z, sobre um tema.",
+     "p": [
+      "Escolham um tema, como animais, e percorram o alfabeto em ordem.",
+      "O jogador um diz abelha, o dois burro, e assim até o Z.",
+      "Se Q, X ou Z forem difíceis, aceitem respostas próximas ou ajudem-se."
+     ],
+     "q": "A viagem é uma vitória de equipe quando chegam juntos ao Z.",
+     "c": "Tema comida: que palavra você tem para a letra C?"
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "home_organisation",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The weekly reset",
+     "g": "Take one longer tidy each week to catch what daily habits missed.",
+     "p": [
+      "Pick a regular slot, such as Sunday afternoon, for about thirty minutes.",
+      "Walk through each room, put things back and note anything that needs fixing.",
+      "Glance at the week ahead and prepare what you will need."
+     ],
+     "q": "Which day of the week suits a weekly reset best?",
+     "c": "Put a weekly reset slot in your calendar and do a short version today."
+    },
+    "de": {
+     "t": "Der Wochen-Reset",
+     "g": "Gönne dir einmal pro Woche ein längeres Aufräumen für alles, was täglich liegen blieb.",
+     "p": [
+      "Wähle einen festen Termin, etwa Sonntagnachmittag, für etwa dreißig Minuten.",
+      "Geh durch jeden Raum, räume zurück und notiere, was repariert werden muss.",
+      "Wirf einen Blick auf die kommende Woche und bereite vor, was du brauchst."
+     ],
+     "q": "Welcher Wochentag passt am besten für einen Wochen-Reset?",
+     "c": "Trage einen Termin für den Wochen-Reset in den Kalender ein und mache heute eine Kurzversion."
+    },
+    "es": {
+     "t": "El reinicio semanal",
+     "g": "Dedica un repaso más largo cada semana a lo que no cubrieron los hábitos diarios.",
+     "p": [
+      "Elige un momento fijo, como el domingo por la tarde, unos treinta minutos.",
+      "Recorre cada habitación, devuelve las cosas y anota lo que haya que arreglar.",
+      "Echa un vistazo a la semana siguiente y prepara lo que necesitarás."
+     ],
+     "q": "¿Qué día de la semana te viene mejor para el reinicio semanal?",
+     "c": "Apunta un hueco semanal en tu calendario y haz hoy una versión corta."
+    },
+    "fr": {
+     "t": "La remise à zéro hebdomadaire",
+     "g": "Prends un rangement plus long chaque semaine pour rattraper ce que le quotidien a oublié.",
+     "p": [
+      "Choisis un créneau régulier, comme le dimanche après-midi, environ trente minutes.",
+      "Parcours chaque pièce, remets les choses en place et note ce qui est à réparer.",
+      "Jette un œil à la semaine à venir et prépare ce dont tu auras besoin."
+     ],
+     "q": "Quel jour de la semaine conviendrait le mieux à ce rendez-vous ?",
+     "c": "Note un créneau hebdomadaire dans ton agenda et fais-en une version courte aujourd'hui."
+    },
+    "it": {
+     "t": "Il riordino settimanale",
+     "g": "Dedica ogni settimana un riordino più lungo a ciò che le abitudini quotidiane hanno lasciato.",
+     "p": [
+      "Scegli un momento fisso, come la domenica pomeriggio, per circa trenta minuti.",
+      "Passa in ogni stanza, rimetti a posto e annota cosa va riparato.",
+      "Guarda la settimana che arriva e prepara ciò che ti servirà."
+     ],
+     "q": "Quale giorno della settimana ti va meglio per il riordino settimanale?",
+     "c": "Segna un appuntamento settimanale in calendario e fanne oggi una versione breve."
+    },
+    "pt": {
+     "t": "O reset semanal",
+     "g": "Faz uma arrumação mais longa por semana para o que os hábitos diários não apanharam.",
+     "p": [
+      "Escolhe um momento fixo, como domingo à tarde, durante cerca de trinta minutos.",
+      "Percorre cada divisão, volta a pôr as coisas no sítio e anota o que precisa de arranjo.",
+      "Dá uma olhadela à semana que vem e prepara o que vais precisar."
+     ],
+     "q": "Que dia da semana te serve melhor para o reset semanal?",
+     "c": "Marca um espaço semanal no calendário e faz hoje uma versão curta."
+    },
+    "pt_BR": {
+     "t": "O reset semanal",
+     "g": "Faça uma arrumação mais longa por semana para o que os hábitos diários não pegaram.",
+     "p": [
+      "Escolha um horário fixo, como domingo à tarde, por cerca de trinta minutos.",
+      "Percorra cada cômodo, guarde as coisas no lugar e anote o que precisa de conserto.",
+      "Dê uma olhada na semana que vem e prepare o que for precisar."
+     ],
+     "q": "Que dia da semana é melhor para o reset semanal?",
+     "c": "Marque um horário semanal na agenda e faça hoje uma versão curta."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Labels made simple",
+     "g": "Learn when labels help and why short, clear words work best.",
+     "p": [
+      "Labels help most on shared spaces, closed boxes and rarely opened shelves.",
+      "Use one or two plain words, written large enough to read quickly.",
+      "Pencil or removable labels let you change your mind later."
+     ],
+     "q": "Where in your home would a label save you a question?",
+     "c": "Label one box or shelf today using a single clear word."
+    },
+    "de": {
+     "t": "Etiketten leicht gemacht",
+     "g": "Lerne, wann Etiketten helfen und warum kurze, klare Wörter am besten sind.",
+     "p": [
+      "Etiketten helfen besonders bei gemeinsamen Räumen, geschlossenen Kisten und selten genutzten Regalen.",
+      "Nimm ein oder zwei einfache Wörter, groß genug zum schnellen Lesen.",
+      "Bleistift oder ablösbare Etiketten lassen spätere Änderungen zu."
+     ],
+     "q": "Wo in deinem Zuhause würde ein Etikett dir eine Frage ersparen?",
+     "c": "Beschrifte heute eine Kiste oder ein Regal mit einem klaren Wort."
+    },
+    "es": {
+     "t": "Etiquetas sin complicarse",
+     "g": "Aprende cuándo ayudan las etiquetas y por qué funcionan mejor las palabras cortas.",
+     "p": [
+      "Ayudan más en espacios compartidos, cajas cerradas y estantes que se abren poco.",
+      "Usa una o dos palabras sencillas, lo bastante grandes para leerlas rápido.",
+      "Las etiquetas a lápiz o removibles permiten cambiar de idea después."
+     ],
+     "q": "¿Dónde de tu casa una etiqueta te ahorraría una pregunta?",
+     "c": "Etiqueta hoy una caja o balda con una sola palabra clara."
+    },
+    "fr": {
+     "t": "Étiquettes en toute simplicité",
+     "g": "Apprends quand les étiquettes aident et pourquoi les mots courts sont les meilleurs.",
+     "p": [
+      "Elles aident surtout dans les espaces partagés, les boîtes fermées et les étagères rarement ouvertes.",
+      "Utilise un ou deux mots simples, assez grands pour être lus vite.",
+      "Des étiquettes au crayon ou amovibles permettent de changer d'avis."
+     ],
+     "q": "Où chez toi une étiquette t'éviterait-elle une question ?",
+     "c": "Étiquette aujourd'hui une boîte ou une étagère avec un seul mot clair."
+    },
+    "it": {
+     "t": "Etichette senza complicazioni",
+     "g": "Impara quando le etichette aiutano e perché le parole brevi funzionano meglio.",
+     "p": [
+      "Aiutano soprattutto negli spazi condivisi, nelle scatole chiuse e nei ripiani aperti di rado.",
+      "Usa una o due parole semplici, abbastanza grandi da leggere in fretta.",
+      "Etichette a matita o rimovibili ti permettono di cambiare idea."
+     ],
+     "q": "Dove in casa tua un'etichetta ti risparmierebbe una domanda?",
+     "c": "Etichetta oggi una scatola o un ripiano con una sola parola chiara."
+    },
+    "pt": {
+     "t": "Etiquetas sem complicar",
+     "g": "Aprende quando as etiquetas ajudam e porque as palavras curtas funcionam melhor.",
+     "p": [
+      "Ajudam mais em espaços partilhados, caixas fechadas e prateleiras pouco abertas.",
+      "Usa uma ou duas palavras simples, grandes o suficiente para ler depressa.",
+      "Etiquetas a lápis ou removíveis permitem mudar de ideias depois."
+     ],
+     "q": "Onde na tua casa uma etiqueta te pouparia uma pergunta?",
+     "c": "Etiqueta hoje uma caixa ou prateleira com uma só palavra clara."
+    },
+    "pt_BR": {
+     "t": "Etiquetas sem complicação",
+     "g": "Aprenda quando as etiquetas ajudam e por que palavras curtas funcionam melhor.",
+     "p": [
+      "Ajudam mais em espaços compartilhados, caixas fechadas e prateleiras pouco abertas.",
+      "Use uma ou duas palavras simples, grandes o bastante para ler rápido.",
+      "Etiquetas a lápis ou removíveis permitem mudar de ideia depois."
+     ],
+     "q": "Onde na sua casa uma etiqueta pouparia uma pergunta?",
+     "c": "Etiquete hoje uma caixa ou prateleira com uma só palavra clara."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Clear or closed containers",
+     "g": "Learn when see-through boxes help and when closed ones look calmer.",
+     "p": [
+      "See-through boxes show contents fast, ideal for snacks, cables or craft items.",
+      "Closed or opaque boxes look calmer and hide visual noise on open shelves.",
+      "Whichever you choose, label the front and keep the lid easy to remove."
+     ],
+     "q": "Which things at home do you need to see to remember?",
+     "c": "Pick one shelf and decide whether clear or closed boxes would suit it."
+    },
+    "de": {
+     "t": "Durchsichtige oder geschlossene Boxen",
+     "g": "Lerne, wann durchsichtige Boxen helfen und wann geschlossene ruhiger wirken.",
+     "p": [
+      "Durchsichtige Boxen zeigen den Inhalt schnell, ideal für Snacks, Kabel oder Bastelzeug.",
+      "Geschlossene Boxen wirken ruhiger und verbergen Unruhe in offenen Regalen.",
+      "Beschrifte in jedem Fall die Vorderseite und halte den Deckel leicht abnehmbar."
+     ],
+     "q": "Welche Dinge musst du sehen, um an sie zu denken?",
+     "c": "Wähle ein Regal und entscheide, ob durchsichtige oder geschlossene Boxen besser passen."
+    },
+    "es": {
+     "t": "Cajas transparentes o cerradas",
+     "g": "Aprende cuándo ayudan las cajas transparentes y cuándo las cerradas dan más calma.",
+     "p": [
+      "Las transparentes muestran el contenido rápido, ideales para snacks, cables o manualidades.",
+      "Las cerradas u opacas se ven más serenas y ocultan el ruido visual en estantes abiertos.",
+      "Elijas lo que elijas, etiqueta el frente y que la tapa se quite fácil."
+     ],
+     "q": "¿Qué cosas de casa necesitas ver para acordarte de ellas?",
+     "c": "Elige una balda y decide si le irían mejor cajas transparentes o cerradas."
+    },
+    "fr": {
+     "t": "Boîtes transparentes ou fermées",
+     "g": "Apprends quand les boîtes transparentes aident et quand les opaques apaisent.",
+     "p": [
+      "Les transparentes montrent vite le contenu, idéales pour encas, câbles ou loisirs créatifs.",
+      "Les opaques paraissent plus calmes et masquent le bruit visuel sur les étagères ouvertes.",
+      "Dans les deux cas, étiquette l'avant et choisis un couvercle facile à retirer."
+     ],
+     "q": "Quelles choses chez toi dois-tu voir pour y penser ?",
+     "c": "Choisis une étagère et décide si des boîtes transparentes ou opaques lui iraient mieux."
+    },
+    "it": {
+     "t": "Contenitori trasparenti o chiusi",
+     "g": "Impara quando aiutano i contenitori trasparenti e quando quelli chiusi calmano di più.",
+     "p": [
+      "I trasparenti mostrano subito il contenuto, ideali per snack, cavi o hobby creativi.",
+      "Quelli opachi sembrano più calmi e nascondono il rumore visivo sui ripiani aperti.",
+      "In ogni caso, etichetta il fronte e scegli un coperchio facile da togliere."
+     ],
+     "q": "Quali cose di casa devi vedere per ricordartene?",
+     "c": "Scegli un ripiano e decidi se starebbero meglio contenitori trasparenti o chiusi."
+    },
+    "pt": {
+     "t": "Caixas transparentes ou fechadas",
+     "g": "Aprende quando as caixas transparentes ajudam e quando as fechadas acalmam mais.",
+     "p": [
+      "As transparentes mostram o conteúdo depressa, ideais para snacks, cabos ou trabalhos manuais.",
+      "As fechadas ou opacas parecem mais calmas e escondem o ruído visual em prateleiras abertas.",
+      "Seja qual for a escolha, etiqueta a frente e usa uma tampa fácil de tirar."
+     ],
+     "q": "Que coisas em casa precisas de ver para te lembrares delas?",
+     "c": "Escolhe uma prateleira e decide se ficam melhor caixas transparentes ou fechadas."
+    },
+    "pt_BR": {
+     "t": "Caixas transparentes ou fechadas",
+     "g": "Aprenda quando as caixas transparentes ajudam e quando as fechadas acalmam mais.",
+     "p": [
+      "As transparentes mostram o conteúdo rápido, ótimas para lanches, cabos ou artesanato.",
+      "As fechadas ou opacas parecem mais calmas e escondem a poluição visual em prateleiras abertas.",
+      "Seja qual for a escolha, etiquete a frente e use uma tampa fácil de tirar."
+     ],
+     "q": "Que coisas da sua casa você precisa ver para lembrar?",
+     "c": "Escolha uma prateleira e decida se ficam melhor caixas transparentes ou fechadas."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Thinking vertically",
+     "g": "Use wall space and height to gain room without buying more furniture.",
+     "p": [
+      "Walls, doors and the space above furniture are often unused.",
+      "Shelf risers and stacking let you use the full height of a cupboard.",
+      "Keep heavy things low and secure anything tall so it cannot fall."
+     ],
+     "q": "Where in your home is there empty wall or height?",
+     "c": "Find one vertical spot, such as a door or wall, and plan what could go there."
+    },
+    "de": {
+     "t": "In die Höhe denken",
+     "g": "Nutze Wand und Höhe, um Platz zu gewinnen, ohne neue Möbel zu kaufen.",
+     "p": [
+      "Wände, Türen und der Platz über Möbeln bleiben oft ungenutzt.",
+      "Regaleinsätze und Stapeln nutzen die ganze Schrankhöhe.",
+      "Schweres gehört nach unten, Hohes sichere gegen Umfallen."
+     ],
+     "q": "Wo in deinem Zuhause gibt es freie Wand oder Höhe?",
+     "c": "Finde einen senkrechten Platz, etwa Tür oder Wand, und plane, was dorthin könnte."
+    },
+    "es": {
+     "t": "Pensar en vertical",
+     "g": "Usa la pared y la altura para ganar espacio sin comprar más muebles.",
+     "p": [
+      "Paredes, puertas y el espacio sobre los muebles suelen estar sin usar.",
+      "Los elevadores de balda y apilar aprovechan toda la altura del armario.",
+      "Lo pesado, abajo; asegura lo alto para que no pueda caerse."
+     ],
+     "q": "¿Dónde de tu casa hay pared o altura vacía?",
+     "c": "Busca un punto vertical, como una puerta o pared, y planea qué podría ir allí."
+    },
+    "fr": {
+     "t": "Penser en hauteur",
+     "g": "Utilise les murs et la hauteur pour gagner de la place sans acheter de meubles.",
+     "p": [
+      "Murs, portes et espace au-dessus des meubles restent souvent inutilisés.",
+      "Des rehausseurs d'étagère et l'empilage exploitent toute la hauteur d'un placard.",
+      "Le lourd en bas, et fixe ce qui est haut pour qu'il ne tombe pas."
+     ],
+     "q": "Où chez toi y a-t-il un mur ou de la hauteur libres ?",
+     "c": "Trouve un endroit vertical, comme une porte ou un mur, et imagine ce qui pourrait y aller."
+    },
+    "it": {
+     "t": "Pensare in verticale",
+     "g": "Usa pareti e altezza per guadagnare spazio senza comprare altri mobili.",
+     "p": [
+      "Pareti, porte e lo spazio sopra i mobili spesso restano inutilizzati.",
+      "Rialzi per ripiani e impilare sfruttano tutta l'altezza di un armadio.",
+      "Il pesante in basso, e fissa ciò che è alto perché non cada."
+     ],
+     "q": "Dove in casa tua c'è parete o altezza libera?",
+     "c": "Trova un punto verticale, come una porta o una parete, e pianifica cosa potrebbe andarci."
+    },
+    "pt": {
+     "t": "Pensar na vertical",
+     "g": "Usa a parede e a altura para ganhar espaço sem comprar mais móveis.",
+     "p": [
+      "Paredes, portas e o espaço sobre os móveis costumam ficar por usar.",
+      "Elevadores de prateleira e empilhar aproveitam toda a altura do armário.",
+      "O pesado em baixo, e fixa o que é alto para não cair."
+     ],
+     "q": "Onde na tua casa há parede ou altura livres?",
+     "c": "Encontra um ponto vertical, como uma porta ou parede, e planeia o que podia ir lá."
+    },
+    "pt_BR": {
+     "t": "Pensando na vertical",
+     "g": "Use a parede e a altura para ganhar espaço sem comprar mais móveis.",
+     "p": [
+      "Paredes, portas e o espaço acima dos móveis costumam ficar sem uso.",
+      "Elevadores de prateleira e empilhar aproveitam toda a altura do armário.",
+      "O pesado embaixo, e fixe o que é alto para não cair."
+     ],
+     "q": "Onde na sua casa há parede ou altura livre?",
+     "c": "Encontre um ponto vertical, como uma porta ou parede, e planeje o que poderia ir ali."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The famous junk drawer",
+     "g": "Accept one mixed drawer but give it dividers so it stays useful.",
+     "p": [
+      "Every home has a drawer of odds and ends, and that is perfectly fine.",
+      "Use small trays or boxes inside to separate batteries, tape, pens and keys.",
+      "Check it monthly and remove broken or mystery items."
+     ],
+     "q": "What is the strangest thing in your junk drawer?",
+     "c": "Empty your junk drawer, bin what is broken and sort the rest into groups."
+    },
+    "de": {
+     "t": "Die berühmte Krimskramsschublade",
+     "g": "Erlaube dir eine gemischte Schublade, aber teile sie auf, damit sie nützlich bleibt.",
+     "p": [
+      "Jedes Zuhause hat eine Schublade für Kleinkram, und das ist völlig in Ordnung.",
+      "Kleine Schalen oder Boxen darin trennen Batterien, Klebeband, Stifte und Schlüssel.",
+      "Prüfe sie monatlich und entsorge Kaputtes oder Rätselhaftes."
+     ],
+     "q": "Was ist das Seltsamste in deiner Krimskramsschublade?",
+     "c": "Leere deine Krimskramsschublade, entsorge Kaputtes und sortiere den Rest in Gruppen."
+    },
+    "es": {
+     "t": "El famoso cajón de los trastos",
+     "g": "Acepta un cajón mixto, pero ponle separadores para que siga siendo útil.",
+     "p": [
+      "Todas las casas tienen un cajón de cosas sueltas, y está perfectamente bien.",
+      "Pequeñas bandejas o cajas dentro separan pilas, cinta, bolígrafos y llaves.",
+      "Revísalo cada mes y quita lo roto o lo misterioso."
+     ],
+     "q": "¿Qué es lo más raro que hay en tu cajón de los trastos?",
+     "c": "Vacía tu cajón de trastos, tira lo roto y clasifica el resto en grupos."
+    },
+    "fr": {
+     "t": "Le fameux tiroir fourre-tout",
+     "g": "Accepte un tiroir mixte mais ajoute des séparateurs pour qu'il reste utile.",
+     "p": [
+      "Chaque maison a un tiroir de bricoles, et c'est très bien ainsi.",
+      "De petits plateaux ou boîtes séparent piles, ruban adhésif, stylos et clés.",
+      "Vérifie-le chaque mois et retire ce qui est cassé ou mystérieux."
+     ],
+     "q": "Quel est l'objet le plus étrange de ton tiroir fourre-tout ?",
+     "c": "Vide ton tiroir fourre-tout, jette ce qui est cassé et trie le reste par groupes."
+    },
+    "it": {
+     "t": "Il famoso cassetto dei ciarpami",
+     "g": "Accetta un cassetto misto ma dagli dei divisori perché resti utile.",
+     "p": [
+      "Ogni casa ha un cassetto di cose varie, ed è assolutamente normale.",
+      "Piccoli vassoi o scatole dentro separano pile, nastro, penne e chiavi.",
+      "Controllalo ogni mese e togli ciò che è rotto o misterioso."
+     ],
+     "q": "Qual è la cosa più strana nel tuo cassetto dei ciarpami?",
+     "c": "Svuota il cassetto dei ciarpami, butta ciò che è rotto e dividi il resto in gruppi."
+    },
+    "pt": {
+     "t": "A famosa gaveta das tralhas",
+     "g": "Aceita uma gaveta mista, mas põe-lhe divisórias para continuar útil.",
+     "p": [
+      "Todas as casas têm uma gaveta de miudezas, e está tudo bem.",
+      "Pequenos tabuleiros ou caixas lá dentro separam pilhas, fita-cola, canetas e chaves.",
+      "Revê-a todos os meses e tira o que está partido ou misterioso."
+     ],
+     "q": "Qual é a coisa mais estranha na tua gaveta das tralhas?",
+     "c": "Esvazia a gaveta das tralhas, deita fora o que está partido e separa o resto em grupos."
+    },
+    "pt_BR": {
+     "t": "A famosa gaveta de bagulhos",
+     "g": "Aceite uma gaveta mista, mas ponha divisórias para ela continuar útil.",
+     "p": [
+      "Toda casa tem uma gaveta de miudezas, e está tudo bem.",
+      "Pequenas bandejas ou caixas dentro separam pilhas, fita adesiva, canetas e chaves.",
+      "Revise todo mês e tire o que está quebrado ou misterioso."
+     ],
+     "q": "Qual é a coisa mais estranha na sua gaveta de bagulhos?",
+     "c": "Esvazie a gaveta de bagulhos, jogue fora o que está quebrado e separe o resto em grupos."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cables and chargers",
+     "g": "Bundle, label and park cables so devices charge without a tangle.",
+     "p": [
+      "Choose one charging spot so cables are not scattered around the house.",
+      "Wrap each cable loosely with a tie or clip and label both ends.",
+      "Unplug devices that are fully charged and put spare cables in one box."
+     ],
+     "q": "How many chargers do you really use every day?",
+     "c": "Bundle and label every cable at your charging spot today."
+    },
+    "de": {
+     "t": "Kabel und Ladegeräte",
+     "g": "Bündle, beschrifte und parke Kabel, damit Geräte ohne Wirrwarr laden.",
+     "p": [
+      "Wähle einen Ladeplatz, damit Kabel nicht im ganzen Haus verteilt sind.",
+      "Wickle jedes Kabel locker mit Binder oder Clip und beschrifte beide Enden.",
+      "Ziehe volle Geräte ab und lege Ersatzkabel in eine Box."
+     ],
+     "q": "Wie viele Ladegeräte nutzt du wirklich täglich?",
+     "c": "Bündle und beschrifte heute jedes Kabel an deinem Ladeplatz."
+    },
+    "es": {
+     "t": "Cables y cargadores",
+     "g": "Agrupa, etiqueta y aparca los cables para cargar sin enredos.",
+     "p": [
+      "Elige un punto de carga para que los cables no anden por toda la casa.",
+      "Enrolla cada cable sin apretar con una brida o clip y etiqueta ambos extremos.",
+      "Desenchufa lo que ya esté cargado y guarda los cables de repuesto en una caja."
+     ],
+     "q": "¿Cuántos cargadores usas de verdad cada día?",
+     "c": "Agrupa y etiqueta hoy todos los cables de tu punto de carga."
+    },
+    "fr": {
+     "t": "Câbles et chargeurs",
+     "g": "Regroupe, étiquette et range les câbles pour charger sans enchevêtrement.",
+     "p": [
+      "Choisis un coin de charge pour que les câbles ne traînent pas dans toute la maison.",
+      "Enroule chaque câble sans serrer avec un lien ou une pince et étiquette les deux bouts.",
+      "Débranche les appareils chargés et mets les câbles de rechange dans une boîte."
+     ],
+     "q": "Combien de chargeurs utilises-tu vraiment chaque jour ?",
+     "c": "Regroupe et étiquette aujourd'hui chaque câble de ton coin de charge."
+    },
+    "it": {
+     "t": "Cavi e caricabatterie",
+     "g": "Raggruppa, etichetta e sistema i cavi per caricare senza grovigli.",
+     "p": [
+      "Scegli un punto di ricarica così i cavi non sono sparsi per casa.",
+      "Avvolgi ogni cavo senza stringere con una fascetta o un fermaglio ed etichetta le due estremità.",
+      "Scollega i dispositivi carichi e metti i cavi di scorta in una scatola."
+     ],
+     "q": "Quanti caricabatterie usi davvero ogni giorno?",
+     "c": "Raggruppa ed etichetta oggi ogni cavo del tuo punto di ricarica."
+    },
+    "pt": {
+     "t": "Cabos e carregadores",
+     "g": "Agrupa, etiqueta e arruma os cabos para carregar sem emaranhados.",
+     "p": [
+      "Escolhe um ponto de carga para os cabos não andarem pela casa toda.",
+      "Enrola cada cabo sem apertar com uma fita ou mola e etiqueta as duas pontas.",
+      "Desliga o que já está carregado e guarda os cabos sobresselentes numa caixa."
+     ],
+     "q": "Quantos carregadores usas mesmo todos os dias?",
+     "c": "Agrupa e etiqueta hoje cada cabo do teu ponto de carga."
+    },
+    "pt_BR": {
+     "t": "Cabos e carregadores",
+     "g": "Agrupe, etiquete e guarde os cabos para carregar sem embaraço.",
+     "p": [
+      "Escolha um ponto de carga para os cabos não ficarem pela casa toda.",
+      "Enrole cada cabo sem apertar com uma fita ou presilha e etiquete as duas pontas.",
+      "Desligue o que já carregou e guarde os cabos reserva numa caixa."
+     ],
+     "q": "Quantos carregadores você usa de verdade todo dia?",
+     "c": "Agrupe e etiquete hoje cada cabo do seu ponto de carga."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Small trays, big difference",
+     "g": "Use trays and bowls to give loose items a mini home.",
+     "p": [
+      "A tray turns scattered items into a tidy little group.",
+      "Use one for keys, one for jewellery and one for remotes.",
+      "Trays also make surfaces easy to wipe: lift, clean, put back."
+     ],
+     "q": "Which loose items around your home need a tray?",
+     "c": "Put one tray or bowl where small things usually pile up."
+    },
+    "de": {
+     "t": "Kleine Schalen, große Wirkung",
+     "g": "Gib losen Dingen mit Schalen und Tabletts ein kleines Zuhause.",
+     "p": [
+      "Ein Tablett macht aus verstreuten Dingen eine ordentliche kleine Gruppe.",
+      "Nimm eine für Schlüssel, eine für Schmuck und eine für Fernbedienungen.",
+      "Tabletts erleichtern auch das Wischen: hochheben, putzen, zurückstellen."
+     ],
+     "q": "Welche losen Dinge in deinem Zuhause brauchen eine Schale?",
+     "c": "Stelle ein Tablett oder eine Schale dorthin, wo sich Kleinkram meist sammelt."
+    },
+    "es": {
+     "t": "Bandejas pequeñas, gran diferencia",
+     "g": "Usa bandejas y cuencos para dar a lo suelto un mini hogar.",
+     "p": [
+      "Una bandeja convierte cosas dispersas en un pequeño grupo ordenado.",
+      "Usa una para llaves, otra para joyas y otra para mandos.",
+      "Las bandejas también facilitan limpiar: levantar, limpiar, volver a poner."
+     ],
+     "q": "¿Qué cosas sueltas de tu casa necesitan una bandeja?",
+     "c": "Pon una bandeja o cuenco donde suelen acumularse las cosas pequeñas."
+    },
+    "fr": {
+     "t": "Petits plateaux, grand effet",
+     "g": "Utilise plateaux et coupelles pour offrir un mini chez-soi aux objets en vrac.",
+     "p": [
+      "Un plateau transforme des objets éparpillés en un petit groupe soigné.",
+      "Un pour les clés, un pour les bijoux et un pour les télécommandes.",
+      "Les plateaux facilitent aussi le nettoyage : soulever, essuyer, reposer."
+     ],
+     "q": "Quels objets en vrac chez toi ont besoin d'un plateau ?",
+     "c": "Pose un plateau ou une coupelle là où les petites choses s'accumulent."
+    },
+    "it": {
+     "t": "Piccoli vassoi, grande differenza",
+     "g": "Usa vassoi e ciotole per dare una mini casa agli oggetti sparsi.",
+     "p": [
+      "Un vassoio trasforma oggetti sparsi in un piccolo gruppo ordinato.",
+      "Usane uno per le chiavi, uno per i gioielli e uno per i telecomandi.",
+      "I vassoi rendono anche facile pulire: sollevare, passare il panno, rimettere."
+     ],
+     "q": "Quali oggetti sparsi di casa tua hanno bisogno di un vassoio?",
+     "c": "Metti un vassoio o una ciotola dove di solito si accumulano le piccole cose."
+    },
+    "pt": {
+     "t": "Tabuleiros pequenos, grande diferença",
+     "g": "Usa tabuleiros e taças para dar uma mini casa às coisas soltas.",
+     "p": [
+      "Um tabuleiro transforma coisas espalhadas num pequeno grupo arrumado.",
+      "Usa um para chaves, outro para joias e outro para comandos.",
+      "Os tabuleiros também facilitam a limpeza: levantar, limpar, voltar a pôr."
+     ],
+     "q": "Que coisas soltas na tua casa precisam de um tabuleiro?",
+     "c": "Põe um tabuleiro ou taça onde as coisas pequenas costumam acumular-se."
+    },
+    "pt_BR": {
+     "t": "Bandejas pequenas, grande diferença",
+     "g": "Use bandejas e tigelas para dar uma mini casa às coisas soltas.",
+     "p": [
+      "Uma bandeja transforma coisas espalhadas num pequeno grupo arrumado.",
+      "Use uma para chaves, outra para joias e outra para controles remotos.",
+      "As bandejas também facilitam a limpeza: levantar, limpar, voltar ao lugar."
+     ],
+     "q": "Que coisas soltas da sua casa precisam de uma bandeja?",
+     "c": "Coloque uma bandeja ou tigela onde as coisas pequenas costumam se acumular."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Clutter hot spots",
+     "g": "Spot the places where things always pile up and understand why.",
+     "p": [
+      "Hot spots are often near the door, on the table or on a chair.",
+      "Ask why: is there no place for the item, or is the place too far away?",
+      "Solve the cause with a hook, tray or basket, not just with more tidying."
+     ],
+     "q": "Where does clutter gather fastest in your home?",
+     "c": "Name your top two hot spots and plan one small fix for each."
+    },
+    "de": {
+     "t": "Unordnungs-Brennpunkte",
+     "g": "Erkenne die Orte, an denen sich immer alles stapelt, und verstehe warum.",
+     "p": [
+      "Brennpunkte liegen oft an der Tür, auf dem Tisch oder auf einem Stuhl.",
+      "Frage warum: fehlt ein Platz, oder ist der Platz zu weit weg?",
+      "Löse die Ursache mit Haken, Schale oder Korb, nicht nur durch Aufräumen."
+     ],
+     "q": "Wo sammelt sich bei dir die Unordnung am schnellsten?",
+     "c": "Nenne deine zwei größten Brennpunkte und plane für jeden eine kleine Lösung."
+    },
+    "es": {
+     "t": "Focos de desorden",
+     "g": "Detecta los lugares donde siempre se acumulan cosas y entiende por qué.",
+     "p": [
+      "Suelen estar junto a la puerta, sobre la mesa o en una silla.",
+      "Pregúntate por qué: ¿falta un sitio para el objeto o el sitio queda lejos?",
+      "Resuelve la causa con un gancho, bandeja o cesta, no solo ordenando más."
+     ],
+     "q": "¿Dónde se acumula más rápido el desorden en tu casa?",
+     "c": "Nombra tus dos focos principales y planea una pequeña solución para cada uno."
+    },
+    "fr": {
+     "t": "Les points chauds du désordre",
+     "g": "Repère les endroits où les choses s'accumulent toujours et comprends pourquoi.",
+     "p": [
+      "Ils sont souvent près de la porte, sur la table ou sur une chaise.",
+      "Demande-toi pourquoi : n'y a-t-il pas de place, ou la place est-elle trop loin ?",
+      "Traite la cause avec un crochet, un plateau ou un panier, pas seulement en rangeant."
+     ],
+     "q": "Où le désordre s'installe-t-il le plus vite chez toi ?",
+     "c": "Nomme tes deux points chauds et prévois une petite solution pour chacun."
+    },
+    "it": {
+     "t": "I punti caldi del disordine",
+     "g": "Individua i posti dove le cose si accumulano sempre e capisci perché.",
+     "p": [
+      "Spesso sono vicino alla porta, sul tavolo o su una sedia.",
+      "Chiediti perché: manca un posto, o il posto è troppo lontano?",
+      "Risolvi la causa con un gancio, un vassoio o un cesto, non solo riordinando."
+     ],
+     "q": "Dove si accumula più in fretta il disordine a casa tua?",
+     "c": "Indica i tuoi due punti caldi e pianifica una piccola soluzione per ciascuno."
+    },
+    "pt": {
+     "t": "Os pontos críticos da desarrumação",
+     "g": "Identifica os sítios onde as coisas se acumulam sempre e percebe porquê.",
+     "p": [
+      "Costumam ser junto à porta, na mesa ou numa cadeira.",
+      "Pergunta porquê: falta um lugar para o objeto, ou o lugar fica longe?",
+      "Resolve a causa com um gancho, tabuleiro ou cesto, e não só a arrumar."
+     ],
+     "q": "Onde se acumula mais depressa a desarrumação na tua casa?",
+     "c": "Indica os teus dois pontos críticos e planeia uma pequena solução para cada um."
+    },
+    "pt_BR": {
+     "t": "Os pontos críticos da bagunça",
+     "g": "Identifique os lugares onde as coisas sempre se acumulam e entenda por quê.",
+     "p": [
+      "Costumam ser perto da porta, na mesa ou numa cadeira.",
+      "Pergunte por quê: falta um lugar para o objeto, ou o lugar fica longe?",
+      "Resolva a causa com um gancho, bandeja ou cesto, e não só arrumando."
+     ],
+     "q": "Onde a bagunça se acumula mais rápido na sua casa?",
+     "c": "Indique seus dois pontos críticos e planeje uma pequena solução para cada um."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Two-minute decisions",
+     "g": "If putting something away takes under two minutes, do it now.",
+     "p": [
+      "Small tasks grow when postponed, but are tiny when done at once.",
+      "Hang the towel, wipe the spill, file the letter: all under two minutes.",
+      "Bigger jobs go on a list instead of staying in your head."
+     ],
+     "q": "What small task do you often put off?",
+     "c": "Today, do every two-minute task the moment you notice it."
+    },
+    "de": {
+     "t": "Zwei-Minuten-Entscheidungen",
+     "g": "Dauert das Wegräumen unter zwei Minuten, erledige es sofort.",
+     "p": [
+      "Kleine Aufgaben wachsen, wenn man sie aufschiebt, und sind winzig, wenn man sie gleich macht.",
+      "Handtuch aufhängen, Verschüttetes wischen, Brief ablegen: alles unter zwei Minuten.",
+      "Größere Aufgaben kommen auf eine Liste statt in deinen Kopf."
+     ],
+     "q": "Welche kleine Aufgabe schiebst du oft vor dir her?",
+     "c": "Erledige heute jede Zwei-Minuten-Aufgabe sofort, wenn du sie bemerkst."
+    },
+    "es": {
+     "t": "Decisiones de dos minutos",
+     "g": "Si guardar algo lleva menos de dos minutos, hazlo ahora.",
+     "p": [
+      "Las tareas pequeñas crecen si se aplazan y son mínimas si se hacen enseguida.",
+      "Colgar la toalla, limpiar lo derramado, archivar la carta: todo en dos minutos.",
+      "Las tareas grandes van a una lista en vez de quedarse en tu cabeza."
+     ],
+     "q": "¿Qué tarea pequeña sueles dejar para luego?",
+     "c": "Hoy haz cada tarea de dos minutos en cuanto la notes."
+    },
+    "fr": {
+     "t": "Décisions de deux minutes",
+     "g": "Si ranger prend moins de deux minutes, fais-le tout de suite.",
+     "p": [
+      "Les petites tâches grossissent quand on les remet à plus tard.",
+      "Suspendre la serviette, essuyer une tache, classer une lettre : moins de deux minutes.",
+      "Les tâches plus grosses vont sur une liste plutôt que dans ta tête."
+     ],
+     "q": "Quelle petite tâche remets-tu souvent à plus tard ?",
+     "c": "Aujourd'hui, fais chaque tâche de deux minutes dès que tu la remarques."
+    },
+    "it": {
+     "t": "Decisioni da due minuti",
+     "g": "Se riporre qualcosa richiede meno di due minuti, fallo subito.",
+     "p": [
+      "I piccoli compiti crescono se rimandati, e sono minuscoli se fatti subito.",
+      "Appendere l'asciugamano, pulire una macchia, archiviare una lettera: tutto sotto due minuti.",
+      "I lavori più grandi vanno su una lista invece che nella tua testa."
+     ],
+     "q": "Quale piccolo compito rimandi spesso?",
+     "c": "Oggi fai ogni compito da due minuti appena lo noti."
+    },
+    "pt": {
+     "t": "Decisões de dois minutos",
+     "g": "Se arrumar algo demora menos de dois minutos, faz já.",
+     "p": [
+      "As pequenas tarefas crescem se forem adiadas e são mínimas se feitas logo.",
+      "Pendurar a toalha, limpar o derramado, arquivar a carta: tudo em dois minutos.",
+      "As tarefas maiores vão para uma lista em vez de ficarem na cabeça."
+     ],
+     "q": "Que pequena tarefa costumas adiar?",
+     "c": "Hoje faz cada tarefa de dois minutos assim que a notares."
+    },
+    "pt_BR": {
+     "t": "Decisões de dois minutos",
+     "g": "Se guardar algo leva menos de dois minutos, faça agora.",
+     "p": [
+      "As pequenas tarefas crescem se forem adiadas e são mínimas se feitas logo.",
+      "Pendurar a toalha, limpar o que caiu, arquivar a carta: tudo em dois minutos.",
+      "As tarefas maiores vão para uma lista em vez de ficarem na cabeça."
+     ],
+     "q": "Que pequena tarefa você costuma adiar?",
+     "c": "Hoje faça cada tarefa de dois minutos assim que perceber."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your first month",
+     "g": "Look back at drawers, routines and hot spots and pick one habit to strengthen.",
+     "p": [
+      "Think of what changed: drawers, the door spot, the evening tidy.",
+      "Notice what feels easy and what you keep forgetting.",
+      "Choose one habit to keep for the next month and celebrate your progress."
+     ],
+     "q": "Which change from this month are you proudest of?",
+     "c": "Write down three wins from this month and pick the habit to keep."
+    },
+    "de": {
+     "t": "Rückblick: dein erster Monat",
+     "g": "Blicke auf Schubladen, Routinen und Brennpunkte zurück und wähle eine Gewohnheit zum Stärken.",
+     "p": [
+      "Denke daran, was sich verändert hat: Schubladen, der Platz an der Tür, das Abendaufräumen.",
+      "Beachte, was leicht fällt und was du immer vergisst.",
+      "Wähle eine Gewohnheit für den nächsten Monat und feiere deinen Fortschritt."
+     ],
+     "q": "Auf welche Veränderung dieses Monats bist du am stolzesten?",
+     "c": "Schreibe drei Erfolge dieses Monats auf und wähle die Gewohnheit zum Behalten."
+    },
+    "es": {
+     "t": "Repaso: tu primer mes",
+     "g": "Mira atrás: cajones, rutinas y focos de desorden, y elige un hábito que reforzar.",
+     "p": [
+      "Piensa en lo que cambió: cajones, el sitio de la puerta, el repaso de la noche.",
+      "Fíjate en lo que te resulta fácil y en lo que olvidas siempre.",
+      "Elige un hábito para el próximo mes y celebra tu progreso."
+     ],
+     "q": "¿De qué cambio de este mes te sientes más orgulloso?",
+     "c": "Anota tres logros de este mes y elige el hábito que mantendrás."
+    },
+    "fr": {
+     "t": "Bilan : ton premier mois",
+     "g": "Reviens sur tiroirs, routines et points chauds et choisis une habitude à renforcer.",
+     "p": [
+      "Pense à ce qui a changé : tiroirs, coin d'entrée, rangement du soir.",
+      "Remarque ce qui est facile et ce que tu oublies toujours.",
+      "Choisis une habitude pour le mois prochain et fête ton progrès."
+     ],
+     "q": "De quel changement de ce mois es-tu le plus fier ?",
+     "c": "Note trois réussites de ce mois et choisis l'habitude à garder."
+    },
+    "it": {
+     "t": "Ripasso: il tuo primo mese",
+     "g": "Guarda indietro a cassetti, routine e punti caldi e scegli un'abitudine da rafforzare.",
+     "p": [
+      "Pensa a cosa è cambiato: cassetti, il posto vicino alla porta, il riordino serale.",
+      "Nota cosa ti riesce facile e cosa dimentichi sempre.",
+      "Scegli un'abitudine per il prossimo mese e festeggia i progressi."
+     ],
+     "q": "Di quale cambiamento di questo mese sei più orgoglioso?",
+     "c": "Scrivi tre successi di questo mese e scegli l'abitudine da mantenere."
+    },
+    "pt": {
+     "t": "Revisão: o teu primeiro mês",
+     "g": "Olha para trás: gavetas, rotinas e pontos críticos, e escolhe um hábito a reforçar.",
+     "p": [
+      "Pensa no que mudou: gavetas, o cantinho da porta, a arrumação da noite.",
+      "Repara no que é fácil e no que te esqueces sempre.",
+      "Escolhe um hábito para o próximo mês e celebra o teu progresso."
+     ],
+     "q": "Qual a mudança deste mês de que mais te orgulhas?",
+     "c": "Escreve três vitórias deste mês e escolhe o hábito a manter."
+    },
+    "pt_BR": {
+     "t": "Revisão: seu primeiro mês",
+     "g": "Olhe para trás: gavetas, rotinas e pontos críticos, e escolha um hábito para reforçar.",
+     "p": [
+      "Pense no que mudou: gavetas, o cantinho da porta, a arrumação da noite.",
+      "Repare no que é fácil e no que você sempre esquece.",
+      "Escolha um hábito para o próximo mês e comemore seu progresso."
+     ],
+     "q": "De qual mudança deste mês você mais se orgulha?",
+     "c": "Anote três conquistas deste mês e escolha o hábito para manter."
+    }
+   }
+  }
+ ]
+}

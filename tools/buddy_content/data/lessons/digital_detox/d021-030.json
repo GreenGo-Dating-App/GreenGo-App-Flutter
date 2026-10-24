@@ -1,0 +1,835 @@
+{
+ "topic": "digital_detox",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Boredom is not an enemy",
+     "g": "See how small moments of boredom can spark ideas and calm.",
+     "p": [
+      "Boredom is a quiet space where the mind wanders and ideas appear.",
+      "Filling every gap with a screen leaves little room for it.",
+      "A minute of nothing can feel strange at first, then surprisingly good."
+     ],
+     "q": "When did a bored moment last lead you to a good idea?",
+     "c": "Sit for three minutes today with no screen and just let your thoughts wander."
+    },
+    "de": {
+     "t": "Langeweile ist kein Feind",
+     "g": "Sehen, wie kleine Momente der Langeweile Ideen und Ruhe wecken können.",
+     "p": [
+      "Langeweile ist ein stiller Raum, in dem der Geist wandert und Ideen entstehen.",
+      "Wenn jede Lücke mit einem Bildschirm gefüllt wird, bleibt dafür wenig Platz.",
+      "Eine Minute Nichts fühlt sich erst fremd an, dann erstaunlich gut."
+     ],
+     "q": "Wann hat dich ein Moment der Langeweile zuletzt auf eine gute Idee gebracht?",
+     "c": "Sitz heute drei Minuten ohne Bildschirm und lass die Gedanken wandern."
+    },
+    "es": {
+     "t": "El aburrimiento no es un enemigo",
+     "g": "Ver cómo los pequeños momentos de aburrimiento pueden dar ideas y calma.",
+     "p": [
+      "El aburrimiento es un espacio tranquilo donde la mente vaga y surgen ideas.",
+      "Llenar cada hueco con una pantalla deja poco sitio para él.",
+      "Un minuto sin hacer nada resulta raro al principio y luego sorprendentemente bueno."
+     ],
+     "q": "¿Cuándo te llevó un momento de aburrimiento a una buena idea?",
+     "c": "Siéntate tres minutos hoy sin pantalla y deja que tus pensamientos vaguen."
+    },
+    "fr": {
+     "t": "L'ennui n'est pas un ennemi",
+     "g": "Voir comment de petits moments d'ennui peuvent faire naître idées et calme.",
+     "p": [
+      "L'ennui est un espace tranquille où l'esprit vagabonde et où les idées surgissent.",
+      "Remplir chaque vide avec un écran lui laisse peu de place.",
+      "Une minute sans rien faire paraît étrange au début, puis étonnamment agréable."
+     ],
+     "q": "Quand un moment d'ennui t'a-t-il mené à une bonne idée pour la dernière fois ?",
+     "c": "Assieds-toi trois minutes aujourd'hui sans écran et laisse vagabonder tes pensées."
+    },
+    "it": {
+     "t": "La noia non è un nemico",
+     "g": "Vedere come piccoli momenti di noia possono far nascere idee e calma.",
+     "p": [
+      "La noia è uno spazio tranquillo in cui la mente vaga e nascono idee.",
+      "Riempire ogni vuoto con uno schermo le lascia poco posto.",
+      "Un minuto di niente all'inizio sembra strano, poi sorprendentemente piacevole."
+     ],
+     "q": "Quando un momento di noia ti ha portato a una buona idea?",
+     "c": "Siediti tre minuti oggi senza schermo e lascia vagare i pensieri."
+    },
+    "pt": {
+     "t": "O tédio não é um inimigo",
+     "g": "Ver como pequenos momentos de tédio podem trazer ideias e calma.",
+     "p": [
+      "O tédio é um espaço tranquilo onde a mente vagueia e surgem ideias.",
+      "Preencher cada intervalo com um ecrã deixa-lhe pouco espaço.",
+      "Um minuto sem fazer nada parece estranho no início e depois surpreendentemente bom."
+     ],
+     "q": "Quando é que um momento de tédio te levou a uma boa ideia?",
+     "c": "Senta-te três minutos hoje sem ecrã e deixa os pensamentos vaguear."
+    },
+    "pt_BR": {
+     "t": "O tédio não é um inimigo",
+     "g": "Ver como pequenos momentos de tédio podem trazer ideias e calma.",
+     "p": [
+      "O tédio é um espaço tranquilo onde a mente divaga e surgem ideias.",
+      "Preencher cada intervalo com uma tela deixa pouco espaço para ele.",
+      "Um minuto sem fazer nada parece estranho no início e depois surpreendentemente bom."
+     ],
+     "q": "Quando um momento de tédio levou você a uma boa ideia?",
+     "c": "Sente-se três minutos hoje sem tela e deixe os pensamentos divagarem."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Waiting without a phone",
+     "g": "Try a queue or a bus ride with eyes up and phone away.",
+     "p": [
+      "Waiting is a perfect small practice: keep the phone in your pocket.",
+      "Look around, notice sounds, faces and the sky.",
+      "You may even start a short chat with someone nearby."
+     ],
+     "q": "What did you notice around you the last time you were waiting somewhere?",
+     "c": "Next time you wait in a queue or at a stop, keep the phone away for the whole wait."
+    },
+    "de": {
+     "t": "Warten ohne Handy",
+     "g": "Eine Schlange oder Busfahrt mit erhobenem Blick und Handy in der Tasche ausprobieren.",
+     "p": [
+      "Warten ist eine perfekte kleine Übung: Lass das Handy in der Tasche.",
+      "Schau dich um, achte auf Geräusche, Gesichter und den Himmel.",
+      "Vielleicht kommst du sogar kurz mit jemandem ins Gespräch."
+     ],
+     "q": "Was ist dir zuletzt beim Warten um dich herum aufgefallen?",
+     "c": "Lass beim nächsten Warten in der Schlange oder an der Haltestelle das Handy ganz weg."
+    },
+    "es": {
+     "t": "Esperar sin móvil",
+     "g": "Probar una cola o un trayecto en autobús con la vista alta y el móvil guardado.",
+     "p": [
+      "Esperar es una práctica pequeña perfecta: deja el móvil en el bolsillo.",
+      "Mira alrededor, fíjate en sonidos, caras y el cielo.",
+      "Quizá incluso empieces una charla breve con alguien cercano."
+     ],
+     "q": "¿Qué notaste a tu alrededor la última vez que esperabas en algún sitio?",
+     "c": "La próxima vez que esperes en una cola o parada, mantén el móvil guardado todo el rato."
+    },
+    "fr": {
+     "t": "Attendre sans téléphone",
+     "g": "Essayer une file d'attente ou un trajet en bus, le regard levé et le téléphone rangé.",
+     "p": [
+      "Attendre est un petit exercice parfait : garde le téléphone dans ta poche.",
+      "Regarde autour de toi, remarque les sons, les visages et le ciel.",
+      "Tu pourrais même entamer une brève discussion avec quelqu'un."
+     ],
+     "q": "Qu'as-tu remarqué autour de toi la dernière fois que tu attendais quelque part ?",
+     "c": "La prochaine fois que tu attends dans une file ou à un arrêt, garde le téléphone rangé."
+    },
+    "it": {
+     "t": "Aspettare senza telefono",
+     "g": "Provare una coda o un viaggio in autobus con lo sguardo alto e il telefono in tasca.",
+     "p": [
+      "Aspettare è un piccolo esercizio perfetto: lascia il telefono in tasca.",
+      "Guardati intorno, nota suoni, volti e il cielo.",
+      "Potresti persino iniziare una breve chiacchierata con qualcuno vicino."
+     ],
+     "q": "Cosa hai notato intorno a te l'ultima volta che aspettavi da qualche parte?",
+     "c": "La prossima volta che aspetti in coda o alla fermata, tieni il telefono in tasca per tutta l'attesa."
+    },
+    "pt": {
+     "t": "Esperar sem telemóvel",
+     "g": "Experimentar uma fila ou uma viagem de autocarro com o olhar levantado e o telemóvel guardado.",
+     "p": [
+      "Esperar é um pequeno treino perfeito: deixa o telemóvel no bolso.",
+      "Olha à volta, repara em sons, caras e no céu.",
+      "Podes até começar uma conversa breve com alguém por perto."
+     ],
+     "q": "O que notaste à tua volta da última vez que esperaste em algum lado?",
+     "c": "Da próxima vez que esperares numa fila ou paragem, mantém o telemóvel guardado durante toda a espera."
+    },
+    "pt_BR": {
+     "t": "Esperar sem celular",
+     "g": "Experimentar uma fila ou uma viagem de ônibus com o olhar erguido e o celular guardado.",
+     "p": [
+      "Esperar é um pequeno treino perfeito: deixe o celular no bolso.",
+      "Olhe ao redor, repare em sons, rostos e no céu.",
+      "Você pode até puxar uma conversa breve com alguém por perto."
+     ],
+     "q": "O que você notou ao seu redor da última vez que esperou em algum lugar?",
+     "c": "Da próxima vez que esperar numa fila ou ponto, mantenha o celular guardado durante toda a espera."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Single-tasking with screens",
+     "g": "Do one thing at a time instead of switching between apps.",
+     "p": [
+      "Switching between apps makes each task take more effort.",
+      "Pick one task, close the extra tabs and finish it before moving on.",
+      "Doing one thing well often feels calmer and faster."
+     ],
+     "q": "Which task do you do best when nothing else is open?",
+     "c": "Choose one task today and do it for 20 minutes with only that app open."
+    },
+    "de": {
+     "t": "Eins nach dem anderen am Bildschirm",
+     "g": "Eine Sache nach der anderen tun, statt zwischen Apps zu springen.",
+     "p": [
+      "Das Wechseln zwischen Apps macht jede Aufgabe anstrengender.",
+      "Wähle eine Aufgabe, schließe die übrigen Tabs und beende sie, bevor es weitergeht.",
+      "Eine Sache gut zu tun fühlt sich oft ruhiger und schneller an."
+     ],
+     "q": "Welche Aufgabe gelingt dir am besten, wenn nichts anderes offen ist?",
+     "c": "Wähle heute eine Aufgabe und arbeite 20 Minuten nur mit dieser App."
+    },
+    "es": {
+     "t": "Hacer una cosa a la vez con pantallas",
+     "g": "Hacer una cosa a la vez en lugar de saltar entre apps.",
+     "p": [
+      "Saltar entre apps hace que cada tarea cueste más esfuerzo.",
+      "Elige una tarea, cierra las pestañas extra y termínala antes de seguir.",
+      "Hacer una cosa bien suele sentirse más tranquilo y rápido."
+     ],
+     "q": "¿Qué tarea te sale mejor cuando no hay nada más abierto?",
+     "c": "Elige una tarea hoy y hazla 20 minutos con solo esa app abierta."
+    },
+    "fr": {
+     "t": "Une chose à la fois sur écran",
+     "g": "Faire une seule chose à la fois au lieu de passer d'une appli à l'autre.",
+     "p": [
+      "Passer d'une appli à l'autre rend chaque tâche plus fatigante.",
+      "Choisis une tâche, ferme les onglets en trop et termine-la avant de continuer.",
+      "Faire une chose bien est souvent plus calme et plus rapide."
+     ],
+     "q": "Quelle tâche réussis-tu le mieux quand rien d'autre n'est ouvert ?",
+     "c": "Choisis une tâche aujourd'hui et fais-la 20 minutes avec seulement cette appli ouverte."
+    },
+    "it": {
+     "t": "Una cosa alla volta con gli schermi",
+     "g": "Fare una cosa alla volta invece di passare da un'app all'altra.",
+     "p": [
+      "Passare da un'app all'altra rende ogni attività più faticosa.",
+      "Scegli un'attività, chiudi le schede in più e finiscila prima di proseguire.",
+      "Fare una cosa bene spesso è più calmo e veloce."
+     ],
+     "q": "Quale attività ti riesce meglio quando non c'è altro aperto?",
+     "c": "Scegli oggi un'attività e dedicale 20 minuti con aperta solo quell'app."
+    },
+    "pt": {
+     "t": "Uma coisa de cada vez nos ecrãs",
+     "g": "Fazer uma coisa de cada vez em vez de saltar entre apps.",
+     "p": [
+      "Saltar entre apps torna cada tarefa mais cansativa.",
+      "Escolhe uma tarefa, fecha os separadores extra e termina-a antes de continuar.",
+      "Fazer uma coisa bem costuma ser mais calmo e rápido."
+     ],
+     "q": "Que tarefa te sai melhor quando não há mais nada aberto?",
+     "c": "Escolhe hoje uma tarefa e faz 20 minutos só com essa app aberta."
+    },
+    "pt_BR": {
+     "t": "Uma coisa de cada vez nas telas",
+     "g": "Fazer uma coisa de cada vez em vez de pular entre apps.",
+     "p": [
+      "Pular entre apps torna cada tarefa mais cansativa.",
+      "Escolha uma tarefa, feche as abas extras e termine antes de seguir.",
+      "Fazer uma coisa bem costuma ser mais calmo e rápido."
+     ],
+     "q": "Qual tarefa você faz melhor quando não há mais nada aberto?",
+     "c": "Escolha uma tarefa hoje e faça por 20 minutos só com esse app aberto."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kindness to yourself",
+     "g": "Change habits without guilt or harsh self-judgement.",
+     "p": [
+      "Slip-ups are normal; they are part of learning any new habit.",
+      "Speak to yourself like you would to a good friend.",
+      "Each new day is a fresh start, not a test you failed."
+     ],
+     "q": "How do you usually talk to yourself when a plan does not go well?",
+     "c": "When you slip today, say one kind sentence to yourself and carry on."
+    },
+    "de": {
+     "t": "Freundlich zu dir selbst",
+     "g": "Gewohnheiten ohne Schuldgefühle oder harte Selbstkritik ändern.",
+     "p": [
+      "Ausrutscher sind normal; sie gehören zum Lernen jeder neuen Gewohnheit.",
+      "Sprich mit dir, wie du mit einem guten Freund sprechen würdest.",
+      "Jeder neue Tag ist ein Neustart, keine verpatzte Prüfung."
+     ],
+     "q": "Wie sprichst du meist mit dir, wenn ein Plan nicht klappt?",
+     "c": "Wenn dir heute etwas danebengeht, sag dir einen freundlichen Satz und mach weiter."
+    },
+    "es": {
+     "t": "Amabilidad contigo mismo",
+     "g": "Cambiar hábitos sin culpa ni autocrítica dura.",
+     "p": [
+      "Los tropiezos son normales; forman parte de aprender cualquier hábito nuevo.",
+      "Háblate como le hablarías a un buen amigo.",
+      "Cada día nuevo es un nuevo comienzo, no un examen suspendido."
+     ],
+     "q": "¿Cómo te hablas normalmente cuando un plan no sale bien?",
+     "c": "Si hoy tropiezas, dite una frase amable y sigue adelante."
+    },
+    "fr": {
+     "t": "Bienveillance envers toi-même",
+     "g": "Changer ses habitudes sans culpabilité ni jugement sévère.",
+     "p": [
+      "Les faux pas sont normaux ; ils font partie de tout apprentissage d'une habitude.",
+      "Parle-toi comme tu parlerais à un bon ami.",
+      "Chaque jour est un nouveau départ, pas un examen raté."
+     ],
+     "q": "Comment te parles-tu d'habitude quand un plan ne se passe pas bien ?",
+     "c": "Si tu flanches aujourd'hui, dis-toi une phrase bienveillante et poursuis."
+    },
+    "it": {
+     "t": "Gentilezza verso te stesso",
+     "g": "Cambiare abitudini senza sensi di colpa né giudizi severi.",
+     "p": [
+      "Gli scivoloni sono normali; fanno parte dell'imparare ogni nuova abitudine.",
+      "Parlati come parleresti a un buon amico.",
+      "Ogni nuovo giorno è un nuovo inizio, non un esame fallito."
+     ],
+     "q": "Come ti parli di solito quando un piano non va bene?",
+     "c": "Se oggi inciampi, dì a te stesso una frase gentile e vai avanti."
+    },
+    "pt": {
+     "t": "Gentileza contigo",
+     "g": "Mudar hábitos sem culpa nem autocrítica dura.",
+     "p": [
+      "Deslizes são normais; fazem parte de aprender qualquer hábito novo.",
+      "Fala contigo como falarias com um bom amigo.",
+      "Cada novo dia é um recomeço, não um teste falhado."
+     ],
+     "q": "Como falas normalmente contigo quando um plano não corre bem?",
+     "c": "Se hoje escorregares, diz a ti próprio uma frase gentil e segue em frente."
+    },
+    "pt_BR": {
+     "t": "Gentileza consigo",
+     "g": "Mudar hábitos sem culpa nem autocrítica dura.",
+     "p": [
+      "Escorregões são normais; fazem parte de aprender qualquer hábito novo.",
+      "Fale consigo como falaria com um bom amigo.",
+      "Cada novo dia é um recomeço, não uma prova que você perdeu."
+     ],
+     "q": "Como você costuma falar consigo quando um plano não dá certo?",
+     "c": "Se hoje escorregar, diga a si mesmo uma frase gentil e siga em frente."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tracking feelings, not just minutes",
+     "g": "Note how different apps leave you feeling energised or drained.",
+     "p": [
+      "Minutes tell only half the story; feelings tell the rest.",
+      "After an app, rate your mood as up, flat or down.",
+      "Patterns will show which apps give back and which take."
+     ],
+     "q": "Which app leaves you feeling best, and which leaves you flat?",
+     "c": "Today, jot an up, flat or down note after each of three app sessions."
+    },
+    "de": {
+     "t": "Gefühle erfassen, nicht nur Minuten",
+     "g": "Notieren, wie verschiedene Apps dich energiegeladen oder ausgelaugt zurücklassen.",
+     "p": [
+      "Minuten erzählen nur die halbe Geschichte; Gefühle den Rest.",
+      "Bewerte nach einer App deine Stimmung: besser, gleich oder schlechter.",
+      "Muster zeigen, welche Apps etwas geben und welche etwas nehmen."
+     ],
+     "q": "Welche App lässt dich am besten zurück und welche eher gedrückt?",
+     "c": "Notiere heute nach drei App-Sitzungen je ein besser, gleich oder schlechter."
+    },
+    "es": {
+     "t": "Registrar sensaciones, no solo minutos",
+     "g": "Anotar cómo te dejan distintas apps: con energía o agotado.",
+     "p": [
+      "Los minutos cuentan solo la mitad; las sensaciones, el resto.",
+      "Tras una app, valora tu ánimo: arriba, igual o abajo.",
+      "Los patrones mostrarán qué apps aportan y cuáles quitan."
+     ],
+     "q": "¿Qué app te deja mejor y cuál te deja apagado?",
+     "c": "Hoy anota arriba, igual o abajo tras tres sesiones con apps."
+    },
+    "fr": {
+     "t": "Suivre ses ressentis, pas seulement les minutes",
+     "g": "Noter comment différentes applis te laissent plein d'énergie ou vidé.",
+     "p": [
+      "Les minutes ne racontent que la moitié de l'histoire ; les ressentis, le reste.",
+      "Après une appli, évalue ton humeur : en hausse, stable ou en baisse.",
+      "Les tendances montreront quelles applis donnent et lesquelles prennent."
+     ],
+     "q": "Quelle appli te laisse le mieux et laquelle te laisse plat ?",
+     "c": "Aujourd'hui, note en hausse, stable ou en baisse après trois sessions d'appli."
+    },
+    "it": {
+     "t": "Tracciare le sensazioni, non solo i minuti",
+     "g": "Annotare come diverse app ti lasciano: carico o scarico.",
+     "p": [
+      "I minuti raccontano solo metà della storia; le sensazioni il resto.",
+      "Dopo un'app, valuta l'umore: su, uguale o giù.",
+      "Gli schemi mostreranno quali app danno e quali tolgono."
+     ],
+     "q": "Quale app ti lascia meglio e quale ti lascia spento?",
+     "c": "Oggi annota su, uguale o giù dopo tre sessioni con le app."
+    },
+    "pt": {
+     "t": "Registar sensações, não só minutos",
+     "g": "Anotar como diferentes apps te deixam: com energia ou esgotado.",
+     "p": [
+      "Os minutos contam só metade da história; as sensações o resto.",
+      "Depois de uma app, avalia o teu humor: melhor, igual ou pior.",
+      "Os padrões mostram que apps dão e quais tiram."
+     ],
+     "q": "Que app te deixa melhor e qual te deixa em baixo?",
+     "c": "Hoje anota melhor, igual ou pior depois de três sessões com apps."
+    },
+    "pt_BR": {
+     "t": "Registrando sensações, não só minutos",
+     "g": "Anotar como diferentes apps deixam você: com energia ou esgotado.",
+     "p": [
+      "Minutos contam só metade da história; as sensações contam o resto.",
+      "Depois de um app, avalie seu humor: melhor, igual ou pior.",
+      "Os padrões mostram quais apps dão e quais tiram."
+     ],
+     "q": "Qual app deixa você melhor e qual deixa você para baixo?",
+     "c": "Hoje anote melhor, igual ou pior depois de três sessões com apps."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Talking about your goal",
+     "g": "Tell a friend or family member about your screen balance plan.",
+     "p": [
+      "Saying your goal out loud makes it more real.",
+      "A friend can cheer you on, or even try a small change with you.",
+      "Keep it light: share what you are trying, not what you failed."
+     ],
+     "q": "Who in your life would be a good partner for this journey?",
+     "c": "Tell one person about your goal today and ask if they would join in."
+    },
+    "de": {
+     "t": "Über dein Ziel sprechen",
+     "g": "Einem Freund oder Familienmitglied von deinem Plan für mehr Balance erzählen.",
+     "p": [
+      "Dein Ziel auszusprechen macht es greifbarer.",
+      "Ein Freund kann dich anfeuern oder sogar mitmachen.",
+      "Halt es leicht: erzähl, was du versuchst, nicht, was misslang."
+     ],
+     "q": "Wer in deinem Leben wäre ein guter Begleiter für diesen Weg?",
+     "c": "Erzähl heute einer Person von deinem Ziel und frag, ob sie mitmacht."
+    },
+    "es": {
+     "t": "Hablar de tu meta",
+     "g": "Contar a un amigo o familiar tu plan de equilibrio con las pantallas.",
+     "p": [
+      "Decir tu meta en voz alta la hace más real.",
+      "Un amigo puede animarte o incluso probar un pequeño cambio contigo.",
+      "Mantén el tono ligero: cuenta lo que intentas, no lo que falló."
+     ],
+     "q": "¿Quién en tu vida sería buen compañero para este camino?",
+     "c": "Cuéntale tu meta a una persona hoy y pregúntale si se anima."
+    },
+    "fr": {
+     "t": "Parler de ton objectif",
+     "g": "Parler à un ami ou à un proche de ton plan d'équilibre avec les écrans.",
+     "p": [
+      "Dire ton objectif à voix haute le rend plus réel.",
+      "Un ami peut t'encourager, ou même essayer un petit changement avec toi.",
+      "Reste léger : parle de ce que tu essaies, pas de ce qui a raté."
+     ],
+     "q": "Qui dans ton entourage serait un bon partenaire pour ce parcours ?",
+     "c": "Parle de ton objectif à une personne aujourd'hui et demande-lui si elle veut se joindre à toi."
+    },
+    "it": {
+     "t": "Parlare del tuo obiettivo",
+     "g": "Raccontare a un amico o familiare il tuo piano di equilibrio con gli schermi.",
+     "p": [
+      "Dire il tuo obiettivo ad alta voce lo rende più reale.",
+      "Un amico può incoraggiarti o anche provare un piccolo cambiamento con te.",
+      "Resta leggero: racconta cosa provi, non cosa è andato storto."
+     ],
+     "q": "Chi nella tua vita sarebbe un buon compagno per questo percorso?",
+     "c": "Parla oggi del tuo obiettivo a una persona e chiedile se vuole unirsi."
+    },
+    "pt": {
+     "t": "Falar sobre a tua meta",
+     "g": "Contar a um amigo ou familiar o teu plano de equilíbrio com os ecrãs.",
+     "p": [
+      "Dizer a tua meta em voz alta torna-a mais real.",
+      "Um amigo pode animar-te ou até experimentar uma pequena mudança contigo.",
+      "Mantém o tom leve: conta o que tentas, não o que falhou."
+     ],
+     "q": "Quem na tua vida seria um bom companheiro para este caminho?",
+     "c": "Conta hoje a tua meta a uma pessoa e pergunta se quer juntar-se."
+    },
+    "pt_BR": {
+     "t": "Falando sobre sua meta",
+     "g": "Contar a um amigo ou familiar seu plano de equilíbrio com as telas.",
+     "p": [
+      "Dizer sua meta em voz alta a torna mais real.",
+      "Um amigo pode torcer por você ou até testar uma pequena mudança junto.",
+      "Mantenha o tom leve: conte o que você tenta, não o que falhou."
+     ],
+     "q": "Quem na sua vida seria um bom parceiro para esse caminho?",
+     "c": "Conte hoje sua meta a uma pessoa e pergunte se ela quer participar."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Celebrating small wins",
+     "g": "Notice progress, like one calmer evening or one longer walk.",
+     "p": [
+      "Progress is made of small moments, not perfect weeks.",
+      "Write down any win: a quiet meal, a skipped scroll, a good pause.",
+      "Noticing wins builds the motivation to keep going."
+     ],
+     "q": "What is one small win you have had since starting this path?",
+     "c": "Write down three small wins from this week and reward yourself with something simple."
+    },
+    "de": {
+     "t": "Kleine Erfolge feiern",
+     "g": "Fortschritte bemerken, etwa einen ruhigeren Abend oder einen längeren Spaziergang.",
+     "p": [
+      "Fortschritt besteht aus kleinen Momenten, nicht aus perfekten Wochen.",
+      "Schreib jeden Erfolg auf: ein ruhiges Essen, ein ausgelassenes Scrollen, eine gute Pause.",
+      "Erfolge zu bemerken gibt Motivation weiterzumachen."
+     ],
+     "q": "Welcher kleine Erfolg ist dir seit Beginn dieses Wegs gelungen?",
+     "c": "Schreib drei kleine Erfolge dieser Woche auf und belohn dich mit etwas Einfachem."
+    },
+    "es": {
+     "t": "Celebrar las pequeñas victorias",
+     "g": "Notar el progreso, como una tarde más tranquila o un paseo más largo.",
+     "p": [
+      "El progreso se hace de pequeños momentos, no de semanas perfectas.",
+      "Anota cualquier logro: una comida tranquila, un scroll evitado, una buena pausa.",
+      "Notar los logros crea la motivación para seguir."
+     ],
+     "q": "¿Cuál es un pequeño logro que has tenido desde que empezaste este camino?",
+     "c": "Anota tres pequeños logros de esta semana y date un premio sencillo."
+    },
+    "fr": {
+     "t": "Fêter les petites victoires",
+     "g": "Remarquer les progrès, comme une soirée plus calme ou une marche plus longue.",
+     "p": [
+      "Le progrès se fait de petits moments, pas de semaines parfaites.",
+      "Note chaque victoire : un repas tranquille, un défilement évité, une bonne pause.",
+      "Remarquer ses victoires nourrit la motivation de continuer."
+     ],
+     "q": "Quelle petite victoire as-tu eue depuis le début de ce parcours ?",
+     "c": "Note trois petites victoires de cette semaine et offre-toi quelque chose de simple."
+    },
+    "it": {
+     "t": "Festeggiare le piccole vittorie",
+     "g": "Notare i progressi, come una serata più calma o una passeggiata più lunga.",
+     "p": [
+      "Il progresso è fatto di piccoli momenti, non di settimane perfette.",
+      "Scrivi ogni vittoria: un pasto tranquillo, uno scroll evitato, una bella pausa.",
+      "Notare le vittorie crea la motivazione per continuare."
+     ],
+     "q": "Qual è una piccola vittoria che hai avuto da quando hai iniziato?",
+     "c": "Scrivi tre piccole vittorie di questa settimana e premiati con qualcosa di semplice."
+    },
+    "pt": {
+     "t": "Celebrar pequenas vitórias",
+     "g": "Reparar no progresso, como um serão mais calmo ou um passeio mais longo.",
+     "p": [
+      "O progresso faz-se de pequenos momentos, não de semanas perfeitas.",
+      "Anota qualquer vitória: uma refeição calma, um scroll evitado, uma boa pausa.",
+      "Reparar nas vitórias cria motivação para continuar."
+     ],
+     "q": "Qual foi uma pequena vitória que tiveste desde que começaste este caminho?",
+     "c": "Anota três pequenas vitórias desta semana e premeia-te com algo simples."
+    },
+    "pt_BR": {
+     "t": "Celebrando pequenas vitórias",
+     "g": "Perceber o progresso, como uma noite mais calma ou uma caminhada mais longa.",
+     "p": [
+      "O progresso é feito de pequenos momentos, não de semanas perfeitas.",
+      "Anote qualquer vitória: uma refeição tranquila, uma rolagem evitada, uma boa pausa.",
+      "Perceber as vitórias cria motivação para continuar."
+     ],
+     "q": "Qual foi uma pequena vitória que você teve desde que começou esse caminho?",
+     "c": "Anote três pequenas vitórias desta semana e se premie com algo simples."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tech that helps you",
+     "g": "Recognise the apps and tools that genuinely improve your life.",
+     "p": [
+      "Not all screen time is equal: maps, calls and learning tools can add real value.",
+      "List the apps you would miss because they truly help you.",
+      "Keep and enjoy those; they are part of a healthy balance."
+     ],
+     "q": "Which tool on your phone do you value most, and why?",
+     "c": "Make a short list of three digital tools that truly help you, and enjoy using them."
+    },
+    "de": {
+     "t": "Technik, die dir hilft",
+     "g": "Die Apps und Werkzeuge erkennen, die dein Leben wirklich verbessern.",
+     "p": [
+      "Nicht jede Bildschirmzeit ist gleich: Karten, Anrufe und Lernhilfen können echten Wert bringen.",
+      "Liste die Apps auf, die du vermissen würdest, weil sie dir wirklich helfen.",
+      "Behalte und genieße sie; sie gehören zu einer gesunden Balance."
+     ],
+     "q": "Welches Werkzeug auf deinem Handy schätzt du am meisten und warum?",
+     "c": "Schreib eine kurze Liste mit drei digitalen Helfern, die dir wirklich nützen, und genieße sie."
+    },
+    "es": {
+     "t": "Tecnología que te ayuda",
+     "g": "Reconocer las apps y herramientas que de verdad mejoran tu vida.",
+     "p": [
+      "No todo el tiempo de pantalla es igual: mapas, llamadas y aprendizaje aportan valor real.",
+      "Haz una lista de las apps que echarías de menos porque te ayudan de verdad.",
+      "Consérvalas y disfrútalas; forman parte de un equilibrio sano."
+     ],
+     "q": "¿Qué herramienta de tu móvil valoras más y por qué?",
+     "c": "Haz una lista corta de tres herramientas digitales que te ayudan de verdad y disfrútalas."
+    },
+    "fr": {
+     "t": "La technologie qui t'aide",
+     "g": "Reconnaître les applis et outils qui améliorent vraiment ta vie.",
+     "p": [
+      "Tout le temps d'écran ne se vaut pas : cartes, appels et outils d'apprentissage apportent une vraie valeur.",
+      "Liste les applis qui te manqueraient parce qu'elles t'aident vraiment.",
+      "Garde-les et profites-en ; elles font partie d'un équilibre sain."
+     ],
+     "q": "Quel outil de ton téléphone apprécies-tu le plus, et pourquoi ?",
+     "c": "Fais une courte liste de trois outils numériques qui t'aident vraiment et profites-en."
+    },
+    "it": {
+     "t": "La tecnologia che ti aiuta",
+     "g": "Riconoscere le app e gli strumenti che migliorano davvero la tua vita.",
+     "p": [
+      "Non tutto il tempo di schermo è uguale: mappe, chiamate e strumenti di studio danno valore reale.",
+      "Elenca le app che ti mancherebbero perché ti aiutano davvero.",
+      "Tienile e goditele; fanno parte di un equilibrio sano."
+     ],
+     "q": "Quale strumento del tuo telefono apprezzi di più e perché?",
+     "c": "Fai una breve lista di tre strumenti digitali che ti aiutano davvero e goditeli."
+    },
+    "pt": {
+     "t": "Tecnologia que te ajuda",
+     "g": "Reconhecer as apps e ferramentas que realmente melhoram a tua vida.",
+     "p": [
+      "Nem todo o tempo de ecrã é igual: mapas, chamadas e aprendizagem trazem valor real.",
+      "Faz uma lista das apps de que sentirias falta porque te ajudam mesmo.",
+      "Mantém-nas e aproveita-as; fazem parte de um equilíbrio saudável."
+     ],
+     "q": "Que ferramenta do teu telemóvel mais valorizas e porquê?",
+     "c": "Faz uma lista curta de três ferramentas digitais que te ajudam mesmo e aproveita-as."
+    },
+    "pt_BR": {
+     "t": "Tecnologia que ajuda você",
+     "g": "Reconhecer os apps e ferramentas que realmente melhoram sua vida.",
+     "p": [
+      "Nem todo tempo de tela é igual: mapas, ligações e aprendizado trazem valor real.",
+      "Liste os apps de que você sentiria falta porque ajudam de verdade.",
+      "Mantenha e aproveite; eles fazem parte de um equilíbrio saudável."
+     ],
+     "q": "Qual ferramenta do seu celular você mais valoriza e por quê?",
+     "c": "Faça uma lista curta de três ferramentas digitais que ajudam de verdade e aproveite."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your personal why",
+     "g": "Write one sentence about why you want a healthier relationship with screens.",
+     "p": [
+      "A clear reason keeps you going when motivation dips.",
+      "Make it personal: more time with someone, better sleep or calmer days.",
+      "Keep your sentence short and put it where you will see it."
+     ],
+     "q": "What is the real reason you started this path?",
+     "c": "Write your why in one sentence and set it as a reminder or note."
+    },
+    "de": {
+     "t": "Dein persönliches Warum",
+     "g": "Einen Satz schreiben, warum du ein gesünderes Verhältnis zu Bildschirmen willst.",
+     "p": [
+      "Ein klarer Grund trägt dich, wenn die Motivation sinkt.",
+      "Mach ihn persönlich: mehr Zeit mit jemandem, besserer Schlaf oder ruhigere Tage.",
+      "Halt den Satz kurz und leg ihn dorthin, wo du ihn siehst."
+     ],
+     "q": "Was ist der wahre Grund, warum du diesen Weg begonnen hast?",
+     "c": "Schreib dein Warum in einen Satz und leg ihn als Erinnerung oder Notiz ab."
+    },
+    "es": {
+     "t": "Tu porqué personal",
+     "g": "Escribir una frase sobre por qué quieres una relación más sana con las pantallas.",
+     "p": [
+      "Una razón clara te sostiene cuando baja la motivación.",
+      "Hazla personal: más tiempo con alguien, mejor sueño o días más tranquilos.",
+      "Mantén tu frase corta y ponla donde la veas."
+     ],
+     "q": "¿Cuál es la razón real por la que empezaste este camino?",
+     "c": "Escribe tu porqué en una frase y ponla como recordatorio o nota."
+    },
+    "fr": {
+     "t": "Ton pourquoi personnel",
+     "g": "Écrire une phrase sur la raison de vouloir une relation plus saine avec les écrans.",
+     "p": [
+      "Une raison claire te porte quand la motivation baisse.",
+      "Rends-la personnelle : plus de temps avec quelqu'un, meilleur sommeil ou journées plus calmes.",
+      "Garde ta phrase courte et place-la là où tu la verras."
+     ],
+     "q": "Quelle est la vraie raison pour laquelle tu as commencé ce parcours ?",
+     "c": "Écris ton pourquoi en une phrase et garde-le comme rappel ou note."
+    },
+    "it": {
+     "t": "Il tuo perché personale",
+     "g": "Scrivere una frase sul perché vuoi un rapporto più sano con gli schermi.",
+     "p": [
+      "Una ragione chiara ti sostiene quando la motivazione cala.",
+      "Rendila personale: più tempo con qualcuno, sonno migliore o giornate più calme.",
+      "Tieni la frase breve e mettila dove la vedrai."
+     ],
+     "q": "Qual è la vera ragione per cui hai iniziato questo percorso?",
+     "c": "Scrivi il tuo perché in una frase e salvalo come promemoria o nota."
+    },
+    "pt": {
+     "t": "O teu porquê pessoal",
+     "g": "Escrever uma frase sobre porque queres uma relação mais saudável com os ecrãs.",
+     "p": [
+      "Uma razão clara sustenta-te quando a motivação desce.",
+      "Torna-a pessoal: mais tempo com alguém, melhor sono ou dias mais calmos.",
+      "Mantém a frase curta e põe-na onde a vejas."
+     ],
+     "q": "Qual é a razão verdadeira pela qual começaste este caminho?",
+     "c": "Escreve o teu porquê numa frase e guarda-o como lembrete ou nota."
+    },
+    "pt_BR": {
+     "t": "Seu porquê pessoal",
+     "g": "Escrever uma frase sobre por que você quer uma relação mais saudável com as telas.",
+     "p": [
+      "Uma razão clara sustenta você quando a motivação cai.",
+      "Torne-a pessoal: mais tempo com alguém, sono melhor ou dias mais calmos.",
+      "Mantenha a frase curta e coloque onde você veja."
+     ],
+     "q": "Qual é a razão verdadeira pela qual você começou esse caminho?",
+     "c": "Escreva seu porquê em uma frase e guarde como lembrete ou nota."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Month one review",
+     "g": "Look back at your screen time insights and first small changes.",
+     "p": [
+      "Open your screen time report and compare it with day four.",
+      "Review your notes: triggers, favourite apps and small wins.",
+      "Decide what to keep, what to adjust and what to celebrate."
+     ],
+     "q": "What has surprised you most about your habits this month?",
+     "c": "Write three lines: one thing learned, one change kept and one goal for next month."
+    },
+    "de": {
+     "t": "Rückblick auf Monat eins",
+     "g": "Auf deine Erkenntnisse zur Bildschirmzeit und ersten kleinen Änderungen zurückblicken.",
+     "p": [
+      "Öffne deinen Bildschirmzeit-Bericht und vergleiche ihn mit Tag vier.",
+      "Sieh deine Notizen durch: Auslöser, Lieblings-Apps und kleine Erfolge.",
+      "Entscheide, was bleibt, was du anpasst und was du feierst."
+     ],
+     "q": "Was hat dich diesen Monat an deinen Gewohnheiten am meisten überrascht?",
+     "c": "Schreib drei Zeilen: eine Erkenntnis, eine beibehaltene Änderung und ein Ziel für nächsten Monat."
+    },
+    "es": {
+     "t": "Repaso del primer mes",
+     "g": "Mirar atrás a lo que has aprendido sobre tu tiempo de pantalla y tus primeros cambios.",
+     "p": [
+      "Abre tu informe de tiempo de pantalla y compáralo con el día cuatro.",
+      "Repasa tus notas: desencadenantes, apps favoritas y pequeños logros.",
+      "Decide qué conservas, qué ajustas y qué celebras."
+     ],
+     "q": "¿Qué te ha sorprendido más de tus hábitos este mes?",
+     "c": "Escribe tres líneas: algo aprendido, un cambio que mantienes y una meta para el próximo mes."
+    },
+    "fr": {
+     "t": "Bilan du premier mois",
+     "g": "Revenir sur ce que tu as appris de ton temps d'écran et sur tes premiers changements.",
+     "p": [
+      "Ouvre ton rapport de temps d'écran et compare-le avec le jour quatre.",
+      "Relis tes notes : déclencheurs, applis préférées et petites victoires.",
+      "Décide ce que tu gardes, ce que tu ajustes et ce que tu fêtes."
+     ],
+     "q": "Qu'est-ce qui t'a le plus surpris dans tes habitudes ce mois-ci ?",
+     "c": "Écris trois lignes : un apprentissage, un changement gardé et un objectif pour le mois prochain."
+    },
+    "it": {
+     "t": "Bilancio del primo mese",
+     "g": "Ripercorrere ciò che hai scoperto sul tempo di schermo e i primi piccoli cambiamenti.",
+     "p": [
+      "Apri il report del tempo di schermo e confrontalo con il giorno quattro.",
+      "Rivedi i tuoi appunti: inneschi, app preferite e piccole vittorie.",
+      "Decidi cosa tenere, cosa aggiustare e cosa festeggiare."
+     ],
+     "q": "Cosa ti ha sorpreso di più delle tue abitudini questo mese?",
+     "c": "Scrivi tre righe: una cosa imparata, un cambiamento mantenuto e un obiettivo per il mese prossimo."
+    },
+    "pt": {
+     "t": "Balanço do primeiro mês",
+     "g": "Olhar para o que descobriste sobre o teu tempo de ecrã e as primeiras pequenas mudanças.",
+     "p": [
+      "Abre o relatório de tempo de ecrã e compara-o com o dia quatro.",
+      "Revê as tuas notas: gatilhos, apps preferidas e pequenas vitórias.",
+      "Decide o que manténs, o que ajustas e o que celebras."
+     ],
+     "q": "O que mais te surpreendeu nos teus hábitos este mês?",
+     "c": "Escreve três linhas: uma coisa aprendida, uma mudança mantida e uma meta para o mês seguinte."
+    },
+    "pt_BR": {
+     "t": "Balanço do primeiro mês",
+     "g": "Olhar para o que você descobriu sobre seu tempo de tela e as primeiras pequenas mudanças.",
+     "p": [
+      "Abra o relatório de tempo de tela e compare com o dia quatro.",
+      "Revise suas notas: gatilhos, apps favoritos e pequenas vitórias.",
+      "Decida o que mantém, o que ajusta e o que comemora."
+     ],
+     "q": "O que mais surpreendeu você nos seus hábitos este mês?",
+     "c": "Escreva três linhas: algo aprendido, uma mudança mantida e uma meta para o próximo mês."
+    }
+   }
+  }
+ ]
+}

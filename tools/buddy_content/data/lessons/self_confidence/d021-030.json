@@ -1,0 +1,835 @@
+{
+ "topic": "self_confidence",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Setting a tiny daily goal",
+     "g": "Choose a goal so small you can't fail, then do it.",
+     "p": [
+      "A goal that is too big gets skipped; a goal that is tiny gets done, and done builds trust.",
+      "Make it specific and short: read two pages, stretch for two minutes, send one thank-you message.",
+      "Once it is easy, you can raise it a little. Consistency first, size later."
+     ],
+     "q": "What tiny daily goal could you do even on your busiest or lowest-energy day?",
+     "c": "Pick one daily goal that takes under five minutes and do it today."
+    },
+    "de": {
+     "t": "Ein winziges Tagesziel setzen",
+     "g": "Wähle ein Ziel, das so klein ist, dass du nicht scheitern kannst, und erledige es.",
+     "p": [
+      "Ein zu großes Ziel wird übersprungen; ein winziges wird erledigt, und Erledigtes schafft Vertrauen.",
+      "Mach es konkret und kurz: zwei Seiten lesen, zwei Minuten dehnen, eine Dankesnachricht schicken.",
+      "Wenn es leichtfällt, kannst du es etwas steigern. Erst Regelmäßigkeit, dann Größe."
+     ],
+     "q": "Welches winzige Tagesziel schaffst du sogar an deinem vollsten oder kraftlosesten Tag?",
+     "c": "Such dir ein Tagesziel unter fünf Minuten aus und erledige es heute."
+    },
+    "es": {
+     "t": "Fijar una meta diaria diminuta",
+     "g": "Elige una meta tan pequeña que no puedas fallar y cúmplela.",
+     "p": [
+      "Una meta demasiado grande se salta; una diminuta se cumple, y lo cumplido genera confianza.",
+      "Hazla concreta y corta: leer dos páginas, estirar dos minutos, enviar un mensaje de agradecimiento.",
+      "Cuando sea fácil, puedes subirla un poco. Primero constancia, luego tamaño."
+     ],
+     "q": "¿Qué meta diaria diminuta podrías cumplir incluso en tu día más ocupado o de menos energía?",
+     "c": "Elige una meta diaria de menos de cinco minutos y cúmplela hoy."
+    },
+    "fr": {
+     "t": "Fixer un tout petit objectif quotidien",
+     "g": "Choisis un objectif si petit que tu ne peux pas échouer, puis réalise-le.",
+     "p": [
+      "Un objectif trop grand est abandonné; un minuscule est accompli, et l'accompli crée la confiance.",
+      "Rends-le précis et court : lire deux pages, s'étirer deux minutes, envoyer un message de remerciement.",
+      "Quand c'est facile, tu peux l'augmenter un peu. La régularité d'abord, la taille ensuite."
+     ],
+     "q": "Quel tout petit objectif quotidien pourrais-tu tenir même un jour très chargé ou sans énergie ?",
+     "c": "Choisis un objectif quotidien de moins de cinq minutes et fais-le aujourd'hui."
+    },
+    "it": {
+     "t": "Fissare un obiettivo quotidiano minuscolo",
+     "g": "Scegli un obiettivo così piccolo da non poter fallire, poi realizzalo.",
+     "p": [
+      "Un obiettivo troppo grande viene saltato; uno minuscolo viene fatto, e ciò che è fatto costruisce fiducia.",
+      "Rendilo preciso e breve: leggere due pagine, stirarsi due minuti, mandare un messaggio di ringraziamento.",
+      "Quando diventa facile puoi alzarlo un po'. Prima la costanza, poi le dimensioni."
+     ],
+     "q": "Quale obiettivo quotidiano minuscolo potresti rispettare anche nel giorno più pieno o con meno energia?",
+     "c": "Scegli un obiettivo quotidiano sotto i cinque minuti e fallo oggi."
+    },
+    "pt": {
+     "t": "Definir uma meta diária minúscula",
+     "g": "Escolhe uma meta tão pequena que não possas falhar e cumpre-a.",
+     "p": [
+      "Uma meta demasiado grande é adiada; uma minúscula é cumprida, e o que se cumpre gera confiança.",
+      "Torna-a concreta e curta: ler duas páginas, alongar dois minutos, enviar uma mensagem de agradecimento.",
+      "Quando for fácil, podes aumentá-la um pouco. Primeiro a regularidade, depois o tamanho."
+     ],
+     "q": "Que meta diária minúscula conseguias cumprir mesmo no teu dia mais cheio ou com menos energia?",
+     "c": "Escolhe uma meta diária com menos de cinco minutos e cumpre-a hoje."
+    },
+    "pt_BR": {
+     "t": "Definindo uma meta diária minúscula",
+     "g": "Escolha uma meta tão pequena que você não consiga falhar e cumpra.",
+     "p": [
+      "Uma meta grande demais é pulada; uma minúscula é cumprida, e o que se cumpre gera confiança.",
+      "Deixe específica e curta: ler duas páginas, alongar dois minutos, mandar uma mensagem de agradecimento.",
+      "Quando ficar fácil, você pode aumentar um pouco. Primeiro constância, depois tamanho."
+     ],
+     "q": "Que meta diária minúscula você cumpriria até no dia mais cheio ou com menos energia?",
+     "c": "Escolha uma meta diária de menos de cinco minutos e cumpra hoje."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Celebrating progress",
+     "g": "Mark small steps forward instead of waiting for the finish line.",
+     "p": [
+      "If you only celebrate the finish line, most of your journey feels like failing. Celebrate steps too.",
+      "A celebration can be simple: a smile, a tick on a calendar, telling a friend, a favourite tea.",
+      "Noticing progress tells your brain that effort pays off, so you keep going."
+     ],
+     "q": "What small step forward have you made recently that deserves a little celebration?",
+     "c": "Choose one step you took this week and celebrate it in a small way today."
+    },
+    "de": {
+     "t": "Fortschritte feiern",
+     "g": "Würdige kleine Schritte, statt auf die Ziellinie zu warten.",
+     "p": [
+      "Wenn du nur die Ziellinie feierst, fühlt sich der größte Teil des Weges wie Scheitern an. Feiere auch Schritte.",
+      "Feiern kann einfach sein: ein Lächeln, ein Haken im Kalender, einem Freund erzählen, der Lieblingstee.",
+      "Fortschritt zu bemerken sagt deinem Gehirn, dass sich Mühe lohnt, damit du dranbleibst."
+     ],
+     "q": "Welchen kleinen Schritt hast du zuletzt gemacht, der eine kleine Feier verdient?",
+     "c": "Such dir einen Schritt dieser Woche aus und feiere ihn heute auf kleine Weise."
+    },
+    "es": {
+     "t": "Celebrar el progreso",
+     "g": "Marca los pasos pequeños en vez de esperar a la meta.",
+     "p": [
+      "Si solo celebras la meta, casi todo el camino se siente como fracaso. Celebra también los pasos.",
+      "Celebrar puede ser simple: una sonrisa, una marca en el calendario, contárselo a un amigo, tu té favorito.",
+      "Notar el progreso le dice a tu cerebro que el esfuerzo vale la pena, y sigues adelante."
+     ],
+     "q": "¿Qué pequeño paso has dado hace poco que merezca una pequeña celebración?",
+     "c": "Elige un paso que diste esta semana y celébralo hoy de forma sencilla."
+    },
+    "fr": {
+     "t": "Célébrer tes progrès",
+     "g": "Marque les petits pas en avant au lieu d'attendre la ligne d'arrivée.",
+     "p": [
+      "Si tu ne fêtes que l'arrivée, presque tout le chemin ressemble à un échec. Fête aussi les étapes.",
+      "Fêter peut être simple : un sourire, une croix sur le calendrier, en parler à un ami, ton thé préféré.",
+      "Remarquer ses progrès dit à ton cerveau que l'effort paie, et tu continues."
+     ],
+     "q": "Quel petit pas en avant as-tu fait récemment qui mérite une petite célébration ?",
+     "c": "Choisis un pas franchi cette semaine et fête-le aujourd'hui, simplement."
+    },
+    "it": {
+     "t": "Festeggiare i progressi",
+     "g": "Riconosci i piccoli passi avanti invece di aspettare il traguardo.",
+     "p": [
+      "Se festeggi solo il traguardo, quasi tutto il percorso sembra un fallimento. Festeggia anche i passi.",
+      "Festeggiare può essere semplice: un sorriso, una spunta sul calendario, raccontarlo a un amico, il tuo tè preferito.",
+      "Accorgersi dei progressi dice al cervello che lo sforzo paga, e continui."
+     ],
+     "q": "Quale piccolo passo avanti hai fatto di recente che merita un piccolo festeggiamento?",
+     "c": "Scegli un passo fatto questa settimana e festeggialo oggi in modo semplice."
+    },
+    "pt": {
+     "t": "Celebrar o progresso",
+     "g": "Marca os pequenos passos em vez de esperar pela meta.",
+     "p": [
+      "Se só celebras a meta, quase todo o caminho parece um fracasso. Celebra também os passos.",
+      "Celebrar pode ser simples: um sorriso, um visto no calendário, contar a um amigo, o teu chá favorito.",
+      "Reparar no progresso diz ao teu cérebro que o esforço compensa, e continuas."
+     ],
+     "q": "Que pequeno passo deste recentemente que mereça uma pequena celebração?",
+     "c": "Escolhe um passo que deste esta semana e celebra-o hoje de forma simples."
+    },
+    "pt_BR": {
+     "t": "Celebrando o progresso",
+     "g": "Marque os pequenos passos em vez de esperar pela linha de chegada.",
+     "p": [
+      "Se você só comemora a chegada, quase todo o caminho parece fracasso. Comemore os passos também.",
+      "Comemorar pode ser simples: um sorriso, um visto no calendário, contar a um amigo, seu chá favorito.",
+      "Perceber o progresso diz ao seu cérebro que o esforço vale a pena, e você continua."
+     ],
+     "q": "Que pequeno passo você deu recentemente que merece uma pequena comemoração?",
+     "c": "Escolha um passo que você deu esta semana e comemore hoje de forma simples."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The comparison trap",
+     "g": "See why comparing your inside to others' highlight reels feels unfair.",
+     "p": [
+      "You know your own doubts and bad days, but you only see other people's best moments.",
+      "That makes the comparison unfair: your full story against their polished cover.",
+      "When you notice yourself comparing, say: I only see part of their story."
+     ],
+     "q": "When do you most often compare yourself with others, and what sets it off?",
+     "c": "Today, each time you compare, pause and name one thing that is going well in your own life."
+    },
+    "de": {
+     "t": "Die Vergleichsfalle",
+     "g": "Erkenne, warum der Vergleich deines Innenlebens mit den Highlights anderer unfair ist.",
+     "p": [
+      "Du kennst deine eigenen Zweifel und schlechten Tage, siehst bei anderen aber nur die besten Momente.",
+      "Das macht den Vergleich unfair: deine ganze Geschichte gegen ihr geputztes Titelbild.",
+      "Wenn du dich beim Vergleichen ertappst, sag dir: Ich sehe nur einen Teil ihrer Geschichte."
+     ],
+     "q": "Wann vergleichst du dich am häufigsten mit anderen, und was löst es aus?",
+     "c": "Halte heute bei jedem Vergleich inne und nenne eine Sache, die in deinem Leben gut läuft."
+    },
+    "es": {
+     "t": "La trampa de la comparación",
+     "g": "Descubre por qué comparar tu interior con lo mejor de otros es injusto.",
+     "p": [
+      "Conoces tus dudas y tus malos días, pero de los demás solo ves sus mejores momentos.",
+      "Eso hace injusta la comparación: tu historia completa contra su portada pulida.",
+      "Cuando te pilles comparando, dite: solo veo una parte de su historia."
+     ],
+     "q": "¿Cuándo te comparas más con los demás y qué lo provoca?",
+     "c": "Hoy, cada vez que te compares, haz una pausa y nombra algo que va bien en tu vida."
+    },
+    "fr": {
+     "t": "Le piège de la comparaison",
+     "g": "Comprends pourquoi comparer ton intérieur aux meilleurs moments des autres est injuste.",
+     "p": [
+      "Tu connais tes doutes et tes mauvais jours, mais tu ne vois des autres que leurs plus beaux moments.",
+      "La comparaison est donc injuste : ton histoire entière contre leur couverture soignée.",
+      "Quand tu te surprends à comparer, dis-toi : je ne vois qu'une partie de leur histoire."
+     ],
+     "q": "Quand te compares-tu le plus aux autres, et qu'est-ce qui le déclenche ?",
+     "c": "Aujourd'hui, à chaque comparaison, fais une pause et nomme une chose qui va bien dans ta vie."
+    },
+    "it": {
+     "t": "La trappola del confronto",
+     "g": "Scopri perché confrontare il tuo interno con il meglio degli altri è ingiusto.",
+     "p": [
+      "Conosci i tuoi dubbi e le tue giornate storte, ma degli altri vedi solo i momenti migliori.",
+      "Questo rende il confronto ingiusto: la tua storia intera contro la loro copertina lucida.",
+      "Quando ti sorprendi a confrontarti, dì a te stesso: vedo solo una parte della loro storia."
+     ],
+     "q": "Quando ti confronti di più con gli altri e cosa lo fa scattare?",
+     "c": "Oggi, ogni volta che ti confronti, fermati e nomina una cosa che va bene nella tua vita."
+    },
+    "pt": {
+     "t": "A armadilha da comparação",
+     "g": "Percebe por que comparar o teu interior com o melhor dos outros é injusto.",
+     "p": [
+      "Conheces as tuas dúvidas e os teus dias maus, mas só vês os melhores momentos dos outros.",
+      "Isso torna a comparação injusta: a tua história inteira contra a capa polida deles.",
+      "Quando te apanhares a comparar, diz para ti: só vejo uma parte da história deles."
+     ],
+     "q": "Quando é que mais te comparas com os outros e o que o desencadeia?",
+     "c": "Hoje, de cada vez que te comparares, faz uma pausa e nomeia uma coisa que vai bem na tua vida."
+    },
+    "pt_BR": {
+     "t": "A armadilha da comparação",
+     "g": "Entenda por que comparar o seu interior com o melhor dos outros é injusto.",
+     "p": [
+      "Você conhece suas dúvidas e seus dias ruins, mas dos outros só vê os melhores momentos.",
+      "Isso deixa a comparação injusta: sua história inteira contra a capa polida deles.",
+      "Quando se pegar comparando, diga a si mesmo: só vejo uma parte da história deles."
+     ],
+     "q": "Quando você mais se compara com os outros e o que dispara isso?",
+     "c": "Hoje, toda vez que se comparar, pare e nomeie uma coisa que vai bem na sua vida."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Comparing with your past self",
+     "g": "Measure growth against who you were last month.",
+     "p": [
+      "The fairest comparison is with yourself: same life, same starting line, only time between.",
+      "Look back at what you could not do a year ago and can do now, even small things.",
+      "Growth is often slow and quiet, so you need to look back to see it."
+     ],
+     "q": "What can you do now that you could not do a year ago?",
+     "c": "List three ways you are different from a year ago and thank yourself for each one."
+    },
+    "de": {
+     "t": "Der Vergleich mit deinem früheren Ich",
+     "g": "Miss dein Wachstum an dem, der du letzten Monat warst.",
+     "p": [
+      "Der fairste Vergleich ist der mit dir selbst: gleiches Leben, gleiche Startlinie, nur Zeit dazwischen.",
+      "Schau zurück auf das, was du vor einem Jahr nicht konntest und heute kannst, auch Kleines.",
+      "Wachstum ist oft langsam und leise, deshalb musst du zurückblicken, um es zu sehen."
+     ],
+     "q": "Was kannst du heute, das du vor einem Jahr nicht konntest?",
+     "c": "Nenne drei Arten, wie du dich seit einem Jahr verändert hast, und danke dir für jede."
+    },
+    "es": {
+     "t": "Compararte con tu yo del pasado",
+     "g": "Mide tu crecimiento frente a quien eras el mes pasado.",
+     "p": [
+      "La comparación más justa es contigo mismo: misma vida, misma línea de salida, solo tiempo de por medio.",
+      "Mira atrás: qué no podías hacer hace un año y ahora sí, aunque sean cosas pequeñas.",
+      "El crecimiento suele ser lento y silencioso, por eso hay que mirar atrás para verlo."
+     ],
+     "q": "¿Qué puedes hacer ahora que hace un año no podías?",
+     "c": "Anota tres formas en que eres distinto de hace un año y agradécete cada una."
+    },
+    "fr": {
+     "t": "Te comparer à ton moi d'avant",
+     "g": "Mesure ta croissance par rapport à qui tu étais le mois dernier.",
+     "p": [
+      "La comparaison la plus juste est avec toi-même : même vie, même ligne de départ, juste du temps entre les deux.",
+      "Regarde ce que tu ne savais pas faire il y a un an et que tu sais faire aujourd'hui, même petit.",
+      "La croissance est souvent lente et discrète, il faut donc regarder en arrière pour la voir."
+     ],
+     "q": "Que sais-tu faire maintenant que tu ne savais pas faire il y a un an ?",
+     "c": "Liste trois façons dont tu as changé en un an et remercie-toi pour chacune."
+    },
+    "it": {
+     "t": "Confrontarti con il te di prima",
+     "g": "Misura la tua crescita rispetto a chi eri il mese scorso.",
+     "p": [
+      "Il confronto più giusto è con te stesso: stessa vita, stessa linea di partenza, solo il tempo di mezzo.",
+      "Guarda indietro a ciò che un anno fa non sapevi fare e ora sai, anche piccole cose.",
+      "La crescita spesso è lenta e silenziosa, perciò bisogna guardare indietro per vederla."
+     ],
+     "q": "Cosa sai fare ora che un anno fa non sapevi fare?",
+     "c": "Elenca tre modi in cui sei diverso da un anno fa e ringraziati per ciascuno."
+    },
+    "pt": {
+     "t": "Comparar-te com o teu eu do passado",
+     "g": "Mede o teu crescimento em relação a quem eras no mês passado.",
+     "p": [
+      "A comparação mais justa é contigo próprio: mesma vida, mesma linha de partida, só o tempo pelo meio.",
+      "Olha para trás: o que não conseguias fazer há um ano e agora consegues, mesmo coisas pequenas.",
+      "O crescimento é muitas vezes lento e silencioso, por isso é preciso olhar para trás para o ver."
+     ],
+     "q": "O que consegues fazer agora que há um ano não conseguias?",
+     "c": "Lista três formas em que és diferente de há um ano e agradece-te por cada uma."
+    },
+    "pt_BR": {
+     "t": "Comparando-se com o seu eu do passado",
+     "g": "Meça seu crescimento em relação a quem você era no mês passado.",
+     "p": [
+      "A comparação mais justa é consigo mesmo: mesma vida, mesma linha de largada, só o tempo no meio.",
+      "Olhe para trás: o que você não conseguia fazer há um ano e agora consegue, mesmo coisas pequenas.",
+      "O crescimento costuma ser lento e silencioso, por isso é preciso olhar para trás para ver."
+     ],
+     "q": "O que você consegue fazer agora que há um ano não conseguia?",
+     "c": "Liste três jeitos em que você é diferente de um ano atrás e agradeça a si mesmo por cada um."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Social media and self-image",
+     "g": "Curate your feed so it inspires you instead of draining you.",
+     "p": [
+      "Feeds show highlights, filters and edits, so scrolling can make real life feel dull by comparison.",
+      "You choose what you see: follow people who teach, inspire or make you laugh.",
+      "Notice how you feel after scrolling. If you feel worse, mute or unfollow without guilt."
+     ],
+     "q": "How do you usually feel after scrolling for half an hour, and what would you change?",
+     "c": "Mute or unfollow three accounts that drain you, and follow one that inspires you."
+    },
+    "de": {
+     "t": "Soziale Medien und Selbstbild",
+     "g": "Gestalte deinen Feed so, dass er dich inspiriert statt auslaugt.",
+     "p": [
+      "Feeds zeigen Highlights, Filter und Bearbeitung, und so kann das echte Leben beim Scrollen im Vergleich blass wirken.",
+      "Du bestimmst, was du siehst: Folge Menschen, die etwas lehren, inspirieren oder zum Lachen bringen.",
+      "Achte darauf, wie du dich nach dem Scrollen fühlst. Fühlst du dich schlechter, stumm schalten oder entfolgen ist okay."
+     ],
+     "q": "Wie fühlst du dich meist nach einer halben Stunde Scrollen, und was würdest du ändern?",
+     "c": "Schalte drei Konten stumm oder entfolge ihnen, die dich auslaugen, und folge einem, das dich inspiriert."
+    },
+    "es": {
+     "t": "Redes sociales y autoimagen",
+     "g": "Ajusta tu feed para que te inspire en lugar de agotarte.",
+     "p": [
+      "Los feeds muestran lo mejor, filtros y retoques, y al hacer scroll la vida real parece aburrida en comparación.",
+      "Tú decides qué ves: sigue a quien enseña, inspira o te hace reír.",
+      "Fíjate en cómo te sientes tras el scroll. Si te sientes peor, silencia o deja de seguir sin culpa."
+     ],
+     "q": "¿Cómo te sientes normalmente tras media hora de scroll y qué cambiarías?",
+     "c": "Silencia o deja de seguir tres cuentas que te agotan y sigue una que te inspire."
+    },
+    "fr": {
+     "t": "Réseaux sociaux et image de soi",
+     "g": "Compose ton fil pour qu'il t'inspire au lieu de t'épuiser.",
+     "p": [
+      "Les fils montrent des moments choisis, des filtres et des retouches, et la vraie vie paraît terne en comparaison.",
+      "Tu choisis ce que tu vois : suis des gens qui enseignent, inspirent ou font rire.",
+      "Observe comment tu te sens après avoir défilé. Si tu te sens moins bien, masque ou désabonne-toi sans culpabilité."
+     ],
+     "q": "Comment te sens-tu d'habitude après une demi-heure de défilement, et que changerais-tu ?",
+     "c": "Masque ou désabonne-toi de trois comptes qui t'épuisent et suis-en un qui t'inspire."
+    },
+    "it": {
+     "t": "Social media e immagine di sé",
+     "g": "Cura il tuo feed perché ti ispiri invece di svuotarti.",
+     "p": [
+      "I feed mostrano momenti scelti, filtri e ritocchi, e scorrendo la vita reale sembra spenta al confronto.",
+      "Sei tu a scegliere cosa vedere: segui chi insegna, ispira o ti fa ridere.",
+      "Nota come ti senti dopo aver scrollato. Se stai peggio, silenzia o smetti di seguire senza sensi di colpa."
+     ],
+     "q": "Come ti senti di solito dopo mezz'ora di scrolling e cosa cambieresti?",
+     "c": "Silenzia o smetti di seguire tre account che ti svuotano e seguine uno che ti ispira."
+    },
+    "pt": {
+     "t": "Redes sociais e autoimagem",
+     "g": "Ajusta o teu feed para te inspirar em vez de te cansar.",
+     "p": [
+      "Os feeds mostram o melhor, filtros e retoques, e ao fazer scroll a vida real parece sem graça em comparação.",
+      "Tu decides o que vês: segue quem ensina, inspira ou te faz rir.",
+      "Repara como te sentes depois de fazer scroll. Se te sentes pior, silencia ou deixa de seguir sem culpa."
+     ],
+     "q": "Como te costumas sentir depois de meia hora de scroll e o que mudarias?",
+     "c": "Silencia ou deixa de seguir três contas que te cansam e segue uma que te inspire."
+    },
+    "pt_BR": {
+     "t": "Redes sociais e autoimagem",
+     "g": "Ajuste seu feed para ele inspirar em vez de esgotar você.",
+     "p": [
+      "Os feeds mostram o melhor, filtros e edições, e rolando a tela a vida real parece sem graça em comparação.",
+      "Você escolhe o que vê: siga quem ensina, inspira ou faz você rir.",
+      "Perceba como se sente depois de rolar o feed. Se se sentir pior, silencie ou deixe de seguir sem culpa."
+     ],
+     "q": "Como você costuma se sentir depois de meia hora no feed e o que mudaria?",
+     "c": "Silencie ou deixe de seguir três contas que esgotam você e siga uma que inspire."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gratitude for yourself",
+     "g": "Appreciate your body, mind and efforts for what they do every day.",
+     "p": [
+      "Your body carries you around and your mind solves a hundred small problems daily, mostly unnoticed.",
+      "Thanking yourself is not vanity. It is noticing what is already working.",
+      "Focus on what things do, not how they look: my legs walked me here, my mind found a solution."
+     ],
+     "q": "What is one thing your body or mind did for you today that you usually take for granted?",
+     "c": "Tonight list three things you appreciate about yourself and say thank you out loud or in writing."
+    },
+    "de": {
+     "t": "Dankbarkeit für dich selbst",
+     "g": "Würdige Körper, Geist und Mühe für das, was sie jeden Tag leisten.",
+     "p": [
+      "Dein Körper trägt dich durch den Tag und dein Kopf löst täglich hundert kleine Probleme, meist unbemerkt.",
+      "Dir selbst zu danken ist keine Eitelkeit. Es heißt zu bemerken, was schon funktioniert.",
+      "Achte darauf, was etwas leistet, nicht wie es aussieht: Meine Beine haben mich hierher getragen, mein Kopf fand eine Lösung."
+     ],
+     "q": "Was hat dein Körper oder Geist heute für dich getan, das du sonst für selbstverständlich hältst?",
+     "c": "Schreib heute Abend drei Dinge auf, die du an dir schätzt, und sag laut oder schriftlich danke."
+    },
+    "es": {
+     "t": "Gratitud hacia ti mismo",
+     "g": "Valora tu cuerpo, tu mente y tu esfuerzo por lo que hacen cada día.",
+     "p": [
+      "Tu cuerpo te lleva a todas partes y tu mente resuelve cien pequeños problemas al día, casi sin que lo notes.",
+      "Agradecerte no es vanidad. Es notar lo que ya funciona.",
+      "Fíjate en lo que hacen, no en cómo se ven: mis piernas me trajeron aquí, mi mente encontró una solución."
+     ],
+     "q": "¿Qué hizo hoy tu cuerpo o tu mente por ti que sueles dar por hecho?",
+     "c": "Esta noche anota tres cosas que valoras de ti y di gracias en voz alta o por escrito."
+    },
+    "fr": {
+     "t": "De la gratitude envers toi-même",
+     "g": "Apprécie ton corps, ton esprit et tes efforts pour ce qu'ils font chaque jour.",
+     "p": [
+      "Ton corps te porte partout et ton esprit résout cent petits problèmes par jour, souvent sans que tu le remarques.",
+      "Te remercier n'est pas de la vanité. C'est remarquer ce qui fonctionne déjà.",
+      "Pense à ce que les choses font, pas à leur apparence : mes jambes m'ont amené ici, mon esprit a trouvé une solution."
+     ],
+     "q": "Qu'est-ce que ton corps ou ton esprit a fait pour toi aujourd'hui que tu considères d'habitude comme acquis ?",
+     "c": "Ce soir, note trois choses que tu apprécies chez toi et dis merci à voix haute ou par écrit."
+    },
+    "it": {
+     "t": "Gratitudine verso te stesso",
+     "g": "Apprezza corpo, mente e impegno per ciò che fanno ogni giorno.",
+     "p": [
+      "Il tuo corpo ti porta ovunque e la tua mente risolve cento piccoli problemi al giorno, quasi senza che tu te ne accorga.",
+      "Ringraziarti non è vanità. È accorgerti di ciò che già funziona.",
+      "Concentrati su ciò che le cose fanno, non su come appaiono: le mie gambe mi hanno portato qui, la mia mente ha trovato una soluzione."
+     ],
+     "q": "Cosa hanno fatto oggi per te il tuo corpo o la tua mente che di solito dai per scontato?",
+     "c": "Stasera scrivi tre cose che apprezzi di te e dì grazie a voce alta o per iscritto."
+    },
+    "pt": {
+     "t": "Gratidão por ti próprio",
+     "g": "Valoriza o teu corpo, a tua mente e o teu esforço pelo que fazem todos os dias.",
+     "p": [
+      "O teu corpo leva-te a todo o lado e a tua mente resolve cem pequenos problemas por dia, quase sem dares conta.",
+      "Agradecer a ti próprio não é vaidade. É reparar no que já funciona.",
+      "Foca-te no que as coisas fazem, não em como parecem: as minhas pernas trouxeram-me aqui, a minha mente achou uma solução."
+     ],
+     "q": "O que fez hoje o teu corpo ou a tua mente por ti que costumas dar por garantido?",
+     "c": "Esta noite escreve três coisas que valorizas em ti e diz obrigado em voz alta ou por escrito."
+    },
+    "pt_BR": {
+     "t": "Gratidão por você mesmo",
+     "g": "Valorize seu corpo, sua mente e seu esforço pelo que fazem todos os dias.",
+     "p": [
+      "Seu corpo leva você a todo lugar e sua mente resolve cem pequenos problemas por dia, quase sem você notar.",
+      "Agradecer a si mesmo não é vaidade. É perceber o que já funciona.",
+      "Foque no que as coisas fazem, não em como parecem: minhas pernas me trouxeram aqui, minha mente achou uma solução."
+     ],
+     "q": "O que seu corpo ou sua mente fez hoje por você que você costuma achar normal?",
+     "c": "Hoje à noite escreva três coisas que você valoriza em si e agradeça em voz alta ou por escrito."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dressing in a way that feels like you",
+     "g": "Notice how clothes you feel comfortable in can lift your mood.",
+     "p": [
+      "The goal is not impressing anyone. It is wearing something that feels like you and lets you move easily.",
+      "Comfort, fit and colours you enjoy matter more than trends or price.",
+      "Choose one outfit that makes you feel at ease and wear it on a day that matters to you."
+     ],
+     "q": "Which piece of clothing makes you feel most like yourself, and why?",
+     "c": "Today wear something you feel comfortable in on purpose and notice how it affects your mood."
+    },
+    "de": {
+     "t": "Dich kleiden, wie es sich nach dir anfühlt",
+     "g": "Bemerke, wie Kleidung, in der du dich wohlfühlst, deine Stimmung heben kann.",
+     "p": [
+      "Es geht nicht darum, jemanden zu beeindrucken, sondern etwas zu tragen, das sich nach dir anfühlt und Bewegung erlaubt.",
+      "Komfort, Passform und Farben, die du magst, zählen mehr als Trends oder Preis.",
+      "Such ein Outfit, in dem du dich wohlfühlst, und trag es an einem Tag, der dir wichtig ist."
+     ],
+     "q": "Welches Kleidungsstück lässt dich am meisten du selbst sein, und warum?",
+     "c": "Zieh heute bewusst etwas an, in dem du dich wohlfühlst, und achte auf deine Stimmung."
+    },
+    "es": {
+     "t": "Vestirte de una forma que sea tuya",
+     "g": "Fíjate en cómo la ropa con la que estás cómodo puede mejorar tu ánimo.",
+     "p": [
+      "La meta no es impresionar a nadie, sino llevar algo que se sienta como tú y te deje moverte con soltura.",
+      "La comodidad, el ajuste y los colores que te gustan importan más que las modas o el precio.",
+      "Elige un conjunto con el que te sientas a gusto y úsalo en un día que te importe."
+     ],
+     "q": "¿Qué prenda te hace sentir más tú mismo y por qué?",
+     "c": "Hoy ponte a propósito algo con lo que estés cómodo y fíjate en cómo afecta a tu ánimo."
+    },
+    "fr": {
+     "t": "T'habiller d'une façon qui te ressemble",
+     "g": "Remarque comment des vêtements dans lesquels tu es à l'aise peuvent améliorer ton humeur.",
+     "p": [
+      "Le but n'est pas d'impressionner, mais de porter quelque chose qui te ressemble et te laisse bouger facilement.",
+      "Le confort, la coupe et les couleurs que tu aimes comptent plus que les tendances ou le prix.",
+      "Choisis une tenue dans laquelle tu te sens à l'aise et porte-la un jour qui compte pour toi."
+     ],
+     "q": "Quel vêtement te donne le plus l'impression d'être toi-même, et pourquoi ?",
+     "c": "Aujourd'hui, porte exprès quelque chose dans lequel tu es à l'aise et observe l'effet sur ton humeur."
+    },
+    "it": {
+     "t": "Vestirti in un modo che ti somiglia",
+     "g": "Nota come i vestiti in cui stai comodo possono sollevarti l'umore.",
+     "p": [
+      "L'obiettivo non è impressionare nessuno, ma indossare qualcosa che ti somigli e ti lasci muovere con facilità.",
+      "Comfort, vestibilità e colori che ti piacciono contano più di mode e prezzo.",
+      "Scegli un outfit in cui stai a tuo agio e indossalo in un giorno importante per te."
+     ],
+     "q": "Quale capo ti fa sentire più te stesso e perché?",
+     "c": "Oggi indossa di proposito qualcosa in cui stai comodo e nota come influisce sul tuo umore."
+    },
+    "pt": {
+     "t": "Vestir-te de uma forma que seja tua",
+     "g": "Repara como a roupa em que estás confortável te pode melhorar o humor.",
+     "p": [
+      "O objetivo não é impressionar ninguém, mas usar algo que tenha o teu jeito e te deixe mexer à vontade.",
+      "O conforto, o corte e as cores de que gostas contam mais do que as modas ou o preço.",
+      "Escolhe um conjunto com que te sintas bem e usa-o num dia que seja importante para ti."
+     ],
+     "q": "Que peça de roupa te faz sentir mais tu próprio e porquê?",
+     "c": "Hoje veste de propósito algo em que estejas confortável e repara como isso afeta o teu humor."
+    },
+    "pt_BR": {
+     "t": "Vestindo-se de um jeito que é seu",
+     "g": "Perceba como roupas em que você se sente confortável podem melhorar o seu humor.",
+     "p": [
+      "O objetivo não é impressionar ninguém, e sim usar algo que combine com você e deixe se mexer à vontade.",
+      "Conforto, caimento e cores de que você gosta contam mais que moda ou preço.",
+      "Escolha um look com o qual se sinta bem e use num dia que seja importante para você."
+     ],
+     "q": "Que peça de roupa faz você se sentir mais você mesmo e por quê?",
+     "c": "Hoje vista de propósito algo em que se sinta confortável e repare como isso afeta o seu humor."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Small acts of self-care",
+     "g": "Use sleep, water, movement and rest as foundations for feeling capable.",
+     "p": [
+      "It is hard to feel confident when you are tired, thirsty or tense. The basics matter.",
+      "Pick one: a glass of water, a short walk, going to bed fifteen minutes earlier, a real break.",
+      "Self-care is not selfish. It gives you the energy to show up as your best self."
+     ],
+     "q": "Which basic need do you most often skip, and what small change could help?",
+     "c": "Do one small act of self-care today, such as a ten-minute walk or a real lunch break."
+    },
+    "de": {
+     "t": "Kleine Akte der Selbstfürsorge",
+     "g": "Nutze Schlaf, Wasser, Bewegung und Pausen als Grundlage, um dich fähig zu fühlen.",
+     "p": [
+      "Es ist schwer, sich selbstsicher zu fühlen, wenn du müde, durstig oder angespannt bist. Die Grundlagen zählen.",
+      "Wähl eins: ein Glas Wasser, ein kurzer Spaziergang, fünfzehn Minuten früher ins Bett, eine echte Pause.",
+      "Selbstfürsorge ist nicht egoistisch. Sie gibt dir die Energie, dein Bestes zu zeigen."
+     ],
+     "q": "Welches Grundbedürfnis übergehst du am häufigsten, und welche kleine Änderung könnte helfen?",
+     "c": "Tu heute etwas Kleines für dich, etwa zehn Minuten spazieren gehen oder eine echte Mittagspause machen."
+    },
+    "es": {
+     "t": "Pequeños actos de autocuidado",
+     "g": "Usa el sueño, el agua, el movimiento y el descanso como base para sentirte capaz.",
+     "p": [
+      "Es difícil sentirse seguro cuando estás cansado, sediento o tenso. Lo básico importa.",
+      "Elige uno: un vaso de agua, un paseo corto, acostarte quince minutos antes, una pausa de verdad.",
+      "Cuidarte no es egoísmo. Te da la energía para mostrar tu mejor versión."
+     ],
+     "q": "¿Qué necesidad básica sueles saltarte más y qué pequeño cambio podría ayudar?",
+     "c": "Haz hoy un pequeño acto de autocuidado, como un paseo de diez minutos o una pausa de comida de verdad."
+    },
+    "fr": {
+     "t": "Petits gestes de soin pour toi",
+     "g": "Fais du sommeil, de l'eau, du mouvement et du repos les bases pour te sentir capable.",
+     "p": [
+      "Il est difficile de se sentir confiant quand on est fatigué, assoiffé ou tendu. Les bases comptent.",
+      "Choisis-en un : un verre d'eau, une courte marche, se coucher quinze minutes plus tôt, une vraie pause.",
+      "Prendre soin de toi n'est pas égoïste. Cela te donne l'énergie d'être au mieux de toi-même."
+     ],
+     "q": "Quel besoin de base sautes-tu le plus souvent, et quel petit changement pourrait aider ?",
+     "c": "Fais aujourd'hui un petit geste pour toi, comme dix minutes de marche ou une vraie pause déjeuner."
+    },
+    "it": {
+     "t": "Piccoli gesti di cura di sé",
+     "g": "Usa sonno, acqua, movimento e riposo come basi per sentirti capace.",
+     "p": [
+      "È difficile sentirsi sicuri quando sei stanco, assetato o teso. Le basi contano.",
+      "Scegline una: un bicchiere d'acqua, una breve passeggiata, andare a letto quindici minuti prima, una pausa vera.",
+      "Prenderti cura di te non è egoismo. Ti dà l'energia per dare il meglio."
+     ],
+     "q": "Quale bisogno di base salti più spesso e quale piccolo cambiamento potrebbe aiutare?",
+     "c": "Oggi fai un piccolo gesto di cura di te, come dieci minuti di camminata o una vera pausa pranzo."
+    },
+    "pt": {
+     "t": "Pequenos atos de autocuidado",
+     "g": "Usa o sono, a água, o movimento e o descanso como base para te sentires capaz.",
+     "p": [
+      "É difícil sentires-te confiante quando estás cansado, com sede ou tenso. O básico conta.",
+      "Escolhe um: um copo de água, uma caminhada curta, deitar-te quinze minutos mais cedo, uma pausa a sério.",
+      "Cuidar de ti não é egoísmo. Dá-te energia para mostrares o teu melhor."
+     ],
+     "q": "Que necessidade básica costumas saltar mais e que pequena mudança poderia ajudar?",
+     "c": "Hoje faz um pequeno ato de autocuidado, como uma caminhada de dez minutos ou uma pausa de almoço a sério."
+    },
+    "pt_BR": {
+     "t": "Pequenos atos de autocuidado",
+     "g": "Use o sono, a água, o movimento e o descanso como base para se sentir capaz.",
+     "p": [
+      "É difícil se sentir confiante quando se está cansado, com sede ou tenso. O básico importa.",
+      "Escolha um: um copo de água, uma caminhada curta, deitar quinze minutos mais cedo, uma pausa de verdade.",
+      "Cuidar de si não é egoísmo. Dá energia para mostrar o seu melhor."
+     ],
+     "q": "Que necessidade básica você mais costuma pular e que pequena mudança poderia ajudar?",
+     "c": "Hoje faça um pequeno ato de autocuidado, como uma caminhada de dez minutos ou uma pausa de almoço de verdade."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your comfort zone map",
+     "g": "Draw what feels easy, a bit stretchy and too much for now.",
+     "p": [
+      "Picture three rings: comfort zone in the middle, stretch zone around it, and too-much zone outside.",
+      "Growth happens mostly in the stretch ring, where it feels a little uncomfortable but doable.",
+      "List a few things in each ring. Your map will change as you do."
+     ],
+     "q": "What is one thing in your stretch ring that you could try soon?",
+     "c": "Draw your three rings, write two items in each, and circle one stretch item to try this week."
+    },
+    "de": {
+     "t": "Deine Komfortzonen-Karte",
+     "g": "Zeichne, was sich leicht anfühlt, ein bisschen fordernd und im Moment zu viel.",
+     "p": [
+      "Stell dir drei Ringe vor: innen die Komfortzone, darum die Wachstumszone und außen die Zu-viel-Zone.",
+      "Wachstum geschieht meist im mittleren Ring, wo es sich etwas unbequem, aber machbar anfühlt.",
+      "Notiere ein paar Dinge pro Ring. Deine Karte verändert sich mit dir."
+     ],
+     "q": "Was aus deinem Wachstumsring könntest du bald ausprobieren?",
+     "c": "Zeichne die drei Ringe, schreib je zwei Dinge hinein und kreise eines aus der Wachstumszone zum Ausprobieren ein."
+    },
+    "es": {
+     "t": "Tu mapa de zona de confort",
+     "g": "Dibuja lo que te resulta fácil, algo exigente y demasiado por ahora.",
+     "p": [
+      "Imagina tres anillos: zona de confort en el centro, zona de reto alrededor y zona de demasiado fuera.",
+      "El crecimiento ocurre sobre todo en el anillo de reto, donde resulta algo incómodo pero posible.",
+      "Anota algunas cosas en cada anillo. Tu mapa cambiará contigo."
+     ],
+     "q": "¿Qué cosa de tu anillo de reto podrías probar pronto?",
+     "c": "Dibuja tus tres anillos, escribe dos cosas en cada uno y rodea una del reto para probar esta semana."
+    },
+    "fr": {
+     "t": "La carte de ta zone de confort",
+     "g": "Dessine ce qui te semble facile, un peu exigeant et trop pour l'instant.",
+     "p": [
+      "Imagine trois cercles : la zone de confort au centre, la zone d'étirement autour et la zone du trop à l'extérieur.",
+      "On progresse surtout dans le cercle d'étirement, où c'est un peu inconfortable mais faisable.",
+      "Note quelques éléments dans chaque cercle. Ta carte évoluera avec toi."
+     ],
+     "q": "Qu'est-ce qui, dans ton cercle d'étirement, pourrais-tu essayer bientôt ?",
+     "c": "Dessine tes trois cercles, écris deux choses dans chacun et entoure un élément d'étirement à essayer cette semaine."
+    },
+    "it": {
+     "t": "La mappa della tua zona di comfort",
+     "g": "Disegna ciò che ti sembra facile, un po' impegnativo e troppo per ora.",
+     "p": [
+      "Immagina tre cerchi: zona di comfort al centro, zona di sfida intorno e zona del troppo all'esterno.",
+      "La crescita avviene soprattutto nel cerchio di sfida, dove è un po' scomodo ma fattibile.",
+      "Scrivi alcune cose in ogni cerchio. La tua mappa cambierà insieme a te."
+     ],
+     "q": "Cosa del tuo cerchio di sfida potresti provare presto?",
+     "c": "Disegna i tre cerchi, scrivi due cose in ciascuno e cerchia un elemento di sfida da provare questa settimana."
+    },
+    "pt": {
+     "t": "O mapa da tua zona de conforto",
+     "g": "Desenha o que te parece fácil, um pouco exigente e demasiado para já.",
+     "p": [
+      "Imagina três anéis: zona de conforto ao centro, zona de desafio à volta e zona de demasiado fora.",
+      "O crescimento acontece sobretudo no anel de desafio, onde é um pouco desconfortável mas possível.",
+      "Anota algumas coisas em cada anel. O teu mapa vai mudar contigo."
+     ],
+     "q": "O que do teu anel de desafio podias experimentar em breve?",
+     "c": "Desenha os três anéis, escreve duas coisas em cada um e rodeia uma do desafio para experimentar esta semana."
+    },
+    "pt_BR": {
+     "t": "O mapa da sua zona de conforto",
+     "g": "Desenhe o que parece fácil, um pouco desafiador e demais por enquanto.",
+     "p": [
+      "Imagine três círculos: zona de conforto no centro, zona de desafio em volta e zona de demais por fora.",
+      "O crescimento acontece principalmente no círculo de desafio, onde é um pouco desconfortável mas possível.",
+      "Anote algumas coisas em cada círculo. Seu mapa vai mudar junto com você."
+     ],
+     "q": "O que do seu círculo de desafio você poderia experimentar em breve?",
+     "c": "Desenhe seus três círculos, escreva duas coisas em cada um e circule uma do desafio para tentar esta semana."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your first month",
+     "g": "Look back at wins, kinder self-talk and the habits you started.",
+     "p": [
+      "A month ago you began building confidence on purpose. Look at what has changed, however small.",
+      "Review your wins journal, notice kinder phrases you now use, and the habits that stuck.",
+      "Keep what works, adjust what does not, and be proud of showing up."
+     ],
+     "q": "Which habit from this month has helped you most, and what will you keep doing?",
+     "c": "Re-read your wins journal, pick your three favourite entries and tell someone about one of them."
+    },
+    "de": {
+     "t": "Rückblick: dein erster Monat",
+     "g": "Schau zurück auf Erfolge, freundlichere Selbstgespräche und die Gewohnheiten, die du begonnen hast.",
+     "p": [
+      "Vor einem Monat hast du angefangen, bewusst Selbstvertrauen aufzubauen. Sieh, was sich verändert hat, auch Kleines.",
+      "Geh dein Erfolgstagebuch durch, achte auf freundlichere Sätze, die du jetzt nutzt, und auf Gewohnheiten, die geblieben sind.",
+      "Behalte, was funktioniert, ändere, was nicht passt, und sei stolz darauf, dranzubleiben."
+     ],
+     "q": "Welche Gewohnheit dieses Monats hat dir am meisten geholfen, und was machst du weiter?",
+     "c": "Lies dein Erfolgstagebuch noch einmal, such drei Lieblingseinträge aus und erzähl jemandem von einem davon."
+    },
+    "es": {
+     "t": "Repaso: tu primer mes",
+     "g": "Mira atrás: logros, un diálogo interno más amable y los hábitos que empezaste.",
+     "p": [
+      "Hace un mes empezaste a construir confianza a propósito. Mira qué ha cambiado, por poco que sea.",
+      "Repasa tu diario de logros, nota las frases más amables que usas ahora y los hábitos que se quedaron.",
+      "Quédate con lo que funciona, ajusta lo que no y siéntete orgulloso de haber seguido."
+     ],
+     "q": "¿Qué hábito de este mes te ha ayudado más y qué seguirás haciendo?",
+     "c": "Relee tu diario de logros, elige tus tres entradas favoritas y cuéntale una a alguien."
+    },
+    "fr": {
+     "t": "Bilan : ton premier mois",
+     "g": "Regarde en arrière : réussites, dialogue intérieur plus doux et habitudes commencées.",
+     "p": [
+      "Il y a un mois, tu as commencé à bâtir ta confiance volontairement. Regarde ce qui a changé, même peu.",
+      "Relis ton journal de réussites, repère les phrases plus douces que tu emploies et les habitudes qui ont tenu.",
+      "Garde ce qui marche, ajuste ce qui ne va pas et sois fier d'avoir tenu bon."
+     ],
+     "q": "Quelle habitude de ce mois t'a le plus aidé, et que vas-tu continuer ?",
+     "c": "Relis ton journal de réussites, choisis tes trois entrées préférées et parle d'une d'elles à quelqu'un."
+    },
+    "it": {
+     "t": "Riepilogo: il tuo primo mese",
+     "g": "Guarda indietro a successi, dialogo interiore più gentile e abitudini iniziate.",
+     "p": [
+      "Un mese fa hai iniziato a costruire fiducia di proposito. Guarda cosa è cambiato, anche poco.",
+      "Rileggi il diario dei successi, nota le frasi più gentili che usi ora e le abitudini rimaste.",
+      "Tieni ciò che funziona, correggi ciò che non va e sii fiero di esserti presentato."
+     ],
+     "q": "Quale abitudine di questo mese ti ha aiutato di più e cosa continuerai a fare?",
+     "c": "Rileggi il diario dei successi, scegli le tue tre voci preferite e raccontane una a qualcuno."
+    },
+    "pt": {
+     "t": "Revisão: o teu primeiro mês",
+     "g": "Olha para trás: vitórias, um diálogo interior mais gentil e os hábitos que começaste.",
+     "p": [
+      "Há um mês começaste a construir confiança de propósito. Vê o que mudou, por pouco que seja.",
+      "Revê o teu diário de vitórias, repara nas frases mais gentis que usas agora e nos hábitos que ficaram.",
+      "Fica com o que funciona, ajusta o que não funciona e orgulha-te de teres continuado."
+     ],
+     "q": "Que hábito deste mês mais te ajudou e o que vais continuar a fazer?",
+     "c": "Relê o teu diário de vitórias, escolhe as tuas três entradas favoritas e conta uma delas a alguém."
+    },
+    "pt_BR": {
+     "t": "Revisão: seu primeiro mês",
+     "g": "Olhe para trás: conquistas, um diálogo interno mais gentil e os hábitos que você começou.",
+     "p": [
+      "Há um mês você começou a construir confiança de propósito. Veja o que mudou, por pouco que seja.",
+      "Releia seu diário de conquistas, note as frases mais gentis que usa agora e os hábitos que ficaram.",
+      "Fique com o que funciona, ajuste o que não funciona e tenha orgulho de ter continuado."
+     ],
+     "q": "Que hábito deste mês mais ajudou você e o que vai continuar fazendo?",
+     "c": "Releia seu diário de conquistas, escolha suas três entradas favoritas e conte uma delas a alguém."
+    }
+   }
+  }
+ ]
+}

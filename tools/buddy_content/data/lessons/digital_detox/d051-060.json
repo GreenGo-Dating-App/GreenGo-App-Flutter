@@ -1,0 +1,835 @@
+{
+ "topic": "digital_detox",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cleaning up your contacts and chats",
+     "g": "Archive old chats and reduce digital noise.",
+     "p": [
+      "Old chats and groups keep piling up in the background.",
+      "Archive or leave the ones you no longer need.",
+      "A tidy chat list makes it easier to find the people who matter."
+     ],
+     "q": "Which old chats or groups could you archive without a second thought?",
+     "c": "Archive or leave at least five old chats or groups today."
+    },
+    "de": {
+     "t": "Kontakte und Chats aufräumen",
+     "g": "Alte Chats archivieren und digitalen Lärm verringern.",
+     "p": [
+      "Alte Chats und Gruppen sammeln sich im Hintergrund an.",
+      "Archiviere oder verlasse die, die du nicht mehr brauchst.",
+      "Eine aufgeräumte Chatliste erleichtert es, wichtige Menschen zu finden."
+     ],
+     "q": "Welche alten Chats oder Gruppen könntest du ohne Zögern archivieren?",
+     "c": "Archiviere oder verlasse heute mindestens fünf alte Chats oder Gruppen."
+    },
+    "es": {
+     "t": "Ordenar contactos y chats",
+     "g": "Archivar chats antiguos y reducir el ruido digital.",
+     "p": [
+      "Los chats y grupos antiguos se acumulan en segundo plano.",
+      "Archiva o abandona los que ya no necesitas.",
+      "Una lista de chats ordenada facilita encontrar a quienes importan."
+     ],
+     "q": "¿Qué chats o grupos antiguos podrías archivar sin pensarlo?",
+     "c": "Archiva o abandona hoy al menos cinco chats o grupos antiguos."
+    },
+    "fr": {
+     "t": "Faire le ménage dans tes contacts et discussions",
+     "g": "Archiver les anciennes discussions et réduire le bruit numérique.",
+     "p": [
+      "Les anciennes discussions et groupes s'accumulent en arrière-plan.",
+      "Archive ou quitte ceux dont tu n'as plus besoin.",
+      "Une liste ordonnée permet de retrouver plus facilement les personnes qui comptent."
+     ],
+     "q": "Quelles anciennes discussions ou groupes pourrais-tu archiver sans hésiter ?",
+     "c": "Archive ou quitte aujourd'hui au moins cinq anciennes discussions ou groupes."
+    },
+    "it": {
+     "t": "Riordinare contatti e chat",
+     "g": "Archiviare vecchie chat e ridurre il rumore digitale.",
+     "p": [
+      "Vecchie chat e gruppi si accumulano in sottofondo.",
+      "Archivia o abbandona quelli che non ti servono più.",
+      "Una lista di chat ordinata aiuta a trovare le persone che contano."
+     ],
+     "q": "Quali vecchie chat o gruppi potresti archiviare senza pensarci?",
+     "c": "Archivia o abbandona oggi almeno cinque vecchie chat o gruppi."
+    },
+    "pt": {
+     "t": "Arrumar contactos e conversas",
+     "g": "Arquivar conversas antigas e reduzir o ruído digital.",
+     "p": [
+      "Conversas e grupos antigos vão-se acumulando em segundo plano.",
+      "Arquiva ou sai dos que já não precisas.",
+      "Uma lista arrumada facilita encontrar as pessoas que importam."
+     ],
+     "q": "Que conversas ou grupos antigos podias arquivar sem pensar duas vezes?",
+     "c": "Arquiva ou sai hoje de pelo menos cinco conversas ou grupos antigos."
+    },
+    "pt_BR": {
+     "t": "Organizando contatos e conversas",
+     "g": "Arquivar conversas antigas e reduzir o ruído digital.",
+     "p": [
+      "Conversas e grupos antigos vão se acumulando em segundo plano.",
+      "Arquive ou saia dos que você não precisa mais.",
+      "Uma lista organizada facilita encontrar as pessoas que importam."
+     ],
+     "q": "Quais conversas ou grupos antigos você poderia arquivar sem pensar duas vezes?",
+     "c": "Arquive ou saia hoje de pelo menos cinco conversas ou grupos antigos."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Smartwatch settings",
+     "g": "Make a watch helpful instead of another source of interruptions.",
+     "p": [
+      "A watch can be useful for time, steps and urgent calls.",
+      "Mirror only the alerts you truly need on your wrist.",
+      "If it buzzes too much, trim it down or take a break from wearing it."
+     ],
+     "q": "Does your watch, if you have one, help you or interrupt you?",
+     "c": "Reduce your watch alerts to the essentials today; no watch? Review your earbud alerts instead."
+    },
+    "de": {
+     "t": "Smartwatch-Einstellungen",
+     "g": "Eine Uhr nützlich machen, statt eine weitere Quelle für Unterbrechungen.",
+     "p": [
+      "Eine Uhr kann für Zeit, Schritte und dringende Anrufe nützlich sein.",
+      "Lass nur die Meldungen aufs Handgelenk, die du wirklich brauchst.",
+      "Vibriert sie zu oft, reduziere sie oder leg sie mal ab."
+     ],
+     "q": "Hilft dir deine Uhr, falls du eine hast, oder unterbricht sie dich?",
+     "c": "Reduziere heute die Uhrenmeldungen aufs Nötigste; keine Uhr? Prüfe stattdessen deine Kopfhörer-Meldungen."
+    },
+    "es": {
+     "t": "Ajustes del reloj inteligente",
+     "g": "Hacer que un reloj ayude en vez de ser otra fuente de interrupciones.",
+     "p": [
+      "Un reloj puede ser útil para la hora, los pasos y llamadas urgentes.",
+      "Deja en la muñeca solo los avisos que de verdad necesitas.",
+      "Si vibra demasiado, reduce los avisos o descansa de llevarlo."
+     ],
+     "q": "Si tienes uno, ¿tu reloj te ayuda o te interrumpe?",
+     "c": "Reduce hoy los avisos del reloj a lo esencial; ¿sin reloj? Revisa los de tus auriculares."
+    },
+    "fr": {
+     "t": "Réglages de la montre connectée",
+     "g": "Rendre une montre utile au lieu d'une source d'interruptions de plus.",
+     "p": [
+      "Une montre peut servir pour l'heure, les pas et les appels urgents.",
+      "Ne laisse au poignet que les alertes dont tu as vraiment besoin.",
+      "Si elle vibre trop, réduis les alertes ou fais une pause sans elle."
+     ],
+     "q": "Si tu en as une, ta montre t'aide-t-elle ou t'interrompt-elle ?",
+     "c": "Réduis aujourd'hui les alertes de ta montre à l'essentiel ; pas de montre ? Vérifie celles de tes écouteurs."
+    },
+    "it": {
+     "t": "Impostazioni dello smartwatch",
+     "g": "Rendere utile un orologio invece di un'altra fonte di interruzioni.",
+     "p": [
+      "Un orologio può servire per ora, passi e chiamate urgenti.",
+      "Sul polso lascia solo gli avvisi che ti servono davvero.",
+      "Se vibra troppo, riduci gli avvisi o fai una pausa senza."
+     ],
+     "q": "Se ne hai uno, l'orologio ti aiuta o ti interrompe?",
+     "c": "Riduci oggi gli avvisi dell'orologio all'essenziale; niente orologio? Controlla quelli delle cuffie."
+    },
+    "pt": {
+     "t": "Definições do relógio inteligente",
+     "g": "Fazer de um relógio uma ajuda em vez de mais uma fonte de interrupções.",
+     "p": [
+      "Um relógio pode ser útil para as horas, os passos e chamadas urgentes.",
+      "Deixa no pulso só os avisos de que realmente precisas.",
+      "Se vibrar demasiado, reduz os avisos ou faz uma pausa sem ele."
+     ],
+     "q": "Se tens um, o relógio ajuda-te ou interrompe-te?",
+     "c": "Reduz hoje os avisos do relógio ao essencial; sem relógio? Revê os dos auriculares."
+    },
+    "pt_BR": {
+     "t": "Configurações do relógio inteligente",
+     "g": "Fazer de um relógio uma ajuda em vez de mais uma fonte de interrupções.",
+     "p": [
+      "Um relógio pode ser útil para a hora, os passos e ligações urgentes.",
+      "Deixe no pulso só os avisos de que você realmente precisa.",
+      "Se vibrar demais, reduza os avisos ou faça uma pausa sem ele."
+     ],
+     "q": "Se você tem um, o relógio ajuda ou interrompe você?",
+     "c": "Reduza hoje os avisos do relógio ao essencial; sem relógio? Revise os dos fones."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tablet and computer settings",
+     "g": "Apply the same calm settings to your other devices.",
+     "p": [
+      "Your tablet and computer have notifications and badges too.",
+      "Repeat what worked on your phone: alerts off, focus mode, tidy screen.",
+      "One calm setup across devices stops distractions from moving around."
+     ],
+     "q": "Which of your other devices distracts you most?",
+     "c": "Apply two calm settings to your computer or tablet today."
+    },
+    "de": {
+     "t": "Tablet- und Computer-Einstellungen",
+     "g": "Dieselben ruhigen Einstellungen auf deinen anderen Geräten anwenden.",
+     "p": [
+      "Auch Tablet und Computer haben Benachrichtigungen und Abzeichen.",
+      "Wiederhole, was am Handy half: Meldungen aus, Fokus-Modus, aufgeräumter Bildschirm.",
+      "Eine ruhige Einrichtung auf allen Geräten verhindert, dass Ablenkung wandert."
+     ],
+     "q": "Welches deiner anderen Geräte lenkt dich am meisten ab?",
+     "c": "Wende heute zwei ruhige Einstellungen auf Computer oder Tablet an."
+    },
+    "es": {
+     "t": "Ajustes de tableta y ordenador",
+     "g": "Aplicar los mismos ajustes tranquilos a tus otros dispositivos.",
+     "p": [
+      "Tu tableta y tu ordenador también tienen notificaciones y globos.",
+      "Repite lo que funcionó en el móvil: avisos fuera, modo concentración, pantalla ordenada.",
+      "Una configuración tranquila en todos los dispositivos evita que la distracción se mude."
+     ],
+     "q": "¿Cuál de tus otros dispositivos te distrae más?",
+     "c": "Aplica hoy dos ajustes tranquilos a tu ordenador o tableta."
+    },
+    "fr": {
+     "t": "Réglages de la tablette et de l'ordinateur",
+     "g": "Appliquer les mêmes réglages apaisants à tes autres appareils.",
+     "p": [
+      "Ta tablette et ton ordinateur ont aussi des notifications et des pastilles.",
+      "Reproduis ce qui a marché sur le téléphone : alertes coupées, mode concentration, écran rangé.",
+      "Une configuration calme sur tous les appareils empêche la distraction de se déplacer."
+     ],
+     "q": "Lequel de tes autres appareils te distrait le plus ?",
+     "c": "Applique aujourd'hui deux réglages apaisants à ton ordinateur ou ta tablette."
+    },
+    "it": {
+     "t": "Impostazioni di tablet e computer",
+     "g": "Applicare le stesse impostazioni calme agli altri dispositivi.",
+     "p": [
+      "Anche tablet e computer hanno notifiche e badge.",
+      "Ripeti ciò che ha funzionato sul telefono: avvisi spenti, modalità concentrazione, schermo ordinato.",
+      "Una configurazione calma su tutti i dispositivi evita che la distrazione si sposti."
+     ],
+     "q": "Quale dei tuoi altri dispositivi ti distrae di più?",
+     "c": "Applica oggi due impostazioni calme a computer o tablet."
+    },
+    "pt": {
+     "t": "Definições do tablet e do computador",
+     "g": "Aplicar as mesmas definições calmas aos teus outros dispositivos.",
+     "p": [
+      "O tablet e o computador também têm notificações e selos.",
+      "Repete o que funcionou no telemóvel: avisos desligados, modo de concentração, ecrã arrumado.",
+      "Uma configuração calma em todos os dispositivos impede que a distração mude de sítio."
+     ],
+     "q": "Qual dos teus outros dispositivos te distrai mais?",
+     "c": "Aplica hoje duas definições calmas ao computador ou tablet."
+    },
+    "pt_BR": {
+     "t": "Configurações de tablet e computador",
+     "g": "Aplicar as mesmas configurações calmas aos seus outros dispositivos.",
+     "p": [
+      "Seu tablet e seu computador também têm notificações e selos.",
+      "Repita o que funcionou no celular: avisos desligados, modo de foco, tela organizada.",
+      "Uma configuração calma em todos os dispositivos impede que a distração mude de lugar."
+     ],
+     "q": "Qual dos seus outros dispositivos distrai você mais?",
+     "c": "Aplique hoje duas configurações calmas ao computador ou tablet."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Family device settings",
+     "g": "Explore shared settings and screen-time tools for households.",
+     "p": [
+      "Many devices have family tools for shared limits and quiet times.",
+      "Agree on settings together; rules feel better when everyone helps shape them.",
+      "Lead by example: your own habits teach more than rules."
+     ],
+     "q": "How could your household agree on some shared screen guidelines?",
+     "c": "Talk with someone you live with about one shared screen rule, like a quiet dinner."
+    },
+    "de": {
+     "t": "Familien-Geräteeinstellungen",
+     "g": "Gemeinsame Einstellungen und Bildschirmzeit-Werkzeuge für Haushalte kennenlernen.",
+     "p": [
+      "Viele Geräte haben Familienfunktionen für gemeinsame Limits und Ruhezeiten.",
+      "Einigt euch gemeinsam; Regeln fühlen sich besser an, wenn alle mitgestalten.",
+      "Geh mit gutem Beispiel voran: Dein Verhalten lehrt mehr als Regeln."
+     ],
+     "q": "Wie könntet ihr euch zu Hause auf gemeinsame Bildschirmregeln einigen?",
+     "c": "Sprich mit jemandem aus deinem Haushalt über eine gemeinsame Regel, etwa ein ruhiges Abendessen."
+    },
+    "es": {
+     "t": "Ajustes familiares de dispositivos",
+     "g": "Conocer ajustes compartidos y herramientas de tiempo de pantalla para el hogar.",
+     "p": [
+      "Muchos dispositivos tienen herramientas familiares para límites y horas de calma compartidos.",
+      "Acordad los ajustes juntos; las reglas se llevan mejor cuando todos las moldean.",
+      "Da ejemplo: tus hábitos enseñan más que las normas."
+     ],
+     "q": "¿Cómo podría ponerse de acuerdo tu hogar sobre unas pautas de pantallas?",
+     "c": "Habla con alguien de casa sobre una regla compartida, como una cena tranquila."
+    },
+    "fr": {
+     "t": "Réglages familiaux des appareils",
+     "g": "Découvrir les réglages partagés et outils de temps d'écran pour le foyer.",
+     "p": [
+      "Beaucoup d'appareils ont des outils familiaux pour des limites et des heures calmes communes.",
+      "Décidez ensemble ; les règles passent mieux quand tout le monde les façonne.",
+      "Montre l'exemple : tes habitudes enseignent plus que les règles."
+     ],
+     "q": "Comment votre foyer pourrait-il s'accorder sur quelques repères d'écran ?",
+     "c": "Parle avec quelqu'un de chez toi d'une règle commune, comme un dîner tranquille."
+    },
+    "it": {
+     "t": "Impostazioni familiari dei dispositivi",
+     "g": "Scoprire impostazioni condivise e strumenti di tempo di schermo per la famiglia.",
+     "p": [
+      "Molti dispositivi hanno strumenti familiari per limiti e ore di calma condivisi.",
+      "Decidete insieme; le regole si accettano meglio quando tutti le plasmano.",
+      "Dai l'esempio: le tue abitudini insegnano più delle regole."
+     ],
+     "q": "Come potrebbe la tua famiglia accordarsi su alcune linee guida sugli schermi?",
+     "c": "Parla con qualcuno di casa di una regola condivisa, come una cena tranquilla."
+    },
+    "pt": {
+     "t": "Definições familiares dos dispositivos",
+     "g": "Conhecer definições partilhadas e ferramentas de tempo de ecrã para a casa.",
+     "p": [
+      "Muitos dispositivos têm ferramentas familiares para limites e horas de calma partilhados.",
+      "Combinem as definições juntos; as regras sabem melhor quando todos as moldam.",
+      "Dá o exemplo: os teus hábitos ensinam mais do que as regras."
+     ],
+     "q": "Como poderia a tua casa chegar a acordo sobre algumas regras de ecrãs?",
+     "c": "Fala com alguém lá de casa sobre uma regra partilhada, como um jantar tranquilo."
+    },
+    "pt_BR": {
+     "t": "Configurações familiares dos dispositivos",
+     "g": "Conhecer configurações compartilhadas e ferramentas de tempo de tela para a casa.",
+     "p": [
+      "Muitos dispositivos têm ferramentas familiares para limites e horas de calma compartilhados.",
+      "Combinem as configurações juntos; as regras funcionam melhor quando todos ajudam a moldá-las.",
+      "Dê o exemplo: seus hábitos ensinam mais do que regras."
+     ],
+     "q": "Como sua casa poderia chegar a um acordo sobre algumas regras de telas?",
+     "c": "Converse com alguém da sua casa sobre uma regra compartilhada, como um jantar tranquilo."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Phone-free zones at home",
+     "g": "Choose places like the dining table where phones do not go.",
+     "p": [
+      "A phone-free zone protects a moment that matters to you.",
+      "Start with one: the dining table, the sofa or the bedroom.",
+      "A small basket or shelf at the entrance makes it easy to follow."
+     ],
+     "q": "Which spot in your home would you most like to keep phone-free?",
+     "c": "Make the dining table phone-free for every meal today."
+    },
+    "de": {
+     "t": "Handyfreie Zonen zu Hause",
+     "g": "Orte wie den Esstisch wählen, an die kein Handy mitkommt.",
+     "p": [
+      "Eine handyfreie Zone schützt einen Moment, der dir wichtig ist.",
+      "Beginne mit einer: Esstisch, Sofa oder Schlafzimmer.",
+      "Ein kleiner Korb oder ein Regal am Eingang erleichtert das Einhalten."
+     ],
+     "q": "Welchen Ort in deinem Zuhause möchtest du am liebsten handyfrei halten?",
+     "c": "Mach heute den Esstisch bei jeder Mahlzeit handyfrei."
+    },
+    "es": {
+     "t": "Zonas sin móvil en casa",
+     "g": "Elegir lugares como la mesa del comedor a los que el móvil no entra.",
+     "p": [
+      "Una zona sin móvil protege un momento que te importa.",
+      "Empieza por una: la mesa, el sofá o el dormitorio.",
+      "Una cesta o balda en la entrada facilita cumplirlo."
+     ],
+     "q": "¿Qué lugar de tu casa te gustaría mantener libre de móviles?",
+     "c": "Haz hoy que la mesa esté libre de móviles en todas las comidas."
+    },
+    "fr": {
+     "t": "Zones sans téléphone à la maison",
+     "g": "Choisir des lieux comme la table à manger où les téléphones n'entrent pas.",
+     "p": [
+      "Une zone sans téléphone protège un moment qui compte pour toi.",
+      "Commence par une : la table, le canapé ou la chambre.",
+      "Un petit panier ou une étagère à l'entrée facilite la règle."
+     ],
+     "q": "Quel endroit de ta maison aimerais-tu garder sans téléphone ?",
+     "c": "Fais de la table à manger une zone sans téléphone à chaque repas aujourd'hui."
+    },
+    "it": {
+     "t": "Zone senza telefono in casa",
+     "g": "Scegliere luoghi come il tavolo da pranzo dove i telefoni non entrano.",
+     "p": [
+      "Una zona senza telefono protegge un momento che ti sta a cuore.",
+      "Parti da una: il tavolo, il divano o la camera.",
+      "Un cestino o una mensola all'ingresso rende facile rispettarla."
+     ],
+     "q": "Quale posto di casa vorresti mantenere libero dai telefoni?",
+     "c": "Rendi oggi il tavolo da pranzo senza telefono a ogni pasto."
+    },
+    "pt": {
+     "t": "Zonas sem telemóvel em casa",
+     "g": "Escolher locais como a mesa de jantar onde os telemóveis não entram.",
+     "p": [
+      "Uma zona sem telemóvel protege um momento que te importa.",
+      "Começa por uma: a mesa, o sofá ou o quarto.",
+      "Um cesto ou prateleira à entrada facilita o cumprimento."
+     ],
+     "q": "Que sítio da tua casa gostarias de manter sem telemóveis?",
+     "c": "Faz hoje da mesa uma zona sem telemóvel em todas as refeições."
+    },
+    "pt_BR": {
+     "t": "Zonas sem celular em casa",
+     "g": "Escolher lugares como a mesa de jantar onde os celulares não entram.",
+     "p": [
+      "Uma zona sem celular protege um momento que importa para você.",
+      "Comece por uma: a mesa, o sofá ou o quarto.",
+      "Uma cesta ou prateleira na entrada facilita seguir a regra."
+     ],
+     "q": "Que lugar da sua casa você gostaria de manter sem celulares?",
+     "c": "Faça hoje da mesa uma zona sem celular em todas as refeições."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Phone-free times of day",
+     "g": "Pick one daily window for being fully offline.",
+     "p": [
+      "Choose a regular time, like the first hour after work or Sunday morning.",
+      "Tell people close to you so they know when you will be back.",
+      "A daily offline window is like a small holiday from the screen."
+     ],
+     "q": "When in your day could you comfortably be offline for an hour?",
+     "c": "Pick one hour today to be fully offline and enjoy something analogue."
+    },
+    "de": {
+     "t": "Handyfreie Tageszeiten",
+     "g": "Ein tägliches Zeitfenster für völlige Offline-Zeit wählen.",
+     "p": [
+      "Wähle eine feste Zeit, etwa die erste Stunde nach der Arbeit oder den Sonntagmorgen.",
+      "Sag Nahestehenden Bescheid, damit sie wissen, wann du wieder erreichbar bist.",
+      "Ein tägliches Offline-Fenster ist wie ein kleiner Urlaub vom Bildschirm."
+     ],
+     "q": "Wann am Tag könntest du bequem eine Stunde offline sein?",
+     "c": "Wähle heute eine Stunde ganz ohne Netz und genieße etwas Analoges."
+    },
+    "es": {
+     "t": "Horas del día sin móvil",
+     "g": "Elegir una franja diaria para estar completamente desconectado.",
+     "p": [
+      "Elige un momento regular, como la primera hora tras el trabajo o el domingo por la mañana.",
+      "Avisa a los cercanos para que sepan cuándo volverás.",
+      "Una franja sin conexión es como unas pequeñas vacaciones de la pantalla."
+     ],
+     "q": "¿En qué momento del día podrías estar sin conexión una hora con comodidad?",
+     "c": "Elige hoy una hora para estar sin conexión y disfruta de algo analógico."
+    },
+    "fr": {
+     "t": "Moments de la journée sans téléphone",
+     "g": "Choisir une plage quotidienne pour être totalement déconnecté.",
+     "p": [
+      "Choisis un moment régulier, comme la première heure après le travail ou le dimanche matin.",
+      "Préviens tes proches pour qu'ils sachent quand tu reviens.",
+      "Une plage hors ligne chaque jour, c'est comme de petites vacances d'écran."
+     ],
+     "q": "À quel moment de ta journée pourrais-tu être hors ligne une heure sans problème ?",
+     "c": "Choisis aujourd'hui une heure totalement hors ligne et profite de quelque chose d'analogique."
+    },
+    "it": {
+     "t": "Momenti della giornata senza telefono",
+     "g": "Scegliere una fascia giornaliera per stare completamente offline.",
+     "p": [
+      "Scegli un orario regolare, come la prima ora dopo il lavoro o la domenica mattina.",
+      "Avvisa le persone vicine così sanno quando torni.",
+      "Una fascia offline quotidiana è come una piccola vacanza dallo schermo."
+     ],
+     "q": "In quale momento della giornata potresti stare offline un'ora senza problemi?",
+     "c": "Scegli oggi un'ora completamente offline e goditi qualcosa di analogico."
+    },
+    "pt": {
+     "t": "Horas do dia sem telemóvel",
+     "g": "Escolher uma janela diária para ficar totalmente desligado.",
+     "p": [
+      "Escolhe uma hora regular, como a primeira hora depois do trabalho ou a manhã de domingo.",
+      "Avisa quem te é próximo para saberem quando voltas.",
+      "Uma janela diária sem ligação é como umas pequenas férias do ecrã."
+     ],
+     "q": "Em que altura do dia podias estar uma hora sem ligação à vontade?",
+     "c": "Escolhe hoje uma hora totalmente offline e desfruta de algo analógico."
+    },
+    "pt_BR": {
+     "t": "Horários do dia sem celular",
+     "g": "Escolher uma janela diária para ficar totalmente desconectado.",
+     "p": [
+      "Escolha um horário regular, como a primeira hora depois do trabalho ou a manhã de domingo.",
+      "Avise quem é próximo para saberem quando você volta.",
+      "Uma janela diária offline é como pequenas férias da tela."
+     ],
+     "q": "Em que momento do dia você poderia ficar uma hora offline com tranquilidade?",
+     "c": "Escolha hoje uma hora totalmente offline e curta algo analógico."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Leaving the phone behind",
+     "g": "Go for a short walk or errand without your phone.",
+     "p": [
+      "Leave the phone at home for a ten-minute walk or a short errand.",
+      "It may feel odd at first, then freeing.",
+      "Plan ahead: know the route and tell someone if needed."
+     ],
+     "q": "What do you think you would notice on a walk without your phone?",
+     "c": "Take a short walk or errand today without your phone, if it is safe for you."
+    },
+    "de": {
+     "t": "Das Handy zu Hause lassen",
+     "g": "Einen kurzen Spaziergang oder Besorgungsgang ohne Handy machen.",
+     "p": [
+      "Lass das Handy für zehn Minuten Spaziergang oder eine kurze Besorgung zu Hause.",
+      "Es fühlt sich erst seltsam an, dann befreiend.",
+      "Plane voraus: kenne die Route und sag bei Bedarf jemandem Bescheid."
+     ],
+     "q": "Was würdest du bei einem Spaziergang ohne Handy wohl bemerken?",
+     "c": "Mach heute einen kurzen Spaziergang oder Gang ohne Handy, wenn es für dich sicher ist."
+    },
+    "es": {
+     "t": "Dejar el móvil en casa",
+     "g": "Dar un paseo corto o hacer un recado sin el móvil.",
+     "p": [
+      "Deja el móvil en casa para un paseo de diez minutos o un recado breve.",
+      "Al principio puede sentirse raro y luego liberador.",
+      "Planifica antes: conoce la ruta y avisa a alguien si hace falta."
+     ],
+     "q": "¿Qué crees que notarías en un paseo sin el móvil?",
+     "c": "Da hoy un paseo corto o haz un recado sin el móvil, si es seguro para ti."
+    },
+    "fr": {
+     "t": "Laisser le téléphone derrière toi",
+     "g": "Faire une courte promenade ou une course sans ton téléphone.",
+     "p": [
+      "Laisse le téléphone à la maison pour dix minutes de marche ou une petite course.",
+      "Ça paraît étrange au début, puis libérateur.",
+      "Prévois : connais le trajet et préviens quelqu'un si besoin."
+     ],
+     "q": "Que crois-tu remarquer lors d'une promenade sans téléphone ?",
+     "c": "Fais aujourd'hui une courte promenade ou course sans téléphone, si c'est sûr pour toi."
+    },
+    "it": {
+     "t": "Lasciare il telefono a casa",
+     "g": "Fare una breve passeggiata o commissione senza telefono.",
+     "p": [
+      "Lascia il telefono a casa per dieci minuti di passeggiata o una breve commissione.",
+      "All'inizio può sembrare strano, poi liberatorio.",
+      "Pianifica prima: conosci il percorso e avvisa qualcuno se serve."
+     ],
+     "q": "Cosa pensi che noteresti in una passeggiata senza telefono?",
+     "c": "Fai oggi una breve passeggiata o commissione senza telefono, se per te è sicuro."
+    },
+    "pt": {
+     "t": "Deixar o telemóvel para trás",
+     "g": "Dar um passeio curto ou fazer um recado sem o telemóvel.",
+     "p": [
+      "Deixa o telemóvel em casa durante dez minutos de passeio ou um recado curto.",
+      "No início pode parecer estranho e depois libertador.",
+      "Planeia antes: conhece o caminho e avisa alguém se for preciso."
+     ],
+     "q": "O que achas que notarias num passeio sem telemóvel?",
+     "c": "Dá hoje um passeio curto ou faz um recado sem telemóvel, se for seguro para ti."
+    },
+    "pt_BR": {
+     "t": "Deixando o celular para trás",
+     "g": "Dar uma caminhada curta ou fazer uma tarefa sem o celular.",
+     "p": [
+      "Deixe o celular em casa por dez minutos de caminhada ou uma tarefa curta.",
+      "No começo pode parecer estranho e depois libertador.",
+      "Planeje antes: conheça o caminho e avise alguém se for preciso."
+     ],
+     "q": "O que você acha que notaria numa caminhada sem celular?",
+     "c": "Dê hoje uma caminhada curta ou faça uma tarefa sem celular, se for seguro para você."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Carrying the phone in a bag",
+     "g": "Keep the phone out of your pocket to reduce automatic checks.",
+     "p": [
+      "A phone in your pocket is one reach away; in a bag it takes a moment.",
+      "That extra moment gives you time to decide if you really need it.",
+      "Use the bag for outings and a drawer or shelf at home."
+     ],
+     "q": "How often do you think you check your phone when it is in your pocket?",
+     "c": "Carry your phone in a bag or jacket pocket you have to zip, and notice the difference."
+    },
+    "de": {
+     "t": "Das Handy in der Tasche tragen",
+     "g": "Das Handy aus der Hosentasche lassen, um automatische Blicke zu verringern.",
+     "p": [
+      "Ein Handy in der Hosentasche ist einen Griff entfernt; in der Tasche dauert es einen Moment.",
+      "Dieser Moment gibt dir Zeit zu entscheiden, ob du es wirklich brauchst.",
+      "Nutze unterwegs die Tasche und zu Hause Schublade oder Regal."
+     ],
+     "q": "Wie oft schaust du wohl aufs Handy, wenn es in der Hosentasche steckt?",
+     "c": "Trage dein Handy heute in einer Tasche mit Reißverschluss und spür den Unterschied."
+    },
+    "es": {
+     "t": "Llevar el móvil en el bolso",
+     "g": "Mantener el móvil fuera del bolsillo para reducir las miradas automáticas.",
+     "p": [
+      "Un móvil en el bolsillo está a un gesto; en un bolso lleva un momento.",
+      "Ese momento extra te da tiempo para decidir si de verdad lo necesitas.",
+      "Usa el bolso fuera de casa y un cajón o balda dentro."
+     ],
+     "q": "¿Cuántas veces crees que miras el móvil cuando lo llevas en el bolsillo?",
+     "c": "Lleva hoy el móvil en un bolso o bolsillo con cremallera y nota la diferencia."
+    },
+    "fr": {
+     "t": "Porter le téléphone dans un sac",
+     "g": "Garder le téléphone hors de ta poche pour réduire les vérifications automatiques.",
+     "p": [
+      "Un téléphone en poche est à un geste ; dans un sac, il faut un instant.",
+      "Cet instant te laisse le temps de décider si tu en as vraiment besoin.",
+      "Utilise le sac en sortie, un tiroir ou une étagère à la maison."
+     ],
+     "q": "Combien de fois penses-tu regarder ton téléphone quand il est en poche ?",
+     "c": "Porte aujourd'hui ton téléphone dans un sac ou une poche zippée et note la différence."
+    },
+    "it": {
+     "t": "Portare il telefono in borsa",
+     "g": "Tenere il telefono fuori dalla tasca per ridurre i controlli automatici.",
+     "p": [
+      "Un telefono in tasca è a un gesto; in borsa ci vuole un attimo.",
+      "Quell'attimo in più ti dà il tempo di decidere se ti serve davvero.",
+      "Usa la borsa fuori casa e un cassetto o una mensola dentro."
+     ],
+     "q": "Quante volte pensi di controllare il telefono quando è in tasca?",
+     "c": "Porta oggi il telefono in una borsa o tasca con la zip e nota la differenza."
+    },
+    "pt": {
+     "t": "Levar o telemóvel na mala",
+     "g": "Manter o telemóvel fora do bolso para reduzir verificações automáticas.",
+     "p": [
+      "Um telemóvel no bolso está a um gesto; numa mala demora um momento.",
+      "Esse momento extra dá-te tempo para decidir se precisas mesmo dele.",
+      "Usa a mala na rua e uma gaveta ou prateleira em casa."
+     ],
+     "q": "Quantas vezes achas que olhas para o telemóvel quando está no bolso?",
+     "c": "Leva hoje o telemóvel numa mala ou bolso com fecho e repara na diferença."
+    },
+    "pt_BR": {
+     "t": "Levando o celular na bolsa",
+     "g": "Manter o celular fora do bolso para reduzir checagens automáticas.",
+     "p": [
+      "Um celular no bolso está a um gesto; numa bolsa leva um momento.",
+      "Esse momento extra dá tempo para decidir se você precisa mesmo dele.",
+      "Use a bolsa na rua e uma gaveta ou prateleira em casa."
+     ],
+     "q": "Quantas vezes você acha que olha o celular quando ele está no bolso?",
+     "c": "Leve hoje o celular numa bolsa ou bolso com zíper e note a diferença."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your calm-phone checklist",
+     "g": "Put all your new settings together into one personal checklist.",
+     "p": [
+      "List what you set up: alerts, home screen, limits, night spot, zones.",
+      "A checklist helps you rebuild your calm setup on any new device.",
+      "Mark what works well and what still needs a tweak."
+     ],
+     "q": "Which three settings have made the biggest difference so far?",
+     "c": "Write your calm-phone checklist on paper and check each item against your phone."
+    },
+    "de": {
+     "t": "Deine Ruhe-Handy-Checkliste",
+     "g": "Alle neuen Einstellungen zu einer persönlichen Checkliste zusammenfassen.",
+     "p": [
+      "Liste auf, was du eingerichtet hast: Meldungen, Startbildschirm, Limits, Nachtplatz, Zonen.",
+      "Eine Checkliste hilft dir, dein ruhiges Setup auf jedem neuen Gerät nachzubauen.",
+      "Markiere, was gut klappt und was noch Feinschliff braucht."
+     ],
+     "q": "Welche drei Einstellungen haben bisher den größten Unterschied gemacht?",
+     "c": "Schreib deine Checkliste auf Papier und prüfe jeden Punkt an deinem Handy."
+    },
+    "es": {
+     "t": "Tu lista de móvil tranquilo",
+     "g": "Reunir todos tus nuevos ajustes en una lista personal.",
+     "p": [
+      "Anota lo que has configurado: avisos, pantalla, límites, lugar nocturno, zonas.",
+      "Una lista te ayuda a reconstruir tu configuración tranquila en cualquier móvil nuevo.",
+      "Marca lo que funciona bien y lo que aún necesita un retoque."
+     ],
+     "q": "¿Qué tres ajustes han marcado más diferencia hasta ahora?",
+     "c": "Escribe tu lista en papel y comprueba cada punto en tu móvil."
+    },
+    "fr": {
+     "t": "Ta liste de téléphone apaisé",
+     "g": "Rassembler tous tes nouveaux réglages dans une liste personnelle.",
+     "p": [
+      "Note ce que tu as configuré : alertes, écran d'accueil, limites, coin de nuit, zones.",
+      "Une liste t'aide à recréer ta configuration calme sur n'importe quel nouvel appareil.",
+      "Marque ce qui marche bien et ce qui demande encore un ajustement."
+     ],
+     "q": "Quels trois réglages ont le plus changé les choses jusqu'ici ?",
+     "c": "Écris ta liste sur papier et vérifie chaque point sur ton téléphone."
+    },
+    "it": {
+     "t": "La tua checklist del telefono calmo",
+     "g": "Riunire tutte le nuove impostazioni in una checklist personale.",
+     "p": [
+      "Elenca ciò che hai impostato: avvisi, schermata, limiti, posto notturno, zone.",
+      "Una checklist ti aiuta a ricostruire la configurazione calma su qualsiasi nuovo dispositivo.",
+      "Segna ciò che funziona bene e ciò che richiede ancora un ritocco."
+     ],
+     "q": "Quali tre impostazioni hanno fatto più differenza finora?",
+     "c": "Scrivi la checklist su carta e controlla ogni voce sul telefono."
+    },
+    "pt": {
+     "t": "A tua lista de telemóvel calmo",
+     "g": "Reunir todas as novas definições numa lista pessoal.",
+     "p": [
+      "Anota o que configuraste: avisos, ecrã, limites, sítio noturno, zonas.",
+      "Uma lista ajuda-te a recriar a configuração calma em qualquer telemóvel novo.",
+      "Marca o que funciona bem e o que ainda precisa de um ajuste."
+     ],
+     "q": "Que três definições fizeram mais diferença até agora?",
+     "c": "Escreve a lista em papel e confirma cada ponto no teu telemóvel."
+    },
+    "pt_BR": {
+     "t": "Sua lista de celular tranquilo",
+     "g": "Reunir todas as novas configurações em uma lista pessoal.",
+     "p": [
+      "Anote o que você configurou: avisos, tela, limites, lugar noturno, zonas.",
+      "Uma lista ajuda a recriar a configuração calma em qualquer celular novo.",
+      "Marque o que funciona bem e o que ainda precisa de um ajuste."
+     ],
+     "q": "Quais três configurações fizeram mais diferença até agora?",
+     "c": "Escreva sua lista no papel e confira cada item no seu celular."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Phone setup review",
+     "g": "Revisit notifications, home screen and limits that worked for you.",
+     "p": [
+      "Open your settings and check what still serves you.",
+      "Adjust limits that were too strict or too loose.",
+      "Habits change, so a quick review keeps your setup fresh."
+     ],
+     "q": "Which setting would you tweak after two months of trying them?",
+     "c": "Review your notifications, home screen and limits and change one thing."
+    },
+    "de": {
+     "t": "Überprüfung deiner Handy-Einrichtung",
+     "g": "Benachrichtigungen, Startbildschirm und Limits überprüfen, die für dich funktionierten.",
+     "p": [
+      "Öffne deine Einstellungen und prüfe, was dir noch dient.",
+      "Passe Limits an, die zu streng oder zu locker waren.",
+      "Gewohnheiten ändern sich, daher hält ein kurzer Check dein Setup frisch."
+     ],
+     "q": "Welche Einstellung würdest du nach zwei Monaten Ausprobieren anpassen?",
+     "c": "Prüfe Benachrichtigungen, Startbildschirm und Limits und ändere eine Sache."
+    },
+    "es": {
+     "t": "Revisión de la configuración del móvil",
+     "g": "Revisar las notificaciones, la pantalla de inicio y los límites que te han funcionado.",
+     "p": [
+      "Abre los ajustes y comprueba qué te sigue sirviendo.",
+      "Ajusta los límites que fueron demasiado estrictos o demasiado laxos.",
+      "Los hábitos cambian, así que un repaso rápido mantiene fresca tu configuración."
+     ],
+     "q": "¿Qué ajuste retocarías tras dos meses de probarlos?",
+     "c": "Revisa tus notificaciones, pantalla de inicio y límites y cambia una cosa."
+    },
+    "fr": {
+     "t": "Bilan de la configuration du téléphone",
+     "g": "Revoir les notifications, l'écran d'accueil et les limites qui ont marché pour toi.",
+     "p": [
+      "Ouvre tes réglages et vérifie ce qui te sert encore.",
+      "Ajuste les limites trop strictes ou trop souples.",
+      "Les habitudes changent, donc un rapide bilan garde ta configuration à jour."
+     ],
+     "q": "Quel réglage ajusterais-tu après deux mois d'essais ?",
+     "c": "Passe en revue tes notifications, ton écran d'accueil et tes limites et change une chose."
+    },
+    "it": {
+     "t": "Revisione delle impostazioni del telefono",
+     "g": "Rivedere notifiche, schermata iniziale e limiti che hanno funzionato per te.",
+     "p": [
+      "Apri le impostazioni e controlla cosa ti serve ancora.",
+      "Regola i limiti che erano troppo rigidi o troppo larghi.",
+      "Le abitudini cambiano, quindi un controllo rapido mantiene fresca la configurazione."
+     ],
+     "q": "Quale impostazione ritoccheresti dopo due mesi di prove?",
+     "c": "Rivedi notifiche, schermata iniziale e limiti e cambia una cosa."
+    },
+    "pt": {
+     "t": "Revisão da configuração do telemóvel",
+     "g": "Rever as notificações, o ecrã inicial e os limites que funcionaram para ti.",
+     "p": [
+      "Abre as definições e vê o que ainda te serve.",
+      "Ajusta os limites que foram demasiado rígidos ou demasiado soltos.",
+      "Os hábitos mudam, por isso uma revisão rápida mantém a configuração atualizada."
+     ],
+     "q": "Que definição ajustarias depois de dois meses a experimentar?",
+     "c": "Revê as notificações, o ecrã inicial e os limites e muda uma coisa."
+    },
+    "pt_BR": {
+     "t": "Revisão da configuração do celular",
+     "g": "Rever as notificações, a tela inicial e os limites que funcionaram para você.",
+     "p": [
+      "Abra as configurações e veja o que ainda serve a você.",
+      "Ajuste os limites que foram rígidos demais ou soltos demais.",
+      "Os hábitos mudam, então uma revisão rápida mantém a configuração atualizada."
+     ],
+     "q": "Que configuração você ajustaria depois de dois meses testando?",
+     "c": "Revise suas notificações, tela inicial e limites e mude uma coisa."
+    }
+   }
+  }
+ ]
+}

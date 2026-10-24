@@ -1,0 +1,835 @@
+{
+ "topic": "moving_abroad",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your goodbye list",
+     "g": "List places, foods and moments you want to enjoy before leaving.",
+     "p": [
+      "Write down your favourite cafe, park, street and dish that you want to enjoy once more.",
+      "Treat your hometown like a traveller for a few weeks and notice small beauties.",
+      "Take photos and short notes. They become treasures on homesick days."
+     ],
+     "q": "What is the first place on your goodbye list?",
+     "c": "Do one item from your goodbye list this week and take a photo."
+    },
+    "de": {
+     "t": "Deine Abschiedsliste",
+     "g": "Liste Orte, Speisen und Momente auf, die du vor der Abreise genießen willst.",
+     "p": [
+      "Schreib dein Lieblingscafé, deinen Park, deine Straße und dein Gericht auf, die du noch einmal genießen willst.",
+      "Behandle deine Heimatstadt ein paar Wochen wie ein Reisender und entdecke kleine Schönheiten.",
+      "Mach Fotos und kurze Notizen. Sie werden an Heimwehtagen zu Schätzen."
+     ],
+     "q": "Was ist der erste Ort auf deiner Abschiedsliste?",
+     "c": "Erledige diese Woche einen Punkt deiner Abschiedsliste und mach ein Foto."
+    },
+    "es": {
+     "t": "Tu lista de despedida",
+     "g": "Haz una lista de lugares, comidas y momentos que quieres disfrutar antes de irte.",
+     "p": [
+      "Anota tu café, parque, calle y plato favoritos que quieres disfrutar una vez más.",
+      "Trata tu ciudad como un viajero durante unas semanas y fíjate en las pequeñas bellezas.",
+      "Haz fotos y notas breves. Serán tesoros en los días de nostalgia."
+     ],
+     "q": "¿Cuál es el primer lugar de tu lista de despedida?",
+     "c": "Haz esta semana una cosa de tu lista de despedida y saca una foto."
+    },
+    "fr": {
+     "t": "Ta liste d'adieux",
+     "g": "Dresse la liste des lieux, plats et moments que tu veux savourer avant de partir.",
+     "p": [
+      "Note ton café, ton parc, ta rue et ton plat préférés que tu veux savourer une dernière fois.",
+      "Traite ta ville comme un voyageur pendant quelques semaines et remarque les petites beautés.",
+      "Prends des photos et de courtes notes. Elles deviendront des trésors les jours de nostalgie."
+     ],
+     "q": "Quel est le premier lieu de ta liste d'adieux ?",
+     "c": "Fais cette semaine une chose de ta liste d'adieux et prends une photo."
+    },
+    "it": {
+     "t": "La tua lista dei saluti",
+     "g": "Elenca luoghi, cibi e momenti che vuoi godere prima di partire.",
+     "p": [
+      "Scrivi il tuo bar, parco, via e piatto preferiti che vuoi godere ancora una volta.",
+      "Tratta la tua città come un viaggiatore per qualche settimana e nota le piccole bellezze.",
+      "Scatta foto e prendi brevi appunti. Saranno tesori nei giorni di nostalgia."
+     ],
+     "q": "Qual è il primo posto della tua lista dei saluti?",
+     "c": "Fai questa settimana una cosa della tua lista dei saluti e scatta una foto."
+    },
+    "pt": {
+     "t": "A tua lista de despedida",
+     "g": "Lista lugares, comidas e momentos que queres desfrutar antes de partires.",
+     "p": [
+      "Escreve o teu café, jardim, rua e prato preferidos que queres desfrutar mais uma vez.",
+      "Trata a tua cidade como um viajante durante umas semanas e repara nas pequenas belezas.",
+      "Tira fotografias e faz notas breves. Serão tesouros nos dias de saudade."
+     ],
+     "q": "Qual é o primeiro lugar da tua lista de despedida?",
+     "c": "Faz esta semana uma coisa da tua lista de despedida e tira uma fotografia."
+    },
+    "pt_BR": {
+     "t": "Sua lista de despedida",
+     "g": "Liste lugares, comidas e momentos que quer aproveitar antes de partir.",
+     "p": [
+      "Escreva seu café, parque, rua e prato favoritos que quer aproveitar mais uma vez.",
+      "Trate sua cidade como um viajante por algumas semanas e repare nas pequenas belezas.",
+      "Tire fotos e faça anotações breves. Serão tesouros nos dias de saudade."
+     ],
+     "q": "Qual é o primeiro lugar da sua lista de despedida?",
+     "c": "Faça esta semana uma coisa da sua lista de despedida e tire uma foto."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Last-week checklist",
+     "g": "Finish the final tasks calmly before departure.",
+     "p": [
+      "Check documents, tickets, keys, accommodation confirmation and chargers.",
+      "Do final cleaning, close accounts you no longer need and return borrowed items.",
+      "Leave one free afternoon for the unexpected and for rest."
+     ],
+     "q": "Which task do you most want finished before the last week?",
+     "c": "Write a last-week checklist with dates and tick one item today."
+    },
+    "de": {
+     "t": "Checkliste für die letzte Woche",
+     "g": "Erledige die letzten Aufgaben in Ruhe vor der Abreise.",
+     "p": [
+      "Prüfe Dokumente, Tickets, Schlüssel, Unterkunftsbestätigung und Ladegeräte.",
+      "Mach die Endreinigung, kündige nicht mehr benötigte Konten und gib Geliehenes zurück.",
+      "Lass einen freien Nachmittag für Unerwartetes und zum Ausruhen."
+     ],
+     "q": "Welche Aufgabe möchtest du vor der letzten Woche unbedingt erledigt haben?",
+     "c": "Schreib eine Checkliste für die letzte Woche mit Daten und hak heute einen Punkt ab."
+    },
+    "es": {
+     "t": "Lista de la última semana",
+     "g": "Termina con calma las últimas tareas antes de la partida.",
+     "p": [
+      "Revisa documentos, billetes, llaves, confirmación del alojamiento y cargadores.",
+      "Haz la limpieza final, cierra las cuentas que ya no necesites y devuelve lo prestado.",
+      "Deja una tarde libre para imprevistos y para descansar."
+     ],
+     "q": "¿Qué tarea quieres tener terminada antes de la última semana?",
+     "c": "Escribe una lista de la última semana con fechas y tacha hoy un punto."
+    },
+    "fr": {
+     "t": "Liste de la dernière semaine",
+     "g": "Termine sereinement les dernières tâches avant le départ.",
+     "p": [
+      "Vérifie documents, billets, clés, confirmation d'hébergement et chargeurs.",
+      "Fais le ménage final, ferme les comptes inutiles et rends ce qu'on t'a prêté.",
+      "Garde un après-midi libre pour l'imprévu et pour te reposer."
+     ],
+     "q": "Quelle tâche veux-tu absolument avoir terminée avant la dernière semaine ?",
+     "c": "Écris une liste de la dernière semaine avec des dates et coche un point aujourd'hui."
+    },
+    "it": {
+     "t": "Lista dell'ultima settimana",
+     "g": "Concludi con calma gli ultimi compiti prima della partenza.",
+     "p": [
+      "Controlla documenti, biglietti, chiavi, conferma dell'alloggio e caricabatterie.",
+      "Fai le pulizie finali, chiudi gli account che non servono più e restituisci ciò che hai preso in prestito.",
+      "Lascia un pomeriggio libero per gli imprevisti e per riposare."
+     ],
+     "q": "Quale compito vuoi assolutamente aver finito prima dell'ultima settimana?",
+     "c": "Scrivi una lista dell'ultima settimana con le date e spunta oggi una voce."
+    },
+    "pt": {
+     "t": "Lista da última semana",
+     "g": "Conclui com calma as últimas tarefas antes da partida.",
+     "p": [
+      "Confere documentos, bilhetes, chaves, confirmação do alojamento e carregadores.",
+      "Faz a limpeza final, fecha contas de que já não precisas e devolve o que pediste emprestado.",
+      "Deixa uma tarde livre para imprevistos e para descansar."
+     ],
+     "q": "Que tarefa queres mesmo ter concluída antes da última semana?",
+     "c": "Escreve uma lista da última semana com datas e risca hoje um item."
+    },
+    "pt_BR": {
+     "t": "Lista da última semana",
+     "g": "Conclua com calma as últimas tarefas antes da partida.",
+     "p": [
+      "Confira documentos, passagens, chaves, confirmação da hospedagem e carregadores.",
+      "Faça a limpeza final, feche contas de que não precisa mais e devolva o que pegou emprestado.",
+      "Deixe uma tarde livre para imprevistos e para descansar."
+     ],
+     "q": "Que tarefa você quer muito ter concluída antes da última semana?",
+     "c": "Escreva uma lista da última semana com datas e risque hoje um item."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Travel day tips",
+     "g": "Stay calm and organised on the day of the move.",
+     "p": [
+      "Arrive early, keep documents and valuables in one easy-to-reach bag.",
+      "Eat, drink water and keep a small snack and a charger in your hand luggage.",
+      "If something goes wrong, take a breath. Airline and airport staff help with delays every day."
+     ],
+     "q": "What usually helps you stay calm on a travel day?",
+     "c": "Pack a travel-day bag and test that you can reach your documents in ten seconds."
+    },
+    "de": {
+     "t": "Tipps für den Reisetag",
+     "g": "Bleib am Umzugstag ruhig und organisiert.",
+     "p": [
+      "Sei früh da und halte Dokumente und Wertsachen in einer leicht erreichbaren Tasche.",
+      "Iss, trink Wasser und hab einen kleinen Snack und ein Ladegerät im Handgepäck.",
+      "Wenn etwas schiefgeht, atme durch. Personal an Flughäfen und bei Airlines hilft täglich bei Verspätungen."
+     ],
+     "q": "Was hilft dir normalerweise, an Reisetagen ruhig zu bleiben?",
+     "c": "Pack eine Reisetagstasche und teste, ob du deine Dokumente in zehn Sekunden erreichst."
+    },
+    "es": {
+     "t": "Consejos para el día del viaje",
+     "g": "Mantén la calma y la organización el día de la mudanza.",
+     "p": [
+      "Llega con tiempo y guarda documentos y objetos de valor en un bolso fácil de alcanzar.",
+      "Come, bebe agua y lleva un tentempié y un cargador en el equipaje de mano.",
+      "Si algo sale mal, respira. El personal de aerolíneas y aeropuertos ayuda con retrasos a diario."
+     ],
+     "q": "¿Qué suele ayudarte a mantener la calma en un día de viaje?",
+     "c": "Prepara una bolsa para el día de viaje y comprueba que alcanzas tus documentos en diez segundos."
+    },
+    "fr": {
+     "t": "Conseils pour le jour du voyage",
+     "g": "Reste calme et organisé le jour du départ.",
+     "p": [
+      "Arrive tôt et garde documents et objets de valeur dans un sac facile d'accès.",
+      "Mange, bois de l'eau et garde une petite collation et un chargeur dans ton bagage à main.",
+      "Si quelque chose tourne mal, respire. Le personnel des compagnies et des aéroports aide chaque jour en cas de retard."
+     ],
+     "q": "Qu'est-ce qui t'aide d'habitude à rester calme un jour de voyage ?",
+     "c": "Prépare un sac pour le jour du voyage et vérifie que tu atteins tes documents en dix secondes."
+    },
+    "it": {
+     "t": "Consigli per il giorno del viaggio",
+     "g": "Resta calmo e organizzato il giorno del trasferimento.",
+     "p": [
+      "Arriva presto e tieni documenti e oggetti di valore in una borsa facile da raggiungere.",
+      "Mangia, bevi acqua e tieni uno spuntino e un caricabatterie nel bagaglio a mano.",
+      "Se qualcosa va storto, respira. Il personale di compagnie e aeroporti aiuta ogni giorno con i ritardi."
+     ],
+     "q": "Cosa ti aiuta di solito a restare calmo nei giorni di viaggio?",
+     "c": "Prepara una borsa per il giorno del viaggio e verifica di raggiungere i documenti in dieci secondi."
+    },
+    "pt": {
+     "t": "Dicas para o dia da viagem",
+     "g": "Mantém a calma e a organização no dia da mudança.",
+     "p": [
+      "Chega cedo e guarda documentos e objetos de valor numa mala fácil de alcançar.",
+      "Come, bebe água e leva um snack e um carregador na bagagem de mão.",
+      "Se algo correr mal, respira fundo. O pessoal de companhias e aeroportos ajuda diariamente com atrasos."
+     ],
+     "q": "O que costuma ajudar-te a manter a calma num dia de viagem?",
+     "c": "Prepara uma mala para o dia da viagem e testa se chegas aos documentos em dez segundos."
+    },
+    "pt_BR": {
+     "t": "Dicas para o dia da viagem",
+     "g": "Mantenha a calma e a organização no dia da mudança.",
+     "p": [
+      "Chegue cedo e guarde documentos e objetos de valor numa bolsa de fácil acesso.",
+      "Coma, beba água e leve um lanchinho e um carregador na bagagem de mão.",
+      "Se algo der errado, respire fundo. Funcionários de companhias e aeroportos ajudam diariamente com atrasos."
+     ],
+     "q": "O que costuma ajudar você a manter a calma num dia de viagem?",
+     "c": "Prepare uma bolsa para o dia da viagem e teste se alcança os documentos em dez segundos."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Emotions before departure",
+     "g": "Excitement, nerves and sadness are all normal before a move.",
+     "p": [
+      "Mixed feelings show that you care about both what you leave and what you hope to find.",
+      "Name your feelings out loud or on paper. Naming them makes them lighter.",
+      "Talk with someone you trust, and rest when you need to."
+     ],
+     "q": "What feeling is strongest for you right now?",
+     "c": "Write down your feelings in three lines and share one with someone you trust."
+    },
+    "de": {
+     "t": "Gefühle vor der Abreise",
+     "g": "Aufregung, Nervosität und Traurigkeit sind vor einem Umzug alle normal.",
+     "p": [
+      "Gemischte Gefühle zeigen, dass dir sowohl das Zurückgelassene als auch das Erhoffte wichtig ist.",
+      "Benenne deine Gefühle laut oder auf Papier. Sie zu benennen macht sie leichter.",
+      "Sprich mit jemandem, dem du vertraust, und ruh dich aus, wenn du es brauchst."
+     ],
+     "q": "Welches Gefühl ist gerade am stärksten?",
+     "c": "Schreib deine Gefühle in drei Zeilen auf und teile eine mit einer vertrauten Person."
+    },
+    "es": {
+     "t": "Emociones antes de partir",
+     "g": "La ilusión, los nervios y la tristeza son normales antes de una mudanza.",
+     "p": [
+      "Las emociones mezcladas muestran que te importa tanto lo que dejas como lo que esperas encontrar.",
+      "Nombra lo que sientes en voz alta o por escrito. Ponerles nombre las hace más ligeras.",
+      "Habla con alguien de confianza y descansa cuando lo necesites."
+     ],
+     "q": "¿Qué emoción es la más fuerte ahora mismo?",
+     "c": "Escribe tus emociones en tres líneas y comparte una con alguien de confianza."
+    },
+    "fr": {
+     "t": "Émotions avant le départ",
+     "g": "L'excitation, le trac et la tristesse sont normaux avant un déménagement.",
+     "p": [
+      "Des sentiments mêlés montrent que tu tiens autant à ce que tu quittes qu'à ce que tu espères trouver.",
+      "Nomme tes émotions à voix haute ou sur papier. Les nommer les allège.",
+      "Parle à quelqu'un de confiance et repose-toi quand il le faut."
+     ],
+     "q": "Quelle émotion est la plus forte en ce moment ?",
+     "c": "Écris tes émotions en trois lignes et partage-en une avec quelqu'un de confiance."
+    },
+    "it": {
+     "t": "Emozioni prima della partenza",
+     "g": "Entusiasmo, ansia e tristezza sono tutti normali prima di un trasloco.",
+     "p": [
+      "Emozioni miste mostrano che ci tieni sia a ciò che lasci sia a ciò che speri di trovare.",
+      "Dai un nome alle emozioni ad alta voce o su carta. Nominarle le rende più leggere.",
+      "Parla con una persona di fiducia e riposati quando ne hai bisogno."
+     ],
+     "q": "Quale emozione è la più forte per te adesso?",
+     "c": "Scrivi le tue emozioni in tre righe e condividine una con una persona di fiducia."
+    },
+    "pt": {
+     "t": "Emoções antes da partida",
+     "g": "Entusiasmo, nervos e tristeza são todos normais antes de uma mudança.",
+     "p": [
+      "Sentimentos mistos mostram que te importas tanto com o que deixas como com o que esperas encontrar.",
+      "Dá nome às emoções em voz alta ou no papel. Nomeá-las torna-as mais leves.",
+      "Fala com alguém de confiança e descansa quando precisares."
+     ],
+     "q": "Que emoção é a mais forte neste momento?",
+     "c": "Escreve as tuas emoções em três linhas e partilha uma com alguém de confiança."
+    },
+    "pt_BR": {
+     "t": "Emoções antes da partida",
+     "g": "Empolgação, nervosismo e tristeza são normais antes de uma mudança.",
+     "p": [
+      "Sentimentos misturados mostram que você se importa tanto com o que deixa quanto com o que espera encontrar.",
+      "Dê nome às emoções em voz alta ou no papel. Nomeá-las deixa tudo mais leve.",
+      "Converse com alguém de confiança e descanse quando precisar."
+     ],
+     "q": "Que emoção é a mais forte para você agora?",
+     "c": "Escreva suas emoções em três linhas e compartilhe uma com alguém de confiança."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Packing a comfort kit",
+     "g": "Pack small things that make the first nights in a new place cosy.",
+     "p": [
+      "A comfort kit can hold a favourite tea, a soft scarf, photos and a small speaker.",
+      "Familiar smells and sounds help your body relax in a new place.",
+      "Keep the kit in your hand luggage so it is with you on the first night."
+     ],
+     "q": "What is one small thing that always makes you feel at home?",
+     "c": "Assemble your comfort kit with five small items and put it in your bag."
+    },
+    "de": {
+     "t": "Ein Wohlfühl-Set packen",
+     "g": "Pack kleine Dinge ein, die die ersten Nächte an einem neuen Ort gemütlich machen.",
+     "p": [
+      "Ein Wohlfühl-Set kann deinen Lieblingstee, einen weichen Schal, Fotos und einen kleinen Lautsprecher enthalten.",
+      "Vertraute Düfte und Klänge helfen deinem Körper, sich an einem neuen Ort zu entspannen.",
+      "Pack das Set ins Handgepäck, damit es in der ersten Nacht bei dir ist."
+     ],
+     "q": "Was ist eine Kleinigkeit, die dir immer das Gefühl von Zuhause gibt?",
+     "c": "Stell dein Wohlfühl-Set aus fünf Kleinigkeiten zusammen und leg es in deine Tasche."
+    },
+    "es": {
+     "t": "Preparar un kit de bienestar",
+     "g": "Prepara pequeñas cosas que hagan acogedoras las primeras noches en un lugar nuevo.",
+     "p": [
+      "Un kit de bienestar puede incluir tu té favorito, una bufanda suave, fotos y un altavoz pequeño.",
+      "Los olores y sonidos conocidos ayudan al cuerpo a relajarse en un sitio nuevo.",
+      "Lleva el kit en el equipaje de mano para tenerlo contigo la primera noche."
+     ],
+     "q": "¿Qué cosa pequeña te hace sentir siempre como en casa?",
+     "c": "Reúne tu kit de bienestar con cinco objetos pequeños y ponlo en tu bolsa."
+    },
+    "fr": {
+     "t": "Préparer une trousse de réconfort",
+     "g": "Prépare de petites choses qui rendent les premières nuits dans un nouveau lieu douillettes.",
+     "p": [
+      "Une trousse de réconfort peut contenir ton thé préféré, une écharpe douce, des photos et une petite enceinte.",
+      "Les odeurs et les sons familiers aident le corps à se détendre dans un nouvel endroit.",
+      "Garde la trousse en bagage à main pour l'avoir avec toi dès la première nuit."
+     ],
+     "q": "Quelle petite chose te donne toujours l'impression d'être chez toi ?",
+     "c": "Rassemble ta trousse de réconfort avec cinq petits objets et mets-la dans ton sac."
+    },
+    "it": {
+     "t": "Preparare un kit del comfort",
+     "g": "Prepara piccole cose che rendano accoglienti le prime notti in un posto nuovo.",
+     "p": [
+      "Un kit del comfort può contenere il tuo tè preferito, una sciarpa morbida, foto e una piccola cassa.",
+      "Odori e suoni familiari aiutano il corpo a rilassarsi in un posto nuovo.",
+      "Tieni il kit nel bagaglio a mano per averlo con te la prima notte."
+     ],
+     "q": "Qual è una piccola cosa che ti fa sempre sentire a casa?",
+     "c": "Metti insieme il tuo kit del comfort con cinque piccoli oggetti e mettilo in borsa."
+    },
+    "pt": {
+     "t": "Preparar um kit de conforto",
+     "g": "Prepara pequenas coisas que tornem as primeiras noites num lugar novo aconchegantes.",
+     "p": [
+      "Um kit de conforto pode ter o teu chá preferido, um cachecol macio, fotografias e uma coluna pequena.",
+      "Cheiros e sons familiares ajudam o corpo a relaxar num lugar novo.",
+      "Leva o kit na bagagem de mão para o teres contigo na primeira noite."
+     ],
+     "q": "Que pequena coisa te faz sentir sempre em casa?",
+     "c": "Reúne o teu kit de conforto com cinco objetos pequenos e mete-o na mala."
+    },
+    "pt_BR": {
+     "t": "Preparando um kit de conforto",
+     "g": "Prepare pequenas coisas que deixem as primeiras noites num lugar novo aconchegantes.",
+     "p": [
+      "Um kit de conforto pode ter seu chá favorito, um cachecol macio, fotos e uma caixinha de som.",
+      "Cheiros e sons familiares ajudam o corpo a relaxar num lugar novo.",
+      "Leve o kit na bagagem de mão para tê-lo com você na primeira noite."
+     ],
+     "q": "Que pequena coisa faz você se sentir sempre em casa?",
+     "c": "Reúna seu kit de conforto com cinco objetos pequenos e coloque na bolsa."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Learning basic phrases for arrival",
+     "g": "Learn phrases for transport, directions and checking in.",
+     "p": [
+      "Learn how to ask where something is, how much it costs and to repeat slowly.",
+      "Phrases like where is the station and I would like a ticket go a long way.",
+      "Write them on a card or phone note so you can show them if words fail."
+     ],
+     "q": "Which situation on arrival do you want to be ready for?",
+     "c": "Learn five arrival phrases and practise them aloud in front of a mirror."
+    },
+    "de": {
+     "t": "Grundlegende Sätze für die Ankunft",
+     "g": "Lerne Sätze für Verkehr, Wegbeschreibungen und das Einchecken.",
+     "p": [
+      "Lerne zu fragen, wo etwas ist, was es kostet und ob jemand langsamer wiederholen kann.",
+      "Sätze wie Wo ist der Bahnhof und Ich hätte gern eine Fahrkarte bringen dich weit.",
+      "Schreib sie auf eine Karte oder Handynotiz, um sie zu zeigen, falls Worte fehlen."
+     ],
+     "q": "Auf welche Situation bei der Ankunft willst du vorbereitet sein?",
+     "c": "Lerne fünf Sätze für die Ankunft und übe sie laut vor dem Spiegel."
+    },
+    "es": {
+     "t": "Aprender frases básicas para la llegada",
+     "g": "Aprende frases para el transporte, las direcciones y el registro de entrada.",
+     "p": [
+      "Aprende a preguntar dónde está algo, cuánto cuesta y a pedir que repitan despacio.",
+      "Frases como dónde está la estación y quisiera un billete te llevan muy lejos.",
+      "Anótalas en una tarjeta o en el móvil para enseñarlas si fallan las palabras."
+     ],
+     "q": "¿Para qué situación de la llegada quieres estar preparado?",
+     "c": "Aprende cinco frases de llegada y practícalas en voz alta ante el espejo."
+    },
+    "fr": {
+     "t": "Apprendre des phrases de base pour l'arrivée",
+     "g": "Apprends des phrases pour les transports, les directions et l'enregistrement.",
+     "p": [
+      "Apprends à demander où se trouve quelque chose, combien ça coûte et à faire répéter lentement.",
+      "Des phrases comme où est la gare et je voudrais un billet t'emmènent très loin.",
+      "Écris-les sur une carte ou une note de téléphone pour les montrer si les mots manquent."
+     ],
+     "q": "Pour quelle situation à l'arrivée veux-tu être prêt ?",
+     "c": "Apprends cinq phrases d'arrivée et entraîne-toi à voix haute devant un miroir."
+    },
+    "it": {
+     "t": "Imparare frasi base per l'arrivo",
+     "g": "Impara frasi per trasporti, indicazioni e check-in.",
+     "p": [
+      "Impara a chiedere dove si trova qualcosa, quanto costa e a far ripetere lentamente.",
+      "Frasi come dov'è la stazione e vorrei un biglietto ti portano lontano.",
+      "Scrivile su un biglietto o in una nota del telefono per mostrarle se mancano le parole."
+     ],
+     "q": "Per quale situazione all'arrivo vuoi essere pronto?",
+     "c": "Impara cinque frasi per l'arrivo e ripetile ad alta voce davanti allo specchio."
+    },
+    "pt": {
+     "t": "Aprender frases básicas para a chegada",
+     "g": "Aprende frases para transportes, direções e check-in.",
+     "p": [
+      "Aprende a perguntar onde fica algo, quanto custa e a pedir que repitam devagar.",
+      "Frases como onde fica a estação e queria um bilhete levam-te longe.",
+      "Escreve-as num cartão ou numa nota do telemóvel para mostrares se faltarem as palavras."
+     ],
+     "q": "Para que situação da chegada queres estar preparado?",
+     "c": "Aprende cinco frases para a chegada e pratica-as em voz alta diante do espelho."
+    },
+    "pt_BR": {
+     "t": "Aprendendo frases básicas para a chegada",
+     "g": "Aprenda frases para transporte, direções e check-in.",
+     "p": [
+      "Aprenda a perguntar onde fica algo, quanto custa e a pedir que repitam devagar.",
+      "Frases como onde fica a estação e queria uma passagem levam você longe.",
+      "Escreva-as num cartão ou nota do celular para mostrar se faltarem as palavras."
+     ],
+     "q": "Para que situação da chegada você quer estar preparado?",
+     "c": "Aprenda cinco frases para a chegada e pratique em voz alta diante do espelho."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Downloading useful apps",
+     "g": "Prepare maps, translation, transport and messaging apps for your new home.",
+     "p": [
+      "Install a map app, a translator, local transport and a messaging app before you travel.",
+      "Download offline maps and language packs for times without internet.",
+      "Use only official app stores and read what permissions each app asks for."
+     ],
+     "q": "Which apps do you rely on most in daily life?",
+     "c": "Download offline maps for your destination and test them in flight mode."
+    },
+    "de": {
+     "t": "Nützliche Apps herunterladen",
+     "g": "Bereite Karten-, Übersetzungs-, Verkehrs- und Messenger-Apps für dein neues Zuhause vor.",
+     "p": [
+      "Installiere vor der Reise eine Karten-App, einen Übersetzer, lokale Verkehrs-Apps und einen Messenger.",
+      "Lade Offline-Karten und Sprachpakete für Zeiten ohne Internet herunter.",
+      "Nutze nur offizielle App-Stores und lies, welche Berechtigungen jede App verlangt."
+     ],
+     "q": "Auf welche Apps verlässt du dich im Alltag am meisten?",
+     "c": "Lade Offline-Karten für dein Ziel herunter und teste sie im Flugmodus."
+    },
+    "es": {
+     "t": "Descargar apps útiles",
+     "g": "Prepara apps de mapas, traducción, transporte y mensajería para tu nuevo hogar.",
+     "p": [
+      "Instala una app de mapas, un traductor, transporte local y mensajería antes de viajar.",
+      "Descarga mapas sin conexión y paquetes de idioma para cuando no tengas internet.",
+      "Usa solo tiendas de apps oficiales y lee qué permisos pide cada app."
+     ],
+     "q": "¿En qué apps te apoyas más en tu día a día?",
+     "c": "Descarga mapas sin conexión de tu destino y pruébalos en modo avión."
+    },
+    "fr": {
+     "t": "Télécharger des applis utiles",
+     "g": "Prépare des applis de cartes, de traduction, de transport et de messagerie pour ton nouveau chez-toi.",
+     "p": [
+      "Installe une appli de cartes, un traducteur, les transports locaux et une messagerie avant de voyager.",
+      "Télécharge des cartes hors ligne et des packs de langue pour les moments sans internet.",
+      "Utilise seulement les magasins d'applis officiels et lis les autorisations demandées par chaque appli."
+     ],
+     "q": "Sur quelles applis t'appuies-tu le plus au quotidien ?",
+     "c": "Télécharge des cartes hors ligne de ta destination et teste-les en mode avion."
+    },
+    "it": {
+     "t": "Scaricare app utili",
+     "g": "Prepara app di mappe, traduzione, trasporti e messaggistica per la tua nuova casa.",
+     "p": [
+      "Installa un'app di mappe, un traduttore, i trasporti locali e una messaggistica prima di partire.",
+      "Scarica mappe offline e pacchetti lingua per i momenti senza internet.",
+      "Usa solo gli store ufficiali e leggi quali permessi chiede ogni app."
+     ],
+     "q": "Su quali app conti di più nella vita di tutti i giorni?",
+     "c": "Scarica mappe offline della tua destinazione e provale in modalità aereo."
+    },
+    "pt": {
+     "t": "Descarregar apps úteis",
+     "g": "Prepara apps de mapas, tradução, transportes e mensagens para a tua nova casa.",
+     "p": [
+      "Instala uma app de mapas, um tradutor, transportes locais e uma app de mensagens antes de viajares.",
+      "Descarrega mapas offline e pacotes de idioma para momentos sem internet.",
+      "Usa só lojas de apps oficiais e lê as permissões que cada app pede."
+     ],
+     "q": "Em que apps mais confias no dia a dia?",
+     "c": "Descarrega mapas offline do teu destino e testa-os em modo de avião."
+    },
+    "pt_BR": {
+     "t": "Baixando apps úteis",
+     "g": "Prepare apps de mapas, tradução, transporte e mensagens para a sua nova casa.",
+     "p": [
+      "Instale um app de mapas, um tradutor, transporte local e um app de mensagens antes de viajar.",
+      "Baixe mapas offline e pacotes de idioma para momentos sem internet.",
+      "Use só lojas de apps oficiais e leia as permissões que cada app pede."
+     ],
+     "q": "Em quais apps você mais confia no dia a dia?",
+     "c": "Baixe mapas offline do seu destino e teste no modo avião."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Understanding time zones",
+     "g": "Plan calls and work with family across time differences.",
+     "p": [
+      "Check the time difference and write it down for each person you want to call.",
+      "Find overlaps that suit both sides, such as mornings for one and evenings for the other.",
+      "Use a world clock widget so you never wake someone by accident."
+     ],
+     "q": "How many hours apart will you be from the people you love?",
+     "c": "Add your loved ones' cities to a world clock and choose a call time."
+    },
+    "de": {
+     "t": "Zeitzonen verstehen",
+     "g": "Plane Anrufe und Arbeit mit der Familie über Zeitunterschiede hinweg.",
+     "p": [
+      "Prüfe den Zeitunterschied und notiere ihn für jede Person, die du anrufen willst.",
+      "Finde Überschneidungen, die beiden passen, etwa Vormittag für den einen und Abend für den anderen.",
+      "Nutze ein Weltuhr-Widget, damit du niemanden aus Versehen weckst."
+     ],
+     "q": "Wie viele Stunden liegen zwischen dir und deinen Liebsten?",
+     "c": "Füge die Städte deiner Liebsten zu einer Weltuhr hinzu und wähle eine Anrufzeit."
+    },
+    "es": {
+     "t": "Entender los husos horarios",
+     "g": "Planifica llamadas y trabajo con tu familia pese a las diferencias horarias.",
+     "p": [
+      "Comprueba la diferencia horaria y anótala para cada persona a la que quieras llamar.",
+      "Busca franjas que convengan a ambos, como la mañana para uno y la tarde para otro.",
+      "Usa un widget de reloj mundial para no despertar a nadie sin querer."
+     ],
+     "q": "¿Cuántas horas de diferencia tendrás con tus seres queridos?",
+     "c": "Añade las ciudades de tus seres queridos a un reloj mundial y elige una hora de llamada."
+    },
+    "fr": {
+     "t": "Comprendre les fuseaux horaires",
+     "g": "Organise appels et travail avec ta famille malgré les décalages horaires.",
+     "p": [
+      "Vérifie le décalage horaire et note-le pour chaque personne que tu veux appeler.",
+      "Trouve des créneaux qui conviennent aux deux, par exemple le matin pour l'un et le soir pour l'autre.",
+      "Utilise un widget d'horloge mondiale pour ne jamais réveiller quelqu'un par erreur."
+     ],
+     "q": "Combien d'heures de décalage auras-tu avec tes proches ?",
+     "c": "Ajoute les villes de tes proches à une horloge mondiale et choisis une heure d'appel."
+    },
+    "it": {
+     "t": "Capire i fusi orari",
+     "g": "Pianifica chiamate e lavoro con la famiglia nonostante le differenze orarie.",
+     "p": [
+      "Controlla la differenza oraria e annotala per ogni persona che vuoi chiamare.",
+      "Trova fasce che vadano bene a entrambi, come la mattina per uno e la sera per l'altro.",
+      "Usa un widget orologio mondiale per non svegliare nessuno per sbaglio."
+     ],
+     "q": "Quante ore di differenza avrai con le persone che ami?",
+     "c": "Aggiungi le città dei tuoi cari a un orologio mondiale e scegli un orario di chiamata."
+    },
+    "pt": {
+     "t": "Compreender os fusos horários",
+     "g": "Planeia chamadas e trabalho com a família apesar das diferenças horárias.",
+     "p": [
+      "Verifica a diferença horária e anota-a para cada pessoa a quem queres ligar.",
+      "Encontra horários que sirvam aos dois, como manhã para um e serão para o outro.",
+      "Usa um widget de relógio mundial para nunca acordares alguém por engano."
+     ],
+     "q": "Quantas horas de diferença terás em relação a quem amas?",
+     "c": "Adiciona as cidades dos teus entes queridos a um relógio mundial e escolhe uma hora de chamada."
+    },
+    "pt_BR": {
+     "t": "Entendendo os fusos horários",
+     "g": "Planeje chamadas e trabalho com a família apesar das diferenças de horário.",
+     "p": [
+      "Verifique a diferença de horário e anote para cada pessoa para quem quer ligar.",
+      "Encontre horários que sirvam aos dois, como manhã para um e noite para o outro.",
+      "Use um widget de relógio mundial para nunca acordar alguém sem querer."
+     ],
+     "q": "Quantas horas de diferença você terá em relação a quem ama?",
+     "c": "Adicione as cidades dos seus entes queridos a um relógio mundial e escolha um horário de chamada."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A gratitude moment",
+     "g": "Appreciate the people and places that shaped you before you go.",
+     "p": [
+      "Think of three people who helped you become who you are today.",
+      "Write them a short thank-you note or message. It will mean a lot to them.",
+      "Gratitude makes goodbyes warmer and helps you carry home with you."
+     ],
+     "q": "Who are you most grateful for as you prepare to leave?",
+     "c": "Write or record a thank-you message to one person and send it today."
+    },
+    "de": {
+     "t": "Ein Moment der Dankbarkeit",
+     "g": "Würdige die Menschen und Orte, die dich geprägt haben, bevor du gehst.",
+     "p": [
+      "Denk an drei Menschen, die dir geholfen haben, der zu werden, der du heute bist.",
+      "Schreib ihnen eine kurze Dankesnotiz oder Nachricht. Sie wird ihnen viel bedeuten.",
+      "Dankbarkeit macht Abschiede wärmer und hilft dir, Heimat mitzunehmen."
+     ],
+     "q": "Wofür oder für wen bist du beim Abschied am dankbarsten?",
+     "c": "Schreib oder sprich eine Dankesnachricht an eine Person und schick sie heute ab."
+    },
+    "es": {
+     "t": "Un momento de gratitud",
+     "g": "Valora a las personas y los lugares que te formaron antes de irte.",
+     "p": [
+      "Piensa en tres personas que te ayudaron a ser quien eres hoy.",
+      "Escríbeles una breve nota o mensaje de agradecimiento. Les importará mucho.",
+      "La gratitud hace las despedidas más cálidas y te ayuda a llevar el hogar contigo."
+     ],
+     "q": "¿A quién estás más agradecido mientras te preparas para irte?",
+     "c": "Escribe o graba un mensaje de agradecimiento a una persona y envíalo hoy."
+    },
+    "fr": {
+     "t": "Un moment de gratitude",
+     "g": "Remercie les personnes et les lieux qui t'ont façonné avant de partir.",
+     "p": [
+      "Pense à trois personnes qui t'ont aidé à devenir qui tu es aujourd'hui.",
+      "Écris-leur un petit mot ou message de remerciement. Il comptera beaucoup pour elles.",
+      "La gratitude rend les adieux plus chaleureux et t'aide à emporter ton chez-toi avec toi."
+     ],
+     "q": "À qui es-tu le plus reconnaissant alors que tu te prépares à partir ?",
+     "c": "Écris ou enregistre un message de remerciement à une personne et envoie-le aujourd'hui."
+    },
+    "it": {
+     "t": "Un momento di gratitudine",
+     "g": "Apprezza le persone e i luoghi che ti hanno formato prima di partire.",
+     "p": [
+      "Pensa a tre persone che ti hanno aiutato a diventare chi sei oggi.",
+      "Scrivi loro un breve biglietto o messaggio di ringraziamento. Significherà molto per loro.",
+      "La gratitudine rende gli addii più caldi e ti aiuta a portare casa con te."
+     ],
+     "q": "A chi sei più grato mentre ti prepari a partire?",
+     "c": "Scrivi o registra un messaggio di ringraziamento a una persona e invialo oggi."
+    },
+    "pt": {
+     "t": "Um momento de gratidão",
+     "g": "Valoriza as pessoas e os lugares que te moldaram antes de partires.",
+     "p": [
+      "Pensa em três pessoas que te ajudaram a ser quem és hoje.",
+      "Escreve-lhes uma breve nota ou mensagem de agradecimento. Vai significar muito para elas.",
+      "A gratidão torna as despedidas mais calorosas e ajuda-te a levar a casa contigo."
+     ],
+     "q": "A quem estás mais grato enquanto te preparas para partir?",
+     "c": "Escreve ou grava uma mensagem de agradecimento a uma pessoa e envia-a hoje."
+    },
+    "pt_BR": {
+     "t": "Um momento de gratidão",
+     "g": "Valorize as pessoas e os lugares que moldaram você antes de partir.",
+     "p": [
+      "Pense em três pessoas que ajudaram você a ser quem é hoje.",
+      "Escreva a elas um breve bilhete ou mensagem de agradecimento. Vai significar muito para elas.",
+      "A gratidão deixa as despedidas mais calorosas e ajuda você a levar o lar consigo."
+     ],
+     "q": "A quem você é mais grato enquanto se prepara para partir?",
+     "c": "Escreva ou grave uma mensagem de agradecimento a uma pessoa e envie hoje."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: preparing to go",
+     "g": "A light review of decluttering, packing, goodbyes and arrival plans.",
+     "p": [
+      "Look back at what you sorted, packed, planned and said to the people you love.",
+      "Check that your folder, budget and arrival plan still match your timeline.",
+      "You have done real preparation. Rest a little and be proud."
+     ],
+     "q": "Which part of your preparation feels most complete?",
+     "c": "Reread your arrival plan and update one detail that has changed."
+    },
+    "de": {
+     "t": "Rückblick: Auf die Abreise vorbereiten",
+     "g": "Ein leichter Rückblick auf Ausmisten, Packen, Abschiede und Ankunftspläne.",
+     "p": [
+      "Schau zurück auf das, was du sortiert, gepackt, geplant und den Menschen gesagt hast, die du liebst.",
+      "Prüfe, ob Ordner, Budget und Ankunftsplan noch zu deinem Zeitplan passen.",
+      "Du hast echte Vorbereitung geleistet. Ruh dich etwas aus und sei stolz."
+     ],
+     "q": "Welcher Teil deiner Vorbereitung fühlt sich am vollständigsten an?",
+     "c": "Lies deinen Ankunftsplan noch einmal und aktualisiere ein Detail, das sich geändert hat."
+    },
+    "es": {
+     "t": "Repaso: prepararse para partir",
+     "g": "Un repaso suave de orden, equipaje, despedidas y planes de llegada.",
+     "p": [
+      "Mira atrás: lo que clasificaste, empacaste, planificaste y dijiste a quienes quieres.",
+      "Comprueba que tu carpeta, presupuesto y plan de llegada siguen encajando con tu calendario.",
+      "Has hecho una preparación de verdad. Descansa un poco y siéntete orgulloso."
+     ],
+     "q": "¿Qué parte de tu preparación sientes más completa?",
+     "c": "Relee tu plan de llegada y actualiza un detalle que haya cambiado."
+    },
+    "fr": {
+     "t": "Révision : se préparer à partir",
+     "g": "Une révision en douceur du tri, des bagages, des adieux et des plans d'arrivée.",
+     "p": [
+      "Regarde en arrière : ce que tu as trié, emballé, planifié et dit à ceux que tu aimes.",
+      "Vérifie que ton dossier, ton budget et ton plan d'arrivée correspondent encore à ton calendrier.",
+      "Tu as fait une vraie préparation. Repose-toi un peu et sois fier."
+     ],
+     "q": "Quelle partie de ta préparation te semble la plus aboutie ?",
+     "c": "Relis ton plan d'arrivée et mets à jour un détail qui a changé."
+    },
+    "it": {
+     "t": "Ripasso: prepararsi a partire",
+     "g": "Un ripasso leggero di riordino, bagagli, saluti e piani di arrivo.",
+     "p": [
+      "Guarda indietro: ciò che hai smistato, imballato, pianificato e detto a chi ami.",
+      "Controlla che cartella, budget e piano di arrivo corrispondano ancora alla tua tabella di marcia.",
+      "Hai fatto una vera preparazione. Riposati un po' e sii orgoglioso."
+     ],
+     "q": "Quale parte della tua preparazione ti sembra più completa?",
+     "c": "Rileggi il tuo piano di arrivo e aggiorna un dettaglio che è cambiato."
+    },
+    "pt": {
+     "t": "Revisão: preparar a partida",
+     "g": "Uma revisão leve de triagem, bagagem, despedidas e planos de chegada.",
+     "p": [
+      "Olha para trás: o que organizaste, empacotaste, planeaste e disseste a quem amas.",
+      "Confirma que a pasta, o orçamento e o plano de chegada ainda correspondem ao teu calendário.",
+      "Fizeste uma preparação a sério. Descansa um pouco e sente orgulho."
+     ],
+     "q": "Que parte da tua preparação te parece mais completa?",
+     "c": "Relê o teu plano de chegada e atualiza um detalhe que tenha mudado."
+    },
+    "pt_BR": {
+     "t": "Revisão: preparando a partida",
+     "g": "Uma revisão leve de triagem, bagagem, despedidas e planos de chegada.",
+     "p": [
+      "Olhe para trás: o que você organizou, empacotou, planejou e disse a quem ama.",
+      "Confira se a pasta, o orçamento e o plano de chegada ainda combinam com seu cronograma.",
+      "Você fez uma preparação de verdade. Descanse um pouco e sinta orgulho."
+     ],
+     "q": "Que parte da sua preparação parece mais completa?",
+     "c": "Releia seu plano de chegada e atualize um detalhe que mudou."
+    }
+   }
+  }
+ ]
+}

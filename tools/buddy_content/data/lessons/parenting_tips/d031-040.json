@@ -1,0 +1,835 @@
+{
+ "topic": "parenting_tips",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Play is how children explore, practise and make sense of the world.",
+      "Unstructured play grows imagination, language and flexible thinking.",
+      "It needs no special toys; boxes, spoons and blankets are plenty."
+     ],
+     "t": "Why play matters so much",
+     "g": "See how free play builds creativity, problem solving and social skills.",
+     "q": "What was your favourite way to play as a child?",
+     "c": "Offer your child 15 minutes of open play with no goal and no screens."
+    },
+    "de": {
+     "p": [
+      "Im Spiel erkunden, üben und begreifen Kinder die Welt.",
+      "Unstrukturiertes Spiel fördert Fantasie, Sprache und flexibles Denken.",
+      "Dafür braucht es kein Spezialspielzeug; Kartons, Löffel und Decken genügen."
+     ],
+     "t": "Warum Spielen so wichtig ist",
+     "g": "Erlebe, wie freies Spiel Kreativität, Problemlösen und soziale Fähigkeiten stärkt.",
+     "q": "Wie hast du als Kind am liebsten gespielt?",
+     "c": "Schenke deinem Kind heute 15 Minuten offenes Spiel ohne Ziel und ohne Bildschirm."
+    },
+    "es": {
+     "p": [
+      "Jugar es como los niños exploran, practican y entienden el mundo.",
+      "El juego no estructurado desarrolla imaginación, lenguaje y pensamiento flexible.",
+      "No necesita juguetes especiales; cajas, cucharas y mantas bastan."
+     ],
+     "t": "Por qué importa tanto el juego",
+     "g": "Descubre cómo el juego libre crea creatividad, resolución de problemas y habilidades sociales.",
+     "q": "¿Cuál era tu forma favorita de jugar de niño?",
+     "c": "Ofrece hoy a tu hijo 15 minutos de juego libre sin meta y sin pantallas."
+    },
+    "fr": {
+     "p": [
+      "Le jeu est la façon dont les enfants explorent, s'entraînent et comprennent le monde.",
+      "Le jeu non structuré nourrit imagination, langage et pensée souple.",
+      "Il ne demande pas de jouets spéciaux ; cartons, cuillères et couvertures suffisent."
+     ],
+     "t": "Pourquoi le jeu est si important",
+     "g": "Vois comment le jeu libre développe créativité, résolution de problèmes et compétences sociales.",
+     "q": "Quelle était ta façon préférée de jouer enfant ?",
+     "c": "Offre aujourd'hui à ton enfant 15 minutes de jeu libre, sans but et sans écran."
+    },
+    "it": {
+     "p": [
+      "Giocare è il modo in cui i bambini esplorano, si esercitano e capiscono il mondo.",
+      "Il gioco non strutturato fa crescere fantasia, linguaggio e pensiero flessibile.",
+      "Non servono giochi speciali; scatole, cucchiai e coperte bastano."
+     ],
+     "t": "Perché il gioco è così importante",
+     "g": "Scopri come il gioco libero sviluppa creatività, problem solving e abilità sociali.",
+     "q": "Qual era il tuo modo preferito di giocare da bambino?",
+     "c": "Oggi offri a tuo figlio 15 minuti di gioco libero senza meta e senza schermi."
+    },
+    "pt": {
+     "p": [
+      "Brincar é como as crianças exploram, treinam e compreendem o mundo.",
+      "A brincadeira sem estrutura faz crescer imaginação, linguagem e pensamento flexível.",
+      "Não precisa de brinquedos especiais; caixas, colheres e mantas chegam."
+     ],
+     "t": "Porque é que brincar importa tanto",
+     "g": "Vê como a brincadeira livre desenvolve criatividade, resolução de problemas e competências sociais.",
+     "q": "Qual era a tua forma preferida de brincar em criança?",
+     "c": "Oferece hoje ao teu filho 15 minutos de brincadeira livre sem meta e sem ecrãs."
+    },
+    "pt_BR": {
+     "p": [
+      "Brincar é como as crianças exploram, treinam e entendem o mundo.",
+      "A brincadeira sem estrutura faz crescer imaginação, linguagem e pensamento flexível.",
+      "Não precisa de brinquedos especiais; caixas, colheres e cobertores bastam."
+     ],
+     "t": "Por que brincar importa tanto",
+     "g": "Veja como a brincadeira livre desenvolve criatividade, resolução de problemas e habilidades sociais.",
+     "q": "Qual era seu jeito favorito de brincar na infância?",
+     "c": "Ofereça hoje ao seu filho 15 minutos de brincadeira livre sem meta e sem telas."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Ask: What are we doing? Where should I sit? What is my part?",
+      "Describe what you see instead of correcting or teaching.",
+      "Letting them lead builds confidence and shows you value their ideas."
+     ],
+     "t": "Following your child's lead in play",
+     "g": "Let children direct the game while you join as a playful helper.",
+     "q": "What game does your child invent most often and how does it work?",
+     "c": "Join your child's play today and let them be the boss of the game."
+    },
+    "de": {
+     "p": [
+      "Frag: Was machen wir? Wo soll ich sitzen? Was ist meine Rolle?",
+      "Beschreibe, was du siehst, statt zu korrigieren oder zu belehren.",
+      "Führen zu dürfen stärkt das Selbstvertrauen und zeigt: Deine Ideen zählen."
+     ],
+     "t": "Dem Kind im Spiel folgen",
+     "g": "Lass Kinder das Spiel lenken, während du als verspielter Helfer mitmachst.",
+     "q": "Welches Spiel erfindet dein Kind am häufigsten und wie funktioniert es?",
+     "c": "Steig heute ins Spiel deines Kindes ein und lass es der Boss des Spiels sein."
+    },
+    "es": {
+     "p": [
+      "Pregunta: ¿Qué hacemos? ¿Dónde me siento? ¿Cuál es mi papel?",
+      "Describe lo que ves en lugar de corregir o enseñar.",
+      "Dejarles liderar da confianza y muestra que valoras sus ideas."
+     ],
+     "t": "Seguir la guía del niño en el juego",
+     "g": "Deja que los niños dirijan el juego mientras te unes como ayudante divertido.",
+     "q": "¿Qué juego inventa tu hijo con más frecuencia y cómo funciona?",
+     "c": "Únete hoy al juego de tu hijo y deja que sea el jefe del juego."
+    },
+    "fr": {
+     "p": [
+      "Demande : Qu'est-ce qu'on fait ? Où je m'assois ? Quel est mon rôle ?",
+      "Décris ce que tu vois au lieu de corriger ou d'enseigner.",
+      "Le laisser mener donne confiance et montre que tu valorises ses idées."
+     ],
+     "t": "Suivre l'enfant dans le jeu",
+     "g": "Laisse l'enfant diriger le jeu pendant que tu te joins à lui comme un assistant joyeux.",
+     "q": "Quel jeu ton enfant invente-t-il le plus souvent et comment fonctionne-t-il ?",
+     "c": "Rejoins aujourd'hui le jeu de ton enfant et laisse-le être le chef du jeu."
+    },
+    "it": {
+     "p": [
+      "Chiedi: Cosa facciamo? Dove mi siedo? Qual è la mia parte?",
+      "Descrivi ciò che vedi invece di correggere o insegnare.",
+      "Lasciarli guidare dà fiducia e mostra che apprezzi le loro idee."
+     ],
+     "t": "Seguire il bambino nel gioco",
+     "g": "Lascia che i bambini guidino il gioco mentre tu partecipi come aiutante giocoso.",
+     "q": "Quale gioco inventa più spesso tuo figlio e come funziona?",
+     "c": "Oggi unisciti al gioco di tuo figlio e lascia che sia lui il capo del gioco."
+    },
+    "pt": {
+     "p": [
+      "Pergunta: O que fazemos? Onde me sento? Qual é o meu papel?",
+      "Descreve o que vês em vez de corrigir ou ensinar.",
+      "Deixá-las liderar dá confiança e mostra que valorizas as suas ideias."
+     ],
+     "t": "Seguir a liderança da criança no jogo",
+     "g": "Deixa as crianças dirigir a brincadeira enquanto te juntas como ajudante divertido.",
+     "q": "Que jogo inventa o teu filho com mais frequência e como funciona?",
+     "c": "Junta-te hoje à brincadeira do teu filho e deixa-o ser o chefe do jogo."
+    },
+    "pt_BR": {
+     "p": [
+      "Pergunte: O que vamos fazer? Onde eu sento? Qual é o meu papel?",
+      "Descreva o que vê em vez de corrigir ou ensinar.",
+      "Deixá-las liderar dá confiança e mostra que você valoriza as ideias delas."
+     ],
+     "t": "Seguir a liderança da criança na brincadeira",
+     "g": "Deixe as crianças dirigirem a brincadeira enquanto você entra como ajudante divertido.",
+     "q": "Que brincadeira seu filho inventa com mais frequência e como funciona?",
+     "c": "Entre hoje na brincadeira do seu filho e deixe que ele seja o chefe do jogo."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Open-ended toys can become anything, so children use them in many ways.",
+      "Fewer toys, rotated now and then, often lead to deeper play.",
+      "Everyday items like cardboard tubes, scarves and pots are great toys too."
+     ],
+     "t": "Toys that spark imagination",
+     "g": "Choose open-ended toys like blocks, dolls and art supplies.",
+     "q": "Which toy does your child return to again and again, and why?",
+     "c": "Put away half the toys and offer a box of simple items for creative play."
+    },
+    "de": {
+     "p": [
+      "Offenes Spielzeug kann alles werden, daher spielen Kinder vielfältig damit.",
+      "Weniger Spielzeug, hin und wieder getauscht, führt oft zu tieferem Spiel.",
+      "Alltagsgegenstände wie Papprollen, Tücher und Töpfe sind auch tolles Spielzeug."
+     ],
+     "t": "Spielzeug, das die Fantasie weckt",
+     "g": "Wähle offenes Spielzeug wie Bausteine, Puppen und Bastelmaterial.",
+     "q": "Zu welchem Spielzeug kehrt dein Kind immer wieder zurück, und warum?",
+     "c": "Räume die Hälfte des Spielzeugs weg und biete eine Kiste mit einfachen Dingen an."
+    },
+    "es": {
+     "p": [
+      "Los juguetes abiertos pueden ser cualquier cosa, así que se usan de muchas formas.",
+      "Menos juguetes, rotados de vez en cuando, suelen llevar a un juego más profundo.",
+      "Objetos cotidianos como tubos de cartón, pañuelos y ollas también son juguetes estupendos."
+     ],
+     "t": "Juguetes que despiertan la imaginación",
+     "g": "Elige juguetes abiertos como bloques, muñecas y materiales de arte.",
+     "q": "¿A qué juguete vuelve tu hijo una y otra vez y por qué?",
+     "c": "Guarda la mitad de los juguetes y ofrece una caja de objetos sencillos para jugar."
+    },
+    "fr": {
+     "p": [
+      "Les jouets ouverts peuvent devenir n'importe quoi, donc on les utilise de mille façons.",
+      "Moins de jouets, alternés de temps en temps, mènent souvent à un jeu plus profond.",
+      "Les objets du quotidien, comme tubes en carton, foulards et casseroles, sont aussi de super jouets."
+     ],
+     "t": "Des jouets qui éveillent l'imagination",
+     "g": "Choisis des jouets ouverts comme des cubes, des poupées et du matériel d'art.",
+     "q": "Quel jouet ton enfant reprend-il sans cesse, et pourquoi ?",
+     "c": "Range la moitié des jouets et propose une boîte d'objets simples pour jouer."
+    },
+    "it": {
+     "p": [
+      "I giochi aperti possono diventare qualsiasi cosa, quindi si usano in tanti modi.",
+      "Meno giochi, ruotati ogni tanto, portano spesso a un gioco più profondo.",
+      "Oggetti di tutti i giorni, come tubi di cartone, foulard e pentole, sono ottimi giochi."
+     ],
+     "t": "Giochi che accendono la fantasia",
+     "g": "Scegli giochi aperti come costruzioni, bambole e materiali per l'arte.",
+     "q": "A quale gioco torna sempre tuo figlio e perché?",
+     "c": "Metti via metà dei giochi e offri una scatola di oggetti semplici per giocare."
+    },
+    "pt": {
+     "p": [
+      "Os brinquedos abertos podem ser qualquer coisa, por isso usam-se de muitas formas.",
+      "Menos brinquedos, rodados de vez em quando, levam muitas vezes a uma brincadeira mais profunda.",
+      "Objetos do dia a dia, como tubos de cartão, lenços e panelas, também são ótimos brinquedos."
+     ],
+     "t": "Brinquedos que despertam a imaginação",
+     "g": "Escolhe brinquedos abertos como blocos, bonecas e material de arte.",
+     "q": "A que brinquedo volta o teu filho vezes sem conta e porquê?",
+     "c": "Guarda metade dos brinquedos e oferece uma caixa de objetos simples para brincar."
+    },
+    "pt_BR": {
+     "p": [
+      "Brinquedos abertos podem ser qualquer coisa, então são usados de muitas formas.",
+      "Menos brinquedos, alternados de vez em quando, levam muitas vezes a uma brincadeira mais profunda.",
+      "Objetos do dia a dia, como tubos de papelão, lenços e panelas, também são ótimos brinquedos."
+     ],
+     "t": "Brinquedos que despertam a imaginação",
+     "g": "Escolha brinquedos abertos como blocos, bonecas e material de arte.",
+     "q": "A que brinquedo seu filho volta sempre e por quê?",
+     "c": "Guarde metade dos brinquedos e ofereça uma caixa de objetos simples para brincar."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Pretend play trains language, empathy and planning in a fun way.",
+      "Join as a customer, patient or guest and let your child be the expert.",
+      "A few props, like a hat or a cooking pot, spark whole stories."
+     ],
+     "t": "Pretend play and role play",
+     "g": "See how playing shop, doctor or chef helps kids practise real-life skills.",
+     "q": "Which pretend game does your child love most and what role do they take?",
+     "c": "Play a pretend game today and take the role your child gives you."
+    },
+    "de": {
+     "p": [
+      "Rollenspiel trainiert Sprache, Empathie und Planen auf spielerische Weise.",
+      "Mach als Kunde, Patient oder Gast mit und lass dein Kind den Experten sein.",
+      "Ein paar Requisiten wie Hut oder Kochtopf lassen ganze Geschichten entstehen."
+     ],
+     "t": "Rollenspiel und So-tun-als-ob",
+     "g": "Erlebe, wie Kaufladen, Arzt oder Koch spielen Kindern hilft, Alltagsfähigkeiten zu üben.",
+     "q": "Welches Rollenspiel liebt dein Kind am meisten und welche Rolle übernimmt es?",
+     "c": "Spiel heute ein Rollenspiel und übernimm die Rolle, die dein Kind dir gibt."
+    },
+    "es": {
+     "p": [
+      "El juego simbólico entrena lenguaje, empatía y planificación de forma divertida.",
+      "Únete como cliente, paciente o invitado y deja que tu hijo sea el experto.",
+      "Unos pocos accesorios, como un sombrero o una olla, inspiran historias enteras."
+     ],
+     "t": "Juego simbólico y de roles",
+     "g": "Descubre cómo jugar a tiendas, médicos o cocineros ayuda a practicar habilidades de la vida real.",
+     "q": "¿Qué juego de roles le encanta más a tu hijo y qué papel toma?",
+     "c": "Juega hoy a un juego de roles y asume el papel que te dé tu hijo."
+    },
+    "fr": {
+     "p": [
+      "Le faire semblant entraîne langage, empathie et organisation de façon ludique.",
+      "Joins-toi comme client, patient ou invité et laisse ton enfant être l'expert.",
+      "Quelques accessoires, comme un chapeau ou une casserole, lancent des histoires entières."
+     ],
+     "t": "Jeu de faire semblant et jeux de rôle",
+     "g": "Vois comment jouer à la marchande, au docteur ou au cuisinier aide à exercer des compétences de la vie réelle.",
+     "q": "Quel jeu de rôle ton enfant préfère-t-il et quel rôle prend-il ?",
+     "c": "Joue aujourd'hui à un jeu de rôle et prends le rôle que ton enfant te donne."
+    },
+    "it": {
+     "p": [
+      "Il far finta allena linguaggio, empatia e pianificazione in modo divertente.",
+      "Unisciti come cliente, paziente o ospite e lascia che tuo figlio sia l'esperto.",
+      "Pochi accessori, come un cappello o una pentola, fanno nascere intere storie."
+     ],
+     "t": "Gioco simbolico e di ruolo",
+     "g": "Scopri come giocare al negozio, al dottore o al cuoco aiuta a esercitare abilità della vita reale.",
+     "q": "Quale gioco di ruolo ama di più tuo figlio e che parte recita?",
+     "c": "Oggi gioca a un gioco di ruolo e prendi la parte che ti dà tuo figlio."
+    },
+    "pt": {
+     "p": [
+      "O faz de conta treina linguagem, empatia e planeamento de forma divertida.",
+      "Junta-te como cliente, paciente ou convidado e deixa o teu filho ser o especialista.",
+      "Alguns adereços, como um chapéu ou um tacho, dão origem a histórias inteiras."
+     ],
+     "t": "Jogo simbólico e de papéis",
+     "g": "Vê como brincar às lojas, ao médico ou ao cozinheiro ajuda a treinar competências da vida real.",
+     "q": "Que jogo de papéis o teu filho mais adora e que papel assume?",
+     "c": "Brinca hoje ao faz de conta e assume o papel que o teu filho te der."
+    },
+    "pt_BR": {
+     "p": [
+      "O faz de conta treina linguagem, empatia e planejamento de forma divertida.",
+      "Entre como cliente, paciente ou convidado e deixe seu filho ser o especialista.",
+      "Alguns adereços, como um chapéu ou uma panela, dão origem a histórias inteiras."
+     ],
+     "t": "Faz de conta e jogos de papéis",
+     "g": "Veja como brincar de loja, médico ou cozinheiro ajuda a treinar habilidades da vida real.",
+     "q": "Que brincadeira de faz de conta seu filho mais adora e que papel ele assume?",
+     "c": "Brinque hoje de faz de conta e assuma o papel que seu filho der."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Even 20 minutes outside lifts mood and burns off energy for children and adults.",
+      "Almost any weather is playable with the right clothes.",
+      "A garden, a park or a street with trees is enough; no equipment needed."
+     ],
+     "t": "Outdoor play every day",
+     "g": "Make fresh air, parks and nature walks a simple daily habit.",
+     "q": "What is your favourite place to go outside with your family?",
+     "c": "Spend at least 20 minutes outdoors with your child today."
+    },
+    "de": {
+     "p": [
+      "Schon 20 Minuten draußen heben die Stimmung und bauen Energie ab, bei Kindern und Erwachsenen.",
+      "Fast jedes Wetter ist mit der richtigen Kleidung spielbar.",
+      "Ein Garten, ein Park oder eine Straße mit Bäumen genügt; keine Ausrüstung nötig."
+     ],
+     "t": "Jeden Tag draußen spielen",
+     "g": "Mach frische Luft, Parks und Naturspaziergänge zu einer einfachen täglichen Gewohnheit.",
+     "q": "Wo bist du mit deiner Familie am liebsten draußen?",
+     "c": "Verbringe heute mindestens 20 Minuten mit deinem Kind im Freien."
+    },
+    "es": {
+     "p": [
+      "Incluso 20 minutos fuera mejoran el ánimo y gastan energía, en niños y adultos.",
+      "Casi cualquier clima se puede disfrutar con la ropa adecuada.",
+      "Un jardín, un parque o una calle con árboles bastan; no hace falta equipo."
+     ],
+     "t": "Jugar al aire libre cada día",
+     "g": "Convierte el aire fresco, los parques y los paseos por la naturaleza en un hábito diario sencillo.",
+     "q": "¿Cuál es tu lugar favorito para salir con tu familia?",
+     "c": "Pasa hoy al menos 20 minutos al aire libre con tu hijo."
+    },
+    "fr": {
+     "p": [
+      "Même 20 minutes dehors améliorent l'humeur et dépensent de l'énergie, pour enfants et adultes.",
+      "Presque toute météo se joue avec les bons vêtements.",
+      "Un jardin, un parc ou une rue avec des arbres suffit ; pas besoin d'équipement."
+     ],
+     "t": "Jouer dehors chaque jour",
+     "g": "Fais de l'air frais, des parcs et des promenades dans la nature une habitude quotidienne simple.",
+     "q": "Quel est ton endroit préféré pour sortir en famille ?",
+     "c": "Passe aujourd'hui au moins 20 minutes dehors avec ton enfant."
+    },
+    "it": {
+     "p": [
+      "Anche 20 minuti fuori sollevano l'umore e fanno sfogare l'energia, a bambini e adulti.",
+      "Quasi ogni meteo si può vivere con i vestiti giusti.",
+      "Basta un giardino, un parco o una strada alberata; nessuna attrezzatura necessaria."
+     ],
+     "t": "Giocare all'aperto ogni giorno",
+     "g": "Rendi aria fresca, parchi e passeggiate nella natura una semplice abitudine quotidiana.",
+     "q": "Qual è il tuo posto preferito per uscire con la famiglia?",
+     "c": "Oggi trascorri almeno 20 minuti all'aperto con tuo figlio."
+    },
+    "pt": {
+     "p": [
+      "Mesmo 20 minutos lá fora melhoram o humor e gastam energia, a crianças e adultos.",
+      "Quase todo o tempo se aproveita com a roupa certa.",
+      "Um jardim, um parque ou uma rua com árvores chega; não é preciso equipamento."
+     ],
+     "t": "Brincar ao ar livre todos os dias",
+     "g": "Faz do ar fresco, dos parques e dos passeios na natureza um hábito diário simples.",
+     "q": "Qual é o teu sítio preferido para sair com a família?",
+     "c": "Passa hoje pelo menos 20 minutos ao ar livre com o teu filho."
+    },
+    "pt_BR": {
+     "p": [
+      "Até 20 minutos lá fora melhoram o humor e gastam energia, de crianças e adultos.",
+      "Quase todo clima rende brincadeira com a roupa certa.",
+      "Um jardim, um parque ou uma rua com árvores basta; não precisa de equipamento."
+     ],
+     "t": "Brincar ao ar livre todos os dias",
+     "g": "Faça do ar fresco, dos parques e dos passeios na natureza um hábito diário simples.",
+     "q": "Qual é seu lugar favorito para sair com a família?",
+     "c": "Passe hoje pelo menos 20 minutos ao ar livre com seu filho."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Build a blanket fort with chairs, sheets and cushions for reading or snacks.",
+      "Try a treasure hunt, a dance party or an indoor obstacle course.",
+      "Keep a rainy-day box of crayons, paper and simple craft items ready."
+     ],
+     "t": "Rainy-day play ideas",
+     "g": "Try indoor games, forts and crafts for days stuck at home.",
+     "q": "What is the best rainy-day activity you remember from your own childhood?",
+     "c": "Build a blanket fort or a small indoor obstacle course with your child."
+    },
+    "de": {
+     "p": [
+      "Bau mit Stühlen, Laken und Kissen eine Kuschelhöhle zum Lesen oder Snacken.",
+      "Probiert eine Schatzsuche, eine Tanzparty oder einen Indoor-Hindernislauf.",
+      "Halte eine Regentag-Kiste mit Stiften, Papier und einfachem Bastelmaterial bereit."
+     ],
+     "t": "Spielideen für Regentage",
+     "g": "Probiere Indoor-Spiele, Höhlen und Basteleien für Tage, an denen ihr drinnen bleibt.",
+     "q": "Was ist die schönste Regentag-Aktivität aus deiner eigenen Kindheit?",
+     "c": "Baut heute eine Kuschelhöhle oder einen kleinen Hindernisparcours drinnen."
+    },
+    "es": {
+     "p": [
+      "Construye una cabaña de mantas con sillas, sábanas y cojines para leer o merendar.",
+      "Probad una búsqueda del tesoro, una fiesta de baile o un circuito de obstáculos en casa.",
+      "Ten lista una caja para días de lluvia con ceras, papel y materiales sencillos."
+     ],
+     "t": "Ideas de juego para días de lluvia",
+     "g": "Prueba juegos de interior, cabañas y manualidades para días en casa.",
+     "q": "¿Cuál es la mejor actividad de día de lluvia que recuerdas de tu infancia?",
+     "c": "Construye hoy una cabaña de mantas o un pequeño circuito en casa con tu hijo."
+    },
+    "fr": {
+     "p": [
+      "Construis une cabane avec chaises, draps et coussins pour lire ou goûter.",
+      "Essayez une chasse au trésor, une fête dansante ou un parcours d'obstacles à l'intérieur.",
+      "Garde prête une boîte pour jours de pluie avec crayons, papier et matériel simple."
+     ],
+     "t": "Idées de jeux pour jours de pluie",
+     "g": "Essaie des jeux d'intérieur, des cabanes et des bricolages pour les jours à la maison.",
+     "q": "Quelle est la meilleure activité de jour de pluie dont tu te souviennes de ton enfance ?",
+     "c": "Construis aujourd'hui une cabane en couvertures ou un petit parcours à l'intérieur avec ton enfant."
+    },
+    "it": {
+     "p": [
+      "Costruisci una capanna con sedie, lenzuola e cuscini per leggere o fare merenda.",
+      "Provate una caccia al tesoro, una festa danzante o un percorso a ostacoli in casa.",
+      "Tieni pronta una scatola per i giorni di pioggia con pastelli, carta e materiali semplici."
+     ],
+     "t": "Idee di gioco per giorni di pioggia",
+     "g": "Prova giochi al chiuso, capanne e lavoretti per i giorni passati in casa.",
+     "q": "Qual è la migliore attività da giorno di pioggia che ricordi dalla tua infanzia?",
+     "c": "Oggi costruisci con tuo figlio una capanna di coperte o un piccolo percorso in casa."
+    },
+    "pt": {
+     "p": [
+      "Constrói uma cabana com cadeiras, lençóis e almofadas para ler ou lanchar.",
+      "Experimentem uma caça ao tesouro, uma festa de dança ou um circuito de obstáculos em casa.",
+      "Tem pronta uma caixa para dias de chuva com lápis, papel e materiais simples."
+     ],
+     "t": "Ideias de brincadeiras para dias de chuva",
+     "g": "Experimenta jogos de interior, cabanas e trabalhos manuais para dias em casa.",
+     "q": "Qual é a melhor atividade de dia de chuva de que te lembras da infância?",
+     "c": "Constrói hoje uma cabana de mantas ou um pequeno circuito em casa com o teu filho."
+    },
+    "pt_BR": {
+     "p": [
+      "Monte uma cabana com cadeiras, lençóis e almofadas para ler ou lanchar.",
+      "Experimentem uma caça ao tesouro, uma festa de dança ou um circuito de obstáculos em casa.",
+      "Deixe pronta uma caixa para dias de chuva com lápis, papel e materiais simples."
+     ],
+     "t": "Ideias de brincadeiras para dias de chuva",
+     "g": "Experimente jogos de interior, cabanas e trabalhos manuais para dias em casa.",
+     "q": "Qual é a melhor atividade de dia de chuva de que você lembra da infância?",
+     "c": "Monte hoje uma cabana de cobertores ou um pequeno circuito em casa com seu filho."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Set out paper, crayons and glue; let children decide what to make.",
+      "Cardboard, bottle caps and old magazines become sculptures and collages.",
+      "Put down newspaper or an old shirt for the child so mess feels relaxed."
+     ],
+     "t": "Arts and crafts at home",
+     "g": "Try easy creative projects with paper, paint and recycled materials.",
+     "q": "What would your child love to create if you gave them a whole box of recycling?",
+     "c": "Make something together from recycled materials and give it a silly name."
+    },
+    "de": {
+     "p": [
+      "Leg Papier, Stifte und Kleber bereit; Kinder entscheiden, was entsteht.",
+      "Karton, Flaschendeckel und alte Zeitschriften werden zu Skulpturen und Collagen.",
+      "Leg Zeitungspapier unter und gib ein altes Hemd, damit Unordnung entspannt bleibt."
+     ],
+     "t": "Basteln und Malen zu Hause",
+     "g": "Probiere einfache kreative Projekte mit Papier, Farbe und Recyclingmaterial.",
+     "q": "Was würde dein Kind erschaffen, wenn du ihm eine ganze Kiste Recycling gäbest?",
+     "c": "Bastelt heute zusammen etwas aus Recyclingmaterial und gebt ihm einen albernen Namen."
+    },
+    "es": {
+     "p": [
+      "Prepara papel, ceras y pegamento; deja que los niños decidan qué hacer.",
+      "Cartón, chapas y revistas viejas se vuelven esculturas y collages.",
+      "Pon periódico en la mesa y una camiseta vieja al niño para relajarte con el desorden."
+     ],
+     "t": "Manualidades en casa",
+     "g": "Prueba proyectos creativos fáciles con papel, pintura y materiales reciclados.",
+     "q": "¿Qué crearía tu hijo si le dieras una caja entera de reciclaje?",
+     "c": "Haced hoy algo juntos con materiales reciclados y ponedle un nombre divertido."
+    },
+    "fr": {
+     "p": [
+      "Prépare papier, crayons et colle ; laisse l'enfant décider quoi fabriquer.",
+      "Carton, bouchons et vieux magazines deviennent sculptures et collages.",
+      "Mets du papier journal sur la table et une vieille chemise à l'enfant pour dédramatiser le désordre."
+     ],
+     "t": "Bricolage et arts plastiques à la maison",
+     "g": "Essaie des projets créatifs faciles avec papier, peinture et matériaux recyclés.",
+     "q": "Que créerait ton enfant si tu lui donnais une boîte entière de récupération ?",
+     "c": "Fabriquez ensemble quelque chose avec des matériaux recyclés et donnez-lui un nom rigolo."
+    },
+    "it": {
+     "p": [
+      "Prepara carta, pastelli e colla; lascia che siano i bambini a decidere cosa fare.",
+      "Cartone, tappi e vecchie riviste diventano sculture e collage.",
+      "Metti giornali sul tavolo e una vecchia camicia al bambino per vivere il disordine con calma."
+     ],
+     "t": "Lavoretti creativi in casa",
+     "g": "Prova progetti creativi facili con carta, colori e materiali riciclati.",
+     "q": "Cosa creerebbe tuo figlio se gli dessi una scatola intera di riciclo?",
+     "c": "Create oggi qualcosa insieme con materiali riciclati e datele un nome buffo."
+    },
+    "pt": {
+     "p": [
+      "Prepara papel, lápis de cera e cola; deixa as crianças decidir o que fazer.",
+      "Cartão, tampas e revistas velhas viram esculturas e colagens.",
+      "Põe jornal na mesa e uma camisa velha na criança para encarar a confusão com calma."
+     ],
+     "t": "Trabalhos manuais em casa",
+     "g": "Experimenta projetos criativos fáceis com papel, tinta e materiais reciclados.",
+     "q": "O que criaria o teu filho se lhe desses uma caixa inteira de reciclagem?",
+     "c": "Façam hoje algo juntos com materiais reciclados e deem-lhe um nome engraçado."
+    },
+    "pt_BR": {
+     "p": [
+      "Separe papel, giz de cera e cola; deixe as crianças decidirem o que fazer.",
+      "Papelão, tampinhas e revistas velhas viram esculturas e colagens.",
+      "Ponha jornal na mesa e uma camiseta velha na criança para encarar a bagunça com calma."
+     ],
+     "t": "Artesanato em casa",
+     "g": "Experimente projetos criativos fáceis com papel, tinta e materiais reciclados.",
+     "q": "O que seu filho criaria se você desse uma caixa inteira de reciclagem?",
+     "c": "Façam hoje algo juntos com materiais reciclados e deem um nome engraçado."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Singing together needs no talent; children love your voice as it is.",
+      "Pots, spoons and rice in a jar make a fun home band.",
+      "Freeze dance and follow-the-leader boost listening and body control."
+     ],
+     "t": "Music and movement",
+     "g": "Try singing, dancing and rhythm games that kids of all ages enjoy.",
+     "q": "What song makes your whole family want to dance?",
+     "c": "Have a five-minute family dance party with everyone choosing one song."
+    },
+    "de": {
+     "p": [
+      "Gemeinsames Singen braucht kein Talent; Kinder lieben deine Stimme, wie sie ist.",
+      "Töpfe, Löffel und Reis im Glas ergeben eine lustige Hauskapelle.",
+      "Eisstatue-Tanz und Folge-dem-Anführer fördern Zuhören und Körperbeherrschung."
+     ],
+     "t": "Musik und Bewegung",
+     "g": "Probiere Singen, Tanzen und Rhythmusspiele, die Kinder jeden Alters mögen.",
+     "q": "Bei welchem Lied will deine ganze Familie tanzen?",
+     "c": "Veranstaltet eine fünfminütige Familien-Tanzparty, bei der jeder ein Lied auswählt."
+    },
+    "es": {
+     "p": [
+      "Cantar juntos no necesita talento; a los niños les encanta tu voz tal como es.",
+      "Ollas, cucharas y arroz en un tarro forman una banda casera divertida.",
+      "El baile de estatuas y el sigue al líder mejoran la escucha y el control del cuerpo."
+     ],
+     "t": "Música y movimiento",
+     "g": "Prueba cantar, bailar y juegos de ritmo que gustan a niños de todas las edades.",
+     "q": "¿Qué canción hace bailar a toda tu familia?",
+     "c": "Haced una fiesta de baile familiar de cinco minutos donde cada uno elija una canción."
+    },
+    "fr": {
+     "p": [
+      "Chanter ensemble ne demande aucun talent ; les enfants aiment ta voix telle qu'elle est.",
+      "Casseroles, cuillères et riz dans un pot font un orchestre maison amusant.",
+      "La danse statue et le jeu du chef d'orchestre améliorent l'écoute et le contrôle du corps."
+     ],
+     "t": "Musique et mouvement",
+     "g": "Essaie le chant, la danse et les jeux de rythme que les enfants de tous âges apprécient.",
+     "q": "Quelle chanson donne envie de danser à toute ta famille ?",
+     "c": "Organisez une fête dansante familiale de cinq minutes où chacun choisit une chanson."
+    },
+    "it": {
+     "p": [
+      "Cantare insieme non richiede talento; ai bambini piace la tua voce così com'è.",
+      "Pentole, cucchiai e riso in un barattolo fanno una divertente banda di casa.",
+      "Il ballo della statua e il seguire il capo migliorano ascolto e controllo del corpo."
+     ],
+     "t": "Musica e movimento",
+     "g": "Prova canto, danza e giochi di ritmo che piacciono ai bambini di ogni età.",
+     "q": "Quale canzone fa venire voglia di ballare a tutta la tua famiglia?",
+     "c": "Fate una festa danzante di famiglia di cinque minuti dove ognuno sceglie una canzone."
+    },
+    "pt": {
+     "p": [
+      "Cantar juntos não exige talento; as crianças adoram a tua voz como ela é.",
+      "Panelas, colheres e arroz num frasco fazem uma banda caseira divertida.",
+      "A dança das estátuas e o seguir o chefe melhoram a escuta e o controlo do corpo."
+     ],
+     "t": "Música e movimento",
+     "g": "Experimenta cantar, dançar e jogos de ritmo de que crianças de todas as idades gostam.",
+     "q": "Que canção faz toda a tua família querer dançar?",
+     "c": "Façam uma festa de dança familiar de cinco minutos em que cada um escolhe uma canção."
+    },
+    "pt_BR": {
+     "p": [
+      "Cantar junto não exige talento; as crianças adoram sua voz como ela é.",
+      "Panelas, colheres e arroz num pote fazem uma banda caseira divertida.",
+      "A dança da estátua e o siga o mestre melhoram a escuta e o controle do corpo."
+     ],
+     "t": "Música e movimento",
+     "g": "Experimente cantar, dançar e jogos de ritmo de que crianças de todas as idades gostam.",
+     "q": "Que música faz toda a sua família querer dançar?",
+     "c": "Façam uma festa de dança em família de cinco minutos em que cada um escolhe uma música."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Board games practise waiting, following rules and handling wins and losses.",
+      "Choose cooperative games, where everyone works together, for gentle starts.",
+      "Cheer for good sportsmanship more than for winning."
+     ],
+     "t": "Board games for families",
+     "g": "Learn what turn-taking games teach about patience and fair play.",
+     "q": "What was the most fun family game you ever played?",
+     "c": "Play one short board or card game together and cheer for everyone's turn."
+    },
+    "de": {
+     "p": [
+      "Brettspiele üben Warten, Regeln befolgen und den Umgang mit Gewinnen und Verlieren.",
+      "Wähle kooperative Spiele, bei denen alle zusammenarbeiten, für einen sanften Start.",
+      "Feiere gute Fairness mehr als das Gewinnen."
+     ],
+     "t": "Brettspiele für die Familie",
+     "g": "Erfahre, was Spiele mit Abwechseln über Geduld und Fairness beibringen.",
+     "q": "Was war das lustigste Familienspiel, das ihr je gespielt habt?",
+     "c": "Spielt gemeinsam ein kurzes Brett- oder Kartenspiel und feiert jeden Zug."
+    },
+    "es": {
+     "p": [
+      "Los juegos de mesa practican esperar, seguir reglas y manejar ganar y perder.",
+      "Elige juegos cooperativos, donde todos colaboran, para empezar con suavidad.",
+      "Celebra la deportividad más que ganar."
+     ],
+     "t": "Juegos de mesa en familia",
+     "g": "Descubre lo que los juegos por turnos enseñan sobre paciencia y juego limpio.",
+     "q": "¿Cuál fue el juego familiar más divertido que habéis jugado?",
+     "c": "Jugad hoy una partida corta de mesa o cartas y celebrad el turno de cada uno."
+    },
+    "fr": {
+     "p": [
+      "Les jeux de société exercent à attendre, suivre les règles et gérer gagner et perdre.",
+      "Choisis des jeux coopératifs, où tous collaborent, pour bien commencer.",
+      "Applaudis le fair-play plus que la victoire."
+     ],
+     "t": "Jeux de société en famille",
+     "g": "Découvre ce que les jeux à tour de rôle enseignent sur la patience et le fair-play.",
+     "q": "Quel a été le jeu de famille le plus amusant auquel vous avez joué ?",
+     "c": "Jouez aujourd'hui à un jeu de société ou de cartes court et fêtez le tour de chacun."
+    },
+    "it": {
+     "p": [
+      "I giochi da tavolo esercitano ad aspettare, seguire le regole e gestire vittorie e sconfitte.",
+      "Scegli giochi cooperativi, dove tutti collaborano, per iniziare dolcemente.",
+      "Festeggia la sportività più della vittoria."
+     ],
+     "t": "Giochi da tavolo in famiglia",
+     "g": "Scopri cosa insegnano i giochi a turni su pazienza e correttezza.",
+     "q": "Qual è stato il gioco di famiglia più divertente che abbiate mai fatto?",
+     "c": "Oggi giocate una partita breve a un gioco da tavolo o di carte e festeggiate il turno di ciascuno."
+    },
+    "pt": {
+     "p": [
+      "Os jogos de tabuleiro treinam esperar, seguir regras e lidar com ganhar e perder.",
+      "Escolhe jogos cooperativos, onde todos colaboram, para começar com suavidade.",
+      "Celebra o fair play mais do que a vitória."
+     ],
+     "t": "Jogos de tabuleiro em família",
+     "g": "Percebe o que os jogos por turnos ensinam sobre paciência e fair play.",
+     "q": "Qual foi o jogo de família mais divertido que já jogaram?",
+     "c": "Joguem hoje um jogo curto de tabuleiro ou cartas e celebrem a vez de cada um."
+    },
+    "pt_BR": {
+     "p": [
+      "Jogos de tabuleiro treinam esperar, seguir regras e lidar com ganhar e perder.",
+      "Escolha jogos cooperativos, em que todos colaboram, para começar com leveza.",
+      "Comemore o espírito esportivo mais que a vitória."
+     ],
+     "t": "Jogos de tabuleiro em família",
+     "g": "Entenda o que os jogos por turnos ensinam sobre paciência e jogo limpo.",
+     "q": "Qual foi o jogo de família mais divertido que vocês já jogaram?",
+     "c": "Joguem hoje um jogo curto de tabuleiro ou cartas e comemorem a vez de cada um."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Boredom is often the doorway to a new idea or game.",
+      "You do not have to fix it; a quiet, unscheduled stretch is a gift.",
+      "Keep a few open options nearby, like paper, blocks or a book."
+     ],
+     "t": "Allowing boredom",
+     "g": "See why a little boredom can spark creativity and independent play.",
+     "q": "What did you do as a child when you had nothing to do?",
+     "c": "Leave 20 minutes unplanned today and see what your child invents."
+    },
+    "de": {
+     "p": [
+      "Langeweile ist oft die Tür zu einer neuen Idee oder einem neuen Spiel.",
+      "Du musst sie nicht beheben; eine ruhige, ungeplante Zeit ist ein Geschenk.",
+      "Halte ein paar offene Möglichkeiten bereit, etwa Papier, Bausteine oder ein Buch."
+     ],
+     "t": "Langeweile zulassen",
+     "g": "Erkenne, warum ein bisschen Langeweile Kreativität und eigenständiges Spiel anstoßen kann.",
+     "q": "Was hast du als Kind gemacht, wenn du nichts zu tun hattest?",
+     "c": "Lass heute 20 Minuten ungeplant und sieh, was dein Kind erfindet."
+    },
+    "es": {
+     "p": [
+      "El aburrimiento suele ser la puerta a una idea o juego nuevos.",
+      "No tienes que arreglarlo; un rato tranquilo y sin planes es un regalo.",
+      "Ten a mano algunas opciones abiertas, como papel, bloques o un libro."
+     ],
+     "t": "Permitir el aburrimiento",
+     "g": "Descubre por qué un poco de aburrimiento puede despertar creatividad y juego independiente.",
+     "q": "¿Qué hacías de niño cuando no tenías nada que hacer?",
+     "c": "Deja hoy 20 minutos sin planear y mira qué inventa tu hijo."
+    },
+    "fr": {
+     "p": [
+      "L'ennui est souvent la porte d'une nouvelle idée ou d'un nouveau jeu.",
+      "Tu n'as pas à le réparer ; un moment calme sans programme est un cadeau.",
+      "Garde à portée quelques options ouvertes, comme papier, cubes ou un livre."
+     ],
+     "t": "Laisser place à l'ennui",
+     "g": "Vois pourquoi un peu d'ennui peut éveiller la créativité et le jeu autonome.",
+     "q": "Que faisais-tu enfant quand tu n'avais rien à faire ?",
+     "c": "Laisse aujourd'hui 20 minutes sans programme et vois ce que ton enfant invente."
+    },
+    "it": {
+     "p": [
+      "La noia è spesso la porta verso una nuova idea o un nuovo gioco.",
+      "Non devi risolverla; un momento tranquillo e senza programmi è un regalo.",
+      "Tieni a portata di mano qualche opzione aperta, come carta, costruzioni o un libro."
+     ],
+     "t": "Lasciare spazio alla noia",
+     "g": "Scopri perché un po' di noia può accendere creatività e gioco autonomo.",
+     "q": "Cosa facevi da bambino quando non avevi niente da fare?",
+     "c": "Oggi lascia 20 minuti senza programmi e guarda cosa inventa tuo figlio."
+    },
+    "pt": {
+     "p": [
+      "O tédio é muitas vezes a porta para uma nova ideia ou jogo.",
+      "Não tens de o resolver; um tempo calmo e sem planos é uma oferta.",
+      "Tem à mão algumas opções abertas, como papel, blocos ou um livro."
+     ],
+     "t": "Deixar espaço ao tédio",
+     "g": "Percebe porque é que um pouco de tédio pode despertar criatividade e brincadeira independente.",
+     "q": "O que fazias em criança quando não tinhas nada para fazer?",
+     "c": "Deixa hoje 20 minutos sem planos e vê o que o teu filho inventa."
+    },
+    "pt_BR": {
+     "p": [
+      "O tédio muitas vezes é a porta para uma nova ideia ou brincadeira.",
+      "Você não precisa resolver; um tempo calmo e sem planos é um presente.",
+      "Deixe à mão algumas opções abertas, como papel, blocos ou um livro."
+     ],
+     "t": "Deixar espaço para o tédio",
+     "g": "Entenda por que um pouco de tédio pode despertar criatividade e brincadeira independente.",
+     "q": "O que você fazia na infância quando não tinha nada para fazer?",
+     "c": "Deixe hoje 20 minutos sem planos e veja o que seu filho inventa."
+    }
+   }
+  }
+ ]
+}

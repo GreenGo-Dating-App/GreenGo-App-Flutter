@@ -1,0 +1,835 @@
+{
+ "topic": "sleep_habits",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sleeping in a shared room",
+     "g": "Make rest work in dorms, hostels or family rooms.",
+     "p": [
+      "An eye mask and earplugs create a private bubble.",
+      "A small clip-on or bed-curtain gives a little privacy and darkness.",
+      "Agree on quiet hours kindly with roommates."
+     ],
+     "q": "Have you ever slept in a shared room? How did it go?",
+     "c": "Tonight, prepare your bubble: mask, plugs or a curtain."
+    },
+    "de": {
+     "t": "Im Gemeinschaftszimmer schlafen",
+     "g": "Sorge für Erholung in Schlafsaal, Hostel oder Familienzimmer.",
+     "p": [
+      "Schlafmaske und Ohrstöpsel schaffen eine private Blase.",
+      "Ein kleiner Bettvorhang gibt etwas Privatsphäre und Dunkelheit.",
+      "Vereinbare freundlich Ruhezeiten mit den Mitbewohnern."
+     ],
+     "q": "Hast du schon mal in einem Gemeinschaftszimmer geschlafen? Wie war es?",
+     "c": "Bereite heute Abend deine Blase vor: Maske, Stöpsel oder Vorhang."
+    },
+    "es": {
+     "t": "Dormir en una habitación compartida",
+     "g": "Haz que el descanso funcione en residencias, hostales o cuartos familiares.",
+     "p": [
+      "Un antifaz y tapones crean una burbuja privada.",
+      "Una cortina de cama pequeña da algo de intimidad y oscuridad.",
+      "Acuerda con cariño horas de silencio con tus compañeros."
+     ],
+     "q": "¿Has dormido alguna vez en una habitación compartida? ¿Cómo fue?",
+     "c": "Esta noche prepara tu burbuja: antifaz, tapones o una cortina."
+    },
+    "fr": {
+     "t": "Dormir dans une chambre partagée",
+     "g": "Fais que le repos fonctionne en dortoir, auberge ou chambre familiale.",
+     "p": [
+      "Masque de nuit et bouchons créent une bulle privée.",
+      "Un petit rideau de lit offre un peu d'intimité et d'obscurité.",
+      "Convenez gentiment d'heures de calme avec vos colocataires."
+     ],
+     "q": "As-tu déjà dormi dans une chambre partagée ? Comment cela s'est passé ?",
+     "c": "Ce soir, prépare ta bulle : masque, bouchons ou rideau."
+    },
+    "it": {
+     "t": "Dormire in una camera condivisa",
+     "g": "Fai funzionare il riposo in dormitori, ostelli o camere di famiglia.",
+     "p": [
+      "Mascherina e tappi creano una bolla privata.",
+      "Una piccola tendina per il letto dà un po' di privacy e buio.",
+      "Concorda con gentilezza orari di silenzio con i compagni di stanza."
+     ],
+     "q": "Hai mai dormito in una camera condivisa? Com'è andata?",
+     "c": "Stasera prepara la tua bolla: mascherina, tappi o una tendina."
+    },
+    "pt": {
+     "t": "Dormir num quarto partilhado",
+     "g": "Faz o descanso funcionar em residências, hostels ou quartos de família.",
+     "p": [
+      "Máscara de dormir e tampões criam uma bolha privada.",
+      "Uma pequena cortina de cama dá alguma privacidade e escuridão.",
+      "Combina com simpatia horas de silêncio com os colegas de quarto."
+     ],
+     "q": "Já dormiste num quarto partilhado? Como correu?",
+     "c": "Esta noite, prepara a tua bolha: máscara, tampões ou cortina."
+    },
+    "pt_BR": {
+     "t": "Dormir num quarto compartilhado",
+     "g": "Faça o descanso funcionar em repúblicas, albergues ou quartos de família.",
+     "p": [
+      "Máscara de dormir e protetores criam uma bolha privada.",
+      "Uma pequena cortina de cama dá alguma privacidade e escuridão.",
+      "Combine com gentileza horários de silêncio com os colegas de quarto."
+     ],
+     "q": "Você já dormiu num quarto compartilhado? Como foi?",
+     "c": "Hoje à noite, prepare a sua bolha: máscara, protetores ou cortina."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sleep on a budget",
+     "g": "Find low-cost bedroom upgrades that make a real difference.",
+     "p": [
+      "A sleep mask or tape over a light costs almost nothing.",
+      "A cheap fan or an extra blanket layer helps temperature.",
+      "Rearranging the room and tidying are free."
+     ],
+     "q": "Which free or cheap upgrade could help you most?",
+     "c": "Tonight, make one free change, like moving a bright light."
+    },
+    "de": {
+     "t": "Schlaf mit kleinem Budget",
+     "g": "Finde günstige Schlafzimmer-Verbesserungen, die wirklich etwas bringen.",
+     "p": [
+      "Eine Schlafmaske oder Klebeband über einem Licht kostet fast nichts.",
+      "Ein günstiger Ventilator oder eine zusätzliche Deckenlage hilft bei der Temperatur.",
+      "Umräumen und Aufräumen sind gratis."
+     ],
+     "q": "Welche kostenlose oder günstige Verbesserung würde dir am meisten helfen?",
+     "c": "Mach heute Abend eine kostenlose Änderung, etwa ein helles Licht umstellen."
+    },
+    "es": {
+     "t": "Dormir con poco presupuesto",
+     "g": "Encuentra mejoras económicas del dormitorio que marcan la diferencia.",
+     "p": [
+      "Un antifaz o cinta sobre una luz cuesta casi nada.",
+      "Un ventilador barato o una capa extra de manta ayuda con la temperatura.",
+      "Reorganizar y ordenar la habitación es gratis."
+     ],
+     "q": "¿Qué mejora gratuita o barata te ayudaría más?",
+     "c": "Esta noche haz un cambio gratuito, como mover una luz brillante."
+    },
+    "fr": {
+     "t": "Bien dormir à petit budget",
+     "g": "Trouve des améliorations de chambre peu coûteuses qui changent vraiment les choses.",
+     "p": [
+      "Un masque de nuit ou du ruban sur un voyant coûte presque rien.",
+      "Un ventilateur bon marché ou une couche de couverture en plus aide pour la température.",
+      "Réorganiser et ranger la pièce est gratuit."
+     ],
+     "q": "Quelle amélioration gratuite ou peu chère t'aiderait le plus ?",
+     "c": "Ce soir, fais un changement gratuit, comme déplacer une lumière vive."
+    },
+    "it": {
+     "t": "Dormire con poco budget",
+     "g": "Trova migliorie economiche della camera che fanno davvero la differenza.",
+     "p": [
+      "Una mascherina o del nastro su una luce costa quasi niente.",
+      "Un ventilatore economico o uno strato extra di coperta aiuta con la temperatura.",
+      "Riorganizzare e riordinare la stanza è gratis."
+     ],
+     "q": "Quale miglioria gratuita o economica ti aiuterebbe di più?",
+     "c": "Stasera fai un cambiamento gratuito, come spostare una luce intensa."
+    },
+    "pt": {
+     "t": "Dormir bem com pouco orçamento",
+     "g": "Encontra melhorias baratas no quarto que fazem mesmo diferença.",
+     "p": [
+      "Uma máscara de dormir ou fita sobre uma luz custa quase nada.",
+      "Uma ventoinha barata ou uma camada extra de manta ajuda com a temperatura.",
+      "Reorganizar e arrumar o quarto é grátis."
+     ],
+     "q": "Que melhoria gratuita ou barata te ajudaria mais?",
+     "c": "Esta noite, faz uma mudança gratuita, como mudar uma luz forte de sítio."
+    },
+    "pt_BR": {
+     "t": "Dormir bem com pouco orçamento",
+     "g": "Encontre melhorias baratas no quarto que fazem diferença de verdade.",
+     "p": [
+      "Uma máscara de dormir ou fita sobre uma luz custa quase nada.",
+      "Um ventilador barato ou uma camada extra de manta ajuda com a temperatura.",
+      "Reorganizar e arrumar o quarto é de graça."
+     ],
+     "q": "Que melhoria gratuita ou barata mais ajudaria você?",
+     "c": "Hoje à noite, faça uma mudança gratuita, como mudar uma luz forte de lugar."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Bed is for sleep",
+     "g": "Keep work, studying and long scrolling out of bed.",
+     "p": [
+      "Your brain learns that bed means sleep when you use it that way.",
+      "Work or worry in bed can teach it to stay alert.",
+      "A sofa or chair can host other activities."
+     ],
+     "q": "What do you do in bed besides sleeping?",
+     "c": "Tonight, do your evening reading on a chair, then move to bed."
+    },
+    "de": {
+     "t": "Das Bett ist zum Schlafen da",
+     "g": "Halte Arbeit, Lernen und langes Scrollen aus dem Bett fern.",
+     "p": [
+      "Dein Gehirn lernt, dass Bett Schlaf bedeutet, wenn du es so nutzt.",
+      "Arbeit oder Grübeln im Bett kann es lehren, wach zu bleiben.",
+      "Ein Sofa oder Stuhl kann andere Tätigkeiten beherbergen."
+     ],
+     "q": "Was machst du im Bett außer Schlafen?",
+     "c": "Lies heute Abend auf einem Stuhl und geh dann ins Bett."
+    },
+    "es": {
+     "t": "La cama es para dormir",
+     "g": "Mantén el trabajo, el estudio y el scroll largo fuera de la cama.",
+     "p": [
+      "Tu cerebro aprende que cama significa sueño si la usas así.",
+      "Trabajar o preocuparte en la cama puede enseñarle a estar alerta.",
+      "Un sofá o una silla pueden acoger otras actividades."
+     ],
+     "q": "¿Qué haces en la cama además de dormir?",
+     "c": "Esta noche lee en una silla y luego pasa a la cama."
+    },
+    "fr": {
+     "t": "Le lit sert à dormir",
+     "g": "Garde le travail, les études et le défilement sans fin hors du lit.",
+     "p": [
+      "Ton cerveau apprend que lit signifie sommeil quand tu l'utilises ainsi.",
+      "Travailler ou ruminer au lit peut lui apprendre à rester alerte.",
+      "Un canapé ou une chaise peut accueillir d'autres activités."
+     ],
+     "q": "Que fais-tu au lit à part dormir ?",
+     "c": "Ce soir, lis sur une chaise, puis passe au lit."
+    },
+    "it": {
+     "t": "Il letto è per dormire",
+     "g": "Tieni lavoro, studio e scorrimento infinito fuori dal letto.",
+     "p": [
+      "Il cervello impara che letto significa sonno se lo usi così.",
+      "Lavorare o rimuginare a letto può insegnargli a restare vigile.",
+      "Un divano o una sedia possono ospitare altre attività."
+     ],
+     "q": "Cosa fai a letto oltre a dormire?",
+     "c": "Stasera leggi su una sedia, poi passa a letto."
+    },
+    "pt": {
+     "t": "A cama é para dormir",
+     "g": "Mantém o trabalho, o estudo e o deslizar sem fim fora da cama.",
+     "p": [
+      "O teu cérebro aprende que cama significa sono se a usares assim.",
+      "Trabalhar ou preocupar-te na cama pode ensinar-lhe a ficar alerta.",
+      "Um sofá ou uma cadeira pode acolher outras atividades."
+     ],
+     "q": "O que fazes na cama além de dormir?",
+     "c": "Esta noite, lê numa cadeira e depois passa para a cama."
+    },
+    "pt_BR": {
+     "t": "A cama é para dormir",
+     "g": "Mantenha o trabalho, o estudo e o rolar sem fim fora da cama.",
+     "p": [
+      "O seu cérebro aprende que cama significa sono se você a usar assim.",
+      "Trabalhar ou se preocupar na cama pode ensiná-lo a ficar alerta.",
+      "Um sofá ou uma cadeira pode acolher outras atividades."
+     ],
+     "q": "O que você faz na cama além de dormir?",
+     "c": "Hoje à noite, leia numa cadeira e depois vá para a cama."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Making your bed in the morning",
+     "g": "See how a small morning ritual makes the evening bedroom inviting.",
+     "p": [
+      "Smoothing the covers takes about a minute.",
+      "A neat bed welcomes you back in the evening.",
+      "Small wins in the morning can set a positive tone."
+     ],
+     "q": "Do you make your bed? Does it change how the room feels?",
+     "c": "Tomorrow morning, make your bed and enjoy the evening result."
+    },
+    "de": {
+     "t": "Morgens das Bett machen",
+     "g": "Sieh, wie ein kleines Morgenritual das Schlafzimmer am Abend einladend macht.",
+     "p": [
+      "Die Decken glattzustreichen dauert etwa eine Minute.",
+      "Ein ordentliches Bett empfängt dich abends freundlich.",
+      "Kleine Erfolge am Morgen können einen positiven Ton setzen."
+     ],
+     "q": "Machst du dein Bett? Verändert es, wie sich der Raum anfühlt?",
+     "c": "Mach morgen früh dein Bett und genieß abends das Ergebnis."
+    },
+    "es": {
+     "t": "Hacer la cama por la mañana",
+     "g": "Mira cómo un pequeño ritual matutino hace el dormitorio más acogedor por la noche.",
+     "p": [
+      "Alisar las mantas lleva alrededor de un minuto.",
+      "Una cama arreglada te recibe bien por la noche.",
+      "Los pequeños logros de la mañana pueden marcar un tono positivo."
+     ],
+     "q": "¿Haces tu cama? ¿Cambia cómo se siente la habitación?",
+     "c": "Mañana por la mañana haz la cama y disfruta del resultado por la noche."
+    },
+    "fr": {
+     "t": "Faire son lit le matin",
+     "g": "Vois comment un petit rituel du matin rend la chambre accueillante le soir.",
+     "p": [
+      "Lisser les couvertures prend environ une minute.",
+      "Un lit bien fait t'accueille agréablement le soir.",
+      "Les petites victoires du matin peuvent donner un ton positif."
+     ],
+     "q": "Fais-tu ton lit ? Cela change-t-il l'impression de la pièce ?",
+     "c": "Demain matin, fais ton lit et profite du résultat le soir."
+    },
+    "it": {
+     "t": "Rifare il letto al mattino",
+     "g": "Scopri come un piccolo rito mattutino rende la camera accogliente la sera.",
+     "p": [
+      "Sistemare le coperte richiede circa un minuto.",
+      "Un letto in ordine ti accoglie bene la sera.",
+      "Le piccole vittorie del mattino possono dare un tono positivo."
+     ],
+     "q": "Rifai il letto? Cambia come ti sembra la stanza?",
+     "c": "Domani mattina rifai il letto e goditi il risultato la sera."
+    },
+    "pt": {
+     "t": "Fazer a cama de manhã",
+     "g": "Vê como um pequeno ritual matinal torna o quarto acolhedor à noite.",
+     "p": [
+      "Alisar as mantas demora cerca de um minuto.",
+      "Uma cama arrumada recebe-te bem ao fim do dia.",
+      "Pequenas vitórias de manhã podem dar um tom positivo."
+     ],
+     "q": "Fazes a cama? Isso muda como o quarto te parece?",
+     "c": "Amanhã de manhã, faz a cama e aproveita o resultado à noite."
+    },
+    "pt_BR": {
+     "t": "Arrumar a cama de manhã",
+     "g": "Veja como um pequeno ritual matinal deixa o quarto acolhedor à noite.",
+     "p": [
+      "Alisar as cobertas leva cerca de um minuto.",
+      "Uma cama arrumada recebe você bem no fim do dia.",
+      "Pequenas vitórias de manhã podem dar um tom positivo."
+     ],
+     "q": "Você arruma a cama? Isso muda como o quarto parece?",
+     "c": "Amanhã cedo, arrume a cama e aproveite o resultado à noite."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Changing seasons in the bedroom",
+     "g": "Adjust bedding and airflow for hot summers and cold winters.",
+     "p": [
+      "Lighter covers and airflow suit warm months.",
+      "Extra layers and a draught check suit cold ones.",
+      "Swap bedding when seasons turn, not only when you are uncomfortable."
+     ],
+     "q": "How does your sleep change across the seasons?",
+     "c": "Tonight, adjust one layer to match the season."
+    },
+    "de": {
+     "t": "Jahreszeiten im Schlafzimmer",
+     "g": "Passe Bettzeug und Luftzug an heiße Sommer und kalte Winter an.",
+     "p": [
+      "Leichtere Decken und Luftzug passen zu warmen Monaten.",
+      "Zusätzliche Schichten und ein Zugluft-Check passen zu kalten.",
+      "Tausche Bettzeug, wenn die Jahreszeit wechselt, nicht erst bei Unbehagen."
+     ],
+     "q": "Wie verändert sich dein Schlaf im Lauf der Jahreszeiten?",
+     "c": "Passe heute Abend eine Schicht an die Jahreszeit an."
+    },
+    "es": {
+     "t": "Estaciones en el dormitorio",
+     "g": "Ajusta la ropa de cama y la ventilación para veranos cálidos e inviernos fríos.",
+     "p": [
+      "Mantas ligeras y ventilación van bien en los meses cálidos.",
+      "Capas extra y revisar las corrientes van bien en los fríos.",
+      "Cambia la ropa de cama cuando cambie la estación, no solo cuando estés incómodo."
+     ],
+     "q": "¿Cómo cambia tu sueño a lo largo de las estaciones?",
+     "c": "Esta noche ajusta una capa según la estación."
+    },
+    "fr": {
+     "t": "Les saisons dans la chambre",
+     "g": "Adapte la literie et l'aération aux étés chauds et aux hivers froids.",
+     "p": [
+      "Couvertures légères et aération conviennent aux mois chauds.",
+      "Couches en plus et contrôle des courants d'air conviennent aux mois froids.",
+      "Change la literie au changement de saison, pas seulement quand tu es mal."
+     ],
+     "q": "Comment ton sommeil change-t-il au fil des saisons ?",
+     "c": "Ce soir, ajuste une couche selon la saison."
+    },
+    "it": {
+     "t": "Le stagioni in camera",
+     "g": "Adatta biancheria e ricambio d'aria a estati calde e inverni freddi.",
+     "p": [
+      "Coperte leggere e aria che circola vanno bene nei mesi caldi.",
+      "Strati extra e controllo degli spifferi vanno bene in quelli freddi.",
+      "Cambia la biancheria al cambio di stagione, non solo quando stai scomodo."
+     ],
+     "q": "Come cambia il tuo sonno nel corso delle stagioni?",
+     "c": "Stasera regola uno strato in base alla stagione."
+    },
+    "pt": {
+     "t": "As estações no quarto",
+     "g": "Ajusta a roupa de cama e a ventilação a verões quentes e invernos frios.",
+     "p": [
+      "Cobertores leves e ar a circular servem nos meses quentes.",
+      "Camadas extra e verificar correntes de ar servem nos frios.",
+      "Troca a roupa de cama quando muda a estação, não só quando estás desconfortável."
+     ],
+     "q": "Como muda o teu sono ao longo das estações?",
+     "c": "Esta noite, ajusta uma camada à estação."
+    },
+    "pt_BR": {
+     "t": "As estações no quarto",
+     "g": "Ajuste a roupa de cama e a ventilação a verões quentes e invernos frios.",
+     "p": [
+      "Cobertores leves e ar circulando servem nos meses quentes.",
+      "Camadas extras e checar frestas servem nos frios.",
+      "Troque a roupa de cama quando muda a estação, não só quando está desconfortável."
+     ],
+     "q": "Como o seu sono muda ao longo das estações?",
+     "c": "Hoje à noite, ajuste uma camada à estação."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sleeping in hot weather",
+     "g": "Learn practical ways to stay cool on warm nights.",
+     "p": [
+      "Keep curtains closed by day to hold the heat out.",
+      "Use light cotton sheets and a fan or cross-breeze at night.",
+      "A lukewarm shower before bed can help you feel cooler afterwards."
+     ],
+     "q": "What helps you cope with hot nights?",
+     "c": "Tonight, try a lukewarm shower and light bedding."
+    },
+    "de": {
+     "t": "Schlafen bei Hitze",
+     "g": "Lerne praktische Wege, in warmen Nächten kühl zu bleiben.",
+     "p": [
+      "Halte die Vorhänge tagsüber geschlossen, um Hitze draußen zu lassen.",
+      "Nutze nachts leichte Baumwolllaken und Ventilator oder Durchzug.",
+      "Eine lauwarme Dusche vor dem Schlafen kann danach kühler wirken."
+     ],
+     "q": "Was hilft dir bei heißen Nächten?",
+     "c": "Probiere heute Abend eine lauwarme Dusche und leichte Bettwäsche."
+    },
+    "es": {
+     "t": "Dormir con calor",
+     "g": "Aprende formas prácticas de mantenerte fresco en noches cálidas.",
+     "p": [
+      "Mantén las cortinas cerradas de día para que no entre el calor.",
+      "Usa sábanas ligeras de algodón y un ventilador o corriente de aire por la noche.",
+      "Una ducha tibia antes de dormir puede hacerte sentir más fresco después."
+     ],
+     "q": "¿Qué te ayuda con las noches calurosas?",
+     "c": "Esta noche prueba una ducha tibia y ropa de cama ligera."
+    },
+    "fr": {
+     "t": "Dormir par temps chaud",
+     "g": "Apprends des moyens pratiques de rester au frais les nuits chaudes.",
+     "p": [
+      "Garde les rideaux fermés le jour pour tenir la chaleur dehors.",
+      "Utilise des draps légers en coton et un ventilateur ou un courant d'air la nuit.",
+      "Une douche tiède avant de dormir peut aider à se sentir plus frais ensuite."
+     ],
+     "q": "Qu'est-ce qui t'aide par les nuits chaudes ?",
+     "c": "Ce soir, essaie une douche tiède et une literie légère."
+    },
+    "it": {
+     "t": "Dormire con il caldo",
+     "g": "Impara modi pratici per restare freschi nelle notti calde.",
+     "p": [
+      "Tieni le tende chiuse di giorno per lasciare fuori il caldo.",
+      "Usa lenzuola leggere di cotone e un ventilatore o una corrente d'aria di notte.",
+      "Una doccia tiepida prima di dormire può farti sentire più fresco dopo."
+     ],
+     "q": "Cosa ti aiuta nelle notti calde?",
+     "c": "Stasera prova una doccia tiepida e biancheria leggera."
+    },
+    "pt": {
+     "t": "Dormir com calor",
+     "g": "Aprende formas práticas de manter-te fresco nas noites quentes.",
+     "p": [
+      "Mantém as cortinas fechadas de dia para o calor não entrar.",
+      "Usa lençóis leves de algodão e uma ventoinha ou corrente de ar à noite.",
+      "Um duche morno antes de dormir pode ajudar-te a sentir mais fresco depois."
+     ],
+     "q": "O que te ajuda nas noites quentes?",
+     "c": "Esta noite, experimenta um duche morno e roupa de cama leve."
+    },
+    "pt_BR": {
+     "t": "Dormir no calor",
+     "g": "Aprenda formas práticas de ficar fresco nas noites quentes.",
+     "p": [
+      "Mantenha as cortinas fechadas de dia para o calor não entrar.",
+      "Use lençóis leves de algodão e um ventilador ou corrente de ar à noite.",
+      "Um banho morno antes de dormir pode ajudar você a se sentir mais fresco depois."
+     ],
+     "q": "O que ajuda você nas noites quentes?",
+     "c": "Hoje à noite, experimente um banho morno e roupa de cama leve."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sleeping in cold weather",
+     "g": "Stay cosy without overheating when it is cold outside.",
+     "p": [
+      "Layers beat one very heavy cover, since you can adjust them.",
+      "Warm socks can help; take them off if you get too warm.",
+      "Warm the room a little before bed rather than overheating it."
+     ],
+     "q": "How do you stay cosy on cold nights?",
+     "c": "Tonight, add one removable layer, like warm socks."
+    },
+    "de": {
+     "t": "Schlafen bei Kälte",
+     "g": "Bleib gemütlich, ohne zu überhitzen, wenn es draußen kalt ist.",
+     "p": [
+      "Mehrere Schichten schlagen eine sehr schwere Decke, denn du kannst sie anpassen.",
+      "Warme Socken können helfen; zieh sie aus, wenn dir zu warm wird.",
+      "Wärme das Zimmer vor dem Schlafen etwas, statt es zu überheizen."
+     ],
+     "q": "Wie bleibst du in kalten Nächten gemütlich?",
+     "c": "Füge heute Abend eine abnehmbare Schicht hinzu, etwa warme Socken."
+    },
+    "es": {
+     "t": "Dormir con frío",
+     "g": "Mantente acogedor sin sobrecalentarte cuando hace frío fuera.",
+     "p": [
+      "Las capas superan a una manta muy pesada porque puedes ajustarlas.",
+      "Calcetines calientes pueden ayudar; quítatelos si te da calor.",
+      "Calienta un poco la habitación antes de acostarte en lugar de sobrecalentarla."
+     ],
+     "q": "¿Cómo te mantienes a gusto en noches frías?",
+     "c": "Esta noche añade una capa que puedas quitar, como calcetines calientes."
+    },
+    "fr": {
+     "t": "Dormir par temps froid",
+     "g": "Reste au chaud sans surchauffer quand il fait froid dehors.",
+     "p": [
+      "Plusieurs couches valent mieux qu'une seule couverture très lourde, car tu peux les ajuster.",
+      "Des chaussettes chaudes peuvent aider ; enlève-les si tu as trop chaud.",
+      "Réchauffe un peu la pièce avant de dormir plutôt que de la surchauffer."
+     ],
+     "q": "Comment restes-tu bien au chaud les nuits froides ?",
+     "c": "Ce soir, ajoute une couche amovible, comme des chaussettes chaudes."
+    },
+    "it": {
+     "t": "Dormire con il freddo",
+     "g": "Resta al calduccio senza surriscaldarti quando fuori fa freddo.",
+     "p": [
+      "Più strati battono una sola coperta molto pesante, perché puoi regolarli.",
+      "Calzini caldi possono aiutare; toglili se hai troppo caldo.",
+      "Scalda un po' la stanza prima di dormire invece di surriscaldarla."
+     ],
+     "q": "Come resti al caldo nelle notti fredde?",
+     "c": "Stasera aggiungi uno strato rimovibile, come calzini caldi."
+    },
+    "pt": {
+     "t": "Dormir com frio",
+     "g": "Mantém-te aconchegado sem sobreaquecer quando está frio lá fora.",
+     "p": [
+      "Várias camadas valem mais do que um só cobertor muito pesado, pois podes ajustá-las.",
+      "Meias quentes podem ajudar; tira-as se ficares com demasiado calor.",
+      "Aquece um pouco o quarto antes de dormir em vez de o sobreaquecer."
+     ],
+     "q": "Como te manténs aconchegado nas noites frias?",
+     "c": "Esta noite, junta uma camada removível, como meias quentes."
+    },
+    "pt_BR": {
+     "t": "Dormir no frio",
+     "g": "Fique aconchegado sem superaquecer quando está frio lá fora.",
+     "p": [
+      "Várias camadas valem mais que um só cobertor muito pesado, pois você pode ajustá-las.",
+      "Meias quentes podem ajudar; tire-as se sentir calor demais.",
+      "Aqueça um pouco o quarto antes de dormir em vez de superaquecer."
+     ],
+     "q": "Como você se mantém aconchegado nas noites frias?",
+     "c": "Hoje à noite, acrescente uma camada removível, como meias quentes."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your bedroom audit",
+     "g": "Walk through your room checking light, noise, temperature and comfort.",
+     "p": [
+      "Stand in the doorway and look with fresh eyes.",
+      "Check four things: light, sound, temperature, comfort.",
+      "Note what is already great, then pick what to change."
+     ],
+     "q": "What is the best thing about your bedroom for sleeping?",
+     "c": "Tonight, do a two-minute lights-off audit and jot down your findings."
+    },
+    "de": {
+     "t": "Dein Schlafzimmer-Check",
+     "g": "Geh durch dein Zimmer und prüfe Licht, Lärm, Temperatur und Komfort.",
+     "p": [
+      "Stell dich in die Tür und schau mit frischem Blick.",
+      "Prüfe vier Dinge: Licht, Geräusch, Temperatur, Komfort.",
+      "Notiere, was schon toll ist, und wähle dann, was du ändern willst."
+     ],
+     "q": "Was ist das Beste an deinem Schlafzimmer zum Schlafen?",
+     "c": "Mach heute Abend einen Zwei-Minuten-Check bei ausgeschaltetem Licht und notiere deine Funde."
+    },
+    "es": {
+     "t": "Auditoría de tu dormitorio",
+     "g": "Recorre tu habitación revisando luz, ruido, temperatura y comodidad.",
+     "p": [
+      "Párate en la puerta y mira con ojos nuevos.",
+      "Revisa cuatro cosas: luz, sonido, temperatura, comodidad.",
+      "Anota lo que ya está genial y elige qué cambiar."
+     ],
+     "q": "¿Qué es lo mejor de tu dormitorio para dormir?",
+     "c": "Esta noche haz una revisión de dos minutos con la luz apagada y anota lo que encuentres."
+    },
+    "fr": {
+     "t": "L'audit de ta chambre",
+     "g": "Parcours ta pièce en vérifiant lumière, bruit, température et confort.",
+     "p": [
+      "Place-toi à la porte et regarde avec un œil neuf.",
+      "Vérifie quatre choses : lumière, son, température, confort.",
+      "Note ce qui est déjà super, puis choisis quoi changer."
+     ],
+     "q": "Quel est le meilleur point de ta chambre pour dormir ?",
+     "c": "Ce soir, fais un audit de deux minutes lumière éteinte et note tes constats."
+    },
+    "it": {
+     "t": "L'audit della tua camera",
+     "g": "Percorri la stanza controllando luce, rumore, temperatura e comfort.",
+     "p": [
+      "Fermati sulla porta e guarda con occhi nuovi.",
+      "Controlla quattro cose: luce, suono, temperatura, comfort.",
+      "Annota ciò che è già ottimo, poi scegli cosa cambiare."
+     ],
+     "q": "Qual è la cosa migliore della tua camera per dormire?",
+     "c": "Stasera fai un controllo di due minuti a luce spenta e annota cosa trovi."
+    },
+    "pt": {
+     "t": "A auditoria ao teu quarto",
+     "g": "Percorre o quarto a verificar luz, ruído, temperatura e conforto.",
+     "p": [
+      "Pára à porta e olha com olhos novos.",
+      "Verifica quatro coisas: luz, som, temperatura, conforto.",
+      "Anota o que já está ótimo e escolhe o que mudar."
+     ],
+     "q": "Qual é a melhor coisa do teu quarto para dormir?",
+     "c": "Esta noite, faz uma verificação de dois minutos com a luz apagada e anota o que encontrares."
+    },
+    "pt_BR": {
+     "t": "A auditoria do seu quarto",
+     "g": "Percorra o quarto verificando luz, ruído, temperatura e conforto.",
+     "p": [
+      "Pare na porta e olhe com olhos novos.",
+      "Verifique quatro coisas: luz, som, temperatura, conforto.",
+      "Anote o que já está ótimo e escolha o que mudar."
+     ],
+     "q": "Qual é a melhor coisa do seu quarto para dormir?",
+     "c": "Hoje à noite, faça uma verificação de dois minutos com a luz apagada e anote o que encontrar."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "One upgrade this week",
+     "g": "Pick the single bedroom change that could help you most.",
+     "p": [
+      "Choose from your audit: darker, quieter, cooler or tidier.",
+      "One change done beats five planned.",
+      "Give it a week before judging the result."
+     ],
+     "q": "Which one upgrade will you pick, and why?",
+     "c": "Tonight, start your chosen upgrade and set a reminder to review it."
+    },
+    "de": {
+     "t": "Ein Upgrade diese Woche",
+     "g": "Wähle die eine Schlafzimmer-Änderung, die dir am meisten helfen könnte.",
+     "p": [
+      "Wähle aus deinem Check: dunkler, leiser, kühler oder ordentlicher.",
+      "Eine umgesetzte Änderung schlägt fünf geplante.",
+      "Gib ihr eine Woche, bevor du das Ergebnis beurteilst."
+     ],
+     "q": "Welches eine Upgrade wählst du, und warum?",
+     "c": "Starte heute Abend dein gewähltes Upgrade und stell dir eine Erinnerung zur Auswertung."
+    },
+    "es": {
+     "t": "Una mejora esta semana",
+     "g": "Elige el único cambio de dormitorio que más podría ayudarte.",
+     "p": [
+      "Elige según tu revisión: más oscuro, más silencioso, más fresco o más ordenado.",
+      "Un cambio hecho vale más que cinco planeados.",
+      "Dale una semana antes de juzgar el resultado."
+     ],
+     "q": "¿Qué mejora elegirás y por qué?",
+     "c": "Esta noche empieza tu mejora elegida y pon un recordatorio para revisarla."
+    },
+    "fr": {
+     "t": "Une amélioration cette semaine",
+     "g": "Choisis le seul changement de chambre qui pourrait le plus t'aider.",
+     "p": [
+      "Choisis selon ton audit : plus sombre, plus calme, plus frais ou plus rangé.",
+      "Un changement fait vaut mieux que cinq prévus.",
+      "Laisse-lui une semaine avant de juger le résultat."
+     ],
+     "q": "Quelle amélioration choisiras-tu, et pourquoi ?",
+     "c": "Ce soir, lance l'amélioration choisie et mets un rappel pour la revoir."
+    },
+    "it": {
+     "t": "Un miglioramento questa settimana",
+     "g": "Scegli il singolo cambiamento in camera che potrebbe aiutarti di più.",
+     "p": [
+      "Scegli dal tuo audit: più buio, più silenzio, più fresco o più ordine.",
+      "Un cambiamento fatto vale più di cinque pianificati.",
+      "Dagli una settimana prima di giudicare il risultato."
+     ],
+     "q": "Quale miglioramento sceglierai e perché?",
+     "c": "Stasera avvia il miglioramento scelto e metti un promemoria per rivederlo."
+    },
+    "pt": {
+     "t": "Uma melhoria esta semana",
+     "g": "Escolhe a única mudança no quarto que mais te poderia ajudar.",
+     "p": [
+      "Escolhe a partir da auditoria: mais escuro, mais silencioso, mais fresco ou mais arrumado.",
+      "Uma mudança feita vale mais do que cinco planeadas.",
+      "Dá-lhe uma semana antes de julgares o resultado."
+     ],
+     "q": "Que melhoria vais escolher e porquê?",
+     "c": "Esta noite, começa a melhoria escolhida e define um lembrete para a rever."
+    },
+    "pt_BR": {
+     "t": "Uma melhoria esta semana",
+     "g": "Escolha a única mudança no quarto que mais poderia ajudar você.",
+     "p": [
+      "Escolha a partir da auditoria: mais escuro, mais silencioso, mais fresco ou mais arrumado.",
+      "Uma mudança feita vale mais que cinco planejadas.",
+      "Dê uma semana antes de julgar o resultado."
+     ],
+     "q": "Que melhoria você vai escolher e por quê?",
+     "c": "Hoje à noite, comece a melhoria escolhida e programe um lembrete para revisá-la."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Month two review",
+     "g": "Recap the sleep-friendly bedroom and the change you made.",
+     "p": [
+      "Dark, quiet, cool and comfortable are the four pillars.",
+      "Screens and clutter out, calm cues in.",
+      "One small upgrade at a time keeps it doable."
+     ],
+     "q": "Which bedroom change made the biggest difference?",
+     "c": "Tonight, enjoy your bedroom with one calm minute of slow breathing."
+    },
+    "de": {
+     "t": "Rückblick auf Monat zwei",
+     "g": "Fasse das schlaffreundliche Schlafzimmer und deine Änderung zusammen.",
+     "p": [
+      "Dunkel, leise, kühl und bequem sind die vier Säulen.",
+      "Bildschirme und Unordnung raus, Ruhe-Signale rein.",
+      "Ein kleines Upgrade nach dem anderen bleibt machbar."
+     ],
+     "q": "Welche Schlafzimmer-Änderung hat den größten Unterschied gemacht?",
+     "c": "Genieß heute Abend dein Schlafzimmer mit einer ruhigen Minute langsamen Atmens."
+    },
+    "es": {
+     "t": "Repaso del segundo mes",
+     "g": "Repasa el dormitorio amigo del sueño y el cambio que hiciste.",
+     "p": [
+      "Oscuro, silencioso, fresco y cómodo son los cuatro pilares.",
+      "Fuera pantallas y desorden, dentro señales de calma.",
+      "Una pequeña mejora cada vez lo mantiene factible."
+     ],
+     "q": "¿Qué cambio del dormitorio marcó más diferencia?",
+     "c": "Esta noche disfruta tu dormitorio con un minuto tranquilo de respiración lenta."
+    },
+    "fr": {
+     "t": "Bilan du deuxième mois",
+     "g": "Fais le point sur la chambre propice au sommeil et le changement que tu as fait.",
+     "p": [
+      "Sombre, calme, frais et confortable sont les quatre piliers.",
+      "Écrans et désordre dehors, signaux de calme dedans.",
+      "Une petite amélioration à la fois reste faisable."
+     ],
+     "q": "Quel changement de chambre a fait la plus grande différence ?",
+     "c": "Ce soir, savoure ta chambre avec une minute calme de respiration lente."
+    },
+    "it": {
+     "t": "Ripasso del secondo mese",
+     "g": "Riassumi la camera amica del sonno e il cambiamento che hai fatto.",
+     "p": [
+      "Buia, silenziosa, fresca e comoda sono i quattro pilastri.",
+      "Fuori schermi e disordine, dentro segnali di calma.",
+      "Un piccolo miglioramento alla volta resta fattibile."
+     ],
+     "q": "Quale cambiamento in camera ha fatto la differenza maggiore?",
+     "c": "Stasera goditi la camera con un minuto calmo di respiro lento."
+    },
+    "pt": {
+     "t": "Revisão do segundo mês",
+     "g": "Recorda o quarto amigo do sono e a mudança que fizeste.",
+     "p": [
+      "Escuro, silencioso, fresco e confortável são os quatro pilares.",
+      "Ecrãs e desarrumação fora, sinais de calma dentro.",
+      "Uma pequena melhoria de cada vez mantém tudo possível."
+     ],
+     "q": "Que mudança no quarto fez maior diferença?",
+     "c": "Esta noite, desfruta do teu quarto com um minuto calmo de respiração lenta."
+    },
+    "pt_BR": {
+     "t": "Revisão do segundo mês",
+     "g": "Recorde o quarto amigo do sono e a mudança que você fez.",
+     "p": [
+      "Escuro, silencioso, fresco e confortável são os quatro pilares.",
+      "Telas e bagunça fora, sinais de calma dentro.",
+      "Uma pequena melhoria de cada vez mantém tudo possível."
+     ],
+     "q": "Qual mudança no quarto fez a maior diferença?",
+     "c": "Hoje à noite, aproveite o seu quarto com um minuto calmo de respiração lenta."
+    }
+   }
+  }
+ ]
+}

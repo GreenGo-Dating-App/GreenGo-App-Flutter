@@ -1,0 +1,835 @@
+{
+ "topic": "home_organisation",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kitchen zones",
+     "g": "Divide the kitchen into cooking, prep, cleaning and storage zones.",
+     "p": [
+      "Keep pans and oils near the hob, knives and boards near the prep area.",
+      "Put cleaning supplies near the sink and dishes near where you unload.",
+      "Follow how you actually move when cooking, not a standard plan."
+     ],
+     "q": "Where do you feel you walk the most while cooking?",
+     "c": "Move one item to the zone where you actually use it."
+    },
+    "de": {
+     "t": "Küchenzonen",
+     "g": "Teile die Küche in Koch-, Vorbereitungs-, Spül- und Lagerzonen.",
+     "p": [
+      "Töpfe und Öle gehören an den Herd, Messer und Brettchen an die Arbeitsfläche.",
+      "Putzmittel stehen am Spülbecken, Geschirr dort, wo du es ausräumst.",
+      "Orientiere dich daran, wie du dich beim Kochen bewegst, nicht an einem Standardplan."
+     ],
+     "q": "Wo läufst du beim Kochen deiner Meinung nach am meisten?",
+     "c": "Stelle einen Gegenstand in die Zone, in der du ihn wirklich nutzt."
+    },
+    "es": {
+     "t": "Zonas de la cocina",
+     "g": "Divide la cocina en zonas de cocinar, preparar, limpiar y guardar.",
+     "p": [
+      "Sartenes y aceites junto a los fuegos, cuchillos y tablas junto a la zona de preparación.",
+      "Productos de limpieza junto al fregadero y la vajilla donde la guardas.",
+      "Sigue cómo te mueves de verdad al cocinar, no un plano estándar."
+     ],
+     "q": "¿Dónde sientes que más caminas mientras cocinas?",
+     "c": "Mueve un objeto a la zona donde realmente lo usas."
+    },
+    "fr": {
+     "t": "Les zones de la cuisine",
+     "g": "Divise la cuisine en zones cuisson, préparation, nettoyage et rangement.",
+     "p": [
+      "Poêles et huiles près des feux, couteaux et planches près du plan de travail.",
+      "Produits d'entretien près de l'évier et vaisselle là où tu la ranges.",
+      "Suis ta façon de bouger en cuisinant, pas un plan standard."
+     ],
+     "q": "Où as-tu l'impression de marcher le plus en cuisinant ?",
+     "c": "Déplace un objet vers la zone où tu t'en sers vraiment."
+    },
+    "it": {
+     "t": "Le zone della cucina",
+     "g": "Dividi la cucina in zone per cuocere, preparare, pulire e riporre.",
+     "p": [
+      "Padelle e oli vicino ai fornelli, coltelli e taglieri vicino al piano di preparazione.",
+      "Prodotti per pulire vicino al lavello e piatti dove li togli dalla lavastoviglie.",
+      "Segui come ti muovi davvero quando cucini, non un piano standard."
+     ],
+     "q": "Dove senti di camminare di più mentre cucini?",
+     "c": "Sposta un oggetto nella zona in cui lo usi davvero."
+    },
+    "pt": {
+     "t": "Zonas da cozinha",
+     "g": "Divide a cozinha em zonas de cozinhar, preparar, limpar e guardar.",
+     "p": [
+      "Panelas e azeites junto ao fogão, facas e tábuas junto à zona de preparação.",
+      "Produtos de limpeza junto ao lava-loiça e a loiça onde a arrumas.",
+      "Segue a forma como te moves ao cozinhar, não um plano padrão."
+     ],
+     "q": "Onde sentes que mais andas enquanto cozinhas?",
+     "c": "Muda um objeto para a zona onde realmente o usas."
+    },
+    "pt_BR": {
+     "t": "Zonas da cozinha",
+     "g": "Divida a cozinha em zonas de cozinhar, preparar, limpar e guardar.",
+     "p": [
+      "Panelas e azeites perto do fogão, facas e tábuas perto da área de preparo.",
+      "Produtos de limpeza perto da pia e a louça onde você guarda.",
+      "Siga como você se move de verdade ao cozinhar, não um plano padrão."
+     ],
+     "q": "Onde você sente que mais anda enquanto cozinha?",
+     "c": "Mude um objeto para a zona onde você realmente o usa."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Decluttering kitchen utensils",
+     "g": "Keep the tools you really use and let go of duplicates and single-use gadgets.",
+     "p": [
+      "Take all utensils out and put aside the ones you used this month.",
+      "Duplicates and gadgets that do one rare job can often go.",
+      "Keep a few good tools rather than a full drawer of maybes."
+     ],
+     "q": "Which kitchen tool do you reach for every day?",
+     "c": "Remove at least two utensils from your drawer that you never use."
+    },
+    "de": {
+     "t": "Küchenutensilien ausmisten",
+     "g": "Behalte, was du wirklich nutzt, und trenne dich von Doppelten und Einzweckgeräten.",
+     "p": [
+      "Nimm alle Utensilien heraus und lege beiseite, was du diesen Monat benutzt hast.",
+      "Doppeltes und Geräte für eine seltene Aufgabe können oft gehen.",
+      "Lieber wenige gute Werkzeuge als eine Schublade voller Vielleichts."
+     ],
+     "q": "Welches Küchenwerkzeug greifst du jeden Tag?",
+     "c": "Nimm mindestens zwei Utensilien aus der Schublade, die du nie nutzt."
+    },
+    "es": {
+     "t": "Despejar los utensilios de cocina",
+     "g": "Quédate con lo que de verdad usas y suelta duplicados y aparatos de un solo uso.",
+     "p": [
+      "Saca todos los utensilios y aparta los que usaste este mes.",
+      "Los duplicados y los aparatos de una tarea poco frecuente suelen poder irse.",
+      "Mejor pocas herramientas buenas que un cajón lleno de quizás."
+     ],
+     "q": "¿Qué utensilio de cocina usas cada día?",
+     "c": "Retira al menos dos utensilios del cajón que nunca uses."
+    },
+    "fr": {
+     "t": "Désencombrer les ustensiles",
+     "g": "Garde les outils que tu utilises vraiment et laisse partir doublons et gadgets à usage unique.",
+     "p": [
+      "Sors tous les ustensiles et mets de côté ceux utilisés ce mois-ci.",
+      "Les doublons et les gadgets pour une tâche rare peuvent souvent partir.",
+      "Mieux vaut quelques bons outils qu'un tiroir plein de peut-être."
+     ],
+     "q": "Quel ustensile utilises-tu chaque jour ?",
+     "c": "Retire au moins deux ustensiles du tiroir que tu n'utilises jamais."
+    },
+    "it": {
+     "t": "Sfoltire gli utensili da cucina",
+     "g": "Tieni gli strumenti che usi davvero e lascia andare doppioni e gadget monouso.",
+     "p": [
+      "Tira fuori tutti gli utensili e metti da parte quelli usati questo mese.",
+      "Doppioni e gadget per un compito raro possono spesso andare.",
+      "Meglio pochi buoni strumenti che un cassetto pieno di forse."
+     ],
+     "q": "Quale utensile da cucina usi ogni giorno?",
+     "c": "Togli dal cassetto almeno due utensili che non usi mai."
+    },
+    "pt": {
+     "t": "Despejar os utensílios de cozinha",
+     "g": "Fica com o que realmente usas e larga duplicados e aparelhos de uso único.",
+     "p": [
+      "Tira todos os utensílios e põe de lado os que usaste este mês.",
+      "Duplicados e aparelhos para uma tarefa rara costumam poder sair.",
+      "Melhor poucos bons utensílios do que uma gaveta cheia de talvez."
+     ],
+     "q": "Que utensílio de cozinha usas todos os dias?",
+     "c": "Tira da gaveta pelo menos dois utensílios que nunca usas."
+    },
+    "pt_BR": {
+     "t": "Desapegando dos utensílios de cozinha",
+     "g": "Fique com o que você realmente usa e solte duplicados e aparelhos de uso único.",
+     "p": [
+      "Tire todos os utensílios e separe os que você usou neste mês.",
+      "Duplicados e aparelhos para uma tarefa rara costumam poder sair.",
+      "Melhor poucos bons utensílios do que uma gaveta cheia de talvez."
+     ],
+     "q": "Que utensílio de cozinha você usa todo dia?",
+     "c": "Tire da gaveta pelo menos dois utensílios que você nunca usa."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fridge organisation basics",
+     "g": "Learn which shelves suit which foods and why grouping saves food.",
+     "p": [
+      "Cooked food and leftovers go on upper shelves, raw meat and fish on the bottom shelf.",
+      "Dairy and vegetables suit the middle and drawers; drinks suit the door.",
+      "Group similar things in bins so you can see what you have."
+     ],
+     "q": "How often do you find forgotten food at the back of the fridge?",
+     "c": "Wipe one fridge shelf with a damp cloth and regroup its contents."
+    },
+    "de": {
+     "t": "Kühlschrank-Ordnung: die Basics",
+     "g": "Lerne, welche Fächer zu welchen Lebensmitteln passen und warum Gruppieren Essen rettet.",
+     "p": [
+      "Gekochtes und Reste kommen nach oben, rohes Fleisch und Fisch ins unterste Fach.",
+      "Milchprodukte und Gemüse passen in die Mitte und Schubladen; Getränke in die Tür.",
+      "Gruppiere Ähnliches in Boxen, damit du siehst, was du hast."
+     ],
+     "q": "Wie oft findest du vergessenes Essen hinten im Kühlschrank?",
+     "c": "Wische ein Kühlschrankfach feucht ab und ordne den Inhalt neu."
+    },
+    "es": {
+     "t": "Lo básico del orden en la nevera",
+     "g": "Aprende qué baldas van con qué alimentos y por qué agrupar evita desperdiciar.",
+     "p": [
+      "Lo cocinado y las sobras arriba; la carne y el pescado crudos, en la balda inferior.",
+      "Lácteos y verduras van en el medio y los cajones; las bebidas, en la puerta.",
+      "Agrupa lo similar en cestas para ver lo que tienes."
+     ],
+     "q": "¿Con qué frecuencia encuentras comida olvidada al fondo de la nevera?",
+     "c": "Limpia una balda de la nevera con un paño húmedo y reagrupa su contenido."
+    },
+    "fr": {
+     "t": "Les bases du frigo bien rangé",
+     "g": "Découvre quelles clayettes conviennent à quels aliments et pourquoi grouper évite le gaspillage.",
+     "p": [
+      "Les plats cuits et restes en haut, la viande et le poisson crus en bas.",
+      "Laitages et légumes au milieu et dans les bacs ; boissons dans la porte.",
+      "Regroupe les choses similaires dans des bacs pour voir ce que tu as."
+     ],
+     "q": "À quelle fréquence trouves-tu de la nourriture oubliée au fond du frigo ?",
+     "c": "Essuie une clayette avec un chiffon humide et regroupe son contenu."
+    },
+    "it": {
+     "t": "Le basi del frigo ordinato",
+     "g": "Scopri quali ripiani vanno con quali cibi e perché raggruppare riduce gli sprechi.",
+     "p": [
+      "Cibi cotti e avanzi sui ripiani alti, carne e pesce crudi sul ripiano in basso.",
+      "Latticini e verdure al centro e nei cassetti; le bevande nello sportello.",
+      "Raggruppa le cose simili in cestini per vedere cosa hai."
+     ],
+     "q": "Quanto spesso trovi cibo dimenticato in fondo al frigorifero?",
+     "c": "Pulisci un ripiano del frigo con un panno umido e riordina il contenuto."
+    },
+    "pt": {
+     "t": "O básico do frigorífico organizado",
+     "g": "Aprende que prateleiras servem a que alimentos e porque agrupar evita desperdício.",
+     "p": [
+      "Cozinhados e sobras em cima; carne e peixe crus na prateleira de baixo.",
+      "Lacticínios e legumes ao meio e nas gavetas; bebidas na porta.",
+      "Agrupa o que é parecido em caixas para ver o que tens."
+     ],
+     "q": "Com que frequência encontras comida esquecida ao fundo do frigorífico?",
+     "c": "Limpa uma prateleira do frigorífico com um pano húmido e reagrupa o conteúdo."
+    },
+    "pt_BR": {
+     "t": "O básico da geladeira organizada",
+     "g": "Aprenda que prateleiras servem a que alimentos e por que agrupar evita desperdício.",
+     "p": [
+      "Alimentos cozidos e sobras em cima; carne e peixe crus na prateleira de baixo.",
+      "Laticínios e legumes no meio e nas gavetas; bebidas na porta.",
+      "Agrupe o que é parecido em caixinhas para ver o que você tem."
+     ],
+     "q": "Com que frequência você acha comida esquecida no fundo da geladeira?",
+     "c": "Limpe uma prateleira da geladeira com um pano úmido e reagrupe o conteúdo."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The pantry at a glance",
+     "g": "Group dry food by type so you see what you have and avoid duplicates.",
+     "p": [
+      "Put pasta, rice, tins, baking items and snacks in their own zones.",
+      "Place older items in front and new ones behind.",
+      "Decant open packets into clear jars or clips to keep food fresh."
+     ],
+     "q": "What do you often buy twice by accident?",
+     "c": "Group one pantry shelf by type and note what you already have."
+    },
+    "de": {
+     "t": "Der Vorratsschrank auf einen Blick",
+     "g": "Gruppiere Trockenwaren nach Art, damit du siehst, was du hast, und nichts doppelt kaufst.",
+     "p": [
+      "Nudeln, Reis, Dosen, Backzutaten und Snacks bekommen eigene Zonen.",
+      "Ältere Sachen nach vorn, neue nach hinten.",
+      "Angebrochene Packungen in Gläser oder mit Clips verschließen, damit alles frisch bleibt."
+     ],
+     "q": "Was kaufst du oft aus Versehen doppelt?",
+     "c": "Gruppiere ein Vorratsregal nach Art und notiere, was du schon hast."
+    },
+    "es": {
+     "t": "La despensa de un vistazo",
+     "g": "Agrupa los alimentos secos por tipo para ver lo que tienes y no duplicar compras.",
+     "p": [
+      "Pasta, arroz, latas, repostería y snacks, cada uno en su zona.",
+      "Pon lo más antiguo delante y lo nuevo detrás.",
+      "Pasa lo abierto a frascos transparentes o ciérralo con pinzas para mantenerlo fresco."
+     ],
+     "q": "¿Qué sueles comprar dos veces sin querer?",
+     "c": "Agrupa una balda de la despensa por tipo y anota lo que ya tienes."
+    },
+    "fr": {
+     "t": "Le garde-manger en un coup d'œil",
+     "g": "Groupe les aliments secs par type pour voir ce que tu as et éviter les doublons.",
+     "p": [
+      "Pâtes, riz, conserves, ingrédients de pâtisserie et encas ont chacun leur zone.",
+      "Mets les produits les plus anciens devant et les nouveaux derrière.",
+      "Transvase les paquets ouverts dans des bocaux ou ferme-les avec des pinces."
+     ],
+     "q": "Qu'achètes-tu souvent en double par erreur ?",
+     "c": "Groupe une étagère du garde-manger par type et note ce que tu as déjà."
+    },
+    "it": {
+     "t": "La dispensa a colpo d'occhio",
+     "g": "Raggruppa i cibi secchi per tipo per vedere cosa hai ed evitare doppioni.",
+     "p": [
+      "Pasta, riso, scatolette, ingredienti per dolci e snack, ciascuno nella sua zona.",
+      "Metti davanti ciò che è più vecchio e dietro il nuovo.",
+      "Travasa le confezioni aperte in barattoli trasparenti o chiudile con le mollette."
+     ],
+     "q": "Cosa compri spesso due volte per sbaglio?",
+     "c": "Raggruppa un ripiano della dispensa per tipo e annota cosa hai già."
+    },
+    "pt": {
+     "t": "A despensa num relance",
+     "g": "Agrupa os alimentos secos por tipo para ver o que tens e evitar duplicados.",
+     "p": [
+      "Massa, arroz, conservas, ingredientes de pastelaria e snacks, cada um na sua zona.",
+      "Põe à frente o mais antigo e atrás o novo.",
+      "Passa o que está aberto para frascos transparentes ou fecha com molas."
+     ],
+     "q": "O que costumas comprar duas vezes sem querer?",
+     "c": "Agrupa uma prateleira da despensa por tipo e anota o que já tens."
+    },
+    "pt_BR": {
+     "t": "A despensa num relance",
+     "g": "Agrupe os alimentos secos por tipo para ver o que tem e evitar duplicados.",
+     "p": [
+      "Macarrão, arroz, enlatados, itens de confeitaria e lanches, cada um na sua zona.",
+      "Coloque na frente o mais antigo e atrás o novo.",
+      "Passe o que está aberto para potes transparentes ou feche com prendedores."
+     ],
+     "q": "O que você costuma comprar duas vezes sem querer?",
+     "c": "Agrupe uma prateleira da despensa por tipo e anote o que você já tem."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Spices you can find",
+     "g": "Store spices so every one is easy to reach and read.",
+     "p": [
+      "Racks, drawer inserts or magnetic tins all work; choose what fits your space.",
+      "Order them alphabetically or by cuisine, whichever you will remember.",
+      "Keep them away from heat and direct sun so they stay flavourful."
+     ],
+     "q": "Which spices do you reach for most often?",
+     "c": "Move your three most used spices to the front or the easiest spot."
+    },
+    "de": {
+     "t": "Gewürze, die man findet",
+     "g": "Lagere Gewürze so, dass jedes leicht erreichbar und lesbar ist.",
+     "p": [
+      "Regale, Schubladeneinsätze oder Magnetdosen funktionieren; wähle, was in deinen Raum passt.",
+      "Ordne sie alphabetisch oder nach Küche, je nachdem, was du dir merkst.",
+      "Halte sie von Hitze und direkter Sonne fern, damit sie aromatisch bleiben."
+     ],
+     "q": "Nach welchen Gewürzen greifst du am häufigsten?",
+     "c": "Stelle deine drei meistgenutzten Gewürze nach vorn oder an den leichtesten Platz."
+    },
+    "es": {
+     "t": "Especias que se encuentran",
+     "g": "Guarda las especias para que cada una sea fácil de alcanzar y leer.",
+     "p": [
+      "Sirven especieros, separadores de cajón o botes magnéticos; elige lo que quepa.",
+      "Ordénalas alfabéticamente o por cocina, como mejor recuerdes.",
+      "Aléjalas del calor y del sol directo para que conserven el sabor."
+     ],
+     "q": "¿Qué especias usas con más frecuencia?",
+     "c": "Mueve tus tres especias más usadas al frente o al sitio más cómodo."
+    },
+    "fr": {
+     "t": "Des épices faciles à trouver",
+     "g": "Range les épices pour que chacune soit facile à atteindre et à lire.",
+     "p": [
+      "Supports, inserts de tiroir ou pots magnétiques conviennent ; choisis ce qui tient chez toi.",
+      "Classe-les par ordre alphabétique ou par cuisine, selon ce que tu retiens.",
+      "Garde-les à l'abri de la chaleur et du soleil pour qu'elles gardent leur saveur."
+     ],
+     "q": "Quelles épices utilises-tu le plus souvent ?",
+     "c": "Place tes trois épices les plus utilisées devant ou à l'endroit le plus accessible."
+    },
+    "it": {
+     "t": "Spezie che si trovano subito",
+     "g": "Riponi le spezie in modo che ognuna sia facile da raggiungere e da leggere.",
+     "p": [
+      "Portaspezie, inserti per cassetto o barattoli magnetici vanno bene; scegli ciò che ci sta.",
+      "Ordinale alfabeticamente o per cucina, come ricordi meglio.",
+      "Tienile lontane da calore e sole diretto per mantenere il sapore."
+     ],
+     "q": "Quali spezie usi più spesso?",
+     "c": "Sposta le tue tre spezie più usate davanti o nel punto più comodo."
+    },
+    "pt": {
+     "t": "Especiarias fáceis de encontrar",
+     "g": "Guarda as especiarias para cada uma ser fácil de alcançar e ler.",
+     "p": [
+      "Suportes, divisórias de gaveta ou frascos magnéticos servem; escolhe o que cabe.",
+      "Ordena-as alfabeticamente ou por cozinha, como te for mais fácil lembrar.",
+      "Mantém-nas longe do calor e do sol direto para guardarem o sabor."
+     ],
+     "q": "Que especiarias usas com mais frequência?",
+     "c": "Muda as tuas três especiarias mais usadas para a frente ou o sítio mais fácil."
+    },
+    "pt_BR": {
+     "t": "Temperos fáceis de achar",
+     "g": "Guarde os temperos para cada um ficar fácil de alcançar e ler.",
+     "p": [
+      "Suportes, divisórias de gaveta ou potes magnéticos servem; escolha o que cabe.",
+      "Ordene alfabeticamente ou por culinária, como for mais fácil lembrar.",
+      "Mantenha longe do calor e do sol direto para conservarem o sabor."
+     ],
+     "q": "Que temperos você usa com mais frequência?",
+     "c": "Mude seus três temperos mais usados para a frente ou o lugar mais fácil."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pots, pans and lids",
+     "g": "Nest pans, stand lids upright and keep heavy pieces low and near the stove.",
+     "p": [
+      "Nest pans by size, with a cloth between non-stick surfaces to protect them.",
+      "Stand lids upright on a rack or in a divider so they do not slide around.",
+      "Keep the heaviest pots low so lifting is safe and easy."
+     ],
+     "q": "Do you have a pan or lid that has lost its partner?",
+     "c": "Match every pot with its lid and let go of any lonely lid."
+    },
+    "de": {
+     "t": "Töpfe, Pfannen und Deckel",
+     "g": "Stapele Pfannen, stelle Deckel aufrecht und lagere Schweres unten nahe am Herd.",
+     "p": [
+      "Stapele Pfannen nach Größe, mit einem Tuch zwischen beschichteten Flächen zum Schutz.",
+      "Stelle Deckel aufrecht in einen Halter, damit sie nicht rutschen.",
+      "Das Schwerste gehört nach unten, damit das Heben sicher und leicht ist."
+     ],
+     "q": "Hast du eine Pfanne oder einen Deckel, dessen Partner fehlt?",
+     "c": "Ordne jedem Topf seinen Deckel zu und gib einsame Deckel ab."
+    },
+    "es": {
+     "t": "Ollas, sartenes y tapas",
+     "g": "Apila sartenes, pon las tapas de pie y guarda lo pesado abajo y cerca de los fuegos.",
+     "p": [
+      "Apila las sartenes por tamaño, con un paño entre superficies antiadherentes para protegerlas.",
+      "Pon las tapas de pie en un soporte o separador para que no resbalen.",
+      "Lo más pesado, abajo, para levantarlo con seguridad y facilidad."
+     ],
+     "q": "¿Tienes alguna sartén o tapa que haya perdido a su pareja?",
+     "c": "Empareja cada olla con su tapa y suelta las tapas solitarias."
+    },
+    "fr": {
+     "t": "Casseroles, poêles et couvercles",
+     "g": "Empile les poêles, mets les couvercles debout et garde le lourd en bas près des feux.",
+     "p": [
+      "Empile les poêles par taille, avec un chiffon entre les surfaces antiadhésives pour les protéger.",
+      "Mets les couvercles debout sur un support pour qu'ils ne glissent pas.",
+      "Garde les plus lourdes casseroles en bas pour les soulever en sécurité."
+     ],
+     "q": "As-tu une poêle ou un couvercle qui a perdu son partenaire ?",
+     "c": "Associe chaque casserole à son couvercle et laisse partir les couvercles solitaires."
+    },
+    "it": {
+     "t": "Pentole, padelle e coperchi",
+     "g": "Incastra le padelle, metti i coperchi in piedi e tieni il pesante in basso vicino ai fornelli.",
+     "p": [
+      "Incastra le padelle per misura, con un panno tra le superfici antiaderenti per proteggerle.",
+      "Metti i coperchi in piedi su un supporto perché non scivolino.",
+      "Tieni in basso le pentole più pesanti, così sollevarle è sicuro e facile."
+     ],
+     "q": "Hai una pentola o un coperchio che ha perso il suo compagno?",
+     "c": "Abbina ogni pentola al suo coperchio e lascia andare i coperchi solitari."
+    },
+    "pt": {
+     "t": "Panelas, frigideiras e tampas",
+     "g": "Empilha frigideiras, põe as tampas em pé e guarda o pesado em baixo, perto do fogão.",
+     "p": [
+      "Empilha as frigideiras por tamanho, com um pano entre as superfícies antiaderentes para as proteger.",
+      "Põe as tampas em pé num suporte para não escorregarem.",
+      "Guarda as panelas mais pesadas em baixo para levantar com segurança."
+     ],
+     "q": "Tens alguma panela ou tampa que perdeu o par?",
+     "c": "Faz corresponder cada panela à sua tampa e larga as tampas solitárias."
+    },
+    "pt_BR": {
+     "t": "Panelas, frigideiras e tampas",
+     "g": "Empilhe as frigideiras, ponha as tampas em pé e guarde o pesado embaixo, perto do fogão.",
+     "p": [
+      "Empilhe as frigideiras por tamanho, com um pano entre as superfícies antiaderentes para protegê-las.",
+      "Ponha as tampas em pé num suporte para não escorregarem.",
+      "Guarde as panelas mais pesadas embaixo para levantar com segurança."
+     ],
+     "q": "Você tem alguma panela ou tampa que perdeu o par?",
+     "c": "Combine cada panela com sua tampa e solte as tampas solitárias."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Food storage containers",
+     "g": "Match lids to boxes, keep a few good sizes and let odd ones go.",
+     "p": [
+      "Try every lid on every box and recycle the ones with no partner.",
+      "Keep a few sizes that stack well and fit your fridge.",
+      "Store boxes with lids beside them or on, in one cupboard."
+     ],
+     "q": "How many containers in your cupboard do you actually use?",
+     "c": "Match every container to its lid and release any odd ones."
+    },
+    "de": {
+     "t": "Frischhaltedosen",
+     "g": "Ordne Deckel den Dosen zu, behalte wenige gute Größen und gib Übriges ab.",
+     "p": [
+      "Probiere jeden Deckel auf jeder Dose und recycle die ohne Partner.",
+      "Behalte einige Größen, die gut stapeln und in deinen Kühlschrank passen.",
+      "Lagere Dosen mit Deckeln daneben oder darauf in einem Schrank."
+     ],
+     "q": "Wie viele Dosen in deinem Schrank nutzt du wirklich?",
+     "c": "Ordne jeder Dose ihren Deckel zu und gib alles Übrige ab."
+    },
+    "es": {
+     "t": "Recipientes para guardar comida",
+     "g": "Empareja tapas y cajas, quédate con pocos tamaños buenos y suelta los sueltos.",
+     "p": [
+      "Prueba cada tapa en cada caja y recicla las que no tengan pareja.",
+      "Quédate con tamaños que se apilen bien y quepan en tu nevera.",
+      "Guarda las cajas con sus tapas al lado o puestas, en un mismo armario."
+     ],
+     "q": "¿Cuántos recipientes de tu armario usas de verdad?",
+     "c": "Empareja cada recipiente con su tapa y suelta los sobrantes."
+    },
+    "fr": {
+     "t": "Boîtes de conservation",
+     "g": "Associe couvercles et boîtes, garde quelques bonnes tailles et laisse partir les orphelins.",
+     "p": [
+      "Essaie chaque couvercle sur chaque boîte et recycle ceux sans partenaire.",
+      "Garde quelques tailles qui s'empilent bien et tiennent dans ton frigo.",
+      "Range boîtes et couvercles ensemble, dans un seul placard."
+     ],
+     "q": "Combien de boîtes de ton placard utilises-tu vraiment ?",
+     "c": "Associe chaque boîte à son couvercle et laisse partir les orphelines."
+    },
+    "it": {
+     "t": "Contenitori per alimenti",
+     "g": "Abbina coperchi e contenitori, tieni poche misure buone e lascia andare gli spaiati.",
+     "p": [
+      "Prova ogni coperchio su ogni contenitore e ricicla quelli senza compagno.",
+      "Tieni alcune misure che si impilano bene e stanno nel frigo.",
+      "Riponi i contenitori con i coperchi accanto o sopra, in un solo mobile."
+     ],
+     "q": "Quanti contenitori nel tuo mobile usi davvero?",
+     "c": "Abbina ogni contenitore al suo coperchio e lascia andare quelli spaiati."
+    },
+    "pt": {
+     "t": "Caixas para guardar comida",
+     "g": "Faz corresponder tampas e caixas, fica com poucos tamanhos bons e larga as soltas.",
+     "p": [
+      "Experimenta cada tampa em cada caixa e recicla as que não têm par.",
+      "Fica com tamanhos que empilhem bem e caibam no frigorífico.",
+      "Guarda as caixas com as tampas ao lado ou postas, num só armário."
+     ],
+     "q": "Quantas caixas do teu armário usas mesmo?",
+     "c": "Faz corresponder cada caixa à sua tampa e larga as que sobrarem."
+    },
+    "pt_BR": {
+     "t": "Potes para guardar comida",
+     "g": "Combine tampas e potes, fique com poucos tamanhos bons e solte os sem par.",
+     "p": [
+      "Teste cada tampa em cada pote e recicle os que não têm par.",
+      "Fique com tamanhos que empilhem bem e caibam na geladeira.",
+      "Guarde os potes com as tampas ao lado ou postas, num só armário."
+     ],
+     "q": "Quantos potes do seu armário você usa de verdade?",
+     "c": "Combine cada pote com sua tampa e solte os que sobrarem."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Under the sink",
+     "g": "Use caddies and small shelves to organise cleaning supplies in an awkward space.",
+     "p": [
+      "Use a caddy or a small shelf to lift bottles off the floor of the cupboard.",
+      "Keep each product in its original bottle with its label, and never mix products.",
+      "If you have children or pets, use a safe latch or a high shelf."
+     ],
+     "q": "What cleaning products do you really use each week?",
+     "c": "Take everything out from under the sink, wipe the shelf and return only what you use."
+    },
+    "de": {
+     "t": "Unter der Spüle",
+     "g": "Ordne Putzmittel in diesem unpraktischen Raum mit Körben und kleinen Regalen.",
+     "p": [
+      "Ein Korb oder kleines Regal hebt Flaschen vom Schrankboden.",
+      "Lasse jedes Mittel in seiner Originalflasche mit Etikett und mische nie Produkte.",
+      "Bei Kindern oder Haustieren nutze einen sicheren Verschluss oder ein hohes Regal."
+     ],
+     "q": "Welche Putzmittel nutzt du wirklich jede Woche?",
+     "c": "Räume den Schrank unter der Spüle aus, wische ihn ab und stelle nur Genutztes zurück."
+    },
+    "es": {
+     "t": "Debajo del fregadero",
+     "g": "Usa cestas y baldas pequeñas para ordenar los productos de limpieza en un espacio incómodo.",
+     "p": [
+      "Una cesta o balda pequeña eleva los botes del suelo del armario.",
+      "Mantén cada producto en su envase original con etiqueta y nunca mezcles productos.",
+      "Si hay niños o mascotas, usa un cierre seguro o una balda alta."
+     ],
+     "q": "¿Qué productos de limpieza usas de verdad cada semana?",
+     "c": "Saca todo de debajo del fregadero, limpia la balda y devuelve solo lo que usas."
+    },
+    "fr": {
+     "t": "Sous l'évier",
+     "g": "Utilise paniers et petites étagères pour organiser les produits dans un espace peu pratique.",
+     "p": [
+      "Un panier ou une petite étagère surélève les flacons du fond du placard.",
+      "Garde chaque produit dans son flacon d'origine avec son étiquette et ne mélange jamais les produits.",
+      "Avec enfants ou animaux, utilise un verrou sûr ou une étagère haute."
+     ],
+     "q": "Quels produits d'entretien utilises-tu vraiment chaque semaine ?",
+     "c": "Sors tout de sous l'évier, essuie l'étagère et ne remets que ce que tu utilises."
+    },
+    "it": {
+     "t": "Sotto il lavello",
+     "g": "Usa cestini e piccoli ripiani per organizzare i prodotti per pulire in uno spazio scomodo.",
+     "p": [
+      "Un cestino o un piccolo ripiano solleva i flaconi dal fondo del mobile.",
+      "Tieni ogni prodotto nel flacone originale con la sua etichetta e non mescolare mai prodotti.",
+      "Con bambini o animali, usa una chiusura sicura o un ripiano alto."
+     ],
+     "q": "Quali prodotti per pulire usi davvero ogni settimana?",
+     "c": "Togli tutto da sotto il lavello, passa il ripiano e rimetti solo ciò che usi."
+    },
+    "pt": {
+     "t": "Debaixo do lava-loiça",
+     "g": "Usa cestos e pequenas prateleiras para arrumar produtos de limpeza num espaço difícil.",
+     "p": [
+      "Um cesto ou pequena prateleira eleva os frascos do chão do armário.",
+      "Mantém cada produto na embalagem original com etiqueta e nunca mistures produtos.",
+      "Com crianças ou animais, usa um fecho seguro ou uma prateleira alta."
+     ],
+     "q": "Que produtos de limpeza usas mesmo todas as semanas?",
+     "c": "Tira tudo de debaixo do lava-loiça, limpa a prateleira e volta a pôr só o que usas."
+    },
+    "pt_BR": {
+     "t": "Embaixo da pia",
+     "g": "Use cestos e pequenas prateleiras para organizar produtos de limpeza num espaço difícil.",
+     "p": [
+      "Um cesto ou pequena prateleira eleva os frascos do chão do armário.",
+      "Mantenha cada produto na embalagem original com rótulo e nunca misture produtos.",
+      "Com crianças ou animais, use uma trava segura ou uma prateleira alta."
+     ],
+     "q": "Que produtos de limpeza você usa de verdade toda semana?",
+     "c": "Tire tudo de baixo da pia, limpe a prateleira e guarde só o que você usa."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Clear kitchen counters",
+     "g": "Keep only daily-use appliances out so cooking and cleaning feel easier.",
+     "p": [
+      "Ask of each item on the counter: do I use this every day?",
+      "Keep the kettle or toaster out if used daily; store the rest in cupboards.",
+      "Clear counters give you room to cook and make wiping a one-minute job."
+     ],
+     "q": "What lives on your counter that could move to a cupboard?",
+     "c": "Move at least two things from your counter into a cupboard."
+    },
+    "de": {
+     "t": "Freie Arbeitsflächen",
+     "g": "Lasse nur täglich genutzte Geräte draußen, damit Kochen und Putzen leichter werden.",
+     "p": [
+      "Frage bei jedem Ding auf der Arbeitsplatte: Brauche ich das täglich?",
+      "Wasserkocher oder Toaster dürfen bleiben, wenn täglich genutzt; der Rest in den Schrank.",
+      "Freie Flächen geben Platz zum Kochen und machen das Wischen zur Minutensache."
+     ],
+     "q": "Was steht bei dir auf der Arbeitsplatte und könnte in einen Schrank?",
+     "c": "Räume mindestens zwei Dinge von der Arbeitsplatte in einen Schrank."
+    },
+    "es": {
+     "t": "Encimeras despejadas",
+     "g": "Deja fuera solo los aparatos de uso diario para cocinar y limpiar con más facilidad.",
+     "p": [
+      "Pregunta de cada cosa de la encimera: ¿la uso cada día?",
+      "Deja el hervidor o la tostadora si los usas a diario; el resto, a los armarios.",
+      "Una encimera libre da espacio para cocinar y limpiar en un minuto."
+     ],
+     "q": "¿Qué vive en tu encimera y podría ir a un armario?",
+     "c": "Pasa al menos dos cosas de tu encimera a un armario."
+    },
+    "fr": {
+     "t": "Plans de travail dégagés",
+     "g": "Ne laisse dehors que les appareils du quotidien pour cuisiner et nettoyer plus facilement.",
+     "p": [
+      "Demande-toi pour chaque objet du plan de travail : est-ce que je m'en sers chaque jour ?",
+      "Garde la bouilloire ou le grille-pain si tu les utilises chaque jour ; le reste dans les placards.",
+      "Un plan dégagé donne de la place pour cuisiner et se nettoie en une minute."
+     ],
+     "q": "Qu'y a-t-il sur ton plan de travail qui pourrait aller dans un placard ?",
+     "c": "Rentre au moins deux objets de ton plan de travail dans un placard."
+    },
+    "it": {
+     "t": "Piani di lavoro liberi",
+     "g": "Lascia fuori solo gli elettrodomestici d'uso quotidiano per cucinare e pulire più facilmente.",
+     "p": [
+      "Chiediti per ogni cosa sul piano: la uso ogni giorno?",
+      "Tieni fuori il bollitore o il tostapane se li usi ogni giorno; il resto negli armadietti.",
+      "Un piano libero dà spazio per cucinare e si pulisce in un minuto."
+     ],
+     "q": "Cosa vive sul tuo piano di lavoro e potrebbe andare in un armadietto?",
+     "c": "Sposta almeno due cose dal piano di lavoro in un armadietto."
+    },
+    "pt": {
+     "t": "Bancadas livres",
+     "g": "Deixa de fora só os aparelhos de uso diário para cozinhar e limpar com mais facilidade.",
+     "p": [
+      "Pergunta de cada coisa da bancada: uso isto todos os dias?",
+      "Deixa a chaleira ou a torradeira se as usas diariamente; o resto nos armários.",
+      "Uma bancada livre dá espaço para cozinhar e limpa-se num minuto."
+     ],
+     "q": "O que vive na tua bancada e podia ir para um armário?",
+     "c": "Passa pelo menos duas coisas da tua bancada para um armário."
+    },
+    "pt_BR": {
+     "t": "Bancadas livres",
+     "g": "Deixe de fora só os aparelhos de uso diário para cozinhar e limpar com mais facilidade.",
+     "p": [
+      "Pergunte de cada coisa da bancada: eu uso isto todo dia?",
+      "Deixe a chaleira ou a torradeira se usa diariamente; o resto nos armários.",
+      "Uma bancada livre dá espaço para cozinhar e limpa em um minuto."
+     ],
+     "q": "O que vive na sua bancada e poderia ir para um armário?",
+     "c": "Passe pelo menos duas coisas da sua bancada para um armário."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Drawer dividers in the kitchen",
+     "g": "Split cutlery and utensil drawers so every tool has its own slot.",
+     "p": [
+      "A cutlery tray gives forks, knives and spoons their own compartments.",
+      "Use a second tray for cooking utensils so tools do not tangle.",
+      "Measure the drawer first so the tray fits snugly."
+     ],
+     "q": "Which kitchen drawer is the hardest to use right now?",
+     "c": "Put dividers or small boxes into one kitchen drawer today."
+    },
+    "de": {
+     "t": "Schubladeneinteiler in der Küche",
+     "g": "Unterteile Besteck- und Utensilienschubladen, damit jedes Werkzeug sein Fach hat.",
+     "p": [
+      "Ein Besteckkasten gibt Gabeln, Messern und Löffeln eigene Fächer.",
+      "Ein zweiter Einsatz für Kochutensilien verhindert Verhaken.",
+      "Miss die Schublade zuerst, damit der Einsatz passgenau sitzt."
+     ],
+     "q": "Welche Küchenschublade ist gerade am schwierigsten zu benutzen?",
+     "c": "Setze heute Trenner oder kleine Boxen in eine Küchenschublade."
+    },
+    "es": {
+     "t": "Separadores de cajón en la cocina",
+     "g": "Divide los cajones de cubiertos y utensilios para que cada herramienta tenga su hueco.",
+     "p": [
+      "Un cubertero da a tenedores, cuchillos y cucharas sus compartimentos.",
+      "Un segundo organizador para utensilios de cocina evita que se enreden.",
+      "Mide primero el cajón para que el organizador encaje bien."
+     ],
+     "q": "¿Qué cajón de la cocina es ahora el más difícil de usar?",
+     "c": "Pon hoy separadores o cajitas en un cajón de la cocina."
+    },
+    "fr": {
+     "t": "Séparateurs de tiroir en cuisine",
+     "g": "Divise les tiroirs à couverts et ustensiles pour que chaque outil ait sa place.",
+     "p": [
+      "Un range-couverts donne à chaque fourchette, couteau et cuillère son compartiment.",
+      "Un second bac pour les ustensiles de cuisine évite qu'ils s'emmêlent.",
+      "Mesure d'abord le tiroir pour que le bac s'ajuste bien."
+     ],
+     "q": "Quel tiroir de cuisine est le plus difficile à utiliser en ce moment ?",
+     "c": "Place aujourd'hui des séparateurs ou de petites boîtes dans un tiroir de cuisine."
+    },
+    "it": {
+     "t": "Divisori per i cassetti della cucina",
+     "g": "Dividi i cassetti di posate e utensili perché ogni strumento abbia il suo spazio.",
+     "p": [
+      "Un portaposate dà a forchette, coltelli e cucchiai i loro scomparti.",
+      "Un secondo vassoio per gli utensili da cucina evita che si intreccino.",
+      "Misura prima il cassetto perché il vassoio si adatti bene."
+     ],
+     "q": "Qual è il cassetto della cucina più difficile da usare ora?",
+     "c": "Metti oggi divisori o scatolette in un cassetto della cucina."
+    },
+    "pt": {
+     "t": "Divisórias de gaveta na cozinha",
+     "g": "Divide as gavetas de talheres e utensílios para cada ferramenta ter o seu lugar.",
+     "p": [
+      "Um porta-talheres dá a garfos, facas e colheres os seus compartimentos.",
+      "Um segundo tabuleiro para utensílios de cozinha evita que se emaranhem.",
+      "Mede primeiro a gaveta para o tabuleiro encaixar bem."
+     ],
+     "q": "Que gaveta da cozinha é agora a mais difícil de usar?",
+     "c": "Põe hoje divisórias ou caixinhas numa gaveta da cozinha."
+    },
+    "pt_BR": {
+     "t": "Divisórias de gaveta na cozinha",
+     "g": "Divida as gavetas de talheres e utensílios para cada ferramenta ter seu lugar.",
+     "p": [
+      "Um porta-talheres dá a garfos, facas e colheres seus compartimentos.",
+      "Uma segunda bandeja para utensílios de cozinha evita que se embaracem.",
+      "Meça primeiro a gaveta para a bandeja encaixar bem."
+     ],
+     "q": "Que gaveta da cozinha é hoje a mais difícil de usar?",
+     "c": "Coloque hoje divisórias ou caixinhas numa gaveta da cozinha."
+    }
+   }
+  }
+ ]
+}

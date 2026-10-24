@@ -1,0 +1,835 @@
+{
+ "topic": "board_games",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Go",
+     "g": "Meet stones on a grid and the deep strategy of surrounding territory.",
+     "p": [
+      "Go began in China over 2,500 years ago and is loved across East Asia.",
+      "Players take turns placing black and white stones on line intersections.",
+      "Surround empty areas to claim territory; the player with more wins."
+     ],
+     "q": "Rules are simple, yet the number of possible games is enormous.",
+     "c": "On a small 9x9 grid, place stones to enclose one corner. Can you do it?"
+    },
+    "de": {
+     "t": "Go",
+     "g": "Lerne Steine auf einem Raster und die tiefe Strategie des Umzingelns kennen.",
+     "p": [
+      "Go entstand vor über 2.500 Jahren in China und ist in ganz Ostasien beliebt.",
+      "Abwechselnd setzt man schwarze und weiße Steine auf Linienkreuzungen.",
+      "Umschließe leere Bereiche, um Gebiet zu gewinnen; wer mehr hat, siegt."
+     ],
+     "q": "Die Regeln sind einfach, doch die Zahl möglicher Partien ist riesig.",
+     "c": "Setze auf einem kleinen 9x9-Raster Steine so, dass eine Ecke umschlossen ist."
+    },
+    "es": {
+     "t": "Go",
+     "g": "Conoce las piedras sobre una cuadrícula y la estrategia de rodear territorio.",
+     "p": [
+      "El go nació en China hace más de 2.500 años y se ama en toda Asia oriental.",
+      "Los jugadores colocan por turnos piedras negras y blancas en las intersecciones.",
+      "Rodea zonas vacías para ganar territorio; gana quien tenga más."
+     ],
+     "q": "Las reglas son simples, pero el número de partidas posibles es enorme.",
+     "c": "En una cuadrícula pequeña de 9x9, coloca piedras para cercar una esquina."
+    },
+    "fr": {
+     "t": "Le go",
+     "g": "Découvre les pierres sur une grille et la stratégie profonde de l'encerclement.",
+     "p": [
+      "Le go est né en Chine il y a plus de 2 500 ans et est aimé dans toute l'Asie orientale.",
+      "Les joueurs posent tour à tour des pierres noires et blanches aux intersections.",
+      "Encercle des zones vides pour gagner du territoire ; qui en a le plus l'emporte."
+     ],
+     "q": "Les règles sont simples, mais le nombre de parties possibles est immense.",
+     "c": "Sur une petite grille 9x9, pose des pierres pour enclore un coin."
+    },
+    "it": {
+     "t": "Il go",
+     "g": "Scopri le pietre su una griglia e la strategia profonda dell'accerchiamento.",
+     "p": [
+      "Il go nacque in Cina oltre 2.500 anni fa ed è amato in tutta l'Asia orientale.",
+      "I giocatori posano a turno pietre nere e bianche sugli incroci.",
+      "Circonda zone vuote per conquistare territorio; vince chi ne ha di più."
+     ],
+     "q": "Le regole sono semplici, ma il numero di partite possibili è enorme.",
+     "c": "Su una piccola griglia 9x9, posa pietre per racchiudere un angolo."
+    },
+    "pt": {
+     "t": "O Go",
+     "g": "Conhece as pedras numa grelha e a estratégia profunda de cercar território.",
+     "p": [
+      "O Go nasceu na China há mais de 2500 anos e é amado em toda a Ásia Oriental.",
+      "Os jogadores colocam à vez pedras pretas e brancas nas interseções.",
+      "Cerca zonas vazias para ganhar território; ganha quem tiver mais."
+     ],
+     "q": "As regras são simples, mas o número de jogos possíveis é enorme.",
+     "c": "Numa grelha pequena de 9x9, coloca pedras para cercar um canto."
+    },
+    "pt_BR": {
+     "t": "O Go",
+     "g": "Conheça as pedras numa grade e a estratégia profunda de cercar território.",
+     "p": [
+      "O Go nasceu na China há mais de 2.500 anos e é amado em toda a Ásia Oriental.",
+      "Os jogadores colocam, em turnos, pedras pretas e brancas nas interseções.",
+      "Cerque áreas vazias para ganhar território; vence quem tiver mais."
+     ],
+     "q": "As regras são simples, mas o número de partidas possíveis é enorme.",
+     "c": "Numa grade pequena de 9x9, coloque pedras para cercar um canto."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Chess: the pieces and their moves",
+     "g": "Learn how each chess piece moves and roughly what it is worth.",
+     "p": [
+      "The rook moves straight, the bishop diagonally, the queen both ways.",
+      "The knight jumps in an L shape; the king steps one square.",
+      "Pawns move forward one square, but capture diagonally."
+     ],
+     "q": "Typical values: pawn 1, knight 3, bishop 3, rook 5, queen 9.",
+     "c": "Place a knight on an empty board and find all its moves."
+    },
+    "de": {
+     "t": "Schach: Figuren und ihre Züge",
+     "g": "Lerne, wie sich jede Schachfigur bewegt und was sie ungefähr wert ist.",
+     "p": [
+      "Der Turm zieht gerade, der Läufer diagonal, die Dame in beide Arten.",
+      "Der Springer springt in L-Form; der König geht ein Feld.",
+      "Bauern ziehen ein Feld vor, schlagen aber diagonal."
+     ],
+     "q": "Übliche Werte: Bauer 1, Springer 3, Läufer 3, Turm 5, Dame 9.",
+     "c": "Stelle einen Springer auf ein leeres Brett und finde alle seine Züge."
+    },
+    "es": {
+     "t": "Ajedrez: las piezas y sus movimientos",
+     "g": "Aprende cómo se mueve cada pieza de ajedrez y cuánto vale aproximadamente.",
+     "p": [
+      "La torre se mueve en recto, el alfil en diagonal y la dama de ambas formas.",
+      "El caballo salta en L; el rey avanza una casilla.",
+      "Los peones avanzan una casilla, pero capturan en diagonal."
+     ],
+     "q": "Valores típicos: peón 1, caballo 3, alfil 3, torre 5, dama 9.",
+     "c": "Coloca un caballo en un tablero vacío y encuentra todos sus movimientos."
+    },
+    "fr": {
+     "t": "Les échecs : pièces et déplacements",
+     "g": "Apprends comment bouge chaque pièce d'échecs et ce qu'elle vaut à peu près.",
+     "p": [
+      "La tour va tout droit, le fou en diagonale, la dame des deux façons.",
+      "Le cavalier saute en L ; le roi avance d'une case.",
+      "Les pions avancent d'une case mais prennent en diagonale."
+     ],
+     "q": "Valeurs usuelles : pion 1, cavalier 3, fou 3, tour 5, dame 9.",
+     "c": "Place un cavalier sur un échiquier vide et trouve tous ses coups."
+    },
+    "it": {
+     "t": "Scacchi: i pezzi e le loro mosse",
+     "g": "Impara come si muove ogni pezzo degli scacchi e quanto vale all'incirca.",
+     "p": [
+      "La torre va dritta, l'alfiere in diagonale, la regina in entrambi i modi.",
+      "Il cavallo salta a L; il re fa un passo di una casa.",
+      "I pedoni avanzano di una casa ma catturano in diagonale."
+     ],
+     "q": "Valori tipici: pedone 1, cavallo 3, alfiere 3, torre 5, regina 9.",
+     "c": "Metti un cavallo su una scacchiera vuota e trova tutte le sue mosse."
+    },
+    "pt": {
+     "t": "Xadrez: as peças e os seus movimentos",
+     "g": "Aprende como se move cada peça de xadrez e quanto vale mais ou menos.",
+     "p": [
+      "A torre move-se em linha reta, o bispo na diagonal, a dama de ambas as formas.",
+      "O cavalo salta em L; o rei dá um passo de uma casa.",
+      "Os peões avançam uma casa, mas capturam na diagonal."
+     ],
+     "q": "Valores típicos: peão 1, cavalo 3, bispo 3, torre 5, dama 9.",
+     "c": "Põe um cavalo num tabuleiro vazio e encontra todos os seus movimentos."
+    },
+    "pt_BR": {
+     "t": "Xadrez: as peças e seus movimentos",
+     "g": "Aprenda como cada peça do xadrez se move e quanto vale, mais ou menos.",
+     "p": [
+      "A torre anda em linha reta, o bispo na diagonal, a dama das duas formas.",
+      "O cavalo salta em L; o rei dá um passo de uma casa.",
+      "Os peões avançam uma casa, mas capturam na diagonal."
+     ],
+     "q": "Valores típicos: peão 1, cavalo 3, bispo 3, torre 5, dama 9.",
+     "c": "Coloque um cavalo num tabuleiro vazio e ache todos os seus movimentos."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Chess around the world",
+     "g": "Follow chess from chaturanga in India to xiangqi and shogi.",
+     "p": [
+      "Chaturanga, played in India about 1,500 years ago, is chess's ancestor.",
+      "It travelled to Persia and the Arab world, then to Europe.",
+      "Xiangqi in China has a river in the middle and a palace for the general."
+     ],
+     "q": "Shogi in Japan lets you drop captured pieces back onto the board.",
+     "c": "Which regional chess would you most like to try, and why?"
+    },
+    "de": {
+     "t": "Schach rund um die Welt",
+     "g": "Verfolge Schach von Chaturanga in Indien bis Xiangqi und Shogi.",
+     "p": [
+      "Chaturanga, vor etwa 1.500 Jahren in Indien gespielt, ist der Vorfahr des Schachs.",
+      "Es wanderte nach Persien und in die arabische Welt, dann nach Europa.",
+      "Xiangqi in China hat einen Fluss in der Mitte und einen Palast für den General."
+     ],
+     "q": "Beim japanischen Shogi setzt man geschlagene Steine wieder aufs Brett.",
+     "c": "Welche regionale Schachform würdest du am liebsten ausprobieren, und warum?"
+    },
+    "es": {
+     "t": "El ajedrez alrededor del mundo",
+     "g": "Sigue el ajedrez desde el chaturanga de la India hasta el xiangqi y el shogi.",
+     "p": [
+      "El chaturanga, jugado en la India hace unos 1.500 años, es el ancestro del ajedrez.",
+      "Viajó a Persia y al mundo árabe, y luego a Europa.",
+      "El xiangqi chino tiene un río en medio y un palacio para el general."
+     ],
+     "q": "En el shogi japonés puedes volver a colocar en el tablero las piezas capturadas.",
+     "c": "¿Qué ajedrez regional te gustaría probar más, y por qué?"
+    },
+    "fr": {
+     "t": "Les échecs autour du monde",
+     "g": "Suis les échecs du chaturanga indien au xiangqi et au shogi.",
+     "p": [
+      "Le chaturanga, joué en Inde il y a environ 1 500 ans, est l'ancêtre des échecs.",
+      "Il a voyagé vers la Perse et le monde arabe, puis vers l'Europe.",
+      "Le xiangqi chinois a une rivière au milieu et un palais pour le général."
+     ],
+     "q": "Au shogi japonais, on peut reposer sur le plateau les pièces capturées.",
+     "c": "Quelle variante régionale aimerais-tu essayer le plus, et pourquoi ?"
+    },
+    "it": {
+     "t": "Gli scacchi nel mondo",
+     "g": "Segui gli scacchi dal chaturanga indiano allo xiangqi e allo shogi.",
+     "p": [
+      "Il chaturanga, giocato in India circa 1.500 anni fa, è l'antenato degli scacchi.",
+      "Viaggiò in Persia e nel mondo arabo, poi in Europa.",
+      "Lo xiangqi cinese ha un fiume al centro e un palazzo per il generale."
+     ],
+     "q": "Nello shogi giapponese puoi rimettere in gioco i pezzi catturati.",
+     "c": "Quale scacchi regionale vorresti provare di più, e perché?"
+    },
+    "pt": {
+     "t": "O xadrez à volta do mundo",
+     "g": "Segue o xadrez do chaturanga indiano ao xiangqi e ao shogi.",
+     "p": [
+      "O chaturanga, jogado na Índia há cerca de 1500 anos, é o antepassado do xadrez.",
+      "Viajou para a Pérsia e o mundo árabe, e depois para a Europa.",
+      "O xiangqi chinês tem um rio ao meio e um palácio para o general."
+     ],
+     "q": "No shogi japonês podes voltar a pôr no tabuleiro as peças capturadas.",
+     "c": "Que xadrez regional gostarias mais de experimentar, e porquê?"
+    },
+    "pt_BR": {
+     "t": "O xadrez ao redor do mundo",
+     "g": "Acompanhe o xadrez do chaturanga indiano ao xiangqi e ao shogi.",
+     "p": [
+      "O chaturanga, jogado na Índia há cerca de 1.500 anos, é o ancestral do xadrez.",
+      "Viajou para a Pérsia e o mundo árabe, e depois para a Europa.",
+      "O xiangqi chinês tem um rio no meio e um palácio para o general."
+     ],
+     "q": "No shogi japonês você pode recolocar no tabuleiro as peças capturadas.",
+     "c": "Qual xadrez regional você mais gostaria de experimentar, e por quê?"
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Checkers and draughts",
+     "g": "Learn jumping pieces on a checkered board and its national versions.",
+     "p": [
+      "Pieces move diagonally forward on dark squares and capture by jumping.",
+      "A piece reaching the far row becomes a king and may move backwards.",
+      "In English draughts the board is 8x8; international draughts uses 10x10."
+     ],
+     "q": "Capturing is often compulsory, which makes traps possible.",
+     "c": "Set up an 8x8 board and try a trade: give one piece, take two."
+    },
+    "de": {
+     "t": "Dame und Damespiel",
+     "g": "Lerne springende Steine auf einem Schachbrett und die nationalen Varianten.",
+     "p": [
+      "Steine ziehen diagonal vorwärts auf dunklen Feldern und schlagen durch Springen.",
+      "Wer die letzte Reihe erreicht, wird zur Dame und darf rückwärts ziehen.",
+      "Das englische Draughts hat 8x8 Felder, das internationale Damespiel 10x10."
+     ],
+     "q": "Schlagen ist oft Pflicht, wodurch Fallen möglich werden.",
+     "c": "Baue ein 8x8-Brett auf und versuche einen Tausch: einen geben, zwei nehmen."
+    },
+    "es": {
+     "t": "Damas",
+     "g": "Aprende las piezas que saltan en un tablero ajedrezado y sus versiones nacionales.",
+     "p": [
+      "Las piezas avanzan en diagonal sobre casillas oscuras y capturan saltando.",
+      "Una pieza que llega a la última fila se corona y puede retroceder.",
+      "Las damas inglesas usan 8x8; las damas internacionales, 10x10."
+     ],
+     "q": "Capturar suele ser obligatorio, lo que permite trampas.",
+     "c": "Prepara un tablero 8x8 y prueba un cambio: das una pieza y tomas dos."
+    },
+    "fr": {
+     "t": "Dames",
+     "g": "Apprends les pions qui sautent sur un damier et ses versions nationales.",
+     "p": [
+      "Les pions avancent en diagonale sur les cases foncées et prennent en sautant.",
+      "Un pion arrivé à la dernière rangée devient dame et peut reculer.",
+      "Les dames anglaises se jouent en 8x8 ; les dames internationales en 10x10."
+     ],
+     "q": "Prendre est souvent obligatoire, ce qui permet des pièges.",
+     "c": "Installe un plateau 8x8 et tente un échange : donne un pion, prends-en deux."
+    },
+    "it": {
+     "t": "Dama",
+     "g": "Impara i pezzi che saltano su una scacchiera e le versioni nazionali.",
+     "p": [
+      "I pezzi avanzano in diagonale sulle case scure e catturano saltando.",
+      "Un pezzo che raggiunge l'ultima fila diventa dama e può muoversi indietro.",
+      "La dama inglese usa 8x8; la dama internazionale usa 10x10."
+     ],
+     "q": "Catturare è spesso obbligatorio, e questo permette trappole.",
+     "c": "Prepara una scacchiera 8x8 e prova uno scambio: dai un pezzo, ne prendi due."
+    },
+    "pt": {
+     "t": "Damas",
+     "g": "Aprende as peças que saltam num tabuleiro axadrezado e as versões nacionais.",
+     "p": [
+      "As peças avançam na diagonal em casas escuras e capturam saltando.",
+      "Uma peça que chega à última fila vira dama e pode recuar.",
+      "As damas inglesas usam 8x8; as damas internacionais, 10x10."
+     ],
+     "q": "Capturar costuma ser obrigatório, o que permite armadilhas.",
+     "c": "Prepara um tabuleiro 8x8 e tenta uma troca: dás uma peça e tomas duas."
+    },
+    "pt_BR": {
+     "t": "Damas",
+     "g": "Aprenda as peças que saltam num tabuleiro quadriculado e as versões nacionais.",
+     "p": [
+      "As peças avançam na diagonal em casas escuras e capturam pulando.",
+      "Uma peça que chega à última fileira vira dama e pode voltar.",
+      "As damas inglesas usam 8x8; as damas internacionais, 10x10."
+     ],
+     "q": "Capturar costuma ser obrigatório, o que permite armadilhas.",
+     "c": "Monte um tabuleiro 8x8 e tente uma troca: dê uma peça e leve duas."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Word game: Anagrams",
+     "g": "Rearrange letters to find new words hidden inside.",
+     "p": [
+      "An anagram uses the same letters in a different order: listen and silent.",
+      "Start with short words: can you turn ear into are?",
+      "Write the letters on paper tiles and slide them around to see options."
+     ],
+     "q": "Here are the letters of STAR. What other words can you make?",
+     "c": "Find an anagram for the word night and one for the word stone."
+    },
+    "de": {
+     "t": "Wortspiel: Anagramme",
+     "g": "Ordne Buchstaben neu und finde darin versteckte Wörter.",
+     "p": [
+      "Ein Anagramm nutzt dieselben Buchstaben in anderer Reihenfolge: Regen und Gerne.",
+      "Beginne mit kurzen Wörtern: Kannst du Rest in Erst verwandeln?",
+      "Schreibe Buchstaben auf Papierplättchen und schiebe sie hin und her."
+     ],
+     "q": "Hier sind die Buchstaben von STAR. Welche anderen Wörter kannst du bilden?",
+     "c": "Finde ein Anagramm für das Wort Lager und das Wort Mehl."
+    },
+    "es": {
+     "t": "Juego de palabras: Anagramas",
+     "g": "Reordena letras para encontrar palabras escondidas.",
+     "p": [
+      "Un anagrama usa las mismas letras en otro orden: amor y roma.",
+      "Empieza con palabras cortas: ¿puedes convertir sal en las?",
+      "Escribe las letras en fichas de papel y muévelas para ver opciones."
+     ],
+     "q": "Aquí están las letras de SOL. ¿Qué otras palabras puedes formar?",
+     "c": "Busca un anagrama de la palabra casa y de la palabra cala."
+    },
+    "fr": {
+     "t": "Jeu de mots : Anagrammes",
+     "g": "Réorganise des lettres pour trouver des mots cachés.",
+     "p": [
+      "Un anagramme réutilise les mêmes lettres dans un autre ordre : chien et niche.",
+      "Commence par des mots courts : peux-tu transformer sel en les ?",
+      "Écris les lettres sur des jetons de papier et déplace-les pour voir les options."
+     ],
+     "q": "Voici les lettres de MARE. Quels autres mots peux-tu former ?",
+     "c": "Trouve un anagramme du mot lame et du mot ruse."
+    },
+    "it": {
+     "t": "Gioco di parole: Anagrammi",
+     "g": "Riordina le lettere per trovare parole nascoste.",
+     "p": [
+      "Un anagramma usa le stesse lettere in ordine diverso: ramo e Roma.",
+      "Parti da parole brevi: puoi trasformare mare in rame?",
+      "Scrivi le lettere su tessere di carta e spostale per vedere le opzioni."
+     ],
+     "q": "Ecco le lettere di ARCO. Quali altre parole riesci a formare?",
+     "c": "Trova un anagramma della parola ramo e della parola cena."
+    },
+    "pt": {
+     "t": "Jogo de palavras: Anagramas",
+     "g": "Reordena letras para encontrar palavras escondidas.",
+     "p": [
+      "Um anagrama usa as mesmas letras noutra ordem: amor e Roma.",
+      "Começa com palavras curtas: consegues transformar sal em las?",
+      "Escreve as letras em fichas de papel e desloca-as para ver opções."
+     ],
+     "q": "Aqui estão as letras de ARCO. Que outras palavras consegues formar?",
+     "c": "Encontra um anagrama da palavra casa e da palavra pato."
+    },
+    "pt_BR": {
+     "t": "Jogo de palavras: Anagramas",
+     "g": "Reorganize letras para achar palavras escondidas.",
+     "p": [
+      "Um anagrama usa as mesmas letras em outra ordem: amor e Roma.",
+      "Comece com palavras curtas: dá para transformar sal em las?",
+      "Escreva as letras em fichas de papel e mova-as para ver as opções."
+     ],
+     "q": "Aqui estão as letras de ARCO. Que outras palavras você consegue formar?",
+     "c": "Ache um anagrama da palavra casa e da palavra pato."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Nine Men's Morris",
+     "g": "Meet an old game of making rows of three, carved in ancient stones.",
+     "p": [
+      "Each player has nine pieces and tries to form a mill: three in a row.",
+      "A mill lets you remove one of your opponent's pieces.",
+      "Similar boards are carved in stone in places like old buildings and temples."
+     ],
+     "q": "Phases are placing pieces, then sliding, then flying when you have three.",
+     "c": "Draw the three-square board. Where is the best spot for your first piece?"
+    },
+    "de": {
+     "t": "Mühle",
+     "g": "Lerne ein altes Spiel kennen, bei dem man Dreierreihen bildet, in alte Steine geritzt.",
+     "p": [
+      "Jeder hat neun Steine und versucht, eine Mühle zu bilden: drei in einer Reihe.",
+      "Eine Mühle erlaubt dir, einen gegnerischen Stein zu entfernen.",
+      "Ähnliche Bretter sind in alten Gebäuden und Tempeln in Stein geritzt."
+     ],
+     "q": "Phasen: Steine setzen, dann ziehen, dann springen, wenn nur noch drei übrig sind.",
+     "c": "Zeichne das Brett mit drei Quadraten. Wo liegt der beste Platz für den ersten Stein?"
+    },
+    "es": {
+     "t": "Juego del molino",
+     "g": "Conoce un juego antiguo de hacer filas de tres, tallado en piedras antiguas.",
+     "p": [
+      "Cada jugador tiene nueve piezas e intenta formar un molino: tres en línea.",
+      "Un molino te permite quitar una pieza del rival.",
+      "Tableros parecidos aparecen tallados en piedra en edificios y templos antiguos."
+     ],
+     "q": "Fases: colocar piezas, luego deslizarlas y luego volar si te quedan tres.",
+     "c": "Dibuja el tablero de tres cuadrados. ¿Cuál es el mejor sitio para tu primera pieza?"
+    },
+    "fr": {
+     "t": "Le jeu du moulin",
+     "g": "Découvre un vieux jeu d'alignements de trois, gravé dans des pierres anciennes.",
+     "p": [
+      "Chaque joueur a neuf pions et cherche à former un moulin : trois en ligne.",
+      "Un moulin te permet de retirer un pion adverse.",
+      "Des plateaux semblables sont gravés dans la pierre de vieux édifices et temples."
+     ],
+     "q": "Phases : poser les pions, puis les glisser, puis voler quand il t'en reste trois.",
+     "c": "Dessine le plateau aux trois carrés. Où poser au mieux ton premier pion ?"
+    },
+    "it": {
+     "t": "Il filetto o mulino",
+     "g": "Scopri un antico gioco di file da tre, inciso su pietre antiche.",
+     "p": [
+      "Ogni giocatore ha nove pedine e cerca di fare un mulino: tre in fila.",
+      "Un mulino ti permette di togliere una pedina dell'avversario.",
+      "Tavolieri simili sono incisi nella pietra di antichi edifici e templi."
+     ],
+     "q": "Fasi: posare le pedine, poi farle scorrere, poi volare quando ne restano tre.",
+     "c": "Disegna il tavoliere a tre quadrati. Qual è il posto migliore per la prima pedina?"
+    },
+    "pt": {
+     "t": "O jogo do moinho",
+     "g": "Conhece um jogo antigo de fazer filas de três, gravado em pedras antigas.",
+     "p": [
+      "Cada jogador tem nove peças e tenta formar um moinho: três em linha.",
+      "Um moinho permite-te retirar uma peça do adversário.",
+      "Tabuleiros semelhantes estão gravados em pedra em edifícios e templos antigos."
+     ],
+     "q": "Fases: colocar peças, depois deslizar e depois voar quando restam três.",
+     "c": "Desenha o tabuleiro de três quadrados. Qual o melhor sítio para a primeira peça?"
+    },
+    "pt_BR": {
+     "t": "O jogo do moinho",
+     "g": "Conheça um jogo antigo de fazer fileiras de três, gravado em pedras antigas.",
+     "p": [
+      "Cada jogador tem nove peças e tenta formar um moinho: três em linha.",
+      "Um moinho permite retirar uma peça do adversário.",
+      "Tabuleiros semelhantes estão gravados em pedra em prédios e templos antigos."
+     ],
+     "q": "Fases: colocar peças, depois deslizar e depois voar quando restam três.",
+     "c": "Desenhe o tabuleiro de três quadrados. Qual o melhor lugar para a primeira peça?"
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pachisi and Ludo",
+     "g": "Explore India's cross-shaped race game and its family-friendly descendant.",
+     "p": [
+      "Pachisi is a very old Indian game played on a cross-shaped board.",
+      "Players race four pieces around the cross, moving by cowrie shells or dice.",
+      "Ludo, from the 1800s in Britain, simplified it into a popular family game."
+     ],
+     "q": "Capturing sends an opponent's piece back to start, so stay alert.",
+     "c": "Roll a die: who needs a six to start, and what would you do if you got one?"
+    },
+    "de": {
+     "t": "Pachisi und Mensch ärgere dich nicht",
+     "g": "Erkunde Indiens Kreuz-Rennspiel und seinen familienfreundlichen Nachfahren.",
+     "p": [
+      "Pachisi ist ein sehr altes indisches Spiel auf einem kreuzförmigen Brett.",
+      "Man lässt vier Figuren um das Kreuz laufen, mit Kaurimuscheln oder Würfeln.",
+      "Ludo entstand im 19. Jahrhundert in Britannien als einfaches Familienspiel."
+     ],
+     "q": "Schlagen schickt eine gegnerische Figur zurück zum Start, sei also wachsam.",
+     "c": "Würfle: Wer braucht eine Sechs zum Start, und was tätest du bei einer Sechs?"
+    },
+    "es": {
+     "t": "Pachisi y Parchís",
+     "g": "Explora el juego de carrera en cruz de la India y su descendiente familiar.",
+     "p": [
+      "El pachisi es un juego indio muy antiguo sobre un tablero en forma de cruz.",
+      "Se corre con cuatro fichas alrededor de la cruz, con cauríes o dados.",
+      "El ludo, del siglo XIX en Gran Bretaña, lo simplificó en un juego familiar."
+     ],
+     "q": "Capturar manda la ficha rival al inicio, así que atento.",
+     "c": "Tira un dado: ¿quién necesita un seis para salir y qué harías con él?"
+    },
+    "fr": {
+     "t": "Pachisi et Ludo",
+     "g": "Explore le jeu de course en croix de l'Inde et son descendant familial.",
+     "p": [
+      "Le pachisi est un très ancien jeu indien sur un plateau en forme de croix.",
+      "On fait courir quatre pions autour de la croix, avec des cauris ou des dés.",
+      "Le ludo, né en Grande-Bretagne au XIXe siècle, l'a simplifié en jeu familial."
+     ],
+     "q": "Capturer renvoie le pion adverse au départ, reste donc attentif.",
+     "c": "Lance un dé : qui a besoin d'un six pour sortir, et que ferais-tu avec ?"
+    },
+    "it": {
+     "t": "Pachisi e Ludo",
+     "g": "Esplora il gioco di corsa a croce dell'India e il suo discendente familiare.",
+     "p": [
+      "Il pachisi è un antichissimo gioco indiano su un tabellone a forma di croce.",
+      "Si fanno correre quattro pedine intorno alla croce, con cauri o dadi.",
+      "Il ludo, nato nell'Ottocento in Gran Bretagna, lo semplificò in gioco di famiglia."
+     ],
+     "q": "Catturare rimanda la pedina avversaria alla partenza, quindi attenzione.",
+     "c": "Lancia un dado: chi ha bisogno di un sei per uscire, e cosa faresti?"
+    },
+    "pt": {
+     "t": "Pachisi e Ludo",
+     "g": "Explora o jogo de corrida em cruz da Índia e o seu descendente familiar.",
+     "p": [
+      "O pachisi é um jogo indiano muito antigo num tabuleiro em forma de cruz.",
+      "Correm-se quatro peças à volta da cruz, com búzios ou dados.",
+      "O ludo, do século XIX na Grã-Bretanha, simplificou-o num jogo de família."
+     ],
+     "q": "Capturar manda a peça rival para o início, por isso atenção.",
+     "c": "Lança um dado: quem precisa de um seis para sair, e o que farias?"
+    },
+    "pt_BR": {
+     "t": "Pachisi e Ludo",
+     "g": "Explore o jogo de corrida em cruz da Índia e seu descendente familiar.",
+     "p": [
+      "O pachisi é um jogo indiano muito antigo num tabuleiro em forma de cruz.",
+      "Correm-se quatro peças ao redor da cruz, com búzios ou dados.",
+      "O ludo, do século XIX na Grã-Bretanha, simplificou-o num jogo de família."
+     ],
+     "q": "Capturar manda a peça rival para o início, então fique atento.",
+     "c": "Jogue um dado: quem precisa de um seis para sair, e o que você faria?"
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Snakes and Ladders",
+     "g": "Meet a game from India about ups and downs that children love worldwide.",
+     "p": [
+      "It comes from the Indian game Moksha Patam, used to teach good and bad deeds.",
+      "You roll a die and move along a numbered board of one hundred squares.",
+      "Ladders lift you up, snakes slide you down; reaching one hundred wins."
+     ],
+     "q": "It is pure luck, which makes it fair and fun for very young players.",
+     "c": "Draw a ten-by-ten board with three snakes and three ladders."
+    },
+    "de": {
+     "t": "Schlangen und Leitern",
+     "g": "Lerne ein indisches Spiel über Auf und Ab kennen, das Kinder weltweit lieben.",
+     "p": [
+      "Es stammt vom indischen Moksha Patam, das gute und schlechte Taten lehrte.",
+      "Du würfelst und ziehst über ein nummeriertes Brett mit hundert Feldern.",
+      "Leitern bringen dich hoch, Schlangen lassen dich rutschen; wer hundert erreicht, gewinnt."
+     ],
+     "q": "Es ist reines Glück, darum fair und lustig für ganz junge Spieler.",
+     "c": "Zeichne ein Brett mit zehn mal zehn Feldern, drei Schlangen und drei Leitern."
+    },
+    "es": {
+     "t": "Serpientes y escaleras",
+     "g": "Conoce un juego de la India sobre altibajos que encanta a niños de todo el mundo.",
+     "p": [
+      "Viene del juego indio Moksha Patam, que enseñaba buenas y malas acciones.",
+      "Tiras un dado y avanzas por un tablero numerado de cien casillas.",
+      "Las escaleras suben, las serpientes bajan; gana quien llega a cien."
+     ],
+     "q": "Es pura suerte, por eso es justo y divertido para los más pequeños.",
+     "c": "Dibuja un tablero de diez por diez con tres serpientes y tres escaleras."
+    },
+    "fr": {
+     "t": "Serpents et échelles",
+     "g": "Découvre un jeu indien de hauts et de bas aimé des enfants du monde entier.",
+     "p": [
+      "Il vient du jeu indien Moksha Patam, qui enseignait les bonnes et mauvaises actions.",
+      "Tu lances un dé et avances sur un plateau numéroté de cent cases.",
+      "Les échelles te font monter, les serpents glisser ; arriver à cent gagne."
+     ],
+     "q": "C'est un jeu de pur hasard, donc équitable et amusant pour les tout-petits.",
+     "c": "Dessine un plateau de dix par dix avec trois serpents et trois échelles."
+    },
+    "it": {
+     "t": "Serpenti e scale",
+     "g": "Conosci un gioco indiano di alti e bassi amato dai bambini di tutto il mondo.",
+     "p": [
+      "Deriva dal gioco indiano Moksha Patam, che insegnava azioni buone e cattive.",
+      "Lanci un dado e avanzi su un tabellone numerato di cento caselle.",
+      "Le scale ti portano su, i serpenti giù; chi arriva a cento vince."
+     ],
+     "q": "È pura fortuna, quindi equo e divertente per i più piccoli.",
+     "c": "Disegna un tabellone dieci per dieci con tre serpenti e tre scale."
+    },
+    "pt": {
+     "t": "Cobras e escadas",
+     "g": "Conhece um jogo da Índia sobre altos e baixos que as crianças amam em todo o mundo.",
+     "p": [
+      "Vem do jogo indiano Moksha Patam, que ensinava boas e más ações.",
+      "Lanças um dado e avanças num tabuleiro numerado de cem casas.",
+      "As escadas sobem-te, as cobras fazem-te descer; quem chega a cem ganha."
+     ],
+     "q": "É pura sorte, por isso é justo e divertido para os mais pequenos.",
+     "c": "Desenha um tabuleiro de dez por dez com três cobras e três escadas."
+    },
+    "pt_BR": {
+     "t": "Escadas e serpentes",
+     "g": "Conheça um jogo da Índia sobre altos e baixos que crianças amam no mundo todo.",
+     "p": [
+      "Vem do jogo indiano Moksha Patam, que ensinava boas e más ações.",
+      "Você joga o dado e avança num tabuleiro numerado de cem casas.",
+      "As escadas levam para cima, as serpentes para baixo; quem chega a cem vence."
+     ],
+     "q": "É pura sorte, por isso é justo e divertido para os pequenininhos.",
+     "c": "Desenhe um tabuleiro de dez por dez com três serpentes e três escadas."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dominoes",
+     "g": "Match spotted tiles in games played in many countries.",
+     "p": [
+      "A domino tile is split in two halves, each showing zero to six dots.",
+      "In the basic game you match a tile's end with an open end on the table.",
+      "The first player to use all their tiles wins the round."
+     ],
+     "q": "Dominoes are popular in China, Latin America, the Caribbean and Europe.",
+     "c": "Build a long domino line with ten tiles, matching ends each time."
+    },
+    "de": {
+     "t": "Domino",
+     "g": "Lege Steine mit Punkten aneinander in Spielen aus vielen Ländern.",
+     "p": [
+      "Ein Dominostein ist in zwei Hälften geteilt, jede mit null bis sechs Augen.",
+      "Im Grundspiel legst du ein Ende an ein offenes Ende auf dem Tisch.",
+      "Wer zuerst alle Steine los ist, gewinnt die Runde."
+     ],
+     "q": "Domino ist in China, Lateinamerika, der Karibik und Europa beliebt.",
+     "c": "Baue eine lange Dominoreihe aus zehn Steinen, immer Enden passend."
+    },
+    "es": {
+     "t": "Dominó",
+     "g": "Empareja fichas con puntos en juegos de muchos países.",
+     "p": [
+      "Una ficha de dominó está dividida en dos mitades de cero a seis puntos.",
+      "En el juego básico unes un extremo de tu ficha con uno abierto en la mesa.",
+      "Gana la ronda quien primero se queda sin fichas."
+     ],
+     "q": "El dominó es popular en China, Latinoamérica, el Caribe y Europa.",
+     "c": "Construye una fila larga de diez fichas, casando los extremos cada vez."
+    },
+    "fr": {
+     "t": "Les dominos",
+     "g": "Associe des tuiles à points dans des jeux joués dans de nombreux pays.",
+     "p": [
+      "Un domino est divisé en deux moitiés, chacune de zéro à six points.",
+      "Dans le jeu de base, tu relies un bout de ta tuile à un bout libre sur la table.",
+      "Le premier à poser toutes ses tuiles gagne la manche."
+     ],
+     "q": "Le domino est populaire en Chine, en Amérique latine, aux Caraïbes et en Europe.",
+     "c": "Construis une longue ligne de dix dominos en faisant correspondre les bouts."
+    },
+    "it": {
+     "t": "Domino",
+     "g": "Abbina tessere a puntini in giochi diffusi in molti paesi.",
+     "p": [
+      "Una tessera del domino è divisa in due metà, ciascuna da zero a sei punti.",
+      "Nel gioco base abbini un'estremità della tessera a una libera sul tavolo.",
+      "Vince il giro chi finisce per primo le proprie tessere."
+     ],
+     "q": "Il domino è popolare in Cina, America Latina, Caraibi ed Europa.",
+     "c": "Costruisci una lunga fila di dieci tessere, abbinando le estremità."
+    },
+    "pt": {
+     "t": "Dominó",
+     "g": "Combina peças com pintas em jogos de muitos países.",
+     "p": [
+      "Uma peça de dominó está dividida em duas metades de zero a seis pintas.",
+      "No jogo básico ligas uma ponta da peça a uma ponta livre na mesa.",
+      "Ganha a ronda quem primeiro ficar sem peças."
+     ],
+     "q": "O dominó é popular na China, na América Latina, nas Caraíbas e na Europa.",
+     "c": "Constrói uma fila longa de dez peças, casando as pontas de cada vez."
+    },
+    "pt_BR": {
+     "t": "Dominó",
+     "g": "Combine peças com pontinhos em jogos de muitos países.",
+     "p": [
+      "Uma peça de dominó é dividida em duas metades de zero a seis pontos.",
+      "No jogo básico você encaixa uma ponta da peça numa ponta livre da mesa.",
+      "Vence a rodada quem primeiro ficar sem peças."
+     ],
+     "q": "O dominó é popular na China, na América Latina, no Caribe e na Europa.",
+     "c": "Monte uma fila longa de dez peças, casando as pontas a cada vez."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: ancient and classic games",
+     "g": "Look back at the oldest games and place them on a world map.",
+     "p": [
+      "Ur and Senet come from the Middle East and Egypt; Go and xiangqi from China.",
+      "Pachisi and snakes and ladders come from India, mancala from Africa.",
+      "Backgammon, chess and checkers travelled and changed along trade routes."
+     ],
+     "q": "Which ancient game would you most like to try, and with whom?",
+     "c": "Draw a rough world map and mark where five games come from."
+    },
+    "de": {
+     "t": "Rückblick: Antike und klassische Spiele",
+     "g": "Blicke auf die ältesten Spiele zurück und ordne sie auf einer Weltkarte ein.",
+     "p": [
+      "Ur und Senet kommen aus dem Nahen Osten und Ägypten; Go und Xiangqi aus China.",
+      "Pachisi und Schlangen und Leitern stammen aus Indien, Mancala aus Afrika.",
+      "Backgammon, Schach und Dame wanderten und veränderten sich auf Handelswegen."
+     ],
+     "q": "Welches antike Spiel würdest du am liebsten ausprobieren, und mit wem?",
+     "c": "Zeichne eine grobe Weltkarte und markiere, woher fünf Spiele kommen."
+    },
+    "es": {
+     "t": "Repaso: juegos antiguos y clásicos",
+     "g": "Mira atrás los juegos más antiguos y colócalos en un mapa del mundo.",
+     "p": [
+      "Ur y senet vienen de Oriente Medio y Egipto; go y xiangqi, de China.",
+      "Pachisi y serpientes y escaleras vienen de la India, el mancala de África.",
+      "Backgammon, ajedrez y damas viajaron y cambiaron por las rutas comerciales."
+     ],
+     "q": "¿Qué juego antiguo te gustaría probar más, y con quién?",
+     "c": "Dibuja un mapamundi aproximado y marca de dónde vienen cinco juegos."
+    },
+    "fr": {
+     "t": "Révision : jeux anciens et classiques",
+     "g": "Reviens sur les plus vieux jeux et place-les sur une carte du monde.",
+     "p": [
+      "Ur et le senet viennent du Moyen-Orient et d'Égypte ; go et xiangqi de Chine.",
+      "Pachisi et serpents et échelles viennent d'Inde, le mancala d'Afrique.",
+      "Backgammon, échecs et dames ont voyagé et évolué le long des routes commerciales."
+     ],
+     "q": "Quel jeu ancien aimerais-tu essayer le plus, et avec qui ?",
+     "c": "Dessine une carte du monde approximative et marque l'origine de cinq jeux."
+    },
+    "it": {
+     "t": "Ripasso: giochi antichi e classici",
+     "g": "Guarda indietro ai giochi più antichi e collocali su una mappa del mondo.",
+     "p": [
+      "Ur e senet vengono dal Medio Oriente e dall'Egitto; go e xiangqi dalla Cina.",
+      "Pachisi e serpenti e scale vengono dall'India, il mancala dall'Africa.",
+      "Backgammon, scacchi e dama viaggiarono e cambiarono lungo le vie commerciali."
+     ],
+     "q": "Quale gioco antico vorresti provare di più, e con chi?",
+     "c": "Disegna una mappa del mondo approssimativa e segna da dove vengono cinque giochi."
+    },
+    "pt": {
+     "t": "Revisão: jogos antigos e clássicos",
+     "g": "Olha para trás, para os jogos mais antigos, e coloca-os num mapa-múndi.",
+     "p": [
+      "Ur e senet vêm do Médio Oriente e do Egito; go e xiangqi da China.",
+      "Pachisi e cobras e escadas vêm da Índia, o mancala de África.",
+      "Gamão, xadrez e damas viajaram e mudaram pelas rotas comerciais."
+     ],
+     "q": "Que jogo antigo gostarias mais de experimentar, e com quem?",
+     "c": "Desenha um mapa-múndi aproximado e marca de onde vêm cinco jogos."
+    },
+    "pt_BR": {
+     "t": "Revisão: jogos antigos e clássicos",
+     "g": "Olhe para trás, para os jogos mais antigos, e coloque-os num mapa-múndi.",
+     "p": [
+      "Ur e senet vêm do Oriente Médio e do Egito; go e xiangqi, da China.",
+      "Pachisi e escadas e serpentes vêm da Índia, o mancala da África.",
+      "Gamão, xadrez e damas viajaram e mudaram pelas rotas comerciais."
+     ],
+     "q": "Qual jogo antigo você mais gostaria de experimentar, e com quem?",
+     "c": "Desenhe um mapa-múndi aproximado e marque de onde vêm cinco jogos."
+    }
+   }
+  }
+ ]
+}

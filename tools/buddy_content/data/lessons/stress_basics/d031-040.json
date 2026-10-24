@@ -1,0 +1,835 @@
+{
+ "topic": "stress_basics",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Body first",
+     "g": "Learn why calming the body is often the quickest way to calm the mind.",
+     "p": [
+      "Body and mind talk to each other: a relaxed body sends a signal of safety to the brain.",
+      "When thoughts race, changing something physical can be easier than arguing with them.",
+      "Breath, movement and touch are tools you always carry with you."
+     ],
+     "q": "Which physical thing usually makes you feel a little calmer?",
+     "c": "Drop your shoulders and unclench your jaw right now, then notice the difference."
+    },
+    "de": {
+     "t": "Zuerst der Körper",
+     "g": "Lerne, warum den Körper zu beruhigen oft der schnellste Weg ist, auch den Geist zu beruhigen.",
+     "p": [
+      "Körper und Geist sprechen miteinander: Ein entspannter Körper sendet dem Gehirn ein Sicherheitssignal.",
+      "Wenn Gedanken rasen, ist etwas Körperliches zu verändern oft leichter, als mit ihnen zu streiten.",
+      "Atem, Bewegung und Berührung sind Werkzeuge, die du immer dabeihast."
+     ],
+     "q": "Was Körperliches beruhigt dich meistens ein wenig?",
+     "c": "Lass jetzt die Schultern sinken, löse den Kiefer und spüre den Unterschied."
+    },
+    "es": {
+     "t": "Primero el cuerpo",
+     "g": "Descubre por qué calmar el cuerpo suele ser la forma más rápida de calmar la mente.",
+     "p": [
+      "Cuerpo y mente se comunican: un cuerpo relajado envía al cerebro una señal de seguridad.",
+      "Cuando los pensamientos corren, cambiar algo físico es más fácil que discutir con ellos.",
+      "La respiración, el movimiento y el tacto son herramientas que siempre llevas contigo."
+     ],
+     "q": "¿Qué cosa física suele calmarte un poco?",
+     "c": "Suelta ahora los hombros, afloja la mandíbula y nota la diferencia."
+    },
+    "fr": {
+     "t": "Le corps d'abord",
+     "g": "Comprends pourquoi apaiser le corps est souvent le moyen le plus rapide d'apaiser l'esprit.",
+     "p": [
+      "Corps et esprit se parlent : un corps détendu envoie au cerveau un signal de sécurité.",
+      "Quand les pensées s'emballent, changer quelque chose de physique est plus simple que de les combattre.",
+      "Respiration, mouvement et toucher sont des outils que tu as toujours avec toi."
+     ],
+     "q": "Quelle chose physique t'apaise en général un peu ?",
+     "c": "Relâche maintenant tes épaules, détends ta mâchoire et sens la différence."
+    },
+    "it": {
+     "t": "Prima il corpo",
+     "g": "Scopri perché calmare il corpo è spesso il modo più rapido per calmare la mente.",
+     "p": [
+      "Corpo e mente si parlano: un corpo rilassato invia al cervello un segnale di sicurezza.",
+      "Quando i pensieri corrono, cambiare qualcosa di fisico è più facile che discutere con loro.",
+      "Respiro, movimento e tocco sono strumenti che hai sempre con te."
+     ],
+     "q": "Quale cosa fisica di solito ti calma un po'?",
+     "c": "Lascia ora cadere le spalle, rilassa la mascella e nota la differenza."
+    },
+    "pt": {
+     "t": "Primeiro o corpo",
+     "g": "Descobre porque acalmar o corpo é muitas vezes a forma mais rápida de acalmar a mente.",
+     "p": [
+      "Corpo e mente falam entre si: um corpo relaxado envia ao cérebro um sinal de segurança.",
+      "Quando os pensamentos aceleram, mudar algo físico é mais fácil do que discutir com eles.",
+      "Respiração, movimento e toque são ferramentas que levas sempre contigo."
+     ],
+     "q": "Que coisa física costuma acalmar-te um pouco?",
+     "c": "Deixa agora cair os ombros, solta o maxilar e repara na diferença."
+    },
+    "pt_BR": {
+     "t": "Primeiro o corpo",
+     "g": "Descubra por que acalmar o corpo costuma ser o jeito mais rápido de acalmar a mente.",
+     "p": [
+      "Corpo e mente conversam: um corpo relaxado envia ao cérebro um sinal de segurança.",
+      "Quando os pensamentos aceleram, mudar algo físico é mais fácil do que brigar com eles.",
+      "Respiração, movimento e toque são ferramentas que você sempre leva consigo."
+     ],
+     "q": "Que coisa física costuma acalmar você um pouco?",
+     "c": "Solte agora os ombros, relaxe a mandíbula e note a diferença."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Belly breathing",
+     "g": "Breathe slowly into your belly to signal safety to your body.",
+     "p": [
+      "Place a hand on your belly and breathe in through the nose so the hand rises gently.",
+      "Breathe out slowly through the mouth or nose and feel the hand sink.",
+      "Stress breathing is high in the chest; belly breathing tells the body it can relax."
+     ],
+     "q": "Where do you feel your breath most: chest or belly?",
+     "c": "Take five slow belly breaths with a hand on your tummy."
+    },
+    "de": {
+     "t": "Bauchatmung",
+     "g": "Atme langsam in den Bauch, um deinem Körper Sicherheit zu signalisieren.",
+     "p": [
+      "Lege eine Hand auf den Bauch und atme durch die Nase ein, sodass die Hand sich sanft hebt.",
+      "Atme langsam durch Mund oder Nase aus und spüre, wie die Hand sinkt.",
+      "Stressatmung sitzt hoch in der Brust; Bauchatmung sagt dem Körper, dass er entspannen darf."
+     ],
+     "q": "Wo spürst du deinen Atem mehr: in der Brust oder im Bauch?",
+     "c": "Mache fünf langsame Bauchatemzüge mit einer Hand auf dem Bauch."
+    },
+    "es": {
+     "t": "Respiración abdominal",
+     "g": "Respira despacio hacia el abdomen para dar a tu cuerpo una señal de seguridad.",
+     "p": [
+      "Pon una mano en el vientre e inspira por la nariz para que la mano suba suavemente.",
+      "Espira despacio por la boca o la nariz y siente cómo baja la mano.",
+      "La respiración de estrés es alta, en el pecho; la abdominal dice al cuerpo que puede relajarse."
+     ],
+     "q": "¿Dónde notas más tu respiración: en el pecho o en el vientre?",
+     "c": "Haz cinco respiraciones lentas hacia el vientre con una mano sobre la barriga."
+    },
+    "fr": {
+     "t": "Respiration abdominale",
+     "g": "Respire lentement dans le ventre pour signaler la sécurité à ton corps.",
+     "p": [
+      "Pose une main sur ton ventre et inspire par le nez pour que la main se soulève doucement.",
+      "Expire lentement par la bouche ou le nez et sens la main redescendre.",
+      "La respiration de stress est haute, dans la poitrine; celle du ventre dit au corps qu'il peut se détendre."
+     ],
+     "q": "Où sens-tu le plus ta respiration : dans la poitrine ou dans le ventre ?",
+     "c": "Fais cinq respirations lentes dans le ventre, une main posée dessus."
+    },
+    "it": {
+     "t": "Respirazione addominale",
+     "g": "Respira lentamente nella pancia per dare al corpo un segnale di sicurezza.",
+     "p": [
+      "Appoggia una mano sulla pancia e inspira dal naso in modo che la mano si sollevi piano.",
+      "Espira lentamente da bocca o naso e senti la mano abbassarsi.",
+      "Il respiro da stress è alto, nel petto; quello addominale dice al corpo che può rilassarsi."
+     ],
+     "q": "Dove senti di più il respiro: nel petto o nella pancia?",
+     "c": "Fai cinque respiri lenti nella pancia con una mano sull'addome."
+    },
+    "pt": {
+     "t": "Respiração abdominal",
+     "g": "Respira devagar para a barriga para dares ao corpo um sinal de segurança.",
+     "p": [
+      "Põe uma mão na barriga e inspira pelo nariz para a mão subir suavemente.",
+      "Expira devagar pela boca ou pelo nariz e sente a mão descer.",
+      "A respiração de stress fica alta, no peito; a abdominal diz ao corpo que pode relaxar."
+     ],
+     "q": "Onde sentes mais a respiração: no peito ou na barriga?",
+     "c": "Faz cinco respirações lentas para a barriga com uma mão sobre ela."
+    },
+    "pt_BR": {
+     "t": "Respiração abdominal",
+     "g": "Respire devagar para a barriga para dar ao corpo um sinal de segurança.",
+     "p": [
+      "Ponha uma mão na barriga e inspire pelo nariz para a mão subir suavemente.",
+      "Expire devagar pela boca ou pelo nariz e sinta a mão descer.",
+      "A respiração do estresse fica alta, no peito; a abdominal diz ao corpo que ele pode relaxar."
+     ],
+     "q": "Onde você sente mais a respiração: no peito ou na barriga?",
+     "c": "Faça cinco respirações lentas para a barriga com uma mão sobre ela."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Box breathing",
+     "g": "Try the pattern inhale, hold, exhale, hold for four counts each.",
+     "p": [
+      "Breathe in for four counts, hold for four, breathe out for four, hold for four.",
+      "Picture tracing the sides of a square as you go, to keep your mind busy and calm.",
+      "If four feels hard, use three; comfort matters more than counting perfectly."
+     ],
+     "q": "Did the counting make it easier or harder to focus on your breath?",
+     "c": "Do four rounds of box breathing and stop if you feel dizzy."
+    },
+    "de": {
+     "t": "Box-Atmung",
+     "g": "Probiere das Muster ein, halten, aus, halten, jeweils vier Zähler lang.",
+     "p": [
+      "Atme vier Zähler ein, halte vier, atme vier aus, halte vier.",
+      "Stell dir vor, die Seiten eines Quadrats nachzuzeichnen, das beschäftigt und beruhigt den Kopf.",
+      "Wenn vier schwerfällt, nimm drei; Wohlgefühl zählt mehr als perfektes Zählen."
+     ],
+     "q": "Hat das Zählen es leichter oder schwerer gemacht, beim Atem zu bleiben?",
+     "c": "Mache vier Runden Box-Atmung und höre auf, falls dir schwindlig wird."
+    },
+    "es": {
+     "t": "Respiración cuadrada",
+     "g": "Prueba el patrón inspirar, sostener, espirar, sostener, de cuatro tiempos cada uno.",
+     "p": [
+      "Inspira cuatro tiempos, sostén cuatro, espira cuatro y sostén cuatro.",
+      "Imagina que recorres los lados de un cuadrado para mantener la mente ocupada y en calma.",
+      "Si cuatro cuesta, usa tres; la comodidad importa más que contar perfecto."
+     ],
+     "q": "¿Contar te ayudó o te dificultó concentrarte en la respiración?",
+     "c": "Haz cuatro rondas de respiración cuadrada y para si te mareas."
+    },
+    "fr": {
+     "t": "Respiration en carré",
+     "g": "Essaie le schéma inspirer, retenir, expirer, retenir, quatre temps chacun.",
+     "p": [
+      "Inspire quatre temps, retiens quatre, expire quatre, retiens quatre.",
+      "Imagine que tu suis les côtés d'un carré pour occuper ton esprit tout en le calmant.",
+      "Si quatre est difficile, prends trois; le confort compte plus que de compter parfaitement."
+     ],
+     "q": "Compter t'a-t-il aidé ou gêné pour te concentrer sur ton souffle ?",
+     "c": "Fais quatre tours de respiration en carré et arrête-toi si tu as la tête qui tourne."
+    },
+    "it": {
+     "t": "Respirazione a quadrato",
+     "g": "Prova lo schema inspira, trattieni, espira, trattieni, quattro tempi ciascuno.",
+     "p": [
+      "Inspira per quattro tempi, trattieni per quattro, espira per quattro, trattieni per quattro.",
+      "Immagina di tracciare i lati di un quadrato per tenere la mente occupata e calma.",
+      "Se quattro è difficile, usa tre; il comfort conta più del contare alla perfezione."
+     ],
+     "q": "Contare ti ha aiutato o reso più difficile concentrarti sul respiro?",
+     "c": "Fai quattro giri di respirazione a quadrato e fermati se ti gira la testa."
+    },
+    "pt": {
+     "t": "Respiração em quadrado",
+     "g": "Experimenta o padrão inspirar, reter, expirar, reter, quatro tempos cada.",
+     "p": [
+      "Inspira quatro tempos, retém quatro, expira quatro e retém quatro.",
+      "Imagina que percorres os lados de um quadrado para ocupar e acalmar a mente.",
+      "Se quatro custar, usa três; o conforto importa mais do que contar na perfeição."
+     ],
+     "q": "Contar ajudou ou dificultou a concentração na respiração?",
+     "c": "Faz quatro rondas de respiração em quadrado e pára se sentires tonturas."
+    },
+    "pt_BR": {
+     "t": "Respiração em quadrado",
+     "g": "Experimente o padrão inspirar, reter, expirar, reter, quatro tempos cada.",
+     "p": [
+      "Inspire quatro tempos, retenha quatro, expire quatro e retenha quatro.",
+      "Imagine percorrer os lados de um quadrado para ocupar e acalmar a mente.",
+      "Se quatro for difícil, use três; o conforto importa mais do que contar com perfeição."
+     ],
+     "q": "Contar ajudou ou atrapalhou a concentração na respiração?",
+     "c": "Faça quatro rodadas de respiração em quadrado e pare se sentir tontura."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Longer exhales",
+     "g": "Find out why breathing out longer than you breathe in tends to relax you.",
+     "p": [
+      "A long exhale nudges the body toward its resting mode and slows the heartbeat a little.",
+      "Try in for three counts and out for five, without forcing anything.",
+      "Keep the breath soft and easy; this is not a contest."
+     ],
+     "q": "How did your body feel after a few long exhales?",
+     "c": "Do six breaths with a longer out-breath, such as in for three and out for five."
+    },
+    "de": {
+     "t": "Längere Ausatmung",
+     "g": "Erfahre, warum längeres Ausatmen als Einatmen meist entspannt.",
+     "p": [
+      "Eine lange Ausatmung schiebt den Körper in den Ruhemodus und verlangsamt den Herzschlag etwas.",
+      "Probiere drei Zähler ein und fünf aus, ohne etwas zu erzwingen.",
+      "Halte den Atem weich und leicht; es ist kein Wettbewerb."
+     ],
+     "q": "Wie fühlte sich dein Körper nach ein paar langen Ausatmungen an?",
+     "c": "Mache sechs Atemzüge mit längerer Ausatmung, etwa drei ein und fünf aus."
+    },
+    "es": {
+     "t": "Exhalaciones más largas",
+     "g": "Descubre por qué espirar más tiempo del que inspiras suele relajar.",
+     "p": [
+      "Una espiración larga empuja al cuerpo hacia su modo de reposo y baja un poco el pulso.",
+      "Prueba inspirar tres tiempos y espirar cinco, sin forzar nada.",
+      "Mantén la respiración suave y fácil; no es una competición."
+     ],
+     "q": "¿Cómo se sintió tu cuerpo tras unas cuantas exhalaciones largas?",
+     "c": "Haz seis respiraciones con espiración más larga, como tres dentro y cinco fuera."
+    },
+    "fr": {
+     "t": "Des expirations plus longues",
+     "g": "Découvre pourquoi expirer plus longtemps qu'on inspire détend en général.",
+     "p": [
+      "Une longue expiration pousse le corps vers son mode repos et ralentit un peu le cœur.",
+      "Essaie trois temps pour inspirer et cinq pour expirer, sans rien forcer.",
+      "Garde le souffle doux et facile; ce n'est pas une compétition."
+     ],
+     "q": "Comment ton corps s'est-il senti après quelques longues expirations ?",
+     "c": "Fais six respirations avec une expiration plus longue, par exemple trois temps dedans, cinq dehors."
+    },
+    "it": {
+     "t": "Espirazioni più lunghe",
+     "g": "Scopri perché espirare più a lungo di quanto si inspiri tende a rilassare.",
+     "p": [
+      "Una lunga espirazione spinge il corpo verso la modalità di riposo e rallenta un po' il battito.",
+      "Prova tre tempi per inspirare e cinque per espirare, senza forzare nulla.",
+      "Tieni il respiro morbido e facile; non è una gara."
+     ],
+     "q": "Come si è sentito il tuo corpo dopo alcune espirazioni lunghe?",
+     "c": "Fai sei respiri con espirazione più lunga, ad esempio tre dentro e cinque fuori."
+    },
+    "pt": {
+     "t": "Expirações mais longas",
+     "g": "Descobre porque expirar mais tempo do que inspiras costuma relaxar.",
+     "p": [
+      "Uma expiração longa empurra o corpo para o modo de repouso e abranda um pouco o coração.",
+      "Experimenta três tempos a inspirar e cinco a expirar, sem forçar nada.",
+      "Mantém a respiração suave e fácil; não é uma competição."
+     ],
+     "q": "Como se sentiu o teu corpo depois de algumas expirações longas?",
+     "c": "Faz seis respirações com expiração mais longa, como três para dentro e cinco para fora."
+    },
+    "pt_BR": {
+     "t": "Expirações mais longas",
+     "g": "Descubra por que expirar por mais tempo do que inspirar costuma relaxar.",
+     "p": [
+      "Uma expiração longa empurra o corpo para o modo de repouso e desacelera um pouco o coração.",
+      "Experimente três tempos para inspirar e cinco para expirar, sem forçar nada.",
+      "Mantenha a respiração suave e fácil; não é uma competição."
+     ],
+     "q": "Como o seu corpo se sentiu depois de algumas expirações longas?",
+     "c": "Faça seis respirações com expiração mais longa, como três para dentro e cinco para fora."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Breathing on the go",
+     "g": "Use quick breathing exercises on the bus, at work or in a queue.",
+     "p": [
+      "Breathing is invisible, so you can practise it anywhere without anyone noticing.",
+      "Use waiting moments like red lights, lifts or queues as free reminders.",
+      "Even three slow breaths between tasks can reset your pace."
+     ],
+     "q": "Where in your day are you usually waiting with nothing to do?",
+     "c": "Use one waiting moment today for three slow breaths."
+    },
+    "de": {
+     "t": "Atmen unterwegs",
+     "g": "Nutze kurze Atemübungen im Bus, bei der Arbeit oder in der Warteschlange.",
+     "p": [
+      "Atmen ist unsichtbar, also kannst du es überall üben, ohne dass es jemand merkt.",
+      "Nutze Wartezeiten wie rote Ampeln, Aufzüge oder Schlangen als kostenlose Erinnerung.",
+      "Schon drei langsame Atemzüge zwischen Aufgaben können dein Tempo zurücksetzen."
+     ],
+     "q": "Wo wartest du im Alltag meist, ohne etwas zu tun?",
+     "c": "Nutze heute einen Wartemoment für drei langsame Atemzüge."
+    },
+    "es": {
+     "t": "Respirar sobre la marcha",
+     "g": "Usa ejercicios de respiración rápidos en el autobús, en el trabajo o en una cola.",
+     "p": [
+      "Respirar es invisible, así que puedes practicarlo en cualquier sitio sin que nadie lo note.",
+      "Usa los momentos de espera, como semáforos, ascensores o colas, como recordatorios gratis.",
+      "Incluso tres respiraciones lentas entre tareas pueden reiniciar tu ritmo."
+     ],
+     "q": "¿En qué momentos del día sueles esperar sin hacer nada?",
+     "c": "Usa hoy un momento de espera para tres respiraciones lentas."
+    },
+    "fr": {
+     "t": "Respirer en chemin",
+     "g": "Utilise de rapides exercices de respiration dans le bus, au travail ou dans une file d'attente.",
+     "p": [
+      "Respirer est invisible : tu peux t'exercer partout sans que personne ne le remarque.",
+      "Utilise les moments d'attente, feux rouges, ascenseurs ou files, comme rappels gratuits.",
+      "Même trois respirations lentes entre deux tâches peuvent remettre ton rythme à zéro."
+     ],
+     "q": "À quels moments de ta journée attends-tu sans rien faire ?",
+     "c": "Profite aujourd'hui d'un moment d'attente pour trois respirations lentes."
+    },
+    "it": {
+     "t": "Respirare in movimento",
+     "g": "Usa rapidi esercizi di respirazione sull'autobus, al lavoro o in coda.",
+     "p": [
+      "Respirare è invisibile, quindi puoi esercitarti ovunque senza che nessuno se ne accorga.",
+      "Usa i momenti di attesa, come semafori, ascensori o code, come promemoria gratuiti.",
+      "Anche tre respiri lenti tra un compito e l'altro possono azzerare il tuo ritmo."
+     ],
+     "q": "In quali momenti della giornata aspetti di solito senza fare nulla?",
+     "c": "Usa oggi un momento di attesa per tre respiri lenti."
+    },
+    "pt": {
+     "t": "Respirar em andamento",
+     "g": "Usa exercícios de respiração rápidos no autocarro, no trabalho ou numa fila.",
+     "p": [
+      "Respirar é invisível, por isso podes praticar em qualquer lado sem que ninguém note.",
+      "Usa os momentos de espera, como semáforos, elevadores ou filas, como lembretes grátis.",
+      "Até três respirações lentas entre tarefas podem repor o teu ritmo."
+     ],
+     "q": "Em que momentos do dia costumas esperar sem fazer nada?",
+     "c": "Usa hoje um momento de espera para três respirações lentas."
+    },
+    "pt_BR": {
+     "t": "Respirar em movimento",
+     "g": "Use exercícios de respiração rápidos no ônibus, no trabalho ou numa fila.",
+     "p": [
+      "Respirar é invisível, então você pode praticar em qualquer lugar sem ninguém perceber.",
+      "Use os momentos de espera, como sinais fechados, elevadores ou filas, como lembretes grátis.",
+      "Até três respirações lentas entre tarefas podem reiniciar o seu ritmo."
+     ],
+     "q": "Em que momentos do dia você costuma esperar sem fazer nada?",
+     "c": "Use hoje um momento de espera para três respirações lentas."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Releasing your shoulders",
+     "g": "Notice tension in neck and shoulders and let it drop.",
+     "p": [
+      "Many of us lift our shoulders toward our ears when stressed without noticing.",
+      "Lift them gently, hold a moment, then let them drop and feel the heaviness leave.",
+      "Slow neck rolls, done gently, can also ease tightness from desk or phone time."
+     ],
+     "q": "How often do you catch your shoulders up near your ears?",
+     "c": "Set a reminder and drop your shoulders three times today."
+    },
+    "de": {
+     "t": "Schultern loslassen",
+     "g": "Bemerke Spannung in Nacken und Schultern und lass sie sinken.",
+     "p": [
+      "Viele ziehen bei Stress die Schultern Richtung Ohren, ohne es zu merken.",
+      "Hebe sie sanft, halte kurz, lass sie fallen und spüre, wie die Schwere weicht.",
+      "Langsames, sanftes Nackenkreisen kann auch Verspannung von Schreibtisch und Handy lösen."
+     ],
+     "q": "Wie oft ertappst du deine Schultern nah an den Ohren?",
+     "c": "Stelle eine Erinnerung ein und lass heute dreimal die Schultern sinken."
+    },
+    "es": {
+     "t": "Soltar los hombros",
+     "g": "Nota la tensión en cuello y hombros y déjala caer.",
+     "p": [
+      "Muchos subimos los hombros hacia las orejas con estrés sin darnos cuenta.",
+      "Súbelos con suavidad, mantén un momento, suéltalos y siente cómo se va el peso.",
+      "Giros lentos y suaves de cuello también alivian la tensión del escritorio o el móvil."
+     ],
+     "q": "¿Con qué frecuencia pillas tus hombros cerca de las orejas?",
+     "c": "Pon un recordatorio y suelta los hombros tres veces hoy."
+    },
+    "fr": {
+     "t": "Relâcher les épaules",
+     "g": "Remarque la tension dans la nuque et les épaules et laisse-la tomber.",
+     "p": [
+      "Beaucoup d'entre nous remontent les épaules vers les oreilles sous stress sans le remarquer.",
+      "Lève-les doucement, tiens un instant, puis laisse-les tomber et sens la lourdeur partir.",
+      "De lentes rotations douces de la nuque peuvent aussi soulager la tension du bureau ou du téléphone."
+     ],
+     "q": "À quelle fréquence surprends-tu tes épaules près de tes oreilles ?",
+     "c": "Programme un rappel et relâche tes épaules trois fois aujourd'hui."
+    },
+    "it": {
+     "t": "Rilassare le spalle",
+     "g": "Nota la tensione in collo e spalle e lasciala cadere.",
+     "p": [
+      "Molti sollevano le spalle verso le orecchie sotto stress senza accorgersene.",
+      "Sollevale piano, tieni un attimo, poi lasciale cadere e senti andare via il peso.",
+      "Lente rotazioni dolci del collo possono anche sciogliere la tensione da scrivania o telefono."
+     ],
+     "q": "Quanto spesso sorprendi le spalle vicino alle orecchie?",
+     "c": "Imposta un promemoria e lascia cadere le spalle tre volte oggi."
+    },
+    "pt": {
+     "t": "Soltar os ombros",
+     "g": "Repara na tensão no pescoço e nos ombros e deixa-a cair.",
+     "p": [
+      "Muitos de nós levantamos os ombros para as orelhas com stress sem darmos conta.",
+      "Levanta-os com suavidade, mantém um momento, solta-os e sente o peso a ir embora.",
+      "Rotações lentas e suaves do pescoço também aliviam a tensão da secretária ou do telemóvel."
+     ],
+     "q": "Com que frequência apanhas os ombros junto às orelhas?",
+     "c": "Põe um lembrete e solta os ombros três vezes hoje."
+    },
+    "pt_BR": {
+     "t": "Soltar os ombros",
+     "g": "Note a tensão no pescoço e nos ombros e deixe-a cair.",
+     "p": [
+      "Muitos de nós levantam os ombros até as orelhas com estresse sem perceber.",
+      "Levante-os com suavidade, segure um momento, solte e sinta o peso ir embora.",
+      "Giros lentos e suaves do pescoço também aliviam a tensão da mesa de trabalho ou do celular."
+     ],
+     "q": "Com que frequência você pega os ombros colados nas orelhas?",
+     "c": "Coloque um lembrete e solte os ombros três vezes hoje."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Progressive muscle relaxation",
+     "g": "Tense and release muscle groups one at a time.",
+     "p": [
+      "Tense one muscle group for about five seconds, then release it fully for ten.",
+      "Move through hands, arms, shoulders, face, belly, legs and feet in order.",
+      "The contrast teaches you what relaxed actually feels like."
+     ],
+     "q": "Which part of your body surprised you with how tight it was?",
+     "c": "Try it on your hands and shoulders only, and skip any part that hurts."
+    },
+    "de": {
+     "t": "Progressive Muskelentspannung",
+     "g": "Spanne Muskelgruppen nacheinander an und lass sie wieder los.",
+     "p": [
+      "Spanne eine Muskelgruppe etwa fünf Sekunden an und löse sie dann zehn Sekunden ganz.",
+      "Gehe der Reihe nach durch Hände, Arme, Schultern, Gesicht, Bauch, Beine und Füße.",
+      "Der Kontrast lehrt dich, wie sich entspannt wirklich anfühlt."
+     ],
+     "q": "Welcher Körperteil hat dich mit seiner Anspannung überrascht?",
+     "c": "Probiere es nur an Händen und Schultern und lasse aus, was schmerzt."
+    },
+    "es": {
+     "t": "Relajación muscular progresiva",
+     "g": "Tensa y suelta grupos musculares uno por uno.",
+     "p": [
+      "Tensa un grupo muscular unos cinco segundos y luego suéltalo por completo diez.",
+      "Recorre manos, brazos, hombros, cara, vientre, piernas y pies en orden.",
+      "El contraste te enseña cómo se siente realmente estar relajado."
+     ],
+     "q": "¿Qué parte de tu cuerpo te sorprendió por lo tensa que estaba?",
+     "c": "Pruébalo solo con manos y hombros y omite cualquier parte que duela."
+    },
+    "fr": {
+     "t": "Relaxation musculaire progressive",
+     "g": "Contracte et relâche les groupes musculaires un par un.",
+     "p": [
+      "Contracte un groupe musculaire environ cinq secondes, puis relâche-le complètement dix secondes.",
+      "Passe en revue mains, bras, épaules, visage, ventre, jambes et pieds dans l'ordre.",
+      "Le contraste t'apprend ce que détendu veut vraiment dire."
+     ],
+     "q": "Quelle partie de ton corps t'a surpris par sa tension ?",
+     "c": "Essaie seulement avec les mains et les épaules, et saute toute zone qui fait mal."
+    },
+    "it": {
+     "t": "Rilassamento muscolare progressivo",
+     "g": "Contrai e rilascia i gruppi muscolari uno alla volta.",
+     "p": [
+      "Contrai un gruppo muscolare per circa cinque secondi, poi rilascialo completamente per dieci.",
+      "Passa in ordine mani, braccia, spalle, viso, pancia, gambe e piedi.",
+      "Il contrasto ti insegna come si sente davvero il rilassamento."
+     ],
+     "q": "Quale parte del corpo ti ha sorpreso per quanto era tesa?",
+     "c": "Provalo solo su mani e spalle e salta ogni parte che fa male."
+    },
+    "pt": {
+     "t": "Relaxamento muscular progressivo",
+     "g": "Contrai e solta grupos musculares um a um.",
+     "p": [
+      "Contrai um grupo muscular cerca de cinco segundos e depois solta-o por completo dez.",
+      "Percorre mãos, braços, ombros, cara, barriga, pernas e pés por ordem.",
+      "O contraste ensina-te como se sente realmente estar relaxado."
+     ],
+     "q": "Que parte do teu corpo te surpreendeu pela tensão?",
+     "c": "Experimenta só com mãos e ombros e salta qualquer parte que doa."
+    },
+    "pt_BR": {
+     "t": "Relaxamento muscular progressivo",
+     "g": "Contraia e solte grupos musculares um por um.",
+     "p": [
+      "Contraia um grupo muscular por cerca de cinco segundos e depois solte por completo por dez.",
+      "Passe por mãos, braços, ombros, rosto, barriga, pernas e pés em ordem.",
+      "O contraste ensina como o relaxamento realmente é."
+     ],
+     "q": "Que parte do seu corpo surpreendeu você pela tensão?",
+     "c": "Experimente só com mãos e ombros e pule qualquer parte que doa."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gentle stretching breaks",
+     "g": "Use simple stretches to release tension during the day.",
+     "p": [
+      "Stand up, reach your arms overhead and stretch tall for a few slow breaths.",
+      "Gently tilt your head to each side and open your chest with arms behind you.",
+      "Stretch only to a comfortable point; it should never hurt."
+     ],
+     "q": "At what time of day does your body most ask for a stretch?",
+     "c": "Take a two-minute stretch break at a time you usually stay seated."
+    },
+    "de": {
+     "t": "Sanfte Dehnpausen",
+     "g": "Löse mit einfachen Dehnungen Spannung im Laufe des Tages.",
+     "p": [
+      "Steh auf, strecke die Arme nach oben und mach dich für ein paar langsame Atemzüge lang.",
+      "Neige den Kopf sanft zu jeder Seite und öffne die Brust, die Arme hinter dir.",
+      "Dehne nur bis zu einem angenehmen Punkt; es sollte nie wehtun."
+     ],
+     "q": "Zu welcher Tageszeit verlangt dein Körper am meisten nach Dehnung?",
+     "c": "Mache eine Zwei-Minuten-Dehnpause zu einer Zeit, in der du sonst sitzt."
+    },
+    "es": {
+     "t": "Pausas de estiramiento suave",
+     "g": "Usa estiramientos sencillos para soltar tensión durante el día.",
+     "p": [
+      "Ponte de pie, estira los brazos hacia arriba y alárgate durante unas respiraciones lentas.",
+      "Inclina suavemente la cabeza a cada lado y abre el pecho con los brazos atrás.",
+      "Estira solo hasta un punto cómodo; nunca debe doler."
+     ],
+     "q": "¿A qué hora del día tu cuerpo pide más un estiramiento?",
+     "c": "Haz una pausa de estiramiento de dos minutos cuando sueles estar sentado."
+    },
+    "fr": {
+     "t": "Pauses d'étirements doux",
+     "g": "Utilise de simples étirements pour relâcher la tension pendant la journée.",
+     "p": [
+      "Lève-toi, étire les bras au-dessus de la tête et grandis-toi pendant quelques respirations lentes.",
+      "Incline doucement la tête de chaque côté et ouvre la poitrine, bras en arrière.",
+      "Étire-toi seulement jusqu'à un point confortable; cela ne doit jamais faire mal."
+     ],
+     "q": "À quel moment de la journée ton corps réclame-t-il le plus un étirement ?",
+     "c": "Fais une pause d'étirements de deux minutes à un moment où tu restes assis."
+    },
+    "it": {
+     "t": "Pause di stretching dolce",
+     "g": "Usa semplici stiramenti per sciogliere la tensione durante il giorno.",
+     "p": [
+      "Alzati, porta le braccia sopra la testa e allungati per qualche respiro lento.",
+      "Inclina dolcemente la testa da ogni lato e apri il petto con le braccia dietro.",
+      "Allungati solo fino a un punto comodo; non deve mai far male."
+     ],
+     "q": "In quale momento della giornata il tuo corpo chiede di più uno stiramento?",
+     "c": "Fai una pausa di stretching di due minuti quando di solito stai seduto."
+    },
+    "pt": {
+     "t": "Pausas de alongamento suave",
+     "g": "Usa alongamentos simples para libertar tensão durante o dia.",
+     "p": [
+      "Põe-te de pé, estica os braços para cima e alonga-te durante algumas respirações lentas.",
+      "Inclina suavemente a cabeça para cada lado e abre o peito com os braços atrás.",
+      "Alonga só até um ponto confortável; nunca deve doer."
+     ],
+     "q": "A que hora do dia o teu corpo mais pede um alongamento?",
+     "c": "Faz uma pausa de alongamento de dois minutos quando costumas estar sentado."
+    },
+    "pt_BR": {
+     "t": "Pausas de alongamento suave",
+     "g": "Use alongamentos simples para soltar a tensão durante o dia.",
+     "p": [
+      "Fique de pé, estique os braços para cima e se alongue por algumas respirações lentas.",
+      "Incline suavemente a cabeça para cada lado e abra o peito com os braços para trás.",
+      "Alongue só até um ponto confortável; nunca deve doer."
+     ],
+     "q": "Em que horário do dia seu corpo mais pede um alongamento?",
+     "c": "Faça uma pausa de alongamento de dois minutos num horário em que costuma ficar sentado."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shake it off",
+     "g": "Use light shaking and movement to release nervous energy.",
+     "p": [
+      "Animals shake after a scare, and we can do the same to let nervous energy go.",
+      "Shake your hands, arms, legs and shoulders loosely for thirty seconds.",
+      "It may feel silly, and that is fine: silly often helps tension melt."
+     ],
+     "q": "Do you feel jittery or restless when stress is high?",
+     "c": "Shake out your hands and legs for thirty seconds, then stand still and notice."
+    },
+    "de": {
+     "t": "Abschütteln",
+     "g": "Löse nervöse Energie mit leichtem Schütteln und Bewegung.",
+     "p": [
+      "Tiere schütteln sich nach einem Schreck, und wir können nervöse Energie ebenso loslassen.",
+      "Schüttle Hände, Arme, Beine und Schultern locker für dreißig Sekunden.",
+      "Es mag albern wirken, und das ist okay: Albernheit löst oft Spannung."
+     ],
+     "q": "Fühlst du dich bei viel Stress zittrig oder unruhig?",
+     "c": "Schüttle Hände und Beine dreißig Sekunden aus, dann steh still und spüre nach."
+    },
+    "es": {
+     "t": "Sacúdelo",
+     "g": "Usa sacudidas suaves y movimiento para liberar la energía nerviosa.",
+     "p": [
+      "Los animales se sacuden tras un susto y nosotros podemos hacer lo mismo para soltar la energía nerviosa.",
+      "Sacude manos, brazos, piernas y hombros con soltura durante treinta segundos.",
+      "Puede parecer tonto, y está bien: lo tonto suele ayudar a que la tensión se derrita."
+     ],
+     "q": "¿Te sientes inquieto o con nervios cuando el estrés es alto?",
+     "c": "Sacude manos y piernas treinta segundos y luego quédate quieto y nota."
+    },
+    "fr": {
+     "t": "Secoue tout ça",
+     "g": "Utilise de légères secousses et du mouvement pour libérer l'énergie nerveuse.",
+     "p": [
+      "Les animaux se secouent après une frayeur, et nous pouvons faire de même pour évacuer l'énergie nerveuse.",
+      "Secoue mains, bras, jambes et épaules librement pendant trente secondes.",
+      "Cela peut sembler bête, et c'est très bien : le côté bête aide souvent la tension à fondre."
+     ],
+     "q": "Te sens-tu agité ou fébrile quand le stress est élevé ?",
+     "c": "Secoue tes mains et tes jambes trente secondes, puis reste immobile et observe."
+    },
+    "it": {
+     "t": "Scrollatelo di dosso",
+     "g": "Usa leggeri scossoni e movimento per scaricare l'energia nervosa.",
+     "p": [
+      "Gli animali si scuotono dopo uno spavento e noi possiamo fare lo stesso per scaricare l'energia nervosa.",
+      "Scuoti mani, braccia, gambe e spalle in modo sciolto per trenta secondi.",
+      "Può sembrare buffo, e va bene: il buffo spesso aiuta la tensione a sciogliersi."
+     ],
+     "q": "Ti senti agitato o irrequieto quando lo stress è alto?",
+     "c": "Scuoti mani e gambe per trenta secondi, poi stai fermo e osserva."
+    },
+    "pt": {
+     "t": "Sacode isso fora",
+     "g": "Usa abanões leves e movimento para libertar a energia nervosa.",
+     "p": [
+      "Os animais sacodem-se depois de um susto e nós podemos fazer o mesmo para largar a energia nervosa.",
+      "Sacode mãos, braços, pernas e ombros à vontade durante trinta segundos.",
+      "Pode parecer parvo, e tudo bem: o parvo muitas vezes ajuda a tensão a derreter."
+     ],
+     "q": "Sentes-te inquieto ou agitado quando o stress é alto?",
+     "c": "Sacode mãos e pernas trinta segundos, depois fica parado e repara."
+    },
+    "pt_BR": {
+     "t": "Sacuda para fora",
+     "g": "Use sacudidas leves e movimento para soltar a energia nervosa.",
+     "p": [
+      "Os animais se sacodem depois de um susto e nós podemos fazer o mesmo para soltar a energia nervosa.",
+      "Sacuda mãos, braços, pernas e ombros à vontade por trinta segundos.",
+      "Pode parecer bobo, e tudo bem: o bobo muitas vezes ajuda a tensão a derreter."
+     ],
+     "q": "Você se sente agitado ou inquieto quando o estresse está alto?",
+     "c": "Sacuda mãos e pernas por trinta segundos, depois fique parado e observe."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Walking it out",
+     "g": "Discover why a short walk is one of the simplest stress relievers.",
+     "p": [
+      "Walking uses the whole body, gives your eyes something new and clears the head.",
+      "Even ten minutes at an easy pace can lower tension and lift mood.",
+      "Leave the phone in your pocket and notice sounds, air and the rhythm of your steps."
+     ],
+     "q": "Where is your favourite place for a short walk?",
+     "c": "Take a ten-minute walk today, mostly without looking at your phone."
+    },
+    "de": {
+     "t": "Den Stress weglaufen",
+     "g": "Entdecke, warum ein kurzer Spaziergang eines der einfachsten Mittel gegen Stress ist.",
+     "p": [
+      "Gehen nutzt den ganzen Körper, gibt den Augen Neues und macht den Kopf frei.",
+      "Schon zehn Minuten im lockeren Tempo können Spannung senken und die Stimmung heben.",
+      "Lass das Handy in der Tasche und achte auf Geräusche, Luft und den Rhythmus deiner Schritte."
+     ],
+     "q": "Wo ist dein Lieblingsort für einen kurzen Spaziergang?",
+     "c": "Mache heute einen zehnminütigen Spaziergang, möglichst ohne aufs Handy zu schauen."
+    },
+    "es": {
+     "t": "Caminar para soltar",
+     "g": "Descubre por qué un paseo corto es uno de los aliviadores de estrés más sencillos.",
+     "p": [
+      "Caminar usa todo el cuerpo, da a la vista algo nuevo y despeja la cabeza.",
+      "Incluso diez minutos a ritmo tranquilo pueden bajar la tensión y animar el ánimo.",
+      "Deja el móvil en el bolsillo y fíjate en los sonidos, el aire y el ritmo de tus pasos."
+     ],
+     "q": "¿Cuál es tu lugar favorito para un paseo corto?",
+     "c": "Da hoy un paseo de diez minutos, casi sin mirar el móvil."
+    },
+    "fr": {
+     "t": "Marcher pour évacuer",
+     "g": "Découvre pourquoi une courte marche est l'un des remèdes les plus simples contre le stress.",
+     "p": [
+      "Marcher mobilise tout le corps, offre aux yeux du nouveau et dégage la tête.",
+      "Même dix minutes à allure tranquille peuvent baisser la tension et remonter le moral.",
+      "Laisse le téléphone dans ta poche et remarque les sons, l'air et le rythme de tes pas."
+     ],
+     "q": "Quel est ton endroit préféré pour une courte marche ?",
+     "c": "Fais aujourd'hui une marche de dix minutes, sans presque regarder ton téléphone."
+    },
+    "it": {
+     "t": "Camminare per sfogarsi",
+     "g": "Scopri perché una breve camminata è uno dei rimedi più semplici contro lo stress.",
+     "p": [
+      "Camminare usa tutto il corpo, dà agli occhi qualcosa di nuovo e schiarisce la mente.",
+      "Anche dieci minuti a passo tranquillo possono ridurre la tensione e sollevare l'umore.",
+      "Lascia il telefono in tasca e nota suoni, aria e ritmo dei tuoi passi."
+     ],
+     "q": "Qual è il tuo posto preferito per una breve camminata?",
+     "c": "Fai oggi una camminata di dieci minuti, quasi senza guardare il telefono."
+    },
+    "pt": {
+     "t": "Caminhar para libertar",
+     "g": "Descobre porque um passeio curto é um dos alívios de stress mais simples.",
+     "p": [
+      "Caminhar usa o corpo todo, dá aos olhos algo novo e limpa a cabeça.",
+      "Até dez minutos a ritmo tranquilo podem baixar a tensão e melhorar o humor.",
+      "Deixa o telemóvel no bolso e repara nos sons, no ar e no ritmo dos teus passos."
+     ],
+     "q": "Qual é o teu sítio preferido para um passeio curto?",
+     "c": "Dá hoje um passeio de dez minutos, quase sem olhar para o telemóvel."
+    },
+    "pt_BR": {
+     "t": "Caminhar para soltar",
+     "g": "Descubra por que uma caminhada curta é um dos alívios de estresse mais simples.",
+     "p": [
+      "Caminhar usa o corpo todo, dá aos olhos algo novo e limpa a cabeça.",
+      "Até dez minutos num ritmo tranquilo podem baixar a tensão e melhorar o humor.",
+      "Deixe o celular no bolso e perceba os sons, o ar e o ritmo dos seus passos."
+     ],
+     "q": "Qual é o seu lugar preferido para uma caminhada curta?",
+     "c": "Faça hoje uma caminhada de dez minutos, quase sem olhar o celular."
+    }
+   }
+  }
+ ]
+}

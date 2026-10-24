@@ -1,0 +1,835 @@
+{
+ "topic": "home_organisation",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Plates and glasses within reach",
+     "g": "Place everyday dishes near the dishwasher or sink so unloading is quick.",
+     "p": [
+      "Put plates, bowls and glasses in the cupboard closest to where you unload.",
+      "Keep everyday sets at easy height and special ones higher up.",
+      "Fewer matching sets make stacking and putting away simpler."
+     ],
+     "q": "How long does unloading the dishes take you now?",
+     "c": "Move your everyday plates and glasses to the spot closest to the sink."
+    },
+    "de": {
+     "t": "Teller und Gläser in Reichweite",
+     "g": "Stelle Alltagsgeschirr nahe an Spülmaschine oder Spüle, damit das Ausräumen schnell geht.",
+     "p": [
+      "Teller, Schüsseln und Gläser kommen in den Schrank, der dem Ausräumplatz am nächsten ist.",
+      "Alltagsgeschirr in bequemer Höhe, besonderes weiter oben.",
+      "Weniger gleiche Sets erleichtern Stapeln und Wegräumen."
+     ],
+     "q": "Wie lange dauert dein Ausräumen gerade?",
+     "c": "Stelle dein Alltagsgeschirr an den Platz, der der Spüle am nächsten ist."
+    },
+    "es": {
+     "t": "Platos y vasos al alcance",
+     "g": "Coloca la vajilla diaria cerca del lavavajillas o fregadero para guardar rápido.",
+     "p": [
+      "Pon platos, cuencos y vasos en el armario más cercano a donde descargas.",
+      "La vajilla de diario a altura cómoda y la de ocasiones, más arriba.",
+      "Menos juegos iguales facilitan apilar y guardar."
+     ],
+     "q": "¿Cuánto tardas ahora en vaciar el lavavajillas?",
+     "c": "Mueve tus platos y vasos de diario al sitio más cercano al fregadero."
+    },
+    "fr": {
+     "t": "Assiettes et verres à portée de main",
+     "g": "Place la vaisselle du quotidien près du lave-vaisselle ou de l'évier pour ranger vite.",
+     "p": [
+      "Mets assiettes, bols et verres dans le placard le plus proche de l'endroit où tu ranges.",
+      "La vaisselle courante à bonne hauteur, celle des grandes occasions plus haut.",
+      "Moins de services identiques facilitent l'empilage et le rangement."
+     ],
+     "q": "Combien de temps te prend le rangement de la vaisselle aujourd'hui ?",
+     "c": "Place tes assiettes et verres du quotidien au plus près de l'évier."
+    },
+    "it": {
+     "t": "Piatti e bicchieri a portata di mano",
+     "g": "Metti i piatti di ogni giorno vicino alla lavastoviglie o al lavello per riporre in fretta.",
+     "p": [
+      "Metti piatti, ciotole e bicchieri nel mobile più vicino a dove li scarichi.",
+      "Il servizio quotidiano ad altezza comoda, quello delle occasioni più in alto.",
+      "Meno servizi uguali rendono più semplice impilare e riporre."
+     ],
+     "q": "Quanto tempo ti richiede ora svuotare la lavastoviglie?",
+     "c": "Sposta i tuoi piatti e bicchieri di ogni giorno nel punto più vicino al lavello."
+    },
+    "pt": {
+     "t": "Pratos e copos ao alcance",
+     "g": "Põe a loiça do dia a dia perto da máquina ou do lava-loiça para arrumar depressa.",
+     "p": [
+      "Põe pratos, taças e copos no armário mais próximo de onde descarregas.",
+      "A loiça de todos os dias a altura cómoda e a de ocasiões mais acima.",
+      "Menos conjuntos iguais facilitam empilhar e arrumar."
+     ],
+     "q": "Quanto tempo demoras agora a arrumar a loiça?",
+     "c": "Muda os teus pratos e copos de todos os dias para o sítio mais próximo do lava-loiça."
+    },
+    "pt_BR": {
+     "t": "Pratos e copos ao alcance",
+     "g": "Coloque a louça do dia a dia perto da máquina ou da pia para guardar rápido.",
+     "p": [
+      "Ponha pratos, tigelas e copos no armário mais próximo de onde você descarrega.",
+      "A louça de todo dia numa altura confortável e a de ocasiões mais acima.",
+      "Menos jogos iguais facilitam empilhar e guardar."
+     ],
+     "q": "Quanto tempo você leva hoje para guardar a louça?",
+     "c": "Mude seus pratos e copos de todo dia para o lugar mais próximo da pia."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "First in, first out",
+     "g": "Put new groceries behind older ones so food gets used before it expires.",
+     "p": [
+      "When you unpack shopping, move older items to the front.",
+      "Place new items at the back or underneath.",
+      "Check dates when you restock and use up what is closest to its date."
+     ],
+     "q": "Which food do you most often forget until it is too late?",
+     "c": "Reorder one shelf of the fridge or pantry so the oldest items are at the front."
+    },
+    "de": {
+     "t": "Zuerst rein, zuerst raus",
+     "g": "Stelle neue Einkäufe hinter ältere, damit Essen vor dem Ablaufdatum verbraucht wird.",
+     "p": [
+      "Beim Einräumen schiebst du ältere Sachen nach vorn.",
+      "Neue Sachen kommen nach hinten oder nach unten.",
+      "Prüfe beim Auffüllen die Daten und verbrauche, was am nächsten am Datum ist."
+     ],
+     "q": "Welches Lebensmittel vergisst du am häufigsten, bis es zu spät ist?",
+     "c": "Ordne ein Fach im Kühlschrank oder Vorratsschrank so, dass das Älteste vorn steht."
+    },
+    "es": {
+     "t": "Lo primero que entra, lo primero que sale",
+     "g": "Pon la compra nueva detrás de la antigua para gastar los alimentos antes de que caduquen.",
+     "p": [
+      "Al guardar la compra, pasa lo más antiguo al frente.",
+      "Coloca lo nuevo detrás o debajo.",
+      "Mira las fechas al reponer y gasta antes lo que esté más cerca de caducar."
+     ],
+     "q": "¿Qué alimento olvidas más a menudo hasta que es tarde?",
+     "c": "Reordena una balda de la nevera o despensa para que lo más antiguo quede delante."
+    },
+    "fr": {
+     "t": "Premier entré, premier sorti",
+     "g": "Place les nouveaux achats derrière les anciens pour consommer avant la date limite.",
+     "p": [
+      "En rangeant les courses, avance les produits plus anciens.",
+      "Mets les nouveaux derrière ou en dessous.",
+      "Vérifie les dates en réapprovisionnant et utilise d'abord ce qui est le plus proche de la date."
+     ],
+     "q": "Quel aliment oublies-tu le plus souvent jusqu'à ce qu'il soit trop tard ?",
+     "c": "Réorganise une étagère du frigo ou du garde-manger pour mettre les plus anciens devant."
+    },
+    "it": {
+     "t": "Primo entrato, primo uscito",
+     "g": "Metti la spesa nuova dietro a quella vecchia per usare il cibo prima della scadenza.",
+     "p": [
+      "Quando riponi la spesa, porta davanti i prodotti più vecchi.",
+      "Metti i nuovi dietro o sotto.",
+      "Controlla le date quando rifornisci e usa prima ciò che scade prima."
+     ],
+     "q": "Quale cibo dimentichi più spesso finché è troppo tardi?",
+     "c": "Riordina un ripiano del frigo o della dispensa con i prodotti più vecchi davanti."
+    },
+    "pt": {
+     "t": "O primeiro a entrar, o primeiro a sair",
+     "g": "Põe as compras novas atrás das antigas para gastar a comida antes de expirar.",
+     "p": [
+      "Ao arrumar as compras, passa o mais antigo para a frente.",
+      "Põe o novo atrás ou por baixo.",
+      "Vê as datas ao repor e gasta primeiro o que está mais perto da data."
+     ],
+     "q": "Que alimento esqueces mais vezes até ser tarde demais?",
+     "c": "Reorganiza uma prateleira do frigorífico ou despensa com o mais antigo à frente."
+    },
+    "pt_BR": {
+     "t": "O primeiro a entrar, o primeiro a sair",
+     "g": "Coloque as compras novas atrás das antigas para usar a comida antes de vencer.",
+     "p": [
+      "Ao guardar as compras, passe o mais antigo para a frente.",
+      "Coloque o novo atrás ou por baixo.",
+      "Veja as datas ao repor e use primeiro o que está mais perto de vencer."
+     ],
+     "q": "Que alimento você mais costuma esquecer até ser tarde demais?",
+     "c": "Reorganize uma prateleira da geladeira ou despensa com o mais antigo na frente."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dating leftovers",
+     "g": "A quick dated label helps you eat leftovers first and waste less.",
+     "p": [
+      "Write the date on masking tape or a removable label.",
+      "Place labelled leftovers at eye level so they are not forgotten.",
+      "Use general food safety guidance for how long leftovers keep."
+     ],
+     "q": "What do you do with leftovers right now?",
+     "c": "Label tonight's leftovers with the dish and today's date."
+    },
+    "de": {
+     "t": "Reste mit Datum versehen",
+     "g": "Ein schnelles Etikett mit Datum hilft, Reste zuerst zu essen und weniger wegzuwerfen.",
+     "p": [
+      "Schreibe das Datum auf Kreppband oder ein ablösbares Etikett.",
+      "Stelle beschriftete Reste auf Augenhöhe, damit sie nicht vergessen werden.",
+      "Nutze allgemeine Hinweise zur Lebensmittelsicherheit, wie lange Reste halten."
+     ],
+     "q": "Was machst du gerade mit Resten?",
+     "c": "Beschrifte die Reste von heute Abend mit Gericht und heutigem Datum."
+    },
+    "es": {
+     "t": "Poner fecha a las sobras",
+     "g": "Una etiqueta rápida con fecha ayuda a comer primero las sobras y desperdiciar menos.",
+     "p": [
+      "Escribe la fecha en cinta de carrocero o una etiqueta removible.",
+      "Pon las sobras etiquetadas a la altura de los ojos para no olvidarlas.",
+      "Usa las pautas generales de seguridad alimentaria sobre cuánto duran."
+     ],
+     "q": "¿Qué haces ahora con las sobras?",
+     "c": "Etiqueta las sobras de esta noche con el plato y la fecha de hoy."
+    },
+    "fr": {
+     "t": "Dater les restes",
+     "g": "Une petite étiquette datée aide à manger les restes d'abord et à gaspiller moins.",
+     "p": [
+      "Écris la date sur du ruban de masquage ou une étiquette amovible.",
+      "Place les restes étiquetés à hauteur des yeux pour ne pas les oublier.",
+      "Suis les conseils généraux de sécurité alimentaire sur la durée de conservation."
+     ],
+     "q": "Que fais-tu des restes en ce moment ?",
+     "c": "Étiquette les restes de ce soir avec le plat et la date du jour."
+    },
+    "it": {
+     "t": "Datare gli avanzi",
+     "g": "Una piccola etichetta con la data aiuta a mangiare prima gli avanzi e sprecare meno.",
+     "p": [
+      "Scrivi la data su nastro di carta o su un'etichetta rimovibile.",
+      "Metti gli avanzi etichettati all'altezza degli occhi per non dimenticarli.",
+      "Usa le indicazioni generali sulla sicurezza alimentare per sapere quanto durano."
+     ],
+     "q": "Cosa fai ora con gli avanzi?",
+     "c": "Etichetta gli avanzi di stasera con il piatto e la data di oggi."
+    },
+    "pt": {
+     "t": "Pôr data nas sobras",
+     "g": "Uma pequena etiqueta com data ajuda a comer as sobras primeiro e a desperdiçar menos.",
+     "p": [
+      "Escreve a data em fita de pintor ou numa etiqueta removível.",
+      "Põe as sobras etiquetadas à altura dos olhos para não as esqueceres.",
+      "Segue as orientações gerais de segurança alimentar sobre quanto duram."
+     ],
+     "q": "O que fazes agora com as sobras?",
+     "c": "Etiqueta as sobras desta noite com o prato e a data de hoje."
+    },
+    "pt_BR": {
+     "t": "Colocar data nas sobras",
+     "g": "Uma pequena etiqueta com data ajuda a comer as sobras primeiro e a desperdiçar menos.",
+     "p": [
+      "Escreva a data em fita crepe ou numa etiqueta removível.",
+      "Coloque as sobras etiquetadas na altura dos olhos para não esquecer.",
+      "Siga as orientações gerais de segurança alimentar sobre quanto tempo duram."
+     ],
+     "q": "O que você faz hoje com as sobras?",
+     "c": "Etiquete as sobras de hoje à noite com o prato e a data de hoje."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A simple recycling station",
+     "g": "Set up clearly labelled bins so sorting waste becomes automatic.",
+     "p": [
+      "Use two or three bins, matching what your local service collects.",
+      "Label each bin with words or a picture so anyone can use it.",
+      "Keep a small bin or bag nearby for things that go to a collection point."
+     ],
+     "q": "How do you sort waste at home right now?",
+     "c": "Label your waste and recycling bins clearly today."
+    },
+    "de": {
+     "t": "Eine einfache Recycling-Station",
+     "g": "Richte klar beschriftete Behälter ein, damit Mülltrennung automatisch wird.",
+     "p": [
+      "Nimm zwei oder drei Behälter passend zu dem, was deine Gemeinde abholt.",
+      "Beschrifte jeden mit Wörtern oder Bild, damit jeder ihn nutzen kann.",
+      "Halte einen kleinen Behälter oder Beutel für Dinge bereit, die zur Sammelstelle gehen."
+     ],
+     "q": "Wie trennst du Müll aktuell zuhause?",
+     "c": "Beschrifte heute deine Müll- und Recyclingbehälter deutlich."
+    },
+    "es": {
+     "t": "Una estación de reciclaje sencilla",
+     "g": "Instala cubos bien etiquetados para que separar residuos sea automático.",
+     "p": [
+      "Usa dos o tres cubos, acordes con lo que recoge tu servicio local.",
+      "Etiqueta cada cubo con palabras o dibujos para que cualquiera lo use.",
+      "Ten una bolsa o cubo pequeño para lo que va a un punto de recogida."
+     ],
+     "q": "¿Cómo separas ahora los residuos en casa?",
+     "c": "Etiqueta hoy con claridad tus cubos de basura y reciclaje."
+    },
+    "fr": {
+     "t": "Un coin recyclage simple",
+     "g": "Installe des bacs bien étiquetés pour que le tri devienne automatique.",
+     "p": [
+      "Utilise deux ou trois bacs, selon ce que ton service local collecte.",
+      "Étiquette chaque bac avec des mots ou un dessin pour que tous puissent l'utiliser.",
+      "Garde un petit bac ou un sac pour ce qui va en point de collecte."
+     ],
+     "q": "Comment tries-tu tes déchets à la maison en ce moment ?",
+     "c": "Étiquette clairement aujourd'hui tes poubelles et bacs de recyclage."
+    },
+    "it": {
+     "t": "Una semplice stazione per il riciclo",
+     "g": "Prepara contenitori ben etichettati perché la raccolta differenziata diventi automatica.",
+     "p": [
+      "Usa due o tre contenitori, secondo ciò che raccoglie il tuo servizio locale.",
+      "Etichetta ogni contenitore con parole o disegni perché chiunque possa usarlo.",
+      "Tieni un piccolo contenitore o sacco per ciò che va al centro di raccolta."
+     ],
+     "q": "Come differenzi ora i rifiuti a casa?",
+     "c": "Etichetta oggi chiaramente i tuoi bidoni per rifiuti e riciclo."
+    },
+    "pt": {
+     "t": "Uma estação de reciclagem simples",
+     "g": "Monta caixotes bem etiquetados para a separação de resíduos ficar automática.",
+     "p": [
+      "Usa dois ou três caixotes, conforme o que o teu serviço local recolhe.",
+      "Etiqueta cada um com palavras ou desenhos para qualquer pessoa usar.",
+      "Tem um caixote ou saco pequeno para o que vai a um ponto de recolha."
+     ],
+     "q": "Como separas agora os resíduos em casa?",
+     "c": "Etiqueta hoje com clareza os teus caixotes do lixo e da reciclagem."
+    },
+    "pt_BR": {
+     "t": "Uma estação de reciclagem simples",
+     "g": "Monte lixeiras bem etiquetadas para separar o lixo ficar automático.",
+     "p": [
+      "Use duas ou três lixeiras, conforme o que a coleta local recolhe.",
+      "Etiquete cada uma com palavras ou desenhos para qualquer pessoa usar.",
+      "Tenha uma lixeira ou sacola pequena para o que vai para um ponto de coleta."
+     ],
+     "q": "Como você separa hoje o lixo em casa?",
+     "c": "Etiquete hoje com clareza suas lixeiras de lixo comum e reciclagem."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The meal planning board",
+     "g": "A visible weekly plan cuts daily decisions and makes shopping easier.",
+     "p": [
+      "Use a small whiteboard or paper with seven days and a line for each dinner.",
+      "Check what you already have before planning, so food is used up.",
+      "Keep it flexible: swap days when life changes."
+     ],
+     "q": "What is the hardest part of deciding what to cook?",
+     "c": "Plan three dinners for the coming days and write them on a visible board."
+    },
+    "de": {
+     "t": "Die Essensplan-Tafel",
+     "g": "Ein sichtbarer Wochenplan spart tägliche Entscheidungen und macht das Einkaufen leichter.",
+     "p": [
+      "Nimm ein kleines Whiteboard oder Papier mit sieben Tagen und einer Zeile pro Abendessen.",
+      "Prüfe vor dem Planen, was du schon hast, damit Essen aufgebraucht wird.",
+      "Bleibe flexibel: tausche Tage, wenn sich etwas ändert."
+     ],
+     "q": "Was fällt dir bei der Entscheidung, was du kochst, am schwersten?",
+     "c": "Plane drei Abendessen für die nächsten Tage und schreibe sie auf eine sichtbare Tafel."
+    },
+    "es": {
+     "t": "El tablero del menú semanal",
+     "g": "Un plan semanal visible reduce decisiones diarias y facilita la compra.",
+     "p": [
+      "Usa una pizarra pequeña o papel con siete días y una línea para cada cena.",
+      "Mira lo que ya tienes antes de planear, para gastar los alimentos.",
+      "Mantenlo flexible: cambia de día cuando la vida cambie."
+     ],
+     "q": "¿Qué es lo más difícil al decidir qué cocinar?",
+     "c": "Planea tres cenas para los próximos días y escríbelas en un tablero visible."
+    },
+    "fr": {
+     "t": "Le tableau des repas",
+     "g": "Un plan hebdomadaire visible réduit les décisions quotidiennes et facilite les courses.",
+     "p": [
+      "Utilise un petit tableau blanc ou du papier avec sept jours et une ligne par dîner.",
+      "Regarde ce que tu as déjà avant de planifier, pour utiliser les aliments.",
+      "Reste flexible : échange les jours quand la vie change."
+     ],
+     "q": "Qu'est-ce qui est le plus difficile pour décider quoi cuisiner ?",
+     "c": "Planifie trois dîners pour les jours à venir et note-les sur un tableau visible."
+    },
+    "it": {
+     "t": "La lavagna del menù settimanale",
+     "g": "Un piano settimanale ben visibile riduce le decisioni quotidiane e facilita la spesa.",
+     "p": [
+      "Usa una piccola lavagna o un foglio con sette giorni e una riga per ogni cena.",
+      "Guarda cosa hai già prima di pianificare, così il cibo viene consumato.",
+      "Resta flessibile: scambia i giorni quando le cose cambiano."
+     ],
+     "q": "Qual è la parte più difficile nel decidere cosa cucinare?",
+     "c": "Pianifica tre cene per i prossimi giorni e scrivile su una lavagna visibile."
+    },
+    "pt": {
+     "t": "O quadro das refeições",
+     "g": "Um plano semanal visível reduz decisões diárias e facilita as compras.",
+     "p": [
+      "Usa um pequeno quadro branco ou papel com sete dias e uma linha para cada jantar.",
+      "Vê o que já tens antes de planear, para gastar os alimentos.",
+      "Mantém flexível: troca os dias quando a vida mudar."
+     ],
+     "q": "Qual é a parte mais difícil de decidir o que cozinhar?",
+     "c": "Planeia três jantares para os próximos dias e escreve-os num quadro visível."
+    },
+    "pt_BR": {
+     "t": "O quadro de refeições",
+     "g": "Um plano semanal visível reduz decisões diárias e facilita as compras.",
+     "p": [
+      "Use um pequeno quadro branco ou papel com sete dias e uma linha para cada jantar.",
+      "Veja o que já tem antes de planejar, para usar os alimentos.",
+      "Mantenha flexível: troque os dias quando a vida mudar."
+     ],
+     "q": "Qual é a parte mais difícil de decidir o que cozinhar?",
+     "c": "Planeje três jantares para os próximos dias e escreva num quadro visível."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Baking and special tools",
+     "g": "Store occasional equipment together and higher up so it does not crowd daily items.",
+     "p": [
+      "Gather baking trays, moulds and special gadgets in one place.",
+      "Use higher shelves or a far cupboard for what you use a few times a year.",
+      "Keep a short list on the door so you remember what you own."
+     ],
+     "q": "Which kitchen tools do you only use on special occasions?",
+     "c": "Group your baking tools together and move them out of the daily zone."
+    },
+    "de": {
+     "t": "Backen und Spezialwerkzeug",
+     "g": "Lagere seltene Geräte zusammen und weiter oben, damit sie Alltägliches nicht verdrängen.",
+     "p": [
+      "Sammle Backbleche, Formen und besondere Helfer an einem Ort.",
+      "Nimm höhere Regale oder einen weiten Schrank für das, was du nur ein paarmal im Jahr nutzt.",
+      "Eine kurze Liste an der Tür erinnert dich daran, was du besitzt."
+     ],
+     "q": "Welche Küchenwerkzeuge nutzt du nur zu besonderen Anlässen?",
+     "c": "Gruppiere deine Backsachen und räume sie aus der Alltagszone."
+    },
+    "es": {
+     "t": "Repostería y herramientas especiales",
+     "g": "Guarda el equipo ocasional junto y más arriba para que no estorbe lo de diario.",
+     "p": [
+      "Reúne bandejas, moldes y utensilios especiales en un solo sitio.",
+      "Usa baldas altas o un armario lejano para lo que usas pocas veces al año.",
+      "Una lista corta en la puerta te recuerda lo que tienes."
+     ],
+     "q": "¿Qué herramientas de cocina usas solo en ocasiones especiales?",
+     "c": "Agrupa tus utensilios de repostería y sácalos de la zona de diario."
+    },
+    "fr": {
+     "t": "Pâtisserie et outils spéciaux",
+     "g": "Range le matériel occasionnel ensemble et plus haut pour ne pas encombrer le quotidien.",
+     "p": [
+      "Rassemble plaques, moules et gadgets spéciaux au même endroit.",
+      "Utilise des étagères hautes ou un placard éloigné pour ce que tu utilises quelques fois par an.",
+      "Une courte liste sur la porte te rappelle ce que tu possèdes."
+     ],
+     "q": "Quels outils de cuisine n'utilises-tu que pour les grandes occasions ?",
+     "c": "Regroupe tes outils de pâtisserie et sors-les de la zone du quotidien."
+    },
+    "it": {
+     "t": "Pasticceria e strumenti speciali",
+     "g": "Riponi l'attrezzatura occasionale insieme e più in alto perché non ingombri il quotidiano.",
+     "p": [
+      "Raccogli teglie, stampi e gadget speciali in un solo posto.",
+      "Usa ripiani alti o un mobile lontano per ciò che usi poche volte l'anno.",
+      "Una breve lista sull'anta ti ricorda cosa possiedi."
+     ],
+     "q": "Quali strumenti da cucina usi solo in occasioni speciali?",
+     "c": "Raggruppa i tuoi strumenti da pasticceria e toglili dalla zona quotidiana."
+    },
+    "pt": {
+     "t": "Pastelaria e utensílios especiais",
+     "g": "Guarda o equipamento ocasional junto e mais acima para não atrapalhar o diário.",
+     "p": [
+      "Reúne tabuleiros, formas e utensílios especiais num só lugar.",
+      "Usa prateleiras altas ou um armário afastado para o que usas poucas vezes por ano.",
+      "Uma lista curta na porta lembra-te do que tens."
+     ],
+     "q": "Que utensílios de cozinha usas só em ocasiões especiais?",
+     "c": "Agrupa os teus utensílios de pastelaria e tira-os da zona do dia a dia."
+    },
+    "pt_BR": {
+     "t": "Confeitaria e utensílios especiais",
+     "g": "Guarde o equipamento ocasional junto e mais acima para não atrapalhar o diário.",
+     "p": [
+      "Reúna assadeiras, formas e utensílios especiais num só lugar.",
+      "Use prateleiras altas ou um armário afastado para o que usa poucas vezes por ano.",
+      "Uma lista curta na porta lembra o que você tem."
+     ],
+     "q": "Que utensílios de cozinha você usa só em ocasiões especiais?",
+     "c": "Agrupe seus utensílios de confeitaria e tire da zona do dia a dia."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mugs and cups",
+     "g": "Choose a sensible number of cups and keep favourites where you reach first.",
+     "p": [
+      "Count your mugs; most homes have far more than they use.",
+      "Keep the ones you love and enough for your household and guests.",
+      "Put favourites at the front, extras at the back or higher up."
+     ],
+     "q": "Which mug do you pick every single time?",
+     "c": "Pick your favourite mugs and donate or retire any chipped or unused ones."
+    },
+    "de": {
+     "t": "Tassen und Becher",
+     "g": "Wähle eine sinnvolle Zahl an Tassen und stelle Lieblinge dorthin, wo du zuerst hinlangst.",
+     "p": [
+      "Zähle deine Tassen; die meisten Haushalte haben viel mehr, als sie nutzen.",
+      "Behalte die, die du liebst, und genug für Haushalt und Gäste.",
+      "Lieblinge nach vorn, Extras nach hinten oder oben."
+     ],
+     "q": "Welche Tasse nimmst du jedes Mal?",
+     "c": "Wähle deine Lieblingstassen und gib angeschlagene oder ungenutzte ab oder entsorge sie."
+    },
+    "es": {
+     "t": "Tazas y vasos",
+     "g": "Elige un número razonable de tazas y deja las favoritas donde llegues primero.",
+     "p": [
+      "Cuenta tus tazas; la mayoría de las casas tiene muchas más de las que usa.",
+      "Quédate con las que quieres y las suficientes para casa e invitados.",
+      "Favoritas delante, las demás detrás o más arriba."
+     ],
+     "q": "¿Qué taza eliges siempre?",
+     "c": "Elige tus tazas favoritas y dona o retira las desportilladas o sin uso."
+    },
+    "fr": {
+     "t": "Mugs et tasses",
+     "g": "Choisis un nombre raisonnable de tasses et place tes préférées à portée.",
+     "p": [
+      "Compte tes tasses ; la plupart des foyers en ont bien plus qu'ils n'en utilisent.",
+      "Garde celles que tu aimes et assez pour ton foyer et tes invités.",
+      "Les préférées devant, les autres derrière ou plus haut."
+     ],
+     "q": "Quelle tasse choisis-tu à chaque fois ?",
+     "c": "Choisis tes tasses préférées et donne ou retire celles qui sont ébréchées ou inutilisées."
+    },
+    "it": {
+     "t": "Tazze e mug",
+     "g": "Scegli un numero sensato di tazze e tieni le preferite dove arrivi per prime.",
+     "p": [
+      "Conta le tue tazze; la maggior parte delle case ne ha molte più di quante ne usa.",
+      "Tieni quelle che ami e abbastanza per la famiglia e gli ospiti.",
+      "Le preferite davanti, le altre dietro o più in alto."
+     ],
+     "q": "Quale tazza scegli sempre?",
+     "c": "Scegli le tue tazze preferite e dona o elimina quelle scheggiate o inutilizzate."
+    },
+    "pt": {
+     "t": "Canecas e chávenas",
+     "g": "Escolhe um número sensato de chávenas e põe as favoritas onde chegas primeiro.",
+     "p": [
+      "Conta as tuas canecas; a maioria das casas tem muito mais do que usa.",
+      "Fica com as que adoras e as suficientes para a casa e os convidados.",
+      "As favoritas à frente, as outras atrás ou mais acima."
+     ],
+     "q": "Que caneca escolhes sempre?",
+     "c": "Escolhe as tuas canecas favoritas e doa ou retira as lascadas ou sem uso."
+    },
+    "pt_BR": {
+     "t": "Canecas e xícaras",
+     "g": "Escolha um número sensato de xícaras e deixe as favoritas onde você alcança primeiro.",
+     "p": [
+      "Conte suas canecas; a maioria das casas tem muito mais do que usa.",
+      "Fique com as que ama e as suficientes para a casa e os convidados.",
+      "As favoritas na frente, as outras atrás ou mais acima."
+     ],
+     "q": "Que caneca você escolhe sempre?",
+     "c": "Escolha suas canecas favoritas e doe ou descarte as lascadas ou sem uso."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tea towels and cloths",
+     "g": "Keep a fresh supply, a clear wash routine and a hook near the sink.",
+     "p": [
+      "Keep two or three tea towels in use and a few spares in a drawer.",
+      "Hang one on a hook or oven handle so it dries between uses.",
+      "Swap them for fresh ones every few days and wash on a hot cycle."
+     ],
+     "q": "How often do you change your kitchen cloths?",
+     "c": "Put out a fresh tea towel and send the used ones to the wash."
+    },
+    "de": {
+     "t": "Geschirrtücher und Lappen",
+     "g": "Halte frischen Vorrat, eine klare Waschroutine und einen Haken am Spülbecken bereit.",
+     "p": [
+      "Habe zwei oder drei Geschirrtücher im Einsatz und ein paar Ersatztücher in einer Schublade.",
+      "Hänge eines an einen Haken oder Ofengriff, damit es zwischen dem Gebrauch trocknet.",
+      "Wechsle sie alle paar Tage und wasche sie heiß."
+     ],
+     "q": "Wie oft wechselst du deine Küchentücher?",
+     "c": "Lege ein frisches Geschirrtuch aus und gib die gebrauchten in die Wäsche."
+    },
+    "es": {
+     "t": "Paños y trapos de cocina",
+     "g": "Ten reserva fresca, una rutina clara de lavado y un gancho junto al fregadero.",
+     "p": [
+      "Ten dos o tres paños en uso y algunos de repuesto en un cajón.",
+      "Cuelga uno de un gancho o del tirador del horno para que se seque entre usos.",
+      "Cámbialos cada pocos días y lávalos con agua caliente."
+     ],
+     "q": "¿Cada cuánto cambias tus paños de cocina?",
+     "c": "Saca un paño limpio y manda los usados a lavar."
+    },
+    "fr": {
+     "t": "Torchons et chiffons",
+     "g": "Garde une réserve propre, une routine de lavage claire et un crochet près de l'évier.",
+     "p": [
+      "Utilise deux ou trois torchons et garde quelques rechanges dans un tiroir.",
+      "Suspends-en un à un crochet ou à la poignée du four pour qu'il sèche entre deux usages.",
+      "Change-les tous les quelques jours et lave-les à chaud."
+     ],
+     "q": "À quelle fréquence changes-tu tes torchons de cuisine ?",
+     "c": "Sors un torchon propre et mets les usagés à laver."
+    },
+    "it": {
+     "t": "Strofinacci e panni",
+     "g": "Tieni una scorta pulita, una routine di lavaggio chiara e un gancio vicino al lavello.",
+     "p": [
+      "Usa due o tre strofinacci e tieni qualche scorta in un cassetto.",
+      "Appendine uno a un gancio o alla maniglia del forno perché asciughi tra un uso e l'altro.",
+      "Cambiali ogni pochi giorni e lavali a temperatura alta."
+     ],
+     "q": "Ogni quanto cambi i tuoi strofinacci?",
+     "c": "Metti fuori uno strofinaccio pulito e manda quelli usati a lavare."
+    },
+    "pt": {
+     "t": "Panos e esfregões da cozinha",
+     "g": "Tem uma reserva fresca, uma rotina de lavagem clara e um gancho junto ao lava-loiça.",
+     "p": [
+      "Usa dois ou três panos e guarda alguns de reserva numa gaveta.",
+      "Pendura um num gancho ou na pega do forno para secar entre usos.",
+      "Troca-os de poucos em poucos dias e lava a quente."
+     ],
+     "q": "Com que frequência trocas os panos da cozinha?",
+     "c": "Põe um pano limpo e manda os usados para a lavagem."
+    },
+    "pt_BR": {
+     "t": "Panos de prato e de limpeza",
+     "g": "Tenha uma reserva limpa, uma rotina de lavagem clara e um gancho perto da pia.",
+     "p": [
+      "Use dois ou três panos e guarde alguns reservas numa gaveta.",
+      "Pendure um num gancho ou na alça do forno para secar entre os usos.",
+      "Troque a cada poucos dias e lave com água quente."
+     ],
+     "q": "Com que frequência você troca os panos da cozinha?",
+     "c": "Coloque um pano limpo e mande os usados para a lavagem."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The kitchen junk spots",
+     "g": "Reset fridge doors, window sills and corners that collect clutter.",
+     "p": [
+      "Check the fridge door, window sill and the corner by the bin.",
+      "Keep only what is useful: a calendar, a few magnets, a plant.",
+      "Put everything else in its home or in the donate or recycle box."
+     ],
+     "q": "Which kitchen spot attracts clutter fastest?",
+     "c": "Reset one kitchen junk spot completely today."
+    },
+    "de": {
+     "t": "Die Krimskrams-Ecken der Küche",
+     "g": "Räume Kühlschranktür, Fensterbank und Ecken auf, die Unordnung sammeln.",
+     "p": [
+      "Prüfe Kühlschranktür, Fensterbank und die Ecke am Mülleimer.",
+      "Behalte nur Nützliches: Kalender, ein paar Magnete, eine Pflanze.",
+      "Alles andere kommt an seinen Platz oder in die Spenden- oder Recyclingkiste."
+     ],
+     "q": "Welche Stelle in der Küche zieht Unordnung am schnellsten an?",
+     "c": "Bringe heute eine Krimskramsstelle in der Küche vollständig in Ordnung."
+    },
+    "es": {
+     "t": "Los rincones de trastos de la cocina",
+     "g": "Reinicia las puertas de la nevera, repisas y rincones que acumulan cosas.",
+     "p": [
+      "Revisa la puerta de la nevera, el alféizar y el rincón junto al cubo.",
+      "Deja solo lo útil: un calendario, pocos imanes, una planta.",
+      "Lo demás, a su sitio o a la caja de donar o reciclar."
+     ],
+     "q": "¿Qué rincón de la cocina atrae antes el desorden?",
+     "c": "Reinicia hoy por completo un rincón de trastos de la cocina."
+    },
+    "fr": {
+     "t": "Les coins fourre-tout de la cuisine",
+     "g": "Remets à zéro portes de frigo, rebords de fenêtre et coins qui accumulent.",
+     "p": [
+      "Regarde la porte du frigo, le rebord de fenêtre et le coin près de la poubelle.",
+      "Garde seulement l'utile : un calendrier, quelques aimants, une plante.",
+      "Le reste va à sa place ou dans le carton à donner ou à recycler."
+     ],
+     "q": "Quel endroit de ta cuisine attire le plus vite le désordre ?",
+     "c": "Remets à zéro aujourd'hui entièrement un coin fourre-tout de la cuisine."
+    },
+    "it": {
+     "t": "Gli angoli ingombri della cucina",
+     "g": "Rimetti a posto porte del frigo, davanzali e angoli che accumulano cose.",
+     "p": [
+      "Controlla lo sportello del frigo, il davanzale e l'angolo vicino al bidone.",
+      "Tieni solo l'utile: un calendario, qualche magnete, una pianta.",
+      "Il resto va al suo posto o nella scatola da donare o riciclare."
+     ],
+     "q": "Quale angolo della cucina attira prima il disordine?",
+     "c": "Rimetti oggi completamente a posto un angolo ingombro della cucina."
+    },
+    "pt": {
+     "t": "Os cantos de tralha da cozinha",
+     "g": "Põe em ordem portas de frigorífico, parapeitos e cantos que acumulam coisas.",
+     "p": [
+      "Vê a porta do frigorífico, o parapeito e o canto junto ao lixo.",
+      "Fica só com o útil: um calendário, poucos ímanes, uma planta.",
+      "O resto vai para o seu sítio ou para a caixa de doar ou reciclar."
+     ],
+     "q": "Que canto da cozinha atrai a desarrumação mais depressa?",
+     "c": "Põe hoje por completo em ordem um canto de tralha da cozinha."
+    },
+    "pt_BR": {
+     "t": "Os cantos de bagunça da cozinha",
+     "g": "Reorganize portas de geladeira, parapeitos e cantos que acumulam coisas.",
+     "p": [
+      "Veja a porta da geladeira, o parapeito e o canto perto do lixo.",
+      "Fique só com o útil: um calendário, poucos ímãs, uma planta.",
+      "O resto vai para o lugar certo ou para a caixa de doar ou reciclar."
+     ],
+     "q": "Que canto da cozinha atrai a bagunça mais rápido?",
+     "c": "Reorganize hoje por completo um canto de bagunça da cozinha."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A quick nightly kitchen close",
+     "g": "Wipe, load and clear so you wake up to a ready kitchen.",
+     "p": [
+      "Load or wash dishes, wipe the counters and the hob with a damp cloth.",
+      "Empty the sink and put out a clean cloth for the morning.",
+      "Take the rubbish or recycling out if the bin is full."
+     ],
+     "q": "How does your kitchen look when you come in each morning?",
+     "c": "Do a five-minute kitchen close tonight and enjoy tomorrow morning."
+    },
+    "de": {
+     "t": "Ein schneller Küchenabschluss am Abend",
+     "g": "Wische, räume ein und räume ab, damit du morgens in eine fertige Küche kommst.",
+     "p": [
+      "Räume Geschirr ein oder wasche es, wische Arbeitsplatte und Herd feucht ab.",
+      "Leere das Spülbecken und lege ein sauberes Tuch für den Morgen bereit.",
+      "Bringe Müll oder Recycling raus, wenn der Eimer voll ist."
+     ],
+     "q": "Wie sieht deine Küche aus, wenn du morgens hereinkommst?",
+     "c": "Mache heute Abend fünf Minuten Küchenabschluss und genieße den Morgen."
+    },
+    "es": {
+     "t": "Un cierre rápido de la cocina por la noche",
+     "g": "Limpia, carga y despeja para despertar con la cocina lista.",
+     "p": [
+      "Carga o lava los platos y limpia encimeras y fuegos con un paño húmedo.",
+      "Vacía el fregadero y deja un paño limpio para la mañana.",
+      "Saca la basura o el reciclaje si el cubo está lleno."
+     ],
+     "q": "¿Cómo está tu cocina cuando entras cada mañana?",
+     "c": "Haz esta noche un cierre de cocina de cinco minutos y disfruta mañana."
+    },
+    "fr": {
+     "t": "Une fermeture rapide de la cuisine le soir",
+     "g": "Essuie, charge et dégage pour retrouver une cuisine prête au réveil.",
+     "p": [
+      "Charge ou lave la vaisselle, essuie plans de travail et plaques avec un chiffon humide.",
+      "Vide l'évier et sors un chiffon propre pour le matin.",
+      "Sors les déchets ou le recyclage si la poubelle est pleine."
+     ],
+     "q": "Comment est ta cuisine quand tu entres chaque matin ?",
+     "c": "Fais cinq minutes de fermeture de cuisine ce soir et profite de demain matin."
+    },
+    "it": {
+     "t": "Una rapida chiusura serale della cucina",
+     "g": "Pulisci, carica e libera per svegliarti con la cucina pronta.",
+     "p": [
+      "Carica o lava i piatti, passa piani e fornelli con un panno umido.",
+      "Svuota il lavello e metti fuori un panno pulito per la mattina.",
+      "Porta fuori i rifiuti o il riciclo se il bidone è pieno."
+     ],
+     "q": "Com'è la tua cucina quando entri ogni mattina?",
+     "c": "Fai stasera cinque minuti di chiusura della cucina e goditi domani mattina."
+    },
+    "pt": {
+     "t": "Um fecho rápido da cozinha à noite",
+     "g": "Limpa, carrega e liberta para acordares com a cozinha pronta.",
+     "p": [
+      "Carrega ou lava a loiça e limpa bancadas e placa com um pano húmido.",
+      "Esvazia o lava-loiça e deixa um pano limpo para a manhã.",
+      "Leva o lixo ou a reciclagem se o caixote estiver cheio."
+     ],
+     "q": "Como está a tua cozinha quando entras todas as manhãs?",
+     "c": "Faz esta noite cinco minutos de fecho da cozinha e aproveita amanhã."
+    },
+    "pt_BR": {
+     "t": "Um fechamento rápido da cozinha à noite",
+     "g": "Limpe, carregue e libere para acordar com a cozinha pronta.",
+     "p": [
+      "Coloque ou lave a louça e limpe bancadas e fogão com um pano úmido.",
+      "Esvazie a pia e deixe um pano limpo para a manhã.",
+      "Leve o lixo ou a reciclagem se a lixeira estiver cheia."
+     ],
+     "q": "Como está sua cozinha quando você entra toda manhã?",
+     "c": "Faça hoje à noite cinco minutos de fechamento da cozinha e aproveite amanhã."
+    }
+   }
+  }
+ ]
+}

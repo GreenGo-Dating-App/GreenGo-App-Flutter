@@ -1,0 +1,835 @@
+{
+ "topic": "puzzles",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Crossword strategy",
+     "g": "Learn a calm way to start a grid: easy clues, crossings, plurals and endings.",
+     "p": [
+      "Begin with the easiest clues, such as short answers or fill-in-the-blanks, to plant letters in the grid.",
+      "Use the crossings: letters from solved words show you the spelling of the words you have not solved yet.",
+      "Plurals often end in S and past tenses in ED, so pencil those letters in, then confirm them."
+     ],
+     "q": "Do you start with the top left corner, or wherever the easy clues are?",
+     "c": "Solve this clue: 'Several dogs (4 letters)'. Which last letter can you write in at once?"
+    },
+    "de": {
+     "t": "Kreuzworträtsel-Strategie",
+     "g": "Eine ruhige Methode für den Einstieg lernen: leichte Hinweise, Kreuzungen, Mehrzahl und Endungen.",
+     "p": [
+      "Beginne mit den leichtesten Hinweisen, etwa kurzen Lösungen oder Lückentexten, um Buchstaben ins Gitter zu setzen.",
+      "Nutze die Kreuzungen: Buchstaben gelöster Wörter verraten dir die Schreibweise noch offener Wörter.",
+      "Mehrzahlformen enden oft auf -E, -N oder -EN, also trage diese Buchstaben vorsichtig ein und bestätige sie."
+     ],
+     "q": "Beginnst du oben links oder dort, wo die leichten Hinweise sind?",
+     "c": "Löse diesen Hinweis: „Mehrere Hunde (5 Buchstaben)“. Welchen Endbuchstaben kannst du sofort eintragen?"
+    },
+    "es": {
+     "t": "Estrategia para crucigramas",
+     "g": "Aprender una forma tranquila de empezar una cuadrícula: pistas fáciles, cruces, plurales y terminaciones.",
+     "p": [
+      "Empieza por las pistas más fáciles, como respuestas cortas o frases con hueco, para colocar letras en la cuadrícula.",
+      "Aprovecha los cruces: las letras de palabras resueltas te dan la ortografía de las que aún no sabes.",
+      "Los plurales suelen acabar en S y los infinitivos en -AR, -ER o -IR; anótalos a lápiz y luego confírmalos."
+     ],
+     "q": "¿Empiezas por la esquina superior izquierda o por donde estén las pistas fáciles?",
+     "c": "Resuelve esta pista: «Varios gatos (5 letras)». ¿Qué letra final puedes escribir enseguida?"
+    },
+    "fr": {
+     "t": "Stratégie pour les mots croisés",
+     "g": "Apprendre une façon sereine de démarrer une grille : définitions faciles, croisements, pluriels et terminaisons.",
+     "p": [
+      "Commence par les définitions les plus faciles, comme les mots courts ou les phrases à compléter, pour poser des lettres.",
+      "Utilise les croisements : les lettres des mots résolus te donnent l'orthographe des mots pas encore trouvés.",
+      "Les pluriels finissent souvent par S et les infinitifs par -ER ; note-les au crayon, puis confirme."
+     ],
+     "q": "Commences-tu par le coin en haut à gauche ou là où les définitions sont faciles ?",
+     "c": "Résous cette définition : « Plusieurs chats (5 lettres) ». Quelle dernière lettre peux-tu écrire tout de suite ?"
+    },
+    "it": {
+     "t": "Strategia per le parole crociate",
+     "g": "Imparare un modo calmo per iniziare uno schema: definizioni facili, incroci, plurali e desinenze.",
+     "p": [
+      "Comincia dalle definizioni più facili, come risposte brevi o frasi da completare, per mettere lettere nello schema.",
+      "Usa gli incroci: le lettere delle parole risolte ti danno l'ortografia di quelle ancora da trovare.",
+      "I plurali finiscono spesso in I o E e gli infiniti in -ARE; scrivili a matita e poi conferma."
+     ],
+     "q": "Parti dall'angolo in alto a sinistra o da dove ci sono le definizioni facili?",
+     "c": "Risolvi questa definizione: «Più gatti (5 lettere)». Quale lettera finale puoi scrivere subito?"
+    },
+    "pt": {
+     "t": "Estratégia para palavras cruzadas",
+     "g": "Aprender uma maneira calma de começar uma grelha: pistas fáceis, cruzamentos, plurais e terminações.",
+     "p": [
+      "Começa pelas pistas mais fáceis, como respostas curtas ou frases com lacuna, para pôr letras na grelha.",
+      "Aproveita os cruzamentos: as letras de palavras resolvidas dão-te a ortografia das que ainda não sabes.",
+      "Os plurais costumam acabar em S e os infinitivos em -AR, -ER ou -IR; escreve a lápis e depois confirma."
+     ],
+     "q": "Começas pelo canto superior esquerdo ou por onde estão as pistas fáceis?",
+     "c": "Resolve esta pista: «Vários gatos (5 letras)». Que letra final podes escrever logo?"
+    },
+    "pt_BR": {
+     "t": "Estratégia para cruzadinhas",
+     "g": "Aprender um jeito calmo de começar uma grade: pistas fáceis, cruzamentos, plurais e terminações.",
+     "p": [
+      "Comece pelas pistas mais fáceis, como respostas curtas ou frases com lacuna, para pôr letras na grade.",
+      "Aproveite os cruzamentos: as letras de palavras resolvidas dão a ortografia das que você ainda não sabe.",
+      "Os plurais costumam terminar em S e os infinitivos em -AR, -ER ou -IR; escreva a lápis e depois confirme."
+     ],
+     "q": "Você começa pelo canto superior esquerdo ou por onde estão as pistas fáceis?",
+     "c": "Resolva esta pista: «Vários gatos (5 letras)». Que letra final você pode escrever logo?"
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fill-in-the-blank clues",
+     "g": "Spot the simplest crossword clue type and use it as your way in.",
+     "p": [
+      "A fill-in-the-blank clue has a gap, like 'Peanut ___ (6)', and the answer completes the phrase: BUTTER.",
+      "They are easy because you only need a common phrase, so they make perfect first fills.",
+      "The number in brackets is the length, so test your guess by counting letters before writing it."
+     ],
+     "q": "Which everyday phrases do you say so often that a blank would be easy for you?",
+     "c": "Fill the blank: 'Ice ___ (5)'. Then invent a blank clue for 'rain' and ask a friend."
+    },
+    "de": {
+     "t": "Lückenhinweise",
+     "g": "Den einfachsten Hinweistyp erkennen und als Einstieg nutzen.",
+     "p": [
+      "Ein Lückenhinweis hat eine Lücke, etwa „Gute ___ (5)“, und die Lösung vervollständigt die Wendung: NACHT.",
+      "Sie sind leicht, weil du nur eine bekannte Wendung brauchst, also ideal für die ersten Felder.",
+      "Die Zahl in der Klammer ist die Länge; zähle deine Buchstaben, bevor du etwas einträgst."
+     ],
+     "q": "Welche Alltagswendungen sagst du so oft, dass dir eine Lücke leichtfiele?",
+     "c": "Fülle die Lücke: „Guten ___ (7)“. Erfinde dann einen Lückenhinweis für „Regen“ und frage einen Freund."
+    },
+    "es": {
+     "t": "Pistas con hueco",
+     "g": "Reconocer el tipo de pista más sencillo y usarlo como puerta de entrada.",
+     "p": [
+      "Una pista con hueco tiene un espacio, como «Buenos ___ (4)», y la respuesta completa la frase: DÍAS.",
+      "Son fáciles porque solo necesitas una expresión común, así que sirven para las primeras casillas.",
+      "El número entre paréntesis es la longitud: cuenta las letras antes de escribir tu respuesta."
+     ],
+     "q": "¿Qué frases cotidianas dices tanto que un hueco te resultaría fácil?",
+     "c": "Rellena el hueco: «Buenas ___ (6)». Luego inventa una pista con hueco para «lluvia» y pregunta a un amigo."
+    },
+    "fr": {
+     "t": "Les définitions à compléter",
+     "g": "Repérer le type de définition le plus simple et s'en servir comme porte d'entrée.",
+     "p": [
+      "Une définition à compléter a un blanc, comme « Bon ___ (7) », et la réponse finit l'expression : APPÉTIT.",
+      "Elles sont faciles : il suffit d'une expression courante, donc idéales pour les premières cases.",
+      "Le nombre entre parenthèses est la longueur ; compte tes lettres avant d'écrire."
+     ],
+     "q": "Quelles expressions du quotidien dis-tu si souvent qu'un blanc serait facile pour toi ?",
+     "c": "Complète : « Bonne ___ (4) ». Puis invente une définition à trou pour « pluie » et propose-la à un ami."
+    },
+    "it": {
+     "t": "Definizioni da completare",
+     "g": "Riconoscere il tipo di definizione più semplice e usarlo come via d'ingresso.",
+     "p": [
+      "Una definizione da completare ha uno spazio, come «Buon ___ (6)», e la risposta finisce la frase: GIORNO.",
+      "Sono facili perché basta un'espressione comune, perfette per le prime caselle.",
+      "Il numero tra parentesi è la lunghezza: conta le lettere prima di scrivere."
+     ],
+     "q": "Quali frasi quotidiane dici così spesso che uno spazio vuoto sarebbe facile?",
+     "c": "Completa: «Buona ___ (4)». Poi inventa una definizione a buco per «pioggia» e proponila a un amico."
+    },
+    "pt": {
+     "t": "Pistas de preencher",
+     "g": "Reconhecer o tipo de pista mais simples e usá-lo como porta de entrada.",
+     "p": [
+      "Uma pista de preencher tem uma lacuna, como «Bom ___ (3)», e a resposta completa a frase: DIA.",
+      "São fáceis porque basta uma expressão comum, e por isso servem para as primeiras casas.",
+      "O número entre parênteses é o tamanho: conta as letras antes de escrever."
+     ],
+     "q": "Que frases do dia a dia dizes tantas vezes que uma lacuna seria fácil para ti?",
+     "c": "Completa: «Boa ___ (5)». Depois inventa uma pista de lacuna para «chuva» e pergunta a um amigo."
+    },
+    "pt_BR": {
+     "t": "Pistas de completar",
+     "g": "Reconhecer o tipo de pista mais simples e usá-lo como porta de entrada.",
+     "p": [
+      "Uma pista de completar tem uma lacuna, como «Bom ___ (3)», e a resposta completa a frase: DIA.",
+      "São fáceis porque basta uma expressão comum, então servem para as primeiras casas.",
+      "O número entre parênteses é o tamanho: conte as letras antes de escrever."
+     ],
+     "q": "Que frases do dia a dia você diz tanto que uma lacuna seria fácil?",
+     "c": "Complete: «Boa ___ (5)». Depois invente uma pista de lacuna para «chuva» e pergunte a um amigo."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Synonym clues",
+     "g": "Solve clues that ask for a word with the same meaning, and check the length.",
+     "p": [
+      "A synonym clue gives a word and asks for another with the same meaning, in the same form: 'run' needs 'sprint', not 'ran'.",
+      "The length decides: 'Big (5)' could be LARGE or GIANT, while 'Big (4)' could be HUGE.",
+      "Check crossings, because many synonyms differ slightly in tone and only one fits the grid."
+     ],
+     "q": "Which word do you use all the time that has many synonyms, like 'nice' or 'good'?",
+     "c": "Solve this clue: 'Quick (4)'. Then find two other synonyms with different lengths."
+    },
+    "de": {
+     "t": "Synonym-Hinweise",
+     "g": "Hinweise lösen, die ein Wort mit gleicher Bedeutung verlangen, und die Länge prüfen.",
+     "p": [
+      "Ein Synonym-Hinweis nennt ein Wort und fragt nach einem bedeutungsgleichen in derselben Form.",
+      "Die Länge entscheidet: „Schnell (5)“ kann RASCH oder FLINK sein, „Schnell (3)“ dagegen FIX.",
+      "Prüfe die Kreuzungen, denn viele Synonyme unterscheiden sich im Ton, und nur eines passt ins Gitter."
+     ],
+     "q": "Welches Wort, das du ständig brauchst, hat viele Synonyme, etwa „schön“ oder „gut“?",
+     "c": "Löse diesen Hinweis: „Gebäude (4)“. Finde dann zwei weitere Synonyme mit anderer Länge."
+    },
+    "es": {
+     "t": "Pistas de sinónimos",
+     "g": "Resolver pistas que piden una palabra de igual significado y comprobar la longitud.",
+     "p": [
+      "Una pista de sinónimo da una palabra y pide otra con el mismo significado y en la misma forma gramatical.",
+      "La longitud decide: «Grande (6)» puede ser ENORME, mientras que «Grande (5)» puede ser VASTO.",
+      "Revisa los cruces, porque muchos sinónimos cambian de matiz y solo uno encaja en la cuadrícula."
+     ],
+     "q": "¿Qué palabra que usas a todas horas tiene muchos sinónimos, como «bonito» o «bueno»?",
+     "c": "Resuelve esta pista: «Rápido (5)». Luego busca otros dos sinónimos de distinta longitud."
+    },
+    "fr": {
+     "t": "Définitions par synonymes",
+     "g": "Résoudre des définitions qui demandent un mot de même sens et vérifier la longueur.",
+     "p": [
+      "Une définition par synonyme donne un mot et en demande un autre de même sens et de même forme.",
+      "La longueur tranche : « Content (6) » peut donner JOYEUX, alors que « Content (7) » donne HEUREUX.",
+      "Vérifie les croisements, car beaucoup de synonymes diffèrent par le ton et un seul tient dans la grille."
+     ],
+     "q": "Quel mot que tu emploies tout le temps a beaucoup de synonymes, comme « beau » ou « bon » ?",
+     "c": "Résous cette définition : « Gros (6) ». Puis trouve deux autres synonymes de longueurs différentes."
+    },
+    "it": {
+     "t": "Definizioni per sinonimi",
+     "g": "Risolvere definizioni che chiedono una parola di uguale significato e controllare la lunghezza.",
+     "p": [
+      "Una definizione per sinonimo dà una parola e ne chiede un'altra di uguale significato e stessa forma.",
+      "La lunghezza decide: «Veloce (6)» può essere RAPIDO, mentre «Veloce (5)» può essere LESTO.",
+      "Controlla gli incroci, perché molti sinonimi cambiano sfumatura e uno solo entra nello schema."
+     ],
+     "q": "Quale parola che usi sempre ha molti sinonimi, come «bello» o «buono»?",
+     "c": "Risolvi questa definizione: «Grande (6)». Poi trova altri due sinonimi di lunghezza diversa."
+    },
+    "pt": {
+     "t": "Pistas de sinónimos",
+     "g": "Resolver pistas que pedem uma palavra de igual significado e verificar o tamanho.",
+     "p": [
+      "Uma pista de sinónimo dá uma palavra e pede outra com o mesmo significado e na mesma forma.",
+      "O tamanho decide: «Bonito (4)» pode ser BELO, enquanto «Bonito (5)» pode ser LINDO.",
+      "Confere os cruzamentos, porque muitos sinónimos mudam de tom e só um cabe na grelha."
+     ],
+     "q": "Que palavra que usas sempre tem muitos sinónimos, como «bom» ou «bonito»?",
+     "c": "Resolve esta pista: «Grande (6)». Depois procura mais dois sinónimos de tamanho diferente."
+    },
+    "pt_BR": {
+     "t": "Pistas de sinônimos",
+     "g": "Resolver pistas que pedem uma palavra de igual significado e conferir o tamanho.",
+     "p": [
+      "Uma pista de sinônimo dá uma palavra e pede outra com o mesmo significado e na mesma forma.",
+      "O tamanho decide: «Bonito (4)» pode ser BELO, enquanto «Bonito (5)» pode ser LINDO.",
+      "Confira os cruzamentos, porque muitos sinônimos mudam de tom e só um cabe na grade."
+     ],
+     "q": "Que palavra que você usa sempre tem muitos sinônimos, como «bom» ou «bonito»?",
+     "c": "Resolva esta pista: «Grande (6)». Depois ache mais dois sinônimos de tamanho diferente."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Word association",
+     "g": "Link words by meaning in chains and categories.",
+     "p": [
+      "Word association connects one word to the next by meaning, sound or habit: sea, salt, pepper, spice.",
+      "In a chain, each word only has to connect to the one before it, so the path can wander far.",
+      "In a category game, every word fits under one heading, like 'kitchen' or 'weather'."
+     ],
+     "q": "What is the first word that pops into your head when you hear 'summer'?",
+     "c": "Start with RAIN and build a chain of five linked words. Explain each link to a friend."
+    },
+    "de": {
+     "t": "Wortassoziationen",
+     "g": "Wörter über Bedeutung in Ketten und Kategorien verbinden.",
+     "p": [
+      "Wortassoziation verbindet ein Wort mit dem nächsten über Bedeutung, Klang oder Gewohnheit: Meer, Salz, Pfeffer, Gewürz.",
+      "In einer Kette muss jedes Wort nur zum vorigen passen, der Weg darf also weit abschweifen.",
+      "In einem Kategorienspiel passt jedes Wort unter eine Überschrift, etwa „Küche“ oder „Wetter“."
+     ],
+     "q": "Welches Wort fällt dir als Erstes ein, wenn du „Sommer“ hörst?",
+     "c": "Starte mit REGEN und baue eine Kette aus fünf verbundenen Wörtern. Erkläre jedes Glied einem Freund."
+    },
+    "es": {
+     "t": "Asociación de palabras",
+     "g": "Enlazar palabras por significado en cadenas y categorías.",
+     "p": [
+      "La asociación de palabras une una palabra con la siguiente por significado, sonido o costumbre: mar, sal, pimienta, especia.",
+      "En una cadena, cada palabra solo tiene que conectar con la anterior, así que el camino puede divagar mucho.",
+      "En un juego de categorías, cada palabra encaja bajo un mismo título, como «cocina» o «tiempo»."
+     ],
+     "q": "¿Cuál es la primera palabra que te viene a la mente al oír «verano»?",
+     "c": "Empieza con LLUVIA y construye una cadena de cinco palabras enlazadas. Explica cada eslabón a un amigo."
+    },
+    "fr": {
+     "t": "L'association de mots",
+     "g": "Relier des mots par le sens, en chaînes et en catégories.",
+     "p": [
+      "L'association de mots relie un mot au suivant par le sens, le son ou l'habitude : mer, sel, poivre, épice.",
+      "Dans une chaîne, chaque mot n'a qu'à se relier au précédent, le chemin peut donc s'égarer très loin.",
+      "Dans un jeu de catégories, chaque mot rentre sous un même titre, comme « cuisine » ou « météo »."
+     ],
+     "q": "Quel est le premier mot qui te vient à l'esprit quand tu entends « été » ?",
+     "c": "Pars de PLUIE et construis une chaîne de cinq mots liés. Explique chaque maillon à un ami."
+    },
+    "it": {
+     "t": "Associazione di parole",
+     "g": "Collegare le parole per significato in catene e categorie.",
+     "p": [
+      "L'associazione di parole collega una parola alla successiva per significato, suono o abitudine: mare, sale, pepe, spezia.",
+      "In una catena ogni parola deve solo collegarsi alla precedente, quindi il percorso può vagare lontano.",
+      "In un gioco di categorie ogni parola sta sotto uno stesso titolo, come «cucina» o «meteo»."
+     ],
+     "q": "Qual è la prima parola che ti viene in mente sentendo «estate»?",
+     "c": "Parti da PIOGGIA e costruisci una catena di cinque parole collegate. Spiega ogni anello a un amico."
+    },
+    "pt": {
+     "t": "Associação de palavras",
+     "g": "Ligar palavras pelo significado em cadeias e categorias.",
+     "p": [
+      "A associação de palavras liga uma palavra à seguinte por significado, som ou hábito: mar, sal, pimenta, especiaria.",
+      "Numa cadeia, cada palavra só tem de ligar à anterior, por isso o caminho pode divagar muito.",
+      "Num jogo de categorias, cada palavra cabe sob o mesmo título, como «cozinha» ou «tempo»."
+     ],
+     "q": "Qual é a primeira palavra que te vem à cabeça quando ouves «verão»?",
+     "c": "Começa com CHUVA e constrói uma cadeia de cinco palavras ligadas. Explica cada elo a um amigo."
+    },
+    "pt_BR": {
+     "t": "Associação de palavras",
+     "g": "Ligar palavras pelo significado em cadeias e categorias.",
+     "p": [
+      "A associação de palavras liga uma palavra à seguinte por significado, som ou hábito: mar, sal, pimenta, tempero.",
+      "Numa cadeia, cada palavra só precisa ligar à anterior, então o caminho pode divagar bastante.",
+      "Num jogo de categorias, cada palavra cabe sob o mesmo título, como «cozinha» ou «clima»."
+     ],
+     "q": "Qual é a primeira palavra que vem à sua cabeça quando ouve «verão»?",
+     "c": "Comece com CHUVA e monte uma cadeia de cinco palavras ligadas. Explique cada elo a um amigo."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Odd one out",
+     "g": "Spot the item that doesn't belong and explain your reasoning.",
+     "p": [
+      "In 'apple, pear, carrot, banana' the odd one out is carrot, because the others are fruit.",
+      "Look for a rule: colour, size, use, origin, number of letters or type of thing.",
+      "There may be more than one good answer; a clear reason is worth more than a single right one."
+     ],
+     "q": "Can you think of an odd-one-out set with two different good answers?",
+     "c": "Find the odd one out: Mercury, Venus, Moon, Mars. Say which rule you used."
+    },
+    "de": {
+     "t": "Was passt nicht dazu?",
+     "g": "Das Element finden, das nicht dazugehört, und deine Begründung erklären.",
+     "p": [
+      "Bei „Apfel, Birne, Karotte, Banane“ passt die Karotte nicht, weil die anderen Obst sind.",
+      "Suche eine Regel: Farbe, Größe, Zweck, Herkunft, Buchstabenzahl oder Art der Sache.",
+      "Es kann mehrere gute Antworten geben; ein klarer Grund zählt mehr als eine einzige richtige Lösung."
+     ],
+     "q": "Fällt dir eine Reihe ein, bei der zwei verschiedene Antworten gut begründet sind?",
+     "c": "Finde den Außenseiter: Merkur, Venus, Mond, Mars. Sag, welche Regel du benutzt hast."
+    },
+    "es": {
+     "t": "El intruso",
+     "g": "Detectar el elemento que no encaja y explicar tu razonamiento.",
+     "p": [
+      "En «manzana, pera, zanahoria, plátano» el intruso es la zanahoria, porque las demás son frutas.",
+      "Busca una regla: color, tamaño, uso, origen, número de letras o tipo de cosa.",
+      "Puede haber más de una buena respuesta; una razón clara vale más que una única solución correcta."
+     ],
+     "q": "¿Se te ocurre un grupo con dos intrusos igual de buenos?",
+     "c": "Encuentra el intruso: Mercurio, Venus, Luna, Marte. Di qué regla has usado."
+    },
+    "fr": {
+     "t": "L'intrus",
+     "g": "Repérer l'élément qui n'a pas sa place et expliquer ton raisonnement.",
+     "p": [
+      "Dans « pomme, poire, carotte, banane », l'intrus est la carotte, car les autres sont des fruits.",
+      "Cherche une règle : couleur, taille, usage, origine, nombre de lettres ou type de chose.",
+      "Il peut y avoir plusieurs bonnes réponses ; une raison claire vaut mieux qu'une seule solution juste."
+     ],
+     "q": "Peux-tu imaginer une série avec deux intrus aussi valables l'un que l'autre ?",
+     "c": "Trouve l'intrus : Mercure, Vénus, Lune, Mars. Dis quelle règle tu as utilisée."
+    },
+    "it": {
+     "t": "L'intruso",
+     "g": "Individuare l'elemento che non c'entra e spiegare il tuo ragionamento.",
+     "p": [
+      "In «mela, pera, carota, banana» l'intruso è la carota, perché le altre sono frutta.",
+      "Cerca una regola: colore, dimensione, uso, origine, numero di lettere o tipo di cosa.",
+      "Può esserci più di una buona risposta; una ragione chiara vale più di un'unica soluzione giusta."
+     ],
+     "q": "Ti viene in mente una serie con due intrusi ugualmente validi?",
+     "c": "Trova l'intruso: Mercurio, Venere, Luna, Marte. Di' quale regola hai usato."
+    },
+    "pt": {
+     "t": "O intruso",
+     "g": "Detetar o elemento que não encaixa e explicar o teu raciocínio.",
+     "p": [
+      "Em «maçã, pera, cenoura, banana» o intruso é a cenoura, porque as outras são frutas.",
+      "Procura uma regra: cor, tamanho, uso, origem, número de letras ou tipo de coisa.",
+      "Pode haver mais de uma boa resposta; uma razão clara vale mais do que uma única solução certa."
+     ],
+     "q": "Consegues pensar num grupo com dois intrusos igualmente bons?",
+     "c": "Descobre o intruso: Mercúrio, Vénus, Lua, Marte. Diz que regra usaste."
+    },
+    "pt_BR": {
+     "t": "O intruso",
+     "g": "Detectar o elemento que não se encaixa e explicar seu raciocínio.",
+     "p": [
+      "Em «maçã, pera, cenoura, banana» o intruso é a cenoura, porque as outras são frutas.",
+      "Procure uma regra: cor, tamanho, uso, origem, número de letras ou tipo de coisa.",
+      "Pode haver mais de uma boa resposta; uma razão clara vale mais do que uma única solução certa."
+     ],
+     "q": "Você consegue pensar num grupo com dois intrusos igualmente bons?",
+     "c": "Descubra o intruso: Mercúrio, Vênus, Lua, Marte. Diga que regra você usou."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Category puzzles",
+     "g": "Name items in a category that start with a given letter.",
+     "p": [
+      "Pick a category and a letter, then name as many items as you can, like animals that start with B.",
+      "Add a time limit, such as one minute, to turn a quiet puzzle into a lively game.",
+      "Walk through the alphabet: one category, 26 letters, and you can skip the hard ones."
+     ],
+     "q": "Which category would you be the best at, such as food, cities or films?",
+     "c": "In one minute, list as many foods as you can that start with S. Count them and try to beat your score."
+    },
+    "de": {
+     "t": "Kategorie-Rätsel",
+     "g": "Dinge aus einer Kategorie nennen, die mit einem vorgegebenen Buchstaben beginnen.",
+     "p": [
+      "Wähle eine Kategorie und einen Buchstaben und nenne so viele Dinge wie möglich, etwa Tiere mit B.",
+      "Ein Zeitlimit, etwa eine Minute, macht aus einem stillen Rätsel ein lebhaftes Spiel.",
+      "Geh das Alphabet durch: eine Kategorie, 26 Buchstaben, und schwere darfst du überspringen."
+     ],
+     "q": "In welcher Kategorie wärst du am besten, etwa Essen, Städte oder Filme?",
+     "c": "Nenne in einer Minute so viele Speisen wie möglich, die mit S beginnen. Zähle sie und versuche, dich zu übertreffen."
+    },
+    "es": {
+     "t": "Juegos de categorías",
+     "g": "Nombrar elementos de una categoría que empiecen por una letra dada.",
+     "p": [
+      "Elige una categoría y una letra y nombra tantos elementos como puedas, como animales que empiecen por B.",
+      "Añade un límite de tiempo, como un minuto, para convertir un pasatiempo tranquilo en un juego animado.",
+      "Recorre el abecedario: una categoría, 27 letras, y puedes saltarte las difíciles."
+     ],
+     "q": "¿En qué categoría serías el mejor, como comida, ciudades o películas?",
+     "c": "En un minuto, escribe todas las comidas que puedas que empiecen por P. Cuéntalas e intenta superarte."
+    },
+    "fr": {
+     "t": "Les jeux de catégories",
+     "g": "Nommer des éléments d'une catégorie commençant par une lettre donnée.",
+     "p": [
+      "Choisis une catégorie et une lettre, puis nomme autant d'éléments que possible, comme des animaux en B.",
+      "Ajoute une limite de temps, comme une minute, pour transformer un jeu calme en jeu animé.",
+      "Parcours l'alphabet : une catégorie, 26 lettres, et tu peux sauter les difficiles."
+     ],
+     "q": "Dans quelle catégorie serais-tu le meilleur, comme la cuisine, les villes ou les films ?",
+     "c": "En une minute, cite autant de plats que possible commençant par P. Compte-les et essaie de te battre."
+    },
+    "it": {
+     "t": "Giochi a categorie",
+     "g": "Nominare elementi di una categoria che inizino con una lettera data.",
+     "p": [
+      "Scegli una categoria e una lettera, poi nomina più elementi che puoi, come animali che iniziano per B.",
+      "Aggiungi un limite di tempo, come un minuto, per trasformare un gioco tranquillo in uno vivace.",
+      "Percorri l'alfabeto: una categoria, 21 lettere, e puoi saltare quelle difficili."
+     ],
+     "q": "In quale categoria saresti il migliore, come cibo, città o film?",
+     "c": "In un minuto, elenca più cibi che puoi che inizino per P. Contali e prova a battere il tuo record."
+    },
+    "pt": {
+     "t": "Jogos de categorias",
+     "g": "Nomear elementos de uma categoria que comecem por uma letra dada.",
+     "p": [
+      "Escolhe uma categoria e uma letra e nomeia o máximo de elementos, como animais que começam por B.",
+      "Junta um limite de tempo, como um minuto, para transformar um passatempo calmo num jogo animado.",
+      "Percorre o alfabeto: uma categoria, 26 letras, e podes saltar as difíceis."
+     ],
+     "q": "Em que categoria serias o melhor, como comida, cidades ou filmes?",
+     "c": "Num minuto, escreve o máximo de comidas que começam por P. Conta-as e tenta superar-te."
+    },
+    "pt_BR": {
+     "t": "Jogos de categorias",
+     "g": "Nomear elementos de uma categoria que comecem por uma letra dada.",
+     "p": [
+      "Escolha uma categoria e uma letra e nomeie o máximo de elementos, como animais que começam com B.",
+      "Adicione um limite de tempo, como um minuto, para transformar um passatempo calmo num jogo animado.",
+      "Percorra o alfabeto: uma categoria, 26 letras, e você pode pular as difíceis."
+     ],
+     "q": "Em que categoria você seria o melhor, como comida, cidades ou filmes?",
+     "c": "Em um minuto, escreva o máximo de comidas que começam com P. Conte e tente se superar."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Word puzzles in other languages",
+     "g": "See how anagrams and crosswords look in German, French, Spanish, Italian and Portuguese.",
+     "p": [
+      "German crosswords often write Ä, Ö and Ü as AE, OE and UE, and long compound words make great answers.",
+      "In Spanish and Portuguese, accents change meaning: papa and papá in Spanish, avó and avô in Portuguese.",
+      "French and Italian love tiny differences: sur and sûr in French, pala and palla in Italian."
+     ],
+     "q": "Which language other than your own would you most like to play word games in?",
+     "c": "Find a pair of words in your own language that differ by one letter or one accent, and explain both."
+    },
+    "de": {
+     "t": "Worträtsel in anderen Sprachen",
+     "g": "Sehen, wie Anagramme und Kreuzworträtsel auf Deutsch, Französisch, Spanisch, Italienisch und Portugiesisch aussehen.",
+     "p": [
+      "In deutschen Kreuzworträtseln stehen Ä, Ö und Ü oft als AE, OE und UE, und lange Zusammensetzungen sind tolle Lösungen.",
+      "Im Spanischen und Portugiesischen ändern Akzente die Bedeutung: papa und papá, avó und avô.",
+      "Französisch und Italienisch lieben winzige Unterschiede: sur und sûr, pala und palla."
+     ],
+     "q": "In welcher anderen Sprache als deiner würdest du am liebsten Wortspiele spielen?",
+     "c": "Finde in deiner Sprache zwei Wörter, die sich in einem Buchstaben unterscheiden, und erkläre beide."
+    },
+    "es": {
+     "t": "Juegos de palabras en otros idiomas",
+     "g": "Ver cómo son los anagramas y crucigramas en alemán, francés, español, italiano y portugués.",
+     "p": [
+      "Los crucigramas alemanes suelen escribir Ä, Ö y Ü como AE, OE y UE, y las palabras compuestas largas dan grandes respuestas.",
+      "En español y portugués los acentos cambian el sentido: papa y papá en español, avó y avô en portugués.",
+      "El francés y el italiano adoran las diferencias mínimas: sur y sûr en francés, pala y palla en italiano."
+     ],
+     "q": "¿En qué idioma, aparte del tuyo, te gustaría más jugar con palabras?",
+     "c": "Encuentra dos palabras de tu idioma que se diferencien en una letra o un acento y explica ambas."
+    },
+    "fr": {
+     "t": "Jeux de mots dans d'autres langues",
+     "g": "Voir à quoi ressemblent anagrammes et mots croisés en allemand, français, espagnol, italien et portugais.",
+     "p": [
+      "Les mots croisés allemands écrivent souvent Ä, Ö et Ü en AE, OE et UE, et les longs mots composés font de belles réponses.",
+      "En espagnol et en portugais, les accents changent le sens : papa et papá, avó et avô.",
+      "Le français et l'italien adorent les petites différences : sur et sûr, pala et palla."
+     ],
+     "q": "Dans quelle langue autre que la tienne aimerais-tu le plus jouer avec les mots ?",
+     "c": "Trouve deux mots de ta langue qui diffèrent d'une lettre ou d'un accent et explique les deux."
+    },
+    "it": {
+     "t": "Giochi di parole in altre lingue",
+     "g": "Vedere come appaiono anagrammi e cruciverba in tedesco, francese, spagnolo, italiano e portoghese.",
+     "p": [
+      "I cruciverba tedeschi scrivono spesso Ä, Ö e Ü come AE, OE e UE, e le lunghe parole composte sono ottime risposte.",
+      "In spagnolo e portoghese gli accenti cambiano il senso: papa e papá in spagnolo, avó e avô in portoghese.",
+      "Francese e italiano amano le differenze minime: sur e sûr in francese, pala e palla in italiano."
+     ],
+     "q": "In quale lingua, oltre alla tua, ti piacerebbe di più giocare con le parole?",
+     "c": "Trova due parole della tua lingua che differiscono per una lettera o un accento e spiega entrambe."
+    },
+    "pt": {
+     "t": "Jogos de palavras noutras línguas",
+     "g": "Ver como são os anagramas e as palavras cruzadas em alemão, francês, espanhol, italiano e português.",
+     "p": [
+      "As palavras cruzadas alemãs escrevem muitas vezes Ä, Ö e Ü como AE, OE e UE, e as palavras compostas longas dão ótimas respostas.",
+      "Em espanhol e português os acentos mudam o sentido: papa e papá em espanhol, avó e avô em português.",
+      "O francês e o italiano adoram diferenças mínimas: sur e sûr em francês, pala e palla em italiano."
+     ],
+     "q": "Em que língua, além da tua, gostarias mais de jogar com palavras?",
+     "c": "Encontra duas palavras da tua língua que diferem numa letra ou num acento e explica ambas."
+    },
+    "pt_BR": {
+     "t": "Jogos de palavras em outras línguas",
+     "g": "Ver como são os anagramas e as palavras cruzadas em alemão, francês, espanhol, italiano e português.",
+     "p": [
+      "As cruzadinhas alemãs costumam escrever Ä, Ö e Ü como AE, OE e UE, e as palavras compostas longas dão ótimas respostas.",
+      "Em espanhol e português os acentos mudam o sentido: papa e papá em espanhol, avó e avô em português.",
+      "O francês e o italiano adoram diferenças mínimas: sur e sûr em francês, pala e palla em italiano."
+     ],
+     "q": "Em que língua, além da sua, você mais gostaria de brincar com palavras?",
+     "c": "Ache duas palavras da sua língua que diferem em uma letra ou em um acento e explique as duas."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tongue-twisting puzzles",
+     "g": "Try word challenges that test speaking as well as thinking.",
+     "p": [
+      "A tongue twister packs similar sounds together so your mouth trips, making it a puzzle for speaking.",
+      "Classics like 'She sells seashells by the seashore' are fun because the sounds almost match but never quite.",
+      "Start slowly and clearly, then speed up; accuracy first and speed second makes you better."
+     ],
+     "q": "Do you remember a tongue twister from school or from your family?",
+     "c": "Say 'Red lorry, yellow lorry' five times fast without a slip. Then invent a twister with your own initial."
+    },
+    "de": {
+     "t": "Zungenbrecher-Rätsel",
+     "g": "Wortaufgaben ausprobieren, die Sprechen und Denken testen.",
+     "p": [
+      "Ein Zungenbrecher packt ähnliche Laute zusammen, damit die Zunge stolpert, und ist so ein Rätsel fürs Sprechen.",
+      "Klassiker wie „Fischers Fritz fischt frische Fische“ machen Spaß, weil die Laute fast gleich sind, aber nie ganz.",
+      "Fang langsam und deutlich an und werde dann schneller; erst Genauigkeit, dann Tempo macht dich besser."
+     ],
+     "q": "Erinnerst du dich an einen Zungenbrecher aus der Schule oder aus deiner Familie?",
+     "c": "Sprich „Blaukraut bleibt Blaukraut und Brautkleid bleibt Brautkleid“ fünfmal schnell ohne Fehler."
+    },
+    "es": {
+     "t": "Trabalenguas",
+     "g": "Probar retos de palabras que ponen a prueba el habla y el pensamiento.",
+     "p": [
+      "Un trabalenguas junta sonidos parecidos para que la lengua se líe, así que es un acertijo para hablar.",
+      "Clásicos como «Tres tristes tigres tragaban trigo en un trigal» divierten porque los sonidos casi coinciden, pero no del todo.",
+      "Empieza despacio y claro, y luego acelera; primero precisión y después velocidad te hace mejorar."
+     ],
+     "q": "¿Recuerdas algún trabalenguas del colegio o de tu familia?",
+     "c": "Di «El perro de San Roque no tiene rabo porque Ramón Ramírez se lo ha robado» cinco veces rápido sin fallar."
+    },
+    "fr": {
+     "t": "Les virelangues",
+     "g": "Essayer des défis de mots qui testent la parole autant que la réflexion.",
+     "p": [
+      "Un virelangue assemble des sons proches pour que la langue fourche : c'est une énigme à prononcer.",
+      "Les classiques comme « Les chaussettes de l'archiduchesse sont-elles sèches, archi-sèches ? » amusent par leurs sons presque identiques.",
+      "Commence lentement et nettement, puis accélère ; d'abord la précision, ensuite la vitesse."
+     ],
+     "q": "Te souviens-tu d'un virelangue appris à l'école ou en famille ?",
+     "c": "Dis « Un chasseur sachant chasser doit savoir chasser sans son chien » cinq fois vite sans te tromper."
+    },
+    "it": {
+     "t": "Gli scioglilingua",
+     "g": "Provare sfide di parole che mettono alla prova il parlare e il pensare.",
+     "p": [
+      "Uno scioglilingua mette insieme suoni simili per far inciampare la lingua: è un enigma da pronunciare.",
+      "Classici come «Trentatré trentini entrarono a Trento, tutti e trentatré trotterellando» divertono perché i suoni quasi coincidono.",
+      "Comincia piano e chiaro, poi accelera; prima la precisione, poi la velocità ti fa migliorare."
+     ],
+     "q": "Ricordi uno scioglilingua della scuola o della tua famiglia?",
+     "c": "Di' «Apelle figlio di Apollo fece una palla di pelle di pollo» cinque volte veloce senza sbagliare."
+    },
+    "pt": {
+     "t": "Trava-línguas",
+     "g": "Experimentar desafios de palavras que testam a fala e o pensamento.",
+     "p": [
+      "Um trava-línguas junta sons parecidos para a língua se enrolar, e por isso é um enigma para falar.",
+      "Clássicos como «O rato roeu a roupa do rei de Roma» divertem porque os sons quase coincidem, mas nunca por completo.",
+      "Começa devagar e com clareza e depois acelera; primeiro a precisão e depois a velocidade fazem-te melhorar."
+     ],
+     "q": "Lembras-te de algum trava-línguas da escola ou da tua família?",
+     "c": "Diz «Três pratos de trigo para três tigres tristes» cinco vezes depressa sem errar."
+    },
+    "pt_BR": {
+     "t": "Trava-línguas",
+     "g": "Experimentar desafios de palavras que testam a fala e o pensamento.",
+     "p": [
+      "Um trava-línguas junta sons parecidos para a língua se enrolar, e por isso é um enigma para falar.",
+      "Clássicos como «O rato roeu a roupa do rei de Roma» divertem porque os sons quase coincidem, mas nunca por completo.",
+      "Comece devagar e com clareza e depois acelere; primeiro a precisão e depois a velocidade fazem você melhorar."
+     ],
+     "q": "Você lembra de algum trava-línguas da escola ou da sua família?",
+     "c": "Diga «Três pratos de trigo para três tigres tristes» cinco vezes rápido sem errar."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Puzzle habits",
+     "g": "Build a small daily puzzle routine and enjoy steady progress.",
+     "p": [
+      "Ten minutes a day beats one long session a month, because small regular steps build skill.",
+      "Pick a fixed time and place, like after breakfast or on the bus, so the habit becomes automatic.",
+      "Keep a streak or a small notebook of solved puzzles; seeing progress is its own reward."
+     ],
+     "q": "Which time of day are you sharpest for puzzles: morning, afternoon or evening?",
+     "c": "Choose a time and a puzzle type for tomorrow, write them down, and tell me your plan."
+    },
+    "de": {
+     "t": "Rätselgewohnheiten",
+     "g": "Eine kleine tägliche Rätselroutine aufbauen und stetigen Fortschritt genießen.",
+     "p": [
+      "Zehn Minuten am Tag schlagen eine lange Sitzung im Monat, denn kleine regelmäßige Schritte bauen Können auf.",
+      "Wähle feste Zeit und festen Ort, etwa nach dem Frühstück oder im Bus, damit die Gewohnheit von selbst läuft.",
+      "Führe eine Serie oder ein kleines Heft gelöster Rätsel; Fortschritt zu sehen ist eine eigene Belohnung."
+     ],
+     "q": "Zu welcher Tageszeit bist du bei Rätseln am schärfsten: morgens, nachmittags oder abends?",
+     "c": "Wähle für morgen eine Zeit und eine Rätselart, schreib beides auf und erzähl mir deinen Plan."
+    },
+    "es": {
+     "t": "Hábitos de pasatiempos",
+     "g": "Crear una pequeña rutina diaria de acertijos y disfrutar del progreso constante.",
+     "p": [
+      "Diez minutos al día valen más que una sesión larga al mes, porque los pasos pequeños y regulares crean habilidad.",
+      "Elige una hora y un lugar fijos, como después del desayuno o en el autobús, para que el hábito sea automático.",
+      "Lleva una racha o una libreta con los acertijos resueltos; ver el progreso ya es una recompensa."
+     ],
+     "q": "¿A qué hora del día estás más despierto para los acertijos: mañana, tarde o noche?",
+     "c": "Elige una hora y un tipo de acertijo para mañana, anótalos y cuéntame tu plan."
+    },
+    "fr": {
+     "t": "Les habitudes de jeux d'esprit",
+     "g": "Construire une petite routine quotidienne d'énigmes et savourer des progrès réguliers.",
+     "p": [
+      "Dix minutes par jour valent mieux qu'une longue séance par mois, car les petits pas réguliers forgent le talent.",
+      "Choisis une heure et un lieu fixes, comme après le petit-déjeuner ou dans le bus, pour que l'habitude devienne automatique.",
+      "Tiens une série ou un petit carnet d'énigmes résolues ; voir ses progrès est déjà une récompense."
+     ],
+     "q": "À quel moment de la journée es-tu le plus affûté pour les énigmes : matin, après-midi ou soir ?",
+     "c": "Choisis une heure et un type d'énigme pour demain, note-les et dis-moi ton plan."
+    },
+    "it": {
+     "t": "Abitudini da enigmista",
+     "g": "Costruire una piccola routine quotidiana di enigmi e godersi i progressi costanti.",
+     "p": [
+      "Dieci minuti al giorno valgono più di una lunga sessione al mese, perché piccoli passi regolari costruiscono abilità.",
+      "Scegli un orario e un posto fissi, come dopo colazione o sull'autobus, così l'abitudine diventa automatica.",
+      "Tieni una serie o un taccuino degli enigmi risolti; vedere i progressi è già una ricompensa."
+     ],
+     "q": "In quale momento della giornata sei più sveglio per gli enigmi: mattina, pomeriggio o sera?",
+     "c": "Scegli un orario e un tipo di enigma per domani, scrivili e raccontami il tuo piano."
+    },
+    "pt": {
+     "t": "Hábitos de passatempos",
+     "g": "Criar uma pequena rotina diária de enigmas e apreciar o progresso constante.",
+     "p": [
+      "Dez minutos por dia valem mais do que uma sessão longa por mês, porque pequenos passos regulares criam habilidade.",
+      "Escolhe uma hora e um lugar fixos, como depois do pequeno-almoço ou no autocarro, para o hábito ficar automático.",
+      "Mantém uma sequência ou um caderninho de enigmas resolvidos; ver o progresso já é uma recompensa."
+     ],
+     "q": "A que hora do dia estás mais atento para enigmas: de manhã, à tarde ou à noite?",
+     "c": "Escolhe uma hora e um tipo de enigma para amanhã, escreve-os e conta-me o teu plano."
+    },
+    "pt_BR": {
+     "t": "Hábitos de passatempos",
+     "g": "Criar uma pequena rotina diária de enigmas e curtir o progresso constante.",
+     "p": [
+      "Dez minutos por dia valem mais do que uma sessão longa por mês, porque pequenos passos regulares criam habilidade.",
+      "Escolha uma hora e um lugar fixos, como depois do café da manhã ou no ônibus, para o hábito virar automático.",
+      "Mantenha uma sequência ou um caderninho de enigmas resolvidos; ver o progresso já é uma recompensa."
+     ],
+     "q": "Em que hora do dia você está mais afiado para enigmas: de manhã, à tarde ou à noite?",
+     "c": "Escolha uma hora e um tipo de enigma para amanhã, anote e me conte seu plano."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: words and riddles",
+     "g": "A light recap of riddles, anagrams, palindromes and crosswords with a mini quiz.",
+     "p": [
+      "Riddles hide answers behind double meanings, and the Sphinx's riddle has the answer 'a human'.",
+      "Anagrams reuse every letter once, palindromes read the same backwards, and word ladders change one letter.",
+      "The first crossword came from Arthur Wynne in 1913; start with easy clues and use the crossings."
+     ],
+     "q": "Which puzzle type from these 30 days was your favourite, and which would you like to revisit?",
+     "c": "Mini quiz: an anagram of 'silent'? Is 'noon' a palindrome? Who walks on three legs in the Sphinx riddle?"
+    },
+    "de": {
+     "t": "Wiederholung: Wörter und Rätsel",
+     "g": "Ein leichter Rückblick auf Rätselfragen, Anagramme, Palindrome und Kreuzworträtsel mit Mini-Quiz.",
+     "p": [
+      "Rätselfragen verstecken Antworten hinter Doppeldeutigkeiten, und die Antwort auf das Rätsel der Sphinx lautet „der Mensch“.",
+      "Anagramme nutzen jeden Buchstaben einmal, Palindrome lesen sich rückwärts gleich, Wortleitern ändern einen Buchstaben.",
+      "Das erste Kreuzworträtsel stammt von Arthur Wynne, 1913; starte mit leichten Hinweisen und nutze die Kreuzungen."
+     ],
+     "q": "Welche Rätselart aus diesen 30 Tagen war dein Favorit, und welche möchtest du wiederholen?",
+     "c": "Mini-Quiz: Welches Wort ist ein Anagramm von „Lager“? Ist „Otto“ ein Palindrom? Wer ging in der Sphinx-Frage auf drei Beinen?"
+    },
+    "es": {
+     "t": "Repaso: palabras y adivinanzas",
+     "g": "Un repaso ligero de adivinanzas, anagramas, palíndromos y crucigramas con un minitest.",
+     "p": [
+      "Las adivinanzas esconden respuestas tras dobles sentidos, y la respuesta al acertijo de la Esfinge es «el ser humano».",
+      "Los anagramas usan cada letra una vez, los palíndromos se leen igual al revés y las escaleras cambian una letra.",
+      "El primer crucigrama fue de Arthur Wynne en 1913; empieza por las pistas fáciles y usa los cruces."
+     ],
+     "q": "¿Qué tipo de acertijo de estos 30 días fue tu favorito y cuál te gustaría repetir?",
+     "c": "Minitest: ¿una palabra que sea anagrama de «amor»? ¿Es «radar» un palíndromo? ¿Quién anda a tres patas en la Esfinge?"
+    },
+    "fr": {
+     "t": "Révision : mots et devinettes",
+     "g": "Un récapitulatif léger des devinettes, anagrammes, palindromes et mots croisés avec un mini-quiz.",
+     "p": [
+      "Les devinettes cachent la réponse derrière un double sens, et celle de l'énigme du Sphinx est « l'être humain ».",
+      "Les anagrammes réutilisent chaque lettre une fois, les palindromes se lisent pareil à l'envers, les échelles changent une lettre.",
+      "Le premier mots croisés est d'Arthur Wynne en 1913 ; commence par les définitions faciles et utilise les croisements."
+     ],
+     "q": "Quel type de jeu de ces 30 jours as-tu préféré, et lequel aimerais-tu retravailler ?",
+     "c": "Mini-quiz : un anagramme de « chien » ? « Kayak » est-il un palindrome ? Qui marche à trois pattes dans l'énigme du Sphinx ?"
+    },
+    "it": {
+     "t": "Ripasso: parole e indovinelli",
+     "g": "Un ripasso leggero di indovinelli, anagrammi, palindromi e cruciverba con un mini quiz.",
+     "p": [
+      "Gli indovinelli nascondono la risposta dietro un doppio senso, e quella dell'enigma della Sfinge è «l'essere umano».",
+      "Gli anagrammi usano ogni lettera una volta, i palindromi si leggono uguali al contrario, le scale cambiano una lettera.",
+      "Il primo cruciverba è di Arthur Wynne nel 1913; parti dalle definizioni facili e usa gli incroci."
+     ],
+     "q": "Quale tipo di gioco di questi 30 giorni è stato il tuo preferito, e quale vorresti rivedere?",
+     "c": "Mini quiz: un anagramma di «ramo»? «Anna» è un palindromo? Chi cammina su tre zampe nell'enigma della Sfinge?"
+    },
+    "pt": {
+     "t": "Revisão: palavras e adivinhas",
+     "g": "Uma revisão leve de adivinhas, anagramas, palíndromos e palavras cruzadas com um miniteste.",
+     "p": [
+      "As adivinhas escondem a resposta atrás de duplos sentidos, e a resposta ao enigma da Esfinge é «o ser humano».",
+      "Os anagramas usam cada letra uma vez, os palíndromos leem-se igual ao contrário e as escadas mudam uma letra.",
+      "As primeiras palavras cruzadas são de Arthur Wynne, em 1913; começa pelas pistas fáceis e usa os cruzamentos."
+     ],
+     "q": "Que tipo de passatempo destes 30 dias foi o teu favorito e qual gostarias de repetir?",
+     "c": "Miniteste: um anagrama de «amor»? «Arara» é um palíndromo? Quem anda sobre três patas no enigma da Esfinge?"
+    },
+    "pt_BR": {
+     "t": "Revisão: palavras e adivinhas",
+     "g": "Uma revisão leve de adivinhas, anagramas, palíndromos e cruzadinhas com um miniteste.",
+     "p": [
+      "As adivinhas escondem a resposta atrás de duplos sentidos, e a resposta ao enigma da Esfinge é «o ser humano».",
+      "Os anagramas usam cada letra uma vez, os palíndromos se leem igual ao contrário e as escadas mudam uma letra.",
+      "A primeira cruzadinha é de Arthur Wynne, em 1913; comece pelas pistas fáceis e use os cruzamentos."
+     ],
+     "q": "Que tipo de passatempo destes 30 dias foi seu favorito e qual você gostaria de repetir?",
+     "c": "Miniteste: um anagrama de «amor»? «Arara» é um palíndromo? Quem anda sobre três patas no enigma da Esfinge?"
+    }
+   }
+  }
+ ]
+}

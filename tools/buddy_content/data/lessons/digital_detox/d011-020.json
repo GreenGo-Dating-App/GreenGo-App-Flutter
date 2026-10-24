@@ -1,0 +1,835 @@
+{
+ "topic": "digital_detox",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The pause before you tap",
+     "g": "Take one breath and ask what you want before opening an app.",
+     "p": [
+      "One slow breath is enough to turn a reflex into a choice.",
+      "Ask a simple question: what do I want right now?",
+      "Sometimes the answer is a message; sometimes it is a glass of water."
+     ],
+     "q": "What did you notice the last time you paused before opening an app?",
+     "c": "Take one breath before opening your most-used app, three times today."
+    },
+    "de": {
+     "t": "Die Pause vor dem Tippen",
+     "g": "Einmal atmen und fragen, was du willst, bevor du eine App öffnest.",
+     "p": [
+      "Ein langsamer Atemzug genügt, um einen Reflex in eine Wahl zu verwandeln.",
+      "Stell eine einfache Frage: Was will ich gerade?",
+      "Manchmal ist die Antwort eine Nachricht, manchmal ein Glas Wasser."
+     ],
+     "q": "Was hast du beim letzten Mal bemerkt, als du vor dem Öffnen innegehalten hast?",
+     "c": "Atme heute dreimal vor dem Öffnen deiner meistgenutzten App einmal durch."
+    },
+    "es": {
+     "t": "La pausa antes de tocar",
+     "g": "Respirar una vez y preguntarte qué quieres antes de abrir una app.",
+     "p": [
+      "Una respiración lenta basta para convertir un reflejo en una elección.",
+      "Hazte una pregunta sencilla: ¿qué quiero ahora mismo?",
+      "A veces la respuesta es un mensaje; a veces, un vaso de agua."
+     ],
+     "q": "¿Qué notaste la última vez que hiciste una pausa antes de abrir una app?",
+     "c": "Respira una vez antes de abrir tu app más usada, tres veces hoy."
+    },
+    "fr": {
+     "t": "La pause avant de toucher",
+     "g": "Respirer une fois et te demander ce que tu veux avant d'ouvrir une appli.",
+     "p": [
+      "Une respiration lente suffit pour transformer un réflexe en choix.",
+      "Pose une question simple : qu'est-ce que je veux maintenant ?",
+      "Parfois la réponse est un message, parfois un verre d'eau."
+     ],
+     "q": "Qu'as-tu remarqué la dernière fois que tu as fait une pause avant d'ouvrir une appli ?",
+     "c": "Respire une fois avant d'ouvrir ton appli la plus utilisée, trois fois aujourd'hui."
+    },
+    "it": {
+     "t": "La pausa prima di toccare",
+     "g": "Fare un respiro e chiederti cosa vuoi prima di aprire un'app.",
+     "p": [
+      "Un respiro lento basta a trasformare un riflesso in una scelta.",
+      "Fatti una domanda semplice: cosa voglio adesso?",
+      "A volte la risposta è un messaggio, a volte un bicchiere d'acqua."
+     ],
+     "q": "Cosa hai notato l'ultima volta che hai fatto una pausa prima di aprire un'app?",
+     "c": "Fai un respiro prima di aprire la tua app più usata, tre volte oggi."
+    },
+    "pt": {
+     "t": "A pausa antes de tocar",
+     "g": "Respirar uma vez e perguntar o que queres antes de abrir uma app.",
+     "p": [
+      "Uma respiração lenta chega para transformar um reflexo numa escolha.",
+      "Faz uma pergunta simples: o que quero agora?",
+      "Às vezes a resposta é uma mensagem; outras vezes, um copo de água."
+     ],
+     "q": "O que notaste da última vez que fizeste uma pausa antes de abrir uma app?",
+     "c": "Respira uma vez antes de abrir a tua app mais usada, três vezes hoje."
+    },
+    "pt_BR": {
+     "t": "A pausa antes de tocar",
+     "g": "Respirar uma vez e perguntar o que você quer antes de abrir um app.",
+     "p": [
+      "Uma respiração lenta basta para transformar um reflexo em uma escolha.",
+      "Faça uma pergunta simples: o que eu quero agora?",
+      "Às vezes a resposta é uma mensagem; outras vezes, um copo d'água."
+     ],
+     "q": "O que você notou da última vez que fez uma pausa antes de abrir um app?",
+     "c": "Respire uma vez antes de abrir seu app mais usado, três vezes hoje."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Naming what you value",
+     "g": "List activities and people you would love to give more time to.",
+     "p": [
+      "Think about what makes your days feel full and meaningful.",
+      "Write down people, hobbies and places you wish you had more time for.",
+      "These are your reasons; they matter more than any screen rule."
+     ],
+     "q": "Which person or activity would you most like to spend more time on?",
+     "c": "Write a list of five things you value and put it near your bed or desk."
+    },
+    "de": {
+     "t": "Benennen, was dir wichtig ist",
+     "g": "Aktivitäten und Menschen aufschreiben, denen du gern mehr Zeit schenken würdest.",
+     "p": [
+      "Überlege, was deine Tage erfüllt und sinnvoll macht.",
+      "Notiere Menschen, Hobbys und Orte, für die du dir mehr Zeit wünschst.",
+      "Das sind deine Gründe; sie zählen mehr als jede Bildschirmregel."
+     ],
+     "q": "Welcher Person oder Aktivität würdest du am liebsten mehr Zeit widmen?",
+     "c": "Schreib fünf Dinge auf, die dir wichtig sind, und leg die Liste ans Bett oder an den Schreibtisch."
+    },
+    "es": {
+     "t": "Nombrar lo que valoras",
+     "g": "Enumerar actividades y personas a las que te gustaría dedicar más tiempo.",
+     "p": [
+      "Piensa en lo que hace que tus días se sientan plenos y con sentido.",
+      "Anota personas, aficiones y lugares a los que desearías dedicar más tiempo.",
+      "Esas son tus razones; importan más que cualquier regla sobre pantallas."
+     ],
+     "q": "¿A qué persona o actividad te gustaría dedicar más tiempo?",
+     "c": "Escribe cinco cosas que valoras y ponlas junto a tu cama o escritorio."
+    },
+    "fr": {
+     "t": "Nommer ce qui compte pour toi",
+     "g": "Lister les activités et les personnes à qui tu aimerais donner plus de temps.",
+     "p": [
+      "Pense à ce qui rend tes journées pleines et riches de sens.",
+      "Note les personnes, loisirs et lieux auxquels tu voudrais consacrer plus de temps.",
+      "Ce sont tes raisons ; elles comptent plus que n'importe quelle règle d'écran."
+     ],
+     "q": "À quelle personne ou activité aimerais-tu consacrer le plus de temps ?",
+     "c": "Écris cinq choses qui comptent pour toi et place la liste près de ton lit ou bureau."
+    },
+    "it": {
+     "t": "Dare un nome a ciò che conta",
+     "g": "Elencare attività e persone a cui vorresti dedicare più tempo.",
+     "p": [
+      "Pensa a ciò che rende le tue giornate piene e significative.",
+      "Scrivi persone, hobby e luoghi a cui vorresti dedicare più tempo.",
+      "Sono le tue ragioni; contano più di qualsiasi regola sugli schermi."
+     ],
+     "q": "A quale persona o attività vorresti dedicare più tempo?",
+     "c": "Scrivi cinque cose che contano per te e mettile vicino al letto o alla scrivania."
+    },
+    "pt": {
+     "t": "Nomear o que valorizas",
+     "g": "Listar atividades e pessoas a quem gostarias de dar mais tempo.",
+     "p": [
+      "Pensa no que torna os teus dias plenos e com sentido.",
+      "Escreve pessoas, passatempos e lugares aos quais gostarias de dedicar mais tempo.",
+      "Essas são as tuas razões; contam mais do que qualquer regra sobre ecrãs."
+     ],
+     "q": "A que pessoa ou atividade gostarias de dedicar mais tempo?",
+     "c": "Escreve cinco coisas que valorizas e põe a lista junto à cama ou à secretária."
+    },
+    "pt_BR": {
+     "t": "Nomeando o que você valoriza",
+     "g": "Listar atividades e pessoas às quais você gostaria de dar mais tempo.",
+     "p": [
+      "Pense no que faz seus dias parecerem plenos e com sentido.",
+      "Anote pessoas, hobbies e lugares aos quais gostaria de dedicar mais tempo.",
+      "Essas são as suas razões; elas contam mais do que qualquer regra sobre telas."
+     ],
+     "q": "A qual pessoa ou atividade você gostaria de dedicar mais tempo?",
+     "c": "Escreva cinco coisas que você valoriza e ponha a lista perto da cama ou da mesa."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your ideal day on paper",
+     "g": "Sketch a day where technology supports rather than fills your time.",
+     "p": [
+      "Draw a simple timeline from waking up to going to bed.",
+      "Mark where screens are useful and where you would like space without them.",
+      "A picture of your ideal day makes small steps easier to choose."
+     ],
+     "q": "What would the best part of your ideal day be?",
+     "c": "Sketch your ideal day on paper in five minutes, then pick one piece to try."
+    },
+    "de": {
+     "t": "Dein idealer Tag auf Papier",
+     "g": "Einen Tag skizzieren, an dem Technik dich unterstützt, statt deine Zeit zu füllen.",
+     "p": [
+      "Zeichne eine einfache Zeitleiste vom Aufwachen bis zum Schlafengehen.",
+      "Markiere, wo Bildschirme nützlich sind und wo du Raum ohne sie möchtest.",
+      "Ein Bild deines idealen Tages macht kleine Schritte leichter."
+     ],
+     "q": "Was wäre der schönste Teil deines idealen Tages?",
+     "c": "Skizziere deinen idealen Tag in fünf Minuten und wähle einen Teil zum Ausprobieren."
+    },
+    "es": {
+     "t": "Tu día ideal sobre papel",
+     "g": "Esbozar un día en que la tecnología te apoye en vez de llenar tu tiempo.",
+     "p": [
+      "Dibuja una línea de tiempo sencilla desde que te levantas hasta que te acuestas.",
+      "Marca dónde las pantallas son útiles y dónde quieres espacio sin ellas.",
+      "Una imagen de tu día ideal hace más fáciles los pasos pequeños."
+     ],
+     "q": "¿Cuál sería la mejor parte de tu día ideal?",
+     "c": "Esboza tu día ideal en cinco minutos y elige una parte para probar."
+    },
+    "fr": {
+     "t": "Ta journée idéale sur papier",
+     "g": "Esquisser une journée où la technologie t'aide au lieu de remplir ton temps.",
+     "p": [
+      "Dessine une frise simple du réveil au coucher.",
+      "Marque où les écrans sont utiles et où tu voudrais de l'espace sans eux.",
+      "Une image de ta journée idéale rend les petits pas plus faciles à choisir."
+     ],
+     "q": "Quelle serait la meilleure partie de ta journée idéale ?",
+     "c": "Esquisse ta journée idéale en cinq minutes, puis choisis une partie à essayer."
+    },
+    "it": {
+     "t": "La tua giornata ideale su carta",
+     "g": "Disegnare una giornata in cui la tecnologia ti sostiene invece di riempire il tempo.",
+     "p": [
+      "Traccia una semplice linea del tempo dal risveglio alla notte.",
+      "Segna dove gli schermi sono utili e dove vorresti spazio senza di loro.",
+      "Un'immagine della giornata ideale rende più facili i piccoli passi."
+     ],
+     "q": "Quale sarebbe la parte migliore della tua giornata ideale?",
+     "c": "Schizza la giornata ideale in cinque minuti e scegli una parte da provare."
+    },
+    "pt": {
+     "t": "O teu dia ideal no papel",
+     "g": "Esboçar um dia em que a tecnologia te apoia em vez de ocupar o teu tempo.",
+     "p": [
+      "Desenha uma linha do tempo simples, do acordar ao deitar.",
+      "Marca onde os ecrãs são úteis e onde queres espaço sem eles.",
+      "Uma imagem do teu dia ideal torna mais fáceis os passos pequenos."
+     ],
+     "q": "Qual seria a melhor parte do teu dia ideal?",
+     "c": "Esboça o teu dia ideal em cinco minutos e escolhe uma parte para experimentar."
+    },
+    "pt_BR": {
+     "t": "Seu dia ideal no papel",
+     "g": "Esboçar um dia em que a tecnologia apoia você em vez de ocupar seu tempo.",
+     "p": [
+      "Desenhe uma linha do tempo simples, do acordar ao deitar.",
+      "Marque onde as telas são úteis e onde você quer espaço sem elas.",
+      "Uma imagem do seu dia ideal facilita os passos pequenos."
+     ],
+     "q": "Qual seria a melhor parte do seu dia ideal?",
+     "c": "Esboce seu dia ideal em cinco minutos e escolha uma parte para testar."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Screens and the body",
+     "g": "Learn the general effects long screen sessions can have on your body.",
+     "p": [
+      "Long sessions can leave eyes tired and shoulders tight.",
+      "Sitting still for hours can make you feel stiff or sluggish.",
+      "Small changes in how you sit and look help a lot."
+     ],
+     "q": "Which part of your body feels it first after a long screen session?",
+     "c": "Do a quick body scan after your next long screen session and note one tense spot."
+    },
+    "de": {
+     "t": "Bildschirme und Körper",
+     "g": "Die allgemeinen Auswirkungen langer Bildschirmzeiten auf den Körper kennenlernen.",
+     "p": [
+      "Lange Sitzungen können müde Augen und verspannte Schultern bringen.",
+      "Stundenlanges Stillsitzen kann steif oder träge machen.",
+      "Kleine Änderungen bei Haltung und Blick helfen schon viel."
+     ],
+     "q": "Welcher Körperteil meldet sich nach langer Bildschirmzeit zuerst?",
+     "c": "Mach nach der nächsten langen Sitzung einen Körpercheck und notiere eine verspannte Stelle."
+    },
+    "es": {
+     "t": "Pantallas y cuerpo",
+     "g": "Conocer los efectos generales de las sesiones largas de pantalla en el cuerpo.",
+     "p": [
+      "Las sesiones largas pueden dejar los ojos cansados y los hombros tensos.",
+      "Pasar horas quieto puede hacerte sentir rígido o pesado.",
+      "Pequeños cambios al sentarte y mirar ayudan mucho."
+     ],
+     "q": "¿Qué parte de tu cuerpo lo nota primero tras una sesión larga de pantalla?",
+     "c": "Haz un repaso corporal tras tu próxima sesión larga y anota una zona tensa."
+    },
+    "fr": {
+     "t": "Écrans et corps",
+     "g": "Découvrir les effets généraux des longues sessions d'écran sur le corps.",
+     "p": [
+      "Les longues sessions peuvent fatiguer les yeux et crisper les épaules.",
+      "Rester immobile des heures peut rendre raide ou lourd.",
+      "De petits changements de posture et de regard aident beaucoup."
+     ],
+     "q": "Quelle partie de ton corps réagit en premier après une longue session d'écran ?",
+     "c": "Fais un scan corporel après ta prochaine longue session et note une zone tendue."
+    },
+    "it": {
+     "t": "Schermi e corpo",
+     "g": "Conoscere gli effetti generali delle lunghe sessioni davanti agli schermi sul corpo.",
+     "p": [
+      "Le sessioni lunghe possono lasciare gli occhi stanchi e le spalle tese.",
+      "Restare fermi per ore può farti sentire rigido o appesantito.",
+      "Piccoli cambiamenti nel modo di sedersi e guardare aiutano molto."
+     ],
+     "q": "Quale parte del corpo se ne accorge per prima dopo una lunga sessione?",
+     "c": "Dopo la prossima lunga sessione fai una scansione del corpo e annota un punto teso."
+    },
+    "pt": {
+     "t": "Ecrãs e corpo",
+     "g": "Conhecer os efeitos gerais de longas sessões de ecrã no corpo.",
+     "p": [
+      "Sessões longas podem deixar os olhos cansados e os ombros tensos.",
+      "Ficar horas parado pode deixar-te rígido ou pesado.",
+      "Pequenas mudanças ao sentar e olhar ajudam muito."
+     ],
+     "q": "Que parte do teu corpo sente primeiro depois de uma sessão longa de ecrã?",
+     "c": "Faz um rastreio corporal após a próxima sessão longa e anota uma zona tensa."
+    },
+    "pt_BR": {
+     "t": "Telas e corpo",
+     "g": "Conhecer os efeitos gerais de longas sessões de tela no corpo.",
+     "p": [
+      "Sessões longas podem deixar os olhos cansados e os ombros tensos.",
+      "Ficar horas parado pode deixar você rígido ou pesado.",
+      "Pequenas mudanças ao sentar e olhar ajudam muito."
+     ],
+     "q": "Que parte do seu corpo sente primeiro depois de uma sessão longa de tela?",
+     "c": "Faça uma varredura corporal após sua próxima sessão longa e anote uma região tensa."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Eye breaks",
+     "g": "Rest your eyes regularly by looking at something far away.",
+     "p": [
+      "Every so often, look at something in the distance for a few seconds.",
+      "Blinking more often also helps eyes that feel dry.",
+      "Link the break to something you already do, like finishing an email."
+     ],
+     "q": "Where could you look into the distance from your usual screen spot?",
+     "c": "Take an eye break every half hour during screen work today."
+    },
+    "de": {
+     "t": "Augenpausen",
+     "g": "Die Augen regelmäßig ausruhen, indem du in die Ferne schaust.",
+     "p": [
+      "Schau immer wieder ein paar Sekunden auf etwas in der Ferne.",
+      "Häufigeres Blinzeln hilft auch trockenen Augen.",
+      "Koppel die Pause an etwas, das du ohnehin tust, etwa eine fertige E-Mail."
+     ],
+     "q": "Wohin könntest du von deinem Bildschirmplatz aus in die Ferne blicken?",
+     "c": "Mach heute bei der Bildschirmarbeit alle dreißig Minuten eine Augenpause."
+    },
+    "es": {
+     "t": "Descansos para los ojos",
+     "g": "Descansar la vista con regularidad mirando algo lejano.",
+     "p": [
+      "De vez en cuando, mira algo a lo lejos durante unos segundos.",
+      "Parpadear más a menudo también ayuda si notas los ojos secos.",
+      "Une el descanso a algo que ya haces, como terminar un correo."
+     ],
+     "q": "¿Dónde podrías mirar a lo lejos desde tu sitio habitual con pantalla?",
+     "c": "Haz un descanso visual cada media hora en tu trabajo con pantalla hoy."
+    },
+    "fr": {
+     "t": "Pauses pour les yeux",
+     "g": "Reposer tes yeux régulièrement en regardant au loin.",
+     "p": [
+      "De temps en temps, regarde quelque chose au loin pendant quelques secondes.",
+      "Cligner plus souvent aide aussi les yeux secs.",
+      "Associe la pause à un geste habituel, comme terminer un e-mail."
+     ],
+     "q": "Où pourrais-tu regarder au loin depuis ta place habituelle devant l'écran ?",
+     "c": "Fais une pause pour les yeux toutes les demi-heures pendant ton travail sur écran aujourd'hui."
+    },
+    "it": {
+     "t": "Pause per gli occhi",
+     "g": "Riposare gli occhi con regolarità guardando qualcosa in lontananza.",
+     "p": [
+      "Ogni tanto guarda qualcosa lontano per qualche secondo.",
+      "Anche sbattere le palpebre più spesso aiuta se gli occhi sono secchi.",
+      "Collega la pausa a qualcosa che già fai, come finire una mail."
+     ],
+     "q": "Dove potresti guardare lontano dalla tua postazione abituale?",
+     "c": "Fai una pausa per gli occhi ogni mezz'ora mentre lavori al computer oggi."
+    },
+    "pt": {
+     "t": "Pausas para os olhos",
+     "g": "Descansar a vista regularmente a olhar para algo distante.",
+     "p": [
+      "De vez em quando, olha para algo ao longe durante alguns segundos.",
+      "Piscar mais vezes também ajuda se os olhos estiverem secos.",
+      "Liga a pausa a algo que já fazes, como acabar um email."
+     ],
+     "q": "Onde podes olhar ao longe a partir do teu lugar habitual com ecrã?",
+     "c": "Faz uma pausa para os olhos de meia em meia hora no trabalho com ecrã hoje."
+    },
+    "pt_BR": {
+     "t": "Pausas para os olhos",
+     "g": "Descansar a vista regularmente olhando para algo distante.",
+     "p": [
+      "De vez em quando, olhe para algo ao longe por alguns segundos.",
+      "Piscar com mais frequência também ajuda se os olhos estiverem secos.",
+      "Ligue a pausa a algo que você já faz, como terminar um e-mail."
+     ],
+     "q": "Onde você poderia olhar ao longe a partir do seu lugar habitual com tela?",
+     "c": "Faça uma pausa para os olhos de meia em meia hora no trabalho com tela hoje."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Posture and tech neck",
+     "g": "Hold devices at eye level and change position often.",
+     "p": [
+      "Raise your phone or screen closer to eye level so your head stays tall.",
+      "Looking down for long stretches can strain the neck.",
+      "The best posture is the next one: change position often."
+     ],
+     "q": "How do you usually hold your phone when you read for a while?",
+     "c": "Raise your screen to eye level for one session today and notice the difference."
+    },
+    "de": {
+     "t": "Haltung und Nacken",
+     "g": "Geräte auf Augenhöhe halten und die Position oft wechseln.",
+     "p": [
+      "Hebe Handy oder Bildschirm näher auf Augenhöhe, damit der Kopf aufrecht bleibt.",
+      "Langes Nach-unten-Schauen kann den Nacken belasten.",
+      "Die beste Haltung ist die nächste: wechsle oft die Position."
+     ],
+     "q": "Wie hältst du dein Handy meist, wenn du länger liest?",
+     "c": "Hebe deinen Bildschirm heute in einer Sitzung auf Augenhöhe und spür den Unterschied."
+    },
+    "es": {
+     "t": "Postura y cuello",
+     "g": "Sostener los dispositivos a la altura de los ojos y cambiar de postura a menudo.",
+     "p": [
+      "Sube el móvil o la pantalla hacia la altura de los ojos para mantener la cabeza erguida.",
+      "Mirar hacia abajo durante mucho rato puede cargar el cuello.",
+      "La mejor postura es la siguiente: cambia de posición a menudo."
+     ],
+     "q": "¿Cómo sueles sostener el móvil cuando lees un buen rato?",
+     "c": "Sube tu pantalla a la altura de los ojos en una sesión hoy y nota la diferencia."
+    },
+    "fr": {
+     "t": "Posture et nuque",
+     "g": "Tenir les appareils à hauteur des yeux et changer souvent de position.",
+     "p": [
+      "Rapproche ton téléphone ou ton écran de la hauteur des yeux pour garder la tête droite.",
+      "Regarder vers le bas longtemps peut fatiguer la nuque.",
+      "La meilleure posture est la prochaine : change souvent de position."
+     ],
+     "q": "Comment tiens-tu d'habitude ton téléphone quand tu lis un moment ?",
+     "c": "Place ton écran à hauteur des yeux pendant une session aujourd'hui et sens la différence."
+    },
+    "it": {
+     "t": "Postura e collo",
+     "g": "Tenere i dispositivi all'altezza degli occhi e cambiare spesso posizione.",
+     "p": [
+      "Alza telefono o schermo verso l'altezza degli occhi per tenere la testa dritta.",
+      "Guardare in basso a lungo può affaticare il collo.",
+      "La postura migliore è la prossima: cambia spesso posizione."
+     ],
+     "q": "Come tieni di solito il telefono quando leggi per un po'?",
+     "c": "Alza lo schermo all'altezza degli occhi in una sessione oggi e nota la differenza."
+    },
+    "pt": {
+     "t": "Postura e pescoço",
+     "g": "Segurar os dispositivos à altura dos olhos e mudar de posição com frequência.",
+     "p": [
+      "Sobe o telemóvel ou o ecrã até à altura dos olhos para manteres a cabeça direita.",
+      "Olhar para baixo muito tempo pode sobrecarregar o pescoço.",
+      "A melhor postura é a seguinte: muda de posição com frequência."
+     ],
+     "q": "Como costumas segurar o telemóvel quando lês durante um tempo?",
+     "c": "Sobe o ecrã à altura dos olhos numa sessão hoje e repara na diferença."
+    },
+    "pt_BR": {
+     "t": "Postura e pescoço",
+     "g": "Segurar os dispositivos na altura dos olhos e mudar de posição com frequência.",
+     "p": [
+      "Suba o celular ou a tela até a altura dos olhos para manter a cabeça ereta.",
+      "Olhar para baixo por muito tempo pode sobrecarregar o pescoço.",
+      "A melhor postura é a próxima: mude de posição com frequência."
+     ],
+     "q": "Como você costuma segurar o celular quando lê por um tempo?",
+     "c": "Suba a tela até a altura dos olhos em uma sessão hoje e note a diferença."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Moving between screen sessions",
+     "g": "Break up long periods of sitting with short stretches and walks.",
+     "p": [
+      "Stand up, stretch or walk around for a minute between tasks.",
+      "Short movement breaks refresh both body and mind.",
+      "Pair a break with a natural moment, like a finished video call."
+     ],
+     "q": "What quick movement would feel good after you have been sitting a while?",
+     "c": "Stand up and stretch for one minute after every long screen block today."
+    },
+    "de": {
+     "t": "Bewegung zwischen Bildschirmphasen",
+     "g": "Langes Sitzen mit kurzen Dehnungen und Spaziergängen unterbrechen.",
+     "p": [
+      "Steh zwischen Aufgaben auf, dehne dich oder geh eine Minute herum.",
+      "Kurze Bewegungspausen erfrischen Körper und Geist.",
+      "Verbinde die Pause mit einem natürlichen Moment, etwa nach einem Videoanruf."
+     ],
+     "q": "Welche kurze Bewegung täte dir nach längerem Sitzen gut?",
+     "c": "Steh heute nach jedem langen Bildschirmblock auf und dehne dich eine Minute."
+    },
+    "es": {
+     "t": "Moverte entre sesiones de pantalla",
+     "g": "Interrumpir los periodos largos sentado con estiramientos y paseos breves.",
+     "p": [
+      "Levántate, estírate o camina un minuto entre tareas.",
+      "Las pausas cortas de movimiento refrescan cuerpo y mente.",
+      "Une la pausa a un momento natural, como al terminar una videollamada."
+     ],
+     "q": "¿Qué movimiento rápido te sentaría bien tras estar un rato sentado?",
+     "c": "Levántate y estírate un minuto tras cada bloque largo de pantalla hoy."
+    },
+    "fr": {
+     "t": "Bouger entre deux sessions d'écran",
+     "g": "Couper les longues périodes assises par de courts étirements et des marches.",
+     "p": [
+      "Lève-toi, étire-toi ou marche une minute entre deux tâches.",
+      "De courtes pauses de mouvement ressourcent le corps et l'esprit.",
+      "Associe la pause à un moment naturel, comme la fin d'un appel vidéo."
+     ],
+     "q": "Quel mouvement rapide te ferait du bien après être resté assis un moment ?",
+     "c": "Lève-toi et étire-toi une minute après chaque long bloc d'écran aujourd'hui."
+    },
+    "it": {
+     "t": "Muoversi tra una sessione e l'altra",
+     "g": "Spezzare i lunghi periodi seduti con brevi stretching e passeggiate.",
+     "p": [
+      "Alzati, stirati o cammina un minuto tra un'attività e l'altra.",
+      "Brevi pause di movimento rinfrescano corpo e mente.",
+      "Abbina la pausa a un momento naturale, come la fine di una videochiamata."
+     ],
+     "q": "Quale movimento veloce ti farebbe bene dopo essere stato seduto un po'?",
+     "c": "Alzati e stirati per un minuto dopo ogni lungo blocco davanti allo schermo oggi."
+    },
+    "pt": {
+     "t": "Mover-te entre sessões de ecrã",
+     "g": "Interromper longos períodos sentado com alongamentos e passeios curtos.",
+     "p": [
+      "Levanta-te, alonga-te ou caminha um minuto entre tarefas.",
+      "Pausas curtas de movimento refrescam o corpo e a mente.",
+      "Liga a pausa a um momento natural, como o fim de uma videochamada."
+     ],
+     "q": "Que movimento rápido te sabia bem depois de estares um tempo sentado?",
+     "c": "Levanta-te e alonga-te um minuto depois de cada bloco longo de ecrã hoje."
+    },
+    "pt_BR": {
+     "t": "Movimento entre sessões de tela",
+     "g": "Interromper longos períodos sentado com alongamentos e caminhadas curtas.",
+     "p": [
+      "Levante-se, alongue-se ou ande um minuto entre tarefas.",
+      "Pausas curtas de movimento refrescam corpo e mente.",
+      "Ligue a pausa a um momento natural, como o fim de uma videochamada."
+     ],
+     "q": "Que movimento rápido seria bom depois de ficar um tempo sentado?",
+     "c": "Levante-se e alongue-se um minuto depois de cada bloco longo de tela hoje."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Screens and sleep basics",
+     "g": "Understand why bright screens late at night can make rest harder.",
+     "p": [
+      "Bright light in the evening can tell your body it is still daytime.",
+      "Exciting or stressful content can keep your mind busy at bedtime.",
+      "A calmer last stretch before sleep helps many people rest better."
+     ],
+     "q": "How do you feel on nights when you use your phone right before sleep?",
+     "c": "Tonight, put screens down 15 minutes earlier than usual and see how it feels."
+    },
+    "de": {
+     "t": "Bildschirme und Schlaf: Grundlagen",
+     "g": "Verstehen, warum helle Bildschirme spät abends die Erholung erschweren können.",
+     "p": [
+      "Helles Licht am Abend kann dem Körper sagen, dass noch Tag ist.",
+      "Aufregende oder stressige Inhalte können den Kopf vor dem Schlafen beschäftigen.",
+      "Ein ruhigeres Ende vor dem Schlaf hilft vielen, besser zu ruhen."
+     ],
+     "q": "Wie fühlst du dich nach Abenden, an denen du kurz vor dem Schlaf am Handy bist?",
+     "c": "Leg die Geräte heute Abend 15 Minuten früher weg und spür, wie es sich anfühlt."
+    },
+    "es": {
+     "t": "Pantallas y sueño: lo básico",
+     "g": "Entender por qué las pantallas brillantes de noche pueden dificultar el descanso.",
+     "p": [
+      "La luz intensa por la noche puede decirle al cuerpo que aún es de día.",
+      "Los contenidos emocionantes o estresantes pueden mantener la mente activa al acostarte.",
+      "Un último tramo más calmado antes de dormir ayuda a muchas personas a descansar."
+     ],
+     "q": "¿Cómo te sientes las noches que usas el móvil justo antes de dormir?",
+     "c": "Esta noche deja las pantallas 15 minutos antes de lo habitual y observa cómo te sientes."
+    },
+    "fr": {
+     "t": "Écrans et sommeil : les bases",
+     "g": "Comprendre pourquoi les écrans lumineux tard le soir peuvent compliquer le repos.",
+     "p": [
+      "Une lumière vive le soir peut faire croire au corps qu'il fait encore jour.",
+      "Des contenus excitants ou stressants peuvent garder l'esprit occupé au coucher.",
+      "Une dernière heure plus calme aide beaucoup de gens à mieux se reposer."
+     ],
+     "q": "Comment te sens-tu les soirs où tu utilises ton téléphone juste avant de dormir ?",
+     "c": "Ce soir, pose les écrans 15 minutes plus tôt que d'habitude et observe ce que ça change."
+    },
+    "it": {
+     "t": "Schermi e sonno: le basi",
+     "g": "Capire perché gli schermi luminosi a tarda sera possono rendere più difficile il riposo.",
+     "p": [
+      "La luce intensa serale può far credere al corpo che sia ancora giorno.",
+      "Contenuti emozionanti o stressanti possono tenere la mente attiva al momento di dormire.",
+      "Un ultimo tratto più calmo prima di dormire aiuta molte persone a riposare meglio."
+     ],
+     "q": "Come ti senti nelle sere in cui usi il telefono subito prima di dormire?",
+     "c": "Stasera posa gli schermi 15 minuti prima del solito e osserva come ti senti."
+    },
+    "pt": {
+     "t": "Ecrãs e sono: o essencial",
+     "g": "Perceber porque ecrãs brilhantes à noite podem dificultar o descanso.",
+     "p": [
+      "A luz forte ao fim do dia pode dizer ao corpo que ainda é de dia.",
+      "Conteúdos emocionantes ou stressantes podem manter a mente ocupada ao deitar.",
+      "Uma última parte do dia mais calma ajuda muita gente a descansar melhor."
+     ],
+     "q": "Como te sentes nas noites em que usas o telemóvel mesmo antes de dormir?",
+     "c": "Esta noite pousa os ecrãs 15 minutos mais cedo do que o habitual e vê como te sentes."
+    },
+    "pt_BR": {
+     "t": "Telas e sono: o básico",
+     "g": "Entender por que telas brilhantes à noite podem dificultar o descanso.",
+     "p": [
+      "A luz forte no fim do dia pode dizer ao corpo que ainda é dia.",
+      "Conteúdos empolgantes ou estressantes podem manter a mente ocupada na hora de deitar.",
+      "Um último trecho do dia mais calmo ajuda muita gente a descansar melhor."
+     ],
+     "q": "Como você se sente nas noites em que usa o celular logo antes de dormir?",
+     "c": "Hoje à noite largue as telas 15 minutos mais cedo que o normal e veja como se sente."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Morning phone habits",
+     "g": "Notice whether the phone is the first thing you check after waking.",
+     "p": [
+      "The first minutes of the day can set the mood for the rest.",
+      "Notice what you reach for first: the phone, a stretch or a window.",
+      "You do not have to change it today, only to see it clearly."
+     ],
+     "q": "What is the first thing you usually do when you wake up?",
+     "c": "Tomorrow morning, wait five minutes before touching your phone and see how it feels."
+    },
+    "de": {
+     "t": "Handy-Gewohnheiten am Morgen",
+     "g": "Bemerken, ob das Handy das Erste ist, was du nach dem Aufwachen checkst.",
+     "p": [
+      "Die ersten Minuten des Tages können die Stimmung für den Rest prägen.",
+      "Achte darauf, wonach du zuerst greifst: Handy, Dehnen oder Fenster.",
+      "Du musst es heute nicht ändern, nur klar sehen."
+     ],
+     "q": "Was tust du normalerweise als Erstes nach dem Aufwachen?",
+     "c": "Warte morgen früh fünf Minuten, bevor du dein Handy anfasst, und spür nach."
+    },
+    "es": {
+     "t": "Hábitos con el móvil por la mañana",
+     "g": "Notar si el móvil es lo primero que miras al despertar.",
+     "p": [
+      "Los primeros minutos del día pueden marcar el ánimo del resto.",
+      "Fíjate en qué buscas primero: el móvil, un estiramiento o la ventana.",
+      "No tienes que cambiarlo hoy, solo verlo con claridad."
+     ],
+     "q": "¿Qué es lo primero que sueles hacer al despertar?",
+     "c": "Mañana espera cinco minutos antes de tocar el móvil y observa cómo te sientes."
+    },
+    "fr": {
+     "t": "Habitudes téléphone du matin",
+     "g": "Remarquer si le téléphone est la première chose que tu regardes au réveil.",
+     "p": [
+      "Les premières minutes de la journée peuvent donner le ton pour la suite.",
+      "Observe ce que tu saisis en premier : le téléphone, un étirement ou la fenêtre.",
+      "Tu n'as pas à changer aujourd'hui, seulement à voir clairement."
+     ],
+     "q": "Quelle est la première chose que tu fais d'habitude au réveil ?",
+     "c": "Demain matin, attends cinq minutes avant de toucher ton téléphone et observe."
+    },
+    "it": {
+     "t": "Abitudini mattutine con il telefono",
+     "g": "Notare se il telefono è la prima cosa che controlli al risveglio.",
+     "p": [
+      "I primi minuti della giornata possono dare il tono al resto.",
+      "Nota cosa cerchi per prima cosa: il telefono, uno stretching o la finestra.",
+      "Non devi cambiarlo oggi, solo vederlo con chiarezza."
+     ],
+     "q": "Qual è la prima cosa che fai di solito quando ti svegli?",
+     "c": "Domani mattina aspetta cinque minuti prima di toccare il telefono e osserva come ti senti."
+    },
+    "pt": {
+     "t": "Hábitos de manhã com o telemóvel",
+     "g": "Reparar se o telemóvel é a primeira coisa que vês ao acordar.",
+     "p": [
+      "Os primeiros minutos do dia podem marcar o ânimo do resto.",
+      "Repara no que procuras primeiro: o telemóvel, um alongamento ou a janela.",
+      "Não tens de mudar hoje, só de ver com clareza."
+     ],
+     "q": "Qual é a primeira coisa que costumas fazer ao acordar?",
+     "c": "Amanhã de manhã espera cinco minutos antes de tocar no telemóvel e repara como te sentes."
+    },
+    "pt_BR": {
+     "t": "Hábitos matinais com o celular",
+     "g": "Perceber se o celular é a primeira coisa que você olha ao acordar.",
+     "p": [
+      "Os primeiros minutos do dia podem definir o clima do resto.",
+      "Repare no que você busca primeiro: o celular, um alongamento ou a janela.",
+      "Você não precisa mudar hoje, só enxergar com clareza."
+     ],
+     "q": "Qual é a primeira coisa que você costuma fazer ao acordar?",
+     "c": "Amanhã de manhã espere cinco minutos antes de tocar no celular e observe como se sente."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Evening phone habits",
+     "g": "Notice how screens fill the last hour before sleep.",
+     "p": [
+      "Look at what you do with screens in your final hour of the day.",
+      "Is it relaxing, or is it just habit and one more video?",
+      "Even a small shift, like swapping one screen task for a book, counts."
+     ],
+     "q": "What is your usual last activity before sleep?",
+     "c": "Tonight, replace ten minutes of screen time with something analogue, like reading."
+    },
+    "de": {
+     "t": "Handy-Gewohnheiten am Abend",
+     "g": "Bemerken, wie Bildschirme die letzte Stunde vor dem Schlaf füllen.",
+     "p": [
+      "Schau, was du in der letzten Stunde des Tages mit Bildschirmen machst.",
+      "Entspannt es dich, oder ist es Gewohnheit und noch ein Video?",
+      "Schon eine kleine Veränderung, etwa ein Buch statt einer Bildschirmaufgabe, zählt."
+     ],
+     "q": "Was ist deine übliche letzte Aktivität vor dem Schlafen?",
+     "c": "Ersetze heute Abend zehn Minuten Bildschirmzeit durch etwas Analoges, etwa Lesen."
+    },
+    "es": {
+     "t": "Hábitos con el móvil por la noche",
+     "g": "Notar cómo las pantallas llenan la última hora antes de dormir.",
+     "p": [
+      "Mira qué haces con las pantallas en la última hora del día.",
+      "¿Te relaja o es solo costumbre y un vídeo más?",
+      "Incluso un cambio pequeño, como cambiar una tarea de pantalla por un libro, cuenta."
+     ],
+     "q": "¿Cuál es tu última actividad habitual antes de dormir?",
+     "c": "Esta noche cambia diez minutos de pantalla por algo analógico, como leer."
+    },
+    "fr": {
+     "t": "Habitudes téléphone du soir",
+     "g": "Remarquer comment les écrans remplissent la dernière heure avant le sommeil.",
+     "p": [
+      "Regarde ce que tu fais avec les écrans dans la dernière heure de ta journée.",
+      "Est-ce reposant, ou juste une habitude et une vidéo de plus ?",
+      "Même un petit changement, comme remplacer un écran par un livre, compte."
+     ],
+     "q": "Quelle est ta dernière activité habituelle avant de dormir ?",
+     "c": "Ce soir, remplace dix minutes d'écran par quelque chose d'analogique, comme lire."
+    },
+    "it": {
+     "t": "Abitudini serali con il telefono",
+     "g": "Notare come gli schermi riempiono l'ultima ora prima di dormire.",
+     "p": [
+      "Guarda cosa fai con gli schermi nell'ultima ora della giornata.",
+      "È rilassante o solo abitudine e un altro video?",
+      "Anche un piccolo cambiamento, come un libro al posto di uno schermo, conta."
+     ],
+     "q": "Qual è la tua ultima attività abituale prima di dormire?",
+     "c": "Stasera sostituisci dieci minuti di schermo con qualcosa di analogico, come leggere."
+    },
+    "pt": {
+     "t": "Hábitos de noite com o telemóvel",
+     "g": "Reparar como os ecrãs ocupam a última hora antes de dormir.",
+     "p": [
+      "Vê o que fazes com os ecrãs na última hora do dia.",
+      "Relaxa-te, ou é só hábito e mais um vídeo?",
+      "Até uma pequena mudança, como trocar um ecrã por um livro, conta."
+     ],
+     "q": "Qual é a tua última atividade habitual antes de dormir?",
+     "c": "Esta noite troca dez minutos de ecrã por algo analógico, como ler."
+    },
+    "pt_BR": {
+     "t": "Hábitos noturnos com o celular",
+     "g": "Perceber como as telas ocupam a última hora antes de dormir.",
+     "p": [
+      "Veja o que você faz com as telas na última hora do dia.",
+      "Isso relaxa, ou é só hábito e mais um vídeo?",
+      "Até uma pequena mudança, como trocar uma tela por um livro, conta."
+     ],
+     "q": "Qual é sua última atividade habitual antes de dormir?",
+     "c": "Hoje à noite troque dez minutos de tela por algo analógico, como ler."
+    }
+   }
+  }
+ ]
+}

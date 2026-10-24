@@ -1,0 +1,835 @@
+{
+ "topic": "parenting_tips",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Keep it to one or two hours with a simple snack and a few open toys.",
+      "Put away special toys that are hard to share before friends arrive.",
+      "Step in only when needed and let children solve small squabbles first."
+     ],
+     "t": "Playdates made easy",
+     "g": "Plan short, simple playdates that go smoothly.",
+     "q": "Who is your child's favourite playmate, and what do they enjoy together?",
+     "c": "Plan one short playdate or video call with a friend for your child this week."
+    },
+    "de": {
+     "p": [
+      "Halte es bei ein bis zwei Stunden mit einem einfachen Snack und ein paar offenen Spielsachen.",
+      "Räume besondere Spielsachen, die schwer zu teilen sind, vor dem Besuch weg.",
+      "Greif nur ein, wenn nötig, und lass Kinder kleine Streitereien zuerst selbst lösen."
+     ],
+     "t": "Spieltermine leicht gemacht",
+     "g": "Plane kurze, einfache Spieltreffen, die glatt laufen.",
+     "q": "Wer ist der liebste Spielkamerad deines Kindes, und was macht ihr zusammen gern?",
+     "c": "Plane diese Woche ein kurzes Spieltreffen oder einen Videoanruf mit einem Freund."
+    },
+    "es": {
+     "p": [
+      "Que duren una o dos horas, con una merienda sencilla y algunos juguetes abiertos.",
+      "Guarda los juguetes especiales difíciles de compartir antes de que lleguen los amigos.",
+      "Interviene solo cuando haga falta y deja que los niños resuelvan primero las pequeñas peleas."
+     ],
+     "t": "Quedadas de juego fáciles",
+     "g": "Planifica quedadas cortas y sencillas que salgan bien.",
+     "q": "¿Quién es el mejor compañero de juegos de tu hijo y qué disfrutan juntos?",
+     "c": "Planea esta semana una quedada corta o videollamada con un amigo para tu hijo."
+    },
+    "fr": {
+     "p": [
+      "Une à deux heures, avec un goûter simple et quelques jouets ouverts.",
+      "Range les jouets spéciaux difficiles à partager avant l'arrivée des amis.",
+      "N'interviens que si nécessaire et laisse les enfants régler d'abord leurs petites disputes."
+     ],
+     "t": "Des rencontres de jeu faciles",
+     "g": "Prévois des rencontres de jeu courtes et simples qui se passent bien.",
+     "q": "Qui est le meilleur camarade de jeu de ton enfant, et qu'aiment-ils faire ensemble ?",
+     "c": "Prévois cette semaine une courte rencontre ou un appel vidéo avec un ami pour ton enfant."
+    },
+    "it": {
+     "p": [
+      "Che durino una o due ore, con una merenda semplice e qualche gioco aperto.",
+      "Metti via i giochi speciali difficili da condividere prima che arrivino gli amici.",
+      "Intervieni solo se serve e lascia che i bambini risolvano prima le piccole liti."
+     ],
+     "t": "Appuntamenti di gioco facili",
+     "g": "Pianifica incontri di gioco brevi e semplici che vadano lisci.",
+     "q": "Chi è il compagno di giochi preferito di tuo figlio e cosa amano fare insieme?",
+     "c": "Pianifica questa settimana un breve incontro o una videochiamata con un amico per tuo figlio."
+    },
+    "pt": {
+     "p": [
+      "Uma a duas horas, com um lanche simples e alguns brinquedos abertos.",
+      "Guarda os brinquedos especiais difíceis de partilhar antes de os amigos chegarem.",
+      "Intervém só quando preciso e deixa as crianças resolver primeiro as pequenas zangas."
+     ],
+     "t": "Encontros de brincadeira fáceis",
+     "g": "Planeia encontros curtos e simples que corram bem.",
+     "q": "Quem é o companheiro de brincadeiras preferido do teu filho e o que gostam de fazer juntos?",
+     "c": "Planeia esta semana um encontro curto ou videochamada com um amigo para o teu filho."
+    },
+    "pt_BR": {
+     "p": [
+      "Uma a duas horas, com um lanche simples e alguns brinquedos abertos.",
+      "Guarde os brinquedos especiais difíceis de dividir antes de os amigos chegarem.",
+      "Intervenha só quando preciso e deixe as crianças resolverem primeiro as pequenas brigas."
+     ],
+     "t": "Encontrinhos de brincadeira fáceis",
+     "g": "Planeje encontros curtos e simples que corram bem.",
+     "q": "Quem é o companheiro de brincadeiras favorito do seu filho e o que eles gostam de fazer juntos?",
+     "c": "Planeje esta semana um encontro curto ou videochamada com um amigo para seu filho."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Many games travel the world: marbles, tag, hopscotch and string games.",
+      "Learn one game from a friend, neighbour or grandparent and pass it on.",
+      "Playing games from other places builds curiosity and respect for others."
+     ],
+     "t": "Play across cultures",
+     "g": "Share traditional games from around the world with your kids.",
+     "q": "Which game from your own childhood could you teach your child?",
+     "c": "Teach or learn one traditional game today, from any culture, and play it together."
+    },
+    "de": {
+     "p": [
+      "Viele Spiele reisen um die Welt: Murmeln, Fangen, Hüpfkästchen und Fadenspiele.",
+      "Lerne ein Spiel von einem Freund, Nachbarn oder den Großeltern und gib es weiter.",
+      "Spiele aus anderen Orten wecken Neugier und Respekt für andere."
+     ],
+     "t": "Spielen über Kulturen hinweg",
+     "g": "Teile traditionelle Spiele aus aller Welt mit deinen Kindern.",
+     "q": "Welches Spiel aus deiner Kindheit könntest du deinem Kind beibringen?",
+     "c": "Bring heute ein traditionelles Spiel bei oder lerne eines, aus irgendeiner Kultur, und spielt es zusammen."
+    },
+    "es": {
+     "p": [
+      "Muchos juegos viajan por el mundo: canicas, pillar, rayuela y juegos de cuerda.",
+      "Aprende un juego de un amigo, vecino o abuelo y transmítelo.",
+      "Jugar a juegos de otros lugares crea curiosidad y respeto por los demás."
+     ],
+     "t": "Jugar entre culturas",
+     "g": "Comparte con tus hijos juegos tradicionales de todo el mundo.",
+     "q": "¿Qué juego de tu infancia podrías enseñar a tu hijo?",
+     "c": "Enseña o aprende hoy un juego tradicional, de cualquier cultura, y jugadlo juntos."
+    },
+    "fr": {
+     "p": [
+      "Beaucoup de jeux voyagent : billes, chat perché, marelle et jeux de ficelle.",
+      "Apprends un jeu auprès d'un ami, d'un voisin ou d'un grand-parent et transmets-le.",
+      "Jouer à des jeux d'ailleurs éveille la curiosité et le respect des autres."
+     ],
+     "t": "Jouer à travers les cultures",
+     "g": "Partage avec tes enfants des jeux traditionnels du monde entier.",
+     "q": "Quel jeu de ton enfance pourrais-tu apprendre à ton enfant ?",
+     "c": "Enseigne ou apprends aujourd'hui un jeu traditionnel, de n'importe quelle culture, et jouez-y ensemble."
+    },
+    "it": {
+     "p": [
+      "Molti giochi viaggiano per il mondo: biglie, rincorrersi, campana e giochi con lo spago.",
+      "Impara un gioco da un amico, un vicino o un nonno e tramandalo.",
+      "Giocare a giochi di altri luoghi crea curiosità e rispetto per gli altri."
+     ],
+     "t": "Giocare tra culture diverse",
+     "g": "Condividi con i tuoi figli giochi tradizionali da tutto il mondo.",
+     "q": "Quale gioco della tua infanzia potresti insegnare a tuo figlio?",
+     "c": "Oggi insegna o impara un gioco tradizionale, di qualsiasi cultura, e giocatelo insieme."
+    },
+    "pt": {
+     "p": [
+      "Muitos jogos viajam pelo mundo: berlindes, apanhada, macaca e jogos de cordel.",
+      "Aprende um jogo com um amigo, vizinho ou avô e passa-o adiante.",
+      "Brincar com jogos de outros lugares cria curiosidade e respeito pelos outros."
+     ],
+     "t": "Brincar entre culturas",
+     "g": "Partilha com os teus filhos jogos tradicionais de todo o mundo.",
+     "q": "Que jogo da tua infância poderias ensinar ao teu filho?",
+     "c": "Ensina ou aprende hoje um jogo tradicional, de qualquer cultura, e joguem-no juntos."
+    },
+    "pt_BR": {
+     "p": [
+      "Muitos jogos viajam pelo mundo: bolinhas de gude, pega-pega, amarelinha e jogos de barbante.",
+      "Aprenda um jogo com um amigo, vizinho ou avô e passe adiante.",
+      "Brincar com jogos de outros lugares cria curiosidade e respeito pelos outros."
+     ],
+     "t": "Brincar entre culturas",
+     "g": "Compartilhe com seus filhos jogos tradicionais do mundo todo.",
+     "q": "Que jogo da sua infância você poderia ensinar ao seu filho?",
+     "c": "Ensine ou aprenda hoje um jogo tradicional, de qualquer cultura, e joguem juntos."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Start with Once upon a time and take turns adding one sentence each.",
+      "Use your child's toys or favourite animals as the heroes.",
+      "Silly twists are welcome; there are no wrong stories."
+     ],
+     "t": "Learning through storytelling",
+     "g": "Invent stories together to build language and imagination.",
+     "q": "If your child invented a hero, what would that hero be like?",
+     "c": "Tell a round-robin story today, one sentence each, and see where it goes."
+    },
+    "de": {
+     "p": [
+      "Beginnt mit Es war einmal und fügt abwechselnd je einen Satz hinzu.",
+      "Nutze die Spielsachen oder Lieblingstiere deines Kindes als Helden.",
+      "Alberne Wendungen sind willkommen; es gibt keine falschen Geschichten."
+     ],
+     "t": "Lernen durch Geschichtenerzählen",
+     "g": "Erfindet gemeinsam Geschichten, um Sprache und Fantasie zu stärken.",
+     "q": "Wenn dein Kind einen Helden erfände, wie wäre er?",
+     "c": "Erzählt heute eine Reihum-Geschichte, jeder einen Satz, und seht, wohin sie führt."
+    },
+    "es": {
+     "p": [
+      "Empezad con Érase una vez y añadid una frase cada uno por turnos.",
+      "Usa los juguetes o animales favoritos de tu hijo como héroes.",
+      "Los giros tontos son bienvenidos; no hay cuentos equivocados."
+     ],
+     "t": "Aprender contando historias",
+     "g": "Inventad cuentos juntos para desarrollar lenguaje e imaginación.",
+     "q": "Si tu hijo inventara un héroe, ¿cómo sería?",
+     "c": "Contad hoy un cuento por turnos, una frase cada uno, y ved adónde llega."
+    },
+    "fr": {
+     "p": [
+      "Commencez par Il était une fois et ajoutez chacun une phrase à tour de rôle.",
+      "Prends les jouets ou les animaux préférés de ton enfant comme héros.",
+      "Les rebondissements farfelus sont bienvenus ; il n'y a pas de mauvaise histoire."
+     ],
+     "t": "Apprendre en racontant des histoires",
+     "g": "Inventez des histoires ensemble pour développer langage et imagination.",
+     "q": "Si ton enfant inventait un héros, comment serait-il ?",
+     "c": "Racontez aujourd'hui une histoire à tour de rôle, une phrase chacun, et voyez où elle mène."
+    },
+    "it": {
+     "p": [
+      "Iniziate con C'era una volta e aggiungete a turno una frase ciascuno.",
+      "Usa i giochi o gli animali preferiti di tuo figlio come eroi.",
+      "Le svolte buffe sono benvenute; non esistono storie sbagliate."
+     ],
+     "t": "Imparare raccontando storie",
+     "g": "Inventate storie insieme per sviluppare linguaggio e fantasia.",
+     "q": "Se tuo figlio inventasse un eroe, come sarebbe?",
+     "c": "Raccontate oggi una storia a turno, una frase ciascuno, e vedete dove arriva."
+    },
+    "pt": {
+     "p": [
+      "Comecem com Era uma vez e acrescentem uma frase cada um, à vez.",
+      "Usa os brinquedos ou animais preferidos do teu filho como heróis.",
+      "As reviravoltas tolas são bem-vindas; não há histórias erradas."
+     ],
+     "t": "Aprender a contar histórias",
+     "g": "Inventem histórias juntos para desenvolver linguagem e imaginação.",
+     "q": "Se o teu filho inventasse um herói, como seria?",
+     "c": "Contem hoje uma história à vez, uma frase cada um, e vejam onde chega."
+    },
+    "pt_BR": {
+     "p": [
+      "Comecem com Era uma vez e acrescentem uma frase cada um, na vez.",
+      "Use os brinquedos ou animais preferidos do seu filho como heróis.",
+      "Reviravoltas bobas são bem-vindas; não existem histórias erradas."
+     ],
+     "t": "Aprender contando histórias",
+     "g": "Inventem histórias juntos para desenvolver linguagem e imaginação.",
+     "q": "Se seu filho inventasse um herói, como ele seria?",
+     "c": "Contem hoje uma história na vez, uma frase cada um, e vejam aonde chega."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Give the walk a mission: find three red things or a heart-shaped stone.",
+      "Let your child lead at junctions to feel like the explorer.",
+      "Pack a snack and a small adventure bag with a notebook and magnifier."
+     ],
+     "t": "Family walks and small adventures",
+     "g": "Turn local outings into exciting mini expeditions.",
+     "q": "What nearby place have you never explored with your family?",
+     "c": "Take a 30-minute mini expedition near home with a simple mission."
+    },
+    "de": {
+     "p": [
+      "Gib dem Spaziergang eine Mission: Findet drei rote Dinge oder einen herzförmigen Stein.",
+      "Lass dein Kind an Kreuzungen führen, damit es sich als Entdecker fühlt.",
+      "Pack einen Snack und eine kleine Abenteuertasche mit Notizbuch und Lupe ein."
+     ],
+     "t": "Familienspaziergänge und kleine Abenteuer",
+     "g": "Mach Ausflüge in der Nähe zu spannenden Mini-Expeditionen.",
+     "q": "Welchen Ort in der Nähe habt ihr als Familie noch nie erkundet?",
+     "c": "Macht eine 30-minütige Mini-Expedition in der Nähe mit einer einfachen Mission."
+    },
+    "es": {
+     "p": [
+      "Dale al paseo una misión: encontrar tres cosas rojas o una piedra con forma de corazón.",
+      "Deja que tu hijo guíe en los cruces para sentirse explorador.",
+      "Lleva una merienda y una bolsa de aventuras con cuaderno y lupa."
+     ],
+     "t": "Paseos familiares y pequeñas aventuras",
+     "g": "Convierte las salidas cercanas en emocionantes minixpediciones.",
+     "q": "¿Qué lugar cercano nunca habéis explorado en familia?",
+     "c": "Haced una miniexpedición de 30 minutos cerca de casa con una misión sencilla."
+    },
+    "fr": {
+     "p": [
+      "Donne une mission à la balade : trouver trois choses rouges ou une pierre en forme de cœur.",
+      "Laisse ton enfant décider aux carrefours pour se sentir explorateur.",
+      "Emporte un goûter et un petit sac d'aventure avec carnet et loupe."
+     ],
+     "t": "Balades en famille et petites aventures",
+     "g": "Transforme les sorties près de chez toi en mini-expéditions passionnantes.",
+     "q": "Quel endroit tout proche n'avez-vous jamais exploré en famille ?",
+     "c": "Partez en mini-expédition de 30 minutes près de chez vous avec une mission simple."
+    },
+    "it": {
+     "p": [
+      "Dai una missione alla passeggiata: trovare tre cose rosse o un sasso a forma di cuore.",
+      "Lascia guidare tuo figlio agli incroci per sentirsi un esploratore.",
+      "Porta una merenda e un piccolo zaino dell'avventura con taccuino e lente."
+     ],
+     "t": "Passeggiate in famiglia e piccole avventure",
+     "g": "Trasforma le uscite vicino a casa in emozionanti mini spedizioni.",
+     "q": "Quale posto vicino non avete mai esplorato in famiglia?",
+     "c": "Fate una mini spedizione di 30 minuti vicino a casa con una missione semplice."
+    },
+    "pt": {
+     "p": [
+      "Dá uma missão ao passeio: encontrar três coisas vermelhas ou uma pedra em forma de coração.",
+      "Deixa o teu filho liderar nos cruzamentos para se sentir explorador.",
+      "Leva um lanche e uma pequena mochila de aventura com caderno e lupa."
+     ],
+     "t": "Passeios em família e pequenas aventuras",
+     "g": "Transforma saídas perto de casa em minoexpedições emocionantes.",
+     "q": "Que sítio perto de casa nunca exploraram em família?",
+     "c": "Façam uma miniexpedição de 30 minutos perto de casa com uma missão simples."
+    },
+    "pt_BR": {
+     "p": [
+      "Dê uma missão ao passeio: achar três coisas vermelhas ou uma pedra em forma de coração.",
+      "Deixe seu filho liderar nos cruzamentos para se sentir explorador.",
+      "Leve um lanche e uma pequena mochila de aventura com caderno e lupa."
+     ],
+     "t": "Passeios em família e pequenas aventuras",
+     "g": "Transforme saídas perto de casa em miniexpedições emocionantes.",
+     "q": "Que lugar perto de casa vocês nunca exploraram em família?",
+     "c": "Façam uma miniexpedição de 30 minutos perto de casa com uma missão simples."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Sing songs and read books in each language; short, regular exposure adds up.",
+      "Make each language joyful through games, cooking and stories, never a chore.",
+      "Mixing languages is natural for multilingual kids, so no need to worry."
+     ],
+     "t": "Playful learning of languages",
+     "g": "Use songs, games and books for families raising children with more than one language.",
+     "q": "Which languages are spoken or loved in your home, and where do they appear?",
+     "c": "Sing one song or read one page in a second language together today."
+    },
+    "de": {
+     "p": [
+      "Singe Lieder und lies Bücher in jeder Sprache; kurze, regelmäßige Kontakte summieren sich.",
+      "Mach jede Sprache durch Spiele, Kochen und Geschichten zur Freude, nie zur Pflicht.",
+      "Sprachenmischen ist für mehrsprachige Kinder natürlich, also kein Grund zur Sorge."
+     ],
+     "t": "Sprachen spielerisch lernen",
+     "g": "Nutze Lieder, Spiele und Bücher für Familien, die Kinder mit mehr als einer Sprache großziehen.",
+     "q": "Welche Sprachen werden bei euch gesprochen oder geliebt, und wo kommen sie vor?",
+     "c": "Singt heute zusammen ein Lied oder lest eine Seite in einer zweiten Sprache."
+    },
+    "es": {
+     "p": [
+      "Canta canciones y lee libros en cada idioma; el contacto breve y regular suma.",
+      "Haz que cada idioma sea alegre con juegos, cocina y cuentos, nunca una obligación.",
+      "Mezclar idiomas es natural en niños multilingües, así que no hay por qué preocuparse."
+     ],
+     "t": "Aprender idiomas jugando",
+     "g": "Usa canciones, juegos y libros en familias que crían hijos con más de un idioma.",
+     "q": "¿Qué idiomas se hablan o se quieren en tu casa y dónde aparecen?",
+     "c": "Cantad hoy juntos una canción o leed una página en un segundo idioma."
+    },
+    "fr": {
+     "p": [
+      "Chante des chansons et lis des livres dans chaque langue ; un contact court et régulier s'additionne.",
+      "Rends chaque langue joyeuse par les jeux, la cuisine et les histoires, jamais une corvée.",
+      "Mélanger les langues est naturel chez les enfants multilingues, inutile de s'inquiéter."
+     ],
+     "t": "Apprendre les langues en jouant",
+     "g": "Utilise chansons, jeux et livres dans les familles qui élèvent des enfants avec plusieurs langues.",
+     "q": "Quelles langues sont parlées ou aimées chez vous, et où apparaissent-elles ?",
+     "c": "Chantez aujourd'hui une chanson ou lisez une page dans une deuxième langue."
+    },
+    "it": {
+     "p": [
+      "Canta canzoni e leggi libri in ogni lingua; un contatto breve e regolare si somma.",
+      "Rendi ogni lingua gioiosa con giochi, cucina e storie, mai un dovere.",
+      "Mescolare le lingue è naturale per i bambini plurilingue, quindi niente preoccupazioni."
+     ],
+     "t": "Imparare le lingue giocando",
+     "g": "Usa canzoni, giochi e libri nelle famiglie che crescono figli con più di una lingua.",
+     "q": "Quali lingue si parlano o si amano a casa tua e dove compaiono?",
+     "c": "Cantate oggi insieme una canzone o leggete una pagina in una seconda lingua."
+    },
+    "pt": {
+     "p": [
+      "Canta canções e lê livros em cada língua; o contacto curto e regular soma.",
+      "Torna cada língua alegre com jogos, cozinha e histórias, nunca uma obrigação.",
+      "Misturar línguas é natural em crianças multilingues, por isso não há que preocupar."
+     ],
+     "t": "Aprender línguas a brincar",
+     "g": "Usa canções, jogos e livros em famílias que criam filhos com mais de uma língua.",
+     "q": "Que línguas se falam ou se amam na tua casa e onde aparecem?",
+     "c": "Cantem hoje juntos uma canção ou leiam uma página numa segunda língua."
+    },
+    "pt_BR": {
+     "p": [
+      "Cante músicas e leia livros em cada idioma; o contato curto e regular soma.",
+      "Deixe cada idioma alegre com jogos, culinária e histórias, nunca uma obrigação.",
+      "Misturar idiomas é natural em crianças multilíngues, então não precisa se preocupar."
+     ],
+     "t": "Aprender idiomas brincando",
+     "g": "Use músicas, jogos e livros em famílias que criam filhos com mais de um idioma.",
+     "q": "Que idiomas são falados ou amados na sua casa e onde eles aparecem?",
+     "c": "Cantem hoje juntos uma música ou leiam uma página num segundo idioma."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Ask: Tell me about your picture, instead of guessing what it is.",
+      "Hang art on the fridge or a wall gallery so children see their work valued.",
+      "Praise the colours, effort and ideas rather than whether it looks real."
+     ],
+     "t": "Celebrating creativity",
+     "g": "Display children's art and value the process over the result.",
+     "q": "What creative thing has your child made lately that made you smile?",
+     "c": "Choose one piece of art, display it, and ask your child to tell you its story."
+    },
+    "de": {
+     "p": [
+      "Frag: Erzähl mir von deinem Bild, statt zu raten, was es ist.",
+      "Häng Kunstwerke an den Kühlschrank oder in eine Wandgalerie, damit Kinder ihre Arbeit geschätzt sehen.",
+      "Lobe Farben, Mühe und Ideen statt der Frage, ob es echt aussieht."
+     ],
+     "t": "Kreativität feiern",
+     "g": "Stelle Kinderkunst aus und schätze den Prozess mehr als das Ergebnis.",
+     "q": "Was Kreatives hat dein Kind zuletzt gemacht, das dich zum Lächeln brachte?",
+     "c": "Wähle ein Kunstwerk, stell es aus und bitte dein Kind, dir seine Geschichte zu erzählen."
+    },
+    "es": {
+     "p": [
+      "Pregunta: Cuéntame sobre tu dibujo, en lugar de adivinar qué es.",
+      "Cuelga obras en la nevera o en una galería de pared para que vean su trabajo valorado.",
+      "Elogia los colores, el esfuerzo y las ideas, no si parece real."
+     ],
+     "t": "Celebrar la creatividad",
+     "g": "Expón el arte de los niños y valora el proceso más que el resultado.",
+     "q": "¿Qué cosa creativa ha hecho tu hijo últimamente que te hizo sonreír?",
+     "c": "Elige una obra, exponla y pide a tu hijo que te cuente su historia."
+    },
+    "fr": {
+     "p": [
+      "Demande : Raconte-moi ton dessin, au lieu de deviner ce que c'est.",
+      "Accroche les œuvres sur le frigo ou dans une galerie murale pour que l'enfant voie son travail valorisé.",
+      "Félicite les couleurs, l'effort et les idées plutôt que la ressemblance avec la réalité."
+     ],
+     "t": "Célébrer la créativité",
+     "g": "Expose les œuvres des enfants et valorise le processus plus que le résultat.",
+     "q": "Qu'est-ce que ton enfant a créé récemment qui t'a fait sourire ?",
+     "c": "Choisis une œuvre, expose-la et demande à ton enfant de te raconter son histoire."
+    },
+    "it": {
+     "p": [
+      "Chiedi: Raccontami il tuo disegno, invece di indovinare cos'è.",
+      "Appendi le opere al frigo o in una galleria a muro perché i bambini vedano il loro lavoro apprezzato.",
+      "Elogia colori, impegno e idee invece di quanto sembri reale."
+     ],
+     "t": "Celebrare la creatività",
+     "g": "Esponi le opere dei bambini e dai più valore al processo che al risultato.",
+     "q": "Cosa di creativo ha fatto tuo figlio di recente che ti ha fatto sorridere?",
+     "c": "Scegli un'opera, esponila e chiedi a tuo figlio di raccontarti la sua storia."
+    },
+    "pt": {
+     "p": [
+      "Pergunta: Conta-me do teu desenho, em vez de adivinhar o que é.",
+      "Pendura obras no frigorífico ou numa galeria de parede para verem o trabalho valorizado.",
+      "Elogia as cores, o esforço e as ideias, não se parece real."
+     ],
+     "t": "Celebrar a criatividade",
+     "g": "Expõe a arte das crianças e valoriza o processo mais do que o resultado.",
+     "q": "Que coisa criativa fez o teu filho ultimamente que te fez sorrir?",
+     "c": "Escolhe uma obra, expõe-na e pede ao teu filho que te conte a sua história."
+    },
+    "pt_BR": {
+     "p": [
+      "Pergunte: Conte-me sobre seu desenho, em vez de adivinhar o que é.",
+      "Pendure obras na geladeira ou numa galeria de parede para verem o trabalho valorizado.",
+      "Elogie as cores, o esforço e as ideias, não se parece real."
+     ],
+     "t": "Celebrar a criatividade",
+     "g": "Exponha a arte das crianças e valorize o processo mais que o resultado.",
+     "q": "Que coisa criativa seu filho fez ultimamente que fez você sorrir?",
+     "c": "Escolha uma obra, exponha e peça ao seu filho que conte a história dela."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Play lowers stress and brings back your own sense of humour.",
+      "You do not need to be good at it; being willing is what children love.",
+      "Even five minutes of silly play helps you feel closer to your child."
+     ],
+     "t": "Parents who play too",
+     "g": "See why joining in the fun benefits your own mood and connection.",
+     "q": "What game would you secretly love to play again, just for fun?",
+     "c": "Do something playful you enjoy, like a pillow fight or a silly dance, for five minutes."
+    },
+    "de": {
+     "p": [
+      "Spielen senkt Stress und bringt deinen eigenen Humor zurück.",
+      "Du musst nicht gut darin sein; Kinder lieben deine Bereitschaft.",
+      "Schon fünf Minuten alberne Spielzeit lassen dich deinem Kind näher fühlen."
+     ],
+     "t": "Eltern, die auch spielen",
+     "g": "Erkenne, warum Mitspielen deine Stimmung und die Verbindung verbessert.",
+     "q": "Welches Spiel würdest du heimlich gern wieder spielen, nur zum Spaß?",
+     "c": "Mach fünf Minuten etwas Verspieltes, das dir Spaß macht, etwa Kissenschlacht oder albernen Tanz."
+    },
+    "es": {
+     "p": [
+      "Jugar reduce el estrés y recupera tu propio sentido del humor.",
+      "No hace falta ser bueno; la disposición es lo que a los niños les encanta.",
+      "Incluso cinco minutos de juego tonto te acercan a tu hijo."
+     ],
+     "t": "Padres que también juegan",
+     "g": "Descubre por qué unirte a la diversión mejora tu ánimo y la conexión.",
+     "q": "¿A qué juego te encantaría jugar de nuevo, en secreto, solo por diversión?",
+     "c": "Haz cinco minutos algo divertido que disfrutes, como una pelea de cojines o un baile tonto."
+    },
+    "fr": {
+     "p": [
+      "Jouer réduit le stress et te rend ton sens de l'humour.",
+      "Pas besoin d'être doué ; c'est ta bonne volonté que les enfants adorent.",
+      "Même cinq minutes de jeu déjanté te rapprochent de ton enfant."
+     ],
+     "t": "Des parents qui jouent aussi",
+     "g": "Vois pourquoi se joindre au jeu améliore ton humeur et le lien.",
+     "q": "À quel jeu aimerais-tu rejouer en secret, juste pour le plaisir ?",
+     "c": "Fais cinq minutes quelque chose de ludique que tu aimes, comme une bataille de coussins ou une danse folle."
+    },
+    "it": {
+     "p": [
+      "Giocare riduce lo stress e ti restituisce il tuo senso dell'umorismo.",
+      "Non serve essere bravi; ai bambini piace la tua disponibilità.",
+      "Anche cinque minuti di gioco buffo ti fanno sentire più vicino a tuo figlio."
+     ],
+     "t": "Genitori che giocano anche loro",
+     "g": "Scopri perché unirti al gioco migliora il tuo umore e il legame.",
+     "q": "A quale gioco ti piacerebbe segretamente rigiocare, solo per divertimento?",
+     "c": "Fai per cinque minuti qualcosa di giocoso che ti piace, come una lotta di cuscini o un ballo buffo."
+    },
+    "pt": {
+     "p": [
+      "Brincar reduz o stress e devolve-te o teu sentido de humor.",
+      "Não precisas de ser bom; é a tua disponibilidade que as crianças adoram.",
+      "Mesmo cinco minutos de brincadeira tola aproximam-te do teu filho."
+     ],
+     "t": "Pais que também brincam",
+     "g": "Percebe porque é que juntares-te à diversão melhora o teu humor e a ligação.",
+     "q": "A que jogo gostarias de voltar a jogar, em segredo, só por diversão?",
+     "c": "Faz durante cinco minutos algo divertido de que gostes, como uma luta de almofadas ou uma dança tola."
+    },
+    "pt_BR": {
+     "p": [
+      "Brincar reduz o estresse e devolve o seu senso de humor.",
+      "Você não precisa ser bom; é a sua disposição que as crianças adoram.",
+      "Até cinco minutos de brincadeira boba aproximam você do seu filho."
+     ],
+     "t": "Pais que também brincam",
+     "g": "Veja por que entrar na brincadeira melhora seu humor e a conexão.",
+     "q": "De que brincadeira você gostaria de brincar de novo, em segredo, só por diversão?",
+     "c": "Faça por cinco minutos algo divertido de que goste, como uma guerra de travesseiros ou uma dança boba."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Children need both guided activities and long stretches of unplanned time.",
+      "Watch for tiredness or lost joy; they are signs to slow the schedule down.",
+      "Choose one or two activities your child truly enjoys, not all the options."
+     ],
+     "t": "Balancing structured and free time",
+     "g": "Avoid over-scheduling while still offering activities.",
+     "q": "How does your child seem after a full day versus a calm day at home?",
+     "c": "Look at this week's plans and protect one empty slot for free play."
+    },
+    "de": {
+     "p": [
+      "Kinder brauchen sowohl angeleitete Aktivitäten als auch lange Phasen ungeplanter Zeit.",
+      "Achte auf Müdigkeit oder verlorene Freude; sie sind Zeichen, den Plan zu entschlacken.",
+      "Wähle ein oder zwei Aktivitäten, die dein Kind wirklich mag, nicht alle Angebote."
+     ],
+     "t": "Struktur und freie Zeit ausbalancieren",
+     "g": "Vermeide Überplanung und biete trotzdem Aktivitäten an.",
+     "q": "Wie wirkt dein Kind nach einem vollen Tag im Vergleich zu einem ruhigen Tag zu Hause?",
+     "c": "Schau dir die Pläne dieser Woche an und schütze einen leeren Slot für freies Spiel."
+    },
+    "es": {
+     "p": [
+      "Los niños necesitan tanto actividades guiadas como largos ratos sin planes.",
+      "Atiende al cansancio o la alegría perdida; son señales para aligerar la agenda.",
+      "Elige una o dos actividades que tu hijo disfrute de verdad, no todas las opciones."
+     ],
+     "t": "Equilibrar tiempo estructurado y libre",
+     "g": "Evita sobrecargar la agenda sin dejar de ofrecer actividades.",
+     "q": "¿Cómo está tu hijo tras un día lleno frente a un día tranquilo en casa?",
+     "c": "Mira los planes de esta semana y protege un hueco vacío para el juego libre."
+    },
+    "fr": {
+     "p": [
+      "Les enfants ont besoin à la fois d'activités guidées et de longs moments sans programme.",
+      "Surveille la fatigue ou la joie perdue ; ce sont des signes pour alléger l'emploi du temps.",
+      "Choisis une ou deux activités que ton enfant aime vraiment, pas toutes les options."
+     ],
+     "t": "Équilibrer temps structuré et temps libre",
+     "g": "Évite le surplanning tout en proposant des activités.",
+     "q": "Comment va ton enfant après une journée bien remplie, comparé à une journée calme à la maison ?",
+     "c": "Regarde les plans de cette semaine et protège un créneau vide pour le jeu libre."
+    },
+    "it": {
+     "p": [
+      "I bambini hanno bisogno sia di attività guidate sia di lunghi momenti senza programmi.",
+      "Fai attenzione a stanchezza o gioia perduta; sono segnali per alleggerire l'agenda.",
+      "Scegli una o due attività che tuo figlio ama davvero, non tutte le opzioni."
+     ],
+     "t": "Bilanciare tempo strutturato e libero",
+     "g": "Evita di riempire troppo l'agenda pur offrendo attività.",
+     "q": "Come sta tuo figlio dopo una giornata piena rispetto a una giornata tranquilla a casa?",
+     "c": "Guarda i programmi di questa settimana e proteggi una fascia vuota per il gioco libero."
+    },
+    "pt": {
+     "p": [
+      "As crianças precisam tanto de atividades orientadas como de longos períodos sem planos.",
+      "Repara no cansaço ou na alegria perdida; são sinais para aligeirar a agenda.",
+      "Escolhe uma ou duas atividades de que o teu filho goste mesmo, não todas as opções."
+     ],
+     "t": "Equilibrar tempo estruturado e livre",
+     "g": "Evita sobrecarregar a agenda sem deixar de oferecer atividades.",
+     "q": "Como fica o teu filho depois de um dia cheio em comparação com um dia calmo em casa?",
+     "c": "Olha para os planos desta semana e protege um espaço vazio para brincadeira livre."
+    },
+    "pt_BR": {
+     "p": [
+      "As crianças precisam tanto de atividades orientadas quanto de longos períodos sem planos.",
+      "Observe o cansaço ou a alegria perdida; são sinais para aliviar a agenda.",
+      "Escolha uma ou duas atividades de que seu filho goste de verdade, não todas as opções."
+     ],
+     "t": "Equilibrar tempo estruturado e livre",
+     "g": "Evite sobrecarregar a agenda sem deixar de oferecer atividades.",
+     "q": "Como seu filho fica depois de um dia cheio comparado a um dia calmo em casa?",
+     "c": "Olhe os planos desta semana e proteja um horário vazio para brincadeira livre."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "A weekly fun night gives everyone something to look forward to.",
+      "Rotate who chooses: movie night, game night, indoor picnic or dress-up dinner.",
+      "Keep it simple; popcorn on the floor can feel like a special event."
+     ],
+     "t": "Simple family fun nights",
+     "g": "Try low-cost weekly ideas like movie, game or picnic nights at home.",
+     "q": "What would be your family's dream fun night at home?",
+     "c": "Plan this week's family fun night together and let a child choose the theme."
+    },
+    "de": {
+     "p": [
+      "Ein wöchentlicher Spaßabend gibt allen etwas, worauf sie sich freuen können.",
+      "Wechselt ab, wer wählt: Filmabend, Spieleabend, Indoor-Picknick oder Verkleidungsessen.",
+      "Halte es einfach; Popcorn auf dem Boden kann sich wie ein Fest anfühlen."
+     ],
+     "t": "Einfache Familien-Spieleabende",
+     "g": "Probiere günstige wöchentliche Ideen wie Film-, Spiel- oder Picknickabende zu Hause.",
+     "q": "Was wäre der Traum-Spaßabend eurer Familie zu Hause?",
+     "c": "Plant gemeinsam den Familien-Spaßabend dieser Woche und lass ein Kind das Motto wählen."
+    },
+    "es": {
+     "p": [
+      "Una noche divertida cada semana da a todos algo que esperar con ilusión.",
+      "Alternad quién elige: noche de cine, de juegos, picnic dentro de casa o cena disfrazados.",
+      "Que sea sencillo; palomitas en el suelo pueden sentirse como un evento especial."
+     ],
+     "t": "Noches familiares divertidas y sencillas",
+     "g": "Prueba ideas semanales baratas como noches de cine, juegos o picnic en casa.",
+     "q": "¿Cuál sería la noche divertida ideal de tu familia en casa?",
+     "c": "Planead juntos la noche divertida de esta semana y deja que un niño elija el tema."
+    },
+    "fr": {
+     "p": [
+      "Une soirée amusante par semaine donne à chacun quelque chose à attendre avec joie.",
+      "Alternez qui choisit : soirée film, jeux, pique-nique à l'intérieur ou dîner déguisé.",
+      "Reste simple ; du pop-corn par terre peut ressembler à un événement spécial."
+     ],
+     "t": "Soirées famille simples et amusantes",
+     "g": "Essaie des idées hebdomadaires peu coûteuses, comme soirée film, jeux ou pique-nique à la maison.",
+     "q": "Quelle serait la soirée amusante idéale de ta famille à la maison ?",
+     "c": "Préparez ensemble la soirée amusante de cette semaine et laisse un enfant choisir le thème."
+    },
+    "it": {
+     "p": [
+      "Una serata divertente a settimana dà a tutti qualcosa da attendere con gioia.",
+      "Alternatevi nella scelta: serata film, giochi, picnic in casa o cena in costume.",
+      "Mantieni semplicità; i popcorn per terra possono sembrare un evento speciale."
+     ],
+     "t": "Serate di famiglia semplici e divertenti",
+     "g": "Prova idee settimanali economiche come serate film, giochi o picnic in casa.",
+     "q": "Quale sarebbe la serata divertente ideale della tua famiglia a casa?",
+     "c": "Pianificate insieme la serata divertente di questa settimana e lascia che un bambino scelga il tema."
+    },
+    "pt": {
+     "p": [
+      "Uma noite divertida por semana dá a todos algo por que esperar com alegria.",
+      "Alternem quem escolhe: noite de cinema, de jogos, piquenique dentro de casa ou jantar de disfarces.",
+      "Mantém simples; pipocas no chão podem parecer um evento especial."
+     ],
+     "t": "Noites de diversão em família simples",
+     "g": "Experimenta ideias semanais baratas como noites de cinema, jogos ou piquenique em casa.",
+     "q": "Qual seria a noite divertida ideal da tua família em casa?",
+     "c": "Planeiem juntos a noite divertida desta semana e deixa uma criança escolher o tema."
+    },
+    "pt_BR": {
+     "p": [
+      "Uma noite divertida por semana dá a todos algo para esperar com alegria.",
+      "Revezem quem escolhe: noite de cinema, de jogos, piquenique dentro de casa ou jantar à fantasia.",
+      "Mantenha simples; pipoca no chão pode parecer um evento especial."
+     ],
+     "t": "Noites de diversão em família simples",
+     "g": "Experimente ideias semanais baratas como noites de cinema, jogos ou piquenique em casa.",
+     "q": "Qual seria a noite divertida ideal da sua família em casa?",
+     "c": "Planejem juntos a noite divertida desta semana e deixe uma criança escolher o tema."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Play, from blocks to pretend games to outdoor time, is how children learn best.",
+      "Following your child's lead, with a little boredom, builds creativity and confidence.",
+      "Simple family fun, from cooking to game nights, builds memories and bonds."
+     ],
+     "t": "Review: play and learning",
+     "g": "Recap play ideas and choose favourites for your family.",
+     "q": "Which play idea from this month would you like to repeat most?",
+     "c": "Pick your family's top three play ideas and put them on the calendar."
+    },
+    "de": {
+     "p": [
+      "Spielen, von Bausteinen über Rollenspiele bis zur Zeit im Freien, ist der beste Lernweg für Kinder.",
+      "Dem Kind zu folgen, mit etwas Langeweile, stärkt Kreativität und Selbstvertrauen.",
+      "Einfacher Familienspaß, vom Kochen bis zu Spieleabenden, schafft Erinnerungen und Bindung."
+     ],
+     "t": "Rückblick: Spielen und Lernen",
+     "g": "Fasse Spielideen zusammen und wähle Favoriten für deine Familie.",
+     "q": "Welche Spielidee dieses Monats würdest du am liebsten wiederholen?",
+     "c": "Wähle die drei Top-Spielideen deiner Familie und trage sie in den Kalender ein."
+    },
+    "es": {
+     "p": [
+      "Jugar, de los bloques al juego simbólico y el tiempo al aire libre, es como mejor aprenden los niños.",
+      "Seguir la guía de tu hijo, con un poco de aburrimiento, crea creatividad y confianza.",
+      "La diversión familiar sencilla, de cocinar a las noches de juegos, crea recuerdos y vínculos."
+     ],
+     "t": "Repaso: juego y aprendizaje",
+     "g": "Repasa las ideas de juego y elige favoritas para tu familia.",
+     "q": "¿Qué idea de juego de este mes te gustaría repetir más?",
+     "c": "Elige las tres ideas de juego favoritas de tu familia y ponlas en el calendario."
+    },
+    "fr": {
+     "p": [
+      "Jouer, des cubes au faire semblant et au temps dehors, est la meilleure façon d'apprendre pour les enfants.",
+      "Suivre l'enfant, avec un peu d'ennui, nourrit créativité et confiance.",
+      "Les plaisirs simples en famille, de la cuisine aux soirées jeux, créent souvenirs et liens."
+     ],
+     "t": "Bilan : jeu et apprentissage",
+     "g": "Récapitule les idées de jeu et choisis tes favorites pour ta famille.",
+     "q": "Quelle idée de jeu de ce mois aimerais-tu le plus refaire ?",
+     "c": "Choisis les trois meilleures idées de jeu de ta famille et mets-les au calendrier."
+    },
+    "it": {
+     "p": [
+      "Giocare, dalle costruzioni al far finta fino al tempo all'aperto, è il modo in cui i bambini imparano meglio.",
+      "Seguire il bambino, con un po' di noia, fa crescere creatività e fiducia.",
+      "Il divertimento semplice in famiglia, dalla cucina alle serate di giochi, crea ricordi e legami."
+     ],
+     "t": "Ripasso: gioco e apprendimento",
+     "g": "Ripercorri le idee di gioco e scegli i preferiti per la tua famiglia.",
+     "q": "Quale idea di gioco di questo mese vorresti ripetere di più?",
+     "c": "Scegli le tre idee di gioco preferite della tua famiglia e mettile in calendario."
+    },
+    "pt": {
+     "p": [
+      "Brincar, dos blocos ao faz de conta e ao tempo ao ar livre, é como as crianças aprendem melhor.",
+      "Seguir a liderança do teu filho, com algum tédio, cria criatividade e confiança.",
+      "A diversão simples em família, de cozinhar a noites de jogos, cria memórias e laços."
+     ],
+     "t": "Revisão: brincar e aprender",
+     "g": "Recapitula as ideias de brincadeira e escolhe favoritas para a tua família.",
+     "q": "Que ideia de brincadeira deste mês gostarias de repetir mais?",
+     "c": "Escolhe as três ideias de brincadeira favoritas da tua família e põe-nas no calendário."
+    },
+    "pt_BR": {
+     "p": [
+      "Brincar, dos blocos ao faz de conta e ao tempo ao ar livre, é como as crianças aprendem melhor.",
+      "Seguir a liderança do seu filho, com um pouco de tédio, cria criatividade e confiança.",
+      "A diversão simples em família, de cozinhar a noites de jogos, cria memórias e laços."
+     ],
+     "t": "Revisão: brincar e aprender",
+     "g": "Recapitule as ideias de brincadeira e escolha favoritas para sua família.",
+     "q": "Que ideia de brincadeira deste mês você gostaria de repetir mais?",
+     "c": "Escolha as três ideias de brincadeira favoritas da sua família e coloque no calendário."
+    }
+   }
+  }
+ ]
+}

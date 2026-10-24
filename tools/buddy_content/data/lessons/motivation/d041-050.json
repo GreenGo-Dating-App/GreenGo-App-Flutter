@@ -1,0 +1,835 @@
+{
+ "topic": "motivation",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why we procrastinate",
+     "g": "Spot common reasons we delay: unclear tasks, big feelings or boredom.",
+     "p": [
+      "Tasks that are vague or too big often get postponed.",
+      "Sometimes we avoid a task because of the feeling it brings, like worry or boredom.",
+      "Naming the reason helps you pick a fitting tool instead of blaming yourself."
+     ],
+     "q": "Thinking of the thing you postpone, which reason fits best: unclear, scary or boring?",
+     "c": "Write one sentence: I put this off because ... and note one tiny fix."
+    },
+    "de": {
+     "t": "Warum wir aufschieben",
+     "g": "Häufige Gründe fürs Aufschieben erkennen: unklare Aufgaben, große Gefühle oder Langeweile.",
+     "p": [
+      "Vage oder zu große Aufgaben werden oft verschoben.",
+      "Manchmal meiden wir etwas wegen des Gefühls dabei, etwa Sorge oder Langeweile.",
+      "Den Grund zu benennen hilft, das passende Werkzeug zu wählen statt dich zu tadeln."
+     ],
+     "q": "Was passt bei dem, was du aufschiebst, am besten: unklar, beängstigend oder langweilig?",
+     "c": "Schreib einen Satz: Ich schiebe das auf, weil ... und notiere eine winzige Lösung."
+    },
+    "es": {
+     "t": "Por qué procrastinamos",
+     "g": "Detectar motivos comunes para posponer: tareas poco claras, emociones fuertes o aburrimiento.",
+     "p": [
+      "Las tareas vagas o demasiado grandes suelen quedar para después.",
+      "A veces evitamos una tarea por la emoción que trae, como preocupación o aburrimiento.",
+      "Nombrar el motivo ayuda a elegir la herramienta adecuada en vez de culparte."
+     ],
+     "q": "Pensando en lo que pospones, ¿qué motivo encaja mejor: poco claro, inquietante o aburrido?",
+     "c": "Escribe una frase: Pospongo esto porque ... y anota un arreglo diminuto."
+    },
+    "fr": {
+     "t": "Pourquoi on procrastine",
+     "g": "Repérer des raisons courantes de remettre à plus tard : flou, émotions fortes ou ennui.",
+     "p": [
+      "Les tâches floues ou trop grosses sont souvent repoussées.",
+      "Parfois on évite une tâche à cause de l'émotion qu'elle suscite, comme l'inquiétude ou l'ennui.",
+      "Nommer la raison aide à choisir le bon outil plutôt que de te blâmer."
+     ],
+     "q": "Pour ce que tu repousses, quelle raison convient le mieux : flou, inquiétant ou ennuyeux ?",
+     "c": "Écris une phrase : Je repousse ceci parce que ... et note une toute petite solution."
+    },
+    "it": {
+     "t": "Perché rimandiamo",
+     "g": "Riconoscere motivi comuni del rimandare: compiti poco chiari, emozioni forti o noia.",
+     "p": [
+      "I compiti vaghi o troppo grandi spesso vengono rimandati.",
+      "A volte evitiamo un compito per l'emozione che porta, come preoccupazione o noia.",
+      "Nominare il motivo aiuta a scegliere lo strumento giusto invece di darti colpa."
+     ],
+     "q": "Pensando a ciò che rimandi, quale motivo si adatta meglio: poco chiaro, spaventoso o noioso?",
+     "c": "Scrivi una frase: Rimando questo perché ... e annota una piccola soluzione."
+    },
+    "pt": {
+     "t": "Porque adiamos",
+     "g": "Reconhecer motivos comuns para adiar: tarefas pouco claras, emoções fortes ou aborrecimento.",
+     "p": [
+      "Tarefas vagas ou demasiado grandes costumam ficar para depois.",
+      "Às vezes evitamos uma tarefa pela emoção que traz, como preocupação ou tédio.",
+      "Nomear o motivo ajuda a escolher a ferramenta certa em vez de te culpares."
+     ],
+     "q": "Pensando no que adias, que motivo encaixa melhor: pouco claro, assustador ou aborrecido?",
+     "c": "Escreve uma frase: Adio isto porque ... e anota uma solução minúscula."
+    },
+    "pt_BR": {
+     "t": "Por que procrastinamos",
+     "g": "Reconhecer motivos comuns para adiar: tarefas pouco claras, emoções fortes ou tédio.",
+     "p": [
+      "Tarefas vagas ou grandes demais costumam ficar para depois.",
+      "Às vezes evitamos uma tarefa pela emoção que ela traz, como preocupação ou tédio.",
+      "Nomear o motivo ajuda a escolher a ferramenta certa em vez de se culpar."
+     ],
+     "q": "Pensando no que você adia, que motivo se encaixa melhor: pouco claro, assustador ou chato?",
+     "c": "Escreva uma frase: Adio isso porque ... e anote uma solução minúscula."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The five-minute rule",
+     "g": "Promise yourself just five minutes on a task, often enough to keep going.",
+     "p": [
+      "The hardest part is starting; five minutes makes starting small.",
+      "You are allowed to stop after five minutes, with no guilt.",
+      "Often, once you begin, you want to continue a little longer."
+     ],
+     "q": "Which task would feel lighter if you only had to do five minutes?",
+     "c": "Set a timer for five minutes on a task you have postponed and begin."
+    },
+    "de": {
+     "t": "Die Fünf-Minuten-Regel",
+     "g": "Dir nur fünf Minuten an einer Aufgabe versprechen, oft reicht das zum Weitermachen.",
+     "p": [
+      "Das Schwerste ist der Anfang; fünf Minuten machen ihn klein.",
+      "Du darfst nach fünf Minuten ohne Schuldgefühle aufhören.",
+      "Oft willst du, einmal begonnen, noch ein bisschen weitermachen."
+     ],
+     "q": "Welche Aufgabe wirkt leichter, wenn du nur fünf Minuten brauchst?",
+     "c": "Stell einen Timer auf fünf Minuten für eine aufgeschobene Aufgabe und fang an."
+    },
+    "es": {
+     "t": "La regla de los cinco minutos",
+     "g": "Prometerte solo cinco minutos en una tarea, a menudo basta para seguir.",
+     "p": [
+      "Lo más difícil es empezar; cinco minutos lo hacen pequeño.",
+      "Puedes parar a los cinco minutos, sin culpa.",
+      "A menudo, una vez que empiezas, quieres seguir un poco más."
+     ],
+     "q": "¿Qué tarea se sentiría más ligera si solo tuvieras que hacer cinco minutos?",
+     "c": "Pon un temporizador de cinco minutos en una tarea pospuesta y empieza."
+    },
+    "fr": {
+     "t": "La règle des cinq minutes",
+     "g": "Te promettre seulement cinq minutes sur une tâche, souvent assez pour continuer.",
+     "p": [
+      "Le plus dur est de commencer ; cinq minutes rendent le début petit.",
+      "Tu as le droit de t'arrêter après cinq minutes, sans culpabilité.",
+      "Souvent, une fois lancé, on a envie de continuer un peu."
+     ],
+     "q": "Quelle tâche semblerait plus légère si tu n'avais que cinq minutes ?",
+     "c": "Lance un minuteur de cinq minutes sur une tâche repoussée et commence."
+    },
+    "it": {
+     "t": "La regola dei cinque minuti",
+     "g": "Promettere a te stesso solo cinque minuti su un compito, spesso basta per continuare.",
+     "p": [
+      "La parte più difficile è iniziare; cinque minuti rendono l'inizio piccolo.",
+      "Puoi fermarti dopo cinque minuti, senza sensi di colpa.",
+      "Spesso, una volta iniziato, vuoi continuare ancora un po'."
+     ],
+     "q": "Quale compito sembrerebbe più leggero se dovessi fare solo cinque minuti?",
+     "c": "Imposta un timer di cinque minuti su un compito rimandato e inizia."
+    },
+    "pt": {
+     "t": "A regra dos cinco minutos",
+     "g": "Prometer a ti próprio só cinco minutos numa tarefa, muitas vezes basta para continuar.",
+     "p": [
+      "O mais difícil é começar; cinco minutos tornam o início pequeno.",
+      "Podes parar aos cinco minutos, sem culpa.",
+      "Muitas vezes, depois de começares, queres continuar mais um pouco."
+     ],
+     "q": "Que tarefa pareceria mais leve se só tivesses de fazer cinco minutos?",
+     "c": "Põe um temporizador de cinco minutos numa tarefa adiada e começa."
+    },
+    "pt_BR": {
+     "t": "A regra dos cinco minutos",
+     "g": "Prometer a si mesmo só cinco minutos em uma tarefa, muitas vezes basta para continuar.",
+     "p": [
+      "O mais difícil é começar; cinco minutos tornam o início pequeno.",
+      "Você pode parar aos cinco minutos, sem culpa.",
+      "Muitas vezes, depois de começar, dá vontade de continuar mais um pouco."
+     ],
+     "q": "Que tarefa pareceria mais leve se você só precisasse fazer cinco minutos?",
+     "c": "Coloque um timer de cinco minutos em uma tarefa adiada e comece."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Breaking big tasks down",
+     "g": "Cut a scary project into small, clear pieces.",
+     "p": [
+      "A huge task feels foggy; small pieces feel clear.",
+      "List the steps, then shrink each until it is easy to start.",
+      "You only need to see the next piece, not the whole mountain."
+     ],
+     "q": "What big task on your mind could be split into five small parts?",
+     "c": "Break one big task into five steps and circle the first one."
+    },
+    "de": {
+     "t": "Große Aufgaben zerlegen",
+     "g": "Ein einschüchterndes Projekt in kleine, klare Teile schneiden.",
+     "p": [
+      "Eine riesige Aufgabe wirkt neblig; kleine Teile wirken klar.",
+      "Liste die Schritte auf und verkleinere jeden, bis er leicht zu starten ist.",
+      "Du musst nur das nächste Stück sehen, nicht den ganzen Berg."
+     ],
+     "q": "Welche große Aufgabe könntest du in fünf kleine Teile zerlegen?",
+     "c": "Zerlege eine große Aufgabe in fünf Schritte und kreise den ersten ein."
+    },
+    "es": {
+     "t": "Dividir las tareas grandes",
+     "g": "Cortar un proyecto intimidante en piezas pequeñas y claras.",
+     "p": [
+      "Una tarea enorme se ve borrosa; las piezas pequeñas se ven claras.",
+      "Haz una lista de pasos y reduce cada uno hasta que sea fácil empezar.",
+      "Solo necesitas ver la siguiente pieza, no toda la montaña."
+     ],
+     "q": "¿Qué tarea grande que tienes en mente podrías dividir en cinco partes pequeñas?",
+     "c": "Divide una tarea grande en cinco pasos y rodea el primero."
+    },
+    "fr": {
+     "t": "Découper les grosses tâches",
+     "g": "Découper un projet intimidant en petits morceaux clairs.",
+     "p": [
+      "Une énorme tâche paraît floue ; de petits morceaux paraissent clairs.",
+      "Liste les étapes, puis réduis chacune jusqu'à ce qu'elle soit facile à démarrer.",
+      "Tu n'as qu'à voir le morceau suivant, pas toute la montagne."
+     ],
+     "q": "Quelle grosse tâche pourrais-tu découper en cinq petites parties ?",
+     "c": "Découpe une grosse tâche en cinq étapes et entoure la première."
+    },
+    "it": {
+     "t": "Spezzare i compiti grandi",
+     "g": "Tagliare un progetto spaventoso in pezzi piccoli e chiari.",
+     "p": [
+      "Un compito enorme sembra nebbioso; i pezzi piccoli sembrano chiari.",
+      "Elenca i passi, poi riduci ciascuno finché è facile da iniziare.",
+      "Ti basta vedere il pezzo successivo, non tutta la montagna."
+     ],
+     "q": "Quale grande compito che hai in mente potresti dividere in cinque parti piccole?",
+     "c": "Spezza un grande compito in cinque passi e cerchia il primo."
+    },
+    "pt": {
+     "t": "Dividir tarefas grandes",
+     "g": "Cortar um projeto assustador em pedaços pequenos e claros.",
+     "p": [
+      "Uma tarefa enorme parece nebulosa; pedaços pequenos parecem claros.",
+      "Lista os passos e reduz cada um até ser fácil de começar.",
+      "Só precisas de ver o pedaço seguinte, não a montanha toda."
+     ],
+     "q": "Que tarefa grande que tens em mente podias dividir em cinco partes pequenas?",
+     "c": "Divide uma tarefa grande em cinco passos e faz um círculo no primeiro."
+    },
+    "pt_BR": {
+     "t": "Dividir tarefas grandes",
+     "g": "Cortar um projeto assustador em pedaços pequenos e claros.",
+     "p": [
+      "Uma tarefa enorme parece nebulosa; pedaços pequenos parecem claros.",
+      "Liste os passos e reduza cada um até ser fácil de começar.",
+      "Você só precisa ver o próximo pedaço, não a montanha toda."
+     ],
+     "q": "Que tarefa grande que você tem em mente poderia dividir em cinco partes pequenas?",
+     "c": "Divida uma tarefa grande em cinco passos e circule o primeiro."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The first next action",
+     "g": "Ask 'what is the very next physical step?' to get unstuck.",
+     "p": [
+      "Stuck often means the next step is not clear yet.",
+      "A next action is something you can physically do: open, write, call.",
+      "Make it so concrete that you do not have to decide anything."
+     ],
+     "q": "What is the very next physical step for something you are stuck on?",
+     "c": "Write a next action starting with a verb for one stuck task and do it."
+    },
+    "de": {
+     "t": "Der erste nächste Schritt",
+     "g": "Fragen 'Was ist der nächste konkrete Handgriff?', um aus dem Festhängen zu kommen.",
+     "p": [
+      "Festhängen heißt oft, dass der nächste Schritt noch nicht klar ist.",
+      "Ein nächster Schritt ist etwas Greifbares: öffnen, schreiben, anrufen.",
+      "Mach ihn so konkret, dass du nichts mehr entscheiden musst."
+     ],
+     "q": "Was ist der nächste konkrete Handgriff bei etwas, wo du feststeckst?",
+     "c": "Schreib für eine festgefahrene Aufgabe einen Schritt mit Verb auf und tu ihn."
+    },
+    "es": {
+     "t": "La siguiente acción concreta",
+     "g": "Preguntarte '¿cuál es el siguiente paso físico?' para desbloquearte.",
+     "p": [
+      "Estar atascado suele significar que el siguiente paso aún no está claro.",
+      "Una acción siguiente es algo que puedes hacer físicamente: abrir, escribir, llamar.",
+      "Hazla tan concreta que no tengas que decidir nada."
+     ],
+     "q": "¿Cuál es el siguiente paso físico en algo donde estás atascado?",
+     "c": "Escribe una acción con verbo para una tarea atascada y hazla."
+    },
+    "fr": {
+     "t": "La prochaine action concrète",
+     "g": "Demander 'quel est le tout prochain geste concret ?' pour se débloquer.",
+     "p": [
+      "Être bloqué signifie souvent que la prochaine étape n'est pas encore claire.",
+      "Une prochaine action est quelque chose de physique : ouvrir, écrire, appeler.",
+      "Rends-la si concrète que tu n'as plus rien à décider."
+     ],
+     "q": "Quel est le prochain geste concret pour quelque chose où tu es bloqué ?",
+     "c": "Écris une action avec un verbe pour une tâche bloquée et fais-la."
+    },
+    "it": {
+     "t": "La prossima azione concreta",
+     "g": "Chiedersi 'qual è il prossimo passo fisico?' per sbloccarsi.",
+     "p": [
+      "Essere bloccati spesso significa che il passo successivo non è ancora chiaro.",
+      "Una prossima azione è qualcosa di fisico: aprire, scrivere, chiamare.",
+      "Rendila così concreta che non devi decidere nulla."
+     ],
+     "q": "Qual è il prossimo passo fisico in qualcosa in cui sei bloccato?",
+     "c": "Scrivi un'azione con un verbo per un compito bloccato e falla."
+    },
+    "pt": {
+     "t": "A próxima ação concreta",
+     "g": "Perguntar 'qual é o próximo passo físico?' para desbloquear.",
+     "p": [
+      "Estar bloqueado muitas vezes significa que o passo seguinte ainda não está claro.",
+      "Uma próxima ação é algo físico: abrir, escrever, ligar.",
+      "Torna-a tão concreta que não tenhas de decidir nada."
+     ],
+     "q": "Qual é o próximo passo físico em algo em que estás bloqueado?",
+     "c": "Escreve uma ação com verbo para uma tarefa bloqueada e faz."
+    },
+    "pt_BR": {
+     "t": "A próxima ação concreta",
+     "g": "Perguntar 'qual é o próximo passo físico?' para destravar.",
+     "p": [
+      "Estar travado muitas vezes significa que o próximo passo ainda não está claro.",
+      "Uma próxima ação é algo físico: abrir, escrever, ligar.",
+      "Deixe-a tão concreta que você não precise decidir nada."
+     ],
+     "q": "Qual é o próximo passo físico em algo em que você está travado?",
+     "c": "Escreva uma ação com verbo para uma tarefa travada e faça."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Removing friction",
+     "g": "Make the good choice easy and the distracting choice a little harder.",
+     "p": [
+      "Small obstacles decide a lot of what we do.",
+      "Put what you need within reach and tempting distractions out of sight.",
+      "You are not weak; you are designing your surroundings to help you."
+     ],
+     "q": "What usually distracts you, and how could you make it slightly harder to reach?",
+     "c": "Change one thing in your space today to make focus easier."
+    },
+    "de": {
+     "t": "Hürden abbauen",
+     "g": "Die gute Wahl leicht und die ablenkende Wahl etwas schwerer machen.",
+     "p": [
+      "Kleine Hindernisse entscheiden viel darüber, was wir tun.",
+      "Leg Nötiges in Reichweite und verlockende Ablenkungen außer Sicht.",
+      "Du bist nicht schwach; du gestaltest deine Umgebung so, dass sie dir hilft."
+     ],
+     "q": "Was lenkt dich meistens ab, und wie könntest du es etwas schwerer erreichbar machen?",
+     "c": "Ändere heute eine Sache in deinem Umfeld, damit Konzentration leichter wird."
+    },
+    "es": {
+     "t": "Quitar fricción",
+     "g": "Hacer fácil la buena elección y un poco más difícil la que distrae.",
+     "p": [
+      "Los pequeños obstáculos deciden gran parte de lo que hacemos.",
+      "Pon lo que necesitas a mano y las distracciones tentadoras fuera de la vista.",
+      "No eres débil; estás diseñando tu entorno para que te ayude."
+     ],
+     "q": "¿Qué suele distraerte y cómo podrías ponerlo un poco más difícil de alcanzar?",
+     "c": "Cambia hoy una cosa de tu espacio para facilitar la concentración."
+    },
+    "fr": {
+     "t": "Réduire les frictions",
+     "g": "Rendre le bon choix facile et le choix distrayant un peu plus difficile.",
+     "p": [
+      "De petits obstacles décident de beaucoup de ce que nous faisons.",
+      "Mets ce dont tu as besoin à portée de main et les distractions hors de vue.",
+      "Tu n'es pas faible ; tu organises ton environnement pour qu'il t'aide."
+     ],
+     "q": "Qu'est-ce qui te distrait d'habitude et comment le rendre un peu moins accessible ?",
+     "c": "Change aujourd'hui une chose dans ton espace pour faciliter la concentration."
+    },
+    "it": {
+     "t": "Ridurre gli attriti",
+     "g": "Rendere facile la scelta buona e un po' più difficile quella che distrae.",
+     "p": [
+      "Piccoli ostacoli decidono molto di ciò che facciamo.",
+      "Metti ciò che ti serve a portata di mano e le distrazioni fuori vista.",
+      "Non sei debole; stai progettando l'ambiente perché ti aiuti."
+     ],
+     "q": "Cosa ti distrae di solito e come potresti renderlo un po' meno raggiungibile?",
+     "c": "Cambia oggi una cosa nel tuo spazio per rendere più facile concentrarti."
+    },
+    "pt": {
+     "t": "Reduzir o atrito",
+     "g": "Tornar fácil a boa escolha e um pouco mais difícil a que distrai.",
+     "p": [
+      "Pequenos obstáculos decidem grande parte do que fazemos.",
+      "Põe o que precisas ao alcance e as distrações tentadoras fora da vista.",
+      "Não és fraco; estás a desenhar o teu ambiente para te ajudar."
+     ],
+     "q": "O que costuma distrair-te e como podias torná-lo um pouco menos acessível?",
+     "c": "Muda hoje uma coisa no teu espaço para facilitar a concentração."
+    },
+    "pt_BR": {
+     "t": "Reduzir o atrito",
+     "g": "Tornar fácil a boa escolha e um pouco mais difícil a que distrai.",
+     "p": [
+      "Pequenos obstáculos decidem grande parte do que fazemos.",
+      "Deixe o que você precisa ao alcance e as distrações tentadoras fora de vista.",
+      "Você não é fraco; está desenhando seu ambiente para ajudar você."
+     ],
+     "q": "O que costuma distrair você e como poderia deixá-lo um pouco menos acessível?",
+     "c": "Mude hoje uma coisa no seu espaço para facilitar a concentração."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Timers and focus sprints",
+     "g": "Work in short focused blocks with breaks, like the Pomodoro method.",
+     "p": [
+      "A timer gives a task a clear start and a clear end.",
+      "A common pattern is 25 minutes of focus and 5 minutes of rest.",
+      "Adjust the length to what suits you; shorter is fine."
+     ],
+     "q": "How long can you comfortably focus before your mind wanders?",
+     "c": "Run one focus sprint today, silence notifications, then take a proper break."
+    },
+    "de": {
+     "t": "Timer und Fokus-Sprints",
+     "g": "In kurzen fokussierten Blöcken mit Pausen arbeiten, wie bei der Pomodoro-Methode.",
+     "p": [
+      "Ein Timer gibt einer Aufgabe einen klaren Anfang und ein klares Ende.",
+      "Üblich sind 25 Minuten Fokus und 5 Minuten Pause.",
+      "Passe die Länge an dich an; kürzer ist völlig in Ordnung."
+     ],
+     "q": "Wie lange kannst du dich bequem konzentrieren, bis die Gedanken wandern?",
+     "c": "Mach heute einen Fokus-Sprint, schalte Benachrichtigungen stumm und gönn dir dann eine echte Pause."
+    },
+    "es": {
+     "t": "Temporizadores y sprints de enfoque",
+     "g": "Trabajar en bloques cortos y enfocados con pausas, como el método Pomodoro.",
+     "p": [
+      "Un temporizador da a la tarea un inicio y un final claros.",
+      "Un patrón común es 25 minutos de enfoque y 5 de descanso.",
+      "Ajusta la duración a lo que te convenga; más corto está bien."
+     ],
+     "q": "¿Cuánto tiempo puedes concentrarte cómodamente antes de que la mente divague?",
+     "c": "Haz hoy un sprint de enfoque, silencia notificaciones y descansa de verdad después."
+    },
+    "fr": {
+     "t": "Minuteurs et sprints de concentration",
+     "g": "Travailler en courts blocs concentrés avec des pauses, comme la méthode Pomodoro.",
+     "p": [
+      "Un minuteur donne à la tâche un début et une fin clairs.",
+      "Un schéma courant : 25 minutes de concentration et 5 minutes de repos.",
+      "Adapte la durée à toi ; plus court convient très bien."
+     ],
+     "q": "Combien de temps peux-tu te concentrer confortablement avant que l'esprit vagabonde ?",
+     "c": "Fais aujourd'hui un sprint de concentration, coupe les notifications, puis fais une vraie pause."
+    },
+    "it": {
+     "t": "Timer e sprint di concentrazione",
+     "g": "Lavorare in brevi blocchi concentrati con pause, come nel metodo Pomodoro.",
+     "p": [
+      "Un timer dà al compito un inizio e una fine chiari.",
+      "Uno schema comune è 25 minuti di concentrazione e 5 di riposo.",
+      "Adatta la durata a te; più breve va benissimo."
+     ],
+     "q": "Quanto riesci a concentrarti comodamente prima che la mente vaghi?",
+     "c": "Fai oggi uno sprint di concentrazione, silenzia le notifiche e poi fai una vera pausa."
+    },
+    "pt": {
+     "t": "Temporizadores e sprints de foco",
+     "g": "Trabalhar em blocos curtos e focados com pausas, como no método Pomodoro.",
+     "p": [
+      "Um temporizador dá à tarefa um início e um fim claros.",
+      "Um padrão comum é 25 minutos de foco e 5 de descanso.",
+      "Ajusta a duração ao que te serve; mais curto também é bom."
+     ],
+     "q": "Quanto tempo consegues concentrar-te confortavelmente antes de a mente divagar?",
+     "c": "Faz hoje um sprint de foco, silencia notificações e depois faz uma pausa a sério."
+    },
+    "pt_BR": {
+     "t": "Timers e sprints de foco",
+     "g": "Trabalhar em blocos curtos e focados com pausas, como no método Pomodoro.",
+     "p": [
+      "Um timer dá à tarefa um início e um fim claros.",
+      "Um padrão comum é 25 minutos de foco e 5 de descanso.",
+      "Ajuste a duração ao que serve para você; mais curto também é bom."
+     ],
+     "q": "Quanto tempo você consegue se concentrar confortavelmente antes de a mente divagar?",
+     "c": "Faça hoje um sprint de foco, silencie as notificações e depois faça uma pausa de verdade."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Done is better than perfect",
+     "g": "Let go of perfection to finish now and improve later.",
+     "p": [
+      "Waiting for perfect often means never finishing.",
+      "A finished rough version can be improved; a blank page cannot.",
+      "Aim for good enough first, then polish if it truly matters."
+     ],
+     "q": "Where does wanting it perfect hold you back right now?",
+     "c": "Finish something today at 80 percent and let it be good enough."
+    },
+    "de": {
+     "t": "Fertig ist besser als perfekt",
+     "g": "Perfektion loslassen, um jetzt abzuschließen und später zu verbessern.",
+     "p": [
+      "Wer auf perfekt wartet, wird oft nie fertig.",
+      "Eine grobe fertige Version lässt sich verbessern, eine leere Seite nicht.",
+      "Strebe zuerst nach gut genug und feile nur, wenn es wirklich zählt."
+     ],
+     "q": "Wo hält dich der Wunsch nach Perfektion gerade zurück?",
+     "c": "Beende heute etwas mit 80 Prozent und lass es gut genug sein."
+    },
+    "es": {
+     "t": "Hecho es mejor que perfecto",
+     "g": "Soltar la perfección para terminar ahora y mejorar después.",
+     "p": [
+      "Esperar lo perfecto suele significar no terminar nunca.",
+      "Una versión básica terminada se puede mejorar; una página en blanco no.",
+      "Busca primero lo suficientemente bueno y pule después si de verdad importa."
+     ],
+     "q": "¿Dónde te frena ahora querer que sea perfecto?",
+     "c": "Termina hoy algo al 80 por ciento y deja que sea suficientemente bueno."
+    },
+    "fr": {
+     "t": "Fait vaut mieux que parfait",
+     "g": "Lâcher la perfection pour finir maintenant et améliorer plus tard.",
+     "p": [
+      "Attendre le parfait signifie souvent ne jamais finir.",
+      "Une version brute terminée peut s'améliorer ; une page blanche non.",
+      "Vise d'abord le assez bien, puis peaufine si cela compte vraiment."
+     ],
+     "q": "Où l'envie de perfection te freine-t-elle en ce moment ?",
+     "c": "Termine aujourd'hui quelque chose à 80 pour cent et accepte que ce soit assez bien."
+    },
+    "it": {
+     "t": "Fatto è meglio di perfetto",
+     "g": "Lasciare andare la perfezione per finire ora e migliorare dopo.",
+     "p": [
+      "Aspettare il perfetto spesso significa non finire mai.",
+      "Una versione grezza finita si può migliorare; una pagina bianca no.",
+      "Punta prima al abbastanza buono, poi rifinisci se conta davvero."
+     ],
+     "q": "Dove ti frena ora il volere che sia perfetto?",
+     "c": "Finisci oggi qualcosa all'80 per cento e lascia che sia abbastanza buono."
+    },
+    "pt": {
+     "t": "Feito é melhor do que perfeito",
+     "g": "Largar a perfeição para terminar agora e melhorar depois.",
+     "p": [
+      "Esperar pelo perfeito muitas vezes significa nunca acabar.",
+      "Uma versão básica terminada pode ser melhorada; uma página em branco não.",
+      "Aponta primeiro ao suficientemente bom e refina depois se realmente importar."
+     ],
+     "q": "Onde te trava agora querer que fique perfeito?",
+     "c": "Termina hoje algo a 80 por cento e deixa que seja suficientemente bom."
+    },
+    "pt_BR": {
+     "t": "Feito é melhor do que perfeito",
+     "g": "Largar a perfeição para terminar agora e melhorar depois.",
+     "p": [
+      "Esperar pelo perfeito muitas vezes significa nunca terminar.",
+      "Uma versão básica terminada pode ser melhorada; uma página em branco não.",
+      "Mire primeiro no bom o bastante e refine depois se realmente importar."
+     ],
+     "q": "Onde querer que fique perfeito trava você agora?",
+     "c": "Termine hoje algo a 80 por cento e deixe que seja bom o bastante."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mini review: beating procrastination",
+     "g": "Recap tools to start, from five minutes to first next actions.",
+     "p": [
+      "Understanding why you delay helps you choose the right tool.",
+      "Five minutes, small pieces and a clear next action make starting easy.",
+      "Less friction, timers and good enough keep you moving."
+     ],
+     "q": "Which tool from this week helped you most?",
+     "c": "Pick one postponed task and use two tools on it: next action plus five minutes."
+    },
+    "de": {
+     "t": "Mini-Wiederholung: Aufschieben überwinden",
+     "g": "Werkzeuge zum Loslegen wiederholen, von fünf Minuten bis zum nächsten Schritt.",
+     "p": [
+      "Zu verstehen, warum du aufschiebst, hilft bei der Wahl des Werkzeugs.",
+      "Fünf Minuten, kleine Teile und ein klarer nächster Schritt erleichtern den Start.",
+      "Weniger Hürden, Timer und gut genug halten dich in Bewegung."
+     ],
+     "q": "Welches Werkzeug dieser Woche hat dir am meisten geholfen?",
+     "c": "Nimm eine aufgeschobene Aufgabe und nutze zwei Werkzeuge: nächster Schritt plus fünf Minuten."
+    },
+    "es": {
+     "t": "Mini repaso: vencer la procrastinación",
+     "g": "Repasar herramientas para empezar, de cinco minutos a la siguiente acción.",
+     "p": [
+      "Entender por qué pospones te ayuda a elegir la herramienta adecuada.",
+      "Cinco minutos, piezas pequeñas y una acción clara facilitan empezar.",
+      "Menos fricción, temporizadores y suficientemente bueno te mantienen en marcha."
+     ],
+     "q": "¿Qué herramienta de esta semana te ayudó más?",
+     "c": "Elige una tarea pospuesta y usa dos herramientas: acción siguiente más cinco minutos."
+    },
+    "fr": {
+     "t": "Mini bilan : vaincre la procrastination",
+     "g": "Revoir les outils pour démarrer, des cinq minutes à la prochaine action.",
+     "p": [
+      "Comprendre pourquoi tu remets à plus tard aide à choisir le bon outil.",
+      "Cinq minutes, petits morceaux et action claire facilitent le départ.",
+      "Moins de friction, minuteurs et assez bien te gardent en mouvement."
+     ],
+     "q": "Quel outil de cette semaine t'a le plus aidé ?",
+     "c": "Choisis une tâche repoussée et utilise deux outils : prochaine action plus cinq minutes."
+    },
+    "it": {
+     "t": "Mini ripasso: battere la procrastinazione",
+     "g": "Ripassare gli strumenti per partire, dai cinque minuti alla prossima azione.",
+     "p": [
+      "Capire perché rimandi aiuta a scegliere lo strumento giusto.",
+      "Cinque minuti, pezzi piccoli e un'azione chiara rendono facile iniziare.",
+      "Meno attriti, timer e abbastanza buono ti tengono in movimento."
+     ],
+     "q": "Quale strumento di questa settimana ti ha aiutato di più?",
+     "c": "Scegli un compito rimandato e usa due strumenti: prossima azione più cinque minuti."
+    },
+    "pt": {
+     "t": "Mini revisão: vencer o adiamento",
+     "g": "Rever ferramentas para começar, dos cinco minutos à próxima ação.",
+     "p": [
+      "Perceber porque adias ajuda a escolher a ferramenta certa.",
+      "Cinco minutos, pedaços pequenos e uma ação clara facilitam o início.",
+      "Menos atrito, temporizadores e suficientemente bom mantêm-te em movimento."
+     ],
+     "q": "Que ferramenta desta semana te ajudou mais?",
+     "c": "Escolhe uma tarefa adiada e usa duas ferramentas: próxima ação mais cinco minutos."
+    },
+    "pt_BR": {
+     "t": "Mini revisão: vencer a procrastinação",
+     "g": "Rever ferramentas para começar, dos cinco minutos à próxima ação.",
+     "p": [
+      "Entender por que você adia ajuda a escolher a ferramenta certa.",
+      "Cinco minutos, pedaços pequenos e uma ação clara facilitam o início.",
+      "Menos atrito, timers e bom o bastante mantêm você em movimento."
+     ],
+     "q": "Que ferramenta desta semana mais ajudou você?",
+     "c": "Escolha uma tarefa adiada e use duas ferramentas: próxima ação mais cinco minutos."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Confidence through action",
+     "g": "See how doing things, even imperfectly, builds real confidence.",
+     "p": [
+      "Confidence is usually built by doing, not by waiting to feel it.",
+      "Each attempt, even a clumsy one, adds proof that you can handle it.",
+      "You can act while feeling unsure; the two can coexist."
+     ],
+     "q": "What is something you felt unsure about that went fine once you tried?",
+     "c": "Do one thing today that you feel only slightly unsure about."
+    },
+    "de": {
+     "t": "Selbstvertrauen durch Handeln",
+     "g": "Sehen, wie Tun, auch unperfekt, echtes Selbstvertrauen aufbaut.",
+     "p": [
+      "Selbstvertrauen entsteht meist durch Tun, nicht durch Warten aufs Gefühl.",
+      "Jeder Versuch, auch ein holpriger, ist ein Beweis, dass du das schaffst.",
+      "Du kannst handeln und dich unsicher fühlen; beides geht zusammen."
+     ],
+     "q": "Worüber warst du unsicher, und es lief gut, als du es versucht hast?",
+     "c": "Tu heute eine Sache, bei der du dich nur ein wenig unsicher fühlst."
+    },
+    "es": {
+     "t": "Confianza a través de la acción",
+     "g": "Ver cómo hacer cosas, aun imperfectamente, crea confianza real.",
+     "p": [
+      "La confianza suele construirse haciendo, no esperando a sentirla.",
+      "Cada intento, aunque torpe, suma pruebas de que puedes manejarlo.",
+      "Puedes actuar sintiéndote inseguro; ambas cosas conviven."
+     ],
+     "q": "¿Qué cosa te daba inseguridad y salió bien cuando lo intentaste?",
+     "c": "Haz hoy una cosa que te dé solo un poco de inseguridad."
+    },
+    "fr": {
+     "t": "La confiance par l'action",
+     "g": "Voir comment agir, même imparfaitement, construit une vraie confiance.",
+     "p": [
+      "La confiance se construit en agissant, pas en attendant de la ressentir.",
+      "Chaque essai, même maladroit, ajoute une preuve que tu peux y arriver.",
+      "Tu peux agir en te sentant incertain ; les deux peuvent coexister."
+     ],
+     "q": "De quoi doutais-tu et tout s'est bien passé quand tu as essayé ?",
+     "c": "Fais aujourd'hui une chose qui te rend seulement un peu incertain."
+    },
+    "it": {
+     "t": "La fiducia attraverso l'azione",
+     "g": "Vedere come fare le cose, anche in modo imperfetto, costruisce vera fiducia.",
+     "p": [
+      "La fiducia di solito si costruisce facendo, non aspettando di sentirla.",
+      "Ogni tentativo, anche goffo, aggiunge prove che ce la fai.",
+      "Puoi agire sentendoti insicuro; le due cose coesistono."
+     ],
+     "q": "Di cosa eri insicuro e poi è andato bene quando hai provato?",
+     "c": "Fai oggi una cosa che ti rende solo un po' insicuro."
+    },
+    "pt": {
+     "t": "Confiança através da ação",
+     "g": "Ver como fazer coisas, mesmo imperfeitamente, constrói confiança real.",
+     "p": [
+      "A confiança costuma construir-se fazendo, não esperando senti-la.",
+      "Cada tentativa, mesmo desajeitada, soma provas de que consegues.",
+      "Podes agir sentindo-te inseguro; as duas coisas convivem."
+     ],
+     "q": "Do que te sentias inseguro e correu bem quando tentaste?",
+     "c": "Faz hoje uma coisa que te deixe só um pouco inseguro."
+    },
+    "pt_BR": {
+     "t": "Confiança por meio da ação",
+     "g": "Ver como fazer coisas, mesmo imperfeitamente, constrói confiança real.",
+     "p": [
+      "A confiança costuma se construir fazendo, não esperando senti-la.",
+      "Cada tentativa, mesmo desajeitada, soma provas de que você consegue.",
+      "Você pode agir se sentindo inseguro; as duas coisas convivem."
+     ],
+     "q": "Do que você se sentia inseguro e deu certo quando tentou?",
+     "c": "Faça hoje uma coisa que deixe você só um pouco inseguro."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Remembering past successes",
+     "g": "Recall times you did something hard to remind yourself you can.",
+     "p": [
+      "You have already done hard things, even if you forget them.",
+      "Remembering how you managed shows skills you can use again.",
+      "Notice the steps and support that helped you then."
+     ],
+     "q": "What is something difficult you got through, and what helped?",
+     "c": "Write down one past success and the strength it showed in you."
+    },
+    "de": {
+     "t": "An frühere Erfolge erinnern",
+     "g": "Dich an Zeiten erinnern, in denen du Schweres geschafft hast, um zu spüren: Ich kann das.",
+     "p": [
+      "Du hast schon Schwieriges geschafft, auch wenn du es vergisst.",
+      "Dich zu erinnern, wie du es geschafft hast, zeigt Fähigkeiten für das nächste Mal.",
+      "Achte auf die Schritte und die Unterstützung, die dir damals halfen."
+     ],
+     "q": "Was Schwieriges hast du durchgestanden, und was hat geholfen?",
+     "c": "Schreib einen früheren Erfolg auf und die Stärke, die er in dir zeigte."
+    },
+    "es": {
+     "t": "Recordar éxitos pasados",
+     "g": "Recordar momentos en que hiciste algo difícil para recordar que puedes.",
+     "p": [
+      "Ya has hecho cosas difíciles, aunque las olvides.",
+      "Recordar cómo lo lograste muestra habilidades que puedes volver a usar.",
+      "Fíjate en los pasos y el apoyo que te ayudaron entonces."
+     ],
+     "q": "¿Qué cosa difícil superaste y qué te ayudó?",
+     "c": "Anota un éxito pasado y la fortaleza que mostró en ti."
+    },
+    "fr": {
+     "t": "Se rappeler ses réussites passées",
+     "g": "Se rappeler des moments où tu as fait quelque chose de dur pour te souvenir que tu peux.",
+     "p": [
+      "Tu as déjà fait des choses difficiles, même si tu les oublies.",
+      "Te rappeler comment tu as fait montre des compétences réutilisables.",
+      "Remarque les étapes et le soutien qui t'ont aidé alors."
+     ],
+     "q": "Qu'as-tu traversé de difficile, et qu'est-ce qui t'a aidé ?",
+     "c": "Note une réussite passée et la force qu'elle a montrée en toi."
+    },
+    "it": {
+     "t": "Ricordare i successi passati",
+     "g": "Ricordare momenti in cui hai fatto qualcosa di difficile per ricordarti che puoi.",
+     "p": [
+      "Hai già fatto cose difficili, anche se le dimentichi.",
+      "Ricordare come ci sei riuscito mostra abilità che puoi riusare.",
+      "Nota i passi e il sostegno che ti hanno aiutato allora."
+     ],
+     "q": "Quale cosa difficile hai superato e cosa ti ha aiutato?",
+     "c": "Annota un successo passato e la forza che ha mostrato in te."
+    },
+    "pt": {
+     "t": "Lembrar sucessos passados",
+     "g": "Recordar momentos em que fizeste algo difícil para lembrares que consegues.",
+     "p": [
+      "Já fizeste coisas difíceis, mesmo que as esqueças.",
+      "Lembrar como conseguiste mostra competências que podes voltar a usar.",
+      "Repara nos passos e no apoio que te ajudaram então."
+     ],
+     "q": "Que coisa difícil superaste e o que te ajudou?",
+     "c": "Anota um sucesso passado e a força que ele mostrou em ti."
+    },
+    "pt_BR": {
+     "t": "Lembrar sucessos passados",
+     "g": "Recordar momentos em que você fez algo difícil para lembrar que consegue.",
+     "p": [
+      "Você já fez coisas difíceis, mesmo que as esqueça.",
+      "Lembrar como você conseguiu mostra habilidades que você pode usar de novo.",
+      "Perceba os passos e o apoio que ajudaram você na época."
+     ],
+     "q": "Que coisa difícil você superou e o que ajudou?",
+     "c": "Anote um sucesso passado e a força que ele mostrou em você."
+    }
+   }
+  }
+ ]
+}

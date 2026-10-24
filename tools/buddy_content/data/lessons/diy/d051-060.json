@@ -1,0 +1,835 @@
+{
+ "topic": "diy",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sanding basics",
+     "g": "Learn grits, sanding blocks and working from coarse to fine.",
+     "p": [
+      "Low grit numbers remove a lot; high numbers polish and smooth.",
+      "Use a sanding block for flat surfaces and sand along the wood grain.",
+      "Wear a dust mask and wipe off dust before the next finer grit."
+     ],
+     "q": "What surface at home would you love to make silky smooth?",
+     "c": "Sand a scrap of wood with coarse, medium and fine paper and feel the difference."
+    },
+    "de": {
+     "t": "Schleifen: die Grundlagen",
+     "g": "Lerne Körnungen, Schleifklötze und das Arbeiten von grob nach fein.",
+     "p": [
+      "Niedrige Körnungszahlen tragen viel ab; hohe glätten und polieren.",
+      "Nutze einen Schleifklotz für ebene Flächen und schleife entlang der Holzmaserung.",
+      "Trage eine Staubmaske und wische Staub ab, bevor du feiner schleifst."
+     ],
+     "q": "Welche Fläche bei dir würdest du gern seidenglatt machen?",
+     "c": "Schleife ein Reststück Holz mit grobem, mittlerem und feinem Papier und fühle den Unterschied."
+    },
+    "es": {
+     "t": "Lijado: lo básico",
+     "g": "Aprende granos, tacos de lijar y a trabajar de grueso a fino.",
+     "p": [
+      "Los números de grano bajos quitan mucho; los altos alisan y pulen.",
+      "Usa un taco para superficies planas y lija a favor de la veta.",
+      "Usa mascarilla y limpia el polvo antes del siguiente grano más fino."
+     ],
+     "q": "¿Qué superficie de casa te gustaría dejar suave como la seda?",
+     "c": "Lija un trozo de madera con papel grueso, medio y fino y nota la diferencia."
+    },
+    "fr": {
+     "t": "Les bases du ponçage",
+     "g": "Apprends grains, cales à poncer et le travail du gros au fin.",
+     "p": [
+      "Les petits numéros de grain enlèvent beaucoup ; les grands lissent et polissent.",
+      "Utilise une cale pour les surfaces planes et ponce dans le sens du fil du bois.",
+      "Porte un masque et essuie la poussière avant le grain plus fin."
+     ],
+     "q": "Quelle surface chez toi aimerais-tu rendre douce comme de la soie ?",
+     "c": "Ponce une chute de bois au papier gros, moyen et fin et sens la différence."
+    },
+    "it": {
+     "t": "Le basi della carteggiatura",
+     "g": "Impara grane, tamponi abrasivi e a lavorare dal grosso al fine.",
+     "p": [
+      "I numeri di grana bassi tolgono molto; quelli alti lisciano e lucidano.",
+      "Usa un tampone per le superfici piane e carteggia lungo la venatura.",
+      "Indossa la mascherina e pulisci la polvere prima della grana più fine."
+     ],
+     "q": "Quale superficie di casa vorresti rendere liscia come seta?",
+     "c": "Carteggia un pezzo di legno con carta grossa, media e fine e senti la differenza."
+    },
+    "pt": {
+     "t": "Noções básicas de lixagem",
+     "g": "Aprende grãos, blocos de lixar e a trabalhar do grosso ao fino.",
+     "p": [
+      "Números de grão baixos retiram muito; os altos alisam e polem.",
+      "Usa um bloco para superfícies planas e lixa ao longo do veio da madeira.",
+      "Usa máscara e limpa o pó antes do grão mais fino."
+     ],
+     "q": "Que superfície em casa gostarias de deixar macia como seda?",
+     "c": "Lixa um pedaço de madeira com lixa grossa, média e fina e sente a diferença."
+    },
+    "pt_BR": {
+     "t": "Noções básicas de lixamento",
+     "g": "Aprenda grãos, blocos de lixar e a trabalhar do grosso ao fino.",
+     "p": [
+      "Números de grão baixos removem muito; os altos alisam e polem.",
+      "Use um bloco em superfícies planas e lixe a favor do veio da madeira.",
+      "Use máscara e limpe o pó antes do grão mais fino."
+     ],
+     "q": "Que superfície da sua casa você gostaria de deixar lisa como seda?",
+     "c": "Lixe um pedaço de madeira com lixa grossa, média e fina e sinta a diferença."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Caulk and sealant basics",
+     "g": "Know acrylic versus silicone and where each belongs.",
+     "p": [
+      "Acrylic caulk suits gaps in walls, trim and skirting and can be painted.",
+      "Silicone sealant is flexible and waterproof for baths, sinks and showers.",
+      "Read the label: some silicones cannot be painted over."
+     ],
+     "q": "Where in your home have you seen gaps or cracked sealant?",
+     "c": "Check bathroom and kitchen edges and list where fresh sealant is needed."
+    },
+    "de": {
+     "t": "Dichtstoff-Grundlagen",
+     "g": "Kenne Acryl gegenüber Silikon und wo welches hingehört.",
+     "p": [
+      "Acryl eignet sich für Fugen an Wänden und Leisten und lässt sich überstreichen.",
+      "Silikon ist flexibel und wasserdicht für Bad, Spüle und Dusche.",
+      "Lies das Etikett: Manches Silikon lässt sich nicht überstreichen."
+     ],
+     "q": "Wo in deinem Zuhause hast du Fugen oder rissigen Dichtstoff gesehen?",
+     "c": "Prüfe Bad- und Küchenkanten und notiere, wo neuer Dichtstoff nötig ist."
+    },
+    "es": {
+     "t": "Fundamentos de masillas y selladores",
+     "g": "Conoce acrílico frente a silicona y dónde va cada uno.",
+     "p": [
+      "La masilla acrílica sirve para huecos en paredes y rodapiés y se puede pintar.",
+      "El sellador de silicona es flexible e impermeable para bañeras, fregaderos y duchas.",
+      "Lee la etiqueta: algunas siliconas no se pueden pintar encima."
+     ],
+     "q": "¿Dónde has visto en casa huecos o sellador agrietado?",
+     "c": "Revisa los bordes de baño y cocina y anota dónde hace falta sellador nuevo."
+    },
+    "fr": {
+     "t": "Bases du mastic et du joint",
+     "g": "Connais acrylique et silicone et où chacun s'utilise.",
+     "p": [
+      "Le mastic acrylique convient aux fissures de murs et plinthes et se peint.",
+      "Le silicone est souple et étanche pour baignoire, évier et douche.",
+      "Lis l'étiquette : certains silicones ne se repeignent pas."
+     ],
+     "q": "Où as-tu vu chez toi des fentes ou des joints fissurés ?",
+     "c": "Examine les bords de la salle de bains et cuisine et note où un joint neuf s'impose."
+    },
+    "it": {
+     "t": "Le basi di sigillanti e silicone",
+     "g": "Conosci acrilico e silicone e dove va ciascuno.",
+     "p": [
+      "Il sigillante acrilico va bene per fessure di muri e battiscopa e si può verniciare.",
+      "Il silicone è flessibile e impermeabile per vasche, lavelli e docce.",
+      "Leggi l'etichetta: alcuni siliconi non si possono verniciare."
+     ],
+     "q": "Dove hai visto in casa fessure o sigillante crepato?",
+     "c": "Controlla i bordi di bagno e cucina e annota dove serve sigillante nuovo."
+    },
+    "pt": {
+     "t": "Noções de vedantes e silicone",
+     "g": "Conhece acrílico e silicone e onde cada um se usa.",
+     "p": [
+      "O vedante acrílico serve para frinchas em paredes e rodapés e pode ser pintado.",
+      "O silicone é flexível e impermeável para banheiras, lava-loiça e duches.",
+      "Lê o rótulo: alguns silicones não se podem pintar por cima."
+     ],
+     "q": "Onde viste em casa frinchas ou vedante rachado?",
+     "c": "Verifica os cantos da casa de banho e cozinha e anota onde falta vedante novo."
+    },
+    "pt_BR": {
+     "t": "Noções de vedantes e silicone",
+     "g": "Conheça acrílico e silicone e onde cada um se usa.",
+     "p": [
+      "O selante acrílico serve para frestas em paredes e rodapés e pode ser pintado.",
+      "O silicone é flexível e impermeável para banheiras, pias e chuveiros.",
+      "Leia o rótulo: alguns silicones não podem ser pintados por cima."
+     ],
+     "q": "Onde você viu em casa frestas ou selante rachado?",
+     "c": "Confira as bordas do banheiro e cozinha e anote onde precisa de selante novo."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Applying a neat bead of sealant",
+     "g": "Cut the nozzle, apply steady pressure and smooth the line.",
+     "p": [
+      "Cut the nozzle tip at an angle, small at first; you can cut more later.",
+      "Mask both sides with tape for crisp lines and apply one steady bead.",
+      "Smooth with a tool or a gloved wet finger and remove tape before it skins."
+     ],
+     "q": "Have you ever tried sealing a gap? How did it look?",
+     "c": "Practise a bead on cardboard, smooth it and compare the lines."
+    },
+    "de": {
+     "t": "Eine saubere Dichtfuge ziehen",
+     "g": "Schneide die Düse zu, übe gleichmäßigen Druck aus und glätte die Fuge.",
+     "p": [
+      "Schneide die Düsenspitze schräg ab, anfangs klein; später geht mehr.",
+      "Klebe beide Seiten ab für scharfe Kanten und ziehe eine gleichmäßige Raupe.",
+      "Glätte mit Werkzeug oder nassem Handschuhfinger und ziehe das Band vor der Hautbildung ab."
+     ],
+     "q": "Hast du schon mal eine Fuge abgedichtet? Wie sah sie aus?",
+     "c": "Übe eine Raupe auf Pappe, glätte sie und vergleiche die Linien."
+    },
+    "es": {
+     "t": "Aplicar un cordón de sellador limpio",
+     "g": "Corta la boquilla, aplica presión constante y alisa la línea.",
+     "p": [
+      "Corta la punta de la boquilla en ángulo, pequeña al principio; luego puedes cortar más.",
+      "Enmascara ambos lados con cinta para líneas nítidas y aplica un cordón continuo.",
+      "Alisa con una herramienta o con el dedo mojado enguantado y quita la cinta antes de que forme piel."
+     ],
+     "q": "¿Alguna vez has sellado un hueco? ¿Cómo quedó?",
+     "c": "Practica un cordón sobre cartón, alísalo y compara las líneas."
+    },
+    "fr": {
+     "t": "Réaliser un joint net",
+     "g": "Coupe la buse, applique une pression régulière et lisse la ligne.",
+     "p": [
+      "Coupe la pointe de la buse en biais, petite au début ; tu pourras couper plus.",
+      "Masque les deux côtés au ruban pour des lignes nettes et fais un cordon régulier.",
+      "Lisse avec un outil ou un doigt ganté mouillé et retire le ruban avant la formation d'une peau."
+     ],
+     "q": "As-tu déjà colmaté une fente ? Quel résultat ?",
+     "c": "Entraîne-toi sur du carton, lisse le cordon et compare les lignes."
+    },
+    "it": {
+     "t": "Applicare un cordolo di sigillante pulito",
+     "g": "Taglia l'ugello, applica pressione costante e leviga la linea.",
+     "p": [
+      "Taglia la punta dell'ugello in obliquo, piccola all'inizio; puoi tagliare di più dopo.",
+      "Maschera i due lati con il nastro per linee nitide e stendi un cordolo continuo.",
+      "Leviga con uno strumento o con un dito bagnato e guantato e togli il nastro prima che si formi la pelle."
+     ],
+     "q": "Hai mai sigillato una fessura? Com'è venuta?",
+     "c": "Esercitati su un cartone, leviga il cordolo e confronta le linee."
+    },
+    "pt": {
+     "t": "Aplicar um cordão de vedante limpo",
+     "g": "Corta o bico, aplica pressão constante e alisa a linha.",
+     "p": [
+      "Corta a ponta do bico na diagonal, pequena no início; podes cortar mais depois.",
+      "Mascara os dois lados com fita para linhas nítidas e faz um cordão contínuo.",
+      "Alisa com uma ferramenta ou o dedo molhado com luva e tira a fita antes de formar película."
+     ],
+     "q": "Já vedaste uma frincha? Como ficou?",
+     "c": "Pratica um cordão em cartão, alisa-o e compara as linhas."
+    },
+    "pt_BR": {
+     "t": "Aplicando um cordão de selante limpo",
+     "g": "Corte o bico, aplique pressão constante e alise a linha.",
+     "p": [
+      "Corte a ponta do bico na diagonal, pequena no começo; dá para cortar mais depois.",
+      "Proteja os dois lados com fita para linhas nítidas e faça um cordão contínuo.",
+      "Alise com uma ferramenta ou o dedo molhado com luva e tire a fita antes de formar película."
+     ],
+     "q": "Você já vedou uma fresta? Como ficou?",
+     "c": "Pratique um cordão em papelão, alise e compare as linhas."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Removing old sealant",
+     "g": "Scrape, clean and prepare for a fresh seal.",
+     "p": [
+      "Soften and cut old sealant with a sealant remover or a sharp scraper.",
+      "Pull or scrape it out completely, including any mould-stained areas.",
+      "Clean with a suitable cleaner, dry fully and only then reseal."
+     ],
+     "q": "Where does sealant look old or mouldy at your home?",
+     "c": "Remove a small section of old sealant, clean it and let it dry."
+    },
+    "de": {
+     "t": "Alten Dichtstoff entfernen",
+     "g": "Schabe, reinige und bereite alles für eine frische Fuge vor.",
+     "p": [
+      "Weiche alten Dichtstoff mit Entferner auf oder schneide ihn mit einem scharfen Schaber.",
+      "Ziehe oder kratze ihn vollständig heraus, auch verschimmelte Stellen.",
+      "Reinige mit passendem Reiniger, trockne alles gründlich und dichte erst dann neu ab."
+     ],
+     "q": "Wo wirkt Dichtstoff bei dir alt oder verschimmelt?",
+     "c": "Entferne ein kleines Stück alten Dichtstoff, reinige es und lass es trocknen."
+    },
+    "es": {
+     "t": "Quitar sellador viejo",
+     "g": "Rasca, limpia y prepara para un sellado nuevo.",
+     "p": [
+      "Ablanda y corta el sellador viejo con un quitasellador o una rasqueta afilada.",
+      "Sácalo por completo, incluidas las zonas manchadas de moho.",
+      "Limpia con un limpiador adecuado, seca del todo y solo entonces vuelve a sellar."
+     ],
+     "q": "¿Dónde se ve viejo o con moho el sellador en tu casa?",
+     "c": "Retira un trozo pequeño de sellador viejo, límpialo y déjalo secar."
+    },
+    "fr": {
+     "t": "Retirer un vieux joint",
+     "g": "Gratte, nettoie et prépare un joint neuf.",
+     "p": [
+      "Ramollis et coupe le vieux joint avec un décapant ou un grattoir bien affûté.",
+      "Retire-le entièrement, y compris les zones tachées par la moisissure.",
+      "Nettoie avec un produit adapté, sèche complètement et seulement ensuite refais le joint."
+     ],
+     "q": "Où les joints te semblent-ils vieux ou moisis chez toi ?",
+     "c": "Retire un petit tronçon de vieux joint, nettoie-le et laisse sécher."
+    },
+    "it": {
+     "t": "Rimuovere il vecchio sigillante",
+     "g": "Raschia, pulisci e prepara per una nuova sigillatura.",
+     "p": [
+      "Ammorbidisci e taglia il vecchio sigillante con un rimuovitore o un raschietto affilato.",
+      "Toglilo completamente, comprese le zone macchiate di muffa.",
+      "Pulisci con un detergente adatto, asciuga bene e solo dopo risigilla."
+     ],
+     "q": "Dove il sigillante sembra vecchio o ammuffito a casa tua?",
+     "c": "Rimuovi un piccolo tratto di vecchio sigillante, puliscilo e lascialo asciugare."
+    },
+    "pt": {
+     "t": "Remover vedante velho",
+     "g": "Raspa, limpa e prepara para uma vedação nova.",
+     "p": [
+      "Amolece e corta o vedante velho com um removedor ou raspador afiado.",
+      "Retira-o por completo, incluindo as zonas manchadas de bolor.",
+      "Limpa com um produto adequado, seca bem e só depois volta a vedar."
+     ],
+     "q": "Onde está o vedante com ar velho ou bolorento em tua casa?",
+     "c": "Remove um pequeno troço de vedante velho, limpa-o e deixa secar."
+    },
+    "pt_BR": {
+     "t": "Removendo selante velho",
+     "g": "Raspe, limpe e prepare para uma nova vedação.",
+     "p": [
+      "Amoleça e corte o selante velho com um removedor ou raspador afiado.",
+      "Retire-o por completo, incluindo as áreas manchadas de mofo.",
+      "Limpe com um produto adequado, seque bem e só então vede de novo."
+     ],
+     "q": "Onde o selante está com cara de velho ou mofado na sua casa?",
+     "c": "Remova um pequeno trecho de selante velho, limpe e deixe secar."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Draught-proofing doors",
+     "g": "Use seals, brush strips and draught excluders for a cosier home.",
+     "p": [
+      "Feel around the door edges on a windy day to find draughts.",
+      "Self-adhesive seals fit the frame; brush strips fit the bottom edge.",
+      "A simple draught excluder across the floor also helps."
+     ],
+     "q": "Which room in your home feels coldest or draughtiest?",
+     "c": "Run a hand around one door frame and mark where you feel air moving."
+    },
+    "de": {
+     "t": "Türen gegen Zugluft abdichten",
+     "g": "Nutze Dichtungen, Bürstenleisten und Zugluftstopper für ein behaglicheres Zuhause.",
+     "p": [
+      "Taste an windigen Tagen die Türränder ab, um Zugluft zu finden.",
+      "Selbstklebende Dichtungen passen in den Rahmen; Bürstenleisten an die Unterkante.",
+      "Ein einfacher Zugluftstopper über dem Boden hilft ebenfalls."
+     ],
+     "q": "Welcher Raum in deinem Zuhause ist am kältesten oder zugigsten?",
+     "c": "Fahre mit der Hand um einen Türrahmen und markiere, wo du Luft spürst."
+    },
+    "es": {
+     "t": "Aislar puertas de corrientes de aire",
+     "g": "Usa burletes, cepillos y tapajuntas para un hogar más acogedor.",
+     "p": [
+      "Pasa la mano por los bordes de la puerta en un día ventoso para hallar corrientes.",
+      "Los burletes autoadhesivos van en el marco; los cepillos, en el borde inferior.",
+      "Un simple burlete de suelo atravesado también ayuda."
+     ],
+     "q": "¿Qué habitación de tu casa es la más fría o con más corrientes?",
+     "c": "Pasa la mano por un marco de puerta y marca dónde notas moverse el aire."
+    },
+    "fr": {
+     "t": "Calfeutrer les portes",
+     "g": "Utilise joints, bandes brosses et boudins de porte pour une maison plus douce.",
+     "p": [
+      "Passe la main sur les bords de la porte un jour de vent pour trouver les courants d'air.",
+      "Les joints autocollants vont sur le cadre ; les bandes brosses sur le bas.",
+      "Un simple boudin de porte posé au sol aide aussi."
+     ],
+     "q": "Quelle pièce de ta maison est la plus froide ou la plus venteuse ?",
+     "c": "Passe la main autour d'un cadre de porte et marque où l'air circule."
+    },
+    "it": {
+     "t": "Eliminare gli spifferi dalle porte",
+     "g": "Usa guarnizioni, strisce a spazzola e paraspifferi per una casa più accogliente.",
+     "p": [
+      "Passa la mano sui bordi della porta in una giornata ventosa per trovare gli spifferi.",
+      "Le guarnizioni autoadesive vanno sul telaio; le strisce a spazzola sul bordo inferiore.",
+      "Un semplice paraspifferi sul pavimento aiuta anche."
+     ],
+     "q": "Quale stanza di casa è la più fredda o con più spifferi?",
+     "c": "Passa la mano intorno a un telaio e segna dove senti muoversi l'aria."
+    },
+    "pt": {
+     "t": "Vedar portas contra correntes de ar",
+     "g": "Usa vedantes, escovas e rolos de porta para uma casa mais acolhedora.",
+     "p": [
+      "Passa a mão pelos bordos da porta num dia de vento para achar correntes de ar.",
+      "Os vedantes autocolantes vão na caixilharia; as escovas, no bordo inferior.",
+      "Um simples rolo de porta no chão também ajuda."
+     ],
+     "q": "Que divisão da tua casa é a mais fria ou com mais correntes de ar?",
+     "c": "Passa a mão à volta de uma aduela e marca onde sentes o ar a mexer."
+    },
+    "pt_BR": {
+     "t": "Vedando portas contra correntes de ar",
+     "g": "Use borrachas, escovas e protetores de porta para uma casa mais aconchegante.",
+     "p": [
+      "Passe a mão pelas bordas da porta num dia de vento para achar correntes de ar.",
+      "As borrachas autoadesivas vão no batente; as escovas, na borda inferior.",
+      "Um simples protetor de porta no chão também ajuda."
+     ],
+     "q": "Que cômodo da sua casa é o mais frio ou com mais correntes de ar?",
+     "c": "Passe a mão em volta de um batente e marque onde sente o ar se mexer."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Draught-proofing windows",
+     "g": "Use foam and rubber strips and check for gaps.",
+     "p": [
+      "Check frames and sashes for gaps with a hand or a thin strip of paper.",
+      "Foam or rubber strips seal where the sash meets the frame.",
+      "Clean the surface first so the self-adhesive strip sticks well."
+     ],
+     "q": "What time of year do you notice draughts most?",
+     "c": "Test one window with a strip of paper and note where it slides freely."
+    },
+    "de": {
+     "t": "Fenster gegen Zugluft abdichten",
+     "g": "Nutze Schaum- und Gummidichtungen und prüfe auf Spalten.",
+     "p": [
+      "Prüfe Rahmen und Flügel mit der Hand oder einem dünnen Papierstreifen auf Spalten.",
+      "Schaum- oder Gummiband dichtet dort, wo der Flügel auf den Rahmen trifft.",
+      "Reinige den Untergrund zuerst, damit das selbstklebende Band gut hält."
+     ],
+     "q": "Zu welcher Jahreszeit bemerkst du Zugluft am meisten?",
+     "c": "Teste ein Fenster mit einem Papierstreifen und notiere, wo er frei gleitet."
+    },
+    "es": {
+     "t": "Aislar ventanas de corrientes de aire",
+     "g": "Usa tiras de espuma y goma y comprueba si hay huecos.",
+     "p": [
+      "Revisa marcos y hojas con la mano o una tira fina de papel.",
+      "Las tiras de espuma o goma sellan donde la hoja toca el marco.",
+      "Limpia primero la superficie para que la tira autoadhesiva se pegue bien."
+     ],
+     "q": "¿En qué época del año notas más las corrientes?",
+     "c": "Prueba una ventana con una tira de papel y anota dónde se desliza libremente."
+    },
+    "fr": {
+     "t": "Calfeutrer les fenêtres",
+     "g": "Utilise bandes de mousse et de caoutchouc et vérifie les jours.",
+     "p": [
+      "Vérifie cadres et ouvrants avec la main ou une fine bande de papier.",
+      "Les bandes de mousse ou caoutchouc étanchent là où l'ouvrant touche le cadre.",
+      "Nettoie d'abord la surface pour que la bande autocollante tienne bien."
+     ],
+     "q": "À quelle période de l'année sens-tu le plus les courants d'air ?",
+     "c": "Teste une fenêtre avec une bande de papier et note où elle glisse librement."
+    },
+    "it": {
+     "t": "Eliminare gli spifferi dalle finestre",
+     "g": "Usa strisce di gommapiuma e gomma e controlla le fessure.",
+     "p": [
+      "Controlla telai e ante con la mano o una sottile striscia di carta.",
+      "Le strisce di gommapiuma o gomma sigillano dove l'anta tocca il telaio.",
+      "Pulisci prima la superficie perché la striscia autoadesiva aderisca bene."
+     ],
+     "q": "In quale periodo dell'anno senti più gli spifferi?",
+     "c": "Prova una finestra con una striscia di carta e annota dove scorre libera."
+    },
+    "pt": {
+     "t": "Vedar janelas contra correntes de ar",
+     "g": "Usa tiras de espuma e borracha e verifica se há folgas.",
+     "p": [
+      "Verifica caixilhos e folhas com a mão ou uma tira fina de papel.",
+      "As tiras de espuma ou borracha vedam onde a folha toca no caixilho.",
+      "Limpa primeiro a superfície para a tira autocolante colar bem."
+     ],
+     "q": "Em que época do ano notas mais as correntes de ar?",
+     "c": "Testa uma janela com uma tira de papel e anota onde desliza livremente."
+    },
+    "pt_BR": {
+     "t": "Vedando janelas contra correntes de ar",
+     "g": "Use tiras de espuma e borracha e confira se há frestas.",
+     "p": [
+      "Confira batentes e folhas com a mão ou uma tira fina de papel.",
+      "As tiras de espuma ou borracha vedam onde a folha encosta no batente.",
+      "Limpe antes a superfície para a tira autoadesiva colar bem."
+     ],
+     "q": "Em que época do ano você mais sente correntes de ar?",
+     "c": "Teste uma janela com uma tira de papel e anote onde ela desliza livre."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Squeaky doors",
+     "g": "Lubricate hinges and tighten screws to stop the squeak.",
+     "p": [
+      "Open and close the door slowly to find which hinge squeaks.",
+      "Tighten hinge screws, then add a little suitable lubricant to the hinge pin.",
+      "Wipe away extra lubricant so it does not stain the door or floor."
+     ],
+     "q": "Which door in your home always announces you?",
+     "c": "Find the squeaky hinge, lift or tighten it and apply a drop of lubricant."
+    },
+    "de": {
+     "t": "Quietschende Türen",
+     "g": "Schmiere Scharniere und ziehe Schrauben nach, damit das Quietschen aufhört.",
+     "p": [
+      "Öffne und schließe die Tür langsam, um das quietschende Scharnier zu finden.",
+      "Ziehe die Scharnierschrauben fest und gib etwas passendes Schmiermittel auf den Stift.",
+      "Wische überschüssiges Schmiermittel ab, damit es Tür und Boden nicht verschmutzt."
+     ],
+     "q": "Welche Tür bei dir verrät dich immer?",
+     "c": "Finde das quietschende Scharnier, ziehe es nach und gib einen Tropfen Schmiermittel darauf."
+    },
+    "es": {
+     "t": "Puertas que chirrían",
+     "g": "Lubrica bisagras y aprieta tornillos para acabar con el chirrido.",
+     "p": [
+      "Abre y cierra la puerta despacio para hallar qué bisagra chirría.",
+      "Aprieta los tornillos de la bisagra y echa un poco de lubricante adecuado en el eje.",
+      "Limpia el exceso de lubricante para que no manche la puerta ni el suelo."
+     ],
+     "q": "¿Qué puerta de tu casa siempre te delata?",
+     "c": "Encuentra la bisagra que chirría, apriétala y aplica una gota de lubricante."
+    },
+    "fr": {
+     "t": "Portes qui grincent",
+     "g": "Lubrifie les charnières et resserre les vis pour faire cesser le grincement.",
+     "p": [
+      "Ouvre et ferme la porte lentement pour trouver la charnière qui grince.",
+      "Resserre les vis de charnière puis ajoute un peu de lubrifiant adapté sur l'axe.",
+      "Essuie l'excédent de lubrifiant pour ne pas tacher la porte ni le sol."
+     ],
+     "q": "Quelle porte chez toi annonce toujours ton arrivée ?",
+     "c": "Trouve la charnière qui grince, resserre-la et applique une goutte de lubrifiant."
+    },
+    "it": {
+     "t": "Porte che cigolano",
+     "g": "Lubrifica le cerniere e stringi le viti per far cessare il cigolio.",
+     "p": [
+      "Apri e chiudi la porta lentamente per trovare la cerniera che cigola.",
+      "Stringi le viti della cerniera, poi metti un po' di lubrificante adatto sul perno.",
+      "Pulisci il lubrificante in eccesso perché non macchi porta e pavimento."
+     ],
+     "q": "Quale porta di casa ti tradisce sempre?",
+     "c": "Trova la cerniera che cigola, stringila e applica una goccia di lubrificante."
+    },
+    "pt": {
+     "t": "Portas que rangem",
+     "g": "Lubrifica dobradiças e aperta parafusos para acabar com o rangido.",
+     "p": [
+      "Abre e fecha a porta devagar para achar a dobradiça que range.",
+      "Aperta os parafusos da dobradiça e põe um pouco de lubrificante adequado no eixo.",
+      "Limpa o excesso de lubrificante para não manchar a porta nem o chão."
+     ],
+     "q": "Que porta em tua casa te denuncia sempre?",
+     "c": "Encontra a dobradiça que range, aperta-a e aplica uma gota de lubrificante."
+    },
+    "pt_BR": {
+     "t": "Portas que rangem",
+     "g": "Lubrifique dobradiças e aperte parafusos para acabar com o rangido.",
+     "p": [
+      "Abra e feche a porta devagar para achar a dobradiça que range.",
+      "Aperte os parafusos da dobradiça e ponha um pouco de lubrificante adequado no eixo.",
+      "Limpe o excesso de lubrificante para não manchar a porta nem o piso."
+     ],
+     "q": "Que porta da sua casa sempre denuncia você?",
+     "c": "Ache a dobradiça que range, aperte e aplique uma gota de lubrificante."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sticking doors",
+     "g": "Find where a door rubs and fix hinges or ease the edge.",
+     "p": [
+      "Look for shiny rub marks on the door edge or frame to see where it sticks.",
+      "Tighten hinge screws first; a sagging door often just needs that.",
+      "If it still rubs, sand or plane the edge a little and seal the bare wood."
+     ],
+     "q": "Does a door at home stick more in humid weather?",
+     "c": "Find the rub mark on one door and check whether the hinge screws are tight."
+    },
+    "de": {
+     "t": "Klemmende Türen",
+     "g": "Finde die Reibstelle und richte Scharniere oder schleife die Kante leicht ab.",
+     "p": [
+      "Suche glänzende Schleifspuren an Türkante oder Rahmen, um die Klemmstelle zu finden.",
+      "Ziehe zuerst die Scharnierschrauben fest; eine hängende Tür braucht oft nur das.",
+      "Reibt sie weiter, schleife oder hoble die Kante leicht und versiegele das blanke Holz."
+     ],
+     "q": "Klemmt eine Tür bei dir mehr bei feuchtem Wetter?",
+     "c": "Finde die Reibspur an einer Tür und prüfe, ob die Scharnierschrauben fest sitzen."
+    },
+    "es": {
+     "t": "Puertas que se atascan",
+     "g": "Encuentra dónde roza la puerta y arregla bisagras o rebaja el canto.",
+     "p": [
+      "Busca marcas brillantes de roce en el canto o el marco para ver dónde se atasca.",
+      "Aprieta primero los tornillos de las bisagras; una puerta caída suele necesitar solo eso.",
+      "Si aún roza, lija o cepilla un poco el canto y sella la madera desnuda."
+     ],
+     "q": "¿Se atasca más alguna puerta de tu casa con tiempo húmedo?",
+     "c": "Busca la marca de roce en una puerta y comprueba si los tornillos están firmes."
+    },
+    "fr": {
+     "t": "Portes qui frottent",
+     "g": "Trouve où la porte frotte et resserre les charnières ou ponce légèrement le bord.",
+     "p": [
+      "Cherche des traces de frottement brillantes sur le chant ou le cadre pour voir où ça coince.",
+      "Resserre d'abord les vis de charnière ; une porte affaissée n'a souvent besoin que de ça.",
+      "Si elle frotte encore, ponce ou rabote un peu le chant et protège le bois nu."
+     ],
+     "q": "Une porte chez toi coince-t-elle plus par temps humide ?",
+     "c": "Trouve la trace de frottement sur une porte et vérifie que les vis de charnière sont serrées."
+    },
+    "it": {
+     "t": "Porte che si incastrano",
+     "g": "Trova dove la porta sfrega e sistema le cerniere o leviga il bordo.",
+     "p": [
+      "Cerca segni lucidi di sfregamento sul bordo o sul telaio per vedere dove si incastra.",
+      "Stringi prima le viti delle cerniere; una porta calata spesso richiede solo questo.",
+      "Se sfrega ancora, carteggia o pialla un poco il bordo e proteggi il legno nudo."
+     ],
+     "q": "Una porta di casa si incastra di più col tempo umido?",
+     "c": "Trova il segno di sfregamento su una porta e controlla se le viti delle cerniere sono salde."
+    },
+    "pt": {
+     "t": "Portas que prendem",
+     "g": "Encontra onde a porta roça e acerta as dobradiças ou alisa o bordo.",
+     "p": [
+      "Procura marcas brilhantes de atrito no bordo ou na aduela para ver onde prende.",
+      "Aperta primeiro os parafusos das dobradiças; uma porta descaída muitas vezes só precisa disso.",
+      "Se ainda roçar, lixa ou aplaina um pouco o bordo e protege a madeira nua."
+     ],
+     "q": "Alguma porta de tua casa prende mais com tempo húmido?",
+     "c": "Encontra a marca de atrito numa porta e verifica se os parafusos estão firmes."
+    },
+    "pt_BR": {
+     "t": "Portas que emperram",
+     "g": "Ache onde a porta roça e ajuste as dobradiças ou alise a borda.",
+     "p": [
+      "Procure marcas brilhantes de atrito na borda ou no batente para ver onde emperra.",
+      "Aperte primeiro os parafusos das dobradiças; uma porta caída muitas vezes só precisa disso.",
+      "Se ainda roçar, lixe ou aplaine um pouco a borda e proteja a madeira nua."
+     ],
+     "q": "Alguma porta da sua casa emperra mais em tempo úmido?",
+     "c": "Ache a marca de atrito numa porta e confira se os parafusos estão firmes."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Door stops and catches",
+     "g": "Fit stops to protect walls and catches to keep doors closed.",
+     "p": [
+      "A stop prevents the handle from hitting and marking the wall.",
+      "Floor, skirting and hinge-mounted stops each suit different layouts.",
+      "Magnetic or roller catches keep cupboard doors closed neatly."
+     ],
+     "q": "Where does a door in your home bump into something?",
+     "c": "Open a door fully and mark where a stop would protect the wall."
+    },
+    "de": {
+     "t": "Türstopper und Schnapper",
+     "g": "Montiere Stopper zum Wandschutz und Schnapper, damit Türen geschlossen bleiben.",
+     "p": [
+      "Ein Stopper verhindert, dass die Klinke an die Wand schlägt und Spuren hinterlässt.",
+      "Boden-, Leisten- und Scharnierstopper passen jeweils zu anderen Raumsituationen.",
+      "Magnet- oder Rollenschnapper halten Schranktüren ordentlich geschlossen."
+     ],
+     "q": "Wo stößt bei dir eine Tür an etwas an?",
+     "c": "Öffne eine Tür ganz und markiere, wo ein Stopper die Wand schützen würde."
+    },
+    "es": {
+     "t": "Topes y cierres de puerta",
+     "g": "Instala topes para proteger paredes y cierres para mantener puertas cerradas.",
+     "p": [
+      "Un tope evita que el pomo golpee y marque la pared.",
+      "Los topes de suelo, rodapié y bisagra sirven para distintas distribuciones.",
+      "Los cierres magnéticos o de rodillo mantienen cerradas las puertas de armario."
+     ],
+     "q": "¿Dónde choca una puerta de tu casa con algo?",
+     "c": "Abre una puerta del todo y marca dónde un tope protegería la pared."
+    },
+    "fr": {
+     "t": "Butées et loqueteaux",
+     "g": "Pose des butées pour protéger les murs et des loqueteaux pour garder les portes fermées.",
+     "p": [
+      "Une butée évite que la poignée tape et marque le mur.",
+      "Les butées de sol, de plinthe et de charnière conviennent à différentes configurations.",
+      "Les loqueteaux magnétiques ou à rouleau gardent proprement les portes de placard fermées."
+     ],
+     "q": "Où une porte chez toi heurte-t-elle quelque chose ?",
+     "c": "Ouvre une porte en grand et marque où une butée protégerait le mur."
+    },
+    "it": {
+     "t": "Fermaporta e chiusure",
+     "g": "Monta fermaporta per proteggere i muri e chiusure per tenere chiuse le ante.",
+     "p": [
+      "Un fermaporta evita che la maniglia sbatta e segni il muro.",
+      "Fermaporta a pavimento, a battiscopa e a cerniera si adattano a layout diversi.",
+      "Chiusure magnetiche o a rullo tengono chiuse con ordine le ante dei mobili."
+     ],
+     "q": "Dove una porta di casa tua urta contro qualcosa?",
+     "c": "Apri una porta del tutto e segna dove un fermaporta proteggerebbe il muro."
+    },
+    "pt": {
+     "t": "Batentes e fechos de porta",
+     "g": "Instala batentes para proteger paredes e fechos para manter portas fechadas.",
+     "p": [
+      "Um batente evita que o puxador bata e marque a parede.",
+      "Batentes de chão, de rodapé e de dobradiça servem para disposições diferentes.",
+      "Fechos magnéticos ou de rolete mantêm as portas de armário bem fechadas."
+     ],
+     "q": "Onde é que uma porta de tua casa bate em algo?",
+     "c": "Abre uma porta toda e marca onde um batente protegeria a parede."
+    },
+    "pt_BR": {
+     "t": "Batentes e trincos de porta",
+     "g": "Instale batentes para proteger paredes e trincos para manter portas fechadas.",
+     "p": [
+      "Um batente evita que a maçaneta bata e marque a parede.",
+      "Batentes de piso, de rodapé e de dobradiça servem para disposições diferentes.",
+      "Fechos magnéticos ou de rolete mantêm as portas de armário bem fechadas."
+     ],
+     "q": "Onde uma porta da sua casa bate em alguma coisa?",
+     "c": "Abra uma porta toda e marque onde um batente protegeria a parede."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: walls, fixings and small fixes",
+     "g": "A light recap of finding supports, fixings, hanging items and quick repairs.",
+     "p": [
+      "Find studs, check for pipes and cables, and choose fixings for the wall type.",
+      "Plan layouts, level everything and respect weight limits.",
+      "Quick fixes like filler, sealant and hinges make a home feel cared for."
+     ],
+     "q": "Which fix from these weeks made you proudest?",
+     "c": "Pick one small job from your list and finish it today, safely."
+    },
+    "de": {
+     "t": "Wiederholung: Wände, Befestigungen und kleine Reparaturen",
+     "g": "Eine lockere Wiederholung von Stützensuche, Befestigung, Aufhängen und Schnellreparaturen.",
+     "p": [
+      "Finde Ständer, prüfe auf Leitungen und wähle Befestigungen passend zur Wandart.",
+      "Plane Anordnungen, richte alles aus und beachte Tragkraftgrenzen.",
+      "Schnelle Reparaturen mit Spachtel, Dichtstoff und Scharnieren geben dem Zuhause Pflege."
+     ],
+     "q": "Welche Reparatur der letzten Wochen hat dich am stolzesten gemacht?",
+     "c": "Such dir eine kleine Arbeit aus deiner Liste und erledige sie heute sicher."
+    },
+    "es": {
+     "t": "Repaso: paredes, fijaciones y arreglos pequeños",
+     "g": "Un repaso ligero de soportes, fijaciones, colgar objetos y arreglos rápidos.",
+     "p": [
+      "Encuentra montantes, comprueba tuberías y cables y elige fijaciones según la pared.",
+      "Planifica distribuciones, nivela todo y respeta los límites de peso.",
+      "Arreglos rápidos con masilla, sellador y bisagras dan a la casa aire de cuidada."
+     ],
+     "q": "¿Qué arreglo de estas semanas te hizo sentir más orgulloso?",
+     "c": "Elige un trabajo pequeño de tu lista y termínalo hoy con seguridad."
+    },
+    "fr": {
+     "t": "Révision : murs, fixations et petites réparations",
+     "g": "Un bilan en douceur : supports, fixations, accrocher des objets et dépannages rapides.",
+     "p": [
+      "Trouve les montants, vérifie tuyaux et câbles et choisis les fixations selon le mur.",
+      "Planifie les dispositions, mets tout de niveau et respecte les charges maximales.",
+      "De petites réparations à l'enduit, au joint et aux charnières donnent une maison soignée."
+     ],
+     "q": "Quelle réparation de ces semaines t'a rendu le plus fier ?",
+     "c": "Choisis un petit travail de ta liste et termine-le aujourd'hui, en sécurité."
+    },
+    "it": {
+     "t": "Ripasso: pareti, fissaggi e piccole riparazioni",
+     "g": "Un ripasso leggero di ricerca dei supporti, fissaggi, appendere oggetti e rimedi rapidi.",
+     "p": [
+      "Trova i montanti, controlla tubi e cavi e scegli fissaggi adatti alla parete.",
+      "Pianifica le disposizioni, metti tutto in piano e rispetta i carichi massimi.",
+      "Rimedi rapidi con stucco, sigillante e cerniere danno alla casa un aspetto curato."
+     ],
+     "q": "Quale riparazione di queste settimane ti ha reso più fiero?",
+     "c": "Scegli un piccolo lavoro dalla tua lista e concludilo oggi, in sicurezza."
+    },
+    "pt": {
+     "t": "Revisão: paredes, fixações e pequenos arranjos",
+     "g": "Uma revisão leve de suportes, fixações, pendurar objetos e arranjos rápidos.",
+     "p": [
+      "Encontra montantes, verifica canos e cabos e escolhe fixações conforme a parede.",
+      "Planeia disposições, nivela tudo e respeita os limites de peso.",
+      "Arranjos rápidos com massa, vedante e dobradiças dão à casa um ar cuidado."
+     ],
+     "q": "Que arranjo destas semanas te deixou mais orgulhoso?",
+     "c": "Escolhe um pequeno trabalho da tua lista e termina-o hoje, em segurança."
+    },
+    "pt_BR": {
+     "t": "Revisão: paredes, fixações e pequenos consertos",
+     "g": "Uma revisão leve de suportes, fixações, pendurar objetos e consertos rápidos.",
+     "p": [
+      "Ache montantes, confira canos e fios e escolha fixações conforme a parede.",
+      "Planeje disposições, nivele tudo e respeite os limites de peso.",
+      "Consertos rápidos com massa, selante e dobradiças deixam a casa com ar de cuidada."
+     ],
+     "q": "Que conserto dessas semanas deixou você mais orgulhoso?",
+     "c": "Escolha um pequeno serviço da sua lista e termine hoje, com segurança."
+    }
+   }
+  }
+ ]
+}

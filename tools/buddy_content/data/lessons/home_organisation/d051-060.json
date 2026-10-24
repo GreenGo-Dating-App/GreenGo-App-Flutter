@@ -1,0 +1,835 @@
+{
+ "topic": "home_organisation",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shopping list systems",
+     "g": "Capture needs the moment you notice them, on paper or a shared phone list.",
+     "p": [
+      "Keep a pad on the fridge or a shared list app so anyone can add items.",
+      "Write things down as soon as the last of something is used.",
+      "Group the list by shop area to shorten each trip."
+     ],
+     "q": "How do you remember what to buy now?",
+     "c": "Start a shopping list today and add three items as you notice them."
+    },
+    "de": {
+     "t": "Einkaufslisten-Systeme",
+     "g": "Halte Bedarf sofort fest, auf Papier oder in einer gemeinsamen Handyliste.",
+     "p": [
+      "Ein Block am Kühlschrank oder eine gemeinsame Listen-App lässt jeden etwas ergänzen.",
+      "Schreibe auf, sobald das Letzte von etwas verbraucht ist.",
+      "Gruppiere die Liste nach Ladenbereichen, das verkürzt den Einkauf."
+     ],
+     "q": "Wie merkst du dir gerade, was du kaufen musst?",
+     "c": "Beginne heute eine Einkaufsliste und ergänze drei Dinge, sobald du sie bemerkst."
+    },
+    "es": {
+     "t": "Sistemas de lista de la compra",
+     "g": "Anota lo que falta en cuanto lo notes, en papel o en una lista compartida del móvil.",
+     "p": [
+      "Ten un bloc en la nevera o una lista compartida para que cualquiera añada cosas.",
+      "Apunta algo en cuanto se gaste lo último que quedaba.",
+      "Agrupa la lista por secciones de la tienda para acortar cada compra."
+     ],
+     "q": "¿Cómo recuerdas ahora lo que hay que comprar?",
+     "c": "Empieza hoy una lista de la compra y añade tres cosas según las notes."
+    },
+    "fr": {
+     "t": "Systèmes de liste de courses",
+     "g": "Note les besoins dès que tu les remarques, sur papier ou en liste partagée.",
+     "p": [
+      "Garde un bloc sur le frigo ou une liste partagée pour que chacun ajoute des articles.",
+      "Écris dès que le dernier exemplaire d'un produit est utilisé.",
+      "Groupe la liste par rayon pour raccourcir chaque trajet."
+     ],
+     "q": "Comment te souviens-tu de ce qu'il faut acheter ?",
+     "c": "Commence aujourd'hui une liste de courses et ajoute trois articles dès que tu les remarques."
+    },
+    "it": {
+     "t": "Sistemi per la lista della spesa",
+     "g": "Annota ciò che serve appena lo noti, su carta o in una lista condivisa sul telefono.",
+     "p": [
+      "Tieni un blocco sul frigo o una lista condivisa così chiunque aggiunge articoli.",
+      "Scrivi appena finisce l'ultimo pezzo di qualcosa.",
+      "Raggruppa la lista per reparti del negozio per accorciare la spesa."
+     ],
+     "q": "Come ricordi ora cosa comprare?",
+     "c": "Inizia oggi una lista della spesa e aggiungi tre cose appena le noti."
+    },
+    "pt": {
+     "t": "Sistemas de lista de compras",
+     "g": "Anota o que falta assim que reparares, em papel ou numa lista partilhada no telemóvel.",
+     "p": [
+      "Tem um bloco no frigorífico ou uma lista partilhada para qualquer pessoa acrescentar.",
+      "Escreve assim que acabar o último de alguma coisa.",
+      "Agrupa a lista por secções da loja para encurtar cada ida."
+     ],
+     "q": "Como te lembras agora do que comprar?",
+     "c": "Começa hoje uma lista de compras e acrescenta três coisas à medida que reparares."
+    },
+    "pt_BR": {
+     "t": "Sistemas de lista de compras",
+     "g": "Anote o que falta assim que reparar, no papel ou numa lista compartilhada no celular.",
+     "p": [
+      "Tenha um bloco na geladeira ou uma lista compartilhada para qualquer pessoa acrescentar.",
+      "Escreva assim que acabar o último de alguma coisa.",
+      "Agrupe a lista por seções do mercado para encurtar cada ida."
+     ],
+     "q": "Como você lembra hoje do que comprar?",
+     "c": "Comece hoje uma lista de compras e acrescente três coisas à medida que reparar."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Organising the freezer",
+     "g": "Flat-freeze, label and group so frozen food stays visible and gets eaten.",
+     "p": [
+      "Freeze soups and sauces flat in bags so they stack like books.",
+      "Label each bag with the contents and the date.",
+      "Keep a short list on the door of what is inside."
+     ],
+     "q": "What is the oldest thing in your freezer?",
+     "c": "Check one freezer drawer, label what is unmarked and group like with like."
+    },
+    "de": {
+     "t": "Gefrierfach ordnen",
+     "g": "Friere flach ein, beschrifte und gruppiere, damit Tiefgekühltes sichtbar bleibt und gegessen wird.",
+     "p": [
+      "Friere Suppen und Soßen flach in Beuteln ein, so stapeln sie sich wie Bücher.",
+      "Beschrifte jeden Beutel mit Inhalt und Datum.",
+      "Hänge eine kurze Liste des Inhalts an die Tür."
+     ],
+     "q": "Was ist das Älteste in deinem Gefrierfach?",
+     "c": "Prüfe eine Gefrierschublade, beschrifte Unmarkiertes und gruppiere Gleiches."
+    },
+    "es": {
+     "t": "Organizar el congelador",
+     "g": "Congela en plano, etiqueta y agrupa para ver lo congelado y comerlo.",
+     "p": [
+      "Congela sopas y salsas planas en bolsas para apilarlas como libros.",
+      "Etiqueta cada bolsa con el contenido y la fecha.",
+      "Pon una lista corta en la puerta con lo que hay dentro."
+     ],
+     "q": "¿Qué es lo más antiguo de tu congelador?",
+     "c": "Revisa un cajón del congelador, etiqueta lo que no lo esté y agrupa lo parecido."
+    },
+    "fr": {
+     "t": "Organiser le congélateur",
+     "g": "Congèle à plat, étiquette et groupe pour que les surgelés restent visibles et soient mangés.",
+     "p": [
+      "Congèle soupes et sauces à plat en sachets pour les empiler comme des livres.",
+      "Étiquette chaque sachet avec le contenu et la date.",
+      "Garde une courte liste sur la porte de ce qui est dedans."
+     ],
+     "q": "Quel est l'élément le plus ancien de ton congélateur ?",
+     "c": "Vérifie un tiroir du congélateur, étiquette ce qui ne l'est pas et groupe les produits similaires."
+    },
+    "it": {
+     "t": "Organizzare il freezer",
+     "g": "Congela in piano, etichetta e raggruppa perché i surgelati restino visibili e vengano mangiati.",
+     "p": [
+      "Congela zuppe e salse in piano nei sacchetti, si impilano come libri.",
+      "Etichetta ogni sacchetto con contenuto e data.",
+      "Tieni una breve lista sullo sportello di ciò che c'è dentro."
+     ],
+     "q": "Qual è la cosa più vecchia nel tuo freezer?",
+     "c": "Controlla un cassetto del freezer, etichetta ciò che non lo è e raggruppa le cose simili."
+    },
+    "pt": {
+     "t": "Organizar o congelador",
+     "g": "Congela na horizontal, etiqueta e agrupa para o congelado ficar visível e ser comido.",
+     "p": [
+      "Congela sopas e molhos planos em sacos para empilhar como livros.",
+      "Etiqueta cada saco com o conteúdo e a data.",
+      "Deixa uma lista curta na porta com o que está lá dentro."
+     ],
+     "q": "Qual é a coisa mais antiga no teu congelador?",
+     "c": "Verifica uma gaveta do congelador, etiqueta o que não tem etiqueta e agrupa o que é parecido."
+    },
+    "pt_BR": {
+     "t": "Organizando o freezer",
+     "g": "Congele na horizontal, etiquete e agrupe para o congelado ficar visível e ser consumido.",
+     "p": [
+      "Congele sopas e molhos planos em sacos para empilhar como livros.",
+      "Etiquete cada saco com o conteúdo e a data.",
+      "Deixe uma lista curta na porta com o que está lá dentro."
+     ],
+     "q": "Qual é a coisa mais antiga no seu freezer?",
+     "c": "Confira uma gaveta do freezer, etiquete o que está sem etiqueta e agrupe o que é parecido."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Snack station",
+     "g": "A shelf or basket of portioned snacks, easy to grab and easy to refill.",
+     "p": [
+      "Dedicate one low shelf, basket or drawer to snacks.",
+      "Portion them into small containers or bags in advance.",
+      "Include fruit or nuts so the grab-and-go choice is a good one."
+     ],
+     "q": "What snacks do you and your family reach for most?",
+     "c": "Create a small snack basket and fill it with three favourites."
+    },
+    "de": {
+     "t": "Snack-Station",
+     "g": "Ein Regal oder Korb mit portionierten Snacks, leicht zu greifen und leicht aufzufüllen.",
+     "p": [
+      "Widme einem niedrigen Regal, Korb oder einer Schublade den Snacks.",
+      "Portioniere sie vorher in kleine Dosen oder Beutel.",
+      "Nimm Obst oder Nüsse dazu, damit die Griffbereit-Wahl eine gute ist."
+     ],
+     "q": "Nach welchen Snacks greifen du und deine Familie am häufigsten?",
+     "c": "Richte einen kleinen Snackkorb ein und fülle ihn mit drei Lieblingen."
+    },
+    "es": {
+     "t": "Zona de snacks",
+     "g": "Una balda o cesta de snacks en porciones, fácil de coger y de reponer.",
+     "p": [
+      "Dedica una balda baja, cesta o cajón a los snacks.",
+      "Prepáralos antes en pequeños recipientes o bolsas.",
+      "Incluye fruta o frutos secos para que lo que se coja sea una buena opción."
+     ],
+     "q": "¿Qué snacks suelen coger tú y tu familia?",
+     "c": "Crea una cestita de snacks y llénala con tres favoritos."
+    },
+    "fr": {
+     "t": "Un coin en-cas",
+     "g": "Une étagère ou un panier d'en-cas en portions, faciles à prendre et à remplir.",
+     "p": [
+      "Dédie une étagère basse, un panier ou un tiroir aux en-cas.",
+      "Prépare des portions à l'avance dans de petites boîtes ou sachets.",
+      "Ajoute des fruits ou des noix pour que le choix rapide soit un bon choix."
+     ],
+     "q": "Quels en-cas toi et ta famille prenez-vous le plus ?",
+     "c": "Crée un petit panier d'en-cas et remplis-le avec trois favoris."
+    },
+    "it": {
+     "t": "Angolo degli snack",
+     "g": "Un ripiano o cesto di snack in porzioni, facili da prendere e da rifornire.",
+     "p": [
+      "Dedica un ripiano basso, un cesto o un cassetto agli snack.",
+      "Preparali prima in porzioni, in piccoli contenitori o sacchetti.",
+      "Includi frutta o noci, così la scelta al volo è buona."
+     ],
+     "q": "Quali snack prendete più spesso tu e la tua famiglia?",
+     "c": "Crea un cestino di snack e riempilo con tre preferiti."
+    },
+    "pt": {
+     "t": "Cantinho dos snacks",
+     "g": "Uma prateleira ou cesto de snacks em porções, fáceis de apanhar e de repor.",
+     "p": [
+      "Dedica uma prateleira baixa, cesto ou gaveta aos snacks.",
+      "Faz as porções antes, em pequenas caixas ou sacos.",
+      "Inclui fruta ou frutos secos para a escolha rápida ser boa."
+     ],
+     "q": "Que snacks costumam apanhar tu e a tua família?",
+     "c": "Cria um cestinho de snacks e enche-o com três favoritos."
+    },
+    "pt_BR": {
+     "t": "Cantinho dos lanches",
+     "g": "Uma prateleira ou cesto de lanches em porções, fáceis de pegar e de repor.",
+     "p": [
+      "Dedique uma prateleira baixa, cesto ou gaveta aos lanches.",
+      "Faça as porções antes, em pequenos potes ou saquinhos.",
+      "Inclua fruta ou castanhas para a escolha rápida ser boa."
+     ],
+     "q": "Que lanches você e sua família mais pegam?",
+     "c": "Crie uma cestinha de lanches e encha com três favoritos."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lunch box and bottle corner",
+     "g": "Keep lunch containers, bottles and lids together for faster mornings.",
+     "p": [
+      "Dedicate one drawer or shelf to lunch boxes, bottles and lids.",
+      "Store bottles and lids separately to let them air-dry.",
+      "Keep a small kit nearby: napkins, cutlery and an ice pack."
+     ],
+     "q": "How smoothly does your lunch preparation go?",
+     "c": "Match every lunch box and bottle with its lid and store them together."
+    },
+    "de": {
+     "t": "Brotdosen- und Flaschenecke",
+     "g": "Halte Brotdosen, Flaschen und Deckel zusammen für schnellere Morgen.",
+     "p": [
+      "Widme eine Schublade oder ein Regal Brotdosen, Flaschen und Deckeln.",
+      "Lagere Flaschen und Deckel getrennt, damit sie lufttrocknen.",
+      "Halte ein kleines Set bereit: Servietten, Besteck und ein Kühlakku."
+     ],
+     "q": "Wie reibungslos läuft dein Pausenbrot-Vorbereiten?",
+     "c": "Ordne jeder Brotdose und Flasche ihren Deckel zu und lagere sie zusammen."
+    },
+    "es": {
+     "t": "Rincón de fiambreras y botellas",
+     "g": "Guarda juntas fiambreras, botellas y tapas para mañanas más rápidas.",
+     "p": [
+      "Dedica un cajón o balda a fiambreras, botellas y tapas.",
+      "Guarda botellas y tapas por separado para que se sequen al aire.",
+      "Ten cerca un pequeño kit: servilletas, cubiertos y un acumulador de frío."
+     ],
+     "q": "¿Qué tal te va preparando la comida de cada día?",
+     "c": "Empareja cada fiambrera y botella con su tapa y guárdalas juntas."
+    },
+    "fr": {
+     "t": "Coin boîtes à repas et gourdes",
+     "g": "Garde boîtes, gourdes et couvercles ensemble pour des matins plus rapides.",
+     "p": [
+      "Dédie un tiroir ou une étagère aux boîtes, gourdes et couvercles.",
+      "Range gourdes et couvercles séparément pour qu'ils sèchent à l'air.",
+      "Garde un petit kit à portée : serviettes, couverts et un pain de glace."
+     ],
+     "q": "Comment se passe la préparation de ton déjeuner ?",
+     "c": "Associe chaque boîte et gourde à son couvercle et range-les ensemble."
+    },
+    "it": {
+     "t": "Angolo di schiscette e borracce",
+     "g": "Tieni insieme schiscette, borracce e coperchi per mattine più rapide.",
+     "p": [
+      "Dedica un cassetto o un ripiano a schiscette, borracce e coperchi.",
+      "Riponi borracce e coperchi separati perché si asciughino all'aria.",
+      "Tieni vicino un piccolo kit: tovaglioli, posate e un panetto del freddo."
+     ],
+     "q": "Come va la preparazione del tuo pranzo?",
+     "c": "Abbina ogni schiscetta e borraccia al suo coperchio e riponile insieme."
+    },
+    "pt": {
+     "t": "Cantinho das marmitas e garrafas",
+     "g": "Guarda marmitas, garrafas e tampas juntas para manhãs mais rápidas.",
+     "p": [
+      "Dedica uma gaveta ou prateleira a marmitas, garrafas e tampas.",
+      "Guarda garrafas e tampas separadas para secarem ao ar.",
+      "Tem um pequeno kit por perto: guardanapos, talheres e um gelo."
+     ],
+     "q": "Como corre a preparação do teu almoço?",
+     "c": "Faz corresponder cada marmita e garrafa à sua tampa e guarda-as juntas."
+    },
+    "pt_BR": {
+     "t": "Cantinho das marmitas e garrafas",
+     "g": "Guarde marmitas, garrafas e tampas juntas para manhãs mais rápidas.",
+     "p": [
+      "Dedique uma gaveta ou prateleira a marmitas, garrafas e tampas.",
+      "Guarde garrafas e tampas separadas para secarem ao ar.",
+      "Tenha um pequeno kit por perto: guardanapos, talheres e um gelo reutilizável."
+     ],
+     "q": "Como anda a preparação do seu almoço?",
+     "c": "Combine cada marmita e garrafa com sua tampa e guarde juntas."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Small kitchen, smart storage",
+     "g": "Rails, magnetic strips and door racks turn tiny kitchens into efficient ones.",
+     "p": [
+      "Hang frequently used tools on a rail above the counter.",
+      "A magnetic strip holds knives safely out of reach of children.",
+      "Door racks and risers use the dead space inside cupboards."
+     ],
+     "q": "What is the biggest space problem in your kitchen?",
+     "c": "Pick one wall or door in your kitchen and plan what could hang there."
+    },
+    "de": {
+     "t": "Kleine Küche, clevere Ordnung",
+     "g": "Reling, Magnetleiste und Türregal machen aus kleinen Küchen effiziente.",
+     "p": [
+      "Hänge oft genutzte Werkzeuge an eine Reling über der Arbeitsplatte.",
+      "Eine Magnetleiste hält Messer sicher außerhalb der Reichweite von Kindern.",
+      "Türregale und Einsätze nutzen den toten Raum in Schränken."
+     ],
+     "q": "Was ist das größte Platzproblem in deiner Küche?",
+     "c": "Wähle eine Wand oder Tür in deiner Küche und plane, was dort hängen könnte."
+    },
+    "es": {
+     "t": "Cocina pequeña, almacenaje listo",
+     "g": "Barras, tiras magnéticas y estantes de puerta vuelven eficientes las cocinas pequeñas.",
+     "p": [
+      "Cuelga las herramientas de uso frecuente en una barra sobre la encimera.",
+      "Una tira magnética sujeta los cuchillos lejos del alcance de los niños.",
+      "Los estantes de puerta y los elevadores aprovechan el espacio muerto de los armarios."
+     ],
+     "q": "¿Cuál es el mayor problema de espacio de tu cocina?",
+     "c": "Elige una pared o puerta de tu cocina y planea qué podría colgar allí."
+    },
+    "fr": {
+     "t": "Petite cuisine, rangement malin",
+     "g": "Barres, bandes aimantées et étagères de porte rendent efficaces les petites cuisines.",
+     "p": [
+      "Suspends les outils fréquents à une barre au-dessus du plan de travail.",
+      "Une bande aimantée tient les couteaux en sécurité, hors de portée des enfants.",
+      "Étagères de porte et rehausseurs exploitent l'espace perdu des placards."
+     ],
+     "q": "Quel est le plus gros problème d'espace de ta cuisine ?",
+     "c": "Choisis un mur ou une porte de ta cuisine et imagine ce qui pourrait y être suspendu."
+    },
+    "it": {
+     "t": "Cucina piccola, spazio furbo",
+     "g": "Barre, strisce magnetiche e mensole da anta rendono efficienti le cucine piccole.",
+     "p": [
+      "Appendi gli strumenti usati spesso a una barra sopra il piano.",
+      "Una striscia magnetica tiene i coltelli al sicuro, fuori dalla portata dei bambini.",
+      "Mensole da anta e rialzi sfruttano lo spazio morto dentro i mobili."
+     ],
+     "q": "Qual è il problema di spazio più grande della tua cucina?",
+     "c": "Scegli una parete o un'anta della cucina e pianifica cosa potrebbe appendersi lì."
+    },
+    "pt": {
+     "t": "Cozinha pequena, arrumação inteligente",
+     "g": "Barras, tiras magnéticas e prateleiras de porta tornam eficientes as cozinhas pequenas.",
+     "p": [
+      "Pendura os utensílios mais usados numa barra sobre a bancada.",
+      "Uma tira magnética mantém as facas seguras, fora do alcance das crianças.",
+      "Prateleiras de porta e elevadores aproveitam o espaço morto dos armários."
+     ],
+     "q": "Qual é o maior problema de espaço da tua cozinha?",
+     "c": "Escolhe uma parede ou porta da tua cozinha e planeia o que podia ficar pendurado lá."
+    },
+    "pt_BR": {
+     "t": "Cozinha pequena, armazenamento esperto",
+     "g": "Barras, tiras magnéticas e prateleiras de porta tornam eficientes as cozinhas pequenas.",
+     "p": [
+      "Pendure os utensílios mais usados numa barra sobre a bancada.",
+      "Uma tira magnética mantém as facas seguras, fora do alcance das crianças.",
+      "Prateleiras de porta e elevadores aproveitam o espaço morto dos armários."
+     ],
+     "q": "Qual é o maior problema de espaço da sua cozinha?",
+     "c": "Escolha uma parede ou porta da sua cozinha e planeje o que poderia ficar pendurado ali."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kitchen cleaning caddy",
+     "g": "One portable kit with the basics so quick cleaning needs no search.",
+     "p": [
+      "Fill a caddy with a cloth, a sponge, a brush and one all-purpose cleaner.",
+      "Keep products in their original bottles, and never mix them.",
+      "Store it under the sink or on a high shelf, away from children and pets."
+     ],
+     "q": "What do you reach for most when cleaning the kitchen?",
+     "c": "Assemble a small cleaning caddy and place it where you can grab it quickly."
+    },
+    "de": {
+     "t": "Putzeimer für die Küche",
+     "g": "Ein tragbares Set mit dem Nötigsten, damit schnelles Putzen kein Suchen braucht.",
+     "p": [
+      "Fülle einen Korb mit Tuch, Schwamm, Bürste und einem Allzweckreiniger.",
+      "Lasse Produkte in den Originalflaschen und mische sie nie.",
+      "Lagere ihn unter der Spüle oder hoch, fern von Kindern und Haustieren."
+     ],
+     "q": "Wonach greifst du beim Küchenputzen am meisten?",
+     "c": "Stelle einen kleinen Putzkorb zusammen und stelle ihn griffbereit hin."
+    },
+    "es": {
+     "t": "Cesta de limpieza de la cocina",
+     "g": "Un kit portátil con lo básico para limpiar rápido sin buscar nada.",
+     "p": [
+      "Llena una cesta con un paño, una esponja, un cepillo y un limpiador multiusos.",
+      "Deja los productos en sus envases originales y nunca los mezcles.",
+      "Guárdala bajo el fregadero o en una balda alta, lejos de niños y mascotas."
+     ],
+     "q": "¿Qué usas más al limpiar la cocina?",
+     "c": "Prepara una pequeña cesta de limpieza y colócala donde la alcances rápido."
+    },
+    "fr": {
+     "t": "Panier de nettoyage pour la cuisine",
+     "g": "Un kit portable avec l'essentiel pour nettoyer vite sans chercher.",
+     "p": [
+      "Remplis un panier avec un chiffon, une éponge, une brosse et un nettoyant multi-usage.",
+      "Garde les produits dans leurs flacons d'origine et ne les mélange jamais.",
+      "Range-le sous l'évier ou sur une étagère haute, hors de portée des enfants et animaux."
+     ],
+     "q": "Qu'utilises-tu le plus pour nettoyer la cuisine ?",
+     "c": "Prépare un petit panier de nettoyage et place-le à portée de main."
+    },
+    "it": {
+     "t": "Cestino per pulire la cucina",
+     "g": "Un kit portatile con l'essenziale per pulire in fretta senza cercare.",
+     "p": [
+      "Riempi un cestino con un panno, una spugna, uno spazzolino e un detergente multiuso.",
+      "Tieni i prodotti nei flaconi originali e non mescolarli mai.",
+      "Riponilo sotto il lavello o su un ripiano alto, lontano da bambini e animali."
+     ],
+     "q": "Cosa usi di più per pulire la cucina?",
+     "c": "Prepara un piccolo cestino per le pulizie e mettilo dove lo prendi in fretta."
+    },
+    "pt": {
+     "t": "Cesto de limpeza da cozinha",
+     "g": "Um kit portátil com o básico para limpar depressa sem procurar.",
+     "p": [
+      "Enche um cesto com um pano, uma esponja, uma escova e um detergente multiusos.",
+      "Mantém os produtos nas embalagens originais e nunca os mistures.",
+      "Guarda-o debaixo do lava-loiça ou numa prateleira alta, longe de crianças e animais."
+     ],
+     "q": "O que mais usas para limpar a cozinha?",
+     "c": "Monta um pequeno cesto de limpeza e põe-no onde o apanhes depressa."
+    },
+    "pt_BR": {
+     "t": "Cesto de limpeza da cozinha",
+     "g": "Um kit portátil com o básico para limpar rápido sem procurar.",
+     "p": [
+      "Encha um cesto com um pano, uma esponja, uma escova e um limpador multiuso.",
+      "Mantenha os produtos nas embalagens originais e nunca misture.",
+      "Guarde embaixo da pia ou numa prateleira alta, longe de crianças e animais."
+     ],
+     "q": "O que você mais usa para limpar a cozinha?",
+     "c": "Monte um pequeno cesto de limpeza e coloque onde você pegue rápido."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cookbooks and recipes",
+     "g": "Organise books, printed recipes and saved favourites so you actually cook from them.",
+     "p": [
+      "Keep your favourite cookbooks in the kitchen and others elsewhere.",
+      "Put printed recipes in a folder or use dividers by type of meal.",
+      "Save digital favourites in one folder or list, not scattered around."
+     ],
+     "q": "Which three recipes do you cook again and again?",
+     "c": "Pick your top five recipes and put them somewhere you see them."
+    },
+    "de": {
+     "t": "Kochbücher und Rezepte",
+     "g": "Ordne Bücher, gedruckte Rezepte und gespeicherte Favoriten, damit du wirklich daraus kochst.",
+     "p": [
+      "Behalte deine Lieblingskochbücher in der Küche, andere anderswo.",
+      "Sammle gedruckte Rezepte in einem Ordner mit Trennblättern nach Gerichtart.",
+      "Speichere digitale Favoriten an einem Ort, nicht verstreut."
+     ],
+     "q": "Welche drei Rezepte kochst du immer wieder?",
+     "c": "Wähle deine fünf liebsten Rezepte und lege sie dorthin, wo du sie siehst."
+    },
+    "es": {
+     "t": "Libros de cocina y recetas",
+     "g": "Ordena libros, recetas impresas y favoritas guardadas para cocinar de verdad con ellas.",
+     "p": [
+      "Deja tus libros de cocina favoritos en la cocina y los demás en otro sitio.",
+      "Guarda las recetas impresas en una carpeta con separadores por tipo de comida.",
+      "Guarda las favoritas digitales en una carpeta o lista, no dispersas."
+     ],
+     "q": "¿Qué tres recetas cocinas una y otra vez?",
+     "c": "Elige tus cinco mejores recetas y ponlas donde las veas."
+    },
+    "fr": {
+     "t": "Livres de cuisine et recettes",
+     "g": "Organise livres, recettes imprimées et favoris pour vraiment cuisiner avec.",
+     "p": [
+      "Garde tes livres de cuisine préférés dans la cuisine et les autres ailleurs.",
+      "Mets les recettes imprimées dans un classeur avec des intercalaires par type de repas.",
+      "Enregistre tes favoris numériques dans un seul dossier ou une liste, pas éparpillés."
+     ],
+     "q": "Quelles trois recettes cuisines-tu encore et encore ?",
+     "c": "Choisis tes cinq meilleures recettes et mets-les là où tu les vois."
+    },
+    "it": {
+     "t": "Libri di cucina e ricette",
+     "g": "Organizza libri, ricette stampate e preferite salvate per cucinare davvero con loro.",
+     "p": [
+      "Tieni i libri di cucina preferiti in cucina e gli altri altrove.",
+      "Metti le ricette stampate in una cartella con divisori per tipo di pasto.",
+      "Salva i preferiti digitali in una sola cartella o lista, non sparsi."
+     ],
+     "q": "Quali tre ricette cucini sempre di nuovo?",
+     "c": "Scegli le tue cinque migliori ricette e mettile dove le vedi."
+    },
+    "pt": {
+     "t": "Livros de cozinha e receitas",
+     "g": "Organiza livros, receitas impressas e favoritas guardadas para cozinhares mesmo com elas.",
+     "p": [
+      "Deixa os teus livros de cozinha favoritos na cozinha e os outros noutro sítio.",
+      "Põe as receitas impressas numa pasta com separadores por tipo de refeição.",
+      "Guarda os favoritos digitais numa só pasta ou lista, não espalhados."
+     ],
+     "q": "Que três receitas cozinhas uma e outra vez?",
+     "c": "Escolhe as tuas cinco melhores receitas e põe-nas onde as vejas."
+    },
+    "pt_BR": {
+     "t": "Livros de culinária e receitas",
+     "g": "Organize livros, receitas impressas e favoritas salvas para cozinhar mesmo com elas.",
+     "p": [
+      "Deixe seus livros de culinária favoritos na cozinha e os outros em outro lugar.",
+      "Coloque as receitas impressas numa pasta com divisórias por tipo de refeição.",
+      "Salve os favoritos digitais numa só pasta ou lista, não espalhados."
+     ],
+     "q": "Que três receitas você cozinha de novo e de novo?",
+     "c": "Escolha suas cinco melhores receitas e coloque onde você veja."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Coffee and tea corner",
+     "g": "Group cups, beans, tea and tools into one tidy, inviting station.",
+     "p": [
+      "Use a tray or a small shelf to hold everything for hot drinks.",
+      "Keep cups, tea, coffee, sugar and spoons within one arm's reach.",
+      "Add a small cloth to wipe spills so the corner always looks inviting."
+     ],
+     "q": "How do you like to start your day with a warm drink?",
+     "c": "Gather everything for your hot drinks into one tidy spot today."
+    },
+    "de": {
+     "t": "Kaffee- und Teeecke",
+     "g": "Gruppiere Tassen, Bohnen, Tee und Zubehör zu einer ordentlichen, einladenden Station.",
+     "p": [
+      "Nimm ein Tablett oder kleines Regal für alles, was zu Heißgetränken gehört.",
+      "Halte Tassen, Tee, Kaffee, Zucker und Löffel in einer Armlänge bereit.",
+      "Ein kleines Tuch für Verschüttetes lässt die Ecke immer einladend aussehen."
+     ],
+     "q": "Wie startest du gern mit einem warmen Getränk in den Tag?",
+     "c": "Sammle heute alles für deine Heißgetränke an einem ordentlichen Platz."
+    },
+    "es": {
+     "t": "Rincón del café y el té",
+     "g": "Agrupa tazas, café, té y utensilios en una estación ordenada y acogedora.",
+     "p": [
+      "Usa una bandeja o una balda pequeña para todo lo de las bebidas calientes.",
+      "Ten tazas, té, café, azúcar y cucharas a un brazo de distancia.",
+      "Añade un paño pequeño para limpiar derrames y que el rincón siempre sea acogedor."
+     ],
+     "q": "¿Cómo te gusta empezar el día con una bebida caliente?",
+     "c": "Reúne hoy todo para tus bebidas calientes en un rincón ordenado."
+    },
+    "fr": {
+     "t": "Coin café et thé",
+     "g": "Groupe tasses, café, thé et accessoires en un coin soigné et accueillant.",
+     "p": [
+      "Utilise un plateau ou une petite étagère pour tout ce qui sert aux boissons chaudes.",
+      "Garde tasses, thé, café, sucre et cuillères à portée de bras.",
+      "Ajoute un petit chiffon pour essuyer les gouttes et garder le coin accueillant."
+     ],
+     "q": "Comment aimes-tu commencer ta journée avec une boisson chaude ?",
+     "c": "Rassemble aujourd'hui tout pour tes boissons chaudes dans un coin soigné."
+    },
+    "it": {
+     "t": "Angolo caffè e tè",
+     "g": "Raggruppa tazze, caffè, tè e accessori in una postazione ordinata e accogliente.",
+     "p": [
+      "Usa un vassoio o un piccolo ripiano per tutto ciò che serve per le bevande calde.",
+      "Tieni tazze, tè, caffè, zucchero e cucchiaini a un braccio di distanza.",
+      "Aggiungi un panno piccolo per asciugare le gocce e tenere l'angolo accogliente."
+     ],
+     "q": "Come ti piace iniziare la giornata con una bevanda calda?",
+     "c": "Raccogli oggi tutto per le tue bevande calde in un punto ordinato."
+    },
+    "pt": {
+     "t": "Cantinho do café e do chá",
+     "g": "Agrupa chávenas, café, chá e utensílios numa estação arrumada e acolhedora.",
+     "p": [
+      "Usa um tabuleiro ou prateleira pequena para tudo o que serve às bebidas quentes.",
+      "Tem chávenas, chá, café, açúcar e colheres à distância de um braço.",
+      "Junta um pano pequeno para limpar pingos e o canto parecer sempre acolhedor."
+     ],
+     "q": "Como gostas de começar o dia com uma bebida quente?",
+     "c": "Reúne hoje tudo para as tuas bebidas quentes num sítio arrumado."
+    },
+    "pt_BR": {
+     "t": "Cantinho do café e do chá",
+     "g": "Agrupe xícaras, café, chá e utensílios numa estação arrumada e aconchegante.",
+     "p": [
+      "Use uma bandeja ou prateleira pequena para tudo o que serve às bebidas quentes.",
+      "Tenha xícaras, chá, café, açúcar e colheres ao alcance do braço.",
+      "Junte um pano pequeno para limpar pingos e o canto parecer sempre aconchegante."
+     ],
+     "q": "Como você gosta de começar o dia com uma bebida quente?",
+     "c": "Reúna hoje tudo para suas bebidas quentes num lugar arrumado."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kitchen maintenance minutes",
+     "g": "Small weekly tasks like checking the fridge and wiping handles keep order effortless.",
+     "p": [
+      "Once a week, check the fridge for expired items and wipe the shelves.",
+      "Wipe handles, switches and the bin lid with a damp cloth.",
+      "Pick two or three tiny tasks and tie them to your weekly reset."
+     ],
+     "q": "Which small kitchen job would help you most each week?",
+     "c": "Do three tiny kitchen maintenance tasks today, each under two minutes."
+    },
+    "de": {
+     "t": "Küchen-Pflegeminuten",
+     "g": "Kleine Wochenaufgaben wie Kühlschrank prüfen und Griffe wischen halten die Ordnung mühelos.",
+     "p": [
+      "Prüfe einmal pro Woche den Kühlschrank auf Abgelaufenes und wische die Fächer.",
+      "Wische Griffe, Schalter und Mülleimerdeckel feucht ab.",
+      "Wähle zwei oder drei Mini-Aufgaben und knüpfe sie an deinen Wochen-Reset."
+     ],
+     "q": "Welche kleine Küchenaufgabe würde dir jede Woche am meisten helfen?",
+     "c": "Erledige heute drei Mini-Küchenaufgaben, jede unter zwei Minuten."
+    },
+    "es": {
+     "t": "Minutos de mantenimiento de la cocina",
+     "g": "Pequeñas tareas semanales como revisar la nevera y limpiar tiradores mantienen el orden sin esfuerzo.",
+     "p": [
+      "Una vez por semana, revisa la nevera por caducados y limpia las baldas.",
+      "Limpia tiradores, interruptores y la tapa del cubo con un paño húmedo.",
+      "Elige dos o tres tareas mínimas y únelas a tu reinicio semanal."
+     ],
+     "q": "¿Qué pequeña tarea de cocina te ayudaría más cada semana?",
+     "c": "Haz hoy tres tareas mínimas de cocina, cada una en menos de dos minutos."
+    },
+    "fr": {
+     "t": "Minutes d'entretien de la cuisine",
+     "g": "De petites tâches hebdomadaires, comme vérifier le frigo et essuyer les poignées, gardent l'ordre sans effort.",
+     "p": [
+      "Une fois par semaine, vérifie les produits périmés du frigo et essuie les clayettes.",
+      "Essuie poignées, interrupteurs et couvercle de poubelle avec un chiffon humide.",
+      "Choisis deux ou trois mini-tâches et associe-les à ta remise à zéro hebdomadaire."
+     ],
+     "q": "Quelle petite tâche de cuisine t'aiderait le plus chaque semaine ?",
+     "c": "Fais aujourd'hui trois mini-tâches de cuisine, chacune en moins de deux minutes."
+    },
+    "it": {
+     "t": "Minuti di manutenzione della cucina",
+     "g": "Piccoli compiti settimanali come controllare il frigo e pulire le maniglie mantengono l'ordine senza fatica.",
+     "p": [
+      "Una volta a settimana, controlla i prodotti scaduti nel frigo e pulisci i ripiani.",
+      "Pulisci maniglie, interruttori e coperchio del bidone con un panno umido.",
+      "Scegli due o tre mini compiti e legali al tuo riordino settimanale."
+     ],
+     "q": "Quale piccolo compito in cucina ti aiuterebbe di più ogni settimana?",
+     "c": "Fai oggi tre mini compiti di cucina, ciascuno in meno di due minuti."
+    },
+    "pt": {
+     "t": "Minutos de manutenção da cozinha",
+     "g": "Pequenas tarefas semanais, como ver o frigorífico e limpar puxadores, mantêm a ordem sem esforço.",
+     "p": [
+      "Uma vez por semana, vê no frigorífico o que expirou e limpa as prateleiras.",
+      "Limpa puxadores, interruptores e a tampa do lixo com um pano húmido.",
+      "Escolhe duas ou três mini tarefas e liga-as ao teu reset semanal."
+     ],
+     "q": "Que pequena tarefa da cozinha mais te ajudaria cada semana?",
+     "c": "Faz hoje três mini tarefas da cozinha, cada uma em menos de dois minutos."
+    },
+    "pt_BR": {
+     "t": "Minutinhos de manutenção da cozinha",
+     "g": "Pequenas tarefas semanais, como conferir a geladeira e limpar puxadores, mantêm a ordem sem esforço.",
+     "p": [
+      "Uma vez por semana, veja na geladeira o que venceu e limpe as prateleiras.",
+      "Limpe puxadores, interruptores e a tampa do lixo com um pano úmido.",
+      "Escolha duas ou três mini tarefas e ligue ao seu reset semanal."
+     ],
+     "q": "Que pequena tarefa da cozinha mais te ajudaria toda semana?",
+     "c": "Faça hoje três mini tarefas da cozinha, cada uma em menos de dois minutos."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: the organised kitchen",
+     "g": "Revisit zones, fridge and pantry, and celebrate what works better now.",
+     "p": [
+      "Walk through your kitchen and notice what has changed in two months.",
+      "Check which new habit has stuck and which needs a gentle nudge.",
+      "Choose one thing to improve next, and enjoy what is already better."
+     ],
+     "q": "What change in your kitchen makes you happiest?",
+     "c": "Write down three kitchen wins and choose one small next step."
+    },
+    "de": {
+     "t": "Rückblick: die geordnete Küche",
+     "g": "Blicke auf Zonen, Kühlschrank und Vorrat zurück und feiere, was jetzt besser läuft.",
+     "p": [
+      "Geh durch deine Küche und sieh, was sich in zwei Monaten verändert hat.",
+      "Prüfe, welche neue Gewohnheit hält und welche einen sanften Schubs braucht.",
+      "Wähle eine Sache für das nächste Verbessern und freue dich über das schon Bessere."
+     ],
+     "q": "Welche Veränderung in deiner Küche macht dich am glücklichsten?",
+     "c": "Schreibe drei Küchenerfolge auf und wähle einen kleinen nächsten Schritt."
+    },
+    "es": {
+     "t": "Repaso: la cocina ordenada",
+     "g": "Repasa zonas, nevera y despensa y celebra lo que ahora funciona mejor.",
+     "p": [
+      "Recorre tu cocina y fíjate en qué ha cambiado en dos meses.",
+      "Mira qué hábito nuevo se ha asentado y cuál necesita un empujoncito.",
+      "Elige algo para mejorar a continuación y disfruta de lo que ya va mejor."
+     ],
+     "q": "¿Qué cambio de tu cocina te hace más feliz?",
+     "c": "Anota tres logros de la cocina y elige un pequeño paso siguiente."
+    },
+    "fr": {
+     "t": "Bilan : la cuisine rangée",
+     "g": "Reviens sur zones, frigo et garde-manger et fête ce qui marche mieux maintenant.",
+     "p": [
+      "Parcours ta cuisine et remarque ce qui a changé en deux mois.",
+      "Regarde quelle nouvelle habitude a tenu et laquelle a besoin d'un petit coup de pouce.",
+      "Choisis une chose à améliorer ensuite et savoure ce qui va déjà mieux."
+     ],
+     "q": "Quel changement dans ta cuisine te rend le plus heureux ?",
+     "c": "Note trois réussites de cuisine et choisis une petite prochaine étape."
+    },
+    "it": {
+     "t": "Ripasso: la cucina ordinata",
+     "g": "Rivedi zone, frigo e dispensa e festeggia ciò che ora funziona meglio.",
+     "p": [
+      "Passa per la tua cucina e nota cosa è cambiato in due mesi.",
+      "Guarda quale nuova abitudine ha tenuto e quale ha bisogno di una piccola spinta.",
+      "Scegli una cosa da migliorare dopo e goditi ciò che è già migliorato."
+     ],
+     "q": "Quale cambiamento nella tua cucina ti rende più felice?",
+     "c": "Scrivi tre successi della cucina e scegli un piccolo passo successivo."
+    },
+    "pt": {
+     "t": "Revisão: a cozinha organizada",
+     "g": "Revê zonas, frigorífico e despensa e celebra o que agora funciona melhor.",
+     "p": [
+      "Percorre a tua cozinha e repara no que mudou em dois meses.",
+      "Vê que hábito novo pegou e qual precisa de um empurrãozinho.",
+      "Escolhe uma coisa a melhorar a seguir e aproveita o que já está melhor."
+     ],
+     "q": "Que mudança na tua cozinha te deixa mais feliz?",
+     "c": "Escreve três vitórias da cozinha e escolhe um pequeno passo seguinte."
+    },
+    "pt_BR": {
+     "t": "Revisão: a cozinha organizada",
+     "g": "Reveja zonas, geladeira e despensa e comemore o que agora funciona melhor.",
+     "p": [
+      "Percorra sua cozinha e repare no que mudou em dois meses.",
+      "Veja que hábito novo pegou e qual precisa de um empurrãozinho.",
+      "Escolha uma coisa para melhorar em seguida e aproveite o que já está melhor."
+     ],
+     "q": "Que mudança na sua cozinha te deixa mais feliz?",
+     "c": "Escreva três conquistas da cozinha e escolha um pequeno próximo passo."
+    }
+   }
+  }
+ ]
+}

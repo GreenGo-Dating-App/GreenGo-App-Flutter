@@ -1,0 +1,835 @@
+{
+ "topic": "motivation",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mini review: mindset basics",
+     "g": "Recap small wins, self-talk and growth mindset with a quick reflection.",
+     "p": [
+      "Small wins and a done list make progress visible.",
+      "Kind self-talk and the word 'yet' keep you in the game.",
+      "Believing you can improve makes trying again easier."
+     ],
+     "q": "Which of these mindset tools would you like to use most this week?",
+     "c": "Write one kind sentence to yourself and put it somewhere visible."
+    },
+    "de": {
+     "t": "Mini-Wiederholung: Denkweise",
+     "g": "Kleine Erfolge, Selbstgespräche und Wachstumsdenken kurz reflektieren.",
+     "p": [
+      "Kleine Erfolge und eine Erledigt-Liste machen Fortschritt sichtbar.",
+      "Freundliche Selbstgespräche und das Wort 'noch' halten dich im Spiel.",
+      "Der Glaube an Verbesserung macht das erneute Versuchen leichter."
+     ],
+     "q": "Welches dieser Denkwerkzeuge möchtest du diese Woche am meisten nutzen?",
+     "c": "Schreib dir einen freundlichen Satz und platziere ihn sichtbar."
+    },
+    "es": {
+     "t": "Mini repaso: mentalidad básica",
+     "g": "Repasar pequeñas victorias, diálogo interno y mentalidad de crecimiento.",
+     "p": [
+      "Las pequeñas victorias y la lista de hecho hacen visible el progreso.",
+      "El diálogo amable y la palabra 'todavía' te mantienen en el juego.",
+      "Creer que puedes mejorar hace más fácil volver a intentarlo."
+     ],
+     "q": "¿Cuál de estas herramientas mentales quieres usar más esta semana?",
+     "c": "Escribe una frase amable para ti y ponla en un lugar visible."
+    },
+    "fr": {
+     "t": "Mini bilan : état d'esprit",
+     "g": "Revoir petites victoires, dialogue intérieur et état d'esprit de croissance.",
+     "p": [
+      "Les petites victoires et la liste du fait rendent le progrès visible.",
+      "Un dialogue bienveillant et le mot 'encore' te gardent dans le jeu.",
+      "Croire qu'on peut progresser rend plus facile de réessayer."
+     ],
+     "q": "Lequel de ces outils aimerais-tu le plus utiliser cette semaine ?",
+     "c": "Écris une phrase bienveillante pour toi et place-la en vue."
+    },
+    "it": {
+     "t": "Mini ripasso: mentalità di base",
+     "g": "Ripassare piccole vittorie, dialogo interiore e mentalità di crescita.",
+     "p": [
+      "Le piccole vittorie e la lista del fatto rendono visibile il progresso.",
+      "Un dialogo gentile e la parola 'ancora' ti tengono in gioco.",
+      "Credere di poter migliorare rende più facile riprovare."
+     ],
+     "q": "Quale di questi strumenti vorresti usare di più questa settimana?",
+     "c": "Scrivi una frase gentile per te e mettila in un posto visibile."
+    },
+    "pt": {
+     "t": "Mini revisão: mentalidade base",
+     "g": "Rever pequenas vitórias, diálogo interior e mentalidade de crescimento.",
+     "p": [
+      "As pequenas vitórias e a lista do que fizeste tornam o progresso visível.",
+      "O diálogo gentil e a palavra 'ainda' mantêm-te no jogo.",
+      "Acreditar que podes melhorar torna mais fácil tentar de novo."
+     ],
+     "q": "Qual destas ferramentas queres usar mais esta semana?",
+     "c": "Escreve uma frase gentil para ti e põe-na num sítio visível."
+    },
+    "pt_BR": {
+     "t": "Mini revisão: mentalidade básica",
+     "g": "Rever pequenas vitórias, diálogo interno e mentalidade de crescimento.",
+     "p": [
+      "Pequenas vitórias e a lista do feito tornam o progresso visível.",
+      "O diálogo gentil e a palavra 'ainda' mantêm você no jogo.",
+      "Acreditar que pode melhorar facilita tentar de novo."
+     ],
+     "q": "Qual dessas ferramentas você quer usar mais esta semana?",
+     "c": "Escreva uma frase gentil para você e coloque em um lugar visível."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What a habit is",
+     "g": "Understand cue, routine and reward: the simple loop behind automatic actions.",
+     "p": [
+      "A habit starts with a cue, like a time, place or feeling.",
+      "Then comes the routine, the action itself, and then a reward.",
+      "When the loop repeats, the action gets easier and more automatic."
+     ],
+     "q": "What is a habit you already have, and what is its cue?",
+     "c": "Spot one existing habit today and name its cue, routine and reward."
+    },
+    "de": {
+     "t": "Was eine Gewohnheit ist",
+     "g": "Auslöser, Routine und Belohnung verstehen: die einfache Schleife hinter Automatismen.",
+     "p": [
+      "Eine Gewohnheit beginnt mit einem Auslöser, etwa Zeit, Ort oder Gefühl.",
+      "Dann folgt die Routine, die Handlung selbst, und danach eine Belohnung.",
+      "Wiederholt sich die Schleife, wird die Handlung leichter und automatischer."
+     ],
+     "q": "Welche Gewohnheit hast du schon, und was ist ihr Auslöser?",
+     "c": "Erkenne heute eine bestehende Gewohnheit und benenne Auslöser, Routine und Belohnung."
+    },
+    "es": {
+     "t": "Qué es un hábito",
+     "g": "Entender señal, rutina y recompensa: el bucle sencillo tras lo automático.",
+     "p": [
+      "Un hábito empieza con una señal, como una hora, un lugar o una emoción.",
+      "Luego viene la rutina, la acción, y después una recompensa.",
+      "Al repetirse el bucle, la acción se vuelve más fácil y automática."
+     ],
+     "q": "¿Qué hábito ya tienes y cuál es su señal?",
+     "c": "Detecta hoy un hábito que ya tienes y nombra su señal, rutina y recompensa."
+    },
+    "fr": {
+     "t": "Ce qu'est une habitude",
+     "g": "Comprendre signal, routine et récompense : la boucle simple derrière l'automatique.",
+     "p": [
+      "Une habitude commence par un signal : une heure, un lieu, une émotion.",
+      "Vient ensuite la routine, l'action elle-même, puis une récompense.",
+      "Quand la boucle se répète, l'action devient plus facile et automatique."
+     ],
+     "q": "Quelle habitude as-tu déjà, et quel est son signal ?",
+     "c": "Repère aujourd'hui une habitude existante et nomme signal, routine et récompense."
+    },
+    "it": {
+     "t": "Cos'è un'abitudine",
+     "g": "Capire segnale, routine e ricompensa: il semplice ciclo dietro l'automatico.",
+     "p": [
+      "Un'abitudine inizia con un segnale, come un orario, un luogo o un'emozione.",
+      "Poi viene la routine, l'azione stessa, e infine una ricompensa.",
+      "Quando il ciclo si ripete, l'azione diventa più facile e automatica."
+     ],
+     "q": "Quale abitudine hai già e qual è il suo segnale?",
+     "c": "Individua oggi un'abitudine esistente e nomina segnale, routine e ricompensa."
+    },
+    "pt": {
+     "t": "O que é um hábito",
+     "g": "Perceber sinal, rotina e recompensa: o ciclo simples por trás do automático.",
+     "p": [
+      "Um hábito começa com um sinal, como uma hora, um lugar ou uma emoção.",
+      "Depois vem a rotina, a ação em si, e a seguir uma recompensa.",
+      "Quando o ciclo se repete, a ação fica mais fácil e automática."
+     ],
+     "q": "Que hábito já tens e qual é o seu sinal?",
+     "c": "Deteta hoje um hábito que já tens e nomeia o sinal, a rotina e a recompensa."
+    },
+    "pt_BR": {
+     "t": "O que é um hábito",
+     "g": "Entender sinal, rotina e recompensa: o ciclo simples por trás do automático.",
+     "p": [
+      "Um hábito começa com um sinal, como um horário, um lugar ou uma emoção.",
+      "Depois vem a rotina, a ação em si, e em seguida uma recompensa.",
+      "Quando o ciclo se repete, a ação fica mais fácil e automática."
+     ],
+     "q": "Que hábito você já tem e qual é o sinal dele?",
+     "c": "Identifique hoje um hábito que você já tem e nomeie sinal, rotina e recompensa."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Starting a tiny habit",
+     "g": "Choose a habit so easy you cannot say no, like one push-up or one page.",
+     "p": [
+      "Tiny habits are easy to start, so they do not rely on big motivation.",
+      "Once it is part of your day, you can grow it slowly.",
+      "Pick something that fits your health and abilities."
+     ],
+     "q": "What is a habit so small that you could do it even on your worst day?",
+     "c": "Choose your tiny habit and do it once today."
+    },
+    "de": {
+     "t": "Eine winzige Gewohnheit starten",
+     "g": "Eine Gewohnheit wählen, die so leicht ist, dass du nicht Nein sagst, etwa eine Seite lesen.",
+     "p": [
+      "Winzige Gewohnheiten sind leicht zu starten und brauchen keine große Motivation.",
+      "Gehört sie erst zum Alltag, kannst du sie langsam steigern.",
+      "Wähle etwas, das zu deiner Gesundheit und deinen Möglichkeiten passt."
+     ],
+     "q": "Welche Gewohnheit ist so klein, dass du sie auch am schlechtesten Tag schaffst?",
+     "c": "Wähle deine winzige Gewohnheit und mach sie heute einmal."
+    },
+    "es": {
+     "t": "Empezar un hábito diminuto",
+     "g": "Elegir un hábito tan fácil que no puedas decir no, como una página.",
+     "p": [
+      "Los hábitos diminutos son fáciles de empezar y no dependen de gran motivación.",
+      "Cuando ya forman parte de tu día, puedes hacerlos crecer poco a poco.",
+      "Elige algo que encaje con tu salud y tus posibilidades."
+     ],
+     "q": "¿Qué hábito es tan pequeño que podrías hacerlo incluso en tu peor día?",
+     "c": "Elige tu hábito diminuto y hazlo una vez hoy."
+    },
+    "fr": {
+     "t": "Démarrer une micro-habitude",
+     "g": "Choisir une habitude si facile qu'on ne peut pas dire non, comme une page.",
+     "p": [
+      "Les micro-habitudes sont faciles à lancer et ne dépendent pas d'une grande motivation.",
+      "Une fois intégrées à ta journée, tu peux les faire grandir doucement.",
+      "Choisis quelque chose qui convient à ta santé et à tes capacités."
+     ],
+     "q": "Quelle habitude est si petite que tu la ferais même le pire des jours ?",
+     "c": "Choisis ta micro-habitude et fais-la une fois aujourd'hui."
+    },
+    "it": {
+     "t": "Iniziare un'abitudine minuscola",
+     "g": "Scegliere un'abitudine così facile da non poter dire no, come una pagina.",
+     "p": [
+      "Le abitudini minuscole sono facili da iniziare e non dipendono da grande motivazione.",
+      "Quando fanno parte della giornata, puoi farle crescere piano piano.",
+      "Scegli qualcosa adatto alla tua salute e alle tue possibilità."
+     ],
+     "q": "Quale abitudine è così piccola da poterla fare anche nel giorno peggiore?",
+     "c": "Scegli la tua abitudine minuscola e falla una volta oggi."
+    },
+    "pt": {
+     "t": "Começar um hábito minúsculo",
+     "g": "Escolher um hábito tão fácil que não consegues dizer não, como uma página.",
+     "p": [
+      "Os hábitos minúsculos são fáceis de começar e não dependem de grande motivação.",
+      "Quando fazem parte do teu dia, podes fazê-los crescer aos poucos.",
+      "Escolhe algo que combine com a tua saúde e as tuas possibilidades."
+     ],
+     "q": "Que hábito é tão pequeno que o farias até no teu pior dia?",
+     "c": "Escolhe o teu hábito minúsculo e faz uma vez hoje."
+    },
+    "pt_BR": {
+     "t": "Começar um hábito minúsculo",
+     "g": "Escolher um hábito tão fácil que você não consegue dizer não, como uma página.",
+     "p": [
+      "Hábitos minúsculos são fáceis de começar e não dependem de grande motivação.",
+      "Quando fazem parte do seu dia, você pode fazê-los crescer aos poucos.",
+      "Escolha algo que combine com sua saúde e suas possibilidades."
+     ],
+     "q": "Que hábito é tão pequeno que você faria até no seu pior dia?",
+     "c": "Escolha seu hábito minúsculo e faça uma vez hoje."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Anchoring habits to routines",
+     "g": "Link a new habit to something you already do, like after morning coffee.",
+     "p": [
+      "An anchor is something you already do every day without thinking.",
+      "Use the pattern: after I do X, I will do my tiny habit.",
+      "The old routine becomes the reminder for the new one."
+     ],
+     "q": "What daily routine could be a good anchor for your tiny habit?",
+     "c": "Write your sentence: After I ..., I will ..., and try it today."
+    },
+    "de": {
+     "t": "Gewohnheiten verankern",
+     "g": "Eine neue Gewohnheit an etwas koppeln, das du schon tust, etwa nach dem Morgenkaffee.",
+     "p": [
+      "Ein Anker ist etwas, das du täglich ohne Nachdenken tust.",
+      "Nutze das Muster: Nachdem ich X tue, mache ich meine winzige Gewohnheit.",
+      "Die alte Routine wird zur Erinnerung an die neue."
+     ],
+     "q": "Welche Alltagsroutine wäre ein guter Anker für deine winzige Gewohnheit?",
+     "c": "Schreib deinen Satz: Nachdem ich ..., werde ich ..., und probier ihn heute."
+    },
+    "es": {
+     "t": "Anclar hábitos a rutinas",
+     "g": "Unir un hábito nuevo a algo que ya haces, como después del café de la mañana.",
+     "p": [
+      "Un ancla es algo que ya haces cada día sin pensar.",
+      "Usa el patrón: después de hacer X, haré mi hábito diminuto.",
+      "La rutina antigua se vuelve el recordatorio de la nueva."
+     ],
+     "q": "¿Qué rutina diaria sería un buen ancla para tu hábito diminuto?",
+     "c": "Escribe tu frase: Después de ..., haré ..., y pruébala hoy."
+    },
+    "fr": {
+     "t": "Ancrer ses habitudes dans des routines",
+     "g": "Relier une nouvelle habitude à quelque chose que tu fais déjà, comme après le café.",
+     "p": [
+      "Une ancre est quelque chose que tu fais déjà chaque jour sans y penser.",
+      "Utilise le schéma : après X, je fais ma micro-habitude.",
+      "L'ancienne routine devient le rappel de la nouvelle."
+     ],
+     "q": "Quelle routine quotidienne serait une bonne ancre pour ta micro-habitude ?",
+     "c": "Écris ta phrase : Après ..., je ferai ..., et essaie-la aujourd'hui."
+    },
+    "it": {
+     "t": "Ancorare le abitudini alle routine",
+     "g": "Collegare una nuova abitudine a qualcosa che fai già, come dopo il caffè.",
+     "p": [
+      "Un'àncora è qualcosa che fai già ogni giorno senza pensarci.",
+      "Usa lo schema: dopo aver fatto X, faccio la mia abitudine minuscola.",
+      "La vecchia routine diventa il promemoria della nuova."
+     ],
+     "q": "Quale routine quotidiana sarebbe una buona àncora per la tua abitudine?",
+     "c": "Scrivi la tua frase: Dopo ..., farò ..., e provala oggi."
+    },
+    "pt": {
+     "t": "Ancorar hábitos a rotinas",
+     "g": "Ligar um hábito novo a algo que já fazes, como depois do café da manhã.",
+     "p": [
+      "Uma âncora é algo que já fazes todos os dias sem pensar.",
+      "Usa o padrão: depois de fazer X, faço o meu hábito minúsculo.",
+      "A rotina antiga passa a ser o lembrete da nova."
+     ],
+     "q": "Que rotina diária seria uma boa âncora para o teu hábito minúsculo?",
+     "c": "Escreve a tua frase: Depois de ..., vou ..., e experimenta hoje."
+    },
+    "pt_BR": {
+     "t": "Ancorar hábitos em rotinas",
+     "g": "Ligar um hábito novo a algo que você já faz, como depois do café da manhã.",
+     "p": [
+      "Uma âncora é algo que você já faz todo dia sem pensar.",
+      "Use o padrão: depois de fazer X, faço meu hábito minúsculo.",
+      "A rotina antiga passa a ser o lembrete da nova."
+     ],
+     "q": "Que rotina diária seria uma boa âncora para o seu hábito minúsculo?",
+     "c": "Escreva sua frase: Depois de ..., vou ..., e experimente hoje."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Making habits visible",
+     "g": "Place reminders where you will see them: the book on the pillow, shoes by the door.",
+     "p": [
+      "What we see tends to get done; what is out of sight is easily forgotten.",
+      "Put the cue for your habit right where you will notice it.",
+      "A small visual reminder saves you from relying on memory."
+     ],
+     "q": "Where could you place a cue for your tiny habit so you cannot miss it?",
+     "c": "Set up one visual cue for your habit today, such as an object in your path."
+    },
+    "de": {
+     "t": "Gewohnheiten sichtbar machen",
+     "g": "Erinnerungen dorthin legen, wo du sie siehst: das Buch aufs Kissen, Schuhe an die Tür.",
+     "p": [
+      "Was wir sehen, wird eher getan; was außer Sicht ist, wird leicht vergessen.",
+      "Platziere den Auslöser deiner Gewohnheit dort, wo du ihn bemerkst.",
+      "Eine kleine sichtbare Erinnerung erspart dir, dich aufs Gedächtnis zu verlassen."
+     ],
+     "q": "Wo könntest du einen Auslöser für deine Gewohnheit platzieren, den du nicht übersiehst?",
+     "c": "Richte heute einen sichtbaren Auslöser ein, etwa einen Gegenstand in deinem Weg."
+    },
+    "es": {
+     "t": "Hacer visibles los hábitos",
+     "g": "Poner recordatorios donde los veas: el libro en la almohada, las zapatillas junto a la puerta.",
+     "p": [
+      "Lo que vemos tiende a hacerse; lo que no vemos se olvida fácil.",
+      "Pon la señal de tu hábito justo donde la notes.",
+      "Un pequeño recordatorio visual te ahorra depender de la memoria."
+     ],
+     "q": "¿Dónde podrías poner una señal para tu hábito diminuto que no puedas pasar por alto?",
+     "c": "Prepara hoy una señal visual para tu hábito, como un objeto en tu camino."
+    },
+    "fr": {
+     "t": "Rendre ses habitudes visibles",
+     "g": "Placer des rappels là où tu les verras : le livre sur l'oreiller, les chaussures près de la porte.",
+     "p": [
+      "Ce qu'on voit tend à se faire ; ce qui est hors de vue s'oublie facilement.",
+      "Mets le signal de ton habitude juste là où tu le remarqueras.",
+      "Un petit rappel visuel t'évite de compter sur ta mémoire."
+     ],
+     "q": "Où pourrais-tu placer un signal pour ta micro-habitude, impossible à rater ?",
+     "c": "Installe aujourd'hui un signal visuel pour ton habitude, comme un objet sur ton chemin."
+    },
+    "it": {
+     "t": "Rendere visibili le abitudini",
+     "g": "Mettere promemoria dove li vedrai: il libro sul cuscino, le scarpe vicino alla porta.",
+     "p": [
+      "Ciò che vediamo tende a essere fatto; ciò che non si vede si dimentica facilmente.",
+      "Metti il segnale della tua abitudine proprio dove lo noterai.",
+      "Un piccolo promemoria visivo ti evita di affidarti alla memoria."
+     ],
+     "q": "Dove potresti mettere un segnale per la tua abitudine che non puoi non vedere?",
+     "c": "Prepara oggi un segnale visivo per la tua abitudine, come un oggetto sul tuo percorso."
+    },
+    "pt": {
+     "t": "Tornar os hábitos visíveis",
+     "g": "Pôr lembretes onde os vejas: o livro na almofada, os ténis junto à porta.",
+     "p": [
+      "O que vemos tende a ser feito; o que está fora de vista esquece-se facilmente.",
+      "Põe o sinal do teu hábito mesmo onde o notes.",
+      "Um pequeno lembrete visual poupa-te de depender da memória."
+     ],
+     "q": "Onde podias pôr um sinal para o teu hábito minúsculo que não possas ignorar?",
+     "c": "Prepara hoje um sinal visual para o teu hábito, como um objeto no teu caminho."
+    },
+    "pt_BR": {
+     "t": "Tornar os hábitos visíveis",
+     "g": "Colocar lembretes onde você vai ver: o livro no travesseiro, o tênis junto à porta.",
+     "p": [
+      "O que vemos tende a ser feito; o que está fora de vista se esquece fácil.",
+      "Coloque o sinal do seu hábito bem onde você vai notar.",
+      "Um pequeno lembrete visual poupa você de depender da memória."
+     ],
+     "q": "Onde você poderia colocar um sinal para o seu hábito que não dê para ignorar?",
+     "c": "Prepare hoje um sinal visual para o seu hábito, como um objeto no seu caminho."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tracking habits simply",
+     "g": "Use ticks on a calendar and see why a chain of days feels motivating.",
+     "p": [
+      "A simple tick on a calendar shows your effort at a glance.",
+      "Seeing a chain of days makes you want to keep it going.",
+      "Keep tracking light: one mark, no complicated apps needed."
+     ],
+     "q": "How would you like to track your habit: paper calendar, notebook or phone?",
+     "c": "Make your tracker today and put the first tick on it."
+    },
+    "de": {
+     "t": "Gewohnheiten einfach verfolgen",
+     "g": "Mit Haken im Kalender sehen, warum eine Kette von Tagen motiviert.",
+     "p": [
+      "Ein einfacher Haken im Kalender zeigt deinen Einsatz auf einen Blick.",
+      "Eine Kette von Tagen macht Lust, sie weiterzuführen.",
+      "Halte das Verfolgen leicht: ein Strich, keine komplizierte App nötig."
+     ],
+     "q": "Wie möchtest du deine Gewohnheit verfolgen: Papierkalender, Notizbuch oder Handy?",
+     "c": "Erstelle heute deinen Tracker und mach den ersten Haken."
+    },
+    "es": {
+     "t": "Seguir hábitos de forma simple",
+     "g": "Usar marcas en un calendario y ver por qué una cadena de días motiva.",
+     "p": [
+      "Una simple marca en el calendario muestra tu esfuerzo de un vistazo.",
+      "Ver una cadena de días te dan ganas de mantenerla.",
+      "Mantén el seguimiento ligero: una marca, sin apps complicadas."
+     ],
+     "q": "¿Cómo te gustaría seguir tu hábito: calendario de papel, libreta o móvil?",
+     "c": "Prepara hoy tu registro y pon la primera marca."
+    },
+    "fr": {
+     "t": "Suivre ses habitudes simplement",
+     "g": "Utiliser des croix sur un calendrier et voir pourquoi une chaîne de jours motive.",
+     "p": [
+      "Une simple croix sur un calendrier montre ton effort en un coup d'œil.",
+      "Voir une chaîne de jours donne envie de la continuer.",
+      "Garde le suivi léger : un trait, pas besoin d'appli compliquée."
+     ],
+     "q": "Comment aimerais-tu suivre ton habitude : calendrier papier, carnet ou téléphone ?",
+     "c": "Crée ton suivi aujourd'hui et coche le premier jour."
+    },
+    "it": {
+     "t": "Tracciare le abitudini in modo semplice",
+     "g": "Usare segni su un calendario e vedere perché una catena di giorni motiva.",
+     "p": [
+      "Un semplice segno sul calendario mostra il tuo impegno a colpo d'occhio.",
+      "Vedere una catena di giorni fa venire voglia di continuarla.",
+      "Tieni il tracciamento leggero: un segno, nessuna app complicata."
+     ],
+     "q": "Come ti piacerebbe tracciare la tua abitudine: calendario di carta, quaderno o telefono?",
+     "c": "Crea oggi il tuo tracciatore e metti il primo segno."
+    },
+    "pt": {
+     "t": "Acompanhar hábitos de forma simples",
+     "g": "Usar marcas num calendário e ver porque uma cadeia de dias motiva.",
+     "p": [
+      "Uma simples marca no calendário mostra o teu esforço num relance.",
+      "Ver uma cadeia de dias dá vontade de a manter.",
+      "Mantém o registo leve: uma marca, sem aplicações complicadas."
+     ],
+     "q": "Como gostarias de acompanhar o teu hábito: calendário de papel, caderno ou telemóvel?",
+     "c": "Cria hoje o teu registo e faz a primeira marca."
+    },
+    "pt_BR": {
+     "t": "Acompanhar hábitos de forma simples",
+     "g": "Usar marcas em um calendário e ver por que uma corrente de dias motiva.",
+     "p": [
+      "Uma simples marca no calendário mostra seu esforço num relance.",
+      "Ver uma corrente de dias dá vontade de mantê-la.",
+      "Mantenha o registro leve: uma marca, sem aplicativos complicados."
+     ],
+     "q": "Como você gostaria de acompanhar seu hábito: calendário de papel, caderno ou celular?",
+     "c": "Crie hoje seu registro e faça a primeira marca."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Missing a day is okay",
+     "g": "Learn why one missed day changes nothing, and the rule of never missing twice.",
+     "p": [
+      "Life happens, and one missed day does not erase your progress.",
+      "The helpful rule is: never miss twice in a row.",
+      "Getting back quickly matters more than being perfect."
+     ],
+     "q": "How do you usually react when you miss a day of something?",
+     "c": "Write your comeback sentence: If I miss a day, I will restart by ..."
+    },
+    "de": {
+     "t": "Ein verpasster Tag ist okay",
+     "g": "Lernen, warum ein verpasster Tag nichts ändert, und die Regel, nie zweimal auszulassen.",
+     "p": [
+      "Das Leben kommt dazwischen; ein verpasster Tag löscht deinen Fortschritt nicht.",
+      "Die hilfreiche Regel lautet: nie zweimal hintereinander auslassen.",
+      "Schnell wieder einsteigen zählt mehr als Perfektion."
+     ],
+     "q": "Wie reagierst du meistens, wenn du einen Tag auslässt?",
+     "c": "Schreib deinen Wiedereinstiegssatz: Wenn ich einen Tag verpasse, starte ich wieder mit ..."
+    },
+    "es": {
+     "t": "Fallar un día está bien",
+     "g": "Aprender por qué un día perdido no cambia nada y la regla de no fallar dos veces.",
+     "p": [
+      "La vida pasa, y un día perdido no borra tu progreso.",
+      "La regla útil es: nunca falles dos días seguidos.",
+      "Volver pronto importa más que ser perfecto."
+     ],
+     "q": "¿Cómo sueles reaccionar cuando te saltas un día de algo?",
+     "c": "Escribe tu frase de regreso: Si me salto un día, retomaré con ..."
+    },
+    "fr": {
+     "t": "Rater un jour, ce n'est pas grave",
+     "g": "Comprendre pourquoi un jour manqué ne change rien, et la règle de ne jamais rater deux fois.",
+     "p": [
+      "La vie arrive, et un jour manqué n'efface pas tes progrès.",
+      "La règle utile : ne jamais rater deux jours de suite.",
+      "Reprendre vite compte plus que d'être parfait."
+     ],
+     "q": "Comment réagis-tu d'habitude quand tu manques un jour ?",
+     "c": "Écris ta phrase de reprise : Si je rate un jour, je recommence par ..."
+    },
+    "it": {
+     "t": "Saltare un giorno va bene",
+     "g": "Capire perché un giorno saltato non cambia nulla, e la regola di non saltare due volte.",
+     "p": [
+      "La vita capita, e un giorno saltato non cancella i tuoi progressi.",
+      "La regola utile è: mai saltare due volte di fila.",
+      "Riprendere presto conta più dell'essere perfetti."
+     ],
+     "q": "Come reagisci di solito quando salti un giorno?",
+     "c": "Scrivi la tua frase di ripartenza: Se salto un giorno, riparto con ..."
+    },
+    "pt": {
+     "t": "Falhar um dia não faz mal",
+     "g": "Perceber porque um dia falhado não muda nada e a regra de nunca falhar duas vezes.",
+     "p": [
+      "A vida acontece, e um dia falhado não apaga o teu progresso.",
+      "A regra útil é: nunca falhar dois dias seguidos.",
+      "Voltar depressa importa mais do que ser perfeito."
+     ],
+     "q": "Como costumas reagir quando falhas um dia de algo?",
+     "c": "Escreve a tua frase de regresso: Se falhar um dia, recomeço com ..."
+    },
+    "pt_BR": {
+     "t": "Faltar um dia não tem problema",
+     "g": "Entender por que um dia perdido não muda nada e a regra de nunca faltar duas vezes.",
+     "p": [
+      "A vida acontece, e um dia perdido não apaga seu progresso.",
+      "A regra útil é: nunca faltar dois dias seguidos.",
+      "Voltar rápido importa mais do que ser perfeito."
+     ],
+     "q": "Como você costuma reagir quando perde um dia de algo?",
+     "c": "Escreva sua frase de volta: Se eu faltar um dia, recomeço com ..."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Habits for busy days",
+     "g": "Create a mini version of your habit for days when time or energy is low.",
+     "p": [
+      "On hard days, a tiny version keeps the habit alive.",
+      "Decide your mini version in advance so you do not have to think.",
+      "Doing less is better than doing nothing, and it protects your streak of trying."
+     ],
+     "q": "What would be the two-minute version of your habit?",
+     "c": "Define your mini version and use it on the busiest day this week."
+    },
+    "de": {
+     "t": "Gewohnheiten für volle Tage",
+     "g": "Eine Mini-Version deiner Gewohnheit für Tage mit wenig Zeit oder Energie entwickeln.",
+     "p": [
+      "An harten Tagen hält eine winzige Version die Gewohnheit am Leben.",
+      "Lege die Mini-Version vorher fest, damit du nicht nachdenken musst.",
+      "Weniger ist besser als nichts und schützt dein Dranbleiben."
+     ],
+     "q": "Was wäre die Zwei-Minuten-Version deiner Gewohnheit?",
+     "c": "Definiere deine Mini-Version und nutze sie am vollsten Tag dieser Woche."
+    },
+    "es": {
+     "t": "Hábitos para días ocupados",
+     "g": "Crear una versión mini de tu hábito para días de poco tiempo o energía.",
+     "p": [
+      "En los días duros, una versión diminuta mantiene vivo el hábito.",
+      "Decide tu versión mini de antemano para no tener que pensar.",
+      "Hacer menos es mejor que no hacer nada y protege tu constancia."
+     ],
+     "q": "¿Cuál sería la versión de dos minutos de tu hábito?",
+     "c": "Define tu versión mini y úsala el día más ocupado de esta semana."
+    },
+    "fr": {
+     "t": "Habitudes pour jours chargés",
+     "g": "Créer une version mini de ton habitude pour les jours de peu de temps ou d'énergie.",
+     "p": [
+      "Les jours difficiles, une version minuscule garde l'habitude en vie.",
+      "Décide ta version mini à l'avance pour ne pas avoir à réfléchir.",
+      "Faire moins vaut mieux que ne rien faire et protège ta constance."
+     ],
+     "q": "Quelle serait la version de deux minutes de ton habitude ?",
+     "c": "Définis ta version mini et utilise-la le jour le plus chargé de la semaine."
+    },
+    "it": {
+     "t": "Abitudini per giorni impegnati",
+     "g": "Creare una versione mini della tua abitudine per i giorni con poco tempo o energia.",
+     "p": [
+      "Nei giorni duri, una versione minuscola tiene viva l'abitudine.",
+      "Decidi in anticipo la versione mini, così non devi pensarci.",
+      "Fare meno è meglio che non fare nulla e protegge la tua costanza."
+     ],
+     "q": "Quale sarebbe la versione da due minuti della tua abitudine?",
+     "c": "Definisci la tua versione mini e usala nel giorno più pieno della settimana."
+    },
+    "pt": {
+     "t": "Hábitos para dias ocupados",
+     "g": "Criar uma versão mini do teu hábito para dias de pouco tempo ou energia.",
+     "p": [
+      "Nos dias difíceis, uma versão minúscula mantém o hábito vivo.",
+      "Decide a tua versão mini com antecedência para não teres de pensar.",
+      "Fazer menos é melhor do que não fazer nada e protege a tua constância."
+     ],
+     "q": "Qual seria a versão de dois minutos do teu hábito?",
+     "c": "Define a tua versão mini e usa-a no dia mais cheio desta semana."
+    },
+    "pt_BR": {
+     "t": "Hábitos para dias corridos",
+     "g": "Criar uma versão mini do seu hábito para dias de pouco tempo ou energia.",
+     "p": [
+      "Nos dias difíceis, uma versão minúscula mantém o hábito vivo.",
+      "Decida sua versão mini com antecedência para não precisar pensar.",
+      "Fazer menos é melhor do que não fazer nada e protege sua constância."
+     ],
+     "q": "Qual seria a versão de dois minutos do seu hábito?",
+     "c": "Defina sua versão mini e use no dia mais corrido desta semana."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rewarding yourself well",
+     "g": "Find small, healthy rewards that make good habits feel good.",
+     "p": [
+      "A reward right after a habit helps your brain link it with feeling good.",
+      "Rewards can be small: a song, a tea, a few quiet minutes.",
+      "Choose rewards that support your goals rather than undo them."
+     ],
+     "q": "What small reward would you honestly look forward to after your habit?",
+     "c": "Pick a reward and give it to yourself right after your habit today."
+    },
+    "de": {
+     "t": "Sich gut belohnen",
+     "g": "Kleine, gesunde Belohnungen finden, die gute Gewohnheiten schön machen.",
+     "p": [
+      "Eine Belohnung direkt nach der Gewohnheit verknüpft sie im Kopf mit Wohlgefühl.",
+      "Belohnungen dürfen klein sein: ein Lied, ein Tee, ein paar ruhige Minuten.",
+      "Wähle Belohnungen, die deine Ziele stützen, statt sie zu untergraben."
+     ],
+     "q": "Auf welche kleine Belohnung würdest du dich nach deiner Gewohnheit ehrlich freuen?",
+     "c": "Such dir eine Belohnung und gönne sie dir heute direkt nach deiner Gewohnheit."
+    },
+    "es": {
+     "t": "Recompensarte bien",
+     "g": "Encontrar recompensas pequeñas y sanas que hagan agradables los buenos hábitos.",
+     "p": [
+      "Una recompensa justo después del hábito ayuda a asociarlo con sentirte bien.",
+      "Las recompensas pueden ser pequeñas: una canción, un té, unos minutos de calma.",
+      "Elige recompensas que apoyen tus metas en vez de deshacerlas."
+     ],
+     "q": "¿Qué pequeña recompensa esperarías con ganas tras tu hábito?",
+     "c": "Elige una recompensa y date ese premio justo después de tu hábito hoy."
+    },
+    "fr": {
+     "t": "Bien se récompenser",
+     "g": "Trouver de petites récompenses saines qui rendent les bonnes habitudes agréables.",
+     "p": [
+      "Une récompense juste après l'habitude aide à l'associer au bien-être.",
+      "Les récompenses peuvent être petites : une chanson, un thé, quelques minutes calmes.",
+      "Choisis des récompenses qui soutiennent tes objectifs au lieu de les défaire."
+     ],
+     "q": "Quelle petite récompense attendrais-tu vraiment après ton habitude ?",
+     "c": "Choisis une récompense et offre-la-toi juste après ton habitude aujourd'hui."
+    },
+    "it": {
+     "t": "Premiarsi bene",
+     "g": "Trovare piccole ricompense sane che rendano piacevoli le buone abitudini.",
+     "p": [
+      "Una ricompensa subito dopo l'abitudine aiuta ad associarla al sentirsi bene.",
+      "Le ricompense possono essere piccole: una canzone, un tè, qualche minuto di calma.",
+      "Scegli ricompense che sostengano i tuoi obiettivi invece di disfarli."
+     ],
+     "q": "Quale piccola ricompensa aspetteresti con piacere dopo la tua abitudine?",
+     "c": "Scegli una ricompensa e regalatela subito dopo la tua abitudine oggi."
+    },
+    "pt": {
+     "t": "Recompensar-te bem",
+     "g": "Encontrar recompensas pequenas e saudáveis que tornem os bons hábitos agradáveis.",
+     "p": [
+      "Uma recompensa logo a seguir ao hábito ajuda a associá-lo a sentires-te bem.",
+      "As recompensas podem ser pequenas: uma canção, um chá, uns minutos de calma.",
+      "Escolhe recompensas que apoiem as tuas metas em vez de as desfazer."
+     ],
+     "q": "Que pequena recompensa esperarias com gosto depois do teu hábito?",
+     "c": "Escolhe uma recompensa e dá-te esse prémio logo a seguir ao teu hábito hoje."
+    },
+    "pt_BR": {
+     "t": "Se recompensar bem",
+     "g": "Encontrar recompensas pequenas e saudáveis que tornem os bons hábitos agradáveis.",
+     "p": [
+      "Uma recompensa logo depois do hábito ajuda a associá-lo a se sentir bem.",
+      "As recompensas podem ser pequenas: uma música, um chá, uns minutos de calma.",
+      "Escolha recompensas que apoiem suas metas em vez de desfazê-las."
+     ],
+     "q": "Que pequena recompensa você esperaria com gosto depois do seu hábito?",
+     "c": "Escolha uma recompensa e se dê esse prêmio logo depois do seu hábito hoje."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mini review: habit basics",
+     "g": "Recap the habit loop, tiny habits and tracking.",
+     "p": [
+      "A habit has a cue, a routine and a reward.",
+      "Tiny, anchored, visible habits are the easiest to keep.",
+      "Tracking and a comeback plan protect you when life gets busy."
+     ],
+     "q": "Which part of your habit is working best, and which needs a tweak?",
+     "c": "Review your tracker and adjust one thing: the cue, the size or the reward."
+    },
+    "de": {
+     "t": "Mini-Wiederholung: Gewohnheiten",
+     "g": "Gewohnheitsschleife, winzige Gewohnheiten und Verfolgen wiederholen.",
+     "p": [
+      "Eine Gewohnheit hat Auslöser, Routine und Belohnung.",
+      "Winzige, verankerte, sichtbare Gewohnheiten hält man am leichtesten durch.",
+      "Verfolgen und ein Wiedereinstiegsplan schützen dich, wenn es hektisch wird."
+     ],
+     "q": "Welcher Teil deiner Gewohnheit läuft am besten, welcher braucht eine Anpassung?",
+     "c": "Sieh deinen Tracker an und ändere eins: Auslöser, Größe oder Belohnung."
+    },
+    "es": {
+     "t": "Mini repaso: bases de los hábitos",
+     "g": "Repasar el bucle del hábito, los hábitos diminutos y el seguimiento.",
+     "p": [
+      "Un hábito tiene señal, rutina y recompensa.",
+      "Los hábitos diminutos, anclados y visibles son los más fáciles de mantener.",
+      "El seguimiento y un plan de regreso te protegen cuando la vida se complica."
+     ],
+     "q": "¿Qué parte de tu hábito funciona mejor y cuál necesita un ajuste?",
+     "c": "Revisa tu registro y ajusta una cosa: la señal, el tamaño o la recompensa."
+    },
+    "fr": {
+     "t": "Mini bilan : bases des habitudes",
+     "g": "Revoir la boucle de l'habitude, les micro-habitudes et le suivi.",
+     "p": [
+      "Une habitude a un signal, une routine et une récompense.",
+      "Les habitudes minuscules, ancrées et visibles sont les plus faciles à tenir.",
+      "Le suivi et un plan de reprise te protègent quand la vie s'agite."
+     ],
+     "q": "Quelle partie de ton habitude marche le mieux, laquelle demande un ajustement ?",
+     "c": "Relis ton suivi et ajuste une chose : le signal, la taille ou la récompense."
+    },
+    "it": {
+     "t": "Mini ripasso: le basi delle abitudini",
+     "g": "Ripassare il ciclo dell'abitudine, le abitudini minuscole e il tracciamento.",
+     "p": [
+      "Un'abitudine ha segnale, routine e ricompensa.",
+      "Le abitudini minuscole, ancorate e visibili sono le più facili da mantenere.",
+      "Il tracciamento e un piano di ripartenza ti proteggono quando la vita si complica."
+     ],
+     "q": "Quale parte della tua abitudine funziona meglio e quale va ritoccata?",
+     "c": "Rivedi il tuo tracciatore e modifica una cosa: segnale, dimensione o ricompensa."
+    },
+    "pt": {
+     "t": "Mini revisão: bases dos hábitos",
+     "g": "Rever o ciclo do hábito, os hábitos minúsculos e o registo.",
+     "p": [
+      "Um hábito tem sinal, rotina e recompensa.",
+      "Hábitos minúsculos, ancorados e visíveis são os mais fáceis de manter.",
+      "O registo e um plano de regresso protegem-te quando a vida aperta."
+     ],
+     "q": "Que parte do teu hábito funciona melhor e qual precisa de ajuste?",
+     "c": "Revê o teu registo e ajusta uma coisa: o sinal, o tamanho ou a recompensa."
+    },
+    "pt_BR": {
+     "t": "Mini revisão: bases dos hábitos",
+     "g": "Rever o ciclo do hábito, os hábitos minúsculos e o registro.",
+     "p": [
+      "Um hábito tem sinal, rotina e recompensa.",
+      "Hábitos minúsculos, ancorados e visíveis são os mais fáceis de manter.",
+      "O registro e um plano de volta protegem você quando a vida aperta."
+     ],
+     "q": "Que parte do seu hábito funciona melhor e qual precisa de ajuste?",
+     "c": "Reveja seu registro e ajuste uma coisa: o sinal, o tamanho ou a recompensa."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "would_you_rather",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sing or dance in public",
+     "g": "Choose a fun performance and the kind of song or style you would pick.",
+     "p": [
+      "Singing shares a feeling, dancing shares energy.",
+      "The song or style you pick says a lot about your mood.",
+      "A little courage and a big smile make any stage friendlier."
+     ],
+     "q": "Would you rather sing or dance in front of a crowd? Which song or style would you choose?",
+     "c": "Sing or dance to one song at home, just for fun."
+    },
+    "de": {
+     "t": "Öffentlich singen oder tanzen",
+     "g": "Wähle einen lustigen Auftritt und das Lied oder den Stil dazu.",
+     "p": [
+      "Singen teilt ein Gefühl, Tanzen teilt Energie.",
+      "Das gewählte Lied oder der Stil verrät viel über deine Stimmung.",
+      "Ein bisschen Mut und ein großes Lächeln machen jede Bühne freundlicher."
+     ],
+     "q": "Würdest du lieber vor Publikum singen oder tanzen? Welches Lied oder welchen Stil würdest du wählen?",
+     "c": "Sing oder tanz heute zu einem Lied zu Hause, nur zum Spaß."
+    },
+    "es": {
+     "t": "Cantar o bailar en público",
+     "g": "Elige una actuación divertida y la canción o el estilo que usarías.",
+     "p": [
+      "Cantar comparte un sentimiento, bailar comparte energía.",
+      "La canción o el estilo que eliges dice mucho de tu ánimo.",
+      "Un poco de valentía y una gran sonrisa hacen amable cualquier escenario."
+     ],
+     "q": "¿Prefieres cantar o bailar delante de la gente? ¿Qué canción o estilo elegirías?",
+     "c": "Canta o baila una canción en casa, solo por diversión."
+    },
+    "fr": {
+     "t": "Chanter ou danser en public",
+     "g": "Choisis une prestation amusante et la chanson ou le style qui va avec.",
+     "p": [
+      "Chanter partage une émotion, danser partage de l'énergie.",
+      "La chanson ou le style choisi en dit long sur ton humeur.",
+      "Un peu de courage et un grand sourire adoucissent n'importe quelle scène."
+     ],
+     "q": "Tu préfères chanter ou danser devant du monde ? Quelle chanson ou quel style choisirais-tu ?",
+     "c": "Chante ou danse sur un morceau chez toi, juste pour le plaisir."
+    },
+    "it": {
+     "t": "Cantare o ballare in pubblico",
+     "g": "Scegli un'esibizione divertente e la canzone o lo stile che userai.",
+     "p": [
+      "Cantare condivide un'emozione, ballare condivide energia.",
+      "La canzone o lo stile che scegli dice molto del tuo umore.",
+      "Un po' di coraggio e un bel sorriso rendono ogni palco più amichevole."
+     ],
+     "q": "Preferisci cantare o ballare davanti a tutti? Quale canzone o stile sceglieresti?",
+     "c": "Canta o balla una canzone a casa, solo per divertimento."
+    },
+    "pt": {
+     "t": "Cantar ou dançar em público",
+     "g": "Escolhe uma atuação divertida e a canção ou o estilo que usarias.",
+     "p": [
+      "Cantar partilha um sentimento, dançar partilha energia.",
+      "A canção ou o estilo que escolhes diz muito do teu humor.",
+      "Um pouco de coragem e um grande sorriso tornam qualquer palco simpático."
+     ],
+     "q": "Preferias cantar ou dançar à frente de toda a gente? Que canção ou estilo escolherias?",
+     "c": "Canta ou dança uma música em casa, só por diversão."
+    },
+    "pt_BR": {
+     "t": "Cantar ou dançar em público",
+     "g": "Escolha uma apresentação divertida e a música ou o estilo que usaria.",
+     "p": [
+      "Cantar compartilha um sentimento, dançar compartilha energia.",
+      "A música ou o estilo que você escolhe diz muito do seu humor.",
+      "Um pouco de coragem e um sorriso grande deixam qualquer palco mais amigável."
+     ],
+     "q": "Você prefere cantar ou dançar na frente de todo mundo? Qual música ou estilo escolheria?",
+     "c": "Cante ou dance uma música em casa, só por diversão."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sweet or salty snacks",
+     "g": "Talk about snack preferences and favourite treats from different countries.",
+     "p": [
+      "Sweet snacks include chocolate, biscuits and fruit candy.",
+      "Salty snacks include nuts, crisps and roasted seeds.",
+      "Every country has its own beloved snack worth trying."
+     ],
+     "q": "Would you rather eat sweet snacks or salty snacks for the rest of your life? Which treat would you miss?",
+     "c": "Tell your Buddy about a snack from your country that others should try."
+    },
+    "de": {
+     "t": "Süße oder salzige Snacks",
+     "g": "Sprich über Snack-Vorlieben und Lieblingsleckereien aus verschiedenen Ländern.",
+     "p": [
+      "Süße Snacks sind zum Beispiel Schokolade, Kekse und Fruchtbonbons.",
+      "Salzige Snacks sind zum Beispiel Nüsse, Chips und geröstete Kerne.",
+      "Jedes Land hat seinen beliebten Snack, den man probieren sollte."
+     ],
+     "q": "Würdest du lieber für immer süße oder salzige Snacks essen? Welche Leckerei würdest du vermissen?",
+     "c": "Erzähl deinem Buddy von einem Snack aus deinem Land, den andere probieren sollten."
+    },
+    "es": {
+     "t": "Snacks dulces o salados",
+     "g": "Habla de tus preferencias de snacks y caprichos de distintos países.",
+     "p": [
+      "Los snacks dulces incluyen chocolate, galletas y caramelos de fruta.",
+      "Los snacks salados incluyen frutos secos, patatas fritas y semillas tostadas.",
+      "Cada país tiene su picoteo favorito que merece la pena probar."
+     ],
+     "q": "¿Prefieres comer snacks dulces o salados el resto de tu vida? ¿Qué capricho echarías de menos?",
+     "c": "Cuéntale a tu Buddy un snack de tu país que otros deberían probar."
+    },
+    "fr": {
+     "t": "Snacks sucrés ou salés",
+     "g": "Parle de tes goûts en snacks et de friandises de différents pays.",
+     "p": [
+      "Les snacks sucrés, ce sont le chocolat, les biscuits et les bonbons aux fruits.",
+      "Les snacks salés, ce sont les noix, les chips et les graines grillées.",
+      "Chaque pays a sa gourmandise préférée qui mérite d'être goûtée."
+     ],
+     "q": "Tu préfères manger des snacks sucrés ou salés toute ta vie ? Quelle gourmandise te manquerait ?",
+     "c": "Parle à ton Buddy d'un snack de ton pays que les autres devraient goûter."
+    },
+    "it": {
+     "t": "Snack dolci o salati",
+     "g": "Parla delle tue preferenze negli snack e delle golosità di vari paesi.",
+     "p": [
+      "Gli snack dolci sono cioccolato, biscotti e caramelle alla frutta.",
+      "Gli snack salati sono noci, patatine e semi tostati.",
+      "Ogni paese ha il suo spuntino preferito che vale la pena assaggiare."
+     ],
+     "q": "Preferisci mangiare snack dolci o salati per il resto della vita? Quale sfizio ti mancherebbe?",
+     "c": "Racconta al tuo Buddy uno snack del tuo paese che gli altri dovrebbero provare."
+    },
+    "pt": {
+     "t": "Petiscos doces ou salgados",
+     "g": "Fala das tuas preferências de petiscos e gulodices de vários países.",
+     "p": [
+      "Os petiscos doces incluem chocolate, bolachas e rebuçados de fruta.",
+      "Os petiscos salgados incluem frutos secos, batatas fritas e sementes torradas.",
+      "Cada país tem o seu petisco favorito que vale a pena provar."
+     ],
+     "q": "Preferias comer petiscos doces ou salgados para o resto da vida? Que gulodice te faria falta?",
+     "c": "Conta ao teu Buddy um petisco do teu país que os outros deviam provar."
+    },
+    "pt_BR": {
+     "t": "Lanches doces ou salgados",
+     "g": "Fale das suas preferências de lanches e guloseimas de vários países.",
+     "p": [
+      "Lanches doces incluem chocolate, biscoitos e balas de fruta.",
+      "Lanches salgados incluem castanhas, batata frita e sementes torradas.",
+      "Cada país tem seu petisco favorito que vale a pena provar."
+     ],
+     "q": "Você prefere comer lanches doces ou salgados pelo resto da vida? Que guloseima faria falta?",
+     "c": "Conte ao seu Buddy um lanche do seu país que os outros deviam provar."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Talk to animals or speak every language",
+     "g": "Compare two communication powers and who you would chat with first.",
+     "p": [
+      "Talking to animals would reveal what pets and birds think.",
+      "Speaking every language would open doors in every country.",
+      "Both powers are really about listening and being curious."
+     ],
+     "q": "Would you rather talk to animals or speak every human language? Who would you chat with first?",
+     "c": "Imagine one funny sentence a parrot might say to you today."
+    },
+    "de": {
+     "t": "Mit Tieren sprechen oder alle Sprachen können",
+     "g": "Vergleiche zwei Kommunikationskräfte und wen du zuerst ansprechen würdest.",
+     "p": [
+      "Mit Tieren zu sprechen verriete, was Haustiere und Vögel denken.",
+      "Alle Sprachen zu können öffnete dir in jedem Land die Türen.",
+      "Beide Kräfte bedeuten im Kern: zuhören und neugierig sein."
+     ],
+     "q": "Würdest du lieber mit Tieren sprechen oder jede Menschensprache beherrschen? Mit wem würdest du zuerst reden?",
+     "c": "Erfinde einen lustigen Satz, den ein Papagei heute zu dir sagen könnte."
+    },
+    "es": {
+     "t": "Hablar con animales o todos los idiomas",
+     "g": "Compara dos poderes de comunicación y con quién hablarías primero.",
+     "p": [
+      "Hablar con animales revelaría qué piensan mascotas y pájaros.",
+      "Hablar todos los idiomas te abriría puertas en cada país.",
+      "Ambos poderes consisten en escuchar y ser curioso."
+     ],
+     "q": "¿Prefieres hablar con animales o hablar todos los idiomas humanos? ¿Con quién charlarías primero?",
+     "c": "Imagina una frase graciosa que un loro podría decirte hoy."
+    },
+    "fr": {
+     "t": "Parler aux animaux ou toutes les langues",
+     "g": "Compare deux pouvoirs de communication et dis à qui tu parlerais d'abord.",
+     "p": [
+      "Parler aux animaux révélerait ce que pensent chiens, chats et oiseaux.",
+      "Parler toutes les langues t'ouvrirait des portes dans chaque pays.",
+      "Ces deux pouvoirs consistent surtout à écouter et à rester curieux."
+     ],
+     "q": "Tu préfères parler aux animaux ou maîtriser toutes les langues humaines ? À qui parlerais-tu d'abord ?",
+     "c": "Invente une phrase drôle qu'un perroquet pourrait te dire aujourd'hui."
+    },
+    "it": {
+     "t": "Parlare con gli animali o tutte le lingue",
+     "g": "Confronta due poteri di comunicazione e con chi parleresti per primo.",
+     "p": [
+      "Parlare con gli animali rivelerebbe cosa pensano cani, gatti e uccelli.",
+      "Parlare tutte le lingue ti aprirebbe porte in ogni paese.",
+      "Entrambi i poteri riguardano l'ascolto e la curiosità."
+     ],
+     "q": "Preferisci parlare con gli animali o conoscere ogni lingua umana? Con chi chiacchiereresti per primo?",
+     "c": "Immagina una frase buffa che un pappagallo potrebbe dirti oggi."
+    },
+    "pt": {
+     "t": "Falar com animais ou todas as línguas",
+     "g": "Compara dois poderes de comunicação e com quem falarias primeiro.",
+     "p": [
+      "Falar com animais revelaria o que pensam cães, gatos e aves.",
+      "Falar todas as línguas abria-te portas em cada país.",
+      "Ambos os poderes passam por ouvir e ser curioso."
+     ],
+     "q": "Preferias falar com animais ou dominar todas as línguas humanas? Com quem conversarias primeiro?",
+     "c": "Imagina uma frase engraçada que um papagaio te poderia dizer hoje."
+    },
+    "pt_BR": {
+     "t": "Falar com animais ou todos os idiomas",
+     "g": "Compare dois poderes de comunicação e com quem você falaria primeiro.",
+     "p": [
+      "Falar com animais revelaria o que pensam cachorros, gatos e pássaros.",
+      "Falar todos os idiomas abriria portas em cada país.",
+      "Os dois poderes dependem de ouvir e ser curioso."
+     ],
+     "q": "Você prefere falar com animais ou dominar todos os idiomas humanos? Com quem conversaria primeiro?",
+     "c": "Imagine uma frase engraçada que um papagaio poderia dizer a você hoje."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Train journey or road trip",
+     "g": "Compare ways to travel and the joys of each kind of journey.",
+     "p": [
+      "Trains give you window views, snacks and time to read.",
+      "Road trips give you freedom, playlists and spontaneous stops.",
+      "The journey itself can be as fun as the destination."
+     ],
+     "q": "Would you rather cross a country by train or by car? What would you pack for the ride?",
+     "c": "Make a short playlist of three songs for your dream journey."
+    },
+    "de": {
+     "t": "Zugreise oder Roadtrip",
+     "g": "Vergleiche Reisearten und die Freuden jeder Fahrt.",
+     "p": [
+      "Züge bieten Fensterblicke, Snacks und Zeit zum Lesen.",
+      "Roadtrips bieten Freiheit, Playlists und spontane Stopps.",
+      "Die Reise selbst kann so schön sein wie das Ziel."
+     ],
+     "q": "Würdest du lieber ein Land mit dem Zug oder mit dem Auto durchqueren? Was würdest du einpacken?",
+     "c": "Stell eine kurze Playlist aus drei Liedern für deine Traumreise zusammen."
+    },
+    "es": {
+     "t": "Viaje en tren o viaje por carretera",
+     "g": "Compara formas de viajar y las alegrías de cada trayecto.",
+     "p": [
+      "El tren da vistas por la ventana, snacks y tiempo para leer.",
+      "El viaje por carretera da libertad, listas de música y paradas improvisadas.",
+      "El camino puede ser tan divertido como el destino."
+     ],
+     "q": "¿Prefieres cruzar un país en tren o en coche? ¿Qué meterías en la maleta?",
+     "c": "Haz una lista corta de tres canciones para tu viaje soñado."
+    },
+    "fr": {
+     "t": "Voyage en train ou road trip",
+     "g": "Compare des façons de voyager et les plaisirs de chaque trajet.",
+     "p": [
+      "Le train offre des vues par la fenêtre, des en-cas et du temps pour lire.",
+      "Le road trip offre la liberté, des playlists et des arrêts improvisés.",
+      "Le trajet peut être aussi amusant que la destination."
+     ],
+     "q": "Tu préfères traverser un pays en train ou en voiture ? Que mettrais-tu dans ta valise ?",
+     "c": "Compose une courte playlist de trois chansons pour ton voyage de rêve."
+    },
+    "it": {
+     "t": "Viaggio in treno o viaggio in auto",
+     "g": "Confronta modi di viaggiare e i piaceri di ogni percorso.",
+     "p": [
+      "Il treno regala panorami dal finestrino, snack e tempo per leggere.",
+      "Il viaggio in auto regala libertà, playlist e soste improvvisate.",
+      "Il viaggio può essere divertente quanto la destinazione."
+     ],
+     "q": "Preferisci attraversare un paese in treno o in auto? Cosa metteresti in valigia?",
+     "c": "Crea una breve playlist di tre canzoni per il tuo viaggio da sogno."
+    },
+    "pt": {
+     "t": "Viagem de comboio ou de carro",
+     "g": "Compara formas de viajar e as alegrias de cada percurso.",
+     "p": [
+      "O comboio dá vistas pela janela, lanches e tempo para ler.",
+      "A viagem de carro dá liberdade, listas de música e paragens improvisadas.",
+      "O caminho pode ser tão divertido como o destino."
+     ],
+     "q": "Preferias atravessar um país de comboio ou de carro? O que levarias na mala?",
+     "c": "Faz uma lista curta de três músicas para a tua viagem de sonho."
+    },
+    "pt_BR": {
+     "t": "Viagem de trem ou de carro",
+     "g": "Compare jeitos de viajar e as alegrias de cada percurso.",
+     "p": [
+      "O trem dá vistas pela janela, lanchinhos e tempo para ler.",
+      "A viagem de carro dá liberdade, playlists e paradas de improviso.",
+      "O caminho pode ser tão divertido quanto o destino."
+     ],
+     "q": "Você prefere atravessar um país de trem ou de carro? O que colocaria na mala?",
+     "c": "Monte uma playlist curta de três músicas para sua viagem dos sonhos."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Breakfast for dinner or dinner for breakfast",
+     "g": "Play with food swaps and favourite meals at any time of day.",
+     "p": [
+      "Pancakes at night feel like a cosy surprise.",
+      "Last night's pasta for breakfast feels like a secret treat.",
+      "Many cultures already eat what we call dinner foods in the morning."
+     ],
+     "q": "Would you rather eat breakfast for dinner or dinner for breakfast? What would be on your plate?",
+     "c": "Eat one favourite food at an unusual time today."
+    },
+    "de": {
+     "t": "Frühstück zum Abendessen oder umgekehrt",
+     "g": "Spiel mit Essenstausch und Lieblingsgerichten zu jeder Tageszeit.",
+     "p": [
+      "Pfannkuchen am Abend fühlen sich wie eine gemütliche Überraschung an.",
+      "Nudeln vom Vorabend zum Frühstück sind ein heimlicher Genuss.",
+      "In vielen Kulturen isst man morgens, was bei uns Abendessen wäre."
+     ],
+     "q": "Würdest du lieber Frühstück zum Abendessen oder Abendessen zum Frühstück essen? Was läge auf deinem Teller?",
+     "c": "Iss heute ein Lieblingsgericht zu einer ungewöhnlichen Zeit."
+    },
+    "es": {
+     "t": "Desayuno para cenar o cena para desayunar",
+     "g": "Juega con cambios de comidas y platos favoritos a cualquier hora.",
+     "p": [
+      "Unas tortitas por la noche son una sorpresa acogedora.",
+      "La pasta de anoche en el desayuno es un capricho secreto.",
+      "Muchas culturas ya comen por la mañana lo que otros cenan."
+     ],
+     "q": "¿Prefieres desayuno para cenar o cena para desayunar? ¿Qué habría en tu plato?",
+     "c": "Come hoy una comida favorita a una hora poco habitual."
+    },
+    "fr": {
+     "t": "Petit-déj au dîner ou dîner au petit-déj",
+     "g": "Joue avec les échanges de repas et tes plats préférés à toute heure.",
+     "p": [
+      "Des pancakes le soir, c'est une douce surprise.",
+      "Les pâtes de la veille au petit-déjeuner, c'est un plaisir secret.",
+      "Beaucoup de cultures mangent le matin ce qu'on mange ailleurs au dîner."
+     ],
+     "q": "Tu préfères un petit-déjeuner au dîner ou un dîner au petit-déjeuner ? Que mettrais-tu dans ton assiette ?",
+     "c": "Mange aujourd'hui un plat préféré à une heure inhabituelle."
+    },
+    "it": {
+     "t": "Colazione a cena o cena a colazione",
+     "g": "Gioca con gli scambi di pasti e i piatti preferiti a ogni ora.",
+     "p": [
+      "I pancake di sera sono una dolce sorpresa.",
+      "La pasta di ieri a colazione è un piacere segreto.",
+      "In molte culture si mangia al mattino ciò che altrove si mangia a cena."
+     ],
+     "q": "Preferisci colazione a cena o cena a colazione? Cosa ci sarebbe nel tuo piatto?",
+     "c": "Mangia oggi un cibo preferito a un orario insolito."
+    },
+    "pt": {
+     "t": "Pequeno-almoço ao jantar ou o contrário",
+     "g": "Brinca com trocas de refeições e pratos favoritos a qualquer hora.",
+     "p": [
+      "Panquecas à noite são uma surpresa aconchegante.",
+      "A massa de ontem ao pequeno-almoço é um mimo secreto.",
+      "Muitas culturas comem de manhã o que outras comem ao jantar."
+     ],
+     "q": "Preferias pequeno-almoço ao jantar ou jantar ao pequeno-almoço? O que terias no prato?",
+     "c": "Come hoje um prato favorito a uma hora pouco habitual."
+    },
+    "pt_BR": {
+     "t": "Café da manhã no jantar ou jantar no café",
+     "g": "Brinque com trocas de refeições e pratos favoritos a qualquer hora.",
+     "p": [
+      "Panquecas à noite são uma surpresa aconchegante.",
+      "O macarrão de ontem no café da manhã é um mimo secreto.",
+      "Muitas culturas comem de manhã o que outras comem no jantar."
+     ],
+     "q": "Você prefere café da manhã no jantar ou jantar no café da manhã? O que teria no prato?",
+     "c": "Coma hoje um prato favorito num horário pouco comum."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Live in a treehouse or a houseboat",
+     "g": "Imagine unusual homes and what daily life would feel like in each.",
+     "p": [
+      "A treehouse has leaves, birdsong and a rope ladder.",
+      "A houseboat has gentle waves, ducks and a deck for breakfast.",
+      "Think about how you would decorate a small, special home."
+     ],
+     "q": "Would you rather live in a treehouse or on a houseboat? What would your favourite corner look like?",
+     "c": "Sketch or describe your dream tiny home in three details."
+    },
+    "de": {
+     "t": "Im Baumhaus oder auf dem Hausboot leben",
+     "g": "Stell dir ungewöhnliche Zuhause vor und wie sich der Alltag anfühlte.",
+     "p": [
+      "Ein Baumhaus hat Blätter, Vogelgesang und eine Strickleiter.",
+      "Ein Hausboot hat sanfte Wellen, Enten und ein Deck fürs Frühstück.",
+      "Überlege, wie du ein kleines, besonderes Zuhause einrichten würdest."
+     ],
+     "q": "Würdest du lieber in einem Baumhaus oder auf einem Hausboot wohnen? Wie sähe deine Lieblingsecke aus?",
+     "c": "Skizziere oder beschreibe dein Traum-Minihaus mit drei Details."
+    },
+    "es": {
+     "t": "Vivir en una casa del árbol o un barco",
+     "g": "Imagina hogares poco comunes y cómo sería el día a día en cada uno.",
+     "p": [
+      "Una casa del árbol tiene hojas, canto de pájaros y una escalera de cuerda.",
+      "Una casa flotante tiene olas suaves, patos y una cubierta para desayunar.",
+      "Piensa cómo decorarías un hogar pequeño y especial."
+     ],
+     "q": "¿Prefieres vivir en una casa del árbol o en una casa flotante? ¿Cómo sería tu rincón favorito?",
+     "c": "Dibuja o describe tu casita soñada con tres detalles."
+    },
+    "fr": {
+     "t": "Vivre dans une cabane ou une péniche",
+     "g": "Imagine des logements originaux et le quotidien dans chacun.",
+     "p": [
+      "Une cabane perchée a des feuilles, des chants d'oiseaux et une échelle de corde.",
+      "Une péniche a de douces vagues, des canards et un pont pour le petit-déjeuner.",
+      "Pense à la façon dont tu décorerais un petit chez-soi spécial."
+     ],
+     "q": "Tu préfères vivre dans une cabane dans les arbres ou sur une péniche ? À quoi ressemblerait ton coin préféré ?",
+     "c": "Dessine ou décris ta petite maison de rêve en trois détails."
+    },
+    "it": {
+     "t": "Vivere in una casa sull'albero o su una barca",
+     "g": "Immagina case insolite e come sarebbe la vita di ogni giorno.",
+     "p": [
+      "Una casa sull'albero ha foglie, canti di uccelli e una scala di corda.",
+      "Una casa galleggiante ha onde dolci, anatre e un ponte per la colazione.",
+      "Pensa a come arrederesti una casetta piccola e speciale."
+     ],
+     "q": "Preferisci vivere in una casa sull'albero o su una casa galleggiante? Com'è il tuo angolo preferito?",
+     "c": "Disegna o descrivi la tua casetta da sogno con tre dettagli."
+    },
+    "pt": {
+     "t": "Viver numa casa na árvore ou num barco",
+     "g": "Imagina casas diferentes e como seria o dia a dia em cada uma.",
+     "p": [
+      "Uma casa na árvore tem folhas, canto de aves e uma escada de corda.",
+      "Uma casa flutuante tem ondas suaves, patos e um convés para o pequeno-almoço.",
+      "Pensa em como decorarias uma casa pequena e especial."
+     ],
+     "q": "Preferias viver numa casa na árvore ou numa casa flutuante? Como seria o teu canto favorito?",
+     "c": "Desenha ou descreve a tua casinha de sonho com três pormenores."
+    },
+    "pt_BR": {
+     "t": "Morar numa casa na árvore ou num barco",
+     "g": "Imagine casas diferentes e como seria o dia a dia em cada uma.",
+     "p": [
+      "Uma casa na árvore tem folhas, canto de pássaros e uma escada de corda.",
+      "Uma casa flutuante tem ondas suaves, patos e um deque para o café da manhã.",
+      "Pense em como decoraria uma casa pequena e especial."
+     ],
+     "q": "Você prefere morar numa casa na árvore ou numa casa flutuante? Como seria seu cantinho favorito?",
+     "c": "Desenhe ou descreva sua casinha dos sonhos com três detalhes."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Paint or play an instrument",
+     "g": "Pick a creative hobby to master and think about what you would create.",
+     "p": [
+      "Painting turns feelings into colours and shapes.",
+      "Playing an instrument turns feelings into melodies.",
+      "Both skills grow with small, regular practice."
+     ],
+     "q": "Would you rather master painting or an instrument? What would your first masterpiece be?",
+     "c": "Spend five minutes drawing or humming something that matches your mood."
+    },
+    "de": {
+     "t": "Malen oder ein Instrument spielen",
+     "g": "Wähle ein kreatives Hobby und überlege, was du schaffen würdest.",
+     "p": [
+      "Malen verwandelt Gefühle in Farben und Formen.",
+      "Ein Instrument verwandelt Gefühle in Melodien.",
+      "Beide Fähigkeiten wachsen durch kleines, regelmäßiges Üben."
+     ],
+     "q": "Würdest du lieber Malen oder ein Instrument meisterhaft beherrschen? Was wäre dein erstes Meisterwerk?",
+     "c": "Zeichne oder summe fünf Minuten lang etwas, das zu deiner Stimmung passt."
+    },
+    "es": {
+     "t": "Pintar o tocar un instrumento",
+     "g": "Elige una afición creativa para dominar y piensa qué crearías.",
+     "p": [
+      "Pintar convierte sentimientos en colores y formas.",
+      "Tocar un instrumento convierte sentimientos en melodías.",
+      "Ambas habilidades crecen con práctica pequeña y constante."
+     ],
+     "q": "¿Prefieres dominar la pintura o un instrumento? ¿Cuál sería tu primera obra maestra?",
+     "c": "Dedica cinco minutos a dibujar o tararear algo que refleje tu ánimo."
+    },
+    "fr": {
+     "t": "Peindre ou jouer d'un instrument",
+     "g": "Choisis un loisir créatif à maîtriser et imagine ce que tu créerais.",
+     "p": [
+      "La peinture transforme les émotions en couleurs et en formes.",
+      "Un instrument transforme les émotions en mélodies.",
+      "Ces deux talents grandissent avec une pratique régulière, même courte."
+     ],
+     "q": "Tu préfères maîtriser la peinture ou un instrument ? Quel serait ton premier chef-d'œuvre ?",
+     "c": "Passe cinq minutes à dessiner ou fredonner quelque chose qui reflète ton humeur."
+    },
+    "it": {
+     "t": "Dipingere o suonare uno strumento",
+     "g": "Scegli un hobby creativo da padroneggiare e pensa a cosa creeresti.",
+     "p": [
+      "La pittura trasforma le emozioni in colori e forme.",
+      "Uno strumento trasforma le emozioni in melodie.",
+      "Entrambe le abilità crescono con una pratica piccola e costante."
+     ],
+     "q": "Preferisci padroneggiare la pittura o uno strumento? Quale sarebbe il tuo primo capolavoro?",
+     "c": "Dedica cinque minuti a disegnare o canticchiare qualcosa che rispecchi il tuo umore."
+    },
+    "pt": {
+     "t": "Pintar ou tocar um instrumento",
+     "g": "Escolhe um passatempo criativo para dominar e pensa no que criarias.",
+     "p": [
+      "A pintura transforma sentimentos em cores e formas.",
+      "Um instrumento transforma sentimentos em melodias.",
+      "Ambas as capacidades crescem com prática pequena e regular."
+     ],
+     "q": "Preferias dominar a pintura ou um instrumento? Qual seria a tua primeira obra-prima?",
+     "c": "Dedica cinco minutos a desenhar ou trautear algo que combine com o teu humor."
+    },
+    "pt_BR": {
+     "t": "Pintar ou tocar um instrumento",
+     "g": "Escolha um hobby criativo para dominar e pense no que criaria.",
+     "p": [
+      "A pintura transforma sentimentos em cores e formas.",
+      "Um instrumento transforma sentimentos em melodias.",
+      "As duas habilidades crescem com prática pequena e regular."
+     ],
+     "q": "Você prefere dominar a pintura ou um instrumento? Qual seria sua primeira obra-prima?",
+     "c": "Dedique cinco minutos a desenhar ou cantarolar algo que combine com seu humor."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Explore space or the deep ocean",
+     "g": "Compare two great frontiers and what you would hope to discover.",
+     "p": [
+      "Space holds planets, stars and the silence of the Moon.",
+      "The deep ocean holds glowing fish and mountains no one has seen.",
+      "Much of the ocean floor is still unmapped, which is amazing."
+     ],
+     "q": "Would you rather explore outer space or the deepest ocean? What would you hope to find?",
+     "c": "Invent a name for a creature you might discover on your trip."
+    },
+    "de": {
+     "t": "Weltraum oder Tiefsee erkunden",
+     "g": "Vergleiche zwei große Grenzen und was du entdecken möchtest.",
+     "p": [
+      "Das All birgt Planeten, Sterne und die Stille des Mondes.",
+      "Die Tiefsee birgt leuchtende Fische und Berge, die niemand gesehen hat.",
+      "Ein großer Teil des Meeresbodens ist noch nicht kartiert, das ist erstaunlich."
+     ],
+     "q": "Würdest du lieber das Weltall oder die tiefste See erkunden? Was hoffst du zu finden?",
+     "c": "Erfinde einen Namen für ein Wesen, das du auf deiner Reise entdecken könntest."
+    },
+    "es": {
+     "t": "Explorar el espacio o el océano profundo",
+     "g": "Compara dos grandes fronteras y qué esperarías descubrir.",
+     "p": [
+      "El espacio guarda planetas, estrellas y el silencio de la Luna.",
+      "El océano profundo guarda peces luminosos y montañas que nadie ha visto.",
+      "Gran parte del fondo marino sigue sin cartografiar, algo asombroso."
+     ],
+     "q": "¿Prefieres explorar el espacio o el océano más profundo? ¿Qué esperarías encontrar?",
+     "c": "Inventa un nombre para una criatura que podrías descubrir en tu viaje."
+    },
+    "fr": {
+     "t": "Explorer l'espace ou les abysses",
+     "g": "Compare deux grandes frontières et ce que tu espérerais découvrir.",
+     "p": [
+      "L'espace abrite des planètes, des étoiles et le silence de la Lune.",
+      "Les abysses abritent des poissons lumineux et des montagnes jamais vues.",
+      "Une grande partie des fonds marins n'est pas encore cartographiée, c'est fascinant."
+     ],
+     "q": "Tu préfères explorer l'espace ou l'océan le plus profond ? Qu'espérerais-tu trouver ?",
+     "c": "Invente un nom pour une créature que tu pourrais découvrir pendant ton voyage."
+    },
+    "it": {
+     "t": "Esplorare lo spazio o gli abissi",
+     "g": "Confronta due grandi frontiere e cosa speri di scoprire.",
+     "p": [
+      "Lo spazio custodisce pianeti, stelle e il silenzio della Luna.",
+      "Gli abissi custodiscono pesci luminosi e montagne mai viste.",
+      "Gran parte dei fondali non è ancora mappata, ed è incredibile."
+     ],
+     "q": "Preferisci esplorare lo spazio o l'oceano più profondo? Cosa speri di trovare?",
+     "c": "Inventa un nome per una creatura che potresti scoprire nel viaggio."
+    },
+    "pt": {
+     "t": "Explorar o espaço ou o oceano profundo",
+     "g": "Compara duas grandes fronteiras e o que esperarias descobrir.",
+     "p": [
+      "O espaço guarda planetas, estrelas e o silêncio da Lua.",
+      "O oceano profundo guarda peixes luminosos e montanhas que ninguém viu.",
+      "Grande parte do fundo do mar ainda não está cartografada, o que é incrível."
+     ],
+     "q": "Preferias explorar o espaço ou o oceano mais profundo? O que esperarias encontrar?",
+     "c": "Inventa um nome para uma criatura que poderias descobrir na viagem."
+    },
+    "pt_BR": {
+     "t": "Explorar o espaço ou o oceano profundo",
+     "g": "Compare duas grandes fronteiras e o que você esperaria descobrir.",
+     "p": [
+      "O espaço guarda planetas, estrelas e o silêncio da Lua.",
+      "O oceano profundo guarda peixes luminosos e montanhas que ninguém viu.",
+      "Grande parte do fundo do mar ainda não foi mapeada, o que é incrível."
+     ],
+     "q": "Você prefere explorar o espaço ou o oceano mais profundo? O que esperaria encontrar?",
+     "c": "Invente um nome para uma criatura que você poderia descobrir na viagem."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rainy day in or sunny day out",
+     "g": "Share how you like to spend a free day depending on the weather.",
+     "p": [
+      "A rainy day suits books, board games and warm soup.",
+      "A sunny day suits picnics, walks and playing outside.",
+      "The same free day can feel very different with the weather."
+     ],
+     "q": "Would you rather have a cosy rainy day indoors or a bright sunny day outside? What would you do?",
+     "c": "Plan one perfect rainy-day activity you could do this week."
+    },
+    "de": {
+     "t": "Regentag drinnen oder Sonnentag draußen",
+     "g": "Erzähl, wie du einen freien Tag je nach Wetter verbringst.",
+     "p": [
+      "Ein Regentag passt zu Büchern, Brettspielen und warmer Suppe.",
+      "Ein Sonnentag passt zu Picknick, Spaziergängen und Spielen im Freien.",
+      "Derselbe freie Tag fühlt sich je nach Wetter ganz anders an."
+     ],
+     "q": "Würdest du lieber einen gemütlichen Regentag drinnen oder einen sonnigen Tag draußen haben? Was würdest du tun?",
+     "c": "Plane eine perfekte Regentag-Aktivität, die du diese Woche machen könntest."
+    },
+    "es": {
+     "t": "Día de lluvia en casa o día de sol fuera",
+     "g": "Cuenta cómo pasas un día libre según el tiempo.",
+     "p": [
+      "Un día de lluvia va bien con libros, juegos de mesa y sopa caliente.",
+      "Un día de sol va bien con picnics, paseos y juegos al aire libre.",
+      "El mismo día libre cambia mucho con el tiempo."
+     ],
+     "q": "¿Prefieres un día de lluvia acogedor en casa o un día de sol fuera? ¿Qué harías?",
+     "c": "Planea una actividad perfecta para un día de lluvia esta semana."
+    },
+    "fr": {
+     "t": "Jour de pluie dedans ou soleil dehors",
+     "g": "Dis comment tu passes une journée libre selon la météo.",
+     "p": [
+      "Un jour de pluie va bien avec les livres, les jeux de société et une soupe chaude.",
+      "Un jour de soleil va bien avec pique-nique, balades et jeux dehors.",
+      "Le même jour libre change beaucoup selon le temps."
+     ],
+     "q": "Tu préfères une journée de pluie cosy à la maison ou une journée ensoleillée dehors ? Que ferais-tu ?",
+     "c": "Prévois une activité parfaite pour un jour de pluie cette semaine."
+    },
+    "it": {
+     "t": "Giorno di pioggia in casa o di sole fuori",
+     "g": "Racconta come passi un giorno libero a seconda del tempo.",
+     "p": [
+      "Un giorno di pioggia si abbina a libri, giochi da tavolo e zuppa calda.",
+      "Un giorno di sole si abbina a picnic, passeggiate e giochi all'aperto.",
+      "Lo stesso giorno libero cambia molto con il meteo."
+     ],
+     "q": "Preferisci una giornata di pioggia accogliente in casa o una soleggiata fuori? Cosa faresti?",
+     "c": "Pianifica un'attività perfetta per un giorno di pioggia questa settimana."
+    },
+    "pt": {
+     "t": "Dia de chuva em casa ou de sol na rua",
+     "g": "Conta como passas um dia livre conforme o tempo.",
+     "p": [
+      "Um dia de chuva combina com livros, jogos de tabuleiro e sopa quente.",
+      "Um dia de sol combina com piqueniques, passeios e brincadeiras ao ar livre.",
+      "O mesmo dia livre muda muito com o tempo."
+     ],
+     "q": "Preferias um dia de chuva aconchegante em casa ou um dia de sol na rua? O que farias?",
+     "c": "Planeia uma atividade perfeita para um dia de chuva esta semana."
+    },
+    "pt_BR": {
+     "t": "Dia de chuva em casa ou de sol na rua",
+     "g": "Conte como você passa um dia livre conforme o tempo.",
+     "p": [
+      "Um dia de chuva combina com livros, jogos de tabuleiro e sopa quente.",
+      "Um dia de sol combina com piqueniques, passeios e brincadeiras ao ar livre.",
+      "O mesmo dia livre muda muito com o tempo."
+     ],
+     "q": "Você prefere um dia de chuva aconchegante em casa ou um dia de sol na rua? O que faria?",
+     "c": "Planeje uma atividade perfeita para um dia de chuva esta semana."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Spicy food or mild flavours",
+     "g": "Talk about spice levels and dishes that changed your taste.",
+     "p": [
+      "Spicy food adds heat and excitement, from curries to salsas.",
+      "Mild food lets gentle flavours like herbs and cheese shine.",
+      "Tastes can change over time, so try something once more."
+     ],
+     "q": "Would you rather eat only very spicy food or only mild food? Which dish would you miss?",
+     "c": "Try a new seasoning today, even a tiny pinch, and tell your Buddy."
+    },
+    "de": {
+     "t": "Scharfes Essen oder milde Aromen",
+     "g": "Sprich über Schärfegrade und Gerichte, die deinen Geschmack verändert haben.",
+     "p": [
+      "Scharfes Essen bringt Hitze und Spannung, von Currys bis Salsas.",
+      "Mildes Essen lässt sanfte Aromen wie Kräuter und Käse glänzen.",
+      "Der Geschmack ändert sich mit der Zeit, probier etwas ruhig nochmal."
+     ],
+     "q": "Würdest du lieber nur sehr scharf oder nur mild essen? Welches Gericht würdest du vermissen?",
+     "c": "Probiere heute ein neues Gewürz, auch nur eine Prise, und erzähl es deinem Buddy."
+    },
+    "es": {
+     "t": "Comida picante o sabores suaves",
+     "g": "Habla de niveles de picante y platos que cambiaron tu gusto.",
+     "p": [
+      "La comida picante aporta calor y emoción, de los currys a las salsas.",
+      "La comida suave deja brillar sabores delicados como hierbas y queso.",
+      "El gusto cambia con el tiempo, así que prueba algo otra vez."
+     ],
+     "q": "¿Prefieres comer solo comida muy picante o solo comida suave? ¿Qué plato echarías de menos?",
+     "c": "Prueba hoy un condimento nuevo, aunque sea una pizca, y cuéntaselo a tu Buddy."
+    },
+    "fr": {
+     "t": "Cuisine pimentée ou saveurs douces",
+     "g": "Parle des niveaux de piment et de plats qui ont changé tes goûts.",
+     "p": [
+      "La cuisine épicée apporte chaleur et surprise, des currys aux salsas.",
+      "La cuisine douce laisse briller des saveurs fines comme les herbes et le fromage.",
+      "Les goûts évoluent avec le temps, alors retente un aliment."
+     ],
+     "q": "Tu préfères manger uniquement très épicé ou uniquement doux ? Quel plat te manquerait ?",
+     "c": "Goûte aujourd'hui une nouvelle épice, même une pincée, et dis-le à ton Buddy."
+    },
+    "it": {
+     "t": "Cibo piccante o sapori delicati",
+     "g": "Parla dei livelli di piccante e dei piatti che hanno cambiato il tuo gusto.",
+     "p": [
+      "Il cibo piccante porta calore ed emozione, dai curry alle salse.",
+      "Il cibo delicato lascia brillare sapori gentili come erbe e formaggio.",
+      "I gusti cambiano col tempo, quindi riprova qualcosa."
+     ],
+     "q": "Preferisci mangiare solo cibo molto piccante o solo delicato? Quale piatto ti mancherebbe?",
+     "c": "Assaggia oggi una nuova spezia, anche solo un pizzico, e dillo al tuo Buddy."
+    },
+    "pt": {
+     "t": "Comida picante ou sabores suaves",
+     "g": "Fala dos níveis de picante e de pratos que mudaram o teu gosto.",
+     "p": [
+      "A comida picante traz calor e emoção, dos caris às salsas.",
+      "A comida suave deixa brilhar sabores delicados como ervas e queijo.",
+      "O gosto muda com o tempo, por isso tenta algo outra vez."
+     ],
+     "q": "Preferias comer só comida muito picante ou só comida suave? Que prato te faria falta?",
+     "c": "Experimenta hoje um tempero novo, mesmo só uma pitada, e conta ao teu Buddy."
+    },
+    "pt_BR": {
+     "t": "Comida picante ou sabores suaves",
+     "g": "Fale dos níveis de pimenta e de pratos que mudaram seu gosto.",
+     "p": [
+      "A comida picante traz calor e emoção, dos currys aos molhos.",
+      "A comida suave deixa brilhar sabores delicados como ervas e queijo.",
+      "O gosto muda com o tempo, então tente algo de novo."
+     ],
+     "q": "Você prefere comer só comida bem picante ou só comida suave? Que prato faria falta?",
+     "c": "Experimente hoje um tempero novo, nem que seja uma pitada, e conte ao seu Buddy."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "series",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Period dramas",
+     "g": "Step into series set in the past, with costumes, manners and social history.",
+     "p": [
+      "A period drama recreates an era through clothes, language, buildings and customs.",
+      "Rules of the time, like manners or class, shape what characters can do.",
+      "Good period shows make the past feel alive without a history lecture."
+     ],
+     "q": "Which era would you most like to visit through a series, and why?",
+     "c": "Watch a period scene and spot three details that tell you the era."
+    },
+    "de": {
+     "t": "Historienserien",
+     "g": "Tritt ein in Serien aus der Vergangenheit mit Kostümen, Umgangsformen und Sozialgeschichte.",
+     "p": [
+      "Eine Historienserie erschafft eine Epoche durch Kleidung, Sprache, Gebäude und Bräuche.",
+      "Regeln der Zeit, etwa Etikette oder Stand, bestimmen, was Figuren tun können.",
+      "Gute Historienserien lassen die Vergangenheit lebendig wirken, ohne Geschichtsvortrag."
+     ],
+     "q": "In welche Epoche würdest du am liebsten durch eine Serie reisen, und warum?",
+     "c": "Sieh eine Historienszene und finde drei Details, die die Epoche verraten."
+    },
+    "es": {
+     "t": "Series de época",
+     "g": "Entra en series ambientadas en el pasado, con vestuario, modales e historia social.",
+     "p": [
+      "Una serie de época recrea una era con ropa, lenguaje, edificios y costumbres.",
+      "Las reglas de entonces, como los modales o la clase, marcan lo que pueden hacer los personajes.",
+      "Las buenas series de época hacen vivo el pasado sin dar una clase de historia."
+     ],
+     "q": "¿A qué época te gustaría viajar a través de una serie, y por qué?",
+     "c": "Mira una escena de época y encuentra tres detalles que delaten la era."
+    },
+    "fr": {
+     "t": "Séries historiques",
+     "g": "Plonge dans des séries situées dans le passé, avec costumes, manières et histoire sociale.",
+     "p": [
+      "Une série historique recrée une époque par les vêtements, la langue, les bâtiments et les coutumes.",
+      "Les règles du temps, politesse ou rang social, déterminent ce que peuvent faire les personnages.",
+      "Les bonnes séries font vivre le passé sans cours d'histoire."
+     ],
+     "q": "Dans quelle époque aimerais-tu voyager grâce à une série, et pourquoi ?",
+     "c": "Regarde une scène d'époque et repère trois détails qui trahissent l'époque."
+    },
+    "it": {
+     "t": "Serie in costume",
+     "g": "Entra in serie ambientate nel passato, con costumi, buone maniere e storia sociale.",
+     "p": [
+      "Una serie in costume ricrea un'epoca con abiti, lingua, edifici e usanze.",
+      "Le regole del tempo, come le buone maniere o la classe sociale, limitano ciò che i personaggi possono fare.",
+      "Le buone serie in costume rendono vivo il passato senza lezioni di storia."
+     ],
+     "q": "In quale epoca vorresti viaggiare attraverso una serie, e perché?",
+     "c": "Guarda una scena d'epoca e trova tre dettagli che rivelano il periodo."
+    },
+    "pt": {
+     "t": "Séries de época",
+     "g": "Entra em séries ambientadas no passado, com figurinos, maneiras e história social.",
+     "p": [
+      "Uma série de época recria uma era com roupas, linguagem, edifícios e costumes.",
+      "As regras do tempo, como as maneiras ou a classe, limitam o que as personagens podem fazer.",
+      "As boas séries de época dão vida ao passado sem uma aula de história."
+     ],
+     "q": "Para que época gostarias de viajar através de uma série, e porquê?",
+     "c": "Vê uma cena de época e encontra três pormenores que revelam a era."
+    },
+    "pt_BR": {
+     "t": "Séries de época",
+     "g": "Entre em séries ambientadas no passado, com figurinos, boas maneiras e história social.",
+     "p": [
+      "Uma série de época recria uma era com roupas, linguagem, prédios e costumes.",
+      "As regras do tempo, como etiqueta ou classe, limitam o que os personagens podem fazer.",
+      "As boas séries de época dão vida ao passado sem uma aula de história."
+     ],
+     "q": "Para qual época você gostaria de viajar por meio de uma série, e por quê?",
+     "c": "Veja uma cena de época e encontre três detalhes que revelam a era."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cozy mysteries and whodunits",
+     "g": "Enjoy gentle puzzles, clever detectives and clues you can follow.",
+     "p": [
+      "A whodunit invites viewers to guess who did it from fair clues.",
+      "Cozy mysteries keep things light: charming places, curious sleuths, no gore.",
+      "The fun is in noticing small details and testing your own theory."
+     ],
+     "q": "Which fictional sleuth would you invite for tea and a chat?",
+     "c": "Watch the opening of a mystery and write one guess, then check it later."
+    },
+    "de": {
+     "t": "Wohlfühlkrimis und Whodunits",
+     "g": "Genieße sanfte Rätsel, kluge Detektive und Hinweise, denen man folgen kann.",
+     "p": [
+      "Ein Whodunit lädt dazu ein, aus fairen Hinweisen den Täter zu erraten.",
+      "Gemütliche Rätsel bleiben leicht: nette Orte, neugierige Spürnasen, nichts Grausames.",
+      "Der Spaß liegt darin, kleine Details zu bemerken und die eigene Theorie zu testen."
+     ],
+     "q": "Welchen erfundenen Detektiv würdest du zum Tee und Plaudern einladen?",
+     "c": "Sieh den Anfang eines Rätselkrimis, schreibe einen Tipp auf und prüfe ihn später."
+    },
+    "es": {
+     "t": "Misterios amables y whodunits",
+     "g": "Disfruta de enigmas suaves, detectives listos y pistas que se pueden seguir.",
+     "p": [
+      "Un whodunit invita a adivinar quién lo hizo a partir de pistas justas.",
+      "Los misterios amables son ligeros: lugares encantadores, curiosos sabuesos, nada cruel.",
+      "La diversión está en notar pequeños detalles y probar tu propia teoría."
+     ],
+     "q": "¿A qué detective de ficción invitarías a tomar un té y charlar?",
+     "c": "Mira el inicio de un misterio, anota una hipótesis y compruébala después."
+    },
+    "fr": {
+     "t": "Enquêtes cosy et whodunits",
+     "g": "Savoure des énigmes douces, des détectives malins et des indices à suivre.",
+     "p": [
+      "Un whodunit invite à deviner le coupable à partir d'indices loyaux.",
+      "Les enquêtes cosy restent légères : lieux charmants, fins limiers, rien de cruel.",
+      "Le plaisir est de remarquer de petits détails et de tester sa théorie."
+     ],
+     "q": "Quel détective de fiction inviterais-tu pour un thé et une conversation ?",
+     "c": "Regarde le début d'une enquête, note une hypothèse et vérifie-la plus tard."
+    },
+    "it": {
+     "t": "Gialli leggeri e whodunit",
+     "g": "Goditi enigmi gentili, detective astuti e indizi da seguire.",
+     "p": [
+      "Un whodunit invita a indovinare chi è stato partendo da indizi leali.",
+      "I gialli leggeri restano sereni: luoghi graziosi, investigatori curiosi, niente di truculento.",
+      "Il divertimento sta nel notare piccoli dettagli e mettere alla prova la propria teoria."
+     ],
+     "q": "Quale investigatore di finzione inviteresti per un tè e una chiacchierata?",
+     "c": "Guarda l'inizio di un giallo, scrivi un'ipotesi e verificala dopo."
+    },
+    "pt": {
+     "t": "Mistérios leves e whodunits",
+     "g": "Desfruta de enigmas suaves, detetives espertos e pistas que se podem seguir.",
+     "p": [
+      "Um whodunit convida a adivinhar quem foi a partir de pistas justas.",
+      "Os mistérios leves são ligeiros: lugares encantadores, detetives curiosos, nada cruel.",
+      "A graça está em reparar em pequenos pormenores e testar a própria teoria."
+     ],
+     "q": "Que detetive de ficção convidarias para um chá e uma conversa?",
+     "c": "Vê o início de um mistério, anota um palpite e confirma-o mais tarde."
+    },
+    "pt_BR": {
+     "t": "Mistérios leves e whodunits",
+     "g": "Curta enigmas suaves, detetives espertos e pistas que dá para seguir.",
+     "p": [
+      "Um whodunit convida a adivinhar quem foi a partir de pistas justas.",
+      "Os mistérios leves são tranquilos: lugares charmosos, detetives curiosos, nada cruel.",
+      "A graça está em notar pequenos detalhes e testar a própria teoria."
+     ],
+     "q": "Que detetive de ficção você convidaria para um chá e uma conversa?",
+     "c": "Veja o início de um mistério, anote um palpite e confira depois."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Teen and coming-of-age series",
+     "g": "See how school years, friendship and growing up fuel stories.",
+     "p": [
+      "Coming-of-age stories show firsts: first friends, first big choices, first goodbyes.",
+      "Many viewers see their own memories in the characters, whatever their age.",
+      "Humour and heart together make these series feel honest."
+     ],
+     "q": "What school memory would make a good opening scene?",
+     "c": "Write one line of a character's first day at a new school."
+    },
+    "de": {
+     "t": "Teenie- und Coming-of-Age-Serien",
+     "g": "Sieh, wie Schulzeit, Freundschaft und Erwachsenwerden Geschichten antreiben.",
+     "p": [
+      "Coming-of-Age-Geschichten zeigen Erstes: erste Freunde, erste große Entscheidungen, erste Abschiede.",
+      "Viele Zuschauer erkennen eigene Erinnerungen in den Figuren, egal wie alt sie sind.",
+      "Humor und Herz zusammen lassen diese Serien ehrlich wirken."
+     ],
+     "q": "Welche Schulerinnerung wäre eine gute Eröffnungsszene?",
+     "c": "Schreibe eine Zeile über den ersten Tag einer Figur an einer neuen Schule."
+    },
+    "es": {
+     "t": "Series juveniles y de crecimiento",
+     "g": "Mira cómo los años de escuela, la amistad y crecer alimentan las historias.",
+     "p": [
+      "Las historias de crecimiento muestran primeras veces: amigos, grandes decisiones, despedidas.",
+      "Muchos espectadores ven sus recuerdos en los personajes, tengan la edad que tengan.",
+      "El humor y el corazón juntos hacen que estas series suenen sinceras."
+     ],
+     "q": "¿Qué recuerdo del colegio sería una buena escena de apertura?",
+     "c": "Escribe una línea sobre el primer día de un personaje en un colegio nuevo."
+    },
+    "fr": {
+     "t": "Séries ados et récits d'apprentissage",
+     "g": "Vois comment les années d'école, l'amitié et grandir nourrissent les histoires.",
+     "p": [
+      "Ces récits montrent des premières fois : premiers amis, premiers grands choix, premiers adieux.",
+      "Beaucoup de spectateurs y retrouvent leurs souvenirs, quel que soit leur âge.",
+      "L'humour et le cœur ensemble donnent à ces séries un ton sincère."
+     ],
+     "q": "Quel souvenir d'école ferait une bonne scène d'ouverture ?",
+     "c": "Écris une ligne sur le premier jour d'un personnage dans une nouvelle école."
+    },
+    "it": {
+     "t": "Serie teen e di formazione",
+     "g": "Scopri come anni di scuola, amicizia e crescita alimentano le storie.",
+     "p": [
+      "Le storie di formazione mostrano le prime volte: primi amici, prime scelte, primi addii.",
+      "Molti spettatori vedono i propri ricordi nei personaggi, a qualsiasi età.",
+      "Umorismo e cuore insieme rendono queste serie sincere."
+     ],
+     "q": "Quale ricordo di scuola sarebbe una bella scena d'apertura?",
+     "c": "Scrivi una riga sul primo giorno di un personaggio in una scuola nuova."
+    },
+    "pt": {
+     "t": "Séries juvenis e de crescimento",
+     "g": "Vê como os anos de escola, a amizade e o crescer alimentam as histórias.",
+     "p": [
+      "As histórias de crescimento mostram primeiras vezes: amigos, grandes escolhas, despedidas.",
+      "Muitos espectadores veem as suas memórias nas personagens, seja qual for a idade.",
+      "Humor e coração juntos fazem estas séries parecer sinceras."
+     ],
+     "q": "Que memória da escola seria uma boa cena de abertura?",
+     "c": "Escreve uma linha sobre o primeiro dia de uma personagem numa escola nova."
+    },
+    "pt_BR": {
+     "t": "Séries teen e de amadurecimento",
+     "g": "Veja como os anos de escola, a amizade e o crescer alimentam as histórias.",
+     "p": [
+      "As histórias de amadurecimento mostram primeiras vezes: amigos, grandes escolhas, despedidas.",
+      "Muitos espectadores veem suas lembranças nos personagens, em qualquer idade.",
+      "Humor e coração juntos fazem essas séries parecerem sinceras."
+     ],
+     "q": "Que lembrança da escola daria uma boa cena de abertura?",
+     "c": "Escreva uma linha sobre o primeiro dia de um personagem numa escola nova."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Animated series for all ages",
+     "g": "Travel from Saturday morning cartoons to animated sitcoms for adults.",
+     "p": [
+      "Animation can show anything a drawing or computer can imagine.",
+      "Some cartoons aim at children, others at families, others at grown-ups.",
+      "Voices, timing and design give animated characters their personality."
+     ],
+     "q": "Which cartoon character from your childhood do you still remember well?",
+     "c": "Try doing a funny voice for a cartoon character and read one line aloud."
+    },
+    "de": {
+     "t": "Zeichentrickserien für alle Altersgruppen",
+     "g": "Reise von Samstagmorgen-Cartoons zu Zeichentrick-Sitcoms für Erwachsene.",
+     "p": [
+      "Animation kann alles zeigen, was eine Zeichnung oder ein Computer sich ausdenken kann.",
+      "Manche Cartoons richten sich an Kinder, andere an Familien, andere an Erwachsene.",
+      "Stimmen, Timing und Design geben Trickfiguren ihre Persönlichkeit."
+     ],
+     "q": "An welche Cartoonfigur aus deiner Kindheit erinnerst du dich noch gut?",
+     "c": "Probiere eine lustige Stimme für eine Cartoonfigur und lies eine Zeile laut."
+    },
+    "es": {
+     "t": "Series animadas para todas las edades",
+     "g": "Viaja de los dibujos del sábado por la mañana a las comedias animadas para adultos.",
+     "p": [
+      "La animación puede mostrar todo lo que un dibujo o un ordenador imaginan.",
+      "Algunos dibujos van a los niños, otros a las familias y otros a los adultos.",
+      "Voces, ritmo y diseño dan personalidad a los personajes animados."
+     ],
+     "q": "¿Qué personaje de dibujos de tu infancia recuerdas todavía bien?",
+     "c": "Prueba una voz graciosa para un personaje animado y lee una línea en voz alta."
+    },
+    "fr": {
+     "t": "Séries animées pour tous les âges",
+     "g": "Voyage des dessins animés du samedi matin aux sitcoms animées pour adultes.",
+     "p": [
+      "L'animation peut montrer tout ce qu'un dessin ou un ordinateur peut imaginer.",
+      "Certains dessins animés visent les enfants, d'autres les familles, d'autres les adultes.",
+      "Voix, rythme et design donnent leur personnalité aux personnages animés."
+     ],
+     "q": "De quel personnage de dessin animé de ton enfance te souviens-tu bien ?",
+     "c": "Essaie une voix drôle pour un personnage animé et lis une réplique à voix haute."
+    },
+    "it": {
+     "t": "Serie animate per tutte le età",
+     "g": "Viaggia dai cartoni del sabato mattina alle sitcom animate per adulti.",
+     "p": [
+      "L'animazione può mostrare tutto ciò che un disegno o un computer sa immaginare.",
+      "Alcuni cartoni sono per i bambini, altri per le famiglie, altri per gli adulti.",
+      "Voci, tempi e design danno personalità ai personaggi animati."
+     ],
+     "q": "Quale personaggio dei cartoni della tua infanzia ricordi ancora bene?",
+     "c": "Prova una voce buffa per un personaggio animato e leggi una battuta ad alta voce."
+    },
+    "pt": {
+     "t": "Séries animadas para todas as idades",
+     "g": "Viaja dos desenhos animados de sábado de manhã às sitcoms animadas para adultos.",
+     "p": [
+      "A animação pode mostrar tudo o que um desenho ou um computador imaginam.",
+      "Alguns desenhos animados são para crianças, outros para famílias, outros para adultos.",
+      "Vozes, ritmo e design dão personalidade às personagens animadas."
+     ],
+     "q": "De que personagem de desenhos animados da tua infância ainda te lembras bem?",
+     "c": "Experimenta uma voz engraçada para uma personagem animada e lê uma fala em voz alta."
+    },
+    "pt_BR": {
+     "t": "Séries animadas para todas as idades",
+     "g": "Viaje dos desenhos de sábado de manhã às sitcoms animadas para adultos.",
+     "p": [
+      "A animação pode mostrar tudo o que um desenho ou um computador imaginam.",
+      "Alguns desenhos são para crianças, outros para famílias, outros para adultos.",
+      "Vozes, ritmo e design dão personalidade aos personagens animados."
+     ],
+     "q": "De que personagem de desenho da sua infância você ainda lembra bem?",
+     "c": "Experimente uma voz engraçada para um personagem animado e leia uma fala em voz alta."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Children's television",
+     "g": "Look at playful, educational shows that help kids learn and imagine.",
+     "p": [
+      "Children's shows teach through songs, repetition, puppets and friendly hosts.",
+      "Good ones respect children, with clear stories, gentle humour and kindness.",
+      "Many adults remember their first TV friends for life."
+     ],
+     "q": "Which children's show taught you something you still remember?",
+     "c": "Hum or write the first line of a children's show theme from memory."
+    },
+    "de": {
+     "t": "Kinderfernsehen",
+     "g": "Wirf einen Blick auf verspielte, lehrreiche Sendungen, die Kindern beim Lernen und Fantasieren helfen.",
+     "p": [
+      "Kindersendungen lehren durch Lieder, Wiederholung, Puppen und freundliche Moderatoren.",
+      "Gute respektieren Kinder mit klaren Geschichten, sanftem Humor und Freundlichkeit.",
+      "Viele Erwachsene erinnern sich ein Leben lang an ihre ersten Fernsehfreunde."
+     ],
+     "q": "Welche Kindersendung hat dir etwas beigebracht, das du noch weißt?",
+     "c": "Summe oder schreibe aus dem Gedächtnis die erste Zeile eines Kindersendungs-Titelliedes."
+    },
+    "es": {
+     "t": "Televisión infantil",
+     "g": "Mira los programas divertidos y educativos que ayudan a los niños a aprender e imaginar.",
+     "p": [
+      "Los programas infantiles enseñan con canciones, repetición, títeres y presentadores amables.",
+      "Los buenos respetan a los niños, con historias claras, humor suave y amabilidad.",
+      "Muchos adultos recuerdan toda la vida a sus primeros amigos de la tele."
+     ],
+     "q": "¿Qué programa infantil te enseñó algo que todavía recuerdas?",
+     "c": "Tararea o escribe de memoria la primera línea de la sintonía de un programa infantil."
+    },
+    "fr": {
+     "t": "La télévision pour enfants",
+     "g": "Découvre les émissions ludiques et éducatives qui aident les enfants à apprendre et imaginer.",
+     "p": [
+      "Les émissions enfantines enseignent par les chansons, la répétition, les marionnettes et les animateurs chaleureux.",
+      "Les bonnes respectent les enfants : histoires claires, humour doux, gentillesse.",
+      "Beaucoup d'adultes se souviennent toute leur vie de leurs premiers amis de télé."
+     ],
+     "q": "Quelle émission pour enfants t'a appris quelque chose dont tu te souviens ?",
+     "c": "Fredonne ou écris de mémoire la première ligne du générique d'une émission enfantine."
+    },
+    "it": {
+     "t": "La televisione per ragazzi",
+     "g": "Guarda i programmi giocosi ed educativi che aiutano i bambini a imparare e immaginare.",
+     "p": [
+      "I programmi per bambini insegnano con canzoni, ripetizione, pupazzi e conduttori gentili.",
+      "I migliori rispettano i bambini, con storie chiare, umorismo dolce e gentilezza.",
+      "Molti adulti ricordano per sempre i loro primi amici della TV."
+     ],
+     "q": "Quale programma per bambini ti ha insegnato qualcosa che ricordi ancora?",
+     "c": "Canticchia o scrivi a memoria la prima riga della sigla di un programma per bambini."
+    },
+    "pt": {
+     "t": "Televisão infantil",
+     "g": "Olha para programas divertidos e educativos que ajudam as crianças a aprender e imaginar.",
+     "p": [
+      "Os programas infantis ensinam com canções, repetição, fantoches e apresentadores simpáticos.",
+      "Os bons respeitam as crianças, com histórias claras, humor suave e bondade.",
+      "Muitos adultos lembram-se para sempre dos seus primeiros amigos da TV."
+     ],
+     "q": "Que programa infantil te ensinou algo de que ainda te lembras?",
+     "c": "Trauteia ou escreve de memória a primeira linha da música de um programa infantil."
+    },
+    "pt_BR": {
+     "t": "Televisão infantil",
+     "g": "Conheça programas divertidos e educativos que ajudam as crianças a aprender e imaginar.",
+     "p": [
+      "Os programas infantis ensinam com músicas, repetição, fantoches e apresentadores simpáticos.",
+      "Os bons respeitam as crianças, com histórias claras, humor suave e gentileza.",
+      "Muitos adultos lembram para sempre dos seus primeiros amigos da TV."
+     ],
+     "q": "Que programa infantil te ensinou algo de que você ainda lembra?",
+     "c": "Cantarole ou escreva de memória a primeira linha da música de um programa infantil."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Nature documentary series",
+     "g": "Explore wildlife, landscapes and science told across several episodes.",
+     "p": [
+      "Nature series use patient filming to show animals and places we rarely see.",
+      "A calm narrator and music guide us through each habitat.",
+      "Each episode often follows one theme, like oceans, forests or migration."
+     ],
+     "q": "Which animal or landscape would you love to see in a nature series?",
+     "c": "Watch five minutes of a nature show and note one new fact you learned."
+    },
+    "de": {
+     "t": "Naturdokumentarserien",
+     "g": "Erkunde Tierwelt, Landschaften und Wissenschaft, erzählt über mehrere Folgen.",
+     "p": [
+      "Natur-Serien zeigen mit geduldigem Filmen Tiere und Orte, die wir selten sehen.",
+      "Ein ruhiger Sprecher und Musik führen uns durch jeden Lebensraum.",
+      "Jede Folge folgt oft einem Thema, etwa Ozeane, Wälder oder Wanderungen."
+     ],
+     "q": "Welches Tier oder welche Landschaft würdest du gern in einer Naturserie sehen?",
+     "c": "Sieh fünf Minuten einer Naturdoku und notiere eine neue Tatsache, die du lernst."
+    },
+    "es": {
+     "t": "Series documentales de naturaleza",
+     "g": "Explora la vida salvaje, los paisajes y la ciencia contados en varios episodios.",
+     "p": [
+      "Las series de naturaleza usan un rodaje paciente para mostrar animales y lugares poco vistos.",
+      "Un narrador tranquilo y la música nos guían por cada hábitat.",
+      "Cada episodio suele seguir un tema, como océanos, bosques o migraciones."
+     ],
+     "q": "¿Qué animal o paisaje te encantaría ver en una serie de naturaleza?",
+     "c": "Mira cinco minutos de un documental de naturaleza y anota un dato nuevo."
+    },
+    "fr": {
+     "t": "Séries documentaires nature",
+     "g": "Explore la faune, les paysages et la science racontés sur plusieurs épisodes.",
+     "p": [
+      "Les séries nature utilisent un tournage patient pour montrer des animaux et des lieux rarement vus.",
+      "Un narrateur calme et la musique nous guident dans chaque habitat.",
+      "Chaque épisode suit souvent un thème, comme les océans, les forêts ou les migrations."
+     ],
+     "q": "Quel animal ou paysage aimerais-tu voir dans une série nature ?",
+     "c": "Regarde cinq minutes d'un documentaire nature et note un fait nouveau."
+    },
+    "it": {
+     "t": "Serie documentarie sulla natura",
+     "g": "Esplora fauna, paesaggi e scienza raccontati in più episodi.",
+     "p": [
+      "Le serie naturalistiche usano riprese pazienti per mostrare animali e luoghi che vediamo di rado.",
+      "Una voce narrante calma e la musica ci guidano in ogni habitat.",
+      "Ogni episodio segue spesso un tema, come oceani, foreste o migrazioni."
+     ],
+     "q": "Quale animale o paesaggio ti piacerebbe vedere in una serie naturalistica?",
+     "c": "Guarda cinque minuti di un documentario naturalistico e annota un fatto nuovo."
+    },
+    "pt": {
+     "t": "Séries documentais de natureza",
+     "g": "Explora a vida selvagem, as paisagens e a ciência contadas em vários episódios.",
+     "p": [
+      "As séries de natureza usam filmagem paciente para mostrar animais e lugares raramente vistos.",
+      "Um narrador calmo e a música guiam-nos por cada habitat.",
+      "Cada episódio segue muitas vezes um tema, como oceanos, florestas ou migrações."
+     ],
+     "q": "Que animal ou paisagem gostarias de ver numa série de natureza?",
+     "c": "Vê cinco minutos de um documentário de natureza e anota um facto novo."
+    },
+    "pt_BR": {
+     "t": "Séries documentais de natureza",
+     "g": "Explore a vida selvagem, as paisagens e a ciência contadas em vários episódios.",
+     "p": [
+      "As séries de natureza usam filmagem paciente para mostrar animais e lugares raramente vistos.",
+      "Um narrador calmo e a música nos guiam por cada habitat.",
+      "Cada episódio costuma seguir um tema, como oceanos, florestas ou migrações."
+     ],
+     "q": "Que animal ou paisagem você gostaria de ver numa série de natureza?",
+     "c": "Assista a cinco minutos de um documentário de natureza e anote um fato novo."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reality and competition shows",
+     "g": "Meet unscripted formats with contests, challenges and real people.",
+     "p": [
+      "Reality formats follow real people instead of actors reading scripts.",
+      "Competitions use clear rules, time limits and a final winner to build suspense.",
+      "Editing and music shape the story we see from hours of filming."
+     ],
+     "q": "Which kind of contest would you enjoy: talent, building, travel or something else?",
+     "c": "Invent a friendly competition with one rule, one prize and one time limit."
+    },
+    "de": {
+     "t": "Reality- und Wettbewerbsshows",
+     "g": "Lerne Formate ohne Drehbuch kennen, mit Wettkämpfen, Aufgaben und echten Menschen.",
+     "p": [
+      "Reality-Formate begleiten echte Menschen statt Schauspieler mit Drehbuch.",
+      "Wettbewerbe nutzen klare Regeln, Zeitlimits und einen Sieger, um Spannung aufzubauen.",
+      "Schnitt und Musik formen aus Stunden von Material die Geschichte, die wir sehen."
+     ],
+     "q": "Welche Art Wettbewerb würde dir gefallen: Talent, Bauen, Reisen oder etwas anderes?",
+     "c": "Erfinde einen freundlichen Wettbewerb mit einer Regel, einem Preis und einem Zeitlimit."
+    },
+    "es": {
+     "t": "Reality y concursos",
+     "g": "Conoce los formatos sin guion, con concursos, retos y gente real.",
+     "p": [
+      "Los realities siguen a personas reales en vez de actores con guion.",
+      "Los concursos usan reglas claras, límites de tiempo y un ganador final para crear tensión.",
+      "El montaje y la música dan forma a la historia que vemos tras horas de rodaje."
+     ],
+     "q": "¿Qué tipo de concurso disfrutarías: talento, construcción, viajes u otro?",
+     "c": "Inventa un concurso amistoso con una regla, un premio y un límite de tiempo."
+    },
+    "fr": {
+     "t": "Télé-réalité et compétitions",
+     "g": "Découvre les formats sans scénario, avec concours, défis et vraies personnes.",
+     "p": [
+      "La téléréalité suit de vraies personnes plutôt que des acteurs qui lisent un script.",
+      "Les compétitions utilisent des règles claires, des limites de temps et un gagnant final pour créer du suspense.",
+      "Le montage et la musique façonnent l'histoire tirée de heures de tournage."
+     ],
+     "q": "Quel type de concours aimerais-tu : talent, construction, voyage ou autre ?",
+     "c": "Invente un concours amical avec une règle, un prix et une limite de temps."
+    },
+    "it": {
+     "t": "Reality e talent show",
+     "g": "Conosci i format senza copione, con gare, sfide e persone reali.",
+     "p": [
+      "I reality seguono persone vere invece di attori che leggono un copione.",
+      "Le gare usano regole chiare, limiti di tempo e un vincitore finale per creare suspense.",
+      "Montaggio e musica danno forma alla storia ricavata da ore di riprese."
+     ],
+     "q": "Che tipo di gara ti piacerebbe: talento, costruzione, viaggio o altro?",
+     "c": "Inventa una gara amichevole con una regola, un premio e un limite di tempo."
+    },
+    "pt": {
+     "t": "Reality shows e concursos",
+     "g": "Conhece os formatos sem guião, com concursos, desafios e pessoas reais.",
+     "p": [
+      "Os reality shows seguem pessoas reais em vez de atores com guião.",
+      "Os concursos usam regras claras, limites de tempo e um vencedor final para criar suspense.",
+      "A montagem e a música dão forma à história tirada de horas de filmagem."
+     ],
+     "q": "Que tipo de concurso gostarias: talento, construção, viagens ou outro?",
+     "c": "Inventa um concurso amigável com uma regra, um prémio e um limite de tempo."
+    },
+    "pt_BR": {
+     "t": "Reality shows e competições",
+     "g": "Conheça os formatos sem roteiro, com competições, desafios e pessoas reais.",
+     "p": [
+      "Os reality shows seguem pessoas reais em vez de atores com roteiro.",
+      "As competições usam regras claras, limites de tempo e um vencedor final para criar suspense.",
+      "A edição e a música dão forma à história tirada de horas de gravação."
+     ],
+     "q": "Que tipo de competição você curtiria: talento, construção, viagem ou outra?",
+     "c": "Invente uma competição amigável com uma regra, um prêmio e um limite de tempo."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cooking and baking shows",
+     "g": "Taste everything from recipe demos to friendly kitchen competitions.",
+     "p": [
+      "Early cooking shows simply taught viewers a recipe step by step.",
+      "Modern ones add travel, history, challenges and personal stories.",
+      "A good food show makes you hungry and teaches a technique at once."
+     ],
+     "q": "What dish would you love to see cooked on screen, and by whom?",
+     "c": "Choose one simple dish and write its recipe in three short steps."
+    },
+    "de": {
+     "t": "Koch- und Backsendungen",
+     "g": "Probiere alles, von Rezeptvorführungen bis zu freundlichen Küchenwettbewerben.",
+     "p": [
+      "Frühe Kochsendungen zeigten einfach Schritt für Schritt ein Rezept.",
+      "Moderne ergänzen Reisen, Geschichte, Wettbewerbe und persönliche Geschichten.",
+      "Eine gute Kochsendung macht Hunger und lehrt zugleich eine Technik."
+     ],
+     "q": "Welches Gericht würdest du gern im Fernsehen gekocht sehen, und von wem?",
+     "c": "Wähle ein einfaches Gericht und schreibe sein Rezept in drei kurzen Schritten."
+    },
+    "es": {
+     "t": "Programas de cocina y repostería",
+     "g": "Prueba de todo, desde demostraciones de recetas a concursos amistosos en la cocina.",
+     "p": [
+      "Los primeros programas de cocina enseñaban una receta paso a paso.",
+      "Los modernos añaden viajes, historia, retos e historias personales.",
+      "Un buen programa de comida da hambre y enseña una técnica a la vez."
+     ],
+     "q": "¿Qué plato te gustaría ver cocinado en pantalla, y por quién?",
+     "c": "Elige un plato sencillo y escribe su receta en tres pasos cortos."
+    },
+    "fr": {
+     "t": "Émissions de cuisine et de pâtisserie",
+     "g": "Goûte à tout, des démonstrations de recettes aux concours amicaux en cuisine.",
+     "p": [
+      "Les premières émissions de cuisine enseignaient simplement une recette pas à pas.",
+      "Les modernes ajoutent voyages, histoire, défis et histoires personnelles.",
+      "Une bonne émission de cuisine donne faim et enseigne une technique à la fois."
+     ],
+     "q": "Quel plat aimerais-tu voir cuisiner à l'écran, et par qui ?",
+     "c": "Choisis un plat simple et écris sa recette en trois courtes étapes."
+    },
+    "it": {
+     "t": "Programmi di cucina e pasticceria",
+     "g": "Assaggia di tutto, dalle dimostrazioni di ricette alle gare amichevoli in cucina.",
+     "p": [
+      "I primi programmi di cucina insegnavano semplicemente una ricetta passo dopo passo.",
+      "Quelli moderni aggiungono viaggi, storia, sfide e storie personali.",
+      "Un buon programma di cucina fa venire fame e insegna una tecnica insieme."
+     ],
+     "q": "Quale piatto ti piacerebbe vedere cucinato in TV, e da chi?",
+     "c": "Scegli un piatto semplice e scrivi la ricetta in tre brevi passaggi."
+    },
+    "pt": {
+     "t": "Programas de culinária e pastelaria",
+     "g": "Prova de tudo, de demonstrações de receitas a concursos amigáveis na cozinha.",
+     "p": [
+      "Os primeiros programas de culinária ensinavam simplesmente uma receita passo a passo.",
+      "Os modernos juntam viagens, história, desafios e histórias pessoais.",
+      "Um bom programa de comida dá fome e ensina uma técnica ao mesmo tempo."
+     ],
+     "q": "Que prato gostarias de ver cozinhado no ecrã, e por quem?",
+     "c": "Escolhe um prato simples e escreve a receita em três passos curtos."
+    },
+    "pt_BR": {
+     "t": "Programas de culinária e confeitaria",
+     "g": "Prove de tudo, de demonstrações de receitas a competições amigáveis na cozinha.",
+     "p": [
+      "Os primeiros programas de culinária só ensinavam uma receita passo a passo.",
+      "Os modernos acrescentam viagens, história, desafios e histórias pessoais.",
+      "Um bom programa de comida dá fome e ensina uma técnica ao mesmo tempo."
+     ],
+     "q": "Que prato você gostaria de ver sendo preparado na tela, e por quem?",
+     "c": "Escolha um prato simples e escreva a receita em três passos curtos."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sketch and variety shows",
+     "g": "Enjoy short comic scenes, music and guests in one lively package.",
+     "p": [
+      "A sketch is a brief comic scene with a clear idea and a punchline.",
+      "Variety shows mix sketches, songs, dancing and special guests.",
+      "Recurring characters and catchphrases make sketch shows memorable."
+     ],
+     "q": "Which sketch or comic character still makes you smile?",
+     "c": "Write a six-line sketch: a setting, a problem and a punchline."
+    },
+    "de": {
+     "t": "Sketch- und Unterhaltungsshows",
+     "g": "Genieße kurze Comedy-Szenen, Musik und Gäste in einem lebendigen Paket.",
+     "p": [
+      "Ein Sketch ist eine kurze komische Szene mit klarer Idee und Pointe.",
+      "Unterhaltungsshows mischen Sketche, Lieder, Tanz und besondere Gäste.",
+      "Wiederkehrende Figuren und Sprüche machen Sketchshows unvergesslich."
+     ],
+     "q": "Welcher Sketch oder welche Komikfigur bringt dich immer noch zum Lächeln?",
+     "c": "Schreibe einen Sketch in sechs Zeilen: Ort, Problem und Pointe."
+    },
+    "es": {
+     "t": "Programas de sketches y variedades",
+     "g": "Disfruta de escenas cómicas cortas, música e invitados en un paquete animado.",
+     "p": [
+      "Un sketch es una escena cómica breve con una idea clara y un remate.",
+      "Los programas de variedades mezclan sketches, canciones, baile e invitados.",
+      "Los personajes recurrentes y las frases hacen memorables los programas de sketches."
+     ],
+     "q": "¿Qué sketch o personaje cómico todavía te hace sonreír?",
+     "c": "Escribe un sketch de seis líneas: un escenario, un problema y un remate."
+    },
+    "fr": {
+     "t": "Sketchs et émissions de variétés",
+     "g": "Savoure de courtes scènes comiques, de la musique et des invités dans un ensemble vivant.",
+     "p": [
+      "Un sketch est une courte scène comique avec une idée claire et une chute.",
+      "Les émissions de variétés mêlent sketchs, chansons, danse et invités.",
+      "Les personnages récurrents et les répliques cultes rendent les sketchs mémorables."
+     ],
+     "q": "Quel sketch ou personnage comique te fait encore sourire ?",
+     "c": "Écris un sketch de six lignes : un décor, un problème et une chute."
+    },
+    "it": {
+     "t": "Sketch e programmi di varietà",
+     "g": "Goditi brevi scene comiche, musica e ospiti in un pacchetto vivace.",
+     "p": [
+      "Uno sketch è una breve scena comica con un'idea chiara e una battuta finale.",
+      "I programmi di varietà mescolano sketch, canzoni, balli e ospiti speciali.",
+      "Personaggi ricorrenti e tormentoni rendono memorabili gli show di sketch."
+     ],
+     "q": "Quale sketch o personaggio comico ti fa ancora sorridere?",
+     "c": "Scrivi uno sketch di sei righe: un luogo, un problema e una battuta finale."
+    },
+    "pt": {
+     "t": "Programas de sketches e variedades",
+     "g": "Diverte-te com cenas cómicas curtas, música e convidados num pacote animado.",
+     "p": [
+      "Um sketch é uma cena cómica breve com uma ideia clara e um remate.",
+      "Os programas de variedades misturam sketches, canções, dança e convidados especiais.",
+      "Personagens recorrentes e bordões tornam os programas de sketches memoráveis."
+     ],
+     "q": "Que sketch ou personagem cómica ainda te faz sorrir?",
+     "c": "Escreve um sketch de seis linhas: um cenário, um problema e um remate."
+    },
+    "pt_BR": {
+     "t": "Programas de esquetes e variedades",
+     "g": "Divirta-se com cenas cômicas curtas, música e convidados num pacote animado.",
+     "p": [
+      "Uma esquete é uma cena cômica breve com uma ideia clara e um final engraçado.",
+      "Os programas de variedades misturam esquetes, músicas, dança e convidados especiais.",
+      "Personagens recorrentes e bordões tornam os programas de esquetes memoráveis."
+     ],
+     "q": "Que esquete ou personagem cômico ainda faz você sorrir?",
+     "c": "Escreva uma esquete de seis linhas: um cenário, um problema e um final engraçado."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: the map of TV genres",
+     "g": "Look back at formats and genres and place your favourites on the map.",
+     "p": [
+      "You have met sitcoms, dramas, soaps, anthologies, mysteries, reality and more.",
+      "Many shows blend genres, like a medical comedy or a fantasy family tale.",
+      "Naming a genre is a handy way to describe and recommend a show."
+     ],
+     "q": "Which genre surprised you most during this first month?",
+     "c": "Pick three favourite shows and label each with its genre or genre mix."
+    },
+    "de": {
+     "t": "Rückblick: die Landkarte der TV-Genres",
+     "g": "Blicke auf Formate und Genres zurück und ordne deine Favoriten auf der Karte ein.",
+     "p": [
+      "Du hast Sitcoms, Dramen, Soaps, Anthologien, Rätselkrimis, Reality und mehr kennengelernt.",
+      "Viele Serien mischen Genres, etwa eine Ärztecomedy oder ein Fantasy-Familienmärchen.",
+      "Ein Genre zu benennen hilft, eine Serie zu beschreiben und zu empfehlen."
+     ],
+     "q": "Welches Genre hat dich in diesem ersten Monat am meisten überrascht?",
+     "c": "Wähle drei Lieblingsserien und gib jeder ihr Genre oder ihre Genre-Mischung."
+    },
+    "es": {
+     "t": "Repaso: el mapa de los géneros",
+     "g": "Repasa formatos y géneros y coloca tus favoritas en el mapa.",
+     "p": [
+      "Has conocido comedias, dramas, culebrones, antologías, misterios, realities y más.",
+      "Muchas series mezclan géneros, como una comedia médica o un cuento familiar de fantasía.",
+      "Nombrar un género es una forma útil de describir y recomendar una serie."
+     ],
+     "q": "¿Qué género te sorprendió más durante este primer mes?",
+     "c": "Elige tres series favoritas y etiqueta cada una con su género o mezcla."
+    },
+    "fr": {
+     "t": "Bilan : la carte des genres télé",
+     "g": "Revois les formats et les genres et place tes favoris sur la carte.",
+     "p": [
+      "Tu as rencontré sitcoms, drames, feuilletons, anthologies, enquêtes, télé-réalité et plus.",
+      "Beaucoup de séries mêlent les genres, comme une comédie médicale ou un conte familial fantastique.",
+      "Nommer un genre est un moyen pratique de décrire et recommander une série."
+     ],
+     "q": "Quel genre t'a le plus surpris pendant ce premier mois ?",
+     "c": "Choisis trois séries favorites et étiquette chacune avec son genre ou son mélange."
+    },
+    "it": {
+     "t": "Ripasso: la mappa dei generi TV",
+     "g": "Ripercorri formati e generi e colloca i tuoi preferiti sulla mappa.",
+     "p": [
+      "Hai incontrato sitcom, drammi, soap, antologie, gialli, reality e altro.",
+      "Molte serie mescolano i generi, come una commedia medica o una favola familiare fantasy.",
+      "Dare un nome a un genere è un modo utile per descrivere e consigliare una serie."
+     ],
+     "q": "Quale genere ti ha sorpreso di più in questo primo mese?",
+     "c": "Scegli tre serie preferite ed etichetta ognuna con il suo genere o mix."
+    },
+    "pt": {
+     "t": "Revisão: o mapa dos géneros de TV",
+     "g": "Revê formatos e géneros e coloca as tuas preferidas no mapa.",
+     "p": [
+      "Conheceste sitcoms, dramas, soaps, antologias, mistérios, reality shows e mais.",
+      "Muitas séries misturam géneros, como uma comédia médica ou um conto familiar de fantasia.",
+      "Dar nome a um género é uma forma útil de descrever e recomendar uma série."
+     ],
+     "q": "Que género mais te surpreendeu neste primeiro mês?",
+     "c": "Escolhe três séries preferidas e etiqueta cada uma com o seu género ou mistura."
+    },
+    "pt_BR": {
+     "t": "Revisão: o mapa dos gêneros de TV",
+     "g": "Reveja formatos e gêneros e coloque suas favoritas no mapa.",
+     "p": [
+      "Você conheceu sitcoms, dramas, novelas, antologias, mistérios, reality shows e mais.",
+      "Muitas séries misturam gêneros, como uma comédia médica ou um conto familiar de fantasia.",
+      "Dar nome a um gênero é um jeito útil de descrever e recomendar uma série."
+     ],
+     "q": "Que gênero mais surpreendeu você neste primeiro mês?",
+     "c": "Escolha três séries favoritas e rotule cada uma com seu gênero ou mistura."
+    }
+   }
+  }
+ ]
+}

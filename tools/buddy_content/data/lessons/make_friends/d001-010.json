@@ -1,0 +1,835 @@
+{
+ "topic": "make_friends",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to the friendship path",
+     "g": "See why friends matter in a new place and how tiny daily steps build real connections.",
+     "p": [
+      "Friends make a new city feel like home and help you feel safe and happy.",
+      "You do not need a big personality, just small and steady steps every day.",
+      "Everyone starts as a stranger, and almost everyone is open to a friendly hello."
+     ],
+     "q": "What made you want to meet new people right now?",
+     "c": "Today, notice one person near you and silently wish them a good day."
+    },
+    "de": {
+     "t": "Willkommen auf dem Freundschaftsweg",
+     "g": "Du siehst, warum Freunde in einer neuen Stadt wichtig sind und wie kleine Tagesschritte echte Verbindungen schaffen.",
+     "p": [
+      "Freunde machen eine neue Stadt zum Zuhause und geben dir Halt und Freude.",
+      "Du brauchst keine laute Persönlichkeit, nur kleine, stetige Schritte jeden Tag.",
+      "Jeder beginnt als Fremder, und fast alle freuen sich über einen freundlichen Gruß."
+     ],
+     "q": "Was hat dich dazu gebracht, gerade jetzt neue Leute kennenlernen zu wollen?",
+     "c": "Bemerke heute eine Person in deiner Nähe und wünsche ihr im Stillen einen schönen Tag."
+    },
+    "es": {
+     "t": "Bienvenido al camino de la amistad",
+     "g": "Descubre por qué los amigos importan en un lugar nuevo y cómo pequeños pasos diarios crean vínculos reales.",
+     "p": [
+      "Los amigos hacen que una ciudad nueva se sienta como casa y te dan seguridad y alegría.",
+      "No hace falta una personalidad enorme, solo pasos pequeños y constantes cada día.",
+      "Todos empiezan siendo desconocidos y casi todos agradecen un saludo amable."
+     ],
+     "q": "¿Qué te animó a querer conocer gente nueva ahora mismo?",
+     "c": "Hoy fíjate en una persona cerca de ti y deséale mentalmente un buen día."
+    },
+    "fr": {
+     "t": "Bienvenue sur le chemin de l'amitié",
+     "g": "Découvre pourquoi les amis comptent dans un nouveau lieu et comment de petits pas quotidiens créent de vrais liens.",
+     "p": [
+      "Les amis transforment une nouvelle ville en chez-soi et t'apportent sécurité et joie.",
+      "Pas besoin d'une grande personnalité, seulement de petits pas réguliers chaque jour.",
+      "Tout le monde commence en inconnu, et presque tous accueillent bien un bonjour sympa."
+     ],
+     "q": "Qu'est-ce qui t'a donné envie de rencontrer du monde en ce moment ?",
+     "c": "Aujourd'hui, repère une personne près de toi et souhaite-lui en silence une bonne journée."
+    },
+    "it": {
+     "t": "Benvenuto sul cammino dell'amicizia",
+     "g": "Scopri perché gli amici contano in un posto nuovo e come piccoli passi quotidiani creano legami veri.",
+     "p": [
+      "Gli amici fanno sentire una città nuova come casa e ti danno serenità e allegria.",
+      "Non serve una personalità travolgente, bastano piccoli passi costanti ogni giorno.",
+      "Tutti partono da sconosciuti e quasi tutti apprezzano un saluto gentile."
+     ],
+     "q": "Cosa ti ha fatto venire voglia di conoscere gente nuova proprio ora?",
+     "c": "Oggi nota una persona vicino a te e augurale mentalmente una buona giornata."
+    },
+    "pt": {
+     "t": "Bem-vindo ao caminho da amizade",
+     "g": "Descobre porque os amigos contam num lugar novo e como pequenos passos diários criam laços verdadeiros.",
+     "p": [
+      "Os amigos fazem de uma cidade nova a tua casa e dão-te segurança e alegria.",
+      "Não precisas de uma personalidade enorme, só de passos pequenos e constantes todos os dias.",
+      "Todos começam como estranhos e quase todos gostam de um cumprimento simpático."
+     ],
+     "q": "O que te fez querer conhecer pessoas novas agora?",
+     "c": "Hoje repara numa pessoa perto de ti e deseja-lhe em silêncio um bom dia."
+    },
+    "pt_BR": {
+     "t": "Boas-vindas ao caminho da amizade",
+     "g": "Descubra por que os amigos importam num lugar novo e como pequenos passos diários criam laços de verdade.",
+     "p": [
+      "Amigos fazem uma cidade nova virar lar e trazem segurança e alegria.",
+      "Você não precisa de uma personalidade enorme, só de passos pequenos e constantes todo dia.",
+      "Todo mundo começa como desconhecido e quase todos gostam de um oi simpático."
+     ],
+     "q": "O que fez você querer conhecer gente nova agora?",
+     "c": "Hoje repare em uma pessoa perto de você e deseje a ela, em silêncio, um bom dia."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Friendship takes time",
+     "g": "Learn that close friendships grow slowly, so patience is part of your plan.",
+     "p": [
+      "Close friends often need many hours of shared time, not just one great chat.",
+      "Seeing the same people again and again does more than one big effort.",
+      "Slow progress is normal and does not mean something is wrong with you."
+     ],
+     "q": "How do you feel about waiting for friendships to grow?",
+     "c": "Plan to see one acquaintance again this week, even for ten minutes."
+    },
+    "de": {
+     "t": "Freundschaft braucht Zeit",
+     "g": "Du lernst, dass enge Freundschaften langsam wachsen und Geduld zum Plan gehört.",
+     "p": [
+      "Enge Freunde brauchen oft viele gemeinsame Stunden, nicht nur ein tolles Gespräch.",
+      "Dieselben Leute immer wieder zu sehen bringt mehr als eine große Anstrengung.",
+      "Langsamer Fortschritt ist normal und heißt nicht, dass mit dir etwas nicht stimmt."
+     ],
+     "q": "Wie fühlt es sich für dich an, auf wachsende Freundschaften zu warten?",
+     "c": "Plane diese Woche ein Wiedersehen mit einer Bekanntschaft, und sei es nur für zehn Minuten."
+    },
+    "es": {
+     "t": "La amistad lleva tiempo",
+     "g": "Aprende que las amistades cercanas crecen despacio, así que la paciencia es parte del plan.",
+     "p": [
+      "Los amigos cercanos suelen necesitar muchas horas juntos, no solo una gran charla.",
+      "Ver a las mismas personas una y otra vez sirve más que un gran esfuerzo puntual.",
+      "Avanzar despacio es normal y no significa que algo vaya mal contigo."
+     ],
+     "q": "¿Cómo te sientes al esperar a que las amistades crezcan?",
+     "c": "Planea volver a ver a un conocido esta semana, aunque sean diez minutos."
+    },
+    "fr": {
+     "t": "L'amitié prend du temps",
+     "g": "Comprends que les amitiés proches grandissent lentement et que la patience fait partie du plan.",
+     "p": [
+      "Les vrais amis demandent souvent beaucoup d'heures partagées, pas juste une belle discussion.",
+      "Revoir les mêmes personnes compte plus qu'un gros effort isolé.",
+      "Avancer lentement est normal et ne veut pas dire que quelque chose cloche chez toi."
+     ],
+     "q": "Comment vis-tu l'attente pendant que les amitiés se construisent ?",
+     "c": "Prévois de revoir une connaissance cette semaine, même dix minutes."
+    },
+    "it": {
+     "t": "L'amicizia richiede tempo",
+     "g": "Impara che le amicizie profonde crescono piano, quindi la pazienza fa parte del piano.",
+     "p": [
+      "Gli amici stretti di solito vogliono molte ore insieme, non una sola bella chiacchierata.",
+      "Rivedere le stesse persone conta più di un grande sforzo isolato.",
+      "Andare piano è normale e non significa che ci sia qualcosa che non va in te."
+     ],
+     "q": "Come vivi l'attesa mentre le amicizie crescono?",
+     "c": "Programma di rivedere un conoscente questa settimana, anche solo dieci minuti."
+    },
+    "pt": {
+     "t": "A amizade leva tempo",
+     "g": "Aprende que as amizades próximas crescem devagar, por isso a paciência faz parte do plano.",
+     "p": [
+      "Os amigos próximos costumam precisar de muitas horas juntos, não só de uma boa conversa.",
+      "Ver as mesmas pessoas muitas vezes vale mais do que um grande esforço único.",
+      "Avançar devagar é normal e não quer dizer que algo esteja mal contigo."
+     ],
+     "q": "Como te sentes ao esperar que as amizades cresçam?",
+     "c": "Planeia voltar a ver um conhecido esta semana, nem que sejam dez minutos."
+    },
+    "pt_BR": {
+     "t": "Amizade leva tempo",
+     "g": "Aprenda que amizades próximas crescem devagar, então a paciência faz parte do plano.",
+     "p": [
+      "Amigos próximos costumam precisar de muitas horas juntos, não só de um bom papo.",
+      "Ver as mesmas pessoas várias vezes vale mais do que um grande esforço isolado.",
+      "Ir devagar é normal e não quer dizer que haja algo errado com você."
+     ],
+     "q": "Como você se sente esperando as amizades crescerem?",
+     "c": "Planeje rever um conhecido esta semana, nem que seja por dez minutos."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your friendship goals",
+     "g": "Decide what kind of friends you want: a hiking buddy, a study group, a confidant or a mix.",
+     "p": [
+      "Different friends meet different needs, and that is perfectly fine.",
+      "Knowing what you want helps you choose the right places and activities.",
+      "Goals can change over time, so keep them light and flexible."
+     ],
+     "q": "What kind of friend would you most like to find first?",
+     "c": "Write one sentence: 'I would love a friend to share ...' and finish it."
+    },
+    "de": {
+     "t": "Deine Freundschaftsziele",
+     "g": "Du entscheidest, welche Freunde du suchst: Wanderpartner, Lerngruppe, Vertrauensperson oder eine Mischung.",
+     "p": [
+      "Verschiedene Freunde erfüllen verschiedene Bedürfnisse, und das ist völlig in Ordnung.",
+      "Wenn du weißt, was du willst, findest du leichter passende Orte und Aktivitäten.",
+      "Ziele dürfen sich ändern, halte sie also leicht und flexibel."
+     ],
+     "q": "Welche Art Freund würdest du am liebsten zuerst finden?",
+     "c": "Schreibe einen Satz: „Ich würde gern einen Freund haben, mit dem ich ...“ und vervollständige ihn."
+    },
+    "es": {
+     "t": "Tus metas de amistad",
+     "g": "Decide qué tipo de amigos quieres: compañero de senderismo, grupo de estudio, confidente o una mezcla.",
+     "p": [
+      "Cada amigo cubre una necesidad distinta, y eso está muy bien.",
+      "Saber lo que buscas te ayuda a elegir los lugares y actividades adecuados.",
+      "Las metas pueden cambiar con el tiempo, así que mantenlas ligeras y flexibles."
+     ],
+     "q": "¿Qué tipo de amigo te gustaría encontrar primero?",
+     "c": "Escribe una frase: «Me encantaría tener un amigo con quien ...» y complétala."
+    },
+    "fr": {
+     "t": "Tes objectifs d'amitié",
+     "g": "Décide quel genre d'amis tu veux : partenaire de rando, groupe d'étude, confident ou un mélange.",
+     "p": [
+      "Chaque ami répond à un besoin différent, et c'est très bien ainsi.",
+      "Savoir ce que tu veux t'aide à choisir les bons lieux et activités.",
+      "Les objectifs peuvent évoluer, alors garde-les légers et souples."
+     ],
+     "q": "Quel type d'ami aimerais-tu trouver en premier ?",
+     "c": "Écris une phrase : « J'aimerais un ami avec qui ... » et termine-la."
+    },
+    "it": {
+     "t": "I tuoi obiettivi di amicizia",
+     "g": "Decidi che tipo di amici vuoi: compagno di escursioni, gruppo di studio, confidente o un mix.",
+     "p": [
+      "Amici diversi rispondono a bisogni diversi, e va benissimo così.",
+      "Sapere cosa cerchi ti aiuta a scegliere luoghi e attività giusti.",
+      "Gli obiettivi possono cambiare nel tempo, quindi tienili leggeri e flessibili."
+     ],
+     "q": "Che tipo di amico ti piacerebbe trovare per primo?",
+     "c": "Scrivi una frase: «Mi piacerebbe un amico con cui ...» e completala."
+    },
+    "pt": {
+     "t": "Os teus objetivos de amizade",
+     "g": "Decide que tipo de amigos queres: companheiro de caminhadas, grupo de estudo, confidente ou uma mistura.",
+     "p": [
+      "Amigos diferentes respondem a necessidades diferentes, e está tudo bem.",
+      "Saber o que procuras ajuda-te a escolher os locais e atividades certos.",
+      "Os objetivos podem mudar com o tempo, por isso mantém-nos leves e flexíveis."
+     ],
+     "q": "Que tipo de amigo gostarias de encontrar primeiro?",
+     "c": "Escreve uma frase: «Gostava de um amigo com quem ...» e completa-a."
+    },
+    "pt_BR": {
+     "t": "Seus objetivos de amizade",
+     "g": "Decida que tipo de amigos você quer: parceiro de trilha, grupo de estudo, confidente ou uma mistura.",
+     "p": [
+      "Amigos diferentes atendem necessidades diferentes, e tudo bem.",
+      "Saber o que você quer ajuda a escolher os lugares e atividades certos.",
+      "Os objetivos podem mudar com o tempo, então mantenha-os leves e flexíveis."
+     ],
+     "q": "Que tipo de amigo você gostaria de encontrar primeiro?",
+     "c": "Escreva uma frase: «Eu adoraria ter um amigo para ...» e complete."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mapping your current circle",
+     "g": "List the people you already know nearby, however loosely, as your starting point.",
+     "p": [
+      "Colleagues, neighbours, classmates and shop staff all count as a start.",
+      "Many friendships begin as light acquaintances you simply see more often.",
+      "Seeing your circle on paper shows you have more to build on than you think."
+     ],
+     "q": "Who is one person you already know who you would like to know better?",
+     "c": "Write down five people you know nearby and star the one you will greet next."
+    },
+    "de": {
+     "t": "Deinen Kreis erfassen",
+     "g": "Du listest die Menschen auf, die du in der Nähe schon kennst, auch nur flüchtig, als Startpunkt.",
+     "p": [
+      "Kollegen, Nachbarn, Kommilitonen und Ladenpersonal sind alle ein Anfang.",
+      "Viele Freundschaften beginnen als lockere Bekanntschaften, die man öfter sieht.",
+      "Dein Kreis auf Papier zeigt dir, dass du mehr Grundlage hast, als du denkst."
+     ],
+     "q": "Wen kennst du schon, den du gern besser kennenlernen würdest?",
+     "c": "Schreibe fünf Leute auf, die du in der Nähe kennst, und markiere die, die du als Nächste grüßt."
+    },
+    "es": {
+     "t": "Mapea tu círculo actual",
+     "g": "Haz una lista de las personas que ya conoces cerca, aunque sea poco, como punto de partida.",
+     "p": [
+      "Compañeros, vecinos, clases y dependientes ya cuentan como inicio.",
+      "Muchas amistades nacen de conocidos con los que simplemente coincides más a menudo.",
+      "Ver tu círculo en papel te muestra que tienes más base de la que crees."
+     ],
+     "q": "¿A quién ya conoces que te gustaría conocer mejor?",
+     "c": "Anota cinco personas que conoces cerca y marca con una estrella a quien saludarás la próxima vez."
+    },
+    "fr": {
+     "t": "Cartographier ton cercle actuel",
+     "g": "Dresse la liste des personnes que tu connais déjà près de toi, même vaguement, comme point de départ.",
+     "p": [
+      "Collègues, voisins, camarades et commerçants comptent déjà comme un début.",
+      "Beaucoup d'amitiés naissent de simples connaissances qu'on voit plus souvent.",
+      "Voir ton cercle sur papier montre que tu as plus de base que tu ne crois."
+     ],
+     "q": "Quelle personne que tu connais déjà aimerais-tu mieux connaître ?",
+     "c": "Note cinq personnes que tu connais près de toi et marque d'une étoile celle que tu salueras ensuite."
+    },
+    "it": {
+     "t": "Mappare la tua cerchia attuale",
+     "g": "Elenca le persone che già conosci vicino a te, anche poco, come punto di partenza.",
+     "p": [
+      "Colleghi, vicini, compagni di corso e commessi sono già un inizio.",
+      "Molte amicizie nascono da semplici conoscenti che si vedono più spesso.",
+      "Vedere la tua cerchia su carta mostra che hai più base di quanto pensi."
+     ],
+     "q": "Quale persona che già conosci vorresti conoscere meglio?",
+     "c": "Scrivi cinque persone che conosci vicino a te e segna con una stella chi saluterai la prossima volta."
+    },
+    "pt": {
+     "t": "Mapeia o teu círculo atual",
+     "g": "Faz uma lista das pessoas que já conheces por perto, mesmo vagamente, como ponto de partida.",
+     "p": [
+      "Colegas, vizinhos, colegas de turma e empregados de loja já são um começo.",
+      "Muitas amizades nascem de conhecidos que simplesmente vês com mais frequência.",
+      "Ver o teu círculo no papel mostra que tens mais base do que pensas."
+     ],
+     "q": "Quem já conheces e gostarias de conhecer melhor?",
+     "c": "Anota cinco pessoas que conheces por perto e marca com uma estrela a próxima a cumprimentar."
+    },
+    "pt_BR": {
+     "t": "Mapeando seu círculo atual",
+     "g": "Liste as pessoas que você já conhece por perto, mesmo de leve, como ponto de partida.",
+     "p": [
+      "Colegas, vizinhos, colegas de turma e atendentes já são um começo.",
+      "Muitas amizades nascem de conhecidos que você simplesmente vê com mais frequência.",
+      "Ver seu círculo no papel mostra que você tem mais base do que imagina."
+     ],
+     "q": "Quem você já conhece e gostaria de conhecer melhor?",
+     "c": "Anote cinco pessoas que você conhece por perto e marque com uma estrela quem vai cumprimentar."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The courage to say hello",
+     "g": "Find simple ways to start when you feel shy, and see why most people welcome a greeting.",
+     "p": [
+      "A smile and a short hello is enough, with no speech needed.",
+      "Most people feel pleased, not bothered, when someone greets them kindly.",
+      "If you feel nervous, that is normal, and it fades with practice."
+     ],
+     "q": "How do you feel when someone says hello to you first?",
+     "c": "Say a friendly hello to one person today, such as a neighbour or a cashier."
+    },
+    "de": {
+     "t": "Der Mut zu „Hallo“",
+     "g": "Du findest einfache Wege zu starten, wenn du schüchtern bist, und siehst, warum ein Gruß meist willkommen ist.",
+     "p": [
+      "Ein Lächeln und ein kurzes Hallo genügen, eine Rede ist nicht nötig.",
+      "Die meisten freuen sich über einen netten Gruß und fühlen sich nicht gestört.",
+      "Nervosität ist normal und lässt mit Übung nach."
+     ],
+     "q": "Wie fühlst du dich, wenn dich jemand zuerst grüßt?",
+     "c": "Sag heute einer Person freundlich Hallo, etwa einem Nachbarn oder einer Kassiererin."
+    },
+    "es": {
+     "t": "El valor de saludar",
+     "g": "Encuentra formas sencillas de empezar cuando te da vergüenza y mira por qué casi todos agradecen un saludo.",
+     "p": [
+      "Una sonrisa y un hola breve bastan, no hace falta un discurso.",
+      "A la mayoría le agrada, no le molesta, que alguien la salude con amabilidad.",
+      "Si te pones nervioso es normal, y con la práctica se pasa."
+     ],
+     "q": "¿Cómo te sientes cuando alguien te saluda primero?",
+     "c": "Saluda amablemente a una persona hoy, como un vecino o un cajero."
+    },
+    "fr": {
+     "t": "Le courage de dire bonjour",
+     "g": "Trouve des façons simples de commencer quand tu es timide et vois pourquoi un salut est souvent bien reçu.",
+     "p": [
+      "Un sourire et un court bonjour suffisent, pas besoin de discours.",
+      "La plupart des gens sont contents, pas dérangés, qu'on les salue gentiment.",
+      "Être nerveux est normal et ça s'estompe avec la pratique."
+     ],
+     "q": "Que ressens-tu quand quelqu'un te dit bonjour en premier ?",
+     "c": "Dis bonjour avec le sourire à une personne aujourd'hui, un voisin ou une caissière par exemple."
+    },
+    "it": {
+     "t": "Il coraggio di salutare",
+     "g": "Trova modi semplici per iniziare quando sei timido e scopri perché un saluto di solito è gradito.",
+     "p": [
+      "Basta un sorriso e un breve ciao, non serve un discorso.",
+      "La maggior parte delle persone è contenta, non infastidita, di un saluto gentile.",
+      "Sentirsi nervosi è normale e con la pratica passa."
+     ],
+     "q": "Come ti senti quando qualcuno ti saluta per primo?",
+     "c": "Oggi saluta con gentilezza una persona, per esempio un vicino o una cassiera."
+    },
+    "pt": {
+     "t": "A coragem de dizer olá",
+     "g": "Encontra formas simples de começar quando és tímido e vê porque um cumprimento costuma ser bem-vindo.",
+     "p": [
+      "Um sorriso e um olá curto chegam, não é preciso discurso.",
+      "A maioria das pessoas fica contente, e não incomodada, com um cumprimento simpático.",
+      "Ficar nervoso é normal e passa com a prática."
+     ],
+     "q": "Como te sentes quando alguém te cumprimenta primeiro?",
+     "c": "Cumprimenta hoje uma pessoa com simpatia, como um vizinho ou uma operadora de caixa."
+    },
+    "pt_BR": {
+     "t": "A coragem de dizer oi",
+     "g": "Encontre jeitos simples de começar quando você é tímido e veja por que um cumprimento costuma ser bem-vindo.",
+     "p": [
+      "Um sorriso e um oi curto bastam, não precisa de discurso.",
+      "A maioria das pessoas fica contente, e não incomodada, com um cumprimento simpático.",
+      "Ficar nervoso é normal e passa com a prática."
+     ],
+     "q": "Como você se sente quando alguém te cumprimenta primeiro?",
+     "c": "Cumprimente hoje uma pessoa com simpatia, como um vizinho ou uma atendente de caixa."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Smiling and open body language",
+     "g": "See how eye contact, a relaxed posture and a smile make you look approachable.",
+     "p": [
+      "A real smile is the quickest way to say 'you are safe to talk to'.",
+      "Uncrossed arms and a relaxed stance invite people closer.",
+      "Short, friendly eye contact feels warm; staring does not."
+     ],
+     "q": "When do you feel most relaxed around other people?",
+     "c": "Practise a soft smile and relaxed shoulders in the mirror, then try it outside."
+    },
+    "de": {
+     "t": "Lächeln und offene Körpersprache",
+     "g": "Du siehst, wie Blickkontakt, entspannte Haltung und ein Lächeln dich nahbar wirken lassen.",
+     "p": [
+      "Ein echtes Lächeln sagt am schnellsten: Mit mir kann man reden.",
+      "Offene Arme und eine lockere Haltung laden Menschen ein.",
+      "Kurzer, freundlicher Blickkontakt wirkt warm, Anstarren nicht."
+     ],
+     "q": "Wann fühlst du dich unter Menschen am entspanntesten?",
+     "c": "Übe vor dem Spiegel ein sanftes Lächeln und lockere Schultern und probiere es dann draußen aus."
+    },
+    "es": {
+     "t": "Sonrisa y lenguaje corporal abierto",
+     "g": "Descubre cómo el contacto visual, una postura relajada y una sonrisa te hacen parecer cercano.",
+     "p": [
+      "Una sonrisa sincera es la forma más rápida de decir que se puede hablar contigo.",
+      "Los brazos sin cruzar y una postura relajada invitan a acercarse.",
+      "Una mirada breve y amable transmite calidez; mirar fijamente, no."
+     ],
+     "q": "¿Cuándo te sientes más relajado con otras personas?",
+     "c": "Practica una sonrisa suave y hombros relajados ante el espejo y pruébalo fuera."
+    },
+    "fr": {
+     "t": "Sourire et langage corporel ouvert",
+     "g": "Vois comment le regard, une posture détendue et un sourire te rendent accessible.",
+     "p": [
+      "Un vrai sourire dit le plus vite : on peut te parler.",
+      "Des bras décroisés et une posture détendue invitent à s'approcher.",
+      "Un regard bref et chaleureux met à l'aise ; fixer quelqu'un, non."
+     ],
+     "q": "Quand te sens-tu le plus détendu avec les autres ?",
+     "c": "Entraîne un sourire doux et des épaules détendues devant le miroir, puis essaie dehors."
+    },
+    "it": {
+     "t": "Sorriso e linguaggio del corpo aperto",
+     "g": "Scopri come sguardo, postura rilassata e sorriso ti rendono accessibile.",
+     "p": [
+      "Un sorriso vero è il modo più rapido per dire che con te si può parlare.",
+      "Braccia non incrociate e postura rilassata invitano ad avvicinarsi.",
+      "Uno sguardo breve e amichevole è caldo; fissare, no."
+     ],
+     "q": "Quando ti senti più a tuo agio con gli altri?",
+     "c": "Allena un sorriso morbido e spalle rilassate allo specchio, poi provalo fuori."
+    },
+    "pt": {
+     "t": "Sorriso e linguagem corporal aberta",
+     "g": "Vê como o contacto visual, uma postura relaxada e um sorriso te tornam acessível.",
+     "p": [
+      "Um sorriso verdadeiro é a forma mais rápida de dizer que podem falar contigo.",
+      "Braços descruzados e uma postura descontraída convidam a aproximar.",
+      "Um olhar breve e simpático aquece; ficar a fitar não."
+     ],
+     "q": "Quando te sentes mais à vontade com os outros?",
+     "c": "Treina um sorriso suave e ombros descontraídos ao espelho e experimenta lá fora."
+    },
+    "pt_BR": {
+     "t": "Sorriso e linguagem corporal aberta",
+     "g": "Veja como o contato visual, uma postura relaxada e um sorriso deixam você mais acessível.",
+     "p": [
+      "Um sorriso de verdade é o jeito mais rápido de dizer que dá para falar com você.",
+      "Braços descruzados e postura relaxada convidam as pessoas a chegar perto.",
+      "Um olhar breve e simpático acolhe; ficar encarando não."
+     ],
+     "q": "Quando você se sente mais à vontade com as pessoas?",
+     "c": "Treine um sorriso suave e ombros relaxados no espelho e teste na rua."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Easy conversation openers",
+     "g": "Learn to comment on the shared moment: the place, the event, the weather or the food.",
+     "p": [
+      "Talk about what you both see, since it needs no special skill.",
+      "A light comment plus a question invites an answer, like 'Great music, do you know this band?'",
+      "If the chat stays short, smile and let it go; you did well by trying."
+     ],
+     "q": "What is your favourite easy opener when you meet someone?",
+     "c": "Use one shared-moment opener today with someone near you, like at a queue or event."
+    },
+    "de": {
+     "t": "Leichte Gesprächseinstiege",
+     "g": "Du lernst, den gemeinsamen Moment zu kommentieren: Ort, Anlass, Wetter oder Essen.",
+     "p": [
+      "Sprich über das, was ihr beide seht, das braucht keine besondere Begabung.",
+      "Ein lockerer Kommentar plus Frage lädt zur Antwort ein, etwa: Tolle Musik, kennst du die Band?",
+      "Bleibt das Gespräch kurz, lächle und lass los; du hast es gut gemacht, es zu versuchen."
+     ],
+     "q": "Was ist dein liebster einfacher Einstieg, wenn du jemanden triffst?",
+     "c": "Nutze heute einen Einstieg über den gemeinsamen Moment, etwa in einer Schlange oder bei einer Veranstaltung."
+    },
+    "es": {
+     "t": "Frases fáciles para empezar a hablar",
+     "g": "Aprende a comentar el momento compartido: el lugar, el evento, el clima o la comida.",
+     "p": [
+      "Habla de lo que ambos ven, porque no exige ninguna habilidad especial.",
+      "Un comentario ligero más una pregunta invita a responder, como: ¡Qué buena música, conoces este grupo?",
+      "Si la charla es corta, sonríe y déjala; hiciste bien en intentarlo."
+     ],
+     "q": "¿Cuál es tu frase favorita y fácil para empezar con alguien?",
+     "c": "Usa hoy una frase sobre el momento compartido con alguien cerca, en una cola o evento."
+    },
+    "fr": {
+     "t": "Des entrées en matière faciles",
+     "g": "Apprends à commenter le moment partagé : le lieu, l'événement, la météo ou la nourriture.",
+     "p": [
+      "Parle de ce que vous voyez tous les deux, cela ne demande aucun talent particulier.",
+      "Un commentaire léger plus une question invite à répondre : Super musique, tu connais ce groupe ?",
+      "Si l'échange reste court, souris et laisse-le ; tu as bien fait d'essayer."
+     ],
+     "q": "Quelle est ta phrase d'accroche facile préférée quand tu rencontres quelqu'un ?",
+     "c": "Utilise aujourd'hui une accroche sur le moment partagé avec quelqu'un près de toi, à une file d'attente ou un événement."
+    },
+    "it": {
+     "t": "Aperture di conversazione facili",
+     "g": "Impara a commentare il momento condiviso: il posto, l'evento, il tempo o il cibo.",
+     "p": [
+      "Parla di ciò che vedete entrambi, non serve nessuna abilità speciale.",
+      "Un commento leggero più una domanda invita a rispondere: Bella musica, conosci questo gruppo?",
+      "Se la chiacchierata resta breve, sorridi e lasciala andare; hai fatto bene a provare."
+     ],
+     "q": "Qual è la tua frase facile preferita per iniziare con qualcuno?",
+     "c": "Usa oggi una frase sul momento condiviso con qualcuno vicino, in fila o a un evento."
+    },
+    "pt": {
+     "t": "Aberturas de conversa fáceis",
+     "g": "Aprende a comentar o momento partilhado: o local, o evento, o tempo ou a comida.",
+     "p": [
+      "Fala do que ambos veem, pois não exige nenhum talento especial.",
+      "Um comentário leve mais uma pergunta convida à resposta: Que boa música, conheces esta banda?",
+      "Se a conversa ficar curta, sorri e deixa estar; fizeste bem em tentar."
+     ],
+     "q": "Qual é a tua frase fácil preferida para começar com alguém?",
+     "c": "Usa hoje uma frase sobre o momento partilhado com alguém perto, numa fila ou evento."
+    },
+    "pt_BR": {
+     "t": "Aberturas de conversa fáceis",
+     "g": "Aprenda a comentar o momento compartilhado: o lugar, o evento, o clima ou a comida.",
+     "p": [
+      "Fale do que vocês dois veem, pois isso não exige nenhum talento especial.",
+      "Um comentário leve mais uma pergunta convida à resposta: Que música boa, você conhece essa banda?",
+      "Se o papo ficar curto, sorria e deixe quieto; você fez bem em tentar."
+     ],
+     "q": "Qual é a sua frase fácil preferida para começar um papo?",
+     "c": "Use hoje uma abertura sobre o momento compartilhado com alguém perto, numa fila ou evento."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Asking open questions",
+     "g": "Swap yes-or-no questions for ones that invite stories and opinions.",
+     "p": [
+      "Open questions start with what, how or tell me about, and they keep chats flowing.",
+      "Compare 'Do you like it here?' with 'What do you enjoy most here?'",
+      "Show real curiosity and let silences breathe for a moment."
+     ],
+     "q": "What open question could you ask someone you met recently?",
+     "c": "Ask one person an open question today and listen to the whole answer."
+    },
+    "de": {
+     "t": "Offene Fragen stellen",
+     "g": "Du ersetzt Ja-Nein-Fragen durch Fragen, die zu Geschichten und Meinungen einladen.",
+     "p": [
+      "Offene Fragen beginnen mit was, wie oder erzähl mir von, und halten das Gespräch im Fluss.",
+      "Vergleiche: Gefällt es dir hier? mit: Was gefällt dir hier am meisten?",
+      "Zeig echtes Interesse und lass kurze Pausen ruhig entstehen."
+     ],
+     "q": "Welche offene Frage könntest du jemandem stellen, den du kürzlich kennengelernt hast?",
+     "c": "Stell heute einer Person eine offene Frage und hör der ganzen Antwort zu."
+    },
+    "es": {
+     "t": "Hacer preguntas abiertas",
+     "g": "Cambia las preguntas de sí o no por otras que inviten a contar historias y opiniones.",
+     "p": [
+      "Las preguntas abiertas empiezan con qué, cómo o cuéntame, y mantienen viva la charla.",
+      "Compara: ¿Te gusta esto? con ¿Qué es lo que más te gusta de aquí?",
+      "Muestra curiosidad real y deja respirar los silencios un momento."
+     ],
+     "q": "¿Qué pregunta abierta podrías hacerle a alguien que conociste hace poco?",
+     "c": "Haz hoy una pregunta abierta a una persona y escucha la respuesta completa."
+    },
+    "fr": {
+     "t": "Poser des questions ouvertes",
+     "g": "Remplace les questions oui ou non par des questions qui invitent aux histoires et aux avis.",
+     "p": [
+      "Les questions ouvertes commencent par quoi, comment ou raconte-moi, et font vivre l'échange.",
+      "Compare : Tu aimes ici ? avec Qu'est-ce que tu préfères ici ?",
+      "Montre une vraie curiosité et laisse les silences respirer un instant."
+     ],
+     "q": "Quelle question ouverte pourrais-tu poser à quelqu'un rencontré récemment ?",
+     "c": "Pose aujourd'hui une question ouverte à une personne et écoute toute la réponse."
+    },
+    "it": {
+     "t": "Fare domande aperte",
+     "g": "Sostituisci le domande da sì o no con altre che invitano a raccontare storie e opinioni.",
+     "p": [
+      "Le domande aperte iniziano con cosa, come o raccontami, e mantengono viva la chiacchierata.",
+      "Confronta: Ti piace qui? con Cosa ti piace di più di questo posto?",
+      "Mostra curiosità vera e lascia respirare i silenzi per un momento."
+     ],
+     "q": "Quale domanda aperta potresti fare a qualcuno conosciuto da poco?",
+     "c": "Oggi fai una domanda aperta a una persona e ascolta tutta la risposta."
+    },
+    "pt": {
+     "t": "Fazer perguntas abertas",
+     "g": "Troca as perguntas de sim ou não por outras que convidam a contar histórias e opiniões.",
+     "p": [
+      "As perguntas abertas começam com o quê, como ou conta-me, e mantêm a conversa viva.",
+      "Compara: Gostas daqui? com O que mais gostas aqui?",
+      "Mostra curiosidade verdadeira e deixa os silêncios respirar um momento."
+     ],
+     "q": "Que pergunta aberta podias fazer a alguém que conheceste há pouco?",
+     "c": "Faz hoje uma pergunta aberta a uma pessoa e ouve a resposta toda."
+    },
+    "pt_BR": {
+     "t": "Fazendo perguntas abertas",
+     "g": "Troque as perguntas de sim ou não por outras que convidam a contar histórias e opiniões.",
+     "p": [
+      "Perguntas abertas começam com o quê, como ou me conta, e mantêm o papo vivo.",
+      "Compare: Você gosta daqui? com O que você mais curte aqui?",
+      "Mostre curiosidade de verdade e deixe os silêncios respirarem um instante."
+     ],
+     "q": "Que pergunta aberta você poderia fazer a alguém que conheceu há pouco?",
+     "c": "Faça hoje uma pergunta aberta a uma pessoa e escute a resposta inteira."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Remembering names",
+     "g": "Repeat the name, link it to an image and use it again before you say goodbye.",
+     "p": [
+      "Say the name back right away: 'Nice to meet you, Maria.'",
+      "Link the name to a picture or a rhyme in your mind.",
+      "Using a name once more at the end helps it stick and feels warm."
+     ],
+     "q": "What trick helps you remember names, or what would you like to try?",
+     "c": "Learn one new name today and use it three times in the chat."
+    },
+    "de": {
+     "t": "Namen merken",
+     "g": "Du wiederholst den Namen, verbindest ihn mit einem Bild und nutzt ihn vor dem Abschied noch einmal.",
+     "p": [
+      "Sag den Namen gleich zurück: Schön dich kennenzulernen, Maria.",
+      "Verknüpfe den Namen im Kopf mit einem Bild oder einem Reim.",
+      "Den Namen am Ende noch einmal zu nennen hilft beim Merken und wirkt herzlich."
+     ],
+     "q": "Welcher Trick hilft dir beim Merken von Namen, oder was möchtest du probieren?",
+     "c": "Lerne heute einen neuen Namen und benutze ihn dreimal im Gespräch."
+    },
+    "es": {
+     "t": "Recordar nombres",
+     "g": "Repite el nombre, únelo a una imagen y úsalo otra vez antes de despedirte.",
+     "p": [
+      "Repite el nombre enseguida: Encantado de conocerte, María.",
+      "Une el nombre a una imagen o una rima en tu mente.",
+      "Usar el nombre una vez más al final ayuda a fijarlo y se siente cálido."
+     ],
+     "q": "¿Qué truco te ayuda a recordar nombres, o cuál te gustaría probar?",
+     "c": "Aprende un nombre nuevo hoy y úsalo tres veces en la conversación."
+    },
+    "fr": {
+     "t": "Retenir les prénoms",
+     "g": "Répète le prénom, associe-le à une image et utilise-le encore avant de dire au revoir.",
+     "p": [
+      "Répète le prénom tout de suite : Enchanté de te rencontrer, Maria.",
+      "Associe le prénom à une image ou à une rime dans ta tête.",
+      "Reprendre le prénom à la fin aide à le retenir et fait chaleureux."
+     ],
+     "q": "Quelle astuce t'aide à retenir les prénoms, ou laquelle voudrais-tu essayer ?",
+     "c": "Retiens un nouveau prénom aujourd'hui et utilise-le trois fois pendant l'échange."
+    },
+    "it": {
+     "t": "Ricordare i nomi",
+     "g": "Ripeti il nome, collegalo a un'immagine e usalo ancora prima di salutare.",
+     "p": [
+      "Ripeti subito il nome: Piacere di conoscerti, Maria.",
+      "Collega il nome a un'immagine o a una rima nella mente.",
+      "Usare il nome ancora una volta alla fine aiuta a fissarlo e suona caloroso."
+     ],
+     "q": "Quale trucco ti aiuta a ricordare i nomi, o quale vorresti provare?",
+     "c": "Impara oggi un nome nuovo e usalo tre volte nella conversazione."
+    },
+    "pt": {
+     "t": "Lembrar nomes",
+     "g": "Repete o nome, liga-o a uma imagem e usa-o outra vez antes de te despedires.",
+     "p": [
+      "Repete logo o nome: Muito gosto em conhecer-te, Maria.",
+      "Liga o nome a uma imagem ou a uma rima na tua mente.",
+      "Usar o nome mais uma vez no fim ajuda a fixá-lo e soa caloroso."
+     ],
+     "q": "Que truque te ajuda a lembrar nomes, ou qual gostarias de experimentar?",
+     "c": "Aprende hoje um nome novo e usa-o três vezes na conversa."
+    },
+    "pt_BR": {
+     "t": "Lembrando nomes",
+     "g": "Repita o nome, ligue a uma imagem e use de novo antes de se despedir.",
+     "p": [
+      "Repita o nome logo: Muito prazer, Maria.",
+      "Ligue o nome a uma imagem ou a uma rima na cabeça.",
+      "Usar o nome mais uma vez no fim ajuda a fixar e soa caloroso."
+     ],
+     "q": "Que truque ajuda você a lembrar nomes, ou qual gostaria de testar?",
+     "c": "Aprenda hoje um nome novo e use três vezes na conversa."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Active listening basics",
+     "g": "Nod, follow up and reflect back so people feel truly heard.",
+     "p": [
+      "Look at the person and put your phone away while they talk.",
+      "Follow up with 'And then what happened?' to show you care.",
+      "Reflect back in your own words: 'So it sounded stressful but exciting.'"
+     ],
+     "q": "Who in your life listens well, and what do they do?",
+     "c": "In one chat today, talk less than the other person and ask one follow-up question."
+    },
+    "de": {
+     "t": "Grundlagen des aktiven Zuhörens",
+     "g": "Nicke, frag nach und spiegle das Gesagte, damit sich Menschen wirklich gehört fühlen.",
+     "p": [
+      "Schau die Person an und leg das Handy weg, während sie spricht.",
+      "Frag nach mit: Und was ist dann passiert? Das zeigt Interesse.",
+      "Gib es mit eigenen Worten wieder: Das klang stressig, aber aufregend."
+     ],
+     "q": "Wer in deinem Leben hört gut zu, und was macht diese Person?",
+     "c": "Sprich heute in einem Gespräch weniger als dein Gegenüber und stell eine Nachfrage."
+    },
+    "es": {
+     "t": "Bases de la escucha activa",
+     "g": "Asiente, repregunta y devuelve lo que oyes para que la gente se sienta realmente escuchada.",
+     "p": [
+      "Mira a la persona y guarda el móvil mientras habla.",
+      "Repregunta con: ¿Y qué pasó después? para mostrar interés.",
+      "Devuélvelo con tus palabras: Parece que fue estresante pero emocionante."
+     ],
+     "q": "¿Quién en tu vida escucha bien y qué hace?",
+     "c": "En una charla de hoy, habla menos que la otra persona y haz una pregunta de seguimiento."
+    },
+    "fr": {
+     "t": "Les bases de l'écoute active",
+     "g": "Hoche la tête, relance et reformule pour que les gens se sentent vraiment écoutés.",
+     "p": [
+      "Regarde la personne et range ton téléphone pendant qu'elle parle.",
+      "Relance avec : Et alors, que s'est-il passé ? pour montrer ton intérêt.",
+      "Reformule avec tes mots : Donc c'était stressant mais passionnant."
+     ],
+     "q": "Qui dans ton entourage écoute bien, et que fait cette personne ?",
+     "c": "Dans une discussion aujourd'hui, parle moins que l'autre et pose une question de relance."
+    },
+    "it": {
+     "t": "Le basi dell'ascolto attivo",
+     "g": "Annuisci, fai domande di approfondimento e riformula così le persone si sentono davvero ascoltate.",
+     "p": [
+      "Guarda la persona e metti via il telefono mentre parla.",
+      "Approfondisci con: E poi cos'è successo? per mostrare interesse.",
+      "Riformula con parole tue: Quindi è stato stressante ma emozionante."
+     ],
+     "q": "Chi nella tua vita ascolta bene, e cosa fa?",
+     "c": "In una chiacchierata di oggi parla meno dell'altra persona e fai una domanda di approfondimento."
+    },
+    "pt": {
+     "t": "Noções de escuta ativa",
+     "g": "Acena, faz perguntas de seguimento e reformula para que as pessoas se sintam realmente ouvidas.",
+     "p": [
+      "Olha para a pessoa e guarda o telemóvel enquanto ela fala.",
+      "Pergunta: E depois, o que aconteceu? para mostrar interesse.",
+      "Reformula por palavras tuas: Então foi stressante mas emocionante."
+     ],
+     "q": "Quem na tua vida ouve bem e o que faz?",
+     "c": "Numa conversa de hoje, fala menos do que a outra pessoa e faz uma pergunta de seguimento."
+    },
+    "pt_BR": {
+     "t": "Noções de escuta ativa",
+     "g": "Acene, faça perguntas de seguimento e reformule para as pessoas se sentirem realmente ouvidas.",
+     "p": [
+      "Olhe para a pessoa e guarde o celular enquanto ela fala.",
+      "Pergunte: E depois, o que aconteceu? para mostrar interesse.",
+      "Reformule com suas palavras: Então foi estressante, mas empolgante."
+     ],
+     "q": "Quem na sua vida escuta bem e o que essa pessoa faz?",
+     "c": "Num papo de hoje, fale menos que a outra pessoa e faça uma pergunta de seguimento."
+    }
+   }
+  }
+ ]
+}

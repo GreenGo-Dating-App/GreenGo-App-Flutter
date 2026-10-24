@@ -1,0 +1,835 @@
+{
+ "topic": "motivation",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Morning routines",
+     "g": "Plan a gentle start to the day with a few chosen actions that set a positive tone.",
+     "p": [
+      "A morning routine can be just two or three small actions you choose.",
+      "Start gently: water, light, a stretch or a quiet minute before screens.",
+      "It should fit your life, not copy someone else's perfect morning."
+     ],
+     "q": "What is one small thing that makes your mornings feel better?",
+     "c": "Choose one calm action to do first thing tomorrow, before checking your phone."
+    },
+    "de": {
+     "t": "Morgenroutinen",
+     "g": "Einen sanften Start in den Tag mit ein paar gewählten Handlungen planen.",
+     "p": [
+      "Eine Morgenroutine kann nur aus zwei oder drei kleinen Handlungen bestehen.",
+      "Starte sanft: Wasser, Licht, Dehnen oder eine ruhige Minute vor Bildschirmen.",
+      "Sie soll zu deinem Leben passen und nicht den perfekten Morgen anderer kopieren."
+     ],
+     "q": "Was macht deine Morgen ein bisschen besser?",
+     "c": "Wähle eine ruhige Handlung für morgen früh, noch vor dem Blick aufs Handy."
+    },
+    "es": {
+     "t": "Rutinas de mañana",
+     "g": "Planear un comienzo suave del día con pocas acciones elegidas que den buen tono.",
+     "p": [
+      "Una rutina de mañana puede ser solo dos o tres acciones pequeñas que elijas.",
+      "Empieza con suavidad: agua, luz, estirarte o un minuto de calma antes de las pantallas.",
+      "Debe encajar en tu vida, no copiar la mañana perfecta de otro."
+     ],
+     "q": "¿Qué pequeña cosa hace que tus mañanas se sientan mejor?",
+     "c": "Elige una acción tranquila para mañana a primera hora, antes de mirar el móvil."
+    },
+    "fr": {
+     "t": "Routines du matin",
+     "g": "Prévoir un début de journée doux avec quelques actions choisies qui donnent le ton.",
+     "p": [
+      "Une routine du matin peut se limiter à deux ou trois petites actions de ton choix.",
+      "Commence doucement : eau, lumière, étirement ou une minute calme avant les écrans.",
+      "Elle doit s'adapter à ta vie, pas copier le matin parfait de quelqu'un d'autre."
+     ],
+     "q": "Quelle petite chose rend tes matins meilleurs ?",
+     "c": "Choisis une action calme à faire demain dès le réveil, avant de regarder ton téléphone."
+    },
+    "it": {
+     "t": "Routine del mattino",
+     "g": "Pianificare un inizio dolce della giornata con poche azioni scelte che diano il tono.",
+     "p": [
+      "Una routine del mattino può essere solo due o tre piccole azioni a tua scelta.",
+      "Parti con calma: acqua, luce, uno stiramento o un minuto di quiete prima degli schermi.",
+      "Deve adattarsi alla tua vita, non copiare la mattina perfetta di un altro."
+     ],
+     "q": "Quale piccola cosa fa sentire meglio le tue mattine?",
+     "c": "Scegli un'azione calma da fare domani appena sveglio, prima di guardare il telefono."
+    },
+    "pt": {
+     "t": "Rotinas da manhã",
+     "g": "Planear um início de dia suave com poucas ações escolhidas que dão o tom.",
+     "p": [
+      "Uma rotina da manhã pode ser só duas ou três pequenas ações à tua escolha.",
+      "Começa com suavidade: água, luz, um alongamento ou um minuto de calma antes dos ecrãs.",
+      "Deve caber na tua vida, não copiar a manhã perfeita de outra pessoa."
+     ],
+     "q": "Que pequena coisa faz as tuas manhãs correrem melhor?",
+     "c": "Escolhe uma ação calma para amanhã logo ao acordar, antes de ver o telemóvel."
+    },
+    "pt_BR": {
+     "t": "Rotinas da manhã",
+     "g": "Planejar um início de dia suave com poucas ações escolhidas que dão o tom.",
+     "p": [
+      "Uma rotina da manhã pode ser só duas ou três pequenas ações à sua escolha.",
+      "Comece com suavidade: água, luz, um alongamento ou um minuto de calma antes das telas.",
+      "Ela deve caber na sua vida, não copiar a manhã perfeita de outra pessoa."
+     ],
+     "q": "Que pequena coisa faz suas manhãs serem melhores?",
+     "c": "Escolha uma ação calma para amanhã logo ao acordar, antes de olhar o celular."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Evening routines",
+     "g": "Wind down and prepare for tomorrow so mornings feel easier.",
+     "p": [
+      "A calm evening helps the day end well and tomorrow begin lighter.",
+      "Small preparations, like laying out clothes, save energy later.",
+      "Dimming screens and lights can help you slow down."
+     ],
+     "q": "What helps you feel settled at the end of the day?",
+     "c": "Tonight, do one small thing now that will make tomorrow morning easier."
+    },
+    "de": {
+     "t": "Abendroutinen",
+     "g": "Zur Ruhe kommen und den nächsten Tag vorbereiten, damit der Morgen leichter wird.",
+     "p": [
+      "Ein ruhiger Abend hilft, den Tag gut zu beenden und leichter zu starten.",
+      "Kleine Vorbereitungen, etwa Kleidung herauslegen, sparen später Energie.",
+      "Gedimmtes Licht und weniger Bildschirm helfen beim Runterkommen."
+     ],
+     "q": "Was hilft dir, am Ende des Tages zur Ruhe zu kommen?",
+     "c": "Tu heute Abend eine Kleinigkeit, die den morgigen Morgen erleichtert."
+    },
+    "es": {
+     "t": "Rutinas de noche",
+     "g": "Bajar el ritmo y preparar el día siguiente para que las mañanas sean más fáciles.",
+     "p": [
+      "Una noche tranquila ayuda a terminar bien el día y empezar el siguiente más ligero.",
+      "Pequeños preparativos, como dejar la ropa lista, ahorran energía después.",
+      "Bajar luces y pantallas ayuda a desacelerar."
+     ],
+     "q": "¿Qué te ayuda a sentirte tranquilo al final del día?",
+     "c": "Esta noche haz una cosa pequeña que facilite tu mañana de mañana."
+    },
+    "fr": {
+     "t": "Routines du soir",
+     "g": "Ralentir et préparer demain pour que les matins soient plus faciles.",
+     "p": [
+      "Une soirée calme aide à bien finir la journée et à mieux commencer la suivante.",
+      "De petites préparations, comme sortir ses vêtements, économisent de l'énergie.",
+      "Baisser les lumières et les écrans aide à ralentir."
+     ],
+     "q": "Qu'est-ce qui t'aide à te sentir apaisé en fin de journée ?",
+     "c": "Ce soir, fais une petite chose qui facilitera demain matin."
+    },
+    "it": {
+     "t": "Routine della sera",
+     "g": "Rallentare e preparare il domani perché le mattine siano più facili.",
+     "p": [
+      "Una serata calma aiuta a finire bene la giornata e a iniziare più leggeri.",
+      "Piccole preparazioni, come preparare i vestiti, fanno risparmiare energia.",
+      "Abbassare luci e schermi aiuta a rallentare."
+     ],
+     "q": "Cosa ti aiuta a sentirti sereno a fine giornata?",
+     "c": "Stasera fai una piccola cosa che renda più facile la mattina di domani."
+    },
+    "pt": {
+     "t": "Rotinas da noite",
+     "g": "Abrandar e preparar o dia seguinte para as manhãs serem mais fáceis.",
+     "p": [
+      "Uma noite calma ajuda a acabar bem o dia e a começar o seguinte mais leve.",
+      "Pequenos preparativos, como deixar a roupa pronta, poupam energia depois.",
+      "Baixar luzes e ecrãs ajuda a desacelerar."
+     ],
+     "q": "O que te ajuda a sentir-te tranquilo ao fim do dia?",
+     "c": "Esta noite faz uma coisa pequena que facilite a manhã de amanhã."
+    },
+    "pt_BR": {
+     "t": "Rotinas da noite",
+     "g": "Desacelerar e preparar o dia seguinte para as manhãs serem mais fáceis.",
+     "p": [
+      "Uma noite calma ajuda a terminar bem o dia e a começar o próximo mais leve.",
+      "Pequenos preparativos, como deixar a roupa separada, poupam energia depois.",
+      "Baixar luzes e telas ajuda a desacelerar."
+     ],
+     "q": "O que ajuda você a se sentir tranquilo no fim do dia?",
+     "c": "Esta noite faça uma coisa pequena que facilite a manhã de amanhã."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Energy and rest",
+     "g": "Understand why everyday energy depends on rest, breaks and balance, in general terms.",
+     "p": [
+      "Energy is not endless; rest is part of being productive, not a reward.",
+      "Short breaks during the day can help you stay fresh.",
+      "If you feel exhausted for long periods, a doctor is the right person to ask."
+     ],
+     "q": "When in your day do you feel most drained, and what helps a little?",
+     "c": "Take one real break today, five minutes with no screen or task."
+    },
+    "de": {
+     "t": "Energie und Erholung",
+     "g": "Allgemein verstehen, warum Alltagsenergie von Ruhe, Pausen und Balance abhängt.",
+     "p": [
+      "Energie ist nicht endlos; Erholung gehört zum Leistungsfähigsein, sie ist keine Belohnung.",
+      "Kurze Pausen im Tagesverlauf können dich frisch halten.",
+      "Bei langer, anhaltender Erschöpfung ist ein Arzt die richtige Anlaufstelle."
+     ],
+     "q": "Wann am Tag fühlst du dich am erschöpftesten, und was hilft ein wenig?",
+     "c": "Mach heute eine echte Pause: fünf Minuten ohne Bildschirm oder Aufgabe."
+    },
+    "es": {
+     "t": "Energía y descanso",
+     "g": "Entender en términos generales por qué la energía diaria depende de descanso, pausas y equilibrio.",
+     "p": [
+      "La energía no es infinita; descansar es parte de rendir, no un premio.",
+      "Pausas cortas durante el día pueden ayudarte a mantenerte fresco.",
+      "Si te sientes agotado durante mucho tiempo, consulta a un médico."
+     ],
+     "q": "¿En qué momento del día te sientes más agotado y qué ayuda un poco?",
+     "c": "Haz hoy una pausa de verdad: cinco minutos sin pantalla ni tarea."
+    },
+    "fr": {
+     "t": "Énergie et repos",
+     "g": "Comprendre en termes généraux pourquoi l'énergie dépend du repos, des pauses et de l'équilibre.",
+     "p": [
+      "L'énergie n'est pas infinie ; se reposer fait partie d'être efficace, ce n'est pas une récompense.",
+      "De courtes pauses dans la journée peuvent t'aider à rester frais.",
+      "Si tu es épuisé longtemps, un médecin est la bonne personne à consulter."
+     ],
+     "q": "À quel moment de la journée te sens-tu le plus vidé, et qu'est-ce qui aide un peu ?",
+     "c": "Fais aujourd'hui une vraie pause : cinq minutes sans écran ni tâche."
+    },
+    "it": {
+     "t": "Energia e riposo",
+     "g": "Capire in termini generali perché l'energia quotidiana dipende da riposo, pause ed equilibrio.",
+     "p": [
+      "L'energia non è infinita; riposare fa parte del rendere, non è un premio.",
+      "Brevi pause durante il giorno possono aiutarti a restare fresco.",
+      "Se ti senti esausto per lungo tempo, il medico è la persona giusta a cui chiedere."
+     ],
+     "q": "In quale momento della giornata ti senti più scarico e cosa aiuta un po'?",
+     "c": "Fai oggi una vera pausa: cinque minuti senza schermo né compiti."
+    },
+    "pt": {
+     "t": "Energia e descanso",
+     "g": "Perceber em termos gerais porque a energia diária depende de descanso, pausas e equilíbrio.",
+     "p": [
+      "A energia não é infinita; descansar faz parte de render, não é um prémio.",
+      "Pausas curtas durante o dia podem ajudar-te a manter-te fresco.",
+      "Se te sentires esgotado durante muito tempo, o médico é a pessoa certa a quem perguntar."
+     ],
+     "q": "Em que altura do dia te sentes mais esgotado e o que ajuda um pouco?",
+     "c": "Faz hoje uma pausa a sério: cinco minutos sem ecrã nem tarefa."
+    },
+    "pt_BR": {
+     "t": "Energia e descanso",
+     "g": "Entender em termos gerais por que a energia diária depende de descanso, pausas e equilíbrio.",
+     "p": [
+      "A energia não é infinita; descansar faz parte de render, não é um prêmio.",
+      "Pausas curtas durante o dia podem ajudar você a se manter fresco.",
+      "Se você se sentir esgotado por muito tempo, o médico é a pessoa certa para perguntar."
+     ],
+     "q": "Em que hora do dia você se sente mais esgotado e o que ajuda um pouco?",
+     "c": "Faça hoje uma pausa de verdade: cinco minutos sem tela nem tarefa."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sleep as a foundation",
+     "g": "Learn that regular sleep is linked to mood and focus; see a doctor about sleep concerns.",
+     "p": [
+      "Regular sleep and wake times are often linked with better mood and focus.",
+      "A calm, dark, cool room can make rest easier for many people.",
+      "If sleep problems last, a doctor can help; this is general information only."
+     ],
+     "q": "What does your usual bedtime look like, and what would you like to improve?",
+     "c": "Choose a realistic bedtime for tonight and set a gentle reminder to wind down."
+    },
+    "de": {
+     "t": "Schlaf als Fundament",
+     "g": "Lernen, dass regelmäßiger Schlaf mit Stimmung und Konzentration zusammenhängt; bei Sorgen den Arzt fragen.",
+     "p": [
+      "Feste Schlaf- und Aufstehzeiten hängen oft mit besserer Stimmung und Konzentration zusammen.",
+      "Ein ruhiger, dunkler, kühler Raum erleichtert vielen die Erholung.",
+      "Halten Schlafprobleme an, kann ein Arzt helfen; dies sind nur allgemeine Infos."
+     ],
+     "q": "Wie sieht deine übliche Schlafenszeit aus, und was würdest du gern verbessern?",
+     "c": "Wähle für heute Nacht eine realistische Schlafenszeit und stell eine sanfte Erinnerung ein."
+    },
+    "es": {
+     "t": "El sueño como base",
+     "g": "Saber que dormir con regularidad se relaciona con ánimo y concentración; consulta al médico si te preocupa.",
+     "p": [
+      "Horarios regulares de sueño suelen relacionarse con mejor ánimo y concentración.",
+      "Un cuarto tranquilo, oscuro y fresco facilita el descanso a muchas personas.",
+      "Si los problemas de sueño persisten, un médico puede ayudar; es solo información general."
+     ],
+     "q": "¿Cómo es tu hora habitual de dormir y qué te gustaría mejorar?",
+     "c": "Elige una hora realista para dormir esta noche y pon un aviso suave para relajarte."
+    },
+    "fr": {
+     "t": "Le sommeil comme fondation",
+     "g": "Savoir qu'un sommeil régulier est lié à l'humeur et à la concentration ; consulte un médecin en cas de souci.",
+     "p": [
+      "Des horaires réguliers de coucher et de lever sont souvent liés à une meilleure humeur.",
+      "Une chambre calme, sombre et fraîche facilite le repos pour beaucoup de gens.",
+      "Si les troubles du sommeil durent, un médecin peut aider ; ce sont des infos générales."
+     ],
+     "q": "À quoi ressemble ton heure de coucher habituelle et que voudrais-tu améliorer ?",
+     "c": "Choisis une heure de coucher réaliste pour ce soir et programme un rappel doux."
+    },
+    "it": {
+     "t": "Il sonno come fondamento",
+     "g": "Sapere che dormire con regolarità è legato a umore e concentrazione; chiedi al medico se hai dubbi.",
+     "p": [
+      "Orari regolari di sonno e risveglio sono spesso legati a umore e concentrazione migliori.",
+      "Una stanza calma, buia e fresca facilita il riposo a molte persone.",
+      "Se i problemi di sonno durano, un medico può aiutare; sono solo informazioni generali."
+     ],
+     "q": "Com'è il tuo solito orario per andare a letto e cosa vorresti migliorare?",
+     "c": "Scegli un orario realistico per stanotte e imposta un promemoria gentile per rilassarti."
+    },
+    "pt": {
+     "t": "O sono como alicerce",
+     "g": "Saber que dormir com regularidade se liga ao humor e à concentração; pergunta ao médico se tiveres dúvidas.",
+     "p": [
+      "Horários regulares de sono costumam ligar-se a melhor humor e concentração.",
+      "Um quarto calmo, escuro e fresco facilita o descanso a muita gente.",
+      "Se os problemas de sono persistirem, um médico pode ajudar; é só informação geral."
+     ],
+     "q": "Como é a tua hora habitual de deitar e o que gostavas de melhorar?",
+     "c": "Escolhe uma hora realista de deitar para esta noite e põe um lembrete suave para relaxar."
+    },
+    "pt_BR": {
+     "t": "O sono como alicerce",
+     "g": "Saber que dormir com regularidade se liga ao humor e à concentração; pergunte ao médico se tiver dúvidas.",
+     "p": [
+      "Horários regulares de sono costumam se ligar a melhor humor e concentração.",
+      "Um quarto calmo, escuro e fresco facilita o descanso para muita gente.",
+      "Se os problemas de sono persistirem, um médico pode ajudar; é só informação geral."
+     ],
+     "q": "Como é seu horário habitual de dormir e o que você gostaria de melhorar?",
+     "c": "Escolha um horário realista de dormir para esta noite e programe um lembrete suave para relaxar."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Moving your body for energy",
+     "g": "Use a short walk or stretch to refresh the mind, at a level that suits you.",
+     "p": [
+      "Gentle movement can wake up your body and clear your head.",
+      "A few minutes is enough; choose what feels comfortable for you.",
+      "If you have health concerns, check with a doctor before changing activity."
+     ],
+     "q": "What kind of movement do you enjoy, even a little?",
+     "c": "Take a short walk or stretch for five minutes at a gentle pace today."
+    },
+    "de": {
+     "t": "Bewegung für mehr Energie",
+     "g": "Mit kurzem Spaziergang oder Dehnen den Kopf erfrischen, in deinem Tempo.",
+     "p": [
+      "Sanfte Bewegung kann den Körper wecken und den Kopf klären.",
+      "Ein paar Minuten genügen; wähle, was sich für dich angenehm anfühlt.",
+      "Bei gesundheitlichen Bedenken frag vor Änderungen den Arzt."
+     ],
+     "q": "Welche Art von Bewegung magst du, wenigstens ein bisschen?",
+     "c": "Mach heute fünf Minuten Spaziergang oder Dehnen in ruhigem Tempo."
+    },
+    "es": {
+     "t": "Mover el cuerpo para tener energía",
+     "g": "Usar un paseo corto o estirarte para despejar la mente, a tu nivel.",
+     "p": [
+      "El movimiento suave puede despertar el cuerpo y despejar la cabeza.",
+      "Con unos minutos basta; elige lo que te resulte cómodo.",
+      "Si tienes problemas de salud, consulta a un médico antes de cambiar tu actividad."
+     ],
+     "q": "¿Qué tipo de movimiento disfrutas, aunque sea un poco?",
+     "c": "Da hoy un paseo corto o estírate cinco minutos a ritmo suave."
+    },
+    "fr": {
+     "t": "Bouger pour avoir de l'énergie",
+     "g": "Utiliser une courte marche ou un étirement pour rafraîchir l'esprit, à ton niveau.",
+     "p": [
+      "Un mouvement doux peut réveiller le corps et éclaircir l'esprit.",
+      "Quelques minutes suffisent ; choisis ce qui te semble confortable.",
+      "En cas de souci de santé, demande l'avis d'un médecin avant de changer d'activité."
+     ],
+     "q": "Quel type de mouvement aimes-tu, même un peu ?",
+     "c": "Fais aujourd'hui une courte marche ou des étirements cinq minutes, à rythme doux."
+    },
+    "it": {
+     "t": "Muovere il corpo per avere energia",
+     "g": "Usare una breve camminata o uno stiramento per rinfrescare la mente, al tuo livello.",
+     "p": [
+      "Un movimento dolce può svegliare il corpo e schiarire la testa.",
+      "Bastano pochi minuti; scegli ciò che ti è comodo.",
+      "Se hai problemi di salute, chiedi al medico prima di cambiare attività."
+     ],
+     "q": "Che tipo di movimento ti piace, anche solo un po'?",
+     "c": "Fai oggi una breve camminata o stiramenti per cinque minuti a ritmo dolce."
+    },
+    "pt": {
+     "t": "Mexer o corpo para ter energia",
+     "g": "Usar um passeio curto ou um alongamento para refrescar a mente, ao teu nível.",
+     "p": [
+      "O movimento suave pode acordar o corpo e clarear a cabeça.",
+      "Bastam uns minutos; escolhe o que te for confortável.",
+      "Se tiveres problemas de saúde, consulta um médico antes de mudar de atividade."
+     ],
+     "q": "Que tipo de movimento gostas, mesmo que só um pouco?",
+     "c": "Faz hoje um passeio curto ou alonga-te cinco minutos a ritmo suave."
+    },
+    "pt_BR": {
+     "t": "Mexer o corpo para ter energia",
+     "g": "Usar uma caminhada curta ou um alongamento para refrescar a mente, no seu nível.",
+     "p": [
+      "O movimento suave pode acordar o corpo e clarear a cabeça.",
+      "Bastam uns minutos; escolha o que for confortável para você.",
+      "Se tiver problemas de saúde, consulte um médico antes de mudar de atividade."
+     ],
+     "q": "Que tipo de movimento você gosta, mesmo que só um pouco?",
+     "c": "Faça hoje uma caminhada curta ou alongue-se cinco minutos em ritmo suave."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Drinking water and taking breaks",
+     "g": "Use simple everyday habits that help you feel fresher during the day.",
+     "p": [
+      "A glass of water within reach is an easy cue to look after yourself.",
+      "Short breaks help you come back with a clearer mind.",
+      "Listen to your body; individual needs differ, and a doctor can advise you."
+     ],
+     "q": "What small break or drink habit would fit easily into your day?",
+     "c": "Place a glass of water near you today and take two short breaks."
+    },
+    "de": {
+     "t": "Wasser trinken und Pausen machen",
+     "g": "Einfache Alltagsgewohnheiten nutzen, die dich tagsüber frischer fühlen lassen.",
+     "p": [
+      "Ein Glas Wasser in Reichweite erinnert leicht daran, gut für dich zu sorgen.",
+      "Kurze Pausen helfen dir, mit klarerem Kopf zurückzukehren.",
+      "Hör auf deinen Körper; Bedürfnisse sind verschieden, ein Arzt kann dich beraten."
+     ],
+     "q": "Welche kleine Pause oder Trinkgewohnheit passt leicht in deinen Tag?",
+     "c": "Stell heute ein Glas Wasser in deine Nähe und mach zwei kurze Pausen."
+    },
+    "es": {
+     "t": "Beber agua y hacer pausas",
+     "g": "Usar hábitos diarios sencillos que te ayuden a sentirte más fresco durante el día.",
+     "p": [
+      "Un vaso de agua a mano es una señal fácil para cuidarte.",
+      "Las pausas cortas ayudan a volver con la mente más clara.",
+      "Escucha a tu cuerpo; las necesidades varían y un médico puede orientarte."
+     ],
+     "q": "¿Qué pequeña pausa u hábito de beber encajaría fácil en tu día?",
+     "c": "Pon hoy un vaso de agua cerca de ti y haz dos pausas cortas."
+    },
+    "fr": {
+     "t": "Boire de l'eau et faire des pauses",
+     "g": "Adopter des habitudes simples qui aident à se sentir plus frais dans la journée.",
+     "p": [
+      "Un verre d'eau à portée de main est un signal simple pour prendre soin de soi.",
+      "De courtes pauses aident à revenir avec l'esprit plus clair.",
+      "Écoute ton corps ; les besoins varient et un médecin peut te conseiller."
+     ],
+     "q": "Quelle petite pause ou habitude de boire s'intégrerait facilement à ta journée ?",
+     "c": "Place aujourd'hui un verre d'eau près de toi et fais deux courtes pauses."
+    },
+    "it": {
+     "t": "Bere acqua e fare pause",
+     "g": "Adottare semplici abitudini quotidiane che aiutano a sentirsi più freschi durante il giorno.",
+     "p": [
+      "Un bicchiere d'acqua a portata di mano è un segnale facile per prenderti cura di te.",
+      "Brevi pause aiutano a tornare con la mente più chiara.",
+      "Ascolta il tuo corpo; i bisogni variano e un medico può consigliarti."
+     ],
+     "q": "Quale piccola pausa o abitudine del bere si inserirebbe facilmente nella tua giornata?",
+     "c": "Metti oggi un bicchiere d'acqua vicino a te e fai due brevi pause."
+    },
+    "pt": {
+     "t": "Beber água e fazer pausas",
+     "g": "Adotar hábitos diários simples que ajudam a sentires-te mais fresco durante o dia.",
+     "p": [
+      "Um copo de água à mão é um sinal fácil para cuidares de ti.",
+      "Pausas curtas ajudam a voltar com a mente mais clara.",
+      "Ouve o teu corpo; as necessidades variam e um médico pode aconselhar-te."
+     ],
+     "q": "Que pequena pausa ou hábito de beber caberia facilmente no teu dia?",
+     "c": "Põe hoje um copo de água perto de ti e faz duas pausas curtas."
+    },
+    "pt_BR": {
+     "t": "Beber água e fazer pausas",
+     "g": "Adotar hábitos diários simples que ajudam você a se sentir mais fresco durante o dia.",
+     "p": [
+      "Um copo de água à mão é um sinal fácil para cuidar de si.",
+      "Pausas curtas ajudam a voltar com a mente mais clara.",
+      "Ouça seu corpo; as necessidades variam e um médico pode orientar você."
+     ],
+     "q": "Que pequena pausa ou hábito de beber caberia fácil no seu dia?",
+     "c": "Coloque hoje um copo de água perto de você e faça duas pausas curtas."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your best time of day",
+     "g": "Notice when you feel most alert and plan important tasks for then.",
+     "p": [
+      "Most people have hours when focus comes more easily.",
+      "Putting demanding tasks in those hours makes them feel lighter.",
+      "Save easy tasks for low-energy times."
+     ],
+     "q": "When in the day do you usually feel sharpest?",
+     "c": "Note your energy morning, noon and evening today, and spot your best window."
+    },
+    "de": {
+     "t": "Deine beste Tageszeit",
+     "g": "Bemerken, wann du am wachsten bist, und wichtige Aufgaben dann planen.",
+     "p": [
+      "Die meisten Menschen haben Stunden, in denen Konzentration leichter fällt.",
+      "Anspruchsvolle Aufgaben in diese Stunden zu legen, macht sie leichter.",
+      "Spar dir einfache Aufgaben für Zeiten mit wenig Energie auf."
+     ],
+     "q": "Wann am Tag fühlst du dich meist am klarsten?",
+     "c": "Notiere heute deine Energie morgens, mittags und abends und finde dein bestes Zeitfenster."
+    },
+    "es": {
+     "t": "Tu mejor hora del día",
+     "g": "Notar cuándo estás más despierto y planear las tareas importantes para entonces.",
+     "p": [
+      "La mayoría de las personas tiene horas en las que concentrarse resulta más fácil.",
+      "Poner tareas exigentes en esas horas las hace más llevaderas.",
+      "Guarda las tareas fáciles para los momentos de poca energía."
+     ],
+     "q": "¿En qué momento del día sueles sentirte más lúcido?",
+     "c": "Anota hoy tu energía por la mañana, al mediodía y por la tarde, y detecta tu mejor franja."
+    },
+    "fr": {
+     "t": "Ton meilleur moment de la journée",
+     "g": "Repérer quand tu es le plus alerte et y planifier les tâches importantes.",
+     "p": [
+      "La plupart des gens ont des heures où la concentration vient plus facilement.",
+      "Placer les tâches exigeantes à ces heures les rend plus légères.",
+      "Garde les tâches faciles pour les moments de faible énergie."
+     ],
+     "q": "À quel moment de la journée te sens-tu en général le plus affûté ?",
+     "c": "Note aujourd'hui ton énergie le matin, à midi et le soir, et repère ta meilleure plage."
+    },
+    "it": {
+     "t": "Il tuo momento migliore della giornata",
+     "g": "Notare quando sei più sveglio e pianificare allora i compiti importanti.",
+     "p": [
+      "La maggior parte delle persone ha ore in cui concentrarsi è più facile.",
+      "Mettere i compiti impegnativi in quelle ore li rende più leggeri.",
+      "Tieni i compiti facili per i momenti di poca energia."
+     ],
+     "q": "In quale momento della giornata di solito ti senti più lucido?",
+     "c": "Annota oggi la tua energia al mattino, a mezzogiorno e la sera e individua la tua fascia migliore."
+    },
+    "pt": {
+     "t": "A tua melhor hora do dia",
+     "g": "Notar quando estás mais desperto e planear aí as tarefas importantes.",
+     "p": [
+      "A maioria das pessoas tem horas em que concentrar-se é mais fácil.",
+      "Pôr tarefas exigentes nessas horas torna-as mais leves.",
+      "Guarda as tarefas fáceis para os momentos de pouca energia."
+     ],
+     "q": "Em que altura do dia costumas sentir-te mais lúcido?",
+     "c": "Anota hoje a tua energia de manhã, ao meio-dia e à noite e descobre a tua melhor janela."
+    },
+    "pt_BR": {
+     "t": "Seu melhor horário do dia",
+     "g": "Notar quando você está mais desperto e planejar aí as tarefas importantes.",
+     "p": [
+      "A maioria das pessoas tem horas em que se concentrar é mais fácil.",
+      "Colocar tarefas exigentes nessas horas as deixa mais leves.",
+      "Guarde as tarefas fáceis para os momentos de pouca energia."
+     ],
+     "q": "Em que horário do dia você costuma se sentir mais lúcido?",
+     "c": "Anote hoje sua energia de manhã, ao meio-dia e à noite e descubra sua melhor janela."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Planning your day lightly",
+     "g": "Choose three priorities for today instead of a long list.",
+     "p": [
+      "Long lists can feel heavy; three priorities feel doable.",
+      "Pick one must-do, plus two that would be nice to finish.",
+      "If you finish early, the rest is a bonus."
+     ],
+     "q": "Of everything waiting for you, what are your three priorities today?",
+     "c": "Write three priorities on a small note each morning this week."
+    },
+    "de": {
+     "t": "Den Tag leicht planen",
+     "g": "Drei Prioritäten für heute wählen statt einer langen Liste.",
+     "p": [
+      "Lange Listen wirken schwer; drei Prioritäten wirken machbar.",
+      "Wähle eine Pflichtaufgabe und zwei, die schön zu erledigen wären.",
+      "Bist du früher fertig, ist der Rest ein Bonus."
+     ],
+     "q": "Was sind von allem, was wartet, deine drei Prioritäten heute?",
+     "c": "Schreib diese Woche jeden Morgen drei Prioritäten auf einen kleinen Zettel."
+    },
+    "es": {
+     "t": "Planificar el día con ligereza",
+     "g": "Elegir tres prioridades para hoy en vez de una lista larga.",
+     "p": [
+      "Las listas largas pesan; tres prioridades se sienten posibles.",
+      "Elige una imprescindible y dos que sería bueno terminar.",
+      "Si terminas antes, lo demás es un extra."
+     ],
+     "q": "De todo lo que te espera, ¿cuáles son tus tres prioridades de hoy?",
+     "c": "Escribe tres prioridades en una nota pequeña cada mañana esta semana."
+    },
+    "fr": {
+     "t": "Planifier sa journée légèrement",
+     "g": "Choisir trois priorités pour aujourd'hui plutôt qu'une longue liste.",
+     "p": [
+      "Les longues listes pèsent ; trois priorités paraissent faisables.",
+      "Choisis une chose indispensable et deux qu'il serait bien de finir.",
+      "Si tu finis plus tôt, le reste est un bonus."
+     ],
+     "q": "Parmi tout ce qui t'attend, quelles sont tes trois priorités aujourd'hui ?",
+     "c": "Écris trois priorités sur un petit mot chaque matin cette semaine."
+    },
+    "it": {
+     "t": "Pianificare la giornata con leggerezza",
+     "g": "Scegliere tre priorità per oggi invece di una lunga lista.",
+     "p": [
+      "Le liste lunghe pesano; tre priorità sembrano fattibili.",
+      "Scegli una cosa indispensabile e due che sarebbe bello finire.",
+      "Se finisci prima, il resto è un bonus."
+     ],
+     "q": "Tra tutto ciò che ti aspetta, quali sono le tue tre priorità di oggi?",
+     "c": "Scrivi tre priorità su un bigliettino ogni mattina questa settimana."
+    },
+    "pt": {
+     "t": "Planear o dia com leveza",
+     "g": "Escolher três prioridades para hoje em vez de uma lista longa.",
+     "p": [
+      "As listas longas pesam; três prioridades parecem possíveis.",
+      "Escolhe uma indispensável e duas que seria bom acabar.",
+      "Se acabares mais cedo, o resto é um extra."
+     ],
+     "q": "De tudo o que te espera, quais são as tuas três prioridades de hoje?",
+     "c": "Escreve três prioridades num pequeno bilhete todas as manhãs esta semana."
+    },
+    "pt_BR": {
+     "t": "Planejar o dia com leveza",
+     "g": "Escolher três prioridades para hoje em vez de uma lista longa.",
+     "p": [
+      "Listas longas pesam; três prioridades parecem possíveis.",
+      "Escolha uma indispensável e duas que seria bom terminar.",
+      "Se você terminar mais cedo, o resto é um extra."
+     ],
+     "q": "De tudo o que espera você, quais são suas três prioridades de hoje?",
+     "c": "Escreva três prioridades em um bilhetinho toda manhã esta semana."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mini review: daily rhythm",
+     "g": "Recap routines, rest and planning your best hours.",
+     "p": [
+      "Gentle routines in the morning and evening frame your day.",
+      "Rest, movement and breaks support your energy.",
+      "Three priorities placed in your best hours make the day lighter."
+     ],
+     "q": "Which part of your daily rhythm feels best, and what would you tweak?",
+     "c": "Design a tiny ideal day: one morning action, three priorities, one evening action."
+    },
+    "de": {
+     "t": "Mini-Wiederholung: Tagesrhythmus",
+     "g": "Routinen, Erholung und die Planung deiner besten Stunden wiederholen.",
+     "p": [
+      "Sanfte Morgen- und Abendroutinen rahmen deinen Tag.",
+      "Erholung, Bewegung und Pausen stützen deine Energie.",
+      "Drei Prioritäten in deinen besten Stunden machen den Tag leichter."
+     ],
+     "q": "Welcher Teil deines Tagesrhythmus fühlt sich am besten an, was würdest du ändern?",
+     "c": "Entwirf einen winzigen Idealtag: eine Morgenhandlung, drei Prioritäten, eine Abendhandlung."
+    },
+    "es": {
+     "t": "Mini repaso: ritmo diario",
+     "g": "Repasar rutinas, descanso y la planificación de tus mejores horas.",
+     "p": [
+      "Rutinas suaves de mañana y noche enmarcan tu día.",
+      "Descanso, movimiento y pausas apoyan tu energía.",
+      "Tres prioridades en tus mejores horas hacen el día más ligero."
+     ],
+     "q": "¿Qué parte de tu ritmo diario se siente mejor y qué ajustarías?",
+     "c": "Diseña un día ideal diminuto: una acción de mañana, tres prioridades, una de noche."
+    },
+    "fr": {
+     "t": "Mini bilan : rythme quotidien",
+     "g": "Revoir routines, repos et planification de tes meilleures heures.",
+     "p": [
+      "Des routines douces matin et soir encadrent ta journée.",
+      "Repos, mouvement et pauses soutiennent ton énergie.",
+      "Trois priorités placées à tes meilleures heures allègent la journée."
+     ],
+     "q": "Quelle partie de ton rythme quotidien te convient le mieux, que changerais-tu ?",
+     "c": "Dessine une mini journée idéale : une action le matin, trois priorités, une le soir."
+    },
+    "it": {
+     "t": "Mini ripasso: ritmo quotidiano",
+     "g": "Ripassare routine, riposo e pianificazione delle tue ore migliori.",
+     "p": [
+      "Routine dolci al mattino e alla sera incorniciano la tua giornata.",
+      "Riposo, movimento e pause sostengono la tua energia.",
+      "Tre priorità nelle tue ore migliori rendono la giornata più leggera."
+     ],
+     "q": "Quale parte del tuo ritmo quotidiano va meglio e cosa ritoccheresti?",
+     "c": "Disegna una minigiornata ideale: un'azione al mattino, tre priorità, una alla sera."
+    },
+    "pt": {
+     "t": "Mini revisão: ritmo diário",
+     "g": "Rever rotinas, descanso e o planeamento das tuas melhores horas.",
+     "p": [
+      "Rotinas suaves de manhã e à noite enquadram o teu dia.",
+      "Descanso, movimento e pausas apoiam a tua energia.",
+      "Três prioridades nas tuas melhores horas tornam o dia mais leve."
+     ],
+     "q": "Que parte do teu ritmo diário se sente melhor e o que ajustarias?",
+     "c": "Desenha um dia ideal minúsculo: uma ação de manhã, três prioridades, uma à noite."
+    },
+    "pt_BR": {
+     "t": "Mini revisão: ritmo diário",
+     "g": "Rever rotinas, descanso e o planejamento das suas melhores horas.",
+     "p": [
+      "Rotinas suaves de manhã e à noite enquadram o seu dia.",
+      "Descanso, movimento e pausas apoiam sua energia.",
+      "Três prioridades nas suas melhores horas deixam o dia mais leve."
+     ],
+     "q": "Que parte do seu ritmo diário vai melhor e o que você ajustaria?",
+     "c": "Desenhe um dia ideal minúsculo: uma ação de manhã, três prioridades, uma à noite."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What procrastination is",
+     "g": "Understand that putting things off is very human, and meet it without blame.",
+     "p": [
+      "Procrastination means delaying something even though you know it matters.",
+      "Almost everyone does it; it is not laziness or a flaw in you.",
+      "Seeing it with kindness is the first step to working with it."
+     ],
+     "q": "What is something you have been putting off lately?",
+     "c": "Name one thing you are postponing and say: it is okay, and I will look at it."
+    },
+    "de": {
+     "t": "Was Aufschieben ist",
+     "g": "Verstehen, dass Aufschieben sehr menschlich ist, und es ohne Schuldgefühle betrachten.",
+     "p": [
+      "Aufschieben heißt, etwas zu verzögern, obwohl man weiß, dass es wichtig ist.",
+      "Fast alle tun es; es ist keine Faulheit und kein Makel.",
+      "Es freundlich zu sehen ist der erste Schritt, damit umzugehen."
+     ],
+     "q": "Was schiebst du in letzter Zeit vor dir her?",
+     "c": "Benenne etwas, das du aufschiebst, und sag: Das ist okay, ich sehe es mir an."
+    },
+    "es": {
+     "t": "Qué es procrastinar",
+     "g": "Entender que dejar cosas para después es muy humano y mirarlo sin culpa.",
+     "p": [
+      "Procrastinar es retrasar algo aunque sabes que importa.",
+      "Casi todos lo hacen; no es pereza ni un defecto tuyo.",
+      "Verlo con amabilidad es el primer paso para trabajar con ello."
+     ],
+     "q": "¿Qué cosa has estado dejando para después últimamente?",
+     "c": "Nombra algo que estés posponiendo y di: está bien, voy a mirarlo."
+    },
+    "fr": {
+     "t": "Ce qu'est la procrastination",
+     "g": "Comprendre que remettre à plus tard est très humain, et l'aborder sans culpabilité.",
+     "p": [
+      "Procrastiner, c'est retarder quelque chose alors qu'on sait que c'est important.",
+      "Presque tout le monde le fait ; ce n'est ni de la paresse ni un défaut.",
+      "Le regarder avec bienveillance est le premier pas pour s'en occuper."
+     ],
+     "q": "Qu'est-ce que tu remets à plus tard ces derniers temps ?",
+     "c": "Nomme une chose que tu repousses et dis : c'est ok, je vais la regarder."
+    },
+    "it": {
+     "t": "Cos'è la procrastinazione",
+     "g": "Capire che rimandare è molto umano e guardarlo senza colpa.",
+     "p": [
+      "Procrastinare significa ritardare qualcosa pur sapendo che è importante.",
+      "Quasi tutti lo fanno; non è pigrizia né un tuo difetto.",
+      "Guardarlo con gentilezza è il primo passo per gestirlo."
+     ],
+     "q": "Cosa stai rimandando ultimamente?",
+     "c": "Nomina una cosa che stai rimandando e di': va bene, la guarderò."
+    },
+    "pt": {
+     "t": "O que é procrastinar",
+     "g": "Perceber que adiar é muito humano e olhar para isso sem culpa.",
+     "p": [
+      "Procrastinar é atrasar algo mesmo sabendo que é importante.",
+      "Quase toda a gente o faz; não é preguiça nem um defeito teu.",
+      "Olhar com gentileza é o primeiro passo para lidar com isso."
+     ],
+     "q": "O que tens andado a adiar ultimamente?",
+     "c": "Nomeia uma coisa que estás a adiar e diz: está tudo bem, vou olhar para isso."
+    },
+    "pt_BR": {
+     "t": "O que é procrastinar",
+     "g": "Entender que adiar é muito humano e olhar para isso sem culpa.",
+     "p": [
+      "Procrastinar é atrasar algo mesmo sabendo que é importante.",
+      "Quase todo mundo faz isso; não é preguiça nem um defeito seu.",
+      "Olhar com gentileza é o primeiro passo para lidar com isso."
+     ],
+     "q": "O que você tem adiado ultimamente?",
+     "c": "Nomeie uma coisa que você está adiando e diga: tudo bem, vou olhar para isso."
+    }
+   }
+  }
+ ]
+}

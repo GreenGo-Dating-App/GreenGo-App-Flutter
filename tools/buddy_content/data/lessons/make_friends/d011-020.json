@@ -1,0 +1,835 @@
+{
+ "topic": "make_friends",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sharing a little about yourself",
+     "g": "Balance your questions with small stories of your own so the chat feels mutual.",
+     "p": [
+      "Friendship needs give and take, so share as well as ask.",
+      "Start small: a hobby, a favourite food or a funny moment from your week.",
+      "Share only what feels comfortable; you decide how open to be."
+     ],
+     "q": "What small story about you would be nice to tell a new friend?",
+     "c": "In one chat today, answer a question and then share one small detail about you."
+    },
+    "de": {
+     "t": "Ein wenig von dir erzählen",
+     "g": "Du hältst Fragen und kleine eigene Geschichten im Gleichgewicht, damit das Gespräch auf Gegenseitigkeit beruht.",
+     "p": [
+      "Freundschaft lebt vom Geben und Nehmen, also teile auch etwas, nicht nur Fragen.",
+      "Fang klein an: ein Hobby, ein Lieblingsessen oder ein lustiger Moment der Woche.",
+      "Teile nur, was sich gut anfühlt; du entscheidest, wie offen du bist."
+     ],
+     "q": "Welche kleine Geschichte über dich würdest du einem neuen Freund gern erzählen?",
+     "c": "Beantworte heute in einem Gespräch eine Frage und teile dann ein kleines Detail über dich."
+    },
+    "es": {
+     "t": "Contar un poco sobre ti",
+     "g": "Equilibra tus preguntas con pequeñas historias propias para que la charla sea mutua.",
+     "p": [
+      "La amistad necesita dar y recibir, así que cuenta algo además de preguntar.",
+      "Empieza pequeño: un pasatiempo, una comida favorita o un momento gracioso de tu semana.",
+      "Comparte solo lo que te resulte cómodo; tú decides cuánto abrirte."
+     ],
+     "q": "¿Qué pequeña historia sobre ti te gustaría contar a un amigo nuevo?",
+     "c": "En una charla de hoy, responde una pregunta y luego cuenta un detalle pequeño sobre ti."
+    },
+    "fr": {
+     "t": "Parler un peu de toi",
+     "g": "Équilibre tes questions avec de petites histoires à toi pour que l'échange soit réciproque.",
+     "p": [
+      "L'amitié, c'est donner et recevoir : partage aussi, ne fais pas que questionner.",
+      "Commence petit : un loisir, un plat préféré ou un moment drôle de ta semaine.",
+      "Ne partage que ce qui te met à l'aise ; c'est toi qui décides de ton ouverture."
+     ],
+     "q": "Quelle petite histoire sur toi aimerais-tu raconter à un nouvel ami ?",
+     "c": "Dans une discussion aujourd'hui, réponds à une question puis partage un petit détail sur toi."
+    },
+    "it": {
+     "t": "Raccontare un po' di te",
+     "g": "Bilancia le domande con piccole storie tue così la conversazione è reciproca.",
+     "p": [
+      "L'amicizia è dare e ricevere, quindi condividi oltre a chiedere.",
+      "Parti in piccolo: un hobby, un cibo preferito o un momento buffo della settimana.",
+      "Condividi solo ciò che ti mette a tuo agio; sei tu a decidere quanto aprirti."
+     ],
+     "q": "Quale piccola storia su di te ti piacerebbe raccontare a un nuovo amico?",
+     "c": "In una chiacchierata di oggi rispondi a una domanda e poi condividi un piccolo dettaglio su di te."
+    },
+    "pt": {
+     "t": "Partilhar um pouco sobre ti",
+     "g": "Equilibra as perguntas com pequenas histórias tuas para a conversa ser mútua.",
+     "p": [
+      "A amizade precisa de dar e receber, por isso partilha também, não só perguntes.",
+      "Começa pequeno: um passatempo, uma comida preferida ou um momento engraçado da semana.",
+      "Partilha só o que te deixar à vontade; tu decides o quanto te abres."
+     ],
+     "q": "Que pequena história sobre ti gostarias de contar a um novo amigo?",
+     "c": "Numa conversa de hoje, responde a uma pergunta e depois partilha um pequeno detalhe sobre ti."
+    },
+    "pt_BR": {
+     "t": "Compartilhando um pouco sobre você",
+     "g": "Equilibre as perguntas com pequenas histórias suas para o papo ser mútuo.",
+     "p": [
+      "Amizade precisa de troca, então compartilhe também, não só pergunte.",
+      "Comece pequeno: um hobby, uma comida favorita ou um momento engraçado da semana.",
+      "Compartilhe só o que for confortável; você decide o quanto se abrir."
+     ],
+     "q": "Que pequena história sua você gostaria de contar a um novo amigo?",
+     "c": "Num papo de hoje, responda a uma pergunta e depois conte um pequeno detalhe sobre você."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Small talk is a bridge",
+     "g": "See why light chat matters and how it opens the door to deeper topics.",
+     "p": [
+      "Small talk is not empty; it tells people you are friendly and safe.",
+      "Weather, food and weekend plans are warm-up topics that lead somewhere.",
+      "When a topic sparks energy, follow it gently to go a bit deeper."
+     ],
+     "q": "What small talk topic do you find easiest?",
+     "c": "Have one short small talk chat today and notice which topic lights the person up."
+    },
+    "de": {
+     "t": "Smalltalk ist eine Brücke",
+     "g": "Du siehst, warum leichte Gespräche wichtig sind und wie sie die Tür zu tieferen Themen öffnen.",
+     "p": [
+      "Smalltalk ist nicht leer; er zeigt, dass du freundlich und sicher bist.",
+      "Wetter, Essen und Wochenendpläne sind Aufwärmthemen, die weiterführen.",
+      "Weckt ein Thema Begeisterung, folge ihm sanft und geh etwas tiefer."
+     ],
+     "q": "Welches Smalltalk-Thema fällt dir am leichtesten?",
+     "c": "Führe heute ein kurzes Smalltalk-Gespräch und achte darauf, welches Thema die Person begeistert."
+    },
+    "es": {
+     "t": "La charla ligera es un puente",
+     "g": "Descubre por qué la charla ligera importa y cómo abre la puerta a temas más profundos.",
+     "p": [
+      "La charla ligera no es vacía; dice que eres amable y de fiar.",
+      "El clima, la comida y los planes del finde son temas de calentamiento que llevan a más.",
+      "Cuando un tema anima a la otra persona, síguelo con suavidad para profundizar."
+     ],
+     "q": "¿Qué tema de charla ligera te resulta más fácil?",
+     "c": "Ten hoy una charla breve y fíjate en qué tema ilumina a la otra persona."
+    },
+    "fr": {
+     "t": "Le small talk est un pont",
+     "g": "Vois pourquoi les échanges légers comptent et comment ils ouvrent la porte à des sujets plus profonds.",
+     "p": [
+      "Les petites discussions ne sont pas vides ; elles montrent que tu es sympa et fiable.",
+      "Météo, repas et projets de week-end sont des sujets d'échauffement qui mènent plus loin.",
+      "Quand un sujet allume l'autre, suis-le doucement pour aller un peu plus loin."
+     ],
+     "q": "Quel sujet de conversation légère te vient le plus facilement ?",
+     "c": "Aie aujourd'hui une courte discussion légère et repère le sujet qui fait briller la personne."
+    },
+    "it": {
+     "t": "Le chiacchiere sono un ponte",
+     "g": "Scopri perché le chiacchiere leggere contano e come aprono la porta a temi più profondi.",
+     "p": [
+      "Le chiacchiere non sono vuote; dicono che sei amichevole e affidabile.",
+      "Tempo, cibo e progetti del weekend sono temi di riscaldamento che portano oltre.",
+      "Quando un tema accende l'altra persona, seguilo con delicatezza per andare più a fondo."
+     ],
+     "q": "Quale tema di chiacchiere leggere ti viene più facile?",
+     "c": "Fai oggi una breve chiacchierata e nota quale tema fa illuminare la persona."
+    },
+    "pt": {
+     "t": "A conversa leve é uma ponte",
+     "g": "Vê porque a conversa leve conta e como abre a porta a temas mais profundos.",
+     "p": [
+      "A conversa leve não é vazia; mostra que és simpático e de confiança.",
+      "O tempo, a comida e os planos de fim de semana aquecem e levam mais longe.",
+      "Quando um tema anima a outra pessoa, segue-o com suavidade para aprofundar."
+     ],
+     "q": "Que tema de conversa leve te sai mais fácil?",
+     "c": "Tem hoje uma conversa leve e curta e repara que tema ilumina a pessoa."
+    },
+    "pt_BR": {
+     "t": "Papo leve é uma ponte",
+     "g": "Veja por que o papo leve importa e como ele abre a porta para assuntos mais profundos.",
+     "p": [
+      "Papo leve não é vazio; mostra que você é simpático e confiável.",
+      "Clima, comida e planos de fim de semana aquecem e levam mais longe.",
+      "Quando um assunto anima a outra pessoa, siga com jeitinho para aprofundar."
+     ],
+     "q": "Que assunto de papo leve é mais fácil para você?",
+     "c": "Tenha hoje um papo leve e curto e repare que assunto faz a pessoa se animar."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ending a conversation kindly",
+     "g": "Learn graceful ways to wrap up and leave a warm last impression.",
+     "p": [
+      "You may end a chat politely: 'It was lovely talking, I will go say hi to a friend.'",
+      "A warm last line, like 'I enjoyed this', is what people remember.",
+      "Leaving kindly is not rude, and it makes meeting again easier."
+     ],
+     "q": "How do you usually end chats, and how could you make it warmer?",
+     "c": "End one chat today with a smile, a thank you and the person's name."
+    },
+    "de": {
+     "t": "Ein Gespräch freundlich beenden",
+     "g": "Du lernst elegante Wege, ein Gespräch abzuschließen und einen warmen letzten Eindruck zu hinterlassen.",
+     "p": [
+      "Du darfst höflich schließen: Es war schön zu plaudern, ich gehe kurz zu einer Freundin.",
+      "Ein warmer Schlusssatz wie „Das hat mir gefallen“ bleibt in Erinnerung.",
+      "Freundlich zu gehen ist nicht unhöflich und erleichtert ein Wiedersehen."
+     ],
+     "q": "Wie beendest du Gespräche meist, und wie könntest du es herzlicher machen?",
+     "c": "Beende heute ein Gespräch mit Lächeln, Danke und dem Namen der Person."
+    },
+    "es": {
+     "t": "Terminar una charla con amabilidad",
+     "g": "Aprende formas elegantes de cerrar una conversación y dejar una última impresión cálida.",
+     "p": [
+      "Puedes cerrar con cortesía: Fue un placer hablar, voy a saludar a un amigo.",
+      "Una última frase cálida, como Lo disfruté, es lo que la gente recuerda.",
+      "Irte con amabilidad no es de mala educación y facilita volver a verse."
+     ],
+     "q": "¿Cómo sueles terminar las charlas y cómo podrías hacerlo más cálido?",
+     "c": "Termina hoy una charla con una sonrisa, un gracias y el nombre de la persona."
+    },
+    "fr": {
+     "t": "Terminer une discussion avec gentillesse",
+     "g": "Apprends des façons élégantes de conclure et de laisser une dernière impression chaleureuse.",
+     "p": [
+      "Tu peux conclure poliment : C'était un plaisir de discuter, je vais saluer un ami.",
+      "Une dernière phrase chaleureuse, comme J'ai adoré, reste en mémoire.",
+      "Partir gentiment n'est pas impoli et facilite de se revoir."
+     ],
+     "q": "Comment termines-tu d'habitude une discussion, et comment la rendre plus chaleureuse ?",
+     "c": "Termine aujourd'hui une discussion avec un sourire, un merci et le prénom de la personne."
+    },
+    "it": {
+     "t": "Chiudere una conversazione con gentilezza",
+     "g": "Impara modi eleganti per concludere e lasciare un'ultima impressione calda.",
+     "p": [
+      "Puoi chiudere con garbo: È stato un piacere chiacchierare, vado a salutare un amico.",
+      "Una frase finale calda, come Mi è piaciuto, è ciò che la gente ricorda.",
+      "Andarsene con gentilezza non è maleducato e rende più facile rivedersi."
+     ],
+     "q": "Come chiudi di solito le conversazioni e come potresti renderle più calde?",
+     "c": "Chiudi oggi una chiacchierata con un sorriso, un grazie e il nome della persona."
+    },
+    "pt": {
+     "t": "Terminar uma conversa com simpatia",
+     "g": "Aprende formas elegantes de concluir e deixar uma última impressão calorosa.",
+     "p": [
+      "Podes terminar com educação: Foi um prazer conversar, vou cumprimentar um amigo.",
+      "Uma última frase calorosa, como Gostei muito, é o que as pessoas recordam.",
+      "Sair com simpatia não é mal-educado e facilita voltar a encontrar-se."
+     ],
+     "q": "Como costumas terminar conversas e como as podias tornar mais calorosas?",
+     "c": "Termina hoje uma conversa com um sorriso, um obrigado e o nome da pessoa."
+    },
+    "pt_BR": {
+     "t": "Encerrando uma conversa com gentileza",
+     "g": "Aprenda jeitos elegantes de encerrar e deixar uma última impressão calorosa.",
+     "p": [
+      "Dá para encerrar com educação: Foi um prazer conversar, vou cumprimentar um amigo.",
+      "Uma última frase calorosa, como Gostei muito, é o que as pessoas lembram.",
+      "Sair com gentileza não é falta de educação e facilita um novo encontro."
+     ],
+     "q": "Como você costuma encerrar papos e como poderia deixá-los mais calorosos?",
+     "c": "Encerre hoje um papo com um sorriso, um obrigado e o nome da pessoa."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Exchanging contacts naturally",
+     "g": "Learn how to suggest swapping numbers or social handles without awkwardness.",
+     "p": [
+      "Ask when the chat was good: 'I enjoyed this, shall we keep in touch?'",
+      "Offer a choice, like a messaging app or social handle, so nobody feels pressed.",
+      "Be fine with a no, and never share someone's details without asking."
+     ],
+     "q": "Which way of staying in touch feels most comfortable to you?",
+     "c": "If a chat goes well, suggest keeping in touch today, or practise the sentence aloud."
+    },
+    "de": {
+     "t": "Kontakte ganz natürlich austauschen",
+     "g": "Du lernst, wie du Nummern oder Profile tauschen vorschlägst, ohne dass es peinlich wird.",
+     "p": [
+      "Frag, wenn das Gespräch gut war: Das war schön, wollen wir in Kontakt bleiben?",
+      "Biete eine Auswahl, etwa Messenger oder Profil, damit sich niemand gedrängt fühlt.",
+      "Akzeptiere ein Nein und gib nie Daten anderer ohne Erlaubnis weiter."
+     ],
+     "q": "Welcher Weg, in Kontakt zu bleiben, ist dir am angenehmsten?",
+     "c": "Wenn ein Gespräch gut läuft, schlage heute Kontakt vor, oder übe den Satz laut."
+    },
+    "es": {
+     "t": "Intercambiar contactos con naturalidad",
+     "g": "Aprende a proponer intercambiar números o perfiles sociales sin que resulte incómodo.",
+     "p": [
+      "Pregunta cuando la charla fue buena: Me gustó hablar, ¿seguimos en contacto?",
+      "Ofrece opciones, como una app de mensajes o un perfil, para que nadie se sienta presionado.",
+      "Acepta un no y nunca compartas datos de alguien sin permiso."
+     ],
+     "q": "¿Qué forma de mantener el contacto te resulta más cómoda?",
+     "c": "Si una charla va bien, propón mantener el contacto hoy, o practica la frase en voz alta."
+    },
+    "fr": {
+     "t": "Échanger ses contacts naturellement",
+     "g": "Apprends à proposer d'échanger numéros ou profils sans gêne.",
+     "p": [
+      "Demande quand l'échange était bon : J'ai aimé discuter, on reste en contact ?",
+      "Propose un choix, comme une messagerie ou un profil, pour que personne ne se sente pressé.",
+      "Accepte un non et ne partage jamais les coordonnées de quelqu'un sans demander."
+     ],
+     "q": "Quelle façon de rester en contact te met le plus à l'aise ?",
+     "c": "Si un échange se passe bien, propose de rester en contact aujourd'hui, ou répète la phrase à voix haute."
+    },
+    "it": {
+     "t": "Scambiarsi i contatti con naturalezza",
+     "g": "Impara a proporre di scambiarvi numeri o profili social senza imbarazzo.",
+     "p": [
+      "Chiedi quando la chiacchierata è andata bene: Mi è piaciuto, restiamo in contatto?",
+      "Offri una scelta, come app di messaggi o profilo social, così nessuno si sente pressato.",
+      "Accetta un no e non condividere mai i dati di qualcuno senza chiedere."
+     ],
+     "q": "Quale modo di restare in contatto ti fa sentire più a tuo agio?",
+     "c": "Se una chiacchierata va bene, proponi oggi di restare in contatto, o prova la frase ad alta voce."
+    },
+    "pt": {
+     "t": "Trocar contactos com naturalidade",
+     "g": "Aprende a propor a troca de números ou perfis sociais sem constrangimento.",
+     "p": [
+      "Pergunta quando a conversa correu bem: Gostei de falar, ficamos em contacto?",
+      "Oferece opções, como uma app de mensagens ou um perfil, para ninguém se sentir pressionado.",
+      "Aceita um não e nunca partilhes dados de alguém sem pedir."
+     ],
+     "q": "Que forma de manter contacto é mais confortável para ti?",
+     "c": "Se uma conversa correr bem, propõe hoje manter contacto, ou pratica a frase em voz alta."
+    },
+    "pt_BR": {
+     "t": "Trocando contatos com naturalidade",
+     "g": "Aprenda a propor a troca de números ou perfis sociais sem constrangimento.",
+     "p": [
+      "Pergunte quando o papo foi bom: Gostei de conversar, vamos manter contato?",
+      "Ofereça opções, como um app de mensagens ou um perfil, para ninguém se sentir pressionado.",
+      "Aceite um não e nunca compartilhe dados de alguém sem pedir."
+     ],
+     "q": "Que forma de manter contato é mais confortável para você?",
+     "c": "Se um papo for bem, proponha hoje manter contato, ou pratique a frase em voz alta."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The follow-up message",
+     "g": "Learn what to write after meeting someone so the connection does not fade.",
+     "p": [
+      "Send a short message within a day or two while the memory is fresh.",
+      "Mention something from your chat: 'I loved the story about your trip!'",
+      "End with a light idea or question that makes replying easy."
+     ],
+     "q": "What would you write to someone you met yesterday?",
+     "c": "Send one friendly follow-up message to someone you met recently."
+    },
+    "de": {
+     "t": "Die Nachricht danach",
+     "g": "Du lernst, was du nach einem Kennenlernen schreibst, damit die Verbindung nicht verblasst.",
+     "p": [
+      "Schick innerhalb von ein, zwei Tagen eine kurze Nachricht, solange die Erinnerung frisch ist.",
+      "Greife etwas aus dem Gespräch auf: Deine Reisegeschichte fand ich toll!",
+      "Schließe mit einer lockeren Idee oder Frage, die das Antworten leicht macht."
+     ],
+     "q": "Was würdest du jemandem schreiben, den du gestern kennengelernt hast?",
+     "c": "Schick heute eine freundliche Nachricht an jemanden, den du kürzlich getroffen hast."
+    },
+    "es": {
+     "t": "El mensaje de seguimiento",
+     "g": "Aprende qué escribir tras conocer a alguien para que la conexión no se enfríe.",
+     "p": [
+      "Envía un mensaje corto en uno o dos días, mientras el recuerdo está fresco.",
+      "Menciona algo de la charla: ¡Me encantó la historia de tu viaje!",
+      "Termina con una idea o pregunta ligera que haga fácil responder."
+     ],
+     "q": "¿Qué le escribirías a alguien que conociste ayer?",
+     "c": "Envía hoy un mensaje amable de seguimiento a alguien que conociste hace poco."
+    },
+    "fr": {
+     "t": "Le message de suivi",
+     "g": "Apprends quoi écrire après une rencontre pour que le lien ne s'éteigne pas.",
+     "p": [
+      "Envoie un court message sous un jour ou deux, tant que le souvenir est frais.",
+      "Mentionne un élément de votre échange : J'ai adoré l'histoire de ton voyage !",
+      "Termine par une idée ou une question légère qui facilite la réponse."
+     ],
+     "q": "Que serait ton message à quelqu'un rencontré hier ?",
+     "c": "Envoie aujourd'hui un message sympa à quelqu'un rencontré récemment."
+    },
+    "it": {
+     "t": "Il messaggio di follow-up",
+     "g": "Impara cosa scrivere dopo aver conosciuto qualcuno perché il legame non si spenga.",
+     "p": [
+      "Manda un breve messaggio entro un giorno o due, finché il ricordo è fresco.",
+      "Cita qualcosa della chiacchierata: Mi è piaciuta la storia del tuo viaggio!",
+      "Chiudi con un'idea o una domanda leggera che renda facile rispondere."
+     ],
+     "q": "Cosa scriveresti a una persona conosciuta ieri?",
+     "c": "Oggi manda un messaggio amichevole a qualcuno conosciuto da poco."
+    },
+    "pt": {
+     "t": "A mensagem de seguimento",
+     "g": "Aprende o que escrever depois de conhecer alguém para a ligação não esfriar.",
+     "p": [
+      "Envia uma mensagem curta em um ou dois dias, enquanto a memória está fresca.",
+      "Menciona algo da conversa: Adorei a história da tua viagem!",
+      "Termina com uma ideia ou pergunta leve que facilite a resposta."
+     ],
+     "q": "O que escreverias a alguém que conheceste ontem?",
+     "c": "Envia hoje uma mensagem simpática a alguém que conheceste há pouco."
+    },
+    "pt_BR": {
+     "t": "A mensagem de seguimento",
+     "g": "Aprenda o que escrever depois de conhecer alguém para a conexão não esfriar.",
+     "p": [
+      "Mande uma mensagem curta em um ou dois dias, enquanto a memória está fresca.",
+      "Mencione algo do papo: Adorei a história da sua viagem!",
+      "Termine com uma ideia ou pergunta leve que facilite a resposta."
+     ],
+     "q": "O que você escreveria a alguém que conheceu ontem?",
+     "c": "Envie hoje uma mensagem simpática a alguém que conheceu há pouco."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Exploring your neighbourhood",
+     "g": "Walk your area to find cafes, parks and spots where locals gather.",
+     "p": [
+      "Walking slowly shows you small shops, noticeboards and friendly corners.",
+      "Places with seating, events or regulars are great for meeting people.",
+      "Go in daylight and in busy public places while you explore."
+     ],
+     "q": "Which place near you would you like to explore first?",
+     "c": "Take a 20-minute walk in your area and note two places where people gather."
+    },
+    "de": {
+     "t": "Deine Nachbarschaft erkunden",
+     "g": "Du gehst durch dein Viertel und findest Cafés, Parks und Orte, an denen sich Einheimische treffen.",
+     "p": [
+      "Langsames Gehen zeigt dir kleine Läden, Aushänge und freundliche Ecken.",
+      "Orte mit Sitzplätzen, Veranstaltungen oder Stammgästen eignen sich gut zum Kennenlernen.",
+      "Erkunde bei Tageslicht und an belebten öffentlichen Orten."
+     ],
+     "q": "Welchen Ort in deiner Nähe möchtest du zuerst erkunden?",
+     "c": "Mach einen 20-Minuten-Spaziergang im Viertel und notiere zwei Orte, an denen sich Menschen treffen."
+    },
+    "es": {
+     "t": "Explora tu barrio",
+     "g": "Recorre tu zona para encontrar cafés, parques y lugares donde se reúne la gente local.",
+     "p": [
+      "Caminar despacio te muestra tiendas pequeñas, tablones de anuncios y rincones amables.",
+      "Los sitios con asientos, eventos o habituales son ideales para conocer gente.",
+      "Explora de día y en lugares públicos concurridos."
+     ],
+     "q": "¿Qué lugar cerca de ti te gustaría explorar primero?",
+     "c": "Da un paseo de 20 minutos por tu zona y anota dos lugares donde se reúne la gente."
+    },
+    "fr": {
+     "t": "Explorer ton quartier",
+     "g": "Parcours ton secteur pour trouver cafés, parcs et lieux où les gens du coin se retrouvent.",
+     "p": [
+      "Marcher lentement te fait voir petits commerces, panneaux d'affichage et coins sympas.",
+      "Les lieux avec des places assises, des événements ou des habitués sont parfaits pour rencontrer.",
+      "Explore de jour et dans des lieux publics fréquentés."
+     ],
+     "q": "Quel endroit près de chez toi aimerais-tu explorer en premier ?",
+     "c": "Fais une balade de 20 minutes dans ton quartier et note deux lieux où les gens se retrouvent."
+    },
+    "it": {
+     "t": "Esplorare il tuo quartiere",
+     "g": "Percorri la tua zona per trovare bar, parchi e posti dove si ritrovano gli abitanti.",
+     "p": [
+      "Camminare piano ti mostra negozietti, bacheche e angoli accoglienti.",
+      "I posti con sedute, eventi o habitué sono ottimi per conoscere gente.",
+      "Esplora di giorno e in luoghi pubblici frequentati."
+     ],
+     "q": "Quale posto vicino a te vorresti esplorare per primo?",
+     "c": "Fai una passeggiata di 20 minuti nella tua zona e segna due posti dove la gente si ritrova."
+    },
+    "pt": {
+     "t": "Explorar o teu bairro",
+     "g": "Percorre a tua zona para encontrar cafés, parques e locais onde os locais se reúnem.",
+     "p": [
+      "Caminhar devagar mostra-te lojas pequenas, painéis de aviso e cantos simpáticos.",
+      "Locais com bancos, eventos ou habitués são ótimos para conhecer pessoas.",
+      "Explora de dia e em locais públicos movimentados."
+     ],
+     "q": "Que local perto de ti gostarias de explorar primeiro?",
+     "c": "Dá um passeio de 20 minutos pela tua zona e anota dois locais onde as pessoas se reúnem."
+    },
+    "pt_BR": {
+     "t": "Explorando o seu bairro",
+     "g": "Percorra sua região para achar cafés, parques e lugares onde os moradores se reúnem.",
+     "p": [
+      "Andar devagar mostra lojinhas, murais de avisos e cantinhos simpáticos.",
+      "Lugares com bancos, eventos ou frequentadores fixos são ótimos para conhecer gente.",
+      "Explore de dia e em lugares públicos movimentados."
+     ],
+     "q": "Que lugar perto de você gostaria de explorar primeiro?",
+     "c": "Faça uma caminhada de 20 minutos pela região e anote dois lugares onde as pessoas se reúnem."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Becoming a regular",
+     "g": "Visiting the same cafe, gym or market often turns faces into familiar friends.",
+     "p": [
+      "Repeated, relaxed meetings build trust faster than one-off efforts.",
+      "Greet staff and other regulars by name when you learn it.",
+      "Choose a day and time so the same people are likely to be there."
+     ],
+     "q": "Which place could become your regular spot?",
+     "c": "Pick one place and plan to go there at the same time twice this week."
+    },
+    "de": {
+     "t": "Stammgast werden",
+     "g": "Wenn du oft dasselbe Café, Fitnessstudio oder denselben Markt besuchst, werden Gesichter zu vertrauten Freunden.",
+     "p": [
+      "Wiederholte, entspannte Begegnungen schaffen schneller Vertrauen als einmalige Mühe.",
+      "Grüße Personal und andere Stammgäste mit Namen, sobald du ihn kennst.",
+      "Wähle Tag und Uhrzeit, damit meist dieselben Leute da sind."
+     ],
+     "q": "Welcher Ort könnte dein Stammplatz werden?",
+     "c": "Such dir einen Ort aus und geh diese Woche zweimal zur gleichen Zeit hin."
+    },
+    "es": {
+     "t": "Convertirte en un habitual",
+     "g": "Visitar el mismo café, gimnasio o mercado a menudo convierte caras en amigos conocidos.",
+     "p": [
+      "Los encuentros repetidos y relajados generan confianza más rápido que un esfuerzo único.",
+      "Saluda por su nombre al personal y a otros habituales cuando lo sepas.",
+      "Elige un día y una hora para que probablemente estén las mismas personas."
+     ],
+     "q": "¿Qué lugar podría ser tu sitio habitual?",
+     "c": "Elige un lugar y planea ir a la misma hora dos veces esta semana."
+    },
+    "fr": {
+     "t": "Devenir un habitué",
+     "g": "Fréquenter souvent le même café, la même salle de sport ou le même marché transforme les visages en amis.",
+     "p": [
+      "Des rencontres répétées et détendues créent la confiance plus vite qu'un effort unique.",
+      "Salue le personnel et les autres habitués par leur prénom quand tu le connais.",
+      "Choisis un jour et une heure pour retrouver probablement les mêmes personnes."
+     ],
+     "q": "Quel lieu pourrait devenir ton endroit habituel ?",
+     "c": "Choisis un lieu et prévois d'y aller deux fois cette semaine à la même heure."
+    },
+    "it": {
+     "t": "Diventare un habitué",
+     "g": "Frequentare spesso lo stesso bar, palestra o mercato trasforma i volti in amici familiari.",
+     "p": [
+      "Incontri ripetuti e rilassati creano fiducia più in fretta di uno sforzo isolato.",
+      "Saluta personale e altri habitué per nome quando lo conosci.",
+      "Scegli un giorno e un orario in cui è probabile trovare le stesse persone."
+     ],
+     "q": "Quale posto potrebbe diventare il tuo preferito?",
+     "c": "Scegli un posto e pianifica di andarci alla stessa ora due volte questa settimana."
+    },
+    "pt": {
+     "t": "Tornar-te um habitual",
+     "g": "Visitar o mesmo café, ginásio ou mercado com frequência transforma rostos em amigos conhecidos.",
+     "p": [
+      "Encontros repetidos e descontraídos criam confiança mais depressa do que um esforço único.",
+      "Cumprimenta o pessoal e outros habituais pelo nome quando o souberes.",
+      "Escolhe um dia e uma hora para encontrares provavelmente as mesmas pessoas."
+     ],
+     "q": "Que local podia ser o teu sítio habitual?",
+     "c": "Escolhe um local e planeia ir lá à mesma hora duas vezes esta semana."
+    },
+    "pt_BR": {
+     "t": "Virando um frequentador",
+     "g": "Visitar sempre o mesmo café, academia ou feira transforma rostos em amigos conhecidos.",
+     "p": [
+      "Encontros repetidos e tranquilos criam confiança mais rápido que um esforço isolado.",
+      "Cumprimente a equipe e outros frequentadores pelo nome quando souber.",
+      "Escolha um dia e um horário em que as mesmas pessoas provavelmente estejam lá."
+     ],
+     "q": "Que lugar poderia virar o seu cantinho de sempre?",
+     "c": "Escolha um lugar e planeje ir lá no mesmo horário duas vezes esta semana."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Talking to neighbours",
+     "g": "Find friendly ways to greet and get to know the people next door.",
+     "p": [
+      "A simple hello in the hallway or on the street is a fine start.",
+      "Small gestures, like holding a door, create goodwill over time.",
+      "Respect privacy and quiet hours, and let relationships grow at their own pace."
+     ],
+     "q": "What would be a kind first step with a neighbour?",
+     "c": "Greet one neighbour today, or leave a friendly short note if you have not met them."
+    },
+    "de": {
+     "t": "Mit Nachbarn ins Gespräch kommen",
+     "g": "Du findest freundliche Wege, die Menschen nebenan zu grüßen und kennenzulernen.",
+     "p": [
+      "Ein einfaches Hallo im Flur oder auf der Straße ist ein guter Anfang.",
+      "Kleine Gesten wie das Aufhalten einer Tür schaffen mit der Zeit Wohlwollen.",
+      "Respektiere Privatsphäre und Ruhezeiten und lass Beziehungen in ihrem Tempo wachsen."
+     ],
+     "q": "Was wäre ein freundlicher erster Schritt zu einem Nachbarn?",
+     "c": "Grüße heute einen Nachbarn oder hinterlasse einen kurzen freundlichen Zettel, falls du ihn noch nicht getroffen hast."
+    },
+    "es": {
+     "t": "Hablar con los vecinos",
+     "g": "Encuentra formas amables de saludar y conocer a las personas de al lado.",
+     "p": [
+      "Un simple hola en el pasillo o en la calle es un buen comienzo.",
+      "Pequeños gestos, como sujetar la puerta, crean buena voluntad con el tiempo.",
+      "Respeta la privacidad y las horas de descanso, y deja que la relación crezca a su ritmo."
+     ],
+     "q": "¿Cuál sería un primer paso amable con un vecino?",
+     "c": "Saluda hoy a un vecino, o deja una nota amable y breve si aún no lo conoces."
+    },
+    "fr": {
+     "t": "Parler à ses voisins",
+     "g": "Trouve des façons sympas de saluer et de faire connaissance avec les gens d'à côté.",
+     "p": [
+      "Un simple bonjour dans le couloir ou dans la rue est un bon début.",
+      "De petits gestes, comme tenir la porte, créent de la bienveillance avec le temps.",
+      "Respecte l'intimité et les heures calmes, et laisse la relation grandir à son rythme."
+     ],
+     "q": "Quel serait un premier pas sympa envers un voisin ?",
+     "c": "Salue un voisin aujourd'hui, ou laisse un petit mot aimable si tu ne l'as pas encore rencontré."
+    },
+    "it": {
+     "t": "Parlare con i vicini",
+     "g": "Trova modi amichevoli per salutare e conoscere le persone della porta accanto.",
+     "p": [
+      "Un semplice ciao nel corridoio o per strada è un buon inizio.",
+      "Piccoli gesti, come tenere la porta, creano simpatia nel tempo.",
+      "Rispetta la privacy e gli orari di quiete e lascia crescere il rapporto con i suoi tempi."
+     ],
+     "q": "Quale sarebbe un primo passo gentile con un vicino?",
+     "c": "Oggi saluta un vicino, o lascia un breve biglietto gentile se non lo hai ancora incontrato."
+    },
+    "pt": {
+     "t": "Falar com os vizinhos",
+     "g": "Encontra formas simpáticas de cumprimentar e conhecer as pessoas ao lado.",
+     "p": [
+      "Um simples olá no corredor ou na rua é um bom começo.",
+      "Pequenos gestos, como segurar a porta, criam boa vontade com o tempo.",
+      "Respeita a privacidade e as horas de descanso e deixa a relação crescer ao seu ritmo."
+     ],
+     "q": "Qual seria um primeiro passo simpático com um vizinho?",
+     "c": "Cumprimenta hoje um vizinho, ou deixa um bilhete simpático e curto se ainda não o conheces."
+    },
+    "pt_BR": {
+     "t": "Conversando com os vizinhos",
+     "g": "Encontre jeitos simpáticos de cumprimentar e conhecer as pessoas do lado.",
+     "p": [
+      "Um simples oi no corredor ou na rua é um bom começo.",
+      "Pequenos gestos, como segurar a porta, criam boa vontade com o tempo.",
+      "Respeite a privacidade e os horários de silêncio e deixe a relação crescer no seu ritmo."
+     ],
+     "q": "Qual seria um primeiro passo simpático com um vizinho?",
+     "c": "Cumprimente hoje um vizinho, ou deixe um bilhete simpático e curto se ainda não o conhece."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Libraries and community centres",
+     "g": "Discover free events, clubs and noticeboards waiting in public spaces.",
+     "p": [
+      "Libraries often host book clubs, language circles and craft afternoons.",
+      "Community centres list classes and groups that welcome newcomers.",
+      "Noticeboards show local activities you will not find elsewhere."
+     ],
+     "q": "What kind of free activity would you enjoy in your area?",
+     "c": "Visit a library or community centre, or check its page, and note one event."
+    },
+    "de": {
+     "t": "Bibliotheken und Gemeindezentren",
+     "g": "Du entdeckst kostenlose Veranstaltungen, Clubs und Aushänge in öffentlichen Räumen.",
+     "p": [
+      "Bibliotheken bieten oft Buchclubs, Sprachtreffs und Bastelnachmittage an.",
+      "Gemeindezentren listen Kurse und Gruppen auf, die Neue willkommen heißen.",
+      "Aushänge zeigen lokale Aktivitäten, die du sonst nirgends findest."
+     ],
+     "q": "Welche kostenlose Aktivität würde dir in deiner Gegend gefallen?",
+     "c": "Besuche eine Bibliothek oder ein Gemeindezentrum oder sieh auf der Seite nach und notiere eine Veranstaltung."
+    },
+    "es": {
+     "t": "Bibliotecas y centros comunitarios",
+     "g": "Descubre eventos gratuitos, clubes y tablones de anuncios en espacios públicos.",
+     "p": [
+      "Las bibliotecas suelen tener clubes de lectura, círculos de idiomas y tardes de manualidades.",
+      "Los centros comunitarios publican clases y grupos que dan la bienvenida a recién llegados.",
+      "Los tablones de anuncios muestran actividades locales que no verás en otro sitio."
+     ],
+     "q": "¿Qué actividad gratuita disfrutarías en tu zona?",
+     "c": "Visita una biblioteca o centro comunitario, o mira su página, y anota un evento."
+    },
+    "fr": {
+     "t": "Bibliothèques et centres communautaires",
+     "g": "Découvre des événements gratuits, des clubs et des panneaux d'affichage dans les lieux publics.",
+     "p": [
+      "Les bibliothèques proposent souvent clubs de lecture, cercles de langues et ateliers créatifs.",
+      "Les centres communautaires listent des cours et groupes qui accueillent les nouveaux.",
+      "Les panneaux d'affichage montrent des activités locales introuvables ailleurs."
+     ],
+     "q": "Quelle activité gratuite aimerais-tu faire dans ton coin ?",
+     "c": "Visite une bibliothèque ou un centre communautaire, ou consulte sa page, et note un événement."
+    },
+    "it": {
+     "t": "Biblioteche e centri comunitari",
+     "g": "Scopri eventi gratuiti, club e bacheche negli spazi pubblici.",
+     "p": [
+      "Le biblioteche ospitano spesso gruppi di lettura, circoli linguistici e pomeriggi creativi.",
+      "I centri comunitari elencano corsi e gruppi che accolgono i nuovi arrivati.",
+      "Le bacheche mostrano attività locali che non trovi altrove."
+     ],
+     "q": "Quale attività gratuita ti piacerebbe nella tua zona?",
+     "c": "Visita una biblioteca o un centro comunitario, o guarda la sua pagina, e segna un evento."
+    },
+    "pt": {
+     "t": "Bibliotecas e centros comunitários",
+     "g": "Descobre eventos gratuitos, clubes e painéis de aviso em espaços públicos.",
+     "p": [
+      "As bibliotecas costumam ter clubes de leitura, círculos de línguas e tardes de artesanato.",
+      "Os centros comunitários listam aulas e grupos que recebem recém-chegados.",
+      "Os painéis de aviso mostram atividades locais que não encontras noutro lado."
+     ],
+     "q": "Que atividade gratuita gostarias de fazer na tua zona?",
+     "c": "Visita uma biblioteca ou centro comunitário, ou vê a página, e anota um evento."
+    },
+    "pt_BR": {
+     "t": "Bibliotecas e centros comunitários",
+     "g": "Descubra eventos gratuitos, clubes e murais de avisos em espaços públicos.",
+     "p": [
+      "Bibliotecas costumam ter clubes de leitura, rodas de idiomas e tardes de artesanato.",
+      "Centros comunitários listam aulas e grupos que recebem quem chegou agora.",
+      "Murais de avisos mostram atividades locais que você não acha em outro lugar."
+     ],
+     "q": "Que atividade gratuita você curtiria na sua região?",
+     "c": "Visite uma biblioteca ou centro comunitário, ou veja a página, e anote um evento."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Finding local events",
+     "g": "Learn where to look for meetups, talks, markets and festivals in your city.",
+     "p": [
+      "City websites, event apps and community groups list what is on this week.",
+      "Markets and open-air festivals are easy places to chat without pressure.",
+      "Pick events with a clear start time, a public venue and other attendees."
+     ],
+     "q": "What kind of event would you most like to attend?",
+     "c": "Find three events this month and choose one you will go to."
+    },
+    "de": {
+     "t": "Lokale Veranstaltungen finden",
+     "g": "Du lernst, wo du Treffen, Vorträge, Märkte und Feste in deiner Stadt findest.",
+     "p": [
+      "Stadtportale, Event-Apps und Gemeinschaftsgruppen zeigen, was diese Woche läuft.",
+      "Märkte und Open-Air-Feste sind leichte Orte für Gespräche ohne Druck.",
+      "Wähle Events mit klarer Startzeit, öffentlichem Ort und anderen Gästen."
+     ],
+     "q": "Welche Art Veranstaltung würdest du am liebsten besuchen?",
+     "c": "Finde diesen Monat drei Veranstaltungen und wähle eine, zu der du gehst."
+    },
+    "es": {
+     "t": "Encontrar eventos locales",
+     "g": "Aprende dónde buscar encuentros, charlas, mercados y festivales en tu ciudad.",
+     "p": [
+      "Las webs de la ciudad, apps de eventos y grupos comunitarios muestran lo que hay esta semana.",
+      "Los mercados y festivales al aire libre son lugares fáciles para charlar sin presión.",
+      "Elige eventos con hora clara, lugar público y otros asistentes."
+     ],
+     "q": "¿A qué tipo de evento te gustaría ir más?",
+     "c": "Encuentra tres eventos este mes y elige uno al que irás."
+    },
+    "fr": {
+     "t": "Trouver des événements locaux",
+     "g": "Apprends où chercher rencontres, conférences, marchés et festivals dans ta ville.",
+     "p": [
+      "Les sites de la ville, les applis d'événements et les groupes locaux listent ce qui se passe cette semaine.",
+      "Les marchés et festivals en plein air sont des lieux faciles pour discuter sans pression.",
+      "Choisis des événements avec une heure claire, un lieu public et d'autres participants."
+     ],
+     "q": "À quel genre d'événement aimerais-tu le plus aller ?",
+     "c": "Trouve trois événements ce mois-ci et choisis-en un où tu iras."
+    },
+    "it": {
+     "t": "Trovare eventi locali",
+     "g": "Impara dove cercare incontri, conferenze, mercati e festival nella tua città.",
+     "p": [
+      "I siti della città, le app di eventi e i gruppi locali elencano cosa c'è questa settimana.",
+      "Mercati e festival all'aperto sono posti facili dove chiacchierare senza pressione.",
+      "Scegli eventi con orario chiaro, luogo pubblico e altri partecipanti."
+     ],
+     "q": "A che tipo di evento ti piacerebbe andare di più?",
+     "c": "Trova tre eventi questo mese e scegline uno a cui andrai."
+    },
+    "pt": {
+     "t": "Encontrar eventos locais",
+     "g": "Aprende onde procurar encontros, palestras, mercados e festivais na tua cidade.",
+     "p": [
+      "Os sites da cidade, apps de eventos e grupos comunitários mostram o que há esta semana.",
+      "Mercados e festivais ao ar livre são locais fáceis para conversar sem pressão.",
+      "Escolhe eventos com hora clara, local público e outros participantes."
+     ],
+     "q": "A que tipo de evento gostarias mais de ir?",
+     "c": "Encontra três eventos este mês e escolhe um a que vais."
+    },
+    "pt_BR": {
+     "t": "Encontrando eventos locais",
+     "g": "Aprenda onde procurar encontros, palestras, feiras e festivais na sua cidade.",
+     "p": [
+      "Sites da cidade, apps de eventos e grupos comunitários mostram o que rola esta semana.",
+      "Feiras e festivais ao ar livre são lugares fáceis para bater papo sem pressão.",
+      "Escolha eventos com horário claro, local público e outros participantes."
+     ],
+     "q": "A que tipo de evento você mais gostaria de ir?",
+     "c": "Encontre três eventos este mês e escolha um a que você vai."
+    }
+   }
+  }
+ ]
+}

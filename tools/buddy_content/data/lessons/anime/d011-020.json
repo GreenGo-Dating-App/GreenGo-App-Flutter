@@ -1,0 +1,835 @@
+{
+ "topic": "anime",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Expressions and visual symbols",
+     "g": "Learn the visual shorthand anime uses to show feelings.",
+     "p": [
+      "A big sweat drop on the head shows embarrassment or nervousness.",
+      "A pulsing cross-shaped vein shows annoyance, while blush lines show shyness.",
+      "Sparkles and flowers in the background show joy or admiration."
+     ],
+     "q": "Which symbol would you use to show you are happy or surprised?",
+     "c": "Draw three small faces using sweat drop, blush lines and sparkles."
+    },
+    "de": {
+     "t": "Ausdrücke und Bildsymbole",
+     "g": "Lerne die Bildsprache, mit der Anime Gefühle zeigt.",
+     "p": [
+      "Ein großer Schweißtropfen am Kopf zeigt Verlegenheit oder Nervosität.",
+      "Eine pulsierende Kreuz-Ader zeigt Ärger, Wangenstriche zeigen Schüchternheit.",
+      "Funkeln und Blumen im Hintergrund zeigen Freude oder Bewunderung."
+     ],
+     "q": "Welches Symbol würdest du für Freude oder Überraschung benutzen?",
+     "c": "Zeichne drei kleine Gesichter mit Schweißtropfen, Wangenstrichen und Funkeln."
+    },
+    "es": {
+     "t": "Expresiones y símbolos visuales",
+     "g": "Aprende el lenguaje visual con el que el anime muestra sentimientos.",
+     "p": [
+      "Una gran gota de sudor en la cabeza muestra vergüenza o nervios.",
+      "Una vena en forma de cruz muestra fastidio y las líneas en las mejillas, timidez.",
+      "Destellos y flores de fondo muestran alegría o admiración."
+     ],
+     "q": "¿Qué símbolo usarías para mostrar alegría o sorpresa?",
+     "c": "Dibuja tres caritas con gota de sudor, líneas de rubor y destellos."
+    },
+    "fr": {
+     "t": "Expressions et symboles visuels",
+     "g": "Apprends le langage visuel que l'anime utilise pour montrer les émotions.",
+     "p": [
+      "Une grosse goutte de sueur sur la tête montre la gêne ou la nervosité.",
+      "Une veine en croix montre l'agacement, les traits sur les joues la timidité.",
+      "Des étincelles et des fleurs en fond montrent la joie ou l'admiration."
+     ],
+     "q": "Quel symbole utiliserais-tu pour montrer la joie ou la surprise ?",
+     "c": "Dessine trois petits visages avec goutte de sueur, traits de rougeur et étincelles."
+    },
+    "it": {
+     "t": "Espressioni e simboli visivi",
+     "g": "Impara il linguaggio visivo con cui l'anime mostra i sentimenti.",
+     "p": [
+      "Una grossa goccia di sudore sulla testa mostra imbarazzo o nervosismo.",
+      "Una vena a croce mostra irritazione, le linee sulle guance timidezza.",
+      "Scintille e fiori sullo sfondo mostrano gioia o ammirazione."
+     ],
+     "q": "Quale simbolo useresti per mostrare gioia o sorpresa?",
+     "c": "Disegna tre faccine con goccia di sudore, linee di rossore e scintille."
+    },
+    "pt": {
+     "t": "Expressões e símbolos visuais",
+     "g": "Aprende a linguagem visual com que o anime mostra sentimentos.",
+     "p": [
+      "Uma grande gota de suor na cabeça mostra vergonha ou nervosismo.",
+      "Uma veia em cruz mostra irritação e as linhas nas bochechas, timidez.",
+      "Brilhos e flores ao fundo mostram alegria ou admiração."
+     ],
+     "q": "Que símbolo usarias para mostrar alegria ou surpresa?",
+     "c": "Desenha três carinhas com gota de suor, linhas de rubor e brilhos."
+    },
+    "pt_BR": {
+     "t": "Expressões e símbolos visuais",
+     "g": "Aprenda a linguagem visual com que o anime mostra sentimentos.",
+     "p": [
+      "Uma grande gota de suor na cabeça mostra vergonha ou nervosismo.",
+      "Uma veia em cruz mostra irritação e as linhas nas bochechas, timidez.",
+      "Brilhos e flores ao fundo mostram alegria ou admiração."
+     ],
+     "q": "Que símbolo você usaria para mostrar alegria ou surpresa?",
+     "c": "Desenhe três carinhas com gota de suor, linhas de rubor e brilhos."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Chibi and super-deformed style",
+     "g": "Meet the cute, tiny versions of characters used for comedy.",
+     "p": [
+      "Chibi means small, and the style gives big heads and tiny bodies.",
+      "It is also called super-deformed, or SD, and appears in funny moments.",
+      "Many series switch to chibi for a joke, then return to normal style."
+     ],
+     "q": "Do you like when serious shows suddenly turn cute and silly?",
+     "c": "Draw yourself as a chibi: a big head, small body and a smile."
+    },
+    "de": {
+     "t": "Chibi und Super-Deformed",
+     "g": "Lerne die niedlichen Mini-Versionen von Figuren kennen, die für Komik dienen.",
+     "p": [
+      "Chibi heißt klein; der Stil zeigt große Köpfe und winzige Körper.",
+      "Er heißt auch Super-Deformed, kurz SD, und taucht in lustigen Momenten auf.",
+      "Viele Serien wechseln für einen Witz in Chibi und kehren dann zurück."
+     ],
+     "q": "Magst du es, wenn ernste Serien plötzlich süß und albern werden?",
+     "c": "Zeichne dich selbst als Chibi: großer Kopf, kleiner Körper und ein Lächeln."
+    },
+    "es": {
+     "t": "Estilo chibi y super-deformed",
+     "g": "Conoce las versiones diminutas y adorables de los personajes usadas para el humor.",
+     "p": [
+      "Chibi significa pequeño: cabezas grandes y cuerpos diminutos.",
+      "También se llama super-deformed o SD y aparece en momentos graciosos.",
+      "Muchas series cambian a chibi para un chiste y luego vuelven al estilo normal."
+     ],
+     "q": "¿Te gusta cuando una serie seria se vuelve de pronto tierna y boba?",
+     "c": "Dibújate como chibi: cabeza grande, cuerpo pequeño y una sonrisa."
+    },
+    "fr": {
+     "t": "Chibi et style super-déformé",
+     "g": "Rencontre les versions minuscules et mignonnes des personnages, utilisées pour rire.",
+     "p": [
+      "Chibi veut dire petit : grosses têtes et corps minuscules.",
+      "On parle aussi de super-déformé, ou SD, pour les moments drôles.",
+      "Beaucoup de séries passent en chibi pour une blague, puis reviennent au style normal."
+     ],
+     "q": "Aimes-tu quand une série sérieuse devient soudain mignonne et rigolote ?",
+     "c": "Dessine-toi en chibi : grosse tête, petit corps et un sourire."
+    },
+    "it": {
+     "t": "Stile chibi e super-deformed",
+     "g": "Conosci le versioni minuscole e carine dei personaggi usate per far ridere.",
+     "p": [
+      "Chibi significa piccolo: teste grandi e corpi minuscoli.",
+      "Si chiama anche super-deformed, o SD, e appare nei momenti buffi.",
+      "Molte serie passano al chibi per una battuta e poi tornano allo stile normale."
+     ],
+     "q": "Ti piace quando una serie seria diventa all'improvviso tenera e buffa?",
+     "c": "Disegnati in versione chibi: testa grande, corpo piccolo e un sorriso."
+    },
+    "pt": {
+     "t": "Estilo chibi e super-deformed",
+     "g": "Conhece as versões pequeninas e fofas das personagens usadas para o humor.",
+     "p": [
+      "Chibi quer dizer pequeno: cabeças grandes e corpos minúsculos.",
+      "Também se chama super-deformed ou SD e surge em momentos divertidos.",
+      "Muitas séries passam a chibi para uma piada e depois voltam ao estilo normal."
+     ],
+     "q": "Gostas quando uma série séria se torna de repente fofa e tola?",
+     "c": "Desenha-te em chibi: cabeça grande, corpo pequeno e um sorriso."
+    },
+    "pt_BR": {
+     "t": "Estilo chibi e super-deformed",
+     "g": "Conheça as versões pequeninas e fofas dos personagens usadas para o humor.",
+     "p": [
+      "Chibi quer dizer pequeno: cabeças grandes e corpos minúsculos.",
+      "Também se chama super-deformed ou SD e aparece em momentos engraçados.",
+      "Muitas séries viram chibi para uma piada e depois voltam ao estilo normal."
+     ],
+     "q": "Você gosta quando uma série séria fica de repente fofa e boba?",
+     "c": "Desenhe-se como chibi: cabeça grande, corpo pequeno e um sorriso."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading manga right to left",
+     "g": "Learn page order, panels and speech bubbles in Japanese comics.",
+     "p": [
+      "Japanese is traditionally read right to left, so manga books open from the right.",
+      "Within a page, panels are read from top right to bottom left.",
+      "Speech bubbles are read in the same order, and sound effects add energy."
+     ],
+     "q": "Have you tried reading a book from the back to the front?",
+     "c": "Draw a four-panel mini comic and number the panels in manga order."
+    },
+    "de": {
+     "t": "Manga von rechts nach links lesen",
+     "g": "Lerne Seitenfolge, Panels und Sprechblasen in japanischen Comics.",
+     "p": [
+      "Japanisch liest man traditionell von rechts nach links, Manga öffnet man also rechts.",
+      "Auf einer Seite liest man die Panels von oben rechts nach unten links.",
+      "Sprechblasen folgen derselben Reihenfolge, Geräuschwörter bringen Energie."
+     ],
+     "q": "Hast du schon einmal ein Buch von hinten nach vorn gelesen?",
+     "c": "Zeichne einen Mini-Comic mit vier Panels und nummeriere sie in Manga-Reihenfolge."
+    },
+    "es": {
+     "t": "Leer manga de derecha a izquierda",
+     "g": "Aprende el orden de páginas, viñetas y bocadillos en el cómic japonés.",
+     "p": [
+      "El japonés se lee tradicionalmente de derecha a izquierda, así que el manga se abre por la derecha.",
+      "En cada página las viñetas se leen de arriba a la derecha hacia abajo a la izquierda.",
+      "Los bocadillos siguen el mismo orden y los efectos de sonido dan energía."
+     ],
+     "q": "¿Has probado a leer un libro de atrás hacia adelante?",
+     "c": "Dibuja un minicómic de cuatro viñetas y numéralas en orden manga."
+    },
+    "fr": {
+     "t": "Lire un manga de droite à gauche",
+     "g": "Apprends l'ordre des pages, des cases et des bulles dans la BD japonaise.",
+     "p": [
+      "Le japonais se lit traditionnellement de droite à gauche, un manga s'ouvre donc par la droite.",
+      "Sur une page, les cases se lisent du haut à droite vers le bas à gauche.",
+      "Les bulles suivent le même ordre et les onomatopées donnent de l'énergie."
+     ],
+     "q": "As-tu déjà essayé de lire un livre de la fin vers le début ?",
+     "c": "Dessine une mini-BD de quatre cases et numérote-les dans l'ordre manga."
+    },
+    "it": {
+     "t": "Leggere il manga da destra a sinistra",
+     "g": "Impara l'ordine di pagine, vignette e fumetti nei fumetti giapponesi.",
+     "p": [
+      "Il giapponese si legge tradizionalmente da destra a sinistra, quindi il manga si apre da destra.",
+      "In ogni pagina le vignette si leggono dall'alto a destra al basso a sinistra.",
+      "I fumetti seguono lo stesso ordine e gli effetti sonori danno energia."
+     ],
+     "q": "Hai mai provato a leggere un libro dalla fine all'inizio?",
+     "c": "Disegna un mini fumetto di quattro vignette e numerale in ordine manga."
+    },
+    "pt": {
+     "t": "Ler manga da direita para a esquerda",
+     "g": "Aprende a ordem de páginas, vinhetas e balões na banda desenhada japonesa.",
+     "p": [
+      "O japonês lê-se tradicionalmente da direita para a esquerda, por isso o manga abre-se pela direita.",
+      "Numa página, as vinhetas leem-se do canto superior direito ao inferior esquerdo.",
+      "Os balões seguem a mesma ordem e os efeitos sonoros dão energia."
+     ],
+     "q": "Já experimentaste ler um livro de trás para a frente?",
+     "c": "Desenha uma mini banda desenhada de quatro vinhetas e numera-as em ordem manga."
+    },
+    "pt_BR": {
+     "t": "Lendo mangá da direita para a esquerda",
+     "g": "Aprenda a ordem de páginas, quadros e balões nos quadrinhos japoneses.",
+     "p": [
+      "O japonês se lê tradicionalmente da direita para a esquerda, então o mangá abre pela direita.",
+      "Numa página, os quadros são lidos do canto superior direito ao inferior esquerdo.",
+      "Os balões seguem a mesma ordem e os efeitos sonoros dão energia."
+     ],
+     "q": "Você já tentou ler um livro de trás para frente?",
+     "c": "Desenhe um mini quadrinho de quatro quadros e numere na ordem do mangá."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Manga volumes and magazines",
+     "g": "See how weekly magazines, chapters and tankobon volumes work.",
+     "p": [
+      "Many manga first appear as chapters in weekly or monthly magazines.",
+      "Popular series are later collected into book volumes called tankobon.",
+      "Readers can follow a story in a magazine or buy neat volumes to keep."
+     ],
+     "q": "Would you rather read chapters weekly or wait for a full volume?",
+     "c": "Design a magazine cover for your own imaginary manga with a title."
+    },
+    "de": {
+     "t": "Manga-Bände und Magazine",
+     "g": "Sieh, wie Wochenmagazine, Kapitel und Tankōbon-Bände funktionieren.",
+     "p": [
+      "Viele Manga erscheinen zuerst als Kapitel in Wochen- oder Monatsmagazinen.",
+      "Beliebte Serien werden später in Buchbänden, den Tankōbon, gesammelt.",
+      "Man kann eine Geschichte im Magazin verfolgen oder schöne Bände sammeln."
+     ],
+     "q": "Liest du lieber wöchentlich Kapitel oder wartest du auf einen ganzen Band?",
+     "c": "Gestalte ein Magazin-Cover für deinen eigenen erfundenen Manga mit Titel."
+    },
+    "es": {
+     "t": "Volúmenes y revistas de manga",
+     "g": "Descubre cómo funcionan las revistas semanales, los capítulos y los tankōbon.",
+     "p": [
+      "Muchos mangas aparecen primero por capítulos en revistas semanales o mensuales.",
+      "Las series populares se recopilan después en tomos llamados tankōbon.",
+      "Puedes seguir la historia en la revista o comprar tomos para conservar."
+     ],
+     "q": "¿Prefieres leer capítulos cada semana o esperar al tomo completo?",
+     "c": "Diseña la portada de una revista para tu propio manga imaginario con título."
+    },
+    "fr": {
+     "t": "Volumes et magazines de manga",
+     "g": "Vois comment fonctionnent les magazines hebdomadaires, chapitres et tankōbon.",
+     "p": [
+      "Beaucoup de mangas paraissent d'abord par chapitres dans des magazines hebdomadaires ou mensuels.",
+      "Les séries populaires sont ensuite rassemblées en volumes appelés tankōbon.",
+      "On peut suivre l'histoire en magazine ou acheter de beaux volumes à garder."
+     ],
+     "q": "Préfères-tu lire des chapitres chaque semaine ou attendre le volume complet ?",
+     "c": "Crée une couverture de magazine pour ton propre manga imaginaire, avec un titre."
+    },
+    "it": {
+     "t": "Volumi e riviste di manga",
+     "g": "Scopri come funzionano riviste settimanali, capitoli e tankōbon.",
+     "p": [
+      "Molti manga escono prima a capitoli su riviste settimanali o mensili.",
+      "Le serie popolari vengono poi raccolte in volumi chiamati tankōbon.",
+      "Puoi seguire la storia sulla rivista o comprare volumi da conservare."
+     ],
+     "q": "Preferisci leggere i capitoli ogni settimana o aspettare il volume intero?",
+     "c": "Disegna la copertina di una rivista per il tuo manga immaginario, con titolo."
+    },
+    "pt": {
+     "t": "Volumes e revistas de manga",
+     "g": "Descobre como funcionam as revistas semanais, os capítulos e os tankōbon.",
+     "p": [
+      "Muitos mangas surgem primeiro em capítulos em revistas semanais ou mensais.",
+      "As séries populares são depois reunidas em volumes chamados tankōbon.",
+      "Podes seguir a história na revista ou comprar volumes para guardar."
+     ],
+     "q": "Preferes ler capítulos todas as semanas ou esperar pelo volume completo?",
+     "c": "Cria a capa de uma revista para o teu manga imaginário, com título."
+    },
+    "pt_BR": {
+     "t": "Volumes e revistas de mangá",
+     "g": "Descubra como funcionam as revistas semanais, os capítulos e os tankōbon.",
+     "p": [
+      "Muitos mangás saem primeiro em capítulos em revistas semanais ou mensais.",
+      "As séries populares são depois reunidas em volumes chamados tankōbon.",
+      "Você pode acompanhar a história na revista ou comprar volumes para guardar."
+     ],
+     "q": "Você prefere ler capítulos toda semana ou esperar o volume completo?",
+     "c": "Crie a capa de uma revista para o seu mangá imaginário, com título."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Who reads what: demographics",
+     "g": "Learn the main target-audience labels: kodomo, shonen, shojo, seinen, josei.",
+     "p": [
+      "Kodomo is for children, shonen for teen boys and shojo for teen girls.",
+      "Seinen is aimed at adult men and josei at adult women.",
+      "Labels are only guides; plenty of people enjoy every category."
+     ],
+     "q": "Which label do you think your favourite series belongs to?",
+     "c": "Pick three series you know and guess each one's category."
+    },
+    "de": {
+     "t": "Wer liest was: Zielgruppen",
+     "g": "Lerne die Zielgruppen-Etiketten kennen: Kodomo, Shōnen, Shōjo, Seinen, Josei.",
+     "p": [
+      "Kodomo ist für Kinder, Shōnen für Jungen und Shōjo für Mädchen im Teenageralter.",
+      "Seinen richtet sich an erwachsene Männer, Josei an erwachsene Frauen.",
+      "Die Etiketten sind nur Orientierung; viele genießen jede Kategorie."
+     ],
+     "q": "Zu welchem Etikett gehört deine Lieblingsserie wohl?",
+     "c": "Wähle drei Serien, die du kennst, und rate jeweils die Kategorie."
+    },
+    "es": {
+     "t": "Quién lee qué: públicos",
+     "g": "Aprende las etiquetas de público: kodomo, shonen, shojo, seinen y josei.",
+     "p": [
+      "Kodomo es para niños, shonen para chicos adolescentes y shojo para chicas.",
+      "Seinen se dirige a hombres adultos y josei a mujeres adultas.",
+      "Las etiquetas son solo guías; mucha gente disfruta de todas las categorías."
+     ],
+     "q": "¿A qué etiqueta crees que pertenece tu serie favorita?",
+     "c": "Elige tres series que conozcas y adivina la categoría de cada una."
+    },
+    "fr": {
+     "t": "Qui lit quoi : les publics",
+     "g": "Apprends les étiquettes de public : kodomo, shōnen, shōjo, seinen, josei.",
+     "p": [
+      "Kodomo s'adresse aux enfants, shōnen aux garçons ados et shōjo aux filles ados.",
+      "Seinen vise les hommes adultes et josei les femmes adultes.",
+      "Ces étiquettes ne sont que des repères ; beaucoup aiment toutes les catégories."
+     ],
+     "q": "À quelle étiquette appartient ta série préférée, selon toi ?",
+     "c": "Choisis trois séries que tu connais et devine la catégorie de chacune."
+    },
+    "it": {
+     "t": "Chi legge cosa: i pubblici",
+     "g": "Impara le etichette di pubblico: kodomo, shonen, shojo, seinen, josei.",
+     "p": [
+      "Kodomo è per i bambini, shonen per ragazzi adolescenti e shojo per ragazze.",
+      "Seinen si rivolge a uomini adulti e josei a donne adulte.",
+      "Le etichette sono solo indicazioni; molti amano ogni categoria."
+     ],
+     "q": "A quale etichetta pensi appartenga la tua serie preferita?",
+     "c": "Scegli tre serie che conosci e indovina la categoria di ciascuna."
+    },
+    "pt": {
+     "t": "Quem lê o quê: públicos",
+     "g": "Aprende as etiquetas de público: kodomo, shonen, shojo, seinen e josei.",
+     "p": [
+      "Kodomo é para crianças, shonen para rapazes adolescentes e shojo para raparigas.",
+      "Seinen dirige-se a homens adultos e josei a mulheres adultas.",
+      "As etiquetas são só guias; muita gente gosta de todas as categorias."
+     ],
+     "q": "A que etiqueta achas que pertence a tua série favorita?",
+     "c": "Escolhe três séries que conheças e adivinha a categoria de cada uma."
+    },
+    "pt_BR": {
+     "t": "Quem lê o quê: públicos",
+     "g": "Aprenda as etiquetas de público: kodomo, shonen, shojo, seinen e josei.",
+     "p": [
+      "Kodomo é para crianças, shonen para meninos adolescentes e shojo para meninas.",
+      "Seinen se dirige a homens adultos e josei a mulheres adultas.",
+      "As etiquetas são só guias; muita gente curte todas as categorias."
+     ],
+     "q": "A que etiqueta você acha que sua série favorita pertence?",
+     "c": "Escolha três séries que você conhece e adivinhe a categoria de cada uma."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kodomo: anime for kids",
+     "g": "Explore gentle shows like Doraemon and Anpanman made for young viewers.",
+     "p": [
+      "Kodomo anime use simple stories, bright colours and clear lessons.",
+      "Doraemon and Anpanman are famous examples loved by generations.",
+      "They are comforting, and adults often enjoy them with children."
+     ],
+     "q": "Which gentle cartoon from your childhood do you still remember?",
+     "c": "Draw a simple, friendly character with a round shape and bright colours."
+    },
+    "de": {
+     "t": "Kodomo: Anime für Kinder",
+     "g": "Entdecke sanfte Serien wie Doraemon und Anpanman für junge Zuschauer.",
+     "p": [
+      "Kodomo-Anime haben einfache Geschichten, leuchtende Farben und klare Botschaften.",
+      "Doraemon und Anpanman sind berühmte Beispiele, geliebt über Generationen.",
+      "Sie sind tröstlich, und Erwachsene schauen sie gern mit Kindern."
+     ],
+     "q": "Welchen sanften Cartoon aus deiner Kindheit kennst du noch?",
+     "c": "Zeichne eine einfache, freundliche Figur mit runden Formen und bunten Farben."
+    },
+    "es": {
+     "t": "Kodomo: anime para niños",
+     "g": "Explora series amables como Doraemon y Anpanman para los más pequeños.",
+     "p": [
+      "El anime kodomo usa historias sencillas, colores vivos y mensajes claros.",
+      "Doraemon y Anpanman son ejemplos famosos queridos por generaciones.",
+      "Resultan reconfortantes y los adultos los disfrutan junto a los niños."
+     ],
+     "q": "¿Qué dibujo animado tierno de tu infancia recuerdas todavía?",
+     "c": "Dibuja un personaje sencillo y amistoso de formas redondas y colores vivos."
+    },
+    "fr": {
+     "t": "Kodomo : l'anime pour enfants",
+     "g": "Explore des séries douces comme Doraemon et Anpanman pour les jeunes spectateurs.",
+     "p": [
+      "L'anime kodomo mise sur des histoires simples, des couleurs vives et des messages clairs.",
+      "Doraemon et Anpanman sont des exemples célèbres, aimés par des générations.",
+      "Ils sont réconfortants et les adultes les regardent volontiers avec les enfants."
+     ],
+     "q": "Quel dessin animé tout doux de ton enfance te revient en mémoire ?",
+     "c": "Dessine un personnage simple et amical, aux formes rondes et aux couleurs vives."
+    },
+    "it": {
+     "t": "Kodomo: anime per bambini",
+     "g": "Esplora serie gentili come Doraemon e Anpanman fatte per i più piccoli.",
+     "p": [
+      "Gli anime kodomo usano storie semplici, colori vivaci e messaggi chiari.",
+      "Doraemon e Anpanman sono esempi famosi, amati da generazioni.",
+      "Sono rassicuranti e gli adulti li guardano volentieri con i bambini."
+     ],
+     "q": "Quale cartone gentile della tua infanzia ricordi ancora?",
+     "c": "Disegna un personaggio semplice e amichevole con forme tonde e colori vivaci."
+    },
+    "pt": {
+     "t": "Kodomo: anime para crianças",
+     "g": "Explora séries ternas como Doraemon e Anpanman feitas para os mais novos.",
+     "p": [
+      "O anime kodomo usa histórias simples, cores vivas e mensagens claras.",
+      "Doraemon e Anpanman são exemplos famosos, amados por gerações.",
+      "São reconfortantes e os adultos gostam de os ver com as crianças."
+     ],
+     "q": "Que desenho animado terno da tua infância ainda recordas?",
+     "c": "Desenha uma personagem simples e simpática com formas redondas e cores vivas."
+    },
+    "pt_BR": {
+     "t": "Kodomo: anime para crianças",
+     "g": "Explore séries carinhosas como Doraemon e Anpanman feitas para os pequenos.",
+     "p": [
+      "O anime kodomo usa histórias simples, cores vivas e mensagens claras.",
+      "Doraemon e Anpanman são exemplos famosos, amados por gerações.",
+      "São reconfortantes e os adultos gostam de assistir com as crianças."
+     ],
+     "q": "Que desenho carinhoso da sua infância você ainda lembra?",
+     "c": "Desenhe um personagem simples e simpático com formas redondas e cores vivas."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shonen: adventure and friendship",
+     "g": "Discover stories for teens about growth, teamwork and big dreams.",
+     "p": [
+      "Shonen means young boy, but these stories are enjoyed by everyone.",
+      "Heroes usually train, make friends and chase an ambitious goal.",
+      "Themes like perseverance, teamwork and never giving up are common."
+     ],
+     "q": "What big dream would you give a hero in your own adventure?",
+     "c": "Sketch a hero and write their dream and their best friend in one line."
+    },
+    "de": {
+     "t": "Shōnen: Abenteuer und Freundschaft",
+     "g": "Entdecke Geschichten über Wachstum, Teamgeist und große Träume.",
+     "p": [
+      "Shōnen heißt junger Knabe, doch diese Geschichten gefallen allen.",
+      "Helden trainieren meist, finden Freunde und verfolgen ein großes Ziel.",
+      "Ausdauer, Teamgeist und Nie-aufgeben sind häufige Themen."
+     ],
+     "q": "Welchen großen Traum würdest du einem Helden in deinem Abenteuer geben?",
+     "c": "Skizziere einen Helden und schreibe Traum und besten Freund in eine Zeile."
+    },
+    "es": {
+     "t": "Shonen: aventura y amistad",
+     "g": "Descubre historias de crecimiento, trabajo en equipo y grandes sueños.",
+     "p": [
+      "Shonen significa chico joven, pero todo el mundo disfruta de estas historias.",
+      "Los héroes suelen entrenar, hacer amigos y perseguir una meta ambiciosa.",
+      "Son frecuentes los temas de esfuerzo, equipo y no rendirse nunca."
+     ],
+     "q": "¿Qué gran sueño le darías a un héroe de tu propia aventura?",
+     "c": "Dibuja un héroe y escribe en una línea su sueño y su mejor amigo."
+    },
+    "fr": {
+     "t": "Shōnen : aventure et amitié",
+     "g": "Découvre des histoires de croissance, d'esprit d'équipe et de grands rêves.",
+     "p": [
+      "Shōnen signifie jeune garçon, mais ces histoires plaisent à tout le monde.",
+      "Les héros s'entraînent en général, se font des amis et visent un grand but.",
+      "La persévérance, l'équipe et ne jamais abandonner sont des thèmes courants."
+     ],
+     "q": "Quel grand rêve donnerais-tu à un héros de ta propre aventure ?",
+     "c": "Esquisse un héros et écris son rêve et son meilleur ami en une ligne."
+    },
+    "it": {
+     "t": "Shonen: avventura e amicizia",
+     "g": "Scopri storie di crescita, gioco di squadra e grandi sogni.",
+     "p": [
+      "Shonen significa ragazzo giovane, ma queste storie piacciono a tutti.",
+      "Gli eroi di solito si allenano, trovano amici e inseguono un grande obiettivo.",
+      "Perseveranza, squadra e non arrendersi mai sono temi comuni."
+     ],
+     "q": "Quale grande sogno daresti a un eroe della tua avventura?",
+     "c": "Schizza un eroe e scrivi in una riga il suo sogno e il suo miglior amico."
+    },
+    "pt": {
+     "t": "Shonen: aventura e amizade",
+     "g": "Descobre histórias de crescimento, trabalho de equipa e grandes sonhos.",
+     "p": [
+      "Shonen significa rapaz jovem, mas toda a gente gosta destas histórias.",
+      "Os heróis costumam treinar, fazer amigos e perseguir um grande objetivo.",
+      "Perseverança, equipa e nunca desistir são temas comuns."
+     ],
+     "q": "Que grande sonho darias a um herói da tua própria aventura?",
+     "c": "Esboça um herói e escreve numa linha o sonho e o melhor amigo dele."
+    },
+    "pt_BR": {
+     "t": "Shonen: aventura e amizade",
+     "g": "Descubra histórias de crescimento, trabalho em equipe e grandes sonhos.",
+     "p": [
+      "Shonen significa menino jovem, mas todo mundo curte essas histórias.",
+      "Os heróis costumam treinar, fazer amigos e perseguir um grande objetivo.",
+      "Perseverança, equipe e nunca desistir são temas comuns."
+     ],
+     "q": "Que grande sonho você daria a um herói da sua própria aventura?",
+     "c": "Esboce um herói e escreva numa linha o sonho e o melhor amigo dele."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shojo: feelings and growth",
+     "g": "Explore stories focused on emotions, friendships and personal growth.",
+     "p": [
+      "Shojo means young girl; the stories centre on feelings and relationships.",
+      "Friendship, family and finding yourself are strong themes.",
+      "The art is often soft and decorative, with flowers and delicate lines."
+     ],
+     "q": "Do you enjoy stories that focus on feelings and friendships?",
+     "c": "Draw a character with a decorative background of flowers or stars."
+    },
+    "de": {
+     "t": "Shōjo: Gefühle und Wachstum",
+     "g": "Erkunde Geschichten über Gefühle, Freundschaft und persönliche Entwicklung.",
+     "p": [
+      "Shōjo heißt junges Mädchen; die Geschichten drehen sich um Gefühle und Beziehungen.",
+      "Freundschaft, Familie und Selbstfindung sind starke Themen.",
+      "Die Zeichnungen sind oft weich und verziert, mit Blumen und zarten Linien."
+     ],
+     "q": "Magst du Geschichten, die um Gefühle und Freundschaften kreisen?",
+     "c": "Zeichne eine Figur mit verziertem Hintergrund aus Blumen oder Sternen."
+    },
+    "es": {
+     "t": "Shojo: sentimientos y crecimiento",
+     "g": "Explora historias centradas en emociones, amistades y crecimiento personal.",
+     "p": [
+      "Shojo significa chica joven; las historias giran en torno a sentimientos y relaciones.",
+      "La amistad, la familia y el encontrarse a uno mismo son temas fuertes.",
+      "El dibujo suele ser suave y decorativo, con flores y líneas delicadas."
+     ],
+     "q": "¿Disfrutas de historias centradas en sentimientos y amistades?",
+     "c": "Dibuja un personaje con un fondo decorativo de flores o estrellas."
+    },
+    "fr": {
+     "t": "Shōjo : sentiments et croissance",
+     "g": "Explore des histoires centrées sur les émotions, l'amitié et la croissance personnelle.",
+     "p": [
+      "Shōjo signifie jeune fille ; les histoires tournent autour des sentiments et des relations.",
+      "L'amitié, la famille et la quête de soi sont des thèmes forts.",
+      "Le dessin est souvent doux et décoratif, avec des fleurs et des traits délicats."
+     ],
+     "q": "Aimes-tu les histoires centrées sur les sentiments et les amitiés ?",
+     "c": "Dessine un personnage avec un fond décoratif de fleurs ou d'étoiles."
+    },
+    "it": {
+     "t": "Shojo: sentimenti e crescita",
+     "g": "Esplora storie centrate su emozioni, amicizie e crescita personale.",
+     "p": [
+      "Shojo significa ragazza giovane; le storie ruotano attorno a sentimenti e relazioni.",
+      "Amicizia, famiglia e ritrovare se stessi sono temi forti.",
+      "Il disegno è spesso morbido e decorativo, con fiori e linee delicate."
+     ],
+     "q": "Ti piacciono le storie incentrate su sentimenti e amicizie?",
+     "c": "Disegna un personaggio con uno sfondo decorativo di fiori o stelle."
+    },
+    "pt": {
+     "t": "Shojo: sentimentos e crescimento",
+     "g": "Explora histórias centradas em emoções, amizades e crescimento pessoal.",
+     "p": [
+      "Shojo significa rapariga jovem; as histórias giram em torno de sentimentos e relações.",
+      "Amizade, família e encontrar-se a si próprio são temas fortes.",
+      "O desenho é muitas vezes suave e decorativo, com flores e linhas delicadas."
+     ],
+     "q": "Gostas de histórias centradas em sentimentos e amizades?",
+     "c": "Desenha uma personagem com um fundo decorativo de flores ou estrelas."
+    },
+    "pt_BR": {
+     "t": "Shojo: sentimentos e crescimento",
+     "g": "Explore histórias centradas em emoções, amizades e crescimento pessoal.",
+     "p": [
+      "Shojo significa menina jovem; as histórias giram em torno de sentimentos e relações.",
+      "Amizade, família e se encontrar são temas fortes.",
+      "O desenho costuma ser suave e decorativo, com flores e linhas delicadas."
+     ],
+     "q": "Você curte histórias centradas em sentimentos e amizades?",
+     "c": "Desenhe um personagem com um fundo decorativo de flores ou estrelas."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Seinen and josei",
+     "g": "Learn about anime and manga aimed at adults, often about work and daily life.",
+     "p": [
+      "Seinen and josei target adult readers, with more grown-up themes.",
+      "Many are slice-of-life stories about jobs, hobbies, food or friendships.",
+      "Art can be more realistic, and pacing calmer than in youth series."
+     ],
+     "q": "Would you enjoy a calm story about everyday adult life or a hobby?",
+     "c": "Pick a hobby you love and imagine a gentle slice-of-life story about it."
+    },
+    "de": {
+     "t": "Seinen und Josei",
+     "g": "Lerne Anime und Manga für Erwachsene kennen, oft über Arbeit und Alltag.",
+     "p": [
+      "Seinen und Josei richten sich an Erwachsene, mit reiferen Themen.",
+      "Viele sind Alltagsgeschichten über Beruf, Hobbys, Essen oder Freundschaft.",
+      "Die Zeichnungen sind oft realistischer, das Tempo ruhiger als bei Jugendserien."
+     ],
+     "q": "Würde dir eine ruhige Geschichte über Alltag oder ein Hobby gefallen?",
+     "c": "Wähle ein Hobby, das du liebst, und erfinde eine sanfte Alltagsgeschichte dazu."
+    },
+    "es": {
+     "t": "Seinen y josei",
+     "g": "Conoce el anime y manga para adultos, a menudo sobre trabajo y vida diaria.",
+     "p": [
+      "Seinen y josei se dirigen a lectores adultos, con temas más maduros.",
+      "Muchos son historias cotidianas sobre trabajos, aficiones, comida o amistades.",
+      "El dibujo puede ser más realista y el ritmo más calmado que en series juveniles."
+     ],
+     "q": "¿Te gustaría una historia tranquila sobre la vida adulta o una afición?",
+     "c": "Elige una afición que te guste e imagina una historia cotidiana y amable sobre ella."
+    },
+    "fr": {
+     "t": "Seinen et josei",
+     "g": "Découvre l'anime et le manga pour adultes, souvent sur le travail et le quotidien.",
+     "p": [
+      "Seinen et josei visent un public adulte, avec des thèmes plus mûrs.",
+      "Beaucoup sont des tranches de vie sur le travail, les passions, la cuisine ou l'amitié.",
+      "Le dessin est parfois plus réaliste et le rythme plus calme que dans les séries jeunesse."
+     ],
+     "q": "Aimerais-tu une histoire calme sur la vie quotidienne ou une passion ?",
+     "c": "Choisis une passion et imagine une tranche de vie tout en douceur à son sujet."
+    },
+    "it": {
+     "t": "Seinen e josei",
+     "g": "Scopri anime e manga per adulti, spesso su lavoro e vita quotidiana.",
+     "p": [
+      "Seinen e josei si rivolgono a lettori adulti, con temi più maturi.",
+      "Molti sono storie di vita quotidiana su lavoro, hobby, cibo o amicizie.",
+      "Il disegno può essere più realistico e il ritmo più calmo che nelle serie per giovani."
+     ],
+     "q": "Ti piacerebbe una storia tranquilla sulla vita adulta o su un hobby?",
+     "c": "Scegli un hobby che ami e immagina una dolce storia di vita quotidiana su di esso."
+    },
+    "pt": {
+     "t": "Seinen e josei",
+     "g": "Conhece o anime e o manga para adultos, muitas vezes sobre trabalho e dia a dia.",
+     "p": [
+      "Seinen e josei dirigem-se a leitores adultos, com temas mais maduros.",
+      "Muitos são histórias do quotidiano sobre trabalhos, passatempos, comida ou amizades.",
+      "O desenho pode ser mais realista e o ritmo mais calmo do que nas séries juvenis."
+     ],
+     "q": "Gostarias de uma história tranquila sobre a vida adulta ou um passatempo?",
+     "c": "Escolhe um passatempo de que gostes e imagina uma história do quotidiano suave sobre ele."
+    },
+    "pt_BR": {
+     "t": "Seinen e josei",
+     "g": "Conheça o anime e o mangá para adultos, muitas vezes sobre trabalho e dia a dia.",
+     "p": [
+      "Seinen e josei se dirigem a leitores adultos, com temas mais maduros.",
+      "Muitos são histórias do cotidiano sobre trabalhos, hobbies, comida ou amizades.",
+      "O desenho pode ser mais realista e o ritmo mais calmo do que nas séries juvenis."
+     ],
+     "q": "Você gostaria de uma história tranquila sobre a vida adulta ou um hobby?",
+     "c": "Escolha um hobby que você ama e imagine uma história do cotidiano suave sobre ele."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Doraemon, the robot cat",
+     "g": "Meet Fujiko F. Fujio's beloved gadget-filled classic.",
+     "p": [
+      "Doraemon is a blue robot cat sent from the future to help a boy named Nobita.",
+      "He pulls magical gadgets from his four-dimensional pocket.",
+      "The manga began in 1969 and its creator wrote under the name Fujiko F. Fujio."
+     ],
+     "q": "Which gadget would you most like to pull from Doraemon's pocket?",
+     "c": "Invent and draw your own gadget, and give it a name and one use."
+    },
+    "de": {
+     "t": "Doraemon, die Roboterkatze",
+     "g": "Lerne den beliebten Klassiker von Fujiko F. Fujio voller Gadgets kennen.",
+     "p": [
+      "Doraemon ist eine blaue Roboterkatze aus der Zukunft, die dem Jungen Nobita hilft.",
+      "Er zieht Zauber-Gadgets aus seiner vierdimensionalen Tasche.",
+      "Der Manga begann 1969; der Schöpfer schrieb unter dem Namen Fujiko F. Fujio."
+     ],
+     "q": "Welches Gadget würdest du am liebsten aus Doraemons Tasche ziehen?",
+     "c": "Erfinde und zeichne dein eigenes Gadget mit Namen und einem Nutzen."
+    },
+    "es": {
+     "t": "Doraemon, el gato robot",
+     "g": "Conoce el querido clásico de Fujiko F. Fujio lleno de artilugios.",
+     "p": [
+      "Doraemon es un gato robot azul del futuro que ayuda a un niño llamado Nobita.",
+      "Saca artilugios mágicos de su bolsillo cuadridimensional.",
+      "El manga empezó en 1969 y su autor firmaba como Fujiko F. Fujio."
+     ],
+     "q": "¿Qué artilugio te gustaría sacar del bolsillo de Doraemon?",
+     "c": "Inventa y dibuja tu propio artilugio, con nombre y una utilidad."
+    },
+    "fr": {
+     "t": "Doraemon, le chat robot",
+     "g": "Rencontre le classique adoré de Fujiko F. Fujio, plein de gadgets.",
+     "p": [
+      "Doraemon est un chat robot bleu venu du futur pour aider un garçon nommé Nobita.",
+      "Il sort des gadgets magiques de sa poche quadridimensionnelle.",
+      "Le manga a débuté en 1969 et son auteur signait Fujiko F. Fujio."
+     ],
+     "q": "Quel gadget aimerais-tu sortir de la poche de Doraemon ?",
+     "c": "Invente et dessine ton propre gadget, avec un nom et une utilité."
+    },
+    "it": {
+     "t": "Doraemon, il gatto robot",
+     "g": "Conosci l'amato classico di Fujiko F. Fujio pieno di gadget.",
+     "p": [
+      "Doraemon è un gatto robot blu venuto dal futuro per aiutare un ragazzino, Nobita.",
+      "Estrae gadget magici dalla sua tasca quadridimensionale.",
+      "Il manga iniziò nel 1969 e l'autore firmava come Fujiko F. Fujio."
+     ],
+     "q": "Quale gadget vorresti estrarre dalla tasca di Doraemon?",
+     "c": "Inventa e disegna un tuo gadget, con un nome e un uso."
+    },
+    "pt": {
+     "t": "Doraemon, o gato robô",
+     "g": "Conhece o querido clássico de Fujiko F. Fujio cheio de engenhocas.",
+     "p": [
+      "Doraemon é um gato robô azul do futuro que ajuda um rapaz chamado Nobita.",
+      "Tira engenhocas mágicas do seu bolso quadridimensional.",
+      "O manga começou em 1969 e o autor assinava como Fujiko F. Fujio."
+     ],
+     "q": "Que engenhoca gostarias de tirar do bolso do Doraemon?",
+     "c": "Inventa e desenha a tua própria engenhoca, com nome e uma utilidade."
+    },
+    "pt_BR": {
+     "t": "Doraemon, o gato robô",
+     "g": "Conheça o querido clássico de Fujiko F. Fujio cheio de engenhocas.",
+     "p": [
+      "Doraemon é um gato robô azul do futuro que ajuda um menino chamado Nobita.",
+      "Ele tira engenhocas mágicas do seu bolso quadridimensional.",
+      "O mangá começou em 1969 e o autor assinava como Fujiko F. Fujio."
+     ],
+     "q": "Que engenhoca você gostaria de tirar do bolso do Doraemon?",
+     "c": "Invente e desenhe a sua própria engenhoca, com nome e uma utilidade."
+    }
+   }
+  }
+ ]
+}

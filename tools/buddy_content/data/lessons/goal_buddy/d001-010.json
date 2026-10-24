@@ -1,0 +1,835 @@
+{
+ "topic": "goal_buddy",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to your goal path",
+     "g": "Learn how one small step a day can add up to real progress over time.",
+     "p": [
+      "Each day brings one short lesson and one tiny action you can finish in minutes.",
+      "Progress is built from small, repeated steps, not from huge bursts of effort.",
+      "We go at your pace, and a slow day is still part of the path."
+     ],
+     "q": "What is one thing you would love to be different in a year?",
+     "c": "Write down one thing you would like to work on, in a single short line."
+    },
+    "de": {
+     "t": "Willkommen auf deinem Zielweg",
+     "g": "Entdecke, wie ein kleiner Schritt pro Tag mit der Zeit echten Fortschritt ergibt.",
+     "p": [
+      "Jeden Tag gibt es eine kurze Lektion und eine winzige Aufgabe für wenige Minuten.",
+      "Fortschritt entsteht aus kleinen, wiederholten Schritten, nicht aus riesigen Kraftakten.",
+      "Wir gehen in deinem Tempo, und auch ein ruhiger Tag gehört zum Weg."
+     ],
+     "q": "Was würdest du dir in einem Jahr gern anders wünschen?",
+     "c": "Schreibe in einer kurzen Zeile auf, woran du gern arbeiten möchtest."
+    },
+    "es": {
+     "t": "Bienvenido a tu camino de metas",
+     "g": "Descubre cómo un pequeño paso al día puede convertirse en un progreso real.",
+     "p": [
+      "Cada día hay una lección corta y una acción mínima que puedes hacer en minutos.",
+      "El progreso se construye con pasos pequeños y repetidos, no con grandes arranques.",
+      "Vamos a tu ritmo, y un día tranquilo también forma parte del camino."
+     ],
+     "q": "¿Qué te gustaría que fuera diferente dentro de un año?",
+     "c": "Escribe en una sola línea algo en lo que te gustaría trabajar."
+    },
+    "fr": {
+     "t": "Bienvenue sur ton chemin d'objectifs",
+     "g": "Découvre comment un petit pas par jour peut devenir un vrai progrès avec le temps.",
+     "p": [
+      "Chaque jour apporte une courte leçon et une toute petite action de quelques minutes.",
+      "Le progrès se construit avec de petits pas répétés, pas avec de grands élans.",
+      "On avance à ton rythme, et un jour calme fait aussi partie du chemin."
+     ],
+     "q": "Qu'aimerais-tu voir changer dans un an ?",
+     "c": "Note en une courte ligne une chose sur laquelle tu aimerais travailler."
+    },
+    "it": {
+     "t": "Benvenuto sul tuo percorso di obiettivi",
+     "g": "Scopri come un piccolo passo al giorno può diventare un vero progresso nel tempo.",
+     "p": [
+      "Ogni giorno c'è una breve lezione e una piccola azione da fare in pochi minuti.",
+      "Il progresso nasce da piccoli passi ripetuti, non da enormi sforzi isolati.",
+      "Andiamo al tuo ritmo, e anche un giorno tranquillo fa parte del percorso."
+     ],
+     "q": "Cosa ti piacerebbe che fosse diverso tra un anno?",
+     "c": "Scrivi in una riga breve una cosa su cui ti piacerebbe lavorare."
+    },
+    "pt": {
+     "t": "Bem-vindo ao teu caminho de metas",
+     "g": "Descobre como um pequeno passo por dia pode tornar-se um progresso real.",
+     "p": [
+      "Cada dia traz uma lição curta e uma pequena ação que fazes em poucos minutos.",
+      "O progresso constrói-se com passos pequenos e repetidos, não com grandes arranques.",
+      "Vamos ao teu ritmo, e um dia calmo também faz parte do caminho."
+     ],
+     "q": "O que gostavas que fosse diferente daqui a um ano?",
+     "c": "Escreve numa linha curta uma coisa em que gostarias de trabalhar."
+    },
+    "pt_BR": {
+     "t": "Boas-vindas ao seu caminho de metas",
+     "g": "Descubra como um pequeno passo por dia pode virar um progresso de verdade.",
+     "p": [
+      "Cada dia traz uma lição curta e uma pequena ação que você faz em poucos minutos.",
+      "O progresso se constrói com passos pequenos e repetidos, não com grandes arrancadas.",
+      "Vamos no seu ritmo, e um dia tranquilo também faz parte do caminho."
+     ],
+     "q": "O que você gostaria que fosse diferente daqui a um ano?",
+     "c": "Escreva em uma linha curta uma coisa em que você gostaria de trabalhar."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Wishes versus goals",
+     "g": "See why a goal has a clear outcome and a plan, while a wish stays a nice idea.",
+     "p": [
+      "A wish says what you hope for; a goal says what you will do and by when.",
+      "Turning a wish into a goal only needs a clear outcome and a first step.",
+      "Wishes are welcome too, because many goals begin as one."
+     ],
+     "q": "Which wish of yours could become a goal if you gave it a first step?",
+     "c": "Pick one wish and write one sentence that turns it into a goal."
+    },
+    "de": {
+     "t": "Wünsche und Ziele",
+     "g": "Verstehe, warum ein Ziel ein klares Ergebnis und einen Plan hat, ein Wunsch dagegen eine schöne Idee bleibt.",
+     "p": [
+      "Ein Wunsch sagt, was du dir erhoffst; ein Ziel sagt, was du tust und bis wann.",
+      "Aus einem Wunsch wird ein Ziel mit einem klaren Ergebnis und einem ersten Schritt.",
+      "Wünsche sind willkommen, denn viele Ziele beginnen als Wunsch."
+     ],
+     "q": "Welcher deiner Wünsche könnte mit einem ersten Schritt zum Ziel werden?",
+     "c": "Wähle einen Wunsch und schreibe einen Satz, der ihn zum Ziel macht."
+    },
+    "es": {
+     "t": "Deseos y metas",
+     "g": "Mira por qué una meta tiene un resultado claro y un plan, y un deseo sigue siendo una bonita idea.",
+     "p": [
+      "Un deseo dice lo que esperas; una meta dice qué harás y para cuándo.",
+      "Para convertir un deseo en meta basta un resultado claro y un primer paso.",
+      "Los deseos también son bienvenidos, porque muchas metas empiezan siendo uno."
+     ],
+     "q": "¿Qué deseo tuyo podría ser una meta si le dieras un primer paso?",
+     "c": "Elige un deseo y escribe una frase que lo convierta en meta."
+    },
+    "fr": {
+     "t": "Souhaits et objectifs",
+     "g": "Vois pourquoi un objectif a un résultat clair et un plan, alors qu'un souhait reste une belle idée.",
+     "p": [
+      "Un souhait dit ce que tu espères ; un objectif dit ce que tu feras et pour quand.",
+      "Pour transformer un souhait en objectif, il suffit d'un résultat clair et d'un premier pas.",
+      "Les souhaits sont les bienvenus, car beaucoup d'objectifs commencent ainsi."
+     ],
+     "q": "Quel souhait pourrait devenir un objectif si tu lui donnais un premier pas ?",
+     "c": "Choisis un souhait et écris une phrase qui le transforme en objectif."
+    },
+    "it": {
+     "t": "Desideri e obiettivi",
+     "g": "Capisci perché un obiettivo ha un risultato chiaro e un piano, mentre un desiderio resta una bella idea.",
+     "p": [
+      "Un desiderio dice cosa speri; un obiettivo dice cosa farai e per quando.",
+      "Per trasformare un desiderio in obiettivo bastano un risultato chiaro e un primo passo.",
+      "I desideri sono i benvenuti, perché molti obiettivi nascono così."
+     ],
+     "q": "Quale tuo desiderio potrebbe diventare un obiettivo con un primo passo?",
+     "c": "Scegli un desiderio e scrivi una frase che lo trasformi in obiettivo."
+    },
+    "pt": {
+     "t": "Desejos e metas",
+     "g": "Vê porque é que uma meta tem um resultado claro e um plano, e um desejo fica só uma boa ideia.",
+     "p": [
+      "Um desejo diz o que esperas; uma meta diz o que vais fazer e até quando.",
+      "Para transformar um desejo em meta basta um resultado claro e um primeiro passo.",
+      "Os desejos também são bem-vindos, porque muitas metas começam assim."
+     ],
+     "q": "Qual dos teus desejos podia tornar-se meta com um primeiro passo?",
+     "c": "Escolhe um desejo e escreve uma frase que o transforme em meta."
+    },
+    "pt_BR": {
+     "t": "Desejos e metas",
+     "g": "Veja por que uma meta tem um resultado claro e um plano, e um desejo fica só uma boa ideia.",
+     "p": [
+      "Um desejo diz o que você espera; uma meta diz o que vai fazer e até quando.",
+      "Para transformar um desejo em meta basta um resultado claro e um primeiro passo.",
+      "Desejos também são bem-vindos, porque muitas metas começam assim."
+     ],
+     "q": "Qual dos seus desejos poderia virar meta com um primeiro passo?",
+     "c": "Escolha um desejo e escreva uma frase que o transforme em meta."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your life areas wheel",
+     "g": "Rate six life areas to see where you would like to grow next.",
+     "p": [
+      "Think of six areas: health, learning, work, friends, fun and home.",
+      "Give each area a score from 1 to 10 based on how satisfied you feel today.",
+      "A low score is not a failure; it simply shows where a goal could help."
+     ],
+     "q": "Which area scored highest, and which one would you like to lift a little?",
+     "c": "Draw six lines on paper and give each life area a score today."
+    },
+    "de": {
+     "t": "Dein Lebensbereiche-Rad",
+     "g": "Bewerte sechs Lebensbereiche, um zu sehen, wo du als Nächstes wachsen möchtest.",
+     "p": [
+      "Denke an sechs Bereiche: Gesundheit, Lernen, Arbeit, Freunde, Spaß und Zuhause.",
+      "Gib jedem Bereich 1 bis 10 Punkte, je nachdem, wie zufrieden du heute bist.",
+      "Ein niedriger Wert ist kein Scheitern, er zeigt nur, wo ein Ziel helfen könnte."
+     ],
+     "q": "Welcher Bereich hat am besten abgeschnitten, und welchen möchtest du etwas anheben?",
+     "c": "Zeichne sechs Linien aufs Papier und bewerte heute jeden Bereich."
+    },
+    "es": {
+     "t": "Tu rueda de áreas de vida",
+     "g": "Puntúa seis áreas de tu vida para ver dónde te gustaría crecer ahora.",
+     "p": [
+      "Piensa en seis áreas: salud, aprendizaje, trabajo, amistades, ocio y hogar.",
+      "Da a cada área una nota del 1 al 10 según lo satisfecho que te sientes hoy.",
+      "Una nota baja no es un fracaso; solo muestra dónde una meta podría ayudar."
+     ],
+     "q": "¿Qué área tiene la nota más alta y cuál te gustaría subir un poco?",
+     "c": "Dibuja seis líneas en un papel y puntúa hoy cada área de tu vida."
+    },
+    "fr": {
+     "t": "Ta roue des domaines de vie",
+     "g": "Note six domaines de vie pour voir où tu aimerais progresser ensuite.",
+     "p": [
+      "Pense à six domaines : santé, apprentissage, travail, amis, loisirs et maison.",
+      "Donne à chaque domaine une note de 1 à 10 selon ta satisfaction d'aujourd'hui.",
+      "Une note basse n'est pas un échec ; elle montre juste où un objectif peut aider."
+     ],
+     "q": "Quel domaine a la meilleure note, et lequel aimerais-tu faire monter un peu ?",
+     "c": "Trace six lignes sur une feuille et note chaque domaine aujourd'hui."
+    },
+    "it": {
+     "t": "La tua ruota delle aree di vita",
+     "g": "Dai un voto a sei aree della vita per vedere dove vorresti crescere ora.",
+     "p": [
+      "Pensa a sei aree: salute, apprendimento, lavoro, amici, svago e casa.",
+      "Dai a ogni area un voto da 1 a 10 in base a quanto ti senti soddisfatto oggi.",
+      "Un voto basso non è un fallimento; mostra solo dove un obiettivo potrebbe aiutare."
+     ],
+     "q": "Quale area ha il voto più alto e quale vorresti alzare un po'?",
+     "c": "Disegna sei linee su un foglio e dai oggi un voto a ogni area."
+    },
+    "pt": {
+     "t": "A tua roda das áreas da vida",
+     "g": "Dá nota a seis áreas da vida para ver onde gostarias de crescer a seguir.",
+     "p": [
+      "Pensa em seis áreas: saúde, aprendizagem, trabalho, amigos, lazer e casa.",
+      "Dá a cada área uma nota de 1 a 10 conforme a tua satisfação de hoje.",
+      "Uma nota baixa não é um fracasso; só mostra onde uma meta podia ajudar."
+     ],
+     "q": "Que área teve a nota mais alta e qual gostarias de subir um pouco?",
+     "c": "Desenha seis linhas numa folha e dá hoje uma nota a cada área."
+    },
+    "pt_BR": {
+     "t": "Sua roda das áreas da vida",
+     "g": "Dê nota a seis áreas da vida para ver onde você quer crescer em seguida.",
+     "p": [
+      "Pense em seis áreas: saúde, aprendizado, trabalho, amigos, lazer e casa.",
+      "Dê a cada área uma nota de 1 a 10 conforme a sua satisfação de hoje.",
+      "Uma nota baixa não é fracasso; só mostra onde uma meta poderia ajudar."
+     ],
+     "q": "Qual área teve a nota mais alta e qual você gostaria de subir um pouco?",
+     "c": "Desenhe seis linhas numa folha e dê hoje uma nota a cada área."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What truly matters to you",
+     "g": "Name three personal values that can guide which goals deserve your time.",
+     "p": [
+      "Values are what you care about, like kindness, curiosity, freedom or family.",
+      "Goals that match your values feel more meaningful and are easier to keep.",
+      "There are no right or wrong values; only the ones that are yours."
+     ],
+     "q": "Think of a day you felt proud: which value was shining through?",
+     "c": "Pick three words that describe what matters most and write them down."
+    },
+    "de": {
+     "t": "Was dir wirklich wichtig ist",
+     "g": "Finde drei persönliche Werte, die dir zeigen, welche Ziele deine Zeit verdienen.",
+     "p": [
+      "Werte sind das, was dir am Herzen liegt, etwa Güte, Neugier, Freiheit oder Familie.",
+      "Ziele, die zu deinen Werten passen, wirken sinnvoller und sind leichter durchzuhalten.",
+      "Es gibt keine richtigen oder falschen Werte, nur deine eigenen."
+     ],
+     "q": "Denk an einen Tag, an dem du stolz warst: Welcher Wert hat da geleuchtet?",
+     "c": "Wähle drei Wörter für das, was dir am wichtigsten ist, und schreibe sie auf."
+    },
+    "es": {
+     "t": "Lo que de verdad te importa",
+     "g": "Nombra tres valores personales que te guíen sobre qué metas merecen tu tiempo.",
+     "p": [
+      "Los valores son lo que te importa, como la amabilidad, la curiosidad, la libertad o la familia.",
+      "Las metas que encajan con tus valores tienen más sentido y es más fácil mantenerlas.",
+      "No hay valores buenos o malos; solo los tuyos."
+     ],
+     "q": "Piensa en un día en que te sentiste orgulloso: ¿qué valor brillaba?",
+     "c": "Elige tres palabras sobre lo que más te importa y anótalas."
+    },
+    "fr": {
+     "t": "Ce qui compte vraiment pour toi",
+     "g": "Trouve trois valeurs personnelles pour choisir les objectifs qui méritent ton temps.",
+     "p": [
+      "Les valeurs sont ce qui t'importe : la bienveillance, la curiosité, la liberté, la famille.",
+      "Les objectifs en accord avec tes valeurs ont plus de sens et se tiennent mieux.",
+      "Il n'y a pas de bonnes ou de mauvaises valeurs, seulement les tiennes."
+     ],
+     "q": "Pense à un jour où tu étais fier : quelle valeur brillait alors ?",
+     "c": "Choisis trois mots pour ce qui compte le plus et note-les."
+    },
+    "it": {
+     "t": "Ciò che conta davvero per te",
+     "g": "Individua tre valori personali che ti guidino verso gli obiettivi che meritano il tuo tempo.",
+     "p": [
+      "I valori sono ciò che ti sta a cuore: gentilezza, curiosità, libertà, famiglia.",
+      "Gli obiettivi in linea con i tuoi valori hanno più senso e si mantengono meglio.",
+      "Non esistono valori giusti o sbagliati, solo i tuoi."
+     ],
+     "q": "Pensa a un giorno in cui eri fiero: quale valore brillava?",
+     "c": "Scegli tre parole per ciò che conta di più e scrivile."
+    },
+    "pt": {
+     "t": "O que realmente importa para ti",
+     "g": "Escolhe três valores pessoais que te ajudem a decidir que metas merecem o teu tempo.",
+     "p": [
+      "Valores são o que te importa, como a bondade, a curiosidade, a liberdade ou a família.",
+      "Metas alinhadas com os teus valores têm mais sentido e são mais fáceis de manter.",
+      "Não há valores certos ou errados, só os teus."
+     ],
+     "q": "Pensa num dia em que te sentiste orgulhoso: que valor brilhava?",
+     "c": "Escolhe três palavras sobre o que mais importa e escreve-as."
+    },
+    "pt_BR": {
+     "t": "O que realmente importa para você",
+     "g": "Escolha três valores pessoais que ajudem a decidir quais metas merecem seu tempo.",
+     "p": [
+      "Valores são o que importa para você, como bondade, curiosidade, liberdade ou família.",
+      "Metas alinhadas aos seus valores têm mais sentido e ficam mais fáceis de manter.",
+      "Não existem valores certos ou errados, só os seus."
+     ],
+     "q": "Pense num dia em que você sentiu orgulho: que valor brilhava ali?",
+     "c": "Escolha três palavras sobre o que mais importa e anote."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dreams worth writing down",
+     "g": "List ten things you would love to do, learn or experience, without judging them.",
+     "p": [
+      "Writing ideas down frees your mind and shows what keeps coming back.",
+      "For now, do not check if they are realistic; just let ideas flow.",
+      "Include small joys and big adventures side by side."
+     ],
+     "q": "Which item on your list makes you smile the most?",
+     "c": "Write a list of ten things you would love to do, learn or try."
+    },
+    "de": {
+     "t": "Träume zum Aufschreiben",
+     "g": "Liste zehn Dinge auf, die du gern tun, lernen oder erleben würdest, ohne sie zu bewerten.",
+     "p": [
+      "Aufschreiben entlastet den Kopf und zeigt, was immer wiederkehrt.",
+      "Prüfe vorerst nicht, ob es realistisch ist; lass die Ideen einfach fließen.",
+      "Kleine Freuden und große Abenteuer dürfen nebeneinander stehen."
+     ],
+     "q": "Welcher Punkt auf deiner Liste bringt dich am meisten zum Lächeln?",
+     "c": "Schreibe eine Liste mit zehn Dingen, die du gern tun, lernen oder ausprobieren möchtest."
+    },
+    "es": {
+     "t": "Sueños que merece la pena anotar",
+     "g": "Haz una lista de diez cosas que te encantaría hacer, aprender o vivir, sin juzgarlas.",
+     "p": [
+      "Anotar ideas libera la mente y muestra lo que vuelve una y otra vez.",
+      "Por ahora no compruebes si son realistas; deja fluir las ideas.",
+      "Pon juntas las pequeñas alegrías y las grandes aventuras."
+     ],
+     "q": "¿Qué punto de tu lista te saca más sonrisas?",
+     "c": "Escribe una lista de diez cosas que te gustaría hacer, aprender o probar."
+    },
+    "fr": {
+     "t": "Des rêves à écrire",
+     "g": "Dresse la liste de dix choses que tu aimerais faire, apprendre ou vivre, sans les juger.",
+     "p": [
+      "Écrire libère l'esprit et montre ce qui revient sans cesse.",
+      "Pour l'instant, ne vérifie pas si c'est réaliste ; laisse couler les idées.",
+      "Mets côte à côte les petites joies et les grandes aventures."
+     ],
+     "q": "Quel élément de ta liste te fait le plus sourire ?",
+     "c": "Écris une liste de dix choses que tu aimerais faire, apprendre ou essayer."
+    },
+    "it": {
+     "t": "Sogni da scrivere",
+     "g": "Elenca dieci cose che ameresti fare, imparare o vivere, senza giudicarle.",
+     "p": [
+      "Scrivere le idee libera la mente e mostra ciò che ritorna sempre.",
+      "Per ora non verificare se sono realistiche; lascia fluire le idee.",
+      "Metti accanto piccole gioie e grandi avventure."
+     ],
+     "q": "Quale voce della tua lista ti fa sorridere di più?",
+     "c": "Scrivi una lista di dieci cose che vorresti fare, imparare o provare."
+    },
+    "pt": {
+     "t": "Sonhos que vale a pena escrever",
+     "g": "Lista dez coisas que adorarias fazer, aprender ou viver, sem as julgar.",
+     "p": [
+      "Escrever as ideias liberta a mente e mostra o que volta sempre.",
+      "Por agora não verifiques se são realistas; deixa as ideias fluir.",
+      "Põe lado a lado pequenas alegrias e grandes aventuras."
+     ],
+     "q": "Que item da tua lista te faz sorrir mais?",
+     "c": "Escreve uma lista de dez coisas que gostarias de fazer, aprender ou experimentar."
+    },
+    "pt_BR": {
+     "t": "Sonhos que valem a pena anotar",
+     "g": "Liste dez coisas que você adoraria fazer, aprender ou viver, sem julgá-las.",
+     "p": [
+      "Anotar as ideias libera a mente e mostra o que sempre volta.",
+      "Por enquanto, não confira se são realistas; deixe as ideias fluírem.",
+      "Coloque lado a lado pequenas alegrias e grandes aventuras."
+     ],
+     "q": "Qual item da sua lista mais te faz sorrir?",
+     "c": "Escreva uma lista de dez coisas que você gostaria de fazer, aprender ou experimentar."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Picking your first goal",
+     "g": "Choose one goal from your list that feels exciting and doable right now.",
+     "p": [
+      "Look at your list and notice which items give you energy.",
+      "A good first goal is exciting and also fits into your current life.",
+      "Start with something small enough to win; bigger goals can follow."
+     ],
+     "q": "Which item are you leaning toward, and what draws you to it?",
+     "c": "Circle one item on your list and write why it is your first goal."
+    },
+    "de": {
+     "t": "Dein erstes Ziel wählen",
+     "g": "Wähle ein Ziel von deiner Liste, das sich spannend und jetzt machbar anfühlt.",
+     "p": [
+      "Schau auf deine Liste und achte darauf, welche Punkte dir Energie geben.",
+      "Ein gutes erstes Ziel begeistert dich und passt in dein aktuelles Leben.",
+      "Beginne mit etwas Kleinem, das du schaffen kannst; größere Ziele folgen später."
+     ],
+     "q": "Zu welchem Punkt neigst du, und was zieht dich daran an?",
+     "c": "Kreise einen Punkt ein und schreibe, warum er dein erstes Ziel ist."
+    },
+    "es": {
+     "t": "Elegir tu primera meta",
+     "g": "Elige de tu lista una meta que te emocione y sea posible ahora mismo.",
+     "p": [
+      "Mira tu lista y fíjate en qué puntos te dan energía.",
+      "Una buena primera meta ilusiona y además encaja en tu vida actual.",
+      "Empieza por algo lo bastante pequeño para lograrlo; las metas grandes vendrán después."
+     ],
+     "q": "¿Hacia qué punto te inclinas y qué te atrae de él?",
+     "c": "Rodea un punto de tu lista y escribe por qué es tu primera meta."
+    },
+    "fr": {
+     "t": "Choisir ton premier objectif",
+     "g": "Choisis dans ta liste un objectif qui t'enthousiasme et reste faisable maintenant.",
+     "p": [
+      "Regarde ta liste et repère les idées qui te donnent de l'énergie.",
+      "Un bon premier objectif enthousiasme et s'intègre à ta vie actuelle.",
+      "Commence par quelque chose d'assez petit pour réussir ; les grands viendront après."
+     ],
+     "q": "Vers quelle idée penches-tu, et qu'est-ce qui t'attire ?",
+     "c": "Entoure un élément de ta liste et note pourquoi c'est ton premier objectif."
+    },
+    "it": {
+     "t": "Scegliere il tuo primo obiettivo",
+     "g": "Scegli dalla lista un obiettivo che ti entusiasmi e sia fattibile adesso.",
+     "p": [
+      "Guarda la lista e nota quali voci ti danno energia.",
+      "Un buon primo obiettivo entusiasma e si adatta alla tua vita attuale.",
+      "Parti da qualcosa di abbastanza piccolo da riuscire; quelli grandi verranno dopo."
+     ],
+     "q": "Verso quale voce ti senti attratto e perché?",
+     "c": "Cerchia una voce della lista e scrivi perché è il tuo primo obiettivo."
+    },
+    "pt": {
+     "t": "A escolha da tua primeira meta",
+     "g": "Escolhe da lista uma meta que te entusiasme e seja possível agora.",
+     "p": [
+      "Olha para a lista e repara nos itens que te dão energia.",
+      "Uma boa primeira meta entusiasma e cabe na tua vida atual.",
+      "Começa por algo pequeno o bastante para conseguires; as maiores virão depois."
+     ],
+     "q": "Para que item te inclinas e o que te atrai nele?",
+     "c": "Faz um círculo num item da lista e escreve porque é a tua primeira meta."
+    },
+    "pt_BR": {
+     "t": "A escolha da sua primeira meta",
+     "g": "Escolha da lista uma meta que empolgue e seja possível agora.",
+     "p": [
+      "Olhe para a lista e perceba os itens que dão energia.",
+      "Uma boa primeira meta empolga e cabe na sua vida atual.",
+      "Comece com algo pequeno o bastante para conseguir; as maiores vêm depois."
+     ],
+     "q": "Para qual item você está inclinado e o que atrai você nele?",
+     "c": "Faça um círculo num item da lista e escreva por que é a sua primeira meta."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why this goal, why now",
+     "g": "Write your personal reason so your motivation has something solid to hold on to.",
+     "p": [
+      "Motivation fades on tired days, but a clear reason stays with you.",
+      "A good reason is personal: it says what this goal gives you.",
+      "Ask why three times to reach the deeper reason behind the goal."
+     ],
+     "q": "Why does this goal matter to you, and why does it matter now?",
+     "c": "Write your reason in one or two sentences and keep it somewhere handy."
+    },
+    "de": {
+     "t": "Warum dieses Ziel, warum jetzt",
+     "g": "Schreibe deinen persönlichen Grund auf, damit deine Motivation etwas Festes hat.",
+     "p": [
+      "Motivation schwindet an müden Tagen, doch ein klarer Grund bleibt.",
+      "Ein guter Grund ist persönlich: Er sagt, was dir dieses Ziel gibt.",
+      "Frage dreimal Warum, um den tieferen Grund hinter dem Ziel zu finden."
+     ],
+     "q": "Warum ist dir dieses Ziel wichtig, und warum gerade jetzt?",
+     "c": "Schreibe deinen Grund in ein, zwei Sätzen auf und bewahre ihn griffbereit auf."
+    },
+    "es": {
+     "t": "Por qué esta meta, por qué ahora",
+     "g": "Escribe tu razón personal para que tu motivación tenga algo firme a lo que agarrarse.",
+     "p": [
+      "La motivación baja en los días cansados, pero una razón clara se queda contigo.",
+      "Una buena razón es personal: dice qué te aporta esta meta.",
+      "Pregúntate por qué tres veces para llegar a la razón más profunda."
+     ],
+     "q": "¿Por qué te importa esta meta y por qué te importa ahora?",
+     "c": "Escribe tu razón en una o dos frases y guárdala a mano."
+    },
+    "fr": {
+     "t": "Pourquoi cet objectif, pourquoi maintenant",
+     "g": "Écris ta raison personnelle pour que ta motivation ait un appui solide.",
+     "p": [
+      "La motivation baisse les jours de fatigue, mais une raison claire reste là.",
+      "Une bonne raison est personnelle : elle dit ce que cet objectif t'apporte.",
+      "Demande-toi pourquoi trois fois pour atteindre la raison plus profonde."
+     ],
+     "q": "Pourquoi cet objectif compte-t-il pour toi, et pourquoi maintenant ?",
+     "c": "Écris ta raison en une ou deux phrases et garde-la à portée de main."
+    },
+    "it": {
+     "t": "Perché questo obiettivo, perché ora",
+     "g": "Scrivi la tua ragione personale, così la motivazione ha qualcosa di solido a cui appoggiarsi.",
+     "p": [
+      "La motivazione cala nei giorni stanchi, ma una ragione chiara resta.",
+      "Una buona ragione è personale: dice cosa ti dà questo obiettivo.",
+      "Chiediti perché tre volte per arrivare alla ragione più profonda."
+     ],
+     "q": "Perché questo obiettivo conta per te, e perché proprio ora?",
+     "c": "Scrivi la tua ragione in una o due frasi e tienila a portata di mano."
+    },
+    "pt": {
+     "t": "Porquê esta meta, porquê agora",
+     "g": "Escreve a tua razão pessoal para a motivação ter onde se apoiar.",
+     "p": [
+      "A motivação diminui nos dias cansados, mas uma razão clara fica contigo.",
+      "Uma boa razão é pessoal: diz o que esta meta te dá.",
+      "Pergunta porquê três vezes para chegares à razão mais profunda."
+     ],
+     "q": "Porque é que esta meta te importa e porque agora?",
+     "c": "Escreve a tua razão em uma ou duas frases e guarda-a à mão."
+    },
+    "pt_BR": {
+     "t": "Por que esta meta, por que agora",
+     "g": "Escreva sua razão pessoal para a motivação ter onde se apoiar.",
+     "p": [
+      "A motivação cai nos dias cansados, mas uma razão clara fica com você.",
+      "Uma boa razão é pessoal: diz o que esta meta dá a você.",
+      "Pergunte por quê três vezes para chegar à razão mais profunda."
+     ],
+     "q": "Por que esta meta importa para você e por que agora?",
+     "c": "Escreva sua razão em uma ou duas frases e deixe à mão."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Making goals specific",
+     "g": "Turn a vague goal like get fit into a clear and concrete statement.",
+     "p": [
+      "Vague goals leave you unsure what to do on Monday morning.",
+      "Add what, how often and where: walk 20 minutes in the park.",
+      "A specific goal tells you exactly when you have done today's part."
+     ],
+     "q": "How could you make your goal more specific in one sentence?",
+     "c": "Rewrite your goal with what, how often and where in it."
+    },
+    "de": {
+     "t": "Ziele konkret machen",
+     "g": "Mache aus einem vagen Ziel wie fitter werden eine klare, greifbare Aussage.",
+     "p": [
+      "Vage Ziele lassen dich am Montagmorgen ratlos zurück.",
+      "Ergänze Was, wie oft und wo: 20 Minuten im Park spazieren gehen.",
+      "Ein konkretes Ziel zeigt dir genau, wann du heute fertig bist."
+     ],
+     "q": "Wie könntest du dein Ziel in einem Satz konkreter machen?",
+     "c": "Schreibe dein Ziel neu, mit Was, wie oft und wo."
+    },
+    "es": {
+     "t": "Hacer metas específicas",
+     "g": "Convierte una meta vaga como ponerme en forma en una frase clara y concreta.",
+     "p": [
+      "Las metas vagas te dejan sin saber qué hacer el lunes por la mañana.",
+      "Añade qué, cuántas veces y dónde: caminar 20 minutos en el parque.",
+      "Una meta específica te dice exactamente cuándo has cumplido tu parte de hoy."
+     ],
+     "q": "¿Cómo podrías hacer tu meta más específica en una frase?",
+     "c": "Reescribe tu meta incluyendo qué, cuántas veces y dónde."
+    },
+    "fr": {
+     "t": "Rendre un objectif précis",
+     "g": "Transforme un objectif flou comme me remettre en forme en une phrase claire et concrète.",
+     "p": [
+      "Un objectif flou te laisse sans savoir quoi faire lundi matin.",
+      "Ajoute quoi, combien de fois et où : marcher 20 minutes au parc.",
+      "Un objectif précis te dit exactement quand ta part du jour est faite."
+     ],
+     "q": "Comment rendre ton objectif plus précis en une phrase ?",
+     "c": "Réécris ton objectif avec quoi, combien de fois et où."
+    },
+    "it": {
+     "t": "Rendere gli obiettivi specifici",
+     "g": "Trasforma un obiettivo vago come rimettermi in forma in una frase chiara e concreta.",
+     "p": [
+      "Un obiettivo vago ti lascia senza sapere cosa fare lunedì mattina.",
+      "Aggiungi cosa, quante volte e dove: camminare 20 minuti al parco.",
+      "Un obiettivo specifico ti dice esattamente quando hai fatto la tua parte di oggi."
+     ],
+     "q": "Come potresti rendere più specifico il tuo obiettivo in una frase?",
+     "c": "Riscrivi il tuo obiettivo con cosa, quante volte e dove."
+    },
+    "pt": {
+     "t": "Tornar as metas específicas",
+     "g": "Transforma uma meta vaga como ficar em forma numa frase clara e concreta.",
+     "p": [
+      "Metas vagas deixam-te sem saber o que fazer na segunda de manhã.",
+      "Acrescenta o quê, quantas vezes e onde: caminhar 20 minutos no parque.",
+      "Uma meta específica diz-te exatamente quando cumpriste a parte de hoje."
+     ],
+     "q": "Como poderias tornar a tua meta mais específica numa frase?",
+     "c": "Reescreve a tua meta com o quê, quantas vezes e onde."
+    },
+    "pt_BR": {
+     "t": "Tornar as metas específicas",
+     "g": "Transforme uma meta vaga como ficar em forma numa frase clara e concreta.",
+     "p": [
+      "Metas vagas deixam você sem saber o que fazer na segunda de manhã.",
+      "Acrescente o quê, quantas vezes e onde: caminhar 20 minutos no parque.",
+      "Uma meta específica diz exatamente quando você cumpriu a parte de hoje."
+     ],
+     "q": "Como você poderia tornar sua meta mais específica numa frase?",
+     "c": "Reescreva sua meta com o quê, quantas vezes e onde."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Making goals measurable",
+     "g": "Choose a number, count or visible sign that shows you are moving forward.",
+     "p": [
+      "What you can see or count is easier to keep going with.",
+      "A measure can be minutes, pages, days or a simple yes or no.",
+      "Pick one measure you can check in under a minute."
+     ],
+     "q": "How will you know, in numbers or signs, that you are making progress?",
+     "c": "Choose one measure for your goal and write down how you will check it."
+    },
+    "de": {
+     "t": "Ziele messbar machen",
+     "g": "Wähle eine Zahl, eine Zählung oder ein sichtbares Zeichen, das deinen Fortschritt zeigt.",
+     "p": [
+      "Was du sehen oder zählen kannst, hältst du leichter durch.",
+      "Ein Maß kann Minuten, Seiten, Tage oder ein einfaches Ja oder Nein sein.",
+      "Wähle ein Maß, das du in unter einer Minute prüfen kannst."
+     ],
+     "q": "Woran erkennst du in Zahlen oder Zeichen, dass du vorankommst?",
+     "c": "Wähle ein Maß für dein Ziel und notiere, wie du es prüfst."
+    },
+    "es": {
+     "t": "Hacer metas medibles",
+     "g": "Elige un número, un conteo o una señal visible que muestre que avanzas.",
+     "p": [
+      "Lo que puedes ver o contar es más fácil de mantener.",
+      "Una medida puede ser minutos, páginas, días o un simple sí o no.",
+      "Elige una medida que puedas comprobar en menos de un minuto."
+     ],
+     "q": "¿Cómo sabrás, con números o señales, que estás avanzando?",
+     "c": "Elige una medida para tu meta y anota cómo la comprobarás."
+    },
+    "fr": {
+     "t": "Rendre un objectif mesurable",
+     "g": "Choisis un chiffre, un compte ou un signe visible qui montre que tu avances.",
+     "p": [
+      "Ce que tu peux voir ou compter est plus facile à poursuivre.",
+      "Une mesure peut être des minutes, des pages, des jours ou un simple oui ou non.",
+      "Choisis une mesure que tu peux vérifier en moins d'une minute."
+     ],
+     "q": "Comment sauras-tu, en chiffres ou en signes, que tu progresses ?",
+     "c": "Choisis une mesure pour ton objectif et note comment la vérifier."
+    },
+    "it": {
+     "t": "Rendere gli obiettivi misurabili",
+     "g": "Scegli un numero, un conteggio o un segno visibile che mostri che stai avanzando.",
+     "p": [
+      "Ciò che puoi vedere o contare è più facile da portare avanti.",
+      "Una misura può essere minuti, pagine, giorni o un semplice sì o no.",
+      "Scegli una misura che puoi controllare in meno di un minuto."
+     ],
+     "q": "Come saprai, con numeri o segni, che stai facendo progressi?",
+     "c": "Scegli una misura per il tuo obiettivo e scrivi come la controllerai."
+    },
+    "pt": {
+     "t": "Tornar as metas mensuráveis",
+     "g": "Escolhe um número, uma contagem ou um sinal visível que mostre que avanças.",
+     "p": [
+      "O que podes ver ou contar é mais fácil de manter.",
+      "Uma medida pode ser minutos, páginas, dias ou um simples sim ou não.",
+      "Escolhe uma medida que consigas verificar em menos de um minuto."
+     ],
+     "q": "Como vais saber, em números ou sinais, que estás a progredir?",
+     "c": "Escolhe uma medida para a tua meta e escreve como a vais verificar."
+    },
+    "pt_BR": {
+     "t": "Tornar as metas mensuráveis",
+     "g": "Escolha um número, uma contagem ou um sinal visível que mostre que você está avançando.",
+     "p": [
+      "O que você pode ver ou contar é mais fácil de manter.",
+      "Uma medida pode ser minutos, páginas, dias ou um simples sim ou não.",
+      "Escolha uma medida que você consiga verificar em menos de um minuto."
+     ],
+     "q": "Como você vai saber, em números ou sinais, que está progredindo?",
+     "c": "Escolha uma medida para sua meta e escreva como vai verificá-la."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Realistic but stretching",
+     "g": "Find the sweet spot between a goal that is too easy and one that overwhelms.",
+     "p": [
+      "Too easy bores you, too hard discourages you; aim in between.",
+      "A good test: you feel a little nervous and also a little confident.",
+      "You can always adjust the size of a goal as you learn."
+     ],
+     "q": "On a scale of 1 to 10, how confident are you that you can do it?",
+     "c": "Rate your confidence in your goal; if under 7, make it a bit smaller."
+    },
+    "de": {
+     "t": "Realistisch, aber fordernd",
+     "g": "Finde den Mittelweg zwischen einem zu leichten und einem überfordernden Ziel.",
+     "p": [
+      "Zu leicht langweilt, zu schwer entmutigt; ziele auf die Mitte.",
+      "Ein guter Test: Du bist ein wenig nervös und doch ein wenig zuversichtlich.",
+      "Du kannst die Größe eines Ziels jederzeit anpassen, während du lernst."
+     ],
+     "q": "Wie sicher bist du auf einer Skala von 1 bis 10, dass du es schaffst?",
+     "c": "Bewerte dein Selbstvertrauen; liegt es unter 7, mache das Ziel etwas kleiner."
+    },
+    "es": {
+     "t": "Realista pero retador",
+     "g": "Encuentra el punto medio entre una meta demasiado fácil y otra que abruma.",
+     "p": [
+      "Demasiado fácil aburre y demasiado difícil desanima; apunta al medio.",
+      "Una buena prueba: sientes un poco de nervios y también algo de confianza.",
+      "Siempre puedes ajustar el tamaño de una meta a medida que aprendes."
+     ],
+     "q": "Del 1 al 10, ¿qué confianza tienes en que puedes lograrla?",
+     "c": "Puntúa tu confianza en la meta; si es menor de 7, hazla un poco más pequeña."
+    },
+    "fr": {
+     "t": "Réaliste mais stimulant",
+     "g": "Trouve le juste milieu entre un objectif trop facile et un objectif écrasant.",
+     "p": [
+      "Trop facile ennuie, trop dur décourage ; vise entre les deux.",
+      "Un bon test : tu ressens un peu de trac et aussi un peu de confiance.",
+      "Tu peux toujours ajuster la taille d'un objectif en apprenant."
+     ],
+     "q": "Sur une échelle de 1 à 10, quelle confiance as-tu d'y arriver ?",
+     "c": "Note ta confiance ; si elle est sous 7, rends l'objectif un peu plus petit."
+    },
+    "it": {
+     "t": "Realistico ma stimolante",
+     "g": "Trova il punto giusto tra un obiettivo troppo facile e uno che schiaccia.",
+     "p": [
+      "Troppo facile annoia, troppo difficile scoraggia; punta nel mezzo.",
+      "Un buon test: senti un po' di agitazione e anche un po' di fiducia.",
+      "Puoi sempre regolare la dimensione di un obiettivo mentre impari."
+     ],
+     "q": "Da 1 a 10, quanta fiducia hai di riuscirci?",
+     "c": "Dai un voto alla tua fiducia; se è sotto 7, rendi l'obiettivo un po' più piccolo."
+    },
+    "pt": {
+     "t": "Realista mas desafiante",
+     "g": "Encontra o ponto certo entre uma meta fácil demais e uma que sufoca.",
+     "p": [
+      "Fácil demais aborrece, difícil demais desanima; aponta ao meio.",
+      "Um bom teste: sentes um pouco de nervosismo e também alguma confiança.",
+      "Podes sempre ajustar o tamanho de uma meta enquanto aprendes."
+     ],
+     "q": "De 1 a 10, que confiança tens de que a consegues cumprir?",
+     "c": "Dá nota à tua confiança; se for menos de 7, faz a meta um pouco menor."
+    },
+    "pt_BR": {
+     "t": "Realista, mas desafiadora",
+     "g": "Encontre o ponto certo entre uma meta fácil demais e uma que sufoca.",
+     "p": [
+      "Fácil demais entedia, difícil demais desanima; mire no meio.",
+      "Um bom teste: você sente um pouco de nervosismo e também alguma confiança.",
+      "Você pode sempre ajustar o tamanho de uma meta enquanto aprende."
+     ],
+     "q": "De 1 a 10, que confiança você tem de que consegue cumprir?",
+     "c": "Dê uma nota à sua confiança; se for menos de 7, deixe a meta um pouco menor."
+    }
+   }
+  }
+ ]
+}

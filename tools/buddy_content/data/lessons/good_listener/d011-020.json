@@ -1,0 +1,835 @@
+{
+ "topic": "good_listener",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The art of the pause",
+     "g": "Let a moment of silence give the other person space to continue.",
+     "p": [
+      "A short silence is not awkward; it is thinking time.",
+      "Count to three in your head before you reply.",
+      "Many people share the most important part after a pause."
+     ],
+     "q": "How do you feel when someone gives you time to think?",
+     "c": "Wait three calm seconds before replying in one chat today."
+    },
+    "de": {
+     "t": "Die Kunst der Pause",
+     "g": "Lass einen Moment der Stille dem anderen Raum zum Weiterreden geben.",
+     "p": [
+      "Kurze Stille ist nicht peinlich; sie ist Denkzeit.",
+      "Zähle im Kopf bis drei, bevor du antwortest.",
+      "Viele sagen nach einer Pause das Wichtigste."
+     ],
+     "q": "Wie fühlt es sich an, wenn dir jemand Zeit zum Nachdenken gibt?",
+     "c": "Warte heute in einem Gespräch drei ruhige Sekunden, bevor du antwortest."
+    },
+    "es": {
+     "t": "El arte de la pausa",
+     "g": "Deja que un momento de silencio dé espacio a la otra persona para continuar.",
+     "p": [
+      "Un silencio corto no es incómodo; es tiempo para pensar.",
+      "Cuenta hasta tres en tu cabeza antes de responder.",
+      "Mucha gente dice lo más importante después de una pausa."
+     ],
+     "q": "¿Cómo te sientes cuando alguien te da tiempo para pensar?",
+     "c": "Espera tres segundos tranquilos antes de responder en una charla hoy."
+    },
+    "fr": {
+     "t": "L'art de la pause",
+     "g": "Laisse un moment de silence donner à l'autre l'espace de continuer.",
+     "p": [
+      "Un court silence n'est pas gênant ; c'est du temps pour réfléchir.",
+      "Compte jusqu'à trois dans ta tête avant de répondre.",
+      "Beaucoup de gens disent l'essentiel après une pause."
+     ],
+     "q": "Comment te sens-tu quand on te laisse le temps de réfléchir ?",
+     "c": "Attends trois secondes calmes avant de répondre dans une discussion aujourd'hui."
+    },
+    "it": {
+     "t": "L'arte della pausa",
+     "g": "Lascia che un momento di silenzio dia all'altro lo spazio per continuare.",
+     "p": [
+      "Un breve silenzio non è imbarazzante; è tempo per pensare.",
+      "Conta fino a tre nella mente prima di rispondere.",
+      "Molti dicono la cosa più importante dopo una pausa."
+     ],
+     "q": "Come ti senti quando qualcuno ti lascia il tempo di pensare?",
+     "c": "Aspetta tre secondi tranquilli prima di rispondere in una chiacchierata oggi."
+    },
+    "pt": {
+     "t": "A arte da pausa",
+     "g": "Deixa um momento de silêncio dar à outra pessoa espaço para continuar.",
+     "p": [
+      "Um silêncio curto não é desconfortável; é tempo para pensar.",
+      "Conta até três na cabeça antes de responder.",
+      "Muita gente diz o mais importante depois de uma pausa."
+     ],
+     "q": "Como te sentes quando alguém te dá tempo para pensar?",
+     "c": "Espera três segundos calmos antes de responderes numa conversa hoje."
+    },
+    "pt_BR": {
+     "t": "A arte da pausa",
+     "g": "Deixe um momento de silêncio dar à outra pessoa espaço para continuar.",
+     "p": [
+      "Um silêncio curto não é constrangedor; é tempo para pensar.",
+      "Conte até três na cabeça antes de responder.",
+      "Muita gente diz o mais importante depois de uma pausa."
+     ],
+     "q": "Como você se sente quando alguém dá tempo para você pensar?",
+     "c": "Espere três segundos calmos antes de responder numa conversa hoje."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Something that made you smile",
+     "g": "Recall a recent moment of joy and describe it in detail.",
+     "p": [
+      "Details like sounds, colours and words make a story vivid.",
+      "Telling a happy story often brings the joy back.",
+      "Listeners can ask what the best part was."
+     ],
+     "q": "What recently made you smile, and what exactly happened?",
+     "c": "Ask someone what made them smile this week and listen closely."
+    },
+    "de": {
+     "t": "Etwas, das dich zum Lächeln brachte",
+     "g": "Erinnere dich an einen frohen Moment und beschreibe ihn genau.",
+     "p": [
+      "Details wie Geräusche, Farben und Worte machen eine Geschichte lebendig.",
+      "Eine fröhliche Geschichte bringt die Freude oft zurück.",
+      "Zuhörer können fragen, was der schönste Teil war."
+     ],
+     "q": "Was hat dich kürzlich zum Lächeln gebracht, und was ist genau passiert?",
+     "c": "Frag jemanden, was ihn diese Woche zum Lächeln brachte, und hör gut zu."
+    },
+    "es": {
+     "t": "Algo que te hizo sonreír",
+     "g": "Recuerda un momento de alegría reciente y descríbelo con detalle.",
+     "p": [
+      "Detalles como sonidos, colores y palabras dan vida a un relato.",
+      "Contar una historia alegre suele devolver la alegría.",
+      "Quien escucha puede preguntar cuál fue la mejor parte."
+     ],
+     "q": "¿Qué te hizo sonreír hace poco y qué pasó exactamente?",
+     "c": "Pregunta a alguien qué le hizo sonreír esta semana y escucha con atención."
+    },
+    "fr": {
+     "t": "Quelque chose qui t'a fait sourire",
+     "g": "Rappelle-toi un moment de joie récent et décris-le en détail.",
+     "p": [
+      "Des détails comme les sons, les couleurs et les mots rendent une histoire vivante.",
+      "Raconter une histoire joyeuse ramène souvent la joie.",
+      "Celui qui écoute peut demander quel était le meilleur moment."
+     ],
+     "q": "Qu'est-ce qui t'a fait sourire récemment, et que s'est-il passé exactement ?",
+     "c": "Demande à quelqu'un ce qui l'a fait sourire cette semaine et écoute bien."
+    },
+    "it": {
+     "t": "Qualcosa che ti ha fatto sorridere",
+     "g": "Ricorda un momento di gioia recente e descrivilo nei dettagli.",
+     "p": [
+      "Dettagli come suoni, colori e parole rendono viva una storia.",
+      "Raccontare una storia lieta spesso riporta la gioia.",
+      "Chi ascolta può chiedere qual è stata la parte migliore."
+     ],
+     "q": "Cosa ti ha fatto sorridere di recente, e cos'è successo esattamente?",
+     "c": "Chiedi a qualcuno cosa lo ha fatto sorridere questa settimana e ascolta bene."
+    },
+    "pt": {
+     "t": "Algo que te fez sorrir",
+     "g": "Recorda um momento de alegria recente e descreve-o em detalhe.",
+     "p": [
+      "Detalhes como sons, cores e palavras dão vida a uma história.",
+      "Contar uma história feliz muitas vezes traz a alegria de volta.",
+      "Quem ouve pode perguntar qual foi a melhor parte."
+     ],
+     "q": "O que te fez sorrir há pouco e o que aconteceu exatamente?",
+     "c": "Pergunta a alguém o que o fez sorrir esta semana e ouve com atenção."
+    },
+    "pt_BR": {
+     "t": "Algo que fez você sorrir",
+     "g": "Lembre de um momento de alegria recente e descreva em detalhes.",
+     "p": [
+      "Detalhes como sons, cores e palavras dão vida a uma história.",
+      "Contar uma história feliz muitas vezes traz a alegria de volta.",
+      "Quem ouve pode perguntar qual foi a melhor parte."
+     ],
+     "q": "O que fez você sorrir recentemente e o que aconteceu exatamente?",
+     "c": "Pergunte a alguém o que fez a pessoa sorrir esta semana e ouça com atenção."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Curious, not judging",
+     "g": "Approach other people's stories with curiosity instead of quick opinions.",
+     "p": [
+      "Curiosity asks 'tell me more'; judging says 'you should'.",
+      "Everyone has reasons that make sense from inside their story.",
+      "Curious listeners learn more and people open up more."
+     ],
+     "q": "What question could you ask to be curious about a friend's choice?",
+     "c": "When you hear something unexpected today, ask 'What was that like?'"
+    },
+    "de": {
+     "t": "Neugierig statt wertend",
+     "g": "Begegne den Geschichten anderer mit Neugier statt mit schnellen Meinungen.",
+     "p": [
+      "Neugier fragt 'erzähl mehr'; Urteilen sagt 'du solltest'.",
+      "Jeder hat Gründe, die von innen heraus Sinn ergeben.",
+      "Neugierige Zuhörer lernen mehr und Menschen öffnen sich eher."
+     ],
+     "q": "Welche Frage könntest du stellen, um die Wahl eines Freundes zu verstehen?",
+     "c": "Wenn du heute etwas Unerwartetes hörst, frag: 'Wie war das für dich?'"
+    },
+    "es": {
+     "t": "Curioso, sin juzgar",
+     "g": "Acércate a las historias de los demás con curiosidad en vez de opiniones rápidas.",
+     "p": [
+      "La curiosidad dice 'cuéntame más'; juzgar dice 'deberías'.",
+      "Todos tienen razones que tienen sentido desde dentro de su historia.",
+      "Quien escucha con curiosidad aprende más y la gente se abre más."
+     ],
+     "q": "¿Qué pregunta harías para entender con curiosidad la decisión de un amigo?",
+     "c": "Si hoy oyes algo inesperado, pregunta: '¿Cómo fue eso para ti?'"
+    },
+    "fr": {
+     "t": "Curieux, sans juger",
+     "g": "Aborde les histoires des autres avec curiosité plutôt qu'avec des avis rapides.",
+     "p": [
+      "La curiosité dit 'raconte-moi' ; juger dit 'tu devrais'.",
+      "Chacun a des raisons qui ont du sens vues de l'intérieur.",
+      "Un auditeur curieux apprend plus et les gens s'ouvrent davantage."
+     ],
+     "q": "Quelle question poserais-tu pour comprendre le choix d'un ami ?",
+     "c": "Si tu entends quelque chose d'inattendu aujourd'hui, demande : 'Comment c'était ?'"
+    },
+    "it": {
+     "t": "Curioso, senza giudicare",
+     "g": "Avvicinati alle storie degli altri con curiosità invece che con opinioni rapide.",
+     "p": [
+      "La curiosità dice 'dimmi di più'; giudicare dice 'dovresti'.",
+      "Ognuno ha ragioni che hanno senso dall'interno della propria storia.",
+      "Chi ascolta con curiosità impara di più e le persone si aprono."
+     ],
+     "q": "Che domanda faresti per capire con curiosità la scelta di un amico?",
+     "c": "Se oggi senti qualcosa di inatteso, chiedi: 'Com'è stato per te?'"
+    },
+    "pt": {
+     "t": "Curioso, sem julgar",
+     "g": "Aproxima-te das histórias dos outros com curiosidade em vez de opiniões rápidas.",
+     "p": [
+      "A curiosidade diz 'conta-me mais'; julgar diz 'devias'.",
+      "Todos têm razões que fazem sentido por dentro da sua história.",
+      "Quem ouve com curiosidade aprende mais e as pessoas abrem-se mais."
+     ],
+     "q": "Que pergunta farias para perceber, com curiosidade, a escolha de um amigo?",
+     "c": "Se hoje ouvires algo inesperado, pergunta: 'Como foi isso para ti?'"
+    },
+    "pt_BR": {
+     "t": "Curioso, sem julgar",
+     "g": "Aproxime-se das histórias dos outros com curiosidade em vez de opiniões rápidas.",
+     "p": [
+      "A curiosidade diz 'me conta mais'; julgar diz 'você devia'.",
+      "Todo mundo tem razões que fazem sentido de dentro da sua história.",
+      "Quem ouve com curiosidade aprende mais e as pessoas se abrem mais."
+     ],
+     "q": "Que pergunta você faria para entender, com curiosidade, a escolha de um amigo?",
+     "c": "Se hoje ouvir algo inesperado, pergunte: 'Como foi isso para você?'"
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Naming the feeling",
+     "g": "Find simple words for everyday feelings like proud, tired, excited or calm.",
+     "p": [
+      "Naming a feeling makes it easier to share and to understand.",
+      "Simple words work well: glad, nervous, relaxed, proud.",
+      "Listeners can offer a word gently: 'Sounds like you felt proud?'"
+     ],
+     "q": "Which word best describes how you feel right now?",
+     "c": "Name one feeling out loud today, yours or a guess about someone else's."
+    },
+    "de": {
+     "t": "Das Gefühl benennen",
+     "g": "Finde einfache Worte für Alltagsgefühle wie stolz, müde, aufgeregt oder ruhig.",
+     "p": [
+      "Ein Gefühl zu benennen macht es leichter, es zu teilen und zu verstehen.",
+      "Einfache Worte genügen: froh, nervös, entspannt, stolz.",
+      "Zuhörer können sanft ein Wort anbieten: 'Klingt, als wärst du stolz?'"
+     ],
+     "q": "Welches Wort beschreibt am besten, wie du dich gerade fühlst?",
+     "c": "Benenne heute ein Gefühl laut, deins oder eine Vermutung über ein anderes."
+    },
+    "es": {
+     "t": "Ponerle nombre al sentimiento",
+     "g": "Encuentra palabras sencillas para sentimientos cotidianos como orgulloso, cansado, ilusionado o tranquilo.",
+     "p": [
+      "Nombrar un sentimiento facilita compartirlo y entenderlo.",
+      "Las palabras simples funcionan: contento, nervioso, relajado, orgulloso.",
+      "Quien escucha puede ofrecer una palabra con suavidad: '¿Suena como orgullo?'"
+     ],
+     "q": "¿Qué palabra describe mejor cómo te sientes ahora mismo?",
+     "c": "Nombra hoy un sentimiento en voz alta, tuyo o una suposición sobre otro."
+    },
+    "fr": {
+     "t": "Nommer l'émotion",
+     "g": "Trouve des mots simples pour les émotions du quotidien : fier, fatigué, enthousiaste ou calme.",
+     "p": [
+      "Nommer une émotion aide à la partager et à la comprendre.",
+      "Des mots simples suffisent : content, nerveux, détendu, fier.",
+      "Celui qui écoute peut proposer un mot avec douceur : 'On dirait de la fierté ?'"
+     ],
+     "q": "Quel mot décrit le mieux ce que tu ressens en ce moment ?",
+     "c": "Nomme une émotion à voix haute aujourd'hui, la tienne ou une hypothèse sur celle d'un autre."
+    },
+    "it": {
+     "t": "Dare un nome alla sensazione",
+     "g": "Trova parole semplici per i sentimenti di ogni giorno: orgoglioso, stanco, entusiasta o calmo.",
+     "p": [
+      "Dare un nome a un'emozione aiuta a condividerla e a capirla.",
+      "Le parole semplici funzionano: contento, nervoso, rilassato, orgoglioso.",
+      "Chi ascolta può offrire una parola con delicatezza: 'Sembra orgoglio?'"
+     ],
+     "q": "Quale parola descrive meglio come ti senti adesso?",
+     "c": "Nomina oggi un'emozione ad alta voce, tua o ipotizzata su un altro."
+    },
+    "pt": {
+     "t": "Dar nome ao sentimento",
+     "g": "Encontra palavras simples para sentimentos do dia a dia, como orgulhoso, cansado, entusiasmado ou calmo.",
+     "p": [
+      "Dar nome a um sentimento ajuda a partilhá-lo e a compreendê-lo.",
+      "Palavras simples funcionam: contente, nervoso, descontraído, orgulhoso.",
+      "Quem ouve pode oferecer uma palavra com suavidade: 'Parece orgulho?'"
+     ],
+     "q": "Que palavra descreve melhor como te sentes agora?",
+     "c": "Nomeia hoje um sentimento em voz alta, o teu ou um palpite sobre o de outro."
+    },
+    "pt_BR": {
+     "t": "Dar nome ao sentimento",
+     "g": "Encontre palavras simples para sentimentos do dia a dia, como orgulhoso, cansado, animado ou calmo.",
+     "p": [
+      "Dar nome a um sentimento ajuda a compartilhá-lo e a compreendê-lo.",
+      "Palavras simples funcionam: contente, nervoso, relaxado, orgulhoso.",
+      "Quem ouve pode oferecer uma palavra com suavidade: 'Parece orgulho?'"
+     ],
+     "q": "Que palavra descreve melhor como você se sente agora?",
+     "c": "Nomeie hoje um sentimento em voz alta, o seu ou um palpite sobre o de outro."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Favourite places in your town",
+     "g": "Describe a spot you love and what you do there.",
+     "p": [
+      "Places carry memories, so they make rich stories.",
+      "Describing sights, sounds and smells helps listeners picture it.",
+      "Asking about someone's favourite place shows interest in their world."
+     ],
+     "q": "What is a favourite place in your town, and why do you like it?",
+     "c": "Ask someone about their favourite local spot and one thing they do there."
+    },
+    "de": {
+     "t": "Lieblingsorte in deiner Stadt",
+     "g": "Beschreibe einen Ort, den du liebst, und was du dort tust.",
+     "p": [
+      "Orte tragen Erinnerungen und ergeben reiche Geschichten.",
+      "Wer Bilder, Klänge und Gerüche beschreibt, lässt Zuhörer es sich vorstellen.",
+      "Nach dem Lieblingsort zu fragen zeigt Interesse an der Welt des anderen."
+     ],
+     "q": "Was ist ein Lieblingsort in deiner Stadt, und warum magst du ihn?",
+     "c": "Frag jemanden nach seinem lokalen Lieblingsort und was er dort tut."
+    },
+    "es": {
+     "t": "Lugares favoritos de tu ciudad",
+     "g": "Describe un sitio que te encanta y qué haces allí.",
+     "p": [
+      "Los lugares guardan recuerdos, por eso dan buenas historias.",
+      "Describir vistas, sonidos y olores ayuda a imaginarlo.",
+      "Preguntar por el lugar favorito de alguien muestra interés en su mundo."
+     ],
+     "q": "¿Cuál es un lugar favorito de tu ciudad y por qué te gusta?",
+     "c": "Pregunta a alguien por su rincón favorito y qué hace allí."
+    },
+    "fr": {
+     "t": "Tes lieux préférés en ville",
+     "g": "Décris un endroit que tu aimes et ce que tu y fais.",
+     "p": [
+      "Les lieux gardent des souvenirs, ils font de belles histoires.",
+      "Décrire les vues, les sons et les odeurs aide à imaginer.",
+      "Demander son endroit préféré à quelqu'un montre de l'intérêt pour son monde."
+     ],
+     "q": "Quel est un de tes lieux préférés en ville, et pourquoi ?",
+     "c": "Demande à quelqu'un son coin préféré et ce qu'il y fait."
+    },
+    "it": {
+     "t": "Luoghi preferiti della tua città",
+     "g": "Descrivi un posto che ami e cosa fai lì.",
+     "p": [
+      "I luoghi custodiscono ricordi e danno storie ricche.",
+      "Descrivere viste, suoni e profumi aiuta a immaginare.",
+      "Chiedere il luogo preferito mostra interesse per il mondo dell'altro."
+     ],
+     "q": "Qual è un tuo luogo preferito in città, e perché ti piace?",
+     "c": "Chiedi a qualcuno il suo angolo preferito e cosa fa lì."
+    },
+    "pt": {
+     "t": "Lugares preferidos da tua cidade",
+     "g": "Descreve um sítio de que gostas e o que lá fazes.",
+     "p": [
+      "Os lugares guardam memórias, por isso dão boas histórias.",
+      "Descrever vistas, sons e cheiros ajuda a imaginar.",
+      "Perguntar pelo lugar preferido de alguém mostra interesse no seu mundo."
+     ],
+     "q": "Qual é um lugar preferido da tua cidade e porque gostas dele?",
+     "c": "Pergunta a alguém pelo seu cantinho preferido e o que lá faz."
+    },
+    "pt_BR": {
+     "t": "Lugares favoritos da sua cidade",
+     "g": "Descreva um lugar de que você gosta e o que faz lá.",
+     "p": [
+      "Lugares guardam memórias, por isso rendem boas histórias.",
+      "Descrever vistas, sons e cheiros ajuda a imaginar.",
+      "Perguntar pelo lugar favorito de alguém mostra interesse no mundo dele."
+     ],
+     "q": "Qual é um lugar favorito da sua cidade e por que você gosta dele?",
+     "c": "Pergunte a alguém pelo cantinho favorito e o que a pessoa faz lá."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Listening with your whole body",
+     "g": "Use nodding, facing the speaker and relaxed posture as signs of attention.",
+     "p": [
+      "Your body speaks before your words do.",
+      "Turn towards the speaker and keep your arms open and relaxed.",
+      "Small nods say 'I'm following you'."
+     ],
+     "q": "What body signals make you feel someone is listening?",
+     "c": "Face the speaker and nod gently in one conversation today."
+    },
+    "de": {
+     "t": "Mit dem ganzen Körper zuhören",
+     "g": "Nutze Nicken, Zuwendung und entspannte Haltung als Zeichen der Aufmerksamkeit.",
+     "p": [
+      "Dein Körper spricht, bevor deine Worte es tun.",
+      "Wende dich dem Sprecher zu und halte die Arme offen und entspannt.",
+      "Kleines Nicken sagt: 'Ich folge dir'."
+     ],
+     "q": "Welche Körpersignale zeigen dir, dass jemand zuhört?",
+     "c": "Wende dich heute in einem Gespräch zu und nicke sanft."
+    },
+    "es": {
+     "t": "Escuchar con todo el cuerpo",
+     "g": "Usa asentir, mirar a quien habla y una postura relajada como señales de atención.",
+     "p": [
+      "Tu cuerpo habla antes que tus palabras.",
+      "Gírate hacia quien habla y mantén los brazos abiertos y relajados.",
+      "Pequeños gestos de asentir dicen 'te sigo'."
+     ],
+     "q": "¿Qué señales corporales te hacen sentir que alguien escucha?",
+     "c": "Mira de frente a quien habla y asiente suavemente en una charla hoy."
+    },
+    "fr": {
+     "t": "Écouter avec tout le corps",
+     "g": "Utilise hochements de tête, orientation vers l'autre et posture détendue comme signes d'attention.",
+     "p": [
+      "Ton corps parle avant tes mots.",
+      "Tourne-toi vers celui qui parle, bras ouverts et détendus.",
+      "De petits hochements disent 'je te suis'."
+     ],
+     "q": "Quels signaux corporels te montrent que quelqu'un t'écoute ?",
+     "c": "Tourne-toi vers l'interlocuteur et hoche doucement la tête dans une discussion aujourd'hui."
+    },
+    "it": {
+     "t": "Ascoltare con tutto il corpo",
+     "g": "Usa cenni del capo, orientamento verso chi parla e postura rilassata come segni di attenzione.",
+     "p": [
+      "Il tuo corpo parla prima delle tue parole.",
+      "Girati verso chi parla e tieni le braccia aperte e rilassate.",
+      "Piccoli cenni dicono 'ti seguo'."
+     ],
+     "q": "Quali segnali del corpo ti fanno sentire ascoltato?",
+     "c": "Girati verso chi parla e annuisci piano in una conversazione oggi."
+    },
+    "pt": {
+     "t": "Ouvir com o corpo todo",
+     "g": "Usa acenos, estar virado para quem fala e postura descontraída como sinais de atenção.",
+     "p": [
+      "O teu corpo fala antes das tuas palavras.",
+      "Vira-te para quem fala e mantém os braços abertos e descontraídos.",
+      "Pequenos acenos dizem 'estou a acompanhar-te'."
+     ],
+     "q": "Que sinais do corpo te fazem sentir que alguém está a ouvir?",
+     "c": "Vira-te para quem fala e acena suavemente numa conversa hoje."
+    },
+    "pt_BR": {
+     "t": "Ouvir com o corpo todo",
+     "g": "Use acenos de cabeça, ficar de frente para quem fala e postura relaxada como sinais de atenção.",
+     "p": [
+      "Seu corpo fala antes das suas palavras.",
+      "Vire-se para quem fala e mantenha os braços abertos e relaxados.",
+      "Pequenos acenos dizem 'estou acompanhando você'."
+     ],
+     "q": "Que sinais do corpo fazem você sentir que alguém está ouvindo?",
+     "c": "Vire-se para quem fala e acene suavemente numa conversa hoje."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Little wins of the week",
+     "g": "Celebrate small achievements that often go unnoticed.",
+     "p": [
+      "Small wins, like finishing a chore, deserve a cheer too.",
+      "Sharing a win lets someone else celebrate with you.",
+      "Good listeners respond with real enthusiasm."
+     ],
+     "q": "What is one little win from your week?",
+     "c": "Congratulate someone on a small win today and ask how it felt."
+    },
+    "de": {
+     "t": "Kleine Erfolge der Woche",
+     "g": "Feiere kleine Erfolge, die oft unbemerkt bleiben.",
+     "p": [
+      "Kleine Erfolge, wie eine erledigte Aufgabe, verdienen auch einen Jubel.",
+      "Einen Erfolg zu teilen lässt andere mitfeiern.",
+      "Gute Zuhörer reagieren mit echter Begeisterung."
+     ],
+     "q": "Was ist ein kleiner Erfolg deiner Woche?",
+     "c": "Gratuliere heute jemandem zu einem kleinen Erfolg und frag, wie es sich anfühlte."
+    },
+    "es": {
+     "t": "Pequeños logros de la semana",
+     "g": "Celebra pequeños logros que a menudo pasan desapercibidos.",
+     "p": [
+      "Los logros pequeños, como terminar una tarea, merecen un aplauso.",
+      "Compartir un logro deja que otro lo celebre contigo.",
+      "Los buenos oyentes responden con entusiasmo real."
+     ],
+     "q": "¿Cuál es un pequeño logro de tu semana?",
+     "c": "Felicita hoy a alguien por un logro pequeño y pregunta cómo se sintió."
+    },
+    "fr": {
+     "t": "Petites victoires de la semaine",
+     "g": "Célèbre les petites réussites qui passent souvent inaperçues.",
+     "p": [
+      "Les petites victoires, comme finir une corvée, méritent un bravo.",
+      "Partager une réussite permet à un autre de la fêter avec toi.",
+      "Les bons auditeurs répondent avec un vrai enthousiasme."
+     ],
+     "q": "Quelle est une petite victoire de ta semaine ?",
+     "c": "Félicite quelqu'un pour une petite réussite aujourd'hui et demande ce qu'il a ressenti."
+    },
+    "it": {
+     "t": "Piccole vittorie della settimana",
+     "g": "Festeggia i piccoli successi che spesso passano inosservati.",
+     "p": [
+      "Le piccole vittorie, come finire una faccenda, meritano un applauso.",
+      "Condividere una vittoria permette a un altro di festeggiare con te.",
+      "I buoni ascoltatori rispondono con vero entusiasmo."
+     ],
+     "q": "Qual è una piccola vittoria della tua settimana?",
+     "c": "Congratulati oggi con qualcuno per un piccolo successo e chiedi come si è sentito."
+    },
+    "pt": {
+     "t": "Pequenas vitórias da semana",
+     "g": "Celebra pequenas conquistas que muitas vezes passam despercebidas.",
+     "p": [
+      "As pequenas vitórias, como acabar uma tarefa, merecem um aplauso.",
+      "Partilhar uma vitória deixa outro celebrar contigo.",
+      "Os bons ouvintes respondem com entusiasmo genuíno."
+     ],
+     "q": "Qual é uma pequena vitória da tua semana?",
+     "c": "Dá hoje os parabéns a alguém por uma pequena vitória e pergunta como se sentiu."
+    },
+    "pt_BR": {
+     "t": "Pequenas vitórias da semana",
+     "g": "Comemore pequenas conquistas que muitas vezes passam despercebidas.",
+     "p": [
+      "Pequenas vitórias, como terminar uma tarefa, merecem aplausos.",
+      "Compartilhar uma vitória deixa outra pessoa comemorar com você.",
+      "Bons ouvintes respondem com entusiasmo genuíno."
+     ],
+     "q": "Qual é uma pequena vitória da sua semana?",
+     "c": "Dê hoje os parabéns a alguém por uma pequena vitória e pergunte como foi."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Follow-up questions",
+     "g": "Ask one more question about a detail to show genuine interest.",
+     "p": [
+      "A follow-up picks up a detail the speaker just mentioned.",
+      "It shows you heard the specifics, not just the topic.",
+      "One good follow-up is better than three quick questions."
+     ],
+     "q": "If a friend says 'I started pottery', what follow-up would you ask?",
+     "c": "Ask at least one follow-up question in a chat today."
+    },
+    "de": {
+     "t": "Nachfragen",
+     "g": "Stelle eine weitere Frage zu einem Detail, um echtes Interesse zu zeigen.",
+     "p": [
+      "Eine Nachfrage greift ein Detail auf, das gerade genannt wurde.",
+      "Sie zeigt, dass du die Einzelheiten gehört hast, nicht nur das Thema.",
+      "Eine gute Nachfrage ist besser als drei schnelle Fragen."
+     ],
+     "q": "Wenn ein Freund sagt 'Ich habe mit Töpfern angefangen', was fragst du nach?",
+     "c": "Stelle heute in einem Gespräch mindestens eine Nachfrage."
+    },
+    "es": {
+     "t": "Preguntas de seguimiento",
+     "g": "Haz una pregunta más sobre un detalle para mostrar interés genuino.",
+     "p": [
+      "Una pregunta de seguimiento recoge un detalle que acaban de mencionar.",
+      "Muestra que oíste los detalles, no solo el tema.",
+      "Una buena pregunta de seguimiento vale más que tres rápidas."
+     ],
+     "q": "Si un amigo dice 'empecé cerámica', ¿qué preguntarías después?",
+     "c": "Haz al menos una pregunta de seguimiento en una charla hoy."
+    },
+    "fr": {
+     "t": "Questions de relance",
+     "g": "Pose une question de plus sur un détail pour montrer un vrai intérêt.",
+     "p": [
+      "Une relance reprend un détail que l'autre vient de mentionner.",
+      "Elle montre que tu as entendu les détails, pas seulement le sujet.",
+      "Une bonne relance vaut mieux que trois questions rapides."
+     ],
+     "q": "Si un ami dit 'j'ai commencé la poterie', quelle relance poserais-tu ?",
+     "c": "Pose au moins une question de relance dans une discussion aujourd'hui."
+    },
+    "it": {
+     "t": "Domande di approfondimento",
+     "g": "Fai una domanda in più su un dettaglio per mostrare interesse sincero.",
+     "p": [
+      "Una domanda di approfondimento riprende un dettaglio appena detto.",
+      "Mostra che hai sentito i particolari, non solo l'argomento.",
+      "Una buona domanda vale più di tre domande veloci."
+     ],
+     "q": "Se un amico dice 'ho iniziato con la ceramica', cosa chiederesti dopo?",
+     "c": "Fai almeno una domanda di approfondimento in una chiacchierata oggi."
+    },
+    "pt": {
+     "t": "Perguntas de seguimento",
+     "g": "Faz mais uma pergunta sobre um detalhe para mostrar interesse genuíno.",
+     "p": [
+      "Uma pergunta de seguimento retoma um detalhe que acabaram de mencionar.",
+      "Mostra que ouviste os pormenores, não só o tema.",
+      "Uma boa pergunta de seguimento vale mais do que três rápidas."
+     ],
+     "q": "Se um amigo disser 'comecei cerâmica', que pergunta farias a seguir?",
+     "c": "Faz pelo menos uma pergunta de seguimento numa conversa hoje."
+    },
+    "pt_BR": {
+     "t": "Perguntas de acompanhamento",
+     "g": "Faça mais uma pergunta sobre um detalhe para mostrar interesse genuíno.",
+     "p": [
+      "Uma pergunta de acompanhamento retoma um detalhe que acabaram de mencionar.",
+      "Mostra que você ouviu os detalhes, não só o assunto.",
+      "Uma boa pergunta de acompanhamento vale mais que três rápidas."
+     ],
+     "q": "Se um amigo disser 'comecei cerâmica', que pergunta você faria depois?",
+     "c": "Faça pelo menos uma pergunta de acompanhamento numa conversa hoje."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Food that feels like home",
+     "g": "Share a dish that brings good memories and why.",
+     "p": [
+      "Food is full of stories about family, places and celebrations.",
+      "Asking about a dish often unlocks warm memories.",
+      "Listen for who cooked it and when it was eaten."
+     ],
+     "q": "Which dish feels like home to you, and what memory goes with it?",
+     "c": "Ask someone about a comfort dish and who first made it for them."
+    },
+    "de": {
+     "t": "Essen, das sich nach Zuhause anfühlt",
+     "g": "Teile ein Gericht, das gute Erinnerungen weckt, und warum.",
+     "p": [
+      "Essen steckt voller Geschichten über Familie, Orte und Feste.",
+      "Die Frage nach einem Gericht weckt oft warme Erinnerungen.",
+      "Achte darauf, wer es gekocht hat und wann es gegessen wurde."
+     ],
+     "q": "Welches Gericht fühlt sich für dich nach Zuhause an, und welche Erinnerung gehört dazu?",
+     "c": "Frag jemanden nach seinem Wohlfühlgericht und wer es zuerst für ihn kochte."
+    },
+    "es": {
+     "t": "Comida que sabe a hogar",
+     "g": "Comparte un plato que trae buenos recuerdos y por qué.",
+     "p": [
+      "La comida está llena de historias de familia, lugares y celebraciones.",
+      "Preguntar por un plato suele abrir recuerdos cálidos.",
+      "Escucha quién lo cocinaba y cuándo se comía."
+     ],
+     "q": "¿Qué plato te sabe a hogar y qué recuerdo lo acompaña?",
+     "c": "Pregunta a alguien por su plato reconfortante y quién se lo preparó primero."
+    },
+    "fr": {
+     "t": "La cuisine qui rappelle la maison",
+     "g": "Partage un plat qui t'apporte de bons souvenirs et dis pourquoi.",
+     "p": [
+      "La cuisine est pleine d'histoires de famille, de lieux et de fêtes.",
+      "Demander un plat ouvre souvent des souvenirs chaleureux.",
+      "Écoute qui l'a cuisiné et quand on le mangeait."
+     ],
+     "q": "Quel plat te rappelle la maison, et quel souvenir y est lié ?",
+     "c": "Demande à quelqu'un son plat réconfort et qui le lui a préparé la première fois."
+    },
+    "it": {
+     "t": "Il cibo che sa di casa",
+     "g": "Condividi un piatto che porta bei ricordi e spiega perché.",
+     "p": [
+      "Il cibo è pieno di storie di famiglia, luoghi e feste.",
+      "Chiedere di un piatto apre spesso ricordi caldi.",
+      "Ascolta chi lo cucinava e quando lo si mangiava."
+     ],
+     "q": "Quale piatto per te sa di casa, e quale ricordo lo accompagna?",
+     "c": "Chiedi a qualcuno del suo piatto del cuore e chi glielo preparò per primo."
+    },
+    "pt": {
+     "t": "Comida que sabe a casa",
+     "g": "Partilha um prato que traz boas memórias e porquê.",
+     "p": [
+      "A comida está cheia de histórias de família, lugares e festas.",
+      "Perguntar por um prato abre muitas vezes memórias calorosas.",
+      "Repara em quem o cozinhava e quando era comido."
+     ],
+     "q": "Que prato te sabe a casa e que memória o acompanha?",
+     "c": "Pergunta a alguém pelo seu prato reconfortante e quem lho fez primeiro."
+    },
+    "pt_BR": {
+     "t": "Comida com gosto de casa",
+     "g": "Compartilhe um prato que traz boas memórias e por quê.",
+     "p": [
+      "A comida está cheia de histórias de família, lugares e festas.",
+      "Perguntar por um prato muitas vezes abre memórias calorosas.",
+      "Preste atenção em quem cozinhava e quando era comido."
+     ],
+     "q": "Que prato tem gosto de casa para você e que memória vem junto?",
+     "c": "Pergunte a alguém pelo prato reconfortante e quem fez primeiro para a pessoa."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Not interrupting",
+     "g": "Notice the urge to jump in and let the other person finish first.",
+     "p": [
+      "The urge to interrupt is normal; noticing it is the first step.",
+      "Waiting shows respect for the speaker's thoughts.",
+      "Jot down your idea mentally and let it wait."
+     ],
+     "q": "When do you most feel like interrupting someone?",
+     "c": "Let someone fully finish every sentence in one chat today."
+    },
+    "de": {
+     "t": "Nicht unterbrechen",
+     "g": "Bemerke den Drang einzuhaken und lass den anderen zuerst ausreden.",
+     "p": [
+      "Der Drang zu unterbrechen ist normal; ihn zu bemerken ist der erste Schritt.",
+      "Warten zeigt Respekt vor den Gedanken des Sprechers.",
+      "Merke dir deine Idee im Kopf und lass sie warten."
+     ],
+     "q": "Wann hast du am meisten Lust, jemanden zu unterbrechen?",
+     "c": "Lass heute in einem Gespräch jemanden jeden Satz ganz beenden."
+    },
+    "es": {
+     "t": "No interrumpir",
+     "g": "Nota el impulso de intervenir y deja que la otra persona termine primero.",
+     "p": [
+      "El impulso de interrumpir es normal; notarlo es el primer paso.",
+      "Esperar muestra respeto por los pensamientos de quien habla.",
+      "Anota tu idea mentalmente y déjala esperar."
+     ],
+     "q": "¿Cuándo sientes más ganas de interrumpir a alguien?",
+     "c": "Deja que alguien termine cada frase por completo en una charla hoy."
+    },
+    "fr": {
+     "t": "Ne pas interrompre",
+     "g": "Remarque l'envie d'intervenir et laisse l'autre finir d'abord.",
+     "p": [
+      "L'envie d'interrompre est normale ; la remarquer est la première étape.",
+      "Attendre montre du respect pour les pensées de l'autre.",
+      "Note ton idée dans ta tête et laisse-la patienter."
+     ],
+     "q": "Quand as-tu le plus envie d'interrompre quelqu'un ?",
+     "c": "Laisse quelqu'un finir chaque phrase jusqu'au bout dans une discussion aujourd'hui."
+    },
+    "it": {
+     "t": "Non interrompere",
+     "g": "Nota la voglia di intervenire e lascia che l'altro finisca per primo.",
+     "p": [
+      "La voglia di interrompere è normale; notarla è il primo passo.",
+      "Aspettare mostra rispetto per i pensieri di chi parla.",
+      "Annota mentalmente la tua idea e lasciala aspettare."
+     ],
+     "q": "Quando hai più voglia di interrompere qualcuno?",
+     "c": "Lascia che qualcuno finisca ogni frase fino in fondo in una chiacchierata oggi."
+    },
+    "pt": {
+     "t": "Não interromper",
+     "g": "Repara no impulso de intervir e deixa o outro acabar primeiro.",
+     "p": [
+      "O impulso de interromper é normal; reparar nele é o primeiro passo.",
+      "Esperar mostra respeito pelos pensamentos de quem fala.",
+      "Anota mentalmente a tua ideia e deixa-a esperar."
+     ],
+     "q": "Quando sentes mais vontade de interromper alguém?",
+     "c": "Deixa alguém acabar todas as frases por completo numa conversa hoje."
+    },
+    "pt_BR": {
+     "t": "Não interromper",
+     "g": "Perceba a vontade de entrar na conversa e deixe o outro terminar primeiro.",
+     "p": [
+      "A vontade de interromper é normal; perceber isso é o primeiro passo.",
+      "Esperar mostra respeito pelos pensamentos de quem fala.",
+      "Anote mentalmente a sua ideia e deixe-a esperar."
+     ],
+     "q": "Quando você sente mais vontade de interromper alguém?",
+     "c": "Deixe alguém terminar todas as frases por completo numa conversa hoje."
+    }
+   }
+  }
+ ]
+}

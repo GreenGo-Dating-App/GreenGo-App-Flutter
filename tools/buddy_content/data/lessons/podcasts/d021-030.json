@@ -1,0 +1,835 @@
+{
+ "topic": "podcasts",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sports and hobby podcasts",
+     "g": "Enjoy fans talking deeply about the games and crafts they love.",
+     "p": [
+      "Passionate hosts go into details that mainstream coverage skips.",
+      "Hobby shows share tips, mistakes and small victories you can relate to.",
+      "You can enjoy them even if you are new, as good hosts explain the basics."
+     ],
+     "q": "What hobby or sport would you happily listen to for an hour?",
+     "c": "Find a show about a hobby you like and note one tip you could try this week."
+    },
+    "de": {
+     "t": "Sport- und Hobby-Podcasts",
+     "g": "Fans zuhören, die tief über Spiele und Handwerk reden, die sie lieben.",
+     "p": [
+      "Leidenschaftliche Moderierende gehen in Details, die große Medien auslassen.",
+      "Hobby-Sendungen teilen Tipps, Fehler und kleine Erfolge, in denen man sich wiederfindet.",
+      "Auch Neulinge haben Freude, denn gute Hosts erklären die Grundlagen."
+     ],
+     "q": "Über welches Hobby oder welchen Sport würdest du gern eine Stunde lang zuhören?",
+     "c": "Finde eine Sendung zu einem Hobby und notiere einen Tipp für diese Woche."
+    },
+    "es": {
+     "t": "Pódcast de deporte y aficiones",
+     "g": "Disfrutar de aficionados que hablan a fondo de los juegos y oficios que aman.",
+     "p": [
+      "Los presentadores apasionados entran en detalles que otros medios omiten.",
+      "Los programas de aficiones comparten consejos, errores y pequeñas victorias.",
+      "Puedes disfrutarlos aunque seas nuevo, porque buenos presentadores explican lo básico."
+     ],
+     "q": "¿De qué afición o deporte escucharías encantado durante una hora?",
+     "c": "Busca un programa sobre una afición que te guste y apunta un consejo para probar."
+    },
+    "fr": {
+     "t": "Les podcasts de sport et de loisirs",
+     "g": "Écouter des passionnés parler en profondeur des jeux et métiers d'art qu'ils aiment.",
+     "p": [
+      "Des animateurs passionnés entrent dans des détails que les grands médias ignorent.",
+      "Les émissions de loisirs partagent astuces, erreurs et petites victoires.",
+      "On peut les apprécier en débutant, car les bons animateurs expliquent les bases."
+     ],
+     "q": "De quel loisir ou sport écouterais-tu volontiers une heure entière ?",
+     "c": "Trouve une émission sur un loisir qui te plaît et note une astuce à tester."
+    },
+    "it": {
+     "t": "Podcast di sport e hobby",
+     "g": "Ascoltare appassionati che parlano a fondo dei giochi e dei mestieri che amano.",
+     "p": [
+      "Conduttori appassionati entrano in dettagli che i media generalisti saltano.",
+      "I programmi sugli hobby condividono consigli, errori e piccole vittorie.",
+      "Puoi goderteli anche da principiante, perché i bravi conduttori spiegano le basi."
+     ],
+     "q": "Di quale hobby o sport ascolteresti volentieri per un'ora?",
+     "c": "Trova un programma su un hobby che ti piace e annota un consiglio da provare."
+    },
+    "pt": {
+     "t": "Podcasts de desporto e passatempos",
+     "g": "Ouvir fãs a falar a fundo dos jogos e ofícios de que gostam.",
+     "p": [
+      "Apresentadores apaixonados entram em pormenores que os media gerais ignoram.",
+      "Os programas de passatempos partilham dicas, erros e pequenas vitórias.",
+      "Podes apreciá-los mesmo sendo novato, porque bons apresentadores explicam o básico."
+     ],
+     "q": "De que passatempo ou desporto ouvirias com gosto durante uma hora?",
+     "c": "Procura um programa sobre um passatempo teu e anota uma dica para experimentar."
+    },
+    "pt_BR": {
+     "t": "Podcasts de esporte e hobbies",
+     "g": "Ouvir fãs falando a fundo dos jogos e ofícios que amam.",
+     "p": [
+      "Apresentadores apaixonados entram em detalhes que a mídia geral ignora.",
+      "Programas de hobbies compartilham dicas, erros e pequenas vitórias.",
+      "Dá para curtir mesmo sendo iniciante, porque bons apresentadores explicam o básico."
+     ],
+     "q": "De que hobby ou esporte você ouviria com prazer por uma hora?",
+     "c": "Procure um programa sobre um hobby seu e anote uma dica para testar."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Science and tech podcasts",
+     "g": "Hear curious hosts explain discoveries and big ideas clearly.",
+     "p": [
+      "Good science shows turn hard ideas into pictures you can imagine.",
+      "Experts and hosts work together: one knows the facts, one asks what you would ask.",
+      "Remember that science changes as we learn, so listen with an open mind."
+     ],
+     "q": "Which scientific question have you always been curious about?",
+     "c": "Listen to one science episode and explain its main idea in one sentence."
+    },
+    "de": {
+     "t": "Wissenschafts- und Technik-Podcasts",
+     "g": "Neugierigen Moderierenden zuhören, die Entdeckungen und große Ideen klar erklären.",
+     "p": [
+      "Gute Wissenschaftssendungen machen schwere Ideen vorstellbar.",
+      "Experten und Moderation arbeiten zusammen: einer kennt Fakten, einer fragt wie du.",
+      "Wissenschaft verändert sich mit neuem Wissen, höre also mit offenem Geist."
+     ],
+     "q": "Welche wissenschaftliche Frage hat dich schon immer neugierig gemacht?",
+     "c": "Höre eine Wissenschaftsfolge und erkläre ihre Hauptidee in einem Satz."
+    },
+    "es": {
+     "t": "Pódcast de ciencia y tecnología",
+     "g": "Oír a presentadores curiosos explicar descubrimientos e ideas grandes con claridad.",
+     "p": [
+      "Los buenos programas de ciencia convierten ideas difíciles en imágenes imaginables.",
+      "Expertos y presentadores colaboran: uno sabe los datos, otro pregunta lo que tú preguntarías.",
+      "La ciencia cambia al aprender más, así que escucha con la mente abierta."
+     ],
+     "q": "¿Qué pregunta científica siempre te ha dado curiosidad?",
+     "c": "Escucha un episodio de ciencia y explica su idea principal en una frase."
+    },
+    "fr": {
+     "t": "Les podcasts de science et de technologie",
+     "g": "Entendre des animateurs curieux expliquer découvertes et grandes idées clairement.",
+     "p": [
+      "Les bonnes émissions de science transforment des idées difficiles en images faciles à imaginer.",
+      "Experts et animateurs collaborent : l'un connaît les faits, l'autre pose tes questions.",
+      "La science évolue avec les connaissances : écoute l'esprit ouvert."
+     ],
+     "q": "Quelle question scientifique t'a toujours rendu curieux ?",
+     "c": "Écoute un épisode de science et explique son idée principale en une phrase."
+    },
+    "it": {
+     "t": "Podcast di scienza e tecnologia",
+     "g": "Sentire conduttori curiosi spiegare scoperte e grandi idee con chiarezza.",
+     "p": [
+      "I buoni programmi scientifici trasformano idee difficili in immagini che si possono immaginare.",
+      "Esperti e conduttori collaborano: uno conosce i fatti, l'altro chiede ciò che chiederesti tu.",
+      "La scienza cambia man mano che impariamo, quindi ascolta con mente aperta."
+     ],
+     "q": "Quale domanda scientifica ti ha sempre incuriosito?",
+     "c": "Ascolta un episodio di scienza e spiega la sua idea principale in una frase."
+    },
+    "pt": {
+     "t": "Podcasts de ciência e tecnologia",
+     "g": "Ouvir apresentadores curiosos a explicar descobertas e grandes ideias com clareza.",
+     "p": [
+      "Bons programas de ciência transformam ideias difíceis em imagens fáceis de imaginar.",
+      "Especialistas e apresentadores colaboram: um sabe os factos, outro pergunta o que tu perguntarias.",
+      "A ciência muda à medida que aprendemos, por isso ouve de mente aberta."
+     ],
+     "q": "Que pergunta científica sempre te deixou curioso?",
+     "c": "Ouve um episódio de ciência e explica a sua ideia principal numa frase."
+    },
+    "pt_BR": {
+     "t": "Podcasts de ciência e tecnologia",
+     "g": "Ouvir apresentadores curiosos explicando descobertas e grandes ideias com clareza.",
+     "p": [
+      "Bons programas de ciência transformam ideias difíceis em imagens fáceis de imaginar.",
+      "Especialistas e apresentadores colaboram: um sabe os fatos, outro pergunta o que você perguntaria.",
+      "A ciência muda conforme aprendemos, então ouça de mente aberta."
+     ],
+     "q": "Que pergunta científica sempre deixou você curioso?",
+     "c": "Ouça um episódio de ciência e explique a ideia principal em uma frase."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "History podcasts",
+     "g": "Explore the past through short stories and long series.",
+     "p": [
+      "Short episodes tell one event or person in a few minutes.",
+      "Long series follow an era in depth, with sources and many voices.",
+      "Good history shows say what is known and what is still debated."
+     ],
+     "q": "Which period of history would you like to hear about?",
+     "c": "Listen to a history episode and note one date or person worth remembering."
+    },
+    "de": {
+     "t": "Geschichts-Podcasts",
+     "g": "Die Vergangenheit in kurzen Geschichten und langen Serien erkunden.",
+     "p": [
+      "Kurze Folgen erzählen ein Ereignis oder eine Person in wenigen Minuten.",
+      "Lange Serien begleiten eine Epoche ausführlich, mit Quellen und vielen Stimmen.",
+      "Gute Geschichtssendungen sagen, was bekannt ist und was noch diskutiert wird."
+     ],
+     "q": "Über welche Epoche würdest du gern etwas hören?",
+     "c": "Höre eine Geschichtsfolge und notiere ein Datum oder eine Person, die du dir merken willst."
+    },
+    "es": {
+     "t": "Pódcast de historia",
+     "g": "Explorar el pasado con relatos cortos y series largas.",
+     "p": [
+      "Los episodios cortos cuentan un hecho o una persona en pocos minutos.",
+      "Las series largas recorren una época a fondo, con fuentes y muchas voces.",
+      "La buena historia dice qué se sabe y qué aún se debate."
+     ],
+     "q": "¿Sobre qué época te gustaría oír hablar?",
+     "c": "Escucha un episodio de historia y apunta una fecha o persona que valga la pena recordar."
+    },
+    "fr": {
+     "t": "Les podcasts d'histoire",
+     "g": "Explorer le passé avec de courts récits et de longues séries.",
+     "p": [
+      "Les épisodes courts racontent un événement ou une personne en quelques minutes.",
+      "Les longues séries suivent une époque en détail, avec sources et nombreuses voix.",
+      "Une bonne émission d'histoire dit ce qu'on sait et ce qui reste débattu."
+     ],
+     "q": "De quelle période aimerais-tu entendre parler ?",
+     "c": "Écoute un épisode d'histoire et note une date ou une personne à retenir."
+    },
+    "it": {
+     "t": "Podcast di storia",
+     "g": "Esplorare il passato con racconti brevi e serie lunghe.",
+     "p": [
+      "Gli episodi brevi raccontano un evento o una persona in pochi minuti.",
+      "Le serie lunghe seguono un'epoca a fondo, con fonti e molte voci.",
+      "La buona storia dice cosa si sa e cosa è ancora discusso."
+     ],
+     "q": "Di quale periodo storico ti piacerebbe sentir parlare?",
+     "c": "Ascolta un episodio di storia e annota una data o una persona da ricordare."
+    },
+    "pt": {
+     "t": "Podcasts de história",
+     "g": "Explorar o passado com relatos curtos e séries longas.",
+     "p": [
+      "Episódios curtos contam um acontecimento ou uma pessoa em poucos minutos.",
+      "Séries longas percorrem uma época a fundo, com fontes e muitas vozes.",
+      "A boa história diz o que se sabe e o que ainda se debate."
+     ],
+     "q": "Sobre que época gostarias de ouvir falar?",
+     "c": "Ouve um episódio de história e anota uma data ou pessoa que valha a pena lembrar."
+    },
+    "pt_BR": {
+     "t": "Podcasts de história",
+     "g": "Explorar o passado com relatos curtos e séries longas.",
+     "p": [
+      "Episódios curtos contam um acontecimento ou uma pessoa em poucos minutos.",
+      "Séries longas percorrem uma época a fundo, com fontes e muitas vozes.",
+      "A boa história diz o que se sabe e o que ainda se debate."
+     ],
+     "q": "Sobre que época você gostaria de ouvir falar?",
+     "c": "Ouça um episódio de história e anote uma data ou pessoa que vale lembrar."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Food and travel podcasts",
+     "g": "Find shows that make you hungry and ready to pack a bag.",
+     "p": [
+      "Food shows mix recipes, chefs and the stories behind a dish.",
+      "Travel shows paint places with voices, street sounds and local tips.",
+      "Listening can inspire your next meal or your next trip."
+     ],
+     "q": "What dish or place do you wish you could taste or visit right now?",
+     "c": "Listen to a food or travel episode and write down one idea to try or visit."
+    },
+    "de": {
+     "t": "Essens- und Reise-Podcasts",
+     "g": "Sendungen finden, die hungrig machen und Lust aufs Kofferpacken.",
+     "p": [
+      "Essenssendungen mischen Rezepte, Köche und die Geschichten hinter einem Gericht.",
+      "Reisesendungen malen Orte mit Stimmen, Straßenklängen und lokalen Tipps.",
+      "Zuhören kann dein nächstes Essen oder deine nächste Reise inspirieren."
+     ],
+     "q": "Welches Gericht oder welchen Ort würdest du jetzt gern probieren oder besuchen?",
+     "c": "Höre eine Essens- oder Reisefolge und notiere eine Idee zum Ausprobieren."
+    },
+    "es": {
+     "t": "Pódcast de comida y viajes",
+     "g": "Encontrar programas que dan hambre y ganas de hacer la maleta.",
+     "p": [
+      "Los programas de comida mezclan recetas, cocineros y las historias de cada plato.",
+      "Los de viajes pintan lugares con voces, sonidos de calle y consejos locales.",
+      "Escuchar puede inspirar tu próxima comida o tu próximo viaje."
+     ],
+     "q": "¿Qué plato o lugar te gustaría probar o visitar ahora mismo?",
+     "c": "Escucha un episodio de comida o viajes y anota una idea para probar o visitar."
+    },
+    "fr": {
+     "t": "Les podcasts de cuisine et de voyage",
+     "g": "Trouver des émissions qui donnent faim et envie de faire sa valise.",
+     "p": [
+      "Les émissions culinaires mêlent recettes, chefs et histoires derrière un plat.",
+      "Celles de voyage peignent les lieux avec voix, bruits de rue et conseils locaux.",
+      "L'écoute peut inspirer ton prochain repas ou ton prochain voyage."
+     ],
+     "q": "Quel plat ou quel lieu aimerais-tu goûter ou visiter tout de suite ?",
+     "c": "Écoute un épisode de cuisine ou de voyage et note une idée à essayer."
+    },
+    "it": {
+     "t": "Podcast di cucina e viaggi",
+     "g": "Trovare programmi che fanno venire fame e voglia di fare la valigia.",
+     "p": [
+      "I programmi di cucina mescolano ricette, chef e le storie dietro un piatto.",
+      "Quelli di viaggio dipingono i luoghi con voci, suoni di strada e consigli locali.",
+      "Ascoltare può ispirare il tuo prossimo pasto o il tuo prossimo viaggio."
+     ],
+     "q": "Quale piatto o luogo vorresti assaggiare o visitare adesso?",
+     "c": "Ascolta un episodio di cucina o viaggi e annota un'idea da provare."
+    },
+    "pt": {
+     "t": "Podcasts de comida e viagens",
+     "g": "Encontrar programas que dão fome e vontade de fazer as malas.",
+     "p": [
+      "Os programas de comida misturam receitas, cozinheiros e as histórias de cada prato.",
+      "Os de viagens pintam lugares com vozes, sons de rua e dicas locais.",
+      "Ouvir pode inspirar a tua próxima refeição ou a tua próxima viagem."
+     ],
+     "q": "Que prato ou lugar gostarias de provar ou visitar agora mesmo?",
+     "c": "Ouve um episódio de comida ou viagens e anota uma ideia para experimentar."
+    },
+    "pt_BR": {
+     "t": "Podcasts de comida e viagens",
+     "g": "Encontrar programas que dão fome e vontade de fazer as malas.",
+     "p": [
+      "Programas de comida misturam receitas, cozinheiros e as histórias de cada prato.",
+      "Os de viagens pintam lugares com vozes, sons de rua e dicas locais.",
+      "Ouvir pode inspirar a sua próxima refeição ou a sua próxima viagem."
+     ],
+     "q": "Que prato ou lugar você gostaria de provar ou visitar agora mesmo?",
+     "c": "Ouça um episódio de comida ou viagens e anote uma ideia para testar."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Business and career podcasts",
+     "g": "Learn from interviews and practical tips about working life.",
+     "p": [
+      "Interviews with founders and workers share real choices and lessons.",
+      "Practical shows offer short, usable tips on skills and habits.",
+      "Take what fits your situation; no advice suits everyone."
+     ],
+     "q": "What work skill would you like to improve a little each week?",
+     "c": "Listen to one career episode and write down one tip you can try this week."
+    },
+    "de": {
+     "t": "Business- und Karriere-Podcasts",
+     "g": "Aus Interviews und praktischen Tipps zum Berufsleben lernen.",
+     "p": [
+      "Interviews mit Gründern und Beschäftigten teilen echte Entscheidungen und Lehren.",
+      "Praktische Sendungen bieten kurze, nutzbare Tipps zu Fähigkeiten und Gewohnheiten.",
+      "Nimm, was zu deiner Lage passt; kein Rat passt für alle."
+     ],
+     "q": "Welche berufliche Fähigkeit möchtest du jede Woche etwas verbessern?",
+     "c": "Höre eine Karrierefolge und notiere einen Tipp, den du diese Woche testen kannst."
+    },
+    "es": {
+     "t": "Pódcast de negocios y carrera",
+     "g": "Aprender de entrevistas y consejos prácticos sobre la vida laboral.",
+     "p": [
+      "Las entrevistas con fundadores y trabajadores comparten decisiones y lecciones reales.",
+      "Los programas prácticos ofrecen consejos breves y útiles sobre habilidades y hábitos.",
+      "Toma lo que encaje con tu situación; ningún consejo sirve para todos."
+     ],
+     "q": "¿Qué habilidad laboral te gustaría mejorar un poco cada semana?",
+     "c": "Escucha un episodio de carrera y anota un consejo que puedas probar esta semana."
+    },
+    "fr": {
+     "t": "Les podcasts de business et de carrière",
+     "g": "Apprendre grâce à des interviews et conseils pratiques sur la vie professionnelle.",
+     "p": [
+      "Les interviews de fondateurs et de salariés partagent choix réels et leçons.",
+      "Les émissions pratiques offrent de courts conseils utiles sur compétences et habitudes.",
+      "Prends ce qui convient à ta situation : aucun conseil ne convient à tous."
+     ],
+     "q": "Quelle compétence professionnelle aimerais-tu améliorer un peu chaque semaine ?",
+     "c": "Écoute un épisode de carrière et note un conseil à tester cette semaine."
+    },
+    "it": {
+     "t": "Podcast di business e carriera",
+     "g": "Imparare da interviste e consigli pratici sulla vita lavorativa.",
+     "p": [
+      "Le interviste a fondatori e lavoratori condividono scelte e lezioni reali.",
+      "I programmi pratici offrono consigli brevi e utili su competenze e abitudini.",
+      "Prendi ciò che si adatta alla tua situazione: nessun consiglio va bene per tutti."
+     ],
+     "q": "Quale competenza lavorativa vorresti migliorare un po' ogni settimana?",
+     "c": "Ascolta un episodio di carriera e annota un consiglio da provare questa settimana."
+    },
+    "pt": {
+     "t": "Podcasts de negócios e carreira",
+     "g": "Aprender com entrevistas e dicas práticas sobre a vida profissional.",
+     "p": [
+      "Entrevistas com fundadores e trabalhadores partilham escolhas e lições reais.",
+      "Programas práticos oferecem dicas curtas e úteis sobre competências e hábitos.",
+      "Fica com o que serve à tua situação; nenhum conselho serve a todos."
+     ],
+     "q": "Que competência profissional gostarias de melhorar um pouco por semana?",
+     "c": "Ouve um episódio de carreira e anota uma dica para testar esta semana."
+    },
+    "pt_BR": {
+     "t": "Podcasts de negócios e carreira",
+     "g": "Aprender com entrevistas e dicas práticas sobre a vida profissional.",
+     "p": [
+      "Entrevistas com fundadores e trabalhadores compartilham escolhas e lições reais.",
+      "Programas práticos oferecem dicas curtas e úteis sobre habilidades e hábitos.",
+      "Fique com o que serve à sua situação; nenhum conselho serve para todos."
+     ],
+     "q": "Que habilidade profissional você gostaria de melhorar um pouco por semana?",
+     "c": "Ouça um episódio de carreira e anote uma dica para testar esta semana."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kids and family podcasts",
+     "g": "Discover stories, science and quizzes made for young ears.",
+     "p": [
+      "Kids shows use clear speech, fun voices and short episodes.",
+      "Stories and quizzes make long car trips feel shorter.",
+      "Listening together lets adults and children talk about what they heard."
+     ],
+     "q": "What story did you love to hear as a child?",
+     "c": "Play a family-friendly episode and ask a young listener their favourite part."
+    },
+    "de": {
+     "t": "Kinder- und Familien-Podcasts",
+     "g": "Geschichten, Wissen und Quiz für junge Ohren entdecken.",
+     "p": [
+      "Kindersendungen nutzen klare Sprache, lustige Stimmen und kurze Folgen.",
+      "Geschichten und Quiz lassen lange Autofahrten kürzer wirken.",
+      "Gemeinsam hören lässt Erwachsene und Kinder über das Gehörte sprechen."
+     ],
+     "q": "Welche Geschichte hast du als Kind am liebsten gehört?",
+     "c": "Spiele eine familienfreundliche Folge ab und frag ein Kind nach der Lieblingsstelle."
+    },
+    "es": {
+     "t": "Pódcast infantiles y familiares",
+     "g": "Descubrir cuentos, ciencia y concursos pensados para oídos jóvenes.",
+     "p": [
+      "Los programas infantiles usan habla clara, voces divertidas y episodios cortos.",
+      "Los cuentos y los concursos acortan los viajes largos en coche.",
+      "Escuchar juntos permite que adultos y niños hablen de lo que oyeron."
+     ],
+     "q": "¿Qué historia te encantaba oír de niño?",
+     "c": "Pon un episodio familiar y pregunta a un oyente joven cuál fue su parte favorita."
+    },
+    "fr": {
+     "t": "Les podcasts pour enfants et familles",
+     "g": "Découvrir histoires, science et quiz faits pour les jeunes oreilles.",
+     "p": [
+      "Les émissions pour enfants utilisent une parole claire, des voix amusantes et des épisodes courts.",
+      "Histoires et quiz raccourcissent les longs trajets en voiture.",
+      "Écouter ensemble permet aux adultes et aux enfants de parler de ce qu'ils ont entendu."
+     ],
+     "q": "Quelle histoire aimais-tu écouter enfant ?",
+     "c": "Lance un épisode familial et demande à un jeune auditeur son passage préféré."
+    },
+    "it": {
+     "t": "Podcast per bambini e famiglie",
+     "g": "Scoprire storie, scienza e quiz fatti per orecchie giovani.",
+     "p": [
+      "I programmi per bambini usano parlato chiaro, voci divertenti ed episodi brevi.",
+      "Storie e quiz accorciano i lunghi viaggi in auto.",
+      "Ascoltare insieme permette a grandi e piccoli di parlare di ciò che hanno sentito."
+     ],
+     "q": "Quale storia amavi ascoltare da bambino?",
+     "c": "Metti un episodio per famiglie e chiedi a un piccolo ascoltatore la parte preferita."
+    },
+    "pt": {
+     "t": "Podcasts para crianças e famílias",
+     "g": "Descobrir histórias, ciência e jogos de perguntas feitos para ouvidos jovens.",
+     "p": [
+      "Programas infantis usam fala clara, vozes divertidas e episódios curtos.",
+      "Histórias e jogos de perguntas encurtam as viagens longas de carro.",
+      "Ouvir juntos permite que adultos e crianças falem do que ouviram."
+     ],
+     "q": "Que história adoravas ouvir em criança?",
+     "c": "Põe um episódio familiar e pergunta a um ouvinte jovem qual foi a parte preferida."
+    },
+    "pt_BR": {
+     "t": "Podcasts para crianças e famílias",
+     "g": "Descobrir histórias, ciência e jogos de perguntas feitos para ouvidos jovens.",
+     "p": [
+      "Programas infantis usam fala clara, vozes divertidas e episódios curtos.",
+      "Histórias e jogos de perguntas encurtam as viagens longas de carro.",
+      "Ouvir junto permite que adultos e crianças conversem sobre o que ouviram."
+     ],
+     "q": "Que história você adorava ouvir quando criança?",
+     "c": "Toque um episódio familiar e pergunte a um ouvinte jovem qual foi a parte favorita."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Book and film podcasts",
+     "g": "Join reviews, discussions and book clubs just by listening.",
+     "p": [
+      "Hosts discuss plots, themes and craft, often with a spoiler warning.",
+      "Hearing opinions helps you decide what to read or watch next.",
+      "Disagreeing politely with a host is part of the fun."
+     ],
+     "q": "What book or film have you recently enjoyed and why?",
+     "c": "Listen to a review of something you already know and compare it to your opinion."
+    },
+    "de": {
+     "t": "Buch- und Film-Podcasts",
+     "g": "Per Zuhören bei Besprechungen, Diskussionen und Buchclubs dabei sein.",
+     "p": [
+      "Moderierende sprechen über Handlung, Themen und Handwerk, oft mit Spoilerwarnung.",
+      "Meinungen zu hören hilft, zu entscheiden, was du als Nächstes liest oder siehst.",
+      "Höflich anderer Meinung als die Moderation zu sein, gehört zum Spaß."
+     ],
+     "q": "Welches Buch oder welchen Film hast du zuletzt genossen und warum?",
+     "c": "Höre eine Besprechung von etwas, das du kennst, und vergleiche sie mit deiner Meinung."
+    },
+    "es": {
+     "t": "Pódcast de libros y cine",
+     "g": "Unirse a reseñas, debates y clubes de lectura solo escuchando.",
+     "p": [
+      "Los presentadores comentan tramas, temas y oficio, a menudo con aviso de spoilers.",
+      "Oír opiniones ayuda a decidir qué leer o ver después.",
+      "Discrepar con educación del presentador forma parte de la diversión."
+     ],
+     "q": "¿Qué libro o película has disfrutado hace poco y por qué?",
+     "c": "Escucha una reseña de algo que ya conozcas y compárala con tu opinión."
+    },
+    "fr": {
+     "t": "Les podcasts de livres et de cinéma",
+     "g": "Rejoindre critiques, discussions et clubs de lecture rien qu'en écoutant.",
+     "p": [
+      "Les animateurs parlent d'intrigues, de thèmes et de savoir-faire, souvent avec alerte spoiler.",
+      "Entendre des avis aide à choisir quoi lire ou regarder ensuite.",
+      "Être poliment en désaccord avec l'animateur fait partie du plaisir."
+     ],
+     "q": "Quel livre ou film as-tu apprécié récemment, et pourquoi ?",
+     "c": "Écoute une critique d'une œuvre que tu connais et compare-la à ton avis."
+    },
+    "it": {
+     "t": "Podcast di libri e cinema",
+     "g": "Partecipare a recensioni, discussioni e gruppi di lettura solo ascoltando.",
+     "p": [
+      "I conduttori parlano di trame, temi e mestiere, spesso con avviso di spoiler.",
+      "Sentire opinioni aiuta a decidere cosa leggere o guardare dopo.",
+      "Dissentire con garbo dal conduttore fa parte del divertimento."
+     ],
+     "q": "Quale libro o film ti è piaciuto di recente e perché?",
+     "c": "Ascolta una recensione di qualcosa che conosci e confrontala con la tua opinione."
+    },
+    "pt": {
+     "t": "Podcasts de livros e cinema",
+     "g": "Juntar-te a críticas, debates e clubes de leitura só a ouvir.",
+     "p": [
+      "Os apresentadores falam de enredos, temas e ofício, muitas vezes com aviso de spoilers.",
+      "Ouvir opiniões ajuda a decidir o que ler ou ver a seguir.",
+      "Discordar com educação do apresentador faz parte da diversão."
+     ],
+     "q": "Que livro ou filme apreciaste recentemente e porquê?",
+     "c": "Ouve uma crítica de algo que já conheças e compara-a com a tua opinião."
+    },
+    "pt_BR": {
+     "t": "Podcasts de livros e cinema",
+     "g": "Participar de resenhas, debates e clubes de leitura só ouvindo.",
+     "p": [
+      "Os apresentadores falam de enredos, temas e ofício, muitas vezes com aviso de spoiler.",
+      "Ouvir opiniões ajuda a decidir o que ler ou assistir depois.",
+      "Discordar com educação do apresentador faz parte da diversão."
+     ],
+     "q": "Que livro ou filme você curtiu recentemente e por quê?",
+     "c": "Ouça uma resenha de algo que você já conhece e compare com a sua opinião."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Music podcasts",
+     "g": "Explore shows about songs, albums and the stories behind the music.",
+     "p": [
+      "Some shows tell how one song was written and recorded.",
+      "Others interview musicians about their craft and influences.",
+      "Hearing the story can change how you listen to a familiar track."
+     ],
+     "q": "Which song has a story you would love to know?",
+     "c": "Listen to a music episode, then replay the song it talks about."
+    },
+    "de": {
+     "t": "Musik-Podcasts",
+     "g": "Sendungen über Lieder, Alben und die Geschichten hinter der Musik erkunden.",
+     "p": [
+      "Manche Sendungen erzählen, wie ein Lied entstand und aufgenommen wurde.",
+      "Andere befragen Musiker zu Handwerk und Einflüssen.",
+      "Die Geschichte zu kennen kann verändern, wie du ein bekanntes Stück hörst."
+     ],
+     "q": "Zu welchem Lied würdest du gern die Geschichte kennen?",
+     "c": "Höre eine Musikfolge und spiele danach das besprochene Lied noch einmal ab."
+    },
+    "es": {
+     "t": "Pódcast de música",
+     "g": "Explorar programas sobre canciones, discos y las historias tras la música.",
+     "p": [
+      "Algunos programas cuentan cómo se escribió y grabó una canción.",
+      "Otros entrevistan a músicos sobre su oficio e influencias.",
+      "Conocer la historia puede cambiar cómo escuchas un tema conocido."
+     ],
+     "q": "¿De qué canción te encantaría conocer la historia?",
+     "c": "Escucha un episodio de música y vuelve a poner la canción de la que habla."
+    },
+    "fr": {
+     "t": "Les podcasts de musique",
+     "g": "Explorer des émissions sur chansons, albums et histoires derrière la musique.",
+     "p": [
+      "Certaines émissions racontent comment une chanson a été écrite et enregistrée.",
+      "D'autres interrogent des musiciens sur leur art et leurs influences.",
+      "Connaître l'histoire peut changer ta façon d'écouter un morceau connu."
+     ],
+     "q": "De quelle chanson aimerais-tu connaître l'histoire ?",
+     "c": "Écoute un épisode musical, puis réécoute la chanson dont il parle."
+    },
+    "it": {
+     "t": "Podcast di musica",
+     "g": "Esplorare programmi su canzoni, album e le storie dietro la musica.",
+     "p": [
+      "Alcuni programmi raccontano come è nata e come è stata registrata una canzone.",
+      "Altri intervistano musicisti sul loro mestiere e sulle influenze.",
+      "Conoscere la storia può cambiare il modo di ascoltare un brano noto."
+     ],
+     "q": "Di quale canzone vorresti conoscere la storia?",
+     "c": "Ascolta un episodio musicale, poi riascolta la canzone di cui parla."
+    },
+    "pt": {
+     "t": "Podcasts de música",
+     "g": "Explorar programas sobre canções, álbuns e as histórias por trás da música.",
+     "p": [
+      "Alguns programas contam como uma canção foi escrita e gravada.",
+      "Outros entrevistam músicos sobre o seu ofício e influências.",
+      "Conhecer a história pode mudar a forma como ouves um tema conhecido."
+     ],
+     "q": "De que canção gostarias de conhecer a história?",
+     "c": "Ouve um episódio de música e volta a ouvir a canção de que ele fala."
+    },
+    "pt_BR": {
+     "t": "Podcasts de música",
+     "g": "Explorar programas sobre canções, álbuns e as histórias por trás da música.",
+     "p": [
+      "Alguns programas contam como uma canção foi escrita e gravada.",
+      "Outros entrevistam músicos sobre seu ofício e suas influências.",
+      "Conhecer a história pode mudar o jeito de ouvir uma música conhecida."
+     ],
+     "q": "De que canção você gostaria de conhecer a história?",
+     "c": "Ouça um episódio de música e depois ouça de novo a canção de que ele fala."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Wellbeing and lifestyle podcasts",
+     "g": "Find gentle shows about habits, routines and everyday happiness.",
+     "p": [
+      "Lifestyle shows share small ideas for home, habits and curiosity.",
+      "A calm voice and a slow pace can turn listening into a break.",
+      "These shows offer general ideas only, so take what feels right for you."
+     ],
+     "q": "What small habit makes your day better?",
+     "c": "Listen to a gentle lifestyle episode and try one small idea from it."
+    },
+    "de": {
+     "t": "Wohlfühl- und Lifestyle-Podcasts",
+     "g": "Sanfte Sendungen über Gewohnheiten, Routinen und Alltagsglück finden.",
+     "p": [
+      "Lifestyle-Sendungen teilen kleine Ideen für Zuhause, Gewohnheiten und Neugier.",
+      "Eine ruhige Stimme und langsames Tempo machen das Hören zur Pause.",
+      "Diese Sendungen geben nur allgemeine Anregungen, nimm, was sich für dich richtig anfühlt."
+     ],
+     "q": "Welche kleine Gewohnheit macht deinen Tag besser?",
+     "c": "Höre eine sanfte Lifestyle-Folge und probiere eine kleine Idee daraus aus."
+    },
+    "es": {
+     "t": "Pódcast de bienestar y estilo de vida",
+     "g": "Encontrar programas suaves sobre hábitos, rutinas y felicidad cotidiana.",
+     "p": [
+      "Los programas de estilo de vida comparten ideas pequeñas sobre hogar, hábitos y curiosidad.",
+      "Una voz tranquila y un ritmo lento convierten escuchar en una pausa.",
+      "Estos programas dan solo ideas generales: toma lo que te parezca bien."
+     ],
+     "q": "¿Qué pequeño hábito mejora tu día?",
+     "c": "Escucha un episodio suave de estilo de vida y prueba una idea pequeña de él."
+    },
+    "fr": {
+     "t": "Les podcasts de bien-être et de lifestyle",
+     "g": "Trouver des émissions douces sur habitudes, routines et bonheur quotidien.",
+     "p": [
+      "Les émissions lifestyle partagent de petites idées pour la maison, les habitudes et la curiosité.",
+      "Une voix calme et un rythme lent font de l'écoute une pause.",
+      "Ces émissions donnent des idées générales : prends ce qui te convient."
+     ],
+     "q": "Quelle petite habitude améliore ta journée ?",
+     "c": "Écoute un épisode lifestyle tout en douceur et essaie une petite idée."
+    },
+    "it": {
+     "t": "Podcast di benessere e stile di vita",
+     "g": "Trovare programmi gentili su abitudini, routine e felicità quotidiana.",
+     "p": [
+      "I programmi di stile di vita condividono piccole idee su casa, abitudini e curiosità.",
+      "Una voce calma e un ritmo lento trasformano l'ascolto in una pausa.",
+      "Questi programmi danno solo spunti generali: prendi ciò che ti sembra giusto."
+     ],
+     "q": "Quale piccola abitudine migliora la tua giornata?",
+     "c": "Ascolta un episodio gentile di stile di vita e prova una piccola idea."
+    },
+    "pt": {
+     "t": "Podcasts de bem-estar e estilo de vida",
+     "g": "Encontrar programas suaves sobre hábitos, rotinas e felicidade do dia a dia.",
+     "p": [
+      "Programas de estilo de vida partilham ideias pequenas sobre casa, hábitos e curiosidade.",
+      "Uma voz calma e um ritmo lento transformam o ouvir numa pausa.",
+      "Estes programas dão só ideias gerais: fica com o que te parecer bem."
+     ],
+     "q": "Que pequeno hábito melhora o teu dia?",
+     "c": "Ouve um episódio suave de estilo de vida e experimenta uma ideia pequena."
+    },
+    "pt_BR": {
+     "t": "Podcasts de bem-estar e estilo de vida",
+     "g": "Encontrar programas leves sobre hábitos, rotinas e felicidade do dia a dia.",
+     "p": [
+      "Programas de estilo de vida compartilham ideias pequenas sobre casa, hábitos e curiosidade.",
+      "Uma voz calma e um ritmo lento transformam o ouvir numa pausa.",
+      "Esses programas dão só ideias gerais: fique com o que parecer bom para você."
+     ],
+     "q": "Que pequeno hábito melhora o seu dia?",
+     "c": "Ouça um episódio leve de estilo de vida e teste uma ideia pequena."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: the podcast landscape",
+     "g": "Look back at the formats you met and choose your three favourites.",
+     "p": [
+      "You have met interviews, chats, solo shows, stories, drama and teaching shows.",
+      "Each format suits a different mood, length and moment of your day.",
+      "Knowing your favourites makes finding new shows much easier."
+     ],
+     "q": "Which three formats do you enjoy most, and why?",
+     "c": "Write your top three formats and one show you want to try for each."
+    },
+    "de": {
+     "t": "Rückblick: die Podcast-Landschaft",
+     "g": "Auf die gehörten Formate zurückblicken und drei Favoriten wählen.",
+     "p": [
+      "Du kennst jetzt Interviews, Plaudereien, Solo-Shows, Erzählungen, Hörspiele und Lernsendungen.",
+      "Jedes Format passt zu anderer Stimmung, Länge und Tageszeit.",
+      "Wer seine Favoriten kennt, findet neue Sendungen viel leichter."
+     ],
+     "q": "Welche drei Formate magst du am liebsten, und warum?",
+     "c": "Schreibe deine drei Lieblingsformate auf und je eine Sendung zum Ausprobieren."
+    },
+    "es": {
+     "t": "Repaso: el panorama del pódcast",
+     "g": "Mirar atrás a los formatos conocidos y elegir tus tres favoritos.",
+     "p": [
+      "Has conocido entrevistas, charlas, programas en solitario, relatos, ficción y programas educativos.",
+      "Cada formato encaja con un ánimo, una duración y un momento del día.",
+      "Conocer tus favoritos facilita mucho encontrar programas nuevos."
+     ],
+     "q": "¿Cuáles son tus tres formatos preferidos y por qué?",
+     "c": "Escribe tus tres formatos favoritos y un programa que quieras probar de cada uno."
+    },
+    "fr": {
+     "t": "Bilan : le paysage du podcast",
+     "g": "Revenir sur les formats rencontrés et choisir tes trois favoris.",
+     "p": [
+      "Tu as découvert interviews, discussions, solos, récits, fiction et émissions pédagogiques.",
+      "Chaque format convient à une humeur, une durée et un moment de la journée.",
+      "Connaître tes favoris facilite beaucoup la recherche de nouvelles émissions."
+     ],
+     "q": "Quels sont tes trois formats préférés, et pourquoi ?",
+     "c": "Note tes trois formats favoris et une émission à essayer pour chacun."
+    },
+    "it": {
+     "t": "Ripasso: il panorama dei podcast",
+     "g": "Ripensare ai formati incontrati e scegliere i tuoi tre preferiti.",
+     "p": [
+      "Hai conosciuto interviste, chiacchierate, programmi in solitaria, racconti, fiction e programmi didattici.",
+      "Ogni formato si adatta a un umore, una durata e un momento della giornata.",
+      "Conoscere i tuoi preferiti rende molto più facile trovare nuovi programmi."
+     ],
+     "q": "Quali sono i tuoi tre formati preferiti e perché?",
+     "c": "Scrivi i tuoi tre formati preferiti e un programma da provare per ciascuno."
+    },
+    "pt": {
+     "t": "Revisão: o panorama dos podcasts",
+     "g": "Olhar para trás para os formatos conhecidos e escolher os teus três favoritos.",
+     "p": [
+      "Conheceste entrevistas, conversas, programas a solo, relatos, ficção e programas educativos.",
+      "Cada formato serve a um humor, uma duração e um momento do dia.",
+      "Conhecer os teus favoritos facilita muito encontrar programas novos."
+     ],
+     "q": "Quais são os teus três formatos preferidos e porquê?",
+     "c": "Escreve os teus três formatos favoritos e um programa para experimentar em cada."
+    },
+    "pt_BR": {
+     "t": "Revisão: o panorama dos podcasts",
+     "g": "Olhar para trás para os formatos que você conheceu e escolher seus três favoritos.",
+     "p": [
+      "Você conheceu entrevistas, bate-papos, programas solo, relatos, ficção e programas educativos.",
+      "Cada formato combina com um humor, uma duração e um momento do dia.",
+      "Conhecer seus favoritos facilita muito achar programas novos."
+     ],
+     "q": "Quais são seus três formatos preferidos e por quê?",
+     "c": "Escreva seus três formatos favoritos e um programa para testar de cada um."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "music_genres",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rock and roll is born",
+     "g": "See how blues, country and gospel energy fused into rock and roll in the 1950s.",
+     "p": [
+      "Chuck Berry combined guitar riffs with witty stories about teenage life.",
+      "Little Richard brought gospel-style shouting and pounding piano to the dance floor.",
+      "Elvis Presley blended country, blues and gospel and brought rock and roll to a huge audience."
+     ],
+     "q": "Which old rock and roll song still makes you want to move?",
+     "c": "Listen to Johnny B. Goode and spot the guitar riff that opens it."
+    },
+    "de": {
+     "t": "Rock and Roll entsteht",
+     "g": "Sehen, wie Blues-, Country- und Gospel-Energie in den 1950ern zum Rock and Roll verschmolz.",
+     "p": [
+      "Chuck Berry verband Gitarrenriffs mit witzigen Geschichten über das Teenagerleben.",
+      "Little Richard brachte gospelartiges Rufen und hämmernde Klaviere auf die Tanzfläche.",
+      "Elvis Presley mischte Country, Blues und Gospel und brachte den Rock and Roll zu einem riesigen Publikum."
+     ],
+     "q": "Welcher alte Rock-and-Roll-Song bringt dich noch immer in Bewegung?",
+     "c": "Hör Johnny B. Goode und achte auf das Gitarrenriff am Anfang."
+    },
+    "es": {
+     "t": "Nace el rock and roll",
+     "g": "Ver cómo la energía del blues, el country y el góspel se fundió en el rock and roll de los cincuenta.",
+     "p": [
+      "Chuck Berry combinó riffs de guitarra con historias ingeniosas sobre la vida adolescente.",
+      "Little Richard llevó a la pista los gritos al estilo góspel y un piano atronador.",
+      "Elvis Presley mezcló country, blues y góspel y llevó el rock and roll a un público enorme."
+     ],
+     "q": "¿Qué viejo rock and roll todavía te dan ganas de bailar?",
+     "c": "Escucha Johnny B. Goode y localiza el riff de guitarra con el que empieza."
+    },
+    "fr": {
+     "t": "La naissance du rock and roll",
+     "g": "Voir comment l'énergie du blues, de la country et du gospel s'est fondue en rock and roll dans les années 1950.",
+     "p": [
+      "Chuck Berry associe riffs de guitare et histoires pleines d'esprit sur la vie des adolescents.",
+      "Little Richard apporte sur la piste les cris façon gospel et un piano martelé.",
+      "Elvis Presley mêle country, blues et gospel et fait connaître le rock and roll à un immense public."
+     ],
+     "q": "Quel vieux rock and roll vous donne encore envie de bouger ?",
+     "c": "Écoutez Johnny B. Goode et repérez le riff de guitare qui l'ouvre."
+    },
+    "it": {
+     "t": "Nasce il rock and roll",
+     "g": "Vedere come l'energia di blues, country e gospel si fuse nel rock and roll degli anni Cinquanta.",
+     "p": [
+      "Chuck Berry univa riff di chitarra a storie spiritose sulla vita degli adolescenti.",
+      "Little Richard portò in pista urla da gospel e un pianoforte martellante.",
+      "Elvis Presley mescolò country, blues e gospel e portò il rock and roll a un pubblico enorme."
+     ],
+     "q": "Quale vecchio rock and roll ti fa ancora venire voglia di ballare?",
+     "c": "Ascolta Johnny B. Goode e individua il riff di chitarra che lo apre."
+    },
+    "pt": {
+     "t": "Nasce o rock and roll",
+     "g": "Ver como a energia do blues, do country e do gospel se fundiu no rock and roll dos anos 1950.",
+     "p": [
+      "Chuck Berry juntou riffs de guitarra a histórias espirituosas sobre a vida adolescente.",
+      "Little Richard levou à pista gritos ao estilo gospel e um piano estrondoso.",
+      "Elvis Presley misturou country, blues e gospel e levou o rock and roll a um público enorme."
+     ],
+     "q": "Que velho rock and roll ainda te dá vontade de dançar?",
+     "c": "Ouve Johnny B. Goode e identifica o riff de guitarra que a abre."
+    },
+    "pt_BR": {
+     "t": "Nasce o rock and roll",
+     "g": "Ver como a energia do blues, do country e do gospel se fundiu no rock and roll dos anos 1950.",
+     "p": [
+      "Chuck Berry juntou riffs de guitarra a histórias espirituosas sobre a vida adolescente.",
+      "Little Richard levou para a pista gritos no estilo gospel e um piano estrondoso.",
+      "Elvis Presley misturou country, blues e gospel e levou o rock and roll a um público enorme."
+     ],
+     "q": "Que velho rock and roll ainda te dá vontade de dançar?",
+     "c": "Escute Johnny B. Goode e identifique o riff de guitarra que abre a música."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Doo-wop and vocal groups",
+     "g": "Enjoy the sweet harmonies of 1950s street-corner vocal groups.",
+     "p": [
+      "Doo-wop groups sang close harmony, often with nonsense syllables like doo-wop behind a lead voice.",
+      "The style grew in cities like New York, Philadelphia and Chicago, often with little or no instruments.",
+      "Groups such as The Platters and The Drifters made smooth vocal harmony popular."
+     ],
+     "q": "Have you ever harmonised with friends, even just for fun?",
+     "c": "Listen to a doo-wop song and pick out the bass voice, the lead and the backing."
+    },
+    "de": {
+     "t": "Doo-Wop und Vokalgruppen",
+     "g": "Die süßen Harmonien der Vokalgruppen der 1950er von der Straßenecke genießen.",
+     "p": [
+      "Doo-Wop-Gruppen sangen enge Harmonien, oft mit Silben wie doo-wop hinter einer Leadstimme.",
+      "Der Stil wuchs in Städten wie New York, Philadelphia und Chicago, oft mit wenig oder ohne Instrumente.",
+      "Gruppen wie The Platters und The Drifters machten weichen Vokalsatz beliebt."
+     ],
+     "q": "Hast du schon mit Freunden mehrstimmig gesungen, und sei es nur zum Spaß?",
+     "c": "Hör einen Doo-Wop-Song und finde Bassstimme, Leadstimme und Begleitung heraus."
+    },
+    "es": {
+     "t": "Doo-wop y grupos vocales",
+     "g": "Disfrutar de las dulces armonías de los grupos vocales de esquina de los cincuenta.",
+     "p": [
+      "Los grupos de doo-wop cantaban armonías cerradas, a menudo con sílabas como doo-wop tras una voz solista.",
+      "El estilo creció en ciudades como Nueva York, Filadelfia y Chicago, a menudo con pocos o ningún instrumento.",
+      "Grupos como The Platters y The Drifters popularizaron la armonía vocal suave."
+     ],
+     "q": "¿Has hecho armonías con amigos, aunque fuera por diversión?",
+     "c": "Escucha una canción de doo-wop y distingue la voz grave, la solista y los coros."
+    },
+    "fr": {
+     "t": "Doo-wop et groupes vocaux",
+     "g": "Savourer les douces harmonies des groupes vocaux de coin de rue des années 1950.",
+     "p": [
+      "Les groupes de doo-wop chantaient en harmonies serrées, souvent avec des syllabes comme doo-wop derrière un chanteur soliste.",
+      "Le style est né dans des villes comme New York, Philadelphie et Chicago, souvent avec peu ou pas d'instruments.",
+      "Des groupes comme The Platters et The Drifters ont popularisé l'harmonie vocale lisse."
+     ],
+     "q": "Avez-vous déjà chanté à plusieurs voix avec des amis, ne serait-ce que pour le plaisir ?",
+     "c": "Écoutez un doo-wop et repérez la voix de basse, la voix principale et les chœurs."
+    },
+    "it": {
+     "t": "Doo-wop e gruppi vocali",
+     "g": "Godersi le dolci armonie dei gruppi vocali da angolo di strada degli anni Cinquanta.",
+     "p": [
+      "I gruppi doo-wop cantavano armonie strette, spesso con sillabe come doo-wop dietro una voce solista.",
+      "Lo stile crebbe in città come New York, Filadelfia e Chicago, spesso con pochi o nessuno strumento.",
+      "Gruppi come The Platters e The Drifters resero popolare l'armonia vocale morbida."
+     ],
+     "q": "Hai mai armonizzato con gli amici, anche solo per gioco?",
+     "c": "Ascolta un brano doo-wop e individua la voce di basso, la voce solista e i cori."
+    },
+    "pt": {
+     "t": "Doo-wop e grupos vocais",
+     "g": "Apreciar as doces harmonias dos grupos vocais de esquina dos anos 1950.",
+     "p": [
+      "Os grupos de doo-wop cantavam em harmonia fechada, muitas vezes com sílabas como doo-wop atrás de uma voz solista.",
+      "O estilo cresceu em cidades como Nova Iorque, Filadélfia e Chicago, muitas vezes com poucos ou nenhuns instrumentos.",
+      "Grupos como The Platters e The Drifters popularizaram a harmonia vocal suave."
+     ],
+     "q": "Já fizeste harmonias com amigos, mesmo só por diversão?",
+     "c": "Ouve uma canção de doo-wop e distingue a voz grave, a solista e os coros."
+    },
+    "pt_BR": {
+     "t": "Doo-wop e grupos vocais",
+     "g": "Curtir as doces harmonias dos grupos vocais de esquina dos anos 1950.",
+     "p": [
+      "Os grupos de doo-wop cantavam em harmonia fechada, muitas vezes com sílabas como doo-wop atrás de uma voz solista.",
+      "O estilo cresceu em cidades como Nova York, Filadélfia e Chicago, muitas vezes com poucos ou nenhum instrumento.",
+      "Grupos como The Platters e The Drifters popularizaram a harmonia vocal suave."
+     ],
+     "q": "Você já fez harmonias com amigos, mesmo só por diversão?",
+     "c": "Escute uma música de doo-wop e distinga a voz grave, a solista e os coros."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Soul music",
+     "g": "Hear how gospel feeling entered popular song to create soul.",
+     "p": [
+      "Ray Charles blended gospel sound with secular lyrics in the 1950s, a key step toward soul.",
+      "Aretha Franklin, the Queen of Soul, sang with unmatched power and emotion.",
+      "Otis Redding and Sam Cooke added raw feeling, with horns, organ and rhythm tight behind them."
+     ],
+     "q": "What makes a singer sound truly sincere to you?",
+     "c": "Listen to Respect by Aretha Franklin and notice the backing singers."
+    },
+    "de": {
+     "t": "Soulmusik",
+     "g": "Hören, wie Gospelgefühl in den Popsong kam und den Soul schuf.",
+     "p": [
+      "Ray Charles verband in den 1950ern Gospelklang mit weltlichen Texten, ein Schlüsselschritt zum Soul.",
+      "Aretha Franklin, die Queen of Soul, sang mit unerreichter Kraft und Gefühl.",
+      "Otis Redding und Sam Cooke brachten rohe Gefühle ein, mit Bläsern, Orgel und knappem Rhythmus."
+     ],
+     "q": "Was lässt einen Sänger für dich wirklich aufrichtig klingen?",
+     "c": "Hör Respect von Aretha Franklin und achte auf die Background-Sängerinnen."
+    },
+    "es": {
+     "t": "Música soul",
+     "g": "Oír cómo el sentimiento del góspel entró en la canción popular y creó el soul.",
+     "p": [
+      "Ray Charles mezcló en los cincuenta el sonido góspel con letras profanas, un paso clave hacia el soul.",
+      "Aretha Franklin, la Reina del Soul, cantaba con una fuerza y emoción incomparables.",
+      "Otis Redding y Sam Cooke añadieron sentimiento crudo, con metales, órgano y un ritmo compacto."
+     ],
+     "q": "¿Qué hace que un cantante te suene de verdad sincero?",
+     "c": "Escucha Respect de Aretha Franklin y fíjate en los coros."
+    },
+    "fr": {
+     "t": "La musique soul",
+     "g": "Entendre comment l'émotion du gospel est entrée dans la chanson populaire pour créer la soul.",
+     "p": [
+      "Ray Charles mêle dans les années 1950 le son gospel à des paroles profanes, étape clé vers la soul.",
+      "Aretha Franklin, la reine de la soul, chantait avec une puissance et une émotion inégalées.",
+      "Otis Redding et Sam Cooke ajoutent une émotion brute, avec cuivres, orgue et rythmique serrée."
+     ],
+     "q": "Qu'est-ce qui rend un chanteur vraiment sincère à vos oreilles ?",
+     "c": "Écoutez Respect d'Aretha Franklin et remarquez les choristes."
+    },
+    "it": {
+     "t": "La musica soul",
+     "g": "Sentire come il sentimento del gospel entrò nella canzone popolare e creò il soul.",
+     "p": [
+      "Ray Charles negli anni Cinquanta unì il suono gospel a testi profani, passo chiave verso il soul.",
+      "Aretha Franklin, la regina del soul, cantava con una potenza ed emozione ineguagliabili.",
+      "Otis Redding e Sam Cooke aggiunsero sentimento grezzo, con fiati, organo e ritmica compatta."
+     ],
+     "q": "Cosa rende un cantante davvero sincero per te?",
+     "c": "Ascolta Respect di Aretha Franklin e nota le voci di accompagnamento."
+    },
+    "pt": {
+     "t": "A música soul",
+     "g": "Ouvir como o sentimento do gospel entrou na canção popular e criou o soul.",
+     "p": [
+      "Ray Charles misturou nos anos 1950 o som gospel com letras profanas, um passo chave para o soul.",
+      "Aretha Franklin, a Rainha do Soul, cantava com uma força e emoção inigualáveis.",
+      "Otis Redding e Sam Cooke acrescentaram sentimento cru, com metais, órgão e ritmo compacto."
+     ],
+     "q": "O que faz um cantor soar mesmo sincero para ti?",
+     "c": "Ouve Respect de Aretha Franklin e repara nos coros."
+    },
+    "pt_BR": {
+     "t": "A música soul",
+     "g": "Ouvir como o sentimento do gospel entrou na canção popular e criou o soul.",
+     "p": [
+      "Ray Charles misturou nos anos 1950 o som gospel com letras profanas, um passo chave para o soul.",
+      "Aretha Franklin, a Rainha do Soul, cantava com uma força e emoção incomparáveis.",
+      "Otis Redding e Sam Cooke acrescentaram sentimento cru, com metais, órgão e ritmo compacto."
+     ],
+     "q": "O que faz um cantor soar realmente sincero para você?",
+     "c": "Escute Respect de Aretha Franklin e note os backing vocals."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Motown, the hit factory",
+     "g": "Learn how Motown polished soul into pop for everyone.",
+     "p": [
+      "Berry Gordy founded Motown in Detroit in 1959 and ran it like a creative factory.",
+      "House musicians, the Funk Brothers, played on countless records with melodic bass and tambourine.",
+      "Artists like The Supremes, The Temptations, Marvin Gaye and Stevie Wonder became household names."
+     ],
+     "q": "Which Motown song do you know by heart?",
+     "c": "Listen to a Motown hit and follow the bass line instead of the voice."
+    },
+    "de": {
+     "t": "Motown, die Hitfabrik",
+     "g": "Lernen, wie Motown Soul zu Pop für alle polierte.",
+     "p": [
+      "Berry Gordy gründete Motown 1959 in Detroit und führte es wie eine kreative Fabrik.",
+      "Hausmusiker, die Funk Brothers, spielten auf unzähligen Aufnahmen mit melodischem Bass und Tamburin.",
+      "Künstler wie The Supremes, The Temptations, Marvin Gaye und Stevie Wonder wurden zu bekannten Namen."
+     ],
+     "q": "Welchen Motown-Song kennst du auswendig?",
+     "c": "Hör einen Motown-Hit und folge der Basslinie statt der Stimme."
+    },
+    "es": {
+     "t": "Motown, la fábrica de éxitos",
+     "g": "Aprender cómo Motown pulió el soul para convertirlo en pop para todos.",
+     "p": [
+      "Berry Gordy fundó Motown en Detroit en 1959 y la dirigió como una fábrica creativa.",
+      "Los músicos de la casa, los Funk Brothers, tocaron en incontables discos con bajo melódico y pandereta.",
+      "Artistas como The Supremes, The Temptations, Marvin Gaye y Stevie Wonder se hicieron muy populares."
+     ],
+     "q": "¿Qué canción de Motown te sabes de memoria?",
+     "c": "Escucha un éxito de Motown y sigue la línea de bajo en vez de la voz."
+    },
+    "fr": {
+     "t": "Motown, l'usine à tubes",
+     "g": "Apprendre comment Motown a poli la soul pour en faire une pop pour tous.",
+     "p": [
+      "Berry Gordy fonde Motown à Détroit en 1959 et la dirige comme une usine créative.",
+      "Les musiciens maison, les Funk Brothers, jouent sur d'innombrables disques avec basse mélodique et tambourin.",
+      "Des artistes comme The Supremes, The Temptations, Marvin Gaye et Stevie Wonder deviennent célèbres."
+     ],
+     "q": "Quelle chanson Motown connaissez-vous par cœur ?",
+     "c": "Écoutez un tube Motown et suivez la ligne de basse plutôt que la voix."
+    },
+    "it": {
+     "t": "La Motown, la fabbrica di successi",
+     "g": "Imparare come la Motown rese il soul un pop per tutti.",
+     "p": [
+      "Berry Gordy fondò la Motown a Detroit nel 1959 e la gestì come una fabbrica creativa.",
+      "I musicisti di casa, i Funk Brothers, suonarono in innumerevoli dischi con basso melodico e tamburello.",
+      "Artisti come The Supremes, The Temptations, Marvin Gaye e Stevie Wonder divennero nomi famosi."
+     ],
+     "q": "Quale canzone Motown conosci a memoria?",
+     "c": "Ascolta un successo Motown e segui la linea di basso invece della voce."
+    },
+    "pt": {
+     "t": "A Motown, a fábrica de êxitos",
+     "g": "Aprender como a Motown poliu o soul e o fez pop para todos.",
+     "p": [
+      "Berry Gordy fundou a Motown em Detroit em 1959 e geriu-a como uma fábrica criativa.",
+      "Os músicos da casa, os Funk Brothers, tocaram em incontáveis discos com baixo melódico e pandeireta.",
+      "Artistas como The Supremes, The Temptations, Marvin Gaye e Stevie Wonder tornaram-se muito populares."
+     ],
+     "q": "Que canção da Motown sabes de cor?",
+     "c": "Ouve um êxito da Motown e segue a linha de baixo em vez da voz."
+    },
+    "pt_BR": {
+     "t": "A Motown, a fábrica de sucessos",
+     "g": "Aprender como a Motown poliu o soul e o transformou em pop para todos.",
+     "p": [
+      "Berry Gordy fundou a Motown em Detroit em 1959 e a dirigiu como uma fábrica criativa.",
+      "Os músicos da casa, os Funk Brothers, tocaram em incontáveis discos com baixo melódico e pandeiro.",
+      "Artistas como The Supremes, The Temptations, Marvin Gaye e Stevie Wonder se tornaram muito conhecidos."
+     ],
+     "q": "Qual música da Motown você sabe de cor?",
+     "c": "Escute um sucesso da Motown e acompanhe a linha de baixo em vez da voz."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Funk and the power of the groove",
+     "g": "Understand how funk makes rhythm the star of the song.",
+     "p": [
+      "James Brown shifted the accent to the first beat, called the one, in the mid 1960s.",
+      "Funk uses short, repeated bass lines, choppy guitar and tight drums locked into a groove.",
+      "Later bands such as Parliament-Funkadelic and Earth, Wind and Fire built on this foundation."
+     ],
+     "q": "Do you tap along with the bass or the drums first, and why?",
+     "c": "Listen to a funk track and try to tap exactly on the one each bar."
+    },
+    "de": {
+     "t": "Funk und die Kraft des Grooves",
+     "g": "Verstehen, wie Funk den Rhythmus zum Star des Liedes macht.",
+     "p": [
+      "James Brown verlegte Mitte der 1960er den Akzent auf den ersten Schlag, die Eins.",
+      "Funk nutzt kurze, wiederholte Basslinien, knackige Gitarre und straffes Schlagzeug im Groove.",
+      "Spätere Bands wie Parliament-Funkadelic und Earth, Wind and Fire bauten darauf auf."
+     ],
+     "q": "Klopfst du zuerst zum Bass oder zum Schlagzeug mit, und warum?",
+     "c": "Hör einen Funk-Track und versuche, in jedem Takt genau auf die Eins zu klopfen."
+    },
+    "es": {
+     "t": "Funk y el poder del groove",
+     "g": "Entender cómo el funk convierte el ritmo en protagonista de la canción.",
+     "p": [
+      "James Brown trasladó a mediados de los sesenta el acento al primer tiempo, llamado the one.",
+      "El funk usa líneas de bajo cortas y repetidas, guitarra entrecortada y batería ajustada en el groove.",
+      "Bandas posteriores como Parliament-Funkadelic y Earth, Wind and Fire se basaron en ello."
+     ],
+     "q": "¿Sigues primero el bajo o la batería con el pie y por qué?",
+     "c": "Escucha un tema de funk e intenta marcar justo el primer tiempo de cada compás."
+    },
+    "fr": {
+     "t": "Le funk et la puissance du groove",
+     "g": "Comprendre comment le funk fait du rythme la vedette de la chanson.",
+     "p": [
+      "James Brown déplace au milieu des années 1960 l'accent sur le premier temps, appelé the one.",
+      "Le funk utilise des lignes de basse courtes et répétées, une guitare hachée et une batterie serrée dans le groove.",
+      "Des groupes comme Parliament-Funkadelic et Earth, Wind and Fire ont prolongé ce modèle."
+     ],
+     "q": "Marquez-vous d'abord la basse ou la batterie du pied, et pourquoi ?",
+     "c": "Écoutez un morceau funk et essayez de frapper exactement le premier temps de chaque mesure."
+    },
+    "it": {
+     "t": "Il funk e la forza del groove",
+     "g": "Capire come il funk fa del ritmo il protagonista della canzone.",
+     "p": [
+      "James Brown a metà anni Sessanta spostò l'accento sul primo battito, detto the one.",
+      "Il funk usa linee di basso brevi e ripetute, chitarra spezzata e batteria serrata nel groove.",
+      "Band successive come Parliament-Funkadelic e Earth, Wind and Fire costruirono su questa base."
+     ],
+     "q": "Segui col piede prima il basso o la batteria, e perché?",
+     "c": "Ascolta un brano funk e prova a battere esattamente sul primo tempo di ogni battuta."
+    },
+    "pt": {
+     "t": "O funk e a força do groove",
+     "g": "Perceber como o funk faz do ritmo a estrela da canção.",
+     "p": [
+      "James Brown deslocou a meio dos anos 1960 o acento para o primeiro tempo, chamado the one.",
+      "O funk usa linhas de baixo curtas e repetidas, guitarra cortada e bateria apertada no groove.",
+      "Bandas posteriores como Parliament-Funkadelic e Earth, Wind and Fire basearam-se nisto."
+     ],
+     "q": "Marcas primeiro o baixo ou a bateria com o pé e porquê?",
+     "c": "Ouve um tema de funk e tenta bater exatamente no primeiro tempo de cada compasso."
+    },
+    "pt_BR": {
+     "t": "O funk e a força do groove",
+     "g": "Entender como o funk faz do ritmo a estrela da música.",
+     "p": [
+      "James Brown deslocou, em meados dos anos 1960, o acento para o primeiro tempo, chamado the one.",
+      "O funk usa linhas de baixo curtas e repetidas, guitarra picotada e bateria apertada no groove.",
+      "Bandas posteriores como Parliament-Funkadelic e Earth, Wind and Fire se basearam nisso."
+     ],
+     "q": "Você acompanha primeiro o baixo ou a bateria com o pé e por quê?",
+     "c": "Escute uma faixa de funk e tente bater exatamente no primeiro tempo de cada compasso."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The British Invasion",
+     "g": "See how British bands reshaped rock in the 1960s.",
+     "p": [
+      "The Beatles, from Liverpool, arrived in the United States in 1964 and sparked worldwide fame.",
+      "The Rolling Stones drew deeply on Chicago blues and gave rock a rougher edge.",
+      "British bands often reinterpreted American blues and rock and roll, then sent it back changed."
+     ],
+     "q": "Do you prefer the Beatles' melodies or the Stones' grit, or both?",
+     "c": "Listen to one Beatles song and one Rolling Stones song and compare the vocals."
+    },
+    "de": {
+     "t": "Die British Invasion",
+     "g": "Sehen, wie britische Bands den Rock der 1960er neu prägten.",
+     "p": [
+      "Die Beatles aus Liverpool kamen 1964 in die USA und lösten weltweiten Ruhm aus.",
+      "Die Rolling Stones schöpften stark aus dem Chicago-Blues und gaben dem Rock mehr Rauheit.",
+      "Britische Bands deuteten amerikanischen Blues und Rock and Roll oft neu und schickten ihn verwandelt zurück."
+     ],
+     "q": "Magst du lieber die Melodien der Beatles oder den Biss der Stones, oder beides?",
+     "c": "Hör einen Beatles- und einen Stones-Song und vergleiche den Gesang."
+    },
+    "es": {
+     "t": "La invasión británica",
+     "g": "Ver cómo las bandas británicas remodelaron el rock en los sesenta.",
+     "p": [
+      "Los Beatles, de Liverpool, llegaron a Estados Unidos en 1964 y desataron la fama mundial.",
+      "Los Rolling Stones bebieron del blues de Chicago y dieron al rock un filo más áspero.",
+      "Las bandas británicas reinterpretaban el blues y el rock and roll estadounidenses y los devolvían transformados."
+     ],
+     "q": "¿Prefieres las melodías de los Beatles o el carácter de los Stones, o ambos?",
+     "c": "Escucha una canción de los Beatles y otra de los Stones y compara las voces."
+    },
+    "fr": {
+     "t": "La British Invasion",
+     "g": "Voir comment les groupes britanniques ont remodelé le rock dans les années 1960.",
+     "p": [
+      "Les Beatles, de Liverpool, arrivent aux États-Unis en 1964 et déclenchent une célébrité mondiale.",
+      "Les Rolling Stones puisent dans le blues de Chicago et donnent au rock un côté plus rugueux.",
+      "Les groupes britanniques réinterprétaient le blues et le rock and roll américains avant de les renvoyer transformés."
+     ],
+     "q": "Préférez-vous les mélodies des Beatles ou le mordant des Stones, ou les deux ?",
+     "c": "Écoutez une chanson des Beatles et une des Stones et comparez les voix."
+    },
+    "it": {
+     "t": "La British Invasion",
+     "g": "Vedere come le band britanniche rimodellarono il rock negli anni Sessanta.",
+     "p": [
+      "I Beatles, di Liverpool, arrivarono negli Stati Uniti nel 1964 e scatenarono una fama mondiale.",
+      "I Rolling Stones attinsero molto al blues di Chicago e diedero al rock un taglio più ruvido.",
+      "Le band britanniche reinterpretavano blues e rock and roll americani e li rimandavano trasformati."
+     ],
+     "q": "Preferisci le melodie dei Beatles o la grinta degli Stones, o entrambi?",
+     "c": "Ascolta un brano dei Beatles e uno degli Stones e confronta le voci."
+    },
+    "pt": {
+     "t": "A British Invasion",
+     "g": "Ver como as bandas britânicas remodelaram o rock nos anos 1960.",
+     "p": [
+      "Os Beatles, de Liverpool, chegaram aos Estados Unidos em 1964 e desencadearam fama mundial.",
+      "Os Rolling Stones beberam muito do blues de Chicago e deram ao rock um toque mais áspero.",
+      "As bandas britânicas reinterpretavam o blues e o rock and roll americanos e devolviam-nos transformados."
+     ],
+     "q": "Preferes as melodias dos Beatles ou a garra dos Stones, ou ambos?",
+     "c": "Ouve uma canção dos Beatles e uma dos Stones e compara as vozes."
+    },
+    "pt_BR": {
+     "t": "A British Invasion",
+     "g": "Ver como as bandas britânicas remodelaram o rock nos anos 1960.",
+     "p": [
+      "Os Beatles, de Liverpool, chegaram aos Estados Unidos em 1964 e desencadearam fama mundial.",
+      "Os Rolling Stones beberam muito do blues de Chicago e deram ao rock um toque mais áspero.",
+      "As bandas britânicas reinterpretavam o blues e o rock and roll americanos e os devolviam transformados."
+     ],
+     "q": "Você prefere as melodias dos Beatles ou a pegada dos Stones, ou ambos?",
+     "c": "Escute uma música dos Beatles e uma dos Stones e compare os vocais."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Folk revival and singer-songwriters",
+     "g": "Explore acoustic guitars and personal lyrics from the folk revival.",
+     "p": [
+      "The 1960s folk revival brought traditional songs and new ones to coffee houses and festivals.",
+      "Joan Baez sang with a clear soprano, while Bob Dylan wrote songs that changed what lyrics could be.",
+      "Joni Mitchell used open guitar tunings and poetic, personal storytelling."
+     ],
+     "q": "Do you value lyrics or melody more, and what is a lyric you love?",
+     "c": "Read the words of a folk song as a poem, then listen to how the music changes them."
+    },
+    "de": {
+     "t": "Folk-Revival und Liedermacher",
+     "g": "Akustikgitarren und persönliche Texte des Folk-Revivals erkunden.",
+     "p": [
+      "Das Folk-Revival der 1960er brachte traditionelle und neue Lieder in Cafés und auf Festivals.",
+      "Joan Baez sang mit klarem Sopran, Bob Dylan schrieb Lieder, die veränderten, was Texte sein konnten.",
+      "Joni Mitchell nutzte offene Gitarrenstimmungen und poetisches, persönliches Erzählen."
+     ],
+     "q": "Sind dir Texte oder Melodien wichtiger, und welche Zeile liebst du?",
+     "c": "Lies den Text eines Folksongs wie ein Gedicht und hör dann, wie die Musik ihn verändert."
+    },
+    "es": {
+     "t": "Renacer del folk y cantautores",
+     "g": "Explorar guitarras acústicas y letras personales del renacimiento del folk.",
+     "p": [
+      "El renacer del folk de los sesenta llevó canciones tradicionales y nuevas a cafés y festivales.",
+      "Joan Baez cantaba con un soprano claro, y Bob Dylan escribió canciones que cambiaron lo que podía ser una letra.",
+      "Joni Mitchell usó afinaciones abiertas de guitarra y una narración poética y personal."
+     ],
+     "q": "¿Valoras más la letra o la melodía y qué verso te encanta?",
+     "c": "Lee la letra de una canción folk como un poema y escucha cómo la música la transforma."
+    },
+    "fr": {
+     "t": "Le revival folk et les auteurs-compositeurs",
+     "g": "Explorer les guitares acoustiques et les textes personnels du revival folk.",
+     "p": [
+      "Le revival folk des années 1960 amène chansons traditionnelles et nouvelles dans les cafés et les festivals.",
+      "Joan Baez chantait d'un soprano clair, et Bob Dylan écrivit des chansons qui changèrent ce que pouvaient être des paroles.",
+      "Joni Mitchell utilisait des accordages ouverts et un récit poétique et personnel."
+     ],
+     "q": "Accordez-vous plus d'importance aux paroles ou à la mélodie, et quel texte aimez-vous ?",
+     "c": "Lisez les paroles d'une chanson folk comme un poème, puis écoutez comment la musique les transforme."
+    },
+    "it": {
+     "t": "Folk revival e cantautori",
+     "g": "Esplorare chitarre acustiche e testi personali del folk revival.",
+     "p": [
+      "Il folk revival degli anni Sessanta portò canzoni tradizionali e nuove in caffè e festival.",
+      "Joan Baez cantava con un soprano limpido, mentre Bob Dylan scrisse canzoni che cambiarono cosa potevano essere i testi.",
+      "Joni Mitchell usò accordature aperte della chitarra e un racconto poetico e personale."
+     ],
+     "q": "Dai più valore al testo o alla melodia e quale verso ami?",
+     "c": "Leggi il testo di una canzone folk come una poesia, poi ascolta come la musica lo cambia."
+    },
+    "pt": {
+     "t": "Revival folk e cantautores",
+     "g": "Explorar guitarras acústicas e letras pessoais do revivalismo folk.",
+     "p": [
+      "O revivalismo folk dos anos 1960 levou canções tradicionais e novas a cafés e festivais.",
+      "Joan Baez cantava com um soprano claro, e Bob Dylan escreveu canções que mudaram o que uma letra podia ser.",
+      "Joni Mitchell usou afinações abertas de guitarra e uma narração poética e pessoal."
+     ],
+     "q": "Dás mais valor à letra ou à melodia e que verso adoras?",
+     "c": "Lê a letra de uma canção folk como um poema e ouve como a música a transforma."
+    },
+    "pt_BR": {
+     "t": "Revival folk e cantautores",
+     "g": "Explorar violões e letras pessoais do renascimento do folk.",
+     "p": [
+      "O renascimento folk dos anos 1960 levou canções tradicionais e novas a cafés e festivais.",
+      "Joan Baez cantava com um soprano límpido, e Bob Dylan escreveu canções que mudaram o que uma letra podia ser.",
+      "Joni Mitchell usou afinações abertas de violão e uma narrativa poética e pessoal."
+     ],
+     "q": "Você dá mais valor à letra ou à melodia e que verso você ama?",
+     "c": "Leia a letra de uma canção folk como um poema e escute como a música a transforma."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sixties studio experiments",
+     "g": "See how studio tricks and new instruments stretched rock.",
+     "p": [
+      "The Beatles and producer George Martin used tape loops, reversed sounds and orchestras on records.",
+      "George Harrison played sitar on Norwegian Wood, bringing Indian sound into rock in 1965.",
+      "The Beach Boys' Pet Sounds and Sgt. Pepper showed that an album could be a creative work, not just singles."
+     ],
+     "q": "Would you like to try making music in a studio, and with what sounds?",
+     "c": "Listen to Strawberry Fields Forever and list three unusual sounds you notice."
+    },
+    "de": {
+     "t": "Studioexperimente der Sechziger",
+     "g": "Sehen, wie Studiotricks und neue Instrumente den Rock erweiterten.",
+     "p": [
+      "Die Beatles und Produzent George Martin nutzten Tonbandschleifen, rückwärts laufende Klänge und Orchester.",
+      "George Harrison spielte 1965 Sitar bei Norwegian Wood und brachte indischen Klang in den Rock.",
+      "Pet Sounds der Beach Boys und Sgt. Pepper zeigten, dass ein Album ein Kunstwerk sein kann, nicht nur Singles."
+     ],
+     "q": "Würdest du gern im Studio Musik machen, und mit welchen Klängen?",
+     "c": "Hör Strawberry Fields Forever und nenne drei ungewöhnliche Klänge, die du bemerkst."
+    },
+    "es": {
+     "t": "Experimentos de estudio en los sesenta",
+     "g": "Ver cómo los trucos de estudio y los instrumentos nuevos ampliaron el rock.",
+     "p": [
+      "Los Beatles y el productor George Martin usaron bucles de cinta, sonidos al revés y orquestas.",
+      "George Harrison tocó el sitar en Norwegian Wood y llevó el sonido indio al rock en 1965.",
+      "Pet Sounds de los Beach Boys y Sgt. Pepper mostraron que un álbum podía ser una obra creativa, no solo sencillos."
+     ],
+     "q": "¿Te gustaría hacer música en un estudio y con qué sonidos?",
+     "c": "Escucha Strawberry Fields Forever y anota tres sonidos inusuales que notes."
+    },
+    "fr": {
+     "t": "Expériences de studio des années 1960",
+     "g": "Voir comment les astuces de studio et les nouveaux instruments ont élargi le rock.",
+     "p": [
+      "Les Beatles et le producteur George Martin utilisent boucles de bande, sons à l'envers et orchestres.",
+      "George Harrison joue du sitar sur Norwegian Wood et apporte le son indien au rock en 1965.",
+      "Pet Sounds des Beach Boys et Sgt. Pepper montrent qu'un album peut être une œuvre créative, pas seulement des singles."
+     ],
+     "q": "Aimeriez-vous faire de la musique en studio, et avec quels sons ?",
+     "c": "Écoutez Strawberry Fields Forever et listez trois sons inhabituels que vous remarquez."
+    },
+    "it": {
+     "t": "Esperimenti di studio negli anni Sessanta",
+     "g": "Vedere come trucchi di studio e nuovi strumenti ampliarono il rock.",
+     "p": [
+      "I Beatles e il produttore George Martin usarono loop di nastro, suoni al contrario e orchestre.",
+      "George Harrison suonò il sitar in Norwegian Wood e portò il suono indiano nel rock nel 1965.",
+      "Pet Sounds dei Beach Boys e Sgt. Pepper mostrarono che un album poteva essere un'opera creativa, non solo singoli."
+     ],
+     "q": "Ti piacerebbe fare musica in studio e con quali suoni?",
+     "c": "Ascolta Strawberry Fields Forever e annota tre suoni insoliti che noti."
+    },
+    "pt": {
+     "t": "Experiências de estúdio nos anos 60",
+     "g": "Ver como truques de estúdio e novos instrumentos alargaram o rock.",
+     "p": [
+      "Os Beatles e o produtor George Martin usaram loops de fita, sons invertidos e orquestras.",
+      "George Harrison tocou cítara em Norwegian Wood e levou o som indiano ao rock em 1965.",
+      "Pet Sounds dos Beach Boys e Sgt. Pepper mostraram que um álbum podia ser uma obra criativa, não só singles."
+     ],
+     "q": "Gostarias de fazer música num estúdio e com que sons?",
+     "c": "Ouve Strawberry Fields Forever e anota três sons invulgares que notes."
+    },
+    "pt_BR": {
+     "t": "Experimentos de estúdio nos anos 60",
+     "g": "Ver como truques de estúdio e novos instrumentos ampliaram o rock.",
+     "p": [
+      "Os Beatles e o produtor George Martin usaram loops de fita, sons invertidos e orquestras.",
+      "George Harrison tocou cítara em Norwegian Wood e levou o som indiano ao rock em 1965.",
+      "Pet Sounds dos Beach Boys e Sgt. Pepper mostraram que um álbum podia ser uma obra criativa, não só singles."
+     ],
+     "q": "Você gostaria de fazer música num estúdio e com que sons?",
+     "c": "Escute Strawberry Fields Forever e anote três sons incomuns que você notar."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hard rock takes off",
+     "g": "Feel the power of loud riffs and big stages in hard rock.",
+     "p": [
+      "Led Zeppelin mixed blues, folk and heavy guitar riffs, with John Bonham's huge drum sound.",
+      "Deep Purple's Smoke on the Water has one of the most famous riffs ever.",
+      "AC/DC, from Australia, kept things simple: strong riffs, steady drums and high-energy shows."
+     ],
+     "q": "What is your favourite guitar riff, and can you hum it?",
+     "c": "Listen to the riff of Whole Lotta Love and tap its rhythm with a pencil."
+    },
+    "de": {
+     "t": "Der Hardrock startet durch",
+     "g": "Die Kraft lauter Riffs und großer Bühnen im Hardrock spüren.",
+     "p": [
+      "Led Zeppelin mischten Blues, Folk und schwere Gitarrenriffs mit John Bonhams gewaltigem Schlagzeugklang.",
+      "Smoke on the Water von Deep Purple hat eines der berühmtesten Riffs überhaupt.",
+      "AC/DC aus Australien blieben einfach: starke Riffs, stetiges Schlagzeug und energiegeladene Shows."
+     ],
+     "q": "Welches ist dein Lieblings-Gitarrenriff, und kannst du es summen?",
+     "c": "Hör das Riff von Whole Lotta Love und klopfe seinen Rhythmus mit einem Stift."
+    },
+    "es": {
+     "t": "El hard rock despega",
+     "g": "Sentir la potencia de los riffs fuertes y los grandes escenarios del hard rock.",
+     "p": [
+      "Led Zeppelin mezclaron blues, folk y riffs de guitarra pesados, con el enorme sonido de batería de John Bonham.",
+      "Smoke on the Water, de Deep Purple, tiene uno de los riffs más famosos de la historia.",
+      "AC/DC, de Australia, lo mantuvieron simple: riffs potentes, batería firme y shows muy enérgicos."
+     ],
+     "q": "¿Cuál es tu riff de guitarra favorito y puedes tararearlo?",
+     "c": "Escucha el riff de Whole Lotta Love y marca su ritmo con un lápiz."
+    },
+    "fr": {
+     "t": "Le hard rock décolle",
+     "g": "Sentir la puissance des riffs sonores et des grandes scènes du hard rock.",
+     "p": [
+      "Led Zeppelin mêlent blues, folk et riffs de guitare lourds, avec le son de batterie massif de John Bonham.",
+      "Smoke on the Water de Deep Purple contient l'un des riffs les plus célèbres de tous les temps.",
+      "AC/DC, venu d'Australie, reste simple : riffs puissants, batterie régulière et concerts pleins d'énergie."
+     ],
+     "q": "Quel est votre riff de guitare préféré, et pouvez-vous le fredonner ?",
+     "c": "Écoutez le riff de Whole Lotta Love et tapez son rythme avec un crayon."
+    },
+    "it": {
+     "t": "L'hard rock decolla",
+     "g": "Sentire la potenza di riff forti e grandi palchi nell'hard rock.",
+     "p": [
+      "I Led Zeppelin mescolarono blues, folk e pesanti riff di chitarra, con l'enorme suono di batteria di John Bonham.",
+      "Smoke on the Water dei Deep Purple ha uno dei riff più famosi di sempre.",
+      "Gli AC/DC, australiani, restarono semplici: riff potenti, batteria costante e concerti pieni di energia."
+     ],
+     "q": "Qual è il tuo riff di chitarra preferito e riesci a canticchiarlo?",
+     "c": "Ascolta il riff di Whole Lotta Love e batti il suo ritmo con una matita."
+    },
+    "pt": {
+     "t": "O hard rock descola",
+     "g": "Sentir a potência de riffs fortes e grandes palcos no hard rock.",
+     "p": [
+      "Os Led Zeppelin misturaram blues, folk e riffs de guitarra pesados, com o enorme som de bateria de John Bonham.",
+      "Smoke on the Water, dos Deep Purple, tem um dos riffs mais famosos de sempre.",
+      "Os AC/DC, da Austrália, mantiveram-no simples: riffs fortes, bateria constante e espetáculos cheios de energia."
+     ],
+     "q": "Qual é o teu riff de guitarra favorito e consegues trautear?",
+     "c": "Ouve o riff de Whole Lotta Love e marca o seu ritmo com um lápis."
+    },
+    "pt_BR": {
+     "t": "O hard rock decola",
+     "g": "Sentir a potência de riffs fortes e grandes palcos no hard rock.",
+     "p": [
+      "O Led Zeppelin misturou blues, folk e riffs de guitarra pesados, com o enorme som de bateria de John Bonham.",
+      "Smoke on the Water, do Deep Purple, tem um dos riffs mais famosos de todos os tempos.",
+      "O AC/DC, da Austrália, manteve tudo simples: riffs fortes, bateria constante e shows cheios de energia."
+     ],
+     "q": "Qual é o seu riff de guitarra favorito e você consegue cantarolar?",
+     "c": "Escute o riff de Whole Lotta Love e marque seu ritmo com um lápis."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: roots of modern music",
+     "g": "Review blues, jazz, country, soul and rock and draw your own family tree.",
+     "p": [
+      "Blues is the root: its twelve bars and blue notes feed jazz, soul, rock and country.",
+      "Gospel and spirituals shaped soul; jazz grew from New Orleans and became swing and bebop.",
+      "Country, folk and rock and roll mixed rural and urban sounds into the music of the 1950s and 60s."
+     ],
+     "q": "Which of these styles surprised you most so far, and which do you want to hear more of?",
+     "c": "Draw a simple family tree of at least five genres from days 10 to 29 and add one song each."
+    },
+    "de": {
+     "t": "Rückblick: Wurzeln der modernen Musik",
+     "g": "Blues, Jazz, Country, Soul und Rock wiederholen und einen eigenen Stammbaum zeichnen.",
+     "p": [
+      "Der Blues ist die Wurzel: Zwölftakter und Blue Notes speisen Jazz, Soul, Rock und Country.",
+      "Gospel und Spirituals prägten den Soul; Jazz wuchs in New Orleans und wurde zu Swing und Bebop.",
+      "Country, Folk und Rock and Roll mischten ländliche und städtische Klänge zur Musik der 50er und 60er."
+     ],
+     "q": "Welcher dieser Stile hat dich bisher am meisten überrascht, und wovon willst du mehr hören?",
+     "c": "Zeichne einen einfachen Stammbaum aus mindestens fünf Genres der Tage 10 bis 29 und ergänze je einen Song."
+    },
+    "es": {
+     "t": "Repaso: raíces de la música moderna",
+     "g": "Repasar blues, jazz, country, soul y rock y dibujar tu propio árbol genealógico.",
+     "p": [
+      "El blues es la raíz: sus doce compases y notas azules alimentan el jazz, el soul, el rock y el country.",
+      "El góspel y los espirituales moldearon el soul; el jazz creció en Nueva Orleans y se hizo swing y bebop.",
+      "El country, el folk y el rock and roll mezclaron sonidos rurales y urbanos en la música de los cincuenta y sesenta."
+     ],
+     "q": "¿Cuál de estos estilos te ha sorprendido más y de cuál quieres oír más?",
+     "c": "Dibuja un árbol sencillo con al menos cinco géneros de los días 10 al 29 y añade una canción de cada uno."
+    },
+    "fr": {
+     "t": "Révision : les racines de la musique moderne",
+     "g": "Réviser blues, jazz, country, soul et rock et dessiner votre propre arbre généalogique.",
+     "p": [
+      "Le blues est la racine : ses douze mesures et ses blue notes nourrissent jazz, soul, rock et country.",
+      "Le gospel et les spirituals ont façonné la soul ; le jazz est né à La Nouvelle-Orléans et devenu swing puis bebop.",
+      "Country, folk et rock and roll ont mêlé sons ruraux et urbains dans la musique des années 1950 et 1960."
+     ],
+     "q": "Lequel de ces styles vous a le plus surpris, et lequel voulez-vous entendre davantage ?",
+     "c": "Dessinez un arbre simple d'au moins cinq genres des jours 10 à 29 et ajoutez une chanson pour chacun."
+    },
+    "it": {
+     "t": "Ripasso: le radici della musica moderna",
+     "g": "Ripassare blues, jazz, country, soul e rock e disegnare il tuo albero genealogico.",
+     "p": [
+      "Il blues è la radice: le sue dodici battute e le blue note nutrono jazz, soul, rock e country.",
+      "Gospel e spiritual plasmarono il soul; il jazz crebbe a New Orleans e divenne swing e bebop.",
+      "Country, folk e rock and roll mescolarono suoni rurali e urbani nella musica degli anni Cinquanta e Sessanta."
+     ],
+     "q": "Quale di questi stili ti ha sorpreso di più e quale vuoi ascoltare ancora?",
+     "c": "Disegna un albero semplice di almeno cinque generi dei giorni 10-29 e aggiungi un brano per ciascuno."
+    },
+    "pt": {
+     "t": "Revisão: as raízes da música moderna",
+     "g": "Rever blues, jazz, country, soul e rock e desenhar a tua árvore genealógica.",
+     "p": [
+      "O blues é a raiz: os seus doze compassos e blue notes alimentam o jazz, o soul, o rock e o country.",
+      "O gospel e os espirituais moldaram o soul; o jazz cresceu em Nova Orleães e tornou-se swing e bebop.",
+      "O country, o folk e o rock and roll misturaram sons rurais e urbanos na música dos anos 50 e 60."
+     ],
+     "q": "Qual destes estilos te surpreendeu mais e de qual queres ouvir mais?",
+     "c": "Desenha uma árvore simples com pelo menos cinco géneros dos dias 10 a 29 e junta uma canção de cada."
+    },
+    "pt_BR": {
+     "t": "Revisão: as raízes da música moderna",
+     "g": "Rever blues, jazz, country, soul e rock e desenhar sua própria árvore genealógica.",
+     "p": [
+      "O blues é a raiz: seus doze compassos e blue notes alimentam o jazz, o soul, o rock e o country.",
+      "O gospel e os espirituais moldaram o soul; o jazz cresceu em Nova Orleans e virou swing e bebop.",
+      "O country, o folk e o rock and roll misturaram sons rurais e urbanos na música dos anos 50 e 60."
+     ],
+     "q": "Qual desses estilos mais te surpreendeu e de qual você quer ouvir mais?",
+     "c": "Desenhe uma árvore simples com pelo menos cinco gêneros dos dias 10 a 29 e junte uma música de cada."
+    }
+   }
+  }
+ ]
+}

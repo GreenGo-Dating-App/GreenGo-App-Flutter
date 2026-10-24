@@ -1,0 +1,835 @@
+{
+ "topic": "stress_basics",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Stress triggers",
+     "g": "Learn which situations, people, places and thoughts tend to set off your stress.",
+     "p": [
+      "A trigger is anything that sets your stress response off, like a deadline or a noisy crowd.",
+      "Triggers can be outside you, such as traffic, or inside you, such as a harsh thought.",
+      "Knowing your triggers lets you prepare instead of being surprised."
+     ],
+     "q": "Which situation most often sets off your stress?",
+     "c": "Spot one trigger today and simply name it to yourself."
+    },
+    "de": {
+     "t": "Stressauslöser",
+     "g": "Lerne, welche Situationen, Menschen, Orte und Gedanken deinen Stress meist auslösen.",
+     "p": [
+      "Ein Auslöser ist alles, was deine Stressreaktion startet, etwa eine Deadline oder eine laute Menge.",
+      "Auslöser können außen liegen, wie Verkehr, oder innen, wie ein strenger Gedanke.",
+      "Wer seine Auslöser kennt, kann sich vorbereiten, statt überrascht zu werden."
+     ],
+     "q": "Welche Situation löst bei dir am häufigsten Stress aus?",
+     "c": "Entdecke heute einen Auslöser und benenne ihn für dich ganz einfach."
+    },
+    "es": {
+     "t": "Desencadenantes del estrés",
+     "g": "Aprende qué situaciones, personas, lugares y pensamientos suelen disparar tu estrés.",
+     "p": [
+      "Un desencadenante es cualquier cosa que activa tu respuesta de estrés, como una fecha límite o una multitud ruidosa.",
+      "Pueden estar fuera de ti, como el tráfico, o dentro, como un pensamiento duro.",
+      "Conocerlos te permite prepararte en lugar de sorprenderte."
+     ],
+     "q": "¿Qué situación dispara tu estrés con más frecuencia?",
+     "c": "Detecta hoy un desencadenante y simplemente nómbralo para ti."
+    },
+    "fr": {
+     "t": "Les déclencheurs de stress",
+     "g": "Apprends quelles situations, personnes, lieux et pensées déclenchent le plus souvent ton stress.",
+     "p": [
+      "Un déclencheur est tout ce qui active ta réaction de stress, comme une échéance ou une foule bruyante.",
+      "Il peut être extérieur, comme la circulation, ou intérieur, comme une pensée dure.",
+      "Les connaître te permet de te préparer au lieu d'être surpris."
+     ],
+     "q": "Quelle situation déclenche le plus souvent ton stress ?",
+     "c": "Repère aujourd'hui un déclencheur et nomme-le simplement pour toi."
+    },
+    "it": {
+     "t": "I fattori scatenanti dello stress",
+     "g": "Scopri quali situazioni, persone, luoghi e pensieri di solito fanno partire il tuo stress.",
+     "p": [
+      "Un fattore scatenante è qualsiasi cosa attivi la risposta di stress, come una scadenza o una folla rumorosa.",
+      "Può essere esterno, come il traffico, o interno, come un pensiero severo.",
+      "Conoscerli ti permette di prepararti invece di restare sorpreso."
+     ],
+     "q": "Quale situazione fa scattare più spesso il tuo stress?",
+     "c": "Individua oggi un fattore scatenante e nominalo semplicemente a te stesso."
+    },
+    "pt": {
+     "t": "Os gatilhos do stress",
+     "g": "Descobre que situações, pessoas, lugares e pensamentos costumam disparar o teu stress.",
+     "p": [
+      "Um gatilho é tudo o que ativa a tua resposta de stress, como um prazo ou uma multidão barulhenta.",
+      "Pode estar fora de ti, como o trânsito, ou dentro, como um pensamento duro.",
+      "Conhecê-los permite preparares-te em vez de seres apanhado de surpresa."
+     ],
+     "q": "Que situação dispara o teu stress com mais frequência?",
+     "c": "Descobre hoje um gatilho e limita-te a dar-lhe um nome."
+    },
+    "pt_BR": {
+     "t": "Os gatilhos do estresse",
+     "g": "Descubra que situações, pessoas, lugares e pensamentos costumam disparar o seu estresse.",
+     "p": [
+      "Um gatilho é tudo que ativa a sua resposta de estresse, como um prazo ou uma multidão barulhenta.",
+      "Pode estar fora de você, como o trânsito, ou dentro, como um pensamento duro.",
+      "Conhecê-los permite se preparar em vez de ser pego de surpresa."
+     ],
+     "q": "Que situação dispara o seu estresse com mais frequência?",
+     "c": "Descubra hoje um gatilho e apenas dê um nome a ele."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Big stressors and small hassles",
+     "g": "See how everyday little annoyances can add up as much as big life events.",
+     "p": [
+      "Big events like moving house are obvious, but small hassles are easy to overlook.",
+      "Lost keys, slow queues and endless notifications can pile up through the day.",
+      "Easing even one small hassle can free up more calm than you expect."
+     ],
+     "q": "Which small daily annoyance wears on you the most?",
+     "c": "Fix one tiny hassle today, like tidying the spot where you drop your keys."
+    },
+    "de": {
+     "t": "Große Belastungen und kleine Ärgernisse",
+     "g": "Sieh, wie sich alltägliche Kleinigkeiten so stark summieren können wie große Lebensereignisse.",
+     "p": [
+      "Große Ereignisse wie ein Umzug fallen auf, kleine Ärgernisse werden leicht übersehen.",
+      "Verlegte Schlüssel, lange Schlangen und ständige Benachrichtigungen häufen sich über den Tag.",
+      "Schon ein kleines Ärgernis zu entschärfen schenkt mehr Ruhe als gedacht."
+     ],
+     "q": "Welches kleine tägliche Ärgernis zehrt am meisten an dir?",
+     "c": "Behebe heute eine Kleinigkeit, etwa den Platz für deinen Schlüssel aufräumen."
+    },
+    "es": {
+     "t": "Grandes estresores y pequeñas molestias",
+     "g": "Descubre cómo las pequeñas molestias diarias pueden sumar tanto como los grandes sucesos.",
+     "p": [
+      "Los grandes hechos como una mudanza se notan, pero las pequeñas molestias pasan desapercibidas.",
+      "Llaves perdidas, colas lentas y notificaciones sin fin se acumulan durante el día.",
+      "Aliviar incluso una pequeña molestia puede darte más calma de la que esperas."
+     ],
+     "q": "¿Qué pequeña molestia diaria te desgasta más?",
+     "c": "Arregla hoy una molestia diminuta, como ordenar el sitio donde dejas las llaves."
+    },
+    "fr": {
+     "t": "Grands stress et petits tracas",
+     "g": "Vois comment les petits tracas du quotidien peuvent peser autant que les grands événements.",
+     "p": [
+      "Les grands événements comme un déménagement se remarquent, les petits tracas passent inaperçus.",
+      "Clés perdues, files lentes et notifications sans fin s'accumulent au fil de la journée.",
+      "Soulager un seul petit tracas peut t'apporter plus de calme qu'on ne croit."
+     ],
+     "q": "Quel petit tracas quotidien t'use le plus ?",
+     "c": "Règle aujourd'hui un minuscule tracas, comme ranger l'endroit où tu poses tes clés."
+    },
+    "it": {
+     "t": "Grandi stressor e piccole seccature",
+     "g": "Scopri come le piccole seccature quotidiane possano pesare quanto i grandi eventi.",
+     "p": [
+      "I grandi eventi come un trasloco si notano, le piccole seccature passano inosservate.",
+      "Chiavi perse, code lente e notifiche infinite si accumulano nel corso della giornata.",
+      "Alleggerire anche solo una piccola seccatura può darti più calma del previsto."
+     ],
+     "q": "Quale piccola seccatura quotidiana ti logora di più?",
+     "c": "Risolvi oggi una minuscola seccatura, come riordinare il posto dove lasci le chiavi."
+    },
+    "pt": {
+     "t": "Grandes stressores e pequenos incómodos",
+     "g": "Vê como os pequenos incómodos do dia a dia podem pesar tanto como os grandes acontecimentos.",
+     "p": [
+      "Grandes acontecimentos como uma mudança de casa notam-se, mas os pequenos incómodos passam despercebidos.",
+      "Chaves perdidas, filas lentas e notificações sem fim acumulam-se ao longo do dia.",
+      "Aliviar até um pequeno incómodo pode dar-te mais calma do que esperas."
+     ],
+     "q": "Que pequeno incómodo diário mais te desgasta?",
+     "c": "Resolve hoje um incómodo minúsculo, como arrumar o sítio onde deixas as chaves."
+    },
+    "pt_BR": {
+     "t": "Grandes estressores e pequenos incômodos",
+     "g": "Veja como os pequenos incômodos do dia a dia podem pesar tanto quanto os grandes acontecimentos.",
+     "p": [
+      "Grandes acontecimentos como uma mudança de casa se notam, mas os pequenos incômodos passam batido.",
+      "Chaves perdidas, filas lentas e notificações sem fim se acumulam ao longo do dia.",
+      "Aliviar até um pequeno incômodo pode trazer mais calma do que você imagina."
+     ],
+     "q": "Que pequeno incômodo diário mais desgasta você?",
+     "c": "Resolva hoje um incômodo minúsculo, como arrumar o lugar onde você deixa as chaves."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Starting a stress diary",
+     "g": "Begin a simple daily note of what stressed you, how you reacted and what helped.",
+     "p": [
+      "Each evening write three short lines: what stressed me, how I reacted, what helped.",
+      "Two minutes is enough; short and honest beats long and perfect.",
+      "A diary turns vague worry into clear information you can learn from."
+     ],
+     "q": "Would you rather write your diary on paper or in your phone, and when?",
+     "c": "Write your first diary entry tonight in three short lines."
+    },
+    "de": {
+     "t": "Ein Stress-Tagebuch beginnen",
+     "g": "Beginne eine einfache tägliche Notiz: was dich gestresst hat, wie du reagiert hast und was half.",
+     "p": [
+      "Schreibe jeden Abend drei kurze Zeilen: Was stresste mich, wie reagierte ich, was half.",
+      "Zwei Minuten reichen; kurz und ehrlich schlägt lang und perfekt.",
+      "Ein Tagebuch macht aus diffuser Sorge klare Informationen, aus denen du lernen kannst."
+     ],
+     "q": "Schreibst du dein Tagebuch lieber auf Papier oder im Handy, und wann?",
+     "c": "Schreibe heute Abend deinen ersten Eintrag in drei kurzen Zeilen."
+    },
+    "es": {
+     "t": "Empezar un diario del estrés",
+     "g": "Empieza una nota diaria sencilla: qué te estresó, cómo reaccionaste y qué te ayudó.",
+     "p": [
+      "Cada noche escribe tres líneas cortas: qué me estresó, cómo reaccioné, qué me ayudó.",
+      "Dos minutos bastan; corto y sincero vale más que largo y perfecto.",
+      "Un diario convierte la preocupación difusa en información clara de la que aprender."
+     ],
+     "q": "¿Prefieres escribir tu diario en papel o en el móvil, y a qué hora?",
+     "c": "Escribe esta noche tu primera entrada en tres líneas cortas."
+    },
+    "fr": {
+     "t": "Commencer un journal du stress",
+     "g": "Commence une note quotidienne simple : ce qui t'a stressé, comment tu as réagi et ce qui a aidé.",
+     "p": [
+      "Chaque soir, écris trois courtes lignes : ce qui m'a stressé, ma réaction, ce qui a aidé.",
+      "Deux minutes suffisent; court et sincère vaut mieux que long et parfait.",
+      "Un journal transforme une inquiétude floue en informations claires dont tu peux apprendre."
+     ],
+     "q": "Préfères-tu écrire ton journal sur papier ou sur ton téléphone, et quand ?",
+     "c": "Écris ce soir ta première entrée en trois courtes lignes."
+    },
+    "it": {
+     "t": "Iniziare un diario dello stress",
+     "g": "Inizia una semplice nota quotidiana: cosa ti ha stressato, come hai reagito e cosa ha aiutato.",
+     "p": [
+      "Ogni sera scrivi tre righe brevi: cosa mi ha stressato, come ho reagito, cosa ha aiutato.",
+      "Bastano due minuti; breve e sincero vale più di lungo e perfetto.",
+      "Un diario trasforma la preoccupazione vaga in informazioni chiare da cui imparare."
+     ],
+     "q": "Preferisci scrivere il diario su carta o sul telefono, e quando?",
+     "c": "Scrivi stasera la tua prima voce in tre righe brevi."
+    },
+    "pt": {
+     "t": "Começar um diário do stress",
+     "g": "Começa uma nota diária simples: o que te stressou, como reagiste e o que ajudou.",
+     "p": [
+      "Cada noite escreve três linhas curtas: o que me stressou, como reagi, o que ajudou.",
+      "Dois minutos chegam; curto e sincero vale mais do que longo e perfeito.",
+      "Um diário transforma a preocupação vaga em informação clara de onde podes aprender."
+     ],
+     "q": "Preferes escrever o diário em papel ou no telemóvel, e a que horas?",
+     "c": "Escreve esta noite a tua primeira entrada em três linhas curtas."
+    },
+    "pt_BR": {
+     "t": "Começar um diário do estresse",
+     "g": "Comece uma nota diária simples: o que estressou você, como reagiu e o que ajudou.",
+     "p": [
+      "Toda noite escreva três linhas curtas: o que me estressou, como reagi, o que ajudou.",
+      "Dois minutos bastam; curto e sincero vale mais que longo e perfeito.",
+      "Um diário transforma preocupação vaga em informação clara da qual você pode aprender."
+     ],
+     "q": "Você prefere escrever o diário no papel ou no celular, e em que horário?",
+     "c": "Escreva hoje à noite sua primeira entrada em três linhas curtas."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading your first week",
+     "g": "Spot patterns in your stress diary such as times, places or tasks.",
+     "p": [
+      "Look back over your notes and circle anything that appears more than once.",
+      "Patterns may involve a time of day, a place, a person or a type of task.",
+      "Seeing a pattern is good news because it shows where small changes can help."
+     ],
+     "q": "What pattern surprised you most when you looked at your notes?",
+     "c": "Choose one pattern from your diary and write one small idea to soften it."
+    },
+    "de": {
+     "t": "Deine erste Woche auswerten",
+     "g": "Erkenne Muster in deinem Stress-Tagebuch wie Uhrzeiten, Orte oder Aufgaben.",
+     "p": [
+      "Lies deine Notizen durch und kreise ein, was mehr als einmal auftaucht.",
+      "Muster können eine Tageszeit, einen Ort, eine Person oder eine Aufgabenart betreffen.",
+      "Ein Muster zu sehen ist gut, denn es zeigt, wo kleine Änderungen helfen können."
+     ],
+     "q": "Welches Muster hat dich beim Durchlesen deiner Notizen am meisten überrascht?",
+     "c": "Wähle ein Muster aus deinem Tagebuch und notiere eine kleine Idee, es abzumildern."
+    },
+    "es": {
+     "t": "Leer tu primera semana",
+     "g": "Detecta patrones en tu diario del estrés, como horarios, lugares o tareas.",
+     "p": [
+      "Repasa tus notas y rodea lo que aparezca más de una vez.",
+      "Los patrones pueden tener que ver con una hora, un lugar, una persona o un tipo de tarea.",
+      "Ver un patrón es buena noticia porque muestra dónde pequeños cambios pueden ayudar."
+     ],
+     "q": "¿Qué patrón te sorprendió más al repasar tus notas?",
+     "c": "Elige un patrón de tu diario y escribe una idea pequeña para suavizarlo."
+    },
+    "fr": {
+     "t": "Relire ta première semaine",
+     "g": "Repère des schémas dans ton journal du stress : horaires, lieux ou tâches.",
+     "p": [
+      "Relis tes notes et entoure ce qui revient plus d'une fois.",
+      "Les schémas peuvent concerner une heure, un lieu, une personne ou un type de tâche.",
+      "Voir un schéma est une bonne nouvelle : il montre où de petits changements peuvent aider."
+     ],
+     "q": "Quel schéma t'a le plus surpris en relisant tes notes ?",
+     "c": "Choisis un schéma de ton journal et écris une petite idée pour l'adoucir."
+    },
+    "it": {
+     "t": "Rileggere la tua prima settimana",
+     "g": "Individua schemi nel tuo diario dello stress, come orari, luoghi o compiti.",
+     "p": [
+      "Rileggi le note e cerchia ciò che compare più di una volta.",
+      "Gli schemi possono riguardare un orario, un luogo, una persona o un tipo di compito.",
+      "Vedere uno schema è una buona notizia: mostra dove piccoli cambiamenti possono aiutare."
+     ],
+     "q": "Quale schema ti ha sorpreso di più rileggendo le note?",
+     "c": "Scegli uno schema dal diario e scrivi una piccola idea per attenuarlo."
+    },
+    "pt": {
+     "t": "Ler a tua primeira semana",
+     "g": "Deteta padrões no teu diário do stress, como horas, lugares ou tarefas.",
+     "p": [
+      "Relê as tuas notas e circunda o que aparece mais do que uma vez.",
+      "Os padrões podem ter a ver com uma hora, um lugar, uma pessoa ou um tipo de tarefa.",
+      "Ver um padrão é boa notícia porque mostra onde pequenas mudanças podem ajudar."
+     ],
+     "q": "Que padrão mais te surpreendeu ao reler as tuas notas?",
+     "c": "Escolhe um padrão do diário e escreve uma pequena ideia para o suavizar."
+    },
+    "pt_BR": {
+     "t": "Lendo sua primeira semana",
+     "g": "Identifique padrões no seu diário do estresse, como horários, lugares ou tarefas.",
+     "p": [
+      "Releia suas notas e circule o que aparece mais de uma vez.",
+      "Os padrões podem ter a ver com um horário, um lugar, uma pessoa ou um tipo de tarefa.",
+      "Ver um padrão é uma boa notícia porque mostra onde pequenas mudanças podem ajudar."
+     ],
+     "q": "Que padrão mais surpreendeu você ao reler suas notas?",
+     "c": "Escolha um padrão do diário e escreva uma pequena ideia para suavizá-lo."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The stress bucket",
+     "g": "Picture stress filling a bucket and relief ideas as the tap that drains it.",
+     "p": [
+      "Imagine a bucket: every worry and demand adds water, and it can overflow.",
+      "Small relief habits are a tap at the bottom, letting water out all day.",
+      "You do not need to empty it at once, just keep the tap gently open."
+     ],
+     "q": "What are the biggest things filling your bucket these days?",
+     "c": "Name one small thing today that opens your tap, like a short walk."
+    },
+    "de": {
+     "t": "Der Stress-Eimer",
+     "g": "Stell dir Stress als Eimer vor, der sich füllt, und Entlastung als Hahn, der ihn leert.",
+     "p": [
+      "Stell dir einen Eimer vor: Jede Sorge und Anforderung füllt Wasser ein, und er kann überlaufen.",
+      "Kleine Entlastungsgewohnheiten sind ein Hahn am Boden, der den ganzen Tag Wasser ablässt.",
+      "Du musst ihn nicht auf einmal leeren, nur den Hahn sanft offen halten."
+     ],
+     "q": "Was füllt deinen Eimer in letzter Zeit am meisten?",
+     "c": "Nenne heute eine Kleinigkeit, die deinen Hahn öffnet, etwa ein kurzer Spaziergang."
+    },
+    "es": {
+     "t": "El cubo del estrés",
+     "g": "Imagina el estrés llenando un cubo y las ideas de alivio como el grifo que lo vacía.",
+     "p": [
+      "Imagina un cubo: cada preocupación y exigencia añade agua, y puede desbordarse.",
+      "Los pequeños hábitos de alivio son un grifo en el fondo que suelta agua todo el día.",
+      "No hace falta vaciarlo de golpe, solo mantener el grifo suavemente abierto."
+     ],
+     "q": "¿Qué es lo que más llena tu cubo últimamente?",
+     "c": "Nombra hoy algo pequeño que abra tu grifo, como un paseo corto."
+    },
+    "fr": {
+     "t": "Le seau du stress",
+     "g": "Imagine le stress qui remplit un seau et les idées de détente comme le robinet qui le vide.",
+     "p": [
+      "Imagine un seau : chaque souci et chaque exigence ajoute de l'eau, et il peut déborder.",
+      "Les petites habitudes de détente sont un robinet au fond qui laisse couler l'eau toute la journée.",
+      "Pas besoin de le vider d'un coup, juste de garder le robinet doucement ouvert."
+     ],
+     "q": "Qu'est-ce qui remplit le plus ton seau ces temps-ci ?",
+     "c": "Nomme aujourd'hui une petite chose qui ouvre ton robinet, comme une courte marche."
+    },
+    "it": {
+     "t": "Il secchio dello stress",
+     "g": "Immagina lo stress che riempie un secchio e le idee di sollievo come il rubinetto che lo svuota.",
+     "p": [
+      "Immagina un secchio: ogni preoccupazione e richiesta aggiunge acqua, e può traboccare.",
+      "Le piccole abitudini di sollievo sono un rubinetto sul fondo che fa uscire acqua tutto il giorno.",
+      "Non serve svuotarlo in una volta, basta tenere il rubinetto dolcemente aperto."
+     ],
+     "q": "Che cosa riempie di più il tuo secchio in questi giorni?",
+     "c": "Nomina oggi una piccola cosa che apre il tuo rubinetto, come una breve passeggiata."
+    },
+    "pt": {
+     "t": "O balde do stress",
+     "g": "Imagina o stress a encher um balde e as ideias de alívio como a torneira que o esvazia.",
+     "p": [
+      "Imagina um balde: cada preocupação e exigência acrescenta água, e ele pode transbordar.",
+      "Os pequenos hábitos de alívio são uma torneira no fundo que deixa sair água o dia todo.",
+      "Não precisas de o esvaziar de uma vez, só manter a torneira suavemente aberta."
+     ],
+     "q": "O que mais tem enchido o teu balde ultimamente?",
+     "c": "Nomeia hoje uma coisa pequena que abra a tua torneira, como um passeio curto."
+    },
+    "pt_BR": {
+     "t": "O balde do estresse",
+     "g": "Imagine o estresse enchendo um balde e as ideias de alívio como a torneira que o esvazia.",
+     "p": [
+      "Imagine um balde: cada preocupação e exigência acrescenta água, e ele pode transbordar.",
+      "Os pequenos hábitos de alívio são uma torneira no fundo que deixa sair água o dia todo.",
+      "Você não precisa esvaziá-lo de uma vez, só manter a torneira suavemente aberta."
+     ],
+     "q": "O que mais tem enchido o seu balde ultimamente?",
+     "c": "Cite hoje uma coisa pequena que abre a sua torneira, como uma caminhada curta."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rating your stress",
+     "g": "Use a simple 1 to 10 scale to notice how stressed you feel.",
+     "p": [
+      "Give your stress a number from 1 (calm) to 10 (very high) a few times a day.",
+      "The number does not need to be exact; it just makes the feeling easier to see.",
+      "Tracking it shows what moves it up or down, and when a tool helped."
+     ],
+     "q": "What number would you give your stress right now?",
+     "c": "Rate your stress now, take three slow breaths, then rate it again."
+    },
+    "de": {
+     "t": "Deinen Stress bewerten",
+     "g": "Nutze eine einfache Skala von 1 bis 10, um zu bemerken, wie gestresst du bist.",
+     "p": [
+      "Gib deinem Stress mehrmals täglich eine Zahl von 1 (ruhig) bis 10 (sehr hoch).",
+      "Die Zahl muss nicht exakt sein; sie macht das Gefühl nur leichter sichtbar.",
+      "So erkennst du, was ihn steigen oder sinken lässt und wann ein Hilfsmittel wirkte."
+     ],
+     "q": "Welche Zahl würdest du deinem Stress gerade geben?",
+     "c": "Bewerte deinen Stress jetzt, atme dreimal langsam und bewerte ihn erneut."
+    },
+    "es": {
+     "t": "Puntuar tu estrés",
+     "g": "Usa una escala sencilla del 1 al 10 para notar cuánto estrés sientes.",
+     "p": [
+      "Ponle a tu estrés un número del 1 (calma) al 10 (muy alto) varias veces al día.",
+      "El número no tiene que ser exacto; solo hace el sentimiento más fácil de ver.",
+      "Registrarlo muestra qué lo sube o baja y cuándo ayudó una herramienta."
+     ],
+     "q": "¿Qué número le pondrías a tu estrés ahora mismo?",
+     "c": "Puntúa tu estrés ahora, respira lento tres veces y puntúalo otra vez."
+    },
+    "fr": {
+     "t": "Évaluer ton stress",
+     "g": "Utilise une échelle simple de 1 à 10 pour remarquer à quel point tu te sens stressé.",
+     "p": [
+      "Donne à ton stress une note de 1 (calme) à 10 (très élevé) plusieurs fois par jour.",
+      "La note n'a pas besoin d'être exacte; elle rend juste le ressenti plus visible.",
+      "La suivre montre ce qui la fait monter ou baisser, et quand un outil a aidé."
+     ],
+     "q": "Quelle note donnerais-tu à ton stress en ce moment ?",
+     "c": "Note ton stress maintenant, respire lentement trois fois, puis note-le encore."
+    },
+    "it": {
+     "t": "Dare un voto al tuo stress",
+     "g": "Usa una semplice scala da 1 a 10 per notare quanto ti senti stressato.",
+     "p": [
+      "Dai al tuo stress un numero da 1 (calma) a 10 (molto alto) più volte al giorno.",
+      "Il numero non deve essere esatto; rende solo la sensazione più visibile.",
+      "Seguirlo mostra cosa lo fa salire o scendere e quando uno strumento ha aiutato."
+     ],
+     "q": "Che numero daresti al tuo stress in questo momento?",
+     "c": "Dai ora un voto al tuo stress, fai tre respiri lenti e votalo di nuovo."
+    },
+    "pt": {
+     "t": "Dar nota ao teu stress",
+     "g": "Usa uma escala simples de 1 a 10 para reparares quão stressado te sentes.",
+     "p": [
+      "Dá ao teu stress um número de 1 (calma) a 10 (muito alto) várias vezes por dia.",
+      "O número não tem de ser exato; só torna a sensação mais fácil de ver.",
+      "Registá-lo mostra o que o faz subir ou descer e quando uma ferramenta ajudou."
+     ],
+     "q": "Que número darias ao teu stress neste momento?",
+     "c": "Dá agora uma nota ao teu stress, respira devagar três vezes e avalia de novo."
+    },
+    "pt_BR": {
+     "t": "Dar uma nota ao seu estresse",
+     "g": "Use uma escala simples de 1 a 10 para perceber o quanto você se sente estressado.",
+     "p": [
+      "Dê ao seu estresse um número de 1 (calma) a 10 (muito alto) várias vezes por dia.",
+      "O número não precisa ser exato; só deixa a sensação mais fácil de enxergar.",
+      "Registrá-lo mostra o que o faz subir ou descer e quando uma ferramenta ajudou."
+     ],
+     "q": "Que número você daria ao seu estresse agora?",
+     "c": "Dê agora uma nota ao seu estresse, respire devagar três vezes e avalie de novo."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pause before reacting",
+     "g": "See why a short pause between a trigger and your reaction makes a difference.",
+     "p": [
+      "Between what happens and what you do, there is a small gap you can use.",
+      "Even three seconds can turn a sharp reply into a calmer one.",
+      "A pause does not mean holding back feelings; it means choosing your response."
+     ],
+     "q": "Can you recall a moment when a pause would have helped?",
+     "c": "Today, try one pause: breathe in and out once before answering something tense."
+    },
+    "de": {
+     "t": "Innehalten, bevor du reagierst",
+     "g": "Erkenne, warum eine kurze Pause zwischen Auslöser und Reaktion einen Unterschied macht.",
+     "p": [
+      "Zwischen dem, was passiert, und dem, was du tust, liegt eine kleine Lücke, die du nutzen kannst.",
+      "Schon drei Sekunden können eine scharfe Antwort in eine ruhigere verwandeln.",
+      "Eine Pause heißt nicht, Gefühle zu unterdrücken, sondern deine Antwort zu wählen."
+     ],
+     "q": "Fällt dir ein Moment ein, in dem eine Pause geholfen hätte?",
+     "c": "Probiere heute eine Pause: einmal ein- und ausatmen, bevor du auf Angespanntes antwortest."
+    },
+    "es": {
+     "t": "Pausa antes de reaccionar",
+     "g": "Descubre por qué una breve pausa entre el desencadenante y tu reacción marca la diferencia.",
+     "p": [
+      "Entre lo que ocurre y lo que haces hay un pequeño hueco que puedes aprovechar.",
+      "Incluso tres segundos pueden convertir una respuesta brusca en una más serena.",
+      "Una pausa no es reprimir sentimientos; es elegir tu respuesta."
+     ],
+     "q": "¿Recuerdas un momento en que una pausa te habría ayudado?",
+     "c": "Hoy prueba una pausa: inspira y espira una vez antes de responder algo tenso."
+    },
+    "fr": {
+     "t": "Faire une pause avant de réagir",
+     "g": "Vois pourquoi une courte pause entre le déclencheur et ta réaction change tout.",
+     "p": [
+      "Entre ce qui arrive et ce que tu fais, il y a un petit espace que tu peux utiliser.",
+      "Même trois secondes peuvent transformer une réponse sèche en une réponse plus calme.",
+      "Une pause n'est pas retenir tes émotions; c'est choisir ta réponse."
+     ],
+     "q": "Te souviens-tu d'un moment où une pause t'aurait aidé ?",
+     "c": "Aujourd'hui, essaie une pause : inspire et expire une fois avant de répondre à un sujet tendu."
+    },
+    "it": {
+     "t": "Una pausa prima di reagire",
+     "g": "Scopri perché una breve pausa tra lo stimolo e la tua reazione fa la differenza.",
+     "p": [
+      "Tra ciò che accade e ciò che fai c'è un piccolo spazio che puoi usare.",
+      "Anche tre secondi possono trasformare una risposta secca in una più calma.",
+      "Una pausa non significa trattenere i sentimenti, ma scegliere la tua risposta."
+     ],
+     "q": "Ricordi un momento in cui una pausa ti avrebbe aiutato?",
+     "c": "Oggi prova una pausa: inspira ed espira una volta prima di rispondere a qualcosa di teso."
+    },
+    "pt": {
+     "t": "Uma pausa antes de reagir",
+     "g": "Vê porque uma breve pausa entre o gatilho e a tua reação faz diferença.",
+     "p": [
+      "Entre o que acontece e o que fazes há um pequeno intervalo que podes aproveitar.",
+      "Mesmo três segundos podem transformar uma resposta seca numa mais calma.",
+      "Uma pausa não é reprimir sentimentos; é escolher a tua resposta."
+     ],
+     "q": "Lembras-te de um momento em que uma pausa te teria ajudado?",
+     "c": "Hoje experimenta uma pausa: inspira e expira uma vez antes de responder a algo tenso."
+    },
+    "pt_BR": {
+     "t": "Uma pausa antes de reagir",
+     "g": "Veja por que uma breve pausa entre o gatilho e a sua reação faz diferença.",
+     "p": [
+      "Entre o que acontece e o que você faz existe um pequeno intervalo que pode ser usado.",
+      "Até três segundos podem transformar uma resposta seca em uma mais calma.",
+      "Uma pausa não é reprimir sentimentos; é escolher a sua resposta."
+     ],
+     "q": "Você se lembra de um momento em que uma pausa teria ajudado?",
+     "c": "Hoje experimente uma pausa: inspire e expire uma vez antes de responder algo tenso."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The power of naming it",
+     "g": "Find out how simply saying I feel stressed can calm the mind a little.",
+     "p": [
+      "Putting a feeling into words helps the thinking part of your brain settle the alarm.",
+      "Be specific if you can: am I rushed, worried, overwhelmed or just tired?",
+      "Naming is not complaining; it is a quick, kind way to understand yourself."
+     ],
+     "q": "Which word best describes how you feel right now?",
+     "c": "Say quietly to yourself: I notice I am feeling stressed, and that is okay."
+    },
+    "de": {
+     "t": "Es beim Namen nennen",
+     "g": "Entdecke, wie schon der Satz Ich bin gestresst den Geist etwas beruhigen kann.",
+     "p": [
+      "Ein Gefühl in Worte zu fassen hilft dem denkenden Teil des Gehirns, den Alarm zu beruhigen.",
+      "Sei möglichst genau: Bin ich in Eile, besorgt, überfordert oder nur müde?",
+      "Benennen ist kein Jammern, sondern eine schnelle, freundliche Art, dich zu verstehen."
+     ],
+     "q": "Welches Wort beschreibt am besten, wie du dich gerade fühlst?",
+     "c": "Sag leise zu dir: Ich merke, dass ich gestresst bin, und das ist in Ordnung."
+    },
+    "es": {
+     "t": "El poder de ponerle nombre",
+     "g": "Descubre cómo decir simplemente me siento estresado puede calmar un poco la mente.",
+     "p": [
+      "Poner un sentimiento en palabras ayuda a la parte pensante del cerebro a calmar la alarma.",
+      "Sé específico si puedes: ¿voy con prisa, preocupado, abrumado o solo cansado?",
+      "Nombrar no es quejarse; es una forma rápida y amable de entenderte."
+     ],
+     "q": "¿Qué palabra describe mejor cómo te sientes ahora mismo?",
+     "c": "Dite en voz baja: noto que me siento estresado, y está bien."
+    },
+    "fr": {
+     "t": "Le pouvoir de nommer",
+     "g": "Découvre comment dire simplement je me sens stressé peut un peu apaiser l'esprit.",
+     "p": [
+      "Mettre un ressenti en mots aide la partie pensante du cerveau à calmer l'alarme.",
+      "Sois précis si tu peux : suis-je pressé, inquiet, dépassé ou juste fatigué ?",
+      "Nommer n'est pas se plaindre; c'est une façon rapide et bienveillante de te comprendre."
+     ],
+     "q": "Quel mot décrit le mieux ce que tu ressens en ce moment ?",
+     "c": "Dis-toi doucement : je remarque que je suis stressé, et c'est normal."
+    },
+    "it": {
+     "t": "Il potere di dare un nome",
+     "g": "Scopri come dire semplicemente mi sento stressato possa calmare un po' la mente.",
+     "p": [
+      "Mettere un'emozione in parole aiuta la parte pensante del cervello a calmare l'allarme.",
+      "Sii preciso se puoi: ho fretta, sono preoccupato, sopraffatto o solo stanco?",
+      "Dare un nome non è lamentarsi; è un modo rapido e gentile di capirti."
+     ],
+     "q": "Quale parola descrive meglio come ti senti adesso?",
+     "c": "Dì piano a te stesso: noto che mi sento stressato, e va bene così."
+    },
+    "pt": {
+     "t": "O poder de dar um nome",
+     "g": "Descobre como dizer simplesmente sinto-me stressado pode acalmar um pouco a mente.",
+     "p": [
+      "Pôr um sentimento em palavras ajuda a parte pensante do cérebro a acalmar o alarme.",
+      "Sê específico se puderes: ando apressado, preocupado, sobrecarregado ou só cansado?",
+      "Dar nome não é queixar-se; é uma forma rápida e gentil de te compreenderes."
+     ],
+     "q": "Que palavra descreve melhor como te sentes agora?",
+     "c": "Diz baixinho a ti mesmo: reparo que estou stressado, e está tudo bem."
+    },
+    "pt_BR": {
+     "t": "O poder de dar nome",
+     "g": "Descubra como dizer simplesmente estou me sentindo estressado pode acalmar um pouco a mente.",
+     "p": [
+      "Pôr um sentimento em palavras ajuda a parte pensante do cérebro a acalmar o alarme.",
+      "Seja específico se puder: estou apressado, preocupado, sobrecarregado ou só cansado?",
+      "Dar nome não é reclamar; é um jeito rápido e gentil de se entender."
+     ],
+     "q": "Que palavra descreve melhor como você está se sentindo agora?",
+     "c": "Diga baixinho para si: percebo que estou estressado, e tudo bem."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Stress and energy",
+     "g": "See how stress can drain energy and why rest is part of the solution.",
+     "p": [
+      "Staying on alert uses up a lot of energy, so stress often feels tiring.",
+      "Rest, sleep and breaks are not laziness; they refill what stress uses.",
+      "Small pauses through the day protect you better than one big collapse at night."
+     ],
+     "q": "When in the day do you feel most drained, and what do you do then?",
+     "c": "Schedule one real break today and spend it without a screen."
+    },
+    "de": {
+     "t": "Stress und Energie",
+     "g": "Sieh, wie Stress Energie raubt und warum Ruhe Teil der Lösung ist.",
+     "p": [
+      "Dauernd in Alarmbereitschaft zu sein kostet viel Energie, deshalb macht Stress oft müde.",
+      "Ruhe, Schlaf und Pausen sind keine Faulheit; sie füllen auf, was Stress verbraucht.",
+      "Kleine Pausen über den Tag schützen dich besser als ein großer Zusammenbruch am Abend."
+     ],
+     "q": "Wann am Tag fühlst du dich am erschöpftesten, und was tust du dann?",
+     "c": "Plane heute eine echte Pause ein und verbringe sie ohne Bildschirm."
+    },
+    "es": {
+     "t": "El estrés y la energía",
+     "g": "Descubre cómo el estrés agota la energía y por qué el descanso forma parte de la solución.",
+     "p": [
+      "Estar en alerta gasta mucha energía, por eso el estrés suele sentirse agotador.",
+      "Descansar, dormir y hacer pausas no es pereza; recarga lo que gasta el estrés.",
+      "Pequeñas pausas durante el día te protegen mejor que un gran desplome por la noche."
+     ],
+     "q": "¿A qué hora del día te sientes más agotado y qué haces entonces?",
+     "c": "Programa hoy una pausa de verdad y pásala sin pantalla."
+    },
+    "fr": {
+     "t": "Stress et énergie",
+     "g": "Vois comment le stress puise dans l'énergie et pourquoi le repos fait partie de la solution.",
+     "p": [
+      "Rester en alerte consomme beaucoup d'énergie, donc le stress fatigue souvent.",
+      "Repos, sommeil et pauses ne sont pas de la paresse; ils rechargent ce que le stress use.",
+      "De petites pauses dans la journée te protègent mieux qu'un grand effondrement le soir."
+     ],
+     "q": "À quel moment de la journée te sens-tu le plus vidé, et que fais-tu alors ?",
+     "c": "Prévois aujourd'hui une vraie pause et passe-la sans écran."
+    },
+    "it": {
+     "t": "Stress ed energia",
+     "g": "Scopri come lo stress consuma energia e perché il riposo fa parte della soluzione.",
+     "p": [
+      "Restare in allerta consuma molta energia, per questo lo stress spesso stanca.",
+      "Riposo, sonno e pause non sono pigrizia: ricaricano ciò che lo stress consuma.",
+      "Piccole pause durante il giorno ti proteggono meglio di un grande crollo la sera."
+     ],
+     "q": "In quale momento della giornata ti senti più scarico e che cosa fai allora?",
+     "c": "Programma oggi una vera pausa e passala senza schermo."
+    },
+    "pt": {
+     "t": "Stress e energia",
+     "g": "Vê como o stress gasta energia e porque o descanso faz parte da solução.",
+     "p": [
+      "Estar em alerta gasta muita energia, por isso o stress costuma cansar.",
+      "Descansar, dormir e fazer pausas não é preguiça; recarrega o que o stress gasta.",
+      "Pequenas pausas ao longo do dia protegem-te melhor do que um grande colapso à noite."
+     ],
+     "q": "Em que altura do dia te sentes mais esgotado e o que fazes então?",
+     "c": "Marca hoje uma pausa a sério e passa-a sem ecrã."
+    },
+    "pt_BR": {
+     "t": "Estresse e energia",
+     "g": "Veja como o estresse gasta energia e por que o descanso faz parte da solução.",
+     "p": [
+      "Ficar em alerta gasta muita energia, por isso o estresse costuma cansar.",
+      "Descansar, dormir e fazer pausas não é preguiça; recarrega o que o estresse gasta.",
+      "Pequenas pausas ao longo do dia protegem você melhor que um grande colapso à noite."
+     ],
+     "q": "Em que hora do dia você se sente mais esgotado e o que faz então?",
+     "c": "Marque hoje uma pausa de verdade e passe-a sem tela."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Stress is common",
+     "g": "Remember that everyone feels stress and that it is not a personal failure.",
+     "p": [
+      "People of every age, job and country feel stress; you are far from alone.",
+      "Feeling stressed does not mean you are weak or doing life wrong.",
+      "Treating stress as normal makes it easier to talk about and to handle."
+     ],
+     "q": "Who in your life do you think also feels stress, even if they hide it?",
+     "c": "Tell one person today, lightly, that you have had a stressful moment."
+    },
+    "de": {
+     "t": "Stress ist normal",
+     "g": "Denke daran, dass jeder Stress spürt und dass es kein persönliches Versagen ist.",
+     "p": [
+      "Menschen jeden Alters, Berufs und Landes spüren Stress; du bist bei Weitem nicht allein.",
+      "Gestresst zu sein heißt nicht, schwach zu sein oder das Leben falsch zu machen.",
+      "Stress als normal zu sehen macht es leichter, darüber zu sprechen und damit umzugehen."
+     ],
+     "q": "Wer in deinem Umfeld spürt wohl auch Stress, selbst wenn er es versteckt?",
+     "c": "Erzähle heute einer Person leicht, dass du einen stressigen Moment hattest."
+    },
+    "es": {
+     "t": "El estrés es común",
+     "g": "Recuerda que todos sentimos estrés y que no es un fracaso personal.",
+     "p": [
+      "Personas de cualquier edad, trabajo y país sienten estrés; no estás solo.",
+      "Sentirte estresado no significa que seas débil ni que lo hagas mal.",
+      "Ver el estrés como algo normal facilita hablar de él y manejarlo."
+     ],
+     "q": "¿Quién en tu vida crees que también siente estrés, aunque lo disimule?",
+     "c": "Cuéntale hoy a alguien, con ligereza, que tuviste un momento estresante."
+    },
+    "fr": {
+     "t": "Le stress est courant",
+     "g": "Rappelle-toi que tout le monde ressent du stress et que ce n'est pas un échec personnel.",
+     "p": [
+      "Des gens de tout âge, métier et pays ressentent du stress; tu n'es pas seul.",
+      "Se sentir stressé ne veut pas dire être faible ou mal vivre sa vie.",
+      "Voir le stress comme normal aide à en parler et à le gérer."
+     ],
+     "q": "Qui dans ton entourage ressent aussi du stress, même s'il le cache ?",
+     "c": "Dis aujourd'hui à quelqu'un, simplement, que tu as eu un moment stressant."
+    },
+    "it": {
+     "t": "Lo stress è comune",
+     "g": "Ricorda che tutti provano stress e che non è un fallimento personale.",
+     "p": [
+      "Persone di ogni età, lavoro e paese provano stress; non sei affatto solo.",
+      "Sentirsi stressati non significa essere deboli o sbagliare la vita.",
+      "Vedere lo stress come normale rende più facile parlarne e gestirlo."
+     ],
+     "q": "Chi nella tua vita pensi provi stress, anche se lo nasconde?",
+     "c": "Racconta oggi a una persona, con leggerezza, che hai avuto un momento stressante."
+    },
+    "pt": {
+     "t": "O stress é comum",
+     "g": "Lembra-te de que toda a gente sente stress e que não é um fracasso pessoal.",
+     "p": [
+      "Pessoas de qualquer idade, profissão e país sentem stress; não estás sozinho.",
+      "Sentir-te stressado não significa que sejas fraco nem que estejas a viver mal.",
+      "Ver o stress como normal torna mais fácil falar dele e lidar com ele."
+     ],
+     "q": "Quem na tua vida achas que também sente stress, mesmo que o disfarce?",
+     "c": "Conta hoje a alguém, com leveza, que tiveste um momento stressante."
+    },
+    "pt_BR": {
+     "t": "O estresse é comum",
+     "g": "Lembre-se de que todo mundo sente estresse e que isso não é um fracasso pessoal.",
+     "p": [
+      "Pessoas de qualquer idade, profissão e país sentem estresse; você não está sozinho.",
+      "Sentir-se estressado não significa ser fraco nem estar vivendo errado.",
+      "Ver o estresse como algo normal facilita falar sobre ele e lidar com ele."
+     ],
+     "q": "Quem na sua vida você acha que também sente estresse, mesmo disfarçando?",
+     "c": "Conte hoje a alguém, com leveza, que você teve um momento estressante."
+    }
+   }
+  }
+ ]
+}

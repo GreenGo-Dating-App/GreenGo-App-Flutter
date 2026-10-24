@@ -1,0 +1,835 @@
+{
+ "topic": "series",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Adaptations from comics and games",
+     "g": "See how graphic novels and video games become TV stories.",
+     "p": [
+      "Comics already have designed characters, worlds and long story arcs.",
+      "Games offer rich settings, but a series must add story beats players do not need.",
+      "Good adaptations keep the spirit of the source, not every detail."
+     ],
+     "q": "Which comic or game world would you love to see on screen?",
+     "c": "Choose a comic or game and write what a first episode should show."
+    },
+    "de": {
+     "t": "Adaptionen von Comics und Spielen",
+     "g": "Sieh, wie Graphic Novels und Videospiele zu Fernsehgeschichten werden.",
+     "p": [
+      "Comics haben schon gestaltete Figuren, Welten und lange Erzählbögen.",
+      "Spiele bieten reiche Schauplätze, doch eine Serie braucht Handlungsschritte, die Spieler nicht brauchen.",
+      "Gute Adaptionen bewahren den Geist der Vorlage, nicht jedes Detail."
+     ],
+     "q": "Welche Comic- oder Spielwelt würdest du gern auf dem Bildschirm sehen?",
+     "c": "Wähle einen Comic oder ein Spiel und schreibe, was eine erste Folge zeigen sollte."
+    },
+    "es": {
+     "t": "Adaptaciones de cómics y videojuegos",
+     "g": "Mira cómo las novelas gráficas y los videojuegos se convierten en historias de tele.",
+     "p": [
+      "Los cómics ya tienen personajes, mundos y largos arcos diseñados.",
+      "Los juegos ofrecen escenarios ricos, pero la serie debe añadir giros que el jugador no necesita.",
+      "Las buenas adaptaciones conservan el espíritu del original, no cada detalle."
+     ],
+     "q": "¿Qué mundo de cómic o videojuego te encantaría ver en pantalla?",
+     "c": "Elige un cómic o juego y escribe qué debería mostrar un primer episodio."
+    },
+    "fr": {
+     "t": "Adaptations de BD et de jeux",
+     "g": "Vois comment romans graphiques et jeux vidéo deviennent des histoires télé.",
+     "p": [
+      "Les bandes dessinées ont déjà des personnages, des mondes et de longs arcs dessinés.",
+      "Les jeux offrent de riches décors, mais la série doit ajouter des temps narratifs dont le joueur n'a pas besoin.",
+      "Les bonnes adaptations gardent l'esprit de la source, pas chaque détail."
+     ],
+     "q": "Quel monde de BD ou de jeu aimerais-tu voir à l'écran ?",
+     "c": "Choisis une BD ou un jeu et écris ce qu'un premier épisode devrait montrer."
+    },
+    "it": {
+     "t": "Adattamenti da fumetti e videogiochi",
+     "g": "Scopri come graphic novel e videogiochi diventano storie televisive.",
+     "p": [
+      "I fumetti hanno già personaggi, mondi e lunghi archi narrativi disegnati.",
+      "I giochi offrono ambientazioni ricche, ma la serie deve aggiungere snodi che il giocatore non richiede.",
+      "I buoni adattamenti mantengono lo spirito della fonte, non ogni dettaglio."
+     ],
+     "q": "Quale mondo di fumetti o videogiochi ti piacerebbe vedere sullo schermo?",
+     "c": "Scegli un fumetto o un gioco e scrivi cosa dovrebbe mostrare un primo episodio."
+    },
+    "pt": {
+     "t": "Adaptações de banda desenhada e jogos",
+     "g": "Vê como as novelas gráficas e os videojogos se tornam histórias de TV.",
+     "p": [
+      "A banda desenhada já tem personagens, mundos e longos arcos desenhados.",
+      "Os jogos oferecem cenários ricos, mas a série precisa de acrescentar momentos que o jogador dispensa.",
+      "As boas adaptações mantêm o espírito da fonte, não cada pormenor."
+     ],
+     "q": "Que mundo de banda desenhada ou jogo gostarias de ver no ecrã?",
+     "c": "Escolhe uma banda desenhada ou jogo e escreve o que um primeiro episódio devia mostrar."
+    },
+    "pt_BR": {
+     "t": "Adaptações de quadrinhos e games",
+     "g": "Veja como graphic novels e videogames viram histórias de TV.",
+     "p": [
+      "Os quadrinhos já têm personagens, mundos e longos arcos desenhados.",
+      "Os games oferecem cenários ricos, mas a série precisa acrescentar momentos que o jogador dispensa.",
+      "As boas adaptações mantêm o espírito da fonte, não cada detalhe."
+     ],
+     "q": "Que mundo de quadrinhos ou games você gostaria de ver na tela?",
+     "c": "Escolha um quadrinho ou game e escreva o que um primeiro episódio deveria mostrar."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Christmas and holiday episodes",
+     "g": "See how special episodes make series part of family traditions.",
+     "p": [
+      "Holiday episodes often bring a gentle lesson about giving, family or friends.",
+      "Many shows use warm settings, special songs and small surprises.",
+      "Families may rewatch the same festive episode every year."
+     ],
+     "q": "Is there a holiday episode you watch every year, or would like to?",
+     "c": "Write the plot of a holiday episode for any show in two sentences."
+    },
+    "de": {
+     "t": "Weihnachts- und Feiertagsfolgen",
+     "g": "Sieh, wie Sonderfolgen Serien zu einem Teil von Familientraditionen machen.",
+     "p": [
+      "Feiertagsfolgen bringen oft eine sanfte Lehre über Schenken, Familie oder Freunde.",
+      "Viele Serien nutzen warme Schauplätze, besondere Lieder und kleine Überraschungen.",
+      "Familien sehen dieselbe Festfolge vielleicht jedes Jahr wieder."
+     ],
+     "q": "Gibt es eine Feiertagsfolge, die du jedes Jahr siehst oder gern sehen würdest?",
+     "c": "Schreibe die Handlung einer Feiertagsfolge für eine Serie in zwei Sätzen."
+    },
+    "es": {
+     "t": "Episodios de Navidad y fiestas",
+     "g": "Mira cómo los episodios especiales hacen que las series formen parte de las tradiciones familiares.",
+     "p": [
+      "Los episodios festivos suelen traer una suave lección sobre dar, la familia o los amigos.",
+      "Muchas series usan escenarios cálidos, canciones especiales y pequeñas sorpresas.",
+      "Las familias pueden volver a ver el mismo episodio festivo cada año."
+     ],
+     "q": "¿Hay un episodio festivo que veas cada año o que te gustaría ver?",
+     "c": "Escribe en dos frases el argumento de un episodio festivo para cualquier serie."
+    },
+    "fr": {
+     "t": "Épisodes de Noël et de fêtes",
+     "g": "Vois comment les épisodes spéciaux font des séries une part des traditions familiales.",
+     "p": [
+      "Les épisodes de fête apportent souvent une douce leçon sur le partage, la famille ou l'amitié.",
+      "Beaucoup de séries utilisent des décors chaleureux, des chansons spéciales et de petites surprises.",
+      "Les familles revoient parfois le même épisode de fête chaque année."
+     ],
+     "q": "Y a-t-il un épisode de fête que tu regardes chaque année, ou que tu aimerais voir ?",
+     "c": "Écris en deux phrases l'intrigue d'un épisode de fête pour une série au choix."
+    },
+    "it": {
+     "t": "Episodi di Natale e delle feste",
+     "g": "Scopri come gli episodi speciali fanno delle serie parte delle tradizioni di famiglia.",
+     "p": [
+      "Gli episodi festivi portano spesso una dolce lezione su dono, famiglia o amici.",
+      "Molte serie usano ambientazioni calde, canzoni speciali e piccole sorprese.",
+      "Le famiglie possono rivedere lo stesso episodio festivo ogni anno."
+     ],
+     "q": "C'è un episodio festivo che guardi ogni anno, o che vorresti guardare?",
+     "c": "Scrivi in due frasi la trama di un episodio festivo per una serie qualsiasi."
+    },
+    "pt": {
+     "t": "Episódios de Natal e de festas",
+     "g": "Vê como os episódios especiais tornam as séries parte das tradições de família.",
+     "p": [
+      "Os episódios festivos trazem muitas vezes uma suave lição sobre dar, família ou amigos.",
+      "Muitas séries usam cenários calorosos, canções especiais e pequenas surpresas.",
+      "As famílias podem rever o mesmo episódio festivo todos os anos."
+     ],
+     "q": "Há algum episódio festivo que vejas todos os anos, ou que gostasses de ver?",
+     "c": "Escreve em duas frases o enredo de um episódio festivo para qualquer série."
+    },
+    "pt_BR": {
+     "t": "Episódios de Natal e de festas",
+     "g": "Veja como os episódios especiais fazem as séries virarem parte das tradições de família.",
+     "p": [
+      "Os episódios festivos trazem muitas vezes uma lição suave sobre dar, família ou amigos.",
+      "Muitas séries usam cenários calorosos, músicas especiais e pequenas surpresas.",
+      "As famílias podem rever o mesmo episódio festivo todo ano."
+     ],
+     "q": "Existe algum episódio festivo que você vê todo ano, ou que gostaria de ver?",
+     "c": "Escreva em duas frases o enredo de um episódio festivo para qualquer série."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The bottle episode",
+     "g": "Learn about an episode set in one place with few characters.",
+     "p": [
+      "A bottle episode stays in one location, often to save money.",
+      "With nowhere to go, the story relies on dialogue and character.",
+      "Some of the most loved episodes of many shows are bottle episodes."
+     ],
+     "q": "What small, one-room story would you enjoy watching unfold?",
+     "c": "Plot a bottle episode: one room, two characters, one problem to solve."
+    },
+    "de": {
+     "t": "Die Flaschenfolge",
+     "g": "Lerne eine Folge kennen, die an einem Ort mit wenigen Figuren spielt.",
+     "p": [
+      "Eine Bottle Episode bleibt an einem Ort, oft um Geld zu sparen.",
+      "Ohne andere Orte lebt die Geschichte von Dialog und Figuren.",
+      "Manche der beliebtesten Folgen vieler Serien sind Bottle Episodes."
+     ],
+     "q": "Welche kleine Ein-Raum-Geschichte würdest du gern sehen?",
+     "c": "Plane eine Bottle Episode: ein Raum, zwei Figuren, ein Problem zu lösen."
+    },
+    "es": {
+     "t": "El episodio botella",
+     "g": "Aprende qué es un episodio ambientado en un solo lugar con pocos personajes.",
+     "p": [
+      "Un episodio botella se queda en una sola localización, a menudo para ahorrar dinero.",
+      "Sin otros lugares, la historia depende del diálogo y de los personajes.",
+      "Algunos de los episodios más queridos de muchas series son episodios botella."
+     ],
+     "q": "¿Qué pequeña historia de una sola habitación te gustaría ver?",
+     "c": "Planea un episodio botella: una habitación, dos personajes, un problema."
+    },
+    "fr": {
+     "t": "L'épisode bouteille",
+     "g": "Découvre un épisode situé en un seul lieu avec peu de personnages.",
+     "p": [
+      "Un épisode bouteille reste dans un seul décor, souvent pour économiser de l'argent.",
+      "Sans autre lieu, l'histoire repose sur le dialogue et les personnages.",
+      "Certains des épisodes les plus aimés de nombreuses séries sont des épisodes bouteille."
+     ],
+     "q": "Quelle petite histoire à huis clos aimerais-tu voir se dérouler ?",
+     "c": "Imagine un épisode bouteille : une pièce, deux personnages, un problème à résoudre."
+    },
+    "it": {
+     "t": "L'episodio bottiglia",
+     "g": "Scopri un episodio ambientato in un solo luogo con pochi personaggi.",
+     "p": [
+      "Un episodio bottiglia resta in un'unica location, spesso per risparmiare.",
+      "Senza altri luoghi, la storia si regge su dialoghi e personaggi.",
+      "Alcuni degli episodi più amati di molte serie sono episodi bottiglia."
+     ],
+     "q": "Quale piccola storia in una sola stanza ti piacerebbe vedere?",
+     "c": "Progetta un episodio bottiglia: una stanza, due personaggi, un problema da risolvere."
+    },
+    "pt": {
+     "t": "O episódio garrafa",
+     "g": "Descobre um episódio passado num só lugar com poucas personagens.",
+     "p": [
+      "Um episódio garrafa fica num só cenário, muitas vezes para poupar dinheiro.",
+      "Sem outros lugares, a história depende do diálogo e das personagens.",
+      "Alguns dos episódios mais queridos de muitas séries são episódios garrafa."
+     ],
+     "q": "Que pequena história numa só sala gostarias de ver?",
+     "c": "Planeia um episódio garrafa: uma sala, duas personagens, um problema a resolver."
+    },
+    "pt_BR": {
+     "t": "O episódio garrafa",
+     "g": "Conheça um episódio passado em um só lugar com poucos personagens.",
+     "p": [
+      "Um episódio garrafa fica num só cenário, muitas vezes para economizar dinheiro.",
+      "Sem outros lugares, a história depende do diálogo e dos personagens.",
+      "Alguns dos episódios mais queridos de muitas séries são episódios garrafa."
+     ],
+     "q": "Que pequena história numa só sala você gostaria de ver?",
+     "c": "Planeje um episódio garrafa: uma sala, dois personagens, um problema a resolver."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Character catchphrases",
+     "g": "See why repeated lines become part of fans' everyday talk.",
+     "p": [
+      "A catchphrase is a short line a character says again and again.",
+      "It works when it is simple, fun to say and shows who the character is.",
+      "Fans quote catchphrases to share a joke and feel part of a community."
+     ],
+     "q": "Which TV catchphrase do you or your friends still quote?",
+     "c": "Invent a catchphrase for a character and use it in a short dialogue."
+    },
+    "de": {
+     "t": "Spruch-Markenzeichen von Figuren",
+     "g": "Sieh, warum wiederholte Sätze Teil der Alltagssprache von Fans werden.",
+     "p": [
+      "Ein Catchphrase ist ein kurzer Satz, den eine Figur immer wieder sagt.",
+      "Er wirkt, wenn er einfach ist, Spaß macht und zeigt, wer die Figur ist.",
+      "Fans zitieren Catchphrases, um Witze zu teilen und sich als Gemeinschaft zu fühlen."
+     ],
+     "q": "Welchen Fernsehspruch zitierst du oder deine Freunde noch?",
+     "c": "Erfinde einen Catchphrase für eine Figur und nutze ihn in einem kurzen Dialog."
+    },
+    "es": {
+     "t": "Frases típicas de personajes",
+     "g": "Mira por qué las frases repetidas pasan a ser parte del habla diaria de los fans.",
+     "p": [
+      "Una frase típica es una línea corta que un personaje repite una y otra vez.",
+      "Funciona cuando es simple, divertida de decir y muestra cómo es el personaje.",
+      "Los fans citan esas frases para compartir un chiste y sentirse comunidad."
+     ],
+     "q": "¿Qué frase de la tele sigues citando tú o tus amigos?",
+     "c": "Inventa una frase típica para un personaje y úsala en un diálogo corto."
+    },
+    "fr": {
+     "t": "Les répliques cultes",
+     "g": "Vois pourquoi des répliques répétées entrent dans le langage quotidien des fans.",
+     "p": [
+      "Une réplique culte est une courte phrase qu'un personnage répète encore et encore.",
+      "Elle marche quand elle est simple, amusante à dire et révèle qui est le personnage.",
+      "Les fans la citent pour partager une blague et se sentir en communauté."
+     ],
+     "q": "Quelle réplique télé cites-tu encore, toi ou tes amis ?",
+     "c": "Invente une réplique culte pour un personnage et utilise-la dans un court dialogue."
+    },
+    "it": {
+     "t": "I tormentoni dei personaggi",
+     "g": "Scopri perché le battute ripetute entrano nel linguaggio quotidiano dei fan.",
+     "p": [
+      "Un tormentone è una breve frase che un personaggio ripete di continuo.",
+      "Funziona se è semplice, divertente da dire e mostra chi è il personaggio.",
+      "I fan lo citano per condividere una battuta e sentirsi parte di una comunità."
+     ],
+     "q": "Quale tormentone televisivo citi ancora tu o i tuoi amici?",
+     "c": "Inventa un tormentone per un personaggio e usalo in un breve dialogo."
+    },
+    "pt": {
+     "t": "Bordões de personagens",
+     "g": "Vê porque é que falas repetidas passam a fazer parte da conversa dos fãs.",
+     "p": [
+      "Um bordão é uma fala curta que uma personagem repete vezes sem conta.",
+      "Funciona quando é simples, divertido de dizer e mostra quem a personagem é.",
+      "Os fãs citam bordões para partilhar uma piada e sentir-se numa comunidade."
+     ],
+     "q": "Que bordão da TV ainda citas, tu ou os teus amigos?",
+     "c": "Inventa um bordão para uma personagem e usa-o num diálogo curto."
+    },
+    "pt_BR": {
+     "t": "Bordões de personagens",
+     "g": "Veja por que falas repetidas passam a fazer parte da conversa dos fãs.",
+     "p": [
+      "Um bordão é uma fala curta que um personagem repete vezes sem conta.",
+      "Funciona quando é simples, divertido de dizer e mostra quem o personagem é.",
+      "Os fãs citam bordões para compartilhar uma piada e se sentir numa comunidade."
+     ],
+     "q": "Que bordão da TV você ou seus amigos ainda citam?",
+     "c": "Invente um bordão para um personagem e use num diálogo curto."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Running gags",
+     "g": "Look at jokes that come back again and again across episodes.",
+     "p": [
+      "A running gag is a joke that returns, often with a twist each time.",
+      "The pleasure is recognising it and guessing how it will return.",
+      "It rewards loyal viewers and shapes the personality of the show."
+     ],
+     "q": "What running joke from a show do you enjoy most?",
+     "c": "Create a running gag: a small event that happens in three different scenes."
+    },
+    "de": {
+     "t": "Running Gags",
+     "g": "Betrachte Witze, die in Folge um Folge wiederkehren.",
+     "p": [
+      "Ein Running Gag ist ein Witz, der wiederkehrt, oft jedes Mal mit einer Wendung.",
+      "Das Vergnügen liegt darin, ihn zu erkennen und zu raten, wie er zurückkehrt.",
+      "Er belohnt treue Zuschauer und prägt die Persönlichkeit der Serie."
+     ],
+     "q": "Welcher wiederkehrende Witz aus einer Serie gefällt dir am meisten?",
+     "c": "Erfinde einen Running Gag: ein kleines Ereignis in drei verschiedenen Szenen."
+    },
+    "es": {
+     "t": "Chistes recurrentes",
+     "g": "Mira los chistes que vuelven una y otra vez a lo largo de los episodios.",
+     "p": [
+      "Un chiste recurrente vuelve, a menudo con un giro nuevo cada vez.",
+      "El placer está en reconocerlo y adivinar cómo volverá.",
+      "Premia al público fiel y da personalidad a la serie."
+     ],
+     "q": "¿Qué chiste recurrente de una serie disfrutas más?",
+     "c": "Crea un chiste recurrente: un pequeño suceso que ocurre en tres escenas distintas."
+    },
+    "fr": {
+     "t": "Les gags récurrents",
+     "g": "Regarde les blagues qui reviennent encore et encore d'un épisode à l'autre.",
+     "p": [
+      "Un gag récurrent revient, souvent avec une variante à chaque fois.",
+      "Le plaisir est de le reconnaître et de deviner comment il reviendra.",
+      "Il récompense les spectateurs fidèles et façonne la personnalité de la série."
+     ],
+     "q": "Quel gag récurrent d'une série préfères-tu ?",
+     "c": "Crée un gag récurrent : un petit événement qui arrive dans trois scènes différentes."
+    },
+    "it": {
+     "t": "Le gag ricorrenti",
+     "g": "Osserva le battute che tornano ancora e ancora di episodio in episodio.",
+     "p": [
+      "Una gag ricorrente torna, spesso con una variante ogni volta.",
+      "Il piacere sta nel riconoscerla e indovinare come tornerà.",
+      "Premia gli spettatori fedeli e dà personalità alla serie."
+     ],
+     "q": "Quale gag ricorrente di una serie ti piace di più?",
+     "c": "Crea una gag ricorrente: un piccolo evento che accade in tre scene diverse."
+    },
+    "pt": {
+     "t": "As piadas recorrentes",
+     "g": "Olha para piadas que voltam vezes sem conta ao longo dos episódios.",
+     "p": [
+      "Uma piada recorrente volta, muitas vezes com uma reviravolta diferente.",
+      "O prazer está em reconhecê-la e adivinhar como vai regressar.",
+      "Recompensa o público fiel e dá personalidade à série."
+     ],
+     "q": "Que piada recorrente de uma série mais aprecias?",
+     "c": "Cria uma piada recorrente: um pequeno acontecimento que surge em três cenas diferentes."
+    },
+    "pt_BR": {
+     "t": "As piadas recorrentes",
+     "g": "Veja as piadas que voltam várias vezes ao longo dos episódios.",
+     "p": [
+      "Uma piada recorrente volta, muitas vezes com uma reviravolta diferente.",
+      "O prazer está em reconhecê-la e adivinhar como ela vai voltar.",
+      "Recompensa o público fiel e dá personalidade à série."
+     ],
+     "q": "Que piada recorrente de uma série você mais curte?",
+     "c": "Crie uma piada recorrente: um pequeno acontecimento que surge em três cenas diferentes."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Small talk about series",
+     "g": "Learn useful phrases to recommend, describe and discuss shows.",
+     "p": [
+      "To recommend: You might like this if you enjoy clever, warm comedies.",
+      "To describe: It follows a group of friends who run a small shop.",
+      "To discuss: What did you think of the ending, no spoilers?"
+     ],
+     "q": "Which phrase would you use to get a friend to try your favourite show?",
+     "c": "Practise one recommendation, one description and one question out loud."
+    },
+    "de": {
+     "t": "Smalltalk über Serien",
+     "g": "Lerne nützliche Sätze, um Serien zu empfehlen, zu beschreiben und zu besprechen.",
+     "p": [
+      "Zum Empfehlen: Das könnte dir gefallen, wenn du kluge, warme Komödien magst.",
+      "Zum Beschreiben: Sie handelt von Freunden, die einen kleinen Laden führen.",
+      "Zum Besprechen: Wie fandest du das Ende, ohne Spoiler?"
+     ],
+     "q": "Welchen Satz würdest du nutzen, damit ein Freund deine Lieblingsserie ausprobiert?",
+     "c": "Übe laut eine Empfehlung, eine Beschreibung und eine Frage."
+    },
+    "es": {
+     "t": "Conversación sobre series",
+     "g": "Aprende frases útiles para recomendar, describir y comentar series.",
+     "p": [
+      "Para recomendar: Quizá te guste si disfrutas de comedias inteligentes y cálidas.",
+      "Para describir: Sigue a un grupo de amigos que lleva una tienda pequeña.",
+      "Para comentar: ¿Qué te pareció el final, sin spoilers?"
+     ],
+     "q": "¿Qué frase usarías para que un amigo pruebe tu serie favorita?",
+     "c": "Practica en voz alta una recomendación, una descripción y una pregunta."
+    },
+    "fr": {
+     "t": "Bavarder à propos des séries",
+     "g": "Apprends des phrases utiles pour recommander, décrire et discuter des séries.",
+     "p": [
+      "Pour recommander : Ça pourrait te plaire si tu aimes les comédies fines et chaleureuses.",
+      "Pour décrire : Elle suit un groupe d'amis qui tient une petite boutique.",
+      "Pour discuter : Qu'as-tu pensé de la fin, sans spoiler ?"
+     ],
+     "q": "Quelle phrase utiliserais-tu pour qu'un ami essaie ta série préférée ?",
+     "c": "Entraîne-toi à voix haute : une recommandation, une description et une question."
+    },
+    "it": {
+     "t": "Fare due chiacchiere sulle serie",
+     "g": "Impara frasi utili per consigliare, descrivere e commentare le serie.",
+     "p": [
+      "Per consigliare: Potrebbe piacerti se ami le commedie intelligenti e calde.",
+      "Per descrivere: Segue un gruppo di amici che gestisce un piccolo negozio.",
+      "Per commentare: Che ne pensi del finale, senza spoiler?"
+     ],
+     "q": "Quale frase useresti per far provare a un amico la tua serie preferita?",
+     "c": "Esercitati ad alta voce con un consiglio, una descrizione e una domanda."
+    },
+    "pt": {
+     "t": "Conversa sobre séries",
+     "g": "Aprende frases úteis para recomendar, descrever e comentar séries.",
+     "p": [
+      "Para recomendar: Talvez gostes se apreciares comédias inteligentes e calorosas.",
+      "Para descrever: Acompanha um grupo de amigos que gere uma loja pequena.",
+      "Para comentar: Que achaste do final, sem spoilers?"
+     ],
+     "q": "Que frase usarias para que um amigo experimente a tua série preferida?",
+     "c": "Pratica em voz alta uma recomendação, uma descrição e uma pergunta."
+    },
+    "pt_BR": {
+     "t": "Conversa sobre séries",
+     "g": "Aprenda frases úteis para recomendar, descrever e comentar séries.",
+     "p": [
+      "Para recomendar: Talvez você goste se curte comédias inteligentes e calorosas.",
+      "Para descrever: Acompanha um grupo de amigos que toca uma lojinha.",
+      "Para comentar: O que achou do final, sem spoilers?"
+     ],
+     "q": "Que frase você usaria para um amigo experimentar sua série favorita?",
+     "c": "Pratique em voz alta uma recomendação, uma descrição e uma pergunta."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Describing characters",
+     "g": "Learn words for personality, motivation and change in TV characters.",
+     "p": [
+      "Personality words: stubborn, curious, kind, shy, ambitious, loyal.",
+      "Motivation answers what a character wants and why.",
+      "Change is how the character grows between the first and last episode."
+     ],
+     "q": "Which character would you describe as loyal and funny at once?",
+     "c": "Describe a character in three sentences: personality, goal and change."
+    },
+    "de": {
+     "t": "Figuren beschreiben",
+     "g": "Lerne Wörter für Persönlichkeit, Antrieb und Wandel von Fernsehfiguren.",
+     "p": [
+      "Persönlichkeitswörter: stur, neugierig, freundlich, schüchtern, ehrgeizig, loyal.",
+      "Antrieb beantwortet, was eine Figur will und warum.",
+      "Wandel ist, wie die Figur zwischen erster und letzter Folge wächst."
+     ],
+     "q": "Welche Figur würdest du als loyal und witzig zugleich beschreiben?",
+     "c": "Beschreibe eine Figur in drei Sätzen: Persönlichkeit, Ziel und Wandel."
+    },
+    "es": {
+     "t": "Describir personajes",
+     "g": "Aprende palabras para la personalidad, la motivación y el cambio de los personajes.",
+     "p": [
+      "Palabras de personalidad: terco, curioso, amable, tímido, ambicioso, leal.",
+      "La motivación responde a qué quiere el personaje y por qué.",
+      "El cambio es cómo crece el personaje entre el primer y el último episodio."
+     ],
+     "q": "¿Qué personaje describirías como leal y gracioso a la vez?",
+     "c": "Describe a un personaje en tres frases: personalidad, meta y cambio."
+    },
+    "fr": {
+     "t": "Décrire les personnages",
+     "g": "Apprends des mots pour la personnalité, la motivation et l'évolution des personnages.",
+     "p": [
+      "Mots de personnalité : têtu, curieux, gentil, timide, ambitieux, loyal.",
+      "La motivation répond à ce que veut le personnage et pourquoi.",
+      "L'évolution, c'est la façon dont le personnage grandit entre le premier et le dernier épisode."
+     ],
+     "q": "Quel personnage décrirais-tu comme loyal et drôle à la fois ?",
+     "c": "Décris un personnage en trois phrases : personnalité, but et évolution."
+    },
+    "it": {
+     "t": "Descrivere i personaggi",
+     "g": "Impara parole per personalità, motivazione e cambiamento dei personaggi.",
+     "p": [
+      "Parole di personalità: testardo, curioso, gentile, timido, ambizioso, leale.",
+      "La motivazione risponde a cosa vuole il personaggio e perché.",
+      "Il cambiamento è come il personaggio cresce tra il primo e l'ultimo episodio."
+     ],
+     "q": "Quale personaggio descriveresti come leale e divertente insieme?",
+     "c": "Descrivi un personaggio in tre frasi: personalità, obiettivo e cambiamento."
+    },
+    "pt": {
+     "t": "Descrever personagens",
+     "g": "Aprende palavras para a personalidade, a motivação e a mudança das personagens.",
+     "p": [
+      "Palavras de personalidade: teimosa, curiosa, simpática, tímida, ambiciosa, leal.",
+      "A motivação responde ao que a personagem quer e porquê.",
+      "A mudança é como a personagem cresce entre o primeiro e o último episódio."
+     ],
+     "q": "Que personagem descreverias como leal e divertida ao mesmo tempo?",
+     "c": "Descreve uma personagem em três frases: personalidade, objetivo e mudança."
+    },
+    "pt_BR": {
+     "t": "Descrever personagens",
+     "g": "Aprenda palavras para a personalidade, a motivação e a mudança dos personagens.",
+     "p": [
+      "Palavras de personalidade: teimoso, curioso, gentil, tímido, ambicioso, leal.",
+      "A motivação responde ao que o personagem quer e por quê.",
+      "A mudança é como o personagem cresce entre o primeiro e o último episódio."
+     ],
+     "q": "Que personagem você descreveria como leal e engraçado ao mesmo tempo?",
+     "c": "Descreva um personagem em três frases: personalidade, objetivo e mudança."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Describing tone and mood",
+     "g": "Find words for how a series feels: light, cozy, tense, bittersweet.",
+     "p": [
+      "Tone is the overall feeling of a show, like warm, witty or dreamy.",
+      "Mood can shift scene by scene through music, light and pace.",
+      "Precise words help you recommend a show to the right person."
+     ],
+     "q": "Which three words describe the feel of your favourite series?",
+     "c": "Describe two different shows using one tone word and one mood word each."
+    },
+    "de": {
+     "t": "Ton und Stimmung beschreiben",
+     "g": "Finde Wörter dafür, wie sich eine Serie anfühlt: leicht, gemütlich, spannend, wehmütig.",
+     "p": [
+      "Der Ton ist das Gesamtgefühl einer Serie, etwa warm, witzig oder verträumt.",
+      "Die Stimmung kann sich von Szene zu Szene durch Musik, Licht und Tempo ändern.",
+      "Genaue Wörter helfen, eine Serie der richtigen Person zu empfehlen."
+     ],
+     "q": "Welche drei Wörter beschreiben das Gefühl deiner Lieblingsserie?",
+     "c": "Beschreibe zwei verschiedene Serien mit je einem Ton- und einem Stimmungswort."
+    },
+    "es": {
+     "t": "Describir el tono y el ambiente",
+     "g": "Encuentra palabras para cómo se siente una serie: ligera, acogedora, tensa, agridulce.",
+     "p": [
+      "El tono es la sensación general de una serie, como cálida, ingeniosa o soñadora.",
+      "El ambiente puede cambiar escena a escena con la música, la luz y el ritmo.",
+      "Las palabras precisas ayudan a recomendar una serie a la persona adecuada."
+     ],
+     "q": "¿Qué tres palabras describen la sensación de tu serie favorita?",
+     "c": "Describe dos series distintas con una palabra de tono y una de ambiente cada una."
+    },
+    "fr": {
+     "t": "Décrire le ton et l'ambiance",
+     "g": "Trouve des mots pour ce que ressent une série : légère, cosy, tendue, douce-amère.",
+     "p": [
+      "Le ton est le sentiment général d'une série, comme chaleureux, spirituel ou rêveur.",
+      "L'ambiance peut changer de scène en scène par la musique, la lumière et le rythme.",
+      "Des mots précis aident à recommander une série à la bonne personne."
+     ],
+     "q": "Quels trois mots décrivent l'impression que donne ta série préférée ?",
+     "c": "Décris deux séries différentes avec un mot de ton et un mot d'ambiance chacune."
+    },
+    "it": {
+     "t": "Descrivere tono e atmosfera",
+     "g": "Trova parole per come si sente una serie: leggera, accogliente, tesa, agrodolce.",
+     "p": [
+      "Il tono è la sensazione complessiva di una serie, come calda, arguta o sognante.",
+      "L'atmosfera può cambiare di scena in scena con musica, luce e ritmo.",
+      "Parole precise aiutano a consigliare una serie alla persona giusta."
+     ],
+     "q": "Quali tre parole descrivono la sensazione della tua serie preferita?",
+     "c": "Descrivi due serie diverse con una parola di tono e una di atmosfera ciascuna."
+    },
+    "pt": {
+     "t": "Descrever o tom e o ambiente",
+     "g": "Encontra palavras para como uma série se sente: leve, aconchegante, tensa, agridoce.",
+     "p": [
+      "O tom é a sensação geral de uma série, como calorosa, espirituosa ou sonhadora.",
+      "O ambiente pode mudar de cena em cena com a música, a luz e o ritmo.",
+      "Palavras precisas ajudam a recomendar uma série à pessoa certa."
+     ],
+     "q": "Que três palavras descrevem a sensação da tua série preferida?",
+     "c": "Descreve duas séries diferentes com uma palavra de tom e uma de ambiente cada."
+    },
+    "pt_BR": {
+     "t": "Descrever o tom e o clima",
+     "g": "Encontre palavras para como uma série soa: leve, aconchegante, tensa, agridoce.",
+     "p": [
+      "O tom é a sensação geral de uma série, como calorosa, espirituosa ou sonhadora.",
+      "O clima pode mudar de cena em cena com a música, a luz e o ritmo.",
+      "Palavras precisas ajudam a recomendar uma série à pessoa certa."
+     ],
+     "q": "Que três palavras descrevem a sensação da sua série favorita?",
+     "c": "Descreva duas séries diferentes com uma palavra de tom e uma de clima cada."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Building your watchlist",
+     "g": "Organize what to watch with priorities, moods and variety.",
+     "p": [
+      "Keep a short list, not a mountain: five titles is plenty.",
+      "Mix lengths and moods: one light comedy, one long drama, one short series.",
+      "Move a show up when a friend recommends it with real enthusiasm."
+     ],
+     "q": "Which three series are at the top of your list right now?",
+     "c": "Write a five-title watchlist with a mood label next to each."
+    },
+    "de": {
+     "t": "Deine Merkliste aufbauen",
+     "g": "Ordne, was du sehen willst, mit Prioritäten, Stimmungen und Abwechslung.",
+     "p": [
+      "Führe eine kurze Liste statt eines Bergs: fünf Titel reichen völlig.",
+      "Mische Längen und Stimmungen: eine leichte Komödie, ein langes Drama, eine kurze Serie.",
+      "Rücke eine Serie nach oben, wenn ein Freund sie mit echter Begeisterung empfiehlt."
+     ],
+     "q": "Welche drei Serien stehen gerade ganz oben auf deiner Liste?",
+     "c": "Schreibe eine Merkliste mit fünf Titeln und einer Stimmungsangabe daneben."
+    },
+    "es": {
+     "t": "Crear tu lista de pendientes",
+     "g": "Organiza qué ver con prioridades, estados de ánimo y variedad.",
+     "p": [
+      "Ten una lista corta, no una montaña: cinco títulos son suficientes.",
+      "Mezcla duraciones y ánimos: una comedia ligera, un drama largo, una serie corta.",
+      "Sube una serie en la lista cuando un amigo la recomiende con entusiasmo real."
+     ],
+     "q": "¿Qué tres series están ahora mismo arriba en tu lista?",
+     "c": "Escribe una lista de cinco títulos con una etiqueta de ánimo junto a cada uno."
+    },
+    "fr": {
+     "t": "Construire ta liste à voir",
+     "g": "Organise ce que tu veux regarder avec priorités, humeurs et variété.",
+     "p": [
+      "Garde une liste courte, pas une montagne : cinq titres, c'est largement assez.",
+      "Mélange durées et humeurs : une comédie légère, un long drame, une série courte.",
+      "Fais monter une série quand un ami la recommande avec un vrai enthousiasme."
+     ],
+     "q": "Quelles trois séries sont en tête de ta liste en ce moment ?",
+     "c": "Écris une liste de cinq titres avec une étiquette d'humeur à côté de chacun."
+    },
+    "it": {
+     "t": "Costruire la tua lista da vedere",
+     "g": "Organizza cosa guardare con priorità, umori e varietà.",
+     "p": [
+      "Tieni una lista breve, non una montagna: cinque titoli bastano.",
+      "Mescola durate e umori: una commedia leggera, un dramma lungo, una serie breve.",
+      "Sposta in alto una serie quando un amico la consiglia con vero entusiasmo."
+     ],
+     "q": "Quali tre serie sono in cima alla tua lista adesso?",
+     "c": "Scrivi una lista di cinque titoli con un'etichetta d'umore accanto a ciascuno."
+    },
+    "pt": {
+     "t": "Construir a tua lista de séries",
+     "g": "Organiza o que ver com prioridades, disposições e variedade.",
+     "p": [
+      "Mantém uma lista curta, não uma montanha: cinco títulos chegam bem.",
+      "Mistura durações e disposições: uma comédia leve, um drama longo, uma série curta.",
+      "Sobe uma série na lista quando um amigo a recomenda com entusiasmo a sério."
+     ],
+     "q": "Que três séries estão agora no topo da tua lista?",
+     "c": "Escreve uma lista de cinco títulos com uma etiqueta de disposição ao lado de cada um."
+    },
+    "pt_BR": {
+     "t": "Montando sua lista de séries",
+     "g": "Organize o que assistir com prioridades, humores e variedade.",
+     "p": [
+      "Mantenha uma lista curta, não uma montanha: cinco títulos já bastam.",
+      "Misture durações e humores: uma comédia leve, um drama longo, uma série curta.",
+      "Suba uma série na lista quando um amigo a recomendar com entusiasmo de verdade."
+     ],
+     "q": "Que três séries estão no topo da sua lista agora?",
+     "c": "Escreva uma lista de cinco títulos com uma etiqueta de humor ao lado de cada um."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: watching like a fan",
+     "g": "Revisit your viewing habits, show vocabulary and growing watchlist.",
+     "p": [
+      "You now know formats, genres, finales, cold opens and spoiler etiquette.",
+      "You have words to describe characters, tone and mood.",
+      "Active watching means noticing choices, not just following the plot."
+     ],
+     "q": "What is the most useful thing you have learned about TV so far?",
+     "c": "Watch one episode actively and note three choices the writers made."
+    },
+    "de": {
+     "t": "Rückblick: Schauen wie ein Fan",
+     "g": "Blicke auf deine Sehgewohnheiten, dein Serienvokabular und deine wachsende Merkliste.",
+     "p": [
+      "Du kennst jetzt Formate, Genres, Finales, Cold Opens und Spoiler-Etikette.",
+      "Du hast Wörter, um Figuren, Ton und Stimmung zu beschreiben.",
+      "Aktives Schauen heißt, Entscheidungen zu bemerken, nicht nur der Handlung zu folgen."
+     ],
+     "q": "Was ist das Nützlichste, das du bisher über Fernsehen gelernt hast?",
+     "c": "Sieh eine Folge aktiv und notiere drei Entscheidungen der Autoren."
+    },
+    "es": {
+     "t": "Repaso: ver como un fan",
+     "g": "Repasa tus hábitos de visionado, el vocabulario y tu lista creciente.",
+     "p": [
+      "Ya conoces formatos, géneros, finales, cold opens y la etiqueta con los spoilers.",
+      "Tienes palabras para describir personajes, tono y ambiente.",
+      "Ver con atención es notar las decisiones, no solo seguir la trama."
+     ],
+     "q": "¿Qué es lo más útil que has aprendido hasta ahora sobre la tele?",
+     "c": "Mira un episodio con atención y anota tres decisiones de los guionistas."
+    },
+    "fr": {
+     "t": "Bilan : regarder en fan",
+     "g": "Revois tes habitudes de visionnage, ton vocabulaire et ta liste qui grandit.",
+     "p": [
+      "Tu connais maintenant formats, genres, finales, cold opens et étiquette du spoiler.",
+      "Tu as des mots pour décrire personnages, ton et ambiance.",
+      "Regarder activement, c'est remarquer les choix, pas seulement suivre l'intrigue."
+     ],
+     "q": "Quelle est la chose la plus utile que tu as apprise sur la télé jusqu'ici ?",
+     "c": "Regarde un épisode activement et note trois choix des scénaristes."
+    },
+    "it": {
+     "t": "Ripasso: guardare da fan",
+     "g": "Ripensa alle tue abitudini, al vocabolario delle serie e alla lista che cresce.",
+     "p": [
+      "Ora conosci formati, generi, finali, cold open e galateo degli spoiler.",
+      "Hai parole per descrivere personaggi, tono e atmosfera.",
+      "Guardare in modo attivo significa notare le scelte, non solo seguire la trama."
+     ],
+     "q": "Qual è la cosa più utile che hai imparato finora sulla TV?",
+     "c": "Guarda un episodio in modo attivo e annota tre scelte degli autori."
+    },
+    "pt": {
+     "t": "Revisão: ver como um fã",
+     "g": "Revê os teus hábitos, o vocabulário de séries e a tua lista a crescer.",
+     "p": [
+      "Já conheces formatos, géneros, finais, cold opens e a etiqueta dos spoilers.",
+      "Tens palavras para descrever personagens, tom e ambiente.",
+      "Ver ativamente é reparar nas escolhas, não só seguir o enredo."
+     ],
+     "q": "Qual é a coisa mais útil que aprendeste até agora sobre TV?",
+     "c": "Vê um episódio ativamente e anota três escolhas dos argumentistas."
+    },
+    "pt_BR": {
+     "t": "Revisão: assistir como um fã",
+     "g": "Reveja seus hábitos, o vocabulário de séries e sua lista crescente.",
+     "p": [
+      "Você já conhece formatos, gêneros, finais, cold opens e a etiqueta dos spoilers.",
+      "Você tem palavras para descrever personagens, tom e clima.",
+      "Assistir ativamente é notar as escolhas, não só seguir o enredo."
+     ],
+     "q": "Qual é a coisa mais útil que você aprendeu até agora sobre TV?",
+     "c": "Assista a um episódio ativamente e anote três escolhas dos roteiristas."
+    }
+   }
+  }
+ ]
+}

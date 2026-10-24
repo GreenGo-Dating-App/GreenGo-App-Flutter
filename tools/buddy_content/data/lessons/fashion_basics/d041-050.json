@@ -1,0 +1,835 @@
+{
+ "topic": "fashion_basics",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The blazer as a hero piece",
+     "g": "See how a blazer can make jeans, dresses or trousers look smarter instantly.",
+     "p": [
+      "A blazer adds structure and instantly smartens a relaxed outfit.",
+      "It works over a T-shirt, a dress or a shirt, in many fabrics.",
+      "Rolled sleeves or an open front keep it easygoing."
+     ],
+     "q": "Do you own a blazer? How would you wear it with jeans?",
+     "c": "Put a jacket or blazer over a casual outfit today and notice the lift."
+    },
+    "de": {
+     "t": "Der Blazer als Hero-Teil",
+     "g": "Sehen, wie ein Blazer Jeans, Kleider oder Hosen sofort gepflegter wirken lässt.",
+     "p": [
+      "Ein Blazer gibt Struktur und macht ein lässiges Outfit sofort gepflegter.",
+      "Er passt über T-Shirt, Kleid oder Hemd, in vielen Stoffen.",
+      "Hochgekrempelte Ärmel oder offene Front halten ihn locker."
+     ],
+     "q": "Besitzt du einen Blazer? Wie würdest du ihn zu Jeans tragen?",
+     "c": "Ziehe heute ein Jackett oder einen Blazer über ein lässiges Outfit und spüre die Wirkung."
+    },
+    "es": {
+     "t": "La americana como prenda estrella",
+     "g": "Ver cómo una americana hace que vaqueros, vestidos o pantalones se vean más arreglados al instante.",
+     "p": [
+      "Una americana da estructura y arregla al instante un conjunto relajado.",
+      "Va sobre camiseta, vestido o camisa, en muchos tejidos.",
+      "Mangas remangadas o abierta la mantienen desenfadada."
+     ],
+     "q": "¿Tienes una americana? ¿Cómo la llevarías con vaqueros?",
+     "c": "Ponte hoy una americana sobre un conjunto informal y nota el cambio."
+    },
+    "fr": {
+     "t": "Le blazer, pièce héroïne",
+     "g": "Voir comment un blazer rend jean, robe ou pantalon plus habillé en un instant.",
+     "p": [
+      "Un blazer apporte de la structure et habille aussitôt une tenue décontractée.",
+      "Il se porte sur un T-shirt, une robe ou une chemise, dans beaucoup de matières.",
+      "Manches retroussées ou veste ouverte le gardent décontracté."
+     ],
+     "q": "As-tu un blazer ? Comment le porterais-tu avec un jean ?",
+     "c": "Mets aujourd'hui une veste ou un blazer sur une tenue décontractée et vois l'effet."
+    },
+    "it": {
+     "t": "Il blazer come capo protagonista",
+     "g": "Vedere come un blazer rende subito più curati jeans, abiti o pantaloni.",
+     "p": [
+      "Un blazer dà struttura e rende subito più curato un outfit rilassato.",
+      "Va bene su maglietta, abito o camicia, in molti tessuti.",
+      "Maniche rimboccate o davanti aperto lo mantengono disinvolto."
+     ],
+     "q": "Hai un blazer? Come lo porteresti con i jeans?",
+     "c": "Oggi metti una giacca o un blazer su un outfit casual e nota la differenza."
+    },
+    "pt": {
+     "t": "O blazer como peça-estrela",
+     "g": "Ver como um blazer deixa jeans, vestidos ou calças logo mais cuidados.",
+     "p": [
+      "Um blazer dá estrutura e arranja logo um conjunto descontraído.",
+      "Fica bem sobre T-shirt, vestido ou camisa, em vários tecidos.",
+      "Mangas arregaçadas ou aberto mantêm-no descontraído."
+     ],
+     "q": "Tens um blazer? Como o usarias com jeans?",
+     "c": "Põe hoje um blazer sobre um conjunto casual e repara na diferença."
+    },
+    "pt_BR": {
+     "t": "O blazer como peça-estrela",
+     "g": "Ver como um blazer deixa jeans, vestidos ou calças logo mais arrumados.",
+     "p": [
+      "Um blazer dá estrutura e arruma na hora um look descontraído.",
+      "Fica bem sobre camiseta, vestido ou camisa, em vários tecidos.",
+      "Mangas dobradas ou aberto mantêm o ar descontraído."
+     ],
+     "q": "Você tem um blazer? Como usaria com jeans?",
+     "c": "Coloque hoje um blazer sobre um look casual e perceba a diferença."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Coats for cold days",
+     "g": "Learn about wool coats, parkas, trench coats and puffers and how to choose by climate.",
+     "p": [
+      "Wool coats are warm and smart; puffers trap heat in light padding.",
+      "Parkas shed wind and rain; trench coats suit mild, wet weather.",
+      "Choose by your climate and how much you walk or wait outside."
+     ],
+     "q": "Which coat do you rely on in the cold, and what do you like about it?",
+     "c": "Check your coat's warmth against today's weather and note if it suits you."
+    },
+    "de": {
+     "t": "Mäntel für kalte Tage",
+     "g": "Wollmäntel, Parkas, Trenchcoats und Daunenjacken kennenlernen und nach Klima auswählen.",
+     "p": [
+      "Wollmäntel sind warm und elegant; Pufferjacken halten Wärme in leichter Füllung.",
+      "Parkas halten Wind und Regen ab; Trenchcoats passen zu mildem, nassem Wetter.",
+      "Wähle nach deinem Klima und danach, wie viel du draußen läufst oder wartest."
+     ],
+     "q": "Auf welchen Mantel verlässt du dich in der Kälte, und was magst du an ihm?",
+     "c": "Prüfe die Wärme deines Mantels am heutigen Wetter und notiere, ob er dir passt."
+    },
+    "es": {
+     "t": "Abrigos para días fríos",
+     "g": "Conocer abrigos de lana, parkas, gabardinas y plumíferos y cómo elegir según el clima.",
+     "p": [
+      "Los abrigos de lana son cálidos y elegantes; los plumíferos retienen el calor.",
+      "Las parkas frenan viento y lluvia; las gabardinas van con clima suave y húmedo.",
+      "Elige según tu clima y cuánto caminas o esperas al aire libre."
+     ],
+     "q": "¿En qué abrigo confías cuando hace frío y qué te gusta de él?",
+     "c": "Compara hoy el abrigo de tu armario con el clima y anota si te va bien."
+    },
+    "fr": {
+     "t": "Des manteaux pour les jours froids",
+     "g": "Découvrir manteaux en laine, parkas, trenchs et doudounes et choisir selon le climat.",
+     "p": [
+      "Les manteaux en laine sont chauds et élégants; les doudounes retiennent la chaleur.",
+      "Les parkas coupent le vent et la pluie; les trenchs vont par temps doux et humide.",
+      "Choisis selon ton climat et le temps que tu passes dehors à marcher ou attendre."
+     ],
+     "q": "Sur quel manteau comptes-tu quand il fait froid, et qu'aimes-tu en lui ?",
+     "c": "Compare aujourd'hui ton manteau à la météo du jour et note s'il te convient."
+    },
+    "it": {
+     "t": "Cappotti per i giorni freddi",
+     "g": "Conoscere cappotti di lana, parka, trench e piumini e come scegliere in base al clima.",
+     "p": [
+      "I cappotti di lana sono caldi ed eleganti; i piumini trattengono il calore.",
+      "I parka fermano vento e pioggia; i trench vanno con clima mite e umido.",
+      "Scegli in base al tuo clima e a quanto cammini o aspetti all'aperto."
+     ],
+     "q": "Su quale cappotto conti quando fa freddo e cosa ti piace?",
+     "c": "Confronta oggi il tuo cappotto con il meteo e annota se fa per te."
+    },
+    "pt": {
+     "t": "Casacos para dias frios",
+     "g": "Conhecer casacos de lã, parcas, gabardines e polares acolchoados e como escolher conforme o clima.",
+     "p": [
+      "Os casacos de lã são quentes e elegantes; os acolchoados retêm o calor.",
+      "As parcas travam vento e chuva; os gabardines servem para tempo ameno e húmido.",
+      "Escolhe conforme o clima e o quanto andas ou esperas ao ar livre."
+     ],
+     "q": "Em que casaco confias quando está frio e o que gostas nele?",
+     "c": "Compara hoje o teu casaco com o tempo e anota se te serve bem."
+    },
+    "pt_BR": {
+     "t": "Casacos para dias frios",
+     "g": "Conhecer casacos de lã, parcas, trench coats e puffers e como escolher conforme o clima.",
+     "p": [
+      "Os casacos de lã são quentes e elegantes; os puffers retêm o calor.",
+      "As parcas barram vento e chuva; os trench coats servem para tempo ameno e úmido.",
+      "Escolha conforme o clima e o quanto você anda ou espera ao ar livre."
+     ],
+     "q": "Em qual casaco você confia no frio e o que gosta nele?",
+     "c": "Compare hoje seu casaco com o tempo e anote se ele serve bem."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Light jackets",
+     "g": "Meet denim jackets, bomber jackets and light rain jackets for in-between weather.",
+     "p": [
+      "A light jacket gives just enough warmth when it is not truly cold.",
+      "Denim and bomber jackets are casual; a rain jacket is practical.",
+      "Keep one by the door so you are ready for changing weather."
+     ],
+     "q": "Which light jacket would you use most through the year?",
+     "c": "Wear a light jacket over a simple outfit today and see what it adds."
+    },
+    "de": {
+     "t": "Leichte Jacken",
+     "g": "Jeansjacken, Bomberjacken und leichte Regenjacken für Übergangswetter kennenlernen.",
+     "p": [
+      "Eine leichte Jacke gibt gerade genug Wärme, wenn es nicht richtig kalt ist.",
+      "Jeans- und Bomberjacken sind lässig; eine Regenjacke ist praktisch.",
+      "Halte eine an der Tür bereit, damit du für wechselndes Wetter gerüstet bist."
+     ],
+     "q": "Welche leichte Jacke würdest du übers Jahr am meisten tragen?",
+     "c": "Trage heute eine leichte Jacke über einem schlichten Outfit und sieh, was sie bringt."
+    },
+    "es": {
+     "t": "Chaquetas ligeras",
+     "g": "Conocer cazadoras vaqueras, bombers e impermeables ligeros para el tiempo de entretiempo.",
+     "p": [
+      "Una chaqueta ligera da el abrigo justo cuando no hace mucho frío.",
+      "La vaquera y el bomber son informales; el impermeable es práctico.",
+      "Ten una junto a la puerta para estar listo cuando cambie el tiempo."
+     ],
+     "q": "¿Qué chaqueta ligera usarías más a lo largo del año?",
+     "c": "Ponte hoy una chaqueta ligera sobre un conjunto sencillo y mira qué aporta."
+    },
+    "fr": {
+     "t": "Les vestes légères",
+     "g": "Découvrir vestes en jean, bombers et coupe-pluie légers pour le temps entre-deux.",
+     "p": [
+      "Une veste légère donne juste assez de chaleur quand il ne fait pas vraiment froid.",
+      "La veste en jean et le bomber sont décontractés; le coupe-pluie est pratique.",
+      "Garde-en une près de la porte pour être prêt quand le temps change."
+     ],
+     "q": "Quelle veste légère porterais-tu le plus tout au long de l'année ?",
+     "c": "Porte aujourd'hui une veste légère sur une tenue simple et vois ce qu'elle apporte."
+    },
+    "it": {
+     "t": "Giacche leggere",
+     "g": "Conoscere giubbotti di jeans, bomber e impermeabili leggeri per il clima di mezza stagione.",
+     "p": [
+      "Una giacca leggera dà il giusto calore quando non fa davvero freddo.",
+      "Giubbotto di jeans e bomber sono casual; l'impermeabile è pratico.",
+      "Tienine una vicino alla porta per essere pronto quando il tempo cambia."
+     ],
+     "q": "Quale giacca leggera useresti di più durante l'anno?",
+     "c": "Oggi indossa una giacca leggera su un outfit semplice e vedi cosa aggiunge."
+    },
+    "pt": {
+     "t": "Casacos leves",
+     "g": "Conhecer casacos de ganga, bombers e impermeáveis leves para o tempo de meia-estação.",
+     "p": [
+      "Um casaco leve dá o calor certo quando não está mesmo frio.",
+      "O de ganga e o bomber são casuais; o impermeável é prático.",
+      "Deixa um junto à porta para estares pronto quando o tempo mudar."
+     ],
+     "q": "Que casaco leve usarias mais ao longo do ano?",
+     "c": "Veste hoje um casaco leve sobre um conjunto simples e vê o que acrescenta."
+    },
+    "pt_BR": {
+     "t": "Jaquetas leves",
+     "g": "Conhecer jaquetas jeans, bombers e corta-ventos leves para o tempo de meia-estação.",
+     "p": [
+      "Uma jaqueta leve dá o calor certo quando não está tão frio.",
+      "A jeans e o bomber são casuais; a de chuva é prática.",
+      "Deixe uma perto da porta para estar pronto quando o tempo mudar."
+     ],
+     "q": "Qual jaqueta leve você usaria mais ao longo do ano?",
+     "c": "Use hoje uma jaqueta leve sobre um look simples e veja o que ela acrescenta."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Layering basics",
+     "g": "Combine thin and thick layers so you stay comfortable as temperatures change.",
+     "p": [
+      "Start with a thin base layer, add a middle layer, finish with an outer layer.",
+      "Thin layers trap warmth and are easy to take off.",
+      "Mix textures and lengths so each layer can be seen."
+     ],
+     "q": "How do you handle days that start cold and end warm?",
+     "c": "Build a three-layer outfit today and remove one layer when it warms up."
+    },
+    "de": {
+     "t": "Schichten-Basics",
+     "g": "Dünne und dicke Schichten kombinieren, damit du bei wechselnden Temperaturen bequem bleibst.",
+     "p": [
+      "Beginne mit einer dünnen Basisschicht, füge eine Mittelschicht hinzu und schließe mit einer Außenschicht.",
+      "Dünne Schichten speichern Wärme und lassen sich leicht ausziehen.",
+      "Mische Texturen und Längen, damit jede Schicht sichtbar bleibt."
+     ],
+     "q": "Wie meisterst du Tage, die kalt beginnen und warm enden?",
+     "c": "Stelle heute ein Outfit aus drei Schichten zusammen und leg eine ab, wenn es wärmer wird."
+    },
+    "es": {
+     "t": "Lo básico de las capas",
+     "g": "Combinar capas finas y gruesas para estar cómodo cuando cambia la temperatura.",
+     "p": [
+      "Empieza con una capa base fina, añade una intermedia y termina con una exterior.",
+      "Las capas finas retienen calor y es fácil quitárselas.",
+      "Mezcla texturas y largos para que cada capa se vea."
+     ],
+     "q": "¿Cómo llevas los días que empiezan fríos y acaban cálidos?",
+     "c": "Crea hoy un conjunto de tres capas y quita una cuando suba la temperatura."
+    },
+    "fr": {
+     "t": "Les bases de la superposition",
+     "g": "Combiner couches fines et épaisses pour rester à l'aise quand la température change.",
+     "p": [
+      "Commence par une couche de base fine, ajoute une couche intermédiaire, finis par une couche extérieure.",
+      "Les couches fines retiennent la chaleur et s'enlèvent facilement.",
+      "Mélange textures et longueurs pour que chaque couche se voie."
+     ],
+     "q": "Comment gères-tu les journées qui commencent froides et finissent chaudes ?",
+     "c": "Compose aujourd'hui une tenue à trois couches et retire-en une quand il fait plus chaud."
+    },
+    "it": {
+     "t": "Le basi del vestirsi a strati",
+     "g": "Combinare strati sottili e spessi per stare comodi quando cambia la temperatura.",
+     "p": [
+      "Inizia con uno strato base sottile, aggiungi uno intermedio e finisci con uno esterno.",
+      "Gli strati sottili trattengono il calore e si tolgono facilmente.",
+      "Mescola texture e lunghezze perché ogni strato si veda."
+     ],
+     "q": "Come gestisci i giorni che iniziano freddi e finiscono caldi?",
+     "c": "Oggi crea un outfit a tre strati e togline uno quando fa più caldo."
+    },
+    "pt": {
+     "t": "O básico das camadas",
+     "g": "Combinar camadas finas e grossas para estares confortável quando a temperatura muda.",
+     "p": [
+      "Começa com uma camada base fina, junta uma intermédia e termina com uma exterior.",
+      "As camadas finas retêm o calor e tiram-se facilmente.",
+      "Mistura texturas e comprimentos para que cada camada se veja."
+     ],
+     "q": "Como lidas com dias que começam frios e acabam quentes?",
+     "c": "Cria hoje um conjunto de três camadas e tira uma quando aquecer."
+    },
+    "pt_BR": {
+     "t": "O básico das camadas",
+     "g": "Combinar camadas finas e grossas para ficar confortável quando a temperatura muda.",
+     "p": [
+      "Comece com uma camada base fina, junte uma intermediária e termine com uma externa.",
+      "As camadas finas retêm o calor e saem com facilidade.",
+      "Misture texturas e comprimentos para que cada camada apareça."
+     ],
+     "q": "Como você lida com dias que começam frios e terminam quentes?",
+     "c": "Monte hoje um look de três camadas e tire uma quando esquentar."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sneakers and casual shoes",
+     "g": "Choose comfortable trainers and casual shoes that go with many outfits.",
+     "p": [
+      "Comfort comes first: a good sole and room for your toes.",
+      "Plain white, black or neutral sneakers match most outfits.",
+      "Clean shoes make a casual outfit look intentional."
+     ],
+     "q": "What are your most comfortable shoes, and what outfits suit them?",
+     "c": "Clean one pair of casual shoes today and wear them with a favourite outfit."
+    },
+    "de": {
+     "t": "Sneaker und Freizeitschuhe",
+     "g": "Bequeme Sneaker und Freizeitschuhe wählen, die zu vielen Outfits passen.",
+     "p": [
+      "Komfort zuerst: eine gute Sohle und Platz für die Zehen.",
+      "Schlichte weiße, schwarze oder neutrale Sneaker passen zu den meisten Outfits.",
+      "Saubere Schuhe lassen ein lässiges Outfit gewollt wirken."
+     ],
+     "q": "Welche Schuhe sind deine bequemsten, und welche Outfits passen dazu?",
+     "c": "Reinige heute ein Paar Freizeitschuhe und trage sie zu einem Lieblingsoutfit."
+    },
+    "es": {
+     "t": "Zapatillas y calzado informal",
+     "g": "Elegir zapatillas cómodas y calzado informal que combine con muchos conjuntos.",
+     "p": [
+      "La comodidad va primero: buena suela y espacio para los dedos.",
+      "Las zapatillas lisas blancas, negras o neutras combinan con casi todo.",
+      "Unos zapatos limpios hacen que un conjunto informal se vea intencionado."
+     ],
+     "q": "¿Cuáles son tus zapatos más cómodos y con qué conjuntos van?",
+     "c": "Limpia hoy un par de zapatos informales y póntelos con un conjunto favorito."
+    },
+    "fr": {
+     "t": "Baskets et chaussures décontractées",
+     "g": "Choisir des baskets confortables et des chaussures décontractées qui vont avec beaucoup de tenues.",
+     "p": [
+      "Le confort d'abord: une bonne semelle et de la place pour les orteils.",
+      "Des baskets unies blanches, noires ou neutres vont avec la plupart des tenues.",
+      "Des chaussures propres donnent à une tenue décontractée un air voulu."
+     ],
+     "q": "Quelles sont tes chaussures les plus confortables, et avec quelles tenues vont-elles ?",
+     "c": "Nettoie aujourd'hui une paire de chaussures décontractées et porte-les avec une tenue préférée."
+    },
+    "it": {
+     "t": "Sneaker e scarpe casual",
+     "g": "Scegliere sneaker comode e scarpe casual che stanno bene con molti outfit.",
+     "p": [
+      "Il comfort viene prima: una buona suola e spazio per le dita.",
+      "Sneaker semplici bianche, nere o neutre vanno con la maggior parte degli outfit.",
+      "Scarpe pulite fanno sembrare voluto un outfit casual."
+     ],
+     "q": "Quali sono le tue scarpe più comode e con quali outfit vanno?",
+     "c": "Oggi pulisci un paio di scarpe casual e indossale con un outfit preferito."
+    },
+    "pt": {
+     "t": "Ténis e calçado casual",
+     "g": "Escolher ténis confortáveis e calçado casual que combine com muitos conjuntos.",
+     "p": [
+      "O conforto vem primeiro: boa sola e espaço para os dedos.",
+      "Ténis lisos brancos, pretos ou neutros combinam com quase todos os conjuntos.",
+      "Sapatos limpos fazem um conjunto casual parecer intencional."
+     ],
+     "q": "Quais são os teus sapatos mais confortáveis e com que conjuntos vão?",
+     "c": "Limpa hoje um par de sapatos casuais e usa-os com um conjunto favorito."
+    },
+    "pt_BR": {
+     "t": "Tênis e calçados casuais",
+     "g": "Escolher tênis confortáveis e calçados casuais que combinem com muitos looks.",
+     "p": [
+      "O conforto vem primeiro: boa sola e espaço para os dedos.",
+      "Tênis lisos brancos, pretos ou neutros combinam com quase todos os looks.",
+      "Sapatos limpos fazem um look casual parecer intencional."
+     ],
+     "q": "Quais são seus sapatos mais confortáveis e com quais looks combinam?",
+     "c": "Limpe hoje um par de sapatos casuais e use com um look favorito."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Smart shoes",
+     "g": "Meet loafers, brogues, flats and simple heels and when each fits the occasion.",
+     "p": [
+      "Loafers and brogues are classic smart shoes for many outfits.",
+      "Flats are easy to walk in and dress up trousers or dresses.",
+      "Heels are optional; low or chunky ones are often more comfortable."
+     ],
+     "q": "Which smart shoes would you actually enjoy wearing?",
+     "c": "Try a pair of smart shoes with jeans or a dress and see how the look changes."
+    },
+    "de": {
+     "t": "Elegante Schuhe",
+     "g": "Loafer, Brogues, Ballerinas und schlichte Absätze kennenlernen und wann sie zum Anlass passen.",
+     "p": [
+      "Loafer und Brogues sind klassische elegante Schuhe für viele Outfits.",
+      "Ballerinas laufen sich leicht und werten Hosen oder Kleider auf.",
+      "Absätze sind optional; niedrige oder breite sind oft bequemer."
+     ],
+     "q": "Welche eleganten Schuhe würdest du wirklich gern tragen?",
+     "c": "Probiere ein Paar elegante Schuhe zu Jeans oder Kleid und sieh, wie sich der Look ändert."
+    },
+    "es": {
+     "t": "Zapatos elegantes",
+     "g": "Conocer mocasines, brogues, bailarinas y tacones sencillos y cuándo encajan con la ocasión.",
+     "p": [
+      "Mocasines y brogues son zapatos elegantes clásicos para muchos conjuntos.",
+      "Las bailarinas son fáciles de caminar y arreglan pantalones o vestidos.",
+      "Los tacones son opcionales; los bajos o anchos suelen ser más cómodos."
+     ],
+     "q": "¿Qué zapatos elegantes te gustaría de verdad llevar?",
+     "c": "Prueba hoy unos zapatos elegantes con vaqueros o un vestido y mira cómo cambia."
+    },
+    "fr": {
+     "t": "Les chaussures habillées",
+     "g": "Découvrir mocassins, richelieus, ballerines et talons simples et quand chacun convient.",
+     "p": [
+      "Mocassins et richelieus sont des classiques habillés pour beaucoup de tenues.",
+      "Les ballerines se portent facilement et habillent pantalons ou robes.",
+      "Les talons sont facultatifs; bas ou larges, ils sont souvent plus confortables."
+     ],
+     "q": "Quelles chaussures habillées aimerais-tu vraiment porter ?",
+     "c": "Essaie aujourd'hui des chaussures habillées avec un jean ou une robe et vois l'effet."
+    },
+    "it": {
+     "t": "Le scarpe eleganti",
+     "g": "Conoscere mocassini, stringate, ballerine e tacchi semplici e quando si adattano all'occasione.",
+     "p": [
+      "Mocassini e stringate sono scarpe eleganti classiche per molti outfit.",
+      "Le ballerine sono comode da camminare e rendono più curati pantaloni o abiti.",
+      "I tacchi sono facoltativi; quelli bassi o larghi sono spesso più comodi."
+     ],
+     "q": "Quali scarpe eleganti ti piacerebbe davvero indossare?",
+     "c": "Prova oggi delle scarpe eleganti con jeans o un abito e osserva come cambia il look."
+    },
+    "pt": {
+     "t": "Os sapatos elegantes",
+     "g": "Conhecer mocassins, sapatos de atacadores, sabrinas e saltos simples e quando se adaptam à ocasião.",
+     "p": [
+      "Mocassins e sapatos de atacadores são clássicos elegantes para muitos conjuntos.",
+      "As sabrinas são fáceis de usar e valorizam calças ou vestidos.",
+      "Os saltos são opcionais; os baixos ou grossos costumam ser mais confortáveis."
+     ],
+     "q": "Que sapatos elegantes gostarias mesmo de usar?",
+     "c": "Experimenta hoje uns sapatos elegantes com jeans ou vestido e vê como muda."
+    },
+    "pt_BR": {
+     "t": "Os sapatos elegantes",
+     "g": "Conhecer mocassins, oxfords, sapatilhas e saltos simples e quando se adaptam à ocasião.",
+     "p": [
+      "Mocassins e oxfords são clássicos elegantes para muitos looks.",
+      "As sapatilhas são fáceis de usar e valorizam calças ou vestidos.",
+      "Os saltos são opcionais; os baixos ou grossos costumam ser mais confortáveis."
+     ],
+     "q": "Quais sapatos elegantes você realmente gostaria de usar?",
+     "c": "Experimente hoje sapatos elegantes com jeans ou vestido e veja como muda."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Boots of all kinds",
+     "g": "Explore ankle boots, Chelsea boots, knee-high and work boots and how to wear them.",
+     "p": [
+      "Ankle boots are versatile and work with trousers, skirts and dresses.",
+      "Chelsea boots are slip-on with an elastic side; work boots are sturdy.",
+      "Knee-high boots look sleek under skirts or over slim trousers."
+     ],
+     "q": "Which type of boots would you like or already love?",
+     "c": "Wear boots with an outfit you usually pair with other shoes and compare."
+    },
+    "de": {
+     "t": "Stiefel aller Art",
+     "g": "Stiefeletten, Chelsea Boots, kniehohe Stiefel und Arbeitsstiefel erkunden und wie man sie trägt.",
+     "p": [
+      "Stiefeletten sind vielseitig und passen zu Hosen, Röcken und Kleidern.",
+      "Chelsea Boots schlüpft man mit elastischem Einsatz an; Arbeitsstiefel sind robust.",
+      "Kniehohe Stiefel wirken schlank unter Röcken oder über schmalen Hosen."
+     ],
+     "q": "Welche Stiefelart hättest du gern oder liebst du schon?",
+     "c": "Trage Stiefel zu einem Outfit, das du sonst mit anderen Schuhen kombinierst, und vergleiche."
+    },
+    "es": {
+     "t": "Botas de todo tipo",
+     "g": "Explorar botines, botas Chelsea, botas altas y botas de trabajo y cómo llevarlas.",
+     "p": [
+      "Los botines son versátiles y van con pantalones, faldas y vestidos.",
+      "Las Chelsea se calzan sin cordones, con goma lateral; las de trabajo son robustas.",
+      "Las botas altas se ven estilizadas bajo faldas o sobre pantalones ajustados."
+     ],
+     "q": "¿Qué tipo de botas te gustaría tener o ya te encanta?",
+     "c": "Lleva botas con un conjunto que sueles combinar con otros zapatos y compara."
+    },
+    "fr": {
+     "t": "Des bottes en tout genre",
+     "g": "Explorer bottines, Chelsea boots, bottes hautes et bottes de travail et comment les porter.",
+     "p": [
+      "Les bottines sont polyvalentes et vont avec pantalons, jupes et robes.",
+      "Les Chelsea s'enfilent avec un élastique sur le côté; les bottes de travail sont robustes.",
+      "Les bottes hautes sont élancées sous une jupe ou sur un pantalon ajusté."
+     ],
+     "q": "Quel type de bottes aimerais-tu ou adores-tu déjà ?",
+     "c": "Porte des bottes avec une tenue que tu associes d'ordinaire à d'autres chaussures."
+    },
+    "it": {
+     "t": "Stivali di ogni tipo",
+     "g": "Esplorare stivaletti, Chelsea boots, stivali alti e scarponi da lavoro e come portarli.",
+     "p": [
+      "Gli stivaletti sono versatili e vanno con pantaloni, gonne e abiti.",
+      "I Chelsea si infilano senza lacci, con elastico laterale; gli scarponi sono robusti.",
+      "Gli stivali alti slanciano sotto una gonna o sopra pantaloni aderenti."
+     ],
+     "q": "Quale tipo di stivali ti piacerebbe avere o ami già?",
+     "c": "Indossa degli stivali con un outfit che di solito abbini ad altre scarpe e confronta."
+    },
+    "pt": {
+     "t": "Botas de todos os tipos",
+     "g": "Explorar botins, botas Chelsea, botas altas e botas de trabalho e como usá-las.",
+     "p": [
+      "Os botins são versáteis e combinam com calças, saias e vestidos.",
+      "As Chelsea calçam-se sem atacadores, com elástico lateral; as de trabalho são robustas.",
+      "As botas altas ficam elegantes sob saias ou sobre calças justas."
+     ],
+     "q": "Que tipo de botas gostarias de ter ou já adoras?",
+     "c": "Usa botas com um conjunto que costumas combinar com outros sapatos e compara."
+    },
+    "pt_BR": {
+     "t": "Botas de todos os tipos",
+     "g": "Explorar botinas, botas Chelsea, botas altas e botas de trabalho e como usá-las.",
+     "p": [
+      "As botinas são versáteis e combinam com calças, saias e vestidos.",
+      "As Chelsea se calçam sem cadarço, com elástico lateral; as de trabalho são robustas.",
+      "As botas altas ficam elegantes sob saias ou sobre calças justas."
+     ],
+     "q": "Que tipo de botas você gostaria de ter ou já adora?",
+     "c": "Use botas com um look que costuma combinar com outros sapatos e compare."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sandals and summer shoes",
+     "g": "Find comfortable sandals and summer shoes for walking, beaches and city days.",
+     "p": [
+      "Look for supportive soles and straps that do not rub.",
+      "Flat, sporty and slide sandals suit different plans.",
+      "Keep feet clean and moisturised so open shoes feel and look fresh."
+     ],
+     "q": "What do you wear on your feet when it is really hot?",
+     "c": "Test your summer shoes for a short walk and note any spot that rubs."
+    },
+    "de": {
+     "t": "Sandalen und Sommerschuhe",
+     "g": "Bequeme Sandalen und Sommerschuhe fürs Gehen, den Strand und Stadttage finden.",
+     "p": [
+      "Achte auf stützende Sohlen und Riemen, die nicht scheuern.",
+      "Flache, sportliche und Slide-Sandalen passen zu verschiedenen Plänen.",
+      "Gepflegte, eingecremte Füße lassen offene Schuhe frisch aussehen und sich so anfühlen."
+     ],
+     "q": "Was trägst du an den Füßen, wenn es richtig heiß ist?",
+     "c": "Teste deine Sommerschuhe auf einem kurzen Spaziergang und notiere Stellen, die scheuern."
+    },
+    "es": {
+     "t": "Sandalias y calzado de verano",
+     "g": "Encontrar sandalias y calzado de verano cómodos para pasear, ir a la playa y días de ciudad.",
+     "p": [
+      "Busca suelas con apoyo y tiras que no rocen.",
+      "Las sandalias planas, deportivas y chanclas encajan con planes distintos.",
+      "Cuida e hidrata los pies para que el calzado abierto se vea y se sienta fresco."
+     ],
+     "q": "¿Qué llevas en los pies cuando hace mucho calor?",
+     "c": "Prueba tu calzado de verano en un paseo corto y anota si algo roza."
+    },
+    "fr": {
+     "t": "Sandales et chaussures d'été",
+     "g": "Trouver sandales et chaussures d'été confortables pour marcher, aller à la plage et se promener en ville.",
+     "p": [
+      "Cherche des semelles qui soutiennent et des brides qui ne frottent pas.",
+      "Sandales plates, sportives et mules conviennent à des projets différents.",
+      "Soigne et hydrate tes pieds pour que les chaussures ouvertes paraissent fraîches."
+     ],
+     "q": "Que portes-tu aux pieds quand il fait vraiment chaud ?",
+     "c": "Teste tes chaussures d'été lors d'une courte balade et note ce qui frotte."
+    },
+    "it": {
+     "t": "Sandali e scarpe estive",
+     "g": "Trovare sandali e scarpe estive comodi per camminare, andare in spiaggia e vivere la città.",
+     "p": [
+      "Cerca suole che sostengono e cinturini che non sfregano.",
+      "Sandali bassi, sportivi e ciabatte vanno bene per piani diversi.",
+      "Cura e idrata i piedi perché le scarpe aperte appaiano e siano fresche."
+     ],
+     "q": "Cosa porti ai piedi quando fa molto caldo?",
+     "c": "Prova le tue scarpe estive in una breve passeggiata e annota dove sfregano."
+    },
+    "pt": {
+     "t": "Sandálias e sapatos de verão",
+     "g": "Encontrar sandálias e sapatos de verão confortáveis para passear, ir à praia e dias na cidade.",
+     "p": [
+      "Procura solas que deem apoio e tiras que não esfreguem.",
+      "Sandálias rasas, desportivas e chinelos servem planos diferentes.",
+      "Cuida e hidrata os pés para que o calçado aberto pareça e seja fresco."
+     ],
+     "q": "O que calças quando está mesmo calor?",
+     "c": "Testa o teu calçado de verão num passeio curto e anota onde esfrega."
+    },
+    "pt_BR": {
+     "t": "Sandálias e sapatos de verão",
+     "g": "Encontrar sandálias e sapatos de verão confortáveis para passear, ir à praia e dias na cidade.",
+     "p": [
+      "Procure solas com apoio e tiras que não machuquem.",
+      "Rasteiras, esportivas e chinelos servem para planos diferentes.",
+      "Cuide e hidrate os pés para que o calçado aberto pareça e seja fresco."
+     ],
+     "q": "O que você calça quando está muito calor?",
+     "c": "Teste seu calçado de verão numa caminhada curta e anote onde incomoda."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Socks and hosiery",
+     "g": "See how socks and tights add colour, warmth or a smooth finishing touch.",
+     "p": [
+      "Socks can match your shoes, your trousers or add a fun contrast.",
+      "Tights add warmth under skirts and dresses and come in many shades.",
+      "Natural fibres like cotton and wool keep feet comfortable."
+     ],
+     "q": "Do you have a favourite pair of socks? What makes them special?",
+     "c": "Pick socks or tights that add colour or texture to today's outfit."
+    },
+    "de": {
+     "t": "Socken und Strümpfe",
+     "g": "Sehen, wie Socken und Strumpfhosen Farbe, Wärme oder einen glatten Abschluss geben.",
+     "p": [
+      "Socken können zu Schuhen, Hose passen oder einen netten Kontrast setzen.",
+      "Strumpfhosen wärmen unter Röcken und Kleidern und gibt es in vielen Tönen.",
+      "Naturfasern wie Baumwolle und Wolle halten die Füße bequem."
+     ],
+     "q": "Hast du ein Lieblingspaar Socken? Was macht es besonders?",
+     "c": "Wähle Socken oder Strumpfhose, die dem heutigen Outfit Farbe oder Textur geben."
+    },
+    "es": {
+     "t": "Calcetines y medias",
+     "g": "Ver cómo calcetines y medias aportan color, calor o un acabado suave.",
+     "p": [
+      "Los calcetines pueden combinar con los zapatos, el pantalón o dar un contraste divertido.",
+      "Las medias abrigan bajo faldas y vestidos y hay muchos tonos.",
+      "Las fibras naturales como el algodón y la lana mantienen los pies cómodos."
+     ],
+     "q": "¿Tienes unos calcetines favoritos? ¿Qué los hace especiales?",
+     "c": "Elige calcetines o medias que aporten color o textura al conjunto de hoy."
+    },
+    "fr": {
+     "t": "Chaussettes et collants",
+     "g": "Voir comment chaussettes et collants ajoutent couleur, chaleur ou une finition douce.",
+     "p": [
+      "Les chaussettes peuvent s'accorder aux chaussures ou au pantalon, ou créer un contraste amusant.",
+      "Les collants réchauffent sous jupes et robes et existent en beaucoup de teintes.",
+      "Les fibres naturelles comme le coton et la laine gardent les pieds au confort."
+     ],
+     "q": "As-tu une paire de chaussettes préférée ? Qu'a-t-elle de spécial ?",
+     "c": "Choisis des chaussettes ou des collants qui apportent couleur ou texture à ta tenue du jour."
+    },
+    "it": {
+     "t": "Calzini e collant",
+     "g": "Vedere come calzini e collant aggiungono colore, calore o un tocco finale morbido.",
+     "p": [
+      "I calzini possono richiamare le scarpe o i pantaloni o creare un contrasto divertente.",
+      "I collant scaldano sotto gonne e abiti e hanno tante tinte.",
+      "Le fibre naturali come cotone e lana mantengono i piedi comodi."
+     ],
+     "q": "Hai un paio di calzini preferito? Cosa lo rende speciale?",
+     "c": "Scegli calzini o collant che aggiungono colore o texture all'outfit di oggi."
+    },
+    "pt": {
+     "t": "Meias e collants",
+     "g": "Ver como meias e collants acrescentam cor, calor ou um acabamento suave.",
+     "p": [
+      "As meias podem combinar com os sapatos, as calças ou dar um contraste divertido.",
+      "Os collants aquecem sob saias e vestidos e há muitos tons.",
+      "As fibras naturais como o algodão e a lã mantêm os pés confortáveis."
+     ],
+     "q": "Tens um par de meias favorito? O que o torna especial?",
+     "c": "Escolhe meias ou collants que deem cor ou textura ao conjunto de hoje."
+    },
+    "pt_BR": {
+     "t": "Meias e meias-calças",
+     "g": "Ver como meias e meias-calças acrescentam cor, calor ou um acabamento suave.",
+     "p": [
+      "As meias podem combinar com os sapatos, a calça ou dar um contraste divertido.",
+      "As meias-calças aquecem sob saias e vestidos e existem em muitos tons.",
+      "As fibras naturais como o algodão e a lã mantêm os pés confortáveis."
+     ],
+     "q": "Você tem um par de meias favorito? O que o torna especial?",
+     "c": "Escolha meias ou meias-calças que deem cor ou textura ao look de hoje."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Bags for daily life",
+     "g": "Learn what totes, backpacks, crossbody and shoulder bags are each good for.",
+     "p": [
+      "Totes carry a lot and are easy to grab.",
+      "Backpacks spread weight evenly; crossbody bags keep hands free.",
+      "Choose a bag for how you live, and pack it lighter than you think."
+     ],
+     "q": "Which bag do you use most, and does it suit your day?",
+     "c": "Empty your everyday bag and keep only what you really used this week."
+    },
+    "de": {
+     "t": "Taschen für den Alltag",
+     "g": "Lernen, wofür Shopper, Rucksäcke, Umhänge- und Schultertaschen jeweils gut sind.",
+     "p": [
+      "Shopper fassen viel und sind schnell gegriffen.",
+      "Rucksäcke verteilen das Gewicht gleichmäßig; Umhängetaschen lassen die Hände frei.",
+      "Wähle eine Tasche nach deinem Alltag und packe sie leichter, als du denkst."
+     ],
+     "q": "Welche Tasche nutzt du am meisten, und passt sie zu deinem Tag?",
+     "c": "Leere deine Alltagstasche aus und behalte nur, was du diese Woche wirklich genutzt hast."
+    },
+    "es": {
+     "t": "Bolsos para el día a día",
+     "g": "Aprender para qué sirve cada uno: tote, mochila, bandolera y bolso de hombro.",
+     "p": [
+      "Los tote llevan mucho y son fáciles de coger.",
+      "Las mochilas reparten el peso; las bandoleras dejan las manos libres.",
+      "Elige un bolso según tu vida y llévalo más ligero de lo que crees."
+     ],
+     "q": "¿Qué bolso usas más y va con tu día a día?",
+     "c": "Vacía tu bolso diario y quédate solo con lo que usaste de verdad esta semana."
+    },
+    "fr": {
+     "t": "Des sacs pour le quotidien",
+     "g": "Apprendre à quoi servent cabas, sacs à dos, sacs bandoulière et sacs portés épaule.",
+     "p": [
+      "Les cabas contiennent beaucoup et se prennent facilement.",
+      "Les sacs à dos répartissent le poids; les bandoulières libèrent les mains.",
+      "Choisis un sac selon ta vie et charge-le plus légèrement que tu ne le crois."
+     ],
+     "q": "Quel sac utilises-tu le plus, et convient-il à ta journée ?",
+     "c": "Vide ton sac du quotidien et ne garde que ce que tu as vraiment utilisé cette semaine."
+    },
+    "it": {
+     "t": "Borse per la vita di tutti i giorni",
+     "g": "Imparare a cosa servono shopper, zaini, tracolle e borse a spalla.",
+     "p": [
+      "Le shopper contengono molto e si prendono facilmente.",
+      "Gli zaini distribuiscono il peso; le tracolle lasciano le mani libere.",
+      "Scegli una borsa in base alla tua vita e riempila meno di quanto pensi."
+     ],
+     "q": "Quale borsa usi di più e va bene per le tue giornate?",
+     "c": "Svuota la borsa di ogni giorno e tieni solo ciò che hai davvero usato questa settimana."
+    },
+    "pt": {
+     "t": "Malas para o dia a dia",
+     "g": "Aprender para que serve cada uma: tote, mochila, mala a tiracolo e mala de ombro.",
+     "p": [
+      "As totes levam muito e são fáceis de agarrar.",
+      "As mochilas distribuem o peso; as a tiracolo deixam as mãos livres.",
+      "Escolhe uma mala pela tua vida e leva-a mais leve do que pensas."
+     ],
+     "q": "Que mala usas mais e serve ao teu dia a dia?",
+     "c": "Esvazia a tua mala diária e fica só com o que usaste mesmo esta semana."
+    },
+    "pt_BR": {
+     "t": "Bolsas para o dia a dia",
+     "g": "Aprender para que serve cada uma: tote, mochila, transversal e bolsa de ombro.",
+     "p": [
+      "As totes carregam muito e são fáceis de pegar.",
+      "As mochilas distribuem o peso; as transversais deixam as mãos livres.",
+      "Escolha uma bolsa pela sua rotina e leve-a mais leve do que imagina."
+     ],
+     "q": "Qual bolsa você mais usa e serve para o seu dia?",
+     "c": "Esvazie sua bolsa de todo dia e fique só com o que realmente usou esta semana."
+    }
+   }
+  }
+ ]
+}

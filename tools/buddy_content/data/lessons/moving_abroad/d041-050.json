@@ -1,0 +1,835 @@
+{
+ "topic": "moving_abroad",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Notifying people and services",
+     "g": "Let banks, providers and contacts know about your move.",
+     "p": [
+      "Make a list of who needs your new details: bank, insurers, subscriptions, employer and friends.",
+      "Do it in waves: urgent contacts first, subscriptions and memberships later.",
+      "Keep old services running until you are sure everything has switched over."
+     ],
+     "q": "Which services will be the most important to update?",
+     "c": "Write a list of ten people or companies to notify and tick them off as you go."
+    },
+    "de": {
+     "t": "Menschen und Dienste informieren",
+     "g": "Gib Banken, Anbietern und Kontakten Bescheid über deinen Umzug.",
+     "p": [
+      "Mach eine Liste, wer deine neuen Daten braucht: Bank, Versicherungen, Abos, Arbeitgeber und Freunde.",
+      "Geh in Wellen vor: erst dringende Kontakte, später Abos und Mitgliedschaften.",
+      "Lass alte Dienste weiterlaufen, bis du sicher bist, dass alles umgestellt ist."
+     ],
+     "q": "Welche Dienste sind am wichtigsten zu aktualisieren?",
+     "c": "Schreib eine Liste mit zehn Personen oder Firmen und hak sie nach und nach ab."
+    },
+    "es": {
+     "t": "Avisar a personas y servicios",
+     "g": "Comunica tu mudanza a bancos, proveedores y contactos.",
+     "p": [
+      "Haz una lista de quién necesita tus nuevos datos: banco, seguros, suscripciones, empleador y amigos.",
+      "Hazlo por tandas: primero los contactos urgentes, después suscripciones y membresías.",
+      "Mantén los servicios antiguos activos hasta estar seguro de que todo se ha cambiado."
+     ],
+     "q": "¿Qué servicios serán los más importantes de actualizar?",
+     "c": "Escribe una lista de diez personas o empresas a avisar y ve tachándolas."
+    },
+    "fr": {
+     "t": "Prévenir personnes et services",
+     "g": "Informe banques, fournisseurs et contacts de ton déménagement.",
+     "p": [
+      "Dresse la liste de ceux qui ont besoin de tes nouvelles coordonnées : banque, assurances, abonnements, employeur et amis.",
+      "Procède par vagues : d'abord les contacts urgents, ensuite abonnements et adhésions.",
+      "Garde les anciens services actifs jusqu'à être sûr que tout a basculé."
+     ],
+     "q": "Quels services seront les plus importants à mettre à jour ?",
+     "c": "Écris une liste de dix personnes ou entreprises à prévenir et coche-les au fur et à mesure."
+    },
+    "it": {
+     "t": "Avvisare persone e servizi",
+     "g": "Fai sapere a banche, fornitori e contatti del tuo trasferimento.",
+     "p": [
+      "Fai un elenco di chi ha bisogno dei tuoi nuovi dati: banca, assicurazioni, abbonamenti, datore di lavoro e amici.",
+      "Procedi a ondate: prima i contatti urgenti, poi abbonamenti e iscrizioni.",
+      "Tieni attivi i vecchi servizi finché non sei sicuro che tutto sia passato."
+     ],
+     "q": "Quali servizi saranno i più importanti da aggiornare?",
+     "c": "Scrivi un elenco di dieci persone o aziende da avvisare e spuntale man mano."
+    },
+    "pt": {
+     "t": "Avisar pessoas e serviços",
+     "g": "Informa bancos, fornecedores e contactos da tua mudança.",
+     "p": [
+      "Faz uma lista de quem precisa dos teus novos dados: banco, seguros, subscrições, empregador e amigos.",
+      "Faz por fases: primeiro os contactos urgentes, depois subscrições e adesões.",
+      "Mantém os serviços antigos ativos até teres a certeza de que tudo foi alterado."
+     ],
+     "q": "Que serviços serão os mais importantes de atualizar?",
+     "c": "Escreve uma lista de dez pessoas ou empresas a avisar e vai riscando."
+    },
+    "pt_BR": {
+     "t": "Avisando pessoas e serviços",
+     "g": "Informe bancos, fornecedores e contatos sobre sua mudança.",
+     "p": [
+      "Faça uma lista de quem precisa dos seus novos dados: banco, seguros, assinaturas, empregador e amigos.",
+      "Faça por etapas: primeiro os contatos urgentes, depois assinaturas e associações.",
+      "Mantenha os serviços antigos ativos até ter certeza de que tudo foi alterado."
+     ],
+     "q": "Quais serviços serão os mais importantes de atualizar?",
+     "c": "Escreva uma lista de dez pessoas ou empresas a avisar e vá riscando."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mail and addresses",
+     "g": "Plan how to receive important mail during the transition.",
+     "p": [
+      "Ask the postal service about forwarding, and a trusted person about collecting mail.",
+      "Choose which accounts can go paperless before you leave.",
+      "Keep one stable address for official letters while you settle in."
+     ],
+     "q": "Who could receive your mail while you are away?",
+     "c": "Ask one trusted person if they can collect your mail and note the answer."
+    },
+    "de": {
+     "t": "Post und Adressen",
+     "g": "Plane, wie du wichtige Post während des Übergangs erhältst.",
+     "p": [
+      "Frag bei der Post nach Nachsendung und bei einer vertrauten Person nach dem Abholen von Briefen.",
+      "Entscheide, welche Konten du vor der Abreise auf papierlos umstellen kannst.",
+      "Behalte eine feste Adresse für offizielle Briefe, solange du ankommst."
+     ],
+     "q": "Wer könnte deine Post annehmen, während du weg bist?",
+     "c": "Frag eine vertraute Person, ob sie deine Post abholen kann, und notiere die Antwort."
+    },
+    "es": {
+     "t": "Correo y direcciones",
+     "g": "Planifica cómo recibirás el correo importante durante la transición.",
+     "p": [
+      "Consulta al servicio postal por el reenvío y a una persona de confianza por recoger tu correo.",
+      "Decide qué cuentas pueden pasar a sin papel antes de irte.",
+      "Mantén una dirección estable para cartas oficiales mientras te instalas."
+     ],
+     "q": "¿Quién podría recibir tu correo mientras estás fuera?",
+     "c": "Pregunta a una persona de confianza si puede recoger tu correo y anota la respuesta."
+    },
+    "fr": {
+     "t": "Courrier et adresses",
+     "g": "Prévois comment recevoir le courrier important pendant la transition.",
+     "p": [
+      "Renseigne-toi auprès de la poste sur la réexpédition et auprès d'une personne de confiance pour relever ton courrier.",
+      "Choisis quels comptes passer au sans-papier avant de partir.",
+      "Garde une adresse stable pour le courrier officiel le temps de t'installer."
+     ],
+     "q": "Qui pourrait recevoir ton courrier pendant ton absence ?",
+     "c": "Demande à une personne de confiance si elle peut relever ton courrier et note la réponse."
+    },
+    "it": {
+     "t": "Posta e indirizzi",
+     "g": "Pianifica come ricevere la posta importante durante la transizione.",
+     "p": [
+      "Chiedi alle poste del servizio di inoltro e a una persona di fiducia di ritirare la posta.",
+      "Scegli quali conti puoi passare al digitale prima di partire.",
+      "Tieni un indirizzo stabile per le lettere ufficiali mentre ti sistemi."
+     ],
+     "q": "Chi potrebbe ricevere la tua posta mentre sei via?",
+     "c": "Chiedi a una persona di fiducia se può ritirare la tua posta e annota la risposta."
+    },
+    "pt": {
+     "t": "Correio e moradas",
+     "g": "Planeia como receber o correio importante durante a transição.",
+     "p": [
+      "Pergunta aos correios sobre o redirecionamento e a uma pessoa de confiança sobre recolher o correio.",
+      "Decide que contas podem passar a sem papel antes de partires.",
+      "Mantém uma morada estável para cartas oficiais enquanto te instalas."
+     ],
+     "q": "Quem poderia receber o teu correio enquanto estás fora?",
+     "c": "Pergunta a uma pessoa de confiança se pode recolher o teu correio e anota a resposta."
+    },
+    "pt_BR": {
+     "t": "Correspondência e endereços",
+     "g": "Planeje como receber a correspondência importante durante a transição.",
+     "p": [
+      "Pergunte aos Correios sobre o redirecionamento e a uma pessoa de confiança sobre recolher a correspondência.",
+      "Decida quais contas podem ir para o digital antes de partir.",
+      "Mantenha um endereço estável para cartas oficiais enquanto você se instala."
+     ],
+     "q": "Quem poderia receber sua correspondência enquanto você está fora?",
+     "c": "Pergunte a uma pessoa de confiança se pode recolher sua correspondência e anote a resposta."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Phone and number plans",
+     "g": "Decide what to do with your current phone number.",
+     "p": [
+      "Your old number may be linked to banks, apps and two-step logins.",
+      "Keep it active, or move accounts to a new number step by step before you cancel.",
+      "Check roaming or travel options for the first days, and local plans for later."
+     ],
+     "q": "Which accounts use your current phone number for security?",
+     "c": "List the apps and banks that use your number for login codes."
+    },
+    "de": {
+     "t": "Handy und Nummer",
+     "g": "Entscheide, was mit deiner aktuellen Telefonnummer passiert.",
+     "p": [
+      "Deine alte Nummer hängt vielleicht an Banken, Apps und Zwei-Faktor-Logins.",
+      "Behalte sie aktiv oder stell die Konten Schritt für Schritt auf eine neue Nummer um, bevor du kündigst.",
+      "Prüfe Roaming- oder Reiseoptionen für die ersten Tage und lokale Tarife für später."
+     ],
+     "q": "Welche Konten nutzen deine Nummer zur Sicherheit?",
+     "c": "Liste die Apps und Banken auf, die deine Nummer für Anmeldecodes nutzen."
+    },
+    "es": {
+     "t": "Móvil y plan de teléfono",
+     "g": "Decide qué hacer con tu número de teléfono actual.",
+     "p": [
+      "Tu número actual puede estar ligado a bancos, apps y verificaciones en dos pasos.",
+      "Mantenlo activo o traslada las cuentas a un número nuevo paso a paso antes de darlo de baja.",
+      "Consulta el roaming o las opciones de viaje para los primeros días, y planes locales para después."
+     ],
+     "q": "¿Qué cuentas usan tu número actual como seguridad?",
+     "c": "Haz una lista de las apps y bancos que usan tu número para códigos de acceso."
+    },
+    "fr": {
+     "t": "Téléphone et forfaits",
+     "g": "Décide quoi faire de ton numéro de téléphone actuel.",
+     "p": [
+      "Ton ancien numéro est peut-être lié à des banques, applis et connexions en deux étapes.",
+      "Garde-le actif ou transfère les comptes vers un nouveau numéro étape par étape avant de résilier.",
+      "Vérifie les options d'itinérance ou de voyage pour les premiers jours, puis les forfaits locaux."
+     ],
+     "q": "Quels comptes utilisent ton numéro actuel pour la sécurité ?",
+     "c": "Liste les applis et banques qui utilisent ton numéro pour les codes de connexion."
+    },
+    "it": {
+     "t": "Telefono e piani tariffari",
+     "g": "Decidi cosa fare del tuo numero di telefono attuale.",
+     "p": [
+      "Il tuo vecchio numero può essere collegato a banche, app e accessi in due passaggi.",
+      "Tienilo attivo o sposta gli account su un nuovo numero passo dopo passo prima di disdire.",
+      "Controlla roaming od opzioni viaggio per i primi giorni e piani locali per dopo."
+     ],
+     "q": "Quali account usano il tuo numero attuale per la sicurezza?",
+     "c": "Elenca le app e le banche che usano il tuo numero per i codici di accesso."
+    },
+    "pt": {
+     "t": "Telemóvel e planos de telefone",
+     "g": "Decide o que fazer com o teu número de telefone atual.",
+     "p": [
+      "O teu número antigo pode estar ligado a bancos, apps e verificações em dois passos.",
+      "Mantém-no ativo ou muda as contas para um número novo passo a passo antes de cancelares.",
+      "Vê as opções de roaming ou de viagem para os primeiros dias e planos locais para depois."
+     ],
+     "q": "Que contas usam o teu número atual como segurança?",
+     "c": "Lista as apps e os bancos que usam o teu número para códigos de acesso."
+    },
+    "pt_BR": {
+     "t": "Celular e planos de telefone",
+     "g": "Decida o que fazer com seu número de telefone atual.",
+     "p": [
+      "Seu número antigo pode estar ligado a bancos, apps e verificações em duas etapas.",
+      "Mantenha-o ativo ou mude as contas para um número novo passo a passo antes de cancelar.",
+      "Veja as opções de roaming ou de viagem para os primeiros dias e planos locais para depois."
+     ],
+     "q": "Quais contas usam seu número atual como segurança?",
+     "c": "Liste os apps e bancos que usam seu número para códigos de acesso."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Banking before you leave",
+     "g": "Talk to your bank about using your account abroad.",
+     "p": [
+      "Ask your bank whether cards and apps work abroad, and what fees may apply.",
+      "Tell the bank about your travel to avoid blocked cards, if they ask for it.",
+      "This is general information, not financial advice. Check terms with your bank."
+     ],
+     "q": "Does your current bank work well for life abroad?",
+     "c": "Write down three questions to ask your bank and book a time to ask."
+    },
+    "de": {
+     "t": "Bankgeschäfte vor der Abreise",
+     "g": "Sprich mit deiner Bank über die Nutzung deines Kontos im Ausland.",
+     "p": [
+      "Frag deine Bank, ob Karten und Apps im Ausland funktionieren und welche Gebühren anfallen können.",
+      "Informiere die Bank über deine Reise, um gesperrte Karten zu vermeiden, falls sie das verlangt.",
+      "Das sind allgemeine Informationen, keine Finanzberatung. Prüfe die Bedingungen bei deiner Bank."
+     ],
+     "q": "Passt deine jetzige Bank gut zu einem Leben im Ausland?",
+     "c": "Schreib drei Fragen an deine Bank auf und vereinbare einen Termin dafür."
+    },
+    "es": {
+     "t": "Gestiones bancarias antes de irte",
+     "g": "Habla con tu banco sobre el uso de tu cuenta en el extranjero.",
+     "p": [
+      "Pregunta a tu banco si las tarjetas y apps funcionan fuera y qué comisiones pueden aplicarse.",
+      "Avisa al banco de tu viaje para evitar tarjetas bloqueadas, si lo piden.",
+      "Esto es información general, no asesoramiento financiero. Comprueba las condiciones con tu banco."
+     ],
+     "q": "¿Tu banco actual funciona bien para vivir fuera?",
+     "c": "Anota tres preguntas para tu banco y reserva un momento para hacerlas."
+    },
+    "fr": {
+     "t": "La banque avant le départ",
+     "g": "Parle à ta banque de l'usage de ton compte à l'étranger.",
+     "p": [
+      "Demande à ta banque si cartes et applis fonctionnent à l'étranger et quels frais peuvent s'appliquer.",
+      "Préviens la banque de ton voyage pour éviter une carte bloquée, si elle le demande.",
+      "Ce sont des informations générales, pas un conseil financier. Vérifie les conditions auprès de ta banque."
+     ],
+     "q": "Ta banque actuelle convient-elle bien à une vie à l'étranger ?",
+     "c": "Note trois questions pour ta banque et prends rendez-vous pour les poser."
+    },
+    "it": {
+     "t": "La banca prima di partire",
+     "g": "Parla con la tua banca dell'uso del conto all'estero.",
+     "p": [
+      "Chiedi alla banca se carte e app funzionano all'estero e quali commissioni possono applicarsi.",
+      "Avvisa la banca del viaggio per evitare carte bloccate, se lo richiede.",
+      "Sono informazioni generali, non consulenza finanziaria. Verifica le condizioni con la tua banca."
+     ],
+     "q": "La tua banca attuale va bene per vivere all'estero?",
+     "c": "Scrivi tre domande per la banca e fissa un momento per farle."
+    },
+    "pt": {
+     "t": "O banco antes de partires",
+     "g": "Fala com o teu banco sobre o uso da conta no estrangeiro.",
+     "p": [
+      "Pergunta ao banco se os cartões e as apps funcionam no estrangeiro e que comissões podem aplicar-se.",
+      "Avisa o banco da tua viagem para evitar cartões bloqueados, se o pedirem.",
+      "Isto é informação geral, não aconselhamento financeiro. Confirma as condições com o teu banco."
+     ],
+     "q": "O teu banco atual serve bem para viver no estrangeiro?",
+     "c": "Escreve três perguntas para o teu banco e marca um momento para as fazer."
+    },
+    "pt_BR": {
+     "t": "O banco antes de partir",
+     "g": "Converse com seu banco sobre o uso da conta no exterior.",
+     "p": [
+      "Pergunte ao banco se cartões e apps funcionam no exterior e quais tarifas podem ser cobradas.",
+      "Avise o banco da sua viagem para evitar cartões bloqueados, se ele pedir.",
+      "Isto é informação geral, não aconselhamento financeiro. Confirme as condições com seu banco."
+     ],
+     "q": "Seu banco atual serve bem para viver no exterior?",
+     "c": "Escreva três perguntas para o seu banco e reserve um momento para fazê-las."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Money for the first weeks",
+     "g": "Have access to money in more than one way when you arrive.",
+     "p": [
+      "Bring a mix: a bank card, a backup card and a small amount of local cash.",
+      "Keep cards in separate places in case one is lost or blocked.",
+      "Know how to reach your bank from abroad and keep the number saved."
+     ],
+     "q": "How will you pay for your first few days?",
+     "c": "Write your money plan: two cards, some cash and the bank phone number saved."
+    },
+    "de": {
+     "t": "Geld für die ersten Wochen",
+     "g": "Sorge dafür, dass du bei der Ankunft auf mehreren Wegen an Geld kommst.",
+     "p": [
+      "Bring eine Mischung mit: eine Bankkarte, eine Ersatzkarte und etwas Bargeld in der Landeswährung.",
+      "Bewahre Karten an getrennten Orten auf, falls eine verloren geht oder gesperrt wird.",
+      "Wisse, wie du deine Bank aus dem Ausland erreichst, und speichere die Nummer."
+     ],
+     "q": "Wie bezahlst du deine ersten Tage?",
+     "c": "Schreib deinen Geldplan: zwei Karten, etwas Bargeld und die gespeicherte Telefonnummer der Bank."
+    },
+    "es": {
+     "t": "Dinero para las primeras semanas",
+     "g": "Ten acceso a dinero de más de una forma cuando llegues.",
+     "p": [
+      "Lleva una mezcla: una tarjeta bancaria, otra de reserva y algo de efectivo local.",
+      "Guarda las tarjetas en sitios distintos por si una se pierde o se bloquea.",
+      "Sabe cómo contactar con tu banco desde fuera y guarda el número."
+     ],
+     "q": "¿Cómo pagarás tus primeros días?",
+     "c": "Escribe tu plan de dinero: dos tarjetas, algo de efectivo y el teléfono del banco guardado."
+    },
+    "fr": {
+     "t": "L'argent des premières semaines",
+     "g": "Aie accès à de l'argent de plusieurs façons à ton arrivée.",
+     "p": [
+      "Emporte un mélange : une carte bancaire, une carte de secours et un peu d'espèces locales.",
+      "Range les cartes à des endroits différents au cas où l'une serait perdue ou bloquée.",
+      "Sache joindre ta banque depuis l'étranger et enregistre le numéro."
+     ],
+     "q": "Comment paieras-tu tes premiers jours ?",
+     "c": "Écris ton plan d'argent : deux cartes, un peu d'espèces et le numéro de la banque enregistré."
+    },
+    "it": {
+     "t": "Denaro per le prime settimane",
+     "g": "Assicurati di avere accesso al denaro in più modi quando arrivi.",
+     "p": [
+      "Porta un mix: una carta bancaria, una di riserva e un po' di contanti locali.",
+      "Tieni le carte in posti diversi nel caso una venga persa o bloccata.",
+      "Sappi come contattare la banca dall'estero e salva il numero."
+     ],
+     "q": "Come pagherai i tuoi primi giorni?",
+     "c": "Scrivi il tuo piano denaro: due carte, un po' di contanti e il numero della banca salvato."
+    },
+    "pt": {
+     "t": "Dinheiro para as primeiras semanas",
+     "g": "Garante acesso a dinheiro de mais de uma forma à chegada.",
+     "p": [
+      "Leva uma mistura: um cartão bancário, um de reserva e algum dinheiro vivo local.",
+      "Guarda os cartões em sítios diferentes caso um se perca ou seja bloqueado.",
+      "Sabe como contactar o teu banco do estrangeiro e guarda o número."
+     ],
+     "q": "Como vais pagar os teus primeiros dias?",
+     "c": "Escreve o teu plano de dinheiro: dois cartões, algum dinheiro vivo e o número do banco guardado."
+    },
+    "pt_BR": {
+     "t": "Dinheiro para as primeiras semanas",
+     "g": "Garanta acesso ao dinheiro de mais de uma forma na chegada.",
+     "p": [
+      "Leve uma mistura: um cartão bancário, um de reserva e algum dinheiro em espécie local.",
+      "Guarde os cartões em lugares diferentes caso um se perca ou seja bloqueado.",
+      "Saiba como contatar seu banco do exterior e salve o número."
+     ],
+     "q": "Como você vai pagar seus primeiros dias?",
+     "c": "Escreva seu plano de dinheiro: dois cartões, algum dinheiro em espécie e o número do banco salvo."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Temporary accommodation",
+     "g": "Book a short-term place to stay while you search for a home.",
+     "p": [
+      "A short rental, guesthouse or room gives you time to look at homes in person.",
+      "Read reviews, check the location and confirm cancellation terms before paying.",
+      "Be careful with offers that seem too good, and never send money in unsure ways."
+     ],
+     "q": "How long would you like temporary accommodation to last?",
+     "c": "Compare three temporary stays and note price, area and cancellation terms."
+    },
+    "de": {
+     "t": "Vorübergehende Unterkunft",
+     "g": "Buch eine Übergangsunterkunft, während du ein Zuhause suchst.",
+     "p": [
+      "Eine Kurzzeitmiete, Pension oder ein Zimmer gibt dir Zeit, Wohnungen vor Ort anzusehen.",
+      "Lies Bewertungen, prüf die Lage und kläre die Stornobedingungen vor der Zahlung.",
+      "Sei vorsichtig bei Angeboten, die zu gut klingen, und überweise nie auf unsichere Weise."
+     ],
+     "q": "Wie lange soll die Übergangsunterkunft dauern?",
+     "c": "Vergleiche drei Übergangsunterkünfte und notiere Preis, Gegend und Stornobedingungen."
+    },
+    "es": {
+     "t": "Alojamiento temporal",
+     "g": "Reserva un lugar de corta estancia mientras buscas casa.",
+     "p": [
+      "Un alquiler corto, una pensión o una habitación te da tiempo para ver viviendas en persona.",
+      "Lee opiniones, comprueba la ubicación y confirma las condiciones de cancelación antes de pagar.",
+      "Ten cuidado con ofertas demasiado buenas y nunca envíes dinero de forma insegura."
+     ],
+     "q": "¿Cuánto te gustaría que durase el alojamiento temporal?",
+     "c": "Compara tres estancias temporales y anota precio, zona y condiciones de cancelación."
+    },
+    "fr": {
+     "t": "Logement temporaire",
+     "g": "Réserve un hébergement de courte durée le temps de chercher un logement.",
+     "p": [
+      "Une location courte, une pension ou une chambre te laisse le temps de visiter des logements en personne.",
+      "Lis les avis, vérifie l'emplacement et confirme les conditions d'annulation avant de payer.",
+      "Méfie-toi des offres trop belles et n'envoie jamais d'argent de façon incertaine."
+     ],
+     "q": "Combien de temps aimerais-tu que le logement temporaire dure ?",
+     "c": "Compare trois hébergements temporaires et note prix, quartier et conditions d'annulation."
+    },
+    "it": {
+     "t": "Alloggio temporaneo",
+     "g": "Prenota un posto per un breve periodo mentre cerchi casa.",
+     "p": [
+      "Un affitto breve, un B&B o una stanza ti dà il tempo di visitare le case di persona.",
+      "Leggi le recensioni, controlla la zona e conferma le condizioni di cancellazione prima di pagare.",
+      "Diffida delle offerte troppo belle e non inviare mai denaro in modo incerto."
+     ],
+     "q": "Quanto vorresti che durasse l'alloggio temporaneo?",
+     "c": "Confronta tre soggiorni temporanei e annota prezzo, zona e condizioni di cancellazione."
+    },
+    "pt": {
+     "t": "Alojamento temporário",
+     "g": "Reserva um sítio para ficar pouco tempo enquanto procuras casa.",
+     "p": [
+      "Um arrendamento curto, uma pensão ou um quarto dá-te tempo para ver casas pessoalmente.",
+      "Lê avaliações, confere a localização e confirma as condições de cancelamento antes de pagares.",
+      "Desconfia de ofertas demasiado boas e nunca envies dinheiro de forma pouco segura."
+     ],
+     "q": "Quanto tempo gostavas que o alojamento temporário durasse?",
+     "c": "Compara três estadias temporárias e anota preço, zona e condições de cancelamento."
+    },
+    "pt_BR": {
+     "t": "Hospedagem temporária",
+     "g": "Reserve um lugar para ficar por pouco tempo enquanto procura casa.",
+     "p": [
+      "Um aluguel curto, uma pousada ou um quarto dá tempo para ver imóveis pessoalmente.",
+      "Leia avaliações, confira a localização e confirme as condições de cancelamento antes de pagar.",
+      "Desconfie de ofertas boas demais e nunca envie dinheiro de forma pouco segura."
+     ],
+     "q": "Quanto tempo você gostaria que a hospedagem temporária durasse?",
+     "c": "Compare três estadias temporárias e anote preço, região e condições de cancelamento."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Learning the neighbourhoods",
+     "g": "Research areas for transport, safety and atmosphere.",
+     "p": [
+      "Use maps to check distance to work or study, public transport and shops.",
+      "Read local community pages and ask residents what each area feels like.",
+      "Visit at different times of day if you can, including evenings and weekends."
+     ],
+     "q": "What matters most to you in a neighbourhood?",
+     "c": "Pick two neighbourhoods and compare them on five points that matter to you."
+    },
+    "de": {
+     "t": "Die Stadtviertel kennenlernen",
+     "g": "Recherchiere Gegenden nach Verkehr, Sicherheit und Atmosphäre.",
+     "p": [
+      "Nutze Karten, um Entfernung zu Arbeit oder Uni, öffentliche Verkehrsmittel und Geschäfte zu prüfen.",
+      "Lies lokale Gemeinschaftsseiten und frag Bewohner, wie sich jede Gegend anfühlt.",
+      "Besuch sie, wenn möglich, zu verschiedenen Tageszeiten, auch abends und am Wochenende."
+     ],
+     "q": "Was ist dir in einem Viertel am wichtigsten?",
+     "c": "Such zwei Viertel aus und vergleiche sie in fünf Punkten, die dir wichtig sind."
+    },
+    "es": {
+     "t": "Conocer los barrios",
+     "g": "Investiga zonas según transporte, seguridad y ambiente.",
+     "p": [
+      "Usa mapas para ver la distancia al trabajo o estudios, el transporte público y las tiendas.",
+      "Lee páginas de la comunidad local y pregunta a los vecinos cómo se vive en cada zona.",
+      "Visita a distintas horas si puedes, incluidas tardes y fines de semana."
+     ],
+     "q": "¿Qué es lo que más te importa de un barrio?",
+     "c": "Elige dos barrios y compáralos en cinco puntos que te importen."
+    },
+    "fr": {
+     "t": "Découvrir les quartiers",
+     "g": "Renseigne-toi sur les quartiers : transports, sécurité et ambiance.",
+     "p": [
+      "Utilise des cartes pour vérifier la distance du travail ou des études, les transports publics et les commerces.",
+      "Lis les pages communautaires locales et demande aux habitants quelle ambiance règne dans chaque quartier.",
+      "Visite à différents moments de la journée si possible, y compris le soir et le week-end."
+     ],
+     "q": "Qu'est-ce qui compte le plus pour toi dans un quartier ?",
+     "c": "Choisis deux quartiers et compare-les sur cinq points qui comptent pour toi."
+    },
+    "it": {
+     "t": "Conoscere i quartieri",
+     "g": "Informati sulle zone: trasporti, sicurezza e atmosfera.",
+     "p": [
+      "Usa le mappe per controllare distanza da lavoro o studio, trasporti pubblici e negozi.",
+      "Leggi le pagine delle comunità locali e chiedi ai residenti com'è ogni zona.",
+      "Visita in momenti diversi della giornata se puoi, anche di sera e nel fine settimana."
+     ],
+     "q": "Cosa conta di più per te in un quartiere?",
+     "c": "Scegli due quartieri e confrontali su cinque punti che contano per te."
+    },
+    "pt": {
+     "t": "Conhecer os bairros",
+     "g": "Pesquisa zonas quanto a transportes, segurança e ambiente.",
+     "p": [
+      "Usa mapas para ver a distância ao trabalho ou estudos, transportes públicos e lojas.",
+      "Lê páginas da comunidade local e pergunta aos residentes como é cada zona.",
+      "Visita a horas diferentes se puderes, incluindo ao serão e ao fim de semana."
+     ],
+     "q": "O que mais importa para ti num bairro?",
+     "c": "Escolhe dois bairros e compara-os em cinco pontos que te importam."
+    },
+    "pt_BR": {
+     "t": "Conhecendo os bairros",
+     "g": "Pesquise regiões quanto a transporte, segurança e clima.",
+     "p": [
+      "Use mapas para ver a distância do trabalho ou estudos, transporte público e lojas.",
+      "Leia páginas da comunidade local e pergunte aos moradores como é cada região.",
+      "Visite em horários diferentes se puder, incluindo à noite e nos fins de semana."
+     ],
+     "q": "O que mais importa para você num bairro?",
+     "c": "Escolha dois bairros e compare em cinco pontos que importam para você."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your arrival plan",
+     "g": "Plan the first day: transport from the airport, keys and food.",
+     "p": [
+      "Decide how you will get from the airport to your first night's stay.",
+      "Plan how and where you will pick up keys, and have a simple meal in mind.",
+      "Arrive in daylight if possible and keep your phone charged."
+     ],
+     "q": "What do you want your first evening to look like?",
+     "c": "Write a step-by-step plan for your first six hours after arrival."
+    },
+    "de": {
+     "t": "Dein Ankunftsplan",
+     "g": "Plane den ersten Tag: Transport vom Flughafen, Schlüssel und Essen.",
+     "p": [
+      "Entscheide, wie du vom Flughafen zur ersten Unterkunft kommst.",
+      "Plane, wie und wo du die Schlüssel abholst, und denk an eine einfache Mahlzeit.",
+      "Komm wenn möglich bei Tageslicht an und halte dein Handy geladen."
+     ],
+     "q": "Wie soll dein erster Abend aussehen?",
+     "c": "Schreib einen Schritt-für-Schritt-Plan für deine ersten sechs Stunden nach der Ankunft."
+    },
+    "es": {
+     "t": "Tu plan de llegada",
+     "g": "Planifica el primer día: transporte desde el aeropuerto, llaves y comida.",
+     "p": [
+      "Decide cómo irás del aeropuerto al alojamiento de la primera noche.",
+      "Planifica cómo y dónde recogerás las llaves, y ten en mente una comida sencilla.",
+      "Llega de día si es posible y mantén el móvil cargado."
+     ],
+     "q": "¿Cómo te gustaría que fuera tu primera tarde?",
+     "c": "Escribe un plan paso a paso para tus primeras seis horas tras la llegada."
+    },
+    "fr": {
+     "t": "Ton plan d'arrivée",
+     "g": "Planifie le premier jour : transport depuis l'aéroport, clés et repas.",
+     "p": [
+      "Décide comment tu iras de l'aéroport à ton logement de la première nuit.",
+      "Prévois comment et où récupérer les clés, et pense à un repas simple.",
+      "Arrive de jour si possible et garde ton téléphone chargé."
+     ],
+     "q": "À quoi voudrais-tu que ressemble ta première soirée ?",
+     "c": "Écris un plan pas à pas pour tes six premières heures après l'arrivée."
+    },
+    "it": {
+     "t": "Il tuo piano di arrivo",
+     "g": "Pianifica il primo giorno: trasporto dall'aeroporto, chiavi e cibo.",
+     "p": [
+      "Decidi come andrai dall'aeroporto all'alloggio della prima notte.",
+      "Pianifica come e dove ritirare le chiavi e pensa a un pasto semplice.",
+      "Arriva di giorno se possibile e tieni il telefono carico."
+     ],
+     "q": "Come vorresti che fosse la tua prima serata?",
+     "c": "Scrivi un piano passo passo per le prime sei ore dopo l'arrivo."
+    },
+    "pt": {
+     "t": "O teu plano de chegada",
+     "g": "Planeia o primeiro dia: transporte do aeroporto, chaves e comida.",
+     "p": [
+      "Decide como vais do aeroporto para o alojamento da primeira noite.",
+      "Planeia como e onde vais buscar as chaves e pensa numa refeição simples.",
+      "Chega de dia, se possível, e mantém o telemóvel carregado."
+     ],
+     "q": "Como gostavas que fosse o teu primeiro serão?",
+     "c": "Escreve um plano passo a passo para as tuas primeiras seis horas após a chegada."
+    },
+    "pt_BR": {
+     "t": "Seu plano de chegada",
+     "g": "Planeje o primeiro dia: transporte do aeroporto, chaves e comida.",
+     "p": [
+      "Decida como vai do aeroporto até a hospedagem da primeira noite.",
+      "Planeje como e onde vai pegar as chaves e pense numa refeição simples.",
+      "Chegue de dia, se possível, e mantenha o celular carregado."
+     ],
+     "q": "Como você gostaria que fosse sua primeira noite?",
+     "c": "Escreva um plano passo a passo para as suas primeiras seis horas após a chegada."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Saying goodbye well",
+     "g": "Plan farewell gatherings and ways to stay close to people you love.",
+     "p": [
+      "A farewell gathering lets everyone share memories and feel part of your journey.",
+      "Spend one-to-one time with the people who matter most to you.",
+      "Say what you appreciate about them. Words said now will last."
+     ],
+     "q": "Who do you most want to spend time with before leaving?",
+     "c": "Plan one farewell meeting and send the invitation today."
+    },
+    "de": {
+     "t": "Gut Abschied nehmen",
+     "g": "Plane Abschiedstreffen und Wege, den Menschen, die du liebst, nah zu bleiben.",
+     "p": [
+      "Ein Abschiedstreffen lässt alle Erinnerungen teilen und sich als Teil deiner Reise fühlen.",
+      "Verbring Zeit zu zweit mit den Menschen, die dir am meisten bedeuten.",
+      "Sag, was du an ihnen schätzt. Worte von heute bleiben."
+     ],
+     "q": "Mit wem möchtest du vor der Abreise am meisten Zeit verbringen?",
+     "c": "Plane ein Abschiedstreffen und schick heute die Einladung."
+    },
+    "es": {
+     "t": "Despedirse bien",
+     "g": "Planifica encuentros de despedida y formas de seguir cerca de quienes quieres.",
+     "p": [
+      "Una reunión de despedida permite que todos compartan recuerdos y se sientan parte de tu viaje.",
+      "Dedica tiempo a solas a las personas que más te importan.",
+      "Di lo que valoras de ellas. Las palabras de hoy perdurarán."
+     ],
+     "q": "¿Con quién quieres pasar más tiempo antes de irte?",
+     "c": "Planea un encuentro de despedida y envía hoy la invitación."
+    },
+    "fr": {
+     "t": "Bien dire au revoir",
+     "g": "Prépare des rencontres d'adieu et des façons de rester proche de ceux que tu aimes.",
+     "p": [
+      "Une rencontre d'adieu permet à chacun de partager des souvenirs et de se sentir partie prenante de ton voyage.",
+      "Passe du temps en tête-à-tête avec ceux qui comptent le plus pour toi.",
+      "Dis ce que tu apprécies chez eux. Les mots d'aujourd'hui resteront."
+     ],
+     "q": "Avec qui veux-tu passer le plus de temps avant de partir ?",
+     "c": "Organise une rencontre d'adieu et envoie l'invitation aujourd'hui."
+    },
+    "it": {
+     "t": "Salutare bene",
+     "g": "Pianifica incontri di saluto e modi per restare vicino a chi ami.",
+     "p": [
+      "Un incontro di saluto permette a tutti di condividere ricordi e sentirsi parte del tuo viaggio.",
+      "Dedica tempo a tu per tu alle persone che contano di più per te.",
+      "Di' cosa apprezzi di loro. Le parole dette ora resteranno."
+     ],
+     "q": "Con chi vuoi passare più tempo prima di partire?",
+     "c": "Organizza un incontro di saluto e invia l'invito oggi."
+    },
+    "pt": {
+     "t": "Despedires-te bem",
+     "g": "Planeia encontros de despedida e formas de ficar perto de quem amas.",
+     "p": [
+      "Um encontro de despedida permite que todos partilhem memórias e se sintam parte da tua viagem.",
+      "Passa tempo a sós com as pessoas que mais importam para ti.",
+      "Diz o que valorizas nelas. As palavras ditas agora ficam."
+     ],
+     "q": "Com quem queres passar mais tempo antes de partires?",
+     "c": "Planeia um encontro de despedida e envia o convite hoje."
+    },
+    "pt_BR": {
+     "t": "Despedindo-se bem",
+     "g": "Planeje encontros de despedida e formas de ficar perto de quem você ama.",
+     "p": [
+      "Um encontro de despedida permite que todos compartilhem memórias e se sintam parte da sua viagem.",
+      "Passe tempo a sós com as pessoas que mais importam para você.",
+      "Diga o que você valoriza nelas. As palavras ditas agora ficam."
+     ],
+     "q": "Com quem você quer passar mais tempo antes de partir?",
+     "c": "Planeje um encontro de despedida e envie o convite hoje."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Keeping in touch plans",
+     "g": "Choose apps and routines to stay connected across time zones.",
+     "p": [
+      "Pick one or two messaging and video apps that everyone can use easily.",
+      "Set a simple rhythm, such as a weekly call and quick voice messages.",
+      "Quality beats quantity. Short, regular contact keeps relationships warm."
+     ],
+     "q": "How would you like to stay in touch with your closest people?",
+     "c": "Agree on one weekly call time with one person who matters to you."
+    },
+    "de": {
+     "t": "Kontakt halten",
+     "g": "Wähle Apps und Routinen, um über Zeitzonen hinweg verbunden zu bleiben.",
+     "p": [
+      "Such ein oder zwei Messenger- und Video-Apps aus, die alle leicht nutzen können.",
+      "Leg einen einfachen Rhythmus fest, etwa einen wöchentlichen Anruf und kurze Sprachnachrichten.",
+      "Qualität schlägt Menge. Kurzer, regelmäßiger Kontakt hält Beziehungen warm."
+     ],
+     "q": "Wie möchtest du mit deinen Liebsten in Kontakt bleiben?",
+     "c": "Vereinbare mit einer wichtigen Person eine feste wöchentliche Anrufzeit."
+    },
+    "es": {
+     "t": "Planes para mantener el contacto",
+     "g": "Elige apps y rutinas para seguir conectado pese a los husos horarios.",
+     "p": [
+      "Elige una o dos apps de mensajes y vídeo que todos puedan usar con facilidad.",
+      "Fija un ritmo sencillo, como una llamada semanal y mensajes de voz breves.",
+      "La calidad vale más que la cantidad. Un contacto corto y regular mantiene vivas las relaciones."
+     ],
+     "q": "¿Cómo te gustaría mantener el contacto con tus personas más cercanas?",
+     "c": "Acuerda una hora fija de llamada semanal con alguien importante para ti."
+    },
+    "fr": {
+     "t": "Rester en contact",
+     "g": "Choisis des applis et des routines pour rester proche malgré les fuseaux horaires.",
+     "p": [
+      "Choisis une ou deux applis de messagerie et de visio que tout le monde utilise facilement.",
+      "Fixe un rythme simple, comme un appel hebdomadaire et de courts messages vocaux.",
+      "La qualité vaut mieux que la quantité. Un contact bref et régulier garde les liens chaleureux."
+     ],
+     "q": "Comment aimerais-tu rester en contact avec tes proches ?",
+     "c": "Convenez d'un horaire d'appel hebdomadaire avec une personne qui compte pour toi."
+    },
+    "it": {
+     "t": "Piani per restare in contatto",
+     "g": "Scegli app e routine per restare in contatto nonostante i fusi orari.",
+     "p": [
+      "Scegli una o due app di messaggi e video che tutti possano usare facilmente.",
+      "Stabilisci un ritmo semplice, come una chiamata settimanale e brevi messaggi vocali.",
+      "La qualità batte la quantità. Un contatto breve e regolare mantiene vivi i legami."
+     ],
+     "q": "Come vorresti restare in contatto con le persone più vicine?",
+     "c": "Concorda un orario fisso di chiamata settimanale con una persona importante per te."
+    },
+    "pt": {
+     "t": "Planos para manter o contacto",
+     "g": "Escolhe apps e rotinas para ficares ligado apesar dos fusos horários.",
+     "p": [
+      "Escolhe uma ou duas apps de mensagens e vídeo que todos usem com facilidade.",
+      "Define um ritmo simples, como uma chamada semanal e mensagens de voz curtas.",
+      "A qualidade vale mais do que a quantidade. Um contacto curto e regular mantém as relações vivas."
+     ],
+     "q": "Como gostavas de manter o contacto com as tuas pessoas mais próximas?",
+     "c": "Combina uma hora fixa de chamada semanal com alguém importante para ti."
+    },
+    "pt_BR": {
+     "t": "Planos para manter contato",
+     "g": "Escolha apps e rotinas para ficar conectado apesar dos fusos horários.",
+     "p": [
+      "Escolha um ou dois apps de mensagens e vídeo que todos usem com facilidade.",
+      "Defina um ritmo simples, como uma chamada semanal e mensagens de voz curtas.",
+      "Qualidade vale mais que quantidade. Um contato curto e regular mantém as relações vivas."
+     ],
+     "q": "Como você gostaria de manter contato com as pessoas mais próximas?",
+     "c": "Combine um horário fixo de chamada semanal com alguém importante para você."
+    }
+   }
+  }
+ ]
+}

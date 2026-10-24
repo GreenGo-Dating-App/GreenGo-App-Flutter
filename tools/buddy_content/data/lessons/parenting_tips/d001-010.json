@@ -1,0 +1,835 @@
+{
+ "topic": "parenting_tips",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Each day brings one small, friendly idea you can try in minutes.",
+      "Every family is different, so take what fits yours and leave the rest.",
+      "Consistency matters more than perfection; good enough is wonderful."
+     ],
+     "t": "Welcome to everyday parenting",
+     "g": "See what this path covers and why small, steady steps beat perfection.",
+     "q": "What is one moment in your day with kids that you would love to make smoother?",
+     "c": "Pick one small thing you already do well as a parent and thank yourself for it."
+    },
+    "de": {
+     "p": [
+      "Jeden Tag gibt es eine kleine, freundliche Idee, die du in Minuten ausprobieren kannst.",
+      "Jede Familie ist anders, nimm also, was zu deiner passt, und lass den Rest.",
+      "Beständigkeit zählt mehr als Perfektion; gut genug ist wunderbar."
+     ],
+     "t": "Willkommen zum Familienalltag",
+     "g": "Erfahre, worum es auf diesem Weg geht und warum kleine, stetige Schritte Perfektion schlagen.",
+     "q": "Welchen Moment im Alltag mit Kindern würdest du gern entspannter gestalten?",
+     "c": "Such dir etwas, das du als Elternteil schon gut machst, und danke dir selbst dafür."
+    },
+    "es": {
+     "p": [
+      "Cada día llega una idea pequeña y amable que puedes probar en minutos.",
+      "Cada familia es distinta: quédate con lo que te sirva y deja el resto.",
+      "La constancia importa más que la perfección; lo suficientemente bueno es estupendo."
+     ],
+     "t": "Bienvenido a la crianza del día a día",
+     "g": "Descubre qué abarca este camino y por qué los pasos pequeños y constantes valen más que la perfección.",
+     "q": "¿Qué momento de tu día con los niños te gustaría que fuera más fácil?",
+     "c": "Elige algo que ya haces bien como madre o padre y date las gracias por ello."
+    },
+    "fr": {
+     "p": [
+      "Chaque jour apporte une petite idée bienveillante à essayer en quelques minutes.",
+      "Chaque famille est différente : garde ce qui te convient et laisse le reste.",
+      "La régularité compte plus que la perfection ; être assez bien, c'est très bien."
+     ],
+     "t": "Bienvenue dans la parentalité du quotidien",
+     "g": "Découvre ce que couvre ce parcours et pourquoi de petits pas réguliers valent mieux que la perfection.",
+     "q": "Quel moment de ta journée avec les enfants aimerais-tu rendre plus fluide ?",
+     "c": "Choisis une chose que tu fais déjà bien comme parent et remercie-toi pour cela."
+    },
+    "it": {
+     "p": [
+      "Ogni giorno arriva una piccola idea gentile da provare in pochi minuti.",
+      "Ogni famiglia è diversa: prendi ciò che ti serve e lascia il resto.",
+      "La costanza conta più della perfezione; essere abbastanza bravi è già meraviglioso."
+     ],
+     "t": "Benvenuto nella genitorialità di ogni giorno",
+     "g": "Scopri cosa tratta questo percorso e perché piccoli passi costanti valgono più della perfezione.",
+     "q": "Quale momento della tua giornata con i bambini vorresti rendere più sereno?",
+     "c": "Scegli una cosa che già fai bene come genitore e ringraziati per questo."
+    },
+    "pt": {
+     "p": [
+      "Cada dia traz uma ideia pequena e simpática que podes experimentar em minutos.",
+      "Cada família é diferente: fica com o que te serve e deixa o resto.",
+      "A constância importa mais do que a perfeição; suficientemente bom é ótimo."
+     ],
+     "t": "Bem-vindo à parentalidade do dia a dia",
+     "g": "Descobre o que este caminho abrange e porque é que pequenos passos constantes valem mais do que a perfeição.",
+     "q": "Que momento do teu dia com as crianças gostarias de tornar mais tranquilo?",
+     "c": "Escolhe uma coisa que já fazes bem como pai ou mãe e agradece-te por isso."
+    },
+    "pt_BR": {
+     "p": [
+      "Todo dia chega uma ideia pequena e gentil que você pode testar em minutos.",
+      "Cada família é diferente: fique com o que combina com a sua e deixe o resto.",
+      "Constância importa mais que perfeição; ser bom o bastante já é ótimo."
+     ],
+     "t": "Boas-vindas à parentalidade do dia a dia",
+     "g": "Descubra o que este caminho traz e por que passos pequenos e constantes valem mais que perfeição.",
+     "q": "Qual momento do seu dia com as crianças você gostaria de deixar mais leve?",
+     "c": "Escolha algo que você já faz bem como pai ou mãe e agradeça a si mesmo por isso."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "A child who feels close is more willing to listen than one who feels judged.",
+      "Connecting can be tiny: a smile, a hand on the shoulder, a shared look.",
+      "Connect first, then guide; the same words land softer."
+     ],
+     "t": "Connection before correction",
+     "g": "Learn why a warm moment together makes guidance easier for children to accept.",
+     "q": "When your child is most open to listening, what is usually happening just before?",
+     "c": "Before your next request today, offer ten seconds of warm attention first."
+    },
+    "de": {
+     "p": [
+      "Ein Kind, das sich nah fühlt, hört eher zu als eines, das sich beurteilt fühlt.",
+      "Verbindung kann winzig sein: ein Lächeln, eine Hand auf der Schulter, ein Blick.",
+      "Erst verbinden, dann anleiten; dieselben Worte kommen sanfter an."
+     ],
+     "t": "Verbindung vor Korrektur",
+     "g": "Lerne, warum ein warmer gemeinsamer Moment Anleitung für Kinder leichter annehmbar macht.",
+     "q": "Was passiert meistens kurz davor, wenn dein Kind besonders gut zuhört?",
+     "c": "Schenke heute vor deiner nächsten Bitte zehn Sekunden warme Aufmerksamkeit."
+    },
+    "es": {
+     "p": [
+      "Un niño que se siente cerca escucha más que uno que se siente juzgado.",
+      "Conectar puede ser algo mínimo: una sonrisa, una mano en el hombro, una mirada.",
+      "Primero conecta, luego guía; las mismas palabras llegan más suaves."
+     ],
+     "t": "Conexión antes que corrección",
+     "g": "Aprende por qué un momento cálido juntos hace que la guía sea más fácil de aceptar para los niños.",
+     "q": "Cuando tu hijo está más dispuesto a escuchar, ¿qué suele pasar justo antes?",
+     "c": "Antes de tu próxima petición de hoy, regala diez segundos de atención cálida."
+    },
+    "fr": {
+     "p": [
+      "Un enfant qui se sent proche écoute plus volontiers que celui qui se sent jugé.",
+      "Se relier peut être minuscule : un sourire, une main sur l'épaule, un regard.",
+      "D'abord le lien, ensuite le cadre ; les mêmes mots passent plus doucement."
+     ],
+     "t": "Le lien avant la correction",
+     "g": "Comprends pourquoi un moment chaleureux rend les conseils plus faciles à accepter pour l'enfant.",
+     "q": "Quand ton enfant est le plus à l'écoute, que se passe-t-il en général juste avant ?",
+     "c": "Avant ta prochaine demande aujourd'hui, offre dix secondes d'attention chaleureuse."
+    },
+    "it": {
+     "p": [
+      "Un bambino che si sente vicino ascolta più volentieri di uno che si sente giudicato.",
+      "Il contatto può essere minuscolo: un sorriso, una mano sulla spalla, uno sguardo.",
+      "Prima crea legame, poi guida; le stesse parole arrivano più morbide."
+     ],
+     "t": "Prima il legame, poi la correzione",
+     "g": "Scopri perché un momento caloroso insieme rende le indicazioni più facili da accettare per i bambini.",
+     "q": "Quando tuo figlio è più disposto ad ascoltare, cosa succede di solito poco prima?",
+     "c": "Prima della tua prossima richiesta di oggi, regala dieci secondi di attenzione calda."
+    },
+    "pt": {
+     "p": [
+      "Uma criança que se sente próxima ouve mais do que uma que se sente julgada.",
+      "Ligar-se pode ser mínimo: um sorriso, uma mão no ombro, um olhar.",
+      "Primeiro cria ligação, depois orienta; as mesmas palavras chegam mais suaves."
+     ],
+     "t": "Ligação antes da correção",
+     "g": "Percebe porque é que um momento caloroso torna a orientação mais fácil de aceitar para as crianças.",
+     "q": "Quando o teu filho está mais disponível para ouvir, o que costuma acontecer mesmo antes?",
+     "c": "Antes do teu próximo pedido de hoje, oferece dez segundos de atenção calorosa."
+    },
+    "pt_BR": {
+     "p": [
+      "Uma criança que se sente próxima escuta mais do que uma que se sente julgada.",
+      "Conectar pode ser pequeno: um sorriso, uma mão no ombro, um olhar.",
+      "Primeiro conecte, depois oriente; as mesmas palavras chegam mais suaves."
+     ],
+     "t": "Conexão antes da correção",
+     "g": "Entenda por que um momento caloroso torna a orientação mais fácil de ser aceita pelas crianças.",
+     "q": "Quando seu filho está mais aberto a ouvir, o que costuma acontecer logo antes?",
+     "c": "Antes do seu próximo pedido de hoje, ofereça dez segundos de atenção carinhosa."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Ten undivided minutes can mean more than a distracted afternoon.",
+      "Let the child choose the activity; your job is to follow and enjoy.",
+      "Put the phone away so your attention is clearly theirs."
+     ],
+     "t": "The power of daily one-on-one time",
+     "g": "Plan ten focused minutes a day with each child, led by their interests.",
+     "q": "What does each of your children love doing that you could join for ten minutes?",
+     "c": "Spend ten phone-free minutes today doing whatever your child picks."
+    },
+    "de": {
+     "p": [
+      "Zehn ungeteilte Minuten können mehr bedeuten als ein abgelenkter Nachmittag.",
+      "Lass das Kind die Aktivität wählen; du folgst und genießt.",
+      "Leg das Handy weg, damit deine Aufmerksamkeit klar bei ihm ist."
+     ],
+     "t": "Die Kraft der täglichen Einzelzeit",
+     "g": "Plane täglich zehn konzentrierte Minuten mit jedem Kind, geleitet von seinen Interessen.",
+     "q": "Was machen deine Kinder am liebsten, wobei du zehn Minuten mitmachen könntest?",
+     "c": "Verbringe heute zehn handyfreie Minuten mit dem, was dein Kind aussucht."
+    },
+    "es": {
+     "p": [
+      "Diez minutos sin distracciones pueden valer más que una tarde dispersa.",
+      "Deja que el niño elija la actividad; tu papel es seguirle y disfrutar.",
+      "Guarda el móvil para que tu atención sea claramente suya."
+     ],
+     "t": "El poder del tiempo a solas cada día",
+     "g": "Planifica diez minutos de atención plena al día con cada hijo, guiados por sus intereses.",
+     "q": "¿Qué le gusta hacer a cada uno de tus hijos y podrías compartir diez minutos?",
+     "c": "Dedica hoy diez minutos sin móvil a lo que elija tu hijo."
+    },
+    "fr": {
+     "p": [
+      "Dix minutes sans distraction peuvent valoir plus qu'un après-midi dispersé.",
+      "Laisse l'enfant choisir l'activité ; ton rôle est de suivre et d'apprécier.",
+      "Range le téléphone pour que ton attention soit clairement la sienne."
+     ],
+     "t": "Le pouvoir du tête-à-tête quotidien",
+     "g": "Prévois dix minutes d'attention pleine par jour avec chaque enfant, guidées par ses intérêts.",
+     "q": "Qu'est-ce que chacun de tes enfants adore faire et que tu pourrais partager dix minutes ?",
+     "c": "Passe aujourd'hui dix minutes sans téléphone à faire ce que ton enfant choisit."
+    },
+    "it": {
+     "p": [
+      "Dieci minuti senza distrazioni possono valere più di un pomeriggio distratto.",
+      "Lascia scegliere l'attività al bambino; il tuo compito è seguirlo e goderti il momento.",
+      "Metti via il telefono, così la tua attenzione è chiaramente sua."
+     ],
+     "t": "Il potere del tempo individuale quotidiano",
+     "g": "Pianifica dieci minuti al giorno di attenzione piena con ogni figlio, guidati dai suoi interessi.",
+     "q": "Cosa amano fare i tuoi figli e potresti condividere per dieci minuti?",
+     "c": "Oggi trascorri dieci minuti senza telefono facendo ciò che sceglie tuo figlio."
+    },
+    "pt": {
+     "p": [
+      "Dez minutos sem distrações podem valer mais do que uma tarde dispersa.",
+      "Deixa a criança escolher a atividade; o teu papel é acompanhar e desfrutar.",
+      "Guarda o telemóvel para que a tua atenção seja claramente dela."
+     ],
+     "t": "O poder do tempo a sós todos os dias",
+     "g": "Planeia dez minutos de atenção total por dia com cada filho, guiados pelos seus interesses.",
+     "q": "O que é que cada um dos teus filhos adora fazer e tu podias partilhar dez minutos?",
+     "c": "Passa hoje dez minutos sem telemóvel a fazer o que o teu filho escolher."
+    },
+    "pt_BR": {
+     "p": [
+      "Dez minutos sem distração podem valer mais que uma tarde dispersa.",
+      "Deixe a criança escolher a atividade; seu papel é acompanhar e curtir.",
+      "Guarde o celular para que sua atenção seja claramente dela."
+     ],
+     "t": "O poder do tempo a sós todos os dias",
+     "g": "Planeje dez minutos de atenção total por dia com cada filho, guiados pelos interesses dele.",
+     "q": "O que cada um dos seus filhos ama fazer e você poderia dividir dez minutos?",
+     "c": "Passe hoje dez minutos sem celular fazendo o que seu filho escolher."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Looking up at a tall adult can feel big; eye level feels safe and equal.",
+      "Crouch, sit on the floor or on a step before important chats.",
+      "Eye contact plus a soft voice tells a child you are truly with them."
+     ],
+     "t": "Getting down to eye level",
+     "g": "Notice how kneeling or sitting at your child's height changes a conversation.",
+     "q": "How do you think the world looks from your child's height in your home?",
+     "c": "Crouch to eye level for every serious or tender chat today."
+    },
+    "de": {
+     "p": [
+      "Zu einem großen Erwachsenen aufzuschauen wirkt groß; Augenhöhe fühlt sich sicher und gleichwertig an.",
+      "Geh in die Hocke oder setz dich auf den Boden, bevor du Wichtiges besprichst.",
+      "Blickkontakt und eine weiche Stimme zeigen: Ich bin ganz bei dir."
+     ],
+     "t": "Auf Augenhöhe gehen",
+     "g": "Bemerke, wie sich ein Gespräch verändert, wenn du dich auf die Höhe deines Kindes begibst.",
+     "q": "Wie sieht deine Wohnung wohl aus der Perspektive deines Kindes aus?",
+     "c": "Geh heute bei jedem ernsten oder zärtlichen Gespräch auf Augenhöhe."
+    },
+    "es": {
+     "p": [
+      "Mirar hacia arriba a un adulto alto impone; a la altura de los ojos se siente seguro e igual.",
+      "Agáchate o siéntate en el suelo o en un escalón antes de hablar de algo importante.",
+      "El contacto visual y una voz suave dicen: estoy de verdad contigo."
+     ],
+     "t": "Ponerse a su altura",
+     "g": "Observa cómo cambia una conversación cuando te agachas o te sientas a la altura de tu hijo.",
+     "q": "¿Cómo crees que se ve tu casa desde la altura de tu hijo?",
+     "c": "Ponte a su altura en cada charla seria o tierna de hoy."
+    },
+    "fr": {
+     "p": [
+      "Lever les yeux vers un grand adulte impressionne ; à hauteur d'yeux, on se sent en sécurité et égal.",
+      "Accroupis-toi ou assieds-toi par terre avant les discussions importantes.",
+      "Le regard et une voix douce disent : je suis vraiment avec toi."
+     ],
+     "t": "Se mettre à hauteur d'enfant",
+     "g": "Observe comment une conversation change quand tu te mets à la hauteur de ton enfant.",
+     "q": "À ton avis, à quoi ressemble votre maison vue à la hauteur de ton enfant ?",
+     "c": "Mets-toi à sa hauteur pour chaque échange sérieux ou tendre aujourd'hui."
+    },
+    "it": {
+     "p": [
+      "Guardare in su verso un adulto alto può intimidire; alla stessa altezza ci si sente sicuri e pari.",
+      "Accovacciati o siediti per terra prima dei discorsi importanti.",
+      "Contatto visivo e voce morbida dicono: sono davvero con te."
+     ],
+     "t": "Scendere al loro livello",
+     "g": "Nota come cambia una conversazione quando ti abbassi all'altezza di tuo figlio.",
+     "q": "Come pensi che appaia casa vostra vista dall'altezza di tuo figlio?",
+     "c": "Oggi mettiti alla sua altezza in ogni chiacchierata seria o tenera."
+    },
+    "pt": {
+     "p": [
+      "Olhar para cima para um adulto alto impõe; à altura dos olhos sente-se segurança e igualdade.",
+      "Agacha-te ou senta-te no chão antes de conversas importantes.",
+      "Contacto visual e voz suave dizem: estou mesmo contigo."
+     ],
+     "t": "Ficar à altura dos olhos",
+     "g": "Repara como muda uma conversa quando te baixas à altura do teu filho.",
+     "q": "Como achas que a vossa casa se vê da altura do teu filho?",
+     "c": "Põe-te à altura dele em cada conversa séria ou carinhosa de hoje."
+    },
+    "pt_BR": {
+     "p": [
+      "Olhar para cima para um adulto alto impõe; na altura dos olhos há segurança e igualdade.",
+      "Agache ou sente no chão antes de conversas importantes.",
+      "Contato visual e voz suave dizem: estou mesmo com você."
+     ],
+     "t": "Ficar na altura dos olhos",
+     "g": "Perceba como uma conversa muda quando você se abaixa até a altura do seu filho.",
+     "q": "Como você acha que sua casa parece vista da altura do seu filho?",
+     "c": "Fique na altura dele em cada conversa séria ou carinhosa de hoje."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Repeat the feeling in your own words: You sound disappointed.",
+      "Listen fully before fixing; often kids just need to be understood.",
+      "Naming feelings helps children learn words for their inner world."
+     ],
+     "t": "Active listening with kids",
+     "g": "Practise reflecting back what a child says so they feel heard.",
+     "q": "When did you last feel truly listened to, and what did the listener do?",
+     "c": "Reflect one feeling back to your child today before offering any advice."
+    },
+    "de": {
+     "p": [
+      "Wiederhole das Gefühl mit eigenen Worten: Du klingst enttäuscht.",
+      "Hör erst ganz zu, bevor du löst; oft wollen Kinder nur verstanden werden.",
+      "Gefühle zu benennen gibt Kindern Worte für ihre Innenwelt."
+     ],
+     "t": "Aktiv zuhören bei Kindern",
+     "g": "Übe, das Gesagte deines Kindes zu spiegeln, damit es sich gehört fühlt.",
+     "q": "Wann hat dir zuletzt jemand richtig zugehört, und was hat er getan?",
+     "c": "Spiegle heute ein Gefühl deines Kindes, bevor du einen Rat gibst."
+    },
+    "es": {
+     "p": [
+      "Repite la emoción con tus palabras: Suenas decepcionado.",
+      "Escucha por completo antes de arreglar; a menudo solo necesitan sentirse comprendidos.",
+      "Poner nombre a las emociones da a los niños palabras para su mundo interior."
+     ],
+     "t": "Escucha activa con los niños",
+     "g": "Practica reflejar lo que dice un niño para que se sienta escuchado.",
+     "q": "¿Cuándo te sentiste realmente escuchado por última vez y qué hizo esa persona?",
+     "c": "Hoy refleja una emoción de tu hijo antes de dar cualquier consejo."
+    },
+    "fr": {
+     "p": [
+      "Reprends l'émotion avec tes mots : Tu as l'air déçu.",
+      "Écoute jusqu'au bout avant de résoudre ; souvent, l'enfant veut juste être compris.",
+      "Nommer les émotions donne aux enfants des mots pour leur monde intérieur."
+     ],
+     "t": "L'écoute active avec les enfants",
+     "g": "Entraîne-toi à reformuler ce que dit l'enfant pour qu'il se sente entendu.",
+     "q": "Quand t'es-tu senti vraiment écouté la dernière fois, et que faisait l'autre personne ?",
+     "c": "Aujourd'hui, reformule une émotion de ton enfant avant de donner un conseil."
+    },
+    "it": {
+     "p": [
+      "Ripeti l'emozione con parole tue: Sembri deluso.",
+      "Ascolta fino in fondo prima di risolvere; spesso i bambini vogliono solo essere capiti.",
+      "Dare un nome alle emozioni offre ai bambini le parole per il loro mondo interiore."
+     ],
+     "t": "Ascolto attivo con i bambini",
+     "g": "Esercitati a riflettere ciò che dice un bambino perché si senta ascoltato.",
+     "q": "Quando ti sei sentito davvero ascoltato l'ultima volta e cosa ha fatto l'altra persona?",
+     "c": "Oggi rispecchia un'emozione di tuo figlio prima di dare qualsiasi consiglio."
+    },
+    "pt": {
+     "p": [
+      "Repete a emoção por palavras tuas: Pareces desiludido.",
+      "Ouve por inteiro antes de resolver; muitas vezes só precisam de ser compreendidas.",
+      "Dar nome às emoções dá às crianças palavras para o seu mundo interior."
+     ],
+     "t": "Escuta ativa com as crianças",
+     "g": "Pratica refletir o que a criança diz para que se sinta ouvida.",
+     "q": "Quando foi a última vez que te sentiste mesmo ouvido e o que fez essa pessoa?",
+     "c": "Hoje reflete uma emoção do teu filho antes de dares qualquer conselho."
+    },
+    "pt_BR": {
+     "p": [
+      "Repita a emoção com suas palavras: Você parece desapontado.",
+      "Escute por inteiro antes de resolver; muitas vezes elas só precisam ser compreendidas.",
+      "Dar nome às emoções dá às crianças palavras para o mundo interior delas."
+     ],
+     "t": "Escuta ativa com as crianças",
+     "g": "Pratique refletir o que a criança diz para que ela se sinta ouvida.",
+     "q": "Quando foi a última vez que você se sentiu realmente ouvido e o que a pessoa fez?",
+     "c": "Hoje reflita uma emoção do seu filho antes de dar qualquer conselho."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Say Walk please instead of Don't run; the brain hears the action.",
+      "One request at a time, in few words, works better than a long speech.",
+      "Get close, make eye contact and give a moment to respond."
+     ],
+     "t": "Using clear, simple requests",
+     "g": "Use short, positive instructions that tell children what to do.",
+     "q": "Which request do you repeat most at home, and how could you say it positively?",
+     "c": "Turn three Don't phrases into What to do phrases today."
+    },
+    "de": {
+     "p": [
+      "Sag Geh bitte langsam statt Renn nicht; das Gehirn hört die Handlung.",
+      "Eine Bitte nach der anderen in wenigen Worten wirkt besser als eine lange Rede.",
+      "Geh nah heran, such Blickkontakt und gib einen Moment zum Reagieren."
+     ],
+     "t": "Klare, einfache Bitten",
+     "g": "Nutze kurze, positive Anweisungen, die Kindern sagen, was sie tun sollen.",
+     "q": "Welche Bitte wiederholst du zu Hause am häufigsten, und wie könntest du sie positiv sagen?",
+     "c": "Verwandle heute drei Nicht-Sätze in Sätze, die sagen, was zu tun ist."
+    },
+    "es": {
+     "p": [
+      "Di Camina, por favor en vez de No corras; el cerebro oye la acción.",
+      "Una petición cada vez, con pocas palabras, funciona mejor que un discurso largo.",
+      "Acércate, mira a los ojos y da un momento para responder."
+     ],
+     "t": "Peticiones claras y sencillas",
+     "g": "Usa instrucciones cortas y positivas que digan a los niños qué hacer.",
+     "q": "¿Qué petición repites más en casa y cómo podrías decirla en positivo?",
+     "c": "Hoy convierte tres frases de No en frases de qué hacer."
+    },
+    "fr": {
+     "p": [
+      "Dis Marche, s'il te plaît plutôt que Ne cours pas ; le cerveau retient l'action.",
+      "Une demande à la fois, en peu de mots, marche mieux qu'un long discours.",
+      "Rapproche-toi, croise son regard et laisse un instant pour répondre."
+     ],
+     "t": "Des demandes claires et simples",
+     "g": "Utilise des consignes courtes et positives qui disent à l'enfant quoi faire.",
+     "q": "Quelle demande répètes-tu le plus à la maison, et comment la dire de façon positive ?",
+     "c": "Aujourd'hui, transforme trois interdictions en consignes sur ce qu'il faut faire."
+    },
+    "it": {
+     "p": [
+      "Di Cammina, per favore invece di Non correre; il cervello coglie l'azione.",
+      "Una richiesta alla volta, con poche parole, funziona meglio di un lungo discorso.",
+      "Avvicinati, guardalo negli occhi e concedi un momento per rispondere."
+     ],
+     "t": "Richieste chiare e semplici",
+     "g": "Usa istruzioni brevi e positive che dicano ai bambini cosa fare.",
+     "q": "Quale richiesta ripeti di più a casa e come potresti dirla in positivo?",
+     "c": "Oggi trasforma tre frasi con Non in frasi che dicono cosa fare."
+    },
+    "pt": {
+     "p": [
+      "Diz Anda devagar, por favor em vez de Não corras; o cérebro ouve a ação.",
+      "Um pedido de cada vez, com poucas palavras, funciona melhor do que um discurso longo.",
+      "Aproxima-te, olha nos olhos e dá um momento para responder."
+     ],
+     "t": "Pedidos claros e simples",
+     "g": "Usa instruções curtas e positivas que digam às crianças o que fazer.",
+     "q": "Que pedido repetes mais em casa e como o poderias dizer de forma positiva?",
+     "c": "Hoje transforma três frases com Não em frases que dizem o que fazer."
+    },
+    "pt_BR": {
+     "p": [
+      "Diga Ande devagar, por favor em vez de Não corra; o cérebro ouve a ação.",
+      "Um pedido por vez, com poucas palavras, funciona melhor que um discurso longo.",
+      "Chegue perto, olhe nos olhos e dê um momento para responder."
+     ],
+     "t": "Pedidos claros e simples",
+     "g": "Use instruções curtas e positivas que digam às crianças o que fazer.",
+     "q": "Qual pedido você mais repete em casa e como poderia dizê-lo de forma positiva?",
+     "c": "Hoje transforme três frases com Não em frases que dizem o que fazer."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Not every no is needed; save your firm nos for what really matters.",
+      "Yes-later works well: Yes, after dinner we can build that tower.",
+      "Saying yes to safe, small things helps kids accept the big nos."
+     ],
+     "t": "Say yes more often",
+     "g": "Find ways to say yes, or yes-later, to cut daily power struggles.",
+     "q": "What is one thing you often refuse that could safely become a yes?",
+     "c": "Replace one automatic no today with a yes or a yes-later."
+    },
+    "de": {
+     "p": [
+      "Nicht jedes Nein ist nötig; spar dir feste Neins für das wirklich Wichtige.",
+      "Ja-später funktioniert gut: Ja, nach dem Essen bauen wir den Turm.",
+      "Ja zu kleinen, sicheren Dingen hilft Kindern, die großen Neins zu akzeptieren."
+     ],
+     "t": "Öfter Ja sagen",
+     "g": "Finde Wege für ein Ja oder ein Ja-später, um tägliche Machtkämpfe zu verringern.",
+     "q": "Was lehnst du oft ab, das sicher ein Ja werden könnte?",
+     "c": "Ersetze heute ein automatisches Nein durch ein Ja oder ein Ja-später."
+    },
+    "es": {
+     "p": [
+      "No hace falta cada no; reserva los noes firmes para lo que de verdad importa.",
+      "El sí más tarde funciona: Sí, después de cenar construimos esa torre.",
+      "Decir sí a cosas pequeñas y seguras ayuda a aceptar los noes grandes."
+     ],
+     "t": "Di sí más a menudo",
+     "g": "Busca formas de decir sí, o sí más tarde, para reducir los pulsos diarios.",
+     "q": "¿Qué sueles negar que podría convertirse con seguridad en un sí?",
+     "c": "Hoy cambia un no automático por un sí o un sí más tarde."
+    },
+    "fr": {
+     "p": [
+      "Tous les non ne sont pas nécessaires ; garde les non fermes pour l'essentiel.",
+      "Le oui plus tard marche bien : Oui, après le dîner, on construit cette tour.",
+      "Dire oui aux petites choses sûres aide à accepter les gros non."
+     ],
+     "t": "Dire oui plus souvent",
+     "g": "Trouve des façons de dire oui, ou oui plus tard, pour réduire les bras de fer quotidiens.",
+     "q": "Qu'est-ce que tu refuses souvent et qui pourrait devenir un oui en toute sécurité ?",
+     "c": "Aujourd'hui, remplace un non automatique par un oui ou un oui plus tard."
+    },
+    "it": {
+     "p": [
+      "Non ogni no è necessario; tieni i no fermi per ciò che conta davvero.",
+      "Il sì più tardi funziona: Sì, dopo cena costruiamo quella torre.",
+      "Dire sì a cose piccole e sicure aiuta ad accettare i grandi no."
+     ],
+     "t": "Dire sì più spesso",
+     "g": "Trova modi per dire sì, o sì più tardi, per ridurre i bracci di ferro quotidiani.",
+     "q": "Cosa rifiuti spesso che potrebbe diventare un sì in tutta sicurezza?",
+     "c": "Oggi sostituisci un no automatico con un sì o un sì più tardi."
+    },
+    "pt": {
+     "p": [
+      "Nem todos os nãos são precisos; guarda os nãos firmes para o que realmente importa.",
+      "O sim mais tarde funciona: Sim, depois do jantar construímos essa torre.",
+      "Dizer sim a coisas pequenas e seguras ajuda a aceitar os nãos grandes."
+     ],
+     "t": "Dizer sim com mais frequência",
+     "g": "Encontra formas de dizer sim, ou sim mais tarde, para reduzir os braços de ferro diários.",
+     "q": "O que costumas recusar que poderia passar com segurança a um sim?",
+     "c": "Hoje troca um não automático por um sim ou um sim mais tarde."
+    },
+    "pt_BR": {
+     "p": [
+      "Nem todo não é preciso; guarde os nãos firmes para o que realmente importa.",
+      "O sim depois funciona: Sim, depois do jantar a gente constrói essa torre.",
+      "Dizer sim a coisas pequenas e seguras ajuda a aceitar os nãos grandes."
+     ],
+     "t": "Diga sim com mais frequência",
+     "g": "Encontre jeitos de dizer sim, ou sim depois, para reduzir os cabos de guerra diários.",
+     "q": "O que você costuma recusar que poderia virar um sim com segurança?",
+     "c": "Hoje troque um não automático por um sim ou um sim depois."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "You worked so hard on that puzzle builds more than You are so clever.",
+      "Praise what the child did: trying again, sharing, staying patient.",
+      "Effort-based words help children enjoy challenges and bounce back."
+     ],
+     "t": "Praise that encourages effort",
+     "g": "Describe effort and strategies instead of labelling kids as smart or talented.",
+     "q": "What effort did your child show recently that you could describe out loud?",
+     "c": "Give one specific, effort-focused compliment to each child today."
+    },
+    "de": {
+     "p": [
+      "Du hast dich so bemüht beim Puzzle stärkt mehr als Du bist so schlau.",
+      "Lobe, was das Kind getan hat: nochmal versucht, geteilt, geduldig geblieben.",
+      "Worte über Anstrengung helfen Kindern, Herausforderungen zu mögen und sich aufzurappeln."
+     ],
+     "t": "Lob, das Anstrengung stärkt",
+     "g": "Beschreibe Einsatz und Strategien, statt Kinder als klug oder begabt zu etikettieren.",
+     "q": "Welche Anstrengung hat dein Kind zuletzt gezeigt, die du laut benennen könntest?",
+     "c": "Gib heute jedem Kind ein konkretes Lob für seinen Einsatz."
+    },
+    "es": {
+     "p": [
+      "Te esforzaste mucho con ese puzle aporta más que Eres muy listo.",
+      "Elogia lo que hizo el niño: intentarlo de nuevo, compartir, tener paciencia.",
+      "Las palabras sobre el esfuerzo ayudan a disfrutar los retos y a levantarse."
+     ],
+     "t": "Elogios que animan el esfuerzo",
+     "g": "Describe el esfuerzo y las estrategias en lugar de etiquetar a los niños como listos o talentosos.",
+     "q": "¿Qué esfuerzo mostró tu hijo últimamente que podrías describir en voz alta?",
+     "c": "Hoy dale a cada hijo un elogio concreto sobre su esfuerzo."
+    },
+    "fr": {
+     "p": [
+      "Tu t'es beaucoup appliqué sur ce puzzle apporte plus que Tu es si intelligent.",
+      "Valorise ce que l'enfant a fait : réessayer, partager, rester patient.",
+      "Les mots sur l'effort aident les enfants à aimer les défis et à rebondir."
+     ],
+     "t": "Des compliments qui encouragent l'effort",
+     "g": "Décris l'effort et les stratégies plutôt que d'étiqueter l'enfant comme intelligent ou doué.",
+     "q": "Quel effort ton enfant a-t-il montré récemment que tu pourrais décrire à voix haute ?",
+     "c": "Aujourd'hui, fais un compliment précis sur l'effort à chaque enfant."
+    },
+    "it": {
+     "p": [
+      "Ti sei impegnato tanto con quel puzzle dà più di Sei così intelligente.",
+      "Elogia ciò che ha fatto il bambino: riprovare, condividere, restare paziente.",
+      "Le parole sull'impegno aiutano i bambini ad amare le sfide e a rialzarsi."
+     ],
+     "t": "Elogi che incoraggiano l'impegno",
+     "g": "Descrivi l'impegno e le strategie invece di etichettare i bambini come bravi o dotati.",
+     "q": "Quale impegno ha mostrato di recente tuo figlio che potresti descrivere a voce alta?",
+     "c": "Oggi fai a ogni figlio un complimento preciso sul suo impegno."
+    },
+    "pt": {
+     "p": [
+      "Esforçaste-te tanto com esse puzzle dá mais do que És tão inteligente.",
+      "Elogia o que a criança fez: tentar de novo, partilhar, ter paciência.",
+      "As palavras sobre esforço ajudam a gostar de desafios e a recuperar."
+     ],
+     "t": "Elogios que incentivam o esforço",
+     "g": "Descreve o esforço e as estratégias em vez de rotular as crianças como espertas ou talentosas.",
+     "q": "Que esforço mostrou o teu filho recentemente que poderias descrever em voz alta?",
+     "c": "Hoje faz a cada filho um elogio concreto sobre o seu esforço."
+    },
+    "pt_BR": {
+     "p": [
+      "Você se esforçou muito nesse quebra-cabeça vale mais que Você é tão inteligente.",
+      "Elogie o que a criança fez: tentar de novo, dividir, ter paciência.",
+      "Palavras sobre esforço ajudam a gostar de desafios e a se recuperar."
+     ],
+     "t": "Elogios que incentivam o esforço",
+     "g": "Descreva o esforço e as estratégias em vez de rotular as crianças como espertas ou talentosas.",
+     "q": "Que esforço seu filho mostrou recentemente que você poderia descrever em voz alta?",
+     "c": "Hoje faça a cada filho um elogio concreto sobre o esforço dele."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Kids repeat what gets noticed, so spotlight the behaviour you love.",
+      "Be specific: You passed your sister the cup without being asked.",
+      "A quiet smile or thumbs-up counts too, not only big words."
+     ],
+     "t": "Noticing the good moments",
+     "g": "Catch children being kind or helpful and name it out loud.",
+     "q": "What small kind thing did your child do this week that you almost missed?",
+     "c": "Name three good moments out loud today, as soon as you spot each one."
+    },
+    "de": {
+     "p": [
+      "Kinder wiederholen, was beachtet wird; rück das Verhalten ins Licht, das du magst.",
+      "Sei konkret: Du hast deiner Schwester ungefragt den Becher gereicht.",
+      "Auch ein stilles Lächeln oder ein Daumen hoch zählt, nicht nur große Worte."
+     ],
+     "t": "Die guten Momente bemerken",
+     "g": "Ertappe Kinder dabei, freundlich oder hilfsbereit zu sein, und sprich es laut aus.",
+     "q": "Was Nettes hat dein Kind diese Woche getan, das du fast übersehen hättest?",
+     "c": "Benenne heute drei gute Momente laut, sobald du sie entdeckst."
+    },
+    "es": {
+     "p": [
+      "Los niños repiten lo que se nota; pon el foco en la conducta que te gusta.",
+      "Sé concreto: Le pasaste el vaso a tu hermana sin que te lo pidieran.",
+      "Una sonrisa silenciosa o un pulgar arriba también cuentan, no solo las palabras grandes."
+     ],
+     "t": "Fijarse en los buenos momentos",
+     "g": "Sorprende a los niños siendo amables o serviciales y dilo en voz alta.",
+     "q": "¿Qué detalle amable tuvo tu hijo esta semana que casi pasa desapercibido?",
+     "c": "Hoy nombra en voz alta tres buenos momentos, en cuanto los veas."
+    },
+    "fr": {
+     "p": [
+      "Les enfants répètent ce qui est remarqué ; mets en lumière le comportement que tu aimes.",
+      "Sois précis : Tu as passé le verre à ta sœur sans qu'on te le demande.",
+      "Un sourire discret ou un pouce levé comptent aussi, pas seulement les grands mots."
+     ],
+     "t": "Remarquer les bons moments",
+     "g": "Surprends ton enfant en train d'être gentil ou serviable et dis-le à voix haute.",
+     "q": "Quelle petite gentillesse ton enfant a-t-il eue cette semaine que tu as failli manquer ?",
+     "c": "Aujourd'hui, nomme à voix haute trois bons moments, dès que tu les repères."
+    },
+    "it": {
+     "p": [
+      "I bambini ripetono ciò che viene notato; metti in luce il comportamento che ami.",
+      "Sii preciso: Hai passato il bicchiere a tua sorella senza che te lo chiedessero.",
+      "Anche un sorriso silenzioso o un pollice in su contano, non solo le grandi parole."
+     ],
+     "t": "Notare i momenti belli",
+     "g": "Cogli i bambini mentre sono gentili o d'aiuto e dillo a voce alta.",
+     "q": "Quale piccolo gesto gentile ha fatto tuo figlio questa settimana che ti era quasi sfuggito?",
+     "c": "Oggi nomina ad alta voce tre bei momenti, appena li noti."
+    },
+    "pt": {
+     "p": [
+      "As crianças repetem o que é notado; põe em destaque o comportamento que gostas.",
+      "Sê concreto: Passaste o copo à tua irmã sem ninguém pedir.",
+      "Um sorriso discreto ou um polegar para cima também contam, não só palavras grandes."
+     ],
+     "t": "Reparar nos bons momentos",
+     "g": "Apanha as crianças a serem simpáticas ou prestáveis e diz isso em voz alta.",
+     "q": "Que pequeno gesto simpático teve o teu filho esta semana e quase passou despercebido?",
+     "c": "Hoje nomeia em voz alta três bons momentos, assim que os vires."
+    },
+    "pt_BR": {
+     "p": [
+      "As crianças repetem o que é notado; destaque o comportamento que você gosta.",
+      "Seja específico: Você passou o copo para sua irmã sem ninguém pedir.",
+      "Um sorriso discreto ou um joinha também valem, não só palavras grandes."
+     ],
+     "t": "Notar os bons momentos",
+     "g": "Flagre as crianças sendo gentis ou prestativas e diga isso em voz alta.",
+     "q": "Que pequeno gesto gentil seu filho teve esta semana que quase passou despercebido?",
+     "c": "Hoje nomeie em voz alta três bons momentos, assim que perceber."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "p": [
+      "Knowing what comes next helps children feel safe and cooperate.",
+      "Routines are a rhythm, not a rigid timetable; flexibility is fine.",
+      "Start with just one or two anchors, like waking up and bedtime."
+     ],
+     "t": "Why routines help children",
+     "g": "See how predictable days give kids security and cut stress for everyone.",
+     "q": "Which part of your day already has a natural rhythm your family follows?",
+     "c": "Choose one daily anchor moment and do it in the same order today."
+    },
+    "de": {
+     "p": [
+      "Zu wissen, was als Nächstes kommt, gibt Kindern Sicherheit und fördert Kooperation.",
+      "Routinen sind ein Rhythmus, kein starrer Stundenplan; Flexibilität ist in Ordnung.",
+      "Beginne mit ein bis zwei Ankern, etwa Aufwachen und Schlafenszeit."
+     ],
+     "t": "Warum Routinen Kindern helfen",
+     "g": "Sieh, wie vorhersehbare Tage Kindern Sicherheit geben und Stress für alle senken.",
+     "q": "Welcher Teil deines Tages hat schon einen natürlichen Rhythmus, dem deine Familie folgt?",
+     "c": "Wähle einen täglichen Ankermoment und mach ihn heute immer in derselben Reihenfolge."
+    },
+    "es": {
+     "p": [
+      "Saber qué viene después ayuda a los niños a sentirse seguros y a colaborar.",
+      "Las rutinas son un ritmo, no un horario rígido; la flexibilidad está bien.",
+      "Empieza con uno o dos anclajes, como levantarse y la hora de dormir."
+     ],
+     "t": "Por qué ayudan las rutinas a los niños",
+     "g": "Mira cómo los días predecibles dan seguridad a los niños y reducen el estrés de todos.",
+     "q": "¿Qué parte de tu día ya tiene un ritmo natural que sigue tu familia?",
+     "c": "Elige un momento ancla del día y hazlo hoy siempre en el mismo orden."
+    },
+    "fr": {
+     "p": [
+      "Savoir ce qui vient ensuite aide les enfants à se sentir en sécurité et à coopérer.",
+      "Une routine est un rythme, pas un emploi du temps rigide ; la souplesse est permise.",
+      "Commence par un ou deux repères, comme le réveil et le coucher."
+     ],
+     "t": "Pourquoi les routines aident les enfants",
+     "g": "Vois comment des journées prévisibles rassurent les enfants et réduisent le stress de tous.",
+     "q": "Quel moment de ta journée a déjà un rythme naturel que ta famille suit ?",
+     "c": "Choisis un moment repère quotidien et fais-le aujourd'hui toujours dans le même ordre."
+    },
+    "it": {
+     "p": [
+      "Sapere cosa viene dopo aiuta i bambini a sentirsi sicuri e a collaborare.",
+      "Le routine sono un ritmo, non un orario rigido; la flessibilità va benissimo.",
+      "Inizia con uno o due punti fermi, come il risveglio e la nanna."
+     ],
+     "t": "Perché le routine aiutano i bambini",
+     "g": "Scopri come giornate prevedibili danno sicurezza ai bambini e riducono lo stress di tutti.",
+     "q": "Quale parte della tua giornata ha già un ritmo naturale che la famiglia segue?",
+     "c": "Scegli un momento fisso della giornata e fallo oggi sempre nello stesso ordine."
+    },
+    "pt": {
+     "p": [
+      "Saber o que vem a seguir ajuda as crianças a sentirem-se seguras e a colaborar.",
+      "Rotinas são um ritmo, não um horário rígido; a flexibilidade é boa.",
+      "Começa com um ou dois pontos fixos, como acordar e a hora de deitar."
+     ],
+     "t": "Porque as rotinas ajudam as crianças",
+     "g": "Vê como dias previsíveis dão segurança às crianças e reduzem o stress de todos.",
+     "q": "Que parte do teu dia já tem um ritmo natural que a tua família segue?",
+     "c": "Escolhe um momento âncora do dia e faz hoje sempre pela mesma ordem."
+    },
+    "pt_BR": {
+     "p": [
+      "Saber o que vem depois ajuda as crianças a se sentirem seguras e a colaborar.",
+      "Rotina é um ritmo, não uma agenda rígida; flexibilidade é bem-vinda.",
+      "Comece com um ou dois pontos fixos, como acordar e a hora de dormir."
+     ],
+     "t": "Por que as rotinas ajudam as crianças",
+     "g": "Veja como dias previsíveis dão segurança às crianças e reduzem o estresse de todos.",
+     "q": "Que parte do seu dia já tem um ritmo natural que sua família segue?",
+     "c": "Escolha um momento âncora do dia e faça hoje sempre na mesma ordem."
+    }
+   }
+  }
+ ]
+}

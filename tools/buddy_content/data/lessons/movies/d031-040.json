@@ -1,0 +1,835 @@
+{
+ "topic": "movies",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Before cinema: optical toys",
+     "g": "Meet the lanterns and toys that dreamed of moving pictures.",
+     "p": [
+      "Magic lanterns projected painted glass slides for audiences from the 1600s.",
+      "The zoetrope, from the 1830s, made drawings seem to move inside a spinning drum.",
+      "These toys relied on persistence of vision: the eye blends rapid images."
+     ],
+     "q": "Have you ever made a flipbook or a simple animation?",
+     "c": "Draw a stick figure on ten sticky notes and flip them to see it move."
+    },
+    "de": {
+     "t": "Vor dem Kino: optische Spielzeuge",
+     "g": "Lerne die Laternen und Spielzeuge kennen, die von bewegten Bildern träumten.",
+     "p": [
+      "Laternae magicae warfen ab dem 17. Jahrhundert bemalte Glasbilder an die Wand.",
+      "Das Zoetrop aus den 1830er Jahren ließ Zeichnungen in einer Drehtrommel sich bewegen.",
+      "Diese Spielzeuge nutzten die Trägheit des Auges, das schnelle Bilder verschmilzt."
+     ],
+     "q": "Hast du je ein Daumenkino oder eine einfache Animation gemacht?",
+     "c": "Zeichne ein Strichmännchen auf zehn Klebezettel und blättere, um es laufen zu sehen."
+    },
+    "es": {
+     "t": "Antes del cine: juguetes ópticos",
+     "g": "Conoce las linternas y juguetes que soñaban con imágenes en movimiento.",
+     "p": [
+      "Las linternas mágicas proyectaban placas de vidrio pintadas desde el siglo XVII.",
+      "El zoótropo, de la década de 1830, hacía moverse dibujos dentro de un tambor giratorio.",
+      "Estos juguetes usaban la persistencia retiniana: el ojo funde imágenes rápidas."
+     ],
+     "q": "¿Has hecho alguna vez un flipbook o una animación sencilla?",
+     "c": "Dibuja un monigote en diez notas adhesivas y pásalas rápido para verlo moverse."
+    },
+    "fr": {
+     "t": "Avant le cinéma : jouets optiques",
+     "g": "Découvre les lanternes et jouets qui rêvaient d'images animées.",
+     "p": [
+      "Les lanternes magiques projetaient des plaques de verre peintes dès le XVIIe siècle.",
+      "Le zootrope, des années 1830, animait des dessins dans un tambour tournant.",
+      "Ces jouets reposaient sur la persistance rétinienne : l'œil fond les images rapides."
+     ],
+     "q": "As-tu déjà fait un folioscope ou une animation simple ?",
+     "c": "Dessine un bonhomme sur dix notes adhésives et feuillette-les pour le voir bouger."
+    },
+    "it": {
+     "t": "Prima del cinema: giochi ottici",
+     "g": "Conosci le lanterne e i giochi che sognavano immagini in movimento.",
+     "p": [
+      "Le lanterne magiche proiettavano lastre di vetro dipinte fin dal Seicento.",
+      "Lo zoetropio, degli anni Trenta dell'Ottocento, animava disegni dentro un tamburo rotante.",
+      "Questi giochi sfruttavano la persistenza della visione: l'occhio fonde immagini rapide."
+     ],
+     "q": "Hai mai fatto un flipbook o una semplice animazione?",
+     "c": "Disegna un omino su dieci foglietti adesivi e sfogliali per vederlo muoversi."
+    },
+    "pt": {
+     "t": "Antes do cinema: brinquedos óticos",
+     "g": "Conhece as lanternas e brinquedos que sonhavam com imagens em movimento.",
+     "p": [
+      "As lanternas mágicas projetavam placas de vidro pintadas desde o século XVII.",
+      "O zoótropo, dos anos 1830, fazia desenhos mexerem-se dentro de um tambor giratório.",
+      "Estes brinquedos usavam a persistência retiniana: o olho funde imagens rápidas."
+     ],
+     "q": "Já fizeste um flipbook ou uma animação simples?",
+     "c": "Desenha um boneco em dez notas autocolantes e folheia-as para o veres mexer."
+    },
+    "pt_BR": {
+     "t": "Antes do cinema: brinquedos ópticos",
+     "g": "Conheça as lanternas e brinquedos que sonhavam com imagens em movimento.",
+     "p": [
+      "As lanternas mágicas projetavam placas de vidro pintadas desde o século XVII.",
+      "O zoótropo, dos anos 1830, fazia desenhos se mexerem dentro de um tambor giratório.",
+      "Esses brinquedos usavam a persistência retiniana: o olho funde imagens rápidas."
+     ],
+     "q": "Você já fez um flipbook ou uma animação simples?",
+     "c": "Desenhe um boneco em dez post-its e folheie para ver ele se mexer."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Lumière brothers",
+     "g": "Learn how the Cinématographe brought films to paying audiences in 1895.",
+     "p": [
+      "Auguste and Louis Lumière built a light camera that also worked as a projector.",
+      "On 28 December 1895 they showed short films to paying viewers in Paris.",
+      "Their films were about a minute long and showed everyday life."
+     ],
+     "q": "Which everyday scene would you film in one minute?",
+     "c": "Film one minute of your day without cutting, from a single spot."
+    },
+    "de": {
+     "t": "Die Brüder Lumière",
+     "g": "Erfahre, wie der Cinématographe 1895 Filme vor zahlendes Publikum brachte.",
+     "p": [
+      "Auguste und Louis Lumière bauten eine leichte Kamera, die auch als Projektor diente.",
+      "Am 28. Dezember 1895 zeigten sie in Paris Kurzfilme vor zahlenden Gästen.",
+      "Ihre Filme dauerten etwa eine Minute und zeigten Alltagsszenen."
+     ],
+     "q": "Welche Alltagsszene würdest du in einer Minute filmen?",
+     "c": "Filme eine Minute deines Tages ohne Schnitt von einem festen Standpunkt."
+    },
+    "es": {
+     "t": "Los hermanos Lumière",
+     "g": "Descubre cómo el Cinematógrafo llevó el cine al público de pago en 1895.",
+     "p": [
+      "Auguste y Louis Lumière crearon una cámara ligera que también servía de proyector.",
+      "El 28 de diciembre de 1895 mostraron cortos a espectadores de pago en París.",
+      "Sus películas duraban cerca de un minuto y mostraban la vida cotidiana."
+     ],
+     "q": "¿Qué escena cotidiana filmarías en un minuto?",
+     "c": "Graba un minuto de tu día sin cortes, desde un solo punto."
+    },
+    "fr": {
+     "t": "Les frères Lumière",
+     "g": "Découvre comment le Cinématographe a mené le film au public payant en 1895.",
+     "p": [
+      "Auguste et Louis Lumière ont conçu une caméra légère servant aussi de projecteur.",
+      "Le 28 décembre 1895, ils ont montré des films courts à des spectateurs payants à Paris.",
+      "Leurs films duraient environ une minute et montraient la vie quotidienne."
+     ],
+     "q": "Quelle scène du quotidien filmerais-tu en une minute ?",
+     "c": "Filme une minute de ta journée sans coupe, depuis un seul point."
+    },
+    "it": {
+     "t": "I fratelli Lumière",
+     "g": "Scopri come il Cinématographe portò i film al pubblico pagante nel 1895.",
+     "p": [
+      "Auguste e Louis Lumière costruirono una camera leggera che serviva anche da proiettore.",
+      "Il 28 dicembre 1895 mostrarono corti a spettatori paganti a Parigi.",
+      "I loro film duravano circa un minuto e mostravano la vita quotidiana."
+     ],
+     "q": "Quale scena quotidiana filmeresti in un minuto?",
+     "c": "Filma un minuto della tua giornata senza stacchi, da un solo punto."
+    },
+    "pt": {
+     "t": "Os irmãos Lumière",
+     "g": "Descobre como o Cinematógrafo levou os filmes ao público pagante em 1895.",
+     "p": [
+      "Auguste e Louis Lumière criaram uma câmara leve que também servia de projetor.",
+      "A 28 de dezembro de 1895 mostraram curtas a espectadores pagantes em Paris.",
+      "Os filmes duravam cerca de um minuto e mostravam o quotidiano."
+     ],
+     "q": "Que cena quotidiana filmarias num minuto?",
+     "c": "Filma um minuto do teu dia sem cortes, a partir de um só ponto."
+    },
+    "pt_BR": {
+     "t": "Os irmãos Lumière",
+     "g": "Descubra como o Cinematógrafo levou os filmes ao público pagante em 1895.",
+     "p": [
+      "Auguste e Louis Lumière criaram uma câmera leve que também servia de projetor.",
+      "Em 28 de dezembro de 1895 eles exibiram curtas a espectadores pagantes em Paris.",
+      "Os filmes duravam cerca de um minuto e mostravam o cotidiano."
+     ],
+     "q": "Que cena do dia a dia você filmaria em um minuto?",
+     "c": "Filme um minuto do seu dia sem cortes, de um ponto só."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Georges Méliès and film magic",
+     "g": "Meet the stage magician who invented early special effects.",
+     "p": [
+      "Méliès was a Paris magician who turned to film in the 1890s.",
+      "He used stop tricks, double exposures and painted sets to make impossible things happen.",
+      "A Trip to the Moon from 1902 is among cinema's most famous early fantasies."
+     ],
+     "q": "Which movie trick has ever left you wondering how it was done?",
+     "c": "Film an object that seems to vanish: stop recording, remove it, restart."
+    },
+    "de": {
+     "t": "Georges Méliès und die Filmmagie",
+     "g": "Lerne den Bühnenzauberer kennen, der frühe Spezialeffekte erfand.",
+     "p": [
+      "Méliès war ein Pariser Zauberkünstler, der in den 1890ern zum Film kam.",
+      "Mit Stopptrick, Doppelbelichtung und gemalten Kulissen ließ er Unmögliches geschehen.",
+      "Die Reise zum Mond von 1902 zählt zu den berühmtesten frühen Fantasiefilmen."
+     ],
+     "q": "Welcher Filmtrick hat dich schon einmal rätseln lassen?",
+     "c": "Filme einen Gegenstand, der verschwindet: stoppen, entfernen, neu starten."
+    },
+    "es": {
+     "t": "Georges Méliès y la magia del cine",
+     "g": "Conoce al mago de teatro que inventó los primeros efectos especiales.",
+     "p": [
+      "Méliès era un ilusionista parisino que se pasó al cine en la década de 1890.",
+      "Usó trucos de parada, doble exposición y decorados pintados para lograr lo imposible.",
+      "Viaje a la Luna, de 1902, es una de las primeras fantasías más famosas del cine."
+     ],
+     "q": "¿Qué truco de cine te ha dejado preguntándote cómo se hizo?",
+     "c": "Graba un objeto que desaparece: detén la grabación, quítalo y reanuda."
+    },
+    "fr": {
+     "t": "Georges Méliès et la magie du film",
+     "g": "Rencontre le magicien de théâtre qui inventa les premiers effets spéciaux.",
+     "p": [
+      "Méliès était un illusionniste parisien passé au cinéma dans les années 1890.",
+      "Il utilisait trucages par arrêt, double exposition et décors peints pour l'impossible.",
+      "Le Voyage dans la Lune, en 1902, est l'une des premières fantaisies célèbres du cinéma."
+     ],
+     "q": "Quel truc de cinéma t'a laissé perplexe sur sa fabrication ?",
+     "c": "Filme un objet qui disparaît : arrête, retire-le, relance."
+    },
+    "it": {
+     "t": "Georges Méliès e la magia del film",
+     "g": "Incontra il mago di teatro che inventò i primi effetti speciali.",
+     "p": [
+      "Méliès era un illusionista parigino passato al cinema negli anni Novanta dell'Ottocento.",
+      "Usava trucchi di arresto, doppia esposizione e scenari dipinti per ottenere l'impossibile.",
+      "Viaggio nella Luna, del 1902, è una delle prime fantasie più celebri del cinema."
+     ],
+     "q": "Quale trucco cinematografico ti ha fatto chiedere come fosse stato fatto?",
+     "c": "Filma un oggetto che sparisce: ferma la ripresa, toglilo e riprendi."
+    },
+    "pt": {
+     "t": "Georges Méliès e a magia do cinema",
+     "g": "Conhece o mágico de palco que inventou os primeiros efeitos especiais.",
+     "p": [
+      "Méliès era um ilusionista parisiense que passou ao cinema nos anos 1890.",
+      "Usava truques de paragem, dupla exposição e cenários pintados para fazer o impossível.",
+      "Viagem à Lua, de 1902, é uma das primeiras fantasias mais famosas do cinema."
+     ],
+     "q": "Que truque de cinema te deixou a pensar como foi feito?",
+     "c": "Filma um objeto que desaparece: pára a gravação, retira-o e retoma."
+    },
+    "pt_BR": {
+     "t": "Georges Méliès e a magia do cinema",
+     "g": "Conheça o mágico de palco que inventou os primeiros efeitos especiais.",
+     "p": [
+      "Méliès era um ilusionista parisiense que passou ao cinema nos anos 1890.",
+      "Usava truques de parada, dupla exposição e cenários pintados para fazer o impossível.",
+      "Viagem à Lua, de 1902, é uma das primeiras fantasias mais famosas do cinema."
+     ],
+     "q": "Que truque de cinema te fez pensar como foi feito?",
+     "c": "Filme um objeto que desaparece: pare a gravação, retire e retome."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Early narrative films",
+     "g": "See how films grew from single scenes into stories.",
+     "p": [
+      "The first films were single views; soon filmmakers joined shots into stories.",
+      "Edwin S. Porter in the USA and others in Britain used cuts to show action in different places.",
+      "Close-ups and parallel action began to appear in the early 1900s."
+     ],
+     "q": "What short story would you tell in just three shots?",
+     "c": "Plan a story in three shots: wide, medium and close-up."
+    },
+    "de": {
+     "t": "Frühe Erzählfilme",
+     "g": "Sieh, wie aus einzelnen Szenen Geschichten wurden.",
+     "p": [
+      "Die ersten Filme waren einzelne Ansichten; bald fügte man Einstellungen zu Geschichten.",
+      "Edwin S. Porter in den USA und andere in Britannien zeigten per Schnitt Handlung an mehreren Orten.",
+      "Nahaufnahmen und Parallelmontage tauchten Anfang des 20. Jahrhunderts auf."
+     ],
+     "q": "Welche kurze Geschichte würdest du in nur drei Einstellungen erzählen?",
+     "c": "Plane eine Geschichte in drei Einstellungen: Totale, Halbtotale, Nahaufnahme."
+    },
+    "es": {
+     "t": "Los primeros filmes narrativos",
+     "g": "Mira cómo el cine pasó de escenas sueltas a historias.",
+     "p": [
+      "Las primeras películas eran vistas únicas; pronto se unieron planos para contar historias.",
+      "Edwin S. Porter en EE. UU. y otros en Reino Unido usaron cortes para mostrar acción en distintos lugares.",
+      "Los primeros planos y el montaje paralelo aparecieron a comienzos del siglo XX."
+     ],
+     "q": "¿Qué historia corta contarías con solo tres planos?",
+     "c": "Planifica una historia en tres planos: general, medio y primer plano."
+    },
+    "fr": {
+     "t": "Les premiers films narratifs",
+     "g": "Vois comment le film est passé de scènes isolées à de vraies histoires.",
+     "p": [
+      "Les premiers films étaient des vues uniques ; on a vite relié les plans en récits.",
+      "Edwin S. Porter aux États-Unis et d'autres en Grande-Bretagne ont montré l'action en plusieurs lieux par le montage.",
+      "Gros plans et montage parallèle apparaissent au début du XXe siècle."
+     ],
+     "q": "Quelle courte histoire raconterais-tu en seulement trois plans ?",
+     "c": "Prépare une histoire en trois plans : large, moyen et gros plan."
+    },
+    "it": {
+     "t": "I primi film narrativi",
+     "g": "Scopri come il cinema è passato da singole scene a storie.",
+     "p": [
+      "I primi film erano vedute singole; presto si unirono inquadrature in racconti.",
+      "Edwin S. Porter negli USA e altri in Gran Bretagna usarono gli stacchi per mostrare azioni in luoghi diversi.",
+      "Primi piani e montaggio parallelo comparvero a inizio Novecento."
+     ],
+     "q": "Quale breve storia racconteresti in sole tre inquadrature?",
+     "c": "Pianifica una storia in tre inquadrature: campo lungo, medio e primo piano."
+    },
+    "pt": {
+     "t": "Os primeiros filmes narrativos",
+     "g": "Vê como o cinema passou de cenas soltas a histórias.",
+     "p": [
+      "Os primeiros filmes eram vistas únicas; depressa se juntaram planos em histórias.",
+      "Edwin S. Porter nos EUA e outros na Grã-Bretanha usaram cortes para mostrar ação em locais diferentes.",
+      "Grandes planos e montagem paralela surgiram no início do século XX."
+     ],
+     "q": "Que história curta contarias com apenas três planos?",
+     "c": "Planeia uma história em três planos: geral, médio e grande plano."
+    },
+    "pt_BR": {
+     "t": "Os primeiros filmes narrativos",
+     "g": "Veja como o cinema passou de cenas soltas a histórias.",
+     "p": [
+      "Os primeiros filmes eram vistas únicas; logo se juntaram planos em histórias.",
+      "Edwin S. Porter nos EUA e outros na Grã-Bretanha usaram cortes para mostrar ação em locais diferentes.",
+      "Close-ups e montagem paralela surgiram no início do século XX."
+     ],
+     "q": "Que história curta você contaria com apenas três planos?",
+     "c": "Planeje uma história em três planos: geral, médio e close-up."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The silent era",
+     "g": "Discover how films told stories without spoken dialogue.",
+     "p": [
+      "Until the late 1920s, films reached audiences without recorded speech.",
+      "Actors used body language, expressions and gestures, with exaggeration for clarity.",
+      "Silent films were never truly silent: music and sometimes narrators filled the room."
+     ],
+     "q": "How would you tell a story with no words at all?",
+     "c": "Act out a feeling for ten seconds with no words and see if a friend guesses."
+    },
+    "de": {
+     "t": "Die Stummfilmzeit",
+     "g": "Entdecke, wie Filme ohne gesprochenen Dialog Geschichten erzählten.",
+     "p": [
+      "Bis Ende der 1920er erreichten Filme das Publikum ohne aufgezeichnete Sprache.",
+      "Darsteller nutzten Körpersprache, Mimik und Gesten, teils überdeutlich.",
+      "Stummfilme waren nie wirklich still: Musik und manchmal Erzähler füllten den Saal."
+     ],
+     "q": "Wie würdest du eine Geschichte ganz ohne Worte erzählen?",
+     "c": "Spiel zehn Sekunden lang ein Gefühl ohne Worte vor und lass einen Freund raten."
+    },
+    "es": {
+     "t": "La era del cine mudo",
+     "g": "Descubre cómo las películas contaban historias sin diálogo hablado.",
+     "p": [
+      "Hasta finales de los años veinte, el cine llegaba al público sin voz grabada.",
+      "Los actores usaban lenguaje corporal, expresiones y gestos, a veces exagerados para mayor claridad.",
+      "El cine mudo nunca fue del todo silencioso: la música y a veces narradores llenaban la sala."
+     ],
+     "q": "¿Cómo contarías una historia sin ninguna palabra?",
+     "c": "Representa una emoción diez segundos sin palabras y mira si un amigo la adivina."
+    },
+    "fr": {
+     "t": "L'ère du muet",
+     "g": "Découvre comment les films racontaient sans dialogue parlé.",
+     "p": [
+      "Jusqu'à la fin des années 1920, les films touchaient le public sans parole enregistrée.",
+      "Les acteurs usaient du langage du corps, des expressions et des gestes, parfois appuyés pour la clarté.",
+      "Le muet n'était jamais vraiment silencieux : musique et parfois bonimenteurs remplissaient la salle."
+     ],
+     "q": "Comment raconterais-tu une histoire sans aucun mot ?",
+     "c": "Mime une émotion pendant dix secondes et vois si un ami la devine."
+    },
+    "it": {
+     "t": "L'era del cinema muto",
+     "g": "Scopri come i film raccontavano storie senza dialoghi parlati.",
+     "p": [
+      "Fino alla fine degli anni Venti i film arrivavano al pubblico senza parlato registrato.",
+      "Gli attori usavano linguaggio del corpo, espressioni e gesti, a volte accentuati per chiarezza.",
+      "Il muto non era mai davvero silenzioso: musica e talvolta narratori riempivano la sala."
+     ],
+     "q": "Come racconteresti una storia senza alcuna parola?",
+     "c": "Mima un'emozione per dieci secondi senza parole e vedi se un amico indovina."
+    },
+    "pt": {
+     "t": "A era do cinema mudo",
+     "g": "Descobre como os filmes contavam histórias sem diálogo falado.",
+     "p": [
+      "Até ao fim dos anos 1920, os filmes chegavam ao público sem voz gravada.",
+      "Os atores usavam linguagem corporal, expressões e gestos, por vezes exagerados para maior clareza.",
+      "O cinema mudo nunca foi mesmo silencioso: música e por vezes narradores enchiam a sala."
+     ],
+     "q": "Como contarias uma história sem palavra alguma?",
+     "c": "Interpreta uma emoção durante dez segundos sem palavras e vê se um amigo adivinha."
+    },
+    "pt_BR": {
+     "t": "A era do cinema mudo",
+     "g": "Descubra como os filmes contavam histórias sem diálogo falado.",
+     "p": [
+      "Até o fim dos anos 1920, os filmes chegavam ao público sem voz gravada.",
+      "Os atores usavam linguagem corporal, expressões e gestos, às vezes exagerados para dar clareza.",
+      "O cinema mudo nunca foi realmente silencioso: música e às vezes narradores enchiam a sala."
+     ],
+     "q": "Como você contaria uma história sem nenhuma palavra?",
+     "c": "Represente uma emoção por dez segundos sem palavras e veja se um amigo adivinha."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Music in silent cinema",
+     "g": "Meet the pianists and orchestras who accompanied silent films.",
+     "p": [
+      "Small cinemas had a pianist or organist playing live during every screening.",
+      "Big picture palaces had full orchestras and sometimes sound-effect machines.",
+      "Studios issued cue sheets suggesting music for each scene."
+     ],
+     "q": "What music would you pick to accompany a silent film?",
+     "c": "Watch two minutes of a silent film with different music and notice the change."
+    },
+    "de": {
+     "t": "Musik im Stummfilm",
+     "g": "Lerne die Pianisten und Orchester kennen, die Stummfilme begleiteten.",
+     "p": [
+      "Kleine Kinos hatten Pianisten oder Organisten, die bei jeder Vorführung live spielten.",
+      "Große Filmpaläste hatten ganze Orchester und manchmal Geräuschmaschinen.",
+      "Studios gaben Cue Sheets mit Musikvorschlägen für jede Szene heraus."
+     ],
+     "q": "Welche Musik würdest du für einen Stummfilm wählen?",
+     "c": "Sieh zwei Minuten eines Stummfilms mit anderer Musik und achte auf den Unterschied."
+    },
+    "es": {
+     "t": "La música en el cine mudo",
+     "g": "Conoce a los pianistas y orquestas que acompañaban el cine mudo.",
+     "p": [
+      "Los cines pequeños tenían un pianista u organista tocando en directo en cada sesión.",
+      "Los grandes palacios del cine tenían orquestas completas y a veces máquinas de efectos.",
+      "Los estudios enviaban hojas de indicaciones con música sugerida para cada escena."
+     ],
+     "q": "¿Qué música elegirías para acompañar una película muda?",
+     "c": "Mira dos minutos de cine mudo con otra música y nota el cambio."
+    },
+    "fr": {
+     "t": "La musique du cinéma muet",
+     "g": "Rencontre les pianistes et orchestres qui accompagnaient les films muets.",
+     "p": [
+      "Les petites salles avaient un pianiste ou organiste jouant en direct à chaque séance.",
+      "Les grands palaces avaient de vrais orchestres et parfois des machines à bruitages.",
+      "Les studios fournissaient des feuilles de repères avec la musique suggérée pour chaque scène."
+     ],
+     "q": "Quelle musique choisirais-tu pour accompagner un film muet ?",
+     "c": "Regarde deux minutes de muet avec une autre musique et note la différence."
+    },
+    "it": {
+     "t": "La musica nel cinema muto",
+     "g": "Incontra i pianisti e le orchestre che accompagnavano i film muti.",
+     "p": [
+      "Le piccole sale avevano un pianista o organista che suonava dal vivo a ogni proiezione.",
+      "I grandi palazzi del cinema avevano orchestre intere e a volte macchine per effetti sonori.",
+      "Gli studi diffondevano schede con musiche suggerite per ogni scena."
+     ],
+     "q": "Quale musica sceglieresti per accompagnare un film muto?",
+     "c": "Guarda due minuti di muto con un'altra musica e nota la differenza."
+    },
+    "pt": {
+     "t": "A música no cinema mudo",
+     "g": "Conhece os pianistas e orquestras que acompanhavam os filmes mudos.",
+     "p": [
+      "As salas pequenas tinham um pianista ou organista a tocar ao vivo em cada sessão.",
+      "Os grandes palácios do cinema tinham orquestras completas e por vezes máquinas de efeitos.",
+      "Os estúdios distribuíam folhas com sugestões de música para cada cena."
+     ],
+     "q": "Que música escolherias para acompanhar um filme mudo?",
+     "c": "Vê dois minutos de cinema mudo com outra música e nota a diferença."
+    },
+    "pt_BR": {
+     "t": "A música no cinema mudo",
+     "g": "Conheça os pianistas e orquestras que acompanhavam os filmes mudos.",
+     "p": [
+      "Salas pequenas tinham um pianista ou organista tocando ao vivo em cada sessão.",
+      "Os grandes palácios do cinema tinham orquestras completas e às vezes máquinas de efeitos.",
+      "Os estúdios distribuíam folhas com sugestões de música para cada cena."
+     ],
+     "q": "Que música você escolheria para acompanhar um filme mudo?",
+     "c": "Assista a dois minutos de cinema mudo com outra música e note a diferença."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Charlie Chaplin",
+     "g": "Meet the Tramp and Chaplin's mix of comedy and heart.",
+     "p": [
+      "Chaplin, born in London in 1889, created the Tramp around 1914.",
+      "The Tramp wore a bowler hat, tight jacket and baggy trousers, with a cane.",
+      "Chaplin directed, wrote, acted and even composed music for his later films."
+     ],
+     "q": "Which comic character makes you laugh and feel warmth together?",
+     "c": "Show a feeling with only a hat and a cane, or any two objects."
+    },
+    "de": {
+     "t": "Charlie Chaplin",
+     "g": "Lerne den Tramp und Chaplins Mischung aus Komik und Herz kennen.",
+     "p": [
+      "Chaplin, 1889 in London geboren, schuf den Tramp um 1914.",
+      "Der Tramp trug Melone, enge Jacke und weite Hose, dazu einen Stock.",
+      "Chaplin führte Regie, schrieb, spielte und komponierte für spätere Filme sogar die Musik."
+     ],
+     "q": "Welche komische Figur bringt dich zugleich zum Lachen und Mitfühlen?",
+     "c": "Zeig ein Gefühl nur mit Hut und Stock oder zwei beliebigen Gegenständen."
+    },
+    "es": {
+     "t": "Charlie Chaplin",
+     "g": "Conoce al vagabundo y la mezcla de humor y ternura de Chaplin.",
+     "p": [
+      "Chaplin, nacido en Londres en 1889, creó al vagabundo hacia 1914.",
+      "El vagabundo llevaba bombín, chaqueta estrecha, pantalones holgados y bastón.",
+      "Chaplin dirigía, escribía, actuaba y hasta componía la música de sus películas posteriores."
+     ],
+     "q": "¿Qué personaje cómico te hace reír y sentir cariño a la vez?",
+     "c": "Expresa un sentimiento solo con un sombrero y un bastón, o dos objetos cualesquiera."
+    },
+    "fr": {
+     "t": "Charlie Chaplin",
+     "g": "Rencontre Charlot et le mélange de comédie et de tendresse de Chaplin.",
+     "p": [
+      "Chaplin, né à Londres en 1889, a créé Charlot vers 1914.",
+      "Charlot portait chapeau melon, veste étroite, pantalon trop large et une canne.",
+      "Chaplin réalisait, écrivait, jouait et composait même la musique de ses films plus tardifs."
+     ],
+     "q": "Quel personnage comique te fait rire et attendrit à la fois ?",
+     "c": "Exprime une émotion avec seulement un chapeau et une canne, ou deux objets."
+    },
+    "it": {
+     "t": "Charlie Chaplin",
+     "g": "Incontra Charlot e il mix di comicità e cuore di Chaplin.",
+     "p": [
+      "Chaplin, nato a Londra nel 1889, creò Charlot intorno al 1914.",
+      "Charlot portava bombetta, giacca stretta, pantaloni larghi e un bastone.",
+      "Chaplin dirigeva, scriveva, recitava e componeva persino la musica dei film successivi."
+     ],
+     "q": "Quale personaggio comico ti fa ridere e commuovere insieme?",
+     "c": "Esprimi un sentimento solo con un cappello e un bastone, o due oggetti."
+    },
+    "pt": {
+     "t": "Charlie Chaplin",
+     "g": "Conhece o vagabundo e a mistura de humor e ternura de Chaplin.",
+     "p": [
+      "Chaplin, nascido em Londres em 1889, criou o vagabundo por volta de 1914.",
+      "O vagabundo usava chapéu de coco, casaco justo, calças largas e bengala.",
+      "Chaplin realizava, escrevia, representava e até compunha a música dos filmes posteriores."
+     ],
+     "q": "Que personagem cómica te faz rir e sentir carinho ao mesmo tempo?",
+     "c": "Expressa um sentimento só com um chapéu e uma bengala, ou dois objetos."
+    },
+    "pt_BR": {
+     "t": "Charlie Chaplin",
+     "g": "Conheça o vagabundo e a mistura de humor e ternura de Chaplin.",
+     "p": [
+      "Chaplin, nascido em Londres em 1889, criou o vagabundo por volta de 1914.",
+      "O vagabundo usava chapéu-coco, casaco justo, calças largas e bengala.",
+      "Chaplin dirigia, escrevia, atuava e até compunha a música dos filmes posteriores."
+     ],
+     "q": "Que personagem cômico faz você rir e sentir carinho ao mesmo tempo?",
+     "c": "Expresse um sentimento só com um chapéu e uma bengala, ou dois objetos."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Buster Keaton",
+     "g": "Enjoy deadpan comedy and astonishing physical stunts.",
+     "p": [
+      "Keaton, nicknamed the Great Stone Face, rarely smiled on screen.",
+      "He performed his own daring stunts, timed to the split second.",
+      "His films, like The General from 1926, mix clever ideas with precise action."
+     ],
+     "q": "What stunt or gag has impressed you most?",
+     "c": "Try one slow, deadpan reaction to something ordinary and see how funny it feels."
+    },
+    "de": {
+     "t": "Buster Keaton",
+     "g": "Genieße trockene Komik und atemberaubende Stunts.",
+     "p": [
+      "Keaton, genannt das Steinerne Gesicht, lächelte auf der Leinwand fast nie.",
+      "Er führte seine gewagten Stunts selbst aus, auf die Sekunde getimt.",
+      "Seine Filme, etwa Der General von 1926, verbinden kluge Ideen mit präziser Aktion."
+     ],
+     "q": "Welcher Stunt oder Gag hat dich am meisten beeindruckt?",
+     "c": "Probier eine langsame, regungslose Reaktion auf etwas Alltägliches aus."
+    },
+    "es": {
+     "t": "Buster Keaton",
+     "g": "Disfruta del humor impasible y de acrobacias asombrosas.",
+     "p": [
+      "Keaton, apodado el Hombre de la Cara de Piedra, casi nunca sonreía en pantalla.",
+      "Hacía él mismo sus arriesgadas acrobacias, cronometradas al segundo.",
+      "Sus películas, como El maquinista de la General de 1926, unen ideas ingeniosas y acción precisa."
+     ],
+     "q": "¿Qué acrobacia o gag te ha impresionado más?",
+     "c": "Prueba una reacción lenta e impasible ante algo cotidiano y mira qué tan graciosa resulta."
+    },
+    "fr": {
+     "t": "Buster Keaton",
+     "g": "Savoure la comédie pince-sans-rire et des cascades stupéfiantes.",
+     "p": [
+      "Keaton, surnommé l'Homme qui ne rit jamais, souriait rarement à l'écran.",
+      "Il réalisait lui-même ses cascades audacieuses, minutées à la seconde.",
+      "Ses films, comme Le Mécano de la Générale (1926), mêlent idées astucieuses et action précise."
+     ],
+     "q": "Quelle cascade ou quel gag t'a le plus impressionné ?",
+     "c": "Essaie une réaction lente et impassible face à un fait banal et vois si c'est drôle."
+    },
+    "it": {
+     "t": "Buster Keaton",
+     "g": "Goditi la comicità impassibile e acrobazie stupefacenti.",
+     "p": [
+      "Keaton, detto Faccia di Pietra, sorrideva di rado sullo schermo.",
+      "Eseguiva di persona le sue acrobazie audaci, cronometrate al secondo.",
+      "I suoi film, come Come vinsi la guerra del 1926, uniscono idee ingegnose e azione precisa."
+     ],
+     "q": "Quale acrobazia o gag ti ha colpito di più?",
+     "c": "Prova una reazione lenta e impassibile a qualcosa di ordinario e osserva quanto fa ridere."
+    },
+    "pt": {
+     "t": "Buster Keaton",
+     "g": "Aprecia o humor impassível e acrobacias impressionantes.",
+     "p": [
+      "Keaton, apelidado de Cara de Pedra, quase nunca sorria no ecrã.",
+      "Fazia ele próprio as suas acrobacias arrojadas, cronometradas ao segundo.",
+      "Os seus filmes, como O Maquinista da General de 1926, juntam ideias engenhosas e ação precisa."
+     ],
+     "q": "Que acrobacia ou piada visual mais te impressionou?",
+     "c": "Experimenta uma reação lenta e impassível a algo banal e vê como fica engraçado."
+    },
+    "pt_BR": {
+     "t": "Buster Keaton",
+     "g": "Curta o humor impassível e acrobacias impressionantes.",
+     "p": [
+      "Keaton, apelidado de Cara de Pedra, quase nunca sorria na tela.",
+      "Ele mesmo fazia as suas acrobacias ousadas, cronometradas ao segundo.",
+      "Seus filmes, como O General de 1926, unem ideias engenhosas e ação precisa."
+     ],
+     "q": "Que acrobacia ou gag mais impressionou você?",
+     "c": "Experimente uma reação lenta e impassível a algo banal e veja como fica engraçado."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Harold Lloyd and silent comedy",
+     "g": "Enjoy daring gags and the golden age of slapstick.",
+     "p": [
+      "Harold Lloyd played an ordinary optimistic young man, with round glasses.",
+      "In Safety Last! from 1923, he hangs from a clock high above a city street.",
+      "Slapstick builds laughs from timing, surprise and physical invention."
+     ],
+     "q": "What everyday mishap would make a good silent-comedy gag?",
+     "c": "Write a three-step gag: setup, complication, funny solution."
+    },
+    "de": {
+     "t": "Harold Lloyd und die Stummfilmkomödie",
+     "g": "Genieße kühne Gags und das goldene Zeitalter der Slapstick-Komödie.",
+     "p": [
+      "Harold Lloyd spielte einen gewöhnlichen, optimistischen jungen Mann mit runder Brille.",
+      "In Safety Last! von 1923 hängt er an einer Uhr hoch über einer Stadtstraße.",
+      "Slapstick lebt von Timing, Überraschung und körperlicher Erfindungsgabe."
+     ],
+     "q": "Welches Alltagsmissgeschick gäbe einen guten Stummfilm-Gag?",
+     "c": "Schreib einen Gag in drei Schritten: Aufbau, Komplikation, komische Lösung."
+    },
+    "es": {
+     "t": "Harold Lloyd y la comedia muda",
+     "g": "Disfruta de gags audaces y de la edad de oro del slapstick.",
+     "p": [
+      "Harold Lloyd interpretaba a un joven corriente y optimista, con gafas redondas.",
+      "En El hombre mosca, de 1923, cuelga de un reloj sobre una calle de la ciudad.",
+      "El slapstick crea risas con ritmo, sorpresa e invención física."
+     ],
+     "q": "¿Qué contratiempo cotidiano sería un buen gag de cine mudo?",
+     "c": "Escribe un gag en tres pasos: planteamiento, complicación y solución graciosa."
+    },
+    "fr": {
+     "t": "Harold Lloyd et la comédie muette",
+     "g": "Savoure des gags audacieux et l'âge d'or du burlesque.",
+     "p": [
+      "Harold Lloyd jouait un jeune homme ordinaire et optimiste, aux lunettes rondes.",
+      "Dans Monte là-dessus (1923), il s'accroche à une horloge au-dessus d'une rue.",
+      "Le burlesque tire ses rires du rythme, de la surprise et de l'invention physique."
+     ],
+     "q": "Quel petit pépin du quotidien ferait un bon gag muet ?",
+     "c": "Écris un gag en trois temps : mise en place, complication, solution drôle."
+    },
+    "it": {
+     "t": "Harold Lloyd e la commedia muta",
+     "g": "Goditi gag audaci e l'età d'oro dello slapstick.",
+     "p": [
+      "Harold Lloyd interpretava un giovane comune e ottimista, con occhiali tondi.",
+      "In Preferisco l'ascensore del 1923 si appende a un orologio sopra una strada cittadina.",
+      "Lo slapstick costruisce risate su ritmo, sorpresa e invenzione fisica."
+     ],
+     "q": "Quale piccolo contrattempo quotidiano farebbe un buon gag muto?",
+     "c": "Scrivi un gag in tre passi: premessa, complicazione, soluzione divertente."
+    },
+    "pt": {
+     "t": "Harold Lloyd e a comédia muda",
+     "g": "Aprecia gags ousados e a era dourada do slapstick.",
+     "p": [
+      "Harold Lloyd fazia de um jovem comum e otimista, de óculos redondos.",
+      "Em Safety Last!, de 1923, pendura-se num relógio sobre uma rua da cidade.",
+      "O slapstick constrói o riso com ritmo, surpresa e invenção física."
+     ],
+     "q": "Que pequeno contratempo diário daria um bom gag mudo?",
+     "c": "Escreve um gag em três passos: preparação, complicação, solução engraçada."
+    },
+    "pt_BR": {
+     "t": "Harold Lloyd e a comédia muda",
+     "g": "Curta gags ousados e a era de ouro do pastelão.",
+     "p": [
+      "Harold Lloyd fazia um jovem comum e otimista, de óculos redondos.",
+      "Em Safety Last!, de 1923, ele se pendura num relógio sobre uma rua da cidade.",
+      "O pastelão constrói o riso com ritmo, surpresa e invenção física."
+     ],
+     "q": "Que pequeno contratempo do dia a dia daria um bom gag mudo?",
+     "c": "Escreva um gag em três passos: preparação, complicação, solução engraçada."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Intertitles and visual storytelling",
+     "g": "See how silent films used text cards and images to communicate.",
+     "p": [
+      "Intertitles are cards of text that give dialogue or explain what is happening.",
+      "Good silent films use them sparingly and let images do the telling.",
+      "Props, faces and gestures carried meaning that words did not need to."
+     ],
+     "q": "How would you show hunger or joy with no words?",
+     "c": "Tell a short story using only pictures or objects on a table."
+    },
+    "de": {
+     "t": "Zwischentitel und visuelles Erzählen",
+     "g": "Sieh, wie Stummfilme Texttafeln und Bilder zur Verständigung nutzten.",
+     "p": [
+      "Zwischentitel sind Texttafeln mit Dialog oder Erklärungen zur Handlung.",
+      "Gute Stummfilme setzen sie sparsam ein und lassen die Bilder erzählen.",
+      "Requisiten, Gesichter und Gesten trugen Bedeutung, ohne Worte zu brauchen."
+     ],
+     "q": "Wie würdest du Hunger oder Freude ohne Worte zeigen?",
+     "c": "Erzähl eine kurze Geschichte nur mit Bildern oder Gegenständen auf einem Tisch."
+    },
+    "es": {
+     "t": "Rótulos y narración visual",
+     "g": "Mira cómo el cine mudo usaba carteles de texto e imágenes para comunicar.",
+     "p": [
+      "Los rótulos son tarjetas de texto con diálogos o explicaciones de lo que ocurre.",
+      "El buen cine mudo los usa poco y deja que la imagen cuente.",
+      "Objetos, rostros y gestos transmitían significado sin necesidad de palabras."
+     ],
+     "q": "¿Cómo mostrarías hambre o alegría sin palabras?",
+     "c": "Cuenta una historia breve solo con imágenes u objetos sobre una mesa."
+    },
+    "fr": {
+     "t": "Intertitres et récit visuel",
+     "g": "Vois comment le muet utilisait cartons de texte et images pour communiquer.",
+     "p": [
+      "Les intertitres sont des cartons de texte donnant un dialogue ou expliquant l'action.",
+      "Les bons films muets en usent peu et laissent l'image raconter.",
+      "Accessoires, visages et gestes portaient un sens sans besoin de mots."
+     ],
+     "q": "Comment montrerais-tu la faim ou la joie sans mots ?",
+     "c": "Raconte une courte histoire avec seulement des images ou des objets sur une table."
+    },
+    "it": {
+     "t": "Didascalie e racconto visivo",
+     "g": "Scopri come il muto usava cartelli di testo e immagini per comunicare.",
+     "p": [
+      "Le didascalie sono cartelli di testo con dialoghi o spiegazioni dell'azione.",
+      "I buoni film muti le usano poco e lasciano raccontare le immagini.",
+      "Oggetti, volti e gesti portavano significato senza bisogno di parole."
+     ],
+     "q": "Come mostreresti fame o gioia senza parole?",
+     "c": "Racconta una breve storia solo con immagini o oggetti su un tavolo."
+    },
+    "pt": {
+     "t": "Intertítulos e narrativa visual",
+     "g": "Vê como o cinema mudo usava cartões de texto e imagens para comunicar.",
+     "p": [
+      "Os intertítulos são cartões de texto com diálogo ou explicações da ação.",
+      "Os bons filmes mudos usam-nos pouco e deixam a imagem contar.",
+      "Adereços, rostos e gestos transmitiam sentido sem precisar de palavras."
+     ],
+     "q": "Como mostrarias fome ou alegria sem palavras?",
+     "c": "Conta uma história curta só com imagens ou objetos sobre uma mesa."
+    },
+    "pt_BR": {
+     "t": "Intertítulos e narrativa visual",
+     "g": "Veja como o cinema mudo usava cartelas de texto e imagens para comunicar.",
+     "p": [
+      "Intertítulos são cartelas de texto com diálogo ou explicações da ação.",
+      "Bons filmes mudos usam pouco e deixam a imagem contar.",
+      "Objetos, rostos e gestos transmitiam sentido sem precisar de palavras."
+     ],
+     "q": "Como você mostraria fome ou alegria sem palavras?",
+     "c": "Conte uma história curta só com imagens ou objetos sobre uma mesa."
+    }
+   }
+  }
+ ]
+}

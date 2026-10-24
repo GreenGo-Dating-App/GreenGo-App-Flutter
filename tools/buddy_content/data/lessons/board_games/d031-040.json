@@ -1,0 +1,835 @@
+{
+ "topic": "board_games",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mahjong",
+     "g": "Meet tiles, sets and patterns in a game with roots in China.",
+     "p": [
+      "Mahjong is played with 144 tiles in suits, honours, flowers and seasons.",
+      "Players draw and discard tiles to build sets, like three of a kind or a run.",
+      "The first to complete a valid hand calls mahjong and wins the round."
+     ],
+     "q": "It is usually played by four people, and chatting is part of the fun.",
+     "c": "Sort a pile of cards into three suits and look for runs of three."
+    },
+    "de": {
+     "t": "Mahjong",
+     "g": "Lerne Steine, Sätze und Muster in einem Spiel mit chinesischen Wurzeln kennen.",
+     "p": [
+      "Mahjong wird mit 144 Steinen gespielt: Farben, Ehrensteine, Blumen und Jahreszeiten.",
+      "Man zieht und wirft Steine ab, um Sätze zu bilden, etwa Drillinge oder Reihen.",
+      "Wer zuerst eine gültige Hand vollendet, ruft Mahjong und gewinnt die Runde."
+     ],
+     "q": "Meist spielen vier Personen, und Plaudern gehört zum Vergnügen.",
+     "c": "Sortiere Karten in drei Farben und suche Reihen aus drei Karten."
+    },
+    "es": {
+     "t": "Mahjong",
+     "g": "Conoce las fichas, los grupos y los patrones de un juego con raíces en China.",
+     "p": [
+      "El mahjong se juega con 144 fichas: palos, honores, flores y estaciones.",
+      "Se roban y descartan fichas para formar grupos, como tríos o escaleras.",
+      "Quien completa primero una mano válida dice mahjong y gana la ronda."
+     ],
+     "q": "Suelen jugar cuatro personas, y charlar es parte de la diversión.",
+     "c": "Ordena cartas en tres palos y busca escaleras de tres."
+    },
+    "fr": {
+     "t": "Le mahjong",
+     "g": "Découvre les tuiles, les combinaisons et les motifs d'un jeu aux racines chinoises.",
+     "p": [
+      "Le mahjong se joue avec 144 tuiles : séries, honneurs, fleurs et saisons.",
+      "On pioche et on défausse pour former des combinaisons, brelans ou suites.",
+      "Le premier à compléter une main valide annonce mahjong et gagne la manche."
+     ],
+     "q": "On joue en général à quatre, et bavarder fait partie du plaisir.",
+     "c": "Trie des cartes en trois couleurs et cherche des suites de trois."
+    },
+    "it": {
+     "t": "Il mahjong",
+     "g": "Scopri tessere, combinazioni e schemi in un gioco con radici cinesi.",
+     "p": [
+      "Il mahjong si gioca con 144 tessere: semi, onori, fiori e stagioni.",
+      "Si pesca e si scarta per formare combinazioni, tris o scale.",
+      "Chi completa per primo una mano valida dice mahjong e vince il giro."
+     ],
+     "q": "Di solito giocano in quattro, e chiacchierare fa parte del divertimento.",
+     "c": "Ordina delle carte in tre semi e cerca scale da tre."
+    },
+    "pt": {
+     "t": "O mahjong",
+     "g": "Conhece peças, conjuntos e padrões num jogo com raízes na China.",
+     "p": [
+      "O mahjong joga-se com 144 peças: naipes, honras, flores e estações.",
+      "Tiram-se e descartam-se peças para formar conjuntos, trios ou sequências.",
+      "Quem primeiro completa uma mão válida diz mahjong e ganha a ronda."
+     ],
+     "q": "Costumam jogar quatro pessoas, e conversar faz parte da diversão.",
+     "c": "Separa cartas em três naipes e procura sequências de três."
+    },
+    "pt_BR": {
+     "t": "O mahjong",
+     "g": "Conheça peças, conjuntos e padrões num jogo com raízes na China.",
+     "p": [
+      "O mahjong é jogado com 144 peças: naipes, honras, flores e estações.",
+      "Compram-se e descartam-se peças para formar conjuntos, trios ou sequências.",
+      "Quem primeiro completa uma mão válida diz mahjong e vence a rodada."
+     ],
+     "q": "Costumam jogar quatro pessoas, e conversar faz parte da diversão.",
+     "c": "Separe cartas em três naipes e procure sequências de três."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Chinese checkers",
+     "g": "Meet a star-shaped game that actually comes from a German game.",
+     "p": [
+      "Despite the name, it comes from Halma, a game invented in the 1880s.",
+      "The star-shaped version appeared in Germany in 1892 as Stern-Halma.",
+      "You race your marbles across the star, hopping over other pieces."
+     ],
+     "q": "Chain several hops in one turn to cross the board quickly.",
+     "c": "Can you plan a chain of three hops? Sketch it on paper dots."
+    },
+    "de": {
+     "t": "Chinese Checkers",
+     "g": "Lerne ein sternförmiges Spiel kennen, das eigentlich aus Deutschland kommt.",
+     "p": [
+      "Trotz des Namens stammt es von Halma, einem Spiel aus den 1880er Jahren.",
+      "Die Sternversion erschien 1892 in Deutschland als Stern-Halma.",
+      "Du bringst deine Murmeln über den Stern und hüpfst über andere Steine."
+     ],
+     "q": "Verkette mehrere Sprünge in einem Zug, um das Brett schnell zu überqueren.",
+     "c": "Kannst du eine Kette aus drei Sprüngen planen? Skizziere sie mit Punkten."
+    },
+    "es": {
+     "t": "Damas chinas",
+     "g": "Conoce un juego en forma de estrella que en realidad viene de un juego alemán.",
+     "p": [
+      "Pese al nombre, viene del halma, un juego inventado en la década de 1880.",
+      "La versión en estrella apareció en Alemania en 1892 como Stern-Halma.",
+      "Corres con tus canicas por la estrella saltando sobre otras piezas."
+     ],
+     "q": "Encadena varios saltos en un turno para cruzar rápido el tablero.",
+     "c": "¿Puedes planear una cadena de tres saltos? Dibújala con puntos en papel."
+    },
+    "fr": {
+     "t": "Dames chinoises",
+     "g": "Découvre un jeu en forme d'étoile qui vient en réalité d'un jeu allemand.",
+     "p": [
+      "Malgré son nom, il descend du halma, un jeu inventé dans les années 1880.",
+      "La version en étoile est apparue en Allemagne en 1892 sous le nom de Stern-Halma.",
+      "Tu fais traverser l'étoile à tes billes en sautant par-dessus d'autres pièces."
+     ],
+     "q": "Enchaîne plusieurs sauts en un tour pour traverser vite le plateau.",
+     "c": "Peux-tu planifier une chaîne de trois sauts ? Dessine-la avec des points."
+    },
+    "it": {
+     "t": "Dama cinese",
+     "g": "Conosci un gioco a forma di stella che in realtà viene da un gioco tedesco.",
+     "p": [
+      "Nonostante il nome, deriva dall'halma, un gioco inventato negli anni 1880.",
+      "La versione a stella apparve in Germania nel 1892 come Stern-Halma.",
+      "Fai attraversare la stella alle tue biglie saltando sopra altri pezzi."
+     ],
+     "q": "Concatena più salti in un turno per attraversare in fretta il tavoliere.",
+     "c": "Sai pianificare una catena di tre salti? Disegnala con dei puntini."
+    },
+    "pt": {
+     "t": "Damas chinesas",
+     "g": "Conhece um jogo em forma de estrela que na verdade vem de um jogo alemão.",
+     "p": [
+      "Apesar do nome, vem do halma, um jogo inventado na década de 1880.",
+      "A versão em estrela surgiu na Alemanha em 1892 como Stern-Halma.",
+      "Fazes atravessar a estrela com as tuas berlindes, saltando sobre outras peças."
+     ],
+     "q": "Encadeia vários saltos numa jogada para atravessar depressa o tabuleiro.",
+     "c": "Consegues planear uma cadeia de três saltos? Desenha-a com pontos."
+    },
+    "pt_BR": {
+     "t": "Damas chinesas",
+     "g": "Conheça um jogo em forma de estrela que na verdade vem de um jogo alemão.",
+     "p": [
+      "Apesar do nome, vem do halma, um jogo inventado na década de 1880.",
+      "A versão em estrela surgiu na Alemanha em 1892 como Stern-Halma.",
+      "Você atravessa a estrela com suas bolinhas, pulando sobre outras peças."
+     ],
+     "q": "Encadeie vários saltos numa jogada para atravessar rápido o tabuleiro.",
+     "c": "Você consegue planejar uma sequência de três saltos? Desenhe com pontos."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reversi and Othello",
+     "g": "Learn to flip discs and take over the board in a simple yet deep game.",
+     "p": [
+      "Reversi dates from the 1880s; Othello is a modern version with set starting discs.",
+      "You place a disc so it traps a line of enemy discs between two of yours.",
+      "Trapped discs flip to your colour; the most discs at the end wins."
+     ],
+     "q": "Corners are valuable because they can never be flipped.",
+     "c": "On a 4x4 grid, find a move that flips at least two discs."
+    },
+    "de": {
+     "t": "Reversi und Othello",
+     "g": "Lerne, Steine zu wenden und das Brett in einem einfachen, tiefen Spiel zu erobern.",
+     "p": [
+      "Reversi stammt aus den 1880er Jahren; Othello ist eine moderne Fassung mit festem Start.",
+      "Du setzt einen Stein so, dass eine Reihe gegnerischer Steine zwischen zweien von dir liegt.",
+      "Eingeschlossene Steine wenden sich zu deiner Farbe; die meisten am Ende gewinnen."
+     ],
+     "q": "Ecken sind wertvoll, weil sie nie gewendet werden können.",
+     "c": "Finde auf einem 4x4-Raster einen Zug, der mindestens zwei Steine wendet."
+    },
+    "es": {
+     "t": "Reversi y Othello",
+     "g": "Aprende a voltear fichas y dominar el tablero en un juego simple pero profundo.",
+     "p": [
+      "El reversi data de la década de 1880; Othello es una versión moderna con inicio fijo.",
+      "Colocas una ficha de modo que una línea rival quede atrapada entre dos tuyas.",
+      "Las fichas atrapadas se voltean a tu color; gana quien tenga más al final."
+     ],
+     "q": "Las esquinas son valiosas porque nunca pueden voltearse.",
+     "c": "En una cuadrícula de 4x4, busca una jugada que voltee al menos dos fichas."
+    },
+    "fr": {
+     "t": "Reversi et Othello",
+     "g": "Apprends à retourner des pions et à dominer le plateau dans un jeu simple et profond.",
+     "p": [
+      "Le reversi date des années 1880 ; l'Othello en est une version moderne au départ fixe.",
+      "Tu poses un pion de façon à piéger une ligne adverse entre deux des tiens.",
+      "Les pions piégés se retournent à ta couleur ; le plus grand nombre gagne."
+     ],
+     "q": "Les coins sont précieux car ils ne peuvent jamais être retournés.",
+     "c": "Sur une grille 4x4, trouve un coup qui retourne au moins deux pions."
+    },
+    "it": {
+     "t": "Reversi e Othello",
+     "g": "Impara a girare le pedine e conquistare il tavoliere in un gioco semplice ma profondo.",
+     "p": [
+      "Il reversi risale agli anni 1880; Othello è una versione moderna con partenza fissa.",
+      "Posi una pedina in modo che una fila avversaria resti chiusa tra due tue.",
+      "Le pedine intrappolate si girano al tuo colore; vince chi ne ha di più."
+     ],
+     "q": "Gli angoli sono preziosi perché non possono mai essere girati.",
+     "c": "Su una griglia 4x4, trova una mossa che giri almeno due pedine."
+    },
+    "pt": {
+     "t": "Reversi e Othello",
+     "g": "Aprende a virar peças e a dominar o tabuleiro num jogo simples mas profundo.",
+     "p": [
+      "O reversi data da década de 1880; o Othello é uma versão moderna com início fixo.",
+      "Colocas uma peça de modo que uma linha rival fique presa entre duas tuas.",
+      "As peças presas viram para a tua cor; ganha quem tiver mais no fim."
+     ],
+     "q": "Os cantos são valiosos porque nunca podem ser virados.",
+     "c": "Numa grelha de 4x4, encontra uma jogada que vire pelo menos duas peças."
+    },
+    "pt_BR": {
+     "t": "Reversi e Othello",
+     "g": "Aprenda a virar peças e dominar o tabuleiro num jogo simples mas profundo.",
+     "p": [
+      "O reversi data da década de 1880; o Othello é uma versão moderna com início fixo.",
+      "Você coloca uma peça de modo que uma linha rival fique presa entre duas suas.",
+      "As peças presas viram para a sua cor; vence quem tiver mais no fim."
+     ],
+     "q": "Os cantos são valiosos porque nunca podem ser virados.",
+     "c": "Numa grade de 4x4, ache uma jogada que vire pelo menos duas peças."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Connect Four",
+     "g": "Drop discs to make a line of four, and learn the strategy behind it.",
+     "p": [
+      "Players take turns dropping coloured discs into a seven-column grid.",
+      "Discs fall to the lowest free spot, so gravity shapes your plan.",
+      "Win with four in a row: horizontal, vertical or diagonal."
+     ],
+     "q": "The centre column is strong because it joins the most possible lines.",
+     "c": "Play a few rounds and always start in the centre column. What happens?"
+    },
+    "de": {
+     "t": "Vier gewinnt",
+     "g": "Lasse Scheiben fallen, bilde eine Vierer-Reihe und lerne die Strategie dahinter.",
+     "p": [
+      "Abwechselnd wirft man farbige Scheiben in ein Raster mit sieben Spalten.",
+      "Scheiben fallen auf den untersten freien Platz, die Schwerkraft prägt den Plan.",
+      "Gewinne mit vier in einer Reihe: waagrecht, senkrecht oder diagonal."
+     ],
+     "q": "Die mittlere Spalte ist stark, weil sie die meisten möglichen Reihen verbindet.",
+     "c": "Spiele ein paar Runden und beginne immer in der Mitte. Was passiert?"
+    },
+    "es": {
+     "t": "Conecta 4",
+     "g": "Deja caer fichas para hacer una línea de cuatro y aprende su estrategia.",
+     "p": [
+      "Los jugadores dejan caer por turnos fichas de colores en una rejilla de siete columnas.",
+      "Las fichas caen al hueco libre más bajo, así que la gravedad da forma al plan.",
+      "Gana quien logre cuatro en línea: horizontal, vertical o diagonal."
+     ],
+     "q": "La columna central es fuerte porque une más líneas posibles.",
+     "c": "Juega unas rondas y empieza siempre por el centro. ¿Qué pasa?"
+    },
+    "fr": {
+     "t": "Puissance 4",
+     "g": "Fais tomber des jetons pour aligner quatre et apprends la stratégie.",
+     "p": [
+      "À tour de rôle, on laisse tomber des jetons de couleur dans une grille de sept colonnes.",
+      "Les jetons tombent à la plus basse place libre : la gravité façonne ton plan.",
+      "Gagne en alignant quatre jetons : horizontalement, verticalement ou en diagonale."
+     ],
+     "q": "La colonne centrale est forte car elle relie le plus de lignes possibles.",
+     "c": "Joue quelques parties en commençant toujours au centre. Que se passe-t-il ?"
+    },
+    "it": {
+     "t": "Forza 4",
+     "g": "Fai cadere dischi per allineare quattro e impara la strategia.",
+     "p": [
+      "I giocatori fanno cadere a turno dischi colorati in una griglia di sette colonne.",
+      "I dischi cadono nel posto libero più basso, quindi la gravità guida il piano.",
+      "Vinci con quattro in fila: in orizzontale, in verticale o in diagonale."
+     ],
+     "q": "La colonna centrale è forte perché unisce più linee possibili.",
+     "c": "Gioca qualche partita iniziando sempre dal centro. Cosa succede?"
+    },
+    "pt": {
+     "t": "Quatro em Linha",
+     "g": "Deixa cair discos para formar uma linha de quatro e aprende a estratégia.",
+     "p": [
+      "Os jogadores deixam cair à vez discos coloridos numa grelha de sete colunas.",
+      "Os discos caem para o lugar livre mais baixo, por isso a gravidade molda o plano.",
+      "Ganha com quatro em linha: na horizontal, na vertical ou na diagonal."
+     ],
+     "q": "A coluna central é forte porque une mais linhas possíveis.",
+     "c": "Joga algumas rondas e começa sempre pelo centro. O que acontece?"
+    },
+    "pt_BR": {
+     "t": "Ligue 4",
+     "g": "Deixe cair discos para formar uma linha de quatro e aprenda a estratégia.",
+     "p": [
+      "Os jogadores deixam cair, em turnos, discos coloridos numa grade de sete colunas.",
+      "Os discos caem para o lugar livre mais baixo, então a gravidade molda o plano.",
+      "Vença com quatro em linha: na horizontal, na vertical ou na diagonal."
+     ],
+     "q": "A coluna central é forte porque une mais linhas possíveis.",
+     "c": "Jogue algumas rodadas e comece sempre pelo centro. O que acontece?"
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Word game: Rhymes",
+     "g": "Find words that rhyme and build playful little verses.",
+     "p": [
+      "Rhyming words end with the same sound, like cat and hat.",
+      "Say a word and take turns finding rhymes until you run out.",
+      "Two rhyming lines make a tiny poem: The cat sat on a mat."
+     ],
+     "q": "Rhymes for the word day: what can you find?",
+     "c": "Write a two-line rhyme about your favourite game."
+    },
+    "de": {
+     "t": "Wortspiel: Reime",
+     "g": "Finde Wörter, die sich reimen, und baue kleine Verse.",
+     "p": [
+      "Reimwörter enden auf denselben Klang, wie Haus und Maus.",
+      "Sag ein Wort und findet abwechselnd Reime, bis keiner mehr einfällt.",
+      "Zwei gereimte Zeilen sind ein Mini-Gedicht: Die Maus sitzt im Haus."
+     ],
+     "q": "Reime auf das Wort Tag: Was fällt dir ein?",
+     "c": "Schreibe einen Zweizeiler über dein Lieblingsspiel."
+    },
+    "es": {
+     "t": "Juego de palabras: Rimas",
+     "g": "Encuentra palabras que riman y crea versos divertidos.",
+     "p": [
+      "Las palabras que riman acaban con el mismo sonido, como casa y masa.",
+      "Di una palabra y turnaos para hallar rimas hasta que no queden.",
+      "Dos versos que riman forman un mini poema: El gato come pato."
+     ],
+     "q": "Rimas con la palabra día: ¿qué encuentras?",
+     "c": "Escribe un pareado sobre tu juego favorito."
+    },
+    "fr": {
+     "t": "Jeu de mots : Rimes",
+     "g": "Trouve des mots qui riment et compose de petits vers amusants.",
+     "p": [
+      "Des mots qui riment finissent par le même son, comme chat et plat.",
+      "Dis un mot et cherchez des rimes à tour de rôle jusqu'à épuisement.",
+      "Deux vers qui riment font un mini poème : Le chat mange du riz."
+     ],
+     "q": "Rimes avec le mot jour : que trouves-tu ?",
+     "c": "Écris un couplet de deux vers sur ton jeu préféré."
+    },
+    "it": {
+     "t": "Gioco di parole: Rime",
+     "g": "Trova parole che rimano e costruisci piccoli versi giocosi.",
+     "p": [
+      "Le parole che rimano finiscono con lo stesso suono, come gatto e matto.",
+      "Dì una parola e cercate rime a turno finché ne avete.",
+      "Due versi in rima fanno una mini poesia: Il gatto è matto."
+     ],
+     "q": "Rime con la parola sole: cosa trovi?",
+     "c": "Scrivi una rima di due versi sul tuo gioco preferito."
+    },
+    "pt": {
+     "t": "Jogo de palavras: Rimas",
+     "g": "Encontra palavras que rimam e cria pequenos versos divertidos.",
+     "p": [
+      "Palavras que rimam acabam com o mesmo som, como mão e pão.",
+      "Diz uma palavra e procurem rimas à vez até não haver mais.",
+      "Dois versos que rimam fazem um mini poema: Com o pão na mão."
+     ],
+     "q": "Rimas com a palavra dia: o que encontras?",
+     "c": "Escreve uma rima de dois versos sobre o teu jogo preferido."
+    },
+    "pt_BR": {
+     "t": "Jogo de palavras: Rimas",
+     "g": "Encontre palavras que rimam e crie pequenos versos divertidos.",
+     "p": [
+      "Palavras que rimam terminam com o mesmo som, como mão e pão.",
+      "Diga uma palavra e procurem rimas em turnos até acabarem.",
+      "Dois versos que rimam formam um mini poema: Com o pão na mão."
+     ],
+     "q": "Rimas com a palavra dia: o que você encontra?",
+     "c": "Escreva uma rima de dois versos sobre seu jogo preferido."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tic-tac-toe and its variants",
+     "g": "Meet the simplest grid game and fun ways to make it richer.",
+     "p": [
+      "Two players mark X and O on a 3x3 grid; three in a row wins.",
+      "With perfect play, every game ends in a draw, so it is a fair test of care.",
+      "Variants: play on a 4x4 grid, or play three-dimensional on stacked boards."
+     ],
+     "q": "Related games like Nine Men's Morris are very old cousins.",
+     "c": "Play tic-tac-toe and try to find a first move that never loses."
+    },
+    "de": {
+     "t": "Tic-Tac-Toe und seine Varianten",
+     "g": "Lerne das einfachste Rasterspiel und lustige Erweiterungen kennen.",
+     "p": [
+      "Zwei Spieler setzen X und O auf ein 3x3-Raster; drei in einer Reihe gewinnen.",
+      "Bei perfektem Spiel endet jede Partie unentschieden, es prüft also Sorgfalt.",
+      "Varianten: auf einem 4x4-Raster oder dreidimensional auf gestapelten Brettern."
+     ],
+     "q": "Verwandte Spiele wie die Mühle sind sehr alte Cousins.",
+     "c": "Spiele Tic-Tac-Toe und suche einen ersten Zug, der nie verliert."
+    },
+    "es": {
+     "t": "Tres en raya y sus variantes",
+     "g": "Conoce el juego de cuadrícula más simple y formas divertidas de enriquecerlo.",
+     "p": [
+      "Dos jugadores marcan X y O en una cuadrícula de 3x3; tres en línea ganan.",
+      "Con juego perfecto, toda partida acaba en tablas: es una prueba de cuidado.",
+      "Variantes: jugar en 4x4 o en tres dimensiones con tableros apilados."
+     ],
+     "q": "Juegos parientes como el molino son primos muy antiguos.",
+     "c": "Juega al tres en raya e intenta hallar una primera jugada que nunca pierda."
+    },
+    "fr": {
+     "t": "Morpion et ses variantes",
+     "g": "Découvre le jeu de grille le plus simple et des façons amusantes de l'enrichir.",
+     "p": [
+      "Deux joueurs marquent X et O sur une grille 3x3 ; trois alignés gagnent.",
+      "Avec un jeu parfait, chaque partie finit par un match nul : c'est un test d'attention.",
+      "Variantes : jouer en 4x4 ou en trois dimensions avec des plateaux empilés."
+     ],
+     "q": "Des jeux apparentés comme le moulin sont de très vieux cousins.",
+     "c": "Joue au morpion et cherche un premier coup qui ne perd jamais."
+    },
+    "it": {
+     "t": "Tris e le sue varianti",
+     "g": "Conosci il gioco a griglia più semplice e modi divertenti per arricchirlo.",
+     "p": [
+      "Due giocatori segnano X e O su una griglia 3x3; tre in fila vincono.",
+      "Con gioco perfetto ogni partita finisce in pareggio: è una prova di attenzione.",
+      "Varianti: giocare su 4x4 o in tre dimensioni con tavolieri impilati."
+     ],
+     "q": "Giochi parenti come il mulino sono cugini antichissimi.",
+     "c": "Gioca a tris e cerca una prima mossa che non perda mai."
+    },
+    "pt": {
+     "t": "Jogo do galo e as suas variantes",
+     "g": "Conhece o jogo de grelha mais simples e formas divertidas de o enriquecer.",
+     "p": [
+      "Dois jogadores marcam X e O numa grelha 3x3; três em linha ganham.",
+      "Com jogo perfeito, todas as partidas acabam em empate: testa o cuidado.",
+      "Variantes: jogar em 4x4 ou em três dimensões com tabuleiros empilhados."
+     ],
+     "q": "Jogos parentes como o moinho são primos muito antigos.",
+     "c": "Joga ao galo e tenta encontrar uma primeira jogada que nunca perca."
+    },
+    "pt_BR": {
+     "t": "Jogo da velha e suas variantes",
+     "g": "Conheça o jogo de grade mais simples e jeitos divertidos de enriquecê-lo.",
+     "p": [
+      "Dois jogadores marcam X e O numa grade 3x3; três em linha vencem.",
+      "Com jogo perfeito, toda partida termina empatada: testa o cuidado.",
+      "Variantes: jogar em 4x4 ou em três dimensões com tabuleiros empilhados."
+     ],
+     "q": "Jogos parentes como o moinho são primos muito antigos.",
+     "c": "Jogue o jogo da velha e tente achar uma primeira jogada que nunca perca."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Monopoly and its history",
+     "g": "See how The Landlord's Game became a family classic.",
+     "p": [
+      "Elizabeth Magie patented The Landlord's Game in 1904 to show how land rents affect people.",
+      "Later versions spread among friends and became Monopoly in the 1930s.",
+      "Players move around a board, buy properties and pay rent in play money."
+     ],
+     "q": "Its long games teach negotiation, patience and good humour when you lose.",
+     "c": "What house rule would make a long board game more fun for you?"
+    },
+    "de": {
+     "t": "Monopoly und seine Geschichte",
+     "g": "Erfahre, wie The Landlord's Game zum Familienklassiker wurde.",
+     "p": [
+      "Elizabeth Magie ließ The Landlord's Game 1904 patentieren, um Grundrenten zu zeigen.",
+      "Spätere Fassungen verbreiteten sich unter Freunden und wurden in den 1930ern zu Monopoly.",
+      "Man zieht übers Brett, kauft Straßen und zahlt Miete in Spielgeld."
+     ],
+     "q": "Lange Partien üben Verhandeln, Geduld und gute Laune beim Verlieren.",
+     "c": "Welche Hausregel würde ein langes Brettspiel für dich unterhaltsamer machen?"
+    },
+    "es": {
+     "t": "El Monopoly y su historia",
+     "g": "Mira cómo The Landlord's Game se volvió un clásico familiar.",
+     "p": [
+      "Elizabeth Magie patentó The Landlord's Game en 1904 para mostrar el efecto de las rentas.",
+      "Versiones posteriores circularon entre amigos y en los años 30 fueron el Monopoly.",
+      "Se avanza por el tablero, se compran propiedades y se paga alquiler con dinero de juguete."
+     ],
+     "q": "Las partidas largas enseñan negociación, paciencia y buen humor al perder.",
+     "c": "¿Qué regla de la casa haría más divertido un juego de mesa largo?"
+    },
+    "fr": {
+     "t": "Le Monopoly et son histoire",
+     "g": "Vois comment The Landlord's Game est devenu un classique familial.",
+     "p": [
+      "Elizabeth Magie a breveté The Landlord's Game en 1904 pour montrer l'effet des loyers fonciers.",
+      "Des versions ultérieures ont circulé entre amis et sont devenues le Monopoly dans les années 1930.",
+      "On avance sur le plateau, on achète des propriétés et on paie des loyers en argent factice."
+     ],
+     "q": "Les longues parties enseignent la négociation, la patience et la bonne humeur.",
+     "c": "Quelle règle maison rendrait un long jeu de société plus amusant ?"
+    },
+    "it": {
+     "t": "Il Monopoly e la sua storia",
+     "g": "Guarda come The Landlord's Game è diventato un classico di famiglia.",
+     "p": [
+      "Elizabeth Magie brevettò The Landlord's Game nel 1904 per mostrare l'effetto degli affitti.",
+      "Versioni successive circolarono tra amici e negli anni 30 divennero il Monopoly.",
+      "Si avanza sul tabellone, si comprano proprietà e si paga l'affitto con soldi finti."
+     ],
+     "q": "Le partite lunghe insegnano trattativa, pazienza e buon umore quando si perde.",
+     "c": "Quale regola della casa renderebbe più divertente un gioco lungo?"
+    },
+    "pt": {
+     "t": "O Monopólio e a sua história",
+     "g": "Vê como The Landlord's Game se tornou um clássico familiar.",
+     "p": [
+      "Elizabeth Magie patenteou The Landlord's Game em 1904 para mostrar o efeito das rendas.",
+      "Versões posteriores circularam entre amigos e nos anos 30 tornaram-se o Monopólio.",
+      "Avança-se pelo tabuleiro, compram-se propriedades e paga-se renda com dinheiro de brincar."
+     ],
+     "q": "Partidas longas ensinam negociação, paciência e bom humor ao perder.",
+     "c": "Que regra da casa tornaria um jogo de tabuleiro longo mais divertido?"
+    },
+    "pt_BR": {
+     "t": "O Banco Imobiliário e a Monopoly",
+     "g": "Veja como The Landlord's Game virou um clássico de família.",
+     "p": [
+      "Elizabeth Magie patenteou The Landlord's Game em 1904 para mostrar o efeito dos aluguéis.",
+      "Versões posteriores circularam entre amigos e nos anos 30 viraram a Monopoly.",
+      "Avança-se pelo tabuleiro, compram-se propriedades e paga-se aluguel com dinheiro de brinquedo."
+     ],
+     "q": "Partidas longas ensinam negociação, paciência e bom humor ao perder.",
+     "c": "Qual regra da casa deixaria um jogo de tabuleiro longo mais divertido?"
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Scrabble: the classic word game",
+     "g": "Learn how Alfred Butts' tile game scores words on a board.",
+     "p": [
+      "Architect Alfred Butts invented it in the 1930s; it was first called Lexiko.",
+      "Players draw seven letter tiles and build crossing words on a grid.",
+      "Each letter has a score; rarer letters like Q and Z are worth more."
+     ],
+     "q": "Premium squares double or triple letters or whole words.",
+     "c": "With the letters R, A, T, E, S, find as many words as you can."
+    },
+    "de": {
+     "t": "Scrabble: das klassische Wortspiel",
+     "g": "Lerne, wie Alfred Butts' Legespiel Wörter auf dem Brett bewertet.",
+     "p": [
+      "Der Architekt Alfred Butts erfand es in den 1930ern; zuerst hieß es Lexiko.",
+      "Man zieht sieben Buchstabensteine und legt sich kreuzende Wörter auf ein Raster.",
+      "Jeder Buchstabe hat einen Wert; seltene wie Q und Z zählen mehr."
+     ],
+     "q": "Bonusfelder verdoppeln oder verdreifachen Buchstaben oder ganze Wörter.",
+     "c": "Finde mit den Buchstaben R, A, T, E, S so viele Wörter wie möglich."
+    },
+    "es": {
+     "t": "Scrabble: el clásico juego de palabras",
+     "g": "Aprende cómo el juego de fichas de Alfred Butts puntúa palabras en un tablero.",
+     "p": [
+      "El arquitecto Alfred Butts lo inventó en los años 30; primero se llamó Lexiko.",
+      "Se roban siete fichas de letras y se forman palabras cruzadas en una rejilla.",
+      "Cada letra tiene puntos; las raras, como Q y Z, valen más."
+     ],
+     "q": "Las casillas especiales duplican o triplican letras o palabras enteras.",
+     "c": "Con las letras R, A, T, E, S, encuentra tantas palabras como puedas."
+    },
+    "fr": {
+     "t": "Scrabble : le jeu de mots classique",
+     "g": "Apprends comment le jeu de lettres d'Alfred Butts compte les points.",
+     "p": [
+      "L'architecte Alfred Butts l'a inventé dans les années 1930 ; il s'appelait d'abord Lexiko.",
+      "On pioche sept lettres et on forme des mots croisés sur une grille.",
+      "Chaque lettre a une valeur ; les rares comme Q et Z valent plus."
+     ],
+     "q": "Les cases bonus doublent ou triplent des lettres ou des mots entiers.",
+     "c": "Avec les lettres R, A, T, E, S, trouve autant de mots que possible."
+    },
+    "it": {
+     "t": "Scarabeo e Scrabble: il classico gioco di parole",
+     "g": "Impara come il gioco di lettere di Alfred Butts assegna i punti alle parole.",
+     "p": [
+      "L'architetto Alfred Butts lo inventò negli anni 30; all'inizio si chiamava Lexiko.",
+      "Si pescano sette lettere e si formano parole incrociate su una griglia.",
+      "Ogni lettera ha un valore; quelle rare, come Q e Z, valgono di più."
+     ],
+     "q": "Le caselle bonus raddoppiano o triplicano lettere o parole intere.",
+     "c": "Con le lettere R, A, T, E, S trova quante più parole puoi."
+    },
+    "pt": {
+     "t": "Scrabble: o clássico jogo de palavras",
+     "g": "Aprende como o jogo de letras de Alfred Butts pontua palavras num tabuleiro.",
+     "p": [
+      "O arquiteto Alfred Butts inventou-o nos anos 30; chamou-se primeiro Lexiko.",
+      "Tiram-se sete letras e formam-se palavras cruzadas numa grelha.",
+      "Cada letra tem pontos; as raras, como Q e Z, valem mais."
+     ],
+     "q": "As casas especiais duplicam ou triplicam letras ou palavras inteiras.",
+     "c": "Com as letras R, A, T, E, S, encontra tantas palavras quantas puderes."
+    },
+    "pt_BR": {
+     "t": "Scrabble: o clássico jogo de palavras",
+     "g": "Aprenda como o jogo de letras de Alfred Butts pontua palavras num tabuleiro.",
+     "p": [
+      "O arquiteto Alfred Butts o inventou nos anos 30; primeiro se chamou Lexiko.",
+      "Compram-se sete letras e formam-se palavras cruzadas numa grade.",
+      "Cada letra vale pontos; as raras, como Q e Z, valem mais."
+     ],
+     "q": "As casas especiais dobram ou triplicam letras ou palavras inteiras.",
+     "c": "Com as letras R, A, T, E, S, ache quantas palavras puder."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Trivial Pursuit and quiz games",
+     "g": "Enjoy question cards, categories and the fun of knowing things.",
+     "p": [
+      "Trivial Pursuit appeared in 1979 and made quiz games a family favourite.",
+      "Questions fall into categories such as geography, history and science.",
+      "Quiz games reward curiosity, and a wrong answer is just a new fact."
+     ],
+     "q": "Teams can mix people with different strengths, so everybody helps.",
+     "c": "Which category would you choose, and what is a fun fact you know in it?"
+    },
+    "de": {
+     "t": "Trivial Pursuit und Quizspiele",
+     "g": "Genieße Fragekarten, Kategorien und die Freude am Wissen.",
+     "p": [
+      "Trivial Pursuit erschien 1979 und machte Quizspiele zum Familienliebling.",
+      "Fragen gehören zu Kategorien wie Geografie, Geschichte und Wissenschaft.",
+      "Quizspiele belohnen Neugier, und eine falsche Antwort ist nur ein neuer Fakt."
+     ],
+     "q": "Teams mischen Menschen mit verschiedenen Stärken, alle helfen mit.",
+     "c": "Welche Kategorie würdest du wählen, und welchen Fun Fact kennst du darin?"
+    },
+    "es": {
+     "t": "Trivial Pursuit y juegos de preguntas",
+     "g": "Disfruta de las cartas de preguntas, las categorías y el placer de saber.",
+     "p": [
+      "Trivial Pursuit apareció en 1979 e hizo de los juegos de preguntas un favorito familiar.",
+      "Las preguntas se agrupan en categorías como geografía, historia y ciencia.",
+      "Estos juegos premian la curiosidad y un error es solo un dato nuevo."
+     ],
+     "q": "Los equipos mezclan personas con distintos puntos fuertes y todos ayudan.",
+     "c": "¿Qué categoría elegirías y qué dato curioso sabes de ella?"
+    },
+    "fr": {
+     "t": "Trivial Pursuit et jeux de quiz",
+     "g": "Savoure les cartes de questions, les catégories et le plaisir de savoir.",
+     "p": [
+      "Trivial Pursuit est apparu en 1979 et a rendu les jeux de quiz populaires en famille.",
+      "Les questions se rangent en catégories comme géographie, histoire et sciences.",
+      "Les quiz récompensent la curiosité, et une erreur est juste un nouveau fait."
+     ],
+     "q": "Les équipes mêlent des forces différentes, et chacun contribue.",
+     "c": "Quelle catégorie choisirais-tu, et quelle anecdote connais-tu dedans ?"
+    },
+    "it": {
+     "t": "Trivial Pursuit e giochi a quiz",
+     "g": "Goditi le carte domanda, le categorie e il piacere di sapere.",
+     "p": [
+      "Trivial Pursuit apparve nel 1979 e rese i giochi a quiz un favorito di famiglia.",
+      "Le domande sono divise in categorie come geografia, storia e scienze.",
+      "I quiz premiano la curiosità, e una risposta sbagliata è solo un fatto nuovo."
+     ],
+     "q": "Le squadre uniscono persone con punti di forza diversi, e tutti aiutano.",
+     "c": "Quale categoria sceglieresti e quale curiosità conosci al riguardo?"
+    },
+    "pt": {
+     "t": "Trivial Pursuit e jogos de perguntas",
+     "g": "Desfruta das cartas de perguntas, das categorias e do prazer de saber.",
+     "p": [
+      "O Trivial Pursuit surgiu em 1979 e tornou os jogos de perguntas favoritos da família.",
+      "As perguntas dividem-se em categorias como geografia, história e ciência.",
+      "Estes jogos premeiam a curiosidade, e um erro é só um facto novo."
+     ],
+     "q": "As equipas misturam pessoas com pontos fortes diferentes, e todos ajudam.",
+     "c": "Que categoria escolherias e que curiosidade conheces sobre ela?"
+    },
+    "pt_BR": {
+     "t": "Perguntas e Respostas e jogos de quiz",
+     "g": "Curta as cartas de perguntas, as categorias e o prazer de saber.",
+     "p": [
+      "O Trivial Pursuit surgiu em 1979 e fez dos jogos de quiz um favorito da família.",
+      "As perguntas se dividem em categorias como geografia, história e ciência.",
+      "Esses jogos premiam a curiosidade, e um erro é só um fato novo."
+     ],
+     "q": "As equipes misturam pessoas com pontos fortes diferentes, e todos ajudam.",
+     "c": "Que categoria você escolheria e que curiosidade você sabe sobre ela?"
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Word game: Hangman",
+     "g": "Guess letters to reveal a hidden word before time runs out.",
+     "p": [
+      "One player picks a secret word and draws a blank for each letter.",
+      "Others guess letters; correct ones fill in, wrong ones add a drawn part.",
+      "Start with common letters like E, A, R and T to reveal the pattern."
+     ],
+     "q": "Think about word length and likely endings, such as ING or ED.",
+     "c": "I am thinking of a six-letter word: _ _ _ _ _ _. Which letter do you pick?"
+    },
+    "de": {
+     "t": "Wortspiel: Galgenraten",
+     "g": "Rate Buchstaben, um ein verstecktes Wort zu enthüllen, bevor die Fehler ausgehen.",
+     "p": [
+      "Ein Spieler wählt ein geheimes Wort und zeichnet für jeden Buchstaben einen Strich.",
+      "Die anderen raten Buchstaben; richtige werden eingetragen, falsche geben einen Strich.",
+      "Beginne mit häufigen Buchstaben wie E, N, R und I, um das Muster zu sehen."
+     ],
+     "q": "Denke an die Wortlänge und typische Endungen wie EN oder ER.",
+     "c": "Ich denke an ein Wort mit sechs Buchstaben: _ _ _ _ _ _. Welchen Buchstaben wählst du?"
+    },
+    "es": {
+     "t": "Juego de palabras: El ahorcado",
+     "g": "Adivina letras para descubrir una palabra oculta antes de agotar los intentos.",
+     "p": [
+      "Un jugador elige una palabra secreta y dibuja un guion por cada letra.",
+      "Los demás dicen letras; las correctas se escriben, las erróneas suman un trazo.",
+      "Empieza con letras comunes como A, E, O y S para ver el patrón."
+     ],
+     "q": "Piensa en la longitud y en terminaciones frecuentes, como AR o ADO.",
+     "c": "Pienso en una palabra de seis letras: _ _ _ _ _ _. ¿Qué letra eliges?"
+    },
+    "fr": {
+     "t": "Jeu de mots : Le pendu",
+     "g": "Devine des lettres pour révéler un mot caché avant la fin des essais.",
+     "p": [
+      "Un joueur choisit un mot secret et trace un tiret par lettre.",
+      "Les autres proposent des lettres ; les bonnes se placent, les erreurs ajoutent un trait.",
+      "Commence par des lettres courantes comme E, A, S et R pour voir le motif."
+     ],
+     "q": "Pense à la longueur et aux terminaisons fréquentes, comme ER ou ION.",
+     "c": "Je pense à un mot de six lettres : _ _ _ _ _ _. Quelle lettre choisis-tu ?"
+    },
+    "it": {
+     "t": "Gioco di parole: L'impiccato",
+     "g": "Indovina le lettere per scoprire una parola nascosta prima di finire i tentativi.",
+     "p": [
+      "Un giocatore sceglie una parola segreta e traccia un trattino per ogni lettera.",
+      "Gli altri dicono lettere; quelle giuste si scrivono, quelle sbagliate aggiungono un tratto.",
+      "Parti da lettere comuni come E, A, I e O per vedere lo schema."
+     ],
+     "q": "Pensa alla lunghezza e a finali frequenti, come ARE o ENTE.",
+     "c": "Penso a una parola di sei lettere: _ _ _ _ _ _. Quale lettera scegli?"
+    },
+    "pt": {
+     "t": "Jogo de palavras: Jogo da forca",
+     "g": "Adivinha letras para revelar uma palavra escondida antes de acabarem as tentativas.",
+     "p": [
+      "Um jogador escolhe uma palavra secreta e desenha um traço por cada letra.",
+      "Os outros dizem letras; as certas escrevem-se, as erradas somam um traço.",
+      "Começa por letras comuns como A, E, O e S para ver o padrão."
+     ],
+     "q": "Pensa no tamanho e em terminações frequentes, como AR ou ADO.",
+     "c": "Penso numa palavra de seis letras: _ _ _ _ _ _. Que letra escolhes?"
+    },
+    "pt_BR": {
+     "t": "Jogo de palavras: Jogo da forca",
+     "g": "Adivinhe letras para revelar uma palavra escondida antes de acabarem as tentativas.",
+     "p": [
+      "Um jogador escolhe uma palavra secreta e desenha um traço para cada letra.",
+      "Os outros dizem letras; as certas são escritas, as erradas somam um traço.",
+      "Comece por letras comuns como A, E, O e S para ver o padrão."
+     ],
+     "q": "Pense no tamanho e em terminações frequentes, como AR ou ADO.",
+     "c": "Estou pensando numa palavra de seis letras: _ _ _ _ _ _. Que letra você escolhe?"
+    }
+   }
+  }
+ ]
+}

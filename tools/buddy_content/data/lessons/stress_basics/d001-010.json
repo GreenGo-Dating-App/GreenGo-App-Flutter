@@ -1,0 +1,835 @@
+{
+ "topic": "stress_basics",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to your calmer path",
+     "g": "Get to know this 365-day path and how one small idea a day can ease everyday stress.",
+     "p": [
+      "Each day brings one short lesson about handling everyday stress in a calmer way.",
+      "We start with the basics and slowly build a personal toolkit that fits your life.",
+      "This is about everyday coping skills, not therapy; for heavy stress, a professional can help."
+     ],
+     "q": "What would you most like to feel calmer about right now?",
+     "c": "Take one slow breath and tell me one thing that would make today feel lighter."
+    },
+    "de": {
+     "t": "Willkommen auf deinem ruhigeren Weg",
+     "g": "Lerne diesen 365-Tage-Weg kennen und wie eine kleine Idee pro Tag den Alltagsstress lindern kann.",
+     "p": [
+      "Jeden Tag gibt es eine kurze Lektion, wie du mit Alltagsstress gelassener umgehst.",
+      "Wir beginnen mit den Grundlagen und bauen Schritt für Schritt deinen persönlichen Werkzeugkasten auf.",
+      "Es geht um Alltagsstrategien, nicht um Therapie; bei starker Belastung hilft eine Fachperson."
+     ],
+     "q": "Worüber würdest du dich im Moment am liebsten gelassener fühlen?",
+     "c": "Atme einmal langsam aus und nenne mir eine Sache, die den Tag leichter machen würde."
+    },
+    "es": {
+     "t": "Bienvenido a tu camino más sereno",
+     "g": "Conoce este camino de 365 días y cómo una pequeña idea al día puede aliviar el estrés cotidiano.",
+     "p": [
+      "Cada día habrá una lección breve para manejar el estrés diario con más calma.",
+      "Empezamos por lo básico y vamos creando poco a poco tu caja de herramientas personal.",
+      "Se trata de habilidades cotidianas, no de terapia; si el estrés es fuerte, un profesional puede ayudar."
+     ],
+     "q": "¿Sobre qué te gustaría sentirte más tranquilo ahora mismo?",
+     "c": "Respira lento una vez y cuéntame algo que haría tu día más ligero."
+    },
+    "fr": {
+     "t": "Bienvenue sur ton chemin plus serein",
+     "g": "Découvre ce parcours de 365 jours et comment une petite idée par jour peut apaiser le stress du quotidien.",
+     "p": [
+      "Chaque jour, une courte leçon pour gérer le stress quotidien avec plus de calme.",
+      "On commence par les bases et on construit peu à peu une boîte à outils qui te ressemble.",
+      "Il s'agit de compétences du quotidien, pas de thérapie; si le stress pèse trop, un professionnel peut aider."
+     ],
+     "q": "Sur quoi aimerais-tu te sentir plus serein en ce moment ?",
+     "c": "Respire lentement une fois et dis-moi une chose qui allégerait ta journée."
+    },
+    "it": {
+     "t": "Benvenuto sul tuo percorso più sereno",
+     "g": "Scopri questo percorso di 365 giorni e come una piccola idea al giorno può alleviare lo stress quotidiano.",
+     "p": [
+      "Ogni giorno una breve lezione per affrontare lo stress quotidiano con più calma.",
+      "Partiamo dalle basi e costruiamo piano piano una cassetta degli attrezzi su misura per te.",
+      "Si parla di abilità quotidiane, non di terapia; se lo stress è pesante, un professionista può aiutare."
+     ],
+     "q": "Su cosa vorresti sentirti più sereno adesso?",
+     "c": "Fai un respiro lento e dimmi una cosa che renderebbe la giornata più leggera."
+    },
+    "pt": {
+     "t": "Bem-vindo ao teu caminho mais calmo",
+     "g": "Conhece este percurso de 365 dias e como uma pequena ideia por dia pode aliviar o stress do quotidiano.",
+     "p": [
+      "Cada dia traz uma lição curta para lidar com o stress diário com mais calma.",
+      "Começamos pelo básico e vamos construindo aos poucos a tua caixa de ferramentas pessoal.",
+      "Falamos de competências do dia a dia, não de terapia; se o stress for pesado, um profissional pode ajudar."
+     ],
+     "q": "Sobre o que gostarias de te sentir mais tranquilo neste momento?",
+     "c": "Respira devagar uma vez e diz-me uma coisa que tornaria o teu dia mais leve."
+    },
+    "pt_BR": {
+     "t": "Bem-vindo ao seu caminho mais calmo",
+     "g": "Conheça este caminho de 365 dias e como uma pequena ideia por dia pode aliviar o estresse do cotidiano.",
+     "p": [
+      "Cada dia traz uma lição curta para lidar com o estresse diário com mais calma.",
+      "Começamos pelo básico e vamos montando aos poucos a sua caixa de ferramentas pessoal.",
+      "Falamos de habilidades do dia a dia, não de terapia; se o estresse estiver pesado, um profissional pode ajudar."
+     ],
+     "q": "Sobre o que você gostaria de se sentir mais tranquilo agora?",
+     "c": "Respire devagar uma vez e me conte uma coisa que deixaria o seu dia mais leve."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What stress is",
+     "g": "Understand stress as the natural response of body and mind to demands and challenges.",
+     "p": [
+      "Stress is how your body and mind react when something asks a lot of you.",
+      "It is a normal reaction, not a flaw, and it shows up for good and bad events alike.",
+      "The goal is not zero stress but a relationship with it that feels manageable."
+     ],
+     "q": "When did you last feel the kind of pressure that made you alert?",
+     "c": "Name one demand today, big or small, that your body might be reacting to."
+    },
+    "de": {
+     "t": "Was Stress ist",
+     "g": "Verstehe Stress als natürliche Reaktion von Körper und Geist auf Anforderungen und Herausforderungen.",
+     "p": [
+      "Stress ist die Reaktion von Körper und Geist, wenn etwas viel von dir verlangt.",
+      "Er ist eine normale Reaktion, kein Makel, und tritt bei guten wie schlechten Ereignissen auf.",
+      "Das Ziel ist nicht null Stress, sondern ein Umgang damit, der sich machbar anfühlt."
+     ],
+     "q": "Wann hast du zuletzt einen Druck gespürt, der dich wach gemacht hat?",
+     "c": "Nenne eine Anforderung heute, groß oder klein, auf die dein Körper reagieren könnte."
+    },
+    "es": {
+     "t": "Qué es el estrés",
+     "g": "Entiende el estrés como la respuesta natural del cuerpo y la mente ante las exigencias y los desafíos.",
+     "p": [
+      "El estrés es la reacción de tu cuerpo y tu mente cuando algo te exige mucho.",
+      "Es una reacción normal, no un defecto, y aparece tanto con sucesos buenos como malos.",
+      "La meta no es cero estrés, sino una relación con él que resulte manejable."
+     ],
+     "q": "¿Cuándo sentiste por última vez una presión que te mantuvo alerta?",
+     "c": "Nombra una exigencia de hoy, grande o pequeña, a la que tu cuerpo podría reaccionar."
+    },
+    "fr": {
+     "t": "Ce qu'est le stress",
+     "g": "Comprends le stress comme la réponse naturelle du corps et de l'esprit aux exigences et aux défis.",
+     "p": [
+      "Le stress est la réaction de ton corps et de ton esprit quand on te demande beaucoup.",
+      "C'est une réaction normale, pas un défaut, présente pour les bons comme les mauvais événements.",
+      "Le but n'est pas zéro stress, mais un rapport au stress qui reste gérable."
+     ],
+     "q": "Quand as-tu ressenti pour la dernière fois une pression qui t'a rendu attentif ?",
+     "c": "Nomme une exigence d'aujourd'hui, grande ou petite, à laquelle ton corps réagit peut-être."
+    },
+    "it": {
+     "t": "Che cos'è lo stress",
+     "g": "Capisci lo stress come risposta naturale di corpo e mente a richieste e sfide.",
+     "p": [
+      "Lo stress è la reazione di corpo e mente quando qualcosa ti chiede molto.",
+      "È una reazione normale, non un difetto, e compare con eventi belli e brutti.",
+      "L'obiettivo non è zero stress, ma un rapporto con esso che sia gestibile."
+     ],
+     "q": "Quando hai sentito l'ultima volta una pressione che ti ha reso più vigile?",
+     "c": "Nomina una richiesta di oggi, grande o piccola, a cui il tuo corpo potrebbe reagire."
+    },
+    "pt": {
+     "t": "O que é o stress",
+     "g": "Compreende o stress como a resposta natural do corpo e da mente a exigências e desafios.",
+     "p": [
+      "O stress é a reação do teu corpo e da tua mente quando algo te exige muito.",
+      "É uma reação normal, não um defeito, e surge com acontecimentos bons e maus.",
+      "O objetivo não é zero stress, mas uma relação com ele que seja gerível."
+     ],
+     "q": "Quando sentiste pela última vez uma pressão que te deixou alerta?",
+     "c": "Nomeia uma exigência de hoje, grande ou pequena, a que o teu corpo possa reagir."
+    },
+    "pt_BR": {
+     "t": "O que é o estresse",
+     "g": "Entenda o estresse como a resposta natural do corpo e da mente a exigências e desafios.",
+     "p": [
+      "O estresse é a reação do seu corpo e da sua mente quando algo exige muito de você.",
+      "É uma reação normal, não um defeito, e aparece com acontecimentos bons e ruins.",
+      "O objetivo não é zero estresse, mas uma relação com ele que seja administrável."
+     ],
+     "q": "Quando foi a última vez que você sentiu uma pressão que o deixou alerta?",
+     "c": "Cite uma exigência de hoje, grande ou pequena, à qual seu corpo pode estar reagindo."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your stress snapshot",
+     "g": "Notice what feels heavy and what feels light in your life right now, without judging it.",
+     "p": [
+      "A snapshot is just a look at today: no grades, no right or wrong answers.",
+      "List a few areas such as work, home, health and free time, and notice how each feels.",
+      "Seeing both heavy and light parts shows you have resources already."
+     ],
+     "q": "Which area of your life feels lightest today, and why do you think so?",
+     "c": "Jot down one heavy thing and one light thing from today, with no judging."
+    },
+    "de": {
+     "t": "Dein Stress-Schnappschuss",
+     "g": "Nimm wahr, was sich gerade schwer und was leicht anfühlt, ohne zu urteilen.",
+     "p": [
+      "Ein Schnappschuss ist nur ein Blick auf heute: keine Noten, keine richtigen oder falschen Antworten.",
+      "Betrachte Bereiche wie Arbeit, Zuhause, Gesundheit und Freizeit und spüre, wie sich jeder anfühlt.",
+      "Wer schwere und leichte Teile sieht, erkennt, dass schon Ressourcen da sind."
+     ],
+     "q": "Welcher Lebensbereich fühlt sich heute am leichtesten an, und warum?",
+     "c": "Notiere eine schwere und eine leichte Sache von heute, ohne zu bewerten."
+    },
+    "es": {
+     "t": "Tu foto del estrés",
+     "g": "Observa qué se siente pesado y qué ligero en tu vida ahora, sin juzgarlo.",
+     "p": [
+      "Una foto es solo una mirada al hoy: sin notas, sin respuestas correctas o incorrectas.",
+      "Repasa áreas como trabajo, hogar, salud y tiempo libre y nota cómo se siente cada una.",
+      "Ver partes pesadas y ligeras muestra que ya cuentas con recursos."
+     ],
+     "q": "¿Qué área de tu vida se siente más ligera hoy y por qué crees que es así?",
+     "c": "Anota una cosa pesada y una ligera de hoy, sin juzgar."
+    },
+    "fr": {
+     "t": "Ton instantané du stress",
+     "g": "Repère ce qui te semble lourd et ce qui te semble léger en ce moment, sans juger.",
+     "p": [
+      "Un instantané est un simple regard sur aujourd'hui : pas de notes, pas de bonne ou mauvaise réponse.",
+      "Passe en revue le travail, la maison, la santé, les loisirs, et note ce que tu ressens pour chacun.",
+      "Voir les parties lourdes et légères montre que tu as déjà des ressources."
+     ],
+     "q": "Quel domaine de ta vie te semble le plus léger aujourd'hui, et pourquoi ?",
+     "c": "Note une chose lourde et une chose légère d'aujourd'hui, sans jugement."
+    },
+    "it": {
+     "t": "La tua istantanea dello stress",
+     "g": "Nota che cosa ti pesa e che cosa ti alleggerisce ora, senza giudicare.",
+     "p": [
+      "Un'istantanea è solo uno sguardo su oggi: niente voti, niente risposte giuste o sbagliate.",
+      "Passa in rassegna lavoro, casa, salute e tempo libero e senti come ciascuno ti fa stare.",
+      "Vedere sia le parti pesanti sia quelle leggere mostra che hai già delle risorse."
+     ],
+     "q": "Quale area della tua vita oggi è la più leggera, e perché secondo te?",
+     "c": "Scrivi una cosa pesante e una leggera di oggi, senza giudicare."
+    },
+    "pt": {
+     "t": "O teu retrato do stress",
+     "g": "Repara no que te pesa e no que te alivia neste momento, sem julgar.",
+     "p": [
+      "Um retrato é só um olhar sobre hoje: sem notas, sem respostas certas ou erradas.",
+      "Percorre áreas como trabalho, casa, saúde e tempo livre e repara como cada uma se sente.",
+      "Ver partes pesadas e leves mostra que já tens recursos."
+     ],
+     "q": "Que área da tua vida está mais leve hoje e porque achas que é assim?",
+     "c": "Escreve uma coisa pesada e uma leve de hoje, sem julgar."
+    },
+    "pt_BR": {
+     "t": "Seu retrato do estresse",
+     "g": "Perceba o que pesa e o que alivia na sua vida agora, sem julgar.",
+     "p": [
+      "Um retrato é só um olhar sobre hoje: sem notas, sem respostas certas ou erradas.",
+      "Passe por áreas como trabalho, casa, saúde e tempo livre e note como cada uma se sente.",
+      "Ver partes pesadas e leves mostra que você já tem recursos."
+     ],
+     "q": "Qual área da sua vida está mais leve hoje e por que você acha isso?",
+     "c": "Anote uma coisa pesada e uma leve de hoje, sem julgar."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The stress response",
+     "g": "Learn the fight-or-flight reaction in simple terms and why it once helped humans survive.",
+     "p": [
+      "When your brain senses a challenge, it prepares you to act: fight, flee or freeze.",
+      "Heart rate, breathing and muscle tension rise so you have energy ready.",
+      "This ancient system helped our ancestors, but it also fires for emails and traffic."
+     ],
+     "q": "When did your heart last beat faster before something that was not truly dangerous?",
+     "c": "Next time you feel a racing heart, whisper: my body is just getting ready."
+    },
+    "de": {
+     "t": "Die Stressreaktion",
+     "g": "Lerne die Kampf-oder-Flucht-Reaktion einfach erklärt und warum sie Menschen einst beim Überleben half.",
+     "p": [
+      "Spürt dein Gehirn eine Herausforderung, bereitet es dich vor: kämpfen, fliehen oder erstarren.",
+      "Herzschlag, Atmung und Muskelspannung steigen, damit Energie bereitsteht.",
+      "Dieses uralte System half unseren Vorfahren, springt aber auch bei E-Mails und Stau an."
+     ],
+     "q": "Wann schlug dein Herz zuletzt schneller vor etwas, das nicht wirklich gefährlich war?",
+     "c": "Spürst du Herzklopfen, flüstere: Mein Körper macht sich nur bereit."
+    },
+    "es": {
+     "t": "La respuesta al estrés",
+     "g": "Aprende la reacción de lucha o huida de forma sencilla y por qué ayudó a sobrevivir a los humanos.",
+     "p": [
+      "Cuando tu cerebro detecta un reto, te prepara para actuar: luchar, huir o paralizarte.",
+      "El pulso, la respiración y la tensión muscular suben para tener energía lista.",
+      "Este sistema antiguo ayudó a nuestros ancestros, pero también salta por correos y atascos."
+     ],
+     "q": "¿Cuándo te latió el corazón más rápido ante algo que no era realmente peligroso?",
+     "c": "La próxima vez que sientas el corazón acelerado, susurra: mi cuerpo solo se está preparando."
+    },
+    "fr": {
+     "t": "La réaction de stress",
+     "g": "Découvre simplement la réaction de combat ou fuite et pourquoi elle a aidé les humains à survivre.",
+     "p": [
+      "Quand ton cerveau perçoit un défi, il te prépare à agir : combattre, fuir ou se figer.",
+      "Le cœur, la respiration et les muscles s'activent pour avoir de l'énergie prête.",
+      "Ce système ancien a aidé nos ancêtres, mais il se déclenche aussi pour un mail ou un embouteillage."
+     ],
+     "q": "Quand ton cœur a-t-il battu plus vite face à quelque chose de pas vraiment dangereux ?",
+     "c": "La prochaine fois que ton cœur s'emballe, murmure : mon corps se prépare, c'est tout."
+    },
+    "it": {
+     "t": "La risposta allo stress",
+     "g": "Scopri in modo semplice la reazione di lotta o fuga e perché aiutò gli esseri umani a sopravvivere.",
+     "p": [
+      "Quando il cervello percepisce una sfida, ti prepara ad agire: lottare, fuggire o bloccarti.",
+      "Battito, respiro e tensione muscolare aumentano per avere energia pronta.",
+      "Questo sistema antico aiutò i nostri antenati, ma scatta anche per un'email o il traffico."
+     ],
+     "q": "Quando ti ha battuto più forte il cuore per qualcosa di non davvero pericoloso?",
+     "c": "Alla prossima tachicardia da agitazione, sussurra: il mio corpo si sta solo preparando."
+    },
+    "pt": {
+     "t": "A resposta ao stress",
+     "g": "Aprende a reação de luta ou fuga de forma simples e porque ajudou os humanos a sobreviver.",
+     "p": [
+      "Quando o cérebro deteta um desafio, prepara-te para agir: lutar, fugir ou ficar paralisado.",
+      "O ritmo cardíaco, a respiração e a tensão muscular sobem para haver energia pronta.",
+      "Este sistema antigo ajudou os nossos antepassados, mas dispara também por e-mails e trânsito."
+     ],
+     "q": "Quando é que o teu coração bateu mais depressa por algo que não era realmente perigoso?",
+     "c": "Da próxima vez que sentires o coração acelerado, sussurra: o meu corpo está só a preparar-se."
+    },
+    "pt_BR": {
+     "t": "A resposta ao estresse",
+     "g": "Aprenda a reação de luta ou fuga de forma simples e por que ela ajudou os humanos a sobreviver.",
+     "p": [
+      "Quando o cérebro percebe um desafio, ele prepara você para agir: lutar, fugir ou paralisar.",
+      "Batimentos, respiração e tensão muscular sobem para ter energia pronta.",
+      "Esse sistema antigo ajudou nossos ancestrais, mas também dispara por e-mails e trânsito."
+     ],
+     "q": "Quando seu coração bateu mais rápido por algo que não era realmente perigoso?",
+     "c": "Da próxima vez que sentir o coração acelerado, sussurre: meu corpo só está se preparando."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Short-term vs long-term stress",
+     "g": "See why brief stress can be useful and why constant pressure wears us down.",
+     "p": [
+      "Short-term stress passes once the challenge is over, and the body returns to rest.",
+      "Long-term stress keeps the alarm on, which can leave you tired and on edge.",
+      "Recovery moments between demands are what make stress manageable."
+     ],
+     "q": "Do you recover well after a busy day, or does the pressure follow you home?",
+     "c": "Plan one small recovery moment today, like five minutes without screens."
+    },
+    "de": {
+     "t": "Kurzzeit- und Dauerstress",
+     "g": "Erkenne, warum kurzer Stress nützlich sein kann und warum Dauerdruck uns auslaugt.",
+     "p": [
+      "Kurzer Stress vergeht, sobald die Herausforderung vorbei ist, und der Körper kommt zur Ruhe.",
+      "Dauerstress lässt den Alarm an, was müde und gereizt machen kann.",
+      "Erholungsmomente zwischen den Anforderungen machen Stress handhabbar."
+     ],
+     "q": "Erholst du dich nach einem vollen Tag gut, oder begleitet dich der Druck nach Hause?",
+     "c": "Plane heute einen kleinen Erholungsmoment, etwa fünf Minuten ohne Bildschirm."
+    },
+    "es": {
+     "t": "Estrés a corto y largo plazo",
+     "g": "Descubre por qué el estrés breve puede ser útil y por qué la presión constante desgasta.",
+     "p": [
+      "El estrés breve pasa cuando termina el reto y el cuerpo vuelve al descanso.",
+      "El estrés prolongado mantiene la alarma encendida y puede dejarte cansado y tenso.",
+      "Los momentos de recuperación entre exigencias hacen el estrés manejable."
+     ],
+     "q": "¿Te recuperas bien tras un día ocupado o la presión te sigue a casa?",
+     "c": "Planea hoy un pequeño momento de recuperación, como cinco minutos sin pantallas."
+    },
+    "fr": {
+     "t": "Stress court et stress durable",
+     "g": "Vois pourquoi un stress bref peut être utile et pourquoi la pression constante use.",
+     "p": [
+      "Le stress court passe quand le défi se termine et le corps retrouve le repos.",
+      "Le stress durable laisse l'alarme allumée, ce qui peut rendre fatigué et à fleur de peau.",
+      "Les moments de récupération entre les exigences rendent le stress gérable."
+     ],
+     "q": "Récupères-tu bien après une journée chargée, ou la pression te suit-elle à la maison ?",
+     "c": "Prévois aujourd'hui un petit moment de récupération, comme cinq minutes sans écran."
+    },
+    "it": {
+     "t": "Stress breve e stress prolungato",
+     "g": "Scopri perché lo stress breve può essere utile e perché la pressione continua logora.",
+     "p": [
+      "Lo stress breve passa quando la sfida finisce e il corpo torna a riposare.",
+      "Lo stress prolungato tiene l'allarme acceso e può lasciarti stanco e teso.",
+      "I momenti di recupero tra una richiesta e l'altra rendono lo stress gestibile."
+     ],
+     "q": "Ti riprendi bene dopo una giornata piena o la pressione ti segue a casa?",
+     "c": "Pianifica oggi un piccolo momento di recupero, come cinque minuti senza schermi."
+    },
+    "pt": {
+     "t": "Stress de curto e longo prazo",
+     "g": "Vê porque o stress breve pode ser útil e porque a pressão constante desgasta.",
+     "p": [
+      "O stress breve passa quando o desafio termina e o corpo volta ao descanso.",
+      "O stress prolongado mantém o alarme ligado e pode deixar-te cansado e tenso.",
+      "Os momentos de recuperação entre exigências tornam o stress gerível."
+     ],
+     "q": "Recuperas bem depois de um dia cheio ou a pressão acompanha-te até casa?",
+     "c": "Planeia hoje um pequeno momento de recuperação, como cinco minutos sem ecrãs."
+    },
+    "pt_BR": {
+     "t": "Estresse de curto e longo prazo",
+     "g": "Veja por que o estresse breve pode ser útil e por que a pressão constante desgasta.",
+     "p": [
+      "O estresse breve passa quando o desafio termina e o corpo volta ao descanso.",
+      "O estresse prolongado mantém o alarme ligado e pode deixar você cansado e tenso.",
+      "Os momentos de recuperação entre as exigências tornam o estresse administrável."
+     ],
+     "q": "Você se recupera bem depois de um dia cheio ou a pressão te acompanha até em casa?",
+     "c": "Planeje hoje um pequeno momento de recuperação, como cinco minutos sem telas."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Helpful stress",
+     "g": "Discover how a little pressure can sharpen focus and motivation before a challenge.",
+     "p": [
+      "A bit of tension before a test or talk can make you more alert and prepared.",
+      "Too little pressure feels flat, too much overwhelms; a middle zone helps most.",
+      "Calling nerves excitement can help you use that energy well."
+     ],
+     "q": "Can you remember a time when pressure actually helped you do well?",
+     "c": "Before your next task, say: this energy is here to help me."
+    },
+    "de": {
+     "t": "Hilfreicher Stress",
+     "g": "Entdecke, wie ein wenig Druck vor einer Aufgabe Konzentration und Motivation schärfen kann.",
+     "p": [
+      "Etwas Anspannung vor einer Prüfung oder einem Vortrag macht wacher und besser vorbereitet.",
+      "Zu wenig Druck wirkt flach, zu viel überfordert; eine mittlere Zone hilft am meisten.",
+      "Nervosität als Aufregung zu deuten kann helfen, die Energie gut zu nutzen."
+     ],
+     "q": "Erinnerst du dich an einen Moment, in dem Druck dir tatsächlich geholfen hat?",
+     "c": "Sag vor deiner nächsten Aufgabe: Diese Energie ist da, um mir zu helfen."
+    },
+    "es": {
+     "t": "El estrés útil",
+     "g": "Descubre cómo un poco de presión puede agudizar la concentración y la motivación ante un reto.",
+     "p": [
+      "Algo de tensión antes de un examen o una charla te hace más alerta y preparado.",
+      "Muy poca presión resulta apagada y demasiada abruma; una zona media ayuda más.",
+      "Llamar emoción a los nervios puede ayudarte a usar bien esa energía."
+     ],
+     "q": "¿Recuerdas alguna vez en que la presión realmente te ayudó a hacerlo bien?",
+     "c": "Antes de tu próxima tarea, di: esta energía está aquí para ayudarme."
+    },
+    "fr": {
+     "t": "Le stress utile",
+     "g": "Découvre comment un peu de pression peut aiguiser la concentration et la motivation avant un défi.",
+     "p": [
+      "Un peu de tension avant un examen ou une présentation rend plus alerte et mieux préparé.",
+      "Trop peu de pression est plat, trop est écrasant; une zone moyenne aide le plus.",
+      "Appeler tes nerfs de l'excitation peut t'aider à bien utiliser cette énergie."
+     ],
+     "q": "Te souviens-tu d'un moment où la pression t'a vraiment aidé à réussir ?",
+     "c": "Avant ta prochaine tâche, dis : cette énergie est là pour m'aider."
+    },
+    "it": {
+     "t": "Lo stress utile",
+     "g": "Scopri come un po' di pressione può affinare concentrazione e motivazione prima di una sfida.",
+     "p": [
+      "Un po' di tensione prima di un esame o un discorso ti rende più vigile e preparato.",
+      "Troppa poca pressione spegne, troppa travolge; una zona intermedia aiuta di più.",
+      "Chiamare entusiasmo il nervosismo può aiutarti a usare bene quell'energia."
+     ],
+     "q": "Ricordi un momento in cui la pressione ti ha davvero aiutato a fare bene?",
+     "c": "Prima del tuo prossimo compito, di': questa energia è qui per aiutarmi."
+    },
+    "pt": {
+     "t": "O stress útil",
+     "g": "Descobre como um pouco de pressão pode afinar a concentração e a motivação antes de um desafio.",
+     "p": [
+      "Alguma tensão antes de um teste ou apresentação deixa-te mais alerta e preparado.",
+      "Pouca pressão deixa tudo sem graça, demasiada sobrecarrega; uma zona média ajuda mais.",
+      "Chamar entusiasmo ao nervosismo pode ajudar-te a usar bem essa energia."
+     ],
+     "q": "Lembras-te de uma vez em que a pressão realmente te ajudou a correr bem?",
+     "c": "Antes da tua próxima tarefa, diz: esta energia está aqui para me ajudar."
+    },
+    "pt_BR": {
+     "t": "O estresse útil",
+     "g": "Descubra como um pouco de pressão pode aguçar o foco e a motivação antes de um desafio.",
+     "p": [
+      "Um pouco de tensão antes de uma prova ou apresentação deixa você mais alerta e preparado.",
+      "Pouca pressão deixa tudo sem graça, demais sobrecarrega; uma zona média ajuda mais.",
+      "Chamar o nervosismo de empolgação pode ajudar a usar bem essa energia."
+     ],
+     "q": "Você se lembra de uma vez em que a pressão realmente ajudou você a se sair bem?",
+     "c": "Antes da sua próxima tarefa, diga: essa energia está aqui para me ajudar."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Signs in the body",
+     "g": "Learn common physical clues of stress like tense shoulders, a fast heartbeat or shallow breathing.",
+     "p": [
+      "Stress often shows in the body first: tight shoulders, clenched jaw or an upset stomach.",
+      "Breathing may become fast and shallow without you noticing.",
+      "These signs are common and give you a helpful early warning."
+     ],
+     "q": "Where in your body do you usually feel stress first?",
+     "c": "Do a quick body scan now from head to toe and notice any tight spot."
+    },
+    "de": {
+     "t": "Zeichen im Körper",
+     "g": "Lerne typische körperliche Stresshinweise kennen: verspannte Schultern, schneller Herzschlag, flache Atmung.",
+     "p": [
+      "Stress zeigt sich oft zuerst im Körper: Schultern, zusammengebissene Zähne oder ein flaues Gefühl im Magen.",
+      "Die Atmung wird schnell und flach, ohne dass du es bemerkst.",
+      "Diese Zeichen sind häufig und geben dir eine hilfreiche Frühwarnung."
+     ],
+     "q": "Wo im Körper spürst du Stress normalerweise zuerst?",
+     "c": "Mache jetzt einen kurzen Körper-Scan von Kopf bis Fuß und bemerke jede enge Stelle."
+    },
+    "es": {
+     "t": "Señales en el cuerpo",
+     "g": "Aprende pistas físicas comunes del estrés: hombros tensos, latidos rápidos o respiración corta.",
+     "p": [
+      "El estrés suele notarse primero en el cuerpo: hombros tensos, mandíbula apretada o molestias de estómago.",
+      "La respiración puede volverse rápida y superficial sin que lo notes.",
+      "Estas señales son comunes y te dan un aviso temprano muy útil."
+     ],
+     "q": "¿En qué parte del cuerpo sueles notar el estrés primero?",
+     "c": "Haz ahora un escaneo rápido de cabeza a pies y fíjate en cualquier punto tenso."
+    },
+    "fr": {
+     "t": "Signes dans le corps",
+     "g": "Apprends les indices physiques courants du stress : épaules tendues, cœur rapide, respiration courte.",
+     "p": [
+      "Le stress se voit souvent d'abord dans le corps : épaules crispées, mâchoire serrée, ventre noué.",
+      "La respiration peut devenir rapide et courte sans que tu le remarques.",
+      "Ces signes sont courants et t'offrent un précieux signal d'alerte précoce."
+     ],
+     "q": "Où dans ton corps sens-tu le stress en premier ?",
+     "c": "Fais maintenant un rapide balayage corporel de la tête aux pieds et repère une zone tendue."
+    },
+    "it": {
+     "t": "Segnali nel corpo",
+     "g": "Impara gli indizi fisici comuni dello stress: spalle tese, battito veloce, respiro corto.",
+     "p": [
+      "Lo stress spesso si nota prima nel corpo: spalle rigide, mascella serrata o stomaco chiuso.",
+      "Il respiro può diventare rapido e superficiale senza che te ne accorga.",
+      "Questi segnali sono comuni e ti danno un utile avviso precoce."
+     ],
+     "q": "In quale parte del corpo senti lo stress per prima?",
+     "c": "Fai ora una rapida scansione del corpo dalla testa ai piedi e nota ogni punto teso."
+    },
+    "pt": {
+     "t": "Sinais no corpo",
+     "g": "Aprende pistas físicas comuns do stress: ombros tensos, batimento rápido ou respiração curta.",
+     "p": [
+      "O stress nota-se muitas vezes primeiro no corpo: ombros tensos, maxilar cerrado ou estômago apertado.",
+      "A respiração pode ficar rápida e superficial sem dares por isso.",
+      "Estes sinais são comuns e dão-te um aviso precoce muito útil."
+     ],
+     "q": "Em que parte do corpo costumas sentir o stress primeiro?",
+     "c": "Faz agora uma varredura rápida do corpo, da cabeça aos pés, e repara em qualquer ponto tenso."
+    },
+    "pt_BR": {
+     "t": "Sinais no corpo",
+     "g": "Aprenda pistas físicas comuns do estresse: ombros tensos, coração acelerado ou respiração curta.",
+     "p": [
+      "O estresse muitas vezes aparece primeiro no corpo: ombros tensos, mandíbula travada ou estômago apertado.",
+      "A respiração pode ficar rápida e superficial sem você perceber.",
+      "Esses sinais são comuns e dão a você um aviso precoce bem útil."
+     ],
+     "q": "Em que parte do corpo você costuma sentir o estresse primeiro?",
+     "c": "Faça agora uma varredura rápida do corpo, da cabeça aos pés, e note qualquer ponto tenso."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Signs in the mind",
+     "g": "Recognise racing thoughts, forgetfulness and trouble focusing as everyday stress signals.",
+     "p": [
+      "A busy mind that cannot switch off is a very common sign of stress.",
+      "Forgetting small things or struggling to concentrate can simply mean your mind is overloaded.",
+      "Noticing these signs kindly is the first step to easing them."
+     ],
+     "q": "Have you noticed your thoughts speeding up or your memory slipping when busy?",
+     "c": "Write down one thing on your mind to give your head a little room."
+    },
+    "de": {
+     "t": "Zeichen im Kopf",
+     "g": "Erkenne Gedankenkarussell, Vergesslichkeit und Konzentrationsprobleme als alltägliche Stresssignale.",
+     "p": [
+      "Ein vollgepackter Kopf, der nicht abschalten kann, ist ein sehr häufiges Stresszeichen.",
+      "Kleinigkeiten vergessen oder sich schlecht konzentrieren kann einfach Überlastung bedeuten.",
+      "Diese Zeichen freundlich zu bemerken ist der erste Schritt, sie zu lindern."
+     ],
+     "q": "Hast du bemerkt, dass deine Gedanken rasen oder dein Gedächtnis nachlässt, wenn viel los ist?",
+     "c": "Schreibe eine Sache auf, die dich beschäftigt, damit dein Kopf etwas Platz bekommt."
+    },
+    "es": {
+     "t": "Señales en la mente",
+     "g": "Reconoce los pensamientos acelerados, el olvido y la dificultad para concentrarte como señales cotidianas.",
+     "p": [
+      "Una mente ocupada que no logra apagarse es un signo muy común de estrés.",
+      "Olvidar cosas pequeñas o costarte concentrarte puede significar solo que tu mente está sobrecargada.",
+      "Notar estas señales con amabilidad es el primer paso para aliviarlas."
+     ],
+     "q": "¿Has notado que tus pensamientos se aceleran o que olvidas cosas cuando estás ocupado?",
+     "c": "Anota una cosa que tengas en la cabeza para darle un poco de espacio."
+    },
+    "fr": {
+     "t": "Signes dans l'esprit",
+     "g": "Reconnais les pensées qui s'emballent, les oublis et les difficultés de concentration comme signaux courants.",
+     "p": [
+      "Un esprit très occupé qui ne s'éteint pas est un signe de stress très courant.",
+      "Oublier de petites choses ou avoir du mal à se concentrer peut juste signifier une surcharge mentale.",
+      "Remarquer ces signes avec bienveillance est le premier pas pour les apaiser."
+     ],
+     "q": "As-tu remarqué que tes pensées s'accélèrent ou que ta mémoire flanche quand tu es occupé ?",
+     "c": "Note une chose qui t'occupe l'esprit pour libérer un peu de place."
+    },
+    "it": {
+     "t": "Segnali nella mente",
+     "g": "Riconosci pensieri che corrono, dimenticanze e difficoltà di concentrazione come segnali quotidiani.",
+     "p": [
+      "Una mente affollata che non si spegne è un segno di stress molto comune.",
+      "Dimenticare piccole cose o faticare a concentrarsi può voler dire solo mente sovraccarica.",
+      "Notare questi segnali con gentilezza è il primo passo per alleviarli."
+     ],
+     "q": "Hai notato che i pensieri accelerano o la memoria cala quando sei molto impegnato?",
+     "c": "Scrivi una cosa che hai in testa per liberare un po' di spazio."
+    },
+    "pt": {
+     "t": "Sinais na mente",
+     "g": "Reconhece pensamentos acelerados, esquecimentos e falta de concentração como sinais do dia a dia.",
+     "p": [
+      "Uma mente ocupada que não desliga é um sinal de stress muito comum.",
+      "Esquecer pequenas coisas ou ter dificuldade em concentrar pode significar só sobrecarga mental.",
+      "Reparar nestes sinais com gentileza é o primeiro passo para os aliviar."
+     ],
+     "q": "Já reparaste que os pensamentos aceleram ou a memória falha quando estás ocupado?",
+     "c": "Escreve uma coisa que tens na cabeça para libertar um pouco de espaço."
+    },
+    "pt_BR": {
+     "t": "Sinais na mente",
+     "g": "Reconheça pensamentos acelerados, esquecimentos e falta de foco como sinais comuns do dia a dia.",
+     "p": [
+      "Uma mente ocupada que não desliga é um sinal de estresse muito comum.",
+      "Esquecer pequenas coisas ou ter dificuldade de se concentrar pode significar só sobrecarga mental.",
+      "Perceber esses sinais com gentileza é o primeiro passo para aliviá-los."
+     ],
+     "q": "Você já notou os pensamentos acelerarem ou a memória falhar quando está ocupado?",
+     "c": "Anote uma coisa que está na sua cabeça para liberar um pouco de espaço."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Signs in behaviour",
+     "g": "Notice changes like snapping at people, rushing or skipping meals when under pressure.",
+     "p": [
+      "Under pressure we may become shorter-tempered, hurry more or forget to eat.",
+      "Some people withdraw, others stay busy non-stop; both can be stress signals.",
+      "Spotting a change in what you do helps you step in earlier and more kindly."
+     ],
+     "q": "What do you tend to do differently when you are under pressure?",
+     "c": "Today, notice one habit that shifts when you feel rushed and just observe it."
+    },
+    "de": {
+     "t": "Zeichen im Verhalten",
+     "g": "Bemerke Veränderungen wie Gereiztheit, Hetze oder ausgelassene Mahlzeiten unter Druck.",
+     "p": [
+      "Unter Druck werden wir kurz angebunden, hetzen mehr oder vergessen zu essen.",
+      "Manche ziehen sich zurück, andere bleiben dauernd beschäftigt; beides kann Stress zeigen.",
+      "Eine Verhaltensänderung zu erkennen hilft dir, früher und freundlicher gegenzusteuern."
+     ],
+     "q": "Was machst du unter Druck typischerweise anders als sonst?",
+     "c": "Beobachte heute eine Gewohnheit, die sich bei Eile verändert, und schau einfach nur hin."
+    },
+    "es": {
+     "t": "Señales en la conducta",
+     "g": "Nota cambios como contestar mal, ir con prisa o saltarte comidas cuando hay presión.",
+     "p": [
+      "Bajo presión podemos volvernos más bruscos, ir con más prisa o olvidar comer.",
+      "Unos se retraen y otros no paran de hacer cosas; ambos pueden ser señales de estrés.",
+      "Detectar un cambio en lo que haces te ayuda a intervenir antes y con más cariño."
+     ],
+     "q": "¿Qué sueles hacer distinto cuando estás bajo presión?",
+     "c": "Hoy fíjate en un hábito que cambia cuando vas con prisa y solo obsérvalo."
+    },
+    "fr": {
+     "t": "Signes dans le comportement",
+     "g": "Repère des changements comme s'énerver, se presser ou sauter des repas sous pression.",
+     "p": [
+      "Sous pression, on peut devenir plus sec, se hâter davantage ou oublier de manger.",
+      "Certains se replient, d'autres s'agitent sans cesse; les deux peuvent signaler du stress.",
+      "Repérer un changement dans ce que tu fais t'aide à agir plus tôt et avec douceur."
+     ],
+     "q": "Que fais-tu différemment quand tu es sous pression ?",
+     "c": "Aujourd'hui, repère une habitude qui change quand tu es pressé et observe-la simplement."
+    },
+    "it": {
+     "t": "Segnali nel comportamento",
+     "g": "Nota cambiamenti come rispondere male, avere fretta o saltare i pasti sotto pressione.",
+     "p": [
+      "Sotto pressione possiamo diventare più bruschi, avere più fretta o dimenticare di mangiare.",
+      "Alcuni si ritirano, altri restano sempre in movimento; entrambi possono essere segnali di stress.",
+      "Cogliere un cambiamento in ciò che fai ti aiuta a intervenire prima e con gentilezza."
+     ],
+     "q": "Che cosa fai di diverso quando sei sotto pressione?",
+     "c": "Oggi nota un'abitudine che cambia quando hai fretta e osservala soltanto."
+    },
+    "pt": {
+     "t": "Sinais no comportamento",
+     "g": "Repara em mudanças como responder mal, andar à pressa ou saltar refeições sob pressão.",
+     "p": [
+      "Sob pressão podemos ficar mais secos, andar mais apressados ou esquecer de comer.",
+      "Alguns retraem-se, outros não param; ambos podem ser sinais de stress.",
+      "Detetar uma mudança no que fazes ajuda-te a intervir mais cedo e com mais carinho."
+     ],
+     "q": "O que costumas fazer de diferente quando estás sob pressão?",
+     "c": "Hoje repara num hábito que muda quando andas à pressa e apenas observa."
+    },
+    "pt_BR": {
+     "t": "Sinais no comportamento",
+     "g": "Note mudanças como responder atravessado, correr demais ou pular refeições sob pressão.",
+     "p": [
+      "Sob pressão podemos ficar mais ríspidos, andar mais apressados ou esquecer de comer.",
+      "Alguns se isolam, outros não param; ambos podem ser sinais de estresse.",
+      "Perceber uma mudança no que você faz ajuda a agir mais cedo e com mais carinho."
+     ],
+     "q": "O que você costuma fazer diferente quando está sob pressão?",
+     "c": "Hoje note um hábito que muda quando você está apressado e apenas observe."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your personal stress signals",
+     "g": "Identify the first signs that tell you your own stress is rising.",
+     "p": [
+      "Everyone has an early-warning pattern: a body clue, a thought or a behaviour.",
+      "Your first sign is often the same each time, so it is easy to learn.",
+      "Catching it early means small tools work, before stress grows big."
+     ],
+     "q": "What is usually the very first sign that your stress is rising?",
+     "c": "Write your top three personal signals on a note you can see daily."
+    },
+    "de": {
+     "t": "Deine persönlichen Stresssignale",
+     "g": "Finde die ersten Zeichen, die dir zeigen, dass dein Stress steigt.",
+     "p": [
+      "Jeder hat ein Frühwarnmuster: ein Körperzeichen, einen Gedanken oder ein Verhalten.",
+      "Dein erstes Zeichen ist oft jedes Mal dasselbe und lässt sich daher leicht lernen.",
+      "Wer früh reagiert, kommt mit kleinen Mitteln aus, bevor der Stress groß wird."
+     ],
+     "q": "Was ist meist das allererste Zeichen, dass dein Stress steigt?",
+     "c": "Schreibe deine drei wichtigsten Signale auf einen Zettel, den du täglich siehst."
+    },
+    "es": {
+     "t": "Tus señales personales de estrés",
+     "g": "Identifica las primeras señales que te indican que tu estrés está subiendo.",
+     "p": [
+      "Todos tenemos un patrón de alerta temprana: una señal corporal, un pensamiento o una conducta.",
+      "Tu primera señal suele ser la misma cada vez, así que es fácil aprenderla.",
+      "Detectarla a tiempo permite usar herramientas pequeñas antes de que el estrés crezca."
+     ],
+     "q": "¿Cuál suele ser la primera señal de que tu estrés está subiendo?",
+     "c": "Escribe tus tres señales principales en una nota que veas a diario."
+    },
+    "fr": {
+     "t": "Tes signaux de stress personnels",
+     "g": "Identifie les premiers signes qui t'indiquent que ton stress monte.",
+     "p": [
+      "Chacun a son schéma d'alerte précoce : un signe corporel, une pensée ou un comportement.",
+      "Ton premier signe est souvent le même à chaque fois, donc facile à apprendre.",
+      "Le repérer tôt permet d'utiliser de petits outils avant que le stress ne grossisse."
+     ],
+     "q": "Quel est généralement le tout premier signe que ton stress monte ?",
+     "c": "Écris tes trois signaux principaux sur un mot que tu vois chaque jour."
+    },
+    "it": {
+     "t": "I tuoi segnali personali di stress",
+     "g": "Individua i primi segnali che ti dicono che il tuo stress sta salendo.",
+     "p": [
+      "Ognuno ha uno schema di allerta precoce: un segnale del corpo, un pensiero o un comportamento.",
+      "Il tuo primo segnale è spesso lo stesso ogni volta, quindi è facile da imparare.",
+      "Coglierlo presto permette di usare piccoli strumenti prima che lo stress cresca."
+     ],
+     "q": "Qual è di solito il primissimo segnale che il tuo stress sta salendo?",
+     "c": "Scrivi i tuoi tre segnali principali su un biglietto che vedi ogni giorno."
+    },
+    "pt": {
+     "t": "Os teus sinais pessoais de stress",
+     "g": "Identifica os primeiros sinais que te dizem que o teu stress está a subir.",
+     "p": [
+      "Cada pessoa tem um padrão de alerta precoce: um sinal no corpo, um pensamento ou um comportamento.",
+      "O teu primeiro sinal costuma ser sempre o mesmo, por isso é fácil de aprender.",
+      "Detetá-lo cedo permite usar pequenas ferramentas antes de o stress crescer."
+     ],
+     "q": "Qual costuma ser o primeiríssimo sinal de que o teu stress está a subir?",
+     "c": "Escreve os teus três sinais principais num papel que vejas todos os dias."
+    },
+    "pt_BR": {
+     "t": "Seus sinais pessoais de estresse",
+     "g": "Identifique os primeiros sinais que dizem que o seu estresse está subindo.",
+     "p": [
+      "Cada pessoa tem um padrão de alerta precoce: um sinal no corpo, um pensamento ou um comportamento.",
+      "Seu primeiro sinal costuma ser sempre o mesmo, então é fácil de aprender.",
+      "Percebê-lo cedo permite usar pequenas ferramentas antes de o estresse crescer."
+     ],
+     "q": "Qual costuma ser o primeiríssimo sinal de que seu estresse está subindo?",
+     "c": "Escreva seus três sinais principais num bilhete que você veja todo dia."
+    }
+   }
+  }
+ ]
+}

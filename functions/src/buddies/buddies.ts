@@ -30,7 +30,7 @@ import { loadConfig } from '../ai/router/config';
 import { eligibleChain, generate, translate } from '../ai/router/router';
 import { guessLanguage } from './langDetect';
 import {
-  COURSE_FORMAT, CourseState, Question, courseBlock, currentCourse, getCourse, getLesson, getQuestions, introBubbles,
+  COURSE_FORMAT, CourseState, Question, courseBlock, courseDays, currentCourse, getCourse, getLesson, getQuestions, introBubbles,
   nextCourseState, pickQuestions,
 } from './content';
 import { applyReplyRules, fitContext, graphemeLength, graphemes } from '../ai/router/rules';
@@ -499,13 +499,14 @@ export async function handleSendBuddyMessage(uid: string, data: any) {
     const memory: MemoryFact[] = Array.isArray(d.memory) ? d.memory : [];
     // Today's lesson + 3 unasked questions from the bank (best effort: a
     // topic without content yet simply chats as before).
-    const course = currentCourse(d.course, now);
+    const maxDay = courseDays(await getCourse(buddy.topic).catch(() => null));
+    const course = currentCourse(d.course, now, maxDay);
     const [lesson, bank] = await Promise.all([
       getLesson(buddy.topic, course.day).catch(() => null),
       getQuestions(buddy.topic).catch(() => [] as Question[]),
     ]);
     const candidates = pickQuestions(bank, buddy.language, lesson?.lv ?? 'beginner', course.askedQ, 3, now % 100_003);
-    const cblock = courseBlock(buddy, course, lesson, candidates);
+    const cblock = courseBlock(buddy, course, lesson, candidates, maxDay);
     const system = `${systemPrompt(buddy, r, memory, String(d.summary ?? ''))}${cblock ? `\n\n${cblock}` : ''}\n\n` +
       `${replyFormatBlock(r.maxOutputChars ?? 200)}${cblock ? `\n${COURSE_FORMAT}` : ''}`;
     const out = await generate('text_buddies', { system, messages: turns, json: true },
@@ -970,7 +971,7 @@ async function checkInOne(doc: admin.firestore.QueryDocumentSnapshot, r: Capabil
   const p = checkInPrompt(buddy, r, Array.isArray(d.memory) ? d.memory : [], String(d.summary ?? ''), turns,
     (nowMs - lastUser) / 3600_000, Number(d.unansweredCheckIns) || 0);
   // A gentle invitation to today's lesson when the topic has its path.
-  const course = currentCourse(d.course, nowMs);
+  const course = currentCourse(d.course, nowMs, courseDays(await getCourse(buddy.topic).catch(() => null)));
   const lesson = await getLesson(buddy.topic, course.day).catch(() => null);
   const lt = lesson?.i18n?.[buddy.language];
   if (lt && !course.doneOn) p.user += `\nIf it fits, invite them to today's lesson (day ${course.day}): ${lt.t}.`;

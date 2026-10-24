@@ -1,0 +1,835 @@
+{
+ "topic": "make_friends",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing activities you enjoy",
+     "g": "Pick groups built around real interests so conversation flows naturally.",
+     "p": [
+      "When you enjoy the activity, talking becomes easy because you share a focus.",
+      "List three things you love and look for groups around them.",
+      "Try something once; you can always choose a different group later."
+     ],
+     "q": "What activity makes you lose track of time?",
+     "c": "Choose one interest and search for a group or class near you."
+    },
+    "de": {
+     "t": "Aktivitäten wählen, die dir Freude machen",
+     "g": "Du wählst Gruppen rund um echte Interessen, damit Gespräche von selbst fließen.",
+     "p": [
+      "Wenn dir die Aktivität Spaß macht, fällt Reden leicht, weil ihr denselben Fokus habt.",
+      "Liste drei Dinge auf, die du liebst, und suche Gruppen dazu.",
+      "Probiere etwas einmal aus; du kannst später immer eine andere Gruppe wählen."
+     ],
+     "q": "Bei welcher Aktivität vergisst du die Zeit?",
+     "c": "Wähle ein Interesse und suche eine Gruppe oder einen Kurs in deiner Nähe."
+    },
+    "es": {
+     "t": "Elige actividades que disfrutes",
+     "g": "Elige grupos basados en intereses reales para que la conversación fluya de forma natural.",
+     "p": [
+      "Si disfrutas la actividad, hablar resulta fácil porque comparten un mismo foco.",
+      "Anota tres cosas que amas y busca grupos sobre ellas.",
+      "Prueba algo una vez; siempre puedes elegir otro grupo después."
+     ],
+     "q": "¿Qué actividad te hace perder la noción del tiempo?",
+     "c": "Elige un interés y busca un grupo o clase cerca de ti."
+    },
+    "fr": {
+     "t": "Choisir des activités que tu aimes",
+     "g": "Choisis des groupes autour de vrais centres d'intérêt pour que la conversation coule naturellement.",
+     "p": [
+      "Quand tu aimes l'activité, parler devient facile car vous partagez un même centre d'attention.",
+      "Liste trois choses que tu adores et cherche des groupes autour d'elles.",
+      "Essaie une fois ; tu pourras toujours choisir un autre groupe ensuite."
+     ],
+     "q": "Quelle activité te fait perdre la notion du temps ?",
+     "c": "Choisis un intérêt et cherche un groupe ou un cours près de chez toi."
+    },
+    "it": {
+     "t": "Scegliere attività che ti piacciono",
+     "g": "Scegli gruppi basati su interessi veri così la conversazione scorre naturale.",
+     "p": [
+      "Quando ti piace l'attività, parlare è facile perché condividete lo stesso focus.",
+      "Elenca tre cose che ami e cerca gruppi su di esse.",
+      "Prova una volta; potrai sempre scegliere un altro gruppo dopo."
+     ],
+     "q": "Quale attività ti fa perdere la nozione del tempo?",
+     "c": "Scegli un interesse e cerca un gruppo o un corso vicino a te."
+    },
+    "pt": {
+     "t": "Escolhe atividades de que gostas",
+     "g": "Escolhe grupos baseados em interesses reais para a conversa fluir naturalmente.",
+     "p": [
+      "Quando gostas da atividade, falar fica fácil porque partilham o mesmo foco.",
+      "Lista três coisas de que gostas e procura grupos sobre elas.",
+      "Experimenta uma vez; podes sempre escolher outro grupo mais tarde."
+     ],
+     "q": "Que atividade te faz perder a noção do tempo?",
+     "c": "Escolhe um interesse e procura um grupo ou aula perto de ti."
+    },
+    "pt_BR": {
+     "t": "Escolhendo atividades de que você gosta",
+     "g": "Escolha grupos baseados em interesses reais para a conversa fluir naturalmente.",
+     "p": [
+      "Quando você gosta da atividade, conversar fica fácil porque vocês dividem o mesmo foco.",
+      "Liste três coisas que você ama e procure grupos sobre elas.",
+      "Experimente uma vez; você sempre pode escolher outro grupo depois."
+     ],
+     "q": "Que atividade faz você perder a noção do tempo?",
+     "c": "Escolha um interesse e procure um grupo ou aula perto de você."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hobby clubs and classes",
+     "g": "Use cooking, dance, art or language classes as ready-made friend circles.",
+     "p": [
+      "Classes bring the same people together week after week.",
+      "Working on something together gives you easy things to talk about.",
+      "Arrive a little early and chat with whoever is nearby."
+     ],
+     "q": "Which class would be fun to try with new people?",
+     "c": "Sign up for, or ask about, one hobby class or club this week."
+    },
+    "de": {
+     "t": "Hobbyclubs und Kurse",
+     "g": "Du nutzt Koch-, Tanz-, Kunst- oder Sprachkurse als fertige Freundeskreise.",
+     "p": [
+      "Kurse bringen jede Woche dieselben Menschen zusammen.",
+      "Gemeinsam an etwas zu arbeiten liefert leichte Gesprächsthemen.",
+      "Komm etwas früher und sprich mit denen, die in der Nähe sind."
+     ],
+     "q": "Welcher Kurs würde dir mit neuen Leuten Spaß machen?",
+     "c": "Melde dich diese Woche für einen Hobbykurs oder Club an oder frag nach."
+    },
+    "es": {
+     "t": "Clubes de aficiones y clases",
+     "g": "Usa clases de cocina, baile, arte o idiomas como círculos de amigos ya hechos.",
+     "p": [
+      "Las clases reúnen a las mismas personas semana tras semana.",
+      "Trabajar juntos en algo te da temas de conversación fáciles.",
+      "Llega un poco antes y charla con quien esté cerca."
+     ],
+     "q": "¿Qué clase sería divertida con gente nueva?",
+     "c": "Apúntate o pregunta por un club o clase de afición esta semana."
+    },
+    "fr": {
+     "t": "Clubs de loisirs et cours",
+     "g": "Utilise cours de cuisine, de danse, d'art ou de langues comme cercles d'amis tout prêts.",
+     "p": [
+      "Les cours réunissent les mêmes personnes semaine après semaine.",
+      "Travailler ensemble sur quelque chose donne des sujets de discussion faciles.",
+      "Arrive un peu en avance et discute avec les personnes proches."
+     ],
+     "q": "Quel cours serait sympa à essayer avec de nouvelles personnes ?",
+     "c": "Inscris-toi ou renseigne-toi sur un club ou un cours de loisir cette semaine."
+    },
+    "it": {
+     "t": "Club di hobby e corsi",
+     "g": "Usa corsi di cucina, danza, arte o lingue come cerchie di amici già pronte.",
+     "p": [
+      "I corsi riuniscono le stesse persone settimana dopo settimana.",
+      "Lavorare insieme a qualcosa offre argomenti di conversazione facili.",
+      "Arriva un po' prima e chiacchiera con chi è vicino."
+     ],
+     "q": "Quale corso sarebbe divertente provare con persone nuove?",
+     "c": "Iscriviti o informati su un club o corso di hobby questa settimana."
+    },
+    "pt": {
+     "t": "Clubes de passatempos e aulas",
+     "g": "Usa aulas de culinária, dança, arte ou línguas como círculos de amigos já prontos.",
+     "p": [
+      "As aulas juntam as mesmas pessoas semana após semana.",
+      "Trabalhar em conjunto dá-te temas de conversa fáceis.",
+      "Chega um pouco mais cedo e conversa com quem estiver perto."
+     ],
+     "q": "Que aula seria divertida com pessoas novas?",
+     "c": "Inscreve-te ou pergunta por um clube ou aula de passatempo esta semana."
+    },
+    "pt_BR": {
+     "t": "Clubes de hobby e aulas",
+     "g": "Use aulas de culinária, dança, arte ou idiomas como círculos de amigos prontos.",
+     "p": [
+      "As aulas reúnem as mesmas pessoas semana após semana.",
+      "Trabalhar junto em algo dá assuntos fáceis de conversa.",
+      "Chegue um pouco mais cedo e converse com quem estiver perto."
+     ],
+     "q": "Que aula seria divertida com gente nova?",
+     "c": "Inscreva-se ou pergunte sobre um clube ou aula de hobby esta semana."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sports and running groups",
+     "g": "Team games and running clubs mix exercise with easy bonding.",
+     "p": [
+      "Moving together gives you a shared goal and plenty of natural chat.",
+      "Many groups welcome all levels, so ask about beginner sessions.",
+      "Warm up and stay within your limits; safe fun comes first."
+     ],
+     "q": "What sport or movement do you enjoy, or would like to try?",
+     "c": "Look up one beginner-friendly sports or walking group in your area."
+    },
+    "de": {
+     "t": "Sport- und Laufgruppen",
+     "g": "Mannschaftsspiele und Laufclubs verbinden Bewegung mit leichtem Kennenlernen.",
+     "p": [
+      "Gemeinsame Bewegung gibt dir ein Ziel und viel natürlichen Gesprächsstoff.",
+      "Viele Gruppen heißen alle Levels willkommen, frag nach Einsteigerterminen.",
+      "Wärm dich auf und bleib in deinen Grenzen; sicherer Spaß kommt zuerst."
+     ],
+     "q": "Welchen Sport oder welche Bewegung magst du oder möchtest du probieren?",
+     "c": "Suche eine einsteigerfreundliche Sport- oder Wandergruppe in deiner Gegend."
+    },
+    "es": {
+     "t": "Grupos deportivos y de correr",
+     "g": "Los juegos en equipo y los clubes de running unen ejercicio con amistad fácil.",
+     "p": [
+      "Moverse juntos da una meta común y mucha charla natural.",
+      "Muchos grupos aceptan todos los niveles, así que pregunta por sesiones de principiantes.",
+      "Calienta y respeta tus límites; la diversión segura va primero."
+     ],
+     "q": "¿Qué deporte o movimiento disfrutas o te gustaría probar?",
+     "c": "Busca un grupo deportivo o de caminatas para principiantes en tu zona."
+    },
+    "fr": {
+     "t": "Groupes de sport et de course",
+     "g": "Les sports d'équipe et clubs de course mêlent exercice et rapprochement facile.",
+     "p": [
+      "Bouger ensemble donne un but commun et beaucoup de discussions naturelles.",
+      "Beaucoup de groupes acceptent tous les niveaux, demande des séances débutants.",
+      "Échauffe-toi et reste dans tes limites ; le plaisir en sécurité passe d'abord."
+     ],
+     "q": "Quel sport ou mouvement aimes-tu, ou voudrais-tu essayer ?",
+     "c": "Cherche un groupe de sport ou de marche pour débutants dans ta région."
+    },
+    "it": {
+     "t": "Gruppi sportivi e di corsa",
+     "g": "Giochi di squadra e club di corsa uniscono esercizio e amicizia facile.",
+     "p": [
+      "Muoversi insieme dà un obiettivo comune e molte chiacchiere naturali.",
+      "Molti gruppi accolgono tutti i livelli, quindi chiedi delle sessioni per principianti.",
+      "Fai riscaldamento e resta nei tuoi limiti; il divertimento sicuro viene prima."
+     ],
+     "q": "Quale sport o movimento ti piace o vorresti provare?",
+     "c": "Cerca un gruppo sportivo o di camminate adatto ai principianti nella tua zona."
+    },
+    "pt": {
+     "t": "Grupos de desporto e corrida",
+     "g": "Jogos de equipa e clubes de corrida juntam exercício e convívio fácil.",
+     "p": [
+      "Mover-se em conjunto dá um objetivo comum e muita conversa natural.",
+      "Muitos grupos aceitam todos os níveis, por isso pergunta por sessões de iniciantes.",
+      "Aquece e respeita os teus limites; a diversão segura vem primeiro."
+     ],
+     "q": "Que desporto ou movimento gostas ou gostarias de experimentar?",
+     "c": "Procura um grupo de desporto ou caminhada para iniciantes na tua zona."
+    },
+    "pt_BR": {
+     "t": "Grupos de esporte e corrida",
+     "g": "Jogos em equipe e clubes de corrida unem exercício e convivência fácil.",
+     "p": [
+      "Se mexer junto dá um objetivo comum e muito papo natural.",
+      "Muitos grupos aceitam todos os níveis, então pergunte por turmas de iniciantes.",
+      "Aqueça e respeite seus limites; diversão segura vem primeiro."
+     ],
+     "q": "Que esporte ou movimento você curte ou gostaria de experimentar?",
+     "c": "Procure um grupo de esporte ou caminhada para iniciantes na sua região."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Volunteering to meet people",
+     "g": "Helping a cause together builds trust and a shared purpose.",
+     "p": [
+      "Volunteers share values, which makes starting a chat simple.",
+      "Tasks like sorting, planting or serving give your hands something to do while you talk.",
+      "Choose well-known, organised groups and keep to public or supervised places."
+     ],
+     "q": "What cause would feel meaningful to you?",
+     "c": "Look up one local volunteering opportunity and note when it takes place."
+    },
+    "de": {
+     "t": "Ehrenamt, um Menschen zu treffen",
+     "g": "Gemeinsam für eine Sache zu helfen schafft Vertrauen und ein gemeinsames Ziel.",
+     "p": [
+      "Freiwillige teilen Werte, das macht den Gesprächsbeginn einfach.",
+      "Aufgaben wie Sortieren, Pflanzen oder Ausgeben beschäftigen die Hände, während ihr redet.",
+      "Wähle bekannte, organisierte Gruppen und bleib an öffentlichen oder betreuten Orten."
+     ],
+     "q": "Welche Sache wäre für dich sinnvoll?",
+     "c": "Suche eine lokale Möglichkeit zum Ehrenamt und notiere, wann sie stattfindet."
+    },
+    "es": {
+     "t": "Voluntariado para conocer gente",
+     "g": "Ayudar juntos a una causa crea confianza y un propósito compartido.",
+     "p": [
+      "Los voluntarios comparten valores, lo que facilita empezar a conversar.",
+      "Tareas como clasificar, plantar o servir ocupan las manos mientras hablas.",
+      "Elige grupos conocidos y organizados y mantente en lugares públicos o supervisados."
+     ],
+     "q": "¿Qué causa sería significativa para ti?",
+     "c": "Busca una oportunidad de voluntariado local y anota cuándo es."
+    },
+    "fr": {
+     "t": "Le bénévolat pour rencontrer des gens",
+     "g": "Aider une cause ensemble crée de la confiance et un but commun.",
+     "p": [
+      "Les bénévoles partagent des valeurs, ce qui facilite le début d'une discussion.",
+      "Trier, planter ou servir occupe les mains pendant que vous parlez.",
+      "Choisis des associations connues et organisées et reste dans des lieux publics ou encadrés."
+     ],
+     "q": "Quelle cause aurait du sens pour toi ?",
+     "c": "Cherche une occasion de bénévolat locale et note quand elle a lieu."
+    },
+    "it": {
+     "t": "Volontariato per conoscere persone",
+     "g": "Aiutare insieme una causa crea fiducia e uno scopo comune.",
+     "p": [
+      "I volontari condividono valori, il che rende facile iniziare a parlare.",
+      "Compiti come smistare, piantare o servire occupano le mani mentre si chiacchiera.",
+      "Scegli gruppi noti e organizzati e resta in luoghi pubblici o supervisionati."
+     ],
+     "q": "Quale causa sarebbe significativa per te?",
+     "c": "Cerca un'opportunità di volontariato locale e segna quando si svolge."
+    },
+    "pt": {
+     "t": "Voluntariado para conhecer pessoas",
+     "g": "Ajudar juntos uma causa cria confiança e um propósito comum.",
+     "p": [
+      "Os voluntários partilham valores, o que facilita começar a conversa.",
+      "Tarefas como separar, plantar ou servir ocupam as mãos enquanto falas.",
+      "Escolhe grupos conhecidos e organizados e fica em locais públicos ou supervisionados."
+     ],
+     "q": "Que causa seria significativa para ti?",
+     "c": "Procura uma oportunidade de voluntariado local e anota quando acontece."
+    },
+    "pt_BR": {
+     "t": "Voluntariado para conhecer pessoas",
+     "g": "Ajudar uma causa juntos cria confiança e um propósito em comum.",
+     "p": [
+      "Voluntários compartilham valores, o que facilita começar a conversa.",
+      "Tarefas como separar, plantar ou servir ocupam as mãos enquanto você conversa.",
+      "Escolha grupos conhecidos e organizados e fique em lugares públicos ou supervisionados."
+     ],
+     "q": "Que causa seria significativa para você?",
+     "c": "Procure uma oportunidade de voluntariado local e anote quando acontece."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Language exchanges",
+     "g": "Practise a language and meet locals and newcomers at the same time.",
+     "p": [
+      "Each person helps the other, so nobody feels like a burden.",
+      "Mistakes are welcome, and laughing together builds friendship.",
+      "Meet in a cafe or a public event and split the time between languages."
+     ],
+     "q": "Which language would you love to practise with a friend?",
+     "c": "Find one language exchange event or group, or greet someone in their language."
+    },
+    "de": {
+     "t": "Sprachaustausch",
+     "g": "Du übst eine Sprache und lernst gleichzeitig Einheimische und Neuankömmlinge kennen.",
+     "p": [
+      "Jeder hilft dem anderen, niemand fühlt sich als Last.",
+      "Fehler sind willkommen, und gemeinsames Lachen verbindet.",
+      "Triff euch im Café oder bei einer öffentlichen Veranstaltung und teilt die Zeit zwischen den Sprachen."
+     ],
+     "q": "Welche Sprache würdest du gern mit einem Freund üben?",
+     "c": "Finde eine Sprachaustausch-Veranstaltung oder -Gruppe, oder grüße jemanden in seiner Sprache."
+    },
+    "es": {
+     "t": "Intercambios de idiomas",
+     "g": "Practica un idioma y conoce a gente local y recién llegada a la vez.",
+     "p": [
+      "Cada persona ayuda a la otra, así que nadie se siente una carga.",
+      "Los errores son bienvenidos y reírse juntos crea amistad.",
+      "Queda en un café o en un evento público y reparte el tiempo entre los idiomas."
+     ],
+     "q": "¿Qué idioma te encantaría practicar con un amigo?",
+     "c": "Encuentra un evento o grupo de intercambio de idiomas, o saluda a alguien en su idioma."
+    },
+    "fr": {
+     "t": "Échanges linguistiques",
+     "g": "Pratique une langue et rencontre des locaux et des nouveaux arrivants en même temps.",
+     "p": [
+      "Chacun aide l'autre, donc personne ne se sent un poids.",
+      "Les erreurs sont les bienvenues et rire ensemble crée l'amitié.",
+      "Retrouvez-vous dans un café ou lors d'un événement public et partagez le temps entre les langues."
+     ],
+     "q": "Quelle langue aimerais-tu pratiquer avec un ami ?",
+     "c": "Trouve un événement ou groupe d'échange linguistique, ou salue quelqu'un dans sa langue."
+    },
+    "it": {
+     "t": "Scambi linguistici",
+     "g": "Pratica una lingua e conosci persone del posto e nuovi arrivati allo stesso tempo.",
+     "p": [
+      "Ognuno aiuta l'altro, quindi nessuno si sente un peso.",
+      "Gli errori sono benvenuti e ridere insieme crea amicizia.",
+      "Incontratevi in un bar o a un evento pubblico e dividete il tempo tra le lingue."
+     ],
+     "q": "Quale lingua ti piacerebbe praticare con un amico?",
+     "c": "Trova un evento o gruppo di scambio linguistico, o saluta qualcuno nella sua lingua."
+    },
+    "pt": {
+     "t": "Intercâmbios de línguas",
+     "g": "Pratica uma língua e conhece pessoas locais e recém-chegadas ao mesmo tempo.",
+     "p": [
+      "Cada pessoa ajuda a outra, por isso ninguém se sente um peso.",
+      "Os erros são bem-vindos e rir juntos cria amizade.",
+      "Encontrem-se num café ou num evento público e dividam o tempo entre as línguas."
+     ],
+     "q": "Que língua gostarias de praticar com um amigo?",
+     "c": "Encontra um evento ou grupo de intercâmbio de línguas, ou cumprimenta alguém na sua língua."
+    },
+    "pt_BR": {
+     "t": "Intercâmbios de idiomas",
+     "g": "Pratique um idioma e conheça pessoas locais e recém-chegadas ao mesmo tempo.",
+     "p": [
+      "Cada pessoa ajuda a outra, então ninguém se sente um peso.",
+      "Erros são bem-vindos e rir junto cria amizade.",
+      "Encontrem-se num café ou num evento público e dividam o tempo entre os idiomas."
+     ],
+     "q": "Que idioma você adoraria praticar com um amigo?",
+     "c": "Encontre um evento ou grupo de intercâmbio de idiomas, ou cumprimente alguém no idioma dele."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Using friendship apps wisely",
+     "g": "Learn how apps for finding friends work and how to write a friendly profile.",
+     "p": [
+      "Choose a clear photo and a short bio with two or three real interests.",
+      "Say that you are looking for friendship so expectations are clear.",
+      "Share only what you are comfortable with; keep your address and finances private."
+     ],
+     "q": "What would you put in your bio to show who you are?",
+     "c": "Write a three-line friendly bio, using no private data like address or workplace."
+    },
+    "de": {
+     "t": "Freundschafts-Apps klug nutzen",
+     "g": "Du lernst, wie Apps zum Freundefinden funktionieren und wie du ein freundliches Profil schreibst.",
+     "p": [
+      "Wähle ein klares Foto und eine kurze Bio mit zwei, drei echten Interessen.",
+      "Sag, dass du Freundschaft suchst, damit die Erwartungen klar sind.",
+      "Teile nur, was dir angenehm ist; Adresse und Finanzen bleiben privat."
+     ],
+     "q": "Was würdest du in deine Bio schreiben, um zu zeigen, wer du bist?",
+     "c": "Schreibe eine freundliche Bio in drei Zeilen, ohne private Daten wie Adresse oder Arbeitsplatz."
+    },
+    "es": {
+     "t": "Usar bien las apps de amistad",
+     "g": "Aprende cómo funcionan las apps para hacer amigos y cómo escribir un perfil amable.",
+     "p": [
+      "Elige una foto clara y una bio corta con dos o tres intereses reales.",
+      "Di que buscas amistad para que las expectativas sean claras.",
+      "Comparte solo lo que te resulte cómodo; mantén privados tu dirección y tus finanzas."
+     ],
+     "q": "¿Qué pondrías en tu bio para mostrar cómo eres?",
+     "c": "Escribe una bio amable de tres líneas, sin datos privados como dirección o trabajo."
+    },
+    "fr": {
+     "t": "Bien utiliser les applis d'amitié",
+     "g": "Apprends comment fonctionnent les applis pour se faire des amis et comment rédiger un profil sympa.",
+     "p": [
+      "Choisis une photo nette et une courte bio avec deux ou trois vrais centres d'intérêt.",
+      "Dis que tu cherches de l'amitié pour que les attentes soient claires.",
+      "Ne partage que ce qui te met à l'aise ; garde adresse et finances privées."
+     ],
+     "q": "Que mettrais-tu dans ta bio pour montrer qui tu es ?",
+     "c": "Écris une bio sympa de trois lignes, sans données privées comme l'adresse ou le lieu de travail."
+    },
+    "it": {
+     "t": "Usare con saggezza le app di amicizia",
+     "g": "Impara come funzionano le app per trovare amici e come scrivere un profilo simpatico.",
+     "p": [
+      "Scegli una foto chiara e una breve bio con due o tre interessi veri.",
+      "Dì che cerchi amicizia così le aspettative sono chiare.",
+      "Condividi solo ciò che ti mette a tuo agio; tieni privati indirizzo e finanze."
+     ],
+     "q": "Cosa metteresti nella bio per mostrare chi sei?",
+     "c": "Scrivi una bio simpatica di tre righe, senza dati privati come indirizzo o lavoro."
+    },
+    "pt": {
+     "t": "Usar bem as apps de amizade",
+     "g": "Aprende como funcionam as apps para fazer amigos e como escrever um perfil simpático.",
+     "p": [
+      "Escolhe uma foto nítida e uma bio curta com dois ou três interesses reais.",
+      "Diz que procuras amizade para as expectativas serem claras.",
+      "Partilha só o que te deixar à vontade; mantém privados a morada e as finanças."
+     ],
+     "q": "O que porias na tua bio para mostrar quem és?",
+     "c": "Escreve uma bio simpática de três linhas, sem dados privados como morada ou local de trabalho."
+    },
+    "pt_BR": {
+     "t": "Usando bem os apps de amizade",
+     "g": "Aprenda como funcionam os apps para fazer amigos e como escrever um perfil simpático.",
+     "p": [
+      "Escolha uma foto nítida e uma bio curta com dois ou três interesses reais.",
+      "Diga que procura amizade para as expectativas ficarem claras.",
+      "Compartilhe só o que for confortável; mantenha privados o endereço e as finanças."
+     ],
+     "q": "O que você poria na sua bio para mostrar quem você é?",
+     "c": "Escreva uma bio simpática de três linhas, sem dados privados como endereço ou local de trabalho."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing a great first message",
+     "g": "Mention a shared interest and ask a light question to start the chat.",
+     "p": [
+      "Start with something specific from their profile instead of just 'hi'.",
+      "Keep it short, friendly and easy to answer.",
+      "If there is no reply, move on kindly; it is rarely personal."
+     ],
+     "q": "What shared interest could you open a message with?",
+     "c": "Draft a two-sentence first message to a hobby group member and read it aloud."
+    },
+    "de": {
+     "t": "Eine gelungene erste Nachricht",
+     "g": "Du erwähnst ein gemeinsames Interesse und stellst eine leichte Frage, um das Gespräch zu beginnen.",
+     "p": [
+      "Beginne mit etwas Konkretem aus dem Profil statt nur mit Hallo.",
+      "Halte sie kurz, freundlich und leicht zu beantworten.",
+      "Bleibt eine Antwort aus, geh freundlich weiter; es ist selten persönlich."
+     ],
+     "q": "Mit welchem gemeinsamen Interesse könntest du eine Nachricht beginnen?",
+     "c": "Entwirf eine erste Nachricht in zwei Sätzen an ein Mitglied einer Hobbygruppe und lies sie laut vor."
+    },
+    "es": {
+     "t": "Escribir un buen primer mensaje",
+     "g": "Menciona un interés compartido y haz una pregunta ligera para empezar la charla.",
+     "p": [
+      "Empieza con algo concreto de su perfil en vez de solo un hola.",
+      "Que sea corto, amable y fácil de responder.",
+      "Si no hay respuesta, sigue adelante con amabilidad; rara vez es algo personal."
+     ],
+     "q": "¿Con qué interés compartido podrías abrir un mensaje?",
+     "c": "Redacta un primer mensaje de dos frases para un miembro de un grupo de afición y léelo en voz alta."
+    },
+    "fr": {
+     "t": "Écrire un bon premier message",
+     "g": "Mentionne un centre d'intérêt commun et pose une question légère pour lancer l'échange.",
+     "p": [
+      "Commence par un détail précis de son profil plutôt qu'un simple salut.",
+      "Reste bref, aimable et facile à répondre.",
+      "Sans réponse, passe à autre chose avec bienveillance ; c'est rarement personnel."
+     ],
+     "q": "Avec quel intérêt commun pourrais-tu ouvrir un message ?",
+     "c": "Rédige un premier message de deux phrases pour un membre d'un groupe de loisirs et lis-le à voix haute."
+    },
+    "it": {
+     "t": "Scrivere un ottimo primo messaggio",
+     "g": "Cita un interesse comune e fai una domanda leggera per iniziare la chat.",
+     "p": [
+      "Parti da qualcosa di specifico del suo profilo invece di un semplice ciao.",
+      "Tienilo breve, gentile e facile da rispondere.",
+      "Se non risponde, vai avanti con gentilezza; raramente è una cosa personale."
+     ],
+     "q": "Con quale interesse comune potresti aprire un messaggio?",
+     "c": "Scrivi un primo messaggio di due frasi a un membro di un gruppo di hobby e leggilo ad alta voce."
+    },
+    "pt": {
+     "t": "Escrever uma boa primeira mensagem",
+     "g": "Menciona um interesse comum e faz uma pergunta leve para começar a conversa.",
+     "p": [
+      "Começa com algo concreto do perfil em vez de só um olá.",
+      "Mantém-na curta, simpática e fácil de responder.",
+      "Se não houver resposta, segue em frente com simpatia; raramente é pessoal."
+     ],
+     "q": "Com que interesse comum podias abrir uma mensagem?",
+     "c": "Escreve uma primeira mensagem de duas frases para um membro de um grupo de passatempo e lê-a em voz alta."
+    },
+    "pt_BR": {
+     "t": "Escrevendo uma ótima primeira mensagem",
+     "g": "Mencione um interesse em comum e faça uma pergunta leve para começar o papo.",
+     "p": [
+      "Comece com algo específico do perfil em vez de só um oi.",
+      "Mantenha curta, simpática e fácil de responder.",
+      "Se não houver resposta, siga em frente com gentileza; raramente é algo pessoal."
+     ],
+     "q": "Com que interesse em comum você poderia abrir uma mensagem?",
+     "c": "Escreva uma primeira mensagem de duas frases para um membro de um grupo de hobby e leia em voz alta."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Safe first meetups",
+     "g": "Meet in public places, tell someone your plans and arrange your own transport.",
+     "p": [
+      "Choose a busy public place such as a cafe, park or event in daylight.",
+      "Tell a friend or family member where you are going and when you will be back.",
+      "Travel on your own and never share your home address or money with a new contact."
+     ],
+     "q": "What would make you feel safe meeting a new friend?",
+     "c": "Write a safety checklist with three points for your next meetup."
+    },
+    "de": {
+     "t": "Sichere erste Treffen",
+     "g": "Triff dich an öffentlichen Orten, sag jemandem Bescheid und organisiere deine eigene Anreise.",
+     "p": [
+      "Wähle einen belebten öffentlichen Ort wie Café, Park oder Event bei Tageslicht.",
+      "Sag einem Freund oder Familienmitglied, wohin du gehst und wann du zurück bist.",
+      "Reise selbstständig an und gib einem neuen Kontakt nie deine Adresse oder Geld."
+     ],
+     "q": "Was würde dir bei einem Treffen mit einem neuen Freund Sicherheit geben?",
+     "c": "Schreibe eine Sicherheits-Checkliste mit drei Punkten für dein nächstes Treffen."
+    },
+    "es": {
+     "t": "Primeras citas de amistad seguras",
+     "g": "Queda en lugares públicos, avisa a alguien de tus planes y organiza tu propio transporte.",
+     "p": [
+      "Elige un lugar público concurrido, como un café, un parque o un evento de día.",
+      "Cuéntale a un amigo o familiar adónde vas y cuándo volverás.",
+      "Ve por tu cuenta y nunca des tu dirección ni dinero a un contacto nuevo."
+     ],
+     "q": "¿Qué te haría sentir seguro al quedar con un amigo nuevo?",
+     "c": "Escribe una lista de seguridad con tres puntos para tu próximo encuentro."
+    },
+    "fr": {
+     "t": "Premières rencontres en sécurité",
+     "g": "Retrouve-toi dans des lieux publics, préviens quelqu'un et organise ton propre transport.",
+     "p": [
+      "Choisis un lieu public animé, comme un café, un parc ou un événement de jour.",
+      "Dis à un ami ou à un proche où tu vas et quand tu rentres.",
+      "Viens par tes propres moyens et ne donne jamais ton adresse ni d'argent à un nouveau contact."
+     ],
+     "q": "Qu'est-ce qui te rassurerait pour rencontrer un nouvel ami ?",
+     "c": "Écris une liste de sécurité de trois points pour ta prochaine rencontre."
+    },
+    "it": {
+     "t": "Primi incontri in sicurezza",
+     "g": "Incontrati in luoghi pubblici, avvisa qualcuno dei tuoi piani e organizza il tuo trasporto.",
+     "p": [
+      "Scegli un luogo pubblico affollato, come un bar, un parco o un evento di giorno.",
+      "Dì a un amico o a un familiare dove vai e quando torni.",
+      "Vai con i tuoi mezzi e non dare mai il tuo indirizzo o denaro a un nuovo contatto."
+     ],
+     "q": "Cosa ti farebbe sentire sicuro incontrando un nuovo amico?",
+     "c": "Scrivi una lista di sicurezza con tre punti per il prossimo incontro."
+    },
+    "pt": {
+     "t": "Primeiros encontros em segurança",
+     "g": "Encontra-te em locais públicos, avisa alguém dos teus planos e organiza o teu transporte.",
+     "p": [
+      "Escolhe um local público movimentado, como um café, um parque ou um evento de dia.",
+      "Diz a um amigo ou familiar para onde vais e quando voltas.",
+      "Vai pelos teus meios e nunca dês a morada ou dinheiro a um contacto novo."
+     ],
+     "q": "O que te faria sentir seguro ao encontrar um novo amigo?",
+     "c": "Escreve uma lista de segurança com três pontos para o teu próximo encontro."
+    },
+    "pt_BR": {
+     "t": "Primeiros encontros em segurança",
+     "g": "Encontre-se em lugares públicos, avise alguém dos seus planos e organize seu próprio transporte.",
+     "p": [
+      "Escolha um lugar público movimentado, como um café, um parque ou um evento de dia.",
+      "Diga a um amigo ou familiar para onde vai e quando volta.",
+      "Vá por conta própria e nunca dê seu endereço ou dinheiro a um contato novo."
+     ],
+     "q": "O que faria você se sentir seguro ao encontrar um novo amigo?",
+     "c": "Escreva uma lista de segurança com três pontos para o seu próximo encontro."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Trusting your instincts",
+     "g": "Notice warning signs, set limits and feel free to leave any situation.",
+     "p": [
+      "If something feels off, it is fine to pause, say no or leave.",
+      "Warning signs include pressure, secrecy and requests for money or personal data.",
+      "You never owe anyone an explanation for protecting yourself."
+     ],
+     "q": "Have you ever felt uneasy and listened to your gut?",
+     "c": "Practise saying aloud: 'Thanks, but I need to go now.' Keep it kind and firm."
+    },
+    "de": {
+     "t": "Auf dein Bauchgefühl hören",
+     "g": "Du erkennst Warnzeichen, setzt Grenzen und darfst jede Situation verlassen.",
+     "p": [
+      "Fühlt sich etwas komisch an, darfst du pausieren, Nein sagen oder gehen.",
+      "Warnzeichen sind Druck, Geheimniskrämerei und Bitten um Geld oder persönliche Daten.",
+      "Du schuldest niemandem eine Erklärung dafür, dass du dich schützt."
+     ],
+     "q": "Hast du dich schon mal unwohl gefühlt und auf dein Bauchgefühl gehört?",
+     "c": "Übe laut den Satz: Danke, aber ich muss jetzt los. Freundlich und klar."
+    },
+    "es": {
+     "t": "Confiar en tu instinto",
+     "g": "Reconoce señales de alerta, pon límites y siéntete libre de irte de cualquier situación.",
+     "p": [
+      "Si algo no te cuadra, puedes pausar, decir que no o irte.",
+      "Son señales de alerta la presión, el secretismo y los pedidos de dinero o datos personales.",
+      "No le debes explicaciones a nadie por protegerte."
+     ],
+     "q": "¿Alguna vez te sentiste incómodo y escuchaste a tu intuición?",
+     "c": "Practica en voz alta: Gracias, pero me tengo que ir ya. Con amabilidad y firmeza."
+    },
+    "fr": {
+     "t": "Faire confiance à ton instinct",
+     "g": "Repère les signaux d'alerte, pose des limites et sens-toi libre de quitter toute situation.",
+     "p": [
+      "Si quelque chose te dérange, tu peux faire une pause, dire non ou partir.",
+      "Signaux d'alerte : pression, secret et demandes d'argent ou de données personnelles.",
+      "Tu ne dois d'explication à personne pour te protéger."
+     ],
+     "q": "T'est-il déjà arrivé de te sentir mal à l'aise et d'écouter ton instinct ?",
+     "c": "Entraîne-toi à dire à voix haute : Merci, mais je dois y aller. Gentil et ferme."
+    },
+    "it": {
+     "t": "Fidarsi del proprio istinto",
+     "g": "Riconosci i segnali d'allarme, poni limiti e senti di essere libero di lasciare ogni situazione.",
+     "p": [
+      "Se qualcosa non ti convince, puoi fare una pausa, dire no o andartene.",
+      "Segnali d'allarme sono pressione, segretezza e richieste di denaro o dati personali.",
+      "Non devi spiegazioni a nessuno per proteggerti."
+     ],
+     "q": "Ti è mai capitato di sentirti a disagio e di ascoltare l'istinto?",
+     "c": "Esercitati a dire ad alta voce: Grazie, ma ora devo andare. Con gentilezza e fermezza."
+    },
+    "pt": {
+     "t": "Confiar no teu instinto",
+     "g": "Reconhece sinais de alerta, define limites e sente-te livre para sair de qualquer situação.",
+     "p": [
+      "Se algo te parecer estranho, podes pausar, dizer não ou ir-te embora.",
+      "Sinais de alerta são pressão, segredo e pedidos de dinheiro ou dados pessoais.",
+      "Não deves explicações a ninguém por te protegeres."
+     ],
+     "q": "Já te sentiste desconfortável e ouviste o teu instinto?",
+     "c": "Treina dizer em voz alta: Obrigado, mas tenho de ir agora. Com simpatia e firmeza."
+    },
+    "pt_BR": {
+     "t": "Confiando no seu instinto",
+     "g": "Reconheça sinais de alerta, defina limites e sinta-se livre para sair de qualquer situação.",
+     "p": [
+      "Se algo parecer estranho, você pode pausar, dizer não ou ir embora.",
+      "Sinais de alerta são pressão, segredo e pedidos de dinheiro ou dados pessoais.",
+      "Você não deve explicações a ninguém por se proteger."
+     ],
+     "q": "Você já se sentiu desconfortável e ouviu sua intuição?",
+     "c": "Treine dizer em voz alta: Obrigado, mas preciso ir agora. Com gentileza e firmeza."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your first month",
+     "g": "Look back at your openers, places and first contacts, and celebrate your progress.",
+     "p": [
+      "Remember each hello, chat and place you tried this month.",
+      "Notice what felt easiest and do more of it.",
+      "Small progress counts, and kindness to yourself keeps you going."
+     ],
+     "q": "What was your proudest moment this month?",
+     "c": "Write three wins from this month and one goal for the next."
+    },
+    "de": {
+     "t": "Rückblick: dein erster Monat",
+     "g": "Du blickst auf Einstiege, Orte und erste Kontakte zurück und feierst deinen Fortschritt.",
+     "p": [
+      "Erinnere dich an jedes Hallo, Gespräch und jeden Ort, den du diesen Monat probiert hast.",
+      "Achte darauf, was am leichtesten war, und mach davon mehr.",
+      "Kleine Fortschritte zählen, und Freundlichkeit zu dir selbst hält dich in Bewegung."
+     ],
+     "q": "Was war dein stolzester Moment in diesem Monat?",
+     "c": "Schreibe drei Erfolge dieses Monats und ein Ziel für den nächsten auf."
+    },
+    "es": {
+     "t": "Repaso: tu primer mes",
+     "g": "Mira atrás tus saludos, lugares y primeros contactos, y celebra tu progreso.",
+     "p": [
+      "Recuerda cada saludo, charla y lugar que probaste este mes.",
+      "Fíjate en lo que te resultó más fácil y haz más de eso.",
+      "Los pequeños avances cuentan, y ser amable contigo te mantiene en marcha."
+     ],
+     "q": "¿Cuál fue tu momento de mayor orgullo este mes?",
+     "c": "Escribe tres logros de este mes y una meta para el siguiente."
+    },
+    "fr": {
+     "t": "Bilan : ton premier mois",
+     "g": "Regarde en arrière tes accroches, lieux et premiers contacts, et fête tes progrès.",
+     "p": [
+      "Souviens-toi de chaque bonjour, discussion et lieu essayé ce mois-ci.",
+      "Repère ce qui t'a paru le plus facile et fais-en davantage.",
+      "Les petits progrès comptent, et la bienveillance envers toi te fait avancer."
+     ],
+     "q": "Quel a été ton moment le plus fier ce mois-ci ?",
+     "c": "Écris trois réussites de ce mois et un objectif pour le suivant."
+    },
+    "it": {
+     "t": "Ripasso: il tuo primo mese",
+     "g": "Guarda indietro a saluti, luoghi e primi contatti, e festeggia i tuoi progressi.",
+     "p": [
+      "Ricorda ogni saluto, chiacchierata e posto provato questo mese.",
+      "Nota cosa ti è sembrato più facile e fanne di più.",
+      "I piccoli progressi contano e la gentilezza verso te stesso ti fa andare avanti."
+     ],
+     "q": "Qual è stato il tuo momento più orgoglioso questo mese?",
+     "c": "Scrivi tre successi di questo mese e un obiettivo per il prossimo."
+    },
+    "pt": {
+     "t": "Revisão: o teu primeiro mês",
+     "g": "Olha para trás para os teus cumprimentos, locais e primeiros contactos e celebra o teu progresso.",
+     "p": [
+      "Recorda cada olá, conversa e local que experimentaste este mês.",
+      "Repara no que foi mais fácil e faz mais disso.",
+      "Os pequenos progressos contam e ser simpático contigo mantém-te a andar."
+     ],
+     "q": "Qual foi o teu momento de maior orgulho este mês?",
+     "c": "Escreve três conquistas deste mês e um objetivo para o seguinte."
+    },
+    "pt_BR": {
+     "t": "Revisão: seu primeiro mês",
+     "g": "Olhe para trás para seus cumprimentos, lugares e primeiros contatos e comemore seu progresso.",
+     "p": [
+      "Lembre cada oi, papo e lugar que você experimentou este mês.",
+      "Repare no que foi mais fácil e faça mais disso.",
+      "Pequenos progressos contam e ser gentil consigo mesmo mantém você em frente."
+     ],
+     "q": "Qual foi o seu momento de maior orgulho este mês?",
+     "c": "Escreva três conquistas deste mês e uma meta para o próximo."
+    }
+   }
+  }
+ ]
+}

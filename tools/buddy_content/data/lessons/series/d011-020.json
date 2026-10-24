@@ -1,0 +1,835 @@
+{
+ "topic": "series",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Soap operas and daily serials",
+     "g": "Learn why never-ending stories broadcast almost daily have such loyal fans.",
+     "p": [
+      "Soaps air many times a week and have no planned final ending.",
+      "They follow families and neighbours through love, rivalry and surprise.",
+      "Viewers feel they live alongside the characters for years, even decades."
+     ],
+     "q": "Do you know a family member who followed a soap every day?",
+     "c": "Watch one soap scene and note how it recaps the story for newcomers."
+    },
+    "de": {
+     "t": "Seifenopern und Dauerserien",
+     "g": "Lerne, warum endlose, fast täglich gesendete Geschichten so treue Fans haben.",
+     "p": [
+      "Soaps laufen mehrmals pro Woche und haben kein geplantes Ende.",
+      "Sie begleiten Familien und Nachbarn durch Liebe, Rivalität und Überraschungen.",
+      "Zuschauer fühlen sich jahrelang, ja jahrzehntelang mit den Figuren verbunden."
+     ],
+     "q": "Kennst du jemanden in der Familie, der täglich eine Soap verfolgt hat?",
+     "c": "Sieh eine Soap-Szene und achte darauf, wie sie Neulingen die Handlung erklärt."
+    },
+    "es": {
+     "t": "Culebrones y series diarias",
+     "g": "Descubre por qué las historias interminables de emisión casi diaria tienen fans tan fieles.",
+     "p": [
+      "Las telenovelas largas se emiten varias veces por semana y no tienen final previsto.",
+      "Siguen a familias y vecinos entre amores, rivalidades y sorpresas.",
+      "El público siente que vive junto a los personajes durante años, incluso décadas."
+     ],
+     "q": "¿Conoces a alguien de tu familia que siguiera un culebrón cada día?",
+     "c": "Mira una escena de un culebrón y fíjate en cómo resume la historia a los nuevos."
+    },
+    "fr": {
+     "t": "Feuilletons et séries quotidiennes",
+     "g": "Découvre pourquoi les histoires sans fin diffusées presque chaque jour ont des fans si fidèles.",
+     "p": [
+      "Les feuilletons passent plusieurs fois par semaine, sans fin prévue.",
+      "Ils suivent des familles et des voisins entre amours, rivalités et surprises.",
+      "Les spectateurs ont l'impression de vivre avec les personnages pendant des années."
+     ],
+     "q": "Connais-tu quelqu'un dans ta famille qui suivait un feuilleton chaque jour ?",
+     "c": "Regarde une scène de feuilleton et vois comment elle résume l'histoire aux nouveaux."
+    },
+    "it": {
+     "t": "Soap opera e serial quotidiani",
+     "g": "Scopri perché le storie senza fine trasmesse quasi ogni giorno hanno fan così fedeli.",
+     "p": [
+      "Le soap vanno in onda più volte a settimana e non hanno un finale previsto.",
+      "Seguono famiglie e vicini tra amori, rivalità e sorprese.",
+      "Gli spettatori sentono di vivere accanto ai personaggi per anni, anche decenni."
+     ],
+     "q": "Conosci qualcuno in famiglia che seguiva una soap ogni giorno?",
+     "c": "Guarda una scena di una soap e nota come riassume la storia per i nuovi."
+    },
+    "pt": {
+     "t": "Novelas longas e séries diárias",
+     "g": "Descobre porque é que histórias sem fim, emitidas quase todos os dias, têm fãs tão fiéis.",
+     "p": [
+      "As soaps passam várias vezes por semana e não têm final previsto.",
+      "Acompanham famílias e vizinhos entre amores, rivalidades e surpresas.",
+      "O público sente que vive ao lado das personagens durante anos, até décadas."
+     ],
+     "q": "Conheces alguém na família que seguisse uma soap todos os dias?",
+     "c": "Vê uma cena de uma soap e repara como resume a história aos recém-chegados."
+    },
+    "pt_BR": {
+     "t": "Soap operas e seriados diários",
+     "g": "Descubra por que histórias sem fim, exibidas quase todo dia, têm fãs tão fiéis.",
+     "p": [
+      "As soap operas passam várias vezes por semana e não têm final previsto.",
+      "Acompanham famílias e vizinhos entre amores, rivalidades e surpresas.",
+      "O público sente que vive ao lado dos personagens por anos, até décadas."
+     ],
+     "q": "Você conhece alguém da família que acompanhava uma soap todo dia?",
+     "c": "Veja uma cena de soap e note como ela resume a história para quem chegou agora."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The telenovela",
+     "g": "Meet Latin American serials that tell one big story with a clear ending.",
+     "p": [
+      "A telenovela usually runs for months and ends when its main story is resolved.",
+      "Big emotions, family secrets and a central love story drive the plot.",
+      "Telenovelas are watched by millions and exported to many countries."
+     ],
+     "q": "Have you ever watched a telenovela, or heard one discussed at home?",
+     "c": "Write a three-line telenovela plot with a hero, a secret and a happy ending."
+    },
+    "de": {
+     "t": "Die Telenovela",
+     "g": "Lerne lateinamerikanische Serien kennen, die eine große Geschichte mit klarem Ende erzählen.",
+     "p": [
+      "Eine Telenovela läuft meist einige Monate und endet, wenn die Hauptgeschichte gelöst ist.",
+      "Große Gefühle, Familiengeheimnisse und eine zentrale Liebesgeschichte treiben sie an.",
+      "Telenovelas sehen Millionen, und sie werden in viele Länder exportiert."
+     ],
+     "q": "Hast du schon einmal eine Telenovela gesehen oder zu Hause darüber reden hören?",
+     "c": "Schreibe eine Telenovela-Handlung in drei Zeilen mit Held, Geheimnis und Happy End."
+    },
+    "es": {
+     "t": "La telenovela",
+     "g": "Conoce las series latinoamericanas que cuentan una gran historia con final claro.",
+     "p": [
+      "Una telenovela suele durar unos meses y termina cuando se resuelve su historia principal.",
+      "Grandes emociones, secretos familiares y una historia de amor central mueven la trama.",
+      "Millones de personas ven telenovelas y se exportan a muchos países."
+     ],
+     "q": "¿Has visto alguna vez una telenovela o has oído hablar de una en casa?",
+     "c": "Escribe una trama de telenovela en tres líneas con héroe, secreto y final feliz."
+    },
+    "fr": {
+     "t": "La telenovela",
+     "g": "Découvre les séries latino-américaines qui racontent une grande histoire à la fin claire.",
+     "p": [
+      "Une telenovela dure souvent quelques mois et s'achève quand son histoire principale est résolue.",
+      "De grandes émotions, des secrets de famille et une histoire d'amour centrale font avancer l'intrigue.",
+      "Des millions de spectateurs les regardent et elles s'exportent dans de nombreux pays."
+     ],
+     "q": "As-tu déjà regardé une telenovela, ou entendu parler de l'une d'elles chez toi ?",
+     "c": "Écris une intrigue de telenovela en trois lignes avec héros, secret et fin heureuse."
+    },
+    "it": {
+     "t": "La telenovela",
+     "g": "Conosci le serie latinoamericane che raccontano una grande storia con un finale chiaro.",
+     "p": [
+      "Una telenovela dura di solito qualche mese e finisce quando la storia principale si risolve.",
+      "Grandi emozioni, segreti di famiglia e una storia d'amore centrale guidano la trama.",
+      "Milioni di persone le guardano e vengono esportate in molti paesi."
+     ],
+     "q": "Hai mai visto una telenovela o ne hai sentito parlare in casa?",
+     "c": "Scrivi una trama di telenovela in tre righe con eroe, segreto e lieto fine."
+    },
+    "pt": {
+     "t": "A telenovela",
+     "g": "Conhece as séries latino-americanas que contam uma grande história com final claro.",
+     "p": [
+      "Uma telenovela costuma durar alguns meses e acaba quando a história principal se resolve.",
+      "Grandes emoções, segredos de família e uma história de amor central movem o enredo.",
+      "Milhões de pessoas veem telenovelas e elas são exportadas para muitos países."
+     ],
+     "q": "Já viste alguma telenovela ou ouviste falar de uma lá em casa?",
+     "c": "Escreve um enredo de telenovela em três linhas com herói, segredo e final feliz."
+    },
+    "pt_BR": {
+     "t": "A telenovela",
+     "g": "Conheça as séries latino-americanas que contam uma grande história com final claro.",
+     "p": [
+      "Uma telenovela costuma durar alguns meses e termina quando a história principal se resolve.",
+      "Grandes emoções, segredos de família e um romance central movem o enredo.",
+      "Milhões de pessoas assistem a novelas, e elas são exportadas para muitos países."
+     ],
+     "q": "Você já assistiu a uma novela ou ouviu falar de uma em casa?",
+     "c": "Escreva um enredo de novela em três linhas com herói, segredo e final feliz."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Workplace comedies",
+     "g": "See how offices, shops and hospitals become stages for everyday comedy.",
+     "p": [
+      "Work gives characters a reason to be together, even when they would not choose to be.",
+      "Small clashes, like a meeting or a rule, can grow into big laughs.",
+      "The best workplace comedies mix silly moments with real warmth between colleagues."
+     ],
+     "q": "What funny moment from a job, yours or someone else's, would make a good scene?",
+     "c": "Outline one workplace scene: where, who and what small problem goes wrong."
+    },
+    "de": {
+     "t": "Arbeitsplatz-Comedys",
+     "g": "Sieh, wie Büros, Läden und Krankenhäuser zur Bühne für Alltagskomik werden.",
+     "p": [
+      "Die Arbeit gibt Figuren einen Grund, zusammen zu sein, auch wenn sie es sich nicht aussuchen würden.",
+      "Kleine Zusammenstöße, etwa ein Meeting oder eine Regel, werden zu großem Gelächter.",
+      "Die besten Arbeitsplatz-Comedys verbinden Albernes mit echter Wärme unter Kollegen."
+     ],
+     "q": "Welcher lustige Moment aus einem Job würde eine gute Szene abgeben?",
+     "c": "Skizziere eine Büroszene: Wo, wer und welches kleine Problem geht schief?"
+    },
+    "es": {
+     "t": "Comedias de oficina y trabajo",
+     "g": "Mira cómo oficinas, tiendas y hospitales se vuelven escenario de comedia cotidiana.",
+     "p": [
+      "El trabajo da a los personajes una razón para estar juntos, aunque no lo elegirían.",
+      "Pequeños choques, como una reunión o una norma, pueden crecer hasta grandes risas.",
+      "Las mejores mezclan momentos tontos con calidez real entre compañeros."
+     ],
+     "q": "¿Qué momento gracioso de un trabajo, tuyo o ajeno, sería una buena escena?",
+     "c": "Esboza una escena de trabajo: dónde, quién y qué problemilla sale mal."
+    },
+    "fr": {
+     "t": "Les comédies de bureau",
+     "g": "Vois comment bureaux, boutiques et hôpitaux deviennent la scène d'une comédie du quotidien.",
+     "p": [
+      "Le travail donne aux personnages une raison d'être ensemble, même sans l'avoir choisi.",
+      "De petits accrochages, une réunion ou une règle, peuvent devenir de grands fous rires.",
+      "Les meilleures mêlent moments absurdes et vraie chaleur entre collègues."
+     ],
+     "q": "Quel moment drôle d'un travail, le tien ou un autre, ferait une bonne scène ?",
+     "c": "Esquisse une scène de travail : où, qui et quel petit problème tourne mal."
+    },
+    "it": {
+     "t": "Commedie sul posto di lavoro",
+     "g": "Guarda come uffici, negozi e ospedali diventano il palcoscenico della commedia quotidiana.",
+     "p": [
+      "Il lavoro dà ai personaggi un motivo per stare insieme, anche se non lo sceglierebbero.",
+      "Piccoli scontri, come una riunione o una regola, diventano grandi risate.",
+      "Le migliori mescolano momenti buffi e vero calore tra colleghi."
+     ],
+     "q": "Quale momento divertente di un lavoro, tuo o altrui, sarebbe una bella scena?",
+     "c": "Abbozza una scena di lavoro: dove, chi e quale piccolo problema va storto."
+    },
+    "pt": {
+     "t": "Comédias de trabalho",
+     "g": "Vê como escritórios, lojas e hospitais se tornam palco da comédia do dia a dia.",
+     "p": [
+      "O trabalho dá às personagens um motivo para estarem juntas, mesmo sem o escolherem.",
+      "Pequenos choques, como uma reunião ou uma regra, crescem até grandes gargalhadas.",
+      "As melhores misturam momentos tolos com calor humano real entre colegas."
+     ],
+     "q": "Que momento engraçado de um emprego, teu ou de outrem, daria uma boa cena?",
+     "c": "Esboça uma cena de trabalho: onde, quem e que pequeno problema corre mal."
+    },
+    "pt_BR": {
+     "t": "Comédias de trabalho",
+     "g": "Veja como escritórios, lojas e hospitais viram palco da comédia do dia a dia.",
+     "p": [
+      "O trabalho dá aos personagens um motivo para ficarem juntos, mesmo sem escolher.",
+      "Pequenos choques, como uma reunião ou uma regra, viram grandes risadas.",
+      "As melhores misturam momentos bobos com carinho de verdade entre colegas."
+     ],
+     "q": "Que momento engraçado de um emprego, seu ou de outra pessoa, daria uma boa cena?",
+     "c": "Esboce uma cena de trabalho: onde, quem e que pequeno problema dá errado."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Family comedies",
+     "g": "Explore kitchens, living rooms and generations learning to live together.",
+     "p": [
+      "Family comedies find humour in shared meals, rules and different ages.",
+      "Parents, children and grandparents see the same event in different ways.",
+      "Underneath the jokes, the family usually shows love when it counts."
+     ],
+     "q": "Which TV family would you most like to have dinner with?",
+     "c": "Write a short family dinner scene with three characters and one small disagreement."
+    },
+    "de": {
+     "t": "Familiencomedys",
+     "g": "Entdecke Küchen, Wohnzimmer und Generationen, die lernen, zusammenzuleben.",
+     "p": [
+      "Familiencomedys finden Humor in gemeinsamen Mahlzeiten, Regeln und verschiedenen Altersstufen.",
+      "Eltern, Kinder und Großeltern sehen dasselbe Ereignis ganz unterschiedlich.",
+      "Unter den Witzen zeigt die Familie meist Liebe, wenn es darauf ankommt."
+     ],
+     "q": "Mit welcher Fernsehfamilie würdest du am liebsten zu Abend essen?",
+     "c": "Schreibe eine kurze Familienszene beim Essen mit drei Figuren und einem kleinen Streit."
+    },
+    "es": {
+     "t": "Comedias familiares",
+     "g": "Explora cocinas, salones y generaciones que aprenden a convivir.",
+     "p": [
+      "Las comedias familiares sacan humor de las comidas, las normas y las edades distintas.",
+      "Padres, hijos y abuelos ven el mismo suceso de formas diferentes.",
+      "Bajo los chistes, la familia suele mostrar su cariño cuando importa."
+     ],
+     "q": "¿Con qué familia de la tele te gustaría más cenar?",
+     "c": "Escribe una breve escena de cena familiar con tres personajes y un pequeño desacuerdo."
+    },
+    "fr": {
+     "t": "Les comédies familiales",
+     "g": "Explore cuisines, salons et générations qui apprennent à vivre ensemble.",
+     "p": [
+      "Les comédies familiales trouvent l'humour dans les repas, les règles et les âges différents.",
+      "Parents, enfants et grands-parents voient le même événement différemment.",
+      "Sous les blagues, la famille montre en général son amour quand il le faut."
+     ],
+     "q": "Avec quelle famille de la télé aimerais-tu le plus dîner ?",
+     "c": "Écris une courte scène de dîner familial avec trois personnages et un petit désaccord."
+    },
+    "it": {
+     "t": "Commedie di famiglia",
+     "g": "Esplora cucine, salotti e generazioni che imparano a vivere insieme.",
+     "p": [
+      "Le commedie di famiglia trovano umorismo nei pasti, nelle regole e nelle età diverse.",
+      "Genitori, figli e nonni vedono lo stesso fatto in modi diversi.",
+      "Sotto le battute, la famiglia di solito mostra affetto quando conta."
+     ],
+     "q": "Con quale famiglia della TV ti piacerebbe di più cenare?",
+     "c": "Scrivi una breve scena di cena in famiglia con tre personaggi e un piccolo disaccordo."
+    },
+    "pt": {
+     "t": "Comédias de família",
+     "g": "Explora cozinhas, salas e gerações que aprendem a viver juntas.",
+     "p": [
+      "As comédias de família tiram humor das refeições, das regras e das idades diferentes.",
+      "Pais, filhos e avós veem o mesmo acontecimento de formas diferentes.",
+      "Por baixo das piadas, a família costuma mostrar amor quando é preciso."
+     ],
+     "q": "Com que família da TV gostarias mais de jantar?",
+     "c": "Escreve uma curta cena de jantar de família com três personagens e um pequeno desacordo."
+    },
+    "pt_BR": {
+     "t": "Comédias de família",
+     "g": "Explore cozinhas, salas e gerações aprendendo a conviver.",
+     "p": [
+      "As comédias de família tiram humor das refeições, das regras e das idades diferentes.",
+      "Pais, filhos e avós veem o mesmo acontecimento de jeitos diferentes.",
+      "Por baixo das piadas, a família costuma mostrar amor na hora que importa."
+     ],
+     "q": "Com qual família da TV você mais gostaria de jantar?",
+     "c": "Escreva uma cena curta de jantar em família com três personagens e uma pequena discordância."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The mockumentary style",
+     "g": "Spot comedies filmed as if they were real documentaries.",
+     "p": [
+      "Characters talk straight to the camera in short interviews called talking heads.",
+      "The camera can be handheld and sometimes catches a glance or a smirk.",
+      "Deadpan acting, a serious face on a silly situation, makes the jokes land."
+     ],
+     "q": "Which small glance to the camera has ever made you laugh out loud?",
+     "c": "Watch two minutes of a mockumentary and count the talking-head moments."
+    },
+    "de": {
+     "t": "Der Mockumentary-Stil",
+     "g": "Erkenne Komödien, die gedreht sind, als wären sie echte Dokumentationen.",
+     "p": [
+      "Figuren sprechen in kurzen Interviews direkt in die Kamera, den Talking Heads.",
+      "Die Kamera ist oft handgehalten und fängt manchmal einen Blick oder ein Grinsen ein.",
+      "Trockenes Spiel, ernstes Gesicht bei alberner Lage, lässt die Witze zünden."
+     ],
+     "q": "Welcher kleine Blick in die Kamera hat dich schon laut lachen lassen?",
+     "c": "Sieh zwei Minuten einer Mockumentary und zähle die Talking-Head-Momente."
+    },
+    "es": {
+     "t": "El estilo mockumentary",
+     "g": "Reconoce las comedias rodadas como si fueran documentales de verdad.",
+     "p": [
+      "Los personajes hablan a cámara en entrevistas breves llamadas talking heads.",
+      "La cámara va al hombro y a veces capta una mirada o una sonrisa torcida.",
+      "La actuación seria ante una situación absurda hace que los chistes funcionen."
+     ],
+     "q": "¿Qué pequeña mirada a cámara te ha hecho reír a carcajadas?",
+     "c": "Mira dos minutos de un mockumentary y cuenta los momentos de entrevista a cámara."
+    },
+    "fr": {
+     "t": "Le style mockumentary",
+     "g": "Repère les comédies filmées comme de vrais documentaires.",
+     "p": [
+      "Les personnages parlent face caméra dans de courtes interviews, les talking heads.",
+      "La caméra est souvent portée à l'épaule et saisit parfois un regard ou un sourire en coin.",
+      "Le jeu pince-sans-rire, visage sérieux devant une situation absurde, fait mouche."
+     ],
+     "q": "Quel petit regard vers la caméra t'a déjà fait éclater de rire ?",
+     "c": "Regarde deux minutes d'un mockumentary et compte les moments de talking head."
+    },
+    "it": {
+     "t": "Lo stile mockumentary",
+     "g": "Riconosci le commedie girate come se fossero veri documentari.",
+     "p": [
+      "I personaggi parlano alla camera in brevi interviste dette talking heads.",
+      "La telecamera è spesso a mano e a volte coglie uno sguardo o un sorrisetto.",
+      "La recitazione impassibile, faccia seria davanti a una situazione assurda, fa ridere."
+     ],
+     "q": "Quale piccolo sguardo in camera ti ha fatto ridere forte?",
+     "c": "Guarda due minuti di un mockumentary e conta i momenti di talking head."
+    },
+    "pt": {
+     "t": "O estilo mockumentary",
+     "g": "Reconhece as comédias filmadas como se fossem documentários a sério.",
+     "p": [
+      "As personagens falam para a câmara em entrevistas curtas chamadas talking heads.",
+      "A câmara costuma andar ao ombro e por vezes apanha um olhar ou um sorriso maroto.",
+      "A representação séria perante uma situação tola faz as piadas resultar."
+     ],
+     "q": "Que pequeno olhar para a câmara já te fez rir às gargalhadas?",
+     "c": "Vê dois minutos de um mockumentary e conta os momentos de talking head."
+    },
+    "pt_BR": {
+     "t": "O estilo mockumentary",
+     "g": "Reconheça as comédias filmadas como se fossem documentários de verdade.",
+     "p": [
+      "Os personagens falam para a câmera em entrevistas curtas chamadas talking heads.",
+      "A câmera costuma ser na mão e às vezes pega um olhar ou um sorrisinho.",
+      "A atuação séria diante de uma situação boba faz as piadas funcionarem."
+     ],
+     "q": "Que pequeno olhar para a câmera já fez você rir alto?",
+     "c": "Assista a dois minutos de um mockumentary e conte os momentos de talking head."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The procedural",
+     "g": "Learn how a case of the week gives a series its steady rhythm.",
+     "p": [
+      "A procedural presents a problem and solves it within one episode.",
+      "A skilled team uses its expertise, from medicine to law to science.",
+      "The comfortable pattern lets viewers join at any point."
+     ],
+     "q": "Which kind of case or puzzle would you enjoy watching a team solve?",
+     "c": "Describe a gentle case of the week, like a lost recipe, and who would solve it."
+    },
+    "de": {
+     "t": "Die Fallserie",
+     "g": "Lerne, wie ein Fall der Woche einer Serie ihren festen Rhythmus gibt.",
+     "p": [
+      "Eine Procedural-Serie stellt ein Problem vor und löst es innerhalb einer Folge.",
+      "Ein fähiges Team nutzt sein Können, von Medizin über Recht bis Wissenschaft.",
+      "Das vertraute Muster erlaubt Zuschauern, an jeder Stelle einzusteigen."
+     ],
+     "q": "Welche Art Fall oder Rätsel sähest du gern von einem Team gelöst?",
+     "c": "Beschreibe einen sanften Fall der Woche, etwa ein verlorenes Rezept, und wer ihn löst."
+    },
+    "es": {
+     "t": "La serie procedimental",
+     "g": "Aprende cómo el caso de la semana da a una serie su ritmo constante.",
+     "p": [
+      "Una serie procedimental plantea un problema y lo resuelve en un episodio.",
+      "Un equipo hábil usa su experiencia, de la medicina al derecho o la ciencia.",
+      "El patrón cómodo permite engancharse en cualquier punto."
+     ],
+     "q": "¿Qué tipo de caso o enigma disfrutarías viendo resolver a un equipo?",
+     "c": "Describe un caso suave de la semana, como una receta perdida, y quién lo resolvería."
+    },
+    "fr": {
+     "t": "Le procedural",
+     "g": "Apprends comment l'affaire de la semaine donne à une série son rythme régulier.",
+     "p": [
+      "Un procedural présente un problème et le résout au sein d'un épisode.",
+      "Une équipe compétente met son savoir à l'œuvre, de la médecine au droit ou à la science.",
+      "Ce schéma confortable permet de prendre la série en cours de route."
+     ],
+     "q": "Quel genre d'affaire ou d'énigme aimerais-tu voir résolue par une équipe ?",
+     "c": "Décris une affaire douce de la semaine, comme une recette perdue, et qui la résoudrait."
+    },
+    "it": {
+     "t": "Il procedural",
+     "g": "Scopri come il caso della settimana dà a una serie il suo ritmo costante.",
+     "p": [
+      "Un procedural presenta un problema e lo risolve entro un episodio.",
+      "Una squadra capace usa la sua competenza, dalla medicina al diritto alla scienza.",
+      "Lo schema comodo permette di entrare in qualsiasi momento."
+     ],
+     "q": "Che tipo di caso o enigma ti piacerebbe vedere risolto da una squadra?",
+     "c": "Descrivi un caso leggero della settimana, come una ricetta perduta, e chi lo risolve."
+    },
+    "pt": {
+     "t": "O procedural",
+     "g": "Aprende como o caso da semana dá a uma série o seu ritmo constante.",
+     "p": [
+      "Um procedural apresenta um problema e resolve-o dentro de um episódio.",
+      "Uma equipa competente usa o seu saber, da medicina ao direito e à ciência.",
+      "O padrão confortável permite entrar em qualquer ponto."
+     ],
+     "q": "Que tipo de caso ou enigma gostarias de ver uma equipa resolver?",
+     "c": "Descreve um caso suave da semana, como uma receita perdida, e quem o resolveria."
+    },
+    "pt_BR": {
+     "t": "O procedural",
+     "g": "Aprenda como o caso da semana dá a uma série seu ritmo constante.",
+     "p": [
+      "Um procedural apresenta um problema e o resolve dentro de um episódio.",
+      "Uma equipe competente usa seu conhecimento, da medicina ao direito e à ciência.",
+      "O padrão confortável permite entrar em qualquer ponto."
+     ],
+     "q": "Que tipo de caso ou enigma você gostaria de ver uma equipe resolver?",
+     "c": "Descreva um caso leve da semana, como uma receita perdida, e quem o resolveria."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Medical dramas",
+     "g": "See why hospitals are such a rich setting for stories.",
+     "p": [
+      "A hospital brings together teamwork, hard choices and quick thinking.",
+      "Every patient story can reveal something about the doctor treating them.",
+      "The setting also gives a natural mix of hope, humour and heart."
+     ],
+     "q": "Which hospital-show character would you trust most to stay calm?",
+     "c": "Pick a medical-show scene and note how the team shares the work."
+    },
+    "de": {
+     "t": "Arztserien",
+     "g": "Erkenne, warum Krankenhäuser ein so reicher Schauplatz für Geschichten sind.",
+     "p": [
+      "Ein Krankenhaus vereint Teamarbeit, schwere Entscheidungen und schnelles Denken.",
+      "Jede Patientengeschichte kann etwas über den behandelnden Arzt zeigen.",
+      "Der Schauplatz bietet auch eine natürliche Mischung aus Hoffnung, Humor und Herz."
+     ],
+     "q": "Welcher Figur aus einer Krankenhausserie würdest du am ehesten Ruhe zutrauen?",
+     "c": "Wähle eine Szene aus einer Arztserie und achte darauf, wie das Team die Arbeit teilt."
+    },
+    "es": {
+     "t": "Series médicas",
+     "g": "Descubre por qué los hospitales son un escenario tan rico para las historias.",
+     "p": [
+      "Un hospital reúne trabajo en equipo, decisiones difíciles y rapidez mental.",
+      "Cada historia de paciente puede revelar algo del médico que lo atiende.",
+      "El escenario ofrece también una mezcla natural de esperanza, humor y corazón."
+     ],
+     "q": "¿Qué personaje de serie de hospitales te inspiraría más calma?",
+     "c": "Elige una escena de serie médica y fíjate en cómo el equipo reparte el trabajo."
+    },
+    "fr": {
+     "t": "Séries médicales",
+     "g": "Vois pourquoi les hôpitaux sont un décor si riche pour les histoires.",
+     "p": [
+      "Un hôpital réunit travail d'équipe, choix difficiles et réflexes rapides.",
+      "Chaque histoire de patient peut révéler quelque chose du médecin qui le soigne.",
+      "Le décor offre aussi un mélange naturel d'espoir, d'humour et de cœur."
+     ],
+     "q": "Quel personnage de série médicale te semblerait le plus calme et fiable ?",
+     "c": "Choisis une scène de série médicale et note comment l'équipe partage le travail."
+    },
+    "it": {
+     "t": "Serie mediche",
+     "g": "Scopri perché gli ospedali sono un'ambientazione così ricca di storie.",
+     "p": [
+      "Un ospedale riunisce lavoro di squadra, scelte difficili e prontezza.",
+      "Ogni storia di paziente può rivelare qualcosa del medico che lo cura.",
+      "L'ambientazione offre anche un mix naturale di speranza, umorismo e cuore."
+     ],
+     "q": "Quale personaggio di una serie ospedaliera ti darebbe più calma?",
+     "c": "Scegli una scena di una serie medica e nota come la squadra divide il lavoro."
+    },
+    "pt": {
+     "t": "Séries médicas",
+     "g": "Percebe porque é que os hospitais são um cenário tão rico em histórias.",
+     "p": [
+      "Um hospital junta trabalho de equipa, escolhas difíceis e rapidez de raciocínio.",
+      "Cada história de doente pode revelar algo sobre o médico que o trata.",
+      "O cenário oferece ainda uma mistura natural de esperança, humor e coração."
+     ],
+     "q": "Que personagem de série de hospitais te inspiraria mais calma?",
+     "c": "Escolhe uma cena de série médica e repara em como a equipa reparte o trabalho."
+    },
+    "pt_BR": {
+     "t": "Séries médicas",
+     "g": "Entenda por que os hospitais são um cenário tão rico em histórias.",
+     "p": [
+      "Um hospital reúne trabalho em equipe, escolhas difíceis e raciocínio rápido.",
+      "Cada história de paciente pode revelar algo sobre o médico que o atende.",
+      "O cenário também oferece uma mistura natural de esperança, humor e coração."
+     ],
+     "q": "Que personagem de série de hospital passaria mais calma para você?",
+     "c": "Escolha uma cena de série médica e note como a equipe divide o trabalho."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Legal dramas",
+     "g": "Explore courtrooms, arguments and the craft of persuasion on screen.",
+     "p": [
+      "A legal drama turns a dispute into a contest of ideas, evidence and words.",
+      "The courtroom speech lets characters show their values in a few minutes.",
+      "Behind the scenes, lawyers prepare, research and choose their strategy."
+     ],
+     "q": "What makes an argument persuasive to you: facts, passion or a clear story?",
+     "c": "Write a three-sentence closing argument for a harmless case, like who ate the last biscuit."
+    },
+    "de": {
+     "t": "Anwaltsserien",
+     "g": "Entdecke Gerichtssäle, Argumente und die Kunst der Überzeugung im Fernsehen.",
+     "p": [
+      "Eine Anwaltsserie macht einen Streit zu einem Wettstreit aus Ideen, Beweisen und Worten.",
+      "Die Rede vor Gericht zeigt in wenigen Minuten, was einer Figur wichtig ist.",
+      "Hinter den Kulissen bereiten Anwälte vor, recherchieren und wählen ihre Strategie."
+     ],
+     "q": "Was macht ein Argument für dich überzeugend: Fakten, Leidenschaft oder eine klare Geschichte?",
+     "c": "Schreibe ein Plädoyer in drei Sätzen für einen harmlosen Fall, etwa wer den letzten Keks aß."
+    },
+    "es": {
+     "t": "Series judiciales",
+     "g": "Explora tribunales, argumentos y el arte de persuadir en pantalla.",
+     "p": [
+      "Una serie judicial convierte una disputa en un duelo de ideas, pruebas y palabras.",
+      "El discurso en la sala permite mostrar los valores del personaje en pocos minutos.",
+      "Entre bastidores, los abogados preparan, investigan y eligen su estrategia."
+     ],
+     "q": "¿Qué hace persuasivo un argumento para ti: los datos, la pasión o un relato claro?",
+     "c": "Escribe un alegato final de tres frases para un caso inocente, como quién se comió la última galleta."
+    },
+    "fr": {
+     "t": "Séries judiciaires",
+     "g": "Explore tribunaux, plaidoiries et l'art de persuader à l'écran.",
+     "p": [
+      "Une série judiciaire transforme un différend en duel d'idées, de preuves et de mots.",
+      "Le discours au tribunal montre les valeurs d'un personnage en quelques minutes.",
+      "Dans les coulisses, les avocats préparent, enquêtent et choisissent leur stratégie."
+     ],
+     "q": "Qu'est-ce qui rend un argument convaincant pour toi : les faits, la passion, un récit clair ?",
+     "c": "Écris une plaidoirie de trois phrases pour une affaire anodine, comme qui a mangé le dernier biscuit."
+    },
+    "it": {
+     "t": "Serie legali",
+     "g": "Esplora aule di tribunale, argomenti e l'arte di persuadere sullo schermo.",
+     "p": [
+      "Una serie legale trasforma una disputa in una sfida di idee, prove e parole.",
+      "Il discorso in aula mostra i valori di un personaggio in pochi minuti.",
+      "Dietro le quinte, gli avvocati preparano, studiano e scelgono la strategia."
+     ],
+     "q": "Cosa rende convincente un argomento per te: fatti, passione o un racconto chiaro?",
+     "c": "Scrivi un'arringa di tre frasi per un caso innocuo, come chi ha mangiato l'ultimo biscotto."
+    },
+    "pt": {
+     "t": "Séries judiciais",
+     "g": "Explora tribunais, argumentos e a arte de persuadir no ecrã.",
+     "p": [
+      "Uma série judicial transforma uma disputa num duelo de ideias, provas e palavras.",
+      "O discurso na sala mostra os valores da personagem em poucos minutos.",
+      "Nos bastidores, os advogados preparam, investigam e escolhem a estratégia."
+     ],
+     "q": "O que torna um argumento persuasivo para ti: factos, paixão ou uma história clara?",
+     "c": "Escreve uma alegação final de três frases para um caso inofensivo, como quem comeu o último bolinho."
+    },
+    "pt_BR": {
+     "t": "Séries jurídicas",
+     "g": "Explore tribunais, argumentos e a arte de persuadir na tela.",
+     "p": [
+      "Uma série jurídica transforma uma disputa em duelo de ideias, provas e palavras.",
+      "O discurso no tribunal mostra os valores do personagem em poucos minutos.",
+      "Nos bastidores, os advogados preparam, pesquisam e escolhem a estratégia."
+     ],
+     "q": "O que torna um argumento persuasivo para você: fatos, paixão ou uma história clara?",
+     "c": "Escreva uma alegação final de três frases para um caso inofensivo, como quem comeu o último biscoito."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Science fiction series",
+     "g": "See how space, time travel and future worlds explore big ideas.",
+     "p": [
+      "Science fiction imagines a change, like a new machine or planet, and asks what follows.",
+      "The future setting often lets writers talk about the present from a safe distance.",
+      "Strong sci-fi gives its invented world clear rules the audience can learn."
+     ],
+     "q": "If you could visit one imagined future world, what would it look like?",
+     "c": "Invent one rule for a sci-fi world, like gravity that changes daily, and one result."
+    },
+    "de": {
+     "t": "Science-Fiction-Serien",
+     "g": "Sieh, wie Weltraum, Zeitreisen und Zukunftswelten große Ideen erkunden.",
+     "p": [
+      "Science-Fiction stellt sich eine Veränderung vor, etwa eine neue Maschine, und fragt, was folgt.",
+      "Die Zukunft erlaubt es Autoren oft, aus sicherem Abstand über die Gegenwart zu sprechen.",
+      "Gute Science-Fiction gibt ihrer erfundenen Welt klare Regeln, die man lernen kann."
+     ],
+     "q": "Wenn du eine erdachte Zukunftswelt besuchen könntest, wie sähe sie aus?",
+     "c": "Erfinde eine Regel für eine Sci-Fi-Welt, etwa täglich wechselnde Schwerkraft, und eine Folge."
+    },
+    "es": {
+     "t": "Series de ciencia ficción",
+     "g": "Mira cómo el espacio, los viajes en el tiempo y los mundos futuros exploran grandes ideas.",
+     "p": [
+      "La ciencia ficción imagina un cambio, como una máquina o un planeta nuevo, y pregunta qué sigue.",
+      "El futuro permite hablar del presente desde una distancia segura.",
+      "La buena ciencia ficción da a su mundo reglas claras que el público puede aprender."
+     ],
+     "q": "Si pudieras visitar un mundo futuro imaginado, ¿cómo sería?",
+     "c": "Inventa una regla para un mundo de ciencia ficción, como gravedad cambiante, y una consecuencia."
+    },
+    "fr": {
+     "t": "Séries de science-fiction",
+     "g": "Vois comment l'espace, le voyage dans le temps et les mondes futurs explorent de grandes idées.",
+     "p": [
+      "La science-fiction imagine un changement, une machine ou une planète, et demande ce qui s'ensuit.",
+      "Le futur permet souvent de parler du présent avec un recul sûr.",
+      "La bonne science-fiction donne à son monde des règles claires que le public apprend."
+     ],
+     "q": "Si tu pouvais visiter un monde futur imaginaire, à quoi ressemblerait-il ?",
+     "c": "Invente une règle pour un monde de science-fiction, comme une gravité changeante, et une conséquence."
+    },
+    "it": {
+     "t": "Serie di fantascienza",
+     "g": "Scopri come spazio, viaggi nel tempo e mondi futuri esplorano grandi idee.",
+     "p": [
+      "La fantascienza immagina un cambiamento, come una macchina o un pianeta, e chiede cosa ne segue.",
+      "Il futuro permette spesso di parlare del presente da una distanza sicura.",
+      "La buona fantascienza dà al suo mondo regole chiare che il pubblico impara."
+     ],
+     "q": "Se potessi visitare un mondo futuro immaginario, come sarebbe?",
+     "c": "Inventa una regola per un mondo di fantascienza, come gravità variabile, e una conseguenza."
+    },
+    "pt": {
+     "t": "Séries de ficção científica",
+     "g": "Vê como o espaço, as viagens no tempo e os mundos futuros exploram grandes ideias.",
+     "p": [
+      "A ficção científica imagina uma mudança, como uma máquina ou um planeta novo, e pergunta o que se segue.",
+      "O futuro permite muitas vezes falar do presente a uma distância segura.",
+      "A boa ficção científica dá ao seu mundo regras claras que o público aprende."
+     ],
+     "q": "Se pudesses visitar um mundo futuro imaginado, como seria?",
+     "c": "Inventa uma regra para um mundo de ficção científica, como gravidade variável, e uma consequência."
+    },
+    "pt_BR": {
+     "t": "Séries de ficção científica",
+     "g": "Veja como o espaço, as viagens no tempo e os mundos futuros exploram grandes ideias.",
+     "p": [
+      "A ficção científica imagina uma mudança, como uma máquina ou um planeta novo, e pergunta o que vem depois.",
+      "O futuro permite muitas vezes falar do presente a uma distância segura.",
+      "A boa ficção científica dá ao seu mundo regras claras que o público aprende."
+     ],
+     "q": "Se você pudesse visitar um mundo futuro imaginado, como ele seria?",
+     "c": "Invente uma regra para um mundo de ficção científica, como gravidade variável, e uma consequência."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fantasy series",
+     "g": "Enter magic, invented kingdoms and quests told over many episodes.",
+     "p": [
+      "Fantasy builds a world with its own history, maps, customs and magic.",
+      "Quests give a clear goal that can stretch across a whole season.",
+      "Even in a magic world, believable feelings make the story matter."
+     ],
+     "q": "If you lived in a fantasy world, what would your role be?",
+     "c": "Draw or describe a tiny map of an invented kingdom with three named places."
+    },
+    "de": {
+     "t": "Fantasyserien",
+     "g": "Tritt ein in Magie, erfundene Königreiche und Abenteuer über viele Folgen.",
+     "p": [
+      "Fantasy baut eine Welt mit eigener Geschichte, Karten, Bräuchen und Magie.",
+      "Eine Queste gibt ein klares Ziel, das sich über eine ganze Staffel spannen kann.",
+      "Selbst in einer magischen Welt machen glaubhafte Gefühle die Geschichte wichtig."
+     ],
+     "q": "Wenn du in einer Fantasywelt lebtest, welche Rolle hättest du?",
+     "c": "Zeichne oder beschreibe eine kleine Karte eines erfundenen Königreichs mit drei Orten."
+    },
+    "es": {
+     "t": "Series de fantasía",
+     "g": "Entra en la magia, los reinos inventados y las misiones de muchos episodios.",
+     "p": [
+      "La fantasía construye un mundo con su historia, mapas, costumbres y magia.",
+      "Una misión da una meta clara que puede estirarse durante toda una temporada.",
+      "Incluso en un mundo mágico, los sentimientos creíbles hacen que la historia importe."
+     ],
+     "q": "Si vivieras en un mundo de fantasía, ¿cuál sería tu papel?",
+     "c": "Dibuja o describe un mapa mínimo de un reino inventado con tres lugares con nombre."
+    },
+    "fr": {
+     "t": "Séries fantastiques",
+     "g": "Entre dans la magie, les royaumes inventés et les quêtes sur de nombreux épisodes.",
+     "p": [
+      "La fantasy bâtit un monde avec son histoire, ses cartes, ses coutumes et sa magie.",
+      "Une quête donne un but clair qui peut s'étendre sur toute une saison.",
+      "Même dans un monde magique, des sentiments crédibles donnent du poids à l'histoire."
+     ],
+     "q": "Si tu vivais dans un monde de fantasy, quel serait ton rôle ?",
+     "c": "Dessine ou décris une petite carte d'un royaume inventé avec trois lieux nommés."
+    },
+    "it": {
+     "t": "Serie fantasy",
+     "g": "Entra nella magia, nei regni inventati e nelle imprese raccontate in molti episodi.",
+     "p": [
+      "Il fantasy costruisce un mondo con una sua storia, mappe, usanze e magia.",
+      "Una missione dà una meta chiara che può durare un'intera stagione.",
+      "Anche in un mondo magico, sentimenti credibili fanno contare la storia."
+     ],
+     "q": "Se vivessi in un mondo fantasy, quale sarebbe il tuo ruolo?",
+     "c": "Disegna o descrivi una piccola mappa di un regno inventato con tre luoghi dal nome."
+    },
+    "pt": {
+     "t": "Séries de fantasia",
+     "g": "Entra na magia, nos reinos inventados e nas missões de muitos episódios.",
+     "p": [
+      "A fantasia constrói um mundo com história, mapas, costumes e magia próprios.",
+      "Uma missão dá um objetivo claro que pode durar uma temporada inteira.",
+      "Mesmo num mundo mágico, sentimentos credíveis fazem a história importar."
+     ],
+     "q": "Se vivesses num mundo de fantasia, qual seria o teu papel?",
+     "c": "Desenha ou descreve um pequeno mapa de um reino inventado com três lugares com nome."
+    },
+    "pt_BR": {
+     "t": "Séries de fantasia",
+     "g": "Entre na magia, nos reinos inventados e nas missões de muitos episódios.",
+     "p": [
+      "A fantasia constrói um mundo com história, mapas, costumes e magia próprios.",
+      "Uma missão dá um objetivo claro que pode durar uma temporada inteira.",
+      "Mesmo num mundo mágico, sentimentos críveis fazem a história importar."
+     ],
+     "q": "Se você vivesse num mundo de fantasia, qual seria o seu papel?",
+     "c": "Desenhe ou descreva um mapa pequeno de um reino inventado com três lugares nomeados."
+    }
+   }
+  }
+ ]
+}

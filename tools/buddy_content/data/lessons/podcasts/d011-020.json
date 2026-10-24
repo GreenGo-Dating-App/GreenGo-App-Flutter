@@ -1,0 +1,835 @@
+{
+ "topic": "podcasts",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The co-hosted chat show",
+     "g": "Discover why two or more hosts can make an episode feel like a party.",
+     "p": [
+      "Chemistry grows when hosts know each other and react naturally.",
+      "Running jokes reward loyal listeners and make a show feel like a club.",
+      "Good co-hosts share the talking time and respect each other's views."
+     ],
+     "q": "Which duo of hosts would you love to hear chatting about everyday life?",
+     "c": "Listen to one co-hosted episode and spot a running joke or a favourite moment."
+    },
+    "de": {
+     "t": "Die Plauderrunde mit Co-Moderation",
+     "g": "Entdecken, warum mehrere Moderierende eine Folge wie eine Party wirken lassen.",
+     "p": [
+      "Chemie entsteht, wenn sich Moderierende kennen und natürlich aufeinander reagieren.",
+      "Running Gags belohnen treue Hörer und machen die Sendung zum Club.",
+      "Gute Co-Moderation teilt die Redezeit und respektiert andere Meinungen."
+     ],
+     "q": "Welches Moderationsduo würdest du gern über den Alltag plaudern hören?",
+     "c": "Höre eine Folge zu zweit moderiert und finde einen Running Gag oder Lieblingsmoment."
+    },
+    "es": {
+     "t": "El programa de charla con varios presentadores",
+     "g": "Descubrir por qué varios presentadores hacen que un episodio parezca una fiesta.",
+     "p": [
+      "La química nace cuando los presentadores se conocen y reaccionan con naturalidad.",
+      "Los chistes recurrentes premian a los oyentes fieles y crean sensación de club.",
+      "Los buenos copresentadores reparten el tiempo y respetan las opiniones del otro."
+     ],
+     "q": "¿Qué dúo de presentadores te encantaría oír charlando de la vida diaria?",
+     "c": "Escucha un episodio con varios presentadores y detecta un chiste recurrente o momento favorito."
+    },
+    "fr": {
+     "t": "L'émission de discussion à plusieurs voix",
+     "g": "Découvrir pourquoi plusieurs animateurs rendent un épisode aussi vivant qu'une fête.",
+     "p": [
+      "La complicité naît quand les animateurs se connaissent et réagissent naturellement.",
+      "Les blagues récurrentes récompensent les fidèles et créent un esprit de club.",
+      "De bons co-animateurs se partagent la parole et respectent leurs avis."
+     ],
+     "q": "Quel duo d'animateurs aimerais-tu entendre discuter de la vie quotidienne ?",
+     "c": "Écoute un épisode à plusieurs voix et repère une blague récurrente ou un moment préféré."
+    },
+    "it": {
+     "t": "Il programma chiacchierato a più voci",
+     "g": "Scoprire perché più conduttori fanno sembrare un episodio una festa.",
+     "p": [
+      "L'intesa nasce quando i conduttori si conoscono e reagiscono con naturalezza.",
+      "Le battute ricorrenti premiano gli ascoltatori fedeli e creano un clima da club.",
+      "I bravi co-conduttori dividono il tempo e rispettano le opinioni dell'altro."
+     ],
+     "q": "Quale coppia di conduttori ameresti sentire chiacchierare della vita quotidiana?",
+     "c": "Ascolta un episodio a più voci e individua una battuta ricorrente o un momento preferito."
+    },
+    "pt": {
+     "t": "O programa de conversa com vários apresentadores",
+     "g": "Descobrir porque é que vários apresentadores fazem um episódio parecer uma festa.",
+     "p": [
+      "A química nasce quando os apresentadores se conhecem e reagem com naturalidade.",
+      "As piadas recorrentes premeiam os ouvintes fiéis e criam espírito de clube.",
+      "Bons coapresentadores dividem o tempo de fala e respeitam as opiniões uns dos outros."
+     ],
+     "q": "Que dupla de apresentadores gostarias de ouvir a conversar sobre o dia a dia?",
+     "c": "Ouve um episódio com vários apresentadores e deteta uma piada recorrente ou momento favorito."
+    },
+    "pt_BR": {
+     "t": "O programa de bate-papo com vários apresentadores",
+     "g": "Descobrir por que vários apresentadores fazem um episódio parecer uma festa.",
+     "p": [
+      "A química nasce quando os apresentadores se conhecem e reagem com naturalidade.",
+      "Piadas recorrentes premiam os ouvintes fiéis e criam clima de clube.",
+      "Bons coapresentadores dividem o tempo de fala e respeitam a opinião um do outro."
+     ],
+     "q": "Que dupla de apresentadores você adoraria ouvir batendo papo sobre o dia a dia?",
+     "c": "Ouça um episódio com vários apresentadores e ache uma piada recorrente ou momento favorito."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The solo host show",
+     "g": "Learn how one voice can feel like a friend or a teacher.",
+     "p": [
+      "A solo host speaks straight to you, so tone and warmth matter a lot.",
+      "Preparation keeps the show clear, since nobody else fills the gaps.",
+      "Stories and small examples keep a single voice interesting."
+     ],
+     "q": "Do you prefer one voice or a conversation when you listen?",
+     "c": "Listen to a solo episode and notice how the host keeps you with them."
+    },
+    "de": {
+     "t": "Die Solo-Sendung",
+     "g": "Erfahren, wie eine einzelne Stimme wie Freund oder Lehrerin wirken kann.",
+     "p": [
+      "Wer solo spricht, redet direkt zu dir, daher zählen Ton und Wärme sehr.",
+      "Gute Vorbereitung hält die Sendung klar, denn niemand sonst füllt Lücken.",
+      "Geschichten und kleine Beispiele halten eine einzelne Stimme spannend."
+     ],
+     "q": "Hörst du lieber eine Stimme oder ein Gespräch?",
+     "c": "Höre eine Solo-Folge und achte darauf, wie die Stimme dich bei der Stange hält."
+    },
+    "es": {
+     "t": "El programa en solitario",
+     "g": "Aprender cómo una sola voz puede sentirse como un amigo o un profesor.",
+     "p": [
+      "Quien habla solo se dirige a ti, así que el tono y la calidez importan mucho.",
+      "Preparar bien mantiene el programa claro, porque nadie más llena los huecos.",
+      "Las historias y los ejemplos pequeños mantienen interesante una sola voz."
+     ],
+     "q": "¿Prefieres una sola voz o una conversación al escuchar?",
+     "c": "Escucha un episodio en solitario y fíjate en cómo te mantiene atento."
+    },
+    "fr": {
+     "t": "L'émission en solo",
+     "g": "Voir comment une seule voix peut ressembler à celle d'un ami ou d'un professeur.",
+     "p": [
+      "Un animateur seul te parle directement : le ton et la chaleur comptent beaucoup.",
+      "La préparation garde l'émission claire, car personne d'autre ne comble les vides.",
+      "Les histoires et les petits exemples gardent une voix unique intéressante."
+     ],
+     "q": "Préfères-tu une seule voix ou une conversation quand tu écoutes ?",
+     "c": "Écoute un épisode en solo et remarque comment l'animateur te garde avec lui."
+    },
+    "it": {
+     "t": "Il programma in solitaria",
+     "g": "Scoprire come una sola voce possa sembrare un amico o un insegnante.",
+     "p": [
+      "Chi parla da solo si rivolge a te, quindi tono e calore contano molto.",
+      "Prepararsi bene tiene chiaro il programma, perché nessun altro riempie i vuoti.",
+      "Storie e piccoli esempi mantengono interessante una voce sola."
+     ],
+     "q": "Preferisci una sola voce o una conversazione quando ascolti?",
+     "c": "Ascolta un episodio in solitaria e nota come il conduttore ti tiene con sé."
+    },
+    "pt": {
+     "t": "O programa a solo",
+     "g": "Perceber como uma só voz pode parecer um amigo ou um professor.",
+     "p": [
+      "Quem fala sozinho dirige-se a ti, por isso o tom e o calor contam muito.",
+      "Preparar bem mantém o programa claro, porque mais ninguém preenche os vazios.",
+      "Histórias e pequenos exemplos mantêm uma só voz interessante."
+     ],
+     "q": "Preferes uma só voz ou uma conversa quando ouves?",
+     "c": "Ouve um episódio a solo e repara como o apresentador te mantém atento."
+    },
+    "pt_BR": {
+     "t": "O programa solo",
+     "g": "Entender como uma só voz pode parecer um amigo ou um professor.",
+     "p": [
+      "Quem fala sozinho se dirige a você, por isso tom e calor humano contam muito.",
+      "Preparar bem mantém o programa claro, porque ninguém mais preenche os vazios.",
+      "Histórias e pequenos exemplos mantêm uma só voz interessante."
+     ],
+     "q": "Você prefere uma só voz ou uma conversa quando escuta?",
+     "c": "Ouça um episódio solo e repare como o apresentador mantém você atento."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Narrative nonfiction podcasts",
+     "g": "Meet reported stories told over episodes with scenes and characters.",
+     "p": [
+      "These shows tell true stories using scenes, voices and sound.",
+      "Reporters gather interviews and recordings, then shape them into a story.",
+      "A strong narrative has a question, turning points and a satisfying end."
+     ],
+     "q": "What true story would you love to hear told as a series?",
+     "c": "Listen to ten minutes of a narrative show and name its main question."
+    },
+    "de": {
+     "t": "Erzählende Sachpodcasts",
+     "g": "Reportagen kennenlernen, die in Folgen mit Szenen und Figuren erzählt werden.",
+     "p": [
+      "Diese Sendungen erzählen wahre Geschichten mit Szenen, Stimmen und Klang.",
+      "Reporter sammeln Interviews und Aufnahmen und formen daraus eine Geschichte.",
+      "Eine starke Erzählung hat eine Frage, Wendepunkte und ein stimmiges Ende."
+     ],
+     "q": "Welche wahre Geschichte würdest du gern als Serie hören?",
+     "c": "Höre zehn Minuten eines erzählenden Podcasts und nenne seine Leitfrage."
+    },
+    "es": {
+     "t": "Pódcast narrativos de no ficción",
+     "g": "Conocer reportajes contados por episodios con escenas y personajes.",
+     "p": [
+      "Estos programas cuentan historias reales con escenas, voces y sonido.",
+      "Los reporteros reúnen entrevistas y grabaciones y las moldean en una historia.",
+      "Una buena narración tiene una pregunta, giros y un final satisfactorio."
+     ],
+     "q": "¿Qué historia real te encantaría oír contada como serie?",
+     "c": "Escucha diez minutos de un pódcast narrativo y nombra su pregunta central."
+    },
+    "fr": {
+     "t": "Les podcasts narratifs documentaires",
+     "g": "Découvrir des reportages racontés en épisodes avec scènes et personnages.",
+     "p": [
+      "Ces émissions racontent des histoires vraies avec scènes, voix et sons.",
+      "Les reporters collectent entretiens et enregistrements, puis en font un récit.",
+      "Un bon récit a une question, des rebondissements et une fin satisfaisante."
+     ],
+     "q": "Quelle histoire vraie aimerais-tu entendre racontée en série ?",
+     "c": "Écoute dix minutes d'un podcast narratif et nomme sa question centrale."
+    },
+    "it": {
+     "t": "Podcast narrativi di non-fiction",
+     "g": "Conoscere reportage raccontati a episodi con scene e personaggi.",
+     "p": [
+      "Questi programmi raccontano storie vere con scene, voci e suoni.",
+      "I reporter raccolgono interviste e registrazioni e le plasmano in una storia.",
+      "Una buona narrazione ha una domanda, svolte e un finale soddisfacente."
+     ],
+     "q": "Quale storia vera ameresti ascoltare raccontata come serie?",
+     "c": "Ascolta dieci minuti di un podcast narrativo e indica la sua domanda centrale."
+    },
+    "pt": {
+     "t": "Podcasts narrativos de não ficção",
+     "g": "Conhecer reportagens contadas em episódios com cenas e personagens.",
+     "p": [
+      "Estes programas contam histórias reais com cenas, vozes e som.",
+      "Os repórteres reúnem entrevistas e gravações e moldam-nas numa história.",
+      "Uma boa narrativa tem uma pergunta, reviravoltas e um final satisfatório."
+     ],
+     "q": "Que história real gostarias de ouvir contada em série?",
+     "c": "Ouve dez minutos de um podcast narrativo e indica a sua pergunta central."
+    },
+    "pt_BR": {
+     "t": "Podcasts narrativos de não ficção",
+     "g": "Conhecer reportagens contadas em episódios com cenas e personagens.",
+     "p": [
+      "Esses programas contam histórias reais com cenas, vozes e som.",
+      "Os repórteres reúnem entrevistas e gravações e moldam tudo numa história.",
+      "Uma boa narrativa tem uma pergunta, reviravoltas e um final satisfatório."
+     ],
+     "q": "Que história real você gostaria de ouvir contada em série?",
+     "c": "Ouça dez minutos de um podcast narrativo e diga qual é a pergunta central."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Audio fiction and audio drama",
+     "g": "Explore radio-play style stories made only of sound.",
+     "p": [
+      "Actors, music and sound effects replace pictures and build a world.",
+      "A footstep, a door or a breeze can tell you where the scene happens.",
+      "Listening with headphones in a quiet spot makes the story vivid."
+     ],
+     "q": "Which story or book would make a great audio drama?",
+     "c": "Close your eyes for two minutes of an audio drama and describe the scene."
+    },
+    "de": {
+     "t": "Hörspiel und Audiofiktion",
+     "g": "Geschichten im Hörspielstil kennenlernen, die nur aus Klang bestehen.",
+     "p": [
+      "Sprecher, Musik und Geräusche ersetzen Bilder und bauen eine Welt.",
+      "Ein Schritt, eine Tür oder ein Windhauch verrät, wo die Szene spielt.",
+      "Mit Kopfhörern an einem ruhigen Ort wirkt die Geschichte lebendig."
+     ],
+     "q": "Welche Geschichte oder welches Buch gäbe ein tolles Hörspiel?",
+     "c": "Schließ zwei Minuten eines Hörspiels lang die Augen und beschreibe die Szene."
+    },
+    "es": {
+     "t": "Ficción sonora y radioteatro",
+     "g": "Explorar historias al estilo radioteatro hechas solo de sonido.",
+     "p": [
+      "Actores, música y efectos sustituyen a las imágenes y construyen un mundo.",
+      "Un paso, una puerta o una brisa dicen dónde ocurre la escena.",
+      "Escuchar con auriculares en un lugar tranquilo hace la historia más viva."
+     ],
+     "q": "¿Qué historia o libro sería un gran radioteatro?",
+     "c": "Cierra los ojos durante dos minutos de un radioteatro y describe la escena."
+    },
+    "fr": {
+     "t": "Fiction audio et théâtre radiophonique",
+     "g": "Explorer des histoires façon pièce radiophonique, faites uniquement de son.",
+     "p": [
+      "Acteurs, musique et bruitages remplacent les images et bâtissent un monde.",
+      "Un pas, une porte ou une brise disent où se passe la scène.",
+      "Écouter au casque dans un endroit calme rend l'histoire vivante."
+     ],
+     "q": "Quelle histoire ou quel livre ferait un bon feuilleton radiophonique ?",
+     "c": "Ferme les yeux pendant deux minutes d'une fiction audio et décris la scène."
+    },
+    "it": {
+     "t": "Fiction audio e radiodramma",
+     "g": "Esplorare storie in stile radiodramma fatte solo di suono.",
+     "p": [
+      "Attori, musica ed effetti sostituiscono le immagini e costruiscono un mondo.",
+      "Un passo, una porta o una brezza dicono dove si svolge la scena.",
+      "Ascoltare con le cuffie in un posto tranquillo rende la storia vivida."
+     ],
+     "q": "Quale storia o libro sarebbe un bel radiodramma?",
+     "c": "Chiudi gli occhi per due minuti di un radiodramma e descrivi la scena."
+    },
+    "pt": {
+     "t": "Ficção sonora e teatro radiofónico",
+     "g": "Explorar histórias ao estilo de teatro radiofónico feitas só de som.",
+     "p": [
+      "Atores, música e efeitos substituem as imagens e constroem um mundo.",
+      "Um passo, uma porta ou uma brisa dizem onde decorre a cena.",
+      "Ouvir com auscultadores num sítio sossegado torna a história vívida."
+     ],
+     "q": "Que história ou livro daria um ótimo teatro radiofónico?",
+     "c": "Fecha os olhos durante dois minutos de uma ficção sonora e descreve a cena."
+    },
+    "pt_BR": {
+     "t": "Ficção sonora e radioteatro",
+     "g": "Explorar histórias no estilo radioteatro feitas só de som.",
+     "p": [
+      "Atores, música e efeitos substituem as imagens e constroem um mundo.",
+      "Um passo, uma porta ou uma brisa dizem onde acontece a cena.",
+      "Ouvir com fones em um lugar tranquilo deixa a história mais viva."
+     ],
+     "q": "Que história ou livro daria um ótimo radioteatro?",
+     "c": "Feche os olhos durante dois minutos de um radioteatro e descreva a cena."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Educational podcasts",
+     "g": "See how bite-sized episodes can teach history, science or skills.",
+     "p": [
+      "Short episodes break a big subject into pieces you can finish in a commute.",
+      "Clear explanations, examples and recaps help ideas stay in your memory.",
+      "Series often build step by step, so start from the first episode."
+     ],
+     "q": "What would you like to learn in ten-minute pieces?",
+     "c": "Pick one educational episode and tell someone one new thing you learned."
+    },
+    "de": {
+     "t": "Lern-Podcasts",
+     "g": "Sehen, wie kurze Folgen Geschichte, Wissenschaft oder Fertigkeiten vermitteln.",
+     "p": [
+      "Kurze Folgen teilen ein großes Thema in Häppchen für den Arbeitsweg.",
+      "Klare Erklärungen, Beispiele und Zusammenfassungen helfen beim Merken.",
+      "Reihen bauen oft Schritt für Schritt auf, beginne also bei Folge eins."
+     ],
+     "q": "Was möchtest du in Zehn-Minuten-Häppchen lernen?",
+     "c": "Wähle eine Lernfolge und erzähle jemandem eine neue Sache, die du gelernt hast."
+    },
+    "es": {
+     "t": "Pódcast educativos",
+     "g": "Ver cómo episodios breves enseñan historia, ciencia o habilidades.",
+     "p": [
+      "Los episodios cortos dividen un tema grande en partes que caben en un trayecto.",
+      "Explicaciones claras, ejemplos y resúmenes ayudan a recordar las ideas.",
+      "Las series suelen avanzar paso a paso, así que empieza por el primer episodio."
+     ],
+     "q": "¿Qué te gustaría aprender en porciones de diez minutos?",
+     "c": "Elige un episodio educativo y cuéntale a alguien algo nuevo que aprendiste."
+    },
+    "fr": {
+     "t": "Les podcasts éducatifs",
+     "g": "Voir comment de courts épisodes enseignent histoire, science ou savoir-faire.",
+     "p": [
+      "Les épisodes courts découpent un grand sujet en morceaux pour un trajet.",
+      "Explications claires, exemples et résumés aident à retenir les idées.",
+      "Les séries progressent souvent pas à pas : commence par le premier épisode."
+     ],
+     "q": "Que voudrais-tu apprendre en morceaux de dix minutes ?",
+     "c": "Choisis un épisode éducatif et raconte à quelqu'un une chose nouvelle apprise."
+    },
+    "it": {
+     "t": "Podcast educativi",
+     "g": "Vedere come brevi episodi insegnano storia, scienza o competenze.",
+     "p": [
+      "Gli episodi brevi dividono un grande tema in pezzi da ascoltare in un tragitto.",
+      "Spiegazioni chiare, esempi e riassunti aiutano a ricordare le idee.",
+      "Le serie spesso procedono passo dopo passo, quindi parti dal primo episodio."
+     ],
+     "q": "Che cosa ti piacerebbe imparare in pillole da dieci minuti?",
+     "c": "Scegli un episodio educativo e racconta a qualcuno una cosa nuova che hai imparato."
+    },
+    "pt": {
+     "t": "Podcasts educativos",
+     "g": "Ver como episódios curtos ensinam história, ciência ou competências.",
+     "p": [
+      "Episódios curtos dividem um grande tema em partes que cabem numa viagem.",
+      "Explicações claras, exemplos e resumos ajudam a fixar as ideias.",
+      "As séries costumam avançar passo a passo, por isso começa pelo primeiro episódio."
+     ],
+     "q": "O que gostarias de aprender em doses de dez minutos?",
+     "c": "Escolhe um episódio educativo e conta a alguém uma coisa nova que aprendeste."
+    },
+    "pt_BR": {
+     "t": "Podcasts educativos",
+     "g": "Ver como episódios curtos ensinam história, ciência ou habilidades.",
+     "p": [
+      "Episódios curtos dividem um grande assunto em partes que cabem num trajeto.",
+      "Explicações claras, exemplos e resumos ajudam a fixar as ideias.",
+      "As séries costumam avançar passo a passo, então comece pelo primeiro episódio."
+     ],
+     "q": "O que você gostaria de aprender em doses de dez minutos?",
+     "c": "Escolha um episódio educativo e conte a alguém uma coisa nova que aprendeu."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Comedy podcasts",
+     "g": "Enjoy shows built on banter, sketches and funny hosts.",
+     "p": [
+      "Many comedy shows rely on chemistry and improvisation between hosts.",
+      "Sketch shows use voices, music and sound effects to build jokes.",
+      "Humour is personal, so sample a few styles to find yours."
+     ],
+     "q": "What kind of humour makes you laugh out loud?",
+     "c": "Try five minutes of two different comedy shows and pick the funnier one."
+    },
+    "de": {
+     "t": "Comedy-Podcasts",
+     "g": "Sendungen genießen, die von Geplänkel, Sketchen und lustigen Stimmen leben.",
+     "p": [
+      "Viele Comedy-Sendungen leben von Chemie und Improvisation der Moderierenden.",
+      "Sketch-Sendungen bauen Witze mit Stimmen, Musik und Geräuschen.",
+      "Humor ist persönlich, probiere also verschiedene Stile aus."
+     ],
+     "q": "Welcher Humor bringt dich laut zum Lachen?",
+     "c": "Höre je fünf Minuten zweier Comedy-Sendungen und wähle die lustigere."
+    },
+    "es": {
+     "t": "Pódcast de humor",
+     "g": "Disfrutar de programas basados en bromas, sketches y presentadores graciosos.",
+     "p": [
+      "Muchos programas de humor dependen de la química y la improvisación.",
+      "Los sketches usan voces, música y efectos para construir los chistes.",
+      "El humor es personal, así que prueba varios estilos hasta dar con el tuyo."
+     ],
+     "q": "¿Qué tipo de humor te hace reír a carcajadas?",
+     "c": "Prueba cinco minutos de dos programas de humor y elige el más gracioso."
+    },
+    "fr": {
+     "t": "Les podcasts d'humour",
+     "g": "Profiter d'émissions bâties sur la répartie, les sketchs et des animateurs drôles.",
+     "p": [
+      "Beaucoup d'émissions d'humour reposent sur la complicité et l'improvisation.",
+      "Les sketchs utilisent voix, musique et bruitages pour construire les blagues.",
+      "L'humour est personnel : essaie plusieurs styles pour trouver le tien."
+     ],
+     "q": "Quel genre d'humour te fait éclater de rire ?",
+     "c": "Essaie cinq minutes de deux émissions d'humour et choisis la plus drôle."
+    },
+    "it": {
+     "t": "Podcast comici",
+     "g": "Divertirsi con programmi basati su battute, sketch e conduttori simpatici.",
+     "p": [
+      "Molti programmi comici si basano su intesa e improvvisazione.",
+      "Gli sketch usano voci, musica ed effetti per costruire le battute.",
+      "L'umorismo è personale: assaggia vari stili per trovare il tuo."
+     ],
+     "q": "Quale tipo di umorismo ti fa ridere a crepapelle?",
+     "c": "Prova cinque minuti di due programmi comici e scegli il più divertente."
+    },
+    "pt": {
+     "t": "Podcasts de humor",
+     "g": "Divertir-te com programas baseados em improviso, sketches e apresentadores engraçados.",
+     "p": [
+      "Muitos programas de humor dependem da química e da improvisação.",
+      "Os sketches usam vozes, música e efeitos para construir as piadas.",
+      "O humor é pessoal, por isso experimenta vários estilos até achares o teu."
+     ],
+     "q": "Que tipo de humor te faz rir às gargalhadas?",
+     "c": "Experimenta cinco minutos de dois programas de humor e escolhe o mais engraçado."
+    },
+    "pt_BR": {
+     "t": "Podcasts de humor",
+     "g": "Curtir programas baseados em improviso, esquetes e apresentadores engraçados.",
+     "p": [
+      "Muitos programas de humor dependem de química e improviso.",
+      "Os esquetes usam vozes, música e efeitos para construir as piadas.",
+      "Humor é pessoal, então experimente vários estilos até achar o seu."
+     ],
+     "q": "Que tipo de humor faz você rir alto?",
+     "c": "Experimente cinco minutos de dois programas de humor e escolha o mais engraçado."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Panel and roundtable shows",
+     "g": "Hear how several voices can explore one topic from many angles.",
+     "p": [
+      "A moderator keeps the talk fair so everyone gets time to speak.",
+      "Different backgrounds bring different views on the same question.",
+      "Good panels build on each other's points rather than talk over them."
+     ],
+     "q": "Which topic would you like a panel of different voices to discuss?",
+     "c": "Listen to a panel and note two different views on the same question."
+    },
+    "de": {
+     "t": "Panel- und Gesprächsrunden",
+     "g": "Hören, wie mehrere Stimmen ein Thema aus vielen Blickwinkeln beleuchten.",
+     "p": [
+      "Eine Moderation sorgt für Fairness, damit alle zu Wort kommen.",
+      "Verschiedene Hintergründe bringen verschiedene Sichtweisen auf dieselbe Frage.",
+      "Gute Runden knüpfen an Beiträge anderer an, statt durcheinanderzureden."
+     ],
+     "q": "Welches Thema soll eine Runde unterschiedlicher Stimmen besprechen?",
+     "c": "Höre eine Gesprächsrunde und notiere zwei verschiedene Sichtweisen zur selben Frage."
+    },
+    "es": {
+     "t": "Mesas redondas y paneles",
+     "g": "Oír cómo varias voces exploran un tema desde muchos ángulos.",
+     "p": [
+      "Un moderador mantiene el diálogo justo para que todos tengan tiempo.",
+      "Trayectorias distintas aportan miradas distintas a la misma pregunta.",
+      "Los buenos paneles se apoyan en lo dicho por otros en vez de pisarse."
+     ],
+     "q": "¿Qué tema te gustaría que debatiera un panel de voces distintas?",
+     "c": "Escucha un panel y apunta dos puntos de vista distintos sobre la misma pregunta."
+    },
+    "fr": {
+     "t": "Tables rondes et panels",
+     "g": "Entendre comment plusieurs voix explorent un sujet sous différents angles.",
+     "p": [
+      "Un modérateur garde l'échange équitable pour que chacun puisse parler.",
+      "Des parcours différents apportent des regards différents sur une même question.",
+      "Les bons panels rebondissent sur les propos des autres au lieu de se couper."
+     ],
+     "q": "Quel sujet aimerais-tu voir discuté par un panel de voix variées ?",
+     "c": "Écoute un panel et note deux points de vue différents sur la même question."
+    },
+    "it": {
+     "t": "Tavole rotonde e panel",
+     "g": "Sentire come più voci esplorano un tema da molti punti di vista.",
+     "p": [
+      "Un moderatore tiene il dialogo equo perché tutti abbiano tempo di parlare.",
+      "Esperienze diverse portano sguardi diversi sulla stessa domanda.",
+      "I buoni panel si appoggiano ai punti degli altri invece di sovrapporsi."
+     ],
+     "q": "Quale tema vorresti far discutere a un panel di voci diverse?",
+     "c": "Ascolta un panel e annota due punti di vista diversi sulla stessa domanda."
+    },
+    "pt": {
+     "t": "Mesas-redondas e painéis",
+     "g": "Ouvir como várias vozes exploram um tema de muitos ângulos.",
+     "p": [
+      "Um moderador mantém a conversa justa para todos terem tempo de falar.",
+      "Percursos diferentes trazem olhares diferentes sobre a mesma pergunta.",
+      "Os bons painéis apoiam-se no que os outros dizem em vez de se sobreporem."
+     ],
+     "q": "Que tema gostarias que um painel de vozes diferentes discutisse?",
+     "c": "Ouve um painel e anota dois pontos de vista diferentes sobre a mesma pergunta."
+    },
+    "pt_BR": {
+     "t": "Mesas-redondas e painéis",
+     "g": "Ouvir como várias vozes exploram um tema de muitos ângulos.",
+     "p": [
+      "Um moderador mantém a conversa justa para todos terem tempo de falar.",
+      "Trajetórias diferentes trazem olhares diferentes sobre a mesma pergunta.",
+      "Bons painéis se apoiam no que os outros dizem em vez de se sobrepor."
+     ],
+     "q": "Que tema você gostaria que um painel de vozes diferentes discutisse?",
+     "c": "Ouça um painel e anote dois pontos de vista diferentes sobre a mesma pergunta."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Daily briefing shows",
+     "g": "See how short, regular episodes fit a morning routine.",
+     "p": [
+      "A briefing is short, often ten to twenty minutes, and comes out on a steady schedule.",
+      "Regular timing builds a habit, like a morning coffee for your ears.",
+      "Clear structure and tight writing make quick shows easy to follow."
+     ],
+     "q": "What would you want in a ten-minute morning show?",
+     "c": "Pick a short daily show and listen to it with your breakfast or coffee."
+    },
+    "de": {
+     "t": "Tägliche Kurzformate",
+     "g": "Sehen, wie kurze, regelmäßige Folgen in die Morgenroutine passen.",
+     "p": [
+      "Ein Briefing ist kurz, oft zehn bis zwanzig Minuten, und kommt verlässlich.",
+      "Feste Zeiten schaffen eine Gewohnheit, wie ein Morgenkaffee für die Ohren.",
+      "Klare Struktur und knappe Texte machen kurze Sendungen leicht verständlich."
+     ],
+     "q": "Was wünschst du dir von einer zehnminütigen Morgensendung?",
+     "c": "Wähle eine kurze tägliche Sendung und höre sie beim Frühstück oder Kaffee."
+    },
+    "es": {
+     "t": "Programas diarios breves",
+     "g": "Ver cómo episodios cortos y regulares encajan en la rutina de la mañana.",
+     "p": [
+      "Un resumen diario es breve, a menudo de diez a veinte minutos, y sale con regularidad.",
+      "El horario fijo crea hábito, como un café matutino para tus oídos.",
+      "Una estructura clara y textos ajustados hacen fácil seguir los programas rápidos."
+     ],
+     "q": "¿Qué querrías en un programa matinal de diez minutos?",
+     "c": "Elige un programa diario corto y escúchalo con el desayuno o el café."
+    },
+    "fr": {
+     "t": "Les émissions quotidiennes courtes",
+     "g": "Voir comment des épisodes courts et réguliers s'intègrent à la routine matinale.",
+     "p": [
+      "Un point quotidien est court, souvent dix à vingt minutes, et sort à rythme fixe.",
+      "Un horaire régulier crée l'habitude, comme un café du matin pour les oreilles.",
+      "Une structure claire et une écriture serrée rendent les émissions rapides faciles à suivre."
+     ],
+     "q": "Que voudrais-tu dans une émission matinale de dix minutes ?",
+     "c": "Choisis une courte émission quotidienne et écoute-la au petit-déjeuner ou au café."
+    },
+    "it": {
+     "t": "Programmi quotidiani brevi",
+     "g": "Vedere come episodi brevi e regolari si inseriscono nella routine del mattino.",
+     "p": [
+      "Un breve riepilogo dura spesso dieci o venti minuti ed esce con regolarità.",
+      "Un orario fisso crea abitudine, come un caffè del mattino per le orecchie.",
+      "Struttura chiara e testi essenziali rendono facili da seguire i programmi veloci."
+     ],
+     "q": "Cosa vorresti in un programma mattutino di dieci minuti?",
+     "c": "Scegli un breve programma quotidiano e ascoltalo a colazione o con il caffè."
+    },
+    "pt": {
+     "t": "Programas diários curtos",
+     "g": "Ver como episódios curtos e regulares cabem na rotina da manhã.",
+     "p": [
+      "Um resumo diário é curto, muitas vezes dez a vinte minutos, e sai com regularidade.",
+      "O horário fixo cria hábito, como um café da manhã para os ouvidos.",
+      "Estrutura clara e textos enxutos tornam fáceis de seguir os programas rápidos."
+     ],
+     "q": "O que gostarias de ter num programa matinal de dez minutos?",
+     "c": "Escolhe um programa diário curto e ouve-o ao pequeno-almoço ou com o café."
+    },
+    "pt_BR": {
+     "t": "Programas diários curtos",
+     "g": "Ver como episódios curtos e regulares cabem na rotina da manhã.",
+     "p": [
+      "Um resumo diário é curto, muitas vezes de dez a vinte minutos, e sai com regularidade.",
+      "Horário fixo cria hábito, como um café da manhã para os ouvidos.",
+      "Estrutura clara e textos enxutos facilitam acompanhar os programas rápidos."
+     ],
+     "q": "O que você gostaria de ter num programa matinal de dez minutos?",
+     "c": "Escolha um programa diário curto e ouça no café da manhã."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Language-learning podcasts",
+     "g": "Learn how audio can help you practise a new language.",
+     "p": [
+      "Slow dialogues and clear explanations suit beginners well.",
+      "Listening trains your ear for rhythm, sounds and everyday phrases.",
+      "Repeat phrases aloud and replay hard parts to make them stick."
+     ],
+     "q": "Which language would you like to hear more of?",
+     "c": "Listen to a short lesson in a language you want to learn and repeat three phrases."
+    },
+    "de": {
+     "t": "Sprachlern-Podcasts",
+     "g": "Lernen, wie Audio beim Üben einer neuen Sprache hilft.",
+     "p": [
+      "Langsame Dialoge und klare Erklärungen passen gut zu Anfängern.",
+      "Zuhören schult das Ohr für Rhythmus, Laute und Alltagsphrasen.",
+      "Sprich Sätze laut nach und höre schwere Stellen mehrmals, damit sie sitzen."
+     ],
+     "q": "Welche Sprache möchtest du öfter hören?",
+     "c": "Höre eine kurze Lektion in einer Wunschsprache und sprich drei Sätze nach."
+    },
+    "es": {
+     "t": "Pódcast para aprender idiomas",
+     "g": "Aprender cómo el audio ayuda a practicar un idioma nuevo.",
+     "p": [
+      "Los diálogos lentos y las explicaciones claras van bien a los principiantes.",
+      "Escuchar entrena el oído para el ritmo, los sonidos y las frases diarias.",
+      "Repite las frases en voz alta y vuelve a oír lo difícil para que se quede."
+     ],
+     "q": "¿De qué idioma te gustaría oír más?",
+     "c": "Escucha una lección corta en un idioma que quieras aprender y repite tres frases."
+    },
+    "fr": {
+     "t": "Les podcasts pour apprendre une langue",
+     "g": "Voir comment l'audio aide à pratiquer une nouvelle langue.",
+     "p": [
+      "Les dialogues lents et les explications claires conviennent aux débutants.",
+      "Écouter entraîne l'oreille au rythme, aux sons et aux phrases du quotidien.",
+      "Répète les phrases à voix haute et réécoute les passages difficiles pour les fixer."
+     ],
+     "q": "De quelle langue aimerais-tu entendre davantage ?",
+     "c": "Écoute une courte leçon dans une langue que tu veux apprendre et répète trois phrases."
+    },
+    "it": {
+     "t": "Podcast per imparare le lingue",
+     "g": "Scoprire come l'audio aiuta a praticare una lingua nuova.",
+     "p": [
+      "Dialoghi lenti e spiegazioni chiare vanno bene per i principianti.",
+      "Ascoltare allena l'orecchio a ritmo, suoni e frasi quotidiane.",
+      "Ripeti le frasi ad alta voce e riascolta le parti difficili per fissarle."
+     ],
+     "q": "Quale lingua ti piacerebbe sentire di più?",
+     "c": "Ascolta una breve lezione in una lingua che vuoi imparare e ripeti tre frasi."
+    },
+    "pt": {
+     "t": "Podcasts para aprender línguas",
+     "g": "Perceber como o áudio ajuda a praticar uma língua nova.",
+     "p": [
+      "Diálogos lentos e explicações claras servem bem aos principiantes.",
+      "Ouvir treina o ouvido para o ritmo, os sons e as frases do dia a dia.",
+      "Repete as frases em voz alta e volta a ouvir o que é difícil para fixar."
+     ],
+     "q": "Que língua gostarias de ouvir mais?",
+     "c": "Ouve uma lição curta numa língua que queiras aprender e repete três frases."
+    },
+    "pt_BR": {
+     "t": "Podcasts para aprender idiomas",
+     "g": "Entender como o áudio ajuda a praticar um idioma novo.",
+     "p": [
+      "Diálogos lentos e explicações claras combinam bem com iniciantes.",
+      "Ouvir treina o ouvido para o ritmo, os sons e as frases do dia a dia.",
+      "Repita as frases em voz alta e ouça de novo o que é difícil para fixar."
+     ],
+     "q": "Que idioma você gostaria de ouvir mais?",
+     "c": "Ouça uma lição curta em um idioma que quer aprender e repita três frases."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Podcasts for learning about cultures",
+     "g": "Travel through sound by hearing other countries, foods and traditions.",
+     "p": [
+      "Local guests and storytellers share how daily life feels in their place.",
+      "Food, festivals and music make wonderful entry points to a culture.",
+      "Listen with curiosity and avoid judging; every place has its own logic."
+     ],
+     "q": "Which country or tradition would you like to hear about first?",
+     "c": "Find one episode about a culture you know little about and note one surprise."
+    },
+    "de": {
+     "t": "Podcasts über andere Kulturen",
+     "g": "Per Klang reisen: andere Länder, Speisen und Traditionen kennenlernen.",
+     "p": [
+      "Einheimische Gäste und Erzähler zeigen, wie sich der Alltag bei ihnen anfühlt.",
+      "Essen, Feste und Musik sind schöne Türen zu einer Kultur.",
+      "Höre neugierig und ohne zu urteilen; jeder Ort hat seine eigene Logik."
+     ],
+     "q": "Über welches Land oder welche Tradition möchtest du zuerst etwas hören?",
+     "c": "Finde eine Folge über eine dir wenig bekannte Kultur und notiere eine Überraschung."
+    },
+    "es": {
+     "t": "Pódcast para conocer culturas",
+     "g": "Viajar a través del sonido conociendo otros países, comidas y tradiciones.",
+     "p": [
+      "Invitados locales y narradores cuentan cómo se vive el día a día en su lugar.",
+      "La comida, las fiestas y la música son buenas puertas a una cultura.",
+      "Escucha con curiosidad y sin juzgar; cada lugar tiene su propia lógica."
+     ],
+     "q": "¿Qué país o tradición te gustaría conocer primero?",
+     "c": "Busca un episodio sobre una cultura que conozcas poco y apunta una sorpresa."
+    },
+    "fr": {
+     "t": "Les podcasts pour découvrir les cultures",
+     "g": "Voyager par le son en découvrant d'autres pays, plats et traditions.",
+     "p": [
+      "Des invités locaux et conteurs racontent leur vie quotidienne chez eux.",
+      "La cuisine, les fêtes et la musique sont de belles portes vers une culture.",
+      "Écoute avec curiosité, sans juger : chaque lieu a sa propre logique."
+     ],
+     "q": "Quel pays ou quelle tradition aimerais-tu découvrir en premier ?",
+     "c": "Trouve un épisode sur une culture que tu connais peu et note une surprise."
+    },
+    "it": {
+     "t": "Podcast per conoscere le culture",
+     "g": "Viaggiare con il suono scoprendo altri paesi, cibi e tradizioni.",
+     "p": [
+      "Ospiti locali e narratori raccontano com'è la vita quotidiana da loro.",
+      "Cibo, feste e musica sono ottime porte d'ingresso a una cultura.",
+      "Ascolta con curiosità e senza giudicare: ogni luogo ha la sua logica."
+     ],
+     "q": "Quale paese o tradizione ti piacerebbe conoscere per primo?",
+     "c": "Trova un episodio su una cultura che conosci poco e annota una sorpresa."
+    },
+    "pt": {
+     "t": "Podcasts para conhecer culturas",
+     "g": "Viajar pelo som a conhecer outros países, comidas e tradições.",
+     "p": [
+      "Convidados locais e contadores de histórias mostram como é o dia a dia no seu lugar.",
+      "A comida, as festas e a música são boas portas para uma cultura.",
+      "Ouve com curiosidade e sem julgar; cada lugar tem a sua lógica."
+     ],
+     "q": "Que país ou tradição gostarias de conhecer primeiro?",
+     "c": "Procura um episódio sobre uma cultura que conheças mal e anota uma surpresa."
+    },
+    "pt_BR": {
+     "t": "Podcasts para conhecer culturas",
+     "g": "Viajar pelo som conhecendo outros países, comidas e tradições.",
+     "p": [
+      "Convidados locais e contadores de histórias mostram como é o dia a dia no lugar deles.",
+      "Comida, festas e música são boas portas de entrada para uma cultura.",
+      "Ouça com curiosidade e sem julgar; cada lugar tem a sua lógica."
+     ],
+     "q": "Que país ou tradição você gostaria de conhecer primeiro?",
+     "c": "Procure um episódio sobre uma cultura que você conhece pouco e anote uma surpresa."
+    }
+   }
+  }
+ ]
+}

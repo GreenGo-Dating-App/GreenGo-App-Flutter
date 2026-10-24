@@ -1,0 +1,835 @@
+{
+ "topic": "gratitude",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Morning gratitude",
+     "g": "Start the day by naming one thing you are looking forward to.",
+     "p": [
+      "A short morning thought sets a gentle tone before the day gets busy.",
+      "The thing can be tiny, like a coffee, a chat or a walk.",
+      "If nothing feels exciting, pick something simply neutral or comfortable."
+     ],
+     "q": "What is one thing you are looking forward to today?",
+     "c": "Before reaching for your phone tomorrow, name one thing you look forward to."
+    },
+    "de": {
+     "t": "Dankbarkeit am Morgen",
+     "g": "Beginne den Tag, indem du etwas nennst, auf das du dich freust.",
+     "p": [
+      "Ein kurzer Gedanke am Morgen gibt dem Tag einen sanften Ton, bevor es hektisch wird.",
+      "Es darf winzig sein, etwa ein Kaffee, ein Gespräch oder ein Spaziergang.",
+      "Wenn nichts aufregend wirkt, wähle etwas Angenehmes oder einfach Neutrales."
+     ],
+     "q": "Worauf freust du dich heute?",
+     "c": "Nenne morgen, bevor du zum Handy greifst, eine Sache, auf die du dich freust."
+    },
+    "es": {
+     "t": "Gratitud por la mañana",
+     "g": "Empieza el día nombrando algo que esperas con ilusión.",
+     "p": [
+      "Un pensamiento breve por la mañana da un tono suave antes de que el día se llene.",
+      "Puede ser algo diminuto, como un café, una charla o un paseo.",
+      "Si nada te parece emocionante, elige algo simplemente cómodo o neutral."
+     ],
+     "q": "¿Qué es algo que esperas con ganas hoy?",
+     "c": "Mañana, antes de coger el móvil, nombra una cosa que esperas con ganas."
+    },
+    "fr": {
+     "t": "Gratitude du matin",
+     "g": "Commence la journée en nommant une chose que tu attends avec plaisir.",
+     "p": [
+      "Une courte pensée le matin donne un ton doux avant que la journée ne s'agite.",
+      "Cela peut être minuscule, comme un café, une discussion ou une promenade.",
+      "Si rien ne t'enthousiasme, choisis quelque chose de simplement agréable ou neutre."
+     ],
+     "q": "Qu'est-ce que tu attends avec plaisir aujourd'hui ?",
+     "c": "Demain, avant de prendre ton téléphone, nomme une chose que tu attends avec plaisir."
+    },
+    "it": {
+     "t": "Gratitudine del mattino",
+     "g": "Inizia la giornata nominando una cosa che attendi con piacere.",
+     "p": [
+      "Un breve pensiero al mattino dà un tono gentile prima che la giornata si riempia.",
+      "Può essere minuscola, come un caffè, una chiacchierata o una passeggiata.",
+      "Se nulla ti entusiasma, scegli qualcosa di semplicemente piacevole o neutro."
+     ],
+     "q": "Cosa non vedi l'ora di fare oggi?",
+     "c": "Domani, prima di prendere il telefono, nomina una cosa che attendi con piacere."
+    },
+    "pt": {
+     "t": "Gratidão de manhã",
+     "g": "Começa o dia dizendo uma coisa por que esperas com gosto.",
+     "p": [
+      "Um pensamento breve de manhã dá um tom suave antes de o dia ficar agitado.",
+      "Pode ser minúsculo, como um café, uma conversa ou um passeio.",
+      "Se nada parecer entusiasmante, escolhe algo simplesmente agradável ou neutro."
+     ],
+     "q": "O que é que esperas com gosto hoje?",
+     "c": "Amanhã, antes de pegares no telemóvel, diz uma coisa que esperas com gosto."
+    },
+    "pt_BR": {
+     "t": "Gratidão de manhã",
+     "g": "Comece o dia dizendo uma coisa que você espera com alegria.",
+     "p": [
+      "Um pensamento breve de manhã dá um tom suave antes de o dia ficar corrido.",
+      "Pode ser minúsculo, como um café, uma conversa ou uma caminhada.",
+      "Se nada parecer empolgante, escolha algo simplesmente agradável ou neutro."
+     ],
+     "q": "O que você espera com alegria hoje?",
+     "c": "Amanhã, antes de pegar o celular, diga uma coisa que você espera com alegria."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Evening gratitude",
+     "g": "End the day by recalling three bright moments.",
+     "p": [
+      "Ending the day on good memories helps your mind settle before sleep.",
+      "Replay each moment briefly, like a short film in your head.",
+      "A hard day still has bright spots; they may just be quieter."
+     ],
+     "q": "What were your three brightest moments today?",
+     "c": "Tonight, recall three bright moments from today and smile at each one."
+    },
+    "de": {
+     "t": "Dankbarkeit am Abend",
+     "g": "Beende den Tag mit der Erinnerung an drei helle Momente.",
+     "p": [
+      "Den Tag mit guten Erinnerungen zu beenden hilft dem Geist, vor dem Schlafen zur Ruhe zu kommen.",
+      "Spiele jeden Moment kurz ab, wie einen kleinen Film im Kopf.",
+      "Auch ein schwerer Tag hat helle Stellen; sie sind vielleicht nur leiser."
+     ],
+     "q": "Welche waren deine drei hellsten Momente heute?",
+     "c": "Erinnere dich heute Abend an drei helle Momente des Tages und lächle bei jedem."
+    },
+    "es": {
+     "t": "Gratitud por la noche",
+     "g": "Termina el día recordando tres momentos luminosos.",
+     "p": [
+      "Cerrar el día con buenos recuerdos ayuda a que la mente se asiente antes de dormir.",
+      "Repite cada momento brevemente, como una pequeña película en tu cabeza.",
+      "Un día duro también tiene puntos de luz; quizá solo son más discretos."
+     ],
+     "q": "¿Cuáles fueron tus tres momentos más luminosos de hoy?",
+     "c": "Esta noche recuerda tres momentos luminosos de hoy y sonríe con cada uno."
+    },
+    "fr": {
+     "t": "Gratitude du soir",
+     "g": "Termine la journée en te rappelant trois moments lumineux.",
+     "p": [
+      "Finir la journée sur de bons souvenirs aide l'esprit à se poser avant le sommeil.",
+      "Rejoue chaque moment brièvement, comme un petit film dans ta tête.",
+      "Une journée difficile a aussi ses éclaircies ; elles sont peut-être plus discrètes."
+     ],
+     "q": "Quels ont été tes trois moments les plus lumineux aujourd'hui ?",
+     "c": "Ce soir, rappelle-toi trois moments lumineux du jour et souris à chacun."
+    },
+    "it": {
+     "t": "Gratitudine della sera",
+     "g": "Concludi la giornata ricordando tre momenti luminosi.",
+     "p": [
+      "Finire la giornata con bei ricordi aiuta la mente ad acquietarsi prima di dormire.",
+      "Rivivi ogni momento brevemente, come un piccolo film nella testa.",
+      "Anche una giornata dura ha i suoi punti di luce; magari sono solo più discreti."
+     ],
+     "q": "Quali sono stati i tuoi tre momenti più luminosi di oggi?",
+     "c": "Stasera ricorda tre momenti luminosi di oggi e sorridi a ciascuno."
+    },
+    "pt": {
+     "t": "Gratidão à noite",
+     "g": "Termina o dia recordando três momentos luminosos.",
+     "p": [
+      "Acabar o dia com boas memórias ajuda a mente a assentar antes de dormir.",
+      "Repete cada momento brevemente, como um pequeno filme na cabeça.",
+      "Um dia difícil também tem pontos de luz; talvez sejam apenas mais discretos."
+     ],
+     "q": "Quais foram os teus três momentos mais luminosos de hoje?",
+     "c": "Esta noite, recorda três momentos luminosos de hoje e sorri a cada um."
+    },
+    "pt_BR": {
+     "t": "Gratidão à noite",
+     "g": "Termine o dia lembrando três momentos luminosos.",
+     "p": [
+      "Terminar o dia com boas lembranças ajuda a mente a se acalmar antes de dormir.",
+      "Reveja cada momento brevemente, como um pequeno filme na cabeça.",
+      "Um dia difícil também tem pontos de luz; talvez sejam só mais discretos."
+     ],
+     "q": "Quais foram seus três momentos mais luminosos de hoje?",
+     "c": "Hoje à noite, lembre três momentos luminosos do dia e sorria para cada um."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gratitude anchors",
+     "g": "Link a grateful thought to a daily routine like brushing your teeth.",
+     "p": [
+      "An anchor is something you already do daily that reminds you to practise.",
+      "Habits stick best when attached to existing routines.",
+      "Choose one anchor: the kettle, the commute, washing your hands."
+     ],
+     "q": "Which daily routine could become your gratitude anchor?",
+     "c": "Pick one routine and think one grateful thought each time you do it today."
+    },
+    "de": {
+     "t": "Dankbarkeits-Anker",
+     "g": "Verknüpfe einen dankbaren Gedanken mit einer Alltagsroutine wie dem Zähneputzen.",
+     "p": [
+      "Ein Anker ist etwas, das du täglich ohnehin tust und das dich ans Üben erinnert.",
+      "Gewohnheiten halten am besten, wenn sie an bestehende Routinen gekoppelt sind.",
+      "Wähle einen Anker: den Wasserkocher, den Arbeitsweg, das Händewaschen."
+     ],
+     "q": "Welche tägliche Routine könnte dein Dankbarkeits-Anker werden?",
+     "c": "Wähle eine Routine und denke heute bei jedem Mal einen dankbaren Gedanken."
+    },
+    "es": {
+     "t": "Anclas de gratitud",
+     "g": "Une un pensamiento agradecido a una rutina diaria, como cepillarte los dientes.",
+     "p": [
+      "Un ancla es algo que ya haces cada día y que te recuerda practicar.",
+      "Los hábitos se asientan mejor cuando se unen a rutinas existentes.",
+      "Elige un ancla: el hervidor, el trayecto al trabajo, lavarte las manos."
+     ],
+     "q": "¿Qué rutina diaria podría ser tu ancla de gratitud?",
+     "c": "Elige una rutina y piensa algo agradecido cada vez que la hagas hoy."
+    },
+    "fr": {
+     "t": "Ancres de gratitude",
+     "g": "Associe une pensée reconnaissante à une routine quotidienne, comme te brosser les dents.",
+     "p": [
+      "Une ancre est quelque chose que tu fais déjà chaque jour et qui te rappelle de pratiquer.",
+      "Les habitudes tiennent mieux quand elles s'accrochent à des routines existantes.",
+      "Choisis une ancre : la bouilloire, le trajet, le lavage des mains."
+     ],
+     "q": "Quelle routine quotidienne pourrait devenir ton ancre de gratitude ?",
+     "c": "Choisis une routine et pense à une chose reconnaissante à chaque fois que tu la fais aujourd'hui."
+    },
+    "it": {
+     "t": "Ancore di gratitudine",
+     "g": "Collega un pensiero grato a una routine quotidiana, come lavarti i denti.",
+     "p": [
+      "Un'ancora è qualcosa che fai già ogni giorno e che ti ricorda di praticare.",
+      "Le abitudini reggono meglio quando si legano a routine esistenti.",
+      "Scegli un'ancora: il bollitore, il tragitto, il lavaggio delle mani."
+     ],
+     "q": "Quale routine quotidiana potrebbe diventare la tua ancora di gratitudine?",
+     "c": "Scegli una routine e pensa a qualcosa di grato ogni volta che la fai oggi."
+    },
+    "pt": {
+     "t": "Âncoras de gratidão",
+     "g": "Liga um pensamento grato a uma rotina diária, como lavar os dentes.",
+     "p": [
+      "Uma âncora é algo que já fazes todos os dias e que te lembra de praticar.",
+      "Os hábitos fixam-se melhor quando ligados a rotinas que já existem.",
+      "Escolhe uma âncora: a chaleira, o caminho para o trabalho, lavar as mãos."
+     ],
+     "q": "Que rotina diária podia ser a tua âncora de gratidão?",
+     "c": "Escolhe uma rotina e pensa algo de agradecido sempre que a fizeres hoje."
+    },
+    "pt_BR": {
+     "t": "Âncoras de gratidão",
+     "g": "Ligue um pensamento grato a uma rotina diária, como escovar os dentes.",
+     "p": [
+      "Uma âncora é algo que você já faz todo dia e que lembra de praticar.",
+      "Hábitos se fixam melhor quando ligados a rotinas que já existem.",
+      "Escolha uma âncora: a chaleira, o trajeto para o trabalho, lavar as mãos."
+     ],
+     "q": "Que rotina diária poderia ser sua âncora de gratidão?",
+     "c": "Escolha uma rotina e pense em algo agradecido toda vez que fizer isso hoje."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "People who brightened your day",
+     "g": "Think of one person who made your day a little better.",
+     "p": [
+      "Other people are often the biggest source of our good moments.",
+      "The act can be small: a smile, a held door, a funny comment.",
+      "Noticing it helps you see how connected your good days are."
+     ],
+     "q": "Who made your day a little better recently, and how?",
+     "c": "Think of one person who brightened today and picture their kindness for a moment."
+    },
+    "de": {
+     "t": "Menschen, die deinen Tag erhellten",
+     "g": "Denke an einen Menschen, der deinen Tag ein wenig besser gemacht hat.",
+     "p": [
+      "Andere Menschen sind oft die größte Quelle unserer guten Momente.",
+      "Die Geste kann klein sein: ein Lächeln, eine aufgehaltene Tür, ein lustiger Spruch.",
+      "Es zu bemerken zeigt dir, wie verbunden deine guten Tage sind."
+     ],
+     "q": "Wer hat deinen Tag zuletzt ein wenig besser gemacht, und wie?",
+     "c": "Denke an einen Menschen, der heute etwas Licht brachte, und stelle dir seine Freundlichkeit kurz vor."
+    },
+    "es": {
+     "t": "Personas que iluminaron tu día",
+     "g": "Piensa en una persona que hizo tu día un poco mejor.",
+     "p": [
+      "Otras personas suelen ser la mayor fuente de nuestros buenos momentos.",
+      "El gesto puede ser pequeño: una sonrisa, una puerta sostenida, un comentario gracioso.",
+      "Notarlo te ayuda a ver lo conectados que están tus buenos días."
+     ],
+     "q": "¿Quién hizo tu día un poco mejor últimamente y cómo?",
+     "c": "Piensa en una persona que alegró hoy y recuerda su amabilidad un momento."
+    },
+    "fr": {
+     "t": "Ces personnes qui ont éclairé ta journée",
+     "g": "Pense à une personne qui a rendu ta journée un peu meilleure.",
+     "p": [
+      "Les autres sont souvent la plus grande source de nos bons moments.",
+      "Le geste peut être petit : un sourire, une porte tenue, une remarque drôle.",
+      "Le remarquer t'aide à voir à quel point tes bons jours sont reliés aux autres."
+     ],
+     "q": "Qui a rendu ta journée un peu meilleure récemment, et comment ?",
+     "c": "Pense à une personne qui a illuminé aujourd'hui et revois un instant sa gentillesse."
+    },
+    "it": {
+     "t": "Persone che hanno illuminato la tua giornata",
+     "g": "Pensa a una persona che ha reso la tua giornata un po' migliore.",
+     "p": [
+      "Le altre persone sono spesso la più grande fonte dei nostri bei momenti.",
+      "Il gesto può essere piccolo: un sorriso, una porta tenuta aperta, una battuta.",
+      "Notarlo ti aiuta a vedere quanto siano legati agli altri i tuoi bei giorni."
+     ],
+     "q": "Chi ha reso la tua giornata un po' migliore di recente, e come?",
+     "c": "Pensa a una persona che ha illuminato oggi e rivedi per un momento la sua gentilezza."
+    },
+    "pt": {
+     "t": "Pessoas que iluminaram o teu dia",
+     "g": "Pensa numa pessoa que tornou o teu dia um pouco melhor.",
+     "p": [
+      "As outras pessoas são muitas vezes a maior fonte dos nossos bons momentos.",
+      "O gesto pode ser pequeno: um sorriso, uma porta aberta, um comentário engraçado.",
+      "Reparar nisso ajuda-te a ver como os teus bons dias estão ligados aos outros."
+     ],
+     "q": "Quem tornou o teu dia um pouco melhor recentemente, e como?",
+     "c": "Pensa numa pessoa que alegrou o dia de hoje e recorda a sua gentileza por um momento."
+    },
+    "pt_BR": {
+     "t": "Pessoas que iluminaram seu dia",
+     "g": "Pense em uma pessoa que deixou seu dia um pouco melhor.",
+     "p": [
+      "As outras pessoas costumam ser a maior fonte dos nossos bons momentos.",
+      "O gesto pode ser pequeno: um sorriso, uma porta segurada, um comentário engraçado.",
+      "Perceber isso ajuda você a ver como seus bons dias estão ligados aos outros."
+     ],
+     "q": "Quem deixou seu dia um pouco melhor recentemente, e como?",
+     "c": "Pense em uma pessoa que alegrou o dia de hoje e lembre da gentileza dela por um momento."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Saying a real thank you",
+     "g": "Say a sincere, specific thank you to someone today.",
+     "p": [
+      "A real thank you names what the person did and how it helped.",
+      "It takes only a few seconds and often makes both people smile.",
+      "Look the person in the eye, or write their name in the message."
+     ],
+     "q": "Who deserves a sincere thank you from you today?",
+     "c": "Say one specific thank you today, such as thanks for explaining that, it saved me time."
+    },
+    "de": {
+     "t": "Ein echtes Dankeschön sagen",
+     "g": "Sage heute jemandem ein aufrichtiges, konkretes Dankeschön.",
+     "p": [
+      "Ein echtes Danke nennt, was die Person getan hat und wie es geholfen hat.",
+      "Es dauert nur Sekunden und lässt oft beide lächeln.",
+      "Schau der Person in die Augen oder schreibe ihren Namen in die Nachricht."
+     ],
+     "q": "Wer verdient heute ein aufrichtiges Dankeschön von dir?",
+     "c": "Sage heute ein konkretes Danke, etwa: Danke fürs Erklären, das hat mir Zeit gespart."
+    },
+    "es": {
+     "t": "Decir un gracias de verdad",
+     "g": "Di hoy un gracias sincero y concreto a alguien.",
+     "p": [
+      "Un gracias real nombra lo que hizo la persona y cómo ayudó.",
+      "Lleva solo unos segundos y a menudo hace sonreír a ambos.",
+      "Mira a la persona a los ojos o escribe su nombre en el mensaje."
+     ],
+     "q": "¿Quién merece hoy un gracias sincero tuyo?",
+     "c": "Di hoy un gracias concreto, como gracias por explicarlo, me ahorró tiempo."
+    },
+    "fr": {
+     "t": "Dire un vrai merci",
+     "g": "Dis aujourd'hui un merci sincère et précis à quelqu'un.",
+     "p": [
+      "Un vrai merci nomme ce que la personne a fait et en quoi cela a aidé.",
+      "Cela prend quelques secondes et fait souvent sourire les deux personnes.",
+      "Regarde la personne dans les yeux, ou écris son prénom dans le message."
+     ],
+     "q": "Qui mérite aujourd'hui un merci sincère de ta part ?",
+     "c": "Dis aujourd'hui un merci précis, par exemple merci de me l'avoir expliqué, ça m'a fait gagner du temps."
+    },
+    "it": {
+     "t": "Dire un grazie vero",
+     "g": "Di' oggi un grazie sincero e specifico a qualcuno.",
+     "p": [
+      "Un grazie vero nomina ciò che la persona ha fatto e come ha aiutato.",
+      "Bastano pochi secondi e spesso fa sorridere entrambi.",
+      "Guarda la persona negli occhi o scrivi il suo nome nel messaggio."
+     ],
+     "q": "Chi merita oggi un tuo grazie sincero?",
+     "c": "Di' oggi un grazie specifico, come grazie per avermelo spiegato, mi hai fatto risparmiare tempo."
+    },
+    "pt": {
+     "t": "Dizer um obrigado a sério",
+     "g": "Diz hoje um obrigado sincero e concreto a alguém.",
+     "p": [
+      "Um obrigado a sério diz o que a pessoa fez e como ajudou.",
+      "Leva só uns segundos e muitas vezes faz sorrir as duas pessoas.",
+      "Olha a pessoa nos olhos ou escreve o nome dela na mensagem."
+     ],
+     "q": "Quem merece hoje um obrigado sincero da tua parte?",
+     "c": "Diz hoje um obrigado concreto, como obrigado por explicares, poupou-me tempo."
+    },
+    "pt_BR": {
+     "t": "Dizer um obrigado de verdade",
+     "g": "Diga hoje um obrigado sincero e específico a alguém.",
+     "p": [
+      "Um obrigado de verdade diz o que a pessoa fez e como ajudou.",
+      "Leva só alguns segundos e muitas vezes faz as duas pessoas sorrirem.",
+      "Olhe a pessoa nos olhos ou escreva o nome dela na mensagem."
+     ],
+     "q": "Quem merece hoje um obrigado sincero seu?",
+     "c": "Diga hoje um obrigado específico, como obrigado por explicar, economizou meu tempo."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Nature's gifts",
+     "g": "Appreciate the sky, trees, weather or animals you noticed today.",
+     "p": [
+      "Nature is nearby for most of us, even in a city: a tree, a bird, the sky.",
+      "A few seconds of looking up can reset a busy mind.",
+      "You do not need a park; a window or a balcony works too."
+     ],
+     "q": "What piece of nature did you notice today?",
+     "c": "Step outside or to a window and spend one minute noticing the sky or a plant."
+    },
+    "de": {
+     "t": "Geschenke der Natur",
+     "g": "Schätze den Himmel, Bäume, Wetter oder Tiere, die dir heute aufgefallen sind.",
+     "p": [
+      "Natur ist für die meisten nah, auch in der Stadt: ein Baum, ein Vogel, der Himmel.",
+      "Ein paar Sekunden Hochschauen können einen vollen Kopf zurücksetzen.",
+      "Du brauchst keinen Park; ein Fenster oder ein Balkon genügt."
+     ],
+     "q": "Welches Stück Natur ist dir heute aufgefallen?",
+     "c": "Geh nach draußen oder ans Fenster und betrachte eine Minute lang den Himmel oder eine Pflanze."
+    },
+    "es": {
+     "t": "Los regalos de la naturaleza",
+     "g": "Valora el cielo, los árboles, el clima o los animales que notaste hoy.",
+     "p": [
+      "La naturaleza está cerca para casi todos, incluso en una ciudad: un árbol, un pájaro, el cielo.",
+      "Unos segundos mirando hacia arriba pueden reiniciar una mente ocupada.",
+      "No necesitas un parque; una ventana o un balcón sirven."
+     ],
+     "q": "¿Qué parte de la naturaleza notaste hoy?",
+     "c": "Sal fuera o ve a una ventana y dedica un minuto a fijarte en el cielo o una planta."
+    },
+    "fr": {
+     "t": "Les cadeaux de la nature",
+     "g": "Apprécie le ciel, les arbres, la météo ou les animaux que tu as remarqués aujourd'hui.",
+     "p": [
+      "La nature est proche de presque tout le monde, même en ville : un arbre, un oiseau, le ciel.",
+      "Quelques secondes à regarder en l'air peuvent remettre à zéro un esprit occupé.",
+      "Pas besoin de parc ; une fenêtre ou un balcon suffit."
+     ],
+     "q": "Quel morceau de nature as-tu remarqué aujourd'hui ?",
+     "c": "Sors ou va à une fenêtre et consacre une minute à observer le ciel ou une plante."
+    },
+    "it": {
+     "t": "I doni della natura",
+     "g": "Apprezza il cielo, gli alberi, il tempo o gli animali che hai notato oggi.",
+     "p": [
+      "La natura è vicina quasi a tutti, anche in città: un albero, un uccello, il cielo.",
+      "Qualche secondo a guardare in alto può resettare una mente occupata.",
+      "Non serve un parco; basta una finestra o un balcone."
+     ],
+     "q": "Quale pezzo di natura hai notato oggi?",
+     "c": "Esci o vai a una finestra e dedica un minuto a osservare il cielo o una pianta."
+    },
+    "pt": {
+     "t": "As dádivas da natureza",
+     "g": "Valoriza o céu, as árvores, o tempo ou os animais que notaste hoje.",
+     "p": [
+      "A natureza está perto de quase todos, mesmo numa cidade: uma árvore, uma ave, o céu.",
+      "Uns segundos a olhar para cima podem reiniciar uma mente ocupada.",
+      "Não precisas de um parque; uma janela ou uma varanda serve."
+     ],
+     "q": "Que pedaço de natureza notaste hoje?",
+     "c": "Sai ou vai a uma janela e dedica um minuto a observar o céu ou uma planta."
+    },
+    "pt_BR": {
+     "t": "Os presentes da natureza",
+     "g": "Valorize o céu, as árvores, o clima ou os animais que você notou hoje.",
+     "p": [
+      "A natureza está perto de quase todos, mesmo numa cidade: uma árvore, um pássaro, o céu.",
+      "Alguns segundos olhando para cima podem reiniciar uma mente ocupada.",
+      "Você não precisa de um parque; uma janela ou uma varanda serve."
+     ],
+     "q": "Que pedaço de natureza você notou hoje?",
+     "c": "Saia ou vá até uma janela e dedique um minuto a observar o céu ou uma planta."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gratitude for food",
+     "g": "Pause before a meal to appreciate its taste and where it came from.",
+     "p": [
+      "A short pause before eating turns an automatic moment into a mindful one.",
+      "Think of the many hands that grew, moved and prepared your food.",
+      "Notice the first bite fully: taste, temperature, texture."
+     ],
+     "q": "What is the best thing you ate this week, and who helped it reach you?",
+     "c": "Take three slow breaths before one meal today and savour the first bite."
+    },
+    "de": {
+     "t": "Dankbarkeit für Essen",
+     "g": "Halte vor einer Mahlzeit inne und schätze Geschmack und Herkunft.",
+     "p": [
+      "Eine kurze Pause vor dem Essen macht aus einem automatischen Moment einen bewussten.",
+      "Denke an die vielen Hände, die dein Essen anbauten, transportierten und zubereiteten.",
+      "Nimm den ersten Bissen ganz wahr: Geschmack, Temperatur, Textur."
+     ],
+     "q": "Was war das Beste, das du diese Woche gegessen hast, und wer half, dass es dich erreichte?",
+     "c": "Atme heute vor einer Mahlzeit dreimal langsam und genieße den ersten Bissen."
+    },
+    "es": {
+     "t": "Gratitud por la comida",
+     "g": "Haz una pausa antes de comer para valorar su sabor y de dónde viene.",
+     "p": [
+      "Una breve pausa antes de comer convierte un momento automático en uno consciente.",
+      "Piensa en las muchas manos que cultivaron, transportaron y prepararon tu comida.",
+      "Fíjate del todo en el primer bocado: sabor, temperatura, textura."
+     ],
+     "q": "¿Qué fue lo mejor que comiste esta semana y quién ayudó a que llegara a ti?",
+     "c": "Antes de una comida de hoy, respira lento tres veces y saborea el primer bocado."
+    },
+    "fr": {
+     "t": "Gratitude pour la nourriture",
+     "g": "Fais une pause avant un repas pour apprécier son goût et son origine.",
+     "p": [
+      "Une courte pause avant de manger transforme un moment automatique en moment conscient.",
+      "Pense aux nombreuses mains qui ont cultivé, transporté et préparé ta nourriture.",
+      "Remarque pleinement la première bouchée : goût, température, texture."
+     ],
+     "q": "Quel est le meilleur plat que tu as mangé cette semaine, et qui l'a fait parvenir jusqu'à toi ?",
+     "c": "Avant un repas aujourd'hui, respire lentement trois fois et savoure la première bouchée."
+    },
+    "it": {
+     "t": "Gratitudine per il cibo",
+     "g": "Fai una pausa prima di un pasto per apprezzarne il gusto e la provenienza.",
+     "p": [
+      "Una breve pausa prima di mangiare trasforma un momento automatico in uno consapevole.",
+      "Pensa alle tante mani che hanno coltivato, trasportato e preparato il tuo cibo.",
+      "Nota pienamente il primo boccone: sapore, temperatura, consistenza."
+     ],
+     "q": "Qual è la cosa migliore che hai mangiato questa settimana e chi ha aiutato a farla arrivare a te?",
+     "c": "Prima di un pasto oggi, fai tre respiri lenti e assapora il primo boccone."
+    },
+    "pt": {
+     "t": "Gratidão pela comida",
+     "g": "Faz uma pausa antes de uma refeição para valorizar o sabor e a origem.",
+     "p": [
+      "Uma breve pausa antes de comer transforma um momento automático num momento consciente.",
+      "Pensa nas muitas mãos que cultivaram, transportaram e prepararam a tua comida.",
+      "Repara por inteiro na primeira garfada: sabor, temperatura, textura."
+     ],
+     "q": "Qual foi a melhor coisa que comeste esta semana e quem ajudou a que chegasse até ti?",
+     "c": "Antes de uma refeição hoje, respira devagar três vezes e saboreia a primeira garfada."
+    },
+    "pt_BR": {
+     "t": "Gratidão pela comida",
+     "g": "Faça uma pausa antes de uma refeição para valorizar o sabor e a origem.",
+     "p": [
+      "Uma breve pausa antes de comer transforma um momento automático em um momento consciente.",
+      "Pense nas muitas mãos que cultivaram, transportaram e prepararam sua comida.",
+      "Perceba por inteiro a primeira garfada: sabor, temperatura, textura."
+     ],
+     "q": "Qual foi a melhor coisa que você comeu esta semana e quem ajudou a chegar até você?",
+     "c": "Antes de uma refeição hoje, respire devagar três vezes e saboreie a primeira garfada."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your home",
+     "g": "Notice what you like about the place where you live.",
+     "p": [
+      "Home can be a house, a room or a corner; it does not have to be big.",
+      "Look for a favourite spot, a useful object or a nice view.",
+      "Appreciating home also means appreciating the people who make it feel safe."
+     ],
+     "q": "What is your favourite spot at home, and why?",
+     "c": "Walk through your home and name three things you like about it."
+    },
+    "de": {
+     "t": "Dein Zuhause",
+     "g": "Bemerke, was du an dem Ort magst, an dem du wohnst.",
+     "p": [
+      "Zuhause kann ein Haus, ein Zimmer oder eine Ecke sein; es muss nicht groß sein.",
+      "Suche einen Lieblingsplatz, einen nützlichen Gegenstand oder eine schöne Aussicht.",
+      "Das Zuhause zu schätzen heißt auch, die Menschen zu schätzen, die es sicher machen."
+     ],
+     "q": "Was ist dein Lieblingsplatz zu Hause, und warum?",
+     "c": "Geh durch dein Zuhause und nenne drei Dinge, die du daran magst."
+    },
+    "es": {
+     "t": "Tu hogar",
+     "g": "Fíjate en lo que te gusta del lugar donde vives.",
+     "p": [
+      "El hogar puede ser una casa, una habitación o un rincón; no tiene que ser grande.",
+      "Busca un lugar favorito, un objeto útil o una buena vista.",
+      "Valorar el hogar también es valorar a quienes lo hacen sentir seguro."
+     ],
+     "q": "¿Cuál es tu rincón favorito de casa y por qué?",
+     "c": "Recorre tu casa y nombra tres cosas que te gustan de ella."
+    },
+    "fr": {
+     "t": "Ton chez-toi",
+     "g": "Remarque ce que tu aimes dans l'endroit où tu vis.",
+     "p": [
+      "Chez soi, ça peut être une maison, une chambre ou un coin ; pas besoin que ce soit grand.",
+      "Cherche un endroit préféré, un objet utile ou une jolie vue.",
+      "Apprécier son chez-soi, c'est aussi apprécier ceux qui le rendent sûr."
+     ],
+     "q": "Quel est ton endroit préféré chez toi, et pourquoi ?",
+     "c": "Parcours ton logement et nomme trois choses que tu aimes."
+    },
+    "it": {
+     "t": "La tua casa",
+     "g": "Nota cosa ti piace del posto in cui vivi.",
+     "p": [
+      "La casa può essere un'abitazione, una stanza o un angolo; non deve essere grande.",
+      "Cerca un posto preferito, un oggetto utile o una bella vista.",
+      "Apprezzare la casa significa anche apprezzare chi la rende sicura."
+     ],
+     "q": "Qual è il tuo posto preferito in casa e perché?",
+     "c": "Gira per casa e nomina tre cose che ti piacciono."
+    },
+    "pt": {
+     "t": "A tua casa",
+     "g": "Repara no que gostas do sítio onde vives.",
+     "p": [
+      "A casa pode ser uma moradia, um quarto ou um canto; não tem de ser grande.",
+      "Procura um sítio preferido, um objeto útil ou uma boa vista.",
+      "Valorizar a casa é também valorizar quem a faz sentir segura."
+     ],
+     "q": "Qual é o teu canto preferido em casa e porquê?",
+     "c": "Percorre a tua casa e diz três coisas de que gostas nela."
+    },
+    "pt_BR": {
+     "t": "Sua casa",
+     "g": "Perceba o que você gosta do lugar onde mora.",
+     "p": [
+      "Casa pode ser uma casa inteira, um quarto ou um cantinho; não precisa ser grande.",
+      "Procure um lugar favorito, um objeto útil ou uma boa vista.",
+      "Valorizar a casa também é valorizar quem a faz parecer segura."
+     ],
+     "q": "Qual é o seu cantinho favorito em casa e por quê?",
+     "c": "Percorra sua casa e diga três coisas de que você gosta nela."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Thanking your body",
+     "g": "Appreciate what your body allows you to do each day.",
+     "p": [
+      "Your body quietly does a lot: breathing, walking, hugging, seeing.",
+      "Gratitude to the body does not require it to be perfect or pain-free.",
+      "Choose one thing it did for you today and thank it kindly."
+     ],
+     "q": "What is one thing your body let you do today that you enjoyed?",
+     "c": "Place a hand on your arm or chest and thank your body for one thing it did today."
+    },
+    "de": {
+     "t": "Deinem Körper danken",
+     "g": "Schätze, was dein Körper dir jeden Tag ermöglicht.",
+     "p": [
+      "Dein Körper leistet leise viel: atmen, gehen, umarmen, sehen.",
+      "Dankbarkeit für den Körper setzt nicht voraus, dass er perfekt oder schmerzfrei ist.",
+      "Wähle eine Sache, die er heute für dich getan hat, und danke ihm freundlich."
+     ],
+     "q": "Was hat dein Körper dir heute ermöglicht, das du genossen hast?",
+     "c": "Lege eine Hand auf Arm oder Brust und danke deinem Körper für eine Sache, die er heute tat."
+    },
+    "es": {
+     "t": "Agradecer a tu cuerpo",
+     "g": "Valora lo que tu cuerpo te permite hacer cada día.",
+     "p": [
+      "Tu cuerpo hace mucho en silencio: respirar, caminar, abrazar, ver.",
+      "La gratitud al cuerpo no exige que sea perfecto ni que no duela.",
+      "Elige algo que hizo por ti hoy y agradécele con cariño."
+     ],
+     "q": "¿Qué te permitió hacer hoy tu cuerpo que disfrutaste?",
+     "c": "Pon una mano en el brazo o el pecho y agradece a tu cuerpo algo que hizo hoy."
+    },
+    "fr": {
+     "t": "Remercier ton corps",
+     "g": "Apprécie ce que ton corps te permet de faire chaque jour.",
+     "p": [
+      "Ton corps fait beaucoup en silence : respirer, marcher, serrer dans ses bras, voir.",
+      "La gratitude envers le corps n'exige pas qu'il soit parfait ni sans douleur.",
+      "Choisis une chose qu'il a faite pour toi aujourd'hui et remercie-le avec douceur."
+     ],
+     "q": "Qu'est-ce que ton corps t'a permis de faire aujourd'hui et que tu as apprécié ?",
+     "c": "Pose une main sur ton bras ou ta poitrine et remercie ton corps pour une chose faite aujourd'hui."
+    },
+    "it": {
+     "t": "Ringraziare il tuo corpo",
+     "g": "Apprezza ciò che il tuo corpo ti permette di fare ogni giorno.",
+     "p": [
+      "Il tuo corpo fa molto in silenzio: respirare, camminare, abbracciare, vedere.",
+      "La gratitudine verso il corpo non richiede che sia perfetto o senza dolore.",
+      "Scegli una cosa che ha fatto per te oggi e ringrazialo con gentilezza."
+     ],
+     "q": "Cosa ti ha permesso di fare oggi il tuo corpo che ti è piaciuto?",
+     "c": "Appoggia una mano sul braccio o sul petto e ringrazia il corpo per una cosa fatta oggi."
+    },
+    "pt": {
+     "t": "Agradecer ao teu corpo",
+     "g": "Valoriza o que o teu corpo te permite fazer todos os dias.",
+     "p": [
+      "O teu corpo faz muito em silêncio: respirar, andar, abraçar, ver.",
+      "A gratidão ao corpo não exige que ele seja perfeito ou sem dor.",
+      "Escolhe uma coisa que ele fez por ti hoje e agradece-lhe com carinho."
+     ],
+     "q": "O que é que o teu corpo te permitiu fazer hoje e de que gostaste?",
+     "c": "Pousa uma mão no braço ou no peito e agradece ao teu corpo uma coisa que fez hoje."
+    },
+    "pt_BR": {
+     "t": "Agradecendo ao seu corpo",
+     "g": "Valorize o que seu corpo permite que você faça todos os dias.",
+     "p": [
+      "Seu corpo faz muito em silêncio: respirar, andar, abraçar, ver.",
+      "A gratidão ao corpo não exige que ele seja perfeito ou sem dor.",
+      "Escolha uma coisa que ele fez por você hoje e agradeça com carinho."
+     ],
+     "q": "O que seu corpo permitiu que você fizesse hoje e de que você gostou?",
+     "c": "Pouse uma mão no braço ou no peito e agradeça ao seu corpo uma coisa que fez hoje."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The gratitude walk",
+     "g": "Take a short walk and notice things to appreciate along the way.",
+     "p": [
+      "Walking slowly with open eyes turns any route into a treasure hunt.",
+      "Look for details you usually miss: a colour, a sound, a friendly face.",
+      "Even five minutes around the block counts."
+     ],
+     "q": "What was the nicest thing you noticed on your walk?",
+     "c": "Walk for five to ten minutes and silently name one thing you appreciate per minute."
+    },
+    "de": {
+     "t": "Der Dankbarkeitsspaziergang",
+     "g": "Mache einen kurzen Spaziergang und bemerke unterwegs Dinge, die du schätzt.",
+     "p": [
+      "Langsam und mit offenen Augen gehen macht jede Strecke zur Schatzsuche.",
+      "Suche Details, die du sonst übersiehst: eine Farbe, ein Geräusch, ein freundliches Gesicht.",
+      "Schon fünf Minuten um den Block zählen."
+     ],
+     "q": "Was war das Schönste, das dir auf deinem Spaziergang aufgefallen ist?",
+     "c": "Gehe fünf bis zehn Minuten und nenne still pro Minute eine Sache, die du schätzt."
+    },
+    "es": {
+     "t": "El paseo de gratitud",
+     "g": "Da un paseo corto y fíjate en cosas que valorar por el camino.",
+     "p": [
+      "Caminar despacio con los ojos abiertos convierte cualquier ruta en una búsqueda del tesoro.",
+      "Busca detalles que sueles pasar por alto: un color, un sonido, una cara amable.",
+      "Incluso cinco minutos alrededor de la manzana cuentan."
+     ],
+     "q": "¿Qué fue lo más bonito que notaste en tu paseo?",
+     "c": "Camina de cinco a diez minutos y nombra en silencio una cosa que valoras por minuto."
+    },
+    "fr": {
+     "t": "La promenade de gratitude",
+     "g": "Fais une courte promenade et remarque en chemin des choses à apprécier.",
+     "p": [
+      "Marcher lentement, les yeux ouverts, transforme n'importe quel trajet en chasse au trésor.",
+      "Cherche des détails que tu manques d'habitude : une couleur, un son, un visage aimable.",
+      "Même cinq minutes autour du pâté de maisons comptent."
+     ],
+     "q": "Quelle est la plus belle chose que tu as remarquée pendant ta promenade ?",
+     "c": "Marche cinq à dix minutes et nomme en silence une chose que tu apprécies par minute."
+    },
+    "it": {
+     "t": "La passeggiata della gratitudine",
+     "g": "Fai una breve passeggiata e nota lungo il cammino cose da apprezzare.",
+     "p": [
+      "Camminare piano con gli occhi aperti trasforma qualsiasi percorso in una caccia al tesoro.",
+      "Cerca dettagli che di solito ti sfuggono: un colore, un suono, un volto gentile.",
+      "Anche cinque minuti attorno all'isolato contano."
+     ],
+     "q": "Qual è la cosa più bella che hai notato durante la passeggiata?",
+     "c": "Cammina da cinque a dieci minuti e nomina in silenzio una cosa che apprezzi al minuto."
+    },
+    "pt": {
+     "t": "O passeio de gratidão",
+     "g": "Dá um passeio curto e repara no caminho em coisas que valorizas.",
+     "p": [
+      "Andar devagar com os olhos abertos transforma qualquer percurso numa caça ao tesouro.",
+      "Procura pormenores que costumas perder: uma cor, um som, um rosto simpático.",
+      "Mesmo cinco minutos à volta do quarteirão contam."
+     ],
+     "q": "Qual foi a coisa mais bonita que notaste no teu passeio?",
+     "c": "Caminha cinco a dez minutos e diz em silêncio uma coisa que valorizas por minuto."
+    },
+    "pt_BR": {
+     "t": "A caminhada de gratidão",
+     "g": "Faça uma caminhada curta e perceba no caminho coisas que você valoriza.",
+     "p": [
+      "Andar devagar de olhos abertos transforma qualquer trajeto em uma caça ao tesouro.",
+      "Procure detalhes que você costuma perder: uma cor, um som, um rosto simpático.",
+      "Mesmo cinco minutos em volta do quarteirão contam."
+     ],
+     "q": "Qual foi a coisa mais bonita que você notou na caminhada?",
+     "c": "Caminhe de cinco a dez minutos e diga em silêncio uma coisa que você valoriza por minuto."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "music_genres",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What makes a music genre",
+     "g": "Understand how genres group songs by sound, history and community.",
+     "p": [
+      "A genre bundles songs that share rhythm, instruments, mood and a common story.",
+      "Genres are fuzzy: many songs sit between two styles, and that is perfectly fine.",
+      "Fans, musicians and places shape a genre as much as the sound itself."
+     ],
+     "q": "Which genre do you think you know best, and what makes it sound like itself?",
+     "c": "Play one song and name three things you hear: a rhythm, an instrument, a mood."
+    },
+    "de": {
+     "t": "Was ein Musikgenre ausmacht",
+     "g": "Verstehen, wie Genres Lieder nach Klang, Geschichte und Gemeinschaft ordnen.",
+     "p": [
+      "Ein Genre fasst Lieder zusammen, die Rhythmus, Instrumente, Stimmung und eine Geschichte teilen.",
+      "Genres sind unscharf: Viele Lieder liegen zwischen zwei Stilen, und das ist völlig in Ordnung.",
+      "Fans, Musiker und Orte prägen ein Genre genauso wie der Klang selbst."
+     ],
+     "q": "Welches Genre kennst du am besten, und woran erkennst du seinen typischen Klang?",
+     "c": "Hör ein Lied und nenne drei Dinge: einen Rhythmus, ein Instrument, eine Stimmung."
+    },
+    "es": {
+     "t": "Qué define un género musical",
+     "g": "Entender cómo los géneros agrupan canciones por sonido, historia y comunidad.",
+     "p": [
+      "Un género reúne canciones que comparten ritmo, instrumentos, ambiente y una historia común.",
+      "Los géneros son difusos: muchas canciones están entre dos estilos, y eso está muy bien.",
+      "Los fans, los músicos y los lugares moldean un género tanto como el propio sonido."
+     ],
+     "q": "¿Qué género crees que conoces mejor y qué hace que suene como suena?",
+     "c": "Escucha una canción y nombra tres cosas: un ritmo, un instrumento y un ambiente."
+    },
+    "fr": {
+     "t": "Ce qui définit un genre musical",
+     "g": "Comprendre comment les genres regroupent les chansons par son, histoire et communauté.",
+     "p": [
+      "Un genre rassemble des morceaux qui partagent rythme, instruments, ambiance et une histoire commune.",
+      "Les genres sont flous : beaucoup de morceaux se situent entre deux styles, et c'est très bien ainsi.",
+      "Les fans, les musiciens et les lieux façonnent un genre autant que le son lui-même."
+     ],
+     "q": "Quel genre pensez-vous le mieux connaître, et qu'est-ce qui le rend reconnaissable ?",
+     "c": "Écoutez un morceau et citez trois éléments : un rythme, un instrument, une ambiance."
+    },
+    "it": {
+     "t": "Cosa definisce un genere musicale",
+     "g": "Capire come i generi raggruppano le canzoni per suono, storia e comunità.",
+     "p": [
+      "Un genere riunisce brani con ritmo, strumenti, atmosfera e una storia in comune.",
+      "I generi sono sfumati: molte canzoni stanno a metà tra due stili, e va benissimo così.",
+      "Fan, musicisti e luoghi plasmano un genere quanto il suono stesso."
+     ],
+     "q": "Quale genere pensi di conoscere meglio e cosa lo rende riconoscibile?",
+     "c": "Ascolta un brano e indica tre cose: un ritmo, uno strumento, un'atmosfera."
+    },
+    "pt": {
+     "t": "O que define um género musical",
+     "g": "Perceber como os géneros agrupam canções por som, história e comunidade.",
+     "p": [
+      "Um género junta canções que partilham ritmo, instrumentos, ambiente e uma história comum.",
+      "Os géneros são difusos: muitas canções ficam entre dois estilos, e isso é perfeitamente normal.",
+      "Fãs, músicos e lugares moldam um género tanto como o próprio som."
+     ],
+     "q": "Que género achas que conheces melhor e o que o torna reconhecível?",
+     "c": "Ouve uma canção e nomeia três coisas: um ritmo, um instrumento e um ambiente."
+    },
+    "pt_BR": {
+     "t": "O que define um gênero musical",
+     "g": "Entender como os gêneros agrupam músicas por som, história e comunidade.",
+     "p": [
+      "Um gênero reúne músicas que compartilham ritmo, instrumentos, clima e uma história em comum.",
+      "Os gêneros são difusos: muitas músicas ficam entre dois estilos, e isso é totalmente normal.",
+      "Fãs, músicos e lugares moldam um gênero tanto quanto o próprio som."
+     ],
+     "q": "Qual gênero você acha que conhece melhor e o que faz ele soar como soa?",
+     "c": "Ouça uma música e diga três coisas: um ritmo, um instrumento e um clima."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your personal listening map",
+     "g": "Map your favourite songs and discover the patterns in your own taste.",
+     "p": [
+      "Write down ten songs you love; taste often shows up as a pattern, not a random list.",
+      "Look for shared tempo, voice type, instruments or lyrics across your favourites.",
+      "Your map is a starting point: it shows where to explore next, not what you must like."
+     ],
+     "q": "What are three songs you could play on repeat, and what do they share?",
+     "c": "List five favourite songs and circle one trait that appears in at least three."
+    },
+    "de": {
+     "t": "Deine persönliche Hörlandkarte",
+     "g": "Deine Lieblingslieder kartieren und Muster im eigenen Geschmack entdecken.",
+     "p": [
+      "Schreib zehn Lieder auf, die du liebst; Geschmack zeigt sich oft als Muster, nicht als Zufall.",
+      "Suche nach gemeinsamem Tempo, Stimmtyp, Instrumenten oder Texten in deinen Favoriten.",
+      "Deine Karte ist ein Startpunkt: Sie zeigt, wo du weiterforschen kannst, nicht was du mögen musst."
+     ],
+     "q": "Welche drei Lieder könntest du endlos hören, und was haben sie gemeinsam?",
+     "c": "Liste fünf Lieblingslieder auf und markiere ein Merkmal, das in mindestens dreien vorkommt."
+    },
+    "es": {
+     "t": "Tu mapa personal de escucha",
+     "g": "Dibujar el mapa de tus canciones favoritas y descubrir patrones en tu gusto.",
+     "p": [
+      "Anota diez canciones que te encantan; el gusto suele formar un patrón, no una lista al azar.",
+      "Busca tempo, tipo de voz, instrumentos o letras que se repitan en tus favoritas.",
+      "Tu mapa es un punto de partida: indica por dónde explorar, no lo que debe gustarte."
+     ],
+     "q": "¿Qué tres canciones podrías poner en bucle y qué tienen en común?",
+     "c": "Anota cinco canciones favoritas y rodea un rasgo que aparezca en al menos tres."
+    },
+    "fr": {
+     "t": "Votre carte d'écoute personnelle",
+     "g": "Cartographier vos chansons préférées et repérer les tendances de vos goûts.",
+     "p": [
+      "Notez dix chansons que vous aimez ; le goût forme souvent un schéma, pas une liste au hasard.",
+      "Cherchez un tempo, un type de voix, des instruments ou des paroles qui reviennent.",
+      "Votre carte est un point de départ : elle montre où explorer, pas ce que vous devez aimer."
+     ],
+     "q": "Quelles trois chansons pourriez-vous écouter en boucle, et que partagent-elles ?",
+     "c": "Listez cinq chansons préférées et entourez un trait présent dans au moins trois d'entre elles."
+    },
+    "it": {
+     "t": "La tua mappa d'ascolto personale",
+     "g": "Mappare le tue canzoni preferite e scoprire gli schemi del tuo gusto.",
+     "p": [
+      "Scrivi dieci canzoni che ami; il gusto spesso forma uno schema, non un elenco casuale.",
+      "Cerca tempo, tipo di voce, strumenti o testi che si ripetono tra i tuoi preferiti.",
+      "La tua mappa è un punto di partenza: indica dove esplorare, non cosa devi amare."
+     ],
+     "q": "Quali tre canzoni potresti ascoltare in loop e cosa hanno in comune?",
+     "c": "Elenca cinque canzoni preferite e cerchia un tratto presente in almeno tre."
+    },
+    "pt": {
+     "t": "O teu mapa pessoal de audição",
+     "g": "Mapear as tuas canções favoritas e descobrir padrões no teu gosto.",
+     "p": [
+      "Escreve dez canções de que gostas; o gosto costuma formar um padrão, não uma lista aleatória.",
+      "Procura tempo, tipo de voz, instrumentos ou letras que se repetem nas tuas favoritas.",
+      "O teu mapa é um ponto de partida: mostra onde explorar, não o que tens de gostar."
+     ],
+     "q": "Que três canções ouvirias em repetição e o que têm em comum?",
+     "c": "Lista cinco canções favoritas e assinala uma característica presente em pelo menos três."
+    },
+    "pt_BR": {
+     "t": "Seu mapa pessoal de audição",
+     "g": "Mapear suas músicas favoritas e descobrir padrões no seu gosto.",
+     "p": [
+      "Anote dez músicas que você ama; o gosto costuma formar um padrão, não uma lista aleatória.",
+      "Procure andamento, tipo de voz, instrumentos ou letras que se repetem nas favoritas.",
+      "Seu mapa é um ponto de partida: mostra onde explorar, não o que você precisa curtir."
+     ],
+     "q": "Quais três músicas você colocaria no repeat e o que elas têm em comum?",
+     "c": "Liste cinco músicas favoritas e marque uma característica que aparece em pelo menos três."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rhythm and tempo basics",
+     "g": "Feel the beat and notice how tempo changes the energy of a song.",
+     "p": [
+      "The beat is the steady pulse you tap your foot to; rhythm is how sounds sit around it.",
+      "Tempo is speed, measured in beats per minute: slow tempos feel calm, fast ones feel energetic.",
+      "Many songs count in groups of four beats, with the strongest accent on the first."
+     ],
+     "q": "What kind of tempo do you reach for when you work, and what about when you exercise?",
+     "c": "Tap along to two songs and count to four; decide which feels faster and why."
+    },
+    "de": {
+     "t": "Grundlagen von Rhythmus und Tempo",
+     "g": "Den Beat spüren und merken, wie das Tempo die Energie eines Liedes verändert.",
+     "p": [
+      "Der Beat ist der gleichmäßige Puls, zu dem du mit dem Fuß wippst; Rhythmus ist, wie Klänge darum liegen.",
+      "Tempo ist die Geschwindigkeit in Schlägen pro Minute: langsam wirkt ruhig, schnell wirkt energiegeladen.",
+      "Viele Lieder zählen in Vierergruppen, mit dem stärksten Akzent auf der Eins."
+     ],
+     "q": "Welches Tempo wählst du bei der Arbeit, und welches beim Sport?",
+     "c": "Klopf zu zwei Liedern mit, zähl bis vier und entscheide, welches schneller wirkt und warum."
+    },
+    "es": {
+     "t": "Ritmo y tempo: lo básico",
+     "g": "Sentir el pulso y notar cómo el tempo cambia la energía de una canción.",
+     "p": [
+      "El pulso es el latido constante con el que marcas el pie; el ritmo es cómo se colocan los sonidos a su alrededor.",
+      "El tempo es la velocidad en pulsos por minuto: lento transmite calma, rápido transmite energía.",
+      "Muchas canciones cuentan de cuatro en cuatro, con el acento más fuerte en el primer tiempo."
+     ],
+     "q": "¿Qué tempo eliges para trabajar y cuál para hacer ejercicio?",
+     "c": "Marca el pulso con dos canciones, cuenta hasta cuatro y decide cuál va más rápido y por qué."
+    },
+    "fr": {
+     "t": "Bases du rythme et du tempo",
+     "g": "Sentir le pulse et voir comment le tempo change l'énergie d'une chanson.",
+     "p": [
+      "Le pulse est le battement régulier que vous marquez du pied ; le rythme, c'est la façon dont les sons s'y placent.",
+      "Le tempo est la vitesse en battements par minute : lent, il apaise ; rapide, il dynamise.",
+      "Beaucoup de chansons se comptent par groupes de quatre temps, avec l'accent le plus fort sur le premier."
+     ],
+     "q": "Quel tempo choisissez-vous pour travailler, et lequel pour faire du sport ?",
+     "c": "Marquez le pulse sur deux chansons, comptez jusqu'à quatre et dites laquelle semble plus rapide."
+    },
+    "it": {
+     "t": "Basi di ritmo e tempo",
+     "g": "Sentire il battito e notare come il tempo cambia l'energia di un brano.",
+     "p": [
+      "Il battito è il polso regolare che segui col piede; il ritmo è come i suoni si dispongono intorno.",
+      "Il tempo è la velocità in battiti al minuto: lento calma, veloce dà energia.",
+      "Molti brani si contano a gruppi di quattro, con l'accento più forte sul primo battito."
+     ],
+     "q": "Che tempo scegli quando lavori e quale quando ti alleni?",
+     "c": "Batti il tempo su due brani, conta fino a quattro e decidi quale sembra più veloce e perché."
+    },
+    "pt": {
+     "t": "Noções de ritmo e andamento",
+     "g": "Sentir a pulsação e perceber como o andamento muda a energia de uma canção.",
+     "p": [
+      "A pulsação é o batimento regular que marcas com o pé; o ritmo é como os sons se encaixam à volta dela.",
+      "O andamento é a velocidade em batidas por minuto: lento acalma, rápido dá energia.",
+      "Muitas canções contam-se de quatro em quatro, com o acento mais forte no primeiro tempo."
+     ],
+     "q": "Que andamento escolhes para trabalhar e qual para fazer exercício?",
+     "c": "Marca o ritmo com duas canções, conta até quatro e decide qual parece mais rápida e porquê."
+    },
+    "pt_BR": {
+     "t": "Noções de ritmo e andamento",
+     "g": "Sentir a pulsação e perceber como o andamento muda a energia de uma música.",
+     "p": [
+      "A pulsação é a batida regular que você marca com o pé; o ritmo é como os sons se encaixam em volta dela.",
+      "O andamento é a velocidade em batidas por minuto: lento acalma, rápido dá energia.",
+      "Muitas músicas se contam de quatro em quatro, com o acento mais forte no primeiro tempo."
+     ],
+     "q": "Que andamento você escolhe para trabalhar e qual para se exercitar?",
+     "c": "Marque o ritmo de duas músicas, conte até quatro e decida qual parece mais rápida e por quê."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Melody, harmony and hooks",
+     "g": "Tell melody from harmony and see why a hook sticks in your head.",
+     "p": [
+      "Melody is the tune you hum; harmony is the chords that support and colour it.",
+      "A hook is a short, memorable idea, often a melody or phrase repeated in the chorus.",
+      "Simple, repeated, easy-to-sing patterns are why some songs stay with us all day."
+     ],
+     "q": "Which song hook gets stuck in your head most easily, and why do you think it works?",
+     "c": "Hum the melody of a song you love, then listen for the chords beneath it."
+    },
+    "de": {
+     "t": "Melodie, Harmonie und Hooks",
+     "g": "Melodie von Harmonie unterscheiden und verstehen, warum ein Hook im Kopf bleibt.",
+     "p": [
+      "Die Melodie ist das, was du summst; die Harmonie sind die Akkorde, die sie stützen und färben.",
+      "Ein Hook ist eine kurze, einprägsame Idee, oft eine im Refrain wiederholte Melodie oder Zeile.",
+      "Einfache, wiederholte, singbare Muster erklären, warum manche Lieder uns den ganzen Tag begleiten."
+     ],
+     "q": "Welcher Hook bleibt bei dir am leichtesten hängen, und warum funktioniert er wohl?",
+     "c": "Summ die Melodie eines Lieblingsliedes und achte dann auf die Akkorde darunter."
+    },
+    "es": {
+     "t": "Melodía, armonía y estribillos pegadizos",
+     "g": "Distinguir melodía de armonía y ver por qué un gancho se queda en la cabeza.",
+     "p": [
+      "La melodía es lo que tarareas; la armonía son los acordes que la apoyan y la colorean.",
+      "Un gancho es una idea breve y memorable, a menudo una melodía o frase repetida en el estribillo.",
+      "Los patrones simples, repetidos y fáciles de cantar explican por qué algunas canciones nos acompañan todo el día."
+     ],
+     "q": "¿Qué gancho se te pega más fácilmente y por qué crees que funciona?",
+     "c": "Tararea la melodía de una canción que ames y luego escucha los acordes que van debajo."
+    },
+    "fr": {
+     "t": "Mélodie, harmonie et accroches",
+     "g": "Distinguer mélodie et harmonie et comprendre pourquoi une accroche reste en tête.",
+     "p": [
+      "La mélodie est l'air que vous fredonnez ; l'harmonie, ce sont les accords qui la soutiennent et la colorent.",
+      "Une accroche est une idée courte et mémorable, souvent une mélodie ou une phrase répétée au refrain.",
+      "Les motifs simples, répétés et faciles à chanter expliquent pourquoi certains airs nous suivent toute la journée."
+     ],
+     "q": "Quelle accroche vous reste le plus facilement en tête, et pourquoi fonctionne-t-elle ?",
+     "c": "Fredonnez la mélodie d'une chanson aimée, puis écoutez les accords en dessous."
+    },
+    "it": {
+     "t": "Melodia, armonia e ritornelli",
+     "g": "Distinguere melodia e armonia e capire perché un ritornello resta in testa.",
+     "p": [
+      "La melodia è ciò che canticchi; l'armonia sono gli accordi che la sostengono e la colorano.",
+      "Un gancio è un'idea breve e memorabile, spesso una melodia o frase ripetuta nel ritornello.",
+      "Schemi semplici, ripetuti e facili da cantare spiegano perché certi brani ci restano in testa tutto il giorno."
+     ],
+     "q": "Quale ritornello ti si attacca più facilmente e perché secondo te funziona?",
+     "c": "Canticchia la melodia di un brano che ami, poi ascolta gli accordi che stanno sotto."
+    },
+    "pt": {
+     "t": "Melodia, harmonia e refrões",
+     "g": "Distinguir melodia de harmonia e perceber porque um refrão fica na cabeça.",
+     "p": [
+      "A melodia é o que trauteias; a harmonia são os acordes que a apoiam e lhe dão cor.",
+      "Um gancho é uma ideia curta e memorável, muitas vezes uma melodia ou frase repetida no refrão.",
+      "Padrões simples, repetidos e fáceis de cantar explicam porque algumas canções nos acompanham o dia todo."
+     ],
+     "q": "Que refrão te fica mais facilmente na cabeça e porque achas que funciona?",
+     "c": "Trauteia a melodia de uma canção de que gostas e depois ouve os acordes por baixo."
+    },
+    "pt_BR": {
+     "t": "Melodia, harmonia e refrões",
+     "g": "Distinguir melodia de harmonia e entender por que um refrão gruda na cabeça.",
+     "p": [
+      "A melodia é o que você cantarola; a harmonia são os acordes que a apoiam e dão cor.",
+      "Um gancho é uma ideia curta e memorável, muitas vezes uma melodia ou frase repetida no refrão.",
+      "Padrões simples, repetidos e fáceis de cantar explicam por que algumas músicas ficam o dia todo na cabeça."
+     ],
+     "q": "Qual refrão gruda mais fácil na sua cabeça e por que você acha que funciona?",
+     "c": "Cantarole a melodia de uma música que você ama e depois escute os acordes por baixo."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Instruments that define a sound",
+     "g": "Link instruments to the genres whose sound they colour.",
+     "p": [
+      "Distorted electric guitar says rock, a walking double bass says jazz, a banjo says bluegrass.",
+      "Synthesizers and drum machines shape much of pop, disco and electronic music.",
+      "Instrument families help: strings, brass, woodwinds, percussion, keyboards and electronics."
+     ],
+     "q": "Which instrument could you listen to all day, and which genre does it remind you of?",
+     "c": "Pick three songs from different genres and name the lead instrument in each."
+    },
+    "de": {
+     "t": "Instrumente, die einen Klang prägen",
+     "g": "Instrumente mit den Genres verbinden, deren Klang sie färben.",
+     "p": [
+      "Verzerrte E-Gitarre klingt nach Rock, ein Kontrabass im Walking Bass nach Jazz, ein Banjo nach Bluegrass.",
+      "Synthesizer und Drumcomputer prägen einen großen Teil von Pop, Disco und elektronischer Musik.",
+      "Instrumentenfamilien helfen: Streicher, Blech, Holz, Schlagwerk, Tasten und Elektronik."
+     ],
+     "q": "Welches Instrument könntest du den ganzen Tag hören, und an welches Genre erinnert es dich?",
+     "c": "Wähl drei Lieder aus verschiedenen Genres und nenne jeweils das Soloinstrument."
+    },
+    "es": {
+     "t": "Instrumentos que definen un sonido",
+     "g": "Relacionar instrumentos con los géneros cuyo sonido colorean.",
+     "p": [
+      "La guitarra eléctrica distorsionada dice rock, el contrabajo caminante dice jazz y el banjo dice bluegrass.",
+      "Los sintetizadores y las cajas de ritmos moldean gran parte del pop, la disco y la música electrónica.",
+      "Las familias ayudan: cuerdas, metales, maderas, percusión, teclados y electrónica."
+     ],
+     "q": "¿Qué instrumento podrías escuchar todo el día y con qué género lo asocias?",
+     "c": "Elige tres canciones de géneros distintos y nombra el instrumento principal de cada una."
+    },
+    "fr": {
+     "t": "Les instruments qui font un son",
+     "g": "Associer les instruments aux genres dont ils colorent le son.",
+     "p": [
+      "La guitare électrique saturée évoque le rock, la contrebasse en walking le jazz, le banjo le bluegrass.",
+      "Synthétiseurs et boîtes à rythmes façonnent une grande part de la pop, du disco et de l'électro.",
+      "Les familles aident : cordes, cuivres, bois, percussions, claviers et électronique."
+     ],
+     "q": "Quel instrument pourriez-vous écouter toute la journée, et à quel genre vous fait-il penser ?",
+     "c": "Choisissez trois chansons de genres différents et nommez l'instrument principal de chacune."
+    },
+    "it": {
+     "t": "Strumenti che definiscono un suono",
+     "g": "Collegare gli strumenti ai generi di cui colorano il suono.",
+     "p": [
+      "La chitarra elettrica distorta dice rock, il contrabbasso walking dice jazz, il banjo dice bluegrass.",
+      "Sintetizzatori e drum machine plasmano gran parte di pop, disco ed elettronica.",
+      "Le famiglie aiutano: archi, ottoni, legni, percussioni, tastiere ed elettronica."
+     ],
+     "q": "Quale strumento potresti ascoltare tutto il giorno e a quale genere lo associ?",
+     "c": "Scegli tre brani di generi diversi e indica lo strumento principale di ciascuno."
+    },
+    "pt": {
+     "t": "Instrumentos que definem um som",
+     "g": "Ligar instrumentos aos géneros cujo som colorem.",
+     "p": [
+      "A guitarra elétrica distorcida diz rock, o contrabaixo em walking diz jazz, o banjo diz bluegrass.",
+      "Sintetizadores e caixas de ritmos moldam grande parte da pop, da disco e da música eletrónica.",
+      "As famílias ajudam: cordas, metais, madeiras, percussão, teclados e eletrónica."
+     ],
+     "q": "Que instrumento ouvirias o dia todo e a que género o associas?",
+     "c": "Escolhe três canções de géneros diferentes e nomeia o instrumento principal de cada uma."
+    },
+    "pt_BR": {
+     "t": "Instrumentos que definem um som",
+     "g": "Ligar instrumentos aos gêneros cujo som eles colorem.",
+     "p": [
+      "A guitarra elétrica distorcida diz rock, o contrabaixo em walking diz jazz, o banjo diz bluegrass.",
+      "Sintetizadores e baterias eletrônicas moldam grande parte do pop, da disco e da música eletrônica.",
+      "As famílias ajudam: cordas, metais, madeiras, percussão, teclados e eletrônica."
+     ],
+     "q": "Que instrumento você ouviria o dia todo e a qual gênero ele remete?",
+     "c": "Escolha três músicas de gêneros diferentes e diga o instrumento principal de cada uma."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Voices and singing styles",
+     "g": "Recognise how vocal style signals a genre.",
+     "p": [
+      "Crooning is soft and close to the microphone, belting is powerful and open, and rap is rhythmic speech.",
+      "Vibrato, falsetto, growl and whisper are tools singers choose to colour a song.",
+      "Vocal style tells a story about a genre: gospel power, folk simplicity, opera training."
+     ],
+     "q": "Whose voice could you recognise in two seconds, and what is special about it?",
+     "c": "Listen to three singers and describe each voice with two words, like warm and airy."
+    },
+    "de": {
+     "t": "Stimmen und Gesangsstile",
+     "g": "Erkennen, wie der Gesangsstil ein Genre verrät.",
+     "p": [
+      "Crooning ist weich und nah am Mikrofon, Belting kraftvoll und offen, Rap ist rhythmisches Sprechen.",
+      "Vibrato, Falsett, Growl und Flüstern sind Mittel, mit denen Sänger ein Lied einfärben.",
+      "Der Gesangsstil erzählt von einem Genre: Gospelkraft, Folk-Schlichtheit, Opernschulung."
+     ],
+     "q": "Wessen Stimme erkennst du in zwei Sekunden, und was ist besonders an ihr?",
+     "c": "Hör drei Sänger und beschreibe jede Stimme mit zwei Wörtern, etwa warm und luftig."
+    },
+    "es": {
+     "t": "Voces y estilos de canto",
+     "g": "Reconocer cómo el estilo vocal delata un género.",
+     "p": [
+      "El crooning es suave y cercano al micrófono, el belting es potente y abierto, y el rap es habla rítmica.",
+      "El vibrato, el falsete, el gruñido y el susurro son recursos con los que el cantante da color.",
+      "El estilo vocal cuenta la historia de un género: fuerza del góspel, sencillez del folk, técnica del canto lírico."
+     ],
+     "q": "¿De quién reconocerías la voz en dos segundos y qué tiene de especial?",
+     "c": "Escucha a tres cantantes y describe cada voz con dos palabras, como cálida y aireada."
+    },
+    "fr": {
+     "t": "Voix et styles de chant",
+     "g": "Reconnaître comment le style vocal révèle un genre.",
+     "p": [
+      "Le crooning est doux et proche du micro, le belting puissant et ouvert, le rap une parole rythmée.",
+      "Vibrato, fausset, growl et murmure sont des outils pour colorer une chanson.",
+      "Le style vocal raconte l'histoire d'un genre : puissance du gospel, simplicité du folk, technique lyrique."
+     ],
+     "q": "Quelle voix reconnaîtriez-vous en deux secondes, et qu'a-t-elle de spécial ?",
+     "c": "Écoutez trois chanteurs et décrivez chaque voix en deux mots, par exemple chaude et aérienne."
+    },
+    "it": {
+     "t": "Voci e stili di canto",
+     "g": "Riconoscere come lo stile vocale rivela un genere.",
+     "p": [
+      "Il crooning è morbido e vicino al microfono, il belting potente e aperto, il rap è parlato ritmico.",
+      "Vibrato, falsetto, growl e sussurro sono strumenti con cui il cantante colora un brano.",
+      "Lo stile vocale racconta un genere: potenza gospel, semplicità folk, tecnica lirica."
+     ],
+     "q": "Di chi riconosceresti la voce in due secondi e cosa ha di speciale?",
+     "c": "Ascolta tre cantanti e descrivi ogni voce con due parole, come calda e leggera."
+    },
+    "pt": {
+     "t": "Vozes e estilos de canto",
+     "g": "Reconhecer como o estilo vocal revela um género.",
+     "p": [
+      "O crooning é suave e junto ao microfone, o belting é potente e aberto, e o rap é fala rítmica.",
+      "Vibrato, falsete, rouquidão e sussurro são ferramentas com que o cantor dá cor a uma canção.",
+      "O estilo vocal conta a história de um género: força do gospel, simplicidade do folk, técnica lírica."
+     ],
+     "q": "De quem reconhecerias a voz em dois segundos e o que tem de especial?",
+     "c": "Ouve três cantores e descreve cada voz com duas palavras, como quente e arejada."
+    },
+    "pt_BR": {
+     "t": "Vozes e estilos de canto",
+     "g": "Reconhecer como o estilo vocal revela um gênero.",
+     "p": [
+      "O crooning é suave e perto do microfone, o belting é potente e aberto, e o rap é fala rítmica.",
+      "Vibrato, falsete, rouquidão e sussurro são ferramentas com que o cantor dá cor à música.",
+      "O estilo vocal conta a história de um gênero: força do gospel, simplicidade do folk, técnica lírica."
+     ],
+     "q": "De quem você reconheceria a voz em dois segundos e o que ela tem de especial?",
+     "c": "Escute três cantores e descreva cada voz com duas palavras, como quente e leve."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Song structure: verse and chorus",
+     "g": "Spot intro, verse, chorus and bridge in songs you know.",
+     "p": [
+      "Verses tell the story, the chorus holds the main message and the catchiest tune.",
+      "A bridge adds contrast, often changing chords or mood before the final chorus.",
+      "A common shape is intro, verse, chorus, verse, chorus, bridge, chorus, outro."
+     ],
+     "q": "Which song has a chorus you always sing loudly, and what happens right before it?",
+     "c": "Pick a song and write its map with timestamps: intro, verse, chorus, bridge."
+    },
+    "de": {
+     "t": "Liedaufbau: Strophe und Refrain",
+     "g": "Intro, Strophe, Refrain und Bridge in bekannten Liedern erkennen.",
+     "p": [
+      "Strophen erzählen die Geschichte, der Refrain trägt die Hauptbotschaft und die eingängigste Melodie.",
+      "Eine Bridge bringt Kontrast, oft mit anderen Akkorden oder Stimmung vor dem letzten Refrain.",
+      "Eine häufige Form: Intro, Strophe, Refrain, Strophe, Refrain, Bridge, Refrain, Outro."
+     ],
+     "q": "Bei welchem Lied singst du den Refrain immer laut mit, und was passiert direkt davor?",
+     "c": "Wähl ein Lied und zeichne seine Karte mit Zeitangaben: Intro, Strophe, Refrain, Bridge."
+    },
+    "es": {
+     "t": "Estructura: estrofa y estribillo",
+     "g": "Reconocer intro, estrofa, estribillo y puente en canciones conocidas.",
+     "p": [
+      "Las estrofas cuentan la historia; el estribillo guarda el mensaje principal y la melodía más pegadiza.",
+      "El puente aporta contraste, a menudo cambiando acordes o ambiente antes del último estribillo.",
+      "Una forma común es intro, estrofa, estribillo, estrofa, estribillo, puente, estribillo y final."
+     ],
+     "q": "¿De qué canción cantas el estribillo siempre a todo volumen y qué pasa justo antes?",
+     "c": "Elige una canción y dibuja su mapa con tiempos: intro, estrofa, estribillo, puente."
+    },
+    "fr": {
+     "t": "Structure : couplet et refrain",
+     "g": "Repérer intro, couplet, refrain et pont dans des chansons connues.",
+     "p": [
+      "Les couplets racontent l'histoire, le refrain porte le message principal et l'air le plus accrocheur.",
+      "Le pont apporte du contraste, souvent par de nouveaux accords ou une autre ambiance avant le dernier refrain.",
+      "Une forme courante : intro, couplet, refrain, couplet, refrain, pont, refrain, conclusion."
+     ],
+     "q": "Dans quelle chanson chantez-vous toujours le refrain à pleine voix, et que se passe-t-il juste avant ?",
+     "c": "Choisissez une chanson et dessinez sa carte avec les minutes : intro, couplet, refrain, pont."
+    },
+    "it": {
+     "t": "Struttura: strofa e ritornello",
+     "g": "Individuare intro, strofa, ritornello e special in brani conosciuti.",
+     "p": [
+      "Le strofe raccontano la storia, il ritornello porta il messaggio principale e la melodia più orecchiabile.",
+      "Lo special porta contrasto, spesso cambiando accordi o atmosfera prima dell'ultimo ritornello.",
+      "Una forma comune: intro, strofa, ritornello, strofa, ritornello, special, ritornello, finale."
+     ],
+     "q": "Di quale brano canti sempre il ritornello a squarciagola e cosa succede subito prima?",
+     "c": "Scegli un brano e disegna la sua mappa coi minuti: intro, strofa, ritornello, special."
+    },
+    "pt": {
+     "t": "Estrutura: estrofe e refrão",
+     "g": "Identificar intro, estrofe, refrão e ponte em canções conhecidas.",
+     "p": [
+      "As estrofes contam a história; o refrão guarda a mensagem principal e a melodia mais orelhuda.",
+      "A ponte traz contraste, muitas vezes mudando acordes ou ambiente antes do último refrão.",
+      "Uma forma comum: intro, estrofe, refrão, estrofe, refrão, ponte, refrão, final."
+     ],
+     "q": "De que canção cantas sempre o refrão a plenos pulmões e o que acontece mesmo antes?",
+     "c": "Escolhe uma canção e desenha o seu mapa com tempos: intro, estrofe, refrão, ponte."
+    },
+    "pt_BR": {
+     "t": "Estrutura: estrofe e refrão",
+     "g": "Identificar intro, estrofe, refrão e ponte em músicas conhecidas.",
+     "p": [
+      "As estrofes contam a história; o refrão guarda a mensagem principal e a melodia mais grudenta.",
+      "A ponte traz contraste, muitas vezes mudando acordes ou clima antes do último refrão.",
+      "Uma forma comum: intro, estrofe, refrão, estrofe, refrão, ponte, refrão, final."
+     ],
+     "q": "De qual música você sempre canta o refrão a plenos pulmões e o que vem logo antes?",
+     "c": "Escolha uma música e desenhe seu mapa com minutos: intro, estrofe, refrão, ponte."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Active listening in five minutes",
+     "g": "Use a quick routine to hear layers you usually miss.",
+     "p": [
+      "First listen to the whole song, then replay and follow only one instrument at a time.",
+      "Ask three questions: what is the pulse, who is playing, and what changes in the song?",
+      "Headphones help: you can notice stereo placement, quiet details and the bass line."
+     ],
+     "q": "When you listen, are you usually doing something else, or do you give music full attention?",
+     "c": "Spend five minutes with one song and write down three details you never noticed."
+    },
+    "de": {
+     "t": "Aktives Hören in fünf Minuten",
+     "g": "Mit einer kurzen Routine Schichten hören, die man sonst überhört.",
+     "p": [
+      "Hör zuerst das ganze Lied, dann noch einmal und folge jeweils nur einem Instrument.",
+      "Stell drei Fragen: Was ist der Puls, wer spielt, und was verändert sich im Lied?",
+      "Kopfhörer helfen: Du bemerkst die Stereoverteilung, leise Details und die Basslinie."
+     ],
+     "q": "Machst du beim Hören meist etwas nebenbei, oder schenkst du der Musik volle Aufmerksamkeit?",
+     "c": "Verbring fünf Minuten mit einem Lied und notiere drei Details, die dir nie aufgefallen waren."
+    },
+    "es": {
+     "t": "Escucha activa en cinco minutos",
+     "g": "Usar una rutina breve para oír capas que sueles pasar por alto.",
+     "p": [
+      "Primero escucha la canción entera; luego repítela siguiendo un solo instrumento cada vez.",
+      "Hazte tres preguntas: cuál es el pulso, quién toca y qué cambia en la canción.",
+      "Los auriculares ayudan: notas la posición en estéreo, los detalles suaves y la línea de bajo."
+     ],
+     "q": "Cuando escuchas música, ¿sueles hacer otra cosa o le dedicas toda la atención?",
+     "c": "Dedica cinco minutos a una canción y anota tres detalles que nunca habías notado."
+    },
+    "fr": {
+     "t": "Écoute active en cinq minutes",
+     "g": "Utiliser une routine rapide pour entendre les couches que l'on manque d'ordinaire.",
+     "p": [
+      "Écoutez d'abord le morceau entier, puis rejouez-le en suivant un seul instrument à la fois.",
+      "Posez-vous trois questions : quel est le pulse, qui joue, et qu'est-ce qui change ?",
+      "Le casque aide : on remarque le placement stéréo, les détails discrets et la ligne de basse."
+     ],
+     "q": "En écoutant, faites-vous souvent autre chose ou donnez-vous toute votre attention à la musique ?",
+     "c": "Passez cinq minutes sur un morceau et notez trois détails que vous n'aviez jamais remarqués."
+    },
+    "it": {
+     "t": "Ascolto attivo in cinque minuti",
+     "g": "Usare una routine breve per sentire strati che di solito sfuggono.",
+     "p": [
+      "Ascolta prima tutto il brano, poi riascoltalo seguendo uno strumento alla volta.",
+      "Fatti tre domande: qual è il battito, chi suona e cosa cambia nel brano?",
+      "Le cuffie aiutano: noti la posizione stereo, i dettagli sottili e la linea di basso."
+     ],
+     "q": "Quando ascolti, di solito fai altro o dedichi alla musica tutta la tua attenzione?",
+     "c": "Dedica cinque minuti a un brano e annota tre dettagli che non avevi mai notato."
+    },
+    "pt": {
+     "t": "Audição ativa em cinco minutos",
+     "g": "Usar uma rotina curta para ouvir camadas que normalmente passam despercebidas.",
+     "p": [
+      "Primeiro ouve a canção inteira; depois repete-a seguindo um só instrumento de cada vez.",
+      "Faz três perguntas: qual é a pulsação, quem toca e o que muda na canção?",
+      "Os auscultadores ajudam: notas a posição em estéreo, os detalhes discretos e a linha de baixo."
+     ],
+     "q": "Quando ouves música, costumas fazer outra coisa ou dás-lhe toda a atenção?",
+     "c": "Dedica cinco minutos a uma canção e anota três detalhes que nunca tinhas notado."
+    },
+    "pt_BR": {
+     "t": "Escuta ativa em cinco minutos",
+     "g": "Usar uma rotina curta para ouvir camadas que normalmente passam despercebidas.",
+     "p": [
+      "Primeiro ouça a música inteira; depois repita seguindo um só instrumento de cada vez.",
+      "Faça três perguntas: qual é a pulsação, quem toca e o que muda na música?",
+      "Fones de ouvido ajudam: você nota a posição no estéreo, os detalhes discretos e a linha de baixo."
+     ],
+     "q": "Quando você ouve música, costuma fazer outra coisa ou dá toda a atenção?",
+     "c": "Dedique cinco minutos a uma música e anote três detalhes que você nunca tinha notado."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How genres are born and mix",
+     "g": "See how migration, technology and borrowing create new genres.",
+     "p": [
+      "Genres grow when people move and meet: blues, Latin and European folk traditions all mixed in the Americas.",
+      "New technology matters too: the electric guitar, the recording studio and the sampler opened new sounds.",
+      "Musicians borrow constantly, which is why styles like jazz-rock or folk-pop exist."
+     ],
+     "q": "Do you know a song that mixes two genres you would never have paired?",
+     "c": "Find one fusion song and name the two styles you hear blending in it."
+    },
+    "de": {
+     "t": "Wie Genres entstehen und sich mischen",
+     "g": "Sehen, wie Migration, Technik und gegenseitiges Ausleihen neue Genres schaffen.",
+     "p": [
+      "Genres wachsen, wenn Menschen wandern und sich begegnen: Blues, lateinische und europäische Volksmusik vermischten sich in Amerika.",
+      "Auch Technik zählt: E-Gitarre, Tonstudio und Sampler eröffneten neue Klänge.",
+      "Musiker leihen sich ständig Ideen, deshalb gibt es Stile wie Jazzrock oder Folkpop."
+     ],
+     "q": "Kennst du ein Lied, das zwei Genres mischt, die du nie zusammengedacht hättest?",
+     "c": "Finde ein Fusion-Lied und nenne die zwei Stile, die du darin verschmelzen hörst."
+    },
+    "es": {
+     "t": "Cómo nacen y se mezclan los géneros",
+     "g": "Ver cómo la migración, la tecnología y los préstamos crean géneros nuevos.",
+     "p": [
+      "Los géneros crecen cuando la gente se mueve y se encuentra: blues, tradiciones latinas y folk europeo se mezclaron en América.",
+      "La tecnología también cuenta: la guitarra eléctrica, el estudio y el sampler abrieron sonidos nuevos.",
+      "Los músicos toman prestado sin parar, por eso existen estilos como el jazz-rock o el folk-pop."
+     ],
+     "q": "¿Conoces una canción que mezcle dos géneros que nunca habrías juntado?",
+     "c": "Busca una canción de fusión y nombra los dos estilos que oyes mezclarse."
+    },
+    "fr": {
+     "t": "Comment naissent et se mêlent les genres",
+     "g": "Voir comment migrations, technologie et emprunts créent de nouveaux genres.",
+     "p": [
+      "Les genres naissent quand les gens bougent et se rencontrent : blues, traditions latines et folk européen se sont mêlés en Amérique.",
+      "La technologie compte aussi : guitare électrique, studio d'enregistrement et sampler ont ouvert de nouveaux sons.",
+      "Les musiciens s'empruntent sans cesse des idées, d'où le jazz-rock ou la folk-pop."
+     ],
+     "q": "Connaissez-vous une chanson qui mêle deux genres que vous n'auriez jamais associés ?",
+     "c": "Trouvez un morceau de fusion et nommez les deux styles que vous entendez s'y mélanger."
+    },
+    "it": {
+     "t": "Come nascono e si mescolano i generi",
+     "g": "Vedere come migrazioni, tecnologia e prestiti creano nuovi generi.",
+     "p": [
+      "I generi crescono quando le persone si spostano e si incontrano: blues, tradizioni latine e folk europeo si mescolarono nelle Americhe.",
+      "Conta anche la tecnologia: chitarra elettrica, studio di registrazione e campionatore hanno aperto nuovi suoni.",
+      "I musicisti prendono in prestito di continuo, per questo esistono stili come jazz-rock o folk-pop."
+     ],
+     "q": "Conosci una canzone che unisce due generi che non avresti mai accostato?",
+     "c": "Trova un brano di fusione e indica i due stili che senti fondersi."
+    },
+    "pt": {
+     "t": "Como nascem e se misturam os géneros",
+     "g": "Ver como migração, tecnologia e empréstimos criam novos géneros.",
+     "p": [
+      "Os géneros crescem quando as pessoas se movem e se encontram: blues, tradições latinas e folk europeu misturaram-se nas Américas.",
+      "A tecnologia também conta: a guitarra elétrica, o estúdio e o sampler abriram novos sons.",
+      "Os músicos pedem emprestado sem parar, por isso existem estilos como o jazz-rock ou o folk-pop."
+     ],
+     "q": "Conheces uma canção que mistura dois géneros que nunca terias juntado?",
+     "c": "Procura uma canção de fusão e nomeia os dois estilos que ouves misturar-se."
+    },
+    "pt_BR": {
+     "t": "Como nascem e se misturam os gêneros",
+     "g": "Ver como migração, tecnologia e empréstimos criam novos gêneros.",
+     "p": [
+      "Os gêneros crescem quando as pessoas se movem e se encontram: blues, tradições latinas e folk europeu se misturaram nas Américas.",
+      "A tecnologia também conta: a guitarra elétrica, o estúdio e o sampler abriram novos sons.",
+      "Músicos pegam emprestado o tempo todo, por isso existem estilos como jazz-rock e folk-pop."
+     ],
+     "q": "Você conhece uma música que mistura dois gêneros que nunca juntaria?",
+     "c": "Ache uma música de fusão e diga os dois estilos que você ouve se misturando."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Blues: the foundation",
+     "g": "Meet the blues, the root of so much popular music.",
+     "p": [
+      "Blues grew in the American South from work songs, spirituals and field hollers.",
+      "Call and response is central: a vocal line is answered by the guitar.",
+      "Lyrics often speak of hard times with honesty, yet the music can feel uplifting."
+     ],
+     "q": "Why do you think sad songs can sometimes make us feel better?",
+     "c": "Listen to one blues song and notice where the guitar answers the voice."
+    },
+    "de": {
+     "t": "Blues: das Fundament",
+     "g": "Den Blues kennenlernen, die Wurzel so vieler Popmusik.",
+     "p": [
+      "Der Blues entstand im amerikanischen Süden aus Arbeitsliedern, Spirituals und Feldrufen.",
+      "Frage und Antwort sind zentral: Eine Gesangszeile wird von der Gitarre beantwortet.",
+      "Die Texte erzählen ehrlich von schweren Zeiten, doch die Musik kann befreiend wirken."
+     ],
+     "q": "Warum können traurige Lieder uns manchmal besser fühlen lassen?",
+     "c": "Hör einen Blues und achte darauf, wo die Gitarre auf die Stimme antwortet."
+    },
+    "es": {
+     "t": "El blues: los cimientos",
+     "g": "Conocer el blues, raíz de tanta música popular.",
+     "p": [
+      "El blues nació en el sur de Estados Unidos de cantos de trabajo, espirituales y gritos de campo.",
+      "La llamada y respuesta es clave: una línea cantada recibe la respuesta de la guitarra.",
+      "Las letras hablan con honestidad de tiempos duros, pero la música puede resultar liberadora."
+     ],
+     "q": "¿Por qué crees que las canciones tristes a veces nos hacen sentir mejor?",
+     "c": "Escucha un blues y fíjate en dónde la guitarra responde a la voz."
+    },
+    "fr": {
+     "t": "Le blues : les fondations",
+     "g": "Découvrir le blues, racine de tant de musique populaire.",
+     "p": [
+      "Le blues est né dans le sud des États-Unis, des chants de travail, des spirituals et des cris des champs.",
+      "L'appel et la réponse sont centraux : une ligne chantée reçoit la réponse de la guitare.",
+      "Les paroles évoquent sans fard les temps difficiles, mais la musique peut être réconfortante."
+     ],
+     "q": "Pourquoi, selon vous, les chansons tristes peuvent-elles parfois faire du bien ?",
+     "c": "Écoutez un blues et repérez où la guitare répond à la voix."
+    },
+    "it": {
+     "t": "Il blues: le fondamenta",
+     "g": "Conoscere il blues, radice di tanta musica popolare.",
+     "p": [
+      "Il blues nacque nel sud degli Stati Uniti da canti di lavoro, spiritual e richiami dei campi.",
+      "Domanda e risposta sono centrali: una frase cantata riceve la risposta della chitarra.",
+      "I testi parlano con onestà di tempi duri, ma la musica può risultare liberatoria."
+     ],
+     "q": "Perché secondo te le canzoni tristi a volte ci fanno stare meglio?",
+     "c": "Ascolta un blues e nota dove la chitarra risponde alla voce."
+    },
+    "pt": {
+     "t": "O blues: os alicerces",
+     "g": "Conhecer o blues, raiz de tanta música popular.",
+     "p": [
+      "O blues nasceu no sul dos Estados Unidos de cantos de trabalho, espirituais e gritos de campo.",
+      "A chamada e resposta é central: uma linha cantada recebe a resposta da guitarra.",
+      "As letras falam com honestidade de tempos duros, mas a música pode ser libertadora."
+     ],
+     "q": "Porque achas que canções tristes às vezes nos fazem sentir melhor?",
+     "c": "Ouve um blues e repara onde a guitarra responde à voz."
+    },
+    "pt_BR": {
+     "t": "O blues: as bases",
+     "g": "Conhecer o blues, raiz de tanta música popular.",
+     "p": [
+      "O blues nasceu no sul dos Estados Unidos de cantos de trabalho, espirituais e gritos de campo.",
+      "A chamada e resposta é central: uma linha cantada recebe a resposta da guitarra.",
+      "As letras falam com honestidade de tempos duros, mas a música pode ser libertadora."
+     ],
+     "q": "Por que você acha que músicas tristes às vezes nos fazem sentir melhor?",
+     "c": "Escute um blues e perceba onde a guitarra responde à voz."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "mindfulness",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A mindful pause before you start",
+     "g": "Take three conscious breaths before beginning any task.",
+     "p": [
+      "Before you open the email or start the chore, stop for three breaths.",
+      "Feel your feet, then let the breath be slow and natural.",
+      "This tiny pause helps you begin with a clearer, steadier mind."
+     ],
+     "q": "Which task today would benefit most from a three-breath pause first?",
+     "c": "Take three conscious breaths before each of your first three tasks today."
+    },
+    "de": {
+     "t": "Eine achtsame Pause vor dem Start",
+     "g": "Atme dreimal bewusst, bevor du eine Aufgabe beginnst.",
+     "p": [
+      "Halte vor dem Öffnen der Mail oder der Hausarbeit für drei Atemzüge inne.",
+      "Spüre deine Füße und lass den Atem langsam und natürlich sein.",
+      "Diese kleine Pause hilft dir, klarer und ruhiger zu beginnen."
+     ],
+     "q": "Welche Aufgabe heute würde von drei Atemzügen vorab am meisten profitieren?",
+     "c": "Atme heute vor deinen ersten drei Aufgaben je dreimal bewusst."
+    },
+    "es": {
+     "t": "Una pausa consciente antes de empezar",
+     "g": "Haz tres respiraciones conscientes antes de empezar cualquier tarea.",
+     "p": [
+      "Antes de abrir el correo o empezar la faena, detente tres respiraciones.",
+      "Siente tus pies y deja que el aire fluya lento y natural.",
+      "Esta pequeña pausa te ayuda a empezar con la mente más clara y firme."
+     ],
+     "q": "¿Qué tarea de hoy se beneficiaría más de una pausa de tres respiraciones?",
+     "c": "Haz tres respiraciones conscientes antes de tus tres primeras tareas de hoy."
+    },
+    "fr": {
+     "t": "Une pause consciente avant de commencer",
+     "g": "Prends trois respirations conscientes avant de commencer une tâche.",
+     "p": [
+      "Avant d'ouvrir le courriel ou de lancer la corvée, arrête-toi trois respirations.",
+      "Sens tes pieds, puis laisse le souffle lent et naturel.",
+      "Cette minuscule pause t'aide à démarrer l'esprit plus clair et stable."
+     ],
+     "q": "Quelle tâche d'aujourd'hui profiterait le plus d'une pause de trois respirations ?",
+     "c": "Prends trois respirations conscientes avant chacune de tes trois premières tâches."
+    },
+    "it": {
+     "t": "Una pausa consapevole prima di iniziare",
+     "g": "Fai tre respiri consapevoli prima di iniziare qualsiasi compito.",
+     "p": [
+      "Prima di aprire la mail o iniziare le faccende, fermati per tre respiri.",
+      "Senti i piedi, poi lascia il respiro lento e naturale.",
+      "Questa piccola pausa ti aiuta a iniziare con la mente più chiara e salda."
+     ],
+     "q": "Quale compito di oggi trarrebbe più beneficio da una pausa di tre respiri?",
+     "c": "Fai tre respiri consapevoli prima dei tuoi primi tre compiti di oggi."
+    },
+    "pt": {
+     "t": "Uma pausa consciente antes de começar",
+     "g": "Faz três respirações conscientes antes de começares qualquer tarefa.",
+     "p": [
+      "Antes de abrires o e-mail ou começares a tarefa, pára por três respirações.",
+      "Sente os pés e deixa a respiração lenta e natural.",
+      "Esta pequena pausa ajuda-te a começar com a mente mais clara e firme."
+     ],
+     "q": "Que tarefa de hoje beneficiaria mais de uma pausa de três respirações?",
+     "c": "Faz três respirações conscientes antes das tuas três primeiras tarefas de hoje."
+    },
+    "pt_BR": {
+     "t": "Uma pausa consciente antes de começar",
+     "g": "Faça três respirações conscientes antes de começar qualquer tarefa.",
+     "p": [
+      "Antes de abrir o e-mail ou começar a tarefa, pare por três respirações.",
+      "Sinta os pés e deixe a respiração lenta e natural.",
+      "Essa pequena pausa ajuda você a começar com a mente mais clara e firme."
+     ],
+     "q": "Que tarefa de hoje se beneficiaria mais de uma pausa de três respirações?",
+     "c": "Faça três respirações conscientes antes das suas três primeiras tarefas de hoje."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kindness toward a busy mind",
+     "g": "Meet distraction with a friendly attitude instead of frustration.",
+     "p": [
+      "When your mind wanders, imagine greeting it like a playful puppy.",
+      "Say a kind inner word, such as okay, and gently return to the breath.",
+      "Frustration is also just something to notice, without scolding yourself."
+     ],
+     "q": "How do you usually talk to yourself when you get distracted?",
+     "c": "Next time you get distracted today, answer with one kind inner word."
+    },
+    "de": {
+     "t": "Freundlichkeit gegenüber einem unruhigen Geist",
+     "g": "Begegne Ablenkung mit Freundlichkeit statt mit Frust.",
+     "p": [
+      "Schweift dein Geist ab, begrüße ihn wie einen verspielten Welpen.",
+      "Sage innerlich ein freundliches Wort wie okay und kehre sanft zum Atem zurück.",
+      "Auch Frust darf einfach bemerkt werden, ohne dich zu tadeln."
+     ],
+     "q": "Wie sprichst du normalerweise mit dir, wenn du abgelenkt bist?",
+     "c": "Antworte heute bei der nächsten Ablenkung mit einem freundlichen inneren Wort."
+    },
+    "es": {
+     "t": "Amabilidad con una mente ocupada",
+     "g": "Recibe la distracción con actitud amable en lugar de frustración.",
+     "p": [
+      "Cuando la mente divague, salúdala como a un cachorro juguetón.",
+      "Di una palabra amable por dentro, como vale, y vuelve con suavidad a la respiración.",
+      "La frustración también es algo que notar, sin regañarte."
+     ],
+     "q": "¿Cómo te hablas normalmente cuando te distraes?",
+     "c": "La próxima vez que te distraigas hoy, responde con una palabra amable por dentro."
+    },
+    "fr": {
+     "t": "Bienveillance envers un esprit agité",
+     "g": "Accueille la distraction avec amitié plutôt qu'avec frustration.",
+     "p": [
+      "Quand l'esprit s'égare, salue-le comme un chiot joueur.",
+      "Dis un mot gentil intérieurement, comme d'accord, et reviens doucement au souffle.",
+      "La frustration aussi se remarque simplement, sans te gronder."
+     ],
+     "q": "Comment te parles-tu d'habitude quand tu te distrais ?",
+     "c": "À ta prochaine distraction aujourd'hui, réponds par un mot gentil intérieur."
+    },
+    "it": {
+     "t": "Gentilezza verso una mente affollata",
+     "g": "Accogli la distrazione con un atteggiamento amichevole invece che con frustrazione.",
+     "p": [
+      "Quando la mente vaga, salutala come un cucciolo giocherellone.",
+      "Di' dentro di te una parola gentile, come ok, e torna dolcemente al respiro.",
+      "Anche la frustrazione si può semplicemente notare, senza rimproverarti."
+     ],
+     "q": "Come ti parli di solito quando ti distrai?",
+     "c": "La prossima volta che ti distrai oggi, rispondi con una parola gentile dentro di te."
+    },
+    "pt": {
+     "t": "Gentileza com uma mente ocupada",
+     "g": "Recebe a distração com uma atitude amigável em vez de frustração.",
+     "p": [
+      "Quando a mente divagar, cumprimenta-a como a um cachorrinho brincalhão.",
+      "Diz uma palavra gentil por dentro, como está bem, e volta com suavidade à respiração.",
+      "A frustração também é algo para reparar, sem te repreenderes."
+     ],
+     "q": "Como costumas falar contigo quando te distrais?",
+     "c": "Da próxima vez que te distraíres hoje, responde com uma palavra gentil por dentro."
+    },
+    "pt_BR": {
+     "t": "Gentileza com uma mente ocupada",
+     "g": "Receba a distração com uma atitude amigável em vez de frustração.",
+     "p": [
+      "Quando a mente divagar, cumprimente-a como a um filhote brincalhão.",
+      "Diga uma palavra gentil por dentro, como tudo bem, e volte com suavidade à respiração.",
+      "A frustração também é algo para perceber, sem se repreender."
+     ],
+     "q": "Como você costuma falar consigo quando se distrai?",
+     "c": "Da próxima vez que se distrair hoje, responda com uma palavra gentil por dentro."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Making a tiny daily slot",
+     "g": "Choose a regular time and place for a short practice that fits your day.",
+     "p": [
+      "Pick a moment that already exists in your day, like after waking up.",
+      "Choose a quiet spot and keep the practice short, even two minutes.",
+      "Small and regular beats long and rare."
+     ],
+     "q": "Which time and place could work best for your daily practice?",
+     "c": "Choose your daily slot and practise for two minutes there today."
+    },
+    "de": {
+     "t": "Ein winziges tägliches Zeitfenster",
+     "g": "Wähle Zeit und Ort für eine kurze Übung, die in deinen Alltag passt.",
+     "p": [
+      "Nimm einen Moment, den es schon gibt, etwa nach dem Aufwachen.",
+      "Wähle einen ruhigen Platz und halte die Übung kurz, schon zwei Minuten reichen.",
+      "Klein und regelmäßig schlägt lang und selten."
+     ],
+     "q": "Welche Zeit und welcher Ort würden für deine tägliche Übung am besten passen?",
+     "c": "Lege dein Zeitfenster fest und übe heute zwei Minuten dort."
+    },
+    "es": {
+     "t": "Un pequeño hueco diario",
+     "g": "Elige hora y lugar fijos para una práctica breve que encaje en tu día.",
+     "p": [
+      "Elige un momento que ya exista en tu día, como al despertar.",
+      "Escoge un sitio tranquilo y mantén la práctica corta, incluso dos minutos.",
+      "Pequeño y regular supera a largo y raro."
+     ],
+     "q": "¿Qué hora y lugar podrían funcionar mejor para tu práctica diaria?",
+     "c": "Elige tu hueco diario y practica dos minutos allí hoy."
+    },
+    "fr": {
+     "t": "Un petit créneau quotidien",
+     "g": "Choisis une heure et un lieu réguliers pour une courte pratique qui s'intègre à ta journée.",
+     "p": [
+      "Choisis un moment qui existe déjà dans ta journée, comme le réveil.",
+      "Prends un endroit calme et garde la pratique courte, même deux minutes.",
+      "Petit et régulier vaut mieux que long et rare."
+     ],
+     "q": "Quelle heure et quel lieu conviendraient le mieux à ta pratique quotidienne ?",
+     "c": "Choisis ton créneau et pratique deux minutes là aujourd'hui."
+    },
+    "it": {
+     "t": "Un piccolo spazio quotidiano",
+     "g": "Scegli un orario e un luogo fissi per una pratica breve che si adatti alla tua giornata.",
+     "p": [
+      "Scegli un momento che esiste già nella tua giornata, come al risveglio.",
+      "Prendi un posto tranquillo e tieni la pratica breve, anche due minuti.",
+      "Poco e regolare batte tanto e raro."
+     ],
+     "q": "Quale orario e luogo funzionerebbero meglio per la tua pratica quotidiana?",
+     "c": "Scegli il tuo spazio quotidiano e pratica due minuti lì oggi."
+    },
+    "pt": {
+     "t": "Um pequeno espaço diário",
+     "g": "Escolhe hora e local fixos para uma prática curta que caiba no teu dia.",
+     "p": [
+      "Escolhe um momento que já existe no teu dia, como ao acordar.",
+      "Escolhe um sítio sossegado e mantém a prática curta, até dois minutos.",
+      "Pequeno e regular vale mais do que longo e raro."
+     ],
+     "q": "Que hora e local funcionariam melhor para a tua prática diária?",
+     "c": "Escolhe o teu espaço diário e pratica dois minutos aí hoje."
+    },
+    "pt_BR": {
+     "t": "Um pequeno espaço diário",
+     "g": "Escolha hora e local fixos para uma prática curta que caiba no seu dia.",
+     "p": [
+      "Escolha um momento que já existe no seu dia, como ao acordar.",
+      "Escolha um lugar sossegado e mantenha a prática curta, até dois minutos.",
+      "Pequeno e regular vale mais do que longo e raro."
+     ],
+     "q": "Que hora e local funcionariam melhor para sua prática diária?",
+     "c": "Escolha seu espaço diário e pratique dois minutos lá hoje."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Habit anchors for practice",
+     "g": "Link a short breathing pause to something you already do, like making coffee.",
+     "p": [
+      "Pick an existing habit: kettle on, brushing teeth, waiting for a lift.",
+      "During it, take three slow breaths and feel your feet.",
+      "An anchor makes remembering easy, so the practice becomes automatic."
+     ],
+     "q": "Which everyday habit could carry a breathing pause for you?",
+     "c": "Attach three slow breaths to one daily habit, every time you do it today."
+    },
+    "de": {
+     "t": "Gewohnheitsanker für die Übung",
+     "g": "Verknüpfe eine kurze Atempause mit etwas, das du ohnehin tust, etwa Kaffeekochen.",
+     "p": [
+      "Wähle eine bestehende Gewohnheit: Wasserkocher, Zähneputzen, Warten auf den Aufzug.",
+      "Atme dabei dreimal langsam und spüre deine Füße.",
+      "Ein Anker erleichtert das Erinnern, die Übung wird selbstverständlich."
+     ],
+     "q": "Welche Alltagsgewohnheit könnte bei dir eine Atempause tragen?",
+     "c": "Verbinde heute jedes Mal drei langsame Atemzüge mit einer täglichen Gewohnheit."
+    },
+    "es": {
+     "t": "Anclas de hábito para practicar",
+     "g": "Une una breve pausa de respiración a algo que ya haces, como preparar café.",
+     "p": [
+      "Elige un hábito existente: el hervidor, cepillarte los dientes, esperar el ascensor.",
+      "Durante ese momento, haz tres respiraciones lentas y siente tus pies.",
+      "Un ancla facilita acordarte y la práctica se vuelve automática."
+     ],
+     "q": "¿Qué hábito cotidiano podría llevar una pausa de respiración para ti?",
+     "c": "Une tres respiraciones lentas a un hábito diario, cada vez que lo hagas hoy."
+    },
+    "fr": {
+     "t": "Des ancres d'habitude pour la pratique",
+     "g": "Associe une courte pause respiratoire à un geste déjà quotidien, comme préparer le café.",
+     "p": [
+      "Choisis une habitude existante : bouilloire, brossage de dents, attente de l'ascenseur.",
+      "Pendant ce geste, prends trois respirations lentes et sens tes pieds.",
+      "Une ancre facilite le souvenir et la pratique devient automatique."
+     ],
+     "q": "Quelle habitude quotidienne pourrait porter une pause respiratoire pour toi ?",
+     "c": "Associe trois respirations lentes à une habitude, à chaque fois aujourd'hui."
+    },
+    "it": {
+     "t": "Ancore di abitudine per la pratica",
+     "g": "Collega una breve pausa del respiro a qualcosa che già fai, come preparare il caffè.",
+     "p": [
+      "Scegli un'abitudine esistente: bollitore, lavarsi i denti, attesa dell'ascensore.",
+      "Durante quel gesto, fai tre respiri lenti e senti i piedi.",
+      "Un'ancora rende facile ricordare e la pratica diventa automatica."
+     ],
+     "q": "Quale abitudine quotidiana potrebbe ospitare una pausa di respiro per te?",
+     "c": "Collega tre respiri lenti a un'abitudine quotidiana, ogni volta che la fai oggi."
+    },
+    "pt": {
+     "t": "Âncoras de hábito para a prática",
+     "g": "Liga uma breve pausa de respiração a algo que já fazes, como fazer café.",
+     "p": [
+      "Escolhe um hábito existente: chaleira, lavar os dentes, esperar o elevador.",
+      "Durante esse momento, faz três respirações lentas e sente os pés.",
+      "Uma âncora facilita o lembrar e a prática torna-se automática."
+     ],
+     "q": "Que hábito diário poderia levar uma pausa de respiração para ti?",
+     "c": "Liga três respirações lentas a um hábito diário, sempre que o fizeres hoje."
+    },
+    "pt_BR": {
+     "t": "Âncoras de hábito para a prática",
+     "g": "Ligue uma breve pausa de respiração a algo que você já faz, como passar café.",
+     "p": [
+      "Escolha um hábito existente: chaleira, escovar os dentes, esperar o elevador.",
+      "Durante esse momento, faça três respirações lentas e sinta os pés.",
+      "Uma âncora facilita lembrar e a prática se torna automática."
+     ],
+     "q": "Que hábito do dia a dia poderia levar uma pausa de respiração para você?",
+     "c": "Ligue três respirações lentas a um hábito diário, toda vez que fizer hoje."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Using a gentle timer",
+     "g": "Set a soft timer so you can relax into practice without watching the clock.",
+     "p": [
+      "Choose a timer with a soft bell or gentle vibration, not a harsh alarm.",
+      "Set it for three to five minutes, then forget about time.",
+      "If your mind says time is up early, simply wait for the bell."
+     ],
+     "q": "How did it feel to let a timer watch the time for you?",
+     "c": "Practise for three minutes with a gentle timer today."
+    },
+    "de": {
+     "t": "Einen sanften Timer nutzen",
+     "g": "Stelle einen sanften Timer, damit du dich ohne Blick auf die Uhr in die Übung entspannst.",
+     "p": [
+      "Wähle einen Timer mit leisem Gong oder sanfter Vibration, keinen schrillen Wecker.",
+      "Stelle drei bis fünf Minuten ein und vergiss die Zeit.",
+      "Meint dein Geist, die Zeit sei schon um, warte einfach auf den Gong."
+     ],
+     "q": "Wie fühlte es sich an, die Zeit einen Timer überwachen zu lassen?",
+     "c": "Übe heute drei Minuten mit einem sanften Timer."
+    },
+    "es": {
+     "t": "Usar un temporizador suave",
+     "g": "Pon un temporizador suave para relajarte en la práctica sin mirar el reloj.",
+     "p": [
+      "Elige un temporizador con campana suave o vibración leve, no una alarma estridente.",
+      "Prográmalo para tres a cinco minutos y olvida el tiempo.",
+      "Si la mente dice que ya pasó el tiempo, espera simplemente a la campana."
+     ],
+     "q": "¿Cómo se sintió dejar que un temporizador vigilara el tiempo por ti?",
+     "c": "Practica hoy tres minutos con un temporizador suave."
+    },
+    "fr": {
+     "t": "Utiliser un minuteur doux",
+     "g": "Règle un minuteur doux pour te détendre dans la pratique sans surveiller l'horloge.",
+     "p": [
+      "Choisis un minuteur à cloche douce ou vibration légère, pas une alarme agressive.",
+      "Règle-le sur trois à cinq minutes, puis oublie le temps.",
+      "Si l'esprit dit que c'est déjà fini, attends simplement la cloche."
+     ],
+     "q": "Qu'as-tu ressenti en laissant un minuteur surveiller le temps pour toi ?",
+     "c": "Pratique aujourd'hui trois minutes avec un minuteur doux."
+    },
+    "it": {
+     "t": "Usare un timer delicato",
+     "g": "Imposta un timer delicato per rilassarti nella pratica senza guardare l'orologio.",
+     "p": [
+      "Scegli un timer con campanella morbida o lieve vibrazione, non una sveglia aggressiva.",
+      "Impostalo su tre-cinque minuti e dimentica il tempo.",
+      "Se la mente dice che il tempo è scaduto, aspetta semplicemente la campanella."
+     ],
+     "q": "Come ti è sembrato lasciare che un timer controllasse il tempo per te?",
+     "c": "Oggi pratica tre minuti con un timer delicato."
+    },
+    "pt": {
+     "t": "Usar um temporizador suave",
+     "g": "Define um temporizador suave para relaxares na prática sem olhar para o relógio.",
+     "p": [
+      "Escolhe um temporizador com sino suave ou vibração leve, não um alarme agressivo.",
+      "Programa-o para três a cinco minutos e esquece o tempo.",
+      "Se a mente disser que o tempo acabou, espera simplesmente pelo sino."
+     ],
+     "q": "Como foi deixar um temporizador vigiar o tempo por ti?",
+     "c": "Pratica hoje três minutos com um temporizador suave."
+    },
+    "pt_BR": {
+     "t": "Usando um timer suave",
+     "g": "Programe um timer suave para relaxar na prática sem olhar o relógio.",
+     "p": [
+      "Escolha um timer com sininho suave ou vibração leve, não um alarme estridente.",
+      "Programe de três a cinco minutos e esqueça o tempo.",
+      "Se a mente disser que o tempo acabou, apenas espere o sininho."
+     ],
+     "q": "Como foi deixar um timer vigiar o tempo por você?",
+     "c": "Pratique hoje três minutos com um timer suave."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The three-minute breathing space",
+     "g": "Use a short three-step pause: notice what is here, gather on the breath, then widen awareness.",
+     "p": [
+      "Step one: notice thoughts, feelings and body sensations as they are.",
+      "Step two: gather attention on the breath, for about a minute.",
+      "Step three: widen awareness to your whole body and the room around you."
+     ],
+     "q": "When in your day would a three-minute breathing space help you most?",
+     "c": "Do one full three-minute breathing space today, at midday or in a stressful moment."
+    },
+    "de": {
+     "t": "Der Drei-Minuten-Atemraum",
+     "g": "Nutze eine kurze Pause in drei Schritten: wahrnehmen, am Atem sammeln, Weite öffnen.",
+     "p": [
+      "Schritt eins: Bemerke Gedanken, Gefühle und Körperempfindungen, wie sie sind.",
+      "Schritt zwei: Sammle die Aufmerksamkeit etwa eine Minute am Atem.",
+      "Schritt drei: Weite die Wahrnehmung auf den ganzen Körper und den Raum aus."
+     ],
+     "q": "Wann in deinem Tag würde dir ein Drei-Minuten-Atemraum am meisten helfen?",
+     "c": "Mache heute einen kompletten Drei-Minuten-Atemraum, mittags oder in einem stressigen Moment."
+    },
+    "es": {
+     "t": "El espacio de respiración de tres minutos",
+     "g": "Usa una pausa breve en tres pasos: notar lo que hay, reunirte en la respiración y ampliar la conciencia.",
+     "p": [
+      "Paso uno: nota pensamientos, emociones y sensaciones corporales tal como están.",
+      "Paso dos: reúne la atención en la respiración durante un minuto aproximadamente.",
+      "Paso tres: amplía la conciencia a todo el cuerpo y a la habitación."
+     ],
+     "q": "¿En qué momento del día te ayudaría más un espacio de respiración de tres minutos?",
+     "c": "Haz hoy un espacio de respiración completo, a mediodía o en un momento de estrés."
+    },
+    "fr": {
+     "t": "L'espace de respiration de trois minutes",
+     "g": "Utilise une courte pause en trois temps : remarquer, se rassembler sur le souffle, élargir la conscience.",
+     "p": [
+      "Étape un : remarque pensées, émotions et sensations du corps telles qu'elles sont.",
+      "Étape deux : rassemble l'attention sur la respiration pendant environ une minute.",
+      "Étape trois : élargis la conscience à tout le corps et à la pièce."
+     ],
+     "q": "À quel moment de ta journée un espace de respiration de trois minutes t'aiderait-il le plus ?",
+     "c": "Fais aujourd'hui un espace de respiration complet, à midi ou dans un moment tendu."
+    },
+    "it": {
+     "t": "Lo spazio di respiro di tre minuti",
+     "g": "Usa una breve pausa in tre passi: notare cosa c'è, raccogliersi sul respiro, allargare la consapevolezza.",
+     "p": [
+      "Passo uno: nota pensieri, emozioni e sensazioni del corpo così come sono.",
+      "Passo due: raccogli l'attenzione sul respiro per circa un minuto.",
+      "Passo tre: allarga la consapevolezza a tutto il corpo e alla stanza."
+     ],
+     "q": "In quale momento della giornata ti aiuterebbe di più uno spazio di respiro di tre minuti?",
+     "c": "Fai oggi uno spazio di respiro completo, a mezzogiorno o in un momento di stress."
+    },
+    "pt": {
+     "t": "O espaço de respiração de três minutos",
+     "g": "Usa uma pausa curta em três passos: reparar no que há, reunir-te na respiração e alargar a consciência.",
+     "p": [
+      "Passo um: repara em pensamentos, emoções e sensações do corpo tal como estão.",
+      "Passo dois: reúne a atenção na respiração durante cerca de um minuto.",
+      "Passo três: alarga a consciência ao corpo todo e à sala."
+     ],
+     "q": "Em que momento do dia te ajudaria mais um espaço de respiração de três minutos?",
+     "c": "Faz hoje um espaço de respiração completo, ao meio-dia ou num momento de stress."
+    },
+    "pt_BR": {
+     "t": "O espaço de respiração de três minutos",
+     "g": "Use uma pausa curta em três passos: perceber o que há, reunir-se na respiração e ampliar a consciência.",
+     "p": [
+      "Passo um: perceba pensamentos, emoções e sensações do corpo como estão.",
+      "Passo dois: reúna a atenção na respiração por cerca de um minuto.",
+      "Passo três: amplie a consciência para o corpo todo e o ambiente."
+     ],
+     "q": "Em que momento do dia um espaço de respiração de três minutos ajudaria mais você?",
+     "c": "Faça hoje um espaço de respiração completo, ao meio-dia ou num momento de estresse."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mindful hand washing",
+     "g": "Turn hand washing into a mini practice of water, soap and touch.",
+     "p": [
+      "Feel the water temperature as it first touches your hands.",
+      "Notice the smell of the soap, its foam and the movement of your fingers.",
+      "This small ritual happens many times a day, so it is a handy reminder."
+     ],
+     "q": "What did you notice in hand washing that usually passes unnoticed?",
+     "c": "Wash your hands mindfully at least twice today."
+    },
+    "de": {
+     "t": "Achtsam Hände waschen",
+     "g": "Mach das Händewaschen zur Mini-Übung aus Wasser, Seife und Berührung.",
+     "p": [
+      "Spüre die Wassertemperatur, wenn sie zuerst deine Hände berührt.",
+      "Bemerke den Seifenduft, den Schaum und die Bewegung deiner Finger.",
+      "Dieses kleine Ritual kommt oft am Tag vor und ist eine praktische Erinnerung."
+     ],
+     "q": "Was ist dir beim Händewaschen aufgefallen, das sonst unbemerkt bleibt?",
+     "c": "Wasche dir heute mindestens zweimal achtsam die Hände."
+    },
+    "es": {
+     "t": "Lavarse las manos con atención",
+     "g": "Convierte lavarte las manos en una mini práctica de agua, jabón y tacto.",
+     "p": [
+      "Siente la temperatura del agua al tocar primero tus manos.",
+      "Nota el olor del jabón, la espuma y el movimiento de tus dedos.",
+      "Este pequeño ritual ocurre muchas veces al día, así que es un buen recordatorio."
+     ],
+     "q": "¿Qué notaste al lavarte las manos que normalmente pasa inadvertido?",
+     "c": "Lávate las manos con atención al menos dos veces hoy."
+    },
+    "fr": {
+     "t": "Se laver les mains en pleine conscience",
+     "g": "Transforme le lavage des mains en mini-pratique d'eau, de savon et de toucher.",
+     "p": [
+      "Sens la température de l'eau quand elle touche d'abord tes mains.",
+      "Remarque l'odeur du savon, la mousse et le mouvement de tes doigts.",
+      "Ce petit rituel revient souvent dans la journée, c'est un rappel pratique."
+     ],
+     "q": "Qu'as-tu remarqué en te lavant les mains qui passe d'habitude inaperçu ?",
+     "c": "Lave-toi les mains en pleine conscience au moins deux fois aujourd'hui."
+    },
+    "it": {
+     "t": "Lavarsi le mani con consapevolezza",
+     "g": "Trasforma il lavaggio delle mani in una mini pratica di acqua, sapone e tatto.",
+     "p": [
+      "Senti la temperatura dell'acqua quando tocca per prima le mani.",
+      "Nota il profumo del sapone, la schiuma e il movimento delle dita.",
+      "Questo piccolo rito ricorre molte volte al giorno, quindi è un comodo promemoria."
+     ],
+     "q": "Cosa hai notato lavandoti le mani che di solito passa inosservato?",
+     "c": "Lavati le mani con consapevolezza almeno due volte oggi."
+    },
+    "pt": {
+     "t": "Lavar as mãos com atenção",
+     "g": "Transforma o lavar das mãos numa mini prática de água, sabão e tato.",
+     "p": [
+      "Sente a temperatura da água quando toca primeiro nas tuas mãos.",
+      "Repara no cheiro do sabão, na espuma e no movimento dos dedos.",
+      "Este pequeno ritual repete-se muitas vezes por dia, por isso é um lembrete útil."
+     ],
+     "q": "O que reparaste ao lavar as mãos que costuma passar despercebido?",
+     "c": "Lava as mãos com atenção pelo menos duas vezes hoje."
+    },
+    "pt_BR": {
+     "t": "Lavando as mãos com atenção",
+     "g": "Transforme o lavar das mãos numa mini prática de água, sabão e toque.",
+     "p": [
+      "Sinta a temperatura da água quando toca primeiro nas suas mãos.",
+      "Perceba o cheiro do sabão, a espuma e o movimento dos dedos.",
+      "Esse pequeno ritual se repete muitas vezes ao dia, então é um lembrete útil."
+     ],
+     "q": "O que você percebeu ao lavar as mãos que costuma passar despercebido?",
+     "c": "Lave as mãos com atenção pelo menos duas vezes hoje."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Noticing the pleasant",
+     "g": "Spot small pleasant moments during the day and stay with them a few seconds.",
+     "p": [
+      "Look for tiny good things: warm sun, a tasty bite, a friendly smile.",
+      "When you spot one, stay with it for three slow breaths.",
+      "Notice how it feels in the body; savouring is a trainable skill."
+     ],
+     "q": "What small pleasant moment did you spot today?",
+     "c": "Find and savour three small pleasant moments today."
+    },
+    "de": {
+     "t": "Das Angenehme bemerken",
+     "g": "Entdecke kleine angenehme Momente im Tag und verweile ein paar Sekunden dabei.",
+     "p": [
+      "Suche nach winzigen guten Dingen: warme Sonne, ein leckerer Bissen, ein freundliches Lächeln.",
+      "Hast du eines gefunden, bleibe drei langsame Atemzüge dabei.",
+      "Spüre, wie es sich im Körper anfühlt; Genießen ist trainierbar."
+     ],
+     "q": "Welchen kleinen angenehmen Moment hast du heute entdeckt?",
+     "c": "Finde und genieße heute drei kleine angenehme Momente."
+    },
+    "es": {
+     "t": "Notar lo agradable",
+     "g": "Detecta pequeños momentos agradables durante el día y quédate con ellos unos segundos.",
+     "p": [
+      "Busca cosas buenas diminutas: sol cálido, un bocado rico, una sonrisa amable.",
+      "Cuando encuentres una, quédate tres respiraciones lentas.",
+      "Nota cómo se siente en el cuerpo; saborear es una habilidad entrenable."
+     ],
+     "q": "¿Qué pequeño momento agradable detectaste hoy?",
+     "c": "Encuentra y saborea hoy tres pequeños momentos agradables."
+    },
+    "fr": {
+     "t": "Remarquer l'agréable",
+     "g": "Repère de petits moments agréables dans la journée et reste-y quelques secondes.",
+     "p": [
+      "Cherche de petites bonnes choses : soleil chaud, bouchée savoureuse, sourire aimable.",
+      "Quand tu en repères une, reste avec elle trois respirations lentes.",
+      "Remarque ce que cela fait dans le corps; savourer s'entraîne."
+     ],
+     "q": "Quel petit moment agréable as-tu repéré aujourd'hui ?",
+     "c": "Trouve et savoure aujourd'hui trois petits moments agréables."
+    },
+    "it": {
+     "t": "Notare ciò che è piacevole",
+     "g": "Individua piccoli momenti piacevoli durante il giorno e fermati qualche secondo con loro.",
+     "p": [
+      "Cerca piccole cose belle: sole caldo, un boccone gustoso, un sorriso gentile.",
+      "Quando ne trovi una, restaci per tre respiri lenti.",
+      "Nota come si sente nel corpo; assaporare è un'abilità allenabile."
+     ],
+     "q": "Quale piccolo momento piacevole hai notato oggi?",
+     "c": "Trova e assapora oggi tre piccoli momenti piacevoli."
+    },
+    "pt": {
+     "t": "Reparar no agradável",
+     "g": "Deteta pequenos momentos agradáveis ao longo do dia e fica com eles uns segundos.",
+     "p": [
+      "Procura pequenas coisas boas: sol quente, uma garfada saborosa, um sorriso simpático.",
+      "Quando encontrares uma, fica com ela três respirações lentas.",
+      "Repara como se sente no corpo; saborear é uma capacidade treinável."
+     ],
+     "q": "Que pequeno momento agradável detetaste hoje?",
+     "c": "Encontra e saboreia hoje três pequenos momentos agradáveis."
+    },
+    "pt_BR": {
+     "t": "Percebendo o agradável",
+     "g": "Detecte pequenos momentos agradáveis ao longo do dia e fique com eles alguns segundos.",
+     "p": [
+      "Procure pequenas coisas boas: sol quente, uma garfada gostosa, um sorriso simpático.",
+      "Quando achar uma, fique com ela por três respirações lentas.",
+      "Perceba como ela se sente no corpo; saborear é uma habilidade treinável."
+     ],
+     "q": "Que pequeno momento agradável você percebeu hoje?",
+     "c": "Encontre e saboreie hoje três pequenos momentos agradáveis."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Starting a practice journal",
+     "g": "Write one line after each practice about what you noticed.",
+     "p": [
+      "Keep a notebook or notes app ready where you practise.",
+      "After each session, write one short line: what did I notice?",
+      "No grammar, no pressure; the journal is just for you and it is not a test."
+     ],
+     "q": "What would you like to find out about yourself from a journal?",
+     "c": "Write one line in your journal after today's practice."
+    },
+    "de": {
+     "t": "Ein Übungstagebuch beginnen",
+     "g": "Schreibe nach jeder Übung eine Zeile darüber, was du bemerkt hast.",
+     "p": [
+      "Halte ein Notizbuch oder eine Notiz-App dort bereit, wo du übst.",
+      "Schreibe nach jeder Einheit eine kurze Zeile: Was habe ich bemerkt?",
+      "Keine Grammatik, kein Druck; das Tagebuch ist nur für dich und kein Test."
+     ],
+     "q": "Was möchtest du durch ein Tagebuch über dich herausfinden?",
+     "c": "Schreibe heute nach deiner Übung eine Zeile ins Tagebuch."
+    },
+    "es": {
+     "t": "Empezar un diario de práctica",
+     "g": "Escribe una línea tras cada práctica sobre lo que notaste.",
+     "p": [
+      "Ten una libreta o app de notas a mano donde practiques.",
+      "Tras cada sesión, escribe una frase breve: ¿qué noté?",
+      "Sin gramática ni presión; el diario es solo para ti y no es un examen."
+     ],
+     "q": "¿Qué te gustaría descubrir de ti con un diario?",
+     "c": "Escribe una línea en tu diario después de la práctica de hoy."
+    },
+    "fr": {
+     "t": "Commencer un journal de pratique",
+     "g": "Écris une ligne après chaque pratique sur ce que tu as remarqué.",
+     "p": [
+      "Garde un carnet ou une appli de notes là où tu pratiques.",
+      "Après chaque séance, écris une courte ligne : qu'ai-je remarqué ?",
+      "Pas de grammaire ni de pression; le journal est pour toi, ce n'est pas un examen."
+     ],
+     "q": "Que voudrais-tu découvrir sur toi grâce à un journal ?",
+     "c": "Écris une ligne dans ton journal après la pratique d'aujourd'hui."
+    },
+    "it": {
+     "t": "Iniziare un diario di pratica",
+     "g": "Scrivi una riga dopo ogni pratica su ciò che hai notato.",
+     "p": [
+      "Tieni un quaderno o un'app di note dove pratichi.",
+      "Dopo ogni sessione scrivi una breve riga: cosa ho notato?",
+      "Niente grammatica né pressione; il diario è solo per te e non è un esame."
+     ],
+     "q": "Cosa vorresti scoprire di te grazie a un diario?",
+     "c": "Scrivi una riga nel diario dopo la pratica di oggi."
+    },
+    "pt": {
+     "t": "Começar um diário de prática",
+     "g": "Escreve uma linha após cada prática sobre o que reparaste.",
+     "p": [
+      "Tem um caderno ou app de notas à mão onde praticas.",
+      "Após cada sessão, escreve uma frase curta: o que reparei?",
+      "Sem gramática nem pressão; o diário é só para ti e não é um teste."
+     ],
+     "q": "O que gostarias de descobrir sobre ti com um diário?",
+     "c": "Escreve uma linha no diário depois da prática de hoje."
+    },
+    "pt_BR": {
+     "t": "Começando um diário de prática",
+     "g": "Escreva uma linha após cada prática sobre o que você percebeu.",
+     "p": [
+      "Deixe um caderno ou app de notas à mão onde você pratica.",
+      "Após cada sessão, escreva uma frase curta: o que eu percebi?",
+      "Sem gramática nem pressão; o diário é só seu e não é uma prova."
+     ],
+     "q": "O que você gostaria de descobrir sobre si com um diário?",
+     "c": "Escreva uma linha no diário depois da prática de hoje."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your first month",
+     "g": "Look back on the first practices and choose the two you liked best.",
+     "p": [
+      "Scan your journal or memory: breath counting, body scan, mindful sip, walking.",
+      "Notice which practices felt easy, pleasant or helpful.",
+      "Pick two favourites to keep as your core toolkit for the coming month."
+     ],
+     "q": "Which two practices would you like to keep, and what did you learn about yourself?",
+     "c": "Practise your two favourites today and write down why you chose them."
+    },
+    "de": {
+     "t": "Rückblick: dein erster Monat",
+     "g": "Blicke auf die ersten Übungen zurück und wähle die zwei, die dir am besten gefielen.",
+     "p": [
+      "Geh dein Tagebuch oder Gedächtnis durch: Atemzählen, Körperscan, achtsamer Schluck, Gehen.",
+      "Bemerke, welche Übungen leicht, angenehm oder hilfreich waren.",
+      "Wähle zwei Favoriten als Grundausstattung für den kommenden Monat."
+     ],
+     "q": "Welche zwei Übungen möchtest du behalten, und was hast du über dich gelernt?",
+     "c": "Übe heute deine zwei Favoriten und notiere, warum du sie gewählt hast."
+    },
+    "es": {
+     "t": "Repaso: tu primer mes",
+     "g": "Mira atrás las primeras prácticas y elige las dos que más te gustaron.",
+     "p": [
+      "Repasa tu diario o memoria: contar respiraciones, escáner corporal, sorbo consciente, caminar.",
+      "Nota qué prácticas fueron fáciles, agradables o útiles.",
+      "Elige dos favoritas como tu kit básico para el mes que viene."
+     ],
+     "q": "¿Qué dos prácticas quieres conservar y qué aprendiste de ti?",
+     "c": "Practica hoy tus dos favoritas y anota por qué las elegiste."
+    },
+    "fr": {
+     "t": "Bilan : ton premier mois",
+     "g": "Regarde les premières pratiques et choisis les deux que tu as préférées.",
+     "p": [
+      "Parcours ton journal ou ta mémoire : compter les respirations, scan corporel, gorgée consciente, marche.",
+      "Remarque quelles pratiques étaient faciles, agréables ou utiles.",
+      "Choisis deux favorites comme boîte à outils pour le mois à venir."
+     ],
+     "q": "Quelles deux pratiques veux-tu garder, et qu'as-tu appris sur toi ?",
+     "c": "Pratique aujourd'hui tes deux favorites et note pourquoi tu les as choisies."
+    },
+    "it": {
+     "t": "Riepilogo: il tuo primo mese",
+     "g": "Guarda indietro alle prime pratiche e scegli le due che ti sono piaciute di più.",
+     "p": [
+      "Rivedi il diario o la memoria: contare i respiri, body scan, sorso consapevole, camminata.",
+      "Nota quali pratiche sono state facili, piacevoli o utili.",
+      "Scegli due preferite come cassetta degli attrezzi per il mese prossimo."
+     ],
+     "q": "Quali due pratiche vuoi tenere e cosa hai imparato di te?",
+     "c": "Oggi pratica le tue due preferite e annota perché le hai scelte."
+    },
+    "pt": {
+     "t": "Revisão: o teu primeiro mês",
+     "g": "Olha para trás, para as primeiras práticas, e escolhe as duas de que mais gostaste.",
+     "p": [
+      "Revê o diário ou a memória: contar respirações, body scan, gole consciente, caminhada.",
+      "Repara que práticas foram fáceis, agradáveis ou úteis.",
+      "Escolhe duas favoritas como o teu kit base para o próximo mês."
+     ],
+     "q": "Que duas práticas queres manter e o que aprendeste sobre ti?",
+     "c": "Pratica hoje as tuas duas favoritas e anota porque as escolheste."
+    },
+    "pt_BR": {
+     "t": "Revisão: seu primeiro mês",
+     "g": "Olhe para trás, para as primeiras práticas, e escolha as duas de que mais gostou.",
+     "p": [
+      "Revise o diário ou a memória: contar respirações, body scan, gole consciente, caminhada.",
+      "Perceba quais práticas foram fáceis, agradáveis ou úteis.",
+      "Escolha duas favoritas como seu kit básico para o próximo mês."
+     ],
+     "q": "Que duas práticas você quer manter e o que aprendeu sobre si?",
+     "c": "Pratique hoje suas duas favoritas e anote por que as escolheu."
+    }
+   }
+  }
+ ]
+}

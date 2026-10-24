@@ -34,9 +34,12 @@ def import_topic(t):
     errs = V.Errors()
     writes = []
     n_lessons = 0
+    ready = 0  # contiguous days from day 1: the Buddy's path length
     for s, e in V.BLOCKS:
         if not V.check_block(tid, s, e, errs):
             continue
+        if ready == s - 1:
+            ready = e
         j = json.loads((V.DATA / 'lessons' / tid / V.block_name(s, e)).read_text(encoding='utf-8'))
         for x in j['lessons']:
             doc = {'topic': tid, 'd': x['d'], 'lv': x['lv'], 'i18n': x['i18n']}
@@ -44,7 +47,7 @@ def import_topic(t):
                 doc['target'] = x['target']
             writes.append(fs_rest.set_write(f'buddy_lessons/{tid}_{x["d"]:03d}', doc))
             n_lessons += 1
-    course = {'topic': tid, 'group': t['group'], 'lessonsReady': n_lessons}
+    course = {'topic': tid, 'group': t['group'], 'lessonsReady': ready}
     if V.check_syllabus(tid, errs):
         syl = json.loads((V.DATA / 'syllabus' / f'{tid}.json').read_text(encoding='utf-8'))
         course['days'] = [{'d': x['d'], 'lv': x['lv'], 't': x['t']} for x in syl['days']]

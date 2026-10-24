@@ -1,0 +1,835 @@
+{
+ "topic": "theatre",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Aeschylus, Sophocles, Euripides",
+     "g": "Meet the three great Greek playwrights and the big human questions their plays still raise.",
+     "p": [
+      "Aeschylus added a second actor, Sophocles a third, making richer conversations possible on stage.",
+      "Euripides wrote deeply human characters and often questioned the beliefs of his own time.",
+      "Their plays ask about justice, duty and choices, and are still staged around the world."
+     ],
+     "q": "Which big question, such as fairness or duty, would you like to see explored on stage?",
+     "c": "Today, jot down one question you think a great play should ask about being human."
+    },
+    "de": {
+     "t": "Aischylos, Sophokles, Euripides",
+     "g": "Lerne die drei großen griechischen Dramatiker und die großen Menschheitsfragen ihrer Stücke kennen.",
+     "p": [
+      "Aischylos führte einen zweiten Schauspieler ein, Sophokles einen dritten, so wurden reichere Gespräche möglich.",
+      "Euripides schrieb zutiefst menschliche Figuren und stellte oft die Überzeugungen seiner Zeit infrage.",
+      "Ihre Stücke fragen nach Gerechtigkeit, Pflicht und Entscheidungen und werden weltweit noch gespielt."
+     ],
+     "q": "Welche große Frage, etwa nach Fairness oder Pflicht, würdest du gern auf der Bühne erforscht sehen?",
+     "c": "Notiere heute eine Frage, die ein großes Stück über das Menschsein stellen sollte."
+    },
+    "es": {
+     "t": "Esquilo, Sófocles y Eurípides",
+     "g": "Conoce a los tres grandes dramaturgos griegos y las grandes preguntas humanas que aún plantean.",
+     "p": [
+      "Esquilo añadió un segundo actor y Sófocles un tercero, lo que permitió diálogos más ricos en escena.",
+      "Eurípides escribió personajes muy humanos y a menudo cuestionó las creencias de su tiempo.",
+      "Sus obras preguntan por la justicia, el deber y las decisiones, y aún se representan por todo el mundo."
+     ],
+     "q": "¿Qué gran pregunta, como la justicia o el deber, te gustaría ver explorada en escena?",
+     "c": "Hoy anota una pregunta que crees que una gran obra debería plantear sobre el ser humano."
+    },
+    "fr": {
+     "t": "Eschyle, Sophocle, Euripide",
+     "g": "Rencontre les trois grands auteurs grecs et les grandes questions humaines que leurs pièces posent encore.",
+     "p": [
+      "Eschyle ajouta un deuxième acteur, Sophocle un troisième, ce qui permit des échanges plus riches sur scène.",
+      "Euripide écrivit des personnages très humains et remit souvent en question les croyances de son temps.",
+      "Leurs pièces interrogent la justice, le devoir et les choix, et se jouent encore dans le monde entier."
+     ],
+     "q": "Quelle grande question, comme l'équité ou le devoir, aimerais-tu voir explorée sur scène ?",
+     "c": "Aujourd'hui, note une question qu'une grande pièce devrait selon toi poser sur l'être humain."
+    },
+    "it": {
+     "t": "Eschilo, Sofocle, Euripide",
+     "g": "Conosci i tre grandi autori greci e le grandi domande umane che i loro testi pongono ancora.",
+     "p": [
+      "Eschilo aggiunse un secondo attore, Sofocle un terzo, rendendo possibili dialoghi più ricchi in scena.",
+      "Euripide scrisse personaggi molto umani e spesso mise in dubbio le credenze della sua epoca.",
+      "Le loro opere interrogano giustizia, dovere e scelte, e sono ancora messe in scena in tutto il mondo."
+     ],
+     "q": "Quale grande domanda, come equità o dovere, ti piacerebbe vedere esplorata sul palco?",
+     "c": "Oggi annota una domanda che secondo te una grande opera dovrebbe porre sull'essere umano."
+    },
+    "pt": {
+     "t": "Ésquilo, Sófocles e Eurípides",
+     "g": "Conhece os três grandes dramaturgos gregos e as grandes perguntas humanas que ainda levantam.",
+     "p": [
+      "Ésquilo acrescentou um segundo ator e Sófocles um terceiro, o que permitiu diálogos mais ricos em cena.",
+      "Eurípides escreveu personagens muito humanas e questionou muitas vezes as crenças do seu tempo.",
+      "As suas peças perguntam sobre justiça, dever e escolhas, e ainda são encenadas em todo o mundo."
+     ],
+     "q": "Que grande pergunta, como justiça ou dever, gostarias de ver explorada em palco?",
+     "c": "Hoje anota uma pergunta que achas que uma grande peça deve fazer sobre o ser humano."
+    },
+    "pt_BR": {
+     "t": "Ésquilo, Sófocles e Eurípides",
+     "g": "Conheça os três grandes dramaturgos gregos e as grandes perguntas humanas que ainda levantam.",
+     "p": [
+      "Ésquilo acrescentou um segundo ator e Sófocles um terceiro, o que permitiu diálogos mais ricos em cena.",
+      "Eurípides escreveu personagens muito humanos e questionou muitas vezes as crenças do seu tempo.",
+      "Suas peças perguntam sobre justiça, dever e escolhas, e ainda são encenadas no mundo todo."
+     ],
+     "q": "Que grande pergunta, como justiça ou dever, você gostaria de ver explorada no palco?",
+     "c": "Hoje anote uma pergunta que você acha que uma grande peça deve fazer sobre o ser humano."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Aristophanes and Greek comedy",
+     "g": "Enjoy bold, cheeky comedies with fantastical plots, like birds building a city in the clouds.",
+     "p": [
+      "Aristophanes wrote comedies in Athens full of jokes, songs and wildly imaginative ideas.",
+      "In The Birds, two men persuade the birds to build a city in the sky, a silly dream with sharp humour.",
+      "Greek comedy poked fun at leaders and daily life, and the audience loved the cheek."
+     ],
+     "q": "If you could build a city anywhere, even in the clouds, where would it be?",
+     "c": "Today, invent a one-minute comic plot with an impossible setting and tell it aloud."
+    },
+    "de": {
+     "t": "Aristophanes und die griechische Komödie",
+     "g": "Genieße kecke, freche Komödien mit fantastischen Handlungen, etwa Vögel, die eine Stadt in den Wolken bauen.",
+     "p": [
+      "Aristophanes schrieb in Athen Komödien voller Witze, Lieder und wild fantasievoller Ideen.",
+      "In Die Vögel überreden zwei Männer die Vögel, eine Stadt im Himmel zu bauen, ein alberner Traum mit scharfem Humor.",
+      "Die griechische Komödie machte sich über Anführer und Alltag lustig, und das Publikum liebte die Frechheit."
+     ],
+     "q": "Wenn du irgendwo eine Stadt bauen könntest, sogar in den Wolken, wo wäre sie?",
+     "c": "Erfinde heute eine einminütige Komödienhandlung mit unmöglichem Schauplatz und erzähle sie laut."
+    },
+    "es": {
+     "t": "Aristófanes y la comedia griega",
+     "g": "Disfruta de comedias atrevidas con tramas fantásticas, como aves que construyen una ciudad en las nubes.",
+     "p": [
+      "Aristófanes escribió en Atenas comedias llenas de chistes, canciones e ideas muy imaginativas.",
+      "En Las aves, dos hombres convencen a los pájaros de construir una ciudad en el cielo, un sueño disparatado con humor agudo.",
+      "La comedia griega se burlaba de líderes y de la vida diaria, y al público le encantaba el descaro."
+     ],
+     "q": "Si pudieras construir una ciudad donde quisieras, incluso en las nubes, ¿dónde sería?",
+     "c": "Hoy inventa una trama cómica de un minuto con un escenario imposible y cuéntala en voz alta."
+    },
+    "fr": {
+     "t": "Aristophane et la comédie grecque",
+     "g": "Savoure des comédies audacieuses aux intrigues fantastiques, comme des oiseaux bâtissant une cité dans les nuages.",
+     "p": [
+      "Aristophane écrivit à Athènes des comédies pleines de blagues, de chansons et d'idées follement imaginatives.",
+      "Dans Les Oiseaux, deux hommes persuadent les oiseaux de bâtir une cité dans le ciel, un rêve drôle à l'humour piquant.",
+      "La comédie grecque se moquait des dirigeants et de la vie quotidienne, et le public adorait cette audace."
+     ],
+     "q": "Si tu pouvais bâtir une cité où tu veux, même dans les nuages, où serait-elle ?",
+     "c": "Aujourd'hui, invente une intrigue comique d'une minute dans un décor impossible et raconte-la à voix haute."
+    },
+    "it": {
+     "t": "Aristofane e la commedia greca",
+     "g": "Goditi commedie audaci con trame fantastiche, come uccelli che costruiscono una città tra le nuvole.",
+     "p": [
+      "Aristofane scrisse ad Atene commedie piene di battute, canzoni e idee molto fantasiose.",
+      "Negli Uccelli due uomini convincono i volatili a costruire una città nel cielo, un sogno buffo dall'umorismo pungente.",
+      "La commedia greca prendeva in giro i capi e la vita quotidiana, e il pubblico adorava l'ardire."
+     ],
+     "q": "Se potessi costruire una città ovunque, anche tra le nuvole, dove sarebbe?",
+     "c": "Oggi inventa una trama comica di un minuto con un'ambientazione impossibile e raccontala ad alta voce."
+    },
+    "pt": {
+     "t": "Aristófanes e a comédia grega",
+     "g": "Diverte-te com comédias atrevidas e enredos fantásticos, como aves que constroem uma cidade nas nuvens.",
+     "p": [
+      "Aristófanes escreveu em Atenas comédias cheias de piadas, canções e ideias muito imaginativas.",
+      "Em As Aves, dois homens convencem os pássaros a construir uma cidade no céu, um sonho disparatado de humor afiado.",
+      "A comédia grega troçava dos líderes e da vida diária, e o público adorava a ousadia."
+     ],
+     "q": "Se pudesses construir uma cidade onde quisesses, até nas nuvens, onde seria?",
+     "c": "Hoje inventa um enredo cómico de um minuto num cenário impossível e conta-o em voz alta."
+    },
+    "pt_BR": {
+     "t": "Aristófanes e a comédia grega",
+     "g": "Divirta-se com comédias ousadas e enredos fantásticos, como aves que constroem uma cidade nas nuvens.",
+     "p": [
+      "Aristófanes escreveu em Atenas comédias cheias de piadas, canções e ideias muito imaginativas.",
+      "Em As Aves, dois homens convencem os pássaros a construir uma cidade no céu, um sonho maluco de humor afiado.",
+      "A comédia grega zombava dos líderes e da vida diária, e a plateia adorava a ousadia."
+     ],
+     "q": "Se você pudesse construir uma cidade onde quisesse, até nas nuvens, onde seria?",
+     "c": "Hoje invente um enredo cômico de um minuto num cenário impossível e conte em voz alta."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Roman theatre",
+     "g": "Explore Plautus and Terence, stock characters and big stone theatres across the Roman world.",
+     "p": [
+      "Plautus and Terence wrote Latin comedies full of clever slaves, worried fathers and mistaken identities.",
+      "These stock characters were easy to recognise, and later comedy borrowed many of them.",
+      "Romans built big stone theatres across their empire, and some still host shows today."
+     ],
+     "q": "Which stock character would you enjoy playing: the clever servant, the boaster or the worried parent?",
+     "c": "Today, act out a boastful character for thirty seconds, with a big voice and big gestures."
+    },
+    "de": {
+     "t": "Das römische Theater",
+     "g": "Entdecke Plautus und Terenz, Typenfiguren und große steinerne Theater im Römischen Reich.",
+     "p": [
+      "Plautus und Terenz schrieben lateinische Komödien voller kluger Sklaven, besorgter Väter und Verwechslungen.",
+      "Diese Typenfiguren waren leicht zu erkennen, und spätere Komödien übernahmen viele davon.",
+      "Die Römer bauten im ganzen Reich große Steintheater, in einigen finden heute noch Aufführungen statt."
+     ],
+     "q": "Welche Typenfigur würdest du gern spielen: den klugen Diener, den Angeber oder den besorgten Vater?",
+     "c": "Spiele heute dreißig Sekunden lang einen angeberischen Charakter, mit großer Stimme und großen Gesten."
+    },
+    "es": {
+     "t": "El teatro romano",
+     "g": "Explora a Plauto y Terencio, los personajes tipo y los grandes teatros de piedra del mundo romano.",
+     "p": [
+      "Plauto y Terencio escribieron comedias latinas llenas de esclavos astutos, padres preocupados y confusiones de identidad.",
+      "Esos personajes tipo eran fáciles de reconocer, y la comedia posterior tomó muchos de ellos.",
+      "Los romanos levantaron grandes teatros de piedra por todo el imperio, y algunos aún acogen espectáculos."
+     ],
+     "q": "¿Qué personaje tipo disfrutarías interpretando: el criado listo, el fanfarrón o el padre preocupado?",
+     "c": "Hoy interpreta durante treinta segundos a un personaje fanfarrón, con voz potente y grandes gestos."
+    },
+    "fr": {
+     "t": "Le théâtre romain",
+     "g": "Explore Plaute et Térence, les types comiques et les grands théâtres de pierre du monde romain.",
+     "p": [
+      "Plaute et Térence écrivirent des comédies latines pleines de serviteurs malins, de pères soucieux et de quiproquos.",
+      "Ces types étaient faciles à reconnaître, et la comédie ultérieure en a emprunté beaucoup.",
+      "Les Romains bâtirent de grands théâtres de pierre dans tout l'empire, dont certains accueillent encore des spectacles."
+     ],
+     "q": "Quel type aimerais-tu jouer : le serviteur rusé, le vantard ou le parent inquiet ?",
+     "c": "Aujourd'hui, joue un personnage vantard pendant trente secondes, avec une grande voix et de grands gestes."
+    },
+    "it": {
+     "t": "Il teatro romano",
+     "g": "Esplora Plauto e Terenzio, i personaggi tipo e i grandi teatri di pietra del mondo romano.",
+     "p": [
+      "Plauto e Terenzio scrissero commedie latine piene di schiavi astuti, padri preoccupati ed equivoci.",
+      "Questi personaggi tipo erano facili da riconoscere, e la commedia successiva ne ha ripresi molti.",
+      "I Romani costruirono grandi teatri di pietra in tutto l'impero, e alcuni ospitano ancora spettacoli."
+     ],
+     "q": "Quale personaggio tipo ti divertirebbe interpretare: il servo furbo, lo spaccone o il genitore ansioso?",
+     "c": "Oggi interpreta per trenta secondi un personaggio spaccone, con voce potente e grandi gesti."
+    },
+    "pt": {
+     "t": "O teatro romano",
+     "g": "Explora Plauto e Terêncio, as personagens-tipo e os grandes teatros de pedra do mundo romano.",
+     "p": [
+      "Plauto e Terêncio escreveram comédias latinas cheias de escravos astutos, pais preocupados e enganos de identidade.",
+      "Estas personagens-tipo eram fáceis de reconhecer, e a comédia posterior copiou muitas delas.",
+      "Os romanos construíram grandes teatros de pedra por todo o império, e alguns ainda acolhem espetáculos."
+     ],
+     "q": "Que personagem-tipo gostarias de interpretar: o criado esperto, o fanfarrão ou o pai preocupado?",
+     "c": "Hoje interpreta durante trinta segundos uma personagem fanfarrona, com voz forte e grandes gestos."
+    },
+    "pt_BR": {
+     "t": "O teatro romano",
+     "g": "Explore Plauto e Terêncio, os personagens-tipo e os grandes teatros de pedra do mundo romano.",
+     "p": [
+      "Plauto e Terêncio escreveram comédias latinas cheias de escravos astutos, pais preocupados e confusões de identidade.",
+      "Esses personagens-tipo eram fáceis de reconhecer, e a comédia posterior copiou muitos deles.",
+      "Os romanos construíram grandes teatros de pedra por todo o império, e alguns ainda recebem espetáculos."
+     ],
+     "q": "Que personagem-tipo você gostaria de interpretar: o criado esperto, o fanfarrão ou o pai preocupado?",
+     "c": "Hoje interprete por trinta segundos um personagem fanfarrão, com voz forte e grandes gestos."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mini review: first steps on stage",
+     "g": "Look back at stage parts, genres and the Greeks with a quick quiz to make it stick.",
+     "p": [
+      "You know the stage map: upstage, downstage, left, right and the wings.",
+      "You can tell tragedy from comedy, and a dialogue from a monologue or soliloquy.",
+      "Greek theatre gave us the chorus, masks and the first great playwrights; Rome added stock characters."
+     ],
+     "q": "Which fact from the past weeks surprised you most?",
+     "c": "Today, quiz yourself: name three stage areas, two genres and one Greek playwright."
+    },
+    "de": {
+     "t": "Mini-Rückblick: erste Schritte auf der Bühne",
+     "g": "Blicke auf Bühnenteile, Gattungen und die Griechen zurück, mit einem kurzen Quiz zum Festigen.",
+     "p": [
+      "Du kennst den Bühnenplan: Hinterbühne, Vorderbühne, links, rechts und die Seitenbühnen.",
+      "Du kannst Tragödie von Komödie unterscheiden und Dialog von Monolog oder Selbstgespräch.",
+      "Das griechische Theater gab uns Chor, Masken und die ersten großen Dramatiker; Rom steuerte Typenfiguren bei."
+     ],
+     "q": "Welche Tatsache der letzten Wochen hat dich am meisten überrascht?",
+     "c": "Teste dich heute: Nenne drei Bühnenbereiche, zwei Gattungen und einen griechischen Dramatiker."
+    },
+    "es": {
+     "t": "Mini repaso: primeros pasos en escena",
+     "g": "Repasa las partes del escenario, los géneros y los griegos con un breve cuestionario para fijarlo.",
+     "p": [
+      "Ya conoces el mapa del escenario: fondo, frente, izquierda, derecha y bambalinas.",
+      "Sabes distinguir la tragedia de la comedia, y un diálogo de un monólogo o soliloquio.",
+      "El teatro griego nos dio el coro, las máscaras y los primeros grandes dramaturgos; Roma añadió los personajes tipo."
+     ],
+     "q": "¿Qué dato de las últimas semanas te ha sorprendido más?",
+     "c": "Hoy ponte a prueba: nombra tres zonas del escenario, dos géneros y un dramaturgo griego."
+    },
+    "fr": {
+     "t": "Mini bilan : premiers pas sur scène",
+     "g": "Reviens sur les parties de la scène, les genres et les Grecs avec un petit quiz pour bien retenir.",
+     "p": [
+      "Tu connais le plan de scène : fond, avant-scène, cour, jardin et coulisses.",
+      "Tu sais distinguer tragédie et comédie, et un dialogue d'un monologue ou d'un soliloque.",
+      "Le théâtre grec nous a donné le chœur, les masques et les premiers grands auteurs; Rome a ajouté les types comiques."
+     ],
+     "q": "Quel fait des dernières semaines t'a le plus surpris ?",
+     "c": "Aujourd'hui, teste-toi : nomme trois zones de scène, deux genres et un auteur grec."
+    },
+    "it": {
+     "t": "Mini ripasso: primi passi sul palco",
+     "g": "Ripassa le parti del palco, i generi e i Greci con un breve quiz per fissare tutto.",
+     "p": [
+      "Conosci la mappa del palco: fondale, proscenio, destra, sinistra e quinte.",
+      "Sai distinguere tragedia e commedia, e un dialogo da un monologo o soliloquio.",
+      "Il teatro greco ci ha dato coro, maschere e i primi grandi autori; Roma ha aggiunto i personaggi tipo."
+     ],
+     "q": "Quale fatto delle ultime settimane ti ha sorpreso di più?",
+     "c": "Oggi mettiti alla prova: nomina tre zone del palco, due generi e un autore greco."
+    },
+    "pt": {
+     "t": "Mini revisão: primeiros passos em palco",
+     "g": "Revê as partes do palco, os géneros e os gregos com um breve quiz para fixar.",
+     "p": [
+      "Já conheces o mapa do palco: fundo, frente, esquerda, direita e bastidores.",
+      "Sabes distinguir tragédia de comédia, e um diálogo de um monólogo ou solilóquio.",
+      "O teatro grego deu-nos o coro, as máscaras e os primeiros grandes dramaturgos; Roma juntou as personagens-tipo."
+     ],
+     "q": "Que facto das últimas semanas mais te surpreendeu?",
+     "c": "Hoje põe-te à prova: nomeia três zonas do palco, dois géneros e um dramaturgo grego."
+    },
+    "pt_BR": {
+     "t": "Mini revisão: primeiros passos no palco",
+     "g": "Revise as partes do palco, os gêneros e os gregos com um breve quiz para fixar.",
+     "p": [
+      "Você já conhece o mapa do palco: fundo, frente, esquerda, direita e coxias.",
+      "Você sabe distinguir tragédia de comédia, e um diálogo de um monólogo ou solilóquio.",
+      "O teatro grego nos deu o coro, as máscaras e os primeiros grandes dramaturgos; Roma juntou os personagens-tipo."
+     ],
+     "q": "Que fato das últimas semanas mais te surpreendeu?",
+     "c": "Hoje se teste: cite três áreas do palco, dois gêneros e um dramaturgo grego."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Commedia dell'arte",
+     "g": "Meet Italian street theatre with masks, improvisation and lively stock characters touring Europe.",
+     "p": [
+      "Commedia dell'arte began in Italy in the 1500s, with troupes performing on simple trestle stages.",
+      "Actors followed a plot outline and improvised dialogue, jokes and physical gags on the spot.",
+      "Masks and costumes told the audience who each character was before a word was spoken."
+     ],
+     "q": "When did you last improvise a joke or story on the spot, and how did it go?",
+     "c": "Today, improvise a thirty-second scene with a friend using only an agreed starting line."
+    },
+    "de": {
+     "t": "Commedia dell'arte",
+     "g": "Lerne das italienische Straßentheater mit Masken, Improvisation und lebhaften Typenfiguren kennen, das durch Europa zog.",
+     "p": [
+      "Die Commedia dell'arte entstand im 16. Jahrhundert in Italien, Truppen spielten auf einfachen Bretterbühnen.",
+      "Die Schauspieler folgten einem Handlungsgerüst und improvisierten Dialoge, Witze und körperliche Gags.",
+      "Masken und Kostüme verrieten dem Publikum, wer die Figur war, bevor ein Wort fiel."
+     ],
+     "q": "Wann hast du zuletzt einen Witz oder eine Geschichte aus dem Stegreif erfunden, und wie lief es?",
+     "c": "Improvisiere heute mit einem Freund dreißig Sekunden lang eine Szene, nur mit einem vereinbarten Anfangssatz."
+    },
+    "es": {
+     "t": "Commedia dell'arte",
+     "g": "Conoce el teatro callejero italiano con máscaras, improvisación y personajes tipo que recorrió Europa.",
+     "p": [
+      "La commedia dell'arte nació en Italia en el siglo XVI, con compañías que actuaban en sencillos tablados.",
+      "Los actores seguían un esquema de la trama e improvisaban diálogos, chistes y gags físicos en el momento.",
+      "Máscaras y trajes decían al público quién era cada personaje antes de decir una palabra."
+     ],
+     "q": "¿Cuándo fue la última vez que improvisaste un chiste o una historia y cómo te fue?",
+     "c": "Hoy improvisa con un amigo una escena de treinta segundos usando solo una primera frase acordada."
+    },
+    "fr": {
+     "t": "La commedia dell'arte",
+     "g": "Découvre le théâtre de rue italien avec masques, improvisation et types vivants qui sillonna l'Europe.",
+     "p": [
+      "La commedia dell'arte est née en Italie au XVIe siècle, avec des troupes jouant sur de simples tréteaux.",
+      "Les acteurs suivaient un canevas et improvisaient dialogues, blagues et gags physiques sur le moment.",
+      "Masques et costumes disaient au public qui était chaque personnage avant même un mot."
+     ],
+     "q": "Quand as-tu improvisé une blague ou une histoire pour la dernière fois, et comment était-ce ?",
+     "c": "Aujourd'hui, improvise avec un ami une scène de trente secondes à partir d'une seule réplique convenue."
+    },
+    "it": {
+     "t": "La commedia dell'arte",
+     "g": "Incontra il teatro di strada italiano con maschere, improvvisazione e personaggi tipo che girò l'Europa.",
+     "p": [
+      "La commedia dell'arte nacque in Italia nel Cinquecento, con compagnie che recitavano su semplici palchi di assi.",
+      "Gli attori seguivano un canovaccio e improvvisavano dialoghi, battute e gag fisiche al momento.",
+      "Maschere e costumi dicevano al pubblico chi era ogni personaggio prima di una parola."
+     ],
+     "q": "Quando hai improvvisato l'ultima volta una battuta o una storia e com'è andata?",
+     "c": "Oggi improvvisa con un amico una scena di trenta secondi usando solo una battuta d'inizio concordata."
+    },
+    "pt": {
+     "t": "A commedia dell'arte",
+     "g": "Conhece o teatro de rua italiano com máscaras, improviso e personagens-tipo que percorreu a Europa.",
+     "p": [
+      "A commedia dell'arte nasceu em Itália no século XVI, com companhias a atuar em simples tablados.",
+      "Os atores seguiam um esboço da trama e improvisavam diálogos, piadas e gags físicos na hora.",
+      "Máscaras e trajes diziam ao público quem era cada personagem antes de uma palavra."
+     ],
+     "q": "Quando foi a última vez que improvisaste uma piada ou história e como correu?",
+     "c": "Hoje improvisa com um amigo uma cena de trinta segundos usando só uma frase inicial combinada."
+    },
+    "pt_BR": {
+     "t": "A commedia dell'arte",
+     "g": "Conheça o teatro de rua italiano com máscaras, improviso e personagens-tipo que percorreu a Europa.",
+     "p": [
+      "A commedia dell'arte nasceu na Itália no século XVI, com companhias atuando em simples tablados.",
+      "Os atores seguiam um roteiro básico e improvisavam diálogos, piadas e gags físicos na hora.",
+      "Máscaras e figurinos diziam à plateia quem era cada personagem antes de uma palavra."
+     ],
+     "q": "Quando foi a última vez que você improvisou uma piada ou história e como foi?",
+     "c": "Hoje improvise com um amigo uma cena de trinta segundos usando só uma frase inicial combinada."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Meet Arlecchino and friends",
+     "g": "Get to know Harlequin, Pantalone, Colombina and the Doctor, who live on in modern comedy.",
+     "p": [
+      "Arlecchino is a quick, hungry, acrobatic servant in a patchwork costume, always scheming and joking.",
+      "Pantalone is a stingy old merchant, the Doctor is a windy know-it-all, and Colombina is the sharp maid.",
+      "Their types echo in sitcoms and cartoons: the clever helper, the pompous boss, the show-off."
+     ],
+     "q": "Which modern TV or film character reminds you of a commedia type?",
+     "c": "Today, pick one commedia character and show how they would walk, talk and react to a surprise."
+    },
+    "de": {
+     "t": "Arlecchino und seine Freunde",
+     "g": "Lerne Harlekin, Pantalone, Colombina und den Dottore kennen, die in der modernen Komödie weiterleben.",
+     "p": [
+      "Arlecchino ist ein flinker, hungriger, akrobatischer Diener im Flickenkostüm, stets voller Streiche und Witze.",
+      "Pantalone ist ein geiziger alter Kaufmann, der Dottore ein windiger Besserwisser, Colombina die schlagfertige Magd.",
+      "Ihre Typen klingen in Sitcoms und Zeichentrickfilmen nach: der clevere Helfer, der aufgeblasene Chef, der Angeber."
+     ],
+     "q": "Welche moderne Fernseh- oder Filmfigur erinnert dich an einen Commedia-Typ?",
+     "c": "Wähle heute eine Commedia-Figur und zeige, wie sie gehen, sprechen und auf eine Überraschung reagieren würde."
+    },
+    "es": {
+     "t": "Conoce a Arlequín y compañía",
+     "g": "Conoce a Arlequín, Pantalone, Colombina y el Doctor, que siguen vivos en la comedia moderna.",
+     "p": [
+      "Arlequín es un criado rápido, hambriento y acróbata con traje de remiendos, siempre tramando y bromeando.",
+      "Pantalone es un viejo mercader tacaño, el Doctor un sabelotodo pomposo y Colombina la criada aguda.",
+      "Sus tipos resuenan en comedias de televisión y dibujos animados: el ayudante listo, el jefe pomposo, el presumido."
+     ],
+     "q": "¿Qué personaje moderno de tele o cine te recuerda a un tipo de la commedia?",
+     "c": "Hoy elige un personaje de la commedia y muestra cómo andaría, hablaría y reaccionaría ante una sorpresa."
+    },
+    "fr": {
+     "t": "Rencontre Arlequin et ses amis",
+     "g": "Fais connaissance avec Arlequin, Pantalon, Colombine et le Docteur, qui vivent encore dans la comédie moderne.",
+     "p": [
+      "Arlequin est un serviteur rapide, affamé et acrobate au costume rapiécé, toujours en train de ruser et plaisanter.",
+      "Pantalon est un vieux marchand avare, le Docteur un pédant ronflant et Colombine la servante vive.",
+      "Leurs types résonnent dans les sitcoms et les dessins animés : l'aide malin, le patron pompeux, le fanfaron."
+     ],
+     "q": "Quel personnage moderne de télé ou de film te rappelle un type de la commedia ?",
+     "c": "Aujourd'hui, choisis un personnage de la commedia et montre comment il marcherait, parlerait et réagirait à une surprise."
+    },
+    "it": {
+     "t": "Incontra Arlecchino e amici",
+     "g": "Conosci Arlecchino, Pantalone, Colombina e il Dottore, che vivono ancora nella commedia moderna.",
+     "p": [
+      "Arlecchino è un servo svelto, affamato e acrobata con un costume a toppe, sempre pronto a tramare e scherzare.",
+      "Pantalone è un vecchio mercante avaro, il Dottore un sapientone pomposo e Colombina la serva sveglia.",
+      "I loro tipi risuonano in sitcom e cartoni: l'aiutante furbo, il capo pomposo, lo spaccone."
+     ],
+     "q": "Quale personaggio moderno di tv o cinema ti ricorda un tipo della commedia?",
+     "c": "Oggi scegli un personaggio della commedia e mostra come camminerebbe, parlerebbe e reagirebbe a una sorpresa."
+    },
+    "pt": {
+     "t": "Conhece o Arlequim e amigos",
+     "g": "Conhece o Arlequim, o Pantaleão, a Colombina e o Doutor, que continuam vivos na comédia moderna.",
+     "p": [
+      "O Arlequim é um criado rápido, esfomeado e acrobata com fato de remendos, sempre a tramar e a brincar.",
+      "O Pantaleão é um velho mercador forreta, o Doutor um sabichão pomposo e a Colombina a criada esperta.",
+      "Os seus tipos ecoam em séries de comédia e desenhos animados: o ajudante esperto, o chefe pomposo, o exibicionista."
+     ],
+     "q": "Que personagem moderna de televisão ou cinema te lembra um tipo da commedia?",
+     "c": "Hoje escolhe uma personagem da commedia e mostra como andaria, falaria e reagiria a uma surpresa."
+    },
+    "pt_BR": {
+     "t": "Conheça Arlequim e amigos",
+     "g": "Conheça Arlequim, Pantaleão, Colombina e o Doutor, que continuam vivos na comédia moderna.",
+     "p": [
+      "Arlequim é um criado rápido, faminto e acrobata com roupa de remendos, sempre tramando e brincando.",
+      "Pantaleão é um velho mercador mão de vaca, o Doutor um sabichão pomposo e Colombina a criada esperta.",
+      "Seus tipos ecoam em séries de comédia e desenhos: o ajudante esperto, o chefe pomposo, o exibido."
+     ],
+     "q": "Que personagem moderno de TV ou cinema lembra um tipo da commedia?",
+     "c": "Hoje escolha um personagem da commedia e mostre como ele andaria, falaria e reagiria a uma surpresa."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shakespeare's Globe",
+     "g": "Step into the open-air wooden theatre in London, with groundlings in the yard and daylight shows.",
+     "p": [
+      "The Globe opened in 1599, round and open to the sky, with shows in the afternoon light.",
+      "Cheap tickets bought standing room in the yard, where the groundlings stood close to the stage.",
+      "Wealthier visitors sat in covered galleries; a modern Globe stands near the original site today."
+     ],
+     "q": "Would you rather stand in the yard close to the action or sit in a gallery?",
+     "c": "Today, imagine a London afternoon in 1600 and describe the sounds and smells to someone."
+    },
+    "de": {
+     "t": "Shakespeares Globe",
+     "g": "Betritt das hölzerne Freilufttheater in London mit Stehplätzen im Hof und Vorstellungen bei Tageslicht.",
+     "p": [
+      "Das Globe öffnete 1599, rund und zum Himmel offen, mit Vorstellungen im Nachmittagslicht.",
+      "Billige Karten gab es für Stehplätze im Hof, wo die Groundlings dicht an der Bühne standen.",
+      "Wohlhabendere Gäste saßen in überdachten Rängen; ein modernes Globe steht heute nahe dem Originalort."
+     ],
+     "q": "Würdest du lieber im Hof nah am Geschehen stehen oder auf einem Rang sitzen?",
+     "c": "Stelle dir heute einen Londoner Nachmittag um 1600 vor und beschreibe jemandem Geräusche und Gerüche."
+    },
+    "es": {
+     "t": "El Globe de Shakespeare",
+     "g": "Entra en el teatro de madera al aire libre de Londres, con público de pie en el patio y funciones de día.",
+     "p": [
+      "El Globe se abrió en 1599, redondo y abierto al cielo, con funciones a la luz de la tarde.",
+      "Las entradas baratas daban sitio de pie en el patio, donde los espectadores estaban junto al escenario.",
+      "Los visitantes más ricos se sentaban en galerías cubiertas; hoy hay un Globe moderno cerca del lugar original."
+     ],
+     "q": "¿Preferirías estar de pie en el patio junto a la acción o sentarte en una galería?",
+     "c": "Hoy imagina una tarde londinense de 1600 y describe a alguien los sonidos y olores."
+    },
+    "fr": {
+     "t": "Le Globe de Shakespeare",
+     "g": "Entre dans le théâtre de bois en plein air de Londres, avec spectateurs debout dans la cour et spectacles en plein jour.",
+     "p": [
+      "Le Globe ouvrit en 1599, rond et ouvert au ciel, avec des représentations à la lumière de l'après-midi.",
+      "Les billets bon marché donnaient une place debout dans la cour, tout près de la scène.",
+      "Les visiteurs plus aisés s'asseyaient dans des galeries couvertes; un Globe moderne se dresse aujourd'hui près du site d'origine."
+     ],
+     "q": "Préférerais-tu rester debout dans la cour près de l'action ou t'asseoir dans une galerie ?",
+     "c": "Aujourd'hui, imagine un après-midi londonien de 1600 et décris à quelqu'un les sons et les odeurs."
+    },
+    "it": {
+     "t": "Il Globe di Shakespeare",
+     "g": "Entra nel teatro di legno all'aperto di Londra, con il pubblico in piedi nel cortile e spettacoli di giorno.",
+     "p": [
+      "Il Globe aprì nel 1599, rotondo e aperto al cielo, con spettacoli alla luce del pomeriggio.",
+      "I biglietti economici davano posto in piedi nel cortile, vicino al palco.",
+      "I visitatori più ricchi sedevano nelle gallerie coperte; un Globe moderno sorge oggi vicino al sito originale."
+     ],
+     "q": "Preferiresti stare in piedi nel cortile vicino all'azione o sederti in galleria?",
+     "c": "Oggi immagina un pomeriggio londinese del 1600 e descrivi a qualcuno suoni e odori."
+    },
+    "pt": {
+     "t": "O Globe de Shakespeare",
+     "g": "Entra no teatro de madeira ao ar livre de Londres, com público de pé no pátio e espetáculos de dia.",
+     "p": [
+      "O Globe abriu em 1599, redondo e aberto ao céu, com espetáculos à luz da tarde.",
+      "Os bilhetes baratos davam lugar de pé no pátio, junto ao palco.",
+      "Os visitantes mais ricos sentavam-se em galerias cobertas; hoje há um Globe moderno perto do local original."
+     ],
+     "q": "Preferias ficar de pé no pátio junto à ação ou sentar-te numa galeria?",
+     "c": "Hoje imagina uma tarde londrina de 1600 e descreve a alguém os sons e cheiros."
+    },
+    "pt_BR": {
+     "t": "O Globe de Shakespeare",
+     "g": "Entre no teatro de madeira a céu aberto de Londres, com público em pé no pátio e espetáculos de dia.",
+     "p": [
+      "O Globe abriu em 1599, redondo e aberto ao céu, com espetáculos à luz da tarde.",
+      "Os ingressos baratos davam lugar em pé no pátio, junto ao palco.",
+      "Os visitantes mais ricos sentavam em galerias cobertas; hoje há um Globe moderno perto do local original."
+     ],
+     "q": "Você preferiria ficar em pé no pátio junto da ação ou sentar numa galeria?",
+     "c": "Hoje imagine uma tarde londrina de 1600 e descreva a alguém os sons e cheiros."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Who was Shakespeare",
+     "g": "Meet the glove-maker's son from Stratford who wrote around 37 plays and gave English many phrases.",
+     "p": [
+      "William Shakespeare was born in Stratford-upon-Avon in 1564 and worked as actor and writer in London.",
+      "He wrote about 37 plays, comedies, histories and tragedies, plus poems called sonnets.",
+      "He gave English everyday phrases, and his plays are performed in countless languages today."
+     ],
+     "q": "Have you ever seen or read a Shakespeare play, in any language?",
+     "c": "Today, find one everyday phrase from Shakespeare, like break the ice, and use it in a sentence."
+    },
+    "de": {
+     "t": "Wer war Shakespeare",
+     "g": "Lerne den Handschuhmachersohn aus Stratford kennen, der etwa 37 Stücke schrieb und dem Englischen viele Wendungen schenkte.",
+     "p": [
+      "William Shakespeare wurde 1564 in Stratford-upon-Avon geboren und arbeitete in London als Schauspieler und Autor.",
+      "Er schrieb etwa 37 Stücke, Komödien, Historien und Tragödien, dazu Gedichte, die Sonette heißen.",
+      "Er schenkte dem Englischen Alltagswendungen, und seine Stücke werden heute in unzähligen Sprachen gespielt."
+     ],
+     "q": "Hast du schon einmal ein Stück von Shakespeare gesehen oder gelesen, in irgendeiner Sprache?",
+     "c": "Suche heute eine Alltagswendung von Shakespeare, etwa break the ice, und verwende sie in einem Satz."
+    },
+    "es": {
+     "t": "Quién fue Shakespeare",
+     "g": "Conoce al hijo de un guantero de Stratford que escribió unas 37 obras y dio al inglés muchas expresiones.",
+     "p": [
+      "William Shakespeare nació en Stratford-upon-Avon en 1564 y trabajó como actor y escritor en Londres.",
+      "Escribió unas 37 obras, comedias, dramas históricos y tragedias, además de poemas llamados sonetos.",
+      "Dio al inglés frases cotidianas, y sus obras se representan hoy en innumerables idiomas."
+     ],
+     "q": "¿Has visto o leído alguna vez una obra de Shakespeare, en cualquier idioma?",
+     "c": "Hoy busca una expresión cotidiana de Shakespeare, como break the ice, y úsala en una frase."
+    },
+    "fr": {
+     "t": "Qui était Shakespeare",
+     "g": "Rencontre le fils de gantier de Stratford qui écrivit environ 37 pièces et offrit à l'anglais bien des expressions.",
+     "p": [
+      "William Shakespeare naquit à Stratford-upon-Avon en 1564 et travailla à Londres comme acteur et auteur.",
+      "Il écrivit environ 37 pièces, comédies, drames historiques et tragédies, ainsi que des poèmes appelés sonnets.",
+      "Il a donné à l'anglais des expressions courantes, et ses pièces se jouent aujourd'hui en d'innombrables langues."
+     ],
+     "q": "As-tu déjà vu ou lu une pièce de Shakespeare, dans n'importe quelle langue ?",
+     "c": "Aujourd'hui, trouve une expression courante de Shakespeare, comme break the ice, et utilise-la dans une phrase."
+    },
+    "it": {
+     "t": "Chi era Shakespeare",
+     "g": "Conosci il figlio di un guantaio di Stratford che scrisse circa 37 opere e diede all'inglese molte espressioni.",
+     "p": [
+      "William Shakespeare nacque a Stratford-upon-Avon nel 1564 e lavorò a Londra come attore e autore.",
+      "Scrisse circa 37 opere, commedie, drammi storici e tragedie, oltre a poesie dette sonetti.",
+      "Diede all'inglese frasi di uso quotidiano, e le sue opere si recitano oggi in innumerevoli lingue."
+     ],
+     "q": "Hai mai visto o letto un'opera di Shakespeare, in qualsiasi lingua?",
+     "c": "Oggi cerca un'espressione quotidiana di Shakespeare, come break the ice, e usala in una frase."
+    },
+    "pt": {
+     "t": "Quem foi Shakespeare",
+     "g": "Conhece o filho de um luveiro de Stratford que escreveu cerca de 37 peças e deu ao inglês muitas expressões.",
+     "p": [
+      "William Shakespeare nasceu em Stratford-upon-Avon em 1564 e trabalhou em Londres como ator e escritor.",
+      "Escreveu cerca de 37 peças, comédias, dramas históricos e tragédias, além de poemas chamados sonetos.",
+      "Deu ao inglês frases do dia a dia, e as suas peças são hoje representadas em inúmeras línguas."
+     ],
+     "q": "Já viste ou leste uma peça de Shakespeare, em qualquer língua?",
+     "c": "Hoje procura uma expressão do dia a dia de Shakespeare, como break the ice, e usa-a numa frase."
+    },
+    "pt_BR": {
+     "t": "Quem foi Shakespeare",
+     "g": "Conheça o filho de um luveiro de Stratford que escreveu cerca de 37 peças e deu ao inglês muitas expressões.",
+     "p": [
+      "William Shakespeare nasceu em Stratford-upon-Avon em 1564 e trabalhou em Londres como ator e escritor.",
+      "Escreveu cerca de 37 peças, comédias, dramas históricos e tragédias, além de poemas chamados sonetos.",
+      "Deu ao inglês frases do dia a dia, e suas peças são hoje encenadas em inúmeras línguas."
+     ],
+     "q": "Você já viu ou leu uma peça de Shakespeare, em qualquer língua?",
+     "c": "Hoje pesquise uma expressão do dia a dia de Shakespeare, como break the ice, e use numa frase."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shakespeare's comedies",
+     "g": "Enjoy mistaken identity, disguises and happy endings in Twelfth Night and A Midsummer Night's Dream.",
+     "p": [
+      "In Twelfth Night, Viola disguises herself as a young man, and soon everyone is delightfully confused.",
+      "In A Midsummer Night's Dream, fairies, lovers and a troupe of amateur actors tangle in a moonlit wood.",
+      "His comedies end in weddings and reconciliations, with wordplay and silliness along the way."
+     ],
+     "q": "Which comic setup would you enjoy most: a disguise, a mix-up or a magic forest?",
+     "c": "Today, tell a two-line mix-up joke or story, like two people who mistake each other for someone else."
+    },
+    "de": {
+     "t": "Shakespeares Komödien",
+     "g": "Genieße Verwechslungen, Verkleidungen und Happy Ends in Was ihr wollt und Ein Sommernachtstraum.",
+     "p": [
+      "In Was ihr wollt verkleidet sich Viola als junger Mann, und bald ist alle wunderbar verwirrt.",
+      "Im Sommernachtstraum verheddern sich Feen, Liebende und eine Laientruppe in einem mondhellen Wald.",
+      "Seine Komödien enden mit Hochzeiten und Versöhnungen, mit Wortspielen und Albernheit unterwegs."
+     ],
+     "q": "Welchen komischen Aufbau magst du am meisten: eine Verkleidung, eine Verwechslung oder einen Zauberwald?",
+     "c": "Erzähle heute einen Verwechslungswitz oder eine Geschichte in zwei Zeilen, etwa zwei Leute, die sich verwechseln."
+    },
+    "es": {
+     "t": "Las comedias de Shakespeare",
+     "g": "Disfruta de confusiones de identidad, disfraces y finales felices en Noche de reyes y El sueño de una noche de verano.",
+     "p": [
+      "En Noche de reyes, Viola se disfraza de joven y pronto todos están deliciosamente confundidos.",
+      "En El sueño de una noche de verano, hadas, enamorados y una compañía de aficionados se enredan en un bosque a la luz de la luna.",
+      "Sus comedias acaban en bodas y reconciliaciones, con juegos de palabras y disparates por el camino."
+     ],
+     "q": "¿Qué planteamiento cómico disfrutarías más: un disfraz, un enredo o un bosque mágico?",
+     "c": "Hoy cuenta en dos líneas un chiste o historia de enredo, como dos personas que se confunden."
+    },
+    "fr": {
+     "t": "Les comédies de Shakespeare",
+     "g": "Savoure quiproquos, déguisements et fins heureuses dans La Nuit des rois et Le Songe d'une nuit d'été.",
+     "p": [
+      "Dans La Nuit des rois, Viola se déguise en jeune homme, et bientôt tout le monde est délicieusement perdu.",
+      "Dans Le Songe d'une nuit d'été, fées, amoureux et troupe d'amateurs s'emmêlent dans une forêt au clair de lune.",
+      "Ses comédies s'achèvent par des mariages et des réconciliations, avec jeux de mots et bêtises en chemin."
+     ],
+     "q": "Quel point de départ comique préférerais-tu : un déguisement, un quiproquo ou une forêt magique ?",
+     "c": "Aujourd'hui, raconte en deux lignes une blague ou histoire de quiproquo, comme deux personnes qui se confondent."
+    },
+    "it": {
+     "t": "Le commedie di Shakespeare",
+     "g": "Goditi equivoci, travestimenti e lieto fine in La dodicesima notte e Sogno di una notte di mezza estate.",
+     "p": [
+      "Nella Dodicesima notte Viola si traveste da giovane uomo, e presto tutti sono deliziosamente confusi.",
+      "Nel Sogno di una notte di mezza estate fate, innamorati e una compagnia di dilettanti si aggrovigliano in un bosco al chiaro di luna.",
+      "Le sue commedie finiscono con nozze e riconciliazioni, con giochi di parole e follie lungo la strada."
+     ],
+     "q": "Quale spunto comico ti piacerebbe di più: un travestimento, un equivoco o un bosco magico?",
+     "c": "Oggi racconta in due righe una barzelletta o storia di equivoci, come due persone che si scambiano."
+    },
+    "pt": {
+     "t": "As comédias de Shakespeare",
+     "g": "Diverte-te com enganos de identidade, disfarces e finais felizes em Noite de Reis e Sonho de uma Noite de Verão.",
+     "p": [
+      "Em Noite de Reis, Viola disfarça-se de rapaz e depressa todos ficam deliciosamente confusos.",
+      "Em Sonho de uma Noite de Verão, fadas, namorados e uma companhia de amadores enredam-se num bosque ao luar.",
+      "As suas comédias acabam em casamentos e reconciliações, com jogos de palavras e disparates pelo caminho."
+     ],
+     "q": "Que ponto de partida cómico gostarias mais: um disfarce, uma confusão ou uma floresta mágica?",
+     "c": "Hoje conta em duas linhas uma piada ou história de confusão, como duas pessoas que se trocam."
+    },
+    "pt_BR": {
+     "t": "As comédias de Shakespeare",
+     "g": "Divirta-se com confusões de identidade, disfarces e finais felizes em Noite de Reis e Sonho de uma Noite de Verão.",
+     "p": [
+      "Em Noite de Reis, Viola se disfarça de rapaz e logo todos ficam deliciosamente confusos.",
+      "Em Sonho de uma Noite de Verão, fadas, apaixonados e uma trupe de amadores se enroscam num bosque ao luar.",
+      "Suas comédias terminam em casamentos e reconciliações, com jogos de palavras e maluquices pelo caminho."
+     ],
+     "q": "Que ponto de partida cômico você curtiria mais: um disfarce, uma confusão ou uma floresta mágica?",
+     "c": "Hoje conte em duas linhas uma piada ou história de confusão, como duas pessoas que se trocam."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shakespeare's famous lines",
+     "g": "Explore phrases like all the world's a stage and what they mean in their scenes.",
+     "p": [
+      "All the world's a stage comes from As You Like It, comparing life's ages to roles an actor plays.",
+      "Brevity is the soul of wit, from Hamlet, says short and sharp speech is the cleverest.",
+      "Many such lines became everyday sayings, so you may quote Shakespeare without knowing it."
+     ],
+     "q": "Which line or saying about life would you add to your own personal motto?",
+     "c": "Today, write one short saying of your own in the style of a famous line and read it aloud."
+    },
+    "de": {
+     "t": "Shakespeares berühmte Zeilen",
+     "g": "Entdecke Sätze wie die ganze Welt ist eine Bühne und was sie in ihren Szenen bedeuten.",
+     "p": [
+      "Die ganze Welt ist eine Bühne stammt aus Wie es euch gefällt und vergleicht Lebensalter mit Rollen eines Schauspielers.",
+      "In der Kürze liegt die Würze, aus Hamlet, sagt: Kurze, scharfe Rede ist die klügste.",
+      "Viele solche Zeilen wurden Redensarten, du zitierst Shakespeare vielleicht, ohne es zu wissen."
+     ],
+     "q": "Welchen Satz oder Spruch über das Leben würdest du in dein eigenes Motto aufnehmen?",
+     "c": "Schreibe heute einen eigenen kurzen Spruch im Stil einer berühmten Zeile und lies ihn laut vor."
+    },
+    "es": {
+     "t": "Las frases famosas de Shakespeare",
+     "g": "Explora frases como el mundo entero es un escenario y lo que significan en sus escenas.",
+     "p": [
+      "El mundo entero es un escenario viene de Como gustéis y compara las edades de la vida con los papeles de un actor.",
+      "La brevedad es el alma del ingenio, de Hamlet, dice que hablar corto y agudo es lo más listo.",
+      "Muchas de estas frases se hicieron dichos cotidianos, así que quizá cites a Shakespeare sin saberlo."
+     ],
+     "q": "¿Qué frase o dicho sobre la vida añadirías a tu propio lema personal?",
+     "c": "Hoy escribe un dicho breve tuyo al estilo de una frase famosa y léelo en voz alta."
+    },
+    "fr": {
+     "t": "Les répliques célèbres de Shakespeare",
+     "g": "Explore des phrases comme le monde entier est un théâtre et ce qu'elles signifient dans leurs scènes.",
+     "p": [
+      "Le monde entier est un théâtre vient de Comme il vous plaira et compare les âges de la vie à des rôles d'acteur.",
+      "La brièveté est l'âme de l'esprit, dans Hamlet, dit qu'un propos court et vif est le plus malin.",
+      "Beaucoup de ces phrases sont devenues des dictons, tu cites peut-être Shakespeare sans le savoir."
+     ],
+     "q": "Quelle phrase ou quel dicton sur la vie ajouterais-tu à ta propre devise ?",
+     "c": "Aujourd'hui, écris un court dicton de ton cru dans le style d'une réplique célèbre et lis-le à voix haute."
+    },
+    "it": {
+     "t": "Le battute famose di Shakespeare",
+     "g": "Esplora frasi come il mondo intero è un palcoscenico e cosa significano nelle loro scene.",
+     "p": [
+      "Il mondo intero è un palcoscenico viene da Come vi piace e paragona le età della vita ai ruoli di un attore.",
+      "La brevità è l'anima dell'arguzia, dall'Amleto, dice che parlare breve e acuto è la cosa più intelligente.",
+      "Molte di queste frasi sono diventate modi di dire, e forse citi Shakespeare senza saperlo."
+     ],
+     "q": "Quale frase o detto sulla vita aggiungeresti al tuo motto personale?",
+     "c": "Oggi scrivi un breve detto tuo nello stile di una battuta famosa e leggilo ad alta voce."
+    },
+    "pt": {
+     "t": "As frases famosas de Shakespeare",
+     "g": "Explora frases como o mundo inteiro é um palco e o que significam nas suas cenas.",
+     "p": [
+      "O mundo inteiro é um palco vem de Como Queiras e compara as idades da vida aos papéis de um ator.",
+      "A brevidade é a alma do espírito, de Hamlet, diz que falar curto e certeiro é o mais inteligente.",
+      "Muitas destas frases tornaram-se ditos comuns, por isso podes citar Shakespeare sem saber."
+     ],
+     "q": "Que frase ou dito sobre a vida acrescentarias ao teu próprio lema?",
+     "c": "Hoje escreve um dito breve teu ao estilo de uma frase famosa e lê-o em voz alta."
+    },
+    "pt_BR": {
+     "t": "As frases famosas de Shakespeare",
+     "g": "Explore frases como o mundo inteiro é um palco e o que significam em suas cenas.",
+     "p": [
+      "O mundo inteiro é um palco vem de Como Gostais e compara as idades da vida aos papéis de um ator.",
+      "A brevidade é a alma do espírito, de Hamlet, diz que falar curto e certeiro é o mais inteligente.",
+      "Muitas dessas frases viraram ditos comuns, então você pode citar Shakespeare sem saber."
+     ],
+     "q": "Que frase ou dito sobre a vida você acrescentaria ao seu próprio lema?",
+     "c": "Hoje escreva um dito breve seu no estilo de uma frase famosa e leia em voz alta."
+    }
+   }
+  }
+ ]
+}

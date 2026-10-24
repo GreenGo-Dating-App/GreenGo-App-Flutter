@@ -1,0 +1,835 @@
+{
+ "topic": "board_games",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Game vocabulary",
+     "g": "Learn useful words like turn, round, move, score and tie.",
+     "p": [
+      "A turn is one player's go; a round is when everyone has had a turn.",
+      "A move is what you do; the score is the points you have so far.",
+      "A tie, or draw, means nobody wins alone; some games have tiebreakers."
+     ],
+     "q": "Say: it is your turn, nice move and good game to sound like a player.",
+     "c": "Use turn, round and score in three short sentences about a game."
+    },
+    "de": {
+     "t": "Spielvokabeln",
+     "g": "Lerne nützliche Wörter wie Zug, Runde, Spielzug, Punktestand und Unentschieden.",
+     "p": [
+      "Ein Zug ist das Drankommen eines Spielers; eine Runde ist ein Durchgang aller.",
+      "Ein Spielzug ist, was du tust; der Punktestand sind deine bisherigen Punkte.",
+      "Unentschieden heißt, niemand gewinnt allein; manche Spiele haben Stichkämpfe."
+     ],
+     "q": "Sag: Du bist dran, schöner Zug und gutes Spiel, um wie ein Spieler zu klingen.",
+     "c": "Benutze Zug, Runde und Punktestand in drei kurzen Sätzen über ein Spiel."
+    },
+    "es": {
+     "t": "Vocabulario de juegos",
+     "g": "Aprende palabras útiles como turno, ronda, jugada, puntuación y empate.",
+     "p": [
+      "Un turno es lo que le toca a un jugador; una ronda es cuando todos han jugado.",
+      "Una jugada es lo que haces; la puntuación son tus puntos hasta ahora.",
+      "Un empate significa que nadie gana solo; algunos juegos tienen desempate."
+     ],
+     "q": "Di: es tu turno, buena jugada y buen juego para sonar como jugador.",
+     "c": "Usa turno, ronda y puntuación en tres frases cortas sobre un juego."
+    },
+    "fr": {
+     "t": "Vocabulaire du jeu",
+     "g": "Apprends des mots utiles : tour, manche, coup, score et égalité.",
+     "p": [
+      "Un tour, c'est le moment d'un joueur ; une manche, quand tous ont joué.",
+      "Un coup, c'est ce que tu fais ; le score, ce sont tes points actuels.",
+      "Une égalité signifie que personne ne gagne seul ; certains jeux ont un départage."
+     ],
+     "q": "Dis : c'est ton tour, beau coup et bien joué pour parler comme un joueur.",
+     "c": "Utilise tour, manche et score dans trois phrases courtes sur un jeu."
+    },
+    "it": {
+     "t": "Vocabolario dei giochi",
+     "g": "Impara parole utili come turno, round, mossa, punteggio e pareggio.",
+     "p": [
+      "Un turno è il momento di un giocatore; un round è quando tutti hanno giocato.",
+      "Una mossa è ciò che fai; il punteggio sono i punti fatti finora.",
+      "Un pareggio significa che nessuno vince da solo; alcuni giochi hanno spareggi."
+     ],
+     "q": "Di': tocca a te, bella mossa e bella partita per parlare da giocatore.",
+     "c": "Usa turno, round e punteggio in tre frasi brevi su un gioco."
+    },
+    "pt": {
+     "t": "Vocabulário de jogos",
+     "g": "Aprende palavras úteis como vez, ronda, jogada, pontuação e empate.",
+     "p": [
+      "A vez é o momento de um jogador; uma ronda é quando todos já jogaram.",
+      "Uma jogada é o que fazes; a pontuação são os pontos até agora.",
+      "Um empate significa que ninguém ganha sozinho; alguns jogos têm desempate."
+     ],
+     "q": "Diz: é a tua vez, bela jogada e bom jogo para falares como jogador.",
+     "c": "Usa vez, ronda e pontuação em três frases curtas sobre um jogo."
+    },
+    "pt_BR": {
+     "t": "Vocabulário de jogos",
+     "g": "Aprenda palavras úteis como vez, rodada, jogada, pontuação e empate.",
+     "p": [
+      "A vez é o momento de um jogador; uma rodada é quando todos já jogaram.",
+      "Uma jogada é o que você faz; a pontuação são os pontos até agora.",
+      "Um empate significa que ninguém vence sozinho; alguns jogos têm desempate."
+     ],
+     "q": "Diga: é a sua vez, boa jogada e bom jogo para falar como jogador.",
+     "c": "Use vez, rodada e pontuação em três frases curtas sobre um jogo."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Talking about games in small talk",
+     "g": "Learn phrases to suggest, explain and comment on games.",
+     "p": [
+      "To suggest: Shall we play something? How about a quick game?",
+      "To explain: The idea is simple; you want to collect the most points.",
+      "To comment: That was clever, or I did not see that coming."
+     ],
+     "q": "Ask open questions: What kind of games do you like?",
+     "c": "Write one phrase to suggest a game and one to praise a move."
+    },
+    "de": {
+     "t": "Über Spiele plaudern",
+     "g": "Lerne Wendungen, um Spiele vorzuschlagen, zu erklären und zu kommentieren.",
+     "p": [
+      "Vorschlagen: Wollen wir etwas spielen? Wie wäre ein kurzes Spiel?",
+      "Erklären: Die Idee ist einfach; du willst die meisten Punkte sammeln.",
+      "Kommentieren: Das war clever, oder: Damit habe ich nicht gerechnet."
+     ],
+     "q": "Stelle offene Fragen: Welche Art von Spielen magst du?",
+     "c": "Schreibe einen Satz zum Vorschlagen und einen zum Loben eines Zugs."
+    },
+    "es": {
+     "t": "Hablar de juegos en una charla",
+     "g": "Aprende frases para proponer, explicar y comentar juegos.",
+     "p": [
+      "Para proponer: ¿Jugamos algo? ¿Qué tal una partida rápida?",
+      "Para explicar: La idea es simple; hay que reunir más puntos.",
+      "Para comentar: Qué jugada tan lista, o No me lo esperaba."
+     ],
+     "q": "Haz preguntas abiertas: ¿Qué tipo de juegos te gustan?",
+     "c": "Escribe una frase para proponer un juego y otra para elogiar una jugada."
+    },
+    "fr": {
+     "t": "Parler de jeux en conversation",
+     "g": "Apprends des phrases pour proposer, expliquer et commenter des jeux.",
+     "p": [
+      "Pour proposer : On joue à quelque chose ? Une petite partie rapide ?",
+      "Pour expliquer : L'idée est simple ; il faut réunir le plus de points.",
+      "Pour commenter : Bien vu, ou je ne m'y attendais pas."
+     ],
+     "q": "Pose des questions ouvertes : Quel genre de jeux aimes-tu ?",
+     "c": "Écris une phrase pour proposer un jeu et une pour féliciter un coup."
+    },
+    "it": {
+     "t": "Parlare di giochi in conversazione",
+     "g": "Impara frasi per proporre, spiegare e commentare i giochi.",
+     "p": [
+      "Per proporre: Giochiamo a qualcosa? Che ne dici di una partita veloce?",
+      "Per spiegare: L'idea è semplice; bisogna raccogliere più punti.",
+      "Per commentare: Che mossa astuta, oppure Non me l'aspettavo."
+     ],
+     "q": "Fai domande aperte: Che tipo di giochi ti piacciono?",
+     "c": "Scrivi una frase per proporre un gioco e una per lodare una mossa."
+    },
+    "pt": {
+     "t": "Falar de jogos numa conversa",
+     "g": "Aprende frases para propor, explicar e comentar jogos.",
+     "p": [
+      "Para propor: Jogamos alguma coisa? Que tal uma partida rápida?",
+      "Para explicar: A ideia é simples; é juntar mais pontos.",
+      "Para comentar: Que jogada esperta, ou Não esperava essa."
+     ],
+     "q": "Faz perguntas abertas: Que tipo de jogos gostas?",
+     "c": "Escreve uma frase para propor um jogo e outra para elogiar uma jogada."
+    },
+    "pt_BR": {
+     "t": "Falar de jogos numa conversa",
+     "g": "Aprenda frases para propor, explicar e comentar jogos.",
+     "p": [
+      "Para propor: Vamos jogar algo? Que tal uma partida rápida?",
+      "Para explicar: A ideia é simples; é juntar mais pontos.",
+      "Para comentar: Que jogada esperta, ou Não esperava essa."
+     ],
+     "q": "Faça perguntas abertas: Que tipo de jogo você curte?",
+     "c": "Escreva uma frase para propor um jogo e outra para elogiar uma jogada."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Taking care of your games",
+     "g": "Store boxes, sleeve cards and keep pieces together.",
+     "p": [
+      "Store boxes flat and dry, away from direct sunlight and damp.",
+      "Use small bags or boxes to keep tokens and dice from getting lost.",
+      "Card sleeves protect often-used cards from bends and spills."
+     ],
+     "q": "Put the rulebook in the box so you can always check a rule.",
+     "c": "Choose one game and sort its pieces into small labelled bags."
+    },
+    "de": {
+     "t": "Spiele pfleglich behandeln",
+     "g": "Lagere Schachteln, schütze Karten und halte Teile zusammen.",
+     "p": [
+      "Lagere Schachteln flach und trocken, ohne direkte Sonne und Feuchtigkeit.",
+      "Nutze kleine Beutel oder Schachteln, damit Spielfiguren und Würfel nicht verloren gehen.",
+      "Kartenhüllen schützen oft genutzte Karten vor Knicken und Flecken."
+     ],
+     "q": "Lege die Anleitung in die Schachtel, damit du Regeln immer nachlesen kannst.",
+     "c": "Wähle ein Spiel und sortiere die Teile in kleine beschriftete Beutel."
+    },
+    "es": {
+     "t": "Cuidar tus juegos",
+     "g": "Guarda las cajas, protege las cartas y mantén las piezas juntas.",
+     "p": [
+      "Guarda las cajas planas y secas, lejos del sol directo y la humedad.",
+      "Usa bolsitas o cajas pequeñas para que fichas y dados no se pierdan.",
+      "Las fundas protegen las cartas más usadas de dobleces y derrames."
+     ],
+     "q": "Pon el reglamento en la caja para poder consultar una regla siempre.",
+     "c": "Elige un juego y ordena sus piezas en bolsitas con etiqueta."
+    },
+    "fr": {
+     "t": "Prendre soin de tes jeux",
+     "g": "Range les boîtes, protège les cartes et garde les pièces ensemble.",
+     "p": [
+      "Range les boîtes à plat et au sec, loin du soleil direct et de l'humidité.",
+      "Utilise de petits sachets ou boîtes pour ne pas perdre pions et dés.",
+      "Les pochettes protègent les cartes très utilisées des plis et des taches."
+     ],
+     "q": "Mets la règle dans la boîte pour pouvoir toujours la consulter.",
+     "c": "Choisis un jeu et range ses pièces dans de petits sachets étiquetés."
+    },
+    "it": {
+     "t": "Prendersi cura dei giochi",
+     "g": "Conserva le scatole, proteggi le carte e tieni insieme i pezzi.",
+     "p": [
+      "Conserva le scatole in piano e all'asciutto, lontano dal sole diretto e dall'umidità.",
+      "Usa bustine o scatoline per non perdere pedine e dadi.",
+      "Le bustine proteggono le carte più usate da pieghe e macchie."
+     ],
+     "q": "Metti il regolamento nella scatola per poterlo sempre consultare.",
+     "c": "Scegli un gioco e riordina i suoi pezzi in bustine etichettate."
+    },
+    "pt": {
+     "t": "Cuidar dos teus jogos",
+     "g": "Guarda as caixas, protege as cartas e mantém as peças juntas.",
+     "p": [
+      "Guarda as caixas planas e secas, longe do sol direto e da humidade.",
+      "Usa saquinhos ou caixas pequenas para não perderes peões e dados.",
+      "As capas protegem as cartas mais usadas de dobras e manchas."
+     ],
+     "q": "Põe o livro de regras na caixa para poderes sempre consultá-lo.",
+     "c": "Escolhe um jogo e arruma as peças em saquinhos com etiqueta."
+    },
+    "pt_BR": {
+     "t": "Cuidar dos seus jogos",
+     "g": "Guarde as caixas, proteja as cartas e mantenha as peças juntas.",
+     "p": [
+      "Guarde as caixas planas e secas, longe do sol direto e da umidade.",
+      "Use saquinhos ou caixas pequenas para não perder peões e dados.",
+      "As capinhas protegem as cartas mais usadas de dobras e manchas."
+     ],
+     "q": "Coloque o manual na caixa para poder sempre consultá-lo.",
+     "c": "Escolha um jogo e organize as peças em saquinhos etiquetados."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing a game for a group",
+     "g": "Match player count, length, complexity and mood.",
+     "p": [
+      "Check the box for the number of players the game supports.",
+      "Short games suit a quick break; longer ones need a free evening.",
+      "Light rules work for mixed groups; heavy rules suit keen gamers."
+     ],
+     "q": "Ask the group what mood it wants: relaxed, funny or thoughtful.",
+     "c": "You have five friends and one hour: what kind of game do you pick?"
+    },
+    "de": {
+     "t": "Das passende Spiel für eine Gruppe",
+     "g": "Stimme Spielerzahl, Dauer, Komplexität und Stimmung ab.",
+     "p": [
+      "Prüfe auf der Schachtel, für wie viele Spieler das Spiel gedacht ist.",
+      "Kurze Spiele passen zur kleinen Pause; längere brauchen einen freien Abend.",
+      "Leichte Regeln passen zu gemischten Gruppen; schwere zu Vielspielern."
+     ],
+     "q": "Frage die Gruppe nach der Stimmung: entspannt, lustig oder knifflig.",
+     "c": "Du hast fünf Freunde und eine Stunde: Welche Art Spiel wählst du?"
+    },
+    "es": {
+     "t": "Elegir un juego para un grupo",
+     "g": "Ajusta número de jugadores, duración, complejidad y ambiente.",
+     "p": [
+      "Mira en la caja para cuántos jugadores sirve el juego.",
+      "Los juegos cortos van bien en un descanso; los largos piden una tarde libre.",
+      "Reglas ligeras sirven a grupos mixtos; las densas, a jugadores entusiastas."
+     ],
+     "q": "Pregunta al grupo qué ambiente quiere: relajado, divertido o reflexivo.",
+     "c": "Tienes cinco amigos y una hora: ¿qué tipo de juego eliges?"
+    },
+    "fr": {
+     "t": "Choisir un jeu pour un groupe",
+     "g": "Accorde nombre de joueurs, durée, complexité et ambiance.",
+     "p": [
+      "Regarde sur la boîte pour combien de joueurs le jeu est prévu.",
+      "Les jeux courts conviennent à une pause ; les longs demandent une soirée libre.",
+      "Des règles légères vont aux groupes mixtes ; les règles denses, aux passionnés."
+     ],
+     "q": "Demande au groupe l'ambiance voulue : détendue, drôle ou réfléchie.",
+     "c": "Tu as cinq amis et une heure : quel genre de jeu choisis-tu ?"
+    },
+    "it": {
+     "t": "Scegliere un gioco per un gruppo",
+     "g": "Abbina numero di giocatori, durata, complessità e atmosfera.",
+     "p": [
+      "Controlla sulla scatola per quanti giocatori è pensato il gioco.",
+      "I giochi brevi vanno bene per una pausa; quelli lunghi vogliono una serata libera.",
+      "Regole leggere vanno ai gruppi misti; regole dense agli appassionati."
+     ],
+     "q": "Chiedi al gruppo che atmosfera vuole: rilassata, divertente o riflessiva.",
+     "c": "Hai cinque amici e un'ora: che tipo di gioco scegli?"
+    },
+    "pt": {
+     "t": "Escolher um jogo para um grupo",
+     "g": "Ajusta número de jogadores, duração, complexidade e ambiente.",
+     "p": [
+      "Vê na caixa para quantos jogadores o jogo serve.",
+      "Jogos curtos servem para uma pausa; os longos pedem uma noite livre.",
+      "Regras leves servem a grupos mistos; regras densas a jogadores entusiastas."
+     ],
+     "q": "Pergunta ao grupo que ambiente quer: descontraído, divertido ou reflexivo.",
+     "c": "Tens cinco amigos e uma hora: que tipo de jogo escolhes?"
+    },
+    "pt_BR": {
+     "t": "Escolher um jogo para um grupo",
+     "g": "Ajuste número de jogadores, duração, complexidade e clima.",
+     "p": [
+      "Veja na caixa para quantos jogadores o jogo serve.",
+      "Jogos curtos servem para uma pausa; os longos pedem uma noite livre.",
+      "Regras leves servem a grupos mistos; regras densas, a jogadores entusiastas."
+     ],
+     "q": "Pergunte ao grupo que clima quer: descontraído, divertido ou reflexivo.",
+     "c": "Você tem cinco amigos e uma hora: que tipo de jogo escolhe?"
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Word game: Word association",
+     "g": "Say the first word that comes to mind and see where it leads.",
+     "p": [
+      "One player says a word, like sea; the next says the first thing it brings to mind.",
+      "Sea might lead to sand, then beach, then holiday.",
+      "Go fast and do not judge; the surprises are the point."
+     ],
+     "q": "Stop and trace the chain back to see how you got there.",
+     "c": "I say forest. What is the first word you think of?"
+    },
+    "de": {
+     "t": "Wortspiel: Wortassoziation",
+     "g": "Sag das erste Wort, das dir einfällt, und sieh, wohin es führt.",
+     "p": [
+      "Ein Spieler sagt ein Wort, etwa Meer; der nächste nennt, was ihm zuerst einfällt.",
+      "Meer führt vielleicht zu Sand, dann Strand, dann Urlaub.",
+      "Spielt schnell und urteilt nicht; die Überraschungen sind der Sinn."
+     ],
+     "q": "Haltet an und verfolgt die Kette zurück, um zu sehen, wie ihr dorthin kamt.",
+     "c": "Ich sage Wald. Welches Wort fällt dir als Erstes ein?"
+    },
+    "es": {
+     "t": "Juego de palabras: Asociación de palabras",
+     "g": "Di la primera palabra que se te ocurra y mira adónde lleva.",
+     "p": [
+      "Un jugador dice una palabra, como mar; el siguiente dice lo primero que le viene.",
+      "Mar puede llevar a arena, luego playa, luego vacaciones.",
+      "Ve rápido y no juzgues; las sorpresas son el objetivo."
+     ],
+     "q": "Parad y recorred la cadena hacia atrás para ver cómo llegasteis.",
+     "c": "Digo bosque. ¿Cuál es la primera palabra que piensas?"
+    },
+    "fr": {
+     "t": "Jeu de mots : Association de mots",
+     "g": "Dis le premier mot qui te vient et vois où il mène.",
+     "p": [
+      "Un joueur dit un mot, comme mer ; le suivant dit ce qui lui vient d'abord.",
+      "Mer peut mener à sable, puis plage, puis vacances.",
+      "Va vite sans juger ; les surprises sont le but."
+     ],
+     "q": "Arrêtez-vous et remontez la chaîne pour voir comment vous y êtes arrivés.",
+     "c": "Je dis forêt. Quel est le premier mot auquel tu penses ?"
+    },
+    "it": {
+     "t": "Gioco di parole: Associazione di parole",
+     "g": "Di' la prima parola che ti viene in mente e guarda dove porta.",
+     "p": [
+      "Un giocatore dice una parola, come mare; il successivo dice la prima cosa che gli viene.",
+      "Mare può portare a sabbia, poi spiaggia, poi vacanza.",
+      "Vai veloce e non giudicare; le sorprese sono il bello."
+     ],
+     "q": "Fermatevi e ripercorrete la catena per vedere come ci siete arrivati.",
+     "c": "Dico bosco. Qual è la prima parola a cui pensi?"
+    },
+    "pt": {
+     "t": "Jogo de palavras: Associação de palavras",
+     "g": "Diz a primeira palavra que te vier à cabeça e vê onde leva.",
+     "p": [
+      "Um jogador diz uma palavra, como mar; o seguinte diz o que lhe vier primeiro.",
+      "Mar pode levar a areia, depois praia, depois férias.",
+      "Vai depressa e não julgues; as surpresas são o objetivo."
+     ],
+     "q": "Parem e sigam a cadeia para trás para ver como chegaram lá.",
+     "c": "Digo floresta. Qual é a primeira palavra em que pensas?"
+    },
+    "pt_BR": {
+     "t": "Jogo de palavras: Associação de palavras",
+     "g": "Diga a primeira palavra que vier à cabeça e veja aonde leva.",
+     "p": [
+      "Um jogador diz uma palavra, como mar; o seguinte diz o que lhe vier primeiro.",
+      "Mar pode levar a areia, depois praia, depois férias.",
+      "Vá rápido e não julgue; as surpresas são o objetivo."
+     ],
+     "q": "Parem e sigam a corrente para trás para ver como chegaram lá.",
+     "c": "Eu digo floresta. Qual é a primeira palavra em que você pensa?"
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The modern board game boom",
+     "g": "See how new games since the 1990s brought many people back to the table.",
+     "p": [
+      "In the 1990s, games from Germany and elsewhere offered new styles of play.",
+      "Players are rarely eliminated, so everyone stays in until the end.",
+      "Beautiful components, clear rules and short playtimes helped them spread."
+     ],
+     "q": "Cafes, clubs and conventions now gather players around the world.",
+     "c": "What could a new game offer that classic games did not?"
+    },
+    "de": {
+     "t": "Der moderne Brettspiel-Boom",
+     "g": "Sieh, wie neue Spiele seit den 1990ern viele Menschen an den Tisch zurückbrachten.",
+     "p": [
+      "In den 1990ern boten Spiele aus Deutschland und anderswo neue Spielweisen.",
+      "Spieler scheiden selten aus, so bleiben alle bis zum Ende dabei.",
+      "Schöne Materialien, klare Regeln und kurze Spielzeiten halfen bei der Verbreitung."
+     ],
+     "q": "Cafés, Clubs und Messen versammeln heute Spieler auf der ganzen Welt.",
+     "c": "Was könnte ein neues Spiel bieten, was klassische Spiele nicht boten?"
+    },
+    "es": {
+     "t": "El auge moderno de los juegos de mesa",
+     "g": "Mira cómo los juegos nuevos desde los años 90 devolvieron a muchos a la mesa.",
+     "p": [
+      "En los 90, juegos de Alemania y otros países ofrecieron nuevos estilos de juego.",
+      "Rara vez se elimina a alguien, así que todos siguen hasta el final.",
+      "Componentes bonitos, reglas claras y partidas cortas ayudaron a extenderlos."
+     ],
+     "q": "Cafés, clubes y convenciones reúnen hoy a jugadores en todo el mundo.",
+     "c": "¿Qué podría ofrecer un juego nuevo que los clásicos no ofrecían?"
+    },
+    "fr": {
+     "t": "L'essor moderne des jeux de société",
+     "g": "Vois comment les nouveaux jeux depuis les années 1990 ont ramené beaucoup de monde autour de la table.",
+     "p": [
+      "Dans les années 1990, des jeux venus d'Allemagne et d'ailleurs ont apporté de nouvelles façons de jouer.",
+      "On y est rarement éliminé, donc chacun reste en jeu jusqu'à la fin.",
+      "Beau matériel, règles claires et parties courtes ont aidé leur diffusion."
+     ],
+     "q": "Cafés, clubs et festivals réunissent aujourd'hui des joueurs partout dans le monde.",
+     "c": "Que pourrait offrir un nouveau jeu que les classiques n'offraient pas ?"
+    },
+    "it": {
+     "t": "Il boom moderno dei giochi da tavolo",
+     "g": "Guarda come i nuovi giochi dagli anni 90 hanno riportato molti al tavolo.",
+     "p": [
+      "Negli anni 90 giochi dalla Germania e da altrove offrirono nuovi stili di gioco.",
+      "Di rado si viene eliminati, così tutti restano in gioco fino alla fine.",
+      "Componenti belli, regole chiare e partite brevi ne favorirono la diffusione."
+     ],
+     "q": "Caffè, club e fiere riuniscono oggi giocatori in tutto il mondo.",
+     "c": "Cosa potrebbe offrire un nuovo gioco che i classici non offrivano?"
+    },
+    "pt": {
+     "t": "O boom moderno dos jogos de tabuleiro",
+     "g": "Vê como os jogos novos desde os anos 90 trouxeram muita gente de volta à mesa.",
+     "p": [
+      "Nos anos 90, jogos da Alemanha e de outros países ofereceram novos estilos de jogo.",
+      "Raramente se é eliminado, por isso todos ficam até ao fim.",
+      "Componentes bonitos, regras claras e partidas curtas ajudaram a espalhá-los."
+     ],
+     "q": "Cafés, clubes e convenções reúnem hoje jogadores em todo o mundo.",
+     "c": "O que poderia um jogo novo oferecer que os clássicos não ofereciam?"
+    },
+    "pt_BR": {
+     "t": "O boom moderno dos jogos de tabuleiro",
+     "g": "Veja como os jogos novos desde os anos 90 trouxeram muita gente de volta à mesa.",
+     "p": [
+      "Nos anos 90, jogos da Alemanha e de outros países ofereceram novos estilos de jogo.",
+      "Raramente alguém é eliminado, então todos ficam até o fim.",
+      "Componentes bonitos, regras claras e partidas curtas ajudaram a espalhá-los."
+     ],
+     "q": "Cafés, clubes e convenções reúnem hoje jogadores no mundo todo.",
+     "c": "O que um jogo novo poderia oferecer que os clássicos não ofereciam?"
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Catan",
+     "g": "Trade resources and build settlements on a hex-tile island.",
+     "p": [
+      "Catan, designed by Klaus Teuber, appeared in Germany in 1995.",
+      "The island is built from hexagonal tiles that differ each game.",
+      "Dice rolls produce resources like wood, brick, wheat, sheep and ore."
+     ],
+     "q": "Trading with other players is central, so friendly talk matters.",
+     "c": "What would you offer a friend to trade for the resource you need?"
+    },
+    "de": {
+     "t": "Catan",
+     "g": "Handle mit Rohstoffen und baue Siedlungen auf einer Insel aus Sechsecken.",
+     "p": [
+      "Catan, entworfen von Klaus Teuber, erschien 1995 in Deutschland.",
+      "Die Insel wird aus Sechsecken gebaut, die sich in jedem Spiel unterscheiden.",
+      "Würfelwürfe bringen Rohstoffe wie Holz, Lehm, Getreide, Wolle und Erz."
+     ],
+     "q": "Handel mit anderen Spielern ist zentral, freundliche Gespräche zählen.",
+     "c": "Was würdest du einem Freund anbieten, um den Rohstoff zu bekommen, den du brauchst?"
+    },
+    "es": {
+     "t": "Catan",
+     "g": "Comercia con recursos y construye poblados en una isla de hexágonos.",
+     "p": [
+      "Catan, diseñado por Klaus Teuber, apareció en Alemania en 1995.",
+      "La isla se arma con losetas hexagonales distintas en cada partida.",
+      "Las tiradas de dados dan recursos como madera, ladrillo, trigo, lana y mineral."
+     ],
+     "q": "El comercio con otros jugadores es central, y hablar con amabilidad importa.",
+     "c": "¿Qué le ofrecerías a un amigo para conseguir el recurso que necesitas?"
+    },
+    "fr": {
+     "t": "Catane",
+     "g": "Échange des ressources et bâtis des colonies sur une île d'hexagones.",
+     "p": [
+      "Catane, conçu par Klaus Teuber, est apparu en Allemagne en 1995.",
+      "L'île se construit avec des tuiles hexagonales différentes à chaque partie.",
+      "Les jets de dés produisent bois, argile, blé, laine et minerai."
+     ],
+     "q": "Le commerce avec les autres joueurs est central, et la courtoisie compte.",
+     "c": "Que proposerais-tu à un ami pour obtenir la ressource dont tu as besoin ?"
+    },
+    "it": {
+     "t": "Catan",
+     "g": "Scambia risorse e costruisci insediamenti su un'isola di esagoni.",
+     "p": [
+      "Catan, ideato da Klaus Teuber, apparve in Germania nel 1995.",
+      "L'isola si costruisce con tessere esagonali diverse a ogni partita.",
+      "I lanci di dadi producono risorse come legno, argilla, grano, lana e minerale."
+     ],
+     "q": "Il commercio con gli altri giocatori è centrale, e conta la gentilezza.",
+     "c": "Cosa offriresti a un amico per ottenere la risorsa che ti serve?"
+    },
+    "pt": {
+     "t": "Catan",
+     "g": "Troca recursos e constrói povoações numa ilha de hexágonos.",
+     "p": [
+      "O Catan, criado por Klaus Teuber, surgiu na Alemanha em 1995.",
+      "A ilha constrói-se com peças hexagonais diferentes em cada jogo.",
+      "Os lançamentos de dados dão recursos como madeira, tijolo, trigo, lã e minério."
+     ],
+     "q": "O comércio com outros jogadores é central, e a simpatia conta.",
+     "c": "O que oferecerias a um amigo para obteres o recurso de que precisas?"
+    },
+    "pt_BR": {
+     "t": "Catan",
+     "g": "Troque recursos e construa povoados numa ilha de hexágonos.",
+     "p": [
+      "O Catan, criado por Klaus Teuber, surgiu na Alemanha em 1995.",
+      "A ilha é montada com peças hexagonais diferentes a cada partida.",
+      "As jogadas de dados dão recursos como madeira, tijolo, trigo, lã e minério."
+     ],
+     "q": "A troca com outros jogadores é central, e a simpatia conta.",
+     "c": "O que você ofereceria a um amigo para conseguir o recurso de que precisa?"
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Carcassonne",
+     "g": "Place tiles to build a medieval landscape of roads and cities.",
+     "p": [
+      "Carcassonne, by Klaus-Jürgen Wrede, was published in 2000 and is named after a French walled city.",
+      "Each turn you draw a tile and place it so its edges match its neighbours.",
+      "Followers, called meeples, claim roads, cities, fields and monasteries."
+     ],
+     "q": "Points come from finished features, so planning and blocking both matter.",
+     "c": "Draw four squares with roads and fields and try to join their edges."
+    },
+    "de": {
+     "t": "Carcassonne",
+     "g": "Lege Plättchen und baue eine mittelalterliche Landschaft aus Straßen und Städten.",
+     "p": [
+      "Carcassonne von Klaus-Jürgen Wrede erschien 2000, benannt nach einer französischen Festungsstadt.",
+      "Jeden Zug ziehst du ein Plättchen und legst es mit passenden Kanten an.",
+      "Gefolgsleute, Meeple genannt, besetzen Straßen, Städte, Wiesen und Klöster."
+     ],
+     "q": "Punkte gibt es für fertige Bauten, also zählen Planen und Blockieren.",
+     "c": "Zeichne vier Quadrate mit Straßen und Wiesen und verbinde ihre Kanten."
+    },
+    "es": {
+     "t": "Carcassonne",
+     "g": "Coloca losetas para construir un paisaje medieval de caminos y ciudades.",
+     "p": [
+      "Carcassonne, de Klaus-Jürgen Wrede, se publicó en 2000 y lleva el nombre de una ciudad amurallada francesa.",
+      "En cada turno robas una loseta y la colocas con los bordes a juego.",
+      "Los seguidores, llamados meeples, reclaman caminos, ciudades, campos y monasterios."
+     ],
+     "q": "Los puntos vienen de estructuras terminadas, así que planear y bloquear importan.",
+     "c": "Dibuja cuatro cuadrados con caminos y campos e intenta unir sus bordes."
+    },
+    "fr": {
+     "t": "Carcassonne",
+     "g": "Pose des tuiles pour bâtir un paysage médiéval de routes et de cités.",
+     "p": [
+      "Carcassonne, de Klaus-Jürgen Wrede, est sorti en 2000 et porte le nom d'une cité fortifiée française.",
+      "À chaque tour, tu pioches une tuile et la poses avec des bords assortis.",
+      "Les partisans, appelés meeples, revendiquent routes, villes, prés et monastères."
+     ],
+     "q": "Les points viennent des constructions achevées : planifier et bloquer comptent.",
+     "c": "Dessine quatre carrés avec routes et prés et essaie de joindre leurs bords."
+    },
+    "it": {
+     "t": "Carcassonne",
+     "g": "Posa tessere per costruire un paesaggio medievale di strade e città.",
+     "p": [
+      "Carcassonne, di Klaus-Jürgen Wrede, uscì nel 2000 e prende il nome da una città fortificata francese.",
+      "A ogni turno peschi una tessera e la posi con i bordi combacianti.",
+      "I seguaci, detti meeple, rivendicano strade, città, prati e monasteri."
+     ],
+     "q": "I punti vengono da strutture completate, quindi pianificare e bloccare contano.",
+     "c": "Disegna quattro quadrati con strade e prati e prova a unirne i bordi."
+    },
+    "pt": {
+     "t": "Carcassonne",
+     "g": "Coloca peças para construir uma paisagem medieval de estradas e cidades.",
+     "p": [
+      "O Carcassonne, de Klaus-Jürgen Wrede, saiu em 2000 e tem o nome de uma cidade amuralhada francesa.",
+      "A cada jogada tiras uma peça e colocas com as bordas a condizer.",
+      "Os seguidores, chamados meeples, reclamam estradas, cidades, campos e mosteiros."
+     ],
+     "q": "Os pontos vêm de estruturas concluídas, por isso planear e bloquear contam.",
+     "c": "Desenha quatro quadrados com estradas e campos e tenta unir as bordas."
+    },
+    "pt_BR": {
+     "t": "Carcassonne",
+     "g": "Coloque peças para construir uma paisagem medieval de estradas e cidades.",
+     "p": [
+      "O Carcassonne, de Klaus-Jürgen Wrede, saiu em 2000 e leva o nome de uma cidade murada francesa.",
+      "A cada jogada você compra uma peça e a coloca com as bordas combinando.",
+      "Os seguidores, chamados meeples, reivindicam estradas, cidades, campos e mosteiros."
+     ],
+     "q": "Os pontos vêm de estruturas concluídas, então planejar e bloquear contam.",
+     "c": "Desenhe quatro quadrados com estradas e campos e tente unir as bordas."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ticket to Ride",
+     "g": "Collect train cards to claim railway routes across a map.",
+     "p": [
+      "Ticket to Ride, designed by Alan R. Moon, came out in 2004.",
+      "On your turn you draw coloured train cards or claim a route.",
+      "Routes need matching coloured cards equal to their length."
+     ],
+     "q": "Secret destination tickets give bonus points if you connect two cities.",
+     "c": "Choose two cities on a map and plan the shortest route between them."
+    },
+    "de": {
+     "t": "Zug um Zug",
+     "g": "Sammle Zugkarten und beanspruche Bahnstrecken auf einer Karte.",
+     "p": [
+      "Zug um Zug, entworfen von Alan R. Moon, erschien 2004.",
+      "In deinem Zug ziehst du farbige Wagenkarten oder baust eine Strecke.",
+      "Strecken brauchen passende Farbkarten in Höhe ihrer Länge."
+     ],
+     "q": "Geheime Zielkarten bringen Bonuspunkte, wenn du zwei Städte verbindest.",
+     "c": "Wähle zwei Städte auf einer Karte und plane die kürzeste Strecke."
+    },
+    "es": {
+     "t": "¡Aventureros al tren!",
+     "g": "Reúne cartas de tren para reclamar rutas ferroviarias en un mapa.",
+     "p": [
+      "Aventureros al tren, diseñado por Alan R. Moon, salió en 2004.",
+      "En tu turno robas cartas de tren de colores o reclamas una ruta.",
+      "Las rutas piden cartas del mismo color tantas como su longitud."
+     ],
+     "q": "Los billetes de destino secretos dan puntos extra si conectas dos ciudades.",
+     "c": "Elige dos ciudades en un mapa y planea la ruta más corta entre ellas."
+    },
+    "fr": {
+     "t": "Les Aventuriers du Rail",
+     "g": "Collecte des cartes de train pour prendre des routes ferroviaires sur une carte.",
+     "p": [
+      "Les Aventuriers du Rail, conçu par Alan R. Moon, est sorti en 2004.",
+      "À ton tour, tu piches des cartes wagon colorées ou tu prends une route.",
+      "Une route demande des cartes de même couleur, autant que sa longueur."
+     ],
+     "q": "Des cartes destination secrètes rapportent des points si tu relies deux villes.",
+     "c": "Choisis deux villes sur une carte et planifie le trajet le plus court."
+    },
+    "it": {
+     "t": "Ticket to Ride",
+     "g": "Raccogli carte treno per rivendicare tratte ferroviarie su una mappa.",
+     "p": [
+      "Ticket to Ride, ideato da Alan R. Moon, uscì nel 2004.",
+      "Nel tuo turno peschi carte treno colorate o rivendichi una tratta.",
+      "Una tratta richiede carte dello stesso colore pari alla sua lunghezza."
+     ],
+     "q": "I biglietti destinazione segreti danno punti bonus se colleghi due città.",
+     "c": "Scegli due città su una mappa e pianifica il percorso più breve."
+    },
+    "pt": {
+     "t": "Ticket to Ride",
+     "g": "Reúne cartas de comboio para reclamar rotas ferroviárias num mapa.",
+     "p": [
+      "O Ticket to Ride, criado por Alan R. Moon, saiu em 2004.",
+      "Na tua vez tiras cartas de comboio coloridas ou reclamas uma rota.",
+      "As rotas pedem cartas da mesma cor em número igual ao seu comprimento."
+     ],
+     "q": "Bilhetes de destino secretos dão pontos extra se ligares duas cidades.",
+     "c": "Escolhe duas cidades num mapa e planeia o percurso mais curto."
+    },
+    "pt_BR": {
+     "t": "Ticket to Ride",
+     "g": "Reúna cartas de trem para reivindicar rotas ferroviárias num mapa.",
+     "p": [
+      "O Ticket to Ride, criado por Alan R. Moon, saiu em 2004.",
+      "Na sua vez você compra cartas de trem coloridas ou reivindica uma rota.",
+      "As rotas pedem cartas da mesma cor em número igual ao comprimento."
+     ],
+     "q": "Bilhetes de destino secretos dão pontos extras se você ligar duas cidades.",
+     "c": "Escolha duas cidades num mapa e planeje o trajeto mais curto."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: from classics to modern games",
+     "g": "Compare old and new favourites and what each offers.",
+     "p": [
+      "Classics like chess, Go and backgammon reward deep thought and tradition.",
+      "Family games like Uno and Jenga are quick to learn and easy to share.",
+      "Modern games like Catan and Carcassonne add trading, building and planning."
+     ],
+     "q": "Word games need only your voice and imagination, anywhere you are.",
+     "c": "Which game from these sixty days would you play first, and why?"
+    },
+    "de": {
+     "t": "Rückblick: Von Klassikern zu modernen Spielen",
+     "g": "Vergleiche alte und neue Lieblinge und was jedes bietet.",
+     "p": [
+      "Klassiker wie Schach, Go und Backgammon belohnen Nachdenken und Tradition.",
+      "Familienspiele wie Uno und Jenga sind schnell gelernt und leicht zu teilen.",
+      "Moderne Spiele wie Catan und Carcassonne bringen Handel, Bauen und Planen."
+     ],
+     "q": "Wortspiele brauchen nur Stimme und Fantasie, überall, wo du bist.",
+     "c": "Welches Spiel dieser sechzig Tage würdest du zuerst spielen, und warum?"
+    },
+    "es": {
+     "t": "Repaso: de los clásicos a los juegos modernos",
+     "g": "Compara favoritos antiguos y nuevos y lo que ofrece cada uno.",
+     "p": [
+      "Clásicos como ajedrez, go y backgammon premian el pensamiento y la tradición.",
+      "Juegos familiares como Uno y Jenga se aprenden rápido y se comparten fácil.",
+      "Juegos modernos como Catan y Carcassonne añaden comercio, construcción y plan."
+     ],
+     "q": "Los juegos de palabras solo piden tu voz e imaginación, estés donde estés.",
+     "c": "¿Con qué juego de estos sesenta días empezarías, y por qué?"
+    },
+    "fr": {
+     "t": "Révision : des classiques aux jeux modernes",
+     "g": "Compare vieux et nouveaux favoris et ce que chacun apporte.",
+     "p": [
+      "Des classiques comme les échecs, le go et le backgammon récompensent la réflexion et la tradition.",
+      "Des jeux familiaux comme l'Uno et le Jenga s'apprennent vite et se partagent bien.",
+      "Des jeux modernes comme Catane et Carcassonne ajoutent échange, construction et plan."
+     ],
+     "q": "Les jeux de mots n'ont besoin que de ta voix et de ton imagination, où que tu sois.",
+     "c": "Avec quel jeu de ces soixante jours commencerais-tu, et pourquoi ?"
+    },
+    "it": {
+     "t": "Ripasso: dai classici ai giochi moderni",
+     "g": "Confronta vecchi e nuovi favoriti e cosa offre ciascuno.",
+     "p": [
+      "Classici come scacchi, go e backgammon premiano il pensiero e la tradizione.",
+      "Giochi di famiglia come Uno e Jenga si imparano in fretta e si condividono bene.",
+      "Giochi moderni come Catan e Carcassonne aggiungono scambio, costruzione e piano."
+     ],
+     "q": "I giochi di parole chiedono solo voce e fantasia, ovunque tu sia.",
+     "c": "Con quale gioco di questi sessanta giorni inizieresti, e perché?"
+    },
+    "pt": {
+     "t": "Revisão: dos clássicos aos jogos modernos",
+     "g": "Compara favoritos antigos e novos e o que cada um oferece.",
+     "p": [
+      "Clássicos como xadrez, go e gamão premeiam o pensamento e a tradição.",
+      "Jogos de família como Uno e Jenga aprendem-se depressa e partilham-se bem.",
+      "Jogos modernos como Catan e Carcassonne juntam troca, construção e plano."
+     ],
+     "q": "Os jogos de palavras só pedem voz e imaginação, onde quer que estejas.",
+     "c": "Com que jogo destes sessenta dias começarias, e porquê?"
+    },
+    "pt_BR": {
+     "t": "Revisão: dos clássicos aos jogos modernos",
+     "g": "Compare favoritos antigos e novos e o que cada um oferece.",
+     "p": [
+      "Clássicos como xadrez, go e gamão premiam o pensamento e a tradição.",
+      "Jogos de família como Uno e Jenga se aprendem rápido e se compartilham fácil.",
+      "Jogos modernos como Catan e Carcassonne somam troca, construção e plano."
+     ],
+     "q": "Jogos de palavras só pedem voz e imaginação, onde quer que você esteja.",
+     "c": "Com qual jogo desses sessenta dias você começaria, e por quê?"
+    }
+   }
+  }
+ ]
+}

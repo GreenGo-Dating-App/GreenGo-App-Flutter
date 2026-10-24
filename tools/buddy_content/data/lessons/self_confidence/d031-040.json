@@ -1,0 +1,835 @@
+{
+ "topic": "self_confidence",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mistakes as information",
+     "g": "Treat errors as useful feedback rather than proof of failure.",
+     "p": [
+      "A mistake tells you what did not work, and that is valuable data for the next try.",
+      "Everyone who has learned anything has made hundreds of mistakes along the way.",
+      "Ask three questions: what happened, what can I learn, what will I try next time?"
+     ],
+     "q": "Think of a recent mistake. What did it teach you?",
+     "c": "Next time something goes wrong today, ask yourself what it taught you and write one line."
+    },
+    "de": {
+     "t": "Fehler als Information",
+     "g": "Sieh Fehler als nützliches Feedback statt als Beweis für Versagen.",
+     "p": [
+      "Ein Fehler zeigt dir, was nicht funktioniert hat, und das ist wertvolle Information für den nächsten Versuch.",
+      "Jeder, der etwas gelernt hat, hat dabei hunderte Fehler gemacht.",
+      "Stell drei Fragen: Was ist passiert, was kann ich lernen, was probiere ich nächstes Mal?"
+     ],
+     "q": "Denk an einen jüngeren Fehler. Was hat er dich gelehrt?",
+     "c": "Wenn heute etwas schiefgeht, frag dich, was es dich lehrt, und schreib eine Zeile dazu."
+    },
+    "es": {
+     "t": "Los errores como información",
+     "g": "Trata los errores como retroalimentación útil y no como prueba de fracaso.",
+     "p": [
+      "Un error te dice qué no funcionó, y eso es información valiosa para el próximo intento.",
+      "Todo el que ha aprendido algo ha cometido cientos de errores por el camino.",
+      "Hazte tres preguntas: ¿qué pasó?, ¿qué puedo aprender?, ¿qué probaré la próxima vez?"
+     ],
+     "q": "Piensa en un error reciente. ¿Qué te enseñó?",
+     "c": "La próxima vez que algo salga mal hoy, pregúntate qué te enseñó y anota una línea."
+    },
+    "fr": {
+     "t": "Les erreurs comme information",
+     "g": "Considère les erreurs comme un retour utile plutôt qu'une preuve d'échec.",
+     "p": [
+      "Une erreur te dit ce qui n'a pas marché, et c'est une information précieuse pour le prochain essai.",
+      "Tous ceux qui ont appris quelque chose ont fait des centaines d'erreurs en chemin.",
+      "Pose-toi trois questions : que s'est-il passé, que puis-je apprendre, que tenterai-je la prochaine fois ?"
+     ],
+     "q": "Pense à une erreur récente. Qu'est-ce qu'elle t'a appris ?",
+     "c": "La prochaine fois que quelque chose va mal aujourd'hui, demande-toi ce que cela t'apprend et note une ligne."
+    },
+    "it": {
+     "t": "Gli errori come informazione",
+     "g": "Tratta gli errori come un feedback utile e non come prova di fallimento.",
+     "p": [
+      "Un errore ti dice cosa non ha funzionato, ed è un'informazione preziosa per il prossimo tentativo.",
+      "Chiunque abbia imparato qualcosa ha fatto centinaia di errori lungo la strada.",
+      "Fatti tre domande: cosa è successo, cosa posso imparare, cosa proverò la prossima volta?"
+     ],
+     "q": "Pensa a un errore recente. Cosa ti ha insegnato?",
+     "c": "La prossima volta che oggi qualcosa va storto, chiediti cosa ti ha insegnato e scrivi una riga."
+    },
+    "pt": {
+     "t": "Os erros como informação",
+     "g": "Trata os erros como feedback útil e não como prova de fracasso.",
+     "p": [
+      "Um erro diz-te o que não funcionou, e isso é informação valiosa para a próxima tentativa.",
+      "Quem aprendeu alguma coisa cometeu centenas de erros pelo caminho.",
+      "Faz três perguntas: o que aconteceu, o que posso aprender, o que vou tentar da próxima vez?"
+     ],
+     "q": "Pensa num erro recente. O que te ensinou?",
+     "c": "Da próxima vez que algo correr mal hoje, pergunta-te o que te ensinou e escreve uma linha."
+    },
+    "pt_BR": {
+     "t": "Erros como informação",
+     "g": "Trate os erros como feedback útil e não como prova de fracasso.",
+     "p": [
+      "Um erro mostra o que não funcionou, e isso é informação valiosa para a próxima tentativa.",
+      "Todo mundo que aprendeu alguma coisa cometeu centenas de erros pelo caminho.",
+      "Faça três perguntas: o que aconteceu, o que posso aprender, o que vou tentar da próxima vez?"
+     ],
+     "q": "Pense num erro recente. O que ele ensinou a você?",
+     "c": "Da próxima vez que algo der errado hoje, pergunte o que aprendeu e escreva uma linha."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Laughing at small slip-ups",
+     "g": "Use light humour to move on from everyday blunders.",
+     "p": [
+      "A gentle laugh at a small slip, like a wrong name or a spilled coffee, lets everyone relax.",
+      "Humour is not hiding; it is saying: I am human and that is fine.",
+      "Keep it kind: laugh with yourself, never at yourself in a cruel way."
+     ],
+     "q": "What is a small blunder you can now laugh about, and how did you get there?",
+     "c": "When a tiny slip-up happens today, smile and say something light like well, that happened."
+    },
+    "de": {
+     "t": "Über kleine Patzer lachen",
+     "g": "Nutze leichten Humor, um alltägliche Missgeschicke hinter dir zu lassen.",
+     "p": [
+      "Ein sanftes Lachen über einen kleinen Patzer, etwa einen falschen Namen oder verschütteten Kaffee, entspannt alle.",
+      "Humor ist kein Verstecken, sondern sagt: Ich bin ein Mensch und das ist in Ordnung.",
+      "Bleib freundlich: Lach mit dir, nie auf grausame Weise über dich."
+     ],
+     "q": "Über welches kleine Missgeschick kannst du heute lachen, und wie kamst du dahin?",
+     "c": "Wenn dir heute ein kleiner Patzer passiert, lächle und sag etwas Leichtes wie: Tja, das ist passiert."
+    },
+    "es": {
+     "t": "Reírte de los pequeños deslices",
+     "g": "Usa el humor ligero para pasar página de los tropiezos cotidianos.",
+     "p": [
+      "Una risa suave ante un desliz pequeño, como equivocarte de nombre o derramar el café, relaja a todos.",
+      "El humor no es esconderse; es decir: soy humano y no pasa nada.",
+      "Que sea amable: ríete contigo, nunca de ti de forma cruel."
+     ],
+     "q": "¿De qué pequeño tropiezo puedes reírte ahora y cómo llegaste a eso?",
+     "c": "Si hoy ocurre un desliz mínimo, sonríe y di algo ligero como bueno, pasó."
+    },
+    "fr": {
+     "t": "Rire de tes petites gaffes",
+     "g": "Utilise un humour léger pour passer à autre chose après les petites bévues du quotidien.",
+     "p": [
+      "Un rire doux face à une petite gaffe, comme un prénom raté ou un café renversé, détend tout le monde.",
+      "L'humour n'est pas une cachette; il dit : je suis humain et ce n'est pas grave.",
+      "Reste bienveillant : ris avec toi, jamais de toi de façon cruelle."
+     ],
+     "q": "De quelle petite bévue peux-tu rire aujourd'hui, et comment en es-tu arrivé là ?",
+     "c": "Si une petite gaffe arrive aujourd'hui, souris et dis quelque chose de léger comme bon, c'est arrivé."
+    },
+    "it": {
+     "t": "Ridere dei piccoli scivoloni",
+     "g": "Usa un umorismo leggero per superare le gaffe di ogni giorno.",
+     "p": [
+      "Una risata gentile per un piccolo scivolone, come sbagliare un nome o rovesciare il caffè, rilassa tutti.",
+      "L'umorismo non è nascondersi; è dire: sono umano e va bene così.",
+      "Resta gentile: ridi con te stesso, mai di te in modo crudele."
+     ],
+     "q": "Di quale piccola gaffe riesci a ridere ora e come ci sei arrivato?",
+     "c": "Se oggi capita un piccolo scivolone, sorridi e di' qualcosa di leggero come beh, è successo."
+    },
+    "pt": {
+     "t": "Rir dos pequenos deslizes",
+     "g": "Usa humor leve para seguir em frente depois das gafes do dia a dia.",
+     "p": [
+      "Um riso suave perante um deslize pequeno, como trocar um nome ou entornar o café, descontrai toda a gente.",
+      "O humor não é esconder-se; é dizer: sou humano e está tudo bem.",
+      "Mantém-no gentil: ri contigo, nunca de ti de forma cruel."
+     ],
+     "q": "De que pequena gafe consegues rir agora e como lá chegaste?",
+     "c": "Se hoje acontecer um deslize minúsculo, sorri e diz algo leve como pronto, aconteceu."
+    },
+    "pt_BR": {
+     "t": "Rindo dos pequenos escorregões",
+     "g": "Use humor leve para seguir em frente depois das gafes do dia a dia.",
+     "p": [
+      "Uma risada suave diante de um escorregão pequeno, como errar um nome ou derrubar o café, deixa todo mundo à vontade.",
+      "Humor não é se esconder; é dizer: sou humano e tudo bem.",
+      "Mantenha gentil: ria com você, nunca de você de forma cruel."
+     ],
+     "q": "De que pequena gafe você consegue rir agora e como chegou lá?",
+     "c": "Se hoje acontecer um escorregão mínimo, sorria e diga algo leve como ops, aconteceu."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Saying sorry without overdoing it",
+     "g": "Apologise once, clearly, and then let it go.",
+     "p": [
+      "A good apology is short and sincere: I am sorry I was late, I should have called.",
+      "Over-apologising shifts the focus to your guilt and can make others uncomfortable.",
+      "Once you have apologised and put it right, you are allowed to move on."
+     ],
+     "q": "Do you tend to apologise too much, or too little? When does it happen most?",
+     "c": "Today replace one unnecessary sorry with thank you, such as thanks for waiting."
+    },
+    "de": {
+     "t": "Sich entschuldigen, ohne zu übertreiben",
+     "g": "Entschuldige dich einmal klar und lass es dann gut sein.",
+     "p": [
+      "Eine gute Entschuldigung ist kurz und aufrichtig: Es tut mir leid, dass ich zu spät war, ich hätte anrufen sollen.",
+      "Zu viel Entschuldigen lenkt den Fokus auf deine Schuld und kann andere verlegen machen.",
+      "Wenn du dich entschuldigt und es wiedergutgemacht hast, darfst du weitermachen."
+     ],
+     "q": "Entschuldigst du dich eher zu viel oder zu wenig? Wann passiert das am meisten?",
+     "c": "Ersetze heute ein unnötiges Entschuldigung durch Danke, etwa: Danke fürs Warten."
+    },
+    "es": {
+     "t": "Disculparte sin pasarte",
+     "g": "Pide perdón una vez, con claridad, y luego déjalo ir.",
+     "p": [
+      "Una buena disculpa es breve y sincera: perdona por llegar tarde, debí avisar.",
+      "Disculparse demasiado centra la atención en tu culpa y puede incomodar a los demás.",
+      "Cuando ya te has disculpado y lo has arreglado, puedes seguir adelante."
+     ],
+     "q": "¿Sueles pedir perdón demasiado o muy poco? ¿Cuándo ocurre más?",
+     "c": "Hoy cambia una disculpa innecesaria por un gracias, como gracias por esperar."
+    },
+    "fr": {
+     "t": "T'excuser sans en faire trop",
+     "g": "Excuse-toi une fois, clairement, puis passe à autre chose.",
+     "p": [
+      "De bonnes excuses sont brèves et sincères : désolé d'être arrivé en retard, j'aurais dû appeler.",
+      "S'excuser trop met l'accent sur ta culpabilité et peut gêner les autres.",
+      "Une fois que tu t'es excusé et que tu as réparé, tu as le droit de passer à la suite."
+     ],
+     "q": "As-tu tendance à trop t'excuser, ou pas assez ? Quand cela arrive-t-il le plus ?",
+     "c": "Aujourd'hui, remplace un désolé inutile par un merci, comme merci d'avoir attendu."
+    },
+    "it": {
+     "t": "Scusarti senza esagerare",
+     "g": "Chiedi scusa una volta, con chiarezza, poi lascia andare.",
+     "p": [
+      "Delle buone scuse sono brevi e sincere: scusa se sono arrivato tardi, avrei dovuto avvisare.",
+      "Scusarsi troppo sposta l'attenzione sul tuo senso di colpa e può mettere a disagio gli altri.",
+      "Quando ti sei scusato e hai rimediato, puoi andare avanti."
+     ],
+     "q": "Tendi a scusarti troppo o troppo poco? Quando succede di più?",
+     "c": "Oggi sostituisci una scusa inutile con un grazie, come grazie per l'attesa."
+    },
+    "pt": {
+     "t": "Pedir desculpa sem exagerar",
+     "g": "Pede desculpa uma vez, com clareza, e depois deixa passar.",
+     "p": [
+      "Um bom pedido de desculpa é curto e sincero: desculpa o atraso, devia ter ligado.",
+      "Pedir desculpa demais põe o foco na tua culpa e pode deixar os outros desconfortáveis.",
+      "Depois de pedires desculpa e resolveres a situação, podes seguir em frente."
+     ],
+     "q": "Costumas pedir desculpa demais ou de menos? Quando acontece mais?",
+     "c": "Hoje troca um pedido de desculpa desnecessário por um obrigado, como obrigado por esperares."
+    },
+    "pt_BR": {
+     "t": "Pedindo desculpa sem exagerar",
+     "g": "Peça desculpa uma vez, com clareza, e depois deixe pra lá.",
+     "p": [
+      "Um bom pedido de desculpa é curto e sincero: desculpa o atraso, eu devia ter ligado.",
+      "Pedir desculpa demais joga o foco na sua culpa e pode deixar os outros sem graça.",
+      "Depois de pedir desculpa e consertar, você pode seguir em frente."
+     ],
+     "q": "Você costuma pedir desculpa demais ou de menos? Quando isso mais acontece?",
+     "c": "Hoje troque um pedido de desculpa desnecessário por um obrigado, como obrigado por esperar."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Learning from a past mistake",
+     "g": "Turn one old mistake into a lesson you can use now.",
+     "p": [
+      "Old mistakes can keep stinging unless we pull out the lesson and put the rest down.",
+      "Pick one that is not too painful and write what happened, what you learned and what you do differently now.",
+      "Seeing how far you have come since then is itself a confidence boost."
+     ],
+     "q": "What is one past mistake you can now see a useful lesson in?",
+     "c": "Write three lines about one old mistake: what happened, what it taught you, how you act now."
+    },
+    "de": {
+     "t": "Aus einem alten Fehler lernen",
+     "g": "Mach aus einem alten Fehler eine Lektion, die du jetzt nutzen kannst.",
+     "p": [
+      "Alte Fehler können weiter schmerzen, solange wir nicht die Lehre herausziehen und den Rest ablegen.",
+      "Wähl einen, der nicht zu schmerzhaft ist, und schreib auf, was geschah, was du gelernt hast und was du heute anders machst.",
+      "Zu sehen, wie weit du seither gekommen bist, stärkt schon das Selbstvertrauen."
+     ],
+     "q": "In welchem früheren Fehler siehst du heute eine nützliche Lehre?",
+     "c": "Schreib drei Zeilen zu einem alten Fehler: was geschah, was er dich lehrte, wie du heute handelst."
+    },
+    "es": {
+     "t": "Aprender de un error del pasado",
+     "g": "Convierte un error antiguo en una lección que puedas usar ahora.",
+     "p": [
+      "Los errores viejos pueden seguir doliendo si no sacamos la lección y soltamos el resto.",
+      "Elige uno que no duela demasiado y escribe qué pasó, qué aprendiste y qué haces distinto ahora.",
+      "Ver cuánto has avanzado desde entonces ya es un impulso de confianza."
+     ],
+     "q": "¿De qué error del pasado puedes sacar hoy una lección útil?",
+     "c": "Escribe tres líneas sobre un error antiguo: qué pasó, qué te enseñó y cómo actúas ahora."
+    },
+    "fr": {
+     "t": "Apprendre d'une erreur passée",
+     "g": "Transforme une vieille erreur en leçon utile maintenant.",
+     "p": [
+      "Les vieilles erreurs peuvent continuer à piquer tant qu'on n'en tire pas la leçon pour poser le reste.",
+      "Choisis-en une pas trop douloureuse et écris ce qui s'est passé, ce que tu as appris et ce que tu fais autrement aujourd'hui.",
+      "Voir le chemin parcouru depuis est déjà un coup de pouce à ta confiance."
+     ],
+     "q": "De quelle erreur passée peux-tu aujourd'hui tirer une leçon utile ?",
+     "c": "Écris trois lignes sur une vieille erreur : ce qui s'est passé, ce qu'elle t'a appris, comment tu agis maintenant."
+    },
+    "it": {
+     "t": "Imparare da un errore passato",
+     "g": "Trasforma un vecchio errore in una lezione che puoi usare adesso.",
+     "p": [
+      "I vecchi errori possono continuare a bruciare finché non ne ricaviamo la lezione e lasciamo andare il resto.",
+      "Scegline uno non troppo doloroso e scrivi cosa è successo, cosa hai imparato e cosa fai diversamente ora.",
+      "Vedere quanta strada hai fatto da allora è già una spinta di fiducia."
+     ],
+     "q": "Di quale errore passato oggi riesci a vedere una lezione utile?",
+     "c": "Scrivi tre righe su un vecchio errore: cosa è successo, cosa ti ha insegnato, come agisci ora."
+    },
+    "pt": {
+     "t": "Aprender com um erro do passado",
+     "g": "Transforma um erro antigo numa lição que podes usar agora.",
+     "p": [
+      "Os erros antigos podem continuar a doer se não tirarmos a lição e largarmos o resto.",
+      "Escolhe um que não doa demais e escreve o que aconteceu, o que aprendeste e o que fazes diferente agora.",
+      "Ver o caminho que já percorreste desde então é por si só um reforço de confiança."
+     ],
+     "q": "De que erro do passado consegues hoje tirar uma lição útil?",
+     "c": "Escreve três linhas sobre um erro antigo: o que aconteceu, o que te ensinou, como agora atuas."
+    },
+    "pt_BR": {
+     "t": "Aprendendo com um erro do passado",
+     "g": "Transforme um erro antigo numa lição que você pode usar agora.",
+     "p": [
+      "Erros antigos podem continuar doendo se não tirarmos a lição e largarmos o resto.",
+      "Escolha um que não doa demais e escreva o que aconteceu, o que aprendeu e o que faz diferente agora.",
+      "Ver o quanto você avançou desde então já é um reforço de confiança."
+     ],
+     "q": "De que erro do passado você consegue hoje tirar uma lição útil?",
+     "c": "Escreva três linhas sobre um erro antigo: o que aconteceu, o que ensinou, como você age agora."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Perfectionism versus excellence",
+     "g": "Aim for good and finished instead of flawless and stuck.",
+     "p": [
+      "Perfectionism often hides fear of judgement and leads to delay, while excellence grows through finishing and improving.",
+      "Done and decent teaches you more than perfect and never started.",
+      "Ask: what would good and finished look like here, and who would really notice the difference?"
+     ],
+     "q": "Where does perfectionism slow you down the most, and what is it protecting you from?",
+     "c": "Finish one task today at good, not perfect, and send or share it without extra polishing."
+    },
+    "de": {
+     "t": "Perfektionismus oder Exzellenz",
+     "g": "Strebe nach gut und fertig statt nach makellos und festgefahren.",
+     "p": [
+      "Perfektionismus verbirgt oft Angst vor Bewertung und führt zu Aufschieben, Exzellenz wächst durch Fertigstellen und Verbessern.",
+      "Fertig und ordentlich lehrt dich mehr als perfekt und nie begonnen.",
+      "Frag dich: Wie sähe gut und fertig hier aus, und wer würde den Unterschied wirklich bemerken?"
+     ],
+     "q": "Wo bremst dich Perfektionismus am meisten, und wovor schützt er dich?",
+     "c": "Schließ heute eine Aufgabe auf gut statt perfekt ab und gib sie ohne weiteres Polieren weiter."
+    },
+    "es": {
+     "t": "Perfeccionismo frente a excelencia",
+     "g": "Apunta a bien y terminado en lugar de impecable y bloqueado.",
+     "p": [
+      "El perfeccionismo suele esconder miedo al juicio y lleva a posponer, mientras que la excelencia crece terminando y mejorando.",
+      "Hecho y decente te enseña más que perfecto y sin empezar.",
+      "Pregúntate: ¿cómo sería bien y terminado aquí y quién notaría de verdad la diferencia?"
+     ],
+     "q": "¿Dónde te frena más el perfeccionismo y de qué te protege?",
+     "c": "Termina hoy una tarea en bien, no en perfecto, y entrégala sin pulir de más."
+    },
+    "fr": {
+     "t": "Perfectionnisme ou excellence",
+     "g": "Vise le bien et fini plutôt que l'impeccable et bloqué.",
+     "p": [
+      "Le perfectionnisme cache souvent la peur du jugement et mène à repousser, alors que l'excellence grandit en finissant et en améliorant.",
+      "Fait et correct t'apprend plus que parfait et jamais commencé.",
+      "Demande-toi : à quoi ressemblerait bien et fini ici, et qui verrait vraiment la différence ?"
+     ],
+     "q": "Où le perfectionnisme te ralentit-il le plus, et de quoi te protège-t-il ?",
+     "c": "Termine aujourd'hui une tâche en bien, pas en parfait, et rends-la sans la peaufiner davantage."
+    },
+    "it": {
+     "t": "Perfezionismo o eccellenza",
+     "g": "Punta a buono e finito invece che impeccabile e bloccato.",
+     "p": [
+      "Il perfezionismo spesso nasconde la paura del giudizio e porta a rimandare, mentre l'eccellenza cresce finendo e migliorando.",
+      "Fatto e discreto insegna più di perfetto e mai iniziato.",
+      "Chiediti: come sarebbe buono e finito qui e chi noterebbe davvero la differenza?"
+     ],
+     "q": "Dove ti rallenta di più il perfezionismo e da cosa ti protegge?",
+     "c": "Oggi concludi un compito a livello buono, non perfetto, e consegnalo senza ulteriori ritocchi."
+    },
+    "pt": {
+     "t": "Perfeccionismo versus excelência",
+     "g": "Aponta para bom e terminado em vez de impecável e bloqueado.",
+     "p": [
+      "O perfeccionismo esconde muitas vezes o medo do julgamento e leva a adiar, enquanto a excelência cresce a terminar e a melhorar.",
+      "Feito e decente ensina-te mais do que perfeito e nunca começado.",
+      "Pergunta: como seria bom e terminado aqui e quem notaria mesmo a diferença?"
+     ],
+     "q": "Onde é que o perfeccionismo mais te trava e do que te protege?",
+     "c": "Hoje termina uma tarefa em bom, não em perfeito, e entrega-a sem polir mais."
+    },
+    "pt_BR": {
+     "t": "Perfeccionismo versus excelência",
+     "g": "Mire no bom e concluído em vez do impecável e travado.",
+     "p": [
+      "O perfeccionismo muitas vezes esconde medo de julgamento e leva a adiar, enquanto a excelência cresce concluindo e melhorando.",
+      "Feito e decente ensina mais que perfeito e nunca começado.",
+      "Pergunte: como seria bom e concluído aqui e quem realmente notaria a diferença?"
+     ],
+     "q": "Onde o perfeccionismo mais atrasa você e do que ele protege?",
+     "c": "Hoje conclua uma tarefa no nível bom, não perfeito, e entregue sem polir mais."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The good-enough rule",
+     "g": "Decide in advance what good enough looks like for a task.",
+     "p": [
+      "Before you start, write one line: this is done when it does X. That gives you a finish line.",
+      "Without a finish line, tasks stretch forever and you feel never good enough.",
+      "Save your high standards for what truly matters and let the rest be good enough."
+     ],
+     "q": "Which task could you finish sooner if you defined good enough first?",
+     "c": "Pick one task, write its good enough line before starting, and stop when you reach it."
+    },
+    "de": {
+     "t": "Die Gut-genug-Regel",
+     "g": "Lege vorab fest, wie gut genug bei einer Aufgabe aussieht.",
+     "p": [
+      "Schreib vor dem Start eine Zeile: Fertig ist es, wenn es X leistet. So hast du eine Ziellinie.",
+      "Ohne Ziellinie ziehen sich Aufgaben endlos hin und du fühlst dich nie gut genug.",
+      "Heb dir hohe Ansprüche für das wirklich Wichtige auf und lass den Rest gut genug sein."
+     ],
+     "q": "Welche Aufgabe wäre früher fertig, wenn du zuerst festlegst, was gut genug ist?",
+     "c": "Wähl eine Aufgabe, schreib vor dem Start ihre Gut-genug-Zeile und hör auf, wenn du sie erreichst."
+    },
+    "es": {
+     "t": "La regla de lo suficientemente bueno",
+     "g": "Decide de antemano qué es suficientemente bueno para una tarea.",
+     "p": [
+      "Antes de empezar, escribe una línea: esto está hecho cuando logre X. Así tienes una meta.",
+      "Sin meta, las tareas se estiran sin fin y nunca te sientes suficiente.",
+      "Reserva tu alto nivel de exigencia para lo que de verdad importa y deja el resto en suficientemente bueno."
+     ],
+     "q": "¿Qué tarea terminarías antes si definieras primero lo suficientemente bueno?",
+     "c": "Elige una tarea, escribe su línea de suficientemente bueno antes de empezar y para al llegar a ella."
+    },
+    "fr": {
+     "t": "La règle de l'assez bien",
+     "g": "Décide à l'avance ce que veut dire assez bien pour une tâche.",
+     "p": [
+      "Avant de commencer, écris une ligne : c'est terminé quand cela fait X. Tu as ainsi une ligne d'arrivée.",
+      "Sans ligne d'arrivée, les tâches s'étirent et tu ne te sens jamais à la hauteur.",
+      "Garde tes hauts standards pour ce qui compte vraiment et laisse le reste être assez bien."
+     ],
+     "q": "Quelle tâche finirais-tu plus vite si tu définissais d'abord l'assez bien ?",
+     "c": "Choisis une tâche, écris sa ligne assez bien avant de commencer et arrête-toi quand tu l'atteins."
+    },
+    "it": {
+     "t": "La regola dell'abbastanza buono",
+     "g": "Decidi in anticipo cosa significa abbastanza buono per un compito.",
+     "p": [
+      "Prima di iniziare scrivi una riga: è finito quando fa X. Così hai un traguardo.",
+      "Senza traguardo i compiti si allungano all'infinito e non ti senti mai abbastanza.",
+      "Riserva gli standard alti a ciò che conta davvero e lascia il resto abbastanza buono."
+     ],
+     "q": "Quale compito finiresti prima se definissi prima l'abbastanza buono?",
+     "c": "Scegli un compito, scrivi la sua riga di abbastanza buono prima di iniziare e fermati quando la raggiungi."
+    },
+    "pt": {
+     "t": "A regra do suficientemente bom",
+     "g": "Decide de antemão o que é suficientemente bom numa tarefa.",
+     "p": [
+      "Antes de começar, escreve uma linha: está feito quando fizer X. Assim tens uma meta.",
+      "Sem meta, as tarefas esticam-se sem fim e nunca te sentes suficiente.",
+      "Guarda os teus padrões elevados para o que realmente importa e deixa o resto ficar suficientemente bom."
+     ],
+     "q": "Que tarefa terminarias mais cedo se definisses primeiro o suficientemente bom?",
+     "c": "Escolhe uma tarefa, escreve a sua linha de suficientemente bom antes de começar e pára quando lá chegares."
+    },
+    "pt_BR": {
+     "t": "A regra do bom o bastante",
+     "g": "Decida de antemão o que é bom o bastante numa tarefa.",
+     "p": [
+      "Antes de começar, escreva uma linha: está pronto quando fizer X. Assim você tem uma linha de chegada.",
+      "Sem linha de chegada, as tarefas se esticam sem fim e você nunca se sente suficiente.",
+      "Guarde seus padrões altos para o que realmente importa e deixe o resto ficar bom o bastante."
+     ],
+     "q": "Que tarefa você terminaria mais cedo se definisse primeiro o bom o bastante?",
+     "c": "Escolha uma tarefa, escreva sua linha de bom o bastante antes de começar e pare ao chegar nela."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Starting before you feel ready",
+     "g": "See why confidence often comes after action, not before it.",
+     "p": [
+      "Waiting to feel ready can last forever. Confidence usually shows up once you have started.",
+      "Nobody feels fully ready for a first day, a first talk or a first try.",
+      "Begin with a first tiny piece, even a messy one. Momentum does the rest."
+     ],
+     "q": "What have you been waiting to feel ready for, and what is a tiny first piece?",
+     "c": "Start one thing you have been postponing, for just five minutes, imperfectly."
+    },
+    "de": {
+     "t": "Anfangen, bevor du dich bereit fühlst",
+     "g": "Erkenne, warum Selbstvertrauen oft nach dem Handeln kommt, nicht davor.",
+     "p": [
+      "Warten, bis du dich bereit fühlst, kann ewig dauern. Selbstvertrauen kommt meist, wenn du angefangen hast.",
+      "Niemand fühlt sich für den ersten Tag, den ersten Vortrag oder den ersten Versuch voll bereit.",
+      "Beginn mit einem winzigen ersten Stück, auch einem chaotischen. Schwung erledigt den Rest."
+     ],
+     "q": "Worauf wartest du, bis du dich bereit fühlst, und was wäre ein winziges erstes Stück?",
+     "c": "Fang heute etwas an, das du aufschiebst, nur fünf Minuten lang und unperfekt."
+    },
+    "es": {
+     "t": "Empezar antes de sentirte listo",
+     "g": "Descubre por qué la confianza suele llegar después de actuar, no antes.",
+     "p": [
+      "Esperar a sentirte listo puede durar para siempre. La confianza suele aparecer cuando ya has empezado.",
+      "Nadie se siente del todo listo para un primer día, una primera charla o un primer intento.",
+      "Empieza con un primer trocito diminuto, aunque sea desordenado. El impulso hace el resto."
+     ],
+     "q": "¿Para qué esperas sentirte listo y cuál sería un primer trocito diminuto?",
+     "c": "Empieza hoy algo que vienes posponiendo, solo cinco minutos y sin perfección."
+    },
+    "fr": {
+     "t": "Commencer avant de te sentir prêt",
+     "g": "Vois pourquoi la confiance vient souvent après l'action, pas avant.",
+     "p": [
+      "Attendre de se sentir prêt peut durer toujours. La confiance apparaît généralement une fois lancé.",
+      "Personne ne se sent totalement prêt pour un premier jour, un premier exposé ou un premier essai.",
+      "Commence par un tout petit premier morceau, même brouillon. L'élan fait le reste."
+     ],
+     "q": "Qu'attends-tu de te sentir prêt à faire, et quel serait un tout petit premier morceau ?",
+     "c": "Commence aujourd'hui une chose que tu repousses, juste cinq minutes, de façon imparfaite."
+    },
+    "it": {
+     "t": "Iniziare prima di sentirti pronto",
+     "g": "Scopri perché la fiducia spesso arriva dopo l'azione, non prima.",
+     "p": [
+      "Aspettare di sentirti pronto può durare per sempre. La fiducia di solito compare quando hai già iniziato.",
+      "Nessuno si sente del tutto pronto per un primo giorno, un primo discorso o un primo tentativo.",
+      "Parti da un primo pezzetto minuscolo, anche disordinato. Lo slancio fa il resto."
+     ],
+     "q": "Per cosa stai aspettando di sentirti pronto e quale sarebbe un primo pezzetto minuscolo?",
+     "c": "Inizia oggi qualcosa che rimandi, solo cinque minuti e in modo imperfetto."
+    },
+    "pt": {
+     "t": "Começar antes de te sentires pronto",
+     "g": "Percebe por que a confiança chega muitas vezes depois da ação, e não antes.",
+     "p": [
+      "Esperar sentir-te pronto pode durar para sempre. A confiança costuma aparecer depois de começares.",
+      "Ninguém se sente totalmente pronto para um primeiro dia, uma primeira palestra ou uma primeira tentativa.",
+      "Começa por um primeiro pedacinho minúsculo, mesmo que desarrumado. O impulso faz o resto."
+     ],
+     "q": "Para que estás à espera de te sentir pronto e qual seria um primeiro pedacinho minúsculo?",
+     "c": "Hoje começa algo que andas a adiar, só cinco minutos e sem perfeição."
+    },
+    "pt_BR": {
+     "t": "Começando antes de se sentir pronto",
+     "g": "Entenda por que a confiança muitas vezes vem depois da ação, e não antes.",
+     "p": [
+      "Esperar para se sentir pronto pode durar para sempre. A confiança costuma aparecer depois que você começa.",
+      "Ninguém se sente totalmente pronto para um primeiro dia, uma primeira palestra ou uma primeira tentativa.",
+      "Comece por um pedacinho minúsculo, mesmo que bagunçado. O embalo faz o resto."
+     ],
+     "q": "Para que você está esperando se sentir pronto e qual seria um primeiro pedacinho minúsculo?",
+     "c": "Hoje comece algo que você vem adiando, só cinco minutos e sem perfeição."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The five-second start",
+     "g": "Count down and move before doubts pile up.",
+     "p": [
+      "When you hesitate, doubts multiply. A quick countdown helps you act before the mind talks you out of it.",
+      "Count five, four, three, two, one, then take the first physical step: stand up, open the file, pick up the phone.",
+      "It works best for small, safe actions that you already want to do."
+     ],
+     "q": "What is a small action you keep hesitating over that a countdown could unlock?",
+     "c": "Use a five-second countdown once today to start something you have been putting off."
+    },
+    "de": {
+     "t": "Der Fünf-Sekunden-Start",
+     "g": "Zähle runter und handle, bevor sich Zweifel anhäufen.",
+     "p": [
+      "Wenn du zögerst, vermehren sich Zweifel. Ein schneller Countdown hilft dir zu handeln, bevor der Kopf dich überredet.",
+      "Zähl fünf, vier, drei, zwei, eins und mach dann den ersten körperlichen Schritt: aufstehen, Datei öffnen, Hörer abnehmen.",
+      "Es wirkt am besten bei kleinen, sicheren Handlungen, die du ohnehin tun willst."
+     ],
+     "q": "Bei welcher kleinen Handlung zögerst du ständig und könnte ein Countdown helfen?",
+     "c": "Nutze heute einmal einen Fünf-Sekunden-Countdown, um etwas anzufangen, das du aufgeschoben hast."
+    },
+    "es": {
+     "t": "El arranque de cinco segundos",
+     "g": "Cuenta atrás y muévete antes de que se acumulen las dudas.",
+     "p": [
+      "Cuando dudas, las dudas se multiplican. Una cuenta atrás rápida te ayuda a actuar antes de que la mente te convenza de no hacerlo.",
+      "Cuenta cinco, cuatro, tres, dos, uno y da el primer paso físico: levántate, abre el archivo, coge el teléfono.",
+      "Funciona mejor con acciones pequeñas y seguras que ya quieres hacer."
+     ],
+     "q": "¿Qué acción pequeña sigues dudando y podría desbloquear una cuenta atrás?",
+     "c": "Usa hoy una vez una cuenta atrás de cinco segundos para empezar algo que venías posponiendo."
+    },
+    "fr": {
+     "t": "Le départ en cinq secondes",
+     "g": "Compte à rebours et bouge avant que les doutes ne s'accumulent.",
+     "p": [
+      "Quand tu hésites, les doutes se multiplient. Un compte à rebours rapide t'aide à agir avant que l'esprit ne te dissuade.",
+      "Compte cinq, quatre, trois, deux, un, puis fais le premier geste physique : te lever, ouvrir le fichier, prendre le téléphone.",
+      "Cela marche mieux pour de petites actions sûres que tu veux déjà faire."
+     ],
+     "q": "Quelle petite action repousses-tu sans cesse et qu'un compte à rebours pourrait débloquer ?",
+     "c": "Utilise aujourd'hui une fois un compte à rebours de cinq secondes pour commencer quelque chose que tu repousses."
+    },
+    "it": {
+     "t": "La partenza in cinque secondi",
+     "g": "Fai un conto alla rovescia e muoviti prima che i dubbi si accumulino.",
+     "p": [
+      "Quando esiti i dubbi si moltiplicano. Un rapido conto alla rovescia ti aiuta ad agire prima che la mente ti convinca a rinunciare.",
+      "Conta cinque, quattro, tre, due, uno e fai il primo gesto fisico: alzarti, aprire il file, prendere il telefono.",
+      "Funziona meglio con azioni piccole e sicure che vuoi già fare."
+     ],
+     "q": "Quale piccola azione continui a rimandare e un conto alla rovescia potrebbe sbloccare?",
+     "c": "Usa oggi una volta un conto alla rovescia di cinque secondi per iniziare qualcosa che rimandavi."
+    },
+    "pt": {
+     "t": "O arranque de cinco segundos",
+     "g": "Faz uma contagem decrescente e mexe-te antes que as dúvidas se acumulem.",
+     "p": [
+      "Quando hesitas, as dúvidas multiplicam-se. Uma contagem rápida ajuda-te a agir antes que a mente te convença a desistir.",
+      "Conta cinco, quatro, três, dois, um e dá o primeiro passo físico: levanta-te, abre o ficheiro, pega no telefone.",
+      "Funciona melhor com ações pequenas e seguras que já queres fazer."
+     ],
+     "q": "Que pequena ação continuas a adiar e poderia ser desbloqueada por uma contagem?",
+     "c": "Hoje usa uma vez uma contagem de cinco segundos para começar algo que andavas a adiar."
+    },
+    "pt_BR": {
+     "t": "A largada de cinco segundos",
+     "g": "Faça uma contagem regressiva e se mexa antes que as dúvidas se acumulem.",
+     "p": [
+      "Quando você hesita, as dúvidas se multiplicam. Uma contagem rápida ajuda a agir antes que a mente convença você a desistir.",
+      "Conte cinco, quatro, três, dois, um e dê o primeiro passo físico: levantar, abrir o arquivo, pegar o telefone.",
+      "Funciona melhor com ações pequenas e seguras que você já quer fazer."
+     ],
+     "q": "Que pequena ação você fica adiando e uma contagem regressiva poderia destravar?",
+     "c": "Hoje use uma vez uma contagem de cinco segundos para começar algo que você vinha adiando."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Accepting a compliment",
+     "g": "Say thank you instead of brushing praise away.",
+     "p": [
+      "Replying that it was nothing tells the other person their opinion does not count.",
+      "A simple thank you, or thank you, that means a lot, lets the kindness land.",
+      "You can add a little context, like I worked hard on that, without boasting."
+     ],
+     "q": "How do you usually react when someone compliments you, and what would you like to do instead?",
+     "c": "Today when someone praises you, reply only with thank you and a smile, no excuses."
+    },
+    "de": {
+     "t": "Ein Kompliment annehmen",
+     "g": "Sag danke, statt Lob abzuwehren.",
+     "p": [
+      "Wer antwortet, das war doch nichts, sagt dem anderen, dass seine Meinung nicht zählt.",
+      "Ein schlichtes Danke oder Danke, das freut mich lässt die Freundlichkeit ankommen.",
+      "Du kannst etwas Kontext ergänzen, etwa: Da habe ich viel Arbeit reingesteckt, ohne anzugeben."
+     ],
+     "q": "Wie reagierst du meist auf ein Kompliment, und was würdest du lieber tun?",
+     "c": "Antworte heute, wenn dich jemand lobt, nur mit Danke und einem Lächeln, ohne Ausreden."
+    },
+    "es": {
+     "t": "Aceptar un cumplido",
+     "g": "Di gracias en lugar de quitarle importancia al elogio.",
+     "p": [
+      "Responder que no fue nada le dice a la otra persona que su opinión no cuenta.",
+      "Un simple gracias, o gracias, me alegra mucho, deja que la amabilidad llegue.",
+      "Puedes añadir algo de contexto, como me esforcé mucho en eso, sin presumir."
+     ],
+     "q": "¿Cómo sueles reaccionar cuando te hacen un cumplido y qué te gustaría hacer en su lugar?",
+     "c": "Hoy, cuando alguien te elogie, responde solo con gracias y una sonrisa, sin excusas."
+    },
+    "fr": {
+     "t": "Accepter un compliment",
+     "g": "Dis merci au lieu d'écarter les louanges.",
+     "p": [
+      "Répondre que ce n'était rien dit à l'autre que son avis ne compte pas.",
+      "Un simple merci, ou merci, cela me touche, laisse la gentillesse arriver.",
+      "Tu peux ajouter un peu de contexte, comme j'y ai beaucoup travaillé, sans te vanter."
+     ],
+     "q": "Comment réagis-tu d'habitude à un compliment, et que préférerais-tu faire ?",
+     "c": "Aujourd'hui, quand on te complimente, réponds seulement merci avec un sourire, sans excuses."
+    },
+    "it": {
+     "t": "Accettare un complimento",
+     "g": "Di' grazie invece di scacciare un elogio.",
+     "p": [
+      "Rispondere che non è niente dice all'altro che la sua opinione non conta.",
+      "Un semplice grazie, o grazie, mi fa molto piacere, lascia arrivare la gentilezza.",
+      "Puoi aggiungere un po' di contesto, come ci ho lavorato molto, senza vantarti."
+     ],
+     "q": "Come reagisci di solito a un complimento e cosa vorresti fare invece?",
+     "c": "Oggi, quando qualcuno ti fa un complimento, rispondi solo con grazie e un sorriso, senza scuse."
+    },
+    "pt": {
+     "t": "Aceitar um elogio",
+     "g": "Diz obrigado em vez de afastar o elogio.",
+     "p": [
+      "Responder que não foi nada diz à outra pessoa que a sua opinião não conta.",
+      "Um simples obrigado, ou obrigado, fico muito contente, deixa a gentileza chegar.",
+      "Podes juntar algum contexto, como trabalhei muito nisso, sem te gabares."
+     ],
+     "q": "Como costumas reagir quando te elogiam e o que gostarias de fazer em vez disso?",
+     "c": "Hoje, quando alguém te elogiar, responde só com obrigado e um sorriso, sem desculpas."
+    },
+    "pt_BR": {
+     "t": "Aceitando um elogio",
+     "g": "Diga obrigado em vez de afastar o elogio.",
+     "p": [
+      "Responder que não foi nada diz à outra pessoa que a opinião dela não conta.",
+      "Um simples obrigado, ou obrigado, fiquei muito feliz, deixa a gentileza chegar.",
+      "Você pode acrescentar um pouco de contexto, como me dediquei muito nisso, sem se gabar."
+     ],
+     "q": "Como você costuma reagir quando elogiam você e o que gostaria de fazer em vez disso?",
+     "c": "Hoje, quando alguém elogiar você, responda só com obrigado e um sorriso, sem desculpas."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Giving genuine compliments",
+     "g": "See how noticing others' strengths builds warmth and your own ease.",
+     "p": [
+      "Looking for what is good in people shifts your attention away from your own worries.",
+      "Be specific and sincere: I liked how you explained that, rather than a vague nice.",
+      "Complimenting others also trains your eye to notice your own strengths."
+     ],
+     "q": "When did a compliment from someone make your day, and what made it special?",
+     "c": "Give two specific, genuine compliments today to people around you."
+    },
+    "de": {
+     "t": "Echte Komplimente machen",
+     "g": "Erlebe, wie das Bemerken fremder Stärken Wärme schafft und dich selbst entspannt.",
+     "p": [
+      "Wer nach dem Guten in Menschen sucht, lenkt die Aufmerksamkeit von den eigenen Sorgen weg.",
+      "Sei konkret und aufrichtig: Wie du das erklärt hast, fand ich gut, statt ein vages nett.",
+      "Anderen Komplimente zu machen schult auch deinen Blick für die eigenen Stärken."
+     ],
+     "q": "Wann hat dir ein Kompliment den Tag verschönert, und was machte es besonders?",
+     "c": "Mach heute zwei konkrete, ehrliche Komplimente an Menschen in deiner Nähe."
+    },
+    "es": {
+     "t": "Hacer cumplidos sinceros",
+     "g": "Descubre cómo notar las fortalezas de otros crea calidez y te da soltura.",
+     "p": [
+      "Buscar lo bueno en la gente aparta tu atención de tus propias preocupaciones.",
+      "Sé concreto y sincero: me gustó cómo lo explicaste, en lugar de un vago qué bien.",
+      "Elogiar a otros también entrena tu mirada para notar tus propias fortalezas."
+     ],
+     "q": "¿Cuándo te alegró el día un cumplido de alguien y qué lo hizo especial?",
+     "c": "Haz hoy dos cumplidos concretos y sinceros a personas de tu entorno."
+    },
+    "fr": {
+     "t": "Faire de vrais compliments",
+     "g": "Vois comment remarquer les forces des autres crée de la chaleur et de l'aisance.",
+     "p": [
+      "Chercher ce qui est bien chez les gens détourne ton attention de tes propres soucis.",
+      "Sois précis et sincère : j'ai aimé ta façon d'expliquer cela, plutôt qu'un vague c'est bien.",
+      "Complimenter les autres entraîne aussi ton regard à remarquer tes propres forces."
+     ],
+     "q": "Quand un compliment de quelqu'un t'a-t-il fait plaisir, et qu'est-ce qui le rendait spécial ?",
+     "c": "Fais aujourd'hui deux compliments précis et sincères à des personnes autour de toi."
+    },
+    "it": {
+     "t": "Fare complimenti sinceri",
+     "g": "Scopri come notare i punti di forza altrui crea calore e ti mette a tuo agio.",
+     "p": [
+      "Cercare il buono nelle persone sposta l'attenzione dalle tue preoccupazioni.",
+      "Sii specifico e sincero: mi è piaciuto come l'hai spiegato, invece di un vago carino.",
+      "Fare complimenti agli altri allena anche lo sguardo a notare i tuoi punti di forza."
+     ],
+     "q": "Quando il complimento di qualcuno ti ha reso felice la giornata e cosa lo rendeva speciale?",
+     "c": "Oggi fai due complimenti specifici e sinceri a persone intorno a te."
+    },
+    "pt": {
+     "t": "Fazer elogios sinceros",
+     "g": "Vê como reparar nas forças dos outros cria simpatia e te dá à vontade.",
+     "p": [
+      "Procurar o que há de bom nas pessoas desvia a tua atenção das tuas preocupações.",
+      "Sê concreto e sincero: gostei da forma como explicaste isso, em vez de um vago que giro.",
+      "Elogiar os outros também treina o teu olhar para notares as tuas forças."
+     ],
+     "q": "Quando é que o elogio de alguém te alegrou o dia e o que o tornou especial?",
+     "c": "Hoje faz dois elogios concretos e sinceros a pessoas à tua volta."
+    },
+    "pt_BR": {
+     "t": "Fazendo elogios sinceros",
+     "g": "Veja como reparar nos pontos fortes dos outros cria simpatia e deixa você à vontade.",
+     "p": [
+      "Procurar o que há de bom nas pessoas desvia sua atenção das suas próprias preocupações.",
+      "Seja específico e sincero: gostei de como você explicou isso, em vez de um vago legal.",
+      "Elogiar os outros também treina seu olhar para notar seus próprios pontos fortes."
+     ],
+     "q": "Quando o elogio de alguém alegrou o seu dia e o que o tornou especial?",
+     "c": "Hoje faça dois elogios específicos e sinceros a pessoas ao seu redor."
+    }
+   }
+  }
+ ]
+}

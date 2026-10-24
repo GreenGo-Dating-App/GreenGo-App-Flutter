@@ -1,4 +1,4 @@
-import { COURSE_DAYS, courseBlock, currentCourse, introBubbles, levelBand, nextCourseState, pickQuestions } from '../content';
+import { COURSE_DAYS, courseBlock, courseDays, currentCourse, introBubbles, levelBand, nextCourseState, pickQuestions } from '../content';
 import { BuddySettings } from '../model';
 
 const b = { name: 'Luna', avatar: 'owl', topic: 'practice_italian', role: 'friend', tone: 'warm', language: 'it', chatLanguage: 'en',
@@ -21,6 +21,17 @@ describe('course progress: one lesson a day', () => {
   });
   it('stops at day 365', () => {
     expect(currentCourse({ day: COURSE_DAYS, doneOn: '20260101' }, T0)).toMatchObject({ day: COURSE_DAYS });
+  });
+  it('a 30-day topic stops at day 30 and says the path is finished', () => {
+    expect(courseDays({ lessonsReady: 30 })).toBe(30);
+    expect(courseDays({})).toBe(COURSE_DAYS);
+    const s = currentCourse({ day: 30, doneOn: '20261020' }, T0, 30);
+    expect(s).toMatchObject({ day: 30, doneOn: '20261020' });
+    const lesson = { d: 30, lv: 'beginner', i18n: { it: { t: 'Ripasso', g: 'g', p: ['a', 'b', 'c'], q: 'q', c: 'c' } } };
+    const block = courseBlock(b, s, lesson, [], 30);
+    expect(block).toContain('day 30 of 30');
+    expect(block).toContain('whole path is finished');
+    expect(courseBlock(b, { ...s, doneOn: null }, lesson, [], 30)).not.toContain('finished');
   });
   it('remembers only questions that were offered', () => {
     const s = nextCourseState(currentCourse(undefined, T0), false, 'x-002', ['x-001', 'x-002'], T0);

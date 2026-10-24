@@ -1,0 +1,835 @@
+{
+ "topic": "books",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Humour books",
+     "g": "Enjoy comic novels and funny essays.",
+     "p": [
+      "Jerome K. Jerome's Three Men in a Boat, from 1889, is still funny today.",
+      "P. G. Wodehouse, Douglas Adams and Terry Pratchett turned comedy into craft.",
+      "Humour in books relies on timing, exaggeration and loveable mistakes."
+     ],
+     "q": "Which book has made you laugh out loud?",
+     "c": "Read a funny page aloud and see whether it still makes you smile."
+    },
+    "de": {
+     "t": "Humorvolle Bücher",
+     "g": "Genieße komische Romane und witzige Essays.",
+     "p": [
+      "Jerome K. Jeromes Drei Mann in einem Boot von 1889 ist heute noch komisch.",
+      "P. G. Wodehouse, Douglas Adams und Terry Pratchett machten Komik zum Handwerk.",
+      "Humor in Büchern lebt von Timing, Übertreibung und liebenswerten Fehlern."
+     ],
+     "q": "Welches Buch hat dich laut lachen lassen?",
+     "c": "Lies eine lustige Seite laut vor und prüfe, ob sie dich noch zum Lächeln bringt."
+    },
+    "es": {
+     "t": "Libros de humor",
+     "g": "Disfruta de novelas cómicas y ensayos divertidos.",
+     "p": [
+      "Tres hombres en una barca, de Jerome K. Jerome, de 1889, sigue siendo divertido.",
+      "P. G. Wodehouse, Douglas Adams y Terry Pratchett convirtieron la comedia en oficio.",
+      "El humor en los libros se basa en el ritmo, la exageración y los errores entrañables."
+     ],
+     "q": "¿Qué libro te ha hecho reír a carcajadas?",
+     "c": "Lee en voz alta una página divertida y comprueba si aún te hace sonreír."
+    },
+    "fr": {
+     "t": "Les livres d'humour",
+     "g": "Savoure romans comiques et essais drôles.",
+     "p": [
+      "Trois hommes dans un bateau de Jerome K. Jerome, de 1889, fait encore rire.",
+      "P. G. Wodehouse, Douglas Adams et Terry Pratchett ont fait de la comédie un art.",
+      "L'humour des livres repose sur le rythme, l'exagération et les erreurs attachantes."
+     ],
+     "q": "Quel livre t'a fait rire aux éclats ?",
+     "c": "Lis à voix haute une page drôle et vois si elle te fait encore sourire."
+    },
+    "it": {
+     "t": "Libri umoristici",
+     "g": "Goditi romanzi comici e saggi divertenti.",
+     "p": [
+      "Tre uomini in barca di Jerome K. Jerome, del 1889, fa ridere ancora oggi.",
+      "P. G. Wodehouse, Douglas Adams e Terry Pratchett hanno fatto della comicità un mestiere.",
+      "L'umorismo nei libri si basa su tempi, esagerazione e errori simpatici."
+     ],
+     "q": "Quale libro ti ha fatto ridere di gusto?",
+     "c": "Leggi ad alta voce una pagina buffa e vedi se ti fa ancora sorridere."
+    },
+    "pt": {
+     "t": "Livros de humor",
+     "g": "Diverte-te com romances cómicos e ensaios engraçados.",
+     "p": [
+      "Três Homens num Barco, de Jerome K. Jerome, de 1889, ainda é divertido.",
+      "P. G. Wodehouse, Douglas Adams e Terry Pratchett fizeram da comédia um ofício.",
+      "O humor nos livros assenta em ritmo, exagero e erros adoráveis."
+     ],
+     "q": "Que livro te fez rir às gargalhadas?",
+     "c": "Lê em voz alta uma página divertida e vê se ainda te faz sorrir."
+    },
+    "pt_BR": {
+     "t": "Livros de humor",
+     "g": "Divirta-se com romances cômicos e ensaios engraçados.",
+     "p": [
+      "Três Homens num Barco, de Jerome K. Jerome, de 1889, ainda é divertido.",
+      "P. G. Wodehouse, Douglas Adams e Terry Pratchett fizeram da comédia um ofício.",
+      "O humor nos livros se apoia em ritmo, exagero e erros adoráveis."
+     ],
+     "q": "Que livro fez você rir às gargalhadas?",
+     "c": "Leia em voz alta uma página engraçada e veja se ainda faz você sorrir."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Feel-good fiction",
+     "g": "Find warm, cosy stories about kindness and community.",
+     "p": [
+      "Feel-good books focus on friendship, kindness and small-town warmth.",
+      "Classics like Anne of Green Gables and The Wind in the Willows still comfort readers.",
+      "They are perfect after a long day, with gentle stakes and hopeful endings."
+     ],
+     "q": "What book feels like a warm blanket to you?",
+     "c": "Pick a cosy book for a rainy day and place it by your favourite seat."
+    },
+    "de": {
+     "t": "Wohlfühlromane",
+     "g": "Finde warme, gemütliche Geschichten über Güte und Gemeinschaft.",
+     "p": [
+      "Wohlfühlbücher drehen sich um Freundschaft, Freundlichkeit und Kleinstadtwärme.",
+      "Klassiker wie Anne auf Green Gables und Der Wind in den Weiden trösten bis heute.",
+      "Sie sind perfekt nach einem langen Tag, mit sanfter Spannung und hoffnungsvollem Ende."
+     ],
+     "q": "Welches Buch fühlt sich für dich wie eine warme Decke an?",
+     "c": "Wähle ein gemütliches Buch für einen Regentag und leg es an deinen Lieblingsplatz."
+    },
+    "es": {
+     "t": "Ficción para sentirse bien",
+     "g": "Encuentra historias cálidas y acogedoras sobre bondad y comunidad.",
+     "p": [
+      "Los libros reconfortantes se centran en la amistad, la amabilidad y el calor de los pueblos pequeños.",
+      "Clásicos como Ana de las tejas verdes y El viento en los sauces siguen reconfortando.",
+      "Son perfectos tras un día largo, con tensión suave y finales esperanzadores."
+     ],
+     "q": "¿Qué libro es para ti como una manta calentita?",
+     "c": "Elige un libro acogedor para un día de lluvia y déjalo junto a tu asiento favorito."
+    },
+    "fr": {
+     "t": "La fiction réconfortante",
+     "g": "Trouve des histoires chaleureuses de gentillesse et de communauté.",
+     "p": [
+      "Les livres réconfortants parlent d'amitié, de bonté et de chaleur de petite ville.",
+      "Des classiques comme Anne… la maison aux pignons verts et Le Vent dans les saules réconfortent encore.",
+      "Ils sont parfaits après une longue journée, avec enjeux doux et fins pleines d'espoir."
+     ],
+     "q": "Quel livre est pour toi comme une couverture chaude ?",
+     "c": "Choisis un livre douillet pour un jour de pluie et pose-le près de ton siège préféré."
+    },
+    "it": {
+     "t": "Narrativa che fa stare bene",
+     "g": "Trova storie calde e accoglienti su gentilezza e comunità.",
+     "p": [
+      "I libri rassicuranti puntano su amicizia, gentilezza e calore di paese.",
+      "Classici come Anna dai capelli rossi e Il vento nei salici consolano ancora.",
+      "Sono perfetti dopo una lunga giornata, con tensione lieve e finali pieni di speranza."
+     ],
+     "q": "Quale libro è per te come una coperta calda?",
+     "c": "Scegli un libro accogliente per un giorno di pioggia e mettilo vicino alla tua poltrona."
+    },
+    "pt": {
+     "t": "Ficção que faz bem",
+     "g": "Encontra histórias calorosas e aconchegantes sobre bondade e comunidade.",
+     "p": [
+      "Os livros reconfortantes centram-se na amizade, na gentileza e no calor das vilas pequenas.",
+      "Clássicos como Anne de Green Gables e O Vento nos Salgueiros ainda confortam.",
+      "São perfeitos depois de um dia longo, com tensão suave e finais esperançosos."
+     ],
+     "q": "Que livro é para ti como um cobertor quentinho?",
+     "c": "Escolhe um livro aconchegante para um dia de chuva e deixa-o junto ao teu lugar favorito."
+    },
+    "pt_BR": {
+     "t": "Ficção que faz bem",
+     "g": "Encontre histórias calorosas e aconchegantes sobre bondade e comunidade.",
+     "p": [
+      "Livros reconfortantes focam em amizade, gentileza e o calor das cidades pequenas.",
+      "Clássicos como Anne de Green Gables e O Vento nos Salgueiros ainda confortam.",
+      "São perfeitos depois de um dia longo, com tensão suave e finais esperançosos."
+     ],
+     "q": "Que livro é para você como um cobertor quentinho?",
+     "c": "Escolha um livro aconchegante para um dia de chuva e deixe junto ao seu lugar favorito."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Literary fiction",
+     "g": "Explore books driven by character, style and ideas.",
+     "p": [
+      "Literary fiction values beautiful language and deep characters over plot twists.",
+      "Jane Austen, Gabriel García Márquez and Kazuo Ishiguro are celebrated examples.",
+      "These books often reward slow reading and discussion."
+     ],
+     "q": "Do you enjoy a book more for its sentences or for its plot?",
+     "c": "Copy one sentence from a book that you find beautifully written."
+    },
+    "de": {
+     "t": "Literarische Belletristik",
+     "g": "Entdecke Bücher, die von Figuren, Stil und Ideen getragen werden.",
+     "p": [
+      "Literarische Prosa schätzt schöne Sprache und tiefe Figuren mehr als Wendungen der Handlung.",
+      "Jane Austen, Gabriel García Márquez und Kazuo Ishiguro sind gefeierte Beispiele.",
+      "Solche Bücher belohnen langsames Lesen und Gespräche."
+     ],
+     "q": "Gefällt dir ein Buch mehr wegen seiner Sätze oder seiner Handlung?",
+     "c": "Schreibe einen Satz aus einem Buch ab, den du wunderbar formuliert findest."
+    },
+    "es": {
+     "t": "Ficción literaria",
+     "g": "Explora libros guiados por los personajes, el estilo y las ideas.",
+     "p": [
+      "La ficción literaria valora el lenguaje bello y los personajes profundos por encima de los giros.",
+      "Jane Austen, Gabriel García Márquez y Kazuo Ishiguro son ejemplos celebrados.",
+      "Estos libros suelen premiar la lectura lenta y la conversación."
+     ],
+     "q": "¿Disfrutas más un libro por sus frases o por su trama?",
+     "c": "Copia una frase de un libro que te parezca bellamente escrita."
+    },
+    "fr": {
+     "t": "La fiction littéraire",
+     "g": "Explore des livres portés par les personnages, le style et les idées.",
+     "p": [
+      "La fiction littéraire prise la belle langue et les personnages profonds plus que les rebondissements.",
+      "Jane Austen, Gabriel García Márquez et Kazuo Ishiguro en sont des exemples célèbres.",
+      "Ces livres récompensent souvent la lecture lente et la discussion."
+     ],
+     "q": "Aimes-tu un livre davantage pour ses phrases ou pour son intrigue ?",
+     "c": "Recopie une phrase d'un livre que tu trouves magnifiquement écrite."
+    },
+    "it": {
+     "t": "La narrativa letteraria",
+     "g": "Esplora libri guidati da personaggi, stile e idee.",
+     "p": [
+      "La narrativa letteraria apprezza la bella lingua e i personaggi profondi più dei colpi di scena.",
+      "Jane Austen, Gabriel García Márquez e Kazuo Ishiguro ne sono esempi celebri.",
+      "Questi libri spesso premiano la lettura lenta e la conversazione."
+     ],
+     "q": "Apprezzi di più un libro per le frasi o per la trama?",
+     "c": "Copia una frase di un libro che trovi scritta magnificamente."
+    },
+    "pt": {
+     "t": "Ficção literária",
+     "g": "Explora livros guiados por personagens, estilo e ideias.",
+     "p": [
+      "A ficção literária valoriza a bela linguagem e personagens profundas mais do que reviravoltas.",
+      "Jane Austen, Gabriel García Márquez e Kazuo Ishiguro são exemplos celebrados.",
+      "Estes livros costumam premiar a leitura lenta e a conversa."
+     ],
+     "q": "Gostas mais de um livro pelas frases ou pelo enredo?",
+     "c": "Copia uma frase de um livro que consideres lindamente escrita."
+    },
+    "pt_BR": {
+     "t": "Ficção literária",
+     "g": "Explore livros guiados por personagens, estilo e ideias.",
+     "p": [
+      "A ficção literária valoriza a bela linguagem e personagens profundos mais do que reviravoltas.",
+      "Jane Austen, Gabriel García Márquez e Kazuo Ishiguro são exemplos celebrados.",
+      "Esses livros costumam premiar a leitura lenta e a conversa."
+     ],
+     "q": "Você gosta mais de um livro pelas frases ou pelo enredo?",
+     "c": "Copie uma frase de um livro que você acha lindamente escrita."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Memoirs and autobiographies",
+     "g": "Read true life stories told by the people who lived them.",
+     "p": [
+      "A memoir shares memories of a part of life; an autobiography covers a whole life.",
+      "Gerald Durrell's My Family and Other Animals is a funny memoir of a childhood in Corfu.",
+      "Trevor Noah's Born a Crime shares growing up in South Africa with humour and heart."
+     ],
+     "q": "Whose life story would you most like to read?",
+     "c": "Write a five-line memory from your own life, as a tiny memoir."
+    },
+    "de": {
+     "t": "Memoiren und Autobiografien",
+     "g": "Lies wahre Lebensgeschichten, erzählt von denen, die sie erlebten.",
+     "p": [
+      "Memoiren erzählen von einem Lebensabschnitt; eine Autobiografie umfasst ein ganzes Leben.",
+      "Gerald Durrells Meine Familie und andere Tiere ist eine lustige Kindheit auf Korfu.",
+      "Trevor Noahs Farbenblind erzählt mit Humor und Herz vom Aufwachsen in Südafrika."
+     ],
+     "q": "Wessen Lebensgeschichte würdest du am liebsten lesen?",
+     "c": "Schreibe eine Erinnerung aus deinem Leben in fünf Zeilen als kleine Memoiren."
+    },
+    "es": {
+     "t": "Memorias y autobiografías",
+     "g": "Lee historias de vida reales contadas por quienes las vivieron.",
+     "p": [
+      "Una memoria cuenta una parte de la vida; una autobiografía abarca toda una vida.",
+      "Mi familia y otros animales, de Gerald Durrell, es una divertida infancia en Corfú.",
+      "Born a Crime, de Trevor Noah, cuenta con humor y corazón su infancia en Sudáfrica."
+     ],
+     "q": "¿De quién te gustaría más leer la vida?",
+     "c": "Escribe un recuerdo de tu vida en cinco líneas, como una mini memoria."
+    },
+    "fr": {
+     "t": "Mémoires et autobiographies",
+     "g": "Lis des histoires vraies racontées par ceux qui les ont vécues.",
+     "p": [
+      "Un mémoire raconte une partie de la vie ; une autobiographie couvre une vie entière.",
+      "Ma famille et autres animaux de Gerald Durrell est une drôle d'enfance à Corfou.",
+      "Born a Crime de Trevor Noah raconte avec humour et cœur son enfance en Afrique du Sud."
+     ],
+     "q": "De qui aimerais-tu le plus lire la vie ?",
+     "c": "Écris un souvenir de ta vie en cinq lignes, comme un mini-mémoire."
+    },
+    "it": {
+     "t": "Memorie e autobiografie",
+     "g": "Leggi storie di vita vera raccontate da chi le ha vissute.",
+     "p": [
+      "Un memoir racconta una parte della vita; un'autobiografia abbraccia una vita intera.",
+      "La mia famiglia e altri animali di Gerald Durrell è una divertente infanzia a Corfù.",
+      "Born a Crime di Trevor Noah racconta con umorismo e cuore l'infanzia in Sudafrica."
+     ],
+     "q": "La vita di chi ti piacerebbe leggere di più?",
+     "c": "Scrivi un ricordo della tua vita in cinque righe, come mini memoir."
+    },
+    "pt": {
+     "t": "Memórias e autobiografias",
+     "g": "Lê histórias de vida reais contadas por quem as viveu.",
+     "p": [
+      "Umas memórias contam parte da vida; uma autobiografia abrange uma vida inteira.",
+      "A Minha Família e Outros Animais, de Gerald Durrell, é uma infância divertida em Corfu.",
+      "Born a Crime, de Trevor Noah, conta com humor e coração a infância na África do Sul."
+     ],
+     "q": "A vida de quem gostarias mais de ler?",
+     "c": "Escreve uma recordação da tua vida em cinco linhas, como mini memórias."
+    },
+    "pt_BR": {
+     "t": "Memórias e autobiografias",
+     "g": "Leia histórias de vida reais contadas por quem as viveu.",
+     "p": [
+      "Memórias contam parte da vida; uma autobiografia abrange uma vida inteira.",
+      "Minha Família e Outros Bichos, de Gerald Durrell, é uma infância divertida em Corfu.",
+      "Born a Crime, de Trevor Noah, conta com humor e coração a infância na África do Sul."
+     ],
+     "q": "A vida de quem você mais gostaria de ler?",
+     "c": "Escreva uma lembrança da sua vida em cinco linhas, como mini memórias."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Biographies",
+     "g": "Learn how researchers tell the lives of famous people.",
+     "p": [
+      "A biography is a life story written by someone else, based on research.",
+      "James Boswell's Life of Samuel Johnson, from 1791, is a famous early example.",
+      "Modern biographers use letters, diaries and archives to bring a person to life."
+     ],
+     "q": "Whose life would make a fascinating biography?",
+     "c": "Pick a historical figure and find three facts from a reliable short profile."
+    },
+    "de": {
+     "t": "Biografien",
+     "g": "Lerne, wie Forscher das Leben berühmter Menschen erzählen.",
+     "p": [
+      "Eine Biografie ist eine von jemand anderem geschriebene Lebensgeschichte auf Basis von Recherche.",
+      "James Boswells Life of Samuel Johnson von 1791 ist ein berühmtes frühes Beispiel.",
+      "Moderne Biografen nutzen Briefe, Tagebücher und Archive, um eine Person lebendig zu machen."
+     ],
+     "q": "Wessen Leben gäbe eine spannende Biografie ab?",
+     "c": "Wähle eine historische Person und finde drei Fakten in einem verlässlichen Kurzporträt."
+    },
+    "es": {
+     "t": "Biografías",
+     "g": "Aprende cómo los investigadores narran la vida de personas famosas.",
+     "p": [
+      "Una biografía es una historia de vida escrita por otra persona, basada en investigación.",
+      "Life of Samuel Johnson, de James Boswell, de 1791, es un famoso ejemplo temprano.",
+      "Los biógrafos actuales usan cartas, diarios y archivos para dar vida a una persona."
+     ],
+     "q": "¿La vida de quién daría una biografía fascinante?",
+     "c": "Elige a un personaje histórico y halla tres datos en un perfil breve fiable."
+    },
+    "fr": {
+     "t": "Les biographies",
+     "g": "Apprends comment les chercheurs racontent la vie de personnes célèbres.",
+     "p": [
+      "Une biographie est une vie racontée par quelqu'un d'autre, à partir de recherches.",
+      "La Vie de Samuel Johnson de James Boswell, de 1791, en est un célèbre exemple ancien.",
+      "Les biographes modernes utilisent lettres, journaux et archives pour faire vivre une personne."
+     ],
+     "q": "La vie de qui ferait une biographie fascinante ?",
+     "c": "Choisis une figure historique et trouve trois faits dans un court portrait fiable."
+    },
+    "it": {
+     "t": "Le biografie",
+     "g": "Impara come i ricercatori raccontano la vita di persone famose.",
+     "p": [
+      "Una biografia è una storia di vita scritta da altri, basata su ricerche.",
+      "Vita di Samuel Johnson di James Boswell, del 1791, è un celebre esempio antico.",
+      "I biografi moderni usano lettere, diari e archivi per dare vita a una persona."
+     ],
+     "q": "La vita di chi darebbe una biografia affascinante?",
+     "c": "Scegli un personaggio storico e trova tre fatti in un breve profilo affidabile."
+    },
+    "pt": {
+     "t": "As biografias",
+     "g": "Aprende como os investigadores contam a vida de pessoas famosas.",
+     "p": [
+      "Uma biografia é uma história de vida escrita por outra pessoa, com base em pesquisa.",
+      "A Vida de Samuel Johnson, de James Boswell, de 1791, é um famoso exemplo antigo.",
+      "Os biógrafos modernos usam cartas, diários e arquivos para dar vida a uma pessoa."
+     ],
+     "q": "A vida de quem daria uma biografia fascinante?",
+     "c": "Escolhe uma figura histórica e encontra três factos num perfil breve e fiável."
+    },
+    "pt_BR": {
+     "t": "As biografias",
+     "g": "Aprenda como pesquisadores contam a vida de pessoas famosas.",
+     "p": [
+      "Uma biografia é uma história de vida escrita por outra pessoa, com base em pesquisa.",
+      "A Vida de Samuel Johnson, de James Boswell, de 1791, é um famoso exemplo antigo.",
+      "Biógrafos modernos usam cartas, diários e arquivos para dar vida a uma pessoa."
+     ],
+     "q": "A vida de quem daria uma biografia fascinante?",
+     "c": "Escolha uma figura histórica e encontre três fatos num perfil breve e confiável."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Popular science books",
+     "g": "Discover books that explain the universe and nature for everyone.",
+     "p": [
+      "Carl Sagan's Cosmos, from 1980, made astronomy a story of wonder.",
+      "Stephen Hawking's A Brief History of Time, from 1988, sold millions of copies.",
+      "Great science writers use stories and analogies instead of jargon."
+     ],
+     "q": "What scientific question would you love a book to answer?",
+     "c": "Write one question about nature or space and find a book that tackles it."
+    },
+    "de": {
+     "t": "Populärwissenschaftliche Bücher",
+     "g": "Entdecke Bücher, die Universum und Natur für alle erklären.",
+     "p": [
+      "Carl Sagans Cosmos von 1980 machte Astronomie zu einer Geschichte des Staunens.",
+      "Stephen Hawkings Eine kurze Geschichte der Zeit von 1988 verkaufte sich millionenfach.",
+      "Gute Wissenschaftsautoren nutzen Geschichten und Vergleiche statt Fachjargon."
+     ],
+     "q": "Welche wissenschaftliche Frage soll ein Buch dir beantworten?",
+     "c": "Schreibe eine Frage über Natur oder Weltall auf und finde ein Buch dazu."
+    },
+    "es": {
+     "t": "Libros de divulgación científica",
+     "g": "Descubre libros que explican el universo y la naturaleza para todos.",
+     "p": [
+      "Cosmos, de Carl Sagan, de 1980, convirtió la astronomía en una historia de asombro.",
+      "Breve historia del tiempo, de Stephen Hawking, de 1988, vendió millones de ejemplares.",
+      "Los buenos divulgadores usan historias y analogías en lugar de jerga."
+     ],
+     "q": "¿Qué pregunta científica te gustaría que respondiera un libro?",
+     "c": "Escribe una pregunta sobre la naturaleza o el espacio y busca un libro que la trate."
+    },
+    "fr": {
+     "t": "Les livres de vulgarisation scientifique",
+     "g": "Découvre des livres qui expliquent l'univers et la nature à tous.",
+     "p": [
+      "Cosmos de Carl Sagan, en 1980, a fait de l'astronomie une histoire d'émerveillement.",
+      "Une brève histoire du temps de Stephen Hawking, en 1988, s'est vendu à des millions d'exemplaires.",
+      "Les grands vulgarisateurs usent d'histoires et d'analogies plutôt que de jargon."
+     ],
+     "q": "Quelle question scientifique aimerais-tu qu'un livre résolve ?",
+     "c": "Écris une question sur la nature ou l'espace et trouve un livre qui l'aborde."
+    },
+    "it": {
+     "t": "I libri di divulgazione scientifica",
+     "g": "Scopri libri che spiegano l'universo e la natura a tutti.",
+     "p": [
+      "Cosmos di Carl Sagan, del 1980, fece dell'astronomia una storia di meraviglia.",
+      "Dal Big Bang ai buchi neri di Stephen Hawking, del 1988, vendette milioni di copie.",
+      "I grandi divulgatori usano storie e analogie invece del gergo."
+     ],
+     "q": "A quale domanda scientifica vorresti che un libro rispondesse?",
+     "c": "Scrivi una domanda sulla natura o sullo spazio e trova un libro che la tratti."
+    },
+    "pt": {
+     "t": "Livros de divulgação científica",
+     "g": "Descobre livros que explicam o universo e a natureza a todos.",
+     "p": [
+      "Cosmos, de Carl Sagan, de 1980, fez da astronomia uma história de espanto.",
+      "Breve História do Tempo, de Stephen Hawking, de 1988, vendeu milhões de exemplares.",
+      "Os bons divulgadores usam histórias e analogias em vez de jargão."
+     ],
+     "q": "A que pergunta científica gostarias que um livro respondesse?",
+     "c": "Escreve uma pergunta sobre a natureza ou o espaço e encontra um livro que a trate."
+    },
+    "pt_BR": {
+     "t": "Livros de divulgação científica",
+     "g": "Descubra livros que explicam o universo e a natureza para todos.",
+     "p": [
+      "Cosmos, de Carl Sagan, de 1980, fez da astronomia uma história de encantamento.",
+      "Uma Breve História do Tempo, de Stephen Hawking, de 1988, vendeu milhões de exemplares.",
+      "Bons divulgadores usam histórias e analogias em vez de jargão."
+     ],
+     "q": "Que pergunta científica você gostaria que um livro respondesse?",
+     "c": "Escreva uma pergunta sobre a natureza ou o espaço e ache um livro que a trate."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "History books for curious readers",
+     "g": "Find narrative history that reads like a story.",
+     "p": [
+      "Narrative history tells the past as a story with people, places and turning points.",
+      "Herodotus, the ancient Greek, is called the father of history for his travelling inquiries.",
+      "Modern books like Yuval Noah Harari's Sapiens cover huge spans of time."
+     ],
+     "q": "Which period of history makes you most curious?",
+     "c": "Choose one era and read a short article, then write one surprising fact."
+    },
+    "de": {
+     "t": "Geschichtsbücher für Neugierige",
+     "g": "Finde erzählende Geschichte, die sich wie ein Roman liest.",
+     "p": [
+      "Erzählende Geschichtsschreibung erzählt die Vergangenheit mit Menschen, Orten und Wendepunkten.",
+      "Herodot, der antike Grieche, gilt wegen seiner Forschungsreisen als Vater der Geschichtsschreibung.",
+      "Moderne Bücher wie Yuval Noah Hararis Eine kurze Geschichte der Menschheit umspannen riesige Zeiträume."
+     ],
+     "q": "Welche Epoche der Geschichte macht dich am neugierigsten?",
+     "c": "Wähle eine Epoche, lies einen kurzen Artikel und schreibe eine überraschende Tatsache auf."
+    },
+    "es": {
+     "t": "Libros de historia para curiosos",
+     "g": "Encuentra historia narrativa que se lee como un cuento.",
+     "p": [
+      "La historia narrativa cuenta el pasado como un relato con personas, lugares y giros.",
+      "Heródoto, el griego antiguo, es llamado padre de la historia por sus viajes de investigación.",
+      "Libros modernos como De animales a dioses, de Yuval Noah Harari, abarcan enormes periodos."
+     ],
+     "q": "¿Qué época de la historia te despierta más curiosidad?",
+     "c": "Elige una época, lee un artículo breve y escribe un dato sorprendente."
+    },
+    "fr": {
+     "t": "Livres d'histoire pour curieux",
+     "g": "Trouve une histoire narrative qui se lit comme un récit.",
+     "p": [
+      "L'histoire narrative raconte le passé comme un récit avec gens, lieux et tournants.",
+      "Hérodote, le Grec antique, est appelé père de l'histoire pour ses enquêtes voyageuses.",
+      "Des livres modernes comme Sapiens de Yuval Noah Harari couvrent d'immenses durées."
+     ],
+     "q": "Quelle période de l'histoire te rend le plus curieux ?",
+     "c": "Choisis une époque, lis un court article et écris un fait surprenant."
+    },
+    "it": {
+     "t": "Libri di storia per curiosi",
+     "g": "Trova una storia narrativa che si legge come un racconto.",
+     "p": [
+      "La storia narrativa racconta il passato come una vicenda con persone, luoghi e svolte.",
+      "Erodoto, l'antico greco, è detto padre della storia per le sue indagini viaggiando.",
+      "Libri moderni come Sapiens di Yuval Noah Harari coprono enormi spazi di tempo."
+     ],
+     "q": "Quale periodo storico ti incuriosisce di più?",
+     "c": "Scegli un'epoca, leggi un breve articolo e scrivi un fatto sorprendente."
+    },
+    "pt": {
+     "t": "Livros de história para curiosos",
+     "g": "Encontra história narrativa que se lê como um conto.",
+     "p": [
+      "A história narrativa conta o passado como um relato com pessoas, lugares e viragens.",
+      "Heródoto, o grego antigo, é chamado pai da história pelas suas viagens de investigação.",
+      "Livros modernos como Sapiens, de Yuval Noah Harari, cobrem enormes períodos."
+     ],
+     "q": "Que período da história mais te desperta curiosidade?",
+     "c": "Escolhe uma época, lê um artigo breve e escreve um facto surpreendente."
+    },
+    "pt_BR": {
+     "t": "Livros de história para curiosos",
+     "g": "Encontre história narrativa que se lê como um conto.",
+     "p": [
+      "A história narrativa conta o passado como um relato com pessoas, lugares e viradas.",
+      "Heródoto, o grego antigo, é chamado de pai da história por suas viagens de investigação.",
+      "Livros modernos como Sapiens, de Yuval Noah Harari, cobrem enormes períodos."
+     ],
+     "q": "Que período da história mais desperta sua curiosidade?",
+     "c": "Escolha uma época, leia um artigo curto e escreva um fato surpreendente."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Travel writing",
+     "g": "Journey to faraway places through a writer's eyes.",
+     "p": [
+      "Travel writing mixes places, people and the writer's own surprises.",
+      "Ibn Battuta's Rihla describes his journeys across the medieval world.",
+      "Modern authors like Bruce Chatwin and Bill Bryson add humour and curiosity."
+     ],
+     "q": "Which place would you love to read about before visiting?",
+     "c": "Read a short travel passage and list three sensory details it uses."
+    },
+    "de": {
+     "t": "Reiseliteratur",
+     "g": "Reise durch die Augen eines Autors an ferne Orte.",
+     "p": [
+      "Reiseliteratur mischt Orte, Menschen und die Überraschungen des Autors selbst.",
+      "Ibn Battutas Rihla beschreibt seine Reisen durch die mittelalterliche Welt.",
+      "Moderne Autoren wie Bruce Chatwin und Bill Bryson fügen Humor und Neugier hinzu."
+     ],
+     "q": "Über welchen Ort würdest du gern lesen, bevor du ihn besuchst?",
+     "c": "Lies eine kurze Reisepassage und liste drei Sinnesdetails darin auf."
+    },
+    "es": {
+     "t": "Literatura de viajes",
+     "g": "Viaja a lugares lejanos con los ojos de un escritor.",
+     "p": [
+      "La literatura de viajes mezcla lugares, gente y las sorpresas del propio autor.",
+      "La Rihla de Ibn Battuta describe sus viajes por el mundo medieval.",
+      "Autores modernos como Bruce Chatwin y Bill Bryson añaden humor y curiosidad."
+     ],
+     "q": "¿Sobre qué lugar te gustaría leer antes de visitarlo?",
+     "c": "Lee un breve pasaje de viajes y anota tres detalles sensoriales que use."
+    },
+    "fr": {
+     "t": "La littérature de voyage",
+     "g": "Voyage vers des lieux lointains par les yeux d'un écrivain.",
+     "p": [
+      "La littérature de voyage mêle lieux, gens et surprises de l'auteur.",
+      "La Rihla d'Ibn Battûta décrit ses voyages à travers le monde médiéval.",
+      "Des auteurs modernes comme Bruce Chatwin et Bill Bryson ajoutent humour et curiosité."
+     ],
+     "q": "Sur quel lieu aimerais-tu lire avant de le visiter ?",
+     "c": "Lis un court passage de voyage et note trois détails sensoriels qu'il utilise."
+    },
+    "it": {
+     "t": "La letteratura di viaggio",
+     "g": "Viaggia verso luoghi lontani con gli occhi di uno scrittore.",
+     "p": [
+      "La letteratura di viaggio mescola luoghi, persone e le sorprese dell'autore.",
+      "La Rihla di Ibn Battuta descrive i suoi viaggi nel mondo medievale.",
+      "Autori moderni come Bruce Chatwin e Bill Bryson aggiungono umorismo e curiosità."
+     ],
+     "q": "Su quale luogo ti piacerebbe leggere prima di visitarlo?",
+     "c": "Leggi un breve passo di viaggio e annota tre dettagli sensoriali che usa."
+    },
+    "pt": {
+     "t": "A literatura de viagens",
+     "g": "Viaja até lugares distantes através dos olhos de um escritor.",
+     "p": [
+      "A literatura de viagens mistura lugares, pessoas e as surpresas do próprio autor.",
+      "A Rihla de Ibn Battuta descreve as suas viagens pelo mundo medieval.",
+      "Autores modernos como Bruce Chatwin e Bill Bryson acrescentam humor e curiosidade."
+     ],
+     "q": "Sobre que lugar gostarias de ler antes de o visitar?",
+     "c": "Lê um breve trecho de viagem e anota três detalhes sensoriais que usa."
+    },
+    "pt_BR": {
+     "t": "A literatura de viagem",
+     "g": "Viaje a lugares distantes pelos olhos de um escritor.",
+     "p": [
+      "A literatura de viagem mistura lugares, pessoas e as surpresas do próprio autor.",
+      "A Rihla de Ibn Battuta descreve suas viagens pelo mundo medieval.",
+      "Autores modernos como Bruce Chatwin e Bill Bryson acrescentam humor e curiosidade."
+     ],
+     "q": "Sobre que lugar você gostaria de ler antes de visitar?",
+     "c": "Leia um breve trecho de viagem e anote três detalhes sensoriais que ele usa."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Self-help and personal growth",
+     "g": "Read self-improvement books critically and keep what helps.",
+     "p": [
+      "Self-help books offer ideas for habits, confidence and relationships.",
+      "Samuel Smiles published Self-Help in 1859, and Dale Carnegie wrote a famous people-skills book in 1936.",
+      "Try one idea at a time and keep only what works for your life."
+     ],
+     "q": "Which idea from a book has most helped you in daily life?",
+     "c": "Choose one tip from any book and test it for three days."
+    },
+    "de": {
+     "t": "Ratgeber und persönliche Entwicklung",
+     "g": "Lies Selbsthilfebücher kritisch und behalte, was dir hilft.",
+     "p": [
+      "Ratgeber bieten Ideen zu Gewohnheiten, Selbstvertrauen und Beziehungen.",
+      "Samuel Smiles veröffentlichte 1859 Self-Help, und Dale Carnegie schrieb 1936 einen berühmten Ratgeber für den Umgang mit Menschen.",
+      "Probiere eine Idee nach der anderen und behalte nur, was zu deinem Leben passt."
+     ],
+     "q": "Welche Idee aus einem Buch hat dir im Alltag am meisten geholfen?",
+     "c": "Wähle einen Tipp aus irgendeinem Buch und teste ihn drei Tage lang."
+    },
+    "es": {
+     "t": "Autoayuda y crecimiento personal",
+     "g": "Lee libros de superación con criterio y quédate con lo que ayuda.",
+     "p": [
+      "Los libros de autoayuda ofrecen ideas sobre hábitos, confianza y relaciones.",
+      "Samuel Smiles publicó Self-Help en 1859, y Dale Carnegie escribió un famoso libro sobre trato con la gente en 1936.",
+      "Prueba una idea cada vez y quédate solo con lo que funcione en tu vida."
+     ],
+     "q": "¿Qué idea de un libro te ha ayudado más en el día a día?",
+     "c": "Elige un consejo de cualquier libro y pruébalo durante tres días."
+    },
+    "fr": {
+     "t": "Développement personnel",
+     "g": "Lis les livres de développement personnel avec esprit critique et garde ce qui aide.",
+     "p": [
+      "Ces livres proposent des idées sur les habitudes, la confiance et les relations.",
+      "Samuel Smiles publia Self-Help en 1859, et Dale Carnegie écrivit un célèbre livre sur les relations en 1936.",
+      "Essaie une idée à la fois et garde seulement ce qui marche pour toi."
+     ],
+     "q": "Quelle idée d'un livre t'a le plus aidé au quotidien ?",
+     "c": "Choisis un conseil dans un livre quelconque et teste-le trois jours."
+    },
+    "it": {
+     "t": "Crescita personale e self-help",
+     "g": "Leggi i libri di crescita personale con spirito critico e tieni ciò che aiuta.",
+     "p": [
+      "I libri di self-help offrono idee su abitudini, fiducia e relazioni.",
+      "Samuel Smiles pubblicò Self-Help nel 1859, e Dale Carnegie scrisse un famoso libro sulle relazioni nel 1936.",
+      "Prova un'idea alla volta e tieni solo ciò che funziona per la tua vita."
+     ],
+     "q": "Quale idea di un libro ti ha aiutato di più ogni giorno?",
+     "c": "Scegli un consiglio da un libro qualsiasi e provalo per tre giorni."
+    },
+    "pt": {
+     "t": "Autoajuda e crescimento pessoal",
+     "g": "Lê livros de autoajuda com sentido crítico e guarda o que ajuda.",
+     "p": [
+      "Os livros de autoajuda oferecem ideias sobre hábitos, confiança e relações.",
+      "Samuel Smiles publicou Self-Help em 1859, e Dale Carnegie escreveu um famoso livro sobre relações em 1936.",
+      "Experimenta uma ideia de cada vez e guarda só o que funciona na tua vida."
+     ],
+     "q": "Que ideia de um livro mais te ajudou no dia a dia?",
+     "c": "Escolhe uma dica de qualquer livro e testa-a durante três dias."
+    },
+    "pt_BR": {
+     "t": "Autoajuda e crescimento pessoal",
+     "g": "Leia livros de autoajuda com senso crítico e fique com o que ajuda.",
+     "p": [
+      "Livros de autoajuda oferecem ideias sobre hábitos, confiança e relações.",
+      "Samuel Smiles publicou Self-Help em 1859, e Dale Carnegie escreveu um famoso livro sobre relações em 1936.",
+      "Teste uma ideia de cada vez e fique só com o que funciona na sua vida."
+     ],
+     "q": "Que ideia de um livro mais ajudou você no dia a dia?",
+     "c": "Escolha uma dica de qualquer livro e teste por três dias."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Essays: thinking on the page",
+     "g": "Meet the short, personal form of the essay.",
+     "p": [
+      "Michel de Montaigne, in France in the 1500s, invented the modern essay with his Essais.",
+      "An essay explores one idea in a personal, curious voice.",
+      "Virginia Woolf and Sei Shonagon in Japan show how varied essays can be."
+     ],
+     "q": "What everyday topic would you enjoy writing a short essay about?",
+     "c": "Write five sentences exploring one small idea, like why you love mornings."
+    },
+    "de": {
+     "t": "Essays: Denken auf Papier",
+     "g": "Lerne die kurze, persönliche Form des Essays kennen.",
+     "p": [
+      "Michel de Montaigne erfand im Frankreich des 16. Jahrhunderts mit seinen Essais den modernen Essay.",
+      "Ein Essay erkundet eine Idee in persönlicher, neugieriger Stimme.",
+      "Virginia Woolf und Sei Shōnagon in Japan zeigen, wie vielfältig Essays sein können."
+     ],
+     "q": "Über welches Alltagsthema würdest du gern einen kurzen Essay schreiben?",
+     "c": "Schreibe fünf Sätze über eine kleine Idee, etwa warum du Morgen liebst."
+    },
+    "es": {
+     "t": "Ensayos: pensar sobre la página",
+     "g": "Conoce la forma breve y personal del ensayo.",
+     "p": [
+      "Michel de Montaigne, en la Francia del siglo XVI, inventó el ensayo moderno con sus Ensayos.",
+      "Un ensayo explora una idea con una voz personal y curiosa.",
+      "Virginia Woolf y Sei Shonagon en Japón muestran lo variados que pueden ser."
+     ],
+     "q": "¿Sobre qué tema cotidiano disfrutarías escribiendo un ensayo breve?",
+     "c": "Escribe cinco frases sobre una idea pequeña, como por qué te gustan las mañanas."
+    },
+    "fr": {
+     "t": "L'essai : penser sur la page",
+     "g": "Découvre la forme brève et personnelle de l'essai.",
+     "p": [
+      "Michel de Montaigne, dans la France du XVIe siècle, a inventé l'essai moderne avec ses Essais.",
+      "Un essai explore une idée d'une voix personnelle et curieuse.",
+      "Virginia Woolf et Sei Shōnagon au Japon montrent la variété des essais."
+     ],
+     "q": "Sur quel sujet du quotidien aimerais-tu écrire un court essai ?",
+     "c": "Écris cinq phrases sur une petite idée, comme pourquoi tu aimes les matins."
+    },
+    "it": {
+     "t": "Il saggio breve: pensare sulla pagina",
+     "g": "Scopri la forma breve e personale dell'essay.",
+     "p": [
+      "Michel de Montaigne, nella Francia del Cinquecento, inventò il saggio moderno con i suoi Saggi.",
+      "Un essay esplora un'idea con una voce personale e curiosa.",
+      "Virginia Woolf e Sei Shōnagon in Giappone mostrano quanto possano variare."
+     ],
+     "q": "Su quale tema quotidiano ti piacerebbe scrivere un breve saggio?",
+     "c": "Scrivi cinque frasi su una piccola idea, come perché ami le mattine."
+    },
+    "pt": {
+     "t": "O ensaio: pensar na página",
+     "g": "Conhece a forma breve e pessoal do ensaio.",
+     "p": [
+      "Michel de Montaigne, na França do século XVI, inventou o ensaio moderno com os seus Ensaios.",
+      "Um ensaio explora uma ideia com uma voz pessoal e curiosa.",
+      "Virginia Woolf e Sei Shōnagon no Japão mostram como os ensaios podem ser variados."
+     ],
+     "q": "Sobre que tema do dia a dia gostarias de escrever um ensaio breve?",
+     "c": "Escreve cinco frases sobre uma ideia pequena, como porque gostas das manhãs."
+    },
+    "pt_BR": {
+     "t": "O ensaio: pensar na página",
+     "g": "Conheça a forma breve e pessoal do ensaio.",
+     "p": [
+      "Michel de Montaigne, na França do século XVI, inventou o ensaio moderno com seus Ensaios.",
+      "Um ensaio explora uma ideia com uma voz pessoal e curiosa.",
+      "Virginia Woolf e Sei Shōnagon no Japão mostram como os ensaios podem ser variados."
+     ],
+     "q": "Sobre que tema do dia a dia você gostaria de escrever um ensaio breve?",
+     "c": "Escreva cinco frases sobre uma ideia pequena, como por que você ama as manhãs."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "mindfulness",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The five senses check-in",
+     "g": "Name one thing you notice with each sense to arrive in the present moment.",
+     "p": [
+      "Go through sight, hearing, smell, taste and touch one at a time.",
+      "Name just one thing for each sense; no need for long lists.",
+      "This quick check-in works anywhere, in under a minute."
+     ],
+     "q": "Which sense was easiest to notice today, and which was hardest?",
+     "c": "Do a five-senses check-in at a random moment this afternoon."
+    },
+    "de": {
+     "t": "Der Fünf-Sinne-Check",
+     "g": "Benenne mit jedem Sinn eine Wahrnehmung, um im Moment anzukommen.",
+     "p": [
+      "Gehe Sehen, Hören, Riechen, Schmecken und Fühlen nacheinander durch.",
+      "Nenne pro Sinn nur eine Sache; lange Listen sind unnötig.",
+      "Dieser schnelle Check klappt überall in unter einer Minute."
+     ],
+     "q": "Welchen Sinn konntest du heute am leichtesten wahrnehmen, welchen am schwersten?",
+     "c": "Mach heute Nachmittag zu einem beliebigen Zeitpunkt einen Fünf-Sinne-Check."
+    },
+    "es": {
+     "t": "El chequeo de los cinco sentidos",
+     "g": "Nombra algo que notes con cada sentido para llegar al momento presente.",
+     "p": [
+      "Recorre vista, oído, olfato, gusto y tacto uno a uno.",
+      "Nombra solo una cosa por sentido; no hacen falta listas largas.",
+      "Este chequeo rápido sirve en cualquier lugar, en menos de un minuto."
+     ],
+     "q": "¿Qué sentido te resultó más fácil hoy y cuál más difícil?",
+     "c": "Haz un chequeo de cinco sentidos en un momento al azar esta tarde."
+    },
+    "fr": {
+     "t": "Le bilan des cinq sens",
+     "g": "Nomme une chose perçue avec chaque sens pour arriver dans le moment présent.",
+     "p": [
+      "Passe en revue la vue, l'ouïe, l'odorat, le goût et le toucher, un à un.",
+      "Nomme une seule chose par sens; pas besoin de longues listes.",
+      "Ce bilan rapide marche partout, en moins d'une minute."
+     ],
+     "q": "Quel sens était le plus facile à percevoir aujourd'hui, et lequel le plus difficile ?",
+     "c": "Fais un bilan des cinq sens à un moment aléatoire cet après-midi."
+    },
+    "it": {
+     "t": "Il check-in dei cinque sensi",
+     "g": "Nomina una cosa che noti con ogni senso per arrivare nel momento presente.",
+     "p": [
+      "Passa in rassegna vista, udito, olfatto, gusto e tatto, uno alla volta.",
+      "Nomina una sola cosa per senso; niente liste lunghe.",
+      "Questo check-in rapido funziona ovunque, in meno di un minuto."
+     ],
+     "q": "Quale senso è stato più facile da notare oggi e quale più difficile?",
+     "c": "Fai un check-in dei cinque sensi in un momento a caso nel pomeriggio."
+    },
+    "pt": {
+     "t": "O ponto de situação dos cinco sentidos",
+     "g": "Nomeia uma coisa que notes com cada sentido para chegares ao momento presente.",
+     "p": [
+      "Percorre visão, audição, olfato, paladar e tato, um de cada vez.",
+      "Nomeia só uma coisa por sentido; não são precisas listas longas.",
+      "Este ponto de situação rápido serve em qualquer lado, em menos de um minuto."
+     ],
+     "q": "Que sentido foi mais fácil de notar hoje e qual foi o mais difícil?",
+     "c": "Faz um ponto de situação dos cinco sentidos num momento qualquer desta tarde."
+    },
+    "pt_BR": {
+     "t": "O check-in dos cinco sentidos",
+     "g": "Nomeie uma coisa que você percebe com cada sentido para chegar ao momento presente.",
+     "p": [
+      "Passe por visão, audição, olfato, paladar e tato, um de cada vez.",
+      "Nomeie só uma coisa por sentido; não precisa de listas longas.",
+      "Esse check-in rápido funciona em qualquer lugar, em menos de um minuto."
+     ],
+     "q": "Qual sentido foi mais fácil de perceber hoje e qual foi o mais difícil?",
+     "c": "Faça um check-in dos cinco sentidos num momento qualquer desta tarde."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Five-four-three-two-one grounding",
+     "g": "Play a simple counting game with your senses to steady attention in a busy moment.",
+     "p": [
+      "Notice five things you see, four you feel, three you hear.",
+      "Then two things you smell and one you taste, or one slow breath.",
+      "Go at your own pace and skip any step that feels unhelpful."
+     ],
+     "q": "Where would a quick grounding game help you most in your week?",
+     "c": "Try the five-to-one game once today, ideally at a busy moment."
+    },
+    "de": {
+     "t": "Fünf-vier-drei-zwei-eins-Erdung",
+     "g": "Spiele ein einfaches Sinnesspiel, um deine Aufmerksamkeit in hektischen Momenten zu beruhigen.",
+     "p": [
+      "Bemerke fünf Dinge, die du siehst, vier, die du fühlst, drei, die du hörst.",
+      "Dann zwei Gerüche und einen Geschmack oder einen langsamen Atemzug.",
+      "Geh in deinem Tempo und überspringe, was dir nicht hilft."
+     ],
+     "q": "Wo würde dir ein schnelles Erdungsspiel in deiner Woche am meisten helfen?",
+     "c": "Probiere das Fünf-bis-eins-Spiel heute einmal, am besten in einem hektischen Moment."
+    },
+    "es": {
+     "t": "Anclaje cinco-cuatro-tres-dos-uno",
+     "g": "Juega a contar con los sentidos para estabilizar la atención en un momento ajetreado.",
+     "p": [
+      "Nota cinco cosas que ves, cuatro que sientes y tres que oyes.",
+      "Luego dos olores y un sabor, o una respiración lenta.",
+      "Ve a tu ritmo y salta cualquier paso que no te ayude."
+     ],
+     "q": "¿Dónde te ayudaría más un juego rápido de anclaje esta semana?",
+     "c": "Prueba el juego de cinco a uno hoy, mejor en un momento ajetreado."
+    },
+    "fr": {
+     "t": "L'ancrage cinq-quatre-trois-deux-un",
+     "g": "Joue à compter avec tes sens pour stabiliser l'attention dans un moment agité.",
+     "p": [
+      "Remarque cinq choses vues, quatre ressenties, trois entendues.",
+      "Puis deux odeurs et un goût, ou une respiration lente.",
+      "Va à ton rythme et saute toute étape qui ne t'aide pas."
+     ],
+     "q": "Où un petit jeu d'ancrage t'aiderait-il le plus cette semaine ?",
+     "c": "Essaie le jeu de cinq à un aujourd'hui, idéalement dans un moment agité."
+    },
+    "it": {
+     "t": "Radicamento cinque-quattro-tre-due-uno",
+     "g": "Gioca a contare con i sensi per stabilizzare l'attenzione in un momento frenetico.",
+     "p": [
+      "Nota cinque cose che vedi, quattro che senti al tatto, tre che ascolti.",
+      "Poi due odori e un sapore, oppure un respiro lento.",
+      "Vai al tuo ritmo e salta ogni passaggio che non ti aiuta."
+     ],
+     "q": "Dove ti aiuterebbe di più un rapido gioco di radicamento questa settimana?",
+     "c": "Prova oggi il gioco da cinque a uno, meglio in un momento frenetico."
+    },
+    "pt": {
+     "t": "Ancoragem cinco-quatro-três-dois-um",
+     "g": "Joga a contar com os sentidos para firmar a atenção num momento agitado.",
+     "p": [
+      "Repara em cinco coisas que vês, quatro que sentes e três que ouves.",
+      "Depois dois cheiros e um sabor, ou uma respiração lenta.",
+      "Vai ao teu ritmo e salta qualquer passo que não ajude."
+     ],
+     "q": "Onde te ajudaria mais um jogo rápido de ancoragem esta semana?",
+     "c": "Experimenta o jogo de cinco a um hoje, de preferência num momento agitado."
+    },
+    "pt_BR": {
+     "t": "Ancoragem cinco-quatro-três-dois-um",
+     "g": "Brinque de contar com os sentidos para firmar a atenção num momento agitado.",
+     "p": [
+      "Perceba cinco coisas que vê, quatro que sente e três que ouve.",
+      "Depois dois cheiros e um gosto, ou uma respiração lenta.",
+      "Vá no seu ritmo e pule qualquer passo que não ajude."
+     ],
+     "q": "Onde um jogo rápido de ancoragem ajudaria mais na sua semana?",
+     "c": "Experimente o jogo de cinco a um hoje, de preferência num momento agitado."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mindful hand awareness",
+     "g": "Feel warmth, tingling and pressure in your hands for one minute.",
+     "p": [
+      "Rest your hands on your lap and bring attention to them.",
+      "Notice warmth, coolness, tingling, pulse or simply nothing special.",
+      "Whatever you feel, or do not feel, is fine; just stay curious."
+     ],
+     "q": "What sensations did you find in your hands that you usually ignore?",
+     "c": "Notice your hands three times today, for one breath each."
+    },
+    "de": {
+     "t": "Achtsame Handwahrnehmung",
+     "g": "Spüre eine Minute lang Wärme, Kribbeln und Druck in deinen Händen.",
+     "p": [
+      "Lege die Hände in den Schoß und richte die Aufmerksamkeit auf sie.",
+      "Bemerke Wärme, Kühle, Kribbeln, Puls oder einfach nichts Besonderes.",
+      "Alles, was du spürst oder nicht spürst, ist in Ordnung; bleib neugierig."
+     ],
+     "q": "Welche Empfindungen in deinen Händen hast du entdeckt, die du sonst übersiehst?",
+     "c": "Nimm heute dreimal deine Hände wahr, je einen Atemzug lang."
+    },
+    "es": {
+     "t": "Atención consciente a las manos",
+     "g": "Siente calidez, hormigueo y presión en tus manos durante un minuto.",
+     "p": [
+      "Apoya las manos en el regazo y lleva la atención a ellas.",
+      "Nota calor, frescor, hormigueo, pulso o simplemente nada especial.",
+      "Lo que sientas, o no sientas, está bien; mantén la curiosidad."
+     ],
+     "q": "¿Qué sensaciones encontraste en tus manos que sueles ignorar?",
+     "c": "Nota tus manos tres veces hoy, una respiración cada vez."
+    },
+    "fr": {
+     "t": "Attention consciente aux mains",
+     "g": "Sens la chaleur, les picotements et la pression dans tes mains pendant une minute.",
+     "p": [
+      "Pose les mains sur les cuisses et porte l'attention vers elles.",
+      "Remarque chaleur, fraîcheur, picotements, pouls ou simplement rien de spécial.",
+      "Ce que tu ressens, ou non, est très bien; reste curieux."
+     ],
+     "q": "Quelles sensations as-tu trouvées dans tes mains que tu ignores d'habitude ?",
+     "c": "Remarque tes mains trois fois aujourd'hui, le temps d'une respiration."
+    },
+    "it": {
+     "t": "Consapevolezza delle mani",
+     "g": "Senti calore, formicolio e pressione nelle mani per un minuto.",
+     "p": [
+      "Appoggia le mani in grembo e porta l'attenzione su di esse.",
+      "Nota calore, freschezza, formicolio, polso o semplicemente niente di speciale.",
+      "Qualunque cosa senti, o non senti, va bene; resta curioso."
+     ],
+     "q": "Quali sensazioni hai trovato nelle mani che di solito ignori?",
+     "c": "Nota le tue mani tre volte oggi, per un respiro ciascuna."
+    },
+    "pt": {
+     "t": "Atenção consciente às mãos",
+     "g": "Sente calor, formigueiro e pressão nas tuas mãos durante um minuto.",
+     "p": [
+      "Pousa as mãos no colo e leva a atenção até elas.",
+      "Repara em calor, frescura, formigueiro, pulso ou simplesmente nada de especial.",
+      "O que sentires, ou não sentires, está bem; mantém a curiosidade."
+     ],
+     "q": "Que sensações encontraste nas mãos que costumas ignorar?",
+     "c": "Repara nas tuas mãos três vezes hoje, uma respiração de cada vez."
+    },
+    "pt_BR": {
+     "t": "Atenção consciente às mãos",
+     "g": "Sinta calor, formigamento e pressão nas suas mãos por um minuto.",
+     "p": [
+      "Apoie as mãos no colo e leve a atenção até elas.",
+      "Perceba calor, frescor, formigamento, pulsação ou simplesmente nada de especial.",
+      "O que você sentir, ou não sentir, está bem; mantenha a curiosidade."
+     ],
+     "q": "Que sensações você encontrou nas mãos que costuma ignorar?",
+     "c": "Perceba suas mãos três vezes hoje, por uma respiração cada."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A short body scan",
+     "g": "Move attention slowly from the feet up to the head in about five minutes.",
+     "p": [
+      "Sit or lie comfortably and start with the feet.",
+      "Travel slowly through legs, belly, chest, arms, neck and head.",
+      "If a body area feels uncomfortable or numb, just move on; stop if it feels like too much."
+     ],
+     "q": "Which part of your body was easiest to feel, and which felt faint?",
+     "c": "Do a five-minute body scan today, lying down or in a chair."
+    },
+    "de": {
+     "t": "Ein kurzer Körperscan",
+     "g": "Wandere in etwa fünf Minuten mit der Aufmerksamkeit langsam von den Füßen zum Kopf.",
+     "p": [
+      "Setze oder lege dich bequem hin und beginne bei den Füßen.",
+      "Gehe langsam durch Beine, Bauch, Brust, Arme, Nacken und Kopf.",
+      "Fühlt sich eine Stelle unangenehm oder taub an, gehe weiter; stoppe bei Überforderung."
+     ],
+     "q": "Welcher Körperteil war am leichtesten zu spüren, welcher kaum?",
+     "c": "Mache heute einen Körperscan von fünf Minuten, liegend oder auf einem Stuhl."
+    },
+    "es": {
+     "t": "Un escáner corporal breve",
+     "g": "Mueve la atención despacio de los pies a la cabeza en unos cinco minutos.",
+     "p": [
+      "Siéntate o túmbate cómodo y empieza por los pies.",
+      "Recorre lentamente piernas, vientre, pecho, brazos, cuello y cabeza.",
+      "Si una zona incomoda o está dormida, sigue adelante; para si es demasiado."
+     ],
+     "q": "¿Qué parte del cuerpo sentiste con más facilidad y cuál apenas?",
+     "c": "Haz hoy un escáner corporal de cinco minutos, tumbado o en una silla."
+    },
+    "fr": {
+     "t": "Un court scan corporel",
+     "g": "Déplace lentement l'attention des pieds à la tête en environ cinq minutes.",
+     "p": [
+      "Installe-toi assis ou allongé et commence par les pieds.",
+      "Parcours lentement jambes, ventre, poitrine, bras, nuque et tête.",
+      "Si une zone gêne ou semble engourdie, passe à la suite; arrête si c'est trop."
+     ],
+     "q": "Quelle partie du corps était la plus facile à sentir, et laquelle était diffuse ?",
+     "c": "Fais aujourd'hui un scan corporel de cinq minutes, allongé ou sur une chaise."
+    },
+    "it": {
+     "t": "Un breve body scan",
+     "g": "Sposta l'attenzione lentamente dai piedi alla testa in circa cinque minuti.",
+     "p": [
+      "Siediti o sdraiati comodo e parti dai piedi.",
+      "Percorri piano gambe, pancia, petto, braccia, collo e testa.",
+      "Se una zona dà fastidio o è intorpidita, passa oltre; fermati se è troppo."
+     ],
+     "q": "Quale parte del corpo hai sentito più facilmente e quale appena?",
+     "c": "Oggi fai un body scan di cinque minuti, sdraiato o su una sedia."
+    },
+    "pt": {
+     "t": "Um breve body scan",
+     "g": "Move a atenção devagar dos pés até à cabeça em cerca de cinco minutos.",
+     "p": [
+      "Senta-te ou deita-te confortavelmente e começa pelos pés.",
+      "Percorre devagar pernas, barriga, peito, braços, pescoço e cabeça.",
+      "Se uma zona incomodar ou estiver dormente, segue em frente; pára se for demais."
+     ],
+     "q": "Que parte do corpo foi mais fácil de sentir e qual mal sentiste?",
+     "c": "Faz hoje um body scan de cinco minutos, deitado ou numa cadeira."
+    },
+    "pt_BR": {
+     "t": "Um body scan curto",
+     "g": "Mova a atenção devagar dos pés até a cabeça em cerca de cinco minutos.",
+     "p": [
+      "Sente-se ou deite-se confortavelmente e comece pelos pés.",
+      "Percorra devagar pernas, barriga, peito, braços, pescoço e cabeça.",
+      "Se uma região incomodar ou estiver dormente, siga adiante; pare se for demais."
+     ],
+     "q": "Que parte do corpo foi mais fácil de sentir e qual quase não sentiu?",
+     "c": "Faça hoje um body scan de cinco minutos, deitado ou numa cadeira."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Noticing tension",
+     "g": "Spot tightness in the shoulders, jaw or hands and let it soften.",
+     "p": [
+      "Scan quickly for tight spots: shoulders, jaw, hands, forehead.",
+      "Breathe out and imagine the tight area getting a little softer.",
+      "If it does not soften, that is fine; noticing is the practice."
+     ],
+     "q": "Where do you most often hold tension without realising it?",
+     "c": "Check your shoulders and jaw every time you sit down today."
+    },
+    "de": {
+     "t": "Anspannung bemerken",
+     "g": "Entdecke Verspannung in Schultern, Kiefer oder Händen und lass sie weicher werden.",
+     "p": [
+      "Suche kurz nach festen Stellen: Schultern, Kiefer, Hände, Stirn.",
+      "Atme aus und stelle dir vor, die Stelle wird ein wenig weicher.",
+      "Wird sie nicht weicher, ist das in Ordnung; Bemerken ist die Übung."
+     ],
+     "q": "Wo hältst du am häufigsten Anspannung, ohne es zu merken?",
+     "c": "Prüfe heute jedes Mal beim Hinsetzen Schultern und Kiefer."
+    },
+    "es": {
+     "t": "Notar la tensión",
+     "g": "Detecta rigidez en hombros, mandíbula o manos y deja que se suavice.",
+     "p": [
+      "Recorre rápido los puntos tensos: hombros, mandíbula, manos, frente.",
+      "Exhala e imagina que la zona se ablanda un poco.",
+      "Si no se suaviza, no pasa nada; notar es la práctica."
+     ],
+     "q": "¿Dónde sueles guardar tensión sin darte cuenta?",
+     "c": "Revisa hombros y mandíbula cada vez que te sientes hoy."
+    },
+    "fr": {
+     "t": "Remarquer les tensions",
+     "g": "Repère les raideurs dans les épaules, la mâchoire ou les mains et laisse-les s'adoucir.",
+     "p": [
+      "Balaie rapidement les zones tendues : épaules, mâchoire, mains, front.",
+      "Expire et imagine la zone devenir un peu plus douce.",
+      "Si elle ne se détend pas, ce n'est pas grave; remarquer est la pratique."
+     ],
+     "q": "Où gardes-tu le plus souvent des tensions sans t'en rendre compte ?",
+     "c": "Vérifie épaules et mâchoire à chaque fois que tu t'assois aujourd'hui."
+    },
+    "it": {
+     "t": "Notare la tensione",
+     "g": "Individua rigidità in spalle, mascella o mani e lasciala ammorbidire.",
+     "p": [
+      "Cerca velocemente i punti tesi: spalle, mascella, mani, fronte.",
+      "Espira e immagina la zona che si fa un po' più morbida.",
+      "Se non si scioglie, va bene; notare è la pratica."
+     ],
+     "q": "Dove tieni più spesso tensione senza accorgertene?",
+     "c": "Controlla spalle e mascella ogni volta che ti siedi oggi."
+    },
+    "pt": {
+     "t": "Reparar na tensão",
+     "g": "Deteta rigidez nos ombros, maxilar ou mãos e deixa-a suavizar.",
+     "p": [
+      "Percorre rapidamente os pontos tensos: ombros, maxilar, mãos, testa.",
+      "Expira e imagina a zona a ficar um pouco mais macia.",
+      "Se não suavizar, não faz mal; reparar é a prática."
+     ],
+     "q": "Onde costumas guardar tensão sem dar conta?",
+     "c": "Verifica ombros e maxilar sempre que te sentares hoje."
+    },
+    "pt_BR": {
+     "t": "Percebendo a tensão",
+     "g": "Detecte rigidez nos ombros, mandíbula ou mãos e deixe-a suavizar.",
+     "p": [
+      "Percorra rapidamente os pontos tensos: ombros, mandíbula, mãos, testa.",
+      "Expire e imagine a região ficando um pouco mais macia.",
+      "Se não suavizar, tudo bem; perceber é a prática."
+     ],
+     "q": "Onde você costuma guardar tensão sem perceber?",
+     "c": "Verifique ombros e mandíbula toda vez que se sentar hoje."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A mindful sip of water",
+     "g": "Drink one glass of water slowly, noticing temperature, taste and swallowing.",
+     "p": [
+      "Hold the glass and feel its weight and temperature.",
+      "Take a small sip and notice texture, taste and the path of the water.",
+      "Pause between sips; the whole glass can be a calm minute."
+     ],
+     "q": "What did plain water feel like when you really paid attention?",
+     "c": "Drink your next glass of water slowly, with no phone in hand."
+    },
+    "de": {
+     "t": "Ein achtsamer Schluck Wasser",
+     "g": "Trinke ein Glas Wasser langsam und bemerke Temperatur, Geschmack und Schlucken.",
+     "p": [
+      "Halte das Glas und spüre Gewicht und Temperatur.",
+      "Nimm einen kleinen Schluck und bemerke Gefühl, Geschmack und den Weg des Wassers.",
+      "Mach Pausen zwischen den Schlucken; das ganze Glas kann eine ruhige Minute sein."
+     ],
+     "q": "Wie fühlte sich einfaches Wasser an, als du wirklich aufmerksam warst?",
+     "c": "Trinke dein nächstes Glas Wasser langsam und ohne Handy in der Hand."
+    },
+    "es": {
+     "t": "Un sorbo de agua consciente",
+     "g": "Bebe un vaso de agua despacio, notando temperatura, sabor y deglución.",
+     "p": [
+      "Sostén el vaso y siente su peso y temperatura.",
+      "Da un sorbo pequeño y nota la textura, el sabor y el recorrido del agua.",
+      "Haz pausas entre sorbos; el vaso entero puede ser un minuto de calma."
+     ],
+     "q": "¿Cómo se sintió el agua sencilla cuando le prestaste atención de verdad?",
+     "c": "Bebe tu próximo vaso de agua despacio, sin móvil en la mano."
+    },
+    "fr": {
+     "t": "Une gorgée d'eau en pleine conscience",
+     "g": "Bois un verre d'eau lentement en remarquant température, goût et déglutition.",
+     "p": [
+      "Tiens le verre et sens son poids et sa température.",
+      "Prends une petite gorgée et remarque texture, goût et trajet de l'eau.",
+      "Fais des pauses entre les gorgées; le verre entier peut être une minute de calme."
+     ],
+     "q": "Que ressentais-tu avec de l'eau toute simple quand tu y prêtais vraiment attention ?",
+     "c": "Bois ton prochain verre d'eau lentement, sans téléphone en main."
+    },
+    "it": {
+     "t": "Un sorso d'acqua consapevole",
+     "g": "Bevi un bicchiere d'acqua lentamente, notando temperatura, sapore e deglutizione.",
+     "p": [
+      "Tieni il bicchiere e senti peso e temperatura.",
+      "Fai un piccolo sorso e nota consistenza, sapore e il percorso dell'acqua.",
+      "Fai pause tra i sorsi; l'intero bicchiere può essere un minuto di calma."
+     ],
+     "q": "Che sensazione ti ha dato l'acqua semplice quando le hai prestato davvero attenzione?",
+     "c": "Bevi il prossimo bicchiere d'acqua lentamente, senza telefono in mano."
+    },
+    "pt": {
+     "t": "Um gole de água consciente",
+     "g": "Bebe um copo de água devagar, reparando na temperatura, sabor e deglutição.",
+     "p": [
+      "Segura o copo e sente o seu peso e temperatura.",
+      "Dá um gole pequeno e repara na textura, sabor e percurso da água.",
+      "Faz pausas entre goles; o copo inteiro pode ser um minuto de calma."
+     ],
+     "q": "Como soube a água simples quando lhe prestaste mesmo atenção?",
+     "c": "Bebe o teu próximo copo de água devagar, sem telemóvel na mão."
+    },
+    "pt_BR": {
+     "t": "Um gole de água consciente",
+     "g": "Beba um copo de água devagar, percebendo temperatura, gosto e deglutição.",
+     "p": [
+      "Segure o copo e sinta o peso e a temperatura.",
+      "Dê um gole pequeno e perceba a textura, o gosto e o caminho da água.",
+      "Faça pausas entre os goles; o copo inteiro pode ser um minuto de calma."
+     ],
+     "q": "Como a água simples pareceu quando você prestou atenção de verdade?",
+     "c": "Beba seu próximo copo de água devagar, sem celular na mão."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The raisin exercise",
+     "g": "Explore a single raisin or small fruit with all the senses, as if for the first time.",
+     "p": [
+      "Look at it closely, feel its texture, smell it and notice any urge to eat.",
+      "Place it in your mouth and notice taste and texture before chewing slowly.",
+      "Skip this if you have any food allergy or restriction; any safe small item works."
+     ],
+     "q": "What surprised you about something as ordinary as a raisin?",
+     "c": "Choose one small food today and explore it for a full minute."
+    },
+    "de": {
+     "t": "Die Rosinenübung",
+     "g": "Erkunde eine einzelne Rosine oder kleine Frucht mit allen Sinnen, wie zum ersten Mal.",
+     "p": [
+      "Betrachte sie genau, fühle die Struktur, rieche daran und bemerke Lust zu essen.",
+      "Lege sie in den Mund, bemerke Geschmack und Gefühl und kaue dann langsam.",
+      "Lass es bei Allergien oder Einschränkungen aus; jede sichere Kleinigkeit geht."
+     ],
+     "q": "Was hat dich an etwas so Alltäglichem wie einer Rosine überrascht?",
+     "c": "Wähle heute ein kleines Lebensmittel und erkunde es eine volle Minute lang."
+    },
+    "es": {
+     "t": "El ejercicio de la pasa",
+     "g": "Explora una pasa o fruta pequeña con todos los sentidos, como por primera vez.",
+     "p": [
+      "Mírala de cerca, siente su textura, huélela y nota las ganas de comer.",
+      "Ponla en la boca, nota sabor y textura y mastica despacio.",
+      "Omítelo si tienes alergia o restricción alimentaria; vale cualquier cosa pequeña y segura."
+     ],
+     "q": "¿Qué te sorprendió de algo tan común como una pasa?",
+     "c": "Elige hoy un alimento pequeño y explóralo durante un minuto entero."
+    },
+    "fr": {
+     "t": "L'exercice du raisin sec",
+     "g": "Explore un raisin sec ou un petit fruit avec tous tes sens, comme pour la première fois.",
+     "p": [
+      "Regarde-le de près, sens sa texture, son odeur et l'envie de le manger.",
+      "Mets-le en bouche, remarque goût et texture, puis mâche lentement.",
+      "Ignore l'exercice en cas d'allergie ou de restriction; tout petit aliment sûr convient."
+     ],
+     "q": "Qu'est-ce qui t'a surpris dans quelque chose d'aussi ordinaire qu'un raisin sec ?",
+     "c": "Choisis aujourd'hui un petit aliment et explore-le une minute entière."
+    },
+    "it": {
+     "t": "L'esercizio dell'uvetta",
+     "g": "Esplora un'uvetta o un piccolo frutto con tutti i sensi, come per la prima volta.",
+     "p": [
+      "Guardala da vicino, senti la consistenza, annusala e nota la voglia di mangiare.",
+      "Mettila in bocca, nota sapore e consistenza e poi mastica lentamente.",
+      "Salta l'esercizio se hai allergie o restrizioni; va bene ogni piccolo cibo sicuro."
+     ],
+     "q": "Cosa ti ha sorpreso di qualcosa di così comune come un'uvetta?",
+     "c": "Scegli oggi un piccolo cibo ed esploralo per un minuto intero."
+    },
+    "pt": {
+     "t": "O exercício da passa",
+     "g": "Explora uma passa ou fruta pequena com todos os sentidos, como pela primeira vez.",
+     "p": [
+      "Olha-a de perto, sente a textura, cheira-a e repara na vontade de comer.",
+      "Põe-na na boca, repara no sabor e textura e mastiga devagar.",
+      "Salta este exercício se tiveres alergia ou restrição; serve qualquer coisa pequena e segura."
+     ],
+     "q": "O que te surpreendeu em algo tão comum como uma passa?",
+     "c": "Escolhe hoje um alimento pequeno e explora-o durante um minuto inteiro."
+    },
+    "pt_BR": {
+     "t": "O exercício da uva-passa",
+     "g": "Explore uma uva-passa ou fruta pequena com todos os sentidos, como pela primeira vez.",
+     "p": [
+      "Olhe de perto, sinta a textura, cheire e perceba a vontade de comer.",
+      "Coloque na boca, perceba o gosto e a textura e mastigue devagar.",
+      "Pule o exercício se tiver alergia ou restrição; qualquer coisinha segura serve."
+     ],
+     "q": "O que surpreendeu você em algo tão comum quanto uma uva-passa?",
+     "c": "Escolha hoje um alimento pequeno e explore por um minuto inteiro."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mindful eating at one meal",
+     "g": "Eat the first few bites of a meal slowly and without screens.",
+     "p": [
+      "Put away phone and TV, then look at your food before the first bite.",
+      "Chew slowly and notice flavours, textures and temperature.",
+      "Pause after a few bites; then eat as usual, no rules about the rest."
+     ],
+     "q": "Did slowing down change how the food tasted or how full you felt?",
+     "c": "Eat the first three bites of one meal today in full attention."
+    },
+    "de": {
+     "t": "Achtsam essen bei einer Mahlzeit",
+     "g": "Iss die ersten Bissen einer Mahlzeit langsam und ohne Bildschirme.",
+     "p": [
+      "Lege Handy und Fernseher weg und betrachte dein Essen vor dem ersten Bissen.",
+      "Kaue langsam und bemerke Aromen, Konsistenz und Temperatur.",
+      "Halte nach ein paar Bissen kurz inne; danach iss wie gewohnt, ohne Regeln."
+     ],
+     "q": "Hat das Langsamwerden verändert, wie das Essen schmeckte oder wie satt du warst?",
+     "c": "Iss heute die ersten drei Bissen einer Mahlzeit mit voller Aufmerksamkeit."
+    },
+    "es": {
+     "t": "Comer con atención en una comida",
+     "g": "Come los primeros bocados de una comida despacio y sin pantallas.",
+     "p": [
+      "Aparta móvil y tele y mira tu comida antes del primer bocado.",
+      "Mastica despacio y nota sabores, texturas y temperatura.",
+      "Haz una pausa tras unos bocados; luego come como siempre, sin reglas."
+     ],
+     "q": "¿Ir más despacio cambió el sabor de la comida o lo llena que te sentiste?",
+     "c": "Come hoy los tres primeros bocados de una comida con plena atención."
+    },
+    "fr": {
+     "t": "Manger en pleine conscience un repas",
+     "g": "Mange les premières bouchées d'un repas lentement et sans écran.",
+     "p": [
+      "Range téléphone et télé, puis regarde ton plat avant la première bouchée.",
+      "Mâche lentement et remarque saveurs, textures et température.",
+      "Fais une pause après quelques bouchées; ensuite mange comme d'habitude, sans règle."
+     ],
+     "q": "Ralentir a-t-il changé le goût de ton plat ou ta sensation de satiété ?",
+     "c": "Mange aujourd'hui les trois premières bouchées d'un repas en pleine attention."
+    },
+    "it": {
+     "t": "Mangiare con consapevolezza a un pasto",
+     "g": "Mangia i primi bocconi di un pasto lentamente e senza schermi.",
+     "p": [
+      "Metti via telefono e TV e guarda il cibo prima del primo boccone.",
+      "Mastica lentamente e nota sapori, consistenze e temperatura.",
+      "Fai una pausa dopo qualche boccone; poi mangia come al solito, senza regole."
+     ],
+     "q": "Rallentare ha cambiato il sapore del cibo o quanto ti sentivi sazio?",
+     "c": "Oggi mangia i primi tre bocconi di un pasto con piena attenzione."
+    },
+    "pt": {
+     "t": "Comer com atenção numa refeição",
+     "g": "Come as primeiras garfadas de uma refeição devagar e sem ecrãs.",
+     "p": [
+      "Guarda o telemóvel e a TV e olha para a comida antes da primeira garfada.",
+      "Mastiga devagar e repara em sabores, texturas e temperatura.",
+      "Faz uma pausa após algumas garfadas; depois come como de costume, sem regras."
+     ],
+     "q": "Abrandar mudou o sabor da comida ou o quão saciado te sentias?",
+     "c": "Come hoje as primeiras três garfadas de uma refeição com atenção total."
+    },
+    "pt_BR": {
+     "t": "Comendo com atenção numa refeição",
+     "g": "Coma as primeiras garfadas de uma refeição devagar e sem telas.",
+     "p": [
+      "Guarde o celular e a TV e olhe a comida antes da primeira garfada.",
+      "Mastigue devagar e perceba sabores, texturas e temperatura.",
+      "Faça uma pausa após algumas garfadas; depois coma como de costume, sem regras."
+     ],
+     "q": "Desacelerar mudou o gosto da comida ou o quanto você se sentiu satisfeito?",
+     "c": "Coma hoje as três primeiras garfadas de uma refeição com atenção total."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Listening to sounds",
+     "g": "Let sounds come and go without labelling them as good or bad.",
+     "p": [
+      "Sit quietly and open your attention to every sound around you.",
+      "Notice near sounds, far sounds and the silences between them.",
+      "If you catch yourself judging a sound, just hear it as pure sound."
+     ],
+     "q": "What sound did you notice today that you had never noticed before?",
+     "c": "Spend one minute listening to the sounds of the room or street."
+    },
+    "de": {
+     "t": "Klängen lauschen",
+     "g": "Lass Geräusche kommen und gehen, ohne sie als gut oder schlecht zu bewerten.",
+     "p": [
+      "Sitze ruhig und öffne die Aufmerksamkeit für alle Geräusche um dich.",
+      "Bemerke nahe und ferne Klänge und die Stille dazwischen.",
+      "Ertappst du dich beim Bewerten, höre das Geräusch als reinen Klang."
+     ],
+     "q": "Welches Geräusch hast du heute bemerkt, das dir zuvor nie aufgefallen war?",
+     "c": "Lausche heute eine Minute den Geräuschen im Raum oder auf der Straße."
+    },
+    "es": {
+     "t": "Escuchar los sonidos",
+     "g": "Deja que los sonidos vayan y vengan sin etiquetarlos como buenos o malos.",
+     "p": [
+      "Siéntate en silencio y abre la atención a todos los sonidos alrededor.",
+      "Nota sonidos cercanos, lejanos y los silencios entre ellos.",
+      "Si te pillas juzgando un sonido, escúchalo como simple sonido."
+     ],
+     "q": "¿Qué sonido notaste hoy que nunca habías notado antes?",
+     "c": "Dedica un minuto a escuchar los sonidos de la habitación o la calle."
+    },
+    "fr": {
+     "t": "Écouter les sons",
+     "g": "Laisse les sons aller et venir sans les étiqueter bons ou mauvais.",
+     "p": [
+      "Assieds-toi calmement et ouvre l'attention à tous les sons autour de toi.",
+      "Remarque les sons proches, lointains et les silences entre eux.",
+      "Si tu te surprends à juger un son, entends-le comme un simple son."
+     ],
+     "q": "Quel son as-tu remarqué aujourd'hui que tu n'avais jamais remarqué ?",
+     "c": "Passe une minute à écouter les sons de la pièce ou de la rue."
+    },
+    "it": {
+     "t": "Ascoltare i suoni",
+     "g": "Lascia che i suoni vadano e vengano senza etichettarli come buoni o cattivi.",
+     "p": [
+      "Siediti in silenzio e apri l'attenzione a tutti i suoni intorno.",
+      "Nota suoni vicini, lontani e i silenzi tra l'uno e l'altro.",
+      "Se ti accorgi di giudicare un suono, ascoltalo come puro suono."
+     ],
+     "q": "Quale suono hai notato oggi che non avevi mai notato prima?",
+     "c": "Dedica un minuto ad ascoltare i suoni della stanza o della strada."
+    },
+    "pt": {
+     "t": "Ouvir os sons",
+     "g": "Deixa os sons irem e virem sem os rotular de bons ou maus.",
+     "p": [
+      "Senta-te em silêncio e abre a atenção a todos os sons à volta.",
+      "Repara em sons próximos, distantes e nos silêncios entre eles.",
+      "Se te apanhares a julgar um som, ouve-o como simples som."
+     ],
+     "q": "Que som notaste hoje que nunca tinhas notado antes?",
+     "c": "Dedica um minuto a ouvir os sons da sala ou da rua."
+    },
+    "pt_BR": {
+     "t": "Ouvindo os sons",
+     "g": "Deixe os sons irem e virem sem rotulá-los de bons ou ruins.",
+     "p": [
+      "Sente-se em silêncio e abra a atenção a todos os sons ao redor.",
+      "Perceba sons próximos, distantes e os silêncios entre eles.",
+      "Se pegar você julgando um som, ouça-o como simples som."
+     ],
+     "q": "Que som você percebeu hoje que nunca tinha percebido antes?",
+     "c": "Dedique um minuto a ouvir os sons do cômodo ou da rua."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mindful walking basics",
+     "g": "Walk slowly and feel each foot lift, move and touch the ground.",
+     "p": [
+      "Choose a short path of ten steps and walk it slowly.",
+      "Feel the heel, the sole and the toes touching the ground.",
+      "At the end, pause, turn gently and walk back; stay safe and aware of surroundings."
+     ],
+     "q": "What did you notice about walking that you usually do on autopilot?",
+     "c": "Walk the first minute of one trip today slowly and with full attention."
+    },
+    "de": {
+     "t": "Grundlagen des achtsamen Gehens",
+     "g": "Gehe langsam und spüre, wie jeder Fuß sich hebt, bewegt und den Boden berührt.",
+     "p": [
+      "Wähle einen kurzen Weg von zehn Schritten und gehe ihn langsam.",
+      "Spüre, wie Ferse, Sohle und Zehen den Boden berühren.",
+      "Halte am Ende inne, drehe dich sanft und geh zurück; achte auf deine Umgebung."
+     ],
+     "q": "Was ist dir am Gehen aufgefallen, das du sonst im Autopilot tust?",
+     "c": "Gehe heute die erste Minute eines Weges langsam und mit voller Aufmerksamkeit."
+    },
+    "es": {
+     "t": "Bases de la caminata consciente",
+     "g": "Camina despacio y siente cómo cada pie se levanta, se mueve y toca el suelo.",
+     "p": [
+      "Elige un camino corto de diez pasos y recórrelo despacio.",
+      "Siente cómo talón, planta y dedos tocan el suelo.",
+      "Al final, pausa, gira con suavidad y vuelve; mantente atento al entorno."
+     ],
+     "q": "¿Qué notaste al caminar que normalmente haces en piloto automático?",
+     "c": "Camina hoy el primer minuto de un trayecto despacio y con plena atención."
+    },
+    "fr": {
+     "t": "Bases de la marche en pleine conscience",
+     "g": "Marche lentement et sens chaque pied se lever, avancer et toucher le sol.",
+     "p": [
+      "Choisis un court trajet de dix pas et parcours-le lentement.",
+      "Sens le talon, la plante et les orteils toucher le sol.",
+      "À la fin, fais une pause, tourne doucement et reviens; reste attentif à ton environnement."
+     ],
+     "q": "Qu'as-tu remarqué dans la marche que tu fais d'habitude en pilote automatique ?",
+     "c": "Marche aujourd'hui la première minute d'un trajet lentement et en pleine attention."
+    },
+    "it": {
+     "t": "Le basi della camminata consapevole",
+     "g": "Cammina lentamente e senti ogni piede sollevarsi, muoversi e toccare terra.",
+     "p": [
+      "Scegli un breve percorso di dieci passi e percorrilo piano.",
+      "Senti tallone, pianta e dita toccare il suolo.",
+      "Alla fine fermati, gira con dolcezza e torna; resta attento all'ambiente."
+     ],
+     "q": "Cosa hai notato del camminare che di solito fai col pilota automatico?",
+     "c": "Oggi cammina il primo minuto di un tragitto lentamente e con piena attenzione."
+    },
+    "pt": {
+     "t": "Noções de caminhada consciente",
+     "g": "Caminha devagar e sente cada pé a levantar, mover-se e tocar o chão.",
+     "p": [
+      "Escolhe um percurso curto de dez passos e faz-o devagar.",
+      "Sente o calcanhar, a planta e os dedos a tocar o chão.",
+      "No fim pára, vira com suavidade e volta; mantém atenção ao redor."
+     ],
+     "q": "O que reparaste no andar que costumas fazer em piloto automático?",
+     "c": "Caminha hoje o primeiro minuto de um trajeto devagar e com atenção total."
+    },
+    "pt_BR": {
+     "t": "Noções de caminhada consciente",
+     "g": "Caminhe devagar e sinta cada pé levantar, mover-se e tocar o chão.",
+     "p": [
+      "Escolha um trajeto curto de dez passos e percorra devagar.",
+      "Sinta o calcanhar, a sola e os dedos tocando o chão.",
+      "No fim, pare, vire com suavidade e volte; fique atento ao entorno."
+     ],
+     "q": "O que você percebeu no andar que costuma fazer no piloto automático?",
+     "c": "Caminhe hoje o primeiro minuto de um trajeto devagar e com atenção total."
+    }
+   }
+  }
+ ]
+}

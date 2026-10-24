@@ -1,0 +1,835 @@
+{
+ "topic": "storytelling",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Beginning, middle and end",
+     "g": "Learn the simple three-part shape that most stories follow.",
+     "p": [
+      "The beginning meets the hero and the wish.",
+      "The middle is where the problem grows and the hero tries things.",
+      "The end shows how things settle and what changed."
+     ],
+     "q": "Think of a movie you like: how would you split it in three parts?",
+     "c": "Tell a tiny story with a clear beginning, middle and end in three sentences."
+    },
+    "de": {
+     "t": "Anfang, Mitte und Ende",
+     "g": "Lerne die einfache Dreiteilung kennen, der die meisten Geschichten folgen.",
+     "p": [
+      "Der Anfang stellt die Figur und ihren Wunsch vor.",
+      "In der Mitte wächst das Problem und die Figur probiert Dinge aus.",
+      "Das Ende zeigt, wie sich alles löst und was sich verändert hat."
+     ],
+     "q": "Denk an einen Film, den du magst: Wie würdest du ihn in drei Teile teilen?",
+     "c": "Erzähle eine winzige Geschichte mit klarem Anfang, Mitte und Ende in drei Sätzen."
+    },
+    "es": {
+     "t": "Principio, nudo y desenlace",
+     "g": "Aprende la forma simple de tres partes que siguen casi todas las historias.",
+     "p": [
+      "El principio presenta al héroe y su deseo.",
+      "En el nudo crece el problema y el héroe prueba cosas.",
+      "El desenlace muestra cómo se arregla todo y qué cambió."
+     ],
+     "q": "Piensa en una película que te guste: ¿cómo la dividirías en tres partes?",
+     "c": "Cuenta una historia diminuta con principio, nudo y desenlace en tres frases."
+    },
+    "fr": {
+     "t": "Début, milieu et fin",
+     "g": "Apprends la forme simple en trois parties que suivent presque toutes les histoires.",
+     "p": [
+      "Le début présente le héros et son souhait.",
+      "Au milieu, le problème grandit et le héros essaie des choses.",
+      "La fin montre comment tout s'apaise et ce qui a changé."
+     ],
+     "q": "Pense à un film que tu aimes : comment le couperais-tu en trois parties ?",
+     "c": "Raconte une minuscule histoire avec un début, un milieu et une fin en trois phrases."
+    },
+    "it": {
+     "t": "Inizio, svolgimento e fine",
+     "g": "Impara la semplice forma in tre parti che seguono quasi tutte le storie.",
+     "p": [
+      "L'inizio presenta l'eroe e il suo desiderio.",
+      "Nello svolgimento il problema cresce e l'eroe prova cose.",
+      "La fine mostra come tutto si sistema e che cosa è cambiato."
+     ],
+     "q": "Pensa a un film che ti piace: come lo divideresti in tre parti?",
+     "c": "Racconta una storia minuscola con inizio, svolgimento e fine in tre frasi."
+    },
+    "pt": {
+     "t": "Início, meio e fim",
+     "g": "Aprende a forma simples em três partes que quase todas as histórias seguem.",
+     "p": [
+      "O início apresenta o herói e o seu desejo.",
+      "No meio o problema cresce e o herói experimenta coisas.",
+      "O fim mostra como tudo se resolve e o que mudou."
+     ],
+     "q": "Pensa num filme de que gostes: como o dividirias em três partes?",
+     "c": "Conta uma história minúscula com início, meio e fim em três frases."
+    },
+    "pt_BR": {
+     "t": "Começo, meio e fim",
+     "g": "Aprenda a forma simples em três partes que quase todas as histórias seguem.",
+     "p": [
+      "O começo apresenta o herói e o desejo dele.",
+      "No meio o problema cresce e o herói tenta coisas.",
+      "O fim mostra como tudo se resolve e o que mudou."
+     ],
+     "q": "Pense num filme de que você gosta: como o dividiria em três partes?",
+     "c": "Conte uma história minúscula com começo, meio e fim em três frases."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Happy and surprise endings",
+     "g": "Explore different ways to close a story in a satisfying way.",
+     "p": [
+      "A happy ending rewards the hero's effort and feels warm.",
+      "A surprise ending shows something the listener did not expect.",
+      "Good endings echo the beginning, like returning to the same place changed."
+     ],
+     "q": "Do you prefer cozy endings or twists, and why?",
+     "c": "Take yesterday's tiny story and write two different endings for it."
+    },
+    "de": {
+     "t": "Happy End und Überraschungsende",
+     "g": "Entdecke verschiedene Wege, eine Geschichte befriedigend abzuschließen.",
+     "p": [
+      "Ein Happy End belohnt die Mühe der Figur und fühlt sich warm an.",
+      "Ein Überraschungsende zeigt etwas, womit niemand gerechnet hat.",
+      "Gute Enden greifen den Anfang auf, etwa die Rückkehr an denselben Ort, verändert."
+     ],
+     "q": "Magst du gemütliche Enden oder Wendungen lieber, und warum?",
+     "c": "Nimm die Geschichte von gestern und schreibe zwei verschiedene Enden dazu."
+    },
+    "es": {
+     "t": "Finales felices y sorpresa",
+     "g": "Explora distintas formas de cerrar una historia de manera satisfactoria.",
+     "p": [
+      "Un final feliz premia el esfuerzo del héroe y se siente cálido.",
+      "Un final sorpresa muestra algo que el oyente no esperaba.",
+      "Los buenos finales hacen eco del inicio, como volver al mismo lugar distinto."
+     ],
+     "q": "¿Prefieres finales acogedores o giros, y por qué?",
+     "c": "Toma la historia de ayer y escribe dos finales distintos para ella."
+    },
+    "fr": {
+     "t": "Fins heureuses et surprises",
+     "g": "Explore différentes façons de clore une histoire de manière satisfaisante.",
+     "p": [
+      "Une fin heureuse récompense l'effort du héros et réchauffe le cœur.",
+      "Une fin surprise montre ce que l'auditeur n'attendait pas.",
+      "Les bonnes fins font écho au début, comme un retour au même lieu, changé."
+     ],
+     "q": "Préfères-tu les fins douces ou les rebondissements, et pourquoi ?",
+     "c": "Reprends l'histoire d'hier et écris-lui deux fins différentes."
+    },
+    "it": {
+     "t": "Finali felici e a sorpresa",
+     "g": "Esplora modi diversi di chiudere una storia in modo soddisfacente.",
+     "p": [
+      "Un lieto fine premia l'impegno dell'eroe e scalda il cuore.",
+      "Un finale a sorpresa mostra qualcosa che l'ascoltatore non si aspettava.",
+      "I buoni finali fanno eco all'inizio, come tornare nello stesso posto, cambiati."
+     ],
+     "q": "Preferisci i finali dolci o i colpi di scena, e perché?",
+     "c": "Prendi la storia di ieri e scrivi due finali diversi per essa."
+    },
+    "pt": {
+     "t": "Finais felizes e surpresa",
+     "g": "Explora maneiras diferentes de fechar uma história de forma satisfatória.",
+     "p": [
+      "Um final feliz recompensa o esforço do herói e aquece o coração.",
+      "Um final surpresa mostra algo que o ouvinte não esperava.",
+      "Bons finais ecoam o início, como voltar ao mesmo lugar, mudado."
+     ],
+     "q": "Preferes finais aconchegantes ou reviravoltas, e porquê?",
+     "c": "Pega na história de ontem e escreve dois finais diferentes para ela."
+    },
+    "pt_BR": {
+     "t": "Finais felizes e surpresa",
+     "g": "Explore maneiras diferentes de fechar uma história de forma satisfatória.",
+     "p": [
+      "Um final feliz recompensa o esforço do herói e aquece o coração.",
+      "Um final surpresa mostra algo que o ouvinte não esperava.",
+      "Bons finais ecoam o começo, como voltar ao mesmo lugar, mudado."
+     ],
+     "q": "Você prefere finais aconchegantes ou reviravoltas, e por quê?",
+     "c": "Pegue a história de ontem e escreva dois finais diferentes para ela."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The one-word story game",
+     "g": "Build a story together, one word at a time.",
+     "p": [
+      "Each person adds exactly one word, so listening is everything.",
+      "Do not steer too hard: let the sentence surprise you both.",
+      "Silly results are the point, and laughing is part of the craft."
+     ],
+     "q": "Did a word ever take a story somewhere you did not expect?",
+     "c": "Play with me: we build one sentence, one word each, until it ends."
+    },
+    "de": {
+     "t": "Das Ein-Wort-Geschichtenspiel",
+     "g": "Baut gemeinsam eine Geschichte, Wort für Wort.",
+     "p": [
+      "Jeder fügt genau ein Wort hinzu, also zählt vor allem das Zuhören.",
+      "Steuere nicht zu stark: Lass dich vom Satz überraschen.",
+      "Alberne Ergebnisse sind der Sinn, und Lachen gehört zum Handwerk."
+     ],
+     "q": "Hat dich ein Wort schon einmal an einen unerwarteten Ort geführt?",
+     "c": "Spiel mit mir: Wir bauen einen Satz, je ein Wort, bis er endet."
+    },
+    "es": {
+     "t": "El juego del cuento de una palabra",
+     "g": "Construyan una historia juntos, una palabra a la vez.",
+     "p": [
+      "Cada uno añade exactamente una palabra, así que escuchar lo es todo.",
+      "No dirijas demasiado: deja que la frase os sorprenda a ambos.",
+      "Los resultados tontos son el objetivo, y reír es parte del oficio."
+     ],
+     "q": "¿Alguna palabra llevó una historia adonde no esperabas?",
+     "c": "Juega conmigo: una frase, una palabra cada uno, hasta que termine."
+    },
+    "fr": {
+     "t": "Le jeu de l'histoire en un mot",
+     "g": "Construisez une histoire ensemble, un mot à la fois.",
+     "p": [
+      "Chacun ajoute exactement un mot, donc écouter est essentiel.",
+      "Ne dirige pas trop : laisse la phrase vous surprendre tous les deux.",
+      "Les résultats farfelus sont le but, et rire fait partie du métier."
+     ],
+     "q": "Un mot t'a-t-il déjà mené là où tu ne t'y attendais pas ?",
+     "c": "Joue avec moi : une phrase, un mot chacun, jusqu'à la fin."
+    },
+    "it": {
+     "t": "Il gioco della storia a una parola",
+     "g": "Costruite insieme una storia, una parola alla volta.",
+     "p": [
+      "Ognuno aggiunge esattamente una parola, quindi ascoltare è tutto.",
+      "Non guidare troppo: lascia che la frase sorprenda entrambi.",
+      "I risultati buffi sono lo scopo, e ridere fa parte del mestiere."
+     ],
+     "q": "Una parola ti ha mai portato la storia dove non ti aspettavi?",
+     "c": "Gioca con me: una frase, una parola a testa, finché finisce."
+    },
+    "pt": {
+     "t": "O jogo da história de uma palavra",
+     "g": "Construam juntos uma história, uma palavra de cada vez.",
+     "p": [
+      "Cada um acrescenta exatamente uma palavra, por isso ouvir é tudo.",
+      "Não conduzas demais: deixa a frase surpreender os dois.",
+      "Resultados disparatados são o objetivo, e rir faz parte do ofício."
+     ],
+     "q": "Alguma palavra já levou uma história onde não esperavas?",
+     "c": "Joga comigo: uma frase, uma palavra cada um, até acabar."
+    },
+    "pt_BR": {
+     "t": "O jogo da história de uma palavra",
+     "g": "Construam juntos uma história, uma palavra de cada vez.",
+     "p": [
+      "Cada um acrescenta exatamente uma palavra, então ouvir é tudo.",
+      "Não conduza demais: deixe a frase surpreender os dois.",
+      "Resultados bobos são o objetivo, e rir faz parte do ofício."
+     ],
+     "q": "Alguma palavra já levou uma história aonde você não esperava?",
+     "c": "Jogue comigo: uma frase, uma palavra cada um, até acabar."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Yes, and: building on ideas",
+     "g": "Accept a partner's idea and add something new to it.",
+     "p": [
+      "Yes means you accept what your partner just invented.",
+      "And means you add one fresh detail that makes it bigger.",
+      "Avoid but and no: they stop the flow and shrink the story."
+     ],
+     "q": "When did someone build on your idea and make it better?",
+     "c": "I say: there is a purple door in the forest. Answer with yes, and."
+    },
+    "de": {
+     "t": "Ja, und: auf Ideen aufbauen",
+     "g": "Nimm die Idee deines Gegenübers an und füge etwas Neues hinzu.",
+     "p": [
+      "Ja heißt: Du nimmst an, was dein Partner gerade erfunden hat.",
+      "Und heißt: Du fügst ein frisches Detail hinzu, das es größer macht.",
+      "Vermeide aber und nein: Sie bremsen den Fluss und verkleinern die Geschichte."
+     ],
+     "q": "Wann hat jemand auf deine Idee aufgebaut und sie besser gemacht?",
+     "c": "Ich sage: Im Wald steht eine lila Tür. Antworte mit ja, und."
+    },
+    "es": {
+     "t": "Sí, y: construir sobre ideas",
+     "g": "Acepta la idea de tu compañero y añádele algo nuevo.",
+     "p": [
+      "Sí significa aceptar lo que tu compañero acaba de inventar.",
+      "Y significa añadir un detalle fresco que lo hace más grande.",
+      "Evita pero y no: frenan el ritmo y encogen la historia."
+     ],
+     "q": "¿Cuándo alguien mejoró tu idea construyendo sobre ella?",
+     "c": "Yo digo: hay una puerta morada en el bosque. Responde con sí, y."
+    },
+    "fr": {
+     "t": "Oui, et : bâtir sur les idées",
+     "g": "Accepte l'idée de ton partenaire et ajoutes-en une nouvelle.",
+     "p": [
+      "Oui, c'est accepter ce que ton partenaire vient d'inventer.",
+      "Et, c'est ajouter un détail frais qui agrandit l'idée.",
+      "Évite mais et non : ils cassent le rythme et rétrécissent l'histoire."
+     ],
+     "q": "Quand quelqu'un a-t-il enrichi ton idée en bâtissant dessus ?",
+     "c": "Je dis : il y a une porte violette dans la forêt. Réponds par oui, et."
+    },
+    "it": {
+     "t": "Sì, e: costruire sulle idee",
+     "g": "Accetta l'idea del compagno e aggiungi qualcosa di nuovo.",
+     "p": [
+      "Sì significa accettare ciò che il compagno ha appena inventato.",
+      "E significa aggiungere un dettaglio nuovo che la rende più grande.",
+      "Evita ma e no: frenano il ritmo e rimpiccioliscono la storia."
+     ],
+     "q": "Quando qualcuno ha migliorato la tua idea costruendoci sopra?",
+     "c": "Io dico: c'è una porta viola nel bosco. Rispondi con sì, e."
+    },
+    "pt": {
+     "t": "Sim, e: construir sobre ideias",
+     "g": "Aceita a ideia do parceiro e acrescenta-lhe algo novo.",
+     "p": [
+      "Sim significa aceitar o que o parceiro acabou de inventar.",
+      "E significa juntar um detalhe novo que a torna maior.",
+      "Evita mas e não: travam o ritmo e encolhem a história."
+     ],
+     "q": "Quando é que alguém melhorou a tua ideia construindo sobre ela?",
+     "c": "Eu digo: há uma porta roxa na floresta. Responde com sim, e."
+    },
+    "pt_BR": {
+     "t": "Sim, e: construir sobre ideias",
+     "g": "Aceite a ideia do parceiro e acrescente algo novo a ela.",
+     "p": [
+      "Sim significa aceitar o que o parceiro acabou de inventar.",
+      "E significa juntar um detalhe novo que a deixa maior.",
+      "Evite mas e não: eles travam o ritmo e encolhem a história."
+     ],
+     "q": "Quando alguém melhorou sua ideia construindo em cima dela?",
+     "c": "Eu digo: tem uma porta roxa na floresta. Responda com sim, e."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Who, what, where, when, why",
+     "g": "Use the five Ws to plan a tiny story fast.",
+     "p": [
+      "Who is the hero, and what do they want or do?",
+      "Where and when does it happen? Both shape the mood.",
+      "Why matters most: a reason makes the hero's actions feel real."
+     ],
+     "q": "Which of the five Ws is hardest for you to pick?",
+     "c": "Answer the five Ws for a new idea, then tell it in four sentences."
+    },
+    "de": {
+     "t": "Wer, was, wo, wann, warum",
+     "g": "Nutze die fünf W-Fragen, um schnell eine kleine Geschichte zu planen.",
+     "p": [
+      "Wer ist die Figur, und was will oder tut sie?",
+      "Wo und wann geschieht es? Beides prägt die Stimmung.",
+      "Das Warum ist am wichtigsten: Ein Grund macht Handlungen glaubwürdig."
+     ],
+     "q": "Welches der fünf W fällt dir am schwersten?",
+     "c": "Beantworte die fünf W für eine neue Idee und erzähle sie in vier Sätzen."
+    },
+    "es": {
+     "t": "Quién, qué, dónde, cuándo, por qué",
+     "g": "Usa las cinco preguntas para planear rápido una historia pequeña.",
+     "p": [
+      "¿Quién es el héroe y qué quiere o hace?",
+      "¿Dónde y cuándo ocurre? Ambos marcan el ambiente.",
+      "El por qué importa más: una razón hace creíbles las acciones."
+     ],
+     "q": "¿Cuál de las cinco preguntas te cuesta más elegir?",
+     "c": "Responde las cinco para una idea nueva y cuéntala en cuatro frases."
+    },
+    "fr": {
+     "t": "Qui, quoi, où, quand, pourquoi",
+     "g": "Utilise les cinq questions pour planifier vite une petite histoire.",
+     "p": [
+      "Qui est le héros, et que veut-il ou que fait-il ?",
+      "Où et quand cela se passe-t-il ? Les deux créent l'ambiance.",
+      "Le pourquoi compte le plus : une raison rend les actes crédibles."
+     ],
+     "q": "Laquelle des cinq questions est la plus difficile pour toi ?",
+     "c": "Réponds aux cinq questions pour une nouvelle idée et raconte-la en quatre phrases."
+    },
+    "it": {
+     "t": "Chi, che cosa, dove, quando, perché",
+     "g": "Usa le cinque domande per pianificare in fretta una piccola storia.",
+     "p": [
+      "Chi è l'eroe e che cosa vuole o fa?",
+      "Dove e quando accade? Entrambi creano l'atmosfera.",
+      "Il perché conta di più: una ragione rende credibili le azioni."
+     ],
+     "q": "Quale delle cinque domande ti riesce più difficile?",
+     "c": "Rispondi alle cinque per una nuova idea e raccontala in quattro frasi."
+    },
+    "pt": {
+     "t": "Quem, o quê, onde, quando, porquê",
+     "g": "Usa as cinco perguntas para planear depressa uma pequena história.",
+     "p": [
+      "Quem é o herói e o que quer ou faz?",
+      "Onde e quando acontece? Ambos criam o ambiente.",
+      "O porquê importa mais: uma razão torna as ações credíveis."
+     ],
+     "q": "Qual das cinco perguntas é mais difícil para ti?",
+     "c": "Responde às cinco para uma ideia nova e conta-a em quatro frases."
+    },
+    "pt_BR": {
+     "t": "Quem, o quê, onde, quando, por quê",
+     "g": "Use as cinco perguntas para planejar rápido uma pequena história.",
+     "p": [
+      "Quem é o herói e o que ele quer ou faz?",
+      "Onde e quando acontece? Os dois criam o clima.",
+      "O porquê importa mais: uma razão deixa as ações críveis."
+     ],
+     "q": "Qual das cinco perguntas é mais difícil para você?",
+     "c": "Responda às cinco para uma ideia nova e conte em quatro frases."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A story in six words",
+     "g": "Fit a whole story into very few words.",
+     "p": [
+      "Six-word stories hint at a before and an after.",
+      "Every word must work hard, so cut anything that is only decoration.",
+      "A good one makes the reader fill in the gaps with imagination."
+     ],
+     "q": "Which six words could describe your last weekend?",
+     "c": "Write three six-word stories and pick the one you like best."
+    },
+    "de": {
+     "t": "Eine Geschichte in sechs Wörtern",
+     "g": "Pack eine ganze Geschichte in sehr wenige Wörter.",
+     "p": [
+      "Sechs-Wort-Geschichten deuten ein Davor und ein Danach an.",
+      "Jedes Wort muss hart arbeiten, streiche also alles Dekorative.",
+      "Eine gute lässt den Leser die Lücken mit Fantasie füllen."
+     ],
+     "q": "Welche sechs Wörter beschreiben dein letztes Wochenende?",
+     "c": "Schreibe drei Sechs-Wort-Geschichten und wähle deine liebste."
+    },
+    "es": {
+     "t": "Una historia en seis palabras",
+     "g": "Mete una historia entera en poquísimas palabras.",
+     "p": [
+      "Las historias de seis palabras sugieren un antes y un después.",
+      "Cada palabra debe trabajar duro: quita lo que solo adorna.",
+      "Una buena deja que el lector rellene los huecos con imaginación."
+     ],
+     "q": "¿Qué seis palabras describirían tu último fin de semana?",
+     "c": "Escribe tres historias de seis palabras y elige la que más te guste."
+    },
+    "fr": {
+     "t": "Une histoire en six mots",
+     "g": "Fais tenir toute une histoire en très peu de mots.",
+     "p": [
+      "Les histoires de six mots suggèrent un avant et un après.",
+      "Chaque mot doit travailler dur : retire ce qui n'est que décoration.",
+      "Une bonne laisse le lecteur combler les vides avec son imagination."
+     ],
+     "q": "Quels six mots décriraient ton dernier week-end ?",
+     "c": "Écris trois histoires de six mots et choisis ta préférée."
+    },
+    "it": {
+     "t": "Una storia in sei parole",
+     "g": "Fai stare un'intera storia in pochissime parole.",
+     "p": [
+      "Le storie di sei parole suggeriscono un prima e un dopo.",
+      "Ogni parola deve lavorare sodo: taglia ciò che è solo decorazione.",
+      "Una buona lascia al lettore il compito di riempire i vuoti con la fantasia."
+     ],
+     "q": "Quali sei parole descriverebbero il tuo ultimo fine settimana?",
+     "c": "Scrivi tre storie di sei parole e scegli quella che preferisci."
+    },
+    "pt": {
+     "t": "Uma história em seis palavras",
+     "g": "Faz caber uma história inteira em muito poucas palavras.",
+     "p": [
+      "As histórias de seis palavras sugerem um antes e um depois.",
+      "Cada palavra tem de trabalhar muito: corta o que é só enfeite.",
+      "Uma boa deixa o leitor preencher as lacunas com imaginação."
+     ],
+     "q": "Que seis palavras descreveriam o teu último fim de semana?",
+     "c": "Escreve três histórias de seis palavras e escolhe a que mais gostas."
+    },
+    "pt_BR": {
+     "t": "Uma história em seis palavras",
+     "g": "Faça caber uma história inteira em pouquíssimas palavras.",
+     "p": [
+      "Histórias de seis palavras sugerem um antes e um depois.",
+      "Cada palavra precisa trabalhar muito: corte o que é só enfeite.",
+      "Uma boa deixa o leitor preencher as lacunas com imaginação."
+     ],
+     "q": "Que seis palavras descreveriam seu último fim de semana?",
+     "c": "Escreva três histórias de seis palavras e escolha a de que mais gosta."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first personal anecdote",
+     "g": "Turn a small moment from your day into a short story.",
+     "p": [
+      "Pick a moment with a tiny surprise, not a whole day.",
+      "Start close to the action: skip the wake-up and the commute.",
+      "Add one detail only you noticed to make it yours."
+     ],
+     "q": "What small moment from today could become a story?",
+     "c": "Tell me a three-sentence anecdote from your day, ending on the surprise."
+    },
+    "de": {
+     "t": "Deine erste persönliche Anekdote",
+     "g": "Mach aus einem kleinen Moment deines Tages eine kurze Geschichte.",
+     "p": [
+      "Wähle einen Moment mit kleiner Überraschung, nicht den ganzen Tag.",
+      "Fang nah an der Handlung an: Lass Aufstehen und Anfahrt weg.",
+      "Füge ein Detail hinzu, das nur du bemerkt hast."
+     ],
+     "q": "Welcher kleine Moment von heute könnte eine Geschichte werden?",
+     "c": "Erzähl mir eine Anekdote aus deinem Tag in drei Sätzen, endend mit der Überraschung."
+    },
+    "es": {
+     "t": "Tu primera anécdota personal",
+     "g": "Convierte un momento pequeño de tu día en una historia corta.",
+     "p": [
+      "Elige un momento con una pequeña sorpresa, no el día entero.",
+      "Empieza cerca de la acción: salta el despertar y el trayecto.",
+      "Añade un detalle que solo tú notaste para hacerla tuya."
+     ],
+     "q": "¿Qué momento pequeño de hoy podría ser una historia?",
+     "c": "Cuéntame una anécdota de tu día en tres frases, terminando en la sorpresa."
+    },
+    "fr": {
+     "t": "Ta première anecdote personnelle",
+     "g": "Transforme un petit moment de ta journée en histoire courte.",
+     "p": [
+      "Choisis un moment avec une petite surprise, pas toute la journée.",
+      "Commence près de l'action : saute le réveil et le trajet.",
+      "Ajoute un détail que toi seul as remarqué pour la rendre tienne."
+     ],
+     "q": "Quel petit moment d'aujourd'hui pourrait devenir une histoire ?",
+     "c": "Raconte-moi une anecdote de ta journée en trois phrases, finissant sur la surprise."
+    },
+    "it": {
+     "t": "Il tuo primo aneddoto personale",
+     "g": "Trasforma un piccolo momento della tua giornata in una breve storia.",
+     "p": [
+      "Scegli un momento con una piccola sorpresa, non l'intera giornata.",
+      "Parti vicino all'azione: salta la sveglia e il tragitto.",
+      "Aggiungi un dettaglio che solo tu hai notato per renderla tua."
+     ],
+     "q": "Quale piccolo momento di oggi potrebbe diventare una storia?",
+     "c": "Raccontami un aneddoto della tua giornata in tre frasi, finendo sulla sorpresa."
+    },
+    "pt": {
+     "t": "A tua primeira anedota pessoal",
+     "g": "Transforma um pequeno momento do teu dia numa história curta.",
+     "p": [
+      "Escolhe um momento com uma pequena surpresa, não o dia inteiro.",
+      "Começa perto da ação: salta o acordar e o trajeto.",
+      "Junta um detalhe que só tu notaste para a tornar tua."
+     ],
+     "q": "Que pequeno momento de hoje podia virar uma história?",
+     "c": "Conta-me uma anedota do teu dia em três frases, a acabar na surpresa."
+    },
+    "pt_BR": {
+     "t": "Sua primeira anedota pessoal",
+     "g": "Transforme um pequeno momento do seu dia numa história curta.",
+     "p": [
+      "Escolha um momento com uma pequena surpresa, não o dia inteiro.",
+      "Comece perto da ação: pule o acordar e o trajeto.",
+      "Acrescente um detalhe que só você notou para torná-la sua."
+     ],
+     "q": "Que pequeno momento de hoje poderia virar uma história?",
+     "c": "Conte uma anedota do seu dia em três frases, terminando na surpresa."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A funny thing happened",
+     "g": "Share a light, funny moment in a story shape.",
+     "p": [
+      "Funny stories need a clear setup, so the listener knows what to expect.",
+      "Then comes a turn: the moment where things go differently.",
+      "Laugh at yourself kindly: small mishaps are the best material."
+     ],
+     "q": "What is the funniest small thing that happened to you recently?",
+     "c": "Tell a short funny story with a setup, a turn and a last line."
+    },
+    "de": {
+     "t": "Da passierte etwas Lustiges",
+     "g": "Erzähle einen leichten, lustigen Moment in Geschichtenform.",
+     "p": [
+      "Lustige Geschichten brauchen einen klaren Aufbau, damit man weiß, was kommt.",
+      "Dann kommt die Wendung: der Moment, in dem es anders läuft.",
+      "Lache freundlich über dich selbst: kleine Missgeschicke sind das beste Material."
+     ],
+     "q": "Was war das Lustigste, das dir kürzlich passiert ist?",
+     "c": "Erzähle eine kurze lustige Geschichte mit Aufbau, Wendung und Schlusszeile."
+    },
+    "es": {
+     "t": "Pasó algo gracioso",
+     "g": "Comparte un momento ligero y divertido con forma de historia.",
+     "p": [
+      "Las historias graciosas necesitan una preparación clara para saber qué esperar.",
+      "Luego llega un giro: el momento en que las cosas van distinto.",
+      "Ríete de ti con cariño: los pequeños tropiezos son el mejor material."
+     ],
+     "q": "¿Qué es lo más gracioso que te pasó hace poco?",
+     "c": "Cuenta una historia graciosa corta con preparación, giro y última frase."
+    },
+    "fr": {
+     "t": "Un truc drôle est arrivé",
+     "g": "Partage un moment léger et drôle sous forme d'histoire.",
+     "p": [
+      "Les histoires drôles ont besoin d'une mise en place claire pour savoir à quoi s'attendre.",
+      "Puis vient un tournant : le moment où les choses se passent autrement.",
+      "Ris de toi avec bienveillance : les petits ratés sont la meilleure matière."
+     ],
+     "q": "Quelle est la chose la plus drôle qui t'est arrivée récemment ?",
+     "c": "Raconte une courte histoire drôle avec mise en place, tournant et dernière phrase."
+    },
+    "it": {
+     "t": "È successa una cosa buffa",
+     "g": "Condividi un momento leggero e divertente in forma di storia.",
+     "p": [
+      "Le storie buffe hanno bisogno di un'introduzione chiara per sapere cosa aspettarsi.",
+      "Poi arriva la svolta: il momento in cui le cose vanno diversamente.",
+      "Ridi di te con gentilezza: i piccoli incidenti sono il materiale migliore."
+     ],
+     "q": "Qual è la cosa più buffa che ti è successa di recente?",
+     "c": "Racconta una breve storia buffa con introduzione, svolta e ultima frase."
+    },
+    "pt": {
+     "t": "Aconteceu uma coisa engraçada",
+     "g": "Partilha um momento leve e divertido em forma de história.",
+     "p": [
+      "As histórias engraçadas precisam de uma preparação clara para se saber o que esperar.",
+      "Depois vem a viragem: o momento em que as coisas correm de outra forma.",
+      "Ri-te de ti com carinho: pequenos azares são o melhor material."
+     ],
+     "q": "Qual foi a coisa mais engraçada que te aconteceu recentemente?",
+     "c": "Conta uma história engraçada curta com preparação, viragem e última frase."
+    },
+    "pt_BR": {
+     "t": "Aconteceu uma coisa engraçada",
+     "g": "Compartilhe um momento leve e divertido em forma de história.",
+     "p": [
+      "Histórias engraçadas precisam de uma preparação clara para saber o que esperar.",
+      "Depois vem a virada: o momento em que as coisas saem diferentes.",
+      "Ria de si com carinho: pequenos micos são o melhor material."
+     ],
+     "q": "Qual foi a coisa mais engraçada que aconteceu com você recentemente?",
+     "c": "Conte uma história engraçada curta com preparação, virada e última frase."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fables: tiny stories with a lesson",
+     "g": "Learn what fables are and why they travel across cultures.",
+     "p": [
+      "A fable is a very short tale, often with animals, that ends with a lesson.",
+      "Fables turn big ideas, like patience, into stories a child can retell.",
+      "Similar fables appear in Greece, India, Africa and beyond."
+     ],
+     "q": "Which fable do you remember from childhood?",
+     "c": "Retell a fable you know in three sentences, ending with its lesson."
+    },
+    "de": {
+     "t": "Fabeln: kleine Geschichten mit Lehre",
+     "g": "Erfahre, was Fabeln sind und warum sie durch viele Kulturen wandern.",
+     "p": [
+      "Eine Fabel ist eine sehr kurze Erzählung, oft mit Tieren, mit einer Lehre am Ende.",
+      "Fabeln machen große Ideen wie Geduld zu Geschichten, die Kinder nacherzählen können.",
+      "Ähnliche Fabeln gibt es in Griechenland, Indien, Afrika und anderswo."
+     ],
+     "q": "Welche Fabel aus deiner Kindheit ist dir im Gedächtnis geblieben?",
+     "c": "Erzähle eine Fabel, die du kennst, in drei Sätzen nach, mit der Lehre am Schluss."
+    },
+    "es": {
+     "t": "Fábulas: cuentos breves con enseñanza",
+     "g": "Aprende qué son las fábulas y por qué viajan entre culturas.",
+     "p": [
+      "Una fábula es un relato muy corto, a menudo con animales, que acaba con una enseñanza.",
+      "Las fábulas convierten ideas grandes, como la paciencia, en historias que un niño puede repetir.",
+      "Fábulas parecidas aparecen en Grecia, India, África y más allá."
+     ],
+     "q": "¿Qué fábula recuerdas de tu infancia?",
+     "c": "Cuenta de nuevo una fábula que conozcas en tres frases, con su moraleja."
+    },
+    "fr": {
+     "t": "Fables : de petits récits avec une leçon",
+     "g": "Découvre ce que sont les fables et pourquoi elles voyagent d'une culture à l'autre.",
+     "p": [
+      "Une fable est un récit très court, souvent avec des animaux, qui finit par une leçon.",
+      "Les fables transforment de grandes idées, comme la patience, en histoires qu'un enfant peut raconter.",
+      "Des fables semblables existent en Grèce, en Inde, en Afrique et ailleurs."
+     ],
+     "q": "Quelle fable te rappelles-tu de ton enfance ?",
+     "c": "Raconte une fable que tu connais en trois phrases, avec sa morale à la fin."
+    },
+    "it": {
+     "t": "Favole: piccole storie con una morale",
+     "g": "Scopri cosa sono le favole e perché viaggiano tra le culture.",
+     "p": [
+      "Una favola è un racconto brevissimo, spesso con animali, che finisce con una morale.",
+      "Le favole trasformano grandi idee, come la pazienza, in storie che un bambino sa ripetere.",
+      "Favole simili compaiono in Grecia, India, Africa e oltre."
+     ],
+     "q": "Quale favola ricordi dall'infanzia?",
+     "c": "Racconta di nuovo una favola che conosci in tre frasi, con la sua morale."
+    },
+    "pt": {
+     "t": "Fábulas: pequenas histórias com lição",
+     "g": "Descobre o que são fábulas e porque viajam entre culturas.",
+     "p": [
+      "Uma fábula é um conto muito curto, muitas vezes com animais, que acaba com uma lição.",
+      "As fábulas transformam grandes ideias, como a paciência, em histórias que uma criança conta.",
+      "Fábulas parecidas surgem na Grécia, na Índia, em África e mais longe."
+     ],
+     "q": "Que fábula recordas da tua infância?",
+     "c": "Conta de novo uma fábula que conheças em três frases, com a moral no fim."
+    },
+    "pt_BR": {
+     "t": "Fábulas: pequenas histórias com lição",
+     "g": "Descubra o que são fábulas e por que elas viajam entre culturas.",
+     "p": [
+      "Uma fábula é um conto bem curto, muitas vezes com animais, que termina com uma lição.",
+      "Fábulas transformam grandes ideias, como a paciência, em histórias que uma criança conta.",
+      "Fábulas parecidas aparecem na Grécia, na Índia, na África e além."
+     ],
+     "q": "Que fábula você lembra da infância?",
+     "c": "Conte de novo uma fábula que você conhece em três frases, com a moral no fim."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Tortoise and the Hare",
+     "g": "Learn Aesop's classic about steady effort and what it teaches storytellers.",
+     "p": [
+      "A fast hare mocks a slow tortoise and challenges it to a race.",
+      "The hare naps, the tortoise keeps walking and crosses the line first.",
+      "Storytellers learn that a clear, simple plot can last for thousands of years."
+     ],
+     "q": "Do you cheer for the hare or the tortoise, and why?",
+     "c": "Retell this fable with a new animal pair and the same lesson."
+    },
+    "de": {
+     "t": "Der Hase und die Schildkröte",
+     "g": "Lerne Äsops Klassiker über beständigen Einsatz kennen und was er Erzählern lehrt.",
+     "p": [
+      "Ein schneller Hase verspottet eine langsame Schildkröte und fordert sie zum Rennen heraus.",
+      "Der Hase macht ein Nickerchen, die Schildkröte geht weiter und gewinnt.",
+      "Erzähler lernen: Eine klare, einfache Handlung kann tausende Jahre überdauern."
+     ],
+     "q": "Hältst du zum Hasen oder zur Schildkröte, und warum?",
+     "c": "Erzähle diese Fabel mit einem neuen Tierpaar und derselben Lehre neu."
+    },
+    "es": {
+     "t": "La liebre y la tortuga",
+     "g": "Conoce el clásico de Esopo sobre el esfuerzo constante y lo que enseña a los narradores.",
+     "p": [
+      "Una liebre veloz se burla de una tortuga lenta y la reta a una carrera.",
+      "La liebre duerme la siesta, la tortuga sigue andando y cruza la meta primero.",
+      "Los narradores aprenden que una trama clara y simple dura miles de años."
+     ],
+     "q": "¿Animas a la liebre o a la tortuga, y por qué?",
+     "c": "Cuenta esta fábula con una nueva pareja de animales y la misma enseñanza."
+    },
+    "fr": {
+     "t": "Le lièvre et la tortue",
+     "g": "Découvre le classique d'Ésope sur l'effort régulier et ce qu'il apprend aux conteurs.",
+     "p": [
+      "Un lièvre rapide se moque d'une tortue lente et la défie à la course.",
+      "Le lièvre fait la sieste, la tortue continue de marcher et franchit la ligne la première.",
+      "Les conteurs apprennent qu'une intrigue claire et simple dure des milliers d'années."
+     ],
+     "q": "Tu encourages le lièvre ou la tortue, et pourquoi ?",
+     "c": "Raconte à nouveau cette fable avec un nouveau duo d'animaux et la même leçon."
+    },
+    "it": {
+     "t": "La lepre e la tartaruga",
+     "g": "Scopri il classico di Esopo sull'impegno costante e ciò che insegna ai narratori.",
+     "p": [
+      "Una lepre veloce prende in giro una tartaruga lenta e la sfida a una gara.",
+      "La lepre schiaccia un pisolino, la tartaruga continua a camminare e vince.",
+      "I narratori imparano che una trama chiara e semplice dura migliaia di anni."
+     ],
+     "q": "Tifi per la lepre o per la tartaruga, e perché?",
+     "c": "Racconta di nuovo questa favola con una nuova coppia di animali e la stessa morale."
+    },
+    "pt": {
+     "t": "A lebre e a tartaruga",
+     "g": "Conhece o clássico de Esopo sobre esforço constante e o que ensina aos contadores.",
+     "p": [
+      "Uma lebre veloz goza com uma tartaruga lenta e desafia-a para uma corrida.",
+      "A lebre dorme uma sesta, a tartaruga continua a andar e chega primeiro.",
+      "Os contadores aprendem que um enredo claro e simples dura milhares de anos."
+     ],
+     "q": "Torces pela lebre ou pela tartaruga, e porquê?",
+     "c": "Conta de novo esta fábula com um novo par de animais e a mesma lição."
+    },
+    "pt_BR": {
+     "t": "A lebre e a tartaruga",
+     "g": "Conheça o clássico de Esopo sobre esforço constante e o que ele ensina aos contadores.",
+     "p": [
+      "Uma lebre veloz zomba de uma tartaruga lenta e a desafia para uma corrida.",
+      "A lebre tira uma soneca, a tartaruga continua andando e chega primeiro.",
+      "Os contadores aprendem que um enredo claro e simples dura milhares de anos."
+     ],
+     "q": "Você torce pela lebre ou pela tartaruga, e por quê?",
+     "c": "Conte de novo esta fábula com uma nova dupla de animais e a mesma lição."
+    }
+   }
+  }
+ ]
+}

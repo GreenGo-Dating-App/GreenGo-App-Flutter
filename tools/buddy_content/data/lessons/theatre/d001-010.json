@@ -1,0 +1,835 @@
+{
+ "topic": "theatre",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What makes theatre theatre",
+     "g": "Discover why live performers and a live audience in one room create a magic no screen can copy.",
+     "p": [
+      "Theatre needs only three things: performers, an audience and a shared moment in the same place.",
+      "Every performance is unique, because the actors and the crowd shape it together each night.",
+      "You can watch a show in a grand hall, a park or a village square: the place matters less than the moment."
+     ],
+     "q": "What is the first thing that comes to mind when you hear the word theatre?",
+     "c": "Today, tell a short story out loud to someone, with one gesture and one change of voice."
+    },
+    "de": {
+     "t": "Was Theater zu Theater macht",
+     "g": "Entdecke, warum Live-Darsteller und Publikum im selben Raum eine Magie schaffen, die kein Bildschirm ersetzt.",
+     "p": [
+      "Theater braucht nur drei Dinge: Darsteller, Publikum und einen gemeinsamen Moment am selben Ort.",
+      "Jede Vorstellung ist einmalig, denn Schauspieler und Publikum gestalten sie jeden Abend neu.",
+      "Man kann Theater im großen Saal, im Park oder auf dem Dorfplatz erleben: Der Moment zählt mehr als der Ort."
+     ],
+     "q": "Was fällt dir als Erstes ein, wenn du das Wort Theater hörst?",
+     "c": "Erzähle heute jemandem laut eine kurze Geschichte, mit einer Geste und einem Stimmwechsel."
+    },
+    "es": {
+     "t": "Qué hace que el teatro sea teatro",
+     "g": "Descubre por qué actores y público vivos en una misma sala crean una magia que ninguna pantalla copia.",
+     "p": [
+      "El teatro solo necesita tres cosas: intérpretes, público y un momento compartido en el mismo lugar.",
+      "Cada función es única, porque actores y público la moldean juntos cada noche.",
+      "Se puede ver teatro en una gran sala, un parque o una plaza de pueblo: importa más el momento que el lugar."
+     ],
+     "q": "¿Qué es lo primero que te viene a la mente al oír la palabra teatro?",
+     "c": "Hoy cuéntale en voz alta una historia corta a alguien, con un gesto y un cambio de voz."
+    },
+    "fr": {
+     "t": "Ce qui fait le théâtre",
+     "g": "Découvre pourquoi des interprètes et un public réunis dans une même salle créent une magie qu'aucun écran ne copie.",
+     "p": [
+      "Le théâtre ne demande que trois choses : des interprètes, un public et un moment partagé au même endroit.",
+      "Chaque représentation est unique, car acteurs et spectateurs la façonnent ensemble chaque soir.",
+      "On peut voir du théâtre dans une grande salle, un parc ou une place de village : le moment compte plus que le lieu."
+     ],
+     "q": "Quelle est la première chose qui te vient à l'esprit quand tu entends le mot théâtre ?",
+     "c": "Aujourd'hui, raconte une courte histoire à voix haute à quelqu'un, avec un geste et un changement de voix."
+    },
+    "it": {
+     "t": "Cosa rende il teatro teatro",
+     "g": "Scopri perché attori e pubblico dal vivo nella stessa sala creano una magia che nessuno schermo può copiare.",
+     "p": [
+      "Il teatro ha bisogno di tre cose: interpreti, pubblico e un momento condiviso nello stesso luogo.",
+      "Ogni replica è unica, perché attori e spettatori la plasmano insieme ogni sera.",
+      "Si può vedere teatro in una grande sala, in un parco o in una piazza di paese: conta più il momento del luogo."
+     ],
+     "q": "Qual è la prima cosa che ti viene in mente quando senti la parola teatro?",
+     "c": "Oggi racconta ad alta voce una breve storia a qualcuno, con un gesto e un cambio di voce."
+    },
+    "pt": {
+     "t": "O que faz o teatro ser teatro",
+     "g": "Descobre porque é que artistas e público ao vivo na mesma sala criam uma magia que nenhum ecrã copia.",
+     "p": [
+      "O teatro precisa só de três coisas: intérpretes, público e um momento partilhado no mesmo lugar.",
+      "Cada espetáculo é único, porque atores e público o moldam juntos todas as noites.",
+      "Pode ver-se teatro numa grande sala, num parque ou numa praça de aldeia: o momento conta mais do que o lugar."
+     ],
+     "q": "Qual é a primeira coisa que te vem à cabeça quando ouves a palavra teatro?",
+     "c": "Hoje conta uma história curta em voz alta a alguém, com um gesto e uma mudança de voz."
+    },
+    "pt_BR": {
+     "t": "O que faz o teatro ser teatro",
+     "g": "Descubra por que artistas e público ao vivo na mesma sala criam uma magia que nenhuma tela copia.",
+     "p": [
+      "O teatro precisa só de três coisas: intérpretes, plateia e um momento compartilhado no mesmo lugar.",
+      "Cada apresentação é única, porque atores e plateia a moldam juntos toda noite.",
+      "Dá para ver teatro num grande salão, num parque ou na praça da cidade: o momento importa mais que o lugar."
+     ],
+     "q": "Qual a primeira coisa que vem à sua cabeça quando você ouve a palavra teatro?",
+     "c": "Hoje conte uma história curta em voz alta para alguém, com um gesto e uma mudança de voz."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Theatre around the world",
+     "g": "See how people on every continent have always told stories on stage in their own style.",
+     "p": [
+      "Ancient Greeks built huge open-air theatres where whole cities gathered for plays in honour of Dionysus.",
+      "Japan's Noh and India's Kathakali use masks, make-up and slow, precise movement to tell age-old tales.",
+      "Africa, the Americas and Europe all have storytelling traditions with masks, drums, songs and dance."
+     ],
+     "q": "Which country's theatre or storytelling tradition would you most like to see live?",
+     "c": "Today, look up one theatre tradition from a country you have never explored and note one fact."
+    },
+    "de": {
+     "t": "Theater rund um die Welt",
+     "g": "Sieh, wie Menschen auf allen Kontinenten schon immer in ihrem eigenen Stil Geschichten auf der Bühne erzählen.",
+     "p": [
+      "Die alten Griechen bauten riesige Freilichttheater, in denen ganze Städte zu Stücken zu Ehren des Dionysos kamen.",
+      "Japans Noh und Indiens Kathakali erzählen uralte Geschichten mit Masken, Schminke und langsamen, genauen Bewegungen.",
+      "Afrika, Amerika und Europa kennen Erzähltraditionen mit Masken, Trommeln, Liedern und Tanz."
+     ],
+     "q": "Welche Theater- oder Erzähltradition eines Landes würdest du am liebsten live sehen?",
+     "c": "Suche heute eine Theatertradition aus einem Land, das du nicht kennst, und notiere eine Tatsache."
+    },
+    "es": {
+     "t": "El teatro alrededor del mundo",
+     "g": "Mira cómo en todos los continentes la gente siempre ha contado historias en escena a su manera.",
+     "p": [
+      "Los antiguos griegos construyeron enormes teatros al aire libre donde ciudades enteras veían obras en honor a Dioniso.",
+      "El Noh japonés y el Kathakali indio cuentan relatos milenarios con máscaras, maquillaje y movimientos lentos y precisos.",
+      "África, América y Europa tienen tradiciones narrativas con máscaras, tambores, cantos y danza."
+     ],
+     "q": "¿El teatro o la tradición narrativa de qué país te gustaría ver en directo?",
+     "c": "Hoy busca una tradición teatral de un país que no conozcas y anota un dato."
+    },
+    "fr": {
+     "t": "Le théâtre autour du monde",
+     "g": "Vois comment, sur tous les continents, les gens ont toujours raconté des histoires sur scène à leur façon.",
+     "p": [
+      "Les Grecs anciens bâtissaient d'immenses théâtres en plein air où des villes entières venaient voir des pièces en l'honneur de Dionysos.",
+      "Le Nô japonais et le Kathakali indien racontent de vieux récits avec masques, maquillage et gestes lents et précis.",
+      "L'Afrique, les Amériques et l'Europe ont des traditions de conte avec masques, tambours, chants et danse."
+     ],
+     "q": "Le théâtre ou la tradition de conte de quel pays aimerais-tu voir en vrai ?",
+     "c": "Aujourd'hui, cherche une tradition théâtrale d'un pays que tu ne connais pas et note un fait."
+    },
+    "it": {
+     "t": "Il teatro nel mondo",
+     "g": "Guarda come su ogni continente le persone abbiano sempre raccontato storie sul palco a modo loro.",
+     "p": [
+      "Gli antichi Greci costruirono enormi teatri all'aperto dove intere città assistevano a drammi in onore di Dioniso.",
+      "Il Noh giapponese e il Kathakali indiano narrano storie antiche con maschere, trucco e movimenti lenti e precisi.",
+      "Africa, Americhe ed Europa hanno tradizioni narrative con maschere, tamburi, canti e danza."
+     ],
+     "q": "Il teatro o la tradizione narrativa di quale paese ti piacerebbe vedere dal vivo?",
+     "c": "Oggi cerca una tradizione teatrale di un paese che non conosci e annota un fatto."
+    },
+    "pt": {
+     "t": "O teatro à volta do mundo",
+     "g": "Vê como, em todos os continentes, as pessoas sempre contaram histórias em palco ao seu modo.",
+     "p": [
+      "Os gregos antigos construíram enormes teatros ao ar livre onde cidades inteiras viam peças em honra de Dioniso.",
+      "O Noh japonês e o Kathakali indiano contam histórias antigas com máscaras, maquilhagem e movimentos lentos e precisos.",
+      "África, América e Europa têm tradições narrativas com máscaras, tambores, cantos e dança."
+     ],
+     "q": "O teatro ou a tradição narrativa de que país gostarias de ver ao vivo?",
+     "c": "Hoje procura uma tradição teatral de um país que não conheças e anota um facto."
+    },
+    "pt_BR": {
+     "t": "O teatro ao redor do mundo",
+     "g": "Veja como, em todos os continentes, as pessoas sempre contaram histórias no palco do seu jeito.",
+     "p": [
+      "Os gregos antigos construíram enormes teatros a céu aberto onde cidades inteiras viam peças em honra a Dionísio.",
+      "O Noh japonês e o Kathakali indiano contam histórias antigas com máscaras, maquiagem e movimentos lentos e precisos.",
+      "África, Américas e Europa têm tradições narrativas com máscaras, tambores, cantos e dança."
+     ],
+     "q": "O teatro ou a tradição narrativa de qual país você gostaria de ver ao vivo?",
+     "c": "Hoje pesquise uma tradição teatral de um país que você não conhece e anote um fato."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Plays, musicals and other live shows",
+     "g": "Learn the main families of live performance so you can pick the show that suits your mood.",
+     "p": [
+      "Plays tell stories mostly through spoken dialogue, while musicals mix speech, songs and dance.",
+      "Opera is sung throughout, and dance tells stories through movement alone.",
+      "Comedy, improv and physical theatre rely on timing, surprise and the performers' bodies."
+     ],
+     "q": "Which kind of live show do you enjoy most: play, musical, opera, dance or comedy?",
+     "c": "Today, pick one type of show you have never seen and find out what is on locally."
+    },
+    "de": {
+     "t": "Schauspiel, Musical und andere Live-Shows",
+     "g": "Lerne die großen Familien der Live-Aufführung kennen, damit du die Show nach deiner Stimmung wählst.",
+     "p": [
+      "Schauspiele erzählen vor allem durch gesprochene Dialoge, Musicals mischen Sprache, Lieder und Tanz.",
+      "Die Oper wird durchgehend gesungen, und Tanz erzählt Geschichten allein durch Bewegung.",
+      "Komödie, Improtheater und Körpertheater leben von Timing, Überraschung und dem Körper der Darsteller."
+     ],
+     "q": "Welche Art von Live-Show magst du am liebsten: Schauspiel, Musical, Oper, Tanz oder Comedy?",
+     "c": "Such dir heute eine Showart aus, die du noch nie gesehen hast, und finde heraus, was es in deiner Stadt gibt."
+    },
+    "es": {
+     "t": "Obras, musicales y otros espectáculos en vivo",
+     "g": "Conoce las grandes familias del espectáculo en vivo para elegir la función que va con tu ánimo.",
+     "p": [
+      "Las obras de teatro cuentan historias sobre todo con diálogo hablado; los musicales mezclan texto, canciones y baile.",
+      "La ópera se canta de principio a fin, y la danza cuenta historias solo con el movimiento.",
+      "La comedia, la improvisación y el teatro físico dependen del ritmo, la sorpresa y el cuerpo de los intérpretes."
+     ],
+     "q": "¿Qué tipo de espectáculo disfrutas más: obra, musical, ópera, danza o comedia?",
+     "c": "Hoy elige un tipo de espectáculo que nunca hayas visto y averigua qué hay en tu ciudad."
+    },
+    "fr": {
+     "t": "Pièces, comédies musicales et autres spectacles",
+     "g": "Apprends les grandes familles du spectacle vivant pour choisir celui qui convient à ton humeur.",
+     "p": [
+      "Les pièces racontent surtout par le dialogue parlé, alors que les comédies musicales mêlent texte, chansons et danse.",
+      "L'opéra est chanté de bout en bout, et la danse raconte des histoires par le seul mouvement.",
+      "La comédie, l'improvisation et le théâtre physique reposent sur le rythme, la surprise et le corps des interprètes."
+     ],
+     "q": "Quel genre de spectacle aimes-tu le plus : pièce, comédie musicale, opéra, danse ou humour ?",
+     "c": "Aujourd'hui, choisis un genre de spectacle que tu n'as jamais vu et regarde ce qui existe près de chez toi."
+    },
+    "it": {
+     "t": "Prosa, musical e altri spettacoli dal vivo",
+     "g": "Impara le grandi famiglie dello spettacolo dal vivo per scegliere quello adatto al tuo umore.",
+     "p": [
+      "La prosa racconta soprattutto con il dialogo parlato, mentre il musical unisce parole, canzoni e danza.",
+      "L'opera lirica è cantata dall'inizio alla fine, e la danza racconta storie solo con il movimento.",
+      "Commedia, improvvisazione e teatro fisico si basano su tempi, sorpresa e corpo degli interpreti."
+     ],
+     "q": "Che tipo di spettacolo dal vivo preferisci: prosa, musical, opera, danza o comicità?",
+     "c": "Oggi scegli un tipo di spettacolo che non hai mai visto e scopri cosa c'è nella tua città."
+    },
+    "pt": {
+     "t": "Peças, musicais e outros espetáculos ao vivo",
+     "g": "Conhece as grandes famílias do espetáculo ao vivo para escolheres o que combina com o teu humor.",
+     "p": [
+      "As peças contam histórias sobretudo com diálogo falado; os musicais misturam texto, canções e dança.",
+      "A ópera é cantada do princípio ao fim, e a dança conta histórias só com o movimento.",
+      "A comédia, a improvisação e o teatro físico dependem do ritmo, da surpresa e do corpo dos intérpretes."
+     ],
+     "q": "Que tipo de espetáculo gostas mais: peça, musical, ópera, dança ou comédia?",
+     "c": "Hoje escolhe um tipo de espetáculo que nunca viste e descobre o que há na tua cidade."
+    },
+    "pt_BR": {
+     "t": "Peças, musicais e outros shows ao vivo",
+     "g": "Conheça as grandes famílias do espetáculo ao vivo para escolher o que combina com seu humor.",
+     "p": [
+      "As peças contam histórias principalmente com diálogo falado; os musicais misturam texto, canções e dança.",
+      "A ópera é cantada do começo ao fim, e a dança conta histórias só com o movimento.",
+      "A comédia, a improvisação e o teatro físico dependem de ritmo, surpresa e do corpo dos intérpretes."
+     ],
+     "q": "Que tipo de espetáculo você mais curte: peça, musical, ópera, dança ou comédia?",
+     "c": "Hoje escolha um tipo de espetáculo que você nunca viu e descubra o que tem na sua cidade."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first memory of a show",
+     "g": "Recall an early live show and see why those first performances stay with us for life.",
+     "p": [
+      "Early shows hit hard because everything is new: the lights, the costumes and the hush before the start.",
+      "Even a school play or a street performance counts: the shared excitement is what we remember.",
+      "Noticing what moved you back then tells you what you may love in theatre today."
+     ],
+     "q": "What is your earliest memory of a live show, a school play or a concert?",
+     "c": "Today, describe that memory in three sentences to a friend: what you saw, heard and felt."
+    },
+    "de": {
+     "t": "Deine erste Erinnerung an eine Aufführung",
+     "g": "Erinnere dich an eine frühe Live-Show und sieh, warum erste Aufführungen ein Leben lang bleiben.",
+     "p": [
+      "Frühe Shows wirken stark, weil alles neu ist: das Licht, die Kostüme und die Stille vor dem Beginn.",
+      "Auch ein Schultheater oder ein Straßenauftritt zählt: Die gemeinsame Aufregung bleibt im Gedächtnis.",
+      "Wenn du merkst, was dich damals berührt hat, weißt du, was dir heute im Theater gefallen könnte."
+     ],
+     "q": "Was ist deine früheste Erinnerung an eine Live-Show, ein Schulstück oder ein Konzert?",
+     "c": "Beschreibe diese Erinnerung heute einem Freund in drei Sätzen: was du sahst, hörtest und fühltest."
+    },
+    "es": {
+     "t": "Tu primer recuerdo de un espectáculo",
+     "g": "Recuerda un espectáculo temprano y descubre por qué esas primeras funciones nos acompañan toda la vida.",
+     "p": [
+      "Los primeros espectáculos impactan porque todo es nuevo: las luces, el vestuario y el silencio antes de empezar.",
+      "Hasta una obra escolar o un número callejero cuenta: lo que recordamos es la emoción compartida.",
+      "Fijarte en lo que te emocionó entonces te dice qué puede gustarte hoy en el teatro."
+     ],
+     "q": "¿Cuál es tu primer recuerdo de un espectáculo en vivo, una obra del cole o un concierto?",
+     "c": "Hoy describe ese recuerdo en tres frases a un amigo: lo que viste, oíste y sentiste."
+    },
+    "fr": {
+     "t": "Ton premier souvenir de spectacle",
+     "g": "Retrouve un premier spectacle vivant et vois pourquoi ces débuts nous marquent pour la vie.",
+     "p": [
+      "Les premiers spectacles frappent parce que tout est neuf : les lumières, les costumes et le silence avant le début.",
+      "Même une pièce d'école ou un numéro de rue compte : c'est l'émotion partagée qu'on retient.",
+      "Remarquer ce qui t'a touché alors te dit ce que tu pourrais aimer aujourd'hui au théâtre."
+     ],
+     "q": "Quel est ton tout premier souvenir de spectacle, de pièce d'école ou de concert ?",
+     "c": "Aujourd'hui, décris ce souvenir en trois phrases à un ami : ce que tu as vu, entendu et ressenti."
+    },
+    "it": {
+     "t": "Il tuo primo ricordo di uno spettacolo",
+     "g": "Ricorda uno spettacolo di quando eri piccolo e scopri perché le prime volte ci restano per sempre.",
+     "p": [
+      "I primi spettacoli colpiscono perché tutto è nuovo: le luci, i costumi e il silenzio prima dell'inizio.",
+      "Conta anche una recita scolastica o un numero di strada: ricordiamo l'emozione condivisa.",
+      "Capire cosa ti ha emozionato allora ti dice cosa potresti amare oggi a teatro."
+     ],
+     "q": "Qual è il tuo primo ricordo di uno spettacolo dal vivo, una recita scolastica o un concerto?",
+     "c": "Oggi descrivi quel ricordo in tre frasi a un amico: cosa hai visto, sentito e provato."
+    },
+    "pt": {
+     "t": "A tua primeira memória de um espetáculo",
+     "g": "Recorda um espetáculo antigo e vê porque é que as primeiras vezes ficam connosco para sempre.",
+     "p": [
+      "Os primeiros espetáculos marcam porque tudo é novo: as luzes, os figurinos e o silêncio antes de começar.",
+      "Até uma peça da escola ou um número de rua conta: o que lembramos é a emoção partilhada.",
+      "Reparar no que te tocou então diz-te o que podes gostar hoje no teatro."
+     ],
+     "q": "Qual é a tua primeira memória de um espetáculo ao vivo, uma peça da escola ou um concerto?",
+     "c": "Hoje descreve essa memória em três frases a um amigo: o que viste, ouviste e sentiste."
+    },
+    "pt_BR": {
+     "t": "Sua primeira lembrança de um espetáculo",
+     "g": "Relembre um espetáculo antigo e veja por que as primeiras vezes ficam com a gente para sempre.",
+     "p": [
+      "Os primeiros espetáculos marcam porque tudo é novo: as luzes, os figurinos e o silêncio antes de começar.",
+      "Até uma peça da escola ou um número de rua conta: o que lembramos é a emoção compartilhada.",
+      "Perceber o que te tocou naquela época mostra o que você pode curtir hoje no teatro."
+     ],
+     "q": "Qual é a sua primeira lembrança de um espetáculo ao vivo, uma peça da escola ou um show?",
+     "c": "Hoje descreva essa lembrança em três frases para um amigo: o que você viu, ouviu e sentiu."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Parts of a stage",
+     "g": "Learn the basic map of a stage from the actor's point of view, so stage talk makes sense.",
+     "p": [
+      "Stage left and right are the actor's left and right while facing the audience, not yours.",
+      "Upstage is the back, downstage is the front near the audience; the wings are the hidden side areas.",
+      "The apron is the part of the stage that reaches out past the curtain toward the seats."
+     ],
+     "q": "If an actor walks downstage right, where would you look to see them?",
+     "c": "Today, mark a floor plan at home with upstage, downstage, left and right, then walk it."
+    },
+    "de": {
+     "t": "Teile einer Bühne",
+     "g": "Lerne die Grundkarte einer Bühne aus Sicht der Schauspieler, damit Bühnensprache Sinn ergibt.",
+     "p": [
+      "Bühne links und rechts sind die Seiten des Schauspielers mit Blick zum Publikum, nicht deine.",
+      "Hinterbühne ist hinten, Vorderbühne vorn beim Publikum; die Seitenbühnen sind die verdeckten Bereiche.",
+      "Die Vorbühne ragt vor dem Vorhang in Richtung Zuschauerraum."
+     ],
+     "q": "Wenn ein Schauspieler vorn rechts geht, wohin schaust du, um ihn zu sehen?",
+     "c": "Zeichne heute einen Grundriss zu Hause mit hinten, vorn, links und rechts und gehe ihn ab."
+    },
+    "es": {
+     "t": "Las partes de un escenario",
+     "g": "Aprende el mapa básico de un escenario desde el punto de vista del actor para entender el lenguaje teatral.",
+     "p": [
+      "Izquierda y derecha del escenario son las del actor mirando al público, no las tuyas.",
+      "Fondo es la parte de atrás, proscenio la delantera cerca del público; las bambalinas y los laterales quedan ocultos.",
+      "El proscenio avanza más allá del telón hacia las butacas."
+     ],
+     "q": "Si un actor camina hacia delante a la derecha, ¿hacia dónde miras para verlo?",
+     "c": "Hoy marca en casa un plano con fondo, frente, izquierda y derecha, y recórrelo."
+    },
+    "fr": {
+     "t": "Les parties d'une scène",
+     "g": "Apprends le plan de base d'une scène du point de vue de l'acteur pour comprendre le vocabulaire du plateau.",
+     "p": [
+      "Côté cour et côté jardin se définissent depuis l'acteur face au public : cour est à sa droite, jardin à sa gauche.",
+      "Le fond de scène est à l'arrière, l'avant-scène près du public; les coulisses sont les côtés cachés.",
+      "L'avant-scène avance devant le rideau vers les fauteuils."
+     ],
+     "q": "Si un acteur marche à l'avant-scène côté cour, où regardes-tu pour le voir ?",
+     "c": "Aujourd'hui, trace chez toi un plan avec fond, avant, cour et jardin, puis parcours-le."
+    },
+    "it": {
+     "t": "Le parti di un palcoscenico",
+     "g": "Impara la mappa base di un palco dal punto di vista dell'attore per capire il linguaggio di scena.",
+     "p": [
+      "Destra e sinistra del palco sono quelle dell'attore rivolto al pubblico, non le tue.",
+      "Il fondale è il retro, il proscenio il davanti vicino al pubblico; le quinte sono le zone laterali nascoste.",
+      "Il proscenio sporge oltre il sipario verso le poltrone."
+     ],
+     "q": "Se un attore cammina in proscenio a destra, dove guardi per vederlo?",
+     "c": "Oggi disegna a casa una pianta con fondo, proscenio, destra e sinistra e percorrila."
+    },
+    "pt": {
+     "t": "As partes de um palco",
+     "g": "Aprende o mapa básico de um palco do ponto de vista do ator para entenderes a linguagem de cena.",
+     "p": [
+      "Esquerda e direita do palco são as do ator virado para o público, não as tuas.",
+      "O fundo é a parte de trás, a boca de cena a da frente junto ao público; as teias e os lados ficam escondidos.",
+      "O proscénio avança além do pano em direção aos lugares."
+     ],
+     "q": "Se um ator caminha para a frente à direita, para onde olhas para o ver?",
+     "c": "Hoje marca em casa uma planta com fundo, frente, esquerda e direita e percorre-a."
+    },
+    "pt_BR": {
+     "t": "As partes de um palco",
+     "g": "Aprenda o mapa básico de um palco do ponto de vista do ator para entender a linguagem de cena.",
+     "p": [
+      "Esquerda e direita do palco são as do ator voltado para a plateia, não as suas.",
+      "O fundo é a parte de trás, a frente é perto da plateia; as coxias são as laterais escondidas.",
+      "O proscênio avança além da cortina em direção às poltronas."
+     ],
+     "q": "Se um ator anda para a frente à direita, para onde você olha para vê-lo?",
+     "c": "Hoje marque em casa uma planta com fundo, frente, esquerda e direita e ande por ela."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Types of stages",
+     "g": "See how the shape of a stage changes where you sit and how close you feel to the story.",
+     "p": [
+      "A proscenium stage is a picture frame: the audience sits in front and sees through the arch.",
+      "A thrust stage juts into the audience, and in-the-round puts actors in the middle with seats all around.",
+      "A black box is a simple dark room where seats and stage can be arranged freely for each show."
+     ],
+     "q": "Which stage shape would you prefer: a frame, a thrust, a circle or a black box?",
+     "c": "Today, rearrange chairs at home into a circle and tell a one-minute story in the middle."
+    },
+    "de": {
+     "t": "Bühnenformen",
+     "g": "Sieh, wie die Form einer Bühne verändert, wo du sitzt und wie nah du der Geschichte kommst.",
+     "p": [
+      "Die Guckkastenbühne ist wie ein Bilderrahmen: Das Publikum sitzt davor und blickt durch den Bogen.",
+      "Die Vorbühne ragt ins Publikum, und die Arena-Bühne stellt Schauspieler in die Mitte, Sitze ringsum.",
+      "Die Blackbox ist ein schlichter dunkler Raum, in dem Bühne und Sitze für jede Show neu angeordnet werden."
+     ],
+     "q": "Welche Bühnenform würdest du bevorzugen: Rahmen, Vorbühne, Kreis oder Blackbox?",
+     "c": "Stelle heute zu Hause Stühle im Kreis auf und erzähle in der Mitte eine einminütige Geschichte."
+    },
+    "es": {
+     "t": "Tipos de escenario",
+     "g": "Mira cómo la forma del escenario cambia dónde te sientas y cuánto te acercas a la historia.",
+     "p": [
+      "El escenario a la italiana es un marco de cuadro: el público se sienta delante y mira por el arco.",
+      "El escenario con proyección entra en el público, y el circular pone a los actores al centro con asientos alrededor.",
+      "La caja negra es una sala oscura y sencilla donde público y escena se colocan libremente en cada obra."
+     ],
+     "q": "¿Qué forma de escenario prefieres: marco, proyección, círculo o caja negra?",
+     "c": "Hoy coloca sillas en círculo en casa y cuenta una historia de un minuto en el centro."
+    },
+    "fr": {
+     "t": "Les types de scènes",
+     "g": "Vois comment la forme d'une scène change ta place et ta proximité avec l'histoire.",
+     "p": [
+      "La scène à l'italienne est un cadre de tableau : le public est en face et regarde à travers l'arche.",
+      "La scène avancée s'enfonce dans le public, et le théâtre en rond place les acteurs au centre, entourés de sièges.",
+      "La boîte noire est une salle sombre et simple où scène et gradins s'organisent librement pour chaque spectacle."
+     ],
+     "q": "Quelle forme de scène préfères-tu : cadre, avancée, rond ou boîte noire ?",
+     "c": "Aujourd'hui, installe des chaises en cercle chez toi et raconte une histoire d'une minute au milieu."
+    },
+    "it": {
+     "t": "Tipi di palcoscenico",
+     "g": "Scopri come la forma del palco cambia dove ti siedi e quanto ti senti vicino alla storia.",
+     "p": [
+      "Il palco all'italiana è una cornice: il pubblico siede di fronte e guarda attraverso l'arco.",
+      "Il palco a sporgere entra tra il pubblico, e quello circolare mette gli attori al centro con i posti intorno.",
+      "La black box è una sala buia e semplice dove palco e posti si dispongono liberamente per ogni spettacolo."
+     ],
+     "q": "Quale forma di palco preferisci: cornice, sporgente, circolare o black box?",
+     "c": "Oggi disponi delle sedie in cerchio a casa e racconta una storia di un minuto al centro."
+    },
+    "pt": {
+     "t": "Tipos de palco",
+     "g": "Vê como a forma do palco muda onde te sentas e o quanto te sentes perto da história.",
+     "p": [
+      "O palco à italiana é uma moldura: o público senta-se à frente e vê através do arco.",
+      "O palco avançado entra pelo público, e o circular põe os atores ao centro com lugares à volta.",
+      "A caixa negra é uma sala escura e simples onde palco e plateia se organizam livremente a cada espetáculo."
+     ],
+     "q": "Que forma de palco preferes: moldura, avançado, circular ou caixa negra?",
+     "c": "Hoje põe cadeiras em círculo em casa e conta uma história de um minuto ao centro."
+    },
+    "pt_BR": {
+     "t": "Tipos de palco",
+     "g": "Veja como a forma do palco muda onde você senta e o quanto se sente perto da história.",
+     "p": [
+      "O palco italiano é uma moldura: a plateia fica na frente e vê através do arco.",
+      "O palco que avança entra pela plateia, e a arena põe os atores no centro com assentos em volta.",
+      "A caixa preta é uma sala escura e simples onde palco e plateia se organizam livremente a cada espetáculo."
+     ],
+     "q": "Que forma de palco você prefere: moldura, avançado, arena ou caixa preta?",
+     "c": "Hoje coloque cadeiras em círculo em casa e conte uma história de um minuto no centro."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The people behind a show",
+     "g": "Meet the team that turns a script into a night of theatre and learn who does what.",
+     "p": [
+      "The playwright writes the text, and the director shapes how it comes alive on stage.",
+      "Designers create sets, costumes, lighting and sound, while actors bring the characters to life.",
+      "The stage manager calls every cue and keeps the show running, with a crew working unseen."
+     ],
+     "q": "If you could join any role in a production, which one would you choose?",
+     "c": "Today, watch the credits of a stage or film production and name three different roles."
+    },
+    "de": {
+     "t": "Die Menschen hinter einer Show",
+     "g": "Lerne das Team kennen, das ein Skript in einen Theaterabend verwandelt, und wer was macht.",
+     "p": [
+      "Der Autor schreibt den Text, und die Regie formt, wie er auf der Bühne lebendig wird.",
+      "Ausstatter schaffen Bühnenbild, Kostüme, Licht und Ton, während Schauspieler die Figuren verkörpern.",
+      "Die Inspizienz gibt jeden Einsatz und hält die Show am Laufen, mit einer unsichtbaren Crew im Hintergrund."
+     ],
+     "q": "Wenn du bei einer Produktion eine Rolle übernehmen könntest, welche wäre es?",
+     "c": "Sieh dir heute den Abspann einer Bühnen- oder Filmproduktion an und nenne drei verschiedene Aufgaben."
+    },
+    "es": {
+     "t": "Las personas detrás de un espectáculo",
+     "g": "Conoce al equipo que convierte un guion en una noche de teatro y quién hace qué.",
+     "p": [
+      "El dramaturgo escribe el texto, y la dirección decide cómo cobra vida en escena.",
+      "Los diseñadores crean escenografía, vestuario, luz y sonido, y los actores dan vida a los personajes.",
+      "El regidor da cada entrada y mantiene la función en marcha, con un equipo técnico invisible."
+     ],
+     "q": "Si pudieras tener cualquier puesto en una producción, ¿cuál elegirías?",
+     "c": "Hoy mira los créditos de una producción teatral o de cine y nombra tres oficios distintos."
+    },
+    "fr": {
+     "t": "Les gens derrière un spectacle",
+     "g": "Rencontre l'équipe qui transforme un texte en soirée de théâtre et découvre qui fait quoi.",
+     "p": [
+      "L'auteur écrit le texte, et le metteur en scène décide comment il prend vie sur le plateau.",
+      "Les créateurs conçoivent décors, costumes, lumières et son, tandis que les comédiens donnent vie aux personnages.",
+      "Le régisseur lance chaque top et fait tourner le spectacle, avec une équipe technique invisible."
+     ],
+     "q": "Si tu pouvais prendre n'importe quel rôle dans une production, lequel choisirais-tu ?",
+     "c": "Aujourd'hui, regarde le générique d'un spectacle ou d'un film et nomme trois métiers différents."
+    },
+    "it": {
+     "t": "Le persone dietro uno spettacolo",
+     "g": "Conosci la squadra che trasforma un copione in una serata di teatro e chi fa cosa.",
+     "p": [
+      "L'autore scrive il testo, e il regista decide come prende vita sul palco.",
+      "Scenografi, costumisti, light e sound designer creano l'aspetto, mentre gli attori danno vita ai personaggi.",
+      "Il direttore di scena dà ogni segnale e tiene in moto lo spettacolo, con una squadra tecnica invisibile."
+     ],
+     "q": "Se potessi scegliere un ruolo in una produzione, quale sceglieresti?",
+     "c": "Oggi guarda i titoli di coda di uno spettacolo o di un film e nomina tre mestieri diversi."
+    },
+    "pt": {
+     "t": "As pessoas por trás de um espetáculo",
+     "g": "Conhece a equipa que transforma um texto numa noite de teatro e quem faz o quê.",
+     "p": [
+      "O dramaturgo escreve o texto, e o encenador decide como ganha vida no palco.",
+      "Os criadores fazem cenário, figurinos, luz e som, enquanto os atores dão vida às personagens.",
+      "O ponto de cena dá cada deixa e mantém o espetáculo a andar, com uma equipa técnica invisível."
+     ],
+     "q": "Se pudesses ter qualquer função numa produção, qual escolherias?",
+     "c": "Hoje vê os créditos de uma produção de teatro ou cinema e nomeia três funções diferentes."
+    },
+    "pt_BR": {
+     "t": "As pessoas por trás de um espetáculo",
+     "g": "Conheça a equipe que transforma um texto numa noite de teatro e quem faz o quê.",
+     "p": [
+      "O dramaturgo escreve o texto, e o diretor decide como ele ganha vida no palco.",
+      "Os criadores fazem cenário, figurino, luz e som, enquanto os atores dão vida aos personagens.",
+      "O contrarregra dá cada deixa e mantém o espetáculo andando, com uma equipe técnica invisível."
+     ],
+     "q": "Se você pudesse ter qualquer função numa produção, qual escolheria?",
+     "c": "Hoje veja os créditos de uma produção de teatro ou cinema e cite três funções diferentes."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading a theatre programme",
+     "g": "Learn what the printed programme holds so you can enjoy a show more deeply.",
+     "p": [
+      "The cast list shows who plays each role, and the creative team lists the director and designers.",
+      "Notes often explain the play's background, and the running time tells you when the interval comes.",
+      "Read it before the lights go down, and keep it afterwards as a souvenir of the night."
+     ],
+     "q": "Do you usually keep programmes or tickets as souvenirs of shows you have seen?",
+     "c": "Today, find a programme, poster or online cast page and name the director and one designer."
+    },
+    "de": {
+     "t": "Ein Theaterprogramm lesen",
+     "g": "Lerne, was im gedruckten Programmheft steht, damit du eine Aufführung tiefer genießt.",
+     "p": [
+      "Die Besetzungsliste zeigt, wer welche Rolle spielt, und das Team nennt Regie und Ausstattung.",
+      "Texte erklären oft den Hintergrund des Stücks, und die Spieldauer verrät, wann die Pause kommt.",
+      "Lies es, bevor das Licht ausgeht, und behalte es danach als Andenken an den Abend."
+     ],
+     "q": "Hebst du Programme oder Eintrittskarten als Erinnerung an gesehene Aufführungen auf?",
+     "c": "Suche heute ein Programmheft, Plakat oder eine Besetzungsseite und nenne Regie und eine Person der Ausstattung."
+    },
+    "es": {
+     "t": "Leer un programa de mano",
+     "g": "Aprende qué contiene el programa impreso para disfrutar más a fondo de una función.",
+     "p": [
+      "El reparto muestra quién interpreta cada papel, y el equipo creativo nombra a la dirección y a los diseñadores.",
+      "Las notas suelen explicar el contexto de la obra, y la duración indica cuándo llega el descanso.",
+      "Léelo antes de que se apaguen las luces y guárdalo después como recuerdo de la noche."
+     ],
+     "q": "¿Sueles guardar programas o entradas como recuerdo de los espectáculos que has visto?",
+     "c": "Hoy busca un programa, cartel o ficha de reparto y nombra a la dirección y a un diseñador."
+    },
+    "fr": {
+     "t": "Lire un programme de théâtre",
+     "g": "Apprends ce que contient le programme imprimé pour mieux profiter d'un spectacle.",
+     "p": [
+      "La distribution indique qui joue chaque rôle, et l'équipe artistique cite le metteur en scène et les créateurs.",
+      "Les notes expliquent souvent le contexte de la pièce, et la durée indique quand arrive l'entracte.",
+      "Lis-le avant que les lumières s'éteignent et garde-le ensuite comme souvenir de la soirée."
+     ],
+     "q": "Gardes-tu les programmes ou les billets en souvenir des spectacles vus ?",
+     "c": "Aujourd'hui, trouve un programme, une affiche ou une fiche de distribution et nomme le metteur en scène et un créateur."
+    },
+    "it": {
+     "t": "Leggere un programma di sala",
+     "g": "Impara cosa contiene il programma di sala per goderti di più uno spettacolo.",
+     "p": [
+      "La locandina del cast indica chi interpreta ogni ruolo, e il team creativo nomina regista e progettisti.",
+      "Le note spiegano spesso il contesto dell'opera, e la durata dice quando arriva l'intervallo.",
+      "Leggilo prima che le luci si spengano e conservalo dopo come ricordo della serata."
+     ],
+     "q": "Di solito conservi programmi o biglietti come ricordo degli spettacoli visti?",
+     "c": "Oggi trova un programma, un manifesto o una scheda del cast e nomina il regista e un progettista."
+    },
+    "pt": {
+     "t": "Ler um programa de sala",
+     "g": "Aprende o que contém o programa impresso para aproveitares melhor um espetáculo.",
+     "p": [
+      "A ficha artística mostra quem faz cada papel, e a equipa criativa nomeia o encenador e os criadores.",
+      "As notas explicam muitas vezes o contexto da peça, e a duração diz quando chega o intervalo.",
+      "Lê-o antes de as luzes se apagarem e guarda-o depois como recordação da noite."
+     ],
+     "q": "Costumas guardar programas ou bilhetes como recordação dos espetáculos que viste?",
+     "c": "Hoje encontra um programa, cartaz ou ficha artística e nomeia o encenador e um criador."
+    },
+    "pt_BR": {
+     "t": "Ler um programa de teatro",
+     "g": "Aprenda o que traz o programa impresso para curtir mais a fundo um espetáculo.",
+     "p": [
+      "A ficha técnica mostra quem faz cada papel, e a equipe criativa cita o diretor e os criadores.",
+      "As notas costumam explicar o contexto da peça, e a duração diz quando chega o intervalo.",
+      "Leia antes de as luzes se apagarem e guarde depois como lembrança da noite."
+     ],
+     "q": "Você costuma guardar programas ou ingressos como lembrança dos espetáculos que viu?",
+     "c": "Hoje encontre um programa, cartaz ou ficha técnica e cite o diretor e um criador."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Booking your first ticket",
+     "g": "Learn to choose seats by view, budget and the kind of show, so your first booking is easy.",
+     "p": [
+      "Stalls sit closest to the stage, the circle and balcony are higher, and boxes sit along the sides.",
+      "Central seats give the best overall view; side seats can be cheaper but may hide part of the stage.",
+      "For a musical, a little distance shows the whole stage; for an intimate play, closer is magical."
+     ],
+     "q": "Where do you like to sit in a theatre or cinema: front, middle or back?",
+     "c": "Today, look at a theatre seating plan online and pick your ideal seat and why."
+    },
+    "de": {
+     "t": "Dein erstes Ticket buchen",
+     "g": "Lerne, Plätze nach Sicht, Budget und Art der Show zu wählen, damit deine erste Buchung leichtfällt.",
+     "p": [
+      "Das Parkett liegt am nächsten zur Bühne, Rang und Balkon sind höher, Logen sitzen an den Seiten.",
+      "Mittige Plätze bieten den besten Gesamtblick; Seitenplätze sind oft günstiger, verdecken aber manchmal etwas.",
+      "Bei einem Musical zeigt etwas Abstand die ganze Bühne; bei einem intimen Stück ist Nähe magisch."
+     ],
+     "q": "Wo sitzt du gern im Theater oder Kino: vorn, in der Mitte oder hinten?",
+     "c": "Sieh dir heute online einen Saalplan an und wähle deinen Lieblingsplatz samt Begründung."
+    },
+    "es": {
+     "t": "Reservar tu primera entrada",
+     "g": "Aprende a elegir asientos según la vista, el presupuesto y el tipo de espectáculo para reservar con facilidad.",
+     "p": [
+      "El patio de butacas está más cerca del escenario, el anfiteatro y el balcón más altos, y los palcos a los lados.",
+      "Los asientos centrales dan la mejor vista general; los laterales pueden ser más baratos pero tapar parte del escenario.",
+      "En un musical, algo de distancia muestra todo el escenario; en una obra íntima, cerca es mágico."
+     ],
+     "q": "¿Dónde te gusta sentarte en el teatro o el cine: delante, en medio o atrás?",
+     "c": "Hoy mira el plano de butacas de un teatro en línea y elige tu asiento ideal y por qué."
+    },
+    "fr": {
+     "t": "Réserver ta première place",
+     "g": "Apprends à choisir tes places selon la vue, le budget et le type de spectacle pour réserver facilement.",
+     "p": [
+      "L'orchestre est le plus proche de la scène, le balcon et le dernier balcon sont plus hauts, les loges sur les côtés.",
+      "Les places centrales offrent la meilleure vue d'ensemble; les côtés sont moins chers mais cachent parfois un peu la scène.",
+      "Pour une comédie musicale, un peu de recul montre toute la scène; pour une pièce intime, être près est magique."
+     ],
+     "q": "Où aimes-tu t'asseoir au théâtre ou au cinéma : devant, au milieu ou au fond ?",
+     "c": "Aujourd'hui, regarde le plan d'une salle en ligne et choisis ta place idéale en disant pourquoi."
+    },
+    "it": {
+     "t": "Prenotare il tuo primo biglietto",
+     "g": "Impara a scegliere i posti per visuale, budget e tipo di spettacolo, così la prima prenotazione è facile.",
+     "p": [
+      "La platea è la più vicina al palco, galleria e loggione sono più in alto, i palchi stanno ai lati.",
+      "I posti centrali offrono la visuale migliore; quelli laterali costano meno ma possono nascondere parte del palco.",
+      "Per un musical un po' di distanza mostra tutto il palco; per uno spettacolo intimo la vicinanza è magica."
+     ],
+     "q": "Dove ti piace sederti a teatro o al cinema: davanti, in mezzo o dietro?",
+     "c": "Oggi guarda online la piantina di un teatro e scegli il tuo posto ideale spiegando perché."
+    },
+    "pt": {
+     "t": "Reservar o teu primeiro bilhete",
+     "g": "Aprende a escolher lugares conforme a vista, o orçamento e o tipo de espetáculo para reservares com facilidade.",
+     "p": [
+      "A plateia fica mais perto do palco, o balcão e o varandim são mais altos, e os camarotes ficam aos lados.",
+      "Os lugares centrais dão a melhor vista geral; os laterais podem ser mais baratos mas tapar parte do palco.",
+      "Num musical, algum afastamento mostra o palco todo; numa peça íntima, estar perto é mágico."
+     ],
+     "q": "Onde gostas de te sentar no teatro ou no cinema: à frente, ao meio ou atrás?",
+     "c": "Hoje vê a planta de uma sala online e escolhe o teu lugar ideal e porquê."
+    },
+    "pt_BR": {
+     "t": "Reservando seu primeiro ingresso",
+     "g": "Aprenda a escolher lugares conforme a vista, o orçamento e o tipo de espetáculo para reservar com facilidade.",
+     "p": [
+      "A plateia fica mais perto do palco, o balcão e a galeria são mais altos, e os camarotes ficam nas laterais.",
+      "Os lugares centrais dão a melhor vista geral; os laterais podem ser mais baratos mas esconder parte do palco.",
+      "Num musical, um pouco de distância mostra o palco todo; numa peça íntima, estar perto é mágico."
+     ],
+     "q": "Onde você gosta de sentar no teatro ou no cinema: na frente, no meio ou atrás?",
+     "c": "Hoje veja a planta de um teatro online e escolha seu lugar ideal e por quê."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Theatre etiquette basics",
+     "g": "Learn simple habits that keep the magic alive for performers and the whole audience.",
+     "p": [
+      "Arrive early, switch your phone fully off, and unwrap sweets before the lights go down.",
+      "Keep chatter and bright screens away, because performers can hear and see more than you think.",
+      "Applaud, laugh and react warmly: a lively, respectful audience lifts the whole show."
+     ],
+     "q": "What small habit do you think makes a night at the theatre better for everyone?",
+     "c": "Today, practise sitting fully still and listening in silence for two minutes, as in a theatre."
+    },
+    "de": {
+     "t": "Theater-Etikette für Einsteiger",
+     "g": "Lerne einfache Gewohnheiten, die die Magie für Darsteller und das ganze Publikum bewahren.",
+     "p": [
+      "Komm früh, schalte dein Handy ganz aus und wickle Süßigkeiten aus, bevor das Licht ausgeht.",
+      "Halte Geflüster und helle Bildschirme fern, denn Darsteller hören und sehen mehr, als du denkst.",
+      "Klatsche, lache und reagiere herzlich: Ein lebendiges, respektvolles Publikum trägt die ganze Show."
+     ],
+     "q": "Welche kleine Gewohnheit macht deiner Meinung nach einen Theaterabend für alle besser?",
+     "c": "Übe heute zwei Minuten lang, ganz still zu sitzen und in Ruhe zuzuhören, wie im Theater."
+    },
+    "es": {
+     "t": "Normas básicas en el teatro",
+     "g": "Aprende hábitos sencillos que mantienen viva la magia para los artistas y todo el público.",
+     "p": [
+      "Llega pronto, apaga del todo el móvil y desenvuelve los caramelos antes de que bajen las luces.",
+      "Evita charlas y pantallas brillantes, porque los artistas oyen y ven más de lo que crees.",
+      "Aplaude, ríe y reacciona con cariño: un público vivo y respetuoso eleva toda la función."
+     ],
+     "q": "¿Qué pequeño hábito crees que mejora la noche de teatro para todos?",
+     "c": "Hoy practica estar totalmente quieto y escuchar en silencio dos minutos, como en un teatro."
+    },
+    "fr": {
+     "t": "Les bonnes manières au théâtre",
+     "g": "Apprends des gestes simples qui gardent la magie vivante pour les artistes et tout le public.",
+     "p": [
+      "Arrive tôt, éteins complètement ton téléphone et déballe tes bonbons avant que les lumières s'éteignent.",
+      "Évite bavardages et écrans lumineux, car les artistes entendent et voient plus que tu ne crois.",
+      "Applaudis, ris et réagis chaleureusement : un public vivant et respectueux porte tout le spectacle."
+     ],
+     "q": "Quelle petite habitude améliore, selon toi, une soirée au théâtre pour tout le monde ?",
+     "c": "Aujourd'hui, entraîne-toi à rester immobile et à écouter en silence pendant deux minutes, comme au théâtre."
+    },
+    "it": {
+     "t": "Le regole base del teatro",
+     "g": "Impara semplici abitudini che mantengono viva la magia per gli artisti e tutto il pubblico.",
+     "p": [
+      "Arriva presto, spegni del tutto il telefono e scarta le caramelle prima che si spengano le luci.",
+      "Evita chiacchiere e schermi luminosi, perché gli artisti sentono e vedono più di quanto pensi.",
+      "Applaudi, ridi e reagisci con calore: un pubblico vivace e rispettoso solleva tutto lo spettacolo."
+     ],
+     "q": "Quale piccola abitudine secondo te rende migliore una serata a teatro per tutti?",
+     "c": "Oggi esercitati a stare fermo e ad ascoltare in silenzio per due minuti, come a teatro."
+    },
+    "pt": {
+     "t": "Etiqueta básica no teatro",
+     "g": "Aprende hábitos simples que mantêm viva a magia para os artistas e todo o público.",
+     "p": [
+      "Chega cedo, desliga o telemóvel por completo e desembrulha os rebuçados antes de as luzes baixarem.",
+      "Evita conversas e ecrãs brilhantes, porque os artistas ouvem e veem mais do que pensas.",
+      "Aplaude, ri e reage com carinho: um público vivo e respeitador eleva todo o espetáculo."
+     ],
+     "q": "Que pequeno hábito achas que melhora a noite de teatro para todos?",
+     "c": "Hoje pratica ficar totalmente quieto e ouvir em silêncio durante dois minutos, como no teatro."
+    },
+    "pt_BR": {
+     "t": "Etiqueta básica no teatro",
+     "g": "Aprenda hábitos simples que mantêm viva a magia para os artistas e toda a plateia.",
+     "p": [
+      "Chegue cedo, desligue o celular por completo e desembrulhe as balas antes de as luzes baixarem.",
+      "Evite conversas e telas brilhantes, porque os artistas ouvem e veem mais do que você pensa.",
+      "Aplauda, ria e reaja com carinho: uma plateia viva e respeitosa eleva todo o espetáculo."
+     ],
+     "q": "Que pequeno hábito você acha que melhora a noite de teatro para todos?",
+     "c": "Hoje pratique ficar totalmente parado e ouvir em silêncio por dois minutos, como no teatro."
+    }
+   }
+  }
+ ]
+}

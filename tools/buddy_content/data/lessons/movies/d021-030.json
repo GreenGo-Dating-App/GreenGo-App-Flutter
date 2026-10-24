@@ -1,0 +1,835 @@
+{
+ "topic": "movies",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Feature films and short films",
+     "g": "See how length shapes the way a story is told.",
+     "p": [
+      "A feature film usually runs over 40 minutes, often around ninety or more.",
+      "A short film must tell its idea quickly, with few characters and one clear turn.",
+      "Many famous directors began with shorts, which cost less to make."
+     ],
+     "q": "Would you rather watch a short film or a long epic tonight?",
+     "c": "Watch one short film of under ten minutes and note its single idea."
+    },
+    "de": {
+     "t": "Spielfilm und Kurzfilm",
+     "g": "Sieh, wie die Länge die Art des Erzählens prägt.",
+     "p": [
+      "Ein Spielfilm dauert meist über 40 Minuten, oft gut neunzig oder mehr.",
+      "Ein Kurzfilm muss seine Idee schnell erzählen, mit wenigen Figuren und einer klaren Wendung.",
+      "Viele berühmte Regisseure begannen mit Kurzfilmen, die günstiger zu drehen sind."
+     ],
+     "q": "Siehst du heute lieber einen Kurzfilm oder ein langes Epos?",
+     "c": "Sieh einen Kurzfilm unter zehn Minuten und benenne seine eine Idee."
+    },
+    "es": {
+     "t": "Largometrajes y cortometrajes",
+     "g": "Mira cómo la duración condiciona la manera de contar.",
+     "p": [
+      "Un largometraje suele durar más de 40 minutos, a menudo noventa o más.",
+      "Un corto debe contar su idea rápido, con pocos personajes y un giro claro.",
+      "Muchos directores famosos empezaron con cortos, que cuestan menos de hacer."
+     ],
+     "q": "¿Prefieres ver un corto o una larga epopeya esta noche?",
+     "c": "Mira un corto de menos de diez minutos y anota su idea central."
+    },
+    "fr": {
+     "t": "Longs et courts métrages",
+     "g": "Vois comment la durée influence la façon de raconter.",
+     "p": [
+      "Un long métrage dépasse généralement 40 minutes, souvent une heure et demie ou plus.",
+      "Un court métrage doit exprimer son idée vite, avec peu de personnages et un tournant clair.",
+      "Beaucoup de grands réalisateurs ont débuté par des courts, moins coûteux à tourner."
+     ],
+     "q": "Préfères-tu un court métrage ou une longue fresque ce soir ?",
+     "c": "Regarde un court de moins de dix minutes et note son idée unique."
+    },
+    "it": {
+     "t": "Lungometraggi e cortometraggi",
+     "g": "Scopri come la durata influenza il modo di raccontare.",
+     "p": [
+      "Un lungometraggio dura di solito oltre 40 minuti, spesso novanta o più.",
+      "Un cortometraggio deve esprimere l'idea in fretta, con pochi personaggi e una svolta chiara.",
+      "Molti registi famosi sono partiti dai corti, che costano meno."
+     ],
+     "q": "Stasera preferisci un cortometraggio o un lungo kolossal?",
+     "c": "Guarda un corto sotto i dieci minuti e annota la sua idea unica."
+    },
+    "pt": {
+     "t": "Longas e curtas-metragens",
+     "g": "Vê como a duração molda a forma de contar.",
+     "p": [
+      "Uma longa-metragem dura normalmente mais de 40 minutos, muitas vezes noventa ou mais.",
+      "Uma curta tem de dizer a ideia depressa, com poucas personagens e uma viragem clara.",
+      "Muitos realizadores famosos começaram com curtas, mais baratas de fazer."
+     ],
+     "q": "Preferes ver uma curta ou uma longa epopeia esta noite?",
+     "c": "Vê uma curta com menos de dez minutos e anota a sua ideia única."
+    },
+    "pt_BR": {
+     "t": "Longas e curtas-metragens",
+     "g": "Veja como a duração molda o jeito de contar.",
+     "p": [
+      "Um longa-metragem costuma durar mais de 40 minutos, muitas vezes noventa ou mais.",
+      "Um curta precisa dizer a ideia rápido, com poucos personagens e uma virada clara.",
+      "Muitos diretores famosos começaram com curtas, mais baratos de fazer."
+     ],
+     "q": "Você prefere ver um curta ou uma longa saga hoje à noite?",
+     "c": "Assista a um curta de menos de dez minutos e anote a ideia única dele."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Live action and animation",
+     "g": "Compare two ways of making moving images.",
+     "p": [
+      "Live action films real people and places with a camera.",
+      "Animation creates movement frame by frame, by drawing, modelling or computer.",
+      "Animation can show worlds that could never be filmed."
+     ],
+     "q": "Which animated film has stayed with you the most?",
+     "c": "Watch one animated scene and note something live action could not do."
+    },
+    "de": {
+     "t": "Realfilm und Animation",
+     "g": "Vergleiche zwei Wege, bewegte Bilder zu machen.",
+     "p": [
+      "Beim Realfilm filmt eine Kamera echte Menschen und Orte.",
+      "Animation erzeugt Bewegung Bild für Bild durch Zeichnen, Modellieren oder Computer.",
+      "Animation kann Welten zeigen, die man nie filmen könnte."
+     ],
+     "q": "Welcher Animationsfilm ist dir am meisten im Gedächtnis geblieben?",
+     "c": "Sieh eine Animationsszene und notier, was ein Realfilm nicht könnte."
+    },
+    "es": {
+     "t": "Imagen real y animación",
+     "g": "Compara dos maneras de crear imágenes en movimiento.",
+     "p": [
+      "En la imagen real una cámara filma personas y lugares auténticos.",
+      "La animación crea el movimiento fotograma a fotograma, dibujando, modelando o por ordenador.",
+      "La animación puede mostrar mundos que jamás se podrían filmar."
+     ],
+     "q": "¿Qué película de animación te ha marcado más?",
+     "c": "Mira una escena animada y anota algo que la imagen real no podría hacer."
+    },
+    "fr": {
+     "t": "Prises de vues réelles et animation",
+     "g": "Compare deux façons de créer des images en mouvement.",
+     "p": [
+      "Les prises de vues réelles filment de vraies personnes et de vrais lieux.",
+      "L'animation crée le mouvement image par image, par dessin, modelage ou ordinateur.",
+      "L'animation peut montrer des mondes impossibles à filmer."
+     ],
+     "q": "Quel film d'animation t'a le plus marqué ?",
+     "c": "Regarde une scène animée et note ce que la prise de vues réelles ne pourrait pas faire."
+    },
+    "it": {
+     "t": "Live action e animazione",
+     "g": "Confronta due modi di creare immagini in movimento.",
+     "p": [
+      "Il live action riprende con la camera persone e luoghi reali.",
+      "L'animazione crea il movimento fotogramma per fotogramma, disegnando, modellando o al computer.",
+      "L'animazione può mostrare mondi impossibili da filmare."
+     ],
+     "q": "Quale film d'animazione ti è rimasto più nel cuore?",
+     "c": "Guarda una scena animata e annota qualcosa che il live action non potrebbe fare."
+    },
+    "pt": {
+     "t": "Imagem real e animação",
+     "g": "Compara duas formas de criar imagens em movimento.",
+     "p": [
+      "Na imagem real, uma câmara filma pessoas e lugares verdadeiros.",
+      "A animação cria o movimento fotograma a fotograma, a desenhar, modelar ou por computador.",
+      "A animação pode mostrar mundos impossíveis de filmar."
+     ],
+     "q": "Que filme de animação mais te marcou?",
+     "c": "Vê uma cena animada e anota algo que a imagem real não poderia fazer."
+    },
+    "pt_BR": {
+     "t": "Live action e animação",
+     "g": "Compare duas formas de criar imagens em movimento.",
+     "p": [
+      "No live action, uma câmera filma pessoas e lugares de verdade.",
+      "A animação cria o movimento quadro a quadro, desenhando, modelando ou no computador.",
+      "A animação pode mostrar mundos impossíveis de filmar."
+     ],
+     "q": "Que filme de animação mais marcou você?",
+     "c": "Assista a uma cena animada e anote algo que o live action não poderia fazer."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Documentaries: real-life stories",
+     "g": "See how non-fiction films inform, inspire and entertain.",
+     "p": [
+      "A documentary tells true stories using real people, places and archive footage.",
+      "Filmmakers still make choices: what to show, whom to interview, how to edit.",
+      "Subjects range from nature and music to science and history."
+     ],
+     "q": "What real-life subject would you love to see a documentary about?",
+     "c": "Watch ten minutes of a documentary and note how it keeps your interest."
+    },
+    "de": {
+     "t": "Dokumentarfilme: wahre Geschichten",
+     "g": "Sieh, wie Dokumentarfilme informieren, inspirieren und unterhalten.",
+     "p": [
+      "Ein Dokumentarfilm erzählt wahre Geschichten mit echten Menschen, Orten und Archivmaterial.",
+      "Auch hier treffen Filmemacher Entscheidungen: was zeigen, wen befragen, wie schneiden.",
+      "Die Themen reichen von Natur und Musik bis Wissenschaft und Geschichte."
+     ],
+     "q": "Über welches Thema aus dem echten Leben würdest du gern einen Dokumentarfilm sehen?",
+     "c": "Sieh zehn Minuten eines Dokumentarfilms und notier, wie er dich bei der Stange hält."
+    },
+    "es": {
+     "t": "Documentales: historias reales",
+     "g": "Mira cómo el cine de no ficción informa, inspira y entretiene.",
+     "p": [
+      "Un documental cuenta historias verdaderas con personas, lugares e imágenes de archivo reales.",
+      "Los cineastas siguen decidiendo qué mostrar, a quién entrevistar y cómo montar.",
+      "Los temas van de la naturaleza y la música a la ciencia y la historia."
+     ],
+     "q": "¿Sobre qué tema real te gustaría ver un documental?",
+     "c": "Mira diez minutos de un documental y anota cómo mantiene tu interés."
+    },
+    "fr": {
+     "t": "Documentaires : histoires vraies",
+     "g": "Vois comment le cinéma du réel informe, inspire et divertit.",
+     "p": [
+      "Un documentaire raconte des histoires vraies avec de vraies personnes, de vrais lieux et des archives.",
+      "Les cinéastes font quand même des choix : quoi montrer, qui interroger, comment monter.",
+      "Les sujets vont de la nature et la musique à la science et l'histoire."
+     ],
+     "q": "Sur quel sujet réel aimerais-tu voir un documentaire ?",
+     "c": "Regarde dix minutes d'un documentaire et note comment il retient ton attention."
+    },
+    "it": {
+     "t": "Documentari: storie vere",
+     "g": "Scopri come il cinema del reale informa, ispira e intrattiene.",
+     "p": [
+      "Un documentario racconta storie vere con persone, luoghi e filmati d'archivio reali.",
+      "I registi fanno comunque scelte: cosa mostrare, chi intervistare, come montare.",
+      "I temi vanno da natura e musica a scienza e storia."
+     ],
+     "q": "Su quale tema reale vorresti vedere un documentario?",
+     "c": "Guarda dieci minuti di un documentario e annota come tiene viva l'attenzione."
+    },
+    "pt": {
+     "t": "Documentários: histórias reais",
+     "g": "Vê como o cinema do real informa, inspira e entretém.",
+     "p": [
+      "Um documentário conta histórias verdadeiras com pessoas, lugares e imagens de arquivo reais.",
+      "Os cineastas continuam a fazer escolhas: o que mostrar, quem entrevistar, como montar.",
+      "Os temas vão da natureza e da música à ciência e à história."
+     ],
+     "q": "Sobre que tema real gostarias de ver um documentário?",
+     "c": "Vê dez minutos de um documentário e anota como prende o teu interesse."
+    },
+    "pt_BR": {
+     "t": "Documentários: histórias reais",
+     "g": "Veja como o cinema do real informa, inspira e entretém.",
+     "p": [
+      "Um documentário conta histórias verdadeiras com pessoas, lugares e imagens de arquivo reais.",
+      "Os cineastas continuam fazendo escolhas: o que mostrar, quem entrevistar, como montar.",
+      "Os temas vão da natureza e da música à ciência e à história."
+     ],
+     "q": "Sobre que tema real você gostaria de ver um documentário?",
+     "c": "Assista a dez minutos de um documentário e anote como ele prende seu interesse."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Subtitles versus dubbing",
+     "g": "Weigh two ways to watch foreign-language films.",
+     "p": [
+      "Subtitles keep the actors' original voices but ask you to read.",
+      "Dubbing replaces voices with another language, so you can watch the image freely.",
+      "Different countries have different traditions, and both can be well done."
+     ],
+     "q": "Do you prefer subtitles or dubbing, and why?",
+     "c": "Watch five minutes of a foreign film with subtitles and see how fast you adapt."
+    },
+    "de": {
+     "t": "Untertitel oder Synchronisation",
+     "g": "Wäge zwei Wege ab, fremdsprachige Filme zu sehen.",
+     "p": [
+      "Untertitel bewahren die Originalstimmen, verlangen aber Lesen.",
+      "Synchronisation ersetzt die Stimmen durch eine andere Sprache, sodass man das Bild frei betrachtet.",
+      "Länder haben verschiedene Traditionen, und beides kann gut gemacht sein."
+     ],
+     "q": "Magst du lieber Untertitel oder Synchronisation, und warum?",
+     "c": "Sieh fünf Minuten eines fremdsprachigen Films mit Untertiteln und achte, wie schnell du dich gewöhnst."
+    },
+    "es": {
+     "t": "Subtítulos o doblaje",
+     "g": "Compara dos maneras de ver cine en otro idioma.",
+     "p": [
+      "Los subtítulos conservan las voces originales, pero exigen leer.",
+      "El doblaje sustituye las voces por otro idioma y deja mirar la imagen con libertad.",
+      "Cada país tiene sus tradiciones, y ambas opciones pueden estar muy bien hechas."
+     ],
+     "q": "¿Prefieres subtítulos o doblaje, y por qué?",
+     "c": "Mira cinco minutos de cine extranjero con subtítulos y comprueba lo rápido que te adaptas."
+    },
+    "fr": {
+     "t": "Sous-titres ou doublage",
+     "g": "Compare deux façons de voir des films en langue étrangère.",
+     "p": [
+      "Les sous-titres gardent les voix originales mais demandent de lire.",
+      "Le doublage remplace les voix par une autre langue et libère le regard.",
+      "Chaque pays a ses traditions, et les deux peuvent être bien faits."
+     ],
+     "q": "Préfères-tu les sous-titres ou le doublage, et pourquoi ?",
+     "c": "Regarde cinq minutes d'un film étranger sous-titré et vois à quelle vitesse tu t'habitues."
+    },
+    "it": {
+     "t": "Sottotitoli o doppiaggio",
+     "g": "Confronta due modi di guardare film in lingua straniera.",
+     "p": [
+      "I sottotitoli mantengono le voci originali ma richiedono di leggere.",
+      "Il doppiaggio sostituisce le voci con un'altra lingua e lascia guardare libero l'immagine.",
+      "Ogni paese ha le sue tradizioni e entrambi possono essere fatti bene."
+     ],
+     "q": "Preferisci i sottotitoli o il doppiaggio, e perché?",
+     "c": "Guarda cinque minuti di un film straniero sottotitolato e vedi quanto presto ti abitui."
+    },
+    "pt": {
+     "t": "Legendas ou dobragem",
+     "g": "Compara duas formas de ver filmes em língua estrangeira.",
+     "p": [
+      "As legendas mantêm as vozes originais, mas exigem leitura.",
+      "A dobragem substitui as vozes por outra língua e deixa ver a imagem à vontade.",
+      "Cada país tem as suas tradições, e ambas podem estar bem feitas."
+     ],
+     "q": "Preferes legendas ou dobragem, e porquê?",
+     "c": "Vê cinco minutos de um filme estrangeiro legendado e repara em quão depressa te habituas."
+    },
+    "pt_BR": {
+     "t": "Legendas ou dublagem",
+     "g": "Compare duas formas de assistir a filmes em língua estrangeira.",
+     "p": [
+      "As legendas mantêm as vozes originais, mas exigem leitura.",
+      "A dublagem troca as vozes por outro idioma e deixa olhar a imagem à vontade.",
+      "Cada país tem suas tradições, e as duas opções podem ser bem feitas."
+     ],
+     "q": "Você prefere legenda ou dublagem, e por quê?",
+     "c": "Assista a cinco minutos de um filme estrangeiro legendado e veja como você se acostuma rápido."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading a film poster",
+     "g": "Learn what posters and trailers tell us before we watch.",
+     "p": [
+      "A poster uses image, colour, type and a tagline to hint at genre and mood.",
+      "A trailer is a short advertisement that shows highlights and sets expectations.",
+      "Both can promise more, or less, than the film delivers."
+     ],
+     "q": "Which poster has ever made you want to watch a film?",
+     "c": "Look at a poster and guess the genre before reading any text."
+    },
+    "de": {
+     "t": "Ein Filmplakat lesen",
+     "g": "Lerne, was Plakate und Trailer vor dem Film verraten.",
+     "p": [
+      "Ein Plakat nutzt Bild, Farbe, Schrift und Slogan, um Genre und Stimmung anzudeuten.",
+      "Ein Trailer ist eine kurze Werbung mit Höhepunkten, die Erwartungen weckt.",
+      "Beide können mehr oder weniger versprechen, als der Film hält."
+     ],
+     "q": "Welches Plakat hat dich schon einmal neugierig auf einen Film gemacht?",
+     "c": "Sieh dir ein Plakat an und rate das Genre, bevor du Text liest."
+    },
+    "es": {
+     "t": "Leer un cartel de cine",
+     "g": "Aprende qué nos cuentan los carteles y tráileres antes de ver la película.",
+     "p": [
+      "Un cartel usa imagen, color, tipografía y eslogan para sugerir género y tono.",
+      "Un tráiler es un anuncio breve que muestra momentos clave y crea expectativas.",
+      "Ambos pueden prometer más, o menos, de lo que ofrece la película."
+     ],
+     "q": "¿Qué cartel te ha hecho querer ver una película?",
+     "c": "Mira un cartel y adivina el género antes de leer ningún texto."
+    },
+    "fr": {
+     "t": "Lire une affiche de film",
+     "g": "Apprends ce que les affiches et bandes-annonces disent avant la séance.",
+     "p": [
+      "Une affiche utilise image, couleur, typographie et slogan pour suggérer genre et ambiance.",
+      "Une bande-annonce est une courte publicité qui montre des temps forts et crée des attentes.",
+      "Toutes deux peuvent promettre plus, ou moins, que le film."
+     ],
+     "q": "Quelle affiche t'a déjà donné envie de voir un film ?",
+     "c": "Regarde une affiche et devine le genre avant de lire le moindre texte."
+    },
+    "it": {
+     "t": "Leggere una locandina",
+     "g": "Impara cosa ci dicono locandine e trailer prima di guardare.",
+     "p": [
+      "Una locandina usa immagine, colore, carattere e slogan per suggerire genere e tono.",
+      "Un trailer è una breve pubblicità con momenti salienti che crea aspettative.",
+      "Entrambi possono promettere più, o meno, di ciò che offre il film."
+     ],
+     "q": "Quale locandina ti ha fatto venire voglia di vedere un film?",
+     "c": "Guarda una locandina e indovina il genere prima di leggere il testo."
+    },
+    "pt": {
+     "t": "Ler um cartaz de cinema",
+     "g": "Aprende o que os cartazes e trailers nos dizem antes de vermos o filme.",
+     "p": [
+      "Um cartaz usa imagem, cor, tipografia e slogan para sugerir género e tom.",
+      "Um trailer é um anúncio curto com momentos fortes que cria expectativas.",
+      "Ambos podem prometer mais, ou menos, do que o filme oferece."
+     ],
+     "q": "Que cartaz já te fez querer ver um filme?",
+     "c": "Olha para um cartaz e adivinha o género antes de leres qualquer texto."
+    },
+    "pt_BR": {
+     "t": "Lendo um pôster de cinema",
+     "g": "Aprenda o que pôsteres e trailers nos dizem antes de assistir.",
+     "p": [
+      "Um pôster usa imagem, cor, tipografia e slogan para sugerir gênero e tom.",
+      "Um trailer é um anúncio curto com momentos fortes que cria expectativas.",
+      "Os dois podem prometer mais, ou menos, do que o filme entrega."
+     ],
+     "q": "Que pôster já te deu vontade de ver um filme?",
+     "c": "Olhe um pôster e adivinhe o gênero antes de ler qualquer texto."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Watching at home and in cinemas",
+     "g": "See how the viewing experience changes with screen and setting.",
+     "p": [
+      "Cinemas offer a huge screen, big sound and a shared, dark room.",
+      "At home you can pause, rewatch and choose your own comfort.",
+      "Both can be wonderful when you give the film your full attention."
+     ],
+     "q": "Where do you most enjoy watching films, and with whom?",
+     "c": "Set up your next film night: lights low, phone away, full attention."
+    },
+    "de": {
+     "t": "Film zu Hause und im Kino",
+     "g": "Sieh, wie Bildschirm und Umgebung das Seherlebnis verändern.",
+     "p": [
+      "Kinos bieten riesige Leinwand, großen Klang und einen gemeinsamen dunklen Raum.",
+      "Zu Hause kannst du pausieren, wiederholen und es dir gemütlich machen.",
+      "Beides kann wunderbar sein, wenn man dem Film volle Aufmerksamkeit schenkt."
+     ],
+     "q": "Wo siehst du Filme am liebsten, und mit wem?",
+     "c": "Richte deinen nächsten Filmabend ein: Licht gedimmt, Handy weg, volle Aufmerksamkeit."
+    },
+    "es": {
+     "t": "Ver cine en casa y en la sala",
+     "g": "Mira cómo cambian la experiencia la pantalla y el entorno.",
+     "p": [
+      "El cine ofrece pantalla enorme, gran sonido y una sala oscura compartida.",
+      "En casa puedes pausar, repetir y elegir tu comodidad.",
+      "Ambas formas pueden ser maravillosas si le das toda tu atención a la película."
+     ],
+     "q": "¿Dónde disfrutas más viendo películas y con quién?",
+     "c": "Prepara tu próxima noche de cine: luz tenue, móvil lejos, atención total."
+    },
+    "fr": {
+     "t": "Voir un film chez soi ou en salle",
+     "g": "Vois comment l'écran et le cadre changent l'expérience.",
+     "p": [
+      "Le cinéma offre un immense écran, un grand son et une salle obscure partagée.",
+      "Chez soi, on peut mettre en pause, revoir et choisir son confort.",
+      "Les deux peuvent être merveilleux quand on donne toute son attention au film."
+     ],
+     "q": "Où aimes-tu le plus regarder des films, et avec qui ?",
+     "c": "Prépare ta prochaine soirée ciné : lumière tamisée, téléphone loin, attention totale."
+    },
+    "it": {
+     "t": "Guardare film a casa e al cinema",
+     "g": "Scopri come schermo e ambiente cambiano l'esperienza.",
+     "p": [
+      "Il cinema offre schermo enorme, grande suono e una sala buia condivisa.",
+      "A casa puoi mettere in pausa, rivedere e scegliere il tuo comfort.",
+      "Entrambi possono essere splendidi se dai al film tutta la tua attenzione."
+     ],
+     "q": "Dove ti piace di più guardare film, e con chi?",
+     "c": "Prepara la tua prossima serata film: luci basse, telefono lontano, attenzione piena."
+    },
+    "pt": {
+     "t": "Ver filmes em casa e no cinema",
+     "g": "Vê como o ecrã e o ambiente mudam a experiência.",
+     "p": [
+      "O cinema oferece um ecrã enorme, som potente e uma sala escura partilhada.",
+      "Em casa podes pausar, rever e escolher o teu conforto.",
+      "Ambos podem ser maravilhosos quando dás toda a atenção ao filme."
+     ],
+     "q": "Onde gostas mais de ver filmes, e com quem?",
+     "c": "Prepara a tua próxima noite de cinema: luz baixa, telemóvel longe, atenção total."
+    },
+    "pt_BR": {
+     "t": "Assistindo em casa e no cinema",
+     "g": "Veja como a tela e o ambiente mudam a experiência.",
+     "p": [
+      "O cinema oferece tela enorme, som potente e uma sala escura compartilhada.",
+      "Em casa você pode pausar, rever e escolher o seu conforto.",
+      "Os dois podem ser incríveis quando você dá toda a atenção ao filme."
+     ],
+     "q": "Onde você mais gosta de assistir a filmes, e com quem?",
+     "c": "Prepare sua próxima noite de cinema: luz baixa, celular longe, atenção total."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Keeping a film diary",
+     "g": "Write a few lines after each film to remember and reflect.",
+     "p": [
+      "Note the title, date and one moment that stayed with you.",
+      "Add a score or a few words about how the film made you feel.",
+      "Over months your diary reveals your taste and how it grows."
+     ],
+     "q": "What would you write about the last film you watched?",
+     "c": "Write three lines about a film you saw this week."
+    },
+    "de": {
+     "t": "Ein Filmtagebuch führen",
+     "g": "Schreib nach jedem Film ein paar Zeilen, um dich zu erinnern und nachzudenken.",
+     "p": [
+      "Notiere Titel, Datum und einen Moment, der dir geblieben ist.",
+      "Ergänze eine Bewertung oder ein paar Worte dazu, wie sich der Film anfühlte.",
+      "Über Monate zeigt dein Tagebuch deinen Geschmack und sein Wachstum."
+     ],
+     "q": "Was würdest du über deinen zuletzt gesehenen Film schreiben?",
+     "c": "Schreib drei Zeilen über einen Film dieser Woche."
+    },
+    "es": {
+     "t": "Llevar un diario de cine",
+     "g": "Escribe unas líneas tras cada película para recordar y reflexionar.",
+     "p": [
+      "Anota el título, la fecha y un momento que se te quedó grabado.",
+      "Añade una nota o unas palabras sobre cómo te hizo sentir.",
+      "Con los meses, tu diario revela tu gusto y cómo evoluciona."
+     ],
+     "q": "¿Qué escribirías sobre la última película que viste?",
+     "c": "Escribe tres líneas sobre una película de esta semana."
+    },
+    "fr": {
+     "t": "Tenir un carnet de cinéma",
+     "g": "Écris quelques lignes après chaque film pour te souvenir et réfléchir.",
+     "p": [
+      "Note le titre, la date et un moment qui t'est resté.",
+      "Ajoute une note ou quelques mots sur ce que le film t'a fait ressentir.",
+      "Au fil des mois, ton carnet révèle ton goût et son évolution."
+     ],
+     "q": "Que noterais-tu sur le dernier film que tu as vu ?",
+     "c": "Écris trois lignes sur un film de cette semaine."
+    },
+    "it": {
+     "t": "Tenere un diario del cinema",
+     "g": "Scrivi qualche riga dopo ogni film per ricordare e riflettere.",
+     "p": [
+      "Annota titolo, data e un momento che ti è rimasto.",
+      "Aggiungi un voto o poche parole su come ti ha fatto sentire.",
+      "Nei mesi il diario rivela il tuo gusto e come cresce."
+     ],
+     "q": "Cosa scriveresti sull'ultimo film che hai visto?",
+     "c": "Scrivi tre righe su un film di questa settimana."
+    },
+    "pt": {
+     "t": "Manter um diário de cinema",
+     "g": "Escreve algumas linhas depois de cada filme para recordar e refletir.",
+     "p": [
+      "Anota o título, a data e um momento que ficou contigo.",
+      "Junta uma nota ou umas palavras sobre o que o filme te fez sentir.",
+      "Ao longo dos meses, o diário revela o teu gosto e como evolui."
+     ],
+     "q": "O que escreverias sobre o último filme que viste?",
+     "c": "Escreve três linhas sobre um filme desta semana."
+    },
+    "pt_BR": {
+     "t": "Mantendo um diário de cinema",
+     "g": "Escreva algumas linhas depois de cada filme para lembrar e refletir.",
+     "p": [
+      "Anote o título, a data e um momento que ficou com você.",
+      "Acrescente uma nota ou algumas palavras sobre o que o filme fez você sentir.",
+      "Ao longo dos meses, o diário revela o seu gosto e como ele evolui."
+     ],
+     "q": "O que você escreveria sobre o último filme que viu?",
+     "c": "Escreva três linhas sobre um filme desta semana."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Talking about movies with friends",
+     "g": "Share opinions and recommendations without spoilers.",
+     "p": [
+      "Start with feelings and moods rather than plot twists.",
+      "Ask what the other person enjoyed before giving your view.",
+      "Disagreeing kindly is part of the fun of film talk."
+     ],
+     "q": "What film do you love recommending, and how do you pitch it?",
+     "c": "Recommend one film to a friend in two spoiler-free sentences."
+    },
+    "de": {
+     "t": "Mit Freunden über Filme reden",
+     "g": "Teile Meinungen und Tipps, ohne zu spoilern.",
+     "p": [
+      "Beginne mit Gefühlen und Stimmungen statt mit Wendungen der Handlung.",
+      "Frag erst, was der andere mochte, bevor du deine Sicht sagst.",
+      "Freundlich widersprechen gehört zum Spaß am Filmgespräch."
+     ],
+     "q": "Welchen Film empfiehlst du gern, und wie machst du ihn schmackhaft?",
+     "c": "Empfiehl einem Freund einen Film in zwei Sätzen ohne Spoiler."
+    },
+    "es": {
+     "t": "Hablar de cine con amigos",
+     "g": "Comparte opiniones y recomendaciones sin destripar nada.",
+     "p": [
+      "Empieza por sensaciones y ambiente, no por giros de la trama.",
+      "Pregunta qué disfrutó la otra persona antes de dar tu opinión.",
+      "Discrepar con amabilidad es parte de la gracia de hablar de cine."
+     ],
+     "q": "¿Qué película te encanta recomendar y cómo la presentas?",
+     "c": "Recomienda una película a un amigo en dos frases sin spoilers."
+    },
+    "fr": {
+     "t": "Parler cinéma entre amis",
+     "g": "Partage avis et conseils sans divulgâcher.",
+     "p": [
+      "Commence par les sensations et l'ambiance plutôt que par les rebondissements.",
+      "Demande ce que l'autre a aimé avant de donner ton avis.",
+      "Être en désaccord avec bienveillance fait partie du plaisir."
+     ],
+     "q": "Quel film aimes-tu recommander, et comment le présentes-tu ?",
+     "c": "Recommande un film à un ami en deux phrases sans spoiler."
+    },
+    "it": {
+     "t": "Parlare di film con gli amici",
+     "g": "Condividi opinioni e consigli senza spoiler.",
+     "p": [
+      "Parti dalle sensazioni e dall'atmosfera, non dai colpi di scena.",
+      "Chiedi cosa è piaciuto all'altro prima di dire la tua.",
+      "Dissentire con gentilezza fa parte del bello di parlare di cinema."
+     ],
+     "q": "Quale film ami consigliare e come lo presenti?",
+     "c": "Consiglia un film a un amico in due frasi senza spoiler."
+    },
+    "pt": {
+     "t": "Falar de cinema com amigos",
+     "g": "Partilha opiniões e recomendações sem estragar nada.",
+     "p": [
+      "Começa pelas sensações e pelo ambiente, não pelas reviravoltas.",
+      "Pergunta o que a outra pessoa gostou antes de dares a tua opinião.",
+      "Discordar com simpatia faz parte da graça de falar de cinema."
+     ],
+     "q": "Que filme gostas de recomendar e como o apresentas?",
+     "c": "Recomenda um filme a um amigo em duas frases sem spoilers."
+    },
+    "pt_BR": {
+     "t": "Conversando sobre filmes com amigos",
+     "g": "Compartilhe opiniões e indicações sem dar spoiler.",
+     "p": [
+      "Comece pelas sensações e pelo clima, não pelas reviravoltas.",
+      "Pergunte do que a outra pessoa gostou antes de dar a sua opinião.",
+      "Discordar com gentileza faz parte da graça de falar de cinema."
+     ],
+     "q": "Que filme você gosta de indicar e como apresenta ele?",
+     "c": "Indique um filme a um amigo em duas frases sem spoilers."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Building your first watchlist",
+     "g": "Choose a varied list of films to explore this year.",
+     "p": [
+      "Mix genres, decades and countries so each film feels fresh.",
+      "Start small: ten films you are truly curious about.",
+      "Leave room for surprises, recommendations and rewatches."
+     ],
+     "q": "Which film has been on your list the longest?",
+     "c": "Write a ten-film watchlist with at least three countries."
+    },
+    "de": {
+     "t": "Deine erste Filmliste",
+     "g": "Wähle eine abwechslungsreiche Liste von Filmen für dieses Jahr.",
+     "p": [
+      "Mische Genres, Jahrzehnte und Länder, damit jeder Film frisch wirkt.",
+      "Fang klein an: zehn Filme, auf die du wirklich neugierig bist.",
+      "Lass Platz für Überraschungen, Empfehlungen und Wiedersehen."
+     ],
+     "q": "Welcher Film steht schon am längsten auf deiner Liste?",
+     "c": "Schreib eine Liste mit zehn Filmen aus mindestens drei Ländern."
+    },
+    "es": {
+     "t": "Tu primera lista de pendientes",
+     "g": "Elige una lista variada de películas para explorar este año.",
+     "p": [
+      "Mezcla géneros, décadas y países para que cada película sea una novedad.",
+      "Empieza poco a poco: diez películas que te despierten curiosidad real.",
+      "Deja espacio para sorpresas, recomendaciones y revisiones."
+     ],
+     "q": "¿Qué película lleva más tiempo en tu lista?",
+     "c": "Escribe una lista de diez películas con al menos tres países."
+    },
+    "fr": {
+     "t": "Ta première liste de films à voir",
+     "g": "Choisis une liste variée de films à explorer cette année.",
+     "p": [
+      "Mélange genres, décennies et pays pour que chaque film surprenne.",
+      "Commence petit : dix films qui te donnent vraiment envie.",
+      "Laisse de la place aux surprises, aux conseils et aux revoyures."
+     ],
+     "q": "Quel film est depuis le plus longtemps sur ta liste ?",
+     "c": "Écris une liste de dix films venant d'au moins trois pays."
+    },
+    "it": {
+     "t": "La tua prima lista di film da vedere",
+     "g": "Scegli una lista varia di film da esplorare quest'anno.",
+     "p": [
+      "Mescola generi, decenni e paesi perché ogni film sia una novità.",
+      "Parti piano: dieci film che ti incuriosiscono davvero.",
+      "Lascia spazio a sorprese, consigli e rivisioni."
+     ],
+     "q": "Quale film è da più tempo nella tua lista?",
+     "c": "Scrivi una lista di dieci film con almeno tre paesi."
+    },
+    "pt": {
+     "t": "A tua primeira lista de filmes por ver",
+     "g": "Escolhe uma lista variada de filmes para explorar este ano.",
+     "p": [
+      "Mistura géneros, décadas e países para que cada filme seja novidade.",
+      "Começa pequeno: dez filmes que te despertem curiosidade a sério.",
+      "Deixa espaço para surpresas, recomendações e revisões."
+     ],
+     "q": "Que filme está há mais tempo na tua lista?",
+     "c": "Escreve uma lista de dez filmes com pelo menos três países."
+    },
+    "pt_BR": {
+     "t": "Sua primeira lista de filmes para ver",
+     "g": "Escolha uma lista variada de filmes para explorar este ano.",
+     "p": [
+      "Misture gêneros, décadas e países para que cada filme seja novidade.",
+      "Comece pequeno: dez filmes que despertem curiosidade de verdade.",
+      "Deixe espaço para surpresas, indicações e reassistidas."
+     ],
+     "q": "Que filme está há mais tempo na sua lista?",
+     "c": "Escreva uma lista de dez filmes com pelo menos três países."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: the basics of film",
+     "g": "Recap shots, sound, editing and genres from the first month.",
+     "p": [
+      "Shot size, angle, movement and framing control what we see.",
+      "Light, colour, sound and music set the mood; editing sets the rhythm.",
+      "Genres, characters and three-act stories shape what we expect."
+     ],
+     "q": "Which lesson from this month changed how you watch?",
+     "c": "Rewatch a favourite scene and name one choice from each area."
+    },
+    "de": {
+     "t": "Rückblick: Grundlagen des Films",
+     "g": "Wiederhole Einstellungen, Ton, Schnitt und Genres des ersten Monats.",
+     "p": [
+      "Größe, Winkel, Bewegung und Bildausschnitt steuern, was wir sehen.",
+      "Licht, Farbe, Ton und Musik setzen die Stimmung; der Schnitt den Rhythmus.",
+      "Genres, Figuren und Dreiakter prägen unsere Erwartungen."
+     ],
+     "q": "Welche Lektion dieses Monats hat dein Sehen verändert?",
+     "c": "Sieh eine Lieblingsszene noch einmal und nenne je eine Entscheidung pro Bereich."
+    },
+    "es": {
+     "t": "Repaso: lo básico del cine",
+     "g": "Repasa planos, sonido, montaje y géneros del primer mes.",
+     "p": [
+      "Tamaño, ángulo, movimiento y encuadre controlan lo que vemos.",
+      "Luz, color, sonido y música crean el ambiente; el montaje, el ritmo.",
+      "Géneros, personajes e historias en tres actos moldean nuestras expectativas."
+     ],
+     "q": "¿Qué lección de este mes cambió tu forma de ver?",
+     "c": "Vuelve a ver una escena favorita y nombra una decisión de cada área."
+    },
+    "fr": {
+     "t": "Révision : les bases du cinéma",
+     "g": "Reprends plans, son, montage et genres du premier mois.",
+     "p": [
+      "Taille, angle, mouvement et cadrage contrôlent ce que l'on voit.",
+      "Lumière, couleur, son et musique créent l'ambiance ; le montage, le rythme.",
+      "Genres, personnages et récits en trois actes forment nos attentes."
+     ],
+     "q": "Quelle leçon de ce mois a changé ta façon de regarder ?",
+     "c": "Revois une scène préférée et nomme un choix dans chaque domaine."
+    },
+    "it": {
+     "t": "Ripasso: le basi del cinema",
+     "g": "Ripassa inquadrature, suono, montaggio e generi del primo mese.",
+     "p": [
+      "Dimensione, angolazione, movimento e quadro controllano ciò che vediamo.",
+      "Luce, colore, suono e musica creano l'atmosfera; il montaggio, il ritmo.",
+      "Generi, personaggi e storie in tre atti plasmano le nostre aspettative."
+     ],
+     "q": "Quale lezione di questo mese ha cambiato il tuo modo di guardare?",
+     "c": "Rivedi una scena amata e nomina una scelta per ogni area."
+    },
+    "pt": {
+     "t": "Revisão: o básico do cinema",
+     "g": "Revê planos, som, montagem e géneros do primeiro mês.",
+     "p": [
+      "Tamanho, ângulo, movimento e enquadramento controlam o que vemos.",
+      "Luz, cor, som e música criam a atmosfera; a montagem, o ritmo.",
+      "Géneros, personagens e histórias em três atos moldam as nossas expectativas."
+     ],
+     "q": "Que lição deste mês mudou a tua forma de ver?",
+     "c": "Revê uma cena preferida e nomeia uma escolha de cada área."
+    },
+    "pt_BR": {
+     "t": "Revisão: o básico do cinema",
+     "g": "Revise planos, som, montagem e gêneros do primeiro mês.",
+     "p": [
+      "Tamanho, ângulo, movimento e enquadramento controlam o que vemos.",
+      "Luz, cor, som e música criam o clima; a montagem, o ritmo.",
+      "Gêneros, personagens e histórias em três atos moldam nossas expectativas."
+     ],
+     "q": "Que lição deste mês mudou o seu jeito de assistir?",
+     "c": "Reveja uma cena favorita e diga uma escolha de cada área."
+    }
+   }
+  }
+ ]
+}

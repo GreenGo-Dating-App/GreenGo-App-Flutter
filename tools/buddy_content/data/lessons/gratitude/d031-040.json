@@ -1,0 +1,835 @@
+{
+ "topic": "gratitude",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your family",
+     "g": "Appreciate a family member and something specific they do.",
+     "p": [
+      "Family can mean relatives or the people who feel like family to you.",
+      "Choose one person and one concrete thing, like how they always save you a seat.",
+      "Specific appreciation is what people remember longest."
+     ],
+     "q": "Who in your family, chosen or born, do you appreciate right now?",
+     "c": "Think of one family member and one specific thing you value; tell them if you can."
+    },
+    "de": {
+     "t": "Deine Familie",
+     "g": "Schätze ein Familienmitglied und etwas Konkretes, das diese Person tut.",
+     "p": [
+      "Familie kann Verwandte meinen oder Menschen, die sich für dich wie Familie anfühlen.",
+      "Wähle eine Person und eine konkrete Sache, etwa dass sie dir immer einen Platz freihält.",
+      "Konkrete Wertschätzung bleibt Menschen am längsten in Erinnerung."
+     ],
+     "q": "Wen aus deiner Familie, ob geboren oder gewählt, schätzt du gerade?",
+     "c": "Denke an ein Familienmitglied und eine konkrete Sache, die du schätzt; sag es ihm, wenn du kannst."
+    },
+    "es": {
+     "t": "Tu familia",
+     "g": "Valora a un familiar y algo concreto que hace.",
+     "p": [
+      "Familia puede ser tus parientes o las personas que sientes como familia.",
+      "Elige a una persona y una cosa concreta, como que siempre te guarda un sitio.",
+      "El aprecio concreto es lo que la gente recuerda más tiempo."
+     ],
+     "q": "¿A quién de tu familia, de sangre o elegida, valoras ahora mismo?",
+     "c": "Piensa en un familiar y una cosa concreta que valoras; díselo si puedes."
+    },
+    "fr": {
+     "t": "Ta famille",
+     "g": "Apprécie un membre de ta famille et quelque chose de précis qu'il fait.",
+     "p": [
+      "La famille, ce peut être des proches par le sang ou des personnes qui sont comme une famille.",
+      "Choisis une personne et une chose concrète, comme celle qui te garde toujours une place.",
+      "L'appréciation précise est ce dont on se souvient le plus longtemps."
+     ],
+     "q": "Quel membre de ta famille, de naissance ou de cœur, apprécies-tu en ce moment ?",
+     "c": "Pense à un membre de ta famille et à une chose précise que tu apprécies ; dis-le-lui si tu peux."
+    },
+    "it": {
+     "t": "La tua famiglia",
+     "g": "Apprezza un familiare e qualcosa di specifico che fa.",
+     "p": [
+      "Famiglia può significare parenti o persone che senti come famiglia.",
+      "Scegli una persona e una cosa concreta, come tenerti sempre un posto.",
+      "L'apprezzamento specifico è ciò che le persone ricordano più a lungo."
+     ],
+     "q": "Quale persona della tua famiglia, di nascita o di scelta, apprezzi adesso?",
+     "c": "Pensa a un familiare e a una cosa specifica che apprezzi; diglielo se puoi."
+    },
+    "pt": {
+     "t": "A tua família",
+     "g": "Valoriza um familiar e algo concreto que faz.",
+     "p": [
+      "Família pode ser parentes ou pessoas que sentes como família.",
+      "Escolhe uma pessoa e uma coisa concreta, como guardar-te sempre um lugar.",
+      "O apreço concreto é o que as pessoas recordam durante mais tempo."
+     ],
+     "q": "Quem da tua família, de sangue ou de coração, valorizas agora?",
+     "c": "Pensa num familiar e numa coisa concreta que valorizas; diz-lho se puderes."
+    },
+    "pt_BR": {
+     "t": "Sua família",
+     "g": "Valorize um familiar e algo específico que ele faz.",
+     "p": [
+      "Família pode ser parentes ou pessoas que você sente como família.",
+      "Escolha uma pessoa e uma coisa concreta, como sempre guardar um lugar para você.",
+      "A valorização específica é o que as pessoas lembram por mais tempo."
+     ],
+     "q": "Quem da sua família, de sangue ou de coração, você valoriza agora?",
+     "c": "Pense em um familiar e em uma coisa específica que você valoriza; diga a ele se puder."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your friends",
+     "g": "Recall a moment with a friend that made you smile.",
+     "p": [
+      "Friends often turn ordinary days into good ones.",
+      "Recall the place, the laughter or the words of that moment.",
+      "Remembering it also strengthens the bond in your mind."
+     ],
+     "q": "What recent moment with a friend made you smile?",
+     "c": "Picture a happy moment with a friend and send them a short message about it."
+    },
+    "de": {
+     "t": "Deine Freunde",
+     "g": "Erinnere dich an einen Moment mit einem Freund, der dich zum Lächeln brachte.",
+     "p": [
+      "Freunde machen aus gewöhnlichen Tagen oft gute Tage.",
+      "Erinnere dich an den Ort, das Lachen oder die Worte jenes Moments.",
+      "Die Erinnerung stärkt auch die Verbindung in deinem Kopf."
+     ],
+     "q": "Welcher Moment mit einer Freundin oder einem Freund brachte dich zuletzt zum Lächeln?",
+     "c": "Stelle dir einen glücklichen Moment mit einem Freund vor und schicke ihm eine kurze Nachricht dazu."
+    },
+    "es": {
+     "t": "Tus amigos",
+     "g": "Recuerda un momento con un amigo que te hizo sonreír.",
+     "p": [
+      "Los amigos suelen convertir días normales en buenos días.",
+      "Recuerda el lugar, las risas o las palabras de ese momento.",
+      "Recordarlo también fortalece el vínculo en tu mente."
+     ],
+     "q": "¿Qué momento reciente con un amigo te hizo sonreír?",
+     "c": "Imagina un momento feliz con un amigo y envíale un mensaje corto sobre ello."
+    },
+    "fr": {
+     "t": "Tes amis",
+     "g": "Rappelle-toi un moment avec un ami qui t'a fait sourire.",
+     "p": [
+      "Les amis transforment souvent des jours ordinaires en bons jours.",
+      "Revois le lieu, les rires ou les mots de ce moment.",
+      "S'en souvenir renforce aussi le lien dans ton esprit."
+     ],
+     "q": "Quel moment récent avec un ami t'a fait sourire ?",
+     "c": "Imagine un moment heureux avec un ami et envoie-lui un court message à ce sujet."
+    },
+    "it": {
+     "t": "I tuoi amici",
+     "g": "Ricorda un momento con un amico che ti ha fatto sorridere.",
+     "p": [
+      "Gli amici spesso trasformano giorni ordinari in giorni belli.",
+      "Ricorda il luogo, le risate o le parole di quel momento.",
+      "Ricordarlo rafforza anche il legame nella tua mente."
+     ],
+     "q": "Quale momento recente con un amico ti ha fatto sorridere?",
+     "c": "Immagina un momento felice con un amico e mandagli un breve messaggio."
+    },
+    "pt": {
+     "t": "Os teus amigos",
+     "g": "Recorda um momento com um amigo que te fez sorrir.",
+     "p": [
+      "Os amigos transformam muitas vezes dias normais em bons dias.",
+      "Recorda o sítio, as gargalhadas ou as palavras desse momento.",
+      "Recordá-lo também reforça o laço na tua mente."
+     ],
+     "q": "Que momento recente com um amigo te fez sorrir?",
+     "c": "Imagina um momento feliz com um amigo e envia-lhe uma mensagem curta sobre isso."
+    },
+    "pt_BR": {
+     "t": "Seus amigos",
+     "g": "Lembre de um momento com um amigo que fez você sorrir.",
+     "p": [
+      "Os amigos muitas vezes transformam dias comuns em bons dias.",
+      "Lembre o lugar, as risadas ou as palavras desse momento.",
+      "Lembrar também fortalece o laço na sua mente."
+     ],
+     "q": "Que momento recente com um amigo fez você sorrir?",
+     "c": "Imagine um momento feliz com um amigo e envie uma mensagem curta sobre isso."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Teachers who helped you",
+     "g": "Remember a teacher or mentor who helped you grow.",
+     "p": [
+      "A teacher can be a school teacher, a coach, a boss or a patient friend.",
+      "Recall one thing they taught you that you still use.",
+      "Their effort is part of who you are today."
+     ],
+     "q": "Who taught you something you still use today?",
+     "c": "Write down a teacher's name and one lesson you still carry from them."
+    },
+    "de": {
+     "t": "Lehrer, die dir geholfen haben",
+     "g": "Erinnere dich an eine Lehrkraft oder einen Mentor, die dir beim Wachsen halfen.",
+     "p": [
+      "Ein Lehrer kann Schullehrerin, Trainer, Chefin oder geduldiger Freund sein.",
+      "Erinnere dich an eine Sache, die sie dir beibrachten und die du noch nutzt.",
+      "Ihre Mühe ist ein Teil dessen, wer du heute bist."
+     ],
+     "q": "Wer hat dir etwas beigebracht, das du heute noch nutzt?",
+     "c": "Schreibe den Namen einer Lehrperson auf und eine Lektion, die du von ihr noch in dir trägst."
+    },
+    "es": {
+     "t": "Maestros que te ayudaron",
+     "g": "Recuerda a un maestro o mentor que te ayudó a crecer.",
+     "p": [
+      "Un maestro puede ser de la escuela, un entrenador, un jefe o un amigo paciente.",
+      "Recuerda algo que te enseñó y que aún usas.",
+      "Su esfuerzo es parte de quien eres hoy."
+     ],
+     "q": "¿Quién te enseñó algo que todavía usas hoy?",
+     "c": "Escribe el nombre de un maestro y una lección que aún llevas de él o ella."
+    },
+    "fr": {
+     "t": "Les enseignants qui t'ont aidé",
+     "g": "Souviens-toi d'un enseignant ou d'un mentor qui t'a aidé à grandir.",
+     "p": [
+      "Un enseignant peut être un professeur, un entraîneur, un chef ou un ami patient.",
+      "Rappelle-toi une chose qu'il t'a apprise et que tu utilises encore.",
+      "Son effort fait partie de qui tu es aujourd'hui."
+     ],
+     "q": "Qui t'a appris quelque chose que tu utilises encore aujourd'hui ?",
+     "c": "Écris le nom d'un enseignant et une leçon que tu gardes de lui ou d'elle."
+    },
+    "it": {
+     "t": "Insegnanti che ti hanno aiutato",
+     "g": "Ricorda un insegnante o mentore che ti ha aiutato a crescere.",
+     "p": [
+      "Un insegnante può essere un docente, un allenatore, un capo o un amico paziente.",
+      "Ricorda una cosa che ti ha insegnato e che usi ancora.",
+      "Il suo impegno è parte di chi sei oggi."
+     ],
+     "q": "Chi ti ha insegnato qualcosa che usi ancora oggi?",
+     "c": "Scrivi il nome di un insegnante e una lezione che porti ancora con te."
+    },
+    "pt": {
+     "t": "Professores que te ajudaram",
+     "g": "Recorda um professor ou mentor que te ajudou a crescer.",
+     "p": [
+      "Um professor pode ser da escola, um treinador, um chefe ou um amigo paciente.",
+      "Lembra-te de uma coisa que te ensinou e que ainda usas.",
+      "O esforço dele faz parte de quem és hoje."
+     ],
+     "q": "Quem te ensinou algo que ainda usas hoje?",
+     "c": "Escreve o nome de um professor e uma lição que ainda levas contigo."
+    },
+    "pt_BR": {
+     "t": "Professores que ajudaram você",
+     "g": "Lembre de um professor ou mentor que ajudou você a crescer.",
+     "p": [
+      "Um professor pode ser da escola, um treinador, um chefe ou um amigo paciente.",
+      "Lembre de uma coisa que ele ensinou e que você ainda usa.",
+      "O esforço dele faz parte de quem você é hoje."
+     ],
+     "q": "Quem ensinou a você algo que ainda usa hoje?",
+     "c": "Escreva o nome de um professor e uma lição que você ainda leva consigo."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Everyday helpers",
+     "g": "Notice the people whose work makes your day easier.",
+     "p": [
+      "Bus drivers, cashiers, cleaners and cooks quietly support your day.",
+      "Noticing their effort makes ordinary errands feel more connected.",
+      "A smile or a thank you costs nothing and often lifts both of you."
+     ],
+     "q": "Whose work made your day easier today without you noticing?",
+     "c": "Thank one everyday helper today with eye contact and a real thank you."
+    },
+    "de": {
+     "t": "Helfer im Alltag",
+     "g": "Bemerke die Menschen, deren Arbeit deinen Tag leichter macht.",
+     "p": [
+      "Busfahrer, Kassiererinnen, Reinigungskräfte und Köche stützen leise deinen Tag.",
+      "Ihre Mühe zu bemerken lässt gewöhnliche Besorgungen verbundener wirken.",
+      "Ein Lächeln oder Danke kostet nichts und hebt oft beide Seiten."
+     ],
+     "q": "Wessen Arbeit hat deinen Tag heute erleichtert, ohne dass du es bemerkt hast?",
+     "c": "Danke heute einem Alltagshelfer mit Blickkontakt und einem echten Danke."
+    },
+    "es": {
+     "t": "Ayudantes del día a día",
+     "g": "Fíjate en las personas cuyo trabajo hace tu día más fácil.",
+     "p": [
+      "Conductores, cajeras, personal de limpieza y cocineros apoyan tu día en silencio.",
+      "Notar su esfuerzo hace que los recados cotidianos se sientan más conectados.",
+      "Una sonrisa o un gracias no cuesta nada y suele animar a ambos."
+     ],
+     "q": "¿El trabajo de quién hizo hoy tu día más fácil sin que lo notaras?",
+     "c": "Da hoy las gracias a un ayudante cotidiano con contacto visual y un gracias de verdad."
+    },
+    "fr": {
+     "t": "Les aides du quotidien",
+     "g": "Remarque les personnes dont le travail te facilite la journée.",
+     "p": [
+      "Chauffeurs, caissières, agents d'entretien et cuisiniers soutiennent discrètement ta journée.",
+      "Remarquer leur effort rend les courses ordinaires plus chaleureuses.",
+      "Un sourire ou un merci ne coûte rien et réjouit souvent les deux."
+     ],
+     "q": "Le travail de qui t'a facilité la journée aujourd'hui sans que tu le remarques ?",
+     "c": "Remercie aujourd'hui une personne qui t'aide au quotidien, en la regardant et avec un vrai merci."
+    },
+    "it": {
+     "t": "Gli aiutanti di ogni giorno",
+     "g": "Nota le persone il cui lavoro rende più facile la tua giornata.",
+     "p": [
+      "Autisti, cassiere, addetti alle pulizie e cuochi sostengono in silenzio la tua giornata.",
+      "Notare il loro impegno rende le commissioni ordinarie più connesse.",
+      "Un sorriso o un grazie non costa nulla e spesso rallegra entrambi."
+     ],
+     "q": "Il lavoro di chi ha reso più facile la tua giornata oggi senza che te ne accorgessi?",
+     "c": "Ringrazia oggi una persona che ti aiuta ogni giorno, guardandola negli occhi con un grazie vero."
+    },
+    "pt": {
+     "t": "Ajudantes do dia a dia",
+     "g": "Repara nas pessoas cujo trabalho torna o teu dia mais fácil.",
+     "p": [
+      "Motoristas, caixas, pessoal da limpeza e cozinheiros apoiam o teu dia em silêncio.",
+      "Reparar no esforço deles faz as tarefas normais parecerem mais ligadas.",
+      "Um sorriso ou um obrigado não custa nada e muitas vezes anima os dois."
+     ],
+     "q": "O trabalho de quem tornou o teu dia mais fácil hoje sem que reparasses?",
+     "c": "Agradece hoje a um ajudante do dia a dia, olhando-o nos olhos, com um obrigado a sério."
+    },
+    "pt_BR": {
+     "t": "Ajudantes do dia a dia",
+     "g": "Perceba as pessoas cujo trabalho torna seu dia mais fácil.",
+     "p": [
+      "Motoristas, caixas, pessoal da limpeza e cozinheiros apoiam seu dia em silêncio.",
+      "Perceber o esforço deles faz as tarefas comuns parecerem mais conectadas.",
+      "Um sorriso ou um obrigado não custa nada e muitas vezes anima os dois."
+     ],
+     "q": "O trabalho de quem facilitou seu dia hoje sem que você percebesse?",
+     "c": "Agradeça hoje a um ajudante do dia a dia, olhando nos olhos, com um obrigado de verdade."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Unseen helpers",
+     "g": "Think of the farmers, drivers and makers behind everyday things.",
+     "p": [
+      "Every object you use passed through many hands you will never meet.",
+      "Picture the people behind your breakfast or your shirt.",
+      "Silent thanks to strangers builds a sense of belonging to a bigger web."
+     ],
+     "q": "Pick an item near you; who might have helped it get here?",
+     "c": "Choose one object and silently thank three people who helped it reach you."
+    },
+    "de": {
+     "t": "Unsichtbare Helfer",
+     "g": "Denke an Bauern, Fahrer und Hersteller hinter Alltagsdingen.",
+     "p": [
+      "Jeder Gegenstand, den du nutzt, ging durch viele Hände, denen du nie begegnest.",
+      "Stelle dir die Menschen hinter deinem Frühstück oder deinem Hemd vor.",
+      "Stiller Dank an Fremde stärkt das Gefühl, zu einem größeren Netz zu gehören."
+     ],
+     "q": "Such dir einen Gegenstand in deiner Nähe aus; wer könnte geholfen haben, dass er hierherkam?",
+     "c": "Wähle einen Gegenstand und danke still drei Menschen, die geholfen haben, dass er dich erreichte."
+    },
+    "es": {
+     "t": "Ayudantes invisibles",
+     "g": "Piensa en los agricultores, conductores y artesanos detrás de las cosas cotidianas.",
+     "p": [
+      "Cada objeto que usas pasó por muchas manos que nunca conocerás.",
+      "Imagina a las personas detrás de tu desayuno o tu camisa.",
+      "Dar las gracias en silencio a desconocidos crea sensación de pertenecer a una red mayor."
+     ],
+     "q": "Elige un objeto cercano; ¿quién pudo ayudar a que llegara hasta aquí?",
+     "c": "Elige un objeto y da las gracias en silencio a tres personas que ayudaron a que llegara a ti."
+    },
+    "fr": {
+     "t": "Les aides invisibles",
+     "g": "Pense aux agriculteurs, chauffeurs et fabricants derrière les objets du quotidien.",
+     "p": [
+      "Chaque objet que tu utilises est passé par de nombreuses mains que tu ne rencontreras jamais.",
+      "Imagine les gens derrière ton petit-déjeuner ou ta chemise.",
+      "Remercier en silence des inconnus donne le sentiment d'appartenir à un réseau plus grand."
+     ],
+     "q": "Choisis un objet près de toi ; qui a pu aider à ce qu'il arrive jusqu'ici ?",
+     "c": "Choisis un objet et remercie en silence trois personnes qui ont aidé à ce qu'il te parvienne."
+    },
+    "it": {
+     "t": "Aiutanti invisibili",
+     "g": "Pensa ad agricoltori, autisti e artigiani dietro le cose di ogni giorno.",
+     "p": [
+      "Ogni oggetto che usi è passato per tante mani che non incontrerai mai.",
+      "Immagina le persone dietro la tua colazione o la tua maglia.",
+      "Ringraziare in silenzio degli sconosciuti dà il senso di appartenere a una rete più grande."
+     ],
+     "q": "Scegli un oggetto vicino a te; chi potrebbe aver aiutato a farlo arrivare qui?",
+     "c": "Scegli un oggetto e ringrazia in silenzio tre persone che hanno aiutato a farlo arrivare a te."
+    },
+    "pt": {
+     "t": "Ajudantes invisíveis",
+     "g": "Pensa nos agricultores, motoristas e artesãos por trás das coisas do dia a dia.",
+     "p": [
+      "Cada objeto que usas passou por muitas mãos que nunca conhecerás.",
+      "Imagina as pessoas por trás do teu pequeno-almoço ou da tua camisa.",
+      "Agradecer em silêncio a desconhecidos cria a sensação de pertencer a uma rede maior."
+     ],
+     "q": "Escolhe um objeto perto de ti; quem pode ter ajudado a que chegasse aqui?",
+     "c": "Escolhe um objeto e agradece em silêncio a três pessoas que ajudaram a que chegasse até ti."
+    },
+    "pt_BR": {
+     "t": "Ajudantes invisíveis",
+     "g": "Pense nos agricultores, motoristas e artesãos por trás das coisas do dia a dia.",
+     "p": [
+      "Cada objeto que você usa passou por muitas mãos que você nunca vai conhecer.",
+      "Imagine as pessoas por trás do seu café da manhã ou da sua camisa.",
+      "Agradecer em silêncio a desconhecidos cria a sensação de pertencer a uma rede maior."
+     ],
+     "q": "Escolha um objeto perto de você; quem pode ter ajudado a ele chegar aqui?",
+     "c": "Escolha um objeto e agradeça em silêncio a três pessoas que ajudaram a ele chegar até você."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your neighbours",
+     "g": "Appreciate the people who live or work near you.",
+     "p": [
+      "Neighbours can be the friendly face at the shop, the kid next door or the cafe owner.",
+      "Small greetings create a feeling of belonging.",
+      "Appreciating them first can make the next hello warmer."
+     ],
+     "q": "Who near you do you see regularly and quietly appreciate?",
+     "c": "Greet one neighbour or local person by name or with a smile today."
+    },
+    "de": {
+     "t": "Deine Nachbarn",
+     "g": "Schätze die Menschen, die in deiner Nähe wohnen oder arbeiten.",
+     "p": [
+      "Nachbarn können das freundliche Gesicht im Laden, das Kind nebenan oder die Café-Besitzerin sein.",
+      "Kleine Grüße schaffen ein Gefühl von Zugehörigkeit.",
+      "Sie zuerst zu schätzen kann das nächste Hallo wärmer machen."
+     ],
+     "q": "Wen in deiner Nähe siehst du regelmäßig und schätzt ihn im Stillen?",
+     "c": "Grüße heute einen Nachbarn oder jemanden aus der Gegend mit Namen oder einem Lächeln."
+    },
+    "es": {
+     "t": "Tus vecinos",
+     "g": "Valora a las personas que viven o trabajan cerca de ti.",
+     "p": [
+      "Los vecinos pueden ser la cara amable de la tienda, el niño de al lado o el dueño del café.",
+      "Los saludos pequeños crean sensación de pertenencia.",
+      "Valorarlos primero puede hacer más cálido el siguiente hola."
+     ],
+     "q": "¿A quién cercano ves a menudo y valoras en silencio?",
+     "c": "Saluda hoy a un vecino o a alguien del barrio por su nombre o con una sonrisa."
+    },
+    "fr": {
+     "t": "Tes voisins",
+     "g": "Apprécie les personnes qui vivent ou travaillent près de toi.",
+     "p": [
+      "Les voisins peuvent être le visage aimable de la boutique, l'enfant d'à côté ou la patronne du café.",
+      "De petits saluts créent un sentiment d'appartenance.",
+      "Les apprécier d'abord peut rendre le prochain bonjour plus chaleureux."
+     ],
+     "q": "Qui près de chez toi vois-tu régulièrement et apprécies-tu en silence ?",
+     "c": "Salue aujourd'hui un voisin ou une personne du quartier par son prénom ou avec un sourire."
+    },
+    "it": {
+     "t": "I tuoi vicini",
+     "g": "Apprezza le persone che vivono o lavorano vicino a te.",
+     "p": [
+      "I vicini possono essere la faccia gentile del negozio, il bambino della porta accanto o la barista.",
+      "I piccoli saluti creano senso di appartenenza.",
+      "Apprezzarli prima può rendere più caldo il prossimo ciao."
+     ],
+     "q": "Chi vicino a te vedi regolarmente e apprezzi in silenzio?",
+     "c": "Saluta oggi un vicino o una persona del quartiere per nome o con un sorriso."
+    },
+    "pt": {
+     "t": "Os teus vizinhos",
+     "g": "Valoriza as pessoas que vivem ou trabalham perto de ti.",
+     "p": [
+      "Os vizinhos podem ser a cara simpática da loja, a criança do lado ou o dono do café.",
+      "Pequenos cumprimentos criam sensação de pertença.",
+      "Valorizá-los primeiro pode tornar o próximo olá mais caloroso."
+     ],
+     "q": "Quem perto de ti vês regularmente e valorizas em silêncio?",
+     "c": "Cumprimenta hoje um vizinho ou alguém do bairro pelo nome ou com um sorriso."
+    },
+    "pt_BR": {
+     "t": "Seus vizinhos",
+     "g": "Valorize as pessoas que moram ou trabalham perto de você.",
+     "p": [
+      "Vizinhos podem ser a cara simpática da loja, a criança do lado ou o dono da padaria.",
+      "Pequenos cumprimentos criam sensação de pertencimento.",
+      "Valorizá-los primeiro pode deixar o próximo oi mais caloroso."
+     ],
+     "q": "Quem da sua vizinhança você vê com frequência e valoriza em silêncio?",
+     "c": "Cumprimente hoje um vizinho ou alguém do bairro pelo nome ou com um sorriso."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Colleagues and classmates",
+     "g": "Notice support and good humour from people you work or study with.",
+     "p": [
+      "Shared days are easier with people who share tips, snacks or jokes.",
+      "Look for small helps: a tip, covering a task, a friendly message.",
+      "Noticing them can soften even stressful weeks."
+     ],
+     "q": "Which colleague or classmate made your week easier?",
+     "c": "Tell one colleague or classmate what you appreciated about working with them."
+    },
+    "de": {
+     "t": "Kollegen und Mitschüler",
+     "g": "Bemerke Unterstützung und Humor von Menschen, mit denen du arbeitest oder lernst.",
+     "p": [
+      "Gemeinsame Tage sind leichter mit Menschen, die Tipps, Snacks oder Witze teilen.",
+      "Achte auf kleine Hilfen: einen Tipp, eine übernommene Aufgabe, eine freundliche Nachricht.",
+      "Sie zu bemerken kann selbst stressige Wochen mildern."
+     ],
+     "q": "Welcher Kollege oder Mitschüler hat deine Woche leichter gemacht?",
+     "c": "Sage heute einem Kollegen oder Mitschüler, was du an der Zusammenarbeit schätzt."
+    },
+    "es": {
+     "t": "Compañeros de trabajo y de clase",
+     "g": "Fíjate en el apoyo y el buen humor de quienes trabajan o estudian contigo.",
+     "p": [
+      "Los días compartidos son más fáciles con quien comparte consejos, snacks o bromas.",
+      "Busca pequeñas ayudas: un consejo, cubrir una tarea, un mensaje amable.",
+      "Notarlo puede suavizar incluso semanas estresantes."
+     ],
+     "q": "¿Qué compañero hizo tu semana más fácil?",
+     "c": "Dile hoy a un compañero qué apreciaste de trabajar con él o ella."
+    },
+    "fr": {
+     "t": "Collègues et camarades",
+     "g": "Remarque le soutien et la bonne humeur de ceux avec qui tu travailles ou étudies.",
+     "p": [
+      "Les journées partagées sont plus faciles avec des gens qui partagent conseils, en-cas ou blagues.",
+      "Cherche les petits coups de main : un conseil, une tâche reprise, un message gentil.",
+      "Les remarquer peut adoucir même des semaines stressantes."
+     ],
+     "q": "Quel collègue ou camarade t'a facilité la semaine ?",
+     "c": "Dis aujourd'hui à un collègue ou camarade ce que tu apprécies dans votre collaboration."
+    },
+    "it": {
+     "t": "Colleghi e compagni di classe",
+     "g": "Nota il sostegno e il buonumore di chi lavora o studia con te.",
+     "p": [
+      "Le giornate condivise sono più facili con chi condivide consigli, spuntini o battute.",
+      "Cerca i piccoli aiuti: un consiglio, un compito coperto, un messaggio gentile.",
+      "Notarli può addolcire anche settimane stressanti."
+     ],
+     "q": "Quale collega o compagno ti ha reso più facile la settimana?",
+     "c": "Di' oggi a un collega o compagno cosa hai apprezzato del lavorare con lui o lei."
+    },
+    "pt": {
+     "t": "Colegas de trabalho e de turma",
+     "g": "Repara no apoio e no bom humor de quem trabalha ou estuda contigo.",
+     "p": [
+      "Os dias partilhados são mais fáceis com quem partilha dicas, lanches ou piadas.",
+      "Procura pequenas ajudas: uma dica, uma tarefa assumida, uma mensagem simpática.",
+      "Reparar nisso pode suavizar até semanas stressantes."
+     ],
+     "q": "Que colega tornou a tua semana mais fácil?",
+     "c": "Diz hoje a um colega o que apreciaste em trabalhar com ele ou ela."
+    },
+    "pt_BR": {
+     "t": "Colegas de trabalho e de turma",
+     "g": "Perceba o apoio e o bom humor de quem trabalha ou estuda com você.",
+     "p": [
+      "Dias compartilhados ficam mais fáceis com quem divide dicas, lanches ou piadas.",
+      "Procure pequenas ajudas: uma dica, uma tarefa assumida, uma mensagem simpática.",
+      "Perceber isso pode suavizar até semanas estressantes."
+     ],
+     "q": "Que colega tornou sua semana mais fácil?",
+     "c": "Diga hoje a um colega o que você gostou de trabalhar com ele ou ela."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Thanking with details",
+     "g": "Make thanks memorable by naming exactly what you appreciated.",
+     "p": [
+      "Thanks for the help is fine; thanks for staying late to fix my slides is memorable.",
+      "Details prove you truly noticed the person's effort.",
+      "Include the effect: what changed for you because of it."
+     ],
+     "q": "How would you thank someone with one detail and one result?",
+     "c": "Write a thank you with two parts: what they did and how it helped you."
+    },
+    "de": {
+     "t": "Danken mit Details",
+     "g": "Mache Dank unvergesslich, indem du genau nennst, was du geschätzt hast.",
+     "p": [
+      "Danke für die Hilfe ist in Ordnung; danke, dass du länger geblieben bist, um meine Folien zu retten, bleibt im Gedächtnis.",
+      "Details zeigen, dass du den Einsatz der Person wirklich bemerkt hast.",
+      "Nenne die Wirkung: Was hat sich für dich dadurch geändert."
+     ],
+     "q": "Wie würdest du jemandem mit einem Detail und einem Ergebnis danken?",
+     "c": "Schreibe ein Danke aus zwei Teilen: was die Person tat und wie es dir half."
+    },
+    "es": {
+     "t": "Agradecer con detalles",
+     "g": "Haz que tu gracias se recuerde nombrando exactamente lo que valoraste.",
+     "p": [
+      "Gracias por la ayuda está bien; gracias por quedarte tarde a arreglar mis diapositivas se recuerda.",
+      "Los detalles prueban que de verdad notaste el esfuerzo de la persona.",
+      "Incluye el efecto: qué cambió para ti gracias a ello."
+     ],
+     "q": "¿Cómo agradecerías a alguien con un detalle y un resultado?",
+     "c": "Escribe un gracias con dos partes: qué hizo la persona y cómo te ayudó."
+    },
+    "fr": {
+     "t": "Remercier avec des détails",
+     "g": "Rends ton merci mémorable en nommant exactement ce que tu as apprécié.",
+     "p": [
+      "Merci pour l'aide, c'est bien ; merci d'être resté tard pour réparer mes diapos, ça marque.",
+      "Les détails prouvent que tu as vraiment remarqué l'effort de la personne.",
+      "Ajoute l'effet : ce qui a changé pour toi grâce à cela."
+     ],
+     "q": "Comment remercierais-tu quelqu'un avec un détail et un résultat ?",
+     "c": "Écris un merci en deux parties : ce que la personne a fait et en quoi cela t'a aidé."
+    },
+    "it": {
+     "t": "Ringraziare con i dettagli",
+     "g": "Rendi il grazie memorabile nominando esattamente ciò che hai apprezzato.",
+     "p": [
+      "Grazie per l'aiuto va bene; grazie per essere rimasto fino a tardi a sistemare le mie slide resta in mente.",
+      "I dettagli provano che hai davvero notato l'impegno della persona.",
+      "Includi l'effetto: cosa è cambiato per te grazie a questo."
+     ],
+     "q": "Come ringrazieresti qualcuno con un dettaglio e un risultato?",
+     "c": "Scrivi un grazie in due parti: cosa ha fatto la persona e come ti ha aiutato."
+    },
+    "pt": {
+     "t": "Agradecer com detalhes",
+     "g": "Torna o teu obrigado memorável dizendo exatamente o que valorizaste.",
+     "p": [
+      "Obrigado pela ajuda está bem; obrigado por ficares até tarde a arranjar os meus slides fica na memória.",
+      "Os detalhes provam que reparaste mesmo no esforço da pessoa.",
+      "Inclui o efeito: o que mudou para ti graças a isso."
+     ],
+     "q": "Como agradecerias a alguém com um detalhe e um resultado?",
+     "c": "Escreve um obrigado em duas partes: o que a pessoa fez e como te ajudou."
+    },
+    "pt_BR": {
+     "t": "Agradecendo com detalhes",
+     "g": "Torne seu obrigado memorável dizendo exatamente o que você valorizou.",
+     "p": [
+      "Obrigado pela ajuda está bom; obrigado por ficar até tarde consertando meus slides marca.",
+      "Os detalhes provam que você realmente percebeu o esforço da pessoa.",
+      "Inclua o efeito: o que mudou para você graças a isso."
+     ],
+     "q": "Como você agradeceria a alguém com um detalhe e um resultado?",
+     "c": "Escreva um obrigado em duas partes: o que a pessoa fez e como isso ajudou você."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A gratitude message",
+     "g": "Send a short message to thank someone today.",
+     "p": [
+      "A message is quick, easy and can be read again whenever the person needs it.",
+      "Keep it to two or three sentences; short and sincere is enough.",
+      "You do not need a special occasion to send thanks."
+     ],
+     "q": "Who would be happily surprised by a thank-you message from you?",
+     "c": "Send one thank-you message today, naming one thing you appreciate about them."
+    },
+    "de": {
+     "t": "Eine Dankesnachricht",
+     "g": "Schicke heute jemandem eine kurze Nachricht des Dankes.",
+     "p": [
+      "Eine Nachricht ist schnell, einfach und kann wieder gelesen werden, wann immer die Person es braucht.",
+      "Zwei, drei Sätze genügen; kurz und aufrichtig reicht.",
+      "Du brauchst keinen besonderen Anlass, um Dank zu senden."
+     ],
+     "q": "Wer würde sich über eine Dankesnachricht von dir freuen?",
+     "c": "Sende heute eine Dankesnachricht und nenne eine Sache, die du an der Person schätzt."
+    },
+    "es": {
+     "t": "Un mensaje de gratitud",
+     "g": "Envía hoy un mensaje corto para dar las gracias a alguien.",
+     "p": [
+      "Un mensaje es rápido, fácil y se puede releer cuando la persona lo necesite.",
+      "Hazlo en dos o tres frases; corto y sincero basta.",
+      "No necesitas una ocasión especial para dar las gracias."
+     ],
+     "q": "¿Quién se alegraría con un mensaje de agradecimiento tuyo?",
+     "c": "Envía hoy un mensaje de gracias y nombra una cosa que valoras de esa persona."
+    },
+    "fr": {
+     "t": "Un message de gratitude",
+     "g": "Envoie aujourd'hui un court message pour remercier quelqu'un.",
+     "p": [
+      "Un message est rapide, facile, et peut être relu chaque fois que la personne en a besoin.",
+      "Reste sur deux ou trois phrases ; court et sincère suffit.",
+      "Pas besoin d'occasion spéciale pour envoyer un merci."
+     ],
+     "q": "Qui serait heureusement surpris par un message de remerciement de ta part ?",
+     "c": "Envoie aujourd'hui un message de merci en nommant une chose que tu apprécies chez la personne."
+    },
+    "it": {
+     "t": "Un messaggio di gratitudine",
+     "g": "Invia oggi un breve messaggio per ringraziare qualcuno.",
+     "p": [
+      "Un messaggio è rapido, facile e si può rileggere ogni volta che la persona ne ha bisogno.",
+      "Bastano due o tre frasi; breve e sincero è abbastanza.",
+      "Non serve un'occasione speciale per inviare un grazie."
+     ],
+     "q": "Chi sarebbe felicemente sorpreso da un tuo messaggio di ringraziamento?",
+     "c": "Invia oggi un messaggio di grazie nominando una cosa che apprezzi di quella persona."
+    },
+    "pt": {
+     "t": "Uma mensagem de gratidão",
+     "g": "Envia hoje uma mensagem curta a agradecer a alguém.",
+     "p": [
+      "Uma mensagem é rápida, fácil e pode ser relida sempre que a pessoa precisar.",
+      "Fica por duas ou três frases; curto e sincero chega.",
+      "Não precisas de uma ocasião especial para enviar um obrigado."
+     ],
+     "q": "Quem ficaria feliz por receber uma mensagem de agradecimento tua?",
+     "c": "Envia hoje uma mensagem de obrigado e diz uma coisa que valorizas nessa pessoa."
+    },
+    "pt_BR": {
+     "t": "Uma mensagem de gratidão",
+     "g": "Envie hoje uma mensagem curta para agradecer a alguém.",
+     "p": [
+      "Uma mensagem é rápida, fácil e pode ser relida sempre que a pessoa precisar.",
+      "Fique em duas ou três frases; curto e sincero basta.",
+      "Você não precisa de uma ocasião especial para enviar um obrigado."
+     ],
+     "q": "Quem ficaria feliz de receber uma mensagem de agradecimento sua?",
+     "c": "Envie hoje uma mensagem de obrigado e diga uma coisa que você valoriza nessa pessoa."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The gratitude letter",
+     "g": "Write a letter to someone who made a difference in your life.",
+     "p": [
+      "A gratitude letter is a longer thank you written for one person.",
+      "Say what they did, how it affected you and what you are glad about today.",
+      "Writing it is valuable even if you never send it."
+     ],
+     "q": "Who made a real difference in your life and might never have heard your thanks?",
+     "c": "Write a short letter, about half a page, to one person who made a difference to you."
+    },
+    "de": {
+     "t": "Der Dankbarkeitsbrief",
+     "g": "Schreibe einen Brief an jemanden, der in deinem Leben etwas bewirkt hat.",
+     "p": [
+      "Ein Dankbarkeitsbrief ist ein längeres Danke, das für eine einzige Person geschrieben wird.",
+      "Schreibe, was die Person tat, wie es dich beeinflusste und worüber du heute froh bist.",
+      "Ihn zu schreiben ist wertvoll, selbst wenn du ihn nie abschickst."
+     ],
+     "q": "Wer hat dein Leben wirklich verändert und hat deinen Dank vielleicht nie gehört?",
+     "c": "Schreibe einen kurzen Brief, etwa eine halbe Seite, an einen Menschen, der dir viel bedeutet hat."
+    },
+    "es": {
+     "t": "La carta de gratitud",
+     "g": "Escribe una carta a alguien que marcó una diferencia en tu vida.",
+     "p": [
+      "Una carta de gratitud es un gracias más largo escrito para una sola persona.",
+      "Cuenta qué hizo, cómo te afectó y de qué te alegras hoy.",
+      "Escribirla vale la pena aunque nunca la envíes."
+     ],
+     "q": "¿Quién marcó una diferencia real en tu vida y quizá nunca oyó tu agradecimiento?",
+     "c": "Escribe una carta corta, de media página, a una persona que marcó una diferencia para ti."
+    },
+    "fr": {
+     "t": "La lettre de gratitude",
+     "g": "Écris une lettre à quelqu'un qui a compté dans ta vie.",
+     "p": [
+      "Une lettre de gratitude est un merci plus long, écrit pour une seule personne.",
+      "Dis ce que la personne a fait, comment cela t'a touché et ce dont tu te réjouis aujourd'hui.",
+      "L'écrire a de la valeur même si tu ne l'envoies jamais."
+     ],
+     "q": "Qui a vraiment compté dans ta vie et n'a peut-être jamais entendu ton merci ?",
+     "c": "Écris une courte lettre, d'une demi-page environ, à une personne qui a compté pour toi."
+    },
+    "it": {
+     "t": "La lettera di gratitudine",
+     "g": "Scrivi una lettera a qualcuno che ha fatto la differenza nella tua vita.",
+     "p": [
+      "Una lettera di gratitudine è un grazie più lungo scritto per una sola persona.",
+      "Racconta cosa ha fatto, come ti ha influenzato e di cosa sei felice oggi.",
+      "Scriverla ha valore anche se non la spedirai mai."
+     ],
+     "q": "Chi ha fatto una vera differenza nella tua vita e forse non ha mai sentito il tuo grazie?",
+     "c": "Scrivi una breve lettera, circa mezza pagina, a una persona che ha fatto la differenza per te."
+    },
+    "pt": {
+     "t": "A carta de gratidão",
+     "g": "Escreve uma carta a alguém que fez diferença na tua vida.",
+     "p": [
+      "Uma carta de gratidão é um obrigado mais longo escrito para uma só pessoa.",
+      "Diz o que fez, como te afetou e do que te alegras hoje.",
+      "Escrevê-la vale a pena mesmo que nunca a envies."
+     ],
+     "q": "Quem fez realmente diferença na tua vida e talvez nunca tenha ouvido o teu agradecimento?",
+     "c": "Escreve uma carta curta, de meia página, a uma pessoa que fez diferença para ti."
+    },
+    "pt_BR": {
+     "t": "A carta de gratidão",
+     "g": "Escreva uma carta a alguém que fez diferença na sua vida.",
+     "p": [
+      "Uma carta de gratidão é um obrigado mais longo escrito para uma só pessoa.",
+      "Diga o que ela fez, como isso afetou você e do que você se alegra hoje.",
+      "Escrevê-la vale a pena mesmo que você nunca a envie."
+     ],
+     "q": "Quem fez diferença de verdade na sua vida e talvez nunca tenha ouvido seu agradecimento?",
+     "c": "Escreva uma carta curta, de meia página, a uma pessoa que fez diferença para você."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "books",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why we read: the joys of books",
+     "g": "Discover the many gifts reading brings to everyday life.",
+     "p": [
+      "Stories train imagination: your mind builds every face and place.",
+      "Fiction lets you feel what other people feel, which builds empathy.",
+      "A few quiet pages can calm you down and teach you something new."
+     ],
+     "q": "What was the last book that made you lose track of time?",
+     "c": "Today, read just five pages of anything and notice how you feel."
+    },
+    "de": {
+     "t": "Warum wir lesen: die Freuden der Bücher",
+     "g": "Entdecke, was Lesen dir im Alltag alles schenkt.",
+     "p": [
+      "Geschichten trainieren die Fantasie: Dein Kopf baut jedes Gesicht und jeden Ort.",
+      "Romane lassen dich mitfühlen und stärken so die Empathie.",
+      "Ein paar ruhige Seiten beruhigen und bringen dir etwas Neues bei."
+     ],
+     "q": "Welches Buch hat dich zuletzt die Zeit vergessen lassen?",
+     "c": "Lies heute fünf Seiten von irgendetwas und spüre, wie es dir damit geht."
+    },
+    "es": {
+     "t": "Por qué leemos: la alegría de los libros",
+     "g": "Descubre todo lo que la lectura aporta a tu día a día.",
+     "p": [
+      "Las historias ejercitan la imaginación: tu mente crea cada rostro y lugar.",
+      "La ficción te hace sentir lo que sienten otros y fomenta la empatía.",
+      "Unas páginas tranquilas relajan y te enseñan algo nuevo."
+     ],
+     "q": "¿Qué libro fue el último que te hizo perder la noción del tiempo?",
+     "c": "Hoy lee solo cinco páginas de lo que quieras y observa cómo te sientes."
+    },
+    "fr": {
+     "t": "Pourquoi lire : la joie des livres",
+     "g": "Découvre tout ce que la lecture apporte au quotidien.",
+     "p": [
+      "Les histoires entraînent l'imagination : ton esprit crée chaque visage et chaque lieu.",
+      "La fiction te fait ressentir ce que d'autres ressentent et nourrit l'empathie.",
+      "Quelques pages au calme apaisent et t'apprennent quelque chose."
+     ],
+     "q": "Quel est le dernier livre qui t'a fait oublier l'heure ?",
+     "c": "Aujourd'hui, lis cinq pages de ce que tu veux et note ce que tu ressens."
+    },
+    "it": {
+     "t": "Perché leggiamo: la gioia dei libri",
+     "g": "Scopri i tanti doni che la lettura porta nella vita di ogni giorno.",
+     "p": [
+      "Le storie allenano l'immaginazione: la tua mente costruisce ogni volto e luogo.",
+      "La narrativa ti fa sentire ciò che provano gli altri e crea empatia.",
+      "Poche pagine in tranquillità rilassano e insegnano qualcosa di nuovo."
+     ],
+     "q": "Qual è stato l'ultimo libro che ti ha fatto perdere la nozione del tempo?",
+     "c": "Oggi leggi solo cinque pagine di qualsiasi cosa e nota come ti senti."
+    },
+    "pt": {
+     "t": "Porque lemos: a alegria dos livros",
+     "g": "Descobre tudo o que a leitura traz ao teu dia a dia.",
+     "p": [
+      "As histórias treinam a imaginação: a tua mente cria cada rosto e lugar.",
+      "A ficção faz-te sentir o que os outros sentem e ajuda a criar empatia.",
+      "Algumas páginas em sossego acalmam e ensinam-te algo novo."
+     ],
+     "q": "Qual foi o último livro que te fez perder a noção do tempo?",
+     "c": "Hoje lê apenas cinco páginas de qualquer coisa e repara como te sentes."
+    },
+    "pt_BR": {
+     "t": "Por que lemos: a alegria dos livros",
+     "g": "Descubra tudo o que a leitura traz para o seu dia a dia.",
+     "p": [
+      "As histórias exercitam a imaginação: sua mente cria cada rosto e lugar.",
+      "A ficção faz você sentir o que os outros sentem e fortalece a empatia.",
+      "Algumas páginas tranquilas acalmam e ensinam algo novo."
+     ],
+     "q": "Qual foi o último livro que fez você perder a noção do tempo?",
+     "c": "Hoje leia só cinco páginas de qualquer coisa e perceba como se sente."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your reader profile",
+     "g": "Find out what kinds of books already pull you in.",
+     "p": [
+      "Think about topics you love: animals, history, space, food, people.",
+      "Notice your favourite moods: funny, cosy, thrilling or thoughtful.",
+      "Short or long, paper or screen: your habits are clues to good picks."
+     ],
+     "q": "If you could only read one kind of book forever, what would it be?",
+     "c": "Write three words that describe the books you enjoy most."
+    },
+    "de": {
+     "t": "Dein Leserprofil",
+     "g": "Finde heraus, welche Bücher dich schon jetzt anziehen.",
+     "p": [
+      "Denke an Themen, die du liebst: Tiere, Geschichte, Weltall, Essen, Menschen.",
+      "Achte auf deine Lieblingsstimmungen: lustig, gemütlich, spannend oder nachdenklich.",
+      "Kurz oder lang, Papier oder Bildschirm: Deine Gewohnheiten sind Hinweise."
+     ],
+     "q": "Wenn du für immer nur eine Art Buch lesen dürftest, welche wäre es?",
+     "c": "Schreibe drei Wörter auf, die deine liebsten Bücher beschreiben."
+    },
+    "es": {
+     "t": "Tu perfil de lector",
+     "g": "Descubre qué tipo de libros ya te atraen.",
+     "p": [
+      "Piensa en los temas que amas: animales, historia, espacio, comida, personas.",
+      "Fíjate en tus ambientes favoritos: divertido, acogedor, intenso o reflexivo.",
+      "Cortos o largos, papel o pantalla: tus hábitos son pistas para elegir bien."
+     ],
+     "q": "Si solo pudieras leer un tipo de libro para siempre, ¿cuál sería?",
+     "c": "Escribe tres palabras que describan los libros que más disfrutas."
+    },
+    "fr": {
+     "t": "Ton profil de lecteur",
+     "g": "Découvre quels livres t'attirent déjà.",
+     "p": [
+      "Pense aux sujets que tu aimes : animaux, histoire, espace, cuisine, gens.",
+      "Repère tes ambiances préférées : drôle, douillette, palpitante ou réfléchie.",
+      "Court ou long, papier ou écran : tes habitudes sont des indices."
+     ],
+     "q": "Si tu ne pouvais lire qu'un seul genre de livre pour toujours, lequel ?",
+     "c": "Écris trois mots qui décrivent les livres que tu aimes le plus."
+    },
+    "it": {
+     "t": "Il tuo profilo di lettore",
+     "g": "Scopri quali libri ti attirano già.",
+     "p": [
+      "Pensa agli argomenti che ami: animali, storia, spazio, cibo, persone.",
+      "Nota i tuoi toni preferiti: divertente, accogliente, avvincente o riflessivo.",
+      "Brevi o lunghi, carta o schermo: le tue abitudini sono indizi utili."
+     ],
+     "q": "Se potessi leggere un solo tipo di libro per sempre, quale sarebbe?",
+     "c": "Scrivi tre parole che descrivono i libri che preferisci."
+    },
+    "pt": {
+     "t": "O teu perfil de leitor",
+     "g": "Descobre que tipo de livros já te atraem.",
+     "p": [
+      "Pensa nos temas de que gostas: animais, história, espaço, comida, pessoas.",
+      "Repara nos teus ambientes favoritos: divertido, aconchegante, vibrante ou reflexivo.",
+      "Curtos ou longos, papel ou ecrã: os teus hábitos são pistas para escolher bem."
+     ],
+     "q": "Se só pudesses ler um tipo de livro para sempre, qual seria?",
+     "c": "Escreve três palavras que descrevam os livros de que mais gostas."
+    },
+    "pt_BR": {
+     "t": "Seu perfil de leitor",
+     "g": "Descubra que tipo de livro já atrai você.",
+     "p": [
+      "Pense nos temas de que você gosta: animais, história, espaço, comida, pessoas.",
+      "Note seus climas favoritos: divertido, aconchegante, vibrante ou reflexivo.",
+      "Curto ou longo, papel ou tela: seus hábitos são pistas para escolher bem."
+     ],
+     "q": "Se só pudesse ler um tipo de livro para sempre, qual seria?",
+     "c": "Escreva três palavras que descrevam os livros de que você mais gosta."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fiction and nonfiction",
+     "g": "Understand the two great families of books.",
+     "p": [
+      "Fiction is invented: novels and stories made from imagination.",
+      "Nonfiction deals with real things: facts, lives, ideas and how-tos.",
+      "Many readers enjoy both; each one feeds a different kind of curiosity."
+     ],
+     "q": "Do you lean towards made-up stories or true ones right now?",
+     "c": "Pick one of each on your shelf and read the first page of both."
+    },
+    "de": {
+     "t": "Belletristik und Sachbuch",
+     "g": "Verstehe die zwei großen Buchfamilien.",
+     "p": [
+      "Belletristik ist erfunden: Romane und Erzählungen aus der Fantasie.",
+      "Sachbücher behandeln Wirkliches: Fakten, Leben, Ideen und Anleitungen.",
+      "Viele lesen beides; jedes befriedigt eine andere Neugier."
+     ],
+     "q": "Bevorzugst du im Moment erfundene oder wahre Geschichten?",
+     "c": "Nimm je ein Buch von beiden Sorten und lies jeweils die erste Seite."
+    },
+    "es": {
+     "t": "Ficción y no ficción",
+     "g": "Comprende las dos grandes familias de libros.",
+     "p": [
+      "La ficción es inventada: novelas y cuentos nacidos de la imaginación.",
+      "La no ficción trata de lo real: hechos, vidas, ideas y guías prácticas.",
+      "Muchos lectores disfrutan de ambas; cada una alimenta una curiosidad distinta."
+     ],
+     "q": "¿Ahora prefieres historias inventadas o verdaderas?",
+     "c": "Elige un libro de cada tipo y lee la primera página de los dos."
+    },
+    "fr": {
+     "t": "Fiction et non-fiction",
+     "g": "Comprends les deux grandes familles de livres.",
+     "p": [
+      "La fiction est inventée : romans et récits nés de l'imagination.",
+      "La non-fiction parle du réel : faits, vies, idées et guides pratiques.",
+      "Beaucoup de lecteurs aiment les deux ; chacune nourrit une curiosité différente."
+     ],
+     "q": "En ce moment, tu préfères les histoires inventées ou les vraies ?",
+     "c": "Prends un livre de chaque type et lis la première page des deux."
+    },
+    "it": {
+     "t": "Narrativa e saggistica",
+     "g": "Capisci le due grandi famiglie di libri.",
+     "p": [
+      "La narrativa è inventata: romanzi e racconti nati dalla fantasia.",
+      "La saggistica tratta il reale: fatti, vite, idee e manuali pratici.",
+      "Molti lettori amano entrambe; ognuna nutre una curiosità diversa."
+     ],
+     "q": "In questo periodo preferisci storie inventate o storie vere?",
+     "c": "Scegli un libro per tipo e leggi la prima pagina di entrambi."
+    },
+    "pt": {
+     "t": "Ficção e não ficção",
+     "g": "Compreende as duas grandes famílias de livros.",
+     "p": [
+      "A ficção é inventada: romances e contos nascidos da imaginação.",
+      "A não ficção trata do real: factos, vidas, ideias e guias práticos.",
+      "Muitos leitores gostam de ambas; cada uma alimenta uma curiosidade diferente."
+     ],
+     "q": "Neste momento preferes histórias inventadas ou verdadeiras?",
+     "c": "Escolhe um livro de cada tipo e lê a primeira página dos dois."
+    },
+    "pt_BR": {
+     "t": "Ficção e não ficção",
+     "g": "Entenda as duas grandes famílias de livros.",
+     "p": [
+      "A ficção é inventada: romances e contos nascidos da imaginação.",
+      "A não ficção trata do real: fatos, vidas, ideias e guias práticos.",
+      "Muitos leitores gostam das duas; cada uma alimenta uma curiosidade diferente."
+     ],
+     "q": "Agora você prefere histórias inventadas ou verdadeiras?",
+     "c": "Escolha um livro de cada tipo e leia a primeira página dos dois."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Anatomy of a book",
+     "g": "Learn what each part of a book tells you before you start.",
+     "p": [
+      "The cover and title set the mood; the blurb on the back sums up the idea.",
+      "The title page names author and publisher; the contents list shows the route.",
+      "Chapters break the book into steps, so you can pause at natural spots."
+     ],
+     "q": "Which part of a book, cover, blurb or first line, convinces you most?",
+     "c": "Take a book and find its title page, contents and blurb in one minute."
+    },
+    "de": {
+     "t": "Aufbau eines Buches",
+     "g": "Lerne, was dir jeder Teil eines Buches vorab verrät.",
+     "p": [
+      "Cover und Titel setzen die Stimmung; der Klappentext fasst die Idee zusammen.",
+      "Die Titelseite nennt Autor und Verlag; das Inhaltsverzeichnis zeigt den Weg.",
+      "Kapitel gliedern das Buch in Etappen, sodass du an passenden Stellen pausieren kannst."
+     ],
+     "q": "Was überzeugt dich mehr: Cover, Klappentext oder erster Satz?",
+     "c": "Nimm ein Buch und finde in einer Minute Titelseite, Inhalt und Klappentext."
+    },
+    "es": {
+     "t": "Anatomía de un libro",
+     "g": "Aprende qué te dice cada parte de un libro antes de empezar.",
+     "p": [
+      "La portada y el título marcan el tono; la contraportada resume la idea.",
+      "La portadilla indica autor y editorial; el índice muestra el recorrido.",
+      "Los capítulos dividen el libro en etapas y permiten pausas naturales."
+     ],
+     "q": "¿Qué te convence más: la portada, la sinopsis o la primera frase?",
+     "c": "Toma un libro y localiza portadilla, índice y sinopsis en un minuto."
+    },
+    "fr": {
+     "t": "Anatomie d'un livre",
+     "g": "Apprends ce que chaque partie d'un livre t'apprend avant de commencer.",
+     "p": [
+      "La couverture et le titre donnent le ton ; la quatrième résume l'idée.",
+      "La page de titre indique auteur et éditeur ; la table des matières montre le trajet.",
+      "Les chapitres découpent le livre en étapes, avec des pauses naturelles."
+     ],
+     "q": "Qu'est-ce qui te convainc le plus : couverture, résumé ou première phrase ?",
+     "c": "Prends un livre et trouve page de titre, sommaire et quatrième en une minute."
+    },
+    "it": {
+     "t": "Anatomia di un libro",
+     "g": "Impara cosa ti dice ogni parte di un libro prima di iniziare.",
+     "p": [
+      "Copertina e titolo danno il tono; la quarta di copertina riassume l'idea.",
+      "Il frontespizio indica autore ed editore; l'indice mostra il percorso.",
+      "I capitoli dividono il libro in tappe e offrono pause naturali."
+     ],
+     "q": "Cosa ti convince di più: copertina, quarta o prima frase?",
+     "c": "Prendi un libro e trova frontespizio, indice e quarta in un minuto."
+    },
+    "pt": {
+     "t": "Anatomia de um livro",
+     "g": "Aprende o que cada parte de um livro te diz antes de começares.",
+     "p": [
+      "A capa e o título dão o tom; a contracapa resume a ideia.",
+      "A folha de rosto indica autor e editora; o índice mostra o percurso.",
+      "Os capítulos dividem o livro em etapas e dão pausas naturais."
+     ],
+     "q": "O que te convence mais: a capa, a sinopse ou a primeira frase?",
+     "c": "Pega num livro e encontra folha de rosto, índice e sinopse num minuto."
+    },
+    "pt_BR": {
+     "t": "Anatomia de um livro",
+     "g": "Aprenda o que cada parte de um livro diz antes de você começar.",
+     "p": [
+      "A capa e o título dão o tom; a contracapa resume a ideia.",
+      "A folha de rosto traz autor e editora; o sumário mostra o percurso.",
+      "Os capítulos dividem o livro em etapas e criam pausas naturais."
+     ],
+     "q": "O que mais convence você: a capa, a sinopse ou a primeira frase?",
+     "c": "Pegue um livro e ache folha de rosto, sumário e sinopse em um minuto."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How to pick a book in a shop",
+     "g": "Choose a book wisely using simple in-shop tricks.",
+     "p": [
+      "Read the blurb, then the first page: does the voice grab you?",
+      "Flip to a random page; if the writing feels good, that is a strong sign.",
+      "Ask booksellers: staff picks are often hidden gems."
+     ],
+     "q": "What made you buy your last book: cover, friend, shop display?",
+     "c": "Next time you browse, read the first page of three books before choosing."
+    },
+    "de": {
+     "t": "Ein Buch im Laden auswählen",
+     "g": "Wähle klug mit einfachen Tricks im Buchladen.",
+     "p": [
+      "Lies den Klappentext, dann die erste Seite: Packt dich die Stimme?",
+      "Schlage eine beliebige Seite auf; liest sie sich gut, ist das ein starkes Zeichen.",
+      "Frag Buchhändler: Ihre Empfehlungen sind oft verborgene Schätze."
+     ],
+     "q": "Was hat dich zuletzt zum Kauf bewegt: Cover, Freund, Schaufenster?",
+     "c": "Lies beim nächsten Stöbern von drei Büchern die erste Seite."
+    },
+    "es": {
+     "t": "Cómo elegir un libro en una librería",
+     "g": "Elige bien con trucos sencillos en la librería.",
+     "p": [
+      "Lee la sinopsis y luego la primera página: ¿te atrapa la voz?",
+      "Abre por una página al azar; si la prosa te gusta, es buena señal.",
+      "Pregunta a los libreros: sus recomendaciones suelen ser joyas ocultas."
+     ],
+     "q": "¿Qué te hizo comprar tu último libro: la portada, un amigo, el escaparate?",
+     "c": "La próxima vez, lee la primera página de tres libros antes de decidir."
+    },
+    "fr": {
+     "t": "Choisir un livre en librairie",
+     "g": "Choisis bien grâce à quelques astuces simples.",
+     "p": [
+      "Lis la quatrième puis la première page : la voix t'accroche-t-elle ?",
+      "Ouvre une page au hasard ; si l'écriture te plaît, c'est bon signe.",
+      "Demande aux libraires : leurs coups de cœur sont souvent des pépites."
+     ],
+     "q": "Qu'est-ce qui t'a fait acheter ton dernier livre : couverture, ami, vitrine ?",
+     "c": "La prochaine fois, lis la première page de trois livres avant de choisir."
+    },
+    "it": {
+     "t": "Come scegliere un libro in libreria",
+     "g": "Scegli bene con semplici trucchi in libreria.",
+     "p": [
+      "Leggi la quarta e poi la prima pagina: la voce ti cattura?",
+      "Apri una pagina a caso; se la scrittura ti piace, è un buon segno.",
+      "Chiedi ai librai: i loro consigli sono spesso piccole perle."
+     ],
+     "q": "Cosa ti ha spinto a comprare l'ultimo libro: copertina, amico, vetrina?",
+     "c": "La prossima volta leggi la prima pagina di tre libri prima di scegliere."
+    },
+    "pt": {
+     "t": "Como escolher um livro numa livraria",
+     "g": "Escolhe bem com truques simples na livraria.",
+     "p": [
+      "Lê a sinopse e depois a primeira página: a voz prende-te?",
+      "Abre uma página ao acaso; se a escrita te agrada, é bom sinal.",
+      "Pergunta aos livreiros: as sugestões deles são muitas vezes pérolas."
+     ],
+     "q": "O que te fez comprar o último livro: a capa, um amigo, a montra?",
+     "c": "Da próxima vez, lê a primeira página de três livros antes de decidir."
+    },
+    "pt_BR": {
+     "t": "Como escolher um livro na livraria",
+     "g": "Escolha bem com truques simples na livraria.",
+     "p": [
+      "Leia a sinopse e depois a primeira página: a voz prende você?",
+      "Abra uma página ao acaso; se a escrita agrada, é bom sinal.",
+      "Pergunte aos livreiros: as indicações deles costumam ser joias escondidas."
+     ],
+     "q": "O que fez você comprar seu último livro: a capa, um amigo, a vitrine?",
+     "c": "Da próxima vez, leia a primeira página de três livros antes de decidir."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Libraries: your free superpower",
+     "g": "See how a library card opens a world of books for free.",
+     "p": [
+      "A library card lets you borrow books, often for several weeks at no cost.",
+      "You can place holds on popular titles and renew loans when you need more time.",
+      "Many libraries lend e-books and audiobooks, and librarians love to help you."
+     ],
+     "q": "When did you last visit a library, and what did you find there?",
+     "c": "Look up your nearest library and ask what a card needs to get started."
+    },
+    "de": {
+     "t": "Bibliotheken: deine kostenlose Superkraft",
+     "g": "Sieh, wie ein Bibliotheksausweis dir kostenlos eine Welt voller Bücher öffnet.",
+     "p": [
+      "Mit dem Ausweis leihst du Bücher oft wochenlang gratis aus.",
+      "Beliebte Titel kannst du vormerken und Leihfristen bei Bedarf verlängern.",
+      "Viele Bibliotheken verleihen E-Books und Hörbücher, und Bibliothekare helfen gern."
+     ],
+     "q": "Wann warst du zuletzt in einer Bibliothek und was hast du dort gefunden?",
+     "c": "Suche deine nächste Bibliothek und frage, was du für den Ausweis brauchst."
+    },
+    "es": {
+     "t": "Bibliotecas: tu superpoder gratuito",
+     "g": "Descubre cómo un carné de biblioteca abre un mundo de libros gratis.",
+     "p": [
+      "Con el carné puedes llevarte libros prestados, a menudo durante semanas, sin coste.",
+      "Puedes reservar los títulos populares y renovar el préstamo si necesitas más tiempo.",
+      "Muchas bibliotecas prestan libros electrónicos y audiolibros, y los bibliotecarios ayudan encantados."
+     ],
+     "q": "¿Cuándo fue tu última visita a una biblioteca y qué encontraste?",
+     "c": "Busca tu biblioteca más cercana y pregunta qué necesitas para el carné."
+    },
+    "fr": {
+     "t": "Les bibliothèques : ton super-pouvoir gratuit",
+     "g": "Vois comment une carte de bibliothèque ouvre gratuitement un monde de livres.",
+     "p": [
+      "La carte permet d'emprunter des livres, souvent plusieurs semaines, sans frais.",
+      "Tu peux réserver les titres populaires et prolonger un prêt si besoin.",
+      "Beaucoup de bibliothèques prêtent livres numériques et audio, et les bibliothécaires aident volontiers."
+     ],
+     "q": "Quand es-tu allé en bibliothèque pour la dernière fois et qu'y as-tu trouvé ?",
+     "c": "Cherche ta bibliothèque la plus proche et demande ce qu'il faut pour la carte."
+    },
+    "it": {
+     "t": "Biblioteche: il tuo superpotere gratuito",
+     "g": "Scopri come una tessera apre gratis un mondo di libri.",
+     "p": [
+      "Con la tessera prendi in prestito libri, spesso per settimane, senza spendere.",
+      "Puoi prenotare i titoli più richiesti e rinnovare il prestito se serve altro tempo.",
+      "Molte biblioteche prestano e-book e audiolibri, e i bibliotecari aiutano volentieri."
+     ],
+     "q": "Quando sei stato l'ultima volta in biblioteca e cosa hai trovato?",
+     "c": "Cerca la biblioteca più vicina e chiedi cosa serve per la tessera."
+    },
+    "pt": {
+     "t": "Bibliotecas: o teu superpoder gratuito",
+     "g": "Vê como um cartão de biblioteca abre de graça um mundo de livros.",
+     "p": [
+      "Com o cartão podes requisitar livros, muitas vezes por semanas, sem custos.",
+      "Podes reservar os títulos mais procurados e renovar o empréstimo se precisares.",
+      "Muitas bibliotecas emprestam e-books e audiolivros, e os bibliotecários ajudam com gosto."
+     ],
+     "q": "Quando foi a tua última visita a uma biblioteca e o que encontraste?",
+     "c": "Procura a biblioteca mais próxima e pergunta o que precisas para o cartão."
+    },
+    "pt_BR": {
+     "t": "Bibliotecas: seu superpoder gratuito",
+     "g": "Veja como uma carteirinha de biblioteca abre de graça um mundo de livros.",
+     "p": [
+      "Com a carteirinha você pega livros emprestados, muitas vezes por semanas, sem custo.",
+      "Dá para reservar os títulos mais procurados e renovar o empréstimo se precisar.",
+      "Muitas bibliotecas emprestam e-books e audiolivros, e os bibliotecários ajudam com prazer."
+     ],
+     "q": "Quando foi sua última visita a uma biblioteca e o que você encontrou?",
+     "c": "Procure a biblioteca mais próxima e pergunte o que precisa para a carteirinha."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Paper, e-reader or audiobook?",
+     "g": "Compare formats and find what fits your day.",
+     "p": [
+      "Paper feels good, needs no battery and is lovely to share or shelve.",
+      "E-readers hold a whole library, adjust text size and glow for night reading.",
+      "Audiobooks turn walks, chores and trips into story time."
+     ],
+     "q": "Which format do you use most, and which would you like to try?",
+     "c": "Try a format you rarely use for ten minutes today, such as a free sample."
+    },
+    "de": {
+     "t": "Papier, E-Reader oder Hörbuch?",
+     "g": "Vergleiche Formate und finde, was zu deinem Tag passt.",
+     "p": [
+      "Papier fühlt sich gut an, braucht keinen Akku und lässt sich schön verleihen.",
+      "E-Reader fassen eine ganze Bibliothek, vergrößern Schrift und leuchten abends.",
+      "Hörbücher machen Spaziergänge, Hausarbeit und Reisen zur Geschichtenzeit."
+     ],
+     "q": "Welches Format nutzt du am meisten, und welches würdest du gern testen?",
+     "c": "Probiere heute zehn Minuten ein selten genutztes Format, etwa eine Gratisprobe."
+    },
+    "es": {
+     "t": "¿Papel, lector electrónico o audiolibro?",
+     "g": "Compara formatos y encuentra el que encaja con tu día.",
+     "p": [
+      "El papel se disfruta, no necesita batería y es ideal para compartir.",
+      "Los lectores electrónicos guardan una biblioteca entera y ajustan el tamaño de letra.",
+      "Los audiolibros convierten paseos, tareas y viajes en ratos de cuento."
+     ],
+     "q": "¿Qué formato usas más y cuál te gustaría probar?",
+     "c": "Prueba hoy diez minutos un formato que uses poco, por ejemplo una muestra gratuita."
+    },
+    "fr": {
+     "t": "Papier, liseuse ou livre audio ?",
+     "g": "Compare les formats et trouve celui qui convient à ta journée.",
+     "p": [
+      "Le papier est agréable, sans batterie, et se prête ou se range avec plaisir.",
+      "Les liseuses contiennent une bibliothèque, règlent la taille du texte et éclairent le soir.",
+      "Les livres audio transforment marches, tâches et trajets en moments d'histoire."
+     ],
+     "q": "Quel format utilises-tu le plus, et lequel aimerais-tu essayer ?",
+     "c": "Essaie dix minutes un format rare pour toi, par exemple un extrait gratuit."
+    },
+    "it": {
+     "t": "Carta, e-reader o audiolibro?",
+     "g": "Confronta i formati e trova quello adatto alla tua giornata.",
+     "p": [
+      "La carta è piacevole, non vuole batterie ed è bella da prestare e da esporre.",
+      "Gli e-reader contengono una biblioteca, regolano il testo e si leggono la sera.",
+      "Gli audiolibri trasformano passeggiate, faccende e viaggi in tempo di storie."
+     ],
+     "q": "Quale formato usi di più e quale ti piacerebbe provare?",
+     "c": "Prova oggi per dieci minuti un formato che usi poco, ad esempio un estratto gratuito."
+    },
+    "pt": {
+     "t": "Papel, leitor digital ou audiolivro?",
+     "g": "Compara formatos e encontra o que combina com o teu dia.",
+     "p": [
+      "O papel é agradável, dispensa bateria e é ótimo para emprestar.",
+      "Os leitores digitais guardam uma biblioteca inteira e ajustam o tamanho da letra.",
+      "Os audiolivros transformam passeios, tarefas e viagens em tempo de histórias."
+     ],
+     "q": "Que formato usas mais e qual gostarias de experimentar?",
+     "c": "Experimenta hoje dez minutos um formato pouco usado, como uma amostra gratuita."
+    },
+    "pt_BR": {
+     "t": "Papel, e-reader ou audiolivro?",
+     "g": "Compare formatos e descubra o que combina com o seu dia.",
+     "p": [
+      "O papel é gostoso, dispensa bateria e é ótimo para emprestar.",
+      "Os e-readers guardam uma biblioteca inteira e ajustam o tamanho da letra.",
+      "Os audiolivros transformam caminhadas, tarefas e viagens em hora de história."
+     ],
+     "q": "Que formato você mais usa e qual gostaria de experimentar?",
+     "c": "Experimente hoje dez minutos um formato pouco usado, como uma amostra grátis."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Building a daily reading habit",
+     "g": "Learn small tricks that make reading a daily habit.",
+     "p": [
+      "Start tiny: ten pages or ten minutes is plenty, and easy to repeat.",
+      "Choose a fixed moment, like after coffee or before bed.",
+      "Habit stacking: attach reading to something you already do every day."
+     ],
+     "q": "When in your day would reading fit most naturally?",
+     "c": "Pick your daily reading moment and put a book there tonight."
+    },
+    "de": {
+     "t": "Eine tägliche Leseroutine aufbauen",
+     "g": "Lerne kleine Tricks, die Lesen zur täglichen Gewohnheit machen.",
+     "p": [
+      "Fang klein an: zehn Seiten oder zehn Minuten genügen und sind leicht wiederholbar.",
+      "Wähle einen festen Zeitpunkt, etwa nach dem Kaffee oder vor dem Schlafen.",
+      "Gewohnheiten koppeln: Verbinde Lesen mit etwas, das du täglich ohnehin tust."
+     ],
+     "q": "Wann in deinem Tag würde Lesen am besten passen?",
+     "c": "Wähle deinen Lesemoment und leg dir heute Abend ein Buch dorthin."
+    },
+    "es": {
+     "t": "Crear un hábito diario de lectura",
+     "g": "Aprende pequeños trucos para leer cada día.",
+     "p": [
+      "Empieza poco a poco: diez páginas o diez minutos bastan y es fácil repetirlo.",
+      "Elige un momento fijo, como después del café o antes de dormir.",
+      "Encadena hábitos: une la lectura a algo que ya haces a diario."
+     ],
+     "q": "¿En qué momento de tu día encajaría mejor la lectura?",
+     "c": "Elige tu momento de lectura y deja un libro allí esta noche."
+    },
+    "fr": {
+     "t": "Créer une habitude de lecture quotidienne",
+     "g": "Apprends de petites astuces pour lire chaque jour.",
+     "p": [
+      "Commence petit : dix pages ou dix minutes suffisent et se répètent facilement.",
+      "Choisis un moment fixe, comme après le café ou avant de dormir.",
+      "Associe la lecture à un geste que tu fais déjà tous les jours."
+     ],
+     "q": "À quel moment de ta journée la lecture s'intégrerait-elle le mieux ?",
+     "c": "Choisis ton moment de lecture et pose-y un livre ce soir."
+    },
+    "it": {
+     "t": "Costruire l'abitudine di leggere ogni giorno",
+     "g": "Impara piccoli trucchi per leggere ogni giorno.",
+     "p": [
+      "Parti in piccolo: dieci pagine o dieci minuti bastano e si ripetono facilmente.",
+      "Scegli un momento fisso, come dopo il caffè o prima di dormire.",
+      "Abbina la lettura a qualcosa che fai già ogni giorno."
+     ],
+     "q": "In quale momento della tua giornata la lettura starebbe meglio?",
+     "c": "Scegli il tuo momento di lettura e lascia lì un libro stasera."
+    },
+    "pt": {
+     "t": "Criar o hábito de ler todos os dias",
+     "g": "Aprende pequenos truques para ler todos os dias.",
+     "p": [
+      "Começa pequeno: dez páginas ou dez minutos chegam e repetem-se facilmente.",
+      "Escolhe um momento fixo, como depois do café ou antes de dormir.",
+      "Liga a leitura a algo que já fazes todos os dias."
+     ],
+     "q": "Em que momento do teu dia a leitura encaixaria melhor?",
+     "c": "Escolhe o teu momento de leitura e deixa lá um livro esta noite."
+    },
+    "pt_BR": {
+     "t": "Criar o hábito de ler todos os dias",
+     "g": "Aprenda pequenos truques para ler todos os dias.",
+     "p": [
+      "Comece pequeno: dez páginas ou dez minutos bastam e se repetem fácil.",
+      "Escolha um momento fixo, como depois do café ou antes de dormir.",
+      "Associe a leitura a algo que você já faz todo dia."
+     ],
+     "q": "Em que momento do seu dia a leitura encaixaria melhor?",
+     "c": "Escolha seu momento de leitura e deixe um livro lá hoje à noite."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Finding time to read",
+     "g": "Spot the hidden minutes in your day for reading.",
+     "p": [
+      "Commutes, queues and waiting rooms are perfect for a few pages.",
+      "Lunch breaks and the first minutes after waking can become quiet reading time.",
+      "Keep a book or e-reader in your bag so it is always at hand."
+     ],
+     "q": "Where do you waste small pockets of time that a book could fill?",
+     "c": "Carry a book today and read in the first spare five minutes you find."
+    },
+    "de": {
+     "t": "Zeit zum Lesen finden",
+     "g": "Entdecke die versteckten Minuten deines Tages fürs Lesen.",
+     "p": [
+      "Pendeln, Schlangen und Wartezimmer eignen sich für ein paar Seiten.",
+      "Mittagspausen und die ersten Minuten nach dem Aufwachen werden zur stillen Lesezeit.",
+      "Trag ein Buch oder einen E-Reader in der Tasche, damit es immer griffbereit ist."
+     ],
+     "q": "Wo verlierst du kleine Zeitfenster, die ein Buch füllen könnte?",
+     "c": "Nimm heute ein Buch mit und lies in den ersten freien fünf Minuten."
+    },
+    "es": {
+     "t": "Encontrar tiempo para leer",
+     "g": "Descubre los minutos escondidos de tu día para leer.",
+     "p": [
+      "El trayecto, las colas y las salas de espera sirven para unas páginas.",
+      "La pausa de comer y los primeros minutos tras despertar pueden ser lectura tranquila.",
+      "Lleva un libro o lector en el bolso para tenerlo siempre a mano."
+     ],
+     "q": "¿Dónde pierdes ratitos que un libro podría llenar?",
+     "c": "Lleva hoy un libro y lee en los primeros cinco minutos libres."
+    },
+    "fr": {
+     "t": "Trouver du temps pour lire",
+     "g": "Repère les minutes cachées de ta journée pour lire.",
+     "p": [
+      "Trajets, files d'attente et salles d'attente se prêtent à quelques pages.",
+      "La pause déjeuner et les premières minutes du réveil deviennent un temps calme.",
+      "Garde un livre ou une liseuse dans ton sac, toujours à portée de main."
+     ],
+     "q": "Où perds-tu de petits moments qu'un livre pourrait remplir ?",
+     "c": "Emporte un livre aujourd'hui et lis dès que tu as cinq minutes libres."
+    },
+    "it": {
+     "t": "Trovare il tempo per leggere",
+     "g": "Scova i minuti nascosti della tua giornata per leggere.",
+     "p": [
+      "Tragitti, code e sale d'attesa sono perfetti per qualche pagina.",
+      "La pausa pranzo e i primi minuti dopo il risveglio diventano lettura tranquilla.",
+      "Tieni un libro o un e-reader in borsa, sempre a portata di mano."
+     ],
+     "q": "Dove perdi piccoli ritagli di tempo che un libro potrebbe riempire?",
+     "c": "Porta con te un libro oggi e leggi nei primi cinque minuti liberi."
+    },
+    "pt": {
+     "t": "Encontrar tempo para ler",
+     "g": "Descobre os minutos escondidos do teu dia para ler.",
+     "p": [
+      "Trajetos, filas e salas de espera são ótimos para umas páginas.",
+      "A hora de almoço e os primeiros minutos após acordar tornam-se leitura calma.",
+      "Leva um livro ou leitor digital na mala para o teres sempre à mão."
+     ],
+     "q": "Onde perdes pequenos intervalos que um livro poderia preencher?",
+     "c": "Leva hoje um livro e lê nos primeiros cinco minutos livres."
+    },
+    "pt_BR": {
+     "t": "Encontrar tempo para ler",
+     "g": "Descubra os minutos escondidos do seu dia para ler.",
+     "p": [
+      "Trajetos, filas e salas de espera são ótimos para algumas páginas.",
+      "O almoço e os primeiros minutos depois de acordar viram leitura tranquila.",
+      "Leve um livro ou e-reader na bolsa para tê-lo sempre à mão."
+     ],
+     "q": "Onde você perde pequenos intervalos que um livro poderia preencher?",
+     "c": "Leve hoje um livro e leia nos primeiros cinco minutos livres."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The perfect reading spot",
+     "g": "Create a place where focus comes easily.",
+     "p": [
+      "Good light matters: a lamp beside you or soft daylight protects your eyes.",
+      "Comfort helps, but a spot too cosy might send you to sleep.",
+      "Keep the phone in another room, or on silent, for pure focus."
+     ],
+     "q": "Where do you read best: sofa, park bench, train, bed?",
+     "c": "Set up one reading corner today with light, a seat and no phone."
+    },
+    "de": {
+     "t": "Der perfekte Leseplatz",
+     "g": "Schaffe einen Ort, an dem Konzentration leichtfällt.",
+     "p": [
+      "Gutes Licht zählt: Eine Lampe neben dir oder sanftes Tageslicht schont die Augen.",
+      "Bequemlichkeit hilft, aber zu gemütlich macht vielleicht müde.",
+      "Lass das Handy im anderen Raum oder lautlos, für volle Konzentration."
+     ],
+     "q": "Wo liest du am besten: Sofa, Parkbank, Zug, Bett?",
+     "c": "Richte heute eine Leseecke ein: Licht, Sitzplatz, kein Handy."
+    },
+    "es": {
+     "t": "El rincón de lectura perfecto",
+     "g": "Crea un lugar donde concentrarte sea fácil.",
+     "p": [
+      "La luz importa: una lámpara a tu lado o luz natural suave cuida tus ojos.",
+      "La comodidad ayuda, pero un sitio demasiado mullido puede dar sueño.",
+      "Deja el móvil en otra habitación o en silencio para concentrarte del todo."
+     ],
+     "q": "¿Dónde lees mejor: sofá, banco del parque, tren, cama?",
+     "c": "Prepara hoy un rincón con luz, asiento y sin móvil."
+    },
+    "fr": {
+     "t": "Le coin lecture idéal",
+     "g": "Crée un lieu où la concentration vient facilement.",
+     "p": [
+      "La lumière compte : une lampe près de toi ou la lumière du jour ménage tes yeux.",
+      "Le confort aide, mais un endroit trop douillet peut endormir.",
+      "Laisse le téléphone dans une autre pièce, ou en silence, pour te concentrer."
+     ],
+     "q": "Où lis-tu le mieux : canapé, banc public, train, lit ?",
+     "c": "Aménage aujourd'hui un coin avec lumière, siège et sans téléphone."
+    },
+    "it": {
+     "t": "L'angolo di lettura perfetto",
+     "g": "Crea un posto dove concentrarsi è facile.",
+     "p": [
+      "La luce conta: una lampada accanto o la luce del giorno proteggono gli occhi.",
+      "Il comfort aiuta, ma un posto troppo comodo può far addormentare.",
+      "Lascia il telefono in un'altra stanza, o in silenzioso, per concentrarti."
+     ],
+     "q": "Dove leggi meglio: divano, panchina, treno, letto?",
+     "c": "Oggi prepara un angolo con luce, sedia e niente telefono."
+    },
+    "pt": {
+     "t": "O canto de leitura perfeito",
+     "g": "Cria um lugar onde seja fácil concentrares-te.",
+     "p": [
+      "A luz importa: um candeeiro ao lado ou luz natural suave protege os olhos.",
+      "O conforto ajuda, mas um sítio demasiado fofo pode dar sono.",
+      "Deixa o telemóvel noutra divisão, ou em silêncio, para te concentrares."
+     ],
+     "q": "Onde lês melhor: sofá, banco de jardim, comboio, cama?",
+     "c": "Prepara hoje um canto com luz, assento e sem telemóvel."
+    },
+    "pt_BR": {
+     "t": "O cantinho de leitura perfeito",
+     "g": "Crie um lugar onde se concentrar seja fácil.",
+     "p": [
+      "A luz importa: um abajur ao lado ou luz natural suave protege os olhos.",
+      "O conforto ajuda, mas um lugar fofo demais pode dar sono.",
+      "Deixe o celular em outro cômodo, ou no silencioso, para se concentrar."
+     ],
+     "q": "Onde você lê melhor: sofá, banco de praça, ônibus, cama?",
+     "c": "Monte hoje um cantinho com luz, assento e sem celular."
+    }
+   }
+  }
+ ]
+}

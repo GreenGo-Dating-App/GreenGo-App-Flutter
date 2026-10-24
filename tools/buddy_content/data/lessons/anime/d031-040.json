@@ -1,0 +1,835 @@
+{
+ "topic": "anime",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Studio Ghibli: an introduction",
+     "g": "Meet the studio founded in 1985 and its world-famous films.",
+     "p": [
+      "Studio Ghibli was founded in 1985 by Hayao Miyazaki, Isao Takahata and producer Toshio Suzuki.",
+      "The name comes from an Italian word for a hot desert wind, the Libyan Arabic ghibli.",
+      "Its films are known for hand-drawn art, rich nature and warm human stories."
+     ],
+     "q": "Have you seen any Ghibli film, and which scene stayed with you?",
+     "c": "Sketch a Ghibli-style scene with a cloud-filled sky and a small house."
+    },
+    "de": {
+     "t": "Studio Ghibli: eine Einführung",
+     "g": "Lerne das 1985 gegründete Studio und seine weltberühmten Filme kennen.",
+     "p": [
+      "Studio Ghibli gründeten 1985 Hayao Miyazaki, Isao Takahata und Produzent Toshio Suzuki.",
+      "Der Name stammt von einem Wort für einen heißen Wüstenwind, libysch-arabisch ghibli.",
+      "Die Filme sind bekannt für Handzeichnung, reiche Natur und warme Geschichten."
+     ],
+     "q": "Hast du einen Ghibli-Film gesehen, und welche Szene blieb dir im Kopf?",
+     "c": "Skizziere eine Szene im Ghibli-Stil mit Wolkenhimmel und kleinem Haus."
+    },
+    "es": {
+     "t": "Studio Ghibli: una introducción",
+     "g": "Conoce el estudio fundado en 1985 y sus películas famosas en todo el mundo.",
+     "p": [
+      "Studio Ghibli lo fundaron en 1985 Hayao Miyazaki, Isao Takahata y el productor Toshio Suzuki.",
+      "El nombre viene de ghibli, palabra del árabe libio para un viento cálido del desierto.",
+      "Sus películas destacan por el dibujo a mano, la naturaleza y las historias cálidas."
+     ],
+     "q": "¿Has visto alguna película de Ghibli y qué escena te quedó grabada?",
+     "c": "Dibuja una escena al estilo Ghibli con un cielo de nubes y una casita."
+    },
+    "fr": {
+     "t": "Studio Ghibli : une introduction",
+     "g": "Découvre le studio fondé en 1985 et ses films célèbres dans le monde entier.",
+     "p": [
+      "Le studio Ghibli a été fondé en 1985 par Hayao Miyazaki, Isao Takahata et Toshio Suzuki.",
+      "Son nom vient de ghibli, mot arabe libyen pour un vent chaud du désert.",
+      "Ses films sont connus pour le dessin à la main, la nature et les histoires chaleureuses."
+     ],
+     "q": "As-tu vu un film Ghibli, et quelle scène t'est restée en mémoire ?",
+     "c": "Esquisse une scène façon Ghibli avec un ciel de nuages et une petite maison."
+    },
+    "it": {
+     "t": "Studio Ghibli: un'introduzione",
+     "g": "Conosci lo studio fondato nel 1985 e i suoi film famosi in tutto il mondo.",
+     "p": [
+      "Lo Studio Ghibli fu fondato nel 1985 da Hayao Miyazaki, Isao Takahata e dal produttore Toshio Suzuki.",
+      "Il nome viene da ghibli, parola araba libica per un vento caldo del deserto.",
+      "I suoi film sono noti per il disegno a mano, la natura e le storie calorose."
+     ],
+     "q": "Hai visto qualche film Ghibli e quale scena ti è rimasta in mente?",
+     "c": "Schizza una scena in stile Ghibli con un cielo di nuvole e una piccola casa."
+    },
+    "pt": {
+     "t": "Studio Ghibli: uma introdução",
+     "g": "Conhece o estúdio fundado em 1985 e os seus filmes famosos em todo o mundo.",
+     "p": [
+      "O Studio Ghibli foi fundado em 1985 por Hayao Miyazaki, Isao Takahata e o produtor Toshio Suzuki.",
+      "O nome vem de ghibli, palavra do árabe líbio para um vento quente do deserto.",
+      "Os filmes são conhecidos pelo desenho à mão, pela natureza e por histórias calorosas."
+     ],
+     "q": "Já viste algum filme Ghibli e que cena ficou na tua memória?",
+     "c": "Esboça uma cena ao estilo Ghibli com um céu de nuvens e uma casinha."
+    },
+    "pt_BR": {
+     "t": "Studio Ghibli: uma introdução",
+     "g": "Conheça o estúdio fundado em 1985 e seus filmes famosos no mundo todo.",
+     "p": [
+      "O Studio Ghibli foi fundado em 1985 por Hayao Miyazaki, Isao Takahata e o produtor Toshio Suzuki.",
+      "O nome vem de ghibli, palavra do árabe líbio para um vento quente do deserto.",
+      "Os filmes são conhecidos pelo desenho à mão, pela natureza e por histórias calorosas."
+     ],
+     "q": "Você já assistiu a algum filme Ghibli e que cena ficou na memória?",
+     "c": "Esboce uma cena no estilo Ghibli com um céu de nuvens e uma casinha."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hayao Miyazaki",
+     "g": "Meet the director and his love of flight, nature and brave young heroines.",
+     "p": [
+      "Miyazaki was born in 1941 in Tokyo and began his career as an animator.",
+      "He often writes and draws his own storyboards for his films.",
+      "Recurring themes are flying, nature and capable young heroes."
+     ],
+     "q": "What do you admire in a character who is brave but kind?",
+     "c": "Draw a brave young hero with a simple gadget or flying device."
+    },
+    "de": {
+     "t": "Hayao Miyazaki",
+     "g": "Lerne den Regisseur und seine Liebe zu Fliegen, Natur und mutigen jungen Heldinnen kennen.",
+     "p": [
+      "Miyazaki wurde 1941 in Tokio geboren und begann als Zeichentrickkünstler.",
+      "Er schreibt und zeichnet die Storyboards seiner Filme oft selbst.",
+      "Wiederkehrende Themen sind Fliegen, Natur und fähige junge Helden."
+     ],
+     "q": "Was bewunderst du an einer Figur, die mutig und zugleich freundlich ist?",
+     "c": "Zeichne einen mutigen jungen Helden mit einem einfachen Gerät oder Flieger."
+    },
+    "es": {
+     "t": "Hayao Miyazaki",
+     "g": "Conoce al director y su amor por el vuelo, la naturaleza y las jóvenes valientes.",
+     "p": [
+      "Miyazaki nació en Tokio en 1941 y empezó su carrera como animador.",
+      "Con frecuencia escribe y dibuja él mismo los guiones gráficos de sus películas.",
+      "Temas recurrentes: volar, la naturaleza y jóvenes protagonistas capaces."
+     ],
+     "q": "¿Qué admiras en un personaje valiente pero amable?",
+     "c": "Dibuja un joven héroe valiente con un artilugio sencillo o un aparato volador."
+    },
+    "fr": {
+     "t": "Hayao Miyazaki",
+     "g": "Rencontre le réalisateur et son amour du vol, de la nature et des jeunes héroïnes courageuses.",
+     "p": [
+      "Miyazaki est né à Tokyo en 1941 et a débuté comme animateur.",
+      "Il écrit et dessine souvent lui-même les storyboards de ses films.",
+      "Thèmes récurrents : voler, la nature et de jeunes héros capables."
+     ],
+     "q": "Qu'admires-tu chez un personnage courageux mais bienveillant ?",
+     "c": "Dessine un jeune héros courageux avec un petit gadget ou engin volant."
+    },
+    "it": {
+     "t": "Hayao Miyazaki",
+     "g": "Conosci il regista e il suo amore per il volo, la natura e le giovani eroine coraggiose.",
+     "p": [
+      "Miyazaki nacque a Tokyo nel 1941 e iniziò come animatore.",
+      "Spesso scrive e disegna da sé gli storyboard dei suoi film.",
+      "Temi ricorrenti: volare, la natura e giovani protagonisti capaci."
+     ],
+     "q": "Cosa ammiri in un personaggio coraggioso ma gentile?",
+     "c": "Disegna un giovane eroe coraggioso con un semplice congegno o mezzo volante."
+    },
+    "pt": {
+     "t": "Hayao Miyazaki",
+     "g": "Conhece o realizador e o seu amor pelo voo, pela natureza e por jovens corajosas.",
+     "p": [
+      "Miyazaki nasceu em Tóquio em 1941 e começou a carreira como animador.",
+      "Muitas vezes escreve e desenha ele próprio os storyboards dos seus filmes.",
+      "Temas recorrentes: voar, a natureza e jovens protagonistas capazes."
+     ],
+     "q": "O que admiras numa personagem corajosa mas gentil?",
+     "c": "Desenha um jovem herói corajoso com uma engenhoca simples ou aparelho voador."
+    },
+    "pt_BR": {
+     "t": "Hayao Miyazaki",
+     "g": "Conheça o diretor e seu amor pelo voo, pela natureza e por jovens corajosas.",
+     "p": [
+      "Miyazaki nasceu em Tóquio em 1941 e começou a carreira como animador.",
+      "Muitas vezes ele mesmo escreve e desenha os storyboards dos seus filmes.",
+      "Temas recorrentes: voar, a natureza e jovens protagonistas capazes."
+     ],
+     "q": "O que você admira num personagem corajoso mas gentil?",
+     "c": "Desenhe um jovem herói corajoso com uma engenhoca simples ou aparelho voador."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "My Neighbor Totoro",
+     "g": "Visit forest spirits, two sisters and the magic of the countryside.",
+     "p": [
+      "My Neighbor Totoro was released in 1988 and is set in rural Japan.",
+      "Sisters Satsuki and Mei move to the countryside and meet a gentle forest spirit.",
+      "Totoro became Ghibli's mascot and appears in the studio's logo."
+     ],
+     "q": "What would you say to a friendly forest spirit if you met one?",
+     "c": "Draw Totoro-like round forest friend under an umbrella in the rain."
+    },
+    "de": {
+     "t": "Mein Nachbar Totoro",
+     "g": "Besuche Waldgeister, zwei Schwestern und den Zauber des Landlebens.",
+     "p": [
+      "Mein Nachbar Totoro erschien 1988 und spielt auf dem japanischen Land.",
+      "Die Schwestern Satsuki und Mei ziehen aufs Land und treffen einen sanften Waldgeist.",
+      "Totoro wurde Ghiblis Maskottchen und ist im Logo des Studios zu sehen."
+     ],
+     "q": "Was würdest du einem freundlichen Waldgeist sagen, wenn du ihm begegnest?",
+     "c": "Zeichne einen runden Waldfreund à la Totoro unter einem Regenschirm im Regen."
+    },
+    "es": {
+     "t": "Mi vecino Totoro",
+     "g": "Visita espíritus del bosque, dos hermanas y la magia del campo.",
+     "p": [
+      "Mi vecino Totoro se estrenó en 1988 y transcurre en el campo japonés.",
+      "Las hermanas Satsuki y Mei se mudan al campo y conocen a un amable espíritu del bosque.",
+      "Totoro se convirtió en la mascota de Ghibli y aparece en el logo del estudio."
+     ],
+     "q": "¿Qué le dirías a un espíritu amable del bosque si lo encontraras?",
+     "c": "Dibuja un amigo redondo del bosque, al estilo de Totoro, bajo un paraguas con lluvia."
+    },
+    "fr": {
+     "t": "Mon voisin Totoro",
+     "g": "Visite des esprits de la forêt, deux sœurs et la magie de la campagne.",
+     "p": [
+      "Mon voisin Totoro est sorti en 1988 et se passe dans la campagne japonaise.",
+      "Les sœurs Satsuki et Mei s'installent à la campagne et rencontrent un doux esprit de la forêt.",
+      "Totoro est devenu la mascotte de Ghibli et figure dans le logo du studio."
+     ],
+     "q": "Que dirais-tu à un gentil esprit de la forêt si tu en croisais un ?",
+     "c": "Dessine un ami rond de la forêt façon Totoro sous un parapluie, sous la pluie."
+    },
+    "it": {
+     "t": "Il mio vicino Totoro",
+     "g": "Visita spiriti del bosco, due sorelle e la magia della campagna.",
+     "p": [
+      "Il mio vicino Totoro uscì nel 1988 ed è ambientato nella campagna giapponese.",
+      "Le sorelle Satsuki e Mei si trasferiscono in campagna e incontrano un gentile spirito del bosco.",
+      "Totoro è diventato la mascotte di Ghibli e compare nel logo dello studio."
+     ],
+     "q": "Cosa diresti a un gentile spirito del bosco se lo incontrassi?",
+     "c": "Disegna un amico tondo del bosco stile Totoro sotto un ombrello nella pioggia."
+    },
+    "pt": {
+     "t": "O Meu Vizinho Totoro",
+     "g": "Visita espíritos da floresta, duas irmãs e a magia do campo.",
+     "p": [
+      "O Meu Vizinho Totoro estreou em 1988 e passa-se no campo japonês.",
+      "As irmãs Satsuki e Mei mudam-se para o campo e conhecem um gentil espírito da floresta.",
+      "Totoro tornou-se a mascote do Ghibli e aparece no logótipo do estúdio."
+     ],
+     "q": "O que dirias a um espírito simpático da floresta se o encontrasses?",
+     "c": "Desenha um amigo redondo da floresta ao estilo Totoro debaixo de um guarda-chuva."
+    },
+    "pt_BR": {
+     "t": "Meu Amigo Totoro",
+     "g": "Visite espíritos da floresta, duas irmãs e a magia do campo.",
+     "p": [
+      "Meu Amigo Totoro estreou em 1988 e se passa no campo japonês.",
+      "As irmãs Satsuki e Mei se mudam para o campo e conhecem um gentil espírito da floresta.",
+      "Totoro virou o mascote do Ghibli e aparece no logotipo do estúdio."
+     ],
+     "q": "O que você diria a um espírito simpático da floresta se o encontrasse?",
+     "c": "Desenhe um amigo redondo da floresta estilo Totoro debaixo de um guarda-chuva."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kiki's Delivery Service",
+     "g": "Follow a young witch learning independence and confidence.",
+     "p": [
+      "The 1989 film is based on a children's novel by Eiko Kadono.",
+      "Thirteen-year-old Kiki leaves home to start a delivery business with her cat Jiji.",
+      "It is a warm story about doing a job, feeling doubt and finding confidence again."
+     ],
+     "q": "What skill would you offer if you ran your own little delivery service?",
+     "c": "Draw Kiki on her broom with a parcel and invent a delivery for her."
+    },
+    "de": {
+     "t": "Kikis kleiner Lieferservice",
+     "g": "Begleite eine junge Hexe auf dem Weg zu Selbstständigkeit und Selbstvertrauen.",
+     "p": [
+      "Der Film von 1989 beruht auf einem Kinderroman von Eiko Kadono.",
+      "Die dreizehnjährige Kiki zieht mit Kater Jiji aus und gründet einen Lieferservice.",
+      "Es ist eine warme Geschichte über Arbeit, Zweifel und neues Selbstvertrauen."
+     ],
+     "q": "Welche Fähigkeit würdest du anbieten, wenn du einen kleinen Lieferdienst hättest?",
+     "c": "Zeichne Kiki auf dem Besen mit einem Paket und erfinde eine Lieferung für sie."
+    },
+    "es": {
+     "t": "Nicky, la aprendiz de bruja",
+     "g": "Sigue a una joven bruja que aprende independencia y confianza.",
+     "p": [
+      "La película de 1989 se basa en una novela infantil de Eiko Kadono.",
+      "Kiki, de trece años, deja su hogar para montar un reparto con su gata Jiji.",
+      "Es una historia cálida sobre trabajar, dudar y recuperar la confianza."
+     ],
+     "q": "¿Qué habilidad ofrecerías si tuvieras tu propio servicio de reparto?",
+     "c": "Dibuja a Kiki en su escoba con un paquete e inventa una entrega para ella."
+    },
+    "fr": {
+     "t": "Kiki la petite sorcière",
+     "g": "Suis une jeune sorcière qui apprend l'indépendance et la confiance.",
+     "p": [
+      "Le film de 1989 s'inspire d'un roman pour enfants d'Eiko Kadono.",
+      "Kiki, treize ans, quitte sa maison pour lancer un service de livraison avec son chat Jiji.",
+      "C'est une histoire chaleureuse sur le travail, le doute et la confiance retrouvée."
+     ],
+     "q": "Quel talent proposerais-tu si tu avais ton petit service de livraison ?",
+     "c": "Dessine Kiki sur son balai avec un colis et invente une livraison pour elle."
+    },
+    "it": {
+     "t": "Kiki consegne a domicilio",
+     "g": "Segui una giovane strega che impara indipendenza e fiducia in sé.",
+     "p": [
+      "Il film del 1989 è tratto da un romanzo per ragazzi di Eiko Kadono.",
+      "Kiki, tredici anni, lascia casa per avviare un servizio di consegne con il gatto Jiji.",
+      "È una storia calda sul lavoro, sul dubbio e sulla fiducia ritrovata."
+     ],
+     "q": "Quale abilità offriresti se avessi un tuo piccolo servizio di consegne?",
+     "c": "Disegna Kiki sulla scopa con un pacco e inventa una consegna per lei."
+    },
+    "pt": {
+     "t": "O Serviço de Entregas da Kiki",
+     "g": "Acompanha uma jovem bruxa a aprender independência e confiança.",
+     "p": [
+      "O filme de 1989 baseia-se num romance infantil de Eiko Kadono.",
+      "Kiki, de treze anos, sai de casa para criar um serviço de entregas com o gato Jiji.",
+      "É uma história calorosa sobre trabalhar, duvidar e recuperar a confiança."
+     ],
+     "q": "Que talento oferecerias se tivesses o teu pequeno serviço de entregas?",
+     "c": "Desenha a Kiki na vassoura com um pacote e inventa uma entrega para ela."
+    },
+    "pt_BR": {
+     "t": "O Serviço de Entregas da Kiki",
+     "g": "Acompanhe uma jovem bruxa aprendendo independência e confiança.",
+     "p": [
+      "O filme de 1989 é baseado num romance infantil de Eiko Kadono.",
+      "Kiki, de treze anos, sai de casa para abrir um serviço de entregas com o gato Jiji.",
+      "É uma história calorosa sobre trabalhar, ter dúvidas e recuperar a confiança."
+     ],
+     "q": "Que talento você ofereceria se tivesse seu pequeno serviço de entregas?",
+     "c": "Desenhe a Kiki na vassoura com um pacote e invente uma entrega para ela."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Castle in the Sky",
+     "g": "Explore floating islands, airships and Ghibli's first official film.",
+     "p": [
+      "Castle in the Sky came out in 1986 and was the first film released by Studio Ghibli.",
+      "Sheeta and Pazu search for Laputa, a legendary island floating in the clouds.",
+      "The film mixes airships, mines and old machines into an adventure."
+     ],
+     "q": "What would your dream flying machine look like?",
+     "c": "Design and draw an airship with sails, propellers and a tiny garden on top."
+    },
+    "de": {
+     "t": "Das Schloss im Himmel",
+     "g": "Erkunde schwebende Inseln, Luftschiffe und Ghiblis ersten offiziellen Film.",
+     "p": [
+      "Das Schloss im Himmel kam 1986 heraus und war der erste Film von Studio Ghibli.",
+      "Sheeta und Pazu suchen Laputa, eine legendäre Insel, die in den Wolken schwebt.",
+      "Der Film verbindet Luftschiffe, Minen und alte Maschinen zum Abenteuer."
+     ],
+     "q": "Wie sähe deine Traum-Flugmaschine aus?",
+     "c": "Entwirf und zeichne ein Luftschiff mit Segeln, Propellern und einem Garten obendrauf."
+    },
+    "es": {
+     "t": "El castillo en el cielo",
+     "g": "Explora islas flotantes, dirigibles y la primera película oficial de Ghibli.",
+     "p": [
+      "El castillo en el cielo se estrenó en 1986 y fue la primera película de Studio Ghibli.",
+      "Sheeta y Pazu buscan Laputa, una isla legendaria que flota entre las nubes.",
+      "La película mezcla dirigibles, minas y máquinas antiguas en una aventura."
+     ],
+     "q": "¿Cómo sería tu máquina voladora soñada?",
+     "c": "Diseña y dibuja un dirigible con velas, hélices y un pequeño jardín arriba."
+    },
+    "fr": {
+     "t": "Le Château dans le ciel",
+     "g": "Explore des îles flottantes, des dirigeables et le premier film officiel de Ghibli.",
+     "p": [
+      "Le Château dans le ciel est sorti en 1986 et fut le premier film du studio Ghibli.",
+      "Sheeta et Pazu cherchent Laputa, une île légendaire flottant dans les nuages.",
+      "Le film mêle dirigeables, mines et vieilles machines dans une aventure."
+     ],
+     "q": "À quoi ressemblerait ta machine volante de rêve ?",
+     "c": "Conçois et dessine un dirigeable avec voiles, hélices et un petit jardin dessus."
+    },
+    "it": {
+     "t": "Il castello nel cielo",
+     "g": "Esplora isole fluttuanti, dirigibili e il primo film ufficiale di Ghibli.",
+     "p": [
+      "Il castello nel cielo uscì nel 1986 ed è il primo film dello Studio Ghibli.",
+      "Sheeta e Pazu cercano Laputa, un'isola leggendaria che fluttua tra le nuvole.",
+      "Il film unisce dirigibili, miniere e vecchie macchine in un'avventura."
+     ],
+     "q": "Come sarebbe la tua macchina volante dei sogni?",
+     "c": "Progetta e disegna un dirigibile con vele, eliche e un piccolo giardino sopra."
+    },
+    "pt": {
+     "t": "O Castelo no Céu",
+     "g": "Explora ilhas flutuantes, dirigíveis e o primeiro filme oficial do Ghibli.",
+     "p": [
+      "O Castelo no Céu estreou em 1986 e foi o primeiro filme do Studio Ghibli.",
+      "Sheeta e Pazu procuram Laputa, uma ilha lendária que flutua entre as nuvens.",
+      "O filme mistura dirigíveis, minas e máquinas antigas numa aventura."
+     ],
+     "q": "Como seria a tua máquina voadora de sonho?",
+     "c": "Desenha um dirigível com velas, hélices e um pequeno jardim no topo."
+    },
+    "pt_BR": {
+     "t": "O Castelo no Céu",
+     "g": "Explore ilhas flutuantes, dirigíveis e o primeiro filme oficial do Ghibli.",
+     "p": [
+      "O Castelo no Céu estreou em 1986 e foi o primeiro filme do Studio Ghibli.",
+      "Sheeta e Pazu procuram Laputa, uma ilha lendária que flutua entre as nuvens.",
+      "O filme mistura dirigíveis, minas e máquinas antigas numa aventura."
+     ],
+     "q": "Como seria a sua máquina voadora dos sonhos?",
+     "c": "Desenhe um dirigível com velas, hélices e um pequeno jardim no topo."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Spirited Away",
+     "g": "Follow Chihiro through a bathhouse of spirits and learn of its Oscar win.",
+     "p": [
+      "Spirited Away was released in 2001 and follows ten-year-old Chihiro.",
+      "She works in a bathhouse for spirits to save her parents and find her way home.",
+      "It won the Academy Award for Best Animated Feature in 2003."
+     ],
+     "q": "Which spirit or creature from the film would you like to meet?",
+     "c": "Invent a friendly bathhouse spirit and draw it with an unusual shape."
+    },
+    "de": {
+     "t": "Chihiros Reise ins Zauberland",
+     "g": "Begleite Chihiro durch ein Badehaus der Geister und erfahre vom Oscar.",
+     "p": [
+      "Chihiros Reise ins Zauberland erschien 2001 und erzählt von der zehnjährigen Chihiro.",
+      "Sie arbeitet in einem Badehaus für Geister, um ihre Eltern zu retten und heimzufinden.",
+      "Der Film gewann 2003 den Oscar als bester Animationsfilm."
+     ],
+     "q": "Welchen Geist oder welches Wesen aus dem Film würdest du gern treffen?",
+     "c": "Erfinde einen freundlichen Badehaus-Geist und zeichne ihn mit ungewöhnlicher Form."
+    },
+    "es": {
+     "t": "El viaje de Chihiro",
+     "g": "Acompaña a Chihiro por una casa de baños de espíritus y descubre su Óscar.",
+     "p": [
+      "El viaje de Chihiro se estrenó en 2001 y sigue a Chihiro, de diez años.",
+      "Trabaja en unos baños para espíritus para salvar a sus padres y volver a casa.",
+      "Ganó el Óscar a la mejor película de animación en 2003."
+     ],
+     "q": "¿Qué espíritu o criatura de la película te gustaría conocer?",
+     "c": "Inventa un espíritu amable de los baños y dibújalo con una forma inusual."
+    },
+    "fr": {
+     "t": "Le Voyage de Chihiro",
+     "g": "Suis Chihiro dans une maison de bains pour esprits et découvre son Oscar.",
+     "p": [
+      "Le Voyage de Chihiro est sorti en 2001 et suit Chihiro, dix ans.",
+      "Elle travaille dans des bains pour esprits afin de sauver ses parents et rentrer chez elle.",
+      "Il a reçu l'Oscar du meilleur film d'animation en 2003."
+     ],
+     "q": "Quel esprit ou quelle créature du film aimerais-tu rencontrer ?",
+     "c": "Invente un esprit des bains amical et dessine-le avec une forme inhabituelle."
+    },
+    "it": {
+     "t": "La città incantata",
+     "g": "Segui Chihiro in un bagno pubblico degli spiriti e scopri il suo Oscar.",
+     "p": [
+      "La città incantata uscì nel 2001 e segue Chihiro, dieci anni.",
+      "Lavora in uno stabilimento di bagni per spiriti per salvare i genitori e tornare a casa.",
+      "Vinse l'Oscar come miglior film d'animazione nel 2003."
+     ],
+     "q": "Quale spirito o creatura del film vorresti incontrare?",
+     "c": "Inventa uno spirito amichevole dei bagni e disegnalo con una forma insolita."
+    },
+    "pt": {
+     "t": "A Viagem de Chihiro",
+     "g": "Acompanha Chihiro numa casa de banhos de espíritos e descobre o seu Óscar.",
+     "p": [
+      "A Viagem de Chihiro estreou em 2001 e segue Chihiro, de dez anos.",
+      "Trabalha numa casa de banhos para espíritos para salvar os pais e voltar a casa.",
+      "Ganhou o Óscar de melhor filme de animação em 2003."
+     ],
+     "q": "Que espírito ou criatura do filme gostarias de conhecer?",
+     "c": "Inventa um espírito simpático dos banhos e desenha-o com uma forma invulgar."
+    },
+    "pt_BR": {
+     "t": "A Viagem de Chihiro",
+     "g": "Acompanhe Chihiro numa casa de banhos de espíritos e descubra seu Oscar.",
+     "p": [
+      "A Viagem de Chihiro estreou em 2001 e acompanha Chihiro, de dez anos.",
+      "Ela trabalha numa casa de banhos para espíritos para salvar os pais e voltar para casa.",
+      "Ganhou o Oscar de melhor animação em 2003."
+     ],
+     "q": "Que espírito ou criatura do filme você gostaria de conhecer?",
+     "c": "Invente um espírito simpático dos banhos e desenhe com uma forma incomum."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ponyo",
+     "g": "Dive into a goldfish girl, the sea and a story for young children.",
+     "p": [
+      "Ponyo was released in 2008 and is loosely inspired by The Little Mermaid.",
+      "A goldfish who wants to be human befriends a five-year-old boy named Sosuke.",
+      "The sea is drawn with lively, hand-painted waves that seem alive."
+     ],
+     "q": "What would you do if a magical sea creature came to your door?",
+     "c": "Draw ocean waves that look like big friendly fish and add a small boat."
+    },
+    "de": {
+     "t": "Ponyo",
+     "g": "Tauche ein in ein Goldfischmädchen, das Meer und eine Geschichte für Kinder.",
+     "p": [
+      "Ponyo erschien 2008 und ist lose von Die kleine Meerjungfrau inspiriert.",
+      "Ein Goldfisch, der Mensch sein will, freundet sich mit dem fünfjährigen Sosuke an.",
+      "Das Meer ist mit lebendigen, handgemalten Wellen gezeichnet, die lebendig wirken."
+     ],
+     "q": "Was würdest du tun, wenn ein magisches Meerwesen an deine Tür käme?",
+     "c": "Zeichne Meereswellen, die wie große freundliche Fische aussehen, mit einem Boot."
+    },
+    "es": {
+     "t": "Ponyo en el acantilado",
+     "g": "Sumérgete en una niña pez dorado, el mar y una historia para los más pequeños.",
+     "p": [
+      "Ponyo se estrenó en 2008 y se inspira libremente en La sirenita.",
+      "Un pez dorado que quiere ser humano se hace amigo de Sosuke, un niño de cinco años.",
+      "El mar se dibuja con olas pintadas a mano, llenas de vida."
+     ],
+     "q": "¿Qué harías si una criatura marina mágica llamara a tu puerta?",
+     "c": "Dibuja olas que parezcan grandes peces amistosos y añade un pequeño barco."
+    },
+    "fr": {
+     "t": "Ponyo sur la falaise",
+     "g": "Plonge dans l'histoire d'une petite fille poisson rouge, de la mer et des tout-petits.",
+     "p": [
+      "Ponyo est sorti en 2008 et s'inspire librement de La Petite Sirène.",
+      "Un poisson rouge qui veut devenir humain se lie d'amitié avec Sosuke, cinq ans.",
+      "La mer est dessinée avec des vagues peintes à la main, pleines de vie."
+     ],
+     "q": "Que ferais-tu si une créature marine magique frappait à ta porte ?",
+     "c": "Dessine des vagues qui ressemblent à de gros poissons amicaux, avec un petit bateau."
+    },
+    "it": {
+     "t": "Ponyo sulla scogliera",
+     "g": "Immergiti in una bimba pesce rosso, nel mare e in una storia per i più piccoli.",
+     "p": [
+      "Ponyo uscì nel 2008 ed è liberamente ispirato a La sirenetta.",
+      "Un pesce rosso che vuole diventare umano fa amicizia con Sosuke, cinque anni.",
+      "Il mare è disegnato con onde dipinte a mano, piene di vita."
+     ],
+     "q": "Cosa faresti se una creatura marina magica bussasse alla tua porta?",
+     "c": "Disegna onde che sembrano grandi pesci amichevoli e aggiungi una piccola barca."
+    },
+    "pt": {
+     "t": "Ponyo e a Sereia",
+     "g": "Mergulha numa menina peixe dourado, no mar e numa história para os mais pequenos.",
+     "p": [
+      "Ponyo estreou em 2008 e inspira-se livremente em A Pequena Sereia.",
+      "Um peixe dourado que quer ser humano torna-se amigo de Sosuke, de cinco anos.",
+      "O mar é desenhado com ondas pintadas à mão, cheias de vida."
+     ],
+     "q": "O que farias se uma criatura marinha mágica batesse à tua porta?",
+     "c": "Desenha ondas que parecem grandes peixes amigos e junta um barquinho."
+    },
+    "pt_BR": {
+     "t": "Ponyo: Uma Amizade que Veio do Mar",
+     "g": "Mergulhe numa menina peixe dourado, no mar e numa história para os pequenos.",
+     "p": [
+      "Ponyo estreou em 2008 e se inspira livremente em A Pequena Sereia.",
+      "Um peixe dourado que quer ser humano vira amigo de Sosuke, de cinco anos.",
+      "O mar é desenhado com ondas pintadas à mão, cheias de vida."
+     ],
+     "q": "O que você faria se uma criatura marinha mágica batesse à sua porta?",
+     "c": "Desenhe ondas que parecem grandes peixes amigos e inclua um barquinho."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Howl's Moving Castle",
+     "g": "Discover a walking castle, a spell and courage at any age.",
+     "p": [
+      "Howl's Moving Castle came out in 2004 and is based on Diana Wynne Jones's novel.",
+      "Sophie is turned into an old woman by a spell and finds shelter in a walking castle.",
+      "The film shows that courage and kindness do not depend on age."
+     ],
+     "q": "If you had a moving home, where would you take it first?",
+     "c": "Draw a fantastic walking castle built from mismatched parts."
+    },
+    "de": {
+     "t": "Das wandelnde Schloss",
+     "g": "Entdecke ein laufendes Schloss, einen Fluch und Mut in jedem Alter.",
+     "p": [
+      "Das wandelnde Schloss erschien 2004 nach dem Roman von Diana Wynne Jones.",
+      "Sophie wird durch einen Fluch zur alten Frau und findet Zuflucht in einem laufenden Schloss.",
+      "Der Film zeigt, dass Mut und Güte nicht vom Alter abhängen."
+     ],
+     "q": "Wenn du ein bewegliches Zuhause hättest, wohin würdest du es zuerst lenken?",
+     "c": "Zeichne ein fantastisches laufendes Schloss aus zusammengewürfelten Teilen."
+    },
+    "es": {
+     "t": "El castillo ambulante",
+     "g": "Descubre un castillo que camina, un hechizo y el valor a cualquier edad.",
+     "p": [
+      "El castillo ambulante se estrenó en 2004 y se basa en la novela de Diana Wynne Jones.",
+      "Sophie se convierte en anciana por un hechizo y se refugia en un castillo que anda.",
+      "La película muestra que el valor y la bondad no dependen de la edad."
+     ],
+     "q": "Si tuvieras una casa móvil, ¿adónde la llevarías primero?",
+     "c": "Dibuja un castillo andante fantástico hecho de piezas dispares."
+    },
+    "fr": {
+     "t": "Le Château ambulant",
+     "g": "Découvre un château qui marche, un sort et le courage à tout âge.",
+     "p": [
+      "Le Château ambulant est sorti en 2004, d'après le roman de Diana Wynne Jones.",
+      "Sophie, changée en vieille femme par un sort, trouve refuge dans un château qui marche.",
+      "Le film montre que le courage et la bonté ne dépendent pas de l'âge."
+     ],
+     "q": "Si tu avais une maison mobile, où l'emmènerais-tu en premier ?",
+     "c": "Dessine un château ambulant fantastique fait de pièces dépareillées."
+    },
+    "it": {
+     "t": "Il castello errante di Howl",
+     "g": "Scopri un castello che cammina, un incantesimo e il coraggio a ogni età.",
+     "p": [
+      "Il castello errante di Howl uscì nel 2004, dal romanzo di Diana Wynne Jones.",
+      "Sophie diventa anziana per un incantesimo e trova rifugio in un castello che cammina.",
+      "Il film mostra che coraggio e gentilezza non dipendono dall'età."
+     ],
+     "q": "Se avessi una casa mobile, dove la porteresti per prima cosa?",
+     "c": "Disegna un fantastico castello errante fatto di pezzi spaiati."
+    },
+    "pt": {
+     "t": "O Castelo Andante",
+     "g": "Descobre um castelo que anda, um feitiço e a coragem em qualquer idade.",
+     "p": [
+      "O Castelo Andante estreou em 2004, a partir do romance de Diana Wynne Jones.",
+      "Sophie transforma-se numa idosa por um feitiço e abriga-se num castelo que anda.",
+      "O filme mostra que coragem e bondade não dependem da idade."
+     ],
+     "q": "Se tivesses uma casa móvel, para onde a levarias primeiro?",
+     "c": "Desenha um castelo andante fantástico feito de peças diferentes."
+    },
+    "pt_BR": {
+     "t": "O Castelo Animado",
+     "g": "Descubra um castelo que anda, um feitiço e a coragem em qualquer idade.",
+     "p": [
+      "O Castelo Animado estreou em 2004, a partir do romance de Diana Wynne Jones.",
+      "Sophie vira uma idosa por um feitiço e se abriga num castelo que anda.",
+      "O filme mostra que coragem e bondade não dependem da idade."
+     ],
+     "q": "Se você tivesse uma casa móvel, para onde a levaria primeiro?",
+     "c": "Desenhe um castelo animado fantástico feito de peças diferentes."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Nausicaä of the Valley of the Wind",
+     "g": "Learn about the 1984 film that led to Ghibli's creation and its ecological themes.",
+     "p": [
+      "Released in 1984, it is based on Miyazaki's own manga and came before Ghibli existed.",
+      "Its success helped found Studio Ghibli the next year.",
+      "Princess Nausicaä tries to understand nature instead of fighting it."
+     ],
+     "q": "What can people do in daily life to understand nature better?",
+     "c": "Draw a gentle glider flying over a green valley with strange plants."
+    },
+    "de": {
+     "t": "Nausicaä aus dem Tal der Winde",
+     "g": "Erfahre von dem Film von 1984, der zu Ghiblis Gründung führte, und seinen Umweltthemen.",
+     "p": [
+      "Der Film von 1984 beruht auf Miyazakis eigenem Manga und entstand vor Ghibli.",
+      "Sein Erfolg half, im Jahr darauf Studio Ghibli zu gründen.",
+      "Prinzessin Nausicaä versucht, die Natur zu verstehen, statt sie zu bekämpfen."
+     ],
+     "q": "Was kann man im Alltag tun, um die Natur besser zu verstehen?",
+     "c": "Zeichne einen sanften Gleiter über einem grünen Tal mit seltsamen Pflanzen."
+    },
+    "es": {
+     "t": "Nausicaä del Valle del Viento",
+     "g": "Conoce la película de 1984 que llevó a crear Ghibli y sus temas ecológicos.",
+     "p": [
+      "Estrenada en 1984, se basa en el propio manga de Miyazaki y es anterior a Ghibli.",
+      "Su éxito ayudó a fundar Studio Ghibli al año siguiente.",
+      "La princesa Nausicaä intenta comprender la naturaleza en lugar de combatirla."
+     ],
+     "q": "¿Qué puede hacerse en el día a día para entender mejor la naturaleza?",
+     "c": "Dibuja un planeador sereno sobre un valle verde con plantas extrañas."
+    },
+    "fr": {
+     "t": "Nausicaä de la vallée du vent",
+     "g": "Découvre le film de 1984 qui a mené à la création de Ghibli et ses thèmes écologiques.",
+     "p": [
+      "Sorti en 1984, il s'inspire du manga de Miyazaki lui-même et précède Ghibli.",
+      "Son succès a aidé à fonder le studio Ghibli l'année suivante.",
+      "La princesse Nausicaä cherche à comprendre la nature plutôt qu'à la combattre."
+     ],
+     "q": "Que peut-on faire au quotidien pour mieux comprendre la nature ?",
+     "c": "Dessine un planeur paisible au-dessus d'une vallée verte aux plantes étranges."
+    },
+    "it": {
+     "t": "Nausicaä della Valle del vento",
+     "g": "Scopri il film del 1984 che portò alla nascita di Ghibli e i suoi temi ecologici.",
+     "p": [
+      "Uscito nel 1984, è tratto dal manga di Miyazaki stesso ed è precedente a Ghibli.",
+      "Il suo successo aiutò a fondare lo Studio Ghibli l'anno dopo.",
+      "La principessa Nausicaä cerca di capire la natura invece di combatterla."
+     ],
+     "q": "Cosa si può fare ogni giorno per capire meglio la natura?",
+     "c": "Disegna un deltaplano sereno su una valle verde con piante strane."
+    },
+    "pt": {
+     "t": "Nausicaä do Vale do Vento",
+     "g": "Descobre o filme de 1984 que levou à criação do Ghibli e os seus temas ecológicos.",
+     "p": [
+      "Estreado em 1984, baseia-se no manga do próprio Miyazaki e é anterior ao Ghibli.",
+      "O seu sucesso ajudou a fundar o Studio Ghibli no ano seguinte.",
+      "A princesa Nausicaä tenta compreender a natureza em vez de a combater."
+     ],
+     "q": "O que se pode fazer no dia a dia para compreender melhor a natureza?",
+     "c": "Desenha um planador sereno sobre um vale verde com plantas estranhas."
+    },
+    "pt_BR": {
+     "t": "Nausicaä do Vale do Vento",
+     "g": "Descubra o filme de 1984 que levou à criação do Ghibli e seus temas ecológicos.",
+     "p": [
+      "Lançado em 1984, é baseado no mangá do próprio Miyazaki e é anterior ao Ghibli.",
+      "O sucesso dele ajudou a fundar o Studio Ghibli no ano seguinte.",
+      "A princesa Nausicaä tenta compreender a natureza em vez de combatê-la."
+     ],
+     "q": "O que se pode fazer no dia a dia para entender melhor a natureza?",
+     "c": "Desenhe um planador sereno sobre um vale verde com plantas estranhas."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Isao Takahata",
+     "g": "Meet Ghibli's co-founder and his realistic, poetic films.",
+     "p": [
+      "Isao Takahata co-founded Studio Ghibli with Miyazaki and Toshio Suzuki.",
+      "He preferred realistic, emotional stories drawn from everyday life.",
+      "His films experimented with styles, from soft sketches to detailed realism."
+     ],
+     "q": "What everyday moment could become a beautiful animated scene?",
+     "c": "Sketch an ordinary moment, like a family meal, in a soft, simple style."
+    },
+    "de": {
+     "t": "Isao Takahata",
+     "g": "Lerne Ghiblis Mitgründer und seine realistischen, poetischen Filme kennen.",
+     "p": [
+      "Isao Takahata gründete Studio Ghibli mit Miyazaki und Toshio Suzuki mit.",
+      "Er mochte realistische, gefühlvolle Geschichten aus dem Alltag.",
+      "Seine Filme erprobten Stile, von weichen Skizzen bis zu detailreichem Realismus."
+     ],
+     "q": "Welcher Alltagsmoment könnte eine schöne Animationsszene werden?",
+     "c": "Skizziere einen Alltagsmoment, etwa ein Familienessen, in weichem, einfachem Stil."
+    },
+    "es": {
+     "t": "Isao Takahata",
+     "g": "Conoce al cofundador de Ghibli y sus películas realistas y poéticas.",
+     "p": [
+      "Isao Takahata cofundó Studio Ghibli junto a Miyazaki y Toshio Suzuki.",
+      "Prefería historias realistas y emotivas sacadas de la vida cotidiana.",
+      "Sus películas experimentaron con estilos, de bocetos suaves a realismo detallado."
+     ],
+     "q": "¿Qué momento cotidiano podría convertirse en una bonita escena animada?",
+     "c": "Dibuja un momento corriente, como una comida familiar, en estilo suave y sencillo."
+    },
+    "fr": {
+     "t": "Isao Takahata",
+     "g": "Rencontre le cofondateur de Ghibli et ses films réalistes et poétiques.",
+     "p": [
+      "Isao Takahata a cofondé le studio Ghibli avec Miyazaki et Toshio Suzuki.",
+      "Il préférait les histoires réalistes et émouvantes tirées de la vie quotidienne.",
+      "Ses films ont expérimenté des styles, des croquis doux au réalisme détaillé."
+     ],
+     "q": "Quel moment du quotidien pourrait devenir une belle scène animée ?",
+     "c": "Esquisse un moment ordinaire, comme un repas de famille, dans un style doux et simple."
+    },
+    "it": {
+     "t": "Isao Takahata",
+     "g": "Conosci il cofondatore di Ghibli e i suoi film realistici e poetici.",
+     "p": [
+      "Isao Takahata cofondò lo Studio Ghibli con Miyazaki e Toshio Suzuki.",
+      "Preferiva storie realistiche ed emotive tratte dalla vita quotidiana.",
+      "I suoi film sperimentarono stili, dai bozzetti morbidi al realismo dettagliato."
+     ],
+     "q": "Quale momento quotidiano potrebbe diventare una bella scena animata?",
+     "c": "Schizza un momento ordinario, come un pasto di famiglia, in stile morbido e semplice."
+    },
+    "pt": {
+     "t": "Isao Takahata",
+     "g": "Conhece o cofundador do Ghibli e os seus filmes realistas e poéticos.",
+     "p": [
+      "Isao Takahata cofundou o Studio Ghibli com Miyazaki e Toshio Suzuki.",
+      "Preferia histórias realistas e emotivas tiradas da vida quotidiana.",
+      "Os seus filmes experimentaram estilos, de esboços suaves a realismo detalhado."
+     ],
+     "q": "Que momento do dia a dia poderia tornar-se uma bela cena animada?",
+     "c": "Esboça um momento comum, como uma refeição em família, num estilo suave e simples."
+    },
+    "pt_BR": {
+     "t": "Isao Takahata",
+     "g": "Conheça o cofundador do Ghibli e seus filmes realistas e poéticos.",
+     "p": [
+      "Isao Takahata cofundou o Studio Ghibli com Miyazaki e Toshio Suzuki.",
+      "Preferia histórias realistas e emotivas tiradas da vida cotidiana.",
+      "Seus filmes experimentaram estilos, de esboços suaves a realismo detalhado."
+     ],
+     "q": "Que momento do dia a dia poderia virar uma bela cena animada?",
+     "c": "Esboce um momento comum, como uma refeição em família, num estilo suave e simples."
+    }
+   }
+  }
+ ]
+}

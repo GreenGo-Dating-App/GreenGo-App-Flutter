@@ -1,0 +1,835 @@
+{
+ "topic": "gardening",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Flowering houseplants",
+     "g": "Meet African violets, anthuriums and other indoor plants that bloom.",
+     "p": [
+      "African violets bloom nearly all year in bright indirect light; water the soil, not the fuzzy leaves.",
+      "Anthurium gives long-lasting glossy flowers in bright light and moderate humidity, but it is toxic if chewed.",
+      "Remove faded flowers and feed lightly in the growing season to encourage more blooms."
+     ],
+     "q": "Which flower colour would brighten your home the most?",
+     "c": "Today, choose one flowering houseplant that suits your light and check if it is safe for your pets."
+    },
+    "de": {
+     "t": "Blühende Zimmerpflanzen",
+     "g": "Lerne Usambaraveilchen, Flamingoblumen und andere blühende Zimmerpflanzen kennen.",
+     "p": [
+      "Usambaraveilchen blühen fast ganzjährig bei hellem indirektem Licht, gieße die Erde, nicht die behaarten Blätter.",
+      "Die Flamingoblume bringt lang haltende glänzende Blüten bei hellem Licht und mäßiger Feuchte, ist aber giftig, wenn sie gekaut wird.",
+      "Entferne Verblühtes und dünge in der Wachstumszeit leicht, das fördert mehr Blüten."
+     ],
+     "q": "Welche Blütenfarbe würde dein Zuhause am meisten aufhellen?",
+     "c": "Wähle heute eine blühende Zimmerpflanze, die zu deinem Licht passt, und prüfe, ob sie für deine Haustiere sicher ist."
+    },
+    "es": {
+     "t": "Plantas de interior con flores",
+     "g": "Conoce violetas africanas, anturios y otras plantas de interior que florecen.",
+     "p": [
+      "Las violetas africanas florecen casi todo el año con luz indirecta brillante; riega la tierra, no las hojas peludas.",
+      "El anturio da flores brillantes y duraderas con luz clara y humedad moderada, pero es tóxico si se mastica.",
+      "Quita las flores marchitas y abona ligeramente en la temporada de crecimiento para más flores."
+     ],
+     "q": "¿Qué color de flor alegraría más tu casa?",
+     "c": "Hoy elige una planta de interior con flores que encaje con tu luz y comprueba si es segura para tus mascotas."
+    },
+    "fr": {
+     "t": "Plantes d'intérieur à fleurs",
+     "g": "Découvre les saintpaulias, anthuriums et autres plantes d'intérieur qui fleurissent.",
+     "p": [
+      "Les saintpaulias fleurissent presque toute l'année en lumière vive indirecte : arrose la terre, pas les feuilles velues.",
+      "L'anthurium offre des fleurs brillantes et durables en lumière claire et humidité modérée, mais il est toxique si on le mâche.",
+      "Retire les fleurs fanées et nourris légèrement en saison de croissance pour encourager de nouvelles fleurs."
+     ],
+     "q": "Quelle couleur de fleur égaierait le plus ta maison ?",
+     "c": "Aujourd'hui, choisis une plante à fleurs adaptée à ta lumière et vérifie si elle est sûre pour tes animaux."
+    },
+    "it": {
+     "t": "Piante da appartamento con fiori",
+     "g": "Conosci violette africane, anturi e altre piante da interno che fioriscono.",
+     "p": [
+      "Le violette africane fioriscono quasi tutto l'anno con luce indiretta intensa: bagna il terriccio, non le foglie pelose.",
+      "L'anturio dà fiori lucidi e duraturi con luce chiara e umidità moderata, ma è tossico se masticato.",
+      "Togli i fiori appassiti e concima leggermente nella stagione di crescita per stimolare nuove fioriture."
+     ],
+     "q": "Quale colore di fiore illuminerebbe di più la tua casa?",
+     "c": "Oggi scegli una pianta da fiore adatta alla tua luce e controlla se è sicura per i tuoi animali."
+    },
+    "pt": {
+     "t": "Plantas de interior com flor",
+     "g": "Conhece violetas-africanas, antúrios e outras plantas de interior que florescem.",
+     "p": [
+      "As violetas-africanas florescem quase todo o ano com luz indireta forte; rega a terra, não as folhas peludas.",
+      "O antúrio dá flores brilhantes e duradouras com luz clara e humidade moderada, mas é tóxico se mastigado.",
+      "Tira as flores murchas e aduba ligeiramente na época de crescimento para mais flores."
+     ],
+     "q": "Que cor de flor alegraria mais a tua casa?",
+     "c": "Hoje escolhe uma planta de interior com flor que sirva à tua luz e verifica se é segura para os teus animais."
+    },
+    "pt_BR": {
+     "t": "Plantas de interior com flores",
+     "g": "Conheça violetas-africanas, antúrios e outras plantas de interior que florescem.",
+     "p": [
+      "As violetas-africanas florescem quase o ano todo com luz indireta forte; regue a terra, não as folhas peludas.",
+      "O antúrio dá flores brilhantes e duradouras com luz clara e umidade moderada, mas é tóxico se mastigado.",
+      "Tire as flores murchas e adube levemente na época de crescimento para mais flores."
+     ],
+     "q": "Que cor de flor alegraria mais a sua casa?",
+     "c": "Hoje escolha uma planta de interior com flores que sirva para a sua luz e confira se é segura para seus animais."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Plants for low-light rooms",
+     "g": "Choose the best plants for darker corners, offices and north-facing windows.",
+     "p": [
+      "Snake plant, ZZ plant, pothos, cast iron plant and peace lily cope with dim light.",
+      "No plant lives in total darkness, so a spot needs some daylight, or a grow light, to work.",
+      "Low light means slower growth, so water less and expect fewer new leaves."
+     ],
+     "q": "Which dim corner of your home could use a bit of green?",
+     "c": "Today, find your darkest spot where you can still read without a lamp and pick a plant for it."
+    },
+    "de": {
+     "t": "Pflanzen für dunkle Räume",
+     "g": "Wähle die besten Pflanzen für dunkle Ecken, Büros und Fenster ohne Sonne.",
+     "p": [
+      "Bogenhanf, Zamioculcas, Efeutute, Schusterpalme und Einblatt kommen mit wenig Licht zurecht.",
+      "Keine Pflanze lebt in völliger Dunkelheit, ein Platz braucht etwas Tageslicht oder eine Pflanzenlampe.",
+      "Wenig Licht heißt langsameres Wachstum, gieße also weniger und erwarte weniger neue Blätter."
+     ],
+     "q": "Welche dunkle Ecke bei dir könnte etwas Grün gebrauchen?",
+     "c": "Finde heute deinen dunkelsten Platz, an dem du noch ohne Lampe lesen kannst, und wähle eine Pflanze dafür."
+    },
+    "es": {
+     "t": "Plantas para habitaciones con poca luz",
+     "g": "Elige las mejores plantas para rincones oscuros, oficinas y ventanas sin sol directo.",
+     "p": [
+      "La sansevieria, la zamioculca, el pothos, la aspidistra y el espatifilo aguantan la luz tenue.",
+      "Ninguna planta vive en oscuridad total, así que el sitio necesita algo de luz de día o una luz de cultivo.",
+      "Poca luz significa crecimiento más lento: riega menos y espera menos hojas nuevas."
+     ],
+     "q": "¿Qué rincón oscuro de tu casa agradecería un toque de verde?",
+     "c": "Hoy busca tu sitio más oscuro donde aún puedas leer sin lámpara y elige una planta para él."
+    },
+    "fr": {
+     "t": "Plantes pour pièces peu lumineuses",
+     "g": "Choisis les meilleures plantes pour coins sombres, bureaux et fenêtres sans soleil.",
+     "p": [
+      "Sansevieria, zamioculcas, pothos, aspidistra et spathiphyllum supportent la lumière faible.",
+      "Aucune plante ne vit dans le noir total : l'endroit doit recevoir un peu de lumière du jour, ou une lampe de culture.",
+      "Peu de lumière signifie croissance plus lente : arrose moins et attends moins de nouvelles feuilles."
+     ],
+     "q": "Quel coin sombre de ta maison aurait besoin d'un peu de vert ?",
+     "c": "Aujourd'hui, trouve ton endroit le plus sombre où tu peux encore lire sans lampe et choisis-y une plante."
+    },
+    "it": {
+     "t": "Piante per stanze poco luminose",
+     "g": "Scegli le migliori piante per angoli bui, uffici e finestre senza sole.",
+     "p": [
+      "Sansevieria, zamioculcas, pothos, aspidistra e spatifillo se la cavano con luce fioca.",
+      "Nessuna pianta vive al buio totale: il posto deve avere un po' di luce del giorno o una lampada da coltivazione.",
+      "Poca luce significa crescita più lenta: annaffia meno e aspettati meno foglie nuove."
+     ],
+     "q": "Quale angolo buio di casa tua avrebbe bisogno di un tocco di verde?",
+     "c": "Oggi trova il tuo punto più buio dove puoi ancora leggere senza lampada e scegli una pianta per quel posto."
+    },
+    "pt": {
+     "t": "Plantas para divisões com pouca luz",
+     "g": "Escolhe as melhores plantas para cantos escuros, escritórios e janelas sem sol.",
+     "p": [
+      "Espada-de-são-jorge, zamioculca, jiboia, aspidistra e espatifilo aguentam luz fraca.",
+      "Nenhuma planta vive no escuro total, por isso o local precisa de alguma luz do dia ou de uma luz de cultivo.",
+      "Pouca luz significa crescimento mais lento: rega menos e espera menos folhas novas."
+     ],
+     "q": "Que canto escuro da tua casa agradeceria um toque de verde?",
+     "c": "Hoje encontra o teu local mais escuro onde ainda consigas ler sem candeeiro e escolhe uma planta para ele."
+    },
+    "pt_BR": {
+     "t": "Plantas para cômodos com pouca luz",
+     "g": "Escolha as melhores plantas para cantos escuros, escritórios e janelas sem sol.",
+     "p": [
+      "Espada-de-são-jorge, zamioculca, jiboia, aspidistra e espatifilo aguentam luz fraca.",
+      "Nenhuma planta vive no escuro total, então o lugar precisa de alguma luz do dia ou de uma luz de cultivo.",
+      "Pouca luz significa crescimento mais lento: regue menos e espere menos folhas novas."
+     ],
+     "q": "Que canto escuro da sua casa agradeceria um toque de verde?",
+     "c": "Hoje encontre seu lugar mais escuro onde ainda dá para ler sem abajur e escolha uma planta para ele."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Plants for bathrooms",
+     "g": "Pick humidity-loving plants that enjoy steamy, bright bathrooms.",
+     "p": [
+      "Ferns, pothos, peace lily and air plants enjoy the extra humidity from showers.",
+      "A bathroom with no window is too dark for most plants, so choose one with daylight or add a grow light.",
+      "Keep plants away from direct spray and very hot steam, and out of reach of curious pets."
+     ],
+     "q": "Does your bathroom have a window or a shelf where a plant could sit?",
+     "c": "Today, check the light in your bathroom at midday and decide if a plant could live there."
+    },
+    "de": {
+     "t": "Pflanzen fürs Bad",
+     "g": "Wähle feuchteliebende Pflanzen, die helle, dampfige Bäder mögen.",
+     "p": [
+      "Farne, Efeutute, Einblatt und Tillandsien genießen die zusätzliche Feuchte vom Duschen.",
+      "Ein Bad ohne Fenster ist für die meisten Pflanzen zu dunkel, wähle eines mit Tageslicht oder ergänze eine Pflanzenlampe.",
+      "Halte Pflanzen von direktem Wasserstrahl und sehr heißem Dampf fern und außer Reichweite neugieriger Haustiere."
+     ],
+     "q": "Hat dein Bad ein Fenster oder ein Regal, auf dem eine Pflanze stehen könnte?",
+     "c": "Prüfe heute mittags das Licht in deinem Bad und entscheide, ob dort eine Pflanze leben könnte."
+    },
+    "es": {
+     "t": "Plantas para el baño",
+     "g": "Elige plantas que aman la humedad y disfrutan de baños luminosos y con vapor.",
+     "p": [
+      "Helechos, pothos, espatifilo y plantas aéreas disfrutan la humedad extra de las duchas.",
+      "Un baño sin ventana es demasiado oscuro para la mayoría de las plantas: elige uno con luz natural o añade una luz de cultivo.",
+      "Mantén las plantas lejos del chorro directo y del vapor muy caliente, y fuera del alcance de mascotas curiosas."
+     ],
+     "q": "¿Tu baño tiene una ventana o una repisa donde cabría una planta?",
+     "c": "Hoy comprueba la luz de tu baño al mediodía y decide si allí podría vivir una planta."
+    },
+    "fr": {
+     "t": "Plantes pour la salle de bains",
+     "g": "Choisis des plantes qui aiment l'humidité et apprécient une salle de bains claire et humide.",
+     "p": [
+      "Fougères, pothos, spathiphyllum et plantes aériennes aiment l'humidité en plus des douches.",
+      "Une salle de bains sans fenêtre est trop sombre pour la plupart des plantes : choisis-en une avec lumière naturelle ou ajoute une lampe.",
+      "Éloigne les plantes des jets directs et de la vapeur très chaude, et des animaux curieux."
+     ],
+     "q": "Ta salle de bains a-t-elle une fenêtre ou une étagère où poser une plante ?",
+     "c": "Aujourd'hui, vérifie la lumière de ta salle de bains à midi et décide si une plante pourrait y vivre."
+    },
+    "it": {
+     "t": "Piante per il bagno",
+     "g": "Scegli piante amanti dell'umidità che apprezzano bagni luminosi e con vapore.",
+     "p": [
+      "Felci, pothos, spatifillo e tillandsie gradiscono l'umidità extra delle docce.",
+      "Un bagno senza finestra è troppo buio per la maggior parte delle piante: scegline uno con luce naturale o aggiungi una lampada.",
+      "Tieni le piante lontane dal getto diretto e dal vapore molto caldo e dalla portata di animali curiosi."
+     ],
+     "q": "Il tuo bagno ha una finestra o un ripiano dove potrebbe stare una pianta?",
+     "c": "Oggi controlla la luce del tuo bagno a mezzogiorno e decidi se una pianta potrebbe viverci."
+    },
+    "pt": {
+     "t": "Plantas para a casa de banho",
+     "g": "Escolhe plantas que gostam de humidade e apreciam casas de banho luminosas e com vapor.",
+     "p": [
+      "Fetos, jiboia, espatifilo e plantas aéreas gostam da humidade extra dos duches.",
+      "Uma casa de banho sem janela é demasiado escura para a maioria das plantas: escolhe uma com luz natural ou junta uma luz de cultivo.",
+      "Mantém as plantas longe do jato direto e do vapor muito quente, e fora do alcance de animais curiosos."
+     ],
+     "q": "A tua casa de banho tem uma janela ou uma prateleira onde caiba uma planta?",
+     "c": "Hoje verifica a luz da casa de banho ao meio-dia e decide se lá poderia viver uma planta."
+    },
+    "pt_BR": {
+     "t": "Plantas para o banheiro",
+     "g": "Escolha plantas que gostam de umidade e apreciam banheiros claros e com vapor.",
+     "p": [
+      "Samambaias, jiboia, espatifilo e plantas aéreas gostam da umidade extra dos banhos.",
+      "Um banheiro sem janela é escuro demais para a maioria das plantas: escolha um com luz natural ou acrescente uma luz de cultivo.",
+      "Mantenha as plantas longe do jato direto e do vapor muito quente, e fora do alcance de animais curiosos."
+     ],
+     "q": "Seu banheiro tem uma janela ou uma prateleira onde caiba uma planta?",
+     "c": "Hoje confira a luz do seu banheiro ao meio-dia e decida se uma planta poderia viver lá."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hanging and trailing plants",
+     "g": "Display plants at different heights with hangers and shelves.",
+     "p": [
+      "Trailing plants like pothos, string of hearts and spider plant look lovely in hangers or on high shelves.",
+      "Hang plants from strong hooks fixed into solid wall or ceiling, and check the weight when the pot is wet.",
+      "Hanging plants dry faster in warm air near the ceiling, so check their soil more often."
+     ],
+     "q": "Where in your home could a trailing plant spill over nicely?",
+     "c": "Today, find a sturdy spot to hang or place a trailing plant and check the weight it must hold."
+    },
+    "de": {
+     "t": "Hänge- und Ampelpflanzen",
+     "g": "Zeige Pflanzen in verschiedenen Höhen mit Aufhängern und Regalen.",
+     "p": [
+      "Hängende Pflanzen wie Efeutute, Leuchterblume und Grünlilie sehen in Ampeln oder auf hohen Regalen schön aus.",
+      "Hänge Pflanzen an stabilen Haken in massiver Wand oder Decke auf und bedenke das Gewicht des nassen Topfes.",
+      "Hängepflanzen trocknen in warmer Luft unter der Decke schneller, prüfe die Erde öfter."
+     ],
+     "q": "Wo bei dir könnte eine Hängepflanze schön überquellen?",
+     "c": "Suche heute einen stabilen Platz zum Aufhängen oder Hinstellen und prüfe das Gewicht, das er tragen muss."
+    },
+    "es": {
+     "t": "Plantas colgantes y trepadoras",
+     "g": "Muestra plantas a distintas alturas con colgadores y estantes.",
+     "p": [
+      "Las plantas colgantes como el pothos, el collar de corazones y la cinta lucen bien en colgadores o estantes altos.",
+      "Cuelga las plantas de ganchos fuertes fijados a pared o techo sólidos y calcula el peso con la maceta mojada.",
+      "Las plantas colgantes se secan más rápido en el aire cálido cerca del techo, así que revisa su tierra más a menudo."
+     ],
+     "q": "¿Dónde de tu casa quedaría bien una planta colgante cayendo?",
+     "c": "Hoy busca un sitio firme para colgar o poner una planta colgante y comprueba el peso que debe soportar."
+    },
+    "fr": {
+     "t": "Plantes retombantes et suspendues",
+     "g": "Présente les plantes à différentes hauteurs avec des suspensions et des étagères.",
+     "p": [
+      "Les plantes retombantes comme pothos, chaîne des cœurs et chlorophytum sont belles en suspension ou sur étagère haute.",
+      "Accroche les plantes à de solides crochets fixés dans un mur ou plafond solide et pense au poids du pot mouillé.",
+      "Les plantes suspendues sèchent plus vite dans l'air chaud près du plafond : vérifie plus souvent leur terre."
+     ],
+     "q": "Où dans ta maison une plante retombante ferait-elle bel effet ?",
+     "c": "Aujourd'hui, trouve un endroit solide pour suspendre ou poser une plante retombante et vérifie le poids à supporter."
+    },
+    "it": {
+     "t": "Piante ricadenti e pendenti",
+     "g": "Mostra le piante a diverse altezze con supporti da appendere e scaffali.",
+     "p": [
+      "Piante ricadenti come pothos, cuori in fila e clorofito stanno bene in vasi appesi o su scaffali alti.",
+      "Appendi le piante a ganci robusti fissati a parete o soffitto solidi e considera il peso del vaso bagnato.",
+      "Le piante appese asciugano più in fretta nell'aria calda vicino al soffitto, quindi controlla più spesso il terriccio."
+     ],
+     "q": "Dove in casa tua una pianta ricadente starebbe bene?",
+     "c": "Oggi trova un punto robusto per appendere o appoggiare una pianta ricadente e controlla il peso che deve reggere."
+    },
+    "pt": {
+     "t": "Plantas pendentes e suspensas",
+     "g": "Mostra plantas a diferentes alturas com suportes de pendurar e prateleiras.",
+     "p": [
+      "Plantas pendentes como jiboia, colar-de-corações e fita ficam bem em suportes ou em prateleiras altas.",
+      "Pendura as plantas em ganchos fortes fixos em parede ou teto sólidos e conta com o peso do vaso molhado.",
+      "As plantas suspensas secam mais depressa no ar quente junto ao teto, por isso verifica a terra com mais frequência."
+     ],
+     "q": "Onde na tua casa ficaria bem uma planta pendente?",
+     "c": "Hoje encontra um local firme para pendurar ou pôr uma planta pendente e verifica o peso que tem de aguentar."
+    },
+    "pt_BR": {
+     "t": "Plantas pendentes e suspensas",
+     "g": "Exiba plantas em diferentes alturas com suportes de pendurar e prateleiras.",
+     "p": [
+      "Plantas pendentes como jiboia, colar-de-corações e clorofito ficam bonitas em suportes ou em prateleiras altas.",
+      "Pendure as plantas em ganchos fortes fixados em parede ou teto firmes e considere o peso do vaso molhado.",
+      "Plantas suspensas secam mais rápido no ar quente perto do teto, então confira a terra com mais frequência."
+     ],
+     "q": "Onde na sua casa ficaria bonita uma planta pendente?",
+     "c": "Hoje encontre um lugar firme para pendurar ou pôr uma planta pendente e confira o peso que ele precisa aguentar."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Plant shelves and stands",
+     "g": "Arrange plants so each gets light while creating a beautiful display.",
+     "p": [
+      "Place sun-lovers nearest the window and shade-tolerant plants further back or lower down.",
+      "Mix heights, leaf shapes and pot styles, and group in odd numbers like three or five for a pleasing look.",
+      "Choose stable stands, keep shelves away from heaters, and protect wood with saucers."
+     ],
+     "q": "What look do you want for your plant corner: jungle, minimal or colourful?",
+     "c": "Today, rearrange three plants by height and light need, then step back and look."
+    },
+    "de": {
+     "t": "Pflanzenregale und Ständer",
+     "g": "Ordne Pflanzen so an, dass jede Licht bekommt und alles schön wirkt.",
+     "p": [
+      "Stelle Sonnenliebhaber nah ans Fenster und schattenverträgliche Pflanzen weiter hinten oder unten.",
+      "Mische Höhen, Blattformen und Topfstile und gruppiere in ungeraden Zahlen wie drei oder fünf für ein schönes Bild.",
+      "Wähle stabile Ständer, halte Regale von Heizungen fern und schütze Holz mit Untersetzern."
+     ],
+     "q": "Welchen Look wünschst du dir für deine Pflanzenecke: Dschungel, minimal oder bunt?",
+     "c": "Ordne heute drei Pflanzen nach Höhe und Lichtbedarf neu und tritt dann zurück und sieh hin."
+    },
+    "es": {
+     "t": "Estantes y soportes para plantas",
+     "g": "Coloca las plantas para que cada una reciba luz y formen un conjunto bonito.",
+     "p": [
+      "Pon las que aman el sol más cerca de la ventana y las que toleran sombra más atrás o más abajo.",
+      "Mezcla alturas, formas de hoja y estilos de maceta, y agrupa en números impares como tres o cinco.",
+      "Elige soportes estables, aleja los estantes de calefactores y protege la madera con platos."
+     ],
+     "q": "¿Qué estilo quieres para tu rincón de plantas: selva, minimalista o colorido?",
+     "c": "Hoy reordena tres plantas por altura y necesidad de luz, y luego da un paso atrás y mira."
+    },
+    "fr": {
+     "t": "Étagères et supports pour plantes",
+     "g": "Dispose les plantes pour que chacune ait de la lumière et que l'ensemble soit beau.",
+     "p": [
+      "Place les amateurs de soleil près de la fenêtre et les plantes tolérant l'ombre plus loin ou plus bas.",
+      "Mélange hauteurs, formes de feuilles et styles de pots, et regroupe par nombres impairs comme trois ou cinq.",
+      "Choisis des supports stables, éloigne les étagères des radiateurs et protège le bois avec des soucoupes."
+     ],
+     "q": "Quel style veux-tu pour ton coin plantes : jungle, minimal ou coloré ?",
+     "c": "Aujourd'hui, réorganise trois plantes selon la hauteur et la lumière, puis recule et regarde."
+    },
+    "it": {
+     "t": "Scaffali e supporti per piante",
+     "g": "Disponi le piante in modo che ognuna abbia luce e l'insieme sia bello.",
+     "p": [
+      "Metti le amanti del sole vicino alla finestra e quelle che tollerano l'ombra più indietro o più in basso.",
+      "Mescola altezze, forme delle foglie e stili di vaso e raggruppa in numeri dispari come tre o cinque.",
+      "Scegli supporti stabili, tieni gli scaffali lontani dai caloriferi e proteggi il legno con i sottovasi."
+     ],
+     "q": "Che stile vuoi per il tuo angolo piante: giungla, minimal o colorato?",
+     "c": "Oggi riordina tre piante per altezza e bisogno di luce, poi fai un passo indietro e guarda."
+    },
+    "pt": {
+     "t": "Prateleiras e suportes para plantas",
+     "g": "Dispõe as plantas para cada uma ter luz e o conjunto ficar bonito.",
+     "p": [
+      "Põe as que gostam de sol mais perto da janela e as que toleram sombra mais atrás ou mais abaixo.",
+      "Mistura alturas, formas de folha e estilos de vaso e agrupa em números ímpares como três ou cinco.",
+      "Escolhe suportes estáveis, afasta as prateleiras de aquecedores e protege a madeira com pratos."
+     ],
+     "q": "Que estilo queres para o teu canto de plantas: selva, minimalista ou colorido?",
+     "c": "Hoje reorganiza três plantas por altura e necessidade de luz, e depois recua e olha."
+    },
+    "pt_BR": {
+     "t": "Prateleiras e suportes para plantas",
+     "g": "Disponha as plantas para cada uma ter luz e o conjunto ficar bonito.",
+     "p": [
+      "Ponha as que gostam de sol mais perto da janela e as que toleram sombra mais atrás ou mais embaixo.",
+      "Misture alturas, formas de folha e estilos de vaso e agrupe em números ímpares como três ou cinco.",
+      "Escolha suportes estáveis, afaste as prateleiras de aquecedores e proteja a madeira com pratinhos."
+     ],
+     "q": "Que estilo você quer para o seu cantinho de plantas: selva, minimalista ou colorido?",
+     "c": "Hoje reorganize três plantas por altura e necessidade de luz, e depois recue e olhe."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Grow lights basics",
+     "g": "Learn when a simple LED grow light helps plants in dark homes.",
+     "p": [
+      "A full-spectrum LED grow light can help when windows are dim, or in the short days of your winter.",
+      "Place the light about thirty centimetres above the plants, for about twelve to sixteen hours a day.",
+      "Use a cheap timer so the light turns on and off by itself, and plants also need a dark night."
+     ],
+     "q": "Would a grow light help any plant or room in your home?",
+     "c": "Today, note which of your plants stretch toward light and might benefit from a grow light."
+    },
+    "de": {
+     "t": "Pflanzenlampen: die Basics",
+     "g": "Lerne, wann eine einfache LED-Pflanzenlampe Pflanzen in dunklen Wohnungen hilft.",
+     "p": [
+      "Eine Vollspektrum-LED-Pflanzenlampe hilft bei dunklen Fenstern oder in den kurzen Tagen deines Winters.",
+      "Hänge die Lampe etwa dreißig Zentimeter über die Pflanzen, für etwa zwölf bis sechzehn Stunden täglich.",
+      "Nimm eine günstige Zeitschaltuhr, damit das Licht von allein an- und ausgeht, Pflanzen brauchen auch dunkle Nächte."
+     ],
+     "q": "Würde eine Pflanzenlampe einer Pflanze oder einem Raum bei dir helfen?",
+     "c": "Notiere heute, welche deiner Pflanzen sich zum Licht strecken und von einer Pflanzenlampe profitieren könnten."
+    },
+    "es": {
+     "t": "Luces de cultivo: lo básico",
+     "g": "Aprende cuándo una luz LED de cultivo sencilla ayuda a las plantas en casas oscuras.",
+     "p": [
+      "Una luz LED de espectro completo puede ayudar si las ventanas son oscuras o en los días cortos de tu invierno.",
+      "Coloca la luz unos treinta centímetros sobre las plantas, unas doce a dieciséis horas al día.",
+      "Usa un temporizador barato para que la luz se encienda y apague sola, y las plantas también necesitan noche oscura."
+     ],
+     "q": "¿Ayudaría una luz de cultivo a alguna planta o habitación de tu casa?",
+     "c": "Hoy anota qué plantas se estiran hacia la luz y podrían beneficiarse de una luz de cultivo."
+    },
+    "fr": {
+     "t": "Les bases des lampes de culture",
+     "g": "Apprends quand une simple lampe de culture LED aide les plantes dans un logement sombre.",
+     "p": [
+      "Une lampe LED à spectre complet peut aider si les fenêtres sont sombres, ou pendant les jours courts de ton hiver.",
+      "Place la lampe à environ trente centimètres au-dessus des plantes, douze à seize heures par jour.",
+      "Utilise une prise minuterie bon marché : la lumière s'allume et s'éteint seule, et les plantes ont aussi besoin d'une nuit sombre."
+     ],
+     "q": "Une lampe de culture aiderait-elle une plante ou une pièce chez toi ?",
+     "c": "Aujourd'hui, note quelles plantes s'étirent vers la lumière et pourraient profiter d'une lampe de culture."
+    },
+    "it": {
+     "t": "Le basi delle lampade da coltivazione",
+     "g": "Scopri quando una semplice lampada LED da coltivazione aiuta le piante nelle case buie.",
+     "p": [
+      "Una lampada LED a spettro completo può aiutare con finestre poco luminose o nei giorni corti del tuo inverno.",
+      "Metti la luce a circa trenta centimetri sopra le piante, per circa dodici-sedici ore al giorno.",
+      "Usa un timer economico così la luce si accende e spegne da sola, e anche le piante hanno bisogno di notti buie."
+     ],
+     "q": "Una lampada da coltivazione aiuterebbe qualche pianta o stanza di casa tua?",
+     "c": "Oggi annota quali piante si allungano verso la luce e potrebbero giovarsi di una lampada."
+    },
+    "pt": {
+     "t": "Luzes de cultivo: o básico",
+     "g": "Aprende quando uma luz LED de cultivo simples ajuda plantas em casas escuras.",
+     "p": [
+      "Uma luz LED de espetro completo pode ajudar com janelas escuras ou nos dias curtos do teu inverno.",
+      "Põe a luz a cerca de trinta centímetros acima das plantas, durante cerca de doze a dezasseis horas por dia.",
+      "Usa um temporizador barato para a luz ligar e desligar sozinha, e as plantas também precisam de noites escuras."
+     ],
+     "q": "Uma luz de cultivo ajudaria alguma planta ou divisão da tua casa?",
+     "c": "Hoje anota que plantas se esticam para a luz e poderiam beneficiar de uma luz de cultivo."
+    },
+    "pt_BR": {
+     "t": "Luzes de cultivo: o básico",
+     "g": "Aprenda quando uma luz LED de cultivo simples ajuda plantas em casas escuras.",
+     "p": [
+      "Uma luz LED de espectro completo pode ajudar com janelas escuras ou nos dias curtos do seu inverno.",
+      "Ponha a luz a cerca de trinta centímetros acima das plantas, por cerca de doze a dezesseis horas por dia.",
+      "Use um timer barato para a luz ligar e desligar sozinha, e as plantas também precisam de noites escuras."
+     ],
+     "q": "Uma luz de cultivo ajudaria alguma planta ou cômodo da sua casa?",
+     "c": "Hoje anote quais plantas se esticam para a luz e poderiam se beneficiar de uma luz de cultivo."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Holiday care for plants",
+     "g": "Keep plants watered while you travel with simple tricks.",
+     "p": [
+      "For a week or two, water well before leaving and move plants out of hot direct sun.",
+      "Try a wick: a cotton cord from a water jar into the soil, or a bottle upside down with a tiny hole.",
+      "For longer trips, ask a friend to check them and give them a short written guide."
+     ],
+     "q": "Do you have someone who could look after your plants while you are away?",
+     "c": "Today, test a simple wick with a glass of water and one plant before you need it."
+    },
+    "de": {
+     "t": "Pflanzen im Urlaub versorgen",
+     "g": "Halte Pflanzen mit einfachen Tricks auch auf Reisen mit Wasser versorgt.",
+     "p": [
+      "Für ein bis zwei Wochen gieße vor der Abreise gut und stelle Pflanzen aus der heißen direkten Sonne.",
+      "Probiere einen Docht: eine Baumwollschnur vom Wasserglas in die Erde oder eine Flasche kopfüber mit winzigem Loch.",
+      "Für längere Reisen bitte eine Freundin oder einen Freund, nachzusehen, und gib eine kurze Anleitung mit."
+     ],
+     "q": "Hast du jemanden, der sich um deine Pflanzen kümmern könnte, wenn du weg bist?",
+     "c": "Teste heute einen einfachen Docht mit einem Wasserglas und einer Pflanze, bevor du ihn brauchst."
+    },
+    "es": {
+     "t": "Cuidar plantas en vacaciones",
+     "g": "Mantén las plantas regadas mientras viajas con trucos sencillos.",
+     "p": [
+      "Para una o dos semanas, riega bien antes de irte y aparta las plantas del sol directo y caliente.",
+      "Prueba una mecha: un cordón de algodón del frasco de agua a la tierra, o una botella boca abajo con un agujero diminuto.",
+      "Para viajes más largos, pide a alguien que las revise y déjale una guía escrita breve."
+     ],
+     "q": "¿Tienes a alguien que podría cuidar tus plantas mientras estás fuera?",
+     "c": "Hoy prueba una mecha sencilla con un vaso de agua y una planta antes de necesitarla."
+    },
+    "fr": {
+     "t": "Soigner ses plantes pendant les vacances",
+     "g": "Garde tes plantes arrosées pendant tes voyages avec des astuces simples.",
+     "p": [
+      "Pour une ou deux semaines, arrose bien avant de partir et écarte les plantes du soleil direct et chaud.",
+      "Essaie une mèche : un cordon de coton du pot d'eau vers la terre, ou une bouteille renversée avec un tout petit trou.",
+      "Pour un voyage plus long, demande à quelqu'un de passer et laisse-lui un petit guide écrit."
+     ],
+     "q": "As-tu quelqu'un qui pourrait s'occuper de tes plantes en ton absence ?",
+     "c": "Aujourd'hui, teste une mèche simple avec un verre d'eau et une plante avant d'en avoir besoin."
+    },
+    "it": {
+     "t": "Cura delle piante in vacanza",
+     "g": "Mantieni le piante annaffiate durante i viaggi con semplici trucchi.",
+     "p": [
+      "Per una o due settimane, annaffia bene prima di partire e sposta le piante dal sole diretto e caldo.",
+      "Prova uno stoppino: una corda di cotone dal barattolo d'acqua al terriccio, o una bottiglia capovolta con un minuscolo foro.",
+      "Per viaggi più lunghi chiedi a qualcuno di controllarle e lascia una breve guida scritta."
+     ],
+     "q": "Hai qualcuno che potrebbe prendersi cura delle tue piante mentre sei via?",
+     "c": "Oggi prova uno stoppino semplice con un bicchiere d'acqua e una pianta prima di averne bisogno."
+    },
+    "pt": {
+     "t": "Cuidar das plantas nas férias",
+     "g": "Mantém as plantas regadas enquanto viajas com truques simples.",
+     "p": [
+      "Para uma ou duas semanas, rega bem antes de partir e afasta as plantas do sol direto e quente.",
+      "Experimenta um pavio: um cordão de algodão do frasco de água até à terra, ou uma garrafa invertida com um furo minúsculo.",
+      "Para viagens mais longas, pede a alguém para ver as plantas e deixa-lhe um pequeno guia escrito."
+     ],
+     "q": "Tens alguém que possa cuidar das tuas plantas enquanto estás fora?",
+     "c": "Hoje testa um pavio simples com um copo de água e uma planta antes de precisares dele."
+    },
+    "pt_BR": {
+     "t": "Cuidando das plantas nas férias",
+     "g": "Mantenha as plantas regadas enquanto viaja com truques simples.",
+     "p": [
+      "Para uma ou duas semanas, regue bem antes de sair e afaste as plantas do sol direto e quente.",
+      "Experimente um pavio: um cordão de algodão do pote de água até a terra, ou uma garrafa de cabeça para baixo com um furo minúsculo.",
+      "Para viagens mais longas, peça a alguém para olhar as plantas e deixe um pequeno guia escrito."
+     ],
+     "q": "Você tem alguém que possa cuidar das suas plantas enquanto está fora?",
+     "c": "Hoje teste um pavio simples com um copo de água e uma planta antes de precisar dele."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Common houseplant pests",
+     "g": "Spot fungus gnats, spider mites, mealybugs and aphids early.",
+     "p": [
+      "Fungus gnats are tiny flies around damp soil, and they often mean the soil is staying too wet.",
+      "Spider mites leave fine webbing and speckled leaves, while mealybugs look like small white cotton tufts.",
+      "Aphids are small green or black bugs on new growth, and checking under leaves weekly catches them early."
+     ],
+     "q": "Have you ever found a bug on a plant, and what did you do?",
+     "c": "Today, check the undersides of leaves and stem joints on three plants for webs, fluff or tiny bugs."
+    },
+    "de": {
+     "t": "Häufige Zimmerpflanzen-Schädlinge",
+     "g": "Erkenne Trauermücken, Spinnmilben, Wollläuse und Blattläuse früh.",
+     "p": [
+      "Trauermücken sind winzige Fliegen an feuchter Erde und deuten oft auf zu nasse Erde hin.",
+      "Spinnmilben hinterlassen feine Gespinste und gesprenkelte Blätter, Wollläuse sehen aus wie kleine weiße Wattebäusche.",
+      "Blattläuse sind kleine grüne oder schwarze Tiere an Neutrieben, wöchentlicher Blick unter die Blätter erkennt sie früh."
+     ],
+     "q": "Hast du schon einmal ein Tier an einer Pflanze entdeckt, und was hast du getan?",
+     "c": "Prüfe heute bei drei Pflanzen Blattunterseiten und Triebansätze auf Gespinste, Flaum oder winzige Tiere."
+    },
+    "es": {
+     "t": "Plagas comunes de plantas de interior",
+     "g": "Detecta a tiempo mosquitas del sustrato, ácaros, cochinillas algodonosas y pulgones.",
+     "p": [
+      "Las mosquitas del sustrato son moscas diminutas junto a tierra húmeda y suelen indicar que la tierra se queda demasiado mojada.",
+      "Los ácaros dejan telarañas finas y hojas moteadas, y las cochinillas parecen pequeños copos de algodón blanco.",
+      "Los pulgones son bichitos verdes o negros en brotes nuevos, y revisar el envés cada semana los detecta pronto."
+     ],
+     "q": "¿Has encontrado alguna vez un bicho en una planta y qué hiciste?",
+     "c": "Hoy revisa el envés de las hojas y las axilas de tres plantas por telarañas, pelusa o bichitos."
+    },
+    "fr": {
+     "t": "Parasites courants des plantes d'intérieur",
+     "g": "Repère tôt moucherons du terreau, araignées rouges, cochenilles farineuses et pucerons.",
+     "p": [
+      "Les moucherons du terreau sont de minuscules mouches près de la terre humide : signe d'une terre souvent trop mouillée.",
+      "Les araignées rouges laissent de fines toiles et des feuilles tachetées, les cochenilles ressemblent à de petits flocons de coton blanc.",
+      "Les pucerons sont de petites bêtes vertes ou noires sur les jeunes pousses : un coup d'œil hebdomadaire sous les feuilles les repère tôt."
+     ],
+     "q": "As-tu déjà trouvé un insecte sur une plante, et qu'as-tu fait ?",
+     "c": "Aujourd'hui, vérifie le dessous des feuilles et les aisselles de trois plantes : toiles, duvet ou minuscules insectes."
+    },
+    "it": {
+     "t": "Parassiti comuni delle piante da appartamento",
+     "g": "Individua presto moscerini del terriccio, ragnetti rossi, cocciniglie cotonose e afidi.",
+     "p": [
+      "I moscerini del terriccio sono minuscole mosche vicino alla terra umida e spesso indicano terriccio troppo bagnato.",
+      "I ragnetti lasciano fini ragnatele e foglie punteggiate, le cocciniglie sembrano piccoli fiocchi di cotone bianco.",
+      "Gli afidi sono piccoli insetti verdi o neri sui germogli nuovi e controllare sotto le foglie ogni settimana li scopre presto."
+     ],
+     "q": "Hai mai trovato un insetto su una pianta e cosa hai fatto?",
+     "c": "Oggi controlla il lato inferiore delle foglie e le ascelle di tre piante per ragnatele, lanugine o minuscoli insetti."
+    },
+    "pt": {
+     "t": "Pragas comuns de plantas de interior",
+     "g": "Deteta cedo mosquitos do substrato, ácaros, cochonilhas algodonosas e afídeos.",
+     "p": [
+      "Os mosquitos do substrato são moscas minúsculas junto a terra húmida e costumam indicar terra demasiado molhada.",
+      "Os ácaros deixam teias finas e folhas pintalgadas, e as cochonilhas parecem pequenos flocos de algodão branco.",
+      "Os afídeos são bichinhos verdes ou pretos nos rebentos novos, e ver por baixo das folhas todas as semanas deteta-os cedo."
+     ],
+     "q": "Já encontraste um bicho numa planta e o que fizeste?",
+     "c": "Hoje verifica a parte de baixo das folhas e as axilas de três plantas à procura de teias, penugem ou bichinhos."
+    },
+    "pt_BR": {
+     "t": "Pragas comuns de plantas de interior",
+     "g": "Detecte cedo mosquinhas do substrato, ácaros, cochonilhas algodonosas e pulgões.",
+     "p": [
+      "As mosquinhas do substrato são moscas minúsculas junto a terra úmida e costumam indicar terra molhada demais.",
+      "Os ácaros deixam teias finas e folhas pintadas, e as cochonilhas parecem pequenos flocos de algodão branco.",
+      "Os pulgões são bichinhos verdes ou pretos nos brotos novos, e olhar embaixo das folhas toda semana detecta cedo."
+     ],
+     "q": "Você já encontrou um bichinho numa planta e o que fez?",
+     "c": "Hoje confira a parte de baixo das folhas e as axilas de três plantas atrás de teias, penugem ou bichinhos."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gentle pest control",
+     "g": "Use wiping, showering, sticky traps and soapy sprays for small infestations.",
+     "p": [
+      "Isolate the plant first, then wipe pests off with a cloth or cotton bud dipped in rubbing alcohol.",
+      "Rinse the plant in a lukewarm shower, and use yellow sticky traps for fungus gnats and let the soil dry more.",
+      "Mild insecticidal soap or a few drops of dish soap in water works, but test on one leaf and keep sprays away from pets."
+     ],
+     "q": "Which gentle method would you try first on a bug problem?",
+     "c": "Today, hang a sticky trap or prepare your cloth and soapy water so you are ready if pests show up."
+    },
+    "de": {
+     "t": "Sanfte Schädlingsbekämpfung",
+     "g": "Nutze Abwischen, Abduschen, Gelbtafeln und Seifenlösung bei leichtem Befall.",
+     "p": [
+      "Isoliere die Pflanze zuerst, dann wische Schädlinge mit Tuch oder Wattestäbchen mit etwas Alkohol ab.",
+      "Dusche die Pflanze lauwarm ab, nutze Gelbtafeln gegen Trauermücken und lass die Erde stärker trocknen.",
+      "Milde Schmierseife oder ein paar Tropfen Spülmittel im Wasser helfen, teste an einem Blatt und halte Sprays von Haustieren fern."
+     ],
+     "q": "Welche sanfte Methode würdest du bei Ungeziefer zuerst probieren?",
+     "c": "Hänge heute eine Gelbtafel auf oder bereite Tuch und Seifenwasser vor, damit du bei Befall bereit bist."
+    },
+    "es": {
+     "t": "Control suave de plagas",
+     "g": "Usa limpieza, ducha, trampas pegajosas y jabón en infestaciones pequeñas.",
+     "p": [
+      "Aísla primero la planta y quita las plagas con un paño o bastoncillo con un poco de alcohol.",
+      "Enjuaga la planta con una ducha tibia, usa trampas amarillas pegajosas para las mosquitas y deja secar más la tierra.",
+      "Sirve un jabón insecticida suave o unas gotas de lavavajillas en agua: prueba en una hoja y mantén los sprays lejos de mascotas."
+     ],
+     "q": "¿Qué método suave probarías primero ante una plaga?",
+     "c": "Hoy cuelga una trampa pegajosa o prepara tu paño y agua con jabón para estar listo si aparecen plagas."
+    },
+    "fr": {
+     "t": "Lutte douce contre les parasites",
+     "g": "Utilise essuyage, douche, pièges collants et savon pour de petites infestations.",
+     "p": [
+      "Isole d'abord la plante, puis retire les parasites avec un chiffon ou un coton-tige imbibé d'un peu d'alcool.",
+      "Rince la plante sous une douche tiède, utilise des pièges jaunes collants contre les moucherons et laisse la terre sécher davantage.",
+      "Un savon insecticide doux ou un peu de liquide vaisselle dans l'eau aide : teste sur une feuille, sprays loin des animaux."
+     ],
+     "q": "Quelle méthode douce essaierais-tu en premier contre des insectes ?",
+     "c": "Aujourd'hui, accroche un piège collant ou prépare chiffon et eau savonneuse pour être prêt en cas d'invasion."
+    },
+    "it": {
+     "t": "Controllo gentile dei parassiti",
+     "g": "Usa pulizia, doccia, trappole adesive e sapone per piccole infestazioni.",
+     "p": [
+      "Isola prima la pianta, poi togli i parassiti con un panno o un bastoncino con un po' di alcol.",
+      "Sciacqua la pianta sotto una doccia tiepida, usa trappole gialle adesive per i moscerini e lascia asciugare di più il terriccio.",
+      "Va bene un sapone insetticida delicato o detersivo per piatti diluito: prova su una foglia e tieni gli spray lontani dagli animali."
+     ],
+     "q": "Quale metodo delicato proveresti per primo contro gli insetti?",
+     "c": "Oggi appendi una trappola adesiva o prepara panno e acqua saponata per essere pronto se arrivano parassiti."
+    },
+    "pt": {
+     "t": "Controlo suave de pragas",
+     "g": "Usa limpeza, duche, armadilhas pegajosas e sabão em pequenas infestações.",
+     "p": [
+      "Isola primeiro a planta e tira as pragas com um pano ou cotonete com um pouco de álcool.",
+      "Enxagua a planta num duche morno, usa armadilhas amarelas pegajosas para os mosquitos e deixa a terra secar mais.",
+      "Funciona um sabão inseticida suave ou umas gotas de detergente da loiça em água: testa numa folha e mantém sprays longe de animais."
+     ],
+     "q": "Que método suave experimentarias primeiro contra bichos?",
+     "c": "Hoje pendura uma armadilha pegajosa ou prepara pano e água com sabão para estares pronto se surgirem pragas."
+    },
+    "pt_BR": {
+     "t": "Controle suave de pragas",
+     "g": "Use limpeza, ducha, armadilhas adesivas e sabão em pequenas infestações.",
+     "p": [
+      "Isole primeiro a planta e tire as pragas com um pano ou cotonete com um pouco de álcool.",
+      "Enxágue a planta num banho morno, use armadilhas amarelas adesivas para as mosquinhas e deixe a terra secar mais.",
+      "Funciona um sabão inseticida suave ou algumas gotas de detergente em água: teste numa folha e mantenha sprays longe de animais."
+     ],
+     "q": "Que método suave você tentaria primeiro contra bichinhos?",
+     "c": "Hoje pendure uma armadilha adesiva ou prepare pano e água com sabão para estar pronto se surgirem pragas."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: indoor plants",
+     "g": "Revisit houseplant routines and choose the next plants to try.",
+     "p": [
+      "You now know a weekly routine, humidity, feeding, resting in winter and repotting.",
+      "You met pothos, snake plant, spider plant, monstera, ferns, succulents, orchids and herbs.",
+      "You can place plants by light, check pet safety and handle pests gently."
+     ],
+     "q": "Which plant do you want to try next, and where will it live?",
+     "c": "Today, review your journal and pick one plant to add, matching your light and your pets."
+    },
+    "de": {
+     "t": "Rückblick: Zimmerpflanzen",
+     "g": "Wiederhole deine Pflanzenroutinen und wähle die nächsten Pflanzen.",
+     "p": [
+      "Du kennst jetzt Wochenroutine, Luftfeuchte, Düngen, Winterruhe und Umtopfen.",
+      "Du hast Efeutute, Bogenhanf, Grünlilie, Monstera, Farne, Sukkulenten, Orchideen und Kräuter kennengelernt.",
+      "Du kannst Pflanzen nach Licht platzieren, Haustiersicherheit prüfen und Schädlinge sanft behandeln."
+     ],
+     "q": "Welche Pflanze möchtest du als nächste probieren, und wo soll sie leben?",
+     "c": "Sieh heute dein Tagebuch durch und wähle eine neue Pflanze passend zu Licht und Haustieren."
+    },
+    "es": {
+     "t": "Repaso: plantas de interior",
+     "g": "Repasa tus rutinas y elige las siguientes plantas que probar.",
+     "p": [
+      "Ya conoces una rutina semanal, la humedad, el abono, el descanso invernal y el trasplante.",
+      "Has conocido pothos, sansevieria, cinta, monstera, helechos, suculentas, orquídeas y hierbas.",
+      "Sabes colocar plantas según la luz, revisar la seguridad para mascotas y tratar plagas con suavidad."
+     ],
+     "q": "¿Qué planta quieres probar a continuación y dónde vivirá?",
+     "c": "Hoy repasa tu diario y elige una planta nueva que encaje con tu luz y tus mascotas."
+    },
+    "fr": {
+     "t": "Bilan : plantes d'intérieur",
+     "g": "Reviens sur tes routines et choisis les prochaines plantes à essayer.",
+     "p": [
+      "Tu connais maintenant une routine hebdomadaire, l'humidité, l'engrais, la pause hivernale et le rempotage.",
+      "Tu as rencontré pothos, sansevieria, chlorophytum, monstera, fougères, succulentes, orchidées et aromatiques.",
+      "Tu sais placer les plantes selon la lumière, vérifier la sécurité pour les animaux et traiter doucement les parasites."
+     ],
+     "q": "Quelle plante veux-tu essayer ensuite, et où vivra-t-elle ?",
+     "c": "Aujourd'hui, relis ton journal et choisis une nouvelle plante adaptée à ta lumière et à tes animaux."
+    },
+    "it": {
+     "t": "Ripasso: piante da appartamento",
+     "g": "Ripassa le tue routine e scegli le prossime piante da provare.",
+     "p": [
+      "Ora conosci una routine settimanale, umidità, concimazione, pausa invernale e rinvaso.",
+      "Hai conosciuto pothos, sansevieria, clorofito, monstera, felci, succulente, orchidee ed erbe aromatiche.",
+      "Sai collocare le piante in base alla luce, controllare la sicurezza per gli animali e trattare i parassiti con delicatezza."
+     ],
+     "q": "Quale pianta vuoi provare ora e dove vivrà?",
+     "c": "Oggi rileggi il diario e scegli una nuova pianta adatta alla tua luce e ai tuoi animali."
+    },
+    "pt": {
+     "t": "Revisão: plantas de interior",
+     "g": "Revê as tuas rotinas e escolhe as próximas plantas a experimentar.",
+     "p": [
+      "Já conheces uma rotina semanal, a humidade, o adubo, o descanso de inverno e a mudança de vaso.",
+      "Conheceste jiboia, espada-de-são-jorge, fita, monstera, fetos, suculentas, orquídeas e ervas.",
+      "Sabes pôr plantas conforme a luz, verificar a segurança para animais e tratar pragas com suavidade."
+     ],
+     "q": "Que planta queres experimentar a seguir e onde vai viver?",
+     "c": "Hoje revê o teu diário e escolhe uma planta nova que combine com a tua luz e os teus animais."
+    },
+    "pt_BR": {
+     "t": "Revisão: plantas de interior",
+     "g": "Revise suas rotinas e escolha as próximas plantas para experimentar.",
+     "p": [
+      "Agora você conhece uma rotina semanal, a umidade, o adubo, o descanso de inverno e a troca de vaso.",
+      "Você conheceu jiboia, espada-de-são-jorge, clorofito, monstera, samambaias, suculentas, orquídeas e ervas.",
+      "Você sabe pôr plantas conforme a luz, conferir a segurança para animais e tratar pragas com suavidade."
+     ],
+     "q": "Qual planta você quer experimentar a seguir e onde ela vai morar?",
+     "c": "Hoje revise seu diário e escolha uma planta nova que combine com sua luz e seus animais."
+    }
+   }
+  }
+ ]
+}

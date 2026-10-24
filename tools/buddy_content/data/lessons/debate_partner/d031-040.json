@@ -1,0 +1,835 @@
+{
+ "topic": "debate_partner",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What makes a good reason",
+     "g": "Check whether your reason is relevant, clear and true.",
+     "p": [
+      "A good reason is relevant: it really supports the claim.",
+      "It is clear: others understand it at first hearing.",
+      "It is true, or at least believable and checkable."
+     ],
+     "q": "Give a claim and a reason, then say how strong the link is.",
+     "c": "Find the weak reason: I like cats because Tuesday is a day."
+    },
+    "de": {
+     "t": "Was einen guten Grund ausmacht",
+     "g": "Prüfe, ob dein Grund passend, klar und wahr ist.",
+     "p": [
+      "Ein guter Grund ist relevant: Er stützt die Behauptung wirklich.",
+      "Er ist klar: Andere verstehen ihn beim ersten Hören.",
+      "Er ist wahr oder zumindest glaubhaft und überprüfbar."
+     ],
+     "q": "Nenne eine Behauptung mit Grund und sage, wie stark die Verbindung ist.",
+     "c": "Finde den schwachen Grund: Ich mag Katzen, weil Dienstag ein Tag ist."
+    },
+    "es": {
+     "t": "Qué hace buena una razón",
+     "g": "Comprueba si tu razón es relevante, clara y verdadera.",
+     "p": [
+      "Una buena razón es relevante: de verdad apoya la afirmación.",
+      "Es clara: otros la entienden a la primera.",
+      "Es verdadera, o al menos creíble y comprobable."
+     ],
+     "q": "Da una afirmación con su razón y di qué tan fuerte es el vínculo.",
+     "c": "Encuentra la razón débil: Me gustan los gatos porque el martes es un día."
+    },
+    "fr": {
+     "t": "Ce qui fait une bonne raison",
+     "g": "Vérifie que ta raison est pertinente, claire et vraie.",
+     "p": [
+      "Une bonne raison est pertinente : elle soutient vraiment l'affirmation.",
+      "Elle est claire : les autres la comprennent dès la première écoute.",
+      "Elle est vraie, ou au moins crédible et vérifiable."
+     ],
+     "q": "Donne une affirmation et sa raison, puis dis la force du lien.",
+     "c": "Trouve la raison faible : J'aime les chats parce que mardi est un jour."
+    },
+    "it": {
+     "t": "Cosa rende buona una ragione",
+     "g": "Verifica che la tua ragione sia pertinente, chiara e vera.",
+     "p": [
+      "Una buona ragione è pertinente: sostiene davvero la tesi.",
+      "È chiara: gli altri la capiscono al primo ascolto.",
+      "È vera, o almeno credibile e verificabile."
+     ],
+     "q": "Dai una tesi con la sua ragione e dì quanto è forte il legame.",
+     "c": "Trova la ragione debole: Amo i gatti perché martedì è un giorno."
+    },
+    "pt": {
+     "t": "O que torna boa uma razão",
+     "g": "Verifica se a tua razão é relevante, clara e verdadeira.",
+     "p": [
+      "Uma boa razão é relevante: apoia mesmo a afirmação.",
+      "É clara: os outros percebem-na à primeira.",
+      "É verdadeira, ou pelo menos credível e verificável."
+     ],
+     "q": "Dá uma afirmação com a sua razão e diz quão forte é a ligação.",
+     "c": "Encontra a razão fraca: Gosto de gatos porque terça é um dia."
+    },
+    "pt_BR": {
+     "t": "O que torna boa uma razão",
+     "g": "Verifique se a sua razão é relevante, clara e verdadeira.",
+     "p": [
+      "Uma boa razão é relevante: apoia mesmo a afirmação.",
+      "É clara: os outros entendem de primeira.",
+      "É verdadeira, ou pelo menos crível e verificável."
+     ],
+     "q": "Dê uma afirmação com a sua razão e diga quão forte é a ligação.",
+     "c": "Ache a razão fraca: Eu gosto de gatos porque terça é um dia."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Paper books vs e-readers",
+     "g": "The smell of paper or a library in your pocket? Weigh both sides.",
+     "p": [
+      "List the strengths of each: feel and focus versus space and light.",
+      "Support each point with a real reading situation.",
+      "Say which setting each format suits best: travel, bed, study."
+     ],
+     "q": "Paper or screen for reading, and what is your best reason?",
+     "c": "Describe a moment when the other format was clearly better."
+    },
+    "de": {
+     "t": "Papierbücher gegen E-Reader",
+     "g": "Der Duft von Papier oder eine Bibliothek in der Tasche? Wäge beide Seiten ab.",
+     "p": [
+      "Liste die Stärken beider auf: Gefühl und Fokus gegen Platz und Licht.",
+      "Stütze jeden Punkt mit einer echten Lesesituation.",
+      "Sage, wo jedes Format am besten passt: Reise, Bett, Lernen."
+     ],
+     "q": "Papier oder Bildschirm zum Lesen, und was ist dein bester Grund?",
+     "c": "Beschreibe einen Moment, in dem das andere Format klar besser war."
+    },
+    "es": {
+     "t": "Libros en papel contra lectores electrónicos",
+     "g": "¿El olor del papel o una biblioteca en el bolsillo? Sopesa ambos lados.",
+     "p": [
+      "Enumera las fortalezas de cada uno: tacto y concentración frente a espacio y luz.",
+      "Apoya cada punto con una situación real de lectura.",
+      "Di dónde encaja mejor cada formato: viaje, cama, estudio."
+     ],
+     "q": "¿Papel o pantalla para leer, y cuál es tu mejor razón?",
+     "c": "Describe un momento en que el otro formato fue claramente mejor."
+    },
+    "fr": {
+     "t": "Livres papier contre liseuses",
+     "g": "L'odeur du papier ou une bibliothèque dans la poche ? Pèse les deux côtés.",
+     "p": [
+      "Liste les forces de chacun : toucher et concentration contre place et lumière.",
+      "Appuie chaque point sur une vraie situation de lecture.",
+      "Dis où chaque format convient le mieux : voyage, lit, études."
+     ],
+     "q": "Papier ou écran pour lire, et quelle est ta meilleure raison ?",
+     "c": "Décris un moment où l'autre format était clairement meilleur."
+    },
+    "it": {
+     "t": "Libri di carta contro e-reader",
+     "g": "L'odore della carta o una biblioteca in tasca? Pesa entrambi i lati.",
+     "p": [
+      "Elenca i punti di forza di ciascuno: tatto e concentrazione contro spazio e luce.",
+      "Sostieni ogni punto con una situazione reale di lettura.",
+      "Dì dove si adatta meglio ogni formato: viaggio, letto, studio."
+     ],
+     "q": "Carta o schermo per leggere, e qual è la tua ragione migliore?",
+     "c": "Descrivi un momento in cui l'altro formato era chiaramente migliore."
+    },
+    "pt": {
+     "t": "Livros em papel contra leitores eletrónicos",
+     "g": "O cheiro do papel ou uma biblioteca no bolso? Pondera os dois lados.",
+     "p": [
+      "Lista as forças de cada um: toque e foco contra espaço e luz.",
+      "Apoia cada ponto com uma situação real de leitura.",
+      "Diz onde cada formato serve melhor: viagem, cama, estudo."
+     ],
+     "q": "Papel ou ecrã para ler, e qual é a tua melhor razão?",
+     "c": "Descreve um momento em que o outro formato foi claramente melhor."
+    },
+    "pt_BR": {
+     "t": "Livros de papel contra e-readers",
+     "g": "O cheiro do papel ou uma biblioteca no bolso? Pondere os dois lados.",
+     "p": [
+      "Liste as forças de cada um: toque e foco contra espaço e luz.",
+      "Apoie cada ponto com uma situação real de leitura.",
+      "Diga onde cada formato serve melhor: viagem, cama, estudo."
+     ],
+     "q": "Papel ou tela para ler, e qual é a sua melhor razão?",
+     "c": "Descreva um momento em que o outro formato foi claramente melhor."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Personal experience as support",
+     "g": "Use your own stories well, and know when they are not enough.",
+     "p": [
+      "A personal story makes a point real and memorable.",
+      "But one story is a sample of one; it may not hold for everyone.",
+      "Pair it with a second kind of support, like common knowledge."
+     ],
+     "q": "Tell me a short story that taught you something useful.",
+     "c": "Say what your story proves and what it cannot prove."
+    },
+    "de": {
+     "t": "Persönliche Erfahrung als Stütze",
+     "g": "Nutze eigene Geschichten gut und erkenne, wann sie nicht reichen.",
+     "p": [
+      "Eine persönliche Geschichte macht einen Punkt greifbar und einprägsam.",
+      "Doch eine Geschichte ist eine Stichprobe von eins; sie gilt nicht für alle.",
+      "Kombiniere sie mit einer zweiten Art von Stütze, etwa Allgemeinwissen."
+     ],
+     "q": "Erzähl mir eine kurze Geschichte, die dir etwas Nützliches beibrachte.",
+     "c": "Sage, was deine Geschichte beweist und was sie nicht beweisen kann."
+    },
+    "es": {
+     "t": "La experiencia personal como apoyo",
+     "g": "Usa bien tus historias y sabe cuándo no bastan.",
+     "p": [
+      "Una historia personal hace real y memorable un punto.",
+      "Pero una historia es una muestra de uno; quizá no valga para todos.",
+      "Combínala con otro tipo de apoyo, como el conocimiento común."
+     ],
+     "q": "Cuéntame una historia corta que te enseñó algo útil.",
+     "c": "Di qué demuestra tu historia y qué no puede demostrar."
+    },
+    "fr": {
+     "t": "L'expérience personnelle comme appui",
+     "g": "Utilise bien tes histoires et sache quand elles ne suffisent pas.",
+     "p": [
+      "Une histoire personnelle rend un point réel et mémorable.",
+      "Mais une histoire est un échantillon de un ; elle ne vaut pas pour tous.",
+      "Associe-la à un autre type d'appui, comme le savoir commun."
+     ],
+     "q": "Raconte-moi une courte histoire qui t'a appris quelque chose d'utile.",
+     "c": "Dis ce que ton histoire prouve et ce qu'elle ne peut pas prouver."
+    },
+    "it": {
+     "t": "L'esperienza personale come sostegno",
+     "g": "Usa bene le tue storie e sappi quando non bastano.",
+     "p": [
+      "Una storia personale rende reale e memorabile un punto.",
+      "Ma una storia è un campione di uno; può non valere per tutti.",
+      "Abbinala a un altro tipo di sostegno, come la conoscenza comune."
+     ],
+     "q": "Raccontami una breve storia che ti ha insegnato qualcosa di utile.",
+     "c": "Dì cosa dimostra la tua storia e cosa non può dimostrare."
+    },
+    "pt": {
+     "t": "A experiência pessoal como apoio",
+     "g": "Usa bem as tuas histórias e sabe quando não chegam.",
+     "p": [
+      "Uma história pessoal torna um ponto real e memorável.",
+      "Mas uma história é uma amostra de um; pode não valer para todos.",
+      "Junta-lhe outro tipo de apoio, como o conhecimento comum."
+     ],
+     "q": "Conta-me uma história curta que te ensinou algo útil.",
+     "c": "Diz o que a tua história prova e o que não consegue provar."
+    },
+    "pt_BR": {
+     "t": "A experiência pessoal como apoio",
+     "g": "Use bem as suas histórias e saiba quando elas não bastam.",
+     "p": [
+      "Uma história pessoal torna um ponto real e memorável.",
+      "Mas uma história é uma amostra de um; pode não valer para todos.",
+      "Junte a ela outro tipo de apoio, como o conhecimento comum."
+     ],
+     "q": "Me conte uma história curta que te ensinou algo útil.",
+     "c": "Diga o que a sua história prova e o que ela não consegue provar."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Should breakfast be the biggest meal?",
+     "g": "Debate meal habits using experience and general knowledge.",
+     "p": [
+      "Claim: breakfast should be the biggest meal, or the smallest.",
+      "Support it with your own routine and with something widely known.",
+      "Habits differ by person and culture, so say that openly."
+     ],
+     "q": "What does your usual breakfast look like, and does it work for you?",
+     "c": "Give one reason in favour and one against the big-breakfast idea."
+    },
+    "de": {
+     "t": "Sollte das Frühstück die größte Mahlzeit sein?",
+     "g": "Debattiere Essgewohnheiten mit Erfahrung und Allgemeinwissen.",
+     "p": [
+      "Behauptung: Das Frühstück sollte die größte Mahlzeit sein, oder die kleinste.",
+      "Stütze sie mit deinem Alltag und mit etwas allgemein Bekanntem.",
+      "Gewohnheiten unterscheiden sich nach Person und Kultur; sage das offen."
+     ],
+     "q": "Wie sieht dein übliches Frühstück aus, und passt es zu dir?",
+     "c": "Nenne einen Grund dafür und einen dagegen für die Idee vom großen Frühstück."
+    },
+    "es": {
+     "t": "¿Debería el desayuno ser la comida más grande?",
+     "g": "Debate hábitos de comida con experiencia y conocimiento general.",
+     "p": [
+      "Afirmación: el desayuno debería ser la comida más grande, o la más pequeña.",
+      "Apóyala con tu rutina y con algo ampliamente conocido.",
+      "Los hábitos cambian según persona y cultura; dilo abiertamente."
+     ],
+     "q": "¿Cómo es tu desayuno habitual y te funciona?",
+     "c": "Da una razón a favor y otra en contra de la idea del gran desayuno."
+    },
+    "fr": {
+     "t": "Le petit-déjeuner devrait-il être le plus gros repas ?",
+     "g": "Débats des habitudes alimentaires avec expérience et savoir général.",
+     "p": [
+      "Affirmation : le petit-déjeuner devrait être le plus gros repas, ou le plus petit.",
+      "Appuie-la sur ta routine et sur quelque chose de largement connu.",
+      "Les habitudes varient selon la personne et la culture ; dis-le ouvertement."
+     ],
+     "q": "À quoi ressemble ton petit-déjeuner habituel, et te convient-il ?",
+     "c": "Donne une raison pour et une contre l'idée du gros petit-déjeuner."
+    },
+    "it": {
+     "t": "La colazione dovrebbe essere il pasto più grande?",
+     "g": "Discuti le abitudini alimentari con esperienza e conoscenze generali.",
+     "p": [
+      "Tesi: la colazione dovrebbe essere il pasto più grande, o il più piccolo.",
+      "Sostienila con la tua routine e con qualcosa di ampiamente noto.",
+      "Le abitudini cambiano per persona e cultura; dillo apertamente."
+     ],
+     "q": "Com'è la tua colazione abituale, e funziona per te?",
+     "c": "Dai una ragione a favore e una contro l'idea della grande colazione."
+    },
+    "pt": {
+     "t": "Deve o pequeno-almoço ser a refeição maior?",
+     "g": "Debate hábitos alimentares com experiência e conhecimento geral.",
+     "p": [
+      "Afirmação: o pequeno-almoço deve ser a refeição maior, ou a mais pequena.",
+      "Apoia-a com a tua rotina e com algo amplamente conhecido.",
+      "Os hábitos mudam consoante a pessoa e a cultura; di-lo abertamente."
+     ],
+     "q": "Como é o teu pequeno-almoço habitual, e resulta contigo?",
+     "c": "Dá uma razão a favor e outra contra a ideia do grande pequeno-almoço."
+    },
+    "pt_BR": {
+     "t": "O café da manhã deve ser a maior refeição?",
+     "g": "Debata hábitos alimentares com experiência e conhecimento geral.",
+     "p": [
+      "Afirmação: o café da manhã deve ser a maior refeição, ou a menor.",
+      "Apoie com a sua rotina e com algo amplamente conhecido.",
+      "Os hábitos mudam conforme a pessoa e a cultura; diga isso abertamente."
+     ],
+     "q": "Como é o seu café da manhã habitual, e funciona para você?",
+     "c": "Dê uma razão a favor e outra contra a ideia do grande café da manhã."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Restating the other view fairly",
+     "g": "Repeat someone's argument so well that they say Yes, exactly.",
+     "p": [
+      "Restate their view in your words, without twisting it.",
+      "Check it: Did I get that right? Let them correct you.",
+      "A fair restatement earns trust before you reply."
+     ],
+     "q": "Choose a view you disagree with lightly. Restate it kindly.",
+     "c": "Restate my last point so well that I would say Yes, exactly."
+    },
+    "de": {
+     "t": "Die andere Sicht fair wiedergeben",
+     "g": "Gib ein Argument so gut wieder, dass die Person sagt: Ja, genau.",
+     "p": [
+      "Gib ihre Sicht mit eigenen Worten wieder, ohne sie zu verdrehen.",
+      "Prüfe nach: Habe ich das richtig verstanden? Lass dich korrigieren.",
+      "Eine faire Wiedergabe schafft Vertrauen, bevor du antwortest."
+     ],
+     "q": "Wähle eine Sicht, die du leicht ablehnst. Gib sie freundlich wieder.",
+     "c": "Gib meinen letzten Punkt so gut wieder, dass ich sage: Ja, genau."
+    },
+    "es": {
+     "t": "Reformular la otra postura con justicia",
+     "g": "Repite el argumento de alguien tan bien que diga: Sí, exacto.",
+     "p": [
+      "Reformula su postura con tus palabras, sin retorcerla.",
+      "Compruébalo: ¿Lo entendí bien? Deja que te corrijan.",
+      "Una reformulación justa gana confianza antes de responder."
+     ],
+     "q": "Elige una postura con la que discrepes levemente. Reformúlala con amabilidad.",
+     "c": "Reformula mi último punto tan bien que yo diga: Sí, exacto."
+    },
+    "fr": {
+     "t": "Reformuler équitablement l'autre point de vue",
+     "g": "Répète l'argument de quelqu'un si bien qu'il dise : Oui, exactement.",
+     "p": [
+      "Reformule son avis avec tes mots, sans le déformer.",
+      "Vérifie : Ai-je bien compris ? Laisse-le te corriger.",
+      "Une reformulation juste gagne la confiance avant que tu répondes."
+     ],
+     "q": "Choisis un avis que tu partages à peine. Reformule-le gentiment.",
+     "c": "Reformule mon dernier point si bien que je dise : Oui, exactement."
+    },
+    "it": {
+     "t": "Riformulare l'altra idea con equità",
+     "g": "Ripeti l'argomento di qualcuno così bene che dica: Sì, esatto.",
+     "p": [
+      "Riformula la sua idea con parole tue, senza distorcerla.",
+      "Verifica: Ho capito bene? Lascia che ti correggano.",
+      "Una riformulazione equa conquista fiducia prima della risposta."
+     ],
+     "q": "Scegli un'idea che condividi poco. Riformulala con gentilezza.",
+     "c": "Riformula il mio ultimo punto così bene che io dica: Sì, esatto."
+    },
+    "pt": {
+     "t": "Reformular o outro ponto de vista com justiça",
+     "g": "Repete o argumento de alguém tão bem que diga: Sim, exatamente.",
+     "p": [
+      "Reformula a visão dele por palavras tuas, sem a distorcer.",
+      "Confirma: Percebi bem? Deixa que te corrijam.",
+      "Uma reformulação justa ganha confiança antes de responderes."
+     ],
+     "q": "Escolhe uma opinião de que discordes levemente. Reformula-a com simpatia.",
+     "c": "Reformula o meu último ponto tão bem que eu diga: Sim, exatamente."
+    },
+    "pt_BR": {
+     "t": "Reformular o outro ponto de vista com justiça",
+     "g": "Repita o argumento de alguém tão bem que a pessoa diga: Sim, exatamente.",
+     "p": [
+      "Reformule a visão dela com suas palavras, sem distorcer.",
+      "Confirme: Entendi direito? Deixe que te corrijam.",
+      "Uma reformulação justa ganha confiança antes de você responder."
+     ],
+     "q": "Escolha uma opinião da qual você discorde levemente. Reformule com gentileza.",
+     "c": "Reformule o meu último ponto tão bem que eu diga: Sim, exatamente."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Board games vs video games",
+     "g": "Compare fun, social time and skill in two kinds of play.",
+     "p": [
+      "Compare on shared points: social time, skill, cost, mood.",
+      "Use examples, like a family game night or a solo adventure.",
+      "Notice that many people enjoy both; say when each shines."
+     ],
+     "q": "Board games or video games for a good evening, and why?",
+     "c": "Suggest one way to mix both kinds of play."
+    },
+    "de": {
+     "t": "Brettspiele gegen Videospiele",
+     "g": "Vergleiche Spaß, gemeinsame Zeit und Geschick bei zwei Spielarten.",
+     "p": [
+      "Vergleiche anhand gemeinsamer Punkte: Zusammensein, Geschick, Kosten, Stimmung.",
+      "Nutze Beispiele, etwa einen Familienspieleabend oder ein Solo-Abenteuer.",
+      "Beachte, dass viele beides mögen; sage, wann was glänzt."
+     ],
+     "q": "Brettspiele oder Videospiele für einen schönen Abend, und warum?",
+     "c": "Schlage einen Weg vor, beide Spielarten zu verbinden."
+    },
+    "es": {
+     "t": "Juegos de mesa contra videojuegos",
+     "g": "Compara diversión, tiempo social y habilidad en dos formas de jugar.",
+     "p": [
+      "Compara con puntos comunes: tiempo social, habilidad, coste, ánimo.",
+      "Usa ejemplos, como una noche de juegos en familia o una aventura en solitario.",
+      "Fíjate en que muchos disfrutan de ambos; di cuándo brilla cada uno."
+     ],
+     "q": "¿Juegos de mesa o videojuegos para una buena tarde, y por qué?",
+     "c": "Propón una forma de mezclar ambos tipos de juego."
+    },
+    "fr": {
+     "t": "Jeux de société contre jeux vidéo",
+     "g": "Compare plaisir, temps partagé et habileté dans deux façons de jouer.",
+     "p": [
+      "Compare sur des points communs : temps social, habileté, coût, ambiance.",
+      "Utilise des exemples, comme une soirée jeux en famille ou une aventure en solo.",
+      "Remarque que beaucoup aiment les deux ; dis quand chacun brille."
+     ],
+     "q": "Jeux de société ou jeux vidéo pour une bonne soirée, et pourquoi ?",
+     "c": "Propose une façon de mélanger les deux types de jeu."
+    },
+    "it": {
+     "t": "Giochi da tavolo contro videogiochi",
+     "g": "Confronta divertimento, tempo sociale e abilità in due modi di giocare.",
+     "p": [
+      "Confronta su punti comuni: tempo sociale, abilità, costo, umore.",
+      "Usa esempi, come una serata giochi in famiglia o un'avventura in solitaria.",
+      "Nota che molti amano entrambi; dì quando ciascuno brilla."
+     ],
+     "q": "Giochi da tavolo o videogiochi per una bella serata, e perché?",
+     "c": "Proponi un modo per unire i due tipi di gioco."
+    },
+    "pt": {
+     "t": "Jogos de tabuleiro contra videojogos",
+     "g": "Compara diversão, tempo social e habilidade em duas formas de jogar.",
+     "p": [
+      "Compara em pontos comuns: tempo social, habilidade, custo, ambiente.",
+      "Usa exemplos, como uma noite de jogos em família ou uma aventura a solo.",
+      "Repara que muitos gostam de ambos; diz quando cada um brilha."
+     ],
+     "q": "Jogos de tabuleiro ou videojogos para uma boa noite, e porquê?",
+     "c": "Sugere uma forma de misturar os dois tipos de jogo."
+    },
+    "pt_BR": {
+     "t": "Jogos de tabuleiro contra videogames",
+     "g": "Compare diversão, tempo social e habilidade em duas formas de jogar.",
+     "p": [
+      "Compare em pontos comuns: tempo social, habilidade, custo, clima.",
+      "Use exemplos, como uma noite de jogos em família ou uma aventura solo.",
+      "Note que muita gente gosta dos dois; diga quando cada um brilha."
+     ],
+     "q": "Jogos de tabuleiro ou videogames para uma boa noite, e por quê?",
+     "c": "Sugira um jeito de misturar os dois tipos de jogo."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Questions instead of attacks",
+     "g": "Turn That is wrong into How would that work when...?",
+     "p": [
+      "A challenge can be a question: How would that work if...?",
+      "Questions invite thinking; attacks invite defending.",
+      "A good question points to a gap without calling anyone silly."
+     ],
+     "q": "When did a good question change your mind about something?",
+     "c": "Turn this attack into a question: That idea is silly."
+    },
+    "de": {
+     "t": "Fragen statt Angriffe",
+     "g": "Mache aus Das ist falsch ein Wie würde das funktionieren, wenn...?",
+     "p": [
+      "Eine Herausforderung kann eine Frage sein: Wie würde das gehen, wenn...?",
+      "Fragen laden zum Denken ein; Angriffe zum Verteidigen.",
+      "Eine gute Frage zeigt eine Lücke, ohne jemanden albern zu nennen."
+     ],
+     "q": "Wann hat eine gute Frage deine Meinung zu etwas geändert?",
+     "c": "Mache aus diesem Angriff eine Frage: Diese Idee ist albern."
+    },
+    "es": {
+     "t": "Preguntas en vez de ataques",
+     "g": "Convierte Eso está mal en ¿Cómo funcionaría eso cuando...?",
+     "p": [
+      "Un reto puede ser una pregunta: ¿Cómo funcionaría si...?",
+      "Las preguntas invitan a pensar; los ataques, a defenderse.",
+      "Una buena pregunta señala un hueco sin llamar tonto a nadie."
+     ],
+     "q": "¿Cuándo una buena pregunta te hizo cambiar de opinión?",
+     "c": "Convierte este ataque en pregunta: Esa idea es tonta."
+    },
+    "fr": {
+     "t": "Des questions plutôt que des attaques",
+     "g": "Transforme C'est faux en Comment cela marcherait-il quand...?",
+     "p": [
+      "Un défi peut être une question : Comment cela marcherait-il si...?",
+      "Les questions invitent à penser ; les attaques, à se défendre.",
+      "Une bonne question montre une faille sans traiter personne de stupide."
+     ],
+     "q": "Quand une bonne question t'a-t-elle fait changer d'avis ?",
+     "c": "Transforme cette attaque en question : Cette idée est idiote."
+    },
+    "it": {
+     "t": "Domande invece di attacchi",
+     "g": "Trasforma È sbagliato in Come funzionerebbe quando...?",
+     "p": [
+      "Una sfida può essere una domanda: Come funzionerebbe se...?",
+      "Le domande invitano a pensare; gli attacchi a difendersi.",
+      "Una buona domanda indica una lacuna senza dare dello sciocco a nessuno."
+     ],
+     "q": "Quando una buona domanda ti ha fatto cambiare idea?",
+     "c": "Trasforma questo attacco in domanda: Quell'idea è sciocca."
+    },
+    "pt": {
+     "t": "Perguntas em vez de ataques",
+     "g": "Transforma Isso está errado em Como funcionaria isso quando...?",
+     "p": [
+      "Um desafio pode ser uma pergunta: Como funcionaria se...?",
+      "As perguntas convidam a pensar; os ataques a defender.",
+      "Uma boa pergunta mostra uma falha sem chamar tolo a ninguém."
+     ],
+     "q": "Quando é que uma boa pergunta te fez mudar de opinião?",
+     "c": "Transforma este ataque em pergunta: Essa ideia é tola."
+    },
+    "pt_BR": {
+     "t": "Perguntas em vez de ataques",
+     "g": "Transforme Isso está errado em Como isso funcionaria quando...?",
+     "p": [
+      "Um desafio pode ser uma pergunta: Como funcionaria se...?",
+      "Perguntas convidam a pensar; ataques convidam a se defender.",
+      "Uma boa pergunta mostra uma falha sem chamar ninguém de bobo."
+     ],
+     "q": "Quando uma boa pergunta fez você mudar de ideia?",
+     "c": "Transforme este ataque em pergunta: Essa ideia é boba."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Early or exactly on time?",
+     "g": "A light debate on punctuality and different cultural habits.",
+     "p": [
+      "Claim: it is better to arrive early, or exactly on time.",
+      "Habits differ across places and families; a fair debater says so.",
+      "Give an example, like a train, a party or a meeting."
+     ],
+     "q": "What does being on time mean to you, in minutes?",
+     "c": "Explain a situation where being slightly late is understandable."
+    },
+    "de": {
+     "t": "Früh oder genau pünktlich?",
+     "g": "Eine leichte Debatte über Pünktlichkeit und verschiedene kulturelle Gewohnheiten.",
+     "p": [
+      "Behauptung: Es ist besser, früh zu kommen, oder genau pünktlich.",
+      "Gewohnheiten unterscheiden sich je nach Ort und Familie; ein fairer Debattierer sagt das.",
+      "Gib ein Beispiel, etwa Zug, Feier oder Besprechung."
+     ],
+     "q": "Was bedeutet Pünktlichkeit für dich, in Minuten?",
+     "c": "Erkläre eine Lage, in der leichte Verspätung verständlich ist."
+    },
+    "es": {
+     "t": "¿Temprano o justo a tiempo?",
+     "g": "Un debate ligero sobre puntualidad y distintos hábitos culturales.",
+     "p": [
+      "Afirmación: es mejor llegar temprano, o justo a la hora.",
+      "Los hábitos cambian según lugar y familia; un buen debatiente lo dice.",
+      "Da un ejemplo, como un tren, una fiesta o una reunión."
+     ],
+     "q": "¿Qué significa para ti ser puntual, en minutos?",
+     "c": "Explica una situación en la que un pequeño retraso es comprensible."
+    },
+    "fr": {
+     "t": "En avance ou juste à l'heure ?",
+     "g": "Un débat léger sur la ponctualité et les habitudes culturelles différentes.",
+     "p": [
+      "Affirmation : il vaut mieux arriver en avance, ou juste à l'heure.",
+      "Les habitudes varient selon les lieux et les familles ; un débatteur juste le dit.",
+      "Donne un exemple, comme un train, une fête ou une réunion."
+     ],
+     "q": "Que signifie être à l'heure pour toi, en minutes ?",
+     "c": "Explique une situation où un léger retard est compréhensible."
+    },
+    "it": {
+     "t": "In anticipo o puntuali al minuto?",
+     "g": "Un dibattito leggero su puntualità e diverse abitudini culturali.",
+     "p": [
+      "Tesi: è meglio arrivare in anticipo, o puntuali al minuto.",
+      "Le abitudini cambiano tra luoghi e famiglie; un buon dibattente lo dice.",
+      "Fai un esempio, come un treno, una festa o una riunione."
+     ],
+     "q": "Cosa significa per te essere puntuali, in minuti?",
+     "c": "Spiega una situazione in cui un lieve ritardo è comprensibile."
+    },
+    "pt": {
+     "t": "Cedo ou mesmo à hora?",
+     "g": "Um debate leve sobre pontualidade e diferentes hábitos culturais.",
+     "p": [
+      "Afirmação: é melhor chegar cedo, ou mesmo à hora.",
+      "Os hábitos mudam conforme o local e a família; um bom debatedor di-lo.",
+      "Dá um exemplo, como um comboio, uma festa ou uma reunião."
+     ],
+     "q": "O que significa para ti ser pontual, em minutos?",
+     "c": "Explica uma situação em que um pequeno atraso é compreensível."
+    },
+    "pt_BR": {
+     "t": "Cedo ou na hora exata?",
+     "g": "Um debate leve sobre pontualidade e diferentes hábitos culturais.",
+     "p": [
+      "Afirmação: é melhor chegar cedo, ou na hora exata.",
+      "Os hábitos mudam conforme o lugar e a família; um bom debatedor diz isso.",
+      "Dê um exemplo, como um ônibus, uma festa ou uma reunião."
+     ],
+     "q": "O que significa ser pontual para você, em minutos?",
+     "c": "Explique uma situação em que um pequeno atraso é compreensível."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Strong words vs vague words",
+     "g": "Choose precise words like often or most instead of fuzzy ones.",
+     "p": [
+      "Vague words like stuff, things and everyone hide your meaning.",
+      "Precise words like most, about half or twice a week help.",
+      "Precision makes your claim easier to test and trust."
+     ],
+     "q": "Replace one vague word in your last sentence with a precise one.",
+     "c": "Rewrite: Everyone knows that stuff is better these days."
+    },
+    "de": {
+     "t": "Starke Wörter gegen vage Wörter",
+     "g": "Wähle genaue Wörter wie oft oder meist statt schwammiger.",
+     "p": [
+      "Vage Wörter wie Zeug, Dinge und jeder verstecken deine Aussage.",
+      "Genaue Wörter wie die meisten, etwa die Hälfte oder zweimal pro Woche helfen.",
+      "Genauigkeit macht deine Behauptung leichter prüfbar und glaubwürdig."
+     ],
+     "q": "Ersetze ein vages Wort in deinem letzten Satz durch ein genaues.",
+     "c": "Formuliere um: Jeder weiß, dass das Zeug heute besser ist."
+    },
+    "es": {
+     "t": "Palabras fuertes contra palabras vagas",
+     "g": "Elige palabras precisas como a menudo o la mayoría en lugar de difusas.",
+     "p": [
+      "Palabras vagas como cosas y todo el mundo ocultan tu mensaje.",
+      "Palabras precisas como la mayoría, casi la mitad o dos veces por semana ayudan.",
+      "La precisión hace tu afirmación más fácil de comprobar y creer."
+     ],
+     "q": "Cambia una palabra vaga de tu última frase por una precisa.",
+     "c": "Reescribe: Todo el mundo sabe que las cosas son mejores hoy."
+    },
+    "fr": {
+     "t": "Mots forts contre mots vagues",
+     "g": "Choisis des mots précis comme souvent ou la plupart au lieu de mots flous.",
+     "p": [
+      "Des mots vagues comme truc, choses et tout le monde cachent ton sens.",
+      "Des mots précis comme la plupart, environ la moitié ou deux fois par semaine aident.",
+      "La précision rend ton affirmation plus facile à tester et à croire."
+     ],
+     "q": "Remplace un mot vague de ta dernière phrase par un mot précis.",
+     "c": "Reformule : Tout le monde sait que les trucs sont mieux aujourd'hui."
+    },
+    "it": {
+     "t": "Parole forti contro parole vaghe",
+     "g": "Scegli parole precise come spesso o la maggior parte invece di quelle sfocate.",
+     "p": [
+      "Parole vaghe come roba, cose e tutti nascondono il tuo senso.",
+      "Parole precise come la maggior parte, circa metà o due volte a settimana aiutano.",
+      "La precisione rende la tua tesi più facile da verificare e da credere."
+     ],
+     "q": "Sostituisci una parola vaga della tua ultima frase con una precisa.",
+     "c": "Riscrivi: Tutti sanno che la roba oggi è migliore."
+    },
+    "pt": {
+     "t": "Palavras fortes contra palavras vagas",
+     "g": "Escolhe palavras precisas como muitas vezes ou a maioria em vez de vagas.",
+     "p": [
+      "Palavras vagas como coisas e toda a gente escondem o teu sentido.",
+      "Palavras precisas como a maioria, cerca de metade ou duas vezes por semana ajudam.",
+      "A precisão torna a tua afirmação mais fácil de testar e de aceitar."
+     ],
+     "q": "Troca uma palavra vaga da tua última frase por uma precisa.",
+     "c": "Reescreve: Toda a gente sabe que as coisas são melhores hoje."
+    },
+    "pt_BR": {
+     "t": "Palavras fortes contra palavras vagas",
+     "g": "Escolha palavras precisas como muitas vezes ou a maioria em vez de vagas.",
+     "p": [
+      "Palavras vagas como coisas e todo mundo escondem o seu sentido.",
+      "Palavras precisas como a maioria, cerca de metade ou duas vezes por semana ajudam.",
+      "A precisão torna a sua afirmação mais fácil de testar e de aceitar."
+     ],
+     "q": "Troque uma palavra vaga da sua última frase por uma precisa.",
+     "c": "Reescreva: Todo mundo sabe que as coisas são melhores hoje."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Living alone vs with roommates",
+     "g": "Freedom versus company: debate two ways of sharing a home.",
+     "p": [
+      "List the benefits: privacy and control versus company and shared costs.",
+      "Add a real example, like a quiet evening or a shared dinner.",
+      "Say which matters more in different stages of life."
+     ],
+     "q": "Would you rather live alone or with others, and why?",
+     "c": "Name one advantage of the arrangement you did not choose."
+    },
+    "de": {
+     "t": "Allein wohnen gegen WG",
+     "g": "Freiheit gegen Gesellschaft: Debattiere zwei Arten, ein Zuhause zu teilen.",
+     "p": [
+      "Liste die Vorteile: Privatsphäre und Kontrolle gegen Gesellschaft und geteilte Kosten.",
+      "Ergänze ein echtes Beispiel, etwa ein ruhiger Abend oder ein gemeinsames Essen.",
+      "Sage, was in verschiedenen Lebensphasen wichtiger ist."
+     ],
+     "q": "Würdest du lieber allein oder mit anderen wohnen, und warum?",
+     "c": "Nenne einen Vorteil der Wohnform, die du nicht gewählt hast."
+    },
+    "es": {
+     "t": "Vivir solo contra compartir piso",
+     "g": "Libertad frente a compañía: debate dos formas de compartir un hogar.",
+     "p": [
+      "Enumera los beneficios: privacidad y control frente a compañía y gastos compartidos.",
+      "Añade un ejemplo real, como una tarde tranquila o una cena compartida.",
+      "Di qué importa más en distintas etapas de la vida."
+     ],
+     "q": "¿Preferirías vivir solo o con otros, y por qué?",
+     "c": "Nombra una ventaja de la opción que no elegiste."
+    },
+    "fr": {
+     "t": "Vivre seul contre colocation",
+     "g": "Liberté contre compagnie : débats de deux façons de partager un foyer.",
+     "p": [
+      "Liste les avantages : intimité et contrôle contre compagnie et frais partagés.",
+      "Ajoute un exemple réel, comme une soirée calme ou un dîner partagé.",
+      "Dis ce qui compte le plus selon les étapes de la vie."
+     ],
+     "q": "Préfèrerais-tu vivre seul ou avec d'autres, et pourquoi ?",
+     "c": "Cite un avantage de la formule que tu n'as pas choisie."
+    },
+    "it": {
+     "t": "Vivere da soli contro coinquilini",
+     "g": "Libertà contro compagnia: discuti due modi di condividere una casa.",
+     "p": [
+      "Elenca i benefici: privacy e controllo contro compagnia e spese condivise.",
+      "Aggiungi un esempio reale, come una serata tranquilla o una cena insieme.",
+      "Dì cosa conta di più nelle diverse fasi della vita."
+     ],
+     "q": "Preferiresti vivere da solo o con altri, e perché?",
+     "c": "Nomina un vantaggio della soluzione che non hai scelto."
+    },
+    "pt": {
+     "t": "Viver sozinho contra partilhar casa",
+     "g": "Liberdade contra companhia: debate duas formas de partilhar um lar.",
+     "p": [
+      "Lista os benefícios: privacidade e controlo contra companhia e custos partilhados.",
+      "Acrescenta um exemplo real, como uma noite sossegada ou um jantar partilhado.",
+      "Diz o que importa mais em diferentes fases da vida."
+     ],
+     "q": "Preferias viver sozinho ou com outros, e porquê?",
+     "c": "Indica uma vantagem da opção que não escolheste."
+    },
+    "pt_BR": {
+     "t": "Morar sozinho contra dividir casa",
+     "g": "Liberdade contra companhia: debata duas formas de dividir um lar.",
+     "p": [
+      "Liste os benefícios: privacidade e controle contra companhia e custos divididos.",
+      "Acrescente um exemplo real, como uma noite sossegada ou um jantar em grupo.",
+      "Diga o que importa mais em diferentes fases da vida."
+     ],
+     "q": "Você preferiria morar sozinho ou com outros, e por quê?",
+     "c": "Cite uma vantagem da opção que você não escolheu."
+    }
+   }
+  }
+ ]
+}

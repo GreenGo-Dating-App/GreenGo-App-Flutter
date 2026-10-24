@@ -1,0 +1,835 @@
+{
+ "topic": "puzzles",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why our brains love puzzles",
+     "g": "Understand why solving a puzzle feels so good and why that matters for fun and focus.",
+     "p": [
+      "An 'aha!' moment is a sudden click when pieces fit, and it feels like a small, real reward.",
+      "Puzzles give your mind a clear goal and a safe challenge, which makes concentration feel easy.",
+      "You don't need to be fast or clever: curiosity and patience are the only tools you need."
+     ],
+     "q": "Which puzzle have you enjoyed most, even once, and what did you like about it?",
+     "c": "Solve it: what gets wetter the more it dries? Notice the moment the answer clicks."
+    },
+    "de": {
+     "t": "Warum unser Gehirn Rätsel liebt",
+     "g": "Verstehen, warum sich Rätsellösen so gut anfühlt und warum das Spaß und Fokus fördert.",
+     "p": [
+      "Ein Aha-Moment ist ein plötzliches Einrasten der Teile und fühlt sich wie eine kleine, echte Belohnung an.",
+      "Rätsel geben deinem Kopf ein klares Ziel und eine sichere Herausforderung, da fällt Konzentration leicht.",
+      "Du musst weder schnell noch genial sein: Neugier und Geduld sind alles, was du brauchst."
+     ],
+     "q": "Welches Rätsel hat dir bisher am meisten Spaß gemacht, und was hat dir daran gefallen?",
+     "c": "Löse es: Was wird nasser, je mehr es trocknet? Achte auf den Moment, in dem es klick macht."
+    },
+    "es": {
+     "t": "Por qué a nuestro cerebro le gustan los acertijos",
+     "g": "Entender por qué resolver un acertijo sienta tan bien y cómo ayuda a divertirte y concentrarte.",
+     "p": [
+      "El momento ¡ajá! es un clic repentino cuando las piezas encajan y se siente como una pequeña recompensa real.",
+      "Los acertijos dan a tu mente una meta clara y un reto seguro, y así concentrarse resulta fácil.",
+      "No hace falta ser rápido ni genio: la curiosidad y la paciencia son todo lo que necesitas."
+     ],
+     "q": "¿Qué acertijo has disfrutado más, aunque sea una vez, y qué fue lo que te gustó?",
+     "c": "Resuélvelo: ¿qué se moja más cuanto más se seca? Fíjate en el instante en que te hace clic."
+    },
+    "fr": {
+     "t": "Pourquoi notre cerveau adore les énigmes",
+     "g": "Comprendre pourquoi résoudre une énigme fait tant de bien et aide à s'amuser et à se concentrer.",
+     "p": [
+      "Le moment « eurêka » est un déclic soudain quand les pièces s'emboîtent, comme une petite vraie récompense.",
+      "Une énigme donne à ton esprit un but clair et un défi sans risque, et la concentration devient facile.",
+      "Pas besoin d'être rapide ni génial : la curiosité et la patience sont tes seuls outils."
+     ],
+     "q": "Quelle énigme as-tu préférée, même une seule fois, et qu'est-ce qui t'a plu ?",
+     "c": "Résous : qu'est-ce qui devient plus mouillé à mesure qu'il sèche ? Remarque le déclic."
+    },
+    "it": {
+     "t": "Perché al nostro cervello piacciono gli enigmi",
+     "g": "Capire perché risolvere un enigma fa stare così bene e come aiuta a divertirsi e concentrarsi.",
+     "p": [
+      "Il momento «eureka» è uno scatto improvviso quando i pezzi combaciano, come una piccola vera ricompensa.",
+      "Gli enigmi danno alla mente un obiettivo chiaro e una sfida sicura, così concentrarsi diventa facile.",
+      "Non serve essere veloci o geniali: curiosità e pazienza sono gli unici strumenti necessari."
+     ],
+     "q": "Quale enigma ti è piaciuto di più, anche solo una volta, e cosa ti è piaciuto?",
+     "c": "Risolvilo: cosa si bagna di più quanto più si asciuga? Cogli l'istante in cui scatta la soluzione."
+    },
+    "pt": {
+     "t": "Porque é que o cérebro adora enigmas",
+     "g": "Perceber porque é que resolver um enigma sabe tão bem e como ajuda a divertir-te e a concentrar-te.",
+     "p": [
+      "O momento «eureka» é um estalo súbito quando as peças encaixam e sabe a uma pequena recompensa verdadeira.",
+      "Os enigmas dão à tua mente um objetivo claro e um desafio seguro, e concentrar-se torna-se fácil.",
+      "Não precisas de ser rápido nem génio: curiosidade e paciência são tudo o que é preciso."
+     ],
+     "q": "Que enigma já te divertiu mais, nem que tenha sido uma vez, e o que gostaste nele?",
+     "c": "Resolve: o que fica mais molhado quanto mais seca? Repara no instante em que a resposta estala."
+    },
+    "pt_BR": {
+     "t": "Por que nosso cérebro adora enigmas",
+     "g": "Entender por que resolver um enigma é tão gostoso e como isso ajuda a se divertir e a focar.",
+     "p": [
+      "O momento «eureca» é um estalo repentino quando as peças se encaixam e vira uma pequena recompensa de verdade.",
+      "Enigmas dão à sua mente um objetivo claro e um desafio seguro, e concentrar-se fica fácil.",
+      "Você não precisa ser rápido nem gênio: curiosidade e paciência são tudo o que você precisa."
+     ],
+     "q": "Qual enigma você mais curtiu, mesmo que só uma vez, e o que gostou nele?",
+     "c": "Resolva: o que fica mais molhado quanto mais seca? Perceba o instante em que a resposta cai."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kinds of puzzles",
+     "g": "Draw a first map of the puzzle world: riddles, words, logic, numbers and pictures.",
+     "p": [
+      "Riddles play with double meanings, and word puzzles play with letters, spelling and sounds.",
+      "Logic puzzles use clues and reasoning, and number puzzles hide a rule inside digits.",
+      "Visual puzzles ask you to spot shapes, patterns and differences, so every mind finds a favourite kind."
+     ],
+     "q": "Which of the five kinds sounds most fun to you, and which one scares you a little?",
+     "c": "Name one puzzle you have done for each kind, then try this: 2, 4, 8, 16, what comes next?"
+    },
+    "de": {
+     "t": "Arten von Rätseln",
+     "g": "Eine erste Landkarte der Rätselwelt: Scherzfragen, Wörter, Logik, Zahlen und Bilder.",
+     "p": [
+      "Rätselfragen spielen mit Doppelbedeutungen, Worträtsel mit Buchstaben, Schreibweise und Klang.",
+      "Logikrätsel nutzen Hinweise und Schlussfolgern, Zahlenrätsel verstecken eine Regel in den Ziffern.",
+      "Bilderrätsel verlangen, Formen, Muster und Unterschiede zu entdecken, so findet jeder seine Lieblingsart."
+     ],
+     "q": "Welche der fünf Arten klingt für dich am lustigsten, und welche macht dir ein bisschen Respekt?",
+     "c": "Nenne je Art ein Rätsel, das du kennst, und löse dann: 2, 4, 8, 16, was kommt als Nächstes?"
+    },
+    "es": {
+     "t": "Tipos de acertijos",
+     "g": "Un primer mapa del mundo de los acertijos: adivinanzas, palabras, lógica, números e imágenes.",
+     "p": [
+      "Las adivinanzas juegan con dobles sentidos y los juegos de palabras, con letras, ortografía y sonidos.",
+      "Los de lógica usan pistas y razonamiento, y los numéricos esconden una regla dentro de las cifras.",
+      "Los visuales piden descubrir formas, patrones y diferencias, así que cada mente encuentra su favorito."
+     ],
+     "q": "¿Cuál de los cinco tipos te parece más divertido y cuál te da un poquito de respeto?",
+     "c": "Nombra un acertijo que hayas hecho de cada tipo y prueba: 2, 4, 8, 16, ¿qué número sigue?"
+    },
+    "fr": {
+     "t": "Les types d'énigmes",
+     "g": "Une première carte du monde des énigmes : devinettes, mots, logique, nombres et images.",
+     "p": [
+      "Les devinettes jouent sur les doubles sens, les jeux de mots sur les lettres, l'orthographe et les sons.",
+      "Les casse-têtes de logique utilisent des indices, ceux de nombres cachent une règle dans les chiffres.",
+      "Les énigmes visuelles demandent de repérer formes, motifs et différences : chacun trouve son genre préféré."
+     ],
+     "q": "Lequel des cinq genres te semble le plus amusant, et lequel t'impressionne un peu ?",
+     "c": "Cite une énigme faite pour chaque genre, puis essaie : 2, 4, 8, 16, quel nombre vient ensuite ?"
+    },
+    "it": {
+     "t": "Tipi di enigmi",
+     "g": "Una prima mappa del mondo degli enigmi: indovinelli, parole, logica, numeri e immagini.",
+     "p": [
+      "Gli indovinelli giocano con i doppi sensi e i giochi di parole con lettere, ortografia e suoni.",
+      "I problemi di logica usano indizi e ragionamento, quelli numerici nascondono una regola nelle cifre.",
+      "Gli enigmi visivi chiedono di cogliere forme, schemi e differenze, così ognuno trova il suo preferito."
+     ],
+     "q": "Quale dei cinque tipi ti sembra il più divertente e quale ti mette un po' di soggezione?",
+     "c": "Cita un enigma fatto per ogni tipo, poi prova: 2, 4, 8, 16, quale numero viene dopo?"
+    },
+    "pt": {
+     "t": "Tipos de enigmas",
+     "g": "Um primeiro mapa do mundo dos enigmas: adivinhas, palavras, lógica, números e imagens.",
+     "p": [
+      "As adivinhas jogam com duplos sentidos e os jogos de palavras com letras, ortografia e sons.",
+      "Os de lógica usam pistas e raciocínio, e os de números escondem uma regra dentro dos algarismos.",
+      "Os visuais pedem para descobrir formas, padrões e diferenças, e assim cada um encontra o seu favorito."
+     ],
+     "q": "Qual dos cinco tipos te parece mais divertido e qual te impõe um pouco de respeito?",
+     "c": "Diz um enigma que já tenhas feito de cada tipo e tenta: 2, 4, 8, 16, que número vem a seguir?"
+    },
+    "pt_BR": {
+     "t": "Tipos de enigmas",
+     "g": "Um primeiro mapa do mundo dos enigmas: adivinhas, palavras, lógica, números e imagens.",
+     "p": [
+      "As adivinhas brincam com duplo sentido e os jogos de palavras, com letras, ortografia e sons.",
+      "Os de lógica usam pistas e raciocínio, e os de números escondem uma regra dentro dos algarismos.",
+      "Os visuais pedem para achar formas, padrões e diferenças, e assim cada pessoa descobre seu favorito."
+     ],
+     "q": "Qual dos cinco tipos parece mais divertido pra você, e qual dá um friozinho?",
+     "c": "Cite um enigma que você já fez de cada tipo e tente: 2, 4, 8, 16, qual número vem depois?"
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How to approach any puzzle",
+     "g": "Learn a four-step habit that helps with almost every puzzle: read, list, try, check.",
+     "p": [
+      "Read the puzzle slowly and twice, because many puzzles hide the trick in one small word.",
+      "List what you know and what you need to find, then try one idea and see where it leads.",
+      "Always check your answer against every clue; a wrong try is information, not failure."
+     ],
+     "q": "When you get stuck, which small habit helps you: a break, a sketch, or asking a friend?",
+     "c": "A farmer has 17 sheep and all but 9 run away. How many are left? Read twice before answering!"
+    },
+    "de": {
+     "t": "Wie du jedes Rätsel angehst",
+     "g": "Eine Vier-Schritte-Gewohnheit lernen: lesen, auflisten, probieren, prüfen.",
+     "p": [
+      "Lies das Rätsel langsam und zweimal, denn oft steckt der Trick in einem einzigen kleinen Wort.",
+      "Notiere, was du weißt und was gesucht ist, probiere eine Idee aus und sieh, wohin sie führt.",
+      "Prüfe deine Antwort an jedem Hinweis; ein falscher Versuch ist eine Information, kein Scheitern."
+     ],
+     "q": "Was hilft dir, wenn du feststeckst: eine Pause, eine Skizze oder ein Freund zum Fragen?",
+     "c": "Ein Bauer hat 17 Schafe, und alle bis auf 9 laufen weg. Wie viele bleiben? Lies zweimal!"
+    },
+    "es": {
+     "t": "Cómo abordar cualquier acertijo",
+     "g": "Aprender un hábito de cuatro pasos: leer, anotar, probar y comprobar.",
+     "p": [
+      "Lee el acertijo despacio y dos veces, porque muchos esconden el truco en una palabra pequeña.",
+      "Anota lo que sabes y lo que buscas, prueba una idea y mira adónde te lleva.",
+      "Comprueba tu respuesta con cada pista; un intento fallido es información, no un fracaso."
+     ],
+     "q": "Cuando te atascas, ¿qué te ayuda: una pausa, un dibujo o preguntar a alguien?",
+     "c": "Un granjero tiene 17 ovejas y todas menos 9 se escapan. ¿Cuántas quedan? ¡Lee dos veces!"
+    },
+    "fr": {
+     "t": "Aborder n'importe quelle énigme",
+     "g": "Apprendre une habitude en quatre étapes : lire, noter, essayer, vérifier.",
+     "p": [
+      "Lis l'énigme lentement et deux fois, car le piège se cache souvent dans un tout petit mot.",
+      "Note ce que tu sais et ce qu'il faut trouver, essaie une idée et vois où elle mène.",
+      "Vérifie ta réponse avec chaque indice ; un essai raté est une information, pas un échec."
+     ],
+     "q": "Quand tu bloques, qu'est-ce qui t'aide : une pause, un schéma ou demander à un ami ?",
+     "c": "Un fermier a 17 moutons et tous sauf 9 s'enfuient. Combien en reste-t-il ? Lis deux fois !"
+    },
+    "it": {
+     "t": "Come affrontare qualsiasi enigma",
+     "g": "Imparare un'abitudine in quattro passi: leggere, elencare, provare, controllare.",
+     "p": [
+      "Leggi l'enigma lentamente e due volte, perché spesso il trucco sta in una piccola parola.",
+      "Elenca ciò che sai e ciò che cerchi, prova un'idea e guarda dove porta.",
+      "Controlla la risposta con ogni indizio; un tentativo sbagliato è un'informazione, non un fallimento."
+     ],
+     "q": "Quando ti blocchi, cosa ti aiuta: una pausa, uno schizzo o chiedere a un amico?",
+     "c": "Un contadino ha 17 pecore e tutte tranne 9 scappano. Quante ne restano? Leggi due volte!"
+    },
+    "pt": {
+     "t": "Como abordar qualquer enigma",
+     "g": "Aprender um hábito de quatro passos: ler, anotar, tentar e verificar.",
+     "p": [
+      "Lê o enigma devagar e duas vezes, porque muitas vezes o truque está numa palavrinha.",
+      "Anota o que sabes e o que procuras, tenta uma ideia e vê onde ela te leva.",
+      "Verifica a resposta com cada pista; uma tentativa falhada é informação, não um fracasso."
+     ],
+     "q": "Quando ficas preso, o que te ajuda: uma pausa, um desenho ou perguntar a alguém?",
+     "c": "Um agricultor tem 17 ovelhas e todas menos 9 fogem. Quantas ficam? Lê duas vezes!"
+    },
+    "pt_BR": {
+     "t": "Como encarar qualquer enigma",
+     "g": "Aprender um hábito de quatro passos: ler, anotar, tentar e conferir.",
+     "p": [
+      "Leia o enigma devagar e duas vezes, porque muitas vezes o truque está numa palavrinha.",
+      "Anote o que você sabe e o que procura, tente uma ideia e veja aonde ela leva.",
+      "Confira a resposta com cada pista; uma tentativa errada é informação, não fracasso."
+     ],
+     "q": "Quando você trava, o que ajuda: uma pausa, um desenho ou perguntar a alguém?",
+     "c": "Um fazendeiro tem 17 ovelhas e todas menos 9 fogem. Quantas sobram? Leia duas vezes!"
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first riddle",
+     "g": "Solve a first riddle and see how riddles hide an answer behind a double meaning.",
+     "p": [
+      "The riddle 'What has hands but cannot clap?' works because 'hands' can mean body parts or clock hands.",
+      "Riddles describe something ordinary in an odd way, so ask: which word could mean two things?",
+      "The answer is a clock, and once you see the second meaning, the whole riddle snaps into place."
+     ],
+     "q": "Do you remember a riddle from your childhood? Tell me how it went.",
+     "c": "Try this one: what has keys but opens no locks? Look for the word with two meanings."
+    },
+    "de": {
+     "t": "Dein erstes Rätsel",
+     "g": "Ein erstes Rätsel lösen und sehen, wie sich die Antwort hinter einer Doppeldeutigkeit versteckt.",
+     "p": [
+      "Das Rätsel „Was hat Zähne und kann doch nicht beißen?“ klappt, weil „Zähne“ auch die Zinken eines Gegenstands meint.",
+      "Rätsel beschreiben etwas Alltägliches auf seltsame Weise; frag dich: Welches Wort hat zwei Bedeutungen?",
+      "Die Antwort ist ein Kamm, und sobald du die zweite Bedeutung siehst, rastet alles ein."
+     ],
+     "q": "Erinnerst du dich an ein Rätsel aus deiner Kindheit? Erzähl, wie es ging.",
+     "c": "Probier dieses: Was hat Beine, aber kann nicht laufen? Suche das Wort mit zwei Bedeutungen."
+    },
+    "es": {
+     "t": "Tu primera adivinanza",
+     "g": "Resolver una primera adivinanza y ver cómo esconde la respuesta tras un doble sentido.",
+     "p": [
+      "La adivinanza «¿Qué tiene dientes pero no muerde?» funciona porque «dientes» también puede ser las púas de un objeto.",
+      "Las adivinanzas describen algo común de forma rara; pregúntate: ¿qué palabra puede significar dos cosas?",
+      "La respuesta es un peine, y al ver el segundo significado toda la adivinanza encaja."
+     ],
+     "q": "¿Recuerdas alguna adivinanza de tu infancia? Cuéntame cómo era.",
+     "c": "Prueba esta: ¿qué tiene patas pero no camina? Busca la palabra con dos significados."
+    },
+    "fr": {
+     "t": "Ta première devinette",
+     "g": "Résoudre une première devinette et voir comment elle cache sa réponse derrière un double sens.",
+     "p": [
+      "La devinette « Qu'est-ce qui a des dents mais ne mord pas ? » marche car « dents » désigne aussi les pointes d'un objet.",
+      "Les devinettes décrivent une chose banale de façon étrange ; demande-toi : quel mot a deux sens ?",
+      "La réponse est un peigne, et dès qu'on voit le second sens, toute la devinette s'éclaire."
+     ],
+     "q": "Te souviens-tu d'une devinette de ton enfance ? Raconte-moi comment elle était.",
+     "c": "Essaie celle-ci : qu'est-ce qui a des pieds mais ne marche pas ? Cherche le mot à deux sens."
+    },
+    "it": {
+     "t": "Il tuo primo indovinello",
+     "g": "Risolvere un primo indovinello e vedere come nasconde la risposta dietro un doppio senso.",
+     "p": [
+      "L'indovinello «Che cosa ha i denti ma non morde?» funziona perché «denti» può essere anche la dentatura di un oggetto.",
+      "Gli indovinelli descrivono una cosa comune in modo strano; chiediti: quale parola ha due significati?",
+      "La risposta è un pettine, e quando vedi il secondo significato tutto l'indovinello va a posto."
+     ],
+     "q": "Ricordi un indovinello della tua infanzia? Raccontami com'era.",
+     "c": "Prova questo: che cosa ha le gambe ma non cammina? Cerca la parola con due significati."
+    },
+    "pt": {
+     "t": "A tua primeira adivinha",
+     "g": "Resolver uma primeira adivinha e ver como esconde a resposta atrás de um duplo sentido.",
+     "p": [
+      "A adivinha «O que tem dentes mas não morde?» funciona porque «dentes» também são as pontas de um objeto.",
+      "As adivinhas descrevem algo comum de forma estranha; pergunta-te: que palavra tem dois sentidos?",
+      "A resposta é um pente, e ao ver o segundo sentido toda a adivinha encaixa."
+     ],
+     "q": "Lembras-te de alguma adivinha da tua infância? Conta-me como era.",
+     "c": "Experimenta esta: o que tem pés mas não anda? Procura a palavra com dois sentidos."
+    },
+    "pt_BR": {
+     "t": "Sua primeira adivinha",
+     "g": "Resolver uma primeira adivinha e ver como ela esconde a resposta atrás de um duplo sentido.",
+     "p": [
+      "A adivinha «O que tem dentes mas não morde?» funciona porque «dentes» também são as pontas de um objeto.",
+      "As adivinhas descrevem algo comum de um jeito estranho; pergunte-se: que palavra tem dois sentidos?",
+      "A resposta é um pente, e ao ver o segundo sentido a adivinha toda se encaixa."
+     ],
+     "q": "Você lembra de alguma adivinha da sua infância? Conte como era.",
+     "c": "Tente esta: o que tem pés mas não anda? Procure a palavra com dois sentidos."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Classic riddles",
+     "g": "Enjoy timeless riddles about everyday objects and spot the clever wording behind them.",
+     "p": [
+      "'What has a neck but no head?' sounds odd until you picture a bottle, with its neck and cap.",
+      "'What can you catch but not throw?' plays on the verb 'catch': a cold is caught, never thrown.",
+      "Many classics are very old and still work, because clever wording never goes out of style."
+     ],
+     "q": "Which everyday object would you turn into a riddle first?",
+     "c": "Solve it: the more of them you take, the more you leave behind. What are they?"
+    },
+    "de": {
+     "t": "Klassische Rätsel",
+     "g": "Zeitlose Rätsel über Alltagsdinge genießen und die clevere Formulierung dahinter entdecken.",
+     "p": [
+      "„Was hat einen Hals, aber keinen Kopf?“ klingt seltsam, bis du an eine Flasche denkst.",
+      "„Was kann man sich einfangen, aber nicht werfen?“ spielt mit dem Verb: eine Erkältung fängt man sich ein.",
+      "Viele Klassiker sind uralt und wirken noch immer, denn kluge Wortwahl wird nie altmodisch."
+     ],
+     "q": "Welchen Alltagsgegenstand würdest du zuerst in ein Rätsel verwandeln?",
+     "c": "Löse es: Je mehr du davon machst, desto mehr lässt du hinter dir. Was ist es?"
+    },
+    "es": {
+     "t": "Adivinanzas clásicas",
+     "g": "Disfrutar de adivinanzas eternas sobre objetos cotidianos y notar el ingenio de su redacción.",
+     "p": [
+      "«¿Qué tiene cuello pero no cabeza?» suena raro hasta que piensas en una botella, con su cuello y su tapón.",
+      "«¿Qué sube pero nunca baja?» juega con el verbo: la edad sube cada año y jamás desciende.",
+      "Muchas clásicas son muy antiguas y aún funcionan, porque el ingenio con las palabras nunca pasa de moda."
+     ],
+     "q": "¿Qué objeto cotidiano convertirías primero en adivinanza?",
+     "c": "Resuélvela: cuantos más das, más dejas atrás. ¿Qué son?"
+    },
+    "fr": {
+     "t": "Devinettes classiques",
+     "g": "Savourer des devinettes intemporelles sur des objets du quotidien et repérer leur formulation maligne.",
+     "p": [
+      "« Qu'est-ce qui a un col mais pas de tête ? » semble étrange jusqu'à ce qu'on pense à une bouteille et son goulot.",
+      "« Qu'est-ce qu'on peut attraper mais pas lancer ? » joue sur le verbe : on attrape un rhume.",
+      "Beaucoup de classiques sont très anciens et marchent encore, car l'astuce des mots ne se démode jamais."
+     ],
+     "q": "Quel objet du quotidien transformerais-tu d'abord en devinette ?",
+     "c": "Résous : plus tu en fais, plus tu en laisses derrière toi. Qu'est-ce que c'est ?"
+    },
+    "it": {
+     "t": "Indovinelli classici",
+     "g": "Gustare indovinelli senza tempo su oggetti quotidiani e notare l'astuzia delle parole.",
+     "p": [
+      "«Che cosa ha un collo ma non ha la testa?» sembra strano finché non pensi a una bottiglia.",
+      "«Che cosa si può prendere ma non lanciare?» gioca sul verbo: il raffreddore si prende, non si lancia.",
+      "Molti classici sono antichissimi e funzionano ancora, perché l'astuzia delle parole non passa mai di moda."
+     ],
+     "q": "Quale oggetto quotidiano trasformeresti per primo in un indovinello?",
+     "c": "Risolvilo: più ne fai, più ne lasci dietro di te. Che cosa sono?"
+    },
+    "pt": {
+     "t": "Adivinhas clássicas",
+     "g": "Apreciar adivinhas intemporais sobre objetos do dia a dia e notar a esperteza das palavras.",
+     "p": [
+      "«O que tem pescoço mas não tem cabeça?» soa estranho até pensares numa garrafa, com o seu gargalo.",
+      "«O que se pode apanhar mas não atirar?» joga com o verbo: apanha-se uma constipação.",
+      "Muitas clássicas são antiquíssimas e ainda funcionam, porque a esperteza com palavras nunca passa de moda."
+     ],
+     "q": "Que objeto do dia a dia transformarias primeiro numa adivinha?",
+     "c": "Resolve: quanto mais deres, mais deixas para trás. O que são?"
+    },
+    "pt_BR": {
+     "t": "Adivinhas clássicas",
+     "g": "Curtir adivinhas atemporais sobre objetos do dia a dia e notar a esperteza das palavras.",
+     "p": [
+      "«O que tem pescoço mas não tem cabeça?» parece estranho até você pensar numa garrafa, com seu gargalo.",
+      "«O que dá para pegar mas não dá para jogar?» brinca com o verbo: a gente pega um resfriado.",
+      "Muitas clássicas são antiquíssimas e ainda funcionam, porque a esperteza com palavras nunca sai de moda."
+     ],
+     "q": "Que objeto do dia a dia você transformaria primeiro numa adivinha?",
+     "c": "Resolva: quanto mais você dá, mais deixa para trás. O que são?"
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The riddle of the Sphinx",
+     "g": "Meet the most famous riddle of ancient Greece and decode its poetic answer.",
+     "p": [
+      "In Greek myth the Sphinx asked: what walks on four legs in the morning, two at noon and three in the evening?",
+      "The answer is a human: crawling as a baby, walking upright as an adult, and using a walking stick when old.",
+      "The hero Oedipus solved it by seeing that the riddle used one day as a picture of a whole life."
+     ],
+     "q": "Which part of your own life would you call morning, noon and evening, and why?",
+     "c": "Decode it: what stands for the 'third leg'? Then describe a year as if it were one single day."
+    },
+    "de": {
+     "t": "Das Rätsel der Sphinx",
+     "g": "Das berühmteste Rätsel des antiken Griechenlands kennenlernen und seine poetische Lösung entschlüsseln.",
+     "p": [
+      "In der griechischen Sage fragte die Sphinx: Was geht morgens auf vier Beinen, mittags auf zwei und abends auf dreien?",
+      "Die Antwort ist der Mensch: als Baby krabbelnd, als Erwachsener aufrecht, im Alter mit einem Gehstock.",
+      "Der Held Ödipus löste es, weil er sah, dass ein einziger Tag als Bild für ein ganzes Leben steht."
+     ],
+     "q": "Welche Lebensphase würdest du Morgen, Mittag und Abend nennen, und warum?",
+     "c": "Entschlüssle: Was ist das „dritte Bein“? Beschreibe dann ein Jahr wie einen einzigen Tag."
+    },
+    "es": {
+     "t": "El acertijo de la Esfinge",
+     "g": "Conocer el acertijo más famoso de la antigua Grecia y descifrar su respuesta poética.",
+     "p": [
+      "En el mito griego la Esfinge preguntaba: ¿qué anda a cuatro patas por la mañana, a dos al mediodía y a tres por la tarde?",
+      "La respuesta es el ser humano: gatea de bebé, camina erguido de adulto y usa bastón de anciano.",
+      "El héroe Edipo lo resolvió al ver que el acertijo usaba un solo día como imagen de toda una vida."
+     ],
+     "q": "¿Qué etapa de tu vida llamarías mañana, mediodía y tarde, y por qué?",
+     "c": "Descifra: ¿qué representa la «tercera pata»? Después describe un año como si fuera un solo día."
+    },
+    "fr": {
+     "t": "L'énigme du Sphinx",
+     "g": "Découvrir l'énigme la plus célèbre de la Grèce antique et décoder sa réponse poétique.",
+     "p": [
+      "Dans le mythe grec, le Sphinx demandait : qui marche à quatre pattes le matin, sur deux le midi et sur trois le soir ?",
+      "La réponse est l'être humain : il rampe bébé, marche debout adulte et s'aide d'une canne en vieillissant.",
+      "Le héros Œdipe l'a résolue en voyant qu'une seule journée y représente toute une vie."
+     ],
+     "q": "Quelle période de ta vie appellerais-tu matin, midi et soir, et pourquoi ?",
+     "c": "Décode : que représente la « troisième patte » ? Décris ensuite une année comme une seule journée."
+    },
+    "it": {
+     "t": "L'enigma della Sfinge",
+     "g": "Conoscere l'enigma più famoso dell'antica Grecia e decifrare la sua risposta poetica.",
+     "p": [
+      "Nel mito greco la Sfinge chiedeva: chi cammina su quattro zampe al mattino, su due a mezzogiorno e su tre la sera?",
+      "La risposta è l'essere umano: gattona da piccolo, cammina eretto da adulto e usa il bastone da anziano.",
+      "L'eroe Edipo la risolse capendo che un solo giorno rappresentava l'intera vita."
+     ],
+     "q": "Quale fase della tua vita chiameresti mattina, mezzogiorno e sera, e perché?",
+     "c": "Decifra: cosa rappresenta la «terza zampa»? Poi descrivi un anno come se fosse un solo giorno."
+    },
+    "pt": {
+     "t": "O enigma da Esfinge",
+     "g": "Conhecer o enigma mais famoso da Grécia antiga e decifrar a sua resposta poética.",
+     "p": [
+      "No mito grego, a Esfinge perguntava: o que anda de manhã sobre quatro patas, ao meio-dia sobre duas e à tarde sobre três?",
+      "A resposta é o ser humano: gatinha em bebé, anda de pé em adulto e usa bengala na velhice.",
+      "O herói Édipo resolveu-o ao perceber que um só dia representava uma vida inteira."
+     ],
+     "q": "Que fase da tua vida chamarias manhã, meio-dia e tarde, e porquê?",
+     "c": "Decifra: o que representa a «terceira pata»? Depois descreve um ano como se fosse um só dia."
+    },
+    "pt_BR": {
+     "t": "O enigma da Esfinge",
+     "g": "Conhecer o enigma mais famoso da Grécia antiga e decifrar sua resposta poética.",
+     "p": [
+      "No mito grego, a Esfinge perguntava: o que anda de manhã sobre quatro patas, ao meio-dia sobre duas e à tarde sobre três?",
+      "A resposta é o ser humano: engatinha bebê, anda ereto adulto e usa bengala na velhice.",
+      "O herói Édipo resolveu ao perceber que um só dia representava uma vida inteira."
+     ],
+     "q": "Que fase da sua vida você chamaria de manhã, meio-dia e tarde, e por quê?",
+     "c": "Decifre: o que representa a «terceira perna»? Depois descreva um ano como se fosse um só dia."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Riddles across cultures",
+     "g": "See how riddles appear in folk traditions from Africa to Scandinavia.",
+     "p": [
+      "The Exeter Book, an Old English manuscript about a thousand years old, holds about ninety riddles in verse.",
+      "In many African communities, riddle games open an evening of storytelling and teach quick, playful thinking.",
+      "Old Norse sagas show heroes testing each other in riddle contests, so cleverness was admired too."
+     ],
+     "q": "Is there a riddle, rhyme or joke tradition in your family or region?",
+     "c": "Ask someone older for a riddle they remember, then pose it to a friend and watch the aha."
+    },
+    "de": {
+     "t": "Rätsel in vielen Kulturen",
+     "g": "Sehen, wie Rätsel in Volkstraditionen von Afrika bis Skandinavien vorkommen.",
+     "p": [
+      "Das Exeter Book, eine altenglische Handschrift von etwa tausend Jahren, enthält rund neunzig Rätsel in Versen.",
+      "In vielen afrikanischen Gemeinschaften eröffnen Rätselspiele einen Erzählabend und üben schnelles, spielerisches Denken.",
+      "Altnordische Sagas zeigen Helden, die sich in Rätselwettstreiten prüfen; Klugheit wurde also bewundert."
+     ],
+     "q": "Gibt es in deiner Familie oder Region eine Rätsel-, Reim- oder Scherztradition?",
+     "c": "Frag jemand Älteres nach einem Rätsel, das er kennt, und stell es dann einem Freund oder einer Freundin."
+    },
+    "es": {
+     "t": "Adivinanzas en todas las culturas",
+     "g": "Ver cómo aparecen las adivinanzas en tradiciones populares desde África hasta Escandinavia.",
+     "p": [
+      "El Libro de Exeter, un manuscrito en inglés antiguo de unos mil años, contiene unos noventa enigmas en verso.",
+      "En muchas comunidades africanas, los juegos de adivinanzas abren una velada de cuentos y ejercitan el pensamiento ágil.",
+      "Las sagas nórdicas muestran héroes que se ponen a prueba en duelos de acertijos: la astucia también se admiraba."
+     ],
+     "q": "¿Hay en tu familia o región alguna tradición de adivinanzas, rimas o chistes?",
+     "c": "Pide a alguien mayor una adivinanza que recuerde y plantéasela a un amigo."
+    },
+    "fr": {
+     "t": "Les devinettes dans le monde",
+     "g": "Voir comment les devinettes existent dans les traditions populaires, d'Afrique à la Scandinavie.",
+     "p": [
+      "Le Livre d'Exeter, manuscrit en vieil anglais vieux d'environ mille ans, contient quelque quatre-vingt-dix énigmes en vers.",
+      "Dans de nombreuses communautés africaines, les jeux de devinettes ouvrent la veillée de contes et aiguisent l'esprit.",
+      "Les sagas nordiques montrent des héros qui s'éprouvent par des joutes d'énigmes : l'astuce était admirée."
+     ],
+     "q": "Y a-t-il dans ta famille ou ta région une tradition de devinettes, de comptines ou de blagues ?",
+     "c": "Demande à une personne plus âgée une devinette qu'elle connaît et pose-la à un ami."
+    },
+    "it": {
+     "t": "Gli indovinelli nelle culture del mondo",
+     "g": "Vedere come gli indovinelli compaiono nelle tradizioni popolari, dall'Africa alla Scandinavia.",
+     "p": [
+      "Il Libro di Exeter, manoscritto in inglese antico di circa mille anni, contiene una novantina di enigmi in versi.",
+      "In molte comunità africane i giochi di indovinelli aprono la serata dei racconti e allenano il pensiero rapido.",
+      "Le saghe norrene mostrano eroi che si sfidano in gare di enigmi: anche l'astuzia era ammirata."
+     ],
+     "q": "Nella tua famiglia o regione c'è una tradizione di indovinelli, filastrocche o barzellette?",
+     "c": "Chiedi a una persona più grande un indovinello che ricorda e proponilo a un amico."
+    },
+    "pt": {
+     "t": "Adivinhas em várias culturas",
+     "g": "Ver como as adivinhas surgem nas tradições populares, de África à Escandinávia.",
+     "p": [
+      "O Livro de Exeter, manuscrito em inglês antigo com cerca de mil anos, tem umas noventa adivinhas em verso.",
+      "Em muitas comunidades africanas, os jogos de adivinhas abrem a noite de contos e treinam o pensamento rápido.",
+      "As sagas nórdicas mostram heróis que se desafiam em duelos de enigmas: a esperteza também era admirada."
+     ],
+     "q": "Há na tua família ou região alguma tradição de adivinhas, rimas ou anedotas?",
+     "c": "Pede a alguém mais velho uma adivinha de que se lembre e propõe-a a um amigo."
+    },
+    "pt_BR": {
+     "t": "Adivinhas em várias culturas",
+     "g": "Ver como as adivinhas aparecem nas tradições populares, da África à Escandinávia.",
+     "p": [
+      "O Livro de Exeter, manuscrito em inglês antigo de cerca de mil anos, traz umas noventa adivinhas em versos.",
+      "Em muitas comunidades africanas, jogos de adivinhas abrem a noite de contos e treinam o pensamento rápido.",
+      "As sagas nórdicas mostram heróis se desafiando em duelos de enigmas: a esperteza também era admirada."
+     ],
+     "q": "Existe na sua família ou região alguma tradição de adivinhas, rimas ou piadas?",
+     "c": "Peça a alguém mais velho uma adivinha que lembre e proponha a um amigo."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Making a simple riddle",
+     "g": "Create a riddle by describing an object through its features in a surprising way.",
+     "p": [
+      "Pick an object, then list three features: what it does, what it looks like and where you find it.",
+      "Describe each feature with a surprising picture, like calling an umbrella 'a flower that blooms in the rain'.",
+      "Never name the object, and test the riddle on someone to check that it has one clear answer."
+     ],
+     "q": "What everyday object would make the best riddle, and which feature is the most surprising?",
+     "c": "Write a two-line riddle about a key, a spoon or a mirror, and ask a friend to solve it."
+    },
+    "de": {
+     "t": "Ein einfaches Rätsel erfinden",
+     "g": "Ein Rätsel bauen, indem du einen Gegenstand überraschend über seine Eigenschaften beschreibst.",
+     "p": [
+      "Wähle einen Gegenstand und sammle drei Merkmale: was er tut, wie er aussieht und wo man ihn findet.",
+      "Beschreibe jedes Merkmal mit einem überraschenden Bild, etwa den Regenschirm als „Blume, die im Regen blüht“.",
+      "Nenne den Gegenstand nie und teste das Rätsel an jemandem, ob es eine klare Lösung hat."
+     ],
+     "q": "Welcher Alltagsgegenstand gäbe das beste Rätsel, und welches Merkmal ist am überraschendsten?",
+     "c": "Schreibe ein zweizeiliges Rätsel über Schlüssel, Löffel oder Spiegel und lass es lösen."
+    },
+    "es": {
+     "t": "Cómo inventar una adivinanza sencilla",
+     "g": "Crear una adivinanza describiendo un objeto por sus rasgos de forma sorprendente.",
+     "p": [
+      "Elige un objeto y apunta tres rasgos: qué hace, qué aspecto tiene y dónde se encuentra.",
+      "Describe cada rasgo con una imagen sorprendente, como llamar al paraguas «una flor que se abre con la lluvia».",
+      "No nombres nunca el objeto y pruébala con alguien para comprobar que tiene una única respuesta clara."
+     ],
+     "q": "¿Qué objeto cotidiano daría la mejor adivinanza y qué rasgo es el más sorprendente?",
+     "c": "Escribe una adivinanza de dos versos sobre una llave, una cuchara o un espejo y pide a un amigo que la resuelva."
+    },
+    "fr": {
+     "t": "Inventer une devinette simple",
+     "g": "Créer une devinette en décrivant un objet par ses traits de façon surprenante.",
+     "p": [
+      "Choisis un objet et note trois traits : ce qu'il fait, son apparence et l'endroit où on le trouve.",
+      "Décris chaque trait par une image surprenante, comme appeler le parapluie « une fleur qui s'ouvre sous la pluie ».",
+      "Ne nomme jamais l'objet et teste la devinette sur quelqu'un pour vérifier qu'elle a une seule réponse claire."
+     ],
+     "q": "Quel objet du quotidien ferait la meilleure devinette, et quel trait est le plus surprenant ?",
+     "c": "Écris une devinette de deux lignes sur une clé, une cuillère ou un miroir et fais-la deviner."
+    },
+    "it": {
+     "t": "Inventare un indovinello semplice",
+     "g": "Creare un indovinello descrivendo un oggetto attraverso le sue caratteristiche in modo sorprendente.",
+     "p": [
+      "Scegli un oggetto e annota tre caratteristiche: cosa fa, che aspetto ha e dove si trova.",
+      "Descrivi ogni caratteristica con un'immagine sorprendente, come chiamare l'ombrello «un fiore che sboccia con la pioggia».",
+      "Non nominare mai l'oggetto e provalo su qualcuno per verificare che abbia un'unica risposta chiara."
+     ],
+     "q": "Quale oggetto quotidiano farebbe il miglior indovinello e quale caratteristica è la più sorprendente?",
+     "c": "Scrivi un indovinello di due versi su una chiave, un cucchiaio o uno specchio e fallo risolvere."
+    },
+    "pt": {
+     "t": "Inventar uma adivinha simples",
+     "g": "Criar uma adivinha descrevendo um objeto pelas suas características de forma surpreendente.",
+     "p": [
+      "Escolhe um objeto e anota três características: o que faz, como é e onde se encontra.",
+      "Descreve cada característica com uma imagem surpreendente, como chamar ao guarda-chuva «uma flor que abre com a chuva».",
+      "Nunca digas o nome do objeto e testa a adivinha com alguém para ver se tem uma só resposta clara."
+     ],
+     "q": "Que objeto do dia a dia daria a melhor adivinha e que característica é a mais surpreendente?",
+     "c": "Escreve uma adivinha de dois versos sobre uma chave, uma colher ou um espelho e pede a um amigo que a resolva."
+    },
+    "pt_BR": {
+     "t": "Inventando uma adivinha simples",
+     "g": "Criar uma adivinha descrevendo um objeto pelas suas características de um jeito surpreendente.",
+     "p": [
+      "Escolha um objeto e anote três características: o que faz, como é e onde se encontra.",
+      "Descreva cada característica com uma imagem surpreendente, como chamar o guarda-chuva de «flor que abre na chuva».",
+      "Nunca diga o nome do objeto e teste a adivinha com alguém para ver se tem uma única resposta clara."
+     ],
+     "q": "Qual objeto do dia a dia daria a melhor adivinha e qual característica é a mais surpreendente?",
+     "c": "Escreva uma adivinha de dois versos sobre chave, colher ou espelho e peça a um amigo que resolva."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Word puzzles basics",
+     "g": "Discover how puzzles built on letters, spelling and meaning work.",
+     "p": [
+      "Word puzzles play with three things: the letters in a word, how it is spelled, and what it means.",
+      "Some rearrange letters, some hide words inside words, and some ask for a word that fits a clue.",
+      "Your own vocabulary is the toolbox, so every new word you learn makes the next puzzle easier."
+     ],
+     "q": "Do you prefer playing with letters or with meanings, and which game do you like most?",
+     "c": "Find three words that contain double letters, like 'balloon', then use one in a sentence."
+    },
+    "de": {
+     "t": "Grundlagen der Wortspiele",
+     "g": "Entdecken, wie Rätsel mit Buchstaben, Schreibweise und Bedeutung funktionieren.",
+     "p": [
+      "Worträtsel spielen mit drei Dingen: den Buchstaben eines Wortes, seiner Schreibweise und seiner Bedeutung.",
+      "Manche vertauschen Buchstaben, manche verstecken Wörter in Wörtern, manche suchen ein Wort zu einem Hinweis.",
+      "Dein eigener Wortschatz ist der Werkzeugkasten, jedes neue Wort macht das nächste Rätsel leichter."
+     ],
+     "q": "Spielst du lieber mit Buchstaben oder mit Bedeutungen, und welches Spiel magst du am liebsten?",
+     "c": "Finde drei Wörter mit Doppelbuchstaben, etwa „Kaffee“, und bilde mit einem einen Satz."
+    },
+    "es": {
+     "t": "Lo básico de los juegos de palabras",
+     "g": "Descubrir cómo funcionan los pasatiempos con letras, ortografía y significado.",
+     "p": [
+      "Los juegos de palabras se basan en tres cosas: las letras de una palabra, cómo se escribe y qué significa.",
+      "Unos reordenan letras, otros esconden palabras dentro de palabras y otros piden la palabra que encaja con una pista.",
+      "Tu propio vocabulario es la caja de herramientas: cada palabra nueva facilita el siguiente pasatiempo."
+     ],
+     "q": "¿Prefieres jugar con las letras o con los significados, y qué juego te gusta más?",
+     "c": "Encuentra tres palabras con letras dobles, como «calle», y usa una en una frase."
+    },
+    "fr": {
+     "t": "Les bases des jeux de mots",
+     "g": "Découvrir comment fonctionnent les jeux basés sur les lettres, l'orthographe et le sens.",
+     "p": [
+      "Les jeux de mots reposent sur trois choses : les lettres d'un mot, son orthographe et son sens.",
+      "Certains réarrangent des lettres, d'autres cachent des mots dans des mots, d'autres cherchent un mot selon un indice.",
+      "Ton vocabulaire est ta boîte à outils : chaque mot nouveau rend le jeu suivant plus facile."
+     ],
+     "q": "Préfères-tu jouer avec les lettres ou avec les sens, et quel jeu aimes-tu le plus ?",
+     "c": "Trouve trois mots à lettres doubles, comme « ballon », puis utilise-en un dans une phrase."
+    },
+    "it": {
+     "t": "Le basi dei giochi di parole",
+     "g": "Scoprire come funzionano i giochi basati su lettere, ortografia e significato.",
+     "p": [
+      "I giochi di parole si basano su tre cose: le lettere di una parola, come si scrive e cosa significa.",
+      "Alcuni riordinano le lettere, altri nascondono parole dentro parole, altri chiedono la parola adatta a un indizio.",
+      "Il tuo vocabolario è la cassetta degli attrezzi: ogni parola nuova rende più facile il gioco successivo."
+     ],
+     "q": "Preferisci giocare con le lettere o con i significati, e quale gioco ti piace di più?",
+     "c": "Trova tre parole con lettere doppie, come «palla», e usane una in una frase."
+    },
+    "pt": {
+     "t": "Noções básicas de jogos de palavras",
+     "g": "Descobrir como funcionam os jogos baseados em letras, ortografia e significado.",
+     "p": [
+      "Os jogos de palavras assentam em três coisas: as letras de uma palavra, como se escreve e o que significa.",
+      "Uns reordenam letras, outros escondem palavras dentro de palavras e outros pedem a palavra que encaixa numa pista.",
+      "O teu vocabulário é a caixa de ferramentas: cada palavra nova facilita o jogo seguinte."
+     ],
+     "q": "Preferes brincar com as letras ou com os significados, e que jogo preferes?",
+     "c": "Encontra três palavras com letras duplas, como «carro», e usa uma numa frase."
+    },
+    "pt_BR": {
+     "t": "Noções básicas de jogos de palavras",
+     "g": "Descobrir como funcionam os jogos baseados em letras, ortografia e significado.",
+     "p": [
+      "Os jogos de palavras se baseiam em três coisas: as letras de uma palavra, como ela se escreve e o que significa.",
+      "Uns reordenam letras, outros escondem palavras dentro de palavras e outros pedem a palavra que combina com uma pista.",
+      "Seu vocabulário é a caixa de ferramentas: cada palavra nova facilita o jogo seguinte."
+     ],
+     "q": "Você prefere brincar com as letras ou com os significados, e qual jogo mais curte?",
+     "c": "Ache três palavras com letras duplas, como «carro», e use uma numa frase."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Anagrams",
+     "g": "Learn what an anagram is and make your first ones from everyday words.",
+     "p": [
+      "An anagram rearranges every letter of a word exactly once to make a new word, like 'listen' and 'silent'.",
+      "The word comes from Greek, meaning 'letters turned around', and people have enjoyed anagrams for centuries.",
+      "Check your result by counting letters: the same letters, the same number, no extras."
+     ],
+     "q": "Which of your own names, places or favourite words do you think could hide an anagram?",
+     "c": "Rearrange 'stop' into as many words as you can: there are at least four more."
+    },
+    "de": {
+     "t": "Anagramme",
+     "g": "Verstehen, was ein Anagramm ist, und die ersten aus Alltagswörtern bauen.",
+     "p": [
+      "Ein Anagramm ordnet jeden Buchstaben eines Wortes genau einmal neu an, etwa „Lager“ und „Regal“.",
+      "Das Wort kommt aus dem Griechischen und meint „umgestellte Buchstaben“; Menschen lieben Anagramme seit Jahrhunderten.",
+      "Prüfe dein Ergebnis durch Zählen: dieselben Buchstaben, dieselbe Anzahl, keiner zu viel."
+     ],
+     "q": "Welche Namen, Orte oder Lieblingswörter von dir könnten ein Anagramm verstecken?",
+     "c": "Stelle die Buchstaben von „Lampe“ um: Es ergibt einen Baum, der im Süden wächst."
+    },
+    "es": {
+     "t": "Anagramas",
+     "g": "Aprender qué es un anagrama y crear los primeros con palabras cotidianas.",
+     "p": [
+      "Un anagrama reordena todas las letras de una palabra una sola vez para formar otra, como «amor» y «Roma».",
+      "La palabra viene del griego y significa «letras cambiadas»; la gente disfruta los anagramas desde hace siglos.",
+      "Comprueba el resultado contando letras: las mismas, en igual número y sin sobrantes."
+     ],
+     "q": "¿Qué nombres, lugares o palabras favoritas tuyas crees que esconden un anagrama?",
+     "c": "Reordena las letras de «pera»: aparece una orden para detener un coche, «pare»."
+    },
+    "fr": {
+     "t": "Anagrammes",
+     "g": "Comprendre ce qu'est une anagramme et en créer à partir de mots courants.",
+     "p": [
+      "Une anagramme réarrange toutes les lettres d'un mot une seule fois pour en former un autre, comme « chien » et « niche ».",
+      "Le mot vient du grec et signifie « lettres renversées » ; on aime les anagrammes depuis des siècles.",
+      "Vérifie en comptant les lettres : les mêmes, en même nombre, sans reste."
+     ],
+     "q": "Quels noms, lieux ou mots préférés pourraient cacher une anagramme ?",
+     "c": "Réarrange « ange » : tu obtiens ce que l'on fait dans une piscine."
+    },
+    "it": {
+     "t": "Anagrammi",
+     "g": "Capire cos'è un anagramma e crearne i primi con parole di tutti i giorni.",
+     "p": [
+      "Un anagramma riordina ogni lettera di una parola una sola volta per formarne un'altra, come «ramo» e «mora».",
+      "La parola viene dal greco e significa «lettere rovesciate»; gli anagrammi piacciono da secoli.",
+      "Controlla il risultato contando le lettere: le stesse, nello stesso numero, senza avanzi."
+     ],
+     "q": "Quali tuoi nomi, luoghi o parole preferite potrebbero nascondere un anagramma?",
+     "c": "Riordina le lettere di «mare»: trovi il nome di un metallo rossastro."
+    },
+    "pt": {
+     "t": "Anagramas",
+     "g": "Perceber o que é um anagrama e criar os primeiros com palavras do dia a dia.",
+     "p": [
+      "Um anagrama reordena todas as letras de uma palavra uma só vez para formar outra, como «amor» e «Roma».",
+      "A palavra vem do grego e quer dizer «letras trocadas»; as pessoas gostam de anagramas há séculos.",
+      "Confirma o resultado contando letras: as mesmas, no mesmo número, sem sobras."
+     ],
+     "q": "Que nomes, lugares ou palavras favoritas tuas podem esconder um anagrama?",
+     "c": "Reordena as letras de «ator»: aparece um caminho a seguir, uma «rota»."
+    },
+    "pt_BR": {
+     "t": "Anagramas",
+     "g": "Entender o que é um anagrama e criar os primeiros com palavras do dia a dia.",
+     "p": [
+      "Um anagrama reordena todas as letras de uma palavra uma só vez para formar outra, como «amor» e «Roma».",
+      "A palavra vem do grego e quer dizer «letras trocadas»; as pessoas gostam de anagramas há séculos.",
+      "Confira o resultado contando letras: as mesmas, no mesmo número, sem sobras."
+     ],
+     "q": "Que nomes, lugares ou palavras favoritas suas podem esconder um anagrama?",
+     "c": "Reordene as letras de «ator»: aparece um caminho a seguir, uma «rota»."
+    }
+   }
+  }
+ ]
+}

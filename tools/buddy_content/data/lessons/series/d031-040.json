@@ -1,0 +1,835 @@
+{
+ "topic": "series",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Binge-watching versus weekly viewing",
+     "g": "Compare two ways of watching and how each changes a story.",
+     "p": [
+      "Bingeing lets you follow the plot closely and finish quickly.",
+      "Weekly viewing leaves time to wonder, guess and chat with friends.",
+      "Neither is better; the right choice depends on the show and your mood."
+     ],
+     "q": "Are you a binger, a weekly watcher or a bit of both?",
+     "c": "Next time, try the other style on one show and note what changes."
+    },
+    "de": {
+     "t": "Marathon-Schauen oder wöchentlich",
+     "g": "Vergleiche zwei Arten zu schauen und wie jede eine Geschichte verändert.",
+     "p": [
+      "Beim Marathon folgst du der Handlung eng und bist schnell fertig.",
+      "Wöchentliches Schauen lässt Zeit zum Grübeln, Raten und Reden mit Freunden.",
+      "Keine ist besser; die Wahl hängt von der Serie und deiner Laune ab."
+     ],
+     "q": "Bist du ein Marathon-Seher, ein Wochenseher oder beides ein bisschen?",
+     "c": "Probiere bei einer Serie den anderen Stil aus und notiere, was sich ändert."
+    },
+    "es": {
+     "t": "Maratón o ver cada semana",
+     "g": "Compara dos formas de ver y cómo cada una cambia una historia.",
+     "p": [
+      "El maratón permite seguir la trama de cerca y terminar rápido.",
+      "Ver cada semana deja tiempo para dudar, adivinar y charlar con amigos.",
+      "Ninguna es mejor; la elección depende de la serie y de tu ánimo."
+     ],
+     "q": "¿Eres de maratones, de ver cada semana o un poco de ambos?",
+     "c": "La próxima vez prueba el otro estilo con una serie y anota qué cambia."
+    },
+    "fr": {
+     "t": "Marathon ou épisode par semaine",
+     "g": "Compare deux façons de regarder et comment chacune change une histoire.",
+     "p": [
+      "Le marathon permet de suivre l'intrigue de près et de finir vite.",
+      "Regarder chaque semaine laisse le temps de s'interroger, deviner et discuter avec des amis.",
+      "Aucune n'est meilleure ; le choix dépend de la série et de ton humeur."
+     ],
+     "q": "Es-tu plutôt marathon, plutôt hebdomadaire ou un peu des deux ?",
+     "c": "La prochaine fois, essaie l'autre style sur une série et note ce qui change."
+    },
+    "it": {
+     "t": "Maratona o una puntata a settimana",
+     "g": "Confronta due modi di guardare e come ognuno cambia una storia.",
+     "p": [
+      "La maratona permette di seguire la trama da vicino e finire in fretta.",
+      "Guardare ogni settimana lascia tempo per chiedersi, indovinare e chiacchierare con gli amici.",
+      "Nessuno è migliore; la scelta dipende dalla serie e dal tuo umore."
+     ],
+     "q": "Sei da maratona, da puntata settimanale o un po' di entrambi?",
+     "c": "La prossima volta prova l'altro stile con una serie e annota cosa cambia."
+    },
+    "pt": {
+     "t": "Maratona ou ver semana a semana",
+     "g": "Compara duas formas de ver e como cada uma muda uma história.",
+     "p": [
+      "A maratona deixa seguir o enredo de perto e acabar depressa.",
+      "Ver semana a semana dá tempo para pensar, adivinhar e conversar com amigos.",
+      "Nenhuma é melhor; a escolha depende da série e da tua disposição."
+     ],
+     "q": "És de maratonas, de ver semana a semana ou um pouco de ambos?",
+     "c": "Da próxima vez experimenta o outro estilo numa série e anota o que muda."
+    },
+    "pt_BR": {
+     "t": "Maratona ou assistir semana a semana",
+     "g": "Compare duas formas de assistir e como cada uma muda uma história.",
+     "p": [
+      "A maratona permite acompanhar o enredo de perto e terminar rápido.",
+      "Assistir semana a semana dá tempo para pensar, adivinhar e conversar com amigos.",
+      "Nenhuma é melhor; a escolha depende da série e do seu humor."
+     ],
+     "q": "Você é de maratonar, de assistir toda semana ou um pouco dos dois?",
+     "c": "Da próxima vez, teste o outro estilo numa série e anote o que muda."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The cliffhanger",
+     "g": "See how an open question at an episode's end brings viewers back.",
+     "p": [
+      "A cliffhanger stops the story at a moment of suspense or surprise.",
+      "It works because the mind wants answers and remembers unfinished business.",
+      "Writers also use small hooks, like a mysterious line or a surprising visitor."
+     ],
+     "q": "What is the best cliffhanger moment you remember, and how did you feel?",
+     "c": "Write a one-sentence cliffhanger for an imaginary episode about a lost key."
+    },
+    "de": {
+     "t": "Der Cliffhanger",
+     "g": "Sieh, wie eine offene Frage am Folgenende Zuschauer zurückbringt.",
+     "p": [
+      "Ein Cliffhanger hält die Geschichte in einem Moment der Spannung oder Überraschung an.",
+      "Er wirkt, weil der Kopf Antworten will und Unfertiges nicht vergisst.",
+      "Autoren nutzen auch kleine Haken, etwa einen rätselhaften Satz oder einen überraschenden Besucher."
+     ],
+     "q": "Welcher Cliffhanger ist dir am besten im Gedächtnis, und was hast du gefühlt?",
+     "c": "Schreibe einen Cliffhanger in einem Satz für eine erfundene Folge über einen verlorenen Schlüssel."
+    },
+    "es": {
+     "t": "El cliffhanger",
+     "g": "Mira cómo una pregunta abierta al final del episodio hace volver al público.",
+     "p": [
+      "Un cliffhanger detiene la historia en un momento de suspense o sorpresa.",
+      "Funciona porque la mente quiere respuestas y recuerda lo inacabado.",
+      "Los guionistas también usan pequeños ganchos, como una frase misteriosa o una visita inesperada."
+     ],
+     "q": "¿Cuál es el mejor cliffhanger que recuerdas y cómo te sentiste?",
+     "c": "Escribe un cliffhanger de una frase para un episodio imaginario sobre una llave perdida."
+    },
+    "fr": {
+     "t": "Le cliffhanger",
+     "g": "Vois comment une question ouverte en fin d'épisode fait revenir les spectateurs.",
+     "p": [
+      "Un cliffhanger arrête l'histoire à un moment de suspense ou de surprise.",
+      "Il marche parce que l'esprit veut des réponses et retient ce qui est inachevé.",
+      "Les scénaristes utilisent aussi de petits crochets, comme une phrase mystérieuse ou un visiteur inattendu."
+     ],
+     "q": "Quel est le meilleur cliffhanger dont tu te souviens, et qu'as-tu ressenti ?",
+     "c": "Écris un cliffhanger en une phrase pour un épisode imaginaire sur une clé perdue."
+    },
+    "it": {
+     "t": "Il cliffhanger",
+     "g": "Scopri come una domanda aperta a fine episodio fa tornare gli spettatori.",
+     "p": [
+      "Un cliffhanger ferma la storia in un momento di suspense o sorpresa.",
+      "Funziona perché la mente vuole risposte e ricorda ciò che è incompiuto.",
+      "Gli autori usano anche piccoli ganci, come una frase misteriosa o una visita inattesa."
+     ],
+     "q": "Qual è il miglior cliffhanger che ricordi e cosa hai provato?",
+     "c": "Scrivi un cliffhanger di una frase per un episodio immaginario su una chiave smarrita."
+    },
+    "pt": {
+     "t": "O cliffhanger",
+     "g": "Vê como uma pergunta em aberto no fim do episódio faz o público voltar.",
+     "p": [
+      "Um cliffhanger pára a história num momento de suspense ou surpresa.",
+      "Funciona porque a mente quer respostas e lembra o que ficou por acabar.",
+      "Os argumentistas usam também pequenos ganchos, como uma frase misteriosa ou uma visita inesperada."
+     ],
+     "q": "Qual é o melhor cliffhanger de que te lembras e o que sentiste?",
+     "c": "Escreve um cliffhanger de uma frase para um episódio imaginário sobre uma chave perdida."
+    },
+    "pt_BR": {
+     "t": "O cliffhanger",
+     "g": "Veja como uma pergunta em aberto no fim do episódio faz o público voltar.",
+     "p": [
+      "Um cliffhanger interrompe a história num momento de suspense ou surpresa.",
+      "Funciona porque a mente quer respostas e lembra do que ficou inacabado.",
+      "Os roteiristas também usam pequenos ganchos, como uma frase misteriosa ou uma visita inesperada."
+     ],
+     "q": "Qual é o melhor cliffhanger de que você lembra e o que sentiu?",
+     "c": "Escreva um cliffhanger de uma frase para um episódio imaginário sobre uma chave perdida."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Recaps and previously on",
+     "g": "Learn how series remind viewers of past events at the start.",
+     "p": [
+      "A recap shows short clips of key moments from earlier episodes.",
+      "It helps viewers who watched weeks ago, or who are just joining.",
+      "Good recaps choose only what matters for the episode ahead."
+     ],
+     "q": "Do you like recaps, or do you skip them? What do you remember best?",
+     "c": "Write a three-line Previously on for a story you know well."
+    },
+    "de": {
+     "t": "Rückblicke und Zuvor in der Serie",
+     "g": "Lerne, wie Serien zu Beginn an vergangene Ereignisse erinnern.",
+     "p": [
+      "Ein Rückblick zeigt kurze Ausschnitte wichtiger Momente aus früheren Folgen.",
+      "Er hilft Zuschauern, die vor Wochen schauten oder gerade einsteigen.",
+      "Gute Rückblicke wählen nur, was für die kommende Folge wichtig ist."
+     ],
+     "q": "Magst du Rückblicke oder überspringst du sie? Woran erinnerst du dich am besten?",
+     "c": "Schreibe einen Zuvor-in-der-Serie-Text in drei Zeilen zu einer Geschichte, die du kennst."
+    },
+    "es": {
+     "t": "Resúmenes y anteriormente en",
+     "g": "Aprende cómo las series recuerdan al principio lo ocurrido antes.",
+     "p": [
+      "Un resumen muestra clips cortos de momentos clave de episodios anteriores.",
+      "Ayuda a quien vio la serie hace semanas o se acaba de unir.",
+      "Los buenos resúmenes eligen solo lo que importa para el episodio que viene."
+     ],
+     "q": "¿Te gustan los resúmenes o los saltas? ¿Qué recuerdas mejor?",
+     "c": "Escribe un anteriormente en de tres líneas para una historia que conozcas bien."
+    },
+    "fr": {
+     "t": "Les résumés et Précédemment",
+     "g": "Apprends comment les séries rappellent au début les événements passés.",
+     "p": [
+      "Un résumé montre de courts extraits des moments clés des épisodes précédents.",
+      "Il aide ceux qui ont regardé il y a des semaines ou qui arrivent.",
+      "Les bons résumés ne choisissent que ce qui compte pour l'épisode à venir."
+     ],
+     "q": "Aimes-tu les résumés ou les passes-tu ? De quoi te souviens-tu le mieux ?",
+     "c": "Écris un Précédemment de trois lignes pour une histoire que tu connais bien."
+    },
+    "it": {
+     "t": "I riassunti e Nelle puntate precedenti",
+     "g": "Scopri come le serie ricordano all'inizio gli eventi passati.",
+     "p": [
+      "Un riassunto mostra brevi clip dei momenti chiave degli episodi precedenti.",
+      "Aiuta chi ha visto la serie settimane fa o sta arrivando adesso.",
+      "I buoni riassunti scelgono solo ciò che conta per l'episodio che segue."
+     ],
+     "q": "Ti piacciono i riassunti o li salti? Cosa ricordi meglio?",
+     "c": "Scrivi un Nelle puntate precedenti di tre righe per una storia che conosci bene."
+    },
+    "pt": {
+     "t": "Resumos e Anteriormente em",
+     "g": "Aprende como as séries recordam no início o que aconteceu antes.",
+     "p": [
+      "Um resumo mostra pequenos clips de momentos-chave de episódios anteriores.",
+      "Ajuda quem viu há semanas ou acabou de chegar.",
+      "Os bons resumos escolhem só o que importa para o episódio seguinte."
+     ],
+     "q": "Gostas de resumos ou saltas-os? De que te lembras melhor?",
+     "c": "Escreve um Anteriormente em de três linhas para uma história que conheças bem."
+    },
+    "pt_BR": {
+     "t": "Resumos e Anteriormente em",
+     "g": "Aprenda como as séries lembram no início o que aconteceu antes.",
+     "p": [
+      "Um resumo mostra pequenos trechos de momentos-chave de episódios anteriores.",
+      "Ajuda quem viu há semanas ou acabou de chegar.",
+      "Os bons resumos escolhem só o que importa para o episódio seguinte."
+     ],
+     "q": "Você gosta de resumos ou pula? Do que você lembra melhor?",
+     "c": "Escreva um Anteriormente em de três linhas para uma história que você conhece bem."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Spoiler etiquette",
+     "g": "Learn to talk about series without ruining surprises.",
+     "p": [
+      "A spoiler reveals a twist or ending someone has not yet seen.",
+      "Ask first: Have you seen it? is the kindest way to start.",
+      "Talk about feelings and themes instead of plot points to stay safe."
+     ],
+     "q": "How do you protect yourself from spoilers, and what do you do if one slips?",
+     "c": "Describe a show you love in two sentences with no plot reveals at all."
+    },
+    "de": {
+     "t": "Spoiler-Etikette",
+     "g": "Lerne, über Serien zu sprechen, ohne Überraschungen zu verderben.",
+     "p": [
+      "Ein Spoiler verrät eine Wendung oder ein Ende, das jemand noch nicht kennt.",
+      "Erst fragen: Hast du sie gesehen? ist der freundlichste Einstieg.",
+      "Sprich über Gefühle und Themen statt über Handlung, dann bist du sicher."
+     ],
+     "q": "Wie schützt du dich vor Spoilern, und was tust du, wenn einer durchrutscht?",
+     "c": "Beschreibe eine geliebte Serie in zwei Sätzen ganz ohne Handlungsverrat."
+    },
+    "es": {
+     "t": "Etiqueta con los spoilers",
+     "g": "Aprende a hablar de series sin arruinar sorpresas.",
+     "p": [
+      "Un spoiler revela un giro o final que alguien aún no ha visto.",
+      "Preguntar primero: ¿La has visto? es la forma más amable de empezar.",
+      "Habla de sentimientos y temas en lugar de la trama para ir sobre seguro."
+     ],
+     "q": "¿Cómo te proteges de los spoilers y qué haces si se te escapa uno?",
+     "c": "Describe una serie que amas en dos frases sin revelar nada de la trama."
+    },
+    "fr": {
+     "t": "Étiquette du spoiler",
+     "g": "Apprends à parler des séries sans gâcher les surprises.",
+     "p": [
+      "Un spoiler révèle un rebondissement ou une fin que quelqu'un n'a pas encore vue.",
+      "Demander d'abord : Tu l'as vue ? est la façon la plus aimable de commencer.",
+      "Parle de sentiments et de thèmes plutôt que de l'intrigue pour rester prudent."
+     ],
+     "q": "Comment te protèges-tu des spoilers, et que fais-tu si l'un t'échappe ?",
+     "c": "Décris une série que tu aimes en deux phrases, sans rien révéler de l'intrigue."
+    },
+    "it": {
+     "t": "Galateo degli spoiler",
+     "g": "Impara a parlare delle serie senza rovinare le sorprese.",
+     "p": [
+      "Uno spoiler rivela un colpo di scena o un finale che qualcuno non ha ancora visto.",
+      "Chiedere prima: L'hai vista? è il modo più gentile per cominciare.",
+      "Parla di emozioni e temi invece che della trama per stare sicuro."
+     ],
+     "q": "Come ti proteggi dagli spoiler e cosa fai se ne sfugge uno?",
+     "c": "Descrivi una serie che ami in due frasi senza svelare nulla della trama."
+    },
+    "pt": {
+     "t": "Etiqueta dos spoilers",
+     "g": "Aprende a falar de séries sem estragar surpresas.",
+     "p": [
+      "Um spoiler revela uma reviravolta ou um final que alguém ainda não viu.",
+      "Perguntar primeiro: Já viste? é a forma mais simpática de começar.",
+      "Fala de sentimentos e temas em vez do enredo para ficares seguro."
+     ],
+     "q": "Como te proteges dos spoilers e o que fazes se escapar um?",
+     "c": "Descreve uma série de que gostes em duas frases sem revelar nada do enredo."
+    },
+    "pt_BR": {
+     "t": "Etiqueta dos spoilers",
+     "g": "Aprenda a falar de séries sem estragar surpresas.",
+     "p": [
+      "Um spoiler revela uma reviravolta ou um final que alguém ainda não viu.",
+      "Perguntar antes: Você já viu? é o jeito mais simpático de começar.",
+      "Fale de sentimentos e temas em vez do enredo para ficar seguro."
+     ],
+     "q": "Como você se protege de spoilers e o que faz se escapar um?",
+     "c": "Descreva uma série que você ama em duas frases sem revelar nada do enredo."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Subtitles or dubbing",
+     "g": "Weigh two ways to watch foreign series and what each gives you.",
+     "p": [
+      "Subtitles keep the original voices and acting, but you must read quickly.",
+      "Dubbing lets you watch the picture freely, though voices and jokes can shift.",
+      "Different countries have strong habits; both can be a good choice."
+     ],
+     "q": "Which do you prefer, subtitles or dubbing, and has that ever changed?",
+     "c": "Watch one scene of a foreign show both ways and note which felt better."
+    },
+    "de": {
+     "t": "Untertitel oder Synchronisation",
+     "g": "Wäge zwei Arten ab, fremde Serien zu sehen, und was jede bietet.",
+     "p": [
+      "Untertitel bewahren Originalstimmen und Spiel, doch man muss schnell lesen.",
+      "Synchronisation lässt das Bild frei genießen, doch Stimmen und Witze können sich ändern.",
+      "Verschiedene Länder haben feste Gewohnheiten; beides kann eine gute Wahl sein."
+     ],
+     "q": "Was bevorzugst du, Untertitel oder Synchronisation, und hat sich das je geändert?",
+     "c": "Sieh eine Szene einer fremden Serie auf beide Arten und notiere, was besser war."
+    },
+    "es": {
+     "t": "Subtítulos o doblaje",
+     "g": "Compara dos formas de ver series extranjeras y qué te da cada una.",
+     "p": [
+      "Los subtítulos conservan voces y actuación originales, pero hay que leer rápido.",
+      "El doblaje deja ver la imagen con libertad, aunque voces y chistes pueden cambiar.",
+      "Cada país tiene sus hábitos; ambas pueden ser una buena opción."
+     ],
+     "q": "¿Qué prefieres, subtítulos o doblaje, y ha cambiado alguna vez?",
+     "c": "Mira una escena de una serie extranjera de las dos formas y anota cuál te gustó más."
+    },
+    "fr": {
+     "t": "Sous-titres ou doublage",
+     "g": "Compare deux façons de regarder des séries étrangères et ce que chacune apporte.",
+     "p": [
+      "Les sous-titres gardent les voix et le jeu d'origine, mais il faut lire vite.",
+      "Le doublage laisse profiter librement de l'image, même si voix et blagues peuvent changer.",
+      "Chaque pays a ses habitudes ; les deux peuvent être un bon choix."
+     ],
+     "q": "Que préfères-tu, sous-titres ou doublage, et cela a-t-il déjà changé ?",
+     "c": "Regarde une scène d'une série étrangère des deux façons et note laquelle t'a plu."
+    },
+    "it": {
+     "t": "Sottotitoli o doppiaggio",
+     "g": "Confronta due modi di guardare serie straniere e cosa dà ciascuno.",
+     "p": [
+      "I sottotitoli conservano voci e recitazione originali, ma bisogna leggere in fretta.",
+      "Il doppiaggio permette di godersi le immagini, anche se voci e battute possono cambiare.",
+      "Ogni paese ha le sue abitudini; entrambi possono essere una buona scelta."
+     ],
+     "q": "Cosa preferisci, sottotitoli o doppiaggio, e è mai cambiato?",
+     "c": "Guarda una scena di una serie straniera nei due modi e annota quale ti è piaciuto di più."
+    },
+    "pt": {
+     "t": "Legendas ou dobragem",
+     "g": "Compara duas formas de ver séries estrangeiras e o que cada uma oferece.",
+     "p": [
+      "As legendas mantêm as vozes e a representação originais, mas é preciso ler depressa.",
+      "A dobragem deixa ver a imagem à vontade, embora vozes e piadas possam mudar.",
+      "Cada país tem os seus hábitos; ambas podem ser uma boa escolha."
+     ],
+     "q": "Preferes legendas ou dobragem, e isso já mudou alguma vez?",
+     "c": "Vê uma cena de uma série estrangeira das duas formas e anota qual preferiste."
+    },
+    "pt_BR": {
+     "t": "Legendas ou dublagem",
+     "g": "Compare duas formas de assistir a séries estrangeiras e o que cada uma oferece.",
+     "p": [
+      "As legendas mantêm as vozes e a atuação originais, mas é preciso ler rápido.",
+      "A dublagem deixa ver a imagem à vontade, embora vozes e piadas possam mudar.",
+      "Cada país tem seus hábitos; ambas podem ser uma boa escolha."
+     ],
+     "q": "Você prefere legendas ou dublagem, e isso já mudou alguma vez?",
+     "c": "Assista a uma cena de uma série estrangeira das duas formas e anote qual preferiu."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing what to watch next",
+     "g": "Use genre, mood, length and reviews to pick a new series.",
+     "p": [
+      "Start with your mood: do you want to laugh, think, relax or be thrilled?",
+      "Check length: a short limited series fits a busy week better than ten seasons.",
+      "Read a few reviews, but trust the first episode most of all."
+     ],
+     "q": "What do you ask a friend when you want a good recommendation?",
+     "c": "Choose one new series using mood and length, and give it one episode."
+    },
+    "de": {
+     "t": "Die nächste Serie wählen",
+     "g": "Nutze Genre, Stimmung, Länge und Kritiken, um eine neue Serie zu wählen.",
+     "p": [
+      "Beginne mit deiner Stimmung: lachen, nachdenken, entspannen oder mitfiebern?",
+      "Prüfe die Länge: Eine kurze Miniserie passt besser in eine volle Woche als zehn Staffeln.",
+      "Lies ein paar Kritiken, aber vertraue vor allem der ersten Folge."
+     ],
+     "q": "Was fragst du einen Freund, wenn du eine gute Empfehlung willst?",
+     "c": "Wähle eine neue Serie nach Stimmung und Länge und gib ihr eine Folge."
+    },
+    "es": {
+     "t": "Elegir qué ver después",
+     "g": "Usa género, estado de ánimo, duración y reseñas para elegir una serie nueva.",
+     "p": [
+      "Empieza por tu ánimo: ¿quieres reír, pensar, relajarte o emocionarte?",
+      "Mira la duración: una miniserie corta encaja mejor en una semana ocupada que diez temporadas.",
+      "Lee algunas reseñas, pero confía sobre todo en el primer episodio."
+     ],
+     "q": "¿Qué le preguntas a un amigo cuando quieres una buena recomendación?",
+     "c": "Elige una serie nueva por ánimo y duración, y dale un episodio."
+    },
+    "fr": {
+     "t": "Choisir quoi regarder ensuite",
+     "g": "Utilise genre, humeur, durée et critiques pour choisir une nouvelle série.",
+     "p": [
+      "Commence par ton humeur : rire, réfléchir, te détendre ou frissonner d'excitation ?",
+      "Vérifie la durée : une mini-série courte convient mieux à une semaine chargée que dix saisons.",
+      "Lis quelques critiques, mais fais surtout confiance au premier épisode."
+     ],
+     "q": "Que demandes-tu à un ami quand tu veux une bonne recommandation ?",
+     "c": "Choisis une nouvelle série selon l'humeur et la durée, et donne-lui un épisode."
+    },
+    "it": {
+     "t": "Scegliere cosa guardare dopo",
+     "g": "Usa genere, umore, durata e recensioni per scegliere una nuova serie.",
+     "p": [
+      "Parti dal tuo umore: vuoi ridere, pensare, rilassarti o emozionarti?",
+      "Controlla la durata: una miniserie breve va meglio in una settimana piena che dieci stagioni.",
+      "Leggi qualche recensione, ma fidati soprattutto del primo episodio."
+     ],
+     "q": "Cosa chiedi a un amico quando vuoi un buon consiglio?",
+     "c": "Scegli una nuova serie in base a umore e durata e dalle un episodio."
+    },
+    "pt": {
+     "t": "Escolher o que ver a seguir",
+     "g": "Usa género, disposição, duração e críticas para escolher uma série nova.",
+     "p": [
+      "Começa pela tua disposição: queres rir, pensar, relaxar ou vibrar?",
+      "Vê a duração: uma minissérie curta serve melhor numa semana cheia do que dez temporadas.",
+      "Lê algumas críticas, mas confia sobretudo no primeiro episódio."
+     ],
+     "q": "O que perguntas a um amigo quando queres uma boa recomendação?",
+     "c": "Escolhe uma série nova por disposição e duração e dá-lhe um episódio."
+    },
+    "pt_BR": {
+     "t": "Escolher o que assistir a seguir",
+     "g": "Use gênero, humor, duração e críticas para escolher uma série nova.",
+     "p": [
+      "Comece pelo seu humor: quer rir, pensar, relaxar ou vibrar?",
+      "Veja a duração: uma minissérie curta cabe melhor numa semana cheia do que dez temporadas.",
+      "Leia algumas críticas, mas confie sobretudo no primeiro episódio."
+     ],
+     "q": "O que você pergunta a um amigo quando quer uma boa recomendação?",
+     "c": "Escolha uma série nova por humor e duração e dê a ela um episódio."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rating a series",
+     "g": "Use simple criteria to judge story, characters and look and feel.",
+     "p": [
+      "Ask about the story: is it clear, surprising and satisfying?",
+      "Ask about the characters: do you care what happens to them?",
+      "Ask about the look, sound and pacing: do they suit the story?"
+     ],
+     "q": "How would you score your favourite show out of five in each area?",
+     "c": "Rate one show from one to five on story, characters and style."
+    },
+    "de": {
+     "t": "Eine Serie bewerten",
+     "g": "Nutze einfache Kriterien, um Geschichte, Figuren und Machart zu beurteilen.",
+     "p": [
+      "Frage nach der Geschichte: Ist sie klar, überraschend und befriedigend?",
+      "Frage nach den Figuren: Interessiert dich, was mit ihnen passiert?",
+      "Frage nach Optik, Ton und Tempo: Passen sie zur Geschichte?"
+     ],
+     "q": "Wie würdest du deine Lieblingsserie in jedem Bereich von fünf bewerten?",
+     "c": "Bewerte eine Serie von eins bis fünf nach Geschichte, Figuren und Stil."
+    },
+    "es": {
+     "t": "Valorar una serie",
+     "g": "Usa criterios sencillos para juzgar historia, personajes y estilo.",
+     "p": [
+      "Pregunta por la historia: ¿es clara, sorprendente y satisfactoria?",
+      "Pregunta por los personajes: ¿te importa lo que les pase?",
+      "Pregunta por imagen, sonido y ritmo: ¿encajan con la historia?"
+     ],
+     "q": "¿Qué nota de cinco darías a tu serie favorita en cada área?",
+     "c": "Puntúa una serie de uno a cinco en historia, personajes y estilo."
+    },
+    "fr": {
+     "t": "Noter une série",
+     "g": "Utilise des critères simples pour juger histoire, personnages et style.",
+     "p": [
+      "Interroge l'histoire : est-elle claire, surprenante et satisfaisante ?",
+      "Interroge les personnages : te soucies-tu de ce qui leur arrive ?",
+      "Interroge l'image, le son et le rythme : conviennent-ils à l'histoire ?"
+     ],
+     "q": "Quelle note sur cinq donnerais-tu à ta série préférée dans chaque domaine ?",
+     "c": "Note une série de un à cinq sur l'histoire, les personnages et le style."
+    },
+    "it": {
+     "t": "Valutare una serie",
+     "g": "Usa criteri semplici per giudicare storia, personaggi e stile.",
+     "p": [
+      "Chiediti della storia: è chiara, sorprendente e soddisfacente?",
+      "Chiediti dei personaggi: ti importa di ciò che succede loro?",
+      "Chiediti di immagini, suono e ritmo: si adattano alla storia?"
+     ],
+     "q": "Che voto da uno a cinque daresti alla tua serie preferita in ogni area?",
+     "c": "Dai a una serie un voto da uno a cinque per storia, personaggi e stile."
+    },
+    "pt": {
+     "t": "Avaliar uma série",
+     "g": "Usa critérios simples para julgar história, personagens e estilo.",
+     "p": [
+      "Pergunta pela história: é clara, surpreendente e satisfatória?",
+      "Pergunta pelas personagens: importa-te o que lhes acontece?",
+      "Pergunta pela imagem, pelo som e pelo ritmo: combinam com a história?"
+     ],
+     "q": "Que nota de um a cinco darias à tua série preferida em cada área?",
+     "c": "Dá a uma série uma nota de um a cinco em história, personagens e estilo."
+    },
+    "pt_BR": {
+     "t": "Avaliar uma série",
+     "g": "Use critérios simples para julgar história, personagens e estilo.",
+     "p": [
+      "Pergunte pela história: é clara, surpreendente e satisfatória?",
+      "Pergunte pelos personagens: você se importa com o que acontece com eles?",
+      "Pergunte pela imagem, pelo som e pelo ritmo: combinam com a história?"
+     ],
+     "q": "Que nota de um a cinco você daria para sua série favorita em cada área?",
+     "c": "Dê a uma série uma nota de um a cinco em história, personagens e estilo."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing a mini review",
+     "g": "Say what you liked and why in three or four clear sentences.",
+     "p": [
+      "Start with a hook: what the show is, in one sentence, without spoilers.",
+      "Add what worked best, like a character, a scene or the atmosphere.",
+      "End with who might enjoy it, so readers know if it suits them."
+     ],
+     "q": "Can you describe your favourite show to a friend in three sentences?",
+     "c": "Write a four-sentence mini review of any show: hook, praise, small doubt, audience."
+    },
+    "de": {
+     "t": "Eine Mini-Kritik schreiben",
+     "g": "Sage in drei oder vier klaren Sätzen, was dir gefiel und warum.",
+     "p": [
+      "Beginne mit einem Einstieg: Was die Serie ist, in einem Satz, ohne Spoiler.",
+      "Füge hinzu, was am besten gelang, etwa eine Figur, eine Szene oder die Stimmung.",
+      "Ende damit, wem sie gefallen könnte, damit Leser wissen, ob sie passt."
+     ],
+     "q": "Kannst du deine Lieblingsserie einem Freund in drei Sätzen beschreiben?",
+     "c": "Schreibe eine Mini-Kritik in vier Sätzen: Einstieg, Lob, kleiner Zweifel, Zielgruppe."
+    },
+    "es": {
+     "t": "Escribir una mini reseña",
+     "g": "Di qué te gustó y por qué en tres o cuatro frases claras.",
+     "p": [
+      "Empieza con un gancho: qué es la serie, en una frase, sin spoilers.",
+      "Añade lo que mejor funcionó, como un personaje, una escena o el ambiente.",
+      "Termina con quién podría disfrutarla, para que el lector sepa si le encaja."
+     ],
+     "q": "¿Puedes describir tu serie favorita a un amigo en tres frases?",
+     "c": "Escribe una mini reseña de cuatro frases: gancho, elogio, pequeña duda, público."
+    },
+    "fr": {
+     "t": "Écrire une mini-critique",
+     "g": "Dis ce que tu as aimé et pourquoi en trois ou quatre phrases claires.",
+     "p": [
+      "Commence par une accroche : ce qu'est la série, en une phrase, sans spoiler.",
+      "Ajoute ce qui a le mieux marché : un personnage, une scène ou l'ambiance.",
+      "Termine par à qui elle plaira, pour que le lecteur sache si elle lui convient."
+     ],
+     "q": "Peux-tu décrire ta série préférée à un ami en trois phrases ?",
+     "c": "Écris une mini-critique de quatre phrases : accroche, éloge, petit doute, public."
+    },
+    "it": {
+     "t": "Scrivere una mini recensione",
+     "g": "Di' cosa ti è piaciuto e perché in tre o quattro frasi chiare.",
+     "p": [
+      "Parti con un aggancio: cos'è la serie, in una frase, senza spoiler.",
+      "Aggiungi ciò che ha funzionato meglio, come un personaggio, una scena o l'atmosfera.",
+      "Concludi con a chi potrebbe piacere, così il lettore capisce se fa per lui."
+     ],
+     "q": "Sai descrivere la tua serie preferita a un amico in tre frasi?",
+     "c": "Scrivi una mini recensione di quattro frasi: aggancio, lode, piccolo dubbio, pubblico."
+    },
+    "pt": {
+     "t": "Escrever uma mini crítica",
+     "g": "Diz o que gostaste e porquê em três ou quatro frases claras.",
+     "p": [
+      "Começa com um gancho: o que é a série, numa frase, sem spoilers.",
+      "Acrescenta o que funcionou melhor, como uma personagem, uma cena ou o ambiente.",
+      "Termina com quem pode gostar dela, para o leitor saber se lhe serve."
+     ],
+     "q": "Consegues descrever a tua série preferida a um amigo em três frases?",
+     "c": "Escreve uma mini crítica de quatro frases: gancho, elogio, pequena dúvida, público."
+    },
+    "pt_BR": {
+     "t": "Escrever uma mini resenha",
+     "g": "Diga o que você gostou e por quê em três ou quatro frases claras.",
+     "p": [
+      "Comece com um gancho: o que é a série, em uma frase, sem spoilers.",
+      "Acrescente o que funcionou melhor, como um personagem, uma cena ou o clima.",
+      "Termine com quem pode gostar dela, para o leitor saber se combina com ele."
+     ],
+     "q": "Você consegue descrever sua série favorita para um amigo em três frases?",
+     "c": "Escreva uma mini resenha de quatro frases: gancho, elogio, pequena dúvida, público."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The joy of rewatching",
+     "g": "Find out why comfort shows feel good and what you notice the second time.",
+     "p": [
+      "Rewatching feels safe: you know the story and can relax into the world.",
+      "The second time, you spot hints, small jokes and details missed before.",
+      "Revisiting a show can also bring back warm memories of earlier times."
+     ],
+     "q": "Which show have you watched more than once, and why does it call you back?",
+     "c": "Rewatch one favourite scene and write down one thing you had never noticed."
+    },
+    "de": {
+     "t": "Die Freude am Wiederschauen",
+     "g": "Finde heraus, warum Wohlfühlserien guttun und was dir beim zweiten Mal auffällt.",
+     "p": [
+      "Wiederschauen fühlt sich sicher an: Du kennst die Geschichte und entspannst dich in der Welt.",
+      "Beim zweiten Mal entdeckst du Hinweise, kleine Witze und Details, die du übersehen hattest.",
+      "Eine Serie neu zu sehen kann auch warme Erinnerungen an frühere Zeiten wecken."
+     ],
+     "q": "Welche Serie hast du mehrmals gesehen, und warum ruft sie dich zurück?",
+     "c": "Sieh eine Lieblingsszene noch einmal und notiere etwas, das dir nie aufgefallen war."
+    },
+    "es": {
+     "t": "La alegría de volver a ver",
+     "g": "Descubre por qué las series refugio sientan bien y qué notas la segunda vez.",
+     "p": [
+      "Volver a ver da seguridad: conoces la historia y te relajas en su mundo.",
+      "La segunda vez descubres pistas, chistes pequeños y detalles que se te pasaron.",
+      "Revisitar una serie también puede traer recuerdos cálidos de otros tiempos."
+     ],
+     "q": "¿Qué serie has visto más de una vez y por qué te llama de nuevo?",
+     "c": "Vuelve a ver una escena favorita y anota algo en lo que nunca te habías fijado."
+    },
+    "fr": {
+     "t": "Le plaisir de revoir",
+     "g": "Découvre pourquoi les séries doudou font du bien et ce qu'on remarque la seconde fois.",
+     "p": [
+      "Revoir rassure : on connaît l'histoire et on se détend dans son monde.",
+      "La seconde fois, on repère indices, petites blagues et détails manqués.",
+      "Retrouver une série peut aussi ramener de chauds souvenirs d'autrefois."
+     ],
+     "q": "Quelle série as-tu vue plus d'une fois, et pourquoi t'appelle-t-elle encore ?",
+     "c": "Revois une scène préférée et note une chose que tu n'avais jamais remarquée."
+    },
+    "it": {
+     "t": "La gioia di rivedere",
+     "g": "Scopri perché le serie rifugio fanno bene e cosa noti la seconda volta.",
+     "p": [
+      "Rivedere dà sicurezza: conosci la storia e ti rilassi nel suo mondo.",
+      "La seconda volta noti indizi, piccole battute e dettagli che ti erano sfuggiti.",
+      "Rivedere una serie può anche riportare ricordi caldi di altri tempi."
+     ],
+     "q": "Quale serie hai visto più di una volta e perché ti richiama?",
+     "c": "Rivedi una scena preferita e annota una cosa che non avevi mai notato."
+    },
+    "pt": {
+     "t": "A alegria de rever",
+     "g": "Descobre porque é que as séries conforto sabem bem e o que reparas à segunda vez.",
+     "p": [
+      "Rever dá segurança: conheces a história e relaxas no seu mundo.",
+      "À segunda vez descobres pistas, pequenas piadas e pormenores que te escaparam.",
+      "Rever uma série pode também trazer memórias calorosas de outros tempos."
+     ],
+     "q": "Que série viste mais de uma vez e porque é que te chama de volta?",
+     "c": "Revê uma cena preferida e anota algo em que nunca tinhas reparado."
+    },
+    "pt_BR": {
+     "t": "A alegria de rever",
+     "g": "Descubra por que as séries conforto fazem bem e o que você nota na segunda vez.",
+     "p": [
+      "Rever dá segurança: você conhece a história e relaxa no mundo dela.",
+      "Na segunda vez, você descobre pistas, pequenas piadas e detalhes que escaparam.",
+      "Rever uma série também pode trazer lembranças calorosas de outros tempos."
+     ],
+     "q": "Que série você viu mais de uma vez e por que ela chama você de volta?",
+     "c": "Reveja uma cena favorita e anote algo que você nunca tinha percebido."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Theme songs you can't forget",
+     "g": "See how opening music sets the mood and becomes a show's identity.",
+     "p": [
+      "A theme song tells you the mood in seconds: playful, grand or mysterious.",
+      "A few notes can bring a whole show back to mind.",
+      "Some themes are sung, some instrumental, some barely ten seconds long."
+     ],
+     "q": "Which TV theme can you hum right now, and what show does it bring back?",
+     "c": "Choose a show and describe its theme using three mood words."
+    },
+    "de": {
+     "t": "Titelmelodien, die man nie vergisst",
+     "g": "Sieh, wie Titelmusik die Stimmung setzt und zur Identität einer Serie wird.",
+     "p": [
+      "Eine Titelmelodie verrät in Sekunden die Stimmung: verspielt, groß oder geheimnisvoll.",
+      "Wenige Töne können eine ganze Serie in Erinnerung rufen.",
+      "Manche Melodien werden gesungen, manche sind instrumental, manche kaum zehn Sekunden lang."
+     ],
+     "q": "Welche Fernsehmelodie kannst du sofort summen, und an welche Serie erinnert sie dich?",
+     "c": "Wähle eine Serie und beschreibe ihre Melodie mit drei Stimmungswörtern."
+    },
+    "es": {
+     "t": "Sintonías que no se olvidan",
+     "g": "Mira cómo la música de apertura marca el ánimo y se vuelve identidad de la serie.",
+     "p": [
+      "Una sintonía dice el ambiente en segundos: juguetón, grandioso o misterioso.",
+      "Unas pocas notas pueden devolverte una serie entera a la mente.",
+      "Algunas se cantan, otras son instrumentales, otras duran apenas diez segundos."
+     ],
+     "q": "¿Qué sintonía de tele puedes tararear ahora mismo y qué serie te recuerda?",
+     "c": "Elige una serie y describe su sintonía con tres palabras de ánimo."
+    },
+    "fr": {
+     "t": "Les génériques inoubliables",
+     "g": "Vois comment la musique d'ouverture installe l'ambiance et devient l'identité d'une série.",
+     "p": [
+      "Un générique donne l'ambiance en quelques secondes : joueuse, grandiose ou mystérieuse.",
+      "Quelques notes peuvent ramener toute une série à l'esprit.",
+      "Certains thèmes sont chantés, d'autres instrumentaux, d'autres durent à peine dix secondes."
+     ],
+     "q": "Quel thème télé peux-tu fredonner tout de suite, et quelle série te rappelle-t-il ?",
+     "c": "Choisis une série et décris son thème avec trois mots d'ambiance."
+    },
+    "it": {
+     "t": "Le sigle che non si dimenticano",
+     "g": "Scopri come la musica d'apertura crea l'atmosfera e diventa identità della serie.",
+     "p": [
+      "Una sigla dice l'atmosfera in pochi secondi: giocosa, grandiosa o misteriosa.",
+      "Poche note possono riportare alla mente un'intera serie.",
+      "Alcune sigle sono cantate, altre strumentali, altre durano appena dieci secondi."
+     ],
+     "q": "Quale sigla TV riesci a canticchiare adesso e quale serie ti ricorda?",
+     "c": "Scegli una serie e descrivi la sua sigla con tre parole d'atmosfera."
+    },
+    "pt": {
+     "t": "Genéricos que não se esquecem",
+     "g": "Vê como a música de abertura define o ambiente e se torna a identidade da série.",
+     "p": [
+      "Um genérico diz o ambiente em segundos: brincalhão, grandioso ou misterioso.",
+      "Poucas notas podem trazer uma série inteira à memória.",
+      "Alguns são cantados, outros instrumentais, outros duram apenas dez segundos."
+     ],
+     "q": "Que música de TV consegues trautear agora e que série te recorda?",
+     "c": "Escolhe uma série e descreve o seu genérico com três palavras de ambiente."
+    },
+    "pt_BR": {
+     "t": "Temas de abertura inesquecíveis",
+     "g": "Veja como a música de abertura define o clima e vira a identidade da série.",
+     "p": [
+      "Um tema diz o clima em segundos: brincalhão, grandioso ou misterioso.",
+      "Poucas notas podem trazer uma série inteira à memória.",
+      "Alguns são cantados, outros instrumentais, outros duram apenas dez segundos."
+     ],
+     "q": "Que tema de TV você consegue cantarolar agora e que série ele lembra?",
+     "c": "Escolha uma série e descreva o tema dela com três palavras de clima."
+    }
+   }
+  }
+ ]
+}

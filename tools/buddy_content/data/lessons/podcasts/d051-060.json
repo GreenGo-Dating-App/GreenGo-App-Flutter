@@ -1,0 +1,835 @@
+{
+ "topic": "podcasts",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Podcasts for focus and relaxation",
+     "g": "Find calm, slow shows for winding down, reading or quiet work.",
+     "p": [
+      "Gentle voices, soft music and slow pacing help you settle.",
+      "Some shows are built as quiet company for reading or creative work.",
+      "Pick a volume low enough that it supports you instead of distracting you."
+     ],
+     "q": "What helps you relax after a long day?",
+     "c": "Try a calm show for ten minutes while you do something quiet."
+    },
+    "de": {
+     "t": "Podcasts für Fokus und Entspannung",
+     "g": "Ruhige, langsame Sendungen zum Abschalten, Lesen oder stillen Arbeiten finden.",
+     "p": [
+      "Sanfte Stimmen, leise Musik und langsames Tempo helfen beim Ankommen.",
+      "Manche Sendungen sind stille Gesellschaft fürs Lesen oder kreative Arbeit.",
+      "Wähle eine Lautstärke, die dich unterstützt, statt abzulenken."
+     ],
+     "q": "Was hilft dir, nach einem langen Tag zu entspannen?",
+     "c": "Probiere zehn Minuten eine ruhige Sendung, während du etwas Ruhiges tust."
+    },
+    "es": {
+     "t": "Pódcast para concentrarse y relajarse",
+     "g": "Encontrar programas calmados y lentos para desconectar, leer o trabajar en silencio.",
+     "p": [
+      "Voces suaves, música tenue y ritmo lento ayudan a serenarse.",
+      "Algunos programas son compañía tranquila para leer o trabajar creando.",
+      "Elige un volumen bajo que te apoye en vez de distraerte."
+     ],
+     "q": "¿Qué te ayuda a relajarte tras un día largo?",
+     "c": "Prueba diez minutos de un programa calmado mientras haces algo tranquilo."
+    },
+    "fr": {
+     "t": "Podcasts pour se concentrer et se détendre",
+     "g": "Trouver des émissions calmes et lentes pour décompresser, lire ou travailler au calme.",
+     "p": [
+      "Voix douces, musique légère et rythme lent aident à se poser.",
+      "Certaines émissions sont une compagnie tranquille pour lire ou créer.",
+      "Choisis un volume assez bas pour t'aider au lieu de te distraire."
+     ],
+     "q": "Qu'est-ce qui t'aide à te détendre après une longue journée ?",
+     "c": "Essaie dix minutes d'une émission calme en faisant quelque chose de tranquille."
+    },
+    "it": {
+     "t": "Podcast per concentrarsi e rilassarsi",
+     "g": "Trovare programmi calmi e lenti per staccare, leggere o lavorare in silenzio.",
+     "p": [
+      "Voci dolci, musica lieve e ritmo lento aiutano a rilassarsi.",
+      "Alcuni programmi sono compagnia tranquilla per leggere o lavorare creando.",
+      "Scegli un volume abbastanza basso da aiutarti invece di distrarti."
+     ],
+     "q": "Cosa ti aiuta a rilassarti dopo una lunga giornata?",
+     "c": "Prova dieci minuti di un programma calmo mentre fai qualcosa di tranquillo."
+    },
+    "pt": {
+     "t": "Podcasts para concentração e relaxamento",
+     "g": "Encontrar programas calmos e lentos para descontrair, ler ou trabalhar em silêncio.",
+     "p": [
+      "Vozes suaves, música baixa e ritmo lento ajudam a acalmar.",
+      "Alguns programas são companhia tranquila para ler ou trabalhar a criar.",
+      "Escolhe um volume baixo que te apoie em vez de distrair."
+     ],
+     "q": "O que te ajuda a relaxar depois de um dia longo?",
+     "c": "Experimenta dez minutos de um programa calmo enquanto fazes algo sossegado."
+    },
+    "pt_BR": {
+     "t": "Podcasts para foco e relaxamento",
+     "g": "Encontrar programas calmos e lentos para relaxar, ler ou trabalhar em silêncio.",
+     "p": [
+      "Vozes suaves, música baixa e ritmo lento ajudam a acalmar.",
+      "Alguns programas são companhia tranquila para ler ou trabalhar criando.",
+      "Escolha um volume baixo que ajude em vez de distrair."
+     ],
+     "q": "O que ajuda você a relaxar depois de um dia longo?",
+     "c": "Teste dez minutos de um programa calmo enquanto faz algo tranquilo."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Story podcasts for long journeys",
+     "g": "Pick serialised shows that suit road trips, trains and flights.",
+     "p": [
+      "Serials with many episodes make hours of travel fly by.",
+      "Download episodes before you leave so signal does not matter.",
+      "Stories with strong characters keep you hooked between stops."
+     ],
+     "q": "What story would you love to hear on a long trip?",
+     "c": "Choose a serial for your next journey and download the first three episodes."
+    },
+    "de": {
+     "t": "Erzähl-Podcasts für lange Reisen",
+     "g": "Serielle Sendungen für Autofahrten, Zugreisen und Flüge auswählen.",
+     "p": [
+      "Serien mit vielen Folgen lassen Reisestunden verfliegen.",
+      "Lade Folgen vor der Abreise herunter, damit Empfang keine Rolle spielt.",
+      "Geschichten mit starken Figuren fesseln dich zwischen den Stopps."
+     ],
+     "q": "Welche Geschichte würdest du gern auf einer langen Reise hören?",
+     "c": "Wähle eine Serie für die nächste Reise und lade die ersten drei Folgen herunter."
+    },
+    "es": {
+     "t": "Pódcast de historias para viajes largos",
+     "g": "Elegir programas por entregas para viajes en coche, tren y avión.",
+     "p": [
+      "Las series con muchos episodios hacen volar las horas de viaje.",
+      "Descarga episodios antes de salir para no depender de la cobertura.",
+      "Las historias con personajes fuertes te enganchan entre paradas."
+     ],
+     "q": "¿Qué historia te encantaría oír en un viaje largo?",
+     "c": "Elige una serie para tu próximo viaje y descarga los tres primeros episodios."
+    },
+    "fr": {
+     "t": "Podcasts d'histoires pour longs trajets",
+     "g": "Choisir des séries pour voyages en voiture, en train ou en avion.",
+     "p": [
+      "Les séries à nombreux épisodes font passer les heures de voyage.",
+      "Télécharge les épisodes avant de partir pour ne pas dépendre du réseau.",
+      "Des histoires aux personnages forts te captivent entre deux arrêts."
+     ],
+     "q": "Quelle histoire aimerais-tu entendre lors d'un long voyage ?",
+     "c": "Choisis une série pour ton prochain voyage et télécharge les trois premiers épisodes."
+    },
+    "it": {
+     "t": "Podcast di storie per viaggi lunghi",
+     "g": "Scegliere serie per viaggi in auto, in treno e in aereo.",
+     "p": [
+      "Le serie con molti episodi fanno volare le ore di viaggio.",
+      "Scarica gli episodi prima di partire, così il segnale non conta.",
+      "Storie con personaggi forti ti tengono incollato tra una tappa e l'altra."
+     ],
+     "q": "Quale storia ameresti ascoltare in un lungo viaggio?",
+     "c": "Scegli una serie per il tuo prossimo viaggio e scarica i primi tre episodi."
+    },
+    "pt": {
+     "t": "Podcasts de histórias para viagens longas",
+     "g": "Escolher séries para viagens de carro, comboio e avião.",
+     "p": [
+      "Séries com muitos episódios fazem voar as horas de viagem.",
+      "Descarrega episódios antes de partir para a cobertura não importar.",
+      "Histórias com personagens fortes prendem-te entre paragens."
+     ],
+     "q": "Que história gostarias de ouvir numa viagem longa?",
+     "c": "Escolhe uma série para a próxima viagem e descarrega os três primeiros episódios."
+    },
+    "pt_BR": {
+     "t": "Podcasts de histórias para viagens longas",
+     "g": "Escolher séries para viagens de carro, trem e avião.",
+     "p": [
+      "Séries com muitos episódios fazem as horas de viagem voarem.",
+      "Baixe episódios antes de sair para o sinal não importar.",
+      "Histórias com personagens fortes prendem você entre as paradas."
+     ],
+     "q": "Que história você gostaria de ouvir numa viagem longa?",
+     "c": "Escolha uma série para a próxima viagem e baixe os três primeiros episódios."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Radio shows you can stream as podcasts",
+     "g": "Learn how many broadcasters publish their radio programmes as podcasts.",
+     "p": [
+      "Many radio programmes are shared again as on-demand episodes.",
+      "You can catch a show you missed, at a time that suits you.",
+      "Radio often offers news, talk, music and documentaries for free."
+     ],
+     "q": "Which radio programme would you like to catch up on?",
+     "c": "Find the on-demand version of one radio show and play a segment."
+    },
+    "de": {
+     "t": "Radiosendungen als Podcast hören",
+     "g": "Erfahren, wie viele Sender ihre Radiosendungen als Podcast anbieten.",
+     "p": [
+      "Viele Radiosendungen werden als Folgen auf Abruf erneut bereitgestellt.",
+      "So holst du Verpasstes zu einer Zeit nach, die dir passt.",
+      "Radio bietet oft Nachrichten, Gespräche, Musik und Dokumentationen kostenlos."
+     ],
+     "q": "Welche Radiosendung möchtest du nachhören?",
+     "c": "Finde die Abrufversion einer Radiosendung und spiele einen Abschnitt ab."
+    },
+    "es": {
+     "t": "Programas de radio como pódcast",
+     "g": "Saber cómo muchas emisoras publican sus programas de radio como pódcast.",
+     "p": [
+      "Muchos programas de radio se ofrecen otra vez como episodios a la carta.",
+      "Puedes ponerte al día con un programa perdido, a la hora que te convenga.",
+      "La radio suele ofrecer noticias, tertulias, música y documentales gratis."
+     ],
+     "q": "¿Qué programa de radio te gustaría recuperar?",
+     "c": "Busca la versión a la carta de un programa de radio y escucha un fragmento."
+    },
+    "fr": {
+     "t": "Des émissions de radio en podcast",
+     "g": "Voir comment de nombreux diffuseurs publient leurs émissions de radio en podcast.",
+     "p": [
+      "Beaucoup d'émissions de radio sont proposées à nouveau en épisodes à la demande.",
+      "Tu peux rattraper une émission manquée au moment qui te convient.",
+      "La radio propose souvent gratuitement infos, débats, musique et documentaires."
+     ],
+     "q": "Quelle émission de radio aimerais-tu rattraper ?",
+     "c": "Trouve la version à la demande d'une émission de radio et écoute un passage."
+    },
+    "it": {
+     "t": "Programmi radio come podcast",
+     "g": "Scoprire come molte emittenti pubblicano i programmi radio come podcast.",
+     "p": [
+      "Molti programmi radio vengono riproposti come episodi su richiesta.",
+      "Puoi recuperare un programma perso, all'ora che preferisci.",
+      "La radio offre spesso notizie, dibattiti, musica e documentari gratis."
+     ],
+     "q": "Quale programma radio ti piacerebbe recuperare?",
+     "c": "Trova la versione on demand di un programma radio e ascolta un segmento."
+    },
+    "pt": {
+     "t": "Programas de rádio como podcast",
+     "g": "Saber como muitas emissoras publicam os seus programas de rádio como podcasts.",
+     "p": [
+      "Muitos programas de rádio são oferecidos de novo como episódios a pedido.",
+      "Podes pôr em dia um programa perdido, à hora que te convier.",
+      "A rádio oferece muitas vezes notícias, conversas, música e documentários grátis."
+     ],
+     "q": "Que programa de rádio gostarias de pôr em dia?",
+     "c": "Procura a versão a pedido de um programa de rádio e ouve um excerto."
+    },
+    "pt_BR": {
+     "t": "Programas de rádio como podcast",
+     "g": "Saber como muitas emissoras publicam seus programas de rádio como podcasts.",
+     "p": [
+      "Muitos programas de rádio são oferecidos de novo como episódios sob demanda.",
+      "Dá para recuperar um programa perdido, na hora que for melhor para você.",
+      "A rádio costuma oferecer notícias, bate-papos, música e documentários de graça."
+     ],
+     "q": "Que programa de rádio você gostaria de colocar em dia?",
+     "c": "Ache a versão sob demanda de um programa de rádio e ouça um trecho."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Listening with others",
+     "g": "Share listening in the car, at home or with a group.",
+     "p": [
+      "Listening together creates shared jokes and things to talk about.",
+      "Pick episodes that suit everyone, like stories or light quizzes.",
+      "Pause for comments; the chat can be as fun as the episode."
+     ],
+     "q": "Who would you enjoy listening to a podcast with?",
+     "c": "Play one episode with another person and pause once to share a thought."
+    },
+    "de": {
+     "t": "Gemeinsam hören",
+     "g": "Hören im Auto, zu Hause oder in der Gruppe teilen.",
+     "p": [
+      "Gemeinsames Hören schafft gemeinsame Witze und Gesprächsstoff.",
+      "Wähle Folgen, die allen gefallen, etwa Geschichten oder leichte Quiz.",
+      "Pausiere für Kommentare; das Gespräch kann so schön sein wie die Folge."
+     ],
+     "q": "Mit wem würdest du gern gemeinsam einen Podcast hören?",
+     "c": "Spiele eine Folge mit einer anderen Person und pausiere einmal für einen Gedanken."
+    },
+    "es": {
+     "t": "Escuchar en compañía",
+     "g": "Compartir la escucha en el coche, en casa o en grupo.",
+     "p": [
+      "Escuchar juntos crea chistes compartidos y temas de conversación.",
+      "Elige episodios que gusten a todos, como historias o concursos ligeros.",
+      "Haz pausas para comentar; la charla puede ser tan divertida como el episodio."
+     ],
+     "q": "¿Con quién disfrutarías escuchando un pódcast?",
+     "c": "Pon un episodio con otra persona y haz una pausa para compartir una idea."
+    },
+    "fr": {
+     "t": "Écouter à plusieurs",
+     "g": "Partager l'écoute en voiture, à la maison ou en groupe.",
+     "p": [
+      "Écouter ensemble crée des blagues partagées et de quoi discuter.",
+      "Choisis des épisodes qui plaisent à tous, comme des histoires ou des quiz légers.",
+      "Fais des pauses pour commenter ; la discussion peut être aussi drôle que l'épisode."
+     ],
+     "q": "Avec qui aimerais-tu écouter un podcast ?",
+     "c": "Lance un épisode avec une autre personne et fais une pause pour partager une idée."
+    },
+    "it": {
+     "t": "Ascoltare insieme",
+     "g": "Condividere l'ascolto in auto, a casa o in gruppo.",
+     "p": [
+      "Ascoltare insieme crea battute condivise e cose di cui parlare.",
+      "Scegli episodi che piacciono a tutti, come storie o quiz leggeri.",
+      "Fai pause per commentare; la chiacchierata può essere divertente quanto l'episodio."
+     ],
+     "q": "Con chi ti piacerebbe ascoltare un podcast?",
+     "c": "Metti un episodio con un'altra persona e fai una pausa per condividere un pensiero."
+    },
+    "pt": {
+     "t": "Ouvir em companhia",
+     "g": "Partilhar a escuta no carro, em casa ou em grupo.",
+     "p": [
+      "Ouvir juntos cria piadas partilhadas e assuntos de conversa.",
+      "Escolhe episódios que agradem a todos, como histórias ou concursos leves.",
+      "Faz pausas para comentar; a conversa pode ser tão divertida como o episódio."
+     ],
+     "q": "Com quem gostarias de ouvir um podcast?",
+     "c": "Põe um episódio com outra pessoa e faz uma pausa para partilhar uma ideia."
+    },
+    "pt_BR": {
+     "t": "Ouvir em companhia",
+     "g": "Compartilhar a escuta no carro, em casa ou em grupo.",
+     "p": [
+      "Ouvir junto cria piadas compartilhadas e assuntos de conversa.",
+      "Escolha episódios que agradem a todos, como histórias ou quizzes leves.",
+      "Faça pausas para comentar; o papo pode ser tão divertido quanto o episódio."
+     ],
+     "q": "Com quem você gostaria de ouvir um podcast?",
+     "c": "Toque um episódio com outra pessoa e pause uma vez para compartilhar uma ideia."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Starting a podcast listening club",
+     "g": "Pick an episode, listen separately and meet to talk about it.",
+     "p": [
+      "Choose one episode each week and agree on a date to talk.",
+      "Prepare two or three questions to start the conversation.",
+      "Take turns choosing, so everyone discovers new shows."
+     ],
+     "q": "Who would you invite to a listening club?",
+     "c": "Invite two people to listen to one episode and chat about it this week."
+    },
+    "de": {
+     "t": "Einen Podcast-Hörclub gründen",
+     "g": "Eine Folge wählen, getrennt hören und sich zum Austausch treffen.",
+     "p": [
+      "Wähle jede Woche eine Folge und vereinbart einen Gesprächstermin.",
+      "Bereite zwei oder drei Fragen für den Gesprächsstart vor.",
+      "Wechselt euch bei der Auswahl ab, damit alle neue Sendungen entdecken."
+     ],
+     "q": "Wen würdest du in einen Hörclub einladen?",
+     "c": "Lade zwei Personen ein, diese Woche eine Folge zu hören und darüber zu plaudern."
+    },
+    "es": {
+     "t": "Crear un club de escucha de pódcast",
+     "g": "Elegir un episodio, escucharlo por separado y reunirse a comentarlo.",
+     "p": [
+      "Elige un episodio cada semana y acordad un día para charlar.",
+      "Prepara dos o tres preguntas para arrancar la conversación.",
+      "Turnaos para elegir, así todos descubren programas nuevos."
+     ],
+     "q": "¿A quién invitarías a un club de escucha?",
+     "c": "Invita a dos personas a escuchar un episodio y comentarlo esta semana."
+    },
+    "fr": {
+     "t": "Lancer un club d'écoute de podcasts",
+     "g": "Choisir un épisode, l'écouter chacun de son côté et se retrouver pour en parler.",
+     "p": [
+      "Choisissez un épisode chaque semaine et fixez une date pour en discuter.",
+      "Prépare deux ou trois questions pour lancer la conversation.",
+      "Choisissez à tour de rôle, pour que chacun découvre de nouvelles émissions."
+     ],
+     "q": "Qui inviterais-tu dans un club d'écoute ?",
+     "c": "Invite deux personnes à écouter un épisode et à en discuter cette semaine."
+    },
+    "it": {
+     "t": "Avviare un club di ascolto di podcast",
+     "g": "Scegliere un episodio, ascoltarlo separatamente e incontrarsi per parlarne.",
+     "p": [
+      "Scegliete un episodio ogni settimana e fissate un giorno per parlarne.",
+      "Prepara due o tre domande per iniziare la conversazione.",
+      "Scegliete a turno, così tutti scoprono programmi nuovi."
+     ],
+     "q": "Chi inviteresti in un club di ascolto?",
+     "c": "Invita due persone ad ascoltare un episodio e a parlarne questa settimana."
+    },
+    "pt": {
+     "t": "Criar um clube de escuta de podcasts",
+     "g": "Escolher um episódio, ouvi-lo em separado e encontrar-se para conversar.",
+     "p": [
+      "Escolham um episódio por semana e combinem um dia para conversar.",
+      "Prepara duas ou três perguntas para começar a conversa.",
+      "Revezem-se na escolha, para todos descobrirem programas novos."
+     ],
+     "q": "Quem convidarias para um clube de escuta?",
+     "c": "Convida duas pessoas a ouvir um episódio e a conversar sobre ele esta semana."
+    },
+    "pt_BR": {
+     "t": "Criar um clube de escuta de podcasts",
+     "g": "Escolher um episódio, ouvir separadamente e se encontrar para conversar.",
+     "p": [
+      "Escolham um episódio por semana e combinem um dia para conversar.",
+      "Prepare duas ou três perguntas para começar a conversa.",
+      "Revezem na escolha, para todos descobrirem programas novos."
+     ],
+     "q": "Quem você convidaria para um clube de escuta?",
+     "c": "Convide duas pessoas para ouvir um episódio e conversar sobre ele esta semana."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pairing podcasts with reading",
+     "g": "Match episodes with books or articles on the same subject.",
+     "p": [
+      "An episode can introduce a topic before you read a book about it.",
+      "After a book, an interview with the author adds new angles.",
+      "Comparing audio and text shows what each does best."
+     ],
+     "q": "What book would you like to pair with a podcast?",
+     "c": "Pick a book or article you know and find an episode on the same subject."
+    },
+    "de": {
+     "t": "Podcasts mit Lektüre kombinieren",
+     "g": "Folgen mit Büchern oder Artikeln zum selben Thema verbinden.",
+     "p": [
+      "Eine Folge kann in ein Thema einführen, bevor du ein Buch darüber liest.",
+      "Nach einem Buch bringt ein Interview mit der Autorin neue Blickwinkel.",
+      "Audio und Text zu vergleichen zeigt, was jedes am besten kann."
+     ],
+     "q": "Welches Buch würdest du gern mit einem Podcast kombinieren?",
+     "c": "Wähle ein bekanntes Buch oder einen Artikel und finde eine Folge zum selben Thema."
+    },
+    "es": {
+     "t": "Combinar pódcast con lectura",
+     "g": "Emparejar episodios con libros o artículos sobre el mismo tema.",
+     "p": [
+      "Un episodio puede introducir un tema antes de leer un libro sobre él.",
+      "Tras un libro, una entrevista con el autor aporta ángulos nuevos.",
+      "Comparar audio y texto muestra qué hace mejor cada uno."
+     ],
+     "q": "¿Qué libro te gustaría combinar con un pódcast?",
+     "c": "Elige un libro o artículo que conozcas y busca un episodio sobre el mismo tema."
+    },
+    "fr": {
+     "t": "Associer podcasts et lecture",
+     "g": "Associer des épisodes à des livres ou articles sur le même sujet.",
+     "p": [
+      "Un épisode peut introduire un sujet avant de lire un livre à ce propos.",
+      "Après un livre, une interview de l'auteur apporte de nouveaux angles.",
+      "Comparer audio et texte montre ce que chacun fait de mieux."
+     ],
+     "q": "Quel livre aimerais-tu associer à un podcast ?",
+     "c": "Choisis un livre ou article que tu connais et trouve un épisode sur le même sujet."
+    },
+    "it": {
+     "t": "Abbinare podcast e lettura",
+     "g": "Abbinare episodi a libri o articoli sullo stesso tema.",
+     "p": [
+      "Un episodio può introdurre un tema prima di leggere un libro su di esso.",
+      "Dopo un libro, un'intervista all'autore offre nuovi punti di vista.",
+      "Confrontare audio e testo mostra cosa fa meglio ciascuno."
+     ],
+     "q": "Quale libro vorresti abbinare a un podcast?",
+     "c": "Scegli un libro o un articolo che conosci e trova un episodio sullo stesso tema."
+    },
+    "pt": {
+     "t": "Combinar podcasts com leitura",
+     "g": "Juntar episódios a livros ou artigos sobre o mesmo tema.",
+     "p": [
+      "Um episódio pode introduzir um tema antes de leres um livro sobre ele.",
+      "Depois de um livro, uma entrevista com o autor traz ângulos novos.",
+      "Comparar áudio e texto mostra o que cada um faz melhor."
+     ],
+     "q": "Que livro gostarias de combinar com um podcast?",
+     "c": "Escolhe um livro ou artigo que conheças e procura um episódio sobre o mesmo tema."
+    },
+    "pt_BR": {
+     "t": "Combinar podcasts com leitura",
+     "g": "Juntar episódios a livros ou artigos sobre o mesmo assunto.",
+     "p": [
+      "Um episódio pode introduzir um assunto antes de você ler um livro sobre ele.",
+      "Depois de um livro, uma entrevista com o autor traz ângulos novos.",
+      "Comparar áudio e texto mostra o que cada um faz melhor."
+     ],
+     "q": "Que livro você gostaria de combinar com um podcast?",
+     "c": "Escolha um livro ou artigo que você conhece e ache um episódio sobre o mesmo assunto."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Spotting a good host",
+     "g": "Learn the qualities great hosts share: curiosity, warmth, preparation.",
+     "p": [
+      "Curious hosts ask follow-up questions instead of just reading a list.",
+      "Warm hosts make guests and listeners feel welcome.",
+      "Prepared hosts know the topic, keep time and stay clear."
+     ],
+     "q": "Which host do you think listens best, and how can you tell?",
+     "c": "Listen to one host and note one moment that shows curiosity or warmth."
+    },
+    "de": {
+     "t": "Gute Moderation erkennen",
+     "g": "Eigenschaften starker Moderierender kennenlernen: Neugier, Wärme, Vorbereitung.",
+     "p": [
+      "Neugierige Moderierende stellen Nachfragen, statt nur eine Liste abzulesen.",
+      "Warme Moderierende lassen Gäste und Hörer sich willkommen fühlen.",
+      "Vorbereitete Moderierende kennen das Thema, halten die Zeit und bleiben klar."
+     ],
+     "q": "Welche Moderation hört deiner Meinung nach am besten zu, und woran merkst du es?",
+     "c": "Höre einer Moderation zu und notiere einen Moment von Neugier oder Wärme."
+    },
+    "es": {
+     "t": "Reconocer a un buen presentador",
+     "g": "Conocer las cualidades de los grandes presentadores: curiosidad, calidez, preparación.",
+     "p": [
+      "Los presentadores curiosos hacen preguntas de seguimiento en vez de leer una lista.",
+      "Los cálidos hacen que invitados y oyentes se sientan bienvenidos.",
+      "Los preparados conocen el tema, controlan el tiempo y son claros."
+     ],
+     "q": "¿Qué presentador crees que escucha mejor y cómo lo notas?",
+     "c": "Escucha a un presentador y apunta un momento que muestre curiosidad o calidez."
+    },
+    "fr": {
+     "t": "Reconnaître un bon animateur",
+     "g": "Connaître les qualités des grands animateurs : curiosité, chaleur, préparation.",
+     "p": [
+      "Les animateurs curieux relancent au lieu de lire simplement une liste.",
+      "Les animateurs chaleureux mettent invités et auditeurs à l'aise.",
+      "Les animateurs préparés connaissent le sujet, tiennent le temps et restent clairs."
+     ],
+     "q": "Quel animateur t'a l'air de mieux écouter, et à quoi le vois-tu ?",
+     "c": "Écoute un animateur et note un moment de curiosité ou de chaleur."
+    },
+    "it": {
+     "t": "Riconoscere un buon conduttore",
+     "g": "Conoscere le qualità dei grandi conduttori: curiosità, calore, preparazione.",
+     "p": [
+      "I conduttori curiosi fanno domande di approfondimento invece di leggere un elenco.",
+      "I conduttori calorosi fanno sentire ospiti e ascoltatori i benvenuti.",
+      "I conduttori preparati conoscono il tema, rispettano i tempi e restano chiari."
+     ],
+     "q": "Quale conduttore secondo te ascolta meglio e come lo capisci?",
+     "c": "Ascolta un conduttore e annota un momento di curiosità o calore."
+    },
+    "pt": {
+     "t": "Reconhecer um bom apresentador",
+     "g": "Conhecer as qualidades dos grandes apresentadores: curiosidade, calor, preparação.",
+     "p": [
+      "Apresentadores curiosos fazem perguntas de seguimento em vez de ler uma lista.",
+      "Os calorosos fazem convidados e ouvintes sentir-se bem-vindos.",
+      "Os preparados conhecem o tema, controlam o tempo e são claros."
+     ],
+     "q": "Que apresentador achas que ouve melhor e como notas isso?",
+     "c": "Ouve um apresentador e anota um momento que mostre curiosidade ou calor."
+    },
+    "pt_BR": {
+     "t": "Reconhecer um bom apresentador",
+     "g": "Conhecer as qualidades dos grandes apresentadores: curiosidade, calor humano, preparo.",
+     "p": [
+      "Apresentadores curiosos fazem perguntas de aprofundamento em vez de ler uma lista.",
+      "Os calorosos fazem convidados e ouvintes se sentirem bem-vindos.",
+      "Os preparados conhecem o tema, controlam o tempo e são claros."
+     ],
+     "q": "Que apresentador você acha que ouve melhor e como percebe isso?",
+     "c": "Ouça um apresentador e anote um momento que mostre curiosidade ou calor humano."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Spotting good audio quality",
+     "g": "Hear the difference between clean sound and echo, hiss or distortion.",
+     "p": [
+      "Clean audio has clear voices, even volume and little background noise.",
+      "Echo suggests a bare room; hiss suggests a weak microphone or setting.",
+      "Distortion means the sound was too loud when recorded."
+     ],
+     "q": "What sounds bother you most when you listen?",
+     "c": "Listen with headphones to two shows and note which sounds cleaner and why."
+    },
+    "de": {
+     "t": "Gute Tonqualität erkennen",
+     "g": "Den Unterschied zwischen sauberem Klang und Hall, Rauschen oder Verzerrung hören.",
+     "p": [
+      "Sauberer Ton hat klare Stimmen, gleichmäßige Lautstärke und wenig Nebengeräusche.",
+      "Hall deutet auf einen kahlen Raum, Rauschen auf ein schwaches Mikrofon oder eine Einstellung.",
+      "Verzerrung heißt, der Ton war bei der Aufnahme zu laut."
+     ],
+     "q": "Welche Geräusche stören dich beim Hören am meisten?",
+     "c": "Höre mit Kopfhörern zwei Sendungen und notiere, welche sauberer klingt und warum."
+    },
+    "es": {
+     "t": "Reconocer una buena calidad de audio",
+     "g": "Oír la diferencia entre sonido limpio y eco, siseo o distorsión.",
+     "p": [
+      "El audio limpio tiene voces claras, volumen parejo y poco ruido de fondo.",
+      "El eco sugiere una sala vacía; el siseo, un micrófono débil o un ajuste.",
+      "La distorsión significa que el sonido estaba demasiado alto al grabar."
+     ],
+     "q": "¿Qué sonidos te molestan más al escuchar?",
+     "c": "Escucha con auriculares dos programas y anota cuál suena más limpio y por qué."
+    },
+    "fr": {
+     "t": "Reconnaître une bonne qualité audio",
+     "g": "Entendre la différence entre un son propre et l'écho, le souffle ou la distorsion.",
+     "p": [
+      "Un audio propre a des voix claires, un volume régulier et peu de bruit de fond.",
+      "L'écho évoque une pièce nue ; le souffle, un micro faible ou un réglage.",
+      "La distorsion signifie que le son était trop fort à l'enregistrement."
+     ],
+     "q": "Quels sons te gênent le plus à l'écoute ?",
+     "c": "Écoute deux émissions au casque et note laquelle sonne le plus propre et pourquoi."
+    },
+    "it": {
+     "t": "Riconoscere una buona qualità audio",
+     "g": "Sentire la differenza tra suono pulito ed eco, fruscio o distorsione.",
+     "p": [
+      "Un audio pulito ha voci chiare, volume uniforme e poco rumore di fondo.",
+      "L'eco suggerisce una stanza spoglia; il fruscio, un microfono debole o un'impostazione.",
+      "La distorsione significa che il suono era troppo forte in registrazione."
+     ],
+     "q": "Quali suoni ti danno più fastidio quando ascolti?",
+     "c": "Ascolta due programmi in cuffia e annota quale suona più pulito e perché."
+    },
+    "pt": {
+     "t": "Reconhecer boa qualidade de áudio",
+     "g": "Ouvir a diferença entre som limpo e eco, ruído ou distorção.",
+     "p": [
+      "O áudio limpo tem vozes claras, volume uniforme e pouco ruído de fundo.",
+      "O eco sugere uma sala vazia; o chiado, um microfone fraco ou uma definição.",
+      "A distorção significa que o som estava demasiado alto ao gravar."
+     ],
+     "q": "Que sons te incomodam mais quando ouves?",
+     "c": "Ouve dois programas com auscultadores e anota qual soa mais limpo e porquê."
+    },
+    "pt_BR": {
+     "t": "Reconhecer boa qualidade de áudio",
+     "g": "Ouvir a diferença entre som limpo e eco, chiado ou distorção.",
+     "p": [
+      "Áudio limpo tem vozes claras, volume uniforme e pouco ruído de fundo.",
+      "Eco sugere uma sala vazia; chiado sugere um microfone fraco ou um ajuste.",
+      "Distorção significa que o som estava alto demais na gravação."
+     ],
+     "q": "Que sons mais incomodam você quando ouve?",
+     "c": "Ouça dois programas com fones e anote qual soa mais limpo e por quê."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why some shows feel intimate",
+     "g": "Discover how close mics and honest talk pull listeners in.",
+     "p": [
+      "A microphone close to the mouth gives a warm, near voice.",
+      "Speaking as to one person, not a crowd, creates closeness.",
+      "Honest stories, pauses and small laughs make a show feel personal."
+     ],
+     "q": "Which show feels like someone is speaking just to you?",
+     "c": "Listen to a show that feels close and note two things that create that feeling."
+    },
+    "de": {
+     "t": "Warum manche Sendungen vertraut wirken",
+     "g": "Entdecken, wie nahe Mikrofone und ehrliche Worte Hörer hineinziehen.",
+     "p": [
+      "Ein Mikrofon nah am Mund gibt eine warme, nahe Stimme.",
+      "Wer zu einer Person statt zu einer Menge spricht, schafft Nähe.",
+      "Ehrliche Geschichten, Pausen und leises Lachen machen eine Sendung persönlich."
+     ],
+     "q": "Welche Sendung wirkt, als spräche jemand nur zu dir?",
+     "c": "Höre eine Sendung, die nah wirkt, und notiere zwei Dinge, die dieses Gefühl erzeugen."
+    },
+    "es": {
+     "t": "Por qué algunos programas se sienten íntimos",
+     "g": "Descubrir cómo los micrófonos cercanos y la charla sincera atraen al oyente.",
+     "p": [
+      "Un micrófono cerca de la boca da una voz cálida y próxima.",
+      "Hablar como a una persona, no a una multitud, crea cercanía.",
+      "Las historias sinceras, las pausas y las risas suaves hacen personal un programa."
+     ],
+     "q": "¿Qué programa se siente como si alguien te hablara solo a ti?",
+     "c": "Escucha un programa que se sienta cercano y anota dos cosas que crean esa sensación."
+    },
+    "fr": {
+     "t": "Pourquoi certaines émissions semblent intimes",
+     "g": "Découvrir comment micros proches et parole sincère attirent l'auditeur.",
+     "p": [
+      "Un micro près de la bouche donne une voix chaude et proche.",
+      "Parler comme à une personne, pas à une foule, crée de la proximité.",
+      "Histoires sincères, pauses et petits rires rendent une émission personnelle."
+     ],
+     "q": "Quelle émission donne l'impression qu'on te parle à toi seul ?",
+     "c": "Écoute une émission qui semble proche et note deux choses qui créent ce sentiment."
+    },
+    "it": {
+     "t": "Perché alcuni programmi sembrano intimi",
+     "g": "Scoprire come microfoni vicini e parole sincere avvicinano chi ascolta.",
+     "p": [
+      "Un microfono vicino alla bocca dà una voce calda e vicina.",
+      "Parlare come a una persona, non a una folla, crea vicinanza.",
+      "Storie sincere, pause e piccole risate rendono personale un programma."
+     ],
+     "q": "Quale programma sembra parlare proprio a te?",
+     "c": "Ascolta un programma che sembra vicino e annota due cose che creano quella sensazione."
+    },
+    "pt": {
+     "t": "Porque é que alguns programas parecem íntimos",
+     "g": "Descobrir como microfones próximos e conversa sincera aproximam o ouvinte.",
+     "p": [
+      "Um microfone perto da boca dá uma voz quente e próxima.",
+      "Falar como a uma pessoa, não a uma multidão, cria proximidade.",
+      "Histórias sinceras, pausas e pequenos risos tornam um programa pessoal."
+     ],
+     "q": "Que programa parece que alguém fala só contigo?",
+     "c": "Ouve um programa que pareça próximo e anota duas coisas que criam essa sensação."
+    },
+    "pt_BR": {
+     "t": "Por que alguns programas parecem íntimos",
+     "g": "Descobrir como microfones próximos e conversa sincera aproximam o ouvinte.",
+     "p": [
+      "Um microfone perto da boca dá uma voz quente e próxima.",
+      "Falar como a uma pessoa, não a uma multidão, cria proximidade.",
+      "Histórias sinceras, pausas e pequenas risadas tornam um programa pessoal."
+     ],
+     "q": "Que programa parece que alguém fala só com você?",
+     "c": "Ouça um programa que pareça próximo e anote duas coisas que criam essa sensação."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: you as a listener",
+     "g": "Start a listening diary of shows you loved and what made them work.",
+     "p": [
+      "Write the show, the episode and one line about why you enjoyed it.",
+      "Look for patterns in format, length, host and topic.",
+      "Your diary becomes a guide to finding and, later, making great audio."
+     ],
+     "q": "What have you learned about your own taste in 60 days?",
+     "c": "Start a diary with three entries: show, favourite moment and what made it work."
+    },
+    "de": {
+     "t": "Rückblick: du als Hörer",
+     "g": "Ein Hörtagebuch über geliebte Sendungen und ihre Stärken beginnen.",
+     "p": [
+      "Schreibe Sendung, Folge und einen Satz dazu, warum sie dir gefiel.",
+      "Suche Muster bei Format, Länge, Moderation und Thema.",
+      "Dein Tagebuch wird zum Wegweiser, um gutes Audio zu finden und später zu machen."
+     ],
+     "q": "Was hast du in 60 Tagen über deinen eigenen Geschmack gelernt?",
+     "c": "Starte ein Tagebuch mit drei Einträgen: Sendung, Lieblingsmoment und was ihn stark machte."
+    },
+    "es": {
+     "t": "Repaso: tú como oyente",
+     "g": "Empezar un diario de escucha con programas que amaste y por qué funcionan.",
+     "p": [
+      "Escribe el programa, el episodio y una línea sobre por qué lo disfrutaste.",
+      "Busca patrones en formato, duración, presentador y tema.",
+      "Tu diario será una guía para encontrar y, más adelante, crear buen audio."
+     ],
+     "q": "¿Qué has aprendido sobre tu propio gusto en 60 días?",
+     "c": "Empieza un diario con tres entradas: programa, momento favorito y qué lo hizo funcionar."
+    },
+    "fr": {
+     "t": "Bilan : toi en tant qu'auditeur",
+     "g": "Commencer un journal d'écoute des émissions aimées et de ce qui les fait réussir.",
+     "p": [
+      "Écris l'émission, l'épisode et une ligne sur ce qui t'a plu.",
+      "Cherche des tendances dans le format, la durée, l'animateur et le sujet.",
+      "Ton journal devient un guide pour trouver, puis un jour créer, du bon audio."
+     ],
+     "q": "Qu'as-tu appris sur tes goûts en 60 jours ?",
+     "c": "Commence un journal avec trois notes : émission, moment préféré et ce qui a marché."
+    },
+    "it": {
+     "t": "Ripasso: tu come ascoltatore",
+     "g": "Iniziare un diario di ascolto dei programmi amati e di ciò che li fa funzionare.",
+     "p": [
+      "Scrivi il programma, l'episodio e una riga su perché ti è piaciuto.",
+      "Cerca schemi nel formato, nella durata, nel conduttore e nel tema.",
+      "Il tuo diario diventa una guida per trovare e, poi, creare ottimo audio."
+     ],
+     "q": "Cosa hai imparato sui tuoi gusti in 60 giorni?",
+     "c": "Inizia un diario con tre voci: programma, momento preferito e cosa lo ha reso efficace."
+    },
+    "pt": {
+     "t": "Revisão: tu como ouvinte",
+     "g": "Começar um diário de escuta com programas de que gostaste e porque funcionam.",
+     "p": [
+      "Escreve o programa, o episódio e uma linha sobre porque gostaste.",
+      "Procura padrões no formato, na duração, no apresentador e no tema.",
+      "O teu diário torna-se um guia para encontrar e, mais tarde, criar bom áudio."
+     ],
+     "q": "O que aprendeste sobre o teu gosto em 60 dias?",
+     "c": "Começa um diário com três entradas: programa, momento favorito e o que o fez resultar."
+    },
+    "pt_BR": {
+     "t": "Revisão: você como ouvinte",
+     "g": "Começar um diário de escuta com programas que você amou e por que funcionam.",
+     "p": [
+      "Escreva o programa, o episódio e uma linha sobre por que você gostou.",
+      "Procure padrões em formato, duração, apresentador e tema.",
+      "Seu diário vira um guia para encontrar e, mais tarde, criar bom áudio."
+     ],
+     "q": "O que você aprendeu sobre o seu gosto em 60 dias?",
+     "c": "Comece um diário com três entradas: programa, momento favorito e o que fez ele funcionar."
+    }
+   }
+  }
+ ]
+}

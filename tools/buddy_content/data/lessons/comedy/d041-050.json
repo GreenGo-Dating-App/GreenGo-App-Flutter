@@ -1,0 +1,835 @@
+{
+ "topic": "comedy",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Humour that travels well",
+     "g": "Learn why visual gags and universal situations cross borders easily.",
+     "p": [
+      "Slipping on a banana peel needs no translation: everyone gets it.",
+      "Situations like a lost phone or a stubborn zip are the same everywhere.",
+      "Mime, cartoons and expressive faces work in any language."
+     ],
+     "q": "What funny situation do you think people everywhere would understand?",
+     "c": "Tell or act out one universal funny moment to someone who speaks another language."
+    },
+    "de": {
+     "t": "Humor, der überall funktioniert",
+     "g": "Verstehen, warum visuelle Gags und universelle Situationen Grenzen leicht überwinden.",
+     "p": [
+      "Das Ausrutschen auf einer Bananenschale braucht keine Übersetzung: Alle verstehen es.",
+      "Situationen wie ein verlegtes Handy oder ein klemmender Reißverschluss sind überall gleich.",
+      "Pantomime, Cartoons und ausdrucksstarke Gesichter wirken in jeder Sprache."
+     ],
+     "q": "Welche lustige Situation würden Menschen überall verstehen?",
+     "c": "Erzähl oder spiel einer Person, die eine andere Sprache spricht, einen universellen lustigen Moment vor."
+    },
+    "es": {
+     "t": "El humor que viaja bien",
+     "g": "Entender por qué los gags visuales y las situaciones universales cruzan fronteras con facilidad.",
+     "p": [
+      "Resbalar con una cáscara de plátano no necesita traducción: todos lo entienden.",
+      "Situaciones como perder el móvil o una cremallera atascada son iguales en todas partes.",
+      "La mímica, los dibujos animados y los rostros expresivos funcionan en cualquier idioma."
+     ],
+     "q": "¿Qué situación graciosa crees que entendería la gente en cualquier lugar?",
+     "c": "Cuenta o representa un momento gracioso universal a alguien que hable otro idioma."
+    },
+    "fr": {
+     "t": "L'humour qui voyage bien",
+     "g": "Comprendre pourquoi les gags visuels et les situations universelles passent facilement les frontières.",
+     "p": [
+      "Glisser sur une peau de banane n'a pas besoin de traduction : tout le monde comprend.",
+      "Des situations comme un téléphone perdu ou une fermeture éclair coincée sont les mêmes partout.",
+      "Le mime, les dessins animés et les visages expressifs marchent dans toutes les langues."
+     ],
+     "q": "Quelle situation drôle les gens comprendraient-ils partout, selon toi ?",
+     "c": "Raconte ou mime un moment drôle universel à quelqu'un qui parle une autre langue."
+    },
+    "it": {
+     "t": "L'umorismo che viaggia bene",
+     "g": "Capire perché le gag visive e le situazioni universali superano facilmente i confini.",
+     "p": [
+      "Scivolare su una buccia di banana non ha bisogno di traduzione: tutti capiscono.",
+      "Situazioni come un telefono smarrito o una cerniera bloccata sono uguali ovunque.",
+      "Mimica, cartoni animati e volti espressivi funzionano in qualsiasi lingua."
+     ],
+     "q": "Quale situazione buffa pensi che le persone capirebbero ovunque?",
+     "c": "Racconta o mima un momento buffo universale a qualcuno che parla un'altra lingua."
+    },
+    "pt": {
+     "t": "O humor que viaja bem",
+     "g": "Perceber porque as piadas visuais e as situações universais atravessam fronteiras com facilidade.",
+     "p": [
+      "Escorregar numa casca de banana não precisa de tradução: todos percebem.",
+      "Situações como perder o telemóvel ou um fecho preso são iguais em todo o lado.",
+      "A mímica, os desenhos animados e os rostos expressivos funcionam em qualquer língua."
+     ],
+     "q": "Que situação engraçada achas que as pessoas entenderiam em qualquer lugar?",
+     "c": "Conta ou mima um momento engraçado universal a alguém que fale outra língua."
+    },
+    "pt_BR": {
+     "t": "O humor que viaja bem",
+     "g": "Entender por que as piadas visuais e as situações universais atravessam fronteiras com facilidade.",
+     "p": [
+      "Escorregar numa casca de banana não precisa de tradução: todo mundo entende.",
+      "Situações como perder o celular ou um zíper emperrado são iguais em todo lugar.",
+      "Mímica, desenhos animados e rostos expressivos funcionam em qualquer língua."
+     ],
+     "q": "Que situação engraçada você acha que as pessoas entenderiam em qualquer lugar?",
+     "c": "Conte ou faça mímica de um momento engraçado universal para alguém que fale outra língua."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Humour that gets lost",
+     "g": "See how jokes based on local words or customs can confuse visitors.",
+     "p": [
+      "Puns depend on sounds, so they rarely survive translation.",
+      "Jokes about local customs need the listener to know the custom.",
+      "If a joke falls flat, explain kindly and keep the mood warm."
+     ],
+     "q": "Do you know a joke from your language that nobody abroad would get?",
+     "c": "Explain a local joke or custom to someone from elsewhere in two friendly sentences."
+    },
+    "de": {
+     "t": "Humor, der verloren geht",
+     "g": "Sehen, wie Witze mit lokalen Wörtern oder Bräuchen Besucher verwirren können.",
+     "p": [
+      "Wortspiele hängen an Klängen, deshalb überstehen sie selten eine Übersetzung.",
+      "Witze über lokale Bräuche setzen voraus, dass man den Brauch kennt.",
+      "Zündet ein Witz nicht, erkläre freundlich und halte die Stimmung warm."
+     ],
+     "q": "Kennst du einen Witz aus deiner Sprache, den im Ausland niemand verstehen würde?",
+     "c": "Erkläre jemandem von woanders einen lokalen Witz oder Brauch in zwei freundlichen Sätzen."
+    },
+    "es": {
+     "t": "El humor que se pierde",
+     "g": "Ver cómo los chistes basados en palabras o costumbres locales pueden confundir a los visitantes.",
+     "p": [
+      "Los juegos de palabras dependen de los sonidos, así que rara vez sobreviven a la traducción.",
+      "Los chistes sobre costumbres locales exigen que quien escucha conozca la costumbre.",
+      "Si un chiste no cuaja, explica con amabilidad y mantén el ambiente cálido."
+     ],
+     "q": "¿Conoces un chiste de tu idioma que nadie en el extranjero entendería?",
+     "c": "Explica un chiste o una costumbre local a alguien de otro lugar en dos frases amables."
+    },
+    "fr": {
+     "t": "L'humour qui se perd",
+     "g": "Voir comment les blagues basées sur des mots ou coutumes locales peuvent dérouter les visiteurs.",
+     "p": [
+      "Les jeux de mots dépendent des sons, donc ils survivent rarement à la traduction.",
+      "Les blagues sur les coutumes locales exigent que l'auditeur connaisse la coutume.",
+      "Si une blague tombe à plat, explique gentiment et garde une ambiance chaleureuse."
+     ],
+     "q": "Connais-tu une blague de ta langue que personne à l'étranger ne comprendrait ?",
+     "c": "Explique à quelqu'un d'ailleurs une blague ou une coutume locale en deux phrases aimables."
+    },
+    "it": {
+     "t": "L'umorismo che si perde",
+     "g": "Vedere come le battute basate su parole o usanze locali possano confondere i visitatori.",
+     "p": [
+      "I giochi di parole dipendono dai suoni, quindi di rado sopravvivono alla traduzione.",
+      "Le battute sulle usanze locali richiedono che chi ascolta conosca l'usanza.",
+      "Se una battuta cade nel vuoto, spiega con gentilezza e mantieni un clima caldo."
+     ],
+     "q": "Conosci una barzelletta della tua lingua che all'estero nessuno capirebbe?",
+     "c": "Spiega a qualcuno di un altro posto una battuta o un'usanza locale in due frasi gentili."
+    },
+    "pt": {
+     "t": "O humor que se perde",
+     "g": "Ver como as piadas baseadas em palavras ou costumes locais podem confundir os visitantes.",
+     "p": [
+      "Os trocadilhos dependem dos sons, por isso raramente sobrevivem à tradução.",
+      "As piadas sobre costumes locais exigem que quem ouve conheça o costume.",
+      "Se uma piada cai mal, explica com simpatia e mantém o ambiente caloroso."
+     ],
+     "q": "Conheces uma piada da tua língua que ninguém no estrangeiro perceberia?",
+     "c": "Explica uma piada ou um costume local a alguém de outro lugar em duas frases simpáticas."
+    },
+    "pt_BR": {
+     "t": "O humor que se perde",
+     "g": "Ver como as piadas baseadas em palavras ou costumes locais podem confundir os visitantes.",
+     "p": [
+      "Os trocadilhos dependem dos sons, por isso raramente sobrevivem à tradução.",
+      "Piadas sobre costumes locais exigem que quem ouve conheça o costume.",
+      "Se uma piada não pega, explique com gentileza e mantenha o clima caloroso."
+     ],
+     "q": "Você conhece uma piada da sua língua que ninguém no exterior entenderia?",
+     "c": "Explique uma piada ou um costume local para alguém de outro lugar em duas frases simpáticas."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Laughing in another language",
+     "g": "Discover why getting a joke in a foreign language is a sign of real fluency.",
+     "p": [
+      "Jokes need vocabulary, culture and timing all at once.",
+      "Understanding one means you are thinking in the language, not just translating.",
+      "Do not worry if you miss some; every joke you catch is a victory."
+     ],
+     "q": "What was the first joke you ever understood in a language you are learning?",
+     "c": "Find one simple joke in a language you study and try to understand why it is funny."
+    },
+    "de": {
+     "t": "In einer anderen Sprache lachen",
+     "g": "Entdecken, warum das Verstehen eines Witzes in einer Fremdsprache ein Zeichen echter Sprachbeherrschung ist.",
+     "p": [
+      "Witze brauchen Wortschatz, Kultur und Timing zugleich.",
+      "Einen zu verstehen heißt, in der Sprache zu denken, nicht nur zu übersetzen.",
+      "Keine Sorge, wenn dir manche entgehen; jeder verstandene Witz ist ein Sieg."
+     ],
+     "q": "Welchen Witz hast du als Erstes in einer Sprache verstanden, die du lernst?",
+     "c": "Such dir einen einfachen Witz in einer Sprache, die du lernst, und versuche zu verstehen, warum er lustig ist."
+    },
+    "es": {
+     "t": "Reír en otro idioma",
+     "g": "Descubrir por qué entender un chiste en un idioma extranjero es señal de fluidez real.",
+     "p": [
+      "Los chistes necesitan vocabulario, cultura y tiempo cómico a la vez.",
+      "Entender uno significa que piensas en el idioma, no solo traduces.",
+      "No te preocupes si se te escapan algunos; cada chiste que captas es una victoria."
+     ],
+     "q": "¿Cuál fue el primer chiste que entendiste en un idioma que estás aprendiendo?",
+     "c": "Busca un chiste sencillo en un idioma que estudies e intenta entender por qué es gracioso."
+    },
+    "fr": {
+     "t": "Rire dans une autre langue",
+     "g": "Découvrir pourquoi comprendre une blague dans une langue étrangère est le signe d'une vraie aisance.",
+     "p": [
+      "Les blagues demandent à la fois du vocabulaire, de la culture et du timing.",
+      "En comprendre une, c'est penser dans la langue, pas seulement traduire.",
+      "Ne t'inquiète pas si certaines t'échappent ; chaque blague comprise est une victoire."
+     ],
+     "q": "Quelle a été la première blague que tu as comprise dans une langue que tu apprends ?",
+     "c": "Trouve une blague simple dans une langue que tu étudies et essaie de comprendre pourquoi elle est drôle."
+    },
+    "it": {
+     "t": "Ridere in un'altra lingua",
+     "g": "Scoprire perché capire una barzelletta in una lingua straniera è segno di vera padronanza.",
+     "p": [
+      "Le barzellette richiedono insieme vocabolario, cultura e tempi comici.",
+      "Capirne una significa che pensi nella lingua, non solo che traduci.",
+      "Non preoccuparti se qualcuna ti sfugge; ogni battuta colta è una vittoria."
+     ],
+     "q": "Qual è stata la prima barzelletta che hai capito in una lingua che stai imparando?",
+     "c": "Trova una barzelletta semplice in una lingua che studi e cerca di capire perché fa ridere."
+    },
+    "pt": {
+     "t": "Rir noutra língua",
+     "g": "Descobrir porque perceber uma piada numa língua estrangeira é sinal de verdadeira fluência.",
+     "p": [
+      "As piadas exigem ao mesmo tempo vocabulário, cultura e tempo cómico.",
+      "Perceber uma significa que pensas na língua, e não apenas que traduzes.",
+      "Não te preocupes se algumas te escaparem; cada piada que apanhas é uma vitória."
+     ],
+     "q": "Qual foi a primeira piada que percebeste numa língua que estás a aprender?",
+     "c": "Encontra uma piada simples numa língua que estudas e tenta perceber porque é engraçada."
+    },
+    "pt_BR": {
+     "t": "Rir em outra língua",
+     "g": "Descobrir por que entender uma piada numa língua estrangeira é sinal de fluência de verdade.",
+     "p": [
+      "Piadas exigem ao mesmo tempo vocabulário, cultura e tempo cômico.",
+      "Entender uma significa que você pensa na língua, e não apenas traduz.",
+      "Não se preocupe se algumas escaparem; cada piada que você pega é uma vitória."
+     ],
+     "q": "Qual foi a primeira piada que você entendeu numa língua que está aprendendo?",
+     "c": "Encontre uma piada simples numa língua que você estuda e tente entender por que é engraçada."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Simple jokes in English",
+     "g": "Try a few classic clean English jokes and the wordplay hidden inside them.",
+     "p": [
+      "Example: why can't a bicycle stand up by itself? It is two tired.",
+      "Two tired sounds like too tired: that sound-alike is the whole joke.",
+      "Example: what do you call a fake noodle? An impasta."
+     ],
+     "q": "Which of the two jokes do you like more, and can you explain its wordplay?",
+     "c": "Tell one of these English jokes to a friend and explain the sound-alike words."
+    },
+    "de": {
+     "t": "Einfache Witze auf Englisch",
+     "g": "Ein paar klassische, saubere englische Witze und ihr verstecktes Wortspiel ausprobieren.",
+     "p": [
+      "Beispiel: Why can't a bicycle stand up by itself? It is two tired.",
+      "Two tired klingt wie too tired, zu müde: Dieser Gleichklang ist der ganze Witz.",
+      "Beispiel: What do you call a fake noodle? An impasta."
+     ],
+     "q": "Impasta klingt wie impostor, Betrüger, und enthält pasta, Nudeln.",
+     "c": "Welcher der beiden Witze gefällt dir mehr, und kannst du sein Wortspiel erklären?"
+    },
+    "es": {
+     "t": "Chistes sencillos en inglés",
+     "g": "Probar unos cuantos chistes clásicos y limpios en inglés y el juego de palabras que esconden.",
+     "p": [
+      "Ejemplo: Why can't a bicycle stand up by itself? It is two tired.",
+      "Two tired suena como too tired, demasiado cansada: ese parecido de sonido es todo el chiste.",
+      "Ejemplo: What do you call a fake noodle? An impasta."
+     ],
+     "q": "Impasta suena como impostor, impostor, y contiene pasta.",
+     "c": "¿Cuál de los dos chistes te gusta más, y puedes explicar su juego de palabras?"
+    },
+    "fr": {
+     "t": "Blagues simples en anglais",
+     "g": "Essayer quelques blagues anglaises classiques et propres et le jeu de mots qu'elles cachent.",
+     "p": [
+      "Exemple : Why can't a bicycle stand up by itself? It is two tired.",
+      "Two tired sonne comme too tired, trop fatigué : cette ressemblance de sons fait toute la blague.",
+      "Exemple : What do you call a fake noodle? An impasta."
+     ],
+     "q": "Impasta sonne comme impostor, imposteur, et contient pasta, pâtes.",
+     "c": "Laquelle des deux blagues préfères-tu, et peux-tu expliquer son jeu de mots ?"
+    },
+    "it": {
+     "t": "Barzellette semplici in inglese",
+     "g": "Provare alcune barzellette inglesi classiche e pulite e il gioco di parole nascosto.",
+     "p": [
+      "Esempio: Why can't a bicycle stand up by itself? It is two tired.",
+      "Two tired suona come too tired, troppo stanca: quella somiglianza di suono è tutta la barzelletta.",
+      "Esempio: What do you call a fake noodle? An impasta."
+     ],
+     "q": "Impasta suona come impostor, impostore, e contiene pasta.",
+     "c": "Quale delle due barzellette ti piace di più, e sai spiegarne il gioco di parole?"
+    },
+    "pt": {
+     "t": "Piadas simples em inglês",
+     "g": "Experimentar algumas piadas inglesas clássicas e limpas e o jogo de palavras que escondem.",
+     "p": [
+      "Exemplo: Why can't a bicycle stand up by itself? It is two tired.",
+      "Two tired soa como too tired, demasiado cansada: essa semelhança de sons é toda a piada.",
+      "Exemplo: What do you call a fake noodle? An impasta."
+     ],
+     "q": "Impasta soa como impostor, impostor, e contém pasta, massa.",
+     "c": "Qual das duas piadas preferes, e consegues explicar o jogo de palavras?"
+    },
+    "pt_BR": {
+     "t": "Piadas simples em inglês",
+     "g": "Experimentar algumas piadas inglesas clássicas e limpas e o jogo de palavras escondido.",
+     "p": [
+      "Exemplo: Why can't a bicycle stand up by itself? It is two tired.",
+      "Two tired soa como too tired, cansada demais: essa semelhança de sons é a piada toda.",
+      "Exemplo: What do you call a fake noodle? An impasta."
+     ],
+     "q": "Impasta soa como impostor, impostor, e contém pasta, massa.",
+     "c": "Qual das duas piadas você prefere, e consegue explicar o jogo de palavras?"
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Explaining a joke kindly",
+     "g": "Help someone who missed the point without making them feel left out.",
+     "p": [
+      "Say: shall I share the wordplay? so the choice stays with them.",
+      "Explain the sound-alike or the twist in one sentence, then smile.",
+      "Never say: you do not get it; say: this one is tricky."
+     ],
+     "q": "Has someone ever explained a joke to you so well that you laughed afterwards?",
+     "c": "Explain one joke to someone in a single warm sentence."
+    },
+    "de": {
+     "t": "Einen Witz freundlich erklären",
+     "g": "Jemandem helfen, der die Pointe verpasst hat, ohne ihn auszuschließen.",
+     "p": [
+      "Sag: Soll ich das Wortspiel verraten? So bleibt die Wahl bei ihm.",
+      "Erkläre den Gleichklang oder die Wendung in einem Satz und lächle dann.",
+      "Sag nie: Du verstehst es nicht; sag: Der hier ist knifflig."
+     ],
+     "q": "Hat dir schon jemand einen Witz so gut erklärt, dass du danach lachen musstest?",
+     "c": "Erkläre jemandem heute einen Witz in einem einzigen warmen Satz."
+    },
+    "es": {
+     "t": "Explicar un chiste con amabilidad",
+     "g": "Ayudar a alguien que no captó la gracia sin hacerle sentir excluido.",
+     "p": [
+      "Di: ¿te cuento el juego de palabras? Así la decisión queda en sus manos.",
+      "Explica el parecido de sonido o el giro en una frase y sonríe.",
+      "Nunca digas: no lo entiendes; di: este es difícil."
+     ],
+     "q": "¿Alguien te explicó alguna vez un chiste tan bien que luego te reíste?",
+     "c": "Explica hoy un chiste a alguien en una sola frase cálida."
+    },
+    "fr": {
+     "t": "Expliquer une blague avec gentillesse",
+     "g": "Aider quelqu'un qui a raté la chute sans qu'il se sente exclu.",
+     "p": [
+      "Dis : je t'explique le jeu de mots ? Ainsi, le choix lui appartient.",
+      "Explique la ressemblance de sons ou le retournement en une phrase, puis souris.",
+      "Ne dis jamais : tu ne comprends pas ; dis : celle-là est délicate."
+     ],
+     "q": "Quelqu'un t'a-t-il déjà expliqué une blague si bien que tu as ri ensuite ?",
+     "c": "Explique aujourd'hui une blague à quelqu'un en une seule phrase chaleureuse."
+    },
+    "it": {
+     "t": "Spiegare una barzelletta con gentilezza",
+     "g": "Aiutare chi non ha colto il senso senza farlo sentire escluso.",
+     "p": [
+      "Di': ti spiego il gioco di parole? Così la scelta resta a lui.",
+      "Spiega la somiglianza di suono o il colpo di scena in una frase, poi sorridi.",
+      "Non dire mai: non capisci; di': questa è difficile."
+     ],
+     "q": "Qualcuno ti ha mai spiegato una barzelletta così bene che poi hai riso?",
+     "c": "Spiega oggi una barzelletta a qualcuno in un'unica frase calda."
+    },
+    "pt": {
+     "t": "Explicar uma piada com simpatia",
+     "g": "Ajudar quem não percebeu a graça sem o fazer sentir-se excluído.",
+     "p": [
+      "Diz: queres que explique o jogo de palavras? Assim a escolha fica com a pessoa.",
+      "Explica a semelhança de sons ou a reviravolta numa frase e sorri.",
+      "Nunca digas: não percebes; diz: esta é difícil."
+     ],
+     "q": "Alguém já te explicou uma piada tão bem que depois te riste?",
+     "c": "Explica hoje uma piada a alguém numa só frase calorosa."
+    },
+    "pt_BR": {
+     "t": "Explicar uma piada com gentileza",
+     "g": "Ajudar quem não percebeu a graça sem fazer a pessoa se sentir excluída.",
+     "p": [
+      "Diga: quer que eu explique o jogo de palavras? Assim a escolha fica com a pessoa.",
+      "Explique a semelhança de sons ou a virada numa frase e sorria.",
+      "Nunca diga: você não entende; diga: essa é difícil."
+     ],
+     "q": "Alguém já explicou uma piada para você tão bem que depois você riu?",
+     "c": "Explique hoje uma piada para alguém numa única frase calorosa."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tongue twisters",
+     "g": "Enjoy fun phrases like She sells seashells that make everyone laugh at their own mistakes.",
+     "p": [
+      "A tongue twister repeats similar sounds that are hard to say fast.",
+      "Start slowly and speed up; the mistakes are the best part.",
+      "Try: She sells seashells by the seashore, three times in a row."
+     ],
+     "q": "What is the trickiest tongue twister in your language?",
+     "c": "Say one tongue twister five times quickly and laugh at your slips."
+    },
+    "de": {
+     "t": "Zungenbrecher",
+     "g": "Lustige Sätze wie Fischers Fritz fischt frische Fische genießen, die alle über eigene Fehler lachen lassen.",
+     "p": [
+      "Ein Zungenbrecher wiederholt ähnliche Laute, die schnell schwer zu sprechen sind.",
+      "Fang langsam an und werde schneller; die Versprecher sind das Beste.",
+      "Probier: Fischers Fritz fischt frische Fische, dreimal hintereinander."
+     ],
+     "q": "Welcher ist der kniffligste Zungenbrecher in deiner Sprache?",
+     "c": "Sag heute einen Zungenbrecher fünfmal schnell und lach über deine Versprecher."
+    },
+    "es": {
+     "t": "Trabalenguas",
+     "g": "Disfrutar de frases divertidas como Tres tristes tigres que hacen reír a todos con sus propios errores.",
+     "p": [
+      "Un trabalenguas repite sonidos parecidos que cuesta decir rápido.",
+      "Empieza despacio y acelera; los fallos son lo mejor.",
+      "Prueba: Tres tristes tigres tragaban trigo en un trigal, tres veces seguidas."
+     ],
+     "q": "¿Cuál es el trabalenguas más difícil de tu idioma?",
+     "c": "Di hoy un trabalenguas cinco veces rápido y ríete de tus tropiezos."
+    },
+    "fr": {
+     "t": "Les virelangues",
+     "g": "Savourer des phrases amusantes comme Les chaussettes de l'archiduchesse qui font rire de ses propres erreurs.",
+     "p": [
+      "Un virelangue répète des sons proches, difficiles à dire vite.",
+      "Commence lentement et accélère ; les erreurs sont le meilleur moment.",
+      "Essaie : Les chaussettes de l'archiduchesse sont-elles sèches, archi-sèches ? trois fois de suite."
+     ],
+     "q": "Quel est le virelangue le plus difficile de ta langue ?",
+     "c": "Dis aujourd'hui un virelangue cinq fois vite et ris de tes faux pas."
+    },
+    "it": {
+     "t": "Gli scioglilingua",
+     "g": "Godersi frasi divertenti come Trentatré trentini che fanno ridere dei propri errori.",
+     "p": [
+      "Uno scioglilingua ripete suoni simili difficili da dire in fretta.",
+      "Comincia piano e accelera; gli errori sono la parte migliore.",
+      "Prova: Trentatré trentini entrarono a Trento tutti e trentatré trotterellando, tre volte di fila."
+     ],
+     "q": "Qual è lo scioglilingua più difficile della tua lingua?",
+     "c": "Di' oggi uno scioglilingua cinque volte in fretta e ridi dei tuoi inciampi."
+    },
+    "pt": {
+     "t": "Trava-línguas",
+     "g": "Desfrutar de frases divertidas como O rato roeu a roupa do rei de Roma que fazem rir dos próprios erros.",
+     "p": [
+      "Um trava-línguas repete sons parecidos que custam a dizer depressa.",
+      "Começa devagar e acelera; os erros são a melhor parte.",
+      "Experimenta: O rato roeu a roupa do rei de Roma, três vezes seguidas."
+     ],
+     "q": "Qual é o trava-línguas mais difícil da tua língua?",
+     "c": "Diz hoje um trava-línguas cinco vezes depressa e ri-te dos tropeções."
+    },
+    "pt_BR": {
+     "t": "Trava-línguas",
+     "g": "Curtir frases divertidas como O rato roeu a roupa do rei de Roma que fazem rir dos próprios erros.",
+     "p": [
+      "Um trava-línguas repete sons parecidos que custam a ser ditos rápido.",
+      "Comece devagar e acelere; os erros são a melhor parte.",
+      "Experimente: O rato roeu a roupa do rei de Roma, três vezes seguidas."
+     ],
+     "q": "Qual é o trava-línguas mais difícil da sua língua?",
+     "c": "Diga hoje um trava-línguas cinco vezes rápido e ria dos tropeços."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Funny idioms",
+     "g": "Explore expressions that sound strange when translated literally, like raining cats and dogs.",
+     "p": [
+      "An idiom has a meaning that is different from its separate words.",
+      "It is raining cats and dogs just means heavy rain.",
+      "Imagining the literal picture is half the fun, so do it!"
+     ],
+     "q": "What is your favourite idiom, and what picture does it paint?",
+     "c": "Draw or describe the literal picture of one idiom and share it with someone."
+    },
+    "de": {
+     "t": "Lustige Redewendungen",
+     "g": "Ausdrücke erkunden, die wörtlich übersetzt seltsam klingen, wie it is raining cats and dogs.",
+     "p": [
+      "Eine Redewendung hat eine andere Bedeutung als ihre einzelnen Wörter.",
+      "Auf Deutsch sagt man: Ich glaube, mein Schwein pfeift, wenn man sehr überrascht ist.",
+      "Das wörtliche Bild vorzustellen ist der halbe Spaß, also probier es!"
+     ],
+     "q": "Welche ist deine Lieblingsredewendung, und welches Bild malt sie?",
+     "c": "Zeichne oder beschreibe das wörtliche Bild einer Redewendung und zeig es jemandem."
+    },
+    "es": {
+     "t": "Modismos graciosos",
+     "g": "Explorar expresiones que suenan raras al traducirlas literalmente, como it is raining cats and dogs.",
+     "p": [
+      "Una expresión idiomática tiene un significado distinto al de sus palabras sueltas.",
+      "En español se dice: estar en las nubes, cuando alguien está distraído.",
+      "Imaginar la imagen literal es la mitad de la diversión, ¡hazlo!"
+     ],
+     "q": "¿Cuál es tu expresión favorita y qué imagen dibuja?",
+     "c": "Dibuja o describe la imagen literal de una expresión y enséñasela a alguien."
+    },
+    "fr": {
+     "t": "Les expressions imagées drôles",
+     "g": "Explorer des expressions qui sonnent étrangement traduites mot à mot, comme it is raining cats and dogs.",
+     "p": [
+      "Une expression imagée a un sens différent de ses mots pris séparément.",
+      "En français, il pleut des cordes veut simplement dire qu'il pleut fort.",
+      "Imaginer l'image littérale fait la moitié du plaisir, alors essaie !"
+     ],
+     "q": "Quelle est ton expression préférée, et quelle image dessine-t-elle ?",
+     "c": "Dessine ou décris l'image littérale d'une expression et montre-la à quelqu'un."
+    },
+    "it": {
+     "t": "Modi di dire buffi",
+     "g": "Esplorare espressioni che suonano strane tradotte alla lettera, come it is raining cats and dogs.",
+     "p": [
+      "Un modo di dire ha un significato diverso dalle sue parole prese una per una.",
+      "In italiano, piove a catinelle significa solo che piove tantissimo.",
+      "Immaginare l'immagine letterale è metà del divertimento, provaci!"
+     ],
+     "q": "Qual è il tuo modo di dire preferito, e che immagine dipinge?",
+     "c": "Disegna o descrivi l'immagine letterale di un modo di dire e mostrala a qualcuno."
+    },
+    "pt": {
+     "t": "Expressões idiomáticas engraçadas",
+     "g": "Explorar expressões que soam estranhas traduzidas à letra, como it is raining cats and dogs.",
+     "p": [
+      "Uma expressão idiomática tem um sentido diferente das palavras isoladas.",
+      "Em português, chover a potes quer dizer apenas chover muito.",
+      "Imaginar a imagem literal é metade da diversão, experimenta!"
+     ],
+     "q": "Qual é a tua expressão favorita e que imagem pinta?",
+     "c": "Desenha ou descreve a imagem literal de uma expressão e mostra-a a alguém."
+    },
+    "pt_BR": {
+     "t": "Expressões idiomáticas engraçadas",
+     "g": "Explorar expressões que soam estranhas traduzidas ao pé da letra, como it is raining cats and dogs.",
+     "p": [
+      "Uma expressão idiomática tem um sentido diferente das palavras isoladas.",
+      "Em português, chover canivete quer dizer apenas chover muito.",
+      "Imaginar a imagem literal é metade da diversão, experimente!"
+     ],
+     "q": "Qual é a sua expressão favorita e que imagem ela pinta?",
+     "c": "Desenhe ou descreva a imagem literal de uma expressão e mostre para alguém."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "False friends",
+     "g": "Meet words that look alike in two languages but mean different things.",
+     "p": [
+      "Example: the Spanish word embarazada means pregnant, not embarrassed.",
+      "Another: the Italian word camera means room, not a photo camera.",
+      "Such mix-ups are never a failure; they are a funny rite of passage."
+     ],
+     "q": "Do you know a false friend from a language you studied?",
+     "c": "Write down one false friend and share its funny wrong meaning with someone."
+    },
+    "de": {
+     "t": "Falsche Freunde",
+     "g": "Wörter kennenlernen, die in zwei Sprachen ähnlich aussehen, aber Verschiedenes bedeuten.",
+     "p": [
+      "Beispiel: Das englische Wort gift bedeutet Geschenk, nicht Gift.",
+      "Noch eins: Das englische Wort chef bedeutet Küchenchef, nicht Chef im Büro.",
+      "Solche Verwechslungen sind kein Versagen, sondern ein lustiger Meilenstein."
+     ],
+     "q": "Kennst du einen falschen Freund aus einer Sprache, die du gelernt hast?",
+     "c": "Schreib einen falschen Freund auf und erzähl jemandem seine lustige falsche Bedeutung."
+    },
+    "es": {
+     "t": "Falsos amigos",
+     "g": "Conocer palabras que se parecen en dos idiomas pero significan cosas distintas.",
+     "p": [
+      "Ejemplo: la palabra inglesa library significa biblioteca, no librería.",
+      "Otro: la palabra italiana camera significa habitación, no cámara de fotos.",
+      "Esas confusiones no son un fracaso; son un gracioso rito de paso."
+     ],
+     "q": "¿Conoces un falso amigo de un idioma que hayas estudiado?",
+     "c": "Anota un falso amigo y cuéntale a alguien su gracioso significado equivocado."
+    },
+    "fr": {
+     "t": "Les faux amis",
+     "g": "Découvrir des mots qui se ressemblent dans deux langues mais veulent dire des choses différentes.",
+     "p": [
+      "Exemple : le mot anglais library signifie bibliothèque, pas librairie.",
+      "Autre exemple : le mot italien camera signifie chambre, pas appareil photo.",
+      "Ces confusions ne sont pas un échec, mais un drôle de passage obligé."
+     ],
+     "q": "Connais-tu un faux ami d'une langue que tu as étudiée ?",
+     "c": "Note un faux ami et raconte à quelqu'un son drôle de faux sens."
+    },
+    "it": {
+     "t": "I falsi amici",
+     "g": "Conoscere parole che si somigliano in due lingue ma significano cose diverse.",
+     "p": [
+      "Esempio: la parola inglese library significa biblioteca, non libreria.",
+      "Un altro: la parola inglese parents significa genitori, non parenti.",
+      "Questi scambi non sono un fallimento; sono un buffo rito di passaggio."
+     ],
+     "q": "Conosci un falso amico di una lingua che hai studiato?",
+     "c": "Annota un falso amico e racconta a qualcuno il suo buffo significato sbagliato."
+    },
+    "pt": {
+     "t": "Falsos amigos",
+     "g": "Conhecer palavras que se parecem em duas línguas mas significam coisas diferentes.",
+     "p": [
+      "Exemplo: a palavra inglesa library significa biblioteca, não livraria.",
+      "Outro: a palavra inglesa parents significa pais, não parentes.",
+      "Estas confusões não são um fracasso; são um engraçado rito de passagem."
+     ],
+     "q": "Conheces um falso amigo de uma língua que estudaste?",
+     "c": "Anota um falso amigo e conta a alguém o seu engraçado significado errado."
+    },
+    "pt_BR": {
+     "t": "Falsos amigos",
+     "g": "Conhecer palavras que se parecem em duas línguas mas significam coisas diferentes.",
+     "p": [
+      "Exemplo: a palavra inglesa library significa biblioteca, não livraria.",
+      "Outro: a palavra inglesa parents significa pais, não parentes.",
+      "Essas confusões não são um fracasso; são um engraçado rito de passagem."
+     ],
+     "q": "Você conhece um falso amigo de uma língua que estudou?",
+     "c": "Anote um falso amigo e conte para alguém o seu engraçado significado errado."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mishearings",
+     "g": "Enjoy funny misheard song lyrics and see why our brains fill in the gaps.",
+     "p": [
+      "When sounds are unclear, the brain guesses the most familiar words.",
+      "A famous example is hearing: excuse me while I kiss this guy, instead of: kiss the sky.",
+      "Mishearings are called mondegreens, from a misheard old Scottish ballad line."
+     ],
+     "q": "Which song lyric did you hear wrongly for years?",
+     "c": "Share one lyric you misheard, or invent a playful one, with a friend."
+    },
+    "de": {
+     "t": "Verhörer",
+     "g": "Lustige missverstandene Liedtexte genießen und sehen, warum unser Gehirn Lücken füllt.",
+     "p": [
+      "Sind Laute unklar, rät das Gehirn die vertrautesten Wörter.",
+      "Ein bekanntes Beispiel: Aus Rock-Texten werden oft komische Sätze, die nur ähnlich klingen.",
+      "Solche Verhörer heißen im Englischen Mondegreens, nach einer falsch verstandenen schottischen Ballade."
+     ],
+     "q": "Welche Liedzeile hast du jahrelang falsch verstanden?",
+     "c": "Teile mit einem Freund eine Zeile, die du verhört hast, oder erfinde eine lustige."
+    },
+    "es": {
+     "t": "Malentendidos al oír",
+     "g": "Disfrutar de letras de canciones mal entendidas y ver por qué el cerebro rellena los huecos.",
+     "p": [
+      "Cuando los sonidos no son claros, el cerebro adivina las palabras más familiares.",
+      "Es muy común oír una frase de una canción como otra distinta que suena parecida.",
+      "En inglés se llaman mondegreens, por un verso de una balada escocesa mal oído."
+     ],
+     "q": "¿Qué letra de canción oíste mal durante años?",
+     "c": "Comparte con un amigo una letra que oíste mal, o inventa una divertida."
+    },
+    "fr": {
+     "t": "Les mélodies mal comprises",
+     "g": "Savourer les paroles de chansons mal entendues et voir pourquoi notre cerveau comble les trous.",
+     "p": [
+      "Quand les sons sont flous, le cerveau devine les mots les plus familiers.",
+      "Il est très courant d'entendre une phrase de chanson comme une autre qui sonne pareil.",
+      "En anglais, on les appelle mondegreens, d'après un vers de ballade écossaise mal entendu."
+     ],
+     "q": "Quelles paroles de chanson as-tu mal comprises pendant des années ?",
+     "c": "Partage avec un ami des paroles que tu as mal comprises, ou invente-en des drôles."
+    },
+    "it": {
+     "t": "Fraintendimenti uditivi",
+     "g": "Godersi testi di canzoni fraintesi e vedere perché il cervello riempie i vuoti.",
+     "p": [
+      "Quando i suoni sono poco chiari, il cervello indovina le parole più familiari.",
+      "È molto comune sentire una frase di una canzone come un'altra dal suono simile.",
+      "In inglese si chiamano mondegreens, da un verso di ballata scozzese frainteso."
+     ],
+     "q": "Quale testo di canzone hai capito male per anni?",
+     "c": "Condividi con un amico un testo che hai frainteso, o inventane uno divertente."
+    },
+    "pt": {
+     "t": "Ouvir mal",
+     "g": "Apreciar letras de canções mal entendidas e ver porque o cérebro preenche as lacunas.",
+     "p": [
+      "Quando os sons não são claros, o cérebro adivinha as palavras mais familiares.",
+      "É muito comum ouvir uma frase de uma canção como outra de som parecido.",
+      "Em inglês chamam-se mondegreens, por causa de um verso de balada escocesa mal ouvido."
+     ],
+     "q": "Que letra de canção ouviste mal durante anos?",
+     "c": "Partilha com um amigo uma letra que ouviste mal, ou inventa uma divertida."
+    },
+    "pt_BR": {
+     "t": "Ouvir errado",
+     "g": "Curtir letras de músicas ouvidas errado e ver por que o cérebro preenche as lacunas.",
+     "p": [
+      "Quando os sons não são claros, o cérebro adivinha as palavras mais familiares.",
+      "É muito comum ouvir uma frase de música como outra de som parecido.",
+      "Em inglês se chamam mondegreens, por causa de um verso de balada escocesa ouvido errado."
+     ],
+     "q": "Que letra de música você ouviu errado por anos?",
+     "c": "Compartilhe com um amigo uma letra que você ouviu errado, ou invente uma divertida."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Spoonerisms",
+     "g": "Swap the first sounds of words, named after the absent-minded Reverend Spooner.",
+     "p": [
+      "A spoonerism swaps the starting sounds of two words.",
+      "William Spooner, an Oxford teacher, was famous for such slips.",
+      "Example: a lack of pies becomes a pack of lies."
+     ],
+     "q": "Can you swap the first sounds of belly jeans to make jelly beans?",
+     "c": "Make one spoonerism from two words you like, such as pot luck into lot puck."
+    },
+    "de": {
+     "t": "Schüttelreime und Vertauschungen",
+     "g": "Die Anfangslaute von Wörtern vertauschen, benannt nach dem zerstreuten Reverend Spooner.",
+     "p": [
+      "Ein Spoonerismus vertauscht die Anfangslaute zweier Wörter.",
+      "William Spooner, ein Lehrer in Oxford, war für solche Versprecher berühmt.",
+      "Beispiel: aus Rote Lampe wird Lote Rampe, die Anfangslaute tauschen die Plätze."
+     ],
+     "q": "Kannst du bei Sonne Mond die Anfangslaute vertauschen? Es wird Monne Sond.",
+     "c": "Bilde einen Spoonerismus aus zwei Wörtern, die du magst, etwa Topf Luck zu Lopf Tuck."
+    },
+    "es": {
+     "t": "Espunerismos",
+     "g": "Intercambiar los primeros sonidos de las palabras, nombrados por el distraído reverendo Spooner.",
+     "p": [
+      "Un espunerismo intercambia los sonidos iniciales de dos palabras.",
+      "William Spooner, profesor de Oxford, era famoso por esos deslices.",
+      "Ejemplo en inglés: a lack of pies se convierte en a pack of lies."
+     ],
+     "q": "¿Puedes intercambiar los sonidos iniciales de mesa pato para crear pesa mato?",
+     "c": "Haz un espunerismo con dos palabras que te gusten, como casa pata y pasa cata."
+    },
+    "fr": {
+     "t": "Les contrepèteries et spoonerismes",
+     "g": "Échanger les premiers sons des mots, un jeu nommé d'après le distrait révérend Spooner.",
+     "p": [
+      "Un spoonerism échange les sons initiaux de deux mots.",
+      "William Spooner, enseignant à Oxford, était célèbre pour ces lapsus.",
+      "Exemple en anglais : a lack of pies devient a pack of lies."
+     ],
+     "q": "Peux-tu échanger les sons initiaux de pain beurre pour créer bain peurre ?",
+     "c": "Fais un spoonerism avec deux mots que tu aimes, comme pot chat devenu chot pat."
+    },
+    "it": {
+     "t": "Spoonerismi",
+     "g": "Scambiare i primi suoni delle parole, nome preso dal distratto reverendo Spooner.",
+     "p": [
+      "Uno spoonerismo scambia i suoni iniziali di due parole.",
+      "William Spooner, docente a Oxford, era famoso per questi scivoloni.",
+      "Esempio in inglese: a lack of pies diventa a pack of lies."
+     ],
+     "q": "Riesci a scambiare i suoni iniziali di pane burro per ottenere bane purro?",
+     "c": "Crea uno spoonerismo con due parole che ti piacciono, come casa pasta e pasa casta."
+    },
+    "pt": {
+     "t": "Espoonerismos",
+     "g": "Trocar os primeiros sons das palavras, nome dado pelo distraído reverendo Spooner.",
+     "p": [
+      "Um espoonerismo troca os sons iniciais de duas palavras.",
+      "William Spooner, professor em Oxford, era famoso por estes deslizes.",
+      "Exemplo em inglês: a lack of pies passa a a pack of lies."
+     ],
+     "q": "Consegues trocar os sons iniciais de pão manteiga para criar mão panteiga?",
+     "c": "Faz um espoonerismo com duas palavras de que gostes, como casa pato e pasa cato."
+    },
+    "pt_BR": {
+     "t": "Espoonerismos",
+     "g": "Trocar os primeiros sons das palavras, nome dado pelo distraído reverendo Spooner.",
+     "p": [
+      "Um espoonerismo troca os sons iniciais de duas palavras.",
+      "William Spooner, professor em Oxford, era famoso por esses deslizes.",
+      "Exemplo em inglês: a lack of pies vira a pack of lies."
+     ],
+     "q": "Você consegue trocar os sons iniciais de pão manteiga para criar mão panteiga?",
+     "c": "Faça um espoonerismo com duas palavras de que você gosta, como casa pato e pasa cato."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "series",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Opening credits and title sequences",
+     "g": "Look at long sung intros and short title cards, and what they tell us.",
+     "p": [
+      "Opening credits name the show and the people behind it.",
+      "A title sequence can use images, animation or music to hint at the story.",
+      "Some series now use a short card instead, to start the story faster."
+     ],
+     "q": "Do you watch the opening credits or skip them, and why?",
+     "c": "Watch one title sequence and list three things it suggests about the show."
+    },
+    "de": {
+     "t": "Vorspann und Titelsequenzen",
+     "g": "Betrachte lange gesungene Intros und kurze Titelkarten und was sie verraten.",
+     "p": [
+      "Der Vorspann nennt die Serie und die Menschen dahinter.",
+      "Eine Titelsequenz kann mit Bildern, Animation oder Musik die Geschichte andeuten.",
+      "Manche Serien nutzen heute eine kurze Karte, um schneller zu starten."
+     ],
+     "q": "Schaust du den Vorspann oder überspringst du ihn, und warum?",
+     "c": "Sieh eine Titelsequenz und notiere drei Dinge, die sie über die Serie andeutet."
+    },
+    "es": {
+     "t": "Créditos de apertura y cabeceras",
+     "g": "Mira las cabeceras cantadas largas y las cortas, y qué nos cuentan.",
+     "p": [
+      "Los créditos de apertura nombran la serie y a quienes están detrás.",
+      "Una cabecera puede usar imágenes, animación o música para insinuar la historia.",
+      "Algunas series usan ahora una tarjeta breve para empezar antes la historia."
+     ],
+     "q": "¿Ves los créditos de apertura o los saltas, y por qué?",
+     "c": "Mira una cabecera y anota tres cosas que sugiere sobre la serie."
+    },
+    "fr": {
+     "t": "Génériques d'ouverture",
+     "g": "Regarde les longs génériques chantés et les courts titres, et ce qu'ils racontent.",
+     "p": [
+      "Le générique d'ouverture nomme la série et les gens qui l'ont faite.",
+      "Une séquence de titres peut utiliser images, animation ou musique pour suggérer l'histoire.",
+      "Certaines séries utilisent aujourd'hui une courte carte pour lancer l'histoire plus vite."
+     ],
+     "q": "Regardes-tu le générique ou le passes-tu, et pourquoi ?",
+     "c": "Regarde un générique et note trois choses qu'il suggère sur la série."
+    },
+    "it": {
+     "t": "Titoli di testa e sigle",
+     "g": "Osserva le lunghe sigle cantate e le brevi schermate del titolo, e cosa raccontano.",
+     "p": [
+      "I titoli di testa nominano la serie e le persone che l'hanno fatta.",
+      "Una sigla può usare immagini, animazione o musica per far intuire la storia.",
+      "Alcune serie oggi usano una breve schermata per cominciare prima la storia."
+     ],
+     "q": "Guardi i titoli di testa o li salti, e perché?",
+     "c": "Guarda una sigla e annota tre cose che suggerisce sulla serie."
+    },
+    "pt": {
+     "t": "Genéricos de abertura",
+     "g": "Olha para genéricos longos cantados e para cartões curtos, e o que nos dizem.",
+     "p": [
+      "O genérico de abertura nomeia a série e as pessoas por trás dela.",
+      "Uma sequência de títulos pode usar imagens, animação ou música para sugerir a história.",
+      "Algumas séries usam hoje um cartão breve para começar a história mais depressa."
+     ],
+     "q": "Vês o genérico de abertura ou saltas, e porquê?",
+     "c": "Vê uma sequência de títulos e anota três coisas que sugere sobre a série."
+    },
+    "pt_BR": {
+     "t": "Aberturas e créditos iniciais",
+     "g": "Veja aberturas longas cantadas e cartelas curtas, e o que elas contam.",
+     "p": [
+      "A abertura nomeia a série e as pessoas por trás dela.",
+      "Uma sequência de títulos pode usar imagens, animação ou música para sugerir a história.",
+      "Algumas séries hoje usam uma cartela curta para começar a história mais rápido."
+     ],
+     "q": "Você assiste à abertura ou pula, e por quê?",
+     "c": "Veja uma abertura e anote três coisas que ela sugere sobre a série."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The cold open",
+     "g": "Discover the short scene before the titles that hooks viewers at once.",
+     "p": [
+      "A cold open starts the story before the title appears.",
+      "It can be a funny moment, a puzzle or a glimpse of the day ahead.",
+      "It gives viewers a reason to stay before they decide to switch."
+     ],
+     "q": "Which opening scene have you loved most, and what hooked you?",
+     "c": "Write a four-line cold open: one place, one person and one surprise."
+    },
+    "de": {
+     "t": "Der Cold Open",
+     "g": "Entdecke die kurze Szene vor dem Vorspann, die Zuschauer sofort fesselt.",
+     "p": [
+      "Ein Cold Open beginnt die Geschichte, bevor der Titel erscheint.",
+      "Er kann ein lustiger Moment, ein Rätsel oder ein Blick auf den kommenden Tag sein.",
+      "Er gibt Zuschauern einen Grund zu bleiben, bevor sie umschalten."
+     ],
+     "q": "Welche Eröffnungsszene hast du am meisten geliebt, und was hat dich gepackt?",
+     "c": "Schreibe einen Cold Open in vier Zeilen: ein Ort, eine Person, eine Überraschung."
+    },
+    "es": {
+     "t": "El cold open",
+     "g": "Descubre la escena breve antes de los títulos que engancha enseguida.",
+     "p": [
+      "Un cold open empieza la historia antes de que aparezca el título.",
+      "Puede ser un momento gracioso, un enigma o un vistazo al día que viene.",
+      "Da al público una razón para quedarse antes de cambiar de canal."
+     ],
+     "q": "¿Qué escena de apertura has amado más y qué te enganchó?",
+     "c": "Escribe un cold open de cuatro líneas: un lugar, una persona y una sorpresa."
+    },
+    "fr": {
+     "t": "Le cold open",
+     "g": "Découvre la courte scène avant le générique qui accroche tout de suite.",
+     "p": [
+      "Un cold open commence l'histoire avant l'apparition du titre.",
+      "Ce peut être un moment drôle, une énigme ou un aperçu de la journée à venir.",
+      "Il donne au public une raison de rester avant de zapper."
+     ],
+     "q": "Quelle scène d'ouverture as-tu le plus aimée, et qu'est-ce qui t'a accroché ?",
+     "c": "Écris un cold open de quatre lignes : un lieu, une personne et une surprise."
+    },
+    "it": {
+     "t": "Il cold open",
+     "g": "Scopri la breve scena prima dei titoli che aggancia subito.",
+     "p": [
+      "Un cold open inizia la storia prima che appaia il titolo.",
+      "Può essere un momento buffo, un enigma o uno sguardo sulla giornata che verrà.",
+      "Dà al pubblico un motivo per restare prima di cambiare canale."
+     ],
+     "q": "Quale scena d'apertura hai amato di più e cosa ti ha agganciato?",
+     "c": "Scrivi un cold open di quattro righe: un luogo, una persona e una sorpresa."
+    },
+    "pt": {
+     "t": "O cold open",
+     "g": "Descobre a cena curta antes dos títulos que prende logo o público.",
+     "p": [
+      "Um cold open começa a história antes de o título aparecer.",
+      "Pode ser um momento engraçado, um enigma ou um vislumbre do dia que se segue.",
+      "Dá ao público uma razão para ficar antes de mudar de canal."
+     ],
+     "q": "Que cena de abertura mais adoraste e o que te prendeu?",
+     "c": "Escreve um cold open de quatro linhas: um lugar, uma pessoa e uma surpresa."
+    },
+    "pt_BR": {
+     "t": "O cold open",
+     "g": "Descubra a cena curta antes dos títulos que fisga o público logo de cara.",
+     "p": [
+      "Um cold open começa a história antes de o título aparecer.",
+      "Pode ser um momento engraçado, um enigma ou um vislumbre do dia que vem.",
+      "Dá ao público uma razão para ficar antes de trocar de canal."
+     ],
+     "q": "Que cena de abertura você mais amou e o que fisgou você?",
+     "c": "Escreva um cold open de quatro linhas: um lugar, uma pessoa e uma surpresa."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Season finales",
+     "g": "See how the last episode of a season ties up stories or opens new ones.",
+     "p": [
+      "A finale often brings a season's main question to its answer.",
+      "It may resolve some stories while planting seeds for the next season.",
+      "Big events or reunions give the audience a sense of arrival."
+     ],
+     "q": "What makes a season finale feel satisfying to you?",
+     "c": "List what a good finale should answer and what it may leave open."
+    },
+    "de": {
+     "t": "Staffelfinale",
+     "g": "Sieh, wie die letzte Folge einer Staffel Geschichten abschließt oder neue öffnet.",
+     "p": [
+      "Ein Finale bringt die Hauptfrage einer Staffel oft zu ihrer Antwort.",
+      "Es kann manche Geschichten lösen und zugleich Keime für die nächste Staffel legen.",
+      "Große Ereignisse oder Wiedersehen geben dem Publikum das Gefühl anzukommen."
+     ],
+     "q": "Was macht ein Staffelfinale für dich befriedigend?",
+     "c": "Liste auf, was ein gutes Finale beantworten und was es offenlassen darf."
+    },
+    "es": {
+     "t": "Finales de temporada",
+     "g": "Mira cómo el último episodio de una temporada cierra historias o abre otras.",
+     "p": [
+      "Un final suele dar respuesta a la pregunta principal de la temporada.",
+      "Puede resolver unas historias y plantar semillas para la siguiente temporada.",
+      "Grandes sucesos o reencuentros dan al público sensación de llegada."
+     ],
+     "q": "¿Qué hace que un final de temporada te resulte satisfactorio?",
+     "c": "Anota qué debe responder un buen final y qué puede dejar abierto."
+    },
+    "fr": {
+     "t": "Les finales de saison",
+     "g": "Vois comment le dernier épisode d'une saison clôt des histoires ou en ouvre d'autres.",
+     "p": [
+      "Un final apporte souvent la réponse à la question principale de la saison.",
+      "Il peut résoudre certaines histoires tout en semant des graines pour la saison suivante.",
+      "De grands événements ou des retrouvailles donnent au public un sentiment d'arrivée."
+     ],
+     "q": "Qu'est-ce qui rend un final de saison satisfaisant pour toi ?",
+     "c": "Note ce qu'un bon final doit résoudre et ce qu'il peut laisser ouvert."
+    },
+    "it": {
+     "t": "I finali di stagione",
+     "g": "Scopri come l'ultimo episodio di una stagione chiude storie o ne apre di nuove.",
+     "p": [
+      "Un finale porta spesso la domanda principale della stagione alla sua risposta.",
+      "Può risolvere alcune storie e piantare semi per la stagione successiva.",
+      "Grandi eventi o riunioni danno al pubblico un senso di arrivo."
+     ],
+     "q": "Cosa rende soddisfacente per te un finale di stagione?",
+     "c": "Elenca cosa dovrebbe risolvere un buon finale e cosa può lasciare aperto."
+    },
+    "pt": {
+     "t": "Finais de temporada",
+     "g": "Vê como o último episódio de uma temporada fecha histórias ou abre outras.",
+     "p": [
+      "Um final dá muitas vezes resposta à pergunta principal da temporada.",
+      "Pode resolver umas histórias e plantar sementes para a temporada seguinte.",
+      "Grandes acontecimentos ou reencontros dão ao público sensação de chegada."
+     ],
+     "q": "O que torna um final de temporada satisfatório para ti?",
+     "c": "Anota o que um bom final deve responder e o que pode deixar em aberto."
+    },
+    "pt_BR": {
+     "t": "Finais de temporada",
+     "g": "Veja como o último episódio de uma temporada fecha histórias ou abre outras.",
+     "p": [
+      "Um final costuma dar a resposta à pergunta principal da temporada.",
+      "Pode resolver algumas histórias e plantar sementes para a temporada seguinte.",
+      "Grandes acontecimentos ou reencontros dão ao público a sensação de chegada."
+     ],
+     "q": "O que faz um final de temporada ser satisfatório para você?",
+     "c": "Anote o que um bom final deve responder e o que pode deixar em aberto."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Series finales",
+     "g": "Say goodbye to characters and see why last episodes matter so much.",
+     "p": [
+      "A series finale ends a long relationship between viewers and characters.",
+      "It often returns to places or moments from the very first episode.",
+      "Good endings feel earned, true to the characters and a little bittersweet."
+     ],
+     "q": "Which series ending did you love, and what made it feel right?",
+     "c": "Write the final line a character from a show you love might say."
+    },
+    "de": {
+     "t": "Serienfinale",
+     "g": "Verabschiede dich von Figuren und sieh, warum letzte Folgen so wichtig sind.",
+     "p": [
+      "Ein Serienfinale beendet eine lange Beziehung zwischen Publikum und Figuren.",
+      "Es kehrt oft zu Orten oder Momenten aus der allerersten Folge zurück.",
+      "Gute Enden fühlen sich verdient an, treu zu den Figuren und ein wenig wehmütig."
+     ],
+     "q": "Welches Serienende hast du geliebt, und was ließ es richtig wirken?",
+     "c": "Schreibe den letzten Satz, den eine Figur aus einer geliebten Serie sagen könnte."
+    },
+    "es": {
+     "t": "Finales de serie",
+     "g": "Despídete de los personajes y mira por qué importan tanto los últimos episodios.",
+     "p": [
+      "El final de una serie cierra una larga relación entre el público y los personajes.",
+      "Suele volver a lugares o momentos del primer episodio.",
+      "Los buenos finales se sienten merecidos, fieles a los personajes y algo agridulces."
+     ],
+     "q": "¿Qué final de serie amaste y qué lo hizo sentirse acertado?",
+     "c": "Escribe la última frase que diría un personaje de una serie que quieres."
+    },
+    "fr": {
+     "t": "Les finales de série",
+     "g": "Dis au revoir aux personnages et vois pourquoi les derniers épisodes comptent tant.",
+     "p": [
+      "Un final de série clôt une longue relation entre le public et les personnages.",
+      "Il revient souvent à des lieux ou des moments du tout premier épisode.",
+      "Les bonnes fins semblent méritées, fidèles aux personnages et un peu douces-amères."
+     ],
+     "q": "Quelle fin de série as-tu aimée, et qu'est-ce qui la rendait juste ?",
+     "c": "Écris la dernière réplique que pourrait dire un personnage d'une série que tu aimes."
+    },
+    "it": {
+     "t": "I finali di serie",
+     "g": "Saluta i personaggi e scopri perché gli ultimi episodi contano così tanto.",
+     "p": [
+      "Il finale di una serie chiude una lunga relazione tra pubblico e personaggi.",
+      "Spesso ritorna a luoghi o momenti del primissimo episodio.",
+      "I buoni finali sembrano meritati, fedeli ai personaggi e un po' agrodolci."
+     ],
+     "q": "Quale finale di serie hai amato e cosa lo rendeva giusto?",
+     "c": "Scrivi l'ultima battuta che potrebbe dire un personaggio di una serie che ami."
+    },
+    "pt": {
+     "t": "Finais de série",
+     "g": "Despede-te das personagens e vê porque é que os últimos episódios importam tanto.",
+     "p": [
+      "O final de uma série encerra uma longa relação entre o público e as personagens.",
+      "Volta muitas vezes a lugares ou momentos do primeiro episódio.",
+      "Os bons finais parecem merecidos, fiéis às personagens e um pouco agridoces."
+     ],
+     "q": "Que final de série adoraste e o que o fez parecer certo?",
+     "c": "Escreve a última fala que uma personagem de uma série de que gostes poderia dizer."
+    },
+    "pt_BR": {
+     "t": "Finais de série",
+     "g": "Despeça-se dos personagens e veja por que os últimos episódios importam tanto.",
+     "p": [
+      "O final de uma série encerra uma longa relação entre o público e os personagens.",
+      "Muitas vezes volta a lugares ou momentos do primeiro episódio.",
+      "Os bons finais parecem merecidos, fiéis aos personagens e um pouco agridoces."
+     ],
+     "q": "Que final de série você amou e o que o fez parecer certo?",
+     "c": "Escreva a última fala que um personagem de uma série que você ama poderia dizer."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The ensemble cast",
+     "g": "Explore shows built around a group rather than one hero.",
+     "p": [
+      "In an ensemble, many characters share the spotlight in different episodes.",
+      "Each member brings a different voice, skill or view to the group.",
+      "The group itself, a family or a team, becomes the real main character."
+     ],
+     "q": "If you joined a TV ensemble, what would your role be: planner, joker or heart?",
+     "c": "Name a show with an ensemble and describe each member in one word."
+    },
+    "de": {
+     "t": "Das Ensemble",
+     "g": "Entdecke Serien, die um eine Gruppe statt um einen Helden gebaut sind.",
+     "p": [
+      "In einem Ensemble teilen sich viele Figuren in verschiedenen Folgen das Rampenlicht.",
+      "Jedes Mitglied bringt eine andere Stimme, Fähigkeit oder Sicht in die Gruppe.",
+      "Die Gruppe selbst, eine Familie oder ein Team, wird zur eigentlichen Hauptfigur."
+     ],
+     "q": "Wenn du zu einem TV-Ensemble gehörtest, welche Rolle: Planer, Spaßvogel oder Herz?",
+     "c": "Nenne eine Serie mit Ensemble und beschreibe jedes Mitglied mit einem Wort."
+    },
+    "es": {
+     "t": "El reparto coral",
+     "g": "Explora series construidas en torno a un grupo y no a un solo héroe.",
+     "p": [
+      "En un reparto coral muchos personajes comparten protagonismo en distintos episodios.",
+      "Cada miembro aporta una voz, habilidad o visión distinta al grupo.",
+      "El grupo mismo, una familia o un equipo, se vuelve el verdadero protagonista."
+     ],
+     "q": "Si formaras parte de un reparto coral, ¿cuál sería tu papel: planificador, bromista o corazón?",
+     "c": "Nombra una serie coral y describe a cada miembro con una palabra."
+    },
+    "fr": {
+     "t": "La distribution chorale",
+     "g": "Explore les séries bâties autour d'un groupe plutôt que d'un seul héros.",
+     "p": [
+      "Dans une distribution chorale, de nombreux personnages se partagent la vedette selon les épisodes.",
+      "Chaque membre apporte une voix, un talent ou un regard différent au groupe.",
+      "Le groupe lui-même, famille ou équipe, devient le vrai personnage principal."
+     ],
+     "q": "Si tu rejoignais un ensemble télé, quel serait ton rôle : stratège, farceur ou cœur ?",
+     "c": "Nomme une série chorale et décris chaque membre en un mot."
+    },
+    "it": {
+     "t": "Il cast corale",
+     "g": "Esplora le serie costruite attorno a un gruppo e non a un solo eroe.",
+     "p": [
+      "In un cast corale molti personaggi si dividono la scena in episodi diversi.",
+      "Ogni membro porta una voce, un'abilità o un punto di vista diverso al gruppo.",
+      "Il gruppo stesso, una famiglia o una squadra, diventa il vero protagonista."
+     ],
+     "q": "Se entrassi in un cast corale, quale sarebbe il tuo ruolo: pianificatore, burlone o cuore?",
+     "c": "Nomina una serie corale e descrivi ogni membro con una parola."
+    },
+    "pt": {
+     "t": "O elenco coral",
+     "g": "Explora séries construídas em torno de um grupo e não de um único herói.",
+     "p": [
+      "Num elenco coral muitas personagens partilham o protagonismo em episódios diferentes.",
+      "Cada membro traz ao grupo uma voz, uma capacidade ou um olhar diferente.",
+      "O próprio grupo, uma família ou uma equipa, torna-se a verdadeira personagem principal."
+     ],
+     "q": "Se fizesses parte de um elenco coral, qual seria o teu papel: planeador, brincalhão ou coração?",
+     "c": "Nomeia uma série coral e descreve cada membro numa palavra."
+    },
+    "pt_BR": {
+     "t": "O elenco coral",
+     "g": "Explore séries construídas em torno de um grupo e não de um único herói.",
+     "p": [
+      "Num elenco coral, vários personagens dividem o protagonismo em episódios diferentes.",
+      "Cada membro traz ao grupo uma voz, uma habilidade ou um olhar diferente.",
+      "O próprio grupo, uma família ou uma equipe, vira o verdadeiro protagonista."
+     ],
+     "q": "Se você fizesse parte de um elenco coral, qual seria seu papel: planejador, brincalhão ou coração?",
+     "c": "Cite uma série coral e descreva cada membro em uma palavra."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Main, recurring and guest characters",
+     "g": "See how different roles keep a series fresh.",
+     "p": [
+      "Main characters appear in nearly every episode and carry the long story.",
+      "Recurring characters return now and then, adding variety and surprise.",
+      "Guest characters visit for one episode and often drive its special problem."
+     ],
+     "q": "Which guest or recurring character stole the show for you?",
+     "c": "Pick a show and sort three of its characters as main, recurring or guest."
+    },
+    "de": {
+     "t": "Haupt-, wiederkehrende und Gastfiguren",
+     "g": "Sieh, wie verschiedene Rollen eine Serie frisch halten.",
+     "p": [
+      "Hauptfiguren erscheinen in fast jeder Folge und tragen die lange Geschichte.",
+      "Wiederkehrende Figuren tauchen ab und zu auf und bringen Abwechslung und Überraschung.",
+      "Gastfiguren besuchen nur eine Folge und treiben oft deren besonderes Problem an."
+     ],
+     "q": "Welche Gast- oder wiederkehrende Figur hat dir die Show gestohlen?",
+     "c": "Wähle eine Serie und ordne drei Figuren als Haupt-, wiederkehrend oder Gast ein."
+    },
+    "es": {
+     "t": "Personajes principales, recurrentes e invitados",
+     "g": "Mira cómo los distintos papeles mantienen fresca una serie.",
+     "p": [
+      "Los principales aparecen en casi todos los episodios y llevan la historia larga.",
+      "Los recurrentes vuelven de vez en cuando, con variedad y sorpresa.",
+      "Los invitados visitan un solo episodio y suelen impulsar su problema especial."
+     ],
+     "q": "¿Qué personaje invitado o recurrente te robó la serie?",
+     "c": "Elige una serie y clasifica tres personajes como principal, recurrente o invitado."
+    },
+    "fr": {
+     "t": "Personnages principaux, récurrents et invités",
+     "g": "Vois comment les différents rôles gardent une série fraîche.",
+     "p": [
+      "Les principaux apparaissent dans presque chaque épisode et portent la longue histoire.",
+      "Les récurrents reviennent de temps en temps, avec variété et surprise.",
+      "Les invités ne passent que le temps d'un épisode et portent souvent son problème particulier."
+     ],
+     "q": "Quel personnage invité ou récurrent a volé la vedette selon toi ?",
+     "c": "Choisis une série et classe trois personnages : principal, récurrent ou invité."
+    },
+    "it": {
+     "t": "Personaggi principali, ricorrenti e ospiti",
+     "g": "Scopri come ruoli diversi tengono fresca una serie.",
+     "p": [
+      "I principali compaiono in quasi ogni episodio e portano la storia lunga.",
+      "I ricorrenti tornano ogni tanto, con varietà e sorpresa.",
+      "Gli ospiti passano per un solo episodio e spesso guidano il suo problema speciale."
+     ],
+     "q": "Quale personaggio ospite o ricorrente ti ha rubato la scena?",
+     "c": "Scegli una serie e classifica tre personaggi come principale, ricorrente o ospite."
+    },
+    "pt": {
+     "t": "Personagens principais, recorrentes e convidadas",
+     "g": "Vê como os diferentes papéis mantêm uma série fresca.",
+     "p": [
+      "As principais aparecem em quase todos os episódios e levam a história longa.",
+      "As recorrentes voltam de vez em quando, com variedade e surpresa.",
+      "As convidadas visitam um só episódio e costumam impulsionar o seu problema especial."
+     ],
+     "q": "Que personagem convidada ou recorrente te roubou a série?",
+     "c": "Escolhe uma série e classifica três personagens como principal, recorrente ou convidada."
+    },
+    "pt_BR": {
+     "t": "Personagens principais, recorrentes e convidados",
+     "g": "Veja como papéis diferentes mantêm uma série fresca.",
+     "p": [
+      "Os principais aparecem em quase todos os episódios e carregam a história longa.",
+      "Os recorrentes voltam de vez em quando, com variedade e surpresa.",
+      "Os convidados visitam um só episódio e costumam impulsionar o problema especial dele."
+     ],
+     "q": "Que personagem convidado ou recorrente roubou a cena para você?",
+     "c": "Escolha uma série e classifique três personagens como principal, recorrente ou convidado."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Spin-offs",
+     "g": "See what happens when a popular character gets a show of their own.",
+     "p": [
+      "A spin-off takes a side character or a world and builds a new series on it.",
+      "It trusts that audiences already like the person or setting.",
+      "The best ones find a new tone instead of repeating the original."
+     ],
+     "q": "Which side character would you love to see in their own series?",
+     "c": "Pitch a spin-off in one line: who it follows and what is new about it."
+    },
+    "de": {
+     "t": "Spin-offs",
+     "g": "Sieh, was passiert, wenn eine beliebte Figur eine eigene Serie bekommt.",
+     "p": [
+      "Ein Spin-off nimmt eine Nebenfigur oder eine Welt und baut darauf eine neue Serie.",
+      "Es vertraut darauf, dass das Publikum die Person oder den Ort schon mag.",
+      "Die besten finden einen neuen Ton, statt das Original zu wiederholen."
+     ],
+     "q": "Welche Nebenfigur würdest du gern in einer eigenen Serie sehen?",
+     "c": "Pitche ein Spin-off in einer Zeile: wem es folgt und was daran neu ist."
+    },
+    "es": {
+     "t": "Spin-offs",
+     "g": "Mira qué ocurre cuando un personaje popular recibe una serie propia.",
+     "p": [
+      "Un spin-off toma a un personaje secundario o un mundo y construye sobre él una serie nueva.",
+      "Confía en que el público ya quiere a la persona o al lugar.",
+      "Los mejores encuentran un tono nuevo en vez de repetir el original."
+     ],
+     "q": "¿A qué personaje secundario te encantaría ver en su propia serie?",
+     "c": "Presenta un spin-off en una línea: a quién sigue y qué tiene de nuevo."
+    },
+    "fr": {
+     "t": "Les spin-offs",
+     "g": "Vois ce qui se passe quand un personnage populaire obtient sa propre série.",
+     "p": [
+      "Un spin-off prend un personnage secondaire ou un monde et bâtit dessus une nouvelle série.",
+      "Il compte sur le fait que le public aime déjà la personne ou le lieu.",
+      "Les meilleurs trouvent un ton nouveau au lieu de répéter l'original."
+     ],
+     "q": "Quel personnage secondaire aimerais-tu voir dans sa propre série ?",
+     "c": "Présente un spin-off en une ligne : qui il suit et ce qu'il a de neuf."
+    },
+    "it": {
+     "t": "Gli spin-off",
+     "g": "Scopri cosa succede quando un personaggio popolare ottiene una serie tutta sua.",
+     "p": [
+      "Uno spin-off prende un personaggio secondario o un mondo e costruisce su di esso una nuova serie.",
+      "Si fida del fatto che il pubblico ami già la persona o il luogo.",
+      "I migliori trovano un tono nuovo invece di ripetere l'originale."
+     ],
+     "q": "Quale personaggio secondario ti piacerebbe vedere in una serie tutta sua?",
+     "c": "Proponi uno spin-off in una riga: chi segue e cosa ha di nuovo."
+    },
+    "pt": {
+     "t": "Os spin-offs",
+     "g": "Vê o que acontece quando uma personagem popular ganha uma série própria.",
+     "p": [
+      "Um spin-off pega numa personagem secundária ou num mundo e constrói uma série nova sobre isso.",
+      "Confia em que o público já gosta da pessoa ou do lugar.",
+      "Os melhores encontram um tom novo em vez de repetir o original."
+     ],
+     "q": "Que personagem secundária adorarias ver na sua própria série?",
+     "c": "Apresenta um spin-off numa linha: quem segue e o que tem de novo."
+    },
+    "pt_BR": {
+     "t": "Os spin-offs",
+     "g": "Veja o que acontece quando um personagem popular ganha uma série própria.",
+     "p": [
+      "Um spin-off pega um personagem secundário ou um mundo e constrói uma série nova em cima disso.",
+      "Ele confia que o público já gosta da pessoa ou do lugar.",
+      "Os melhores encontram um tom novo em vez de repetir o original."
+     ],
+     "q": "Que personagem secundário você adoraria ver na própria série?",
+     "c": "Apresente um spin-off numa linha: quem ele segue e o que tem de novo."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Crossovers",
+     "g": "Find out what happens when characters from two series meet.",
+     "p": [
+      "A crossover is a special event where one show's characters visit another.",
+      "It delights fans by mixing two worlds that they already know well.",
+      "The challenge is to keep both tones and respect both casts."
+     ],
+     "q": "Which two TV worlds would you love to see meet, and why?",
+     "c": "Imagine a crossover: two shows, one shared problem and one funny clash."
+    },
+    "de": {
+     "t": "Crossover",
+     "g": "Finde heraus, was geschieht, wenn Figuren aus zwei Serien sich treffen.",
+     "p": [
+      "Ein Crossover ist ein Sonderereignis, bei dem Figuren einer Serie eine andere besuchen.",
+      "Es erfreut Fans, indem es zwei bekannte Welten mischt.",
+      "Die Herausforderung ist, beide Töne zu halten und beide Besetzungen zu achten."
+     ],
+     "q": "Welche zwei Fernsehwelten würdest du gern aufeinandertreffen sehen, und warum?",
+     "c": "Erfinde ein Crossover: zwei Serien, ein gemeinsames Problem und ein lustiger Zusammenstoß."
+    },
+    "es": {
+     "t": "Crossovers",
+     "g": "Descubre qué ocurre cuando se encuentran personajes de dos series.",
+     "p": [
+      "Un crossover es un evento especial en el que personajes de una serie visitan otra.",
+      "Alegra a los fans al mezclar dos mundos que ya conocen bien.",
+      "El reto es mantener ambos tonos y respetar ambos repartos."
+     ],
+     "q": "¿Qué dos mundos de la tele te gustaría ver encontrarse, y por qué?",
+     "c": "Imagina un crossover: dos series, un problema compartido y un choque gracioso."
+    },
+    "fr": {
+     "t": "Les crossovers",
+     "g": "Découvre ce qui arrive quand des personnages de deux séries se rencontrent.",
+     "p": [
+      "Un crossover est un événement spécial où les personnages d'une série en visitent une autre.",
+      "Il ravit les fans en mêlant deux mondes qu'ils connaissent bien.",
+      "Le défi est de garder les deux tons et de respecter les deux distributions."
+     ],
+     "q": "Quels deux univers télé aimerais-tu voir se rencontrer, et pourquoi ?",
+     "c": "Imagine un crossover : deux séries, un problème commun et un choc drôle."
+    },
+    "it": {
+     "t": "I crossover",
+     "g": "Scopri cosa succede quando si incontrano personaggi di due serie.",
+     "p": [
+      "Un crossover è un evento speciale in cui i personaggi di una serie visitano un'altra.",
+      "Delizia i fan mescolando due mondi che già conoscono bene.",
+      "La sfida è mantenere entrambi i toni e rispettare entrambi i cast."
+     ],
+     "q": "Quali due mondi televisivi ti piacerebbe vedere incontrarsi, e perché?",
+     "c": "Immagina un crossover: due serie, un problema comune e uno scontro divertente."
+    },
+    "pt": {
+     "t": "Os crossovers",
+     "g": "Descobre o que acontece quando personagens de duas séries se encontram.",
+     "p": [
+      "Um crossover é um evento especial em que personagens de uma série visitam outra.",
+      "Encanta os fãs ao misturar dois mundos que já conhecem bem.",
+      "O desafio é manter os dois tons e respeitar os dois elencos."
+     ],
+     "q": "Que dois mundos da TV gostarias de ver encontrarem-se, e porquê?",
+     "c": "Imagina um crossover: duas séries, um problema partilhado e um choque divertido."
+    },
+    "pt_BR": {
+     "t": "Os crossovers",
+     "g": "Descubra o que acontece quando personagens de duas séries se encontram.",
+     "p": [
+      "Um crossover é um evento especial em que personagens de uma série visitam outra.",
+      "Encanta os fãs ao misturar dois mundos que já conhecem bem.",
+      "O desafio é manter os dois tons e respeitar os dois elencos."
+     ],
+     "q": "Que dois mundos da TV você gostaria de ver se encontrando, e por quê?",
+     "c": "Imagine um crossover: duas séries, um problema compartilhado e um choque divertido."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reboots, revivals and remakes",
+     "g": "Learn about bringing back old shows for a new generation.",
+     "p": [
+      "A reboot starts the story over, a revival continues it years later.",
+      "A remake tells the same story again with new people and updates.",
+      "The risk is trying to please old fans and newcomers at once."
+     ],
+     "q": "Which old show would you welcome back, and what should stay the same?",
+     "c": "Choose an old show and list one thing to keep and one thing to update."
+    },
+    "de": {
+     "t": "Reboots, Revivals und Remakes",
+     "g": "Lerne, wie alte Serien für eine neue Generation zurückgeholt werden.",
+     "p": [
+      "Ein Reboot beginnt die Geschichte neu, ein Revival setzt sie Jahre später fort.",
+      "Ein Remake erzählt dieselbe Geschichte mit neuen Leuten und Anpassungen noch einmal.",
+      "Das Risiko: alte Fans und Neulinge gleichzeitig zufriedenstellen zu wollen."
+     ],
+     "q": "Welche alte Serie würdest du zurückwünschen, und was soll gleich bleiben?",
+     "c": "Wähle eine alte Serie und nenne etwas zum Behalten und etwas zum Erneuern."
+    },
+    "es": {
+     "t": "Reboots, revivals y remakes",
+     "g": "Aprende cómo se recuperan series antiguas para una nueva generación.",
+     "p": [
+      "Un reboot empieza la historia de cero, un revival la continúa años después.",
+      "Un remake cuenta la misma historia con gente nueva y cambios.",
+      "El riesgo es querer contentar a la vez a viejos fans y recién llegados."
+     ],
+     "q": "¿Qué serie antigua te gustaría que volviera y qué debería seguir igual?",
+     "c": "Elige una serie antigua y anota algo que mantener y algo que actualizar."
+    },
+    "fr": {
+     "t": "Reboots, revivals et remakes",
+     "g": "Apprends comment on ramène d'anciennes séries pour une nouvelle génération.",
+     "p": [
+      "Un reboot recommence l'histoire, un revival la continue des années plus tard.",
+      "Un remake raconte la même histoire avec de nouvelles personnes et des mises à jour.",
+      "Le risque est de vouloir plaire à la fois aux anciens fans et aux nouveaux."
+     ],
+     "q": "Quelle ancienne série aimerais-tu voir revenir, et que doit-on garder ?",
+     "c": "Choisis une ancienne série et note une chose à garder et une à actualiser."
+    },
+    "it": {
+     "t": "Reboot, revival e remake",
+     "g": "Scopri come si riportano le vecchie serie per una nuova generazione.",
+     "p": [
+      "Un reboot ricomincia la storia, un revival la continua anni dopo.",
+      "Un remake racconta la stessa storia con nuove persone e aggiornamenti.",
+      "Il rischio è voler accontentare insieme i vecchi fan e i nuovi arrivati."
+     ],
+     "q": "Quale vecchia serie vorresti veder tornare e cosa dovrebbe restare uguale?",
+     "c": "Scegli una vecchia serie e annota una cosa da mantenere e una da aggiornare."
+    },
+    "pt": {
+     "t": "Reboots, revivals e remakes",
+     "g": "Aprende como se trazem séries antigas de volta para uma nova geração.",
+     "p": [
+      "Um reboot recomeça a história, um revival continua-a anos depois.",
+      "Um remake conta a mesma história com gente nova e atualizações.",
+      "O risco é querer agradar ao mesmo tempo a velhos fãs e a recém-chegados."
+     ],
+     "q": "Que série antiga gostarias de ver voltar e o que devia ficar igual?",
+     "c": "Escolhe uma série antiga e anota algo a manter e algo a atualizar."
+    },
+    "pt_BR": {
+     "t": "Reboots, revivals e remakes",
+     "g": "Aprenda como séries antigas voltam para uma nova geração.",
+     "p": [
+      "Um reboot recomeça a história, um revival a continua anos depois.",
+      "Um remake conta a mesma história com gente nova e atualizações.",
+      "O risco é querer agradar ao mesmo tempo velhos fãs e recém-chegados."
+     ],
+     "q": "Que série antiga você gostaria de ver voltar e o que deveria continuar igual?",
+     "c": "Escolha uma série antiga e anote algo a manter e algo a atualizar."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Adaptations from books",
+     "g": "See how novels become series and what changes along the way.",
+     "p": [
+      "A series has more time than a film to follow a book's characters and subplots.",
+      "Writers still trim, merge or invent scenes to suit the screen.",
+      "Readers and viewers often enjoy comparing page and picture."
+     ],
+     "q": "Which book would you love to see as a series, and who should star?",
+     "c": "Pick a favourite book scene and describe how a camera could show it."
+    },
+    "de": {
+     "t": "Verfilmungen von Büchern",
+     "g": "Sieh, wie aus Romanen Serien werden und was sich unterwegs ändert.",
+     "p": [
+      "Eine Serie hat mehr Zeit als ein Film, um Figuren und Nebenhandlungen eines Buchs zu folgen.",
+      "Autoren kürzen, verbinden oder erfinden Szenen trotzdem für den Bildschirm.",
+      "Leser und Zuschauer vergleichen gern Buch und Bild."
+     ],
+     "q": "Welches Buch würdest du gern als Serie sehen, und wer sollte mitspielen?",
+     "c": "Wähle eine Lieblingsszene aus einem Buch und beschreibe, wie die Kamera sie zeigen könnte."
+    },
+    "es": {
+     "t": "Adaptaciones de libros",
+     "g": "Mira cómo las novelas se convierten en series y qué cambia por el camino.",
+     "p": [
+      "Una serie tiene más tiempo que una película para seguir personajes y tramas de un libro.",
+      "Aun así, los guionistas recortan, unen o inventan escenas para la pantalla.",
+      "A lectores y espectadores les gusta comparar página e imagen."
+     ],
+     "q": "¿Qué libro te encantaría ver como serie y quién debería protagonizarlo?",
+     "c": "Elige una escena favorita de un libro y describe cómo la mostraría una cámara."
+    },
+    "fr": {
+     "t": "Adaptations de livres",
+     "g": "Vois comment les romans deviennent séries et ce qui change en route.",
+     "p": [
+      "Une série a plus de temps qu'un film pour suivre les personnages et les intrigues d'un livre.",
+      "Les scénaristes coupent, fusionnent ou inventent quand même des scènes pour l'écran.",
+      "Lecteurs et spectateurs aiment comparer la page et l'image."
+     ],
+     "q": "Quel livre aimerais-tu voir en série, et qui devrait jouer dedans ?",
+     "c": "Choisis une scène préférée d'un livre et décris comment la caméra pourrait la montrer."
+    },
+    "it": {
+     "t": "Adattamenti dai libri",
+     "g": "Scopri come i romanzi diventano serie e cosa cambia lungo la strada.",
+     "p": [
+      "Una serie ha più tempo di un film per seguire personaggi e sottotrame di un libro.",
+      "Gli autori comunque tagliano, uniscono o inventano scene per lo schermo.",
+      "Lettori e spettatori amano confrontare pagina e immagine."
+     ],
+     "q": "Quale libro ti piacerebbe vedere come serie e chi dovrebbe interpretarlo?",
+     "c": "Scegli una scena preferita di un libro e descrivi come potrebbe mostrarla la telecamera."
+    },
+    "pt": {
+     "t": "Adaptações de livros",
+     "g": "Vê como os romances se tornam séries e o que muda pelo caminho.",
+     "p": [
+      "Uma série tem mais tempo do que um filme para seguir as personagens e as tramas de um livro.",
+      "Os argumentistas cortam, juntam ou inventam cenas na mesma para o ecrã.",
+      "Leitores e espectadores gostam de comparar página e imagem."
+     ],
+     "q": "Que livro gostarias de ver como série e quem devia protagonizá-lo?",
+     "c": "Escolhe uma cena preferida de um livro e descreve como a câmara a poderia mostrar."
+    },
+    "pt_BR": {
+     "t": "Adaptações de livros",
+     "g": "Veja como romances viram séries e o que muda pelo caminho.",
+     "p": [
+      "Uma série tem mais tempo que um filme para seguir os personagens e as tramas de um livro.",
+      "Os roteiristas cortam, juntam ou inventam cenas mesmo assim para a tela.",
+      "Leitores e espectadores gostam de comparar página e imagem."
+     ],
+     "q": "Que livro você gostaria de ver como série e quem deveria estrelar?",
+     "c": "Escolha uma cena favorita de um livro e descreva como a câmera poderia mostrá-la."
+    }
+   }
+  }
+ ]
+}

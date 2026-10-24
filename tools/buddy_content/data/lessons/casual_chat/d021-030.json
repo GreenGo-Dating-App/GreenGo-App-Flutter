@@ -1,0 +1,835 @@
+{
+ "topic": "casual_chat",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Showing interest",
+     "g": "Use small reactions like Really? and That's great to keep chats alive.",
+     "p": [
+      "Short reactions show you are listening: Oh nice, Really?, No way, That sounds fun.",
+      "Match the reaction to the news; cheer for good news, be gentle with tough news.",
+      "Add a short echo: A trip to the coast? Tell me more."
+     ],
+     "q": "Which small reaction makes you feel heard in a chat?",
+     "c": "Use three different reactions in a chat with your Buddy today."
+    },
+    "de": {
+     "t": "Interesse zeigen",
+     "g": "Nutze kleine Reaktionen wie Echt? und Das ist toll, damit Gespräche lebendig bleiben.",
+     "p": [
+      "Kurze Reaktionen zeigen, dass du zuhörst: Oh schön, Echt?, Wahnsinn, Klingt lustig.",
+      "Passe die Reaktion zur Nachricht an: freu dich über Gutes, sei sanft bei Schwerem.",
+      "Wiederhole kurz: Ein Ausflug ans Meer? Erzähl mehr."
+     ],
+     "q": "Welche kleine Reaktion gibt dir im Gespräch das Gefühl, gehört zu werden?",
+     "c": "Nutze heute im Chat mit deinem Buddy drei verschiedene Reaktionen."
+    },
+    "es": {
+     "t": "Mostrar interés",
+     "g": "Usa pequeñas reacciones como ¿En serio? y Qué bien para mantener viva la charla.",
+     "p": [
+      "Las reacciones cortas muestran que escuchas: Ay qué bien, ¿En serio?, No me digas, Suena divertido.",
+      "Ajusta la reacción a la noticia: celebra lo bueno y sé suave con lo difícil.",
+      "Añade un eco breve: ¿Un viaje a la costa? Cuéntame más."
+     ],
+     "q": "¿Qué pequeña reacción te hace sentir escuchado en una charla?",
+     "c": "Usa hoy tres reacciones distintas en tu charla con tu Buddy."
+    },
+    "fr": {
+     "t": "Montrer de l'intérêt",
+     "g": "Utilise de petites réactions comme Vraiment ? et C'est super pour garder la discussion vivante.",
+     "p": [
+      "Les réactions brèves montrent que tu écoutes : Ah sympa, Vraiment ?, Pas possible, Ça a l'air fun.",
+      "Adapte la réaction à la nouvelle : réjouis-toi du bon, sois doux avec le difficile.",
+      "Ajoute un petit écho : Une escapade à la mer ? Raconte-moi."
+     ],
+     "q": "Quelle petite réaction te fait sentir écouté dans une discussion ?",
+     "c": "Utilise aujourd'hui trois réactions différentes avec ton Buddy."
+    },
+    "it": {
+     "t": "Mostrare interesse",
+     "g": "Usa piccole reazioni come Davvero? e Che bello per tenere viva la conversazione.",
+     "p": [
+      "Le reazioni brevi mostrano che ascolti: Che bello, Davvero?, Non ci credo, Sembra divertente.",
+      "Adatta la reazione alla notizia: festeggia le buone, sii delicato con le difficili.",
+      "Aggiungi un piccolo eco: Una gita al mare? Raccontami."
+     ],
+     "q": "Quale piccola reazione ti fa sentire ascoltato in una chiacchierata?",
+     "c": "Usa oggi tre reazioni diverse nella chat con il tuo Buddy."
+    },
+    "pt": {
+     "t": "Mostrar interesse",
+     "g": "Usa pequenas reações como a sério? e que bom para manter a conversa viva.",
+     "p": [
+      "Reações curtas mostram que ouves: Que bom, a sério?, Não acredito, Parece divertido.",
+      "Ajusta a reação à notícia: celebra o que é bom e sê gentil com o que é difícil.",
+      "Junta um pequeno eco: Uma ida à praia? Conta-me mais."
+     ],
+     "q": "Que pequena reação te faz sentir ouvido numa conversa?",
+     "c": "Usa hoje três reações diferentes na conversa com o teu Buddy."
+    },
+    "pt_BR": {
+     "t": "Demonstrar interesse",
+     "g": "Use pequenas reações como Sério? e Que legal para manter a conversa viva.",
+     "p": [
+      "Reações curtas mostram que você escuta: Que legal, Sério?, Nossa, Parece divertido.",
+      "Ajuste a reação à notícia: comemore o que é bom e seja gentil com o que é difícil.",
+      "Acrescente um pequeno eco: Uma viagem à praia? Me conta mais."
+     ],
+     "q": "Que pequena reação faz você se sentir ouvido numa conversa?",
+     "c": "Use hoje três reações diferentes no papo com seu Buddy."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your favourite place to relax",
+     "g": "Share the parks, cafés or cosy corners that help you unwind.",
+     "p": [
+      "Name the place and what makes it calming: quiet, light, smell or view.",
+      "Cosy corners at home count: a chair by the window, a blanket, a lamp.",
+      "Ask Where do you go to switch off? and listen for a new idea."
+     ],
+     "q": "What place instantly makes your shoulders drop?",
+     "c": "Describe your calm place to your Buddy in three words and ask for theirs."
+    },
+    "de": {
+     "t": "Dein Lieblingsort zum Entspannen",
+     "g": "Erzähle von Parks, Cafés oder gemütlichen Ecken, in denen du zur Ruhe kommst.",
+     "p": [
+      "Nenne den Ort und was ihn beruhigend macht: Stille, Licht, Duft oder Aussicht.",
+      "Gemütliche Ecken zu Hause zählen: ein Sessel am Fenster, eine Decke, eine Lampe.",
+      "Frag Wo schaltest du ab? und achte auf neue Ideen."
+     ],
+     "q": "Welcher Ort lässt deine Schultern sofort sinken?",
+     "c": "Beschreibe deinem Buddy deinen Ruheort mit drei Wörtern und frag nach seinem."
+    },
+    "es": {
+     "t": "Tu lugar favorito para relajarte",
+     "g": "Cuenta qué parques, cafés o rincones acogedores te ayudan a desconectar.",
+     "p": [
+      "Nombra el lugar y qué lo hace tranquilo: silencio, luz, olor o vistas.",
+      "Los rincones de casa cuentan: un sillón junto a la ventana, una manta, una lámpara.",
+      "Pregunta ¿Dónde desconectas tú? y escucha por si hay una idea nueva."
+     ],
+     "q": "¿Qué lugar te hace bajar los hombros al instante?",
+     "c": "Describe a tu Buddy tu lugar de calma en tres palabras y pregunta por el suyo."
+    },
+    "fr": {
+     "t": "Ton endroit préféré pour te détendre",
+     "g": "Parle des parcs, cafés ou coins douillets qui t'aident à décompresser.",
+     "p": [
+      "Cite le lieu et ce qui l'apaise : le calme, la lumière, l'odeur ou la vue.",
+      "Les coins douillets chez soi comptent : un fauteuil près de la fenêtre, un plaid, une lampe.",
+      "Demande Où vas-tu pour décrocher ? et repère une idée nouvelle."
+     ],
+     "q": "Quel endroit te fait aussitôt relâcher les épaules ?",
+     "c": "Décris ton lieu de calme à ton Buddy en trois mots et demande le sien."
+    },
+    "it": {
+     "t": "Il tuo posto preferito per rilassarti",
+     "g": "Racconta quali parchi, bar o angoli accoglienti ti aiutano a staccare.",
+     "p": [
+      "Nomina il posto e cosa lo rende calmo: silenzio, luce, profumo o vista.",
+      "Gli angoli di casa contano: una poltrona vicino alla finestra, una coperta, una lampada.",
+      "Chiedi Dove vai per staccare? e ascolta se c'è un'idea nuova."
+     ],
+     "q": "Quale posto ti fa abbassare subito le spalle?",
+     "c": "Descrivi al tuo Buddy il tuo posto calmo in tre parole e chiedi il suo."
+    },
+    "pt": {
+     "t": "O teu sítio favorito para relaxar",
+     "g": "Conta que jardins, cafés ou cantinhos acolhedores te ajudam a descontrair.",
+     "p": [
+      "Diz o local e o que o torna calmo: silêncio, luz, cheiro ou vista.",
+      "Os cantos de casa contam: uma poltrona junto à janela, uma manta, um candeeiro.",
+      "Pergunta Onde vais para desligar? e repara se há uma ideia nova."
+     ],
+     "q": "Que sítio te faz descer logo os ombros?",
+     "c": "Descreve ao teu Buddy o teu sítio de calma em três palavras e pergunta pelo dele."
+    },
+    "pt_BR": {
+     "t": "Seu lugar favorito para relaxar",
+     "g": "Conte quais parques, cafés ou cantinhos aconchegantes ajudam você a desligar.",
+     "p": [
+      "Diga o lugar e o que o torna calmo: silêncio, luz, cheiro ou vista.",
+      "Cantinhos em casa contam: uma poltrona na janela, uma manta, um abajur.",
+      "Pergunte Onde você vai para desligar? e ouça se vem uma ideia nova."
+     ],
+     "q": "Que lugar faz seus ombros relaxarem na hora?",
+     "c": "Descreva ao seu Buddy seu lugar de calma em três palavras e pergunte pelo dele."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Snacks and treats",
+     "g": "Compare favourite snacks from around the world.",
+     "p": [
+      "Name a snack and describe it: crunchy, sweet, salty or spicy.",
+      "Snacks tell cultural stories: every country has its own little favourites.",
+      "Ask What snack reminds you of home? for a warm answer."
+     ],
+     "q": "What snack do you always keep around?",
+     "c": "Describe your favourite snack to your Buddy and ask what theirs is."
+    },
+    "de": {
+     "t": "Snacks und Leckereien",
+     "g": "Vergleiche Lieblingssnacks aus aller Welt.",
+     "p": [
+      "Nenne einen Snack und beschreibe ihn: knusprig, süß, salzig oder scharf.",
+      "Snacks erzählen Kulturgeschichten: Jedes Land hat seine kleinen Lieblinge.",
+      "Frag Welcher Snack erinnert dich an zu Hause? für eine herzliche Antwort."
+     ],
+     "q": "Welchen Snack hast du immer griffbereit?",
+     "c": "Beschreibe deinem Buddy deinen Lieblingssnack und frag nach seinem."
+    },
+    "es": {
+     "t": "Snacks y caprichos",
+     "g": "Compara snacks favoritos de todo el mundo.",
+     "p": [
+      "Nombra un snack y descríbelo: crujiente, dulce, salado o picante.",
+      "Los snacks cuentan historias culturales: cada país tiene sus pequeños favoritos.",
+      "Pregunta ¿Qué snack te recuerda a casa? para una respuesta cálida."
+     ],
+     "q": "¿Qué snack tienes siempre a mano?",
+     "c": "Describe a tu Buddy tu snack favorito y pregunta cuál es el suyo."
+    },
+    "fr": {
+     "t": "Snacks et gourmandises",
+     "g": "Compare les en-cas préférés du monde entier.",
+     "p": [
+      "Cite un en-cas et décris-le : croquant, sucré, salé ou épicé.",
+      "Les en-cas racontent les cultures : chaque pays a ses petits favoris.",
+      "Demande Quel en-cas te rappelle la maison ? pour une réponse chaleureuse."
+     ],
+     "q": "Quel en-cas as-tu toujours sous la main ?",
+     "c": "Décris ton en-cas préféré à ton Buddy et demande le sien."
+    },
+    "it": {
+     "t": "Snack e dolcetti",
+     "g": "Confronta gli spuntini preferiti di tutto il mondo.",
+     "p": [
+      "Nomina uno snack e descrivilo: croccante, dolce, salato o piccante.",
+      "Gli snack raccontano culture: ogni paese ha i suoi piccoli preferiti.",
+      "Chiedi Quale snack ti ricorda casa? per una risposta calorosa."
+     ],
+     "q": "Quale snack hai sempre a portata di mano?",
+     "c": "Descrivi al tuo Buddy il tuo snack preferito e chiedi il suo."
+    },
+    "pt": {
+     "t": "Petiscos e miminhos",
+     "g": "Compara os petiscos favoritos de todo o mundo.",
+     "p": [
+      "Diz o nome de um petisco e descreve-o: estaladiço, doce, salgado ou picante.",
+      "Os petiscos contam histórias culturais: cada país tem os seus pequenos favoritos.",
+      "Pergunta Que petisco te lembra casa? para uma resposta calorosa."
+     ],
+     "q": "Que petisco tens sempre à mão?",
+     "c": "Descreve ao teu Buddy o teu petisco favorito e pergunta qual é o dele."
+    },
+    "pt_BR": {
+     "t": "Lanchinhos e petiscos",
+     "g": "Compare os lanchinhos favoritos do mundo todo.",
+     "p": [
+      "Diga o nome de um lanche e descreva: crocante, doce, salgado ou apimentado.",
+      "Lanchinhos contam histórias culturais: cada país tem seus pequenos favoritos.",
+      "Pergunte Que lanche lembra a sua casa? para uma resposta calorosa."
+     ],
+     "q": "Que lanchinho você sempre tem por perto?",
+     "c": "Descreva ao seu Buddy seu lanchinho favorito e pergunte qual é o dele."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cooking at home",
+     "g": "Chat about easy dishes you like to make and share simple tips.",
+     "p": [
+      "Name a dish you can make without stress and one trick that helps.",
+      "Cooking skill is not the point; fun and taste are.",
+      "Ask What is your go-to quick meal? to collect easy ideas."
+     ],
+     "q": "What dish do you make when you want to feel proud?",
+     "c": "Share a simple recipe idea in three steps with your Buddy."
+    },
+    "de": {
+     "t": "Zu Hause kochen",
+     "g": "Sprich über einfache Gerichte, die du gern machst, und teile kleine Tipps.",
+     "p": [
+      "Nenne ein Gericht, das dir ohne Stress gelingt, und einen hilfreichen Trick.",
+      "Kochkunst ist nicht entscheidend; Spaß und Geschmack sind es.",
+      "Frag Was ist dein schnelles Standardessen? und sammle einfache Ideen."
+     ],
+     "q": "Welches Gericht kochst du, wenn du stolz sein willst?",
+     "c": "Teile mit deinem Buddy eine einfache Rezeptidee in drei Schritten."
+    },
+    "es": {
+     "t": "Cocinar en casa",
+     "g": "Charla sobre platos fáciles que te gusta preparar y comparte trucos sencillos.",
+     "p": [
+      "Nombra un plato que te sale sin estrés y un truco que ayuda.",
+      "La habilidad no es lo importante; lo son la diversión y el sabor.",
+      "Pregunta ¿Cuál es tu comida rápida de siempre? para reunir ideas fáciles."
+     ],
+     "q": "¿Qué plato haces cuando quieres sentirte orgulloso?",
+     "c": "Comparte con tu Buddy una idea de receta sencilla en tres pasos."
+    },
+    "fr": {
+     "t": "Cuisiner à la maison",
+     "g": "Parle de plats faciles que tu aimes préparer et partage de petites astuces.",
+     "p": [
+      "Cite un plat que tu réussis sans stress et une astuce utile.",
+      "Le talent n'est pas l'essentiel ; le plaisir et le goût, si.",
+      "Demande Quel est ton plat rapide fétiche ? pour collecter des idées simples."
+     ],
+     "q": "Quel plat prépares-tu quand tu veux être fier de toi ?",
+     "c": "Partage avec ton Buddy une idée de recette simple en trois étapes."
+    },
+    "it": {
+     "t": "Cucinare a casa",
+     "g": "Chiacchiera di piatti facili che ti piace fare e condividi piccoli consigli.",
+     "p": [
+      "Nomina un piatto che ti riesce senza stress e un trucco utile.",
+      "L'abilità non è il punto; contano divertimento e sapore.",
+      "Chiedi Qual è il tuo piatto veloce di sempre? per raccogliere idee facili."
+     ],
+     "q": "Quale piatto prepari quando vuoi sentirti orgoglioso?",
+     "c": "Condividi con il tuo Buddy un'idea di ricetta semplice in tre passaggi."
+    },
+    "pt": {
+     "t": "Cozinhar em casa",
+     "g": "Conversa sobre pratos fáceis que gostas de fazer e partilha pequenas dicas.",
+     "p": [
+      "Diz um prato que te sai sem stress e um truque que ajuda.",
+      "A habilidade não é o ponto; o que conta é a diversão e o sabor.",
+      "Pergunta Qual é a tua refeição rápida de sempre? para juntar ideias fáceis."
+     ],
+     "q": "Que prato fazes quando queres sentir-te orgulhoso?",
+     "c": "Partilha com o teu Buddy uma ideia de receita simples em três passos."
+    },
+    "pt_BR": {
+     "t": "Cozinhar em casa",
+     "g": "Converse sobre pratos fáceis que você gosta de fazer e compartilhe dicas simples.",
+     "p": [
+      "Diga um prato que sai sem estresse e um truque que ajuda.",
+      "Habilidade não é o ponto; o que conta é a diversão e o sabor.",
+      "Pergunte Qual é a sua refeição rápida de sempre? para juntar ideias fáceis."
+     ],
+     "q": "Que prato você faz quando quer ficar orgulhoso?",
+     "c": "Compartilhe com seu Buddy uma ideia de receita simples em três passos."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Eating out",
+     "g": "Talk about favourite kinds of restaurants and memorable meals.",
+     "p": [
+      "Say what kind of place you enjoy: cosy, street food, family-run or fancy.",
+      "Describe a memorable meal by the food, the company and the atmosphere.",
+      "Ask Any place you would recommend? to collect ideas, in general terms."
+     ],
+     "q": "What was the best meal you ever had out?",
+     "c": "Tell your Buddy about one great meal out and what made it special."
+    },
+    "de": {
+     "t": "Auswärts essen",
+     "g": "Sprich über deine liebsten Restaurantarten und unvergessliche Mahlzeiten.",
+     "p": [
+      "Sage, welche Art Lokal du magst: gemütlich, Streetfood, Familienbetrieb oder edel.",
+      "Beschreibe eine besondere Mahlzeit durch Essen, Gesellschaft und Stimmung.",
+      "Frag Kannst du etwas empfehlen? und sammle allgemeine Ideen."
+     ],
+     "q": "Was war das beste Essen, das du je auswärts hattest?",
+     "c": "Erzähle deinem Buddy von einem tollen Essen auswärts und was es besonders machte."
+    },
+    "es": {
+     "t": "Comer fuera",
+     "g": "Habla de tus tipos de restaurante favoritos y de comidas memorables.",
+     "p": [
+      "Di qué tipo de sitio disfrutas: acogedor, comida callejera, familiar o elegante.",
+      "Describe una comida memorable por la comida, la compañía y el ambiente.",
+      "Pregunta ¿Recomiendas algún sitio? para reunir ideas en términos generales."
+     ],
+     "q": "¿Cuál fue la mejor comida que has hecho fuera?",
+     "c": "Cuéntale a tu Buddy una gran comida fuera y qué la hizo especial."
+    },
+    "fr": {
+     "t": "Manger au restaurant",
+     "g": "Parle de tes types de restaurants préférés et de repas mémorables.",
+     "p": [
+      "Dis quel genre d'endroit tu aimes : cosy, street food, familial ou chic.",
+      "Décris un repas mémorable par le plat, la compagnie et l'ambiance.",
+      "Demande Un endroit à recommander ? pour collecter des idées, en termes généraux."
+     ],
+     "q": "Quel est le meilleur repas que tu aies fait au restaurant ?",
+     "c": "Raconte à ton Buddy un super repas au restaurant et ce qui l'a rendu spécial."
+    },
+    "it": {
+     "t": "Mangiare fuori",
+     "g": "Parla dei tuoi tipi di ristorante preferiti e dei pasti memorabili.",
+     "p": [
+      "Dì che tipo di posto ti piace: accogliente, street food, a gestione familiare o elegante.",
+      "Descrivi un pasto memorabile con cibo, compagnia e atmosfera.",
+      "Chiedi Un posto da consigliare? per raccogliere idee, in termini generali."
+     ],
+     "q": "Qual è stato il miglior pasto che hai fatto fuori?",
+     "c": "Racconta al tuo Buddy un ottimo pasto fuori e cosa l'ha reso speciale."
+    },
+    "pt": {
+     "t": "Comer fora",
+     "g": "Fala dos tipos de restaurante favoritos e de refeições memoráveis.",
+     "p": [
+      "Diz que tipo de sítio gostas: acolhedor, comida de rua, familiar ou elegante.",
+      "Descreve uma refeição memorável pela comida, pela companhia e pelo ambiente.",
+      "Pergunta Algum sítio que recomendes? para juntar ideias, em termos gerais."
+     ],
+     "q": "Qual foi a melhor refeição que já comeste fora?",
+     "c": "Conta ao teu Buddy uma ótima refeição fora e o que a tornou especial."
+    },
+    "pt_BR": {
+     "t": "Comer fora",
+     "g": "Fale dos seus tipos de restaurante favoritos e de refeições memoráveis.",
+     "p": [
+      "Diga que tipo de lugar você curte: aconchegante, comida de rua, familiar ou elegante.",
+      "Descreva uma refeição memorável pela comida, pela companhia e pelo clima.",
+      "Pergunte Algum lugar que você recomenda? para juntar ideias, em termos gerais."
+     ],
+     "q": "Qual foi a melhor refeição que você já fez fora?",
+     "c": "Conte ao seu Buddy uma ótima refeição fora e o que a tornou especial."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Games you enjoy",
+     "g": "Chat about board games, video games and playground classics.",
+     "p": [
+      "Name a game and say what you enjoy: strategy, luck, teamwork or relaxing.",
+      "Mention a classic you loved as a kid, like tag or hide and seek.",
+      "Ask Which game do you always win? for a bit of friendly humour."
+     ],
+     "q": "Which game could you play for hours?",
+     "c": "Tell your Buddy about a favourite game and how you play it."
+    },
+    "de": {
+     "t": "Spiele, die du magst",
+     "g": "Sprich über Brettspiele, Videospiele und Klassiker vom Spielplatz.",
+     "p": [
+      "Nenne ein Spiel und sage, was dir gefällt: Strategie, Glück, Teamwork oder Entspannung.",
+      "Erwähne einen Klassiker aus der Kindheit, etwa Fangen oder Verstecken.",
+      "Frag Welches Spiel gewinnst du immer? für etwas freundlichen Humor."
+     ],
+     "q": "Welches Spiel könntest du stundenlang spielen?",
+     "c": "Erzähle deinem Buddy von einem Lieblingsspiel und wie man es spielt."
+    },
+    "es": {
+     "t": "Juegos que disfrutas",
+     "g": "Charla sobre juegos de mesa, videojuegos y clásicos del recreo.",
+     "p": [
+      "Nombra un juego y di qué disfrutas: estrategia, suerte, equipo o relax.",
+      "Menciona un clásico de la infancia, como el pilla-pilla o el escondite.",
+      "Pregunta ¿A qué juego ganas siempre? para un poco de humor amable."
+     ],
+     "q": "¿A qué juego podrías jugar durante horas?",
+     "c": "Cuéntale a tu Buddy un juego favorito y cómo se juega."
+    },
+    "fr": {
+     "t": "Les jeux que tu aimes",
+     "g": "Parle de jeux de société, de jeux vidéo et de classiques de la cour de récré.",
+     "p": [
+      "Cite un jeu et dis ce que tu aimes : stratégie, chance, esprit d'équipe ou détente.",
+      "Évoque un classique d'enfance, comme chat ou cache-cache.",
+      "Demande À quel jeu gagnes-tu toujours ? pour un brin d'humour complice."
+     ],
+     "q": "À quel jeu pourrais-tu jouer des heures ?",
+     "c": "Parle à ton Buddy d'un jeu préféré et de sa façon de jouer."
+    },
+    "it": {
+     "t": "Giochi che ti piacciono",
+     "g": "Parla di giochi da tavolo, videogiochi e classici del cortile.",
+     "p": [
+      "Nomina un gioco e dì cosa ti piace: strategia, fortuna, squadra o relax.",
+      "Cita un classico dell'infanzia, come acchiapparella o nascondino.",
+      "Chiedi A quale gioco vinci sempre? per un po' di umorismo amichevole."
+     ],
+     "q": "A quale gioco potresti giocare per ore?",
+     "c": "Racconta al tuo Buddy un gioco preferito e come si gioca."
+    },
+    "pt": {
+     "t": "Jogos de que gostas",
+     "g": "Conversa sobre jogos de tabuleiro, videojogos e clássicos do recreio.",
+     "p": [
+      "Diz o nome de um jogo e o que gostas: estratégia, sorte, equipa ou relaxar.",
+      "Menciona um clássico de infância, como apanhada ou escondidas.",
+      "Pergunta A que jogo ganhas sempre? para um pouco de humor amigável."
+     ],
+     "q": "A que jogo podias jogar durante horas?",
+     "c": "Conta ao teu Buddy um jogo favorito e como se joga."
+    },
+    "pt_BR": {
+     "t": "Jogos que você curte",
+     "g": "Converse sobre jogos de tabuleiro, videogames e clássicos do recreio.",
+     "p": [
+      "Diga o nome de um jogo e o que curte: estratégia, sorte, time ou relaxar.",
+      "Mencione um clássico da infância, como pega-pega ou esconde-esconde.",
+      "Pergunte Em que jogo você sempre ganha? para um pouco de humor amigável."
+     ],
+     "q": "Que jogo você jogaria por horas?",
+     "c": "Conte ao seu Buddy um jogo favorito e como se joga."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sports to watch or play",
+     "g": "Share what sports you enjoy, if any, and respect other tastes.",
+     "p": [
+      "Say whether you play, watch or just enjoy the atmosphere.",
+      "Not into sports? Say so kindly and talk about walks or stretching instead.",
+      "Ask Do you have a favourite team or activity? and cheer on their answer."
+     ],
+     "q": "What is the most fun way for you to move your body?",
+     "c": "Tell your Buddy a sport or activity you enjoy and ask about theirs."
+    },
+    "de": {
+     "t": "Sport zum Zuschauen oder Mitmachen",
+     "g": "Erzähle, welchen Sport du magst, falls überhaupt, und respektiere andere Vorlieben.",
+     "p": [
+      "Sage, ob du spielst, zuschaust oder nur die Stimmung genießt.",
+      "Kein Sportfan? Sag es freundlich und sprich lieber über Spaziergänge oder Dehnen.",
+      "Frag Hast du ein Lieblingsteam oder eine Lieblingsaktivität? und freu dich mit."
+     ],
+     "q": "Wie bewegst du dich am liebsten mit Spaß?",
+     "c": "Erzähle deinem Buddy von einem Sport oder einer Aktivität, die du magst, und frag nach seiner."
+    },
+    "es": {
+     "t": "Deportes para ver o practicar",
+     "g": "Cuenta qué deportes disfrutas, si alguno, y respeta otros gustos.",
+     "p": [
+      "Di si practicas, ves o solo disfrutas del ambiente.",
+      "¿No te va el deporte? Dilo con amabilidad y habla de paseos o estiramientos.",
+      "Pregunta ¿Tienes un equipo o actividad favorita? y alégrate con su respuesta."
+     ],
+     "q": "¿Cuál es tu forma más divertida de moverte?",
+     "c": "Cuéntale a tu Buddy un deporte o actividad que disfrutas y pregunta por la suya."
+    },
+    "fr": {
+     "t": "Sports à regarder ou pratiquer",
+     "g": "Dis quels sports tu aimes, s'il y en a, et respecte les autres goûts.",
+     "p": [
+      "Dis si tu pratiques, regardes ou aimes juste l'ambiance.",
+      "Le sport, ce n'est pas pour toi ? Dis-le gentiment et parle de balades ou d'étirements.",
+      "Demande As-tu une équipe ou une activité préférée ? et réjouis-toi de la réponse."
+     ],
+     "q": "Quelle est ta façon la plus amusante de bouger ?",
+     "c": "Parle à ton Buddy d'un sport ou d'une activité que tu aimes et demande la sienne."
+    },
+    "it": {
+     "t": "Sport da guardare o praticare",
+     "g": "Racconta quali sport ti piacciono, se ce ne sono, e rispetta gli altri gusti.",
+     "p": [
+      "Dì se pratichi, guardi o ti piace solo l'atmosfera.",
+      "Lo sport non fa per te? Dillo con gentilezza e parla di passeggiate o stretching.",
+      "Chiedi Hai una squadra o un'attività preferita? e gioisci con la risposta."
+     ],
+     "q": "Qual è il modo più divertente per te di muoverti?",
+     "c": "Racconta al tuo Buddy uno sport o un'attività che ti piace e chiedi la sua."
+    },
+    "pt": {
+     "t": "Desportos para ver ou praticar",
+     "g": "Conta que desportos gostas, se algum, e respeita outros gostos.",
+     "p": [
+      "Diz se praticas, vês ou apenas gostas do ambiente.",
+      "Não gostas de desporto? Diz com simpatia e fala de passeios ou alongamentos.",
+      "Pergunta Tens uma equipa ou atividade favorita? e alegra-te com a resposta."
+     ],
+     "q": "Qual é a tua forma mais divertida de te mexeres?",
+     "c": "Conta ao teu Buddy um desporto ou atividade de que gostas e pergunta pelo dele."
+    },
+    "pt_BR": {
+     "t": "Esportes para assistir ou praticar",
+     "g": "Conte quais esportes você curte, se algum, e respeite outros gostos.",
+     "p": [
+      "Diga se pratica, assiste ou só curte o clima.",
+      "Não curte esporte? Diga com gentileza e fale de caminhadas ou alongamento.",
+      "Pergunte Você tem um time ou atividade favorita? e comemore a resposta."
+     ],
+     "q": "Qual é o seu jeito mais divertido de se mexer?",
+     "c": "Conte ao seu Buddy um esporte ou atividade que você curte e pergunte pelo dele."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Childhood favourites",
+     "g": "Remember toys, cartoons and snacks you loved as a kid.",
+     "p": [
+      "Name one thing you loved as a child and what made it special.",
+      "Nostalgia is a friendly topic; many people light up when they share it.",
+      "Ask What did you love watching or playing back then? for lively stories."
+     ],
+     "q": "What is a childhood memory that always makes you smile?",
+     "c": "Tell your Buddy about a childhood favourite and ask about theirs."
+    },
+    "de": {
+     "t": "Kindheitsfavoriten",
+     "g": "Erinnere dich an Spielzeug, Zeichentrickfilme und Snacks, die du als Kind geliebt hast.",
+     "p": [
+      "Nenne eine Sache, die du als Kind geliebt hast, und was sie besonders machte.",
+      "Nostalgie ist ein freundliches Thema; viele strahlen, wenn sie erzählen.",
+      "Frag Was hast du damals am liebsten geschaut oder gespielt? für lebhafte Geschichten."
+     ],
+     "q": "Welche Kindheitserinnerung bringt dich immer zum Lächeln?",
+     "c": "Erzähle deinem Buddy von einem Kindheitsliebling und frag nach seinem."
+    },
+    "es": {
+     "t": "Favoritos de la infancia",
+     "g": "Recuerda juguetes, dibujos animados y snacks que te encantaban de niño.",
+     "p": [
+      "Nombra algo que amabas de niño y qué lo hacía especial.",
+      "La nostalgia es un tema amable; mucha gente se ilumina al compartirla.",
+      "Pregunta ¿Qué te encantaba ver o jugar entonces? para historias animadas."
+     ],
+     "q": "¿Qué recuerdo de infancia te saca siempre una sonrisa?",
+     "c": "Cuéntale a tu Buddy un favorito de tu infancia y pregunta por el suyo."
+    },
+    "fr": {
+     "t": "Favoris d'enfance",
+     "g": "Souviens-toi des jouets, dessins animés et goûters que tu adorais enfant.",
+     "p": [
+      "Cite une chose que tu aimais enfant et ce qui la rendait spéciale.",
+      "La nostalgie est un sujet chaleureux ; beaucoup s'illuminent en en parlant.",
+      "Demande Que regardais-tu ou jouais-tu avec plaisir à l'époque ? pour des histoires vivantes."
+     ],
+     "q": "Quel souvenir d'enfance te fait toujours sourire ?",
+     "c": "Parle à ton Buddy d'un favori d'enfance et demande le sien."
+    },
+    "it": {
+     "t": "Preferiti dell'infanzia",
+     "g": "Ricorda giocattoli, cartoni animati e merende che amavi da bambino.",
+     "p": [
+      "Nomina una cosa che amavi da piccolo e cosa la rendeva speciale.",
+      "La nostalgia è un tema amichevole; molti si illuminano quando ne parlano.",
+      "Chiedi Cosa amavi guardare o giocare allora? per racconti vivaci."
+     ],
+     "q": "Quale ricordo d'infanzia ti fa sempre sorridere?",
+     "c": "Racconta al tuo Buddy un preferito della tua infanzia e chiedi il suo."
+    },
+    "pt": {
+     "t": "Favoritos de infância",
+     "g": "Recorda brinquedos, desenhos animados e lanches de que gostavas em criança.",
+     "p": [
+      "Diz uma coisa que adoravas em pequeno e o que a tornava especial.",
+      "A nostalgia é um tema simpático; muita gente se ilumina ao partilhá-la.",
+      "Pergunta O que adoravas ver ou brincar nessa altura? para histórias animadas."
+     ],
+     "q": "Que memória de infância te faz sempre sorrir?",
+     "c": "Conta ao teu Buddy um favorito da tua infância e pergunta pelo dele."
+    },
+    "pt_BR": {
+     "t": "Favoritos da infância",
+     "g": "Lembre de brinquedos, desenhos e lanchinhos que você amava quando criança.",
+     "p": [
+      "Diga uma coisa que você amava quando pequeno e o que a tornava especial.",
+      "Nostalgia é um assunto gostoso; muita gente se ilumina ao compartilhar.",
+      "Pergunte O que você amava assistir ou brincar naquela época? para histórias animadas."
+     ],
+     "q": "Que lembrança de infância sempre faz você sorrir?",
+     "c": "Conte ao seu Buddy um favorito da sua infância e pergunte pelo dele."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Funny little moments",
+     "g": "Share something that made you laugh this week.",
+     "p": [
+      "Set the scene in one sentence, then give the funny part.",
+      "Laugh with situations, not at people; gentle humour keeps chats warm.",
+      "If your story is not funny to them, smile and move on; that is okay."
+     ],
+     "q": "What small thing made you smile or laugh recently?",
+     "c": "Tell your Buddy one funny little moment and see if it laughs."
+    },
+    "de": {
+     "t": "Lustige kleine Momente",
+     "g": "Erzähle, was dich diese Woche zum Lachen gebracht hat.",
+     "p": [
+      "Beschreibe die Szene in einem Satz, dann kommt der lustige Teil.",
+      "Lache über Situationen, nicht über Menschen; sanfter Humor hält Gespräche warm.",
+      "Wenn deine Geschichte nicht zündet, lächle und mach weiter; das ist völlig okay."
+     ],
+     "q": "Welche Kleinigkeit hat dich kürzlich zum Lächeln gebracht?",
+     "c": "Erzähle deinem Buddy einen lustigen kleinen Moment und schau, ob er lacht."
+    },
+    "es": {
+     "t": "Momentos graciosos",
+     "g": "Cuenta algo que te hizo reír esta semana.",
+     "p": [
+      "Sitúa la escena en una frase y luego suelta la parte graciosa.",
+      "Ríete de las situaciones, no de las personas; el humor suave mantiene la charla cálida.",
+      "Si tu historia no les hace gracia, sonríe y sigue; no pasa nada."
+     ],
+     "q": "¿Qué cosa pequeña te hizo sonreír o reír hace poco?",
+     "c": "Cuéntale a tu Buddy un momento gracioso y mira si se ríe."
+    },
+    "fr": {
+     "t": "Petits moments drôles",
+     "g": "Raconte ce qui t'a fait rire cette semaine.",
+     "p": [
+      "Pose le décor en une phrase, puis donne la partie drôle.",
+      "Ris des situations, pas des personnes ; l'humour doux garde la discussion chaleureuse.",
+      "Si ton histoire ne fait pas rire, souris et passe à autre chose ; ce n'est pas grave."
+     ],
+     "q": "Quelle petite chose t'a fait sourire ou rire récemment ?",
+     "c": "Raconte un petit moment drôle à ton Buddy et vois s'il rit."
+    },
+    "it": {
+     "t": "Piccoli momenti buffi",
+     "g": "Racconta qualcosa che ti ha fatto ridere questa settimana.",
+     "p": [
+      "Descrivi la scena in una frase, poi arriva la parte divertente.",
+      "Ridi delle situazioni, non delle persone; l'umorismo gentile mantiene calda la conversazione.",
+      "Se la tua storia non fa ridere, sorridi e vai avanti; va bene così."
+     ],
+     "q": "Quale piccola cosa ti ha fatto sorridere o ridere di recente?",
+     "c": "Racconta al tuo Buddy un piccolo momento buffo e guarda se ride."
+    },
+    "pt": {
+     "t": "Pequenos momentos engraçados",
+     "g": "Conta algo que te fez rir esta semana.",
+     "p": [
+      "Descreve a cena numa frase e depois dá a parte engraçada.",
+      "Ri das situações, não das pessoas; o humor suave mantém a conversa calorosa.",
+      "Se a tua história não tiver graça para eles, sorri e segue; não faz mal."
+     ],
+     "q": "Que coisa pequena te fez sorrir ou rir recentemente?",
+     "c": "Conta ao teu Buddy um momento engraçado e vê se ele ri."
+    },
+    "pt_BR": {
+     "t": "Pequenos momentos engraçados",
+     "g": "Conte algo que fez você rir nesta semana.",
+     "p": [
+      "Descreva a cena em uma frase e depois solte a parte engraçada.",
+      "Ria das situações, não das pessoas; humor leve mantém a conversa calorosa.",
+      "Se sua história não teve graça para eles, sorria e siga; tudo bem."
+     ],
+     "q": "Que coisa pequena fez você sorrir ou rir recentemente?",
+     "c": "Conte ao seu Buddy um momento engraçado e veja se ele ri."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: easy openers",
+     "g": "Practise greetings, follow-up questions and everyday topics from the past weeks.",
+     "p": [
+      "Open with a greeting, one small share and one question to the other person.",
+      "Follow up on one detail instead of jumping to a new topic.",
+      "Use a reaction like Oh nice to show you are listening."
+     ],
+     "q": "Which opener from the last 29 days felt most natural to you?",
+     "c": "Start a mini chat using a greeting, a small share and two follow-ups."
+    },
+    "de": {
+     "t": "Wiederholung: leichte Einstiege",
+     "g": "Übe Begrüßungen, Nachfragen und Alltagsthemen der letzten Wochen.",
+     "p": [
+      "Beginne mit einer Begrüßung, einer kleinen Geschichte und einer Frage an den anderen.",
+      "Hake bei einem Detail nach, statt zum nächsten Thema zu springen.",
+      "Nutze eine Reaktion wie Oh schön, um zu zeigen, dass du zuhörst."
+     ],
+     "q": "Welcher Einstieg der letzten 29 Tage fühlte sich für dich am natürlichsten an?",
+     "c": "Starte einen Mini-Chat mit Begrüßung, kleiner Geschichte und zwei Nachfragen."
+    },
+    "es": {
+     "t": "Repaso: inicios fáciles",
+     "g": "Practica saludos, preguntas de seguimiento y temas cotidianos de las últimas semanas.",
+     "p": [
+      "Empieza con un saludo, algo tuyo en pequeño y una pregunta para el otro.",
+      "Sigue con un detalle en vez de saltar a otro tema.",
+      "Usa una reacción como Ay qué bien para mostrar que escuchas."
+     ],
+     "q": "¿Qué inicio de los últimos 29 días te resultó más natural?",
+     "c": "Empieza una mini charla con un saludo, algo tuyo y dos preguntas de seguimiento."
+    },
+    "fr": {
+     "t": "Révision : débuts faciles",
+     "g": "Exerce-toi aux salutations, aux relances et aux sujets du quotidien des dernières semaines.",
+     "p": [
+      "Commence par un salut, un petit partage et une question pour l'autre.",
+      "Rebondis sur un détail au lieu de passer à un autre sujet.",
+      "Utilise une réaction comme Ah sympa pour montrer que tu écoutes."
+     ],
+     "q": "Quelle entrée en matière des 29 derniers jours t'a semblé la plus naturelle ?",
+     "c": "Lance une mini-discussion avec un salut, un petit partage et deux relances."
+    },
+    "it": {
+     "t": "Ripasso: aperture facili",
+     "g": "Esercitati con saluti, domande di approfondimento e temi quotidiani delle ultime settimane.",
+     "p": [
+      "Apri con un saluto, un piccolo racconto e una domanda per l'altro.",
+      "Approfondisci un dettaglio invece di saltare a un altro tema.",
+      "Usa una reazione come Che bello per mostrare che ascolti."
+     ],
+     "q": "Quale apertura degli ultimi 29 giorni ti è sembrata più naturale?",
+     "c": "Avvia una mini chiacchierata con un saluto, un piccolo racconto e due domande."
+    },
+    "pt": {
+     "t": "Revisão: inícios fáceis",
+     "g": "Pratica cumprimentos, perguntas de seguimento e temas do dia a dia das últimas semanas.",
+     "p": [
+      "Começa com um cumprimento, uma pequena partilha e uma pergunta ao outro.",
+      "Continua num detalhe em vez de saltares para outro tema.",
+      "Usa uma reação como Que bom para mostrares que ouves."
+     ],
+     "q": "Que início dos últimos 29 dias te pareceu mais natural?",
+     "c": "Começa uma mini conversa com um cumprimento, uma partilha e duas perguntas."
+    },
+    "pt_BR": {
+     "t": "Revisão: aberturas fáceis",
+     "g": "Pratique cumprimentos, perguntas de continuação e temas do dia a dia das últimas semanas.",
+     "p": [
+      "Comece com um cumprimento, um pequeno compartilhamento e uma pergunta ao outro.",
+      "Continue em um detalhe em vez de pular para outro tema.",
+      "Use uma reação como Que legal para mostrar que você escuta."
+     ],
+     "q": "Que abertura dos últimos 29 dias pareceu mais natural para você?",
+     "c": "Comece um mini papo com um cumprimento, um compartilhamento e duas perguntas."
+    }
+   }
+  }
+ ]
+}

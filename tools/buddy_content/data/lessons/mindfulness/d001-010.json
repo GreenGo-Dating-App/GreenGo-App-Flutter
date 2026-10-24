@@ -1,0 +1,835 @@
+{
+ "topic": "mindfulness",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to your mindfulness path",
+     "g": "Learn what mindfulness means and how a tiny daily practice grows over a year.",
+     "p": [
+      "Mindfulness means noticing the present moment with kindness and curiosity.",
+      "Each day brings one short, gentle practice you can do anywhere.",
+      "This is general wellbeing practice, not therapy; stop any exercise that feels uncomfortable."
+     ],
+     "q": "What made you curious about mindfulness, and what would you love to feel more of?",
+     "c": "Take one slow breath right now and notice how your body feels."
+    },
+    "de": {
+     "t": "Willkommen auf deinem Achtsamkeitsweg",
+     "g": "Erfahre, was Achtsamkeit bedeutet und wie eine kleine tägliche Übung im Jahr wächst.",
+     "p": [
+      "Achtsamkeit heißt, den Moment freundlich und neugierig wahrzunehmen.",
+      "Jeden Tag gibt es eine kurze, sanfte Übung, die du überall machen kannst.",
+      "Das ist allgemeines Wohlbefinden, keine Therapie; brich jede unangenehme Übung ab."
+     ],
+     "q": "Was hat dein Interesse an Achtsamkeit geweckt, und was möchtest du mehr spüren?",
+     "c": "Atme jetzt einmal langsam und achte darauf, wie sich dein Körper anfühlt."
+    },
+    "es": {
+     "t": "Bienvenido a tu camino de mindfulness",
+     "g": "Descubre qué es el mindfulness y cómo una práctica diaria mínima crece durante un año.",
+     "p": [
+      "Mindfulness es notar el momento presente con amabilidad y curiosidad.",
+      "Cada día traerá una práctica breve y suave que puedes hacer en cualquier lugar.",
+      "Es bienestar general, no terapia; detén cualquier ejercicio que te incomode."
+     ],
+     "q": "¿Qué te despertó curiosidad por el mindfulness y qué te gustaría sentir más?",
+     "c": "Haz ahora una respiración lenta y fíjate en cómo se siente tu cuerpo."
+    },
+    "fr": {
+     "t": "Bienvenue sur ton chemin de pleine conscience",
+     "g": "Découvre ce qu'est la pleine conscience et comment une petite pratique quotidienne grandit en un an.",
+     "p": [
+      "La pleine conscience, c'est remarquer l'instant présent avec bienveillance et curiosité.",
+      "Chaque jour apporte une pratique courte et douce, faisable partout.",
+      "C'est du bien-être général, pas une thérapie; arrête tout exercice inconfortable."
+     ],
+     "q": "Qu'est-ce qui t'a donné envie de découvrir la pleine conscience, et que voudrais-tu ressentir davantage ?",
+     "c": "Prends une respiration lente maintenant et observe comment ton corps se sent."
+    },
+    "it": {
+     "t": "Benvenuto nel tuo percorso di mindfulness",
+     "g": "Scopri cos'è la mindfulness e come una piccola pratica quotidiana cresce in un anno.",
+     "p": [
+      "Mindfulness significa notare il momento presente con gentilezza e curiosità.",
+      "Ogni giorno una pratica breve e delicata, da fare ovunque.",
+      "È benessere generale, non terapia; interrompi ogni esercizio che ti mette a disagio."
+     ],
+     "q": "Cosa ti ha incuriosito della mindfulness e cosa vorresti sentire di più?",
+     "c": "Fai ora un respiro lento e nota come si sente il tuo corpo."
+    },
+    "pt": {
+     "t": "Bem-vindo ao teu caminho de mindfulness",
+     "g": "Descobre o que é mindfulness e como uma pequena prática diária cresce ao longo de um ano.",
+     "p": [
+      "Mindfulness é reparar no momento presente com gentileza e curiosidade.",
+      "Cada dia traz uma prática curta e suave que podes fazer em qualquer lado.",
+      "É bem-estar geral, não terapia; pára qualquer exercício que te incomode."
+     ],
+     "q": "O que despertou a tua curiosidade sobre mindfulness e o que gostarias de sentir mais?",
+     "c": "Faz agora uma respiração lenta e repara como se sente o teu corpo."
+    },
+    "pt_BR": {
+     "t": "Boas-vindas ao seu caminho de mindfulness",
+     "g": "Descubra o que é mindfulness e como uma pequena prática diária cresce ao longo de um ano.",
+     "p": [
+      "Mindfulness é perceber o momento presente com gentileza e curiosidade.",
+      "Cada dia traz uma prática curta e suave que você pode fazer em qualquer lugar.",
+      "É bem-estar geral, não terapia; pare qualquer exercício que incomode você."
+     ],
+     "q": "O que despertou sua curiosidade sobre mindfulness e o que você gostaria de sentir mais?",
+     "c": "Faça agora uma respiração lenta e perceba como seu corpo se sente."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mindfulness in one sentence",
+     "g": "Understand mindfulness as present-moment attention, on purpose and without harsh judgement.",
+     "p": [
+      "Paying attention on purpose means choosing where your focus goes.",
+      "Present moment means this breath, this sound, this feeling now.",
+      "Without harsh judgement means noticing without calling yourself bad or wrong."
+     ],
+     "q": "Can you describe in your own words what paying attention kindly would look like for you?",
+     "c": "Look at one object for ten seconds and notice three details."
+    },
+    "de": {
+     "t": "Achtsamkeit in einem Satz",
+     "g": "Verstehe Achtsamkeit als bewusste Aufmerksamkeit für den Moment, ohne harte Bewertung.",
+     "p": [
+      "Bewusst aufmerksam sein heißt, selbst zu wählen, wohin dein Fokus geht.",
+      "Gegenwärtig heißt: dieser Atemzug, dieses Geräusch, dieses Gefühl jetzt.",
+      "Ohne harte Bewertung heißt: wahrnehmen, ohne dich schlecht oder falsch zu nennen."
+     ],
+     "q": "Wie würdest du mit eigenen Worten beschreiben, freundlich aufmerksam zu sein?",
+     "c": "Betrachte zehn Sekunden einen Gegenstand und entdecke drei Details."
+    },
+    "es": {
+     "t": "Mindfulness en una frase",
+     "g": "Entiende el mindfulness como atención al presente, a propósito y sin juicio severo.",
+     "p": [
+      "Atender a propósito es elegir hacia dónde va tu foco.",
+      "Momento presente es esta respiración, este sonido, esta sensación ahora.",
+      "Sin juicio severo es notar sin llamarte malo ni equivocado."
+     ],
+     "q": "¿Cómo describirías con tus palabras lo que sería prestar atención con amabilidad?",
+     "c": "Mira un objeto diez segundos y nota tres detalles."
+    },
+    "fr": {
+     "t": "La pleine conscience en une phrase",
+     "g": "Comprends la pleine conscience : attention au présent, volontaire et sans jugement sévère.",
+     "p": [
+      "Porter son attention volontairement, c'est choisir où va ton focus.",
+      "Le moment présent, c'est ce souffle, ce son, cette sensation maintenant.",
+      "Sans jugement sévère, c'est observer sans te dire mauvais ou fautif."
+     ],
+     "q": "Avec tes mots, à quoi ressemblerait pour toi une attention bienveillante ?",
+     "c": "Regarde un objet dix secondes et repère trois détails."
+    },
+    "it": {
+     "t": "La mindfulness in una frase",
+     "g": "Capisci la mindfulness come attenzione al presente, volontaria e senza giudizio severo.",
+     "p": [
+      "Prestare attenzione di proposito significa scegliere dove va il tuo focus.",
+      "Momento presente è questo respiro, questo suono, questa sensazione adesso.",
+      "Senza giudizio severo significa notare senza darti dello sbagliato."
+     ],
+     "q": "Con parole tue, come sarebbe per te prestare attenzione con gentilezza?",
+     "c": "Guarda un oggetto per dieci secondi e nota tre dettagli."
+    },
+    "pt": {
+     "t": "Mindfulness numa frase",
+     "g": "Compreende mindfulness como atenção ao presente, intencional e sem julgamento severo.",
+     "p": [
+      "Prestar atenção de propósito é escolher para onde vai o teu foco.",
+      "Momento presente é esta respiração, este som, esta sensação agora.",
+      "Sem julgamento severo é reparar sem te chamares mau ou errado."
+     ],
+     "q": "Por palavras tuas, como seria prestar atenção com gentileza?",
+     "c": "Olha para um objeto dez segundos e repara em três detalhes."
+    },
+    "pt_BR": {
+     "t": "Mindfulness em uma frase",
+     "g": "Entenda mindfulness como atenção ao presente, intencional e sem julgamento severo.",
+     "p": [
+      "Prestar atenção de propósito é escolher para onde vai o seu foco.",
+      "Momento presente é esta respiração, este som, esta sensação agora.",
+      "Sem julgamento severo é perceber sem se chamar de ruim ou errado."
+     ],
+     "q": "Com suas palavras, como seria prestar atenção com gentileza?",
+     "c": "Olhe para um objeto por dez segundos e perceba três detalhes."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your starting point",
+     "g": "Notice how busy, calm or scattered your mind usually feels, with no pressure to change it.",
+     "p": [
+      "Every mind is different, and any starting point is a fine one.",
+      "Just observe: fast, slow, noisy, quiet or a mix of all of these.",
+      "Noticing is the whole task today; you do not need to fix anything."
+     ],
+     "q": "How would you describe your mind on an ordinary day, in a few words?",
+     "c": "Pause three times today and name your mind's weather in one word."
+    },
+    "de": {
+     "t": "Dein Ausgangspunkt",
+     "g": "Bemerke, wie hektisch, ruhig oder zerstreut dein Geist meist ist, ohne etwas ändern zu müssen.",
+     "p": [
+      "Jeder Geist ist anders, und jeder Startpunkt ist in Ordnung.",
+      "Beobachte einfach: schnell, langsam, laut, leise oder eine Mischung.",
+      "Heute geht es nur ums Bemerken; du musst nichts reparieren."
+     ],
+     "q": "Wie würdest du deinen Geist an einem normalen Tag in wenigen Worten beschreiben?",
+     "c": "Halte heute dreimal inne und benenne das Wetter deines Geistes mit einem Wort."
+    },
+    "es": {
+     "t": "Tu punto de partida",
+     "g": "Nota cuán ocupada, tranquila o dispersa suele sentirse tu mente, sin presión por cambiarla.",
+     "p": [
+      "Cada mente es distinta y cualquier punto de partida es válido.",
+      "Solo observa: rápida, lenta, ruidosa, callada o una mezcla.",
+      "Hoy basta con notar; no tienes que arreglar nada."
+     ],
+     "q": "¿Cómo describirías tu mente en un día normal, en pocas palabras?",
+     "c": "Haz tres pausas hoy y nombra el clima de tu mente con una palabra."
+    },
+    "fr": {
+     "t": "Ton point de départ",
+     "g": "Remarque si ton esprit est plutôt agité, calme ou dispersé, sans chercher à le changer.",
+     "p": [
+      "Chaque esprit est différent et tout point de départ est bon.",
+      "Observe simplement : rapide, lent, bruyant, calme ou un mélange.",
+      "Aujourd'hui, remarquer suffit; tu n'as rien à corriger."
+     ],
+     "q": "Comment décrirais-tu ton esprit un jour ordinaire, en quelques mots ?",
+     "c": "Fais trois pauses aujourd'hui et nomme la météo de ton esprit en un mot."
+    },
+    "it": {
+     "t": "Il tuo punto di partenza",
+     "g": "Nota quanto la tua mente è di solito frenetica, calma o dispersa, senza fretta di cambiarla.",
+     "p": [
+      "Ogni mente è diversa e ogni punto di partenza va bene.",
+      "Osserva e basta: veloce, lenta, rumorosa, quieta o un misto.",
+      "Oggi basta notare; non devi aggiustare nulla."
+     ],
+     "q": "Come descriveresti la tua mente in un giorno normale, in poche parole?",
+     "c": "Fai tre pause oggi e dai al meteo della tua mente una parola."
+    },
+    "pt": {
+     "t": "O teu ponto de partida",
+     "g": "Repara se a tua mente costuma estar agitada, calma ou dispersa, sem pressa de a mudar.",
+     "p": [
+      "Cada mente é diferente e qualquer ponto de partida serve.",
+      "Apenas observa: rápida, lenta, ruidosa, calma ou uma mistura.",
+      "Hoje basta reparar; não tens de corrigir nada."
+     ],
+     "q": "Como descreverias a tua mente num dia normal, em poucas palavras?",
+     "c": "Faz três pausas hoje e dá ao tempo da tua mente uma palavra."
+    },
+    "pt_BR": {
+     "t": "Seu ponto de partida",
+     "g": "Perceba se sua mente costuma estar agitada, calma ou dispersa, sem pressa de mudá-la.",
+     "p": [
+      "Cada mente é diferente e qualquer ponto de partida serve.",
+      "Apenas observe: rápida, lenta, barulhenta, calma ou uma mistura.",
+      "Hoje basta perceber; você não precisa consertar nada."
+     ],
+     "q": "Como você descreveria sua mente num dia comum, em poucas palavras?",
+     "c": "Faça três pausas hoje e dê ao clima da sua mente uma palavra."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "One mindful minute",
+     "g": "Sit still for sixty seconds and notice what you see, hear and feel.",
+     "p": [
+      "Set a timer for one minute and sit comfortably.",
+      "Notice sights, sounds and body sensations without chasing any of them.",
+      "If your mind wanders, simply come back; nothing has gone wrong."
+     ],
+     "q": "What stood out most during your minute: a sound, a feeling or a thought?",
+     "c": "Do one mindful minute today at a moment you usually reach for your phone."
+    },
+    "de": {
+     "t": "Eine achtsame Minute",
+     "g": "Sitze sechzig Sekunden still und bemerke, was du siehst, hörst und fühlst.",
+     "p": [
+      "Stelle einen Timer auf eine Minute und setze dich bequem hin.",
+      "Nimm Bilder, Geräusche und Körperempfindungen wahr, ohne ihnen nachzujagen.",
+      "Schweift dein Geist ab, komm einfach zurück; nichts ist schiefgelaufen."
+     ],
+     "q": "Was fiel dir in deiner Minute am meisten auf: ein Geräusch, ein Gefühl, ein Gedanke?",
+     "c": "Mach heute eine achtsame Minute, wenn du sonst zum Handy greifst."
+    },
+    "es": {
+     "t": "Un minuto consciente",
+     "g": "Siéntate sesenta segundos en calma y nota lo que ves, oyes y sientes.",
+     "p": [
+      "Pon un temporizador de un minuto y siéntate cómodo.",
+      "Nota imágenes, sonidos y sensaciones corporales sin perseguirlos.",
+      "Si la mente se va, simplemente vuelve; no ha pasado nada malo."
+     ],
+     "q": "¿Qué destacó más en tu minuto: un sonido, una sensación o un pensamiento?",
+     "c": "Haz hoy un minuto consciente cuando normalmente cogerías el móvil."
+    },
+    "fr": {
+     "t": "Une minute en pleine conscience",
+     "g": "Assieds-toi soixante secondes en silence et remarque ce que tu vois, entends et ressens.",
+     "p": [
+      "Règle un minuteur sur une minute et installe-toi confortablement.",
+      "Remarque images, sons et sensations du corps sans les poursuivre.",
+      "Si l'esprit s'égare, reviens simplement; rien n'a mal tourné."
+     ],
+     "q": "Qu'est-ce qui t'a le plus marqué pendant cette minute : un son, une sensation, une pensée ?",
+     "c": "Fais une minute de pleine conscience là où tu attrapes d'habitude ton téléphone."
+    },
+    "it": {
+     "t": "Un minuto consapevole",
+     "g": "Siediti fermo per sessanta secondi e nota cosa vedi, senti e percepisci.",
+     "p": [
+      "Imposta un timer di un minuto e siediti comodo.",
+      "Nota immagini, suoni e sensazioni del corpo senza inseguirli.",
+      "Se la mente vaga, ritorna e basta; non è andato storto nulla."
+     ],
+     "q": "Cosa ti ha colpito di più nel tuo minuto: un suono, una sensazione, un pensiero?",
+     "c": "Fai oggi un minuto consapevole quando di solito prendi il telefono."
+    },
+    "pt": {
+     "t": "Um minuto consciente",
+     "g": "Senta-te imóvel durante sessenta segundos e repara no que vês, ouves e sentes.",
+     "p": [
+      "Põe um temporizador de um minuto e senta-te confortavelmente.",
+      "Repara em imagens, sons e sensações do corpo sem os perseguir.",
+      "Se a mente divagar, volta simplesmente; nada correu mal."
+     ],
+     "q": "O que mais te chamou a atenção no teu minuto: um som, uma sensação, um pensamento?",
+     "c": "Faz hoje um minuto consciente quando normalmente pegarias no telemóvel."
+    },
+    "pt_BR": {
+     "t": "Um minuto consciente",
+     "g": "Sente-se parado por sessenta segundos e perceba o que você vê, ouve e sente.",
+     "p": [
+      "Programe um timer de um minuto e sente-se confortavelmente.",
+      "Perceba imagens, sons e sensações do corpo sem persegui-los.",
+      "Se a mente divagar, simplesmente volte; nada deu errado."
+     ],
+     "q": "O que mais chamou sua atenção no seu minuto: um som, uma sensação, um pensamento?",
+     "c": "Faça hoje um minuto consciente quando normalmente pegaria o celular."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Finding your breath",
+     "g": "Discover where you feel your breath most clearly: nose, chest or belly.",
+     "p": [
+      "Breathe naturally; there is no need to change the breath.",
+      "Rest attention for a few breaths at the nose, then the chest, then the belly.",
+      "Choose the spot where the sensation feels easiest to notice."
+     ],
+     "q": "Where did you feel your breath most clearly, and was it a surprise?",
+     "c": "Tonight, spend five breaths resting attention on your chosen spot."
+    },
+    "de": {
+     "t": "Deinen Atem finden",
+     "g": "Entdecke, wo du deinen Atem am deutlichsten spürst: Nase, Brust oder Bauch.",
+     "p": [
+      "Atme ganz natürlich; du musst den Atem nicht verändern.",
+      "Lege die Aufmerksamkeit einige Atemzüge an die Nase, dann an die Brust, dann an den Bauch.",
+      "Wähle die Stelle, an der du die Empfindung am leichtesten bemerkst."
+     ],
+     "q": "Wo hast du deinen Atem am deutlichsten gespürt, und hat dich das überrascht?",
+     "c": "Verweile heute Abend fünf Atemzüge mit der Aufmerksamkeit an deiner Stelle."
+    },
+    "es": {
+     "t": "Encontrar tu respiración",
+     "g": "Descubre dónde sientes más claro el aire al respirar: nariz, pecho o vientre.",
+     "p": [
+      "Respira con naturalidad; no hace falta cambiar la respiración.",
+      "Lleva la atención unas respiraciones a la nariz, luego al pecho y luego al vientre.",
+      "Elige el lugar donde la sensación es más fácil de notar."
+     ],
+     "q": "¿Dónde sentiste más clara tu respiración y te sorprendió?",
+     "c": "Esta noche dedica cinco respiraciones a tu lugar elegido."
+    },
+    "fr": {
+     "t": "Trouver ton souffle",
+     "g": "Découvre où tu sens le mieux ta respiration : nez, poitrine ou ventre.",
+     "p": [
+      "Respire naturellement; inutile de changer ton souffle.",
+      "Pose l'attention quelques respirations au nez, puis à la poitrine, puis au ventre.",
+      "Choisis l'endroit où la sensation est la plus facile à remarquer."
+     ],
+     "q": "Où as-tu senti ta respiration le plus nettement, et était-ce une surprise ?",
+     "c": "Ce soir, consacre cinq respirations à l'endroit que tu as choisi."
+    },
+    "it": {
+     "t": "Trovare il tuo respiro",
+     "g": "Scopri dove senti il respiro più chiaramente: naso, petto o pancia.",
+     "p": [
+      "Respira in modo naturale; non serve cambiare il respiro.",
+      "Porta l'attenzione per qualche respiro al naso, poi al petto, poi alla pancia.",
+      "Scegli il punto in cui la sensazione è più facile da notare."
+     ],
+     "q": "Dove hai sentito il respiro più chiaramente, e ti ha sorpreso?",
+     "c": "Stasera dedica cinque respiri al punto che hai scelto."
+    },
+    "pt": {
+     "t": "Encontrar a tua respiração",
+     "g": "Descobre onde sentes a respiração com mais clareza: nariz, peito ou barriga.",
+     "p": [
+      "Respira naturalmente; não é preciso mudar a respiração.",
+      "Leva a atenção uns respiros ao nariz, depois ao peito, depois à barriga.",
+      "Escolhe o sítio onde a sensação é mais fácil de notar."
+     ],
+     "q": "Onde sentiste a respiração com mais clareza, e foi uma surpresa?",
+     "c": "Esta noite dedica cinco respirações ao sítio que escolheste."
+    },
+    "pt_BR": {
+     "t": "Encontrando sua respiração",
+     "g": "Descubra onde você sente a respiração com mais clareza: nariz, peito ou barriga.",
+     "p": [
+      "Respire naturalmente; não é preciso mudar a respiração.",
+      "Leve a atenção por algumas respirações ao nariz, depois ao peito, depois à barriga.",
+      "Escolha o lugar onde a sensação é mais fácil de perceber."
+     ],
+     "q": "Onde você sentiu a respiração com mais clareza, e foi uma surpresa?",
+     "c": "Hoje à noite dedique cinco respirações ao lugar que escolheu."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Counting breaths to ten",
+     "g": "Count each out-breath from one to ten and gently begin again when you lose count.",
+     "p": [
+      "Breathe naturally and count silently on each out-breath.",
+      "When you reach ten, start again at one.",
+      "Losing count is normal; smile inwardly and restart at one."
+     ],
+     "q": "How far did you get before your mind wandered, and how did it feel to restart?",
+     "c": "Do one round of counting to ten before a meal today."
+    },
+    "de": {
+     "t": "Atemzüge bis zehn zählen",
+     "g": "Zähle jedes Ausatmen von eins bis zehn und beginne sanft neu, wenn du dich verzählst.",
+     "p": [
+      "Atme natürlich und zähle leise bei jedem Ausatmen.",
+      "Bei zehn fängst du wieder bei eins an.",
+      "Sich zu verzählen ist normal; lächle innerlich und starte bei eins."
+     ],
+     "q": "Wie weit bist du gekommen, bevor dein Geist abschweifte, und wie fühlte sich der Neustart an?",
+     "c": "Zähle heute vor einer Mahlzeit eine Runde bis zehn."
+    },
+    "es": {
+     "t": "Contar respiraciones hasta diez",
+     "g": "Cuenta cada exhalación de uno a diez y empieza de nuevo con suavidad si pierdes la cuenta.",
+     "p": [
+      "Respira con naturalidad y cuenta en silencio en cada exhalación.",
+      "Al llegar a diez, vuelve a empezar en uno.",
+      "Perder la cuenta es normal; sonríe por dentro y empieza en uno."
+     ],
+     "q": "¿Hasta dónde llegaste antes de distraerte y cómo fue reiniciar?",
+     "c": "Haz hoy una ronda de cuenta hasta diez antes de comer."
+    },
+    "fr": {
+     "t": "Compter les respirations jusqu'à dix",
+     "g": "Compte chaque expiration de un à dix et recommence doucement si tu perds le fil.",
+     "p": [
+      "Respire naturellement et compte en silence à chaque expiration.",
+      "Arrivé à dix, repars à un.",
+      "Perdre le compte est normal; souris intérieurement et reprends à un."
+     ],
+     "q": "Jusqu'où es-tu allé avant que l'esprit s'égare, et comment as-tu vécu le redémarrage ?",
+     "c": "Fais aujourd'hui un tour de comptage jusqu'à dix avant un repas."
+    },
+    "it": {
+     "t": "Contare i respiri fino a dieci",
+     "g": "Conta ogni espirazione da uno a dieci e ricomincia con dolcezza se perdi il conto.",
+     "p": [
+      "Respira naturalmente e conta in silenzio a ogni espirazione.",
+      "Arrivato a dieci, riparti da uno.",
+      "Perdere il conto è normale; sorridi dentro e riparti da uno."
+     ],
+     "q": "Fin dove sei arrivato prima di distrarti, e come ti è sembrato ricominciare?",
+     "c": "Oggi fai un giro di conteggio fino a dieci prima di un pasto."
+    },
+    "pt": {
+     "t": "Contar respirações até dez",
+     "g": "Conta cada expiração de um a dez e recomeça com suavidade se perderes a conta.",
+     "p": [
+      "Respira naturalmente e conta em silêncio a cada expiração.",
+      "Ao chegares a dez, recomeça no um.",
+      "Perder a conta é normal; sorri por dentro e recomeça no um."
+     ],
+     "q": "Até onde chegaste antes de a mente divagar, e como foi recomeçar?",
+     "c": "Hoje faz uma ronda de contagem até dez antes de uma refeição."
+    },
+    "pt_BR": {
+     "t": "Contando respirações até dez",
+     "g": "Conte cada expiração de um a dez e recomece com suavidade se perder a conta.",
+     "p": [
+      "Respire naturalmente e conte em silêncio a cada expiração.",
+      "Ao chegar a dez, recomece no um.",
+      "Perder a conta é normal; sorria por dentro e recomece no um."
+     ],
+     "q": "Até onde você chegou antes de a mente divagar, e como foi recomeçar?",
+     "c": "Hoje faça uma rodada de contagem até dez antes de uma refeição."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The wandering mind is normal",
+     "g": "See that minds drift all the time and that noticing the drift is itself the practice.",
+     "p": [
+      "Every mind wanders, including those of long-time practitioners.",
+      "The moment you notice you drifted is a moment of mindfulness.",
+      "Coming back gently, again and again, is how the practice grows."
+     ],
+     "q": "What does your mind like to wander to most often: plans, worries or memories?",
+     "c": "Each time you notice a drifting thought today, quietly say: noticed."
+    },
+    "de": {
+     "t": "Der wandernde Geist ist normal",
+     "g": "Sieh, dass Gedanken ständig abschweifen und das Bemerken selbst die Übung ist.",
+     "p": [
+      "Jeder Geist wandert, auch bei langjährig Übenden.",
+      "Der Augenblick, in dem du das Abschweifen bemerkst, ist ein Augenblick der Achtsamkeit.",
+      "Sanft zurückzukehren, immer wieder, lässt die Übung wachsen."
+     ],
+     "q": "Wohin wandert dein Geist am häufigsten: zu Plänen, Sorgen oder Erinnerungen?",
+     "c": "Sage heute bei jedem bemerkten Abschweifen leise zu dir: bemerkt."
+    },
+    "es": {
+     "t": "La mente errante es normal",
+     "g": "Comprueba que la mente se distrae siempre y que notarlo ya es la práctica.",
+     "p": [
+      "Toda mente divaga, también la de quienes practican hace años.",
+      "El momento en que notas que te distrajiste es un momento de atención plena.",
+      "Volver con suavidad, una y otra vez, hace crecer la práctica."
+     ],
+     "q": "¿A dónde suele irse tu mente: planes, preocupaciones o recuerdos?",
+     "c": "Cada vez que notes un pensamiento errante hoy, di en silencio: notado."
+    },
+    "fr": {
+     "t": "L'esprit qui vagabonde est normal",
+     "g": "Vois que l'esprit divague tout le temps et que le remarquer est déjà la pratique.",
+     "p": [
+      "Tout esprit vagabonde, même celui des pratiquants de longue date.",
+      "L'instant où tu remarques la dérive est un instant de pleine conscience.",
+      "Revenir doucement, encore et encore, fait grandir la pratique."
+     ],
+     "q": "Où ton esprit aime-t-il aller le plus souvent : projets, soucis ou souvenirs ?",
+     "c": "Chaque fois que tu remarques une pensée vagabonde aujourd'hui, dis en silence : remarqué."
+    },
+    "it": {
+     "t": "La mente che vaga è normale",
+     "g": "Scopri che la mente divaga di continuo e che accorgersene è già la pratica.",
+     "p": [
+      "Ogni mente vaga, anche quella di chi pratica da anni.",
+      "Il momento in cui noti di esserti distratto è un momento di consapevolezza.",
+      "Tornare con dolcezza, ancora e ancora, fa crescere la pratica."
+     ],
+     "q": "Dove ama andare più spesso la tua mente: progetti, preoccupazioni o ricordi?",
+     "c": "Oggi, a ogni pensiero che vaga, di' in silenzio: notato."
+    },
+    "pt": {
+     "t": "A mente que divaga é normal",
+     "g": "Vê que a mente divaga o tempo todo e que reparar nisso já é a prática.",
+     "p": [
+      "Toda a mente divaga, até a de quem pratica há anos.",
+      "O momento em que reparas que divagaste é um momento de atenção plena.",
+      "Voltar com suavidade, vezes sem conta, faz a prática crescer."
+     ],
+     "q": "Para onde a tua mente mais gosta de ir: planos, preocupações ou memórias?",
+     "c": "Cada vez que reparares num pensamento a divagar hoje, diz em silêncio: reparei."
+    },
+    "pt_BR": {
+     "t": "A mente que divaga é normal",
+     "g": "Veja que a mente divaga o tempo todo e que perceber isso já é a prática.",
+     "p": [
+      "Toda mente divaga, até a de quem pratica há anos.",
+      "O momento em que você percebe que divagou é um momento de atenção plena.",
+      "Voltar com suavidade, de novo e de novo, faz a prática crescer."
+     ],
+     "q": "Para onde sua mente mais gosta de ir: planos, preocupações ou lembranças?",
+     "c": "Cada vez que notar um pensamento divagando hoje, diga em silêncio: percebi."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A comfortable posture",
+     "g": "Sit on a chair or cushion in a way that feels upright, relaxed and stable.",
+     "p": [
+      "Feet flat on the floor, spine tall but not stiff, hands resting on your lap.",
+      "Let the shoulders drop and the chin tuck slightly.",
+      "There is no perfect posture; adjust anytime or lie down if sitting hurts."
+     ],
+     "q": "What small adjustment made your sitting more comfortable today?",
+     "c": "Sit for one minute in your chosen posture and make one tiny adjustment."
+    },
+    "de": {
+     "t": "Eine bequeme Haltung",
+     "g": "Sitze auf Stuhl oder Kissen aufrecht, entspannt und stabil.",
+     "p": [
+      "Füße flach am Boden, Wirbelsäule aufrecht, aber nicht steif, Hände im Schoß.",
+      "Lass die Schultern sinken und das Kinn leicht zur Brust neigen.",
+      "Es gibt keine perfekte Haltung; ändere sie jederzeit oder lege dich hin."
+     ],
+     "q": "Welche kleine Anpassung hat dein Sitzen heute bequemer gemacht?",
+     "c": "Sitze eine Minute in deiner Haltung und ändere eine Kleinigkeit."
+    },
+    "es": {
+     "t": "Una postura cómoda",
+     "g": "Siéntate en una silla o cojín de forma erguida, relajada y estable.",
+     "p": [
+      "Pies planos en el suelo, columna alta sin rigidez, manos sobre el regazo.",
+      "Deja caer los hombros y baja un poco la barbilla.",
+      "No hay postura perfecta; ajústala cuando quieras o túmbate si sentarte duele."
+     ],
+     "q": "¿Qué pequeño ajuste hizo tu postura más cómoda hoy?",
+     "c": "Siéntate un minuto en tu postura y haz un pequeño ajuste."
+    },
+    "fr": {
+     "t": "Une posture confortable",
+     "g": "Assieds-toi sur une chaise ou un coussin, droit, détendu et stable.",
+     "p": [
+      "Pieds à plat, dos droit mais pas raide, mains posées sur les cuisses.",
+      "Laisse tomber les épaules et rentre légèrement le menton.",
+      "Il n'y a pas de posture parfaite; ajuste-toi ou allonge-toi si c'est gênant."
+     ],
+     "q": "Quel petit ajustement a rendu ta posture plus confortable aujourd'hui ?",
+     "c": "Reste assis une minute dans ta posture et fais un tout petit ajustement."
+    },
+    "it": {
+     "t": "Una postura comoda",
+     "g": "Siediti su una sedia o un cuscino in modo eretto, rilassato e stabile.",
+     "p": [
+      "Piedi appoggiati a terra, schiena alta ma non rigida, mani in grembo.",
+      "Lascia cadere le spalle e abbassa leggermente il mento.",
+      "Non esiste la postura perfetta; cambia quando vuoi o sdraiati se ti fa male."
+     ],
+     "q": "Quale piccolo aggiustamento ha reso più comoda la tua postura oggi?",
+     "c": "Siediti un minuto nella tua postura e fai un piccolo aggiustamento."
+    },
+    "pt": {
+     "t": "Uma postura confortável",
+     "g": "Senta-te numa cadeira ou almofada de forma direita, relaxada e estável.",
+     "p": [
+      "Pés assentes no chão, coluna direita mas sem rigidez, mãos no colo.",
+      "Deixa os ombros descer e baixa ligeiramente o queixo.",
+      "Não há postura perfeita; ajusta quando quiseres ou deita-te se doer."
+     ],
+     "q": "Que pequeno ajuste tornou a tua postura mais confortável hoje?",
+     "c": "Senta-te um minuto na tua postura e faz um pequeno ajuste."
+    },
+    "pt_BR": {
+     "t": "Uma postura confortável",
+     "g": "Sente-se numa cadeira ou almofada de forma ereta, relaxada e estável.",
+     "p": [
+      "Pés apoiados no chão, coluna alta sem rigidez, mãos no colo.",
+      "Deixe os ombros caírem e abaixe levemente o queixo.",
+      "Não existe postura perfeita; ajuste quando quiser ou deite-se se doer."
+     ],
+     "q": "Que pequeno ajuste deixou sua postura mais confortável hoje?",
+     "c": "Sente-se um minuto na sua postura e faça um pequeno ajuste."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Eyes open or closed",
+     "g": "Try both ways and choose a soft downward gaze if closing the eyes feels odd.",
+     "p": [
+      "Closed eyes reduce distractions for many people.",
+      "A soft gaze toward the floor, a metre ahead, works well for others.",
+      "Choose whichever feels safe and comfortable; you can change it anytime."
+     ],
+     "q": "Which felt better for you, eyes open or closed, and why?",
+     "c": "Practise one minute with eyes closed and one with a soft gaze, then compare."
+    },
+    "de": {
+     "t": "Augen offen oder geschlossen",
+     "g": "Probiere beides und wähle einen weichen Blick nach unten, wenn geschlossene Augen komisch sind.",
+     "p": [
+      "Geschlossene Augen verringern für viele die Ablenkung.",
+      "Ein weicher Blick etwa einen Meter vor dir auf den Boden hilft anderen.",
+      "Wähle, was sich sicher und angenehm anfühlt; du kannst jederzeit wechseln."
+     ],
+     "q": "Was fühlte sich besser an, Augen offen oder geschlossen, und warum?",
+     "c": "Übe eine Minute mit geschlossenen und eine mit weichem Blick und vergleiche."
+    },
+    "es": {
+     "t": "Ojos abiertos o cerrados",
+     "g": "Prueba ambas formas y elige una mirada suave hacia abajo si cerrar los ojos te resulta raro.",
+     "p": [
+      "Con los ojos cerrados muchas personas se distraen menos.",
+      "Una mirada suave al suelo, a un metro, funciona bien para otras.",
+      "Elige lo que te parezca seguro y cómodo; puedes cambiar cuando quieras."
+     ],
+     "q": "¿Qué te resultó mejor, ojos abiertos o cerrados, y por qué?",
+     "c": "Practica un minuto con ojos cerrados y otro con mirada suave y compara."
+    },
+    "fr": {
+     "t": "Yeux ouverts ou fermés",
+     "g": "Essaie les deux et choisis un regard doux vers le bas si fermer les yeux te semble étrange.",
+     "p": [
+      "Les yeux fermés réduisent les distractions pour beaucoup de gens.",
+      "Un regard doux vers le sol, à un mètre devant, convient à d'autres.",
+      "Choisis ce qui te semble sûr et confortable; tu peux changer à tout moment."
+     ],
+     "q": "Qu'est-ce qui t'a mieux convenu, yeux ouverts ou fermés, et pourquoi ?",
+     "c": "Pratique une minute yeux fermés et une minute regard doux, puis compare."
+    },
+    "it": {
+     "t": "Occhi aperti o chiusi",
+     "g": "Prova entrambi e scegli uno sguardo morbido verso il basso se chiudere gli occhi ti sembra strano.",
+     "p": [
+      "Ad occhi chiusi molti si distraggono meno.",
+      "Uno sguardo morbido verso il pavimento, a un metro, funziona per altri.",
+      "Scegli ciò che ti sembra sicuro e comodo; puoi cambiare quando vuoi."
+     ],
+     "q": "Cosa ti è piaciuto di più, occhi aperti o chiusi, e perché?",
+     "c": "Pratica un minuto a occhi chiusi e uno con sguardo morbido, poi confronta."
+    },
+    "pt": {
+     "t": "Olhos abertos ou fechados",
+     "g": "Experimenta ambos e escolhe um olhar suave para baixo se fechar os olhos te parecer estranho.",
+     "p": [
+      "Com os olhos fechados, muitas pessoas distraem-se menos.",
+      "Um olhar suave para o chão, a um metro, funciona para outras.",
+      "Escolhe o que parecer seguro e confortável; podes mudar quando quiseres."
+     ],
+     "q": "O que foi melhor para ti, olhos abertos ou fechados, e porquê?",
+     "c": "Pratica um minuto de olhos fechados e outro com olhar suave e compara."
+    },
+    "pt_BR": {
+     "t": "Olhos abertos ou fechados",
+     "g": "Experimente ambos e escolha um olhar suave para baixo se fechar os olhos parecer estranho.",
+     "p": [
+      "Com os olhos fechados, muita gente se distrai menos.",
+      "Um olhar suave para o chão, a um metro, funciona para outras pessoas.",
+      "Escolha o que parecer seguro e confortável; pode mudar quando quiser."
+     ],
+     "q": "O que foi melhor para você, olhos abertos ou fechados, e por quê?",
+     "c": "Pratique um minuto de olhos fechados e outro com olhar suave e compare."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Belly breathing basics",
+     "g": "Let the belly rise and fall naturally, without forcing deeper breaths.",
+     "p": [
+      "Rest a hand on your belly and feel it move gently.",
+      "Let it rise as air comes in and soften as air goes out.",
+      "Never force it; if you feel dizzy or tense, return to normal breathing."
+     ],
+     "q": "What did you notice under your hand: a big movement or a tiny one?",
+     "c": "Place a hand on your belly for five relaxed breaths before bed."
+    },
+    "de": {
+     "t": "Grundlagen der Bauchatmung",
+     "g": "Lass den Bauch sich natürlich heben und senken, ohne tiefer zu atmen als nötig.",
+     "p": [
+      "Lege eine Hand auf den Bauch und spüre die sanfte Bewegung.",
+      "Er hebt sich beim Einatmen und wird weich beim Ausatmen.",
+      "Erzwinge nichts; bei Schwindel oder Anspannung atme wieder normal."
+     ],
+     "q": "Was hast du unter deiner Hand gespürt: eine große oder eine kleine Bewegung?",
+     "c": "Lege vor dem Schlafen fünf entspannte Atemzüge lang eine Hand auf den Bauch."
+    },
+    "es": {
+     "t": "Bases de la respiración abdominal",
+     "g": "Deja que el vientre suba y baje con naturalidad, sin forzar respiraciones más profundas.",
+     "p": [
+      "Apoya una mano en el vientre y siente su suave movimiento.",
+      "Sube al entrar el aire y se suaviza al salir.",
+      "Nunca fuerces; si te mareas o te tensas, vuelve a respirar normal."
+     ],
+     "q": "¿Qué notaste bajo tu mano: un movimiento grande o diminuto?",
+     "c": "Apoya una mano en el vientre durante cinco respiraciones antes de dormir."
+    },
+    "fr": {
+     "t": "Les bases de la respiration abdominale",
+     "g": "Laisse le ventre se soulever et s'abaisser naturellement, sans forcer la respiration.",
+     "p": [
+      "Pose une main sur ton ventre et sens-le bouger doucement.",
+      "Il monte quand l'air entre et s'assouplit quand l'air sort.",
+      "Ne force jamais; en cas de vertige ou de tension, reprends une respiration normale."
+     ],
+     "q": "Qu'as-tu senti sous ta main : un grand mouvement ou un tout petit ?",
+     "c": "Pose une main sur ton ventre pour cinq respirations calmes avant de dormir."
+    },
+    "it": {
+     "t": "Le basi della respirazione addominale",
+     "g": "Lascia che la pancia si alzi e si abbassi naturalmente, senza forzare respiri profondi.",
+     "p": [
+      "Appoggia una mano sulla pancia e senti il suo lieve movimento.",
+      "Si alza quando entra l'aria e si ammorbidisce quando esce.",
+      "Non forzare mai; se senti vertigini o tensione, torna al respiro normale."
+     ],
+     "q": "Cosa hai notato sotto la mano: un movimento ampio o minuscolo?",
+     "c": "Prima di dormire, appoggia una mano sulla pancia per cinque respiri."
+    },
+    "pt": {
+     "t": "Noções de respiração abdominal",
+     "g": "Deixa a barriga subir e descer naturalmente, sem forçar respirações mais profundas.",
+     "p": [
+      "Pousa uma mão na barriga e sente o seu movimento suave.",
+      "Sobe quando o ar entra e suaviza quando sai.",
+      "Nunca forces; se sentires tonturas ou tensão, volta à respiração normal."
+     ],
+     "q": "O que reparaste sob a mão: um movimento grande ou pequeno?",
+     "c": "Pousa uma mão na barriga durante cinco respirações antes de dormir."
+    },
+    "pt_BR": {
+     "t": "Noções de respiração abdominal",
+     "g": "Deixe a barriga subir e descer naturalmente, sem forçar respirações mais profundas.",
+     "p": [
+      "Apoie uma mão na barriga e sinta o movimento suave.",
+      "Ela sobe quando o ar entra e relaxa quando sai.",
+      "Nunca force; se sentir tontura ou tensão, volte à respiração normal."
+     ],
+     "q": "O que você percebeu sob a mão: um movimento grande ou pequeno?",
+     "c": "Apoie uma mão na barriga por cinco respirações antes de dormir."
+    }
+   }
+  }
+ ]
+}

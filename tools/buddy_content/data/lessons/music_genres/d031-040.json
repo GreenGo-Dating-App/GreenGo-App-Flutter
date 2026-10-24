@@ -1,0 +1,835 @@
+{
+ "topic": "music_genres",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Heavy metal basics",
+     "g": "Meet metal: distorted riffs, speed and power.",
+     "p": [
+      "Black Sabbath, from Birmingham, England, set the template around 1970 with heavy, slow riffs.",
+      "Iron Maiden brought galloping rhythms, twin guitars and storytelling about history and legends.",
+      "Metal uses distortion, fast double-bass drums and powerful vocals, and has loyal fans worldwide."
+     ],
+     "q": "What do you find exciting about loud, powerful music?",
+     "c": "Listen to a metal riff and tap the rhythm of the guitar and kick drum together."
+    },
+    "de": {
+     "t": "Heavy-Metal-Grundlagen",
+     "g": "Metal kennenlernen: verzerrte Riffs, Tempo und Kraft.",
+     "p": [
+      "Black Sabbath aus Birmingham setzten um 1970 mit schweren, langsamen Riffs die Vorlage.",
+      "Iron Maiden brachten galoppierende Rhythmen, zwei Gitarren und Geschichten über Historie und Legenden.",
+      "Metal nutzt Verzerrung, schnelle Doppelbass-Drums und kraftvollen Gesang und hat treue Fans weltweit."
+     ],
+     "q": "Was findest du an lauter, kraftvoller Musik aufregend?",
+     "c": "Hör ein Metal-Riff und klopfe den Rhythmus von Gitarre und Bassdrum zusammen."
+    },
+    "es": {
+     "t": "Fundamentos del heavy metal",
+     "g": "Conocer el metal: riffs distorsionados, velocidad y potencia.",
+     "p": [
+      "Black Sabbath, de Birmingham, Inglaterra, marcó la pauta hacia 1970 con riffs pesados y lentos.",
+      "Iron Maiden aportó ritmos galopantes, guitarras dobles e historias sobre historia y leyendas.",
+      "El metal usa distorsión, doble bombo rápido y voces potentes, y tiene fans fieles en todo el mundo."
+     ],
+     "q": "¿Qué te parece emocionante de la música fuerte y potente?",
+     "c": "Escucha un riff de metal y marca juntos el ritmo de la guitarra y el bombo."
+    },
+    "fr": {
+     "t": "Bases du heavy metal",
+     "g": "Découvrir le metal : riffs saturés, vitesse et puissance.",
+     "p": [
+      "Black Sabbath, de Birmingham en Angleterre, pose le modèle vers 1970 avec des riffs lourds et lents.",
+      "Iron Maiden apporte rythmes galopants, guitares jumelées et récits d'histoire et de légendes.",
+      "Le metal emploie la saturation, la double pédale rapide et des voix puissantes, et a des fans fidèles partout."
+     ],
+     "q": "Qu'est-ce qui vous plaît dans la musique forte et puissante ?",
+     "c": "Écoutez un riff de metal et frappez ensemble le rythme de la guitare et de la grosse caisse."
+    },
+    "it": {
+     "t": "Basi dell'heavy metal",
+     "g": "Conoscere il metal: riff distorti, velocità e potenza.",
+     "p": [
+      "I Black Sabbath, di Birmingham, fissarono il modello intorno al 1970 con riff pesanti e lenti.",
+      "Gli Iron Maiden portarono ritmi galoppanti, doppie chitarre e racconti di storia e leggende.",
+      "Il metal usa distorsione, doppia cassa veloce e voci potenti, e ha fan fedeli in tutto il mondo."
+     ],
+     "q": "Cosa trovi emozionante nella musica forte e potente?",
+     "c": "Ascolta un riff metal e batti insieme il ritmo di chitarra e cassa."
+    },
+    "pt": {
+     "t": "Noções de heavy metal",
+     "g": "Conhecer o metal: riffs distorcidos, velocidade e potência.",
+     "p": [
+      "Os Black Sabbath, de Birmingham, Inglaterra, definiram o modelo por volta de 1970 com riffs pesados e lentos.",
+      "Os Iron Maiden trouxeram ritmos galopantes, guitarras duplas e histórias sobre história e lendas.",
+      "O metal usa distorção, duplo bombo rápido e vozes potentes, e tem fãs fiéis em todo o mundo."
+     ],
+     "q": "O que te parece empolgante na música alta e potente?",
+     "c": "Ouve um riff de metal e marca juntos o ritmo da guitarra e do bombo."
+    },
+    "pt_BR": {
+     "t": "Noções de heavy metal",
+     "g": "Conhecer o metal: riffs distorcidos, velocidade e potência.",
+     "p": [
+      "O Black Sabbath, de Birmingham, Inglaterra, definiu o modelo por volta de 1970 com riffs pesados e lentos.",
+      "O Iron Maiden trouxe ritmos galopantes, guitarras duplas e histórias sobre história e lendas.",
+      "O metal usa distorção, bumbo duplo rápido e vozes potentes, e tem fãs fiéis no mundo todo."
+     ],
+     "q": "O que você acha empolgante na música alta e potente?",
+     "c": "Escute um riff de metal e marque juntos o ritmo da guitarra e do bumbo."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Progressive rock",
+     "g": "Explore long songs, odd time signatures and big ideas in prog.",
+     "p": [
+      "Prog rock of the 1970s stretched songs to ten or twenty minutes with several movements.",
+      "Pink Floyd, Yes and Genesis used synthesizers, keyboards and unusual time signatures like 7/4.",
+      "Concept albums such as The Dark Side of the Moon link songs into one unified work."
+     ],
+     "q": "Do you like music that tells a long story, or do you prefer short songs?",
+     "c": "Listen to the first five minutes of a prog track and note each time the mood changes."
+    },
+    "de": {
+     "t": "Progressive Rock",
+     "g": "Lange Stücke, ungewöhnliche Taktarten und große Ideen im Prog erkunden.",
+     "p": [
+      "Der Prog Rock der 1970er dehnte Lieder auf zehn oder zwanzig Minuten mit mehreren Sätzen.",
+      "Pink Floyd, Yes und Genesis nutzten Synthesizer, Keyboards und ungewöhnliche Taktarten wie 7/4.",
+      "Konzeptalben wie The Dark Side of the Moon verbinden Lieder zu einem Gesamtwerk."
+     ],
+     "q": "Magst du Musik, die eine lange Geschichte erzählt, oder lieber kurze Lieder?",
+     "c": "Hör die ersten fünf Minuten eines Prog-Stücks und notiere jeden Stimmungswechsel."
+    },
+    "es": {
+     "t": "Rock progresivo",
+     "g": "Explorar canciones largas, compases raros y grandes ideas en el prog.",
+     "p": [
+      "El rock progresivo de los setenta estiró las canciones a diez o veinte minutos con varios movimientos.",
+      "Pink Floyd, Yes y Genesis usaron sintetizadores, teclados y compases poco comunes como 7/4.",
+      "Los álbumes conceptuales como The Dark Side of the Moon unen las canciones en una sola obra."
+     ],
+     "q": "¿Te gusta la música que cuenta una historia larga o prefieres canciones cortas?",
+     "c": "Escucha los primeros cinco minutos de un tema prog y anota cada cambio de ambiente."
+    },
+    "fr": {
+     "t": "Le rock progressif",
+     "g": "Explorer les morceaux longs, les mesures inhabituelles et les grandes idées du prog.",
+     "p": [
+      "Le rock progressif des années 1970 étire les morceaux à dix ou vingt minutes en plusieurs mouvements.",
+      "Pink Floyd, Yes et Genesis emploient synthés, claviers et mesures rares comme le 7/4.",
+      "Les albums concepts comme The Dark Side of the Moon relient les titres en une œuvre unique."
+     ],
+     "q": "Aimez-vous la musique qui raconte une longue histoire, ou les chansons courtes ?",
+     "c": "Écoutez les cinq premières minutes d'un morceau prog et notez chaque changement d'ambiance."
+    },
+    "it": {
+     "t": "Il rock progressivo",
+     "g": "Esplorare brani lunghi, tempi insoliti e grandi idee nel prog.",
+     "p": [
+      "Il rock progressivo degli anni Settanta allungò i brani a dieci o venti minuti con più movimenti.",
+      "Pink Floyd, Yes e Genesis usarono sintetizzatori, tastiere e tempi insoliti come il 7/4.",
+      "Gli album concept come The Dark Side of the Moon legano i brani in un'unica opera."
+     ],
+     "q": "Ti piace la musica che racconta una lunga storia o preferisci canzoni brevi?",
+     "c": "Ascolta i primi cinque minuti di un brano prog e annota ogni cambio di atmosfera."
+    },
+    "pt": {
+     "t": "Rock progressivo",
+     "g": "Explorar canções longas, compassos invulgares e grandes ideias no prog.",
+     "p": [
+      "O rock progressivo dos anos 1970 esticou as canções para dez ou vinte minutos com vários andamentos.",
+      "Pink Floyd, Yes e Genesis usaram sintetizadores, teclados e compassos invulgares como o 7/4.",
+      "Álbuns conceptuais como The Dark Side of the Moon ligam as canções numa só obra."
+     ],
+     "q": "Gostas de música que conta uma longa história ou preferes canções curtas?",
+     "c": "Ouve os primeiros cinco minutos de um tema prog e anota cada mudança de ambiente."
+    },
+    "pt_BR": {
+     "t": "Rock progressivo",
+     "g": "Explorar músicas longas, compassos incomuns e grandes ideias no prog.",
+     "p": [
+      "O rock progressivo dos anos 1970 esticou as músicas para dez ou vinte minutos com vários movimentos.",
+      "Pink Floyd, Yes e Genesis usaram sintetizadores, teclados e compassos incomuns como o 7/4.",
+      "Álbuns conceituais como The Dark Side of the Moon ligam as músicas numa só obra."
+     ],
+     "q": "Você gosta de música que conta uma longa história ou prefere músicas curtas?",
+     "c": "Escute os primeiros cinco minutos de uma faixa prog e anote cada mudança de clima."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Punk: fast, short and DIY",
+     "g": "See how punk showed that anyone could start a band.",
+     "p": [
+      "Punk exploded in the mid 1970s in New York and London as a reaction to overly polished rock.",
+      "The Ramones played songs of two minutes with fast, simple chords and a loud, tight sound.",
+      "The Clash added reggae and other influences, and many punk bands made their own records and posters."
+     ],
+     "q": "Do you like the do-it-yourself spirit, and have you made something yourself?",
+     "c": "Listen to a Ramones song and count how short it is compared with a prog track."
+    },
+    "de": {
+     "t": "Punk: schnell, kurz und DIY",
+     "g": "Sehen, wie Punk zeigte, dass jeder eine Band gründen kann.",
+     "p": [
+      "Punk explodierte Mitte der 1970er in New York und London als Reaktion auf überpolierten Rock.",
+      "Die Ramones spielten zweiminütige Songs mit schnellen, einfachen Akkorden und lautem, straffem Sound.",
+      "The Clash fügten Reggae und andere Einflüsse hinzu, und viele Punkbands machten Platten und Plakate selbst."
+     ],
+     "q": "Gefällt dir der Do-it-yourself-Geist, und hast du schon etwas selbst gemacht?",
+     "c": "Hör einen Ramones-Song und vergleiche, wie kurz er gegenüber einem Prog-Stück ist."
+    },
+    "es": {
+     "t": "Punk: rápido, corto y hazlo tú mismo",
+     "g": "Ver cómo el punk demostró que cualquiera podía montar una banda.",
+     "p": [
+      "El punk estalló a mediados de los setenta en Nueva York y Londres como reacción a un rock demasiado pulido.",
+      "Los Ramones tocaban canciones de dos minutos con acordes rápidos y simples y un sonido fuerte y compacto.",
+      "The Clash añadieron reggae y otras influencias, y muchas bandas punk hicieron sus propios discos y carteles."
+     ],
+     "q": "¿Te gusta el espíritu de hacerlo tú mismo y has creado algo por tu cuenta?",
+     "c": "Escucha una canción de los Ramones y compara lo corta que es con un tema prog."
+    },
+    "fr": {
+     "t": "Le punk : rapide, court et DIY",
+     "g": "Voir comment le punk a montré que chacun pouvait monter un groupe.",
+     "p": [
+      "Le punk explose au milieu des années 1970 à New York et à Londres, en réaction à un rock trop poli.",
+      "Les Ramones jouent des chansons de deux minutes aux accords rapides et simples, au son fort et serré.",
+      "The Clash ajoutent du reggae et d'autres influences, et de nombreux groupes punk font eux-mêmes disques et affiches."
+     ],
+     "q": "Aimez-vous l'esprit do-it-yourself, et avez-vous déjà fabriqué quelque chose vous-même ?",
+     "c": "Écoutez une chanson des Ramones et comparez sa brièveté à celle d'un morceau prog."
+    },
+    "it": {
+     "t": "Il punk: veloce, breve e fai da te",
+     "g": "Vedere come il punk mostrò che chiunque poteva formare una band.",
+     "p": [
+      "Il punk esplose a metà anni Settanta a New York e Londra come reazione a un rock troppo levigato.",
+      "I Ramones suonavano brani di due minuti con accordi veloci e semplici e un suono forte e compatto.",
+      "I Clash aggiunsero reggae e altre influenze, e molte band punk produssero da sole dischi e manifesti."
+     ],
+     "q": "Ti piace lo spirito del fai da te e hai creato qualcosa con le tue mani?",
+     "c": "Ascolta un brano dei Ramones e confronta quanto è breve rispetto a un brano prog."
+    },
+    "pt": {
+     "t": "Punk: rápido, curto e faça você mesmo",
+     "g": "Ver como o punk mostrou que qualquer pessoa podia formar uma banda.",
+     "p": [
+      "O punk explodiu a meio dos anos 1970 em Nova Iorque e Londres, como reação a um rock demasiado polido.",
+      "Os Ramones tocavam canções de dois minutos com acordes rápidos e simples e um som forte e compacto.",
+      "Os Clash juntaram reggae e outras influências, e muitas bandas punk fizeram os seus discos e cartazes."
+     ],
+     "q": "Gostas do espírito do faz tu mesmo e já criaste algo por ti?",
+     "c": "Ouve uma canção dos Ramones e compara como é curta em relação a um tema prog."
+    },
+    "pt_BR": {
+     "t": "Punk: rápido, curto e faça você mesmo",
+     "g": "Ver como o punk mostrou que qualquer pessoa podia montar uma banda.",
+     "p": [
+      "O punk explodiu em meados dos anos 1970 em Nova York e Londres, como reação a um rock polido demais.",
+      "Os Ramones tocavam músicas de dois minutos com acordes rápidos e simples e um som forte e compacto.",
+      "O Clash juntou reggae e outras influências, e muitas bandas punk fizeram os próprios discos e cartazes."
+     ],
+     "q": "Você gosta do espírito do faça você mesmo e já criou algo por conta própria?",
+     "c": "Escute uma música dos Ramones e compare o quanto ela é curta com uma faixa prog."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "New wave and post-punk",
+     "g": "Hear synths, angular guitars and style after punk.",
+     "p": [
+      "New wave grew from punk but added melody, synthesizers and a sleek look, as with Blondie and Talking Heads.",
+      "Post-punk, from bands like Joy Division and Wire, was more experimental, with sparse bass-led sounds.",
+      "The Cure developed a moody, atmospheric guitar style that influenced generations of bands."
+     ],
+     "q": "Do you like music that sounds a little strange but also catchy?",
+     "c": "Listen to a Talking Heads song and spot the rhythm guitar and the quirky vocals."
+    },
+    "de": {
+     "t": "New Wave und Post-Punk",
+     "g": "Synthesizer, kantige Gitarren und Stil nach dem Punk hören.",
+     "p": [
+      "New Wave wuchs aus dem Punk, ergänzte aber Melodie, Synthesizer und einen eleganten Look, etwa bei Blondie und Talking Heads.",
+      "Post-Punk, von Bands wie Joy Division und Wire, war experimenteller, mit sparsamen, bassgetragenen Klängen.",
+      "The Cure entwickelten einen stimmungsvollen, atmosphärischen Gitarrenstil, der Generationen von Bands prägte."
+     ],
+     "q": "Magst du Musik, die ein wenig seltsam und trotzdem eingängig klingt?",
+     "c": "Hör einen Talking-Heads-Song und achte auf die Rhythmusgitarre und den schrägen Gesang."
+    },
+    "es": {
+     "t": "New wave y post-punk",
+     "g": "Oír sintetizadores, guitarras angulosas y estilo tras el punk.",
+     "p": [
+      "La new wave creció del punk pero añadió melodía, sintetizadores y un aspecto elegante, como Blondie y Talking Heads.",
+      "El post-punk, de bandas como Joy Division y Wire, fue más experimental, con sonidos austeros guiados por el bajo.",
+      "The Cure desarrollaron un estilo de guitarra melancólico y atmosférico que influyó a generaciones de bandas."
+     ],
+     "q": "¿Te gusta la música que suena un poco extraña pero también pegadiza?",
+     "c": "Escucha una canción de Talking Heads y fíjate en la guitarra rítmica y la voz peculiar."
+    },
+    "fr": {
+     "t": "New wave et post-punk",
+     "g": "Entendre synthés, guitares anguleuses et style après le punk.",
+     "p": [
+      "La new wave est née du punk en y ajoutant mélodie, synthés et allure soignée, comme Blondie et Talking Heads.",
+      "Le post-punk, de groupes comme Joy Division et Wire, était plus expérimental, avec des sons dépouillés portés par la basse.",
+      "The Cure ont développé un style de guitare mélancolique et atmosphérique qui a influencé des générations de groupes."
+     ],
+     "q": "Aimez-vous la musique un peu étrange mais aussi entraînante ?",
+     "c": "Écoutez une chanson de Talking Heads et repérez la guitare rythmique et la voix décalée."
+    },
+    "it": {
+     "t": "New wave e post-punk",
+     "g": "Sentire sintetizzatori, chitarre spigolose e stile dopo il punk.",
+     "p": [
+      "La new wave nacque dal punk ma aggiunse melodia, sintetizzatori e un look curato, come Blondie e Talking Heads.",
+      "Il post-punk, di band come Joy Division e Wire, era più sperimentale, con suoni scarni guidati dal basso.",
+      "I Cure svilupparono uno stile di chitarra malinconico e atmosferico che influenzò generazioni di band."
+     ],
+     "q": "Ti piace la musica un po' strana ma anche orecchiabile?",
+     "c": "Ascolta un brano dei Talking Heads e individua la chitarra ritmica e la voce stravagante."
+    },
+    "pt": {
+     "t": "New wave e pós-punk",
+     "g": "Ouvir sintetizadores, guitarras angulosas e estilo depois do punk.",
+     "p": [
+      "A new wave nasceu do punk mas juntou melodia, sintetizadores e um visual elegante, como Blondie e Talking Heads.",
+      "O pós-punk, de bandas como Joy Division e Wire, foi mais experimental, com sons austeros guiados pelo baixo.",
+      "Os The Cure desenvolveram um estilo de guitarra melancólico e atmosférico que influenciou gerações de bandas."
+     ],
+     "q": "Gostas de música que soa um pouco estranha mas também orelhuda?",
+     "c": "Ouve uma canção dos Talking Heads e repara na guitarra rítmica e na voz peculiar."
+    },
+    "pt_BR": {
+     "t": "New wave e pós-punk",
+     "g": "Ouvir sintetizadores, guitarras angulosas e estilo depois do punk.",
+     "p": [
+      "A new wave nasceu do punk, mas juntou melodia, sintetizadores e um visual elegante, como Blondie e Talking Heads.",
+      "O pós-punk, de bandas como Joy Division e Wire, foi mais experimental, com sons enxutos guiados pelo baixo.",
+      "O The Cure desenvolveu um estilo de guitarra melancólico e atmosférico que influenciou gerações de bandas."
+     ],
+     "q": "Você gosta de música que soa um pouco estranha, mas também grudenta?",
+     "c": "Escute uma música do Talking Heads e note a guitarra rítmica e o vocal peculiar."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Disco and the dance floor",
+     "g": "Feel the four-on-the-floor beat and lush sound of disco.",
+     "p": [
+      "Disco rose in 1970s clubs with a steady kick drum on every beat, called four-on-the-floor.",
+      "Lush strings, hi-hat patterns and funky bass guitar made the sound smooth and danceable.",
+      "Donna Summer and Chic, led by Nile Rodgers and Bernard Edwards, filled dance floors worldwide."
+     ],
+     "q": "What song always gets you moving, no matter where you are?",
+     "c": "Listen to Good Times by Chic and follow the bass line while tapping the kick."
+    },
+    "de": {
+     "t": "Disco und die Tanzfläche",
+     "g": "Den Four-on-the-floor-Beat und den üppigen Sound von Disco spüren.",
+     "p": [
+      "Disco entstand in den Clubs der 1970er mit einer gleichmäßigen Bassdrum auf jedem Schlag, genannt Four-on-the-floor.",
+      "Üppige Streicher, Hi-Hat-Muster und funkiger Bass machten den Klang geschmeidig und tanzbar.",
+      "Donna Summer und Chic, angeführt von Nile Rodgers und Bernard Edwards, füllten weltweit Tanzflächen."
+     ],
+     "q": "Welcher Song bringt dich immer in Bewegung, egal wo du bist?",
+     "c": "Hör Good Times von Chic und folge der Basslinie, während du die Bassdrum mitklopfst."
+    },
+    "es": {
+     "t": "La disco y la pista de baile",
+     "g": "Sentir el pulso four-on-the-floor y el sonido exuberante de la disco.",
+     "p": [
+      "La disco surgió en los clubes de los setenta con un bombo constante en cada pulso, llamado four-on-the-floor.",
+      "Cuerdas exuberantes, patrones de hi-hat y bajo funky hicieron el sonido suave y bailable.",
+      "Donna Summer y Chic, de Nile Rodgers y Bernard Edwards, llenaron pistas de todo el mundo."
+     ],
+     "q": "¿Qué canción te hace moverte siempre, estés donde estés?",
+     "c": "Escucha Good Times de Chic y sigue la línea de bajo marcando el bombo con el pie."
+    },
+    "fr": {
+     "t": "Le disco et la piste de danse",
+     "g": "Sentir le four-on-the-floor et le son luxuriant du disco.",
+     "p": [
+      "Le disco naît dans les clubs des années 1970 avec une grosse caisse régulière sur chaque temps, le four-on-the-floor.",
+      "Cordes luxuriantes, motifs de charleston et basse funky rendent le son lisse et dansant.",
+      "Donna Summer et Chic, menés par Nile Rodgers et Bernard Edwards, remplissent les pistes du monde entier."
+     ],
+     "q": "Quelle chanson vous fait toujours bouger, où que vous soyez ?",
+     "c": "Écoutez Good Times de Chic et suivez la ligne de basse en marquant la grosse caisse."
+    },
+    "it": {
+     "t": "La disco e la pista da ballo",
+     "g": "Sentire il four-on-the-floor e il suono rigoglioso della disco.",
+     "p": [
+      "La disco nacque nei club degli anni Settanta con una cassa costante su ogni battito, detta four-on-the-floor.",
+      "Archi rigogliosi, schemi di hi-hat e basso funky resero il suono morbido e ballabile.",
+      "Donna Summer e gli Chic, guidati da Nile Rodgers e Bernard Edwards, riempirono piste in tutto il mondo."
+     ],
+     "q": "Quale canzone ti fa muovere sempre, ovunque tu sia?",
+     "c": "Ascolta Good Times degli Chic e segui la linea di basso battendo la cassa."
+    },
+    "pt": {
+     "t": "A disco e a pista de dança",
+     "g": "Sentir o ritmo four-on-the-floor e o som exuberante da disco.",
+     "p": [
+      "A disco surgiu nos clubes dos anos 1970 com um bombo constante em cada batida, chamado four-on-the-floor.",
+      "Cordas exuberantes, padrões de hi-hat e baixo funky tornaram o som suave e dançável.",
+      "Donna Summer e os Chic, de Nile Rodgers e Bernard Edwards, encheram pistas em todo o mundo."
+     ],
+     "q": "Que canção te faz sempre mexer, estejas onde estiveres?",
+     "c": "Ouve Good Times dos Chic e segue a linha de baixo marcando o bombo com o pé."
+    },
+    "pt_BR": {
+     "t": "A disco e a pista de dança",
+     "g": "Sentir a batida four-on-the-floor e o som exuberante da disco.",
+     "p": [
+      "A disco surgiu nos clubes dos anos 1970 com um bumbo constante em cada tempo, chamado four-on-the-floor.",
+      "Cordas exuberantes, padrões de hi-hat e baixo funky deixaram o som suave e dançante.",
+      "Donna Summer e o Chic, de Nile Rodgers e Bernard Edwards, encheram pistas no mundo todo."
+     ],
+     "q": "Que música sempre te faz mexer, onde você estiver?",
+     "c": "Escute Good Times do Chic e acompanhe a linha de baixo marcando o bumbo com o pé."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What makes pop music pop",
+     "g": "Learn why pop is a format more than a single sound.",
+     "p": [
+      "Pop is short for popular: songs built for a wide audience with strong hooks and clear structure.",
+      "Typical pop songs run about three to four minutes, with a memorable chorus and polished production.",
+      "Pop borrows freely from every genre, so it keeps changing with each decade."
+     ],
+     "q": "Do you think of pop as a style or as a way of making songs, and why?",
+     "c": "Pick three pop songs from different decades and spot the hook in each."
+    },
+    "de": {
+     "t": "Was Popmusik ausmacht",
+     "g": "Lernen, warum Pop mehr ein Format als ein einzelner Klang ist.",
+     "p": [
+      "Pop steht für populär: Lieder für ein breites Publikum mit starken Hooks und klarem Aufbau.",
+      "Typische Popsongs dauern etwa drei bis vier Minuten, mit einprägsamem Refrain und glatter Produktion.",
+      "Pop bedient sich frei bei allen Genres und verändert sich deshalb mit jedem Jahrzehnt."
+     ],
+     "q": "Siehst du Pop als Stil oder als Art, Lieder zu machen, und warum?",
+     "c": "Wähl drei Popsongs aus verschiedenen Jahrzehnten und finde jeweils den Hook."
+    },
+    "es": {
+     "t": "Qué hace que el pop sea pop",
+     "g": "Aprender por qué el pop es más un formato que un único sonido.",
+     "p": [
+      "Pop viene de popular: canciones pensadas para un público amplio, con ganchos fuertes y estructura clara.",
+      "Las canciones pop típicas duran tres o cuatro minutos, con un estribillo memorable y producción pulida.",
+      "El pop toma prestado de todos los géneros, así que cambia con cada década."
+     ],
+     "q": "¿Ves el pop como un estilo o como una forma de hacer canciones y por qué?",
+     "c": "Elige tres canciones pop de distintas décadas y localiza el gancho de cada una."
+    },
+    "fr": {
+     "t": "Ce qui fait la pop",
+     "g": "Comprendre pourquoi la pop est un format plus qu'un son unique.",
+     "p": [
+      "Pop vient de populaire : des chansons pensées pour un large public, avec des accroches fortes et une structure claire.",
+      "Les chansons pop durent typiquement trois à quatre minutes, avec un refrain mémorable et une production soignée.",
+      "La pop emprunte librement à tous les genres et change donc à chaque décennie."
+     ],
+     "q": "Voyez-vous la pop comme un style ou une façon de faire des chansons, et pourquoi ?",
+     "c": "Choisissez trois chansons pop de décennies différentes et repérez l'accroche de chacune."
+    },
+    "it": {
+     "t": "Cosa rende il pop pop",
+     "g": "Capire perché il pop è più un formato che un suono unico.",
+     "p": [
+      "Pop sta per popolare: canzoni pensate per un pubblico ampio con ganci forti e struttura chiara.",
+      "Le tipiche canzoni pop durano tre o quattro minuti, con un ritornello memorabile e una produzione curata.",
+      "Il pop attinge liberamente da ogni genere e per questo cambia a ogni decennio."
+     ],
+     "q": "Vedi il pop come uno stile o come un modo di fare canzoni, e perché?",
+     "c": "Scegli tre canzoni pop di decenni diversi e individua il gancio di ciascuna."
+    },
+    "pt": {
+     "t": "O que faz o pop ser pop",
+     "g": "Perceber porque o pop é mais um formato do que um som único.",
+     "p": [
+      "Pop vem de popular: canções pensadas para um público amplo, com ganchos fortes e estrutura clara.",
+      "As canções pop típicas duram três a quatro minutos, com um refrão memorável e produção polida.",
+      "O pop vai buscar livremente a todos os géneros, por isso muda a cada década."
+     ],
+     "q": "Vês o pop como um estilo ou como uma forma de fazer canções, e porquê?",
+     "c": "Escolhe três canções pop de décadas diferentes e identifica o gancho de cada uma."
+    },
+    "pt_BR": {
+     "t": "O que faz o pop ser pop",
+     "g": "Entender por que o pop é mais um formato do que um som único.",
+     "p": [
+      "Pop vem de popular: músicas pensadas para um público amplo, com ganchos fortes e estrutura clara.",
+      "As músicas pop típicas duram três a quatro minutos, com um refrão memorável e produção polida.",
+      "O pop busca livremente em todos os gêneros, por isso muda a cada década."
+     ],
+     "q": "Você vê o pop como um estilo ou como uma forma de fazer músicas, e por quê?",
+     "c": "Escolha três músicas pop de décadas diferentes e identifique o gancho de cada uma."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Eighties pop icons",
+     "g": "See how music videos and big personalities shaped 1980s pop.",
+     "p": [
+      "MTV, launched in 1981, made image as important as sound for pop stars.",
+      "Michael Jackson's Thriller, from 1982, combined pop, funk and rock with striking videos and dance.",
+      "Madonna and Prince each blended pop with dance, funk and fearless reinvention of their style."
+     ],
+     "q": "Do you remember a music video that made a song stick in your mind?",
+     "c": "Watch or imagine a classic 80s video and think how the visuals change the song."
+    },
+    "de": {
+     "t": "Pop-Ikonen der Achtziger",
+     "g": "Sehen, wie Musikvideos und große Persönlichkeiten den Pop der 1980er prägten.",
+     "p": [
+      "MTV, 1981 gestartet, machte das Bild für Popstars so wichtig wie den Klang.",
+      "Michael Jacksons Thriller von 1982 verband Pop, Funk und Rock mit eindrucksvollen Videos und Tanz.",
+      "Madonna und Prince verbanden Pop mit Dance und Funk und erfanden ihren Stil furchtlos neu."
+     ],
+     "q": "Erinnerst du dich an ein Musikvideo, das einen Song im Kopf verankert hat?",
+     "c": "Sieh oder stell dir ein Video der 80er vor und überlege, wie die Bilder den Song verändern."
+    },
+    "es": {
+     "t": "Iconos del pop de los ochenta",
+     "g": "Ver cómo los videoclips y las grandes personalidades moldearon el pop de los ochenta.",
+     "p": [
+      "MTV, lanzada en 1981, hizo que la imagen fuera tan importante como el sonido para las estrellas del pop.",
+      "Thriller de Michael Jackson, de 1982, combinó pop, funk y rock con videos y baile impactantes.",
+      "Madonna y Prince mezclaron cada uno pop con dance y funk y reinventaron su estilo sin miedo."
+     ],
+     "q": "¿Recuerdas un videoclip que hizo que una canción se te quedara grabada?",
+     "c": "Mira o imagina un videoclip clásico de los ochenta y piensa cómo las imágenes cambian la canción."
+    },
+    "fr": {
+     "t": "Les icônes de la pop des années 1980",
+     "g": "Voir comment les clips et les grandes personnalités ont façonné la pop des années 1980.",
+     "p": [
+      "MTV, lancée en 1981, rend l'image aussi importante que le son pour les stars de la pop.",
+      "Thriller de Michael Jackson, en 1982, mêle pop, funk et rock à des clips et une danse marquants.",
+      "Madonna et Prince mêlent chacun pop, dance et funk et réinventent leur style sans crainte."
+     ],
+     "q": "Vous souvenez-vous d'un clip qui a fait rester une chanson dans votre tête ?",
+     "c": "Regardez ou imaginez un clip classique des années 80 et pensez à la façon dont l'image change la chanson."
+    },
+    "it": {
+     "t": "Le icone del pop degli anni Ottanta",
+     "g": "Vedere come videoclip e grandi personalità plasmarono il pop degli anni Ottanta.",
+     "p": [
+      "MTV, lanciata nel 1981, rese l'immagine importante quanto il suono per le star del pop.",
+      "Thriller di Michael Jackson, del 1982, unì pop, funk e rock a videoclip e danza di grande impatto.",
+      "Madonna e Prince mescolarono ciascuno pop con dance e funk e reinventarono il loro stile senza paura."
+     ],
+     "q": "Ricordi un videoclip che ti ha fatto restare in testa una canzone?",
+     "c": "Guarda o immagina un videoclip classico degli anni Ottanta e pensa a come le immagini cambiano il brano."
+    },
+    "pt": {
+     "t": "Ícones da pop dos anos 80",
+     "g": "Ver como os videoclipes e as grandes personalidades moldaram a pop dos anos 80.",
+     "p": [
+      "A MTV, lançada em 1981, tornou a imagem tão importante como o som para as estrelas da pop.",
+      "Thriller de Michael Jackson, de 1982, combinou pop, funk e rock com videoclipes e dança marcantes.",
+      "Madonna e Prince misturaram cada um pop com dance e funk e reinventaram o seu estilo sem medo."
+     ],
+     "q": "Lembras-te de um videoclipe que fez uma canção ficar na tua cabeça?",
+     "c": "Vê ou imagina um videoclipe clássico dos anos 80 e pensa como as imagens mudam a canção."
+    },
+    "pt_BR": {
+     "t": "Ícones do pop dos anos 80",
+     "g": "Ver como os videoclipes e as grandes personalidades moldaram o pop dos anos 80.",
+     "p": [
+      "A MTV, lançada em 1981, tornou a imagem tão importante quanto o som para as estrelas do pop.",
+      "Thriller, de Michael Jackson, de 1982, combinou pop, funk e rock com videoclipes e dança marcantes.",
+      "Madonna e Prince misturaram cada um pop com dance e funk e reinventaram seu estilo sem medo."
+     ],
+     "q": "Você lembra de um videoclipe que fez uma música grudar na sua cabeça?",
+     "c": "Assista ou imagine um videoclipe clássico dos anos 80 e pense em como as imagens mudam a música."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Power ballads and arena sound",
+     "g": "Hear how big drums and soaring choruses fill stadiums.",
+     "p": [
+      "The power ballad starts soft and emotional, then builds to a huge chorus with loud guitars and drums.",
+      "Bands like Journey, Heart and Queen wrote songs made to be sung by whole stadiums.",
+      "Big reverb on the drums and layered vocal harmonies create that arena-sized feel."
+     ],
+     "q": "Which song would you love to sing along with a stadium crowd?",
+     "c": "Listen to a power ballad and mark the moment when the full band comes in."
+    },
+    "de": {
+     "t": "Powerballaden und Arena-Sound",
+     "g": "Hören, wie große Drums und strahlende Refrains Stadien füllen.",
+     "p": [
+      "Die Powerballade beginnt leise und gefühlvoll und steigert sich zu einem riesigen Refrain mit lauten Gitarren und Drums.",
+      "Bands wie Journey, Heart und Queen schrieben Lieder, die ganze Stadien mitsingen können.",
+      "Viel Hall auf dem Schlagzeug und geschichtete Gesangsharmonien erzeugen dieses Arena-Gefühl."
+     ],
+     "q": "Bei welchem Song würdest du gern mit einem Stadion mitsingen?",
+     "c": "Hör eine Powerballade und markiere den Moment, in dem die ganze Band einsetzt."
+    },
+    "es": {
+     "t": "Power ballads y sonido de estadio",
+     "g": "Oír cómo las baterías grandes y los estribillos épicos llenan estadios.",
+     "p": [
+      "La power ballad empieza suave y emotiva y crece hasta un estribillo enorme con guitarras y batería potentes.",
+      "Bandas como Journey, Heart y Queen escribieron canciones hechas para cantar con estadios enteros.",
+      "La gran reverberación de la batería y las armonías vocales en capas crean esa sensación de estadio."
+     ],
+     "q": "¿Con qué canción te gustaría cantar junto a todo un estadio?",
+     "c": "Escucha una power ballad y marca el momento en que entra toda la banda."
+    },
+    "fr": {
+     "t": "Power ballads et son d'arène",
+     "g": "Entendre comment grosses batteries et refrains planants remplissent les stades.",
+     "p": [
+      "La power ballad commence douce et émouvante, puis monte vers un refrain énorme avec guitares et batterie puissantes.",
+      "Des groupes comme Journey, Heart et Queen ont écrit des chansons faites pour être chantées par des stades entiers.",
+      "La grande réverbération de la batterie et les harmonies vocales superposées créent cet effet d'arène."
+     ],
+     "q": "Avec quelle chanson aimeriez-vous chanter en chœur avec un stade ?",
+     "c": "Écoutez une power ballad et repérez le moment où tout le groupe entre."
+    },
+    "it": {
+     "t": "Power ballad e suono da stadio",
+     "g": "Sentire come grandi batterie e ritornelli epici riempiono gli stadi.",
+     "p": [
+      "La power ballad inizia dolce ed emotiva e poi cresce fino a un ritornello enorme con chitarre e batteria potenti.",
+      "Band come Journey, Heart e Queen scrissero canzoni fatte per essere cantate da interi stadi.",
+      "Il grande riverbero della batteria e le armonie vocali stratificate creano quella sensazione da arena."
+     ],
+     "q": "Con quale canzone ti piacerebbe cantare insieme a uno stadio intero?",
+     "c": "Ascolta una power ballad e segna il momento in cui entra tutta la band."
+    },
+    "pt": {
+     "t": "Power ballads e som de estádio",
+     "g": "Ouvir como baterias grandes e refrões épicos enchem estádios.",
+     "p": [
+      "A power ballad começa suave e emotiva e cresce até um refrão enorme com guitarras e bateria potentes.",
+      "Bandas como Journey, Heart e Queen escreveram canções feitas para ser cantadas por estádios inteiros.",
+      "A grande reverberação da bateria e as harmonias vocais em camadas criam essa sensação de estádio."
+     ],
+     "q": "Com que canção gostarias de cantar junto com um estádio inteiro?",
+     "c": "Ouve uma power ballad e marca o momento em que entra toda a banda."
+    },
+    "pt_BR": {
+     "t": "Power ballads e som de estádio",
+     "g": "Ouvir como baterias grandes e refrões épicos enchem estádios.",
+     "p": [
+      "A power ballad começa suave e emotiva e cresce até um refrão enorme com guitarras e bateria potentes.",
+      "Bandas como Journey, Heart e Queen escreveram músicas feitas para serem cantadas por estádios inteiros.",
+      "A grande reverberação da bateria e as harmonias vocais em camadas criam essa sensação de estádio."
+     ],
+     "q": "Com qual música você gostaria de cantar junto com um estádio inteiro?",
+     "c": "Escute uma power ballad e marque o momento em que entra a banda toda."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hip hop and its four elements",
+     "g": "Learn the four elements of hip hop born in the Bronx.",
+     "p": [
+      "Hip hop began at block parties in the Bronx, New York, in the 1970s.",
+      "Its four elements are DJing, MCing (rapping), breaking (dance) and graffiti art.",
+      "It grew out of Black and Latino youth communities creating art with few resources."
+     ],
+     "q": "Which element, music, dance or visual art, would you try first?",
+     "c": "Watch a breaking clip or listen to a DJ mix and identify two of the four elements."
+    },
+    "de": {
+     "t": "Hip-Hop und seine vier Elemente",
+     "g": "Die vier Elemente des Hip-Hop kennenlernen, die in der Bronx entstanden.",
+     "p": [
+      "Hip-Hop begann in den 1970ern bei Blockpartys in der Bronx in New York.",
+      "Seine vier Elemente sind DJing, MCing (Rappen), Breaking (Tanz) und Graffiti-Kunst.",
+      "Er entstand in schwarzen und lateinamerikanischen Jugendgemeinschaften, die mit wenig Mitteln Kunst schufen."
+     ],
+     "q": "Welches Element, Musik, Tanz oder bildende Kunst, würdest du zuerst ausprobieren?",
+     "c": "Sieh einen Breaking-Clip oder hör einen DJ-Mix und erkenne zwei der vier Elemente."
+    },
+    "es": {
+     "t": "El hip hop y sus cuatro elementos",
+     "g": "Conocer los cuatro elementos del hip hop nacido en el Bronx.",
+     "p": [
+      "El hip hop empezó en fiestas de barrio en el Bronx, Nueva York, en los años setenta.",
+      "Sus cuatro elementos son el DJing, el MCing (rap), el breaking (baile) y el arte del grafiti.",
+      "Surgió de comunidades jóvenes negras y latinas que creaban arte con pocos recursos."
+     ],
+     "q": "¿Qué elemento, música, baile o arte visual, probarías primero?",
+     "c": "Mira un clip de breaking o escucha una mezcla de DJ e identifica dos de los cuatro elementos."
+    },
+    "fr": {
+     "t": "Le hip-hop et ses quatre éléments",
+     "g": "Découvrir les quatre éléments du hip-hop né dans le Bronx.",
+     "p": [
+      "Le hip-hop commence dans les années 1970 lors de fêtes de quartier dans le Bronx, à New York.",
+      "Ses quatre éléments sont le DJing, le MCing (rap), le breaking (danse) et le graffiti.",
+      "Il naît dans des communautés de jeunes noirs et latinos qui créent de l'art avec peu de moyens."
+     ],
+     "q": "Quel élément, musique, danse ou art visuel, essaieriez-vous en premier ?",
+     "c": "Regardez un clip de breaking ou écoutez un mix de DJ et identifiez deux des quatre éléments."
+    },
+    "it": {
+     "t": "L'hip hop e i suoi quattro elementi",
+     "g": "Conoscere i quattro elementi dell'hip hop nato nel Bronx.",
+     "p": [
+      "L'hip hop iniziò negli anni Settanta nelle feste di quartiere del Bronx, a New York.",
+      "I suoi quattro elementi sono DJing, MCing (rap), breaking (danza) e graffiti.",
+      "Nacque da comunità giovanili nere e latine che creavano arte con pochi mezzi."
+     ],
+     "q": "Quale elemento, musica, danza o arte visiva, proveresti per primo?",
+     "c": "Guarda un video di breaking o ascolta un mix di DJ e individua due dei quattro elementi."
+    },
+    "pt": {
+     "t": "O hip hop e os seus quatro elementos",
+     "g": "Conhecer os quatro elementos do hip hop nascido no Bronx.",
+     "p": [
+      "O hip hop começou em festas de bairro no Bronx, em Nova Iorque, nos anos 1970.",
+      "Os seus quatro elementos são o DJing, o MCing (rap), o breaking (dança) e a arte do graffiti.",
+      "Nasceu de comunidades jovens negras e latinas que criavam arte com poucos recursos."
+     ],
+     "q": "Que elemento, música, dança ou arte visual, experimentarias primeiro?",
+     "c": "Vê um clip de breaking ou ouve uma mistura de DJ e identifica dois dos quatro elementos."
+    },
+    "pt_BR": {
+     "t": "O hip hop e seus quatro elementos",
+     "g": "Conhecer os quatro elementos do hip hop nascido no Bronx.",
+     "p": [
+      "O hip hop começou em festas de bairro no Bronx, em Nova York, nos anos 1970.",
+      "Seus quatro elementos são o DJing, o MCing (rap), o breaking (dança) e a arte do grafite.",
+      "Nasceu de comunidades jovens negras e latinas que criavam arte com poucos recursos."
+     ],
+     "q": "Qual elemento, música, dança ou arte visual, você experimentaria primeiro?",
+     "c": "Assista a um clipe de breaking ou ouça uma mixagem de DJ e identifique dois dos quatro elementos."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Old-school hip hop",
+     "g": "Meet the first DJs, MCs and rap records.",
+     "p": [
+      "DJ Kool Herc, a Jamaican-born DJ in the Bronx, looped the breaks of records so dancers had more time.",
+      "Grandmaster Flash refined turntable techniques like cutting and scratching to create new rhythms.",
+      "The Sugarhill Gang's Rapper's Delight, from 1979, brought rap to a mainstream audience."
+     ],
+     "q": "Do you enjoy rhythm-driven music, even with simple beats?",
+     "c": "Listen to Rapper's Delight and notice the groove underneath the rhymes."
+    },
+    "de": {
+     "t": "Old-School-Hip-Hop",
+     "g": "Die ersten DJs, MCs und Rap-Platten kennenlernen.",
+     "p": [
+      "DJ Kool Herc, ein in Jamaika geborener DJ in der Bronx, loopte die Breaks von Platten, damit Tänzer mehr Zeit hatten.",
+      "Grandmaster Flash verfeinerte Plattenspieler-Techniken wie Cutting und Scratching und schuf neue Rhythmen.",
+      "Rapper's Delight der Sugarhill Gang von 1979 brachte Rap zu einem breiten Publikum."
+     ],
+     "q": "Magst du rhythmusgetriebene Musik, auch mit einfachen Beats?",
+     "c": "Hör Rapper's Delight und achte auf den Groove unter den Reimen."
+    },
+    "es": {
+     "t": "Hip hop de la vieja escuela",
+     "g": "Conocer a los primeros DJs, MCs y discos de rap.",
+     "p": [
+      "DJ Kool Herc, un DJ nacido en Jamaica en el Bronx, repetía los breaks de los discos para dar más tiempo a los bailarines.",
+      "Grandmaster Flash perfeccionó técnicas con tocadiscos como el cutting y el scratching para crear ritmos nuevos.",
+      "Rapper's Delight de The Sugarhill Gang, de 1979, llevó el rap al gran público."
+     ],
+     "q": "¿Disfrutas la música guiada por el ritmo, aunque sea con beats sencillos?",
+     "c": "Escucha Rapper's Delight y fíjate en el groove que hay bajo las rimas."
+    },
+    "fr": {
+     "t": "Le hip-hop old school",
+     "g": "Rencontrer les premiers DJ, MC et disques de rap.",
+     "p": [
+      "DJ Kool Herc, DJ né en Jamaïque dans le Bronx, bouclait les breaks des disques pour laisser plus de temps aux danseurs.",
+      "Grandmaster Flash a affiné des techniques de platines comme le cutting et le scratching pour créer de nouveaux rythmes.",
+      "Rapper's Delight de The Sugarhill Gang, en 1979, amène le rap au grand public."
+     ],
+     "q": "Aimez-vous la musique portée par le rythme, même avec des beats simples ?",
+     "c": "Écoutez Rapper's Delight et remarquez le groove sous les rimes."
+    },
+    "it": {
+     "t": "L'hip hop old school",
+     "g": "Conoscere i primi DJ, MC e dischi rap.",
+     "p": [
+      "DJ Kool Herc, un DJ nato in Giamaica nel Bronx, ripeteva i break dei dischi per dare più tempo ai ballerini.",
+      "Grandmaster Flash perfezionò tecniche coi giradischi come il cutting e lo scratching per creare nuovi ritmi.",
+      "Rapper's Delight dei Sugarhill Gang, del 1979, portò il rap al grande pubblico."
+     ],
+     "q": "Ti piace la musica guidata dal ritmo, anche con beat semplici?",
+     "c": "Ascolta Rapper's Delight e nota il groove sotto le rime."
+    },
+    "pt": {
+     "t": "O hip hop old school",
+     "g": "Conhecer os primeiros DJs, MCs e discos de rap.",
+     "p": [
+      "DJ Kool Herc, um DJ nascido na Jamaica no Bronx, repetia os breaks dos discos para dar mais tempo aos dançarinos.",
+      "Grandmaster Flash aperfeiçoou técnicas com gira-discos como o cutting e o scratching para criar novos ritmos.",
+      "Rapper's Delight, dos Sugarhill Gang, de 1979, levou o rap ao grande público."
+     ],
+     "q": "Gostas de música guiada pelo ritmo, mesmo com beats simples?",
+     "c": "Ouve Rapper's Delight e repara no groove por baixo das rimas."
+    },
+    "pt_BR": {
+     "t": "O hip hop old school",
+     "g": "Conhecer os primeiros DJs, MCs e discos de rap.",
+     "p": [
+      "DJ Kool Herc, um DJ nascido na Jamaica no Bronx, repetia os breaks dos discos para dar mais tempo aos dançarinos.",
+      "Grandmaster Flash aperfeiçoou técnicas com toca-discos como o cutting e o scratching para criar novos ritmos.",
+      "Rapper's Delight, do Sugarhill Gang, de 1979, levou o rap ao grande público."
+     ],
+     "q": "Você gosta de música guiada pelo ritmo, mesmo com batidas simples?",
+     "c": "Escute Rapper's Delight e note o groove por baixo das rimas."
+    }
+   }
+  }
+ ]
+}

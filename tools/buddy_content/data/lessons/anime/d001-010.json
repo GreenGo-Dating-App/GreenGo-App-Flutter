@@ -1,0 +1,835 @@
+{
+ "topic": "anime",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to anime",
+     "g": "Learn what anime is and why people all over the world love it.",
+     "p": [
+      "Anime is the word for animation made in Japan, from TV series to cinema films.",
+      "Many anime start as manga, light novels or games, and cover every genre.",
+      "Fans love its emotional stories, bold art and wide variety of moods."
+     ],
+     "q": "Which anime, if any, have you already seen, even as a child?",
+     "c": "Today, name one animated show you love and note what you enjoy about it."
+    },
+    "de": {
+     "t": "Willkommen bei Anime",
+     "g": "Du lernst, was Anime ist und warum Menschen weltweit ihn lieben.",
+     "p": [
+      "Anime ist das Wort für Animation aus Japan, von TV-Serien bis zu Kinofilmen.",
+      "Viele Anime beruhen auf Manga, Romanen oder Spielen und decken jedes Genre ab.",
+      "Fans lieben die emotionalen Geschichten, den mutigen Stil und die Vielfalt."
+     ],
+     "q": "Welche Anime hast du schon gesehen, vielleicht schon als Kind?",
+     "c": "Nenne heute eine Zeichentrickserie, die du magst, und was dir daran gefällt."
+    },
+    "es": {
+     "t": "Bienvenido al anime",
+     "g": "Descubre qué es el anime y por qué gusta tanto en todo el mundo.",
+     "p": [
+      "Anime es la palabra para la animación hecha en Japón, desde series hasta películas.",
+      "Muchos animes nacen de mangas, novelas o videojuegos y abarcan todos los géneros.",
+      "A los fans les encantan sus historias emotivas, su estilo audaz y su variedad."
+     ],
+     "q": "¿Qué animes has visto ya, aunque fuera de pequeño?",
+     "c": "Hoy anota una serie animada que te guste y qué es lo que más disfrutas de ella."
+    },
+    "fr": {
+     "t": "Bienvenue dans l'anime",
+     "g": "Découvre ce qu'est l'anime et pourquoi il plaît partout dans le monde.",
+     "p": [
+      "Anime désigne l'animation produite au Japon, des séries TV aux films de cinéma.",
+      "Beaucoup d'animes viennent d'un manga, d'un roman ou d'un jeu, tous genres confondus.",
+      "Les fans aiment ses histoires touchantes, son style audacieux et sa variété."
+     ],
+     "q": "Quels animes as-tu déjà vus, même enfant ?",
+     "c": "Aujourd'hui, note un dessin animé que tu aimes et ce qui te plaît dedans."
+    },
+    "it": {
+     "t": "Benvenuto nell'anime",
+     "g": "Scopri cos'è l'anime e perché piace così tanto in tutto il mondo.",
+     "p": [
+      "Anime è la parola per l'animazione giapponese, dalle serie TV ai film al cinema.",
+      "Molti anime nascono da manga, romanzi o videogiochi e coprono ogni genere.",
+      "I fan amano le storie emozionanti, lo stile audace e la grande varietà."
+     ],
+     "q": "Quali anime hai già visto, magari anche da bambino?",
+     "c": "Oggi scrivi un cartone animato che ami e che cosa ti piace di più."
+    },
+    "pt": {
+     "t": "Bem-vindo ao anime",
+     "g": "Descobre o que é o anime e porque é tão amado em todo o mundo.",
+     "p": [
+      "Anime é a palavra para animação feita no Japão, de séries de TV a filmes de cinema.",
+      "Muitos animes nascem de mangas, romances ou jogos e abrangem todos os géneros.",
+      "Os fãs adoram as histórias emotivas, o estilo ousado e a grande variedade."
+     ],
+     "q": "Que animes já viste, mesmo em criança?",
+     "c": "Hoje anota uma série animada de que gostes e o que mais apreciaste nela."
+    },
+    "pt_BR": {
+     "t": "Boas-vindas ao anime",
+     "g": "Descubra o que é anime e por que ele é tão amado no mundo todo.",
+     "p": [
+      "Anime é a palavra para animação feita no Japão, de séries de TV a filmes de cinema.",
+      "Muitos animes nascem de mangás, romances ou jogos e cobrem todos os gêneros.",
+      "Os fãs adoram as histórias emocionantes, o estilo ousado e a grande variedade."
+     ],
+     "q": "Quais animes você já assistiu, mesmo quando criança?",
+     "c": "Hoje anote uma série animada que você curte e o que mais gosta nela."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Anime vs Western cartoons",
+     "g": "See how Japanese animation differs from Western cartoons in style and audience.",
+     "p": [
+      "Anime often tells long stories with continuing plots, not only one-off episodes.",
+      "Characters are drawn with expressive eyes, and animation is often limited to save time.",
+      "Anime targets all ages, from small children to adults, not only kids."
+     ],
+     "q": "Do you prefer stories that continue across episodes or self-contained ones?",
+     "c": "Watch two minutes each of a cartoon and an anime and list two differences."
+    },
+    "de": {
+     "t": "Anime und westliche Cartoons",
+     "g": "Erkenne, wie sich japanische Animation in Stil und Zielgruppe unterscheidet.",
+     "p": [
+      "Anime erzählt oft lange Geschichten mit fortlaufender Handlung statt Einzelfolgen.",
+      "Figuren haben ausdrucksstarke Augen, und die Animation ist oft sparsam gehalten.",
+      "Anime richtet sich an alle Altersgruppen, nicht nur an Kinder."
+     ],
+     "q": "Magst du lieber fortlaufende Geschichten oder in sich abgeschlossene Folgen?",
+     "c": "Sieh je zwei Minuten Cartoon und Anime an und notiere zwei Unterschiede."
+    },
+    "es": {
+     "t": "Anime y dibujos occidentales",
+     "g": "Observa cómo la animación japonesa se distingue en estilo y público.",
+     "p": [
+      "El anime suele contar historias largas con trama continua, no solo episodios sueltos.",
+      "Los personajes tienen ojos expresivos y la animación suele ser limitada para ahorrar tiempo.",
+      "El anime se dirige a todas las edades, no solo a los niños."
+     ],
+     "q": "¿Prefieres historias que continúan o episodios independientes?",
+     "c": "Mira dos minutos de un dibujo animado y otros de un anime y anota dos diferencias."
+    },
+    "fr": {
+     "t": "Anime et dessins animés occidentaux",
+     "g": "Vois en quoi l'animation japonaise diffère par son style et son public.",
+     "p": [
+      "L'anime raconte souvent de longues histoires à l'intrigue continue, pas que des épisodes isolés.",
+      "Les personnages ont des yeux expressifs et l'animation est souvent économe en images.",
+      "L'anime vise tous les âges, pas seulement les enfants."
+     ],
+     "q": "Préfères-tu les histoires qui se poursuivent ou les épisodes indépendants ?",
+     "c": "Regarde deux minutes d'un dessin animé et d'un anime, puis note deux différences."
+    },
+    "it": {
+     "t": "Anime e cartoni occidentali",
+     "g": "Scopri come l'animazione giapponese si distingue per stile e pubblico.",
+     "p": [
+      "L'anime racconta spesso storie lunghe con trama continua, non solo episodi isolati.",
+      "I personaggi hanno occhi espressivi e l'animazione è spesso limitata per risparmiare tempo.",
+      "L'anime si rivolge a tutte le età, non solo ai bambini."
+     ],
+     "q": "Preferisci storie che proseguono o episodi autoconclusivi?",
+     "c": "Guarda due minuti di un cartone e di un anime e annota due differenze."
+    },
+    "pt": {
+     "t": "Anime e desenhos animados ocidentais",
+     "g": "Vê como a animação japonesa se distingue no estilo e no público.",
+     "p": [
+      "O anime conta muitas vezes histórias longas com enredo contínuo, não só episódios soltos.",
+      "As personagens têm olhos expressivos e a animação é muitas vezes limitada para poupar tempo.",
+      "O anime dirige-se a todas as idades, não só às crianças."
+     ],
+     "q": "Preferes histórias que continuam ou episódios independentes?",
+     "c": "Vê dois minutos de um desenho animado e de um anime e anota duas diferenças."
+    },
+    "pt_BR": {
+     "t": "Anime e desenhos ocidentais",
+     "g": "Veja como a animação japonesa se distingue em estilo e público.",
+     "p": [
+      "O anime costuma contar histórias longas com enredo contínuo, não só episódios soltos.",
+      "Os personagens têm olhos expressivos e a animação costuma ser limitada para economizar tempo.",
+      "O anime se dirige a todas as idades, não só às crianças."
+     ],
+     "q": "Você prefere histórias que continuam ou episódios independentes?",
+     "c": "Assista dois minutos de um desenho e de um anime e anote duas diferenças."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Manga: the source of many anime",
+     "g": "Understand how manga, Japanese comics, relates to anime.",
+     "p": [
+      "Manga are Japanese comics, usually printed in black and white.",
+      "Popular manga often get anime adaptations, which add colour, voices and music.",
+      "Reading the manga lets you enjoy a story at your own pace."
+     ],
+     "q": "Have you ever read a manga or any comic? What was it?",
+     "c": "Look at one manga page, or a comic panel, and sketch a character from it."
+    },
+    "de": {
+     "t": "Manga: Quelle vieler Anime",
+     "g": "Verstehe, wie Manga, japanische Comics, mit Anime zusammenhängen.",
+     "p": [
+      "Manga sind japanische Comics und meist in Schwarz-Weiß gedruckt.",
+      "Beliebte Manga werden oft als Anime verfilmt, mit Farbe, Stimmen und Musik.",
+      "Beim Lesen des Manga bestimmst du das Erzähltempo selbst."
+     ],
+     "q": "Hast du schon einmal einen Manga oder Comic gelesen? Welchen?",
+     "c": "Sieh dir eine Mangaseite oder ein Comicbild an und skizziere eine Figur."
+    },
+    "es": {
+     "t": "Manga: la fuente de muchos animes",
+     "g": "Entiende cómo se relaciona el manga, el cómic japonés, con el anime.",
+     "p": [
+      "El manga es el cómic japonés y suele imprimirse en blanco y negro.",
+      "Los mangas populares suelen adaptarse al anime, con color, voces y música.",
+      "Leer el manga te permite disfrutar la historia a tu propio ritmo."
+     ],
+     "q": "¿Has leído alguna vez un manga o un cómic? ¿Cuál?",
+     "c": "Mira una página de manga o una viñeta y dibuja un personaje de ella."
+    },
+    "fr": {
+     "t": "Le manga, source de nombreux animes",
+     "g": "Comprends le lien entre le manga, la BD japonaise, et l'anime.",
+     "p": [
+      "Le manga est la bande dessinée japonaise, le plus souvent imprimée en noir et blanc.",
+      "Les mangas populaires sont souvent adaptés en anime, avec couleurs, voix et musique.",
+      "Lire le manga permet de savourer l'histoire à son propre rythme."
+     ],
+     "q": "As-tu déjà lu un manga ou une BD ? Lequel ?",
+     "c": "Regarde une page de manga ou une case de BD et dessine un personnage."
+    },
+    "it": {
+     "t": "Manga: la fonte di molti anime",
+     "g": "Capisci il legame tra manga, i fumetti giapponesi, e anime.",
+     "p": [
+      "I manga sono fumetti giapponesi, di solito stampati in bianco e nero.",
+      "I manga popolari spesso diventano anime, con colori, voci e musica.",
+      "Leggere il manga ti fa godere la storia al tuo ritmo."
+     ],
+     "q": "Hai mai letto un manga o un fumetto? Quale?",
+     "c": "Guarda una pagina di manga o una vignetta e disegna un personaggio."
+    },
+    "pt": {
+     "t": "Manga: a fonte de muitos animes",
+     "g": "Percebe como o manga, a banda desenhada japonesa, se liga ao anime.",
+     "p": [
+      "Manga é a banda desenhada japonesa, geralmente impressa a preto e branco.",
+      "Mangas populares são muitas vezes adaptados a anime, com cor, vozes e música.",
+      "Ler o manga permite apreciar a história ao teu ritmo."
+     ],
+     "q": "Já leste algum manga ou banda desenhada? Qual?",
+     "c": "Olha para uma página de manga ou uma vinheta e desenha uma personagem."
+    },
+    "pt_BR": {
+     "t": "Mangá: a fonte de muitos animes",
+     "g": "Entenda como o mangá, a história em quadrinhos japonesa, se liga ao anime.",
+     "p": [
+      "Mangá é o quadrinho japonês, geralmente impresso em preto e branco.",
+      "Mangás populares costumam virar anime, com cor, vozes e música.",
+      "Ler o mangá permite curtir a história no seu próprio ritmo."
+     ],
+     "q": "Você já leu algum mangá ou quadrinho? Qual?",
+     "c": "Olhe uma página de mangá ou um quadrinho e desenhe um personagem dele."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your anime profile",
+     "g": "Discover which moods, stories and art styles you enjoy most.",
+     "p": [
+      "Think about mood: cosy, funny, adventurous, emotional or mysterious.",
+      "Notice art styles: soft watercolours, bright colours or detailed realism.",
+      "Your profile helps you choose what to watch next and explain why."
+     ],
+     "q": "Which mood do you want from a show: cosy, funny or adventurous?",
+     "c": "Write a three-line anime profile: favourite mood, art style and story type."
+    },
+    "de": {
+     "t": "Dein Anime-Profil",
+     "g": "Finde heraus, welche Stimmungen, Geschichten und Stile dir am meisten gefallen.",
+     "p": [
+      "Denk an die Stimmung: gemütlich, lustig, abenteuerlich, emotional oder geheimnisvoll.",
+      "Achte auf den Stil: weiche Aquarellfarben, leuchtende Farben oder detailreicher Realismus.",
+      "Dein Profil hilft dir, die nächste Serie zu wählen und zu begründen."
+     ],
+     "q": "Welche Stimmung wünschst du dir: gemütlich, lustig oder abenteuerlich?",
+     "c": "Schreibe ein Profil in drei Zeilen: Lieblingsstimmung, Stil und Geschichtentyp."
+    },
+    "es": {
+     "t": "Tu perfil de anime",
+     "g": "Descubre qué ambientes, historias y estilos de dibujo te gustan más.",
+     "p": [
+      "Piensa en el ambiente: acogedor, divertido, aventurero, emotivo o misterioso.",
+      "Fíjate en el estilo: acuarelas suaves, colores vivos o realismo detallado.",
+      "Tu perfil te ayuda a elegir qué ver y a explicar por qué."
+     ],
+     "q": "¿Qué ambiente buscas en una serie: acogedor, divertido o aventurero?",
+     "c": "Escribe un perfil de tres líneas: ambiente, estilo y tipo de historia favoritos."
+    },
+    "fr": {
+     "t": "Ton profil d'anime",
+     "g": "Découvre quelles ambiances, histoires et styles de dessin te plaisent le plus.",
+     "p": [
+      "Pense à l'ambiance : douce, drôle, aventureuse, émouvante ou mystérieuse.",
+      "Observe le style : aquarelles douces, couleurs vives ou réalisme détaillé.",
+      "Ton profil t'aide à choisir ton prochain anime et à expliquer pourquoi."
+     ],
+     "q": "Quelle ambiance veux-tu dans une série : douce, drôle ou aventureuse ?",
+     "c": "Écris un profil en trois lignes : ambiance, style et type d'histoire préférés."
+    },
+    "it": {
+     "t": "Il tuo profilo anime",
+     "g": "Scopri quali atmosfere, storie e stili di disegno ti piacciono di più.",
+     "p": [
+      "Pensa all'atmosfera: accogliente, divertente, avventurosa, emotiva o misteriosa.",
+      "Nota lo stile: acquerelli morbidi, colori vivaci o realismo dettagliato.",
+      "Il profilo ti aiuta a scegliere cosa guardare e a spiegare perché."
+     ],
+     "q": "Che atmosfera cerchi in una serie: accogliente, divertente o avventurosa?",
+     "c": "Scrivi un profilo di tre righe: atmosfera, stile e tipo di storia preferiti."
+    },
+    "pt": {
+     "t": "O teu perfil de anime",
+     "g": "Descobre que ambientes, histórias e estilos de desenho mais gostas.",
+     "p": [
+      "Pensa no ambiente: acolhedor, divertido, aventureiro, emotivo ou misterioso.",
+      "Repara no estilo: aguarelas suaves, cores vivas ou realismo detalhado.",
+      "O teu perfil ajuda-te a escolher o que ver e a explicar porquê."
+     ],
+     "q": "Que ambiente queres numa série: acolhedor, divertido ou aventureiro?",
+     "c": "Escreve um perfil de três linhas: ambiente, estilo e tipo de história preferidos."
+    },
+    "pt_BR": {
+     "t": "Seu perfil de anime",
+     "g": "Descubra que climas, histórias e estilos de desenho você mais curte.",
+     "p": [
+      "Pense no clima: aconchegante, divertido, aventureiro, emocionante ou misterioso.",
+      "Repare no estilo: aquarelas suaves, cores vivas ou realismo detalhado.",
+      "Seu perfil ajuda a escolher o que assistir e a explicar por quê."
+     ],
+     "q": "Que clima você quer numa série: aconchegante, divertido ou aventureiro?",
+     "c": "Escreva um perfil de três linhas: clima, estilo e tipo de história favoritos."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Watching anime legally",
+     "g": "Learn the legal ways to watch anime and why supporting creators matters.",
+     "p": [
+      "Anime is available on streaming services, TV channels, cinemas and discs.",
+      "Official releases pay the studios, animators and writers who make the shows.",
+      "Many services offer free, ad-supported or trial options, so legal is easy."
+     ],
+     "q": "Where do you usually watch shows, and do you know the official options?",
+     "c": "Check which official service or TV channel near you offers anime today."
+    },
+    "de": {
+     "t": "Anime legal schauen",
+     "g": "Lerne legale Wege kennen, Anime zu sehen, und warum Unterstützung zählt.",
+     "p": [
+      "Anime gibt es bei Streamingdiensten, im Fernsehen, im Kino und auf Disc.",
+      "Offizielle Veröffentlichungen bezahlen Studios, Zeichner und Autoren.",
+      "Viele Dienste bieten kostenlose, werbefinanzierte oder Testangebote."
+     ],
+     "q": "Wo schaust du meist Serien, und kennst du die offiziellen Angebote?",
+     "c": "Prüfe heute, welcher offizielle Dienst oder Sender bei dir Anime zeigt."
+    },
+    "es": {
+     "t": "Ver anime legalmente",
+     "g": "Conoce las formas legales de ver anime y por qué apoyar a los creadores.",
+     "p": [
+      "El anime está en plataformas de streaming, canales de TV, cines y discos.",
+      "Los estrenos oficiales pagan a los estudios, animadores y guionistas.",
+      "Muchos servicios ofrecen opciones gratuitas, con anuncios o de prueba."
+     ],
+     "q": "¿Dónde sueles ver series y conoces las opciones oficiales?",
+     "c": "Comprueba hoy qué plataforma o canal oficial de tu zona ofrece anime."
+    },
+    "fr": {
+     "t": "Regarder l'anime légalement",
+     "g": "Apprends les moyens légaux de regarder l'anime et pourquoi soutenir les créateurs.",
+     "p": [
+      "L'anime est disponible en streaming, à la TV, au cinéma et en disque.",
+      "Les sorties officielles rémunèrent les studios, animateurs et scénaristes.",
+      "Beaucoup de services proposent des offres gratuites, avec pub ou d'essai."
+     ],
+     "q": "Où regardes-tu d'habitude des séries, et connais-tu les offres officielles ?",
+     "c": "Vérifie aujourd'hui quelle plateforme ou chaîne officielle propose de l'anime."
+    },
+    "it": {
+     "t": "Guardare anime legalmente",
+     "g": "Scopri i modi legali di guardare anime e perché sostenere i creatori.",
+     "p": [
+      "L'anime è disponibile in streaming, in TV, al cinema e su disco.",
+      "Le uscite ufficiali pagano studi, animatori e sceneggiatori.",
+      "Molti servizi offrono opzioni gratuite, con pubblicità o di prova."
+     ],
+     "q": "Dove guardi di solito le serie e conosci le opzioni ufficiali?",
+     "c": "Controlla oggi quale servizio o canale ufficiale vicino a te offre anime."
+    },
+    "pt": {
+     "t": "Ver anime legalmente",
+     "g": "Conhece as formas legais de ver anime e porque apoiar os criadores.",
+     "p": [
+      "O anime está em plataformas de streaming, canais de TV, cinemas e discos.",
+      "Os lançamentos oficiais pagam a estúdios, animadores e argumentistas.",
+      "Muitos serviços oferecem opções gratuitas, com anúncios ou de teste."
+     ],
+     "q": "Onde costumas ver séries e conheces as opções oficiais?",
+     "c": "Verifica hoje que plataforma ou canal oficial perto de ti tem anime."
+    },
+    "pt_BR": {
+     "t": "Assistir anime legalmente",
+     "g": "Conheça as formas legais de assistir anime e por que apoiar os criadores.",
+     "p": [
+      "O anime está em streaming, canais de TV, cinemas e discos.",
+      "Os lançamentos oficiais pagam estúdios, animadores e roteiristas.",
+      "Muitos serviços oferecem opções gratuitas, com anúncios ou de teste."
+     ],
+     "q": "Onde você costuma assistir séries e conhece as opções oficiais?",
+     "c": "Confira hoje qual plataforma ou canal oficial perto de você tem anime."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Subtitles or dubbing?",
+     "g": "Compare original Japanese audio with dubbed versions in your language.",
+     "p": [
+      "Subtitles keep the original voice acting and let you hear Japanese.",
+      "Dubs let you watch without reading, which suits young viewers and multitasking.",
+      "Neither is wrong; try both and see which feels more natural."
+     ],
+     "q": "Do you prefer subtitles or dubbing for films and series?",
+     "c": "Watch the same one-minute scene in both versions and note which you liked."
+    },
+    "de": {
+     "t": "Untertitel oder Synchronisation?",
+     "g": "Vergleiche das japanische Original mit der synchronisierten Fassung.",
+     "p": [
+      "Untertitel bewahren die Originalstimmen und lassen dich Japanisch hören.",
+      "Synchronisation erlaubt Schauen ohne Lesen, gut für Kinder und nebenbei.",
+      "Keine Wahl ist falsch; probiere beide und spüre, was natürlicher wirkt."
+     ],
+     "q": "Magst du bei Filmen und Serien lieber Untertitel oder Synchronisation?",
+     "c": "Sieh dieselbe Minute in beiden Fassungen und notiere, was dir besser gefiel."
+    },
+    "es": {
+     "t": "¿Subtítulos o doblaje?",
+     "g": "Compara el audio original japonés con las versiones dobladas a tu idioma.",
+     "p": [
+      "Los subtítulos conservan la interpretación original y te dejan oír japonés.",
+      "El doblaje permite ver sin leer, ideal para niños o para hacer otra cosa.",
+      "Ninguna opción es mala; prueba ambas y mira cuál te resulta más natural."
+     ],
+     "q": "¿Prefieres subtítulos o doblaje en películas y series?",
+     "c": "Mira la misma escena de un minuto en ambas versiones y anota cuál te gustó más."
+    },
+    "fr": {
+     "t": "Sous-titres ou doublage ?",
+     "g": "Compare le japonais d'origine aux versions doublées dans ta langue.",
+     "p": [
+      "Les sous-titres gardent le jeu d'acteur original et font entendre le japonais.",
+      "Le doublage permet de regarder sans lire, pratique pour les enfants.",
+      "Aucun choix n'est mauvais ; essaie les deux et vois lequel te paraît naturel."
+     ],
+     "q": "Préfères-tu les sous-titres ou le doublage pour les films et séries ?",
+     "c": "Regarde la même scène d'une minute dans les deux versions et note ta préférée."
+    },
+    "it": {
+     "t": "Sottotitoli o doppiaggio?",
+     "g": "Confronta l'audio originale giapponese con le versioni doppiate nella tua lingua.",
+     "p": [
+      "I sottotitoli mantengono la recitazione originale e fanno sentire il giapponese.",
+      "Il doppiaggio permette di guardare senza leggere, comodo per i più piccoli.",
+      "Nessuna scelta è sbagliata; prova entrambe e vedi quale ti sembra naturale."
+     ],
+     "q": "Preferisci sottotitoli o doppiaggio per film e serie?",
+     "c": "Guarda la stessa scena di un minuto nelle due versioni e annota quale preferisci."
+    },
+    "pt": {
+     "t": "Legendas ou dobragem?",
+     "g": "Compara o áudio original japonês com as versões dobradas na tua língua.",
+     "p": [
+      "As legendas mantêm a interpretação original e deixam-te ouvir japonês.",
+      "A dobragem permite ver sem ler, ótima para crianças e para fazer outras coisas.",
+      "Nenhuma opção é errada; experimenta as duas e vê qual te soa mais natural."
+     ],
+     "q": "Preferes legendas ou dobragem em filmes e séries?",
+     "c": "Vê a mesma cena de um minuto nas duas versões e anota qual preferiste."
+    },
+    "pt_BR": {
+     "t": "Legenda ou dublagem?",
+     "g": "Compare o áudio original japonês com as versões dubladas no seu idioma.",
+     "p": [
+      "A legenda mantém a atuação original e deixa você ouvir japonês.",
+      "A dublagem permite assistir sem ler, ótima para crianças e para fazer outras coisas.",
+      "Nenhuma opção é errada; experimente as duas e veja qual soa mais natural."
+     ],
+     "q": "Você prefere legenda ou dublagem em filmes e séries?",
+     "c": "Assista à mesma cena de um minuto nas duas versões e anote qual preferiu."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Series, films and specials",
+     "g": "Tell apart TV series, movies, OVAs and web anime.",
+     "p": [
+      "TV series air weekly in episodes; anime films are made for cinemas.",
+      "OVA means original video animation, once sold directly on video.",
+      "Web anime and specials are released online or as extra episodes."
+     ],
+     "q": "Do you prefer a long series or a single film in one evening?",
+     "c": "List one series and one film you know, and say which format suits them."
+    },
+    "de": {
+     "t": "Serien, Filme und Specials",
+     "g": "Unterscheide TV-Serien, Kinofilme, OVAs und Web-Anime.",
+     "p": [
+      "TV-Serien laufen wöchentlich in Folgen; Anime-Filme entstehen fürs Kino.",
+      "OVA heißt Original Video Animation und wurde früher direkt auf Video verkauft.",
+      "Web-Anime und Specials erscheinen online oder als Zusatzfolgen."
+     ],
+     "q": "Magst du lieber eine lange Serie oder einen Film an einem Abend?",
+     "c": "Nenne eine Serie und einen Film, die du kennst, und welches Format passt."
+    },
+    "es": {
+     "t": "Series, películas y especiales",
+     "g": "Distingue series de TV, películas, OVAs y anime web.",
+     "p": [
+      "Las series de TV se emiten semanalmente; las películas se hacen para el cine.",
+      "OVA significa animación original en vídeo, antes vendida directamente en vídeo.",
+      "El anime web y los especiales salen en línea o como episodios extra."
+     ],
+     "q": "¿Prefieres una serie larga o una película en una tarde?",
+     "c": "Anota una serie y una película que conozcas y qué formato les va mejor."
+    },
+    "fr": {
+     "t": "Séries, films et spéciaux",
+     "g": "Distingue séries TV, films, OVA et animes web.",
+     "p": [
+      "Les séries TV passent chaque semaine en épisodes ; les films sont faits pour le cinéma.",
+      "OVA signifie animation originale en vidéo, autrefois vendue directement en vidéo.",
+      "Les animes web et les spéciaux sortent en ligne ou en épisodes bonus."
+     ],
+     "q": "Préfères-tu une longue série ou un film pour une soirée ?",
+     "c": "Cite une série et un film que tu connais et le format qui leur convient."
+    },
+    "it": {
+     "t": "Serie, film e speciali",
+     "g": "Distingui serie TV, film, OVA e anime web.",
+     "p": [
+      "Le serie TV vanno in onda ogni settimana a episodi; i film sono per il cinema.",
+      "OVA significa animazione originale per video, un tempo venduta direttamente in video.",
+      "Gli anime web e gli speciali escono online o come episodi extra."
+     ],
+     "q": "Preferisci una lunga serie o un film per una serata?",
+     "c": "Scrivi una serie e un film che conosci e quale formato li descrive meglio."
+    },
+    "pt": {
+     "t": "Séries, filmes e especiais",
+     "g": "Distingue séries de TV, filmes, OVAs e anime web.",
+     "p": [
+      "As séries de TV passam semanalmente em episódios; os filmes são feitos para o cinema.",
+      "OVA quer dizer animação original em vídeo, antes vendida diretamente em vídeo.",
+      "O anime web e os especiais saem online ou como episódios extra."
+     ],
+     "q": "Preferes uma série longa ou um filme numa noite?",
+     "c": "Anota uma série e um filme que conheças e que formato lhes assenta melhor."
+    },
+    "pt_BR": {
+     "t": "Séries, filmes e especiais",
+     "g": "Diferencie séries de TV, filmes, OVAs e anime web.",
+     "p": [
+      "As séries de TV passam semanalmente em episódios; os filmes são feitos para o cinema.",
+      "OVA quer dizer animação original em vídeo, antes vendida direto em vídeo.",
+      "O anime web e os especiais saem online ou como episódios extras."
+     ],
+     "q": "Você prefere uma série longa ou um filme numa noite?",
+     "c": "Anote uma série e um filme que você conhece e qual formato combina com cada um."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Episodes and seasons",
+     "g": "Understand cours and how anime seasons are scheduled in Japan.",
+     "p": [
+      "A cour is a block of about 12 to 13 episodes, roughly three months.",
+      "Japanese TV anime seasons start in winter, spring, summer and autumn.",
+      "Some shows run one cour, others two or more, or continue for years."
+     ],
+     "q": "Would you rather binge a short season or follow a show week by week?",
+     "c": "Count the episodes of a show you know and work out how many cours it has."
+    },
+    "de": {
+     "t": "Folgen und Staffeln",
+     "g": "Verstehe Cours und wie Anime-Saisons in Japan geplant werden.",
+     "p": [
+      "Ein Cour ist ein Block von etwa 12 bis 13 Folgen, grob drei Monate.",
+      "Japanische TV-Anime starten im Winter, Frühling, Sommer und Herbst.",
+      "Manche Serien laufen einen Cour, andere zwei oder mehr oder jahrelang."
+     ],
+     "q": "Schaust du lieber eine kurze Staffel am Stück oder Woche für Woche?",
+     "c": "Zähle die Folgen einer Serie, die du kennst, und berechne die Cours."
+    },
+    "es": {
+     "t": "Episodios y temporadas",
+     "g": "Entiende los cours y cómo se programan las temporadas de anime en Japón.",
+     "p": [
+      "Un cour es un bloque de unos 12 o 13 episodios, más o menos tres meses.",
+      "Las temporadas de anime en la TV japonesa empiezan en invierno, primavera, verano y otoño.",
+      "Algunas series duran un cour, otras dos o más, o siguen durante años."
+     ],
+     "q": "¿Prefieres ver una temporada corta de golpe o semana a semana?",
+     "c": "Cuenta los episodios de una serie que conozcas y calcula cuántos cours tiene."
+    },
+    "fr": {
+     "t": "Épisodes et saisons",
+     "g": "Comprends les cours et la programmation des saisons d'anime au Japon.",
+     "p": [
+      "Un cour est un bloc d'environ 12 à 13 épisodes, soit à peu près trois mois.",
+      "Les saisons d'anime à la TV japonaise débutent en hiver, printemps, été et automne.",
+      "Certaines séries durent un cour, d'autres deux ou plus, ou des années."
+     ],
+     "q": "Préfères-tu enchaîner une saison courte ou suivre une série chaque semaine ?",
+     "c": "Compte les épisodes d'une série connue et calcule combien de cours elle compte."
+    },
+    "it": {
+     "t": "Episodi e stagioni",
+     "g": "Capisci i cour e come si programmano le stagioni anime in Giappone.",
+     "p": [
+      "Un cour è un blocco di circa 12 o 13 episodi, più o meno tre mesi.",
+      "Le stagioni anime della TV giapponese iniziano in inverno, primavera, estate e autunno.",
+      "Alcune serie durano un cour, altre due o più, o vanno avanti per anni."
+     ],
+     "q": "Preferisci una stagione breve tutta insieme o settimana per settimana?",
+     "c": "Conta gli episodi di una serie che conosci e calcola quanti cour ha."
+    },
+    "pt": {
+     "t": "Episódios e temporadas",
+     "g": "Percebe os cours e como se programam as temporadas de anime no Japão.",
+     "p": [
+      "Um cour é um bloco de cerca de 12 ou 13 episódios, mais ou menos três meses.",
+      "As temporadas de anime na TV japonesa começam no inverno, primavera, verão e outono.",
+      "Algumas séries duram um cour, outras dois ou mais, ou continuam durante anos."
+     ],
+     "q": "Preferes ver uma temporada curta de seguida ou semana a semana?",
+     "c": "Conta os episódios de uma série que conheças e calcula quantos cours tem."
+    },
+    "pt_BR": {
+     "t": "Episódios e temporadas",
+     "g": "Entenda os cours e como as temporadas de anime são programadas no Japão.",
+     "p": [
+      "Um cour é um bloco de cerca de 12 ou 13 episódios, mais ou menos três meses.",
+      "As temporadas de anime na TV japonesa começam no inverno, primavera, verão e outono.",
+      "Algumas séries duram um cour, outras dois ou mais, ou seguem por anos."
+     ],
+     "q": "Você prefere maratonar uma temporada curta ou acompanhar semana a semana?",
+     "c": "Conte os episódios de uma série que você conhece e calcule quantos cours ela tem."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Opening and ending songs",
+     "g": "Find out why anime openings and endings are loved and what mood they set.",
+     "p": [
+      "The opening, or OP, usually plays at the start for about 90 seconds.",
+      "The ending, or ED, closes the episode and often has a calmer feel.",
+      "Songs are often by well-known artists and fans collect soundtracks."
+     ],
+     "q": "Which song from a show do you remember best, and how does it feel?",
+     "c": "Listen to one anime opening and sketch what its visuals make you imagine."
+    },
+    "de": {
+     "t": "Opening- und Ending-Songs",
+     "g": "Erfahre, warum Openings und Endings beliebt sind und welche Stimmung sie schaffen.",
+     "p": [
+      "Das Opening (OP) läuft meist am Anfang und dauert etwa 90 Sekunden.",
+      "Das Ending (ED) schließt die Folge ab und klingt oft ruhiger.",
+      "Die Lieder stammen oft von bekannten Künstlern; Fans sammeln Soundtracks."
+     ],
+     "q": "Welcher Song aus einer Serie ist dir am besten im Gedächtnis, und wie wirkt er?",
+     "c": "Hör dir ein Anime-Opening an und skizziere, was die Bilder in dir wecken."
+    },
+    "es": {
+     "t": "Openings y endings",
+     "g": "Descubre por qué gustan los openings y endings y qué ambiente crean.",
+     "p": [
+      "El opening (OP) suele sonar al principio y dura unos 90 segundos.",
+      "El ending (ED) cierra el episodio y suele tener un tono más tranquilo.",
+      "Las canciones suelen ser de artistas conocidos y los fans coleccionan bandas sonoras."
+     ],
+     "q": "¿Qué canción de una serie recuerdas mejor y cómo te hace sentir?",
+     "c": "Escucha un opening de anime y dibuja lo que te hacen imaginar sus imágenes."
+    },
+    "fr": {
+     "t": "Génériques de début et de fin",
+     "g": "Découvre pourquoi les openings et endings plaisent et quelle ambiance ils créent.",
+     "p": [
+      "L'opening (OP) passe en général au début et dure environ 90 secondes.",
+      "L'ending (ED) clôt l'épisode et a souvent une couleur plus calme.",
+      "Les chansons sont souvent d'artistes connus et les fans collectionnent les bandes originales."
+     ],
+     "q": "Quelle chanson d'une série te reste le mieux en tête, et que ressens-tu ?",
+     "c": "Écoute un opening d'anime et dessine ce que ses images te font imaginer."
+    },
+    "it": {
+     "t": "Sigle di apertura e chiusura",
+     "g": "Scopri perché opening ed ending piacciono e che atmosfera creano.",
+     "p": [
+      "L'opening (OP) di solito suona all'inizio e dura circa 90 secondi.",
+      "L'ending (ED) chiude l'episodio e ha spesso un tono più calmo.",
+      "Le canzoni sono spesso di artisti noti e i fan collezionano colonne sonore."
+     ],
+     "q": "Quale canzone di una serie ricordi meglio e che sensazione ti dà?",
+     "c": "Ascolta un opening di anime e disegna ciò che le immagini ti fanno immaginare."
+    },
+    "pt": {
+     "t": "Aberturas e encerramentos",
+     "g": "Descobre porque as aberturas e os encerramentos agradam e que ambiente criam.",
+     "p": [
+      "A abertura (OP) toca normalmente no início e dura cerca de 90 segundos.",
+      "O encerramento (ED) fecha o episódio e tem muitas vezes um tom mais calmo.",
+      "As canções são muitas vezes de artistas conhecidos e os fãs colecionam bandas sonoras."
+     ],
+     "q": "Que canção de uma série recordas melhor e como te faz sentir?",
+     "c": "Ouve uma abertura de anime e desenha o que as imagens te fazem imaginar."
+    },
+    "pt_BR": {
+     "t": "Aberturas e encerramentos",
+     "g": "Descubra por que as aberturas e os encerramentos agradam e que clima criam.",
+     "p": [
+      "A abertura (OP) costuma tocar no começo e dura cerca de 90 segundos.",
+      "O encerramento (ED) fecha o episódio e muitas vezes tem um tom mais calmo.",
+      "As músicas costumam ser de artistas conhecidos e os fãs colecionam trilhas sonoras."
+     ],
+     "q": "Qual música de uma série você lembra melhor e como ela faz você se sentir?",
+     "c": "Ouça uma abertura de anime e desenhe o que as imagens fazem você imaginar."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Recognising the anime art style",
+     "g": "Spot the visual signatures that make anime look like anime.",
+     "p": [
+      "Big expressive eyes carry emotion and are often drawn with shiny highlights.",
+      "Hair comes in bright colours that help tell characters apart quickly.",
+      "Clean outlines, flat colours and dramatic backgrounds are common."
+     ],
+     "q": "Which visual detail makes an anime stand out to you most?",
+     "c": "Draw a simple face with big eyes, colourful hair and one clear emotion."
+    },
+    "de": {
+     "t": "Den Anime-Stil erkennen",
+     "g": "Erkenne die visuellen Merkmale, die Anime wie Anime aussehen lassen.",
+     "p": [
+      "Große, ausdrucksstarke Augen tragen Gefühle und haben oft glänzende Lichtpunkte.",
+      "Haare in leuchtenden Farben helfen, Figuren schnell zu unterscheiden.",
+      "Klare Konturen, flache Farben und dramatische Hintergründe sind typisch."
+     ],
+     "q": "Welches visuelle Detail fällt dir bei einem Anime am meisten auf?",
+     "c": "Zeichne ein einfaches Gesicht mit großen Augen, bunten Haaren und einem Gefühl."
+    },
+    "es": {
+     "t": "Reconocer el estilo del anime",
+     "g": "Detecta las señas visuales que hacen que el anime parezca anime.",
+     "p": [
+      "Los ojos grandes y expresivos transmiten emoción y llevan brillos marcados.",
+      "Los cabellos de colores vivos ayudan a distinguir a los personajes de un vistazo.",
+      "Son habituales los contornos limpios, los colores planos y los fondos dramáticos."
+     ],
+     "q": "¿Qué detalle visual te llama más la atención de un anime?",
+     "c": "Dibuja una cara sencilla con ojos grandes, pelo de color y una emoción clara."
+    },
+    "fr": {
+     "t": "Reconnaître le style anime",
+     "g": "Repère les signes visuels qui font qu'un anime ressemble à un anime.",
+     "p": [
+      "Les grands yeux expressifs portent l'émotion et ont souvent des reflets brillants.",
+      "Les cheveux aux couleurs vives aident à distinguer vite les personnages.",
+      "Contours nets, aplats de couleur et décors dramatiques sont fréquents."
+     ],
+     "q": "Quel détail visuel te frappe le plus dans un anime ?",
+     "c": "Dessine un visage simple avec de grands yeux, des cheveux colorés et une émotion."
+    },
+    "it": {
+     "t": "Riconoscere lo stile anime",
+     "g": "Individua i segni visivi che fanno sembrare un anime davvero anime.",
+     "p": [
+      "Gli occhi grandi ed espressivi portano emozione e hanno spesso riflessi luminosi.",
+      "I capelli dai colori vivaci aiutano a distinguere subito i personaggi.",
+      "Contorni netti, colori piatti e sfondi drammatici sono comuni."
+     ],
+     "q": "Quale dettaglio visivo ti colpisce di più in un anime?",
+     "c": "Disegna un viso semplice con occhi grandi, capelli colorati e un'emozione chiara."
+    },
+    "pt": {
+     "t": "Reconhecer o estilo anime",
+     "g": "Identifica os sinais visuais que fazem o anime parecer anime.",
+     "p": [
+      "Olhos grandes e expressivos transmitem emoção e têm muitas vezes brilhos marcados.",
+      "Cabelos de cores vivas ajudam a distinguir as personagens num instante.",
+      "Contornos limpos, cores planas e fundos dramáticos são comuns."
+     ],
+     "q": "Que detalhe visual mais te chama a atenção num anime?",
+     "c": "Desenha um rosto simples com olhos grandes, cabelo colorido e uma emoção clara."
+    },
+    "pt_BR": {
+     "t": "Reconhecendo o estilo anime",
+     "g": "Identifique os sinais visuais que fazem o anime parecer anime.",
+     "p": [
+      "Olhos grandes e expressivos transmitem emoção e costumam ter brilhos marcados.",
+      "Cabelos de cores vivas ajudam a distinguir os personagens num instante.",
+      "Contornos limpos, cores chapadas e fundos dramáticos são comuns."
+     ],
+     "q": "Que detalhe visual mais chama sua atenção num anime?",
+     "c": "Desenhe um rosto simples com olhos grandes, cabelo colorido e uma emoção clara."
+    }
+   }
+  }
+ ]
+}

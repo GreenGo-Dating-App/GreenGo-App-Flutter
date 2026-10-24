@@ -1,0 +1,835 @@
+{
+ "topic": "theatre",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "When to clap",
+     "g": "Learn when applause fits best, and how customs differ from country to country.",
+     "p": [
+      "People usually clap after a song, after a great scene, at the end of each act and at the curtain call.",
+      "In opera, applause often comes after an aria; in a play, it is saved mostly for the end.",
+      "Customs vary: some audiences cheer loudly, others clap in rhythm or stay quiet until the very end."
+     ],
+     "q": "Do you clap loudly, cheer or stay quiet when you enjoy a performance?",
+     "c": "Today, practise a warm three-second round of applause for something good you saw or heard."
+    },
+    "de": {
+     "t": "Wann man klatscht",
+     "g": "Lerne, wann Applaus passt und wie die Bräuche von Land zu Land unterschiedlich sind.",
+     "p": [
+      "Meist klatscht man nach einem Lied, nach einer großartigen Szene, am Aktschluss und beim Schlussapplaus.",
+      "In der Oper kommt Beifall oft nach einer Arie; im Schauspiel wartet man meist bis zum Ende.",
+      "Die Sitten sind verschieden: Mancherorts jubelt man laut, anderswo klatscht man im Takt oder bleibt bis zum Schluss still."
+     ],
+     "q": "Klatschst du laut, jubelst du oder bleibst du ruhig, wenn dir eine Aufführung gefällt?",
+     "c": "Übe heute drei Sekunden warmen Applaus für etwas Schönes, das du gesehen oder gehört hast."
+    },
+    "es": {
+     "t": "Cuándo aplaudir",
+     "g": "Aprende cuándo encaja el aplauso y cómo cambian las costumbres de un país a otro.",
+     "p": [
+      "Se suele aplaudir tras una canción, una gran escena, al final de cada acto y en la reverencia final.",
+      "En la ópera el aplauso llega a menudo tras un aria; en una obra se guarda sobre todo para el final.",
+      "Las costumbres varían: algunos públicos vitorean, otros aplauden al ritmo o callan hasta el final."
+     ],
+     "q": "¿Aplaudes fuerte, vitoreas o te quedas callado cuando disfrutas de una función?",
+     "c": "Hoy practica tres segundos de aplauso cálido por algo bueno que hayas visto u oído."
+    },
+    "fr": {
+     "t": "Quand applaudir",
+     "g": "Apprends quand l'applaudissement est de mise et comment les coutumes changent d'un pays à l'autre.",
+     "p": [
+      "On applaudit en général après une chanson, une belle scène, à la fin de chaque acte et au salut final.",
+      "À l'opéra, les applaudissements viennent souvent après un air; dans une pièce, on les garde surtout pour la fin.",
+      "Les coutumes varient : certains publics acclament, d'autres applaudissent en rythme ou se taisent jusqu'au bout."
+     ],
+     "q": "Applaudis-tu fort, acclames-tu ou restes-tu discret quand un spectacle te plaît ?",
+     "c": "Aujourd'hui, offre trois secondes d'applaudissements chaleureux à quelque chose de beau vu ou entendu."
+    },
+    "it": {
+     "t": "Quando applaudire",
+     "g": "Impara quando l'applauso è adatto e come cambiano le usanze da un paese all'altro.",
+     "p": [
+      "Di solito si applaude dopo una canzone, dopo una scena riuscita, a fine atto e agli inchini finali.",
+      "Nell'opera l'applauso arriva spesso dopo un'aria; in una commedia lo si riserva soprattutto alla fine.",
+      "Le usanze variano: alcuni pubblici acclamano, altri applaudono a ritmo o tacciono fino alla fine."
+     ],
+     "q": "Applaudi forte, acclami o resti in silenzio quando uno spettacolo ti piace?",
+     "c": "Oggi esercitati con tre secondi di applauso caloroso per qualcosa di bello che hai visto o sentito."
+    },
+    "pt": {
+     "t": "Quando aplaudir",
+     "g": "Aprende quando o aplauso cai bem e como os costumes mudam de país para país.",
+     "p": [
+      "Costuma aplaudir-se depois de uma canção, de uma grande cena, no fim de cada ato e na vénia final.",
+      "Na ópera o aplauso surge muitas vezes depois de uma ária; numa peça guarda-se sobretudo para o fim.",
+      "Os costumes variam: há públicos que aclamam, outros aplaudem ao ritmo ou calam-se até ao fim."
+     ],
+     "q": "Aplaudes com força, aclamas ou ficas calado quando gostas de um espetáculo?",
+     "c": "Hoje pratica três segundos de aplauso caloroso por algo bom que viste ou ouviste."
+    },
+    "pt_BR": {
+     "t": "Quando aplaudir",
+     "g": "Aprenda quando o aplauso cai bem e como os costumes mudam de país para país.",
+     "p": [
+      "Costuma-se aplaudir depois de uma canção, de uma grande cena, no fim de cada ato e na reverência final.",
+      "Na ópera o aplauso vem muitas vezes depois de uma ária; numa peça guarda-se sobretudo para o fim.",
+      "Os costumes variam: há plateias que aclamam, outras aplaudem no ritmo ou ficam em silêncio até o fim."
+     ],
+     "q": "Você aplaude forte, aclama ou fica quieto quando gosta de um espetáculo?",
+     "c": "Hoje pratique três segundos de aplauso caloroso por algo bom que você viu ou ouviu."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The interval",
+     "g": "Understand why the break exists and how to enjoy it with friends and a good chat.",
+     "p": [
+      "Intervals let performers rest, crews change scenes and the audience stretch, snack and chat.",
+      "Many theatres sell drinks and ice cream in the break, and you can order them before the show.",
+      "It is the perfect moment to share first impressions and guess what happens in the second half."
+     ],
+     "q": "What would you talk about with a friend during the interval of a show you liked?",
+     "c": "Today, make a guess about how a favourite film or story ends, and share it with someone."
+    },
+    "de": {
+     "t": "Die Pause",
+     "g": "Verstehe, warum es die Pause gibt und wie du sie mit Freunden und einem guten Gespräch genießt.",
+     "p": [
+      "In der Pause ruhen sich Darsteller aus, die Crew baut um und das Publikum streckt sich, isst und plaudert.",
+      "Viele Theater verkaufen in der Pause Getränke und Eis, und man kann sie vorab bestellen.",
+      "Es ist der ideale Moment, erste Eindrücke zu teilen und zu raten, was in der zweiten Hälfte passiert."
+     ],
+     "q": "Worüber würdest du in der Pause mit einem Freund bei einer Show sprechen, die dir gefällt?",
+     "c": "Rate heute, wie ein Lieblingsfilm oder eine Lieblingsgeschichte endet, und teile es mit jemandem."
+    },
+    "es": {
+     "t": "El descanso",
+     "g": "Entiende por qué existe la pausa y cómo disfrutarla con amigos y una buena charla.",
+     "p": [
+      "Los descansos permiten que los artistas reposen, el equipo cambie escenas y el público estire las piernas, pique y charle.",
+      "Muchos teatros venden bebidas y helados en el descanso, y se pueden pedir antes de la función.",
+      "Es el momento perfecto para compartir primeras impresiones y adivinar qué pasará en la segunda parte."
+     ],
+     "q": "¿De qué hablarías con un amigo en el descanso de un espectáculo que te gusta?",
+     "c": "Hoy adivina cómo termina una película o historia favorita y compártelo con alguien."
+    },
+    "fr": {
+     "t": "L'entracte",
+     "g": "Comprends pourquoi l'entracte existe et comment en profiter avec des amis et une bonne discussion.",
+     "p": [
+      "L'entracte permet aux artistes de souffler, à l'équipe de changer le décor et au public de se dégourdir, grignoter et bavarder.",
+      "Beaucoup de théâtres vendent boissons et glaces à l'entracte, et on peut les commander avant le spectacle.",
+      "C'est le moment idéal pour partager ses premières impressions et deviner la suite."
+     ],
+     "q": "De quoi parlerais-tu avec un ami pendant l'entracte d'un spectacle que tu aimes ?",
+     "c": "Aujourd'hui, devine comment finit un film ou une histoire que tu aimes et partage-le avec quelqu'un."
+    },
+    "it": {
+     "t": "L'intervallo",
+     "g": "Capisci perché esiste la pausa e come godertela con amici e una bella chiacchierata.",
+     "p": [
+      "L'intervallo permette agli artisti di riposare, alla squadra di cambiare scena e al pubblico di sgranchirsi, mangiare e chiacchierare.",
+      "Molti teatri vendono bevande e gelati nell'intervallo, e si possono ordinare prima dello spettacolo.",
+      "È il momento ideale per condividere le prime impressioni e indovinare cosa succederà nel secondo tempo."
+     ],
+     "q": "Di cosa parleresti con un amico durante l'intervallo di uno spettacolo che ti piace?",
+     "c": "Oggi indovina come finisce un film o una storia che ami e condividilo con qualcuno."
+    },
+    "pt": {
+     "t": "O intervalo",
+     "g": "Percebe porque existe a pausa e como aproveitá-la com amigos e uma boa conversa.",
+     "p": [
+      "O intervalo deixa os artistas descansar, a equipa mudar cenários e o público esticar as pernas, petiscar e conversar.",
+      "Muitos teatros vendem bebidas e gelados no intervalo, e podem pedir-se antes do espetáculo.",
+      "É o momento ideal para partilhar primeiras impressões e adivinhar o que acontece na segunda parte."
+     ],
+     "q": "De que falarias com um amigo no intervalo de um espetáculo de que gostas?",
+     "c": "Hoje adivinha como acaba um filme ou história favorita e partilha com alguém."
+    },
+    "pt_BR": {
+     "t": "O intervalo",
+     "g": "Entenda por que a pausa existe e como aproveitá-la com amigos e uma boa conversa.",
+     "p": [
+      "O intervalo deixa os artistas descansarem, a equipe trocar cenários e a plateia esticar as pernas, lanchar e conversar.",
+      "Muitos teatros vendem bebidas e sorvetes no intervalo, e dá para pedir antes do espetáculo.",
+      "É o momento ideal para compartilhar as primeiras impressões e adivinhar o que acontece no segundo ato."
+     ],
+     "q": "Do que você falaria com um amigo no intervalo de um espetáculo que você curte?",
+     "c": "Hoje adivinhe como termina um filme ou história favorita e compartilhe com alguém."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tragedy and comedy",
+     "g": "Meet the two oldest dramatic genres and their famous smiling and sad masks.",
+     "p": [
+      "Tragedy aims to move us with serious stories about big choices and their consequences.",
+      "Comedy aims to make us laugh with mix-ups, clever tricks and happy endings.",
+      "The pair of masks, one smiling and one sad, has long been the symbol of theatre itself."
+     ],
+     "q": "Do you prefer a play that makes you laugh, one that moves you, or a mix of both?",
+     "c": "Today, draw or imagine one smiling and one sad mask, and invent a name for each."
+    },
+    "de": {
+     "t": "Tragödie und Komödie",
+     "g": "Lerne die zwei ältesten Dramengattungen und ihre berühmten lachenden und traurigen Masken kennen.",
+     "p": [
+      "Die Tragödie will mit ernsten Geschichten über große Entscheidungen und ihre Folgen berühren.",
+      "Die Komödie will mit Verwechslungen, cleveren Tricks und Happy Ends zum Lachen bringen.",
+      "Das Maskenpaar, eine lachende und eine traurige, ist längst das Symbol des Theaters selbst."
+     ],
+     "q": "Magst du lieber ein Stück zum Lachen, eines zum Berühren oder eine Mischung aus beidem?",
+     "c": "Zeichne oder stelle dir heute eine lachende und eine traurige Maske vor und erfinde je einen Namen."
+    },
+    "es": {
+     "t": "Tragedia y comedia",
+     "g": "Conoce los dos géneros dramáticos más antiguos y sus famosas máscaras, una risueña y otra triste.",
+     "p": [
+      "La tragedia busca conmover con historias serias sobre grandes decisiones y sus consecuencias.",
+      "La comedia busca hacernos reír con enredos, trucos ingeniosos y finales felices.",
+      "El par de máscaras, una sonriente y otra triste, es desde hace mucho el símbolo del teatro."
+     ],
+     "q": "¿Prefieres una obra que te haga reír, una que te conmueva o una mezcla de ambas?",
+     "c": "Hoy dibuja o imagina una máscara risueña y otra triste, e inventa un nombre para cada una."
+    },
+    "fr": {
+     "t": "Tragédie et comédie",
+     "g": "Découvre les deux plus anciens genres dramatiques et leurs célèbres masques, l'un rieur, l'autre triste.",
+     "p": [
+      "La tragédie cherche à émouvoir avec des histoires sérieuses sur de grands choix et leurs conséquences.",
+      "La comédie cherche à faire rire avec des quiproquos, des ruses et des fins heureuses.",
+      "La paire de masques, l'un souriant, l'autre triste, est depuis longtemps le symbole du théâtre."
+     ],
+     "q": "Préfères-tu une pièce qui fait rire, une qui touche, ou un mélange des deux ?",
+     "c": "Aujourd'hui, dessine ou imagine un masque souriant et un masque triste, et invente un nom pour chacun."
+    },
+    "it": {
+     "t": "Tragedia e commedia",
+     "g": "Incontra i due generi drammatici più antichi e le loro celebri maschere, una sorridente e una triste.",
+     "p": [
+      "La tragedia vuole commuovere con storie serie su grandi scelte e le loro conseguenze.",
+      "La commedia vuole far ridere con equivoci, trucchi ingegnosi e lieto fine.",
+      "La coppia di maschere, una sorridente e una triste, è da tempo il simbolo stesso del teatro."
+     ],
+     "q": "Preferisci uno spettacolo che fa ridere, uno che commuove o un misto dei due?",
+     "c": "Oggi disegna o immagina una maschera sorridente e una triste e inventa un nome per ciascuna."
+    },
+    "pt": {
+     "t": "Tragédia e comédia",
+     "g": "Conhece os dois géneros dramáticos mais antigos e as suas famosas máscaras, uma sorridente e outra triste.",
+     "p": [
+      "A tragédia procura comover com histórias sérias sobre grandes escolhas e as suas consequências.",
+      "A comédia procura fazer-nos rir com confusões, truques engenhosos e finais felizes.",
+      "O par de máscaras, uma sorridente e outra triste, é há muito o símbolo do teatro."
+     ],
+     "q": "Preferes uma peça que faz rir, uma que comove ou uma mistura das duas?",
+     "c": "Hoje desenha ou imagina uma máscara sorridente e outra triste e inventa um nome para cada uma."
+    },
+    "pt_BR": {
+     "t": "Tragédia e comédia",
+     "g": "Conheça os dois gêneros dramáticos mais antigos e suas famosas máscaras, uma sorridente e outra triste.",
+     "p": [
+      "A tragédia procura comover com histórias sérias sobre grandes escolhas e suas consequências.",
+      "A comédia procura nos fazer rir com confusões, truques engenhosos e finais felizes.",
+      "O par de máscaras, uma sorridente e outra triste, é há muito o símbolo do teatro."
+     ],
+     "q": "Você prefere uma peça que faz rir, uma que comove ou uma mistura das duas?",
+     "c": "Hoje desenhe ou imagine uma máscara sorridente e outra triste e invente um nome para cada uma."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What a script looks like",
+     "g": "Learn to read the page a play is written on, from names to dialogue.",
+     "p": [
+      "A character's name appears in the margin or in capitals, followed by the words they speak.",
+      "Stage directions describe actions, places and moods, usually in italics or brackets.",
+      "Scripts are blueprints: each company reads the same page and builds a different show."
+     ],
+     "q": "Have you ever read a play script, or only watched plays and films?",
+     "c": "Today, write four lines of dialogue between two characters in script format, with names first."
+    },
+    "de": {
+     "t": "Wie ein Skript aussieht",
+     "g": "Lerne, die Seite zu lesen, auf der ein Stück geschrieben ist, von den Namen bis zum Dialog.",
+     "p": [
+      "Der Name der Figur steht am Rand oder in Großbuchstaben, danach folgen ihre Worte.",
+      "Regieanweisungen beschreiben Handlungen, Orte und Stimmungen, meist kursiv oder in Klammern.",
+      "Skripte sind Baupläne: Jede Truppe liest dieselbe Seite und baut eine andere Show."
+     ],
+     "q": "Hast du schon einmal ein Theaterstück gelesen oder nur gesehen?",
+     "c": "Schreibe heute vier Dialogzeilen zwischen zwei Figuren im Skriptformat, Namen zuerst."
+    },
+    "es": {
+     "t": "Cómo es un guion",
+     "g": "Aprende a leer la página en que se escribe una obra, desde los nombres hasta el diálogo.",
+     "p": [
+      "El nombre del personaje aparece en el margen o en mayúsculas, seguido de lo que dice.",
+      "Las acotaciones describen acciones, lugares y ánimos, normalmente en cursiva o entre paréntesis.",
+      "Los guiones son planos: cada compañía lee la misma página y construye un espectáculo distinto."
+     ],
+     "q": "¿Has leído alguna vez el texto de una obra, o solo las has visto en escena o en cine?",
+     "c": "Hoy escribe cuatro líneas de diálogo entre dos personajes en formato de guion, con el nombre primero."
+    },
+    "fr": {
+     "t": "À quoi ressemble un texte de théâtre",
+     "g": "Apprends à lire la page sur laquelle une pièce est écrite, des noms au dialogue.",
+     "p": [
+      "Le nom du personnage apparaît dans la marge ou en majuscules, suivi de ses paroles.",
+      "Les didascalies décrivent actions, lieux et ambiances, souvent en italique ou entre parenthèses.",
+      "Un texte est un plan : chaque troupe lit la même page et construit un spectacle différent."
+     ],
+     "q": "As-tu déjà lu le texte d'une pièce, ou seulement vu des pièces et des films ?",
+     "c": "Aujourd'hui, écris quatre répliques entre deux personnages au format théâtre, avec le nom d'abord."
+    },
+    "it": {
+     "t": "Com'è fatto un copione",
+     "g": "Impara a leggere la pagina su cui è scritto un testo teatrale, dai nomi ai dialoghi.",
+     "p": [
+      "Il nome del personaggio appare a margine o in maiuscolo, seguito dalle sue battute.",
+      "Le didascalie descrivono azioni, luoghi e stati d'animo, di solito in corsivo o tra parentesi.",
+      "I copioni sono progetti: ogni compagnia legge la stessa pagina e costruisce uno spettacolo diverso."
+     ],
+     "q": "Hai mai letto il copione di un'opera, o hai solo visto spettacoli e film?",
+     "c": "Oggi scrivi quattro battute di dialogo tra due personaggi in formato copione, con il nome prima."
+    },
+    "pt": {
+     "t": "Como é um guião",
+     "g": "Aprende a ler a página em que uma peça é escrita, dos nomes ao diálogo.",
+     "p": [
+      "O nome da personagem aparece na margem ou em maiúsculas, seguido do que ela diz.",
+      "As didascálias descrevem ações, lugares e ambientes, geralmente em itálico ou entre parênteses.",
+      "Os guiões são plantas: cada companhia lê a mesma página e constrói um espetáculo diferente."
+     ],
+     "q": "Já leste o texto de uma peça, ou só viste peças e filmes?",
+     "c": "Hoje escreve quatro falas de diálogo entre duas personagens em formato de guião, com o nome primeiro."
+    },
+    "pt_BR": {
+     "t": "Como é um roteiro",
+     "g": "Aprenda a ler a página em que uma peça é escrita, dos nomes ao diálogo.",
+     "p": [
+      "O nome do personagem aparece na margem ou em maiúsculas, seguido do que ele diz.",
+      "As rubricas descrevem ações, lugares e climas, geralmente em itálico ou entre parênteses.",
+      "Os textos são plantas: cada companhia lê a mesma página e constrói um espetáculo diferente."
+     ],
+     "q": "Você já leu o texto de uma peça, ou só assistiu a peças e filmes?",
+     "c": "Hoje escreva quatro falas de diálogo entre dois personagens em formato de roteiro, com o nome primeiro."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Acts and scenes",
+     "g": "See how plays are divided into acts and scenes, and why a scene change shifts time or place.",
+     "p": [
+      "An act is a large part of a play, often ending with a turning point or a small cliffhanger.",
+      "A scene is a smaller unit, usually in one place and time, and changes when characters or settings change.",
+      "Lights fading, a curtain or a new set tells the audience that time or place has jumped."
+     ],
+     "q": "How would you split your day into three acts and give each a title?",
+     "c": "Today, divide your day into three acts, name them, and tell someone the story."
+    },
+    "de": {
+     "t": "Akte und Szenen",
+     "g": "Sieh, wie Stücke in Akte und Szenen gegliedert sind und warum ein Szenenwechsel Zeit oder Ort verschiebt.",
+     "p": [
+      "Ein Akt ist ein großer Teil eines Stücks und endet oft mit einem Wendepunkt oder kleinen Cliffhanger.",
+      "Eine Szene ist kleiner, meist an einem Ort und in einer Zeit, und wechselt, wenn Figuren oder Schauplatz wechseln.",
+      "Verblassendes Licht, ein Vorhang oder ein neues Bühnenbild zeigen, dass Zeit oder Ort gesprungen sind."
+     ],
+     "q": "Wie würdest du deinen Tag in drei Akte teilen und jedem einen Titel geben?",
+     "c": "Teile heute deinen Tag in drei Akte, gib ihnen Namen und erzähle jemandem die Geschichte."
+    },
+    "es": {
+     "t": "Actos y escenas",
+     "g": "Mira cómo se dividen las obras en actos y escenas y por qué un cambio de escena salta en el tiempo o el lugar.",
+     "p": [
+      "Un acto es una gran parte de una obra y suele acabar con un giro o un pequeño suspense.",
+      "Una escena es una unidad menor, normalmente en un lugar y un momento, y cambia cuando cambian personajes o ambiente.",
+      "Luces que bajan, un telón o una nueva escenografía indican que el tiempo o el lugar han saltado."
+     ],
+     "q": "¿Cómo dividirías tu día en tres actos y qué título pondrías a cada uno?",
+     "c": "Hoy divide tu día en tres actos, ponles nombre y cuéntale la historia a alguien."
+    },
+    "fr": {
+     "t": "Actes et scènes",
+     "g": "Vois comment les pièces se découpent en actes et en scènes, et pourquoi un changement de scène déplace le temps ou le lieu.",
+     "p": [
+      "Un acte est une grande partie de la pièce, souvent clos par un tournant ou un petit suspense.",
+      "Une scène est une unité plus petite, en général en un lieu et un temps, qui change quand personnages ou décor changent.",
+      "Les lumières qui baissent, un rideau ou un nouveau décor signalent un saut dans le temps ou le lieu."
+     ],
+     "q": "Comment découperais-tu ta journée en trois actes, avec un titre pour chacun ?",
+     "c": "Aujourd'hui, découpe ta journée en trois actes, nomme-les et raconte l'histoire à quelqu'un."
+    },
+    "it": {
+     "t": "Atti e scene",
+     "g": "Scopri come le opere si dividono in atti e scene e perché un cambio di scena sposta tempo o luogo.",
+     "p": [
+      "Un atto è una grande parte dell'opera e spesso termina con una svolta o un piccolo suspense.",
+      "Una scena è un'unità più piccola, di solito in un luogo e un tempo, e cambia quando cambiano personaggi o ambiente.",
+      "Luci che calano, un sipario o una nuova scenografia dicono che il tempo o il luogo sono cambiati."
+     ],
+     "q": "Come divideresti la tua giornata in tre atti, dando un titolo a ciascuno?",
+     "c": "Oggi dividi la tua giornata in tre atti, dai loro un nome e racconta la storia a qualcuno."
+    },
+    "pt": {
+     "t": "Atos e cenas",
+     "g": "Vê como as peças se dividem em atos e cenas e porque é que uma mudança de cena salta no tempo ou no lugar.",
+     "p": [
+      "Um ato é uma grande parte de uma peça e costuma acabar com uma viragem ou um pequeno suspense.",
+      "Uma cena é uma unidade menor, normalmente num lugar e num momento, e muda quando mudam as personagens ou o cenário.",
+      "Luzes que descem, um pano ou um novo cenário mostram que o tempo ou o lugar saltaram."
+     ],
+     "q": "Como dividirias o teu dia em três atos, com um título para cada um?",
+     "c": "Hoje divide o teu dia em três atos, dá-lhes nome e conta a história a alguém."
+    },
+    "pt_BR": {
+     "t": "Atos e cenas",
+     "g": "Veja como as peças se dividem em atos e cenas e por que uma mudança de cena salta no tempo ou no lugar.",
+     "p": [
+      "Um ato é uma grande parte de uma peça e costuma terminar com uma virada ou um pequeno suspense.",
+      "Uma cena é uma unidade menor, normalmente num lugar e num momento, e muda quando mudam os personagens ou o cenário.",
+      "Luzes que descem, uma cortina ou um novo cenário mostram que o tempo ou o lugar saltaram."
+     ],
+     "q": "Como você dividiria seu dia em três atos, com um título para cada um?",
+     "c": "Hoje divida seu dia em três atos, dê nomes a eles e conte a história para alguém."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Stage directions",
+     "g": "Learn how the italic notes in a script guide actors, and how directors read them freely.",
+     "p": [
+      "Stage directions can tell an actor to enter, cross the room, whisper or pause.",
+      "Some playwrights write many directions, others almost none and leave choices to the company.",
+      "Directors may follow them closely or reimagine them, so the same play can look very different."
+     ],
+     "q": "If you wrote a stage direction for your morning, what would it say?",
+     "c": "Today, write three stage directions for a simple action like making tea, then act them out."
+    },
+    "de": {
+     "t": "Regieanweisungen",
+     "g": "Lerne, wie die kursiven Hinweise im Skript Schauspieler leiten und wie Regisseure sie frei lesen.",
+     "p": [
+      "Regieanweisungen können sagen, dass ein Schauspieler auftritt, durch den Raum geht, flüstert oder innehält.",
+      "Manche Autoren schreiben viele Anweisungen, andere fast keine und überlassen die Wahl dem Ensemble.",
+      "Regisseure folgen ihnen genau oder deuten sie neu, daher kann dasselbe Stück ganz anders aussehen."
+     ],
+     "q": "Wenn du eine Regieanweisung für deinen Morgen schriebest, was stünde darin?",
+     "c": "Schreibe heute drei Regieanweisungen für etwas Einfaches wie Teekochen und spiele sie nach."
+    },
+    "es": {
+     "t": "Acotaciones",
+     "g": "Aprende cómo las notas en cursiva de un guion guían a los actores y cómo los directores las leen con libertad.",
+     "p": [
+      "Una acotación puede indicar al actor que entre, cruce la sala, susurre o haga una pausa.",
+      "Algunos autores escriben muchas acotaciones, otros casi ninguna y dejan las decisiones a la compañía.",
+      "Los directores pueden seguirlas al pie o reinventarlas, así que una misma obra puede verse muy distinta."
+     ],
+     "q": "Si escribieras una acotación para tu mañana, ¿qué diría?",
+     "c": "Hoy escribe tres acotaciones para una acción simple como hacer té y represéntalas."
+    },
+    "fr": {
+     "t": "Les didascalies",
+     "g": "Apprends comment les notes en italique d'un texte guident les acteurs et comment les metteurs en scène les lisent librement.",
+     "p": [
+      "Une didascalie peut indiquer à l'acteur d'entrer, de traverser la pièce, de chuchoter ou de marquer une pause.",
+      "Certains auteurs en écrivent beaucoup, d'autres presque aucune et laissent le choix à la troupe.",
+      "Les metteurs en scène les suivent de près ou les réinventent, si bien qu'une même pièce peut sembler très différente."
+     ],
+     "q": "Si tu écrivais une didascalie pour ta matinée, que dirait-elle ?",
+     "c": "Aujourd'hui, écris trois didascalies pour un geste simple comme préparer du thé, puis joue-les."
+    },
+    "it": {
+     "t": "Le didascalie",
+     "g": "Impara come le note in corsivo di un copione guidano gli attori e come i registi le leggono liberamente.",
+     "p": [
+      "Una didascalia può dire all'attore di entrare, attraversare la stanza, sussurrare o fare una pausa.",
+      "Alcuni autori ne scrivono molte, altri quasi nessuna e lasciano la scelta alla compagnia.",
+      "I registi possono seguirle alla lettera o reinventarle, così lo stesso testo può apparire molto diverso."
+     ],
+     "q": "Se scrivessi una didascalia per la tua mattina, cosa direbbe?",
+     "c": "Oggi scrivi tre didascalie per un gesto semplice come preparare il tè e poi recitale."
+    },
+    "pt": {
+     "t": "As didascálias",
+     "g": "Aprende como as notas em itálico de um texto guiam os atores e como os encenadores as leem com liberdade.",
+     "p": [
+      "Uma didascália pode indicar ao ator que entre, atravesse a sala, sussurre ou faça uma pausa.",
+      "Alguns autores escrevem muitas, outros quase nenhuma e deixam a escolha à companhia.",
+      "Os encenadores podem segui-las à letra ou reinventá-las, e uma mesma peça pode parecer muito diferente."
+     ],
+     "q": "Se escrevesses uma didascália para a tua manhã, o que diria?",
+     "c": "Hoje escreve três didascálias para uma ação simples como fazer chá e representa-as."
+    },
+    "pt_BR": {
+     "t": "As rubricas",
+     "g": "Aprenda como as notas em itálico de um texto guiam os atores e como os diretores as leem com liberdade.",
+     "p": [
+      "Uma rubrica pode indicar ao ator que entre, atravesse a sala, sussurre ou faça uma pausa.",
+      "Alguns autores escrevem muitas, outros quase nenhuma e deixam a escolha para a companhia.",
+      "Os diretores podem segui-las à risca ou reinventá-las, e uma mesma peça pode parecer muito diferente."
+     ],
+     "q": "Se você escrevesse uma rubrica para a sua manhã, o que ela diria?",
+     "c": "Hoje escreva três rubricas para uma ação simples como fazer chá e interprete-as."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Monologue, dialogue, soliloquy",
+     "g": "Tell apart three basic ways characters speak on stage: alone, together and aloud to themselves.",
+     "p": [
+      "A dialogue is a conversation between two or more characters, the engine of most scenes.",
+      "A monologue is a long speech by one character, often addressed to others on stage or to the audience.",
+      "A soliloquy lets a character think aloud while alone, sharing secret thoughts with us."
+     ],
+     "q": "Which would you rather perform: a dialogue, a monologue or a soliloquy?",
+     "c": "Today, speak a thirty-second monologue about your favourite place, as if to a full theatre."
+    },
+    "de": {
+     "t": "Monolog, Dialog, Selbstgespräch",
+     "g": "Unterscheide drei Grundformen, wie Figuren auf der Bühne sprechen: allein, gemeinsam und laut zu sich selbst.",
+     "p": [
+      "Ein Dialog ist ein Gespräch zwischen zwei oder mehr Figuren, der Motor der meisten Szenen.",
+      "Ein Monolog ist eine lange Rede einer Figur, oft an andere auf der Bühne oder an das Publikum gerichtet.",
+      "Beim Selbstgespräch denkt eine Figur allein laut nach und teilt uns geheime Gedanken mit."
+     ],
+     "q": "Was würdest du lieber spielen: einen Dialog, einen Monolog oder ein Selbstgespräch?",
+     "c": "Halte heute einen dreißigsekündigen Monolog über deinen Lieblingsort, als stünde ein volles Theater vor dir."
+    },
+    "es": {
+     "t": "Monólogo, diálogo, soliloquio",
+     "g": "Distingue tres formas básicas de hablar en escena: a solas, en conjunto y en voz alta consigo mismo.",
+     "p": [
+      "Un diálogo es una conversación entre dos o más personajes, el motor de casi todas las escenas.",
+      "Un monólogo es un discurso largo de un personaje, dirigido a otros en escena o al público.",
+      "Un soliloquio deja que un personaje piense en voz alta a solas y comparta pensamientos secretos con nosotros."
+     ],
+     "q": "¿Qué preferirías interpretar: un diálogo, un monólogo o un soliloquio?",
+     "c": "Hoy di un monólogo de treinta segundos sobre tu lugar favorito, como ante un teatro lleno."
+    },
+    "fr": {
+     "t": "Monologue, dialogue, soliloque",
+     "g": "Distingue trois façons de parler sur scène : seul, à plusieurs et à voix haute pour soi-même.",
+     "p": [
+      "Un dialogue est une conversation entre deux personnages ou plus, le moteur de la plupart des scènes.",
+      "Un monologue est un long discours d'un personnage, adressé à d'autres sur scène ou au public.",
+      "Un soliloque laisse un personnage penser tout haut, seul, et nous confier ses pensées secrètes."
+     ],
+     "q": "Que préférerais-tu jouer : un dialogue, un monologue ou un soliloque ?",
+     "c": "Aujourd'hui, dis un monologue de trente secondes sur ton lieu préféré, comme devant une salle comble."
+    },
+    "it": {
+     "t": "Monologo, dialogo, soliloquio",
+     "g": "Distingui tre modi base di parlare in scena: da soli, insieme e ad alta voce con se stessi.",
+     "p": [
+      "Un dialogo è una conversazione tra due o più personaggi, il motore della maggior parte delle scene.",
+      "Un monologo è un lungo discorso di un personaggio, rivolto ad altri in scena o al pubblico.",
+      "Un soliloquio lascia un personaggio pensare ad alta voce, da solo, condividendo con noi pensieri segreti."
+     ],
+     "q": "Cosa preferiresti recitare: un dialogo, un monologo o un soliloquio?",
+     "c": "Oggi pronuncia un monologo di trenta secondi sul tuo posto preferito, come davanti a un teatro pieno."
+    },
+    "pt": {
+     "t": "Monólogo, diálogo, solilóquio",
+     "g": "Distingue três formas básicas de falar em cena: sozinho, em conjunto e em voz alta consigo mesmo.",
+     "p": [
+      "Um diálogo é uma conversa entre duas ou mais personagens, o motor da maioria das cenas.",
+      "Um monólogo é um discurso longo de uma personagem, dirigido a outros em cena ou ao público.",
+      "Um solilóquio deixa uma personagem pensar em voz alta, sozinha, e partilhar connosco pensamentos secretos."
+     ],
+     "q": "O que preferirias interpretar: um diálogo, um monólogo ou um solilóquio?",
+     "c": "Hoje diz um monólogo de trinta segundos sobre o teu sítio favorito, como diante de um teatro cheio."
+    },
+    "pt_BR": {
+     "t": "Monólogo, diálogo, solilóquio",
+     "g": "Distinga três formas básicas de falar em cena: sozinho, em conjunto e em voz alta consigo mesmo.",
+     "p": [
+      "Um diálogo é uma conversa entre dois ou mais personagens, o motor da maioria das cenas.",
+      "Um monólogo é um discurso longo de um personagem, dirigido a outros em cena ou à plateia.",
+      "Um solilóquio deixa um personagem pensar em voz alta, sozinho, e compartilhar conosco pensamentos secretos."
+     ],
+     "q": "O que você preferiria interpretar: um diálogo, um monólogo ou um solilóquio?",
+     "c": "Hoje diga um monólogo de trinta segundos sobre seu lugar favorito, como diante de um teatro lotado."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The fourth wall",
+     "g": "Understand the invisible wall between stage and audience and the fun of breaking it.",
+     "p": [
+      "Most plays pretend a wall stands where the audience sits, so characters act as if unobserved.",
+      "Breaking the fourth wall means speaking or looking straight at the audience, which feels playful and close.",
+      "Pantomime, comedy and many modern plays do this to invite us into the joke or the story."
+     ],
+     "q": "Have you seen a performer speak straight to the audience, and how did it feel?",
+     "c": "Today, tell a short anecdote while looking straight at a friend, as if they were the audience."
+    },
+    "de": {
+     "t": "Die vierte Wand",
+     "g": "Verstehe die unsichtbare Wand zwischen Bühne und Publikum und den Spaß, sie zu durchbrechen.",
+     "p": [
+      "Die meisten Stücke tun so, als stünde dort, wo das Publikum sitzt, eine Wand, und Figuren handeln unbeobachtet.",
+      "Die vierte Wand zu durchbrechen heißt, direkt zum Publikum zu sprechen oder zu blicken, was spielerisch und nah wirkt.",
+      "Pantomime, Komödie und viele moderne Stücke tun das, um uns in den Witz oder die Geschichte einzuladen."
+     ],
+     "q": "Hast du gesehen, wie ein Darsteller direkt zum Publikum sprach, und wie war das?",
+     "c": "Erzähle heute eine kurze Anekdote und schau dabei einem Freund direkt an, als wäre er das Publikum."
+    },
+    "es": {
+     "t": "La cuarta pared",
+     "g": "Entiende la pared invisible entre escenario y público y la diversión de romperla.",
+     "p": [
+      "La mayoría de las obras finge que hay una pared donde se sienta el público, y los personajes actúan sin ser observados.",
+      "Romper la cuarta pared es hablar o mirar directamente al público, lo que resulta juguetón y cercano.",
+      "La pantomima, la comedia y muchas obras modernas lo hacen para invitarnos al chiste o a la historia."
+     ],
+     "q": "¿Has visto a un artista hablar directamente al público y cómo te sentiste?",
+     "c": "Hoy cuenta una anécdota breve mirando directamente a un amigo, como si fuera el público."
+    },
+    "fr": {
+     "t": "Le quatrième mur",
+     "g": "Comprends le mur invisible entre scène et public et le plaisir de le briser.",
+     "p": [
+      "La plupart des pièces font comme si un mur se dressait là où est le public, et les personnages agissent sans être observés.",
+      "Briser le quatrième mur, c'est parler ou regarder directement le public, ce qui paraît complice et proche.",
+      "La pantomime, la comédie et beaucoup de pièces modernes le font pour nous inviter dans la blague ou l'histoire."
+     ],
+     "q": "As-tu déjà vu un artiste parler droit au public, et qu'as-tu ressenti ?",
+     "c": "Aujourd'hui, raconte une courte anecdote en regardant droit un ami, comme s'il était le public."
+    },
+    "it": {
+     "t": "La quarta parete",
+     "g": "Capisci il muro invisibile tra palco e pubblico e il divertimento di romperlo.",
+     "p": [
+      "La maggior parte delle opere finge che ci sia un muro dove siede il pubblico, e i personaggi agiscono come se nessuno li osservasse.",
+      "Rompere la quarta parete significa parlare o guardare direttamente il pubblico, con un effetto giocoso e vicino.",
+      "Pantomima, commedia e molte opere moderne lo fanno per invitarci nella battuta o nella storia."
+     ],
+     "q": "Hai visto un artista parlare direttamente al pubblico e come ti sei sentito?",
+     "c": "Oggi racconta un breve aneddoto guardando dritto un amico, come se fosse il pubblico."
+    },
+    "pt": {
+     "t": "A quarta parede",
+     "g": "Percebe a parede invisível entre palco e público e a diversão de a quebrar.",
+     "p": [
+      "A maioria das peças finge que há uma parede onde se senta o público, e as personagens agem sem serem observadas.",
+      "Quebrar a quarta parede é falar ou olhar diretamente para o público, o que parece brincalhão e próximo.",
+      "A pantomima, a comédia e muitas peças modernas fazem-no para nos convidar para a piada ou a história."
+     ],
+     "q": "Já viste um artista falar diretamente ao público e como te sentiste?",
+     "c": "Hoje conta uma breve anedota a olhar diretamente para um amigo, como se fosse o público."
+    },
+    "pt_BR": {
+     "t": "A quarta parede",
+     "g": "Entenda a parede invisível entre palco e plateia e a diversão de quebrá-la.",
+     "p": [
+      "A maioria das peças finge que há uma parede onde senta a plateia, e os personagens agem sem serem observados.",
+      "Quebrar a quarta parede é falar ou olhar diretamente para a plateia, o que parece brincalhão e próximo.",
+      "A pantomima, a comédia e muitas peças modernas fazem isso para nos convidar para a piada ou a história."
+     ],
+     "q": "Você já viu um artista falar diretamente com a plateia e como se sentiu?",
+     "c": "Hoje conte uma breve anedota olhando diretamente para um amigo, como se ele fosse a plateia."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ancient Greek theatre",
+     "g": "Travel to Athens, where Western drama began in festivals, open-air theatres and masks.",
+     "p": [
+      "Plays were performed at festivals for Dionysus, and whole cities came to watch and judge.",
+      "Theatres like Epidaurus were carved into hillsides, with curved seats and amazing acoustics.",
+      "Actors wore masks and several roles each, and all the actors were men."
+     ],
+     "q": "If you could attend one ancient festival day, what would you hope to see?",
+     "c": "Today, speak a sentence from the back of a room and see if a friend can hear it clearly."
+    },
+    "de": {
+     "t": "Das antike griechische Theater",
+     "g": "Reise nach Athen, wo das westliche Drama in Festen, Freilichttheatern und Masken begann.",
+     "p": [
+      "Stücke wurden bei Festen für Dionysos aufgeführt, und ganze Städte kamen zum Zuschauen und Urteilen.",
+      "Theater wie Epidauros waren in Hänge gebaut, mit gebogenen Sitzreihen und erstaunlicher Akustik.",
+      "Die Schauspieler trugen Masken und spielten mehrere Rollen, und alle waren Männer."
+     ],
+     "q": "Wenn du einen antiken Festtag besuchen könntest, was würdest du sehen wollen?",
+     "c": "Sprich heute einen Satz vom Ende eines Raumes und prüfe, ob ein Freund ihn deutlich hört."
+    },
+    "es": {
+     "t": "El teatro de la antigua Grecia",
+     "g": "Viaja a Atenas, donde el drama occidental nació en festivales, teatros al aire libre y máscaras.",
+     "p": [
+      "Las obras se representaban en festivales de Dioniso, y ciudades enteras iban a ver y a juzgar.",
+      "Teatros como el de Epidauro se tallaron en laderas, con gradas curvas y una acústica asombrosa.",
+      "Los actores llevaban máscaras e interpretaban varios papeles, y todos eran hombres."
+     ],
+     "q": "Si pudieras asistir a un día de festival antiguo, ¿qué esperarías ver?",
+     "c": "Hoy di una frase desde el fondo de una sala y comprueba si un amigo la oye con claridad."
+    },
+    "fr": {
+     "t": "Le théâtre de la Grèce antique",
+     "g": "Voyage à Athènes, où le drame occidental est né dans les fêtes, les théâtres en plein air et les masques.",
+     "p": [
+      "Les pièces se jouaient lors de fêtes en l'honneur de Dionysos, et des villes entières venaient regarder et juger.",
+      "Des théâtres comme celui d'Épidaure étaient taillés dans les collines, avec des gradins courbes et une acoustique étonnante.",
+      "Les acteurs portaient des masques et jouaient plusieurs rôles, et tous étaient des hommes."
+     ],
+     "q": "Si tu pouvais assister à un jour de fête antique, que voudrais-tu voir ?",
+     "c": "Aujourd'hui, dis une phrase depuis le fond d'une pièce et vois si un ami l'entend bien."
+    },
+    "it": {
+     "t": "Il teatro greco antico",
+     "g": "Viaggia ad Atene, dove il dramma occidentale nacque tra feste, teatri all'aperto e maschere.",
+     "p": [
+      "Le opere si rappresentavano nelle feste di Dioniso, e intere città venivano a guardare e giudicare.",
+      "Teatri come quello di Epidauro erano scavati nelle colline, con gradinate curve e un'acustica sorprendente.",
+      "Gli attori indossavano maschere e interpretavano più ruoli, ed erano tutti uomini."
+     ],
+     "q": "Se potessi assistere a un giorno di festa antica, cosa speri di vedere?",
+     "c": "Oggi pronuncia una frase dal fondo di una stanza e verifica se un amico la sente bene."
+    },
+    "pt": {
+     "t": "O teatro da Grécia antiga",
+     "g": "Viaja até Atenas, onde o drama ocidental nasceu em festivais, teatros ao ar livre e máscaras.",
+     "p": [
+      "As peças representavam-se em festivais de Dioniso, e cidades inteiras iam ver e julgar.",
+      "Teatros como o de Epidauro foram talhados em encostas, com bancadas curvas e acústica espantosa.",
+      "Os atores usavam máscaras e faziam vários papéis, e eram todos homens."
+     ],
+     "q": "Se pudesses assistir a um dia de festival antigo, o que esperarias ver?",
+     "c": "Hoje diz uma frase do fundo de uma sala e vê se um amigo a ouve com clareza."
+    },
+    "pt_BR": {
+     "t": "O teatro da Grécia antiga",
+     "g": "Viaje até Atenas, onde o drama ocidental nasceu em festivais, teatros a céu aberto e máscaras.",
+     "p": [
+      "As peças eram apresentadas em festivais de Dionísio, e cidades inteiras iam assistir e julgar.",
+      "Teatros como o de Epidauro foram talhados em encostas, com arquibancadas curvas e acústica impressionante.",
+      "Os atores usavam máscaras e faziam vários papéis, e eram todos homens."
+     ],
+     "q": "Se você pudesse assistir a um dia de festival antigo, o que esperaria ver?",
+     "c": "Hoje diga uma frase do fundo de uma sala e veja se um amigo a ouve com clareza."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Greek chorus",
+     "g": "Meet a group that sings, dances and comments on the action, an ancient idea still used today.",
+     "p": [
+      "The chorus was a group of performers who spoke and moved together as one voice.",
+      "It could represent townspeople, elders or travellers, and it explained feelings and background to the audience.",
+      "Echoes of the chorus live on in musical ensembles, narrators and crowds that react together."
+     ],
+     "q": "If a chorus followed you through a day, what would it say about you?",
+     "c": "Today, say one sentence together with a friend in perfect unison, then try it in rhythm."
+    },
+    "de": {
+     "t": "Der griechische Chor",
+     "g": "Lerne eine Gruppe kennen, die singt, tanzt und die Handlung kommentiert, eine alte Idee, die heute noch lebt.",
+     "p": [
+      "Der Chor war eine Gruppe von Darstellern, die gemeinsam wie eine Stimme sprach und sich bewegte.",
+      "Er konnte Bürger, Älteste oder Reisende darstellen und erklärte dem Publikum Gefühle und Hintergründe.",
+      "Anklänge des Chors leben in Ensembles, Erzählern und Menschenmengen weiter, die gemeinsam reagieren."
+     ],
+     "q": "Wenn ein Chor dich durch einen Tag begleitete, was würde er über dich sagen?",
+     "c": "Sprich heute einen Satz mit einem Freund völlig gleichzeitig und versuche es dann im Rhythmus."
+    },
+    "es": {
+     "t": "El coro griego",
+     "g": "Conoce a un grupo que canta, baila y comenta la acción, una idea antigua que sigue viva.",
+     "p": [
+      "El coro era un grupo de intérpretes que hablaban y se movían juntos como una sola voz.",
+      "Podía representar a ciudadanos, ancianos o viajeros, y explicaba sentimientos y contexto al público.",
+      "Ecos del coro viven en conjuntos musicales, narradores y multitudes que reaccionan a la vez."
+     ],
+     "q": "Si un coro te siguiera durante un día, ¿qué diría de ti?",
+     "c": "Hoy di una frase junto a un amigo en perfecto unísono y luego pruébalo con ritmo."
+    },
+    "fr": {
+     "t": "Le chœur grec",
+     "g": "Rencontre un groupe qui chante, danse et commente l'action, une idée antique toujours utilisée.",
+     "p": [
+      "Le chœur était un groupe d'interprètes qui parlaient et bougeaient ensemble comme une seule voix.",
+      "Il pouvait représenter des citoyens, des anciens ou des voyageurs, et expliquait émotions et contexte au public.",
+      "Des échos du chœur survivent dans les ensembles musicaux, les narrateurs et les foules qui réagissent ensemble."
+     ],
+     "q": "Si un chœur te suivait pendant une journée, que dirait-il de toi ?",
+     "c": "Aujourd'hui, dis une phrase avec un ami en parfait unisson, puis essaie en rythme."
+    },
+    "it": {
+     "t": "Il coro greco",
+     "g": "Incontra un gruppo che canta, balla e commenta l'azione, un'idea antica ancora in uso.",
+     "p": [
+      "Il coro era un gruppo di interpreti che parlavano e si muovevano insieme come un'unica voce.",
+      "Poteva rappresentare cittadini, anziani o viaggiatori, e spiegava emozioni e contesto al pubblico.",
+      "Echi del coro vivono negli ensemble musicali, nei narratori e nelle folle che reagiscono insieme."
+     ],
+     "q": "Se un coro ti seguisse per una giornata, cosa direbbe di te?",
+     "c": "Oggi di' una frase insieme a un amico in perfetto unisono e poi provala a ritmo."
+    },
+    "pt": {
+     "t": "O coro grego",
+     "g": "Conhece um grupo que canta, dança e comenta a ação, uma ideia antiga ainda usada hoje.",
+     "p": [
+      "O coro era um grupo de intérpretes que falavam e se moviam juntos como uma só voz.",
+      "Podia representar cidadãos, anciãos ou viajantes, e explicava sentimentos e contexto ao público.",
+      "Ecos do coro vivem em conjuntos musicais, narradores e multidões que reagem em conjunto."
+     ],
+     "q": "Se um coro te seguisse durante um dia, o que diria sobre ti?",
+     "c": "Hoje diz uma frase com um amigo em perfeito uníssono e depois tenta ao ritmo."
+    },
+    "pt_BR": {
+     "t": "O coro grego",
+     "g": "Conheça um grupo que canta, dança e comenta a ação, uma ideia antiga ainda usada hoje.",
+     "p": [
+      "O coro era um grupo de intérpretes que falavam e se moviam juntos como uma só voz.",
+      "Podia representar cidadãos, anciãos ou viajantes, e explicava sentimentos e contexto para a plateia.",
+      "Ecos do coro vivem em conjuntos musicais, narradores e multidões que reagem juntas."
+     ],
+     "q": "Se um coro te seguisse por um dia, o que diria sobre você?",
+     "c": "Hoje diga uma frase com um amigo em perfeito uníssono e depois tente no ritmo."
+    }
+   }
+  }
+ ]
+}

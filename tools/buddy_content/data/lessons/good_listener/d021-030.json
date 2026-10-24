@@ -1,0 +1,835 @@
+{
+ "topic": "good_listener",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Friends who listen well",
+     "g": "Think about someone who makes you feel heard and what they do.",
+     "p": [
+      "Good listeners leave clear clues: what they ask, how they look at you.",
+      "Copying one habit of a person you admire is a great start.",
+      "Thanking such people strengthens the friendship."
+     ],
+     "q": "Who makes you feel heard, and what do they do that helps?",
+     "c": "Tell a good listener in your life that you appreciate how they listen."
+    },
+    "de": {
+     "t": "Freunde, die gut zuhören",
+     "g": "Denke an jemanden, bei dem du dich gehört fühlst, und was er tut.",
+     "p": [
+      "Gute Zuhörer hinterlassen klare Spuren: was sie fragen, wie sie dich ansehen.",
+      "Eine Gewohnheit eines bewunderten Menschen zu übernehmen ist ein guter Anfang.",
+      "Ein Dank an solche Menschen stärkt die Freundschaft."
+     ],
+     "q": "Wer gibt dir das Gefühl, gehört zu werden, und was tut diese Person?",
+     "c": "Sag einem guten Zuhörer in deinem Leben, dass du seine Art zuzuhören schätzt."
+    },
+    "es": {
+     "t": "Amigos que saben escuchar",
+     "g": "Piensa en alguien que te hace sentir escuchado y en lo que hace.",
+     "p": [
+      "Los buenos oyentes dejan pistas claras: lo que preguntan y cómo te miran.",
+      "Copiar un hábito de alguien que admiras es un gran comienzo.",
+      "Dar las gracias a esas personas fortalece la amistad."
+     ],
+     "q": "¿Quién te hace sentir escuchado y qué hace que te ayuda?",
+     "c": "Dile a alguien que escucha bien que aprecias cómo lo hace."
+    },
+    "fr": {
+     "t": "Les amis qui savent écouter",
+     "g": "Pense à quelqu'un qui te fait sentir entendu et à ce qu'il fait.",
+     "p": [
+      "Les bons auditeurs laissent des indices : ce qu'ils demandent, leur regard.",
+      "Copier une habitude d'une personne admirée est un bon début.",
+      "Remercier ces personnes renforce l'amitié."
+     ],
+     "q": "Qui te fait sentir entendu, et que fait cette personne ?",
+     "c": "Dis à un bon auditeur de ta vie que tu apprécies sa façon d'écouter."
+    },
+    "it": {
+     "t": "Amici che sanno ascoltare",
+     "g": "Pensa a qualcuno che ti fa sentire ascoltato e a cosa fa.",
+     "p": [
+      "I buoni ascoltatori lasciano indizi chiari: cosa chiedono, come ti guardano.",
+      "Copiare un'abitudine di una persona che ammiri è un ottimo inizio.",
+      "Ringraziare queste persone rafforza l'amicizia."
+     ],
+     "q": "Chi ti fa sentire ascoltato, e cosa fa di utile?",
+     "c": "Di' a un buon ascoltatore della tua vita che apprezzi come ascolta."
+    },
+    "pt": {
+     "t": "Amigos que sabem ouvir",
+     "g": "Pensa em alguém que te faz sentir ouvido e no que essa pessoa faz.",
+     "p": [
+      "Os bons ouvintes deixam pistas claras: o que perguntam e como te olham.",
+      "Copiar um hábito de alguém que admiras é um ótimo começo.",
+      "Agradecer a essas pessoas fortalece a amizade."
+     ],
+     "q": "Quem te faz sentir ouvido e o que faz que te ajuda?",
+     "c": "Diz a um bom ouvinte da tua vida que gostas da forma como ouve."
+    },
+    "pt_BR": {
+     "t": "Amigos que sabem ouvir",
+     "g": "Pense em alguém que faz você se sentir ouvido e no que essa pessoa faz.",
+     "p": [
+      "Bons ouvintes deixam pistas claras: o que perguntam e como olham para você.",
+      "Copiar um hábito de alguém que você admira é um ótimo começo.",
+      "Agradecer a essas pessoas fortalece a amizade."
+     ],
+     "q": "Quem faz você se sentir ouvido e o que faz que ajuda?",
+     "c": "Diga a um bom ouvinte da sua vida que você gosta da forma como ele ouve."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Describing your workspace",
+     "g": "Talk about where you work or study and what you would improve.",
+     "p": [
+      "A workspace tells a lot about daily life and habits.",
+      "Listeners can ask about the details: light, noise, favourite object.",
+      "Small improvements, like a plant, can lift a whole day."
+     ],
+     "q": "Where do you work or study, and what would you change?",
+     "c": "Ask someone about their workspace and one thing they like there."
+    },
+    "de": {
+     "t": "Dein Arbeitsplatz beschrieben",
+     "g": "Erzähle, wo du arbeitest oder lernst und was du verbessern würdest.",
+     "p": [
+      "Ein Arbeitsplatz verrät viel über Alltag und Gewohnheiten.",
+      "Zuhörer können nach Details fragen: Licht, Lärm, Lieblingsgegenstand.",
+      "Kleine Verbesserungen, wie eine Pflanze, können den Tag heben."
+     ],
+     "q": "Wo arbeitest oder lernst du, und was würdest du ändern?",
+     "c": "Frag jemanden nach seinem Arbeitsplatz und was ihm dort gefällt."
+    },
+    "es": {
+     "t": "Describe tu espacio de trabajo",
+     "g": "Habla de dónde trabajas o estudias y qué mejorarías.",
+     "p": [
+      "Un espacio de trabajo dice mucho de la vida diaria y los hábitos.",
+      "Quien escucha puede preguntar detalles: luz, ruido, objeto favorito.",
+      "Pequeñas mejoras, como una planta, pueden alegrar todo un día."
+     ],
+     "q": "¿Dónde trabajas o estudias y qué cambiarías?",
+     "c": "Pregunta a alguien por su espacio de trabajo y qué le gusta de él."
+    },
+    "fr": {
+     "t": "Décrire ton espace de travail",
+     "g": "Parle de l'endroit où tu travailles ou étudies et de ce que tu améliorerais.",
+     "p": [
+      "Un espace de travail en dit long sur le quotidien et les habitudes.",
+      "Celui qui écoute peut demander des détails : lumière, bruit, objet préféré.",
+      "De petites améliorations, comme une plante, peuvent égayer la journée."
+     ],
+     "q": "Où travailles-tu ou étudies-tu, et que changerais-tu ?",
+     "c": "Demande à quelqu'un de décrire son espace de travail et ce qu'il y aime."
+    },
+    "it": {
+     "t": "Descrivere il tuo spazio di lavoro",
+     "g": "Parla di dove lavori o studi e di cosa miglioreresti.",
+     "p": [
+      "Uno spazio di lavoro dice molto di vita quotidiana e abitudini.",
+      "Chi ascolta può chiedere dettagli: luce, rumore, oggetto preferito.",
+      "Piccoli miglioramenti, come una pianta, possono rallegrare la giornata."
+     ],
+     "q": "Dove lavori o studi, e cosa cambieresti?",
+     "c": "Chiedi a qualcuno del suo spazio di lavoro e cosa gli piace lì."
+    },
+    "pt": {
+     "t": "Descreve o teu espaço de trabalho",
+     "g": "Fala de onde trabalhas ou estudas e do que melhorarias.",
+     "p": [
+      "Um espaço de trabalho diz muito sobre o dia a dia e os hábitos.",
+      "Quem ouve pode perguntar pormenores: luz, ruído, objeto preferido.",
+      "Pequenas melhorias, como uma planta, podem animar um dia inteiro."
+     ],
+     "q": "Onde trabalhas ou estudas e o que mudarias?",
+     "c": "Pergunta a alguém pelo seu espaço de trabalho e o que gosta nele."
+    },
+    "pt_BR": {
+     "t": "Descreva seu espaço de trabalho",
+     "g": "Fale sobre onde você trabalha ou estuda e o que melhoraria.",
+     "p": [
+      "Um espaço de trabalho diz muito sobre o dia a dia e os hábitos.",
+      "Quem ouve pode perguntar detalhes: luz, barulho, objeto favorito.",
+      "Pequenas melhorias, como uma planta, podem animar um dia inteiro."
+     ],
+     "q": "Onde você trabalha ou estuda e o que mudaria?",
+     "c": "Pergunte a alguém sobre o espaço de trabalho e o que a pessoa gosta nele."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Encouraging sounds and words",
+     "g": "Use short responses like 'I see', 'really?' and 'go on' to keep someone talking.",
+     "p": [
+      "Tiny responses tell the speaker you are still with them.",
+      "Match them to the story: curious, warm, surprised.",
+      "Too many can feel fake, so keep them natural."
+     ],
+     "q": "Which little phrases do you use to show you are listening?",
+     "c": "Use three short encouragers, like 'go on', in one chat today."
+    },
+    "de": {
+     "t": "Ermutigende Laute und Worte",
+     "g": "Nutze kurze Reaktionen wie 'ich verstehe', 'wirklich?' und 'erzähl weiter'.",
+     "p": [
+      "Winzige Reaktionen zeigen dem Sprecher, dass du noch dabei bist.",
+      "Passe sie der Geschichte an: neugierig, warm, überrascht.",
+      "Zu viele wirken unecht, bleib also natürlich."
+     ],
+     "q": "Mit welchen kleinen Sätzen zeigst du, dass du zuhörst?",
+     "c": "Nutze heute in einem Gespräch drei kurze Ermutigungen wie 'erzähl weiter'."
+    },
+    "es": {
+     "t": "Sonidos y palabras que animan",
+     "g": "Usa respuestas cortas como 'ya veo', '¿en serio?' y 'sigue' para que alguien continúe.",
+     "p": [
+      "Las respuestas breves dicen a quien habla que sigues con él.",
+      "Adáptalas al relato: curiosas, cálidas, sorprendidas.",
+      "Demasiadas parecen falsas, así que sé natural."
+     ],
+     "q": "¿Qué frasecitas usas para mostrar que escuchas?",
+     "c": "Usa hoy tres animadores cortos, como 'sigue', en una charla."
+    },
+    "fr": {
+     "t": "Sons et mots qui encouragent",
+     "g": "Utilise de courtes réponses comme 'je vois', 'vraiment ?' et 'continue' pour faire parler.",
+     "p": [
+      "De petites réponses disent à l'autre que tu es toujours là.",
+      "Adapte-les à l'histoire : curieux, chaleureux, surpris.",
+      "Trop de réponses sonnent faux, reste naturel."
+     ],
+     "q": "Quelles petites phrases utilises-tu pour montrer que tu écoutes ?",
+     "c": "Utilise trois courts encouragements, comme 'continue', dans une discussion aujourd'hui."
+    },
+    "it": {
+     "t": "Suoni e parole che incoraggiano",
+     "g": "Usa risposte brevi come 'capisco', 'davvero?' e 'continua' per far proseguire.",
+     "p": [
+      "Le risposte brevi dicono a chi parla che sei ancora lì.",
+      "Adattale al racconto: curiose, calde, sorprese.",
+      "Troppe sembrano finte, quindi resta naturale."
+     ],
+     "q": "Quali piccole frasi usi per mostrare che ascolti?",
+     "c": "Usa oggi tre brevi incoraggiamenti, come 'continua', in una chiacchierata."
+    },
+    "pt": {
+     "t": "Sons e palavras que encorajam",
+     "g": "Usa respostas curtas como 'percebo', 'a sério?' e 'continua' para manter a conversa.",
+     "p": [
+      "Respostas curtas dizem a quem fala que ainda estás ali.",
+      "Adapta-as à história: curiosas, calorosas, surpreendidas.",
+      "Demasiadas parecem falsas, por isso sê natural."
+     ],
+     "q": "Que frasezinhas usas para mostrar que estás a ouvir?",
+     "c": "Usa hoje três encorajamentos curtos, como 'continua', numa conversa."
+    },
+    "pt_BR": {
+     "t": "Sons e palavras que incentivam",
+     "g": "Use respostas curtas como 'entendo', 'sério?' e 'continua' para manter a conversa.",
+     "p": [
+      "Respostas curtas dizem a quem fala que você ainda está ali.",
+      "Adapte-as à história: curiosas, calorosas, surpresas.",
+      "Muitas parecem falsas, então seja natural."
+     ],
+     "q": "Que frasezinhas você usa para mostrar que está ouvindo?",
+     "c": "Use hoje três incentivos curtos, como 'continua', numa conversa."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A hobby you enjoy",
+     "g": "Explain a hobby to someone new and what you love about it.",
+     "p": [
+      "Hobbies show what makes people light up.",
+      "Explaining to a beginner means choosing simple words.",
+      "Listeners can ask how it started and what is hard about it."
+     ],
+     "q": "What hobby do you enjoy, and what do you love about it?",
+     "c": "Ask someone about a hobby and ask how they first started."
+    },
+    "de": {
+     "t": "Ein Hobby, das du liebst",
+     "g": "Erkläre einem Neuling ein Hobby und was du daran liebst.",
+     "p": [
+      "Hobbys zeigen, wofür Menschen aufleben.",
+      "Einem Anfänger zu erklären heißt, einfache Worte zu wählen.",
+      "Zuhörer können fragen, wie es anfing und was daran schwierig ist."
+     ],
+     "q": "Welches Hobby machst du gern, und was liebst du daran?",
+     "c": "Frag jemanden nach einem Hobby und wie er damit angefangen hat."
+    },
+    "es": {
+     "t": "Un hobby que disfrutas",
+     "g": "Explica un hobby a alguien nuevo y lo que te encanta de él.",
+     "p": [
+      "Los hobbies muestran lo que ilumina a las personas.",
+      "Explicar a un principiante es elegir palabras sencillas.",
+      "Quien escucha puede preguntar cómo empezó y qué es difícil."
+     ],
+     "q": "¿Qué hobby disfrutas y qué te encanta de él?",
+     "c": "Pregunta a alguien por un hobby y cómo empezó."
+    },
+    "fr": {
+     "t": "Un loisir que tu aimes",
+     "g": "Explique un loisir à quelqu'un de nouveau et ce que tu y aimes.",
+     "p": [
+      "Les loisirs montrent ce qui fait briller les gens.",
+      "Expliquer à un débutant, c'est choisir des mots simples.",
+      "Celui qui écoute peut demander comment ça a commencé et ce qui est difficile."
+     ],
+     "q": "Quel loisir aimes-tu, et qu'est-ce qui te plaît dedans ?",
+     "c": "Interroge quelqu'un sur un loisir et demande comment il a commencé."
+    },
+    "it": {
+     "t": "Un hobby che ti piace",
+     "g": "Spiega un hobby a qualcuno di nuovo e cosa ami di esso.",
+     "p": [
+      "Gli hobby mostrano cosa fa brillare le persone.",
+      "Spiegare a un principiante significa scegliere parole semplici.",
+      "Chi ascolta può chiedere com'è iniziato e cosa è difficile."
+     ],
+     "q": "Quale hobby ti piace, e cosa ami di esso?",
+     "c": "Chiedi a qualcuno di un hobby e come ha iniziato."
+    },
+    "pt": {
+     "t": "Um passatempo de que gostas",
+     "g": "Explica um passatempo a alguém novo e o que adoras nele.",
+     "p": [
+      "Os passatempos mostram o que faz as pessoas brilhar.",
+      "Explicar a um principiante é escolher palavras simples.",
+      "Quem ouve pode perguntar como começou e o que é difícil."
+     ],
+     "q": "Que passatempo curtes e o que adoras nele?",
+     "c": "Pergunta a alguém por um passatempo e como começou."
+    },
+    "pt_BR": {
+     "t": "Um hobby de que você gosta",
+     "g": "Explique um hobby a alguém novo e o que você ama nele.",
+     "p": [
+      "Hobbies mostram o que faz as pessoas brilharem.",
+      "Explicar a um iniciante é escolher palavras simples.",
+      "Quem ouve pode perguntar como começou e o que é difícil."
+     ],
+     "q": "Que hobby você curte e o que ama nele?",
+     "c": "Pergunte a alguém sobre um hobby e como a pessoa começou."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Remembering details",
+     "g": "Recall names and small details from earlier chats to show you care.",
+     "p": [
+      "Remembering a name or detail says 'you matter to me'.",
+      "Try repeating a name when you first hear it.",
+      "Jot a note after a chat if it helps you remember."
+     ],
+     "q": "What detail did someone share with you recently?",
+     "c": "Bring up a detail from an earlier chat with someone today."
+    },
+    "de": {
+     "t": "Details merken",
+     "g": "Erinnere dich an Namen und kleine Details früherer Gespräche, um Interesse zu zeigen.",
+     "p": [
+      "Sich einen Namen oder ein Detail zu merken sagt: 'Du bist mir wichtig'.",
+      "Wiederhole einen Namen, wenn du ihn zum ersten Mal hörst.",
+      "Notiere dir nach einem Gespräch etwas, wenn es hilft."
+     ],
+     "q": "Welches Detail hat dir jemand kürzlich erzählt?",
+     "c": "Sprich heute jemanden auf ein Detail aus einem früheren Gespräch an."
+    },
+    "es": {
+     "t": "Recordar detalles",
+     "g": "Recuerda nombres y pequeños detalles de charlas anteriores para mostrar que te importa.",
+     "p": [
+      "Recordar un nombre o detalle dice 'me importas'.",
+      "Prueba a repetir un nombre cuando lo oyes por primera vez.",
+      "Apunta algo tras una charla si te ayuda a recordar."
+     ],
+     "q": "¿Qué detalle te contó alguien hace poco?",
+     "c": "Menciona hoy un detalle de una charla anterior con alguien."
+    },
+    "fr": {
+     "t": "Retenir les détails",
+     "g": "Rappelle-toi des prénoms et petits détails de discussions passées pour montrer que tu t'intéresses.",
+     "p": [
+      "Retenir un prénom ou un détail dit 'tu comptes pour moi'.",
+      "Essaie de répéter un prénom dès que tu l'entends.",
+      "Note quelque chose après une discussion si ça aide."
+     ],
+     "q": "Quel détail quelqu'un t'a-t-il confié récemment ?",
+     "c": "Évoque aujourd'hui un détail d'une discussion précédente avec quelqu'un."
+    },
+    "it": {
+     "t": "Ricordare i dettagli",
+     "g": "Ricorda nomi e piccoli dettagli di chiacchierate precedenti per mostrare che ci tieni.",
+     "p": [
+      "Ricordare un nome o un dettaglio dice 'per me conti'.",
+      "Prova a ripetere un nome quando lo senti la prima volta.",
+      "Annota qualcosa dopo una chiacchierata se ti aiuta."
+     ],
+     "q": "Quale dettaglio ti ha raccontato qualcuno di recente?",
+     "c": "Riprendi oggi un dettaglio di una chiacchierata precedente con qualcuno."
+    },
+    "pt": {
+     "t": "Lembrar detalhes",
+     "g": "Recorda nomes e pequenos detalhes de conversas anteriores para mostrar que te importas.",
+     "p": [
+      "Lembrar um nome ou detalhe diz 'tu importas-me'.",
+      "Experimenta repetir um nome quando o ouves pela primeira vez.",
+      "Anota algo depois de uma conversa, se ajudar."
+     ],
+     "q": "Que detalhe alguém te contou há pouco?",
+     "c": "Menciona hoje um detalhe de uma conversa anterior com alguém."
+    },
+    "pt_BR": {
+     "t": "Lembrar detalhes",
+     "g": "Lembre nomes e pequenos detalhes de conversas anteriores para mostrar que você se importa.",
+     "p": [
+      "Lembrar um nome ou detalhe diz 'você é importante para mim'.",
+      "Tente repetir um nome quando ouvi-lo pela primeira vez.",
+      "Anote algo depois de uma conversa, se ajudar."
+     ],
+     "q": "Que detalhe alguém contou para você recentemente?",
+     "c": "Mencione hoje um detalhe de uma conversa anterior com alguém."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Weather and mood",
+     "g": "Notice how the weather shapes your day and find small ways to brighten a grey one.",
+     "p": [
+      "Weather is an easy topic that often leads to deeper talk.",
+      "Grey days can be softened with music, tea or a short walk.",
+      "Asking 'how does this weather suit you?' invites more than 'nice day'."
+     ],
+     "q": "How does the weather affect your mood?",
+     "c": "Ask someone how they like today's weather and what they do on grey days."
+    },
+    "de": {
+     "t": "Wetter und Stimmung",
+     "g": "Bemerke, wie das Wetter deinen Tag prägt, und finde kleine Wege, einen grauen Tag aufzuhellen.",
+     "p": [
+      "Das Wetter ist ein leichtes Thema, das oft zu tieferen Gesprächen führt.",
+      "Graue Tage werden mit Musik, Tee oder einem kurzen Spaziergang sanfter.",
+      "'Wie gefällt dir dieses Wetter?' lädt mehr ein als 'schöner Tag'."
+     ],
+     "q": "Wie beeinflusst das Wetter deine Stimmung?",
+     "c": "Frag jemanden, wie ihm das heutige Wetter gefällt und was er an grauen Tagen tut."
+    },
+    "es": {
+     "t": "El tiempo y el ánimo",
+     "g": "Nota cómo el tiempo marca tu día y busca pequeñas formas de alegrar uno gris.",
+     "p": [
+      "El tiempo es un tema fácil que a menudo lleva a charlas más profundas.",
+      "Los días grises se suavizan con música, té o un paseo corto.",
+      "'¿Cómo te sienta este tiempo?' invita más que 'qué buen día'."
+     ],
+     "q": "¿Cómo afecta el tiempo a tu estado de ánimo?",
+     "c": "Pregunta a alguien qué tal lleva el tiempo de hoy y qué hace en días grises."
+    },
+    "fr": {
+     "t": "Météo et humeur",
+     "g": "Remarque comment la météo influence ta journée et trouve de petits moyens d'égayer un jour gris.",
+     "p": [
+      "La météo est un sujet facile qui mène souvent à des échanges plus profonds.",
+      "Les jours gris s'adoucissent avec de la musique, du thé ou une courte marche.",
+      "'Comment tu vis ce temps ?' invite plus que 'beau temps'."
+     ],
+     "q": "Comment la météo influence-t-elle ton humeur ?",
+     "c": "Demande à quelqu'un comment il vit la météo du jour et ce qu'il fait les jours gris."
+    },
+    "it": {
+     "t": "Meteo e umore",
+     "g": "Nota come il meteo influenza la tua giornata e trova piccoli modi per rallegrare un giorno grigio.",
+     "p": [
+      "Il meteo è un tema facile che spesso porta a discorsi più profondi.",
+      "I giorni grigi si addolciscono con musica, tè o una breve passeggiata.",
+      "'Come ti sta questo tempo?' invita più di 'bella giornata'."
+     ],
+     "q": "Come influisce il meteo sul tuo umore?",
+     "c": "Chiedi a qualcuno come vive il meteo di oggi e cosa fa nei giorni grigi."
+    },
+    "pt": {
+     "t": "Tempo e humor",
+     "g": "Repara como o tempo marca o teu dia e encontra pequenas formas de animar um dia cinzento.",
+     "p": [
+      "O tempo é um tema fácil que muitas vezes leva a conversas mais profundas.",
+      "Os dias cinzentos suavizam-se com música, chá ou um passeio curto.",
+      "'Como te sentes com este tempo?' convida mais do que 'bom dia'."
+     ],
+     "q": "Como é que o tempo afeta o teu humor?",
+     "c": "Pergunta a alguém como leva o tempo de hoje e o que faz em dias cinzentos."
+    },
+    "pt_BR": {
+     "t": "Clima e humor",
+     "g": "Perceba como o clima molda seu dia e ache pequenas formas de alegrar um dia cinzento.",
+     "p": [
+      "O clima é um assunto fácil que muitas vezes leva a conversas mais profundas.",
+      "Dias cinzentos ficam mais leves com música, chá ou uma caminhada curta.",
+      "'Como você está lidando com esse clima?' convida mais que 'dia bonito'."
+     ],
+     "q": "Como o clima afeta o seu humor?",
+     "c": "Pergunte a alguém como a pessoa lida com o clima de hoje e o que faz em dias cinzentos."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Listening to understand",
+     "g": "See the difference between listening to reply and listening to understand.",
+     "p": [
+      "Listening to reply means planning your answer while they talk.",
+      "Listening to understand means being curious about their view.",
+      "The second feels calmer and builds trust."
+     ],
+     "q": "When do you catch yourself planning your reply too early?",
+     "c": "Listen today only to understand, and delay your reply by a moment."
+    },
+    "de": {
+     "t": "Zuhören, um zu verstehen",
+     "g": "Erkenne den Unterschied zwischen Zuhören zum Antworten und Zuhören zum Verstehen.",
+     "p": [
+      "Zuhören zum Antworten heißt, die Antwort schon beim Zuhören zu planen.",
+      "Zuhören zum Verstehen heißt, neugierig auf die Sicht des anderen zu sein.",
+      "Das zweite wirkt ruhiger und schafft Vertrauen."
+     ],
+     "q": "Wann ertappst du dich dabei, zu früh deine Antwort zu planen?",
+     "c": "Höre heute nur, um zu verstehen, und verzögere deine Antwort kurz."
+    },
+    "es": {
+     "t": "Escuchar para comprender",
+     "g": "Ve la diferencia entre escuchar para responder y escuchar para comprender.",
+     "p": [
+      "Escuchar para responder es preparar tu respuesta mientras hablan.",
+      "Escuchar para comprender es sentir curiosidad por su punto de vista.",
+      "Lo segundo es más tranquilo y crea confianza."
+     ],
+     "q": "¿Cuándo te sorprendes preparando la respuesta demasiado pronto?",
+     "c": "Escucha hoy solo para comprender y retrasa un momento tu respuesta."
+    },
+    "fr": {
+     "t": "Écouter pour comprendre",
+     "g": "Vois la différence entre écouter pour répondre et écouter pour comprendre.",
+     "p": [
+      "Écouter pour répondre, c'est préparer sa réponse pendant que l'autre parle.",
+      "Écouter pour comprendre, c'est être curieux de son point de vue.",
+      "Le second est plus serein et crée de la confiance."
+     ],
+     "q": "Quand te surprends-tu à préparer ta réponse trop tôt ?",
+     "c": "Écoute aujourd'hui seulement pour comprendre et retarde un peu ta réponse."
+    },
+    "it": {
+     "t": "Ascoltare per capire",
+     "g": "Vedi la differenza tra ascoltare per rispondere e ascoltare per capire.",
+     "p": [
+      "Ascoltare per rispondere significa preparare la risposta mentre l'altro parla.",
+      "Ascoltare per capire significa essere curiosi del suo punto di vista.",
+      "Il secondo è più sereno e crea fiducia."
+     ],
+     "q": "Quando ti accorgi di preparare la risposta troppo presto?",
+     "c": "Ascolta oggi solo per capire e ritarda un attimo la tua risposta."
+    },
+    "pt": {
+     "t": "Ouvir para compreender",
+     "g": "Vê a diferença entre ouvir para responder e ouvir para compreender.",
+     "p": [
+      "Ouvir para responder é preparar a resposta enquanto o outro fala.",
+      "Ouvir para compreender é ter curiosidade pelo ponto de vista dele.",
+      "O segundo é mais calmo e cria confiança."
+     ],
+     "q": "Quando dás por ti a preparar a resposta demasiado cedo?",
+     "c": "Ouve hoje só para compreender e atrasa um momento a tua resposta."
+    },
+    "pt_BR": {
+     "t": "Ouvir para compreender",
+     "g": "Veja a diferença entre ouvir para responder e ouvir para compreender.",
+     "p": [
+      "Ouvir para responder é preparar a resposta enquanto o outro fala.",
+      "Ouvir para compreender é ter curiosidade pelo ponto de vista dele.",
+      "O segundo é mais calmo e cria confiança."
+     ],
+     "q": "Quando você se pega preparando a resposta cedo demais?",
+     "c": "Ouça hoje só para compreender e atrase um momento a sua resposta."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A song for today",
+     "g": "Choose a song that fits your mood and explain why.",
+     "p": [
+      "Music is a friendly way to talk about feelings.",
+      "Listening to why someone chose a song reveals their mood.",
+      "There is no wrong choice, only your own reasons."
+     ],
+     "q": "Which song fits your mood today, and why?",
+     "c": "Ask someone for a song that matches their day and why they picked it."
+    },
+    "de": {
+     "t": "Ein Lied für heute",
+     "g": "Wähle ein Lied, das zu deiner Stimmung passt, und erkläre warum.",
+     "p": [
+      "Musik ist ein freundlicher Weg, über Gefühle zu sprechen.",
+      "Wer hört, warum jemand ein Lied wählte, erfährt etwas über seine Stimmung.",
+      "Es gibt keine falsche Wahl, nur deine eigenen Gründe."
+     ],
+     "q": "Welches Lied passt heute zu deiner Stimmung, und warum?",
+     "c": "Frag jemanden nach einem Lied, das zu seinem Tag passt, und warum."
+    },
+    "es": {
+     "t": "Una canción para hoy",
+     "g": "Elige una canción que encaje con tu ánimo y explica por qué.",
+     "p": [
+      "La música es una forma amable de hablar de sentimientos.",
+      "Escuchar por qué alguien eligió una canción revela su ánimo.",
+      "No hay elección equivocada, solo tus propias razones."
+     ],
+     "q": "¿Qué canción encaja con tu ánimo hoy y por qué?",
+     "c": "Pide a alguien una canción que encaje con su día y por qué la eligió."
+    },
+    "fr": {
+     "t": "Une chanson pour aujourd'hui",
+     "g": "Choisis une chanson qui correspond à ton humeur et explique pourquoi.",
+     "p": [
+      "La musique est une façon douce de parler des émotions.",
+      "Écouter pourquoi quelqu'un a choisi une chanson révèle son humeur.",
+      "Il n'y a pas de mauvais choix, seulement tes propres raisons."
+     ],
+     "q": "Quelle chanson correspond à ton humeur aujourd'hui, et pourquoi ?",
+     "c": "Demande à quelqu'un une chanson qui colle à sa journée et pourquoi."
+    },
+    "it": {
+     "t": "Una canzone per oggi",
+     "g": "Scegli una canzone che si addice al tuo umore e spiega perché.",
+     "p": [
+      "La musica è un modo gentile per parlare di emozioni.",
+      "Ascoltare perché qualcuno ha scelto una canzone rivela il suo umore.",
+      "Non ci sono scelte sbagliate, solo le tue ragioni."
+     ],
+     "q": "Quale canzone si addice al tuo umore oggi, e perché?",
+     "c": "Chiedi a qualcuno una canzone che si addica alla sua giornata e perché."
+    },
+    "pt": {
+     "t": "Uma canção para hoje",
+     "g": "Escolhe uma canção que combine com o teu humor e explica porquê.",
+     "p": [
+      "A música é uma forma simpática de falar de sentimentos.",
+      "Ouvir porque alguém escolheu uma canção revela o seu humor.",
+      "Não há escolhas erradas, só as tuas razões."
+     ],
+     "q": "Que canção combina com o teu humor hoje e porquê?",
+     "c": "Pede a alguém uma canção que combine com o seu dia e porquê."
+    },
+    "pt_BR": {
+     "t": "Uma música para hoje",
+     "g": "Escolha uma música que combine com o seu humor e explique por quê.",
+     "p": [
+      "Música é uma forma simpática de falar de sentimentos.",
+      "Ouvir por que alguém escolheu uma música revela o humor dela.",
+      "Não há escolha errada, só as suas próprias razões."
+     ],
+     "q": "Que música combina com o seu humor hoje e por quê?",
+     "c": "Peça a alguém uma música que combine com o dia dela e por quê."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Saying thank you warmly",
+     "g": "Express specific thanks so people know exactly what they did well.",
+     "p": [
+      "'Thanks for listening to me yesterday' beats a plain 'thanks'.",
+      "Naming the action makes gratitude feel real.",
+      "Say it face to face or in a short message."
+     ],
+     "q": "Who would you like to thank, and for what exactly?",
+     "c": "Give one specific thank you today, naming exactly what helped."
+    },
+    "de": {
+     "t": "Herzlich Danke sagen",
+     "g": "Danke konkret, damit Menschen genau wissen, was sie gut gemacht haben.",
+     "p": [
+      "'Danke, dass du mir gestern zugehört hast' ist besser als ein einfaches 'danke'.",
+      "Wer die Tat nennt, macht Dankbarkeit echt.",
+      "Sag es persönlich oder in einer kurzen Nachricht."
+     ],
+     "q": "Wem möchtest du danken, und wofür genau?",
+     "c": "Sprich heute einen konkreten Dank aus und nenne genau, was geholfen hat."
+    },
+    "es": {
+     "t": "Dar las gracias con calidez",
+     "g": "Agradece de forma concreta para que sepan exactamente qué hicieron bien.",
+     "p": [
+      "'Gracias por escucharme ayer' vale más que un simple 'gracias'.",
+      "Nombrar la acción hace que el agradecimiento se sienta real.",
+      "Dilo en persona o en un mensaje corto."
+     ],
+     "q": "¿A quién quieres agradecer y por qué exactamente?",
+     "c": "Da hoy un agradecimiento concreto, diciendo exactamente qué ayudó."
+    },
+    "fr": {
+     "t": "Dire merci chaleureusement",
+     "g": "Remercie de façon précise pour que l'on sache exactement ce qui était bien.",
+     "p": [
+      "'Merci de m'avoir écouté hier' vaut mieux qu'un simple 'merci'.",
+      "Nommer l'action rend la gratitude réelle.",
+      "Dis-le en face ou dans un court message."
+     ],
+     "q": "Qui voudrais-tu remercier, et pour quoi exactement ?",
+     "c": "Fais aujourd'hui un merci précis en disant exactement ce qui a aidé."
+    },
+    "it": {
+     "t": "Dire grazie con calore",
+     "g": "Ringrazia in modo specifico perché le persone sappiano cosa hanno fatto di buono.",
+     "p": [
+      "'Grazie per avermi ascoltato ieri' vale più di un semplice 'grazie'.",
+      "Nominare l'azione rende reale la gratitudine.",
+      "Dillo di persona o con un breve messaggio."
+     ],
+     "q": "Chi vorresti ringraziare, e per cosa esattamente?",
+     "c": "Fai oggi un grazie specifico, dicendo esattamente cosa ha aiutato."
+    },
+    "pt": {
+     "t": "Agradecer com carinho",
+     "g": "Agradece de forma concreta para que saibam exatamente o que fizeram bem.",
+     "p": [
+      "'Obrigado por me teres ouvido ontem' vale mais do que um simples 'obrigado'.",
+      "Dizer a ação torna a gratidão real.",
+      "Diz pessoalmente ou numa mensagem curta."
+     ],
+     "q": "A quem queres agradecer e porquê exatamente?",
+     "c": "Dá hoje um agradecimento concreto, dizendo exatamente o que ajudou."
+    },
+    "pt_BR": {
+     "t": "Agradecer com carinho",
+     "g": "Agradeça de forma concreta para que saibam exatamente o que fizeram bem.",
+     "p": [
+      "'Obrigado por me ouvir ontem' vale mais que um simples 'obrigado'.",
+      "Dizer a ação torna a gratidão real.",
+      "Diga pessoalmente ou numa mensagem curta."
+     ],
+     "q": "A quem você quer agradecer e por quê exatamente?",
+     "c": "Dê hoje um agradecimento concreto, dizendo exatamente o que ajudou."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your first month",
+     "g": "Look back at the listening skills practised so far and pick your favourite day.",
+     "p": [
+      "You have met questions, pauses, reflecting and warm presence.",
+      "Looking back shows how far small habits have taken you.",
+      "Pick one skill to keep using every day."
+     ],
+     "q": "Which skill from this month felt most natural to you?",
+     "c": "Choose one skill and use it in every conversation tomorrow."
+    },
+    "de": {
+     "t": "Rückblick: dein erster Monat",
+     "g": "Blicke auf die geübten Zuhörfähigkeiten zurück und wähle deinen Lieblingstag.",
+     "p": [
+      "Du hast Fragen, Pausen, Spiegeln und warme Präsenz kennengelernt.",
+      "Der Rückblick zeigt, wie weit kleine Gewohnheiten tragen.",
+      "Wähle eine Fähigkeit, die du jeden Tag weiter nutzt."
+     ],
+     "q": "Welche Fähigkeit dieses Monats fühlte sich am natürlichsten an?",
+     "c": "Wähle eine Fähigkeit und nutze sie morgen in jedem Gespräch."
+    },
+    "es": {
+     "t": "Repaso: tu primer mes",
+     "g": "Repasa las habilidades de escucha practicadas y elige tu día favorito.",
+     "p": [
+      "Has conocido preguntas, pausas, reflejar y presencia cálida.",
+      "Mirar atrás muestra hasta dónde llevan los pequeños hábitos.",
+      "Elige una habilidad para seguir usando cada día."
+     ],
+     "q": "¿Qué habilidad de este mes te resultó más natural?",
+     "c": "Elige una habilidad y úsala mañana en cada conversación."
+    },
+    "fr": {
+     "t": "Bilan : ton premier mois",
+     "g": "Repasse les compétences d'écoute pratiquées et choisis ton jour préféré.",
+     "p": [
+      "Tu as découvert les questions, les pauses, la reformulation et la présence chaleureuse.",
+      "Regarder en arrière montre où mènent de petites habitudes.",
+      "Choisis une compétence à garder chaque jour."
+     ],
+     "q": "Quelle compétence de ce mois t'a semblé la plus naturelle ?",
+     "c": "Choisis une compétence et utilise-la demain dans chaque conversation."
+    },
+    "it": {
+     "t": "Ripasso: il tuo primo mese",
+     "g": "Ripassa le abilità di ascolto esercitate e scegli il tuo giorno preferito.",
+     "p": [
+      "Hai incontrato domande, pause, riformulazione e presenza calorosa.",
+      "Guardare indietro mostra dove portano le piccole abitudini.",
+      "Scegli un'abilità da usare ogni giorno."
+     ],
+     "q": "Quale abilità di questo mese ti è sembrata più naturale?",
+     "c": "Scegli un'abilità e usala domani in ogni conversazione."
+    },
+    "pt": {
+     "t": "Revisão: o teu primeiro mês",
+     "g": "Revê as competências de escuta praticadas e escolhe o teu dia preferido.",
+     "p": [
+      "Conheceste perguntas, pausas, refletir e presença calorosa.",
+      "Olhar para trás mostra até onde levam os pequenos hábitos.",
+      "Escolhe uma competência para usares todos os dias."
+     ],
+     "q": "Que competência deste mês te pareceu mais natural?",
+     "c": "Escolhe uma competência e usa-a amanhã em todas as conversas."
+    },
+    "pt_BR": {
+     "t": "Revisão: seu primeiro mês",
+     "g": "Revise as habilidades de escuta praticadas e escolha seu dia favorito.",
+     "p": [
+      "Você conheceu perguntas, pausas, refletir e presença calorosa.",
+      "Olhar para trás mostra até onde os pequenos hábitos levam.",
+      "Escolha uma habilidade para usar todos os dias."
+     ],
+     "q": "Que habilidade deste mês pareceu mais natural para você?",
+     "c": "Escolha uma habilidade e use-a amanhã em todas as conversas."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "sleep_habits",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Two forces, one night",
+     "g": "See how sleep pressure and your body clock team up.",
+     "p": [
+      "Sleep pressure builds all day, pushing you towards bed.",
+      "The body clock opens a window when sleep comes easiest.",
+      "When both line up, falling asleep feels natural."
+     ],
+     "q": "When did you last feel perfectly sleepy at bedtime?",
+     "c": "Tonight, go to bed when you feel truly sleepy, not just bored."
+    },
+    "de": {
+     "t": "Zwei Kräfte, eine Nacht",
+     "g": "Sieh, wie Schlafdruck und innere Uhr zusammenarbeiten.",
+     "p": [
+      "Der Schlafdruck wächst den ganzen Tag und zieht dich Richtung Bett.",
+      "Die innere Uhr öffnet ein Fenster, in dem Schlaf am leichtesten kommt.",
+      "Passen beide zusammen, fühlt sich Einschlafen natürlich an."
+     ],
+     "q": "Wann warst du zuletzt zur Schlafenszeit genau richtig müde?",
+     "c": "Geh heute ins Bett, wenn du wirklich schläfrig bist, nicht nur gelangweilt."
+    },
+    "es": {
+     "t": "Dos fuerzas, una noche",
+     "g": "Mira cómo la presión de sueño y el reloj biológico trabajan juntos.",
+     "p": [
+      "La presión de sueño crece todo el día y te empuja hacia la cama.",
+      "El reloj biológico abre una ventana en la que dormir resulta más fácil.",
+      "Cuando coinciden, quedarse dormido se siente natural."
+     ],
+     "q": "¿Cuándo fue la última vez que sentiste sueño justo al acostarte?",
+     "c": "Esta noche acuéstate cuando tengas sueño de verdad, no solo aburrimiento."
+    },
+    "fr": {
+     "t": "Deux forces, une nuit",
+     "g": "Vois comment la pression de sommeil et l'horloge biologique s'allient.",
+     "p": [
+      "La pression de sommeil monte toute la journée et te pousse vers le lit.",
+      "L'horloge ouvre une fenêtre où l'endormissement est le plus facile.",
+      "Quand les deux s'alignent, s'endormir paraît naturel."
+     ],
+     "q": "Quand as-tu eu sommeil au bon moment pour la dernière fois ?",
+     "c": "Ce soir, couche-toi quand tu as vraiment sommeil, pas juste par ennui."
+    },
+    "it": {
+     "t": "Due forze, una notte",
+     "g": "Vedi come pressione del sonno e orologio biologico collaborano.",
+     "p": [
+      "La pressione del sonno cresce tutto il giorno e ti spinge verso il letto.",
+      "L'orologio biologico apre una finestra in cui dormire è più facile.",
+      "Quando coincidono, addormentarsi sembra naturale."
+     ],
+     "q": "Quando è stata l'ultima volta che avevi sonno proprio a letto?",
+     "c": "Stasera vai a letto quando hai davvero sonno, non solo noia."
+    },
+    "pt": {
+     "t": "Duas forças, uma noite",
+     "g": "Vê como a pressão do sono e o relógio biológico se juntam.",
+     "p": [
+      "A pressão do sono cresce todo o dia e empurra-te para a cama.",
+      "O relógio biológico abre uma janela em que adormecer é mais fácil.",
+      "Quando coincidem, adormecer parece natural."
+     ],
+     "q": "Quando foi a última vez que tiveste sono mesmo à hora de deitar?",
+     "c": "Esta noite, deita-te quando tiveres sono a sério, não só tédio."
+    },
+    "pt_BR": {
+     "t": "Duas forças, uma noite",
+     "g": "Veja como a pressão do sono e o relógio biológico se unem.",
+     "p": [
+      "A pressão do sono cresce o dia todo e empurra você para a cama.",
+      "O relógio biológico abre uma janela em que dormir é mais fácil.",
+      "Quando os dois coincidem, pegar no sono parece natural."
+     ],
+     "q": "Quando foi a última vez que você sentiu sono bem na hora de deitar?",
+     "c": "Hoje à noite, deite quando tiver sono de verdade, não só tédio."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Larks, owls and in-betweens",
+     "g": "Discover why some people love mornings and others evenings.",
+     "p": [
+      "Chronotype is your natural lean towards early or late.",
+      "Larks wake easily early, owls peak later in the day.",
+      "Most people sit somewhere in between, and all are normal."
+     ],
+     "q": "Are you more of a lark, an owl or in between?",
+     "c": "This evening, note when your energy naturally dips or rises."
+    },
+    "de": {
+     "t": "Lerchen, Eulen und Dazwischen",
+     "g": "Entdecke, warum manche Morgen lieben und andere den Abend.",
+     "p": [
+      "Der Chronotyp ist deine natürliche Neigung zu früh oder spät.",
+      "Lerchen stehen leicht früh auf, Eulen haben später ihr Hoch.",
+      "Die meisten liegen dazwischen, und alles ist normal."
+     ],
+     "q": "Bist du eher Lerche, Eule oder dazwischen?",
+     "c": "Achte heute Abend darauf, wann deine Energie von selbst sinkt oder steigt."
+    },
+    "es": {
+     "t": "Alondras, búhos y término medio",
+     "g": "Descubre por qué a unos les encanta la mañana y a otros la noche.",
+     "p": [
+      "El cronotipo es tu tendencia natural a lo temprano o a lo tardío.",
+      "Las alondras despiertan fácil temprano, los búhos rinden más tarde.",
+      "La mayoría está en un punto medio, y todo es normal."
+     ],
+     "q": "¿Eres más alondra, búho o intermedio?",
+     "c": "Esta tarde fíjate cuándo sube o baja tu energía de forma natural."
+    },
+    "fr": {
+     "t": "Alouettes, hiboux et entre-deux",
+     "g": "Découvre pourquoi certains aiment le matin et d'autres le soir.",
+     "p": [
+      "Le chronotype est ta tendance naturelle au tôt ou au tard.",
+      "Les alouettes se lèvent facilement tôt, les hiboux brillent plus tard.",
+      "La plupart sont entre les deux, et tout cela est normal."
+     ],
+     "q": "Es-tu plutôt alouette, hibou ou entre les deux ?",
+     "c": "Ce soir, remarque quand ton énergie baisse ou monte naturellement."
+    },
+    "it": {
+     "t": "Allodole, gufi e vie di mezzo",
+     "g": "Scopri perché alcuni amano il mattino e altri la sera.",
+     "p": [
+      "Il cronotipo è la tua tendenza naturale verso presto o tardi.",
+      "Le allodole si svegliano presto con facilità, i gufi rendono di più più tardi.",
+      "La maggior parte sta in mezzo, ed è tutto normale."
+     ],
+     "q": "Sei più allodola, gufo o via di mezzo?",
+     "c": "Stasera nota quando la tua energia cala o sale in modo naturale."
+    },
+    "pt": {
+     "t": "Cotovias, corujas e o meio-termo",
+     "g": "Descobre porque uns adoram as manhãs e outros as noites.",
+     "p": [
+      "O cronotipo é a tua tendência natural para cedo ou tarde.",
+      "As cotovias acordam cedo com facilidade, as corujas rendem mais tarde.",
+      "A maioria está no meio-termo, e tudo é normal."
+     ],
+     "q": "És mais cotovia, coruja ou meio-termo?",
+     "c": "Esta noite, repara quando a tua energia sobe ou desce naturalmente."
+    },
+    "pt_BR": {
+     "t": "Cotovias, corujas e o meio-termo",
+     "g": "Descubra por que uns adoram as manhãs e outros as noites.",
+     "p": [
+      "O cronotipo é a sua tendência natural para cedo ou tarde.",
+      "As cotovias acordam cedo com facilidade, as corujas rendem mais tarde.",
+      "A maioria está no meio-termo, e tudo é normal."
+     ],
+     "q": "Você é mais cotovia, coruja ou meio-termo?",
+     "c": "Hoje à noite, perceba quando a sua energia sobe ou desce naturalmente."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Finding your chronotype",
+     "g": "Use simple clues to spot your natural timing.",
+     "p": [
+      "Look at when you sleep on free days without an alarm.",
+      "Holidays often show your natural wake time.",
+      "Notice when you feel sharpest, not when you must be."
+     ],
+     "q": "If nothing stopped you, when would you sleep and wake?",
+     "c": "Tonight, jot down the bedtime that feels most natural."
+    },
+    "de": {
+     "t": "Deinen Chronotyp finden",
+     "g": "Nutze einfache Hinweise, um dein natürliches Timing zu erkennen.",
+     "p": [
+      "Schau, wann du an freien Tagen ohne Wecker schläfst.",
+      "Urlaubstage zeigen oft deine natürliche Aufwachzeit.",
+      "Achte darauf, wann du am fittesten bist, nicht wann du es sein musst."
+     ],
+     "q": "Wann würdest du schlafen und aufwachen, wenn nichts dich bremst?",
+     "c": "Notiere heute Abend die Schlafenszeit, die sich am natürlichsten anfühlt."
+    },
+    "es": {
+     "t": "Descubre tu cronotipo",
+     "g": "Usa pistas sencillas para detectar tu horario natural.",
+     "p": [
+      "Mira a qué hora duermes en días libres sin alarma.",
+      "Las vacaciones suelen mostrar tu hora natural de despertar.",
+      "Fíjate en cuándo estás más lúcido, no cuándo debes estarlo."
+     ],
+     "q": "Si nada te frenara, ¿cuándo dormirías y despertarías?",
+     "c": "Esta noche apunta la hora de acostarte que te resulte más natural."
+    },
+    "fr": {
+     "t": "Trouver ton chronotype",
+     "g": "Utilise des indices simples pour repérer ton rythme naturel.",
+     "p": [
+      "Regarde quand tu dors les jours libres sans réveil.",
+      "Les vacances montrent souvent ton heure de réveil naturelle.",
+      "Remarque quand tu es au top, pas quand tu dois l'être."
+     ],
+     "q": "Si rien ne t'en empêchait, quand dormirais-tu et te réveillerais-tu ?",
+     "c": "Ce soir, note l'heure de coucher qui te paraît la plus naturelle."
+    },
+    "it": {
+     "t": "Trovare il tuo cronotipo",
+     "g": "Usa indizi semplici per scoprire i tuoi tempi naturali.",
+     "p": [
+      "Guarda quando dormi nei giorni liberi senza sveglia.",
+      "Le vacanze mostrano spesso il tuo risveglio naturale.",
+      "Nota quando sei più lucido, non quando devi esserlo."
+     ],
+     "q": "Se nulla ti vincolasse, quando dormiresti e ti sveglieresti?",
+     "c": "Stasera annota l'orario di coricarsi che ti sembra più naturale."
+    },
+    "pt": {
+     "t": "Descobrir o teu cronotipo",
+     "g": "Usa pistas simples para perceber o teu horário natural.",
+     "p": [
+      "Vê a que horas dormes nos dias livres sem despertador.",
+      "As férias costumam mostrar a tua hora natural de acordar.",
+      "Repara quando estás mais lúcido, não quando tens de estar."
+     ],
+     "q": "Se nada te impedisse, quando dormirias e acordarias?",
+     "c": "Esta noite, anota a hora de deitar que te parece mais natural."
+    },
+    "pt_BR": {
+     "t": "Descobrindo o seu cronotipo",
+     "g": "Use pistas simples para perceber o seu horário natural.",
+     "p": [
+      "Veja a que horas você dorme nos dias livres sem despertador.",
+      "As férias costumam mostrar a sua hora natural de acordar.",
+      "Perceba quando você está mais lúcido, não quando precisa estar."
+     ],
+     "q": "Se nada o impedisse, quando você dormiria e acordaria?",
+     "c": "Hoje à noite, anote a hora de deitar que parece mais natural."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Light is the master signal",
+     "g": "See why light and dark set your body clock.",
+     "p": [
+      "Daylight tells your clock that the day has begun.",
+      "Bright morning light helps keep timing steady.",
+      "Dim evening light helps the clock know night is near."
+     ],
+     "q": "How much daylight do you get on a typical day?",
+     "c": "This evening, dim a few lights an hour before bed."
+    },
+    "de": {
+     "t": "Licht ist das Leitsignal",
+     "g": "Verstehe, warum Hell und Dunkel deine innere Uhr stellen.",
+     "p": [
+      "Tageslicht sagt deiner Uhr, dass der Tag begonnen hat.",
+      "Helles Morgenlicht hilft, den Rhythmus stabil zu halten.",
+      "Gedämpftes Abendlicht zeigt der Uhr, dass die Nacht naht."
+     ],
+     "q": "Wie viel Tageslicht bekommst du an einem normalen Tag?",
+     "c": "Dimme heute Abend eine Stunde vor dem Schlafen ein paar Lichter."
+    },
+    "es": {
+     "t": "La luz es la señal maestra",
+     "g": "Ve por qué la luz y la oscuridad ajustan tu reloj biológico.",
+     "p": [
+      "La luz del día le dice a tu reloj que el día ha empezado.",
+      "La luz brillante de la mañana ayuda a mantener un horario estable.",
+      "La luz tenue de la tarde le indica que la noche se acerca."
+     ],
+     "q": "¿Cuánta luz natural recibes en un día normal?",
+     "c": "Esta noche baja la intensidad de algunas luces una hora antes de dormir."
+    },
+    "fr": {
+     "t": "La lumière, signal maître",
+     "g": "Vois pourquoi lumière et obscurité règlent ton horloge.",
+     "p": [
+      "La lumière du jour dit à ton horloge que la journée a commencé.",
+      "Une lumière vive le matin aide à garder un rythme stable.",
+      "Une lumière douce le soir indique que la nuit approche."
+     ],
+     "q": "Combien de lumière naturelle reçois-tu un jour ordinaire ?",
+     "c": "Ce soir, tamise quelques lumières une heure avant le coucher."
+    },
+    "it": {
+     "t": "La luce è il segnale principale",
+     "g": "Scopri perché luce e buio regolano il tuo orologio biologico.",
+     "p": [
+      "La luce del giorno dice al tuo orologio che la giornata è iniziata.",
+      "La luce intensa del mattino aiuta a mantenere orari stabili.",
+      "La luce soffusa della sera segnala che la notte si avvicina."
+     ],
+     "q": "Quanta luce naturale ricevi in una giornata tipo?",
+     "c": "Stasera abbassa qualche luce un'ora prima di andare a letto."
+    },
+    "pt": {
+     "t": "A luz é o sinal principal",
+     "g": "Vê porque a luz e a escuridão acertam o teu relógio biológico.",
+     "p": [
+      "A luz do dia diz ao teu relógio que o dia começou.",
+      "A luz forte da manhã ajuda a manter o ritmo estável.",
+      "A luz fraca ao fim do dia indica que a noite se aproxima."
+     ],
+     "q": "Quanta luz natural recebes num dia normal?",
+     "c": "Esta noite, baixa a intensidade de algumas luzes uma hora antes de dormir."
+    },
+    "pt_BR": {
+     "t": "A luz é o sinal principal",
+     "g": "Veja por que a luz e a escuridão acertam o seu relógio biológico.",
+     "p": [
+      "A luz do dia diz ao seu relógio que o dia começou.",
+      "A luz forte da manhã ajuda a manter o ritmo estável.",
+      "A luz fraca no fim do dia indica que a noite está chegando."
+     ],
+     "q": "Quanta luz natural você recebe num dia normal?",
+     "c": "Hoje à noite, diminua a intensidade de algumas luzes uma hora antes de dormir."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The sleepy hormone",
+     "g": "Meet melatonin, the body's darkness signal.",
+     "p": [
+      "Melatonin rises in the evening when light fades.",
+      "It signals that night has arrived; it is not a knockout switch.",
+      "Bright screens and lights late can delay that evening signal."
+     ],
+     "q": "Do you feel a natural sleepy wave in the evening?",
+     "c": "Tonight, soften your lighting and notice any sleepy wave."
+    },
+    "de": {
+     "t": "Das Schlafhormon",
+     "g": "Lerne Melatonin kennen, das Dunkelheitssignal des Körpers.",
+     "p": [
+      "Melatonin steigt abends, wenn das Licht schwindet.",
+      "Es meldet, dass die Nacht da ist, ist aber kein Ausknopf.",
+      "Helle Bildschirme und Licht spät am Abend können dieses Signal verzögern."
+     ],
+     "q": "Spürst du abends eine natürliche Müdigkeitswelle?",
+     "c": "Dimme heute Abend das Licht und achte auf eine Müdigkeitswelle."
+    },
+    "es": {
+     "t": "La hormona del sueño",
+     "g": "Conoce la melatonina, la señal de oscuridad del cuerpo.",
+     "p": [
+      "La melatonina sube por la tarde cuando se apaga la luz.",
+      "Avisa de que ha llegado la noche; no es un interruptor mágico.",
+      "Las pantallas y luces intensas tarde pueden retrasar esa señal."
+     ],
+     "q": "¿Notas una ola natural de sueño por la tarde-noche?",
+     "c": "Esta noche suaviza la luz y fíjate si llega esa ola de sueño."
+    },
+    "fr": {
+     "t": "L'hormone du sommeil",
+     "g": "Fais connaissance avec la mélatonine, le signal d'obscurité du corps.",
+     "p": [
+      "La mélatonine monte le soir quand la lumière baisse.",
+      "Elle signale que la nuit est là ; ce n'est pas un interrupteur.",
+      "Écrans et lumières vives tard peuvent retarder ce signal du soir."
+     ],
+     "q": "Sens-tu une vague naturelle de sommeil le soir ?",
+     "c": "Ce soir, adoucis l'éclairage et repère une éventuelle vague de sommeil."
+    },
+    "it": {
+     "t": "L'ormone del sonno",
+     "g": "Conosci la melatonina, il segnale di buio del corpo.",
+     "p": [
+      "La melatonina sale la sera quando la luce cala.",
+      "Segnala che è arrivata la notte; non è un interruttore.",
+      "Schermi e luci intense a tarda ora possono ritardare questo segnale."
+     ],
+     "q": "Senti un'onda naturale di sonno la sera?",
+     "c": "Stasera ammorbidisci le luci e nota se arriva un'onda di sonno."
+    },
+    "pt": {
+     "t": "A hormona do sono",
+     "g": "Conhece a melatonina, o sinal de escuridão do corpo.",
+     "p": [
+      "A melatonina sobe ao fim do dia quando a luz diminui.",
+      "Avisa que a noite chegou; não é um interruptor.",
+      "Ecrãs e luzes fortes tarde podem atrasar esse sinal."
+     ],
+     "q": "Sentes uma onda natural de sono ao fim do dia?",
+     "c": "Esta noite, suaviza a iluminação e repara se vem essa onda de sono."
+    },
+    "pt_BR": {
+     "t": "O hormônio do sono",
+     "g": "Conheça a melatonina, o sinal de escuridão do corpo.",
+     "p": [
+      "A melatonina sobe no fim do dia quando a luz diminui.",
+      "Ela avisa que a noite chegou; não é um interruptor.",
+      "Telas e luzes fortes tarde podem atrasar esse sinal."
+     ],
+     "q": "Você sente uma onda natural de sono no fim do dia?",
+     "c": "Hoje à noite, suavize a iluminação e perceba se vem essa onda de sono."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Feeling rested vs feeling tired",
+     "g": "Tell sleepiness, tiredness and low energy apart.",
+     "p": [
+      "Sleepiness is the urge to fall asleep right now.",
+      "Tiredness can be weary body or mind without sleepiness.",
+      "Low energy can also come from food, stress or too little movement."
+     ],
+     "q": "Which feels most familiar: sleepy, tired or low-energy?",
+     "c": "Tonight, ask yourself which of the three you feel before bed."
+    },
+    "de": {
+     "t": "Ausgeruht oder müde",
+     "g": "Unterscheide Schläfrigkeit, Müdigkeit und Energiemangel.",
+     "p": [
+      "Schläfrigkeit ist der Drang, sofort einzuschlafen.",
+      "Müdigkeit kann Körper oder Kopf betreffen, ohne schläfrig zu sein.",
+      "Wenig Energie kann auch von Essen, Stress oder Bewegungsmangel kommen."
+     ],
+     "q": "Was kennst du am besten: schläfrig, müde oder energielos?",
+     "c": "Frag dich heute Abend vor dem Schlafen, welches der drei du fühlst."
+    },
+    "es": {
+     "t": "Descansado o cansado",
+     "g": "Distingue entre somnolencia, cansancio y poca energía.",
+     "p": [
+      "La somnolencia es las ganas de dormirte ya mismo.",
+      "El cansancio puede ser del cuerpo o de la mente sin sueño.",
+      "La poca energía también viene de la comida, el estrés o el sedentarismo."
+     ],
+     "q": "¿Qué te resulta más familiar: sueño, cansancio o poca energía?",
+     "c": "Esta noche pregúntate cuál de los tres sientes antes de acostarte."
+    },
+    "fr": {
+     "t": "Reposé ou fatigué",
+     "g": "Distingue somnolence, fatigue et manque d'énergie.",
+     "p": [
+      "La somnolence est l'envie de s'endormir tout de suite.",
+      "La fatigue peut toucher le corps ou l'esprit sans somnolence.",
+      "Le manque d'énergie peut aussi venir de l'alimentation, du stress ou du manque de mouvement."
+     ],
+     "q": "Qu'est-ce qui t'est le plus familier : sommeil, fatigue ou manque d'énergie ?",
+     "c": "Ce soir, demande-toi lequel des trois tu ressens avant de dormir."
+    },
+    "it": {
+     "t": "Riposato o stanco",
+     "g": "Distingui sonnolenza, stanchezza e poca energia.",
+     "p": [
+      "La sonnolenza è la voglia di addormentarsi subito.",
+      "La stanchezza può riguardare corpo o mente senza sonnolenza.",
+      "La poca energia può venire anche da cibo, stress o poco movimento."
+     ],
+     "q": "Cosa ti è più familiare: sonno, stanchezza o poca energia?",
+     "c": "Stasera chiediti quale dei tre senti prima di andare a letto."
+    },
+    "pt": {
+     "t": "Descansado ou cansado",
+     "g": "Distingue sonolência, cansaço e pouca energia.",
+     "p": [
+      "A sonolência é a vontade de adormecer logo.",
+      "O cansaço pode ser do corpo ou da mente, sem sonolência.",
+      "A pouca energia pode vir também da comida, do stresse ou da falta de movimento."
+     ],
+     "q": "Qual te é mais familiar: sono, cansaço ou pouca energia?",
+     "c": "Esta noite, pergunta-te qual dos três sentes antes de te deitares."
+    },
+    "pt_BR": {
+     "t": "Descansado ou cansado",
+     "g": "Distinga sonolência, cansaço e pouca energia.",
+     "p": [
+      "A sonolência é a vontade de pegar no sono já.",
+      "O cansaço pode ser do corpo ou da mente, sem sonolência.",
+      "A pouca energia pode vir também da comida, do estresse ou da falta de movimento."
+     ],
+     "q": "Qual é mais familiar para você: sono, cansaço ou pouca energia?",
+     "c": "Hoje à noite, pergunte-se qual dos três você sente antes de deitar."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Myths about sleep",
+     "g": "Sort common sleep beliefs from what is actually known.",
+     "p": [
+      "You cannot fully repay a long sleep debt with one lie-in.",
+      "Being awake in bed longer does not mean more rest.",
+      "Snoring loudly or never feeling rested is worth a doctor's view."
+     ],
+     "q": "Which sleep belief have you always taken for granted?",
+     "c": "Tonight, skip one myth you follow, like forcing sleep."
+    },
+    "de": {
+     "t": "Mythen über Schlaf",
+     "g": "Trenne verbreitete Schlafmeinungen von dem, was man weiß.",
+     "p": [
+      "Eine lange Schlafschuld lässt sich nicht mit einmal Ausschlafen ausgleichen.",
+      "Länger wach im Bett zu liegen bringt nicht mehr Erholung.",
+      "Lautes Schnarchen oder nie erholt zu sein sollte ein Arzt anschauen."
+     ],
+     "q": "Welche Schlafweisheit hast du immer für selbstverständlich gehalten?",
+     "c": "Lass heute Abend einen Mythos weg, etwa das Einschlafen zu erzwingen."
+    },
+    "es": {
+     "t": "Mitos sobre el sueño",
+     "g": "Separa las creencias comunes de lo que realmente se sabe.",
+     "p": [
+      "Una gran deuda de sueño no se salda con una sola mañana de siesta larga.",
+      "Estar más rato despierto en la cama no da más descanso.",
+      "Roncar fuerte o no sentirte nunca descansado merece la opinión de un médico."
+     ],
+     "q": "¿Qué creencia sobre el sueño has dado siempre por cierta?",
+     "c": "Esta noche deja un mito, como forzar el sueño."
+    },
+    "fr": {
+     "t": "Mythes sur le sommeil",
+     "g": "Distingue les croyances courantes de ce que l'on sait vraiment.",
+     "p": [
+      "On ne rembourse pas une grosse dette de sommeil avec une seule grasse matinée.",
+      "Rester plus longtemps éveillé au lit ne repose pas davantage.",
+      "Ronfler fort ou ne jamais se sentir reposé mérite l'avis d'un médecin."
+     ],
+     "q": "Quelle croyance sur le sommeil as-tu toujours tenue pour acquise ?",
+     "c": "Ce soir, abandonne un mythe, comme forcer le sommeil."
+    },
+    "it": {
+     "t": "Miti sul sonno",
+     "g": "Separa le credenze comuni da ciò che si sa davvero.",
+     "p": [
+      "Un grosso debito di sonno non si salda con una sola dormita lunga.",
+      "Restare più a lungo svegli a letto non dà più riposo.",
+      "Russare forte o non sentirsi mai riposati merita il parere di un medico."
+     ],
+     "q": "Quale credenza sul sonno hai sempre dato per scontata?",
+     "c": "Stasera lascia un mito, come forzare il sonno."
+    },
+    "pt": {
+     "t": "Mitos sobre o sono",
+     "g": "Separa as crenças comuns do que realmente se sabe.",
+     "p": [
+      "Uma grande dívida de sono não se paga com um só dia de dormir até tarde.",
+      "Ficar mais tempo acordado na cama não dá mais descanso.",
+      "Ressonar alto ou nunca te sentires descansado merece a opinião de um médico."
+     ],
+     "q": "Que crença sobre o sono sempre deste como certa?",
+     "c": "Esta noite, abandona um mito, como forçar o sono."
+    },
+    "pt_BR": {
+     "t": "Mitos sobre o sono",
+     "g": "Separe as crenças comuns do que realmente se sabe.",
+     "p": [
+      "Uma grande dívida de sono não se paga com um só dia de dormir até tarde.",
+      "Ficar mais tempo acordado na cama não dá mais descanso.",
+      "Roncar alto ou nunca se sentir descansado merece a opinião de um médico."
+     ],
+     "q": "Que crença sobre o sono você sempre deu como certa?",
+     "c": "Hoje à noite, abandone um mito, como forçar o sono."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sleep and mood",
+     "g": "See how a good night often makes us calmer and kinder.",
+     "p": [
+      "After poor sleep, small things can feel bigger.",
+      "After good rest, patience and humour often come easier.",
+      "Mood and sleep influence each other in both directions."
+     ],
+     "q": "How do you act after a rough night versus a good one?",
+     "c": "Tonight, do one calming thing, like a favourite song."
+    },
+    "de": {
+     "t": "Schlaf und Stimmung",
+     "g": "Sieh, wie eine gute Nacht uns oft ruhiger und freundlicher macht.",
+     "p": [
+      "Nach schlechtem Schlaf wirken Kleinigkeiten größer.",
+      "Nach guter Ruhe fallen Geduld und Humor oft leichter.",
+      "Stimmung und Schlaf beeinflussen sich gegenseitig."
+     ],
+     "q": "Wie verhältst du dich nach einer miesen Nacht im Vergleich zu einer guten?",
+     "c": "Tu heute Abend etwas Beruhigendes, etwa dein Lieblingslied hören."
+    },
+    "es": {
+     "t": "El sueño y el ánimo",
+     "g": "Mira cómo una buena noche suele hacernos más calmados y amables.",
+     "p": [
+      "Tras dormir mal, las cosas pequeñas se sienten más grandes.",
+      "Tras un buen descanso, la paciencia y el humor suelen llegar más fácil.",
+      "El ánimo y el sueño se influyen mutuamente."
+     ],
+     "q": "¿Cómo actúas tras una mala noche frente a una buena?",
+     "c": "Esta noche haz algo que te calme, como escuchar tu canción favorita."
+    },
+    "fr": {
+     "t": "Sommeil et humeur",
+     "g": "Vois comment une bonne nuit nous rend souvent plus calmes et aimables.",
+     "p": [
+      "Après un mauvais sommeil, les petites choses paraissent plus grandes.",
+      "Après un bon repos, patience et humour viennent plus facilement.",
+      "Humeur et sommeil s'influencent dans les deux sens."
+     ],
+     "q": "Comment agis-tu après une mauvaise nuit par rapport à une bonne ?",
+     "c": "Ce soir, fais une chose apaisante, comme écouter ta chanson préférée."
+    },
+    "it": {
+     "t": "Sonno e umore",
+     "g": "Scopri come una buona notte ci rende spesso più calmi e gentili.",
+     "p": [
+      "Dopo un sonno scarso, le piccole cose sembrano più grandi.",
+      "Dopo un buon riposo, pazienza e umorismo vengono più facili.",
+      "Umore e sonno si influenzano a vicenda."
+     ],
+     "q": "Come ti comporti dopo una brutta notte rispetto a una buona?",
+     "c": "Stasera fai una cosa che ti calmi, come ascoltare la tua canzone preferita."
+    },
+    "pt": {
+     "t": "O sono e o humor",
+     "g": "Vê como uma boa noite nos deixa muitas vezes mais calmos e simpáticos.",
+     "p": [
+      "Depois de dormir mal, as coisas pequenas parecem maiores.",
+      "Depois de bom descanso, a paciência e o humor surgem com mais facilidade.",
+      "O humor e o sono influenciam-se mutuamente."
+     ],
+     "q": "Como reages depois de uma noite má em comparação com uma boa?",
+     "c": "Esta noite, faz algo que te acalme, como ouvir a tua música preferida."
+    },
+    "pt_BR": {
+     "t": "O sono e o humor",
+     "g": "Veja como uma boa noite nos deixa muitas vezes mais calmos e gentis.",
+     "p": [
+      "Depois de dormir mal, as coisas pequenas parecem maiores.",
+      "Depois de um bom descanso, a paciência e o humor vêm com mais facilidade.",
+      "O humor e o sono se influenciam mutuamente."
+     ],
+     "q": "Como você reage depois de uma noite ruim em comparação com uma boa?",
+     "c": "Hoje à noite, faça algo que acalme, como ouvir a sua música favorita."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sleep and focus",
+     "g": "Learn why attention and problem-solving like good rest.",
+     "p": [
+      "Rested minds usually react faster and notice more.",
+      "Memory and learning are supported during sleep.",
+      "Short on sleep, we make more slips and forget more."
+     ],
+     "q": "When do you concentrate best, and how did you sleep?",
+     "c": "Tonight, leave tomorrow's top task written on a note."
+    },
+    "de": {
+     "t": "Schlaf und Konzentration",
+     "g": "Lerne, warum Aufmerksamkeit und Problemlösen gute Ruhe mögen.",
+     "p": [
+      "Ausgeruhte Köpfe reagieren meist schneller und bemerken mehr.",
+      "Gedächtnis und Lernen werden im Schlaf unterstützt.",
+      "Bei Schlafmangel passieren mehr Fehler und man vergisst mehr."
+     ],
+     "q": "Wann konzentrierst du dich am besten, und wie hast du geschlafen?",
+     "c": "Schreib heute Abend die wichtigste Aufgabe für morgen auf einen Zettel."
+    },
+    "es": {
+     "t": "El sueño y la atención",
+     "g": "Aprende por qué la atención y la resolución de problemas aman el buen descanso.",
+     "p": [
+      "Las mentes descansadas suelen reaccionar más rápido y notar más.",
+      "La memoria y el aprendizaje se apoyan durante el sueño.",
+      "Con poco sueño cometemos más descuidos y olvidamos más."
+     ],
+     "q": "¿Cuándo te concentras mejor y cómo habías dormido?",
+     "c": "Esta noche deja escrita en una nota la tarea principal de mañana."
+    },
+    "fr": {
+     "t": "Sommeil et concentration",
+     "g": "Apprends pourquoi attention et résolution de problèmes aiment un bon repos.",
+     "p": [
+      "Un esprit reposé réagit souvent plus vite et remarque plus.",
+      "La mémoire et l'apprentissage sont soutenus pendant le sommeil.",
+      "Quand on manque de sommeil, on fait plus d'erreurs et on oublie plus."
+     ],
+     "q": "Quand te concentres-tu le mieux, et comment avais-tu dormi ?",
+     "c": "Ce soir, note sur un papier la tâche principale de demain."
+    },
+    "it": {
+     "t": "Sonno e concentrazione",
+     "g": "Scopri perché attenzione e problem solving amano un buon riposo.",
+     "p": [
+      "Una mente riposata di solito reagisce più in fretta e nota di più.",
+      "Memoria e apprendimento sono sostenuti durante il sonno.",
+      "Con poco sonno si fanno più errori e si dimentica di più."
+     ],
+     "q": "Quando ti concentri meglio e come avevi dormito?",
+     "c": "Stasera lascia scritto su un foglietto il compito principale di domani."
+    },
+    "pt": {
+     "t": "O sono e a concentração",
+     "g": "Aprende porque a atenção e a resolução de problemas gostam de bom descanso.",
+     "p": [
+      "Mentes descansadas costumam reagir mais depressa e reparar em mais.",
+      "A memória e a aprendizagem são apoiadas durante o sono.",
+      "Com pouco sono, cometemos mais falhas e esquecemos mais."
+     ],
+     "q": "Quando te concentras melhor e como tinhas dormido?",
+     "c": "Esta noite, deixa escrita num papel a tarefa principal de amanhã."
+    },
+    "pt_BR": {
+     "t": "O sono e o foco",
+     "g": "Aprenda por que a atenção e a resolução de problemas gostam de bom descanso.",
+     "p": [
+      "Mentes descansadas costumam reagir mais rápido e notar mais.",
+      "A memória e o aprendizado são apoiados durante o sono.",
+      "Com pouco sono, cometemos mais deslizes e esquecemos mais."
+     ],
+     "q": "Quando você se concentra melhor e como tinha dormido?",
+     "c": "Hoje à noite, deixe anotada num papel a tarefa principal de amanhã."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sleep and the body",
+     "g": "See in general terms how rest supports recovery and wellbeing.",
+     "p": [
+      "During sleep the body does a lot of quiet maintenance.",
+      "Rest can help recovery after exercise and busy days.",
+      "Sleep and appetite are linked, so tired days often mean more cravings."
+     ],
+     "q": "How does your body feel after a few good nights?",
+     "c": "Tonight, do a gentle stretch for two minutes before bed."
+    },
+    "de": {
+     "t": "Schlaf und Körper",
+     "g": "Sieh in groben Zügen, wie Ruhe Erholung und Wohlbefinden stützt.",
+     "p": [
+      "Im Schlaf leistet der Körper viel stille Wartungsarbeit.",
+      "Ruhe kann die Erholung nach Sport und vollen Tagen unterstützen.",
+      "Schlaf und Appetit hängen zusammen, müde Tage bringen oft mehr Heißhunger."
+     ],
+     "q": "Wie fühlt sich dein Körper nach ein paar guten Nächten?",
+     "c": "Mach heute Abend zwei Minuten sanftes Dehnen vor dem Schlafen."
+    },
+    "es": {
+     "t": "El sueño y el cuerpo",
+     "g": "Mira en términos generales cómo el descanso apoya la recuperación y el bienestar.",
+     "p": [
+      "Mientras duermes, el cuerpo hace mucho mantenimiento silencioso.",
+      "El descanso puede ayudar a recuperarte tras el ejercicio y los días intensos.",
+      "El sueño y el apetito están ligados, y los días cansados traen más antojos."
+     ],
+     "q": "¿Cómo se siente tu cuerpo tras unas buenas noches?",
+     "c": "Esta noche haz dos minutos de estiramiento suave antes de dormir."
+    },
+    "fr": {
+     "t": "Sommeil et corps",
+     "g": "Vois en termes généraux comment le repos soutient la récupération et le bien-être.",
+     "p": [
+      "Pendant le sommeil, le corps fait beaucoup d'entretien discret.",
+      "Le repos peut aider à récupérer après le sport et les journées chargées.",
+      "Sommeil et appétit sont liés, et les jours de fatigue donnent plus d'envies."
+     ],
+     "q": "Comment se sent ton corps après quelques bonnes nuits ?",
+     "c": "Ce soir, fais deux minutes d'étirements doux avant de dormir."
+    },
+    "it": {
+     "t": "Sonno e corpo",
+     "g": "Scopri in termini generali come il riposo sostiene recupero e benessere.",
+     "p": [
+      "Durante il sonno il corpo fa molta manutenzione silenziosa.",
+      "Il riposo può aiutare il recupero dopo sport e giornate piene.",
+      "Sonno e appetito sono legati, e nei giorni stanchi ci sono più voglie."
+     ],
+     "q": "Come si sente il tuo corpo dopo qualche buona notte?",
+     "c": "Stasera fai due minuti di stretching leggero prima di dormire."
+    },
+    "pt": {
+     "t": "O sono e o corpo",
+     "g": "Vê em termos gerais como o descanso apoia a recuperação e o bem-estar.",
+     "p": [
+      "Durante o sono, o corpo faz muita manutenção silenciosa.",
+      "O descanso pode ajudar a recuperar após o exercício e dias cheios.",
+      "O sono e o apetite estão ligados, e dias cansados trazem mais desejos."
+     ],
+     "q": "Como se sente o teu corpo depois de umas boas noites?",
+     "c": "Esta noite, faz dois minutos de alongamento suave antes de dormir."
+    },
+    "pt_BR": {
+     "t": "O sono e o corpo",
+     "g": "Veja em termos gerais como o descanso apoia a recuperação e o bem-estar.",
+     "p": [
+      "Durante o sono, o corpo faz muita manutenção silenciosa.",
+      "O descanso pode ajudar a recuperar após o exercício e dias cheios.",
+      "O sono e o apetite estão ligados, e dias cansados trazem mais desejos."
+     ],
+     "q": "Como o seu corpo se sente depois de algumas boas noites?",
+     "c": "Hoje à noite, faça dois minutos de alongamento suave antes de dormir."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "healthy_eating",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Building a better breakfast",
+     "g": "Combine whole grains, fruit and a protein food for a satisfying start to the day.",
+     "p": [
+      "A good breakfast mixes a whole grain, a fruit or vegetable and a protein food.",
+      "Think oats with berries and yoghurt, or eggs with wholegrain toast and tomato.",
+      "Not hungry in the morning? That is fine; eat when your body asks."
+     ],
+     "q": "What does your usual breakfast look like, and what do you love about it?",
+     "c": "Add one missing part to tomorrow's breakfast, such as a piece of fruit or a spoon of yoghurt."
+    },
+    "de": {
+     "t": "Ein besseres Frühstück bauen",
+     "g": "Kombiniere Vollkorn, Obst und ein Eiweißlebensmittel für einen sättigenden Start in den Tag.",
+     "p": [
+      "Ein gutes Frühstück verbindet Vollkorn, Obst oder Gemüse und ein Eiweißlebensmittel.",
+      "Denk an Haferbrei mit Beeren und Joghurt oder Ei mit Vollkornbrot und Tomate.",
+      "Morgens keinen Hunger? Das ist in Ordnung; iss, wenn dein Körper es verlangt."
+     ],
+     "q": "Wie sieht dein übliches Frühstück aus, und was liebst du daran?",
+     "c": "Ergänze morgen dein Frühstück um einen fehlenden Teil, etwa ein Stück Obst oder einen Löffel Joghurt."
+    },
+    "es": {
+     "t": "Un desayuno mejor",
+     "g": "Combina cereales integrales, fruta y un alimento proteico para empezar el día con saciedad.",
+     "p": [
+      "Un buen desayuno mezcla un cereal integral, una fruta o verdura y un alimento proteico.",
+      "Piensa en avena con frutos rojos y yogur, o huevos con tostada integral y tomate.",
+      "¿Sin hambre por la mañana? No pasa nada; come cuando tu cuerpo lo pida."
+     ],
+     "q": "¿Cómo es tu desayuno habitual y qué es lo que más te gusta de él?",
+     "c": "Añade mañana a tu desayuno una parte que falte, como una fruta o una cucharada de yogur."
+    },
+    "fr": {
+     "t": "Réussir son petit-déjeuner",
+     "g": "Associe céréales complètes, fruits et un aliment protéiné pour bien démarrer la journée.",
+     "p": [
+      "Un bon petit-déjeuner mêle une céréale complète, un fruit ou un légume et un aliment protéiné.",
+      "Pense aux flocons d'avoine avec des fruits rouges et du yaourt, ou aux œufs avec du pain complet et une tomate.",
+      "Pas faim le matin ? Ce n'est pas grave : mange quand ton corps le demande."
+     ],
+     "q": "À quoi ressemble ton petit-déjeuner habituel et qu'y aimes-tu ?",
+     "c": "Ajoute demain à ton petit-déjeuner une partie qui manque, comme un fruit ou une cuillère de yaourt."
+    },
+    "it": {
+     "t": "Costruire una colazione migliore",
+     "g": "Abbina cereali integrali, frutta e un alimento proteico per iniziare la giornata sazi.",
+     "p": [
+      "Una buona colazione unisce un cereale integrale, un frutto o una verdura e un alimento proteico.",
+      "Pensa ai fiocchi d'avena con frutti di bosco e yogurt, o alle uova con pane integrale e pomodoro.",
+      "Non hai fame la mattina? Va bene lo stesso: mangia quando il corpo lo chiede."
+     ],
+     "q": "Com'è la tua colazione abituale e cosa ti piace di essa?",
+     "c": "Aggiungi domani alla colazione una parte che manca, come un frutto o un cucchiaio di yogurt."
+    },
+    "pt": {
+     "t": "Construir um pequeno-almoço melhor",
+     "g": "Combina cereais integrais, fruta e um alimento proteico para começar o dia bem saciado.",
+     "p": [
+      "Um bom pequeno-almoço junta um cereal integral, uma fruta ou legume e um alimento proteico.",
+      "Pensa em papas de aveia com frutos vermelhos e iogurte, ou ovos com pão integral e tomate.",
+      "Sem fome de manhã? Não faz mal; come quando o teu corpo pedir."
+     ],
+     "q": "Como é o teu pequeno-almoço habitual e o que gostas nele?",
+     "c": "Amanhã junta ao pequeno-almoço uma parte que falte, como uma fruta ou uma colher de iogurte."
+    },
+    "pt_BR": {
+     "t": "Montar um café da manhã melhor",
+     "g": "Combine grãos integrais, frutas e um alimento proteico para começar o dia com saciedade.",
+     "p": [
+      "Um bom café da manhã junta um grão integral, uma fruta ou legume e um alimento proteico.",
+      "Pense em aveia com frutas vermelhas e iogurte, ou ovos com pão integral e tomate.",
+      "Sem fome de manhã? Tudo bem; coma quando seu corpo pedir."
+     ],
+     "q": "Como é o seu café da manhã de sempre e do que você gosta nele?",
+     "c": "Amanhã acrescente ao café da manhã uma parte que falta, como uma fruta ou uma colher de iogurte."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Simple, balanced lunches",
+     "g": "Use the plate idea for quick lunches at home, school or work.",
+     "p": [
+      "Start with a base like rice, bread or pasta, then add vegetables and a protein food.",
+      "Leftovers, a sandwich with salad, or a bowl with beans all count as balanced lunches.",
+      "Keep it easy: a lunch you actually make beats a perfect lunch you skip."
+     ],
+     "q": "What is your go-to lunch, and what could you add to it?",
+     "c": "Build today's lunch with a base, a protein food and at least one vegetable."
+    },
+    "de": {
+     "t": "Einfache, ausgewogene Mittagessen",
+     "g": "Nutze die Tellerform für schnelle Mittagessen zu Hause, in der Schule oder bei der Arbeit.",
+     "p": [
+      "Beginne mit einer Basis wie Reis, Brot oder Nudeln, dann Gemüse und ein Eiweißlebensmittel dazu.",
+      "Reste, ein Sandwich mit Salat oder eine Schüssel mit Bohnen sind ausgewogene Mittagessen.",
+      "Halte es einfach: Ein Mittagessen, das du wirklich machst, schlägt ein perfektes, das ausfällt."
+     ],
+     "q": "Was ist dein Standard-Mittagessen, und was könntest du ergänzen?",
+     "c": "Baue heute dein Mittagessen aus Basis, Eiweißlebensmittel und mindestens einem Gemüse."
+    },
+    "es": {
+     "t": "Almuerzos sencillos y equilibrados",
+     "g": "Usa la idea del plato para almuerzos rápidos en casa, en la escuela o en el trabajo.",
+     "p": [
+      "Empieza con una base como arroz, pan o pasta y añade verduras y un alimento proteico.",
+      "Las sobras, un bocadillo con ensalada o un bol con legumbres son almuerzos equilibrados.",
+      "Hazlo fácil: un almuerzo que de verdad preparas vale más que uno perfecto que te saltas."
+     ],
+     "q": "¿Cuál es tu almuerzo de siempre y qué podrías añadirle?",
+     "c": "Hoy arma tu almuerzo con una base, un alimento proteico y al menos una verdura."
+    },
+    "fr": {
+     "t": "Des déjeuners simples et équilibrés",
+     "g": "Utilise l'idée de l'assiette pour des déjeuners rapides à la maison, à l'école ou au travail.",
+     "p": [
+      "Commence par une base comme du riz, du pain ou des pâtes, puis ajoute des légumes et un aliment protéiné.",
+      "Des restes, un sandwich avec de la salade ou un bol de haricots sont des déjeuners équilibrés.",
+      "Reste simple : un déjeuner que tu prépares vaut mieux qu'un déjeuner parfait que tu sautes."
+     ],
+     "q": "Quel est ton déjeuner habituel et que pourrais-tu y ajouter ?",
+     "c": "Compose aujourd'hui ton déjeuner avec une base, un aliment protéiné et au moins un légume."
+    },
+    "it": {
+     "t": "Pranzi semplici ed equilibrati",
+     "g": "Usa l'idea del piatto per pranzi veloci a casa, a scuola o al lavoro.",
+     "p": [
+      "Parti da una base come riso, pane o pasta, poi aggiungi verdure e un alimento proteico.",
+      "Gli avanzi, un panino con insalata o una ciotola con fagioli sono pranzi equilibrati.",
+      "Semplifica: un pranzo che prepari davvero vale più di uno perfetto che salti."
+     ],
+     "q": "Qual è il tuo pranzo di sempre e cosa potresti aggiungere?",
+     "c": "Oggi costruisci il pranzo con una base, un alimento proteico e almeno una verdura."
+    },
+    "pt": {
+     "t": "Almoços simples e equilibrados",
+     "g": "Usa a ideia do prato para almoços rápidos em casa, na escola ou no trabalho.",
+     "p": [
+      "Começa com uma base como arroz, pão ou massa e junta legumes e um alimento proteico.",
+      "Sobras, uma sandes com salada ou uma taça com feijão são almoços equilibrados.",
+      "Mantém simples: um almoço que fazes mesmo vale mais do que um perfeito que dispensas."
+     ],
+     "q": "Qual é o teu almoço habitual e o que podias juntar-lhe?",
+     "c": "Hoje monta o almoço com uma base, um alimento proteico e pelo menos um legume."
+    },
+    "pt_BR": {
+     "t": "Almoços simples e equilibrados",
+     "g": "Use a ideia do prato para almoços rápidos em casa, na escola ou no trabalho.",
+     "p": [
+      "Comece com uma base como arroz, pão ou macarrão e acrescente legumes e um alimento proteico.",
+      "Sobras, um sanduíche com salada ou uma tigela com feijão são almoços equilibrados.",
+      "Mantenha simples: um almoço que você realmente faz vale mais do que um perfeito que você pula."
+     ],
+     "q": "Qual é o seu almoço de sempre e o que você poderia acrescentar?",
+     "c": "Hoje monte o almoço com uma base, um alimento proteico e pelo menos um legume."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Easy weeknight dinners",
+     "g": "Try fast dinner ideas built from a few fresh and pantry ingredients.",
+     "p": [
+      "A good weeknight dinner can be pasta with vegetables and beans, or eggs with rice and greens.",
+      "Pantry staples plus one or two fresh items are enough for most evenings.",
+      "Ten simple recipes you know by heart make busy days much easier."
+     ],
+     "q": "What dinner do you cook when you are tired but still want something nice?",
+     "c": "Cook a dinner with fewer than six ingredients tonight and see how it goes."
+    },
+    "de": {
+     "t": "Einfache Abendessen unter der Woche",
+     "g": "Probiere schnelle Abendessen aus wenigen frischen und Vorratszutaten.",
+     "p": [
+      "Ein gutes Werktagsessen kann Pasta mit Gemüse und Bohnen sein oder Ei mit Reis und Grünzeug.",
+      "Vorratsbasics plus ein, zwei frische Zutaten reichen für die meisten Abende.",
+      "Zehn einfache Rezepte, die du auswendig kannst, machen volle Tage viel leichter."
+     ],
+     "q": "Welches Abendessen kochst du, wenn du müde bist, aber trotzdem etwas Schönes willst?",
+     "c": "Koche heute Abend etwas mit weniger als sechs Zutaten und schau, wie es läuft."
+    },
+    "es": {
+     "t": "Cenas fáciles entre semana",
+     "g": "Prueba cenas rápidas hechas con pocos ingredientes frescos y de despensa.",
+     "p": [
+      "Una buena cena entre semana puede ser pasta con verduras y legumbres, o huevos con arroz y verdura.",
+      "Los básicos de despensa más uno o dos productos frescos bastan para casi todas las noches.",
+      "Diez recetas sencillas que te sepas de memoria hacen los días ocupados mucho más fáciles."
+     ],
+     "q": "¿Qué cena cocinas cuando estás cansado pero quieres algo rico?",
+     "c": "Cocina esta noche una cena con menos de seis ingredientes y mira cómo va."
+    },
+    "fr": {
+     "t": "Dîners faciles en semaine",
+     "g": "Essaie des dîners rapides faits de quelques ingrédients frais et de placard.",
+     "p": [
+      "Un bon dîner de semaine peut être des pâtes avec des légumes et des haricots, ou des œufs avec du riz et des légumes verts.",
+      "Les basiques du placard plus un ou deux produits frais suffisent pour la plupart des soirs.",
+      "Dix recettes simples apprises par cœur facilitent beaucoup les journées chargées."
+     ],
+     "q": "Quel dîner cuisines-tu quand tu es fatigué mais que tu veux quelque chose de bon ?",
+     "c": "Ce soir, cuisine un dîner avec moins de six ingrédients et vois comment ça se passe."
+    },
+    "it": {
+     "t": "Cene facili in settimana",
+     "g": "Prova cene veloci fatte con pochi ingredienti freschi e di dispensa.",
+     "p": [
+      "Una buona cena infrasettimanale può essere pasta con verdure e fagioli, o uova con riso e verdure verdi.",
+      "I fondamentali della dispensa più uno o due freschi bastano per la maggior parte delle sere.",
+      "Dieci ricette semplici a memoria rendono le giornate piene molto più facili."
+     ],
+     "q": "Quale cena cucini quando sei stanco ma vuoi qualcosa di buono?",
+     "c": "Stasera cucina una cena con meno di sei ingredienti e vedi com'è andata."
+    },
+    "pt": {
+     "t": "Jantares fáceis durante a semana",
+     "g": "Experimenta jantares rápidos feitos com poucos ingredientes frescos e de despensa.",
+     "p": [
+      "Um bom jantar de semana pode ser massa com legumes e feijão, ou ovos com arroz e verduras.",
+      "Os básicos da despensa mais um ou dois produtos frescos chegam para a maioria das noites.",
+      "Dez receitas simples que saibas de cor tornam os dias cheios muito mais fáceis."
+     ],
+     "q": "Que jantar cozinhas quando estás cansado mas queres algo bom?",
+     "c": "Esta noite cozinha um jantar com menos de seis ingredientes e vê como corre."
+    },
+    "pt_BR": {
+     "t": "Jantares fáceis durante a semana",
+     "g": "Experimente jantares rápidos feitos com poucos ingredientes frescos e de despensa.",
+     "p": [
+      "Um bom jantar de semana pode ser macarrão com legumes e feijão, ou ovos com arroz e verduras.",
+      "Os básicos da despensa mais um ou dois itens frescos bastam para a maioria das noites.",
+      "Dez receitas simples que você sabe de cor deixam os dias corridos bem mais fáceis."
+     ],
+     "q": "Que jantar você faz quando está cansado mas quer algo gostoso?",
+     "c": "Hoje à noite faça um jantar com menos de seis ingredientes e veja como fica."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Smart snacking basics",
+     "g": "Choose snacks that combine fruit, vegetables, nuts or yoghurt to bridge the gap.",
+     "p": [
+      "A snack works well when it pairs fibre with a little protein or fat, like apple with peanut butter.",
+      "Snacks are useful when meals are far apart, and they are completely normal.",
+      "Eat them when you are actually hungry and sit down to enjoy them."
+     ],
+     "q": "What snack do you reach for most, and what makes it satisfying?",
+     "c": "Make one snack today with two parts, such as fruit plus nuts or veggie sticks plus hummus."
+    },
+    "de": {
+     "t": "Grundlagen für kluges Snacken",
+     "g": "Wähle Snacks mit Obst, Gemüse, Nüssen oder Joghurt, um die Zeit zu überbrücken.",
+     "p": [
+      "Ein Snack funktioniert gut, wenn er Ballaststoffe mit etwas Eiweiß oder Fett verbindet, etwa Apfel mit Erdnussmus.",
+      "Snacks sind nützlich, wenn Mahlzeiten weit auseinanderliegen, und völlig normal.",
+      "Iss sie, wenn du wirklich Hunger hast, und setz dich zum Genießen hin."
+     ],
+     "q": "Zu welchem Snack greifst du am häufigsten, und was macht ihn sättigend?",
+     "c": "Mach heute einen Snack mit zwei Teilen, etwa Obst mit Nüssen oder Gemüsesticks mit Hummus."
+    },
+    "es": {
+     "t": "Bases del picoteo inteligente",
+     "g": "Elige tentempiés con fruta, verdura, frutos secos o yogur para llegar a la siguiente comida.",
+     "p": [
+      "Un tentempié funciona bien si une fibra con algo de proteína o grasa, como manzana con crema de cacahuete.",
+      "Los tentempiés son útiles cuando las comidas quedan lejos y son totalmente normales.",
+      "Tómalos cuando de verdad tengas hambre y siéntate a disfrutarlos."
+     ],
+     "q": "¿Qué tentempié eliges más y qué lo hace saciante?",
+     "c": "Hoy prepara un tentempié con dos partes, como fruta y frutos secos o palitos de verdura con hummus."
+    },
+    "fr": {
+     "t": "Les bases d'une collation maligne",
+     "g": "Choisis des collations qui associent fruits, légumes, noix ou yaourt pour tenir jusqu'au prochain repas.",
+     "p": [
+      "Une collation marche bien quand elle associe des fibres à un peu de protéines ou de graisses, comme une pomme avec du beurre de cacahuète.",
+      "Les collations sont utiles quand les repas sont éloignés, et tout à fait normales.",
+      "Prends-les quand tu as vraiment faim et assieds-toi pour les savourer."
+     ],
+     "q": "Quelle collation choisis-tu le plus souvent, et qu'est-ce qui la rend rassasiante ?",
+     "c": "Aujourd'hui, prépare une collation en deux parties, comme fruit et noix ou bâtonnets de légumes et houmous."
+    },
+    "it": {
+     "t": "Le basi dello spuntino intelligente",
+     "g": "Scegli spuntini con frutta, verdura, frutta secca o yogurt per arrivare al pasto successivo.",
+     "p": [
+      "Uno spuntino funziona bene se unisce fibre a un po' di proteine o grassi, come mela e burro di arachidi.",
+      "Gli spuntini sono utili quando i pasti sono lontani e sono del tutto normali.",
+      "Mangiali quando hai davvero fame e siediti per gustarli."
+     ],
+     "q": "Quale spuntino scegli più spesso e cosa lo rende saziante?",
+     "c": "Oggi prepara uno spuntino in due parti, come frutta e noci o bastoncini di verdura e hummus."
+    },
+    "pt": {
+     "t": "Bases do lanche inteligente",
+     "g": "Escolhe lanches com fruta, legumes, frutos secos ou iogurte para chegar à refeição seguinte.",
+     "p": [
+      "Um lanche funciona bem quando junta fibra com um pouco de proteína ou gordura, como maçã com manteiga de amendoim.",
+      "Os lanches são úteis quando as refeições ficam longe e são completamente normais.",
+      "Come-os quando tens fome a sério e senta-te para os apreciar."
+     ],
+     "q": "Que lanche escolhes mais vezes e o que o torna saciante?",
+     "c": "Hoje faz um lanche com duas partes, como fruta com frutos secos ou palitos de legumes com húmus."
+    },
+    "pt_BR": {
+     "t": "Bases do lanche inteligente",
+     "g": "Escolha lanches com frutas, legumes, castanhas ou iogurte para chegar à próxima refeição.",
+     "p": [
+      "Um lanche funciona bem quando junta fibras com um pouco de proteína ou gordura, como maçã com pasta de amendoim.",
+      "Lanches são úteis quando as refeições ficam distantes e são totalmente normais.",
+      "Coma quando estiver com fome de verdade e sente-se para aproveitar."
+     ],
+     "q": "Que lanche você mais escolhe e o que o deixa saciante?",
+     "c": "Hoje faça um lanche com duas partes, como fruta com castanhas ou palitos de legumes com homus."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Eating with others",
+     "g": "See how shared meals with family or friends make eating more enjoyable.",
+     "p": [
+      "Eating together slows the pace and turns a meal into time for conversation.",
+      "It does not have to be dinner or fancy; a shared snack or video call lunch counts.",
+      "People often try new foods more happily when they share a table."
+     ],
+     "q": "Who do you most enjoy eating with, and what do you talk about?",
+     "c": "Share one meal or snack with someone today, in person or by phone, and enjoy the company."
+    },
+    "de": {
+     "t": "Gemeinsam essen",
+     "g": "Erlebe, wie gemeinsame Mahlzeiten mit Familie oder Freunden das Essen schöner machen.",
+     "p": [
+      "Gemeinsames Essen verlangsamt das Tempo und macht aus einer Mahlzeit Zeit zum Reden.",
+      "Es muss kein Abendessen und nichts Besonderes sein; ein geteilter Snack oder ein Mittagessen per Videoanruf zählt.",
+      "Mit anderen am Tisch probieren Menschen oft fröhlicher Neues."
+     ],
+     "q": "Mit wem isst du am liebsten, und worüber sprecht ihr?",
+     "c": "Teile heute eine Mahlzeit oder einen Snack mit jemandem, persönlich oder per Telefon, und genieße die Gesellschaft."
+    },
+    "es": {
+     "t": "Comer en compañía",
+     "g": "Descubre cómo las comidas compartidas con familia o amigos hacen más agradable el comer.",
+     "p": [
+      "Comer juntos baja el ritmo y convierte la comida en tiempo para conversar.",
+      "No tiene que ser una cena ni algo elegante; un tentempié compartido o un almuerzo por videollamada cuenta.",
+      "La gente suele probar cosas nuevas con más gusto cuando comparte mesa."
+     ],
+     "q": "¿Con quién disfrutas más comiendo y de qué hablan?",
+     "c": "Comparte hoy una comida o un tentempié con alguien, en persona o por teléfono, y disfruta de la compañía."
+    },
+    "fr": {
+     "t": "Manger avec les autres",
+     "g": "Vois comment les repas partagés avec la famille ou les amis rendent le repas plus agréable.",
+     "p": [
+      "Manger ensemble ralentit le rythme et fait du repas un moment de conversation.",
+      "Pas besoin d'un dîner ni de faste ; une collation partagée ou un déjeuner en visio compte.",
+      "On goûte souvent plus volontiers du nouveau quand on partage une table."
+     ],
+     "q": "Avec qui aimes-tu le plus manger, et de quoi parlez-vous ?",
+     "c": "Partage aujourd'hui un repas ou une collation avec quelqu'un, en personne ou au téléphone, et profite de la compagnie."
+    },
+    "it": {
+     "t": "Mangiare con gli altri",
+     "g": "Scopri come i pasti condivisi con famiglia o amici rendono il mangiare più piacevole.",
+     "p": [
+      "Mangiare insieme rallenta il ritmo e trasforma il pasto in tempo per parlare.",
+      "Non deve essere una cena né qualcosa di elaborato; uno spuntino condiviso o un pranzo in videochiamata conta.",
+      "Spesso si provano cibi nuovi più volentieri quando si condivide la tavola."
+     ],
+     "q": "Con chi ti piace di più mangiare e di cosa parlate?",
+     "c": "Oggi condividi un pasto o uno spuntino con qualcuno, di persona o al telefono, e goditi la compagnia."
+    },
+    "pt": {
+     "t": "Comer em companhia",
+     "g": "Descobre como as refeições partilhadas com família ou amigos tornam o comer mais agradável.",
+     "p": [
+      "Comer juntos abranda o ritmo e transforma a refeição em tempo de conversa.",
+      "Não tem de ser um jantar nem algo requintado; um lanche partilhado ou um almoço por videochamada conta.",
+      "As pessoas costumam provar novidades com mais gosto quando partilham a mesa."
+     ],
+     "q": "Com quem gostas mais de comer e de que falam?",
+     "c": "Hoje partilha uma refeição ou lanche com alguém, pessoalmente ou ao telefone, e aproveita a companhia."
+    },
+    "pt_BR": {
+     "t": "Comer em companhia",
+     "g": "Descubra como as refeições compartilhadas com família ou amigos deixam o comer mais agradável.",
+     "p": [
+      "Comer junto desacelera o ritmo e transforma a refeição em tempo de conversa.",
+      "Não precisa ser um jantar nem algo sofisticado; um lanche compartilhado ou um almoço por videochamada vale.",
+      "As pessoas costumam provar novidades com mais prazer quando dividem a mesa."
+     ],
+     "q": "Com quem você mais gosta de comer e sobre o que vocês conversam?",
+     "c": "Hoje divida uma refeição ou lanche com alguém, pessoalmente ou por telefone, e aproveite a companhia."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Food and mood",
+     "g": "Explore general links between regular meals, hydration and feeling energised.",
+     "p": [
+      "Going a long time without food or drink can leave many people tired or irritable.",
+      "Regular meals, water and a mix of foods often help energy feel steadier.",
+      "Mood has many causes, so food is one piece of the picture, not the whole story."
+     ],
+     "q": "When do you usually notice your energy dipping during the day?",
+     "c": "Today, notice how you feel an hour after a balanced meal and write down one word."
+    },
+    "de": {
+     "t": "Essen und Stimmung",
+     "g": "Entdecke allgemeine Zusammenhänge zwischen regelmäßigen Mahlzeiten, Trinken und Energie.",
+     "p": [
+      "Lange ohne Essen oder Trinken kann viele Menschen müde oder gereizt machen.",
+      "Regelmäßige Mahlzeiten, Wasser und eine bunte Mischung helfen oft, die Energie gleichmäßiger zu halten.",
+      "Stimmung hat viele Ursachen; Essen ist ein Teil des Bildes, nicht die ganze Geschichte."
+     ],
+     "q": "Wann merkst du im Tagesverlauf meist, dass deine Energie sinkt?",
+     "c": "Achte heute eine Stunde nach einer ausgewogenen Mahlzeit darauf, wie du dich fühlst, und notiere ein Wort."
+    },
+    "es": {
+     "t": "Comida y estado de ánimo",
+     "g": "Explora los vínculos generales entre comidas regulares, hidratación y sentirse con energía.",
+     "p": [
+      "Pasar mucho tiempo sin comer ni beber puede dejar a muchas personas cansadas o irritables.",
+      "Comidas regulares, agua y una mezcla de alimentos suelen ayudar a que la energía sea más estable.",
+      "El ánimo tiene muchas causas, así que la comida es una pieza, no toda la historia."
+     ],
+     "q": "¿Cuándo notas normalmente que baja tu energía durante el día?",
+     "c": "Hoy fíjate en cómo te sientes una hora después de una comida equilibrada y anota una palabra."
+    },
+    "fr": {
+     "t": "Alimentation et humeur",
+     "g": "Explore les liens généraux entre repas réguliers, hydratation et énergie.",
+     "p": [
+      "Rester longtemps sans manger ni boire peut rendre beaucoup de gens fatigués ou irritables.",
+      "Des repas réguliers, de l'eau et un mélange d'aliments aident souvent à garder une énergie plus stable.",
+      "L'humeur a de nombreuses causes : l'alimentation est une pièce du puzzle, pas toute l'histoire."
+     ],
+     "q": "Quand remarques-tu en général une baisse d'énergie dans la journée ?",
+     "c": "Aujourd'hui, remarque comment tu te sens une heure après un repas équilibré et note un mot."
+    },
+    "it": {
+     "t": "Cibo e umore",
+     "g": "Esplora i legami generali tra pasti regolari, idratazione ed energia.",
+     "p": [
+      "Stare a lungo senza cibo né acqua può lasciare molte persone stanche o irritabili.",
+      "Pasti regolari, acqua e un mix di alimenti spesso aiutano l'energia a essere più stabile.",
+      "L'umore ha molte cause: il cibo è un pezzo del quadro, non tutta la storia."
+     ],
+     "q": "Quando noti di solito un calo di energia durante la giornata?",
+     "c": "Oggi nota come ti senti un'ora dopo un pasto equilibrato e annota una parola."
+    },
+    "pt": {
+     "t": "Comida e humor",
+     "g": "Explora as ligações gerais entre refeições regulares, hidratação e sentir-se com energia.",
+     "p": [
+      "Passar muito tempo sem comer nem beber pode deixar muita gente cansada ou irritada.",
+      "Refeições regulares, água e uma mistura de alimentos ajudam muitas vezes a manter a energia mais estável.",
+      "O humor tem muitas causas, por isso a comida é uma peça, não toda a história."
+     ],
+     "q": "Quando costumas notar a energia a descer ao longo do dia?",
+     "c": "Hoje repara como te sentes uma hora depois de uma refeição equilibrada e anota uma palavra."
+    },
+    "pt_BR": {
+     "t": "Comida e humor",
+     "g": "Explore as ligações gerais entre refeições regulares, hidratação e sentir-se com energia.",
+     "p": [
+      "Passar muito tempo sem comer nem beber pode deixar muita gente cansada ou irritada.",
+      "Refeições regulares, água e uma mistura de alimentos costumam ajudar a manter a energia mais estável.",
+      "O humor tem muitas causas, então a comida é uma peça, não a história toda."
+     ],
+     "q": "Quando você costuma notar a energia caindo ao longo do dia?",
+     "c": "Hoje perceba como você se sente uma hora depois de uma refeição equilibrada e anote uma palavra."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Enjoying treats without guilt",
+     "g": "See why favourite treats can fit into a varied, relaxed way of eating.",
+     "p": [
+      "No single food makes or breaks your eating; the overall pattern matters most.",
+      "Treats eaten slowly and on purpose are usually more satisfying than rushed ones.",
+      "Calling foods bad often leads to guilt, which does not help anyone."
+     ],
+     "q": "What treat do you love so much that it deserves a proper moment?",
+     "c": "Enjoy one treat today, sitting down, without screens, and taste every bite."
+    },
+    "de": {
+     "t": "Genuss ohne schlechtes Gewissen",
+     "g": "Sieh, warum Lieblingsnaschereien in eine vielfältige, entspannte Ernährung passen.",
+     "p": [
+      "Kein einzelnes Lebensmittel entscheidet über dein Essen; das Gesamtbild zählt am meisten.",
+      "Leckereien, die du langsam und bewusst isst, sind meist befriedigender als hastige.",
+      "Lebensmittel schlecht zu nennen führt oft zu Schuldgefühlen, die niemandem helfen."
+     ],
+     "q": "Welche Leckerei liebst du so sehr, dass sie einen richtigen Moment verdient?",
+     "c": "Genieße heute eine Leckerei, sitzend und ohne Bildschirm, und schmecke jeden Bissen."
+    },
+    "es": {
+     "t": "Disfrutar de los caprichos sin culpa",
+     "g": "Descubre por qué tus caprichos favoritos caben en una forma de comer variada y relajada.",
+     "p": [
+      "Ningún alimento por sí solo decide cómo comes; lo que más cuenta es el conjunto.",
+      "Los caprichos comidos despacio y con intención suelen ser más satisfactorios que los rápidos.",
+      "Llamar malos a los alimentos suele llevar a la culpa, que no ayuda a nadie."
+     ],
+     "q": "¿Qué capricho te gusta tanto que merece su propio momento?",
+     "c": "Hoy disfruta un capricho sentado, sin pantallas, y saborea cada bocado."
+    },
+    "fr": {
+     "t": "Savourer ses plaisirs sans culpabilité",
+     "g": "Vois pourquoi tes gourmandises préférées ont leur place dans une alimentation variée et détendue.",
+     "p": [
+      "Aucun aliment ne fait ou ne défait ton alimentation ; c'est l'ensemble qui compte le plus.",
+      "Une gourmandise mangée lentement et exprès est souvent plus satisfaisante qu'une avalée en vitesse.",
+      "Traiter des aliments de mauvais mène souvent à la culpabilité, qui n'aide personne."
+     ],
+     "q": "Quelle gourmandise aimes-tu assez pour lui offrir un vrai moment ?",
+     "c": "Aujourd'hui, savoure une gourmandise assis, sans écran, et goûte chaque bouchée."
+    },
+    "it": {
+     "t": "Gustare i peccati di gola senza colpa",
+     "g": "Scopri perché i tuoi dolcetti preferiti stanno bene in un modo di mangiare vario e rilassato.",
+     "p": [
+      "Nessun singolo cibo decide come mangi; conta di più il quadro generale.",
+      "Un dolcetto mangiato lentamente e di proposito di solito soddisfa più di uno mangiato in fretta.",
+      "Definire i cibi cattivi spesso porta al senso di colpa, che non aiuta nessuno."
+     ],
+     "q": "Quale sfizio ami così tanto da meritare un momento tutto suo?",
+     "c": "Oggi gusta un dolcetto seduto, senza schermi, e assapora ogni boccone."
+    },
+    "pt": {
+     "t": "Apreciar os miminhos sem culpa",
+     "g": "Percebe porque é que os teus miminhos favoritos cabem numa forma de comer variada e descontraída.",
+     "p": [
+      "Nenhum alimento sozinho decide a tua alimentação; o que mais conta é o conjunto.",
+      "Os miminhos comidos devagar e de propósito costumam saciar mais do que os comidos à pressa.",
+      "Chamar mau aos alimentos leva muitas vezes à culpa, que não ajuda ninguém."
+     ],
+     "q": "Que miminho gostas tanto que merece um momento a sério?",
+     "c": "Hoje aprecia um miminho sentado, sem ecrãs, e saboreia cada garfada."
+    },
+    "pt_BR": {
+     "t": "Curtir os petiscos sem culpa",
+     "g": "Entenda por que seus agrados favoritos cabem em um jeito de comer variado e tranquilo.",
+     "p": [
+      "Nenhum alimento sozinho decide a sua alimentação; o que mais conta é o conjunto.",
+      "Agrados comidos devagar e de propósito costumam satisfazer mais do que os comidos às pressas.",
+      "Chamar alimentos de ruins muitas vezes leva à culpa, que não ajuda ninguém."
+     ],
+     "q": "Que agrado você ama tanto que merece um momento de verdade?",
+     "c": "Hoje curta um agrado sentado, sem telas, e sinta o gosto de cada garfada."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Every body is different",
+     "g": "Respect that needs vary and that a doctor or dietitian helps with individual questions.",
+     "p": [
+      "Age, health, activity, culture and medical conditions all shape what a person needs.",
+      "What suits a friend may not suit you, so comparing plates is not very useful.",
+      "For allergies or health conditions, a doctor or registered dietitian is the right guide."
+     ],
+     "q": "What is one thing about your own body and eating that you have learned from experience?",
+     "c": "Today, notice what makes your body feel good at a meal, without comparing it to anyone."
+    },
+    "de": {
+     "t": "Jeder Körper ist anders",
+     "g": "Respektiere, dass Bedürfnisse verschieden sind und Ärztin oder Ernährungsberater bei persönlichen Fragen helfen.",
+     "p": [
+      "Alter, Gesundheit, Aktivität, Kultur und Erkrankungen prägen, was ein Mensch braucht.",
+      "Was einer Freundin guttut, passt vielleicht nicht zu dir, darum bringt Teller-Vergleichen wenig.",
+      "Bei Allergien oder Gesundheitsfragen sind Ärztin oder staatlich anerkannte Ernährungsfachkraft die richtigen Ansprechpartner."
+     ],
+     "q": "Was hast du aus Erfahrung über deinen eigenen Körper und dein Essen gelernt?",
+     "c": "Achte heute darauf, was deinem Körper bei einer Mahlzeit guttut, ohne dich zu vergleichen."
+    },
+    "es": {
+     "t": "Cada cuerpo es distinto",
+     "g": "Respeta que las necesidades varían y que un médico o dietista ayuda con las dudas personales.",
+     "p": [
+      "La edad, la salud, la actividad, la cultura y las condiciones médicas influyen en lo que necesita cada persona.",
+      "Lo que le sienta bien a un amigo puede no irte a ti, así que comparar platos sirve de poco.",
+      "Para alergias o problemas de salud, la guía adecuada es un médico o un dietista titulado."
+     ],
+     "q": "¿Qué has aprendido por experiencia sobre tu propio cuerpo y tu forma de comer?",
+     "c": "Hoy fíjate en qué hace que tu cuerpo se sienta bien en una comida, sin compararte con nadie."
+    },
+    "fr": {
+     "t": "Chaque corps est différent",
+     "g": "Respecte le fait que les besoins varient et qu'un médecin ou un diététicien aide pour les questions personnelles.",
+     "p": [
+      "L'âge, la santé, l'activité, la culture et les problèmes médicaux influencent ce dont une personne a besoin.",
+      "Ce qui convient à un ami peut ne pas te convenir : comparer les assiettes sert peu.",
+      "Pour les allergies ou les questions de santé, un médecin ou un diététicien diplômé est le bon guide."
+     ],
+     "q": "Qu'as-tu appris par expérience sur ton propre corps et ta façon de manger ?",
+     "c": "Aujourd'hui, remarque ce qui fait du bien à ton corps lors d'un repas, sans te comparer."
+    },
+    "it": {
+     "t": "Ogni corpo è diverso",
+     "g": "Rispetta il fatto che i bisogni variano e che medico o dietista aiutano con le domande personali.",
+     "p": [
+      "Età, salute, attività, cultura e condizioni mediche influenzano ciò di cui una persona ha bisogno.",
+      "Ciò che va bene a un amico può non andare bene a te, quindi confrontare i piatti serve a poco.",
+      "Per allergie o problemi di salute la guida giusta è un medico o un dietista abilitato."
+     ],
+     "q": "Cosa hai imparato per esperienza sul tuo corpo e sul tuo modo di mangiare?",
+     "c": "Oggi nota cosa fa stare bene il tuo corpo a un pasto, senza confrontarti con nessuno."
+    },
+    "pt": {
+     "t": "Cada corpo é diferente",
+     "g": "Respeita que as necessidades variam e que um médico ou nutricionista ajuda nas dúvidas pessoais.",
+     "p": [
+      "A idade, a saúde, a atividade, a cultura e as condições médicas influenciam o que cada pessoa precisa.",
+      "O que serve a um amigo pode não servir a ti, por isso comparar pratos serve de pouco.",
+      "Para alergias ou problemas de saúde, o guia certo é um médico ou um nutricionista qualificado."
+     ],
+     "q": "O que aprendeste por experiência sobre o teu corpo e a tua forma de comer?",
+     "c": "Hoje repara no que faz o teu corpo sentir-se bem numa refeição, sem te comparares com ninguém."
+    },
+    "pt_BR": {
+     "t": "Cada corpo é diferente",
+     "g": "Respeite que as necessidades variam e que um médico ou nutricionista ajuda nas dúvidas pessoais.",
+     "p": [
+      "Idade, saúde, atividade, cultura e condições médicas influenciam o que cada pessoa precisa.",
+      "O que serve para uma amiga pode não servir para você, então comparar pratos adianta pouco.",
+      "Para alergias ou problemas de saúde, o guia certo é um médico ou um nutricionista habilitado."
+     ],
+     "q": "O que você aprendeu por experiência sobre o seu corpo e o seu jeito de comer?",
+     "c": "Hoje perceba o que faz seu corpo se sentir bem em uma refeição, sem se comparar com ninguém."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kind words about food and bodies",
+     "g": "Talk about food and bodies with kindness, without labels like good or bad.",
+     "p": [
+      "Words shape feelings: saying everyday food or sometimes food is gentler than good or bad.",
+      "Comments about your own or other people's bodies are best kept kind or left out.",
+      "A calm, curious tone about food helps everyone at the table, especially children."
+     ],
+     "q": "What kind words would you like to hear at the table?",
+     "c": "Today, catch one harsh food comment in your head and rephrase it kindly."
+    },
+    "de": {
+     "t": "Freundliche Worte über Essen und Körper",
+     "g": "Sprich über Essen und Körper mit Freundlichkeit und ohne Etiketten wie gut oder schlecht.",
+     "p": [
+      "Worte prägen Gefühle: Alltagsessen oder Manchmal-Essen klingt sanfter als gut oder schlecht.",
+      "Kommentare über den eigenen oder fremde Körper sind am besten freundlich oder bleiben weg.",
+      "Ein ruhiger, neugieriger Ton beim Essen hilft allen am Tisch, besonders Kindern."
+     ],
+     "q": "Welche freundlichen Worte würdest du dir bei Tisch wünschen?",
+     "c": "Ertappe heute einen harten Gedanken über Essen und formuliere ihn freundlich um."
+    },
+    "es": {
+     "t": "Palabras amables sobre la comida y el cuerpo",
+     "g": "Habla de comida y cuerpos con amabilidad, sin etiquetas como bueno o malo.",
+     "p": [
+      "Las palabras moldean las emociones: decir alimento de diario o de a veces es más suave que bueno o malo.",
+      "Los comentarios sobre tu cuerpo o el de otros mejor amables o mejor no hacerlos.",
+      "Un tono tranquilo y curioso sobre la comida ayuda a todos en la mesa, sobre todo a los niños."
+     ],
+     "q": "¿Qué palabras amables te gustaría oír en la mesa?",
+     "c": "Hoy atrapa un comentario duro sobre comida en tu cabeza y reformúlalo con amabilidad."
+    },
+    "fr": {
+     "t": "Des mots doux sur la nourriture et les corps",
+     "g": "Parle de nourriture et de corps avec bienveillance, sans étiquettes comme bon ou mauvais.",
+     "p": [
+      "Les mots façonnent les émotions : dire aliment du quotidien ou de temps en temps est plus doux que bon ou mauvais.",
+      "Les remarques sur ton corps ou celui des autres sont mieux bienveillantes ou gardées pour soi.",
+      "Un ton calme et curieux sur la nourriture aide toute la table, surtout les enfants."
+     ],
+     "q": "Quels mots doux aimerais-tu entendre à table ?",
+     "c": "Aujourd'hui, attrape une remarque dure sur la nourriture dans ta tête et reformule-la gentiment."
+    },
+    "it": {
+     "t": "Parole gentili su cibo e corpi",
+     "g": "Parla di cibo e corpi con gentilezza, senza etichette come buono o cattivo.",
+     "p": [
+      "Le parole plasmano le emozioni: dire cibo di ogni giorno o di ogni tanto è più dolce di buono o cattivo.",
+      "I commenti sul tuo corpo o su quello degli altri sono meglio se gentili o taciuti.",
+      "Un tono calmo e curioso sul cibo aiuta tutti a tavola, soprattutto i bambini."
+     ],
+     "q": "Quali parole gentili ti piacerebbe sentire a tavola?",
+     "c": "Oggi cattura un commento duro sul cibo nella tua testa e riformulalo con gentilezza."
+    },
+    "pt": {
+     "t": "Palavras gentis sobre comida e corpos",
+     "g": "Fala de comida e de corpos com gentileza, sem rótulos como bom ou mau.",
+     "p": [
+      "As palavras moldam as emoções: dizer alimento de todos os dias ou de vez em quando é mais suave do que bom ou mau.",
+      "Comentários sobre o teu corpo ou o dos outros são melhores quando gentis ou ficam por dizer.",
+      "Um tom calmo e curioso sobre a comida ajuda toda a gente à mesa, sobretudo as crianças."
+     ],
+     "q": "Que palavras gentis gostarias de ouvir à mesa?",
+     "c": "Hoje apanha um comentário duro sobre comida na tua cabeça e reformula-o com gentileza."
+    },
+    "pt_BR": {
+     "t": "Palavras gentis sobre comida e corpos",
+     "g": "Fale de comida e de corpos com gentileza, sem rótulos como bom ou ruim.",
+     "p": [
+      "As palavras moldam as emoções: dizer alimento do dia a dia ou de vez em quando é mais suave do que bom ou ruim.",
+      "Comentários sobre o seu corpo ou o dos outros são melhores quando gentis ou ficam sem ser ditos.",
+      "Um tom calmo e curioso sobre a comida ajuda todo mundo à mesa, principalmente as crianças."
+     ],
+     "q": "Que palavras gentis você gostaria de ouvir à mesa?",
+     "c": "Hoje pegue um comentário duro sobre comida na sua cabeça e reformule com gentileza."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Month one review",
+     "g": "Look back at the balanced plate, water, fibre and mindful eating habits.",
+     "p": [
+      "Recap the basics: variety, a balanced plate, water, fibre and slowing down.",
+      "Think about which small change felt easiest and which one you enjoyed most.",
+      "Celebrate the progress; thirty days of curiosity is a real achievement."
+     ],
+     "q": "Which habit from this month do you want to keep, and why?",
+     "c": "Pick your favourite habit from this month and plan when you will do it again this week."
+    },
+    "de": {
+     "t": "Rückblick auf Monat eins",
+     "g": "Schau auf den ausgewogenen Teller, Wasser, Ballaststoffe und achtsames Essen zurück.",
+     "p": [
+      "Wiederhole die Grundlagen: Vielfalt, ausgewogener Teller, Wasser, Ballaststoffe und langsamer essen.",
+      "Überlege, welche kleine Veränderung am leichtesten war und welche dir am meisten Freude machte.",
+      "Feiere den Fortschritt; dreißig Tage Neugier sind eine echte Leistung."
+     ],
+     "q": "Welche Gewohnheit dieses Monats möchtest du behalten, und warum?",
+     "c": "Wähle deine Lieblingsgewohnheit dieses Monats und plane, wann du sie diese Woche wiederholst."
+    },
+    "es": {
+     "t": "Repaso del primer mes",
+     "g": "Mira atrás: plato equilibrado, agua, fibra y hábitos de comer con atención.",
+     "p": [
+      "Repasa lo básico: variedad, plato equilibrado, agua, fibra y comer más despacio.",
+      "Piensa qué cambio pequeño te resultó más fácil y cuál disfrutaste más.",
+      "Celebra el avance; treinta días de curiosidad son un logro de verdad."
+     ],
+     "q": "¿Qué hábito de este mes quieres conservar y por qué?",
+     "c": "Elige tu hábito favorito de este mes y planea cuándo lo repetirás esta semana."
+    },
+    "fr": {
+     "t": "Bilan du premier mois",
+     "g": "Reviens sur l'assiette équilibrée, l'eau, les fibres et l'alimentation en pleine conscience.",
+     "p": [
+      "Rappel des bases : variété, assiette équilibrée, eau, fibres et manger plus lentement.",
+      "Pense au petit changement le plus facile et à celui que tu as le plus aimé.",
+      "Célèbre tes progrès ; trente jours de curiosité, c'est une vraie réussite."
+     ],
+     "q": "Quelle habitude de ce mois veux-tu garder, et pourquoi ?",
+     "c": "Choisis ton habitude préférée du mois et prévois quand la refaire cette semaine."
+    },
+    "it": {
+     "t": "Ripasso del primo mese",
+     "g": "Guarda indietro al piatto equilibrato, all'acqua, alle fibre e al mangiare con attenzione.",
+     "p": [
+      "Ripassa le basi: varietà, piatto equilibrato, acqua, fibre e mangiare più lentamente.",
+      "Pensa quale piccolo cambiamento è stato più facile e quale ti è piaciuto di più.",
+      "Festeggia i progressi; trenta giorni di curiosità sono un vero traguardo."
+     ],
+     "q": "Quale abitudine di questo mese vuoi tenere e perché?",
+     "c": "Scegli la tua abitudine preferita del mese e pianifica quando ripeterla questa settimana."
+    },
+    "pt": {
+     "t": "Revisão do primeiro mês",
+     "g": "Olha para trás: prato equilibrado, água, fibra e hábitos de comer com atenção.",
+     "p": [
+      "Revê o essencial: variedade, prato equilibrado, água, fibra e comer mais devagar.",
+      "Pensa que pequena mudança foi mais fácil e qual apreciaste mais.",
+      "Celebra o progresso; trinta dias de curiosidade são uma conquista a sério."
+     ],
+     "q": "Que hábito deste mês queres manter e porquê?",
+     "c": "Escolhe o teu hábito favorito deste mês e planeia quando o vais repetir esta semana."
+    },
+    "pt_BR": {
+     "t": "Revisão do primeiro mês",
+     "g": "Olhe para trás: prato equilibrado, água, fibras e hábitos de comer com atenção.",
+     "p": [
+      "Reveja o essencial: variedade, prato equilibrado, água, fibras e comer mais devagar.",
+      "Pense em qual pequena mudança foi mais fácil e qual você mais curtiu.",
+      "Comemore o progresso; trinta dias de curiosidade são uma conquista de verdade."
+     ],
+     "q": "Que hábito deste mês você quer manter e por quê?",
+     "c": "Escolha seu hábito favorito deste mês e planeje quando vai repeti-lo esta semana."
+    }
+   }
+  }
+ ]
+}

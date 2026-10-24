@@ -1,0 +1,835 @@
+{
+ "topic": "board_games",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Luck and skill",
+     "g": "See how dice and cards mix with smart decisions.",
+     "p": [
+      "In pure luck games, like many simple dice races, choices matter little.",
+      "In skill games, like chess, no dice are used and planning decides.",
+      "Many games blend both: luck sets the situation, skill uses it well."
+     ],
+     "q": "Do you prefer games with more luck or more skill, and why?",
+     "c": "Name one game with lots of luck and one with lots of skill."
+    },
+    "de": {
+     "t": "Glück und Geschick",
+     "g": "Sieh, wie Würfel und Karten mit klugen Entscheidungen zusammenspielen.",
+     "p": [
+      "Bei reinen Glücksspielen, etwa einfachen Würfelrennen, zählen Entscheidungen wenig.",
+      "Bei Geschicklichkeits- und Denkspielen wie Schach entscheidet die Planung.",
+      "Viele Spiele mischen beides: Glück schafft die Lage, Geschick nutzt sie."
+     ],
+     "q": "Magst du lieber Spiele mit mehr Glück oder mehr Geschick, und warum?",
+     "c": "Nenne ein Spiel mit viel Glück und eines mit viel Geschick."
+    },
+    "es": {
+     "t": "Suerte y habilidad",
+     "g": "Mira cómo se mezclan los dados y las cartas con las buenas decisiones.",
+     "p": [
+      "En juegos de pura suerte, como carreras de dados simples, decides poco.",
+      "En juegos de habilidad, como el ajedrez, no hay dados y decide el plan.",
+      "Muchos juegos mezclan ambos: la suerte da la situación y la habilidad la aprovecha."
+     ],
+     "q": "¿Prefieres juegos con más suerte o con más habilidad, y por qué?",
+     "c": "Nombra un juego con mucha suerte y otro con mucha habilidad."
+    },
+    "fr": {
+     "t": "Chance et habileté",
+     "g": "Vois comment dés et cartes se mêlent aux bonnes décisions.",
+     "p": [
+      "Dans les jeux de pure chance, comme certaines courses de dés, tes choix comptent peu.",
+      "Dans les jeux d'adresse ou de réflexion, comme les échecs, le plan décide.",
+      "Beaucoup de jeux mêlent les deux : la chance crée la situation, l'habileté l'exploite."
+     ],
+     "q": "Préfères-tu les jeux avec plus de chance ou plus d'habileté, et pourquoi ?",
+     "c": "Cite un jeu avec beaucoup de chance et un avec beaucoup d'habileté."
+    },
+    "it": {
+     "t": "Fortuna e abilità",
+     "g": "Guarda come dadi e carte si mescolano alle decisioni intelligenti.",
+     "p": [
+      "Nei giochi di pura fortuna, come certe corse di dadi, le scelte contano poco.",
+      "Nei giochi di abilità, come gli scacchi, niente dadi: decide il piano.",
+      "Molti giochi uniscono i due: la fortuna crea la situazione, l'abilità la sfrutta."
+     ],
+     "q": "Preferisci giochi con più fortuna o più abilità, e perché?",
+     "c": "Nomina un gioco con molta fortuna e uno con molta abilità."
+    },
+    "pt": {
+     "t": "Sorte e habilidade",
+     "g": "Vê como dados e cartas se misturam com boas decisões.",
+     "p": [
+      "Em jogos de pura sorte, como certas corridas de dados, decides pouco.",
+      "Em jogos de habilidade, como o xadrez, não há dados e decide o plano.",
+      "Muitos jogos misturam ambos: a sorte cria a situação, a habilidade aproveita-a."
+     ],
+     "q": "Preferes jogos com mais sorte ou mais habilidade, e porquê?",
+     "c": "Diz um jogo com muita sorte e outro com muita habilidade."
+    },
+    "pt_BR": {
+     "t": "Sorte e habilidade",
+     "g": "Veja como dados e cartas se misturam com boas decisões.",
+     "p": [
+      "Em jogos de pura sorte, como certas corridas de dados, você decide pouco.",
+      "Em jogos de habilidade, como o xadrez, não há dados e o plano decide.",
+      "Muitos jogos misturam os dois: a sorte cria a situação, a habilidade aproveita."
+     ],
+     "q": "Você prefere jogos com mais sorte ou mais habilidade, e por quê?",
+     "c": "Diga um jogo com muita sorte e outro com muita habilidade."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A first map of game families",
+     "g": "Meet the main families of games and what they feel like.",
+     "p": [
+      "Abstract games, like chess, are pure strategy with little theme.",
+      "Family and party games are easy, social and often funny.",
+      "Strategy and cooperative games ask you to plan or to win as a team."
+     ],
+     "q": "Which family sounds most like your style: abstract, party or cooperative?",
+     "c": "Place three games you know into three different families."
+    },
+    "de": {
+     "t": "Eine erste Landkarte der Spielefamilien",
+     "g": "Lerne die Hauptfamilien der Spiele und ihr Gefühl kennen.",
+     "p": [
+      "Abstrakte Spiele wie Schach sind reine Strategie mit wenig Thema.",
+      "Familien- und Partyspiele sind leicht, gesellig und oft lustig.",
+      "Strategie- und Koop-Spiele verlangen Planung oder Teamsieg."
+     ],
+     "q": "Welche Familie passt am besten zu dir: abstrakt, Party oder kooperativ?",
+     "c": "Ordne drei Spiele, die du kennst, drei verschiedenen Familien zu."
+    },
+    "es": {
+     "t": "Un primer mapa de familias de juegos",
+     "g": "Conoce las grandes familias de juegos y cómo se sienten.",
+     "p": [
+      "Los juegos abstractos, como el ajedrez, son estrategia pura con poco tema.",
+      "Los juegos familiares y de fiesta son fáciles, sociales y divertidos.",
+      "Los de estrategia y cooperativos piden planear o ganar en equipo."
+     ],
+     "q": "¿Qué familia se parece más a tu estilo: abstracta, de fiesta o cooperativa?",
+     "c": "Coloca tres juegos que conozcas en tres familias distintas."
+    },
+    "fr": {
+     "t": "Une première carte des familles de jeux",
+     "g": "Découvre les grandes familles de jeux et leur ambiance.",
+     "p": [
+      "Les jeux abstraits, comme les échecs, sont de la stratégie pure sans thème.",
+      "Les jeux familiaux et d'ambiance sont simples, sociaux et souvent drôles.",
+      "Les jeux de stratégie et coopératifs demandent de planifier ou de gagner ensemble."
+     ],
+     "q": "Quelle famille te ressemble le plus : abstrait, ambiance ou coopératif ?",
+     "c": "Range trois jeux que tu connais dans trois familles différentes."
+    },
+    "it": {
+     "t": "Una prima mappa delle famiglie di giochi",
+     "g": "Conosci le grandi famiglie di giochi e il loro carattere.",
+     "p": [
+      "I giochi astratti, come gli scacchi, sono strategia pura con poco tema.",
+      "I giochi per famiglie e da festa sono facili, sociali e spesso buffi.",
+      "Quelli di strategia e cooperativi chiedono di pianificare o vincere insieme."
+     ],
+     "q": "Quale famiglia somiglia di più al tuo stile: astratti, party o cooperativi?",
+     "c": "Colloca tre giochi che conosci in tre famiglie diverse."
+    },
+    "pt": {
+     "t": "Um primeiro mapa das famílias de jogos",
+     "g": "Conhece as grandes famílias de jogos e o seu feitio.",
+     "p": [
+      "Os jogos abstratos, como o xadrez, são estratégia pura com pouco tema.",
+      "Os jogos familiares e de festa são fáceis, sociais e muitas vezes giros.",
+      "Os de estratégia e cooperativos pedem planeamento ou vitória em equipa."
+     ],
+     "q": "Que família se parece mais com o teu estilo: abstrata, de festa ou cooperativa?",
+     "c": "Coloca três jogos que conheces em três famílias diferentes."
+    },
+    "pt_BR": {
+     "t": "Um primeiro mapa das famílias de jogos",
+     "g": "Conheça as grandes famílias de jogos e o jeitinho de cada uma.",
+     "p": [
+      "Os jogos abstratos, como o xadrez, são estratégia pura com pouco tema.",
+      "Os jogos de família e de festa são fáceis, sociais e muitas vezes engraçados.",
+      "Os de estratégia e cooperativos pedem planejamento ou vitória em equipe."
+     ],
+     "q": "Qual família combina mais com seu estilo: abstrata, de festa ou cooperativa?",
+     "c": "Coloque três jogos que você conhece em três famílias diferentes."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dice basics",
+     "g": "Understand six-sided dice, special dice and what rolling adds.",
+     "p": [
+      "A standard die has six faces, and each number has an equal chance.",
+      "Two dice add together: seven is the most common total.",
+      "Special dice show symbols or have more sides, like ten or twenty."
+     ],
+     "q": "Which game with dice do you enjoy most, and why?",
+     "c": "Roll two dice twenty times and note which total appears most."
+    },
+    "de": {
+     "t": "Würfel-Grundlagen",
+     "g": "Verstehe sechsseitige Würfel, Spezialwürfel und was Würfeln bringt.",
+     "p": [
+      "Ein normaler Würfel hat sechs Seiten, jede Zahl hat die gleiche Chance.",
+      "Zwei Würfel addiert: Sieben ist die häufigste Summe.",
+      "Spezialwürfel zeigen Symbole oder haben mehr Seiten, etwa zehn oder zwanzig."
+     ],
+     "q": "Welches Würfelspiel magst du am liebsten, und warum?",
+     "c": "Würfle zwanzigmal mit zwei Würfeln und notiere die häufigste Summe."
+    },
+    "es": {
+     "t": "Fundamentos de los dados",
+     "g": "Entiende los dados de seis caras, los especiales y qué aporta tirarlos.",
+     "p": [
+      "Un dado normal tiene seis caras y cada número tiene la misma probabilidad.",
+      "Con dos dados se suma: el siete es el total más frecuente.",
+      "Los dados especiales muestran símbolos o tienen más caras, como diez o veinte."
+     ],
+     "q": "¿Qué juego con dados disfrutas más y por qué?",
+     "c": "Tira dos dados veinte veces y anota qué total sale más."
+    },
+    "fr": {
+     "t": "Les bases des dés",
+     "g": "Comprends les dés à six faces, les dés spéciaux et ce que lancer apporte.",
+     "p": [
+      "Un dé classique a six faces, et chaque chiffre a la même chance.",
+      "Avec deux dés on additionne : le sept est le total le plus fréquent.",
+      "Les dés spéciaux montrent des symboles ou ont plus de faces, dix ou vingt."
+     ],
+     "q": "Quel jeu de dés aimes-tu le plus, et pourquoi ?",
+     "c": "Lance deux dés vingt fois et note quel total sort le plus."
+    },
+    "it": {
+     "t": "Le basi dei dadi",
+     "g": "Capisci i dadi a sei facce, quelli speciali e cosa aggiunge il lancio.",
+     "p": [
+      "Un dado normale ha sei facce e ogni numero ha la stessa probabilità.",
+      "Con due dadi si somma: il sette è il totale più frequente.",
+      "I dadi speciali hanno simboli o più facce, come dieci o venti."
+     ],
+     "q": "Quale gioco con i dadi ti piace di più, e perché?",
+     "c": "Lancia due dadi venti volte e segna quale totale esce più spesso."
+    },
+    "pt": {
+     "t": "Noções básicas de dados",
+     "g": "Percebe os dados de seis faces, os especiais e o que o lançamento traz.",
+     "p": [
+      "Um dado normal tem seis faces e cada número tem a mesma probabilidade.",
+      "Com dois dados somam-se: o sete é o total mais frequente.",
+      "Os dados especiais têm símbolos ou mais faces, como dez ou vinte."
+     ],
+     "q": "Que jogo de dados gostas mais, e porquê?",
+     "c": "Lança dois dados vinte vezes e anota que total sai mais."
+    },
+    "pt_BR": {
+     "t": "Noções básicas de dados",
+     "g": "Entenda os dados de seis faces, os especiais e o que o lançamento traz.",
+     "p": [
+      "Um dado comum tem seis faces e cada número tem a mesma chance.",
+      "Com dois dados somam-se os valores: o sete é o total mais comum.",
+      "Dados especiais têm símbolos ou mais faces, como dez ou vinte."
+     ],
+     "q": "Qual jogo de dados você mais curte, e por quê?",
+     "c": "Jogue dois dados vinte vezes e anote qual total sai mais."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cards in board games",
+     "g": "See how drawing, holding and playing cards drive a game.",
+     "p": [
+      "A deck gives hidden information: you do not know what comes next.",
+      "Your hand is your private set of options for the turn.",
+      "Cards can mean actions, resources, goals or events."
+     ],
+     "q": "Do you like surprises from a deck, or prefer to plan with everything open?",
+     "c": "Shuffle a deck and guess three cards before turning them over."
+    },
+    "de": {
+     "t": "Karten in Brettspielen",
+     "g": "Sieh, wie Ziehen, Halten und Ausspielen von Karten ein Spiel antreiben.",
+     "p": [
+      "Ein Stapel verbirgt Information: Man weiß nicht, was als Nächstes kommt.",
+      "Deine Hand ist dein privater Vorrat an Möglichkeiten für den Zug.",
+      "Karten können Aktionen, Rohstoffe, Ziele oder Ereignisse bedeuten."
+     ],
+     "q": "Magst du Überraschungen aus dem Stapel oder planst du lieber mit offenen Karten?",
+     "c": "Mische ein Kartenspiel und rate drei Karten, bevor du sie aufdeckst."
+    },
+    "es": {
+     "t": "Las cartas en los juegos de mesa",
+     "g": "Mira cómo robar, tener y jugar cartas mueve un juego.",
+     "p": [
+      "Un mazo da información oculta: no sabes qué viene después.",
+      "Tu mano es tu conjunto privado de opciones para el turno.",
+      "Las cartas pueden ser acciones, recursos, objetivos o eventos."
+     ],
+     "q": "¿Te gustan las sorpresas del mazo o prefieres planear con todo a la vista?",
+     "c": "Baraja un mazo y adivina tres cartas antes de darles la vuelta."
+    },
+    "fr": {
+     "t": "Les cartes dans les jeux de société",
+     "g": "Vois comment piocher, garder et jouer des cartes fait avancer un jeu.",
+     "p": [
+      "Une pioche cache l'information : tu ne sais pas ce qui vient ensuite.",
+      "Ta main est ton ensemble privé d'options pour le tour.",
+      "Les cartes peuvent être des actions, des ressources, des objectifs ou des événements."
+     ],
+     "q": "Aimes-tu les surprises de la pioche ou préfères-tu planifier à découvert ?",
+     "c": "Mélange un paquet et devine trois cartes avant de les retourner."
+    },
+    "it": {
+     "t": "Le carte nei giochi da tavolo",
+     "g": "Vedi come pescare, tenere e giocare carte muove un gioco.",
+     "p": [
+      "Un mazzo nasconde informazioni: non sai cosa arriva dopo.",
+      "La tua mano è il tuo insieme privato di opzioni per il turno.",
+      "Le carte possono essere azioni, risorse, obiettivi o eventi."
+     ],
+     "q": "Ti piacciono le sorprese del mazzo o preferisci pianificare a carte scoperte?",
+     "c": "Mescola un mazzo e indovina tre carte prima di girarle."
+    },
+    "pt": {
+     "t": "As cartas nos jogos de tabuleiro",
+     "g": "Vê como tirar, guardar e jogar cartas faz andar um jogo.",
+     "p": [
+      "Um baralho dá informação escondida: não sabes o que vem a seguir.",
+      "A tua mão é o teu conjunto privado de opções para a jogada.",
+      "As cartas podem ser ações, recursos, objetivos ou eventos."
+     ],
+     "q": "Gostas de surpresas do baralho ou preferes planear com tudo à vista?",
+     "c": "Baralha um baralho e adivinha três cartas antes de as virar."
+    },
+    "pt_BR": {
+     "t": "As cartas nos jogos de tabuleiro",
+     "g": "Veja como comprar, guardar e jogar cartas movimenta um jogo.",
+     "p": [
+      "Um baralho dá informação escondida: você não sabe o que vem depois.",
+      "Sua mão é seu conjunto privado de opções para a rodada.",
+      "As cartas podem ser ações, recursos, objetivos ou eventos."
+     ],
+     "q": "Você gosta de surpresas do baralho ou prefere planejar com tudo à vista?",
+     "c": "Embaralhe um baralho e adivinhe três cartas antes de virá-las."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Word game: Word chain",
+     "g": "Say words that start with the last letter of the previous one.",
+     "p": [
+      "The first player says a word, such as apple.",
+      "The next word must start with the last letter: apple, egg, goat.",
+      "No repeats allowed; choose a theme like animals to make it harder."
+     ],
+     "q": "I start: river. What word do you say next?",
+     "c": "Play a chain of ten words with a friend without repeating."
+    },
+    "de": {
+     "t": "Wortspiel: Wortkette",
+     "g": "Nenne Wörter, die mit dem letzten Buchstaben des vorigen beginnen.",
+     "p": [
+      "Der erste Spieler sagt ein Wort, zum Beispiel Apfel.",
+      "Das nächste Wort beginnt mit dem Endbuchstaben: Apfel, Löwe, Elefant.",
+      "Keine Wiederholungen; ein Thema wie Tiere macht es schwerer."
+     ],
+     "q": "Ich fange an: Fluss. Welches Wort sagst du als Nächstes?",
+     "c": "Bilde mit jemandem eine Kette aus zehn Wörtern ohne Wiederholung."
+    },
+    "es": {
+     "t": "Juego de palabras: Cadena de palabras",
+     "g": "Di palabras que empiecen con la última letra de la anterior.",
+     "p": [
+      "El primer jugador dice una palabra, por ejemplo manzana.",
+      "La siguiente empieza con la última letra: manzana, árbol, loro.",
+      "No se repite; elegid un tema, como animales, para hacerlo más difícil."
+     ],
+     "q": "Empiezo yo: río. ¿Qué palabra dices ahora?",
+     "c": "Haz una cadena de diez palabras con alguien sin repetir."
+    },
+    "fr": {
+     "t": "Jeu de mots : Chaîne de mots",
+     "g": "Dis des mots qui commencent par la dernière lettre du précédent.",
+     "p": [
+      "Le premier joueur dit un mot, par exemple pomme.",
+      "Le suivant commence par la dernière lettre : pomme, éléphant, tigre.",
+      "Pas de répétition ; choisissez un thème comme les animaux pour corser."
+     ],
+     "q": "Je commence : rivière. Quel mot dis-tu ensuite ?",
+     "c": "Fais une chaîne de dix mots avec un ami sans répéter."
+    },
+    "it": {
+     "t": "Gioco di parole: Catena di parole",
+     "g": "Di' parole che iniziano con l'ultima lettera della precedente.",
+     "p": [
+      "Il primo giocatore dice una parola, per esempio albero.",
+      "La successiva inizia con l'ultima lettera: albero, orso, otto.",
+      "Niente ripetizioni; scegliete un tema come gli animali per complicare."
+     ],
+     "q": "Comincio io: fiume. Quale parola dici adesso?",
+     "c": "Fai una catena di dieci parole con un amico senza ripetere."
+    },
+    "pt": {
+     "t": "Jogo de palavras: Cadeia de palavras",
+     "g": "Diz palavras que começam pela última letra da anterior.",
+     "p": [
+      "O primeiro jogador diz uma palavra, por exemplo maçã.",
+      "A seguinte começa pela última letra: maçã, avião, onda.",
+      "Sem repetir; escolham um tema, como animais, para ser mais difícil."
+     ],
+     "q": "Começo eu: rio. Que palavra dizes a seguir?",
+     "c": "Faz uma cadeia de dez palavras com alguém sem repetir."
+    },
+    "pt_BR": {
+     "t": "Jogo de palavras: Corrente de palavras",
+     "g": "Diga palavras que começam com a última letra da anterior.",
+     "p": [
+      "O primeiro jogador diz uma palavra, por exemplo bola.",
+      "A seguinte começa com a última letra: bola, avião, onça.",
+      "Sem repetir; escolham um tema, como animais, para ficar mais difícil."
+     ],
+     "q": "Começo eu: rio. Que palavra você diz agora?",
+     "c": "Faça uma corrente de dez palavras com alguém sem repetir."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Royal Game of Ur",
+     "g": "Meet one of the oldest known board games, from Mesopotamia.",
+     "p": [
+      "Boards were found in royal tombs at Ur, in present-day Iraq, about 4,500 years old.",
+      "Each player races seven pieces along a track of twenty squares.",
+      "Dice tell you how far to move, and rosette squares give another turn."
+     ],
+     "q": "A Babylonian clay tablet from about 177 BC even explains rules for it.",
+     "c": "Race two coins of your own along a drawn track using a coin flip."
+    },
+    "de": {
+     "t": "Das Königliche Spiel von Ur",
+     "g": "Lerne eines der ältesten bekannten Brettspiele aus Mesopotamien kennen.",
+     "p": [
+      "Spielbretter fanden sich in Königsgräbern von Ur im heutigen Irak, etwa 4.500 Jahre alt.",
+      "Jeder Spieler lässt sieben Steine über eine Bahn mit zwanzig Feldern laufen.",
+      "Würfel bestimmen die Schritte, Rosettenfelder geben einen weiteren Zug."
+     ],
+     "q": "Eine babylonische Tontafel von etwa 177 v. Chr. erklärt sogar Regeln dazu.",
+     "c": "Lass zwei Münzen über eine gemalte Bahn laufen, mit Münzwurf als Zug."
+    },
+    "es": {
+     "t": "El Juego Real de Ur",
+     "g": "Conoce uno de los juegos de mesa más antiguos que se conocen, de Mesopotamia.",
+     "p": [
+      "Se hallaron tableros en tumbas reales de Ur, hoy Irak, de unos 4.500 años.",
+      "Cada jugador corre con siete piezas por una pista de veinte casillas.",
+      "Los dados marcan cuánto avanzar y las casillas de rosetón dan otro turno."
+     ],
+     "q": "Una tablilla babilónica de hacia 177 a. C. incluso explica sus reglas.",
+     "c": "Haz correr dos monedas por una pista dibujada con lanzamientos de moneda."
+    },
+    "fr": {
+     "t": "Le Jeu royal d'Ur",
+     "g": "Découvre l'un des plus anciens jeux de plateau connus, venu de Mésopotamie.",
+     "p": [
+      "Des plateaux ont été trouvés dans des tombes royales d'Ur, en Irak, vieux de 4 500 ans.",
+      "Chaque joueur fait courir sept pions sur une piste de vingt cases.",
+      "Les dés donnent la distance, et les cases rosaces offrent un autre tour."
+     ],
+     "q": "Une tablette babylonienne d'environ 177 av. J.-C. en explique même les règles.",
+     "c": "Fais courir deux pièces sur une piste dessinée avec des lancers de pièce."
+    },
+    "it": {
+     "t": "Il Gioco Reale di Ur",
+     "g": "Conosci uno dei più antichi giochi da tavolo noti, dalla Mesopotamia.",
+     "p": [
+      "Tavolieri sono stati trovati in tombe reali di Ur, oggi Iraq, di circa 4.500 anni.",
+      "Ogni giocatore fa correre sette pedine lungo un percorso di venti caselle.",
+      "I dadi dicono di quanto muovere e le caselle rosetta danno un altro turno."
+     ],
+     "q": "Una tavoletta babilonese del 177 a.C. circa ne spiega perfino le regole.",
+     "c": "Fai correre due monete su un percorso disegnato con lanci di moneta."
+    },
+    "pt": {
+     "t": "O Jogo Real de Ur",
+     "g": "Conhece um dos jogos de tabuleiro mais antigos conhecidos, da Mesopotâmia.",
+     "p": [
+      "Encontraram-se tabuleiros em túmulos reais de Ur, hoje Iraque, com cerca de 4500 anos.",
+      "Cada jogador corre com sete peças por uma pista de vinte casas.",
+      "Os dados dizem quanto avançar e as casas com rosetas dão outra jogada."
+     ],
+     "q": "Uma tábua babilónica de cerca de 177 a. C. até explica as regras.",
+     "c": "Faz correr duas moedas numa pista desenhada com lançamentos de moeda."
+    },
+    "pt_BR": {
+     "t": "O Jogo Real de Ur",
+     "g": "Conheça um dos jogos de tabuleiro mais antigos conhecidos, da Mesopotâmia.",
+     "p": [
+      "Tabuleiros foram achados em túmulos reais de Ur, hoje Iraque, com cerca de 4.500 anos.",
+      "Cada jogador corre com sete peças por uma pista de vinte casas.",
+      "Os dados dizem quanto avançar e as casas de roseta dão outra jogada."
+     ],
+     "q": "Uma tábua babilônica de cerca de 177 a.C. até explica as regras.",
+     "c": "Faça duas moedas correrem numa pista desenhada com cara ou coroa."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Senet from ancient Egypt",
+     "g": "Discover a race game played along the Nile thousands of years ago.",
+     "p": [
+      "Senet was played in Egypt as early as around 3000 BC.",
+      "The board has thirty squares in three rows of ten, with pieces moving in an S shape.",
+      "Throwing sticks or knucklebones decided how far to move."
+     ],
+     "q": "Egyptians painted Senet boards in tombs, showing how much they loved it.",
+     "c": "Draw a three-by-ten grid and race five pieces with a coin toss."
+    },
+    "de": {
+     "t": "Senet aus dem alten Ägypten",
+     "g": "Entdecke ein Rennspiel, das vor Jahrtausenden am Nil gespielt wurde.",
+     "p": [
+      "Senet wurde in Ägypten schon um etwa 3000 v. Chr. gespielt.",
+      "Das Brett hat dreißig Felder in drei Reihen zu zehn, die Steine ziehen in S-Form.",
+      "Wurfstäbe oder Knöchelchen bestimmten die Zugweite."
+     ],
+     "q": "Ägypter malten Senet-Bretter in Gräber, ein Zeichen ihrer Liebe zum Spiel.",
+     "c": "Zeichne ein Raster aus drei mal zehn Feldern und lass fünf Steine laufen."
+    },
+    "es": {
+     "t": "Senet del antiguo Egipto",
+     "g": "Descubre un juego de carrera jugado a orillas del Nilo hace miles de años.",
+     "p": [
+      "El senet se jugaba en Egipto ya hacia el 3000 a. C.",
+      "El tablero tiene treinta casillas en tres filas de diez, con recorrido en forma de S.",
+      "Palos o tabas decidían cuánto avanzar."
+     ],
+     "q": "Los egipcios pintaron tableros de senet en tumbas, señal de cuánto lo querían.",
+     "c": "Dibuja una cuadrícula de tres por diez y corre con cinco piezas lanzando una moneda."
+    },
+    "fr": {
+     "t": "Le senet de l'Égypte antique",
+     "g": "Découvre un jeu de course joué le long du Nil il y a des millénaires.",
+     "p": [
+      "Le senet se jouait en Égypte dès environ 3000 av. J.-C.",
+      "Le plateau compte trente cases en trois rangées de dix, parcourues en forme de S.",
+      "Des bâtonnets ou des osselets décidaient de l'avancée."
+     ],
+     "q": "Les Égyptiens peignaient des plateaux de senet dans les tombes, preuve de leur passion.",
+     "c": "Dessine une grille de trois par dix et fais courir cinq pions avec une pièce."
+    },
+    "it": {
+     "t": "Il senet dell'antico Egitto",
+     "g": "Scopri un gioco di corsa giocato lungo il Nilo migliaia di anni fa.",
+     "p": [
+      "Il senet si giocava in Egitto già verso il 3000 a.C.",
+      "Il tavoliere ha trenta caselle in tre file da dieci, percorse a forma di S.",
+      "Bastoncini o astragali decidevano di quanto avanzare."
+     ],
+     "q": "Gli egizi dipingevano tavolieri di senet nelle tombe, segno di quanto lo amassero.",
+     "c": "Disegna una griglia tre per dieci e fai correre cinque pedine con una moneta."
+    },
+    "pt": {
+     "t": "O senet do Antigo Egito",
+     "g": "Descobre um jogo de corrida jogado junto ao Nilo há milhares de anos.",
+     "p": [
+      "O senet jogava-se no Egito já por volta de 3000 a. C.",
+      "O tabuleiro tem trinta casas em três filas de dez, percorridas em forma de S.",
+      "Paus ou ossinhos decidiam quanto avançar."
+     ],
+     "q": "Os egípcios pintavam tabuleiros de senet em túmulos, sinal do quanto o amavam.",
+     "c": "Desenha uma grelha de três por dez e corre com cinco peças e uma moeda."
+    },
+    "pt_BR": {
+     "t": "O senet do Antigo Egito",
+     "g": "Descubra um jogo de corrida jogado às margens do Nilo há milhares de anos.",
+     "p": [
+      "O senet era jogado no Egito já por volta de 3000 a.C.",
+      "O tabuleiro tem trinta casas em três fileiras de dez, percorridas em forma de S.",
+      "Varetas ou ossinhos decidiam quanto avançar."
+     ],
+     "q": "Os egípcios pintavam tabuleiros de senet em túmulos, sinal de quanto o amavam.",
+     "c": "Desenhe uma grade de três por dez e corra com cinco peças e uma moeda."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Backgammon",
+     "g": "Learn an ancient race game that mixes luck with clever choices.",
+     "p": [
+      "Each player has fifteen checkers and moves them around a board of twenty-four points.",
+      "You roll two dice and may split the numbers between two checkers.",
+      "The goal is to bring all your checkers home and then bear them off first."
+     ],
+     "q": "Its relatives were played in Persia and Rome, so it is very old.",
+     "c": "After a roll, name two different ways you could use the dice."
+    },
+    "de": {
+     "t": "Backgammon",
+     "g": "Lerne ein uraltes Rennspiel, das Glück mit klugen Entscheidungen mischt.",
+     "p": [
+      "Jeder hat fünfzehn Steine und bewegt sie über ein Brett mit vierundzwanzig Spitzen.",
+      "Du würfelst zwei Würfel und darfst die Zahlen auf zwei Steine verteilen.",
+      "Ziel ist, alle Steine nach Hause zu bringen und zuerst abzutragen."
+     ],
+     "q": "Verwandte Spiele gab es in Persien und Rom, es ist also sehr alt.",
+     "c": "Nenne nach einem Wurf zwei verschiedene Möglichkeiten, die Würfel zu nutzen."
+    },
+    "es": {
+     "t": "Backgammon",
+     "g": "Aprende un antiguo juego de carrera que mezcla suerte y decisiones astutas.",
+     "p": [
+      "Cada jugador tiene quince fichas y las mueve por un tablero de veinticuatro puntas.",
+      "Tiras dos dados y puedes repartir los números entre dos fichas.",
+      "La meta es llevar todas tus fichas a casa y sacarlas primero."
+     ],
+     "q": "Sus parientes se jugaban en Persia y Roma, así que es muy antiguo.",
+     "c": "Tras una tirada, nombra dos formas distintas de usar los dados."
+    },
+    "fr": {
+     "t": "Le backgammon",
+     "g": "Apprends un jeu de course ancien qui mêle chance et choix malins.",
+     "p": [
+      "Chaque joueur a quinze pions et les déplace sur un plateau de vingt-quatre flèches.",
+      "Tu lances deux dés et peux répartir les valeurs entre deux pions.",
+      "Le but est de ramener tous tes pions à la maison puis de les sortir le premier."
+     ],
+     "q": "Des jeux cousins se jouaient en Perse et à Rome, il est donc très ancien.",
+     "c": "Après un lancer, cite deux façons différentes d'utiliser les dés."
+    },
+    "it": {
+     "t": "Il backgammon",
+     "g": "Impara un antico gioco di corsa che unisce fortuna e scelte astute.",
+     "p": [
+      "Ogni giocatore ha quindici pedine e le muove su un tavoliere di ventiquattro punte.",
+      "Lanci due dadi e puoi dividere i numeri tra due pedine.",
+      "L'obiettivo è portare tutte le pedine a casa e toglierle per primo."
+     ],
+     "q": "Giochi parenti esistevano in Persia e a Roma, quindi è antichissimo.",
+     "c": "Dopo un lancio, indica due modi diversi di usare i dadi."
+    },
+    "pt": {
+     "t": "O gamão",
+     "g": "Aprende um antigo jogo de corrida que mistura sorte e escolhas astutas.",
+     "p": [
+      "Cada jogador tem quinze peças e move-as num tabuleiro de vinte e quatro pontas.",
+      "Lanças dois dados e podes repartir os números por duas peças.",
+      "O objetivo é levar todas as peças para casa e retirá-las primeiro."
+     ],
+     "q": "Parentes seus jogavam-se na Pérsia e em Roma, por isso é muito antigo.",
+     "c": "Depois de um lançamento, diz duas formas diferentes de usar os dados."
+    },
+    "pt_BR": {
+     "t": "O gamão",
+     "g": "Aprenda um antigo jogo de corrida que mistura sorte e escolhas espertas.",
+     "p": [
+      "Cada jogador tem quinze peças e as move num tabuleiro de vinte e quatro pontas.",
+      "Você joga dois dados e pode dividir os números entre duas peças.",
+      "O objetivo é levar todas as peças para casa e retirá-las primeiro."
+     ],
+     "q": "Parentes dele eram jogados na Pérsia e em Roma, então é muito antigo.",
+     "c": "Depois de uma jogada de dados, diga duas formas diferentes de usá-los."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mancala and Oware",
+     "g": "Explore seed-sowing games played across Africa and Asia.",
+     "p": [
+      "Mancala is a family of games; players sow seeds one by one into pits.",
+      "Oware, popular in West Africa, uses twelve pits and forty-eight seeds.",
+      "Counting ahead is the key skill: where will your last seed land?"
+     ],
+     "q": "Similar games go by names like bao, kalah and congkak in other regions.",
+     "c": "Use a muffin tray and beans: sow four beans from a pit, one per pit."
+    },
+    "de": {
+     "t": "Mancala und Oware",
+     "g": "Entdecke Saatspiele, die in Afrika und Asien gespielt werden.",
+     "p": [
+      "Mancala ist eine Spielefamilie: Man sät Samen einzeln in Mulden.",
+      "Oware, in Westafrika beliebt, nutzt zwölf Mulden und achtundvierzig Samen.",
+      "Vorausrechnen ist die Schlüsselfähigkeit: Wo landet dein letzter Samen?"
+     ],
+     "q": "Ähnliche Spiele heißen anderswo Bao, Kalah oder Congkak.",
+     "c": "Nimm ein Muffinblech und Bohnen: Säe vier Bohnen, je eine pro Mulde."
+    },
+    "es": {
+     "t": "Mancala y Oware",
+     "g": "Explora juegos de siembra de semillas jugados en África y Asia.",
+     "p": [
+      "El mancala es una familia de juegos: se siembran semillas una a una en hoyos.",
+      "El oware, popular en África occidental, usa doce hoyos y cuarenta y ocho semillas.",
+      "Contar por adelantado es la clave: ¿dónde caerá tu última semilla?"
+     ],
+     "q": "Juegos parecidos se llaman bao, kalah o congkak en otras regiones.",
+     "c": "Usa un molde de magdalenas y alubias: siembra cuatro, una por hoyo."
+    },
+    "fr": {
+     "t": "Mancala et Oware",
+     "g": "Explore les jeux de semailles joués en Afrique et en Asie.",
+     "p": [
+      "Le mancala est une famille de jeux : on sème des graines une à une dans des trous.",
+      "L'oware, populaire en Afrique de l'Ouest, utilise douze trous et quarante-huit graines.",
+      "Compter à l'avance est la clé : où tombera ta dernière graine ?"
+     ],
+     "q": "Des jeux proches s'appellent bao, kalah ou congkak ailleurs.",
+     "c": "Prends un moule à muffins et des haricots : sème quatre graines, une par trou."
+    },
+    "it": {
+     "t": "Mancala e Oware",
+     "g": "Esplora i giochi di semina praticati in Africa e in Asia.",
+     "p": [
+      "Il mancala è una famiglia di giochi: si seminano semi uno a uno nelle buche.",
+      "L'oware, popolare in Africa occidentale, usa dodici buche e quarantotto semi.",
+      "Contare in anticipo è la chiave: dove cadrà il tuo ultimo seme?"
+     ],
+     "q": "Giochi simili si chiamano bao, kalah o congkak in altre regioni.",
+     "c": "Usa una teglia per muffin e dei fagioli: semina quattro fagioli, uno per buca."
+    },
+    "pt": {
+     "t": "Mancala e Oware",
+     "g": "Explora jogos de semear sementes jogados em África e na Ásia.",
+     "p": [
+      "O mancala é uma família de jogos: semeiam-se sementes uma a uma em covas.",
+      "O oware, popular na África Ocidental, usa doze covas e quarenta e oito sementes.",
+      "Contar à frente é a chave: onde cairá a tua última semente?"
+     ],
+     "q": "Jogos parecidos chamam-se bao, kalah ou congkak noutras regiões.",
+     "c": "Usa uma forma de queques e feijões: semeia quatro, um por cova."
+    },
+    "pt_BR": {
+     "t": "Mancala e Oware",
+     "g": "Explore jogos de semear sementes jogados na África e na Ásia.",
+     "p": [
+      "O mancala é uma família de jogos: semeiam-se sementes uma a uma em covas.",
+      "O oware, popular na África Ocidental, usa doze covas e quarenta e oito sementes.",
+      "Contar à frente é a chave: onde cairá a sua última semente?"
+     ],
+     "q": "Jogos parecidos se chamam bao, kalah ou congkak em outras regiões.",
+     "c": "Use uma forma de muffin e feijões: semeie quatro, um por cova."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Word game: Categories",
+     "g": "Name a fruit, a city and an animal that start with the same letter.",
+     "p": [
+      "Pick a letter, for example M, and a list of categories.",
+      "Everyone writes one word per category starting with that letter.",
+      "Unique answers can score more than answers others also wrote."
+     ],
+     "q": "Letter P: which fruit, city and animal come to your mind first?",
+     "c": "Play a round with letter S and five categories of your choice."
+    },
+    "de": {
+     "t": "Wortspiel: Stadt, Land, Fluss",
+     "g": "Nenne Obst, Stadt und Tier mit demselben Anfangsbuchstaben.",
+     "p": [
+      "Wähle einen Buchstaben, etwa M, und eine Liste von Kategorien.",
+      "Alle schreiben pro Kategorie ein Wort mit diesem Anfangsbuchstaben.",
+      "Einzigartige Antworten können mehr Punkte bringen als doppelte."
+     ],
+     "q": "Buchstabe P: Welches Obst, welche Stadt und welches Tier fallen dir zuerst ein?",
+     "c": "Spiele eine Runde mit S und fünf Kategorien deiner Wahl."
+    },
+    "es": {
+     "t": "Juego de palabras: Categorías",
+     "g": "Nombra una fruta, una ciudad y un animal con la misma letra.",
+     "p": [
+      "Elige una letra, por ejemplo M, y una lista de categorías.",
+      "Todos escriben una palabra por categoría que empiece con esa letra.",
+      "Las respuestas únicas pueden valer más que las que otros repiten."
+     ],
+     "q": "Letra P: ¿qué fruta, ciudad y animal se te ocurren primero?",
+     "c": "Juega una ronda con la letra S y cinco categorías a tu gusto."
+    },
+    "fr": {
+     "t": "Jeu de mots : Le petit bac",
+     "g": "Nomme un fruit, une ville et un animal avec la même initiale.",
+     "p": [
+      "Choisis une lettre, par exemple M, et une liste de catégories.",
+      "Chacun écrit un mot par catégorie commençant par cette lettre.",
+      "Les réponses uniques peuvent rapporter plus que celles que d'autres ont écrites."
+     ],
+     "q": "Lettre P : quel fruit, quelle ville et quel animal te viennent d'abord ?",
+     "c": "Joue une manche avec la lettre S et cinq catégories de ton choix."
+    },
+    "it": {
+     "t": "Gioco di parole: Nomi, cose, città",
+     "g": "Di' un frutto, una città e un animale con la stessa iniziale.",
+     "p": [
+      "Scegli una lettera, per esempio M, e un elenco di categorie.",
+      "Tutti scrivono una parola per categoria che inizi con quella lettera.",
+      "Le risposte uniche possono valere più di quelle scritte anche da altri."
+     ],
+     "q": "Lettera P: quale frutto, città e animale ti vengono in mente per primi?",
+     "c": "Gioca un round con la lettera S e cinque categorie a scelta."
+    },
+    "pt": {
+     "t": "Jogo de palavras: Categorias",
+     "g": "Diz uma fruta, uma cidade e um animal com a mesma letra.",
+     "p": [
+      "Escolhe uma letra, por exemplo M, e uma lista de categorias.",
+      "Todos escrevem uma palavra por categoria que comece por essa letra.",
+      "Respostas únicas podem valer mais do que as que outros também escreveram."
+     ],
+     "q": "Letra P: que fruta, cidade e animal te vêm primeiro à cabeça?",
+     "c": "Joga uma ronda com a letra S e cinco categorias à tua escolha."
+    },
+    "pt_BR": {
+     "t": "Jogo de palavras: Stop",
+     "g": "Diga uma fruta, uma cidade e um animal com a mesma letra.",
+     "p": [
+      "Escolha uma letra, por exemplo M, e uma lista de categorias.",
+      "Todos escrevem uma palavra por categoria que comece com essa letra.",
+      "Respostas únicas podem valer mais do que as que outros também escreveram."
+     ],
+     "q": "Letra P: que fruta, cidade e animal vêm primeiro à sua cabeça?",
+     "c": "Jogue uma rodada com a letra S e cinco categorias à sua escolha."
+    }
+   }
+  }
+ ]
+}

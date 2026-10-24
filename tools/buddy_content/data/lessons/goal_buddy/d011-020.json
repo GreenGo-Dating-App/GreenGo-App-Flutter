@@ -1,0 +1,835 @@
+{
+ "topic": "goal_buddy",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Giving goals a deadline",
+     "g": "See how a friendly target date creates focus without adding pressure.",
+     "p": [
+      "A date turns someday into a real plan on your calendar.",
+      "Choose a date that feels kind, not rushed; a few weeks or months is fine.",
+      "If life changes, you can move the date and keep the goal."
+     ],
+     "q": "What date feels right for your goal, and why that one?",
+     "c": "Pick a target date for your goal and write it on your calendar."
+    },
+    "de": {
+     "t": "Ziele mit einem Datum",
+     "g": "Sieh, wie ein freundlicher Zieltermin Fokus schafft, ohne Druck aufzubauen.",
+     "p": [
+      "Ein Datum macht aus Irgendwann einen echten Plan im Kalender.",
+      "Wähle ein Datum, das sich freundlich anfühlt; ein paar Wochen oder Monate genügen.",
+      "Ändert sich dein Leben, kannst du den Termin verschieben und das Ziel behalten."
+     ],
+     "q": "Welches Datum passt zu deinem Ziel, und warum gerade dieses?",
+     "c": "Wähle einen Zieltermin für dein Ziel und trage ihn in den Kalender ein."
+    },
+    "es": {
+     "t": "Ponerle fecha a tus metas",
+     "g": "Mira cómo una fecha amable da enfoque sin añadir presión.",
+     "p": [
+      "Una fecha convierte el algún día en un plan real en tu calendario.",
+      "Elige una fecha cómoda, sin prisas; unas semanas o meses están bien.",
+      "Si la vida cambia, puedes mover la fecha y mantener la meta."
+     ],
+     "q": "¿Qué fecha te parece adecuada para tu meta y por qué?",
+     "c": "Elige una fecha para tu meta y anótala en tu calendario."
+    },
+    "fr": {
+     "t": "Donner une échéance à ton objectif",
+     "g": "Vois comment une date cible bienveillante apporte de la concentration sans pression.",
+     "p": [
+      "Une date transforme un jour peut-être en vrai plan dans ton agenda.",
+      "Choisis une date confortable, sans précipitation ; quelques semaines ou mois suffisent.",
+      "Si la vie change, tu peux déplacer la date et garder l'objectif."
+     ],
+     "q": "Quelle date te semble juste pour ton objectif, et pourquoi ?",
+     "c": "Choisis une date cible et note-la dans ton agenda."
+    },
+    "it": {
+     "t": "Dare una scadenza agli obiettivi",
+     "g": "Scopri come una data gentile dà concentrazione senza aggiungere pressione.",
+     "p": [
+      "Una data trasforma un prima o poi in un piano vero sul calendario.",
+      "Scegli una data comoda, senza fretta; bastano alcune settimane o mesi.",
+      "Se la vita cambia, puoi spostare la data e tenere l'obiettivo."
+     ],
+     "q": "Quale data ti sembra giusta per il tuo obiettivo e perché?",
+     "c": "Scegli una data per il tuo obiettivo e segnala sul calendario."
+    },
+    "pt": {
+     "t": "Dar um prazo às metas",
+     "g": "Vê como uma data amigável dá foco sem acrescentar pressão.",
+     "p": [
+      "Uma data transforma o um dia destes num plano real no calendário.",
+      "Escolhe uma data confortável, sem pressa; umas semanas ou meses chegam.",
+      "Se a vida mudar, podes mover a data e manter a meta."
+     ],
+     "q": "Que data te parece certa para a tua meta e porquê?",
+     "c": "Escolhe uma data para a tua meta e marca-a no calendário."
+    },
+    "pt_BR": {
+     "t": "Dar um prazo às metas",
+     "g": "Veja como uma data amigável dá foco sem acrescentar pressão.",
+     "p": [
+      "Uma data transforma o um dia desses em um plano real no calendário.",
+      "Escolha uma data confortável, sem pressa; algumas semanas ou meses bastam.",
+      "Se a vida mudar, você pode mover a data e manter a meta."
+     ],
+     "q": "Que data parece certa para a sua meta e por quê?",
+     "c": "Escolha uma data para a sua meta e marque no calendário."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The SMART checklist",
+     "g": "Put specific, measurable, achievable, relevant and time-bound together.",
+     "p": [
+      "SMART is a checklist: specific, measurable, achievable, relevant, time-bound.",
+      "Run your goal through each letter and fix the one that is weakest.",
+      "It is a helper, not a test; a goal can be good and still be improved."
+     ],
+     "q": "Which of the five letters is weakest in your goal right now?",
+     "c": "Check your goal against the five SMART letters and improve one."
+    },
+    "de": {
+     "t": "Die SMART-Checkliste",
+     "g": "Verbinde konkret, messbar, erreichbar, relevant und terminiert zu einem Ziel.",
+     "p": [
+      "SMART ist eine Checkliste: spezifisch, messbar, attraktiv, realistisch, terminiert.",
+      "Prüfe dein Ziel Buchstabe für Buchstabe und verbessere den schwächsten.",
+      "Sie ist eine Hilfe, kein Test; ein gutes Ziel lässt sich trotzdem verbessern."
+     ],
+     "q": "Welcher der fünf Buchstaben ist bei deinem Ziel gerade am schwächsten?",
+     "c": "Prüfe dein Ziel anhand der fünf SMART-Buchstaben und verbessere einen."
+    },
+    "es": {
+     "t": "La lista SMART",
+     "g": "Une meta específica, medible, alcanzable, relevante y con fecha en un solo conjunto.",
+     "p": [
+      "SMART es una lista: específica, medible, alcanzable, relevante y con plazo.",
+      "Pasa tu meta por cada letra y mejora la que esté más floja.",
+      "Es una ayuda, no un examen; una buena meta siempre se puede mejorar."
+     ],
+     "q": "¿Cuál de las cinco letras está más floja en tu meta ahora?",
+     "c": "Revisa tu meta con las cinco letras SMART y mejora una."
+    },
+    "fr": {
+     "t": "La liste SMART",
+     "g": "Réunis précis, mesurable, atteignable, pertinent et daté dans un seul objectif.",
+     "p": [
+      "SMART est une liste : spécifique, mesurable, atteignable, réaliste, temporel.",
+      "Passe ton objectif en revue lettre par lettre et améliore la plus faible.",
+      "C'est une aide, pas un examen ; un bon objectif peut toujours s'améliorer."
+     ],
+     "q": "Laquelle des cinq lettres est la plus faible pour ton objectif ?",
+     "c": "Vérifie ton objectif avec les cinq lettres SMART et améliores-en une."
+    },
+    "it": {
+     "t": "La checklist SMART",
+     "g": "Metti insieme specifico, misurabile, raggiungibile, rilevante e con scadenza.",
+     "p": [
+      "SMART è una checklist: specifico, misurabile, raggiungibile, rilevante, temporizzato.",
+      "Passa il tuo obiettivo in rassegna lettera per lettera e migliora la più debole.",
+      "È un aiuto, non un esame; un buon obiettivo si può sempre migliorare."
+     ],
+     "q": "Quale delle cinque lettere è la più debole nel tuo obiettivo ora?",
+     "c": "Controlla il tuo obiettivo con le cinque lettere SMART e migliorane una."
+    },
+    "pt": {
+     "t": "A lista SMART",
+     "g": "Junta específica, mensurável, atingível, relevante e com prazo numa só meta.",
+     "p": [
+      "SMART é uma lista: específica, mensurável, atingível, relevante e com prazo.",
+      "Passa a tua meta por cada letra e melhora a mais fraca.",
+      "É uma ajuda, não um exame; uma boa meta pode sempre melhorar."
+     ],
+     "q": "Qual das cinco letras está mais fraca na tua meta agora?",
+     "c": "Verifica a tua meta com as cinco letras SMART e melhora uma."
+    },
+    "pt_BR": {
+     "t": "A lista SMART",
+     "g": "Junte específica, mensurável, atingível, relevante e com prazo numa só meta.",
+     "p": [
+      "SMART é uma lista: específica, mensurável, atingível, relevante e com prazo.",
+      "Passe sua meta por cada letra e melhore a mais fraca.",
+      "É uma ajuda, não uma prova; uma boa meta sempre pode melhorar."
+     ],
+     "q": "Qual das cinco letras está mais fraca na sua meta agora?",
+     "c": "Confira sua meta com as cinco letras SMART e melhore uma."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Outcome goals and process goals",
+     "g": "Learn the difference between the result you want and the actions you control.",
+     "p": [
+      "An outcome goal is the result, like finishing a puzzle or a short course.",
+      "A process goal is the action, like working on it ten minutes a day.",
+      "Process goals keep you moving even when results take their time."
+     ],
+     "q": "What is the outcome you want, and what daily action could lead there?",
+     "c": "Write one outcome goal and one process goal that supports it."
+    },
+    "de": {
+     "t": "Ergebnisziele und Prozessziele",
+     "g": "Lerne den Unterschied zwischen dem gewünschten Ergebnis und den Handlungen, die du steuerst.",
+     "p": [
+      "Ein Ergebnisziel ist das Resultat, etwa ein Puzzle oder einen Kurs abzuschließen.",
+      "Ein Prozessziel ist die Handlung, etwa täglich zehn Minuten daran zu arbeiten.",
+      "Prozessziele halten dich in Bewegung, auch wenn Ergebnisse Zeit brauchen."
+     ],
+     "q": "Welches Ergebnis willst du, und welche tägliche Handlung führt dorthin?",
+     "c": "Schreibe ein Ergebnisziel und ein Prozessziel auf, das es unterstützt."
+    },
+    "es": {
+     "t": "Metas de resultado y de proceso",
+     "g": "Aprende la diferencia entre el resultado que quieres y las acciones que controlas.",
+     "p": [
+      "Una meta de resultado es lo que logras, como terminar un puzle o un curso corto.",
+      "Una meta de proceso es la acción, como dedicarle diez minutos al día.",
+      "Las metas de proceso te mantienen en marcha aunque el resultado tarde."
+     ],
+     "q": "¿Qué resultado quieres y qué acción diaria podría llevarte allí?",
+     "c": "Escribe una meta de resultado y una de proceso que la apoye."
+    },
+    "fr": {
+     "t": "Objectifs de résultat et de processus",
+     "g": "Apprends la différence entre le résultat voulu et les actions que tu contrôles.",
+     "p": [
+      "Un objectif de résultat est ce que tu obtiens, comme finir un puzzle ou un court cours.",
+      "Un objectif de processus est l'action, comme y consacrer dix minutes par jour.",
+      "Les objectifs de processus te font avancer même quand les résultats tardent."
+     ],
+     "q": "Quel résultat veux-tu, et quelle action quotidienne peut y mener ?",
+     "c": "Écris un objectif de résultat et un objectif de processus qui le soutient."
+    },
+    "it": {
+     "t": "Obiettivi di risultato e di processo",
+     "g": "Impara la differenza tra il risultato che vuoi e le azioni che controlli.",
+     "p": [
+      "Un obiettivo di risultato è l'esito, come finire un puzzle o un breve corso.",
+      "Un obiettivo di processo è l'azione, come dedicarci dieci minuti al giorno.",
+      "Gli obiettivi di processo ti tengono in moto anche quando i risultati tardano."
+     ],
+     "q": "Quale risultato vuoi e quale azione quotidiana può portarti lì?",
+     "c": "Scrivi un obiettivo di risultato e uno di processo che lo sostenga."
+    },
+    "pt": {
+     "t": "Metas de resultado e de processo",
+     "g": "Aprende a diferença entre o resultado que queres e as ações que controlas.",
+     "p": [
+      "Uma meta de resultado é o que alcanças, como acabar um puzzle ou um curso curto.",
+      "Uma meta de processo é a ação, como dedicar-lhe dez minutos por dia.",
+      "As metas de processo mantêm-te em movimento mesmo quando o resultado demora."
+     ],
+     "q": "Que resultado queres e que ação diária te pode levar lá?",
+     "c": "Escreve uma meta de resultado e uma de processo que a apoie."
+    },
+    "pt_BR": {
+     "t": "Metas de resultado e de processo",
+     "g": "Aprenda a diferença entre o resultado que você quer e as ações que você controla.",
+     "p": [
+      "Uma meta de resultado é o que você alcança, como terminar um quebra-cabeça ou um curso curto.",
+      "Uma meta de processo é a ação, como dedicar dez minutos por dia.",
+      "Metas de processo mantêm você em movimento mesmo quando o resultado demora."
+     ],
+     "q": "Que resultado você quer e que ação diária pode levar até lá?",
+     "c": "Escreva uma meta de resultado e uma de processo que a apoie."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Focusing on what you control",
+     "g": "Put your attention on effort and actions instead of things outside your hands.",
+     "p": [
+      "You control your actions, not the weather, other people or luck.",
+      "Spending energy on what you control makes you feel calmer and stronger.",
+      "Ask: what is the part of this that is truly mine to do?"
+     ],
+     "q": "What part of your goal is fully in your hands?",
+     "c": "List three things about your goal you control and one you do not."
+    },
+    "de": {
+     "t": "Auf das Beeinflussbare achten",
+     "g": "Richte deine Aufmerksamkeit auf Einsatz und Handlungen statt auf Dinge außerhalb deiner Hände.",
+     "p": [
+      "Du steuerst dein Handeln, nicht das Wetter, andere Menschen oder den Zufall.",
+      "Energie für das Beeinflussbare zu nutzen macht ruhiger und stärker.",
+      "Frage dich: Welchen Teil davon kann wirklich nur ich tun?"
+     ],
+     "q": "Welcher Teil deines Ziels liegt ganz in deiner Hand?",
+     "c": "Nenne drei Dinge an deinem Ziel, die du steuerst, und eines, das nicht."
+    },
+    "es": {
+     "t": "Centrarte en lo que controlas",
+     "g": "Pon tu atención en el esfuerzo y las acciones, no en lo que está fuera de tus manos.",
+     "p": [
+      "Controlas tus acciones, no el clima, a otras personas ni la suerte.",
+      "Gastar energía en lo que controlas te hace sentir más tranquilo y fuerte.",
+      "Pregúntate: ¿qué parte de esto me toca de verdad a mí?"
+     ],
+     "q": "¿Qué parte de tu meta está totalmente en tus manos?",
+     "c": "Anota tres cosas de tu meta que controlas y una que no."
+    },
+    "fr": {
+     "t": "Se concentrer sur ce qu'on maîtrise",
+     "g": "Mets ton attention sur l'effort et les actions plutôt que sur ce qui t'échappe.",
+     "p": [
+      "Tu maîtrises tes actions, pas la météo, les autres ni la chance.",
+      "Dépenser son énergie sur ce que l'on maîtrise rend plus calme et plus fort.",
+      "Demande-toi : quelle part de ceci m'appartient vraiment ?"
+     ],
+     "q": "Quelle part de ton objectif est entièrement entre tes mains ?",
+     "c": "Note trois choses de ton objectif que tu maîtrises et une qui t'échappe."
+    },
+    "it": {
+     "t": "Concentrarsi su ciò che controlli",
+     "g": "Porta l'attenzione su impegno e azioni invece che su ciò che non dipende da te.",
+     "p": [
+      "Controlli le tue azioni, non il meteo, gli altri o la fortuna.",
+      "Usare l'energia su ciò che controlli ti rende più calmo e forte.",
+      "Chiediti: quale parte di questo spetta davvero a me?"
+     ],
+     "q": "Quale parte del tuo obiettivo è interamente nelle tue mani?",
+     "c": "Scrivi tre cose del tuo obiettivo che controlli e una che non controlli."
+    },
+    "pt": {
+     "t": "Foco no que controlas",
+     "g": "Põe a atenção no esforço e nas ações, não no que está fora das tuas mãos.",
+     "p": [
+      "Controlas as tuas ações, não o tempo, as outras pessoas nem a sorte.",
+      "Gastar energia no que controlas deixa-te mais calmo e forte.",
+      "Pergunta: que parte disto é mesmo minha?"
+     ],
+     "q": "Que parte da tua meta está totalmente nas tuas mãos?",
+     "c": "Escreve três coisas da tua meta que controlas e uma que não controlas."
+    },
+    "pt_BR": {
+     "t": "Foco no que você controla",
+     "g": "Ponha a atenção no esforço e nas ações, não no que está fora das suas mãos.",
+     "p": [
+      "Você controla suas ações, não o clima, as outras pessoas nem a sorte.",
+      "Gastar energia no que você controla deixa você mais calmo e forte.",
+      "Pergunte: que parte disto é mesmo minha?"
+     ],
+     "q": "Que parte da sua meta está totalmente nas suas mãos?",
+     "c": "Escreva três coisas da sua meta que você controla e uma que não controla."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing your goal statement",
+     "g": "Craft one positive sentence that describes your goal clearly.",
+     "p": [
+      "A goal statement says what you will do, how often and by when.",
+      "Phrase it positively: what you will do, not what you will stop.",
+      "Keep it short enough to remember without looking."
+     ],
+     "q": "Can you say your goal out loud in one clear sentence?",
+     "c": "Write your goal statement in one sentence and read it aloud once."
+    },
+    "de": {
+     "t": "Deine Zielformulierung",
+     "g": "Formuliere in einem positiven Satz klar, was dein Ziel ist.",
+     "p": [
+      "Eine Zielformulierung sagt, was du tust, wie oft und bis wann.",
+      "Formuliere positiv: was du tun wirst, nicht was du lassen willst.",
+      "Halte sie so kurz, dass du sie auswendig kannst."
+     ],
+     "q": "Kannst du dein Ziel in einem klaren Satz laut sagen?",
+     "c": "Schreibe deine Zielformulierung in einem Satz und lies sie einmal laut vor."
+    },
+    "es": {
+     "t": "Escribir tu frase de meta",
+     "g": "Redacta una frase positiva que describa tu meta con claridad.",
+     "p": [
+      "Una frase de meta dice qué harás, cuántas veces y para cuándo.",
+      "Redáctala en positivo: lo que harás, no lo que dejarás.",
+      "Hazla tan corta que puedas recordarla sin mirar."
+     ],
+     "q": "¿Puedes decir tu meta en voz alta en una frase clara?",
+     "c": "Escribe tu frase de meta en una oración y léela una vez en voz alta."
+    },
+    "fr": {
+     "t": "Rédiger ta phrase d'objectif",
+     "g": "Rédige une phrase positive qui décrit clairement ton objectif.",
+     "p": [
+      "Une phrase d'objectif dit ce que tu feras, à quelle fréquence et pour quand.",
+      "Formule-la en positif : ce que tu feras, pas ce que tu arrêteras.",
+      "Garde-la assez courte pour la retenir sans la relire."
+     ],
+     "q": "Peux-tu dire ton objectif à voix haute en une phrase claire ?",
+     "c": "Écris ta phrase d'objectif et lis-la une fois à voix haute."
+    },
+    "it": {
+     "t": "Scrivere la frase del tuo obiettivo",
+     "g": "Costruisci una frase positiva che descriva chiaramente il tuo obiettivo.",
+     "p": [
+      "La frase di un obiettivo dice cosa farai, quante volte e per quando.",
+      "Formulala in positivo: cosa farai, non cosa smetterai di fare.",
+      "Tienila abbastanza breve da ricordarla senza guardare."
+     ],
+     "q": "Riesci a dire il tuo obiettivo ad alta voce in una frase chiara?",
+     "c": "Scrivi la frase del tuo obiettivo e leggila una volta ad alta voce."
+    },
+    "pt": {
+     "t": "Escrever a frase da tua meta",
+     "g": "Escreve uma frase positiva que descreva a tua meta com clareza.",
+     "p": [
+      "A frase de uma meta diz o que vais fazer, quantas vezes e até quando.",
+      "Escreve-a pela positiva: o que vais fazer, não o que vais deixar.",
+      "Mantém-na curta o bastante para a lembrares sem olhar."
+     ],
+     "q": "Consegues dizer a tua meta em voz alta numa frase clara?",
+     "c": "Escreve a frase da tua meta e lê-a uma vez em voz alta."
+    },
+    "pt_BR": {
+     "t": "Escrever a frase da sua meta",
+     "g": "Escreva uma frase positiva que descreva sua meta com clareza.",
+     "p": [
+      "A frase de uma meta diz o que você vai fazer, quantas vezes e até quando.",
+      "Escreva pelo lado positivo: o que você vai fazer, não o que vai deixar.",
+      "Mantenha curta o bastante para lembrar sem olhar."
+     ],
+     "q": "Você consegue dizer sua meta em voz alta numa frase clara?",
+     "c": "Escreva a frase da sua meta e leia uma vez em voz alta."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Seeing the finish line",
+     "g": "Imagine in detail how it will look and feel when you reach your goal.",
+     "p": [
+      "Picturing the result makes the goal feel real and close.",
+      "Notice details: where you are, who is there, how you feel.",
+      "Pair the picture with the next step, so it motivates action."
+     ],
+     "q": "When you reach your goal, what does that moment look like?",
+     "c": "Close your eyes for one minute and picture your finish line, then jot a line."
+    },
+    "de": {
+     "t": "Die Ziellinie sehen",
+     "g": "Stell dir genau vor, wie es aussieht und sich anfühlt, wenn du dein Ziel erreichst.",
+     "p": [
+      "Das Bild vom Ergebnis lässt das Ziel echt und nah wirken.",
+      "Achte auf Details: wo du bist, wer da ist, wie du dich fühlst.",
+      "Verbinde das Bild mit dem nächsten Schritt, damit es zum Handeln anspornt."
+     ],
+     "q": "Wie sieht der Moment aus, in dem du dein Ziel erreichst?",
+     "c": "Schließe eine Minute die Augen, stell dir die Ziellinie vor und notiere eine Zeile."
+    },
+    "es": {
+     "t": "Ver la línea de meta",
+     "g": "Imagina con detalle cómo se verá y se sentirá cuando alcances tu meta.",
+     "p": [
+      "Visualizar el resultado hace que la meta se sienta real y cercana.",
+      "Fíjate en los detalles: dónde estás, quién está contigo, cómo te sientes.",
+      "Une la imagen al siguiente paso para que te impulse a actuar."
+     ],
+     "q": "Cuando logres tu meta, ¿cómo es ese momento?",
+     "c": "Cierra los ojos un minuto, imagina tu línea de meta y anota una línea."
+    },
+    "fr": {
+     "t": "Voir la ligne d'arrivée",
+     "g": "Imagine en détail ce que tu verras et ressentiras en atteignant ton objectif.",
+     "p": [
+      "Se représenter le résultat rend l'objectif réel et proche.",
+      "Remarque les détails : où tu es, qui est là, ce que tu ressens.",
+      "Associe l'image au prochain pas pour qu'elle pousse à agir."
+     ],
+     "q": "Quand tu atteindras ton objectif, à quoi ressemblera ce moment ?",
+     "c": "Ferme les yeux une minute, imagine ta ligne d'arrivée et note une ligne."
+    },
+    "it": {
+     "t": "Vedere il traguardo",
+     "g": "Immagina nei dettagli come sarà e come ti sentirai quando raggiungerai l'obiettivo.",
+     "p": [
+      "Immaginare il risultato rende l'obiettivo reale e vicino.",
+      "Nota i dettagli: dove sei, chi c'è, come ti senti.",
+      "Abbina l'immagine al prossimo passo, così ti spinge ad agire."
+     ],
+     "q": "Quando raggiungerai il tuo obiettivo, com'è quel momento?",
+     "c": "Chiudi gli occhi un minuto, immagina il traguardo e scrivi una riga."
+    },
+    "pt": {
+     "t": "Ver a meta final",
+     "g": "Imagina em detalhe como vai ser e sentir-se quando alcançares a tua meta.",
+     "p": [
+      "Imaginar o resultado torna a meta real e próxima.",
+      "Repara nos detalhes: onde estás, quem está contigo, como te sentes.",
+      "Liga a imagem ao próximo passo, para te levar a agir."
+     ],
+     "q": "Quando alcançares a tua meta, como é esse momento?",
+     "c": "Fecha os olhos um minuto, imagina a meta final e escreve uma linha."
+    },
+    "pt_BR": {
+     "t": "Ver a linha de chegada",
+     "g": "Imagine em detalhe como vai ser e como você vai se sentir ao alcançar sua meta.",
+     "p": [
+      "Imaginar o resultado torna a meta real e próxima.",
+      "Perceba os detalhes: onde você está, quem está junto, como se sente.",
+      "Una a imagem ao próximo passo, para ela levar você a agir."
+     ],
+     "q": "Quando você alcançar sua meta, como é esse momento?",
+     "c": "Feche os olhos por um minuto, imagine a linha de chegada e anote uma linha."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mapping your starting point",
+     "g": "Note honestly where you are today so progress becomes visible later.",
+     "p": [
+      "Knowing your starting point lets you see how far you have come.",
+      "Write facts, not judgments: today I walk 5 minutes, not I am lazy.",
+      "A starting line is not a weakness; every journey has one."
+     ],
+     "q": "Where are you today with your goal, in simple facts?",
+     "c": "Write three plain facts that describe your starting point today."
+    },
+    "de": {
+     "t": "Deinen Startpunkt bestimmen",
+     "g": "Halte ehrlich fest, wo du heute stehst, damit Fortschritt später sichtbar wird.",
+     "p": [
+      "Wer den Startpunkt kennt, sieht später, wie weit er gekommen ist.",
+      "Schreibe Fakten, keine Urteile: Ich gehe 5 Minuten, nicht Ich bin faul.",
+      "Ein Startpunkt ist keine Schwäche; jede Reise hat einen."
+     ],
+     "q": "Wo stehst du heute mit deinem Ziel, in einfachen Fakten?",
+     "c": "Schreibe drei schlichte Fakten zu deinem heutigen Startpunkt auf."
+    },
+    "es": {
+     "t": "Marcar tu punto de partida",
+     "g": "Anota con honestidad dónde estás hoy para que el progreso se vea después.",
+     "p": [
+      "Conocer tu punto de partida te deja ver cuánto has avanzado.",
+      "Escribe hechos, no juicios: hoy camino 5 minutos, no soy perezoso.",
+      "Un punto de partida no es una debilidad; todo viaje tiene uno."
+     ],
+     "q": "¿Dónde estás hoy con tu meta, en hechos sencillos?",
+     "c": "Escribe tres hechos simples que describan tu punto de partida de hoy."
+    },
+    "fr": {
+     "t": "Repérer ton point de départ",
+     "g": "Note honnêtement où tu en es aujourd'hui pour voir plus tard tes progrès.",
+     "p": [
+      "Connaître ton point de départ te montrera le chemin parcouru.",
+      "Écris des faits, pas des jugements : je marche 5 minutes, pas je suis paresseux.",
+      "Un point de départ n'est pas une faiblesse ; chaque voyage en a un."
+     ],
+     "q": "Où en es-tu aujourd'hui avec ton objectif, en faits simples ?",
+     "c": "Écris trois faits simples décrivant ton point de départ."
+    },
+    "it": {
+     "t": "Fissare il punto di partenza",
+     "g": "Annota con onestà dove sei oggi, così il progresso sarà visibile più avanti.",
+     "p": [
+      "Conoscere il punto di partenza ti mostrerà quanta strada hai fatto.",
+      "Scrivi fatti, non giudizi: oggi cammino 5 minuti, non sono pigro.",
+      "Un punto di partenza non è una debolezza; ogni viaggio ne ha uno."
+     ],
+     "q": "A che punto sei oggi con il tuo obiettivo, in fatti semplici?",
+     "c": "Scrivi tre fatti semplici che descrivono il tuo punto di partenza."
+    },
+    "pt": {
+     "t": "Marcar o teu ponto de partida",
+     "g": "Anota com honestidade onde estás hoje, para o progresso se ver mais tarde.",
+     "p": [
+      "Conhecer o ponto de partida mostra-te quanto já avançaste.",
+      "Escreve factos, não julgamentos: hoje ando 5 minutos, não sou preguiçoso.",
+      "Um ponto de partida não é uma fraqueza; toda a viagem tem um."
+     ],
+     "q": "Onde estás hoje com a tua meta, em factos simples?",
+     "c": "Escreve três factos simples que descrevam o teu ponto de partida."
+    },
+    "pt_BR": {
+     "t": "Marcar seu ponto de partida",
+     "g": "Anote com honestidade onde você está hoje, para o progresso aparecer depois.",
+     "p": [
+      "Conhecer o ponto de partida mostra o quanto você já avançou.",
+      "Escreva fatos, não julgamentos: hoje ando 5 minutos, não sou preguiçoso.",
+      "Um ponto de partida não é fraqueza; toda jornada tem um."
+     ],
+     "q": "Onde você está hoje com a sua meta, em fatos simples?",
+     "c": "Escreva três fatos simples que descrevam seu ponto de partida."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Resources you already have",
+     "g": "List skills, people, tools and time that can help you along the way.",
+     "p": [
+      "You rarely start from zero: you already have some helpful things.",
+      "Think of skills, supportive people, tools and pockets of time.",
+      "Seeing your resources builds confidence and shortens the path."
+     ],
+     "q": "Which skill or person could help you most with this goal?",
+     "c": "List five resources you already have that help your goal."
+    },
+    "de": {
+     "t": "Ressourcen, die du schon hast",
+     "g": "Liste Fähigkeiten, Menschen, Werkzeuge und Zeit auf, die dir unterwegs helfen können.",
+     "p": [
+      "Du startest selten bei null: Etwas Hilfreiches hast du schon.",
+      "Denke an Fähigkeiten, hilfsbereite Menschen, Werkzeuge und freie Zeitfenster.",
+      "Deine Ressourcen zu sehen stärkt das Selbstvertrauen und verkürzt den Weg."
+     ],
+     "q": "Welche Fähigkeit oder Person könnte dir bei diesem Ziel am meisten helfen?",
+     "c": "Liste fünf Ressourcen auf, die du schon hast und die deinem Ziel helfen."
+    },
+    "es": {
+     "t": "Recursos que ya tienes",
+     "g": "Haz una lista de habilidades, personas, herramientas y tiempo que pueden ayudarte.",
+     "p": [
+      "Rara vez empiezas de cero: ya tienes cosas útiles.",
+      "Piensa en habilidades, personas que te apoyan, herramientas y ratos libres.",
+      "Ver tus recursos da confianza y acorta el camino."
+     ],
+     "q": "¿Qué habilidad o persona podría ayudarte más con esta meta?",
+     "c": "Anota cinco recursos que ya tienes y que ayudan a tu meta."
+    },
+    "fr": {
+     "t": "Les ressources que tu as déjà",
+     "g": "Liste les compétences, personnes, outils et temps qui peuvent t'aider en chemin.",
+     "p": [
+      "Tu pars rarement de zéro : tu as déjà de quoi t'aider.",
+      "Pense aux compétences, aux personnes bienveillantes, aux outils et aux moments libres.",
+      "Voir tes ressources donne confiance et raccourcit le chemin."
+     ],
+     "q": "Quelle compétence ou quelle personne t'aiderait le plus pour cet objectif ?",
+     "c": "Note cinq ressources que tu as déjà et qui servent ton objectif."
+    },
+    "it": {
+     "t": "Le risorse che hai già",
+     "g": "Elenca competenze, persone, strumenti e tempo che possono aiutarti lungo la strada.",
+     "p": [
+      "Raramente parti da zero: hai già qualcosa di utile.",
+      "Pensa a competenze, persone che ti sostengono, strumenti e ritagli di tempo.",
+      "Vedere le tue risorse dà fiducia e accorcia il cammino."
+     ],
+     "q": "Quale competenza o persona potrebbe aiutarti di più con questo obiettivo?",
+     "c": "Scrivi cinque risorse che hai già e che aiutano il tuo obiettivo."
+    },
+    "pt": {
+     "t": "Os recursos que já tens",
+     "g": "Lista competências, pessoas, ferramentas e tempo que te podem ajudar no caminho.",
+     "p": [
+      "Raramente começas do zero: já tens coisas úteis.",
+      "Pensa em competências, pessoas que te apoiam, ferramentas e tempos livres.",
+      "Ver os teus recursos dá confiança e encurta o caminho."
+     ],
+     "q": "Que competência ou pessoa te podia ajudar mais com esta meta?",
+     "c": "Escreve cinco recursos que já tens e que ajudam a tua meta."
+    },
+    "pt_BR": {
+     "t": "Os recursos que você já tem",
+     "g": "Liste habilidades, pessoas, ferramentas e tempo que podem ajudar no caminho.",
+     "p": [
+      "Raramente você começa do zero: já tem coisas úteis.",
+      "Pense em habilidades, pessoas que apoiam, ferramentas e tempos livres.",
+      "Ver seus recursos dá confiança e encurta o caminho."
+     ],
+     "q": "Que habilidade ou pessoa poderia ajudar mais com esta meta?",
+     "c": "Escreva cinco recursos que você já tem e que ajudam a sua meta."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Spotting possible bumps",
+     "g": "Predict a few likely obstacles so they do not surprise you later.",
+     "p": [
+      "Every path has bumps like tiredness, busy weeks or lost interest.",
+      "Naming obstacles early lets you plan a small answer in advance.",
+      "Use if-then plans: if I am tired, then I do the two-minute version."
+     ],
+     "q": "Which obstacle is most likely to appear on your path?",
+     "c": "Write two likely obstacles and a one-line if-then answer for each."
+    },
+    "de": {
+     "t": "Mögliche Hürden erkennen",
+     "g": "Sage ein paar wahrscheinliche Hindernisse voraus, damit sie dich nicht überraschen.",
+     "p": [
+      "Jeder Weg hat Hürden wie Müdigkeit, volle Wochen oder nachlassendes Interesse.",
+      "Wer Hürden früh benennt, kann eine kleine Antwort vorbereiten.",
+      "Nutze Wenn-dann-Pläne: Wenn ich müde bin, mache ich die Zwei-Minuten-Version."
+     ],
+     "q": "Welches Hindernis taucht auf deinem Weg am ehesten auf?",
+     "c": "Schreibe zwei wahrscheinliche Hindernisse und je eine Wenn-dann-Antwort auf."
+    },
+    "es": {
+     "t": "Detectar posibles baches",
+     "g": "Anticipa algunos obstáculos probables para que no te sorprendan después.",
+     "p": [
+      "Todo camino tiene baches: cansancio, semanas llenas o pérdida de interés.",
+      "Nombrar los obstáculos pronto permite preparar una pequeña respuesta.",
+      "Usa planes si-entonces: si estoy cansado, hago la versión de dos minutos."
+     ],
+     "q": "¿Qué obstáculo es más probable que aparezca en tu camino?",
+     "c": "Escribe dos obstáculos probables y una respuesta si-entonces para cada uno."
+    },
+    "fr": {
+     "t": "Repérer les obstacles possibles",
+     "g": "Anticipe quelques obstacles probables pour qu'ils ne te surprennent pas.",
+     "p": [
+      "Tout chemin a ses bosses : fatigue, semaines chargées, perte d'intérêt.",
+      "Nommer les obstacles tôt permet de préparer une petite réponse.",
+      "Utilise des plans si-alors : si je suis fatigué, je fais la version de deux minutes."
+     ],
+     "q": "Quel obstacle risque le plus d'apparaître sur ton chemin ?",
+     "c": "Écris deux obstacles probables et une réponse si-alors pour chacun."
+    },
+    "it": {
+     "t": "Individuare i possibili ostacoli",
+     "g": "Prevedi alcuni ostacoli probabili, così non ti coglieranno di sorpresa.",
+     "p": [
+      "Ogni percorso ha le sue buche: stanchezza, settimane piene, calo d'interesse.",
+      "Dare un nome agli ostacoli subito ti permette di preparare una piccola risposta.",
+      "Usa piani se-allora: se sono stanco, faccio la versione da due minuti."
+     ],
+     "q": "Quale ostacolo è più probabile sul tuo cammino?",
+     "c": "Scrivi due ostacoli probabili e una risposta se-allora per ciascuno."
+    },
+    "pt": {
+     "t": "Detetar possíveis obstáculos",
+     "g": "Prevê alguns obstáculos prováveis para que não te surpreendam depois.",
+     "p": [
+      "Todo o caminho tem altos e baixos: cansaço, semanas cheias ou falta de interesse.",
+      "Nomear os obstáculos cedo permite preparar uma pequena resposta.",
+      "Usa planos se-então: se estiver cansado, faço a versão de dois minutos."
+     ],
+     "q": "Que obstáculo é mais provável no teu caminho?",
+     "c": "Escreve dois obstáculos prováveis e uma resposta se-então para cada um."
+    },
+    "pt_BR": {
+     "t": "Perceber possíveis obstáculos",
+     "g": "Preveja alguns obstáculos prováveis para que não surpreendam você depois.",
+     "p": [
+      "Todo caminho tem buracos: cansaço, semanas cheias ou perda de interesse.",
+      "Nomear os obstáculos cedo permite preparar uma pequena resposta.",
+      "Use planos se-então: se eu estiver cansado, faço a versão de dois minutos."
+     ],
+     "q": "Que obstáculo é mais provável no seu caminho?",
+     "c": "Escreva dois obstáculos prováveis e uma resposta se-então para cada um."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "One goal at a time",
+     "g": "See why focusing on a single main goal at first beats juggling many.",
+     "p": [
+      "Attention is limited, and one goal gets all of yours.",
+      "Starting several goals at once often means finishing none.",
+      "Other goals can wait on a list, safe for later."
+     ],
+     "q": "Which goal will be your one main focus for now?",
+     "c": "Choose your one main goal and park the others on a later list."
+    },
+    "de": {
+     "t": "Ein Ziel nach dem anderen",
+     "g": "Erkenne, warum ein einziges Hauptziel am Anfang besser ist als viele gleichzeitig.",
+     "p": [
+      "Aufmerksamkeit ist begrenzt, und ein Ziel bekommt deine ganze.",
+      "Mehrere Ziele auf einmal zu starten heißt oft, keines zu beenden.",
+      "Andere Ziele können sicher auf einer Liste für später warten."
+     ],
+     "q": "Welches Ziel ist vorerst dein einziger Schwerpunkt?",
+     "c": "Wähle dein eines Hauptziel und setze die anderen auf eine Später-Liste."
+    },
+    "es": {
+     "t": "Una meta cada vez",
+     "g": "Mira por qué centrarte al principio en una sola meta es mejor que hacer malabares con varias.",
+     "p": [
+      "La atención es limitada y una meta recibe toda la tuya.",
+      "Empezar varias metas a la vez suele significar no terminar ninguna.",
+      "Las otras metas pueden esperar en una lista, a salvo para más tarde."
+     ],
+     "q": "¿Qué meta será tu único foco principal por ahora?",
+     "c": "Elige tu meta principal y deja las demás en una lista para más tarde."
+    },
+    "fr": {
+     "t": "Un objectif à la fois",
+     "g": "Vois pourquoi se concentrer d'abord sur un seul objectif vaut mieux que jongler.",
+     "p": [
+      "L'attention est limitée, et un seul objectif reçoit toute la tienne.",
+      "Lancer plusieurs objectifs à la fois revient souvent à n'en finir aucun.",
+      "Les autres objectifs peuvent attendre sur une liste, bien au chaud."
+     ],
+     "q": "Quel objectif sera ton seul point de mire pour l'instant ?",
+     "c": "Choisis ton objectif principal et mets les autres sur une liste pour plus tard."
+    },
+    "it": {
+     "t": "Un obiettivo alla volta",
+     "g": "Scopri perché concentrarsi all'inizio su un solo obiettivo è meglio che farne molti.",
+     "p": [
+      "L'attenzione è limitata, e un solo obiettivo riceve tutta la tua.",
+      "Iniziare più obiettivi insieme spesso significa non finirne nessuno.",
+      "Gli altri obiettivi possono aspettare in una lista, al sicuro per dopo."
+     ],
+     "q": "Quale obiettivo sarà il tuo unico focus per ora?",
+     "c": "Scegli il tuo obiettivo principale e metti gli altri in una lista per dopo."
+    },
+    "pt": {
+     "t": "Uma meta de cada vez",
+     "g": "Vê porque focar-te primeiro numa só meta é melhor do que fazer malabarismos com várias.",
+     "p": [
+      "A atenção é limitada, e uma meta recebe toda a tua.",
+      "Começar várias metas ao mesmo tempo costuma significar não acabar nenhuma.",
+      "As outras metas podem esperar numa lista, em segurança para mais tarde."
+     ],
+     "q": "Que meta será o teu único foco principal por agora?",
+     "c": "Escolhe a tua meta principal e deixa as outras numa lista para depois."
+    },
+    "pt_BR": {
+     "t": "Uma meta de cada vez",
+     "g": "Veja por que focar primeiro numa só meta é melhor do que fazer malabarismo com várias.",
+     "p": [
+      "A atenção é limitada, e uma meta recebe toda a sua.",
+      "Começar várias metas ao mesmo tempo costuma significar não terminar nenhuma.",
+      "As outras metas podem esperar numa lista, seguras para depois."
+     ],
+     "q": "Qual meta será o seu único foco principal por enquanto?",
+     "c": "Escolha sua meta principal e deixe as outras numa lista para depois."
+    }
+   }
+  }
+ ]
+}

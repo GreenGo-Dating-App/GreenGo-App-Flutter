@@ -1,0 +1,835 @@
+{
+ "topic": "anime",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Makoto Shinkai",
+     "g": "Admire stunning skies and light in Your Name and Weathering with You.",
+     "p": [
+      "Makoto Shinkai is a director known for glowing skies, rain and city light.",
+      "His films Your Name (2016) and Weathering with You (2019) were major hits.",
+      "He often paints from real places, so fans visit the locations."
+     ],
+     "q": "Which sky or kind of light do you find the most beautiful?",
+     "c": "Draw or photograph a sky at sunset and name its colours."
+    },
+    "de": {
+     "t": "Makoto Shinkai",
+     "g": "Bewundere Himmel und Licht in Your Name und Weathering with You.",
+     "p": [
+      "Makoto Shinkai ist ein Regisseur, bekannt für leuchtende Himmel, Regen und Stadtlicht.",
+      "Seine Filme Your Name (2016) und Weathering with You (2019) waren große Erfolge.",
+      "Er malt oft nach echten Orten, sodass Fans diese Schauplätze besuchen."
+     ],
+     "q": "Welchen Himmel oder welches Licht findest du am schönsten?",
+     "c": "Zeichne oder fotografiere einen Himmel bei Sonnenuntergang und benenne die Farben."
+    },
+    "es": {
+     "t": "Makoto Shinkai",
+     "g": "Admira los cielos y la luz de Your Name y Weathering with You.",
+     "p": [
+      "Makoto Shinkai es un director conocido por cielos brillantes, lluvia y luces de ciudad.",
+      "Sus películas Your Name (2016) y Weathering with You (2019) fueron grandes éxitos.",
+      "A menudo pinta a partir de lugares reales, y los fans visitan esos sitios."
+     ],
+     "q": "¿Qué cielo o tipo de luz te parece el más bonito?",
+     "c": "Dibuja o fotografía un cielo al atardecer y nombra sus colores."
+    },
+    "fr": {
+     "t": "Makoto Shinkai",
+     "g": "Admire les ciels et la lumière de Your Name et Weathering with You.",
+     "p": [
+      "Makoto Shinkai est un réalisateur connu pour ses ciels lumineux, sa pluie et ses lumières de ville.",
+      "Ses films Your Name (2016) et Weathering with You (2019) furent de grands succès.",
+      "Il peint souvent d'après des lieux réels, que les fans vont visiter."
+     ],
+     "q": "Quel ciel ou quelle lumière trouves-tu la plus belle ?",
+     "c": "Dessine ou photographie un ciel au coucher du soleil et nomme ses couleurs."
+    },
+    "it": {
+     "t": "Makoto Shinkai",
+     "g": "Ammira cieli e luce in Your Name e Weathering with You.",
+     "p": [
+      "Makoto Shinkai è un regista noto per cieli luminosi, pioggia e luci di città.",
+      "I suoi film Your Name (2016) e Weathering with You (2019) furono grandi successi.",
+      "Spesso dipinge da luoghi reali, che i fan vanno a visitare."
+     ],
+     "q": "Quale cielo o tipo di luce trovi più bello?",
+     "c": "Disegna o fotografa un cielo al tramonto e nomina i suoi colori."
+    },
+    "pt": {
+     "t": "Makoto Shinkai",
+     "g": "Admira os céus e a luz de Your Name e Weathering with You.",
+     "p": [
+      "Makoto Shinkai é um realizador conhecido por céus luminosos, chuva e luzes da cidade.",
+      "Os filmes Your Name (2016) e Weathering with You (2019) foram grandes êxitos.",
+      "Muitas vezes pinta a partir de locais reais, e os fãs vão visitá-los."
+     ],
+     "q": "Que céu ou tipo de luz achas mais bonito?",
+     "c": "Desenha ou fotografa um céu ao pôr do sol e nomeia as suas cores."
+    },
+    "pt_BR": {
+     "t": "Makoto Shinkai",
+     "g": "Admire os céus e a luz de Your Name e Weathering with You.",
+     "p": [
+      "Makoto Shinkai é um diretor conhecido por céus luminosos, chuva e luzes da cidade.",
+      "Os filmes Your Name (2016) e Weathering with You (2019) foram grandes sucessos.",
+      "Ele costuma pintar a partir de lugares reais, e os fãs vão visitá-los."
+     ],
+     "q": "Que céu ou tipo de luz você acha mais bonito?",
+     "c": "Desenhe ou fotografe um céu ao pôr do sol e dê nome às cores."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your Name",
+     "g": "Learn about two strangers, a comet and a box-office phenomenon.",
+     "p": [
+      "Your Name (2016) follows Mitsuha and Taki, two teens who mysteriously swap lives.",
+      "A comet, a small town and Tokyo set a poetic, mysterious mood.",
+      "It became one of the biggest box-office hits in Japan and abroad."
+     ],
+     "q": "If you swapped places with a stranger for a day, what would you ask?",
+     "c": "Draw a comet over a mountain town and add two silhouettes watching it."
+    },
+    "de": {
+     "t": "Your Name",
+     "g": "Erfahre von zwei Fremden, einem Kometen und einem Kinohit.",
+     "p": [
+      "Your Name (2016) folgt Mitsuha und Taki, zwei Teenagern, die geheimnisvoll ihr Leben tauschen.",
+      "Ein Komet, eine Kleinstadt und Tokio schaffen eine poetische, geheimnisvolle Stimmung.",
+      "Er wurde einer der größten Kinoerfolge in Japan und weltweit."
+     ],
+     "q": "Wenn du einen Tag mit einem Fremden tauschtest, was würdest du fragen?",
+     "c": "Zeichne einen Kometen über einer Bergstadt mit zwei Silhouetten, die ihn betrachten."
+    },
+    "es": {
+     "t": "Your Name",
+     "g": "Conoce a dos desconocidos, un cometa y un fenómeno de taquilla.",
+     "p": [
+      "Your Name (2016) sigue a Mitsuha y Taki, dos adolescentes que intercambian vidas misteriosamente.",
+      "Un cometa, un pueblo pequeño y Tokio crean un ambiente poético y misterioso.",
+      "Se convirtió en uno de los mayores éxitos de taquilla en Japón y fuera."
+     ],
+     "q": "Si cambiaras de lugar con un desconocido un día, ¿qué le preguntarías?",
+     "c": "Dibuja un cometa sobre un pueblo de montaña con dos siluetas que lo miran."
+    },
+    "fr": {
+     "t": "Your Name",
+     "g": "Découvre deux inconnus, une comète et un phénomène au box-office.",
+     "p": [
+      "Your Name (2016) suit Mitsuha et Taki, deux ados qui échangent mystérieusement leurs vies.",
+      "Une comète, une petite ville et Tokyo créent une ambiance poétique et mystérieuse.",
+      "Il est devenu l'un des plus grands succès au box-office au Japon et à l'étranger."
+     ],
+     "q": "Si tu changeais de place avec un inconnu un jour, que lui demanderais-tu ?",
+     "c": "Dessine une comète sur une ville de montagne avec deux silhouettes qui la regardent."
+    },
+    "it": {
+     "t": "Your Name",
+     "g": "Scopri due sconosciuti, una cometa e un fenomeno al botteghino.",
+     "p": [
+      "Your Name (2016) segue Mitsuha e Taki, due adolescenti che scambiano misteriosamente le vite.",
+      "Una cometa, una piccola città e Tokyo creano un'atmosfera poetica e misteriosa.",
+      "Divenne uno dei maggiori successi al botteghino in Giappone e all'estero."
+     ],
+     "q": "Se scambiassi posto con uno sconosciuto per un giorno, cosa gli chiederesti?",
+     "c": "Disegna una cometa su una cittadina di montagna con due sagome che la guardano."
+    },
+    "pt": {
+     "t": "Your Name",
+     "g": "Conhece dois desconhecidos, um cometa e um fenómeno de bilheteira.",
+     "p": [
+      "Your Name (2016) segue Mitsuha e Taki, dois adolescentes que trocam misteriosamente de vida.",
+      "Um cometa, uma pequena cidade e Tóquio criam um ambiente poético e misterioso.",
+      "Tornou-se um dos maiores êxitos de bilheteira no Japão e no estrangeiro."
+     ],
+     "q": "Se trocasses de lugar com um desconhecido por um dia, o que lhe perguntarias?",
+     "c": "Desenha um cometa sobre uma vila de montanha com duas silhuetas a vê-lo."
+    },
+    "pt_BR": {
+     "t": "Your Name",
+     "g": "Conheça dois desconhecidos, um cometa e um fenômeno de bilheteria.",
+     "p": [
+      "Your Name (2016) acompanha Mitsuha e Taki, dois adolescentes que trocam misteriosamente de vida.",
+      "Um cometa, uma cidade pequena e Tóquio criam um clima poético e misterioso.",
+      "Virou um dos maiores sucessos de bilheteria no Japão e no exterior."
+     ],
+     "q": "Se você trocasse de lugar com um desconhecido por um dia, o que perguntaria?",
+     "c": "Desenhe um cometa sobre uma cidade de montanha com duas silhuetas olhando."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mamoru Hosoda",
+     "g": "Explore family themes in Wolf Children, Summer Wars and Mirai.",
+     "p": [
+      "Mamoru Hosoda is a director who often puts family and growing up at the centre.",
+      "Wolf Children (2012) follows a mother raising two children who can become wolves.",
+      "Mirai (2018) was nominated for an Oscar for Best Animated Feature."
+     ],
+     "q": "Which family memory would make a good scene in an animated film?",
+     "c": "Draw a family portrait where each person has one special animal trait."
+    },
+    "de": {
+     "t": "Mamoru Hosoda",
+     "g": "Entdecke Familienthemen in Wolf Children, Summer Wars und Mirai.",
+     "p": [
+      "Mamoru Hosoda ist ein Regisseur, der oft Familie und Erwachsenwerden ins Zentrum stellt.",
+      "Wolf Children (2012) erzählt von einer Mutter, die zwei Kinder aufzieht, die zu Wölfen werden können.",
+      "Mirai (2018) wurde für den Oscar als bester Animationsfilm nominiert."
+     ],
+     "q": "Welche Familienerinnerung wäre eine gute Szene für einen Animationsfilm?",
+     "c": "Zeichne ein Familienporträt, in dem jede Person ein besonderes Tiermerkmal hat."
+    },
+    "es": {
+     "t": "Mamoru Hosoda",
+     "g": "Explora los temas familiares de Wolf Children, Summer Wars y Mirai.",
+     "p": [
+      "Mamoru Hosoda es un director que suele poner la familia y el crecer en el centro.",
+      "Wolf Children (2012) sigue a una madre que cría a dos niños que pueden convertirse en lobos.",
+      "Mirai (2018) fue nominada al Óscar a la mejor película de animación."
+     ],
+     "q": "¿Qué recuerdo familiar sería una buena escena de película animada?",
+     "c": "Dibuja un retrato familiar donde cada persona tenga un rasgo animal especial."
+    },
+    "fr": {
+     "t": "Mamoru Hosoda",
+     "g": "Explore les thèmes familiaux de Wolf Children, Summer Wars et Mirai.",
+     "p": [
+      "Mamoru Hosoda est un réalisateur qui place souvent la famille et grandir au centre.",
+      "Wolf Children (2012) suit une mère qui élève deux enfants pouvant devenir loups.",
+      "Mirai (2018) a été nommé à l'Oscar du meilleur film d'animation."
+     ],
+     "q": "Quel souvenir de famille ferait une bonne scène de film d'animation ?",
+     "c": "Dessine un portrait de famille où chacun a un trait animal particulier."
+    },
+    "it": {
+     "t": "Mamoru Hosoda",
+     "g": "Esplora i temi familiari di Wolf Children, Summer Wars e Mirai.",
+     "p": [
+      "Mamoru Hosoda è un regista che spesso mette al centro famiglia e crescita.",
+      "Wolf Children (2012) segue una madre che cresce due figli che possono diventare lupi.",
+      "Mirai (2018) fu candidato all'Oscar come miglior film d'animazione."
+     ],
+     "q": "Quale ricordo di famiglia sarebbe una bella scena di un film animato?",
+     "c": "Disegna un ritratto di famiglia dove ognuno ha un tratto animale speciale."
+    },
+    "pt": {
+     "t": "Mamoru Hosoda",
+     "g": "Explora os temas familiares de Wolf Children, Summer Wars e Mirai.",
+     "p": [
+      "Mamoru Hosoda é um realizador que muitas vezes põe a família e o crescer no centro.",
+      "Wolf Children (2012) segue uma mãe que cria dois filhos que se podem tornar lobos.",
+      "Mirai (2018) foi nomeado para o Óscar de melhor filme de animação."
+     ],
+     "q": "Que memória de família seria uma boa cena de um filme de animação?",
+     "c": "Desenha um retrato de família em que cada pessoa tem um traço animal especial."
+    },
+    "pt_BR": {
+     "t": "Mamoru Hosoda",
+     "g": "Explore os temas familiares de Wolf Children, Summer Wars e Mirai.",
+     "p": [
+      "Mamoru Hosoda é um diretor que muitas vezes põe a família e o crescer no centro.",
+      "Wolf Children (2012) acompanha uma mãe que cria dois filhos que podem virar lobos.",
+      "Mirai (2018) foi indicado ao Oscar de melhor animação."
+     ],
+     "q": "Que memória de família seria uma boa cena de um filme de animação?",
+     "c": "Desenhe um retrato de família em que cada pessoa tem um traço animal especial."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Summer Wars",
+     "g": "Enter a virtual world, a big family and the power of teamwork.",
+     "p": [
+      "Summer Wars (2009) is directed by Mamoru Hosoda.",
+      "A shy student joins a large family gathering while a virtual world called OZ faces a crisis.",
+      "Family and community help solve a problem that technology alone cannot."
+     ],
+     "q": "What does your family or group of friends do best when working together?",
+     "c": "Design an avatar for a virtual world: colours, shape and a special ability."
+    },
+    "de": {
+     "t": "Summer Wars",
+     "g": "Betritt eine virtuelle Welt, eine große Familie und die Kraft des Teamworks.",
+     "p": [
+      "Summer Wars (2009) wurde von Mamoru Hosoda inszeniert.",
+      "Ein schüchterner Student kommt zu einem großen Familientreffen, während die virtuelle Welt OZ in die Krise gerät.",
+      "Familie und Gemeinschaft lösen ein Problem, das Technik allein nicht schafft."
+     ],
+     "q": "Was kann deine Familie oder dein Freundeskreis im Team am besten?",
+     "c": "Entwirf einen Avatar für eine virtuelle Welt: Farben, Form und eine besondere Fähigkeit."
+    },
+    "es": {
+     "t": "Summer Wars",
+     "g": "Entra en un mundo virtual, una gran familia y el poder del trabajo en equipo.",
+     "p": [
+      "Summer Wars (2009) está dirigida por Mamoru Hosoda.",
+      "Un estudiante tímido se une a una gran reunión familiar mientras el mundo virtual OZ sufre una crisis.",
+      "La familia y la comunidad resuelven un problema que la tecnología sola no puede."
+     ],
+     "q": "¿Qué hace mejor tu familia o grupo de amigos cuando trabaja en equipo?",
+     "c": "Diseña un avatar para un mundo virtual: colores, forma y una habilidad especial."
+    },
+    "fr": {
+     "t": "Summer Wars",
+     "g": "Entre dans un monde virtuel, une grande famille et la force du travail d'équipe.",
+     "p": [
+      "Summer Wars (2009) est réalisé par Mamoru Hosoda.",
+      "Un étudiant timide rejoint une grande réunion de famille tandis que le monde virtuel OZ traverse une crise.",
+      "La famille et la communauté résolvent un problème que la technologie seule ne peut pas."
+     ],
+     "q": "Qu'est-ce que ta famille ou ton groupe d'amis fait le mieux en équipe ?",
+     "c": "Conçois un avatar pour un monde virtuel : couleurs, forme et un pouvoir spécial."
+    },
+    "it": {
+     "t": "Summer Wars",
+     "g": "Entra in un mondo virtuale, una grande famiglia e la forza del lavoro di squadra.",
+     "p": [
+      "Summer Wars (2009) è diretto da Mamoru Hosoda.",
+      "Uno studente timido si unisce a un grande raduno di famiglia mentre il mondo virtuale OZ affronta una crisi.",
+      "Famiglia e comunità risolvono un problema che la tecnologia da sola non può."
+     ],
+     "q": "Cosa sa fare meglio la tua famiglia o il tuo gruppo di amici in squadra?",
+     "c": "Progetta un avatar per un mondo virtuale: colori, forma e un'abilità speciale."
+    },
+    "pt": {
+     "t": "Summer Wars",
+     "g": "Entra num mundo virtual, numa grande família e no poder do trabalho em equipa.",
+     "p": [
+      "Summer Wars (2009) é realizado por Mamoru Hosoda.",
+      "Um estudante tímido junta-se a uma grande reunião de família enquanto o mundo virtual OZ enfrenta uma crise.",
+      "Família e comunidade resolvem um problema que a tecnologia sozinha não resolve."
+     ],
+     "q": "O que a tua família ou grupo de amigos faz melhor em equipa?",
+     "c": "Cria um avatar para um mundo virtual: cores, forma e uma capacidade especial."
+    },
+    "pt_BR": {
+     "t": "Summer Wars",
+     "g": "Entre num mundo virtual, numa grande família e no poder do trabalho em equipe.",
+     "p": [
+      "Summer Wars (2009) é dirigido por Mamoru Hosoda.",
+      "Um estudante tímido entra numa grande reunião de família enquanto o mundo virtual OZ enfrenta uma crise.",
+      "Família e comunidade resolvem um problema que a tecnologia sozinha não resolve."
+     ],
+     "q": "O que sua família ou grupo de amigos faz melhor em equipe?",
+     "c": "Crie um avatar para um mundo virtual: cores, forma e uma habilidade especial."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Girl Who Leapt Through Time",
+     "g": "Explore time travel and choices in a summer of youth.",
+     "p": [
+      "The 2006 film by Mamoru Hosoda is based on a novel by Yasutaka Tsutsui.",
+      "Makoto discovers she can leap back in time and uses it for small, everyday wishes.",
+      "It reminds us that time is precious and our choices matter."
+     ],
+     "q": "If you could replay one ordinary afternoon, what would you do again?",
+     "c": "Draw a calendar page where one day has a small time-travel symbol."
+    },
+    "de": {
+     "t": "Das Mädchen, das durch die Zeit sprang",
+     "g": "Erkunde Zeitreisen und Entscheidungen in einem Sommer der Jugend.",
+     "p": [
+      "Der Film von 2006 von Mamoru Hosoda beruht auf einem Roman von Yasutaka Tsutsui.",
+      "Makoto entdeckt, dass sie in der Zeit zurückspringen kann, und nutzt es für kleine Wünsche.",
+      "Er erinnert daran, dass Zeit kostbar ist und unsere Entscheidungen zählen."
+     ],
+     "q": "Wenn du einen gewöhnlichen Nachmittag wiederholen könntest, was würdest du tun?",
+     "c": "Zeichne ein Kalenderblatt, auf dem ein Tag ein kleines Zeitreisesymbol trägt."
+    },
+    "es": {
+     "t": "La chica que saltaba a través del tiempo",
+     "g": "Explora los viajes en el tiempo y las decisiones en un verano de juventud.",
+     "p": [
+      "La película de 2006 de Mamoru Hosoda se basa en una novela de Yasutaka Tsutsui.",
+      "Makoto descubre que puede saltar atrás en el tiempo y lo usa para pequeños deseos.",
+      "Nos recuerda que el tiempo es valioso y que nuestras decisiones importan."
+     ],
+     "q": "Si pudieras repetir una tarde cualquiera, ¿qué volverías a hacer?",
+     "c": "Dibuja una página de calendario donde un día tiene un pequeño símbolo de viaje en el tiempo."
+    },
+    "fr": {
+     "t": "La Traversée du temps",
+     "g": "Explore le voyage dans le temps et les choix d'un été de jeunesse.",
+     "p": [
+      "Le film de 2006 de Mamoru Hosoda s'inspire d'un roman de Yasutaka Tsutsui.",
+      "Makoto découvre qu'elle peut sauter dans le temps et s'en sert pour de petits souhaits.",
+      "Il rappelle que le temps est précieux et que nos choix comptent."
+     ],
+     "q": "Si tu pouvais rejouer un après-midi ordinaire, que referais-tu ?",
+     "c": "Dessine une page de calendrier où un jour porte un petit symbole de voyage dans le temps."
+    },
+    "it": {
+     "t": "La ragazza che saltava nel tempo",
+     "g": "Esplora i viaggi nel tempo e le scelte in un'estate di gioventù.",
+     "p": [
+      "Il film del 2006 di Mamoru Hosoda è tratto da un romanzo di Yasutaka Tsutsui.",
+      "Makoto scopre di poter saltare indietro nel tempo e lo usa per piccoli desideri.",
+      "Ci ricorda che il tempo è prezioso e che le nostre scelte contano."
+     ],
+     "q": "Se potessi rivivere un pomeriggio qualunque, cosa rifaresti?",
+     "c": "Disegna una pagina di calendario dove un giorno ha un piccolo simbolo di viaggio nel tempo."
+    },
+    "pt": {
+     "t": "A Rapariga que Saltava no Tempo",
+     "g": "Explora as viagens no tempo e as escolhas num verão de juventude.",
+     "p": [
+      "O filme de 2006 de Mamoru Hosoda baseia-se num romance de Yasutaka Tsutsui.",
+      "Makoto descobre que pode saltar para trás no tempo e usa-o para pequenos desejos.",
+      "Lembra-nos que o tempo é precioso e que as nossas escolhas contam."
+     ],
+     "q": "Se pudesses repetir uma tarde comum, o que farias de novo?",
+     "c": "Desenha uma página de calendário em que um dia tem um pequeno símbolo de viagem no tempo."
+    },
+    "pt_BR": {
+     "t": "A Garota que Saltou no Tempo",
+     "g": "Explore viagens no tempo e escolhas num verão de juventude.",
+     "p": [
+      "O filme de 2006 de Mamoru Hosoda é baseado num romance de Yasutaka Tsutsui.",
+      "Makoto descobre que pode saltar para trás no tempo e usa isso para pequenos desejos.",
+      "Lembra que o tempo é precioso e que nossas escolhas importam."
+     ],
+     "q": "Se você pudesse repetir uma tarde comum, o que faria de novo?",
+     "c": "Desenhe uma página de calendário em que um dia tem um pequeno símbolo de viagem no tempo."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Studio Ponoc",
+     "g": "Meet the studio of artists who came from Ghibli.",
+     "p": [
+      "Studio Ponoc was founded in 2015 by producer Yoshiaki Nishimura, formerly of Ghibli.",
+      "Its first film, Mary and the Witch's Flower (2017), was directed by Hiromasa Yonebayashi.",
+      "It keeps hand-drawn charm and shows how Ghibli's craft continues in new teams."
+     ],
+     "q": "How does a new studio keep a tradition alive and still feel fresh?",
+     "c": "Draw a young witch with a small magic flower and a curious cat."
+    },
+    "de": {
+     "t": "Studio Ponoc",
+     "g": "Lerne das Studio von Künstlern kennen, die von Ghibli kamen.",
+     "p": [
+      "Studio Ponoc wurde 2015 vom Produzenten Yoshiaki Nishimura gegründet, zuvor bei Ghibli.",
+      "Der erste Film, Mary und die Blume der Hexen (2017), stammt von Hiromasa Yonebayashi.",
+      "Er bewahrt den Handzeichen-Charme und zeigt, wie Ghiblis Handwerk in neuen Teams weiterlebt."
+     ],
+     "q": "Wie hält ein neues Studio eine Tradition lebendig und wirkt trotzdem frisch?",
+     "c": "Zeichne eine junge Hexe mit kleiner Zauberblume und einer neugierigen Katze."
+    },
+    "es": {
+     "t": "Studio Ponoc",
+     "g": "Conoce el estudio de artistas que vinieron de Ghibli.",
+     "p": [
+      "Studio Ponoc lo fundó en 2015 el productor Yoshiaki Nishimura, antes en Ghibli.",
+      "Su primera película, Mary y la flor de la bruja (2017), la dirigió Hiromasa Yonebayashi.",
+      "Conserva el encanto del dibujo a mano y muestra cómo el oficio de Ghibli sigue en nuevos equipos."
+     ],
+     "q": "¿Cómo mantiene un estudio nuevo viva una tradición y sigue pareciendo fresco?",
+     "c": "Dibuja una joven bruja con una pequeña flor mágica y un gato curioso."
+    },
+    "fr": {
+     "t": "Studio Ponoc",
+     "g": "Rencontre le studio d'artistes issus de Ghibli.",
+     "p": [
+      "Studio Ponoc a été fondé en 2015 par le producteur Yoshiaki Nishimura, ancien de Ghibli.",
+      "Son premier film, Mary et la Fleur de la sorcière (2017), est de Hiromasa Yonebayashi.",
+      "Il garde le charme du dessin à la main et montre que le savoir-faire Ghibli se poursuit."
+     ],
+     "q": "Comment un nouveau studio garde-t-il une tradition vivante tout en restant frais ?",
+     "c": "Dessine une jeune sorcière avec une petite fleur magique et un chat curieux."
+    },
+    "it": {
+     "t": "Studio Ponoc",
+     "g": "Conosci lo studio di artisti arrivati da Ghibli.",
+     "p": [
+      "Studio Ponoc fu fondato nel 2015 dal produttore Yoshiaki Nishimura, già di Ghibli.",
+      "Il suo primo film, Mary e il fiore della strega (2017), è diretto da Hiromasa Yonebayashi.",
+      "Mantiene il fascino del disegno a mano e mostra che il mestiere Ghibli continua in nuovi gruppi."
+     ],
+     "q": "Come fa un nuovo studio a tenere viva una tradizione restando fresco?",
+     "c": "Disegna una giovane strega con un piccolo fiore magico e un gatto curioso."
+    },
+    "pt": {
+     "t": "Studio Ponoc",
+     "g": "Conhece o estúdio de artistas vindos do Ghibli.",
+     "p": [
+      "O Studio Ponoc foi fundado em 2015 pelo produtor Yoshiaki Nishimura, antes no Ghibli.",
+      "O primeiro filme, Mary e a Flor da Feiticeira (2017), foi realizado por Hiromasa Yonebayashi.",
+      "Mantém o encanto do desenho à mão e mostra que o ofício do Ghibli continua em novas equipas."
+     ],
+     "q": "Como mantém um estúdio novo viva uma tradição e continua a parecer fresco?",
+     "c": "Desenha uma jovem bruxa com uma pequena flor mágica e um gato curioso."
+    },
+    "pt_BR": {
+     "t": "Studio Ponoc",
+     "g": "Conheça o estúdio de artistas vindos do Ghibli.",
+     "p": [
+      "O Studio Ponoc foi fundado em 2015 pelo produtor Yoshiaki Nishimura, antes no Ghibli.",
+      "O primeiro filme, Mary e a Flor da Feiticeira (2017), foi dirigido por Hiromasa Yonebayashi.",
+      "Mantém o charme do desenho à mão e mostra que o ofício do Ghibli segue em novas equipes."
+     ],
+     "q": "Como um estúdio novo mantém viva uma tradição e continua parecendo fresco?",
+     "c": "Desenhe uma jovem bruxa com uma pequena flor mágica e um gato curioso."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Anime films at international awards",
+     "g": "Learn about Oscar wins for Spirited Away and The Boy and the Heron.",
+     "p": [
+      "Spirited Away won the Oscar for Best Animated Feature in 2003.",
+      "Hayao Miyazaki's The Boy and the Heron won the same award in 2024.",
+      "Anime films also appear at festivals, which helps new viewers discover them."
+     ],
+     "q": "Which film do you think deserves an award, and for what quality?",
+     "c": "Design a small golden trophy for your own award, and name its category."
+    },
+    "de": {
+     "t": "Anime-Filme bei internationalen Preisen",
+     "g": "Erfahre von den Oscars für Chihiros Reise ins Zauberland und Der Junge und der Reiher.",
+     "p": [
+      "Chihiros Reise ins Zauberland gewann 2003 den Oscar als bester Animationsfilm.",
+      "Hayao Miyazakis Der Junge und der Reiher gewann denselben Preis 2024.",
+      "Anime-Filme laufen auch auf Festivals, wodurch neue Zuschauer sie entdecken."
+     ],
+     "q": "Welcher Film verdient deiner Meinung nach einen Preis, und wofür?",
+     "c": "Entwirf eine kleine goldene Trophäe für deinen eigenen Preis und nenne die Kategorie."
+    },
+    "es": {
+     "t": "Películas de anime en premios internacionales",
+     "g": "Conoce los Óscar de El viaje de Chihiro y El niño y la garza.",
+     "p": [
+      "El viaje de Chihiro ganó el Óscar a la mejor película de animación en 2003.",
+      "El niño y la garza, de Hayao Miyazaki, ganó el mismo premio en 2024.",
+      "Las películas de anime también están en festivales, lo que ayuda a descubrirlas."
+     ],
+     "q": "¿Qué película crees que merece un premio y por qué cualidad?",
+     "c": "Diseña un pequeño trofeo dorado para tu propio premio y ponle categoría."
+    },
+    "fr": {
+     "t": "Les films d'anime aux prix internationaux",
+     "g": "Découvre les Oscars du Voyage de Chihiro et du Garçon et le Héron.",
+     "p": [
+      "Le Voyage de Chihiro a remporté l'Oscar du meilleur film d'animation en 2003.",
+      "Le Garçon et le Héron de Hayao Miyazaki a reçu le même prix en 2024.",
+      "Les films d'anime sont aussi présents en festivals, ce qui aide à les découvrir."
+     ],
+     "q": "Quel film mérite selon toi un prix, et pour quelle qualité ?",
+     "c": "Conçois un petit trophée doré pour ton propre prix et nomme sa catégorie."
+    },
+    "it": {
+     "t": "Film anime ai premi internazionali",
+     "g": "Scopri gli Oscar di La città incantata e Il ragazzo e l'airone.",
+     "p": [
+      "La città incantata vinse l'Oscar come miglior film d'animazione nel 2003.",
+      "Il ragazzo e l'airone di Hayao Miyazaki ha vinto lo stesso premio nel 2024.",
+      "I film anime sono anche ai festival, il che aiuta a scoprirli."
+     ],
+     "q": "Quale film pensi meriti un premio e per quale qualità?",
+     "c": "Disegna un piccolo trofeo dorato per il tuo premio e dagli una categoria."
+    },
+    "pt": {
+     "t": "Filmes de anime em prémios internacionais",
+     "g": "Descobre os Óscares de A Viagem de Chihiro e O Rapaz e a Garça.",
+     "p": [
+      "A Viagem de Chihiro ganhou o Óscar de melhor filme de animação em 2003.",
+      "O Rapaz e a Garça, de Hayao Miyazaki, ganhou o mesmo prémio em 2024.",
+      "Os filmes de anime também passam em festivais, o que ajuda a descobri-los."
+     ],
+     "q": "Que filme achas que merece um prémio e por que qualidade?",
+     "c": "Cria um pequeno troféu dourado para o teu próprio prémio e dá-lhe uma categoria."
+    },
+    "pt_BR": {
+     "t": "Filmes de anime em prêmios internacionais",
+     "g": "Descubra os Oscars de A Viagem de Chihiro e O Menino e a Garça.",
+     "p": [
+      "A Viagem de Chihiro ganhou o Oscar de melhor animação em 2003.",
+      "O Menino e a Garça, de Hayao Miyazaki, ganhou o mesmo prêmio em 2024.",
+      "Os filmes de anime também passam em festivais, o que ajuda a descobri-los."
+     ],
+     "q": "Que filme você acha que merece um prêmio e por qual qualidade?",
+     "c": "Crie um pequeno troféu dourado para o seu próprio prêmio e dê uma categoria."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Watching an anime film like a critic",
+     "g": "Notice story, visuals, music and themes.",
+     "p": [
+      "Look at four elements: story, characters, art and music.",
+      "Take simple notes and ask what the film wants you to feel.",
+      "A good review gives reasons and respects different tastes."
+     ],
+     "q": "Which film would you review first, and what would be your main point?",
+     "c": "Write a three-sentence review of a film with one praise and one idea."
+    },
+    "de": {
+     "t": "Einen Anime-Film wie ein Kritiker sehen",
+     "g": "Achte auf Geschichte, Bilder, Musik und Themen.",
+     "p": [
+      "Betrachte vier Elemente: Geschichte, Figuren, Bilder und Musik.",
+      "Mache einfache Notizen und frage, was der Film dich fühlen lassen will.",
+      "Eine gute Kritik nennt Gründe und respektiert verschiedene Geschmäcker."
+     ],
+     "q": "Welchen Film würdest du zuerst besprechen, und was wäre dein Hauptpunkt?",
+     "c": "Schreibe eine Kritik in drei Sätzen mit einem Lob und einer Idee."
+    },
+    "es": {
+     "t": "Ver una película de anime como un crítico",
+     "g": "Fíjate en la historia, las imágenes, la música y los temas.",
+     "p": [
+      "Mira cuatro elementos: historia, personajes, arte y música.",
+      "Toma notas sencillas y pregunta qué quiere que sientas la película.",
+      "Una buena reseña da razones y respeta los distintos gustos."
+     ],
+     "q": "¿Qué película reseñarías primero y cuál sería tu punto principal?",
+     "c": "Escribe una reseña de tres frases con un elogio y una idea."
+    },
+    "fr": {
+     "t": "Regarder un film d'anime en critique",
+     "g": "Remarque l'histoire, les visuels, la musique et les thèmes.",
+     "p": [
+      "Observe quatre éléments : histoire, personnages, graphisme et musique.",
+      "Prends des notes simples et demande-toi ce que le film veut te faire ressentir.",
+      "Une bonne critique donne des raisons et respecte la diversité des goûts."
+     ],
+     "q": "Quel film critiquerais-tu en premier, et quel serait ton point principal ?",
+     "c": "Écris une critique en trois phrases avec un éloge et une idée."
+    },
+    "it": {
+     "t": "Guardare un film anime come un critico",
+     "g": "Osserva storia, immagini, musica e temi.",
+     "p": [
+      "Guarda quattro elementi: storia, personaggi, disegno e musica.",
+      "Prendi appunti semplici e chiediti cosa vuole farti sentire il film.",
+      "Una buona recensione dà motivi e rispetta gusti diversi."
+     ],
+     "q": "Quale film recensiresti per primo e quale sarebbe il tuo punto principale?",
+     "c": "Scrivi una recensione di tre frasi con un elogio e un'idea."
+    },
+    "pt": {
+     "t": "Ver um filme de anime como um crítico",
+     "g": "Repara na história, nas imagens, na música e nos temas.",
+     "p": [
+      "Observa quatro elementos: história, personagens, arte e música.",
+      "Toma notas simples e pergunta o que o filme quer que sintas.",
+      "Uma boa crítica dá razões e respeita gostos diferentes."
+     ],
+     "q": "Que filme criticarias primeiro e qual seria o teu ponto principal?",
+     "c": "Escreve uma crítica de três frases com um elogio e uma ideia."
+    },
+    "pt_BR": {
+     "t": "Assistindo a um filme de anime como um crítico",
+     "g": "Repare na história, nas imagens, na música e nos temas.",
+     "p": [
+      "Observe quatro elementos: história, personagens, arte e música.",
+      "Faça anotações simples e pergunte o que o filme quer que você sinta.",
+      "Uma boa crítica dá razões e respeita gostos diferentes."
+     ],
+     "q": "Que filme você resenharia primeiro e qual seria seu ponto principal?",
+     "c": "Escreva uma resenha de três frases com um elogio e uma ideia."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Movie night: picking an anime film",
+     "g": "Match a film to your mood and company.",
+     "p": [
+      "For a cosy night with kids, try gentle films like Totoro or Kiki.",
+      "For adventure, try Castle in the Sky; for a dreamy feeling, try Your Name.",
+      "Choose a snack, dim the lights and decide to watch without phones."
+     ],
+     "q": "What mood do you want tonight: cosy, adventurous, funny or dreamy?",
+     "c": "Plan a movie night: pick a film, a snack and a seat, and draw the poster."
+    },
+    "de": {
+     "t": "Filmabend: einen Anime-Film wählen",
+     "g": "Finde den passenden Film zu Stimmung und Gesellschaft.",
+     "p": [
+      "Für einen gemütlichen Abend mit Kindern passen sanfte Filme wie Totoro oder Kiki.",
+      "Für Abenteuer Das Schloss im Himmel, für ein verträumtes Gefühl Your Name.",
+      "Wähle einen Snack, dimme das Licht und schaut ohne Handys."
+     ],
+     "q": "Welche Stimmung willst du heute Abend: gemütlich, abenteuerlich, lustig oder verträumt?",
+     "c": "Plane einen Filmabend: Film, Snack und Platz wählen und das Plakat zeichnen."
+    },
+    "es": {
+     "t": "Noche de cine: elegir una película de anime",
+     "g": "Elige una película según tu ánimo y tu compañía.",
+     "p": [
+      "Para una noche tranquila con niños, prueba películas suaves como Totoro o Nicky.",
+      "Para aventura, El castillo en el cielo; para algo soñador, Your Name.",
+      "Elige un snack, baja las luces y decidan ver sin móviles."
+     ],
+     "q": "¿Qué ambiente quieres esta noche: acogedor, aventurero, divertido o soñador?",
+     "c": "Planea una noche de cine: elige película, snack y asiento, y dibuja el cartel."
+    },
+    "fr": {
+     "t": "Soirée cinéma : choisir un film d'anime",
+     "g": "Associe un film à ton humeur et à ta compagnie.",
+     "p": [
+      "Pour une soirée douce avec des enfants, essaie des films tendres comme Totoro ou Kiki.",
+      "Pour l'aventure, Le Château dans le ciel ; pour une ambiance rêveuse, Your Name.",
+      "Choisis un en-cas, baisse les lumières et regardez sans téléphone."
+     ],
+     "q": "Quelle ambiance veux-tu ce soir : douce, aventureuse, drôle ou rêveuse ?",
+     "c": "Prépare une soirée cinéma : film, en-cas, place, et dessine l'affiche."
+    },
+    "it": {
+     "t": "Serata cinema: scegliere un film anime",
+     "g": "Abbina un film al tuo umore e alla compagnia.",
+     "p": [
+      "Per una serata tranquilla con i bambini, prova film dolci come Totoro o Kiki.",
+      "Per l'avventura, Il castello nel cielo; per un'atmosfera sognante, Your Name.",
+      "Scegli uno spuntino, abbassa le luci e guardate senza telefoni."
+     ],
+     "q": "Che atmosfera vuoi stasera: accogliente, avventurosa, divertente o sognante?",
+     "c": "Pianifica una serata cinema: film, spuntino e posto, e disegna la locandina."
+    },
+    "pt": {
+     "t": "Noite de cinema: escolher um filme de anime",
+     "g": "Combina um filme com o teu humor e a tua companhia.",
+     "p": [
+      "Para uma noite sossegada com crianças, experimenta filmes suaves como Totoro ou Kiki.",
+      "Para aventura, O Castelo no Céu; para algo sonhador, Your Name.",
+      "Escolhe um lanche, baixa as luzes e vejam sem telemóveis."
+     ],
+     "q": "Que ambiente queres esta noite: acolhedor, aventureiro, divertido ou sonhador?",
+     "c": "Planeia uma noite de cinema: escolhe filme, lanche e lugar, e desenha o cartaz."
+    },
+    "pt_BR": {
+     "t": "Noite de cinema: escolhendo um filme de anime",
+     "g": "Combine um filme com o seu humor e a sua companhia.",
+     "p": [
+      "Para uma noite tranquila com crianças, experimente filmes suaves como Totoro ou Kiki.",
+      "Para aventura, O Castelo no Céu; para algo sonhador, Your Name.",
+      "Escolha um lanche, abaixe as luzes e assistam sem celulares."
+     ],
+     "q": "Que clima você quer esta noite: aconchegante, aventureiro, divertido ou sonhador?",
+     "c": "Planeje uma noite de cinema: escolha filme, lanche e lugar, e desenhe o pôster."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: Ghibli and anime cinema",
+     "g": "Recap the directors and films from days 31 to 59.",
+     "p": [
+      "Recall Ghibli: Miyazaki, Takahata, Totoro, Kiki, Spirited Away and Joe Hisaishi's music.",
+      "Recall other voices: Shinkai's skies, Hosoda's families and Studio Ponoc.",
+      "Recall how to watch: awards, film notes and choosing a movie night."
+     ],
+     "q": "Which director or film from this stretch would you recommend first?",
+     "c": "Draw a film poster collage that mixes three scenes from different directors."
+    },
+    "de": {
+     "t": "Rückblick: Ghibli und Anime-Kino",
+     "g": "Wiederhole Regisseure und Filme der Tage 31 bis 59.",
+     "p": [
+      "Erinnere dich an Ghibli: Miyazaki, Takahata, Totoro, Kiki, Chihiro und Joe Hisaishis Musik.",
+      "Erinnere dich an andere Stimmen: Shinkais Himmel, Hosodas Familien und Studio Ponoc.",
+      "Erinnere dich ans Schauen: Preise, Filmnotizen und die Wahl des Filmabends."
+     ],
+     "q": "Welchen Regisseur oder Film dieses Abschnitts würdest du zuerst empfehlen?",
+     "c": "Zeichne eine Plakat-Collage mit drei Szenen verschiedener Regisseure."
+    },
+    "es": {
+     "t": "Repaso: Ghibli y el cine de anime",
+     "g": "Repasa los directores y películas de los días 31 a 59.",
+     "p": [
+      "Recuerda Ghibli: Miyazaki, Takahata, Totoro, Kiki, Chihiro y la música de Joe Hisaishi.",
+      "Recuerda otras voces: los cielos de Shinkai, las familias de Hosoda y Studio Ponoc.",
+      "Recuerda cómo ver: premios, notas de película y elegir la noche de cine."
+     ],
+     "q": "¿Qué director o película de este tramo recomendarías primero?",
+     "c": "Dibuja un collage de cartel que mezcle tres escenas de distintos directores."
+    },
+    "fr": {
+     "t": "Révision : Ghibli et le cinéma d'anime",
+     "g": "Revois les réalisateurs et films des jours 31 à 59.",
+     "p": [
+      "Rappelle-toi Ghibli : Miyazaki, Takahata, Totoro, Kiki, Chihiro et la musique de Joe Hisaishi.",
+      "Rappelle-toi d'autres voix : les ciels de Shinkai, les familles de Hosoda et Studio Ponoc.",
+      "Rappelle-toi comment regarder : prix, notes de film et choix de la soirée cinéma."
+     ],
+     "q": "Quel réalisateur ou film de cette période recommanderais-tu en premier ?",
+     "c": "Dessine un collage d'affiche mêlant trois scènes de réalisateurs différents."
+    },
+    "it": {
+     "t": "Ripasso: Ghibli e il cinema anime",
+     "g": "Ripassa registi e film dei giorni da 31 a 59.",
+     "p": [
+      "Ricorda Ghibli: Miyazaki, Takahata, Totoro, Kiki, Chihiro e la musica di Joe Hisaishi.",
+      "Ricorda altre voci: i cieli di Shinkai, le famiglie di Hosoda e Studio Ponoc.",
+      "Ricorda come guardare: premi, appunti sul film e scelta della serata cinema."
+     ],
+     "q": "Quale regista o film di questo tratto consiglieresti per primo?",
+     "c": "Disegna un collage di locandina che mescoli tre scene di registi diversi."
+    },
+    "pt": {
+     "t": "Revisão: Ghibli e o cinema de anime",
+     "g": "Revê os realizadores e filmes dos dias 31 a 59.",
+     "p": [
+      "Recorda o Ghibli: Miyazaki, Takahata, Totoro, Kiki, Chihiro e a música de Joe Hisaishi.",
+      "Recorda outras vozes: os céus de Shinkai, as famílias de Hosoda e o Studio Ponoc.",
+      "Recorda como ver: prémios, notas de filme e escolha da noite de cinema."
+     ],
+     "q": "Que realizador ou filme deste conjunto recomendarias primeiro?",
+     "c": "Desenha uma colagem de cartaz com três cenas de realizadores diferentes."
+    },
+    "pt_BR": {
+     "t": "Revisão: Ghibli e o cinema de anime",
+     "g": "Reveja os diretores e filmes dos dias 31 a 59.",
+     "p": [
+      "Lembre do Ghibli: Miyazaki, Takahata, Totoro, Kiki, Chihiro e a música de Joe Hisaishi.",
+      "Lembre de outras vozes: os céus de Shinkai, as famílias de Hosoda e o Studio Ponoc.",
+      "Lembre de como assistir: prêmios, anotações de filme e escolha da noite de cinema."
+     ],
+     "q": "Que diretor ou filme deste trecho você recomendaria primeiro?",
+     "c": "Desenhe uma colagem de pôster com três cenas de diretores diferentes."
+    }
+   }
+  }
+ ]
+}

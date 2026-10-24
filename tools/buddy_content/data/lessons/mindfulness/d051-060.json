@@ -1,0 +1,835 @@
+{
+ "topic": "mindfulness",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Counting down to calm",
+     "g": "Count slowly backwards from twenty, one number per breath.",
+     "p": [
+      "Breathe naturally and count twenty on the first out-breath.",
+      "Go down one number per breath until you reach one.",
+      "If you lose your place, simply restart from any number; there is no failing here."
+     ],
+     "q": "What number were you at when your mind first wandered?",
+     "c": "Count down from twenty once before sleep tonight."
+    },
+    "de": {
+     "t": "Herunterzählen zur Ruhe",
+     "g": "Zähle langsam rückwärts von zwanzig, eine Zahl pro Atemzug.",
+     "p": [
+      "Atme natürlich und zähle beim ersten Ausatmen zwanzig.",
+      "Gehe pro Atemzug eine Zahl herunter, bis du bei eins bist.",
+      "Verlierst du die Stelle, starte bei einer beliebigen Zahl neu; hier kann nichts misslingen."
+     ],
+     "q": "Bei welcher Zahl war dein Geist zum ersten Mal abgeschweift?",
+     "c": "Zähle heute Abend vor dem Schlafen einmal von zwanzig herunter."
+    },
+    "es": {
+     "t": "Cuenta atrás hacia la calma",
+     "g": "Cuenta despacio hacia atrás desde veinte, un número por respiración.",
+     "p": [
+      "Respira con naturalidad y di veinte en la primera exhalación.",
+      "Baja un número por respiración hasta llegar a uno.",
+      "Si pierdes el hilo, empieza de nuevo desde cualquier número; aquí no se falla."
+     ],
+     "q": "¿En qué número estabas cuando tu mente se distrajo por primera vez?",
+     "c": "Cuenta atrás desde veinte una vez antes de dormir esta noche."
+    },
+    "fr": {
+     "t": "Compte à rebours vers le calme",
+     "g": "Compte lentement à rebours depuis vingt, un nombre par respiration.",
+     "p": [
+      "Respire naturellement et dis vingt à la première expiration.",
+      "Descends d'un nombre par respiration jusqu'à un.",
+      "Si tu perds le fil, repars de n'importe quel nombre; on ne peut pas échouer ici."
+     ],
+     "q": "À quel nombre étais-tu quand ton esprit s'est égaré pour la première fois ?",
+     "c": "Fais un compte à rebours depuis vingt une fois avant de dormir ce soir."
+    },
+    "it": {
+     "t": "Conto alla rovescia verso la calma",
+     "g": "Conta lentamente alla rovescia da venti, un numero per respiro.",
+     "p": [
+      "Respira naturalmente e di' venti alla prima espirazione.",
+      "Scendi di un numero per respiro fino a uno.",
+      "Se perdi il filo, riparti da un numero qualsiasi; qui non si sbaglia."
+     ],
+     "q": "A che numero eri quando la mente ha vagato la prima volta?",
+     "c": "Stasera prima di dormire fai una volta il conto alla rovescia da venti."
+    },
+    "pt": {
+     "t": "Contagem decrescente para a calma",
+     "g": "Conta devagar de trás para a frente, a partir de vinte, um número por respiração.",
+     "p": [
+      "Respira naturalmente e diz vinte na primeira expiração.",
+      "Desce um número por respiração até chegares ao um.",
+      "Se perderes o fio, recomeça em qualquer número; aqui não se falha."
+     ],
+     "q": "Em que número estavas quando a mente divagou pela primeira vez?",
+     "c": "Faz uma contagem decrescente a partir de vinte antes de dormir esta noite."
+    },
+    "pt_BR": {
+     "t": "Contagem regressiva para a calma",
+     "g": "Conte devagar de trás para frente, a partir de vinte, um número por respiração.",
+     "p": [
+      "Respire naturalmente e diga vinte na primeira expiração.",
+      "Desça um número por respiração até chegar ao um.",
+      "Se perder o fio, recomece em qualquer número; aqui não se erra."
+     ],
+     "q": "Em que número você estava quando a mente divagou pela primeira vez?",
+     "c": "Faça uma contagem regressiva a partir de vinte antes de dormir hoje à noite."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The pause between breaths",
+     "g": "Feel the tiny natural pause at the end of each breath.",
+     "p": [
+      "Follow the out-breath until it fades and the next one has not yet begun.",
+      "Notice that tiny stillness without holding your breath or forcing anything.",
+      "The pause appears by itself; if you cannot find it, simply keep following the breath."
+     ],
+     "q": "Did you find a pause between breaths, and what was it like?",
+     "c": "Look for the pause between breaths three times today."
+    },
+    "de": {
+     "t": "Die Pause zwischen den Atemzügen",
+     "g": "Spüre die winzige natürliche Pause am Ende jedes Atemzugs.",
+     "p": [
+      "Folge dem Ausatmen, bis es ausklingt und das nächste noch nicht begonnen hat.",
+      "Bemerke diese kleine Stille, ohne den Atem anzuhalten oder etwas zu erzwingen.",
+      "Die Pause entsteht von selbst; findest du sie nicht, folge einfach weiter dem Atem."
+     ],
+     "q": "Hast du eine Pause zwischen den Atemzügen gefunden, und wie war sie?",
+     "c": "Suche heute dreimal die Pause zwischen den Atemzügen."
+    },
+    "es": {
+     "t": "La pausa entre respiraciones",
+     "g": "Siente la diminuta pausa natural al final de cada respiración.",
+     "p": [
+      "Sigue la exhalación hasta que se apague y la siguiente aún no haya empezado.",
+      "Nota esa pequeña quietud sin retener el aire ni forzar nada.",
+      "La pausa aparece sola; si no la encuentras, sigue la respiración sin más."
+     ],
+     "q": "¿Encontraste una pausa entre respiraciones y cómo fue?",
+     "c": "Busca hoy tres veces la pausa entre respiraciones."
+    },
+    "fr": {
+     "t": "La pause entre les respirations",
+     "g": "Sens la minuscule pause naturelle à la fin de chaque respiration.",
+     "p": [
+      "Suis l'expiration jusqu'à ce qu'elle s'éteigne et que la suivante n'ait pas encore commencé.",
+      "Remarque cette petite immobilité sans retenir ton souffle ni rien forcer.",
+      "La pause apparaît d'elle-même; si tu ne la trouves pas, continue simplement de suivre le souffle."
+     ],
+     "q": "As-tu trouvé une pause entre les respirations, et comment était-elle ?",
+     "c": "Cherche aujourd'hui trois fois la pause entre les respirations."
+    },
+    "it": {
+     "t": "La pausa tra i respiri",
+     "g": "Senti la minuscola pausa naturale alla fine di ogni respiro.",
+     "p": [
+      "Segui l'espirazione finché si spegne e la successiva non è ancora iniziata.",
+      "Nota quella piccola quiete senza trattenere il respiro né forzare nulla.",
+      "La pausa compare da sola; se non la trovi, continua a seguire il respiro."
+     ],
+     "q": "Hai trovato una pausa tra i respiri e com'era?",
+     "c": "Cerca oggi tre volte la pausa tra i respiri."
+    },
+    "pt": {
+     "t": "A pausa entre respirações",
+     "g": "Sente a minúscula pausa natural no fim de cada respiração.",
+     "p": [
+      "Segue a expiração até se extinguir e a seguinte ainda não ter começado.",
+      "Repara nessa pequena quietude sem reter o ar nem forçar nada.",
+      "A pausa surge sozinha; se não a encontrares, continua a seguir a respiração."
+     ],
+     "q": "Encontraste uma pausa entre respirações e como foi?",
+     "c": "Procura hoje três vezes a pausa entre respirações."
+    },
+    "pt_BR": {
+     "t": "A pausa entre respirações",
+     "g": "Sinta a minúscula pausa natural no fim de cada respiração.",
+     "p": [
+      "Acompanhe a expiração até se extinguir e a seguinte ainda não ter começado.",
+      "Perceba essa pequena quietude sem reter o ar nem forçar nada.",
+      "A pausa surge sozinha; se não encontrar, continue acompanhando a respiração."
+     ],
+     "q": "Você encontrou uma pausa entre respirações e como foi?",
+     "c": "Procure hoje três vezes a pausa entre respirações."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sitting for five minutes",
+     "g": "Extend your sit to five minutes with the breath as your anchor.",
+     "p": [
+      "Set a gentle timer for five minutes and settle into your posture.",
+      "Rest attention on the breath and return whenever you drift.",
+      "Five minutes may feel long or short; both are fine, and you may stop sooner if needed."
+     ],
+     "q": "How did five minutes compare with the shorter sits you did before?",
+     "c": "Sit for five minutes at your regular time today."
+    },
+    "de": {
+     "t": "Fünf Minuten sitzen",
+     "g": "Verlängere dein Sitzen auf fünf Minuten mit dem Atem als Anker.",
+     "p": [
+      "Stelle einen sanften Timer auf fünf Minuten und finde deine Haltung.",
+      "Ruhe mit der Aufmerksamkeit am Atem und kehre zurück, wenn du abschweifst.",
+      "Fünf Minuten können lang oder kurz wirken; beides ist gut, und du darfst früher aufhören."
+     ],
+     "q": "Wie war es im Vergleich zu den kürzeren Einheiten von vorher?",
+     "c": "Sitze heute zur gewohnten Zeit fünf Minuten."
+    },
+    "es": {
+     "t": "Sentarse cinco minutos",
+     "g": "Alarga tu práctica sentada a cinco minutos con la respiración como ancla.",
+     "p": [
+      "Pon un temporizador suave de cinco minutos y acomódate en tu postura.",
+      "Apoya la atención en la respiración y vuelve cada vez que te distraigas.",
+      "Cinco minutos pueden parecer largos o cortos; ambas cosas están bien, y puedes parar antes."
+     ],
+     "q": "¿Cómo fueron cinco minutos comparados con las sesiones más cortas de antes?",
+     "c": "Siéntate hoy cinco minutos a tu hora habitual."
+    },
+    "fr": {
+     "t": "Rester assis cinq minutes",
+     "g": "Prolonge ta pratique assise à cinq minutes avec le souffle comme ancre.",
+     "p": [
+      "Règle un minuteur doux sur cinq minutes et installe ta posture.",
+      "Pose l'attention sur la respiration et reviens dès que tu t'égares.",
+      "Cinq minutes peuvent sembler longues ou courtes; les deux sont bien, et tu peux t'arrêter plus tôt."
+     ],
+     "q": "Comment ces cinq minutes se comparaient-elles aux séances plus courtes d'avant ?",
+     "c": "Reste assis cinq minutes à ton heure habituelle aujourd'hui."
+    },
+    "it": {
+     "t": "Restare seduti cinque minuti",
+     "g": "Allunga la pratica da seduto a cinque minuti con il respiro come ancora.",
+     "p": [
+      "Imposta un timer delicato di cinque minuti e sistema la postura.",
+      "Posa l'attenzione sul respiro e torna ogni volta che ti distrai.",
+      "Cinque minuti possono sembrare lunghi o brevi; vanno bene entrambi, e puoi fermarti prima."
+     ],
+     "q": "Com'erano cinque minuti rispetto alle sedute più brevi di prima?",
+     "c": "Oggi siediti cinque minuti alla tua ora abituale."
+    },
+    "pt": {
+     "t": "Sentar durante cinco minutos",
+     "g": "Alonga a prática sentada para cinco minutos com a respiração como âncora.",
+     "p": [
+      "Define um temporizador suave de cinco minutos e acomoda-te na postura.",
+      "Pousa a atenção na respiração e volta sempre que divagares.",
+      "Cinco minutos podem parecer longos ou curtos; ambos servem, e podes parar mais cedo."
+     ],
+     "q": "Como foram cinco minutos em comparação com as sessões mais curtas de antes?",
+     "c": "Senta-te hoje cinco minutos à tua hora habitual."
+    },
+    "pt_BR": {
+     "t": "Sentar por cinco minutos",
+     "g": "Estenda a prática sentada para cinco minutos com a respiração como âncora.",
+     "p": [
+      "Programe um timer suave de cinco minutos e acomode-se na postura.",
+      "Pouse a atenção na respiração e volte sempre que divagar.",
+      "Cinco minutos podem parecer longos ou curtos; ambos servem, e você pode parar antes."
+     ],
+     "q": "Como foram cinco minutos em comparação com as sessões mais curtas de antes?",
+     "c": "Sente-se hoje por cinco minutos no seu horário habitual."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Common sitting discomforts",
+     "g": "Adjust gently when legs tingle or the back feels tired.",
+     "p": [
+      "Tingling, itching and stiffness are common when sitting still.",
+      "First observe the sensation for a few breaths, then shift slowly if you wish.",
+      "Pain is different from discomfort; if something hurts, change position or stop."
+     ],
+     "q": "What discomfort came up for you, and what did you do about it?",
+     "c": "Next time you sit, notice one discomfort and adjust slowly and kindly."
+    },
+    "de": {
+     "t": "Häufige Beschwerden beim Sitzen",
+     "g": "Passe dich sanft an, wenn Beine kribbeln oder der Rücken müde wird.",
+     "p": [
+      "Kribbeln, Jucken und Steifheit sind beim Stillsitzen häufig.",
+      "Beobachte die Empfindung zuerst ein paar Atemzüge, dann verändere langsam die Haltung, wenn du magst.",
+      "Schmerz ist etwas anderes als Unbehagen; tut etwas weh, ändere die Position oder höre auf."
+     ],
+     "q": "Welches Unbehagen trat bei dir auf, und was hast du damit gemacht?",
+     "c": "Bemerke beim nächsten Sitzen ein Unbehagen und passe dich langsam und freundlich an."
+    },
+    "es": {
+     "t": "Molestias comunes al sentarse",
+     "g": "Ajusta con suavidad cuando las piernas hormigueen o la espalda se canse.",
+     "p": [
+      "El hormigueo, la picazón y la rigidez son comunes al estar quieto.",
+      "Primero observa la sensación unas respiraciones; luego cambia despacio si quieres.",
+      "El dolor es distinto de la molestia; si algo duele, cambia de postura o para."
+     ],
+     "q": "¿Qué molestia apareció en ti y qué hiciste con ella?",
+     "c": "La próxima vez que te sientes, nota una molestia y ajústate despacio y con amabilidad."
+    },
+    "fr": {
+     "t": "Inconforts courants en position assise",
+     "g": "Ajuste-toi doucement quand les jambes picotent ou que le dos fatigue.",
+     "p": [
+      "Les picotements, démangeaisons et raideurs sont courants quand on reste immobile.",
+      "Observe d'abord la sensation quelques respirations, puis bouge lentement si tu veux.",
+      "La douleur diffère de l'inconfort; si quelque chose fait mal, change de position ou arrête."
+     ],
+     "q": "Quel inconfort est apparu chez toi, et qu'en as-tu fait ?",
+     "c": "La prochaine fois que tu t'assois, remarque un inconfort et ajuste-toi lentement et avec bienveillance."
+    },
+    "it": {
+     "t": "Fastidi comuni da seduti",
+     "g": "Aggiustati con dolcezza quando le gambe formicolano o la schiena si stanca.",
+     "p": [
+      "Formicolio, prurito e rigidità sono comuni quando si sta fermi.",
+      "Prima osserva la sensazione per qualche respiro, poi cambia piano se vuoi.",
+      "Il dolore è diverso dal fastidio; se qualcosa fa male, cambia posizione o fermati."
+     ],
+     "q": "Quale fastidio è comparso e cosa ne hai fatto?",
+     "c": "La prossima volta che ti siedi, nota un fastidio e aggiustati lentamente e con gentilezza."
+    },
+    "pt": {
+     "t": "Desconfortos comuns ao sentar",
+     "g": "Ajusta-te com suavidade quando as pernas formigarem ou as costas cansarem.",
+     "p": [
+      "Formigueiro, comichão e rigidez são comuns ao ficar parado.",
+      "Primeiro observa a sensação uns respiros; depois muda devagar se quiseres.",
+      "A dor é diferente do desconforto; se algo doer, muda de posição ou pára."
+     ],
+     "q": "Que desconforto surgiu em ti e o que fizeste com ele?",
+     "c": "Da próxima vez que te sentares, repara num desconforto e ajusta-te devagar e com gentileza."
+    },
+    "pt_BR": {
+     "t": "Desconfortos comuns ao sentar",
+     "g": "Ajuste-se com suavidade quando as pernas formigarem ou as costas cansarem.",
+     "p": [
+      "Formigamento, coceira e rigidez são comuns ao ficar parado.",
+      "Primeiro observe a sensação por algumas respirações; depois mude devagar se quiser.",
+      "Dor é diferente de desconforto; se algo doer, mude de posição ou pare."
+     ],
+     "q": "Que desconforto surgiu em você e o que fez com ele?",
+     "c": "Da próxima vez que se sentar, perceba um desconforto e ajuste-se devagar e com gentileza."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sleepiness during practice",
+     "g": "Use simple tricks to stay alert: open the eyes, sit taller or practise earlier.",
+     "p": [
+      "Sleepiness is common; it does not mean you are doing it wrong.",
+      "Open your eyes, sit a little taller or practise with a cool room.",
+      "Try practising earlier in the day, and if you are very tired, resting is also wise."
+     ],
+     "q": "When in the day are you most alert for a short practice?",
+     "c": "Try a practice at a different, more alert time of day today."
+    },
+    "de": {
+     "t": "Müdigkeit bei der Übung",
+     "g": "Nutze einfache Tricks, um wach zu bleiben: Augen öffnen, aufrechter sitzen, früher üben.",
+     "p": [
+      "Müdigkeit ist häufig; sie heißt nicht, dass du es falsch machst.",
+      "Öffne die Augen, sitze etwas aufrechter oder übe in einem kühlen Raum.",
+      "Übe früher am Tag; bist du sehr müde, ist auch Ausruhen klug."
+     ],
+     "q": "Wann am Tag bist du für eine kurze Übung am wachsten?",
+     "c": "Probiere heute eine Übung zu einer anderen, wacheren Tageszeit."
+    },
+    "es": {
+     "t": "Somnolencia durante la práctica",
+     "g": "Usa trucos sencillos para estar despierto: abre los ojos, siéntate más erguido o practica antes.",
+     "p": [
+      "La somnolencia es común; no significa que lo hagas mal.",
+      "Abre los ojos, siéntate algo más erguido o practica en una habitación fresca.",
+      "Prueba a practicar más temprano; si estás muy cansado, descansar también es sabio."
+     ],
+     "q": "¿A qué hora del día estás más despierto para una práctica breve?",
+     "c": "Prueba hoy una práctica en otro momento del día en que estés más despierto."
+    },
+    "fr": {
+     "t": "Somnolence pendant la pratique",
+     "g": "Utilise des astuces simples pour rester éveillé : ouvrir les yeux, se redresser, pratiquer plus tôt.",
+     "p": [
+      "La somnolence est courante; cela ne veut pas dire que tu t'y prends mal.",
+      "Ouvre les yeux, redresse-toi un peu ou pratique dans une pièce fraîche.",
+      "Essaie de pratiquer plus tôt; si tu es très fatigué, se reposer est aussi sage."
+     ],
+     "q": "À quel moment de la journée es-tu le plus alerte pour une courte pratique ?",
+     "c": "Essaie aujourd'hui une pratique à un autre moment, où tu es plus alerte."
+    },
+    "it": {
+     "t": "Sonnolenza durante la pratica",
+     "g": "Usa semplici trucchi per restare vigile: apri gli occhi, siediti più dritto o pratica prima.",
+     "p": [
+      "La sonnolenza è comune; non significa che stai sbagliando.",
+      "Apri gli occhi, siediti un po' più eretto o pratica in una stanza fresca.",
+      "Prova a praticare prima nella giornata; se sei molto stanco, riposare è altrettanto saggio."
+     ],
+     "q": "In che momento della giornata sei più vigile per una breve pratica?",
+     "c": "Oggi prova una pratica in un altro momento della giornata, più vigile."
+    },
+    "pt": {
+     "t": "Sonolência durante a prática",
+     "g": "Usa truques simples para ficares desperto: abre os olhos, senta-te mais direito ou pratica mais cedo.",
+     "p": [
+      "A sonolência é comum; não significa que estejas a fazer mal.",
+      "Abre os olhos, senta-te um pouco mais direito ou pratica numa sala fresca.",
+      "Experimenta praticar mais cedo; se estiveres muito cansado, descansar também é sensato."
+     ],
+     "q": "A que hora do dia estás mais desperto para uma prática curta?",
+     "c": "Experimenta hoje uma prática noutra hora do dia, mais desperto."
+    },
+    "pt_BR": {
+     "t": "Sonolência durante a prática",
+     "g": "Use truques simples para ficar desperto: abra os olhos, sente-se mais ereto ou pratique mais cedo.",
+     "p": [
+      "A sonolência é comum; não significa que você esteja fazendo errado.",
+      "Abra os olhos, sente-se um pouco mais ereto ou pratique num cômodo fresco.",
+      "Experimente praticar mais cedo; se estiver muito cansado, descansar também é sensato."
+     ],
+     "q": "Em que hora do dia você está mais desperto para uma prática curta?",
+     "c": "Experimente hoje uma prática em outro horário do dia, mais desperto."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Restlessness during practice",
+     "g": "Let restless energy be noticed and named instead of fought.",
+     "p": [
+      "Restlessness shows up as fidgeting, urges to move or racing thoughts.",
+      "Name it softly: restless, restless; and feel where it lives in the body.",
+      "If it is too strong, move gently, walk mindfully or stop and try again later."
+     ],
+     "q": "Where in your body do you feel restlessness, and how does it change when named?",
+     "c": "When restless today, name it for three breaths before deciding what to do."
+    },
+    "de": {
+     "t": "Unruhe bei der Übung",
+     "g": "Lass unruhige Energie bemerkt und benannt statt bekämpft werden.",
+     "p": [
+      "Unruhe zeigt sich als Zappeln, Bewegungsdrang oder rasende Gedanken.",
+      "Benenne sie sanft: unruhig, unruhig; und spüre, wo sie im Körper sitzt.",
+      "Ist sie zu stark, bewege dich sanft, gehe achtsam oder höre auf und versuche es später."
+     ],
+     "q": "Wo im Körper spürst du Unruhe, und wie ändert sie sich, wenn du sie benennst?",
+     "c": "Benenne Unruhe heute drei Atemzüge lang, bevor du entscheidest, was du tust."
+    },
+    "es": {
+     "t": "Inquietud durante la práctica",
+     "g": "Deja que la energía inquieta se note y se nombre en lugar de combatirla.",
+     "p": [
+      "La inquietud aparece como movimientos nerviosos, ganas de moverse o pensamientos acelerados.",
+      "Nómbrala con suavidad: inquieto, inquieto; y siente dónde vive en el cuerpo.",
+      "Si es demasiado fuerte, muévete con suavidad, camina con atención o para y prueba más tarde."
+     ],
+     "q": "¿Dónde sientes la inquietud en el cuerpo y cómo cambia al nombrarla?",
+     "c": "Cuando estés inquieto hoy, nómbralo tres respiraciones antes de decidir qué hacer."
+    },
+    "fr": {
+     "t": "Agitation pendant la pratique",
+     "g": "Laisse l'énergie agitée être remarquée et nommée plutôt que combattue.",
+     "p": [
+      "L'agitation se montre par des gigotements, des envies de bouger ou des pensées qui s'emballent.",
+      "Nomme-la doucement : agité, agité; et sens où elle vit dans le corps.",
+      "Si elle est trop forte, bouge doucement, marche en pleine conscience ou arrête et réessaie plus tard."
+     ],
+     "q": "Où sens-tu l'agitation dans ton corps, et comment change-t-elle quand tu la nommes ?",
+     "c": "Quand tu es agité aujourd'hui, nomme-le trois respirations avant de décider quoi faire."
+    },
+    "it": {
+     "t": "Irrequietezza durante la pratica",
+     "g": "Lascia che l'energia irrequieta sia notata e nominata invece di combatterla.",
+     "p": [
+      "L'irrequietezza si mostra come agitazione, voglia di muoversi o pensieri veloci.",
+      "Nominala con dolcezza: irrequieto, irrequieto; e senti dove vive nel corpo.",
+      "Se è troppo forte, muoviti piano, cammina con consapevolezza o fermati e riprova più tardi."
+     ],
+     "q": "Dove senti l'irrequietezza nel corpo e come cambia quando la nomini?",
+     "c": "Quando oggi sei irrequieto, nominalo per tre respiri prima di decidere cosa fare."
+    },
+    "pt": {
+     "t": "Inquietação durante a prática",
+     "g": "Deixa a energia inquieta ser notada e nomeada em vez de combatida.",
+     "p": [
+      "A inquietação surge como mexer-se, vontade de mover-se ou pensamentos acelerados.",
+      "Nomeia-a com suavidade: inquieto, inquieto; e sente onde vive no corpo.",
+      "Se for demasiado forte, move-te com suavidade, caminha com atenção ou pára e tenta mais tarde."
+     ],
+     "q": "Onde sentes a inquietação no corpo e como muda quando a nomeias?",
+     "c": "Quando estiveres inquieto hoje, nomeia-o três respirações antes de decidires o que fazer."
+    },
+    "pt_BR": {
+     "t": "Inquietação durante a prática",
+     "g": "Deixe a energia inquieta ser notada e nomeada em vez de combatida.",
+     "p": [
+      "A inquietação surge como mexer-se, vontade de se mover ou pensamentos acelerados.",
+      "Nomeie-a com suavidade: inquieto, inquieto; e sinta onde ela vive no corpo.",
+      "Se for forte demais, mova-se com suavidade, ande com atenção ou pare e tente mais tarde."
+     ],
+     "q": "Onde você sente a inquietação no corpo e como ela muda ao ser nomeada?",
+     "c": "Quando estiver inquieto hoje, nomeie por três respirações antes de decidir o que fazer."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Practising outdoors with open eyes",
+     "g": "Sit on a bench and rest attention on what you see and hear.",
+     "p": [
+      "Find a bench, a step or a patch of grass and sit comfortably.",
+      "Let your eyes rest softly on the scene and your ears take in the sounds.",
+      "Notice sky, leaves, movement and light without naming everything."
+     ],
+     "q": "What did you notice outdoors that you would have missed indoors?",
+     "c": "Spend five minutes outside with open eyes and ears today."
+    },
+    "de": {
+     "t": "Draußen üben mit offenen Augen",
+     "g": "Setze dich auf eine Bank und lasse die Aufmerksamkeit auf dem Sehen und Hören ruhen.",
+     "p": [
+      "Finde eine Bank, eine Stufe oder ein Stück Gras und setze dich bequem.",
+      "Lass die Augen sanft auf der Szene ruhen und die Ohren die Klänge aufnehmen.",
+      "Bemerke Himmel, Blätter, Bewegung und Licht, ohne alles zu benennen."
+     ],
+     "q": "Was hast du draußen bemerkt, das dir drinnen entgangen wäre?",
+     "c": "Verbringe heute fünf Minuten draußen mit offenen Augen und Ohren."
+    },
+    "es": {
+     "t": "Practicar al aire libre con los ojos abiertos",
+     "g": "Siéntate en un banco y apoya la atención en lo que ves y oyes.",
+     "p": [
+      "Busca un banco, un escalón o un trozo de césped y siéntate cómodo.",
+      "Deja que tus ojos descansen suaves en la escena y tus oídos recojan los sonidos.",
+      "Nota cielo, hojas, movimiento y luz sin nombrarlo todo."
+     ],
+     "q": "¿Qué notaste fuera que te habrías perdido dentro?",
+     "c": "Pasa hoy cinco minutos fuera con ojos y oídos abiertos."
+    },
+    "fr": {
+     "t": "Pratiquer dehors les yeux ouverts",
+     "g": "Assieds-toi sur un banc et pose l'attention sur ce que tu vois et entends.",
+     "p": [
+      "Trouve un banc, une marche ou un coin d'herbe et assieds-toi confortablement.",
+      "Laisse tes yeux se poser doucement sur la scène et tes oreilles accueillir les sons.",
+      "Remarque ciel, feuilles, mouvement et lumière sans tout nommer."
+     ],
+     "q": "Qu'as-tu remarqué dehors que tu aurais manqué à l'intérieur ?",
+     "c": "Passe aujourd'hui cinq minutes dehors, yeux et oreilles ouverts."
+    },
+    "it": {
+     "t": "Praticare all'aperto con gli occhi aperti",
+     "g": "Siediti su una panchina e posa l'attenzione su ciò che vedi e senti.",
+     "p": [
+      "Trova una panchina, un gradino o un po' d'erba e siediti comodo.",
+      "Lascia che gli occhi riposino morbidi sulla scena e le orecchie accolgano i suoni.",
+      "Nota cielo, foglie, movimento e luce senza dare un nome a tutto."
+     ],
+     "q": "Cosa hai notato fuori che dentro ti sarebbe sfuggito?",
+     "c": "Oggi trascorri cinque minuti fuori con occhi e orecchie aperti."
+    },
+    "pt": {
+     "t": "Praticar ao ar livre com os olhos abertos",
+     "g": "Senta-te num banco e pousa a atenção no que vês e ouves.",
+     "p": [
+      "Encontra um banco, um degrau ou um pouco de relva e senta-te confortavelmente.",
+      "Deixa os olhos descansarem suaves na cena e os ouvidos acolherem os sons.",
+      "Repara no céu, folhas, movimento e luz sem nomear tudo."
+     ],
+     "q": "O que notaste lá fora que terias perdido dentro de casa?",
+     "c": "Passa hoje cinco minutos lá fora com olhos e ouvidos abertos."
+    },
+    "pt_BR": {
+     "t": "Praticando ao ar livre com os olhos abertos",
+     "g": "Sente-se num banco e pouse a atenção no que vê e ouve.",
+     "p": [
+      "Encontre um banco, um degrau ou um pouco de grama e sente-se confortavelmente.",
+      "Deixe os olhos descansarem suaves na cena e os ouvidos acolherem os sons.",
+      "Perceba céu, folhas, movimento e luz sem nomear tudo."
+     ],
+     "q": "O que você percebeu lá fora que teria perdido dentro de casa?",
+     "c": "Passe hoje cinco minutos lá fora com olhos e ouvidos abertos."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mindful breathing in queues",
+     "g": "Use waiting time for a few slow, conscious breaths.",
+     "p": [
+      "In a queue or at a red light, feel your feet and take three slow breaths.",
+      "Soften your shoulders and let the wait become a small gift of time.",
+      "Stay aware of your surroundings and never close your eyes if it is unsafe."
+     ],
+     "q": "Where do you wait most often, and could that become a practice spot?",
+     "c": "Use one waiting moment today for five slow breaths instead of the phone."
+    },
+    "de": {
+     "t": "Achtsam atmen in der Schlange",
+     "g": "Nutze Wartezeit für ein paar langsame, bewusste Atemzüge.",
+     "p": [
+      "Spüre in der Schlange oder an der roten Ampel die Füße und atme dreimal langsam.",
+      "Entspanne die Schultern und lass das Warten zum kleinen Zeitgeschenk werden.",
+      "Bleibe aufmerksam für deine Umgebung und schließe die Augen nie, wenn es unsicher ist."
+     ],
+     "q": "Wo wartest du am häufigsten, und könnte das ein Übungsort werden?",
+     "c": "Nutze heute einen Wartemoment für fünf langsame Atemzüge statt fürs Handy."
+    },
+    "es": {
+     "t": "Respirar con atención en las colas",
+     "g": "Usa el tiempo de espera para unas respiraciones lentas y conscientes.",
+     "p": [
+      "En una cola o ante un semáforo en rojo, siente tus pies y respira despacio tres veces.",
+      "Suaviza los hombros y deja que la espera sea un pequeño regalo de tiempo.",
+      "Mantente atento al entorno y nunca cierres los ojos si no es seguro."
+     ],
+     "q": "¿Dónde esperas más a menudo y podría convertirse en un lugar de práctica?",
+     "c": "Usa hoy un momento de espera para cinco respiraciones lentas en vez del móvil."
+    },
+    "fr": {
+     "t": "Respirer en pleine conscience dans les files d'attente",
+     "g": "Utilise le temps d'attente pour quelques respirations lentes et conscientes.",
+     "p": [
+      "Dans une file ou à un feu rouge, sens tes pieds et prends trois respirations lentes.",
+      "Adoucis les épaules et laisse l'attente devenir un petit cadeau de temps.",
+      "Reste attentif à ton environnement et ne ferme jamais les yeux si ce n'est pas sûr."
+     ],
+     "q": "Où attends-tu le plus souvent, et cela pourrait-il devenir un lieu de pratique ?",
+     "c": "Utilise aujourd'hui un moment d'attente pour cinq respirations lentes plutôt que le téléphone."
+    },
+    "it": {
+     "t": "Respirare con consapevolezza in fila",
+     "g": "Usa il tempo d'attesa per qualche respiro lento e consapevole.",
+     "p": [
+      "In fila o a un semaforo rosso, senti i piedi e fai tre respiri lenti.",
+      "Ammorbidisci le spalle e lascia che l'attesa diventi un piccolo dono di tempo.",
+      "Resta attento all'ambiente e non chiudere mai gli occhi se non è sicuro."
+     ],
+     "q": "Dove aspetti più spesso, e potrebbe diventare un luogo di pratica?",
+     "c": "Oggi usa un momento d'attesa per cinque respiri lenti invece del telefono."
+    },
+    "pt": {
+     "t": "Respirar com atenção nas filas",
+     "g": "Usa o tempo de espera para algumas respirações lentas e conscientes.",
+     "p": [
+      "Numa fila ou num semáforo vermelho, sente os pés e faz três respirações lentas.",
+      "Suaviza os ombros e deixa a espera tornar-se um pequeno presente de tempo.",
+      "Mantém atenção ao ambiente e nunca feches os olhos se não for seguro."
+     ],
+     "q": "Onde esperas com mais frequência e poderia tornar-se um local de prática?",
+     "c": "Usa hoje um momento de espera para cinco respirações lentas em vez do telemóvel."
+    },
+    "pt_BR": {
+     "t": "Respirando com atenção nas filas",
+     "g": "Use o tempo de espera para algumas respirações lentas e conscientes.",
+     "p": [
+      "Numa fila ou num sinal vermelho, sinta os pés e faça três respirações lentas.",
+      "Suavize os ombros e deixe a espera virar um pequeno presente de tempo.",
+      "Fique atento ao ambiente e nunca feche os olhos se não for seguro."
+     ],
+     "q": "Onde você espera com mais frequência e isso poderia virar um lugar de prática?",
+     "c": "Use hoje um momento de espera para cinco respirações lentas em vez do celular."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The breath as a portable tool",
+     "g": "Remember that the breath is always available, wherever you are.",
+     "p": [
+      "Your breath goes everywhere with you: bus, desk, kitchen or crowd.",
+      "Three slow breaths can be done unseen, in under half a minute.",
+      "Using your tool early, before stress peaks, works best."
+     ],
+     "q": "Where could you use a quick breathing pause this week?",
+     "c": "Use your breath as a tool at three different places today."
+    },
+    "de": {
+     "t": "Der Atem als tragbares Werkzeug",
+     "g": "Erinnere dich: Der Atem ist immer verfügbar, wo du auch bist.",
+     "p": [
+      "Dein Atem begleitet dich überallhin: Bus, Schreibtisch, Küche oder Menge.",
+      "Drei langsame Atemzüge gehen unbemerkt und in unter einer halben Minute.",
+      "Das Werkzeug früh zu nutzen, bevor der Stress steigt, wirkt am besten."
+     ],
+     "q": "Wo könntest du diese Woche eine kurze Atempause einsetzen?",
+     "c": "Nutze deinen Atem heute an drei verschiedenen Orten als Werkzeug."
+    },
+    "es": {
+     "t": "La respiración como herramienta portátil",
+     "g": "Recuerda que la respiración siempre está disponible, estés donde estés.",
+     "p": [
+      "Tu respiración va contigo a todas partes: autobús, mesa, cocina o multitud.",
+      "Tres respiraciones lentas pueden hacerse sin que se note, en menos de medio minuto.",
+      "Usar tu herramienta pronto, antes de que suba el estrés, funciona mejor."
+     ],
+     "q": "¿Dónde podrías usar una pausa de respiración rápida esta semana?",
+     "c": "Usa hoy tu respiración como herramienta en tres lugares distintos."
+    },
+    "fr": {
+     "t": "Le souffle comme outil portable",
+     "g": "Souviens-toi que le souffle est toujours disponible, où que tu sois.",
+     "p": [
+      "Ton souffle t'accompagne partout : bus, bureau, cuisine ou foule.",
+      "Trois respirations lentes se font discrètement, en moins d'une demi-minute.",
+      "Utiliser ton outil tôt, avant que le stress monte, marche le mieux."
+     ],
+     "q": "Où pourrais-tu utiliser une pause respiratoire rapide cette semaine ?",
+     "c": "Utilise aujourd'hui ton souffle comme outil dans trois endroits différents."
+    },
+    "it": {
+     "t": "Il respiro come strumento portatile",
+     "g": "Ricorda che il respiro è sempre disponibile, ovunque tu sia.",
+     "p": [
+      "Il tuo respiro va ovunque con te: autobus, scrivania, cucina o folla.",
+      "Tre respiri lenti si fanno senza farsi notare, in meno di mezzo minuto.",
+      "Usare lo strumento presto, prima che lo stress salga, funziona meglio."
+     ],
+     "q": "Dove potresti usare una rapida pausa di respiro questa settimana?",
+     "c": "Oggi usa il respiro come strumento in tre luoghi diversi."
+    },
+    "pt": {
+     "t": "A respiração como ferramenta portátil",
+     "g": "Lembra-te de que a respiração está sempre disponível, onde quer que estejas.",
+     "p": [
+      "A tua respiração vai contigo para todo o lado: autocarro, secretária, cozinha ou multidão.",
+      "Três respirações lentas fazem-se sem ninguém notar, em menos de meio minuto.",
+      "Usar a ferramenta cedo, antes de o stress subir, funciona melhor."
+     ],
+     "q": "Onde poderias usar uma pausa de respiração rápida esta semana?",
+     "c": "Usa hoje a tua respiração como ferramenta em três locais diferentes."
+    },
+    "pt_BR": {
+     "t": "A respiração como ferramenta portátil",
+     "g": "Lembre-se de que a respiração está sempre disponível, onde quer que esteja.",
+     "p": [
+      "Sua respiração vai com você a todo lugar: ônibus, mesa, cozinha ou multidão.",
+      "Três respirações lentas se fazem sem ninguém notar, em menos de meio minuto.",
+      "Usar a ferramenta cedo, antes de o estresse subir, funciona melhor."
+     ],
+     "q": "Onde você poderia usar uma pausa de respiração rápida esta semana?",
+     "c": "Use hoje sua respiração como ferramenta em três lugares diferentes."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: breath and body",
+     "g": "Revisit your favourite breath and body practices from the last month.",
+     "p": [
+      "Look back: counting breaths, natural breath, box breathing, body scans, stretching.",
+      "Notice which ones calm you, which wake you up and which you enjoy most.",
+      "Choose a small personal routine from them for the weeks ahead."
+     ],
+     "q": "Which breath or body practice has become your favourite, and why?",
+     "c": "Combine two favourite practices into one five-minute session today."
+    },
+    "de": {
+     "t": "Rückblick: Atem und Körper",
+     "g": "Besuche deine liebsten Atem- und Körperübungen des letzten Monats erneut.",
+     "p": [
+      "Blicke zurück: Atemzählen, natürlicher Atem, Boxatmung, Körperscans, Dehnen.",
+      "Bemerke, welche dich beruhigen, welche wecken und welche du am liebsten magst.",
+      "Stelle daraus eine kleine persönliche Routine für die kommenden Wochen zusammen."
+     ],
+     "q": "Welche Atem- oder Körperübung ist dein Liebling geworden, und warum?",
+     "c": "Verbinde heute zwei Lieblingsübungen zu einer fünfminütigen Einheit."
+    },
+    "es": {
+     "t": "Repaso: respiración y cuerpo",
+     "g": "Vuelve a tus prácticas favoritas de respiración y cuerpo del último mes.",
+     "p": [
+      "Mira atrás: contar respiraciones, respiración natural, respiración en caja, escáneres, estiramientos.",
+      "Nota cuáles te calman, cuáles te despiertan y cuáles disfrutas más.",
+      "Elige de ellas una pequeña rutina personal para las próximas semanas."
+     ],
+     "q": "¿Qué práctica de respiración o cuerpo se ha vuelto tu favorita y por qué?",
+     "c": "Combina hoy dos prácticas favoritas en una sesión de cinco minutos."
+    },
+    "fr": {
+     "t": "Bilan : souffle et corps",
+     "g": "Reviens sur tes pratiques préférées de souffle et de corps du mois écoulé.",
+     "p": [
+      "Regarde en arrière : compter les respirations, souffle naturel, respiration carrée, scans, étirements.",
+      "Remarque lesquelles t'apaisent, lesquelles te réveillent et lesquelles tu préfères.",
+      "Compose-en une petite routine personnelle pour les semaines à venir."
+     ],
+     "q": "Quelle pratique de souffle ou de corps est devenue ta préférée, et pourquoi ?",
+     "c": "Combine aujourd'hui deux pratiques préférées en une séance de cinq minutes."
+    },
+    "it": {
+     "t": "Riepilogo: respiro e corpo",
+     "g": "Torna alle tue pratiche preferite di respiro e corpo dell'ultimo mese.",
+     "p": [
+      "Guarda indietro: contare i respiri, respiro naturale, respirazione a scatola, body scan, stretching.",
+      "Nota quali ti calmano, quali ti svegliano e quali ti piacciono di più.",
+      "Scegli tra queste una piccola routine personale per le prossime settimane."
+     ],
+     "q": "Quale pratica di respiro o corpo è diventata la tua preferita e perché?",
+     "c": "Oggi unisci due pratiche preferite in una sessione di cinque minuti."
+    },
+    "pt": {
+     "t": "Revisão: respiração e corpo",
+     "g": "Volta às tuas práticas favoritas de respiração e corpo do último mês.",
+     "p": [
+      "Olha para trás: contar respirações, respiração natural, respiração em caixa, body scans, alongamentos.",
+      "Repara quais te acalmam, quais te despertam e de quais gostas mais.",
+      "Escolhe delas uma pequena rotina pessoal para as próximas semanas."
+     ],
+     "q": "Que prática de respiração ou corpo se tornou a tua favorita e porquê?",
+     "c": "Combina hoje duas práticas favoritas numa sessão de cinco minutos."
+    },
+    "pt_BR": {
+     "t": "Revisão: respiração e corpo",
+     "g": "Volte às suas práticas favoritas de respiração e corpo do último mês.",
+     "p": [
+      "Olhe para trás: contar respirações, respiração natural, respiração em caixa, body scans, alongamentos.",
+      "Perceba quais acalmam, quais despertam e de quais você mais gosta.",
+      "Escolha delas uma pequena rotina pessoal para as próximas semanas."
+     ],
+     "q": "Que prática de respiração ou corpo virou sua favorita e por quê?",
+     "c": "Combine hoje duas práticas favoritas numa sessão de cinco minutos."
+    }
+   }
+  }
+ ]
+}

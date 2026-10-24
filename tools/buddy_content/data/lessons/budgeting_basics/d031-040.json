@@ -1,0 +1,835 @@
+{
+ "topic": "budgeting_basics",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The 50/30/20 idea",
+     "g": "Learn a simple way to split income into needs, wants and savings, and how to adapt it.",
+     "p": [
+      "The 50/30/20 idea suggests roughly half for needs, 30 percent for wants and 20 percent for savings.",
+      "It is a starting picture, not a rule; real life and local costs may need other shares.",
+      "Try your own version, like 60/20/20, and see which split feels honest and doable."
+     ],
+     "q": "Does your current spending look anything like 50/30/20, or quite different?",
+     "c": "Work out your own needs, wants and savings shares from last month."
+    },
+    "de": {
+     "t": "Die 50/30/20-Idee",
+     "g": "Eine einfache Aufteilung des Einkommens in Bedürfnisse, Wünsche und Sparen kennenlernen und anpassen.",
+     "p": [
+      "Die 50/30/20-Idee schlägt grob die Hälfte für Bedürfnisse, 30 Prozent für Wünsche und 20 Prozent fürs Sparen vor.",
+      "Sie ist ein Startbild, keine Regel; echtes Leben und lokale Kosten brauchen vielleicht andere Anteile.",
+      "Probiere deine eigene Version, etwa 60/20/20, und sieh, welche Aufteilung ehrlich und machbar wirkt."
+     ],
+     "q": "Sieht deine aktuelle Ausgabenverteilung ähnlich wie 50/30/20 aus oder ganz anders?",
+     "c": "Berechne deine eigenen Anteile für Bedürfnisse, Wünsche und Sparen aus dem letzten Monat."
+    },
+    "es": {
+     "t": "La idea del 50/30/20",
+     "g": "Conocer una forma simple de dividir ingresos en necesidades, deseos y ahorro, y cómo adaptarla.",
+     "p": [
+      "La idea 50/30/20 sugiere más o menos la mitad para necesidades, 30 por ciento para deseos y 20 por ciento para ahorro.",
+      "Es una imagen de partida, no una regla; la vida real y los costes locales pueden pedir otros porcentajes.",
+      "Prueba tu propia versión, como 60/20/20, y mira qué reparto resulta honesto y posible."
+     ],
+     "q": "¿Tus gastos actuales se parecen al 50/30/20 o son bastante distintos?",
+     "c": "Calcula tus propios porcentajes de necesidades, deseos y ahorro del mes pasado."
+    },
+    "fr": {
+     "t": "L'idée du 50/30/20",
+     "g": "Découvrir une façon simple de répartir le revenu entre besoins, envies et épargne, et l'adapter.",
+     "p": [
+      "L'idée 50/30/20 propose environ la moitié pour les besoins, 30 pour cent pour les envies et 20 pour cent pour l'épargne.",
+      "C'est une image de départ, pas une règle ; la vraie vie et les coûts locaux peuvent demander d'autres parts.",
+      "Essaie ta version, comme 60/20/20, et vois quelle répartition semble honnête et réaliste."
+     ],
+     "q": "Tes dépenses actuelles ressemblent-elles au 50/30/20 ou sont-elles bien différentes ?",
+     "c": "Calcule tes propres parts besoins, envies et épargne sur le mois dernier."
+    },
+    "it": {
+     "t": "L'idea del 50/30/20",
+     "g": "Conoscere un modo semplice di dividere il reddito in bisogni, desideri e risparmio, e adattarlo.",
+     "p": [
+      "L'idea 50/30/20 propone circa metà per i bisogni, il 30 per cento per i desideri e il 20 per cento per il risparmio.",
+      "È un'immagine di partenza, non una regola; vita reale e costi locali possono chiedere altre quote.",
+      "Prova una tua versione, come 60/20/20, e guarda quale ripartizione è onesta e fattibile."
+     ],
+     "q": "Le tue spese attuali somigliano al 50/30/20 o sono molto diverse?",
+     "c": "Calcola le tue quote di bisogni, desideri e risparmio dal mese scorso."
+    },
+    "pt": {
+     "t": "A ideia do 50/30/20",
+     "g": "Conhecer uma forma simples de dividir o rendimento em necessidades, desejos e poupança, e adaptá-la.",
+     "p": [
+      "A ideia 50/30/20 sugere cerca de metade para necessidades, 30 por cento para desejos e 20 por cento para poupança.",
+      "É uma imagem de partida, não uma regra; a vida real e os custos locais podem pedir outras percentagens.",
+      "Experimenta a tua versão, como 60/20/20, e vê que divisão parece honesta e possível."
+     ],
+     "q": "Os teus gastos atuais parecem-se com o 50/30/20 ou são bem diferentes?",
+     "c": "Calcula as tuas percentagens de necessidades, desejos e poupança do mês passado."
+    },
+    "pt_BR": {
+     "t": "A ideia do 50/30/20",
+     "g": "Conhecer uma forma simples de dividir a renda em necessidades, desejos e poupança, e adaptá-la.",
+     "p": [
+      "A ideia 50/30/20 sugere cerca de metade para necessidades, 30 por cento para desejos e 20 por cento para poupança.",
+      "É uma imagem de partida, não uma regra; a vida real e os custos locais podem pedir outras porcentagens.",
+      "Teste a sua versão, como 60/20/20, e veja qual divisão parece honesta e possível."
+     ],
+     "q": "Seus gastos atuais se parecem com o 50/30/20 ou são bem diferentes?",
+     "c": "Calcule suas porcentagens de necessidades, desejos e poupança do mês passado."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Zero-based budgeting",
+     "g": "Plan every unit of income until nothing is left without a job.",
+     "p": [
+      "In zero-based budgeting, income minus planned spending and saving equals zero.",
+      "Zero does not mean you spend everything; saving and buffer count as planned jobs.",
+      "It works well if you like detail and want to know where each part of your income goes."
+     ],
+     "q": "Does detailed planning sound relaxing or tiring to you?",
+     "c": "Plan next month on paper until income minus all jobs equals zero."
+    },
+    "de": {
+     "t": "Zero-Based-Budgeting",
+     "g": "Das Einkommen so planen, dass nichts ohne Aufgabe übrig bleibt.",
+     "p": [
+      "Beim Zero-Based-Budgeting ergibt Einkommen minus geplante Ausgaben und Sparen null.",
+      "Null heißt nicht, alles auszugeben; Sparen und Puffer zählen als geplante Aufgaben.",
+      "Es passt gut, wenn du Details magst und wissen willst, wohin jeder Teil deines Einkommens geht."
+     ],
+     "q": "Klingt detailliertes Planen für dich entspannend oder anstrengend?",
+     "c": "Plane den nächsten Monat auf Papier, bis Einkommen minus alle Aufgaben null ergibt."
+    },
+    "es": {
+     "t": "Presupuesto base cero",
+     "g": "Planificar cada unidad de ingreso hasta que nada quede sin una función.",
+     "p": [
+      "En el presupuesto base cero, ingresos menos gastos y ahorro planificados dan cero.",
+      "Cero no significa gastarlo todo; el ahorro y el colchón cuentan como tareas planificadas.",
+      "Funciona bien si te gusta el detalle y quieres saber adónde va cada parte de tu ingreso."
+     ],
+     "q": "¿Planificar con detalle te suena relajante o agotador?",
+     "c": "Planifica el mes que viene en papel hasta que ingresos menos todas las tareas sea cero."
+    },
+    "fr": {
+     "t": "Le budget base zéro",
+     "g": "Planifier chaque part du revenu jusqu'à ce que plus rien ne soit sans rôle.",
+     "p": [
+      "Dans le budget base zéro, revenu moins dépenses et épargne prévues égale zéro.",
+      "Zéro ne veut pas dire tout dépenser ; l'épargne et le coussin comptent comme des rôles prévus.",
+      "Il convient bien si tu aimes le détail et veux savoir où va chaque part de ton revenu."
+     ],
+     "q": "Planifier en détail te semble-t-il reposant ou fatigant ?",
+     "c": "Planifie le mois prochain sur papier jusqu'à ce que revenu moins tous les rôles fasse zéro."
+    },
+    "it": {
+     "t": "Budget a base zero",
+     "g": "Pianificare ogni parte del reddito finché nulla resta senza un compito.",
+     "p": [
+      "Nel budget a base zero, reddito meno spese e risparmio pianificati fa zero.",
+      "Zero non significa spendere tutto; risparmio e cuscinetto contano come compiti pianificati.",
+      "Funziona bene se ami i dettagli e vuoi sapere dove va ogni parte del reddito."
+     ],
+     "q": "Pianificare nei dettagli ti sembra rilassante o faticoso?",
+     "c": "Pianifica il mese prossimo su carta finché reddito meno tutti i compiti fa zero."
+    },
+    "pt": {
+     "t": "Orçamento de base zero",
+     "g": "Planear cada parte do rendimento até nada ficar sem função.",
+     "p": [
+      "No orçamento de base zero, rendimento menos gastos e poupança planeados dá zero.",
+      "Zero não significa gastar tudo; a poupança e a almofada contam como funções planeadas.",
+      "Funciona bem se gostas de detalhe e queres saber para onde vai cada parte do rendimento."
+     ],
+     "q": "Planear ao pormenor parece-te relaxante ou cansativo?",
+     "c": "Planeia o próximo mês no papel até rendimento menos todas as funções dar zero."
+    },
+    "pt_BR": {
+     "t": "Orçamento de base zero",
+     "g": "Planejar cada parte da renda até nada ficar sem função.",
+     "p": [
+      "No orçamento de base zero, renda menos gastos e poupança planejados dá zero.",
+      "Zero não significa gastar tudo; a poupança e o colchão contam como funções planejadas.",
+      "Funciona bem se você gosta de detalhe e quer saber para onde vai cada parte da renda."
+     ],
+     "q": "Planejar nos detalhes parece relaxante ou cansativo para você?",
+     "c": "Planeje o próximo mês no papel até renda menos todas as funções dar zero."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The envelope method",
+     "g": "Use real or digital envelopes to set clear limits per category.",
+     "p": [
+      "With envelopes, each category gets a set amount for the month, and when it is empty, you pause.",
+      "Envelopes can be paper, jars, separate sub-accounts or the envelope feature in an app.",
+      "They work best for categories that tend to slip, like eating out or fun."
+     ],
+     "q": "Which category do you think would benefit most from a clear limit?",
+     "c": "Choose one slippery category and give it an envelope with a fixed amount."
+    },
+    "de": {
+     "t": "Die Umschlagmethode",
+     "g": "Echte oder digitale Umschläge nutzen, um klare Grenzen pro Kategorie zu setzen.",
+     "p": [
+      "Bei Umschlägen bekommt jede Kategorie einen festen Betrag für den Monat, und ist er leer, pausierst du.",
+      "Umschläge können Papier, Gläser, getrennte Unterkonten oder die Umschlagfunktion einer App sein.",
+      "Sie eignen sich am besten für Kategorien, die gern ausufern, wie Essengehen oder Freizeit."
+     ],
+     "q": "Welche Kategorie würde deiner Meinung nach am meisten von einer klaren Grenze profitieren?",
+     "c": "Wähle eine ausufernde Kategorie und gib ihr einen Umschlag mit festem Betrag."
+    },
+    "es": {
+     "t": "El método de los sobres",
+     "g": "Usar sobres reales o digitales para poner límites claros por categoría.",
+     "p": [
+      "Con sobres, cada categoría tiene una cantidad fija para el mes, y cuando se vacía, haces una pausa.",
+      "Los sobres pueden ser de papel, tarros, subcuentas separadas o la función de sobres de una app.",
+      "Funcionan mejor en categorías que tienden a escaparse, como comer fuera o el ocio."
+     ],
+     "q": "¿Qué categoría crees que más se beneficiaría de un límite claro?",
+     "c": "Elige una categoría escurridiza y dale un sobre con una cantidad fija."
+    },
+    "fr": {
+     "t": "La méthode des enveloppes",
+     "g": "Utiliser des enveloppes réelles ou numériques pour fixer des limites claires par catégorie.",
+     "p": [
+      "Avec les enveloppes, chaque catégorie reçoit un montant fixe pour le mois, et quand elle est vide, tu fais une pause.",
+      "Les enveloppes peuvent être en papier, des bocaux, des sous-comptes ou la fonction enveloppes d'une appli.",
+      "Elles marchent mieux pour les catégories qui dérapent, comme les sorties ou les loisirs."
+     ],
+     "q": "Quelle catégorie bénéficierait le plus d'une limite claire, selon toi ?",
+     "c": "Choisis une catégorie glissante et donne-lui une enveloppe à montant fixe."
+    },
+    "it": {
+     "t": "Il metodo delle buste",
+     "g": "Usare buste reali o digitali per fissare limiti chiari per categoria.",
+     "p": [
+      "Con le buste ogni categoria ha un importo fisso per il mese, e quando è vuota ti fermi.",
+      "Le buste possono essere di carta, barattoli, sottoconti separati o la funzione buste di un'app.",
+      "Funzionano meglio per le categorie che sfuggono, come mangiare fuori o lo svago."
+     ],
+     "q": "Quale categoria pensi trarrebbe più vantaggio da un limite chiaro?",
+     "c": "Scegli una categoria scivolosa e dalle una busta con un importo fisso."
+    },
+    "pt": {
+     "t": "O método dos envelopes",
+     "g": "Usar envelopes reais ou digitais para pôr limites claros por categoria.",
+     "p": [
+      "Com envelopes, cada categoria tem um valor fixo para o mês, e quando esvazia, fazes uma pausa.",
+      "Os envelopes podem ser de papel, frascos, subcontas separadas ou a função de envelopes de uma app.",
+      "Funcionam melhor em categorias que tendem a fugir, como comer fora ou o lazer."
+     ],
+     "q": "Que categoria achas que mais ganharia com um limite claro?",
+     "c": "Escolhe uma categoria escorregadia e dá-lhe um envelope com um valor fixo."
+    },
+    "pt_BR": {
+     "t": "O método dos envelopes",
+     "g": "Usar envelopes reais ou digitais para colocar limites claros por categoria.",
+     "p": [
+      "Com envelopes, cada categoria tem um valor fixo para o mês, e quando esvazia, você faz uma pausa.",
+      "Os envelopes podem ser de papel, potes, subcontas separadas ou a função de envelopes de um app.",
+      "Funcionam melhor em categorias que tendem a escapar, como comer fora ou o lazer."
+     ],
+     "q": "Que categoria você acha que mais ganharia com um limite claro?",
+     "c": "Escolha uma categoria escorregadia e dê a ela um envelope com um valor fixo."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pay yourself first",
+     "g": "Move a small amount to savings as soon as income arrives.",
+     "p": [
+      "Paying yourself first means saving a small part right away, before spending the rest.",
+      "It works because saving what is left over rarely works; leftovers tend to vanish.",
+      "Start tiny and make it automatic if you can, so it needs no willpower."
+     ],
+     "q": "What small amount could you move to savings without noticing a big difference?",
+     "c": "Decide on a small amount and schedule it for the day after your next income."
+    },
+    "de": {
+     "t": "Zuerst an dich selbst zahlen",
+     "g": "Einen kleinen Betrag zum Sparen verschieben, sobald das Einkommen eintrifft.",
+     "p": [
+      "An dich selbst zuerst zahlen heißt, sofort einen kleinen Teil zu sparen, bevor du den Rest ausgibst.",
+      "Es funktioniert, weil Sparen vom Rest selten klappt; Übriges verschwindet gern.",
+      "Fang winzig an und automatisiere es, wenn möglich, damit es keine Willenskraft braucht."
+     ],
+     "q": "Welchen kleinen Betrag könntest du zum Sparen verschieben, ohne große Veränderung zu spüren?",
+     "c": "Lege einen kleinen Betrag fest und plane ihn für den Tag nach dem nächsten Einkommen."
+    },
+    "es": {
+     "t": "Págate a ti primero",
+     "g": "Mover una pequeña cantidad al ahorro en cuanto llega el ingreso.",
+     "p": [
+      "Pagarte primero significa ahorrar una parte pequeña enseguida, antes de gastar el resto.",
+      "Funciona porque ahorrar lo que sobra rara vez funciona; lo que sobra suele desaparecer.",
+      "Empieza con muy poco y automatízalo si puedes, para que no exija fuerza de voluntad."
+     ],
+     "q": "¿Qué cantidad pequeña podrías mover al ahorro sin notar una gran diferencia?",
+     "c": "Decide una cantidad pequeña y prográmala para el día siguiente a tu próximo ingreso."
+    },
+    "fr": {
+     "t": "Te payer en premier",
+     "g": "Déplacer un petit montant vers l'épargne dès que le revenu arrive.",
+     "p": [
+      "Te payer en premier, c'est épargner tout de suite une petite part, avant de dépenser le reste.",
+      "Cela marche parce qu'épargner ce qui reste marche rarement ; les restes ont tendance à disparaître.",
+      "Commence tout petit et automatise si possible, pour ne pas dépendre de la volonté."
+     ],
+     "q": "Quel petit montant pourrais-tu mettre de côté sans sentir de grande différence ?",
+     "c": "Décide d'un petit montant et programme-le pour le lendemain de ton prochain revenu."
+    },
+    "it": {
+     "t": "Paga prima te stesso",
+     "g": "Spostare una piccola somma sul risparmio appena arriva il reddito.",
+     "p": [
+      "Pagare prima te stesso significa risparmiare subito una piccola parte, prima di spendere il resto.",
+      "Funziona perché risparmiare ciò che avanza di rado funziona; gli avanzi tendono a sparire.",
+      "Parti piccolissimo e automatizza se puoi, così non serve forza di volontà."
+     ],
+     "q": "Quale piccola somma potresti spostare sul risparmio senza sentire grande differenza?",
+     "c": "Decidi una piccola somma e programmala per il giorno dopo il tuo prossimo reddito."
+    },
+    "pt": {
+     "t": "Paga-te a ti primeiro",
+     "g": "Passar uma pequena quantia para a poupança assim que chega o rendimento.",
+     "p": [
+      "Pagares-te primeiro significa poupar logo uma parte pequena, antes de gastares o resto.",
+      "Funciona porque poupar o que sobra raramente resulta; o que sobra tende a desaparecer.",
+      "Começa muito pequeno e automatiza se puderes, para não depender de força de vontade."
+     ],
+     "q": "Que pequena quantia podias passar para a poupança sem sentir grande diferença?",
+     "c": "Decide uma quantia pequena e agenda-a para o dia a seguir ao teu próximo rendimento."
+    },
+    "pt_BR": {
+     "t": "Pague a você primeiro",
+     "g": "Passar uma pequena quantia para a poupança assim que a renda chega.",
+     "p": [
+      "Pagar a você primeiro é poupar logo uma parte pequena, antes de gastar o resto.",
+      "Funciona porque poupar o que sobra raramente dá certo; o que sobra tende a sumir.",
+      "Comece bem pequeno e automatize se puder, para não depender de força de vontade."
+     ],
+     "q": "Que pequena quantia você poderia passar para a poupança sem sentir grande diferença?",
+     "c": "Decida uma quantia pequena e agende para o dia seguinte à sua próxima renda."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The no-budget budget",
+     "g": "Try a light approach: automate savings and bills, then spend the rest freely.",
+     "p": [
+      "A no-budget budget sets up the essentials once, then lets you spend what remains without tracking.",
+      "You automate bills and saving, and the leftover money in your account is yours to enjoy.",
+      "It suits people who dislike detail, but needs a quick check now and then."
+     ],
+     "q": "Would you enjoy a light method like this, or do you prefer more detail?",
+     "c": "Sketch the three things you would automate: bills, saving and one more."
+    },
+    "de": {
+     "t": "Das Nicht-Budget-Budget",
+     "g": "Einen leichten Ansatz probieren: Sparen und Rechnungen automatisieren, den Rest frei ausgeben.",
+     "p": [
+      "Das Nicht-Budget-Budget richtet das Wesentliche einmal ein und lässt dich den Rest ohne Erfassung ausgeben.",
+      "Du automatisierst Rechnungen und Sparen, und das Übrige auf dem Konto darfst du genießen.",
+      "Es passt zu Menschen, die Details nicht mögen, braucht aber hin und wieder einen kurzen Check."
+     ],
+     "q": "Würde dir so eine leichte Methode gefallen oder magst du mehr Details?",
+     "c": "Skizziere die drei Dinge, die du automatisieren würdest: Rechnungen, Sparen und eins mehr."
+    },
+    "es": {
+     "t": "El presupuesto sin presupuesto",
+     "g": "Probar un enfoque ligero: automatizar ahorro y facturas y gastar el resto libremente.",
+     "p": [
+      "El presupuesto sin presupuesto configura lo esencial una vez y te deja gastar lo que queda sin registrar.",
+      "Automatizas facturas y ahorro, y el dinero que quede en tu cuenta es para disfrutar.",
+      "Va bien a quien no soporta el detalle, pero necesita un repaso rápido de vez en cuando."
+     ],
+     "q": "¿Disfrutarías de un método ligero así o prefieres más detalle?",
+     "c": "Esboza las tres cosas que automatizarías: facturas, ahorro y una más."
+    },
+    "fr": {
+     "t": "Le budget sans budget",
+     "g": "Essayer une approche légère : automatiser épargne et factures, dépenser le reste librement.",
+     "p": [
+      "Le budget sans budget règle l'essentiel une fois, puis te laisse dépenser le reste sans suivi.",
+      "Tu automatises factures et épargne, et l'argent restant sur ton compte est à savourer.",
+      "Il convient à ceux qui n'aiment pas le détail, mais demande un petit contrôle de temps en temps."
+     ],
+     "q": "Une méthode légère comme celle-ci te plairait-elle, ou préfères-tu plus de détail ?",
+     "c": "Esquisse les trois choses que tu automatiserais : factures, épargne et une autre."
+    },
+    "it": {
+     "t": "Il budget senza budget",
+     "g": "Provare un approccio leggero: automatizzare risparmio e bollette, spendere il resto liberamente.",
+     "p": [
+      "Il budget senza budget sistema l'essenziale una volta e ti lascia spendere il resto senza tracciare.",
+      "Automatizzi bollette e risparmio, e il denaro rimasto sul conto è tuo da godere.",
+      "Va bene a chi non ama i dettagli, ma serve un controllo veloce ogni tanto."
+     ],
+     "q": "Ti piacerebbe un metodo leggero come questo o preferisci più dettaglio?",
+     "c": "Abbozza le tre cose che automatizzeresti: bollette, risparmio e un'altra."
+    },
+    "pt": {
+     "t": "O orçamento sem orçamento",
+     "g": "Experimentar uma abordagem leve: automatizar poupança e contas, gastar o resto à vontade.",
+     "p": [
+      "O orçamento sem orçamento configura o essencial uma vez e deixa-te gastar o que resta sem registar.",
+      "Automatizas contas e poupança, e o dinheiro que sobra na conta é teu para aproveitar.",
+      "Serve a quem não gosta de detalhe, mas precisa de uma verificação rápida de vez em quando."
+     ],
+     "q": "Gostarias de um método leve assim ou preferes mais detalhe?",
+     "c": "Esboça as três coisas que automatizarias: contas, poupança e mais uma."
+    },
+    "pt_BR": {
+     "t": "O orçamento sem orçamento",
+     "g": "Experimentar uma abordagem leve: automatizar poupança e contas, gastar o resto à vontade.",
+     "p": [
+      "O orçamento sem orçamento configura o essencial uma vez e deixa você gastar o que resta sem registrar.",
+      "Você automatiza contas e poupança, e o dinheiro que sobra na conta é seu para curtir.",
+      "Serve a quem não gosta de detalhe, mas precisa de uma conferida rápida de vez em quando."
+     ],
+     "q": "Você gostaria de um método leve assim ou prefere mais detalhe?",
+     "c": "Esboce as três coisas que você automatizaria: contas, poupança e mais uma."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Weekly versus monthly budgets",
+     "g": "Choose a budget rhythm that matches how you get paid and spend.",
+     "p": [
+      "A monthly budget fits monthly bills; a weekly one gives faster feedback for small spending.",
+      "Some people mix: monthly for bills and saving, weekly for food and fun.",
+      "Pick the rhythm you will actually check, and keep it for at least a month."
+     ],
+     "q": "Do you think in weeks or months when you plan your money?",
+     "c": "Try a weekly limit for one flexible category and see how it feels."
+    },
+    "de": {
+     "t": "Wochen- oder Monatsbudget",
+     "g": "Einen Budgetrhythmus wählen, der zu deinem Einkommen und Ausgabeverhalten passt.",
+     "p": [
+      "Ein Monatsbudget passt zu monatlichen Rechnungen; ein Wochenbudget gibt schnelleres Feedback bei kleinen Ausgaben.",
+      "Manche mischen: monatlich für Rechnungen und Sparen, wöchentlich für Essen und Freizeit.",
+      "Wähle den Rhythmus, den du wirklich prüfst, und behalte ihn mindestens einen Monat."
+     ],
+     "q": "Denkst du beim Geldplanen in Wochen oder Monaten?",
+     "c": "Probiere ein Wochenlimit für eine flexible Kategorie aus und spüre, wie es sich anfühlt."
+    },
+    "es": {
+     "t": "Presupuesto semanal o mensual",
+     "g": "Elegir un ritmo de presupuesto que encaje con cómo cobras y gastas.",
+     "p": [
+      "Un presupuesto mensual encaja con facturas mensuales; uno semanal da respuesta más rápida en gastos pequeños.",
+      "Algunos mezclan: mensual para facturas y ahorro, semanal para comida y ocio.",
+      "Elige el ritmo que de verdad revisarás y mantenlo al menos un mes."
+     ],
+     "q": "¿Piensas en semanas o en meses cuando planificas tu dinero?",
+     "c": "Prueba un límite semanal en una categoría flexible y mira cómo se siente."
+    },
+    "fr": {
+     "t": "Budget hebdomadaire ou mensuel",
+     "g": "Choisir un rythme de budget qui correspond à ta paie et à tes dépenses.",
+     "p": [
+      "Un budget mensuel convient aux factures mensuelles ; un hebdomadaire donne un retour plus rapide sur les petites dépenses.",
+      "Certains mélangent : mensuel pour factures et épargne, hebdomadaire pour courses et loisirs.",
+      "Choisis le rythme que tu vérifieras vraiment et garde-le au moins un mois."
+     ],
+     "q": "Penses-tu en semaines ou en mois quand tu planifies ton argent ?",
+     "c": "Essaie une limite hebdomadaire sur une catégorie souple et vois ce que tu ressens."
+    },
+    "it": {
+     "t": "Budget settimanale o mensile",
+     "g": "Scegliere un ritmo di budget che si adatti a come vieni pagato e spendi.",
+     "p": [
+      "Un budget mensile si adatta alle bollette mensili; uno settimanale dà un riscontro più rapido sulle piccole spese.",
+      "Alcuni mescolano: mensile per bollette e risparmio, settimanale per cibo e svago.",
+      "Scegli il ritmo che controllerai davvero e mantienilo per almeno un mese."
+     ],
+     "q": "Quando pianifichi i soldi pensi in settimane o in mesi?",
+     "c": "Prova un limite settimanale su una categoria flessibile e senti come va."
+    },
+    "pt": {
+     "t": "Orçamento semanal ou mensal",
+     "g": "Escolher um ritmo de orçamento que combine com a forma como recebes e gastas.",
+     "p": [
+      "Um orçamento mensal combina com contas mensais; um semanal dá resposta mais rápida nos gastos pequenos.",
+      "Alguns misturam: mensal para contas e poupança, semanal para comida e lazer.",
+      "Escolhe o ritmo que vais mesmo verificar e mantém-no pelo menos um mês."
+     ],
+     "q": "Quando planeias o dinheiro pensas em semanas ou em meses?",
+     "c": "Experimenta um limite semanal numa categoria flexível e vê como te sentes."
+    },
+    "pt_BR": {
+     "t": "Orçamento semanal ou mensal",
+     "g": "Escolher um ritmo de orçamento que combine com a forma como você recebe e gasta.",
+     "p": [
+      "Um orçamento mensal combina com contas mensais; um semanal dá resposta mais rápida nos gastos pequenos.",
+      "Algumas pessoas misturam: mensal para contas e poupança, semanal para comida e lazer.",
+      "Escolha o ritmo que você vai mesmo conferir e mantenha por pelo menos um mês."
+     ],
+     "q": "Ao planejar o dinheiro, você pensa em semanas ou em meses?",
+     "c": "Teste um limite semanal numa categoria flexível e veja como se sente."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Budgeting with a spreadsheet",
+     "g": "Set up simple columns and totals to see your plan clearly.",
+     "p": [
+      "A spreadsheet needs only a few columns: category, planned, actual and difference.",
+      "A simple sum formula at the bottom of each column does most of the work.",
+      "Keep it plain: one sheet per month is easier than a giant clever file."
+     ],
+     "q": "Have you used a spreadsheet before, and did you enjoy it?",
+     "c": "Create a sheet with four columns and fill in three of your categories."
+    },
+    "de": {
+     "t": "Budgetieren mit einer Tabelle",
+     "g": "Einfache Spalten und Summen anlegen, um deinen Plan klar zu sehen.",
+     "p": [
+      "Eine Tabelle braucht nur wenige Spalten: Kategorie, geplant, tatsächlich und Differenz.",
+      "Eine einfache Summenformel unter jeder Spalte erledigt das meiste.",
+      "Halte es schlicht: ein Blatt pro Monat ist leichter als eine riesige clevere Datei."
+     ],
+     "q": "Hast du schon einmal eine Tabelle benutzt und hat es dir gefallen?",
+     "c": "Erstelle ein Blatt mit vier Spalten und trage drei deiner Kategorien ein."
+    },
+    "es": {
+     "t": "Presupuestar con una hoja de cálculo",
+     "g": "Montar columnas y totales sencillos para ver tu plan con claridad.",
+     "p": [
+      "Una hoja necesita pocas columnas: categoría, previsto, real y diferencia.",
+      "Una fórmula de suma simple al final de cada columna hace casi todo el trabajo.",
+      "Mantenlo simple: una hoja por mes es más fácil que un archivo gigante y sofisticado."
+     ],
+     "q": "¿Has usado antes una hoja de cálculo y te gustó?",
+     "c": "Crea una hoja con cuatro columnas y rellena tres de tus categorías."
+    },
+    "fr": {
+     "t": "Budgéter avec un tableur",
+     "g": "Mettre en place des colonnes et totaux simples pour voir ton plan clairement.",
+     "p": [
+      "Un tableur n'a besoin que de quelques colonnes : catégorie, prévu, réel et écart.",
+      "Une simple formule de somme en bas de chaque colonne fait presque tout le travail.",
+      "Reste simple : une feuille par mois est plus facile qu'un fichier géant et ingénieux."
+     ],
+     "q": "As-tu déjà utilisé un tableur, et as-tu aimé ?",
+     "c": "Crée une feuille à quatre colonnes et remplis trois de tes catégories."
+    },
+    "it": {
+     "t": "Fare il budget con un foglio di calcolo",
+     "g": "Impostare colonne e totali semplici per vedere chiaramente il tuo piano.",
+     "p": [
+      "Un foglio ha bisogno di poche colonne: categoria, previsto, reale e differenza.",
+      "Una semplice formula di somma in fondo a ogni colonna fa quasi tutto il lavoro.",
+      "Mantienilo semplice: un foglio al mese è più facile di un file gigante e ingegnoso."
+     ],
+     "q": "Hai già usato un foglio di calcolo e ti è piaciuto?",
+     "c": "Crea un foglio con quattro colonne e compila tre delle tue categorie."
+    },
+    "pt": {
+     "t": "Orçamentar com uma folha de cálculo",
+     "g": "Montar colunas e totais simples para ver o teu plano com clareza.",
+     "p": [
+      "Uma folha precisa de poucas colunas: categoria, previsto, real e diferença.",
+      "Uma fórmula de soma simples no fim de cada coluna faz quase todo o trabalho.",
+      "Mantém simples: uma folha por mês é mais fácil do que um ficheiro gigante e engenhoso."
+     ],
+     "q": "Já usaste uma folha de cálculo e gostaste?",
+     "c": "Cria uma folha com quatro colunas e preenche três das tuas categorias."
+    },
+    "pt_BR": {
+     "t": "Orçar com uma planilha",
+     "g": "Montar colunas e totais simples para ver o seu plano com clareza.",
+     "p": [
+      "Uma planilha precisa de poucas colunas: categoria, previsto, real e diferença.",
+      "Uma fórmula de soma simples no fim de cada coluna faz quase todo o trabalho.",
+      "Mantenha simples: uma aba por mês é mais fácil do que um arquivo gigante e engenhoso."
+     ],
+     "q": "Você já usou uma planilha e gostou?",
+     "c": "Crie uma planilha com quatro colunas e preencha três das suas categorias."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Budgeting with an app",
+     "g": "Learn what to look for in a budgeting app and how to keep data safe.",
+     "p": [
+      "Good apps are simple, let you export your data and do not nag you with confusing screens.",
+      "Check how the app handles privacy, and use a strong, unique password and screen lock.",
+      "Read the terms before connecting accounts, and connect only what you are comfortable sharing."
+     ],
+     "q": "What would make an app easy enough for you to use every day?",
+     "c": "Write a short checklist of three things you want from a budgeting app."
+    },
+    "de": {
+     "t": "Budgetieren mit einer App",
+     "g": "Lernen, worauf es bei einer Budget-App ankommt und wie du Daten schützt.",
+     "p": [
+      "Gute Apps sind einfach, erlauben den Datenexport und verwirren nicht mit unklaren Bildschirmen.",
+      "Prüfe, wie die App mit Datenschutz umgeht, und nutze ein starkes, einmaliges Passwort und Bildschirmsperre.",
+      "Lies die Bedingungen, bevor du Konten verbindest, und verbinde nur, was du gern teilst."
+     ],
+     "q": "Was würde eine App für dich so einfach machen, dass du sie täglich nutzt?",
+     "c": "Schreibe eine kurze Checkliste mit drei Dingen, die du von einer Budget-App willst."
+    },
+    "es": {
+     "t": "Presupuestar con una app",
+     "g": "Saber qué buscar en una app de presupuesto y cómo proteger tus datos.",
+     "p": [
+      "Las buenas apps son simples, permiten exportar tus datos y no te agobian con pantallas confusas.",
+      "Comprueba cómo trata la privacidad y usa una contraseña fuerte y única y bloqueo de pantalla.",
+      "Lee las condiciones antes de conectar cuentas y conecta solo lo que te sientas cómodo compartiendo."
+     ],
+     "q": "¿Qué haría que una app te resultara lo bastante fácil para usarla a diario?",
+     "c": "Escribe una lista corta de tres cosas que quieres de una app de presupuesto."
+    },
+    "fr": {
+     "t": "Budgéter avec une appli",
+     "g": "Savoir quoi chercher dans une appli de budget et comment protéger tes données.",
+     "p": [
+      "Les bonnes applis sont simples, permettent d'exporter tes données et ne t'embrouillent pas avec des écrans confus.",
+      "Vérifie comment l'appli gère la confidentialité, et utilise un mot de passe fort et unique et un verrouillage d'écran.",
+      "Lis les conditions avant de relier des comptes, et ne relie que ce que tu acceptes de partager."
+     ],
+     "q": "Qu'est-ce qui rendrait une appli assez simple pour que tu l'utilises chaque jour ?",
+     "c": "Écris une courte liste de trois choses que tu attends d'une appli de budget."
+    },
+    "it": {
+     "t": "Fare il budget con un'app",
+     "g": "Sapere cosa cercare in un'app di budget e come proteggere i dati.",
+     "p": [
+      "Le buone app sono semplici, permettono di esportare i dati e non confondono con schermate poco chiare.",
+      "Controlla come l'app gestisce la privacy e usa una password forte e unica e il blocco schermo.",
+      "Leggi i termini prima di collegare conti e collega solo ciò che ti va di condividere."
+     ],
+     "q": "Cosa renderebbe un'app abbastanza facile da usare ogni giorno?",
+     "c": "Scrivi una breve lista di tre cose che vuoi da un'app di budget."
+    },
+    "pt": {
+     "t": "Orçamentar com uma app",
+     "g": "Saber o que procurar numa app de orçamento e como proteger os dados.",
+     "p": [
+      "As boas apps são simples, permitem exportar os teus dados e não confundem com ecrãs pouco claros.",
+      "Verifica como a app trata a privacidade e usa uma palavra-passe forte e única e bloqueio de ecrã.",
+      "Lê os termos antes de ligar contas e liga só o que te sentes à vontade para partilhar."
+     ],
+     "q": "O que tornaria uma app fácil o bastante para a usares todos os dias?",
+     "c": "Escreve uma lista curta de três coisas que queres de uma app de orçamento."
+    },
+    "pt_BR": {
+     "t": "Orçar com um app",
+     "g": "Saber o que procurar num app de orçamento e como proteger os dados.",
+     "p": [
+      "Bons apps são simples, permitem exportar seus dados e não confundem com telas pouco claras.",
+      "Veja como o app trata a privacidade e use uma senha forte e única e bloqueio de tela.",
+      "Leia os termos antes de conectar contas e conecte só o que você se sente à vontade para compartilhar."
+     ],
+     "q": "O que tornaria um app fácil o bastante para você usar todo dia?",
+     "c": "Escreva uma lista curta de três coisas que você quer de um app de orçamento."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Picking your method",
+     "g": "Compare methods and choose the one that suits your personality.",
+     "p": [
+      "Detail lovers may enjoy zero-based, visual people envelopes, and easygoing people the light approach.",
+      "There is no best method, only the best one for you right now.",
+      "Choose one, try it for a full month, then review honestly before switching."
+     ],
+     "q": "Which method so far has sounded most like you, and why?",
+     "c": "Write down your chosen method and one reason it fits you."
+    },
+    "de": {
+     "t": "Deine Methode wählen",
+     "g": "Methoden vergleichen und die wählen, die zu deiner Persönlichkeit passt.",
+     "p": [
+      "Detailfans mögen vielleicht Zero-Based, visuelle Typen Umschläge und Gelassene den leichten Ansatz.",
+      "Es gibt keine beste Methode, nur die beste für dich im Moment.",
+      "Wähle eine, probiere sie einen ganzen Monat und prüfe ehrlich, bevor du wechselst."
+     ],
+     "q": "Welche Methode klang bisher am meisten nach dir und warum?",
+     "c": "Schreibe deine gewählte Methode und einen Grund auf, warum sie zu dir passt."
+    },
+    "es": {
+     "t": "Elegir tu método",
+     "g": "Comparar métodos y elegir el que encaje con tu personalidad.",
+     "p": [
+      "A quien ama el detalle quizá le guste base cero, a la gente visual los sobres y a los tranquilos el enfoque ligero.",
+      "No hay un método mejor, solo el mejor para ti ahora.",
+      "Elige uno, pruébalo un mes entero y revisa con honestidad antes de cambiar."
+     ],
+     "q": "¿Qué método te ha sonado más a ti hasta ahora y por qué?",
+     "c": "Escribe el método que elegiste y una razón por la que te encaja."
+    },
+    "fr": {
+     "t": "Choisir ta méthode",
+     "g": "Comparer les méthodes et choisir celle qui convient à ta personnalité.",
+     "p": [
+      "Les amateurs de détail aimeront peut-être la base zéro, les visuels les enveloppes, les tranquilles l'approche légère.",
+      "Il n'y a pas de meilleure méthode, seulement la meilleure pour toi en ce moment.",
+      "Choisis-en une, essaie-la un mois entier, puis fais un bilan honnête avant de changer."
+     ],
+     "q": "Quelle méthode te ressemble le plus jusqu'ici, et pourquoi ?",
+     "c": "Écris la méthode choisie et une raison pour laquelle elle te convient."
+    },
+    "it": {
+     "t": "Scegliere il tuo metodo",
+     "g": "Confrontare i metodi e scegliere quello adatto alla tua personalità.",
+     "p": [
+      "Chi ama i dettagli forse preferirà la base zero, i visivi le buste, i tranquilli l'approccio leggero.",
+      "Non esiste un metodo migliore, solo il migliore per te in questo momento.",
+      "Scegline uno, provalo un mese intero e rivedi con onestà prima di cambiare."
+     ],
+     "q": "Quale metodo finora ti è sembrato più simile a te, e perché?",
+     "c": "Scrivi il metodo scelto e un motivo per cui ti si adatta."
+    },
+    "pt": {
+     "t": "Escolher o teu método",
+     "g": "Comparar métodos e escolher o que combina com a tua personalidade.",
+     "p": [
+      "Quem gosta de detalhe pode gostar de base zero, os visuais de envelopes e os descontraídos da abordagem leve.",
+      "Não há um método melhor, só o melhor para ti agora.",
+      "Escolhe um, experimenta um mês inteiro e revê com honestidade antes de mudar."
+     ],
+     "q": "Que método te soou mais a ti até agora e porquê?",
+     "c": "Escreve o método escolhido e uma razão para ele combinar contigo."
+    },
+    "pt_BR": {
+     "t": "Escolher o seu método",
+     "g": "Comparar métodos e escolher o que combina com a sua personalidade.",
+     "p": [
+      "Quem gosta de detalhe pode curtir base zero, os visuais envelopes e os tranquilos a abordagem leve.",
+      "Não existe um método melhor, só o melhor para você agora.",
+      "Escolha um, teste por um mês inteiro e reveja com honestidade antes de trocar."
+     ],
+     "q": "Que método mais soou como você até agora e por quê?",
+     "c": "Escreva o método escolhido e um motivo para ele combinar com você."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mixing methods",
+     "g": "Combine ideas from different methods into your own system.",
+     "p": [
+      "You can borrow freely: envelopes for fun, zero-based for bills, and paying yourself first.",
+      "A personal system beats a perfect system, because you will actually keep using it.",
+      "Write your rules in a few lines so future you remembers how it works."
+     ],
+     "q": "If you built your own system from the parts we saw, what would be in it?",
+     "c": "Write a three-rule version of your own system and try it this week."
+    },
+    "de": {
+     "t": "Methoden mischen",
+     "g": "Ideen aus verschiedenen Methoden zu deinem eigenen System verbinden.",
+     "p": [
+      "Du darfst frei borgen: Umschläge für Freizeit, Zero-Based für Rechnungen und zuerst an dich zahlen.",
+      "Ein persönliches System schlägt ein perfektes, weil du es wirklich weiter nutzt.",
+      "Schreibe deine Regeln in wenigen Zeilen auf, damit dein künftiges Ich weiß, wie es funktioniert."
+     ],
+     "q": "Wenn du aus den gesehenen Teilen ein eigenes System baust, was wäre drin?",
+     "c": "Schreibe eine Version mit drei Regeln für dein System und probiere sie diese Woche."
+    },
+    "es": {
+     "t": "Mezclar métodos",
+     "g": "Combinar ideas de distintos métodos en tu propio sistema.",
+     "p": [
+      "Puedes tomar prestado libremente: sobres para el ocio, base cero para facturas y pagarte primero.",
+      "Un sistema personal supera a uno perfecto, porque de verdad seguirás usándolo.",
+      "Escribe tus reglas en pocas líneas para que tu yo futuro recuerde cómo funciona."
+     ],
+     "q": "Si armaras tu propio sistema con las piezas que vimos, ¿qué llevaría?",
+     "c": "Escribe una versión de tres reglas de tu sistema y pruébala esta semana."
+    },
+    "fr": {
+     "t": "Mélanger les méthodes",
+     "g": "Combiner des idées de différentes méthodes dans ton propre système.",
+     "p": [
+      "Tu peux emprunter librement : enveloppes pour les loisirs, base zéro pour les factures, et te payer en premier.",
+      "Un système personnel vaut mieux qu'un système parfait, car tu continueras vraiment à l'utiliser.",
+      "Écris tes règles en quelques lignes pour que ton futur toi se souvienne du fonctionnement."
+     ],
+     "q": "Si tu construisais ton système avec les pièces vues, que contiendrait-il ?",
+     "c": "Écris une version à trois règles de ton système et essaie-la cette semaine."
+    },
+    "it": {
+     "t": "Mescolare i metodi",
+     "g": "Combinare idee di metodi diversi nel tuo sistema.",
+     "p": [
+      "Puoi prendere in prestito liberamente: buste per lo svago, base zero per le bollette e paga prima te stesso.",
+      "Un sistema personale batte uno perfetto, perché lo userai davvero.",
+      "Scrivi le regole in poche righe così il te futuro ricorda come funziona."
+     ],
+     "q": "Se costruissi il tuo sistema con i pezzi visti, cosa conterrebbe?",
+     "c": "Scrivi una versione di tre regole del tuo sistema e provala questa settimana."
+    },
+    "pt": {
+     "t": "Misturar métodos",
+     "g": "Combinar ideias de métodos diferentes no teu próprio sistema.",
+     "p": [
+      "Podes pedir emprestado à vontade: envelopes para o lazer, base zero para contas e pagares-te primeiro.",
+      "Um sistema pessoal vence um perfeito, porque vais mesmo continuar a usá-lo.",
+      "Escreve as tuas regras em poucas linhas para o teu eu futuro se lembrar de como funciona."
+     ],
+     "q": "Se montasses o teu sistema com as peças que vimos, o que levaria?",
+     "c": "Escreve uma versão de três regras do teu sistema e experimenta-a esta semana."
+    },
+    "pt_BR": {
+     "t": "Misturar métodos",
+     "g": "Combinar ideias de métodos diferentes no seu próprio sistema.",
+     "p": [
+      "Você pode pegar emprestado à vontade: envelopes para o lazer, base zero para contas e pagar a si primeiro.",
+      "Um sistema pessoal vence um perfeito, porque você vai mesmo continuar usando.",
+      "Escreva suas regras em poucas linhas para o seu eu futuro lembrar como funciona."
+     ],
+     "q": "Se você montasse seu sistema com as peças que vimos, o que ele teria?",
+     "c": "Escreva uma versão de três regras do seu sistema e teste esta semana."
+    }
+   }
+  }
+ ]
+}
