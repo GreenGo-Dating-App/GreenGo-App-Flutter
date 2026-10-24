@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/utils/language_flags.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/buddy_catalog.dart';
 import '../../domain/buddy_exception.dart';
@@ -13,7 +14,8 @@ import '../widgets/buddy_avatar.dart';
 import '../widgets/buddy_prompts.dart';
 
 /// The 2-step Buddy builder (owner 2026-10-24): (1) four selects: main
-/// category, topic of that category, language, tone; (2) name + picture ->
+/// category, topic of that category, language, chat translation language,
+/// tone; (2) name + picture ->
 /// Create. Pops the new Buddy id.
 class BuddyBuilderScreen extends StatelessWidget {
   const BuddyBuilderScreen({
@@ -255,6 +257,21 @@ class _BuddyBuilderViewState extends State<_BuddyBuilderView> {
             ),
             const SizedBox(height: 6),
             Text(l10n.buddyLanguageOnlyNote,
+                style: const TextStyle(color: AppColors.textTertiary, fontSize: 12)),
+            const SizedBox(height: 16),
+            // What the server translates the chat into, once per message.
+            _select(
+              key: const ValueKey('buddy-chat-language'),
+              label: l10n.buddyChatLanguagePrompt,
+              value: s.chatLanguage,
+              options: [
+                for (final c in BuddyCatalog.languages)
+                  (c, '${languageFlagEmoji(c)} ${buddyLanguageLabel(l10n, c)}'),
+              ],
+              onChanged: cubit.selectChatLanguage,
+            ),
+            const SizedBox(height: 6),
+            Text(l10n.buddyChatLanguageNote,
                 style: const TextStyle(color: AppColors.textTertiary, fontSize: 12)),
             const SizedBox(height: 16),
             _select(

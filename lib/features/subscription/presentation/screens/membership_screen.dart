@@ -7,6 +7,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../core/constants/product_catalog.dart';
 import '../../../../core/widgets/launch_promo_price.dart';
+import '../../../../core/widgets/one_scroll_page.dart';
 import '../../../../core/widgets/purchase_success_dialog.dart';
 import '../../../../core/widgets/subscription_legal_footer.dart';
 import '../../../../generated/app_localizations.dart';
@@ -178,15 +179,7 @@ class _MembershipScreenState extends State<_MembershipScreenView> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.black,
-      appBar: AppBar(
-        title: Text(AppLocalizations.of(context)!.membershipBuyTitle),
-        backgroundColor: Colors.black,
-        foregroundColor: AppColors.richGold,
-        elevation: 0,
-      ),
-      body: BlocConsumer<SubscriptionBloc, SubscriptionState>(
+    return BlocConsumer<SubscriptionBloc, SubscriptionState>(
         listener: (context, state) {
           if (state is SubscriptionPurchased) {
             // Show success dialog with real end date
@@ -214,12 +207,25 @@ class _MembershipScreenState extends State<_MembershipScreenView> {
           final products = ProductCatalog.onePerProduct(_products);
           final productsLoading = state is ProductsLoading && products.isEmpty;
 
-          return Stack(
-            children: [
-              SingleChildScrollView(
-                child: Padding(
-                  padding: const EdgeInsets.all(20.0),
-                  child: Column(
+          // One scroll view (owner 2026-10-24): the app bar and the header
+          // scroll away together with the plans.
+          return OneScrollPage(
+            title: Text(AppLocalizations.of(context)!.membershipBuyTitle),
+            backgroundColor: Colors.black,
+            foregroundColor: AppColors.richGold,
+            padding: const EdgeInsets.all(20.0),
+            // Loading overlay
+            overlay: isLoading
+                ? Container(
+                    color: Colors.black54,
+                    child: const Center(
+                      child: CircularProgressIndicator(
+                        valueColor: AlwaysStoppedAnimation<Color>(AppColors.richGold),
+                      ),
+                    ),
+                  )
+                : null,
+            child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       // Header
@@ -297,22 +303,8 @@ class _MembershipScreenState extends State<_MembershipScreenView> {
                       const SubscriptionLegalFooter(),
                     ],
                   ),
-                ),
-              ),
-              // Loading overlay
-              if (isLoading)
-                Container(
-                  color: Colors.black54,
-                  child: const Center(
-                    child: CircularProgressIndicator(
-                      valueColor: AlwaysStoppedAnimation<Color>(AppColors.richGold),
-                    ),
-                  ),
-                ),
-            ],
           );
         },
-      ),
     );
   }
 

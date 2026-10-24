@@ -39,6 +39,69 @@ class BuddyKeyword extends Equatable {
   List<Object?> get props => [type, name];
 }
 
+/// One pair of matching chunks (server `segments: [{s, t}]`): [s] is an
+/// exact substring of the message text, [t] of the translation text.
+class BuddySegment extends Equatable {
+  const BuddySegment({required this.s, required this.t});
+
+  final String s;
+  final String t;
+
+  /// Valid `{s, t}` maps with two non-empty strings; anything else skipped.
+  static List<BuddySegment> listFrom(Object? raw) => raw is List
+      ? [
+          for (final e in raw)
+            if (e is Map &&
+                e['s'] is String &&
+                e['t'] is String &&
+                (e['s'] as String).isNotEmpty &&
+                (e['t'] as String).isNotEmpty)
+              BuddySegment(s: e['s'] as String, t: e['t'] as String),
+        ]
+      : const <BuddySegment>[];
+
+  @override
+  List<Object?> get props => [s, t];
+}
+
+/// The server's translation of a message into the Buddy's `chatLanguage`
+/// (message field `translation: {text, lang}`), made once when the message
+/// is created. Absent when the message is already in that language or the
+/// translation failed.
+class BuddyTranslation extends Equatable {
+  const BuddyTranslation({required this.text, this.lang, this.segments = const <BuddySegment>[]});
+
+  final String text;
+
+  /// Matching chunks of the text and [text] (may be empty).
+  final List<BuddySegment> segments;
+
+  /// The language of [text] (the chat language), when the server sent it.
+  final String? lang;
+
+  /// Null for anything that is not a `{text, lang?}` map with a text.
+  static BuddyTranslation? fromMap(Object? m) {
+    if (m is! Map) return null;
+    final text = m['text'], lang = m['lang'];
+    if (text is! String || text.trim().isEmpty) return null;
+    return BuddyTranslation(
+      text: text,
+      lang: lang is String && lang.isNotEmpty ? lang : null,
+      segments: BuddySegment.listFrom(m['segments']),
+    );
+  }
+
+  /// From a callable result entry (a string, or null = no translation).
+  static BuddyTranslation? fromText(Object? text, String? lang,
+          [List<BuddySegment> segments = const <BuddySegment>[]]) =>
+      text is String && text.trim().isNotEmpty
+          ? BuddyTranslation(text: text, lang: lang, segments: segments)
+          : null;
+
+  @override
+  List<Object?> get props => [text, lang, segments];
+}
+
 /// One message in `ai_buddies/{uid}/buddies/{id}/messages`.
 class BuddyMessage extends Equatable {
   const BuddyMessage({
@@ -51,6 +114,7 @@ class BuddyMessage extends Equatable {
     this.delivery = BuddyDelivery.sent,
     this.requestId,
     this.keywords = const <BuddyKeyword>[],
+    this.translation,
   });
 
   final String id;
@@ -69,6 +133,10 @@ class BuddyMessage extends Equatable {
   /// Places named in this bubble (server metadata; may be empty).
   final List<BuddyKeyword> keywords;
 
+  /// The stored translation into the chat language (server side, once).
+  /// Local messages carry the callable's until the stored doc arrives.
+  final BuddyTranslation? translation;
+
   bool get isBuddy => role == BuddyMessageRole.buddy;
   bool get isLocal => delivery != BuddyDelivery.sent || id.startsWith('local_');
 
@@ -86,7 +154,8 @@ class BuddyMessage extends Equatable {
     }
   }
 
-  BuddyMessage copyWith({BuddyDelivery? delivery}) => BuddyMessage(
+  BuddyMessage copyWith({BuddyDelivery? delivery, BuddyTranslation? translation}) =>
+      BuddyMessage(
         id: id,
         role: role,
         text: text,
@@ -96,10 +165,12 @@ class BuddyMessage extends Equatable {
         delivery: delivery ?? this.delivery,
         requestId: requestId,
         keywords: keywords,
+        translation: translation ?? this.translation,
       );
 
   @override
-  List<Object?> get props => [id, role, text, kind, charged, createdAt, delivery, requestId, keywords];
+  List<Object?> get props =>
+      [id, role, text, kind, charged, createdAt, delivery, requestId, keywords, translation];
 }
 
 /// A page of messages, oldest first, plus whether older ones exist.

@@ -55,7 +55,7 @@ describe('plan limits (owner rules 2026-10-23)', () => {
     expect(BUDDY_LIMIT).toMatchObject({ FREE: 1, SILVER: 3, GOLD: 5, PLATINUM: 10 });
   });
   it('free replies per day: Free/Base 10, Silver 30, Gold 50, Platinum 100', () => {
-    expect(FREE_REPLIES_PER_DAY).toMatchObject({ FREE: 10, SILVER: 30, GOLD: 50, PLATINUM: 100 });
+    expect(FREE_REPLIES_PER_DAY).toMatchObject({ FREE: 0, SILVER: 0, GOLD: 0, PLATINUM: 0 });
   });
   it('1 coin buys 3 paid replies (~0.33 coins each)', () => {
     expect(REPLIES_PER_COIN).toBe(3);
@@ -119,9 +119,9 @@ describe('prompts', () => {
   const rules = DEFAULT_RULES.text_buddies;
   it('system prompt: safety, positivity, identity, language, length, memory', () => {
     const s = systemPrompt(settings(), rules, [{ id: 'a', text: 'Training for a marathon in May', at: 1 }], 'They talked about Rome.');
-    expect(s).toMatch(/NOT a dating app/);
+    expect(s).toMatch(/NOT dating/);
     expect(s).toMatch(/positive, warm, kind/);
-    expect(s).toMatch(/never claim or pretend to be human/i);
+    expect(s).toMatch(/Never claim to be human/i);
     expect(s).toMatch(/"Luna", a patient teacher/);
     expect(s).toMatch(/You speak ONLY Italian/);
     expect(s).toMatch(/Never switch to another language/);
@@ -198,8 +198,8 @@ describe('multi-message replies', () => {
     expect(r.keywords).toEqual([{ type: 'attraction', name: 'Colosseo' }, { type: 'city', name: 'Roma' }]);
   });
   it('the prompt asks for curiosity, teaching on learning topics and the JSON format', () => {
-    expect(conversationBlock(settings({ topic: 'practice_italian' }))).toMatch(/teacher/);
-    expect(conversationBlock(settings({ topic: 'movies', role: 'friend' }))).not.toMatch(/teacher/);
+    expect(conversationBlock(settings({ topic: 'practice_italian' }))).toMatch(/Also teach/);
+    expect(conversationBlock(settings({ topic: 'movies', role: 'friend' }))).not.toMatch(/teach/);
     expect(conversationBlock(settings({ topic: 'movies', role: 'friend' }))).toMatch(/genuinely interested/);
     expect(replyFormatBlock(200)).toMatch(/"messages"/);
   });
@@ -327,5 +327,30 @@ describe('the Buddy starts the chat', () => {
     expect(p.user).toMatch(/travel/);
     expect(p.user).toMatch(/ONE open, specific question/);
     expect(p.system).toMatch(/You speak ONLY English/);
+  });
+});
+
+describe('colour-matched chunks (original <-> translation)', () => {
+  const { validateSegments } = require('../buddies');
+  it('keeps exact, in-order pairs and drops invented or misspelled chunks', () => {
+    const seg = validateSegments([
+      { s: 'My car', t: 'La mia macchina' },
+      { s: 'is red', t: 'è rossa' },
+      { s: 'is blue', t: 'è blu' },          // not in the texts
+      { s: 'my car', t: 'la mia macchina' }, // wrong case
+    ], 'My car is red.', 'La mia macchina è rossa.');
+    expect(seg).toEqual([{ s: 'My car', t: 'La mia macchina' }, { s: 'is red', t: 'è rossa' }]);
+  });
+  it('allows reordered translation chunks but never overlapping ones', () => {
+    const seg = validateSegments([
+      { s: 'red car', t: 'macchina' },
+      { s: 'red car', t: 'macchina' },
+      { s: 'I have', t: 'Ho' },
+    ], 'I have a red car', 'Ho una macchina rossa');
+    expect(seg).toEqual([{ s: 'red car', t: 'macchina' }]);
+  });
+  it('returns [] for garbage', () => {
+    expect(validateSegments('nope', 'a', 'b')).toEqual([]);
+    expect(validateSegments([{ s: '!!', t: '??' }], '!!', '??')).toEqual([]);
   });
 });

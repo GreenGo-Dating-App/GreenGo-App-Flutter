@@ -166,7 +166,11 @@ export interface GenerateRequest {
   json?: boolean;
   /** Overrides of the capability rules for this call (e.g. max tokens). */
   maxTokens?: number;
+  /** Filled by the adapter with the provider-reported token counts. */
+  usageOut?: TokenUsage;
 }
+
+export interface TokenUsage { tokensIn: number; tokensOut: number }
 
 export interface GenerateResult {
   text: string;

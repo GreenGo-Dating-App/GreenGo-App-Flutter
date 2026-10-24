@@ -116,6 +116,7 @@ void main() {
       'topic': 'practice_italian',
       'tone': 'playful',
       'language': 'it',
+      'chatLanguage': 'it',
       'checkInsEnabled': true,
     });
   });
@@ -140,5 +141,26 @@ void main() {
         throwsA(isA<BuddyException>().having((e) => e.kind, 'kind', BuddyErrorKind.tierRequired)));
     expect(cubit.state.saving, isFalse);
     expect(cubit.state.canNext, isTrue);
+  });
+
+  test('chat translation language: app language by default, own select, never preset', () async {
+    expect(cubit.state.chatLanguage, 'it');
+    cubit.selectTopic('practice_german');
+    expect(cubit.state.language, 'de');
+    expect(cubit.state.chatLanguage, 'it', reason: 'a practice topic only sets the Buddy language');
+    cubit.selectChatLanguage('pt_BR');
+    expect(cubit.state.chatLanguage, 'pt_BR');
+    cubit.selectChatLanguage('xx');
+    expect(cubit.state.chatLanguage, 'pt_BR');
+    cubit
+      ..setName('Max')
+      ..selectAvatar('av_fox');
+    await cubit.create();
+    expect(repo.created.single.toMap()['chatLanguage'], 'pt_BR');
+    expect(repo.created.single.chatLanguage, 'pt_BR');
+
+    final ja = BuddyBuilderCubit(repository: repo, language: 'ja');
+    expect(ja.state.chatLanguage, 'en');
+    await ja.close();
   });
 }

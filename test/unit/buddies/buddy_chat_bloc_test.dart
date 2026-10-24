@@ -42,6 +42,12 @@ void main() {
       expect(mergeServerMessages([b], [a, b]).map((m) => m.id), ['a', 'b']);
     });
 
+    test('mergeServerMessages never drops a known translation', () {
+      final withT = fakeMessage('a', BuddyMessageRole.buddy, 'hey', t0, translation: 'ciao');
+      final without = fakeMessage('a', BuddyMessageRole.buddy, 'hey', t0);
+      expect(mergeServerMessages([withT], [without]).single.translation?.text, 'ciao');
+    });
+
     test('reconcileLocal: each server message replaces one delivered local message', () {
       final local = [
         BuddyMessage(id: 'local_1', role: BuddyMessageRole.user, text: 'hi', createdAt: t0),
@@ -216,5 +222,38 @@ void main() {
     await start();
     expect(bloc.state.freeRepliesLeft, 0);
     expect(bloc.state.status?.buddyLimit, 5);
+  });
+
+  test('send: the callable translations go on the local copies until the docs arrive', () async {
+    await start();
+    repo.buddy.add(fakeBuddy('b1', chatLanguage: 'it'));
+    await _settle();
+    repo.sendAnswers.add(const BuddySendResult(
+      reply: 'Hello\nHow are you?',
+      replies: ['Hello', 'How are you?'],
+      translations: ['Ciao', null],
+      userTranslation: 'Buongiorno',
+      kind: 'chat',
+      charged: 'free',
+      freeRepliesLeft: 4,
+    ));
+    bloc.add(const BuddyChatSendPressed('Good morning'));
+    await _settle();
+    final local = bloc.state.local;
+    expect(local.map((m) => m.text), ['Good morning', 'Hello', 'How are you?']);
+    expect(local[0].translation, const BuddyTranslation(text: 'Buongiorno', lang: 'it'));
+    expect(local[1].translation, const BuddyTranslation(text: 'Ciao', lang: 'it'));
+    expect(local[2].translation, isNull);
+
+    // A stored copy without its translation keeps the callable's one.
+    repo.newMessages.add([
+      fakeMessage('s1', BuddyMessageRole.user, 'Good morning', t0),
+      fakeMessage('s2', BuddyMessageRole.buddy, 'Hello', t0.add(const Duration(seconds: 1)),
+          translation: 'Ciao', lang: 'it'),
+    ]);
+    await _settle();
+    final byId = {for (final m in bloc.state.messages) m.id: m};
+    expect(byId['s1']!.translation?.text, 'Buongiorno');
+    expect(byId['s2']!.translation?.text, 'Ciao');
   });
 }

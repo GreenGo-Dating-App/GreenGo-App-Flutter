@@ -12,7 +12,7 @@ import { mockGenerate, mockSpeak, mockTranslate } from './mock';
 import { qwenAudioTts } from './qwenAudioTts';
 import { keyNameOf } from './config';
 import {
-  CapabilityRules, ChatMessage, GenerateRequest, ProviderConfig, ProviderError, TranslateItem, TtsRequest, TtsResult,
+  CapabilityRules, ChatMessage, GenerateRequest, ProviderConfig, ProviderError, TokenUsage, TranslateItem, TtsRequest, TtsResult,
 } from './types';
 
 // ------------------------------------------------------------------ helpers
@@ -109,6 +109,10 @@ async function openAiGenerate(p: ProviderConfig, req: GenerateRequest, rules: Ca
   if (!r.ok) throw classify(r.status, p.id);
   const text = r.body?.choices?.[0]?.message?.content;
   if (typeof text !== 'string' || !text.trim()) throw new ProviderError(`${p.id} empty reply`, r.status, true);
+  if (req.usageOut) {
+    req.usageOut.tokensIn += Number(r.body?.usage?.prompt_tokens) || 0;
+    req.usageOut.tokensOut += Number(r.body?.usage?.completion_tokens) || 0;
+  }
   return text;
 }
 
@@ -141,6 +145,10 @@ async function geminiGenerate(p: ProviderConfig, req: GenerateRequest, rules: Ca
   if (!r.ok) throw classify(r.status, 'gemini');
   const text = r.body?.candidates?.[0]?.content?.parts?.[0]?.text;
   if (typeof text !== 'string' || !text.trim()) throw new ProviderError('gemini empty reply', r.status, true);
+  if (req.usageOut) {
+    req.usageOut.tokensIn += Number(r.body?.usageMetadata?.promptTokenCount) || 0;
+    req.usageOut.tokensOut += Number(r.body?.usageMetadata?.candidatesTokenCount) || 0;
+  }
   return text;
 }
 
@@ -155,7 +163,7 @@ export async function generateWith(p: ProviderConfig, req: GenerateRequest, rule
 
 // -------------------------------------------------------------- translation
 
-export interface TranslateOpts { source?: string | null; deadlineMs?: number }
+export interface TranslateOpts { source?: string | null; deadlineMs?: number; usageOut?: TokenUsage }
 
 async function qwenMtTranslate(p: ProviderConfig, texts: string[], target: string, rules: CapabilityRules, o: TranslateOpts) {
   const key = await keyFor(p);
@@ -199,6 +207,10 @@ async function qwenMtTranslate(p: ProviderConfig, texts: string[], target: strin
     }
     const out = r.body?.choices?.[0]?.message?.content;
     if (typeof out !== 'string' || !out.trim()) throw new ProviderError(`${p.id} empty translation`, r.status, true);
+    if (o.usageOut) {
+      o.usageOut.tokensIn += Number(r.body?.usage?.prompt_tokens) || 0;
+      o.usageOut.tokensOut += Number(r.body?.usage?.completion_tokens) || 0;
+    }
     const same = normalized(out) === normalized(text);
     return { text: same ? text : out.trim(), detectedLanguage: o.source ?? null, sameLanguage: same };
   });
@@ -225,7 +237,7 @@ async function openAiTranslate(p: ProviderConfig, texts: string[], target: strin
   const deadline = Date.now() + (o.deadlineMs ?? 20_000);
   return mapLimit(texts, 4, deadline, async (text): Promise<TranslateItem> => {
     if (!text.trim()) return { text, detectedLanguage: null, sameLanguage: true };
-    const raw = await openAiGenerate(p, { system, messages: [{ role: 'user', content: `Translate into ${lang}:\n<text>${text}</text>` }] },
+    const raw = await openAiGenerate(p, { system, messages: [{ role: 'user', content: `Translate into ${lang}:\n<text>${text}</text>` }], usageOut: o.usageOut },
       { ...rules, temperature: 0, maxTokens: Math.min(2048, Math.ceil(text.length * 1.5) + 50) });
     const out = raw.replace(/^\s*<text>|<\/text>\s*$/g, '').trim();
     const same = normalized(out) === normalized(text);

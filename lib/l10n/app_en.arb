@@ -18305,6 +18305,15 @@
       }
     }
   },
+  "buddyRepliesPerCoin": "1 coin = {replies} replies",
+  "@buddyRepliesPerCoin": {
+    "description": "Buddy price line when there are no free replies: one coin buys N reply turns",
+    "placeholders": {
+      "replies": {
+        "type": "int"
+      }
+    }
+  },
   "buddyThenRepliesPerCoin": "then 1 coin = {replies} replies",
   "@buddyThenRepliesPerCoin": {
     "description": "After the free replies, when one coin buys several Buddy replies; shown after the free-replies count",
@@ -19265,5 +19274,31 @@
   "buddyTopic_would_you_rather": "Would you rather?",
   "@buddyTopic_would_you_rather": {
     "description": "Buddy chat topic label"
+  },
+  "buddyChatLanguagePrompt": "Translate this chat into",
+  "@buddyChatLanguagePrompt": {
+    "description": "Buddy builder step 1: label of the select for the language the chat is translated into"
+  },
+  "buddyChatLanguageNote": "Messages are translated once into this language. It can't be changed later.",
+  "@buddyChatLanguageNote": {
+    "description": "Buddy builder: hint under the chat translation language select (fixed forever)"
+  },
+  "buddyTranslatedInto": "Translated into: {language} (fixed)",
+  "@buddyTranslatedInto": {
+    "description": "Buddy chat languages menu and Buddy settings: the fixed language the chat is translated into, read-only. {language} = flag + language name",
+    "placeholders": {
+      "language": {
+        "type": "String",
+        "example": "🇮🇹 Italian"
+      }
+    }
+  },
+  "buddyChatSettingHighlightMatches": "Highlight matching words",
+  "@buddyChatSettingHighlightMatches": {
+    "description": "Buddy chat settings sheet: toggle that colours matching chunks of a message and its translation"
+  },
+  "buddyChatSettingHighlightMatchesDesc": "Colour the same words in a message and its translation",
+  "@buddyChatSettingHighlightMatchesDesc": {
+    "description": "Buddy chat settings sheet: description of the highlight matching words toggle"
   }
 }

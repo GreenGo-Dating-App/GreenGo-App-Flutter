@@ -8,7 +8,6 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/app_sound_service.dart';
 import '../../../../core/services/chat_datasets/chat_datasets.dart';
-import '../../../../core/services/translation_service.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../chat/domain/chat_places.dart';
@@ -24,6 +23,7 @@ import '../../domain/repositories/buddies_repository.dart';
 import '../bloc/buddy_chat_bloc.dart';
 import '../buddy_chat_adapter.dart';
 import '../buddy_labels.dart';
+import '../buddy_segments.dart';
 import '../widgets/buddy_avatar.dart';
 import '../widgets/buddy_bubble_parts.dart';
 import '../widgets/buddy_chat_settings.dart';
@@ -32,8 +32,10 @@ import '../widgets/buddy_quick_settings_sheet.dart';
 
 /// A chat with one Buddy (AI chat friend): the 1:1 chat enhanced with AI.
 ///
-/// Messages are the 1:1 chat's [MessageBubble] (automatic translation with
-/// the original underneath, language flags, keyword highlights, read-aloud),
+/// Messages are the 1:1 chat's [MessageBubble] (the server's translation into
+/// the Buddy's fixed `chatLanguage` with the original underneath, language
+/// flags, keyword highlights, read-aloud). No translation call is made here:
+/// every message carries its stored translation (owner 2026-10-24).
 /// with the chat's languages menu and settings, ice-breakers, suggested
 /// sentences and the places bar. No attachments and no language-level badge.
 class BuddyChatScreen extends StatelessWidget {
@@ -120,15 +122,8 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
   /// The 1:1 chat settings of this Buddy chat (defaults until loaded).
   BuddyChatSettings _settings = const BuddyChatSettings();
 
-  /// Automatic translations by (target, source, text): the same text keeps
-  /// its translation when the local copy is replaced by the stored one.
-  final Map<String, _Translation> _translations = {};
-  final Set<String> _translating = {};
-
-  /// Keys whose translation failed (Retry re-runs exactly those).
-  final Set<String> _failed = {};
-  bool _failureShown = false;
-  Listenable? _consent;
+  /// Enter sends (web / hardware keyboards); Shift+Enter = new line.
+  late final FocusNode _inputFocus = FocusNode(onKeyEvent: _onInputKey);
 
   @override
   void initState() {
@@ -138,8 +133,6 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
     unawaited(BuddyChatSettings.load(widget.buddyId).then((s) {
       if (mounted) setState(() => _settings = s);
     }));
-    // AI consent: translations re-run once allowed, drop when turned off.
-    _consent = widget.prompts.aiConsentChanges?..addListener(_onConsentChanged);
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted) widget.prompts.maybePromptAiConsent(context);
     });
@@ -147,19 +140,11 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
 
   @override
   void dispose() {
-    _consent?.removeListener(_onConsentChanged);
     _replySound?.cancel();
+    _inputFocus.dispose();
     _input.dispose();
     _scroll.dispose();
     super.dispose();
-  }
-
-  void _onConsentChanged() {
-    if (!mounted) return;
-    setState(() {
-      _translations.clear();
-      _failed.clear();
-    });
   }
 
   void _onScroll() {
@@ -169,16 +154,42 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
     }
   }
 
-  /// The language this chat is read in (the chat's own, else the app's).
-  String get _targetLanguage {
-    final l = Localizations.localeOf(context);
-    return _settings.language ?? BuddyCatalog.languageForLocale(l.languageCode, l.countryCode);
+  /// The language this chat is translated into: the Buddy's fixed
+  /// `chatLanguage` (older Buddies: the app language, display only).
+  String get _targetLanguage => buddyChatLanguageOf(
+      context, context.read<BuddyChatBloc>().state.buddy ?? widget.initialBuddy);
+
+  bool _canSend(BuddyChatState state) {
+    final length = _input.text.runes.length;
+    return _input.text.trim().isNotEmpty &&
+        length <= BuddyCatalog.maxMessageChars &&
+        !state.waitingReply &&
+        !state.loading &&
+        !state.locked;
+  }
+
+  /// Enter (not Shift+Enter, not while an IME is composing) sends, on web
+  /// and hardware keyboards. Shift+Enter inserts a new line.
+  KeyEventResult _onInputKey(FocusNode node, KeyEvent event) {
+    if (event is! KeyDownEvent) return KeyEventResult.ignored;
+    final key = event.logicalKey;
+    if (key != LogicalKeyboardKey.enter && key != LogicalKeyboardKey.numpadEnter) {
+      return KeyEventResult.ignored;
+    }
+    if (HardwareKeyboard.instance.isShiftPressed) return KeyEventResult.ignored;
+    final composing = _input.value.composing;
+    if (composing.isValid && !composing.isCollapsed) return KeyEventResult.ignored;
+    if (_canSend(context.read<BuddyChatBloc>().state)) _send();
+    // Handled either way: a plain Enter never inserts a new line here.
+    return KeyEventResult.handled;
   }
 
   void _send() {
     final text = _input.text.trim();
     if (text.isEmpty) return;
-    context.read<BuddyChatBloc>().add(BuddyChatSendPressed(text));
+    context
+        .read<BuddyChatBloc>()
+        .add(BuddyChatSendPressed(text, align: _settings.highlightMatches));
     _input.clear();
     if (_scroll.hasClients) {
       unawaited(_scroll.animateTo(0,
@@ -238,73 +249,6 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
     });
   }
 
-  // ------------------------------------------------------------ translation
-
-  /// The automatic translation of [m] into [target], like the 1:1 chat
-  /// (every text message; the Buddy's from its known language). Starts it
-  /// when missing; null until it is known.
-  /// "pt_BR" / "pt-BR" / "pt" -> "pt".
-  static String _baseLanguage(String code) => code.toLowerCase().replaceAll('_', '-').split('-').first;
-
-  _Translation? _translationFor(BuddyMessage m, String target, String buddyLanguage) {
-    // Owner 2026-10-24: a message already in the chat language is never
-    // translated. The Buddy's language is known: no call at all.
-    if (m.isBuddy && _baseLanguage(buddyLanguage) == _baseLanguage(target)) return null;
-    final source = m.isBuddy ? buddyLanguage : 'auto';
-    final key = '$target|$source|${m.text}';
-    final hit = _translations[key];
-    if (hit != null || _failed.contains(key)) return hit;
-    if (_translating.add(key)) unawaited(_translate(key, m.text, source, target));
-    return null;
-  }
-
-  Future<void> _translate(String key, String text, String source, String target) async {
-    TranslationResult r;
-    try {
-      r = await widget.prompts
-          .autoTranslate(text, source: source, target: target.replaceAll('_', '-'));
-    } catch (_) {
-      r = TranslationResult(original: text, text: text, failed: true);
-    }
-    if (!mounted) return;
-    setState(() {
-      _translating.remove(key);
-      if (r.consentRequired) {
-        // No AI consent: the original shows; re-runs once it is given.
-        _translations[key] = const _Translation(null, null);
-      } else if (r.failed) {
-        _failed.add(key);
-      } else {
-        // Detected as already in the chat language (e.g. the user writes in
-        // it): show the original, no translation.
-        final detected = r.detectedLanguage;
-        final same = detected != null && _baseLanguage(detected) == _baseLanguage(target);
-        _translations[key] = _Translation(r.isTranslated && !same ? r.text : null, detected);
-      }
-    });
-    if (r.failed && !r.consentRequired) _onTranslationFailed();
-  }
-
-  void _onTranslationFailed() {
-    if (_failureShown || !mounted) return;
-    _failureShown = true;
-    final l10n = AppLocalizations.of(context)!;
-    ScaffoldMessenger.maybeOf(context)?.showSnackBar(SnackBar(
-      content: Text(l10n.chatTranslationFailed),
-      duration: const Duration(seconds: 6),
-      action: SnackBarAction(
-        label: l10n.retry,
-        onPressed: () {
-          if (!mounted) return;
-          setState(() {
-            _failed.clear();
-            _failureShown = false;
-          });
-        },
-      ),
-    ));
-  }
-
   // ---------------------------------------------------------------- menus
 
   void _openSettings(Buddy buddy) {
@@ -328,23 +272,18 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
             onDeleted: () {
               if (mounted) Navigator.of(context).maybePop();
             },
-            chatLanguageLabel: buddyLanguageLabel(AppLocalizations.of(context)!, _targetLanguage),
-            onChangeChatLanguage: () {
-              Navigator.of(context).pop();
-              _pickLanguage();
-            },
           ),
         ),
       ),
     );
   }
 
-  /// The 1:1 chat's languages menu: your language + chat settings.
+  /// The 1:1 chat's languages menu: the fixed chat language (info) + chat
+  /// settings.
   void _openLanguagesMenu() {
     showBuddyChatLanguagesMenu(
       context,
-      targetLanguage: _targetLanguage,
-      onPickLanguage: _pickLanguage,
+      chatLanguage: _targetLanguage,
       onSettings: () => showBuddyChatSettingsSheet(
         context,
         buddyId: widget.buddyId,
@@ -354,19 +293,6 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
         },
       ),
     );
-  }
-
-  Future<void> _pickLanguage() async {
-    final l10n = AppLocalizations.of(context)!;
-    final messenger = ScaffoldMessenger.of(context);
-    final code = await showBuddyChatLanguagePicker(context, selected: _targetLanguage);
-    if (code == null || !mounted) return;
-    setState(() => _settings = _settings.copyWith(language: code));
-    await BuddyChatSettings.saveLanguage(widget.buddyId, code);
-    messenger.showSnackBar(SnackBar(
-      content: Text(l10n.chatLanguageSetTo(buddyLanguageLabel(l10n, code))),
-      duration: const Duration(seconds: 1),
-    ));
   }
 
   void _openIdeas({required bool sentences, required String buddyLanguage}) {
@@ -472,22 +398,27 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
             body: ValueListenableBuilder<int>(
               valueListenable: ChatDatasets.instance.changes,
               builder: (context, _, __) {
-                final target = _targetLanguage;
+                final target = buddyChatLanguageOf(context, buddy);
                 final index = ChatDatasets.instance.keywords;
-                final adapted = <(BuddyMessage, Message)>[];
-                for (final m in state.visibleMessages) {
-                  final tr = _translationFor(m, target, language);
-                  adapted.add((
-                    m,
-                    BuddyChatAdapter.toMessage(m,
-                        uid: widget.userId,
-                        buddyId: widget.buddyId,
-                        buddyLanguage: language,
-                        translated: tr?.text,
-                        detectedLanguage: tr?.detected,
-                        index: index),
-                  ));
-                }
+                // Stored translations only (never fetched here). A Buddy
+                // bubble shows its translation as the main text from its
+                // first frame; the user's own text stays the main text (its
+                // translation is a line under it, see _messages).
+                final adapted = <(BuddyMessage, Message)>[
+                  for (final m in state.visibleMessages)
+                    (
+                      m,
+                      BuddyChatAdapter.toMessage(m,
+                          uid: widget.userId,
+                          buddyId: widget.buddyId,
+                          buddyLanguage: language,
+                          translated: m.isBuddy
+                              ? BuddyChatAdapter.shownTranslation(m,
+                                  chatLanguage: target, buddyLanguage: language)
+                              : null,
+                          index: index),
+                    ),
+                ];
                 final sources = [
                   for (final (_, msg) in adapted) BuddyChatAdapter.placeSource(msg, widget.userId),
                 ];
@@ -564,6 +495,17 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
           );
         }
         final (m, msg) = msgs[j];
+        // Shown once when not really translated (no "original" line).
+        final userTranslation = m.isBuddy
+            ? null
+            : BuddyChatAdapter.shownTranslation(m, chatLanguage: target, buddyLanguage: language);
+        // Colour-matched chunks (setting on + a real translation + segments).
+        final shown = m.isBuddy ? msg.translatedContent : userTranslation;
+        final matches = shown != null && _settings.highlightMatches
+            ? locateBuddySegments(m.text, shown, m.translation?.segments ?? const [])
+            : const <BuddySegmentMatch>[];
+        final mainColor = m.isBuddy ? AppColors.textPrimary : AppColors.deepBlack;
+        final mainStyle = TextStyle(color: mainColor, fontSize: 15, height: 1.4);
         return MessageBubble(
           key: ValueKey('buddy-msg-${m.id}'),
           message: msg,
@@ -577,6 +519,40 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
           showLanguageFlags: _settings.showLanguageFlags,
           ttsReadTranslated: _settings.ttsReadTranslated,
           header: m.isBuddy ? BuddyBubbleHeader(kind: m.kind) : null,
+          contentFooter: !m.isBuddy && userTranslation != null
+              ? BuddyUserTranslationLine(
+                  messageId: m.id,
+                  text: userTranslation,
+                  language: target,
+                  showFlag: _settings.showLanguageFlags,
+                  matches: matches,
+                )
+              : null,
+          // The Buddy's: translation (main) + original underneath; the
+          // user's: the original (main). Same colour per pair in both.
+          mainTextOverride: matches.isEmpty
+              ? null
+              : BuddySegmentText(
+                  key: ValueKey('buddy-seg-main-${m.id}'),
+                  text: m.isBuddy ? shown! : m.text,
+                  matches: matches,
+                  original: !m.isBuddy,
+                  style: mainStyle,
+                ),
+          originalTextOverride: matches.isEmpty || !m.isBuddy
+              ? null
+              : BuddySegmentText(
+                  key: ValueKey('buddy-seg-original-${m.id}'),
+                  text: m.text,
+                  matches: matches,
+                  original: true,
+                  style: const TextStyle(
+                    color: AppColors.textSecondary,
+                    fontSize: 13,
+                    height: 1.3,
+                    fontStyle: FontStyle.italic,
+                  ),
+                ),
           footer: buddyBubbleFooter(
             context,
             messageId: m.id,
@@ -711,10 +687,7 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
       List<ChatPlace> places) {
     final left = state.freeRepliesLeft;
     final length = _input.text.runes.length;
-    final canSend = _input.text.trim().isNotEmpty &&
-        length <= BuddyCatalog.maxMessageChars &&
-        !state.waitingReply &&
-        !state.loading;
+    final canSend = _canSend(state);
     final tools =
         _settings.showIcebreakers || _settings.showSentences || _settings.showCulturalTips;
     return Container(
@@ -775,6 +748,7 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
                     child: TextField(
                       key: const ValueKey('buddy-input'),
                       controller: _input,
+                      focusNode: _inputFocus,
                       minLines: 1,
                       maxLines: 4,
                       maxLength: BuddyCatalog.maxMessageChars,
@@ -831,14 +805,6 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
       ),
     );
   }
-}
-
-/// An automatic translation: [text] null = nothing to show (same language,
-/// or no AI consent); [detected] = the source language reported.
-class _Translation {
-  const _Translation(this.text, this.detected);
-  final String? text;
-  final String? detected;
 }
 
 /// Refuses text longer than [max] code points (the server counts with

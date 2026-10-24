@@ -48298,6 +48298,12 @@ abstract class AppLocalizations {
   /// **'{coins, plural, =1{then 1 coin per reply} other{then {coins} coins per reply}}'**
   String buddyThenCoinsPerReply(int coins);
 
+  /// Buddy price line when there are no free replies: one coin buys N reply turns
+  ///
+  /// In en, this message translates to:
+  /// **'1 coin = {replies} replies'**
+  String buddyRepliesPerCoin(int replies);
+
   /// After the free replies, when one coin buys several Buddy replies; shown after the free-replies count
   ///
   /// In en, this message translates to:
@@ -49581,6 +49587,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Would you rather?'**
   String get buddyTopic_would_you_rather;
+
+  /// Buddy builder step 1: label of the select for the language the chat is translated into
+  ///
+  /// In en, this message translates to:
+  /// **'Translate this chat into'**
+  String get buddyChatLanguagePrompt;
+
+  /// Buddy builder: hint under the chat translation language select (fixed forever)
+  ///
+  /// In en, this message translates to:
+  /// **'Messages are translated once into this language. It can\'t be changed later.'**
+  String get buddyChatLanguageNote;
+
+  /// Buddy chat languages menu and Buddy settings: the fixed language the chat is translated into, read-only. {language} = flag + language name
+  ///
+  /// In en, this message translates to:
+  /// **'Translated into: {language} (fixed)'**
+  String buddyTranslatedInto(String language);
+
+  /// Buddy chat settings sheet: toggle that colours matching chunks of a message and its translation
+  ///
+  /// In en, this message translates to:
+  /// **'Highlight matching words'**
+  String get buddyChatSettingHighlightMatches;
+
+  /// Buddy chat settings sheet: description of the highlight matching words toggle
+  ///
+  /// In en, this message translates to:
+  /// **'Colour the same words in a message and its translation'**
+  String get buddyChatSettingHighlightMatchesDesc;
 }
 
 class _AppLocalizationsDelegate

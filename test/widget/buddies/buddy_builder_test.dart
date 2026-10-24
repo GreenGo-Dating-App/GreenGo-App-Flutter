@@ -102,13 +102,26 @@ void main() {
     });
   }
 
-  testWidgets('step 1 = four selects; the topic list depends on the main category',
+  testWidgets('step 1 = the selects; the topic list depends on the main category',
       (tester) async {
     await open(tester);
     expect(find.text('Step 1 of 2'), findsOneWidget);
-    for (final k in ['buddy-macro', 'buddy-micro', 'buddy-language', 'buddy-tone']) {
+    for (final k in [
+      'buddy-macro',
+      'buddy-micro',
+      'buddy-language',
+      'buddy-chat-language',
+      'buddy-tone',
+    ]) {
       expect(find.byKey(ValueKey(k)), findsOneWidget, reason: k);
     }
+    // The chat translation language: default = the app language, with flags.
+    expect(find.text('Translate this chat into'), findsOneWidget);
+    expect(find.text("Messages are translated once into this language. It can't be changed later."),
+        findsOneWidget);
+    expect(select(tester, 'buddy-chat-language').value, 'en');
+    expect(items(tester, 'buddy-chat-language'), BuddyCatalog.languages);
+    expect(find.text('🇬🇧 English'), findsOneWidget);
     expect(find.text('Main category'), findsOneWidget);
     expect(find.text('How should your Buddy sound?'), findsOneWidget);
     expect(find.text("Your Buddy always speaks only this language. It can't be changed later."),
@@ -130,6 +143,8 @@ void main() {
     // Practise Italian presets the Buddy language to Italian.
     await pick(tester, 'buddy-micro', 'practice_italian');
     expect(select(tester, 'buddy-language').value, 'it');
+    expect(select(tester, 'buddy-chat-language').value, 'en',
+        reason: 'a practice topic never changes the translation language');
     expect(nextEnabled(tester), isTrue);
 
     // Another main category clears the topic (it belonged to the old one).
@@ -141,6 +156,7 @@ void main() {
 
     await pick(tester, 'buddy-micro', 'guitar');
     await pick(tester, 'buddy-language', 'pt_BR');
+    await pick(tester, 'buddy-chat-language', 'it');
     await pick(tester, 'buddy-tone', 'calm');
     await tapNext(tester);
 
@@ -166,6 +182,7 @@ void main() {
       'topic': 'guitar',
       'tone': 'calm',
       'language': 'pt_BR',
+      'chatLanguage': 'it',
       'checkInsEnabled': true,
     });
     expect(repo.avatarReads, 1);

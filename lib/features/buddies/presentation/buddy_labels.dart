@@ -1,10 +1,15 @@
 // Buddy enum ids -> localized labels (generated once from the catalogue;
 // test/unit/buddies/buddy_catalog_test.dart checks every id has an ARB key).
+import 'package:flutter/widgets.dart';
+
+import '../../../core/utils/language_flags.dart';
 import '../../../generated/app_localizations.dart';
+import '../domain/buddy_catalog.dart';
+import '../domain/entities/buddy.dart';
 
 /// The quota line under the Buddy chat and in the Buddies tab, from the
 /// server's numbers (never a hard-coded price):
-/// "7 free replies left today · then 1 coin = 3 replies · 4 prepaid replies".
+/// "1 coin = 3 replies · 2 prepaid replies".
 String buddyQuotaLine(
   AppLocalizations l10n, {
   required int freeRepliesLeft,
@@ -12,11 +17,16 @@ String buddyQuotaLine(
   required int repliesPerCoin,
   int replyCredits = 0,
 }) {
-  final price = repliesPerCoin > 1
-      ? l10n.buddyThenRepliesPerCoin(repliesPerCoin)
-      : l10n.buddyThenCoinsPerReply(coinsPerReply.ceil());
+  // Owner 2026-10-24: Buddies are paid with coins (no free replies), so the
+  // free line only shows if the server ever grants a free allowance again.
+  final hasFree = freeRepliesLeft > 0;
+  final price = !hasFree && repliesPerCoin > 1
+      ? l10n.buddyRepliesPerCoin(repliesPerCoin)
+      : repliesPerCoin > 1
+          ? l10n.buddyThenRepliesPerCoin(repliesPerCoin)
+          : l10n.buddyThenCoinsPerReply(coinsPerReply.ceil());
   return [
-    l10n.buddyFreeRepliesLeft(freeRepliesLeft),
+    if (hasFree) l10n.buddyFreeRepliesLeft(freeRepliesLeft),
     price,
     if (replyCredits > 0) l10n.buddyPrepaidReplies(replyCredits),
   ].join(' · ');
@@ -344,4 +354,18 @@ String buddyLanguageLabel(AppLocalizations l10n, String id) {
     default:
       return id;
   }
+}
+
+/// "Translated into: <flag> <language> (fixed)": the Buddy chat's fixed
+/// translation language, shown read-only.
+String buddyTranslatedIntoLabel(AppLocalizations l10n, String code) =>
+    l10n.buddyTranslatedInto('${languageFlagEmoji(code)} ${buddyLanguageLabel(l10n, code)}'.trim());
+
+/// The language [buddy]'s chat is translated into: its `chatLanguage`, else
+/// (older Buddies, display only) the app language.
+String buddyChatLanguageOf(BuildContext context, Buddy? buddy) {
+  final c = buddy?.settings.chatLanguage;
+  if (c != null && BuddyCatalog.languages.contains(c)) return c;
+  final l = Localizations.localeOf(context);
+  return BuddyCatalog.languageForLocale(l.languageCode, l.countryCode);
 }

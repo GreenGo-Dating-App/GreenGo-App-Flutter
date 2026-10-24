@@ -8907,6 +8907,7 @@
   "buddiesPlanUsage": "{count} de {limit} Buddies",
   "buddyFreeRepliesLeft": "{count, plural, =0{Hoy no te quedan respuestas gratis} =1{Hoy te queda 1 respuesta gratis} other{Hoy te quedan {count} respuestas gratis}}",
   "buddyThenCoinsPerReply": "{coins, plural, =1{después, 1 moneda por respuesta} other{después, {coins} monedas por respuesta}}",
+  "buddyRepliesPerCoin": "1 moneda = {replies} respuestas",
   "buddyThenRepliesPerCoin": "después 1 moneda = {replies} respuestas",
   "buddyPrepaidReplies": "{count, plural, =1{1 respuesta prepagada} other{{count} respuestas prepagadas}}",
   "buddyInsufficientCoinsBundleBody": "Ya usaste las respuestas gratis de hoy. 1 moneda alcanza para {replies} respuestas.",
@@ -9120,5 +9121,10 @@
   "buddyTopic_cultural_exchange": "Intercambio cultural",
   "buddyTopic_goal_buddy": "Buddy de metas",
   "buddyTopic_storytelling": "Contar historias juntos",
-  "buddyTopic_would_you_rather": "¿Qué prefieres?"
+  "buddyTopic_would_you_rather": "¿Qué prefieres?",
+  "buddyChatLanguagePrompt": "Traducir este chat a",
+  "buddyChatLanguageNote": "Los mensajes se traducen una vez a este idioma. No se puede cambiar más tarde.",
+  "buddyTranslatedInto": "Traducido a: {language} (fijo)",
+  "buddyChatSettingHighlightMatches": "Resaltar palabras equivalentes",
+  "buddyChatSettingHighlightMatchesDesc": "Colorea las mismas palabras en un mensaje y su traducción"
 }

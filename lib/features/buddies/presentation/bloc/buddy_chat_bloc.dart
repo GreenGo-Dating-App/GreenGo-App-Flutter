@@ -35,10 +35,13 @@ class BuddyChatOlderRequested extends BuddyChatEvent {
 }
 
 class BuddyChatSendPressed extends BuddyChatEvent {
-  const BuddyChatSendPressed(this.text);
+  const BuddyChatSendPressed(this.text, {this.align});
   final String text;
+
+  /// The "Highlight matching words" setting (server `align`; null = unset).
+  final bool? align;
   @override
-  List<Object?> get props => [text];
+  List<Object?> get props => [text, align];
 }
 
 /// Send a failed message again (same requestId: never charged twice).
@@ -237,7 +240,14 @@ class BuddyChatState extends Equatable {
 List<BuddyMessage> mergeServerMessages(List<BuddyMessage> server, List<BuddyMessage> incoming) {
   final byId = <String, BuddyMessage>{for (final m in server) m.id: m};
   for (final m in incoming) {
-    byId[m.id] = m;
+    // A translation is written once and never removed: a later copy
+    // without one keeps the known one (no swap back to the original).
+    final known = byId[m.id]?.translation;
+    final t = m.translation;
+    byId[m.id] = known != null &&
+            (t == null || (t.segments.isEmpty && known.segments.isNotEmpty && t.text == known.text))
+        ? m.copyWith(translation: known)
+        : m;
   }
   return byId.values.toList()..sort((a, b) => a.createdAt.compareTo(b.createdAt));
 }
@@ -312,6 +322,9 @@ class BuddyChatBloc extends Bloc<BuddyChatEvent, BuddyChatState> {
   String? _buddyId;
   StreamSubscription<List<BuddyMessage>>? _newSub;
   StreamSubscription<Buddy?>? _buddySub;
+
+  /// The last "Highlight matching words" setting sent (retries reuse it).
+  bool? _align;
 
   /// Server messages of this session no local message matched yet (e.g. the
   /// listener was faster than the callable's answer).
@@ -390,14 +403,24 @@ class BuddyChatBloc extends Bloc<BuddyChatEvent, BuddyChatState> {
       ..sort((a, b) => a.createdAt.compareTo(b.createdAt));
     final r = reconcileLocal(state.local, fresh);
     // The stored copy of a bubble that is still hidden stays hidden.
+    // A stored copy without a translation keeps the callable's one, so a
+    // bubble never loses (or swaps) its translation.
+    final keep = <String, BuddyTranslation>{};
     for (final (l, srv) in r.matched) {
       final i = _queue.indexOf(l.id);
       if (i >= 0) _queue[i] = srv.id;
+      if (srv.translation == null && l.translation != null) keep[srv.id] = l.translation!;
     }
+    final incoming = keep.isEmpty
+        ? event.messages
+        : [
+            for (final m in event.messages)
+              keep.containsKey(m.id) ? m.copyWith(translation: keep[m.id]) : m,
+          ];
     _unmatched = [..._unmatched, ...r.unmatched];
     _enqueue([for (final m in r.unmatched) if (m.isBuddy) m]);
     emit(state.copyWith(
-      server: mergeServerMessages(state.server, event.messages),
+      server: mergeServerMessages(state.server, incoming),
       local: r.local,
       hidden: _queue.toSet(),
     ));
@@ -447,6 +470,7 @@ class BuddyChatBloc extends Bloc<BuddyChatEvent, BuddyChatState> {
     final text = event.text.trim();
     if (text.isEmpty || text.runes.length > BuddyCatalog.maxMessageChars) return;
     if (state.waitingReply || state.locked || _buddyId == null) return;
+    _align = event.align;
     final requestId = _repo.newRequestId();
     final msg = BuddyMessage(
       id: 'local_$requestId',
@@ -480,25 +504,37 @@ class BuddyChatBloc extends Bloc<BuddyChatEvent, BuddyChatState> {
         buddyId: _buddyId!,
         text: msg.text,
         requestId: msg.requestId!,
+        align: _align,
       );
       final now = DateTime.now();
-      final bubbles = r.bubbles;
+      // The server's translations come in the same payload: a bubble is
+      // never shown first without its translation (owner 2026-10-24).
+      final lang = state.buddy?.settings.chatLanguage;
+      final bubbles = r.turnBubbles;
       final replies = <BuddyMessage>[
         for (var i = 0; i < bubbles.length; i++)
           BuddyMessage(
             id: 'local_reply_${msg.requestId}_$i',
             role: BuddyMessageRole.buddy,
-            text: bubbles[i],
+            text: bubbles[i].$1,
+            translation: BuddyTranslation.fromText(bubbles[i].$2, lang, bubbles[i].$3),
             kind: BuddyMessage.kindFrom(r.kind),
             // The turn is charged once: on its first bubble.
             charged: i == 0 ? r.charged : 'none',
             // Same spacing as the stored copies (fixed order).
             createdAt: now.add(Duration(seconds: i)),
-            keywords: keywordsIn(bubbles[i], r.keywords),
+            keywords: keywordsIn(bubbles[i].$1, r.keywords),
           ),
       ];
       // The Firestore listener may already have delivered the messages.
-      final local = _replace(msg.id, (m) => m.copyWith(delivery: BuddyDelivery.sent));
+      // The user's message keeps its text; its translation is added under it.
+      final local = _replace(
+          msg.id,
+          (m) => m.copyWith(
+                delivery: BuddyDelivery.sent,
+                translation: BuddyTranslation.fromText(
+                    r.userTranslation, lang, r.userTranslationSegments),
+              ));
       final rec = reconcileLocal([...local, ...replies], _unmatched);
       _unmatched = rec.unmatched;
       final keptIds = {for (final m in rec.local) m.id};

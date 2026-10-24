@@ -6,14 +6,13 @@ import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/utils/language_flags.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
-import '../../domain/buddy_catalog.dart';
+import '../../domain/entities/buddy.dart';
 import '../../domain/repositories/buddies_repository.dart';
 import '../bloc/buddies_list_bloc.dart';
 import '../buddy_labels.dart';
 import '../screens/buddy_builder_screen.dart';
 import '../screens/buddy_chat_screen.dart';
 import 'buddy_avatar.dart';
-import 'buddy_chat_settings.dart';
 import 'buddy_prompts.dart';
 
 /// Exchanges > Buddies: the user's AI chat friends. Private to the user;
@@ -218,7 +217,7 @@ class _BuddiesTabView extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   // The language this chat is translated into (like Exchanges).
-                  BuddyChatLanguageFlag(buddyId: b.id),
+                  BuddyChatLanguageFlag(buddy: b),
                   if (b.unansweredCheckIns > 0) ...[
                     const SizedBox(height: 4),
                     Container(
@@ -284,31 +283,20 @@ class _BuddiesTabView extends StatelessWidget {
       );
 }
 
-/// Flag of a Buddy chat's language (what the chat is translated into): the
-/// language chosen in that chat, else the app language. Refreshes when the
-/// language is changed in the chat.
+/// Flag of the language a Buddy chat is translated into: the Buddy's fixed
+/// `chatLanguage` (older Buddies: the app language).
 class BuddyChatLanguageFlag extends StatelessWidget {
-  const BuddyChatLanguageFlag({required this.buddyId, super.key});
+  const BuddyChatLanguageFlag({required this.buddy, super.key});
 
-  final String buddyId;
+  final Buddy buddy;
 
   @override
   Widget build(BuildContext context) {
-    final l = Localizations.localeOf(context);
-    final appLanguage = BuddyCatalog.languageForLocale(l.languageCode, l.countryCode);
-    return ValueListenableBuilder<int>(
-      valueListenable: BuddyChatSettings.languageChanges,
-      builder: (context, _, __) => FutureBuilder<String?>(
-        future: BuddyChatSettings.loadLanguage(buddyId),
-        builder: (context, snap) {
-          final code = snap.data ?? appLanguage;
-          return Text(
-            languageFlagEmoji(code),
-            key: ValueKey('buddy-flag-$buddyId-$code'),
-            style: const TextStyle(fontSize: 16),
-          );
-        },
-      ),
+    final code = buddyChatLanguageOf(context, buddy);
+    return Text(
+      languageFlagEmoji(code),
+      key: ValueKey('buddy-flag-${buddy.id}-$code'),
+      style: const TextStyle(fontSize: 16),
     );
   }
 }

@@ -8,7 +8,6 @@ import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/ai_consent_service.dart';
 import '../../../../core/services/app_sound_service.dart';
 import '../../../../core/services/tier_gate.dart';
-import '../../../../core/services/translation_service.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../core/widgets/ai_consent_sheet.dart';
 import '../../../../core/widgets/limit_reached_dialog.dart';
@@ -21,7 +20,8 @@ import '../../../safety/presentation/widgets/content_report_flow.dart';
 import '../../domain/buddy_exception.dart';
 
 /// Everything the Buddy screens show or call outside the feature: upgrade
-/// and coin-shop prompts, the AI notice, translation, reporting and sounds.
+/// and coin-shop prompts, the AI notice, reporting and sounds (no
+/// translation: the server stores it on every message).
 /// One object so widget tests can swap it for a fake.
 class BuddyPrompts {
   const BuddyPrompts();
@@ -108,23 +108,9 @@ class BuddyPrompts {
     return await showAiConsentSheet(context) == true;
   }
 
-  /// Automatic translation of a Buddy chat message, exactly like the 1:1
-  /// chat: [TranslationService.translateDetailed] (private text -> the
-  /// `translatePrivateText` callable with `texts`; Buddy messages are not in
-  /// `conversations`, so there is no message ref). Never throws; without AI
-  /// consent the result is [TranslationResult.consentRequired] (the original
-  /// is shown, no prompt per message).
-  Future<TranslationResult> autoTranslate(String text,
-          {required String source, required String target}) =>
-      TranslationService()
-          .translateDetailed(text: text, sourceLanguage: source, targetLanguage: target);
-
   /// Asks for the AI notice once when the chat opens (like the 1:1 chat).
   void maybePromptAiConsent(BuildContext context) =>
       unawaited(AiConsentGate.maybePromptOnce(context));
-
-  /// Changes of the AI consent (translations re-run / are dropped).
-  Listenable? get aiConsentChanges => AiConsentService.instance.statusListenable;
 
   /// The shared content report flow (reason picker -> `reports`).
   Future<void> report(BuildContext context,

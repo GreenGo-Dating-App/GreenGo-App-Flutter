@@ -94,6 +94,10 @@ class BuddySendResult extends Equatable {
     this.keywords = const <BuddyKeyword>[],
     this.coinBalance,
     this.replyCredits,
+    this.translations = const <String?>[],
+    this.userTranslation,
+    this.translationSegments = const <List<BuddySegment>>[],
+    this.userTranslationSegments = const <BuddySegment>[],
   });
 
   factory BuddySendResult.fromMap(Map<String, dynamic> m) => BuddySendResult(
@@ -103,6 +107,24 @@ class BuddySendResult extends Equatable {
             for (final r in m['replies'] as List)
               if (r is String && r.trim().isNotEmpty) r,
         ],
+        // Aligned with the raw `replies` (same filter keeps them aligned).
+        translations: [
+          if (m['replies'] is List)
+            for (var i = 0; i < (m['replies'] as List).length; i++)
+              if ((m['replies'] as List)[i] case final String r when r.trim().isNotEmpty)
+                _translationAt(m['translations'], i),
+        ],
+        userTranslation: _cleanTranslation(m['userTranslation']),
+        translationSegments: [
+          if (m['replies'] is List)
+            for (var i = 0; i < (m['replies'] as List).length; i++)
+              if ((m['replies'] as List)[i] case final String r when r.trim().isNotEmpty)
+                BuddySegment.listFrom(m['translationSegments'] is List &&
+                        i < (m['translationSegments'] as List).length
+                    ? (m['translationSegments'] as List)[i]
+                    : null),
+        ],
+        userTranslationSegments: BuddySegment.listFrom(m['userTranslationSegments']),
         keywords: BuddyKeyword.listFrom(m['keywords']),
         kind: (m['kind'] as String?) ?? 'chat',
         charged: (m['charged'] as String?) ?? 'none',
@@ -110,6 +132,25 @@ class BuddySendResult extends Equatable {
         coinBalance: (m['coinBalance'] as num?)?.toInt(),
         replyCredits: (m['replyCredits'] as num?)?.toInt(),
       );
+
+  static String? _cleanTranslation(Object? v) => v is String && v.trim().isNotEmpty ? v : null;
+
+  static String? _translationAt(Object? list, int i) =>
+      list is List && i < list.length ? _cleanTranslation(list[i]) : null;
+
+  /// The server's translations of [replies] into the chat language (same
+  /// order; null = none / already in that language).
+  final List<String?> translations;
+
+  /// The server's translation of the user's message (null = none).
+  final String? userTranslation;
+
+  /// Matching chunks per reply (aligned with [translations]; empty = none,
+  /// e.g. an older server: the stored doc brings them later).
+  final List<List<BuddySegment>> translationSegments;
+
+  /// Matching chunks of the user's message and [userTranslation].
+  final List<BuddySegment> userTranslationSegments;
 
   /// All bubbles joined with new lines (older servers: the only reply).
   final String reply;
@@ -135,10 +176,24 @@ class BuddySendResult extends Equatable {
 
   /// What to show, in order: [replies], else [reply]. Anything that looks
   /// like raw JSON is never shown (the server already prevents it).
-  List<String> get bubbles {
-    final list = replies.isNotEmpty ? replies : [if (reply.trim().isNotEmpty) reply];
-    final clean = [for (final b in list) if (!looksLikeJson(b)) b];
-    return clean;
+  List<String> get bubbles => [for (final (b, _) in bubblesWithTranslations) b];
+
+  /// [bubbles] with their translation (null = none), aligned.
+  List<(String, String?)> get bubblesWithTranslations => [for (final b in turnBubbles) (b.$1, b.$2)];
+
+  /// [bubbles] with their translation and its matching chunks, aligned.
+  List<(String, String?, List<BuddySegment>)> get turnBubbles {
+    final list = replies.isNotEmpty
+        ? [
+            for (var i = 0; i < replies.length; i++)
+              (
+                replies[i],
+                i < translations.length ? translations[i] : null,
+                i < translationSegments.length ? translationSegments[i] : const <BuddySegment>[],
+              ),
+          ]
+        : [if (reply.trim().isNotEmpty) (reply, null, const <BuddySegment>[])];
+    return [for (final e in list) if (!looksLikeJson(e.$1)) e];
   }
 
   static final RegExp _jsonStart = RegExp(r'^\s*[{\[]');
@@ -149,5 +204,18 @@ class BuddySendResult extends Equatable {
 
   @override
   List<Object?> get props =>
-      [reply, replies, keywords, kind, charged, freeRepliesLeft, coinBalance, replyCredits];
+      [
+        reply,
+        replies,
+        keywords,
+        kind,
+        charged,
+        freeRepliesLeft,
+        coinBalance,
+        replyCredits,
+        translations,
+        userTranslation,
+        translationSegments,
+        userTranslationSegments,
+      ];
 }

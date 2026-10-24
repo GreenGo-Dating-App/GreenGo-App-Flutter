@@ -28578,6 +28578,11 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String buddyRepliesPerCoin(int replies) {
+    return '1 moeda = $replies respostas';
+  }
+
+  @override
   String buddyThenRepliesPerCoin(int replies) {
     return 'depois 1 moeda = $replies respostas';
   }
@@ -29285,6 +29290,26 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get buddyTopic_would_you_rather => 'O que preferias?';
+
+  @override
+  String get buddyChatLanguagePrompt => 'Traduzir este chat para';
+
+  @override
+  String get buddyChatLanguageNote =>
+      'As mensagens são traduzidas uma vez para esta língua. Não é possível alterar mais tarde.';
+
+  @override
+  String buddyTranslatedInto(String language) {
+    return 'Traduzido para: $language (fixo)';
+  }
+
+  @override
+  String get buddyChatSettingHighlightMatches =>
+      'Destacar palavras correspondentes';
+
+  @override
+  String get buddyChatSettingHighlightMatchesDesc =>
+      'Colorir as mesmas palavras numa mensagem e na sua tradução';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -57866,6 +57891,11 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
+  String buddyRepliesPerCoin(int replies) {
+    return '1 moeda = $replies respostas';
+  }
+
+  @override
   String buddyThenRepliesPerCoin(int replies) {
     return 'depois 1 moeda = $replies respostas';
   }
@@ -58573,4 +58603,24 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get buddyTopic_would_you_rather => 'O que você prefere?';
+
+  @override
+  String get buddyChatLanguagePrompt => 'Traduzir este chat para';
+
+  @override
+  String get buddyChatLanguageNote =>
+      'As mensagens são traduzidas uma vez para este idioma. Não dá para mudar depois.';
+
+  @override
+  String buddyTranslatedInto(String language) {
+    return 'Traduzido para: $language (fixo)';
+  }
+
+  @override
+  String get buddyChatSettingHighlightMatches =>
+      'Destacar palavras correspondentes';
+
+  @override
+  String get buddyChatSettingHighlightMatchesDesc =>
+      'Colorir as mesmas palavras em uma mensagem e na tradução dela';
 }

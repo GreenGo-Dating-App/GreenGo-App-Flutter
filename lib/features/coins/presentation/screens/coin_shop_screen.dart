@@ -47,6 +47,7 @@ import '../../../app_tour/presentation/tour_keys.dart';
 import '../../../app_tour/presentation/tour_controller.dart';
 import '../../../../core/services/analytics_consent_service.dart';
 import '../../../../core/widgets/collapsible_how_it_works.dart';
+import '../../../../core/widgets/one_scroll_page.dart';
 import '../../../../core/services/app_sound_service.dart';
 
 /// Coin Shop Screen
@@ -1032,40 +1033,33 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           // Web (Stripe) has no store to restore from.
           if (!kIsWeb) TourKeys.shopRestore,
         ],
-        child: Scaffold(
-      backgroundColor: Colors.black,
-      appBar: AppBar(
-        backgroundColor: AppColors.backgroundDark,
-        elevation: 0,
-        title: Text(
-          AppLocalizations.of(context)!.shopTitle,
-          style: const TextStyle(
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
-            color: AppColors.textPrimary,
+        // One scroll view (owner 2026-10-24): the app bar, the tabs and each
+        // tab's header scroll away together with its content.
+        child: OneScrollTabsScaffold(
+          backgroundColor: Colors.black,
+          appBarColor: AppColors.backgroundDark,
+          title: Text(
+            AppLocalizations.of(context)!.shopTitle,
+            style: const TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+              color: AppColors.textPrimary,
+            ),
           ),
-        ),
-        centerTitle: true,
-        automaticallyImplyLeading: true,
-        leading: Navigator.of(context).canPop()
-            ? IconButton(
-                icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
-                onPressed: () => Navigator.of(context).pop(),
-              )
-            : null,
-        bottom: PreferredSize(
-          preferredSize: const Size.fromHeight(48),
-          child: _buildTabBar(),
+          leading: Navigator.of(context).canPop()
+              ? IconButton(
+                  icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
+                  onPressed: () => Navigator.of(context).pop(),
+                )
+              : null,
+          tabBar: _buildTabBar(),
+          controller: _tabController,
+          tabs: [
+            _safeBuild(_buildBuyCoinsTab, AppLocalizations.of(context)!.shopTabCoins),
+            _safeBuild(_buildMembershipTab, AppLocalizations.of(context)!.shopTabMembership),
+          ],
         ),
       ),
-      body: TabBarView(
-        controller: _tabController,
-        children: [
-          _safeBuild(_buildBuyCoinsTab, AppLocalizations.of(context)!.shopTabCoins),
-          _safeBuild(_buildMembershipTab, AppLocalizations.of(context)!.shopTabMembership),
-        ],
-      ),
-      )),
     );
   }
 
@@ -1246,9 +1240,9 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       return _buildStoreUnavailableState();
     }
 
-    return Column(
-      children: [
-        // Header
+    return OneScrollTab(
+      header: [
+        // Header (scrolls with the plans)
         Container(
           padding: const EdgeInsets.all(24),
           child: Column(
@@ -1437,12 +1431,9 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           ),
         ),
 
-        // Base membership card + Subscription plans
-        Expanded(
-          child: ListView(
-            keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
-            padding: const EdgeInsets.all(16),
-            children: [
+      ],
+      // Base membership card + Subscription plans
+      items: [
               _buildBaseMembershipCard(),
               const SizedBox(height: 16),
               ...tiers.map((tier) {
@@ -1469,14 +1460,9 @@ class _CoinShopScreenState extends State<CoinShopScreen>
               // portal and "Withdraw from contract" (P2-9; L-11, H-23).
               if (kIsWeb) const WebBillingPanel(),
               const SizedBox(height: 8),
-            ],
-          ),
-        ),
-
-        // Subscribe button
-        if (_selectedTier != null)
-          _buildSubscribeButton(currentTier),
       ],
+      // Subscribe button
+      bottomBar: _selectedTier != null ? _buildSubscribeButton(currentTier) : null,
     );
   }
 
@@ -2306,8 +2292,8 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     List<CoinPromotion> promotions,
   ) {
     final l10n = AppLocalizations.of(context)!;
-    return Column(
-      children: [
+    return OneScrollTab(
+      header: [
         CollapsibleHowItWorks(
           id: 'coin_shop',
           steps: [l10n.xplHowCoins1, l10n.xplHowCoins2, l10n.xplHowCoins3],
@@ -2395,12 +2381,9 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         // Active promotion banner
         if (promotions.isNotEmpty) _buildPromotionBanner(promotions.first),
 
-        // Package list + Send Coins
-        Expanded(
-          child: ListView(
-            keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
-            padding: const EdgeInsets.all(16),
-            children: [
+      ],
+      // Package list + Send Coins
+      items: [
               ...packages.map((package) {
                 final isPopular = package.packageId == 'popular_500';
                 return _buildPackageCard(package, isPopular);
@@ -2416,13 +2399,11 @@ class _CoinShopScreenState extends State<CoinShopScreen>
               // Web (Stripe): "Withdraw from contract" for coin purchases
               // made without the immediate-delivery waiver (P2-9).
               if (kIsWeb) const WebBillingPanel(showSubscriptions: false),
-            ],
-          ),
-        ),
-
-        // Purchase button
-        if (_selectedPackage != null)
-          Container(
+      ],
+      // Purchase button
+      bottomBar: _selectedPackage == null
+          ? null
+          : Container(
             padding: const EdgeInsets.all(16),
             decoration: BoxDecoration(
               color: Colors.grey[900],
@@ -2464,7 +2445,6 @@ class _CoinShopScreenState extends State<CoinShopScreen>
               ),
             ),
           ),
-      ],
     );
   }
 

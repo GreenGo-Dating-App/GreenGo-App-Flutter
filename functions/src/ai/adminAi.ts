@@ -140,7 +140,7 @@ const READS: Record<string, (d: any, uid: string) => Promise<unknown>> = {
         Object.assign(models, data.models ?? {});
         for (const [cap, provs] of Object.entries<any>(data.c ?? {})) {
           for (const [pid, st] of Object.entries<any>(provs ?? {})) {
-            const row = ((out[day][cap] ??= {})[pid] ??= { calls: 0, items: 0, chars: 0, errors: 0, fallbacks: 0, latencyMs: 0 });
+            const row = ((out[day][cap] ??= {})[pid] ??= { calls: 0, items: 0, chars: 0, errors: 0, fallbacks: 0, latencyMs: 0, tokensIn: 0, tokensOut: 0 });
             for (const k of Object.keys(row)) row[k] += Number(st?.[k]) || 0;
           }
         }

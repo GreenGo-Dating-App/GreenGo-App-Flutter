@@ -4,14 +4,15 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../chat/data/chat_settings_prefs.dart';
+import '../buddy_labels.dart';
 
 /// The chat display settings of a Buddy chat: the same settings, keys and
 /// storage as the 1:1 chat ([ChatSettingsPrefs]; this chat's id is
 /// `buddy_<buddyId>`), limited to the ones that make sense with an AI
-/// Buddy (no grammar check, XP bar or phrase of the day), plus the chat's
-/// reading language (`chat_buddy_<id>_language`, like `chat_<matchId>_language`).
+/// Buddy (no grammar check, XP bar or phrase of the day). The language the
+/// chat is translated into is the Buddy's `chatLanguage` (server, fixed).
 class BuddyChatSettings {
-  const BuddyChatSettings({this.values = const {}, this.language});
+  const BuddyChatSettings({this.values = const {}});
 
   /// The settings a Buddy chat offers, in the 1:1 chat's order.
   static const List<String> names = [
@@ -22,12 +23,10 @@ class BuddyChatSettings {
     'showSentences',
     'showPronunciation',
     'ttsReadTranslated',
+    'highlightMatches',
   ];
 
   final Map<String, bool> values;
-
-  /// The language messages are translated into (null = the app language).
-  final String? language;
 
   bool _v(String n) => values[n] ?? true;
   bool get showOriginalText => _v('showOriginalText');
@@ -38,10 +37,13 @@ class BuddyChatSettings {
   bool get showPronunciation => _v('showPronunciation');
   bool get ttsReadTranslated => _v('ttsReadTranslated');
 
+  /// Colour matching chunks of a message and its translation (Buddy only).
+  bool get highlightMatches => _v('highlightMatches');
+
   Map<String, bool> get all => {for (final n in names) n: _v(n)};
 
-  BuddyChatSettings copyWith({Map<String, bool>? values, String? language}) =>
-      BuddyChatSettings(values: values ?? this.values, language: language ?? this.language);
+  BuddyChatSettings copyWith({Map<String, bool>? values}) =>
+      BuddyChatSettings(values: values ?? this.values);
 
   BuddyChatSettings toggled(String name, bool value) =>
       copyWith(values: {...all, name: value});
@@ -57,7 +59,6 @@ class BuddyChatSettings {
       final p = ChatSettingsPrefs.readPrefix(prefs, id);
       return BuddyChatSettings(
         values: {for (final n in names) n: prefs.getBool('$p$n') ?? true},
-        language: prefs.getString('chat_${id}_language'),
       );
     } catch (_) {
       return const BuddyChatSettings();
@@ -73,46 +74,16 @@ class BuddyChatSettings {
     final prefs = await SharedPreferences.getInstance();
     await ChatSettingsPrefs.saveForAllChats(prefs, all);
   }
-
-  /// Bumped whenever a Buddy chat language changes (the Buddies list flags).
-  static final ValueNotifier<int> languageChanges = ValueNotifier<int>(0);
-
-  /// The saved chat language of [buddyId] (null = the app language).
-  static Future<String?> loadLanguage(String buddyId) async {
-    try {
-      final prefs = await SharedPreferences.getInstance();
-      return prefs.getString('chat_${chatId(buddyId)}_language');
-    } catch (_) {
-      return null;
-    }
-  }
-
-  static Future<void> saveLanguage(String buddyId, String code) async {
-    try {
-      final prefs = await SharedPreferences.getInstance();
-      await prefs.setString('chat_${chatId(buddyId)}_language', code);
-    } catch (_) {
-      // The choice still applies to this session.
-    }
-    languageChanges.value++;
-  }
 }
 
-/// The 1:1 chat's "Languages" menu: your language (XX) + chat settings.
+/// The 1:1 chat's "Languages" menu: what the chat is translated into
+/// (read-only: the Buddy's fixed `chatLanguage`) + chat settings.
 Future<void> showBuddyChatLanguagesMenu(
   BuildContext context, {
-  required String targetLanguage,
-  required VoidCallback onPickLanguage,
+  required String chatLanguage,
   required VoidCallback onSettings,
 }) {
   final l10n = AppLocalizations.of(context)!;
-  Widget item(Key key, IconData icon, String label, Color color, VoidCallback onTap) => ListTile(
-        key: key,
-        contentPadding: EdgeInsets.zero,
-        leading: Icon(icon, color: color),
-        title: Text(label, style: TextStyle(color: color)),
-        onTap: onTap,
-      );
   return showModalBottomSheet<void>(
     context: context,
     backgroundColor: AppColors.backgroundCard,
@@ -136,85 +107,25 @@ Future<void> showBuddyChatLanguagesMenu(
               ],
             ),
             const SizedBox(height: 16),
-            item(
-              const ValueKey('buddy-chat-language'),
-              Icons.language,
-              '${l10n.chatYourLanguage} (${targetLanguage.toUpperCase()})',
-              AppColors.richGold,
-              () {
-                Navigator.pop(sheet);
-                onPickLanguage();
-              },
+            // Info only: chosen when the Buddy was created, never changed.
+            ListTile(
+              key: const ValueKey('buddy-chat-language-info'),
+              contentPadding: EdgeInsets.zero,
+              leading: const Icon(Icons.language, color: AppColors.textSecondary),
+              title: Text(buddyTranslatedIntoLabel(l10n, chatLanguage),
+                  style: const TextStyle(color: AppColors.textSecondary)),
+              trailing: const Icon(Icons.lock_outline, size: 18, color: AppColors.textTertiary),
             ),
-            item(
-              const ValueKey('buddy-chat-settings'),
-              Icons.tune,
-              l10n.chatSettingsTitle,
-              AppColors.textPrimary,
-              () {
+            ListTile(
+              key: const ValueKey('buddy-chat-settings'),
+              contentPadding: EdgeInsets.zero,
+              leading: const Icon(Icons.tune, color: AppColors.textPrimary),
+              title: Text(l10n.chatSettingsTitle,
+                  style: const TextStyle(color: AppColors.textPrimary)),
+              onTap: () {
                 Navigator.pop(sheet);
                 onSettings();
               },
-            ),
-          ],
-        ),
-      ),
-    ),
-  );
-}
-
-/// The 1:1 chat's language picker (same 7 languages). Pops the code.
-Future<String?> showBuddyChatLanguagePicker(BuildContext context, {required String selected}) {
-  final l10n = AppLocalizations.of(context)!;
-  const languages = [
-    ('en', 'English', '🇬🇧'),
-    ('de', 'Deutsch', '🇩🇪'),
-    ('es', 'Español', '🇪🇸'),
-    ('fr', 'Français', '🇫🇷'),
-    ('it', 'Italiano', '🇮🇹'),
-    ('pt', 'Português', '🇵🇹'),
-    ('pt_BR', 'Português (BR)', '🇧🇷'),
-  ];
-  return showModalBottomSheet<String>(
-    context: context,
-    backgroundColor: AppColors.backgroundCard,
-    shape: const RoundedRectangleBorder(
-      borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
-    ),
-    builder: (ctx) => SafeArea(
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(l10n.chatYourLanguage,
-                style: const TextStyle(
-                    color: AppColors.textPrimary, fontSize: 18, fontWeight: FontWeight.bold)),
-            const SizedBox(height: 4),
-            Text(l10n.chatLanguagePickerHint,
-                style: const TextStyle(color: AppColors.textTertiary, fontSize: 12)),
-            const SizedBox(height: 12),
-            Flexible(
-              child: ListView(
-                shrinkWrap: true,
-                children: [
-                  for (final (code, name, flag) in languages)
-                    ListTile(
-                      key: ValueKey('buddy-chat-language-$code'),
-                      leading: Text(flag, style: const TextStyle(fontSize: 24)),
-                      title: Text(name,
-                          style: TextStyle(
-                            color: selected == code ? AppColors.richGold : AppColors.textPrimary,
-                            fontWeight: selected == code ? FontWeight.bold : FontWeight.normal,
-                          )),
-                      trailing: selected == code
-                          ? const Icon(Icons.check_circle, color: AppColors.richGold)
-                          : null,
-                      onTap: () => Navigator.pop(ctx, code),
-                    ),
-                ],
-              ),
             ),
           ],
         ),
@@ -249,6 +160,8 @@ Future<void> showBuddyChatSettingsSheet(
         l10n.chatSettingPronunciationDesc),
     ('ttsReadTranslated', Icons.record_voice_over, l10n.chatSettingTtsTranslation,
         l10n.chatSettingTtsTranslationDesc),
+    ('highlightMatches', Icons.format_color_text, l10n.buddyChatSettingHighlightMatches,
+        l10n.buddyChatSettingHighlightMatchesDesc),
   ];
   return showModalBottomSheet<void>(
     context: context,

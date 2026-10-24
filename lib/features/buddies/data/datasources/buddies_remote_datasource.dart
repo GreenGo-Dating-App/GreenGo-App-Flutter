@@ -140,6 +140,9 @@ class BuddiesRemoteDataSource {
         language: (d['language'] as String?) ?? 'en',
         level: d['level'] as String?,
         cefr: d['cefr'] as String?,
+        chatLanguage: d['chatLanguage'] is String && (d['chatLanguage'] as String).isNotEmpty
+            ? d['chatLanguage'] as String
+            : null,
         checkInsEnabled: d['checkInsEnabled'] != false,
       ),
       lastMessage: d['lastMessage'] as String?,
@@ -158,6 +161,7 @@ class BuddiesRemoteDataSource {
         kind: BuddyMessage.kindFrom(d['kind']),
         charged: (d['charged'] as String?) ?? 'none',
         keywords: BuddyKeyword.listFrom(d['keywords']),
+        translation: BuddyTranslation.fromMap(d['translation']),
         // A pending server timestamp reads as null: treat it as "now".
         createdAt: _time(d['createdAt']) ?? DateTime.now(),
       );

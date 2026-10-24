@@ -56,6 +56,43 @@ class BuddyChatAdapter {
     );
   }
 
+  /// "pt_BR" / "pt-BR" / "pt" -> "pt".
+  static String baseLanguage(String code) =>
+      code.toLowerCase().replaceAll('_', '-').split('-').first;
+
+  /// The stored translation of [m] to show, or null = show the text once
+  /// (no translated layout, no "original" line). Null when there is none,
+  /// when the chat language is the Buddy's language (it/it, pt/pt_BR), or
+  /// when it only differs from the text in case, accents or punctuation.
+  static String? shownTranslation(BuddyMessage m,
+      {required String chatLanguage, required String buddyLanguage}) {
+    final t = m.translation?.text;
+    if (t == null || t.trim().isEmpty) return null;
+    if (baseLanguage(chatLanguage) == baseLanguage(buddyLanguage)) return null;
+    final lang = m.translation?.lang;
+    if (lang != null && m.isBuddy && baseLanguage(lang) == baseLanguage(buddyLanguage)) return null;
+    if (sameText(t, m.text)) return null;
+    return t;
+  }
+
+  /// Equal ignoring case, accents, punctuation and spacing.
+  static bool sameText(String a, String b) => _fold(a) == _fold(b);
+
+  static const String _from = 'àáâãäåāăąçćčďèéêëēĕėęěìíîïĩīĭįıñńňòóôõöøōŏőùúûüũūŭůűųýÿžźżśšşřŕľĺłţťğß';
+  static const String _to = 'aaaaaaaaacccdeeeeeeeeeiiiiiiiiinnnooooooooouuuuuuuuuuyyzzzsssrrlllttgs';
+  static final RegExp _noise = RegExp(r'[\s\p{P}\p{S}]', unicode: true);
+
+  static String _fold(String s) {
+    final lower = s.toLowerCase();
+    final out = StringBuffer();
+    for (final r in lower.runes) {
+      final ch = String.fromCharCode(r);
+      final i = _from.indexOf(ch);
+      out.write(i >= 0 ? _to[i] : ch);
+    }
+    return out.toString().replaceAll(_noise, '');
+  }
+
   /// Keywords of [text] for highlights / the places bar: the offline matcher
   /// (like received messages) plus the places the server named in
   /// [keywords] that the matcher missed and the index can resolve (a

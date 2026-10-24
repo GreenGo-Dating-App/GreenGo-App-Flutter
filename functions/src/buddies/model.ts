@@ -24,7 +24,12 @@ export const BUDDY_USAGE = 'ai_buddy_usage';
 export const BUDDY_REQUESTS = 'ai_buddy_requests';
 
 export const BUDDY_LIMIT: Record<EffectiveTier, number> = { FREE: 1, SILVER: 3, GOLD: 5, PLATINUM: 10, TEST: 10 };
-export const FREE_REPLIES_PER_DAY: Record<EffectiveTier, number> = { FREE: 10, SILVER: 30, GOLD: 50, PLATINUM: 100, TEST: 100 };
+/**
+ * Owner 2026-10-24: no free Buddy replies any more (users get coins all the
+ * time, so every reply is paid with coins). Kept as a table so a free
+ * allowance can come back per plan without code changes elsewhere.
+ */
+export const FREE_REPLIES_PER_DAY: Record<EffectiveTier, number> = { FREE: 0, SILVER: 0, GOLD: 0, PLATINUM: 0, TEST: 0 };
 /**
  * Owner 2026-10-24 (revised): 1 coin buys 3 paid reply turns (~0.33 coins
  * each; a turn = the Buddy's 1-3 messages). Balances stay integers.

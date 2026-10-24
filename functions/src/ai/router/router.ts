@@ -77,9 +77,11 @@ export async function generate(
   for (let i = 0; i < chain.length; i++) {
     const p = chain[i];
     const t0 = Date.now();
+    const tokens = { tokensIn: 0, tokensOut: 0 };
     try {
-      const raw = await withRetries(rules, () => generateWith(p, req, rules));
-      recordUsage({ capability: cap, providerId: p.id, model: p.model, items: 1, chars: chars(req), ok: true, fallback: i > 0, latencyMs: Date.now() - t0 });
+      const raw = await withRetries(rules, () => generateWith(p, { ...req, usageOut: tokens }, rules));
+      recordUsage({ capability: cap, providerId: p.id, model: p.model, items: 1, chars: chars(req), ok: true, fallback: i > 0,
+        latencyMs: Date.now() - t0, ...tokens });
       if (opts.rawReply ?? req.json) return { text: raw, providerId: p.id, model: p.model ?? '', truncated: 0, banned: null };
       const applied = applyReplyRules(raw, rules);
       if (!applied.text) throw new ProviderError(`${p.id} reply empty after rules`, 0, true);
@@ -108,8 +110,9 @@ export async function translate(
     const batch = todo.map((k) => texts[k]);
     const t0 = Date.now();
     let out: TranslateResult['items'] = [];
+    const tokens = { tokensIn: 0, tokensOut: 0 };
     try {
-      out = await translateWith(p, batch, target, rules, opts);
+      out = await translateWith(p, batch, target, rules, { ...opts, usageOut: tokens });
     } catch (e: any) {
       console.warn(`ai router: ${cap} via ${p.id} failed: ${e?.message ?? e}`);
     }
@@ -123,7 +126,7 @@ export async function translate(
     });
     recordUsage({
       capability: cap, providerId: p.id, model: p.model, items: done,
-      chars: batch.reduce((n, s) => n + s.length, 0), ok: done > 0, fallback: i > 0, latencyMs: Date.now() - t0,
+      chars: batch.reduce((n, s) => n + s.length, 0), ok: done > 0, fallback: i > 0, latencyMs: Date.now() - t0, ...tokens,
     });
   }
   return { items, providers };

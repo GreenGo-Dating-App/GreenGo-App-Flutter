@@ -1,7 +1,9 @@
 import 'dart:async';
+import 'dart:io';
 
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:greengo_chat/core/services/app_sound_service.dart';
 import 'package:greengo_chat/core/services/chat_datasets/chat_datasets.dart';
@@ -256,40 +258,289 @@ void main() {
     expect(find.textContaining('Lisbon', findRichText: true), findsWidgets);
   });
 
-  testWidgets('automatic translation into the chat language, like the 1:1 chat', (tester) async {
+  testWidgets('stored translations: shown like the 1:1 chat, no translation call',
+      (tester) async {
     repo.latest = BuddyMessagePage(messages: [
-      fakeMessage('m1', BuddyMessageRole.buddy, 'Good morning', t0),
-      fakeMessage('m2', BuddyMessageRole.user, 'Morning!', t0.add(const Duration(minutes: 1))),
+      fakeMessage('m1', BuddyMessageRole.buddy, 'Good morning', t0, translation: 'Buongiorno'),
+      fakeMessage('m2', BuddyMessageRole.user, 'Morning!', t0.add(const Duration(minutes: 1)),
+          translation: 'Buondì!'),
+      fakeMessage('m3', BuddyMessageRole.buddy, 'Ciao', t0.add(const Duration(minutes: 2))),
     ], hasMore: false);
-    prompts.translation = 'IT';
-    await open(tester);
-    // App language = English = the Buddy's: the Buddy's message is never
-    // sent for translation (owner 2026-10-24); the user's is checked (auto).
-    expect(prompts.translated, ['auto>en:Morning!']);
-    expect(prompts.translated.where((x) => x.startsWith('en>en')), isEmpty);
-
-    // Chat language -> Italian: ALL messages are translated (same service).
-    await tester.tap(find.byKey(const ValueKey('buddy-chat-languages')));
-    await tester.pumpAndSettle();
-    await tester.tap(find.byKey(const ValueKey('buddy-chat-language')));
-    await tester.pumpAndSettle();
-    await tester.tap(find.byKey(const ValueKey('buddy-chat-language-it')));
-    await tester.pumpAndSettle();
-    expect(prompts.translated, containsAll(['en>it:Good morning', 'auto>it:Morning!']));
-    expect(find.text('IT: Good morning'), findsOneWidget);
-    expect(find.text('IT: Morning!'), findsOneWidget);
-    // Original underneath (Show original text setting) + "Translated" mark.
+    await open(tester, buddy: fakeBuddy('b1', chatLanguage: 'it'));
+    // The Buddy's: translation as the main text, original underneath,
+    // "Translated" mark (the MessageBubble translated display).
+    expect(find.text('Buongiorno'), findsOneWidget);
     expect(find.text('Good morning'), findsOneWidget);
-    expect(find.byKey(const ValueKey('message-translated-label')), findsNWidgets(2));
-    final prefs = await SharedPreferences.getInstance();
-    expect(prefs.getString('chat_buddy_b1_language'), 'it');
+    expect(
+        find.descendant(
+            of: find.byKey(const ValueKey('buddy-msg-m1')),
+            matching: find.byKey(const ValueKey('message-translated-label'))),
+        findsOneWidget);
+    // The user's: the original stays the main text, the translation is a
+    // line under it.
+    expect(find.text('Morning!'), findsOneWidget);
+    expect(
+        find.descendant(
+            of: find.byKey(const ValueKey('buddy-user-translation-m2')),
+            matching: find.text('Buondì!')),
+        findsOneWidget);
+    // No stored translation: only the original, once, no mark.
+    expect(find.text('Ciao'), findsOneWidget);
+    expect(find.byKey(const ValueKey('message-translated-label')), findsOneWidget);
 
     // Report stays on the Buddy's messages.
-    await tester.pump(const Duration(seconds: 2)); // "Language set to" snackbar
     expect(find.byKey(const ValueKey('buddy-report-m2')), findsNothing);
     await tester.tap(find.byKey(const ValueKey('buddy-report-m1')));
     await tester.pump();
     expect(prompts.calls, ['report:m1']);
+  });
+
+  test('the Buddy chat makes no client-side translation call', () {
+    // BuddyPrompts.autoTranslate is gone; the screen must not reach any
+    // translation service on its own either.
+    for (final f in [
+      'lib/features/buddies/presentation/screens/buddy_chat_screen.dart',
+      'lib/features/buddies/presentation/widgets/buddy_prompts.dart',
+      'lib/features/buddies/presentation/bloc/buddy_chat_bloc.dart',
+    ]) {
+      final src = File(f).readAsStringSync();
+      for (final banned in [
+        'TranslationService',
+        'translation_service.dart',
+        'translatePrivateText',
+        'autoTranslate',
+        'translateDetailed',
+        'chatTranslationFailed',
+      ]) {
+        expect(src.contains(banned), isFalse, reason: '$f uses $banned');
+      }
+    }
+  });
+
+  testWidgets('an untranslated message renders its text exactly once', (tester) async {
+    repo.latest = BuddyMessagePage(messages: [
+      // Same text but for case / punctuation: not a real translation.
+      fakeMessage('m1', BuddyMessageRole.buddy, 'Hello friend', t0, translation: 'hello, friend!'),
+      fakeMessage('m2', BuddyMessageRole.user, 'Grazie mille', t0.add(const Duration(minutes: 1)),
+          translation: 'Grazie mille.'),
+      fakeMessage('m3', BuddyMessageRole.buddy, 'No translation', t0.add(const Duration(minutes: 2))),
+    ], hasMore: false);
+    await open(tester, buddy: fakeBuddy('b1', chatLanguage: 'it'));
+    expect(find.text('Hello friend'), findsOneWidget);
+    expect(find.text('hello, friend!'), findsNothing);
+    expect(find.text('Grazie mille'), findsOneWidget);
+    expect(find.text('Grazie mille.'), findsNothing);
+    expect(find.byKey(const ValueKey('buddy-user-translation-m2')), findsNothing);
+    expect(find.text('No translation'), findsOneWidget);
+    expect(find.byKey(const ValueKey('message-translated-label')), findsNothing);
+  });
+
+  testWidgets('chat language = Buddy language (pt / pt_BR): never a translation shown',
+      (tester) async {
+    repo.latest = BuddyMessagePage(messages: [
+      fakeMessage('m1', BuddyMessageRole.buddy, 'Olá, tudo bem?', t0, translation: 'Oi, tudo bom?'),
+      fakeMessage('m2', BuddyMessageRole.user, 'Tudo ótimo', t0.add(const Duration(minutes: 1)),
+          translation: 'Tudo excelente'),
+    ], hasMore: false);
+    await open(tester, buddy: fakeBuddy('b1', language: 'pt', chatLanguage: 'pt_BR'));
+    expect(find.text('Olá, tudo bem?'), findsOneWidget);
+    expect(find.text('Oi, tudo bom?'), findsNothing);
+    expect(find.text('Tudo ótimo'), findsOneWidget);
+    expect(find.byKey(const ValueKey('buddy-user-translation-m2')), findsNothing);
+    expect(find.byKey(const ValueKey('message-translated-label')), findsNothing);
+  });
+
+  testWidgets(
+      'a Buddy bubble shows its translation from its first frame; '
+      "the user's main text never changes", (tester) async {
+    repo.sendAnswers.add(const BuddySendResult(
+      reply: 'It is lovely.\nHave you been?',
+      replies: ['It is lovely.', 'Have you been?'],
+      translations: ['È bellissimo.', 'Ci sei stato?'],
+      userTranslation: 'Ciao a tutti',
+      kind: 'chat',
+      charged: 'free',
+      freeRepliesLeft: 4,
+    ));
+    repo.sendGate = Completer<void>();
+    await open(tester, buddy: fakeBuddy('b1', chatLanguage: 'it'));
+
+    void userMainTextUnchanged() {
+      expect(find.text('Hello all'), findsOneWidget, reason: 'the original stays the main text');
+    }
+
+    await send(tester, 'Hello all');
+    userMainTextUnchanged();
+    expect(find.text('Ciao a tutti'), findsNothing);
+
+    repo.sendGate!.complete();
+    await tester.pump();
+    // The first frame the 1st bubble exists in already has its translation.
+    expect(find.byKey(const ValueKey('buddy-msg-local_reply_req-1-abcdef_0')), findsOneWidget);
+    expect(find.text('È bellissimo.'), findsOneWidget);
+    expect(find.text('It is lovely.'), findsOneWidget); // original underneath
+    expect(find.text('Have you been?'), findsNothing);
+    // The user's translation is a line added under the unchanged text.
+    userMainTextUnchanged();
+    expect(find.text('Ciao a tutti'), findsOneWidget);
+
+    // 2nd bubble: hidden until revealed, then translated in that same frame.
+    await tester.pump(const Duration(milliseconds: 500));
+    expect(find.byKey(const ValueKey('buddy-msg-local_reply_req-1-abcdef_1')), findsNothing);
+    await tester.pump(const Duration(milliseconds: 500));
+    expect(find.byKey(const ValueKey('buddy-msg-local_reply_req-1-abcdef_1')), findsOneWidget);
+    expect(find.text('Ci sei stato?'), findsOneWidget);
+
+    // The stored docs replace the local copies: same layout, no swap.
+    final now = DateTime.now();
+    repo.newMessages.add([
+      fakeMessage('s0', BuddyMessageRole.user, 'Hello all', now, translation: 'Ciao a tutti'),
+      fakeMessage('s1', BuddyMessageRole.buddy, 'It is lovely.', now.add(const Duration(seconds: 1)),
+          translation: 'È bellissimo.'),
+      fakeMessage('s2', BuddyMessageRole.buddy, 'Have you been?',
+          now.add(const Duration(seconds: 2)), translation: 'Ci sei stato?'),
+    ]);
+    await tester.pump();
+    userMainTextUnchanged();
+    expect(find.text('Ciao a tutti'), findsOneWidget);
+    expect(find.text('È bellissimo.'), findsOneWidget);
+    expect(find.text('Ci sei stato?'), findsOneWidget);
+    await tester.pump(const Duration(seconds: 2));
+  });
+
+  /// The coloured chunks rendered under [of]: text -> background colour.
+  Map<String, Color> colouredSpans(WidgetTester tester, Finder of) {
+    final out = <String, Color>{};
+    for (final r in tester.widgetList<RichText>(find.descendant(of: of, matching: find.byType(RichText)))) {
+      r.text.visitChildren((span) {
+        if (span is TextSpan && span.text != null && span.style?.backgroundColor != null) {
+          out[span.text!] = span.style!.backgroundColor!;
+        }
+        return true;
+      });
+    }
+    return out;
+  }
+
+  List<BuddyMessage> segmentMessages() => [
+        fakeMessage('m1', BuddyMessageRole.buddy, 'I love the sea', t0,
+            translation: 'Amo il mare',
+            segments: const [
+              BuddySegment(s: 'I love', t: 'Amo'),
+              BuddySegment(s: 'not there', t: 'il'), // invalid: ignored
+              BuddySegment(s: 'the sea', t: 'il mare'),
+            ]),
+        fakeMessage('m2', BuddyMessageRole.user, 'Good morning', t0.add(const Duration(minutes: 1)),
+            translation: 'Buongiorno',
+            segments: const [BuddySegment(s: 'Good morning', t: 'Buongiorno')]),
+      ];
+
+  testWidgets('matching chunks: the same colour for a pair in both texts', (tester) async {
+    repo.latest = BuddyMessagePage(messages: segmentMessages(), hasMore: false);
+    await open(tester, buddy: fakeBuddy('b1', chatLanguage: 'it'));
+    await tester.pump();
+    // The Buddy's: translation (main) and original underneath.
+    final main = colouredSpans(tester, find.byKey(const ValueKey('buddy-seg-main-m1')));
+    final orig = colouredSpans(tester, find.byKey(const ValueKey('buddy-seg-original-m1')));
+    expect(main.keys, unorderedEquals(['Amo', 'il mare']));
+    expect(orig.keys, unorderedEquals(['I love', 'the sea']));
+    expect(main['Amo'], orig['I love']);
+    expect(main['il mare'], orig['the sea']);
+    expect(main['Amo'], isNot(main['il mare']), reason: 'each pair has its own colour');
+    // The invalid segment is ignored: no coloured lone "il".
+    expect(main.containsKey('il'), isFalse);
+    // Not colour alone: matched chunks are underlined.
+    final underlined = <String>[];
+    for (final r in tester.widgetList<RichText>(find.descendant(
+        of: find.byKey(const ValueKey('buddy-seg-main-m1')), matching: find.byType(RichText)))) {
+      r.text.visitChildren((span) {
+        if (span is TextSpan && span.style?.decoration == TextDecoration.underline) {
+          underlined.add(span.text!);
+        }
+        return true;
+      });
+    }
+    expect(underlined, unorderedEquals(['Amo', 'il mare']));
+
+    // The user's: original (main) and the translation line, same colour.
+    final userMain = colouredSpans(tester, find.byKey(const ValueKey('buddy-seg-main-m2')));
+    final userLine =
+        colouredSpans(tester, find.byKey(const ValueKey('buddy-user-translation-m2')));
+    expect(userMain['Good morning'], isNotNull);
+    expect(userLine['Buongiorno'], userMain['Good morning']);
+
+    // Setting on (default): the server is asked for the colour pairs.
+    await send(tester, 'Colours please');
+    expect(repo.aligns, [true]);
+    await tester.pump(const Duration(seconds: 1));
+  });
+
+  testWidgets('matching chunks: setting off = no colours, texts as before', (tester) async {
+    SharedPreferences.setMockInitialValues({'chat_highlightMatches': false});
+    repo.latest = BuddyMessagePage(messages: segmentMessages(), hasMore: false);
+    await open(tester, buddy: fakeBuddy('b1', chatLanguage: 'it'));
+    await tester.pump();
+    expect(find.byKey(const ValueKey('buddy-seg-main-m1')), findsNothing);
+    expect(find.byKey(const ValueKey('buddy-seg-original-m1')), findsNothing);
+    expect(find.byKey(const ValueKey('buddy-seg-main-m2')), findsNothing);
+    expect(colouredSpans(tester, find.byKey(const ValueKey('buddy-messages'))), isEmpty);
+    expect(find.text('Amo il mare'), findsOneWidget);
+    expect(find.text('I love the sea'), findsOneWidget);
+    expect(find.text('Good morning'), findsOneWidget);
+    // The server is told to skip the colour pairs (align: false).
+    await send(tester, 'No colours please');
+    expect(repo.aligns, [false]);
+    await tester.pump(const Duration(seconds: 1));
+
+    // The toggle is in the chat settings sheet, on by default elsewhere.
+    await tester.tap(find.byKey(const ValueKey('buddy-chat-languages')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('buddy-chat-settings')));
+    await tester.pumpAndSettle();
+    final toggle = find.byKey(const ValueKey('buddy-chat-setting-highlightMatches'));
+    await tester.ensureVisible(toggle);
+    expect(tester.widget<SwitchListTile>(toggle).value, isFalse);
+    expect(find.text('Highlight matching words'), findsOneWidget);
+    await tester.tap(toggle);
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('buddy-seg-main-m1'), skipOffstage: false), findsOneWidget);
+  });
+
+  testWidgets('Enter sends the message; Shift+Enter does not', (tester) async {
+    await open(tester);
+    await tester.enterText(find.byKey(const ValueKey('buddy-input')), 'Typed on a keyboard');
+    await tester.pump();
+
+    await tester.sendKeyDownEvent(LogicalKeyboardKey.shiftLeft);
+    await tester.sendKeyEvent(LogicalKeyboardKey.enter);
+    await tester.sendKeyUpEvent(LogicalKeyboardKey.shiftLeft);
+    await tester.pump();
+    expect(repo.sent, isEmpty);
+
+    await tester.enterText(find.byKey(const ValueKey('buddy-input')), 'Typed on a keyboard');
+    await tester.pump();
+    await tester.sendKeyEvent(LogicalKeyboardKey.enter);
+    await tester.pump();
+    await tester.pump();
+    expect(repo.sent.map((m) => m['text']), ['Typed on a keyboard']);
+    expect(tester.widget<TextField>(find.byKey(const ValueKey('buddy-input'))).controller!.text,
+        isEmpty);
+    await tester.pump(const Duration(seconds: 1));
+  });
+
+  testWidgets('languages menu: the chat language is read-only info', (tester) async {
+    await open(tester, buddy: fakeBuddy('b1', chatLanguage: 'it'));
+    await tester.tap(find.byKey(const ValueKey('buddy-chat-languages')));
+    await tester.pumpAndSettle();
+    final info = find.byKey(const ValueKey('buddy-chat-language-info'));
+    expect(info, findsOneWidget);
+    expect(tester.widget<ListTile>(info).onTap, isNull);
+    expect(find.text('Translated into: 🇮🇹 Italian (fixed)'), findsOneWidget);
+    // No picker any more; the chat settings entry stays.
+    await tester.tap(info);
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('buddy-chat-language-it')), findsNothing);
+    expect(find.byKey(const ValueKey('buddy-chat-settings')), findsOneWidget);
   });
 
   testWidgets('chat settings: the 1:1 chat settings apply (cultural tips off hides places)',
@@ -312,17 +563,6 @@ void main() {
     final prefs = await SharedPreferences.getInstance();
     expect(prefs.getBool('chat_buddy_b1_showCulturalTips'), isFalse);
     expect(prefs.getBool('chat_buddy_b1_hasCustomSettings'), isTrue);
-  });
-
-  testWidgets('translation failure: snackbar once, original shown', (tester) async {
-    // A user message (language unknown) is sent for translation and fails.
-    repo.latest = BuddyMessagePage(
-        messages: [fakeMessage('m1', BuddyMessageRole.user, 'Hi', t0)], hasMore: false);
-    prompts.translateFails = true;
-    await open(tester);
-    await tester.pump();
-    expect(find.text('Hi'), findsOneWidget);
-    expect(find.byType(SnackBar), findsOneWidget);
   });
 
   testWidgets('no coins left -> coin shop prompt; failed message can be retried', (tester) async {
@@ -397,7 +637,7 @@ void main() {
   testWidgets('quick settings: category, language (fixed), tone, picture, name, check-ins',
       (tester) async {
     await open(tester);
-    repo.buddy.add(fakeBuddy('b1', avatar: 'av_fox'));
+    repo.buddy.add(fakeBuddy('b1', avatar: 'av_fox', chatLanguage: 'it'));
     await tester.pump();
     await tester.tap(find.byKey(const ValueKey('buddy-settings-button')));
     await tester.pumpAndSettle();
@@ -411,10 +651,11 @@ void main() {
     expect(find.text('Category'), findsOneWidget);
     expect(find.byKey(const ValueKey('buddy-clear-chat'), skipOffstage: false), findsOneWidget);
     expect(find.byKey(const ValueKey('buddy-delete'), skipOffstage: false), findsOneWidget);
-    // The chat language (translation target) is changeable, next to the fixed one.
+    // The chat language (translation target) is fixed too: read-only info.
     expect(find.byKey(const ValueKey('buddy-setting-chat-language')), findsOneWidget);
     expect(tester.widget<ListTile>(find.byKey(const ValueKey('buddy-setting-chat-language'))).onTap,
-        isNotNull);
+        isNull);
+    expect(find.text('Translated into: 🇮🇹 Italian (fixed)'), findsOneWidget);
 
     // Language: chosen at creation only, never changed (read-only).
     expect(find.text('English (fixed)'), findsOneWidget);
@@ -472,7 +713,7 @@ void main() {
     expect(observer.pushes, pushes, reason: 'Buddies have no profile page');
   });
 
-  testWidgets('paid replies: "then 1 coin = 3 replies" from the status, prepaid replies',
+  testWidgets('paid replies: "1 coin = 3 replies" from the status (no free replies), prepaid replies',
       (tester) async {
     repo.status = const BuddyStatus(
         tier: 'FREE',
@@ -490,7 +731,7 @@ void main() {
         message: 'insufficient-coins: x',
         details: const {'reason': 'insufficient-coins'}));
     await open(tester);
-    expect(find.text('No free replies left today · then 1 coin = 3 replies · 2 prepaid replies'),
+    expect(find.text('1 coin = 3 replies · 2 prepaid replies'),
         findsOneWidget);
 
     await send(tester, 'Hello');

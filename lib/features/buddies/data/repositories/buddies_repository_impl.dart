@@ -77,10 +77,16 @@ class BuddiesRepositoryImpl implements BuddiesRepository {
     required String buddyId,
     required String text,
     required String requestId,
+    bool? align,
   }) async {
     final res = await _call(
       'sendBuddyMessage',
-      {'buddyId': buddyId, 'text': text, 'requestId': requestId},
+      {
+        'buddyId': buddyId,
+        'text': text,
+        'requestId': requestId,
+        if (align != null) 'align': align,
+      },
       timeout: const Duration(seconds: 60),
     );
     return BuddySendResult.fromMap(res);

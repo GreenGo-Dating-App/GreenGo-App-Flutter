@@ -29,10 +29,14 @@ abstract class BuddiesRepository {
   Future<void> forgetMemory(String buddyId, {String? factId});
 
   /// One reply. [requestId] is reused when retrying the same message.
+  /// [align] = the chat setting "Highlight matching words": false lets the
+  /// server skip the colour pairs (`segments`) to save tokens; null = not
+  /// sent (server default).
   Future<BuddySendResult> sendMessage({
     required String buddyId,
     required String text,
     required String requestId,
+    bool? align,
   });
 
   /// The newest [limit] messages, oldest first.

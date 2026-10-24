@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/utils/language_flags.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/buddy_message.dart';
+import '../buddy_segments.dart';
 import 'buddy_avatar.dart';
 
 /// Inside a Buddy message bubble (the 1:1 chat's [MessageBubble] header):
@@ -42,6 +44,68 @@ class BuddyBubbleHeader extends StatelessWidget {
             ),
           ],
         ],
+      ),
+    );
+  }
+}
+
+/// Inside the user's own bubble, under the original text (which stays the
+/// main text and never changes): the server translation into the chat
+/// language, appended once it is known (callable result, then the stored
+/// doc). Styled like the 1:1 chat's secondary line.
+class BuddyUserTranslationLine extends StatelessWidget {
+  const BuddyUserTranslationLine({
+    required this.messageId,
+    required this.text,
+    required this.language,
+    this.showFlag = true,
+    this.matches = const <BuddySegmentMatch>[],
+    super.key,
+  });
+
+  final String messageId;
+
+  /// Matching chunks to colour in [text] (empty = plain).
+  final List<BuddySegmentMatch> matches;
+  final String text;
+
+  /// The chat language (what [text] is in).
+  final String language;
+  final bool showFlag;
+
+  @override
+  Widget build(BuildContext context) {
+    final flag = showFlag ? languageFlagEmoji(language) : '';
+    final style = TextStyle(
+      color: AppColors.deepBlack.withValues(alpha: 0.7),
+      fontSize: 13,
+      height: 1.3,
+      fontStyle: FontStyle.italic,
+    );
+    return Padding(
+      padding: const EdgeInsets.only(top: 6),
+      child: Container(
+        key: ValueKey('buddy-user-translation-$messageId'),
+        padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 8),
+        decoration: BoxDecoration(
+          color: AppColors.deepBlack.withValues(alpha: 0.08),
+          borderRadius: BorderRadius.circular(6),
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            if (flag.isNotEmpty) ...[
+              Text(flag, style: const TextStyle(fontSize: 12)),
+              const SizedBox(width: 5),
+            ],
+            Flexible(
+              child: matches.isEmpty
+                  ? Text(text, style: style)
+                  : BuddySegmentText(text: text, matches: matches, original: false, style: style),
+            ),
+          ],
+        ),
       ),
     );
   }

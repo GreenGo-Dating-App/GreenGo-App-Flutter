@@ -81,11 +81,9 @@ export function conversationBlock(b: BuddySettings): string {
   const topic = topicById(b.topic);
   const teach = (topic && TEACHING_GROUPS.has(topic.group)) || b.role === 'teacher' || b.role === 'coach';
   return [
-    'Talk like a real friend in a chat, genuinely interested in the user: ask about their life, plans, opinions and experiences, react to what they say, follow up on details, and ask one natural question at a time.',
-    teach
-      ? 'You are also their teacher for this topic: explain things simply with short examples, gently correct their mistakes (show the correct form), and now and then give a tiny exercise or challenge.'
-      : '',
-    'When it fits, mention concrete places (cities, neighbourhoods, attractions, landmarks) by their real names.',
+    'Chat like a real friend genuinely interested in the user: react, follow up, ask one natural question at a time.',
+    teach ? 'Also teach this topic: short examples, gently correct mistakes (show the right form), sometimes a tiny exercise.' : '',
+    'Name concrete places (cities, attractions) when it fits.',
   ].filter(Boolean).join('\n');
 }
 
@@ -95,10 +93,8 @@ export function conversationBlock(b: BuddySettings): string {
  */
 export function replyFormatBlock(maxChars: number): string {
   return [
-    'Answer with ONE JSON object and nothing else:',
-    '{"messages": ["your chat message"], "keywords": [{"type": "city|attraction|country", "name": "..."}]}',
-    `Almost always send exactly 1 message. Only when the answer truly cannot fit, send 2 (never more). EACH message must be complete and at most ${maxChars} characters (about 2 short sentences), no markdown. Keep it short like a real chat.`,
-    '"keywords" lists the cities, attractions and countries you mentioned (may be empty).',
+    'Reply ONLY with JSON: {"messages": ["..."], "keywords": [{"type": "city|attraction|country", "name": "..."}]}',
+    `Usually 1 message (2 only if it truly cannot fit), each complete, max ${maxChars} chars, no markdown. keywords = places you named (may be empty).`,
   ].join('\n');
 }
 

@@ -28599,6 +28599,11 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
+  String buddyRepliesPerCoin(int replies) {
+    return '1 moneda = $replies respuestas';
+  }
+
+  @override
   String buddyThenRepliesPerCoin(int replies) {
     return 'después 1 moneda = $replies respuestas';
   }
@@ -29305,4 +29310,24 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get buddyTopic_would_you_rather => '¿Qué prefieres?';
+
+  @override
+  String get buddyChatLanguagePrompt => 'Traducir este chat a';
+
+  @override
+  String get buddyChatLanguageNote =>
+      'Los mensajes se traducen una vez a este idioma. No se puede cambiar más tarde.';
+
+  @override
+  String buddyTranslatedInto(String language) {
+    return 'Traducido a: $language (fijo)';
+  }
+
+  @override
+  String get buddyChatSettingHighlightMatches =>
+      'Resaltar palabras equivalentes';
+
+  @override
+  String get buddyChatSettingHighlightMatchesDesc =>
+      'Colorea las mismas palabras en un mensaje y su traducción';
 }

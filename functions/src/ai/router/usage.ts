@@ -3,7 +3,7 @@
  * tab; owner wants to see how many translations each model makes).
  *
  *   ai_usage_stats/{yyyymmdd}_{shard}   (server-only)
- *     c.<capability>.<providerId>.{calls, items, chars, errors, fallbacks, latencyMs}
+ *     c.<capability>.<providerId>.{calls, items, chars, errors, fallbacks, latencyMs, tokensIn, tokensOut}
  *     models.<providerId> = model id at the time
  *
  * 20 random shards per day so heavy traffic never hits one document's write
@@ -29,6 +29,9 @@ export interface UsageEvent {
   /** This provider served the call because an earlier one failed. */
   fallback: boolean;
   latencyMs: number;
+  /** Provider-reported tokens (0 when the provider does not report them). */
+  tokensIn?: number;
+  tokensOut?: number;
 }
 
 export const dayKey = (d = new Date()) => d.toISOString().slice(0, 10).replace(/-/g, '');
@@ -53,6 +56,8 @@ export function recordUsage(e: UsageEvent): void {
       errors: inc(e.ok ? 0 : 1),
       fallbacks: inc(e.fallback && e.ok ? 1 : 0),
       latencyMs: inc(Math.max(0, Math.round(e.latencyMs))),
+      tokensIn: inc(Math.max(0, Math.round(e.tokensIn ?? 0))),
+      tokensOut: inc(Math.max(0, Math.round(e.tokensOut ?? 0))),
     };
     admin.firestore().collection(AI_USAGE_STATS).doc(`${day}_${shard}`).set({
       day,

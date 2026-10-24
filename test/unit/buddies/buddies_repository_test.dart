@@ -307,4 +307,69 @@ void main() {
     expect(r.charged, 'credit');
     expect(r.replyCredits, 3);
   });
+
+  test('chatLanguage: parsed from the Buddy doc, sent on create, absent on old Buddies', () async {
+    final buddies = db.collection('ai_buddies').doc('u1').collection('buddies');
+    await buddies.doc('b1').set({'name': 'Giulia', 'language': 'it', 'chatLanguage': 'pt_BR'});
+    await buddies.doc('b2').set({'name': 'Old', 'language': 'en'});
+    final list = await repo.watchBuddies('u1').first;
+    expect(list.firstWhere((b) => b.id == 'b1').settings.chatLanguage, 'pt_BR');
+    expect(list.firstWhere((b) => b.id == 'b2').settings.chatLanguage, isNull);
+
+    remote.answer = {'buddyId': 'new1'};
+    await repo.createBuddy(const BuddySettings(
+        name: 'Giulia', avatar: 'av_fox', topic: 'movies', tone: 'warm', language: 'it',
+        chatLanguage: 'pt_BR'));
+    expect((remote.calls.last.$2['settings'] as Map)['chatLanguage'], 'pt_BR');
+  });
+
+  test('messages carry the stored translation {text, lang}', () async {
+    final at = Timestamp.fromDate(DateTime(2026, 10, 1));
+    await msgs().doc('t1').set({
+      'role': 'buddy',
+      'text': 'Good morning',
+      'createdAt': at,
+      'translation': {'text': 'Buongiorno', 'lang': 'it'},
+    });
+    await msgs().doc('t2').set({'role': 'user', 'text': 'Hi', 'createdAt': at});
+    await msgs().doc('t3').set(
+        {'role': 'user', 'text': 'Hey', 'createdAt': at, 'translation': {'text': ''}});
+    final page = await repo.latestMessages('u1', 'b1');
+    final byId = {for (final m in page.messages) m.id: m};
+    expect(byId['t1']!.translation, const BuddyTranslation(text: 'Buongiorno', lang: 'it'));
+    expect(byId['t2']!.translation, isNull);
+    expect(byId['t3']!.translation, isNull, reason: 'empty translation = none');
+  });
+
+  test('sendBuddyMessage: translations aligned with replies + userTranslation', () async {
+    remote.answer = {
+      'reply': 'A\nB',
+      'replies': ['A', '  ', 'B', '{"reply": "x"}'],
+      'translations': ['A-it', 'blank-it', null, 'json-it'],
+      'userTranslation': 'Ciao',
+      'kind': 'chat',
+      'charged': 'free',
+      'freeRepliesLeft': 3,
+    };
+    final r = await repo.sendMessage(buddyId: 'b1', text: 'Hi', requestId: 'abcdefgh');
+    expect(r.userTranslation, 'Ciao');
+    // Blank bubbles and JSON-looking ones are dropped with their translation.
+    expect(r.bubblesWithTranslations, [('A', 'A-it'), ('B', null)]);
+    expect(r.bubbles, ['A', 'B']);
+
+    remote.answer = {'reply': 'Only', 'kind': 'chat', 'charged': 'free', 'freeRepliesLeft': 3};
+    final old = await repo.sendMessage(buddyId: 'b1', text: 'Hi', requestId: 'abcdefgi');
+    expect(old.userTranslation, isNull);
+    expect(old.bubblesWithTranslations, [('Only', null)]);
+  });
+
+  test('sendBuddyMessage: align is sent only when set', () async {
+    remote.answer = {'reply': 'Hi', 'kind': 'chat', 'charged': 'free', 'freeRepliesLeft': 1};
+    await repo.sendMessage(buddyId: 'b1', text: 'x', requestId: 'abcdefgh', align: false);
+    expect(remote.calls.last.$2['align'], isFalse);
+    await repo.sendMessage(buddyId: 'b1', text: 'x', requestId: 'abcdefgi', align: true);
+    expect(remote.calls.last.$2['align'], isTrue);
+    await repo.sendMessage(buddyId: 'b1', text: 'x', requestId: 'abcdefgj');
+    expect(remote.calls.last.$2.containsKey('align'), isFalse);
+  });
 }
