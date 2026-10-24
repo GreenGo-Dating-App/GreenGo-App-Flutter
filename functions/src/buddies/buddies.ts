@@ -463,7 +463,7 @@ export async function handleSendBuddyMessage(uid: string, data: any) {
     if (last?.role === 'user') {
       turns[turns.length - 1] = {
         ...last,
-        content: `${last.content}\n\n[Reply ONLY in ${LANGUAGE_NAMES[buddy.language]}, even if this message is in another language.]`,
+        content: `${last.content}\n\n[Reply ONLY in ${LANGUAGE_NAMES[buddy.language]}, every word, even if this message is in another language.]`,
       };
     }
     const d = snap.data() ?? {};
@@ -665,7 +665,8 @@ export interface AlignedSegment { s: string; t: string }
 export async function enforceBuddyLanguage(b: BuddySettings, bubbles: string[], consentVersion: number): Promise<string[]> {
   const want = baseLang(b.language);
   return Promise.all(bubbles.map(async (m) => {
-    const got = guessLanguage(m);
+    // Spanish ¡ ¿ in a non-Spanish Buddy's bubble = a mixed-in Spanish bit.
+    const got = guessLanguage(m) ?? (want !== 'es' && /[¡¿]/.test(m) ? 'es' : null);
     if (!got || got === want) return m;
     try {
       const r = await translate('translate_chat', [m], routerLang(b.language), { consentVersion }, { source: got });

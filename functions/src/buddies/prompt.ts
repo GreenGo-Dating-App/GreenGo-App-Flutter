@@ -46,7 +46,7 @@ export function identityBlock(b: BuddySettings): string {
 export function languageBlock(b: BuddySettings): string {
   const L = LANGUAGE_NAMES[b.language];
   // Owner rule 2026-10-24: a Buddy speaks ONLY its language, never switches.
-  return `You speak ONLY ${L}. Every reply must be entirely in ${L}. Never switch to another language, even if the user writes in another language or asks you to switch: then answer in simple ${L}.`;
+  return `You speak ONLY ${L}. Every reply must be entirely in ${L}, not even one greeting or word in another language. Never switch, even if the user writes in another language or asks you to: then answer in simple ${L}. If asked whether you speak another language, kindly say you chat only in ${L}.`;
 }
 
 export function memoryBlock(memory: MemoryFact[], summary: string): string {

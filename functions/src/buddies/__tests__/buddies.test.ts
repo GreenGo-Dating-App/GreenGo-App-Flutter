@@ -124,7 +124,8 @@ describe('prompts', () => {
     expect(s).toMatch(/Never claim to be human/i);
     expect(s).toMatch(/"Luna", a patient teacher/);
     expect(s).toMatch(/You speak ONLY Italian/);
-    expect(s).toMatch(/Never switch to another language/);
+    expect(s).toMatch(/Never switch, even if the user writes in another language/);
+    expect(s).toMatch(/not even one greeting or word in another language/);
     expect(s).toMatch(/CEFR A2/);
     expect(s).toMatch(/at most 200 characters/);
     expect(s).toMatch(/Training for a marathon in May/);
@@ -395,5 +396,9 @@ describe('the Buddy always answers in its own language', () => {
       ['¡Hola! Yo estoy muy bien, gracias. ¿Y tú qué tal?', 'Great, and you?'], 3);
     expect(out[0]).toMatch(/^\[→en\]/);
     expect(out[1]).toBe('Great, and you?');
+    const mixed = await enforceBuddyLanguage(settings({ language: 'en' }), ['¡De nada! Yes, Florence is lovely.'], 3);
+    expect(mixed[0]).toMatch(/^\[→en\]/);
+    const es = await enforceBuddyLanguage(settings({ language: 'es' }), ['¡Hola! ¿Qué tal?'], 3);
+    expect(es[0]).toBe('¡Hola! ¿Qué tal?');
   });
 });
