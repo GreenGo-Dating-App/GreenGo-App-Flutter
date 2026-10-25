@@ -1,6 +1,8 @@
 DATENSCHUTZERKLÄRUNG VON GREENGO
 
 Version: 5.3.2
+Entwurf für die Testversion (25. Oktober 2026): ergänzt Alibaba Cloud (Qwen);
+noch nicht veröffentlicht.
 Gültig ab: 22. Oktober 2026 für Konten, die ab dem 16. Oktober 2026 erstellt
   werden; 16. November 2026 für Konten, die vor dem 16. Oktober 2026 erstellt
   wurden
@@ -111,6 +113,10 @@ Diese Erklärung gilt auch für sie.
   Einwilligung, bevor sie zum ersten Mal deine privaten Inhalte verarbeiten
   oder von anderen Personen verfasste Inhalte automatisch übersetzen, und der
   Support-Assistent ist deutlich als KI gekennzeichnet.
+- GreenGo Buddies (KI-Chatfreunde), der KI-Coach, Chat-Übersetzungen und das
+  Vorlesen nutzen die Qwen-Modelle von Alibaba Cloud, verarbeitet in
+  Singapur, erst nachdem du der KI-Einwilligung zugestimmt hast; Google
+  dient als Ausweichlösung.
 - Du kannst dein Konto jederzeit löschen:
   - in der App;
   - auf unserer Website unter https://greengochat.com/delete-account, indem du
@@ -693,6 +699,9 @@ Transliteration von Nachrichten  | Google Gemini (kostenpflichtige | Der Nachric
 in nicht-lateinischen Schriften  | API)                            | seine Sprache
 Support-Assistent                | Anthropic Claude                | Deine Nachrichten an den
                                  |                                 | Support
+GreenGo Buddies, KI-Coach,       | Alibaba Cloud Qwen (Singapur)   | Deine Chats mit Buddies
+Chat-Übersetzung, Vorlesen       |                                 | und der Text, den du
+                                 |                                 | übersetzt oder anhörst
 Bild- und Textmoderation         | Google Cloud Vision und Natural | Hochgeladene Bilder; auf
                                  | Language                        | Sicherheit geprüfter Text
 
@@ -1023,6 +1032,8 @@ Focus NFe                        | Ausstellung brasilianischer       | Brasilien
                                  | für unsere Servicegebühr          |          |
                                  | (Abschnitt 11.6)                  |          |
 Anthropic PBC                    | KI-Support-Assistent (Claude)     | USA      | EU-SCC; ANPD-Klauseln
+Alibaba Cloud (Singapore)        | KI: Buddies, Übersetzung,         | Singapur | EU-SCC; ANPD-Klauseln
+Private Limited                  | KI-Coach, Vorlesen (Qwen)         |          |
 
 12.3 Unabhängige Unternehmen (sie entscheiden selbst, wie sie Daten verwenden)
 

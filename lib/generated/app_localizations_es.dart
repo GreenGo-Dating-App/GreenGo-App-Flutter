@@ -28416,7 +28416,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get aiConsentProvidersV3 =>
-      'Quién: los modelos Qwen de Alibaba Cloud, con procesamiento en EE. UU. (traducciones, lectura en voz alta, coach de IA y GreenGo Buddies); Google (traducción, audio y coach de IA cuando Qwen no está disponible); Anthropic Claude (asistente de soporte).';
+      'Quién: los modelos Qwen de Alibaba Cloud, con procesamiento en Singapur (traducciones, lectura en voz alta, coach de IA y GreenGo Buddies); Google (traducción, audio y coach de IA cuando Qwen no está disponible); Anthropic Claude (asistente de soporte).';
 
   @override
   String get aiConsentWhatSentV3 =>

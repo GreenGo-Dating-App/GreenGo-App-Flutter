@@ -1,6 +1,8 @@
 GREENGO PRIVACY POLICY
 
 Version: 5.3.2
+Test-build draft (25 October 2026): adds Alibaba Cloud (Qwen); not yet
+published.
 Effective date: 22 October 2026 for accounts created on or after
   16 October 2026; 16 November 2026 for accounts created before
   16 October 2026
@@ -103,6 +105,9 @@ applies to them too.
   public content. We ask for your consent before they first process your
   private content or automatically translate content written by other
   people, and the support assistant is clearly labelled as AI.
+- GreenGo Buddies (AI chat friends), the AI coach, chat translations and
+  read-aloud audio use Alibaba Cloud's Qwen models, processed in Singapore,
+  only after you accept the AI consent; Google is the fallback.
 - You can delete your account at any time:
   - in the app;
   - on our website, at https://greengochat.com/delete-account, by confirming
@@ -629,6 +634,9 @@ Read-aloud (text-to-speech)      | Google Cloud Text-to-Speech     | The text to
 Transliteration of messages in   | Google Gemini (paid API)        | The message text and its
 non-Latin scripts                |                                 | language
 Support assistant                | Anthropic Claude                | Your messages to support
+GreenGo Buddies, AI coach, chat  | Alibaba Cloud Qwen (Singapore)  | Your chats with Buddies
+translation, read-aloud          |                                 | and the text you
+                                 |                                 | translate or listen to
 Image and text moderation        | Google Cloud Vision and Natural | Uploaded images; text
                                  | Language                        | checked for safety
 
@@ -919,6 +927,8 @@ Focus NFe                        | Issuing Brazilian service         | Brazil   
                                  | invoices (NFS-e) for our service  |          |
                                  | fee (section 11.6)                |          |
 Anthropic PBC                    | AI support assistant (Claude)     | USA      | EU SCCs; ANPD clauses
+Alibaba Cloud (Singapore)        | AI: Buddies, translation, AI      | Singapore | EU SCCs; ANPD clauses
+Private Limited                  | coach, read-aloud (Qwen)          |          |
 
 12.3 Independent companies (they decide how they use data)
 

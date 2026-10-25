@@ -92,7 +92,7 @@ The test project uses the project-level roles without a condition.
   ```
 
 ## Production rollout (NOT done; needs the owner's OK)
-1. Get legal approval for AI notice v3: the in-app texts `aiConsent*V3` and the Privacy Policy, naming Alibaba Cloud and processing in the USA.
+1. Get legal approval for AI notice v3: the in-app texts `aiConsent*V3` and the Privacy Policy, naming Alibaba Cloud and processing in Singapore (dashscope-intl.aliyuncs.com is the Singapore region).
 2. Run the IAM commands above on `greengo-chat`.
 3. Deploy the functions by name: `adminAi`, `aiAssist`, `synthesizeSpeech`, `translatePrivateText`, `translateMessage`, `batchTranslateMessages`, `translateTexts`, `translateCommunityTips`. Deploy the rules too.
 4. Deploy the admin panel. Then, in *AI Providers*: set the DashScope key, **Load Qwen preset**, and **Test** each provider.

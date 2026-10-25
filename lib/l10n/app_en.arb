@@ -18102,7 +18102,7 @@
   "@aiConsentIntroV3": {
     "description": "AI consent sheet v3: which features send text to AI providers"
   },
-  "aiConsentProvidersV3": "Who: Alibaba Cloud Qwen models, processed in the USA (translations, read-aloud audio, AI coach and GreenGo Buddies); Google (translation, audio and AI coach when Qwen is unavailable); Anthropic Claude (support assistant).",
+  "aiConsentProvidersV3": "Who: Alibaba Cloud Qwen models, processed in Singapore (translations, read-aloud audio, AI coach and GreenGo Buddies); Google (translation, audio and AI coach when Qwen is unavailable); Anthropic Claude (support assistant).",
   "@aiConsentProvidersV3": {
     "description": "AI consent sheet v3: provider list (Alibaba Cloud Qwen, Google, Anthropic)"
   },

@@ -1,6 +1,8 @@
 POLÍTICA DE PRIVACIDADE DO GREENGO
 
 Versão: 5.3.2
+Rascunho para a versão de teste (25 de outubro de 2026): acrescenta a Alibaba
+Cloud (Qwen); ainda não publicado.
 Data de entrada em vigor: 22 de outubro de 2026 para as contas criadas a partir
   de 16 de outubro de 2026; 16 de novembro de 2026 para as contas criadas
   antes de 16 de outubro de 2026
@@ -114,6 +116,10 @@ partilhada (secção 11.7). Esta política também se aplica a essas pessoas.
   consentimento antes de tratarem pela primeira vez o seu conteúdo privado ou de
   traduzirem automaticamente conteúdo escrito por outras pessoas, e o assistente
   de apoio está claramente identificado como IA.
+- Os GreenGo Buddies (amigos de conversa com IA), o treinador de IA, as
+  traduções das conversas e a leitura em voz alta usam os modelos Qwen da
+  Alibaba Cloud, com processamento em Singapura, só depois de aceitares o
+  consentimento de IA; a Google é a alternativa.
 - Pode eliminar a sua conta a qualquer momento:
   - na aplicação;
   - no nosso website, em https://greengochat.com/delete-account, confirmando
@@ -689,6 +695,9 @@ fala)                            |                                 |
 Transliteração de mensagens em   | Google Gemini (API paga)        | O texto da mensagem e o
 alfabetos não latinos            |                                 | respetivo idioma
 Assistente de apoio              | Anthropic Claude                | As suas mensagens ao apoio
+GreenGo Buddies, treinador de    | Alibaba Cloud Qwen (Singapura)  | As tuas conversas com os
+IA, tradução das conversas,      |                                 | Buddies e o texto que
+leitura em voz alta              |                                 | traduzes ou ouves
 Moderação de imagens e texto     | Google Cloud Vision e Natural   | Imagens carregadas; texto
                                  | Language                        | verificado por segurança
 
@@ -1015,6 +1024,8 @@ Focus NFe                        | Emissão de faturas brasileiras    | Brasil  
                                  | taxa de serviço (secção 11.6)     |          |
 Anthropic PBC                    | Assistente de apoio com IA        | EUA      | Cláusulas-tipo da UE; cláusulas
                                  | (Claude)                          |          | ANPD
+Alibaba Cloud (Singapore)        | IA: Buddies, tradução, treinador  | Singapura | Cláusulas-tipo da UE; cláusulas
+Private Limited                  | de IA, leitura em voz alta (Qwen) |          | da ANPD
 
 12.3 Empresas independentes (decidem como utilizam os dados)
 

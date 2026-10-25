@@ -28395,7 +28395,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get aiConsentProvidersV3 =>
-      'Quem: os modelos Qwen da Alibaba Cloud, com processamento nos EUA (traduções, leitura em voz alta, treinador de IA e GreenGo Buddies); Google (tradução, áudio e treinador de IA quando o Qwen não está disponível); Anthropic Claude (assistente de apoio).';
+      'Quem: os modelos Qwen da Alibaba Cloud, com processamento em Singapura (traduções, leitura em voz alta, treinador de IA e GreenGo Buddies); Google (tradução, áudio e treinador de IA quando o Qwen não está disponível); Anthropic Claude (assistente de apoio).';
 
   @override
   String get aiConsentWhatSentV3 =>
@@ -57784,7 +57784,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get aiConsentProvidersV3 =>
-      'Quem: os modelos Qwen da Alibaba Cloud, com processamento nos EUA (traduções, leitura em voz alta, coach de IA e GreenGo Buddies); Google (tradução, áudio e coach de IA quando o Qwen não está disponível); Anthropic Claude (assistente de suporte).';
+      'Quem: os modelos Qwen da Alibaba Cloud, com processamento em Singapura (traduções, leitura em voz alta, coach de IA e GreenGo Buddies); Google (tradução, áudio e coach de IA quando o Qwen não está disponível); Anthropic Claude (assistente de suporte).';
 
   @override
   String get aiConsentWhatSentV3 =>

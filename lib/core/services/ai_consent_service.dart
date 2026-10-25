@@ -12,6 +12,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 /// for the support assistant): Apple 5.1.2(i), EU AI Act art. 50, audit H-17.
 /// Version 2 (legal audit 2026-10) added Anthropic to the notice; the support
 /// assistant requires a version-2 acceptance on the server.
+/// Version 3 adds Alibaba Cloud (Qwen, Singapore) for translation, audio, the
+/// AI coach and GreenGo Buddies; Qwen is used only after a version-3 acceptance.
 enum AiConsentStatus { unknown, granted, declined }
 
 /// Where the decision is kept on this device (per user).
@@ -95,7 +97,7 @@ class AiConsentService {
   /// Bump when the consent text changes materially: everyone is asked again.
   /// 2: Anthropic (support assistant) named in the notice (legal audit
   /// 2026-10). Everyone who accepted version 1 is asked again.
-  /// 3: Alibaba Cloud (Qwen, processed in the USA) and GreenGo Buddies named
+  /// 3: Alibaba Cloud (Qwen, processed in Singapore: dashscope-intl) and GreenGo Buddies named
   /// (2026-10-23, DRAFT wording pending legal review). The server only routes
   /// a user's text to Qwen after a version-3 acceptance.
   static const int currentVersion = 3;

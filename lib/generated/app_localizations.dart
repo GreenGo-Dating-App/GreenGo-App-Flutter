@@ -48061,7 +48061,7 @@ abstract class AppLocalizations {
   /// AI consent sheet v3: provider list (Alibaba Cloud Qwen, Google, Anthropic)
   ///
   /// In en, this message translates to:
-  /// **'Who: Alibaba Cloud Qwen models, processed in the USA (translations, read-aloud audio, AI coach and GreenGo Buddies); Google (translation, audio and AI coach when Qwen is unavailable); Anthropic Claude (support assistant).'**
+  /// **'Who: Alibaba Cloud Qwen models, processed in Singapore (translations, read-aloud audio, AI coach and GreenGo Buddies); Google (translation, audio and AI coach when Qwen is unavailable); Anthropic Claude (support assistant).'**
   String get aiConsentProvidersV3;
 
   /// AI consent sheet v3: what is sent (incl. GreenGo Buddies chats)
