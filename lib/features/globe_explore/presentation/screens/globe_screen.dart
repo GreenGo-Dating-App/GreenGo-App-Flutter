@@ -569,6 +569,7 @@ class _GlobeScreenState extends State<GlobeScreen> {
     String countryName,
     List<GlobeUser> matches,
   ) {
+    final large = MediaQuery.sizeOf(context).width >= 1100;
     showModalBottomSheet(
       context: context,
       backgroundColor: AppColors.backgroundDark,
@@ -577,9 +578,11 @@ class _GlobeScreenState extends State<GlobeScreen> {
       ),
       isScrollControlled: true,
       builder: (ctx) => DraggableScrollableSheet(
-        initialChildSize: 0.45,
-        minChildSize: 0.25,
-        maxChildSize: 0.85,
+        // Large screens (web / desktop): a taller window from the start
+        // (owner 2026-10-25); phones keep the half-height sheet.
+        initialChildSize: large ? 0.85 : 0.45,
+        minChildSize: large ? 0.5 : 0.25,
+        maxChildSize: large ? 0.95 : 0.85,
         expand: false,
         builder: (ctx, scrollController) => Column(
           children: [

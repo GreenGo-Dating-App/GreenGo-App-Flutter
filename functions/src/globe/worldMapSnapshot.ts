@@ -7,7 +7,8 @@
  * on the server with the SAME rules as the app's client assembler
  * (lib/features/globe_explore/data/network_pin_assembler.dart, 5.0.41):
  *
- *  * relations: following (newest 300), followers (newest 300), partners of
+ *  * relations: following (newest 300 people + EVERY followed store, up to
+ *    STORES_CAP - owner 2026-10-25), followers (newest 300), partners of
  *    the 300 most recent 1:1 chats with a message; one pin per account with
  *    all its badges;
  *  * the user, accounts blocked by the user AND accounts that blocked the
@@ -50,6 +51,8 @@ export const WORLD_MAP_REBUILD_TOPIC = 'world-map-snapshot-rebuild';
 export const SNAPSHOT_SCHEMA = 1;
 
 export const FOLLOWING_CAP = 300;
+/** Followed stores (the mirror's isStore edges), counted apart from people. */
+export const STORES_CAP = 500;
 export const FOLLOWERS_CAP = 300;
 export const CHATS_CAP = 300;
 export const BLOCKS_CAP = 1000;
@@ -345,7 +348,10 @@ export function assemblePins(input: SnapshotInputs, rng: Rng = Math.random, nowM
     s.add(b);
   };
   for (const c of input.chats.slice(0, CHATS_CAP)) add(c, 'chat');
-  for (const e of input.following.slice(0, FOLLOWING_CAP)) {
+  let people = 0;
+  let stores = 0;
+  for (const e of input.following) {
+    if (e.isStore ? stores++ >= STORES_CAP : people++ >= FOLLOWING_CAP) continue;
     add(e.id, 'following');
     if (e.isStore) storeFlag.add(e.id);
   }
@@ -389,7 +395,8 @@ export function countsOf(pins: WorldMapPin[], input: SnapshotInputs): SnapshotCo
     pins: pins.length,
     people: pins.filter((p) => p.kind === 'person').length,
     businesses: pins.filter((p) => p.kind === 'business').length,
-    following: Math.min(input.following.length, FOLLOWING_CAP),
+    following: Math.min(input.following.filter((e) => !e.isStore).length, FOLLOWING_CAP)
+      + Math.min(input.following.filter((e) => e.isStore).length, STORES_CAP),
     followers: Math.min(input.followers.length, FOLLOWERS_CAP),
     chats: Math.min(input.chats.length, CHATS_CAP),
   };
@@ -480,10 +487,18 @@ export class FirestoreSnapshotReader implements SnapshotReader {
       .then(async (docs) => docs ?? (await safe(async () => (await col.limit(cap).select('isStore').get()).docs, [])));
   }
 
+  /** Newest [FOLLOWING_CAP] edges, then every followed store not among them
+   *  (isStore == true, automatic single-field index, up to [STORES_CAP]). */
   async following(uid: string): Promise<FollowEdge[]> {
-    const docs = await this.newest(
-      this.db.collection('user_business_following').doc(uid).collection('businesses'), FOLLOWING_CAP);
-    return docs.map((d) => ({ id: d.id, isStore: d.get('isStore') === true }));
+    const col = this.db.collection('user_business_following').doc(uid).collection('businesses');
+    const [docs, storeDocs] = await Promise.all([
+      this.newest(col, FOLLOWING_CAP),
+      safe(async () => (await col.where('isStore', '==', true).limit(STORES_CAP).select('isStore').get()).docs, []),
+    ]);
+    const out = docs.map((d) => ({ id: d.id, isStore: d.get('isStore') === true }));
+    const seen = new Set(out.map((e) => e.id));
+    for (const d of storeDocs) if (!seen.has(d.id)) out.push({ id: d.id, isStore: true });
+    return out;
   }
 
   async followers(uid: string): Promise<string[]> {
@@ -546,7 +561,7 @@ export async function buildSnapshot(
   ]);
   const ids = new Set<string>([
     ...chats.slice(0, CHATS_CAP),
-    ...following.slice(0, FOLLOWING_CAP).map((e) => e.id),
+    ...following.slice(0, FOLLOWING_CAP + STORES_CAP).map((e) => e.id),
     ...followers.slice(0, FOLLOWERS_CAP),
   ]);
   ids.delete(uid);

@@ -126,6 +126,21 @@ void main() {
           isFalse);
       expect(pins.any((p) => p.userId == 'f0'), isTrue);
     });
+
+    test('every followed store is pinned, also past the newest follows', () {
+      final people = [
+        for (var i = 0; i < kGlobeFollowingCap + 50; i++) (id: 'p$i', isStore: false)
+      ];
+      final stores = [for (var i = 0; i < 20; i++) (id: 's$i', isStore: true)];
+      final pins = _assemble(
+        following: [...people, ...stores],
+        profiles: {
+          for (final e in [...people, ...stores]) e.id: _person(),
+        },
+      );
+      expect(pins.where((p) => p.userId.startsWith('s')), hasLength(20));
+      expect(pins.where((p) => p.userId.startsWith('p')), hasLength(kGlobeFollowingCap));
+    });
   });
 
   group('privacy of people', () {

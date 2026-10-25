@@ -10,6 +10,11 @@ import 'models/globe_user_model.dart';
 /// Caps of the network map reads (newest / most recent first). Bounded so a
 /// popular account never pulls its whole graph on every open.
 const int kGlobeFollowingCap = 300;
+
+/// Followed stores (the mirror's `isStore` edges), counted apart from people
+/// so EVERY followed store is on the map (owner 2026-10-25). Server twin:
+/// STORES_CAP in functions/src/globe/worldMapSnapshot.ts.
+const int kGlobeStoresCap = 500;
 const int kGlobeFollowersCap = 300;
 const int kGlobeChatsCap = 300;
 
@@ -22,7 +27,8 @@ typedef GlobeFollowEdge = ({String id, bool isStore});
 ///  * one pin per account; an account in several groups carries all of its
 ///    [GlobeRelation]s (badges), never a second pin;
 ///  * each group is capped ([kGlobeFollowingCap], [kGlobeFollowersCap],
-///    [kGlobeChatsCap]) in the order given (newest first);
+///    [kGlobeChatsCap]) in the order given (newest first); followed stores
+///    have their own cap ([kGlobeStoresCap]);
 ///  * the user, blocked accounts and accounts without a profile are skipped;
 ///  * BUSINESS accounts (`isBusiness`, or the follow mirror's `isStore`) are
 ///    pinned at their public business address with the business picture and
@@ -50,7 +56,12 @@ List<GlobeUser> assembleNetworkPins({
   for (final c in chats.take(kGlobeChatsCap)) {
     add(c, GlobeRelation.chatted);
   }
-  for (final e in following.take(kGlobeFollowingCap)) {
+  var people = 0;
+  var stores = 0;
+  for (final e in following) {
+    if (e.isStore ? stores++ >= kGlobeStoresCap : people++ >= kGlobeFollowingCap) {
+      continue;
+    }
     add(e.id, GlobeRelation.following);
     if (e.isStore) storeFlag.add(e.id);
   }

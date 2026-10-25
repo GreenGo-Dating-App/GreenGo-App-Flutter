@@ -10,6 +10,7 @@ import {
   CHATS_CAP,
   FOLLOWERS_CAP,
   FOLLOWING_CAP,
+  STORES_CAP,
   INLINE_BUDGET_BYTES,
   MAX_PINS,
   ACTIVE_WINDOW_MS,
@@ -146,6 +147,20 @@ describe('caps', () => {
     expect(pins.some((x) => x.id === `f${FOLLOWING_CAP}`)).toBe(false);
     expect(pins.some((x) => x.id === `f${FOLLOWING_CAP - 1}`)).toBe(true);
     expect(new Set(pins.map((x) => x.id)).size).toBe(pins.length);
+  });
+
+  test('every followed store is pinned, even past the 300 newest follows (owner 2026-10-25)', () => {
+    const people = Array.from({ length: FOLLOWING_CAP + 50 }, (_, i) => ({ id: `f${i}`, isStore: false }));
+    const stores = Array.from({ length: 20 }, (_, i) => ({ id: `s${i}`, isStore: true }));
+    const profiles: Record<string, any> = {};
+    [...people, ...stores].forEach((e) => { profiles[e.id] = p; });
+    const pins = assemblePins({ userId: 'me', following: [...people, ...stores], followers: [], chats: [], profiles, blocked: new Set() }, rngOf(5));
+    expect(pins.filter((x) => x.id.startsWith('s'))).toHaveLength(20);
+    expect(pins.filter((x) => x.id.startsWith('f'))).toHaveLength(FOLLOWING_CAP);
+    const many = Array.from({ length: STORES_CAP + 5 }, (_, i) => ({ id: `t${i}`, isStore: true }));
+    many.forEach((e) => { profiles[e.id] = p; });
+    const capped = assemblePins({ userId: 'me', following: many, followers: [], chats: [], profiles, blocked: new Set() }, rngOf(6));
+    expect(capped).toHaveLength(STORES_CAP);
   });
 
   test('same accounts in all groups -> one pin with all badges', () => {

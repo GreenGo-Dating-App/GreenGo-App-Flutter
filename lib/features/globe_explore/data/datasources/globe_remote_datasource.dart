@@ -144,6 +144,14 @@ class GlobeRemoteDataSourceImpl implements GlobeRemoteDataSource {
               .collection('followers'),
           kGlobeFollowersCap),
       _recentChats(userId),
+      // Every followed store, also those older than the newest follows.
+      _safe(firestore
+          .collection('user_business_following')
+          .doc(userId)
+          .collection('businesses')
+          .where('isStore', isEqualTo: true)
+          .limit(kGlobeStoresCap)
+          .get()),
     ]);
 
     final currentUser = results[0]! as GlobeUser;
@@ -162,6 +170,11 @@ class GlobeRemoteDataSourceImpl implements GlobeRemoteDataSource {
       for (final d in followingDocs)
         (id: d.id, isStore: d.data()['isStore'] == true),
     ];
+    final seen = {for (final e in following) e.id};
+    for (final d in (results[5] as QuerySnapshot<Map<String, dynamic>>?)?.docs ??
+        const <QueryDocumentSnapshot<Map<String, dynamic>>>[]) {
+      if (seen.add(d.id)) following.add((id: d.id, isStore: true));
+    }
     final followers = [for (final d in followerDocs) d.id];
 
     final ids = <String>{

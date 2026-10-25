@@ -210,7 +210,9 @@ class _BusinessCenterScreenState extends State<BusinessCenterScreen> {
           bottom: TabBar(
             key: const ValueKey('bc-tabs'),
             isScrollable: true,
-            tabAlignment: TabAlignment.start,
+            // Centred when the tabs fit (owner 2026-10-25); still scrolls on
+            // narrow screens.
+            tabAlignment: TabAlignment.center,
             indicatorColor: AppColors.richGold,
             labelColor: AppColors.richGold,
             unselectedLabelColor: AppColors.textSecondary,
