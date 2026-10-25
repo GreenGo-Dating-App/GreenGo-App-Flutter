@@ -120,13 +120,13 @@ bool isBaseMembershipActiveFromDoc(Map<String, dynamic>? data,
 /// `createTicketCheckout` / `createBooking`, functions/src/shared/participation.ts).
 const String kBaseMembershipRequiredCode = 'base_membership_required';
 
-/// Owner rule (2026-10-11): joining events (going / waitlist / tickets) and
-/// booking experiences needs the Base membership; an active paid tier or TEST
-/// counts too. THE same predicate as 1:1 chat ([isBaseMembershipActive]),
-/// mirrored by `canParticipate()` in the Firestore rules and `hasBaseAccess()`
-/// on the server. For a [Profile] use `BaseMembershipGate.canParticipate`.
-bool canParticipateFromDoc(Map<String, dynamic>? data, {DateTime? now}) =>
-    isBaseMembershipActiveFromDoc(data, now: now);
+/// Owner rule (2026-10-25, replaces the Base-only rule of 2026-10-11): the
+/// free version may join events (going / waitlist / tickets) and book
+/// experiences too, so any existing account may participate. Mirrored by
+/// `canParticipate()` in the Firestore rules and on the server
+/// (functions/src/shared/participation.ts). For a [Profile] use
+/// `BaseMembershipGate.canParticipate`.
+bool canParticipateFromDoc(Map<String, dynamic>? data, {DateTime? now}) => data != null;
 
 /// The next instant (strictly after [now]) at which the effective tier or the
 /// Base membership of this user changes on its own — i.e. the soonest future

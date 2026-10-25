@@ -10444,7 +10444,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get guideMembershipItem1 =>
-      'Il tuo abbonamento base ti dà accesso a tutte le funzioni principali: chat, connessioni, partecipazione agli eventi e prenotazione di esperienze.';
+      'Con l\'abbonamento base chatti con tutti, crei i tuoi eventi ed esperienze e ricevi monete ogni mese. Partecipare agli eventi e prenotare esperienze è gratis per tutti.';
 
   @override
   String get guideMembershipItem2 =>
@@ -24788,7 +24788,14 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String freeChatLimitBody(int limit) {
-    return 'Senza abbonamento puoi chattare con $limit persone al giorno. Attiva l\'abbonamento base per chattare con tutti, partecipare agli eventi e prenotare esperienze.';
+    String _temp0 = intl.Intl.pluralLogic(
+      limit,
+      locale: localeName,
+      other:
+          'Senza abbonamento puoi chattare con $limit persone nuove al giorno.',
+      one: 'Senza abbonamento puoi chattare con 1 persona nuova al giorno.',
+    );
+    return '$_temp0 Attiva l\'abbonamento base per chattare con tutti.';
   }
 
   @override
@@ -24834,7 +24841,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get createNeedsPlanBody =>
-      'Per creare eventi ed esperienze serve l\'abbonamento base (oppure Silver, Gold o Platinum). Senza abbonamento puoi esplorare e chattare con 3 persone al giorno.';
+      'Per creare eventi ed esperienze serve l\'abbonamento base (oppure Silver, Gold o Platinum). Senza abbonamento puoi esplorare, partecipare agli eventi, prenotare esperienze e chattare con 1 persona al giorno.';
 
   @override
   String get calViewMonth => 'Mese';

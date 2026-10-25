@@ -10499,7 +10499,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get guideMembershipItem1 =>
-      'Ton abonnement de base te donne accès à toutes les fonctionnalités principales : discuter, te connecter, participer à des événements et réserver des expériences.';
+      'Avec l\'abonnement de base, tu discutes avec tout le monde, tu crées tes propres événements et expériences et tu reçois des pièces chaque mois. Participer à des événements et réserver des expériences est gratuit pour tous.';
 
   @override
   String get guideMembershipItem2 =>
@@ -24900,7 +24900,15 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String freeChatLimitBody(int limit) {
-    return 'Sans abonnement, tu peux discuter avec $limit personnes par jour. Prends l\'abonnement de base pour discuter avec tout le monde, participer à des événements et réserver des expériences.';
+    String _temp0 = intl.Intl.pluralLogic(
+      limit,
+      locale: localeName,
+      other:
+          'Sans abonnement, tu peux discuter avec $limit nouvelles personnes par jour.',
+      one:
+          'Sans abonnement, tu peux discuter avec 1 nouvelle personne par jour.',
+    );
+    return '$_temp0 Prends l\'abonnement de base pour discuter avec tout le monde.';
   }
 
   @override
@@ -24947,7 +24955,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get createNeedsPlanBody =>
-      'Pour créer des événements et des expériences, il te faut l\'abonnement de base (ou Silver, Gold ou Platinum). Sans abonnement, tu peux explorer et discuter avec 3 personnes par jour.';
+      'Pour créer des événements et des expériences, il te faut l\'abonnement de base (ou Silver, Gold ou Platinum). Sans abonnement, tu peux explorer, participer à des événements, réserver des expériences et discuter avec 1 personne par jour.';
 
   @override
   String get calViewMonth => 'Mois';

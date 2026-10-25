@@ -157,21 +157,22 @@ service cloud.firestore {
     function canChat(uid) {
       return baseAccess(uid);
     }
-    // Free chats without Base (owner rule 2026-10-13): 3 people per UTC day.
+    // Free chats without Base (owner rule 2026-10-25): 1 person per UTC day.
     // The claimFreeChat callable (functions/src/entitlements/freeChat.ts)
     // adds the conversation to today's list; posting is allowed only in a
-    // conversation on that list. Joining events / booking stays Base-only.
+    // conversation on that list.
     function freeChatOk(uid, cid) {
       return exists(usagePath(uid))
         && get(usagePath(uid)).data.get('freeChatDayStartMs', 0) + 86400000
              > request.time.toMillis()
         && cid in get(usagePath(uid)).data.get('freeChatConvs', []);
     }
-    // "Base membership required to participate" (owner rule 2026-10-11):
-    // going / waitlist on someone else's event, booking consents. Server
-    // callables use functions/src/shared/participation.ts.
+    // Participation (owner rule 2026-10-25, was Base-only since 2026-10-11):
+    // the free version may join events (going / waitlist) and book
+    // experiences too; any existing account, with the verified phone for the
+    // signed-in user. Server callables use functions/src/shared/participation.ts.
     function canParticipate(uid) {
-      return baseAccess(uid) && (uid != request.auth.uid || phoneOk());
+      return exists(profilePath(uid)) && (uid != request.auth.uid || phoneOk());
     }
     // Mandatory verified phone (owner rule 2026-10-17): the Firebase Auth
     // ID-token claim phone_number exists once an SMS-verified phone
@@ -2812,9 +2813,9 @@ service cloud.firestore {
         // On a paid event nobody admits THEMSELVES: 'going' (or a waitlist
         // place) comes only with a confirmed ticket. The organizer may still
         // add people to the roster (comps) - they get no paid ticket / QR.
-        // Owner rule (2026-10-11): becoming 'going' / 'waitlist' (any status
-        // other than 'interested' / 'notGoing') needs Base or an active paid
-        // tier. Organizers / co-owners are exempt (their own event: their own
+        // Becoming 'going' / 'waitlist' (any status other than 'interested' /
+        // 'notGoing') needs canParticipate (owner rule 2026-10-25: any account
+        // with a profile, free version included). Organizers / co-owners are exempt (their own event: their own
         // attendance and comps). A status that does not CHANGE is not a new
         // participation: existing attendees keep their place and may still
         // edit their privacy flags.

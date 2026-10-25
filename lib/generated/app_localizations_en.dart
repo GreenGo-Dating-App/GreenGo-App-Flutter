@@ -10335,7 +10335,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get guideMembershipItem1 =>
-      'Your Base membership gives you access to all core features: chatting, connecting, joining events and booking experiences.';
+      'Your Base membership lets you chat with everyone, create your own events and experiences and get monthly coins. Joining events and booking experiences is free for everyone.';
 
   @override
   String get guideMembershipItem2 =>
@@ -24526,7 +24526,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String freeChatLimitBody(int limit) {
-    return 'Without a membership you can chat with $limit people a day. Get the Base membership to chat with everyone, join events and book experiences.';
+    String _temp0 = intl.Intl.pluralLogic(
+      limit,
+      locale: localeName,
+      other: 'Without a membership you can chat with $limit new people a day.',
+      one: 'Without a membership you can chat with 1 new person a day.',
+    );
+    return '$_temp0 Get the Base membership to chat with everyone.';
   }
 
   @override
@@ -24572,7 +24578,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get createNeedsPlanBody =>
-      'Creating events and experiences needs the Base membership (or Silver, Gold or Platinum). Without a plan you can browse and chat with 3 people a day.';
+      'Creating events and experiences needs the Base membership (or Silver, Gold or Platinum). Without a plan you can browse, join events, book experiences and chat with 1 person a day.';
 
   @override
   String get calViewMonth => 'Month';

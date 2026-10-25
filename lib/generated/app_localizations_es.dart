@@ -10455,7 +10455,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get guideMembershipItem1 =>
-      'Tu membresía base te da acceso a todas las funciones principales: chatear, conectar, unirte a eventos y reservar experiencias.';
+      'Con la membresía base chateas con todos, creas tus propios eventos y experiencias y recibes monedas cada mes. Unirse a eventos y reservar experiencias es gratis para todos.';
 
   @override
   String get guideMembershipItem2 =>
@@ -24759,7 +24759,13 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String freeChatLimitBody(int limit) {
-    return 'Sin membresía puedes chatear con $limit personas al día. Obtén la membresía base para chatear con todos, unirte a eventos y reservar experiencias.';
+    String _temp0 = intl.Intl.pluralLogic(
+      limit,
+      locale: localeName,
+      other: 'Sin membresía puedes chatear con $limit personas nuevas al día.',
+      one: 'Sin membresía puedes chatear con 1 persona nueva al día.',
+    );
+    return '$_temp0 Obtén la membresía base para chatear con todos.';
   }
 
   @override
@@ -24806,7 +24812,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get createNeedsPlanBody =>
-      'Para crear eventos y experiencias necesitas la membresía base (o Silver, Gold o Platinum). Sin plan puedes explorar y chatear con 3 personas al día.';
+      'Para crear eventos y experiencias necesitas la membresía base (o Silver, Gold o Platinum). Sin plan puedes explorar, unirte a eventos, reservar experiencias y chatear con 1 persona al día.';
 
   @override
   String get calViewMonth => 'Mes';

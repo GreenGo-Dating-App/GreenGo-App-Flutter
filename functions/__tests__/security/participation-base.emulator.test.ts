@@ -1,15 +1,11 @@
 /**
- * Owner rule (2026-10-11): "to participate in an event or experience, the
- * user must have the Base membership". An ACTIVE Silver / Gold / Platinum
- * (or TEST) counts too - the same "Base or better" rule as 1:1 messaging
- * (P-H2): rules baseAccess() / canParticipate(), server hasBaseAccess() +
- * shared/participation.ts, app Profile.isBaseMembershipActive.
- *
- * Gated: RSVP going / waitlist on someone else's event (client write),
- * waitlist promotion into a seat, booking consents, createTicketCheckout
- * (events), createBooking (experiences, free ones included).
- * NOT gated: 'interested', cancelling, organizers on their own event (own
- * attendance + comps), existing attendees editing their RSVP flags.
+ * Owner rule (2026-10-25, replaces the Base-only rule of 2026-10-11): the
+ * FREE version may participate in events and experiences too. Any existing
+ * account (with the verified phone) may RSVP going / waitlist, be promoted
+ * from the waitlist, record a booking consent, claim tickets
+ * (createTicketCheckout) and book experiences (createBooking). An account
+ * without a profile is still refused. Rules canParticipate(), server
+ * shared/participation.ts, app BaseMembershipGate.canParticipate.
  *
  *   firebase emulators:exec --config ../firebase.emulators.<you>.json \
  *     --only firestore,auth,storage --project test-project \
@@ -131,25 +127,26 @@ beforeEach(seed);
 afterAll(() => fft.cleanup());
 
 describe('server helper = rules predicate', () => {
-  test('hasBaseAccess / canParticipate per profile', () => {
-    for (const uid of ELIGIBLE) expect([uid, canParticipate(PROFILES[uid])]).toEqual([uid, true]);
-    for (const uid of INELIGIBLE) expect([uid, canParticipate(PROFILES[uid])]).toEqual([uid, false]);
-    expect(hasBaseAccess(null)).toBe(false);
+  test('canParticipate: every existing account; Base access unchanged', () => {
+    for (const uid of [...ELIGIBLE, ...INELIGIBLE]) expect([uid, canParticipate(PROFILES[uid])]).toEqual([uid, true]);
+    expect(canParticipate(null)).toBe(false);
+    for (const uid of INELIGIBLE) expect([uid, hasBaseAccess(PROFILES[uid])]).toEqual([uid, false]);
   });
 });
 
 describe('firestore rules: events/{id}/attendees', () => {
-  test('free / expired users cannot go or join the waitlist; interested is still allowed', async () => {
+  test('free / expired users can go and join the waitlist (owner rule 2026-10-25)', async () => {
     for (const uid of INELIGIBLE) {
-      expect([uid, await rsvp(uid, 'going')]).toEqual([uid, 403]);
-      expect([uid, await rsvp(uid, 'waitlist')]).toEqual([uid, 403]);
       expect([uid, await rsvp(uid, 'interested')]).toEqual([uid, 200]);
-      // ...and cannot upgrade an existing 'interested' RSVP either
-      expect([uid, await clientWrite(uid, `events/ev1/attendees/${uid}`, { status: 'going' }, ['status'])]).toEqual([uid, 403]);
-      // unknown statuses fail closed
-      expect([uid, await rsvp(uid, 'attending')]).toEqual([uid, 403]);
+      // ...and can upgrade an 'interested' RSVP
+      expect([uid, await clientWrite(uid, `events/ev1/attendees/${uid}`, { status: 'going' }, ['status'])]).toEqual([uid, 200]);
+      expect([uid, await rsvp(uid, 'waitlist')]).toEqual([uid, 200]);
       expect([uid, await rsvp(uid, 'notGoing')]).toEqual([uid, 200]);
     }
+  });
+
+  test('an account without a profile still cannot go', async () => {
+    expect(await rsvp('ghost01', 'going')).toBe(403);
   });
 
   test('Base, Silver, Gold, Platinum and TEST can go and join the waitlist', async () => {
@@ -177,18 +174,16 @@ describe('firestore rules: events/{id}/attendees', () => {
     expect(await clientWrite(FREE, 'events/ev1', { attendeeCount: 0 }, ['attendeeCount'])).toBe(200);
   });
 
-  test('waitlist promotion only promotes eligible users', async () => {
+  test('waitlist promotion promotes free users too', async () => {
     await db.doc(`events/ev1/attendees/${FREE}`).set({ userId: FREE, status: 'waitlist' });
     await db.doc(`events/ev1/attendees/${BASE}`).set({ userId: BASE, status: 'waitlist' });
-    expect(await clientWrite(STRANGER, `events/ev1/attendees/${FREE}`, { status: 'going' }, ['status'])).toBe(403);
-    // nor can the waitlisted free user promote themselves
-    expect(await clientWrite(FREE, `events/ev1/attendees/${FREE}`, { status: 'going' }, ['status'])).toBe(403);
+    expect(await clientWrite(STRANGER, `events/ev1/attendees/${FREE}`, { status: 'going' }, ['status'])).toBe(200);
     expect(await clientWrite(STRANGER, `events/ev1/attendees/${BASE}`, { status: 'going' }, ['status'])).toBe(200);
   });
 });
 
 describe('firestore rules: experience booking consents', () => {
-  test('free user cannot record a booking consent; Base can', async () => {
+  test('free and paid users can record a booking consent', async () => {
     await db.doc('user_experiences/x1').set({ hostId: ORG, status: 'published', title: 'Walk' });
     const consent = (uid: string) => clientWrite(uid, `user_experiences/x1/booking_consents/${uid}`, {
       policy: 'flexible', version: 1, experienceId: 'x1', method: 'cash',
@@ -210,9 +205,9 @@ describe('firestore rules: experience booking consents', () => {
       await res.text();
       return res.status;
     };
-    expect(await consent(FREE)).toBe(403); // (also missing acceptedAt)
-    expect(await commit(FREE)).toBe(403);
-    expect(await commit(EXPIRED)).toBe(403);
+    expect(await consent(FREE)).toBe(403); // missing acceptedAt
+    expect(await commit(FREE)).toBe(200);
+    expect(await commit(EXPIRED)).toBe(200);
     expect(await commit(BASE)).toBe(200);
     expect(await commit(SILVER)).toBe(200);
   });
@@ -228,13 +223,12 @@ describe('callables', () => {
   }
   const claim = (uid: string) => call(tp.createTicketCheckout, { kind: 'event', id: 'tix', items: [{ typeId: 'free', qty: 1 }] }, uid);
 
-  test('createTicketCheckout: free / expired refused with base_membership_required; nothing held', async () => {
+  test('createTicketCheckout: free / expired users can claim free tickets', async () => {
     await freeTypeEvent();
     for (const uid of INELIGIBLE) {
-      expect([uid, await refused(claim(uid))]).toEqual([uid, { code: 'failed-precondition', reason: 'base_membership_required' }]);
+      const r = await claim(uid);
+      expect([uid, typeof r.orderId]).toEqual([uid, 'string']);
     }
-    expect((await db.collection('ticket_orders').get()).size).toBe(0);
-    expect((await db.doc('events/tix/ticket_types/free').get()).data()!.held ?? 0).toBe(0);
   });
 
   test('createTicketCheckout: Base and paid tiers can claim; the organizer still gets own_listing', async () => {
@@ -260,14 +254,10 @@ describe('callables', () => {
     experienceId: 'xp', slotId: 's1', guests: 1, requestId: `req_part_${Date.now()}_${++seq}`, consentVersion: 'v1',
   }, uid);
 
-  test('createBooking: free experience still needs Base; Base / Gold can book', async () => {
+  test('createBooking: a free user can book a free experience', async () => {
     await freeExperience();
-    for (const uid of INELIGIBLE) {
-      expect([uid, await refused(book(uid))]).toEqual([uid, { code: 'failed-precondition', reason: 'base_membership_required' }]);
-    }
-    expect((await db.collection('bookings').get()).size).toBe(0);
-    const r = await book(BASE);
+    const r = await book(FREE);
     expect(r.status).toBeDefined();
-    expect((await db.collection('bookings').where('guestId', '==', BASE).get()).size).toBe(1);
+    expect((await db.collection('bookings').where('guestId', '==', FREE).get()).size).toBe(1);
   });
 });

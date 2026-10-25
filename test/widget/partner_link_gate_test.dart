@@ -11,10 +11,10 @@ import 'package:greengo_chat/generated/app_localizations.dart';
 
 import '../support/profile_fixtures.dart';
 
-/// Owner rule 2026-10-12:
-///  * FREE users never see the "Open link" of Ticketmaster / Viator items
-///    (attraction window, shared chat cards); Base or any paid tier does.
-///    Other sources (Wikipedia / curated / Google) keep their link.
+/// Owner rules:
+///  * 2026-10-25 (replaces 2026-10-12): every account sees the "Open link" of
+///    Ticketmaster / Viator items (attraction window, shared chat cards), the
+///    free version included, like joining events and booking experiences.
 ///  * No e-mail address / phone number in community event text.
 void main() {
   const uid = 'u1';
@@ -58,12 +58,12 @@ void main() {
   tearDown(() => OwnProfileStore.instance.reset());
 
   group('attraction window', () {
-    testWidgets('free user: no Open link for Viator / Ticketmaster',
+    testWidgets('free user gets the Open link for Viator / Ticketmaster (owner rule 2026-10-25)',
         (tester) async {
       seedFree();
       await openWindow(
           tester, item('viator', 'https://www.viator.com/tours/x'));
-      expect(openLink(), findsNothing);
+      expect(openLink(), findsOneWidget);
       // The rest of the window is still there.
       expect(find.text(l10n.attractionShareChat), findsOneWidget);
 
@@ -71,7 +71,7 @@ void main() {
       await tester.pumpAndSettle();
       await openWindow(
           tester, item('ticketmaster', 'https://www.ticketmaster.com/e/1'));
-      expect(openLink(), findsNothing);
+      expect(openLink(), findsOneWidget);
     });
 
     testWidgets('free user still gets other sources\' link', (tester) async {
@@ -113,10 +113,10 @@ void main() {
       'externalSource': 'Viator',
     };
 
-    testWidgets('free: no Open link on a partner share', (tester) async {
+    testWidgets('free: Open link on a partner share (owner rule 2026-10-25)', (tester) async {
       seedFree();
       await tapCard(tester, viator);
-      expect(find.text(l10n.attractionOpenLink), findsNothing);
+      expect(find.text(l10n.attractionOpenLink), findsOneWidget);
       expect(find.text(l10n.attractionShareChat), findsOneWidget);
     });
 

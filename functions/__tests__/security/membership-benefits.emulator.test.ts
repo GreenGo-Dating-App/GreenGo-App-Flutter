@@ -361,7 +361,7 @@ describe('Buyer <-> organizer chat (2026-10-17): server-verified context.buyer',
 });
 
 // ---------------------------------------------------------------------------
-describe('Free chats without Base: 3 people per UTC day (owner rule 2026-10-13)', () => {
+describe('Free chats without Base: 1 person per UTC day (owner rule 2026-10-25, was 3)', () => {
   const people = ['p1', 'p2', 'p3', 'p4'];
   beforeEach(async () => {
     for (const p of people) {
@@ -372,18 +372,16 @@ describe('Free chats without Base: 3 people per UTC day (owner rule 2026-10-13)'
   });
   const msg = () => ({ senderId: FREE, content: 'hi', type: 'text' });
 
-  test('claim 3 people, then the 4th is refused; re-claiming is free', async () => {
-    for (const [i, p] of ['p1', 'p2', 'p3'].entries()) {
-      const r = await call(claimFreeChat, { conversationId: `f_${p}` }, FREE);
-      expect(r).toMatchObject({ allowed: true, unlimited: false, used: i + 1, limit: 3, added: true });
-    }
-    expect(await call(claimFreeChat, { conversationId: 'f_p4' }, FREE))
-      .toMatchObject({ allowed: false, used: 3 });
+  test('claim 1 person, then the 2nd is refused; re-claiming is free', async () => {
+    expect(await call(claimFreeChat, { conversationId: 'f_p1' }, FREE))
+      .toMatchObject({ allowed: true, unlimited: false, used: 1, limit: 1, added: true });
     expect(await call(claimFreeChat, { conversationId: 'f_p2' }, FREE))
-      .toMatchObject({ allowed: true, added: false, used: 3 });
+      .toMatchObject({ allowed: false, used: 1 });
+    expect(await call(claimFreeChat, { conversationId: 'f_p1' }, FREE))
+      .toMatchObject({ allowed: true, added: false, used: 1 });
     const u = (await db.doc(`entitlement_usage/${FREE}`).get()).data()!;
     expect(u.freeChatDayStartMs).toBe(dayStart());
-    expect(u.freeChatConvs).toEqual(['f_p1', 'f_p2', 'f_p3']);
+    expect(u.freeChatConvs).toEqual(['f_p1']);
   });
 
   test("groups, support and other people's chats cannot be claimed; members are unlimited", async () => {
@@ -403,12 +401,10 @@ describe('Free chats without Base: 3 people per UTC day (owner rule 2026-10-13)'
     expect(await clientWrite(FREE, 'conversations/f_p1/messages/m2', msg())).toBe(403);
   });
 
-  test('free chats do not unlock joining events', async () => {
-    await db.doc(`entitlement_usage/${FREE}`).set({ freeChatDayStartMs: dayStart(), freeChatConvs: ['f_p1'] });
+  test('joining events is open to the free version, with or without a chat claim', async () => {
     await db.doc('events/ev1').set({ organizerId: GOLD, title: 'e', price: 0, startDate: future(DAY), endDate: future(2 * DAY) });
     const rsvp = (uid: string) => ({ userId: uid, eventId: 'ev1', status: 'going', checkedIn: false });
-    expect(await clientWrite(FREE, `events/ev1/attendees/${FREE}`, rsvp(FREE))).toBe(403);
-    // Positive control: the same RSVP with Base goes through.
+    expect(await clientWrite(FREE, `events/ev1/attendees/${FREE}`, rsvp(FREE))).toBe(200);
     expect(await clientWrite(BASE, `events/ev1/attendees/${BASE}`, rsvp(BASE))).toBe(200);
   });
 });

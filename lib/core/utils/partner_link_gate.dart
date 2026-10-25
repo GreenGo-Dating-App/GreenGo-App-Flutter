@@ -1,11 +1,11 @@
 import '../services/own_profile_store.dart';
 import 'base_membership_gate.dart';
 
-/// Partner booking links (Ticketmaster live events, Viator experiences) are a
-/// membership perk (owner rule 2026-10-12): a FREE user never sees their
-/// "Open link". Base membership or any active paid tier (same predicate as
-/// participation, [BaseMembershipGate.canParticipate]) unlocks them.
-/// Curated / Wikipedia / Google attractions are not affected.
+/// Partner booking links (Ticketmaster live events, Viator experiences) follow
+/// the participation rule ([BaseMembershipGate.canParticipate]): since
+/// 2026-10-25 every known account sees their "Open link", the free version
+/// included (was a membership perk from 2026-10-12). Curated / Wikipedia /
+/// Google attractions are not affected.
 class PartnerLinkGate {
   const PartnerLinkGate._();
 

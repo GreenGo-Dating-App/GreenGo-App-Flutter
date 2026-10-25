@@ -44,19 +44,18 @@ class BaseMembershipGate {
     return false;
   }
 
-  // ── Participation (owner rule 2026-10-11) ─────────────────────────────────
+  // ── Participation (owner rule 2026-10-25) ─────────────────────────────────
   //
-  // Joining someone else's event (going / waitlist / tickets) and booking an
-  // experience need the Base membership; an active Silver / Gold / Platinum
-  // or TEST counts too. Same predicate as chat ([Profile.isBaseMembershipActive]
-  // = canParticipateFromDoc), enforced by the server: Firestore rules
-  // `canParticipate()` and the callables (refusal code
-  // [kBaseMembershipRequiredCode]). Organizers / hosts on their own listing,
-  // 'interested', cancelling and check-in are never gated.
+  // The free version may join someone else's event (going / waitlist /
+  // tickets) and book experiences too (was Base-only since 2026-10-11). Only
+  // the verified phone is still required. Same predicate as
+  // canParticipateFromDoc, mirrored by the Firestore rules `canParticipate()`
+  // and the callables (refusal code [kBaseMembershipRequiredCode], kept for
+  // old apps).
 
-  /// THE app-side participation check for a parsed profile.
-  static bool canParticipate(Profile? profile) =>
-      profile?.isBaseMembershipActive ?? false;
+  /// THE app-side participation check for a parsed profile: any known
+  /// account (an unknown one fails closed where the caller needs that).
+  static bool canParticipate(Profile? profile) => profile != null;
 
   /// Returns true when [userId] may join / book; otherwise shows the
   /// Base-membership dialog (CTA to the membership screen) and returns false.

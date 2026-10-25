@@ -369,23 +369,23 @@ describe('createBooking', () => {
     expect(sent.find((s) => s.type === 'booking_accepted')!.recipientId).toBe(GUEST);
   });
 
-  test('Base membership required: free / expired refused, Base and active paid tier allowed (free experience too)', async () => {
+  test('free version may book (owner rule 2026-10-25): no plan, expired Base or expired tier all allowed', async () => {
     seedWorld({ exp: { isFree: true, price: 0, currency: null, paymentMethods: null, paymentLink: null }, slot: { capacity: 10 } });
     db.seed(`profiles/${GUEST2}`, { isAgeVerified: true });
-    await expectCode(request(GUEST2), 'base_membership_required');
-    db.seed(`profiles/${GUEST2}`, { isAgeVerified: true, hasBaseMembership: true, baseMembershipEndDate: new Date(T0 - D) });
-    await expectCode(request(GUEST2), 'base_membership_required');
-    db.seed(`profiles/${GUEST2}`, { isAgeVerified: true, membershipTier: 'GOLD', membershipEndDate: new Date(T0 - D) });
-    await expectCode(request(GUEST2), 'base_membership_required');
-    expect(slot().bookedCount).toBe(0);
-    db.seed(`profiles/${GUEST2}`, { isAgeVerified: true, membershipTier: 'SILVER', membershipEndDate: new Date(T0 + D) });
-    const silver: any = await request(GUEST2);
-    expect(silver.status).toBe('requested');
-    // Cancelling an existing participation is never gated.
-    db.seed(`profiles/${GUEST2}`, { isAgeVerified: true });
-    await svc.cancelBooking(GUEST2, { bookingId: silver.bookingId });
-    db.seed('profiles/guest5', { isAgeVerified: true, membershipTier: 'TEST' });
-    expect((await request('guest5')).status).toBe('requested');
+    const free: any = await request(GUEST2);
+    expect(free.status).toBe('requested');
+    await svc.cancelBooking(GUEST2, { bookingId: free.bookingId });
+    // One active booking at a time holds the host's slot: cancel between tries.
+    for (const [uid, profile] of [
+      ['guest6', { isAgeVerified: true, hasBaseMembership: true, baseMembershipEndDate: new Date(T0 - D) }],
+      ['guest7', { isAgeVerified: true, membershipTier: 'GOLD', membershipEndDate: new Date(T0 - D) }],
+      ['guest5', { isAgeVerified: true, membershipTier: 'TEST' }],
+    ] as const) {
+      db.seed(`profiles/${uid}`, profile);
+      const b: any = await request(uid);
+      expect(b.status).toBe('requested');
+      await svc.cancelBooking(uid, { bookingId: b.bookingId });
+    }
   });
 
   test('payment links are no longer accepted: online only; legacy listings take no new paid booking', async () => {

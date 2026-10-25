@@ -53,7 +53,7 @@ export const MAX_DAILY_CONNECTS: Record<EffectiveTier, Cap> = {
  * without this limit; events and experiences stay Base-only.
  * Mirrors TierEntitlements.freeDailyChats and `freeChatOk` in the rules.
  */
-export const FREE_DAILY_CHATS = 3;
+export const FREE_DAILY_CHATS = 1; // owner rule 2026-10-25 (was 3)
 
 /**
  * Characters of chat / text translation a user may send to the paid

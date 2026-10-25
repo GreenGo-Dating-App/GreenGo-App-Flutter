@@ -21,88 +21,48 @@ void main() {
   final past = now.subtract(const Duration(days: 1));
 
   group('canParticipateFromDoc (raw profiles/{uid})', () {
+    // Owner rule 2026-10-25: the free version may join events and book
+    // experiences, so every existing profile participates (the verified
+    // phone is checked separately by PhoneVerificationGate).
     final cases = <String, (Map<String, dynamic>?, bool)>{
       'missing profile': (null, false),
-      'free, no Base': ({'membershipTier': 'FREE'}, false),
-      'legacy BASIC tier string, no Base flag': ({'membershipTier': 'BASIC'}, false),
+      'free, no Base': ({'membershipTier': 'FREE'}, true),
+      'legacy BASIC tier string, no Base flag': ({'membershipTier': 'BASIC'}, true),
       'active Base': (
         {'hasBaseMembership': true, 'baseMembershipEndDate': Timestamp.fromDate(future)},
         true
       ),
       'expired Base': (
         {'hasBaseMembership': true, 'baseMembershipEndDate': Timestamp.fromDate(past)},
-        false
-      ),
-      'Base flag without end date': ({'hasBaseMembership': true}, false),
-      'active Silver': (
-        {'membershipTier': 'SILVER', 'membershipEndDate': Timestamp.fromDate(future)},
-        true
-      ),
-      'active Gold': (
-        {'membershipTier': 'GOLD', 'membershipEndDate': Timestamp.fromDate(future)},
-        true
-      ),
-      'active Platinum (millis)': (
-        {'membershipTier': 'PLATINUM', 'membershipEndDate': future.millisecondsSinceEpoch},
         true
       ),
       'expired Gold without Base': (
         {'membershipTier': 'GOLD', 'membershipEndDate': Timestamp.fromDate(past)},
-        false
-      ),
-      'expired Gold WITH active Base': (
-        {
-          'membershipTier': 'GOLD',
-          'membershipEndDate': Timestamp.fromDate(past),
-          'hasBaseMembership': true,
-          'baseMembershipEndDate': Timestamp.fromDate(future),
-        },
         true
       ),
       'TEST': ({'membershipTier': 'TEST'}, true),
     };
     cases.forEach((name, c) {
-      test(name, () {
-        expect(canParticipateFromDoc(c.$1, now: now), c.$2);
-        // Exactly the chat rule (P-H2): one predicate, never two.
-        expect(canParticipateFromDoc(c.$1, now: now),
-            isBaseMembershipActiveFromDoc(c.$1, now: now));
-      });
+      test(name, () => expect(canParticipateFromDoc(c.$1, now: now), c.$2));
+    });
+    test('chat is still Base-or-better (participation no longer is)', () {
+      expect(isBaseMembershipActiveFromDoc({'membershipTier': 'FREE'}, now: now), isFalse);
+      expect(canParticipateFromDoc({'membershipTier': 'FREE'}, now: now), isTrue);
     });
   });
 
   group('BaseMembershipGate.canParticipate (Profile)', () {
-    final realFuture = DateTime.now().add(const Duration(days: 30));
     final realPast = DateTime.now().subtract(const Duration(days: 1));
-    test('free / expired refused; Base, paid tiers and TEST allowed', () {
+    test('every known account may participate; an unknown one may not', () {
       expect(BaseMembershipGate.canParticipate(null), isFalse);
-      expect(BaseMembershipGate.canParticipate(buildProfile()), isFalse);
+      expect(BaseMembershipGate.canParticipate(buildProfile()), isTrue);
       expect(
           BaseMembershipGate.canParticipate(buildProfile(
               hasBaseMembership: true, baseMembershipEndDate: realPast)),
-          isFalse);
-      expect(
-          BaseMembershipGate.canParticipate(buildProfile(
-              membershipTier: MembershipTier.gold, membershipEndDate: realPast)),
-          isFalse);
-      expect(
-          BaseMembershipGate.canParticipate(buildProfile(
-              hasBaseMembership: true, baseMembershipEndDate: realFuture)),
           isTrue);
-      for (final t in [
-        MembershipTier.silver,
-        MembershipTier.gold,
-        MembershipTier.platinum
-      ]) {
-        expect(
-            BaseMembershipGate.canParticipate(
-                buildProfile(membershipTier: t, membershipEndDate: realFuture)),
-            isTrue,
-            reason: t.name);
-      }
       expect(
           BaseMembershipGate.canParticipate(
-              buildProfile(membershipTier: MembershipTier.test)),
+              buildProfile(membershipTier: MembershipTier.gold, membershipEndDate: realPast)),
           isTrue);
     });
   });

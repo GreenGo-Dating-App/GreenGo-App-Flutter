@@ -1,8 +1,8 @@
 /**
- * Owner rule (2026-10-11): "to participate in an event or experience, the
- * user must have the Base membership". Any ACTIVE paid tier (Silver / Gold /
- * Platinum) or TEST counts too - the same "Base or better" rule as 1:1
- * messaging ([hasBaseAccess]).
+ * Owner rule (2026-10-25, replaces the Base-only rule of 2026-10-11): the
+ * FREE version may participate in events and experiences too. Every
+ * participation path still calls [assertCanParticipate] (an existing
+ * account) and [assertPhoneVerified]; the refusal code is kept for old apps.
  *
  * "Participate" = becoming an attendee of someone else's event or experience:
  * RSVP going / waitlist (Firestore rules `canParticipate`), ticket checkouts
@@ -18,16 +18,21 @@
  */
 import * as admin from 'firebase-admin';
 import { HttpsError } from 'firebase-functions/v2/https';
-import { hasBaseAccess } from './effectiveTier';
 
 export const BASE_MEMBERSHIP_REQUIRED = 'base_membership_required';
 
-/** True when `profile` may join events / book experiences right now. */
+/**
+ * True when `profile` may join events / book experiences right now.
+ * Owner rule 2026-10-25: the FREE version may join events and book
+ * experiences too, so any existing account may participate (the verified
+ * phone is still required: [assertPhoneVerified]). [now] is kept for callers.
+ */
 export function canParticipate(
   profile: Record<string, any> | null | undefined,
   now: Date = new Date(),
 ): boolean {
-  return hasBaseAccess(profile, now);
+  void now;
+  return !!profile;
 }
 
 /** The refusal every participation path throws. */

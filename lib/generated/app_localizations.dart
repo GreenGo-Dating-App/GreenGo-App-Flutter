@@ -18447,7 +18447,7 @@ abstract class AppLocalizations {
   /// No description provided for @guideMembershipItem1.
   ///
   /// In en, this message translates to:
-  /// **'Your Base membership gives you access to all core features: chatting, connecting, joining events and booking experiences.'**
+  /// **'Your Base membership lets you chat with everyone, create your own events and experiences and get monthly coins. Joining events and booking experiences is free for everyone.'**
   String get guideMembershipItem1;
 
   /// No description provided for @guideMembershipItem2.
@@ -42066,7 +42066,7 @@ abstract class AppLocalizations {
   /// No description provided for @freeChatLimitBody.
   ///
   /// In en, this message translates to:
-  /// **'Without a membership you can chat with {limit} people a day. Get the Base membership to chat with everyone, join events and book experiences.'**
+  /// **'{limit, plural, =1{Without a membership you can chat with 1 new person a day.} other{Without a membership you can chat with {limit} new people a day.}} Get the Base membership to chat with everyone.'**
   String freeChatLimitBody(int limit);
 
   /// No description provided for @freeChatUsedToday.
@@ -42132,7 +42132,7 @@ abstract class AppLocalizations {
   /// No description provided for @createNeedsPlanBody.
   ///
   /// In en, this message translates to:
-  /// **'Creating events and experiences needs the Base membership (or Silver, Gold or Platinum). Without a plan you can browse and chat with 3 people a day.'**
+  /// **'Creating events and experiences needs the Base membership (or Silver, Gold or Platinum). Without a plan you can browse, join events, book experiences and chat with 1 person a day.'**
   String get createNeedsPlanBody;
 
   /// No description provided for @calViewMonth.

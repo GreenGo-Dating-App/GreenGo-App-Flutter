@@ -49,7 +49,7 @@ void main() {
         ),
       );
 
-  testWidgets('free user: the upsell is shown instead of joining',
+  testWidgets('free user joins without any dialog (owner rule 2026-10-25)',
       (tester) async {
     var joined = false;
     await pumpHost(tester,
@@ -58,18 +58,9 @@ void main() {
     await tester.tap(find.text('Join'));
     await tester.pumpAndSettle();
 
-    expect(joined, isFalse);
-    expect(find.byKey(const ValueKey('base-membership-required-dialog')),
-        findsOneWidget);
-    expect(find.text(l10n.participationBaseRequiredTitle), findsOneWidget);
-    expect(find.text(l10n.participationBaseRequiredBody), findsOneWidget);
-    expect(find.text(l10n.participationBaseRequiredCta), findsOneWidget);
-
-    await tester.tap(find.text(l10n.notNow));
-    await tester.pumpAndSettle();
+    expect(joined, isTrue);
     expect(find.byKey(const ValueKey('base-membership-required-dialog')),
         findsNothing);
-    expect(joined, isFalse);
   });
 
   testWidgets('Base and paid-tier users join without any dialog',
