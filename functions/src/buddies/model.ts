@@ -83,6 +83,31 @@ export interface BuddySettings {
    * chatLanguage, and it is the translation source (no detection).
    */
   userLanguage: Language;
+  /**
+   * Owner 2026-10-25: where the user wants to go (travel topics, see
+   * DESTINATION_TOPICS): a short place name the Buddy builds the chat
+   * around. Editable; null when not given.
+   */
+  destination?: string | null;
+}
+
+/** Travel topics that ask where the user wants to go (owner 2026-10-25). */
+export const DESTINATION_TOPICS: ReadonlySet<string> = new Set([
+  'city_guides', 'budget_travel', 'backpacking', 'road_trips', 'local_food_travel',
+  'packing', 'solo_travel', 'travel_phrases', 'nature_trips',
+]);
+
+/**
+ * A destination: 1-60 visible characters, letters / digits / space and
+ * , . ' - ( ) only (a place name, never instructions); '' / null = none.
+ */
+export function cleanDestination(v: unknown): string | null {
+  if (v === null || v === undefined) return null;
+  if (typeof v !== 'string') throw new BuddyInputError('Invalid destination');
+  const s = v.normalize('NFC').trim().replace(/\s+/g, ' ');
+  if (!s) return null;
+  if (Array.from(s).length > 60 || !/^[\p{L}\p{M}\p{N} ,.'()-]+$/u.test(s)) throw new BuddyInputError('Invalid destination');
+  return s;
 }
 
 export interface MemoryFact { id: string; text: string; at: number; /** The user's exact words the fact is based on. */ evidence?: string }
@@ -135,13 +160,14 @@ export function validateSettings(raw: any, partial = false): Partial<BuddySettin
   else if (!partial) out.chatLanguage = out.language;
   if (has('userLanguage')) out.userLanguage = oneOf(raw.userLanguage, LANGUAGES, 'userLanguage');
   else if (!partial) out.userLanguage = out.chatLanguage;
+  if (has('destination') || (raw && raw.destination === null)) out.destination = cleanDestination(raw.destination);
   if (has('checkInsEnabled')) {
     if (typeof raw.checkInsEnabled !== 'boolean') throw new BuddyInputError('Invalid checkInsEnabled');
     out.checkInsEnabled = raw.checkInsEnabled;
   } else if (!partial) {
     out.checkInsEnabled = true;
   }
-  const allowed = new Set(['name', 'avatar', 'topic', 'role', 'tone', 'language', 'chatLanguage', 'userLanguage', 'level', 'cefr', 'checkInsEnabled']);
+  const allowed = new Set(['name', 'avatar', 'topic', 'role', 'tone', 'language', 'chatLanguage', 'userLanguage', 'destination', 'level', 'cefr', 'checkInsEnabled']);
   for (const k of Object.keys(raw ?? {})) if (!allowed.has(k)) throw new BuddyInputError(`Unknown field ${k}`);
   return out;
 }

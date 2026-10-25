@@ -111,6 +111,15 @@ class _BuddyQuickSettingsSheetState extends State<BuddyQuickSettingsSheet> {
     );
   }
 
+  /// Destination dialog; pops the cleaned place ('' = remove it).
+  Future<String?> _editDestination(String current) {
+    final l10n = AppLocalizations.of(context)!;
+    return showDialog<String>(
+      context: context,
+      builder: (ctx) => _DestinationDialog(initial: current, l10n: l10n),
+    );
+  }
+
   /// Rename dialog; pops the cleaned name (same rule as the server).
   Future<String?> _editName(String current) {
     final l10n = AppLocalizations.of(context)!;
@@ -250,6 +259,13 @@ class _BuddyQuickSettingsSheetState extends State<BuddyQuickSettingsSheet> {
                   value: l10n.buddyLanguageFixed(buddyLanguageLabel(l10n, s.language)),
                   onTap: null,
                 ),
+                if (s.userLanguage != null)
+                  _row(
+                    key: 'user-language',
+                    label: l10n.buddyUserLanguagePrompt,
+                    value: buddyLanguageLabel(l10n, s.userLanguage!),
+                    onTap: null,
+                  ),
                 // What the server translates this chat into: chosen at
                 // creation, fixed like the Buddy language (read-only). Older
                 // Buddies without one show the app language.
@@ -259,6 +275,20 @@ class _BuddyQuickSettingsSheetState extends State<BuddyQuickSettingsSheet> {
                   value: buddyTranslatedIntoLabel(l10n, buddyChatLanguageOf(context, b)),
                   onTap: null,
                 ),
+                // Owner 2026-10-25: where the user wants to go (travel
+                // topics); editable, the Buddy follows the new place.
+                if (BuddyCatalog.needsDestination(s.topic))
+                  _row(
+                    key: 'destination',
+                    label: l10n.buddyDestinationPrompt,
+                    value: (s.destination ?? '').isEmpty ? l10n.buddyDestinationNone : s.destination!,
+                    onTap: () async {
+                      final v = await _editDestination(s.destination ?? '');
+                      if (v != null && v != (s.destination ?? '')) {
+                        await _update({'destination': v.isEmpty ? null : v});
+                      }
+                    },
+                  ),
                 _row(
                   key: 'tone',
                   label: l10n.buddySettingTone,
@@ -432,6 +462,57 @@ class _NameDialogState extends State<_NameDialog> {
         TextButton(onPressed: () => Navigator.of(context).pop(), child: Text(l10n.cancel)),
         TextButton(
           key: const ValueKey('buddy-rename-save'),
+          onPressed: clean == null ? null : () => Navigator.of(context).pop(clean),
+          child: Text(l10n.save),
+        ),
+      ],
+    );
+  }
+}
+
+class _DestinationDialog extends StatefulWidget {
+  const _DestinationDialog({required this.initial, required this.l10n});
+
+  final String initial;
+  final AppLocalizations l10n;
+
+  @override
+  State<_DestinationDialog> createState() => _DestinationDialogState();
+}
+
+class _DestinationDialogState extends State<_DestinationDialog> {
+  late final TextEditingController _c = TextEditingController(text: widget.initial);
+
+  @override
+  void dispose() {
+    _c.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = widget.l10n;
+    final clean = BuddyCatalog.cleanDestination(_c.text);
+    return AlertDialog(
+      backgroundColor: AppColors.backgroundCard,
+      title: Text(l10n.buddyDestinationPrompt, style: const TextStyle(color: AppColors.textPrimary)),
+      content: TextField(
+        key: const ValueKey('buddy-destination-field'),
+        controller: _c,
+        autofocus: true,
+        maxLength: BuddyCatalog.maxDestinationChars,
+        style: const TextStyle(color: AppColors.textPrimary),
+        onChanged: (_) => setState(() {}),
+        decoration: InputDecoration(
+          hintText: l10n.buddyDestinationHint,
+          errorText: clean == null ? l10n.buddyDestinationInvalid : null,
+          errorMaxLines: 3,
+        ),
+      ),
+      actions: [
+        TextButton(onPressed: () => Navigator.of(context).pop(), child: Text(l10n.cancel)),
+        TextButton(
+          key: const ValueKey('buddy-destination-save'),
           onPressed: clean == null ? null : () => Navigator.of(context).pop(clean),
           child: Text(l10n.save),
         ),

@@ -29500,6 +29500,23 @@ class AppLocalizationsFr extends AppLocalizations {
       'La langue dans laquelle tu écriras tes messages. Impossible de la changer plus tard.';
 
   @override
+  String get buddyDestinationPrompt => 'Où veux-tu aller ?';
+
+  @override
+  String get buddyDestinationHint => 'Ville, région ou pays, ex. Lisbonne';
+
+  @override
+  String get buddyDestinationNote =>
+      'Ton Buddy te parlera de ce lieu. Tu pourras le changer plus tard.';
+
+  @override
+  String get buddyDestinationInvalid =>
+      'Seulement un nom de lieu : lettres, chiffres, espaces et , . \' - ( ), 60 caractères max.';
+
+  @override
+  String get buddyDestinationNone => 'Non défini';
+
+  @override
   String get buddyUserLanguagePrompt => 'Langue dans laquelle tu écris';
 
   @override

@@ -19307,6 +19307,26 @@
   "@buddyUserLanguageNote": {
     "description": "Buddy builder: note under the user's writing-language select"
   },
+  "buddyDestinationPrompt": "Where do you want to go?",
+  "@buddyDestinationPrompt": {
+    "description": "Buddy builder + quick settings (travel topics): label of the destination field"
+  },
+  "buddyDestinationHint": "City, region or country, e.g. Lisbon",
+  "@buddyDestinationHint": {
+    "description": "Buddy destination field: example placeholder"
+  },
+  "buddyDestinationNote": "Your Buddy will tell you about this place. You can change it later.",
+  "@buddyDestinationNote": {
+    "description": "Buddy builder: helper under the destination field"
+  },
+  "buddyDestinationInvalid": "Only a place name: letters, numbers, spaces and , . ' - ( ), up to 60 characters.",
+  "@buddyDestinationInvalid": {
+    "description": "Buddy destination field: error when the text is not a plain place name"
+  },
+  "buddyDestinationNone": "Not set",
+  "@buddyDestinationNone": {
+    "description": "Buddy quick settings: destination row value when none is set"
+  },
   "buddyUserLanguagePrompt": "Language you write in",
   "@buddyUserLanguagePrompt": {
     "description": "Buddy builder: label of the select for the language the USER writes in"

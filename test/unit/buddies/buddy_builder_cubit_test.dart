@@ -1,5 +1,6 @@
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:greengo_chat/features/buddies/domain/buddy_catalog.dart';
 import 'package:greengo_chat/features/buddies/domain/buddy_exception.dart';
 import 'package:greengo_chat/features/buddies/presentation/bloc/buddy_builder_cubit.dart';
 
@@ -163,5 +164,26 @@ void main() {
     final ja = BuddyBuilderCubit(repository: repo, language: 'ja');
     expect(ja.state.chatLanguage, 'en');
     await ja.close();
+  });
+
+  test('travel topics ask where to go; the destination is sent cleaned, never for other topics', () {
+    expect(BuddyCatalog.cleanDestination('  Lisbon,   Portugal '), 'Lisbon, Portugal');
+    expect(BuddyCatalog.cleanDestination(''), '');
+    expect(BuddyCatalog.cleanDestination('Rome; drop table!'), isNull);
+    expect(BuddyCatalog.needsDestination('city_guides'), isTrue);
+    expect(BuddyCatalog.needsDestination('travel_stories'), isFalse);
+    cubit
+      ..selectTopic('city_guides')
+      ..setDestination('Rome!');
+    expect(cubit.state.showDestinationError, isTrue);
+    expect(cubit.state.canNext, isFalse);
+    cubit.setDestination(' Kyoto ');
+    expect(cubit.state.canNext, isTrue);
+    cubit
+      ..setName('Hana')
+      ..selectAvatar('av_owl');
+    expect(cubit.state.toSettings()!.toMap()['destination'], 'Kyoto');
+    cubit.selectTopic('guitar');
+    expect(cubit.state.toSettings()!.toMap().containsKey('destination'), isFalse);
   });
 }

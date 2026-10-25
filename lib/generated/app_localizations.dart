@@ -49612,6 +49612,36 @@ abstract class AppLocalizations {
   /// **'The language you will write your messages in. It can\'t be changed later.'**
   String get buddyUserLanguageNote;
 
+  /// Buddy builder + quick settings (travel topics): label of the destination field
+  ///
+  /// In en, this message translates to:
+  /// **'Where do you want to go?'**
+  String get buddyDestinationPrompt;
+
+  /// Buddy destination field: example placeholder
+  ///
+  /// In en, this message translates to:
+  /// **'City, region or country, e.g. Lisbon'**
+  String get buddyDestinationHint;
+
+  /// Buddy builder: helper under the destination field
+  ///
+  /// In en, this message translates to:
+  /// **'Your Buddy will tell you about this place. You can change it later.'**
+  String get buddyDestinationNote;
+
+  /// Buddy destination field: error when the text is not a plain place name
+  ///
+  /// In en, this message translates to:
+  /// **'Only a place name: letters, numbers, spaces and , . \' - ( ), up to 60 characters.'**
+  String get buddyDestinationInvalid;
+
+  /// Buddy quick settings: destination row value when none is set
+  ///
+  /// In en, this message translates to:
+  /// **'Not set'**
+  String get buddyDestinationNone;
+
   /// Buddy builder: label of the select for the language the USER writes in
   ///
   /// In en, this message translates to:

@@ -29331,6 +29331,23 @@ class AppLocalizationsEs extends AppLocalizations {
       'El idioma en el que escribirás tus mensajes. No se puede cambiar después.';
 
   @override
+  String get buddyDestinationPrompt => '¿Adónde quieres ir?';
+
+  @override
+  String get buddyDestinationHint => 'Ciudad, región o país, p. ej. Lisboa';
+
+  @override
+  String get buddyDestinationNote =>
+      'Tu Buddy te contará cosas de este lugar. Puedes cambiarlo después.';
+
+  @override
+  String get buddyDestinationInvalid =>
+      'Solo el nombre de un lugar: letras, números, espacios y , . \' - ( ), máximo 60 caracteres.';
+
+  @override
+  String get buddyDestinationNone => 'Sin definir';
+
+  @override
   String get buddyUserLanguagePrompt => 'Idioma en el que escribes tú';
 
   @override

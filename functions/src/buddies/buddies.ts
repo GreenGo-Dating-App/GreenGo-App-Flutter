@@ -42,7 +42,7 @@ import {
   FREE_REPLIES_PER_DAY, Language, LANGUAGE_NAMES, MemoryFact, USER_MESSAGE_MAX, utcDay, validateSettings,
 } from './model';
 import { CRISIS_REPLY, FALLBACK_REPLY, isCrisis, isUnsafeReply } from './crisis';
-import { checkInPrompt, memoryPrompt, openingPrompt, parseJsonObject, replyFormatBlock, summaryPrompt, systemPrompt } from './prompt';
+import { checkInPrompt, destinationOf, memoryPrompt, openingPrompt, parseJsonObject, replyFormatBlock, summaryPrompt, systemPrompt } from './prompt';
 
 const db = () => admin.firestore();
 const TS = () => admin.firestore.Timestamp.now();
@@ -103,6 +103,7 @@ const settingsOf = (d: any): BuddySettings => ({
   level: d.level, cefr: d.cefr ?? null, checkInsEnabled: d.checkInsEnabled !== false,
   chatLanguage: d.chatLanguage ?? d.language,
   userLanguage: d.userLanguage ?? d.chatLanguage ?? d.language,
+  destination: typeof d.destination === 'string' && d.destination ? d.destination : null,
 });
 
 async function rules(): Promise<CapabilityRules> {
@@ -207,7 +208,9 @@ export async function sendOpening(uid: string, ref: admin.firestore.DocumentRefe
   // Owner 2026-10-24: the first message presents the topic's 365-day path,
   // written once in all 7 languages (no AI call, translation already stored).
   const course = await getCourse(b.topic).catch(() => null);
-  const intro = introBubbles(course, b.language, b.name);
+  // A travel Buddy that knows the destination opens with that place (one AI
+  // message) instead of the generic course intro (owner 2026-10-25).
+  const intro = destinationOf(b) ? null : introBubbles(course, b.language, b.name);
   if (intro) {
     const target = b.chatLanguage ?? b.language;
     const tr = baseLang(target) !== baseLang(b.language) ? introBubbles(course, target, b.name) : null;

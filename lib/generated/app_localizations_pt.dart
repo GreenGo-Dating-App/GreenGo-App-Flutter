@@ -29310,6 +29310,23 @@ class AppLocalizationsPt extends AppLocalizations {
       'A língua em que vais escrever as tuas mensagens. Não pode ser alterada mais tarde.';
 
   @override
+  String get buddyDestinationPrompt => 'Para onde queres ir?';
+
+  @override
+  String get buddyDestinationHint => 'Cidade, região ou país, ex. Lisboa';
+
+  @override
+  String get buddyDestinationNote =>
+      'O teu Buddy vai falar-te deste lugar. Podes alterá-lo mais tarde.';
+
+  @override
+  String get buddyDestinationInvalid =>
+      'Apenas o nome de um lugar: letras, números, espaços e , . \' - ( ), até 60 caracteres.';
+
+  @override
+  String get buddyDestinationNone => 'Não definido';
+
+  @override
   String get buddyUserLanguagePrompt => 'Língua em que tu escreves';
 
   @override
@@ -58680,6 +58697,23 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get buddyUserLanguageNote =>
       'O idioma em que você vai escrever suas mensagens. Não pode ser alterado depois.';
+
+  @override
+  String get buddyDestinationPrompt => 'Para onde você quer ir?';
+
+  @override
+  String get buddyDestinationHint => 'Cidade, região ou país, ex. Lisboa';
+
+  @override
+  String get buddyDestinationNote =>
+      'Seu Buddy vai te contar sobre este lugar. Você pode mudar depois.';
+
+  @override
+  String get buddyDestinationInvalid =>
+      'Apenas o nome de um lugar: letras, números, espaços e , . \' - ( ), até 60 caracteres.';
+
+  @override
+  String get buddyDestinationNone => 'Não definido';
 
   @override
   String get buddyUserLanguagePrompt => 'Idioma em que você escreve';

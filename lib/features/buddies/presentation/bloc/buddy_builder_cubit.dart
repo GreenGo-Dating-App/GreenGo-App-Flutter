@@ -16,6 +16,7 @@ class BuddyBuilderState extends Equatable {
     required this.language,
     required this.chatLanguage,
     required this.userLanguage,
+    this.destination = '',
     this.step = 0,
     this.group,
     this.topic,
@@ -43,6 +44,9 @@ class BuddyBuilderState extends Equatable {
 
   /// The language the user writes in (defaults to the app language).
   final String userLanguage;
+
+  /// Where the user wants to go (travel topics only; '' = not given).
+  final String destination;
   final String tone;
   final String name;
 
@@ -70,6 +74,7 @@ class BuddyBuilderState extends Equatable {
             BuddyCatalog.languages.contains(language) &&
             BuddyCatalog.languages.contains(chatLanguage) &&
             BuddyCatalog.languages.contains(userLanguage) &&
+            BuddyCatalog.cleanDestination(destination) != null &&
             BuddyCatalog.tones.contains(tone);
       default:
         return cleanName != null && avatar != null;
@@ -88,8 +93,12 @@ class BuddyBuilderState extends Equatable {
       language: language,
       chatLanguage: chatLanguage,
       userLanguage: userLanguage,
+      destination: BuddyCatalog.needsDestination(topic) ? BuddyCatalog.cleanDestination(destination) : null,
     );
   }
+
+  /// The destination field shows an error (refused characters or length).
+  bool get showDestinationError => BuddyCatalog.cleanDestination(destination) == null;
 
   BuddyBuilderState copyWith({
     int? step,
@@ -98,6 +107,7 @@ class BuddyBuilderState extends Equatable {
     String? language,
     String? chatLanguage,
     String? userLanguage,
+    String? destination,
     String? tone,
     String? name,
     String? avatar,
@@ -111,6 +121,7 @@ class BuddyBuilderState extends Equatable {
         language: language ?? this.language,
         chatLanguage: chatLanguage ?? this.chatLanguage,
         userLanguage: userLanguage ?? this.userLanguage,
+        destination: destination ?? this.destination,
         tone: tone ?? this.tone,
         name: name ?? this.name,
         avatar: avatar ?? this.avatar,
@@ -120,7 +131,7 @@ class BuddyBuilderState extends Equatable {
 
   @override
   List<Object?> get props =>
-      [step, group, topic, language, chatLanguage, userLanguage, tone, name, avatar, nameTouched, saving];
+      [step, group, topic, language, chatLanguage, userLanguage, destination, tone, name, avatar, nameTouched, saving];
 }
 
 class BuddyBuilderCubit extends Cubit<BuddyBuilderState> {
@@ -166,6 +177,8 @@ class BuddyBuilderCubit extends Cubit<BuddyBuilderState> {
   void selectUserLanguage(String code) {
     if (BuddyCatalog.languages.contains(code)) emit(state.copyWith(userLanguage: code));
   }
+
+  void setDestination(String value) => emit(state.copyWith(destination: value));
 
   void selectTone(String tone) {
     if (BuddyCatalog.tones.contains(tone)) emit(state.copyWith(tone: tone));

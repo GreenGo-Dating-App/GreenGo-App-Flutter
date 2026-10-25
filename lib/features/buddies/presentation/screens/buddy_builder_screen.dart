@@ -72,10 +72,12 @@ class _BuddyBuilderView extends StatefulWidget {
 
 class _BuddyBuilderViewState extends State<_BuddyBuilderView> {
   final _name = TextEditingController();
+  final _destination = TextEditingController();
 
   @override
   void dispose() {
     _name.dispose();
+    _destination.dispose();
     super.dispose();
   }
 
@@ -250,6 +252,33 @@ class _BuddyBuilderViewState extends State<_BuddyBuilderView> {
               options: [for (final t in s.groupTopics) (t.id, buddyTopicLabel(l10n, t.id))],
               onChanged: s.group == null ? null : cubit.selectTopic,
             ),
+            // Owner 2026-10-25: travel topics ask where the user wants to go.
+            if (BuddyCatalog.needsDestination(s.topic)) ...[
+              const SizedBox(height: 16),
+              TextField(
+                key: const ValueKey('buddy-destination'),
+                controller: _destination,
+                maxLength: BuddyCatalog.maxDestinationChars,
+                textInputAction: TextInputAction.next,
+                style: const TextStyle(color: AppColors.textPrimary),
+                onChanged: cubit.setDestination,
+                decoration: InputDecoration(
+                  labelText: l10n.buddyDestinationPrompt,
+                  hintText: l10n.buddyDestinationHint,
+                  helperText: l10n.buddyDestinationNote,
+                  helperMaxLines: 2,
+                  errorText: s.showDestinationError ? l10n.buddyDestinationInvalid : null,
+                  errorMaxLines: 3,
+                  prefixIcon: const Icon(Icons.place_outlined, color: AppColors.richGold),
+                  labelStyle: const TextStyle(color: AppColors.textTertiary),
+                  hintStyle: const TextStyle(color: AppColors.textTertiary),
+                  helperStyle: const TextStyle(color: AppColors.textTertiary),
+                  filled: true,
+                  fillColor: AppColors.backgroundCard,
+                  border: OutlineInputBorder(borderRadius: BorderRadius.circular(14)),
+                ),
+              ),
+            ],
             const SizedBox(height: 16),
             _select(
               key: const ValueKey('buddy-language'),

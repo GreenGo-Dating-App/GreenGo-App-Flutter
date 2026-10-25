@@ -18,6 +18,7 @@ class BuddySettings extends Equatable {
     this.cefr,
     this.chatLanguage,
     this.userLanguage,
+    this.destination,
     this.checkInsEnabled = true,
   });
 
@@ -43,6 +44,10 @@ class BuddySettings extends Equatable {
   /// fixed. The server skips translating a user message already in the chat
   /// language and uses it as the translation source. Null on older Buddies.
   final String? userLanguage;
+
+  /// Where the user wants to go (travel topics, owner 2026-10-25): the Buddy
+  /// centres the chat on this place. Editable; null when not given.
+  final String? destination;
   final bool checkInsEnabled;
 
   /// The callable payload (`createBuddy {settings}`). Optional fields are
@@ -58,6 +63,7 @@ class BuddySettings extends Equatable {
         if (cefr != null) 'cefr': cefr,
         if (chatLanguage != null) 'chatLanguage': chatLanguage,
         if (userLanguage != null) 'userLanguage': userLanguage,
+        if (destination != null && destination!.isNotEmpty) 'destination': destination,
         'checkInsEnabled': checkInsEnabled,
       };
 
@@ -80,12 +86,13 @@ class BuddySettings extends Equatable {
         cefr: cefr,
         chatLanguage: chatLanguage,
         userLanguage: userLanguage,
+        destination: destination,
         checkInsEnabled: checkInsEnabled ?? this.checkInsEnabled,
       );
 
   @override
   List<Object?> get props =>
-      [name, avatar, topic, role, tone, language, level, cefr, chatLanguage, userLanguage, checkInsEnabled];
+      [name, avatar, topic, role, tone, language, level, cefr, chatLanguage, userLanguage, destination, checkInsEnabled];
 }
 
 /// One long-term fact the Buddy remembers (server `MemoryFact`).

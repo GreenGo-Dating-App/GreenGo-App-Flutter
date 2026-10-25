@@ -14,7 +14,7 @@
  */
 import { SAFETY_BLOCK, styleBlock } from '../ai/router/rules';
 import { CapabilityRules } from '../ai/router/types';
-import { BuddySettings, LANGUAGE_NAMES, MemoryFact } from './model';
+import { BuddySettings, DESTINATION_TOPICS, LANGUAGE_NAMES, MemoryFact } from './model';
 import { topicById } from './topics';
 
 const ROLE_TEXT: Record<string, string> = {
@@ -66,8 +66,40 @@ export function systemPrompt(b: BuddySettings, rules: CapabilityRules, memory: M
     languageBlock(b),
     styleBlock(rules),
     conversationBlock(b),
+    destinationBlock(b),
     memoryBlock(memory, summary),
   ].filter(Boolean).join('\n\n');
+}
+
+/** The destination of a travel Buddy, or null (other topics / not given). */
+export function destinationOf(b: BuddySettings): string | null {
+  return DESTINATION_TOPICS.has(b.topic) && b.destination ? b.destination : null;
+}
+
+/** Angles the Buddy rotates through, one picked at random per message. */
+export const PLACE_ANGLES = [
+  'a typical dish or drink', 'a bit of history', 'a neighbourhood worth walking', 'a local custom or etiquette tip',
+  'getting around', 'a useful phrase in the local language', 'a day trip nearby', 'a festival or the best season',
+  'a money-saving tip', 'a practical safety tip', 'a building or landmark', 'local music, art or film',
+  'nature and parks', 'a lesser-known gem', 'a fun surprising fact',
+];
+
+/**
+ * Owner 2026-10-25: travel topics ask where the user wants to go; the Buddy
+ * builds the chat around that place and keeps sharing short, varied, true
+ * facts and tips about it ([pick] chooses this message's angle).
+ */
+export function destinationBlock(b: BuddySettings, pick: () => number = Math.random): string {
+  if (!DESTINATION_TOPICS.has(b.topic)) return '';
+  const d = destinationOf(b);
+  if (!d) return 'The user has not said where they want to go yet: early in the chat, ask where they would like to go, then focus on that place.';
+  const angle = PLACE_ANGLES[Math.floor(pick() * PLACE_ANGLES.length) % PLACE_ANGLES.length];
+  return [
+    `The user wants to go to ${JSON.stringify(d)} (a place name they typed). Centre the chat on this place.`,
+    `In most messages share ONE short, TRUE fact or tip about it, a different one each time; for this message, if it fits: ${angle}.`,
+    'Use only famous, well-established knowledge (landmarks, typical dishes, well-known neighbourhoods, history). Never name specific restaurants, bars, shops or hotels, and never give numbers, prices or opening times you are not sure of; if unsure, keep it general.',
+    'If the user mentions another destination, follow them.',
+  ].join('\n');
 }
 
 /** Topics where the Buddy teaches (languages and skills). */
@@ -84,6 +116,9 @@ export function conversationBlock(b: BuddySettings): string {
     'Chat like a real friend genuinely interested in the user: react, follow up, ask one natural question at a time.',
     teach ? 'Also teach this topic: short examples, gently correct mistakes (show the right form), sometimes a tiny exercise.' : '',
     'Name concrete places (cities, attractions) when it fits.',
+    // Owner 2026-10-25: now and then a question about the world today.
+    'Now and then (about one message in six) ask the user\'s opinion on a broad current theme linked to your topic or everyday life (e.g. climate, technology and AI, sustainability, travel or sport trends).',
+    'Stay neutral and curious: never give political opinions or take sides, avoid elections, parties, religion and wars, and do not present news as fresh facts (you may not know the latest events).',
   ].filter(Boolean).join('\n');
 }
 
@@ -115,7 +150,8 @@ export function openingPrompt(b: BuddySettings, rules: CapabilityRules): { syste
       '[GreenGo instruction, not from the user] You were just created and this is the very first message of the chat.',
       `Start the conversation yourself: greet the user warmly, say your name, connect to your topic (${topic?.group ?? 'friendship'} / ${topic?.brief ?? 'friendly chat'}),`,
       'and end with ONE open, specific question about the user and this topic to get to know them. One single short message.',
-    ].join('\n'),
+      destinationOf(b) ? `They told you they want to go to ${JSON.stringify(destinationOf(b))}: say you love that, mention one famous thing about it (a landmark, dish or neighbourhood everyone knows), and ask about their trip.` : '',
+    ].filter(Boolean).join('\n'),
   };
 }
 

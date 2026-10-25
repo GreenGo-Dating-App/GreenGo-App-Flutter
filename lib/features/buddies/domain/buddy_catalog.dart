@@ -62,6 +62,29 @@ class BuddyCatalog {
     return s;
   }
 
+  /// Travel topics that ask where the user wants to go (owner 2026-10-25).
+  /// Same list as the server's DESTINATION_TOPICS (functions/src/buddies/model.ts).
+  static const Set<String> destinationTopics = {
+    'city_guides', 'budget_travel', 'backpacking', 'road_trips', 'local_food_travel',
+    'packing', 'solo_travel', 'travel_phrases', 'nature_trips',
+  };
+
+  static bool needsDestination(String? topic) => destinationTopics.contains(topic);
+
+  /// Max characters of a destination (server cleanDestination).
+  static const int maxDestinationChars = 60;
+
+  static final RegExp _placeChars = RegExp(r"^[\p{L}\p{M}\p{N} ,.'()\-]+$", unicode: true);
+
+  /// The destination as the server stores it: '' = none, null = refused
+  /// (1-60 letters / digits / space , . ' - ( )).
+  static String? cleanDestination(String raw) {
+    final s = raw.trim().replaceAll(RegExp(r'\s+'), ' ');
+    if (s.isEmpty) return '';
+    if (s.runes.length > maxDestinationChars || !_placeChars.hasMatch(s)) return null;
+    return s;
+  }
+
   static final Map<String, BuddyTopic> _byId = {
     for (final t in kBuddyTopics) t.id: t,
   };
