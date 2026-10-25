@@ -9,7 +9,11 @@ import '../../../../core/services/usage_limit_service.dart';
 import '../../../gamification/domain/usecases/track_user_action.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../domain/entities/conversation.dart';
+import '../../data/chat_constants.dart';
+import '../../data/datasources/chat_message_cache.dart';
 import '../../domain/entities/message.dart';
+import '../../domain/entities/message_page.dart';
+import '../../domain/message_window.dart';
 import '../../domain/usecases/block_user.dart';
 import '../../domain/usecases/delete_conversation.dart';
 import '../../domain/usecases/delete_message.dart';
@@ -48,11 +52,15 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
     required this.deleteConversationForBoth,
     UsageLimitService? usageLimitService,
     TrackUserAction? trackUserAction,
+    ChatMessageCache? messageCache,
   })  : _usageLimitService = usageLimitService ?? UsageLimitService(),
         _trackUserAction = trackUserAction,
+        _messageCache = messageCache ?? JsonChatMessageCache.instance,
         super(const ChatInitial()) {
     on<ChatConversationLoaded>(_onConversationLoaded);
     on<_ChatMessagesUpdated>(_onChatMessagesUpdated);
+    on<_ChatConversationRefreshed>(_onConversationRefreshed);
+    on<ChatOlderMessagesRequested>(_onOlderMessagesRequested);
     on<ChatMessageSent>(_onMessageSent);
     on<ChatMessagesMarkedAsRead>(_onMessagesMarkedAsRead);
     on<ChatTypingIndicatorChanged>(_onTypingIndicatorChanged);
@@ -92,15 +100,29 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
   String? _currentUserId;
   String? _otherUserId;
   bool _hasLoadedOnce = false;
-  // Bounded default window; the screen grows it in pages as the user scrolls up.
-  int _messageLimit = 30;
+  // Live window size = older page size (owner 2026-10-24: newest 20, then
+  // pages of 20 on scroll).
+  int _pageSize = kChatPageSize;
 
-  // Persistent live-messages subscription. Established once in
-  // [_onConversationLoaded] and kept alive across sends/actions so real-time
-  // delivery is never torn down (previously each send re-subscribed, adding
-  // multi-second latency). Snapshots arrive as [_ChatMessagesUpdated] events.
-  StreamSubscription<Either<Failure, List<Message>>>? _messagesSub;
+  final ChatMessageCache _messageCache;
+
+  // Persistent live-window subscription (the newest [_pageSize] messages
+  // only). Established once in [_onConversationLoaded] and kept alive across
+  // sends/actions so real-time delivery is never torn down. Older messages
+  // are fetched once per page ([ChatOlderMessagesRequested]) and never
+  // listened to, so scrolling back never re-reads what is already loaded.
+  StreamSubscription<Either<Failure, MessagePage>>? _messagesSub;
   Conversation? _conversation;
+
+  /// Cached copy → live window + older pages (see [MessageWindow]).
+  final MessageWindow _window = MessageWindow();
+  bool _loadingOlder = false;
+
+  // Mark-as-read runs one at a time (it reads + writes): a request while one
+  // is in flight is replayed once afterwards.
+  bool _markingRead = false;
+  bool _markReadAgain = false;
+  bool _markedOnOpen = false;
 
   Future<void> _onConversationLoaded(
     ChatConversationLoaded event,
@@ -114,11 +136,28 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
     _matchId = event.matchId;
     _currentUserId = event.currentUserId;
     _otherUserId = event.otherUserId;
+    if (event.limit != null) _pageSize = event.limit!;
+    _window.reset();
+    _loadingOlder = false;
+    _markedOnOpen = false;
 
     // When the caller already handed us the conversation (e.g. openConnectChat
-    // just created it), use it DIRECTLY — no network read, so a brand-new chat
-    // opens instantly and can never hang on the loading spinner.
+    // just created it, or the Exchanges list), use it DIRECTLY — no network
+    // read, so the chat opens instantly and can never hang on the spinner.
     Conversation? conversation = event.conversation;
+
+    // CACHE FIRST (owner 2026-10-24): the last messages of this chat (and its
+    // conversation) from the device paint before any network read. A Hive
+    // read: milliseconds, bounded so it can never delay the open.
+    final cached = await _readCache(event.matchId);
+    conversation ??= cached?.conversation;
+    if (cached != null &&
+        conversation != null &&
+        _window.showCached(cached.messages)) {
+      _conversation = conversation;
+      _conversationId = conversation.conversationId;
+      emit(_loaded());
+    }
 
     if (conversation == null) {
       // Get or create conversation. Hard-timeout so a stuck read can NEVER hang
@@ -137,6 +176,18 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
         },
         (conversation) => conversation,
       );
+    } else if (event.conversation == null) {
+      // Painted with the cached conversation: refresh its fields in the
+      // background (cache-first read) without holding the messages back.
+      final matchId = event.matchId;
+      unawaited(getConversation(matchId).then(
+        (r) => r.fold((_) {}, (c) {
+          if (!isClosed && _matchId == matchId) {
+            add(_ChatConversationRefreshed(c));
+          }
+        }),
+        onError: (Object _) {},
+      ));
     }
 
     if (conversation == null) return;
@@ -144,39 +195,21 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
     _conversationId = conversation.conversationId;
     _conversation = conversation;
     _hasLoadedOnce = true;
-    if (event.limit != null) {
-      _messageLimit = event.limit!;
-    }
 
-    // Clear the loading spinner IMMEDIATELY once the conversation resolves — the
-    // live messages stream below then fills in and keeps updating the list. This
-    // guarantees the chat never hangs on the spinner even if the first snapshot
-    // is delayed or the stream errors (the repo's handleError swallows errors,
-    // so a stream error would otherwise never surface and the spinner would
-    // spin forever).
+    // Clear the full-screen spinner IMMEDIATELY once the conversation resolves
+    // (the input bar shows; the list keeps a small spinner until the first
+    // snapshot), so the chat never hangs on the spinner even if the first
+    // snapshot is delayed or the stream errors.
     if (state is! ChatLoaded) {
-      emit(ChatLoaded(
-        conversation: conversation,
-        messages: const [],
-        currentUserId: event.currentUserId,
-        otherUserId: event.otherUserId,
-        isOtherUserTyping: conversation.isOtherUserTyping(event.currentUserId),
-      ));
+      emit(_loaded(messagesReady: false));
     }
 
-    // Establish a PERSISTENT subscription to the live messages stream. Each
-    // snapshot is folded into a ChatLoaded by [_onChatMessagesUpdated]. Unlike
-    // the old `emit.forEach`, this subscription is NOT bound to the lifetime of
-    // this handler, so sending a message (or any action) no longer tears it
-    // down and rebuilds it — real-time delivery stays live.
+    // Establish a PERSISTENT subscription to the live window. Each snapshot
+    // is folded into a ChatLoaded by [_onChatMessagesUpdated]. Not bound to
+    // the lifetime of this handler, so sending a message (or any action)
+    // never tears it down.
     await _messagesSub?.cancel();
-    _messagesSub = getMessages(
-      GetMessagesParams(
-        conversationId: conversation.conversationId,
-        userId: event.currentUserId,
-        limit: _messageLimit,
-      ),
-    ).listen(
+    _messagesSub = getMessages.latest(_params()).listen(
       (result) => add(_ChatMessagesUpdated(result)),
       onError: (Object e, StackTrace s) {
         debugPrint('[Chat] messages stream error: $e');
@@ -184,35 +217,130 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
     );
   }
 
+  GetMessagesParams _params() => GetMessagesParams(
+        conversationId: _conversationId!,
+        userId: _currentUserId,
+        limit: _pageSize,
+      );
+
+  Future<CachedChat?> _readCache(String matchId) async {
+    try {
+      return await _messageCache
+          .load(ChatMessageCache.direct(matchId))
+          .timeout(const Duration(milliseconds: 400), onTimeout: () => null);
+    } catch (_) {
+      return null;
+    }
+  }
+
+  /// Keeps the device copy in step with what the server delivered.
+  void _saveCache() {
+    final matchId = _matchId;
+    if (matchId == null || _window.messages.isEmpty) return;
+    unawaited(_messageCache.save(
+        ChatMessageCache.direct(matchId), _window.messages,
+        conversation: _conversation));
+  }
+
+  /// The list state from the current fields.
+  ChatLoaded _loaded({bool messagesReady = true}) {
+    final conversation = _conversation!;
+    return ChatLoaded(
+      conversation: conversation,
+      messages: _window.messages,
+      currentUserId: _currentUserId!,
+      otherUserId: _otherUserId!,
+      isOtherUserTyping: conversation.isOtherUserTyping(_currentUserId!),
+      hasMore: _window.hasMore,
+      loadingOlder: _loadingOlder,
+      messagesReady: messagesReady,
+    );
+  }
+
+  bool get _canShowList =>
+      _conversation != null && _currentUserId != null && _otherUserId != null;
+
+  void _onConversationRefreshed(
+    _ChatConversationRefreshed event,
+    Emitter<ChatState> emit,
+  ) {
+    if (event.conversation.conversationId != _conversationId) return;
+    _conversation = event.conversation;
+    final st = state;
+    if (st is ChatLoaded) emit(_loaded(messagesReady: st.messagesReady));
+  }
+
   void _onChatMessagesUpdated(
     _ChatMessagesUpdated event,
     Emitter<ChatState> emit,
   ) {
-    final conversation = _conversation;
-    final currentUserId = _currentUserId;
-    final otherUserId = _otherUserId;
-    if (conversation == null || currentUserId == null || otherUserId == null) {
-      return;
-    }
+    if (!_canShowList) return;
 
     event.result.fold(
-      (failure) =>
-          emit(ChatError('Failed to load messages: ${failure.toString()}')),
-      (messages) {
-        // Auto-mark as read when messages are loaded
-        if (messages.isNotEmpty) {
-          add(const ChatMessagesMarkedAsRead());
+      (failure) {
+        // Messages already on screen (cache / earlier snapshots) stay.
+        if (_window.messages.isEmpty) {
+          emit(ChatError('Failed to load messages: ${failure.toString()}'));
+        } else {
+          debugPrint('[Chat] live window failed: $failure');
         }
-
-        emit(ChatLoaded(
-          conversation: conversation,
-          messages: messages,
-          currentUserId: currentUserId,
-          otherUserId: otherUserId,
-          isOtherUserTyping: conversation.isOtherUserTyping(currentUserId),
-        ));
+      },
+      (page) {
+        if (!_window.applyLive(page)) return;
+        _markReadIfNeeded(page);
+        emit(_loaded());
+        if (!page.fromCache) _saveCache();
       },
     );
+  }
+
+  /// Marks the conversation read once on open (which also repairs the unread
+  /// count), then only when the window holds an unread incoming message —
+  /// not on every snapshot.
+  void _markReadIfNeeded(MessagePage page) {
+    if (page.fromCache) return;
+    final me = _currentUserId;
+    final unread = page.messages
+        .any((m) => m.receiverId == me && m.senderId != me && m.readAt == null);
+    if (unread || !_markedOnOpen) {
+      _markedOnOpen = true;
+      add(const ChatMessagesMarkedAsRead());
+    }
+  }
+
+  Future<void> _onOlderMessagesRequested(
+    ChatOlderMessagesRequested event,
+    Emitter<ChatState> emit,
+  ) async {
+    if (_loadingOlder || !_window.hasMore || !_window.liveLoaded) return;
+    final before = _window.nextCursor;
+    if (before == null || _conversationId == null || !_canShowList) return;
+
+    _loadingOlder = true;
+    emit(_loaded());
+    final result = await getMessages.older(_params(), before: before);
+    _loadingOlder = false;
+    result.fold(
+      (failure) => debugPrint('[Chat] older page failed: $failure'),
+      _window.applyOlder,
+    );
+    emit(_loaded());
+  }
+
+  /// A message removed by this user leaves the (static) older pages too; the
+  /// live window drops it with its next snapshot.
+  void _dropMessage(String messageId, Emitter<ChatState> emit) {
+    if (!_window.drop(messageId)) return;
+    if (_canShowList) emit(_loaded());
+    _saveCache();
+  }
+
+  /// The conversation was cleared: its local copy goes too.
+  void _clearCachedChat() {
+    final matchId = _matchId;
+    if (matchId != null) {
+      unawaited(_messageCache.clear(ChatMessageCache.direct(matchId)));
+    }
   }
 
   Future<void> _onMessageSent(
@@ -303,13 +431,24 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
     Emitter<ChatState> emit,
   ) async {
     if (_conversationId == null || _currentUserId == null) return;
-
-    await markAsRead(
-      MarkAsReadParams(
-        conversationId: _conversationId!,
-        userId: _currentUserId!,
-      ),
-    );
+    if (_markingRead) {
+      _markReadAgain = true;
+      return;
+    }
+    _markingRead = true;
+    try {
+      do {
+        _markReadAgain = false;
+        await markAsRead(
+          MarkAsReadParams(
+            conversationId: _conversationId!,
+            userId: _currentUserId!,
+          ),
+        );
+      } while (_markReadAgain && !isClosed);
+    } finally {
+      _markingRead = false;
+    }
   }
 
   Future<void> _onTypingIndicatorChanged(
@@ -356,6 +495,7 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
       (_) {
         AppSoundService().play(AppSound.messageDeleted);
         emit(const ChatMessageActionSuccess('Message deleted'));
+        _dropMessage(event.messageId, emit);
       },
     );
   }
@@ -381,6 +521,7 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
       (_) {
         AppSoundService().play(AppSound.messageDeleted);
         emit(const ChatMessageActionSuccess('Message deleted for you'));
+        _dropMessage(event.messageId, emit);
       },
     );
   }
@@ -405,6 +546,7 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
       },
       (_) {
         emit(const ChatMessageActionSuccess('Message deleted for everyone'));
+        _dropMessage(event.messageId, emit);
       },
     );
   }
@@ -522,6 +664,7 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
         emit(ChatError('Failed to delete conversation: ${failure.message}'));
       },
       (_) {
+        _clearCachedChat();
         emit(const ChatConversationDeleted());
       },
     );
@@ -545,6 +688,7 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
         emit(ChatError('Failed to delete conversation: ${failure.message}'));
       },
       (_) {
+        _clearCachedChat();
         emit(const ChatConversationDeleted());
       },
     );
@@ -725,5 +869,11 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
 /// only the bloc can dispatch it.
 class _ChatMessagesUpdated extends ChatEvent {
   const _ChatMessagesUpdated(this.result);
-  final Either<Failure, List<Message>> result;
+  final Either<Failure, MessagePage> result;
+}
+
+/// The conversation re-read in the background after a cached paint.
+class _ChatConversationRefreshed extends ChatEvent {
+  const _ChatConversationRefreshed(this.conversation);
+  final Conversation conversation;
 }

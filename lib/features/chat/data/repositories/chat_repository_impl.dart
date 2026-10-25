@@ -5,7 +5,9 @@ import '../../../../core/error/failures.dart';
 import '../../../analytics/data/services/performance_monitoring_service.dart';
 import '../../domain/entities/conversation.dart';
 import '../../domain/entities/message.dart';
+import '../../domain/entities/message_page.dart';
 import '../../domain/repositories/chat_repository.dart';
+import '../chat_constants.dart';
 import '../datasources/chat_remote_datasource.dart';
 import '../models/message_model.dart';
 
@@ -56,6 +58,45 @@ class ChatRepositoryImpl implements ChatRepository {
       );
     } catch (e) {
       return Stream.value(Left(ServerFailure(e.toString())));
+    }
+  }
+
+  @override
+  Stream<Either<Failure, MessagePage>> watchLatestMessages({
+    required String conversationId,
+    String? userId,
+    int? limit,
+  }) {
+    try {
+      return remoteDataSource
+          .watchLatestMessages(
+            conversationId: conversationId,
+            userId: userId,
+            limit: limit ?? kChatPageSize,
+          )
+          .map<Either<Failure, MessagePage>>(Right.new)
+          .transform(_errorsToLeft<MessagePage>());
+    } catch (e) {
+      return Stream.value(Left(ServerFailure(e.toString())));
+    }
+  }
+
+  @override
+  Future<Either<Failure, MessagePage>> getOlderMessages({
+    required String conversationId,
+    required DateTime before,
+    String? userId,
+    int? limit,
+  }) async {
+    try {
+      return Right(await remoteDataSource.getOlderMessages(
+        conversationId: conversationId,
+        before: before,
+        userId: userId,
+        limit: limit ?? kChatPageSize,
+      ));
+    } catch (e) {
+      return Left(ServerFailure('Failed to load older messages: $e'));
     }
   }
 

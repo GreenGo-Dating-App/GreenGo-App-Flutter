@@ -289,19 +289,14 @@ class _ChatScreenState extends State<ChatScreen> {
   String? _phraseAuthor;
   bool _showPhraseOfDay = true;
 
-  // Pagination — open on a BOUNDED latest window (Firestore offline persistence
-  // serves it from the device cache and only syncs newer messages), then page
-  // older messages in on scroll instead of ever loading the whole history.
-  static const int _initialMessageWindow = 30;
-  static const int _messagePageSize = 30;
-  int _messageLimit = _initialMessageWindow;
-  int _loadedBeforeLastPage = -1;
+  // Pagination lives in ChatBloc: the device copy paints first, then a live
+  // window of the newest 20 messages; older pages of 20 load on scroll
+  // ([ChatOlderMessagesRequested]) instead of ever loading the whole history.
   // In-flight upload progress subscription — cancelled in dispose() so an upload
   // finishing after the screen closes can't setState into a disposed widget.
   StreamSubscription<TaskSnapshot>? _uploadSub;
   StreamSubscription<void>? _screenshotSub;
   final ChatScreenshotNotice _screenshotNotice = ChatScreenshotNotice();
-  bool _isLoadingMore = false;
 
   LanguageProvider? _languageProvider;
   String? _currentUserName;
@@ -328,7 +323,6 @@ class _ChatScreenState extends State<ChatScreen> {
         matchId: widget.matchId,
         currentUserId: widget.currentUserId,
         otherUserId: widget.otherUserId,
-        limit: _messageLimit,
         conversation: widget.initialConversation,
       ));
     _chatDataSource = ChatRemoteDataSourceImpl(
@@ -523,31 +517,23 @@ class _ChatScreenState extends State<ChatScreen> {
     }
   }
 
-  @override
   /// Load more messages when user scrolls to the top (oldest messages)
   void _onScroll() {
-    if (_isLoadingMore) return;
+    final st = _chatBloc.state;
+    if (st is! ChatLoaded || !st.hasMore || st.loadingOlder) return;
     // In a reversed ListView, maxScrollExtent is the top (oldest messages)
     if (_scrollController.position.pixels >=
         _scrollController.position.maxScrollExtent - 100) {
-      // The last page added nothing = the whole history is already here.
-      final st = _chatBloc.state;
-      final loaded = st is ChatLoaded ? st.messages.length : 0;
-      if (loaded <= _loadedBeforeLastPage) return;
-      _loadedBeforeLastPage = loaded;
-      setState(() => _isLoadingMore = true);
-      _messageLimit += _messagePageSize;
-      _chatBloc.add(ChatConversationLoaded(
-        matchId: widget.matchId,
-        currentUserId: widget.currentUserId,
-        otherUserId: widget.otherUserId,
-        limit: _messageLimit,
-      ));
-      // Reset loading flag after a short delay
-      Future.delayed(const Duration(seconds: 1), () {
-        if (mounted) setState(() => _isLoadingMore = false);
-      });
+      // One cursor-based page; the bloc ignores repeats while it loads.
+      _chatBloc.add(const ChatOlderMessagesRequested());
     }
+  }
+
+  /// The loaded messages don't fill the list (nothing to scroll): ask for
+  /// the next older page as if the user had scrolled to the top.
+  void _fillViewport() {
+    if (!mounted || !_scrollController.hasClients) return;
+    if (_scrollController.position.maxScrollExtent <= 0) _onScroll();
   }
 
   @override
@@ -1992,8 +1978,19 @@ class _ChatScreenState extends State<ChatScreen> {
             // Messages list
             Expanded(
               child: BlocBuilder<ChatBloc, ChatState>(
+                // Action results (starred, deleted, reported...) are not list
+                // states: the list keeps showing instead of blanking until
+                // the next snapshot (older pages are not live).
+                buildWhen: (_, b) =>
+                    b is ChatLoading ||
+                    b is ChatLoaded ||
+                    b is ChatSending ||
+                    b is ChatError,
                 builder: (context, state) {
-                  if (state is ChatLoading) {
+                  if (state is ChatLoading ||
+                      (state is ChatLoaded &&
+                          !state.messagesReady &&
+                          state.messages.isEmpty)) {
                     return const Center(
                       child: CircularProgressIndicator(
                         color: AppColors.richGold,
@@ -2096,8 +2093,15 @@ class _ChatScreenState extends State<ChatScreen> {
                       );
                     }
 
-                    final hasMoreMessages = messages.length >= _messageLimit;
+                    final hasMoreMessages = state is ChatLoaded && state.hasMore;
+                    final loadingOlder = state is ChatLoaded && state.loadingOlder;
                     final extraItems = (isOtherUserTyping ? 1 : 0) + (hasMoreMessages ? 1 : 0);
+                    // A page that doesn't fill the screen can't be scrolled:
+                    // load the next one right away.
+                    if (hasMoreMessages && !loadingOlder) {
+                      WidgetsBinding.instance
+                          .addPostFrameCallback((_) => _fillViewport());
+                    }
 
                     // One-time chat tutorial: hold = translate menu,
                     // double-tap = pronunciation (anchored on the newest
@@ -2141,7 +2145,7 @@ class _ChatScreenState extends State<ChatScreen> {
                           return Padding(
                             padding: const EdgeInsets.symmetric(vertical: 16),
                             child: Center(
-                              child: _isLoadingMore
+                              child: loadingOlder
                                   ? const SizedBox(
                                       width: 24,
                                       height: 24,

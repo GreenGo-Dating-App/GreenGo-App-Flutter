@@ -132,18 +132,9 @@ class _GroupChatView extends StatefulWidget {
 class _GroupChatViewState extends State<_GroupChatView> {
   final _controller = TextEditingController();
 
-  /// Max time the message list waits for sender names before rendering anyway
-  /// (labels of still-unresolved senders stay blank — never ids).
-  static const Duration _namesMaxWait = Duration(milliseconds: 2500);
-
-  // Endless scroll: open on a bounded window and page older messages in on
-  // scroll (Firestore offline persistence serves them cache-first).
+  // Endless scroll: GroupChatBloc paints the device copy, listens to the
+  // newest 20 messages and loads older pages of 20 on scroll.
   final _scrollController = ScrollController();
-  static const int _initialMessageWindow = 30;
-  static const int _messagePageSize = 30;
-  int _messageLimit = _initialMessageWindow;
-  int _loadedBeforeLastPage = -1;
-  bool _isLoadingMore = false;
 
   // Per-user, per-group translation settings (local; scales with no backend).
   bool _translate = true;
@@ -215,30 +206,22 @@ class _GroupChatViewState extends State<_GroupChatView> {
     }
   }
 
-  /// Reversed list → maxScrollExtent is the TOP (oldest). Near it, grow the
-  /// window and re-subscribe so older messages page in.
+  /// Reversed list → maxScrollExtent is the TOP (oldest). Near it, load the
+  /// next older page (one cursor-based read; the bloc ignores repeats).
   void _onScroll() {
-    if (_isLoadingMore) return;
+    final st = context.read<GroupChatBloc>().state;
+    if (st is! GroupChatLoaded || !st.hasMore || st.loadingOlder) return;
     if (_scrollController.position.pixels >=
         _scrollController.position.maxScrollExtent - 100) {
-      // The last page added nothing = the whole history is already here.
-      final st = context.read<GroupChatBloc>().state;
-      final loaded = st is GroupChatLoaded ? st.messages.length : 0;
-      if (loaded <= _loadedBeforeLastPage) return;
-      _loadedBeforeLastPage = loaded;
-      setState(() => _isLoadingMore = true);
-      _messageLimit += _messagePageSize;
-      context.read<GroupChatBloc>().add(
-            GroupChatStarted(
-              groupId: widget.groupId,
-              userId: widget.currentUserId,
-              limit: _messageLimit,
-            ),
-          );
-      Future.delayed(const Duration(seconds: 1), () {
-        if (mounted) setState(() => _isLoadingMore = false);
-      });
+      context.read<GroupChatBloc>().add(const GroupChatOlderRequested());
     }
+  }
+
+  /// The loaded messages don't fill the list (nothing to scroll): ask for
+  /// the next older page as if the user had scrolled to the top.
+  void _fillViewport() {
+    if (!mounted || !_scrollController.hasClients) return;
+    if (_scrollController.position.maxScrollExtent <= 0) _onScroll();
   }
 
   Future<void> _loadTranslationPrefs() async {
@@ -842,6 +825,9 @@ class _GroupChatViewState extends State<_GroupChatView> {
         ],
       ),
       body: BlocConsumer<GroupChatBloc, GroupChatState>(
+        // Action results are not list states: the list keeps showing.
+        buildWhen: (_, b) =>
+            b is! GroupChatActionFailure && b is! GroupChatLeftSuccess,
         listener: (context, state) {
           if (state is GroupChatActionFailure) {
             showUserError(context, state.message);
@@ -858,15 +844,41 @@ class _GroupChatViewState extends State<_GroupChatView> {
           }
           final messages =
               state is GroupChatLoaded ? state.messages : <Message>[];
-          // Sender names are loaded BEFORE the list is shown: the spinner stays
-          // up until every sender of the loaded page is resolved (capped at
-          // [_namesMaxWait]); later senders get a reserved, blank label that
-          // fills in when their brief arrives.
+          if (state is GroupChatLoaded && state.hasMore && !state.loadingOlder) {
+            WidgetsBinding.instance.addPostFrameCallback((_) => _fillViewport());
+          }
+          // Sender names never hold the messages back (owner 2026-10-24:
+          // nothing blocks the first paint): the list shows at once, a sender
+          // not resolved yet keeps a reserved, blank label (never an id) that
+          // fills in when the brief arrives (the directory is persisted, so
+          // known senders resolve from the device).
           final senderIds = messages
               .where((m) =>
                   m.type != MessageType.system &&
                   m.senderId != widget.currentUserId)
               .map((m) => m.senderId);
+          final list = ListView.builder(
+            reverse: true,
+            controller: _scrollController,
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+            itemCount: messages.length,
+            itemBuilder: (context, index) {
+              final m = messages[index];
+              if (isDeletedAuthorMessage(m.senderId)) {
+                return const DeletedMessageBubble(compact: true);
+              }
+              return _GroupMessageBubble(
+                groupId: widget.groupId,
+                message: m,
+                isMine: m.senderId == widget.currentUserId,
+                currentUserId: widget.currentUserId,
+                translate: _translate,
+                targetLang: _targetLang,
+                showOriginal: _showOriginal,
+                ttsReadTranslated: _ttsReadTranslated,
+              );
+            },
+          );
           return Column(
             children: [
               Expanded(
@@ -875,32 +887,9 @@ class _GroupChatViewState extends State<_GroupChatView> {
                         child: Text(AppLocalizations.of(context)!.groupSayHello))
                     : ResolvedUsersBuilder(
                         uids: senderIds,
-                        maxWait: _namesMaxWait,
-                        placeholder: const Center(
-                            child: CircularProgressIndicator()),
-                        builder: (context, _) => ListView.builder(
-                        reverse: true,
-                        controller: _scrollController,
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 12, vertical: 8),
-                        itemCount: messages.length,
-                        itemBuilder: (context, index) {
-                          final m = messages[index];
-                          if (isDeletedAuthorMessage(m.senderId)) {
-                            return const DeletedMessageBubble(compact: true);
-                          }
-                          return _GroupMessageBubble(
-                            groupId: widget.groupId,
-                            message: m,
-                            isMine: m.senderId == widget.currentUserId,
-                            currentUserId: widget.currentUserId,
-                            translate: _translate,
-                            targetLang: _targetLang,
-                            showOriginal: _showOriginal,
-                            ttsReadTranslated: _ttsReadTranslated,
-                          );
-                        },
-                      ),
+                        // Resolves the senders in one batch; never waits.
+                        placeholder: list,
+                        builder: (context, _) => list,
                       ),
               ),
               _InputBar(

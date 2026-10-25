@@ -27,6 +27,9 @@ class ChatLoaded extends ChatState {
     required this.currentUserId,
     required this.otherUserId,
     this.isOtherUserTyping = false,
+    this.hasMore = false,
+    this.loadingOlder = false,
+    this.messagesReady = true,
   });
   final Conversation conversation;
   final List<Message> messages;
@@ -34,12 +37,25 @@ class ChatLoaded extends ChatState {
   final String otherUserId;
   final bool isOtherUserTyping;
 
+  /// Older messages may exist (scrolling up loads the next page).
+  final bool hasMore;
+
+  /// An older page is being fetched.
+  final bool loadingOlder;
+
+  /// False only while nothing is known yet (no cached copy, no snapshot):
+  /// the list shows a spinner, not the empty "say hi" state.
+  final bool messagesReady;
+
   ChatLoaded copyWith({
     Conversation? conversation,
     List<Message>? messages,
     String? currentUserId,
     String? otherUserId,
     bool? isOtherUserTyping,
+    bool? hasMore,
+    bool? loadingOlder,
+    bool? messagesReady,
   }) {
     return ChatLoaded(
       conversation: conversation ?? this.conversation,
@@ -47,6 +63,9 @@ class ChatLoaded extends ChatState {
       currentUserId: currentUserId ?? this.currentUserId,
       otherUserId: otherUserId ?? this.otherUserId,
       isOtherUserTyping: isOtherUserTyping ?? this.isOtherUserTyping,
+      hasMore: hasMore ?? this.hasMore,
+      loadingOlder: loadingOlder ?? this.loadingOlder,
+      messagesReady: messagesReady ?? this.messagesReady,
     );
   }
 }

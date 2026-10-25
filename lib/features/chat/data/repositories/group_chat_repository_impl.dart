@@ -1,9 +1,13 @@
+import 'dart:async';
+
 import 'package:dartz/dartz.dart';
 import '../../../../core/error/failures.dart';
 import '../../domain/entities/conversation.dart';
 import '../../domain/entities/group_info.dart';
 import '../../domain/entities/message.dart';
+import '../../domain/entities/message_page.dart';
 import '../../domain/repositories/group_chat_repository.dart';
+import '../chat_constants.dart';
 import '../datasources/group_chat_remote_datasource.dart';
 
 /// Implementation of [GroupChatRepository] backed by Firestore.
@@ -81,6 +85,41 @@ class GroupChatRepositoryImpl implements GroupChatRepository {
         limit: limit ?? GroupChatRemoteDataSourceImpl.defaultMessageLimit,
       );
       return Right(page.map((m) => m.toEntity()).toList());
+    } catch (e) {
+      return Left(ServerFailure('Failed to load older messages: $e'));
+    }
+  }
+
+  @override
+  Stream<Either<Failure, MessagePage>> watchLatestGroupMessages({
+    required String groupId,
+    int? limit,
+  }) {
+    return remoteDataSource
+        .watchLatestGroupMessages(
+            groupId: groupId, limit: limit ?? kChatPageSize)
+        .transform(StreamTransformer<MessagePage,
+            Either<Failure, MessagePage>>.fromHandlers(
+          handleData: (page, sink) => sink.add(Right(page)),
+          // A stream error reaches the bloc as a Left (handleError would
+          // swallow it).
+          handleError: (e, _, sink) =>
+              sink.add(Left(ServerFailure('Failed to load messages: $e'))),
+        ));
+  }
+
+  @override
+  Future<Either<Failure, MessagePage>> getOlderGroupMessages({
+    required String groupId,
+    required DateTime before,
+    int? limit,
+  }) async {
+    try {
+      return Right(await remoteDataSource.getOlderGroupMessages(
+        groupId: groupId,
+        before: before,
+        limit: limit ?? kChatPageSize,
+      ));
     } catch (e) {
       return Left(ServerFailure('Failed to load older messages: $e'));
     }

@@ -939,6 +939,9 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                                       currentUserId: widget.userId,
                                       otherUserId: otherUserId,
                                       otherUserProfile: profile,
+                                      // Already loaded in this list: the
+                                      // chat opens without re-reading it.
+                                      initialConversation: conversation,
                                     ),
                                   ),
                                 );

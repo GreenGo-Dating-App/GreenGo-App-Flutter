@@ -18,10 +18,18 @@ class GroupChatLoaded extends GroupChatState {
     required this.groupId,
     required this.userId,
     required this.messages,
+    this.hasMore = false,
+    this.loadingOlder = false,
   });
   final String groupId;
   final String userId;
   final List<Message> messages;
+
+  /// Older messages may exist (scrolling up loads the next page).
+  final bool hasMore;
+
+  /// An older page is being fetched.
+  final bool loadingOlder;
 }
 
 class GroupChatError extends GroupChatState {

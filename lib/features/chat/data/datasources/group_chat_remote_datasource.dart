@@ -5,6 +5,7 @@ import '../../domain/chat_system_message.dart';
 import '../../domain/entities/conversation.dart';
 import '../../domain/entities/group_info.dart';
 import '../../domain/entities/message.dart';
+import '../../domain/entities/message_page.dart';
 import '../chat_constants.dart';
 import '../models/conversation_model.dart';
 import '../models/message_model.dart';
@@ -53,6 +54,20 @@ abstract class GroupChatRemoteDataSource {
     required String groupId,
     required DateTime before,
     int limit,
+  });
+
+  /// Live window of the newest [limit] messages (newest first). Only this
+  /// window is listened to; older pages come from [getOlderGroupMessages].
+  Stream<MessagePage> watchLatestGroupMessages({
+    required String groupId,
+    int limit = kChatPageSize,
+  });
+
+  /// One older page sent before [before] (keyset pagination, on scroll).
+  Future<MessagePage> getOlderGroupMessages({
+    required String groupId,
+    required DateTime before,
+    int limit = kChatPageSize,
   });
 
   /// Single-write message send. Group doc + every member inbox are updated by
@@ -368,6 +383,48 @@ class GroupChatRemoteDataSourceImpl implements GroupChatRemoteDataSource {
         .limit(limit)
         .get();
     return snap.docs.map(MessageModel.fromFirestore).toList();
+  }
+
+  @override
+  Stream<MessagePage> watchLatestGroupMessages({
+    required String groupId,
+    int limit = kChatPageSize,
+  }) {
+    return _groups
+        .doc(groupId)
+        .collection(messagesSub)
+        .orderBy('sentAt', descending: true)
+        .limit(limit)
+        .snapshots()
+        .map((snap) => _page(snap, limit));
+  }
+
+  @override
+  Future<MessagePage> getOlderGroupMessages({
+    required String groupId,
+    required DateTime before,
+    int limit = kChatPageSize,
+  }) async {
+    // Keyset page: same single-field index as the live window (equivalent
+    // to startAfter on `sentAt`).
+    final snap = await _groups
+        .doc(groupId)
+        .collection(messagesSub)
+        .where('sentAt', isLessThan: Timestamp.fromDate(before))
+        .orderBy('sentAt', descending: true)
+        .limit(limit)
+        .get();
+    return _page(snap, limit);
+  }
+
+  static MessagePage _page(QuerySnapshot<Map<String, dynamic>> snap, int limit) {
+    final last = snap.docs.isEmpty ? null : snap.docs.last.data()['sentAt'];
+    return MessagePage(
+      messages: snap.docs.map(MessageModel.fromFirestore).toList(),
+      hasMore: snap.docs.length >= limit,
+      cursor: last is Timestamp ? last.toDate() : null,
+      fromCache: snap.metadata.isFromCache,
+    );
   }
 
   @override

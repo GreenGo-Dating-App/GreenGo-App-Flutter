@@ -3,6 +3,7 @@ import '../../../../core/error/failures.dart';
 import '../entities/conversation.dart';
 import '../entities/group_info.dart';
 import '../entities/message.dart';
+import '../entities/message_page.dart';
 
 /// Group Chat Repository
 ///
@@ -28,6 +29,19 @@ abstract class GroupChatRepository {
   });
 
   Future<Either<Failure, List<Message>>> getGroupMessagesPage({
+    required String groupId,
+    required DateTime before,
+    int? limit,
+  });
+
+  /// Live window of the newest [limit] messages (newest first).
+  Stream<Either<Failure, MessagePage>> watchLatestGroupMessages({
+    required String groupId,
+    int? limit,
+  });
+
+  /// One older page sent before [before] (on scroll).
+  Future<Either<Failure, MessagePage>> getOlderGroupMessages({
     required String groupId,
     required DateTime before,
     int? limit,

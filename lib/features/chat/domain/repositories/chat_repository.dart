@@ -2,6 +2,7 @@ import 'package:dartz/dartz.dart';
 import '../../../../core/error/failures.dart';
 import '../entities/conversation.dart';
 import '../entities/message.dart';
+import '../entities/message_page.dart';
 
 /// Chat Repository
 ///
@@ -14,6 +15,21 @@ abstract class ChatRepository {
   /// Stream of messages for a conversation (real-time)
   Stream<Either<Failure, List<Message>>> getMessagesStream({
     required String conversationId,
+    String? userId,
+    int? limit,
+  });
+
+  /// Live window of the newest [limit] messages (newest first).
+  Stream<Either<Failure, MessagePage>> watchLatestMessages({
+    required String conversationId,
+    String? userId,
+    int? limit,
+  });
+
+  /// One older page of messages sent before [before] (on scroll).
+  Future<Either<Failure, MessagePage>> getOlderMessages({
+    required String conversationId,
+    required DateTime before,
     String? userId,
     int? limit,
   });

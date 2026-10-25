@@ -33,6 +33,12 @@ class GroupChatMessageSent extends GroupChatEvent {
   final String? detectedLanguage;
 }
 
+/// The user scrolled up to the oldest loaded message: load the next older
+/// page (one cursor-based read).
+class GroupChatOlderRequested extends GroupChatEvent {
+  const GroupChatOlderRequested();
+}
+
 class GroupChatMarkedRead extends GroupChatEvent {
   const GroupChatMarkedRead();
 }

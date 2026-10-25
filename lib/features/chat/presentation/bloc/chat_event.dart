@@ -29,6 +29,12 @@ class ChatConversationLoaded extends ChatEvent {
   final Conversation? conversation;
 }
 
+/// The user scrolled up to the oldest loaded message: load the next older
+/// page (one cursor-based read; already loaded messages are never re-read).
+class ChatOlderMessagesRequested extends ChatEvent {
+  const ChatOlderMessagesRequested();
+}
+
 /// Send a message
 class ChatMessageSent extends ChatEvent {
 

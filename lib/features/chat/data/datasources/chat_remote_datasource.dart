@@ -6,6 +6,7 @@ import '../../../../core/services/content_filter_service.dart';
 import '../../domain/chat_system_message.dart';
 import '../../domain/entities/conversation.dart';
 import '../../domain/entities/message.dart';
+import '../../domain/entities/message_page.dart';
 import '../chat_constants.dart';
 import '../models/conversation_model.dart';
 import '../models/message_model.dart';
@@ -23,6 +24,24 @@ abstract class ChatRemoteDataSource {
     required String conversationId,
     String? userId,
     int? limit,
+  });
+
+  /// Live window of the newest [limit] messages (newest first). Only this
+  /// window is listened to; older messages are fetched once, on scroll, with
+  /// [getOlderMessages].
+  Stream<MessagePage> watchLatestMessages({
+    required String conversationId,
+    String? userId,
+    int limit = kChatPageSize,
+  });
+
+  /// One older page of [limit] messages sent before [before] (keyset
+  /// pagination, newest first).
+  Future<MessagePage> getOlderMessages({
+    required String conversationId,
+    required DateTime before,
+    String? userId,
+    int limit = kChatPageSize,
   });
 
   /// Send a message
@@ -316,6 +335,9 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
   final BlockedUsersService blockedUsersService;
   final ContentFilterService _contentFilter = ContentFilterService();
 
+  /// Max messages one [markConversationAsRead] call marks read.
+  static const int _markReadBatch = 200;
+
   @override
   Future<ConversationModel> getConversation(String matchId) async {
     try {
@@ -393,48 +415,93 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
     String? userId,
     int? limit,
   }) {
-    Query query = firestore
-        .collection('conversations')
-        .doc(conversationId)
-        .collection('messages')
-        .orderBy('sentAt', descending: true);
-
     // Never unbounded (G0): default to a bounded window even when the caller
     // passes no limit, so the whole message history can't stream on every change.
-    query = query.limit(limit ?? 30);
+    return _messagesQuery(conversationId)
+        .limit(limit ?? 30)
+        .snapshots()
+        .map((snapshot) => _visibleMessages(snapshot.docs, userId));
+  }
 
-    return query.snapshots().map((snapshot) {
-      var messages = snapshot.docs
-          .map(MessageModel.fromFirestore)
-          .toList();
+  @override
+  Stream<MessagePage> watchLatestMessages({
+    required String conversationId,
+    String? userId,
+    int limit = kChatPageSize,
+  }) {
+    return _messagesQuery(conversationId)
+        .limit(limit)
+        .snapshots()
+        .map((snapshot) => _page(snapshot.docs, userId, limit,
+            fromCache: snapshot.metadata.isFromCache));
+  }
 
-      // Filter out messages deleted for this user (client-side filtering)
-      if (userId != null) {
-        messages = messages.where((message) {
-          final metadata = message.metadata;
-          if (metadata == null) return true;
+  @override
+  Future<MessagePage> getOlderMessages({
+    required String conversationId,
+    required DateTime before,
+    String? userId,
+    int limit = kChatPageSize,
+  }) async {
+    // Keyset page: same single-field index as the live window (equivalent
+    // to startAfter on `sentAt`).
+    final snapshot = await _messagesQuery(conversationId)
+        .where('sentAt', isLessThan: Timestamp.fromDate(before))
+        .limit(limit)
+        .get();
+    return _page(snapshot.docs, userId, limit,
+        fromCache: snapshot.metadata.isFromCache);
+  }
 
-          // Check if message is deleted for this user
-          final deletedFor = metadata['deletedFor'] as Map<String, dynamic>?;
-          if (deletedFor != null && deletedFor[userId] == true) {
-            return false;
-          }
+  Query<Map<String, dynamic>> _messagesQuery(String conversationId) => firestore
+      .collection('conversations')
+      .doc(conversationId)
+      .collection('messages')
+      .orderBy('sentAt', descending: true);
 
-          // Check if message is deleted for everyone
-          if (metadata['isDeletedForEveryone'] == true) {
-            return false;
-          }
+  MessagePage _page(List<QueryDocumentSnapshot<Map<String, dynamic>>> docs,
+      String? userId, int limit,
+      {required bool fromCache}) {
+    final last = docs.isEmpty ? null : docs.last.data()['sentAt'];
+    return MessagePage(
+      messages: _visibleMessages(docs, userId),
+      hasMore: docs.length >= limit,
+      cursor: last is Timestamp ? last.toDate() : null,
+      fromCache: fromCache,
+    );
+  }
 
-          return true;
-        }).toList();
-      }
+  /// [docs] as messages the user may see, newest first: deleted for this
+  /// user or for everyone are left out (client-side filtering).
+  List<MessageModel> _visibleMessages(
+      List<QueryDocumentSnapshot<Map<String, dynamic>>> docs, String? userId) {
+    var messages = docs.map(MessageModel.fromFirestore).toList();
 
-      // Sort by sentAt descending to ensure consistent ordering by server timestamp.
-      // Messages with pending server timestamps (DateTime.now() fallback) appear at top.
-      messages.sort((a, b) => b.sentAt.compareTo(a.sentAt));
+    if (userId != null) {
+      messages = messages.where((message) {
+        final metadata = message.metadata;
+        if (metadata == null) return true;
 
-      return messages;
-    });
+        // Check if message is deleted for this user
+        final deletedFor = metadata['deletedFor'] as Map<String, dynamic>?;
+        if (deletedFor != null && deletedFor[userId] == true) {
+          return false;
+        }
+
+        // Check if message is deleted for everyone
+        if (metadata['isDeletedForEveryone'] == true) {
+          return false;
+        }
+
+        return true;
+      }).toList();
+    }
+
+    // Sort by sentAt descending to ensure consistent ordering by server timestamp.
+    // Messages with pending server timestamps (DateTime.now() fallback) appear at top.
+    messages.sort((a, b) => b.sentAt.compareTo(a.sentAt));
+
+    return messages;
   }
 
   @override
@@ -724,13 +791,15 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
     required String userId,
   }) async {
     try {
-      // Get all unread messages for this user
+      // Unread messages for this user — bounded (one batch); a longer
+      // backlog is finished by the next call.
       final messagesSnapshot = await firestore
           .collection('conversations')
           .doc(conversationId)
           .collection('messages')
           .where('receiverId', isEqualTo: userId)
           .where('readAt', isNull: true)
+          .limit(_markReadBatch)
           .get();
 
       if (messagesSnapshot.docs.isNotEmpty) {
