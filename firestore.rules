@@ -157,7 +157,7 @@ service cloud.firestore {
     function canChat(uid) {
       return baseAccess(uid);
     }
-    // Free chats without Base (owner rule 2026-10-25): 1 person per UTC day.
+    // Free chats without Base (owner rule 2026-10-25): 3 people per UTC day.
     // The claimFreeChat callable (functions/src/entitlements/freeChat.ts)
     // adds the conversation to today's list; posting is allowed only in a
     // conversation on that list.
@@ -166,6 +166,35 @@ service cloud.firestore {
         && get(usagePath(uid)).data.get('freeChatDayStartMs', 0) + 86400000
              > request.time.toMillis()
         && cid in get(usagePath(uid)).data.get('freeChatConvs', []);
+    }
+    // Free messages without Base (owner rule 2026-10-25): at most 30 messages
+    // per UTC day across all free chats. The app writes the message and the
+    // counter free_message_usage/{uid} = {at: serverTime, count} in ONE batch;
+    // the message is accepted only when the counter moves up by exactly one
+    // (or restarts at 1 on a new UTC day) and stays <= 30. System notices and
+    // messages carrying a metadata.systemKey (rendered as fixed localized
+    // text) are not counted. Mirror: FREE_DAILY_MESSAGES (tierLimits.ts).
+    function utcDayStartMs() {
+      return request.time.toMillis() - request.time.toMillis() % 86400000;
+    }
+    function freeMsgPath(uid) {
+      return /databases/$(database)/documents/free_message_usage/$(uid);
+    }
+    function freeMsgPrev(uid) {
+      return exists(freeMsgPath(uid))
+          && get(freeMsgPath(uid)).data.at.toMillis() >= utcDayStartMs()
+        ? get(freeMsgPath(uid)).data.count
+        : 0;
+    }
+    function freeMessageCounted(uid) {
+      return existsAfter(freeMsgPath(uid))
+        && getAfter(freeMsgPath(uid)).data.at == request.time
+        && getAfter(freeMsgPath(uid)).data.count == freeMsgPrev(uid) + 1
+        && getAfter(freeMsgPath(uid)).data.count <= 30;
+    }
+    function uncountedMessage(d) {
+      return d.get('senderId', '') == 'system'
+        || (d.get('metadata', null) is map && d.metadata.get('systemKey', null) != null);
     }
     // Participation (owner rule 2026-10-25, was Base-only since 2026-10-11):
     // the free version may join events (going / waitlist) and book
@@ -833,7 +862,9 @@ service cloud.firestore {
           // tier / TEST). Support tickets and staff are exempt.
           && (isSupportConvData(conv())
               || canChat(request.auth.uid)
-              || freeChatOk(request.auth.uid, conversationId)
+              || (freeChatOk(request.auth.uid, conversationId)
+                  && (uncountedMessage(request.resource.data)
+                      || freeMessageCounted(request.auth.uid)))
               || buyerChat(conv())
               || convAdmin());
         allow update: if (convMember(conv()) || convAdmin())
@@ -1198,6 +1229,23 @@ service cloud.firestore {
     match /entitlement_usage/{userId} {
       allow read: if isOwner(userId) || isAdminPanelUser();
       allow write: if false;
+    }
+
+    // Free-message counter (owner rule 2026-10-25, see freeMessageCounted):
+    // written by the owner in the same batch as a free message; it can only
+    // move up by one per write (or restart at 1 on a new UTC day), never past
+    // 30 and never down.
+    match /free_message_usage/{userId} {
+      allow read: if isOwner(userId);
+      allow create, update: if isOwner(userId)
+        && request.resource.data.keys().hasOnly(['at', 'count'])
+        && request.resource.data.at == request.time
+        && request.resource.data.count is int
+        && request.resource.data.count
+             == ((resource != null && resource.data.at.toMillis() >= utcDayStartMs())
+                   ? resource.data.count : 0) + 1
+        && request.resource.data.count <= 30;
+      allow delete: if false;
     }
 
     // ============================================================================

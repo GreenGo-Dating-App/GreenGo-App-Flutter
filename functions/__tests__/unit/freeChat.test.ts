@@ -23,8 +23,8 @@ const NOW = Date.parse('2026-10-13T15:00:00Z');
 const DAY = 86_400_000;
 const TODAY = Math.floor(NOW / DAY) * DAY;
 
-test('the free allowance is 1 person a day (owner rule 2026-10-25)', () => {
-  expect(FREE_DAILY_CHATS).toBe(1);
+test('the free allowance is 3 people a day', () => {
+  expect(FREE_DAILY_CHATS).toBe(3);
 });
 
 test('a new user gets a first free chat', () => {

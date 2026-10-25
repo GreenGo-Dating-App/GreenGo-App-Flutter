@@ -24744,6 +24744,20 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String get freeMessageLimitTitle => 'Usaste as mensagens gratuitas de hoje';
+
+  @override
+  String freeMessageLimitBody(int limit) {
+    String _temp0 = intl.Intl.pluralLogic(
+      limit,
+      locale: localeName,
+      other: 'Sem subscrição podes enviar $limit mensagens por dia.',
+      one: 'Sem subscrição podes enviar 1 mensagem por dia.',
+    );
+    return '$_temp0 Obtém a subscrição Base para conversar sem limites.';
+  }
+
+  @override
   String freeChatUsedToday(int used, int limit) {
     return 'Conversa gratuita $used de $limit hoje';
   }
@@ -24787,7 +24801,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get createNeedsPlanBody =>
-      'Para criar eventos e experiências precisas da subscrição Base (ou Silver, Gold ou Platinum). Sem subscrição podes explorar, participar em eventos, reservar experiências e conversar com 1 pessoa por dia.';
+      'Para criar eventos e experiências precisas da subscrição Base (ou Silver, Gold ou Platinum). Sem subscrição podes explorar, participar em eventos, reservar experiências e conversar com até 3 pessoas por dia (30 mensagens).';
 
   @override
   String get calViewMonth => 'Mês';
@@ -54144,6 +54158,20 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
+  String get freeMessageLimitTitle => 'Você usou as mensagens grátis de hoje';
+
+  @override
+  String freeMessageLimitBody(int limit) {
+    String _temp0 = intl.Intl.pluralLogic(
+      limit,
+      locale: localeName,
+      other: 'Sem assinatura você pode enviar $limit mensagens por dia.',
+      one: 'Sem assinatura você pode enviar 1 mensagem por dia.',
+    );
+    return '$_temp0 Assine a Base para conversar sem limites.';
+  }
+
+  @override
   String freeChatUsedToday(int used, int limit) {
     return 'Conversa grátis $used de $limit hoje';
   }
@@ -54186,7 +54214,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get createNeedsPlanBody =>
-      'Para criar eventos e experiências você precisa da assinatura Base (ou Silver, Gold ou Platinum). Sem assinatura você pode explorar, participar de eventos, reservar experiências e conversar com 1 pessoa por dia.';
+      'Para criar eventos e experiências você precisa da assinatura Base (ou Silver, Gold ou Platinum). Sem assinatura você pode explorar, participar de eventos, reservar experiências e conversar com até 3 pessoas por dia (30 mensagens).';
 
   @override
   String get calViewMonth => 'Mês';

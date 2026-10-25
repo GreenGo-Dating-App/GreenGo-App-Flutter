@@ -24799,6 +24799,20 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
+  String get freeMessageLimitTitle => 'Hai finito i messaggi gratuiti di oggi';
+
+  @override
+  String freeMessageLimitBody(int limit) {
+    String _temp0 = intl.Intl.pluralLogic(
+      limit,
+      locale: localeName,
+      other: 'Senza abbonamento puoi inviare $limit messaggi al giorno.',
+      one: 'Senza abbonamento puoi inviare 1 messaggio al giorno.',
+    );
+    return '$_temp0 Attiva l\'abbonamento base per chattare senza limiti.';
+  }
+
+  @override
   String freeChatUsedToday(int used, int limit) {
     return 'Chat gratuita $used di $limit oggi';
   }
@@ -24841,7 +24855,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get createNeedsPlanBody =>
-      'Per creare eventi ed esperienze serve l\'abbonamento base (oppure Silver, Gold o Platinum). Senza abbonamento puoi esplorare, partecipare agli eventi, prenotare esperienze e chattare con 1 persona al giorno.';
+      'Per creare eventi ed esperienze serve l\'abbonamento base (oppure Silver, Gold o Platinum). Senza abbonamento puoi esplorare, partecipare agli eventi, prenotare esperienze e chattare con fino a 3 persone al giorno (30 messaggi).';
 
   @override
   String get calViewMonth => 'Mese';

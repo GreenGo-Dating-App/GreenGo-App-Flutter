@@ -13623,6 +13623,19 @@
       }
     }
   },
+  "freeMessageLimitTitle": "Today's free messages are used up",
+  "@freeMessageLimitTitle": {
+    "description": "Dialog title when an account without Base has sent today's free messages (owner rule 2026-10-25)"
+  },
+  "freeMessageLimitBody": "{limit, plural, =1{Without a membership you can send 1 message a day.} other{Without a membership you can send {limit} messages a day.}} Get the Base membership to chat without limits.",
+  "@freeMessageLimitBody": {
+    "description": "Dialog body: daily free-message limit without Base. {limit} = messages per day",
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
   "freeChatUsedToday": "Free chat {used} of {limit} today",
   "@freeChatUsedToday": {
     "placeholders": {
@@ -13671,7 +13684,7 @@
   "translationDailyLimitReached": "You've used today's translations for your plan. They come back tomorrow, or upgrade for more.",
   "translationDailyLimitCta": "See plans",
   "createNeedsPlanTitle": "A plan is needed to create",
-  "createNeedsPlanBody": "Creating events and experiences needs the Base membership (or Silver, Gold or Platinum). Without a plan you can browse, join events, book experiences and chat with 1 person a day.",
+  "createNeedsPlanBody": "Creating events and experiences needs the Base membership (or Silver, Gold or Platinum). Without a plan you can browse, join events, book experiences and chat with up to 3 people a day (30 messages).",
   "calViewMonth": "Month",
   "calViewWeek": "Week",
   "calViewDay": "Day",

@@ -53,7 +53,13 @@ export const MAX_DAILY_CONNECTS: Record<EffectiveTier, Cap> = {
  * without this limit; events and experiences stay Base-only.
  * Mirrors TierEntitlements.freeDailyChats and `freeChatOk` in the rules.
  */
-export const FREE_DAILY_CHATS = 1; // owner rule 2026-10-25 (was 3)
+export const FREE_DAILY_CHATS = 3; // owner rule 2026-10-25 (confirmed 3 people a day)
+/**
+ * Messages an account without Base may send per UTC day across all its free
+ * chats (owner rule 2026-10-25). Enforced by the Firestore rules (literal 30
+ * in freeMessageCounted / free_message_usage) - keep them in sync.
+ */
+export const FREE_DAILY_MESSAGES = 30;
 
 /**
  * Characters of chat / text translation a user may send to the paid

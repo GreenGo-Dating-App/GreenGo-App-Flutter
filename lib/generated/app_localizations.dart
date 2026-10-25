@@ -42069,6 +42069,18 @@ abstract class AppLocalizations {
   /// **'{limit, plural, =1{Without a membership you can chat with 1 new person a day.} other{Without a membership you can chat with {limit} new people a day.}} Get the Base membership to chat with everyone.'**
   String freeChatLimitBody(int limit);
 
+  /// Dialog title when an account without Base has sent today's free messages (owner rule 2026-10-25)
+  ///
+  /// In en, this message translates to:
+  /// **'Today\'s free messages are used up'**
+  String get freeMessageLimitTitle;
+
+  /// Dialog body: daily free-message limit without Base. {limit} = messages per day
+  ///
+  /// In en, this message translates to:
+  /// **'{limit, plural, =1{Without a membership you can send 1 message a day.} other{Without a membership you can send {limit} messages a day.}} Get the Base membership to chat without limits.'**
+  String freeMessageLimitBody(int limit);
+
   /// No description provided for @freeChatUsedToday.
   ///
   /// In en, this message translates to:
@@ -42132,7 +42144,7 @@ abstract class AppLocalizations {
   /// No description provided for @createNeedsPlanBody.
   ///
   /// In en, this message translates to:
-  /// **'Creating events and experiences needs the Base membership (or Silver, Gold or Platinum). Without a plan you can browse, join events, book experiences and chat with 1 person a day.'**
+  /// **'Creating events and experiences needs the Base membership (or Silver, Gold or Platinum). Without a plan you can browse, join events, book experiences and chat with up to 3 people a day (30 messages).'**
   String get createNeedsPlanBody;
 
   /// No description provided for @calViewMonth.

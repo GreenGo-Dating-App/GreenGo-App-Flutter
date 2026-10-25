@@ -6,8 +6,9 @@ void main() {
   final day1 = DateTime.utc(2026, 10, 13, 15);
   final day2 = DateTime.utc(2026, 10, 14, 1);
 
-  test('free accounts chat with 1 person a day (owner rule 2026-10-25)', () {
-    expect(TierEntitlements.freeDailyChats, 1);
+  test('free accounts chat with 3 people a day', () {
+    expect(TierEntitlements.freeDailyChats, 3);
+    expect(TierEntitlements.freeDailyMessages, 30);
   });
 
   test('a conversation allowed today is not asked for again', () async {

@@ -11,6 +11,9 @@ import '../chat_constants.dart';
 import '../models/conversation_model.dart';
 import '../models/message_model.dart';
 import '../../../safety/data/services/age_assurance_service.dart';
+import '../../../../core/services/own_profile_store.dart';
+import '../../../membership/domain/entities/membership.dart';
+import '../services/free_message_quota.dart';
 
 /// Chat Remote Data Source
 ///
@@ -504,6 +507,31 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
     return messages;
   }
 
+  /// Owner rule 2026-10-25: without Base, a message in a free chat is
+  /// committed together with the daily counter ([FreeMessageQuota], max 30
+  /// a day). Members, support chats and verified buyer chats write directly.
+  /// When the own profile is not loaded yet, a direct write the rules refuse
+  /// is retried once through the quota.
+  Future<void> _writeCountingFreeMessages(String senderId, Conversation conversation,
+      void Function(WriteBatch b) inBatch, Future<void> Function() direct) async {
+    final exempt = conversation.conversationType == ConversationType.support ||
+        conversation.matchId == 'support' ||
+        (conversation.listingContext?.buyer ?? false);
+    final profile = OwnProfileStore.instance.peek(senderId);
+    final member = profile != null &&
+        (profile.isBaseMembershipActive || profile.effectiveTier == MembershipTier.test);
+    if (exempt || member) return direct();
+    if (profile != null) {
+      return FreeMessageQuota.instance.commitWith(senderId, inBatch);
+    }
+    try {
+      await direct();
+    } on FirebaseException catch (e) {
+      if (e.code != 'permission-denied') rethrow;
+      await FreeMessageQuota.instance.commitWith(senderId, inBatch);
+    }
+  }
+
   @override
   Future<MessageModel> sendMessage({
     required String matchId,
@@ -570,7 +598,9 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
       final messageData = message.toFirestore();
       messageData['sentAt'] = FieldValue.serverTimestamp();
       messageData['deliveredAt'] = FieldValue.serverTimestamp();
-      await messageRef.set(messageData);
+      await _writeCountingFreeMessages(
+          senderId, conversation, (b) => b.set(messageRef, messageData),
+          () => messageRef.set(messageData));
 
       // H9: the message is now delivered. Everything below is best-effort
       // side-effects (conversation/match updates, unread count, notifications).
@@ -697,6 +727,8 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
       }
 
       return message;
+    } on FreeMessageLimitException {
+      rethrow;
     } catch (e) {
       throw Exception('Failed to send message: $e');
     }

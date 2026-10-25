@@ -101,6 +101,35 @@ async function clientBatchCreate(uid: string, docs: { path: string; data: Record
 }
 
 const call = (fn: any, data: any, uid: string) => (fft.wrap(fn) as any)({ data, auth: { uid, token: {} } });
+
+/** One batch like the app's FreeMessageQuota: the message + free_message_usage {at: REQUEST_TIME, count}. */
+async function commitAs(uid: string, writes: any[]): Promise<number> {
+  const host = process.env.FIRESTORE_EMULATOR_HOST!;
+  const base = `projects/${PROJECT}/databases/(default)/documents`;
+  const res = await fetch(`http://${host}/v1/${base}:commit`, {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${idToken(uid)}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ writes }),
+  });
+  await res.text();
+  return res.status;
+}
+const counterWrite = (owner: string, count: number) => {
+  const base = `projects/${PROJECT}/databases/(default)/documents`;
+  return {
+    update: { name: `${base}/free_message_usage/${owner}`, fields: { count: toValue(count) } },
+    updateTransforms: [{ fieldPath: 'at', setToServerValue: 'REQUEST_TIME' }],
+  };
+};
+function freeSend(uid: string, cid: string, mid: string, count: number): Promise<number> {
+  const base = `projects/${PROJECT}/databases/(default)/documents`;
+  const m: Record<string, any> = { senderId: uid, content: 'hi', type: 'text' };
+  return commitAs(uid, [
+    { update: { name: `${base}/conversations/${cid}/messages/${mid}`, fields: Object.fromEntries(Object.entries(m).map(([k, v]) => [k, toValue(v)])) } },
+    counterWrite(uid, count),
+  ]);
+}
+const counterOnly = (uid: string, count: number, owner: string = uid) => commitAs(uid, [counterWrite(owner, count)]);
 async function refused(p: Promise<any>): Promise<any> {
   try { await p; } catch (e: any) { return e; }
   throw new Error('expected the call to be refused');
@@ -361,7 +390,7 @@ describe('Buyer <-> organizer chat (2026-10-17): server-verified context.buyer',
 });
 
 // ---------------------------------------------------------------------------
-describe('Free chats without Base: 1 person per UTC day (owner rule 2026-10-25, was 3)', () => {
+describe('Free chats without Base: 3 people per UTC day (owner rule 2026-10-13, confirmed 2026-10-25)', () => {
   const people = ['p1', 'p2', 'p3', 'p4'];
   beforeEach(async () => {
     for (const p of people) {
@@ -372,16 +401,18 @@ describe('Free chats without Base: 1 person per UTC day (owner rule 2026-10-25, 
   });
   const msg = () => ({ senderId: FREE, content: 'hi', type: 'text' });
 
-  test('claim 1 person, then the 2nd is refused; re-claiming is free', async () => {
-    expect(await call(claimFreeChat, { conversationId: 'f_p1' }, FREE))
-      .toMatchObject({ allowed: true, unlimited: false, used: 1, limit: 1, added: true });
+  test('claim 3 people, then the 4th is refused; re-claiming is free', async () => {
+    for (const [i, p] of ['p1', 'p2', 'p3'].entries()) {
+      const r = await call(claimFreeChat, { conversationId: `f_${p}` }, FREE);
+      expect(r).toMatchObject({ allowed: true, unlimited: false, used: i + 1, limit: 3, added: true });
+    }
+    expect(await call(claimFreeChat, { conversationId: 'f_p4' }, FREE))
+      .toMatchObject({ allowed: false, used: 3 });
     expect(await call(claimFreeChat, { conversationId: 'f_p2' }, FREE))
-      .toMatchObject({ allowed: false, used: 1 });
-    expect(await call(claimFreeChat, { conversationId: 'f_p1' }, FREE))
-      .toMatchObject({ allowed: true, added: false, used: 1 });
+      .toMatchObject({ allowed: true, added: false, used: 3 });
     const u = (await db.doc(`entitlement_usage/${FREE}`).get()).data()!;
     expect(u.freeChatDayStartMs).toBe(dayStart());
-    expect(u.freeChatConvs).toEqual(['f_p1']);
+    expect(u.freeChatConvs).toEqual(['f_p1', 'f_p2', 'f_p3']);
   });
 
   test("groups, support and other people's chats cannot be claimed; members are unlimited", async () => {
@@ -393,12 +424,43 @@ describe('Free chats without Base: 1 person per UTC day (owner rule 2026-10-25, 
 
   test("rules: posting only in today's claimed conversations", async () => {
     await db.doc(`entitlement_usage/${FREE}`).set({ freeChatDayStartMs: dayStart(), freeChatConvs: ['f_p1', 'f_p2', 'f_p3'] });
-    expect(await clientWrite(FREE, 'conversations/f_p1/messages/m1', msg())).toBe(200);
-    expect(await clientWrite(FREE, 'conversations/f_p3/messages/m1', msg())).toBe(200);
-    expect(await clientWrite(FREE, 'conversations/f_p4/messages/m1', msg())).toBe(403);
+    expect(await freeSend(FREE, 'f_p1', 'm1', 1)).toBe(200);
+    expect(await freeSend(FREE, 'f_p3', 'm1', 2)).toBe(200);
+    expect(await freeSend(FREE, 'f_p4', 'm1', 3)).toBe(403);
     // Yesterday's list does not carry over.
     await db.doc(`entitlement_usage/${FREE}`).set({ freeChatDayStartMs: dayStart() - DAY, freeChatConvs: ['f_p1'] });
-    expect(await clientWrite(FREE, 'conversations/f_p1/messages/m2', msg())).toBe(403);
+    expect(await freeSend(FREE, 'f_p1', 'm2', 3)).toBe(403);
+  });
+
+  // Owner rule 2026-10-25: 30 messages a day in total, counted in the same batch.
+  test('rules: a free message needs the counter bump in the same batch', async () => {
+    await db.doc(`entitlement_usage/${FREE}`).set({ freeChatDayStartMs: dayStart(), freeChatConvs: ['f_p1'] });
+    expect(await clientWrite(FREE, 'conversations/f_p1/messages/m0', msg())).toBe(403); // no counter
+    expect(await freeSend(FREE, 'f_p1', 'm1', 2)).toBe(403); // skipping a number
+    expect(await freeSend(FREE, 'f_p1', 'm1', 1)).toBe(200);
+    expect(await freeSend(FREE, 'f_p1', 'm2', 1)).toBe(403); // no reset on the same day
+    expect(await freeSend(FREE, 'f_p1', 'm2', 2)).toBe(200);
+    // System notices / systemKey messages are not counted.
+    expect(await clientWrite(FREE, 'conversations/f_p1/messages/s1',
+      { senderId: FREE, content: 'I just sent you 5 coins!', type: 'text', metadata: { systemKey: 'coinsSent' } })).toBe(200);
+  });
+
+  test('rules: at most 30 messages a day, back to 1 on a new UTC day', async () => {
+    await db.doc(`entitlement_usage/${FREE}`).set({ freeChatDayStartMs: dayStart(), freeChatConvs: ['f_p1'] });
+    await db.doc(`free_message_usage/${FREE}`).set({ at: admin.firestore.Timestamp.now(), count: 29 });
+    expect(await freeSend(FREE, 'f_p1', 'm30', 30)).toBe(200);
+    expect(await freeSend(FREE, 'f_p1', 'm31', 31)).toBe(403);
+    // The previous day does not carry over.
+    await db.doc(`free_message_usage/${FREE}`).set({ at: admin.firestore.Timestamp.fromMillis(dayStart() - 60_000), count: 30 });
+    expect(await freeSend(FREE, 'f_p1', 'n1', 1)).toBe(200);
+  });
+
+  test('rules: the counter itself only moves up by one, and only the owner writes it', async () => {
+    await db.doc(`free_message_usage/${FREE}`).set({ at: admin.firestore.Timestamp.now(), count: 5 });
+    expect(await counterOnly(FREE, 1)).toBe(403);
+    expect(await counterOnly(FREE, 7)).toBe(403);
+    expect(await counterOnly(FREE, 6)).toBe(200);
+    expect(await counterOnly(BASE, 7, FREE)).toBe(403);
   });
 
   test('joining events is open to the free version, with or without a chat claim', async () => {

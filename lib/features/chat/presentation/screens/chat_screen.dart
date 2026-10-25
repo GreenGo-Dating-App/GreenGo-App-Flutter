@@ -1,3 +1,4 @@
+import '../../data/services/free_message_quota.dart';
 import 'dart:async';
 import 'dart:io';
 
@@ -757,6 +758,21 @@ class _ChatScreenState extends State<ChatScreen> {
         return;
       }
       freeChat = claim.canSend;
+      // Owner rule 2026-10-25: at most TierEntitlements.freeDailyMessages
+      // messages a day in free chats (rules-enforced with a counter).
+      if (freeChat &&
+          await FreeMessageQuota.instance.remaining(widget.currentUserId) <= 0) {
+        if (!mounted) return;
+        final l10n = AppLocalizations.of(context)!;
+        await BaseMembershipRequiredDialog.show(
+          context,
+          userId: widget.currentUserId,
+          title: l10n.freeMessageLimitTitle,
+          body: l10n.freeMessageLimitBody(FreeMessageQuota.instance.limit),
+        );
+        return;
+      }
+      if (!mounted) return;
       if (claim.status == FreeChatStatus.allowed && claim.added) {
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
           content: Text(AppLocalizations.of(context)!
