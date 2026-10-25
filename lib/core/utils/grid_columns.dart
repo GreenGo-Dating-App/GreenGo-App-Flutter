@@ -19,6 +19,14 @@ int gridColumnsForWidth(double width) {
 int gridColumnsOf(BuildContext context) =>
     gridColumnsForWidth(MediaQuery.sizeOf(context).width);
 
+/// Columns of the Cultural Passport stamp grids (owner 2026-10-24): 12 on big
+/// screens (from 1100 px), 6 from 800 px, 3 below.
+int passportColumnsForWidth(double width) {
+  if (width >= 1100) return 12;
+  if (width >= 800) return 6;
+  return 3;
+}
+
 /// Discovery grid "auto" mode: 2/3/4/6/8 columns at <300 / <450 / <800 /
 /// <1200 px / wider.
 int discoveryAutoColumns(double width) {

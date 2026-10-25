@@ -74,4 +74,13 @@ void main() {
       expect(discoveryColumns(selected: 8, screenWidth: 390, gridWidth: 382), 3);
     });
   });
+
+  test('Cultural Passport: 12 columns on big screens, 6 medium, 3 phone', () {
+    expect(passportColumnsForWidth(390), 3);
+    expect(passportColumnsForWidth(799), 3);
+    expect(passportColumnsForWidth(800), 6);
+    expect(passportColumnsForWidth(1099), 6);
+    expect(passportColumnsForWidth(1100), 12);
+    expect(passportColumnsForWidth(1920), 12);
+  });
 }

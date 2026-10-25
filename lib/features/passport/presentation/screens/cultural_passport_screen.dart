@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/utils/country_flag_helper.dart';
+import '../../../../core/utils/grid_columns.dart';
 import '../../../../core/utils/country_names_l10n.dart';
 import '../../../../core/widgets/country_flag_badge.dart';
 import '../../../../generated/app_localizations.dart';
@@ -431,8 +432,8 @@ class _Section extends StatelessWidget {
           shrinkWrap: true,
           physics: const NeverScrollableScrollPhysics(),
           padding: const EdgeInsets.fromLTRB(12, 0, 12, 8),
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 3,
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: passportColumnsForWidth(MediaQuery.sizeOf(context).width),
             childAspectRatio: 0.82,
             crossAxisSpacing: 8,
             mainAxisSpacing: 8,
