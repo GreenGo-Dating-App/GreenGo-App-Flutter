@@ -263,6 +263,18 @@ class UserDirectoryService extends ChangeNotifier {
     _notify();
   }
 
+  /// Tests only: put full [profiles] (and their briefs) in memory as fresh
+  /// server answers, so [resolveProfiles] reads nothing.
+  @visibleForTesting
+  void debugSeedProfiles(Map<String, Profile> profiles) {
+    _loaded = true;
+    for (final e in profiles.entries) {
+      _cache[e.key] = _Entry(UserBrief.fromProfile(e.value), _now);
+      _profiles[e.key] = _ProfileEntry(e.value, _now);
+    }
+    _notify();
+  }
+
   /// Tests only: forget everything [debugSeed] (or a fetch) put in memory.
   @visibleForTesting
   void debugReset() {

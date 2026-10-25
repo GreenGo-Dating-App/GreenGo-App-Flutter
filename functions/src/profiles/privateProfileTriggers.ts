@@ -4,7 +4,9 @@
  * there for the data model and the no-loop argument.
  *
  * mirrorPrivateProfileFields also (re)starts the follow-edge name fan-out
- * (follow_name_jobs → onFollowNameJob) when the display name changes, and
+ * (follow_name_jobs → onFollowNameJob) when the display name changes, the
+ * followed-store fan-out (follow_store_jobs → onFollowStoreJob) when a
+ * business's storefront name / category / address place changes, and
  * enforces the main-photo face rule when photoUrls[0] changes
  * (safety/mainPhotoFaceRule.ts).
  *
@@ -42,6 +44,7 @@ import {
   syncProfile,
 } from './privateProfile';
 import { enqueueFollowNameJobIfChanged } from '../social/followNames';
+import { enqueueFollowStoreJobIfChanged } from '../social/followStores';
 import { enforceOnProfileWrite, firestoreFaceRulePorts } from '../safety/mainPhotoFaceRule';
 
 /**
@@ -60,6 +63,14 @@ export const mirrorPrivateProfileFields = onDocumentWritten(
       await enqueueFollowNameJobIfChanged(admin.firestore(), uid, before, after);
     } catch (e: any) {
       console.error('follow name job enqueue failed:', e?.message || e);
+    }
+    // Store search / filter fields on followers' mirrors (followStores.ts):
+    // in-memory compare, no read unless name / category / address place or
+    // isBusiness changed.
+    try {
+      await enqueueFollowStoreJobIfChanged(admin.firestore(), uid, before, after);
+    } catch (e: any) {
+      console.error('follow store job enqueue failed:', e?.message || e);
     }
     // Main-photo face rule (safety/mainPhotoFaceRule.ts): an in-memory
     // compare of photoUrls[0]; reads / Vision only when the main photo of a

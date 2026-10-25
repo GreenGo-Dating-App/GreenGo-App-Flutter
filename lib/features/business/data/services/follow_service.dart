@@ -100,6 +100,65 @@ class FollowPage {
   final bool hasMore;
 }
 
+/// Search + filters of the own followed-stores list. All optional; a city
+/// ([cityLower], normalized like the server) only applies together with its
+/// [country]. Values are the raw stored ones (canonical English category,
+/// the country as stored on `businessAddress`).
+class StoreFilter {
+  const StoreFilter({this.query = '', this.category, this.country, this.cityLower});
+
+  final String query;
+  final String? category;
+  final String? country;
+  final String? cityLower;
+
+  /// The normalized search prefix ('' = no search).
+  String get normalizedQuery => normalizeFollowName(query);
+
+  bool get hasCategory => (category ?? '').isNotEmpty;
+  bool get hasCountry => (country ?? '').isNotEmpty;
+  bool get hasCity => hasCountry && (cityLower ?? '').isNotEmpty;
+
+  /// No search and no filter: the plain list.
+  bool get isEmpty => normalizedQuery.isEmpty && !hasCategory && !hasCountry;
+
+  @override
+  bool operator ==(Object other) =>
+      other is StoreFilter &&
+      other.normalizedQuery == normalizedQuery &&
+      other.category == category &&
+      other.country == country &&
+      (other.hasCity ? other.cityLower : null) == (hasCity ? cityLower : null);
+
+  @override
+  int get hashCode => Object.hash(
+      normalizedQuery, category, country, hasCity ? cityLower : null);
+}
+
+/// One place option of the followed-stores place filter: a country
+/// ([cityLower] empty) or a city in it, with how many followed stores are
+/// there. From the owner-only `user_store_places/{uid}` facets.
+class StorePlace {
+  const StorePlace({
+    required this.country,
+    required this.count,
+    this.city = '',
+    this.cityLower = '',
+  });
+
+  factory StorePlace.fromData(Map<String, dynamic> d) => StorePlace(
+        country: (d['country'] as String? ?? '').trim(),
+        city: (d['city'] as String? ?? '').trim(),
+        cityLower: (d['cityLower'] as String? ?? '').trim(),
+        count: (d['n'] as num?)?.toInt() ?? 0,
+      );
+
+  final String country;
+  final String city;
+  final String cityLower;
+  final int count;
+}
+
 /// Follow service — ONE follow graph for every account (business or not).
 ///
 /// Designed to scale to millions:
@@ -448,24 +507,102 @@ class FollowService {
   /// (functions followCounters.ts MIRROR_STORE_FLAG).
   static const String storeFlagField = 'isStore';
 
-  /// Page of the business accounts [uid] follows (own "Stores" list), by id.
-  /// Equality + document-id order: automatic single-field index.
+  /// Store search / filter fields on the mirror, written ONLY by the server
+  /// (functions social/followStores.ts) while the followee is a business.
+  static const String storeNameField = 'storeNameLower';
+  static const String storeCategoryField = 'storeCategory';
+  static const String storeCountryField = 'storeCountry';
+  static const String storeCityField = 'storeCityLower';
+
+  /// Page of the business accounts [uid] follows (own "Stores" list).
+  ///
+  /// Plain list ([filter] empty): `isStore == true` in document-id order
+  /// (automatic single-field index; also shows mirrors the store-field
+  /// backfill has not reached yet). With a search and / or filters: ONE
+  /// bounded query over ALL followed stores, server-side —
+  /// `[storeCategory ==] [storeCountry == [storeCityLower ==]]`, ordered by
+  /// `storeNameLower` (+ prefix range when searching), cursor-paged.
+  /// Composite indexes: firestore.indexes.json (`businesses`).
   Future<FollowPage> followedStoresPage(
     String uid, {
     DocumentSnapshot<Map<String, dynamic>>? after,
     int limit = pageSize,
+    StoreFilter filter = const StoreFilter(),
   }) async {
-    Query<Map<String, dynamic>> q = _followingCol(uid)
-        .where(storeFlagField, isEqualTo: true)
-        .orderBy(FieldPath.documentId)
-        .limit(limit);
-    if (after != null) q = q.startAfterDocument(after);
+    Query<Map<String, dynamic>> q;
+    if (filter.isEmpty) {
+      q = _followingCol(uid)
+          .where(storeFlagField, isEqualTo: true)
+          .orderBy(FieldPath.documentId);
+      if (after != null) q = q.startAfterDocument(after);
+    } else {
+      final query = filter.normalizedQuery;
+      q = _followingCol(uid);
+      if (filter.hasCategory) {
+        q = q.where(storeCategoryField, isEqualTo: filter.category);
+      }
+      if (filter.hasCountry) {
+        q = q.where(storeCountryField, isEqualTo: filter.country);
+        if (filter.hasCity) {
+          q = q.where(storeCityField, isEqualTo: filter.cityLower);
+        }
+      }
+      q = q.orderBy(storeNameField);
+      if (after != null) {
+        q = q.startAfterDocument(after);
+      } else if (query.isNotEmpty) {
+        q = q.startAt([query]);
+      }
+      if (query.isNotEmpty) {
+        q = q.endAt([query + String.fromCharCode(0xF8FF)]);
+      }
+    }
+    q = q.limit(limit);
     final snap = await q.get();
     return FollowPage(
       userIds: [for (final d in snap.docs) d.id],
       cursor: snap.docs.isEmpty ? after : snap.docs.last,
       hasMore: snap.docs.length == limit,
     );
+  }
+
+  /// Owner-only place facets of the followed stores (functions
+  /// social/followStores.ts): `countries/{id}` and `cities/{id}`.
+  static const String storePlacesCollection = 'user_store_places';
+
+  /// Bound of each place-option list (the most-followed places first).
+  static const int storePlacesLimit = 100;
+
+  /// Countries [uid]'s followed stores are in, most stores first. ONE
+  /// bounded query (automatic single-field index on `n`).
+  Future<List<StorePlace>> followedStoreCountries(String uid) async {
+    final snap = await _firestore
+        .collection(storePlacesCollection)
+        .doc(uid)
+        .collection('countries')
+        .orderBy('n', descending: true)
+        .limit(storePlacesLimit)
+        .get();
+    return [
+      for (final d in snap.docs) StorePlace.fromData(d.data()),
+    ].where((p) => p.country.isNotEmpty && p.count > 0).toList();
+  }
+
+  /// Cities in [country] of [uid]'s followed stores, most stores first. ONE
+  /// bounded query (composite index cities(country, n desc)).
+  Future<List<StorePlace>> followedStoreCities(String uid, String country) async {
+    if (country.isEmpty) return const [];
+    final snap = await _firestore
+        .collection(storePlacesCollection)
+        .doc(uid)
+        .collection('cities')
+        .where('country', isEqualTo: country)
+        .orderBy('n', descending: true)
+        .limit(storePlacesLimit)
+        .get();
+    return [
+      for (final d in snap.docs) StorePlace.fromData(d.data()),
+    ].where((p) => p.cityLower.isNotEmpty && p.count > 0).toList();
   }
 
   Future<FollowPage> _page(

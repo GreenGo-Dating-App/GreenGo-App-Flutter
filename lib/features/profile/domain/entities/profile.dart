@@ -96,6 +96,8 @@ class Profile extends Equatable {
     this.coverImageUrl,
     this.coverFocus = CoverFocus.center,
     this.businessLogoUrl,
+    this.businessRatingSum = 0,
+    this.businessRatingCount = 0,
     this.isBanned = false,
     this.isIdVerified = false,
     this.publicAge,
@@ -271,6 +273,17 @@ class Profile extends Equatable {
     return v.isEmpty ? null : v;
   }
 
+  /// Storefront star rating aggregate (`ratingSum` / `ratingCount` on the
+  /// business profile, maintained by RatingService). READ-ONLY here: parsed
+  /// by ProfileModel.fromJson, never written back by toJson. 0 / 0 = no
+  /// ratings yet.
+  final double businessRatingSum;
+  final int businessRatingCount;
+
+  /// Average stars (0 when there are no ratings).
+  double get businessRatingAvg =>
+      businessRatingCount <= 0 ? 0 : businessRatingSum / businessRatingCount;
+
   // Moderation flag — set by admins elsewhere (Cloud Function / admin tools).
   // The app only READS it (e.g. to hide or gate a banned account). Default false.
   final bool isBanned;
@@ -435,6 +448,8 @@ class Profile extends Equatable {
         coverImageUrl,
         coverFocus,
         businessLogoUrl,
+        businessRatingSum,
+        businessRatingCount,
         isBanned,
         isIdVerified,
         publicAge,
@@ -609,6 +624,8 @@ class Profile extends Equatable {
       coverImageUrl: coverImageUrl ?? this.coverImageUrl,
       coverFocus: coverFocus ?? this.coverFocus,
       businessLogoUrl: businessLogoUrl ?? this.businessLogoUrl,
+      businessRatingSum: businessRatingSum,
+      businessRatingCount: businessRatingCount,
       isBanned: isBanned ?? this.isBanned,
       isIdVerified: isIdVerified ?? this.isIdVerified,
       // A new birth date makes the server's age stale: derive it locally.

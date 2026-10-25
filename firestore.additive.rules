@@ -2308,10 +2308,22 @@ service cloud.firestore {
       allow read: if isSignedIn();
       // `followeeNameLower` (searchable name) is written ONLY by the server
       // (functions social/followNames.ts); a client can never forge it. The
-      // canonical edge above already allows `createdAt` only.
+      // canonical edge above already allows `createdAt` only. Same for the
+      // store search / filter fields (functions social/followStores.ts).
       allow create: if isOwner(userId) && userId != businessId
-        && !request.resource.data.keys().hasAny(['followeeNameLower', 'followerNameLower', 'isStore']);
+        && !request.resource.data.keys().hasAny(['followeeNameLower', 'followerNameLower', 'isStore',
+             'storeNameLower', 'storeCategory', 'storeCountry', 'storeCityLower']);
       allow delete: if isOwner(userId);
+    }
+
+    // Places of the stores a user follows (the "Stores" place filter):
+    // `countries/{id}` {country, n} and `cities/{id}` {country, city,
+    // cityLower, n}. PRIVATE like the stores count: only the owner reads
+    // them; written only by the follow triggers (followStores.ts). The
+    // fan-out queue `follow_store_jobs` falls through to DEFAULT DENY.
+    match /user_store_places/{userId}/{facet}/{placeId} {
+      allow read: if isOwner(userId) && facet in ['countries', 'cities'];
+      allow write: if false;
     }
 
     // Follower / following counters of an account (owner rule 2026-10-17:

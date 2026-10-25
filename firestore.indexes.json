@@ -4475,6 +4475,106 @@
           "order": "DESCENDING"
         }
       ]
+    },
+    {
+      "collectionGroup": "businesses",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "storeCategory",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "storeNameLower",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "businesses",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "storeCountry",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "storeNameLower",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "businesses",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "storeCountry",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "storeCityLower",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "storeNameLower",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "businesses",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "storeCategory",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "storeCountry",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "storeNameLower",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "businesses",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "storeCategory",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "storeCountry",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "storeCityLower",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "storeNameLower",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "cities",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "country",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "n",
+          "order": "DESCENDING"
+        }
+      ]
     }
   ],
   "fieldOverrides": [

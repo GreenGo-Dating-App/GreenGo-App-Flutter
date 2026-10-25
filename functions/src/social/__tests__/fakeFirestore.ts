@@ -8,6 +8,12 @@
 export type Doc = Record<string, any>;
 const INC = Symbol('inc');
 export const increment = (n: number) => ({ [INC]: n });
+const DEL = Symbol('del');
+/** `FieldValue.delete()` stand-in (update / merge-set drop the field). */
+export const deleteField = () => ({ [DEL]: true });
+
+const isInc = (v: any) => v && typeof v === 'object' && INC in v;
+const isDel = (v: any) => v && typeof v === 'object' && DEL in v;
 
 export function makeDb() {
   const store = new Map<string, Doc>();
@@ -36,7 +42,8 @@ export function makeDb() {
     if (!cur) throw new Error(`NOT_FOUND: ${path}`);
     const next = { ...cur };
     for (const [k, v] of Object.entries(patch)) {
-      next[k] = v && typeof v === 'object' && INC in v ? (Number(next[k]) || 0) + v[INC] : v;
+      if (isDel(v)) delete next[k];
+      else next[k] = isInc(v) ? (Number(next[k]) || 0) + v[INC] : v;
     }
     store.set(path, next);
   };
@@ -46,7 +53,8 @@ export function makeDb() {
     if (!opts?.merge) return void store.set(path, { ...d });
     const next: Doc = { ...(store.get(path) ?? {}) };
     for (const [k, v] of Object.entries(d)) {
-      next[k] = v && typeof v === 'object' && INC in v ? (Number(next[k]) || 0) + v[INC] : v;
+      if (isDel(v)) delete next[k];
+      else next[k] = isInc(v) ? (Number(next[k]) || 0) + v[INC] : v;
     }
     store.set(path, next);
   };
@@ -108,6 +116,7 @@ export function makeDb() {
       const writes: Array<() => void> = [];
       const txn = {
         get: async (r: any) => snap(r.path),
+        getAll: async (...refs: any[]) => refs.map((r) => snap(r.path)),
         update: (r: any, d: Doc) => void writes.push(() => applyUpdate(r.path, d)),
         set: (r: any, d: Doc, o?: { merge?: boolean }) =>
           void writes.push(() => applySet(r.path, d, o)),

@@ -80,6 +80,8 @@ class ProfileModel extends Profile {
     super.coverImageUrl,
     super.coverFocus,
     super.businessLogoUrl,
+    super.businessRatingSum,
+    super.businessRatingCount,
     super.isBanned,
     super.isIdVerified,
     super.publicAge,
@@ -173,6 +175,8 @@ class ProfileModel extends Profile {
       coverImageUrl: profile.coverImageUrl,
       coverFocus: profile.coverFocus,
       businessLogoUrl: profile.businessLogoUrl,
+      businessRatingSum: profile.businessRatingSum,
+      businessRatingCount: profile.businessRatingCount,
       isBanned: profile.isBanned,
       isIdVerified: profile.isIdVerified,
       publicAge: profile.publicAge,
@@ -331,6 +335,14 @@ class ProfileModel extends Profile {
       coverImageUrl: json['coverImageUrl'] as String?,
       coverFocus: CoverFocus.fromMap(json),
       businessLogoUrl: json['businessLogoUrl'] as String?,
+      // Storefront rating aggregate (read-only; not in toJson).
+      businessRatingCount: _ratingCount(json['ratingCount']),
+      businessRatingSum: _ratingCount(json['ratingCount']) > 0 &&
+              json['ratingSum'] is num &&
+              (json['ratingSum'] as num).isFinite &&
+              (json['ratingSum'] as num) > 0
+          ? (json['ratingSum'] as num).toDouble()
+          : 0,
       isBanned: json['isBanned'] as bool? ?? false,
       // Server-owned; read only (never in toJson).
       isIdVerified: json['isAgeVerified'] == true,
@@ -593,6 +605,11 @@ class LocationModel extends Location {
     };
   }
 }
+
+/// A non-negative whole rating count from a raw profile field (0 when
+/// missing / malformed).
+int _ratingCount(Object? v) =>
+    v is num && v.isFinite && v > 0 ? v.toInt() : 0;
 
 /// Normalizes locale-dependent country names to English standard names.
 /// Geocoding APIs return country names in the device locale (e.g., "Italia"

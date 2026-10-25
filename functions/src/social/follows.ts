@@ -59,13 +59,26 @@ import {
   followNameRound,
   stampEdgeNames,
 } from './followNames';
+import {
+  FOLLOW_STORE_JOBS,
+  FollowStoreJob,
+  StoreFieldValues,
+  followStoreRound,
+  stampStoreFields,
+  unplaceDeletedMirror,
+} from './followStores';
 
 const db = admin.firestore();
 const FieldValue = admin.firestore.FieldValue;
 
 const EDGE_PATH = 'business_followers/{followeeId}/followers/{followerId}';
+const MIRROR_PATH = 'user_business_following/{followerId}/businesses/{followeeId}';
 
 const deps: FollowCounterDeps = { db, increment: (n) => FieldValue.increment(n) };
+const storeFv: StoreFieldValues = {
+  increment: (n) => FieldValue.increment(n),
+  delete: () => FieldValue.delete(),
+};
 
 const edgeRef = (followeeId: string, followerId: string): admin.firestore.DocumentReference =>
   coreEdgeRef(db, followeeId, followerId);
@@ -122,7 +135,8 @@ export const onUserFollowCreated = onDocumentCreated(
 
     // A follow of a deleted account (stale client) would only inflate the
     // follower's followingCount for a ghost: remove it uncounted.
-    const followeeGone = !(await db.collection('profiles').doc(followeeId).get()).exists;
+    const followeeSnap = await db.collection('profiles').doc(followeeId).get();
+    const followeeGone = !followeeSnap.exists;
     if (
       followeeGone ||
       followeeId === followerId ||
@@ -142,6 +156,11 @@ export const onUserFollowCreated = onDocumentCreated(
     // count or the notification.
     await stampEdgeNames(db, followeeId, followerId).catch((e) =>
       console.error('onUserFollowCreated: name stamp failed', e?.message || e),
+    );
+    // Store search / filter fields + place facets (followStores.ts). No read
+    // or write unless the followee is a business; idempotent like the names.
+    await stampStoreFields(db, storeFv, followeeId, followerId, followeeSnap.data() ?? null).catch((e) =>
+      console.error('onUserFollowCreated: store stamp failed', e?.message || e),
     );
     if (!counted) return;
     const ageMs = Date.now() - Date.parse(event.time || '');
@@ -281,6 +300,60 @@ export const onFollowNameJob = onDocumentWritten(
         txn.delete(after.ref);
       } else {
         txn.update(after.ref, { phase: r.phase, cursor: r.cursor, round: round + 1 });
+      }
+    });
+  }),
+);
+
+// ── Followed store removed → take its place out of the follower's facets ──
+// Fires for every mirror delete (unfollow, onUserFollowDeleted's ghost-mirror
+// cleanup, account cleanup); returns before any read unless the deleted
+// mirror carried a store place. Exactly once per delete event (marker).
+export const onFollowedStoreRemoved = onDocumentDeleted(
+  { document: MIRROR_PATH, memory: '512MiB', retry: true },
+  monitored('onFollowedStoreRemoved', async (event) => {
+    const followerId = event.params.followerId as string;
+    const followeeId = event.params.followeeId as string;
+    await unplaceDeletedMirror(db, storeFv, event.id, followerId, followeeId, event.data?.data());
+  }),
+);
+
+// ── Store fields changed → refresh them on every follower's mirror ─────────
+// `follow_store_jobs/{uid}` is (re)written by mirrorPrivateProfileFields only
+// when the business's name / category / address place changed (or it stopped
+// / started being a business). Same bounded, self re-firing rounds as
+// onFollowNameJob; each page is one transaction of <= 80 mirrors.
+const STORE_JOB_MAX_ROUNDS = 5000;
+const STORE_JOB_BUDGET_MS = 420_000;
+
+export const onFollowStoreJob = onDocumentWritten(
+  {
+    document: `${FOLLOW_STORE_JOBS}/{uid}`,
+    memory: '512MiB',
+    timeoutSeconds: 540,
+    retry: true,
+  },
+  monitored('onFollowStoreJob', async (event) => {
+    const after = event.data?.after;
+    if (!after?.exists) return; // finished (deleted)
+    const uid = event.params.uid as string;
+    const job = after.data() as FollowStoreJob;
+    const round = Number(job.round ?? 0);
+    if (round > STORE_JOB_MAX_ROUNDS) {
+      console.error('onFollowStoreJob: giving up after max rounds', uid, round);
+      return;
+    }
+    const r = await followStoreRound(db, storeFv, uid, job, {
+      deadlineMs: Date.now() + STORE_JOB_BUDGET_MS,
+    });
+    if (r.superseded) return; // the newer job write runs on its own
+    await db.runTransaction(async (txn) => {
+      const cur = await txn.get(after.ref);
+      if (!cur.exists || cur.get('gen') !== job.gen) return;
+      if (r.done) {
+        txn.delete(after.ref);
+      } else {
+        txn.update(after.ref, { cursor: r.cursor, round: round + 1 });
       }
     });
   }),
