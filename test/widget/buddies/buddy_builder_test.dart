@@ -104,27 +104,31 @@ void main() {
 
   testWidgets('step 1 = the selects; the topic list depends on the main category',
       (tester) async {
-    await open(tester);
+    // Tall enough for every select (the list builds lazily).
+    await open(tester, size: const Size(360, 1100));
     expect(find.text('Step 1 of 2'), findsOneWidget);
     for (final k in [
       'buddy-macro',
       'buddy-micro',
       'buddy-language',
+      'buddy-user-language',
       'buddy-chat-language',
       'buddy-tone',
     ]) {
       expect(find.byKey(ValueKey(k)), findsOneWidget, reason: k);
     }
     // The chat translation language: default = the app language, with flags.
-    expect(find.text('Translate this chat into'), findsOneWidget);
-    expect(find.text("Messages are translated once into this language. It can't be changed later."),
-        findsOneWidget);
+    // Owner 2026-10-25: three clearly named languages.
+    expect(find.text('Language your Buddy writes in'), findsOneWidget);
+    expect(find.text('Language you write in'), findsOneWidget);
+    expect(find.text('Translation language (for you and your Buddy)'), findsOneWidget);
+    expect(select(tester, 'buddy-user-language').value, 'en');
     expect(select(tester, 'buddy-chat-language').value, 'en');
     expect(items(tester, 'buddy-chat-language'), BuddyCatalog.languages);
-    // Both language selects show a flag next to every language (closed
+    // All three language selects show a flag next to every language (closed
     // field and list).
-    expect(find.text('🇬🇧 English'), findsNWidgets(2));
-    expect(find.text('Which language should your Buddy speak?'), findsOneWidget);
+    expect(find.text('🇬🇧 English'), findsNWidgets(3));
+    expect(find.text('Language your Buddy writes in'), findsOneWidget);
     for (final key in ['buddy-language', 'buddy-chat-language']) {
       final labels = [
         for (final i in select(tester, key).items!) ((i.child as Text).data ?? ''),
@@ -141,7 +145,7 @@ void main() {
     }
     expect(find.text('Main category'), findsOneWidget);
     expect(find.text('How should your Buddy sound?'), findsOneWidget);
-    expect(find.text("Your Buddy always speaks only this language. It can't be changed later."),
+    expect(find.text("Your Buddy always writes only in this language. It can't be changed later."),
         findsOneWidget);
     // No role, level, CEFR or ready-made suggestions.
     expect(find.text('Quick start'), findsNothing);
@@ -205,6 +209,7 @@ void main() {
       'tone': 'calm',
       'language': 'pt_BR',
       'chatLanguage': 'it',
+      'userLanguage': 'en',
       'checkInsEnabled': true,
     });
     expect(repo.avatarReads, 1);

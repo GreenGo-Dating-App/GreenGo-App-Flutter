@@ -31,7 +31,7 @@ class BuddiesRemoteDataSource {
   static const String avatarsCollection = 'buddy_avatars';
 
   /// The catalogue is small (about 50 pictures); one bounded read.
-  static const int maxAvatars = 60;
+  static const int maxAvatars = 300;
 
   CollectionReference<Map<String, dynamic>> _buddies(String uid) =>
       _db.collection(collection).doc(uid).collection('buddies');
@@ -59,16 +59,12 @@ class BuddiesRemoteDataSource {
       .snapshots()
       .map((d) => d.exists ? buddyFromMap(d.id, d.data()!) : null);
 
-  /// Active avatar pictures, ordered by `order` (then id).
-  ///
-  /// One equality filter only, sorted here: `active == true` + `orderBy`
-  /// on another field would need a composite index, and the list is tiny.
+  /// Every avatar picture (active and retired), ordered by `order` (then
+  /// id): a retired picture still shows on the Buddies that wear it; the
+  /// picker offers only the active ones (see [BuddyAvatarCatalog]). Small,
+  /// bounded list, sorted here (no composite index).
   Future<List<BuddyAvatarOption>> fetchAvatarOptions() async {
-    final snap = await _db
-        .collection(avatarsCollection)
-        .where('active', isEqualTo: true)
-        .limit(maxAvatars)
-        .get();
+    final snap = await _db.collection(avatarsCollection).limit(maxAvatars).get();
     final list = <BuddyAvatarOption>[
       for (final d in snap.docs)
         if (BuddyAvatarOption.fromMap(d.id, d.data()) case final o?) o,

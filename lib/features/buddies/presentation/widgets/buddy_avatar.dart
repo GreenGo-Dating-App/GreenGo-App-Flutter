@@ -105,12 +105,14 @@ class BuddyAvatarScope extends StatefulWidget {
 
 /// What a [BuddyAvatarScope] knows about the pictures.
 class BuddyAvatarCatalog {
+  /// [all] = every known picture; [options] = the ones the picker offers.
   BuddyAvatarCatalog({
-    required this.options,
+    required List<BuddyAvatarOption> all,
     required this.loading,
     required this.failed,
     required this.retry,
-  }) : _byId = {for (final o in options) o.id: o};
+  })  : options = [for (final o in all) if (o.active) o],
+        _byId = {for (final o in all) o.id: o};
 
   final List<BuddyAvatarOption> options;
   final bool loading;
@@ -164,7 +166,7 @@ class _BuddyAvatarScopeState extends State<BuddyAvatarScope> {
   @override
   Widget build(BuildContext context) => _BuddyAvatarInherited(
         catalog: BuddyAvatarCatalog(
-          options: _options,
+          all: _options,
           loading: _loading,
           failed: _failed,
           retry: () {
@@ -184,7 +186,7 @@ class _BuddyAvatarInherited extends InheritedWidget {
   bool updateShouldNotify(_BuddyAvatarInherited old) =>
       old.catalog.loading != catalog.loading ||
       old.catalog.failed != catalog.failed ||
-      !identical(old.catalog.options, catalog.options);
+      !identical(old.catalog._byId, catalog._byId);
 }
 
 /// A round Buddy avatar with an optional "AI" badge. A `buddy_avatars`
@@ -221,7 +223,7 @@ class BuddyAvatar extends StatelessWidget {
         ? null
         : BuddyAvatarScope.maybeOf(context)?.byId(avatarId);
     Widget face = picture != null
-        ? BuddyAvatarImage(url: picture.url, size: size)
+        ? BuddyAvatarImage(url: picture.url, thumbUrl: picture.thumbUrl, size: size)
         : CustomPaint(
             key: const ValueKey('buddy-avatar-drawn'),
             size: Size.square(size),
@@ -256,18 +258,22 @@ class BuddyAvatar extends StatelessWidget {
 /// A circular avatar picture: the app's cached network image, decoded at
 /// the shown size, with a neutral placeholder while loading and on error.
 class BuddyAvatarImage extends StatelessWidget {
-  const BuddyAvatarImage({required this.url, required this.size, super.key});
+  const BuddyAvatarImage({required this.url, required this.size, this.thumbUrl, super.key});
 
   final String url;
+
+  /// The small version, loaded instead of [url] for small sizes.
+  final String? thumbUrl;
   final double size;
 
   @override
   Widget build(BuildContext context) {
     final px = (size * MediaQuery.devicePixelRatioOf(context)).round();
+    final src = px <= BuddyAvatarOption.thumbPx && thumbUrl != null ? thumbUrl! : url;
     return ClipOval(
       child: CachedNetworkImage(
-        key: ValueKey('buddy-avatar-image-$url'),
-        imageUrl: url,
+        key: ValueKey('buddy-avatar-image-$src'),
+        imageUrl: src,
         width: size,
         height: size,
         fit: BoxFit.cover,
@@ -368,7 +374,7 @@ class BuddyAvatarGrid extends StatelessWidget {
                     width: 2.5,
                   ),
                 ),
-                child: BuddyAvatarImage(url: o.url, size: _picture),
+                child: BuddyAvatarImage(url: o.url, thumbUrl: o.thumbUrl, size: _picture),
               ),
             ),
           ),

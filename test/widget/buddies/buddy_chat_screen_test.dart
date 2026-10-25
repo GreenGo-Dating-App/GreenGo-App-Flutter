@@ -509,7 +509,7 @@ void main() {
     final info = find.byKey(const ValueKey('buddy-chat-language-info'));
     expect(info, findsOneWidget);
     expect(tester.widget<ListTile>(info).onTap, isNull);
-    expect(find.text('Translated into: 🇮🇹 Italian (fixed)'), findsOneWidget);
+    expect(find.text('Both translated into: 🇮🇹 Italian (fixed)'), findsOneWidget);
     // No picker any more; the chat settings entry stays.
     await tester.tap(info);
     await tester.pumpAndSettle();
@@ -629,7 +629,7 @@ void main() {
     expect(find.byKey(const ValueKey('buddy-setting-chat-language')), findsOneWidget);
     expect(tester.widget<ListTile>(find.byKey(const ValueKey('buddy-setting-chat-language'))).onTap,
         isNull);
-    expect(find.text('Translated into: 🇮🇹 Italian (fixed)'), findsOneWidget);
+    expect(find.text('Both translated into: 🇮🇹 Italian (fixed)'), findsOneWidget);
 
     // Language: chosen at creation only, never changed (read-only).
     expect(find.text('English (fixed)'), findsOneWidget);

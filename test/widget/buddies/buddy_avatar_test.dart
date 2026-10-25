@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:greengo_chat/features/buddies/domain/entities/buddy_avatar_option.dart';
 import 'package:greengo_chat/features/buddies/presentation/widgets/buddy_avatar.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
 
@@ -31,6 +32,40 @@ void main() {
     expect(img.imageUrl, 'https://img.test/owl.png');
     expect(find.byKey(drawn), findsNothing);
     expect(find.bySemanticsLabel('Owl'), findsOneWidget);
+  });
+
+  testWidgets('small sizes load the thumbnail, big ones the full picture; retired pictures still show',
+      (tester) async {
+    repo.avatars = const [
+      BuddyAvatarOption(
+          id: 'p1', url: 'https://img.test/p1_512.webp', thumbUrl: 'https://img.test/p1_192.webp', order: 1),
+      BuddyAvatarOption(id: 'old', url: 'https://img.test/old.png', order: 2, active: false),
+    ];
+    await pump(
+        tester,
+        const Column(children: [
+          BuddyAvatar(avatarId: 'p1', size: 40),
+          BuddyAvatar(avatarId: 'p1', size: 300),
+          BuddyAvatar(avatarId: 'old', size: 40),
+        ]));
+    final urls = tester.widgetList<CachedNetworkImage>(find.byType(CachedNetworkImage)).map((i) => i.imageUrl);
+    expect(urls, ['https://img.test/p1_192.webp', 'https://img.test/p1_512.webp', 'https://img.test/old.png']);
+    expect(find.byKey(drawn), findsNothing);
+  });
+
+  test('the picker offers only active pictures; thumbUrl and active are parsed', () {
+    final o = BuddyAvatarOption.fromMap('p1', {
+      'url': 'https://img.test/a.webp',
+      'thumbUrl': 'https://img.test/t.webp',
+      'active': false,
+    })!;
+    expect(o.thumbUrl, 'https://img.test/t.webp');
+    expect(o.active, isFalse);
+    expect(BuddyAvatarOption.fromMap('p2', {'url': 'https://img.test/a.webp', 'thumbUrl': 'http://x'})!.thumbUrl,
+        isNull);
+    final c = BuddyAvatarCatalog(all: [o, ...kFakeAvatars], loading: false, failed: false, retry: () {});
+    expect(c.options.map((x) => x.id), ['av_fox', 'av_owl', 'av_cat']);
+    expect(c.byId('p1'), o);
   });
 
   testWidgets('legacy buddy_XX and unknown ids fall back to the drawn avatar', (tester) async {

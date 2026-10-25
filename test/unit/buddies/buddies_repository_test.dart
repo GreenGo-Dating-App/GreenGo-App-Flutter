@@ -224,12 +224,15 @@ void main() {
       await c.doc('av_nourl').set({'label': 'No url', 'order': 4, 'active': true});
     }
 
-    test('active only, ordered by order, invalid docs skipped', () async {
+    test('active and retired, ordered by order, invalid docs skipped', () async {
       await seedAvatars();
       final list = await repo.avatarOptions();
-      expect(list.map((o) => o.id), ['av_fox', 'av_owl']);
+      // Retired pictures are kept so the Buddies wearing them still show
+      // them; the picker filters them out (BuddyAvatarCatalog.options).
+      expect(list.map((o) => o.id), ['av_old', 'av_fox', 'av_owl']);
+      expect(list.first.active, isFalse);
       expect(
-          list.first,
+          list[1],
           const BuddyAvatarOption(
               id: 'av_fox', url: 'https://s.test/fox.png', label: 'Fox', order: 1));
     });
@@ -242,7 +245,7 @@ void main() {
       expect(identical(both[0], both[1]), isTrue);
       await repo.avatarOptions();
       expect(remote.avatarReads, 1);
-      expect(repo.cachedAvatarOptions!.length, 2);
+      expect(repo.cachedAvatarOptions!.length, 3);
       await repo.avatarOptions(refresh: true);
       expect(remote.avatarReads, 2);
     });
@@ -253,7 +256,7 @@ void main() {
       await expectLater(repo.avatarOptions(), throwsStateError);
       expect(repo.cachedAvatarOptions, isNull);
       remote.avatarError = null;
-      expect((await repo.avatarOptions()).length, 2);
+      expect((await repo.avatarOptions()).length, 3);
       expect(remote.avatarReads, 2);
     });
 
