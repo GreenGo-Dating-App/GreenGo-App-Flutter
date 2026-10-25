@@ -102,6 +102,7 @@ const settingsOf = (d: any): BuddySettings => ({
   name: d.name, avatar: d.avatar, topic: d.topic, role: d.role, tone: d.tone, language: d.language,
   level: d.level, cefr: d.cefr ?? null, checkInsEnabled: d.checkInsEnabled !== false,
   chatLanguage: d.chatLanguage ?? d.language,
+  userLanguage: d.userLanguage ?? d.chatLanguage ?? d.language,
 });
 
 async function rules(): Promise<CapabilityRules> {
@@ -254,7 +255,7 @@ export async function sendOpening(uid: string, ref: admin.firestore.DocumentRefe
 export const updateBuddy = callable('updateBuddy', async (uid, data) => {
   const buddyId = okId(data.buddyId);
   // Owner 2026-10-24: the Buddy's language is fixed at creation.
-  if (data.settings && ['language', 'chatLanguage'].some((k) => Object.prototype.hasOwnProperty.call(data.settings, k))) {
+  if (data.settings && ['language', 'chatLanguage', 'userLanguage'].some((k) => Object.prototype.hasOwnProperty.call(data.settings, k))) {
     throw new AppError('LANGUAGE_FIXED', "A Buddy's language cannot be changed after it is created.", 400, { reason: 'LANGUAGE_FIXED' });
   }
   const patch = validateSettings(data.settings ?? {}, true);
@@ -751,8 +752,14 @@ export async function translateTurn(b: BuddySettings, userText: string | null, r
         if (it && !it.sameLanguage && it.text.trim() && !nearlySame(it.text, replies[i])) out.replies[i] = { text: it.text, lang: target };
       });
     }
-    if (userText && userText.trim()) {
-      const r = await translate('translate_chat', [userText], routerLang(target), { consentVersion }, {});
+    // Owner 2026-10-25: the user's declared writing language. A message that
+    // looks written in it (offline guess, or no guess) is not translated when
+    // it already is the chat language, and is translated FROM it otherwise.
+    const guessed = userText ? guessLanguage(userText) : null;
+    const declared = b.userLanguage && (!guessed || guessed === baseLang(b.userLanguage)) ? b.userLanguage : null;
+    if (userText && userText.trim() && !(declared && baseLang(declared) === baseLang(target))) {
+      const r = await translate('translate_chat', [userText], routerLang(target), { consentVersion },
+        declared ? { source: routerLang(declared) } : {});
       const it = r.items[0];
       const detected = it?.detectedLanguage ?? null;
       const sameAsTarget = detected ? baseLang(detected) === baseLang(target) : false;

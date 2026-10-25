@@ -28908,8 +28908,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get buddyTopicPrompt => 'De quoi voulez-vous parler ?';
 
   @override
-  String get buddyLanguagePrompt =>
-      'Quelle langue votre Buddy doit-il parler ?';
+  String get buddyLanguagePrompt => 'Langue dans laquelle écrit ton Buddy';
 
   @override
   String get buddyNamePrompt => 'Donnez un nom à votre Buddy';
@@ -28940,7 +28939,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get buddyLanguageOnlyNote =>
-      'Ton Buddy parle toujours uniquement cette langue. Elle ne pourra pas être modifiée ensuite.';
+      'Ton Buddy écrit toujours uniquement dans cette langue. Impossible de la changer plus tard.';
 
   @override
   String get buddyMacroCategoryLabel => 'Catégorie principale';
@@ -29479,15 +29478,33 @@ class AppLocalizationsFr extends AppLocalizations {
   String get buddyTopic_would_you_rather => 'Tu préfères ?';
 
   @override
-  String get buddyChatLanguagePrompt => 'Traduire ce chat en';
+  String get buddyChatLanguagePrompt =>
+      'Langue de traduction (pour toi et ton Buddy)';
 
   @override
   String get buddyChatLanguageNote =>
-      'Les messages sont traduits une seule fois dans cette langue. Ce choix ne pourra pas être modifié.';
+      'Tes messages et ceux de ton Buddy sont traduits une fois dans cette langue ; ce qui est déjà dans cette langue n\'est pas traduit. Impossible de la changer plus tard.';
+
+  @override
+  String buddyYouWriteInInfo(String language) {
+    return 'Tu écris en : $language';
+  }
+
+  @override
+  String buddyWritesInInfo(String name, String language) {
+    return '$name écrit en : $language';
+  }
+
+  @override
+  String get buddyUserLanguageNote =>
+      'La langue dans laquelle tu écriras tes messages. Impossible de la changer plus tard.';
+
+  @override
+  String get buddyUserLanguagePrompt => 'Langue dans laquelle tu écris';
 
   @override
   String buddyTranslatedInto(String language) {
-    return 'Traduit en : $language (fixe)';
+    return 'Tous deux traduits en : $language (fixe)';
   }
 
   @override
@@ -29495,4 +29512,51 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get buddyChooseSubcategory => 'Choisis une sous-catégorie';
+
+  @override
+  String get followedStoresSearchHint => 'Rechercher dans vos boutiques';
+
+  @override
+  String get followedStoresFilterCategory => 'Catégorie';
+
+  @override
+  String get followedStoresFilterPlace => 'Lieu';
+
+  @override
+  String get followedStoresAllCategories => 'Toutes les catégories';
+
+  @override
+  String get followedStoresAllPlaces => 'Tous les lieux';
+
+  @override
+  String followedStoresAllOfCountry(String country) {
+    return 'Tout le pays : $country';
+  }
+
+  @override
+  String get followedStoresClearFilters => 'Effacer les filtres';
+
+  @override
+  String get followedStoresNoResults =>
+      'Aucune boutique ne correspond à votre recherche ou à vos filtres';
+
+  @override
+  String get followedStoresNoPlaces =>
+      'Aucune de vos boutiques n\'a encore d\'adresse';
+
+  @override
+  String followedStoresRating(String avg, String count) {
+    return '$avg ($count)';
+  }
+
+  @override
+  String followedStoresRatingSemantics(String avg, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Noté $avg sur 5 par $count personnes',
+      one: 'Noté $avg sur 5 par 1 personne',
+    );
+    return '$_temp0';
+  }
 }

@@ -18,10 +18,11 @@ import { checkInPrompt, memoryPrompt, parseJsonObject, systemPrompt } from '../p
 import { checkInDecision, msUntilWindow } from '../buddies';
 import { DEFAULT_RULES } from '../../ai/router/config';
 
+// userLanguage left unset unless given (older Buddies have none).
 const settings = (o: Partial<BuddySettings> = {}): BuddySettings => ({
   name: 'Luna', avatar: AVATARS[0], topic: 'practice_italian', role: 'teacher', tone: 'warm', language: 'it',
   level: 'beginner', cefr: 'A2', checkInsEnabled: true, chatLanguage: 'it', ...o,
-});
+}) as BuddySettings;
 
 describe('topic catalogue', () => {
   it('has about 120 unique topics in 12 groups', () => {
@@ -297,6 +298,20 @@ describe('chat language + translate once', () => {
     const tr = await translateTurn(settings({ language: 'en', chatLanguage: 'it' }), 'Hello there', ['Hi! How are you?'], 3);
     expect(tr.replies).toEqual([{ text: '[→it] Hi! How are you?', lang: 'it' }]);
     expect(tr.user).toEqual({ text: '[→it] Hello there', lang: 'it' });
+  });
+
+  it('userLanguage: defaults to the chat language; a user message already in the chat language is not translated', async () => {
+    const { chatLanguage, ...rest } = settings({ chatLanguage: 'en' });
+    void chatLanguage;
+    expect(validateSettings({ ...rest, avatar: 'fox', chatLanguage: 'en' }).userLanguage).toBe('en');
+    expect(() => validateSettings({ ...rest, avatar: 'fox', userLanguage: 'ru' })).toThrow(BuddyInputError);
+    const b = settings({ language: 'en', chatLanguage: 'it', userLanguage: 'it' });
+    const tr = await translateTurn(b, 'Ciao, come stai oggi?', ['Hi! How are you?'], 3);
+    expect(tr.user).toBeNull();
+    expect(tr.replies).toEqual([{ text: '[→it] Hi! How are you?', lang: 'it' }]);
+    // Written in another language after all (offline guess): still translated.
+    const other = await translateTurn(b, 'Hello, how are you today? I am very well, thank you', [], 3);
+    expect(other.user).toEqual({ text: '[→it] Hello, how are you today? I am very well, thank you', lang: 'it' });
   });
 
   it('translates nothing when the chat language is the Buddy language (pt == pt_BR)', async () => {

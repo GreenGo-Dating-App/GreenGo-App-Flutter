@@ -18493,7 +18493,7 @@
   "@buddyTopicPrompt": {
     "description": "Builder step 1 title"
   },
-  "buddyLanguagePrompt": "Which language should your Buddy speak?",
+  "buddyLanguagePrompt": "Language your Buddy writes in",
   "@buddyLanguagePrompt": {
     "description": "Builder step 3 title"
   },
@@ -18534,7 +18534,7 @@
   "@buddyToneStepTitle": {
     "description": "Title of the tone step of the Buddy builder"
   },
-  "buddyLanguageOnlyNote": "Your Buddy always speaks only this language. It can't be changed later.",
+  "buddyLanguageOnlyNote": "Your Buddy always writes only in this language. It can't be changed later.",
   "@buddyLanguageOnlyNote": {
     "description": "Note under the Buddy language choice"
   },
@@ -19271,15 +19271,47 @@
   "@buddyTopic_would_you_rather": {
     "description": "Buddy chat topic label"
   },
-  "buddyChatLanguagePrompt": "Translate this chat into",
+  "buddyChatLanguagePrompt": "Translation language (for you and your Buddy)",
   "@buddyChatLanguagePrompt": {
     "description": "Buddy builder step 1: label of the select for the language the chat is translated into"
   },
-  "buddyChatLanguageNote": "Messages are translated once into this language. It can't be changed later.",
+  "buddyChatLanguageNote": "Your messages and your Buddy's are translated once into this language; nothing already in it is translated. It can't be changed later.",
   "@buddyChatLanguageNote": {
     "description": "Buddy builder: hint under the chat translation language select (fixed forever)"
   },
-  "buddyTranslatedInto": "Translated into: {language} (fixed)",
+  "buddyYouWriteInInfo": "You write in: {language}",
+  "@buddyYouWriteInInfo": {
+    "description": "Buddy chat languages menu: the user's fixed writing language. {language} = flag + language name",
+    "placeholders": {
+      "language": {
+        "type": "String",
+        "example": "🇬🇧 English"
+      }
+    }
+  },
+  "buddyWritesInInfo": "{name} writes in: {language}",
+  "@buddyWritesInInfo": {
+    "description": "Buddy chat languages menu: the Buddy's fixed writing language. {name} = Buddy name, {language} = flag + language name",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Luna"
+      },
+      "language": {
+        "type": "String",
+        "example": "🇮🇹 Italian"
+      }
+    }
+  },
+  "buddyUserLanguageNote": "The language you will write your messages in. It can't be changed later.",
+  "@buddyUserLanguageNote": {
+    "description": "Buddy builder: note under the user's writing-language select"
+  },
+  "buddyUserLanguagePrompt": "Language you write in",
+  "@buddyUserLanguagePrompt": {
+    "description": "Buddy builder: label of the select for the language the USER writes in"
+  },
+  "buddyTranslatedInto": "Both translated into: {language} (fixed)",
   "@buddyTranslatedInto": {
     "description": "Buddy chat languages menu and Buddy settings: the fixed language the chat is translated into, read-only. {language} = flag + language name",
     "placeholders": {
@@ -19296,5 +19328,74 @@
   "buddyChooseSubcategory": "Choose a sub-category",
   "@buddyChooseSubcategory": {
     "description": "Buddy builder step 1: placeholder of the sub-category select (disabled until a category is chosen)"
+  },
+  "followedStoresSearchHint": "Search your stores",
+  "@followedStoresSearchHint": {
+    "description": "Own followed-stores list: hint of the search box (searches the names of all followed stores)"
+  },
+  "followedStoresFilterCategory": "Category",
+  "@followedStoresFilterCategory": {
+    "description": "Own followed-stores list: label of the category filter chip when no category is chosen"
+  },
+  "followedStoresFilterPlace": "Place",
+  "@followedStoresFilterPlace": {
+    "description": "Own followed-stores list: label of the place (country / city) filter chip when no place is chosen; also the title of the place picker"
+  },
+  "followedStoresAllCategories": "All categories",
+  "@followedStoresAllCategories": {
+    "description": "Own followed-stores list: category picker option that removes the category filter"
+  },
+  "followedStoresAllPlaces": "All places",
+  "@followedStoresAllPlaces": {
+    "description": "Own followed-stores list: place picker option that removes the place filter"
+  },
+  "followedStoresAllOfCountry": "All of {country}",
+  "@followedStoresAllOfCountry": {
+    "description": "Own followed-stores list: place picker option to filter by the whole country (no city). {country} = localized country name",
+    "placeholders": {
+      "country": {
+        "type": "String",
+        "example": "Italy"
+      }
+    }
+  },
+  "followedStoresClearFilters": "Clear filters",
+  "@followedStoresClearFilters": {
+    "description": "Own followed-stores list: button that removes the category and place filters"
+  },
+  "followedStoresNoResults": "No stores match your search or filters",
+  "@followedStoresNoResults": {
+    "description": "Own followed-stores list: nothing matches the search text and/or the filters"
+  },
+  "followedStoresNoPlaces": "None of your stores has an address yet",
+  "@followedStoresNoPlaces": {
+    "description": "Own followed-stores list: place picker is empty because no followed store has a storefront address"
+  },
+  "followedStoresRating": "{avg} ({count})",
+  "@followedStoresRating": {
+    "description": "Own followed-stores list row: average stars and number of ratings, shown after a star icon. {avg} = average with one decimal, {count} = number of ratings (compact)",
+    "placeholders": {
+      "avg": {
+        "type": "String",
+        "example": "4.3"
+      },
+      "count": {
+        "type": "String",
+        "example": "12"
+      }
+    }
+  },
+  "followedStoresRatingSemantics": "{count, plural, =1{Rated {avg} out of 5 by 1 person} other{Rated {avg} out of 5 by {count} people}}",
+  "@followedStoresRatingSemantics": {
+    "description": "Own followed-stores list row: screen-reader label of the star rating. {avg} = average with one decimal, {count} = number of ratings",
+    "placeholders": {
+      "avg": {
+        "type": "String",
+        "example": "4.3"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
   }
 }

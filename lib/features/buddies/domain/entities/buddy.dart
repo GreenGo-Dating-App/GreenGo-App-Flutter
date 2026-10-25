@@ -17,6 +17,7 @@ class BuddySettings extends Equatable {
     this.level,
     this.cefr,
     this.chatLanguage,
+    this.userLanguage,
     this.checkInsEnabled = true,
   });
 
@@ -37,6 +38,11 @@ class BuddySettings extends Equatable {
   /// then falls back to the app language) and when the builder leaves it to
   /// the server (which defaults it to [language]).
   final String? chatLanguage;
+
+  /// The language the user writes in (owner 2026-10-25): chosen at creation,
+  /// fixed. The server skips translating a user message already in the chat
+  /// language and uses it as the translation source. Null on older Buddies.
+  final String? userLanguage;
   final bool checkInsEnabled;
 
   /// The callable payload (`createBuddy {settings}`). Optional fields are
@@ -51,6 +57,7 @@ class BuddySettings extends Equatable {
         if (level != null) 'level': level,
         if (cefr != null) 'cefr': cefr,
         if (chatLanguage != null) 'chatLanguage': chatLanguage,
+        if (userLanguage != null) 'userLanguage': userLanguage,
         'checkInsEnabled': checkInsEnabled,
       };
 
@@ -72,12 +79,13 @@ class BuddySettings extends Equatable {
         level: level,
         cefr: cefr,
         chatLanguage: chatLanguage,
+        userLanguage: userLanguage,
         checkInsEnabled: checkInsEnabled ?? this.checkInsEnabled,
       );
 
   @override
   List<Object?> get props =>
-      [name, avatar, topic, role, tone, language, level, cefr, chatLanguage, checkInsEnabled];
+      [name, avatar, topic, role, tone, language, level, cefr, chatLanguage, userLanguage, checkInsEnabled];
 }
 
 /// One long-term fact the Buddy remembers (server `MemoryFact`).

@@ -143,6 +143,9 @@ class BuddiesRemoteDataSource {
         chatLanguage: d['chatLanguage'] is String && (d['chatLanguage'] as String).isNotEmpty
             ? d['chatLanguage'] as String
             : null,
+        userLanguage: d['userLanguage'] is String && (d['userLanguage'] as String).isNotEmpty
+            ? d['userLanguage'] as String
+            : null,
         checkInsEnabled: d['checkInsEnabled'] != false,
       ),
       lastMessage: d['lastMessage'] as String?,

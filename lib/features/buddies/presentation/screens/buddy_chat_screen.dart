@@ -280,9 +280,13 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
   /// The 1:1 chat's languages menu: the fixed chat language (info) + chat
   /// settings.
   void _openLanguagesMenu() {
+    final buddy = context.read<BuddyChatBloc>().state.buddy ?? widget.initialBuddy;
     showBuddyChatLanguagesMenu(
       context,
       chatLanguage: _targetLanguage,
+      buddyName: buddy?.settings.name ?? '',
+      buddyLanguage: buddy?.settings.language,
+      userLanguage: buddy?.settings.userLanguage,
       onSettings: () => showBuddyChatSettingsSheet(
         context,
         buddyId: widget.buddyId,

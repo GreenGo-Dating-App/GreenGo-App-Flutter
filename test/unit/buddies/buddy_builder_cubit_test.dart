@@ -117,6 +117,7 @@ void main() {
       'tone': 'playful',
       'language': 'it',
       'chatLanguage': 'it',
+      'userLanguage': 'it',
       'checkInsEnabled': true,
     });
   });

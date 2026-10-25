@@ -266,6 +266,22 @@ class _BuddyBuilderViewState extends State<_BuddyBuilderView> {
             Text(l10n.buddyLanguageOnlyNote,
                 style: const TextStyle(color: AppColors.textTertiary, fontSize: 12)),
             const SizedBox(height: 16),
+            // Owner 2026-10-25: the three languages, in reading order: the
+            // Buddy writes in, you write in, both translated into.
+            _select(
+              key: const ValueKey('buddy-user-language'),
+              label: l10n.buddyUserLanguagePrompt,
+              value: s.userLanguage,
+              options: [
+                for (final c in BuddyCatalog.languages)
+                  (c, '${languageFlagEmoji(c)} ${buddyLanguageLabel(l10n, c)}'),
+              ],
+              onChanged: cubit.selectUserLanguage,
+            ),
+            const SizedBox(height: 6),
+            Text(l10n.buddyUserLanguageNote,
+                style: const TextStyle(color: AppColors.textTertiary, fontSize: 12)),
+            const SizedBox(height: 16),
             // What the server translates the chat into, once per message.
             _select(
               key: const ValueKey('buddy-chat-language'),

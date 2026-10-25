@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/utils/language_flags.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../chat/data/chat_settings_prefs.dart';
 import '../buddy_labels.dart';
@@ -73,12 +74,16 @@ class BuddyChatSettings {
   }
 }
 
-/// The 1:1 chat's "Languages" menu: what the chat is translated into
-/// (read-only: the Buddy's fixed `chatLanguage`) + chat settings.
+/// The 1:1 chat's "Languages" menu: the three fixed languages (read-only,
+/// owner 2026-10-25: the Buddy writes in, you write in, both translated
+/// into) + chat settings.
 Future<void> showBuddyChatLanguagesMenu(
   BuildContext context, {
   required String chatLanguage,
   required VoidCallback onSettings,
+  String buddyName = '',
+  String? buddyLanguage,
+  String? userLanguage,
 }) {
   final l10n = AppLocalizations.of(context)!;
   return showModalBottomSheet<void>(
@@ -105,13 +110,22 @@ Future<void> showBuddyChatLanguagesMenu(
             ),
             const SizedBox(height: 16),
             // Info only: chosen when the Buddy was created, never changed.
-            ListTile(
-              key: const ValueKey('buddy-chat-language-info'),
-              contentPadding: EdgeInsets.zero,
-              leading: const Icon(Icons.language, color: AppColors.textSecondary),
-              title: Text(buddyTranslatedIntoLabel(l10n, chatLanguage),
-                  style: const TextStyle(color: AppColors.textSecondary)),
-              trailing: const Icon(Icons.lock_outline, size: 18, color: AppColors.textTertiary),
+            if (buddyLanguage != null)
+              _fixedLanguageRow(
+                const ValueKey('buddy-chat-buddy-language-info'),
+                Icons.smart_toy_outlined,
+                l10n.buddyWritesInInfo(buddyName, _languageText(l10n, buddyLanguage)),
+              ),
+            if (userLanguage != null)
+              _fixedLanguageRow(
+                const ValueKey('buddy-chat-user-language-info'),
+                Icons.edit_outlined,
+                l10n.buddyYouWriteInInfo(_languageText(l10n, userLanguage)),
+              ),
+            _fixedLanguageRow(
+              const ValueKey('buddy-chat-language-info'),
+              Icons.translate,
+              buddyTranslatedIntoLabel(l10n, chatLanguage),
             ),
             ListTile(
               key: const ValueKey('buddy-chat-settings'),
@@ -130,6 +144,17 @@ Future<void> showBuddyChatLanguagesMenu(
     ),
   );
 }
+
+String _languageText(AppLocalizations l10n, String code) =>
+    '${languageFlagEmoji(code)} ${buddyLanguageLabel(l10n, code)}'.trim();
+
+Widget _fixedLanguageRow(Key key, IconData icon, String text) => ListTile(
+      key: key,
+      contentPadding: EdgeInsets.zero,
+      leading: Icon(icon, color: AppColors.textSecondary),
+      title: Text(text, style: const TextStyle(color: AppColors.textSecondary)),
+      trailing: const Icon(Icons.lock_outline, size: 18, color: AppColors.textTertiary),
+    );
 
 /// The 1:1 chat's settings sheet (same labels, same "this chat / all chats"
 /// saving), with the settings a Buddy chat offers. [onChanged] applies a

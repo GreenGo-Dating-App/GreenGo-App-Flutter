@@ -48487,7 +48487,7 @@ abstract class AppLocalizations {
   /// Builder step 3 title
   ///
   /// In en, this message translates to:
-  /// **'Which language should your Buddy speak?'**
+  /// **'Language your Buddy writes in'**
   String get buddyLanguagePrompt;
 
   /// Builder step 4: name field label
@@ -48541,7 +48541,7 @@ abstract class AppLocalizations {
   /// Note under the Buddy language choice
   ///
   /// In en, this message translates to:
-  /// **'Your Buddy always speaks only this language. It can\'t be changed later.'**
+  /// **'Your Buddy always writes only in this language. It can\'t be changed later.'**
   String get buddyLanguageOnlyNote;
 
   /// Buddy builder step 1: label of the first select box, the main category (topic group)
@@ -49585,19 +49585,43 @@ abstract class AppLocalizations {
   /// Buddy builder step 1: label of the select for the language the chat is translated into
   ///
   /// In en, this message translates to:
-  /// **'Translate this chat into'**
+  /// **'Translation language (for you and your Buddy)'**
   String get buddyChatLanguagePrompt;
 
   /// Buddy builder: hint under the chat translation language select (fixed forever)
   ///
   /// In en, this message translates to:
-  /// **'Messages are translated once into this language. It can\'t be changed later.'**
+  /// **'Your messages and your Buddy\'s are translated once into this language; nothing already in it is translated. It can\'t be changed later.'**
   String get buddyChatLanguageNote;
+
+  /// Buddy chat languages menu: the user's fixed writing language. {language} = flag + language name
+  ///
+  /// In en, this message translates to:
+  /// **'You write in: {language}'**
+  String buddyYouWriteInInfo(String language);
+
+  /// Buddy chat languages menu: the Buddy's fixed writing language. {name} = Buddy name, {language} = flag + language name
+  ///
+  /// In en, this message translates to:
+  /// **'{name} writes in: {language}'**
+  String buddyWritesInInfo(String name, String language);
+
+  /// Buddy builder: note under the user's writing-language select
+  ///
+  /// In en, this message translates to:
+  /// **'The language you will write your messages in. It can\'t be changed later.'**
+  String get buddyUserLanguageNote;
+
+  /// Buddy builder: label of the select for the language the USER writes in
+  ///
+  /// In en, this message translates to:
+  /// **'Language you write in'**
+  String get buddyUserLanguagePrompt;
 
   /// Buddy chat languages menu and Buddy settings: the fixed language the chat is translated into, read-only. {language} = flag + language name
   ///
   /// In en, this message translates to:
-  /// **'Translated into: {language} (fixed)'**
+  /// **'Both translated into: {language} (fixed)'**
   String buddyTranslatedInto(String language);
 
   /// Buddy builder step 1: placeholder of the main category select (nothing preselected)
@@ -49611,6 +49635,72 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Choose a sub-category'**
   String get buddyChooseSubcategory;
+
+  /// Own followed-stores list: hint of the search box (searches the names of all followed stores)
+  ///
+  /// In en, this message translates to:
+  /// **'Search your stores'**
+  String get followedStoresSearchHint;
+
+  /// Own followed-stores list: label of the category filter chip when no category is chosen
+  ///
+  /// In en, this message translates to:
+  /// **'Category'**
+  String get followedStoresFilterCategory;
+
+  /// Own followed-stores list: label of the place (country / city) filter chip when no place is chosen; also the title of the place picker
+  ///
+  /// In en, this message translates to:
+  /// **'Place'**
+  String get followedStoresFilterPlace;
+
+  /// Own followed-stores list: category picker option that removes the category filter
+  ///
+  /// In en, this message translates to:
+  /// **'All categories'**
+  String get followedStoresAllCategories;
+
+  /// Own followed-stores list: place picker option that removes the place filter
+  ///
+  /// In en, this message translates to:
+  /// **'All places'**
+  String get followedStoresAllPlaces;
+
+  /// Own followed-stores list: place picker option to filter by the whole country (no city). {country} = localized country name
+  ///
+  /// In en, this message translates to:
+  /// **'All of {country}'**
+  String followedStoresAllOfCountry(String country);
+
+  /// Own followed-stores list: button that removes the category and place filters
+  ///
+  /// In en, this message translates to:
+  /// **'Clear filters'**
+  String get followedStoresClearFilters;
+
+  /// Own followed-stores list: nothing matches the search text and/or the filters
+  ///
+  /// In en, this message translates to:
+  /// **'No stores match your search or filters'**
+  String get followedStoresNoResults;
+
+  /// Own followed-stores list: place picker is empty because no followed store has a storefront address
+  ///
+  /// In en, this message translates to:
+  /// **'None of your stores has an address yet'**
+  String get followedStoresNoPlaces;
+
+  /// Own followed-stores list row: average stars and number of ratings, shown after a star icon. {avg} = average with one decimal, {count} = number of ratings (compact)
+  ///
+  /// In en, this message translates to:
+  /// **'{avg} ({count})'**
+  String followedStoresRating(String avg, String count);
+
+  /// Own followed-stores list row: screen-reader label of the star rating. {avg} = average with one decimal, {count} = number of ratings
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{Rated {avg} out of 5 by 1 person} other{Rated {avg} out of 5 by {count} people}}'**
+  String followedStoresRatingSemantics(String avg, int count);
 }
 
 class _AppLocalizationsDelegate

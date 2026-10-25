@@ -28479,7 +28479,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get buddyTopicPrompt => 'What do you want to talk about?';
 
   @override
-  String get buddyLanguagePrompt => 'Which language should your Buddy speak?';
+  String get buddyLanguagePrompt => 'Language your Buddy writes in';
 
   @override
   String get buddyNamePrompt => 'Give your Buddy a name';
@@ -28510,7 +28510,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get buddyLanguageOnlyNote =>
-      'Your Buddy always speaks only this language. It can\'t be changed later.';
+      'Your Buddy always writes only in this language. It can\'t be changed later.';
 
   @override
   String get buddyMacroCategoryLabel => 'Main category';
@@ -29049,15 +29049,33 @@ class AppLocalizationsEn extends AppLocalizations {
   String get buddyTopic_would_you_rather => 'Would you rather?';
 
   @override
-  String get buddyChatLanguagePrompt => 'Translate this chat into';
+  String get buddyChatLanguagePrompt =>
+      'Translation language (for you and your Buddy)';
 
   @override
   String get buddyChatLanguageNote =>
-      'Messages are translated once into this language. It can\'t be changed later.';
+      'Your messages and your Buddy\'s are translated once into this language; nothing already in it is translated. It can\'t be changed later.';
+
+  @override
+  String buddyYouWriteInInfo(String language) {
+    return 'You write in: $language';
+  }
+
+  @override
+  String buddyWritesInInfo(String name, String language) {
+    return '$name writes in: $language';
+  }
+
+  @override
+  String get buddyUserLanguageNote =>
+      'The language you will write your messages in. It can\'t be changed later.';
+
+  @override
+  String get buddyUserLanguagePrompt => 'Language you write in';
 
   @override
   String buddyTranslatedInto(String language) {
-    return 'Translated into: $language (fixed)';
+    return 'Both translated into: $language (fixed)';
   }
 
   @override
@@ -29065,4 +29083,50 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get buddyChooseSubcategory => 'Choose a sub-category';
+
+  @override
+  String get followedStoresSearchHint => 'Search your stores';
+
+  @override
+  String get followedStoresFilterCategory => 'Category';
+
+  @override
+  String get followedStoresFilterPlace => 'Place';
+
+  @override
+  String get followedStoresAllCategories => 'All categories';
+
+  @override
+  String get followedStoresAllPlaces => 'All places';
+
+  @override
+  String followedStoresAllOfCountry(String country) {
+    return 'All of $country';
+  }
+
+  @override
+  String get followedStoresClearFilters => 'Clear filters';
+
+  @override
+  String get followedStoresNoResults =>
+      'No stores match your search or filters';
+
+  @override
+  String get followedStoresNoPlaces => 'None of your stores has an address yet';
+
+  @override
+  String followedStoresRating(String avg, String count) {
+    return '$avg ($count)';
+  }
+
+  @override
+  String followedStoresRatingSemantics(String avg, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Rated $avg out of 5 by $count people',
+      one: 'Rated $avg out of 5 by 1 person',
+    );
+    return '$_temp0';
+  }
 }
