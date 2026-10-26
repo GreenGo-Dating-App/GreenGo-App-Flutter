@@ -147,7 +147,7 @@ class _PostLoginSplashScreenState extends State<PostLoginSplashScreen>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: AppColors.backgroundDark,
       body: Center(
         child: Opacity(
           opacity: _opacityAnimation.value,

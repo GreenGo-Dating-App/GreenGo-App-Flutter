@@ -1036,7 +1036,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         // One scroll view (owner 2026-10-24): the app bar, the tabs and each
         // tab's header scroll away together with its content.
         child: OneScrollTabsScaffold(
-          backgroundColor: Colors.black,
+          backgroundColor: AppColors.backgroundDark,
           appBarColor: AppColors.backgroundDark,
           title: Text(
             AppLocalizations.of(context)!.shopTitle,

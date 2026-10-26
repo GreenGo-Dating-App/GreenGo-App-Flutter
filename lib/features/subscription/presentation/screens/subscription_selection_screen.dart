@@ -176,10 +176,10 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
     final web = _webDestination;
     if (web != null) return web;
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
         title: Text(AppLocalizations.of(context)!.membershipBuyTitle),
-        backgroundColor: Colors.black,
+        backgroundColor: AppColors.backgroundDark,
         foregroundColor: const Color(0xFFD4AF37),
         elevation: 0,
       ),

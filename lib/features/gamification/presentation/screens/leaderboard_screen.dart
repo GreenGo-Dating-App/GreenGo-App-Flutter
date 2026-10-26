@@ -82,9 +82,9 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
-        backgroundColor: Colors.black,
+        backgroundColor: AppColors.backgroundDark,
         elevation: 0,
         automaticallyImplyLeading: false,
         title: Text(
@@ -596,7 +596,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
             backgroundColor: colors[rank]![0],
             child: CircleAvatar(
               radius: rank == 1 ? 36 : 28,
-              backgroundColor: Colors.black,
+              backgroundColor: AppColors.backgroundDark,
               backgroundImage:
                   entry.photoUrl != null && entry.photoUrl!.isNotEmpty
                       ? CachedNetworkImageProvider(entry.photoUrl!,
@@ -804,7 +804,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                 entry.isVIP ? const Color(0xFFFFD700) : Colors.blue.shade400,
             child: CircleAvatar(
               radius: 18,
-              backgroundColor: Colors.black,
+              backgroundColor: AppColors.backgroundDark,
               backgroundImage:
                   entry.photoUrl != null && entry.photoUrl!.isNotEmpty
                       ? CachedNetworkImageProvider(entry.photoUrl!,

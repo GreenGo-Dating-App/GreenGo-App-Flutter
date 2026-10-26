@@ -1736,7 +1736,7 @@ class BannedScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
     return Scaffold(
-      backgroundColor: const Color(0xFF0A0A0A),
+      backgroundColor: AppColors.backgroundDark,
       body: SafeArea(
         child: Center(
           child: Padding(

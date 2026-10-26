@@ -211,7 +211,7 @@ class _MembershipScreenState extends State<_MembershipScreenView> {
           // scroll away together with the plans.
           return OneScrollPage(
             title: Text(AppLocalizations.of(context)!.membershipBuyTitle),
-            backgroundColor: Colors.black,
+            backgroundColor: AppColors.backgroundDark,
             foregroundColor: AppColors.richGold,
             padding: const EdgeInsets.all(20.0),
             // Loading overlay

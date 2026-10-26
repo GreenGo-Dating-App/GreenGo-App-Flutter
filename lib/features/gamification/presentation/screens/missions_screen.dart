@@ -89,9 +89,9 @@ class _MissionsScreenState extends State<MissionsScreen> {
     final l10n = AppLocalizations.of(context)!;
 
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
-        backgroundColor: Colors.black,
+        backgroundColor: AppColors.backgroundDark,
         elevation: 0,
         title: Text(
           l10n.missionsTitle,
@@ -108,7 +108,7 @@ class _MissionsScreenState extends State<MissionsScreen> {
             )
           : RefreshIndicator(
               color: AppColors.richGold,
-              backgroundColor: Colors.black,
+              backgroundColor: AppColors.backgroundDark,
               onRefresh: _load,
               child: ListView(
                 physics: const AlwaysScrollableScrollPhysics(),

@@ -84,9 +84,9 @@ class _CulturalPassportScreenState extends State<CulturalPassportScreen> {
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
-        backgroundColor: Colors.black,
+        backgroundColor: AppColors.backgroundDark,
         elevation: 0,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
@@ -236,7 +236,7 @@ class _PassportBody extends StatelessWidget {
 
     return RefreshIndicator(
       color: AppColors.richGold,
-      backgroundColor: Colors.black,
+      backgroundColor: AppColors.backgroundDark,
       onRefresh: onRefresh,
       child: ListView(
         physics: const AlwaysScrollableScrollPhysics(

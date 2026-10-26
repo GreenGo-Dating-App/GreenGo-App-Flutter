@@ -83,7 +83,7 @@ class _JourneyScreenState extends State<JourneyScreen>
     final overallProgress = widget.journey?.overallProgress ?? 0.0;
 
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: AppColors.backgroundDark,
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
@@ -104,7 +104,7 @@ class _JourneyScreenState extends State<JourneyScreen>
               collapsedHeight: 60,
               floating: false,
               pinned: true,
-              backgroundColor: Colors.black,
+              backgroundColor: AppColors.backgroundDark,
               surfaceTintColor: Colors.transparent,
               iconTheme: const IconThemeData(color: AppColors.textPrimary),
               flexibleSpace: FlexibleSpaceBar(

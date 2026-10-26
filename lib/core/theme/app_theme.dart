@@ -51,7 +51,7 @@ class AppTheme {
 
       // AppBar Theme
       appBarTheme: AppBarTheme(
-        backgroundColor: AppColors.deepBlack,
+        backgroundColor: AppColors.backgroundDark,
         elevation: 0,
         centerTitle: true,
         toolbarHeight: s(56),
@@ -284,7 +284,7 @@ class AppTheme {
 
       // Bottom Navigation Bar Theme
       bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-        backgroundColor: AppColors.deepBlack,
+        backgroundColor: AppColors.backgroundDark,
         selectedItemColor: AppColors.richGold,
         unselectedItemColor: AppColors.textTertiary,
         type: BottomNavigationBarType.fixed,

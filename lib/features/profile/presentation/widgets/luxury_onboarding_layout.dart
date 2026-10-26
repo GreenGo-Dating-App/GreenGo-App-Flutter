@@ -133,7 +133,7 @@ class _LuxuryOnboardingLayoutState extends State<LuxuryOnboardingLayout>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: AppColors.backgroundDark,
       body: Stack(
         children: [
           // Animated gradient background
@@ -281,7 +281,7 @@ class _LuxuryOnboardingLayoutState extends State<LuxuryOnboardingLayout>
               colors: [
                 Colors.black,
                 Color.lerp(
-                  const Color(0xFF0A0A0A),
+                  AppColors.backgroundDark,
                   const Color(0xFF121208),
                   _floatAnimation.value,
                 )!,
