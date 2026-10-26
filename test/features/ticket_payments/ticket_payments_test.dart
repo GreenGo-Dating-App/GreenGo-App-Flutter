@@ -42,12 +42,18 @@ void main() {
       expect(toMinorUnits(9990, 'clp'), 9990);
       expect(formatTicketAmount(2550, 'brl', locale: 'pt_BR'), contains('25,50'));
     });
-    test('provider blocks: MP currency mismatch, minimums, not connected', () {
-      ProviderBlock? b(TicketProvider p, String c, double price, [PaymentAccounts a = _ready]) =>
-          providerBlock(p: p, config: _config, accounts: a, currency: c, price: price);
+    ProviderBlock? b(TicketProvider p, String c, double price, [PaymentAccounts a = _ready]) =>
+        providerBlock(p: p, config: _config, accounts: a, currency: c, price: price);
+    test('provider blocks: MP currency mismatch, minimums', () {
       expect(b(TicketProvider.mercadoPago, 'usd', 10), ProviderBlock.currencyMismatch);
       expect(b(TicketProvider.mercadoPago, 'brl', 10), isNull);
       expect(b(TicketProvider.mercadoPago, 'brl', 0.5), ProviderBlock.belowMinimum);
+    }, skip: !kMercadoPagoEnabled);
+    test('Mercado Pago paused: not configured even when the server enables it', () {
+      expect(_config.enabled(TicketProvider.mercadoPago), isFalse);
+      expect(b(TicketProvider.mercadoPago, 'brl', 10), ProviderBlock.notConfigured);
+    }, skip: kMercadoPagoEnabled);
+    test('provider blocks: Stripe minimums, not connected', () {
       expect(b(TicketProvider.stripe, 'usd', 0.4), ProviderBlock.belowMinimum);
       expect(b(TicketProvider.stripe, 'usd', 0.5), isNull);
       expect(b(TicketProvider.stripe, 'usd', 5, const PaymentAccounts()), ProviderBlock.notConnected);
@@ -91,10 +97,11 @@ void main() {
 
     String text(WidgetTester t, String key) => (t.widget(find.byKey(ValueKey(key))) as Text).data!;
 
-    testWidgets('only Mercado Pago and Stripe; no payment-link option; seller-paid fee + payout estimate', (t) async {
+    testWidgets('Stripe (+ Mercado Pago when enabled); no payment-link option; seller-paid fee + payout estimate', (t) async {
       await t.pumpWidget(selector(const TicketPaymentChoice()));
       await t.pumpAndSettle();
-      expect(find.byKey(const ValueKey('ticket-provider-mercadopago')), findsOneWidget);
+      expect(find.byKey(const ValueKey('ticket-provider-mercadopago')),
+          kMercadoPagoEnabled ? findsOneWidget : findsNothing);
       expect(find.byKey(const ValueKey('ticket-provider-stripe')), findsOneWidget);
       expect(find.byKey(const ValueKey('ticket-provider-link')), findsNothing);
       expect(find.byKey(const ValueKey('ticket-fee-host-note')), findsOneWidget);
@@ -144,7 +151,7 @@ void main() {
       )));
       await t.pumpAndSettle();
       expect(find.textContaining('Mercado Pago only charges in BRL'), findsOneWidget);
-    });
+    }, skip: !kMercadoPagoEnabled);
   });
 
   group('BuyTicketSheet', () {

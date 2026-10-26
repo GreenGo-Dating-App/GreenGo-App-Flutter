@@ -16629,8 +16629,7 @@ class AppLocalizationsDe extends AppLocalizations {
       'Käufer zahlen in der App und das Geld geht direkt auf dein eigenes Stripe- oder Mercado-Pago-Konto. Die GreenGo-Servicegebühr wird von jedem verkauften Ticket abgezogen; Käufer zahlen nur deinen Ticketpreis.';
 
   @override
-  String get tpGetPaidSubtitle =>
-      'Verbinde Stripe oder Mercado Pago, um Tickets zu verkaufen';
+  String get tpGetPaidSubtitle => 'Verbinde Stripe, um Tickets zu verkaufen';
 
   @override
   String get tpGetPaidTitle => 'Bezahlt werden';
@@ -16884,7 +16883,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get tpTiredOfConfirming =>
-      'Keine Lust mehr zu bestätigen? Verbinde Mercado Pago oder Stripe für automatische Bestätigung.';
+      'Keine Lust mehr zu bestätigen? Verbinde Stripe für automatische Bestätigung.';
 
   @override
   String get tpToConfirmEmpty => 'Keine Zahlungen warten auf dich.';
@@ -22965,7 +22964,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get tpAutoSectionHint =>
-      'Verbinde Stripe oder Mercado Pago: Käufer zahlen in der App und ihre Tickets werden sofort bestätigt, ohne manuelle Prüfung.';
+      'Verbinde Stripe: Käufer zahlen in der App und ihre Tickets werden sofort bestätigt, ohne manuelle Prüfung.';
 
   @override
   String get paymentMethodsSettingsSubtitle =>
@@ -25043,7 +25042,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get tpErrLinkDiscontinued =>
-      'Zahlungslinks werden nicht mehr akzeptiert. Der Veranstalter muss Stripe oder Mercado Pago verbinden, um Tickets zu verkaufen.';
+      'Zahlungslinks werden nicht mehr akzeptiert. Der Veranstalter muss Stripe verbinden, um Tickets zu verkaufen.';
 
   @override
   String get tpErrFeeCurrency =>
@@ -25051,11 +25050,11 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get tpLinkDiscontinuedBanner =>
-      'Zahlungslinks werden nicht mehr akzeptiert. Verbinde Mercado Pago oder Stripe, um weiter zu verkaufen.';
+      'Zahlungslinks werden nicht mehr akzeptiert. Verbinde Stripe, um weiter zu verkaufen.';
 
   @override
   String get uexpErrPaymentLinkNotAccepted =>
-      'Zahlungslinks und Barzahlung werden nicht mehr akzeptiert. Verbinde Stripe oder Mercado Pago oder veröffentliche das Erlebnis kostenlos.';
+      'Zahlungslinks und Barzahlung werden nicht mehr akzeptiert. Verbinde Stripe oder veröffentliche das Erlebnis kostenlos.';
 
   @override
   String get uexpPaymentLinkNotAcceptedTitle => 'Zahlungsanbieter verbinden';
@@ -25119,7 +25118,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get tpPayoutPickProvider =>
-      'Wähle Stripe oder Mercado Pago, um deren Bearbeitungsgebühr einzurechnen.';
+      'Wähle Stripe, um deren Bearbeitungsgebühr einzurechnen.';
 
   @override
   String get tpPayoutYouReceive => 'Du erhältst';
@@ -25498,7 +25497,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get bcTodoConnectPayments =>
-      'Verbinde Stripe oder Mercado Pago, um kostenpflichtige Tickets zu verkaufen';
+      'Verbinde Stripe, um kostenpflichtige Tickets zu verkaufen';
 
   @override
   String bcTodoBookingRequests(int count) {
@@ -25693,7 +25692,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get bcCheckInvoice => 'Rechnungsdaten';
 
   @override
-  String get bcCheckPayments => 'Zahlungskonto (Stripe oder Mercado Pago)';
+  String get bcCheckPayments => 'Zahlungskonto (Stripe)';
 
   @override
   String get bcCheckHours => 'Öffnungszeiten';
@@ -27081,7 +27080,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get tourGetPaidConnectDesc =>
-      'Stripe oder Mercado Pago - Ticketeinnahmen gehen direkt an dich.';
+      'Stripe - Ticketeinnahmen gehen direkt an dich.';
 
   @override
   String get tourGetPaidFeesTitle => 'Was du erhältst';
@@ -27525,7 +27524,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get xplInfoFeeProvider =>
-      'Stripe oder Mercado Pago ziehen zusätzlich ihre eigene Bearbeitungsgebühr von deinem Konto ab; das ist keine GreenGo-Gebühr.';
+      'Stripe zieht zusätzlich seine eigene Bearbeitungsgebühr von deinem Konto ab; das ist keine GreenGo-Gebühr.';
 
   @override
   String get xplInfoReceiveTitle => 'Was du pro Ticket erhältst';
@@ -27668,7 +27667,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get xplEmptyBcSales =>
-      'Diesen Monat noch keine Verkäufe. Verbinde Stripe oder Mercado Pago unter „Bezahlt werden“ und veröffentliche dann ein kostenpflichtiges Event oder Erlebnis.';
+      'Diesen Monat noch keine Verkäufe. Verbinde Stripe unter „Bezahlt werden“ und veröffentliche dann ein kostenpflichtiges Event oder Erlebnis.';
 
   @override
   String get xplLockedTranslateTitle => 'Tägliches Übersetzungslimit erreicht';
@@ -27709,7 +27708,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get xplHowBc2 =>
-      'Verbinde Stripe oder Mercado Pago unter „Bezahlt werden“. Käufer zahlen direkt an dich; GreenGo verwahrt nie Ticketgeld.';
+      'Verbinde Stripe unter „Bezahlt werden“. Käufer zahlen direkt an dich; GreenGo verwahrt nie Ticketgeld.';
 
   @override
   String get xplHowBc3 =>
@@ -27875,7 +27874,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get xplFaqFeesA =>
-      'Die GreenGo-Servicegebühr zahlt der Verkäufer; Käufer zahlen nur den Ticketpreis. Pro bezahltem Ticket: Silver 3 US\$ + 10 % (max. 30 US\$), Gold 2 US\$ + 10 % (max. 28 US\$), Platinum 1 US\$ + 10 % (max. 25 US\$). Dein erstes kostenpflichtiges Angebot kostet pauschal 1 US\$ pro Ticket. Kostenlose Tickets haben keine Gebühr, und die Gebühr ist nie höher als der Ticketpreis. Stripe oder Mercado Pago berechnen eigene Bearbeitungsgebühren.';
+      'Die GreenGo-Servicegebühr zahlt der Verkäufer; Käufer zahlen nur den Ticketpreis. Pro bezahltem Ticket: Silver 3 US\$ + 10 % (max. 30 US\$), Gold 2 US\$ + 10 % (max. 28 US\$), Platinum 1 US\$ + 10 % (max. 25 US\$). Dein erstes kostenpflichtiges Angebot kostet pauschal 1 US\$ pro Ticket. Kostenlose Tickets haben keine Gebühr, und die Gebühr ist nie höher als der Ticketpreis. Stripe berechnet eigene Bearbeitungsgebühren.';
 
   @override
   String get xplFaqPhasesQ =>

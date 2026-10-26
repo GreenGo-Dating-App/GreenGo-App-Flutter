@@ -16412,11 +16412,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tpGetPaidIntro =>
-      'Buyers pay in the app and the money goes straight to your own Stripe or Mercado Pago account. GreenGo\'s service fee is deducted from each ticket sold; buyers pay only your ticket price.';
+      'Buyers pay in the app and the money goes straight to your own Stripe account. GreenGo\'s service fee is deducted from each ticket sold; buyers pay only your ticket price.';
 
   @override
-  String get tpGetPaidSubtitle =>
-      'Connect Stripe or Mercado Pago to sell tickets';
+  String get tpGetPaidSubtitle => 'Connect Stripe to sell tickets';
 
   @override
   String get tpGetPaidTitle => 'Get paid';
@@ -16667,7 +16666,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tpTiredOfConfirming =>
-      'Tired of confirming? Connect Mercado Pago or Stripe for automatic confirmation.';
+      'Tired of confirming? Connect Stripe for automatic confirmation.';
 
   @override
   String get tpToConfirmEmpty => 'No payments waiting for you.';
@@ -22693,7 +22692,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tpAutoSectionHint =>
-      'Connect Stripe or Mercado Pago: buyers pay in the app and their tickets are confirmed instantly, with no manual checks.';
+      'Connect Stripe: buyers pay in the app and their tickets are confirmed instantly, with no manual checks.';
 
   @override
   String get paymentMethodsSettingsSubtitle =>
@@ -24747,7 +24746,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tpErrLinkDiscontinued =>
-      'Payment links are no longer accepted. The organizer needs to connect Stripe or Mercado Pago to sell tickets.';
+      'Payment links are no longer accepted. The organizer needs to connect Stripe to sell tickets.';
 
   @override
   String get tpErrFeeCurrency =>
@@ -24755,11 +24754,11 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tpLinkDiscontinuedBanner =>
-      'Payment links are no longer accepted. Connect Mercado Pago or Stripe to keep selling.';
+      'Payment links are no longer accepted. Connect Stripe to keep selling.';
 
   @override
   String get uexpErrPaymentLinkNotAccepted =>
-      'Payment links and cash are no longer accepted. Connect Stripe or Mercado Pago, or publish the experience as free.';
+      'Payment links and cash are no longer accepted. Connect Stripe, or publish the experience as free.';
 
   @override
   String get uexpPaymentLinkNotAcceptedTitle => 'Connect a payment provider';
@@ -24823,7 +24822,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tpPayoutPickProvider =>
-      'Choose Stripe or Mercado Pago to include their processing fee.';
+      'Choose Stripe to include their processing fee.';
 
   @override
   String get tpPayoutYouReceive => 'You receive';
@@ -25199,8 +25198,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get bcKpiRating => 'Rating';
 
   @override
-  String get bcTodoConnectPayments =>
-      'Connect Stripe or Mercado Pago to sell paid tickets';
+  String get bcTodoConnectPayments => 'Connect Stripe to sell paid tickets';
 
   @override
   String bcTodoBookingRequests(int count) {
@@ -25390,7 +25388,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get bcCheckInvoice => 'Invoice details';
 
   @override
-  String get bcCheckPayments => 'Payment account (Stripe or Mercado Pago)';
+  String get bcCheckPayments => 'Payment account (Stripe)';
 
   @override
   String get bcCheckHours => 'Opening hours';
@@ -26760,7 +26758,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tourGetPaidConnectDesc =>
-      'Stripe or Mercado Pago - ticket money goes straight to you.';
+      'Stripe - ticket money goes straight to you.';
 
   @override
   String get tourGetPaidFeesTitle => 'What you receive';
@@ -27201,7 +27199,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get xplInfoFeeProvider =>
-      'Stripe or Mercado Pago also take their own processing fee from your account; it is not a GreenGo fee.';
+      'Stripe also takes its own processing fee from your account; it is not a GreenGo fee.';
 
   @override
   String get xplInfoReceiveTitle => 'What you receive per ticket';
@@ -27270,7 +27268,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get xplDeleteEventNoRefund =>
-      'Deleting does NOT refund anyone. You are the seller: if you sold tickets, refund the buyers from your Stripe or Mercado Pago account, following your refund policy.';
+      'Deleting does NOT refund anyone. You are the seller: if you sold tickets, refund the buyers from your Stripe account, following your refund policy.';
 
   @override
   String get xplDeleteEventFee =>
@@ -27282,7 +27280,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get xplBusinessSell =>
-      'You can sell tickets and bookings through your own Stripe or Mercado Pago account. GreenGo charges you, the seller, a service fee per paid ticket.';
+      'You can sell tickets and bookings through your own Stripe account. GreenGo charges you, the seller, a service fee per paid ticket.';
 
   @override
   String get xplBusinessListings =>
@@ -27343,7 +27341,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get xplEmptyBcSales =>
-      'No sales this month yet. Connect Stripe or Mercado Pago in Get paid, then publish a paid event or experience.';
+      'No sales this month yet. Connect Stripe in Get paid, then publish a paid event or experience.';
 
   @override
   String get xplLockedTranslateTitle => 'Daily translation limit reached';
@@ -27384,7 +27382,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get xplHowBc2 =>
-      'Connect Stripe or Mercado Pago in Get paid. Buyers pay you directly; GreenGo never holds ticket money.';
+      'Connect Stripe in Get paid. Buyers pay you directly; GreenGo never holds ticket money.';
 
   @override
   String get xplHowBc3 =>
@@ -27396,7 +27394,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get xplHowPaid1 =>
-      'Connect your own Stripe or Mercado Pago account. Buyers pay into it directly; GreenGo never holds ticket money.';
+      'Connect your own Stripe account. Buyers pay into it directly; GreenGo never holds ticket money.';
 
   @override
   String get xplHowPaid2 =>
@@ -27463,7 +27461,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get xplFaqTicketsA =>
-      'Paid tickets are bought in the in-app checkout and paid straight into the organizer’s own Stripe or Mercado Pago account; GreenGo never holds ticket money. You pay the price shown and nothing more. The organizer is the seller and sets the cancellation and refund policy, so ask the organizer for a refund (for example in the event chat). Cancelling or deleting an event does not refund tickets automatically.';
+      'Paid tickets are bought in the in-app checkout and paid straight into the organizer’s own Stripe account; GreenGo never holds ticket money. You pay the price shown and nothing more. The organizer is the seller and sets the cancellation and refund policy, so ask the organizer for a refund (for example in the event chat). Cancelling or deleting an event does not refund tickets automatically.';
 
   @override
   String get xplFaqCancelSubQ => 'How do I cancel my subscription?';
@@ -27548,7 +27546,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get xplFaqFeesA =>
-      'GreenGo’s service fee is paid by the seller; buyers pay only the ticket price. Per paid ticket: Silver US\$3 + 10% (max US\$30), Gold US\$2 + 10% (max US\$28), Platinum US\$1 + 10% (max US\$25). Your first paid listing has a flat US\$1 per ticket. Free tickets have no fee, and the fee is never higher than the ticket price. Stripe or Mercado Pago charge their own processing fees.';
+      'GreenGo’s service fee is paid by the seller; buyers pay only the ticket price. Per paid ticket: Silver US\$3 + 10% (max US\$30), Gold US\$2 + 10% (max US\$28), Platinum US\$1 + 10% (max US\$25). Your first paid listing has a flat US\$1 per ticket. Free tickets have no fee, and the fee is never higher than the ticket price. Stripe charges its own processing fees.';
 
   @override
   String get xplFaqPhasesQ =>
@@ -27665,7 +27663,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String srvRefundFailedSellerBody(String title) {
-    return 'The automatic refund for $title failed. Refund the buyer from your Stripe or Mercado Pago account, then upload the proof in GreenGo.';
+    return 'The automatic refund for $title failed. Refund the buyer from your Stripe account, then upload the proof in GreenGo.';
   }
 
   @override
@@ -27716,7 +27714,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get xplCancelEventRefunds =>
-      'Every buyer is refunded the full ticket price automatically, from your Stripe or Mercado Pago account.';
+      'Every buyer is refunded the full ticket price automatically, from your Stripe account.';
 
   @override
   String get xplCancelEventFinal => 'A cancelled event can’t be reopened.';
@@ -28173,7 +28171,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String srvAccountDeletionProofNeededBody(String title) {
-    return 'We couldn’t refund a buyer of $title automatically. Refund them from your own Stripe or Mercado Pago account and upload the proof in the app (Profile > Delete Account). Your account is deleted once every refund is done.';
+    return 'We couldn’t refund a buyer of $title automatically. Refund them from your own Stripe account and upload the proof in the app (Profile > Delete Account). Your account is deleted once every refund is done.';
   }
 
   @override

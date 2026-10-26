@@ -136,7 +136,8 @@ void main() {
       await pump(t);
       expect(find.text(l.tpAutoSectionTitle), findsOneWidget);
       expect(find.byKey(const ValueKey('get-paid-section-auto')), findsOneWidget);
-      expect(find.byKey(const ValueKey('get-paid-mercadopago')), findsOneWidget);
+      expect(find.byKey(const ValueKey('get-paid-mercadopago')),
+          kMercadoPagoEnabled ? findsOneWidget : findsNothing);
       expect(find.byKey(const ValueKey('get-paid-stripe')), findsOneWidget);
       expect(find.byKey(const ValueKey('get-paid-section-manual')), findsNothing);
       expect(find.byKey(const ValueKey('get-paid-payment-methods')), findsNothing);

@@ -31,6 +31,12 @@ enum TicketProvider {
   }
 }
 
+/// Mercado Pago is paused (owner 2026-10-26): Get paid and the listing editor
+/// offer Stripe only, whatever getTicketPaymentsConfig says. Server twin:
+/// MERCADO_PAGO_ENABLED in functions/src/ticket_payments/config.ts. To bring it
+/// back, flip both and restore the "Stripe or Mercado Pago" strings.
+const bool kMercadoPagoEnabled = false;
+
 /// Legacy link-order methods that were not profile payment links (shown on
 /// orders created before payment links were discontinued).
 const String kTicketMethodCash = 'cash';
@@ -210,7 +216,7 @@ class TicketPaymentsConfig extends Equatable {
   bool enabled(TicketProvider p) => switch (p) {
         TicketProvider.link => true,
         TicketProvider.stripe => stripe,
-        TicketProvider.mercadoPago => mercadoPago,
+        TicketProvider.mercadoPago => kMercadoPagoEnabled && mercadoPago,
       };
 
   @override

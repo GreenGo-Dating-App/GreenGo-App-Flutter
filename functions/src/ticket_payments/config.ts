@@ -150,8 +150,14 @@ export function stripeConfigured(): boolean {
   return /^(sk|rk)_/.test(stripeSecretKey());
 }
 export function stripeWebhookConfigured(): boolean { return stripeConnectWebhookSecrets().length > 0; }
+/**
+ * Mercado Pago is paused (owner 2026-10-26): no onboarding, checkout, webhook
+ * or refund through it even if MP_* keys are set. App twin: kMercadoPagoEnabled.
+ */
+export const MERCADO_PAGO_ENABLED = false;
+
 export function mercadoPagoConfigured(): boolean {
-  return mpClientId().length > 0 && mpClientSecret().length > 0;
+  return MERCADO_PAGO_ENABLED && mpClientId().length > 0 && mpClientSecret().length > 0;
 }
 export function providerConfigured(p: Provider): boolean {
   return p === 'stripe' ? stripeConfigured() : mercadoPagoConfigured();

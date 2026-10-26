@@ -28865,13 +28865,13 @@ abstract class AppLocalizations {
   /// Ticket payments
   ///
   /// In en, this message translates to:
-  /// **'Buyers pay in the app and the money goes straight to your own Stripe or Mercado Pago account. GreenGo\'s service fee is deducted from each ticket sold; buyers pay only your ticket price.'**
+  /// **'Buyers pay in the app and the money goes straight to your own Stripe account. GreenGo\'s service fee is deducted from each ticket sold; buyers pay only your ticket price.'**
   String get tpGetPaidIntro;
 
   /// Ticket payments
   ///
   /// In en, this message translates to:
-  /// **'Connect Stripe or Mercado Pago to sell tickets'**
+  /// **'Connect Stripe to sell tickets'**
   String get tpGetPaidSubtitle;
 
   /// Ticket payments
@@ -29303,7 +29303,7 @@ abstract class AppLocalizations {
   /// Ticket payments
   ///
   /// In en, this message translates to:
-  /// **'Tired of confirming? Connect Mercado Pago or Stripe for automatic confirmation.'**
+  /// **'Tired of confirming? Connect Stripe for automatic confirmation.'**
   String get tpTiredOfConfirming;
 
   /// Ticket payments
@@ -39156,7 +39156,7 @@ abstract class AppLocalizations {
   /// No description provided for @tpAutoSectionHint.
   ///
   /// In en, this message translates to:
-  /// **'Connect Stripe or Mercado Pago: buyers pay in the app and their tickets are confirmed instantly, with no manual checks.'**
+  /// **'Connect Stripe: buyers pay in the app and their tickets are confirmed instantly, with no manual checks.'**
   String get tpAutoSectionHint;
 
   /// No description provided for @paymentMethodsSettingsSubtitle.
@@ -42426,7 +42426,7 @@ abstract class AppLocalizations {
   /// Ticket payments: GreenGo service fee / payment links discontinued
   ///
   /// In en, this message translates to:
-  /// **'Payment links are no longer accepted. The organizer needs to connect Stripe or Mercado Pago to sell tickets.'**
+  /// **'Payment links are no longer accepted. The organizer needs to connect Stripe to sell tickets.'**
   String get tpErrLinkDiscontinued;
 
   /// Ticket payments: GreenGo service fee / payment links discontinued
@@ -42438,13 +42438,13 @@ abstract class AppLocalizations {
   /// Ticket payments: GreenGo service fee / payment links discontinued
   ///
   /// In en, this message translates to:
-  /// **'Payment links are no longer accepted. Connect Mercado Pago or Stripe to keep selling.'**
+  /// **'Payment links are no longer accepted. Connect Stripe to keep selling.'**
   String get tpLinkDiscontinuedBanner;
 
   /// Ticket payments: GreenGo service fee / payment links discontinued
   ///
   /// In en, this message translates to:
-  /// **'Payment links and cash are no longer accepted. Connect Stripe or Mercado Pago, or publish the experience as free.'**
+  /// **'Payment links and cash are no longer accepted. Connect Stripe, or publish the experience as free.'**
   String get uexpErrPaymentLinkNotAccepted;
 
   /// Experience publish refused: payment links / cash no longer accepted (dialog title)
@@ -42546,7 +42546,7 @@ abstract class AppLocalizations {
   /// Payout estimate: shown while no payment provider is chosen.
   ///
   /// In en, this message translates to:
-  /// **'Choose Stripe or Mercado Pago to include their processing fee.'**
+  /// **'Choose Stripe to include their processing fee.'**
   String get tpPayoutPickProvider;
 
   /// Payout estimate: the host's net amount per ticket.
@@ -43212,7 +43212,7 @@ abstract class AppLocalizations {
   /// Business Center (CRM-style business page, owner request 2026-10-14).
   ///
   /// In en, this message translates to:
-  /// **'Connect Stripe or Mercado Pago to sell paid tickets'**
+  /// **'Connect Stripe to sell paid tickets'**
   String get bcTodoConnectPayments;
 
   /// Business Center (CRM-style business page, owner request 2026-10-14).
@@ -43500,7 +43500,7 @@ abstract class AppLocalizations {
   /// Business Center Settings tab: company information checklist (owner request 2026-10-15).
   ///
   /// In en, this message translates to:
-  /// **'Payment account (Stripe or Mercado Pago)'**
+  /// **'Payment account (Stripe)'**
   String get bcCheckPayments;
 
   /// Business Center Settings tab: company information checklist (owner request 2026-10-15).
@@ -45792,7 +45792,7 @@ abstract class AppLocalizations {
   /// In-app tutorial / onboarding text (tours v2).
   ///
   /// In en, this message translates to:
-  /// **'Stripe or Mercado Pago - ticket money goes straight to you.'**
+  /// **'Stripe - ticket money goes straight to you.'**
   String get tourGetPaidConnectDesc;
 
   /// In-app tutorial / onboarding text (tours v2).
@@ -46560,7 +46560,7 @@ abstract class AppLocalizations {
   /// In-app explanations (info sheets, empty states, FAQ)
   ///
   /// In en, this message translates to:
-  /// **'Stripe or Mercado Pago also take their own processing fee from your account; it is not a GreenGo fee.'**
+  /// **'Stripe also takes its own processing fee from your account; it is not a GreenGo fee.'**
   String get xplInfoFeeProvider;
 
   /// In-app explanations (info sheets, empty states, FAQ)
@@ -46668,7 +46668,7 @@ abstract class AppLocalizations {
   /// In-app explanations (info sheets, empty states, FAQ)
   ///
   /// In en, this message translates to:
-  /// **'Deleting does NOT refund anyone. You are the seller: if you sold tickets, refund the buyers from your Stripe or Mercado Pago account, following your refund policy.'**
+  /// **'Deleting does NOT refund anyone. You are the seller: if you sold tickets, refund the buyers from your Stripe account, following your refund policy.'**
   String get xplDeleteEventNoRefund;
 
   /// In-app explanations (info sheets, empty states, FAQ)
@@ -46686,7 +46686,7 @@ abstract class AppLocalizations {
   /// In-app explanations (info sheets, empty states, FAQ)
   ///
   /// In en, this message translates to:
-  /// **'You can sell tickets and bookings through your own Stripe or Mercado Pago account. GreenGo charges you, the seller, a service fee per paid ticket.'**
+  /// **'You can sell tickets and bookings through your own Stripe account. GreenGo charges you, the seller, a service fee per paid ticket.'**
   String get xplBusinessSell;
 
   /// In-app explanations (info sheets, empty states, FAQ)
@@ -46788,7 +46788,7 @@ abstract class AppLocalizations {
   /// In-app explanations (info sheets, empty states, FAQ)
   ///
   /// In en, this message translates to:
-  /// **'No sales this month yet. Connect Stripe or Mercado Pago in Get paid, then publish a paid event or experience.'**
+  /// **'No sales this month yet. Connect Stripe in Get paid, then publish a paid event or experience.'**
   String get xplEmptyBcSales;
 
   /// In-app explanations (info sheets, empty states, FAQ)
@@ -46854,7 +46854,7 @@ abstract class AppLocalizations {
   /// In-app explanations (info sheets, empty states, FAQ)
   ///
   /// In en, this message translates to:
-  /// **'Connect Stripe or Mercado Pago in Get paid. Buyers pay you directly; GreenGo never holds ticket money.'**
+  /// **'Connect Stripe in Get paid. Buyers pay you directly; GreenGo never holds ticket money.'**
   String get xplHowBc2;
 
   /// In-app explanations (info sheets, empty states, FAQ)
@@ -46872,7 +46872,7 @@ abstract class AppLocalizations {
   /// In-app explanations (info sheets, empty states, FAQ)
   ///
   /// In en, this message translates to:
-  /// **'Connect your own Stripe or Mercado Pago account. Buyers pay into it directly; GreenGo never holds ticket money.'**
+  /// **'Connect your own Stripe account. Buyers pay into it directly; GreenGo never holds ticket money.'**
   String get xplHowPaid1;
 
   /// In-app explanations (info sheets, empty states, FAQ)
@@ -46980,7 +46980,7 @@ abstract class AppLocalizations {
   /// In-app explanations (info sheets, empty states, FAQ)
   ///
   /// In en, this message translates to:
-  /// **'Paid tickets are bought in the in-app checkout and paid straight into the organizer’s own Stripe or Mercado Pago account; GreenGo never holds ticket money. You pay the price shown and nothing more. The organizer is the seller and sets the cancellation and refund policy, so ask the organizer for a refund (for example in the event chat). Cancelling or deleting an event does not refund tickets automatically.'**
+  /// **'Paid tickets are bought in the in-app checkout and paid straight into the organizer’s own Stripe account; GreenGo never holds ticket money. You pay the price shown and nothing more. The organizer is the seller and sets the cancellation and refund policy, so ask the organizer for a refund (for example in the event chat). Cancelling or deleting an event does not refund tickets automatically.'**
   String get xplFaqTicketsA;
 
   /// In-app explanations (info sheets, empty states, FAQ)
@@ -47124,7 +47124,7 @@ abstract class AppLocalizations {
   /// In-app explanations (info sheets, empty states, FAQ)
   ///
   /// In en, this message translates to:
-  /// **'GreenGo’s service fee is paid by the seller; buyers pay only the ticket price. Per paid ticket: Silver US\$3 + 10% (max US\$30), Gold US\$2 + 10% (max US\$28), Platinum US\$1 + 10% (max US\$25). Your first paid listing has a flat US\$1 per ticket. Free tickets have no fee, and the fee is never higher than the ticket price. Stripe or Mercado Pago charge their own processing fees.'**
+  /// **'GreenGo’s service fee is paid by the seller; buyers pay only the ticket price. Per paid ticket: Silver US\$3 + 10% (max US\$30), Gold US\$2 + 10% (max US\$28), Platinum US\$1 + 10% (max US\$25). Your first paid listing has a flat US\$1 per ticket. Free tickets have no fee, and the fee is never higher than the ticket price. Stripe charges its own processing fees.'**
   String get xplFaqFeesA;
 
   /// In-app explanations (info sheets, empty states, FAQ)
@@ -47310,7 +47310,7 @@ abstract class AppLocalizations {
   /// Push body to the seller: refund manually and upload proof
   ///
   /// In en, this message translates to:
-  /// **'The automatic refund for {title} failed. Refund the buyer from your Stripe or Mercado Pago account, then upload the proof in GreenGo.'**
+  /// **'The automatic refund for {title} failed. Refund the buyer from your Stripe account, then upload the proof in GreenGo.'**
   String srvRefundFailedSellerBody(String title);
 
   /// Push title to the organiser after all refunds of a cancelled event
@@ -47382,7 +47382,7 @@ abstract class AppLocalizations {
   /// Consequence: buyers refunded automatically
   ///
   /// In en, this message translates to:
-  /// **'Every buyer is refunded the full ticket price automatically, from your Stripe or Mercado Pago account.'**
+  /// **'Every buyer is refunded the full ticket price automatically, from your Stripe account.'**
   String get xplCancelEventRefunds;
 
   /// Consequence: a cancelled event cannot be reopened
@@ -48085,7 +48085,7 @@ abstract class AppLocalizations {
   /// Push/e-mail body to a seller with a pending account deletion: a buyer refund failed, refund by hand and upload the proof
   ///
   /// In en, this message translates to:
-  /// **'We couldn’t refund a buyer of {title} automatically. Refund them from your own Stripe or Mercado Pago account and upload the proof in the app (Profile > Delete Account). Your account is deleted once every refund is done.'**
+  /// **'We couldn’t refund a buyer of {title} automatically. Refund them from your own Stripe account and upload the proof in the app (Profile > Delete Account). Your account is deleted once every refund is done.'**
   String srvAccountDeletionProofNeededBody(String title);
 
   /// E-mail subject: refund proof needed before the scheduled account deletion can finish

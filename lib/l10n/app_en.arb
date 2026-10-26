@@ -8331,11 +8331,11 @@
   "@tpFree": {
     "description": "Ticket payments"
   },
-  "tpGetPaidIntro": "Buyers pay in the app and the money goes straight to your own Stripe or Mercado Pago account. GreenGo's service fee is deducted from each ticket sold; buyers pay only your ticket price.",
+  "tpGetPaidIntro": "Buyers pay in the app and the money goes straight to your own Stripe account. GreenGo's service fee is deducted from each ticket sold; buyers pay only your ticket price.",
   "@tpGetPaidIntro": {
     "description": "Ticket payments"
   },
-  "tpGetPaidSubtitle": "Connect Stripe or Mercado Pago to sell tickets",
+  "tpGetPaidSubtitle": "Connect Stripe to sell tickets",
   "@tpGetPaidSubtitle": {
     "description": "Ticket payments"
   },
@@ -8672,7 +8672,7 @@
       }
     }
   },
-  "tpTiredOfConfirming": "Tired of confirming? Connect Mercado Pago or Stripe for automatic confirmation.",
+  "tpTiredOfConfirming": "Tired of confirming? Connect Stripe for automatic confirmation.",
   "@tpTiredOfConfirming": {
     "description": "Ticket payments"
   },
@@ -12207,7 +12207,7 @@
   "uexpBusinessRequiredTitle": "Paid listings are for business accounts",
   "tpErrSellerNotBusiness": "Sales are paused: paid tickets and bookings are only available from active business accounts.",
   "tpAutoSectionTitle": "Automatic Payment and Approval",
-  "tpAutoSectionHint": "Connect Stripe or Mercado Pago: buyers pay in the app and their tickets are confirmed instantly, with no manual checks.",
+  "tpAutoSectionHint": "Connect Stripe: buyers pay in the app and their tickets are confirmed instantly, with no manual checks.",
   "paymentMethodsSettingsSubtitle": "How people can pay you directly (Pix, PayPal…)",
   "communitiesBusinessCannotJoin": "Business accounts cannot join communities. Switch off business mode to join.",
   "becomeBusinessPermanentHint": "One-time upgrade. This can't be undone.",
@@ -13775,7 +13775,7 @@
   "@tpFeeRuleTrial": {
     "description": "Ticket payments: GreenGo service fee / payment links discontinued"
   },
-  "tpErrLinkDiscontinued": "Payment links are no longer accepted. The organizer needs to connect Stripe or Mercado Pago to sell tickets.",
+  "tpErrLinkDiscontinued": "Payment links are no longer accepted. The organizer needs to connect Stripe to sell tickets.",
   "@tpErrLinkDiscontinued": {
     "description": "Ticket payments: GreenGo service fee / payment links discontinued"
   },
@@ -13783,11 +13783,11 @@
   "@tpErrFeeCurrency": {
     "description": "Ticket payments: GreenGo service fee / payment links discontinued"
   },
-  "tpLinkDiscontinuedBanner": "Payment links are no longer accepted. Connect Mercado Pago or Stripe to keep selling.",
+  "tpLinkDiscontinuedBanner": "Payment links are no longer accepted. Connect Stripe to keep selling.",
   "@tpLinkDiscontinuedBanner": {
     "description": "Ticket payments: GreenGo service fee / payment links discontinued"
   },
-  "uexpErrPaymentLinkNotAccepted": "Payment links and cash are no longer accepted. Connect Stripe or Mercado Pago, or publish the experience as free.",
+  "uexpErrPaymentLinkNotAccepted": "Payment links and cash are no longer accepted. Connect Stripe, or publish the experience as free.",
   "@uexpErrPaymentLinkNotAccepted": {
     "description": "Ticket payments: GreenGo service fee / payment links discontinued"
   },
@@ -13882,7 +13882,7 @@
       }
     }
   },
-  "tpPayoutPickProvider": "Choose Stripe or Mercado Pago to include their processing fee.",
+  "tpPayoutPickProvider": "Choose Stripe to include their processing fee.",
   "@tpPayoutPickProvider": {
     "description": "Payout estimate: shown while no payment provider is chosen."
   },
@@ -14368,7 +14368,7 @@
   "@bcKpiRating": {
     "description": "Business Center (CRM-style business page, owner request 2026-10-14)."
   },
-  "bcTodoConnectPayments": "Connect Stripe or Mercado Pago to sell paid tickets",
+  "bcTodoConnectPayments": "Connect Stripe to sell paid tickets",
   "@bcTodoConnectPayments": {
     "description": "Business Center (CRM-style business page, owner request 2026-10-14)."
   },
@@ -14601,7 +14601,7 @@
   "@bcCheckInvoice": {
     "description": "Business Center Settings tab: company information checklist (owner request 2026-10-15)."
   },
-  "bcCheckPayments": "Payment account (Stripe or Mercado Pago)",
+  "bcCheckPayments": "Payment account (Stripe)",
   "@bcCheckPayments": {
     "description": "Business Center Settings tab: company information checklist (owner request 2026-10-15)."
   },
@@ -16346,7 +16346,7 @@
   "@tourGetPaidConnectTitle": {
     "description": "In-app tutorial / onboarding text (tours v2)."
   },
-  "tourGetPaidConnectDesc": "Stripe or Mercado Pago - ticket money goes straight to you.",
+  "tourGetPaidConnectDesc": "Stripe - ticket money goes straight to you.",
   "@tourGetPaidConnectDesc": {
     "description": "In-app tutorial / onboarding text (tours v2)."
   },
@@ -16904,7 +16904,7 @@
   "@xplInfoFeeFree": {
     "description": "In-app explanations (info sheets, empty states, FAQ)"
   },
-  "xplInfoFeeProvider": "Stripe or Mercado Pago also take their own processing fee from your account; it is not a GreenGo fee.",
+  "xplInfoFeeProvider": "Stripe also takes its own processing fee from your account; it is not a GreenGo fee.",
   "@xplInfoFeeProvider": {
     "description": "In-app explanations (info sheets, empty states, FAQ)"
   },
@@ -16986,7 +16986,7 @@
   "@xplDeleteEventRemoved": {
     "description": "In-app explanations (info sheets, empty states, FAQ)"
   },
-  "xplDeleteEventNoRefund": "Deleting does NOT refund anyone. You are the seller: if you sold tickets, refund the buyers from your Stripe or Mercado Pago account, following your refund policy.",
+  "xplDeleteEventNoRefund": "Deleting does NOT refund anyone. You are the seller: if you sold tickets, refund the buyers from your Stripe account, following your refund policy.",
   "@xplDeleteEventNoRefund": {
     "description": "In-app explanations (info sheets, empty states, FAQ)"
   },
@@ -16998,7 +16998,7 @@
   "@xplBusinessPage": {
     "description": "In-app explanations (info sheets, empty states, FAQ)"
   },
-  "xplBusinessSell": "You can sell tickets and bookings through your own Stripe or Mercado Pago account. GreenGo charges you, the seller, a service fee per paid ticket.",
+  "xplBusinessSell": "You can sell tickets and bookings through your own Stripe account. GreenGo charges you, the seller, a service fee per paid ticket.",
   "@xplBusinessSell": {
     "description": "In-app explanations (info sheets, empty states, FAQ)"
   },
@@ -17066,7 +17066,7 @@
   "@xplEmptyBcCustomers": {
     "description": "In-app explanations (info sheets, empty states, FAQ)"
   },
-  "xplEmptyBcSales": "No sales this month yet. Connect Stripe or Mercado Pago in Get paid, then publish a paid event or experience.",
+  "xplEmptyBcSales": "No sales this month yet. Connect Stripe in Get paid, then publish a paid event or experience.",
   "@xplEmptyBcSales": {
     "description": "In-app explanations (info sheets, empty states, FAQ)"
   },
@@ -17110,7 +17110,7 @@
   "@xplHowBc1": {
     "description": "In-app explanations (info sheets, empty states, FAQ)"
   },
-  "xplHowBc2": "Connect Stripe or Mercado Pago in Get paid. Buyers pay you directly; GreenGo never holds ticket money.",
+  "xplHowBc2": "Connect Stripe in Get paid. Buyers pay you directly; GreenGo never holds ticket money.",
   "@xplHowBc2": {
     "description": "In-app explanations (info sheets, empty states, FAQ)"
   },
@@ -17122,7 +17122,7 @@
   "@xplHowBc4": {
     "description": "In-app explanations (info sheets, empty states, FAQ)"
   },
-  "xplHowPaid1": "Connect your own Stripe or Mercado Pago account. Buyers pay into it directly; GreenGo never holds ticket money.",
+  "xplHowPaid1": "Connect your own Stripe account. Buyers pay into it directly; GreenGo never holds ticket money.",
   "@xplHowPaid1": {
     "description": "In-app explanations (info sheets, empty states, FAQ)"
   },
@@ -17194,7 +17194,7 @@
   "@xplFaqTicketsQ": {
     "description": "In-app explanations (info sheets, empty states, FAQ)"
   },
-  "xplFaqTicketsA": "Paid tickets are bought in the in-app checkout and paid straight into the organizer’s own Stripe or Mercado Pago account; GreenGo never holds ticket money. You pay the price shown and nothing more. The organizer is the seller and sets the cancellation and refund policy, so ask the organizer for a refund (for example in the event chat). Cancelling or deleting an event does not refund tickets automatically.",
+  "xplFaqTicketsA": "Paid tickets are bought in the in-app checkout and paid straight into the organizer’s own Stripe account; GreenGo never holds ticket money. You pay the price shown and nothing more. The organizer is the seller and sets the cancellation and refund policy, so ask the organizer for a refund (for example in the event chat). Cancelling or deleting an event does not refund tickets automatically.",
   "@xplFaqTicketsA": {
     "description": "In-app explanations (info sheets, empty states, FAQ)"
   },
@@ -17298,7 +17298,7 @@
   "@xplFaqFeesQ": {
     "description": "In-app explanations (info sheets, empty states, FAQ)"
   },
-  "xplFaqFeesA": "GreenGo’s service fee is paid by the seller; buyers pay only the ticket price. Per paid ticket: Silver US$3 + 10% (max US$30), Gold US$2 + 10% (max US$28), Platinum US$1 + 10% (max US$25). Your first paid listing has a flat US$1 per ticket. Free tickets have no fee, and the fee is never higher than the ticket price. Stripe or Mercado Pago charge their own processing fees.",
+  "xplFaqFeesA": "GreenGo’s service fee is paid by the seller; buyers pay only the ticket price. Per paid ticket: Silver US$3 + 10% (max US$30), Gold US$2 + 10% (max US$28), Platinum US$1 + 10% (max US$25). Your first paid listing has a flat US$1 per ticket. Free tickets have no fee, and the fee is never higher than the ticket price. Stripe charges its own processing fees.",
   "@xplFaqFeesA": {
     "description": "In-app explanations (info sheets, empty states, FAQ)"
   },
@@ -17452,7 +17452,7 @@
   "@srvRefundFailedSellerTitle": {
     "description": "Push title to the seller: automatic refund failed"
   },
-  "srvRefundFailedSellerBody": "The automatic refund for {title} failed. Refund the buyer from your Stripe or Mercado Pago account, then upload the proof in GreenGo.",
+  "srvRefundFailedSellerBody": "The automatic refund for {title} failed. Refund the buyer from your Stripe account, then upload the proof in GreenGo.",
   "@srvRefundFailedSellerBody": {
     "description": "Push body to the seller: refund manually and upload proof",
     "placeholders": {
@@ -17544,7 +17544,7 @@
   "@xplCancelEventSold": {
     "description": "Consequence: tickets sold, the event is cancelled instead of deleted"
   },
-  "xplCancelEventRefunds": "Every buyer is refunded the full ticket price automatically, from your Stripe or Mercado Pago account.",
+  "xplCancelEventRefunds": "Every buyer is refunded the full ticket price automatically, from your Stripe account.",
   "@xplCancelEventRefunds": {
     "description": "Consequence: buyers refunded automatically"
   },
@@ -18118,7 +18118,7 @@
   "@srvAccountDeletionProofNeededTitle": {
     "description": "Push title to a seller with a pending account deletion: a refund failed, manual proof needed"
   },
-  "srvAccountDeletionProofNeededBody": "We couldn’t refund a buyer of {title} automatically. Refund them from your own Stripe or Mercado Pago account and upload the proof in the app (Profile > Delete Account). Your account is deleted once every refund is done.",
+  "srvAccountDeletionProofNeededBody": "We couldn’t refund a buyer of {title} automatically. Refund them from your own Stripe account and upload the proof in the app (Profile > Delete Account). Your account is deleted once every refund is done.",
   "@srvAccountDeletionProofNeededBody": {
     "description": "Push/e-mail body to a seller with a pending account deletion: a buyer refund failed, refund by hand and upload the proof",
     "placeholders": {

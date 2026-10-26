@@ -150,8 +150,10 @@ class _TicketPaymentSelectorState extends State<TicketPaymentSelector> {
         if (needsReconnect(widget.value))
           _banner(l.tpLinkDiscontinuedBanner, AppColors.warningAmber,
               key: const ValueKey('ticket-link-discontinued')),
-        _providerTile(l, TicketProvider.mercadoPago, brazil: true),
-        const SizedBox(height: 8),
+        if (kMercadoPagoEnabled) ...[
+          _providerTile(l, TicketProvider.mercadoPago, brazil: true),
+          const SizedBox(height: 8),
+        ],
         _providerTile(l, TicketProvider.stripe),
         const SizedBox(height: 10),
         Text(l.tpFeeHostNote,

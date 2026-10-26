@@ -195,9 +195,11 @@ class _GetPaidScreenState extends State<GetPaidScreen> with WidgetsBindingObserv
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    _providerCard(l, TicketProvider.mercadoPago, a.mercadoPago,
-                        recommendedBr: true, currency: a.mercadoPagoCurrency),
-                    const SizedBox(height: 12),
+                    if (kMercadoPagoEnabled) ...[
+                      _providerCard(l, TicketProvider.mercadoPago, a.mercadoPago,
+                          recommendedBr: true, currency: a.mercadoPagoCurrency),
+                      const SizedBox(height: 12),
+                    ],
                     _providerCard(l, TicketProvider.stripe, a.stripe),
                   ],
                 ),

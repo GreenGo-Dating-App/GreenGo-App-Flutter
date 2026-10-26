@@ -16587,11 +16587,10 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get tpGetPaidIntro =>
-      'Chi acquista paga nell\'app e il denaro va direttamente sul tuo conto Stripe o Mercado Pago. La commissione di servizio GreenGo viene trattenuta da ogni biglietto venduto; chi acquista paga solo il prezzo del biglietto.';
+      'Chi acquista paga nell\'app e il denaro va direttamente sul tuo conto Stripe. La commissione di servizio GreenGo viene trattenuta da ogni biglietto venduto; chi acquista paga solo il prezzo del biglietto.';
 
   @override
-  String get tpGetPaidSubtitle =>
-      'Collega Stripe o Mercado Pago per vendere biglietti';
+  String get tpGetPaidSubtitle => 'Collega Stripe per vendere biglietti';
 
   @override
   String get tpGetPaidTitle => 'Ricevi pagamenti';
@@ -16847,7 +16846,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get tpTiredOfConfirming =>
-      'Stanco di confermare? Collega Mercado Pago o Stripe per la conferma automatica.';
+      'Stanco di confermare? Collega Stripe per la conferma automatica.';
 
   @override
   String get tpToConfirmEmpty => 'Nessun pagamento in attesa.';
@@ -22942,7 +22941,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get tpAutoSectionHint =>
-      'Collega Stripe o Mercado Pago: gli acquirenti pagano nell’app e i biglietti vengono confermati subito, senza controlli manuali.';
+      'Collega Stripe: gli acquirenti pagano nell’app e i biglietti vengono confermati subito, senza controlli manuali.';
 
   @override
   String get paymentMethodsSettingsSubtitle =>
@@ -25014,7 +25013,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get tpErrLinkDiscontinued =>
-      'I link di pagamento non sono più accettati. L\'organizzatore deve collegare Stripe o Mercado Pago per vendere biglietti.';
+      'I link di pagamento non sono più accettati. L\'organizzatore deve collegare Stripe per vendere biglietti.';
 
   @override
   String get tpErrFeeCurrency =>
@@ -25022,11 +25021,11 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get tpLinkDiscontinuedBanner =>
-      'I link di pagamento non sono più accettati. Collega Mercado Pago o Stripe per continuare a vendere.';
+      'I link di pagamento non sono più accettati. Collega Stripe per continuare a vendere.';
 
   @override
   String get uexpErrPaymentLinkNotAccepted =>
-      'I link di pagamento e i contanti non sono più accettati. Collega Stripe o Mercado Pago, oppure pubblica l\'esperienza come gratuita.';
+      'I link di pagamento e i contanti non sono più accettati. Collega Stripe, oppure pubblica l\'esperienza come gratuita.';
 
   @override
   String get uexpPaymentLinkNotAcceptedTitle =>
@@ -25092,7 +25091,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get tpPayoutPickProvider =>
-      'Scegli Stripe o Mercado Pago per includere la loro commissione di elaborazione.';
+      'Scegli Stripe per includere la loro commissione di elaborazione.';
 
   @override
   String get tpPayoutYouReceive => 'Ricevi';
@@ -25474,7 +25473,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get bcTodoConnectPayments =>
-      'Collega Stripe o Mercado Pago per vendere biglietti a pagamento';
+      'Collega Stripe per vendere biglietti a pagamento';
 
   @override
   String bcTodoBookingRequests(int count) {
@@ -25669,7 +25668,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get bcCheckInvoice => 'Dati di fatturazione';
 
   @override
-  String get bcCheckPayments => 'Conto pagamenti (Stripe o Mercado Pago)';
+  String get bcCheckPayments => 'Conto pagamenti (Stripe)';
 
   @override
   String get bcCheckHours => 'Orari di apertura';
@@ -27054,7 +27053,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get tourGetPaidConnectDesc =>
-      'Stripe o Mercado Pago: l\'incasso dei biglietti arriva direttamente a te.';
+      'Stripe: l\'incasso dei biglietti arriva direttamente a te.';
 
   @override
   String get tourGetPaidFeesTitle => 'Quanto ricevi';
@@ -27497,7 +27496,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get xplInfoFeeProvider =>
-      'Anche Stripe o Mercado Pago trattengono la propria commissione di elaborazione dal tuo conto; non è una commissione GreenGo.';
+      'Anche Stripe trattiene la propria commissione di elaborazione dal tuo conto; non è una commissione GreenGo.';
 
   @override
   String get xplInfoReceiveTitle => 'Quanto ricevi per biglietto';
@@ -27566,7 +27565,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get xplDeleteEventNoRefund =>
-      'L’eliminazione NON rimborsa nessuno. Il venditore sei tu: se hai venduto biglietti, rimborsa gli acquirenti dal tuo conto Stripe o Mercado Pago, secondo la tua politica di rimborso.';
+      'L’eliminazione NON rimborsa nessuno. Il venditore sei tu: se hai venduto biglietti, rimborsa gli acquirenti dal tuo conto Stripe, secondo la tua politica di rimborso.';
 
   @override
   String get xplDeleteEventFee =>
@@ -27578,7 +27577,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get xplBusinessSell =>
-      'Puoi vendere biglietti e prenotazioni con il tuo conto Stripe o Mercado Pago. GreenGo addebita a te, il venditore, una commissione per ogni biglietto a pagamento.';
+      'Puoi vendere biglietti e prenotazioni con il tuo conto Stripe. GreenGo addebita a te, il venditore, una commissione per ogni biglietto a pagamento.';
 
   @override
   String get xplBusinessListings =>
@@ -27640,7 +27639,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get xplEmptyBcSales =>
-      'Ancora nessuna vendita questo mese. Collega Stripe o Mercado Pago in Ricevi pagamenti, poi pubblica un evento o un’esperienza a pagamento.';
+      'Ancora nessuna vendita questo mese. Collega Stripe in Ricevi pagamenti, poi pubblica un evento o un’esperienza a pagamento.';
 
   @override
   String get xplLockedTranslateTitle =>
@@ -27682,7 +27681,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get xplHowBc2 =>
-      'Collega Stripe o Mercado Pago in Ricevi pagamenti. Gli acquirenti pagano direttamente te; GreenGo non trattiene mai i soldi dei biglietti.';
+      'Collega Stripe in Ricevi pagamenti. Gli acquirenti pagano direttamente te; GreenGo non trattiene mai i soldi dei biglietti.';
 
   @override
   String get xplHowBc3 =>
@@ -27694,7 +27693,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get xplHowPaid1 =>
-      'Collega il tuo conto Stripe o Mercado Pago. Gli acquirenti pagano direttamente lì; GreenGo non trattiene mai i soldi dei biglietti.';
+      'Collega il tuo conto Stripe. Gli acquirenti pagano direttamente lì; GreenGo non trattiene mai i soldi dei biglietti.';
 
   @override
   String get xplHowPaid2 =>
@@ -27761,7 +27760,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get xplFaqTicketsA =>
-      'I biglietti a pagamento si acquistano con il pagamento in app e vengono pagati direttamente sul conto Stripe o Mercado Pago dell’organizzatore; GreenGo non trattiene mai i soldi dei biglietti. Paghi il prezzo mostrato e nient’altro. Il venditore è l’organizzatore, che stabilisce la politica di cancellazione e rimborso: chiedi a lui il rimborso (per esempio nella chat dell’evento). Annullare o eliminare un evento non rimborsa automaticamente i biglietti.';
+      'I biglietti a pagamento si acquistano con il pagamento in app e vengono pagati direttamente sul conto Stripe dell’organizzatore; GreenGo non trattiene mai i soldi dei biglietti. Paghi il prezzo mostrato e nient’altro. Il venditore è l’organizzatore, che stabilisce la politica di cancellazione e rimborso: chiedi a lui il rimborso (per esempio nella chat dell’evento). Annullare o eliminare un evento non rimborsa automaticamente i biglietti.';
 
   @override
   String get xplFaqCancelSubQ => 'Come annullo l’abbonamento?';
@@ -27848,7 +27847,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get xplFaqFeesA =>
-      'La commissione di servizio GreenGo la paga il venditore; chi compra paga solo il prezzo del biglietto. Per biglietto a pagamento: Silver 3 US\$ + 10% (max 30 US\$), Gold 2 US\$ + 10% (max 28 US\$), Platinum 1 US\$ + 10% (max 25 US\$). Il tuo primo annuncio a pagamento ha 1 US\$ fisso per biglietto. I biglietti gratuiti non hanno commissione e la commissione non supera mai il prezzo del biglietto. Stripe o Mercado Pago applicano le proprie commissioni di elaborazione.';
+      'La commissione di servizio GreenGo la paga il venditore; chi compra paga solo il prezzo del biglietto. Per biglietto a pagamento: Silver 3 US\$ + 10% (max 30 US\$), Gold 2 US\$ + 10% (max 28 US\$), Platinum 1 US\$ + 10% (max 25 US\$). Il tuo primo annuncio a pagamento ha 1 US\$ fisso per biglietto. I biglietti gratuiti non hanno commissione e la commissione non supera mai il prezzo del biglietto. Stripe applica le proprie commissioni di elaborazione.';
 
   @override
   String get xplFaqPhasesQ =>
@@ -27967,7 +27966,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String srvRefundFailedSellerBody(String title) {
-    return 'Il rimborso automatico per $title non è riuscito. Rimborsa l’acquirente dal tuo conto Stripe o Mercado Pago, poi carica la prova su GreenGo.';
+    return 'Il rimborso automatico per $title non è riuscito. Rimborsa l’acquirente dal tuo conto Stripe, poi carica la prova su GreenGo.';
   }
 
   @override
@@ -28018,7 +28017,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get xplCancelEventRefunds =>
-      'Ogni acquirente riceve automaticamente il rimborso dell’intero prezzo del biglietto, dal tuo conto Stripe o Mercado Pago.';
+      'Ogni acquirente riceve automaticamente il rimborso dell’intero prezzo del biglietto, dal tuo conto Stripe.';
 
   @override
   String get xplCancelEventFinal =>
@@ -28479,7 +28478,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String srvAccountDeletionProofNeededBody(String title) {
-    return 'Non siamo riusciti a rimborsare automaticamente un acquirente di $title. Rimborsalo dal tuo account Stripe o Mercado Pago e carica la prova nell’app (Profilo > Elimina Account). Il tuo account verrà eliminato quando tutti i rimborsi saranno fatti.';
+    return 'Non siamo riusciti a rimborsare automaticamente un acquirente di $title. Rimborsalo dal tuo account Stripe e carica la prova nell’app (Profilo > Elimina Account). Il tuo account verrà eliminato quando tutti i rimborsi saranno fatti.';
   }
 
   @override

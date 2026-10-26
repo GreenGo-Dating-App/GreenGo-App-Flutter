@@ -75,7 +75,7 @@ const L = {
     fees: 'Taxas de serviço GreenGo (devidas pelo organizador)', refunds: 'Estornos', net: 'Líquido', orders: 'Pedidos', tickets: 'Ingressos',
     byListing: 'Eventos e experiências com vendas', listing: 'Evento / experiência', sales: 'Vendas', fee: 'Taxa GreenGo',
     feeInvoices: 'Fatura(s) de taxas do mês',
-    stmtNote: 'Este extrato é informativo e não é um documento fiscal. A taxa de serviço GreenGo é devida pelo organizador e retida da sua conta de pagamentos conectada; o documento fiscal é a fatura de taxas do mês. Taxas do processador de pagamento (Stripe / Mercado Pago) são debitadas diretamente na sua conta conectada.',
+    stmtNote: 'Este extrato é informativo e não é um documento fiscal. A taxa de serviço GreenGo é devida pelo organizador e retida da sua conta de pagamentos conectada; o documento fiscal é a fatura de taxas do mês. Taxas do processador de pagamento (Stripe) são debitadas diretamente na sua conta conectada.',
     empty: 'Nenhuma venda neste período.',
   },
   US: {
@@ -88,7 +88,7 @@ const L = {
     fees: 'GreenGo service fees (owed by the organizer)', refunds: 'Refunds', net: 'Net', orders: 'Orders', tickets: 'Tickets',
     byListing: 'Events and experiences with sales', listing: 'Event / experience', sales: 'Sales', fee: 'GreenGo fee',
     feeInvoices: "This month's fee invoice(s)",
-    stmtNote: "This statement is for information only and is not a tax document. The GreenGo service fee is owed by the organizer and collected from your connected payment account; the tax document is this month's fee invoice. Payment-processor fees (Stripe / Mercado Pago) are debited directly from your connected account.",
+    stmtNote: "This statement is for information only and is not a tax document. The GreenGo service fee is owed by the organizer and collected from your connected payment account; the tax document is this month's fee invoice. Payment-processor fees (Stripe) are debited directly from your connected account.",
     empty: 'No sales in this period.',
   },
 };
