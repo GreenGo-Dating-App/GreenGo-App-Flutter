@@ -113,6 +113,10 @@
     {
       "id": "b_inactive",
       "isStore": false
+    },
+    {
+      "id": "b_off",
+      "isStore": true
     }
   ],
   "followers": [
@@ -731,6 +735,34 @@
         "city": "Milan",
         "country": "Italy"
       }
+    },
+    "b_off": {
+      "displayName": "b_off",
+      "accountStatus": "active",
+      "photoUrls": [
+        "https://img.example/b_off.jpg"
+      ],
+      "location": {
+        "latitude": 41.95123,
+        "longitude": 12.40001,
+        "city": "Rome",
+        "country": "Italy"
+      },
+      "approxLocation": {
+        "lat": 41.901,
+        "lng": 12.499
+      },
+      "isBusiness": true,
+      "storeVisibility": "off",
+      "businessName": "Hidden Cafe",
+      "businessLogoUrl": "https://img.example/hidden-logo.png",
+      "businessAddress": {
+        "address": "Via Roma 1",
+        "latitude": 45.4642,
+        "longitude": 9.19,
+        "city": "Milan",
+        "country": "Italy"
+      }
     }
   },
   "expected": {
@@ -1044,6 +1076,22 @@
       "country": "Italy",
       "city": "Rome",
       "disc": "country",
+      "isOnline": false,
+      "traveler": null
+    },
+    "b_off": {
+      "kind": "person",
+      "badges": [
+        "following"
+      ],
+      "lat": 42.075,
+      "lng": 12.375,
+      "tol": 0.1,
+      "name": "b_off",
+      "photo": "https://img.example/b_off.jpg",
+      "country": "Italy",
+      "city": "Rome",
+      "disc": "approximate",
       "isOnline": false,
       "traveler": null
     }

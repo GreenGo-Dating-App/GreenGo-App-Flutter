@@ -28522,4 +28522,32 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get deletionPendingTooLate =>
       'Tu cuenta ya se está eliminando. Ya no se puede detener.';
+
+  @override
+  String get bcStoreVisibilityTitle => 'Visibilidad de la tienda';
+
+  @override
+  String get bcStoreVisibleTitle => 'Visible para todos';
+
+  @override
+  String get bcStoreVisibleSubtitle =>
+      'Tu tienda aparece en Descubrir, Explorar y la búsqueda.';
+
+  @override
+  String get bcStoreHiddenTitle => 'Oculta en Descubrir';
+
+  @override
+  String get bcStoreHiddenSubtitle =>
+      'Nadie encuentra tu tienda en Descubrir, Explorar ni en la búsqueda. Tus seguidores, chats y enlaces la siguen abriendo.';
+
+  @override
+  String get bcStoreOffTitle => 'Totalmente oculta';
+
+  @override
+  String get bcStoreOffSubtitle =>
+      'Solo tú ves tu tienda. Los demás ven tu perfil personal, como si no tuvieras un negocio.';
+
+  @override
+  String get bcStoreVisibilitySaveFailed =>
+      'No se pudo cambiar la visibilidad de la tienda. Inténtalo de nuevo.';
 }

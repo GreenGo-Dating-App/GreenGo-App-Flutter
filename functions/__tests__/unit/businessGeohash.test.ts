@@ -135,3 +135,21 @@ describe('trigger inputs (no loops, no reads on unrelated writes)', () => {
     expect(tx.update).toHaveBeenCalledWith({ id: 'u' }, { businessGeohash: geohashEncode(RIO[0], RIO[1], 9) });
   });
 });
+
+describe('Store visibility (owner choice) and businessGeohash', () => {
+  it('a store hidden from Discover or fully hidden has no geohash (geo queries never read it)', () => {
+    expect(businessGeohashOf(biz(SP, { storeVisibility: 'hidden' }))).toBeNull();
+    expect(businessGeohashOf(biz(SP, { storeVisibility: 'off' }))).toBeNull();
+    expect(businessGeohashOf(biz(SP, { storeVisibility: 'visible' }))).toBe(geohashEncode(SP[0], SP[1], 9));
+    expect(businessGeohashOf(biz(SP, { storeVisibility: 'nonsense' }))).toBe(geohashEncode(SP[0], SP[1], 9));
+  });
+
+  it('changing only storeVisibility re-runs the coarse sync, which drops then restores the field', () => {
+    const shown = { ...biz(SP), businessGeohash: geohashEncode(SP[0], SP[1], 9) };
+    const hidden = { ...shown, storeVisibility: 'hidden' };
+    expect(coarseInputsChanged(shown, hidden)).toBe(true);
+    expect(businessGeohashUpdate(hidden)).toEqual({ businessGeohash: DELETE });
+    const back = { ...biz(SP), storeVisibility: 'visible' };
+    expect(businessGeohashUpdate(back)).toEqual({ businessGeohash: geohashEncode(SP[0], SP[1], 9) });
+  });
+});

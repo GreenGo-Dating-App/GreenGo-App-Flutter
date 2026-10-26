@@ -48201,6 +48201,54 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Your account is already being deleted. It can’t be stopped now.'**
   String get deletionPendingTooLate;
+
+  /// Business Center > Storefront: title of the store visibility choice
+  ///
+  /// In en, this message translates to:
+  /// **'Store visibility'**
+  String get bcStoreVisibilityTitle;
+
+  /// Store visibility option: default, store shown everywhere
+  ///
+  /// In en, this message translates to:
+  /// **'Visible to everyone'**
+  String get bcStoreVisibleTitle;
+
+  /// Store visibility option subtitle: visible
+  ///
+  /// In en, this message translates to:
+  /// **'Your store appears in Discover, Explore and search.'**
+  String get bcStoreVisibleSubtitle;
+
+  /// Store visibility option: not findable in discovery surfaces
+  ///
+  /// In en, this message translates to:
+  /// **'Hidden from Discover'**
+  String get bcStoreHiddenTitle;
+
+  /// Store visibility option subtitle: hidden from discovery
+  ///
+  /// In en, this message translates to:
+  /// **'People can\'t find your store in Discover, Explore or search. Your followers, chats and links still open it.'**
+  String get bcStoreHiddenSubtitle;
+
+  /// Store visibility option: nobody but the owner sees the store
+  ///
+  /// In en, this message translates to:
+  /// **'Fully hidden'**
+  String get bcStoreOffTitle;
+
+  /// Store visibility option subtitle: fully hidden
+  ///
+  /// In en, this message translates to:
+  /// **'Only you see your store. Everyone else sees your personal profile, as if you had no business.'**
+  String get bcStoreOffSubtitle;
+
+  /// Snackbar when saving the store visibility fails
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t change the store visibility. Please try again.'**
+  String get bcStoreVisibilitySaveFailed;
 }
 
 class _AppLocalizationsDelegate

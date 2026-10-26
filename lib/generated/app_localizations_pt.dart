@@ -28501,6 +28501,34 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get deletionPendingTooLate =>
       'A tua conta já está a ser eliminada. Já não é possível parar.';
+
+  @override
+  String get bcStoreVisibilityTitle => 'Visibilidade da loja';
+
+  @override
+  String get bcStoreVisibleTitle => 'Visível para todos';
+
+  @override
+  String get bcStoreVisibleSubtitle =>
+      'A tua loja aparece em Descobrir, Explorar e na pesquisa.';
+
+  @override
+  String get bcStoreHiddenTitle => 'Oculta em Descobrir';
+
+  @override
+  String get bcStoreHiddenSubtitle =>
+      'Ninguém encontra a tua loja em Descobrir, Explorar ou na pesquisa. Os teus seguidores, conversas e links continuam a abri-la.';
+
+  @override
+  String get bcStoreOffTitle => 'Totalmente oculta';
+
+  @override
+  String get bcStoreOffSubtitle =>
+      'Só tu vês a tua loja. Os outros veem o teu perfil pessoal, como se não tivesses um negócio.';
+
+  @override
+  String get bcStoreVisibilitySaveFailed =>
+      'Não foi possível alterar a visibilidade da loja. Tenta novamente.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -57005,4 +57033,32 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get deletionPendingTooLate =>
       'Sua conta já está sendo excluída. Não é mais possível interromper.';
+
+  @override
+  String get bcStoreVisibilityTitle => 'Visibilidade da loja';
+
+  @override
+  String get bcStoreVisibleTitle => 'Visível para todos';
+
+  @override
+  String get bcStoreVisibleSubtitle =>
+      'Sua loja aparece em Descobrir, Explorar e na busca.';
+
+  @override
+  String get bcStoreHiddenTitle => 'Oculta em Descobrir';
+
+  @override
+  String get bcStoreHiddenSubtitle =>
+      'Ninguém encontra sua loja em Descobrir, Explorar ou na busca. Seus seguidores, conversas e links continuam abrindo a loja.';
+
+  @override
+  String get bcStoreOffTitle => 'Totalmente oculta';
+
+  @override
+  String get bcStoreOffSubtitle =>
+      'Só você vê sua loja. Os outros veem seu perfil pessoal, como se você não tivesse um negócio.';
+
+  @override
+  String get bcStoreVisibilitySaveFailed =>
+      'Não foi possível alterar a visibilidade da loja. Tente novamente.';
 }

@@ -18222,5 +18222,37 @@
   "deletionPendingTooLate": "Your account is already being deleted. It can’t be stopped now.",
   "@deletionPendingTooLate": {
     "description": "Snackbar: the deletion is already running and cannot be withdrawn"
+  },
+  "bcStoreVisibilityTitle": "Store visibility",
+  "@bcStoreVisibilityTitle": {
+    "description": "Business Center > Storefront: title of the store visibility choice"
+  },
+  "bcStoreVisibleTitle": "Visible to everyone",
+  "@bcStoreVisibleTitle": {
+    "description": "Store visibility option: default, store shown everywhere"
+  },
+  "bcStoreVisibleSubtitle": "Your store appears in Discover, Explore and search.",
+  "@bcStoreVisibleSubtitle": {
+    "description": "Store visibility option subtitle: visible"
+  },
+  "bcStoreHiddenTitle": "Hidden from Discover",
+  "@bcStoreHiddenTitle": {
+    "description": "Store visibility option: not findable in discovery surfaces"
+  },
+  "bcStoreHiddenSubtitle": "People can't find your store in Discover, Explore or search. Your followers, chats and links still open it.",
+  "@bcStoreHiddenSubtitle": {
+    "description": "Store visibility option subtitle: hidden from discovery"
+  },
+  "bcStoreOffTitle": "Fully hidden",
+  "@bcStoreOffTitle": {
+    "description": "Store visibility option: nobody but the owner sees the store"
+  },
+  "bcStoreOffSubtitle": "Only you see your store. Everyone else sees your personal profile, as if you had no business.",
+  "@bcStoreOffSubtitle": {
+    "description": "Store visibility option subtitle: fully hidden"
+  },
+  "bcStoreVisibilitySaveFailed": "Couldn't change the store visibility. Please try again.",
+  "@bcStoreVisibilitySaveFailed": {
+    "description": "Snackbar when saving the store visibility fails"
   }
 }

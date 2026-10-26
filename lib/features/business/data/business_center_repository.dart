@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 
 import '../../my_space/data/my_space_repository.dart';
+import '../../profile/domain/entities/store_visibility.dart';
 import '../../ticket_payments/domain/ticket_payments.dart';
 import 'services/follow_service.dart';
 import 'services/rating_service.dart';
@@ -58,6 +59,9 @@ class BusinessTodo {
 abstract class BusinessCenterRepository {
   Future<BusinessMonthStats> monthStats(String uid, DateTime now);
   Future<BusinessTodo> todo(String uid);
+
+  /// Owner's Store visibility choice (`profiles/{uid}.storeVisibility`).
+  Future<void> setStoreVisibility(String uid, StoreVisibility v);
 }
 
 /// Reads only what already exists, bounded: paid orders of the organizer
@@ -77,6 +81,10 @@ class FirestoreBusinessCenterRepository implements BusinessCenterRepository {
         _mySpace = mySpace;
 
   static const int maxOrders = 500;
+
+  @override
+  Future<void> setStoreVisibility(String uid, StoreVisibility v) =>
+      _db.collection('profiles').doc(uid).update({'storeVisibility': v.wire});
 
   final FirebaseFirestore _db;
   final FollowService? _follows;

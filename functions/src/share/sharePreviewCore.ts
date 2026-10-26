@@ -18,6 +18,7 @@
 import { AppLocale, DEFAULT_LOCALE, SUPPORTED_LOCALES, t } from '../shared/i18n';
 import type { ArbKey } from '../shared/i18n';
 import { gt } from '../guest/guestI18n';
+import { storeFullyHidden } from '../profiles/storeVisibility';
 
 export const HOST = 'https://greengo-chat.web.app';
 export const PLAY_URL =
@@ -372,7 +373,7 @@ export function mainProfilePhoto(d: Record<string, unknown>): string | null {
       if (typeof first === 'string') return first.trim();
     }
   }
-  if (d.isBusiness === true) {
+  if (d.isBusiness === true && !storeFullyHidden(d)) {
     const cover = str(d.coverImageUrl);
     if (cover.startsWith('https://')) return cover;
   }
@@ -388,7 +389,8 @@ export function buildProfilePreview(
   const generic = genericPreview('u', id, locale);
   if (!isProfileShareable(d, now)) return generic;
 
-  const isBusiness = d.isBusiness === true;
+  // A fully hidden store previews as the personal profile.
+  const isBusiness = d.isBusiness === true && !storeFullyHidden(d);
   const name =
     (isBusiness ? str(d.businessName) : '') || str(d.displayName) || '';
   if (!name || name === 'Unknown') return generic;

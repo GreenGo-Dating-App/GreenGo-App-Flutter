@@ -14,6 +14,7 @@ import '../../../../core/theme/app_glass.dart';
 import '../../../../core/utils/display_image.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../communities/domain/entities/community.dart';
+import '../../../discovery/domain/discovery_visibility.dart';
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
 import '../../../communities/domain/repositories/communities_repository.dart';
 import '../../../communities/presentation/bloc/communities_bloc.dart';
@@ -128,7 +129,8 @@ class _UniversalSearchScreenState extends State<UniversalSearchScreen> {
       // name) shows in Business. So People includes everyone; Business is the
       // business subset rendered with its storefront face.
       _people = profiles;
-      _business = profiles.where((p) => p.isBusiness).toList();
+      // Stores hidden by their owner (Store visibility) are not searchable.
+      _business = profiles.where((p) => p.isBusiness && !DiscoveryVisibility.isStoreHidden(p)).toList();
       _events = (results[1] as List<Event>)
           .where((e) => !blocked.contains(e.organizerId))
           .toList();

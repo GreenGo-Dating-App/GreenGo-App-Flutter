@@ -72,7 +72,8 @@ class _FollowedStoresScreenState extends State<FollowedStoresScreen> {
       setState(() {
         for (final id in ids) {
           final p = profiles[id];
-          if (p != null) _stores.add(p);
+          // A fully hidden store reads as a personal profile: not listed.
+          if (p != null && p.isBusiness) _stores.add(p);
         }
         _cursor = page.cursor;
         _done = !page.hasMore;

@@ -27,6 +27,10 @@ class _Repo implements BusinessCenterRepository {
 
   @override
   Future<BusinessTodo> todo(String uid) async => todoValue;
+
+  final visibilityWrites = <StoreVisibility>[];
+  @override
+  Future<void> setStoreVisibility(String uid, StoreVisibility v) async => visibilityWrites.add(v);
 }
 
 class _Billing implements BillingProfileRepository {
@@ -151,6 +155,32 @@ void main() {
     expect(find.byKey(const ValueKey('bc-edit-storefront')), findsOneWidget);
     expect(find.byKey(const ValueKey('bc-account')), findsOneWidget);
     expect(find.byKey(const ValueKey('bc-verification')), findsOneWidget);
+  });
+
+  testWidgets('storefront: Store visibility saves the owner choice at once', (t) async {
+    t.view.physicalSize = const Size(1200, 2400);
+    t.view.devicePixelRatio = 1;
+    addTearDown(t.view.resetPhysicalSize);
+    addTearDown(t.view.resetDevicePixelRatio);
+    final repo = _Repo();
+    await t.pumpWidget(_app(BusinessCenterScreen(
+        profile: _business(), repository: repo, billingRepository: _Billing(true), mySpaceRepository: FakeMySpaceRepository())));
+    await t.pumpAndSettle();
+    await t.tap(find.text('Storefront').last);
+    await t.pumpAndSettle();
+    RadioListTile<StoreVisibility> tile(StoreVisibility v) =>
+        t.widget(find.byKey(ValueKey('bc-store-visibility-${v.wire}')));
+    expect(find.text('Store visibility'), findsOneWidget);
+    expect(tile(StoreVisibility.visible).groupValue, StoreVisibility.visible);
+
+    await t.tap(find.text('Fully hidden'));
+    await t.pumpAndSettle();
+    expect(repo.visibilityWrites, [StoreVisibility.fullyHidden]);
+    expect(tile(StoreVisibility.fullyHidden).groupValue, StoreVisibility.fullyHidden);
+
+    await t.tap(find.text('Hidden from Discover'));
+    await t.pumpAndSettle();
+    expect(repo.visibilityWrites, [StoreVisibility.fullyHidden, StoreVisibility.hiddenFromDiscovery]);
   });
 
   testWidgets('tabs are in the owner order: Overview, My Space, Sales, Marketing, Customers, Storefront, Settings', (t) async {

@@ -5,6 +5,8 @@ import '../../../membership/domain/entities/membership.dart';
 import '../../domain/entities/location.dart';
 import '../../domain/entities/profile.dart';
 import '../private_profile.dart';
+import '../store_visibility_view.dart';
+import '../../domain/entities/store_visibility.dart';
 import '../profile_geohash.dart';
 import '../../domain/entities/social_links.dart';
 import '../../../../core/media/cover_focus.dart';
@@ -80,6 +82,7 @@ class ProfileModel extends Profile {
     super.coverImageUrl,
     super.coverFocus,
     super.businessLogoUrl,
+    super.storeVisibility,
     super.isBanned,
     super.isIdVerified,
     super.publicAge,
@@ -173,6 +176,7 @@ class ProfileModel extends Profile {
       coverImageUrl: profile.coverImageUrl,
       coverFocus: profile.coverFocus,
       businessLogoUrl: profile.businessLogoUrl,
+      storeVisibility: profile.storeVisibility,
       isBanned: profile.isBanned,
       isIdVerified: profile.isIdVerified,
       publicAge: profile.publicAge,
@@ -187,7 +191,7 @@ class ProfileModel extends Profile {
   /// coordinates, still present on old-app profiles, are replaced by
   /// `approxLocation`), so nothing downstream can compute an exact distance.
   factory ProfileModel.fromJson(Map<String, dynamic> raw) {
-    final json = profileViewFor(raw);
+    final json = storeViewFor(profileViewFor(raw));
     return ProfileModel(
       userId: json['userId'] as String,
       displayName: json['displayName'] as String? ?? 'Unknown',
@@ -331,6 +335,8 @@ class ProfileModel extends Profile {
       coverImageUrl: json['coverImageUrl'] as String?,
       coverFocus: CoverFocus.fromMap(json),
       businessLogoUrl: json['businessLogoUrl'] as String?,
+      // Read only: written by its own switch, never in toJson.
+      storeVisibility: StoreVisibility.fromWire(json['storeVisibility']),
       isBanned: json['isBanned'] as bool? ?? false,
       // Server-owned; read only (never in toJson).
       isIdVerified: json['isAgeVerified'] == true,

@@ -8890,5 +8890,13 @@
   "deletionPendingCancelConfirm": "Manter sua conta? Seu perfil volta a ficar visível. Eventos e reservas cancelados continuam cancelados, e os reembolsos já iniciados continuam indo para os compradores.",
   "deletionPendingKeepAccount": "Manter minha conta",
   "deletionPendingCancelled": "Pedido de exclusão cancelado. Sua conta continua ativa.",
-  "deletionPendingTooLate": "Sua conta já está sendo excluída. Não é mais possível interromper."
+  "deletionPendingTooLate": "Sua conta já está sendo excluída. Não é mais possível interromper.",
+  "bcStoreVisibilityTitle": "Visibilidade da loja",
+  "bcStoreVisibleTitle": "Visível para todos",
+  "bcStoreVisibleSubtitle": "Sua loja aparece em Descobrir, Explorar e na busca.",
+  "bcStoreHiddenTitle": "Oculta em Descobrir",
+  "bcStoreHiddenSubtitle": "Ninguém encontra sua loja em Descobrir, Explorar ou na busca. Seus seguidores, conversas e links continuam abrindo a loja.",
+  "bcStoreOffTitle": "Totalmente oculta",
+  "bcStoreOffSubtitle": "Só você vê sua loja. Os outros veem seu perfil pessoal, como se você não tivesse um negócio.",
+  "bcStoreVisibilitySaveFailed": "Não foi possível alterar a visibilidade da loja. Tente novamente."
 }

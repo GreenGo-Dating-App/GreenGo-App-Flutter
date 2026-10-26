@@ -28602,4 +28602,32 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get deletionPendingTooLate =>
       'Dein Konto wird bereits gelöscht. Das lässt sich jetzt nicht mehr stoppen.';
+
+  @override
+  String get bcStoreVisibilityTitle => 'Sichtbarkeit des Shops';
+
+  @override
+  String get bcStoreVisibleTitle => 'Für alle sichtbar';
+
+  @override
+  String get bcStoreVisibleSubtitle =>
+      'Dein Shop erscheint in Entdecken, Erkunden und in der Suche.';
+
+  @override
+  String get bcStoreHiddenTitle => 'In Entdecken verborgen';
+
+  @override
+  String get bcStoreHiddenSubtitle =>
+      'Niemand findet deinen Shop in Entdecken, Erkunden oder der Suche. Deine Follower, Chats und Links öffnen ihn weiterhin.';
+
+  @override
+  String get bcStoreOffTitle => 'Komplett verborgen';
+
+  @override
+  String get bcStoreOffSubtitle =>
+      'Nur du siehst deinen Shop. Alle anderen sehen dein persönliches Profil, als hättest du kein Unternehmen.';
+
+  @override
+  String get bcStoreVisibilitySaveFailed =>
+      'Die Sichtbarkeit des Shops konnte nicht geändert werden. Bitte versuche es erneut.';
 }

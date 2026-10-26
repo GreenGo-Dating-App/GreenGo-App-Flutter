@@ -25,6 +25,9 @@ class _Repo implements BusinessCenterRepository {
 
   @override
   Future<BusinessTodo> todo(String uid) async => const BusinessTodo();
+
+  @override
+  Future<void> setStoreVisibility(String uid, StoreVisibility v) async {}
 }
 
 class _Billing implements BillingProfileRepository {

@@ -5,6 +5,9 @@ import '../../../membership/domain/entities/membership.dart';
 import 'business_address.dart';
 import 'location.dart';
 import 'social_links.dart';
+import 'store_visibility.dart';
+
+export 'store_visibility.dart';
 import '../../../../core/media/cover_focus.dart';
 
 /// Controls how the user appears on the Globe map for discovery.
@@ -96,6 +99,7 @@ class Profile extends Equatable {
     this.coverImageUrl,
     this.coverFocus = CoverFocus.center,
     this.businessLogoUrl,
+    this.storeVisibility = StoreVisibility.visible,
     this.isBanned = false,
     this.isIdVerified = false,
     this.publicAge,
@@ -264,6 +268,17 @@ class Profile extends Equatable {
   // business chat avatars. An empty string means "none" (removal sentinel that
   // survives copyWith's null-coalescing).
   final String? businessLogoUrl;
+
+  /// Owner choice in Business Center > Storefront > Store visibility.
+  /// Hidden from Discover: left out of Discover, Explore and search
+  /// (DiscoveryVisibility.isStoreHidden; the server also drops
+  /// businessGeohash). Fully hidden: other viewers read the account as a
+  /// personal profile (storeViewFor in store_visibility_view.dart).
+  /// Written only by BusinessCenterRepository.setStoreVisibility, never by
+  /// a full-profile save (not in toJson), so a stale copy cannot undo it.
+  final StoreVisibility storeVisibility;
+
+  bool get storeHiddenFromDiscovery => storeVisibility != StoreVisibility.visible;
 
   /// The business picture to show for this profile, or null when none is set.
   String? get businessLogoOrNull {
@@ -435,6 +450,7 @@ class Profile extends Equatable {
         coverImageUrl,
         coverFocus,
         businessLogoUrl,
+        storeVisibility,
         isBanned,
         isIdVerified,
         publicAge,
@@ -524,6 +540,7 @@ class Profile extends Equatable {
     String? coverImageUrl,
     CoverFocus? coverFocus,
     String? businessLogoUrl,
+    StoreVisibility? storeVisibility,
     bool? isBanned,
     bool? isIdVerified,
     String? verificationPhotoPath,
@@ -609,6 +626,7 @@ class Profile extends Equatable {
       coverImageUrl: coverImageUrl ?? this.coverImageUrl,
       coverFocus: coverFocus ?? this.coverFocus,
       businessLogoUrl: businessLogoUrl ?? this.businessLogoUrl,
+      storeVisibility: storeVisibility ?? this.storeVisibility,
       isBanned: isBanned ?? this.isBanned,
       isIdVerified: isIdVerified ?? this.isIdVerified,
       // A new birth date makes the server's age stale: derive it locally.

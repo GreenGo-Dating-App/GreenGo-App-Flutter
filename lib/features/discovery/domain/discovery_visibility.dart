@@ -30,6 +30,10 @@ class DiscoveryVisibility {
     return p.isIncognito && expiry != null && expiry.isAfter(now ?? DateTime.now());
   }
 
+  /// A business whose owner turned off "Show my store in Discover"
+  /// (Profile.storeHiddenFromDiscovery): not in Discover, Explore or search.
+  static bool isStoreHidden(Profile p) => p.isBusiness && p.storeHiddenFromDiscovery;
+
   /// A profile with an empty / placeholder display name (e.g. registration
   /// never finished) is not discoverable by other users.
   static bool hasNoUsableName(Profile p) {
@@ -68,6 +72,7 @@ class DiscoveryVisibility {
     if (p.isSupport && !allowSupport) return false;
     if (isRemovedAccount(p)) return false;
     if (isPrivacyHidden(p, now)) return false;
+    if (isStoreHidden(p)) return false;
     // Admin/support candidates are exempt from the completeness/tester rules.
     if (p.isSupport) return true;
     if (!viewerIsPrivileged) {

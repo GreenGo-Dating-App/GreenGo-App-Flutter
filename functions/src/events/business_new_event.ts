@@ -47,6 +47,7 @@ import '../shared/firebaseAdmin';
 import { LText, lt, notifTextFields, rawText, render, t } from '../shared/i18n';
 import { pushRecipientsFromUserDocs, sendLocalizedMulticast } from '../notifications/localizedPush';
 import { PUSH_CHANNEL_ID, PUSH_SOUND_ANDROID, PUSH_SOUND_IOS } from '../notifications/pushSound';
+import { storeFullyHidden } from '../profiles/storeVisibility';
 
 const db = admin.firestore();
 
@@ -79,6 +80,8 @@ async function fanOutNewEventToFollowers(
   const profileSnap = await db.collection('profiles').doc(organizerId).get();
   const profile = profileSnap.data() || {};
   if (profile.isBusiness !== true) return;
+  // Fully hidden store: followers are not told about it.
+  if (storeFullyHidden(profile)) return;
 
   const businessName = (
     (profile.businessName as string) ||

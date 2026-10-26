@@ -28262,4 +28262,32 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get deletionPendingTooLate =>
       'Your account is already being deleted. It can’t be stopped now.';
+
+  @override
+  String get bcStoreVisibilityTitle => 'Store visibility';
+
+  @override
+  String get bcStoreVisibleTitle => 'Visible to everyone';
+
+  @override
+  String get bcStoreVisibleSubtitle =>
+      'Your store appears in Discover, Explore and search.';
+
+  @override
+  String get bcStoreHiddenTitle => 'Hidden from Discover';
+
+  @override
+  String get bcStoreHiddenSubtitle =>
+      'People can\'t find your store in Discover, Explore or search. Your followers, chats and links still open it.';
+
+  @override
+  String get bcStoreOffTitle => 'Fully hidden';
+
+  @override
+  String get bcStoreOffSubtitle =>
+      'Only you see your store. Everyone else sees your personal profile, as if you had no business.';
+
+  @override
+  String get bcStoreVisibilitySaveFailed =>
+      'Couldn\'t change the store visibility. Please try again.';
 }

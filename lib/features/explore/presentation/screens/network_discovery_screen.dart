@@ -533,7 +533,7 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
         viewer != _bizMemoViewer ||
         radius != _bizMemoRadius) {
       final r = orderBusinessTiles(
-          all.where((c) => c.profile.isBusiness).toList(), viewer,
+          all.where((c) => c.profile.isBusiness && !DiscoveryVisibility.isStoreHidden(c.profile)).toList(), viewer,
           maxDistanceKm: radius);
       _bizMemoSource = all;
       _bizMemoViewer = viewer;

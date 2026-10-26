@@ -70,6 +70,7 @@
 import { createHmac } from 'crypto';
 import * as admin from 'firebase-admin';
 import '../shared/firebaseAdmin';
+import { storeHiddenFromDiscovery } from './storeVisibility';
 
 export const PRIVATE_PROFILES = 'profiles_private';
 
@@ -104,7 +105,7 @@ export const COARSE_INPUT_FIELDS = ['isTraveler', 'travelerExpiry', 'globeDiscov
  * trigger, so watching them cannot loop.
  */
 export const BUSINESS_GEO_INPUTS = [
-  'isBusiness', 'businessAddress.latitude', 'businessAddress.longitude', 'businessAddress.address',
+  'isBusiness', 'storeVisibility', 'businessAddress.latitude', 'businessAddress.longitude', 'businessAddress.address',
 ] as const;
 
 export const BUSINESS_GEOHASH_FIELD = 'businessGeohash';
@@ -407,10 +408,12 @@ export function dateOfBirthOf(pub: any, priv: any): Date | null {
  * profile is not a business or has no usable address. Same usability rule as
  * the app's BusinessAddress.fromMap: valid non-(0,0) coordinates and a
  * non-empty address. Computed from the coordinates, never from the client's
- * own `businessAddress.geohash`.
+ * own `businessAddress.geohash`. Null too while the owner hides the store
+ * (storeVisibility 'hidden' / 'off'), so Discover's geo queries never read it.
  */
 export function businessGeohashOf(pub: any): string | null {
   if (pub?.isBusiness !== true) return null;
+  if (storeHiddenFromDiscovery(pub)) return null;
   const a = pub.businessAddress;
   if (!a || typeof a !== 'object') return null;
   if (!validCoords(a.latitude, a.longitude)) return null;

@@ -28691,4 +28691,32 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get deletionPendingTooLate =>
       'Votre compte est déjà en cours de suppression. Il n’est plus possible de l’arrêter.';
+
+  @override
+  String get bcStoreVisibilityTitle => 'Visibilité de la boutique';
+
+  @override
+  String get bcStoreVisibleTitle => 'Visible par tous';
+
+  @override
+  String get bcStoreVisibleSubtitle =>
+      'Votre boutique apparaît dans Découvrir, Explorer et la recherche.';
+
+  @override
+  String get bcStoreHiddenTitle => 'Masquée dans Découvrir';
+
+  @override
+  String get bcStoreHiddenSubtitle =>
+      'Personne ne trouve votre boutique dans Découvrir, Explorer ou la recherche. Vos abonnés, discussions et liens l’ouvrent toujours.';
+
+  @override
+  String get bcStoreOffTitle => 'Entièrement masquée';
+
+  @override
+  String get bcStoreOffSubtitle =>
+      'Vous seul voyez votre boutique. Les autres voient votre profil personnel, comme si vous n’aviez pas d’entreprise.';
+
+  @override
+  String get bcStoreVisibilitySaveFailed =>
+      'Impossible de modifier la visibilité de la boutique. Veuillez réessayer.';
 }

@@ -145,6 +145,22 @@ describe('buildProfilePreview', () => {
     expect(p.imageUrl).toBe('https://firebasestorage.googleapis.com/cover.jpg');
   });
 
+  it('a fully hidden store (storeVisibility off) previews as the personal profile', () => {
+    const d = {
+      ...baseProfile(),
+      isBusiness: true,
+      storeVisibility: 'off',
+      businessName: 'Casa Fado',
+      storefrontBio: 'Live fado every night.',
+      coverImageUrl: 'https://firebasestorage.googleapis.com/cover.jpg',
+    };
+    const p = buildProfilePreview('biz1', d, NOW);
+    expect(p.title).toBe('Ana Souza · Lisbon');
+    expect(p.description).toContain('samba');
+    expect(p.imageUrl).toBe(PHOTO);
+    expect(renderHtml(p)).not.toContain('Casa Fado');
+  });
+
   it('mainProfilePhoto ignores non-https entries and supports legacy `photos`', () => {
     expect(mainProfilePhoto({ photoUrls: ['', 'http://x/a.jpg', PHOTO] })).toBe(PHOTO);
     expect(mainProfilePhoto({ photos: [PHOTO] })).toBe(PHOTO);

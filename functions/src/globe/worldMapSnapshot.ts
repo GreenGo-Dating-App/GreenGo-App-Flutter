@@ -39,6 +39,7 @@
  */
 import * as admin from 'firebase-admin';
 import { COUNTRY_CENTROIDS } from './countryCentroids';
+import { storeFullyHidden } from '../profiles/storeVisibility';
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
@@ -79,7 +80,7 @@ export const PROFILE_FIELDS = [
   'incognitoExpiry', 'isGhostMode', 'globeDiscoverability', 'location',
   'approxLocation', 'preciseLocation', 'travelerLocation', 'isTraveler',
   'travelerExpiry', 'isOnline', 'isBusiness', 'businessAddress',
-  'businessLogoUrl', 'coverImageUrl', 'galleryImages', 'businessName',
+  'businessLogoUrl', 'coverImageUrl', 'galleryImages', 'businessName', 'storeVisibility',
 ];
 
 export type Rng = () => number;
@@ -356,7 +357,8 @@ export function assemblePins(input: SnapshotInputs, rng: Rng = Math.random, nowM
     if (pins.length >= MAX_PINS) break;
     const data = input.profiles[id];
     if (!data) continue;
-    const isBusiness = data.isBusiness === true || storeFlag.has(id);
+    // A fully hidden store (storeVisibility 'off') is pinned as the person.
+    const isBusiness = !storeFullyHidden(data) && (data.isBusiness === true || storeFlag.has(id));
     const pin = isBusiness
       ? (businessPin(data, id) ?? personPin(data, id, rng, nowMs))
       : personPin(data, id, rng, nowMs);

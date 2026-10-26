@@ -4,6 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 
 import '../../profile/data/private_profile.dart';
 import '../../profile/domain/entities/business_address.dart';
+import '../../profile/domain/entities/store_visibility.dart';
 import '../domain/entities/globe_user.dart';
 import 'models/globe_user_model.dart';
 
@@ -62,7 +63,9 @@ List<GlobeUser> assembleNetworkPins({
   relations.forEach((id, rels) {
     final data = profiles[id];
     if (data == null) return;
-    final isBusiness = data['isBusiness'] == true || storeFlag.contains(id);
+    // A fully hidden store (Store visibility) is pinned as the person.
+    final fullyHidden = StoreVisibility.fromWire(data['storeVisibility']) == StoreVisibility.fullyHidden;
+    final isBusiness = !fullyHidden && (data['isBusiness'] == true || storeFlag.contains(id));
     final pin = isBusiness
         ? (businessPinFrom(data, id, rng) ?? personPinFrom(data, id, rng))
         : personPinFrom(data, id, rng);

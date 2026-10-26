@@ -1822,7 +1822,11 @@ class _ExploreScreenState extends State<ExploreScreen> {
     if (status != null && status != 'active') return null; // suspended/deleted
     if (d['isGhostMode'] == true) return null;
     try {
-      return ProfileModel.fromJson({...d, 'userId': id});
+      final p = ProfileModel.fromJson({...d, 'userId': id});
+      // Fully hidden stores parse as personal profiles; hidden-from-Discover
+      // stores stay out of this row.
+      if (!p.isBusiness || DiscoveryVisibility.isStoreHidden(p)) return null;
+      return p;
     } catch (_) {
       return null; // Skip unparseable business profiles.
     }

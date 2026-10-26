@@ -8316,5 +8316,13 @@
   "deletionPendingCancelConfirm": "Garder votre compte ? Votre profil redevient visible. Les événements et réservations annulés le restent, et les remboursements déjà lancés parviennent quand même aux acheteurs.",
   "deletionPendingKeepAccount": "Garder mon compte",
   "deletionPendingCancelled": "Demande de suppression annulée. Votre compte est conservé.",
-  "deletionPendingTooLate": "Votre compte est déjà en cours de suppression. Il n’est plus possible de l’arrêter."
+  "deletionPendingTooLate": "Votre compte est déjà en cours de suppression. Il n’est plus possible de l’arrêter.",
+  "bcStoreVisibilityTitle": "Visibilité de la boutique",
+  "bcStoreVisibleTitle": "Visible par tous",
+  "bcStoreVisibleSubtitle": "Votre boutique apparaît dans Découvrir, Explorer et la recherche.",
+  "bcStoreHiddenTitle": "Masquée dans Découvrir",
+  "bcStoreHiddenSubtitle": "Personne ne trouve votre boutique dans Découvrir, Explorer ou la recherche. Vos abonnés, discussions et liens l’ouvrent toujours.",
+  "bcStoreOffTitle": "Entièrement masquée",
+  "bcStoreOffSubtitle": "Vous seul voyez votre boutique. Les autres voient votre profil personnel, comme si vous n’aviez pas d’entreprise.",
+  "bcStoreVisibilitySaveFailed": "Impossible de modifier la visibilité de la boutique. Veuillez réessayer."
 }

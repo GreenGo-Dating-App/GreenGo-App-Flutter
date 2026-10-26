@@ -84,6 +84,11 @@ class _BusinessCenterScreenState extends State<BusinessCenterScreen> {
   Profile? _live;
   Profile get p => _live ?? widget.profile;
 
+  /// Store visibility picked here, shown at once while it saves (null = the
+  /// profile's own value).
+  StoreVisibility? _visibility;
+  bool _savingVisibility = false;
+
   /// paymentsConnected from the last [_todo] result (Settings checklist).
   bool? _paymentsConnected;
 
@@ -603,5 +608,63 @@ class _BusinessCenterScreenState extends State<BusinessCenterScreen> {
             p.businessVerified ? l.businessVerifiedLabel : l.requestVerificationMessage,
             p.businessVerified ? Icons.verified : Icons.verified_outlined,
             () => BusinessTools.openVerification(context, p)),
+        if (p.isBusiness) _storeVisibility(l),
       ]);
+
+  /// Store visibility (owner choice): visible / hidden from Discover / fully
+  /// hidden. Saved at once; on failure the previous choice comes back.
+  Widget _storeVisibility(AppLocalizations l) {
+    final current = _visibility ?? p.storeVisibility;
+    Widget option(StoreVisibility v, String title, String subtitle) => RadioListTile<StoreVisibility>(
+          key: ValueKey('bc-store-visibility-${v.wire}'),
+          value: v,
+          groupValue: current,
+          activeColor: AppColors.richGold,
+          contentPadding: EdgeInsets.zero,
+          title: Text(title, style: const TextStyle(color: AppColors.textPrimary)),
+          subtitle: Text(subtitle, style: const TextStyle(color: AppColors.textSecondary, fontSize: 12.5)),
+          onChanged: _savingVisibility ? null : (next) => _setVisibility(l, current, next!),
+        );
+    // Material (not a decorated Container) so the radio rows' ink shows.
+    return Material(
+      key: const ValueKey('bc-store-visibility'),
+      color: AppColors.backgroundCard,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+        side: const BorderSide(color: AppColors.divider),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(14, 12, 14, 4),
+        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+        Row(children: [
+          const Icon(Icons.visibility_outlined, color: AppColors.richGold, size: 20),
+          const SizedBox(width: 8),
+          Text(l.bcStoreVisibilityTitle,
+              style: const TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.w700)),
+        ]),
+        option(StoreVisibility.visible, l.bcStoreVisibleTitle, l.bcStoreVisibleSubtitle),
+        option(StoreVisibility.hiddenFromDiscovery, l.bcStoreHiddenTitle, l.bcStoreHiddenSubtitle),
+        option(StoreVisibility.fullyHidden, l.bcStoreOffTitle, l.bcStoreOffSubtitle),
+        ]),
+      ),
+    );
+  }
+
+  Future<void> _setVisibility(AppLocalizations l, StoreVisibility before, StoreVisibility next) async {
+    if (next == before) return;
+    setState(() {
+      _visibility = next;
+      _savingVisibility = true;
+    });
+    try {
+      await _repo.setStoreVisibility(p.userId, next);
+      if (mounted) setState(() => _live = p.copyWith(storeVisibility: next));
+    } catch (_) {
+      if (!mounted) return;
+      setState(() => _visibility = before);
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(l.bcStoreVisibilitySaveFailed)));
+    } finally {
+      if (mounted) setState(() => _savingVisibility = false);
+    }
+  }
 }
