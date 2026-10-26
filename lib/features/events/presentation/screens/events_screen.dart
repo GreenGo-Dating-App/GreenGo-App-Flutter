@@ -4445,6 +4445,18 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
           editMode: _isEditing,
           controller: _wizard,
           onStepChanged: (_) => _autosaveDraft(),
+          // Editing: Save changes on the overview and every step (not only
+          // on Review), disabled while a required step has an error.
+          editSaveBuilder: (_) => Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+            if (_saveBlocked)
+              Padding(
+                padding: const EdgeInsets.only(bottom: 8),
+                child: Text(AppLocalizations.of(context)!.wzSaveBlocked,
+                    key: const ValueKey('event-save-blocked'),
+                    style: const TextStyle(color: AppColors.warningAmber, fontSize: 12.5, fontWeight: FontWeight.w600)),
+              ),
+            _buildSaveActions(blocked: _saveBlocked),
+          ]),
           steps: [
             WizardStep(
               title: AppLocalizations.of(context)!.wzEventBasics,
@@ -5002,6 +5014,11 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     return null;
   }
 
+  /// A required step has an error: Publish / Schedule / Save changes stay
+  /// disabled (the review checklist and the step banners say what to fix).
+  bool get _saveBlocked =>
+      _basicsError() != null || _whereError() != null || _ticketsError() != null || _paymentError() != null;
+
   Widget _buildReview() {
     final l = AppLocalizations.of(context)!;
     final checks = <(String, bool, VoidCallback?)>[
@@ -5252,7 +5269,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
         ),
         child: _busy
             ? _spinner()
-            : Text(l10n.eventsEditEvent,
+            : Text(l10n.wzSaveChanges,
                 style: const TextStyle(
                     fontSize: 16, fontWeight: FontWeight.bold)),
       );

@@ -65,7 +65,10 @@ enum WizardStepStatus { current, done, attention, todo }
 ///    while the current step is invalid;
 ///  * every step stays MOUNTED (offstage) so the caller's Form validators and
 ///    controllers keep working exactly as before;
-///  * edit mode opens an overview with "Edit" per section that jumps there.
+///  * edit mode opens an overview with "Edit" per section that jumps there;
+///    [editSaveBuilder] (the caller's Save changes button) is shown on the
+///    overview and under EVERY step, so an edit never has to walk to the
+///    last step to be saved (the last step keeps the caller's own buttons).
 class ListingWizard extends StatefulWidget {
   const ListingWizard({
     super.key,
@@ -73,12 +76,16 @@ class ListingWizard extends StatefulWidget {
     this.editMode = false,
     this.onStepChanged,
     this.controller,
+    this.editSaveBuilder,
   });
 
   final List<WizardStep> steps;
   final bool editMode;
   final ValueChanged<int>? onStepChanged;
   final ListingWizardController? controller;
+
+  /// Edit mode only: the Save changes action (see the class doc).
+  final WidgetBuilder? editSaveBuilder;
 
   @override
   State<ListingWizard> createState() => ListingWizardState();
@@ -595,6 +602,10 @@ class ListingWizardState extends State<ListingWizard> {
                 ),
               ),
           ]),
+          if (widget.editMode && widget.editSaveBuilder != null && !last) ...[
+            const SizedBox(height: 10),
+            KeyedSubtree(key: const ValueKey('wizard-edit-save'), child: widget.editSaveBuilder!(context)),
+          ],
         ]),
       ),
     );
@@ -673,6 +684,10 @@ class ListingWizardState extends State<ListingWizard> {
                   ),
                 ),
               ),
+            if (widget.editSaveBuilder != null) ...[
+              const SizedBox(height: 16),
+              KeyedSubtree(key: const ValueKey('wizard-overview-save'), child: widget.editSaveBuilder!(context)),
+            ],
           ]),
         ),
       );

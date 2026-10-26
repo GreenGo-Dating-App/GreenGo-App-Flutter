@@ -8324,5 +8324,7 @@
   "bcStoreHiddenSubtitle": "Personne ne trouve votre boutique dans Découvrir, Explorer ou la recherche. Vos abonnés, discussions et liens l’ouvrent toujours.",
   "bcStoreOffTitle": "Entièrement masquée",
   "bcStoreOffSubtitle": "Vous seul voyez votre boutique. Les autres voient votre profil personnel, comme si vous n’aviez pas d’entreprise.",
-  "bcStoreVisibilitySaveFailed": "Impossible de modifier la visibilité de la boutique. Veuillez réessayer."
+  "bcStoreVisibilitySaveFailed": "Impossible de modifier la visibilité de la boutique. Veuillez réessayer.",
+  "wzSaveChanges": "Enregistrer les modifications",
+  "wzSaveBlocked": "Corrigez les étapes marquées d’un ! pour enregistrer vos modifications."
 }

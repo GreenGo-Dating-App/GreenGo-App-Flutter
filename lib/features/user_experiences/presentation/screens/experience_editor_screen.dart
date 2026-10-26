@@ -1062,6 +1062,20 @@ class _EditorFormState extends State<_EditorForm> {
                 editMode: !_isNew,
                 controller: _wizard,
                 onStepChanged: (_) => _autosaveDraft(),
+                // Editing: save from the overview and every step, not only Review.
+                editSaveBuilder: (_) {
+                  final blocked = _reviewChecks(l).any((c) => c.$2);
+                  return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+                    if (blocked)
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 8),
+                        child: Text(l.wzSaveBlocked,
+                            key: const ValueKey('experience-save-blocked'),
+                            style: const TextStyle(color: AppColors.warningAmber, fontSize: 12.5, fontWeight: FontWeight.w600)),
+                      ),
+                    _saveButtons(l, saving, blocked),
+                  ]);
+                },
                 steps: [
                   WizardStep(
                     title: l.wzExpBasics,
@@ -1574,13 +1588,15 @@ class _EditorFormState extends State<_EditorForm> {
     return () => _wizard.goTo(step);
   }
 
+  /// Review checklist: (message, blocks saving, fix).
+  List<(String, bool, VoidCallback?)> _reviewChecks(AppLocalizations l) => [
+        for (final e in ExperienceValidator.validate(_draft())) (ExperienceL10n.fieldError(l, e), true, _fixFor(e)),
+        if (!_useRecurring && widget.existing == null) (l.wzWarnNoAvailability, false, () => _wizard.goTo(3)),
+        if (_useRecurring && _availRules.error != null) (l.mtErrRules, true, () => _wizard.goTo(3)),
+      ];
+
   Widget _reviewStep(AppLocalizations l, bool saving) {
-    final errors = ExperienceValidator.validate(_draft());
-    final checks = <(String, bool, VoidCallback?)>[
-      for (final e in errors) (ExperienceL10n.fieldError(l, e), true, _fixFor(e)),
-      if (!_useRecurring && widget.existing == null) (l.wzWarnNoAvailability, false, () => _wizard.goTo(3)),
-      if (_useRecurring && _availRules.error != null) (l.mtErrRules, true, () => _wizard.goTo(3)),
-    ];
+    final checks = _reviewChecks(l);
     final blocked = checks.any((c) => c.$2);
     return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
       Text(l.wzPreviewTitle, style: const TextStyle(color: AppColors.textSecondary, fontSize: 12.5)),
@@ -1615,6 +1631,13 @@ class _EditorFormState extends State<_EditorForm> {
               key: const ValueKey('experience-publish-blocked'),
               style: const TextStyle(color: AppColors.warningAmber, fontSize: 12.5, fontWeight: FontWeight.w600)),
         ),
+      _saveButtons(l, saving, blocked),
+    ]);
+  }
+
+  /// Save draft (unpublished only) + Publish / Save changes. Also the edit
+  /// mode Save on every wizard step (ListingWizard.editSaveBuilder).
+  Widget _saveButtons(AppLocalizations l, bool saving, bool blocked) =>
       Row(children: [
                   if (widget.existing?.isPublished != true)
                     Expanded(
@@ -1654,9 +1677,7 @@ class _EditorFormState extends State<_EditorForm> {
                               : l.uexpPublish),
                     ),
                   ),
-                ]),
-    ]);
-  }
+                ]);
 
   WizardDraftStore get _draftStore => WizardDraftStore('wizard_experience_${widget.currentUserId}');
 

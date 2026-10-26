@@ -28290,4 +28290,10 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get bcStoreVisibilitySaveFailed =>
       'Couldn\'t change the store visibility. Please try again.';
+
+  @override
+  String get wzSaveChanges => 'Save changes';
+
+  @override
+  String get wzSaveBlocked => 'Fix the steps marked ! to save your changes.';
 }

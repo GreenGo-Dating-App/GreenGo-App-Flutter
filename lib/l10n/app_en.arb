@@ -18254,5 +18254,13 @@
   "bcStoreVisibilitySaveFailed": "Couldn't change the store visibility. Please try again.",
   "@bcStoreVisibilitySaveFailed": {
     "description": "Snackbar when saving the store visibility fails"
+  },
+  "wzSaveChanges": "Save changes",
+  "@wzSaveChanges": {
+    "description": "Editing an event or experience: save button shown on every step and the overview"
+  },
+  "wzSaveBlocked": "Fix the steps marked ! to save your changes.",
+  "@wzSaveBlocked": {
+    "description": "Editing: why Save changes is disabled (a required step has an error)"
   }
 }

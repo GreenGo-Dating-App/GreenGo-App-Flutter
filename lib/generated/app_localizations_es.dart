@@ -28550,4 +28550,11 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get bcStoreVisibilitySaveFailed =>
       'No se pudo cambiar la visibilidad de la tienda. Inténtalo de nuevo.';
+
+  @override
+  String get wzSaveChanges => 'Guardar cambios';
+
+  @override
+  String get wzSaveBlocked =>
+      'Corrige los pasos marcados con ! para guardar tus cambios.';
 }

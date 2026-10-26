@@ -8898,5 +8898,7 @@
   "bcStoreHiddenSubtitle": "Niemand findet deinen Shop in Entdecken, Erkunden oder der Suche. Deine Follower, Chats und Links öffnen ihn weiterhin.",
   "bcStoreOffTitle": "Komplett verborgen",
   "bcStoreOffSubtitle": "Nur du siehst deinen Shop. Alle anderen sehen dein persönliches Profil, als hättest du kein Unternehmen.",
-  "bcStoreVisibilitySaveFailed": "Die Sichtbarkeit des Shops konnte nicht geändert werden. Bitte versuche es erneut."
+  "bcStoreVisibilitySaveFailed": "Die Sichtbarkeit des Shops konnte nicht geändert werden. Bitte versuche es erneut.",
+  "wzSaveChanges": "Änderungen speichern",
+  "wzSaveBlocked": "Korrigiere die mit ! markierten Schritte, um deine Änderungen zu speichern."
 }

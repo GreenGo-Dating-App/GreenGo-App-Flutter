@@ -7,8 +7,9 @@ import 'package:shared_preferences/shared_preferences.dart';
 /// Harness mirroring the event wizard: Basics (title required) -> Tickets
 /// (free switch) -> Payment (skipped when free) -> Review.
 class _Harness extends StatefulWidget {
-  const _Harness({this.editMode = false, this.store});
+  const _Harness({this.editMode = false, this.store, this.onSave});
   final bool editMode;
+  final VoidCallback? onSave;
   final WizardDraftStore? store;
   @override
   State<_Harness> createState() => _HarnessState();
@@ -41,6 +42,9 @@ class _HarnessState extends State<_Harness> {
         body: ListingWizard(
           editMode: widget.editMode,
           onStepChanged: (_) => widget.store?.write({'title': title.text}),
+          editSaveBuilder: widget.onSave == null
+              ? null
+              : (_) => ElevatedButton(key: const ValueKey('save'), onPressed: widget.onSave, child: const Text('SAVE')),
           steps: [
             WizardStep(
               title: 'Basics',
@@ -137,6 +141,34 @@ void main() {
     await t.pumpAndSettle();
     expect(find.text('Step 2 of 3'), findsOneWidget);
     expect(find.byKey(const ValueKey('free')), findsOneWidget);
+  });
+
+  testWidgets('edit mode: Save is on the overview and on every step, not only Review', (t) async {
+    var saves = 0;
+    await t.pumpWidget(_app(_Harness(editMode: true, onSave: () => saves++)));
+    await t.pumpAndSettle();
+    // Overview.
+    expect(find.byKey(const ValueKey('wizard-overview-save')), findsOneWidget);
+    await t.tap(find.text('SAVE'));
+    expect(saves, 1);
+    // A middle step: under the Back / Next row.
+    await t.tap(find.byKey(const ValueKey('wizard-edit-1')));
+    await t.pumpAndSettle();
+    expect(find.byKey(const ValueKey('wizard-edit-save')), findsOneWidget);
+    await t.tap(find.text('SAVE'));
+    expect(saves, 2);
+    // The last step keeps the caller's own buttons (no duplicate).
+    await t.tap(find.byKey(const ValueKey('wizard-next')));
+    await t.pumpAndSettle();
+    expect(find.text('REVIEW'), findsOneWidget);
+    expect(find.byKey(const ValueKey('wizard-edit-save')), findsNothing);
+  });
+
+  testWidgets('create mode never shows the edit Save', (t) async {
+    await t.pumpWidget(_app(_Harness(onSave: () {})));
+    await t.pumpAndSettle();
+    expect(find.byKey(const ValueKey('wizard-edit-save')), findsNothing);
+    expect(find.text('SAVE'), findsNothing);
   });
 
   testWidgets('draft autosave + resume restores the fields', (t) async {

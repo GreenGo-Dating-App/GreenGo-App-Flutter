@@ -28529,6 +28529,13 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get bcStoreVisibilitySaveFailed =>
       'Não foi possível alterar a visibilidade da loja. Tenta novamente.';
+
+  @override
+  String get wzSaveChanges => 'Guardar alterações';
+
+  @override
+  String get wzSaveBlocked =>
+      'Corrige os passos marcados com ! para guardar as alterações.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -57061,4 +57068,11 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get bcStoreVisibilitySaveFailed =>
       'Não foi possível alterar a visibilidade da loja. Tente novamente.';
+
+  @override
+  String get wzSaveChanges => 'Salvar alterações';
+
+  @override
+  String get wzSaveBlocked =>
+      'Corrija as etapas marcadas com ! para salvar as alterações.';
 }

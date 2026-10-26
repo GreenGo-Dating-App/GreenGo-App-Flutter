@@ -1246,7 +1246,10 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       return _buildStoreUnavailableState();
     }
 
-    return Column(
+    return ListView(
+      // One scroll for the whole tab (header included): on short web
+      // windows the fixed header left almost no room for the list.
+      keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
       children: [
         // Header
         Container(
@@ -1438,10 +1441,10 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         ),
 
         // Base membership card + Subscription plans
-        Expanded(
-          child: ListView(
-            keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
-            padding: const EdgeInsets.all(16),
+        Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               _buildBaseMembershipCard(),
               const SizedBox(height: 16),
@@ -2306,7 +2309,10 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     List<CoinPromotion> promotions,
   ) {
     final l10n = AppLocalizations.of(context)!;
-    return Column(
+    return ListView(
+      // One scroll for the whole tab (header included): on short web
+      // windows the fixed header left almost no room for the list.
+      keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
       children: [
         CollapsibleHowItWorks(
           id: 'coin_shop',
@@ -2396,10 +2402,10 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         if (promotions.isNotEmpty) _buildPromotionBanner(promotions.first),
 
         // Package list + Send Coins
-        Expanded(
-          child: ListView(
-            keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
-            padding: const EdgeInsets.all(16),
+        Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               ...packages.map((package) {
                 final isPopular = package.packageId == 'popular_500';

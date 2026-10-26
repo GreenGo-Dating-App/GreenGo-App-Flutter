@@ -48249,6 +48249,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Couldn\'t change the store visibility. Please try again.'**
   String get bcStoreVisibilitySaveFailed;
+
+  /// Editing an event or experience: save button shown on every step and the overview
+  ///
+  /// In en, this message translates to:
+  /// **'Save changes'**
+  String get wzSaveChanges;
+
+  /// Editing: why Save changes is disabled (a required step has an error)
+  ///
+  /// In en, this message translates to:
+  /// **'Fix the steps marked ! to save your changes.'**
+  String get wzSaveBlocked;
 }
 
 class _AppLocalizationsDelegate

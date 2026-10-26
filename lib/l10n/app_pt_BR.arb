@@ -8898,5 +8898,7 @@
   "bcStoreHiddenSubtitle": "Ninguém encontra sua loja em Descobrir, Explorar ou na busca. Seus seguidores, conversas e links continuam abrindo a loja.",
   "bcStoreOffTitle": "Totalmente oculta",
   "bcStoreOffSubtitle": "Só você vê sua loja. Os outros veem seu perfil pessoal, como se você não tivesse um negócio.",
-  "bcStoreVisibilitySaveFailed": "Não foi possível alterar a visibilidade da loja. Tente novamente."
+  "bcStoreVisibilitySaveFailed": "Não foi possível alterar a visibilidade da loja. Tente novamente.",
+  "wzSaveChanges": "Salvar alterações",
+  "wzSaveBlocked": "Corrija as etapas marcadas com ! para salvar as alterações."
 }
