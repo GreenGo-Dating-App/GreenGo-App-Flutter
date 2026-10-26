@@ -45,8 +45,8 @@ class AppColors {
   static const Color liquidHint = Color(0xFFA39A88);
 
   // UI Elements
-  // Owner 2026-10-25: app background #101010 (was #0A0A0A, near pure black).
-  static const Color backgroundDark = Color(0xFF101010);
+  // Owner 2026-10-25: app background #111111 (was #0A0A0A, near pure black).
+  static const Color backgroundDark = Color(0xFF111111);
   static const Color backgroundCard = Color(0xFF1A1A1A);
   static const Color backgroundInput = Color(0xFF2A2A2A);
   static const Color divider = Color(0xFF3A3A3A);
