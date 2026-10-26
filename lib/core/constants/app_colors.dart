@@ -8,7 +8,7 @@ class AppColors {
   // Primary Colors
   static const Color richGold = Color(0xFFD4AF37);
   static const Color gold = richGold; // Alias for convenience
-  static const Color deepBlack = Color(0xFF0A0A0A);
+  static const Color deepBlack = Color(0xFF0D0D0D);
 
   // Secondary Colors
   static const Color accentGold = Color(0xFFFFD700);
@@ -45,7 +45,7 @@ class AppColors {
   static const Color liquidHint = Color(0xFFA39A88);
 
   // UI Elements
-  static const Color backgroundDark = Color(0xFF0A0A0A);
+  static const Color backgroundDark = Color(0xFF0D0D0D);
   static const Color backgroundCard = Color(0xFF1A1A1A);
   static const Color backgroundInput = Color(0xFF2A2A2A);
   static const Color divider = Color(0xFF3A3A3A);

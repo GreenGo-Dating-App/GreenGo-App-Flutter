@@ -1736,7 +1736,7 @@ class BannedScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
     return Scaffold(
-      backgroundColor: const Color(0xFF0A0A0A),
+      backgroundColor: const Color(0xFF0D0D0D),
       body: SafeArea(
         child: Center(
           child: Padding(
@@ -1843,7 +1843,7 @@ class _SplashScreenState extends State<SplashScreen> {
     final messages = _getLoadingMessages(context);
     final displayIndex = _shuffledIndices[_currentMsgIndex] % messages.length;
     return Scaffold(
-      backgroundColor: const Color(0xFF0A0A0A),
+      backgroundColor: const Color(0xFF0D0D0D),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -1889,9 +1889,9 @@ class _ComingSoonScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF0A0A0A),
+      backgroundColor: const Color(0xFF0D0D0D),
       appBar: AppBar(
-        backgroundColor: const Color(0xFF0A0A0A),
+        backgroundColor: const Color(0xFF0D0D0D),
         title: Text(
           title,
           style: const TextStyle(
