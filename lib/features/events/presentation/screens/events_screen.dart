@@ -4437,6 +4437,17 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
               tooltip: AppLocalizations.of(context)!.eventsDeleteEvent,
               onPressed: _confirmDelete,
             ),
+          // Editing: Save changes from any step, right of the bin.
+          if (_isEditing)
+            IconButton(
+              key: const ValueKey('event-save-top'),
+              icon: _busy
+                  ? const SizedBox(
+                      width: 20, height: 20, child: CircularProgressIndicator(strokeWidth: 2, color: AppColors.richGold))
+                  : const Icon(Icons.save_outlined, color: AppColors.richGold),
+              tooltip: AppLocalizations.of(context)!.wzSaveChanges,
+              onPressed: (_uploading || _saving) ? null : _saveFromAppBar,
+            ),
         ],
       ),
       body: Form(
@@ -4445,18 +4456,6 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
           editMode: _isEditing,
           controller: _wizard,
           onStepChanged: (_) => _autosaveDraft(),
-          // Editing: Save changes on the overview and every step (not only
-          // on Review), disabled while a required step has an error.
-          editSaveBuilder: (_) => Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-            if (_saveBlocked)
-              Padding(
-                padding: const EdgeInsets.only(bottom: 8),
-                child: Text(AppLocalizations.of(context)!.wzSaveBlocked,
-                    key: const ValueKey('event-save-blocked'),
-                    style: const TextStyle(color: AppColors.warningAmber, fontSize: 12.5, fontWeight: FontWeight.w600)),
-              ),
-            _buildSaveActions(blocked: _saveBlocked),
-          ]),
           steps: [
             WizardStep(
               title: AppLocalizations.of(context)!.wzEventBasics,
@@ -5018,6 +5017,17 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
   /// disabled (the review checklist and the step banners say what to fix).
   bool get _saveBlocked =>
       _basicsError() != null || _whereError() != null || _ticketsError() != null || _paymentError() != null;
+
+  /// AppBar Save (edit mode): keeps the event's status; while a required
+  /// step has an error it says what to do instead of saving.
+  void _saveFromAppBar() {
+    if (_saveBlocked) {
+      ScaffoldMessenger.of(context)
+          .showSnackBar(SnackBar(content: Text(AppLocalizations.of(context)!.wzSaveBlocked)));
+      return;
+    }
+    unawaited(_submit(status: widget.existing!.status));
+  }
 
   Widget _buildReview() {
     final l = AppLocalizations.of(context)!;

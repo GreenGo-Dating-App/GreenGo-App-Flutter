@@ -479,15 +479,21 @@ void main() {
           existing: event,
           lockCommunity: true,
           onEventCreated: (_) {},
+          onEventDeleted: () {},
         )));
         await t.pump();
-        // Save changes is on the overview (not only on the last step).
-        expect(find.byKey(const ValueKey('wizard-overview-save')), findsOneWidget);
-        expect(find.text('Save changes'), findsOneWidget);
+        // Save changes: a save icon in the AppBar, right of the bin.
+        final bar = find.byType(AppBar);
+        final save = find.descendant(of: bar, matching: find.byKey(const ValueKey('event-save-top')));
+        expect(save, findsOneWidget);
+        expect(find.byTooltip('Save changes'), findsOneWidget);
+        expect(t.getTopLeft(save).dx,
+            greaterThan(t.getTopLeft(find.descendant(of: bar, matching: find.byIcon(Icons.delete_outline))).dx));
         // Edit mode opens on the overview: open the first step (photos).
         await t.tap(find.byKey(const ValueKey('wizard-edit-0')));
         await t.pump(const Duration(milliseconds: 500));
-        expect(find.byKey(const ValueKey('wizard-edit-save')), findsOneWidget);
+        // Still there on a step.
+        expect(find.byKey(const ValueKey('event-save-top')), findsOneWidget);
         expect(find.text(_bannerHint), findsOneWidget);
         expect(
             find.byKey(const Key('event_main_photo_adjust')), findsOneWidget);
@@ -518,11 +524,12 @@ void main() {
             _app(ExperienceEditorScreen(currentUserId: 'u', existing: x)));
         await t.pump();
         await t.pump();
-        expect(find.byKey(const ValueKey('wizard-overview-save')), findsOneWidget);
+        expect(find.descendant(of: find.byType(AppBar), matching: find.byKey(const ValueKey('experience-save-top'))),
+            findsOneWidget);
         // Edit mode opens on the overview: open the first step (photos).
         await t.tap(find.byKey(const ValueKey('wizard-edit-0')));
         await t.pump(const Duration(milliseconds: 500));
-        expect(find.byKey(const ValueKey('wizard-edit-save')), findsOneWidget);
+        expect(find.byKey(const ValueKey('experience-save-top')), findsOneWidget);
         expect(find.text(_bannerHint), findsOneWidget);
         expect(find.byKey(const Key('experience_main_photo_adjust')),
             findsOneWidget);

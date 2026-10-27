@@ -1055,6 +1055,27 @@ class _EditorFormState extends State<_EditorForm> {
               backgroundColor: AppColors.backgroundDark,
               title: Text(_isNew ? l.uexpNewTitle : l.uexpEditTitle,
                   style: const TextStyle(color: AppColors.textPrimary)),
+              actions: [
+                // Editing: Save changes from any step (keeps the status).
+                if (!_isNew)
+                  IconButton(
+                    key: const ValueKey('experience-save-top'),
+                    icon: saving
+                        ? const SizedBox(
+                            width: 20, height: 20, child: CircularProgressIndicator(strokeWidth: 2, color: AppColors.richGold))
+                        : const Icon(Icons.save_outlined, color: AppColors.richGold),
+                    tooltip: l.wzSaveChanges,
+                    onPressed: saving
+                        ? null
+                        : () {
+                            if (_reviewChecks(l).any((c) => c.$2)) {
+                              _snack(l.wzSaveBlocked);
+                              return;
+                            }
+                            _save(widget.existing!.status);
+                          },
+                  ),
+              ],
             ),
             body: AbsorbPointer(
               absorbing: saving,
@@ -1062,20 +1083,6 @@ class _EditorFormState extends State<_EditorForm> {
                 editMode: !_isNew,
                 controller: _wizard,
                 onStepChanged: (_) => _autosaveDraft(),
-                // Editing: save from the overview and every step, not only Review.
-                editSaveBuilder: (_) {
-                  final blocked = _reviewChecks(l).any((c) => c.$2);
-                  return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-                    if (blocked)
-                      Padding(
-                        padding: const EdgeInsets.only(bottom: 8),
-                        child: Text(l.wzSaveBlocked,
-                            key: const ValueKey('experience-save-blocked'),
-                            style: const TextStyle(color: AppColors.warningAmber, fontSize: 12.5, fontWeight: FontWeight.w600)),
-                      ),
-                    _saveButtons(l, saving, blocked),
-                  ]);
-                },
                 steps: [
                   WizardStep(
                     title: l.wzExpBasics,
@@ -1635,8 +1642,7 @@ class _EditorFormState extends State<_EditorForm> {
     ]);
   }
 
-  /// Save draft (unpublished only) + Publish / Save changes. Also the edit
-  /// mode Save on every wizard step (ListingWizard.editSaveBuilder).
+  /// Save draft (unpublished only) + Publish / Save changes (Review step).
   Widget _saveButtons(AppLocalizations l, bool saving, bool blocked) =>
       Row(children: [
                   if (widget.existing?.isPublished != true)
