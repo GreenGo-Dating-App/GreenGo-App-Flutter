@@ -61,7 +61,7 @@ const OK = 200;
 const DENIED = 403;
 
 const baseEvent = () => ({
-  organizerId: ORG,
+  organizerId: ORG, latitude: 41.15, longitude: -8.61,
   title: 'Picnic in the park',
   description: 'Bring food to share. Meet at 18:30 on 12/10/2026, gate 3.',
   locationName: 'Parque Ibirapuera',

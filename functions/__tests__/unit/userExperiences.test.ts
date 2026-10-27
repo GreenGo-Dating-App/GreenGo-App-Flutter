@@ -210,6 +210,15 @@ describe('payload validation', () => {
     hostId: 'someone-else',
   };
 
+  it('a real place on the map is required (owner rule 2026-10-26)', () => {
+    const { lat: _lat, lng: _lng, ...noCoords } = good as Record<string, unknown>;
+    expect(validateExperiencePayload(noCoords).errors).toContain('locationName');
+    expect(validateExperiencePayload({ ...good, lat: 0, lng: 0 }).errors).toContain('locationName');
+    expect(validateExperiencePayload({ ...good, lat: 95, lng: 10 }).errors).toContain('locationName');
+    // Reported once even when the name is missing too.
+    expect(validateExperiencePayload({ ...noCoords, locationName: '' }).errors.filter((e) => e === 'locationName')).toHaveLength(1);
+  });
+
   it('accepts a complete payload and drops server-owned fields', () => {
     const r = validateExperiencePayload(good);
     expect(r.errors).toEqual([]);

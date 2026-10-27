@@ -5579,6 +5579,21 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       }
     }
 
+    // Location (owner rule 2026-10-26: always a real place on the map):
+    // typed text + coordinates (map pick, or geocoded from the text). Resolved
+    // BEFORE uploading, so a refused save leaves no orphan photos. The rules
+    // refuse an event without coordinates too (eventPlaceOk).
+    setState(() => _saving = true);
+    final place = await _resolveLocationForSave();
+    if (!mounted) return;
+    setState(() => _saving = false);
+    final locationText = _locationController.text.trim();
+    if (place.lat == null || place.lng == null) {
+      unawaited(showUserErrorMessage(context, AppLocalizations.of(context)!.wzErrLocationOnMap));
+      _wizard.goTo(1);
+      return;
+    }
+
     // Upload new photos; keep already-uploaded ones the user didn't remove.
     setState(() => _uploading = true);
     String? imageUrl = _existingMainUrl;
@@ -5599,17 +5614,6 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     if (!mounted) return;
     setState(() => _uploading = false);
 
-    // Location: typed text + coordinates (map pick, or geocoded from text).
-    setState(() => _saving = true);
-    final place = await _resolveLocationForSave();
-    if (!mounted) return;
-    setState(() => _saving = false);
-    final locationText = _locationController.text.trim();
-    final noCoords = place.lat == null || place.lng == null;
-    if (noCoords) {
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-          content: Text(AppLocalizations.of(context)!.eventsLocationNotOnMap)));
-    }
     // Creator-managed co-owner list (never the creator, max 5).
     final creatorId = widget.existing?.organizerId ?? widget.currentUserId;
     final coOwnerIds = _coOwnerIds
@@ -5672,7 +5676,6 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
         longitude: place.lng,
         city: place.city,
         country: place.country,
-        clearCoordinates: noCoords,
         // Only the creator changes co-owners; a co-owner's edit keeps them.
         coOrganizerIds: _canManageCoOwners ? coOwnerIds : null,
         maxAttendees: maxAttendees,

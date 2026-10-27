@@ -582,6 +582,16 @@ class _EditorFormState extends State<_EditorForm> {
       }
       if (!await _photosAreClean()) return;
 
+      // Owner rule 2026-10-26: always a real place on the map. Resolved before
+      // uploading; the server refuses an experience without coordinates too.
+      await _resolveLocation();
+      if (!mounted) return;
+      if (_lat == null || _lng == null) {
+        _snack(l.wzErrLocationOnMap);
+        _wizard.goTo(1);
+        return;
+      }
+
       // Uploads (new picks only; kept URLs stay).
       final ds = di.sl<ProfileRemoteDataSource>();
       String? mainUrl = _existingMainUrl;
@@ -600,10 +610,6 @@ class _EditorFormState extends State<_EditorForm> {
         return;
       }
       if (!mounted || mainUrl == null) return;
-
-      await _resolveLocation();
-      if (!mounted) return;
-      if (_lat == null) _snack(l.uexpLocationNotFound, error: false);
 
       final host = (await UserDirectoryService.instance
           .resolve([widget.currentUserId]))[widget.currentUserId];

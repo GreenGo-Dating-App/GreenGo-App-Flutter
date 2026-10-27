@@ -43,6 +43,7 @@ import { usdCentsToMinor } from '../../src/ticket_payments/fees';
 import { ticketQrPayload, verifyTicketQr } from '../../src/ticket_payments/tokens';
 import { getEventTicketCode, checkInTicket, checkInEventAttendee, eventTicketCode } from '../../src/checkin/eventCheckin';
 import { getBookingCheckInCode } from '../../src/experience_bookings/functions';
+import { MERCADO_PAGO_ENABLED } from '../../src/ticket_payments/config';
 
 const db = admin.firestore();
 const TS = admin.firestore.Timestamp;
@@ -147,7 +148,7 @@ async function connectMp() {
 }
 async function paidEvent(id: string, over: Record<string, any> = {}) {
   await db.doc(`events/${id}`).set({
-    organizerId: ORG, title: 'Rooftop Samba', price: 25, currency: 'R$', maxAttendees: 0, attendeeCount: 0,
+    organizerId: ORG, latitude: 41.15, longitude: -8.61, title: 'Rooftop Samba', price: 25, currency: 'R$', maxAttendees: 0, attendeeCount: 0,
     status: 'published', ticketProvider: 'stripe', guestsAllowedPerAttendee: 1,
     startDate: TS.fromMillis(Date.now() + HOUR), endDate: TS.fromMillis(Date.now() + 4 * HOUR), ...over,
   });
@@ -451,7 +452,8 @@ describe('instant mode: Stripe Connect direct charge', () => {
 
 // ═══════════════════════════════════════════════ instant mode (Mercado Pago)
 
-describe('instant mode: Mercado Pago', () => {
+// Mercado Pago is paused (owner 2026-10-26, MERCADO_PAGO_ENABLED): these run again once it is back.
+(MERCADO_PAGO_ENABLED ? describe : describe.skip)('instant mode: Mercado Pago', () => {
   async function mpOrder() {
     await connectMp();
     await paidEvent('e1', { ticketProvider: 'mercadopago' });
@@ -693,7 +695,7 @@ describe('firestore.rules: paid events cannot be self-joined; free events unchan
   });
 
   test('free event: self RSVP going, waitlist promotion and counters work as before; signed QR as before', async () => {
-    await db.doc('events/free').set({ organizerId: ORG, title: 'Picnic', price: 0, attendeeCount: 0, maxAttendees: 0, startDate: TS.fromMillis(Date.now() + HOUR) });
+    await db.doc('events/free').set({ organizerId: ORG, latitude: 41.15, longitude: -8.61, title: 'Picnic', price: 0, attendeeCount: 0, maxAttendees: 0, startDate: TS.fromMillis(Date.now() + HOUR) });
     expect(await clientWrite(BUYER, `events/free/attendees/${BUYER}`, { userId: BUYER, eventId: 'free', status: 'going', checkedIn: false })).toBe(200);
     expect(await clientWrite(BUYER, 'events/free', { attendeeCount: 1 }, ['attendeeCount'])).toBe(200);
     await db.doc(`events/free/attendees/${OTHER}`).set({ userId: OTHER, status: 'waitlist' });

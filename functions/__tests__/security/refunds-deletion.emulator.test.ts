@@ -108,7 +108,7 @@ const PHASES = [
 ];
 async function paidEvent(id: string, over: Record<string, any> = {}) {
   await db.doc(`events/${id}`).set({
-    organizerId: ORG, title: 'Rooftop Samba', description: 'Music', price: 20, currency: 'R$', currencyCode: 'brl',
+    organizerId: ORG, latitude: 41.15, longitude: -8.61, title: 'Rooftop Samba', description: 'Music', price: 20, currency: 'R$', currencyCode: 'brl',
     maxAttendees: 0, attendeeCount: 0, maxTicketsPerUser: null,
     status: 'published', ticketProvider: 'stripe', pricePhases: PHASES,
     startDate: TS.fromMillis(Date.now() + 24 * HOUR), endDate: TS.fromMillis(Date.now() + 28 * HOUR), ...over,
@@ -362,7 +362,7 @@ describe('refund_proofs storage', () => {
 describe('account deletion with paid sales not refunded: scheduled, never refused (Apple 5.1.1(v))', () => {
   // What the app writes for a new paid event (client create, rules apply).
   const newPaidEvent = () => ({
-    organizerId: ORG, title: 'New night', attendeeCount: 0, maxAttendees: 0, price: 15, ticketProvider: 'stripe',
+    organizerId: ORG, latitude: 41.15, longitude: -8.61, title: 'New night', attendeeCount: 0, maxAttendees: 0, price: 15, ticketProvider: 'stripe',
     status: 'published', startDate: new Date(Date.now() + 48 * HOUR), endDate: new Date(Date.now() + 50 * HOUR),
   });
 

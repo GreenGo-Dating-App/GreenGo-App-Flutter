@@ -48261,6 +48261,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Fix the steps marked ! to save your changes.'**
   String get wzSaveBlocked;
+
+  /// Event / experience editor: saving refused because the place has no map coordinates (a place is always required)
+  ///
+  /// In en, this message translates to:
+  /// **'We couldn\'t find this place on the map. Pick it on the map or type the full address.'**
+  String get wzErrLocationOnMap;
 }
 
 class _AppLocalizationsDelegate

@@ -28536,6 +28536,10 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get wzSaveBlocked =>
       'Corrige os passos marcados com ! para guardar as alterações.';
+
+  @override
+  String get wzErrLocationOnMap =>
+      'Não encontrámos este local no mapa. Escolhe-o no mapa ou escreve a morada completa.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -57075,4 +57079,8 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get wzSaveBlocked =>
       'Corrija as etapas marcadas com ! para salvar as alterações.';
+
+  @override
+  String get wzErrLocationOnMap =>
+      'Não encontramos este local no mapa. Escolha no mapa ou digite o endereço completo.';
 }

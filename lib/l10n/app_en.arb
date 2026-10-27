@@ -18262,5 +18262,9 @@
   "wzSaveBlocked": "Fix the steps marked ! to save your changes.",
   "@wzSaveBlocked": {
     "description": "Editing: why Save changes is disabled (a required step has an error)"
+  },
+  "wzErrLocationOnMap": "We couldn't find this place on the map. Pick it on the map or type the full address.",
+  "@wzErrLocationOnMap": {
+    "description": "Event / experience editor: saving refused because the place has no map coordinates (a place is always required)"
   }
 }

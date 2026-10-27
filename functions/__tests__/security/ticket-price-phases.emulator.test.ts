@@ -106,7 +106,7 @@ const PHASES = [
 ];
 async function phasedEvent(id: string, over: Record<string, any> = {}) {
   await db.doc(`events/${id}`).set({
-    organizerId: ORG, title: 'Rooftop Samba', price: 20, currency: 'R$', currencyCode: 'brl',
+    organizerId: ORG, latitude: 41.15, longitude: -8.61, title: 'Rooftop Samba', price: 20, currency: 'R$', currencyCode: 'brl',
     maxAttendees: 0, attendeeCount: 0, maxTicketsPerUser: null,
     status: 'published', ticketProvider: 'stripe', pricePhases: PHASES,
     startDate: TS.fromMillis(Date.now() + 24 * HOUR), endDate: TS.fromMillis(Date.now() + 28 * HOUR), ...over,

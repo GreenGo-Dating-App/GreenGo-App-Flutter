@@ -179,7 +179,7 @@ describe('profiles: becoming a business is permanent and needs Silver, Gold or P
 // ═══════════════════════════════════════════════ events + ticket types
 
 const ev = (organizerId: string, over: Record<string, any> = {}) => ({
-  organizerId, title: 'Rooftop Samba', attendeeCount: 0, maxAttendees: 0,
+  organizerId, latitude: 41.15, longitude: -8.61, title: 'Rooftop Samba', attendeeCount: 0, maxAttendees: 0,
   // The app always writes an end date (EventModel.toJson); the event rules
   // need it for the ongoing-event cap (audit 2026-10-11).
   startDate: new Date(Date.now() + HOUR), endDate: new Date(Date.now() + 3 * HOUR), ...over,
@@ -309,7 +309,7 @@ describe('new sales of non-business listings are refused with a clear reason', (
         address: { street: 'Rua A', number: '1', city: 'São Paulo', state: 'SP', postalCode: '01000-000', country: 'BR' },
       });
       await db.doc(`events/e_${org}`).set({
-        organizerId: org, title: 'Legacy paid', price: 25, currency: 'R$', maxAttendees: 0, attendeeCount: 0,
+        organizerId: org, latitude: 41.15, longitude: -8.61, title: 'Legacy paid', price: 25, currency: 'R$', maxAttendees: 0, attendeeCount: 0,
         status: 'published', ticketProvider: 'stripe',
         startDate: TS.fromMillis(Date.now() + HOUR), endDate: TS.fromMillis(Date.now() + 4 * HOUR),
       });

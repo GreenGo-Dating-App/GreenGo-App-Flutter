@@ -8900,5 +8900,6 @@
   "bcStoreOffSubtitle": "Só você vê sua loja. Os outros veem seu perfil pessoal, como se você não tivesse um negócio.",
   "bcStoreVisibilitySaveFailed": "Não foi possível alterar a visibilidade da loja. Tente novamente.",
   "wzSaveChanges": "Salvar alterações",
-  "wzSaveBlocked": "Corrija as etapas marcadas com ! para salvar as alterações."
+  "wzSaveBlocked": "Corrija as etapas marcadas com ! para salvar as alterações.",
+  "wzErrLocationOnMap": "Não encontramos este local no mapa. Escolha no mapa ou digite o endereço completo."
 }

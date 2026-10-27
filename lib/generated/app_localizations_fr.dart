@@ -28726,4 +28726,8 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get wzSaveBlocked =>
       'Corrigez les étapes marquées d’un ! pour enregistrer vos modifications.';
+
+  @override
+  String get wzErrLocationOnMap =>
+      'Nous n’avons pas trouvé ce lieu sur la carte. Choisissez-le sur la carte ou saisissez l’adresse complète.';
 }

@@ -2622,6 +2622,21 @@ service cloud.firestore {
         return contactFieldOk('title') && contactFieldOk('description')
           && contactFieldOk('languagePairs') && contactFieldOk('locationName');
       }
+      // Owner rule 2026-10-26: every event has a real place on the map
+      // (latitude / longitude, not 0,0). An edit that leaves the place exactly
+      // as it was never blocks an unrelated change of an older event.
+      // Cheapest test first: most edits leave the place untouched (event
+      // updates are close to the rules' per-request expression limit).
+      function eventPlaceOk() {
+        return (resource != null
+                && !request.resource.data.diff(resource.data).affectedKeys()
+                      .hasAny(['latitude', 'longitude', 'locationName']))
+          || (request.resource.data.get('latitude', null) is number
+              && request.resource.data.get('longitude', null) is number
+              && math.abs(request.resource.data.latitude) <= 90
+              && math.abs(request.resource.data.longitude) <= 180
+              && !(request.resource.data.latitude == 0 && request.resource.data.longitude == 0));
+      }
       // Plan downgrade (functions entitlements/downgrade.ts, owner rule
       // 2026-10-14): an event over the owner's new allowance is set to
       // 'draft' with hiddenByDowngrade + preDowngradeStatus. Those fields are
@@ -2650,6 +2665,7 @@ service cloud.firestore {
         && request.resource.data.organizerId == request.auth.uid
         && phoneOk()
         && eventTextOk()
+        && eventPlaceOk()
         && !request.resource.data.keys()
               .hasAny(['hiddenByDowngrade', 'preDowngradeStatus', 'hiddenByDowngradeAt',
                        'paidOrderCount', 'ticketRefundsAt'])
@@ -2685,6 +2701,7 @@ service cloud.firestore {
       // as before on every event. TIGHTEN LATER: paid events -> viewCount only.
       allow update: if (isOrganizer() && validCoOrganizers(request.resource.data)
                         && eventTextOk()
+                        && eventPlaceOk()
                         && downgradeFieldsUnchanged()
                         && refundFieldsOk()
                         && validTicketing(request.resource.data)
@@ -2703,6 +2720,7 @@ service cloud.firestore {
       // in the Event entity.
       allow update: if isCoOrganizer()
         && eventTextOk()
+        && eventPlaceOk()
         && downgradeFieldsUnchanged()
         && refundFieldsOk()
         && pricePhasesOk()

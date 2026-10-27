@@ -340,7 +340,7 @@ describe('Buyer <-> organizer chat (2026-10-17): server-verified context.buyer',
 
   test('openListingChat: a ticket holder over the daily cap gets the chat; the counter skips it', async () => {
     await db.doc(`entitlement_usage/${FREE}`).set({ connectDayStartMs: dayStart(), connectCount: 10 });
-    await db.doc('events/ev1').set({ organizerId: GOLD, title: 'Samba', startDate: future() });
+    await db.doc('events/ev1').set({ organizerId: GOLD, latitude: 41.15, longitude: -8.61, title: 'Samba', startDate: future() });
     // Before buying: no write, the client create is refused over the cap.
     const before = await call(openListingChat, { type: 'event', id: 'ev1' }, FREE);
     expect(before.buyer).toBe(false);
@@ -405,7 +405,7 @@ describe('Free chats without Base: 3 people per UTC day (owner rule 2026-10-13)'
 
   test('free chats do not unlock joining events', async () => {
     await db.doc(`entitlement_usage/${FREE}`).set({ freeChatDayStartMs: dayStart(), freeChatConvs: ['f_p1'] });
-    await db.doc('events/ev1').set({ organizerId: GOLD, title: 'e', price: 0, startDate: future(DAY), endDate: future(2 * DAY) });
+    await db.doc('events/ev1').set({ organizerId: GOLD, latitude: 41.15, longitude: -8.61, title: 'e', price: 0, startDate: future(DAY), endDate: future(2 * DAY) });
     const rsvp = (uid: string) => ({ userId: uid, eventId: 'ev1', status: 'going', checkedIn: false });
     expect(await clientWrite(FREE, `events/ev1/attendees/${FREE}`, rsvp(FREE))).toBe(403);
     // Positive control: the same RSVP with Base goes through.
@@ -416,7 +416,7 @@ describe('Free chats without Base: 3 people per UTC day (owner rule 2026-10-13)'
 // ---------------------------------------------------------------------------
 describe('No plan: cannot create events (owner rule 2026-10-13)', () => {
   const ev = (uid: string) => ({
-    organizerId: uid, title: 'e', price: 0,
+    organizerId: uid, latitude: 41.15, longitude: -8.61, title: 'e', price: 0,
     startDate: new Date(Date.now() + DAY), endDate: new Date(Date.now() + DAY + 2 * HOUR),
   });
 
@@ -445,14 +445,14 @@ describe('No plan: cannot create events (owner rule 2026-10-13)', () => {
 // ---------------------------------------------------------------------------
 describe('P-H4 / M1 active-event cap (at a time: Base 1, Silver 5, Gold 10, Platinum unlimited)', () => {
   const ev = (uid: string, extra: any = {}) => ({
-    organizerId: uid, title: 'e', price: 0,
+    organizerId: uid, latitude: 41.15, longitude: -8.61, title: 'e', price: 0,
     startDate: new Date(Date.now() + DAY), endDate: new Date(Date.now() + DAY + 2 * HOUR), ...extra,
   });
 
   test('over the cap: denied (audit "3 events" bypass); no end date: denied', async () => {
     await db.doc(`entitlement_usage/${BASE}`).set({ eventActiveEnds: [Date.now() + DAY] });
     expect(await clientWrite(BASE, 'events/e1', ev(BASE))).toBe(403);
-    expect(await clientWrite(SILVER, 'events/e2', { organizerId: SILVER, title: 'x', price: 0 })).toBe(403);
+    expect(await clientWrite(SILVER, 'events/e2', { organizerId: SILVER, latitude: 41.15, longitude: -8.61, title: 'x', price: 0 })).toBe(403);
     await db.doc(`entitlement_usage/${SILVER}`).set({ eventActiveEnds: [1, 2, 3, 4, 5].map((i) => Date.now() + i * HOUR) });
     expect(await clientWrite(SILVER, 'events/e3', ev(SILVER))).toBe(403);
     await db.doc(`entitlement_usage/${GOLD}`).set({ eventActiveEnds: Array.from({ length: 10 }, (_, i) => Date.now() + (i + 1) * HOUR) });
@@ -485,7 +485,7 @@ describe('P-H4 / M1 active-event cap (at a time: Base 1, Silver 5, Gold 10, Plat
   test('recount: series = one slot, hidden events free their slot, over-cap create deleted (batch backstop)', async () => {
     const mk = async (id: string, data: any) => { await db.doc(`events/${id}`).set(data); return { id, data }; };
     const base = (extra: any = {}) => ({
-      organizerId: SILVER, status: 'published',
+      organizerId: SILVER, latitude: 41.15, longitude: -8.61, status: 'published',
       startDate: future(DAY), endDate: future(DAY + 2 * HOUR), ...extra,
     });
     // Silver: 4 single events + a 4-occurrence series = 5 slots (cap 5).

@@ -192,7 +192,11 @@ export function validateExperiencePayload(p: Record<string, unknown> | null | un
   const lat = finiteNum(d.lat);
   const lng = finiteNum(d.lng);
   const hasCoords = lat !== null && lng !== null &&
-    Math.abs(lat) <= 90 && Math.abs(lng) <= 180;
+    Math.abs(lat) <= 90 && Math.abs(lng) <= 180 && !(lat === 0 && lng === 0);
+  // Owner rule 2026-10-26: an experience always has a real place on the map
+  // (the app geocodes or map-picks it). Same error key as a missing name, so
+  // every app version shows "add the place".
+  if (!hasCoords && !errors.includes('locationName')) errors.push('locationName');
   const geohash = str(d.geohash);
 
   const durationMinutes = finiteNum(d.durationMinutes);

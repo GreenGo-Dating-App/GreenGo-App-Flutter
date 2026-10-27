@@ -93,7 +93,7 @@ beforeEach(async () => {
   await db.doc(`profiles/${BASE}`).set({ displayName: 'Base', hasBaseMembership: true, baseMembershipEndDate: future() });
   await db.doc('profiles/org01').set({ displayName: 'Org', membershipTier: 'FREE' });
   await db.doc('events/ev1').set({
-    organizerId: 'org01', title: 'Picnic', price: 0, attendeeCount: 0, maxAttendees: 0, status: 'published',
+    organizerId: 'org01', latitude: 41.15, longitude: -8.61, title: 'Picnic', price: 0, attendeeCount: 0, maxAttendees: 0, status: 'published',
     startDate: future(DAY), endDate: future(DAY + 3 * 3600 * 1000),
   });
 });
