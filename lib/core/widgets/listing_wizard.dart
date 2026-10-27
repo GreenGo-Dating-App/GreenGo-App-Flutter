@@ -532,12 +532,11 @@ class ListingWizardState extends State<ListingWizard> {
 
     final nav = SafeArea(
       top: false,
+      // Same colour as the page (owner 2026-10-26: no grey bar at the bottom).
       child: Container(
+        key: const ValueKey('wizard-nav'),
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 12),
-        decoration: const BoxDecoration(
-          color: AppColors.backgroundCard,
-          border: Border(top: BorderSide(color: AppColors.divider)),
-        ),
+        color: AppColors.backgroundDark,
         child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.stretch, children: [
           if (err != null && !last)
             Semantics(
